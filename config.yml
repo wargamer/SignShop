@@ -1,0 +1,174 @@
+# Basic Stuff
+MaxSellDistance: 0
+MaxShopsPerPerson: 0
+TransactionLog: false
+
+#-------------------------------
+#    How to Make Custom Signs
+#-------------------------------
+
+# You can use any number of these:
+#   takePlayerItems
+#   givePlayerItems
+#   takeShopItems
+#   giveShopItems
+
+# OR just one of these (also you cannot use redstone and items in the same operation!)
+#   givePlayerRandomItem
+#   setRedstoneOn
+#   setRedstoneOff
+#   setRedStoneOnTemp
+#   toggleRedstone
+
+# AND you can add stack any of these with the above.
+#   takePlayerMoney
+#   givePlayerMoney
+#   takeOwnerMoney
+#   giveOwnerMoney
+#   playerIsOp <- for OP only signs
+#   setDayTime
+#   setNightTime
+#   setRaining
+#   setClearSkies
+#   healPlayer
+#   repairPlayerHeldItem
+
+#   Note: If you use something like setrain + clearskies, or
+#         redstoneon + redstoneoff, then only one of the two will happen.
+
+# ----------------------------------------
+
+# You can change the sign names, but don't use a sign name longer than 14 characters.
+# Note - If for example you remove or rename Buy, then ALL Buy signs will be removed! Keep this in mind!
+# Note 2 - If you add a new sign, make sure you add the messages below as well!
+signs:
+    Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
+    Sell: takePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
+    Donate: takePlayerItems,giveShopItems
+    Slot: takePlayerMoney,giveOwnerMoney,givePlayerRandomItem
+    iSell: givePlayerMoney,takePlayerItems,playerIsOp
+    iBuy: takePlayerMoney,givePlayerItems,playerIsOp
+    gBuy: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
+    gSell: givePlayerMoney,takePlayerItems,giveShopItems,playerIsOp
+    Day: takePlayerMoney,setDayTime,playerIsOp
+    Night: takePlayerMoney,setNightTime,playerIsOp
+    Rain: takePlayerMoney,setRaining,playerIsOp
+    ClearSkies: takePlayerMoney,setClearSkies,playerIsOp
+    DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
+    DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
+    DeviceToggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
+    Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
+    Heal: takePlayerMoney,healPlayer,playerIsOp
+    Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
+# Custom messages for signs
+
+# Note: not every !variable will work with every sign, you might get a blank.
+messages:
+    setup:
+        Buy: You have put !items for sale at a price of !price!
+        Sell: You have put a bounty of !price for !items!
+        Donate: You have setup a donation box for !items!
+        Slot: You have setup a !price slot machine offering !items!
+        iBuy: You have put !items infinitely for sale at a price of !price!
+        iSell: You have put an infinite bounty of !price for !items!
+        gBuy: You have setup a ghost shop selling !items for !price! (Note, you will not receive or lose money from this shop)
+        gSell: You have setup a ghost shop buying !items for !price! (Note, you will not receive or lose money from this shop)
+        Day: You have setup a time controller that costs !price!
+        Night: You have setup a time controller that costs !price!
+        Rain: You have setup a weather controller that costs !price!
+        ClearSkies: You have setup a weather controller that costs !price!
+        DeviceOn: You have setup a device activator that costs !price!
+        DeviceOff: You have setup a device deactivator that costs !price!
+        DeviceToggle: You have setup a device toggler that costs !price!
+        Device: You have setup a device temporary activator that costs !price!
+        Heal: You have setup a healing station that costs !price!
+        Repair: You have setup a repair station that costs !price!
+    confirm:
+        Buy: Buy !items for !price?
+        Sell: Sell !items for !price?
+        Donate: Donate !items?
+        Slot: Play this slot machine for !price?
+        Redstone: Activate this device for !price?
+        iBuy: Buy !items for !price?
+        iSell: Sell !items for !price?
+        gBuy: Buy !items for !price?
+        gSell: Sell !items for !price?
+        Day: Set the time to day for !price?
+        Night: Set the time to night for !price?
+        Rain: Set the weather to raining for !price?
+        ClearSkies: Set the weather to clear skies for !price?
+        DeviceOn: Activate this device for !price?
+        DeviceOff: Deactivate this device for !price?
+        DeviceToggle: Toggle this device for !price?
+        Device: Temporarily activate this device for !price?
+        Heal: Heal yourself for !price?
+        Repair: Repair the item held in your hand for !price?
+    transaction:
+        Buy: You have bought !items for !price!
+        Sell: You have sold !items for !price!
+        Donate: You have donated !items!
+        Slot: You won !items!
+        Redstone: Device activated for !price!
+        iBuy: You have bought !items for !price!
+        iSell: You have sold !items for !price!
+        gBuy: You have bought !items for !price!
+        gSell: You have sold !items for !price!
+        Day: You set the time to day for !price!
+        Night: You set the time to night for !price!
+        Rain: You set the weather to raining for !price!
+        ClearSkies: You set the weather to clear skies for !price!
+        DeviceOn: You activated this device for !price!
+        DeviceOff: You deactivated this !price!
+        DeviceToggle: You toggled this device for !price!
+        Device: You temporarily activated this device for !price!
+        Heal: You healed yourself for !price!
+        Repair: You repaired an item for !price!
+    transaction_owner:
+        Buy: \!customer bought !items for !price from you!
+        Sell: \!customer sold you !items for !price!
+        Donate: \!customer donated !items to you!
+        Slot: \!customer played a slot machine for !price and won !items!
+        Redstone: \!customer activated your redstone device for !price!
+        iBuy: \!customer bought !items for !price from your infinite store!
+        iSell: \!customer sold !items to your infinite store!
+        gBuy: \!customer bought !items from your ghost store!
+        gSell: \!customer sold !items to your ghost store!
+        Day: \!customer set the time to day for !price!
+        Night: \!customer set the time to night for !price!
+        Rain: \!customer set the weather to raining for !price!
+        ClearSkies: \!customer set the weather to clear skies for !price!
+        DeviceOn: \!customer activated your device for !price!
+        DeviceOff: \!customer deactivated your device for !price!
+        DeviceToggle: \!customer toggled your device for !price!
+        Device: \!customer temporarily activated your device for !price!
+        Heal: \!customer healed at your station for !price!
+        Repair: \!customer repaired an item at your station for !price!
+
+errors:
+#In game messages
+    no_permission: You don't have permission to create this sign!
+    no_permission_use: You don't have permission to use this sign!
+    invalid_operation: The sign you clicked doesnt have a valid operation!
+    chest_empty: The shop is empty!
+    no_player_money: You don't have !price to pay!
+    no_shop_money: The shop doesn't have !price to pay you!
+    out_of_business: This shop appears to have gone out of business!
+    out_of_stock: This shop is out of stock!
+    overstocked: This shop is overstocked!
+    player_doesnt_have_items: You don't have the items! (!items)
+    sign_location_stored: Sign location stored!
+    made_day: "!player has made it day!"
+    made_night: "!player has made it night!"
+    made_rain: "!player has made it rain!"
+    made_clear_skies: "!player has cleared the skies!"
+    already_on: "Device is already on"
+    already_off: "Device is already off"
+#Server log messages
+    saving: Saving shops...
+    saved: Shops saved!
+    shop_removed: Removed an invalid Shop.
+    invalid_item_to_repair: That item cannot be repaired!
+    no_item_to_repair: You need to be holding the item you want to repair!
+    backup_fail: Failed to backup Storage!
+    too_far: The distance between the sign and chest is too big. Maximum is !max.
+    too_many_shops: You have reached the maximum amount of shops allowed. Maximum is !max.
