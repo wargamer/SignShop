@@ -198,19 +198,24 @@ public class SignShopPlayerListener implements Listener {
             return Vault.economy.format(money);
     }
     
-    private Boolean hasPerm(Player player, String perm) {        
+    private Boolean hasPerm(Player player, String perm, Boolean OPOperation) {        
         if(Vault.permission == null) {
-            return true;            
+            return true;
         }
-        Boolean isOP = player.isOp();        
-        if(plugin.USE_PERMISSIONS && isOP)
+        Boolean isOP = player.isOp();
+        Boolean OPOverride = plugin.getOPOverride();
+        if(plugin.USE_PERMISSIONS && isOP && !OPOverride)
             player.setOp(false);
-        if(plugin.USE_PERMISSIONS && Vault.permission.playerHas(player, perm)) {
+        
+        if(plugin.USE_PERMISSIONS && OPOverride && isOP)
+            return true;
+        else if(plugin.USE_PERMISSIONS && Vault.permission.playerHas(player, perm)) {
             player.setOp(isOP);
             return true;
-        } else if(!plugin.USE_PERMISSIONS && isOP) {
+        } else if(!plugin.USE_PERMISSIONS && isOP)
             return true;
-        }
+        else if(!plugin.USE_PERMISSIONS && !OPOperation)
+            return true;
         player.setOp(isOP);
         return false;           
     }
@@ -369,24 +374,24 @@ public class SignShopPlayerListener implements Listener {
     
     private Boolean registerChest(Block bSign, Block bChest, String sOperation, Player player, String playerName) {
         String[] sLines = ((Sign) bSign.getState()).getLines();
+        List operation = SignShop.Operations.get(sOperation);
+        
         if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance())) {
             msg(player, SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }        
-        if(plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()) {
+        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()) {
             msg(player, SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(plugin.getMaxShopsPerPerson())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }
         
-        List operation = SignShop.Operations.get(sOperation);
-
-        if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Admin."+sOperation))) {
+        if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Admin."+sOperation), true)) {
             msg(player,SignShop.Errors.get("no_permission"));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
-        } else if(!operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation))) {
+        } else if(!operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation), false)) {
             msg(player,SignShop.Errors.get("no_permission"));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
@@ -399,7 +404,7 @@ public class SignShopPlayerListener implements Listener {
             msg(player,getMessage("setup",sOperation,"",fPrice,"",""));
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,new ItemStack[]{new ItemStack(Material.DIRT,1)});
-            setSignStatus(bSign, ChatColor.GREEN);
+            setSignStatus(bSign, ChatColor.DARK_BLUE);
             mClicks.remove(player.getName());
             return true;
         // Chest operation
@@ -436,7 +441,7 @@ public class SignShopPlayerListener implements Listener {
             msg(player,getMessage("setup",sOperation,sItems,fPrice,"",playerName));
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,isChestItems);
-            setSignStatus(bSign, ChatColor.GREEN);
+            setSignStatus(bSign, ChatColor.DARK_BLUE);
             mClicks.remove(player.getName());
             return true;
         }
@@ -530,10 +535,10 @@ public class SignShopPlayerListener implements Listener {
                 }
                 List operation = SignShop.Operations.get(sOperation);
                                 
-                if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Admin."+sOperation))) {
+                if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Admin."+sOperation), true)) {
                     msg(event.getPlayer(),SignShop.Errors.get("no_permission"));
                     return;
-                } else if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation))) {
+                } else if(!operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation), false)) {
                     msg(event.getPlayer(),SignShop.Errors.get("no_permission"));
                     return;
                 }
@@ -612,7 +617,7 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             
-            if(hasPerm(player, ("SignShop.DenyUse."+sOperation)) && !hasPerm(player, ("SignShop.Signs."+sOperation)) && !hasPerm(player, ("SignShop.Admin."+sOperation))) {
+            if(hasPerm(player, ("SignShop.DenyUse."+sOperation), false) && !hasPerm(player, ("SignShop.Signs."+sOperation), false) && !hasPerm(player, ("SignShop.Admin."+sOperation), true)) {
                 msg(event.getPlayer(),SignShop.Errors.get("no_permission_use"));
                 return;
             }
@@ -703,11 +708,11 @@ public class SignShopPlayerListener implements Listener {
 
                 if(operation.contains(takeShopItems)){
                     if(isOutofStock(cbChest.getInventory(), isItems)) {
-                        setSignStatus(bClicked, ChatColor.RED);
+                        setSignStatus(bClicked, ChatColor.DARK_RED);
                         msg(event.getPlayer(),SignShop.Errors.get("out_of_stock"));
                         return;
                     } else {
-                        setSignStatus(bClicked, ChatColor.GREEN);
+                        setSignStatus(bClicked, ChatColor.DARK_BLUE);
                     }
                 }
 
@@ -768,9 +773,9 @@ public class SignShopPlayerListener implements Listener {
             if(operation.contains(takeShopItems)){
                 cbChest.getInventory().removeItem(isItems);                
                 if(isOutofStock(cbChest.getInventory(), isItems))
-                    setSignStatus(bClicked, ChatColor.RED);
+                    setSignStatus(bClicked, ChatColor.DARK_RED);
                 else
-                    setSignStatus(bClicked, ChatColor.GREEN);
+                    setSignStatus(bClicked, ChatColor.DARK_BLUE);
             }
 
             // Health
@@ -937,9 +942,9 @@ public class SignShopPlayerListener implements Listener {
                         Chest cbChest = (Chest) bClicked.getState();
                         isItems = seller.getItems();
                         if(isOutofStock(cbChest.getInventory(), isItems))
-                            setSignStatus(temp, ChatColor.RED);
+                            setSignStatus(temp, ChatColor.DARK_RED);
                         else
-                            setSignStatus(temp, ChatColor.GREEN);
+                            setSignStatus(temp, ChatColor.DARK_BLUE);
                     }
                 }
         }
