@@ -27,6 +27,7 @@ public class SignShop extends JavaPlugin{
     private int MaxSellDistance = 0;
     private int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
+    private boolean OPOverride = true;
 
     //Statics
     public static Storage Storage;
@@ -35,7 +36,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,String> Errors;
     
     //Permissions
-    public boolean USE_PERMISSIONS = false;
+    public boolean USE_PERMISSIONS = false;    
     
     // Vault
     private Vault vault = null;
@@ -171,6 +172,7 @@ public class SignShop extends JavaPlugin{
         MaxSellDistance = config.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = config.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = config.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
+        OPOverride = config.getBoolean("OPOverride", OPOverride);
     }
     
     public void initValidOps() {
@@ -222,8 +224,8 @@ public class SignShop extends JavaPlugin{
 
     private void setupVault() {
         vault = new Vault(getServer());
-        Boolean vault_Perms = vault.setupPermissions();
-        if(!vault_Perms) {
+        Boolean vault_Perms = vault.setupPermissions();        
+        if(!vault_Perms || Vault.permission.getName().equals("SuperPerms")) {
             log("Vault's permissions not found, defaulting to OP.", Level.INFO);
             this.USE_PERMISSIONS = false;
         } else
@@ -239,6 +241,10 @@ public class SignShop extends JavaPlugin{
     
     public int getMaxShopsPerPerson() {
         return MaxShopsPerPerson;
+    }
+    
+    public Boolean getOPOverride() {
+        return OPOverride;
     }
     
     public class TransferFormatter extends Formatter {    
