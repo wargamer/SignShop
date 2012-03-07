@@ -4,6 +4,7 @@ import org.bukkit.block.Block;
 import org.bukkit.Location;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.block.Sign;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
+import java.util.List;
 
 public class Storage{
     private final SignShop plugin;
@@ -200,30 +202,6 @@ public class Storage{
         saveToFile();     
     }
     
-    private void saveToFile() {
-        try {
-            yml.save(ymlfile);
-        } catch(IOException IO) {
-            SignShop.log("Failed to save sellers.yml", Level.WARNING);
-        }
-    }
-    
-    private void copyFile(File in, File out) throws IOException 
-    {
-        FileChannel inChannel = new FileInputStream(in).getChannel();
-        FileChannel outChannel = new FileOutputStream(out).getChannel();
-        try {
-            inChannel.transferTo(0, inChannel.size(), outChannel);
-        }
-        catch (IOException e) {
-            throw e;
-        }
-        finally {
-            if (inChannel != null) inChannel.close();
-            if (outChannel != null) outChannel.close();
-        }
-    }
-
     public void addSeller(String sPlayer, Block bSign, Block bChest, ItemStack[] isItems){
         Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, bChest, isItems));
         this.Save();
@@ -246,9 +224,51 @@ public class Storage{
     public Integer countLocations(String sellerName) {
         Integer count = 0;        
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
-            if(entry.getValue().owner.equals(sellerName))
-                count++;        
+            if(entry.getValue().owner.equals(sellerName)) {
+                Block bSign = Bukkit.getServer().getWorld(entry.getValue().world).getBlockAt(entry.getKey());
+                if(bSign.getType() == Material.SIGN_POST || bSign.getType() == Material.WALL_SIGN) {
+                    String[] sLines = ((Sign) bSign.getState()).getLines();                    
+                    List operation = SignShop.Operations.get(SignShopPlayerListener.getOperation(sLines[0]));                    
+                    if(operation == null)
+                        continue;
+                    // Not isOP. No need to count OP signs here because admins aren't really their owner
+                    if(!operation.contains(11))
+                        count++;
+                }
+            }
         return count;
+    }
+    
+    public List<Block> getSignsFromChest(Block chest) {
+        List<Block> signs = new ArrayList();
+        for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
+            if(entry.getValue().getChest().equals(chest))
+                signs.add(Bukkit.getServer().getWorld(entry.getValue().world).getBlockAt(entry.getKey()));            
+        return signs;
+    }
+    
+    private void saveToFile() {
+        try {
+            yml.save(ymlfile);
+        } catch(IOException IO) {
+            SignShop.log("Failed to save sellers.yml", Level.WARNING);
+        }
+    }
+    
+    private void copyFile(File in, File out) throws IOException 
+    {
+        FileChannel inChannel = new FileInputStream(in).getChannel();
+        FileChannel outChannel = new FileOutputStream(out).getChannel();
+        try {
+            inChannel.transferTo(0, inChannel.size(), outChannel);
+        }
+        catch (IOException e) {
+            throw e;
+        }
+        finally {
+            if (inChannel != null) inChannel.close();
+            if (outChannel != null) outChannel.close();
+        }
     }
     
     private Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {

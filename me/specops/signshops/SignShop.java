@@ -216,8 +216,7 @@ public class SignShop extends JavaPlugin{
     public void onDisable(){
         SignShop.Storage.Save();
         closeHandlers();
-        //getServer().getScheduler().cancelTask(AUTO_SAVE_ID);
-
+        
         log("disabled", Level.INFO);
     }
 

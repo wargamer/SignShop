@@ -27,6 +27,7 @@ import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.material.SimpleAttachableMaterialData;
 import org.bukkit.material.Lever;
 import org.bukkit.block.BlockState;
+import org.bukkit.inventory.Inventory;
 
 //TODO: copy durability of tools over when buying/selling items. 
 
@@ -82,10 +83,11 @@ public class SignShopPlayerListener implements Listener {
         discs.put(2266, "11 Disc");
     }
 
-    private String getOperation(String sSignOperation){
+    public static String getOperation(String sSignOperation){
         if(sSignOperation.length() < 3){
             return "";
-        }
+        }        
+        sSignOperation = ChatColor.stripColor(sSignOperation);
         return sSignOperation.substring(1,sSignOperation.length()-1);
     }
 
@@ -355,14 +357,26 @@ public class SignShopPlayerListener implements Listener {
         return true;
     }
     
+    public static void setSignStatus(Block sign, ChatColor color) {
+        if(sign.getType() == Material.SIGN_POST || sign.getType() == Material.WALL_SIGN) {
+            Sign signblock = ((Sign) sign.getState());
+            String[] sLines = signblock.getLines();            
+            if(sLines[0].length() < 14)
+                signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
+            signblock.update();            
+        }
+    }
+    
     private Boolean registerChest(Block bSign, Block bChest, String sOperation, Player player, String playerName) {
         String[] sLines = ((Sign) bSign.getState()).getLines();
         if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance())) {
             msg(player, SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
+            setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }        
         if(plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()) {
             msg(player, SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(plugin.getMaxShopsPerPerson())));
+            setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }
         
@@ -370,9 +384,11 @@ public class SignShopPlayerListener implements Listener {
 
         if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Admin."+sOperation))) {
             msg(player,SignShop.Errors.get("no_permission"));
+            setSignStatus(bSign, ChatColor.BLACK);
             return false;
-        } else if(operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation))) {
+        } else if(!operation.contains(playerIsOp) && !hasPerm(player, ("SignShop.Signs."+sOperation))) {
             msg(player,SignShop.Errors.get("no_permission"));
+            setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }
 
@@ -383,7 +399,7 @@ public class SignShopPlayerListener implements Listener {
             msg(player,getMessage("setup",sOperation,"",fPrice,"",""));
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,new ItemStack[]{new ItemStack(Material.DIRT,1)});
-
+            setSignStatus(bSign, ChatColor.GREEN);
             mClicks.remove(player.getName());
             return true;
         // Chest operation
@@ -420,39 +436,37 @@ public class SignShopPlayerListener implements Listener {
             msg(player,getMessage("setup",sOperation,sItems,fPrice,"",playerName));
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,isChestItems);
-
+            setSignStatus(bSign, ChatColor.GREEN);
             mClicks.remove(player.getName());
             return true;
         }
         return false;
     }
     
-    private boolean updateBlockData(Block b, boolean state) {
-        byte data = b.getData();
-        boolean oldLevel = ((data&0x08) > 0);
-        if (oldLevel==state) return false;
-
-        byte newData = (byte)(state? data | 0x8 : data & 0x7);
-
-        b.setData(newData, true);
-        
-        return true;
+    private Boolean isOutofStock(Inventory iiInventory, ItemStack[] isItemsToTake) {
+        ItemStack[] isChestItems = iiInventory.getContents();
+        ItemStack[] isBackup = new ItemStack[isChestItems.length];
+        for(int i=0;i<isChestItems.length;i++){
+            if(isChestItems[i] != null){
+                isBackup[i] = new ItemStack(
+                    isChestItems[i].getType(),
+                    isChestItems[i].getAmount(),
+                    isChestItems[i].getDurability()
+                );
+                isBackup[i].addEnchantments(isChestItems[i].getEnchantments());
+                if(isChestItems[i].getData() != null){
+                    isBackup[i].setData(isChestItems[i].getData());
+                }
+            }
+        }
+        HashMap<Integer, ItemStack> leftOver = iiInventory.removeItem(isItemsToTake);
+        Boolean bOutofstock = false;
+        if(!leftOver.isEmpty())
+            bOutofstock = true;
+        iiInventory.setContents(isBackup);        
+        return bOutofstock;
     }
     
-    private void updateLever(Block outputBlock, boolean state) {
-        if (updateBlockData(outputBlock, state)) {
-            outputBlock.getState().update();
-            Block b = outputBlock;
-            byte oldData = b.getData();
-            byte notData;
-            if (oldData>1) notData = (byte)(oldData-1);
-            else if (oldData<15) notData = (byte)(oldData+1);
-            else notData = 0;
-            b.setData(notData, true);
-            b.setData(oldData, true);
-        }
-    }
-
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteract(PlayerInteractEvent event) {
         // Respect protection plugins
@@ -649,7 +663,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 cbChest = (Chest) seller.getChest().getState();
-                isChestItems = cbChest.getInventory().getContents();
+                isChestItems = cbChest.getInventory().getContents();                
                 isChestItemsBackup = new ItemStack[isChestItems.length];
                 for(int i=0;i<isChestItems.length;i++){
                     if(isChestItems[i] != null){
@@ -681,35 +695,20 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 if(operation.contains(takePlayerItems)){
-                    iiItemsLeftover = event.getPlayer().getInventory().removeItem(isItems);
-
-                    if(!iiItemsLeftover.isEmpty()){
-                        //reset chest inventory
-
-                        event.getPlayer().getInventory().setContents(isPlayerItemsBackup);
-
+                    if(isOutofStock(player.getInventory(), isItems)) {
                         msg(event.getPlayer(),SignShop.Errors.get("player_doesnt_have_items").replace("!items", sItems));
-
                         return;
-                    }
-                    //every operation step needs to be self cleaning
-                    event.getPlayer().getInventory().setContents(isPlayerItemsBackup);
-
+                    }                    
                 }
 
                 if(operation.contains(takeShopItems)){
-                    iiItemsLeftover = cbChest.getInventory().removeItem(isItems);
-
-                    if(!iiItemsLeftover.isEmpty()){
-                        //reset chest inventory
-                        cbChest.getInventory().setContents(isChestItemsBackup);
-
+                    if(isOutofStock(cbChest.getInventory(), isItems)) {
+                        setSignStatus(bClicked, ChatColor.RED);
                         msg(event.getPlayer(),SignShop.Errors.get("out_of_stock"));
-
                         return;
+                    } else {
+                        setSignStatus(bClicked, ChatColor.GREEN);
                     }
-                    //every operation step needs to be self cleaning
-                    cbChest.getInventory().setContents(isChestItemsBackup);
                 }
 
                 //Make sure the shop has room
@@ -764,10 +763,14 @@ public class SignShopPlayerListener implements Listener {
             }
 
             if(operation.contains(giveShopItems)){
-                cbChest.getInventory().addItem(isItems);
+                cbChest.getInventory().addItem(isItems);                
             }
             if(operation.contains(takeShopItems)){
-                cbChest.getInventory().removeItem(isItems);
+                cbChest.getInventory().removeItem(isItems);                
+                if(isOutofStock(cbChest.getInventory(), isItems))
+                    setSignStatus(bClicked, ChatColor.RED);
+                else
+                    setSignStatus(bClicked, ChatColor.GREEN);
             }
 
             // Health
@@ -921,6 +924,24 @@ public class SignShopPlayerListener implements Listener {
             SignShop.logTransaction(event.getPlayer().getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
             msg(event.getPlayer(),getMessage("transaction",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
             msg(seller.owner,getMessage("transaction_owner",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
+        }
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK
+        && event.getClickedBlock().getType() == Material.CHEST
+        && !mClicks.containsKey(event.getPlayer().getName())){            
+            List<Block> signs = SignShop.Storage.getSignsFromChest(bClicked);
+            ItemStack[] isItems = null;
+            if(signs != null)
+                for (Block temp : signs) {                    
+                    Seller seller = null;
+                    if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
+                        Chest cbChest = (Chest) bClicked.getState();
+                        isItems = seller.getItems();
+                        if(isOutofStock(cbChest.getInventory(), isItems))
+                            setSignStatus(temp, ChatColor.RED);
+                        else
+                            setSignStatus(temp, ChatColor.GREEN);
+                    }
+                }
         }
     }
 
