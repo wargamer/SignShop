@@ -1,5 +1,5 @@
 name: SignShop
-main: me.specops.signshops.SignShop
-version: 1.6.1
+main: org.wargamer2010.signshop.SignShop
+version: 1.6.2
 author: Wargamer2010
-softdepend: [Vault]
+softdepend: [Vault, Multiverse-Core]
