@@ -5,17 +5,12 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockBurnEvent;
-import org.bukkit.event.player.PlayerInventoryEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import java.util.List;
 import org.bukkit.ChatColor;
 
 public class SignShopBlockListener implements Listener {
-    @EventHandler(priority = EventPriority.NORMAL)
-    public void onPlayerInventory(PlayerInventoryEvent event){
-        event.getPlayer().sendMessage("LOL!");
-    }
     
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBreak(BlockBreakEvent event){

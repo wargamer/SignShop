@@ -4,6 +4,7 @@ MaxShopsPerPerson: 0
 TransactionLog: false
 OPOverride: true
 AllowVariableAmounts: false
+AllowEnchantedRepair: true
 
 #-------------------------------
 #    How to Make Custom Signs
@@ -158,6 +159,7 @@ errors:
     out_of_stock: This shop is out of stock!
     overstocked: This shop is overstocked!
     player_doesnt_have_items: You don't have the items! (!items)
+    player_overstocked: Your inventory is too full!
     sign_location_stored: Sign location stored!
     made_day: "!player has made it day!"
     made_night: "!player has made it night!"
@@ -174,3 +176,4 @@ errors:
     backup_fail: Failed to backup Storage!
     too_far: The distance between the sign and chest is too big. Maximum is !max.
     too_many_shops: You have reached the maximum amount of shops allowed. Maximum is !max.
+    enchanted_not_allowed: You are not allowed to repair enchanted items.
