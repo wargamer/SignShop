@@ -29,6 +29,7 @@ public class SignShop extends JavaPlugin{
     private static Boolean TransactionLog = false;
     private boolean OPOverride = true;
     private boolean AllowVariableAmounts = false;
+    private boolean AllowEnchantedRepair = true;
 
     //Statics
     public static Storage Storage;
@@ -175,6 +176,7 @@ public class SignShop extends JavaPlugin{
         MaxShopsPerPerson = config.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
         OPOverride = config.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = config.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
+        AllowEnchantedRepair = config.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
     }
     
     public void initValidOps() {
@@ -226,7 +228,8 @@ public class SignShop extends JavaPlugin{
 
     private void setupVault() {
         vault = new Vault(getServer());
-        Boolean vault_Perms = vault.setupPermissions();        
+        vault.setupChat();
+        Boolean vault_Perms = vault.setupPermissions();
         if(!vault_Perms || Vault.permission.getName().equals("SuperPerms")) {
             log("Vault's permissions not found, defaulting to OP.", Level.INFO);
             this.USE_PERMISSIONS = false;
@@ -253,9 +256,13 @@ public class SignShop extends JavaPlugin{
         return AllowVariableAmounts;
     }
     
+    public Boolean getAllowEnchantedRepair() {
+        return AllowEnchantedRepair;
+    }
+    
     public class TransferFormatter extends Formatter {    
-        private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss.SSS");
-
+        private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
+        
         @Override
         public String format(LogRecord record) {
             StringBuilder builder = new StringBuilder(1000);

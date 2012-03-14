@@ -4,8 +4,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
-import java.util.Map;
-import java.util.HashMap;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
@@ -13,17 +11,11 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.block.Chest;
 import org.bukkit.inventory.ItemStack;
-import java.util.List;
-import java.util.ArrayList;
 import org.bukkit.Location;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.bukkit.material.MaterialData;
 import org.bukkit.event.block.Action;
-import java.util.Random;
 import org.bukkit.inventory.PlayerInventory;
-import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.material.SimpleAttachableMaterialData;
 import org.bukkit.material.Lever;
 import org.bukkit.block.BlockState;
@@ -31,12 +23,21 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.World;
 
+import net.milkbowl.vault.economy.EconomyResponse;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.List;
+import java.util.ArrayList;
+
 //TODO: copy durability of tools over when buying/selling items. 
 
 public class SignShopPlayerListener implements Listener {
     private final SignShop plugin;
-    private static Map<String, Location> mClicks  = new HashMap<String,Location>();
-    private static Map<String,Location> mConfirms = new HashMap<String,Location>();
+    private static Map<String, Location> mClicks  = new HashMap<String,Location>();    
     private static HashMap<Integer, String> discs;
 
     private int takePlayerMoney = 1;
@@ -104,26 +105,24 @@ public class SignShopPlayerListener implements Listener {
             .replace("!customer", sCustomer)
             .replace("!owner", sOwner);
     }
-
+    
     //msg a player object
-    private void msg(Player player,String msg){
+    private void msg(Player player, String msg){
         if(msg == null || msg.trim().equals("")){
             return;
         }
-        player.sendMessage(ChatColor.GOLD+"[SignShop] "+ChatColor.WHITE+msg);
-        player.getWorld().sendPluginMessage(plugin, msg, null);
+        player.sendMessage(ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + msg);
     }
     
     private void msg(World world, String msg) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
-        for(Player player : players) {
+        for(Player player : players)
             if(player.getWorld() == world)
-                player.sendMessage("[" + world.getName() + "] " + msg);
-        }
+                player.sendMessage(ChatColor.GOLD+"[SignShop] [" + world.getName() + "] " + ChatColor.WHITE + msg);
     }
-
+        
     //look up a player by player.getName()
-    private boolean msg(String sPlayer,String msg){
+    private boolean msg(String sPlayer,String msg){        
         Player[] players = Bukkit.getServer().getOnlinePlayers();
 
         for(Player player : players){
@@ -376,7 +375,8 @@ public class SignShopPlayerListener implements Listener {
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }        
-        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()) {
+        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()
+                && !hasPerm(player, "SignShop.ignoremax", true)) {
             msg(player, SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(plugin.getMaxShopsPerPerson())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
@@ -429,7 +429,7 @@ public class SignShopPlayerListener implements Listener {
             msg(player,getMessage("setup",sOperation,sItems,fPrice,"",playerName));
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,isChestItems);
-            setSignStatus(bSign, ChatColor.DARK_BLUE);
+            updateStockStatus(bSign, ChatColor.DARK_BLUE);
             mClicks.remove(player.getName());
             return true;
         }
@@ -551,7 +551,7 @@ public class SignShopPlayerListener implements Listener {
         return mReturn;
     }
     
-    public HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake) {
+    public HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake, Boolean bOneWay) {
         ItemStack[] isBackup = new ItemStack[isItemsToTake.length];        
         for(int i = 0; i < isItemsToTake.length; i++){
             if(isItemsToTake[i] != null){
@@ -572,9 +572,10 @@ public class SignShopPlayerListener implements Listener {
         Boolean toOK = isStockOK(iiTo, isBackup, false);
         if(fromOK && toOK) {            
             returnMap.put(isItemsToTake, 1.0f);
-            if(bTake) {
+            if(bTake) {                
                 iiFrom.removeItem(isBackup);
-                iiTo.addItem(isBackup);
+                if(!bOneWay)
+                    iiTo.addItem(isBackup);
             }
             return returnMap;
         } else if(!plugin.getAllowVariableAmounts() && (!fromOK || !toOK)) {            
@@ -621,9 +622,40 @@ public class SignShopPlayerListener implements Listener {
         returnMap.put(isActual, iCount);
         if(bTake) {
             iiFrom.removeItem(isActual);        
-            iiTo.addItem(isActual);
+            if(!bOneWay)
+                iiTo.addItem(isActual);
         }
         return returnMap;
+    }
+    
+    private void updateStockStatus(Block bSign, ChatColor ccColor) {
+        Seller seTemp;
+        if((seTemp = SignShop.Storage.getSeller(bSign.getLocation())) != null) {
+            List<Block> signs = SignShop.Storage.getSignsFromChest(seTemp.getChest());
+            ItemStack[] isItems = null;
+            if(signs != null)
+                for (Block temp : signs) {
+                    Seller seller = null;
+                    if(temp.getType() != Material.SIGN_POST && temp.getType() != Material.WALL_SIGN)
+                        continue;
+                    if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
+                        Chest cbChest = (Chest) seller.getChest().getState();
+                        isItems = seller.getItems();
+                        String[] sLines = ((Sign) temp.getState()).getLines();
+                        if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
+                            continue;
+                        List operation = SignShop.Operations.get(getOperation(sLines[0]));
+                        if(operation.contains(takeShopItems))                            
+                            if(!isStockOK(cbChest.getInventory(), isItems, true))
+                                setSignStatus(temp, ChatColor.DARK_RED);
+                            else
+                                setSignStatus(temp, ChatColor.DARK_BLUE);
+                        else
+                            setSignStatus(temp, ChatColor.DARK_BLUE);
+                    }
+                }
+        }
+        setSignStatus(bSign, ccColor);
     }
     
     @EventHandler(priority = EventPriority.HIGH)
@@ -707,6 +739,7 @@ public class SignShopPlayerListener implements Listener {
                 } else {
                     SignShop.Storage.addSeller(event.getPlayer().getName(),event.getClickedBlock(),event.getClickedBlock(),new ItemStack[]{new ItemStack(Material.DIRT,1)});
                     msg(event.getPlayer(),getMessage("setup",sOperation,"",fPrice,"",event.getPlayer().getName()));
+                    setSignStatus(bClicked, ChatColor.DARK_BLUE);
                     return;
                 }
             }
@@ -715,8 +748,14 @@ public class SignShopPlayerListener implements Listener {
         if(event.getAction() == Action.LEFT_CLICK_BLOCK
         && (event.getClickedBlock().getType() == Material.CHEST || event.getClickedBlock().getType() == Material.LEVER)
         && mClicks.containsKey(event.getPlayer().getName())){
-
+            
             Block bSign = mClicks.get(event.getPlayer().getName()).getBlock();
+            if(bSign.getType() != Material.WALL_SIGN && bSign.getType() != Material.SIGN_POST) {
+                msg(event.getPlayer(),SignShop.Errors.get("invalid_operation"));
+                mClicks.remove(event.getPlayer().getName());
+                return;
+            }
+                
             sLines = ((Sign) bSign.getState()).getLines();
             sOperation = getOperation(sLines[0]);
             String playerName = event.getPlayer().getName();
@@ -748,7 +787,7 @@ public class SignShopPlayerListener implements Listener {
             registerChest(bSign, event.getClickedBlock(), sOperation, player, playerName);
             if(registerEmptySign) {
                 registerChest(emptySign, event.getClickedBlock(), getOperation(((Sign) emptySign.getState()).getLines()[0]), player, playerName);
-            }
+            }            
             return;
             
         // Clicked on a sign, might be a signshop.
@@ -805,7 +844,7 @@ public class SignShopPlayerListener implements Listener {
                 cbChest = (Chest) seller.getChest().getState();
 
                 if(operation.contains(takePlayerItems)){
-                    HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, false);
+                    HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, false, !operation.contains(giveShopItems));
                     Float firstFloat = (Float)variableAmount.values().toArray()[0];
                     if(firstFloat == 0.0f) {
                         msg(event.getPlayer(),SignShop.Errors.get("player_doesnt_have_items").replace("!items", sItems));
@@ -823,12 +862,18 @@ public class SignShopPlayerListener implements Listener {
 
                 if(operation.contains(takeShopItems)){
                     if(!isStockOK(cbChest.getInventory(), isItems, true)) {
-                        if(!operation.contains(playerIsOp))
-                            setSignStatus(bClicked, ChatColor.DARK_RED);
+                        updateStockStatus(bClicked, ChatColor.DARK_RED);
                         msg(event.getPlayer(),SignShop.Errors.get("out_of_stock"));
                         return;
                     } else {
-                        setSignStatus(bClicked, ChatColor.DARK_BLUE);
+                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);                        
+                    }
+                }
+                
+                if(operation.contains(givePlayerItems)) {
+                    if(!isStockOK(player.getInventory(), isItems, false)) {                        
+                        msg(event.getPlayer(),SignShop.Errors.get("player_overstocked"));
+                        return;
                     }
                 }
             }
@@ -841,34 +886,28 @@ public class SignShopPlayerListener implements Listener {
                 } else if(event.getItem().getType().getMaxDurability() < 30) {
                     msg(event.getPlayer(),SignShop.Errors.get("invalid_item_to_repair"));
                     return;
+                } else if(event.getItem().getEnchantments().size() > 0 && !plugin.getAllowEnchantedRepair() && !hasPerm(player, "SignShop.ignorerepair", false)) {
+                    msg(event.getPlayer(),SignShop.Errors.get("enchanted_not_allowed"));
+                    return;
                 }
             }
             
             // Have they seen the confirm message? (right click skips)
-            if(event.getAction() == Action.LEFT_CLICK_BLOCK
-            &&(!mConfirms.containsKey(event.getPlayer().getName())
-                || mConfirms.get(event.getPlayer().getName()).getBlock() != bClicked)
-            ){
+            if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
                 msg(event.getPlayer(),getMessage("confirm",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
-
-                mConfirms.put(event.getPlayer().getName(),bClicked.getLocation());
-
                 return;
             }
             
-            mConfirms.remove(event.getPlayer().getName());
-            
             // Item giving/taking
             float iCount = 1;            
-            if(operation.contains(takePlayerItems) && operation.contains(giveShopItems)) {                
-                HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true);
+            if(operation.contains(takePlayerItems)) {            
+                HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));
                 ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
                 iCount = (Float)variableAmount.values().toArray()[0];
                 sItems = itemStackToString(isActual);
                 fPrice = (fPrice * iCount);
-            } else if(operation.contains(takePlayerItems)) {
-                event.getPlayer().getInventory().removeItem(isItems);
-            } else if(operation.contains(giveShopItems)){
+            }
+            if(!operation.contains(takePlayerItems) && operation.contains(giveShopItems)){
                 cbChest.getInventory().addItem(isItems);                
             }
             
@@ -878,13 +917,10 @@ public class SignShopPlayerListener implements Listener {
             }
             if(operation.contains(takeShopItems)){
                 cbChest.getInventory().removeItem(isItems);                
-                if(!operation.contains(playerIsOp))
-                    if(!isStockOK(cbChest.getInventory(), isItems, true))
-                        setSignStatus(bClicked, ChatColor.DARK_RED);
-                    else
-                        setSignStatus(bClicked, ChatColor.DARK_BLUE);
+                if(!isStockOK(cbChest.getInventory(), isItems, true))
+                    updateStockStatus(bClicked, ChatColor.DARK_RED);
                 else
-                    setSignStatus(bClicked, ChatColor.DARK_BLUE);
+                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);                    
             }
 
             // Health
@@ -901,11 +937,11 @@ public class SignShopPlayerListener implements Listener {
             // Weather Operations
             if(operation.contains(setDayTime)){
                 event.getPlayer().getWorld().setTime(0);
-                msg(event.getPlayer().getWorld(),SignShop.Errors.get("made_day").replace("!player",event.getPlayer().getDisplayName()));                
+                msg(event.getPlayer().getWorld(),SignShop.Errors.get("made_day").replace("!player",player.getDisplayName()));                
             }else if(operation.contains(setNightTime)){
                 long curtime = player.getWorld().getTime();
                 player.getWorld().setTime((curtime + 14000));
-                msg(event.getPlayer().getWorld(),SignShop.Errors.get("made_night").replace("!player",event.getPlayer().getDisplayName()));
+                msg(event.getPlayer().getWorld(),SignShop.Errors.get("made_night").replace("!player",player.getDisplayName()));
             }
             
             if(operation.contains(setRaining)){
@@ -1016,7 +1052,7 @@ public class SignShopPlayerListener implements Listener {
                 transaction = mutateMoney(player.getName(), fPrice);
             if(operation.contains(takePlayerMoney))
                 transaction = mutateMoney(player.getName(), -fPrice);
-            if(transaction == false) {
+            if((operation.contains(givePlayerMoney) || operation.contains(takePlayerMoney)) && transaction == false) {
                 // If it fails here we shouldn't attempt to credit or discredit the shopowner
                 player.sendMessage("The money transaction failed, please contact the System Administrator");
                 return;
@@ -1029,8 +1065,8 @@ public class SignShopPlayerListener implements Listener {
             
             
             SignShop.logTransaction(event.getPlayer().getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
-            msg(event.getPlayer(),getMessage("transaction",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
-            msg(seller.owner,getMessage("transaction_owner",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
+            msg(player,getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
+            msg(seller.owner,getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
         }
         if(event.getAction() == Action.LEFT_CLICK_BLOCK
         && event.getClickedBlock().getType() == Material.CHEST
@@ -1049,13 +1085,13 @@ public class SignShopPlayerListener implements Listener {
                         if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
                             continue;
                         List operation = SignShop.Operations.get(getOperation(sLines[0]));
-                        if(operation.contains(takeShopItems) && !operation.contains(playerIsOp))
+                        if(operation.contains(takeShopItems))
                             if(!isStockOK(cbChest.getInventory(), isItems, true))
-                                setSignStatus(temp, ChatColor.DARK_RED);
+                                updateStockStatus(temp, ChatColor.DARK_RED);
                             else
-                                setSignStatus(temp, ChatColor.DARK_BLUE);
+                                updateStockStatus(temp, ChatColor.DARK_BLUE);
                         else
-                            setSignStatus(temp, ChatColor.DARK_BLUE);
+                            updateStockStatus(temp, ChatColor.DARK_BLUE);
                     }
                 }
         }
