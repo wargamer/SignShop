@@ -645,8 +645,13 @@ public class SignShopPlayerListener implements Listener {
                         if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
                             continue;
                         List operation = SignShop.Operations.get(getOperation(sLines[0]));
-                        if(operation.contains(takeShopItems))                            
+                        if(operation.contains(takeShopItems))
                             if(!isStockOK(cbChest.getInventory(), isItems, true))
+                                setSignStatus(temp, ChatColor.DARK_RED);
+                            else
+                                setSignStatus(temp, ChatColor.DARK_BLUE);
+                        else if(operation.contains(giveShopItems))
+                            if(!isStockOK(cbChest.getInventory(), isItems, false))
                                 setSignStatus(temp, ChatColor.DARK_RED);
                             else
                                 setSignStatus(temp, ChatColor.DARK_BLUE);
@@ -656,6 +661,34 @@ public class SignShopPlayerListener implements Listener {
                 }
         }
         setSignStatus(bSign, ccColor);
+    }
+    
+    private void givePlayerItems(ItemStack[] isItemsToTake, Inventory iiPlayerInventory) {
+        ItemStack[] isBackup = new ItemStack[isItemsToTake.length];        
+        for(int i = 0; i < isItemsToTake.length; i++){
+            if(isItemsToTake[i] != null){
+                isBackup[i] = new ItemStack(
+                    isItemsToTake[i].getType(),
+                    isItemsToTake[i].getAmount(),
+                    isItemsToTake[i].getDurability()
+                );
+                addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
+                if(isItemsToTake[i].getData() != null){
+                    isBackup[i].setData(isItemsToTake[i].getData());
+                }
+            }
+        }
+        iiPlayerInventory.addItem(isBackup);
+    }
+    
+    private void debugInventory(ItemStack[] is) {
+        for(int i = 0; i < is.length; i++) {
+            if(is[i] != null)
+                System.out.println(is[i].getData().toString() + " " + is[i].getAmount());
+            else
+                System.out.println(i + " is null");
+        }
+        System.out.println("***********************************************");
     }
     
     @EventHandler(priority = EventPriority.HIGH)
@@ -842,7 +875,6 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
                 cbChest = (Chest) seller.getChest().getState();
-
                 if(operation.contains(takePlayerItems)){
                     HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, false, !operation.contains(giveShopItems));
                     Float firstFloat = (Float)variableAmount.values().toArray()[0];
@@ -850,13 +882,20 @@ public class SignShopPlayerListener implements Listener {
                         msg(event.getPlayer(),SignShop.Errors.get("player_doesnt_have_items").replace("!items", sItems));
                         return;
                     } else if(firstFloat == -1.0f) {
+                        updateStockStatus(bClicked, ChatColor.DARK_RED);
                         msg(event.getPlayer(),SignShop.Errors.get("overstocked"));
                         return;
-                    }    
-                } else if(operation.contains(giveShopItems)){
+                    } else {
+                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
+                    }
+                }
+                if(operation.contains(giveShopItems)){
                     if(!isStockOK(cbChest.getInventory(), isItems, false)) {
+                        updateStockStatus(bClicked, ChatColor.DARK_RED);
                         msg(event.getPlayer(),SignShop.Errors.get("overstocked"));
                         return;
+                    } else {
+                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                     }
                 }
 
@@ -866,7 +905,7 @@ public class SignShopPlayerListener implements Listener {
                         msg(event.getPlayer(),SignShop.Errors.get("out_of_stock"));
                         return;
                     } else {
-                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);                        
+                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                     }
                 }
                 
@@ -877,7 +916,7 @@ public class SignShopPlayerListener implements Listener {
                     }
                 }
             }
-
+            
             //Make sure the item can be repaired
             if(operation.contains(repairPlayerHeldItem)){
                 if(event.getItem() == null) {
@@ -901,26 +940,33 @@ public class SignShopPlayerListener implements Listener {
             // Item giving/taking
             float iCount = 1;            
             if(operation.contains(takePlayerItems)) {            
-                HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));
+                HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));                
                 ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
                 iCount = (Float)variableAmount.values().toArray()[0];
                 sItems = itemStackToString(isActual);
                 fPrice = (fPrice * iCount);
+                if(!isStockOK(cbChest.getInventory(), isItems, false))
+                    updateStockStatus(bClicked, ChatColor.DARK_RED);
+                else
+                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);                
             }
             if(!operation.contains(takePlayerItems) && operation.contains(giveShopItems)){
                 cbChest.getInventory().addItem(isItems);                
+                if(!isStockOK(cbChest.getInventory(), isItems, false))
+                    updateStockStatus(bClicked, ChatColor.DARK_RED);
+                else
+                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
             }
             
             if(operation.contains(givePlayerItems)){
-                PlayerInventory inv = event.getPlayer().getInventory();
-                inv.addItem(isItems);
+                givePlayerItems(isItems, event.getPlayer().getInventory());
             }
             if(operation.contains(takeShopItems)){
-                cbChest.getInventory().removeItem(isItems);                
+                cbChest.getInventory().removeItem(isItems);
                 if(!isStockOK(cbChest.getInventory(), isItems, true))
                     updateStockStatus(bClicked, ChatColor.DARK_RED);
                 else
-                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);                    
+                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
             }
 
             // Health
@@ -1025,14 +1071,14 @@ public class SignShopPlayerListener implements Listener {
             if(operation.contains(givePlayerRandomItem)){
                 ItemStack isRandom = isItems[(new Random()).nextInt(isItems.length)];
                 ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;
-                if(!isStockOK(cbChest.getInventory(), isRandoms, true)) {                
+                if(!isStockOK(cbChest.getInventory(), isRandoms, true)) {
                     msg(event.getPlayer(),SignShop.Errors.get("out_of_stock"));
                     return;
                 }
                 cbChest.getInventory().removeItem(isRandom);
                 PlayerInventory inv = event.getPlayer().getInventory();
                 inv.addItem(isRandom);
-                
+                updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                 sItems = this.itemStackToString(isRandoms);                
             }
 
@@ -1061,8 +1107,7 @@ public class SignShopPlayerListener implements Listener {
             if(operation.contains(giveOwnerMoney))
                 transaction = mutateMoney(seller.owner, fPrice);
             if(operation.contains(takeOwnerMoney)) 
-                transaction = mutateMoney(seller.owner, -fPrice);
-            
+                transaction = mutateMoney(seller.owner, -fPrice);            
             
             SignShop.logTransaction(event.getPlayer().getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
             msg(player,getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
@@ -1087,11 +1132,16 @@ public class SignShopPlayerListener implements Listener {
                         List operation = SignShop.Operations.get(getOperation(sLines[0]));
                         if(operation.contains(takeShopItems))
                             if(!isStockOK(cbChest.getInventory(), isItems, true))
-                                updateStockStatus(temp, ChatColor.DARK_RED);
+                                setSignStatus(temp, ChatColor.DARK_RED);
                             else
-                                updateStockStatus(temp, ChatColor.DARK_BLUE);
+                                setSignStatus(temp, ChatColor.DARK_BLUE);
+                        else if(operation.contains(giveShopItems))
+                            if(!isStockOK(cbChest.getInventory(), isItems, false))
+                                setSignStatus(temp, ChatColor.DARK_RED);
+                            else
+                                setSignStatus(temp, ChatColor.DARK_BLUE);
                         else
-                            updateStockStatus(temp, ChatColor.DARK_BLUE);
+                            setSignStatus(temp, ChatColor.DARK_BLUE);
                     }
                 }
         }
