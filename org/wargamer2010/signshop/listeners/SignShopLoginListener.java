@@ -1,15 +1,17 @@
-package org.wargamer2010.signshop;
+package org.wargamer2010.signshop.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.entity.Player;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.Vault;
 
 public class SignShopLoginListener implements Listener {
     private SignShop plugin;
     
-    SignShopLoginListener(SignShop pPlugin) {
+    public SignShopLoginListener(SignShop pPlugin) {
         plugin = pPlugin;
     }
     

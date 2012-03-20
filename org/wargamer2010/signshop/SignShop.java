@@ -14,6 +14,7 @@ import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import org.wargamer2010.signshop.listeners.*;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
@@ -27,7 +28,7 @@ public class SignShop extends JavaPlugin{
     private int MaxSellDistance = 0;
     private int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
-    private boolean OPOverride = true;
+    private static boolean OPOverride = true;
     private boolean AllowVariableAmounts = false;
     private boolean AllowEnchantedRepair = true;
 
@@ -38,7 +39,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,String> Errors;
     
     //Permissions
-    public boolean USE_PERMISSIONS = false;    
+    public static boolean USE_PERMISSIONS = false;    
     
     // Vault
     private Vault vault = null;
@@ -248,7 +249,7 @@ public class SignShop extends JavaPlugin{
         return MaxShopsPerPerson;
     }
     
-    public Boolean getOPOverride() {
+    public static Boolean getOPOverride() {
         return OPOverride;
     }
     
