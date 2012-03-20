@@ -1,4 +1,5 @@
 package org.wargamer2010.signshop;
+import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.Location;

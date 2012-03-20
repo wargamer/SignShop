@@ -1,4 +1,4 @@
-package org.wargamer2010.signshop;
+package org.wargamer2010.signshop.listeners;
 
 import org.bukkit.event.server.PluginDisableEvent;
 import org.bukkit.event.server.PluginEnableEvent;
@@ -18,12 +18,13 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.ISettings;
+import org.wargamer2010.signshop.SignShop;
 
 public class SignShopServerListener implements Listener {
     private Server server;
     private Essentials ess = null;
 
-    SignShopServerListener(Server pServer) {
+    public SignShopServerListener(Server pServer) {
         server = pServer;
         setupPluginToHookInto();
     }
