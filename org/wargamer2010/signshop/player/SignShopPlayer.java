@@ -36,7 +36,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().equals("") && ssPlayer != null)
+        if(sMessage == null || sMessage.trim().equals("") || ssPlayer == null)
             return;
         ssPlayer.sendMessage(ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
     }
