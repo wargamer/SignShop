@@ -13,6 +13,7 @@ import net.milkbowl.vault.economy.EconomyResponse;
 
 public class SignShopPlayer {
     Player ssPlayer = null;
+    String sPlayername = "";
     
     public SignShopPlayer(String sName) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
@@ -22,6 +23,7 @@ public class SignShopPlayer {
                 ssPlayer = pPlayer;                                
             }
         }
+        sPlayername = sName;
     }
     
     public SignShopPlayer(Player pPlayer) {
@@ -42,7 +44,7 @@ public class SignShopPlayer {
     }
     
     public String getName() {
-        return (ssPlayer == null) ? "" : ssPlayer.getName();    
+        return sPlayername;
     }
     
     public Player getPlayer() {
@@ -72,20 +74,20 @@ public class SignShopPlayer {
     }
     
     public Boolean hasMoney(float amount) {
-        if(Vault.economy == null || ssPlayer == null)
+        if(Vault.economy == null || sPlayername.equals(""))
             return false;
         else
-            return Vault.economy.has(ssPlayer.getName(), amount);
+            return Vault.economy.has(sPlayername, amount);
     }
     
     public Boolean mutateMoney(float amount) {
-        if(Vault.economy == null || ssPlayer == null)
+        if(Vault.economy == null || sPlayername.equals(""))
             return false;
         EconomyResponse response;
         if(amount > 0.0)
-            response = Vault.economy.depositPlayer(ssPlayer.getName(), amount);
+            response = Vault.economy.depositPlayer(sPlayername, amount);
         else if(amount < 0.0)
-            response = Vault.economy.withdrawPlayer(ssPlayer.getName(), Math.abs(amount));
+            response = Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
         else
             return true;
         if(response.type == EconomyResponse.ResponseType.SUCCESS)
