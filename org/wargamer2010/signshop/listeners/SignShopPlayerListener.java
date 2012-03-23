@@ -847,6 +847,23 @@ public class SignShopPlayerListener implements Listener {
                 }
             }
             
+            if(operation.contains(setRaining)) {
+                if(player.getWorld().hasStorm() && player.getWorld().isThundering()) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("already_raining"));
+                    return;
+                }                
+            } else if(operation.contains(setClearSkies)){
+                if(!player.getWorld().hasStorm() && !player.getWorld().isThundering()) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("already_clear_skies"));
+                    return;
+                }
+            }
+            
+            if(operation.contains(healPlayer) && player.getHealth() >= 20) {
+                ssPlayer.sendMessage(SignShop.Errors.get("already_full_health"));
+                return;
+            }
+            
             // Have they seen the confirm message? (right click skips)
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
                 ssPlayer.sendMessage(getMessage("confirm",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
