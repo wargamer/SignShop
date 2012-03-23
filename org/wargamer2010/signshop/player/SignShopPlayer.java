@@ -28,6 +28,8 @@ public class SignShopPlayer {
     
     public SignShopPlayer(Player pPlayer) {
         ssPlayer = pPlayer;
+        if(ssPlayer != null)
+            sPlayername = ssPlayer.getName();
     }
 
     public static void broadcastMsg(World world, String sMessage) {
@@ -73,7 +75,7 @@ public class SignShopPlayer {
         return false;           
     }
     
-    public Boolean hasMoney(float amount) {
+    public Boolean hasMoney(float amount) {        
         if(Vault.economy == null || sPlayername.equals(""))
             return false;
         else
