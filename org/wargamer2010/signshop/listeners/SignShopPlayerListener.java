@@ -841,6 +841,9 @@ public class SignShopPlayerListener implements Listener {
                 } else if(event.getItem().getEnchantments().size() > 0 && !plugin.getAllowEnchantedRepair() && !ssPlayer.hasPerm("SignShop.ignorerepair", false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("enchanted_not_allowed"));
                     return;
+                } else if(event.getItem().getDurability() == 0) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("item_already_repair"));
+                    return;
                 }
             }
             
