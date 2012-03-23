@@ -20,6 +20,8 @@ public class SignShopChest {
     }
     
     public Boolean allowedToLink(SignShopPlayer ssPlayer) {
+        if(ssChest == null)
+            return true;
         Plugin plugin = null;        
         LWC lwc = null;
         Boolean bAllowed = true;
