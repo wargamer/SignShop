@@ -182,3 +182,9 @@ errors:
     too_far: The distance between the sign and chest is too big. Maximum is !max.
     too_many_shops: You have reached the maximum amount of shops allowed. Maximum is !max.
     enchanted_not_allowed: You are not allowed to repair enchanted items.
+# Permission group specific price multipliers, example:
+# pricemultipliers:
+#    signshopplayers:
+#      iBuy: 0.7
+# Which will give the members of the group called signshopplayers a 30% discount on all iBuy signs
+pricemultipliers:

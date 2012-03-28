@@ -32,12 +32,9 @@ public class SignShopChest {
         plugin = Bukkit.getServer().getPluginManager().getPlugin("LWC");
         if(plugin != null) {
             lwc = ((LWCPlugin) plugin).getLWC();
-            if(lwc != null) {                
-                if(lwc.findProtection(ssChest.getBlock()) == null)
-                    bAllowed = (bAllowed ? true : bAllowed);
-                else
-                    bAllowed = (bAllowed ? lwc.canAccessProtection(ssPlayer.getPlayer(), ssChest.getBlock()) : bAllowed);                
-            }
+            if(lwc != null)
+                if(lwc.findProtection(ssChest.getBlock()) != null)
+                    bAllowed = (bAllowed ? lwc.canAccessProtection(ssPlayer.getPlayer(), ssChest.getBlock()) : bAllowed);
         }
         
         return bAllowed;

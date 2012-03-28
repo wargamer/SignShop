@@ -53,7 +53,7 @@ public class SignShopPlayer {
         return ssPlayer;
     }
     
-    public Boolean hasPerm(String perm, Boolean OPOperation) {        
+    public Boolean hasPerm(String perm, Boolean OPOperation) { 
         if(Vault.permission == null || ssPlayer == null) {
             return true;
         }
@@ -64,7 +64,7 @@ public class SignShopPlayer {
         
         if(SignShop.USE_PERMISSIONS && OPOverride && isOP)
             return true;
-        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas(ssPlayer, perm)) {
+        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas((String)null, sPlayername, perm)) {
             ssPlayer.setOp(isOP);
             return true;
         } else if(!SignShop.USE_PERMISSIONS && isOP)
@@ -116,6 +116,27 @@ public class SignShopPlayer {
             }
         }
         ssPlayer.getInventory().addItem(isBackup);
+    }
+    
+    public Float getPlayerPricemod(String sOperation, Boolean bBuyorSell) {
+        Float fPricemod = 1.0f;
+        Float fTemp = fPricemod;
+        if(Vault.permission == null || ssPlayer == null)
+            return fPricemod;
+        String[] sGroups = Vault.permission.getPlayerGroups(ssPlayer);
+        if(sGroups.length == 0)
+            return fPricemod;
+        for(int i = 0; i < sGroups.length; i++) {
+            String sGroup = sGroups[i].toLowerCase();
+            if(SignShop.PriceMultipliers.containsKey(sGroup) && SignShop.PriceMultipliers.get(sGroup).containsKey(sOperation)) {
+                fTemp = SignShop.PriceMultipliers.get(sGroup).get(sOperation);
+                if(bBuyorSell && fTemp < fPricemod)
+                    fPricemod = fTemp;
+                else if(!bBuyorSell && fTemp > fPricemod)
+                    fPricemod = fTemp;
+            }
+        }       
+        return fPricemod;
     }
     
 }

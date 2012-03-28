@@ -14,6 +14,8 @@ public class configUtil {
     static HashMap<String,HashMap<String,String>> fetchHasmapInHashmap(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,String>> tempHasinHash = new HashMap<String,HashMap<String,String>>();
         try {
+            if(config.getConfigurationSection(path) == null)
+                return tempHasinHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 MemorySection memsec = (MemorySection)entry.getValue();
@@ -23,6 +25,25 @@ public class configUtil {
                 tempHasinHash.put(entry.getKey(), tempmap);
             }
         } catch(ClassCastException ex) {
+            SignShop.log("Incorrect section in config found.", Level.WARNING);
+        }
+        return tempHasinHash;
+    }
+    
+    static HashMap<String,HashMap<String,Float>> fetchFloatHasmapInHashmap(String path, FileConfiguration config) {
+        HashMap<String,HashMap<String,Float>> tempHasinHash = new HashMap<String,HashMap<String,Float>>();
+        try {
+            if(config.getConfigurationSection(path) == null)
+                return tempHasinHash;
+            Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {                
+                MemorySection memsec = (MemorySection)entry.getValue();
+                HashMap<String,Float> tempmap = new HashMap<String, Float>();
+                for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
+                    tempmap.put(subentry.getKey(), ((Double)subentry.getValue()).floatValue());
+                tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
+            }
+        } catch(ClassCastException ex) {            
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
         return tempHasinHash;

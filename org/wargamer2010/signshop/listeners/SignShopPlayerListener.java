@@ -20,6 +20,8 @@ import org.bukkit.material.Lever;
 import org.bukkit.block.BlockState;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.craftbukkit.event.CraftEventFactory;
+import org.bukkit.block.BlockFace;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -28,6 +30,7 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.List;
 import java.util.ArrayList;
+import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
@@ -590,8 +593,13 @@ public class SignShopPlayerListener implements Listener {
         setSignStatus(bSign, ccColor);
     }
     
+    void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
+        PlayerInteractEvent event = new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, player.getItemInHand(), bLever, bfBlockface);
+        Bukkit.getServer().getPluginManager().callEvent(event);        
+    }
+    
     @EventHandler(priority = EventPriority.HIGH)
-    public void onPlayerInteract(PlayerInteractEvent event) {
+    public void onPlayerInteract(PlayerInteractEvent event) {        
         // Respect protection plugins
         if(event.getClickedBlock() == null
         || event.isCancelled()
@@ -604,7 +612,6 @@ public class SignShopPlayerListener implements Listener {
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         String[] sLines;
         String sOperation;        
-        
         // Clicked a sign with redstone
         if(event.getItem() != null && event.getItem().getType() == Material.REDSTONE){
             if(bClicked.getType() == Material.SIGN_POST
@@ -781,6 +788,7 @@ public class SignShopPlayerListener implements Listener {
             }
 
             Chest cbChest = null;
+            float iCount = 1;
 
             if(operation.contains(usesChest)){
                 if(seller.getChest().getType() != Material.CHEST){
@@ -790,17 +798,20 @@ public class SignShopPlayerListener implements Listener {
                 cbChest = (Chest) seller.getChest().getState();
                 if(operation.contains(takePlayerItems)){
                     HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, false, !operation.contains(giveShopItems));
-                    Float firstFloat = (Float)variableAmount.values().toArray()[0];
-                    if(firstFloat == 0.0f) {
+                    iCount = (Float)variableAmount.values().toArray()[0];
+                    if(iCount == 0.0f) {
                         ssPlayer.sendMessage(SignShop.Errors.get("player_doesnt_have_items").replace("!items", sItems));
                         return;
-                    } else if(firstFloat == -1.0f) {
+                    } else if(iCount == -1.0f) {
                         updateStockStatus(bClicked, ChatColor.DARK_RED);
                         ssPlayer.sendMessage(SignShop.Errors.get("overstocked"));
                         return;
                     } else {
                         updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                     }
+                    ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
+                    sItems = itemStackToString(isActual);
+                    fPrice = (fPrice * iCount);
                 }
                 if(operation.contains(giveShopItems)){
                     if(!isStockOK(cbChest.getInventory(), isItems, false)) {
@@ -811,6 +822,11 @@ public class SignShopPlayerListener implements Listener {
                         updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                     }
                 }
+                
+                // Checking for a possible price modifier, default is 1.0
+                Boolean bBuyOrSell = (operation.contains(takePlayerMoney) ? true : false);
+                Float fPricemod = ssPlayer.getPlayerPricemod(sOperation, bBuyOrSell);
+                fPrice = (fPrice * fPricemod);                
 
                 if(operation.contains(takeShopItems)){
                     if(!isStockOK(cbChest.getInventory(), isItems, true)) {
@@ -870,14 +886,9 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             
-            // Item giving/taking
-            float iCount = 1;            
+            // Item giving/taking                     
             if(operation.contains(takePlayerItems)) {            
-                HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));                
-                ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
-                iCount = (Float)variableAmount.values().toArray()[0];
-                sItems = itemStackToString(isActual);
-                fPrice = (fPrice * iCount);
+                variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));
                 if(!isStockOK(cbChest.getInventory(), isItems, false))
                     updateStockStatus(bClicked, ChatColor.DARK_RED);
                 else
@@ -939,13 +950,15 @@ public class SignShopPlayerListener implements Listener {
             if(operation.contains(setRedstoneOn)){
                 Block bLever = seller.getChest();
 
-                if(bLever.getType() == Material.LEVER){
-                    int iData = (int) bLever.getData();
-
-                    if((iData&0x08) != 0x08){                        
-                        iData|=0x08;//send power on
-                        bLever.setData((byte) iData);
-                        bLever.getState().update(true);
+                if(bLever.getType() == Material.LEVER) {                    
+                    BlockState state = bLever.getState();
+                    MaterialData data = state.getData();                                        
+                    Lever lever = (Lever)data;                               
+                    if(!lever.isPowered()) {                        
+                        lever.setPowered(true);                        
+                        state.setData(lever);
+                        state.update();
+                        generateInteractEvent(bLever, player, event.getBlockFace());
                     } else {
                         ssPlayer.sendMessage(SignShop.Errors.get("already_on"));
                         return;
@@ -957,11 +970,12 @@ public class SignShopPlayerListener implements Listener {
                 if(bLever.getType() == Material.LEVER) {                    
                     BlockState state = bLever.getState();
                     MaterialData data = state.getData();                                        
-                    Lever lever = (Lever)data;                    
-                    if(lever.isPowered()) {
-                        lever.setPowered(false);
+                    Lever lever = (Lever)data;                                        
+                    if(lever.isPowered()) {                        
+                        lever.setPowered(false);                        
                         state.setData(lever);
                         state.update();
+                        generateInteractEvent(bLever, player, event.getBlockFace());
                     } else { 
                         ssPlayer.sendMessage(SignShop.Errors.get("already_off"));
                         return;
@@ -974,10 +988,10 @@ public class SignShopPlayerListener implements Listener {
                     BlockState state = bLever.getState();
                     MaterialData data = state.getData();                                        
                     Lever lever = (Lever)data;                    
-                    if(!lever.isPowered()) {
-                        lever.setPowered(true);
+                    if(!lever.isPowered()) {                        
+                        lever.setPowered(true);                   
                         state.setData(lever);
-                        state.update();
+                        state.update();                        
                     } else { 
                         ssPlayer.sendMessage(SignShop.Errors.get("already_on"));
                         return;
@@ -998,6 +1012,7 @@ public class SignShopPlayerListener implements Listener {
                         lever.setPowered(false);                        
                     state.setData(lever);
                     state.update();                    
+                    generateInteractEvent(bLever, player, event.getBlockFace());
                 }
             }
 
@@ -1020,7 +1035,7 @@ public class SignShopPlayerListener implements Listener {
                     event.setCancelled(true);
                 }
                 //kludge
-                player.updateInventory();
+                player.updateInventory();                
             }
             
             // Mutating money here so if one of the other transactions fail or are not needed
@@ -1042,7 +1057,7 @@ public class SignShopPlayerListener implements Listener {
             if(operation.contains(takeOwnerMoney)) 
                 transaction = ssOwner.mutateMoney(-fPrice);            
             
-            SignShop.logTransaction(event.getPlayer().getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
+            SignShop.logTransaction(player.getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
             ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
             ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
         }
@@ -1081,7 +1096,7 @@ public class SignShopPlayerListener implements Listener {
     }
 
     private static class lagSetter implements Runnable{
-        private final Block blockToChange;
+        private final Block blockToChange;        
 
         lagSetter(Block blockToChange){
             this.blockToChange = blockToChange;
@@ -1096,7 +1111,7 @@ public class SignShopPlayerListener implements Listener {
                 if(lever.isPowered()) {
                     lever.setPowered(false);
                     state.setData(lever);
-                    state.update();
+                    state.update();                    
                 }                    
             }            
         }
