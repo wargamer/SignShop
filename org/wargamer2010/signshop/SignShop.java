@@ -37,6 +37,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,List> Operations;
     public static HashMap<String,HashMap<String,String>> Messages;
     public static HashMap<String,String> Errors;
+    public static HashMap<String,HashMap<String,Float>> PriceMultipliers;
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -88,6 +89,7 @@ public class SignShop extends JavaPlugin{
         
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
+        SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"),this);
