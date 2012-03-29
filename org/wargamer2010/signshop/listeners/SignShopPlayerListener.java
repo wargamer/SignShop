@@ -20,7 +20,6 @@ import org.bukkit.material.Lever;
 import org.bukkit.block.BlockState;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.craftbukkit.event.CraftEventFactory;
 import org.bukkit.block.BlockFace;
 
 import java.util.Map;
