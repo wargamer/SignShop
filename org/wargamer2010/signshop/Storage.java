@@ -110,16 +110,17 @@ public class Storage{
                 invalidShop = true;
                 needToSave = true;
             }
+            if(sSignLocation[0] == null || Bukkit.getServer().getWorld(sSignLocation[0]) == null) {
+                invalidShop = true;
+                needToSave = true;
+            }
 
             if(invalidShop){
                 SignShop.log(SignShop.Errors.get("shop_removed"), Level.INFO);
                 continue;
             }
 
-            Block bSign = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(
-                Integer.parseInt(sSignLocation[1]),
-                Integer.parseInt(sSignLocation[2]),
-                Integer.parseInt(sSignLocation[3]));
+            Block bSign = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(iX, iY, iZ);
 
             //If no longer valid, remove this sign (this would happen from worldedit, movecraft, etc)
             if(bSign.getType() != Material.SIGN_POST && bSign.getType() != Material.WALL_SIGN){
