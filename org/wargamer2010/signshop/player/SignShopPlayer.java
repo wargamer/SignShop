@@ -61,10 +61,9 @@ public class SignShopPlayer {
         Boolean OPOverride = SignShop.getOPOverride();
         if(SignShop.USE_PERMISSIONS && isOP && !OPOverride)
             ssPlayer.setOp(false);
-        
         if(SignShop.USE_PERMISSIONS && OPOverride && isOP)
             return true;
-        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas((String)null, sPlayername, perm)) {
+        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas(ssPlayer.getWorld(), sPlayername, perm)) {
             ssPlayer.setOp(isOP);
             return true;
         } else if(!SignShop.USE_PERMISSIONS && isOP)
@@ -72,7 +71,7 @@ public class SignShopPlayer {
         else if(!SignShop.USE_PERMISSIONS && !OPOperation)
             return true;
         ssPlayer.setOp(isOP);
-        return false;           
+        return false;
     }
     
     public Boolean hasMoney(float amount) {        
@@ -122,8 +121,8 @@ public class SignShopPlayer {
         Float fPricemod = 1.0f;
         Float fTemp = fPricemod;
         if(Vault.permission == null || ssPlayer == null)
-            return fPricemod;
-        String[] sGroups = Vault.permission.getPlayerGroups(ssPlayer);
+            return fPricemod;        
+        String[] sGroups = Vault.permission.getPlayerGroups(ssPlayer);        
         if(sGroups.length == 0)
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
