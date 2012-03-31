@@ -38,7 +38,8 @@ import org.wargamer2010.signshop.blocks.SignShopChest;
 
 public class SignShopPlayerListener implements Listener {
     private final SignShop plugin;
-    private static Map<String, Location> mClicks  = new HashMap<String,Location>();    
+    private static Map<String, Location> mClicks = new HashMap<String,Location>();    
+    private static Map<Player, Location> mCopyPaste = new HashMap<Player,Location>();    
     private static HashMap<Integer, String> discs;
 
     private int takePlayerMoney = 1;
@@ -433,9 +434,10 @@ public class SignShopPlayerListener implements Listener {
         if(sign.getType() == Material.SIGN_POST || sign.getType() == Material.WALL_SIGN) {
             Sign signblock = ((Sign) sign.getState());
             String[] sLines = signblock.getLines();            
-            if(sLines[0].length() < 14)
+            if(sLines[0].length() < 14) {
                 signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
-            signblock.update();            
+                signblock.update();
+            }
         }
     }
     
@@ -592,9 +594,70 @@ public class SignShopPlayerListener implements Listener {
         setSignStatus(bSign, ccColor);
     }
     
-    void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
+    private void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
         PlayerInteractEvent event = new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, player.getItemInHand(), bLever, bfBlockface);
         Bukkit.getServer().getPluginManager().callEvent(event);        
+    }
+    
+    private void copySign(Block bNewSign, Block bToChange, Player player) {
+        Sign signNewSign = ((Sign) bNewSign.getState());
+        Sign signToChange = ((Sign) bToChange.getState());
+        String[] sNewSign = signNewSign.getLines();
+        String[] sToChange = signToChange.getLines();        
+        List newoperation;
+        List oldoperation = SignShop.Operations.get(getOperation(sToChange[0]));
+        Seller seller = SignShop.Storage.getSeller(bToChange.getLocation());
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        if((!seller.owner.equals(player.getName()) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
+            ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+            return;
+        }
+        
+        if(sNewSign[0] != null && sNewSign[0].length() > 0) {
+            if(SignShop.Operations.containsKey(getOperation(sNewSign[0]))) {                
+                newoperation = SignShop.Operations.get(getOperation(sNewSign[0]));                
+                if(newoperation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Admin."+getOperation(sNewSign[0])), true)) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+                    return;
+                } else if(!newoperation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Signs."+getOperation(sNewSign[0])), false)) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+                    return;
+                }
+                if(newoperation.contains(usesChest) && !oldoperation.contains(usesChest)) {
+                    ssPlayer.sendMessage("The new and old operation are not compatible.");
+                    return;
+                } else if(newoperation.contains(usesLever) && !oldoperation.contains(usesLever)) {
+                    ssPlayer.sendMessage("The new and old operation are not compatible.");
+                    return;
+                } else if((!newoperation.contains(usesChest) && !newoperation.contains(usesLever)) && (oldoperation.contains(usesChest) || oldoperation.contains(usesLever))) {
+                    ssPlayer.sendMessage("The new and old operation are not compatible.");
+                    return;
+                }
+                signToChange.setLine(0, sNewSign[0]);
+            }
+        }
+        if(sNewSign[1] != null && sNewSign[1].length() > 0)
+            signToChange.setLine(1, sNewSign[1]);
+        if(sNewSign[2] != null && sNewSign[2].length() > 0)
+            signToChange.setLine(2, sNewSign[2]);
+        if(sNewSign[3] != null && sNewSign[3].length() > 0) {
+            signToChange.setLine(3, sNewSign[3]);
+        }
+        signToChange.update();
+        oldoperation = SignShop.Operations.get(getOperation(sToChange[0]));        
+        
+        if(!oldoperation.contains(usesChest))
+            setSignStatus(bToChange, ChatColor.DARK_BLUE);
+        else if(oldoperation.contains(usesChest) && oldoperation.contains(takeShopItems) && isStockOK(((Chest)seller.getChest().getState()).getInventory(), seller.getItems(), true))
+            setSignStatus(bToChange, ChatColor.DARK_BLUE);
+        else if(oldoperation.contains(usesChest) && oldoperation.contains(giveShopItems) && isStockOK(((Chest)seller.getChest().getState()).getInventory(), seller.getItems(), false))
+            setSignStatus(bToChange, ChatColor.DARK_BLUE);
+        else if(!oldoperation.contains(takeShopItems) && !oldoperation.contains(giveShopItems))
+            setSignStatus(bToChange, ChatColor.DARK_BLUE);
+        else
+            setSignStatus(bToChange, ChatColor.DARK_RED);
+        ssPlayer.sendMessage("The sign has been succesfully updated.");
+        
     }
     
     @EventHandler(priority = EventPriority.HIGH)
@@ -604,13 +667,32 @@ public class SignShopPlayerListener implements Listener {
         || event.isCancelled()
         || event.getPlayer() == null) {
             return;
-        }        
+        }
         // Initialize needed variables
         Block bClicked = event.getClickedBlock();
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         String[] sLines;
-        String sOperation;        
+        String sOperation;
+        
+        if(event.getItem() != null && event.getItem().getType() == Material.INK_SACK && (bClicked.getType() == Material.WALL_SIGN || bClicked.getType() == Material.SIGN_POST)) {
+            if(SignShop.Storage.getSeller(bClicked.getLocation()) != null && !mCopyPaste.containsKey(player)) {
+                ssPlayer.sendMessage("Please hit the sign with the new info first.");
+                return;
+            } else if(SignShop.Storage.getSeller(bClicked.getLocation()) == null) {
+                ssPlayer.sendMessage("Sign with new info has been succesfully stored. Please hit the sign to be changed now.");
+                mCopyPaste.put(player, bClicked.getLocation());
+                return;
+            } else if(mCopyPaste.containsKey(player) && mCopyPaste.get(player).getBlock().getType() != Material.WALL_SIGN && mCopyPaste.get(player).getBlock().getType() != Material.SIGN_POST) {
+                mCopyPaste.remove(player);
+                ssPlayer.sendMessage("Please hit the sign with the new info first.");
+                return;
+            } else if(SignShop.Storage.getSeller(bClicked.getLocation()) != null && mCopyPaste.containsKey(player)) {
+                copySign(mCopyPaste.get(player).getBlock(), bClicked, player);
+                mCopyPaste.remove(player);
+            }
+            return;
+        }
         // Clicked a sign with redstone
         if(event.getItem() != null && event.getItem().getType() == Material.REDSTONE){
             if(bClicked.getType() == Material.SIGN_POST
@@ -760,6 +842,7 @@ public class SignShopPlayerListener implements Listener {
             if(seller == null){
                 return;
             }
+            SignShopPlayer ssOwner = new SignShopPlayer(seller.owner);
             
             if(ssPlayer.hasPerm(("SignShop.DenyUse."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Admin."+sOperation), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permission_use"));
@@ -780,7 +863,7 @@ public class SignShopPlayerListener implements Listener {
             }
 
             if(operation.contains(takeOwnerMoney)){
-                if(!ssPlayer.hasMoney(fPrice)) {
+                if(!ssOwner.hasMoney(fPrice)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_shop_money").replace("!price",this.formatMoney(fPrice)));
                     return;
                 }
@@ -1050,7 +1133,7 @@ public class SignShopPlayerListener implements Listener {
                 ssPlayer.sendMessage("The money transaction failed, please contact the System Administrator");
                 return;
             }
-            SignShopPlayer ssOwner = new SignShopPlayer(seller.owner);
+            
             if(operation.contains(giveOwnerMoney))
                 transaction = ssOwner.mutateMoney(fPrice);
             if(operation.contains(takeOwnerMoney)) 
