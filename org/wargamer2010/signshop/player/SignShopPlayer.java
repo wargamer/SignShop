@@ -121,8 +121,14 @@ public class SignShopPlayer {
         Float fPricemod = 1.0f;
         Float fTemp = fPricemod;
         if(Vault.permission == null || ssPlayer == null)
-            return fPricemod;        
-        String[] sGroups = Vault.permission.getPlayerGroups(ssPlayer);        
+            return fPricemod;
+        String[] sGroups;
+        try {
+            sGroups = Vault.permission.getPlayerGroups(ssPlayer);
+        } catch(UnsupportedOperationException UnsupportedEX) {
+            return fPricemod;            
+        }
+        
         if(sGroups.length == 0)
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
