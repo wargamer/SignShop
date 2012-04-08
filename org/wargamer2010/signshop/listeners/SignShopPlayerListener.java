@@ -14,7 +14,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.Location;
 import org.bukkit.material.MaterialData;
 import org.bukkit.event.block.Action;
-import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.material.SimpleAttachableMaterialData;
 import org.bukkit.material.Lever;
 import org.bukkit.block.BlockState;
@@ -64,6 +63,8 @@ public class SignShopPlayerListener implements Listener {
     private int usesLever = 22;
     private int healPlayer = 23;
     private int repairPlayerHeldItem = 24;
+    private int takeItemInHand = 25;
+    private int usesChestItems = 26;
 
     public SignShopPlayerListener(SignShop instance){
         this.plugin = instance;
@@ -131,7 +132,7 @@ public class SignShopPlayerListener implements Listener {
         // For some reason running tostring on data when it's from an attachable material
         // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
         if(data instanceof SimpleAttachableMaterialData)
-            return stringFormat(data.getItemType());
+            return stringFormat(data.getItemType().name());
         String sData;
         if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))            
             return sData;
@@ -141,7 +142,7 @@ public class SignShopPlayerListener implements Listener {
         Matcher m = p.matcher(sData);
         sData = m.replaceAll("");
         sData = sData.replace("_", " ");
-                
+        
         StringBuffer sb = new StringBuffer(sData.length());
         p = Pattern.compile("(^|\\W)([a-z])");
         m = p.matcher(sData);
@@ -154,8 +155,8 @@ public class SignShopPlayerListener implements Listener {
         return sb.toString();
     }
 
-    private String stringFormat(Material material){
-        String sMaterial = material.name().replace("_"," ");
+    private String stringFormat(String sMaterial){
+        sMaterial = sMaterial.replace("_"," ");
         Pattern p = Pattern.compile("(^|\\W)([a-z])");
         Matcher m = p.matcher(sMaterial.toLowerCase());
         StringBuffer sb = new StringBuffer(sMaterial.length());
@@ -348,7 +349,7 @@ public class SignShopPlayerListener implements Listener {
             isChestItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
             // Make sure the chest wasn't empty, if dealing with an operation that uses items
-            if(operation.contains(usesChest)) {
+            if(operation.contains(usesChestItems)) {
                 if(isChestItems.length == 0){
                     ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
                     return false;
@@ -364,6 +365,30 @@ public class SignShopPlayerListener implements Listener {
             return true;
         }
         return false;
+    }
+    
+    private Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {        
+        List<ItemStack> items = new ArrayList<ItemStack>();
+        for(ItemStack item: isItemsToTake) {
+            ItemStack isBackup = new ItemStack(
+                item.getType(),
+                1,
+                item.getDurability()
+            );
+            addSafeEnchantments(isBackup, item.getEnchantments());
+            if(item.getData() != null) {
+                isBackup.setData(item.getData());
+            }
+            if(!items.contains(isBackup))
+                items.add(isBackup);
+        }
+        ItemStack[] isBackupToTake = new ItemStack[items.size()];
+        int i = 0;
+        for(ItemStack entry : items) {
+            isBackupToTake[i] = entry;
+            i++;
+        }
+        return isStockOK(iiInventory, isBackupToTake, bTakeOrGive);
     }
     
     private Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
@@ -407,24 +432,70 @@ public class SignShopPlayerListener implements Listener {
         iiInventory.setContents(isBackup);        
         return bStockOK;
     }
+    
+    private String binaryToRoman(int binary) {
+        final String[] RCODE = {"M", "CM", "D", "CD", "C", "XC", "L",
+                                           "XL", "X", "IX", "V", "IV", "I"};
+        final int[]    BVAL  = {1000, 900, 500, 400,  100,   90,  50,
+                                               40,   10,    9,   5,   4,    1};
+        if (binary <= 0 || binary >= 4000) {
+            return "";
+        }
+        String roman = "";
+        for (int i = 0; i < RCODE.length; i++) {
+            while (binary >= BVAL[i]) {
+                binary -= BVAL[i];
+                roman  += RCODE[i];
+            }
+        }
+        return roman;
+    }  
         
     private String itemStackToString(ItemStack[] isStacks) {
-        HashMap<MaterialData, Integer> items = new HashMap<MaterialData, Integer>();
+        HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
+        HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
         String sItems = "";
         Boolean first = true;
+        Boolean eFirst = true;
         Integer tempAmount = 0;
         for(ItemStack item: isStacks) {
-            if(items.containsKey(item.getData())) {
-                tempAmount = (items.get(item.getData()) + item.getAmount());
-                items.remove(item.getData());
-                items.put(item.getData(), tempAmount);                
+            ItemStack isBackup = new ItemStack(
+                item.getType(),
+                1,
+                item.getDurability()
+            );
+            addSafeEnchantments(isBackup, item.getEnchantments());
+            if(item.getData() != null){
+                isBackup.setData(item.getData());
+            }
+            
+            if(item.getEnchantments().size() > 0)
+                enchantments.put(isBackup, item.getEnchantments());
+            if(items.containsKey(isBackup)) {
+                tempAmount = (items.get(isBackup) + item.getAmount());                
+                items.put(isBackup, tempAmount);
             } else 
-                items.put(item.getData(), item.getAmount());
+                items.put(isBackup, item.getAmount());
         }
-        for(Map.Entry<MaterialData, Integer> entry : items.entrySet()) {
+        for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
             if(first) first = false;
             else sItems += ", ";
-            sItems += (entry.getValue())+" "+formatData(entry.getKey());
+            if(enchantments.containsKey(entry.getKey()))
+                sItems += ChatColor.DARK_PURPLE;
+            String sDamaged = " ";
+            if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
+                sDamaged = " Damaged ";
+            sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData());
+            if(enchantments.containsKey(entry.getKey())) {
+                sItems += (ChatColor.WHITE + " (");
+                for(Map.Entry<Enchantment,Integer> eEntry : enchantments.get(entry.getKey()).entrySet()) {
+                    if(eFirst) eFirst = false;
+                    else sItems += ", ";
+                    sItems += (stringFormat(eEntry.getKey().getName()) + " " + binaryToRoman(eEntry.getValue()));
+                }
+                eFirst = true;
+                sItems += ")";
+            }
         }
         
         return sItems;
@@ -434,7 +505,7 @@ public class SignShopPlayerListener implements Listener {
         if(sign.getType() == Material.SIGN_POST || sign.getType() == Material.WALL_SIGN) {
             Sign signblock = ((Sign) sign.getState());
             String[] sLines = signblock.getLines();            
-            if(sLines[0].length() < 14) {
+            if(ChatColor.stripColor(sLines[0]).length() < 14) {
                 signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
                 signblock.update();
             }
@@ -448,7 +519,17 @@ public class SignShopPlayerListener implements Listener {
             if(!ench.getKey().canEnchantItem(isEnchantMe))
                 return;
         }
-        isEnchantMe.addEnchantments(enchantments);
+        try {
+            isEnchantMe.addEnchantments(enchantments);
+        } catch(IllegalArgumentException ex) {
+            if(SignShop.getAllowUnsafeEnchantments()) {
+                try {
+                    isEnchantMe.addUnsafeEnchantments(enchantments);
+                } catch(IllegalArgumentException exfinal) {
+                    // TODO: Decide whether to log a message here. Not entirely sure what would be useful, we don't know which enchantment failed
+                }
+            }
+        }
     }
     
     private HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
@@ -460,7 +541,7 @@ public class SignShopPlayerListener implements Listener {
                     isStacks[i].getAmount(),
                     isStacks[i].getDurability()
                 );
-                addSafeEnchantments(isBackup[i], isStacks[i].getEnchantments());                
+                addSafeEnchantments(isBackup[i], isStacks[i].getEnchantments());
                 if(isStacks[i].getData() != null){
                     isBackup[i].setData(isStacks[i].getData());
                 }
@@ -767,7 +848,7 @@ public class SignShopPlayerListener implements Listener {
             }
         // Left clicked a chest and has already clicked a sign
         }
-        if(event.getAction() == Action.LEFT_CLICK_BLOCK
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && event.getItem().getType() == Material.REDSTONE
         && (event.getClickedBlock().getType() == Material.CHEST || event.getClickedBlock().getType() == Material.LEVER)
         && mClicks.containsKey(event.getPlayer().getName())){
             
@@ -842,6 +923,9 @@ public class SignShopPlayerListener implements Listener {
             if(seller == null){
                 return;
             }
+            if(event.getItem() != null){
+                event.setCancelled(true);
+            }
             SignShopPlayer ssOwner = new SignShopPlayer(seller.owner);
             
             if(ssPlayer.hasPerm(("SignShop.DenyUse."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Admin."+sOperation), true)) {
@@ -868,10 +952,21 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
             }
+            
+            if(operation.contains(takeItemInHand)) {
+                if(event.getItem() == null) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("no_item_in_hand"));
+                    return;
+                } else {
+                    isItems = new ItemStack[1];
+                    isItems[0] = event.getItem();
+                    sItems = itemStackToString(isItems);
+                }
+            }
 
             Chest cbChest = null;
             float iCount = 1;
-
+            
             if(operation.contains(usesChest)){
                 if(seller.getChest().getType() != Material.CHEST){
                     ssPlayer.sendMessage(SignShop.Errors.get("out_of_business"));
@@ -904,6 +999,15 @@ public class SignShopPlayerListener implements Listener {
                         updateStockStatus(bClicked, ChatColor.DARK_BLUE);
                     }
                 }
+                if(operation.contains(givePlayerRandomItem)) {
+                    if(!singeAmountStockOK(cbChest.getInventory(), isItems, true)) {
+                        updateStockStatus(bClicked, ChatColor.DARK_RED);
+                        ssPlayer.sendMessage(SignShop.Errors.get("out_of_stock"));
+                        return;
+                    } else {
+                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
+                    }
+                }
                 
                 // Checking for a possible price modifier, default is 1.0
                 Boolean bBuyOrSell = (operation.contains(takePlayerMoney) ? true : false);
@@ -927,7 +1031,7 @@ public class SignShopPlayerListener implements Listener {
                     }
                 }
             }
-            
+                        
             //Make sure the item can be repaired
             if(operation.contains(repairPlayerHeldItem)){
                 if(event.getItem() == null) {
@@ -966,6 +1070,10 @@ public class SignShopPlayerListener implements Listener {
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
                 ssPlayer.sendMessage(getMessage("confirm",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
                 return;
+            }
+            
+            if(operation.contains(takeItemInHand)) {
+                ssPlayer.takePlayerItems(isItems);
             }
             
             // Item giving/taking                     
@@ -1100,22 +1208,17 @@ public class SignShopPlayerListener implements Listener {
 
             if(operation.contains(givePlayerRandomItem)){
                 ItemStack isRandom = isItems[(new Random()).nextInt(isItems.length)];
-                ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;
-                if(!isStockOK(cbChest.getInventory(), isRandoms, true)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("out_of_stock"));
-                    return;
-                }
+                ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;                
                 cbChest.getInventory().removeItem(isRandom);
-                PlayerInventory inv = event.getPlayer().getInventory();
-                inv.addItem(isRandom);
-                updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-                sItems = this.itemStackToString(isRandoms);                
+                ssPlayer.givePlayerItems(isRandoms);                
+                sItems = itemStackToString(isRandoms);
+                if(!singeAmountStockOK(cbChest.getInventory(), isItems, true))
+                    updateStockStatus(bClicked, ChatColor.DARK_RED);
+                else
+                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
             }
 
-            if(event.getAction() == Action.RIGHT_CLICK_BLOCK){
-                if(event.getItem() != null){
-                    event.setCancelled(true);
-                }
+            if(event.getAction() == Action.RIGHT_CLICK_BLOCK){                
                 //kludge
                 player.updateInventory();                
             }
@@ -1160,7 +1263,7 @@ public class SignShopPlayerListener implements Listener {
                         if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
                             continue;
                         List operation = SignShop.Operations.get(getOperation(sLines[0]));
-                        if(operation.contains(takeShopItems))
+                        if(operation.contains(takeShopItems) || operation.contains(givePlayerRandomItem))
                             if(!isStockOK(cbChest.getInventory(), isItems, true))
                                 setSignStatus(temp, ChatColor.DARK_RED);
                             else

@@ -14,6 +14,7 @@ import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.listeners.*;
 
 public class SignShop extends JavaPlugin{
@@ -29,8 +30,10 @@ public class SignShop extends JavaPlugin{
     private int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
+    private static boolean AllowUnsafeEnchantments = false;
     private boolean AllowVariableAmounts = false;
     private boolean AllowEnchantedRepair = true;
+    private boolean DisableEssentialsSigns = true;    
 
     //Statics
     public static Storage Storage;
@@ -85,8 +88,7 @@ public class SignShop extends JavaPlugin{
         if(!this.getDataFolder().exists()) {
             this.getDataFolder().mkdir();
         }
-        initConfig();
-        
+        initConfig();        
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
@@ -141,6 +143,12 @@ public class SignShop extends JavaPlugin{
                 tempSignOperationInt.add(validSignOperations.get("usesLever"));
 
             }
+            if(tempSignOperationString.contains("takePlayerItems")
+                    || tempSignOperationString.contains("givePlayerItems")
+                    || tempSignOperationString.contains("takeShopItems")
+                    || tempSignOperationString.contains("givePlayerRandomItem"))
+                    tempSignOperationInt.add(validSignOperations.get("usesChestItems"));
+                    
 
             SignShop.Operations.put(sKey, tempSignOperationInt);
         }
@@ -153,8 +161,10 @@ public class SignShop extends JavaPlugin{
             // Register events
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
-            SignShopServerListener SListener = new SignShopServerListener(getServer());
-            pm.registerEvents(SListener, this);
+            if(DisableEssentialsSigns) {
+                SignShopServerListener SListener = new SignShopServerListener(getServer());
+                pm.registerEvents(SListener, this);
+            }
             log("v" + pdfFile.getVersion() + " enabled", Level.INFO);
         } else {
             SignShopLoginListener login = new SignShopLoginListener(this);
@@ -180,6 +190,8 @@ public class SignShop extends JavaPlugin{
         OPOverride = config.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = config.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
         AllowEnchantedRepair = config.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
+        DisableEssentialsSigns = config.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
+        AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);        
     }
     
     public void initValidOps() {
@@ -207,6 +219,8 @@ public class SignShop extends JavaPlugin{
         validSignOperations.put("usesLever",22);
         validSignOperations.put("healPlayer",23);
         validSignOperations.put("repairPlayerHeldItem",24);
+        validSignOperations.put("takeItemInHand",25);
+        validSignOperations.put("usesChestItems",26);
     }
     
     public String getLogPrefix() {
@@ -235,9 +249,9 @@ public class SignShop extends JavaPlugin{
         Boolean vault_Perms = vault.setupPermissions();
         if(!vault_Perms || Vault.permission.getName().equals("SuperPerms")) {
             log("Vault's permissions not found, defaulting to OP.", Level.INFO);
-            this.USE_PERMISSIONS = false;
+            USE_PERMISSIONS = false;
         } else
-            this.USE_PERMISSIONS = true;
+            USE_PERMISSIONS = true;
         Boolean vault_Economy = vault.setupEconomy();
         if(!vault_Economy)
             log("Could not hook into Vault's Economy!", Level.WARNING);
@@ -261,6 +275,10 @@ public class SignShop extends JavaPlugin{
     
     public Boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
+    }
+    
+    public static Boolean getAllowUnsafeEnchantments() {
+        return AllowUnsafeEnchantments;
     }
     
     public class TransferFormatter extends Formatter {    

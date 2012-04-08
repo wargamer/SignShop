@@ -1,53 +1,17 @@
-# Basic Stuff
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
 TransactionLog: false
 OPOverride: true
 AllowVariableAmounts: false
 AllowEnchantedRepair: true
+DisableEssentialsSigns: true
+AllowUnsafeEnchantments: false
 
-#-------------------------------
-#    How to Make Custom Signs
-#-------------------------------
-
-# You can use any number of these:
-#   takePlayerItems
-#   givePlayerItems
-#   takeShopItems
-#   giveShopItems
-
-# OR just one of these (also you cannot use redstone and items in the same operation!)
-#   givePlayerRandomItem
-#   setRedstoneOn
-#   setRedstoneOff
-#   setRedStoneOnTemp
-#   toggleRedstone
-
-# AND you can add stack any of these with the above.
-#   takePlayerMoney
-#   givePlayerMoney
-#   takeOwnerMoney
-#   giveOwnerMoney
-#   playerIsOp <- for OP only signs
-#   setDayTime
-#   setNightTime
-#   setRaining
-#   setClearSkies
-#   healPlayer
-#   repairPlayerHeldItem
-
-#   Note: If you use something like setrain + clearskies, or
-#         redstoneon + redstoneoff, then only one of the two will happen.
-
-# ----------------------------------------
-
-# You can change the sign names, but don't use a sign name longer than 14 characters.
-# Note - If for example you remove or rename Buy, then ALL Buy signs will be removed! Keep this in mind!
-# Note 2 - If you add a new sign, make sure you add the messages below as well!
 signs:
     Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
     Sell: takePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
     Donate: takePlayerItems,giveShopItems
+    DonateHand: takeItemInHand,giveShopItems
     Slot: takePlayerMoney,giveOwnerMoney,givePlayerRandomItem
     iSell: givePlayerMoney,takePlayerItems,playerIsOp
     iBuy: takePlayerMoney,givePlayerItems,playerIsOp
@@ -63,15 +27,15 @@ signs:
     Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
     Heal: takePlayerMoney,healPlayer,playerIsOp
     Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
-# Custom messages for signs
+    Dispose: takeItemInHand
 
-# Note: not every !variable will work with every sign, you might get a blank.
 messages:
     setup:
         Buy: You have put !items for sale at a price of !price!
         Sell: You have put a bounty of !price for !items!
         Donate: You have setup a donation box for !items!
-        Slot: You have setup a !price slot machine offering !items!
+        DonateHand: You have setup a donation box for all item types
+        Slot: You have setup a !price slot machine offering !items!        
         iBuy: You have put !items infinitely for sale at a price of !price!
         iSell: You have put an infinite bounty of !price for !items!
         gBuy: You have setup a ghost shop selling !items for !price! (Note, you will not receive or lose money from this shop)
@@ -86,11 +50,13 @@ messages:
         Device: You have setup a device temporary activator that costs !price!
         Heal: You have setup a healing station that costs !price!
         Repair: You have setup a repair station that costs !price!
+        Dispose: You have setup a dispose sign
     confirm:
         Buy: Buy !items for !price?
         Sell: Sell !items for !price?
         Donate: Donate !items?
-        Slot: Play this slot machine for !price?
+        DonateHand: Donate !items?
+        Slot: Play this slot machine for !price?        
         Redstone: Activate this device for !price?
         iBuy: Buy !items for !price?
         iSell: Sell !items for !price?
@@ -106,11 +72,13 @@ messages:
         Device: Temporarily activate this device for !price?
         Heal: Heal yourself for !price?
         Repair: Repair the item held in your hand for !price?
+        Dispose: Dispose of !items?
     transaction:
         Buy: You have bought !items for !price!
         Sell: You have sold !items for !price!
         Donate: You have donated !items!
-        Slot: You won !items!
+        DonateHand: You have donated !items!
+        Slot: You won !items!        
         Redstone: Device activated for !price!
         iBuy: You have bought !items for !price!
         iSell: You have sold !items for !price!
@@ -126,11 +94,13 @@ messages:
         Device: You temporarily activated this device for !price!
         Heal: You healed yourself for !price!
         Repair: You repaired an item for !price!
+        Dispose: You have disposed of !items!
     transaction_owner:
         Buy: \!customer bought !items for !price from you!
         Sell: \!customer sold you !items for !price!
         Donate: \!customer donated !items to you!
-        Slot: \!customer played a slot machine for !price and won !items!
+        DonateHand: \!customer donated !items to you!
+        Slot: \!customer played a slot machine for !price and won !items!        
         Redstone: \!customer activated your redstone device for !price!
         iBuy: \!customer bought !items for !price from your infinite store!
         iSell: \!customer sold !items to your infinite store!
@@ -146,9 +116,8 @@ messages:
         Device: \!customer temporarily activated your device for !price!
         Heal: \!customer healed at your station for !price!
         Repair: \!customer repaired an item at your station for !price!
-
+        Dispose: \!customer disposed of !items!
 errors:
-#In game messages
     no_permission: You don't have permission to create this sign!
     no_permission_use: You don't have permission to use this sign!
     invalid_operation: The sign you clicked doesnt have a valid operation!
@@ -159,6 +128,7 @@ errors:
     out_of_stock: This shop is out of stock!
     overstocked: This shop is overstocked!
     player_doesnt_have_items: You don't have the items! (!items)
+    no_item_in_hand: "You need to be holding an item for the shop to be able to take it!"
     player_overstocked: Your inventory is too full!
     sign_location_stored: Sign location stored!
     made_day: "!player has made it day!"
@@ -172,7 +142,6 @@ errors:
     already_raining: "It is already storming!"
     already_clear_skies: "The skies are clear already!"
     already_full_health: "Your health is already full!"
-#Server log messages
     saving: Saving shops...
     saved: Shops saved!
     shop_removed: Removed an invalid Shop.
@@ -182,9 +151,4 @@ errors:
     too_far: The distance between the sign and chest is too big. Maximum is !max.
     too_many_shops: You have reached the maximum amount of shops allowed. Maximum is !max.
     enchanted_not_allowed: You are not allowed to repair enchanted items.
-# Permission group specific price multipliers, example:
-# pricemultipliers:
-#    signshopplayers:
-#      iBuy: 0.7
-# Which will give the members of the group called signshopplayers a 30% discount on all iBuy signs
 pricemultipliers:

@@ -9,6 +9,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.yi.acru.bukkit.Lockette.Lockette;
 import com.griefcraft.lwc.LWCPlugin;
 import com.griefcraft.lwc.LWC;
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 
 public class SignShopChest {
     Chest ssChest = null;    
@@ -25,7 +26,7 @@ public class SignShopChest {
         Plugin plugin = null;        
         LWC lwc = null;
         Boolean bAllowed = true;
-
+        
         plugin = Bukkit.getServer().getPluginManager().getPlugin("Lockette");
         if(plugin != null)
             bAllowed = (bAllowed ? (Lockette.isUser(ssChest.getBlock(), ssPlayer.getName(), false) || Lockette.isEveryone(ssChest.getBlock())) : bAllowed);
@@ -35,10 +36,12 @@ public class SignShopChest {
             if(lwc != null)
                 if(lwc.findProtection(ssChest.getBlock()) != null)
                     bAllowed = (bAllowed ? lwc.canAccessProtection(ssPlayer.getPlayer(), ssChest.getBlock()) : bAllowed);
+        }        
+        plugin = Bukkit.getServer().getPluginManager().getPlugin("WorldGuard");
+        if(plugin != null) {
+            WorldGuardPlugin WG = (WorldGuardPlugin)plugin;
+            bAllowed = (bAllowed ? WG.canBuild(ssPlayer.getPlayer(), ssChest.getBlock()) : bAllowed);
         }
-        
         return bAllowed;
     }
-    
-    
 }

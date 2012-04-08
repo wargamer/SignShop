@@ -117,6 +117,26 @@ public class SignShopPlayer {
         ssPlayer.getInventory().addItem(isBackup);
     }
     
+    public void takePlayerItems(ItemStack[] isItemsToTake) {
+        if(ssPlayer == null)
+            return;
+        ItemStack[] isBackup = new ItemStack[isItemsToTake.length];        
+        for(int i = 0; i < isItemsToTake.length; i++){
+            if(isItemsToTake[i] != null){
+                isBackup[i] = new ItemStack(
+                    isItemsToTake[i].getType(),
+                    isItemsToTake[i].getAmount(),
+                    isItemsToTake[i].getDurability()
+                );
+                SignShopPlayerListener.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
+                if(isItemsToTake[i].getData() != null){
+                    isBackup[i].setData(isItemsToTake[i].getData());
+                }
+            }
+        }
+        ssPlayer.getInventory().removeItem(isBackup);
+    }
+    
     public Float getPlayerPricemod(String sOperation, Boolean bBuyorSell) {
         Float fPricemod = 1.0f;
         Float fTemp = fPricemod;
