@@ -31,7 +31,7 @@ public class Vault {
         RegisteredServiceProvider<Permission> permissionProvider = server.getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
         if (permissionProvider != null) {
             permission = permissionProvider.getProvider();
-        }
+        }        
         return (permission != null);
     }
 
