@@ -20,6 +20,7 @@ import org.bukkit.block.BlockState;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.block.BlockFace;
+import org.bukkit.Bukkit;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -28,13 +29,14 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.List;
 import java.util.ArrayList;
-import org.bukkit.Bukkit;
+
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.blocks.SignShopChest;
 
+// TODO: Clean up this class, there are way too many lines of code that could be optimised and put into seperate classes for beter readability
 public class SignShopPlayerListener implements Listener {
     private final SignShop plugin;
     private static Map<String, Location> mClicks = new HashMap<String,Location>();    
@@ -1220,14 +1222,17 @@ public class SignShopPlayerListener implements Listener {
             if(SignShop.Commands.containsKey(sOperation)) {
                 String sCommand = SignShop.Commands.get(sOperation);
                 if(sCommand != null && sCommand.length() > 0) {
-                    sCommand = sCommand.replace("!player", ssPlayer.getName()).replace("!world", ssPlayer.getPlayer().getWorld().getName());                    
+                    sCommand = sCommand
+                            .replace("!player", ssPlayer.getName())
+                            .replace("!world", ssPlayer.getPlayer().getWorld().getName())
+                            .replace("!owner", ssOwner.getName());
                     Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
                 }
             }
 
-            if(event.getAction() == Action.RIGHT_CLICK_BLOCK){                
-                //kludge
-                player.updateInventory();                
+            if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+                // Seems to still be needed. TODO: Find a proper way to update the player inventory
+                player.updateInventory();
             }
             
             // Mutating money here so if one of the other transactions fail or are not needed
