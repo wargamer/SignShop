@@ -296,17 +296,16 @@ public class SignShopPlayerListener implements Listener {
         return true;
     }
     
-    private Boolean registerChest(Block bSign, Block bChest, String sOperation, Player player, String playerName) {
+    private Boolean registerChest(Block bSign, Block bChest, String sOperation, SignShopPlayer ssPlayer, String playerName) {
         String[] sLines = ((Sign) bSign.getState()).getLines();
-        List operation = SignShop.Operations.get(sOperation);
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        List operation = SignShop.Operations.get(sOperation);        
         
         if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance())) {
             ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }        
-        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(player.getName()) >= plugin.getMaxShopsPerPerson()
+        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(ssPlayer.getName()) >= plugin.getMaxShopsPerPerson()
                 && !ssPlayer.hasPerm("SignShop.ignoremax", true)) {
             ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(plugin.getMaxShopsPerPerson())));
             setSignStatus(bSign, ChatColor.BLACK);
@@ -331,7 +330,7 @@ public class SignShopPlayerListener implements Listener {
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,new ItemStack[]{new ItemStack(Material.DIRT,1)});
             setSignStatus(bSign, ChatColor.DARK_BLUE);
-            mClicks.remove(player.getName());
+            mClicks.remove(ssPlayer.getName());
             return true;
         // Chest operation
         }else if(operation.contains(usesChest) && bChest.getType() == Material.CHEST){
@@ -361,7 +360,7 @@ public class SignShopPlayerListener implements Listener {
 
             SignShop.Storage.addSeller(playerName,bSign,bChest,isChestItems);
             updateStockStatus(bSign, ChatColor.DARK_BLUE);
-            mClicks.remove(player.getName());
+            mClicks.remove(ssPlayer.getName());
             return true;
         }
         return false;
@@ -721,9 +720,9 @@ public class SignShopPlayerListener implements Listener {
             signToChange.setLine(1, sNewSign[1]);
         if(sNewSign[2] != null && sNewSign[2].length() > 0)
             signToChange.setLine(2, sNewSign[2]);
-        if(sNewSign[3] != null && sNewSign[3].length() > 0) {
+        if(sNewSign[3] != null && sNewSign[3].length() > 0)
             signToChange.setLine(3, sNewSign[3]);
-        }
+        
         signToChange.update();
         oldoperation = SignShop.Operations.get(getOperation(sToChange[0]));        
         
@@ -899,9 +898,9 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
             }
-            registerChest(bSign, event.getClickedBlock(), sOperation, player, playerName);
+            registerChest(bSign, event.getClickedBlock(), sOperation, ssPlayer, playerName);
             if(registerEmptySign) {
-                registerChest(emptySign, event.getClickedBlock(), getOperation(((Sign) emptySign.getState()).getLines()[0]), player, playerName);
+                registerChest(emptySign, event.getClickedBlock(), getOperation(((Sign) emptySign.getState()).getLines()[0]), ssPlayer, playerName);
             }            
             return;
             
@@ -1216,6 +1215,14 @@ public class SignShopPlayerListener implements Listener {
                     updateStockStatus(bClicked, ChatColor.DARK_RED);
                 else
                     updateStockStatus(bClicked, ChatColor.DARK_BLUE);
+            }
+            
+            if(SignShop.Commands.containsKey(sOperation)) {
+                String sCommand = SignShop.Commands.get(sOperation);
+                if(sCommand != null && sCommand.length() > 0) {
+                    sCommand = sCommand.replace("!player", ssPlayer.getName()).replace("!world", ssPlayer.getPlayer().getWorld().getName());                    
+                    Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
+                }
             }
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK){                
