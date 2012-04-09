@@ -15,6 +15,7 @@ import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
+import org.wargamer2010.signshop.hooks.HookManager;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
@@ -155,6 +156,7 @@ public class SignShop extends JavaPlugin{
         }
         
         setupVault();
+        setupHooks();
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();
@@ -256,6 +258,12 @@ public class SignShop extends JavaPlugin{
         Boolean vault_Economy = vault.setupEconomy();
         if(!vault_Economy)
             log("Could not hook into Vault's Economy!", Level.WARNING);
+    }
+    
+    private void setupHooks() {
+        HookManager.addHook("LWC");
+        HookManager.addHook("Lockette");
+        HookManager.addHook("WorldGuard");
     }
     
     public int getMaxSellDistance() {
