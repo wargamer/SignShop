@@ -14,7 +14,6 @@ import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.listeners.*;
 
 public class SignShop extends JavaPlugin{
@@ -41,6 +40,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,HashMap<String,String>> Messages;
     public static HashMap<String,String> Errors;
     public static HashMap<String,HashMap<String,Float>> PriceMultipliers;
+    public static HashMap<String,String> Commands;
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -92,6 +92,7 @@ public class SignShop extends JavaPlugin{
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
+        SignShop.Commands = configUtil.fetchStringStringHashMap("commands", config);
         
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"),this);

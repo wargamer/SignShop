@@ -28,7 +28,6 @@ signs:
     Heal: takePlayerMoney,healPlayer,playerIsOp
     Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
     Dispose: takeItemInHand
-
 messages:
     setup:
         Buy: You have put !items for sale at a price of !price!
@@ -94,7 +93,7 @@ messages:
         Device: You temporarily activated this device for !price!
         Heal: You healed yourself for !price!
         Repair: You repaired an item for !price!
-        Dispose: You have disposed of !items!
+        Dispose: You have disposed of !items!        
     transaction_owner:
         Buy: \!customer bought !items for !price from you!
         Sell: \!customer sold you !items for !price!
