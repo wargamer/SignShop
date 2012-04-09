@@ -52,6 +52,8 @@ public class configUtil {
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
         HashMap<String,String> tempStringStringHash = new HashMap<String,String>();
         try {
+            if(config.getConfigurationSection(path) == null)
+                return tempStringStringHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet())
                 tempStringStringHash.put(entry.getKey(), (String)entry.getValue());
