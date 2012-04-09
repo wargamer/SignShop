@@ -5,7 +5,7 @@ import java.util.HashMap;
 import org.bukkit.Bukkit;
 
 public class HookManager {
-    private static HashMap<String, Plugin> hooks;
+    private static HashMap<String, Plugin> hooks = new HashMap<String, Plugin>();
     
     public static Boolean addHook(String sName) {
         Plugin pHook = Bukkit.getServer().getPluginManager().getPlugin(sName);
