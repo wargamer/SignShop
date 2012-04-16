@@ -8,6 +8,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 import java.util.logging.Level;
 
 public class configUtil {
@@ -47,6 +48,21 @@ public class configUtil {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
         return tempHasinHash;
+    }
+    
+    static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
+        HashMap<String,List> tempListinHash = new HashMap<String,List>();
+        try {
+            if(config.getConfigurationSection(path) == null)
+                return tempListinHash;
+            Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {                
+                tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
+            }
+        } catch(ClassCastException ex) {            
+            SignShop.log("Incorrect section in config found.", Level.WARNING);
+        }
+        return tempListinHash;
     }
     
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
