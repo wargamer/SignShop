@@ -1219,15 +1219,18 @@ public class SignShopPlayerListener implements Listener {
                     updateStockStatus(bClicked, ChatColor.DARK_BLUE);
             }
             
-            if(SignShop.Commands.containsKey(sOperation)) {
-                String sCommand = SignShop.Commands.get(sOperation);
-                if(sCommand != null && sCommand.length() > 0) {
-                    sCommand = sCommand
-                            .replace("!player", ssPlayer.getName())
-                            .replace("!world", ssPlayer.getPlayer().getWorld().getName())
-                            .replace("!owner", ssOwner.getName());
-                    Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
+            if(SignShop.Commands.containsKey(sOperation.toLowerCase())) {
+                List<String> commands = SignShop.Commands.get(sOperation.toLowerCase());                
+                for(String sCommand : commands) {
+                    if(sCommand != null && sCommand.length() > 0) {
+                        sCommand = sCommand
+                                .replace("!player", ssPlayer.getName())
+                                .replace("!world", ssPlayer.getPlayer().getWorld().getName())
+                                .replace("!owner", ssOwner.getName());
+                        Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
+                    }
                 }
+                
             }
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {

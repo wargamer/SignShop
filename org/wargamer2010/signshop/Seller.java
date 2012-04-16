@@ -6,6 +6,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;
 import java.util.Map;
 import java.util.ArrayList;
+import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
 
 public class Seller{
     public String world;
@@ -54,15 +55,12 @@ public class Seller{
 
         for(int i=0;i<items.length;i++){
             isItems[i] = new ItemStack(items[i],amounts[i]);
-            if(datas[i] != null){
+            if(datas[i] != null)
                 isItems[i].getData().setData(datas[i]);
-            }
-            if(durabilities[i] != null){
-                isItems[i].setDurability(durabilities[i]);
-            }
-            if(enchantments.get(i) != null){
-                isItems[i].addEnchantments(enchantments.get(i));
-            }
+            if(durabilities[i] != null)
+                isItems[i].setDurability(durabilities[i]);            
+            if(enchantments.get(i) != null)
+                SignShopPlayerListener.addSafeEnchantments(isItems[i], enchantments.get(i));
         }
 
         return isItems;
