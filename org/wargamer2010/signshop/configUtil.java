@@ -78,4 +78,18 @@ public class configUtil {
         }
         return tempStringStringHash;
     }
+    
+    static HashMap<String, Integer> fetchStringIntegerHashMap(String path, FileConfiguration config) {
+        HashMap<String,Integer> tempStringIntegerHash = new HashMap<String,Integer>();
+        try {
+            if(config.getConfigurationSection(path) == null)
+                return tempStringIntegerHash;
+            Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
+            for(Map.Entry<String, Object> entry : messages_section.entrySet())
+                tempStringIntegerHash.put(entry.getKey().toLowerCase(), (Integer)entry.getValue());
+        } catch(ClassCastException ex) {
+            SignShop.log("Incorrect section in config found.", Level.WARNING);
+        }
+        return tempStringIntegerHash;
+    }
 }

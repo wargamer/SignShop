@@ -137,18 +137,24 @@ public class SignShopPlayer {
         ssPlayer.getInventory().removeItem(isBackup);
     }
     
+    private String[] getPlayerGroups() {
+        String[] sGroups = null;
+        try {
+            sGroups = Vault.permission.getPlayerGroups(ssPlayer);
+        } catch(UnsupportedOperationException UnsupportedEX) {
+            return sGroups;
+        }
+        return sGroups;
+    }
+    
     public Float getPlayerPricemod(String sOperation, Boolean bBuyorSell) {
         Float fPricemod = 1.0f;
         Float fTemp = fPricemod;
         if(Vault.permission == null || ssPlayer == null)
             return fPricemod;
-        String[] sGroups;
-        try {
-            sGroups = Vault.permission.getPlayerGroups(ssPlayer);
-        } catch(UnsupportedOperationException UnsupportedEX) {
-            return fPricemod;            
-        }
-        
+        String[] sGroups = getPlayerGroups();
+        if(sGroups == null) return fPricemod;
+                
         if(sGroups.length == 0)
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
@@ -162,6 +168,35 @@ public class SignShopPlayer {
             }
         }       
         return fPricemod;
+    }
+    
+    public int reachedMaxShops() {        
+        if(Vault.permission == null || sPlayername.equals(""))
+            return 0;
+        if(hasPerm("SignShop.ignoremax", true))
+            return 0;
+        
+        String[] sGroups = getPlayerGroups();        
+        int iShopAmount = SignShop.Storage.countLocations(sPlayername);
+        
+        if(SignShop.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShop.getMaxShopsPerPerson()) return SignShop.getMaxShopsPerPerson();        
+        if(sGroups == null) return 0;
+        
+        int iLimit = 1;
+        Boolean bInRelGroup = false;
+        for(int i = 0; i < sGroups.length; i++) {
+            String sGroup = sGroups[i].toLowerCase();
+            if(SignShop.ShopLimits.containsKey(sGroup)) {
+                bInRelGroup = true;
+                if(iShopAmount < SignShop.ShopLimits.get(sGroup))
+                    iLimit = 0;
+                else if(iLimit != 0 && SignShop.ShopLimits.get(sGroup) > iLimit)
+                    iLimit = SignShop.ShopLimits.get(sGroup);
+            }
+            
+        }
+        
+        return ((!bInRelGroup) ? 0 : iLimit);
     }
     
 }
