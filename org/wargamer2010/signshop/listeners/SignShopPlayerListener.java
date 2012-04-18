@@ -306,10 +306,11 @@ public class SignShopPlayerListener implements Listener {
             ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
-        }        
-        if(!operation.contains(playerIsOp) && plugin.getMaxShopsPerPerson() != 0 && SignShop.Storage.countLocations(ssPlayer.getName()) >= plugin.getMaxShopsPerPerson()
-                && !ssPlayer.hasPerm("SignShop.ignoremax", true)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(plugin.getMaxShopsPerPerson())));
+        }
+        
+        int iLimit = ssPlayer.reachedMaxShops();        
+        if(!operation.contains(playerIsOp) && iLimit > 0) {
+            ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(iLimit)));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;
         }

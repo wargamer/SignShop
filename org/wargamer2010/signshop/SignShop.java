@@ -27,7 +27,7 @@ public class SignShop extends JavaPlugin{
     //Configurables
     private FileConfiguration config;    
     private int MaxSellDistance = 0;
-    private int MaxShopsPerPerson = 0;
+    private static int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
@@ -42,6 +42,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,String> Errors;
     public static HashMap<String,HashMap<String,Float>> PriceMultipliers;
     public static HashMap<String,List> Commands;
+    public static HashMap<String,Integer> ShopLimits;
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -94,6 +95,7 @@ public class SignShop extends JavaPlugin{
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         SignShop.Commands = configUtil.fetchListInHashmap("commands", config);
+        SignShop.ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
         
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"),this);
@@ -265,12 +267,12 @@ public class SignShop extends JavaPlugin{
         HookManager.addHook("Lockette");
         HookManager.addHook("WorldGuard");
     }
-    
+        
     public int getMaxSellDistance() {
         return MaxSellDistance;
     }
     
-    public int getMaxShopsPerPerson() {
+    public static int getMaxShopsPerPerson() {
         return MaxShopsPerPerson;
     }
     
