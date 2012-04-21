@@ -1011,11 +1011,6 @@ public class SignShopPlayerListener implements Listener {
                     }
                 }
                 
-                // Checking for a possible price modifier, default is 1.0
-                Boolean bBuyOrSell = (operation.contains(takePlayerMoney) ? true : false);
-                Float fPricemod = ssPlayer.getPlayerPricemod(sOperation, bBuyOrSell);
-                fPrice = (fPrice * fPricemod);                
-
                 if(operation.contains(takeShopItems)){
                     if(!isStockOK(cbChest.getInventory(), isItems, true)) {
                         updateStockStatus(bClicked, ChatColor.DARK_RED);
@@ -1033,6 +1028,11 @@ public class SignShopPlayerListener implements Listener {
                     }
                 }
             }
+            
+            // Checking for a possible price modifier, default is 1.0
+            Boolean bBuyOrSell = (operation.contains(takePlayerMoney) ? true : false);
+            Float fPricemod = ssPlayer.getPlayerPricemod(sOperation, bBuyOrSell);
+            fPrice = (fPrice * fPricemod);  
                         
             //Make sure the item can be repaired
             if(operation.contains(repairPlayerHeldItem)){

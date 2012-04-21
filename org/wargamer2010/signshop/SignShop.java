@@ -4,6 +4,9 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import java.util.HashMap;
 import java.io.IOException;
 import java.io.File;
@@ -14,6 +17,8 @@ import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
 
@@ -176,6 +181,28 @@ public class SignShop extends JavaPlugin{
             pm.registerEvents(login, this);
             log("v" + pdfFile.getVersion() + " disabled", Level.INFO);
         }
+    }
+    
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]) {
+        String commandName = cmd.getName().toLowerCase();
+        if(!commandName.equalsIgnoreCase("signshop"))
+            return true;
+        if(args.length != 1)
+            return false;
+        if((sender instanceof Player) && !((Player)sender).isOp()) {
+            ((Player)sender).sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
+            return true;
+        }
+        if(args[0].equals("reload")) {
+            Bukkit.getServer().getPluginManager().disablePlugin(this);
+            Bukkit.getServer().getPluginManager().enablePlugin(this);
+        } else
+            return false;
+        SignShop.log("Reloaded", Level.INFO);
+        if((sender instanceof Player))
+            ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
+        return true;
     }
     
     public void initConfig() {
