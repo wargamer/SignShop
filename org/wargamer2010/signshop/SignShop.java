@@ -175,17 +175,17 @@ public class SignShop extends JavaPlugin{
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
             }
-            log("v" + pdfFile.getVersion() + " enabled", Level.INFO);
+            log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         } else {
             SignShopLoginListener login = new SignShopLoginListener(this);
             pm.registerEvents(login, this);
-            log("v" + pdfFile.getVersion() + " disabled", Level.INFO);
+            log("v" + pdfFile.getVersion() + " Disabled", Level.INFO);
         }
     }
     
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]) {
-        String commandName = cmd.getName().toLowerCase();
+        String commandName = cmd.getName().toLowerCase();        
         if(!commandName.equalsIgnoreCase("signshop"))
             return true;
         if(args.length != 1)
@@ -272,7 +272,7 @@ public class SignShop extends JavaPlugin{
         SignShop.Storage.Save();
         closeHandlers();
         
-        log("disabled", Level.INFO);
+        log("Disabled", Level.INFO);
     }
 
     private void setupVault() {

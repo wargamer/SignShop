@@ -1257,7 +1257,7 @@ public class SignShopPlayerListener implements Listener {
                 transaction = ssOwner.mutateMoney(fPrice);
             if(operation.contains(takeOwnerMoney)) 
                 transaction = ssOwner.mutateMoney(-fPrice);            
-            
+                        
             SignShop.logTransaction(player.getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
             ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
             ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
