@@ -6,6 +6,7 @@ AllowVariableAmounts: false
 AllowEnchantedRepair: true
 DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
+EnableSignStacking: false
 
 signs:
     Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
