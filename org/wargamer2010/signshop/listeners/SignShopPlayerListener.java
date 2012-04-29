@@ -302,7 +302,7 @@ public class SignShopPlayerListener implements Listener {
         String[] sLines = ((Sign) bSign.getState()).getLines();
         List operation = SignShop.Operations.get(sOperation);        
         
-        if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance())) {
+        if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance()) && !operation.contains(playerIsOp)) {
             ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
             setSignStatus(bSign, ChatColor.BLACK);
             return false;

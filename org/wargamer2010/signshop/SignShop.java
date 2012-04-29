@@ -19,8 +19,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
+import com.bergerkiller.bukkit.common.SafeField;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
@@ -87,6 +89,17 @@ public class SignShop extends JavaPlugin{
         }
     }
     
+    private void setItemMaxSize(Material material, int maxstacksize) {        
+        SafeField.set(net.minecraft.server.Item.byId[material.getId()], "maxStackSize", maxstacksize);
+    }
+    
+    private void fixStackSize() {
+        if(config.getBoolean("EnableSignStacking", false)) {
+            setItemMaxSize(Material.SIGN, 64);
+            setItemMaxSize(Material.SIGN_POST, 64);
+            setItemMaxSize(Material.WALL_SIGN, 64);
+        }
+    }
     
     @Override
     public void onEnable() {
@@ -95,7 +108,8 @@ public class SignShop extends JavaPlugin{
         if(!this.getDataFolder().exists()) {
             this.getDataFolder().mkdir();
         }
-        initConfig();        
+        initConfig();      
+        fixStackSize();
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
