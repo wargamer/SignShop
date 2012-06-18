@@ -22,10 +22,12 @@ public class takeVariablePlayerItems implements SignShopOperation {
         ItemStack[] isTotalItems = null;
         
         for(Block bHolder : ssArgs.containables) {
-            InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-            for(ItemStack item : Holder.getInventory().getContents()) {
-                if(item != null && item.getAmount() > 0) {
-                    tempItems.add(item);
+            if(bHolder.getState() instanceof InventoryHolder) {
+                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
+                for(ItemStack item : Holder.getInventory().getContents()) {
+                    if(item != null && item.getAmount() > 0) {
+                        tempItems.add(item);
+                    }
                 }
             }
         }

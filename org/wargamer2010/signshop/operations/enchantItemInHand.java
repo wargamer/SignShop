@@ -23,17 +23,19 @@ public class enchantItemInHand implements SignShopOperation {
         Map<Enchantment, Integer> TempEnchantments = new HashMap<Enchantment, Integer>();
         
         for(Block bHolder : ssArgs.containables) {
-            InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-            for(ItemStack item : Holder.getInventory().getContents()) {
-                if(item != null && item.getAmount() > 0) {
-                    TempEnchantments = item.getEnchantments();
-                    if(TempEnchantments.isEmpty()) continue;
-                    for(Map.Entry<Enchantment, Integer> enchantment : TempEnchantments.entrySet()) {
-                        if(AllEnchantments.containsKey(enchantment.getKey()) && AllEnchantments.get(enchantment.getKey()) > enchantment.getValue())
-                            TempEnchantments.remove(enchantment.getKey());
+            if(bHolder.getState() instanceof InventoryHolder) {
+                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
+                for(ItemStack item : Holder.getInventory().getContents()) {
+                    if(item != null && item.getAmount() > 0) {
+                        TempEnchantments = item.getEnchantments();
+                        if(TempEnchantments.isEmpty()) continue;
+                        for(Map.Entry<Enchantment, Integer> enchantment : TempEnchantments.entrySet()) {
+                            if(AllEnchantments.containsKey(enchantment.getKey()) && AllEnchantments.get(enchantment.getKey()) > enchantment.getValue())
+                                TempEnchantments.remove(enchantment.getKey());
+                        }
+                        if(!TempEnchantments.isEmpty())
+                            AllEnchantments.putAll(TempEnchantments);
                     }
-                    if(!TempEnchantments.isEmpty())
-                        AllEnchantments.putAll(TempEnchantments);
                 }
             }
         }

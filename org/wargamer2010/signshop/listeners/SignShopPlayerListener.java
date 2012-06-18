@@ -23,10 +23,11 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.blocks.SignShopChest;
 
-import org.wargamer2010.signshop.operations.*;
+import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.util.*;
+import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
-// TODO: Clean up this class, there are way too many lines of code that could be optimised and put into seperate classes for beter readability
 public class SignShopPlayerListener implements Listener {
     private final SignShop plugin;
     private static Map<Location, Player> mClicksPerLocation = new HashMap<Location, Player>();    
@@ -60,109 +61,6 @@ public class SignShopPlayerListener implements Listener {
         else
             return true;
     }
-    
-    private Integer convertChestshop(Block sign, Player admin, Boolean alter, Block emptySign) {
-        String[] sLines = ((Sign) sign.getState()).getLines();
-        Integer iAmount = -1;
-        Integer iPrice = -1;
-        String sPrice = "";
-        String sAmount = sLines[1];
-        String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
-        if(!admin.isOp())
-            return iAmount;        
-        if(Material.getMaterial(sMaterial) == null)
-            return iAmount;
-        try {
-            iAmount = Integer.parseInt(sLines[1]);
-        } catch(NumberFormatException e) {                        
-            return -1;
-        }
-        if(alter) {
-            Integer from;
-            Integer to;
-            Sign signblock = ((Sign)sign.getState());
-            Sign emptyBlock = null;
-            if(emptySign != null)
-                emptyBlock = ((Sign)emptySign.getState());
-            if((sLines[2].contains("B")) && sLines[2].contains("S")) {
-                if(emptyBlock == null) {
-                    admin.sendMessage("Punch an empty sign first!");
-                    return -1;
-                }
-                if(sLines[2].indexOf(":") == -1)
-                    return -1;
-                String bits[] = sLines[2].split(":");
-                if(bits[0].contains("S"))
-                    iPrice = Math.round(economyUtil.parsePrice(bits[0]));
-                else if(bits[1].contains("S"))
-                    iPrice = Math.round(economyUtil.parsePrice(bits[1]));
-                else
-                    return -1;
-                sPrice = Integer.toString(iPrice);
-                
-                emptyBlock.setLine(0, "[Sell]");
-                emptyBlock.setLine(1, (sAmount + " of"));
-                emptyBlock.setLine(2, sLines[3]);
-                emptyBlock.setLine(3, sPrice);
-                emptyBlock.update();
-                
-                if(bits[0].contains("B"))
-                    iPrice = Math.round(economyUtil.parsePrice(bits[0]));
-                else if(bits[1].contains("B"))
-                    iPrice = Math.round(economyUtil.parsePrice(bits[1]));
-                else
-                    return -1;
-                sPrice = Integer.toString(iPrice);
-                signblock.setLine(0, "[Buy]");
-            } else if(sLines[2].contains("B")) {                
-                from = sLines[2].indexOf("B");
-                if(sLines[2].indexOf(":", from+2) > from+2)
-                    to = sLines[2].indexOf(":", from+2);
-                else if(sLines[2].indexOf(" ", from+2) > from+2)
-                    to = sLines[2].indexOf(" ", from+2);
-                else
-                    to = sLines[2].length();
-                sPrice = sLines[2].substring(from+2, to);
-                try {
-                    iPrice = Integer.parseInt(sPrice);
-                } catch(NumberFormatException e) {
-                    return -1;
-                }                
-                signblock.setLine(0, "[Buy]");
-            } else if(sLines[2].contains("S")) {
-                from = sLines[2].indexOf("S");
-                if(sLines[2].indexOf(":", from+2) > from+2)
-                    to = sLines[2].indexOf(":", from+2);
-                else if(sLines[2].indexOf(" ", from+2) > from+2)
-                    to = sLines[2].indexOf(" ", from+2);
-                else
-                    to = sLines[2].length();
-                sPrice = sLines[2].substring(from+2, to);
-                try {
-                    iPrice = Integer.parseInt(sPrice);
-                } catch(NumberFormatException e) {
-                    return -1;
-                }                
-                signblock.setLine(0, "[Sell]");
-            } else
-                return -1;
-            signblock.setLine(1, (sAmount + " of"));
-            signblock.setLine(2, sLines[3]);
-            signblock.setLine(3, sPrice);
-            signblock.update();
-        }        
-        return iAmount;
-    }
-    
-    private Boolean emptySign(Block sign) {
-        String[] sLines = ((Sign) sign.getState()).getLines();
-        for(int i = 0; i < 4; i++)
-            if(!sLines[i].equals(""))
-                return false;
-        return true;
-    }
-    
-    
     
     private Boolean clickedSignShopMat(Block bBlock) {
         if(SignShop.LinkableMaterials.contains(bBlock.getType()))
@@ -205,8 +103,8 @@ public class SignShopPlayerListener implements Listener {
         
         // Copy code?
         
-        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && event.getItem().getType() == Material.REDSTONE) {
-            if(itemUtil.clickedSign(bClicked) && seller == null) {
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.REDSTONE || event.getItem().getType() == Material.INK_SACK)) {
+            if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 if(!SignShop.Operations.containsKey(sOperation)) {
@@ -217,6 +115,13 @@ public class SignShopPlayerListener implements Listener {
                 List<String> operation = SignShop.Operations.get(sOperation);                
                 if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+                    return;
+                }
+                
+                int iLimit = ssPlayer.reachedMaxShops();        
+                if(!operation.contains("playerIsOp") && iLimit > 0) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(iLimit)));
+                    itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                     return;
                 }
 
@@ -239,6 +144,14 @@ public class SignShopPlayerListener implements Listener {
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables, 
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace());
                 
+                for(Block bCheckme : containables) {
+                    if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
+                        ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(SignShop.getMaxSellDistance())));
+                        itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
+                        return;
+                    }
+                }
+                
                 Boolean bSetupOK = false;
                 for(SignShopOperation ssOperation : SignShopOperations) {
                     bSetupOK = ssOperation.setupOperation(ssArgs);
@@ -253,7 +166,7 @@ public class SignShopPlayerListener implements Listener {
                 removePlayerFromClickmap(player);                
                 ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
-            } else if(clickedSignShopMat(bClicked) && seller == null) {
+            } else if(clickedSignShopMat(bClicked)) {
                 event.setCancelled(true);
                 if(mClicksPerLocation.containsKey(bClicked.getLocation())) {
                     mClicksPerLocation.remove(bClicked.getLocation());
@@ -266,11 +179,11 @@ public class SignShopPlayerListener implements Listener {
                             return;
                         }
                     }
-                    mClicksPerLocation.put(bClicked.getLocation(), player);
-                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));                    
+                    mClicksPerLocation.put(bClicked.getLocation(), player);                    
+                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
                 }
             }        
-        } else if(itemUtil.clickedSign(bClicked) && seller != null) {            
+        } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.INK_SACK && event.getItem().getType() != Material.REDSTONE))) {
             SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
 
             sLines = ((Sign) bClicked.getState()).getLines();
@@ -344,6 +257,23 @@ public class SignShopPlayerListener implements Listener {
             SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, sItems, economyUtil.formatMoney(fPrice));
             ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
             ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
+        }
+        if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
+            Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+            if(lClicked.size() > 0) {
+                List<SignShopSpecialOp> specialops = signshopUtil.getSignShopSpecialOps();
+                List<Block> clickedBlocks = new ArrayList<Block>();                
+                for(Location lTemp : lClicked)
+                    clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
+                if(!specialops.isEmpty()) {
+                    Boolean ranSomething = false;
+                    for(SignShopSpecialOp special : specialops) {                        
+                        ranSomething = (special.runOperation(clickedBlocks, event) ? true : ranSomething);
+                    }
+                    if(ranSomething)
+                        removePlayerFromClickmap(player);
+                }
+            }
         }
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && bClicked.getState() instanceof InventoryHolder) {            
             itemUtil.updateStockStatusPerChest(bClicked, null);            
