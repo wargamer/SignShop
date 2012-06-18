@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.specialops.*;
 
 public class signshopUtil {
     public static String getOperation(String sSignOperation){
@@ -35,7 +37,7 @@ public class signshopUtil {
         for(String sSignShopOp : operation) {            
             try {
                 Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.operations."+sSignShopOp);
-                SignShopOperations.add((org.wargamer2010.signshop.operations.SignShopOperation)fc.newInstance());
+                SignShopOperations.add((SignShopOperation)fc.newInstance());
             } catch(ClassNotFoundException notfoundex) {                
                 return null;
             } catch(InstantiationException instex) {                
@@ -47,6 +49,22 @@ public class signshopUtil {
         return SignShopOperations;
     }
     
+    public static List getSignShopSpecialOps() {
+        List<SignShopSpecialOp> SignShopOperations = new ArrayList();
+        for(String sSignShopOp : SignShop.SpecialsOps) {            
+            try {
+                Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.specialops."+sSignShopOp);
+                SignShopOperations.add((SignShopSpecialOp)fc.newInstance());
+            } catch(ClassNotFoundException notfoundex) {                
+                return null;
+            } catch(InstantiationException instex) {                
+                return null;
+            } catch(IllegalAccessException illex) {                
+                return null;
+            }
+        }
+        return SignShopOperations;
+    }
     
     public static Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {
         Map<Enchantment, Integer> mEnchantments = new HashMap<Enchantment, Integer>();

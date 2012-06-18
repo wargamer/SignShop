@@ -7,6 +7,9 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import java.util.HashMap;
 import java.io.IOException;
 import java.io.File;
@@ -17,13 +20,10 @@ import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
-import com.bergerkiller.bukkit.common.SafeField;
 import org.wargamer2010.signshop.util.itemUtil;
+import com.bergerkiller.bukkit.common.SafeField;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
@@ -53,6 +53,7 @@ public class SignShop extends JavaPlugin{
     public static HashMap<String,List> Commands;
     public static HashMap<String,Integer> ShopLimits;
     public static List<Material> LinkableMaterials = new ArrayList();
+    public static List<String> SpecialsOps = new ArrayList();
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -140,6 +141,7 @@ public class SignShop extends JavaPlugin{
         setupVault();
         setupHooks();
         setupLinkables();
+        setupSpecialsOps();
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();
@@ -246,6 +248,11 @@ public class SignShop extends JavaPlugin{
         HookManager.addHook("WorldGuard");
     }
     
+    private void setupSpecialsOps() {
+        SpecialsOps.add("convertChestshop");
+        SpecialsOps.add("copySign");
+    }
+    
     private void setupOperations() {
         SignShop.Operations = new HashMap<String,List<String>>();
         
@@ -278,6 +285,9 @@ public class SignShop extends JavaPlugin{
     private void setupLinkables() {
         LinkableMaterials.add(Material.CHEST);
         LinkableMaterials.add(Material.LEVER);
+        LinkableMaterials.add(Material.SIGN);
+        LinkableMaterials.add(Material.SIGN_POST);
+        LinkableMaterials.add(Material.WALL_SIGN);
     }
         
     public static int getMaxSellDistance() {
