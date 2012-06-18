@@ -9,11 +9,13 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.InventoryHolder;
 import java.util.List;
 import java.util.ArrayList;
 import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopBlockListener implements Listener {
     
@@ -37,7 +39,7 @@ public class SignShopBlockListener implements Listener {
     private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) { 
         if(bBlock.getType() == Material.SIGN_POST || bBlock.getType() == Material.WALL_SIGN) {
             Seller seller = SignShop.Storage.getSeller(bBlock.getLocation());        
-            if(seller == null || (seller != null && (seller.owner.equals(player.getName()) || player.isOp()))) {
+            if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || player.isOp()))) {
                 SignShop.Storage.removeSeller(bBlock.getLocation());
                 return true;
             } else
@@ -64,12 +66,12 @@ public class SignShopBlockListener implements Listener {
     
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBreak(BlockBreakEvent event){
-        if(event.getBlock().getType() == Material.CHEST){            
-            List<Block> signs = SignShop.Storage.getSignsFromChest(event.getBlock());
+        if(event.getBlock() instanceof InventoryHolder) {
+            List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());
             if(signs != null)
                 for (Block temp : signs) {
                     SignShop.Storage.removeSeller(temp.getLocation());
-                    SignShopPlayerListener.setSignStatus(temp, ChatColor.BLACK);
+                    itemUtil.setSignStatus(temp, ChatColor.BLACK);
                 }
             return;
         }
@@ -83,11 +85,13 @@ public class SignShopBlockListener implements Listener {
         if(event.getBlock().getType() == Material.WALL_SIGN
         || event.getBlock().getType() == Material.SIGN_POST){
             SignShop.Storage.removeSeller(event.getBlock().getLocation());
-        }else if(event.getBlock().getType() == Material.CHEST){
-            List<Block> signs = SignShop.Storage.getSignsFromChest(event.getBlock());
+        } else if(event.getBlock() instanceof InventoryHolder) {
+            List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());
             if(signs != null)
-                for (Block temp : signs)
+                for (Block temp : signs) {                    
                     SignShop.Storage.removeSeller(temp.getLocation());
+                    itemUtil.setSignStatus(temp, ChatColor.BLACK);
+                }
         }
     }
 }

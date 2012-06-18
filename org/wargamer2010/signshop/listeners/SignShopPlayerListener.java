@@ -6,109 +6,47 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import org.bukkit.block.Chest;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.Location;
-import org.bukkit.material.MaterialData;
 import org.bukkit.event.block.Action;
-import org.bukkit.material.SimpleAttachableMaterialData;
-import org.bukkit.material.Lever;
-import org.bukkit.block.BlockState;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.block.BlockFace;
 import org.bukkit.Bukkit;
+import org.bukkit.World;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.blocks.SignShopChest;
+
+import org.wargamer2010.signshop.operations.*;
+import org.wargamer2010.signshop.util.*;
 
 // TODO: Clean up this class, there are way too many lines of code that could be optimised and put into seperate classes for beter readability
 public class SignShopPlayerListener implements Listener {
     private final SignShop plugin;
-    private static Map<String, Location> mClicks = new HashMap<String,Location>();    
-    private static Map<Player, Location> mCopyPaste = new HashMap<Player,Location>();    
-    private static HashMap<Integer, String> discs;
-
-    private int takePlayerMoney = 1;
-    private int givePlayerMoney = 2;
-    private int takePlayerItems = 3;
-    private int givePlayerItems = 4;
-    private int takeOwnerMoney = 5;
-    private int giveOwnerMoney = 6;
-    private int takeShopItems = 7;
-    private int giveShopItems = 8;
-    private int givePlayerRandomItem = 10;
-    private int playerIsOp = 11;
-    private int setDayTime = 12;
-    private int setNightTime = 13;
-    private int setRaining = 14;
-    private int setClearSkies = 16;
-    private int setRedstoneOn = 17;
-    private int setRedstoneOff = 18;
-    private int setRedStoneOnTemp = 19;
-    private int toggleRedstone = 20;
-    private int usesChest = 21;
-    private int usesLever = 22;
-    private int healPlayer = 23;
-    private int repairPlayerHeldItem = 24;
-    private int takeItemInHand = 25;
-    private int usesChestItems = 26;
-
+    private static Map<Location, Player> mClicksPerLocation = new HashMap<Location, Player>();    
+    private static Map<Player, Location> mCopyPaste = new HashMap<Player,Location>();
+    
     public SignShopPlayerListener(SignShop instance){
-        this.plugin = instance;
-        initDiscs();
+        this.plugin = instance;        
     }
     
-    private void initDiscs() {
-        // This is pretty ugly but I really couldn't find another way in
-        // bukkit's source to get this via a native function
-        // Source: http://www.minecraftwiki.net/wiki/Data_values
-        discs = new HashMap<Integer, String>();
-        discs.put(2256, "13 Disc");
-        discs.put(2257, "Cat Disc");
-        discs.put(2258, "Blocks Disc");
-        discs.put(2259, "Chirp Disc");
-        discs.put(2260, "Far Disc");
-        discs.put(2261, "Mall Disc");
-        discs.put(2262, "Mellohi Disc");
-        discs.put(2263, "Stal Disc");
-        discs.put(2264, "Strad Disc");
-        discs.put(2265, "Ward Disc");
-        discs.put(2266, "11 Disc");
-    }
-
-    public static String getOperation(String sSignOperation){
-        if(sSignOperation.length() < 4){
-            return "";
-        }        
-        sSignOperation = ChatColor.stripColor(sSignOperation);
-        return sSignOperation.substring(1,sSignOperation.length()-1);
-    }
-
-    private String getMessage(String sType,String sOperation,String sItems,float fPrice,String sCustomer,String sOwner){
+    private String getMessage(String sType,String sOperation,String sItems,float fPrice,String sCustomer,String sOwner,String sEnchantments){
         if(!SignShop.Messages.get(sType).containsKey(sOperation) || SignShop.Messages.get(sType).get(sOperation) == null){
             return "";
         }
         return SignShop.Messages.get(sType).get(sOperation)
             .replace("\\!","!")
-            .replace("!price", this.formatMoney(fPrice))
+            .replace("!price", economyUtil.formatMoney(fPrice))
             .replace("!items", sItems)
             .replace("!customer", sCustomer)
-            .replace("!owner", sOwner);
+            .replace("!owner", sOwner)
+            .replace("!enchantments", sEnchantments);
     }
     
     private Boolean checkDistance(Block a, Block b, int maxdistance) {
@@ -121,80 +59,6 @@ public class SignShopPlayerListener implements Listener {
             return false;
         else
             return true;
-    }
-    
-    private String lookupDisc(int id) {        
-        if(discs.containsKey(id))
-            return discs.get(id);
-        else
-            return "";
-    }
-    
-    private String formatData(MaterialData data) {
-        // For some reason running tostring on data when it's from an attachable material
-        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
-        if(data instanceof SimpleAttachableMaterialData)
-            return stringFormat(data.getItemType().name());
-        String sData;
-        if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))            
-            return sData;
-        else
-            sData = data.toString().toLowerCase();
-        Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
-        Matcher m = p.matcher(sData);
-        sData = m.replaceAll("");
-        sData = sData.replace("_", " ");
-        
-        StringBuffer sb = new StringBuffer(sData.length());
-        p = Pattern.compile("(^|\\W)([a-z])");
-        m = p.matcher(sData);
-        while(m.find()) {
-            m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
-        }
-        
-        m.appendTail(sb);
-        
-        return sb.toString();
-    }
-
-    private String stringFormat(String sMaterial){
-        sMaterial = sMaterial.replace("_"," ");
-        Pattern p = Pattern.compile("(^|\\W)([a-z])");
-        Matcher m = p.matcher(sMaterial.toLowerCase());
-        StringBuffer sb = new StringBuffer(sMaterial.length());
-
-        while(m.find()){
-            m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
-        }
-
-        m.appendTail(sb);
-
-        return sb.toString();
-    }
-    
-    private String formatMoney(double money) {
-        if(Vault.economy == null)
-            return Double.toString(money);
-        else
-            return Vault.economy.format(money);
-    }
-    
-    private float parsePrice(String priceline) {
-        String sPrice = "";
-        float fPrice = 0.0f;
-        for(int i = 0; i < priceline.length(); i++)
-            if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.')
-                sPrice += priceline.charAt(i);
-        try {
-            fPrice = Float.parseFloat(sPrice);
-        }
-        catch(NumberFormatException nFE) {
-            fPrice = 0.0f;
-        }
-        if(fPrice < 0.0f) {
-            fPrice = 0.0f;
-        }
-        return fPrice;
     }
     
     private Integer convertChestshop(Block sign, Player admin, Boolean alter, Block emptySign) {
@@ -229,9 +93,9 @@ public class SignShopPlayerListener implements Listener {
                     return -1;
                 String bits[] = sLines[2].split(":");
                 if(bits[0].contains("S"))
-                    iPrice = Math.round(parsePrice(bits[0]));
+                    iPrice = Math.round(economyUtil.parsePrice(bits[0]));
                 else if(bits[1].contains("S"))
-                    iPrice = Math.round(parsePrice(bits[1]));
+                    iPrice = Math.round(economyUtil.parsePrice(bits[1]));
                 else
                     return -1;
                 sPrice = Integer.toString(iPrice);
@@ -243,9 +107,9 @@ public class SignShopPlayerListener implements Listener {
                 emptyBlock.update();
                 
                 if(bits[0].contains("B"))
-                    iPrice = Math.round(parsePrice(bits[0]));
+                    iPrice = Math.round(economyUtil.parsePrice(bits[0]));
                 else if(bits[1].contains("B"))
-                    iPrice = Math.round(parsePrice(bits[1]));
+                    iPrice = Math.round(economyUtil.parsePrice(bits[1]));
                 else
                     return -1;
                 sPrice = Integer.toString(iPrice);
@@ -276,7 +140,7 @@ public class SignShopPlayerListener implements Listener {
                 sPrice = sLines[2].substring(from+2, to);
                 try {
                     iPrice = Integer.parseInt(sPrice);
-                } catch(NumberFormatException e) {                    
+                } catch(NumberFormatException e) {
                     return -1;
                 }                
                 signblock.setLine(0, "[Sell]");
@@ -298,450 +162,29 @@ public class SignShopPlayerListener implements Listener {
         return true;
     }
     
-    private Boolean registerChest(Block bSign, Block bChest, String sOperation, SignShopPlayer ssPlayer, String playerName) {
-        String[] sLines = ((Sign) bSign.getState()).getLines();
-        List operation = SignShop.Operations.get(sOperation);        
-        
-        if(!checkDistance(bSign, bChest, plugin.getMaxSellDistance()) && !operation.contains(playerIsOp)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(plugin.getMaxSellDistance())));
-            setSignStatus(bSign, ChatColor.BLACK);
-            return false;
-        }
-        
-        int iLimit = ssPlayer.reachedMaxShops();        
-        if(!operation.contains(playerIsOp) && iLimit > 0) {
-            ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(iLimit)));
-            setSignStatus(bSign, ChatColor.BLACK);
-            return false;
-        }
-        
-        if(operation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Admin."+sOperation), true)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-            setSignStatus(bSign, ChatColor.BLACK);
-            return false;
-        } else if(!operation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-            setSignStatus(bSign, ChatColor.BLACK);
-            return false;
-        }
-
-        float fPrice = parsePrice(sLines[3]);
-
-        // Redstone operation
-        if(operation.contains(usesLever) && bChest.getType() == Material.LEVER){
-            ssPlayer.sendMessage(getMessage("setup",sOperation,"",fPrice,"",""));
-
-            SignShop.Storage.addSeller(playerName,bSign,bChest,new ItemStack[]{new ItemStack(Material.DIRT,1)});
-            setSignStatus(bSign, ChatColor.DARK_BLUE);
-            mClicks.remove(ssPlayer.getName());
+    
+    
+    private Boolean clickedSignShopMat(Block bBlock) {
+        if(SignShop.LinkableMaterials.contains(bBlock.getType()))
             return true;
-        // Chest operation
-        }else if(operation.contains(usesChest) && bChest.getType() == Material.CHEST){
-            // Chest items
-            Chest cbChest = (Chest) bChest.getState();
-            ItemStack[] isChestItems = cbChest.getInventory().getContents();
-
-            //remove extra values
-            List<ItemStack> tempItems = new ArrayList<ItemStack>();
-            for(ItemStack item : isChestItems) {
-                if(item != null && item.getAmount() > 0) {
-                    tempItems.add(item);
-                }
-            }
-            isChestItems = tempItems.toArray(new ItemStack[tempItems.size()]);
-
-            // Make sure the chest wasn't empty, if dealing with an operation that uses items
-            if(operation.contains(usesChestItems)) {
-                if(isChestItems.length == 0){
-                    ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
-                    return false;
-                }
-            }
-
-            String sItems = this.itemStackToString(isChestItems);
-            ssPlayer.sendMessage(getMessage("setup",sOperation,sItems,fPrice,"",playerName));
-
-            SignShop.Storage.addSeller(playerName,bSign,bChest,isChestItems);
-            updateStockStatus(bSign, ChatColor.DARK_BLUE);
-            mClicks.remove(ssPlayer.getName());
-            return true;
-        }
-        return false;
-    }
-    
-    private Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {        
-        List<ItemStack> items = new ArrayList<ItemStack>();
-        for(ItemStack item: isItemsToTake) {
-            ItemStack isBackup = new ItemStack(
-                item.getType(),
-                1,
-                item.getDurability()
-            );
-            addSafeEnchantments(isBackup, item.getEnchantments());
-            if(item.getData() != null) {
-                isBackup.setData(item.getData());
-            }
-            if(!items.contains(isBackup))
-                items.add(isBackup);
-        }
-        ItemStack[] isBackupToTake = new ItemStack[items.size()];
-        int i = 0;
-        for(ItemStack entry : items) {
-            isBackupToTake[i] = entry;
-            i++;
-        }
-        return isStockOK(iiInventory, isBackupToTake, bTakeOrGive);
-    }
-    
-    private Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
-        ItemStack[] isChestItems = iiInventory.getContents();
-        ItemStack[] isBackup = new ItemStack[isChestItems.length];
-        ItemStack[] isBackupToTake = new ItemStack[isItemsToTake.length];
-        for(int i=0;i<isChestItems.length;i++){
-            if(isChestItems[i] != null){
-                isBackup[i] = new ItemStack(
-                    isChestItems[i].getType(),
-                    isChestItems[i].getAmount(),
-                    isChestItems[i].getDurability()
-                );
-                addSafeEnchantments(isBackup[i], isChestItems[i].getEnchantments());                
-                if(isChestItems[i].getData() != null){
-                    isBackup[i].setData(isChestItems[i].getData());
-                }
-            }
-        }
-        for(int i=0;i<isItemsToTake.length;i++){
-            if(isItemsToTake[i] != null){
-                isBackupToTake[i] = new ItemStack(
-                    isItemsToTake[i].getType(),
-                    isItemsToTake[i].getAmount(),
-                    isItemsToTake[i].getDurability()
-                );
-                addSafeEnchantments(isBackupToTake[i], isItemsToTake[i].getEnchantments());                
-                if(isItemsToTake[i].getData() != null){
-                    isBackupToTake[i].setData(isItemsToTake[i].getData());
-                }
-            }
-        }
-        HashMap<Integer, ItemStack> leftOver;
-        if(bTakeOrGive)
-            leftOver = iiInventory.removeItem(isBackupToTake);
         else
-            leftOver = iiInventory.addItem(isBackupToTake);
-        Boolean bStockOK = true;
-        if(!leftOver.isEmpty())
-            bStockOK = false;
-        iiInventory.setContents(isBackup);        
-        return bStockOK;
+            return false;
     }
     
-    private String binaryToRoman(int binary) {
-        final String[] RCODE = {"M", "CM", "D", "CD", "C", "XC", "L",
-                                           "XL", "X", "IX", "V", "IV", "I"};
-        final int[]    BVAL  = {1000, 900, 500, 400,  100,   90,  50,
-                                               40,   10,    9,   5,   4,    1};
-        if (binary <= 0 || binary >= 4000) {
-            return "";
-        }
-        String roman = "";
-        for (int i = 0; i < RCODE.length; i++) {
-            while (binary >= BVAL[i]) {
-                binary -= BVAL[i];
-                roman  += RCODE[i];
-            }
-        }
-        return roman;
-    }  
-        
-    private String itemStackToString(ItemStack[] isStacks) {
-        HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
-        HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
-        String sItems = "";
-        Boolean first = true;
-        Boolean eFirst = true;
-        Integer tempAmount = 0;
-        for(ItemStack item: isStacks) {
-            ItemStack isBackup = new ItemStack(
-                item.getType(),
-                1,
-                item.getDurability()
-            );
-            addSafeEnchantments(isBackup, item.getEnchantments());
-            if(item.getData() != null){
-                isBackup.setData(item.getData());
-            }
-            
-            if(item.getEnchantments().size() > 0)
-                enchantments.put(isBackup, item.getEnchantments());
-            if(items.containsKey(isBackup)) {
-                tempAmount = (items.get(isBackup) + item.getAmount());                
-                items.put(isBackup, tempAmount);
-            } else 
-                items.put(isBackup, item.getAmount());
-        }
-        for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
-            if(first) first = false;
-            else sItems += ", ";
-            if(enchantments.containsKey(entry.getKey()))
-                sItems += ChatColor.DARK_PURPLE;
-            String sDamaged = " ";
-            if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
-                sDamaged = " Damaged ";
-            sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData());
-            if(enchantments.containsKey(entry.getKey())) {
-                sItems += (ChatColor.WHITE + " (");
-                for(Map.Entry<Enchantment,Integer> eEntry : enchantments.get(entry.getKey()).entrySet()) {
-                    if(eFirst) eFirst = false;
-                    else sItems += ", ";
-                    sItems += (stringFormat(eEntry.getKey().getName()) + " " + binaryToRoman(eEntry.getValue()));
-                }
-                eFirst = true;
-                sItems += ")";
-            }
-        }
-        
-        return sItems;
+    private void removePlayerFromClickmap(Player player) {
+        mClicksPerLocation.values().removeAll(Collections.singleton(player));
     }
-        
-    public static void setSignStatus(Block sign, ChatColor color) {
-        if(sign.getType() == Material.SIGN_POST || sign.getType() == Material.WALL_SIGN) {
-            Sign signblock = ((Sign) sign.getState());
-            String[] sLines = signblock.getLines();            
-            if(ChatColor.stripColor(sLines[0]).length() < 14) {
-                signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
-                signblock.update();
-            }
-        }
+
+    private <T, E> Set<T> getKeysByValue(Map<T, E> map, E value) {
+         Set<T> keys = new HashSet<T>();
+         for (Map.Entry<T, E> entry : map.entrySet()) {
+             if (value.equals(entry.getValue())) {
+                 keys.add(entry.getKey());
+             }
+         }
+         return keys;
     }
-    
-    public static void addSafeEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {        
-        if(enchantments.isEmpty())
-            return;
-        for(Map.Entry<Enchantment, Integer> ench : enchantments.entrySet()) {
-            if(!ench.getKey().canEnchantItem(isEnchantMe))
-                return;
-        }
-        try {
-            isEnchantMe.addEnchantments(enchantments);
-        } catch(IllegalArgumentException ex) {
-            if(SignShop.getAllowUnsafeEnchantments()) {
-                try {
-                    isEnchantMe.addUnsafeEnchantments(enchantments);
-                } catch(IllegalArgumentException exfinal) {
-                    // TODO: Decide whether to log a message here. Not entirely sure what would be useful, we don't know which enchantment failed
-                }
-            }
-        }
-    }
-    
-    private HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
-        ItemStack[] isBackup = new ItemStack[isStacks.length];
-        for(int i = 0; i < isStacks.length; i++){
-            if(isStacks[i] != null){
-                isBackup[i] = new ItemStack(
-                    isStacks[i].getType(),
-                    isStacks[i].getAmount(),
-                    isStacks[i].getDurability()
-                );
-                addSafeEnchantments(isBackup[i], isStacks[i].getEnchantments());
-                if(isStacks[i].getData() != null){
-                    isBackup[i].setData(isStacks[i].getData());
-                }
-            }
-        }
-        HashMap<ItemStack, Integer> mReturn = new HashMap<ItemStack, Integer>();
-        int tempAmount = 0;
-        for(int i = 0; i < isBackup.length; i++) {
-            if(isBackup[i] == null) continue;
-            tempAmount = isBackup[i].getAmount();
-            isBackup[i].setAmount(1);
-            if(mReturn.containsKey(isBackup[i])) {
-                tempAmount += mReturn.get(isBackup[i]);
-                mReturn.remove(isBackup[i]);
-                mReturn.put(isBackup[i], tempAmount);
-            } else 
-                mReturn.put(isBackup[i], tempAmount);
-        }
-        return mReturn;
-    }
-    
-    public HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake, Boolean bOneWay) {
-        ItemStack[] isBackup = new ItemStack[isItemsToTake.length];        
-        for(int i = 0; i < isItemsToTake.length; i++){
-            if(isItemsToTake[i] != null){
-                isBackup[i] = new ItemStack(
-                    isItemsToTake[i].getType(),
-                    isItemsToTake[i].getAmount(),
-                    isItemsToTake[i].getDurability()
-                );
-                addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
-                if(isItemsToTake[i].getData() != null){
-                    isBackup[i].setData(isItemsToTake[i].getData());
-                }
-            }
-        }
-        HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
-        returnMap.put(isItemsToTake, 1.0f);
-        Boolean fromOK = isStockOK(iiFrom, isBackup, true);
-        Boolean toOK = isStockOK(iiTo, isBackup, false);
-        if(fromOK && toOK) {            
-            returnMap.put(isItemsToTake, 1.0f);
-            if(bTake) {                
-                iiFrom.removeItem(isBackup);
-                if(!bOneWay)
-                    iiTo.addItem(isBackup);
-            }
-            return returnMap;
-        } else if(!plugin.getAllowVariableAmounts() && (!fromOK || !toOK)) {            
-            returnMap.put(isItemsToTake, 0.0f);
-            return returnMap;
-        } else if(plugin.getAllowVariableAmounts() && !toOK) {             
-            returnMap.put(isItemsToTake, -1.0f);
-            return returnMap;
-        }        
-        returnMap.put(isItemsToTake, 0.0f);
-        float iCount = 0;
-        float tempCount = 0;
-        int i = 0;        
-        HashMap<ItemStack, Integer> mItemsToTake = this.StackToMap(isBackup);        
-        HashMap<ItemStack, Integer> mInventory = this.StackToMap(iiFrom.getContents());        
-        ItemStack[] isActual = new ItemStack[mItemsToTake.size()];
-        for(Map.Entry<ItemStack, Integer> entry : mItemsToTake.entrySet()) {            
-            if(iCount == 0 && mInventory.containsKey(entry.getKey()))
-                iCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());                
-            else if(iCount != 0 && mInventory.containsKey(entry.getKey())) {
-                tempCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());                
-                if(tempCount != iCount)
-                    return returnMap;
-            } else
-                return returnMap;
-            
-            isActual[i] = new ItemStack(
-                entry.getKey().getType(),
-                mInventory.get(entry.getKey()),
-                entry.getKey().getDurability()
-            );
-            addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());            
-            if(entry.getKey().getData() != null) {
-                isActual[i].setData(entry.getKey().getData());
-            }
-            
-            i++;
-        }
-        returnMap.clear();
-        if(!isStockOK(iiTo, isActual, false)) {            
-            returnMap.put(isActual, -1.0f);
-            return returnMap;
-        }
-        returnMap.put(isActual, iCount);
-        if(bTake) {
-            iiFrom.removeItem(isActual);        
-            if(!bOneWay)
-                iiTo.addItem(isActual);
-        }
-        return returnMap;
-    }
-    
-    private void updateStockStatus(Block bSign, ChatColor ccColor) {
-        Seller seTemp;
-        if((seTemp = SignShop.Storage.getSeller(bSign.getLocation())) != null) {
-            List<Block> signs = SignShop.Storage.getSignsFromChest(seTemp.getChest());
-            ItemStack[] isItems = null;
-            if(signs != null)
-                for (Block temp : signs) {
-                    Seller seller = null;
-                    if(temp.getType() != Material.SIGN_POST && temp.getType() != Material.WALL_SIGN)
-                        continue;
-                    if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
-                        Chest cbChest = (Chest) seller.getChest().getState();
-                        isItems = seller.getItems();
-                        String[] sLines = ((Sign) temp.getState()).getLines();
-                        if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
-                            continue;
-                        List operation = SignShop.Operations.get(getOperation(sLines[0]));
-                        if(operation.contains(takeShopItems))
-                            if(!isStockOK(cbChest.getInventory(), isItems, true))
-                                setSignStatus(temp, ChatColor.DARK_RED);
-                            else
-                                setSignStatus(temp, ChatColor.DARK_BLUE);
-                        else if(operation.contains(giveShopItems))
-                            if(!isStockOK(cbChest.getInventory(), isItems, false))
-                                setSignStatus(temp, ChatColor.DARK_RED);
-                            else
-                                setSignStatus(temp, ChatColor.DARK_BLUE);
-                        else
-                            setSignStatus(temp, ChatColor.DARK_BLUE);
-                    }
-                }
-        }
-        setSignStatus(bSign, ccColor);
-    }
-    
-    private void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
-        PlayerInteractEvent event = new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, player.getItemInHand(), bLever, bfBlockface);
-        Bukkit.getServer().getPluginManager().callEvent(event);        
-    }
-    
-    private void copySign(Block bNewSign, Block bToChange, Player player) {
-        Sign signNewSign = ((Sign) bNewSign.getState());
-        Sign signToChange = ((Sign) bToChange.getState());
-        String[] sNewSign = signNewSign.getLines();
-        String[] sToChange = signToChange.getLines();        
-        List newoperation;
-        List oldoperation = SignShop.Operations.get(getOperation(sToChange[0]));
-        Seller seller = SignShop.Storage.getSeller(bToChange.getLocation());
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
-        if((!seller.owner.equals(player.getName()) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-            return;
-        }
-        
-        if(sNewSign[0] != null && sNewSign[0].length() > 0) {
-            if(SignShop.Operations.containsKey(getOperation(sNewSign[0]))) {                
-                newoperation = SignShop.Operations.get(getOperation(sNewSign[0]));                
-                if(newoperation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Admin."+getOperation(sNewSign[0])), true)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-                    return;
-                } else if(!newoperation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Signs."+getOperation(sNewSign[0])), false)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-                    return;
-                }
-                if(newoperation.contains(usesChest) && !oldoperation.contains(usesChest)) {
-                    ssPlayer.sendMessage("The new and old operation are not compatible.");
-                    return;
-                } else if(newoperation.contains(usesLever) && !oldoperation.contains(usesLever)) {
-                    ssPlayer.sendMessage("The new and old operation are not compatible.");
-                    return;
-                } else if((!newoperation.contains(usesChest) && !newoperation.contains(usesLever)) && (oldoperation.contains(usesChest) || oldoperation.contains(usesLever))) {
-                    ssPlayer.sendMessage("The new and old operation are not compatible.");
-                    return;
-                }
-                signToChange.setLine(0, sNewSign[0]);
-            }
-        }
-        if(sNewSign[1] != null && sNewSign[1].length() > 0)
-            signToChange.setLine(1, sNewSign[1]);
-        if(sNewSign[2] != null && sNewSign[2].length() > 0)
-            signToChange.setLine(2, sNewSign[2]);
-        if(sNewSign[3] != null && sNewSign[3].length() > 0)
-            signToChange.setLine(3, sNewSign[3]);
-        
-        signToChange.update();
-        oldoperation = SignShop.Operations.get(getOperation(sToChange[0]));        
-        
-        if(!oldoperation.contains(usesChest))
-            setSignStatus(bToChange, ChatColor.DARK_BLUE);
-        else if(oldoperation.contains(usesChest) && oldoperation.contains(takeShopItems) && isStockOK(((Chest)seller.getChest().getState()).getInventory(), seller.getItems(), true))
-            setSignStatus(bToChange, ChatColor.DARK_BLUE);
-        else if(oldoperation.contains(usesChest) && oldoperation.contains(giveShopItems) && isStockOK(((Chest)seller.getChest().getState()).getInventory(), seller.getItems(), false))
-            setSignStatus(bToChange, ChatColor.DARK_BLUE);
-        else if(!oldoperation.contains(takeShopItems) && !oldoperation.contains(giveShopItems))
-            setSignStatus(bToChange, ChatColor.DARK_BLUE);
-        else
-            setSignStatus(bToChange, ChatColor.DARK_RED);
-        ssPlayer.sendMessage("The sign has been succesfully updated.");
-        
-    }
+
     
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteract(PlayerInteractEvent event) {        
@@ -757,469 +200,126 @@ public class SignShopPlayerListener implements Listener {
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         String[] sLines;
         String sOperation;
+        World world = player.getWorld();
+        Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());
         
-        if(event.getItem() != null && event.getItem().getType() == Material.INK_SACK && (bClicked.getType() == Material.WALL_SIGN || bClicked.getType() == Material.SIGN_POST)) {
-            if(SignShop.Storage.getSeller(bClicked.getLocation()) != null && !mCopyPaste.containsKey(player)) {
-                ssPlayer.sendMessage("Please hit the sign with the new info first.");
-                return;
-            } else if(SignShop.Storage.getSeller(bClicked.getLocation()) == null) {
-                ssPlayer.sendMessage("Sign with new info has been succesfully stored. Please hit the sign to be changed now.");
-                mCopyPaste.put(player, bClicked.getLocation());
-                return;
-            } else if(mCopyPaste.containsKey(player) && mCopyPaste.get(player).getBlock().getType() != Material.WALL_SIGN && mCopyPaste.get(player).getBlock().getType() != Material.SIGN_POST) {
-                mCopyPaste.remove(player);
-                ssPlayer.sendMessage("Please hit the sign with the new info first.");
-                return;
-            } else if(SignShop.Storage.getSeller(bClicked.getLocation()) != null && mCopyPaste.containsKey(player)) {
-                copySign(mCopyPaste.get(player).getBlock(), bClicked, player);
-                mCopyPaste.remove(player);
-            }
-            return;
-        }
-        // Clicked a sign with redstone
-        if(event.getItem() != null && event.getItem().getType() == Material.REDSTONE){
-            if(bClicked.getType() == Material.SIGN_POST
-            || bClicked.getType() == Material.WALL_SIGN) {
+        // Copy code?
+        
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && event.getItem().getType() == Material.REDSTONE) {
+            if(itemUtil.clickedSign(bClicked) && seller == null) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
-                sOperation = getOperation(sLines[0]);
-                
-                // Verify this isn't a shop already
-                if(SignShop.Storage.getSeller(event.getClickedBlock().getLocation()) != null){
-                    return;
-                }
-                
-                // Verify the operation
-                if(!SignShop.Operations.containsKey(sOperation)){                    
-                    if(!emptySign(bClicked) && (convertChestshop(bClicked, player, false, null)) >= 0) {                        
-                        if(sLines[2].contains("B") && sLines[2].contains("S")) {
-                            ssPlayer.sendMessage("Chestshop sign detected, both Buy and Sell. Please punch an empty sign so both a Buy and Sell sign can be created.");
-                            mClicks.put(player.getName(), event.getClickedBlock().getLocation());
-                            return;
-                        } else if(sLines[2].contains("B"))
-                            sOperation =  "Buy";
-                        else if(sLines[2].contains("S"))
-                            sOperation =  "Sell";
-                        else {
-                            ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                            return;
-                        }
-                        ssPlayer.sendMessage("Chestshop sign detected, ready for conversion, please adjust the chest's contents to the amount for 1 transaction.");
-                        ssPlayer.sendMessage("Then link a chest and put back the rest of the items.");
-                    } else if(emptySign(bClicked) && mClicks.containsKey(event.getPlayer().getName())) {
-                        Block lastClicked = mClicks.get(player.getName()).getBlock();
-                        
-                        if((lastClicked.getType() == Material.SIGN_POST || lastClicked.getType() == Material.WALL_SIGN) 
-                                && convertChestshop(lastClicked, player, false, null) >= 0) {
-                            ssPlayer.sendMessage("Empty sign detected, ready for conversion, please adjust the chest's contents to the amount for 1 transaction.");
-                            ssPlayer.sendMessage("Then link a chest and put back the rest of the items. This will allow the chest to be used for both Buy and Sell.");
-                            mClicks.put((player.getName() + "_empty"), event.getClickedBlock().getLocation());
-                            return;
-                        } else {
-                            ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                            return;
-                        }
-                    } else {                        
-                        ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                        return;
-                    }
-                }
-                List operation = SignShop.Operations.get(sOperation);
-                                
-                if(operation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Admin."+sOperation), true)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-                    return;
-                } else if(!operation.contains(playerIsOp) && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
-                    return;
-                }
-
-                float fPrice = parsePrice(sLines[3]);
-                
-                // Does this sign have a chest/lever counterpart?
-                if(operation.contains(usesChest) || operation.contains(usesLever)){
-                    mClicks.put(event.getPlayer().getName(),event.getClickedBlock().getLocation());
-                    ssPlayer.sendMessage(SignShop.Errors.get("sign_location_stored"));
-                    return;
-                // Standalone operation
-                } else {
-                    SignShop.Storage.addSeller(event.getPlayer().getName(),event.getClickedBlock(),event.getClickedBlock(),new ItemStack[]{new ItemStack(Material.DIRT,1)});
-                    ssPlayer.sendMessage(getMessage("setup",sOperation,"",fPrice,"",event.getPlayer().getName()));
-                    setSignStatus(bClicked, ChatColor.DARK_BLUE);
-                    return;
-                }
-            }
-        // Left clicked a chest and has already clicked a sign
-        }
-        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && event.getItem().getType() == Material.REDSTONE
-        && (event.getClickedBlock().getType() == Material.CHEST || event.getClickedBlock().getType() == Material.LEVER)
-        && mClicks.containsKey(event.getPlayer().getName())){
-            
-            Block bSign = mClicks.get(event.getPlayer().getName()).getBlock();
-            if(bSign.getType() != Material.WALL_SIGN && bSign.getType() != Material.SIGN_POST) {
-                ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                mClicks.remove(event.getPlayer().getName());
-                return;
-            }
-            
-            SignShopChest ssChest = new SignShopChest(bClicked);        
-            if(!ssChest.allowedToLink(ssPlayer)) {
-                ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
-                return;
-            }
-            
-            if(bSign.getType() != Material.WALL_SIGN && bSign.getType() != Material.SIGN_POST) {
-                ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                mClicks.remove(event.getPlayer().getName());
-                return;
-            }
-                
-            sLines = ((Sign) bSign.getState()).getLines();
-            sOperation = getOperation(sLines[0]);
-            String playerName = event.getPlayer().getName();
-            Boolean registerEmptySign = false;
-            Block emptySign = null;
-            
-            // Verify the operation
-            if(!SignShop.Operations.containsKey(sOperation)){
-                playerName = sLines[0];                
-                if(mClicks.containsKey(event.getPlayer().getName() + "_empty")) {
-                    emptySign = mClicks.get(event.getPlayer().getName() + "_empty").getBlock();
-                    if((sLines[2].contains("B")) && sLines[2].contains("S")) {
-                        registerEmptySign = true;
-                    }
-                }
-                if((convertChestshop(bSign, player, true, emptySign)) >= 0) {                    
-                    sLines = ((Sign) bSign.getState()).getLines();
-                    sOperation = getOperation(sLines[0]);
-                    if(!SignShop.Operations.containsKey(sOperation)) {                        
-                        ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
-                        return;
-                    }
-                    ssPlayer.sendMessage("Sign succesfully converted!");                                        
-                } else {                    
+                sOperation = signshopUtil.getOperation(sLines[0]);
+                if(!SignShop.Operations.containsKey(sOperation)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                     return;
                 }
-            }
-            registerChest(bSign, event.getClickedBlock(), sOperation, ssPlayer, playerName);
-            if(registerEmptySign) {
-                registerChest(emptySign, event.getClickedBlock(), getOperation(((Sign) emptySign.getState()).getLines()[0]), ssPlayer, playerName);
-            }            
-            return;
-            
-        // Clicked on a sign, might be a signshop.
-        } 
-        if(bClicked.getType() == Material.SIGN_POST || bClicked.getType() == Material.WALL_SIGN){
-            Seller seller = SignShop.Storage.getSeller(bClicked.getLocation());
+                
+                List<String> operation = SignShop.Operations.get(sOperation);                
+                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+                    return;
+                }
+
+                List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);            
+                if(SignShopOperations == null) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
+                    return;
+                }
+                
+                Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+                List<Block> containables = new ArrayList();
+                List<Block> activatables = new ArrayList();
+                for(Location loc : lClicked) {
+                    Block bBlockat = world.getBlockAt(loc);                    
+                    if(bBlockat.getState() instanceof InventoryHolder)                        
+                        containables.add(bBlockat);
+                    else if(clickedSignShopMat(bBlockat))
+                        activatables.add(bBlockat);
+                }                
+                SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables, 
+                        ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace());
+                
+                Boolean bSetupOK = false;
+                for(SignShopOperation ssOperation : SignShopOperations) {
+                    bSetupOK = ssOperation.setupOperation(ssArgs);
+                    if(!bSetupOK)
+                        return;
+                }
+                if(!bSetupOK)
+                    return;
+                if(ssArgs.isItems == null)
+                    ssArgs.isItems = new ItemStack[]{new ItemStack(Material.DIRT,1)};
+                SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.bSign, ssArgs.containables, ssArgs.activatables, ssArgs.isItems, ssArgs.miscSettings);
+                removePlayerFromClickmap(player);                
+                ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments));
+                itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
+            } else if(clickedSignShopMat(bClicked) && seller == null) {
+                event.setCancelled(true);
+                if(mClicksPerLocation.containsKey(bClicked.getLocation())) {
+                    mClicksPerLocation.remove(bClicked.getLocation());
+                    ssPlayer.sendMessage("Removed stored location");
+                } else {
+                    if(bClicked.getState() instanceof InventoryHolder) {
+                        SignShopChest ssChest = new SignShopChest(bClicked);
+                        if(!ssChest.allowedToLink(ssPlayer)) {
+                            ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                            return;
+                        }
+                    }
+                    mClicksPerLocation.put(bClicked.getLocation(), player);
+                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));                    
+                }
+            }        
+        } else if(itemUtil.clickedSign(bClicked) && seller != null) {            
+            SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
 
             sLines = ((Sign) bClicked.getState()).getLines();
-            sOperation = getOperation(sLines[0]);
+            sOperation = signshopUtil.getOperation(sLines[0]);
 
             // Verify the operation
             if(!SignShop.Operations.containsKey(sOperation)){
                 return;
             }
-            List operation = SignShop.Operations.get(sOperation);
-            
-            // Verify seller at this location
-            if(seller == null){
-                return;
-            }
-            if(event.getItem() != null){
-                event.setCancelled(true);
-            }
-            SignShopPlayer ssOwner = new SignShopPlayer(seller.owner);
             
             if(ssPlayer.hasPerm(("SignShop.DenyUse."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Admin."+sOperation), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permission_use"));
                 return;
             }
             
-            float fPrice = parsePrice(sLines[3]);
-
-            ItemStack[] isItems = seller.getItems();
-            String sItems = this.itemStackToString(isItems);
-            
-            //Make sure the money is there            
-            if(operation.contains(takePlayerMoney)) {
-                if(!ssPlayer.hasMoney(fPrice)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_player_money").replace("!price",this.formatMoney(fPrice)));
-                    return;
-                }
-            }
-
-            if(operation.contains(takeOwnerMoney)){
-                if(!ssOwner.hasMoney(fPrice)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_shop_money").replace("!price",this.formatMoney(fPrice)));
-                    return;
-                }
-            }
-            
-            if(operation.contains(takeItemInHand)) {
-                if(event.getItem() == null) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_item_in_hand"));
-                    return;
-                } else {
-                    isItems = new ItemStack[1];
-                    isItems[0] = event.getItem();
-                    sItems = itemStackToString(isItems);
-                }
-            }
-
-            Chest cbChest = null;
-            float iCount = 1;
-            
-            if(operation.contains(usesChest)){
-                if(seller.getChest().getType() != Material.CHEST){
-                    ssPlayer.sendMessage(SignShop.Errors.get("out_of_business"));
-                    return;
-                }
-                cbChest = (Chest) seller.getChest().getState();
-                if(operation.contains(takePlayerItems)){
-                    HashMap<ItemStack[], Float> variableAmount = variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, false, !operation.contains(giveShopItems));
-                    iCount = (Float)variableAmount.values().toArray()[0];
-                    if(iCount == 0.0f) {
-                        ssPlayer.sendMessage(SignShop.Errors.get("player_doesnt_have_items").replace("!items", sItems));
-                        return;
-                    } else if(iCount == -1.0f) {
-                        updateStockStatus(bClicked, ChatColor.DARK_RED);
-                        ssPlayer.sendMessage(SignShop.Errors.get("overstocked"));
-                        return;
-                    } else {
-                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-                    }
-                    ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
-                    sItems = itemStackToString(isActual);
-                    fPrice = (fPrice * iCount);
-                }
-                if(operation.contains(giveShopItems)){
-                    if(!isStockOK(cbChest.getInventory(), isItems, false)) {
-                        updateStockStatus(bClicked, ChatColor.DARK_RED);
-                        ssPlayer.sendMessage(SignShop.Errors.get("overstocked"));
-                        return;
-                    } else {
-                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-                    }
-                }
-                if(operation.contains(givePlayerRandomItem)) {
-                    if(!singeAmountStockOK(cbChest.getInventory(), isItems, true)) {
-                        updateStockStatus(bClicked, ChatColor.DARK_RED);
-                        ssPlayer.sendMessage(SignShop.Errors.get("out_of_stock"));
-                        return;
-                    } else {
-                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-                    }
-                }
-                
-                if(operation.contains(takeShopItems)){
-                    if(!isStockOK(cbChest.getInventory(), isItems, true)) {
-                        updateStockStatus(bClicked, ChatColor.DARK_RED);
-                        ssPlayer.sendMessage(SignShop.Errors.get("out_of_stock"));
-                        return;
-                    } else {
-                        updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-                    }
-                }
-                
-                if(operation.contains(givePlayerItems)) {
-                    if(!isStockOK(player.getInventory(), isItems, false)) {                        
-                        ssPlayer.sendMessage(SignShop.Errors.get("player_overstocked"));
-                        return;
-                    }
-                }
-            }
-            
-            // Checking for a possible price modifier, default is 1.0
-            Boolean bBuyOrSell = (operation.contains(takePlayerMoney) ? true : false);
-            Float fPricemod = ssPlayer.getPlayerPricemod(sOperation, bBuyOrSell);
-            fPrice = (fPrice * fPricemod);  
-                        
-            //Make sure the item can be repaired
-            if(operation.contains(repairPlayerHeldItem)){
-                if(event.getItem() == null) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("no_item_to_repair"));
-                    return;
-                } else if(event.getItem().getType().getMaxDurability() < 30) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("invalid_item_to_repair"));
-                    return;
-                } else if(event.getItem().getEnchantments().size() > 0 && !plugin.getAllowEnchantedRepair() && !ssPlayer.hasPerm("SignShop.ignorerepair", false)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("enchanted_not_allowed"));
-                    return;
-                } else if(event.getItem().getDurability() == 0) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("item_already_repair"));
-                    return;
-                }
-            }
-            
-            if(operation.contains(setRaining)) {
-                if(player.getWorld().hasStorm() && player.getWorld().isThundering()) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("already_raining"));
-                    return;
-                }                
-            } else if(operation.contains(setClearSkies)){
-                if(!player.getWorld().hasStorm() && !player.getWorld().isThundering()) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("already_clear_skies"));
-                    return;
-                }
-            }
-            
-            if(operation.contains(healPlayer) && player.getHealth() >= 20) {
-                ssPlayer.sendMessage(SignShop.Errors.get("already_full_health"));
+            List<String> operation = SignShop.Operations.get(sOperation);
+            List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);            
+            if(SignShopOperations == null) {
+                ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                 return;
             }
             
-            // Have they seen the confirm message? (right click skips)
+            if(event.getItem() != null){
+                event.setCancelled(true);
+            }            
+            SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
+                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());
+            if(seller.getMisc() != null)
+                ssArgs.miscSettings = seller.getMisc();
+            Boolean bRequirementsOK = false;
+            Boolean bRunOK = false;
+            for(SignShopOperation ssOperation : SignShopOperations) {                
+                bRequirementsOK = ssOperation.checkRequirements(ssArgs, true);
+                if(!bRequirementsOK)
+                    return;
+            }            
+            if(!bRequirementsOK)
+                return;            
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
-                ssPlayer.sendMessage(getMessage("confirm",sOperation,sItems,fPrice,event.getPlayer().getName(),seller.owner));
+                ssPlayer.sendMessage(getMessage("confirm", sOperation, ssArgs.sItems, ssArgs.fPrice, ssPlayer.getName(), seller.getOwner(), ssArgs.sEnchantments));
                 return;
             }
-            
-            if(operation.contains(takeItemInHand)) {
-                ssPlayer.takePlayerItems(isItems);
-            }
-            
-            // Item giving/taking                     
-            if(operation.contains(takePlayerItems)) {            
-                variableAmount(event.getPlayer().getInventory(), cbChest.getInventory(), isItems, true, !operation.contains(giveShopItems));
-                if(!isStockOK(cbChest.getInventory(), isItems, false))
-                    updateStockStatus(bClicked, ChatColor.DARK_RED);
-                else
-                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);                
-            }
-            if(!operation.contains(takePlayerItems) && operation.contains(giveShopItems)){
-                cbChest.getInventory().addItem(isItems);                
-                if(!isStockOK(cbChest.getInventory(), isItems, false))
-                    updateStockStatus(bClicked, ChatColor.DARK_RED);
-                else
-                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-            }
-            
-            if(operation.contains(givePlayerItems)){
-                ssPlayer.givePlayerItems(isItems);
-            }
-            if(operation.contains(takeShopItems)){
-                cbChest.getInventory().removeItem(isItems);
-                if(!isStockOK(cbChest.getInventory(), isItems, true))
-                    updateStockStatus(bClicked, ChatColor.DARK_RED);
-                else
-                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
+            ssArgs.special.deactivate();
+            for(SignShopOperation ssOperation : SignShopOperations) {                
+                bRunOK = ssOperation.runOperation(ssArgs);
+                if(!bRunOK)
+                    return;
             }
 
-            // Health
-            if(operation.contains(healPlayer)){
-                player.setHealth(20);
-            }
-
-            // Item Repair
-            if(operation.contains(repairPlayerHeldItem)){
-                player.getItemInHand().setDurability((short) 0);
-            }
-            
-
-            // Weather Operations
-            if(operation.contains(setDayTime)){
-                event.getPlayer().getWorld().setTime(0);
-                SignShopPlayer.broadcastMsg(event.getPlayer().getWorld(),SignShop.Errors.get("made_day").replace("!player",player.getDisplayName()));                
-            }else if(operation.contains(setNightTime)){
-                long curtime = player.getWorld().getTime();
-                player.getWorld().setTime((curtime + 14000));
-                SignShopPlayer.broadcastMsg(event.getPlayer().getWorld(),SignShop.Errors.get("made_night").replace("!player",player.getDisplayName()));
-            }
-            
-            if(operation.contains(setRaining)){
-                event.getPlayer().getWorld().setStorm(true);
-                event.getPlayer().getWorld().setThundering(true);
-
-                SignShopPlayer.broadcastMsg(player.getWorld(),SignShop.Errors.get("made_rain").replace("!player",event.getPlayer().getDisplayName()));
-            }else if(operation.contains(setClearSkies)){
-                event.getPlayer().getWorld().setStorm(false);
-                event.getPlayer().getWorld().setThundering(false);
-
-                SignShopPlayer.broadcastMsg(event.getPlayer().getWorld(),SignShop.Errors.get("made_clear_skies").replace("!player",event.getPlayer().getDisplayName()));
-            }
-
-            // Redstone operations
-            if(operation.contains(setRedstoneOn)){
-                Block bLever = seller.getChest();
-
-                if(bLever.getType() == Material.LEVER) {                    
-                    BlockState state = bLever.getState();
-                    MaterialData data = state.getData();                                        
-                    Lever lever = (Lever)data;                               
-                    if(!lever.isPowered()) {                        
-                        lever.setPowered(true);                        
-                        state.setData(lever);
-                        state.update();
-                        generateInteractEvent(bLever, player, event.getBlockFace());
-                    } else {
-                        ssPlayer.sendMessage(SignShop.Errors.get("already_on"));
-                        return;
-                    }
-                }
-            }else if(operation.contains(setRedstoneOff)){
-                Block bLever = seller.getChest();
-
-                if(bLever.getType() == Material.LEVER) {                    
-                    BlockState state = bLever.getState();
-                    MaterialData data = state.getData();                                        
-                    Lever lever = (Lever)data;                                        
-                    if(lever.isPowered()) {                        
-                        lever.setPowered(false);                        
-                        state.setData(lever);
-                        state.update();
-                        generateInteractEvent(bLever, player, event.getBlockFace());
-                    } else { 
-                        ssPlayer.sendMessage(SignShop.Errors.get("already_off"));
-                        return;
-                    }                    
-                }
-            }else if(operation.contains(setRedStoneOnTemp)){
-                Block bLever = seller.getChest();
-
-                if(bLever.getType() == Material.LEVER){
-                    BlockState state = bLever.getState();
-                    MaterialData data = state.getData();                                        
-                    Lever lever = (Lever)data;                    
-                    if(!lever.isPowered()) {                        
-                        lever.setPowered(true);                   
-                        state.setData(lever);
-                        state.update();                        
-                    } else { 
-                        ssPlayer.sendMessage(SignShop.Errors.get("already_on"));
-                        return;
-                    }     
-                    
-                    plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin,new lagSetter(bLever),10*20);
-                }
-            }else if(operation.contains(toggleRedstone)){
-                Block bLever = seller.getChest();
-
-                if(bLever.getType() == Material.LEVER){
-                    BlockState state = bLever.getState();
-                    MaterialData data = state.getData();                                        
-                    Lever lever = (Lever)data;                    
-                    if(!lever.isPowered())
-                        lever.setPowered(true);                        
-                    else
-                        lever.setPowered(false);                        
-                    state.setData(lever);
-                    state.update();                    
-                    generateInteractEvent(bLever, player, event.getBlockFace());
-                }
-            }
-
-            if(operation.contains(givePlayerRandomItem)){
-                ItemStack isRandom = isItems[(new Random()).nextInt(isItems.length)];
-                ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;                
-                cbChest.getInventory().removeItem(isRandom);
-                ssPlayer.givePlayerItems(isRandoms);                
-                sItems = itemStackToString(isRandoms);
-                if(!singeAmountStockOK(cbChest.getInventory(), isItems, true))
-                    updateStockStatus(bClicked, ChatColor.DARK_RED);
-                else
-                    updateStockStatus(bClicked, ChatColor.DARK_BLUE);
-            }
-            
             if(SignShop.Commands.containsKey(sOperation.toLowerCase())) {
                 List<String> commands = SignShop.Commands.get(sOperation.toLowerCase());                
                 for(String sCommand : commands) {
@@ -1231,7 +331,6 @@ public class SignShopPlayerListener implements Listener {
                         Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
                     }
                 }
-                
             }
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
@@ -1239,82 +338,16 @@ public class SignShopPlayerListener implements Listener {
                 player.updateInventory();
             }
             
-            // Mutating money here so if one of the other transactions fail or are not needed
-            // money will not be credited or discredited
-            Boolean transaction = false;
-            // Money giving/taking
-            if(operation.contains(givePlayerMoney))
-                transaction = ssPlayer.mutateMoney(fPrice);
-            if(operation.contains(takePlayerMoney))
-                transaction = ssPlayer.mutateMoney(-fPrice);
-            if((operation.contains(givePlayerMoney) || operation.contains(takePlayerMoney)) && transaction == false) {
-                // If it fails here we shouldn't attempt to credit or discredit the shopowner
-                ssPlayer.sendMessage("The money transaction failed, please contact the System Administrator");
-                return;
-            }
+            String sItems = (ssArgs.special.bActive && !ssArgs.special.props.sItems.equals("") ? ssArgs.special.props.sItems : ssArgs.sItems);
+            Float fPrice = (ssArgs.special.bActive && ssArgs.special.props.fPrice > -1 ? ssArgs.special.props.fPrice : ssArgs.fPrice);
             
-            if(operation.contains(giveOwnerMoney))
-                transaction = ssOwner.mutateMoney(fPrice);
-            if(operation.contains(takeOwnerMoney)) 
-                transaction = ssOwner.mutateMoney(-fPrice);            
-                        
-            SignShop.logTransaction(player.getName(), seller.owner, sOperation, sItems, formatMoney(fPrice));
-            ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
-            ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.owner));
+            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, sItems, economyUtil.formatMoney(fPrice));
+            ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
+            ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
         }
-        if(event.getAction() == Action.LEFT_CLICK_BLOCK
-        && event.getClickedBlock().getType() == Material.CHEST
-        && !mClicks.containsKey(event.getPlayer().getName())){            
-            List<Block> signs = SignShop.Storage.getSignsFromChest(bClicked);
-            ItemStack[] isItems = null;
-            if(signs != null)
-                for (Block temp : signs) {                    
-                    Seller seller = null;
-                    if(temp.getType() != Material.SIGN_POST && temp.getType() != Material.WALL_SIGN)
-                        continue;
-                    if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
-                        Chest cbChest = (Chest) bClicked.getState();
-                        isItems = seller.getItems();
-                        sLines = ((Sign) temp.getState()).getLines();
-                        if(!SignShop.Operations.containsKey(getOperation(sLines[0])))
-                            continue;
-                        List operation = SignShop.Operations.get(getOperation(sLines[0]));
-                        if(operation.contains(takeShopItems) || operation.contains(givePlayerRandomItem))
-                            if(!isStockOK(cbChest.getInventory(), isItems, true))
-                                setSignStatus(temp, ChatColor.DARK_RED);
-                            else
-                                setSignStatus(temp, ChatColor.DARK_BLUE);
-                        else if(operation.contains(giveShopItems))
-                            if(!isStockOK(cbChest.getInventory(), isItems, false))
-                                setSignStatus(temp, ChatColor.DARK_RED);
-                            else
-                                setSignStatus(temp, ChatColor.DARK_BLUE);
-                        else
-                            setSignStatus(temp, ChatColor.DARK_BLUE);
-                    }
-                }
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK && bClicked.getState() instanceof InventoryHolder) {            
+            itemUtil.updateStockStatusPerChest(bClicked, null);            
         }
     }
 
-    private static class lagSetter implements Runnable{
-        private final Block blockToChange;        
-
-        lagSetter(Block blockToChange){
-            this.blockToChange = blockToChange;
-        }
-
-        @Override
-        public void run(){
-            if(blockToChange.getType() == Material.LEVER) {                    
-                BlockState state = blockToChange.getState();
-                MaterialData data = state.getData();                                        
-                Lever lever = (Lever)data;                    
-                if(lever.isPowered()) {
-                    lever.setPowered(false);
-                    state.setData(lever);
-                    state.update();                    
-                }                    
-            }            
-        }
-    }
 }

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.wargamer2010.signshop;
 
 import org.bukkit.configuration.file.FileConfiguration;
@@ -9,6 +5,7 @@ import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.logging.Level;
 
 public class configUtil {
@@ -51,18 +48,50 @@ public class configUtil {
     }
     
     static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
-        HashMap<String,List> tempListinHash = new HashMap<String,List>();
+        HashMap<String,List> tempListinHash = new HashMap<String,List>();        
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempListinHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
-            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {                
-                tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
+                try {
+                    tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
+                } catch(ClassCastException ex) {                    
+                    List<String> temp = new ArrayList<String>();
+                    temp.add((String)entry.getValue());
+                    tempListinHash.put(entry.getKey().toLowerCase(), temp);
+                }
             }
-        } catch(ClassCastException ex) {            
+        } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
         return tempListinHash;
+    }
+    
+    static Map<String,HashMap<String,List>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
+        HashMap<String,HashMap<String,List>> tempStringHashMap = new HashMap<String,HashMap<String,List>>();
+        try {
+            if(config.getConfigurationSection(path) == null)
+                return tempStringHashMap;
+            Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
+                MemorySection memsec = (MemorySection)entry.getValue();
+                HashMap<String,List> tempmap = new HashMap<String, List>();
+                for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet()) {
+                    try {
+                        tempmap.put(subentry.getKey(), (List)subentry.getValue());
+                    } catch(ClassCastException ex) {
+                        List<String> temp = new ArrayList<String>();
+                        temp.add((String)subentry.getValue());
+                        tempmap.put(subentry.getKey().toLowerCase(), temp);
+                    }
+                }
+                tempStringHashMap.put(entry.getKey(), tempmap);                
+            }
+        } catch(ClassCastException ex) {
+            SignShop.log("Incorrect section in config found.", Level.WARNING);
+        }
+        return tempStringHashMap;
     }
     
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {

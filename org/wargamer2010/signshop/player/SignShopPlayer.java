@@ -7,13 +7,16 @@ import org.bukkit.World;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
+import org.wargamer2010.signshop.util.itemUtil;
 
 import net.milkbowl.vault.economy.EconomyResponse;
 
 public class SignShopPlayer {
     Player ssPlayer = null;
     String sPlayername = "";
+    
+    public SignShopPlayer() {        
+    }
     
     public SignShopPlayer(String sName) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
@@ -54,9 +57,10 @@ public class SignShopPlayer {
     }
     
     public Boolean hasPerm(String perm, Boolean OPOperation) { 
-        if(Vault.permission == null || ssPlayer == null) {
+        if(Vault.economy == null)
+            return false;
+        if(sPlayername.equals(""))
             return true;
-        }
         Boolean isOP = ssPlayer.isOp();
         Boolean OPOverride = SignShop.getOPOverride();
         if(SignShop.USE_PERMISSIONS && isOP && !OPOverride)
@@ -75,15 +79,19 @@ public class SignShopPlayer {
     }
     
     public Boolean hasMoney(float amount) {        
-        if(Vault.economy == null || sPlayername.equals(""))
+        if(Vault.economy == null)
             return false;
+        if(sPlayername.equals(""))
+            return true;
         else
             return Vault.economy.has(sPlayername, amount);
     }
     
     public Boolean mutateMoney(float amount) {
-        if(Vault.economy == null || sPlayername.equals(""))
+        if(Vault.economy == null)
             return false;
+        if(sPlayername.equals(""))
+            return true;
         EconomyResponse response;
         if(amount > 0.0)
             response = Vault.economy.depositPlayer(sPlayername, amount);
@@ -108,7 +116,7 @@ public class SignShopPlayer {
                     isItemsToTake[i].getAmount(),
                     isItemsToTake[i].getDurability()
                 );
-                SignShopPlayerListener.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
+                itemUtil.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
                 if(isItemsToTake[i].getData() != null){
                     isBackup[i].setData(isItemsToTake[i].getData());
                 }
@@ -128,7 +136,7 @@ public class SignShopPlayer {
                     isItemsToTake[i].getAmount(),
                     isItemsToTake[i].getDurability()
                 );
-                SignShopPlayerListener.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
+                itemUtil.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
                 if(isItemsToTake[i].getData() != null){
                     isBackup[i].setData(isItemsToTake[i].getData());
                 }
@@ -139,6 +147,8 @@ public class SignShopPlayer {
     
     private String[] getPlayerGroups() {
         String[] sGroups = null;
+        if(ssPlayer == null)
+            return sGroups;
         try {
             sGroups = Vault.permission.getPlayerGroups(ssPlayer);
         } catch(UnsupportedOperationException UnsupportedEX) {

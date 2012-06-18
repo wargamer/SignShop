@@ -23,33 +23,36 @@ import org.bukkit.Material;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
+    private static SignShop instance;
 
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
 
     //Configurables
     private FileConfiguration config;    
-    private int MaxSellDistance = 0;
+    private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
-    private boolean AllowVariableAmounts = false;
-    private boolean AllowEnchantedRepair = true;
-    private boolean DisableEssentialsSigns = true;    
+    private static boolean AllowVariableAmounts = false;
+    private static boolean AllowEnchantedRepair = true;
+    private static boolean DisableEssentialsSigns = true;    
 
     //Statics
     public static Storage Storage;
-    public static HashMap<String,List> Operations;
+    public static HashMap<String,List<String>> Operations;
     public static HashMap<String,HashMap<String,String>> Messages;
     public static HashMap<String,String> Errors;
     public static HashMap<String,HashMap<String,Float>> PriceMultipliers;
     public static HashMap<String,List> Commands;
     public static HashMap<String,Integer> ShopLimits;
+    public static List<Material> LinkableMaterials = new ArrayList();
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -57,8 +60,6 @@ public class SignShop extends JavaPlugin{
     // Vault
     private Vault vault = null;
     
-    private HashMap<String,Integer> validSignOperations;
-
     //Logging
     public void log(String message, Level level,int tag) {
         if(!message.equals(""))
@@ -110,6 +111,9 @@ public class SignShop extends JavaPlugin{
         }
         initConfig();      
         fixStackSize();
+        itemUtil.initDiscs();
+        instance = this;
+        
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
@@ -131,53 +135,11 @@ public class SignShop extends JavaPlugin{
         } catch(IOException ex) {
             log("Failed to create transaction log", Level.INFO);
         }
-        
-        //Setup sign types
-        initValidOps();
-        SignShop.Operations = new HashMap<String,List>();
-        
-        HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
 
-        List tempSignOperationString = new ArrayList();
-        List tempSignOperationInt;
-        for(String sKey : tempSignOperations.keySet()){
-            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));
-            tempSignOperationInt = new ArrayList();
-
-            for(int i=0;i<tempSignOperationString.size();i++){
-                if(validSignOperations.containsKey((String) tempSignOperationString.get(i))){
-                    tempSignOperationInt.add(validSignOperations.get((String) tempSignOperationString.get(i)));
-                }
-            }
-
-            if(tempSignOperationString.contains("takePlayerItems")
-            || tempSignOperationString.contains("givePlayerItems")
-            || tempSignOperationString.contains("takeShopItems")
-            || tempSignOperationString.contains("giveShopItems")
-            || tempSignOperationString.contains("givePlayerRandomItem")){
-
-                tempSignOperationInt.add(validSignOperations.get("usesChest"));
-
-            }else if(tempSignOperationString.contains("setRedstoneOn")
-            || tempSignOperationString.contains("setRedstoneOff")
-            || tempSignOperationString.contains("setRedStoneOnTemp")
-            || tempSignOperationString.contains("toggleRedstone")){
-
-                tempSignOperationInt.add(validSignOperations.get("usesLever"));
-
-            }
-            if(tempSignOperationString.contains("takePlayerItems")
-                    || tempSignOperationString.contains("givePlayerItems")
-                    || tempSignOperationString.contains("takeShopItems")
-                    || tempSignOperationString.contains("givePlayerRandomItem"))
-                    tempSignOperationInt.add(validSignOperations.get("usesChestItems"));
-                    
-
-            SignShop.Operations.put(sKey, tempSignOperationInt);
-        }
-        
+        setupOperations();
         setupVault();
         setupHooks();
+        setupLinkables();
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();
@@ -226,7 +188,7 @@ public class SignShop extends JavaPlugin{
             this.saveDefaultConfig();
             this.saveConfig();
         }
-        config = this.getConfig();
+        config = this.getConfig();        
         config.options().copyDefaults(true);
         this.saveConfig();
         this.reloadConfig();
@@ -240,33 +202,8 @@ public class SignShop extends JavaPlugin{
         AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);        
     }
     
-    public void initValidOps() {
-        validSignOperations = new HashMap<String,Integer>();
-
-        validSignOperations.put("takePlayerMoney",1);
-        validSignOperations.put("givePlayerMoney",2);
-        validSignOperations.put("takePlayerItems",3);
-        validSignOperations.put("givePlayerItems",4);
-        validSignOperations.put("takeOwnerMoney",5);
-        validSignOperations.put("giveOwnerMoney",6);
-        validSignOperations.put("takeShopItems",7);
-        validSignOperations.put("giveShopItems",8);
-        validSignOperations.put("givePlayerRandomItem",10);
-        validSignOperations.put("playerIsOp",11);
-        validSignOperations.put("setDayTime",12);
-        validSignOperations.put("setNightTime",13);
-        validSignOperations.put("setRaining",14);
-        validSignOperations.put("setClearSkies",16);
-        validSignOperations.put("setRedstoneOn",17);
-        validSignOperations.put("setRedstoneOff",18);
-        validSignOperations.put("setRedStoneOnTemp",19);
-        validSignOperations.put("toggleRedstone",20);
-        validSignOperations.put("usesChest",21);
-        validSignOperations.put("usesLever",22);
-        validSignOperations.put("healPlayer",23);
-        validSignOperations.put("repairPlayerHeldItem",24);
-        validSignOperations.put("takeItemInHand",25);
-        validSignOperations.put("usesChestItems",26);
+    public static SignShop getInstance() {
+        return instance;
     }
     
     public String getLogPrefix() {
@@ -308,8 +245,42 @@ public class SignShop extends JavaPlugin{
         HookManager.addHook("Lockette");
         HookManager.addHook("WorldGuard");
     }
+    
+    private void setupOperations() {
+        SignShop.Operations = new HashMap<String,List<String>>();
         
-    public int getMaxSellDistance() {
+        HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
+
+        List<String> tempSignOperationString = new ArrayList();
+        List<String> tempCheckedSignOperation = new ArrayList();
+        Boolean failedOp = false;
+        
+        for(String sKey : tempSignOperations.keySet()){
+            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));            
+            if(tempSignOperationString.size() > 0) {
+                for(int i = 0; i < tempSignOperationString.size(); i++) {
+                    try {                        
+                        Class.forName("org.wargamer2010.signshop.operations."+(tempSignOperationString.get(i)).trim());
+                        tempCheckedSignOperation.add(tempSignOperationString.get(i).trim());
+                    } catch(ClassNotFoundException notfound) {
+                        failedOp = true;
+                        break;
+                    }
+                }
+                if(!failedOp && !tempCheckedSignOperation.isEmpty())
+                    SignShop.Operations.put(sKey, tempCheckedSignOperation);                
+                tempCheckedSignOperation = new ArrayList();
+                failedOp = false;
+            }
+        }
+    }
+    
+    private void setupLinkables() {
+        LinkableMaterials.add(Material.CHEST);
+        LinkableMaterials.add(Material.LEVER);
+    }
+        
+    public static int getMaxSellDistance() {
         return MaxSellDistance;
     }
     
@@ -321,11 +292,11 @@ public class SignShop extends JavaPlugin{
         return OPOverride;
     }
     
-    public Boolean getAllowVariableAmounts() {
+    public static Boolean getAllowVariableAmounts() {
         return AllowVariableAmounts;
     }
     
-    public Boolean getAllowEnchantedRepair() {
+    public static Boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
     }
     
