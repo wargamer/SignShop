@@ -82,6 +82,51 @@ public class SignShopPlayerListener implements Listener {
          }
          return keys;
     }
+    
+    private Boolean runSpecialOperations(PlayerInteractEvent event) {
+        Player player = event.getPlayer();
+        Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+        Boolean ranSomething = false;
+        
+        List<SignShopSpecialOp> specialops = signshopUtil.getSignShopSpecialOps();
+        List<Block> clickedBlocks = new ArrayList<Block>();                
+        for(Location lTemp : lClicked)
+            clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
+        if(!specialops.isEmpty()) {                
+            for(SignShopSpecialOp special : specialops) {                        
+                ranSomething = (special.runOperation(clickedBlocks, event) ? true : ranSomething);
+            }
+            if(ranSomething)
+                removePlayerFromClickmap(player);
+        }
+        
+        return ranSomething;
+    }
+    
+    private Boolean registerClickedMaterial(PlayerInteractEvent event) {
+        Block bClicked = event.getClickedBlock();
+        if(clickedSignShopMat(bClicked)) {
+            Player player = event.getPlayer();
+            SignShopPlayer ssPlayer = new SignShopPlayer(player);
+            event.setCancelled(true);
+            if(mClicksPerLocation.containsKey(bClicked.getLocation())) {
+                mClicksPerLocation.remove(bClicked.getLocation());
+                ssPlayer.sendMessage("Removed stored location");
+            } else {
+                if(bClicked.getState() instanceof InventoryHolder) {
+                    SignShopChest ssChest = new SignShopChest(bClicked);
+                    if(!ssChest.allowedToLink(ssPlayer)) {
+                        ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                        return false;
+                    }
+                }
+                mClicksPerLocation.put(bClicked.getLocation(), player);                    
+                ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
+            }
+            return true;
+        }
+        return false;
+    }
 
     
     @EventHandler(priority = EventPriority.HIGH)
@@ -108,7 +153,8 @@ public class SignShopPlayerListener implements Listener {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 if(!SignShop.Operations.containsKey(sOperation)) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
+                    if(!runSpecialOperations(event) && !registerClickedMaterial(event))
+                        ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                     return;
                 }
                 
@@ -166,23 +212,9 @@ public class SignShopPlayerListener implements Listener {
                 removePlayerFromClickmap(player);                
                 ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
-            } else if(clickedSignShopMat(bClicked)) {
-                event.setCancelled(true);
-                if(mClicksPerLocation.containsKey(bClicked.getLocation())) {
-                    mClicksPerLocation.remove(bClicked.getLocation());
-                    ssPlayer.sendMessage("Removed stored location");
-                } else {
-                    if(bClicked.getState() instanceof InventoryHolder) {
-                        SignShopChest ssChest = new SignShopChest(bClicked);
-                        if(!ssChest.allowedToLink(ssPlayer)) {
-                            ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
-                            return;
-                        }
-                    }
-                    mClicksPerLocation.put(bClicked.getLocation(), player);                    
-                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
-                }
-            }        
+                return;
+            } 
+            registerClickedMaterial(event);            
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.INK_SACK && event.getItem().getType() != Material.REDSTONE))) {
             SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
 
@@ -259,21 +291,7 @@ public class SignShopPlayerListener implements Listener {
             ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
         }
         if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
-            Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
-            if(lClicked.size() > 0) {
-                List<SignShopSpecialOp> specialops = signshopUtil.getSignShopSpecialOps();
-                List<Block> clickedBlocks = new ArrayList<Block>();                
-                for(Location lTemp : lClicked)
-                    clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
-                if(!specialops.isEmpty()) {
-                    Boolean ranSomething = false;
-                    for(SignShopSpecialOp special : specialops) {                        
-                        ranSomething = (special.runOperation(clickedBlocks, event) ? true : ranSomething);
-                    }
-                    if(ranSomething)
-                        removePlayerFromClickmap(player);
-                }
-            }
+            runSpecialOperations(event);
         }
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && bClicked.getState() instanceof InventoryHolder) {            
             itemUtil.updateStockStatusPerChest(bClicked, null);            
