@@ -37,7 +37,7 @@ public class SignShopPlayerListener implements Listener {
         this.plugin = instance;        
     }
     
-    private String getMessage(String sType,String sOperation,String sItems,float fPrice,String sCustomer,String sOwner,String sEnchantments){
+    private String getMessage(String sType,String sOperation,String sItems,float fPrice,String sCustomer,String sOwner,String sEnchantments,Block bSign){
         if(!SignShop.Messages.get(sType).containsKey(sOperation) || SignShop.Messages.get(sType).get(sOperation) == null){
             return "";
         }
@@ -47,7 +47,8 @@ public class SignShopPlayerListener implements Listener {
             .replace("!items", sItems)
             .replace("!customer", sCustomer)
             .replace("!owner", sOwner)
-            .replace("!enchantments", sEnchantments);
+            .replace("!enchantments", sEnchantments)
+            .replace("!xp", signshopUtil.getXPFromThirdLine(bSign).toString());
     }
     
     private Boolean checkDistance(Block a, Block b, int maxdistance) {
@@ -146,8 +147,6 @@ public class SignShopPlayerListener implements Listener {
         World world = player.getWorld();
         Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());
         
-        // Copy code?
-        
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.REDSTONE || event.getItem().getType() == Material.INK_SACK)) {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
@@ -210,7 +209,7 @@ public class SignShopPlayerListener implements Listener {
                     ssArgs.isItems = new ItemStack[]{new ItemStack(Material.DIRT,1)};
                 SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.bSign, ssArgs.containables, ssArgs.activatables, ssArgs.isItems, ssArgs.miscSettings);
                 removePlayerFromClickmap(player);                
-                ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments));
+                ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments, ssArgs.bSign));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
                 return;
             } 
@@ -255,9 +254,10 @@ public class SignShopPlayerListener implements Listener {
             if(!bRequirementsOK)
                 return;            
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
-                ssPlayer.sendMessage(getMessage("confirm", sOperation, ssArgs.sItems, ssArgs.fPrice, ssPlayer.getName(), seller.getOwner(), ssArgs.sEnchantments));
+                ssPlayer.sendMessage(getMessage("confirm", sOperation, ssArgs.sItems, ssArgs.fPrice, ssPlayer.getName(), seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
+                ssArgs.special.deactivate();
                 return;
-            }
+            }            
             ssArgs.special.deactivate();
             for(SignShopOperation ssOperation : SignShopOperations) {                
                 bRunOK = ssOperation.runOperation(ssArgs);
@@ -287,8 +287,8 @@ public class SignShopPlayerListener implements Listener {
             Float fPrice = (ssArgs.special.bActive && ssArgs.special.props.fPrice > -1 ? ssArgs.special.props.fPrice : ssArgs.fPrice);
             
             SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, sItems, economyUtil.formatMoney(fPrice));
-            ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
-            ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments));
+            ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
+            ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
         }
         if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
             runSpecialOperations(event);

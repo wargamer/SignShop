@@ -10,7 +10,7 @@ public class takePlayerMoney implements SignShopOperation {
     }
     
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {        
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {                
         Float fPricemod = ssArgs.ssPlayer.getPlayerPricemod(ssArgs.sOperation, true);
         Float fPrice = (ssArgs.fPrice * fPricemod);        
         if(!ssArgs.ssPlayer.hasMoney(fPrice)) {

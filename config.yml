@@ -25,7 +25,7 @@ signs:
   ClearSkies: takePlayerMoney,setClearSkies,playerIsOp
   DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
   DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
-  DeviceToggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
+  Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
   Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
   Heal: takePlayerMoney,healPlayer,playerIsOp
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
@@ -33,6 +33,8 @@ signs:
   DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
   iSlot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems
   Enchant: enchantItemInHand,takePlayerMoney
+  iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
+  iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -50,7 +52,7 @@ messages:
     ClearSkies: You have setup a weather controller that costs !price!
     DeviceOn: You have setup a device activator that costs !price!
     DeviceOff: You have setup a device deactivator that costs !price!
-    DeviceToggle: You have setup a device toggler that costs !price!
+    Toggle: You have setup a device toggler that costs !price!
     Device: You have setup a device temporary activator that costs !price!
     Heal: You have setup a healing station that costs !price!
     Repair: You have setup a repair station that costs !price!
@@ -58,6 +60,8 @@ messages:
     DeviceItem: You have setup a device temporary activator that costs !items!
     iSlot: You have setup a !price slot machine offering infinite !items!
     Enchant: You have setup an Enchanter that costs !price and enchants with !enchantments!
+    iSellXP: You have put a bounty of !price for !xp XP
+    iBuyXP: You have put !xp XP for sale at a price of !price!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -75,7 +79,7 @@ messages:
     ClearSkies: Set the weather to clear skies for !price?
     DeviceOn: Activate this device for !price?
     DeviceOff: Deactivate this device for !price?
-    DeviceToggle: Toggle this device for !price?
+    Toggle: Toggle this device for !price?
     Device: Temporarily activate this device for !price?
     Heal: Heal yourself for !price?
     Repair: Repair the item held in your hand for !price?
@@ -83,6 +87,8 @@ messages:
     DeviceItem: Temporarily activate this device for !items?
     iSlot: Play this infinitely stocked slot machine for !price?
     Enchant: Enchant your item with !enchantments for !price?
+    iSellXP: Sell !xp XP for !price?
+    iBuyXP: Buy !xp XP for !price?
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -100,7 +106,7 @@ messages:
     ClearSkies: You set the weather to clear skies for !price!
     DeviceOn: You activated this device for !price!
     DeviceOff: You deactivated this !price!
-    DeviceToggle: You toggled this device for !price!
+    Toggle: You toggled this device for !price!
     Device: You temporarily activated this device for !price!
     Heal: You healed yourself for !price!
     Repair: You repaired an item for !price!
@@ -108,6 +114,8 @@ messages:
     DeviceItem: You temporarily activated this device for !items!
     iSlot: You won !items!
     Enchant: Enchanted your item with !enchantments for !price!
+    iSellXP: Sold !xp XP for !price!
+    iBuyXP: Added !xp XP for !price!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -115,8 +123,8 @@ messages:
     DonateHand: \!customer donated !items to you!
     Slot: \!customer played a slot machine for !price and won !items!
     Redstone: \!customer activated your redstone device for !price!
-    iBuy: \!customer bought !items for !price from your infinite store!
-    iSell: \!customer sold !items to your infinite store!
+    iBuy: ""
+    iSell: ""
     gBuy: \!customer bought !items from your ghost store!
     gSell: \!customer sold !items to your ghost store!
     Day: \!customer set the time to day for !price!
@@ -125,14 +133,16 @@ messages:
     ClearSkies: \!customer set the weather to clear skies for !price!
     DeviceOn: \!customer activated your device for !price!
     DeviceOff: \!customer deactivated your device for !price!
-    DeviceToggle: \!customer toggled your device for !price!
+    Toggle: \!customer toggled your device for !price!
     Device: \!customer temporarily activated your device for !price!
     Heal: \!customer healed at your station for !price!
     Repair: \!customer repaired an item at your station for !price!
     Dispose: \!customer disposed of !items!
     DeviceItem: \!customer temporarily activated your device for !items!
-    iSlot: \!customer played an infinite slot machine for !price and won !items!
+    iSlot: ""
     Enchant: \!customer enchanted his item with !enchantments for !price!
+    iSellXP: ""
+    iBuyXP: ""
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
@@ -171,3 +181,4 @@ errors:
   enchanted_not_allowed: You are not allowed to repair enchanted items.
   enchantment_missing: At least one enchanted item is needed, please put one in the chest(s)!
   item_not_enchantable: The item in your hand is not enchantable!  
+  no_player_xp: You do not have enough XP to sell (!xp)!

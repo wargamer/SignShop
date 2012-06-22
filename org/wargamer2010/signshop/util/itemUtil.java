@@ -9,7 +9,6 @@ import org.bukkit.block.Sign;
 import org.bukkit.material.MaterialData;
 import org.bukkit.Material;
 import org.bukkit.material.SimpleAttachableMaterialData;
-import org.bukkit.inventory.InventoryHolder;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -68,34 +67,8 @@ public class itemUtil {
     
     public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
         ItemStack[] isChestItems = iiInventory.getContents();
-        ItemStack[] isBackup = new ItemStack[isChestItems.length];
-        ItemStack[] isBackupToTake = new ItemStack[isItemsToTake.length];
-        for(int i=0;i<isChestItems.length;i++){
-            if(isChestItems[i] != null){
-                isBackup[i] = new ItemStack(
-                    isChestItems[i].getType(),
-                    isChestItems[i].getAmount(),
-                    isChestItems[i].getDurability()
-                );
-                addSafeEnchantments(isBackup[i], isChestItems[i].getEnchantments());                
-                if(isChestItems[i].getData() != null){
-                    isBackup[i].setData(isChestItems[i].getData());
-                }
-            }
-        }
-        for(int i=0;i<isItemsToTake.length;i++){
-            if(isItemsToTake[i] != null){
-                isBackupToTake[i] = new ItemStack(
-                    isItemsToTake[i].getType(),
-                    isItemsToTake[i].getAmount(),
-                    isItemsToTake[i].getDurability()
-                );
-                addSafeEnchantments(isBackupToTake[i], isItemsToTake[i].getEnchantments());                
-                if(isItemsToTake[i].getData() != null){
-                    isBackupToTake[i].setData(isItemsToTake[i].getData());
-                }
-            }
-        }
+        ItemStack[] isBackup = getBackupItemStack(isChestItems);
+        ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);                
         HashMap<Integer, ItemStack> leftOver;
         if(bTakeOrGive)
             leftOver = iiInventory.removeItem(isBackupToTake);
@@ -179,8 +152,7 @@ public class itemUtil {
         HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
         HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
         String sItems = "";
-        Boolean first = true;
-        Boolean eFirst = true;
+        Boolean first = true;        
         Integer tempAmount = 0;
         for(ItemStack item: isStacks) {
             if(item == null)
@@ -264,20 +236,7 @@ public class itemUtil {
     }    
     
     public static HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
-        ItemStack[] isBackup = new ItemStack[isStacks.length];
-        for(int i = 0; i < isStacks.length; i++){
-            if(isStacks[i] != null){
-                isBackup[i] = new ItemStack(
-                    isStacks[i].getType(),
-                    isStacks[i].getAmount(),
-                    isStacks[i].getDurability()
-                );
-                addSafeEnchantments(isBackup[i], isStacks[i].getEnchantments());
-                if(isStacks[i].getData() != null){
-                    isBackup[i].setData(isStacks[i].getData());
-                }
-            }
-        }
+        ItemStack[] isBackup = getBackupItemStack(isStacks);
         HashMap<ItemStack, Integer> mReturn = new HashMap<ItemStack, Integer>();
         int tempAmount = 0;
         for(int i = 0; i < isBackup.length; i++) {
@@ -294,21 +253,26 @@ public class itemUtil {
         return mReturn;
     }
     
-    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake) {
-        ItemStack[] isBackup = new ItemStack[isItemsToTake.length];        
-        for(int i = 0; i < isItemsToTake.length; i++){
-            if(isItemsToTake[i] != null){
+    public static ItemStack[] getBackupItemStack(ItemStack[] isOriginal) {
+        ItemStack[] isBackup = new ItemStack[isOriginal.length];        
+        for(int i = 0; i < isOriginal.length; i++){
+            if(isOriginal[i] != null) {
                 isBackup[i] = new ItemStack(
-                    isItemsToTake[i].getType(),
-                    isItemsToTake[i].getAmount(),
-                    isItemsToTake[i].getDurability()
+                    isOriginal[i].getType(),
+                    isOriginal[i].getAmount(),
+                    isOriginal[i].getDurability()
                 );
-                itemUtil.addSafeEnchantments(isBackup[i], isItemsToTake[i].getEnchantments());                
-                if(isItemsToTake[i].getData() != null){
-                    isBackup[i].setData(isItemsToTake[i].getData());
+                itemUtil.addSafeEnchantments(isBackup[i], isOriginal[i].getEnchantments());                
+                if(isOriginal[i].getData() != null){
+                    isBackup[i].setData(isOriginal[i].getData());
                 }
             }
         }
+        return isBackup;
+    }
+    
+    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake) {
+        ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
         Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);

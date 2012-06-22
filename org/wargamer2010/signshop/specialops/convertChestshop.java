@@ -117,6 +117,8 @@ public class convertChestshop implements SignShopSpecialOp {
     }
     
     private Boolean emptySign(Block sign) {
+        if(!itemUtil.clickedSign(sign))
+            return false;
         String[] sLines = ((Sign) sign.getState()).getLines();
         for(int i = 0; i < 4; i++)
             if(!sLines[i].equals(""))
