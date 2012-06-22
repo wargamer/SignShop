@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.Location;
+import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -104,6 +105,12 @@ public class signshopUtil {
     
     public static String convertLocationToString(Location loc) {
         return (loc.getBlockX() + "/" + loc.getBlockY() + "/" + loc.getBlockZ());
+    }
+    
+    public static Float getXPFromThirdLine(Block bSign) {
+        Sign sign = (Sign)bSign.getState();
+        String XPline = sign.getLines()[2];
+        return economyUtil.parsePrice(XPline);
     }
    
 }

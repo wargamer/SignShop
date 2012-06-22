@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.util;
 
+import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.Vault;
 
 public class economyUtil {
@@ -11,6 +12,7 @@ public class economyUtil {
     }
     
     public static float parsePrice(String priceline) {
+        priceline = ChatColor.stripColor(priceline);
         String sPrice = "";
         float fPrice = 0.0f;
         for(int i = 0; i < priceline.length(); i++)

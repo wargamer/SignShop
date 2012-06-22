@@ -45,7 +45,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.ssPlayer.getPlayer() == null)
-            return true;
+            return true;        
         Player player = ssArgs.ssPlayer.getPlayer();
         InventoryHolder Holder = (InventoryHolder)ssArgs.containables.get(0).getState();        
         HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), Holder.getInventory(), ssArgs.isItems, false);        

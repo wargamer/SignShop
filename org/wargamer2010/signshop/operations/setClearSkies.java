@@ -13,20 +13,20 @@ public class setClearSkies implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         World world = ssArgs.ssPlayer.getPlayer().getWorld();
-        if(world.hasStorm() && world.isThundering()) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("already_raining"));
+        if(!world.hasStorm() && !world.isThundering()) {
+            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("already_clear_skies"));
             return false;
-        }                
-        return true;
+        }
+        return true;        
     }
     
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {
+    public Boolean runOperation(SignShopArguments ssArgs) {        
         World world = ssArgs.ssPlayer.getPlayer().getWorld();
-        world.setStorm(true);
-        world.setThundering(true);
+        world.setStorm(false);
+        world.setThundering(false);
 
-        SignShopPlayer.broadcastMsg(world,SignShop.Errors.get("made_rain").replace("!player",ssArgs.ssPlayer.getPlayer().getDisplayName()));
+        SignShopPlayer.broadcastMsg(world,SignShop.Errors.get("made_clear_skies").replace("!player",ssArgs.ssPlayer.getPlayer().getDisplayName()));
         return true;
     }
 }

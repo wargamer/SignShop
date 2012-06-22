@@ -141,7 +141,7 @@ public class SignShopPlayer {
                     isBackup[i].setData(isItemsToTake[i].getData());
                 }
             }
-        }
+        }        
         ssPlayer.getInventory().removeItem(isBackup);
     }
     

@@ -11,6 +11,8 @@ public class takeOwnerMoney implements SignShopOperation {
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+        if(ssArgs.ssPlayer.getPlayer() == null)
+            return true;
         Float fPricemod = ssArgs.ssPlayer.getPlayerPricemod(ssArgs.sOperation, false);
         Float fPrice = (ssArgs.fPrice * fPricemod);
         if(!ssArgs.ssOwner.hasMoney(fPrice)) {

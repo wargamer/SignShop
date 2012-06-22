@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
+import org.wargamer2010.signshop.util.itemUtil;
 
 public class Seller {        
     private List<Block> containables = new ArrayList();
@@ -20,7 +21,7 @@ public class Seller {
         owner = sPlayer;
         world = sWorld;
 
-        isItems = isChestItems;        
+        isItems = itemUtil.getBackupItemStack(isChestItems);
         containables = pContainables;
         activatables = pActivatables;
         if(pMiscProps != null)
@@ -32,7 +33,7 @@ public class Seller {
     }
     
     public ItemStack[] getItems() {        
-        return isItems;
+        return itemUtil.getBackupItemStack(isItems);
     }
     
     public List<Block> getContainables() {
