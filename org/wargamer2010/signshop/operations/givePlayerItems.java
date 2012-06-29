@@ -11,14 +11,14 @@ import java.util.ArrayList;
 public class givePlayerItems implements SignShopOperation {    
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.containables.isEmpty()) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("chest_missing"));
+        if(ssArgs.get_containables().isEmpty()) {
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("chest_missing"));
             return false;
         }
         List<ItemStack> tempItems = new ArrayList<ItemStack>();
         ItemStack[] isTotalItems = null;
         
-        for(Block bHolder : ssArgs.containables) {
+        for(Block bHolder : ssArgs.get_containables()) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
                 for(ItemStack item : Holder.getInventory().getContents()) {
@@ -31,29 +31,31 @@ public class givePlayerItems implements SignShopOperation {
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
         if(isTotalItems.length == 0) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("chest_empty"));
             return false;
         }
-        ssArgs.isItems = isTotalItems;
-        ssArgs.sItems = itemUtil.itemStackToString(isTotalItems);
+        ssArgs.set_isItems(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.ssPlayer.getPlayer() == null)
+        if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
-        if(!itemUtil.isStockOK(ssArgs.ssPlayer.getPlayer().getInventory(), ssArgs.isItems, false)) {                        
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("player_overstocked"));
-            return false;
+        if(ssArgs.operationParameters.isEmpty() || !ssArgs.operationParameters.get(0).equals("ignorefull")) {
+            if(!itemUtil.isStockOK(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), false)) {                        
+                ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("player_overstocked"));
+                return false;
+            }
         }
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
     
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {
-        ItemStack[] isItems = (ssArgs.special.bActive && ssArgs.special.props.isItems != null ? ssArgs.special.props.isItems : ssArgs.isItems);
-        ssArgs.ssPlayer.givePlayerItems(isItems);
+    public Boolean runOperation(SignShopArguments ssArgs) {        
+        ssArgs.get_ssPlayer().givePlayerItems(ssArgs.get_isItems());
         return true;
     }
 }

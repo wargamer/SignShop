@@ -7,19 +7,19 @@ import org.bukkit.block.Block;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class takeShopItems implements SignShopOperation {  
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.containables.isEmpty()) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("chest_missing"));
+        if(ssArgs.get_containables().isEmpty()) {
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("chest_missing"));
             return false;
         }
-        List<ItemStack> tempItems = new ArrayList<ItemStack>();
+        List<ItemStack> tempItems = new LinkedList<ItemStack>();
         ItemStack[] isTotalItems = null;        
         
-        for(Block bHolder : ssArgs.containables) {
+        for(Block bHolder : ssArgs.get_containables()) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
                 for(ItemStack item : Holder.getInventory().getContents()) {
@@ -32,63 +32,59 @@ public class takeShopItems implements SignShopOperation {
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
         if(isTotalItems.length == 0) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("chest_empty"));
             return false;
         }
-        ssArgs.isItems = isTotalItems;
-        ssArgs.sItems = itemUtil.itemStackToString(isTotalItems);
+        ssArgs.set_isItems(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
     
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {   
-        Boolean singleStock = (ssArgs.special.bActive && ssArgs.special.props.isItems != null);            
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {           
         Boolean bStockOK = false;
-        for(int i = 0; i< ssArgs.containables.size(); i++) {
-            InventoryHolder Holder = (InventoryHolder)ssArgs.containables.get(i).getState();
-            if((!singleStock && itemUtil.isStockOK(Holder.getInventory(), ssArgs.isItems, true))
-                    || (singleStock && itemUtil.singeAmountStockOK(Holder.getInventory(), ssArgs.isItems, true)))
+        for(int i = 0; i< ssArgs.get_containables().size(); i++) {
+            InventoryHolder Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
+            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true))
                 bStockOK = true;
-        }
+        }        
         if(!bStockOK)
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("out_of_stock"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("out_of_stock"));
         if(!bStockOK && activeCheck)
-            itemUtil.updateStockStatus(ssArgs.bSign, ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
         else if(activeCheck)
-            itemUtil.updateStockStatus(ssArgs.bSign, ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_BLUE);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return bStockOK;
     }
     
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {
-        ItemStack[] isItems = (ssArgs.special.bActive && ssArgs.special.props.isItems != null ? ssArgs.special.props.isItems : ssArgs.isItems);
-        Boolean singleStock = (ssArgs.special.bActive && ssArgs.special.props.isItems != null);        
+    public Boolean runOperation(SignShopArguments ssArgs) {        
         Boolean bStockOK = false;
         InventoryHolder Holder = null;
         
-        for(int i = 0; i< ssArgs.containables.size(); i++) {            
-            Holder = (InventoryHolder)ssArgs.containables.get(i).getState();
-            if((!singleStock && itemUtil.isStockOK(Holder.getInventory(), ssArgs.isItems, true))
-                    || (singleStock && itemUtil.singeAmountStockOK(Holder.getInventory(), ssArgs.isItems, true))) {
+        for(int i = 0; i< ssArgs.get_containables().size(); i++) {            
+            Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
+            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true)) {
                 bStockOK = true;
                 break;              
             }
         }
         if(!bStockOK)
             return false;
-        Holder.getInventory().removeItem(isItems); bStockOK = false;
-        for(int i = 0; i< ssArgs.containables.size(); i++) {            
-            Holder = (InventoryHolder)ssArgs.containables.get(i).getState();
-            if((!singleStock && itemUtil.isStockOK(Holder.getInventory(), ssArgs.isItems, true))
-                    || (singleStock && itemUtil.singeAmountStockOK(Holder.getInventory(), ssArgs.isItems, true))) {
+        Holder.getInventory().removeItem(ssArgs.get_isItems()); bStockOK = false;
+        for(int i = 0; i< ssArgs.get_containables().size(); i++) {            
+            Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
+            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true)) {
                 bStockOK = true;
                 break;
             }
         }
         if(!bStockOK)
-            itemUtil.updateStockStatus(ssArgs.bSign, ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
         else
-            itemUtil.updateStockStatus(ssArgs.bSign, ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_BLUE);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;        
     }
 }

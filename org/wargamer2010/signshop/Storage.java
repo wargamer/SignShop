@@ -15,7 +15,7 @@ import org.bukkit.inventory.InventoryHolder;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
@@ -31,7 +31,7 @@ public class Storage{
     private File ymlfile;
 
     private static Map<Location,Seller> sellers;
-    private String itemSeperator = "&";
+    public static String itemSeperator = "&";
     
     private Boolean safetosave = true;
 
@@ -96,7 +96,7 @@ public class Storage{
         for(Map.Entry<String,HashMap<String,List>> shopSettings : tempSellers.entrySet())
         {            
             HashMap<String,List> sellerSettings = shopSettings.getValue();
-            List<String> tempList = new ArrayList();
+            List<String> tempList = new LinkedList();
             try {
                 tempList = getSetting(sellerSettings, "shopworld");
                 if(tempList.isEmpty())
@@ -112,12 +112,12 @@ public class Storage{
                 if(tempList.isEmpty())
                     throw storageex;
                 World world = Bukkit.getServer().getWorld(seller_shopworld);
-                seller_sign = world.getBlockAt(convertStringToLocation(tempList.get(0), world));
+                seller_sign = world.getBlockAt(signshopUtil.convertStringToLocation(tempList.get(0), world));
                 if(!itemUtil.clickedSign(seller_sign))
                     throw storageex;
                 seller_activatables = getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
                 seller_containables = getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
-                seller_items = convertStringtoItemStacks(getSetting(sellerSettings, "items"));
+                seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
                 miscsettings = new HashMap<String, String>();
                 if(sellerSettings.containsKey("misc")) {
                     for(String miscsetting : (List<String>)sellerSettings.get("misc")) {
@@ -167,11 +167,11 @@ public class Storage{
         String[] sSignLocation;        
         Block bChest;
         ItemStack[] isItems;
-        ArrayList<Integer> items;
-        ArrayList<Integer> amounts;
-        ArrayList<String> datas;
-        ArrayList<Integer> durabilities;
-        ArrayList<String> enchantments;
+        LinkedList<Integer> items;
+        LinkedList<Integer> amounts;
+        LinkedList<String> datas;
+        LinkedList<Integer> durabilities;
+        LinkedList<String> enchantments;
         boolean invalidShop;
         boolean needToSave = false;
         for(String sKey : tempSellers.keySet()){
@@ -229,11 +229,11 @@ public class Storage{
                 (Integer) tempSeller.get("chesty"),
                 (Integer) tempSeller.get("chestz"));
 
-            datas = (ArrayList<String>) tempSeller.get("datas");
-            items = (ArrayList<Integer>) tempSeller.get("items");
-            amounts = (ArrayList<Integer>) tempSeller.get("amounts");
-            durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
-            enchantments = (ArrayList<String>) tempSeller.get("enchantments");
+            datas = (LinkedList<String>) tempSeller.get("datas");
+            items = (LinkedList<Integer>) tempSeller.get("items");
+            amounts = (LinkedList<Integer>) tempSeller.get("amounts");
+            durabilities = (LinkedList<Integer>) tempSeller.get("durabilities");
+            enchantments = (LinkedList<String>) tempSeller.get("enchantments");
             
             isItems = new ItemStack[items.size()];
 
@@ -249,8 +249,8 @@ public class Storage{
                 if(enchantments != null && enchantments.get(i) != null)
                     itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));                    
             }
-            List<Block> seller_containables = new ArrayList();
-            List<Block> seller_activatables = new ArrayList();
+            List<Block> seller_containables = new LinkedList();
+            List<Block> seller_activatables = new LinkedList();
             if(bChest.getState() instanceof InventoryHolder)
                 seller_containables.add(bChest);
             else
@@ -274,9 +274,8 @@ public class Storage{
 
             seller = sellers.get(lKey);
             temp.put("shopworld", seller.getWorld());
-            temp.put("owner", seller.getOwner());
-            
-            temp.put("items", convertItemStacksToString(seller.getItems()));
+            temp.put("owner", seller.getOwner());            
+            temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));
             
             List<Block> containables = seller.getContainables();
             String[] sContainables = new String[containables.size()];
@@ -321,6 +320,7 @@ public class Storage{
 
     public void removeSeller(Location lKey){
         if(Storage.sellers.containsKey(lKey)){
+            Storage.sellers.get(lKey).cleanUp();
             Storage.sellers.remove(lKey);
             this.Save();
         }
@@ -345,7 +345,7 @@ public class Storage{
     }
     
     public List<Block> getSignsFromHolder(Block bHolder) {
-        List<Block> signs = new ArrayList();
+        List<Block> signs = new LinkedList();
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
             if(entry.getValue().getContainables().contains(bHolder))
                 signs.add(Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey()));            
@@ -379,66 +379,17 @@ public class Storage{
     }
         
     private List<Block> getBlocksFromLocStringList(List<String> sLocs, World world) {
-        List<Block> blocklist = new ArrayList();
+        List<Block> blocklist = new LinkedList();
         for(String loc : sLocs) {
-            Location temp = convertStringToLocation(loc, world);
+            Location temp = signshopUtil.convertStringToLocation(loc, world);
             if(temp != null)
                 blocklist.add(world.getBlockAt(temp));
         }
         return blocklist;
     }
     
-    private Location convertStringToLocation(String sLoc, World world) {
-        String[] sCoords = sLoc.split("/");
-        if(sCoords.length < 3)
-            return null;
-        try {
-            Location loc = new Location(world, Double.parseDouble(sCoords[0]), Double.parseDouble(sCoords[1]), Double.parseDouble(sCoords[2]));
-            return loc;
-        } catch(NumberFormatException ex) {
-            return null;
-        }
-    }
-    
-    private ItemStack[] convertStringtoItemStacks(List<String> sItems) {
-        ItemStack isItems[] = new ItemStack[sItems.size()];
-        for(int i = 0; i < sItems.size(); i++) {
-            try {
-                String[] sItemprops = sItems.get(i).split(itemSeperator);                
-                if(sItemprops.length < 4)
-                    continue;
-                isItems[i] = new ItemStack(                        
-                        Integer.parseInt(sItemprops[1]),
-                        Integer.parseInt(sItemprops[0]),
-                        Short.parseShort(sItemprops[2])
-                );
-                isItems[i].getData().setData(new Byte(sItemprops[3]));
-                if(sItemprops.length > 4)
-                    isItems[i].addEnchantments(signshopUtil.convertStringToEnchantments(sItemprops[4]));
-            } catch(Exception ex) {                
-                continue;
-            }
-        }
-        return isItems;
-    }
-    
-    private String[] convertItemStacksToString(ItemStack[] isItems) {
-        String sItems[] = new String[isItems.length];        
-        ItemStack isCurrent = null;
-        for(int i = 0; i < isItems.length; i++) {
-            isCurrent = isItems[i];
-            sItems[i] = (isCurrent.getAmount() + itemSeperator 
-                        + isCurrent.getTypeId() + itemSeperator 
-                        + isCurrent.getDurability() + itemSeperator 
-                        + isCurrent.getData().getData() + itemSeperator
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()));
-        }
-        return sItems;
-    }
-    
-    
     private List<String> MapToList(Map<String, String> map) {
-        List<String> returnList = new ArrayList<String>();
+        List<String> returnList = new LinkedList<String>();
         for(Map.Entry<String, String> entry : map.entrySet())
             returnList.add(entry.getKey() + ":" + entry.getValue());
         return returnList;

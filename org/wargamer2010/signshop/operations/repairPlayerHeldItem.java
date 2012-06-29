@@ -11,18 +11,18 @@ public class repairPlayerHeldItem implements SignShopOperation {
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        ItemStack isInHand = ssArgs.ssPlayer.getPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
         if(isInHand == null) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("no_item_to_repair"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("no_item_to_repair"));
             return false;
         } else if(isInHand.getType().getMaxDurability() < 30) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("invalid_item_to_repair"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("invalid_item_to_repair"));
             return false;
-        } else if(isInHand.getEnchantments().size() > 0 && !SignShop.getAllowEnchantedRepair() && !ssArgs.ssPlayer.hasPerm("SignShop.ignorerepair", false)) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("enchanted_not_allowed"));
+        } else if(isInHand.getEnchantments().size() > 0 && !SignShop.getAllowEnchantedRepair() && !ssArgs.get_ssPlayer().hasPerm("SignShop.ignorerepair", false)) {
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("enchanted_not_allowed"));
             return false;
         } else if(isInHand.getDurability() == 0) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("item_already_repair"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("item_already_repair"));
             return false;
         }
         return true;
@@ -30,7 +30,7 @@ public class repairPlayerHeldItem implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.ssPlayer.getPlayer().getItemInHand().setDurability((short) 0);        
+        ssArgs.get_ssPlayer().getPlayer().getItemInHand().setDurability((short) 0);        
         return true;
     }
 }

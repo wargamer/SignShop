@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.block.Sign;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
+import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.wargamer2010.signshop.SignShop;
@@ -53,18 +54,16 @@ public class copySign implements SignShopSpecialOp {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
                     return false;
                 }
-                List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);            
-                if(SignShopOperations == null) {
-                    ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
+                Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
+                if(SignShopOperations == null)
                     return false;
-                }
-                
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sToChange[3]), null, seller.getContainables(), seller.getActivatables(), 
                         ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());
                 
                 Boolean bSetupOK = false;
-                for(SignShopOperation ssOperation : SignShopOperations) {
-                    bSetupOK = ssOperation.setupOperation(ssArgs);
+                for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
+                    ssArgs.operationParameters = ssOperation.getValue();
+                    bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return false;
                 }

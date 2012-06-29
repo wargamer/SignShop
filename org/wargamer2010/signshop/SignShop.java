@@ -13,8 +13,12 @@ import org.bukkit.Material;
 import java.util.HashMap;
 import java.io.IOException;
 import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.FileOutputStream;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Map;
+import java.util.LinkedList;
 import java.util.Arrays;
 import java.util.logging.*;
 import java.util.Date;
@@ -24,9 +28,10 @@ import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShop extends JavaPlugin{
-    private final SignShopPlayerListener playerListener = new SignShopPlayerListener(this);
+    private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
     private static SignShop instance;
 
@@ -46,14 +51,14 @@ public class SignShop extends JavaPlugin{
 
     //Statics
     public static Storage Storage;
-    public static HashMap<String,List<String>> Operations;
-    public static HashMap<String,HashMap<String,String>> Messages;
-    public static HashMap<String,String> Errors;
-    public static HashMap<String,HashMap<String,Float>> PriceMultipliers;
-    public static HashMap<String,List> Commands;
-    public static HashMap<String,Integer> ShopLimits;
-    public static List<Material> LinkableMaterials = new ArrayList();
-    public static List<String> SpecialsOps = new ArrayList();
+    public static Map<String,List<String>> Operations;
+    public static Map<String,HashMap<String,String>> Messages;
+    public static Map<String,String> Errors;
+    public static Map<String,HashMap<String,Float>> PriceMultipliers;
+    public static Map<String,List> Commands;
+    public static Map<String,Integer> ShopLimits;
+    public static List<Material> LinkableMaterials = new LinkedList();
+    public static List<String> SpecialsOps = new LinkedList();
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -142,6 +147,7 @@ public class SignShop extends JavaPlugin{
         setupHooks();
         setupLinkables();
         setupSpecialsOps();
+        copyPDF();
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();
@@ -246,11 +252,14 @@ public class SignShop extends JavaPlugin{
         HookManager.addHook("LWC");
         HookManager.addHook("Lockette");
         HookManager.addHook("WorldGuard");
+        HookManager.addHook("Deadbolt");
     }
     
     private void setupSpecialsOps() {
         SpecialsOps.add("convertChestshop");
         SpecialsOps.add("copySign");
+        if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
+            SpecialsOps.add("linkShowcase");
     }
     
     private void setupOperations() {
@@ -258,16 +267,18 @@ public class SignShop extends JavaPlugin{
         
         HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
 
-        List<String> tempSignOperationString = new ArrayList();
-        List<String> tempCheckedSignOperation = new ArrayList();
+        List<String> tempSignOperationString = new LinkedList();
+        List<String> tempCheckedSignOperation = new LinkedList();
         Boolean failedOp = false;
         
         for(String sKey : tempSignOperations.keySet()){
             tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));            
             if(tempSignOperationString.size() > 0) {
                 for(int i = 0; i < tempSignOperationString.size(); i++) {
+                    List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
+                    String op = bits.get(0);                    
                     try {                        
-                        Class.forName("org.wargamer2010.signshop.operations."+(tempSignOperationString.get(i)).trim());
+                        Class.forName("org.wargamer2010.signshop.operations."+(op.trim()));
                         tempCheckedSignOperation.add(tempSignOperationString.get(i).trim());
                     } catch(ClassNotFoundException notfound) {
                         failedOp = true;
@@ -276,7 +287,7 @@ public class SignShop extends JavaPlugin{
                 }
                 if(!failedOp && !tempCheckedSignOperation.isEmpty())
                     SignShop.Operations.put(sKey, tempCheckedSignOperation);                
-                tempCheckedSignOperation = new ArrayList();
+                tempCheckedSignOperation = new LinkedList();
                 failedOp = false;
             }
         }
@@ -288,6 +299,34 @@ public class SignShop extends JavaPlugin{
         LinkableMaterials.add(Material.SIGN);
         LinkableMaterials.add(Material.SIGN_POST);
         LinkableMaterials.add(Material.WALL_SIGN);
+        LinkableMaterials.add(Material.WOOD_PLATE);
+        LinkableMaterials.add(Material.STEP);        
+    }
+    
+    private void copyPDF() {
+        InputStream in = getClass().getResourceAsStream("/SSQuickReference.pdf");
+        File file = new File(this.getDataFolder(), "SSQuickReference.pdf");        
+        if(file.exists())
+            if(!file.delete())
+                return;
+        try {
+            file.createNewFile();
+
+            OutputStream os = new FileOutputStream(file.getPath());
+            byte[] buffer = new byte[4096];
+            int bytesRead;
+            while ((bytesRead = in.read(buffer)) != -1) {
+              os.write(buffer, 0, bytesRead);
+            }
+            in.close();
+            os.close();
+        } catch(java.io.FileNotFoundException notfoundex) {
+            return;
+        } catch(java.io.IOException ioex) {
+            return;
+        } catch(NullPointerException nullex) {
+            return;
+        }
     }
         
     public static int getMaxSellDistance() {

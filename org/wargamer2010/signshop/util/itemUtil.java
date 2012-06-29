@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.Storage;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 
@@ -41,9 +42,9 @@ public class itemUtil {
         discs.put(2266, "11 Disc");
     }
     
-    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {        
+    public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
         List<ItemStack> items = new ArrayList<ItemStack>();
-        for(ItemStack item: isItemsToTake) {
+        for(ItemStack item: isItems) {
             ItemStack isBackup = new ItemStack(
                 item.getType(),
                 1,
@@ -62,7 +63,11 @@ public class itemUtil {
             isBackupToTake[i] = entry;
             i++;
         }
-        return isStockOK(iiInventory, isBackupToTake, bTakeOrGive);
+        return isBackupToTake;
+    }
+    
+    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {                
+        return isStockOK(iiInventory, getSingleAmount(isItemsToTake), bTakeOrGive);
     }
     
     public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
@@ -343,13 +348,14 @@ public class itemUtil {
                     if(!SignShop.Operations.containsKey(signshopUtil.getOperation(sLines[0])))
                         continue;
                     List operation = SignShop.Operations.get(signshopUtil.getOperation(sLines[0]));
-                    List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);
+                    Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
                     if(SignShopOperations == null)
                         return;
                     SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
                                                                         null, null, temp, signshopUtil.getOperation(sLines[0]), null);
-                    for(SignShopOperation ssOperation : SignShopOperations) {
-                        if(!ssOperation.checkRequirements(ssArgs, false)) {
+                    for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
+                        ssArgs.operationParameters = ssOperation.getValue();
+                        if(!ssOperation.getKey().checkRequirements(ssArgs, false)) {
                             itemUtil.setSignStatus(temp, ChatColor.DARK_RED);                            
                             return;
                         }
@@ -375,5 +381,47 @@ public class itemUtil {
             return true;
         else
             return false;
+    }
+    
+    public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
+        ItemStack isItems[] = new ItemStack[sItems.size()];
+        for(int i = 0; i < sItems.size(); i++) {
+            try {
+                String[] sItemprops = sItems.get(i).split(Storage.itemSeperator);
+                if(sItemprops.length < 4)
+                    continue;
+                isItems[i] = new ItemStack(                        
+                        Integer.parseInt(sItemprops[1]),
+                        Integer.parseInt(sItemprops[0]),
+                        Short.parseShort(sItemprops[2])
+                );
+                isItems[i].getData().setData(new Byte(sItemprops[3]));
+                if(sItemprops.length > 4)
+                    isItems[i].addEnchantments(signshopUtil.convertStringToEnchantments(sItemprops[4]));
+            } catch(Exception ex) {                              
+                continue;
+            }
+        }        
+        return isItems;
+    }
+    
+    public static String[] convertItemStacksToString(ItemStack[] isItems) {        
+        List<String> sItems = new ArrayList();
+                
+        ItemStack isCurrent = null;
+        for(int i = 0; i < isItems.length; i++) {
+            if(isItems[i] != null) {
+                isCurrent = isItems[i];
+                sItems.add((isCurrent.getAmount() + SignShop.Storage.itemSeperator 
+                        + isCurrent.getTypeId() + SignShop.Storage.itemSeperator  
+                        + isCurrent.getDurability() + SignShop.Storage.itemSeperator  
+                        + isCurrent.getData().getData() + SignShop.Storage.itemSeperator 
+                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments())));
+            }
+            
+        }
+        String[] items = new String[sItems.size()];
+        sItems.toArray(items);
+        return items;
     }
 }

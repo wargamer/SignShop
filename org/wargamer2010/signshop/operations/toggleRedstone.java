@@ -12,11 +12,11 @@ public class toggleRedstone implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         Boolean foundLever = false;
-        for(Block block : ssArgs.activatables)
+        for(Block block : ssArgs.get_activatables())
             if(block.getType() == Material.LEVER)
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("lever_missing"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("lever_missing"));
             return false;
         }
         return true;
@@ -31,8 +31,8 @@ public class toggleRedstone implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         Block bLever = null;
         
-        for(int i = 0; i < ssArgs.activatables.size(); i++) {
-            bLever = ssArgs.activatables.get(i);
+        for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
+            bLever = ssArgs.get_activatables().get(i);
             if(bLever.getType() == Material.LEVER) {
                 BlockState state = bLever.getState();
                 MaterialData data = state.getData();                                        
@@ -43,7 +43,7 @@ public class toggleRedstone implements SignShopOperation {
                     lever.setPowered(false);
                 state.setData(lever);
                 state.update();
-                signshopUtil.generateInteractEvent(bLever, ssArgs.ssPlayer.getPlayer(), ssArgs.bfBlockFace);
+                signshopUtil.generateInteractEvent(bLever, ssArgs.get_ssPlayer().getPlayer(), ssArgs.get_bfBlockFace());
             }
         }
 

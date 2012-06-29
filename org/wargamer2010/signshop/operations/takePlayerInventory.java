@@ -13,7 +13,7 @@ public class takePlayerInventory implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {                
-        ssArgs.ssPlayer.getPlayer().getInventory().clear();        
+        ssArgs.get_ssPlayer().getPlayer().getInventory().clear();        
         return true;
     }
 }
