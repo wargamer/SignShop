@@ -10,10 +10,10 @@ public class healPlayer implements SignShopOperation {
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.ssPlayer.getPlayer() == null)
+        if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
-        if(ssArgs.ssPlayer.getPlayer().getHealth() >= 20) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("already_full_health"));
+        if(ssArgs.get_ssPlayer().getPlayer().getHealth() >= 20) {
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("already_full_health"));
             return false;
         }
         return true;
@@ -21,7 +21,7 @@ public class healPlayer implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.ssPlayer.getPlayer().setHealth(20);
+        ssArgs.get_ssPlayer().getPlayer().setHealth(20);
         return true;
     }
 }

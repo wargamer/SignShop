@@ -13,24 +13,26 @@ public class takeItemInHand implements SignShopOperation {
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.ssPlayer.getPlayer() == null)
+        if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
-        if(ssArgs.ssPlayer.getPlayer().getItemInHand() == null || ssArgs.ssPlayer.getPlayer().getItemInHand().getType() == Material.AIR) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("no_item_in_hand"));
+        if(ssArgs.get_ssPlayer().getPlayer().getItemInHand() == null) {
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("no_item_in_hand"));
             return false;
         } else {
-            ssArgs.isItems = new ItemStack[1];
-            ssArgs.isItems[0] = ssArgs.ssPlayer.getPlayer().getItemInHand();
-            ssArgs.sItems = itemUtil.itemStackToString(ssArgs.isItems);
-        }        
+            ItemStack[] isItems = new ItemStack[1];            
+            isItems[0] = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+            ssArgs.set_isItems(isItems);
+            ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));            
+        }
         return true;
     }
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.isItems = new ItemStack[1];
-        ssArgs.isItems[0] = ssArgs.ssPlayer.getPlayer().getItemInHand();
-        ssArgs.ssPlayer.takePlayerItems(ssArgs.isItems);
+        ItemStack[] isItems = new ItemStack[1];            
+        isItems[0] = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+        ssArgs.set_isItems(isItems);
+        ssArgs.get_ssPlayer().takePlayerItems(ssArgs.get_isItems());
         return true;
     }
 }

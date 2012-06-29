@@ -2,15 +2,19 @@ package org.wargamer2010.signshop;
 
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
-import java.util.ArrayList;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 import org.wargamer2010.signshop.util.itemUtil;
+import com.miykeal.showCaseStandalone.*;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {        
-    private List<Block> containables = new ArrayList();
-    private List<Block> activatables = new ArrayList();
+    private List<Block> containables = new LinkedList();
+    private List<Block> activatables = new LinkedList();
     private ItemStack[] isItems;
     private Map<String, String> miscProps = new HashMap<String, String>();
     
@@ -54,5 +58,22 @@ public class Seller {
     
     public Map<String, String> getMisc() {
         return miscProps;
+    }
+    
+    public void cleanUp() {
+        if(miscProps.containsKey("showcaselocation")) {
+            if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
+                return;
+            Location loc = signshopUtil.convertStringToLocation(miscProps.get("showcaselocation"), Bukkit.getWorld(world));
+            ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
+            com.miykeal.showCaseStandalone.Shops.Shop shop = null;
+            try {
+                shop = scs.getShopHandler().getShopForBlock(Bukkit.getWorld(world).getBlockAt(loc));
+            } catch(Exception ex) {
+                return;
+            }
+            if(shop != null)
+                scs.getShopHandler().removeShop(shop);
+        }
     }
 }

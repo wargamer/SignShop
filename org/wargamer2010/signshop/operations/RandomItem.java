@@ -11,20 +11,17 @@ public class RandomItem implements SignShopOperation {
     }
     
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {                
-        ssArgs.special.activate(ssArgs);
-        if(ssArgs.special.props.isItems == null)
-            ssArgs.special.props.isItems = new ItemStack[1];
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {                                
+        ssArgs.set_isItems(itemUtil.getSingleAmount(ssArgs.get_isItems()));
         return true;
     }
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {                
-        ItemStack isRandom = ssArgs.isItems[(new Random()).nextInt(ssArgs.isItems.length)];
-        ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;                
-        ssArgs.special.activate(ssArgs);
-        ssArgs.special.props.isItems = isRandoms;
-        ssArgs.special.props.sItems = itemUtil.itemStackToString(isRandoms);
+        ItemStack isRandom = ssArgs.get_isItems()[(new Random()).nextInt(ssArgs.get_isItems().length)];
+        ItemStack isRandoms[] = new ItemStack[1]; isRandoms[0] = isRandom;                        
+        ssArgs.set_isItems(isRandoms);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
 }

@@ -17,9 +17,9 @@ public class setDayTime implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        World world = ssArgs.ssPlayer.getPlayer().getWorld();
+        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
         world.setTime(0);        
-        SignShopPlayer.broadcastMsg(world, SignShop.Errors.get("made_day").replace("!player", ssArgs.ssPlayer.getPlayer().getDisplayName()));
+        SignShopPlayer.broadcastMsg(world, SignShop.Errors.get("made_day").replace("!player", ssArgs.get_ssPlayer().getPlayer().getDisplayName()));
         return true;
     }
 }

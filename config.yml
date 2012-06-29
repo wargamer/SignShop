@@ -1,3 +1,6 @@
+# If you need help with this config, view the SignShop Quick reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
 TransactionLog: false
@@ -7,8 +10,6 @@ AllowEnchantedRepair: true
 DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
 EnableSignStacking: false
-
-
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -29,12 +30,14 @@ signs:
   Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
   Heal: takePlayerMoney,healPlayer,playerIsOp
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
-  Dispose: takeItemInHand  
+  Dispose: takeItemInHand
   DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
   iSlot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems
   Enchant: enchantItemInHand,takePlayerMoney
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
+  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems
+  TpToOwner: takePlayerMoney,playerIsOp
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -62,6 +65,8 @@ messages:
     Enchant: You have setup an Enchanter that costs !price and enchants with !enchantments!
     iSellXP: You have put a bounty of !price for !xp XP
     iBuyXP: You have put !xp XP for sale at a price of !price!
+    iTrade: You have setup a trade shop that costs !chest1 for !chest2!
+    TpToOwner: You have setup a command example shop, selling teleports to !owner for !price!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -89,6 +94,8 @@ messages:
     Enchant: Enchant your item with !enchantments for !price?
     iSellXP: Sell !xp XP for !price?
     iBuyXP: Buy !xp XP for !price?
+    iTrade: Buy !chest2 with !chest1?
+    TpToOwner: Teleport to !owner for !price?
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -116,6 +123,8 @@ messages:
     Enchant: Enchanted your item with !enchantments for !price!
     iSellXP: Sold !xp XP for !price!
     iBuyXP: Added !xp XP for !price!
+    iTrade: Traded !chest1 for !chest2!
+    TpToOwner: You teleported to !owner for !price!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -123,8 +132,8 @@ messages:
     DonateHand: \!customer donated !items to you!
     Slot: \!customer played a slot machine for !price and won !items!
     Redstone: \!customer activated your redstone device for !price!
-    iBuy: ""
-    iSell: ""
+    iBuy: ''
+    iSell: ''
     gBuy: \!customer bought !items from your ghost store!
     gSell: \!customer sold !items to your ghost store!
     Day: \!customer set the time to day for !price!
@@ -139,10 +148,12 @@ messages:
     Repair: \!customer repaired an item at your station for !price!
     Dispose: \!customer disposed of !items!
     DeviceItem: \!customer temporarily activated your device for !items!
-    iSlot: ""
+    iSlot: ''
     Enchant: \!customer enchanted his item with !enchantments for !price!
-    iSellXP: ""
-    iBuyXP: ""
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    TpToOwner: \!customer teleported to you for !price!
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
@@ -180,5 +191,19 @@ errors:
   too_many_shops: You have reached the maximum amount of shops allowed. Maximum is !max.
   enchanted_not_allowed: You are not allowed to repair enchanted items.
   enchantment_missing: At least one enchanted item is needed, please put one in the chest(s)!
-  item_not_enchantable: The item in your hand is not enchantable!  
+  item_not_enchantable: The item in your hand is not enchantable!
   no_player_xp: You do not have enough XP to sell (!xp)!
+  no_item_to_disenchant: You need to be holding the item you want to disenchant!
+  nothing_to_disenchant: That item can not be disenchanted!
+commands:
+  TpToOwner:
+  - tp !player !owner
+pricemultipliers:
+  VIPEx:
+    iBuy: 0.7
+    iSell: 1.2
+  BlacksmithEx:
+    Repair: 0.5
+limits:
+  DefaultEx: 5
+  MemberEx: 10

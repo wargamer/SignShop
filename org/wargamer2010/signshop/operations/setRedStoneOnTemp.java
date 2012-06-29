@@ -14,11 +14,11 @@ public class setRedStoneOnTemp implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         Boolean foundLever = false;
-        for(Block block : ssArgs.activatables)
+        for(Block block : ssArgs.get_activatables())
             if(block.getType() == Material.LEVER)
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("lever_missing"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("lever_missing"));
             return false;
         }
         return true;
@@ -29,8 +29,8 @@ public class setRedStoneOnTemp implements SignShopOperation {
         Boolean bReturn = false;
         Block bLever = null; 
         
-        for(int i = 0; i < ssArgs.activatables.size(); i++) {            
-            bLever = ssArgs.activatables.get(i);
+        for(int i = 0; i < ssArgs.get_activatables().size(); i++) {            
+            bLever = ssArgs.get_activatables().get(i);
             
             if(bLever.getType() == Material.LEVER) {                
                 BlockState state = bLever.getState();
@@ -41,7 +41,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.ssPlayer.sendMessage(SignShop.Errors.get("already_on"));
+            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("already_on"));
         return bReturn;
     }
     
@@ -49,8 +49,19 @@ public class setRedStoneOnTemp implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         Block bLever = null;
         
-        for(int i = 0; i < ssArgs.activatables.size(); i++) {
-            bLever = ssArgs.activatables.get(i);
+        Integer delay = 20;
+        if(ssArgs.operationParameters.size() > 0) {            
+            try {
+                delay = Integer.parseInt(ssArgs.operationParameters.get(0));
+                if(delay <= 0)
+                    delay = 20;
+            } catch(NumberFormatException ex) {
+                
+            }
+        }
+        
+        for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
+            bLever = ssArgs.get_activatables().get(i);
             
             BlockState state = bLever.getState();
             MaterialData data = state.getData();
@@ -59,8 +70,8 @@ public class setRedStoneOnTemp implements SignShopOperation {
                 lever.setPowered(true);                
                 state.setData(lever);
                 state.update();
-                signshopUtil.generateInteractEvent(bLever, ssArgs.ssPlayer.getPlayer(), ssArgs.bfBlockFace);
-                Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(SignShop.getInstance(),new lagSetter(bLever),10*20);
+                signshopUtil.generateInteractEvent(bLever, ssArgs.get_ssPlayer().getPlayer(), ssArgs.get_bfBlockFace());
+                Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(SignShop.getInstance(),new lagSetter(bLever),10*delay);
             }            
         }    
 

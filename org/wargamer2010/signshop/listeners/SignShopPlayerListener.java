@@ -29,27 +29,7 @@ import org.wargamer2010.signshop.util.*;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
 public class SignShopPlayerListener implements Listener {
-    private final SignShop plugin;
-    private static Map<Location, Player> mClicksPerLocation = new HashMap<Location, Player>();    
-    private static Map<Player, Location> mCopyPaste = new HashMap<Player,Location>();
-    
-    public SignShopPlayerListener(SignShop instance){
-        this.plugin = instance;        
-    }
-    
-    private String getMessage(String sType,String sOperation,String sItems,float fPrice,String sCustomer,String sOwner,String sEnchantments,Block bSign){
-        if(!SignShop.Messages.get(sType).containsKey(sOperation) || SignShop.Messages.get(sType).get(sOperation) == null){
-            return "";
-        }
-        return SignShop.Messages.get(sType).get(sOperation)
-            .replace("\\!","!")
-            .replace("!price", economyUtil.formatMoney(fPrice))
-            .replace("!items", sItems)
-            .replace("!customer", sCustomer)
-            .replace("!owner", sOwner)
-            .replace("!enchantments", sEnchantments)
-            .replace("!xp", signshopUtil.getXPFromThirdLine(bSign).toString());
-    }
+    private static Map<Location, Player> mClicksPerLocation = new LinkedHashMap<Location, Player>();
     
     private Boolean checkDistance(Block a, Block b, int maxdistance) {
         if(maxdistance <= 0)
@@ -74,8 +54,8 @@ public class SignShopPlayerListener implements Listener {
         mClicksPerLocation.values().removeAll(Collections.singleton(player));
     }
 
-    private <T, E> Set<T> getKeysByValue(Map<T, E> map, E value) {
-         Set<T> keys = new HashSet<T>();
+    private <T, E> LinkedHashSet<T> getKeysByValue(Map<T, E> map, E value) {
+         LinkedHashSet<T> keys = new LinkedHashSet<T>();
          for (Map.Entry<T, E> entry : map.entrySet()) {
              if (value.equals(entry.getValue())) {
                  keys.add(entry.getKey());
@@ -90,7 +70,7 @@ public class SignShopPlayerListener implements Listener {
         Boolean ranSomething = false;
         
         List<SignShopSpecialOp> specialops = signshopUtil.getSignShopSpecialOps();
-        List<Block> clickedBlocks = new ArrayList<Block>();                
+        List<Block> clickedBlocks = new LinkedList<Block>();                
         for(Location lTemp : lClicked)
             clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
         if(!specialops.isEmpty()) {                
@@ -104,7 +84,9 @@ public class SignShopPlayerListener implements Listener {
         return ranSomething;
     }
     
-    private Boolean registerClickedMaterial(PlayerInteractEvent event) {
+    private Boolean registerClickedMaterial(PlayerInteractEvent event, Seller seller) {
+        if(seller != null)
+            return false;
         Block bClicked = event.getClickedBlock();
         if(clickedSignShopMat(bClicked)) {
             Player player = event.getPlayer();
@@ -152,7 +134,7 @@ public class SignShopPlayerListener implements Listener {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 if(!SignShop.Operations.containsKey(sOperation)) {
-                    if(!runSpecialOperations(event) && !registerClickedMaterial(event))
+                    if(!runSpecialOperations(event) && !registerClickedMaterial(event, seller))
                         ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                     return;
                 }
@@ -170,15 +152,15 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
 
-                List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);            
+                Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);            
                 if(SignShopOperations == null) {
                     ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                     return;
                 }
                 
-                Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
-                List<Block> containables = new ArrayList();
-                List<Block> activatables = new ArrayList();
+                LinkedHashSet<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+                List<Block> containables = new LinkedList();
+                List<Block> activatables = new LinkedList();
                 for(Location loc : lClicked) {
                     Block bBlockat = world.getBlockAt(loc);                    
                     if(bBlockat.getState() instanceof InventoryHolder)                        
@@ -198,25 +180,29 @@ public class SignShopPlayerListener implements Listener {
                 }
                 
                 Boolean bSetupOK = false;
-                for(SignShopOperation ssOperation : SignShopOperations) {
-                    bSetupOK = ssOperation.setupOperation(ssArgs);
+                for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
+                    ssArgs.operationParameters = ssOperation.getValue();
+                    bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
                 }
                 if(!bSetupOK)
                     return;
-                if(ssArgs.isItems == null)
-                    ssArgs.isItems = new ItemStack[]{new ItemStack(Material.DIRT,1)};
-                SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.bSign, ssArgs.containables, ssArgs.activatables, ssArgs.isItems, ssArgs.miscSettings);
-                removePlayerFromClickmap(player);                
-                ssPlayer.sendMessage(getMessage("setup", ssArgs.sOperation, ssArgs.sItems, ssArgs.fPrice, "", player.getName(), ssArgs.sEnchantments, ssArgs.bSign));
+                ssArgs.setMessagePart("!customer", ssPlayer.getName());
+                ssArgs.setMessagePart("!owner", player.getName());
+                ssArgs.setMessagePart("!player", ssPlayer.getName());
+                ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
+                if(ssArgs.get_isItems() == null)
+                    ssArgs.set_isItems(new ItemStack[]{new ItemStack(Material.DIRT,1)});
+                SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables(), ssArgs.get_activatables(), ssArgs.get_isItems(), ssArgs.miscSettings);
+                removePlayerFromClickmap(player);                                
+                ssPlayer.sendMessage(signshopUtil.getMessage("setup", ssArgs.get_sOperation(), ssArgs.messageParts));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
                 return;
             } 
-            registerClickedMaterial(event);            
+            registerClickedMaterial(event, seller);            
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.INK_SACK && event.getItem().getType() != Material.REDSTONE))) {
-            SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
-
+            SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());            
             sLines = ((Sign) bClicked.getState()).getLines();
             sOperation = signshopUtil.getOperation(sLines[0]);
 
@@ -231,48 +217,58 @@ public class SignShopPlayerListener implements Listener {
             }
             
             List<String> operation = SignShop.Operations.get(sOperation);
-            List<SignShopOperation> SignShopOperations = signshopUtil.getSignShopOps(operation);            
+            
+            Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);            
             if(SignShopOperations == null) {
                 ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                 return;
             }
             
-            if(event.getItem() != null){
+            if(event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null){
                 event.setCancelled(true);
             }            
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
-                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());
+                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());            
+            ssArgs.setMessagePart("!customer", ssPlayer.getName());
+            ssArgs.setMessagePart("!owner", ssOwner.getName());
+            ssArgs.setMessagePart("!player", ssPlayer.getName());
+            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
             Boolean bRequirementsOK = false;
             Boolean bRunOK = false;
-            for(SignShopOperation ssOperation : SignShopOperations) {                
-                bRequirementsOK = ssOperation.checkRequirements(ssArgs, true);
+            for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
+                ssArgs.operationParameters = ssOperation.getValue();
+                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
                 if(!bRequirementsOK)
                     return;
             }            
             if(!bRequirementsOK)
                 return;            
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
-                ssPlayer.sendMessage(getMessage("confirm", sOperation, ssArgs.sItems, ssArgs.fPrice, ssPlayer.getName(), seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
+                ssPlayer.sendMessage(signshopUtil.getMessage("confirm", ssArgs.get_sOperation(), ssArgs.messageParts));
+                
                 ssArgs.special.deactivate();
                 return;
             }            
             ssArgs.special.deactivate();
-            for(SignShopOperation ssOperation : SignShopOperations) {                
-                bRunOK = ssOperation.runOperation(ssArgs);
+            for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {   
+                ssArgs.operationParameters = ssOperation.getValue();
+                bRunOK = ssOperation.getKey().runOperation(ssArgs);
                 if(!bRunOK)
                     return;
             }
+            
+            ssArgs.setMessagePart("!customer", ssPlayer.getName());
+            ssArgs.setMessagePart("!owner", ssOwner.getName());
+            ssArgs.setMessagePart("!player", ssPlayer.getName());
+            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
 
             if(SignShop.Commands.containsKey(sOperation.toLowerCase())) {
                 List<String> commands = SignShop.Commands.get(sOperation.toLowerCase());                
                 for(String sCommand : commands) {
                     if(sCommand != null && sCommand.length() > 0) {
-                        sCommand = sCommand
-                                .replace("!player", ssPlayer.getName())
-                                .replace("!world", ssPlayer.getPlayer().getWorld().getName())
-                                .replace("!owner", ssOwner.getName());
+                        sCommand = signshopUtil.fillInBlanks(sCommand, ssArgs.messageParts);                                      
                         Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
                     }
                 }
@@ -283,12 +279,15 @@ public class SignShopPlayerListener implements Listener {
                 player.updateInventory();
             }
             
-            String sItems = (ssArgs.special.bActive && !ssArgs.special.props.sItems.equals("") ? ssArgs.special.props.sItems : ssArgs.sItems);
-            Float fPrice = (ssArgs.special.bActive && ssArgs.special.props.fPrice > -1 ? ssArgs.special.props.fPrice : ssArgs.fPrice);
-            
-            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, sItems, economyUtil.formatMoney(fPrice));
-            ssPlayer.sendMessage(getMessage("transaction",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
-            ssOwner.sendMessage(getMessage("transaction_owner",sOperation,sItems,fPrice,player.getDisplayName(),seller.getOwner(), ssArgs.sEnchantments, ssArgs.bSign));
+            List<String> chests = new LinkedList();
+            for(Map.Entry<String, String> entry : ssArgs.messageParts.entrySet())
+                if(entry.getKey().contains("chest"))
+                    chests.add(entry.getValue());
+            String[] sChests = new String[chests.size()]; chests.toArray(sChests);
+            String items = (ssArgs.messageParts.get("!items") == null ? ssArgs.implode(sChests, " and ") : ssArgs.messageParts.get("!items"));
+            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.get_fPrice()));
+            ssPlayer.sendMessage(signshopUtil.getMessage("transaction", ssArgs.get_sOperation(), ssArgs.messageParts));
+            ssOwner.sendMessage(signshopUtil.getMessage("transaction_owner", ssArgs.get_sOperation(), ssArgs.messageParts));            
         }
         if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
             runSpecialOperations(event);
