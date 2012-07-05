@@ -212,7 +212,7 @@ public class itemUtil {
     }
         
     public static void setSignStatus(Block sign, ChatColor color) {
-        if(sign.getType() == Material.SIGN_POST || sign.getType() == Material.WALL_SIGN) {
+        if(clickedSign(sign)) {
             Sign signblock = ((Sign) sign.getState());
             String[] sLines = signblock.getLines();            
             if(ChatColor.stripColor(sLines[0]).length() < 14) {
@@ -287,8 +287,11 @@ public class itemUtil {
             if(bTake)
                 iiFrom.removeItem(isBackup);            
             return returnMap;
-        } else if(!SignShop.getAllowVariableAmounts() && (!fromOK || !toOK)) {            
+        } else if(!SignShop.getAllowVariableAmounts() && !fromOK) {            
             returnMap.put(isItemsToTake, 0.0f);
+            return returnMap;
+        } else if(!SignShop.getAllowVariableAmounts() && !toOK) {
+            returnMap.put(isItemsToTake, -1.0f);
             return returnMap;
         } else if(SignShop.getAllowVariableAmounts() && !toOK) {             
             returnMap.put(isItemsToTake, -1.0f);
@@ -341,26 +344,28 @@ public class itemUtil {
                 if(temp == bIgnore)
                     continue;
                 Seller seller = null;
-                if(temp.getType() != Material.SIGN_POST && temp.getType() != Material.WALL_SIGN)
+                if(!clickedSign(temp))                    
                     continue;
                 if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {                                                
                     String[] sLines = ((Sign) temp.getState()).getLines();
                     if(!SignShop.Operations.containsKey(signshopUtil.getOperation(sLines[0])))
-                        continue;
+                        continue;                    
                     List operation = SignShop.Operations.get(signshopUtil.getOperation(sLines[0]));
                     Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
                     if(SignShopOperations == null)
                         return;
                     SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
                                                                         null, null, temp, signshopUtil.getOperation(sLines[0]), null);
+                    Boolean reqOK = true;
                     for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
                         ssArgs.operationParameters = ssOperation.getValue();
-                        if(!ssOperation.getKey().checkRequirements(ssArgs, false)) {
+                        if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {                            
                             itemUtil.setSignStatus(temp, ChatColor.DARK_RED);                            
-                            return;
+                            break;
                         }
                     }
-                    itemUtil.setSignStatus(temp, ChatColor.DARK_BLUE);                            
+                    if(reqOK)
+                        itemUtil.setSignStatus(temp, ChatColor.DARK_BLUE);                            
                 }
             }
         }

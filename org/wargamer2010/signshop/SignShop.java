@@ -260,6 +260,7 @@ public class SignShop extends JavaPlugin{
         SpecialsOps.add("copySign");
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add("linkShowcase");
+        // SpecialsOps.add("linkShareSign");
     }
     
     private void setupOperations() {

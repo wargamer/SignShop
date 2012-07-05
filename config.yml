@@ -3,13 +3,13 @@
 
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
-TransactionLog: false
+TransactionLog: true
 OPOverride: true
-AllowVariableAmounts: false
+AllowVariableAmounts: true
 AllowEnchantedRepair: true
 DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
-EnableSignStacking: false
+EnableSignStacking: true
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -32,12 +32,14 @@ signs:
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
   Dispose: takeItemInHand
   DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
-  iSlot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems
-  Enchant: enchantItemInHand,takePlayerMoney
+  iSlot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems,playerIsOp
+  Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
-  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems
+  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
   TpToOwner: takePlayerMoney,playerIsOp
+  Class: takePlayerInventory,takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
+  Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -67,6 +69,8 @@ messages:
     iBuyXP: You have put !xp XP for sale at a price of !price!
     iTrade: You have setup a trade shop that costs !chest1 for !chest2!
     TpToOwner: You have setup a command example shop, selling teleports to !owner for !price!
+    Class: You have setup a shop to sell a class of items for !price!
+    Disenchant: You have setup a sign that removes enchantments for !price!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -96,6 +100,8 @@ messages:
     iBuyXP: Buy !xp XP for !price?
     iTrade: Buy !chest2 with !chest1?
     TpToOwner: Teleport to !owner for !price?
+    Class: Buy the class containing !items for !price?
+    Disenchant: Remove enchantments on the item in your hand for !price?
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -125,6 +131,8 @@ messages:
     iBuyXP: Added !xp XP for !price!
     iTrade: Traded !chest1 for !chest2!
     TpToOwner: You teleported to !owner for !price!
+    Class: You bought the class containing !items for !price!
+    Disenchant: You removed the enchantments on the item in your hand for !price!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -146,7 +154,7 @@ messages:
     Device: \!customer temporarily activated your device for !price!
     Heal: \!customer healed at your station for !price!
     Repair: \!customer repaired an item at your station for !price!
-    Dispose: \!customer disposed of !items!
+    Dispose: ''
     DeviceItem: \!customer temporarily activated your device for !items!
     iSlot: ''
     Enchant: \!customer enchanted his item with !enchantments for !price!
@@ -154,6 +162,8 @@ messages:
     iBuyXP: ''
     iTrade: ''
     TpToOwner: \!customer teleported to you for !price!
+    Class: ''
+    Disenchant: ''
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
