@@ -4,9 +4,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-import org.wargamer2010.signshop.hooks.LWCHook;
-import org.wargamer2010.signshop.hooks.LocketteHook;
-import org.wargamer2010.signshop.hooks.WorldGuardHook;
+import org.wargamer2010.signshop.hooks.*;
 
 public class SignShopChest {
     Block ssChest = null;
@@ -24,6 +22,7 @@ public class SignShopChest {
         bAllowed = (bAllowed ? LocketteHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
         bAllowed = (bAllowed ? LWCHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
         bAllowed = (bAllowed ? WorldGuardHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
+        bAllowed = (bAllowed ? DeadboltHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
         
         return bAllowed;
     }

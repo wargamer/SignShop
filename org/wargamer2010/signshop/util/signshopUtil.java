@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.specialops.*;
 
@@ -168,6 +170,59 @@ public class signshopUtil {
         }        
         message = message.replace("\\", "");
         return message;
+    }
+    
+    public static List<Integer> getSharePercentages(String line) {                
+        List<String> bits = new LinkedList();
+        List<Integer> percentages = new LinkedList();
+        if(line == null)
+            return percentages;
+        if(line.contains("/"))
+            bits = Arrays.asList(line.split("/"));        
+        for(int i = 0; i < bits.size() && i < 2; i++) {
+            String bit = bits.get(i);                
+            try {
+                percentages.add(Integer.parseInt(bit));
+            } catch(NumberFormatException ex) {
+                continue;
+            }
+        }
+        return percentages;
+    }
+    
+    public static String implode(String[] ary, String delim) {
+        String out = "";
+        for(int i=0; i<ary.length; i++) {
+            if(i!=0) { out += delim; }
+            out += ary[i];
+        }
+        return out;
+    }
+    
+    public static String validateShareSign(List<Block> clickedBlocks, SignShopPlayer ssPlayer) {
+        List<String> blocklocations = new LinkedList();
+        List<Integer> percentages = new LinkedList();
+        for(Block sharesign : clickedBlocks) {
+            Sign sign = (Sign)sharesign.getState();
+            List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+            percentages.addAll(tempperc);
+            blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
+            if(tempperc.size() == 2 && (sign.getLine(1) == null || sign.getLine(2) == null))
+                ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
+            if(tempperc.size() == 1 && sign.getLine(2) != null)
+                ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
+        }
+        int sum = 0;
+        for(Integer percentage : percentages)
+            sum += percentage;
+        if(sum > 100) {
+            ssPlayer.sendMessage("Sum of the percentages can never be greater than 100, please adjust the number on the fourth line.");
+            return "";
+        }        
+        String[] implodedLocations = new String[blocklocations.size()];
+        blocklocations.toArray(implodedLocations);
+        
+        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
     }
    
 }

@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.HashMap;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments {
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables, 
@@ -32,7 +33,7 @@ public class SignShopArguments {
     public SignShopArguments() {
         
     }
-    public String seperator = "~";
+    public static String seperator = "~";
     
     private Float fPrice = -1.0f;
     public Float get_fPrice() { return (special.bActive && special.props.fPrice != -1.0f ? special.props.fPrice : fPrice); } 
@@ -44,7 +45,7 @@ public class SignShopArguments {
     public ItemStack[] get_isItems_root() { return isItems; } 
     public void set_isItems(ItemStack[] pisItems) { 
         if(this.forceMessageKeys.containsKey("!items"))
-            this.miscSettings.put(this.forceMessageKeys.get("!items").replace("!", ""), implode(itemUtil.convertItemStacksToString(pisItems), seperator));
+            this.miscSettings.put(this.forceMessageKeys.get("!items").replace("!", ""), signshopUtil.implode(itemUtil.convertItemStacksToString(pisItems), seperator));
         special.activate(this); special.props.isItems = pisItems; 
     }
     
@@ -119,14 +120,6 @@ public class SignShopArguments {
         public void deactivate() {
             bActive = false;            
         }
-    }
+    }  
     
-    public String implode(String[] ary, String delim) {
-        String out = "";
-        for(int i=0; i<ary.length; i++) {
-            if(i!=0) { out += delim; }
-            out += ary[i];
-        }
-        return out;
-    }
 }

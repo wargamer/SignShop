@@ -284,7 +284,7 @@ public class SignShopPlayerListener implements Listener {
                 if(entry.getKey().contains("chest"))
                     chests.add(entry.getValue());
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
-            String items = (ssArgs.messageParts.get("!items") == null ? ssArgs.implode(sChests, " and ") : ssArgs.messageParts.get("!items"));
+            String items = (ssArgs.messageParts.get("!items") == null ? signshopUtil.implode(sChests, " and ") : ssArgs.messageParts.get("!items"));
             SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.get_fPrice()));
             ssPlayer.sendMessage(signshopUtil.getMessage("transaction", ssArgs.get_sOperation(), ssArgs.messageParts));
             ssOwner.sendMessage(signshopUtil.getMessage("transaction_owner", ssArgs.get_sOperation(), ssArgs.messageParts));            
