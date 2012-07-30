@@ -5,7 +5,7 @@ import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.logging.Level;
 
 public class configUtil {
@@ -57,7 +57,7 @@ public class configUtil {
                 try {
                     tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
                 } catch(ClassCastException ex) {                    
-                    List<String> temp = new ArrayList<String>();
+                    List<String> temp = new LinkedList<String>();
                     temp.add((String)entry.getValue());
                     tempListinHash.put(entry.getKey().toLowerCase(), temp);
                 }
@@ -81,7 +81,7 @@ public class configUtil {
                     try {
                         tempmap.put(subentry.getKey(), (List)subentry.getValue());
                     } catch(ClassCastException ex) {
-                        List<String> temp = new ArrayList<String>();
+                        List<String> temp = new LinkedList<String>();
                         temp.add((String)subentry.getValue());
                         tempmap.put(subentry.getKey().toLowerCase(), temp);
                     }
