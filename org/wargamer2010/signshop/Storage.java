@@ -16,6 +16,7 @@ import org.bukkit.inventory.InventoryHolder;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
@@ -167,11 +168,11 @@ public class Storage{
         String[] sSignLocation;        
         Block bChest;
         ItemStack[] isItems;
-        LinkedList<Integer> items;
-        LinkedList<Integer> amounts;
-        LinkedList<String> datas;
-        LinkedList<Integer> durabilities;
-        LinkedList<String> enchantments;
+        ArrayList<Integer> items;
+        ArrayList<Integer> amounts;
+        ArrayList<String> datas;
+        ArrayList<Integer> durabilities;
+        ArrayList<String> enchantments;
         boolean invalidShop;
         boolean needToSave = false;
         for(String sKey : tempSellers.keySet()){
@@ -229,11 +230,11 @@ public class Storage{
                 (Integer) tempSeller.get("chesty"),
                 (Integer) tempSeller.get("chestz"));
 
-            datas = (LinkedList<String>) tempSeller.get("datas");
-            items = (LinkedList<Integer>) tempSeller.get("items");
-            amounts = (LinkedList<Integer>) tempSeller.get("amounts");
-            durabilities = (LinkedList<Integer>) tempSeller.get("durabilities");
-            enchantments = (LinkedList<String>) tempSeller.get("enchantments");
+            datas = (ArrayList<String>) tempSeller.get("datas");
+            items = (ArrayList<Integer>) tempSeller.get("items");
+            amounts = (ArrayList<Integer>) tempSeller.get("amounts");
+            durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
+            enchantments = (ArrayList<String>) tempSeller.get("enchantments");
             
             isItems = new ItemStack[items.size()];
 
