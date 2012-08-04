@@ -52,6 +52,10 @@ public class Seller {
         return owner;
     }
     
+    public void setOwner(String newowner) {
+        owner = newowner;
+    }
+    
     public String getWorld() {
         return world;
     }

@@ -28,6 +28,7 @@ import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShop extends JavaPlugin{
@@ -57,7 +58,7 @@ public class SignShop extends JavaPlugin{
     public static Map<String,HashMap<String,Float>> PriceMultipliers;
     public static Map<String,List> Commands;
     public static Map<String,Integer> ShopLimits;
-    public static List<Material> LinkableMaterials = new LinkedList();
+    public static Map<Material, String> LinkableMaterials;
     public static List<String> SpecialsOps = new LinkedList();
     
     //Permissions
@@ -117,7 +118,8 @@ public class SignShop extends JavaPlugin{
         }
         initConfig();      
         fixStackSize();
-        itemUtil.initDiscs();
+        itemUtil.initDiscs();        
+        clicks.init();
         instance = this;
         
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
@@ -261,6 +263,7 @@ public class SignShop extends JavaPlugin{
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add("linkShowcase");
         // SpecialsOps.add("linkShareSign");
+        SpecialsOps.add("changeOwner");
     }
     
     private void setupOperations() {
@@ -295,13 +298,19 @@ public class SignShop extends JavaPlugin{
     }
     
     private void setupLinkables() {
-        LinkableMaterials.add(Material.CHEST);
-        LinkableMaterials.add(Material.LEVER);
-        LinkableMaterials.add(Material.SIGN);
-        LinkableMaterials.add(Material.SIGN_POST);
-        LinkableMaterials.add(Material.WALL_SIGN);
-        LinkableMaterials.add(Material.WOOD_PLATE);
-        LinkableMaterials.add(Material.STEP);        
+        LinkableMaterials = new HashMap<Material, String>();
+        LinkableMaterials.put(Material.CHEST, "chest");
+        LinkableMaterials.put(Material.DISPENSER, "dispenser");        
+        LinkableMaterials.put(Material.FURNACE, "furnace");
+        LinkableMaterials.put(Material.BURNING_FURNACE, "furnace");
+        LinkableMaterials.put(Material.BREWING_STAND, "brewingstand");
+        LinkableMaterials.put(Material.ENCHANTMENT_TABLE, "enchantmenttable");
+        LinkableMaterials.put(Material.LEVER, "lever");
+        LinkableMaterials.put(Material.SIGN, "sign");
+        LinkableMaterials.put(Material.SIGN_POST, "sign");
+        LinkableMaterials.put(Material.WALL_SIGN, "sign");
+        LinkableMaterials.put(Material.WOOD_PLATE, "slab");
+        LinkableMaterials.put(Material.STEP, "slab");        
     }
     
     private void copyPDF() {

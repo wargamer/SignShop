@@ -16,7 +16,7 @@ public class setRedstoneOff implements SignShopOperation {
             if(block.getType() == Material.LEVER)
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("lever_missing"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("lever_missing", ssArgs.messageParts));            
             return false;
         }
         return true;
@@ -37,7 +37,7 @@ public class setRedstoneOff implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("already_off"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("already_off", ssArgs.messageParts));            
         return bReturn;
     }
     

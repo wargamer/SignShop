@@ -4,6 +4,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.InventoryHolder;
@@ -18,6 +19,7 @@ import org.bukkit.World;
 
 import java.util.*;
 
+import org.bukkit.entity.EntityType;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -28,8 +30,7 @@ import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.util.*;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
-public class SignShopPlayerListener implements Listener {
-    private static Map<Location, Player> mClicksPerLocation = new LinkedHashMap<Location, Player>();
+public class SignShopPlayerListener implements Listener {    
     
     private Boolean checkDistance(Block a, Block b, int maxdistance) {
         if(maxdistance <= 0)
@@ -43,15 +44,19 @@ public class SignShopPlayerListener implements Listener {
             return true;
     }
     
-    private Boolean clickedSignShopMat(Block bBlock) {
-        if(SignShop.LinkableMaterials.contains(bBlock.getType()))
+    private Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
+        if(SignShop.LinkableMaterials.containsKey(bBlock.getType())) {
+            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink."+SignShop.LinkableMaterials.get(bBlock.getType()), true)) {                
+                ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                return false;
+            }
             return true;
-        else
+        } else
             return false;
     }
     
     private void removePlayerFromClickmap(Player player) {
-        mClicksPerLocation.values().removeAll(Collections.singleton(player));
+        clicks.mClicksPerLocation.values().removeAll(Collections.singleton(player));
     }
 
     private <T, E> LinkedHashSet<T> getKeysByValue(Map<T, E> map, E value) {
@@ -66,7 +71,7 @@ public class SignShopPlayerListener implements Listener {
     
     private Boolean runSpecialOperations(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-        Set<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+        Set<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, player);
         Boolean ranSomething = false;
         
         List<SignShopSpecialOp> specialops = signshopUtil.getSignShopSpecialOps();
@@ -88,12 +93,12 @@ public class SignShopPlayerListener implements Listener {
         if(seller != null)
             return false;
         Block bClicked = event.getClickedBlock();
-        if(clickedSignShopMat(bClicked)) {
-            Player player = event.getPlayer();
-            SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        Player player = event.getPlayer();
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        if(clickedSignShopMat(bClicked, ssPlayer)) {            
             event.setCancelled(true);
-            if(mClicksPerLocation.containsKey(bClicked.getLocation())) {
-                mClicksPerLocation.remove(bClicked.getLocation());
+            if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
+                clicks.mClicksPerLocation.remove(bClicked.getLocation());
                 ssPlayer.sendMessage("Removed stored location");
             } else {
                 if(bClicked.getState() instanceof InventoryHolder) {
@@ -103,7 +108,7 @@ public class SignShopPlayerListener implements Listener {
                         return false;
                     }
                 }
-                mClicksPerLocation.put(bClicked.getLocation(), player);                    
+                clicks.mClicksPerLocation.put(bClicked.getLocation(), player);                    
                 ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
             }
             return true;
@@ -111,6 +116,26 @@ public class SignShopPlayerListener implements Listener {
         return false;
     }
 
+    @EventHandler(priority = EventPriority.HIGH)
+    public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
+        if(!(event.getDamager().getType() == EntityType.PLAYER))
+            return;        
+        Player player = (Player)event.getDamager();
+        if(player.getItemInHand().getType() != Material.REDSTONE)
+            return;
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);        
+        if(event.getEntity().getType() == EntityType.PLAYER) {
+           Player clickedPlayer = (Player)event.getEntity();
+            if(clicks.mClicksPerPlayername.containsKey(clickedPlayer.getName())) {
+                ssPlayer.sendMessage("You have deselected a player with name: " + clickedPlayer.getName());
+                clicks.mClicksPerPlayername.remove(clickedPlayer.getName());
+            } else {
+                ssPlayer.sendMessage("You hit a player with name: " + clickedPlayer.getName());
+                clicks.mClicksPerPlayername.put(clickedPlayer.getName(), player);
+            }
+           event.setCancelled(true);
+        }
+    }
     
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteract(PlayerInteractEvent event) {        
@@ -140,7 +165,7 @@ public class SignShopPlayerListener implements Listener {
                 }
                 
                 List<String> operation = SignShop.Operations.get(sOperation);                
-                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
+                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
                     return;
                 }
@@ -158,14 +183,14 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
                 
-                LinkedHashSet<Location> lClicked = getKeysByValue(mClicksPerLocation, player);
+                LinkedHashSet<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, player);
                 List<Block> containables = new LinkedList();
                 List<Block> activatables = new LinkedList();
                 for(Location loc : lClicked) {
                     Block bBlockat = world.getBlockAt(loc);                    
                     if(bBlockat.getState() instanceof InventoryHolder)                        
                         containables.add(bBlockat);
-                    else if(clickedSignShopMat(bBlockat))
+                    else if(clickedSignShopMat(bBlockat, ssPlayer))
                         activatables.add(bBlockat);
                 }                
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables, 
@@ -231,7 +256,7 @@ public class SignShopPlayerListener implements Listener {
                                                                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());            
             ssArgs.setMessagePart("!customer", ssPlayer.getName());
             ssArgs.setMessagePart("!owner", ssOwner.getName());
-            ssArgs.setMessagePart("!player", ssPlayer.getName());
+            ssArgs.setMessagePart("!player", ssPlayer.getName());            
             ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();

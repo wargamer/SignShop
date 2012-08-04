@@ -276,13 +276,12 @@ public class itemUtil {
         return isBackup;
     }
     
-    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, Inventory iiTo, ItemStack[] isItemsToTake, Boolean bTake) {
+    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake, Boolean bTake) {
         ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
-        Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
-        Boolean toOK = itemUtil.isStockOK(iiTo, isBackup, false);
-        if(fromOK && toOK) {            
+        Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);        
+        if(fromOK) {            
             returnMap.put(isItemsToTake, 1.0f);
             if(bTake)
                 iiFrom.removeItem(isBackup);            
@@ -290,13 +289,7 @@ public class itemUtil {
         } else if(!SignShop.getAllowVariableAmounts() && !fromOK) {            
             returnMap.put(isItemsToTake, 0.0f);
             return returnMap;
-        } else if(!SignShop.getAllowVariableAmounts() && !toOK) {
-            returnMap.put(isItemsToTake, -1.0f);
-            return returnMap;
-        } else if(SignShop.getAllowVariableAmounts() && !toOK) {             
-            returnMap.put(isItemsToTake, -1.0f);
-            return returnMap;
-        }        
+        }
         returnMap.put(isItemsToTake, 0.0f);
         float iCount = 0;
         float tempCount = 0;
@@ -323,14 +316,9 @@ public class itemUtil {
             if(entry.getKey().getData() != null) {
                 isActual[i].setData(entry.getKey().getData());
             }
-            
             i++;
         }
-        returnMap.clear();
-        if(!isStockOK(iiTo, isActual, false)) {            
-            returnMap.put(isActual, -1.0f);
-            return returnMap;
-        }
+        returnMap.clear();        
         returnMap.put(isActual, iCount);
         if(bTake)
             iiFrom.removeItem(isActual);        
