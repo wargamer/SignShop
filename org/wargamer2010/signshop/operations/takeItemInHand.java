@@ -1,8 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.Material;
-import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 
 public class takeItemInHand implements SignShopOperation {    
@@ -16,7 +15,7 @@ public class takeItemInHand implements SignShopOperation {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
         if(ssArgs.get_ssPlayer().getPlayer().getItemInHand() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("no_item_in_hand"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_item_in_hand", ssArgs.messageParts));
             return false;
         } else {
             ItemStack[] isItems = new ItemStack[1];            

@@ -17,8 +17,8 @@ public class setRedStoneOnTemp implements SignShopOperation {
         for(Block block : ssArgs.get_activatables())
             if(block.getType() == Material.LEVER)
                 foundLever = true;
-        if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("lever_missing"));
+        if(!foundLever) {            
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("lever_missing", ssArgs.messageParts));
             return false;
         }
         return true;
@@ -41,7 +41,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("already_on"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("already_on", ssArgs.messageParts));
         return bReturn;
     }
     

@@ -15,11 +15,11 @@ signs:
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
   Donate: takeVariablePlayerItems,giveShopItems
   DonateHand: takeItemInHand,giveShopItems
-  Slot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems,takeShopItems
-  iSell: givePlayerMoney,takeVariablePlayerItems,playerIsOp
+  Slot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems{oneslot},takeShopItems
+  iSell: takeVariablePlayerItems,givePlayerMoney,playerIsOp
   iBuy: takePlayerMoney,givePlayerItems,playerIsOp
   gBuy: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
-  gSell: givePlayerMoney,takeVariablePlayerItems,giveShopItems,playerIsOp
+  gSell: takeVariablePlayerItems,givePlayerMoney,giveShopItems,playerIsOp
   Day: takePlayerMoney,setDayTime,playerIsOp
   Night: takePlayerMoney,setNightTime,playerIsOp
   Rain: takePlayerMoney,setRaining,playerIsOp
@@ -32,7 +32,7 @@ signs:
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
   Dispose: takeItemInHand
   DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
-  iSlot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems,playerIsOp
+  iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
   Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
@@ -186,7 +186,7 @@ errors:
   made_clear_skies: '!player has cleared the skies!'
   already_on: Device is already on
   already_off: Device is already off
-  link_notallowed: You are not allowed to link this chest. Please ask the owner.
+  link_notallowed: You are not allowed to link this!
   item_already_repair: That item is already fully repaired!
   already_raining: It is already storming!
   already_clear_skies: The skies are clear already!
@@ -204,7 +204,7 @@ errors:
   item_not_enchantable: The item in your hand is not enchantable!
   no_player_xp: You do not have enough XP to sell (!xp)!
   no_item_to_disenchant: You need to be holding the item you want to disenchant!
-  nothing_to_disenchant: That item can not be disenchanted!
+  nothing_to_disenchant: That item can not be disenchanted!  
 commands:
   TpToOwner:
   - tp !player !owner

@@ -2,7 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.World;
 import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class setClearSkies implements SignShopOperation {    
     @Override
@@ -13,8 +13,8 @@ public class setClearSkies implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
-        if(!world.hasStorm() && !world.isThundering()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("already_clear_skies"));
+        if(!world.hasStorm() && !world.isThundering()) {            
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("already_clear_skies", ssArgs.messageParts));
             return false;
         }
         return true;        
@@ -26,7 +26,7 @@ public class setClearSkies implements SignShopOperation {
         world.setStorm(false);
         world.setThundering(false);
 
-        SignShopPlayer.broadcastMsg(world,SignShop.Errors.get("made_clear_skies").replace("!player",ssArgs.get_ssPlayer().getPlayer().getDisplayName()));
+        SignShopPlayer.broadcastMsg(world,signshopUtil.getError("already_clear_skies", ssArgs.messageParts));
         return true;
     }
 }

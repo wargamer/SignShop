@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class repairPlayerHeldItem implements SignShopOperation {    
     @Override
@@ -13,16 +14,16 @@ public class repairPlayerHeldItem implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("no_item_to_repair"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_item_to_repair", ssArgs.messageParts));            
             return false;
         } else if(isInHand.getType().getMaxDurability() < 30) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("invalid_item_to_repair"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("invalid_item_to_repair", ssArgs.messageParts));            
             return false;
         } else if(isInHand.getEnchantments().size() > 0 && !SignShop.getAllowEnchantedRepair() && !ssArgs.get_ssPlayer().hasPerm("SignShop.ignorerepair", false)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("enchanted_not_allowed"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("enchanted_not_allowed", ssArgs.messageParts));
             return false;
         } else if(isInHand.getDurability() == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShop.Errors.get("item_already_repair"));
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("item_already_repair", ssArgs.messageParts));            
             return false;
         }
         return true;
