@@ -1,15 +1,15 @@
-# If you need help with this config, view the SignShop Quick reference PDF located in the SignShop folder
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
 # You can also visit our Bukkit page at tiny.cc/SignShop
 
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
-TransactionLog: true
+TransactionLog: false
 OPOverride: true
-AllowVariableAmounts: true
+AllowVariableAmounts: false
 AllowEnchantedRepair: true
 DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
-EnableSignStacking: true
+EnableSignStacking: false
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney

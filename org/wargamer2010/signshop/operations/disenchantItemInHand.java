@@ -1,0 +1,34 @@
+package org.wargamer2010.signshop.operations;
+
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.enchantments.Enchantment;
+import org.wargamer2010.signshop.util.signshopUtil;
+import java.util.Map;
+
+public class disenchantItemInHand implements SignShopOperation {    
+    @Override
+    public Boolean setupOperation(SignShopArguments ssArgs) {        
+        return true;
+    }
+    
+    @Override
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+        ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();                
+        if(isInHand == null) {
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_item_to_disenchant", ssArgs.messageParts));
+            return false;
+        } else if(isInHand.getEnchantments().isEmpty()) {
+            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("nothing_to_disenchant", ssArgs.messageParts));
+            return false;
+        }        
+        return true;
+    }
+    
+    @Override
+    public Boolean runOperation(SignShopArguments ssArgs) {
+        ItemStack backup = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+        for(Map.Entry<Enchantment, Integer> entry : backup.getEnchantments().entrySet())
+            backup.removeEnchantment(entry.getKey());
+        return true;
+    }
+}
