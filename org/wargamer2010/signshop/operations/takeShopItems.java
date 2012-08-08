@@ -43,10 +43,12 @@ public class takeShopItems implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {           
         Boolean bStockOK = false;
-        for(int i = 0; i< ssArgs.get_containables().size(); i++) {
-            InventoryHolder Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
-            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true))
-                bStockOK = true;
+        for(Block bHolder : ssArgs.get_containables()) {
+            if(bHolder.getState() instanceof InventoryHolder) {
+                InventoryHolder Holder = (InventoryHolder)bHolder.getState();            
+                if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true))
+                    bStockOK = true;
+            }
         }        
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         if(!bStockOK)
@@ -64,11 +66,13 @@ public class takeShopItems implements SignShopOperation {
         Boolean bStockOK = false;
         InventoryHolder Holder = null;
         
-        for(int i = 0; i< ssArgs.get_containables().size(); i++) {            
-            Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
-            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true)) {
-                bStockOK = true;
-                break;              
+        for(Block bHolder : ssArgs.get_containables()) {
+            if(bHolder.getState() instanceof InventoryHolder) {
+                Holder = (InventoryHolder)bHolder.getState();            
+                if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), true)) {
+                    bStockOK = true;
+                    break;              
+                }
             }
         }
         if(!bStockOK)

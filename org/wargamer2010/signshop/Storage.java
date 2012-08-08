@@ -113,7 +113,7 @@ public class Storage{
                 if(tempList.isEmpty())
                     throw storageex;
                 World world = Bukkit.getServer().getWorld(seller_shopworld);
-                seller_sign = world.getBlockAt(signshopUtil.convertStringToLocation(tempList.get(0), world));
+                seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
                 if(!itemUtil.clickedSign(seller_sign))
                     throw storageex;
                 seller_activatables = getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
@@ -384,7 +384,7 @@ public class Storage{
         for(String loc : sLocs) {
             Location temp = signshopUtil.convertStringToLocation(loc, world);
             if(temp != null)
-                blocklist.add(world.getBlockAt(temp));
+                blocklist.add(temp.getBlock());
         }
         return blocklist;
     }

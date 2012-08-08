@@ -78,11 +78,13 @@ public class giveShopItems implements SignShopOperation {
             return false;
         HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(ssArgs.get_isItems());                
         bStockOK = false;
-        for(int i = 0; i < ssArgs.get_containables().size(); i++) {            
-            Holder = (InventoryHolder)ssArgs.get_containables().get(i).getState();
-            if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), false)) {
-                bStockOK = true;
-                break;
+        for(Block bHolder : ssArgs.get_containables()) {
+            if(bHolder.getState() instanceof InventoryHolder) {
+                Holder = (InventoryHolder)bHolder.getState();            
+                if(itemUtil.isStockOK(Holder.getInventory(), ssArgs.get_isItems(), false)) {
+                    bStockOK = true;
+                    break;
+                }
             }
         }
         if(!bStockOK)

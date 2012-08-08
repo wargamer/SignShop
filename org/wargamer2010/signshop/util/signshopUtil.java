@@ -130,7 +130,7 @@ public class signshopUtil {
     }
     
     public static String convertLocationToString(Location loc) {
-        return (loc.getBlockX() + "/" + loc.getBlockY() + "/" + loc.getBlockZ());
+        return (loc.getBlockX() + "/" + loc.getBlockY() + "/" + loc.getBlockZ() + "/" + loc.getWorld().getName());
     }
     
     public static Location convertStringToLocation(String sLoc, World world) {
@@ -138,6 +138,8 @@ public class signshopUtil {
         if(sCoords.length < 3)
             return null;
         try {
+            if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null)
+                world = Bukkit.getWorld(sCoords[3]);            
             Location loc = new Location(world, Double.parseDouble(sCoords[0]), Double.parseDouble(sCoords[1]), Double.parseDouble(sCoords[2]));
             return loc;
         } catch(NumberFormatException ex) {

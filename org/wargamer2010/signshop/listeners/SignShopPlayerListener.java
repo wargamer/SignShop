@@ -152,8 +152,7 @@ public class SignShopPlayerListener implements Listener {
         String[] sLines;
         String sOperation;
         World world = player.getWorld();
-        Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());
-        
+        Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());        
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.REDSTONE || event.getItem().getType() == Material.INK_SACK)) {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
@@ -186,8 +185,8 @@ public class SignShopPlayerListener implements Listener {
                 LinkedHashSet<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, player);
                 List<Block> containables = new LinkedList();
                 List<Block> activatables = new LinkedList();
-                for(Location loc : lClicked) {
-                    Block bBlockat = world.getBlockAt(loc);                    
+                for(Location loc : lClicked) {                    
+                    Block bBlockat = loc.getBlock();
                     if(bBlockat.getState() instanceof InventoryHolder)                        
                         containables.add(bBlockat);
                     else if(clickedSignShopMat(bBlockat, ssPlayer))

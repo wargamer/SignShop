@@ -30,6 +30,7 @@ import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
 import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.metrics.setupMetrics;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
@@ -66,6 +67,7 @@ public class SignShop extends JavaPlugin{
     
     // Vault
     private Vault vault = null;
+    private setupMetrics metricsSetup = null;
     
     //Logging
     public void log(String message, Level level,int tag) {
@@ -121,13 +123,18 @@ public class SignShop extends JavaPlugin{
         itemUtil.initDiscs();        
         clicks.init();
         instance = this;
+        metricsSetup = new setupMetrics();
+        if(metricsSetup.setup(this))
+            log("Succesfully started Metrics, see http://mcstats.org for more information.", Level.INFO);
+        else
+            log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
         
         SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
         SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
         SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         SignShop.Commands = configUtil.fetchListInHashmap("commands", config);
         SignShop.ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
-        
+                
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"),this);
         SignShop.Storage.Save();
@@ -308,8 +315,7 @@ public class SignShop extends JavaPlugin{
         LinkableMaterials.put(Material.LEVER, "lever");
         LinkableMaterials.put(Material.SIGN, "sign");
         LinkableMaterials.put(Material.SIGN_POST, "sign");
-        LinkableMaterials.put(Material.WALL_SIGN, "sign");
-        LinkableMaterials.put(Material.WOOD_PLATE, "slab");
+        LinkableMaterials.put(Material.WALL_SIGN, "sign");        
         LinkableMaterials.put(Material.STEP, "slab");        
     }
     
