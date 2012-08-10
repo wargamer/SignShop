@@ -182,6 +182,7 @@ public class SignShopPlayerListener implements Listener {
                     return;
                 }
                 
+                Boolean multiWorld = false;
                 LinkedHashSet<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, player);
                 List<Block> containables = new LinkedList();
                 List<Block> activatables = new LinkedList();
@@ -191,15 +192,26 @@ public class SignShopPlayerListener implements Listener {
                         containables.add(bBlockat);
                     else if(clickedSignShopMat(bBlockat, ssPlayer))
                         activatables.add(bBlockat);
-                }                
+                    if(!multiWorld && !bBlockat.getWorld().getName().equals(bClicked.getWorld().getName())) {
+                        if(SignShop.getAllowMultiWorldShops())
+                            multiWorld = true;
+                        else {
+                            ssPlayer.sendMessage(SignShop.Errors.get("multiworld_not_allowed"));
+                            return;
+                        }
+                    }
+                }    
+                
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables, 
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace());
                 
-                for(Block bCheckme : containables) {
-                    if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
-                        ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(SignShop.getMaxSellDistance())));
-                        itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
-                        return;
+                if(!multiWorld) {
+                    for(Block bCheckme : containables) {
+                        if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
+                            ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(SignShop.getMaxSellDistance())));
+                            itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
+                            return;
+                        }
                     }
                 }
                 
@@ -287,6 +299,9 @@ public class SignShopPlayerListener implements Listener {
             ssArgs.setMessagePart("!owner", ssOwner.getName());
             ssArgs.setMessagePart("!player", ssPlayer.getName());
             ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
+            sLines = ((Sign) bClicked.getState()).getLines();
+            for(int i = 0; i < sLines.length; i++)
+                ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
 
             if(SignShop.Commands.containsKey(sOperation.toLowerCase())) {
                 List<String> commands = SignShop.Commands.get(sOperation.toLowerCase());                

@@ -5,8 +5,9 @@ import org.bukkit.entity.Player;
 import com.griefcraft.lwc.LWCPlugin;
 import com.griefcraft.lwc.LWC;
 
-public class LWCHook {
-    public static Boolean canBuild(Player player, Block block) {
+public class LWCHook implements Hook {
+    @Override
+    public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("LWC") == null)
             return true;
         

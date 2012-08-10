@@ -71,19 +71,24 @@ public class itemUtil {
     }
     
     public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
-        ItemStack[] isChestItems = iiInventory.getContents();
-        ItemStack[] isBackup = getBackupItemStack(isChestItems);
-        ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);                
-        HashMap<Integer, ItemStack> leftOver;
-        if(bTakeOrGive)
-            leftOver = iiInventory.removeItem(isBackupToTake);
-        else
-            leftOver = iiInventory.addItem(isBackupToTake);
-        Boolean bStockOK = true;
-        if(!leftOver.isEmpty())
-            bStockOK = false;
-        iiInventory.setContents(isBackup);        
-        return bStockOK;
+        try {
+            ItemStack[] isChestItems = iiInventory.getContents();
+            ItemStack[] isBackup = getBackupItemStack(isChestItems);
+            ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);                
+            HashMap<Integer, ItemStack> leftOver;
+            if(bTakeOrGive)
+                leftOver = iiInventory.removeItem(isBackupToTake);
+            else
+                leftOver = iiInventory.addItem(isBackupToTake);
+            Boolean bStockOK = true;
+            if(!leftOver.isEmpty())
+                bStockOK = false;
+            iiInventory.setContents(isBackup);        
+            return bStockOK;
+        } catch(NullPointerException ex) {
+            // Chest is not available, contents are NULL. So let's assume the Stock is not OK
+            return false;
+        }
     }
     
     private static String binaryToRoman(int binary) {
@@ -267,7 +272,7 @@ public class itemUtil {
                     isOriginal[i].getAmount(),
                     isOriginal[i].getDurability()
                 );
-                itemUtil.addSafeEnchantments(isBackup[i], isOriginal[i].getEnchantments());                
+                itemUtil.addSafeEnchantments(isBackup[i], isOriginal[i].getEnchantments());
                 if(isOriginal[i].getData() != null){
                     isBackup[i].setData(isOriginal[i].getData());
                 }

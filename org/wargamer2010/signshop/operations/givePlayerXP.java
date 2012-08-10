@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
+import com.earth2me.essentials.craftbukkit.SetExpFix;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class givePlayerXP implements SignShopOperation {    
@@ -30,8 +31,14 @@ public class givePlayerXP implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.get_bSign());
-        int setLevel = (ssArgs.get_ssPlayer().getPlayer().getLevel() + XP.intValue());
-        ssArgs.get_ssPlayer().getPlayer().setLevel(setLevel);
+        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("raw")) {            
+            ssArgs.get_ssPlayer().getPlayer().giveExp(XP.intValue());                        
+            ssArgs.setMessagePart("!hasxp", ((Integer)SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer())).toString());
+        } else {
+            Integer setLevel = (ssArgs.get_ssPlayer().getPlayer().getLevel() + XP.intValue());
+            ssArgs.get_ssPlayer().getPlayer().setLevel(setLevel);
+            ssArgs.setMessagePart("!hasxp", setLevel.toString());
+        }
         ssArgs.setMessagePart("!xp", XP.toString());
         return true;
     }

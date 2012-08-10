@@ -4,8 +4,9 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 
-public class WorldGuardHook {
-    public static Boolean canBuild(Player player, Block block) {
+public class WorldGuardHook implements Hook  {
+    @Override
+    public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("WorldGuard") == null)
             return true;
         WorldGuardPlugin WG = (WorldGuardPlugin)HookManager.getHook("WorldGuard");

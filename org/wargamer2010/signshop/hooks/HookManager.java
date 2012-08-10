@@ -1,8 +1,11 @@
 package org.wargamer2010.signshop.hooks;
 
 import org.bukkit.plugin.Plugin;
-import java.util.HashMap;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
 import org.bukkit.Bukkit;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HookManager {
     private static HashMap<String, Plugin> hooks = new HashMap<String, Plugin>();
@@ -21,5 +24,23 @@ public class HookManager {
             return hooks.get(sName);
         else
             return null;
+    }
+    
+    public static Boolean canBuild(Player player, Block block) {
+        Boolean canBuild = true;
+        for(Map.Entry<String, Plugin> hookEntry : hooks.entrySet()) {
+            String hookClassname = (hookEntry.getKey() + "Hook");
+            try {
+                Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.hooks."+hookClassname);
+                Hook testHook = ((Hook)fc.newInstance());
+                canBuild = testHook.canBuild(player, block);
+                if(!canBuild)
+                    break;
+            } catch(ClassNotFoundException notfoundex) { }
+            catch(InstantiationException instex) { }
+            catch(IllegalAccessException illex) { }
+        }
+        return canBuild;
+        
     }
 }
