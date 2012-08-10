@@ -10,6 +10,7 @@ AllowEnchantedRepair: true
 DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
 EnableSignStacking: false
+AllowMultiWorldShops: false
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -205,6 +206,7 @@ errors:
   no_player_xp: You do not have enough XP to sell (!xp)!
   no_item_to_disenchant: You need to be holding the item you want to disenchant!
   nothing_to_disenchant: That item can not be disenchanted!  
+  multiworld_not_allowed: MultiWorld shops are not allowed on this server!
 commands:
   TpToOwner:
   - tp !player !owner

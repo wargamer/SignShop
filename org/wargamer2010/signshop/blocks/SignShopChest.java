@@ -16,14 +16,7 @@ public class SignShopChest {
     
     public Boolean allowedToLink(SignShopPlayer ssPlayer) {
         if(ssChest == null)
-            return true;
-        Boolean bAllowed = true;
-        
-        bAllowed = (bAllowed ? LocketteHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
-        bAllowed = (bAllowed ? LWCHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
-        bAllowed = (bAllowed ? WorldGuardHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
-        bAllowed = (bAllowed ? DeadboltHook.canBuild(ssPlayer.getPlayer(), ssChest) : bAllowed);
-        
-        return bAllowed;
+            return true;        
+        return HookManager.canBuild(ssPlayer.getPlayer(), ssChest);
     }
 }

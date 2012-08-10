@@ -49,7 +49,8 @@ public class SignShop extends JavaPlugin{
     private static boolean AllowUnsafeEnchantments = false;
     private static boolean AllowVariableAmounts = false;
     private static boolean AllowEnchantedRepair = true;
-    private static boolean DisableEssentialsSigns = true;    
+    private static boolean DisableEssentialsSigns = true;
+    private static boolean AllowMultiWorldShops = true;
 
     //Statics
     public static Storage Storage;
@@ -216,7 +217,8 @@ public class SignShop extends JavaPlugin{
         AllowVariableAmounts = config.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
         AllowEnchantedRepair = config.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
         DisableEssentialsSigns = config.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
-        AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);        
+        AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
+        AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
     }
     
     public static SignShop getInstance() {
@@ -262,6 +264,7 @@ public class SignShop extends JavaPlugin{
         HookManager.addHook("Lockette");
         HookManager.addHook("WorldGuard");
         HookManager.addHook("Deadbolt");
+        HookManager.addHook("Residence");
     }
     
     private void setupSpecialsOps() {
@@ -316,7 +319,7 @@ public class SignShop extends JavaPlugin{
         LinkableMaterials.put(Material.SIGN, "sign");
         LinkableMaterials.put(Material.SIGN_POST, "sign");
         LinkableMaterials.put(Material.WALL_SIGN, "sign");        
-        LinkableMaterials.put(Material.STEP, "slab");        
+        LinkableMaterials.put(Material.STEP, "slab");           
     }
     
     private void copyPDF() {
@@ -367,6 +370,10 @@ public class SignShop extends JavaPlugin{
     
     public static Boolean getAllowUnsafeEnchantments() {
         return AllowUnsafeEnchantments;
+    }
+    
+    public static Boolean getAllowMultiWorldShops() {
+        return AllowMultiWorldShops;
     }
     
     public class TransferFormatter extends Formatter {    
