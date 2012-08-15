@@ -1,6 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
-import com.earth2me.essentials.craftbukkit.SetExpFix;
+import org.wargamer2010.essentials.SetExpFix;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class givePlayerXP implements SignShopOperation {    

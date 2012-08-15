@@ -176,6 +176,11 @@ public class SignShopPlayerListener implements Listener {
                     itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                     return;
                 }
+                
+                if(SignShop.getEnablePermits() && !ssPlayer.hasPerm("SignShop.Permit", true)) {
+                    ssPlayer.sendMessage(SignShop.Errors.get("need_permit"));
+                    return;
+                }
 
                 Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);            
                 if(SignShopOperations == null) {
@@ -254,6 +259,11 @@ public class SignShopPlayerListener implements Listener {
             }
             
             List<String> operation = SignShop.Operations.get(sOperation);
+            
+            if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", true)) {
+                ssPlayer.sendMessage(SignShop.Errors.get("no_permit_owner"));
+                return;
+            }
             
             Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);            
             if(SignShopOperations == null) {
