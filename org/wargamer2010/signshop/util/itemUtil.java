@@ -85,7 +85,7 @@ public class itemUtil {
                 bStockOK = false;
             iiInventory.setContents(isBackup);        
             return bStockOK;
-        } catch(NullPointerException ex) {
+        } catch(NullPointerException ex) {            
             // Chest is not available, contents are NULL. So let's assume the Stock is not OK
             return false;
         }
