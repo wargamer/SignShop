@@ -16,6 +16,7 @@ import org.bukkit.Location;
 import org.bukkit.event.block.Action;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
+import org.bukkit.event.world.ChunkUnloadEvent;
 
 import java.util.*;
 
@@ -259,6 +260,13 @@ public class SignShopPlayerListener implements Listener {
                 ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                 return;
             }
+            
+            for(Block bContainable : seller.getContainables())
+                if(!bContainable.getLocation().getChunk().isLoaded())                    
+                    bContainable.getLocation().getChunk().load();
+            for(Block bActivatable : seller.getActivatables())
+                if(!bActivatable.getLocation().getChunk().isLoaded())
+                    bActivatable.getLocation().getChunk().load();
             
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null){
                 event.setCancelled(true);
