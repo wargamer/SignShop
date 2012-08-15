@@ -51,6 +51,8 @@ public class SignShop extends JavaPlugin{
     private static boolean AllowEnchantedRepair = true;
     private static boolean DisableEssentialsSigns = true;
     private static boolean AllowMultiWorldShops = true;
+    private static boolean EnablePermits = false;
+    
 
     //Statics
     public static Storage Storage;
@@ -219,6 +221,7 @@ public class SignShop extends JavaPlugin{
         DisableEssentialsSigns = config.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
         AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
         AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
+        EnablePermits = config.getBoolean("EnablePermits", EnablePermits);
     }
     
     public static SignShop getInstance() {
@@ -374,6 +377,10 @@ public class SignShop extends JavaPlugin{
     
     public static Boolean getAllowMultiWorldShops() {
         return AllowMultiWorldShops;
+    }
+    
+    public static Boolean getEnablePermits() {
+        return EnablePermits;
     }
     
     public class TransferFormatter extends Formatter {    

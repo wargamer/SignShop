@@ -1,6 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
-import net.ess3.craftbukkit.SetExpFix;
+import org.bukkit.entity.Player;
+import org.wargamer2010.essentials.SetExpFix;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class takePlayerXP implements SignShopOperation {    
@@ -44,13 +45,15 @@ public class takePlayerXP implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.get_bSign());        
         Integer setAmount = 0;
+        
         if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("raw")) {            
-            setAmount = (SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer()) - XP.intValue());
+            setAmount = (SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer()) - XP.intValue());                        
             SetExpFix.setTotalExperience(ssArgs.get_ssPlayer().getPlayer(), setAmount);            
         } else {
             setAmount = (ssArgs.get_ssPlayer().getPlayer().getLevel() - XP.intValue());
             ssArgs.get_ssPlayer().getPlayer().setLevel(setAmount);
         }
+        
         ssArgs.setMessagePart("!hasxp", setAmount.toString());
         ssArgs.setMessagePart("!xp", XP.toString());        
         return true;

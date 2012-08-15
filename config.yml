@@ -11,6 +11,7 @@ DisableEssentialsSigns: true
 AllowUnsafeEnchantments: false
 EnableSignStacking: false
 AllowMultiWorldShops: false
+EnablePermits: false
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -212,6 +213,8 @@ errors:
   no_item_to_disenchant: You need to be holding the item you want to disenchant!
   nothing_to_disenchant: That item can not be disenchanted!
   multiworld_not_allowed: MultiWorld shops are not allowed on this server!
+  no_permit_owner: The owner of this shop no longer has a permit!
+  need_permit: You need a permit to set up this shop!
 commands:
   TpToOwner:
   - tp !player !owner
