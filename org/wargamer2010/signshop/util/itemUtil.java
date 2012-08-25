@@ -349,6 +349,8 @@ public class itemUtil {
                         return;
                     SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
                                                                         null, null, temp, signshopUtil.getOperation(sLines[0]), null);
+                    if(seller.getMisc() != null)
+                        ssArgs.miscSettings = seller.getMisc();
                     Boolean reqOK = true;
                     for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
                         ssArgs.operationParameters = ssOperation.getValue();

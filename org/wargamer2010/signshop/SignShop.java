@@ -52,6 +52,7 @@ public class SignShop extends JavaPlugin{
     private static boolean DisableEssentialsSigns = true;
     private static boolean AllowMultiWorldShops = true;
     private static boolean EnablePermits = false;
+    private static boolean PreventVillagerTrade = false;
     
 
     //Statics
@@ -139,7 +140,7 @@ public class SignShop extends JavaPlugin{
         SignShop.ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
                 
         //Create a storage locker for shops        
-        SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"),this);
+        SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
         SignShop.Storage.Save();
         
         try {
@@ -222,6 +223,7 @@ public class SignShop extends JavaPlugin{
         AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
         AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
         EnablePermits = config.getBoolean("EnablePermits", EnablePermits);
+        PreventVillagerTrade = config.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
     }
     
     public static SignShop getInstance() {
@@ -381,6 +383,10 @@ public class SignShop extends JavaPlugin{
     
     public static Boolean getEnablePermits() {
         return EnablePermits;
+    }
+    
+    public static Boolean getPreventVillagerTrade() {
+        return PreventVillagerTrade;
     }
     
     public class TransferFormatter extends Formatter {    

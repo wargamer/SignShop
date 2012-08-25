@@ -89,7 +89,7 @@ public class configUtil {
                 tempStringHashMap.put(entry.getKey(), tempmap);                
             }
         } catch(ClassCastException ex) {
-            SignShop.log("Incorrect section in config found.", Level.WARNING);
+            
         }
         return tempStringHashMap;
     }

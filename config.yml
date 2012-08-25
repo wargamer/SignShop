@@ -12,6 +12,7 @@ AllowUnsafeEnchantments: false
 EnableSignStacking: false
 AllowMultiWorldShops: false
 EnablePermits: false
+PreventVillagerTrade: false
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -200,7 +201,7 @@ errors:
   already_full_health: Your health is already full!
   saving: Saving shops...
   saved: Shops saved!
-  shop_removed: Removed an invalid Shop.
+  shop_removed: Removed an invalid Shop! It should be in '!world' at (!x, !y, !z).
   invalid_item_to_repair: That item cannot be repaired!
   no_item_to_repair: You need to be holding the item you want to repair!
   backup_fail: Failed to backup Storage!
@@ -215,6 +216,7 @@ errors:
   multiworld_not_allowed: MultiWorld shops are not allowed on this server!
   no_permit_owner: The owner of this shop no longer has a permit!
   need_permit: You need a permit to set up this shop!
+  villager_trading_disabled: Trading with Villagers is not enabled on this server!
 commands:
   TpToOwner:
   - tp !player !owner
