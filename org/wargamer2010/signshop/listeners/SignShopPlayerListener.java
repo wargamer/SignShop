@@ -5,8 +5,11 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
@@ -16,7 +19,6 @@ import org.bukkit.Location;
 import org.bukkit.event.block.Action;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
-import org.bukkit.event.world.ChunkUnloadEvent;
 
 import java.util.*;
 
@@ -115,6 +117,20 @@ public class SignShopPlayerListener implements Listener {
             return true;
         }
         return false;
+    }
+    
+    @EventHandler(priority = EventPriority.HIGH)
+    public void onPlayerVillagerTrade(PlayerInteractEntityEvent event) {
+        if(event.getPlayer() == null || event.getRightClicked() == null)
+            return;
+        Entity ent = event.getRightClicked();
+        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+        if(SignShop.getPreventVillagerTrade() && ent.getType() == EntityType.VILLAGER) {
+            if(!event.isCancelled()) {
+                ssPlayer.sendMessage(SignShop.Errors.get("villager_trading_disabled"));
+                event.setCancelled(true);
+            }
+        }
     }
 
     @EventHandler(priority = EventPriority.HIGH)
@@ -227,16 +243,16 @@ public class SignShopPlayerListener implements Listener {
                     bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
-                }
+                }                
                 if(!bSetupOK)
-                    return;
+                    return;                
                 ssArgs.setMessagePart("!customer", ssPlayer.getName());
                 ssArgs.setMessagePart("!owner", player.getName());
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
                 if(ssArgs.get_isItems() == null)
                     ssArgs.set_isItems(new ItemStack[]{new ItemStack(Material.DIRT,1)});
-                SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables(), ssArgs.get_activatables(), ssArgs.get_isItems(), ssArgs.miscSettings);
+                SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
                 removePlayerFromClickmap(player);                                
                 ssPlayer.sendMessage(signshopUtil.getMessage("setup", ssArgs.get_sOperation(), ssArgs.messageParts));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
@@ -260,7 +276,7 @@ public class SignShopPlayerListener implements Listener {
             
             List<String> operation = SignShop.Operations.get(sOperation);
             
-            if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", true)) {
+            if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permit_owner"));
                 return;
             }

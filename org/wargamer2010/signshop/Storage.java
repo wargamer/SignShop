@@ -25,9 +25,7 @@ import java.util.List;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class Storage{
-    private final SignShop plugin;
-
+public class Storage {
     private FileConfiguration yml;
     private File ymlfile;
 
@@ -36,9 +34,7 @@ public class Storage{
     
     private Boolean safetosave = true;
 
-    public Storage(File ymlFile,SignShop instance){
-        plugin = instance;
-
+    public Storage(File ymlFile) {
         if(!ymlFile.exists()) {
             try {
                 ymlFile.createNewFile();
@@ -127,14 +123,39 @@ public class Storage{
                             miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
                     }
                 }
-            } catch(StorageException caughtex) {                                
-                SignShop.log(SignShop.Errors.get("shop_removed"), Level.INFO);
+            } catch(StorageException caughtex) { 
+                try {
+                    SignShop.log(getInvalidError(SignShop.Errors.get("shop_removed"), ((List<String>)getSetting(sellerSettings, "sign")).get(0), ((List<String>)getSetting(sellerSettings, "shopworld")).get(0)), Level.INFO);
+                } catch(StorageException lastex) { 
+                    SignShop.log(SignShop.Errors.get("shop_removed"), Level.INFO);
+                }                
                 needSave = true;
                 continue;
             }
             addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings);
         }
         return needSave;
+    }
+    
+    private String getInvalidError(String template, String location, String world) {
+        String[] locations = new String[4];
+        String[] coords = location.split("/");
+        locations[0] = world;
+        if(coords.length > 2) {
+            locations[1] = coords[0];
+            locations[2] = coords[1];
+            locations[3] = coords[2];
+            return this.getInvalidError(template, locations);
+        }
+        return template;
+    }
+    
+    private String getInvalidError(String template, String[] locations) {
+        return template
+                .replace("!world", locations[0])
+                .replace("!x", locations[1])
+                .replace("!y", locations[2])
+                .replace("!z", locations[3]);
     }
     
     public Boolean legacyLoad() {
@@ -208,8 +229,8 @@ public class Storage{
                 needToSave = true;
             }
 
-            if(invalidShop){
-                SignShop.log(SignShop.Errors.get("shop_removed"), Level.INFO);
+            if(invalidShop) {
+                SignShop.log(getInvalidError(SignShop.Errors.get("shop_removed"), sSignLocation), Level.INFO);
                 continue;
             }
 
@@ -217,48 +238,51 @@ public class Storage{
 
             //If no longer valid, remove this sign (this would happen from worldedit, movecraft, etc)
             if(bSign.getType() != Material.SIGN_POST && bSign.getType() != Material.WALL_SIGN){
-                plugin.log(SignShop.Errors.get("shop_removed"), Level.INFO, 2);
+                SignShop.log(getInvalidError(SignShop.Errors.get("shop_removed"), sSignLocation), Level.INFO);
                 needToSave = true;
                 continue;
             }
 
-            MemorySection memsec = (MemorySection) tempSellers.get(sKey);
-            tempSeller = memsec.getValues(false);
+            try {
+                MemorySection memsec = (MemorySection) tempSellers.get(sKey);
+                tempSeller = memsec.getValues(false);
 
-            bChest = Bukkit.getServer().getWorld((String) tempSeller.get("chestworld")).getBlockAt(
-                (Integer) tempSeller.get("chestx"),
-                (Integer) tempSeller.get("chesty"),
-                (Integer) tempSeller.get("chestz"));
+                bChest = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(
+                    (Integer) tempSeller.get("chestx"),
+                    (Integer) tempSeller.get("chesty"),
+                    (Integer) tempSeller.get("chestz"));
 
-            datas = (ArrayList<String>) tempSeller.get("datas");
-            items = (ArrayList<Integer>) tempSeller.get("items");
-            amounts = (ArrayList<Integer>) tempSeller.get("amounts");
-            durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
-            enchantments = (ArrayList<String>) tempSeller.get("enchantments");
-            
-            isItems = new ItemStack[items.size()];
+                datas = (ArrayList<String>) tempSeller.get("datas");
+                items = (ArrayList<Integer>) tempSeller.get("items");
+                amounts = (ArrayList<Integer>) tempSeller.get("amounts");
+                durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
+                enchantments = (ArrayList<String>) tempSeller.get("enchantments");
+                isItems = new ItemStack[items.size()];
 
-            for(int i=0;i<items.size();i++){
-                isItems[i] = new ItemStack(items.get(i),amounts.get(i));
+                for(int i=0;i<items.size();i++){
+                    isItems[i] = new ItemStack(items.get(i),amounts.get(i));
 
-                if(datas != null && datas.get(i) != null)
-                    isItems[i].getData().setData(new Byte(datas.get(i)));
-                
-                if(durabilities != null && durabilities.get(i) != null)
-                    isItems[i].setDurability(durabilities.get(i).shortValue());
-                
-                if(enchantments != null && enchantments.get(i) != null)
-                    itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));                    
-            }
-            List<Block> seller_containables = new LinkedList();
-            List<Block> seller_activatables = new LinkedList();
-            if(bChest.getState() instanceof InventoryHolder)
-                seller_containables.add(bChest);
-            else
-                seller_activatables.add(bChest);
-            
-            addSeller((String) tempSeller.get("owner"), sSignLocation[0], bSign, seller_containables, seller_activatables, isItems);
-            //Storage.sellers.put(lSign, new Seller((String) tempSeller.get("owner"),sSignLocation[0],bChest,isItems));
+                    if(datas != null && datas.get(i) != null)
+                        isItems[i].getData().setData(new Byte(datas.get(i)));
+
+                    if(durabilities != null && durabilities.get(i) != null)
+                        isItems[i].setDurability(durabilities.get(i).shortValue());
+
+                    if(enchantments != null && enchantments.get(i) != null)
+                        itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));                    
+                }
+                List<Block> seller_containables = new LinkedList();
+                List<Block> seller_activatables = new LinkedList();
+                if(bChest.getState() instanceof InventoryHolder)
+                    seller_containables.add(bChest);
+                else
+                    seller_activatables.add(bChest);
+
+                addSeller((String) tempSeller.get("owner"), sSignLocation[0], bSign, seller_containables, seller_activatables, isItems);
+            } catch(NullPointerException ex) {
+                SignShop.log(getInvalidError(SignShop.Errors.get("shop_removed"), sSignLocation), Level.INFO);
+                continue;
+            }            
         }
         return needToSave;
         

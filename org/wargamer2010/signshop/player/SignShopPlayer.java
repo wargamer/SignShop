@@ -56,25 +56,60 @@ public class SignShopPlayer {
         return ssPlayer;
     }
     
+    public World getWorld() {
+        return (ssPlayer == null) ? null : ssPlayer.getWorld();
+    }
+    
+    public void setOp(Boolean OP) {
+        if(sPlayername.equals(""))
+            return;
+        if(ssPlayer == null)            
+            Bukkit.getOfflinePlayer(sPlayername).setOp(OP);
+        else
+            ssPlayer.setOp(OP);
+    }
+    
+    public Boolean isOp() {
+        if(sPlayername.equals(""))
+            return false;
+        if(ssPlayer == null)            
+            return Bukkit.getOfflinePlayer(sPlayername).isOp();
+        else
+            return ssPlayer.isOp();
+    }
+    
     public Boolean hasPerm(String perm, Boolean OPOperation) { 
-        if(Vault.economy == null)
+        if(ssPlayer == null)
+            return false;
+        return this.hasPerm(perm, ssPlayer.getWorld(), OPOperation);
+    }
+
+    public Boolean hasPerm(String perm, World world, Boolean OPOperation) {
+        if(Vault.permission == null)
             return false;
         if(sPlayername.equals(""))
             return true;
-        Boolean isOP = ssPlayer.isOp();
+        Boolean isOP = isOp();
         Boolean OPOverride = SignShop.getOPOverride();
+        // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
+        // So let's temporarily disable it so the outcome of the Vault call won't be influenced
         if(SignShop.USE_PERMISSIONS && isOP && !OPOverride)
-            ssPlayer.setOp(false);
+            setOp(false);
+        // If we're using Permissions, OPOverride is enabled and the Player has OP, he can do everything
         if(SignShop.USE_PERMISSIONS && OPOverride && isOP)
             return true;
-        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas(ssPlayer.getWorld(), sPlayername, perm)) {
-            ssPlayer.setOp(isOP);
+        // Using Permissions so check his permissions and restore his OP if he has it
+        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas(world, sPlayername, perm)) {
+            setOp(isOP);
             return true;
+        // Not using Permissions but he is OP, so he's allowed
         } else if(!SignShop.USE_PERMISSIONS && isOP)
             return true;
+        // Not using Permissions, he doesn't have OP but it's not an OP Operation
         else if(!SignShop.USE_PERMISSIONS && !OPOperation)
             return true;
-        ssPlayer.setOp(isOP);
+        // Reset OP
+        setOp(isOP);
         return false;
     }
     

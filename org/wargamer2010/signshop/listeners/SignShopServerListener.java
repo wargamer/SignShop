@@ -31,24 +31,14 @@ public class SignShopServerListener implements Listener {
 
     @EventHandler(priority = EventPriority.LOW)
     public void onPluginEnabled(PluginEnableEvent event) {
-        Plugin plugin = this.server.getPluginManager().getPlugin("Essentials");
-
-        if (this.ess == null) {
-            if (plugin != null) {
-                if (plugin.isEnabled()) {
-                    this.ess = (Essentials)plugin;
-                    essentialsCheck();
-                }
-            }
-        }
+        if(event.getPlugin().getName().equals("Essentials"))
+            this.ess = (Essentials)event.getPlugin();
     }
 
     @EventHandler(priority = EventPriority.LOW)
     public void onPluginDisabled(PluginDisableEvent event) {
-        Plugin plugin = this.server.getPluginManager().getPlugin("Essentials");
-        if (plugin != null)
-            if (plugin.isEnabled())
-                this.ess = null;
+        if(event.getPlugin().getName().equals("Essentials"))
+            this.ess = null;        
     }
 
     final public void setupPluginToHookInto() {

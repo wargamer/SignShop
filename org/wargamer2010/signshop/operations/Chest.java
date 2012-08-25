@@ -7,6 +7,7 @@ import java.util.logging.Level;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Arrays;
+import java.util.Map;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 
@@ -15,6 +16,19 @@ public class Chest implements SignShopOperation {
         ssArgs.get_ssPlayer().sendMessage("Could not complete operation, contact your System Administrator and checks the logs.");
         SignShop.log("Invalid Chest{}, check your config.yml!", Level.WARNING);
         return false;
+    }
+    
+    private Block checkChestAmount(SignShopArguments ssArgs, Integer iChestnumber) {
+        Block bHolder = null;
+        int iCount = 0;        
+        for(Block bTemp : ssArgs.get_containables_root()) {
+            if(bTemp.getState() instanceof InventoryHolder) {
+                iCount++;
+                if(iCount == iChestnumber)
+                    bHolder = bTemp;                                
+            }
+        }        
+        return bHolder;
     }
     
     @Override
@@ -32,15 +46,7 @@ public class Chest implements SignShopOperation {
         
         ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));
         
-        Block bHolder = null;
-        int iCount = 0;        
-        for(Block bTemp : ssArgs.get_containables_root()) {
-            if(bTemp.getState() instanceof InventoryHolder) {
-                iCount++;
-                if(iCount == iChestnumber)
-                    bHolder = bTemp;                                
-            }
-        }
+        Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder == null) {
             ssArgs.get_ssPlayer().sendMessage("You need at least " + (iChestnumber) + " chest(s) to setup this shop!");
             return false;
@@ -61,7 +67,7 @@ public class Chest implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {        
         Integer iChestnumber;
-        try {
+        try {            
             iChestnumber = Integer.parseInt(ssArgs.operationParameters.get(0));
         } catch(NumberFormatException ex) {
             return incorrectPar(ssArgs);
@@ -70,8 +76,11 @@ public class Chest implements SignShopOperation {
             return incorrectPar(ssArgs);
         if(!ssArgs.miscSettings.containsKey(("chest" + iChestnumber)))
             return incorrectPar(ssArgs);        
-        ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));
         
+        Block bHolder = checkChestAmount(ssArgs, iChestnumber);
+        if(bHolder == null)
+            return incorrectPar(ssArgs);
+        ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));        
         String misc = ssArgs.miscSettings.get(("chest" + iChestnumber));        
         String[] sItemss;
         if(!misc.contains(SignShopArguments.seperator)) {
@@ -83,6 +92,10 @@ public class Chest implements SignShopOperation {
             
         isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));        
         ssArgs.set_isItems(isItemss);
+        
+        LinkedList<Block> tempContainables = new LinkedList(); 
+        tempContainables.add(bHolder);
+        ssArgs.set_containables(tempContainables);
         return true;
     }
 }
