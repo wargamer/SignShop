@@ -4,6 +4,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockDamageEvent;
 import org.bukkit.event.block.BlockBurnEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -13,6 +14,7 @@ import org.bukkit.inventory.InventoryHolder;
 import java.util.List;
 import java.util.ArrayList;
 import org.bukkit.ChatColor;
+import org.bukkit.GameMode;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -77,6 +79,10 @@ public class SignShopBlockListener implements Listener {
         }
         Boolean bCanDestroy = canDestroy(event.getPlayer(), event.getBlock(), true);
         if(!bCanDestroy)
+            event.setCancelled(true);
+        else if(event.getPlayer().getItemInHand() != null 
+                && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
+                && event.getPlayer().getGameMode() == GameMode.CREATIVE)
             event.setCancelled(true);
     }
 
