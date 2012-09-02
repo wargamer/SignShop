@@ -11,6 +11,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.Location;
 import org.bukkit.block.Sign;
 import org.bukkit.World;
+import org.bukkit.inventory.InventoryHolder;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Map;
@@ -18,6 +19,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.blocks.SignShopChest;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -29,7 +32,7 @@ public class signshopUtil {
             return "";
         }        
         sSignOperation = ChatColor.stripColor(sSignOperation);
-        return sSignOperation.substring(1,sSignOperation.length()-1);
+        return sSignOperation.substring(1,sSignOperation.length()-1).toLowerCase();
     }
     
     public static void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
@@ -167,6 +170,8 @@ public class signshopUtil {
     }
     
     public static String fillInBlanks(String message, Map<String, String> messageParts) {
+        if(messageParts == null)
+            return message;
         for(Map.Entry<String, String> part : messageParts.entrySet()) {            
             message = message.replace(part.getKey(), part.getValue());
         }        
@@ -181,6 +186,8 @@ public class signshopUtil {
             return percentages;
         if(line.contains("/"))
             bits = Arrays.asList(line.split("/"));        
+        else 
+            bits.add(line);        
         for(int i = 0; i < bits.size() && i < 2; i++) {
             String bit = bits.get(i);                
             try {
@@ -205,26 +212,154 @@ public class signshopUtil {
         List<String> blocklocations = new LinkedList();
         List<Integer> percentages = new LinkedList();
         for(Block sharesign : clickedBlocks) {
-            Sign sign = (Sign)sharesign.getState();
-            List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
-            percentages.addAll(tempperc);
-            blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
-            if(tempperc.size() == 2 && (sign.getLine(1) == null || sign.getLine(2) == null))
-                ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
-            if(tempperc.size() == 1 && sign.getLine(2) != null)
-                ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
+            if(itemUtil.clickedSign(sharesign)) {
+                Sign sign = (Sign)sharesign.getState();
+                List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+                percentages.addAll(tempperc);
+                blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
+                if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                    ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
+                else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2)))
+                    ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
+            }
         }
         int sum = 0;
         for(Integer percentage : percentages)
             sum += percentage;
         if(sum > 100) {
-            ssPlayer.sendMessage("Sum of the percentages can never be greater than 100, please adjust the number on the fourth line.");
+            ssPlayer.sendMessage("Sum of the percentages can never be greater than 100, please adjust the number(s) on the fourth line.");
             return "";
         }        
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
         
         return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+    }
+    
+    private static Boolean lineIsEmpty(String line) {
+        return (line == null || line.length() == 0);
+    }
+    
+    private static Map<String, Integer> getShares(Sign sign, SignShopPlayer ssPlayer) {        
+        List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+        HashMap<String, Integer> shares = new HashMap<String, Integer>();
+        
+        if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2)))) {
+            shares.put((sign.getLine(1) == null ? sign.getLine(2) : sign.getLine(1)), tempperc.get(0));
+            ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
+        } else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2))) {
+            shares.put(sign.getLine(1), tempperc.get(0));
+            ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
+        } else if(tempperc.size() == 2) {
+            shares.put(sign.getLine(1), tempperc.get(0));
+            shares.put(sign.getLine(2), tempperc.get(1));
+        } else if(tempperc.size() == 1) {
+            shares.put(sign.getLine(1), tempperc.get(0));
+        }
+        return shares;
+    }
+    
+    public static List<Block> getCurrentShareSigns(Seller seller) {
+        List<Block> signs = new LinkedList<Block>();
+        if(seller.getMisc().containsKey("sharesigns")) {
+            String imploded = seller.getMisc().get("sharesigns");
+            String[] exploded;
+            if(imploded.contains(SignShopArguments.seperator))
+                exploded = imploded.split(SignShopArguments.seperator);
+            else {
+                exploded = new String[1];
+                exploded[0] = imploded;
+            }
+            List<String> tempList = Arrays.asList(exploded);
+            signs = getBlocksFromLocStringList(tempList, Bukkit.getServer().getWorld(seller.getWorld()));
+        }
+        return signs;    
+    }
+    
+    public static Boolean distributeMoney(Seller seller, Float fPrice, SignShopPlayer ssPlayer) {
+        List<Block> shareSigns = getCurrentShareSigns(seller);
+        SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
+        if(shareSigns.isEmpty()) {
+            return ssOwner.mutateMoney(fPrice);
+        } else {
+            Boolean bTotalTransaction = false;
+            Map<String, Integer> shares = new HashMap<String, Integer>();
+            for(Block sharesign : shareSigns) {
+                if(itemUtil.clickedSign(sharesign)) {
+                    shares.putAll(getShares((Sign)sharesign.getState(), ssPlayer));
+                }
+            }
+            Integer totalPercentage = 0;
+            for(Map.Entry<String, Integer> share : shares.entrySet()) {
+                
+                Float amount = (fPrice / 100 * share.getValue());                
+                SignShopPlayer sharee = new SignShopPlayer(share.getKey());
+                if(sharee.getPlayer() == null && Bukkit.getServer().getOfflinePlayer(share.getKey()) == null)
+                    ssPlayer.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
+                else {
+                    ssPlayer.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
+                    if(!ssPlayer.getName().equals(ssOwner.getName()))                        
+                        ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
+                    totalPercentage += share.getValue();
+                    bTotalTransaction = sharee.mutateMoney(amount);
+                    if(!bTotalTransaction)
+                        return false;
+                }
+            }
+            if(totalPercentage != 100) {                
+                Float amount = fPrice;
+                if(totalPercentage > 0)
+                    amount = (fPrice / 100 * (100 - totalPercentage));
+                return ssOwner.mutateMoney(amount);
+            } else
+                return true;            
+        }
+    }
+    
+    public static List<Block> getBlocksFromLocStringList(List<String> sLocs, World world) {
+        List<Block> blocklist = new LinkedList();
+        for(String loc : sLocs) {
+            Location temp = signshopUtil.convertStringToLocation(loc, world);
+            if(temp != null)
+                blocklist.add(temp.getBlock());
+        }
+        return blocklist;
+    }
+    
+    public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
+        if(SignShop.LinkableMaterials.containsKey(bBlock.getType())) {
+            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink."+SignShop.LinkableMaterials.get(bBlock.getType()), true)) {                
+                ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                return false;
+            }
+            return true;
+        } else
+            return false;
+    }
+    
+    public static Boolean registerClickedMaterial(PlayerInteractEvent event) {
+        Block bClicked = event.getClickedBlock();
+        Player player = event.getPlayer();
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        if(clickedSignShopMat(bClicked, ssPlayer)) {            
+            event.setCancelled(true);
+            if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
+                clicks.mClicksPerLocation.remove(bClicked.getLocation());
+                ssPlayer.sendMessage("Removed stored location");
+            } else {
+                if(bClicked.getState() instanceof InventoryHolder) {
+                    SignShopChest ssChest = new SignShopChest(bClicked);
+                    if(!ssChest.allowedToLink(ssPlayer)) {
+                        ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                        return false;
+                    }
+                }
+                clicks.mClicksPerLocation.put(bClicked.getLocation(), player);                    
+                ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
+            }
+            return true;
+        }
+        return false;
     }
    
 }

@@ -67,8 +67,17 @@ public class SignShopBlockListener implements Listener {
     }
     
     @EventHandler(priority = EventPriority.NORMAL)
-    public void onBlockBreak(BlockBreakEvent event){
-        if(event.getBlock() instanceof InventoryHolder) {
+    public void onBlockBreak(BlockBreakEvent event) {        
+        if(event.getPlayer().getItemInHand() != null 
+                && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
+                && event.getPlayer().getGameMode() == GameMode.CREATIVE) {
+            event.setCancelled(true);
+            return;
+        }
+        Boolean bCanDestroy = canDestroy(event.getPlayer(), event.getBlock(), true);
+        if(!bCanDestroy)
+            event.setCancelled(true);        
+        if(!event.isCancelled() && event.getBlock() instanceof InventoryHolder) {            
             List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());
             if(signs != null)
                 for (Block temp : signs) {
@@ -77,13 +86,6 @@ public class SignShopBlockListener implements Listener {
                 }
             return;
         }
-        Boolean bCanDestroy = canDestroy(event.getPlayer(), event.getBlock(), true);
-        if(!bCanDestroy)
-            event.setCancelled(true);
-        else if(event.getPlayer().getItemInHand() != null 
-                && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
-                && event.getPlayer().getGameMode() == GameMode.CREATIVE)
-            event.setCancelled(true);
     }
 
     @EventHandler(priority = EventPriority.NORMAL)

@@ -19,8 +19,8 @@ public class configUtil {
                 MemorySection memsec = (MemorySection)entry.getValue();
                 HashMap<String,String> tempmap = new HashMap<String, String>();
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
-                    tempmap.put(subentry.getKey(), (String)subentry.getValue());
-                tempHasinHash.put(entry.getKey(), tempmap);
+                    tempmap.put(subentry.getKey().toLowerCase(), (String)subentry.getValue());
+                tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
         } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
@@ -38,7 +38,7 @@ public class configUtil {
                 MemorySection memsec = (MemorySection)entry.getValue();
                 HashMap<String,Float> tempmap = new HashMap<String, Float>();
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
-                    tempmap.put(subentry.getKey(), ((Double)subentry.getValue()).floatValue());
+                    tempmap.put(subentry.getKey().toLowerCase(), ((Double)subentry.getValue()).floatValue());
                 tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
         } catch(ClassCastException ex) {            
@@ -101,7 +101,7 @@ public class configUtil {
                 return tempStringStringHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet())
-                tempStringStringHash.put(entry.getKey(), (String)entry.getValue());
+                tempStringStringHash.put(entry.getKey().toLowerCase(), (String)entry.getValue());
         } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }

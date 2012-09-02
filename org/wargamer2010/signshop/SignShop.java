@@ -277,7 +277,7 @@ public class SignShop extends JavaPlugin{
         SpecialsOps.add("copySign");
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add("linkShowcase");
-        // SpecialsOps.add("linkShareSign");
+        SpecialsOps.add("linkShareSign");
         SpecialsOps.add("changeOwner");
     }
     
@@ -305,7 +305,7 @@ public class SignShop extends JavaPlugin{
                     }
                 }
                 if(!failedOp && !tempCheckedSignOperation.isEmpty())
-                    SignShop.Operations.put(sKey, tempCheckedSignOperation);                
+                    SignShop.Operations.put(sKey.toLowerCase(), tempCheckedSignOperation);
                 tempCheckedSignOperation = new LinkedList();
                 failedOp = false;
             }

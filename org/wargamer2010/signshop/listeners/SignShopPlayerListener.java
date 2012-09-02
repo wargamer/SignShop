@@ -9,7 +9,6 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
@@ -26,7 +25,6 @@ import org.bukkit.entity.EntityType;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.blocks.SignShopChest;
 
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
@@ -47,16 +45,7 @@ public class SignShopPlayerListener implements Listener {
             return true;
     }
     
-    private Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
-        if(SignShop.LinkableMaterials.containsKey(bBlock.getType())) {
-            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink."+SignShop.LinkableMaterials.get(bBlock.getType()), true)) {                
-                ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
-                return false;
-            }
-            return true;
-        } else
-            return false;
-    }
+    
     
     private void removePlayerFromClickmap(Player player) {
         clicks.mClicksPerLocation.values().removeAll(Collections.singleton(player));
@@ -90,33 +79,6 @@ public class SignShopPlayerListener implements Listener {
         }
         
         return ranSomething;
-    }
-    
-    private Boolean registerClickedMaterial(PlayerInteractEvent event, Seller seller) {
-        if(seller != null)
-            return false;
-        Block bClicked = event.getClickedBlock();
-        Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
-        if(clickedSignShopMat(bClicked, ssPlayer)) {            
-            event.setCancelled(true);
-            if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
-                clicks.mClicksPerLocation.remove(bClicked.getLocation());
-                ssPlayer.sendMessage("Removed stored location");
-            } else {
-                if(bClicked.getState() instanceof InventoryHolder) {
-                    SignShopChest ssChest = new SignShopChest(bClicked);
-                    if(!ssChest.allowedToLink(ssPlayer)) {
-                        ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
-                        return false;
-                    }
-                }
-                clicks.mClicksPerLocation.put(bClicked.getLocation(), player);                    
-                ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
-            }
-            return true;
-        }
-        return false;
     }
     
     @EventHandler(priority = EventPriority.HIGH)
@@ -175,19 +137,19 @@ public class SignShopPlayerListener implements Listener {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 if(!SignShop.Operations.containsKey(sOperation)) {
-                    if(!runSpecialOperations(event) && !registerClickedMaterial(event, seller))
+                    if(!runSpecialOperations(event) && !signshopUtil.registerClickedMaterial(event))
                         ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
                     return;
                 }
                 
                 List<String> operation = SignShop.Operations.get(sOperation);                
-                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
+                if(!operation.contains("playerisop") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
                     return;
                 }
                 
                 int iLimit = ssPlayer.reachedMaxShops();        
-                if(!operation.contains("playerIsOp") && iLimit > 0) {
+                if(!operation.contains("playerisop") && iLimit > 0) {
                     ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(iLimit)));
                     itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                     return;
@@ -212,7 +174,7 @@ public class SignShopPlayerListener implements Listener {
                     Block bBlockat = loc.getBlock();
                     if(bBlockat.getState() instanceof InventoryHolder)                        
                         containables.add(bBlockat);
-                    else if(clickedSignShopMat(bBlockat, ssPlayer))
+                    else if(signshopUtil.clickedSignShopMat(bBlockat, ssPlayer))
                         activatables.add(bBlockat);
                     if(!multiWorld && !bBlockat.getWorld().getName().equals(bClicked.getWorld().getName())) {
                         if(SignShop.getAllowMultiWorldShops())
@@ -226,10 +188,10 @@ public class SignShopPlayerListener implements Listener {
                 
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables, 
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace());
-                
+                                
                 if(!multiWorld) {
                     for(Block bCheckme : containables) {
-                        if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
+                        if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerisop")) {
                             ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(SignShop.getMaxSellDistance())));
                             itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                             return;
@@ -258,7 +220,7 @@ public class SignShopPlayerListener implements Listener {
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
                 return;
             } 
-            registerClickedMaterial(event, seller);            
+            signshopUtil.registerClickedMaterial(event);            
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.INK_SACK && event.getItem().getType() != Material.REDSTONE))) {
             SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());            
             sLines = ((Sign) bClicked.getState()).getLines();
@@ -276,7 +238,7 @@ public class SignShopPlayerListener implements Listener {
             
             List<String> operation = SignShop.Operations.get(sOperation);
             
-            if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
+            if(!operation.contains("playerisop") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permit_owner"));
                 return;
             }
@@ -299,6 +261,7 @@ public class SignShopPlayerListener implements Listener {
             }            
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
                                                                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());            
+            
             ssArgs.setMessagePart("!customer", ssPlayer.getName());
             ssArgs.setMessagePart("!owner", ssOwner.getName());
             ssArgs.setMessagePart("!player", ssPlayer.getName());            
@@ -307,8 +270,8 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.miscSettings = seller.getMisc();
             Boolean bRequirementsOK = false;
             Boolean bRunOK = false;
-            for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.operationParameters = ssOperation.getValue();
+            for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {                
+                ssArgs.operationParameters = ssOperation.getValue();                
                 bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
                 if(!bRequirementsOK)
                     return;
@@ -361,10 +324,13 @@ public class SignShopPlayerListener implements Listener {
             SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.get_fPrice()));
             ssPlayer.sendMessage(signshopUtil.getMessage("transaction", ssArgs.get_sOperation(), ssArgs.messageParts));
             ssOwner.sendMessage(signshopUtil.getMessage("transaction_owner", ssArgs.get_sOperation(), ssArgs.messageParts));            
+            return;
         }
         if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
-            runSpecialOperations(event);
-        }
+            if(!runSpecialOperations(event)) {
+                signshopUtil.registerClickedMaterial(event);
+            }
+        }        
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && bClicked.getState() instanceof InventoryHolder) {            
             itemUtil.updateStockStatusPerChest(bClicked, null);            
         }
