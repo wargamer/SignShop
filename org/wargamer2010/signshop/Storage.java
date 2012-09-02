@@ -112,8 +112,8 @@ public class Storage {
                 seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
                 if(!itemUtil.clickedSign(seller_sign))
                     throw storageex;
-                seller_activatables = getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
-                seller_containables = getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
+                seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
+                seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
                 seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
                 miscsettings = new HashMap<String, String>();
                 if(sellerSettings.containsKey("misc")) {
@@ -401,16 +401,6 @@ public class Storage {
             if (inChannel != null) inChannel.close();
             if (outChannel != null) outChannel.close();
         }
-    }
-        
-    private List<Block> getBlocksFromLocStringList(List<String> sLocs, World world) {
-        List<Block> blocklist = new LinkedList();
-        for(String loc : sLocs) {
-            Location temp = signshopUtil.convertStringToLocation(loc, world);
-            if(temp != null)
-                blocklist.add(temp.getBlock());
-        }
-        return blocklist;
     }
     
     private List<String> MapToList(Map<String, String> map) {

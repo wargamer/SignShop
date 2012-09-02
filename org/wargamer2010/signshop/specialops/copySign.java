@@ -50,7 +50,7 @@ public class copySign implements SignShopSpecialOp {
             if(SignShop.Operations.containsKey(signshopUtil.getOperation(sNewSign[0]))) {
                 String sOperation = signshopUtil.getOperation(sNewSign[0]);
                 List<String> operation = SignShop.Operations.get(sOperation);                
-                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
+                if(!operation.contains("playerisop") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
                     return false;
                 }

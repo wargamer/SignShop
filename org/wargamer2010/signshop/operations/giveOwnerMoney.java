@@ -1,6 +1,9 @@
 package org.wargamer2010.signshop.operations;
 
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.economyUtil;
+import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.Seller;
 
 public class giveOwnerMoney implements SignShopOperation {    
     @Override
@@ -20,7 +23,13 @@ public class giveOwnerMoney implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
         Float fPrice = (ssArgs.get_fPrice() * fPricemod);
-        Boolean bTransaction = ssArgs.get_ssOwner().mutateMoney(fPrice);
+        Seller seller = SignShop.Storage.getSeller(ssArgs.get_bSign().getLocation());
+        Boolean bTransaction = false;
+        if(seller != null && seller.getMisc().containsKey("sharesigns")) {
+            bTransaction = signshopUtil.distributeMoney(seller, fPrice, ssArgs.get_ssPlayer());
+        } else {
+            bTransaction = ssArgs.get_ssOwner().mutateMoney(fPrice);
+        }
         if(!bTransaction)
             ssArgs.get_ssPlayer().sendMessage("The money transaction failed, please contact the System Administrator");        
         return bTransaction;
