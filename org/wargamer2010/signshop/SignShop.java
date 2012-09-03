@@ -198,11 +198,11 @@ public class SignShop extends JavaPlugin{
                 ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
         } else if(args[0].equalsIgnoreCase("stats") || args[0].equalsIgnoreCase("version") || args[0].equalsIgnoreCase("help")) {
             PluginDescriptionFile pdfFile = this.getDescription();
-            String message = "Amount of Shops: " + Storage.shopCount() 
-                    + ", SignShop version: " + pdfFile.getVersion() 
-                    + ", Vault version: " + vault.getVersion()
-                    + ", SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "")
-                    + ", SignShop Home: http://tiny.cc/signshop";
+            String message = "Amount of Shops: " + Storage.shopCount() + "\n"
+                    + "SignShop version: " + pdfFile.getVersion() + "\n"
+                    + "Vault version: " + vault.getVersion() + "\n"
+                    + "SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "") + "\n"
+                    + "SignShop Home: http://tiny.cc/signshop" + "\n";
             if((sender instanceof Player))
                 ((Player)sender).sendMessage(ChatColor.GREEN + message);
             else
