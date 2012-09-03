@@ -190,14 +190,24 @@ public class SignShop extends JavaPlugin{
             ((Player)sender).sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
             return true;
         }
-        if(args[0].equals("reload")) {
+        if(args[0].equalsIgnoreCase("reload")) {
             Bukkit.getServer().getPluginManager().disablePlugin(this);
             Bukkit.getServer().getPluginManager().enablePlugin(this);
+            SignShop.log("Reloaded", Level.INFO);
+            if((sender instanceof Player))
+                ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
+        } else if(args[0].equalsIgnoreCase("stats")) {
+            PluginDescriptionFile pdfFile = this.getDescription();
+            String message = "Amount of Shops: " + Storage.shopCount() 
+                    + ", SignShop version: " + pdfFile.getVersion() 
+                    + ", Vault version: " + vault.getVersion()
+                    + " and SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "");
+            if((sender instanceof Player))
+                ((Player)sender).sendMessage(ChatColor.GREEN + message);
+            else
+                SignShop.log(message, Level.INFO);
         } else
             return false;
-        SignShop.log("Reloaded", Level.INFO);
-        if((sender instanceof Player))
-            ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
         return true;
     }
     
