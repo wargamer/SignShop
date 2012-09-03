@@ -201,7 +201,8 @@ public class SignShop extends JavaPlugin{
             String message = "Amount of Shops: " + Storage.shopCount() 
                     + ", SignShop version: " + pdfFile.getVersion() 
                     + ", Vault version: " + vault.getVersion()
-                    + " and SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "");
+                    + ", SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "")
+                    + ", SignShop Home: http://tiny.cc/signshop";
             if((sender instanceof Player))
                 ((Player)sender).sendMessage(ChatColor.GREEN + message);
             else
