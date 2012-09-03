@@ -141,7 +141,6 @@ public class SignShop extends JavaPlugin{
                 
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
-        SignShop.Storage.Save();
         
         try {
             FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
@@ -243,10 +242,8 @@ public class SignShop extends JavaPlugin{
     }
     
     @Override
-    public void onDisable(){
-        SignShop.Storage.Save();
+    public void onDisable() {
         closeHandlers();
-        
         log("Disabled", Level.INFO);
     }
 

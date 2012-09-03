@@ -17,7 +17,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.util.itemUtil;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBlockListener implements Listener {
     
@@ -85,6 +87,23 @@ public class SignShopBlockListener implements Listener {
                     itemUtil.setSignStatus(temp, ChatColor.BLACK);
                 }
             return;
+        } else if(!event.isCancelled() && itemUtil.clickedSign(event.getBlock())) {
+            List<Block> shopsWithSharesign = SignShop.Storage.getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(event.getBlock().getLocation()));
+            for(Block bTemp : shopsWithSharesign) {
+                Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
+                String temp = seller.getMisc().get("sharesigns");
+                temp = temp.replace(signshopUtil.convertLocationToString(event.getBlock().getLocation()), "");
+                temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
+                if(temp.endsWith(SignShopArguments.seperator))
+                    temp = temp.substring(0, temp.length()-1);
+                if(temp.charAt(0) == SignShopArguments.seperator.charAt(0))
+                    temp = temp.substring(1, temp.length());
+                if(temp.length() == 0)
+                    seller.getMisc().remove("sharesigns");
+                else
+                    seller.getMisc().put("sharesigns", temp);
+            }
+            SignShop.Storage.DelayedSave();
         }
     }
 

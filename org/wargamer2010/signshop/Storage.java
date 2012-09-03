@@ -21,6 +21,7 @@ import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -28,6 +29,9 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class Storage {
     private FileConfiguration yml;
     private File ymlfile;
+    
+    private static ReentrantLock locker = new ReentrantLock();
+    private int lastID = -1;
 
     private static Map<Location,Seller> sellers;
     public static String itemSeperator = "&";
@@ -57,7 +61,7 @@ public class Storage {
             } catch(IOException ex) {
                 SignShop.log(SignShop.Errors.get("backup_fail"), Level.WARNING);                
             }
-            saveToFile();
+            Save();
         }
     }
     
@@ -132,7 +136,7 @@ public class Storage {
                 needSave = true;
                 continue;
             }
-            addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings);
+            addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
         }
         return needSave;
     }
@@ -278,7 +282,7 @@ public class Storage {
                 else
                     seller_activatables.add(bChest);
 
-                addSeller((String) tempSeller.get("owner"), sSignLocation[0], bSign, seller_containables, seller_activatables, isItems);
+                addSeller((String) tempSeller.get("owner"), sSignLocation[0], bSign, seller_containables, seller_activatables, isItems, null, false);
             } catch(NullPointerException ex) {
                 SignShop.log(getInvalidError(SignShop.Errors.get("shop_removed"), sSignLocation), Level.INFO);
                 continue;
@@ -288,7 +292,7 @@ public class Storage {
         
     }
 
-    public void Save() {
+    private void Save() {
         
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
@@ -327,27 +331,39 @@ public class Storage {
         saveToFile();
     }
     
-    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems) {
-        addSeller(sPlayer, sWorld, bSign, containables, activatables, isItems, null);
+    public void DelayedSave() {
+        if(!locker.tryLock())
+            return;
+        try {
+            if(lastID != -1 && (Bukkit.getScheduler().isQueued(lastID) || Bukkit.getScheduler().isCurrentlyRunning(lastID)))
+                return;
+            lastID = Bukkit.getScheduler().scheduleAsyncDelayedTask(SignShop.getInstance(), new DeferredSave(this));
+        } finally {
+            locker.unlock();
+        }
+    }
+        
+    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
+        addSeller(sPlayer, sWorld, bSign, containables, activatables, isItems, misc, true);
     }
     
-    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
+    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
         Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc));        
-        this.Save();
+        if(save)
+            this.DelayedSave();
     }
 
     public Seller getSeller(Location lKey){
-        if(Storage.sellers.containsKey(lKey)){
+        if(Storage.sellers.containsKey(lKey))
             return Storage.sellers.get(lKey);
-        }
         return null;
     }
 
-    public void removeSeller(Location lKey){
+    public void removeSeller(Location lKey) {
         if(Storage.sellers.containsKey(lKey)){
             Storage.sellers.get(lKey).cleanUp();
             Storage.sellers.remove(lKey);
-            this.Save();
+            this.DelayedSave();
         }
     }
     
@@ -358,11 +374,11 @@ public class Storage {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
                 if(bSign.getType() == Material.SIGN_POST || bSign.getType() == Material.WALL_SIGN) {
                     String[] sLines = ((Sign) bSign.getState()).getLines();                    
-                    List operation = SignShop.Operations.get(signshopUtil.getOperation(sLines[0]));                    
+                    List<String> operation = SignShop.Operations.get(signshopUtil.getOperation(sLines[0]));                    
                     if(operation == null)
                         continue;
                     // Not isOP. No need to count OP signs here because admins aren't really their owner
-                    if(!operation.contains(11))
+                    if(!operation.contains("playerIsOp"))
                         count++;
                 }
             }
@@ -375,6 +391,17 @@ public class Storage {
             if(entry.getValue().getContainables().contains(bHolder))
                 signs.add(Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey()));            
         return signs;
+    }
+    
+    public List<Block> getShopsWithMiscSetting(String key, String value) {
+        List<Block> shops = new LinkedList<Block>();
+        for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet()) {
+            if(entry.getValue().getMisc().containsKey(key)) {
+                if(entry.getValue().getMisc().get(key).contains(value))
+                    shops.add(entry.getKey().getBlock());
+            }
+        }
+        return shops;
     }
     
     private void saveToFile() {
@@ -412,5 +439,18 @@ public class Storage {
     
     private class StorageException extends Exception {
         
+    }
+    
+    private class DeferredSave implements Runnable {
+        Storage store = null;
+        
+        protected DeferredSave(Storage pStore) {
+            store = pStore;
+        }
+        
+        @Override
+        public final void run() {
+            store.Save();
+        }
     }
 }

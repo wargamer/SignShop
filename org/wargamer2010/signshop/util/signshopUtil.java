@@ -236,7 +236,7 @@ public class signshopUtil {
         return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
     }
     
-    private static Boolean lineIsEmpty(String line) {
+    public static Boolean lineIsEmpty(String line) {
         return (line == null || line.length() == 0);
     }
     
