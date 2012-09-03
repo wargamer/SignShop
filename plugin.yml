@@ -6,4 +6,4 @@ softdepend: [Vault, Multiverse-Core, ShowCaseStandalone, Deadbolt]
 commands:
   signshop:
     description: Admin commands for SignShop
-    usage: /signshop [reload|stats]
+    usage: /signshop [reload|stats|version|help]
