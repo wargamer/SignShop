@@ -143,13 +143,13 @@ public class SignShopPlayerListener implements Listener {
                 }
                 
                 List<String> operation = SignShop.Operations.get(sOperation);                
-                if(!operation.contains("playerisop") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
+                if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
                     ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
                     return;
                 }
                 
                 int iLimit = ssPlayer.reachedMaxShops();        
-                if(!operation.contains("playerisop") && iLimit > 0) {
+                if(!operation.contains("playerIsOp") && iLimit > 0) {
                     ssPlayer.sendMessage(SignShop.Errors.get("too_many_shops").replace("!max", Integer.toString(iLimit)));
                     itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                     return;
@@ -191,7 +191,7 @@ public class SignShopPlayerListener implements Listener {
                                 
                 if(!multiWorld) {
                     for(Block bCheckme : containables) {
-                        if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerisop")) {
+                        if(!checkDistance(bClicked, bCheckme, SignShop.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
                             ssPlayer.sendMessage(SignShop.Errors.get("too_far").replace("!max", Integer.toString(SignShop.getMaxSellDistance())));
                             itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                             return;
@@ -238,7 +238,7 @@ public class SignShopPlayerListener implements Listener {
             
             List<String> operation = SignShop.Operations.get(sOperation);
             
-            if(!operation.contains("playerisop") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
+            if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permit_owner"));
                 return;
             }

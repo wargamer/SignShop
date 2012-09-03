@@ -23,6 +23,8 @@ public class linkShareSign implements SignShopSpecialOp {
             return false;
         if(ssPlayer.getPlayer().getItemInHand() == null || ssPlayer.getPlayer().getItemInHand().getType() != Material.REDSTONE)
             return false;
+        if(!itemUtil.clickedSign(shopSign) || signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0)).equals("share"))
+            return false;
         
         List<Block> shareSigns = new LinkedList();
         
@@ -51,8 +53,8 @@ public class linkShareSign implements SignShopSpecialOp {
         if(!bUnlinked && shareSigns.isEmpty())
             return false;
         else if(shareSigns.isEmpty()) {
-            seller.getMisc().put("sharesigns", "");
-            SignShop.Storage.Save();
+            seller.getMisc().remove("sharesigns");
+            SignShop.Storage.DelayedSave();
             return true;
         }
         shareSigns.addAll(currentSigns);
@@ -63,7 +65,7 @@ public class linkShareSign implements SignShopSpecialOp {
         else {
             ssPlayer.sendMessage("Succesfully linked Share sign to Shop.");
             seller.getMisc().put("sharesigns", locations);
-            SignShop.Storage.Save();
+            SignShop.Storage.DelayedSave();
         }
         
         return true;

@@ -44,7 +44,7 @@ signs:
   Class: takePlayerInventory,takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
   Command: takePlayerMoney, playerIsOp
-  Share: Placeholder
+  Share: ShareSign
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -219,6 +219,8 @@ errors:
   need_permit: You need a permit to set up this shop!
   villager_trading_disabled: Trading with Villagers is not enabled on this server!
   not_allowed_to_link_sharesigns: You are not allowed to link Share signs to this shop!
+  no_shop_linked_to_sharesign: This Share sign has not been linked to any shops.
+  share_sign_splits_profit: This share sign splits profits between !profits for the Shop(s) at !profitshops
 commands:
   TpToOwner:
   - tp !player !owner
