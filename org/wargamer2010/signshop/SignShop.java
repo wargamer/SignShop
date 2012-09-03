@@ -196,7 +196,7 @@ public class SignShop extends JavaPlugin{
             SignShop.log("Reloaded", Level.INFO);
             if((sender instanceof Player))
                 ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
-        } else if(args[0].equalsIgnoreCase("stats")) {
+        } else if(args[0].equalsIgnoreCase("stats") || args[0].equalsIgnoreCase("version") || args[0].equalsIgnoreCase("help")) {
             PluginDescriptionFile pdfFile = this.getDescription();
             String message = "Amount of Shops: " + Storage.shopCount() 
                     + ", SignShop version: " + pdfFile.getVersion() 
