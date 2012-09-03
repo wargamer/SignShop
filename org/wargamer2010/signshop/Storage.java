@@ -65,6 +65,10 @@ public class Storage {
         }
     }
     
+    public int shopCount() {
+        return this.sellers.size();
+    }
+    
     private List getSetting(HashMap<String,List> settings, String settingName) throws StorageException {
         StorageException ex = new StorageException();
         if(settings.containsKey(settingName))

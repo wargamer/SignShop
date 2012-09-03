@@ -24,6 +24,14 @@ public class Vault {
             SignShop.log("Vault plugin not enabled, SignShop can not run!", Level.SEVERE);
     }
     
+    public String getVersion() {
+        if(vaultFound) {
+            return server.getPluginManager().getPlugin("Vault").getDescription().getVersion();
+        } else {
+            return "N/A";
+        }
+    }
+    
     public Boolean setupPermissions()
     {
         if(!vaultFound)
