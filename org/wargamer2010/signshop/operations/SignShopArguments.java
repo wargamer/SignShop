@@ -93,6 +93,7 @@ public class SignShopArguments {
     public Map<String, String> miscSettings = new HashMap<String, String>();
     public List<String> operationParameters = null;
     public Map<String, String> forceMessageKeys = new HashMap<String, String>();
+    public boolean bDoNotClearClickmap = false;
     
     public Map<String, String> messageParts = new HashMap<String, String>();
     public void setMessagePart(String name, String value) {

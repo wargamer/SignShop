@@ -94,10 +94,12 @@ public class SignShopBlockListener implements Listener {
                 String temp = seller.getMisc().get("sharesigns");
                 temp = temp.replace(signshopUtil.convertLocationToString(event.getBlock().getLocation()), "");
                 temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
-                if(temp.endsWith(SignShopArguments.seperator))
-                    temp = temp.substring(0, temp.length()-1);
-                if(temp.charAt(0) == SignShopArguments.seperator.charAt(0))
-                    temp = temp.substring(1, temp.length());
+                if(temp.length() > 0) {
+                    if(temp.endsWith(SignShopArguments.seperator))
+                        temp = temp.substring(0, temp.length()-1);
+                    if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.seperator.charAt(0))
+                        temp = temp.substring(1, temp.length());
+                }
                 if(temp.length() == 0)
                     seller.getMisc().remove("sharesigns");
                 else

@@ -6,6 +6,7 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
+import java.lang.reflect.*;
 import org.bukkit.Material;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
@@ -13,6 +14,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
 import com.miykeal.showCaseStandalone.*;
+import java.util.logging.Level;
 import org.bukkit.Bukkit;
 
 public class linkShowcase implements SignShopSpecialOp {
@@ -59,7 +61,30 @@ public class linkShowcase implements SignShopSpecialOp {
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
             return false;
         ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
-        com.miykeal.showCaseStandalone.Shops.Shop p = new com.miykeal.showCaseStandalone.Shops.DisplayShop(scs);
+        com.miykeal.showCaseStandalone.ShopInternals.Storage storage = null;
+        try {
+            try {
+                Constructor con = com.miykeal.showCaseStandalone.ShopInternals.Storage.class.getConstructor(new Class[]{int.class});
+                storage = (com.miykeal.showCaseStandalone.ShopInternals.Storage)con.newInstance(1);
+            } catch(NoSuchMethodException ex) {
+                try {
+                    Constructor con = com.miykeal.showCaseStandalone.ShopInternals.Storage.class.getConstructor(new Class[]{});
+                    storage = (com.miykeal.showCaseStandalone.ShopInternals.Storage)con.newInstance();
+                } catch(NoSuchMethodException ex2) {
+                    storage = null;
+                    return true;
+                }
+
+            }
+        } catch(InstantiationException inst) { storage = null; }
+        catch(IllegalAccessException ill) { storage = null; }
+        catch(InvocationTargetException inc) { storage = null; }
+        if(storage == null) {
+            SignShop.log("Invalid version of ShowCaseStandalone detected, please get the latest!", Level.WARNING);
+            return true;
+        }
+        
+        com.miykeal.showCaseStandalone.Shops.Shop p = new com.miykeal.showCaseStandalone.Shops.DisplayShop(scs, storage);
         p.setItemStack(showcasing);
         p.setLocation ( bStep.getLocation() );
         p.setBlock ( bStep );
