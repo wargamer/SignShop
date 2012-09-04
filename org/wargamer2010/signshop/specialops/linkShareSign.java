@@ -32,7 +32,7 @@ public class linkShareSign implements SignShopSpecialOp {
         Boolean bUnlinked = false;
         for(Block bTemp : clickedBlocks) {
             if(currentSigns.contains(bTemp)) {                
-                ssPlayer.sendMessage("Unlinked Share sign from Shop.");
+                ssPlayer.sendMessage(signshopUtil.getError("unlinked_share_sign", null));
                 bUnlinked = true;
                 currentSigns.remove(bTemp);
             } else if(itemUtil.clickedSign(bTemp)) {
@@ -63,7 +63,7 @@ public class linkShareSign implements SignShopSpecialOp {
         if((locations = signshopUtil.validateShareSign(shareSigns, ssPlayer)).equals(""))
             return true;
         else {
-            ssPlayer.sendMessage("Succesfully linked Share sign to Shop.");
+            ssPlayer.sendMessage(signshopUtil.getError("linked_share_sign", null));
             seller.getMisc().put("sharesigns", locations);
             SignShop.Storage.DelayedSave();
         }
