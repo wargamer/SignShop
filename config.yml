@@ -220,7 +220,10 @@ errors:
   villager_trading_disabled: Trading with Villagers is not enabled on this server!
   not_allowed_to_link_sharesigns: You are not allowed to link Share signs to this shop!
   no_shop_linked_to_sharesign: This Share sign has not been linked to any shops.
-  share_sign_splits_profit: This share sign splits profits between !profits for the Shop(s) at !profitshops
+  share_sign_splits_profit: This Share sign splits profits between !profits for the Shop(s) at !profitshops
+  registered_share_sign: Registered a Share sign, please click the Shop sign next.
+  unlinked_share_sign: Unlinked Share sign from Shop.
+  linked_share_sign: Succesfully linked Share sign to Shop.
 commands:
   TpToOwner:
   - tp !player !owner
