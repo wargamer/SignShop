@@ -47,7 +47,7 @@ public class SignShopPlayerListener implements Listener {
     
     
     
-    private void removePlayerFromClickmap(Player player) {
+    private void removePlayerFromClickmap(Player player) {        
         clicks.mClicksPerLocation.values().removeAll(Collections.singleton(player));
     }
 
@@ -215,7 +215,8 @@ public class SignShopPlayerListener implements Listener {
                 if(ssArgs.get_isItems() == null)
                     ssArgs.set_isItems(new ItemStack[]{new ItemStack(Material.DIRT,1)});
                 SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
-                removePlayerFromClickmap(player);                                
+                if(!ssArgs.bDoNotClearClickmap)
+                    removePlayerFromClickmap(player);
                 ssPlayer.sendMessage(signshopUtil.getMessage("setup", ssArgs.get_sOperation(), ssArgs.messageParts));
                 itemUtil.setSignStatus(bClicked, ChatColor.DARK_BLUE);
                 return;

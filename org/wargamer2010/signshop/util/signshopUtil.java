@@ -338,11 +338,15 @@ public class signshopUtil {
     }
     
     public static Boolean registerClickedMaterial(PlayerInteractEvent event) {
-        Block bClicked = event.getClickedBlock();
-        Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
-        if(clickedSignShopMat(bClicked, ssPlayer)) {            
+        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+        Boolean signshopMat = registerClickedMaterial(event.getClickedBlock(), ssPlayer);
+        if(clickedSignShopMat(event.getClickedBlock(), ssPlayer))
             event.setCancelled(true);
+        return signshopMat;
+    }
+    
+    public static Boolean registerClickedMaterial(Block bClicked, SignShopPlayer ssPlayer) {        
+        if(clickedSignShopMat(bClicked, ssPlayer)) {
             if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
                 clicks.mClicksPerLocation.remove(bClicked.getLocation());
                 ssPlayer.sendMessage("Removed stored location");
@@ -354,7 +358,7 @@ public class signshopUtil {
                         return false;
                     }
                 }
-                clicks.mClicksPerLocation.put(bClicked.getLocation(), player);                    
+                clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());                    
                 ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
             }
             return true;

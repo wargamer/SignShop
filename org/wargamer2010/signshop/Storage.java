@@ -21,6 +21,7 @@ import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
 import java.util.List;
+import java.util.ConcurrentModificationException;
 import java.util.concurrent.locks.ReentrantLock;
 
 import org.wargamer2010.signshop.util.itemUtil;
@@ -66,7 +67,7 @@ public class Storage {
     }
     
     public int shopCount() {
-        return this.sellers.size();
+        return sellers.size();
     }
     
     private List getSetting(HashMap<String,List> settings, String settingName) throws StorageException {
@@ -296,12 +297,12 @@ public class Storage {
         
     }
 
-    private void Save() {
+    public void Save() {
         
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
         Seller seller;
-        Map<String,Object> temp;
+        Map<String,Object> temp;        
         for(Location lKey : Storage.sellers.keySet()){
             temp = new HashMap<String,Object>();
 
@@ -345,6 +346,12 @@ public class Storage {
         } finally {
             locker.unlock();
         }
+    }
+    
+    public void syncWithSave() {
+        if(lastID != -1 && Bukkit.getScheduler().isQueued(lastID) && Bukkit.getScheduler().isCurrentlyRunning(lastID))
+            Bukkit.getScheduler().cancelTask(lastID);
+        this.Save();
     }
         
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
@@ -454,7 +461,14 @@ public class Storage {
         
         @Override
         public final void run() {
-            store.Save();
+            if(store == null)
+                return;
+            try {
+                store.Save();
+            } catch(ConcurrentModificationException ex) {
+                store.lastID = Bukkit.getScheduler().scheduleAsyncDelayedTask(SignShop.getInstance(), this);
+            }
+            
         }
     }
 }
