@@ -329,7 +329,7 @@ public class Storage {
             if(misc.size() > 0)
                 temp.put("misc", MapToList(misc));
 
-            tempSellers.put(lKey.getWorld().getName() + "/" + signshopUtil.convertLocationToString(lKey.getBlock().getLocation()), temp);                    
+            tempSellers.put(lKey.getWorld().getName() + "/" + signshopUtil.convertLocationToString(lKey), temp);
         }
         
         yml.set("sellers", tempSellers);
