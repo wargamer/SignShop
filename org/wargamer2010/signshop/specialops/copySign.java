@@ -53,6 +53,7 @@ public class copySign implements SignShopSpecialOp {
         if(sNewSign[3] != null && sNewSign[3].length() > 0)
             signToChange.setLine(3, sNewSign[3]);
         signToChange.update();
+        signToChange = ((Sign) shopSign.getState());
         String price = null;
         if(sNewSign[3] != null && sNewSign[3].length() > 0)
             price = sNewSign[3];
@@ -94,6 +95,7 @@ public class copySign implements SignShopSpecialOp {
             }                
             signToChange = ((Sign) shopSign.getState());
             signToChange.setLine(0, sNewSign[0]);
+            signToChange.update();
         } else {
             ssPlayer.sendMessage("The new operation does not exist!");                    
             revert(shopSign, sToChange);
