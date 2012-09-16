@@ -72,7 +72,8 @@ public class SignShopBlockListener implements Listener {
     public void onBlockBreak(BlockBreakEvent event) {        
         if(event.getPlayer().getItemInHand() != null 
                 && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
-                && event.getPlayer().getGameMode() == GameMode.CREATIVE) {
+                && event.getPlayer().getGameMode() == GameMode.CREATIVE
+                && SignShop.getProtectShopsInCreative()) {
             event.setCancelled(true);
             return;
         }

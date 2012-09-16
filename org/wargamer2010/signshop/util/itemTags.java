@@ -7,11 +7,11 @@ import net.minecraft.server.NBTTagCompound;
 
 public class itemTags {
     public static org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
-        ItemStack s = ((CraftItemStack) from).getHandle();
+        ItemStack s = ((CraftItemStack) from).getHandle();        
         if(s.tag == null) {
             s.tag = new NBTTagCompound();
         }
-        ((CraftItemStack) from).getHandle().setTag((NBTTagCompound)s.tag.clone());        
+        ((CraftItemStack) to).getHandle().setTag((NBTTagCompound)s.tag.clone());        
         return to;
     }
 }

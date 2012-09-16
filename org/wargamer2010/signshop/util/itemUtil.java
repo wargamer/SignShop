@@ -9,6 +9,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.material.MaterialData;
 import org.bukkit.Material;
 import org.bukkit.material.SimpleAttachableMaterialData;
+import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -267,17 +268,27 @@ public class itemUtil {
         ItemStack[] isBackup = new ItemStack[isOriginal.length];        
         for(int i = 0; i < isOriginal.length; i++){
             if(isOriginal[i] != null) {
-                isBackup[i] = new ItemStack(
-                    isOriginal[i].getType(),
-                    isOriginal[i].getAmount(),
-                    isOriginal[i].getDurability()
-                );
-                itemUtil.addSafeEnchantments(isBackup[i], isOriginal[i].getEnchantments());
-                if(isOriginal[i].getData() != null){
-                    isBackup[i].setData(isOriginal[i].getData());
-                }
+                isBackup[i] = getBackupSingleItemStack(isOriginal[i]);
             }
         }
+        return isBackup;
+    }
+    
+    public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
+        ItemStack isBackup = new CraftItemStack(
+            isOriginal.getType(),
+            isOriginal.getAmount(),
+            isOriginal.getDurability()
+        );
+        itemUtil.addSafeEnchantments(isBackup, isOriginal.getEnchantments());
+        if(isOriginal.getType() == Material.WRITTEN_BOOK || isOriginal.getType() == Material.BOOK_AND_QUILL) {
+            itemTags.copyTags(isOriginal, isBackup);
+        }
+
+        if(isOriginal.getData() != null) {
+            isBackup.setData(isOriginal.getData());
+        }
+        
         return isBackup;
     }
     
@@ -312,12 +323,15 @@ public class itemUtil {
             } else
                 return returnMap;
             
-            isActual[i] = new ItemStack(
+            isActual[i] = new CraftItemStack(
                 entry.getKey().getType(),
                 mInventory.get(entry.getKey()),
                 entry.getKey().getDurability()
             );
             addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());            
+            if(entry.getKey().getType() == Material.WRITTEN_BOOK || entry.getKey().getType() == Material.BOOK_AND_QUILL) {
+                itemTags.copyTags(entry.getKey(), isActual[i]);
+            }
             if(entry.getKey().getData() != null) {
                 isActual[i].setData(entry.getKey().getData());
             }
