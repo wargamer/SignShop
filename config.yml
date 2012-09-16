@@ -42,7 +42,7 @@ signs:
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
   iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
   TpToOwner: takePlayerMoney,playerIsOp
-  Class: takePlayerInventory,takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
+  Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
   Command: takePlayerMoney, playerIsOp
   Share: ShareSign
