@@ -13,7 +13,7 @@ public class takePlayerMoney implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {                
         Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
-        Float fPrice = (ssArgs.get_fPrice() * fPricemod);        
+        Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);        
         ssArgs.set_fPrice(fPrice);
         ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));        
         if(!ssArgs.get_ssPlayer().hasMoney(fPrice)) {
@@ -26,7 +26,7 @@ public class takePlayerMoney implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
-        Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+        Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);
         Boolean bTransaction = ssArgs.get_ssPlayer().mutateMoney(-fPrice);
         if(!bTransaction)
             ssArgs.get_ssPlayer().sendMessage("The money transaction failed, please contact the System Administrator");

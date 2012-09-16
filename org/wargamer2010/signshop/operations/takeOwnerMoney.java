@@ -16,7 +16,7 @@ public class takeOwnerMoney implements SignShopOperation {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
         Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), false);
-        Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+        Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);
         ssArgs.set_fPrice(fPrice);
         ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         if(!ssArgs.get_ssOwner().hasMoney(fPrice)) {
@@ -29,7 +29,7 @@ public class takeOwnerMoney implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), false);
-        Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+        Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);
         Boolean bTransaction = ssArgs.get_ssOwner().mutateMoney(-fPrice);
         if(!bTransaction)
             ssArgs.get_ssPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
