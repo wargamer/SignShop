@@ -13,6 +13,7 @@ EnableSignStacking: false
 AllowMultiWorldShops: false
 EnablePermits: false
 PreventVillagerTrade: false
+ProtectShopsInCreative: true
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney

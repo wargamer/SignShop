@@ -53,7 +53,7 @@ public class SignShop extends JavaPlugin{
     private static boolean AllowMultiWorldShops = true;
     private static boolean EnablePermits = false;
     private static boolean PreventVillagerTrade = false;
-    
+    private static boolean ProtectShopsInCreative = true;   
 
     //Statics
     public static Storage Storage;
@@ -234,6 +234,7 @@ public class SignShop extends JavaPlugin{
         AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
         EnablePermits = config.getBoolean("EnablePermits", EnablePermits);
         PreventVillagerTrade = config.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
+        ProtectShopsInCreative = config.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
     }
     
     public static SignShop getInstance() {
@@ -396,6 +397,10 @@ public class SignShop extends JavaPlugin{
     
     public static Boolean getPreventVillagerTrade() {
         return PreventVillagerTrade;
+    }
+    
+    public static Boolean getProtectShopsInCreative() {
+        return ProtectShopsInCreative;
     }
     
     public class TransferFormatter extends Formatter {    
