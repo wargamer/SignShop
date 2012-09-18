@@ -46,7 +46,7 @@ public class itemUtil {
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
         List<ItemStack> items = new ArrayList<ItemStack>();
         for(ItemStack item: isItems) {
-            ItemStack isBackup = new ItemStack(
+            ItemStack isBackup = new CraftItemStack(
                 item.getType(),
                 1,
                 item.getDurability()
@@ -168,7 +168,7 @@ public class itemUtil {
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
-            ItemStack isBackup = new ItemStack(
+            ItemStack isBackup = new CraftItemStack(
                 item.getType(),
                 1,
                 item.getDurability()
@@ -404,7 +404,7 @@ public class itemUtil {
                 String[] sItemprops = sItems.get(i).split(Storage.itemSeperator);
                 if(sItemprops.length < 4)
                     continue;
-                isItems[i] = new ItemStack(                        
+                isItems[i] = new CraftItemStack(                        
                         Integer.parseInt(sItemprops[1]),
                         Integer.parseInt(sItemprops[0]),
                         Short.parseShort(sItemprops[2])

@@ -10,6 +10,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -213,7 +214,7 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
                 if(ssArgs.get_isItems() == null)
-                    ssArgs.set_isItems(new ItemStack[]{new ItemStack(Material.DIRT,1)});
+                    ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.DIRT,1)});
                 SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
                 if(!ssArgs.bDoNotClearClickmap)
                     removePlayerFromClickmap(player);

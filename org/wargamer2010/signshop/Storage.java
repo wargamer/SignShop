@@ -1,6 +1,7 @@
 package org.wargamer2010.signshop;
 
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.Location;
 import org.bukkit.Bukkit;
@@ -266,10 +267,10 @@ public class Storage {
                 amounts = (ArrayList<Integer>) tempSeller.get("amounts");
                 durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
                 enchantments = (ArrayList<String>) tempSeller.get("enchantments");
-                isItems = new ItemStack[items.size()];
+                isItems = new CraftItemStack[items.size()];
 
                 for(int i=0;i<items.size();i++){
-                    isItems[i] = new ItemStack(items.get(i),amounts.get(i));
+                    isItems[i] = new CraftItemStack(items.get(i),amounts.get(i));
 
                     if(datas != null && datas.get(i) != null)
                         isItems[i].getData().setData(new Byte(datas.get(i)));
@@ -297,7 +298,7 @@ public class Storage {
         
     }
 
-    public void Save() {
+    public final void Save() {
         
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
