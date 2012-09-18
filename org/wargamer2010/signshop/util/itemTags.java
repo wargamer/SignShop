@@ -6,12 +6,13 @@ import net.minecraft.server.ItemStack;
 import net.minecraft.server.NBTTagCompound;
 
 public class itemTags {
-    public static org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
-        ItemStack s = ((CraftItemStack) from).getHandle();        
-        if(s.tag == null) {
-            s.tag = new NBTTagCompound();
-        }
-        ((CraftItemStack) to).getHandle().setTag((NBTTagCompound)s.tag.clone());        
-        return to;
+    public static void copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
+        try {
+            ItemStack s = ((CraftItemStack) from).getHandle();        
+            if(s.tag == null) {
+                s.tag = new NBTTagCompound();
+            }
+            ((CraftItemStack) to).getHandle().setTag((NBTTagCompound)s.tag.clone());        
+        } catch(ClassCastException ex) { }
     }
 }
