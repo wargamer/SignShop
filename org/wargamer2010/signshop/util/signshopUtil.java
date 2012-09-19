@@ -20,6 +20,7 @@ import java.util.LinkedHashMap;
 import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.blocks.SignShopChest;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -236,6 +237,30 @@ public class signshopUtil {
         return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
     }
     
+    public static String validateRestrictSign(List<Block> clickedBlocks, SignShopPlayer player) {
+        List<String> blocklocations = new LinkedList();
+        List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
+        for(Block restrictsign : clickedBlocks) {
+            if(itemUtil.clickedSign(restrictsign)) {
+                Sign sign = (Sign)restrictsign.getState();
+                Boolean bValidGroup = false;
+                for(int i = 1; i < 4; i++) {
+                    if(!lineIsEmpty(sign.getLine(i)))
+                        bValidGroup = true;
+                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i)))
+                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
+                }
+                if(bValidGroup)
+                    blocklocations.add(signshopUtil.convertLocationToString(restrictsign.getLocation()));
+            }
+        }
+        
+        String[] implodedLocations = new String[blocklocations.size()];
+        blocklocations.toArray(implodedLocations);
+        
+        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+    }
+    
     public static Boolean lineIsEmpty(String line) {
         return (line == null || line.length() == 0);
     }
@@ -259,7 +284,7 @@ public class signshopUtil {
         return shares;
     }
     
-    public static List<Block> getCurrentShareSigns(Seller seller) {
+    public static List<Block> getSignsFromMisc(Seller seller, String miscprop) {
         List<Block> signs = new LinkedList<Block>();
         if(seller.getMisc().containsKey("sharesigns")) {
             String imploded = seller.getMisc().get("sharesigns");
@@ -276,8 +301,9 @@ public class signshopUtil {
         return signs;    
     }
     
+    
     public static Boolean distributeMoney(Seller seller, Float fPrice, SignShopPlayer ssPlayer) {
-        List<Block> shareSigns = getCurrentShareSigns(seller);
+        List<Block> shareSigns = getSignsFromMisc(seller, "sharesigns");
         SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
         if(shareSigns.isEmpty()) {
             return ssOwner.mutateMoney(fPrice);
