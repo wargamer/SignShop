@@ -39,24 +39,12 @@ public class linkShowcase implements SignShopSpecialOp {
         if(bStep == null)
             return false;
         
-        ItemStack showcasing = null;
-        for(Block bHolder : seller.getContainables()) {
-            if(bHolder.getState() instanceof InventoryHolder) {
-                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-                for(ItemStack isTemp : Holder.getInventory().getContents()) {
-                    if(isTemp != null) {
-                        showcasing = isTemp;
-                        break;
-                    }
-                }
-            }
-            if(showcasing != null)
-                break;
-        }
-        if(showcasing == null) {
+        ItemStack showcasing = null;        
+        if(seller.getItems() == null || seller.getItems().length == 0) {
             ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
             return false;
         }
+        showcasing = seller.getItems()[0];
         
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
             return false;

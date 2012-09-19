@@ -225,6 +225,15 @@ errors:
   registered_share_sign: Registered a Share sign, please click the Shop sign next.
   unlinked_share_sign: Unlinked Share sign from Shop.
   linked_share_sign: Succesfully linked Share sign to Shop.
+  not_allowed_to_link_restrictsigns: You are not allowed to link Share signs to this shop!
+  no_shop_linked_to_restrictsign: This Restrict sign has not been linked to any shops.  
+  registered_restrict_sign: Registered a Restrict sign, please click the Shop sign next.
+  unlinked_restrict_sign: Unlinked Restrict sign from Shop.
+  linked_restrict_sign: Succesfully linked Restrict sign to Shop.
+  towny_insufficient_funds: Insufficient funds in shop account!
+  towny_owner_not_mayor_or_assistant: The shop owner isn't a mayor or assistant of a town.
+  towny_owner_not_belong_to_town: The shop owner likely doesn't belong to a town.
+  towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
 commands:
   TpToOwner:
   - tp !player !owner

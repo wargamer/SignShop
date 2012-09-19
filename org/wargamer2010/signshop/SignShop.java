@@ -288,6 +288,7 @@ public class SignShop extends JavaPlugin{
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add("linkShowcase");
         SpecialsOps.add("linkShareSign");
+        SpecialsOps.add("linkRestrictSign");
         SpecialsOps.add("changeOwner");
     }
     
