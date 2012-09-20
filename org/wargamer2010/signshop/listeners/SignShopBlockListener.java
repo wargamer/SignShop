@@ -68,6 +68,26 @@ public class SignShopBlockListener implements Listener {
         return true;
     }
     
+    private void cleanUpMiscStuff(String miscname, Block block) {
+        List<Block> shopsWithSharesign = SignShop.Storage.getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(block.getLocation()));
+            for(Block bTemp : shopsWithSharesign) {
+            Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
+            String temp = seller.getMisc().get(miscname);
+            temp = temp.replace(signshopUtil.convertLocationToString(block.getLocation()), "");
+            temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
+            if(temp.length() > 0) {
+                if(temp.endsWith(SignShopArguments.seperator))
+                    temp = temp.substring(0, temp.length()-1);
+                if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.seperator.charAt(0))
+                    temp = temp.substring(1, temp.length());
+            }
+            if(temp.length() == 0)
+                seller.getMisc().remove(miscname);
+            else
+                seller.getMisc().put(miscname, temp);
+        }
+    }
+    
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBreak(BlockBreakEvent event) {        
         if(event.getPlayer().getItemInHand() != null 
@@ -89,24 +109,9 @@ public class SignShopBlockListener implements Listener {
                 }
             return;
         } else if(!event.isCancelled() && itemUtil.clickedSign(event.getBlock())) {
-            List<Block> shopsWithSharesign = SignShop.Storage.getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(event.getBlock().getLocation()));
-            for(Block bTemp : shopsWithSharesign) {
-                Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
-                String temp = seller.getMisc().get("sharesigns");
-                temp = temp.replace(signshopUtil.convertLocationToString(event.getBlock().getLocation()), "");
-                temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
-                if(temp.length() > 0) {
-                    if(temp.endsWith(SignShopArguments.seperator))
-                        temp = temp.substring(0, temp.length()-1);
-                    if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.seperator.charAt(0))
-                        temp = temp.substring(1, temp.length());
-                }
-                if(temp.length() == 0)
-                    seller.getMisc().remove("sharesigns");
-                else
-                    seller.getMisc().put("sharesigns", temp);
-            }
-            SignShop.Storage.DelayedSave();
+            cleanUpMiscStuff("sharesigns", event.getBlock());
+            cleanUpMiscStuff("restrictsigns", event.getBlock());
+            SignShop.Storage.SafeSave();
         }
     }
 

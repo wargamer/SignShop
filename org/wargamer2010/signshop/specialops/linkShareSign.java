@@ -55,7 +55,7 @@ public class linkShareSign implements SignShopSpecialOp {
             return false;
         else if(shareSigns.isEmpty()) {
             seller.getMisc().remove("sharesigns");
-            SignShop.Storage.DelayedSave();
+            SignShop.Storage.SafeSave();
             return true;
         }
         shareSigns.addAll(currentSigns);
@@ -66,7 +66,7 @@ public class linkShareSign implements SignShopSpecialOp {
         else {
             ssPlayer.sendMessage(signshopUtil.getError("linked_share_sign", null));
             seller.getMisc().put("sharesigns", locations);
-            SignShop.Storage.DelayedSave();
+            SignShop.Storage.SafeSave();
         }
         
         return true;

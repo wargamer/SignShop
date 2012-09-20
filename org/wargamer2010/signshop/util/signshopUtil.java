@@ -261,6 +261,31 @@ public class signshopUtil {
         return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
     }
     
+    public static Boolean restrictedFromUsing(Seller seller, SignShopPlayer player) {
+        if(seller.getOwner().equals(player.getPlayer().getName()))
+            return false;
+        List<Block> blocks = signshopUtil.getSignsFromMisc(seller, "restrictsigns");
+        List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
+        List<String> playerGroups = new LinkedList<String>();        
+        for(Block restrictsign : blocks) {
+            if(itemUtil.clickedSign(restrictsign)) {
+                Sign sign = (Sign)restrictsign.getState();
+                for(int i = 1; i < 4; i++) {                    
+                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i))) {
+                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");                        
+                    } else if(!lineIsEmpty(sign.getLine(i)) && permGroups.contains(sign.getLine(i))) {
+                        playerGroups.add(sign.getLine(i));
+                    }
+                }
+            }
+        }
+        for(String group : playerGroups) {
+            if(Vault.permission.playerInGroup(player.getPlayer(), group))
+                return false;
+        }
+        return (playerGroups.size() > 0 ? !player.getPlayer().isOp() : false);
+    }
+    
     public static Boolean lineIsEmpty(String line) {
         return (line == null || line.length() == 0);
     }
@@ -286,8 +311,8 @@ public class signshopUtil {
     
     public static List<Block> getSignsFromMisc(Seller seller, String miscprop) {
         List<Block> signs = new LinkedList<Block>();
-        if(seller.getMisc().containsKey("sharesigns")) {
-            String imploded = seller.getMisc().get("sharesigns");
+        if(seller.getMisc().containsKey(miscprop)) {
+            String imploded = seller.getMisc().get(miscprop);
             String[] exploded;
             if(imploded.contains(SignShopArguments.seperator))
                 exploded = imploded.split(SignShopArguments.seperator);
