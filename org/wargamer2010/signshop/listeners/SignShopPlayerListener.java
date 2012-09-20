@@ -113,7 +113,7 @@ public class SignShopPlayerListener implements Listener {
                 ssPlayer.sendMessage("You hit a player with name: " + clickedPlayer.getName());
                 clicks.mClicksPerPlayername.put(clickedPlayer.getName(), player);
             }
-           event.setCancelled(true);
+            event.setCancelled(true);
         }
     }
     
@@ -160,7 +160,7 @@ public class SignShopPlayerListener implements Listener {
                     ssPlayer.sendMessage(SignShop.Errors.get("need_permit"));
                     return;
                 }
-
+                
                 Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);            
                 if(SignShopOperations == null) {
                     ssPlayer.sendMessage(SignShop.Errors.get("invalid_operation"));
@@ -242,6 +242,11 @@ public class SignShopPlayerListener implements Listener {
             
             if(!operation.contains("playerIsOp") && SignShop.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
                 ssPlayer.sendMessage(SignShop.Errors.get("no_permit_owner"));
+                return;
+            }
+            
+            if(signshopUtil.restrictedFromUsing(seller, ssPlayer)) {
+                ssPlayer.sendMessage(SignShop.Errors.get("restricted_from_using"));
                 return;
             }
             

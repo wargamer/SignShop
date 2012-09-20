@@ -46,6 +46,7 @@ signs:
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
   Command: takePlayerMoney, playerIsOp
   Share: ShareSign
+  Restrict: RestrictSign
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -230,10 +231,12 @@ errors:
   registered_restrict_sign: Registered a Restrict sign, please click the Shop sign next.
   unlinked_restrict_sign: Unlinked Restrict sign from Shop.
   linked_restrict_sign: Succesfully linked Restrict sign to Shop.
+  restrict_sign_restricts: This Restrict sign restrict use for the Shop(s) at !restrictedshops
   towny_insufficient_funds: Insufficient funds in shop account!
   towny_owner_not_mayor_or_assistant: The shop owner isn't a mayor or assistant of a town.
   towny_owner_not_belong_to_town: The shop owner likely doesn't belong to a town.
   towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
+  restricted_from_using: You are restricted from using this shop!
 commands:
   TpToOwner:
   - tp !player !owner

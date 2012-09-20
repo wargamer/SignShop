@@ -55,7 +55,7 @@ public class linkRestrictSign implements SignShopSpecialOp {
             return false;
         else if(shareSigns.isEmpty()) {
             seller.getMisc().remove("restrictsigns");
-            SignShop.Storage.DelayedSave();
+            SignShop.Storage.SafeSave();
             return true;
         }
         shareSigns.addAll(currentSigns);
@@ -66,7 +66,7 @@ public class linkRestrictSign implements SignShopSpecialOp {
         else {
             ssPlayer.sendMessage(signshopUtil.getError("linked_restrict_sign", null));
             seller.getMisc().put("restrictsigns", locations);
-            SignShop.Storage.DelayedSave();
+            SignShop.Storage.SafeSave();
         }
         
         return true;

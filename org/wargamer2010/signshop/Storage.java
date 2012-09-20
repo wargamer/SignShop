@@ -32,9 +32,9 @@ public class Storage {
     private FileConfiguration yml;
     private File ymlfile;
     
-    private static ReentrantLock locker = new ReentrantLock();
-    private int lastID = -1;
-
+    private static ReentrantLock savelock = new ReentrantLock();
+    private static ReentrantLock sellerslock = new ReentrantLock();
+    
     private static Map<Location,Seller> sellers;
     public static String itemSeperator = "&";
     
@@ -298,61 +298,57 @@ public class Storage {
         
     }
 
-    public final void Save() {
-        
+    private void Save() {
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
         Seller seller;
         Map<String,Object> temp;        
-        for(Location lKey : Storage.sellers.keySet()){
-            temp = new HashMap<String,Object>();
+        try {
+            for(Location lKey : Storage.sellers.keySet()){
+                temp = new HashMap<String,Object>();
 
-            seller = sellers.get(lKey);
-            temp.put("shopworld", seller.getWorld());
-            temp.put("owner", seller.getOwner());            
-            temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));            
-            
-            List<Block> containables = seller.getContainables();
-            String[] sContainables = new String[containables.size()];
-            for(int i = 0; i < containables.size(); i++)            
-                sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
-            temp.put("containables", sContainables);
-            
-            List<Block> activatables = seller.getActivatables();
-            String[] sActivatables = new String[activatables.size()];
-            for(int i = 0; i < activatables.size(); i++)            
-                sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
-            temp.put("activatables", sActivatables);
-            
-            temp.put("sign", signshopUtil.convertLocationToString(lKey));
-            
-            Map<String, String> misc = seller.getMisc();
-            if(misc.size() > 0)
-                temp.put("misc", MapToList(misc));
+                seller = sellers.get(lKey);
+                temp.put("shopworld", seller.getWorld());
+                temp.put("owner", seller.getOwner());            
+                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));            
 
-            tempSellers.put(lKey.getWorld().getName() + "/" + signshopUtil.convertLocationToString(lKey), temp);
+                List<Block> containables = seller.getContainables();
+                String[] sContainables = new String[containables.size()];
+                for(int i = 0; i < containables.size(); i++)            
+                    sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
+                temp.put("containables", sContainables);
+
+                List<Block> activatables = seller.getActivatables();
+                String[] sActivatables = new String[activatables.size()];
+                for(int i = 0; i < activatables.size(); i++)            
+                    sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
+                temp.put("activatables", sActivatables);
+
+                temp.put("sign", signshopUtil.convertLocationToString(lKey));
+
+                Map<String, String> misc = seller.getMisc();
+                if(misc.size() > 0)
+                    temp.put("misc", MapToList(misc));
+
+                tempSellers.put(lKey.getWorld().getName() + "/" + signshopUtil.convertLocationToString(lKey), temp);
+            }
+        } catch(ConcurrentModificationException ex) {
+            // No need to retry because this will be called again, for sure, after the lock is released
+            return;
         }
         
         yml.set("sellers", tempSellers);
         saveToFile();
     }
     
-    public void DelayedSave() {
-        if(!locker.tryLock())
-            return;
+    public void SafeSave() {
+        // Locking here to make sure the latest version is always saved
+        savelock.lock();
         try {
-            if(lastID != -1 && (Bukkit.getScheduler().isQueued(lastID) || Bukkit.getScheduler().isCurrentlyRunning(lastID)))
-                return;
-            lastID = Bukkit.getScheduler().scheduleAsyncDelayedTask(SignShop.getInstance(), new DeferredSave(this));
+            Save();
         } finally {
-            locker.unlock();
+            savelock.unlock();
         }
-    }
-    
-    public void syncWithSave() {
-        if(lastID != -1 && Bukkit.getScheduler().isQueued(lastID) && Bukkit.getScheduler().isCurrentlyRunning(lastID))
-            Bukkit.getScheduler().cancelTask(lastID);
-        this.Save();
     }
         
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
@@ -362,7 +358,7 @@ public class Storage {
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
         Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc));        
         if(save)
-            this.DelayedSave();
+            this.SafeSave();
     }
 
     public Seller getSeller(Location lKey){
@@ -375,7 +371,7 @@ public class Storage {
         if(Storage.sellers.containsKey(lKey)){
             Storage.sellers.get(lKey).cleanUp();
             Storage.sellers.remove(lKey);
-            this.DelayedSave();
+            this.SafeSave();
         }
     }
     
@@ -451,25 +447,5 @@ public class Storage {
     
     private class StorageException extends Exception {
         
-    }
-    
-    private class DeferredSave implements Runnable {
-        Storage store = null;
-        
-        protected DeferredSave(Storage pStore) {
-            store = pStore;
-        }
-        
-        @Override
-        public final void run() {
-            if(store == null)
-                return;
-            try {
-                store.Save();
-            } catch(ConcurrentModificationException ex) {
-                store.lastID = Bukkit.getScheduler().scheduleAsyncDelayedTask(SignShop.getInstance(), this);
-            }
-            
-        }
-    }
+    }    
 }

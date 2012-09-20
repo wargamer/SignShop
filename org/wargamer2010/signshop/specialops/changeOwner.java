@@ -36,7 +36,7 @@ public class changeOwner implements SignShopSpecialOp {
             return false;
         
         seller.setOwner(sNewOwner);
-        SignShop.Storage.DelayedSave();
+        SignShop.Storage.SafeSave();
         ssPlayer.sendMessage("Succesfully changed ownership of shop to " + sNewOwner);
         clicks.mClicksPerPlayername.remove(sNewOwner);
         return true;

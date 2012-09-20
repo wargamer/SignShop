@@ -256,7 +256,7 @@ public class SignShop extends JavaPlugin{
     @Override
     public void onDisable() {
         closeHandlers();
-        Storage.syncWithSave();
+        Storage.SafeSave();
         log("Disabled", Level.INFO);
     }
 
