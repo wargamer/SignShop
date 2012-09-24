@@ -4,9 +4,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.block.Block;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.HashMap;
 import java.util.List;
 import java.util.LinkedList;
@@ -15,7 +14,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("chest_missing", ssArgs.messageParts));                        
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));                        
             return false;
         }
         List<ItemStack> tempItems = new LinkedList<ItemStack>();
@@ -34,7 +33,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("chest_empty", ssArgs.messageParts));                        
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));                        
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -51,7 +50,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.get_isItems(), false);        
         Float iCount = (Float)variableAmount.values().toArray()[0];
         if(iCount == 0.0f) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("player_doesnt_have_items", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.messageParts));
             return false;        
         }        
         

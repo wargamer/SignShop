@@ -10,6 +10,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class SignShopPlayer {
     Player ssPlayer = null;
@@ -90,7 +91,7 @@ public class SignShopPlayer {
         if(sPlayername.equals(""))
             return true;
         Boolean isOP = isOp();
-        Boolean OPOverride = SignShop.getOPOverride();
+        Boolean OPOverride = SignShopConfig.getOPOverride();
         // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
         if(SignShop.USE_PERMISSIONS && isOP && !OPOverride)
@@ -178,8 +179,8 @@ public class SignShopPlayer {
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
             String sGroup = sGroups[i].toLowerCase();
-            if(SignShop.PriceMultipliers.containsKey(sGroup) && SignShop.PriceMultipliers.get(sGroup).containsKey(sOperation)) {
-                fTemp = SignShop.PriceMultipliers.get(sGroup).get(sOperation);
+            if(SignShopConfig.PriceMultipliers.containsKey(sGroup) && SignShopConfig.PriceMultipliers.get(sGroup).containsKey(sOperation)) {
+                fTemp = SignShopConfig.PriceMultipliers.get(sGroup).get(sOperation);
                 if(bBuyorSell && fTemp < fPricemod)
                     fPricemod = fTemp;
                 else if(!bBuyorSell && fTemp > fPricemod)
@@ -198,19 +199,19 @@ public class SignShopPlayer {
         String[] sGroups = getPlayerGroups();        
         int iShopAmount = SignShop.Storage.countLocations(sPlayername);
         
-        if(SignShop.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShop.getMaxShopsPerPerson()) return SignShop.getMaxShopsPerPerson();        
+        if(SignShopConfig.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShopConfig.getMaxShopsPerPerson()) return SignShopConfig.getMaxShopsPerPerson();        
         if(sGroups == null) return 0;
         
         int iLimit = 1;
         Boolean bInRelGroup = false;
         for(int i = 0; i < sGroups.length; i++) {
             String sGroup = sGroups[i].toLowerCase();
-            if(SignShop.ShopLimits.containsKey(sGroup)) {
+            if(SignShopConfig.ShopLimits.containsKey(sGroup)) {
                 bInRelGroup = true;
-                if(iShopAmount < SignShop.ShopLimits.get(sGroup))
+                if(iShopAmount < SignShopConfig.ShopLimits.get(sGroup))
                     iLimit = 0;
-                else if(iLimit != 0 && SignShop.ShopLimits.get(sGroup) > iLimit)
-                    iLimit = SignShop.ShopLimits.get(sGroup);
+                else if(iLimit != 0 && SignShopConfig.ShopLimits.get(sGroup) > iLimit)
+                    iLimit = SignShopConfig.ShopLimits.get(sGroup);
             }
             
         }

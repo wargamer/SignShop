@@ -1,6 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.economyUtil;
 
 public class takePlayerMoney implements SignShopOperation {    
@@ -17,7 +17,7 @@ public class takePlayerMoney implements SignShopOperation {
         ssArgs.set_fPrice(fPrice);
         ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));        
         if(!ssArgs.get_ssPlayer().hasMoney(fPrice)) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_player_money", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_player_money", ssArgs.messageParts));            
             return false;
         }
         return true;

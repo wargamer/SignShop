@@ -18,10 +18,10 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Arrays;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.blocks.SignShopChest;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -59,6 +59,19 @@ public class signshopUtil {
             parts.add(sOperation);        
         return parts;
     }
+    
+    public static SignShopOperation getSignShopBlock(String blockName) {
+        try {
+            Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.operations."+blockName);
+            return ((SignShopOperation)fc.newInstance());
+        } catch(ClassNotFoundException notfoundex) {                
+            return null;
+        } catch(InstantiationException instex) {                
+            return null;
+        } catch(IllegalAccessException illex) {                
+            return null;
+        }
+    }
         
     public static Map<SignShopOperation, List> getSignShopOps(List<String> operation) {
         Map<SignShopOperation, List> SignShopOperations = new LinkedHashMap<SignShopOperation, List>();
@@ -66,23 +79,18 @@ public class signshopUtil {
             List<String> bits = getParameters(sSignShopOp);
             String op = bits.get(0);
             bits.remove(0);            
-            try {
-                Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.operations."+op);
-                SignShopOperations.put((SignShopOperation)fc.newInstance(), bits);
-            } catch(ClassNotFoundException notfoundex) {                
+            SignShopOperation ssOP = getSignShopBlock(op);
+            if(ssOP == null)
                 return null;
-            } catch(InstantiationException instex) {                
-                return null;
-            } catch(IllegalAccessException illex) {                
-                return null;
-            }
+            else
+                SignShopOperations.put(ssOP, bits);
         }
         return SignShopOperations;
     }
     
     public static List getSignShopSpecialOps() {
         List<SignShopSpecialOp> SignShopOperations = new LinkedList();
-        for(String sSignShopOp : SignShop.SpecialsOps) {            
+        for(String sSignShopOp : SignShopConfig.SpecialsOps) {            
             try {
                 Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.specialops."+sSignShopOp);
                 SignShopOperations.add((SignShopSpecialOp)fc.newInstance());
@@ -157,28 +165,7 @@ public class signshopUtil {
         return economyUtil.parsePrice(XPline);
     }
     
-    public static String getError(String sType, Map<String, String> messageParts) {
-        if(!SignShop.Errors.containsKey(sType) || SignShop.Errors.get(sType) == null)
-            return "";
-        return fillInBlanks(SignShop.Errors.get(sType), messageParts);
-    }
     
-    public static String getMessage(String sType, String sOperation, Map<String, String> messageParts) {
-        if(!SignShop.Messages.get(sType).containsKey(sOperation) || SignShop.Messages.get(sType).get(sOperation) == null){
-            return "";
-        }
-        return fillInBlanks(SignShop.Messages.get(sType).get(sOperation), messageParts);
-    }
-    
-    public static String fillInBlanks(String message, Map<String, String> messageParts) {
-        if(messageParts == null)
-            return message;
-        for(Map.Entry<String, String> part : messageParts.entrySet()) {            
-            message = message.replace(part.getKey(), part.getValue());
-        }        
-        message = message.replace("\\", "");
-        return message;
-    }
     
     public static List<Integer> getSharePercentages(String line) {                
         List<String> bits = new LinkedList();
@@ -240,9 +227,9 @@ public class signshopUtil {
     public static String validateRestrictSign(List<Block> clickedBlocks, SignShopPlayer player) {
         List<String> blocklocations = new LinkedList();
         List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
-        for(Block restrictsign : clickedBlocks) {
-            if(itemUtil.clickedSign(restrictsign)) {
-                Sign sign = (Sign)restrictsign.getState();
+        for(Block restrictedsign : clickedBlocks) {
+            if(itemUtil.clickedSign(restrictedsign)) {
+                Sign sign = (Sign)restrictedsign.getState();
                 Boolean bValidGroup = false;
                 for(int i = 1; i < 4; i++) {
                     if(!lineIsEmpty(sign.getLine(i)))
@@ -251,7 +238,7 @@ public class signshopUtil {
                         player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
                 }
                 if(bValidGroup)
-                    blocklocations.add(signshopUtil.convertLocationToString(restrictsign.getLocation()));
+                    blocklocations.add(signshopUtil.convertLocationToString(restrictedsign.getLocation()));
             }
         }
         
@@ -262,14 +249,14 @@ public class signshopUtil {
     }
     
     public static Boolean restrictedFromUsing(Seller seller, SignShopPlayer player) {
-        if(seller.getOwner().equals(player.getPlayer().getName()))
+        List<Block> blocks = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
+        if(blocks.isEmpty())
             return false;
-        List<Block> blocks = signshopUtil.getSignsFromMisc(seller, "restrictsigns");
         List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
         List<String> playerGroups = new LinkedList<String>();        
-        for(Block restrictsign : blocks) {
-            if(itemUtil.clickedSign(restrictsign)) {
-                Sign sign = (Sign)restrictsign.getState();
+        for(Block restrictedsign : blocks) {
+            if(itemUtil.clickedSign(restrictedsign)) {
+                Sign sign = (Sign)restrictedsign.getState();
                 for(int i = 1; i < 4; i++) {                    
                     if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i))) {
                         player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");                        
@@ -280,10 +267,15 @@ public class signshopUtil {
             }
         }
         for(String group : playerGroups) {
-            if(Vault.permission.playerInGroup(player.getPlayer(), group))
+            if(Vault.permission.playerInGroup(player.getPlayer(), group)) {                
                 return false;
+            }
         }
-        return (playerGroups.size() > 0 ? !player.getPlayer().isOp() : false);
+        if(playerGroups.size() > 0 && seller.getOwner().equals(player.getPlayer().getName())) {
+            player.sendMessage(SignShopConfig.getError("restricted_but_owner", null));
+            return false;
+        } else
+            return (playerGroups.size() > 0 ? !player.getPlayer().isOp() : false);
     }
     
     public static Boolean lineIsEmpty(String line) {
@@ -348,7 +340,6 @@ public class signshopUtil {
                 if(sharee.getPlayer() == null && Bukkit.getServer().getOfflinePlayer(share.getKey()) == null)
                     ssPlayer.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
                 else {
-                    ssPlayer.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
                     if(!ssPlayer.getName().equals(ssOwner.getName()))                        
                         ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
                     totalPercentage += share.getValue();
@@ -378,9 +369,9 @@ public class signshopUtil {
     }
     
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
-        if(SignShop.LinkableMaterials.containsKey(bBlock.getType())) {
-            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink."+SignShop.LinkableMaterials.get(bBlock.getType()), true)) {                
-                ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+        if(SignShopConfig.LinkableMaterials.containsKey(bBlock.getType())) {
+            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink."+SignShopConfig.LinkableMaterials.get(bBlock.getType()), true)) {                
+                ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                 return false;
             }
             return true;
@@ -405,7 +396,7 @@ public class signshopUtil {
                 if(bClicked.getState() instanceof InventoryHolder) {
                     SignShopChest ssChest = new SignShopChest(bClicked);
                     if(!ssChest.allowedToLink(ssPlayer)) {
-                        ssPlayer.sendMessage(SignShop.Errors.get("link_notallowed"));
+                        ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                         return false;
                     }
                 }

@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
@@ -24,7 +25,7 @@ public class linkShareSign implements SignShopSpecialOp {
             return false;
         if(ssPlayer.getPlayer().getItemInHand() == null || ssPlayer.getPlayer().getItemInHand().getType() != Material.REDSTONE)
             return false;
-        if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restrict") || sOperation.equals("share"))
+        if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;
         
         List<Block> shareSigns = new LinkedList();
@@ -33,7 +34,7 @@ public class linkShareSign implements SignShopSpecialOp {
         Boolean bUnlinked = false;
         for(Block bTemp : clickedBlocks) {
             if(currentSigns.contains(bTemp)) {                
-                ssPlayer.sendMessage(signshopUtil.getError("unlinked_share_sign", null));
+                ssPlayer.sendMessage(SignShopConfig.getError("unlinked_share_sign", null));
                 bUnlinked = true;
                 currentSigns.remove(bTemp);
             } else if(itemUtil.clickedSign(bTemp)) {
@@ -45,7 +46,7 @@ public class linkShareSign implements SignShopSpecialOp {
         
         if((bUnlinked && shareSigns.isEmpty()) || !shareSigns.isEmpty()) {
             if(!seller.getOwner().equals(player.getName()) && !player.isOp()) {
-                ssPlayer.sendMessage(signshopUtil.getError("not_allowed_to_link_sharesigns", null));
+                ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_link_sharesigns", null));
                 return true;
             }
         }
@@ -64,7 +65,7 @@ public class linkShareSign implements SignShopSpecialOp {
         if((locations = signshopUtil.validateShareSign(shareSigns, ssPlayer)).equals(""))
             return true;
         else {
-            ssPlayer.sendMessage(signshopUtil.getError("linked_share_sign", null));
+            ssPlayer.sendMessage(SignShopConfig.getError("linked_share_sign", null));
             seller.getMisc().put("sharesigns", locations);
             SignShop.Storage.SafeSave();
         }

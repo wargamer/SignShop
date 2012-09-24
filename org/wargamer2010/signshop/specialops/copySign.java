@@ -10,6 +10,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 import org.wargamer2010.signshop.operations.*;
@@ -42,7 +43,7 @@ public class copySign implements SignShopSpecialOp {
             return false;
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         if((!seller.getOwner().equals(player.getName()) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
-            ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+            ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
             return true;
         }
               
@@ -65,11 +66,11 @@ public class copySign implements SignShopSpecialOp {
             sOperation = signshopUtil.getOperation(sNewSign[0]);
         else
             sOperation = signshopUtil.getOperation(sToChange[0]);
-        
-        if(SignShop.Operations.containsKey(sOperation)) {
-            List<String> operation = SignShop.Operations.get(sOperation);                
+                
+        if(SignShopConfig.Operations.containsKey(sOperation)) {
+            List<String> operation = SignShopConfig.Operations.get(sOperation);                
             if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
-                ssPlayer.sendMessage(SignShop.Errors.get("no_permission"));
+                ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
                 return true;
             }
             Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
@@ -92,10 +93,12 @@ public class copySign implements SignShopSpecialOp {
                 ssPlayer.sendMessage("The new and old operation are not compatible.");                    
                 revert(shopSign, sToChange);
                 return true;
-            }                
-            signToChange = ((Sign) shopSign.getState());
-            signToChange.setLine(0, sNewSign[0]);
-            signToChange.update();
+            }
+            if(sNewSign[0] != null && sNewSign[0].length() > 0) {
+                signToChange = ((Sign) shopSign.getState());
+                signToChange.setLine(0, sNewSign[0]);
+                signToChange.update();
+            }
         } else {
             ssPlayer.sendMessage("The new operation does not exist!");                    
             revert(shopSign, sToChange);

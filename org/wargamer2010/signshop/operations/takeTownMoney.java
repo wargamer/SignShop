@@ -2,8 +2,6 @@ package org.wargamer2010.signshop.operations;
 
 import net.milkbowl.vault.economy.EconomyResponse;
 
-import org.bukkit.entity.Player;
-
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.util.economyUtil;
@@ -14,7 +12,7 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import com.palmergames.bukkit.towny.object.TownyUniverse;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class takeTownMoney implements SignShopOperation {
 	@Override
@@ -36,24 +34,24 @@ public class takeTownMoney implements SignShopOperation {
 
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
-                    ssPlayer.sendMessage(signshopUtil.getError("towny_bank_withdrawls_not_allowed", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.messageParts));
                     return false;
                 }
                 Resident resident = TownyUniverse.getDataSource().getResident(ssPlayer.getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
-                        ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_mayor_or_assistant", ssArgs.messageParts));
+                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.messageParts));
                         return false;
                     }
                 }
                 if (!Vault.economy.has(town.getEconomyName(), fPrice)) {
-                    ssPlayer.sendMessage(signshopUtil.getError("no_shop_money", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("no_shop_money", ssArgs.messageParts));
                     return false;
                 }
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(player, x.getMessage());
-                ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
                 return false;
             }
 
@@ -77,7 +75,7 @@ public class takeTownMoney implements SignShopOperation {
             EconomyResponse response;
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
-                    ssPlayer.sendMessage(signshopUtil.getError("towny_bank_withdrawls_not_allowed", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.messageParts));
                     return false;
                 }
 
@@ -87,14 +85,14 @@ public class takeTownMoney implements SignShopOperation {
                 // take the money from the town bank account
                 response = Vault.economy.withdrawPlayer(town.getEconomyName(), fPrice);
                 if (response.type != EconomyResponse.ResponseType.SUCCESS) {
-                    ssPlayer.sendMessage(signshopUtil.getError("towny_insufficient_funds", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("towny_insufficient_funds", ssArgs.messageParts));
                     return false;
                 }
 
                 return true;
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(ssPlayer.getPlayer(), x.getMessage());
-                ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
                 return false;
             }
 	}

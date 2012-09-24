@@ -7,6 +7,7 @@ import org.bukkit.material.Lever;
 import org.bukkit.block.Block;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.lagSetter;
 import org.wargamer2010.signshop.SignShop;
 
@@ -18,7 +19,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
             if(block.getType() == Material.LEVER)
                 foundLever = true;
         if(!foundLever) {            
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("lever_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));
             return false;
         }
         return true;
@@ -41,7 +42,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("already_on", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_on", ssArgs.messageParts));
         return bReturn;
     }
     

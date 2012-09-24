@@ -4,7 +4,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.block.BlockDamageEvent;
 import org.bukkit.event.block.BlockBurnEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -17,6 +16,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -93,7 +93,7 @@ public class SignShopBlockListener implements Listener {
         if(event.getPlayer().getItemInHand() != null 
                 && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
                 && event.getPlayer().getGameMode() == GameMode.CREATIVE
-                && SignShop.getProtectShopsInCreative()) {
+                && SignShopConfig.getProtectShopsInCreative()) {
             event.setCancelled(true);
             return;
         }
@@ -110,7 +110,7 @@ public class SignShopBlockListener implements Listener {
             return;
         } else if(!event.isCancelled() && itemUtil.clickedSign(event.getBlock())) {
             cleanUpMiscStuff("sharesigns", event.getBlock());
-            cleanUpMiscStuff("restrictsigns", event.getBlock());
+            cleanUpMiscStuff("restrictedsigns", event.getBlock());
             SignShop.Storage.SafeSave();
         }
     }

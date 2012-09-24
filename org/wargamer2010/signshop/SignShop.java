@@ -1,70 +1,43 @@
 package org.wargamer2010.signshop;
 
+import org.wargamer2010.signshop.configuration.Storage;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import java.util.HashMap;
 import java.io.IOException;
 import java.io.File;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.FileOutputStream;
-import java.util.List;
-import java.util.Map;
-import java.util.LinkedList;
-import java.util.Arrays;
 import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
-import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.clicks;
-import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.metrics.setupMetrics;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
+    private final SignShopLoginListener loginListener = new SignShopLoginListener();
     private static SignShop instance;
 
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
 
-    //Configurables
-    private FileConfiguration config;    
-    private static int MaxSellDistance = 0;
-    private static int MaxShopsPerPerson = 0;
-    private static Boolean TransactionLog = false;
-    private static boolean OPOverride = true;
-    private static boolean AllowUnsafeEnchantments = false;
-    private static boolean AllowVariableAmounts = false;
-    private static boolean AllowEnchantedRepair = true;
-    private static boolean DisableEssentialsSigns = true;
-    private static boolean AllowMultiWorldShops = true;
-    private static boolean EnablePermits = false;
-    private static boolean PreventVillagerTrade = false;
-    private static boolean ProtectShopsInCreative = true;   
-
     //Statics
-    public static Storage Storage;
-    public static Map<String,List<String>> Operations;
-    public static Map<String,HashMap<String,String>> Messages;
-    public static Map<String,String> Errors;
-    public static Map<String,HashMap<String,Float>> PriceMultipliers;
-    public static Map<String,List> Commands;
-    public static Map<String,Integer> ShopLimits;
-    public static Map<Material, String> LinkableMaterials;
-    public static List<String> SpecialsOps = new LinkedList();
+    public static Storage Storage;    
+    private static SignShopConfig SignShopConfig;    
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -83,7 +56,7 @@ public class SignShop extends JavaPlugin{
             logger.log(level,("[SignShop] " + message));
     }
     public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
-        if(SignShop.TransactionLog && !items.equals("")) {
+        if(SignShopConfig.getTransactionLog() && !items.equals("")) {
             String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + items + ", Price: " + Price);
             transactionlogger.log(Level.FINER, message);
         }
@@ -108,7 +81,7 @@ public class SignShop extends JavaPlugin{
     }
     
     private void fixStackSize() {
-        if(config.getBoolean("EnableSignStacking", false)) {
+        if(SignShopConfig.getEnableSignStacking()) {
             setItemMaxSize(Material.SIGN, 64);
             setItemMaxSize(Material.SIGN_POST, 64);
             setItemMaxSize(Material.WALL_SIGN, 64);
@@ -121,8 +94,7 @@ public class SignShop extends JavaPlugin{
         this.checkOldDir();        
         if(!this.getDataFolder().exists()) {
             this.getDataFolder().mkdir();
-        }
-        initConfig();      
+        }        
         fixStackSize();
         itemUtil.initDiscs();        
         clicks.init();
@@ -133,12 +105,6 @@ public class SignShop extends JavaPlugin{
         else
             log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
         
-        SignShop.Messages = configUtil.fetchHasmapInHashmap("messages", config);
-        SignShop.Errors = configUtil.fetchStringStringHashMap("errors", config);
-        SignShop.PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
-        SignShop.Commands = configUtil.fetchListInHashmap("commands", config);
-        SignShop.ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
-                
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
         
@@ -154,27 +120,24 @@ public class SignShop extends JavaPlugin{
             log("Failed to create transaction log", Level.INFO);
         }
 
-        setupOperations();
-        setupVault();
-        setupHooks();
-        setupLinkables();
-        setupSpecialsOps();
-        copyPDF();
+        setupVault();        
+        SignShopConfig = new SignShopConfig();
+        SignShopConfig.init();
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();
+        pm.registerEvents(loginListener, this);
+        
         if(Vault.vaultFound) {
             // Register events
             pm.registerEvents(playerListener, this);
-            pm.registerEvents(blockListener, this);
-            if(DisableEssentialsSigns) {
+            pm.registerEvents(blockListener, this);            
+            if(SignShopConfig.getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
             }
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
-        } else {
-            SignShopLoginListener login = new SignShopLoginListener(this);
-            pm.registerEvents(login, this);
+        } else {            
             log("v" + pdfFile.getVersion() + " Disabled", Level.INFO);
         }
     }
@@ -212,38 +175,14 @@ public class SignShop extends JavaPlugin{
         return true;
     }
     
-    public void initConfig() {
-        this.reloadConfig();
-        File configFile = new File("plugins/SignShop", "config.yml");
-        if(!configFile.exists()) {
-            this.saveDefaultConfig();
-            this.saveConfig();
-        }
-        config = this.getConfig();        
-        config.options().copyDefaults(true);
-        this.saveConfig();
-        this.reloadConfig();
-        MaxSellDistance = config.getInt("MaxSellDistance", MaxSellDistance);
-        TransactionLog = config.getBoolean("TransactionLog", TransactionLog);
-        MaxShopsPerPerson = config.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
-        OPOverride = config.getBoolean("OPOverride", OPOverride);
-        AllowVariableAmounts = config.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
-        AllowEnchantedRepair = config.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
-        DisableEssentialsSigns = config.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
-        AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
-        AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
-        EnablePermits = config.getBoolean("EnablePermits", EnablePermits);
-        PreventVillagerTrade = config.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
-        ProtectShopsInCreative = config.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
-    }
     
     public static SignShop getInstance() {
         return instance;
     }
     
-    public String getLogPrefix() {
-        PluginDescriptionFile pdfFile = this.getDescription();
-        String prefix = "[SignShop] [" +pdfFile.getVersion() +"]";
+    public static String getLogPrefix() {
+        PluginDescriptionFile pdfFile = SignShop.getInstance().getDescription();
+        String prefix = ChatColor.GOLD + "[SignShop] [" +pdfFile.getVersion() +"]" + ChatColor.RED;
         return prefix;
     }
     
@@ -273,136 +212,8 @@ public class SignShop extends JavaPlugin{
         if(!vault_Economy)
             log("Could not hook into Vault's Economy!", Level.WARNING);
     }
+     
     
-    private void setupHooks() {
-        HookManager.addHook("LWC");
-        HookManager.addHook("Lockette");
-        HookManager.addHook("WorldGuard");
-        HookManager.addHook("Deadbolt");
-        HookManager.addHook("Residence");
-    }
-    
-    private void setupSpecialsOps() {
-        SpecialsOps.add("convertChestshop");
-        SpecialsOps.add("copySign");
-        if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
-            SpecialsOps.add("linkShowcase");
-        SpecialsOps.add("linkShareSign");
-        SpecialsOps.add("linkRestrictSign");
-        SpecialsOps.add("changeOwner");
-    }
-    
-    private void setupOperations() {
-        SignShop.Operations = new HashMap<String,List<String>>();
-        
-        HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
-
-        List<String> tempSignOperationString = new LinkedList();
-        List<String> tempCheckedSignOperation = new LinkedList();
-        Boolean failedOp = false;
-        
-        for(String sKey : tempSignOperations.keySet()){
-            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));            
-            if(tempSignOperationString.size() > 0) {
-                for(int i = 0; i < tempSignOperationString.size(); i++) {
-                    List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
-                    String op = bits.get(0);                    
-                    try {                        
-                        Class.forName("org.wargamer2010.signshop.operations."+(op.trim()));
-                        tempCheckedSignOperation.add(tempSignOperationString.get(i).trim());
-                    } catch(ClassNotFoundException notfound) {
-                        failedOp = true;
-                        break;
-                    }
-                }
-                if(!failedOp && !tempCheckedSignOperation.isEmpty())
-                    SignShop.Operations.put(sKey.toLowerCase(), tempCheckedSignOperation);
-                tempCheckedSignOperation = new LinkedList();
-                failedOp = false;
-            }
-        }
-    }
-    
-    private void setupLinkables() {
-        LinkableMaterials = new HashMap<Material, String>();
-        LinkableMaterials.put(Material.CHEST, "chest");
-        LinkableMaterials.put(Material.DISPENSER, "dispenser");        
-        LinkableMaterials.put(Material.FURNACE, "furnace");
-        LinkableMaterials.put(Material.BURNING_FURNACE, "furnace");
-        LinkableMaterials.put(Material.BREWING_STAND, "brewingstand");
-        LinkableMaterials.put(Material.ENCHANTMENT_TABLE, "enchantmenttable");
-        LinkableMaterials.put(Material.LEVER, "lever");
-        LinkableMaterials.put(Material.SIGN, "sign");
-        LinkableMaterials.put(Material.SIGN_POST, "sign");
-        LinkableMaterials.put(Material.WALL_SIGN, "sign");        
-        LinkableMaterials.put(Material.STEP, "slab");           
-    }
-    
-    private void copyPDF() {
-        InputStream in = getClass().getResourceAsStream("/SSQuickReference.pdf");
-        File file = new File(this.getDataFolder(), "SSQuickReference.pdf");        
-        if(file.exists())
-            if(!file.delete())
-                return;
-        try {
-            file.createNewFile();
-
-            OutputStream os = new FileOutputStream(file.getPath());
-            byte[] buffer = new byte[4096];
-            int bytesRead;
-            while ((bytesRead = in.read(buffer)) != -1) {
-              os.write(buffer, 0, bytesRead);
-            }
-            in.close();
-            os.close();
-        } catch(java.io.FileNotFoundException notfoundex) {
-            return;
-        } catch(java.io.IOException ioex) {
-            return;
-        } catch(NullPointerException nullex) {
-            return;
-        }
-    }
-        
-    public static int getMaxSellDistance() {
-        return MaxSellDistance;
-    }
-    
-    public static int getMaxShopsPerPerson() {
-        return MaxShopsPerPerson;
-    }
-    
-    public static Boolean getOPOverride() {
-        return OPOverride;
-    }
-    
-    public static Boolean getAllowVariableAmounts() {
-        return AllowVariableAmounts;
-    }
-    
-    public static Boolean getAllowEnchantedRepair() {
-        return AllowEnchantedRepair;
-    }
-    
-    public static Boolean getAllowUnsafeEnchantments() {
-        return AllowUnsafeEnchantments;
-    }
-    
-    public static Boolean getAllowMultiWorldShops() {
-        return AllowMultiWorldShops;
-    }
-    
-    public static Boolean getEnablePermits() {
-        return EnablePermits;
-    }
-    
-    public static Boolean getPreventVillagerTrade() {
-        return PreventVillagerTrade;
-    }
-    
-    public static Boolean getProtectShopsInCreative() {
-        return ProtectShopsInCreative;
-    }
     
     public class TransferFormatter extends Formatter {    
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");

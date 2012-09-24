@@ -18,7 +18,8 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.Storage;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 
@@ -234,7 +235,7 @@ public class itemUtil {
         try {
             isEnchantMe.addEnchantments(enchantments);
         } catch(IllegalArgumentException ex) {
-            if(SignShop.getAllowUnsafeEnchantments()) {
+            if(SignShopConfig.getAllowUnsafeEnchantments()) {
                 try {
                     isEnchantMe.addUnsafeEnchantments(enchantments);                    
                 } catch(IllegalArgumentException exfinal) {
@@ -302,7 +303,7 @@ public class itemUtil {
             if(bTake)
                 iiFrom.removeItem(isBackup);            
             return returnMap;
-        } else if(!SignShop.getAllowVariableAmounts() && !fromOK) {            
+        } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {            
             returnMap.put(isItemsToTake, 0.0f);
             return returnMap;
         }
@@ -355,9 +356,9 @@ public class itemUtil {
                     continue;
                 if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {                                                
                     String[] sLines = ((Sign) temp.getState()).getLines();
-                    if(!SignShop.Operations.containsKey(signshopUtil.getOperation(sLines[0])))
+                    if(!SignShopConfig.Operations.containsKey(signshopUtil.getOperation(sLines[0])))
                         continue;                    
-                    List operation = SignShop.Operations.get(signshopUtil.getOperation(sLines[0]));
+                    List operation = SignShopConfig.Operations.get(signshopUtil.getOperation(sLines[0]));
                     Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
                     if(SignShopOperations == null)
                         return;

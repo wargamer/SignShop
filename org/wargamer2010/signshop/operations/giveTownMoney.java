@@ -2,11 +2,9 @@ package org.wargamer2010.signshop.operations;
 
 import net.milkbowl.vault.economy.EconomyResponse;
 
-import org.bukkit.entity.Player;
-
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.util.economyUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 import com.palmergames.bukkit.towny.TownyMessaging;
@@ -38,7 +36,7 @@ public class giveTownMoney implements SignShopOperation {
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
-                        ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_mayor_or_assistant", ssArgs.messageParts));
+                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.messageParts));
                         return false;
                     }
                 }
@@ -46,12 +44,12 @@ public class giveTownMoney implements SignShopOperation {
                     ssPlayer.sendMessage("Error with the economy, tell the System Administrator to install Vault properly.");
                     return false;
                 } else if (town.getEconomyName().equals("")) {
-                    ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
                     return false;
                 }
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(player, x.getMessage());
-                ssPlayer.sendMessage(signshopUtil.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
                 return false;
             }
             return true;

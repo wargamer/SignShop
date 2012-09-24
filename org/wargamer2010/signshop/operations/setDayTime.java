@@ -2,7 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.World;
 import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class setDayTime implements SignShopOperation {    
     @Override
@@ -19,7 +19,7 @@ public class setDayTime implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
         world.setTime(0);                
-        SignShopPlayer.broadcastMsg(world, signshopUtil.getError("made_day", ssArgs.messageParts));
+        SignShopPlayer.broadcastMsg(world, SignShopConfig.getError("made_day", ssArgs.messageParts));
         return true;
     }
 }
