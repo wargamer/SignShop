@@ -10,12 +10,13 @@ import java.util.Map;
 import java.util.logging.Level;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class enchantItemInHand implements SignShopOperation {    
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("chest_missing", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));            
             return false;
         }
         
@@ -40,7 +41,7 @@ public class enchantItemInHand implements SignShopOperation {
             }
         }
         if(AllEnchantments.isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("enchantment_missing", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("enchantment_missing", ssArgs.messageParts));            
             return false;
         }
         ssArgs.miscSettings.put("enchantmentInHand", signshopUtil.convertEnchantmentsToString(AllEnchantments));
@@ -62,10 +63,10 @@ public class enchantItemInHand implements SignShopOperation {
         ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();        
         ItemStack isBackup = itemUtil.getBackupSingleItemStack(isInHand);
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("item_not_enchantable", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.messageParts));
             return false;
         } else if(!itemUtil.addSafeEnchantments(isBackup, enchantments)) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("item_not_enchantable", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.messageParts));
             return false;
         }                
         return true;

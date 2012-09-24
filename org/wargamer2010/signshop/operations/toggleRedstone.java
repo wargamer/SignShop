@@ -6,6 +6,7 @@ import org.bukkit.material.MaterialData;
 import org.bukkit.material.Lever;
 import org.bukkit.block.Block;
 import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class toggleRedstone implements SignShopOperation {    
     @Override
@@ -15,7 +16,7 @@ public class toggleRedstone implements SignShopOperation {
             if(block.getType() == Material.LEVER)
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("lever_missing", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));            
             return false;
         }
         return true;

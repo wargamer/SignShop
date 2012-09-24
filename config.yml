@@ -14,6 +14,7 @@ AllowMultiWorldShops: false
 EnablePermits: false
 PreventVillagerTrade: false
 ProtectShopsInCreative: true
+Languages: english
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -46,7 +47,7 @@ signs:
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
   Command: takePlayerMoney, playerIsOp
   Share: ShareSign
-  Restrict: RestrictSign
+  Restricted: RestrictedSign
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -226,17 +227,18 @@ errors:
   registered_share_sign: Registered a Share sign, please click the Shop sign next.
   unlinked_share_sign: Unlinked Share sign from Shop.
   linked_share_sign: Succesfully linked Share sign to Shop.
-  not_allowed_to_link_restrictsigns: You are not allowed to link Share signs to this shop!
-  no_shop_linked_to_restrictsign: This Restrict sign has not been linked to any shops.  
-  registered_restrict_sign: Registered a Restrict sign, please click the Shop sign next.
-  unlinked_restrict_sign: Unlinked Restrict sign from Shop.
-  linked_restrict_sign: Succesfully linked Restrict sign to Shop.
-  restrict_sign_restricts: This Restrict sign restrict use for the Shop(s) at !restrictedshops
+  not_allowed_to_link_restrictedsigns: You are not allowed to link Restricted signs to this shop!
+  no_shop_linked_to_restrictedsign: This Restricted sign has not been linked to any shops.  
+  registered_restricted_sign: Registered a Restricted sign, please click the Shop sign next.
+  unlinked_restricted_sign: Unlinked Restricted sign from Shop.
+  linked_restricted_sign: Succesfully linked Restricted sign to Shop.
+  restricted_sign_restricts: This Restricted sign restricts use of the Shop(s) at !restrictedshops
   towny_insufficient_funds: Insufficient funds in shop account!
   towny_owner_not_mayor_or_assistant: The shop owner isn't a mayor or assistant of a town.
   towny_owner_not_belong_to_town: The shop owner likely doesn't belong to a town.
   towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
   restricted_from_using: You are restricted from using this shop!
+  restricted_but_owner: You are not restricted to use this shop as you are the owner.
 commands:
   TpToOwner:
   - tp !player !owner

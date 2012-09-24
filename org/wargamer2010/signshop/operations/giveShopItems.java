@@ -5,7 +5,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.block.Block;
 import org.wargamer2010.signshop.util.itemUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +14,7 @@ public class giveShopItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("chest_missing", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));            
             return false;
         }
         List<ItemStack> tempItems = new ArrayList<ItemStack>();
@@ -33,7 +33,7 @@ public class giveShopItems implements SignShopOperation {
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("chest_empty", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));            
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -52,7 +52,7 @@ public class giveShopItems implements SignShopOperation {
             }
         }
         if(!bStockOK)
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("overstocked", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("overstocked", ssArgs.messageParts));            
         if(activeCheck && !bStockOK)
             itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
         else if(activeCheck)

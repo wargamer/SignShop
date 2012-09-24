@@ -16,6 +16,7 @@ import org.wargamer2010.signshop.util.*;
 import com.miykeal.showCaseStandalone.*;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class linkShowcase implements SignShopSpecialOp {
     @Override
@@ -41,7 +42,7 @@ public class linkShowcase implements SignShopSpecialOp {
         
         ItemStack showcasing = null;        
         if(seller.getItems() == null || seller.getItems().length == 0) {
-            ssPlayer.sendMessage(SignShop.Errors.get("chest_empty"));
+            ssPlayer.sendMessage(SignShopConfig.getError(("chest_empty"), null));
             return false;
         }
         showcasing = seller.getItems()[0];

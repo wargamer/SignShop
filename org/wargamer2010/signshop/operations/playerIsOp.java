@@ -1,12 +1,12 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class playerIsOp implements SignShopOperation {    
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {        
         if(!ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin."+ssArgs.get_sOperation()), true) && !ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin.*"), true)) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_permission", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_permission", ssArgs.messageParts));
             return false;        
         }
         return true;

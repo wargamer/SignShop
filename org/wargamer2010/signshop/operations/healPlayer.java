@@ -1,6 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class healPlayer implements SignShopOperation {    
     @Override
@@ -13,7 +13,7 @@ public class healPlayer implements SignShopOperation {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
         if(ssArgs.get_ssPlayer().getPlayer().getHealth() >= 20) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("already_full_health", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_full_health", ssArgs.messageParts));
             return false;
         }
         return true;

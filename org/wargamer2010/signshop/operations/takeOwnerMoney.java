@@ -1,8 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.economyUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class takeOwnerMoney implements SignShopOperation {    
     @Override
@@ -20,7 +19,7 @@ public class takeOwnerMoney implements SignShopOperation {
         ssArgs.set_fPrice(fPrice);
         ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         if(!ssArgs.get_ssOwner().hasMoney(fPrice)) {
-            ssArgs.get_ssPlayer().sendMessage(signshopUtil.getError("no_shop_money", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_money", ssArgs.messageParts));
             return false;
         }
         return true;
