@@ -121,8 +121,10 @@ public class SignShopConfig {
                     continue;
                 if(preferedLanguage.equals(""))
                     preferedLanguage = languageName;                
+            } else {
+                SignShop.log("The languagefile " + languageFile + " for language: " + languageName + " could not be found in the plugin directory!", Level.WARNING);
             }
-        }
+        } 
         if(preferedLanguage.equals(""))
             preferedLanguage = baseLanguage;
         PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
@@ -174,19 +176,6 @@ public class SignShopConfig {
         File configFile = new File(instance.getDataFolder(), filename);
         FileConfiguration ymlThing = new YamlConfiguration();
         FileConfiguration thingInJar = new YamlConfiguration();
-        try {
-            InputStream in = getClass().getResourceAsStream("/" + filename);            
-            if(in != null) {
-                thingInJar.load(in);                        
-                ymlThing.setDefaults(thingInJar);  
-                ymlThing.options().copyDefaults(true);
-                ymlThing.options().copyHeader(true);                        
-                ymlThing.save(filename);                        
-                in.close();
-            }
-        } catch(FileNotFoundException ex) { }
-        catch(IOException ex) { }
-        catch(InvalidConfigurationException ex) { }                
         
         try {
             ymlThing.load(configFile);
@@ -197,6 +186,20 @@ public class SignShopConfig {
         } catch(InvalidConfigurationException ex) {
             SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);
         }        
+        try {
+            InputStream in = getClass().getResourceAsStream("/" + filename);            
+            if(in != null) {
+                thingInJar.load(in);                        
+                ymlThing.options().copyDefaults(true);
+                ymlThing.options().copyHeader(true);
+                ymlThing.setDefaults(thingInJar);                  
+                ymlThing.save(configFile);
+                in.close();
+            }
+        } catch(FileNotFoundException ex) { }
+        catch(IOException ex) { }
+        catch(InvalidConfigurationException ex) { }
+        
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
