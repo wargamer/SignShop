@@ -12,9 +12,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import java.io.IOException;
 import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.FileOutputStream;
 import java.util.logging.*;
 import java.util.Date;
 import java.text.DateFormat;
@@ -105,6 +102,9 @@ public class SignShop extends JavaPlugin{
         else
             log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
         
+        SignShopConfig = new SignShopConfig();
+        SignShopConfig.init();
+        
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
         
@@ -120,9 +120,7 @@ public class SignShop extends JavaPlugin{
             log("Failed to create transaction log", Level.INFO);
         }
 
-        setupVault();        
-        SignShopConfig = new SignShopConfig();
-        SignShopConfig.init();
+        setupVault();                
         
         PluginDescriptionFile pdfFile = this.getDescription();
         PluginManager pm = getServer().getPluginManager();

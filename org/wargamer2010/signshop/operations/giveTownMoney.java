@@ -14,6 +14,7 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import com.palmergames.bukkit.towny.object.TownyUniverse;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class giveTownMoney implements SignShopOperation {
 	@Override
@@ -28,8 +29,7 @@ public class giveTownMoney implements SignShopOperation {
             if (ssPlayer.getPlayer() == null)
                 return true;
             
-            ssArgs.set_fPrice(ssArgs.get_fPrice());
-            ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.get_fPrice()));
+            signshopUtil.ApplyPriceMod(ssArgs);
 
             try {
                 Resident resident = TownyUniverse.getDataSource().getResident(ssPlayer.getName());
@@ -62,8 +62,7 @@ public class giveTownMoney implements SignShopOperation {
                     return false;
             }
 
-            Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
-            Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             // then deposit it into the bank
             Resident resident;

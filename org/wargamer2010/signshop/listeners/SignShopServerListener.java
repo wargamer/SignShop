@@ -64,13 +64,13 @@ public class SignShopServerListener implements Listener {
                     this.ess = null;
                     return;
                 }       
-                // essConflictFound = false;
+                essConflictFound = false;
                 for(EssentialsSign sign : this.ess.getSettings().enabledSigns()) {
                     String essShopName = signshopUtil.getOperation(sign.getTemplateName());
                     if(essShopName.equals(""))
                         continue;
                     essShopName = ChatColor.stripColor(essShopName).toLowerCase();
-                    if(SignShopConfig.Operations.containsKey(essShopName)) {                    
+                    if(!SignShopConfig.getBlocks(essShopName).isEmpty()) {
                         SignShop.log("Sign with name " + sign.getTemplateName() + " is enabled for Essentials and conflicts with SignShop!", Level.SEVERE);
                         if(!essConflictFound)
                             essConflictFound = true;

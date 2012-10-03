@@ -14,17 +14,20 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.File;
 import java.io.InputStream;
+import java.io.Closeable;
 import java.io.OutputStream;
 import java.io.FileOutputStream;
+import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
 
 public class SignShopConfig {
-    public static Map<String,List<String>> Operations;
-    public static Map<String,Map<String,HashMap<String,String>>> Messages;
-    public static Map<String,Map<String,String>> Errors;
+    private static Map<String,List<String>> Operations;
+    private static Map<String,String> OperationAliases;                         // Alias <-> Original
+    private static Map<String,Map<String,HashMap<String,String>>> Messages;
+    private static Map<String,Map<String,String>> Errors;
     public static Map<String,HashMap<String,Float>> PriceMultipliers;
     public static Map<String,List> Commands;
     public static Map<String,Integer> ShopLimits;
@@ -53,8 +56,9 @@ public class SignShopConfig {
     private static String preferedLanguage = "";
     
     public SignShopConfig() {
-        instance = SignShop.getInstance();
-        config = instance.getConfig();
+        instance = SignShop.getInstance();        
+        preferedLanguage = "";
+        Languages = "english";
     }
     
     private List<String> getOrderedListFromArray(String[] array) {
@@ -65,13 +69,12 @@ public class SignShopConfig {
         return list;
     }
     
-    public void init() {
+    public void init() {        
         initConfig();
         Languages = Languages.replace(baseLanguage, "config");
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
         if(!aLanguages.contains("config"))
-            aLanguages.add("config");        
-        System.out.println("[*] Languages setting is at: " + Languages);
+            aLanguages.add("config");                
         Messages = new LinkedHashMap<String,Map<String,HashMap<String,String>>>();
         Errors = new LinkedHashMap<String,Map<String,String>>();
         for(String language : aLanguages) {
@@ -79,35 +82,37 @@ public class SignShopConfig {
             String languageName = (language.equals("config") ? baseLanguage : language);
             copyFileFromJar(filename, false);
             File languageFile = new File(instance.getDataFolder(), filename);
-            if(languageFile.exists()) {
-                System.out.println("[*] Found language called: " + languageName + " with file: " + languageFile + " and original list key: " + language);
+            if(languageFile.exists()) {                
                 FileConfiguration ymlThing = new YamlConfiguration();                
                 FileConfiguration thingInJar = new YamlConfiguration();                
                 try {
                     ymlThing.load(languageFile);                    
                 } catch(FileNotFoundException ex) {
+                    SignShop.log("The languagefile " + languageFile + " for language: " + languageName + " could not be found in the plugin directory!", Level.WARNING);
                     continue;
                 } catch(IOException ex) {
+                    SignShop.log("Error occured while loading languagefile called: " + languageFile + " for language: " + languageName, Level.WARNING);
                     continue;
                 } catch(InvalidConfigurationException ex) {
+                    SignShop.log("The languagefile called " + languageFile + " is not proper YML. Please check the syntax. This is the message: " + ex.getMessage(), Level.WARNING);                    
                     continue;
-                }                      
-                try {
-                    InputStream in = getClass().getResourceAsStream("/" + filename);
-                    System.out.println("Loading: " + ("/" + filename));
-                    if(in != null) {
-                        thingInJar.load(in);                        
-                        ymlThing.setDefaults(thingInJar);  
-                        ymlThing.options().copyDefaults(true);
-                        ymlThing.options().copyHeader(true);                        
-                        ymlThing.save(languageFile);
-                    } else {
-                        System.out.println("[!] Input == null!");
-                    }
-                } catch(FileNotFoundException ex) { }
-                catch(IOException ex) { }
-                catch(InvalidConfigurationException ex) { }
-                    
+                }
+                if(!language.equals("config")) {
+                    try {
+                        InputStream in = getClass().getResourceAsStream("/" + filename);                        
+                        if(in != null) {
+                            thingInJar.load(in);                        
+                            ymlThing.setDefaults(thingInJar);  
+                            ymlThing.options().copyDefaults(true);
+                            ymlThing.options().copyHeader(true);                        
+                            ymlThing.save(languageFile);                        
+                            in.close();
+                        }
+                    } catch(FileNotFoundException ex) { }
+                    catch(IOException ex) { }
+                    catch(InvalidConfigurationException ex) { }                
+                }
+
                 Messages.put(languageName, configUtil.fetchHasmapInHashmap("messages", ymlThing));
                 if(Messages.get(languageName) == null)
                     continue;
@@ -115,8 +120,7 @@ public class SignShopConfig {
                 if(Errors.get(languageName) == null)
                     continue;
                 if(preferedLanguage.equals(""))
-                    preferedLanguage = languageName;
-                System.out.println("[*] Loaded language called: " + languageName + " with file: " + languageFile + " and original list key: " + language);
+                    preferedLanguage = languageName;                
             }
         }
         if(preferedLanguage.equals(""))
@@ -129,7 +133,7 @@ public class SignShopConfig {
         setupHooks();
         setupSpecialsOps();
         setupLinkables();
-        System.out.println("[*] init routine finished, left with preferedLanguage of: " + preferedLanguage + " and " + Messages.get(preferedLanguage).size() + " messages and " + Errors.get(preferedLanguage).size() + " errors for that language");
+        initConfig();        
     }
     
     private void setupHooks() {
@@ -165,30 +169,49 @@ public class SignShopConfig {
         LinkableMaterials.put(Material.STEP, "slab");           
     }
     
-    private void initConfig() {        
-        instance.reloadConfig();
-        File configFile = new File("plugins/SignShop", "config.yml");
-        if(!configFile.exists()) {
-            instance.saveDefaultConfig();
-            instance.saveConfig();
+    private void initConfig() {    
+        String filename = "config.yml";
+        File configFile = new File(instance.getDataFolder(), filename);
+        FileConfiguration ymlThing = new YamlConfiguration();
+        FileConfiguration thingInJar = new YamlConfiguration();
+        try {
+            InputStream in = getClass().getResourceAsStream("/" + filename);            
+            if(in != null) {
+                thingInJar.load(in);                        
+                ymlThing.setDefaults(thingInJar);  
+                ymlThing.options().copyDefaults(true);
+                ymlThing.options().copyHeader(true);                        
+                ymlThing.save(filename);                        
+                in.close();
+            }
+        } catch(FileNotFoundException ex) { }
+        catch(IOException ex) { }
+        catch(InvalidConfigurationException ex) { }                
+        
+        try {
+            ymlThing.load(configFile);
+        } catch(FileNotFoundException ex) {
+            SignShop.log(filename + " could not be found. Configuration could not be loaded.", Level.WARNING);
+        } catch(IOException ex) {
+            SignShop.log(filename + " could not be loaded. Configuration could not be loaded.", Level.WARNING);
+        } catch(InvalidConfigurationException ex) {
+            SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);
         }        
-        config.options().copyDefaults(true);
-        instance.saveConfig();
-        instance.reloadConfig();
-        MaxSellDistance = config.getInt("MaxSellDistance", MaxSellDistance);
-        TransactionLog = config.getBoolean("TransactionLog", TransactionLog);
-        MaxShopsPerPerson = config.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
-        OPOverride = config.getBoolean("OPOverride", OPOverride);
-        AllowVariableAmounts = config.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
-        AllowEnchantedRepair = config.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
-        DisableEssentialsSigns = config.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
-        AllowUnsafeEnchantments = config.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
-        AllowMultiWorldShops = config.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
-        EnablePermits = config.getBoolean("EnablePermits", EnablePermits);
-        PreventVillagerTrade = config.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
-        ProtectShopsInCreative = config.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
-        EnableSignStacking = config.getBoolean("EnableSignStacking", EnableSignStacking);
-        Languages = config.getString("Languages", Languages);
+        MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
+        TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
+        MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
+        OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
+        AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
+        AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
+        DisableEssentialsSigns = ymlThing.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
+        AllowUnsafeEnchantments = ymlThing.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
+        AllowMultiWorldShops = ymlThing.getBoolean("AllowMultiWorldShops", AllowMultiWorldShops);
+        EnablePermits = ymlThing.getBoolean("EnablePermits", EnablePermits);
+        PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
+        ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
+        EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
+        Languages = ymlThing.getString("Languages", Languages);       
+        this.config = ymlThing;
     }
     
     private void setupOperations() {
@@ -202,7 +225,7 @@ public class SignShopConfig {
         
         for(String sKey : tempSignOperations.keySet()){
             tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));            
-            if(tempSignOperationString.size() > 0) {
+            if(tempSignOperationString.size() > 0) {                
                 for(int i = 0; i < tempSignOperationString.size(); i++) {
                     List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
                     String op = bits.get(0);                    
@@ -220,7 +243,48 @@ public class SignShopConfig {
                 failedOp = false;
             }
         }
+        
+        List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
+        aLanguages.remove("config");
+        SignShopConfig.OperationAliases = new HashMap<String,String>();        
+        
+        for(String language : aLanguages) {
+            String filename = (language + ".yml");            
+            File languageFile = new File(instance.getDataFolder(), filename);
+            if(languageFile.exists()) {                                
+                FileConfiguration ymlThing = new YamlConfiguration();                                
+                try {
+                    ymlThing.load(languageFile);                    
+                } catch(FileNotFoundException ex) {
+                    continue;
+                } catch(IOException ex) {
+                    continue;
+                } catch(InvalidConfigurationException ex) {
+                    continue;
+                }
+                HashMap<String,String> tempSignAliases = configUtil.fetchStringStringHashMap("signs", ymlThing);                
+                for(Map.Entry<String, String> alias : tempSignAliases.entrySet()) {
+                    if(Operations.containsKey(alias.getValue().toLowerCase())) {
+                        SignShopConfig.OperationAliases.put(alias.getKey().toLowerCase(), alias.getValue().toLowerCase());
+                    } else {
+                        SignShop.log("Could not find " + alias.getValue() + " to alias as " + alias.getKey(), Level.WARNING);
+                    }
+                    
+                }
+            }
+        }
     }
+    
+    private void closeStream(Closeable in) {
+        if(in == null)
+            return;
+        try {
+            in.close();
+        } catch(IOException ex) {
+            
+        }
+    }
+            
     
     private void copyFileFromJar(String filename, Boolean delete) {
         InputStream in = getClass().getResourceAsStream("/" + filename);
@@ -228,6 +292,7 @@ public class SignShopConfig {
         OutputStream os = null;
         if(file.exists() && delete) {
             if(!file.delete()) {
+                closeStream(in);
                 return;
             }
         } else if(file.exists() && !delete) {
@@ -250,15 +315,9 @@ public class SignShopConfig {
         } catch(NullPointerException nullex) {            
             
         }
-        try {
-            if(in != null)
-                in.close();
-            if(os != null)
-                os.close();
-        } catch(java.io.IOException ioex) {            
-            return;
-        } 
         
+        closeStream(in);            
+        closeStream(os);
     }
     
     public static String getError(String sType, Map<String, String> messageParts) {        
@@ -280,6 +339,9 @@ public class SignShopConfig {
         Map<String,HashMap<String,String>> localisedMessage = Messages.get(SignShopConfig.preferedLanguage);        
         Map<String,HashMap<String,String>> defaultMessage = Messages.get(SignShopConfig.baseLanguage);
         
+        if(OperationAliases.containsKey(sOperation))
+            sOperation = OperationAliases.get(sOperation);
+        
         String message = "";
         if(!localisedMessage.containsKey(sType) || !localisedMessage.get(sType).containsKey(sOperation) || localisedMessage.get(sType).get(sOperation) == null) {
             if(!defaultMessage.containsKey(sType) || !defaultMessage.get(sType).containsKey(sOperation) || defaultMessage.get(sType).get(sOperation) == null) {
@@ -290,6 +352,16 @@ public class SignShopConfig {
             message = localisedMessage.get(sType).get(sOperation);
         
         return fillInBlanks(message, messageParts);
+    }
+    
+    public static List<String> getBlocks(String op) {
+        if(OperationAliases.containsKey(op))
+            op = OperationAliases.get(op);
+        
+        if(Operations.containsKey(op))
+            return Operations.get(op);
+        else
+            return new LinkedList<String>();
     }
     
     public static String fillInBlanks(String message, Map<String, String> messageParts) {

@@ -338,14 +338,16 @@ public class signshopUtil {
                 Float amount = (fPrice / 100 * share.getValue());                
                 SignShopPlayer sharee = new SignShopPlayer(share.getKey());
                 if(sharee.getPlayer() == null && Bukkit.getServer().getOfflinePlayer(share.getKey()) == null)
-                    ssPlayer.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
+                    ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
                 else {
-                    if(!ssPlayer.getName().equals(ssOwner.getName()))                        
-                        ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
+                    ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
                     totalPercentage += share.getValue();
                     bTotalTransaction = sharee.mutateMoney(amount);
-                    if(!bTotalTransaction)
+                    if(!bTotalTransaction) {
+                        ssOwner.sendMessage("Money transaction failed for player: " + share.getKey());
                         return false;
+                    }
+                        
                 }
             }
             if(totalPercentage != 100) {                
@@ -406,6 +408,16 @@ public class signshopUtil {
             return true;
         }
         return false;
+    }
+    
+    public static Float ApplyPriceMod(SignShopArguments ssArgs) {
+        if(ssArgs.tryToApplyPriceMod()) {
+            Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
+            Float fPrice = (ssArgs.get_fPrice() * fPricemod);        
+            ssArgs.set_fPrice(fPrice);
+            ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
+        }
+        return ssArgs.get_fPrice();
     }
    
 }
