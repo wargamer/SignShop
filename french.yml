@@ -1,0 +1,224 @@
+signs:
+  Acheter: Buy
+  Vendre: Sell
+  Faire un don: Donate
+  DonateHand: DonateHand
+  Emplacement: Slot
+  Isell: iSell
+  iBuy: iBuy
+  gBuy: gBuy
+  Gsell: gSell
+  Jour: Day
+  Nuit: Night
+  Pluie: Rain
+  ClearSkies: ClearSkies
+  DeviceOn: DeviceOn
+  DeviceOff: DeviceOff
+  Toggle: Toggle
+  Périphérique: Device
+  Heal: Heal
+  Réparation: Repair
+  Éliminer: Dispose
+  DeviceItem: DeviceItem
+  iSlot: iSlot
+  Enchantement: Enchant
+  iBuyXP: iBuyXP
+  iSellXP: iSellXP
+  iTrade: iTrade
+  TpToOwner: tpToOwner
+  Classe: Class
+  Désenchantement: Disenchant
+  Commande: Command
+  Partager: Share
+  Restreint: Restricted
+messages:
+  setup:
+    Acheter: Vous avez mis des !items en vente au prix de !price!
+    Vendre: Vous avez mis une prime de prix pour les !items!
+    Faites un don: Vous avez configuré une boîte de dons pour les articles!!
+    DonateHand: Vous avez configuré une boîte de dons pour tous les types d'éléments
+    Slot: Vous avez configuré une offre de prix machine à sous articles!
+    iBuy: Vous avez mis éléments infiniment pour la vente au prix de prix!
+    Isell: Vous avez mis une infinie bonté de prix pour les articles!
+    gBuy: Vous avez configuré un magasin vendant des articles pour le fantôme prix! (Notez que vous ne recevrez pas de perdre de l'argent à partir de cette boutique)
+    Gsell: Vous avez configuré un achat achats fictifs articles pour le prix! (Notez que vous ne recevrez pas de perdre de l'argent à partir de cette boutique)
+    Day: Vous avez configuré un contrôleur de temps que les coûts de prix!
+    Nuit: Vous avez configuré un contrôleur de temps que les coûts de prix!
+    Pluie: Vous avez configuré un contrôleur temps que les coûts de prix!
+    ClearSkies: Vous avez configuré un contrôleur temps que les coûts de prix!
+    DeviceOn: Vous avez configuré un dispositif activateur que les coûts de prix!
+    DeviceOff: Vous avez configuré un dispositif que les coûts désactivateur prix!
+    Toggle: Vous avez configuré un dispositif toggler que les coûts de prix!
+    Périphérique: Vous avez configuré un dispositif temporaire activateur que les coûts de prix!
+    Heal: Vous avez configuré une station de guérison que les coûts de prix!
+    Réparation: Vous avez configuré une station de réparation que les coûts de prix!
+    Éliminer: Vous avez configuré un signe Dispose
+    DeviceItem: Vous avez configuré un dispositif temporaire activateur articles que les coûts!!
+    iSlot: Vous avez configuré une offre de prix machine à sous infini articles!
+    Enchantement: Vous avez configuré un enchanteur que les coûts et les prix enchante avec des enchantements!!!
+    iSellXP: Vous avez mis une prime de prix pour xp !XP
+    iBuyXP: Vous avez mis xp !XP en vente à un prix de prix!
+    iTrade: Vous avez configuré une boutique de commerce que les coûts chest1 pour chest2!!!
+    TpToOwner: Vous avez configuré un magasin par exemple la commande, la vente se téléporte au propriétaire pour le prix!
+    Classe: Vous avez configuré une boutique pour vendre une catégorie de postes pour le prix!
+    Désenchantement: Vous avez configuré un signe qui élimine les enchantements pour le prix!
+    Commande: Vous avez créé un signe qui exécute des commandes pour le prix!
+  confirm:
+    Acheter: Acheter des objets pour le prix!?
+    Vendre: Vendre des objets pour le prix!?
+    Faire un don: Faire un don! Articles?
+    DonateHand: Faire un don articles?
+    Emplacement: Jouez cette machine à sous pour le prix?
+    Redstone: Activer cet appareil pour le prix?
+    iBuy: acheter des articles pour prix!!?
+    Isell: Vendre des objets pour le prix!?
+    gBuy: acheter des articles pour prix!!?
+    Gsell: Vendre des objets pour le prix!?
+    Jour: Réglez l'heure de jour pour les prix?
+    Nuit: Réglez l'heure de nuit pour le prix?
+    Pluie: Réglez le temps de pluie pour le prix?
+    ClearSkies: Réglez le temps pour effacer ciel pour le prix?
+    DeviceOn: Activer cet appareil pour le prix?
+    DeviceOff: Désactiver ce périphérique pour le prix?
+    Toggle: Basculer cet appareil pour le prix?
+    Périphérique: Temporairement activer ce dispositif pour le prix?
+    Heal: vous guérir de prix?
+    Réparation: Réparation de l'objet tenu dans la main pour le prix?
+    Jeter: Jeter les articles!?
+    DeviceItem: Temporairement activer ce dispositif des articles?
+    iSlot: Jouez cette machine à sous infiniment garni pour le prix?
+    Enchantement: Ench votre article avec des enchantements pour le prix!!?
+    iSellXP: Vendre !xp XP pour le prix!?
+    iBuyXP: Acheter !xp XP pour les prix?
+    iTrade: Achat chest2 avec chest1!?
+    TpToOwner: Téléportation au propriétaire pour le prix!?
+    Classe: Acheter le contenant classe articles pour le prix!?
+    Désenchanter: Retirer enchantements sur l'objet dans votre main pour le prix?
+    Commande: Exécutez les commandes sur ce signe pour le prix?
+  transaction:
+    Acheter: Vous avez acheté des articles pour le prix!!
+    Vendre: Vous avez vendu des articles pour le prix!!
+    Faites un don: Vous avez donné des objets!!
+    DonateHand: Vous avez donné des objets!
+    Slot: Vous avez gagné articles!
+    Redstone: Dispositif activé pour le prix!
+    iBuy: Vous avez acheté des articles pour le prix!!
+    Isell: Vous avez vendu des articles pour le prix!!
+    gBuy: Vous avez acheté des articles pour le prix!!
+    Gsell: Vous avez vendu des articles pour le prix!!
+    Day: Vous avez mis le temps en jour pour le prix!
+    Nuit: Vous pouvez définir le temps de la nuit pour le prix!
+    Pluie: Vous pouvez définir le temps de pluie pour le prix!
+    ClearSkies: Vous pouvez définir le temps de dégager le ciel pour le prix!
+    DeviceOn: Vous avez activé ce dispositif pour le prix!
+    DeviceOff: Vous avez désactivé ce prix!
+    Toggle: Vous basculé cet appareil pour le prix!
+    Périphérique: Vous temporairement activé ce dispositif pour le prix!
+    Heal: Vous-même guéri pour le prix!
+    Réparation: Vous réparé un élément pour le prix!
+    Éliminer: Vous avez disposé d'éléments!!
+    DeviceItem: Vous temporairement activé ce dispositif des articles!
+    iSlot: Vous avez gagné articles!
+    Enchantement: Enchanted votre article avec des enchantements pour le prix!!
+    iSellXP: Vendu xp XP pour le prix!
+    iBuyXP: Ajouté xp XP pour le prix!
+    iTrade: Échangé chest1 pour chest2!
+    TpToOwner: Vous téléporte au propriétaire pour le prix!
+    Classe: Vous avez acheté la classe contenant des articles pour le prix!
+    Désenchantement: Vous avez retiré les enchantements sur l'objet dans votre main pour le prix!
+    Commande: Vous exécutez les commandes du panneau pour le prix!
+  transaction_owner:
+    Acheter: client acheté des articles pour le prix de vous!
+    Vendre: client vous vendu des articles pour le prix!
+    Faire un don: client a fait don d'articles à vous!
+    DonateHand: client a fait don d'articles à vous!
+    Emplacement: client joué une machine à sous pour le prix et a remporté articles!
+    Redstone: Client activé votre appareil redstone pour le prix!
+    iBuy: ''
+    Isell: ''
+    gBuy: client a acheté des articles de votre boutique fantôme!
+    Gsell: client vendu des articles à votre magasin fantôme!
+    Jour: client régler l'heure à jour pour les prix!
+    Nuit: client régler l'heure de nuit pour le prix!
+    Pluie: client mis du temps à pleuvoir pour le prix!
+    ClearSkies: client mis le temps pour effacer ciel pour le prix!
+    DeviceOn: Client activé votre appareil pour le prix!
+    DeviceOff: Client désactivé votre appareil pour le prix!
+    Basculez: client basculé votre appareil pour le prix!
+    Périphérique: Client activé temporairement votre appareil pour le prix!
+    Guérir: client guéri à votre station pour le prix!
+    Réparation: client réparer un article à votre station pour le prix!
+    Éliminer: ''
+    DeviceItem: Client activé temporairement votre appareil des articles!
+    iSlot: ''
+    Enchantement: client enchanté son article avec des enchantements pour le prix!!
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    TpToOwner: client téléporté à vous pour le prix!
+    Classe: ''
+    Désenchantement: ''
+    Commande: ''
+errors:
+  no_permission: Vous n'avez pas la permission de créer ce signe!
+  no_permission_use: Vous n'avez pas la permission d'utiliser ce signe!
+  invalid_operation: Le signe vous avez cliqué n'est pas une opération valide!
+  chest_empty: Le magasin est vide!
+  chest_missing: Vous devez lier au moins une poitrine de ce type de magasin!
+  lever_missing: Vous devez lier au moins un levier pour ce type de magasin!
+  no_player_money: Vous n'avez pas le prix à payer!
+  no_shop_money: Le magasin n'a pas de prix à vous payer!
+  out_of_business: Cette boutique semble avoir disparu du marché!
+  out_of_stock: Cette boutique est en rupture de stock!
+  surchargé: Cette boutique est surchargé!
+  player_doesnt_have_items: Vous n'avez pas les articles! (Pièces disponibles!)
+  no_item_in_hand: Vous devez être titulaire d'un article pour le magasin pour être en mesure de le prendre!
+  player_overstocked: Votre inventaire est trop plein!
+  sign_location_stored: Connexion emplacement mémorisé!
+  made_day: joueur a fait jour!
+  made_night: joueur a fait nuit!
+  made_rain: joueur a fait pleuvoir!
+  made_clear_skies: joueur! a autorisé le ciel!
+  already_on: le périphérique est déjà sur
+  already_off: le périphérique est déjà éteint
+  link_notallowed: Vous n'êtes pas autorisé à lier ça!
+  item_already_repair: C'est article est déjà entièrement réparé!
+  already_raining: Il est déjà prise d'assaut!
+  already_clear_skies: Le ciel est déjà clair!
+  already_full_health: Votre santé est déjà bien rempli!
+  saving: Enregistrement magasins ...
+  saved: Magasins sauvé!
+  shop_removed: Suppression d'une boutique invalide! Il devrait être en «world! 'À (! X,! Y! Z).
+  invalid_item_to_repair: Cet objet ne peut pas être réparé!
+  no_item_to_repair: Vous devez être maintenant l'élément que vous voulez réparer!
+  backup_fail: Échec de la sauvegarde de stockage!
+  too_far: La distance entre le signe et la poitrine est trop grand. Maximale est! Max.
+  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Maximale est! Max.
+  enchanted_not_allowed: Vous n'êtes pas autorisé à réparer des objets enchantés.
+  enchantment_missing: Au moins un objet enchanté est nécessaire, s'il vous plaît mettre un dans la poitrine (s)!
+  item_not_enchantable: L'article dans votre main n'est pas enchantable!
+  no_player_xp: Vous n'avez pas assez d'expérience pour vendre (xp)!
+  no_item_to_disenchant: Vous devez être maintenant l'élément que vous voulez désenchanter!
+  nothing_to_disenchant: Cet objet ne peut pas être déçus!
+  multiworld_not_allowed: Multiworld magasins ne sont pas autorisés sur ce serveur!
+  no_permit_owner: Le propriétaire de cette boutique n'a plus de permis!
+  need_permit: Il faut un permis de mettre en place cette boutique!
+  villager_trading_disabled: Échanges avec les villageois n'est pas activé sur ce serveur!
+  not_allowed_to_link_sharesigns: Vous n'êtes pas autorisé à lier signes Partager ce magasin!
+  no_shop_linked_to_sharesign: Ce signe Partagez n'a pas été lié à tous les magasins.
+  share_sign_splits_profit: Ce signe se divise Partager bénéfices entre les bénéfices pour la boutique (s) à profitshops!!
+  registered_share_sign: Inscrit le signe Partager, s'il vous plaît cliquer sur le signe magasin le plus proche.
+  unlinked_share_sign: Signe Partager Délié de boutique.
+  linked_share_sign: Signe Partager avec succès liés à la boutique.
+  not_allowed_to_link_restrictedsigns: Vous n'êtes pas autorisé à lier signes affectés à ce magasin!
+  no_shop_linked_to_restrictedsign: Ce signe restreint n'a pas été lié à tous les magasins.
+  registered_restricted_sign: Inscrit le signe restreint, s'il vous plaît cliquer sur le signe magasin le plus proche.
+  unlinked_restricted_sign: Unlinked signe restreint Shop.
+  linked_restricted_sign: succès liés signe Réservé à la boutique.
+  restricted_sign_restricts: Ce signe restreint limite l'utilisation de la boutique (s) à restrictedshops!
+  towny_insufficient_funds: Le manque de fonds dans le compte de boutique!
+  towny_owner_not_mayor_or_assistant: Le propriétaire de la boutique n'est pas un maire ou d'adjoint d'une ville.
+  towny_owner_not_belong_to_town: Le propriétaire du magasin ne devrait pas appartenir à une ville.
+  towny_bank_withdrawls_not_allowed: La configuration actuelle ne permet pas Towny retraits bancaires!
+  restricted_from_using: Vous êtes limité d'utiliser ce magasin!
+  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique que vous êtes le propriétaire.
