@@ -16,8 +16,6 @@ public class SignShopLoginListener implements Listener {
         Player player = event.getPlayer();
         if(!Vault.vaultFound && player.isOp())
             player.sendMessage(SignShop.getLogPrefix() + " Vault not found so plugin can not run. Please install Vault!");
-        if(SignShopServerListener.essConflictFound)
-            System.out.println("WARNING SIGNSHOP ERROR!");
         if(SignShopServerListener.essConflictFound && player.isOp())
             player.sendMessage(SignShop.getLogPrefix() + " Essentials Signs are enabled that conflict with SignShop. Please check the log for more info!");
     }

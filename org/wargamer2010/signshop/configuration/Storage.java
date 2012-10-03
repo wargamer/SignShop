@@ -384,8 +384,8 @@ public class Storage {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
                 if(bSign.getType() == Material.SIGN_POST || bSign.getType() == Material.WALL_SIGN) {
                     String[] sLines = ((Sign) bSign.getState()).getLines();                    
-                    List<String> operation = SignShopConfig.Operations.get(signshopUtil.getOperation(sLines[0]));                    
-                    if(operation == null)
+                    List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
+                    if(operation.isEmpty())
                         continue;
                     // Not isOP. No need to count OP signs here because admins aren't really their owner
                     if(!operation.contains("playerIsOp"))

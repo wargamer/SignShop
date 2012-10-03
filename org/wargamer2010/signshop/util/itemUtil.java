@@ -356,9 +356,9 @@ public class itemUtil {
                     continue;
                 if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {                                                
                     String[] sLines = ((Sign) temp.getState()).getLines();
-                    if(!SignShopConfig.Operations.containsKey(signshopUtil.getOperation(sLines[0])))
+                    if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
                         continue;                    
-                    List operation = SignShopConfig.Operations.get(signshopUtil.getOperation(sLines[0]));
+                    List operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
                     Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
                     if(SignShopOperations == null)
                         return;

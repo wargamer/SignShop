@@ -14,15 +14,13 @@ public class giveOwnerMoney implements SignShopOperation {
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        ssArgs.set_fPrice(ssArgs.get_fPrice());
-        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.get_fPrice()));        
+        signshopUtil.ApplyPriceMod(ssArgs);
         return true;
     }
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
-        Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+        Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
         Seller seller = SignShop.Storage.getSeller(ssArgs.get_bSign().getLocation());
         Boolean bTransaction = false;
         if(seller != null && seller.getMisc().containsKey("sharesigns")) {

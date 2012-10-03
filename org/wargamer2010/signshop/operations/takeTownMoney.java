@@ -13,6 +13,7 @@ import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import com.palmergames.bukkit.towny.object.TownyUniverse;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class takeTownMoney implements SignShopOperation {
 	@Override
@@ -27,10 +28,7 @@ public class takeTownMoney implements SignShopOperation {
             if (ssPlayer.getPlayer() == null)
                 return true;
 
-            Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), false);
-            Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);
-            ssArgs.set_fPrice(fPrice);
-            ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
+            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
@@ -64,10 +62,7 @@ public class takeTownMoney implements SignShopOperation {
             if (ssPlayer == null)
                     return true;
 
-            Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), false);
-            Float fPrice = (ssArgs.get_fPrice_root() * fPricemod);
-            ssArgs.set_fPrice(fPrice);
-            ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
+            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             // first withdraw money from the bank
             Resident resident;

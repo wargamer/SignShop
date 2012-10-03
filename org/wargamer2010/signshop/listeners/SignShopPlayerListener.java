@@ -137,13 +137,13 @@ public class SignShopPlayerListener implements Listener {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
-                if(!SignShopConfig.Operations.containsKey(sOperation)) {
+                if(SignShopConfig.getBlocks(sOperation).isEmpty()) {
                     if(!runSpecialOperations(event) && !signshopUtil.registerClickedMaterial(event))
                         ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                     return;
                 }
                 
-                List<String> operation = SignShopConfig.Operations.get(sOperation);                
+                List<String> operation = SignShopConfig.getBlocks(sOperation);                
                 if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false) && !ssPlayer.hasPerm(("SignShop.Signs.*"), false)) {
                     ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
                     return;
@@ -229,7 +229,7 @@ public class SignShopPlayerListener implements Listener {
             sOperation = signshopUtil.getOperation(sLines[0]);
 
             // Verify the operation
-            if(!SignShopConfig.Operations.containsKey(sOperation)){
+            if(SignShopConfig.getBlocks(sOperation).isEmpty()){
                 return;
             }
             
@@ -238,7 +238,7 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             
-            List<String> operation = SignShopConfig.Operations.get(sOperation);
+            List<String> operation = SignShopConfig.getBlocks(sOperation);
             
             if(!operation.contains("playerIsOp") && SignShopConfig.getEnablePermits() && !ssOwner.hasPerm("SignShop.Permit", ssPlayer.getWorld(), true)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("no_permit_owner", null));
