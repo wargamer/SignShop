@@ -412,8 +412,8 @@ public class itemUtil {
                 );
                 isItems[i].getData().setData(new Byte(sItemprops[3]));
                 if(sItemprops.length > 4)
-                    isItems[i].addEnchantments(signshopUtil.convertStringToEnchantments(sItemprops[4]));
-            } catch(Exception ex) {                              
+                    addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));                    
+            } catch(Exception ex) {
                 continue;
             }
         }        
