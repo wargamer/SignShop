@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -119,11 +120,24 @@ public class itemUtil {
     }
     
     public static String formatData(MaterialData data) {
+        Short s = 0;
+        return formatData(data, s);
+    }
+    
+    public static String formatData(MaterialData data, Short durability) {
+        String sData;
+        // Lookup spout custom material
+        if(Bukkit.getServer().getPluginManager().isPluginEnabled("Spout")) {
+            sData = spoutUtil.getName(data, durability);
+            if(sData != null)
+                return sData;
+        }
+        
         // For some reason running tostring on data when it's from an attachable material
-        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
+        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)        
         if(data instanceof SimpleAttachableMaterialData)
             return stringFormat(data.getItemType().name());
-        String sData;
+        
         if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))            
             return sData;
         else
@@ -195,7 +209,7 @@ public class itemUtil {
             String sDamaged = " ";
             if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
                 sDamaged = " Damaged ";
-            sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData());
+            sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
             if(enchantments.containsKey(entry.getKey())) {                
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
             }

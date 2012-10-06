@@ -7,9 +7,9 @@ import java.util.logging.Level;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Arrays;
-import java.util.Map;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
+import org.wargamer2010.signshop.Seller;
 
 public class Chest implements SignShopOperation {    
     private Boolean incorrectPar(SignShopArguments ssArgs) {
@@ -21,6 +21,7 @@ public class Chest implements SignShopOperation {
     private Block checkChestAmount(SignShopArguments ssArgs, Integer iChestnumber) {
         Block bHolder = null;
         int iCount = 0;        
+        Seller seller = SignShop.Storage.getSeller(ssArgs.get_bSign().getLocation());        
         for(Block bTemp : ssArgs.get_containables_root()) {
             if(bTemp.getState() instanceof InventoryHolder) {
                 iCount++;
@@ -76,10 +77,7 @@ public class Chest implements SignShopOperation {
             return incorrectPar(ssArgs);
         if(!ssArgs.miscSettings.containsKey(("chest" + iChestnumber)))
             return incorrectPar(ssArgs);        
-        
-        Block bHolder = checkChestAmount(ssArgs, iChestnumber);
-        if(bHolder == null)
-            return incorrectPar(ssArgs);
+                
         ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));        
         String misc = ssArgs.miscSettings.get(("chest" + iChestnumber));        
         String[] sItemss;
@@ -93,9 +91,13 @@ public class Chest implements SignShopOperation {
         isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));        
         ssArgs.set_isItems(isItemss);
         
-        LinkedList<Block> tempContainables = new LinkedList(); 
-        tempContainables.add(bHolder);
-        ssArgs.set_containables(tempContainables);
+        Block bHolder = checkChestAmount(ssArgs, iChestnumber);
+        if(bHolder != null) {
+            LinkedList<Block> tempContainables = new LinkedList(); 
+            tempContainables.add(bHolder);
+            ssArgs.set_containables(tempContainables);
+        }
+        
         return true;
     }
 }
