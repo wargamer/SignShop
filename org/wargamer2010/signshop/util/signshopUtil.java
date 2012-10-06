@@ -341,13 +341,13 @@ public class signshopUtil {
                     ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
                 else {
                     ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
+                    sharee.sendMessage("You were given a share of " + economyUtil.formatMoney(amount));
                     totalPercentage += share.getValue();
                     bTotalTransaction = sharee.mutateMoney(amount);
                     if(!bTotalTransaction) {
                         ssOwner.sendMessage("Money transaction failed for player: " + share.getKey());
                         return false;
                     }
-                        
                 }
             }
             if(totalPercentage != 100) {                
@@ -402,7 +402,7 @@ public class signshopUtil {
                         return false;
                     }
                 }
-                clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());                    
+                clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());                                    
                 ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));            
             }
             return true;

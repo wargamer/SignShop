@@ -28,7 +28,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;
         
-        List<Block> shareSigns = new LinkedList();
+        List<Block> restrictedSigns = new LinkedList();
         
         List<Block> currentSigns = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
         Boolean bUnlinked = false;
@@ -40,11 +40,11 @@ public class linkRestrictedSign implements SignShopSpecialOp {
             } else if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
                 if(signshopUtil.getOperation(sign.getLine(0)).equals("restricted"))
-                    shareSigns.add(bTemp);
+                    restrictedSigns.add(bTemp);
             }
         }
         
-        if((bUnlinked && shareSigns.isEmpty()) || !shareSigns.isEmpty()) {
+        if((bUnlinked && restrictedSigns.isEmpty()) || !restrictedSigns.isEmpty()) {
             if(!seller.getOwner().equals(player.getName()) && !player.isOp()) {
                 ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_link_restrictedsigns", null));
                 return true;
@@ -52,17 +52,17 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         }
         
         
-        if(!bUnlinked && shareSigns.isEmpty())
+        if(!bUnlinked && restrictedSigns.isEmpty())
             return false;
-        else if(shareSigns.isEmpty()) {
-            seller.getMisc().remove("restrictsigns");
+        else if(restrictedSigns.isEmpty()) {
+            seller.getMisc().remove("restrictedsigns");
             SignShop.Storage.SafeSave();
             return true;
         }
-        shareSigns.addAll(currentSigns);
+        restrictedSigns.addAll(currentSigns);
         
         String locations = "";
-        if((locations = signshopUtil.validateRestrictSign(shareSigns, ssPlayer)).equals(""))
+        if((locations = signshopUtil.validateRestrictSign(restrictedSigns, ssPlayer)).equals(""))
             return true;
         else {
             ssPlayer.sendMessage(SignShopConfig.getError("linked_restricted_sign", null));
