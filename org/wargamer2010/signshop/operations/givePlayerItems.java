@@ -43,7 +43,7 @@ public class givePlayerItems implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
-        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("oneslot")) {
+        if(ssArgs.isOperationParameter("oneslot")) {
             Boolean bEmptySlot = false;
             for(ItemStack stack : ssArgs.get_ssPlayer().getPlayer().getInventory().getContents()) {
                 if(stack == null)
@@ -53,7 +53,7 @@ public class givePlayerItems implements SignShopOperation {
                 ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));                
             return bEmptySlot;
         }
-        if(ssArgs.operationParameters.isEmpty() || !ssArgs.operationParameters.get(0).equals("ignorefull")) {
+        if(ssArgs.isOperationParameter("ignorefull")) {
             if(!itemUtil.isStockOK(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), false)) {                        
                 ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));                
                 return false;

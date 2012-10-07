@@ -16,7 +16,7 @@ public class takePlayerInventory implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {                
         Player player = ssArgs.get_ssPlayer().getPlayer();
-        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("clearArmor")) {
+        if(ssArgs.isOperationParameter("clearArmor")) {
             player.getInventory().setArmorContents(null);
         }
         player.getInventory().clear();        

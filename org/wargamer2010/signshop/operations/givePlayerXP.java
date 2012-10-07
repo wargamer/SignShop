@@ -31,7 +31,7 @@ public class givePlayerXP implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.get_bSign());
-        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("raw")) {            
+        if(ssArgs.isOperationParameter("raw")) {
             ssArgs.get_ssPlayer().getPlayer().giveExp(XP.intValue());                        
             ssArgs.setMessagePart("!hasxp", ((Integer)SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer())).toString());
         } else {

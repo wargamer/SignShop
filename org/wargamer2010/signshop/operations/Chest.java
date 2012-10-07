@@ -34,11 +34,11 @@ public class Chest implements SignShopOperation {
     
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.operationParameters.isEmpty())         
+        if(!ssArgs.hasOperationParameters())
             return incorrectPar(ssArgs);        
         Integer iChestnumber;
         try {
-            iChestnumber = Integer.parseInt(ssArgs.operationParameters.get(0));
+            iChestnumber = Integer.parseInt(ssArgs.getFirstOperationParameter());
         } catch(NumberFormatException ex) {
             return incorrectPar(ssArgs);
         }
@@ -69,7 +69,7 @@ public class Chest implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {        
         Integer iChestnumber;
         try {            
-            iChestnumber = Integer.parseInt(ssArgs.operationParameters.get(0));
+            iChestnumber = Integer.parseInt(ssArgs.getFirstOperationParameter());
         } catch(NumberFormatException ex) {
             return incorrectPar(ssArgs);
         }

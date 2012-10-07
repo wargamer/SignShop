@@ -84,7 +84,7 @@ public class copySign implements SignShopSpecialOp {
 
             Boolean bSetupOK = false;
             for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.operationParameters = ssOperation.getValue();
+                ssArgs.set_operationParameters(ssOperation.getValue());
                 bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                 if(!bSetupOK)
                     break;

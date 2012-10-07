@@ -15,11 +15,13 @@ EnablePermits: false
 PreventVillagerTrade: false
 ProtectShopsInCreative: true
 Languages: english
+Blacklisted_items:
+  - 0
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
   Donate: takeVariablePlayerItems,giveShopItems
-  DonateHand: takeItemInHand,giveShopItems
+  DonateHand: takeItemInHand,giveShopItems{allowemptychest}
   Slot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems{oneslot},takeShopItems
   iSell: takeVariablePlayerItems,givePlayerMoney,playerIsOp
   iBuy: takePlayerMoney,givePlayerItems,playerIsOp
@@ -239,6 +241,8 @@ errors:
   towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
   restricted_from_using: You are restricted from using this shop!
   restricted_but_owner: You are not restricted to use this shop as you are the owner.
+  item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
+  item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
 commands:
   TpToOwner:
   - tp !player !owner
