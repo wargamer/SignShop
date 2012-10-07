@@ -7,6 +7,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.inventory.InventoryHolder;
@@ -202,13 +203,20 @@ public class SignShopPlayerListener implements Listener {
                 
                 Boolean bSetupOK = false;
                 for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
-                    ssArgs.operationParameters = ssOperation.getValue();
+                    ssArgs.set_operationParameters(ssOperation.getValue());
                     bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
-                }                
+                }
                 if(!bSetupOK)
-                    return;                
+                    return;        
+                ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems(), ssArgs);
+                if(blacklisted != null) {
+                    ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
+                    ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.messageParts));
+                    return;
+                }
+                    
                 ssArgs.setMessagePart("!customer", ssPlayer.getName());
                 ssArgs.setMessagePart("!owner", player.getName());
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
@@ -278,22 +286,28 @@ public class SignShopPlayerListener implements Listener {
             Boolean bRequirementsOK = false;
             Boolean bRunOK = false;
             for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {                
-                ssArgs.operationParameters = ssOperation.getValue();                
+                ssArgs.set_operationParameters(ssOperation.getValue());
                 bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
                 if(!bRequirementsOK)
                     return;
             }            
             if(!bRequirementsOK)
                 return;            
+            ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems(), ssArgs);
+            if(blacklisted != null) {
+                ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
+                ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.messageParts));
+                return;
+            }
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
                 ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.get_sOperation(), ssArgs.messageParts));
                 
                 ssArgs.special.deactivate();
                 return;
-            }            
+            }              
             ssArgs.special.deactivate();
             for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {   
-                ssArgs.operationParameters = ssOperation.getValue();
+                ssArgs.set_operationParameters(ssOperation.getValue());
                 bRunOK = ssOperation.getKey().runOperation(ssArgs);
                 if(!bRunOK)
                     return;

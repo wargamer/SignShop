@@ -90,8 +90,13 @@ public class SignShopArguments {
     public BlockFace get_bfBlockFace_root() { return bfBlockFace; } 
     public void set_bfBlockFace(BlockFace pbfBlockFace) { special.activate(this); special.props.bfBlockFace = pbfBlockFace; }
     
-    public Map<String, String> miscSettings = new HashMap<String, String>();
-    public List<String> operationParameters = null;
+    private List<String> operationParameters = null;
+    public void set_operationParameters(List<String> pOperationParameters) { operationParameters = pOperationParameters; }
+    public boolean isOperationParameter(String sOperationParameter) { return operationParameters.contains(sOperationParameter); }
+    public boolean hasOperationParameters() { return !operationParameters.isEmpty(); }
+    public String getFirstOperationParameter() { return hasOperationParameters() ? operationParameters.get(0) : ""; }
+    
+    public Map<String, String> miscSettings = new HashMap<String, String>();    
     public Map<String, String> forceMessageKeys = new HashMap<String, String>();
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;

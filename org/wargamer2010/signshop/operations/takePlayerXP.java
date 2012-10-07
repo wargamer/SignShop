@@ -29,7 +29,7 @@ public class takePlayerXP implements SignShopOperation {
         }
         ssArgs.setMessagePart("!xp", XP.toString());
         Integer refXP = 0;        
-        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("raw"))
+        if(ssArgs.isOperationParameter("raw"))
             refXP = SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer());
         else
             refXP = ssArgs.get_ssPlayer().getPlayer().getLevel();
@@ -46,7 +46,7 @@ public class takePlayerXP implements SignShopOperation {
         Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.get_bSign());        
         Integer setAmount = 0;
         
-        if(!ssArgs.operationParameters.isEmpty() && ssArgs.operationParameters.get(0).equals("raw")) {            
+        if(ssArgs.isOperationParameter("raw")) {
             setAmount = (SetExpFix.getTotalExperience(ssArgs.get_ssPlayer().getPlayer()) - XP.intValue());                        
             SetExpFix.setTotalExperience(ssArgs.get_ssPlayer().getPlayer(), setAmount);            
         } else {

@@ -382,7 +382,7 @@ public class itemUtil {
                         ssArgs.miscSettings = seller.getMisc();
                     Boolean reqOK = true;
                     for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
-                        ssArgs.operationParameters = ssOperation.getValue();
+                        ssArgs.set_operationParameters(ssOperation.getValue());
                         if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {                            
                             itemUtil.setSignStatus(temp, ChatColor.DARK_RED);                            
                             break;

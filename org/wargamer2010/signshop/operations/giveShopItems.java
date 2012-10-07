@@ -32,7 +32,7 @@ public class giveShopItems implements SignShopOperation {
         }
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
-        if(isTotalItems.length == 0) {
+        if(!ssArgs.isOperationParameter("allowemptychest") && isTotalItems.length == 0) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));            
             return false;
         }

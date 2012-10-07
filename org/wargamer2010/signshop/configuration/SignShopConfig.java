@@ -4,6 +4,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -22,12 +23,16 @@ import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopConfig {
     private static Map<String,List<String>> Operations;
     private static Map<String,String> OperationAliases;                         // Alias <-> Original
     private static Map<String,Map<String,HashMap<String,String>>> Messages;
     private static Map<String,Map<String,String>> Errors;
+    private static List<Integer> BlacklistedItems;
     public static Map<String,HashMap<String,Float>> PriceMultipliers;
     public static Map<String,List> Commands;
     public static Map<String,Integer> ShopLimits;
@@ -130,6 +135,7 @@ public class SignShopConfig {
         PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         Commands = configUtil.fetchListInHashmap("commands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
+        BlacklistedItems = config.getIntegerList("Blacklisted_items");
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
         setupHooks();
@@ -376,6 +382,27 @@ public class SignShopConfig {
         message = message.replace("\\", "");
         return message;
     }
+    
+    public static Boolean isItemOnBlacklist(int id, SignShopPlayer player) {
+        return (SignShopConfig.BlacklistedItems.contains(id));
+    }
+    
+    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks, SignShopArguments ssArgs) {        
+        if(stacks == null)
+            return null;
+        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        for(ItemStack single : stacks)
+            if(isItemOnBlacklist(single.getTypeId(), ssPlayer)) {
+                if(ssArgs.get_ssPlayer().isOp()) {
+                    ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(single.getData(), single.getDurability()));
+                    ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist_but_op", ssArgs.messageParts));
+                    return null;
+                } else
+                    return single;
+            }
+        return null;        
+    }
+            
     
     public static int getMaxSellDistance() {
         return MaxSellDistance;
