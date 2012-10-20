@@ -19,6 +19,7 @@ import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -117,6 +118,10 @@ public class itemUtil {
             return discs.get(id);
         else
             return "";
+    }
+    
+    public static boolean isDisc(int id) {
+        return discs.containsKey(id);
     }
     
     public static String formatData(MaterialData data) {
@@ -296,7 +301,7 @@ public class itemUtil {
             isOriginal.getDurability()
         );
         itemUtil.addSafeEnchantments(isBackup, isOriginal.getEnchantments());
-        if(isOriginal.getType() == Material.WRITTEN_BOOK || isOriginal.getType() == Material.BOOK_AND_QUILL) {
+        if(itemUtil.isWriteableBook(isOriginal)) {        
             itemTags.copyTags(isOriginal, isBackup);
         }
 
@@ -344,7 +349,7 @@ public class itemUtil {
                 entry.getKey().getDurability()
             );
             addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());            
-            if(entry.getKey().getType() == Material.WRITTEN_BOOK || entry.getKey().getType() == Material.BOOK_AND_QUILL) {
+            if(itemUtil.isWriteableBook(entry.getKey())) {
                 itemTags.copyTags(entry.getKey(), isActual[i]);
             }
             if(entry.getKey().getData() != null) {
@@ -427,6 +432,14 @@ public class itemUtil {
                 isItems[i].getData().setData(new Byte(sItemprops[3]));
                 if(sItemprops.length > 4)
                     addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));                    
+                if(sItemprops.length > 5) {
+                    try {
+                        SignShopBooks.addBooksProps(isItems[i], Integer.parseInt(sItemprops[5]));
+                        Seller.addMeta(isItems[i], Integer.parseInt(sItemprops[5]));
+                    } catch(NumberFormatException ex) {
+                        
+                    }
+                }
             } catch(Exception ex) {
                 continue;
             }
@@ -434,18 +447,29 @@ public class itemUtil {
         return isItems;
     }
     
-    public static String[] convertItemStacksToString(ItemStack[] isItems) {        
+    public static boolean isWriteableBook(ItemStack item) {
+        if(item == null) return false;
+        return (item.getType() == Material.WRITTEN_BOOK || item.getType() == Material.BOOK_AND_QUILL);
+    }
+    
+    public static String[] convertItemStacksToString(ItemStack[] isItems) {
+        return convertItemStacksToString(isItems, null);
+    }
+    
+    public static String[] convertItemStacksToString(ItemStack[] isItems, Map<ItemStack, Integer> meta) {        
         List<String> sItems = new ArrayList();
-                
+
         ItemStack isCurrent = null;
         for(int i = 0; i < isItems.length; i++) {
             if(isItems[i] != null) {
                 isCurrent = isItems[i];
+                String ID = (meta != null && meta.containsKey(isItems[i]) ? meta.get(isItems[i]).toString() : "");
                 sItems.add((isCurrent.getAmount() + SignShop.Storage.itemSeperator 
                         + isCurrent.getTypeId() + SignShop.Storage.itemSeperator  
                         + isCurrent.getDurability() + SignShop.Storage.itemSeperator  
                         + isCurrent.getData().getData() + SignShop.Storage.itemSeperator 
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments())));
+                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + SignShop.Storage.itemSeperator 
+                        + ID));
             }
             
         }

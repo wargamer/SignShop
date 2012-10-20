@@ -1,5 +1,9 @@
 package org.wargamer2010.signshop.configuration;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
@@ -7,6 +11,8 @@ import java.util.Map;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.logging.Level;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.wargamer2010.signshop.SignShop;
 
 public class configUtil {
@@ -96,13 +102,21 @@ public class configUtil {
     }
     
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
+        return fetchStringStringHashMap(path, config, false);
+    }
+    
+    static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config, Boolean caseSensitive) {
         HashMap<String,String> tempStringStringHash = new HashMap<String,String>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempStringStringHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
-            for(Map.Entry<String, Object> entry : messages_section.entrySet())
-                tempStringStringHash.put(entry.getKey().toLowerCase(), (String)entry.getValue());
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
+                if(caseSensitive)
+                    tempStringStringHash.put(entry.getKey(), (String)entry.getValue());
+                else
+                    tempStringStringHash.put(entry.getKey().toLowerCase(), (String)entry.getValue());
+            }
         } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
@@ -122,4 +136,42 @@ public class configUtil {
         }
         return tempStringIntegerHash;
     }
+    
+    static FileConfiguration loadYMLFromPluginFolder(String filename) {
+        File configFile = new File(SignShop.getInstance().getDataFolder(), filename);
+        FileConfiguration ymlThing = new YamlConfiguration();
+        
+        try {
+            ymlThing.load(configFile);
+            return ymlThing;
+        } catch(FileNotFoundException ex) {
+            SignShop.log(filename + " could not be found. Configuration could not be loaded.", Level.WARNING);
+        } catch(IOException ex) {
+            SignShop.log(filename + " could not be loaded. Configuration could not be loaded.", Level.WARNING);
+        } catch(InvalidConfigurationException ex) {
+            SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);            
+        }        
+        return null;
+    }
+    
+    static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {
+        File configFile = new File(SignShop.getInstance().getDataFolder(), filenameInJar);
+        FileConfiguration thingInJar = new YamlConfiguration();
+        try {
+            InputStream in = SignShop.class.getResourceAsStream("/" + filenameInJar);            
+            if(in != null) {
+                thingInJar.load(in);                        
+                ymlInPluginFolder.options().copyDefaults(true);
+                ymlInPluginFolder.options().copyHeader(true);
+                ymlInPluginFolder.setDefaults(thingInJar);                  
+                ymlInPluginFolder.save(configFile);
+                in.close();
+            }
+            return thingInJar;
+        } catch(FileNotFoundException ex) { }
+        catch(IOException ex) { }
+        catch(InvalidConfigurationException ex) { }
+        return null;
+    }
+    
 }

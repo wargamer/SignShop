@@ -19,6 +19,7 @@ import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.metrics.setupMetrics;
@@ -35,6 +36,7 @@ public class SignShop extends JavaPlugin{
     //Statics
     public static Storage Storage;    
     private static SignShopConfig SignShopConfig;    
+    public static SignShopBooks BookStore = new SignShopBooks();
     
     //Permissions
     public static boolean USE_PERMISSIONS = false;    
@@ -94,7 +96,7 @@ public class SignShop extends JavaPlugin{
         }        
         fixStackSize();
         itemUtil.initDiscs();        
-        clicks.init();
+        clicks.init();        
         instance = this;
         metricsSetup = new setupMetrics();
         if(metricsSetup.setup(this))
@@ -107,6 +109,7 @@ public class SignShop extends JavaPlugin{
         
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
+        BookStore.init();
         
         try {
             FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
@@ -210,8 +213,10 @@ public class SignShop extends JavaPlugin{
         if(!vault_Economy)
             log("Could not hook into Vault's Economy!", Level.WARNING);
     }
-     
     
+    public static Logger getMainLogger() {
+        return logger;
+    }
     
     public class TransferFormatter extends Formatter {    
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
