@@ -24,6 +24,8 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.runCommand;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 
@@ -56,6 +58,7 @@ public class SignShopConfig {
     private static boolean PreventVillagerTrade = false;
     private static boolean ProtectShopsInCreative = true;   
     private static boolean EnableSignStacking = false;
+    private static boolean fixIncompleteOperations = true;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -88,34 +91,9 @@ public class SignShopConfig {
             copyFileFromJar(filename, false);
             File languageFile = new File(instance.getDataFolder(), filename);
             if(languageFile.exists()) {                
-                FileConfiguration ymlThing = new YamlConfiguration();                
-                FileConfiguration thingInJar = new YamlConfiguration();                
-                try {
-                    ymlThing.load(languageFile);                    
-                } catch(FileNotFoundException ex) {
-                    SignShop.log("The languagefile " + languageFile + " for language: " + languageName + " could not be found in the plugin directory!", Level.WARNING);
-                    continue;
-                } catch(IOException ex) {
-                    SignShop.log("Error occured while loading languagefile called: " + languageFile + " for language: " + languageName, Level.WARNING);
-                    continue;
-                } catch(InvalidConfigurationException ex) {
-                    SignShop.log("The languagefile called " + languageFile + " is not proper YML. Please check the syntax. This is the message: " + ex.getMessage(), Level.WARNING);                    
-                    continue;
-                }
-                if(!language.equals("config")) {
-                    try {
-                        InputStream in = getClass().getResourceAsStream("/" + filename);                        
-                        if(in != null) {
-                            thingInJar.load(in);                        
-                            ymlThing.setDefaults(thingInJar);  
-                            ymlThing.options().copyDefaults(true);
-                            ymlThing.options().copyHeader(true);                        
-                            ymlThing.save(languageFile);                        
-                            in.close();
-                        }
-                    } catch(FileNotFoundException ex) { }
-                    catch(IOException ex) { }
-                    catch(InvalidConfigurationException ex) { }                
+                FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);                
+                if(ymlThing != null && !language.equals("config")) {
+                    configUtil.loadYMLFromJar(ymlThing, filename);                    
                 }
 
                 Messages.put(languageName, configUtil.fetchHasmapInHashmap("messages", ymlThing));
@@ -138,6 +116,7 @@ public class SignShopConfig {
         BlacklistedItems = config.getIntegerList("Blacklisted_items");
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
+        fixIncompleOperations();
         setupHooks();
         setupSpecialsOps();
         setupLinkables();
@@ -174,37 +153,15 @@ public class SignShopConfig {
         LinkableMaterials.put(Material.SIGN, "sign");
         LinkableMaterials.put(Material.SIGN_POST, "sign");
         LinkableMaterials.put(Material.WALL_SIGN, "sign");        
-        LinkableMaterials.put(Material.STEP, "slab");           
+        LinkableMaterials.put(Material.STEP, "slab");
+        LinkableMaterials.put(Material.JUKEBOX, "jukebox");
     }
     
     private void initConfig() {    
         String filename = "config.yml";
-        File configFile = new File(instance.getDataFolder(), filename);
-        FileConfiguration ymlThing = new YamlConfiguration();
-        FileConfiguration thingInJar = new YamlConfiguration();
-        
-        try {
-            ymlThing.load(configFile);
-        } catch(FileNotFoundException ex) {
-            SignShop.log(filename + " could not be found. Configuration could not be loaded.", Level.WARNING);
-        } catch(IOException ex) {
-            SignShop.log(filename + " could not be loaded. Configuration could not be loaded.", Level.WARNING);
-        } catch(InvalidConfigurationException ex) {
-            SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);
-        }        
-        try {
-            InputStream in = getClass().getResourceAsStream("/" + filename);            
-            if(in != null) {
-                thingInJar.load(in);                        
-                ymlThing.options().copyDefaults(true);
-                ymlThing.options().copyHeader(true);
-                ymlThing.setDefaults(thingInJar);                  
-                ymlThing.save(configFile);
-                in.close();
-            }
-        } catch(FileNotFoundException ex) { }
-        catch(IOException ex) { }
-        catch(InvalidConfigurationException ex) { }
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);
+        if(ymlThing != null)            
+            configUtil.loadYMLFromJar(ymlThing, filename);
         
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
@@ -219,7 +176,8 @@ public class SignShopConfig {
         PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
         EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
-        Languages = ymlThing.getString("Languages", Languages);       
+        fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);       
+        Languages = ymlThing.getString("Languages", Languages);
         this.config = ymlThing;
     }
     
@@ -282,6 +240,55 @@ public class SignShopConfig {
                 }
             }
         }
+    }
+    
+    private String opListToString(List<String> operations) {
+        return signshopUtil.implode(operations.toArray(new String[operations.size()]), ",");
+    }
+    
+    private void saveConfig() {
+        File tempFile = new File(SignShop.getInstance().getDataFolder(), "config.yml");
+        try {
+            config.save(tempFile);
+        } catch(IOException ex) {
+            
+        }
+    }
+    
+    private String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
+        for(Map.Entry<String, String> entry : map.entrySet()) {
+            if(entry.getKey().equalsIgnoreCase(lowercased))
+                return entry.getKey();
+        }
+        return "";
+    }
+    
+    private void fixIncompleOperations() {        
+        if(!fixIncompleteOperations)
+            return;
+        HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config, true);
+        Boolean changedSomething = false;                
+        for(Map.Entry<String, List<String>> entry :  Operations.entrySet()) {
+            if(SignShopConfig.Commands.containsKey(entry.getKey().toLowerCase())) {
+                Map<SignShopOperation, List> tempMap = signshopUtil.getSignShopOps(entry.getValue());
+                Boolean found = false;
+                for(SignShopOperation tempOp : tempMap.keySet())
+                    if(tempOp instanceof runCommand)
+                        found = true;
+                if(found)
+                    continue;
+                entry.getValue().add("runCommand");
+                String opName = entry.getKey();
+                if((opName = fetchCaseCorrectedKey(tempSignOperations, entry.getKey())).equals(""))
+                    opName = entry.getKey();
+                config.set(("signs." + opName), opListToString(entry.getValue()));
+                if(!changedSomething)
+                    changedSomething = true;
+                SignShop.log("Added runCommand block to " + opName + " because it has a corresponding entry in the Commands section. Set fixIncompleteOperations to false to disable this function.", Level.INFO);
+            }
+        }
+        if(changedSomething)
+            saveConfig();
     }
     
     private void closeStream(Closeable in) {

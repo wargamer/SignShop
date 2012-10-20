@@ -34,8 +34,7 @@ public class Storage {
     private FileConfiguration yml;
     private File ymlfile;
     
-    private static ReentrantLock savelock = new ReentrantLock();
-    private static ReentrantLock sellerslock = new ReentrantLock();
+    private static ReentrantLock savelock = new ReentrantLock();    
     
     private static Map<Location,Seller> sellers;
     public static String itemSeperator = "&";
@@ -312,7 +311,7 @@ public class Storage {
                 seller = sellers.get(lKey);
                 temp.put("shopworld", seller.getWorld());
                 temp.put("owner", seller.getOwner());            
-                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));            
+                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(), seller.getMeta()));            
 
                 List<Block> containables = seller.getContainables();
                 String[] sContainables = new String[containables.size()];
@@ -358,7 +357,7 @@ public class Storage {
     }
     
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
-        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc));        
+        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc, save));        
         if(save)
             this.SafeSave();
     }

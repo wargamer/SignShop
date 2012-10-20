@@ -2,7 +2,6 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -100,6 +99,7 @@ public class SignShopArguments {
     public Map<String, String> forceMessageKeys = new HashMap<String, String>();
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;
+    public boolean bRunCommandAsUser = false;
     
     public boolean tryToApplyPriceMod() {
         if(bPriceModApplied)

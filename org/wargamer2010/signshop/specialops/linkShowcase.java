@@ -2,7 +2,6 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
@@ -13,7 +12,7 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
-import com.miykeal.showCaseStandalone.*;
+import com.kellerkindt.scs.*;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -41,7 +40,7 @@ public class linkShowcase implements SignShopSpecialOp {
             return false;
         
         ItemStack showcasing = null;        
-        if(seller.getItems() == null || seller.getItems().length == 0) {
+        if(seller.getItems() == null || seller.getItems().length == 0 || seller.getItems()[0] == null) {
             ssPlayer.sendMessage(SignShopConfig.getError(("chest_empty"), null));
             return false;
         }
@@ -50,45 +49,17 @@ public class linkShowcase implements SignShopSpecialOp {
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
             return false;
         ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
-        com.miykeal.showCaseStandalone.ShopInternals.Storage storage = null;
-        try {
-            try {
-                Constructor con = com.miykeal.showCaseStandalone.ShopInternals.Storage.class.getConstructor(new Class[]{int.class});
-                storage = (com.miykeal.showCaseStandalone.ShopInternals.Storage)con.newInstance(1);
-            } catch(NoSuchMethodException ex) {
-                try {
-                    Constructor con = com.miykeal.showCaseStandalone.ShopInternals.Storage.class.getConstructor(new Class[]{});
-                    storage = (com.miykeal.showCaseStandalone.ShopInternals.Storage)con.newInstance();
-                } catch(NoSuchMethodException ex2) {
-                    storage = null;
-                    return true;
-                }
-
-            }
-        } catch(InstantiationException inst) { storage = null; }
-        catch(IllegalAccessException ill) { storage = null; }
-        catch(InvocationTargetException inc) { storage = null; }
+        com.kellerkindt.scs.internals.Storage storage = new com.kellerkindt.scs.internals.Storage(1, Integer.toString(bStep.hashCode()));        
         if(storage == null) {
             SignShop.log("Invalid version of ShowCaseStandalone detected, please get the latest!", Level.WARNING);
             return true;
         }
         
-        com.miykeal.showCaseStandalone.Shops.Shop p = new com.miykeal.showCaseStandalone.Shops.DisplayShop(scs, storage);
+        com.kellerkindt.scs.shops.Shop p = new com.kellerkindt.scs.shops.DisplayShop(scs, storage);
         p.setItemStack(showcasing);
-        p.setLocation ( bStep.getLocation() );
-        p.setBlock ( bStep );
-        try {
-            p.setSHA1(com.miykeal.showCaseStandalone.Utilities.Utilities.sha1(bStep.toString()));
-        } catch(java.io.IOException ex) {
-            // TODO: Might have to log this if it happens
-        }
-        scs.getShopHandler().addShop (p);
-        try {
-            scs.getShopHandler().saveAll();
-        } catch(java.io.IOException ex) {
-            // TODO: Might have to log this if it happens
-        }
-        
+        p.setLocation(bStep.getLocation());
+        p.setBlock(bStep);
+        scs.getShopHandler().addShop(p);
         scs.getShopHandler().showAll();
         seller.getMisc().put("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
         return true;

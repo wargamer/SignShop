@@ -14,6 +14,7 @@ AllowMultiWorldShops: false
 EnablePermits: false
 PreventVillagerTrade: false
 ProtectShopsInCreative: true
+fixIncompleteOperations: true
 Languages: english
 Blacklisted_items:
   - 0
@@ -50,6 +51,7 @@ signs:
   Command: takePlayerMoney, playerIsOp
   Share: ShareSign
   Restricted: RestrictedSign
+  Jukebox: playJukebox,takePlayerMoney
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -82,6 +84,7 @@ messages:
     Class: You have setup a shop to sell a class of items for !price!
     Disenchant: You have setup a sign that removes enchantments for !price!
     Command: You have created a sign that runs commands for !price!
+    Jukebox: You have set up a Jukebox that plays records from the chest for !price!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -114,6 +117,7 @@ messages:
     Class: Buy the class containing !items for !price?
     Disenchant: Remove enchantments on the item in your hand for !price?
     Command: Run the commands on this sign for !price?
+    Jukebox: Play a record for !price?
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -145,7 +149,8 @@ messages:
     TpToOwner: You teleported to !owner for !price!
     Class: You bought the class containing !items for !price!
     Disenchant: You removed the enchantments on the item in your hand for !price!
-    Command: You run the commands in the sign for !price!
+    Command: You ran the commands in the sign for !price!
+    Jukebox: You've made the Jukebox play a record for !price!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -178,6 +183,7 @@ messages:
     Class: ''
     Disenchant: ''
     Command: ''
+    Jukebox: \!customer played a record on your jukebox for !price!
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
@@ -243,6 +249,7 @@ errors:
   restricted_but_owner: You are not restricted to use this shop as you are the owner.
   item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
   item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
+  block_is_protected: This block is protected, you are not allowed to interact with it.
 commands:
   TpToOwner:
   - tp !player !owner

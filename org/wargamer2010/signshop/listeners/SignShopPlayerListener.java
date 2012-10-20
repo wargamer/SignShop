@@ -17,7 +17,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.Location;
 import org.bukkit.event.block.Action;
-import org.bukkit.Bukkit;
 import org.bukkit.World;
 
 import java.util.*;
@@ -133,7 +132,7 @@ public class SignShopPlayerListener implements Listener {
         String[] sLines;
         String sOperation;
         World world = player.getWorld();
-        Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());        
+        Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());                
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.REDSTONE || event.getItem().getType() == Material.INK_SACK)) {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
@@ -312,24 +311,7 @@ public class SignShopPlayerListener implements Listener {
                 if(!bRunOK)
                     return;
             }
-            
-            ssArgs.setMessagePart("!customer", ssPlayer.getName());
-            ssArgs.setMessagePart("!owner", ssOwner.getName());
-            ssArgs.setMessagePart("!player", ssPlayer.getName());
-            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
-            sLines = ((Sign) bClicked.getState()).getLines();
-            for(int i = 0; i < sLines.length; i++)
-                ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
-
-            if(SignShopConfig.Commands.containsKey(sOperation.toLowerCase())) {
-                List<String> commands = SignShopConfig.Commands.get(sOperation.toLowerCase());                
-                for(String sCommand : commands) {
-                    if(sCommand != null && sCommand.length() > 0) {
-                        sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.messageParts);                                      
-                        Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), sCommand);                    
-                    }
-                }
-            }
+                      
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 // Seems to still be needed. TODO: Find a proper way to update the player inventory
