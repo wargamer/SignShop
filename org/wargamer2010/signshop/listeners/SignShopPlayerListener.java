@@ -101,7 +101,7 @@ public class SignShopPlayerListener implements Listener {
         if(!(event.getDamager().getType() == EntityType.PLAYER))
             return;        
         Player player = (Player)event.getDamager();
-        if(player.getItemInHand().getType() != Material.REDSTONE)
+        if(player.getItemInHand().getType() != Material.getMaterial("REDSTONE"))
             return;
         SignShopPlayer ssPlayer = new SignShopPlayer(player);        
         if(event.getEntity().getType() == EntityType.PLAYER) {
@@ -133,8 +133,8 @@ public class SignShopPlayerListener implements Listener {
         String sOperation;
         World world = player.getWorld();
         Seller seller = SignShop.Storage.getSeller(event.getClickedBlock().getLocation());                
-        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.REDSTONE || event.getItem().getType() == Material.INK_SACK)) {
-            if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.REDSTONE) {
+        if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && (event.getItem().getType() == Material.getMaterial("REDSTONE") || event.getItem().getType() == Material.getMaterial("INK_SACK"))) {
+            if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == Material.getMaterial("REDSTONE")) {
                 sLines = ((Sign) bClicked.getState()).getLines();                
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 if(SignShopConfig.getBlocks(sOperation).isEmpty()) {
@@ -221,7 +221,7 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
                 if(ssArgs.get_isItems() == null)
-                    ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.DIRT,1)});
+                    ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.getMaterial("DIRT"),1)});
                 SignShop.Storage.addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
                 if(!ssArgs.bDoNotClearClickmap)
                     removePlayerFromClickmap(player);
@@ -230,7 +230,7 @@ public class SignShopPlayerListener implements Listener {
                 return;
             } 
             signshopUtil.registerClickedMaterial(event);            
-        } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.INK_SACK && event.getItem().getType() != Material.REDSTONE))) {
+        } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || (event.getItem().getType() != Material.getMaterial("INK_SACK") && event.getItem().getType() != Material.getMaterial("REDSTONE")))) {
             SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());            
             sLines = ((Sign) bClicked.getState()).getLines();
             sOperation = signshopUtil.getOperation(sLines[0]);
@@ -329,7 +329,7 @@ public class SignShopPlayerListener implements Listener {
             ssOwner.sendMessage(SignShopConfig.getMessage("transaction_owner", ssArgs.get_sOperation(), ssArgs.messageParts));            
             return;
         }
-        if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.INK_SACK || event.getItem().getType() == Material.REDSTONE)) {
+        if(event.getItem() != null && seller != null && (event.getItem().getType() == Material.getMaterial("INK_SACK") || event.getItem().getType() == Material.getMaterial("REDSTONE"))) {
             if(!runSpecialOperations(event)) {
                 signshopUtil.registerClickedMaterial(event);
             }

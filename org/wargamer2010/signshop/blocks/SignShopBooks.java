@@ -1,9 +1,14 @@
 package org.wargamer2010.signshop.blocks;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.net.URLConnection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Connection;
@@ -12,6 +17,7 @@ import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.logging.Level;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -21,6 +27,7 @@ public class SignShopBooks {
     private static Driver driver = null;
     private static char pageSeperator = (char)3;
     private static String filename = "books.db";
+    private static final String downloadURL = "http://cloud.github.com/downloads/wargamer/SignShop/";
     
     public void init() {
         File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
@@ -39,6 +46,8 @@ public class SignShopBooks {
     public void loadLib() {        
         try {
             File libLocation = new File(SignShop.getInstance().getDataFolder(), ("lib" + File.separator + "sqlite.jar"));
+            if(!libLocation.exists())
+                getDriver(libLocation);
             ClassLoader classLoader = new URLClassLoader(new URL[]{new URL("jar:file:" + libLocation.getPath() + "!/")});
             String className = "org.sqlite.JDBC";
             driver = (Driver) classLoader.loadClass(className).newInstance();
@@ -52,6 +61,57 @@ public class SignShopBooks {
             ex.printStackTrace();
         }        
     }
+    
+    private void getDriver(File destination) {
+        try {
+            if (destination.exists())
+                destination.delete();
+            
+            if(!destination.getParentFile().exists())
+                destination.getParentFile().mkdirs();
+            
+            destination.createNewFile();
+
+            OutputStream outputStream = new FileOutputStream(destination);
+
+            String sURL = (downloadURL + destination.getName());            
+            URL url = new URL(sURL);
+            URLConnection connection = url.openConnection();
+
+            InputStream inputStream = connection.getInputStream();
+
+            int contentLength = connection.getContentLength();
+
+            int iBytesTransffered = 0;
+            long lastUpdate = 0L;
+
+            byte[] buffer = new byte[1024];
+            int read = 0;
+
+            SignShop.log("Starting download of " + destination.getName(), Level.INFO);
+            while ((read = inputStream.read(buffer)) > 0) {
+                outputStream.write(buffer, 0, read);
+                iBytesTransffered += read;
+
+                if (contentLength > 0) {
+                    if (System.currentTimeMillis() - lastUpdate > 500L) {
+                        int percentTransferred = (int) (((float) iBytesTransffered / contentLength) * 100);
+                        lastUpdate = System.currentTimeMillis();
+
+                        if (percentTransferred != 100) {
+                            SignShop.log("Download at " + percentTransferred + "%", Level.INFO);
+                        }
+                    }
+                }
+            }
+
+            outputStream.close();
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
+    }
         
     private static void newConn() {        
         try {
@@ -59,8 +119,6 @@ public class SignShopBooks {
                 return;
             File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
             conn = driver.connect("jdbc:sqlite:" + DBFile.getPath(), new Properties());
-            //conn = new SQLite(SignShop.getMainLogger(), SignShop.getLogPrefix(), filename, SignShop.getInstance().getDataFolder().getAbsolutePath());            
-            //conn.open();
         } catch(SQLException ex) {  
             ex.printStackTrace();
         }

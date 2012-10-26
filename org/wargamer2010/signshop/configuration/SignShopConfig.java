@@ -141,20 +141,25 @@ public class SignShopConfig {
         SpecialsOps.add("changeOwner");
     }
     
+    private void safeAddLinkeable(String sName, String sGroup) {
+        if(Material.getMaterial(sName) != null)
+            LinkableMaterials.put(Material.getMaterial(sName), sGroup);
+    }
+    
     private void setupLinkables() {
         LinkableMaterials = new HashMap<Material, String>();
-        LinkableMaterials.put(Material.CHEST, "chest");
-        LinkableMaterials.put(Material.DISPENSER, "dispenser");        
-        LinkableMaterials.put(Material.FURNACE, "furnace");
-        LinkableMaterials.put(Material.BURNING_FURNACE, "furnace");
-        LinkableMaterials.put(Material.BREWING_STAND, "brewingstand");
-        LinkableMaterials.put(Material.ENCHANTMENT_TABLE, "enchantmenttable");
-        LinkableMaterials.put(Material.LEVER, "lever");
-        LinkableMaterials.put(Material.SIGN, "sign");
-        LinkableMaterials.put(Material.SIGN_POST, "sign");
-        LinkableMaterials.put(Material.WALL_SIGN, "sign");        
-        LinkableMaterials.put(Material.STEP, "slab");
-        LinkableMaterials.put(Material.JUKEBOX, "jukebox");
+        safeAddLinkeable("CHEST", "chest");
+        safeAddLinkeable("DISPENSER", "dispenser");        
+        safeAddLinkeable("FURNACE", "furnace");
+        safeAddLinkeable("BURNING_FURNACE", "furnace");
+        safeAddLinkeable("BREWING_STAND", "brewingstand");
+        safeAddLinkeable("ENCHANTMENT_TABLE", "enchantmenttable");
+        safeAddLinkeable("LEVER", "lever");
+        safeAddLinkeable("SIGN", "sign");
+        safeAddLinkeable("SIGN_POST", "sign");
+        safeAddLinkeable("WALL_SIGN", "sign");        
+        safeAddLinkeable("STEP", "slab");
+        safeAddLinkeable("JUKEBOX", "jukebox");
     }
     
     private void initConfig() {    

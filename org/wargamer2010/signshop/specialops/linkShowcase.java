@@ -33,7 +33,7 @@ public class linkShowcase implements SignShopSpecialOp {
         
         Block bStep = null;
         for(Block bTemp : clickedBlocks) {
-            if(bTemp.getType() == Material.STEP)
+            if(bTemp.getType() == Material.getMaterial("STEP"))
                 bStep = bTemp;
         }
         if(bStep == null)

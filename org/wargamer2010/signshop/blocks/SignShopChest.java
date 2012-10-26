@@ -10,7 +10,7 @@ public class SignShopChest {
     Block ssChest = null;
 
     public SignShopChest(Block bChest) {
-        if(bChest.getType() == Material.CHEST)
+        if(bChest.getType() == Material.getMaterial("CHEST"))
             ssChest = bChest;
     }
     

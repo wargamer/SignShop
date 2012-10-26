@@ -248,7 +248,7 @@ public class Storage {
             Block bSign = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(iX, iY, iZ);
 
             //If no longer valid, remove this sign (this would happen from worldedit, movecraft, etc)
-            if(bSign.getType() != Material.SIGN_POST && bSign.getType() != Material.WALL_SIGN){
+            if(itemUtil.clickedSign(bSign)) {
                 SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), sSignLocation), Level.INFO);
                 needToSave = true;
                 continue;
@@ -381,7 +381,7 @@ public class Storage {
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
             if(entry.getValue().getOwner().equals(sellerName)) {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
-                if(bSign.getType() == Material.SIGN_POST || bSign.getType() == Material.WALL_SIGN) {
+                if(itemUtil.clickedSign(bSign)) {                
                     String[] sLines = ((Sign) bSign.getState()).getLines();                    
                     List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
                     if(operation.isEmpty())

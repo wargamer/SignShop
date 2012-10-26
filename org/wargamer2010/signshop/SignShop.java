@@ -81,9 +81,12 @@ public class SignShop extends JavaPlugin{
     
     private void fixStackSize() {
         if(SignShopConfig.getEnableSignStacking()) {
-            setItemMaxSize(Material.SIGN, 64);
-            setItemMaxSize(Material.SIGN_POST, 64);
-            setItemMaxSize(Material.WALL_SIGN, 64);
+            if(Material.getMaterial("SIGN") != null)
+                setItemMaxSize(Material.getMaterial("SIGN"), 64);
+            if(Material.getMaterial("SIGN_POST") != null)
+                setItemMaxSize(Material.getMaterial("SIGN_POST"), 64);
+            if(Material.getMaterial("WALL_SIGN") != null)
+                setItemMaxSize(Material.getMaterial("WALL_SIGN"), 64);
         }
     }
     
@@ -103,13 +106,13 @@ public class SignShop extends JavaPlugin{
             log("Succesfully started Metrics, see http://mcstats.org for more information.", Level.INFO);
         else
             log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
-        
+                
         SignShopConfig = new SignShopConfig();
         SignShopConfig.init();
+        BookStore.init();
         
         //Create a storage locker for shops        
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
-        BookStore.init();
         
         try {
             FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
