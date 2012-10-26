@@ -24,7 +24,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class SignShopBlockListener implements Listener {
     
     private Block getBlockAttachedTo(Block bBlock) {
-        if(bBlock.getType() == Material.WALL_SIGN) {
+        if(bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
             org.bukkit.material.Sign sign = (org.bukkit.material.Sign)bBlock.getState().getData();             
             return bBlock.getRelative(sign.getAttachedFace());
         } else
@@ -32,16 +32,16 @@ public class SignShopBlockListener implements Listener {
     }
     
     private Boolean checkSign(Block bBlock, Block bDestroyed, BlockFace bf, Player player) {
-        if(bBlock.getType() == Material.SIGN_POST && bf.equals(BlockFace.UP))
+        if(bBlock.getType() == Material.getMaterial("SIGN_POST") && bf.equals(BlockFace.UP))
             return (canDestroy(player, bBlock, false));        
-        else if(bBlock.getType() == Material.WALL_SIGN && getBlockAttachedTo(bBlock).equals(bDestroyed))
+        else if(bBlock.getType() == Material.getMaterial("WALL_SIGN") && getBlockAttachedTo(bBlock).equals(bDestroyed))
             return (canDestroy(player, bBlock, false));
         else
             return true;
     }
     
     private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) { 
-        if(bBlock.getType() == Material.SIGN_POST || bBlock.getType() == Material.WALL_SIGN) {
+        if(bBlock.getType() == Material.getMaterial("SIGN_POST") || bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
             Seller seller = SignShop.Storage.getSeller(bBlock.getLocation());        
             if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || player.isOp()))) {
                 SignShop.Storage.removeSeller(bBlock.getLocation());
@@ -91,7 +91,7 @@ public class SignShopBlockListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBreak(BlockBreakEvent event) {        
         if(event.getPlayer().getItemInHand() != null 
-                && event.getPlayer().getItemInHand().getType() == Material.REDSTONE
+                && event.getPlayer().getItemInHand().getType() == Material.getMaterial("REDSTONE")
                 && event.getPlayer().getGameMode() == GameMode.CREATIVE
                 && SignShopConfig.getProtectShopsInCreative()) {
             event.setCancelled(true);
@@ -117,8 +117,8 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBurn(BlockBurnEvent event){
-        if(event.getBlock().getType() == Material.WALL_SIGN
-        || event.getBlock().getType() == Material.SIGN_POST){
+        if(event.getBlock().getType() == Material.getMaterial("WALL_SIGN")
+        || event.getBlock().getType() == Material.getMaterial("SIGN_POST")){
             SignShop.Storage.removeSeller(event.getBlock().getLocation());
         } else if(event.getBlock() instanceof InventoryHolder) {
             List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());

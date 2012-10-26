@@ -15,7 +15,7 @@ public class lagSetter implements Runnable{
 
     @Override
     public void run(){
-        if(blockToChange.getType() == Material.LEVER) {                    
+        if(blockToChange.getType() == Material.getMaterial("LEVER")) {
             BlockState state = blockToChange.getState();
             MaterialData data = state.getData();                                        
             Lever lever = (Lever)data;                    

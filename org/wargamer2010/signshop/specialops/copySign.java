@@ -22,7 +22,7 @@ public class copySign implements SignShopSpecialOp {
         Block shopSign = event.getClickedBlock();
         if(!itemUtil.clickedSign(shopSign))
             return false;
-        if(player.getItemInHand().getType() != Material.INK_SACK)
+        if(player.getItemInHand().getType() != Material.getMaterial("INK_SACK"))
             return false;
         
         Sign signNewSign = null;

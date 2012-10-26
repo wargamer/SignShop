@@ -19,6 +19,7 @@ import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.blocks.BookItem;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -197,6 +198,9 @@ public class itemUtil {
             if(item.getData() != null){
                 isBackup.setData(item.getData());
             }
+            if(itemUtil.isWriteableBook(item)) {
+                itemTags.copyTags(item, isBackup);
+            }
             
             if(item.getEnchantments().size() > 0)
                 enchantments.put(isBackup, item.getEnchantments());
@@ -217,6 +221,11 @@ public class itemUtil {
             sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
             if(enchantments.containsKey(entry.getKey())) {                
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
+            }
+            if(itemUtil.isWriteableBook(entry.getKey())) {
+                BookItem book = new BookItem(entry.getKey());                
+                if(book != null && (book.getAuthor() != null || book.getTitle() != null))
+                    sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");                
             }
         }
         
@@ -411,7 +420,7 @@ public class itemUtil {
     }
     
     public static Boolean clickedSign(Block bBlock) {
-        if(bBlock.getType() == Material.SIGN || bBlock.getType() == Material.WALL_SIGN || bBlock.getType() == Material.SIGN_POST)
+        if(bBlock.getType() == Material.getMaterial("SIGN") || bBlock.getType() == Material.getMaterial("WALL_SIGN") || bBlock.getType() == Material.getMaterial("SIGN_POST"))
             return true;
         else
             return false;
@@ -440,7 +449,7 @@ public class itemUtil {
                         
                     }
                 }
-            } catch(Exception ex) {
+            } catch(Exception ex) {                
                 continue;
             }
         }        
@@ -449,7 +458,7 @@ public class itemUtil {
     
     public static boolean isWriteableBook(ItemStack item) {
         if(item == null) return false;
-        return (item.getType() == Material.WRITTEN_BOOK || item.getType() == Material.BOOK_AND_QUILL);
+        return (item.getType() == Material.getMaterial("WRITTEN_BOOK") || item.getType() == Material.getMaterial("BOOK_AND_QUILL"));
     }
     
     public static String[] convertItemStacksToString(ItemStack[] isItems) {

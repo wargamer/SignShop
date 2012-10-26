@@ -13,7 +13,7 @@ public class setRedstoneOn implements SignShopOperation {
     public Boolean setupOperation(SignShopArguments ssArgs) {
         Boolean foundLever = false;
         for(Block block : ssArgs.get_activatables())
-            if(block.getType() == Material.LEVER)
+            if(block.getType() == Material.getMaterial("LEVER"))
                 foundLever = true;
         if(!foundLever) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));            
@@ -28,7 +28,7 @@ public class setRedstoneOn implements SignShopOperation {
         Block bLever = null;
         for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
             bLever = ssArgs.get_activatables().get(i);
-            if(bLever.getType() == Material.LEVER) {
+            if(bLever.getType() == Material.getMaterial("LEVER")) {
                 BlockState state = bLever.getState();
                 MaterialData data = state.getData();
                 Lever lever = (Lever)data;
@@ -47,7 +47,7 @@ public class setRedstoneOn implements SignShopOperation {
         
         for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
             bLever = ssArgs.get_activatables().get(i);
-            if(bLever.getType() == Material.LEVER) {
+            if(bLever.getType() == Material.getMaterial("LEVER")) {
                 BlockState state = bLever.getState();
                 MaterialData data = state.getData();                                        
                 Lever lever = (Lever)data;                               
