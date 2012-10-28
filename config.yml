@@ -236,7 +236,7 @@ errors:
   unlinked_share_sign: Unlinked Share sign from Shop.
   linked_share_sign: Succesfully linked Share sign to Shop.
   not_allowed_to_link_restrictedsigns: You are not allowed to link Restricted signs to this shop!
-  no_shop_linked_to_restrictedsign: This Restricted sign has not been linked to any shops.  
+  no_shop_linked_to_restrictedsign: This Restricted sign has not been linked to any shops.
   registered_restricted_sign: Registered a Restricted sign, please click the Shop sign next.
   unlinked_restricted_sign: Unlinked Restricted sign from Shop.
   linked_restricted_sign: Succesfully linked Restricted sign to Shop.
@@ -250,6 +250,8 @@ errors:
   item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
   item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
   block_is_protected: This block is protected, you are not allowed to interact with it.
+  updated_shop: The shop has been succesfully updated.
+  failed_to_update_shop: Failed to update the shop due to the error above.
 commands:
   TpToOwner:
   - tp !player !owner

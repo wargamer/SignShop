@@ -33,12 +33,12 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class Storage {
     private FileConfiguration yml;
     private File ymlfile;
-    
-    private static ReentrantLock savelock = new ReentrantLock();    
-    
+
+    private static ReentrantLock savelock = new ReentrantLock();
+
     private static Map<Location,Seller> sellers;
-    public static String itemSeperator = "&";
-    
+    private static String itemSeperator = "&";
+
     private Boolean safetosave = true;
 
     public Storage(File ymlFile) {
@@ -52,7 +52,7 @@ public class Storage {
         ymlfile = ymlFile;
         yml = YamlConfiguration.loadConfiguration(ymlFile);
         sellers = new HashMap <Location,Seller>();
-        
+
         // Load into memory, this also removes invalid signs (hence the backup)
         Boolean needToSave = Load();
         if(needToSave) {
@@ -61,17 +61,17 @@ public class Storage {
                 backupTo.delete();
             try {
                 copyFile(ymlFile, backupTo);
-            } catch(IOException ex) {                
+            } catch(IOException ex) {
                 SignShop.log(SignShopConfig.getError("backup_fail", null), Level.WARNING);
             }
             Save();
         }
     }
-    
+
     public int shopCount() {
         return sellers.size();
     }
-    
+
     private List getSetting(HashMap<String,List> settings, String settingName) throws StorageException {
         StorageException ex = new StorageException();
         if(settings.containsKey(settingName))
@@ -86,12 +86,12 @@ public class Storage {
             SignShop.log("Sellers is empty!", Level.INFO);
             return false;
         }
-        Map<String,HashMap<String,List>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);        
+        Map<String,HashMap<String,List>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
         if(tempSellers == null || tempSellers.isEmpty()){
-            return legacyLoad();            
+            return legacyLoad();
         }
-        
-        Boolean needSave = false;        
+
+        Boolean needSave = false;
         Block seller_sign;
         String seller_owner;
         List<Block> seller_activatables;
@@ -100,9 +100,9 @@ public class Storage {
         ItemStack[] seller_items;
         Map<String, String> miscsettings;
         StorageException storageex = new StorageException();
-        
+
         for(Map.Entry<String,HashMap<String,List>> shopSettings : tempSellers.entrySet())
-        {            
+        {
             HashMap<String,List> sellerSettings = shopSettings.getValue();
             List<String> tempList = new LinkedList();
             try {
@@ -112,7 +112,7 @@ public class Storage {
                 seller_shopworld = tempList.get(0);
                 if(Bukkit.getServer().getWorld(seller_shopworld) == null)
                     throw storageex;
-                tempList = getSetting(sellerSettings, "owner");                 
+                tempList = getSetting(sellerSettings, "owner");
                 if(tempList.isEmpty())
                     throw storageex;
                 seller_owner = tempList.get(0);
@@ -129,17 +129,17 @@ public class Storage {
                 miscsettings = new HashMap<String, String>();
                 if(sellerSettings.containsKey("misc")) {
                     for(String miscsetting : (List<String>)sellerSettings.get("misc")) {
-                        String[] miscbits = miscsetting.split(":", 2);                        
+                        String[] miscbits = miscsetting.split(":", 2);
                         if(miscbits.length == 2)
                             miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
                     }
                 }
-            } catch(StorageException caughtex) { 
-                try {                    
+            } catch(StorageException caughtex) {
+                try {
                     SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), ((List<String>)getSetting(sellerSettings, "sign")).get(0), ((List<String>)getSetting(sellerSettings, "shopworld")).get(0)), Level.INFO);
-                } catch(StorageException lastex) { 
+                } catch(StorageException lastex) {
                     SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
-                }                
+                }
                 needSave = true;
                 continue;
             }
@@ -147,7 +147,7 @@ public class Storage {
         }
         return needSave;
     }
-    
+
     private String getInvalidError(String template, String location, String world) {
         String[] locations = new String[4];
         String[] coords = location.split("/");
@@ -160,7 +160,7 @@ public class Storage {
         }
         return template;
     }
-    
+
     private String getInvalidError(String template, String[] locations) {
         return template
                 .replace("!world", locations[0])
@@ -168,23 +168,23 @@ public class Storage {
                 .replace("!y", locations[2])
                 .replace("!z", locations[3]);
     }
-    
+
     public Boolean legacyLoad() {
-        
+
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
         if(sellersection == null) {
             SignShop.log("Sellers is empty!", Level.INFO);
             return false;
         }
-        Map<String,Object> tempSellers = (Map<String,Object>) sellersection.getValues(false);
+        Map<String,Object> tempSellers = sellersection.getValues(false);
 
         if(tempSellers == null){
             return false;
         }
-        
+
         SignShop.log("Legacy sellers.yml detected, backing up and attempting to load it!", Level.INFO);
         File backup_legacy = new File(ymlfile.getParentFile().getPath() + "/sellers.legacy.backup");
-        
+
         if(!backup_legacy.exists()) {
             try {
                 copyFile(ymlfile, backup_legacy);
@@ -194,10 +194,10 @@ public class Storage {
                 return false;
             }
         }
-        
+
         Map<String,Object> tempSeller;
 
-        String[] sSignLocation;        
+        String[] sSignLocation;
         Block bChest;
         ItemStack[] isItems;
         ArrayList<Integer> items;
@@ -209,7 +209,7 @@ public class Storage {
         boolean needToSave = false;
         for(String sKey : tempSellers.keySet()){
             invalidShop = false;
-            
+
             sSignLocation = sKey.split("/");
 
             while(sSignLocation.length > 4){
@@ -280,10 +280,10 @@ public class Storage {
                         isItems[i].setDurability(durabilities.get(i).shortValue());
 
                     if(enchantments != null && enchantments.get(i) != null)
-                        itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));                    
+                        itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));
                 }
-                List<Block> seller_containables = new LinkedList();
-                List<Block> seller_activatables = new LinkedList();
+                List<Block> seller_containables = new LinkedList<Block>();
+                List<Block> seller_activatables = new LinkedList<Block>();
                 if(bChest.getState() instanceof InventoryHolder)
                     seller_containables.add(bChest);
                 else
@@ -293,35 +293,35 @@ public class Storage {
             } catch(NullPointerException ex) {
                 SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), sSignLocation), Level.INFO);
                 continue;
-            }            
+            }
         }
         return needToSave;
-        
+
     }
 
     private void Save() {
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
         Seller seller;
-        Map<String,Object> temp;        
+        Map<String,Object> temp;
         try {
             for(Location lKey : Storage.sellers.keySet()){
                 temp = new HashMap<String,Object>();
 
                 seller = sellers.get(lKey);
                 temp.put("shopworld", seller.getWorld());
-                temp.put("owner", seller.getOwner());            
-                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(), seller.getMeta()));            
+                temp.put("owner", seller.getOwner());
+                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(), seller.getMeta()));
 
                 List<Block> containables = seller.getContainables();
                 String[] sContainables = new String[containables.size()];
-                for(int i = 0; i < containables.size(); i++)            
+                for(int i = 0; i < containables.size(); i++)
                     sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
                 temp.put("containables", sContainables);
 
                 List<Block> activatables = seller.getActivatables();
                 String[] sActivatables = new String[activatables.size()];
-                for(int i = 0; i < activatables.size(); i++)            
+                for(int i = 0; i < activatables.size(); i++)
                     sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
                 temp.put("activatables", sActivatables);
 
@@ -337,11 +337,11 @@ public class Storage {
             // No need to retry because this will be called again, for sure, after the lock is released
             return;
         }
-        
+
         yml.set("sellers", tempSellers);
         saveToFile();
     }
-    
+
     public void SafeSave() {
         // Locking here to make sure the latest version is always saved
         savelock.lock();
@@ -351,15 +351,22 @@ public class Storage {
             savelock.unlock();
         }
     }
-        
+
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
         addSeller(sPlayer, sWorld, bSign, containables, activatables, isItems, misc, true);
     }
-    
+
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
-        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc, save));        
+        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc, save));
         if(save)
             this.SafeSave();
+    }
+
+    public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems) {
+        Seller seller = Storage.sellers.get(bSign.getLocation());
+        seller.setActivatables(activatables);
+        seller.setContainables(containables);
+        seller.setItems(isItems);
     }
 
     public Seller getSeller(Location lKey){
@@ -375,14 +382,14 @@ public class Storage {
             this.SafeSave();
         }
     }
-    
+
     public Integer countLocations(String sellerName) {
-        Integer count = 0;        
+        Integer count = 0;
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
             if(entry.getValue().getOwner().equals(sellerName)) {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
-                if(itemUtil.clickedSign(bSign)) {                
-                    String[] sLines = ((Sign) bSign.getState()).getLines();                    
+                if(itemUtil.clickedSign(bSign)) {
+                    String[] sLines = ((Sign) bSign.getState()).getLines();
                     List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
                     if(operation.isEmpty())
                         continue;
@@ -393,15 +400,15 @@ public class Storage {
             }
         return count;
     }
-    
+
     public List<Block> getSignsFromHolder(Block bHolder) {
-        List<Block> signs = new LinkedList();
+        List<Block> signs = new LinkedList<Block>();
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
             if(entry.getValue().getContainables().contains(bHolder))
-                signs.add(Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey()));            
+                signs.add(Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey()));
         return signs;
     }
-    
+
     public List<Block> getShopsWithMiscSetting(String key, String value) {
         List<Block> shops = new LinkedList<Block>();
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet()) {
@@ -412,7 +419,11 @@ public class Storage {
         }
         return shops;
     }
-    
+
+    public static String getItemSeperator() {
+        return itemSeperator;
+    }
+
     private void saveToFile() {
         if(!safetosave)
             return;
@@ -422,8 +433,8 @@ public class Storage {
             SignShop.log("Failed to save sellers.yml", Level.WARNING);
         }
     }
-    
-    private void copyFile(File in, File out) throws IOException 
+
+    private void copyFile(File in, File out) throws IOException
     {
         FileChannel inChannel = new FileInputStream(in).getChannel();
         FileChannel outChannel = new FileOutputStream(out).getChannel();
@@ -438,15 +449,15 @@ public class Storage {
             if (outChannel != null) outChannel.close();
         }
     }
-    
+
     private List<String> MapToList(Map<String, String> map) {
         List<String> returnList = new LinkedList<String>();
         for(Map.Entry<String, String> entry : map.entrySet())
             returnList.add(entry.getKey() + ":" + entry.getValue());
         return returnList;
     }
-    
+
     private class StorageException extends Exception {
-        
-    }    
+
+    }
 }

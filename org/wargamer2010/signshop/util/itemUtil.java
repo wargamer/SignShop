@@ -28,7 +28,7 @@ import org.wargamer2010.signshop.operations.SignShopArguments;
 
 public class itemUtil {
     private static HashMap<Integer, String> discs;
-    
+
     public static void initDiscs() {
         // This is pretty ugly but I really couldn't find another way in
         // bukkit's source to get this via a native function
@@ -46,7 +46,7 @@ public class itemUtil {
         discs.put(2265, "Ward Disc");
         discs.put(2266, "11 Disc");
     }
-    
+
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
         List<ItemStack> items = new ArrayList<ItemStack>();
         for(ItemStack item: isItems) {
@@ -70,16 +70,16 @@ public class itemUtil {
         }
         return isBackupToTake;
     }
-    
-    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {                
+
+    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
         return isStockOK(iiInventory, getSingleAmount(isItemsToTake), bTakeOrGive);
     }
-    
+
     public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
         try {
             ItemStack[] isChestItems = iiInventory.getContents();
             ItemStack[] isBackup = getBackupItemStack(isChestItems);
-            ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);                
+            ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);
             HashMap<Integer, ItemStack> leftOver;
             if(bTakeOrGive)
                 leftOver = iiInventory.removeItem(isBackupToTake);
@@ -88,14 +88,14 @@ public class itemUtil {
             Boolean bStockOK = true;
             if(!leftOver.isEmpty())
                 bStockOK = false;
-            iiInventory.setContents(isBackup);        
+            iiInventory.setContents(isBackup);
             return bStockOK;
-        } catch(NullPointerException ex) {            
+        } catch(NullPointerException ex) {
             // Chest is not available, contents are NULL. So let's assume the Stock is not OK
             return false;
         }
     }
-    
+
     private static String binaryToRoman(int binary) {
         final String[] RCODE = {"M", "CM", "D", "CD", "C", "XC", "L",
                                            "XL", "X", "IX", "V", "IV", "I"};
@@ -112,24 +112,24 @@ public class itemUtil {
             }
         }
         return roman;
-    }  
-    
-    private static String lookupDisc(int id) {        
+    }
+
+    private static String lookupDisc(int id) {
         if(discs.containsKey(id))
             return discs.get(id);
         else
             return "";
     }
-    
+
     public static boolean isDisc(int id) {
         return discs.containsKey(id);
     }
-    
+
     public static String formatData(MaterialData data) {
         Short s = 0;
         return formatData(data, s);
     }
-    
+
     public static String formatData(MaterialData data, Short durability) {
         String sData;
         // Lookup spout custom material
@@ -138,13 +138,13 @@ public class itemUtil {
             if(sData != null)
                 return sData;
         }
-        
+
         // For some reason running tostring on data when it's from an attachable material
-        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)        
+        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
         if(data instanceof SimpleAttachableMaterialData)
             return stringFormat(data.getItemType().name());
-        
-        if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))            
+
+        if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))
             return sData;
         else
             sData = data.toString().toLowerCase();
@@ -152,16 +152,16 @@ public class itemUtil {
         Matcher m = p.matcher(sData);
         sData = m.replaceAll("");
         sData = sData.replace("_", " ");
-        
+
         StringBuffer sb = new StringBuffer(sData.length());
         p = Pattern.compile("(^|\\W)([a-z])");
         m = p.matcher(sData);
         while(m.find()) {
             m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
         }
-        
+
         m.appendTail(sb);
-        
+
         return sb.toString();
     }
 
@@ -179,12 +179,12 @@ public class itemUtil {
 
         return sb.toString();
     }
-        
+
     public static String itemStackToString(ItemStack[] isStacks) {
         HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
         HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
         String sItems = "";
-        Boolean first = true;        
+        Boolean first = true;
         Integer tempAmount = 0;
         for(ItemStack item: isStacks) {
             if(item == null)
@@ -201,13 +201,13 @@ public class itemUtil {
             if(itemUtil.isWriteableBook(item)) {
                 itemTags.copyTags(item, isBackup);
             }
-            
+
             if(item.getEnchantments().size() > 0)
                 enchantments.put(isBackup, item.getEnchantments());
             if(items.containsKey(isBackup)) {
-                tempAmount = (items.get(isBackup) + item.getAmount());                
+                tempAmount = (items.get(isBackup) + item.getAmount());
                 items.put(isBackup, tempAmount);
-            } else 
+            } else
                 items.put(isBackup, item.getAmount());
         }
         for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
@@ -219,23 +219,23 @@ public class itemUtil {
             if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
                 sDamaged = " Damaged ";
             sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
-            if(enchantments.containsKey(entry.getKey())) {                
+            if(enchantments.containsKey(entry.getKey())) {
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
             }
             if(itemUtil.isWriteableBook(entry.getKey())) {
-                BookItem book = new BookItem(entry.getKey());                
+                BookItem book = new BookItem(entry.getKey());
                 if(book != null && (book.getAuthor() != null || book.getTitle() != null))
-                    sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");                
+                    sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");
             }
         }
-        
+
         return sItems;
     }
-    
+
     public static String enchantmentsToMessageFormat(Map<Enchantment,Integer> enchantments) {
         String enchantmentMessage = "";
         Boolean eFirst = true;
-        
+
         enchantmentMessage += "(";
         for(Map.Entry<Enchantment,Integer> eEntry : enchantments.entrySet()) {
             if(eFirst) eFirst = false;
@@ -245,19 +245,19 @@ public class itemUtil {
         enchantmentMessage += ")";
         return enchantmentMessage;
     }
-        
+
     public static void setSignStatus(Block sign, ChatColor color) {
         if(clickedSign(sign)) {
             Sign signblock = ((Sign) sign.getState());
-            String[] sLines = signblock.getLines();            
+            String[] sLines = signblock.getLines();
             if(ChatColor.stripColor(sLines[0]).length() < 14) {
                 signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
                 signblock.update();
             }
         }
     }
-    
-    public static Boolean addSafeEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {        
+
+    public static Boolean addSafeEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {
         if(enchantments.isEmpty())
             return true;
         try {
@@ -265,16 +265,16 @@ public class itemUtil {
         } catch(IllegalArgumentException ex) {
             if(SignShopConfig.getAllowUnsafeEnchantments()) {
                 try {
-                    isEnchantMe.addUnsafeEnchantments(enchantments);                    
+                    isEnchantMe.addUnsafeEnchantments(enchantments);
                 } catch(IllegalArgumentException exfinal) {
-                    return false;                    
+                    return false;
                 }
             } else
                 return false;
         }
         return true;
-    }    
-    
+    }
+
     public static HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
         ItemStack[] isBackup = getBackupItemStack(isStacks);
         HashMap<ItemStack, Integer> mReturn = new HashMap<ItemStack, Integer>();
@@ -287,14 +287,14 @@ public class itemUtil {
                 tempAmount += mReturn.get(isBackup[i]);
                 mReturn.remove(isBackup[i]);
                 mReturn.put(isBackup[i], tempAmount);
-            } else 
+            } else
                 mReturn.put(isBackup[i], tempAmount);
         }
         return mReturn;
     }
-    
+
     public static ItemStack[] getBackupItemStack(ItemStack[] isOriginal) {
-        ItemStack[] isBackup = new ItemStack[isOriginal.length];        
+        ItemStack[] isBackup = new ItemStack[isOriginal.length];
         for(int i = 0; i < isOriginal.length; i++){
             if(isOriginal[i] != null) {
                 isBackup[i] = getBackupSingleItemStack(isOriginal[i]);
@@ -302,7 +302,7 @@ public class itemUtil {
         }
         return isBackup;
     }
-    
+
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
         ItemStack isBackup = new CraftItemStack(
             isOriginal.getType(),
@@ -310,54 +310,54 @@ public class itemUtil {
             isOriginal.getDurability()
         );
         itemUtil.addSafeEnchantments(isBackup, isOriginal.getEnchantments());
-        if(itemUtil.isWriteableBook(isOriginal)) {        
+        if(itemUtil.isWriteableBook(isOriginal)) {
             itemTags.copyTags(isOriginal, isBackup);
         }
 
         if(isOriginal.getData() != null) {
             isBackup.setData(isOriginal.getData());
         }
-        
+
         return isBackup;
     }
-    
+
     public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake, Boolean bTake) {
         ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
-        Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);        
-        if(fromOK) {            
+        Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
+        if(fromOK) {
             returnMap.put(isItemsToTake, 1.0f);
             if(bTake)
-                iiFrom.removeItem(isBackup);            
+                iiFrom.removeItem(isBackup);
             return returnMap;
-        } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {            
+        } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {
             returnMap.put(isItemsToTake, 0.0f);
             return returnMap;
         }
         returnMap.put(isItemsToTake, 0.0f);
         float iCount = 0;
         float tempCount = 0;
-        int i = 0;        
-        HashMap<ItemStack, Integer> mItemsToTake = StackToMap(isBackup);        
-        HashMap<ItemStack, Integer> mInventory = StackToMap(iiFrom.getContents());        
+        int i = 0;
+        HashMap<ItemStack, Integer> mItemsToTake = StackToMap(isBackup);
+        HashMap<ItemStack, Integer> mInventory = StackToMap(iiFrom.getContents());
         ItemStack[] isActual = new ItemStack[mItemsToTake.size()];
-        for(Map.Entry<ItemStack, Integer> entry : mItemsToTake.entrySet()) {            
+        for(Map.Entry<ItemStack, Integer> entry : mItemsToTake.entrySet()) {
             if(iCount == 0 && mInventory.containsKey(entry.getKey()))
-                iCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());                
+                iCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());
             else if(iCount != 0 && mInventory.containsKey(entry.getKey())) {
-                tempCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());                
+                tempCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());
                 if(tempCount != iCount)
                     return returnMap;
             } else
                 return returnMap;
-            
+
             isActual[i] = new CraftItemStack(
                 entry.getKey().getType(),
                 mInventory.get(entry.getKey()),
                 entry.getKey().getDurability()
             );
-            addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());            
+            addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());
             if(itemUtil.isWriteableBook(entry.getKey())) {
                 itemTags.copyTags(entry.getKey(), isActual[i]);
             }
@@ -366,106 +366,106 @@ public class itemUtil {
             }
             i++;
         }
-        returnMap.clear();        
+        returnMap.clear();
         returnMap.put(isActual, iCount);
         if(bTake)
-            iiFrom.removeItem(isActual);        
+            iiFrom.removeItem(isActual);
         return returnMap;
     }
-    
+
     public static void updateStockStatusPerChest(Block bHolder, Block bIgnore) {
-        List<Block> signs = SignShop.Storage.getSignsFromHolder(bHolder);        
+        List<Block> signs = SignShop.Storage.getSignsFromHolder(bHolder);
         if(signs != null) {
             for (Block temp : signs) {
                 if(temp == bIgnore)
                     continue;
                 Seller seller = null;
-                if(!clickedSign(temp))                    
+                if(!clickedSign(temp))
                     continue;
-                if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {                                                
+                if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
                     String[] sLines = ((Sign) temp.getState()).getLines();
                     if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
-                        continue;                    
+                        continue;
                     List operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
-                    Map<SignShopOperation, List> SignShopOperations = signshopUtil.getSignShopOps(operation);
+                    Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
                     if(SignShopOperations == null)
                         return;
-                    SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(), 
+                    SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                                                                         null, null, temp, signshopUtil.getOperation(sLines[0]), null);
                     if(seller.getMisc() != null)
                         ssArgs.miscSettings = seller.getMisc();
                     Boolean reqOK = true;
-                    for(Map.Entry<SignShopOperation, List> ssOperation : SignShopOperations.entrySet()) {
+                    for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                         ssArgs.set_operationParameters(ssOperation.getValue());
-                        if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {                            
-                            itemUtil.setSignStatus(temp, ChatColor.DARK_RED);                            
+                        if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {
+                            itemUtil.setSignStatus(temp, ChatColor.DARK_RED);
                             break;
                         }
                     }
                     if(reqOK)
-                        itemUtil.setSignStatus(temp, ChatColor.DARK_BLUE);                            
+                        itemUtil.setSignStatus(temp, ChatColor.DARK_BLUE);
                 }
             }
         }
     }
-    
+
     public static void updateStockStatus(Block bSign, ChatColor ccColor) {
         Seller seTemp;
         if((seTemp = SignShop.Storage.getSeller(bSign.getLocation())) != null) {
             List<Block> iChests = seTemp.getContainables();
             for(Block bHolder : iChests)
-                updateStockStatusPerChest(bHolder, bSign);            
+                updateStockStatusPerChest(bHolder, bSign);
         }
         setSignStatus(bSign, ccColor);
     }
-    
+
     public static Boolean clickedSign(Block bBlock) {
         if(bBlock.getType() == Material.getMaterial("SIGN") || bBlock.getType() == Material.getMaterial("WALL_SIGN") || bBlock.getType() == Material.getMaterial("SIGN_POST"))
             return true;
         else
             return false;
     }
-    
+
     public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
         ItemStack isItems[] = new ItemStack[sItems.size()];
         for(int i = 0; i < sItems.size(); i++) {
             try {
-                String[] sItemprops = sItems.get(i).split(Storage.itemSeperator);
+                String[] sItemprops = sItems.get(i).split(Storage.getItemSeperator());
                 if(sItemprops.length < 4)
                     continue;
-                isItems[i] = new CraftItemStack(                        
+                isItems[i] = new CraftItemStack(
                         Integer.parseInt(sItemprops[1]),
                         Integer.parseInt(sItemprops[0]),
                         Short.parseShort(sItemprops[2])
                 );
                 isItems[i].getData().setData(new Byte(sItemprops[3]));
                 if(sItemprops.length > 4)
-                    addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));                    
+                    addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
                 if(sItemprops.length > 5) {
                     try {
                         SignShopBooks.addBooksProps(isItems[i], Integer.parseInt(sItemprops[5]));
                         Seller.addMeta(isItems[i], Integer.parseInt(sItemprops[5]));
                     } catch(NumberFormatException ex) {
-                        
+
                     }
                 }
-            } catch(Exception ex) {                
+            } catch(Exception ex) {
                 continue;
             }
-        }        
+        }
         return isItems;
     }
-    
+
     public static boolean isWriteableBook(ItemStack item) {
         if(item == null) return false;
         return (item.getType() == Material.getMaterial("WRITTEN_BOOK") || item.getType() == Material.getMaterial("BOOK_AND_QUILL"));
     }
-    
+
     public static String[] convertItemStacksToString(ItemStack[] isItems) {
         return convertItemStacksToString(isItems, null);
     }
-    
-    public static String[] convertItemStacksToString(ItemStack[] isItems, Map<ItemStack, Integer> meta) {        
+
+    public static String[] convertItemStacksToString(ItemStack[] isItems, Map<ItemStack, Integer> meta) {
         List<String> sItems = new ArrayList();
 
         ItemStack isCurrent = null;
@@ -473,14 +473,14 @@ public class itemUtil {
             if(isItems[i] != null) {
                 isCurrent = isItems[i];
                 String ID = (meta != null && meta.containsKey(isItems[i]) ? meta.get(isItems[i]).toString() : "");
-                sItems.add((isCurrent.getAmount() + SignShop.Storage.itemSeperator 
-                        + isCurrent.getTypeId() + SignShop.Storage.itemSeperator  
-                        + isCurrent.getDurability() + SignShop.Storage.itemSeperator  
-                        + isCurrent.getData().getData() + SignShop.Storage.itemSeperator 
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + SignShop.Storage.itemSeperator 
+                sItems.add((isCurrent.getAmount() + SignShop.Storage.getItemSeperator()
+                        + isCurrent.getTypeId() + SignShop.Storage.getItemSeperator()
+                        + isCurrent.getDurability() + SignShop.Storage.getItemSeperator()
+                        + isCurrent.getData().getData() + SignShop.Storage.getItemSeperator()
+                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + SignShop.Storage.getItemSeperator()
                         + ID));
             }
-            
+
         }
         String[] items = new String[sItems.size()];
         sItems.toArray(items);

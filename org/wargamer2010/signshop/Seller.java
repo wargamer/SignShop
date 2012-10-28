@@ -14,18 +14,18 @@ import java.util.LinkedHashMap;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class Seller {        
+public class Seller {
     private List<Block> containables = new LinkedList();
     private List<Block> activatables = new LinkedList();
     private ItemStack[] isItems;
     private Map<String, String> miscProps = new HashMap<String, String>();
-    private Map<ItemStack, Integer> itemMeta = new LinkedHashMap<ItemStack, Integer>();    
-    private static Map<ItemStack, Integer> tempItemMeta = new LinkedHashMap<ItemStack, Integer>();    
-    private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();    
-    
+    private Map<ItemStack, Integer> itemMeta = new LinkedHashMap<ItemStack, Integer>();
+    private static Map<ItemStack, Integer> tempItemMeta = new LinkedHashMap<ItemStack, Integer>();
+    private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();
+
     private String owner;
     private String world;
-    
+
     public Seller(String sPlayer, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Map<String, String> pMiscProps, Boolean save) {
         owner = sPlayer;
         world = sWorld;
@@ -37,39 +37,51 @@ public class Seller {
             miscProps.putAll(pMiscProps);
         storeBooks(save);
     }
-    
-    public ItemStack[] getItems() {        
+
+    public ItemStack[] getItems() {
         return itemUtil.getBackupItemStack(isItems);
     }
-    
+
+    public void setItems(ItemStack[] items) {
+        isItems = items;
+    }
+
     public List<Block> getContainables() {
         return containables;
     }
-    
+
+    public void setContainables(List<Block> blocklist) {
+        containables = blocklist;
+    }
+
     public List<Block> getActivatables() {
         return activatables;
     }
-        
+
+    public void setActivatables(List<Block> blocklist) {
+        activatables = blocklist;
+    }
+
     public String getOwner() {
         return owner;
     }
-    
+
     public void setOwner(String newowner) {
         owner = newowner;
     }
-    
+
     public String getWorld() {
         return world;
     }
-    
+
     public Map<String, String> getMisc() {
         return miscProps;
     }
-    
+
     public Map<ItemStack, Integer> getMeta() {
         return itemMeta;
     }
-    
+
     public void cleanUp() {
         if(miscProps.containsKey("showcaselocation")) {
             if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
@@ -91,10 +103,10 @@ public class Seller {
             }
         }
     }
-    
+
     private void storeBooks(Boolean save) {
         for(ItemStack stack : isItems) {
-            if(itemUtil.isWriteableBook(stack)) {            
+            if(itemUtil.isWriteableBook(stack)) {
                 Integer id;
                 if(save) {
                     id = SignShopBooks.addBook(stack);
@@ -107,19 +119,19 @@ public class Seller {
                     }
                 }
             }
-        }            
+        }
     }
-    
+
     public static void addMeta(ItemStack stack, Integer id)  {
         tempItemMeta.put(stack, id);
     }
-    
+
     public String getVolatile(String key) {
         if(volatileProperties.containsKey(key))
-            return volatileProperties.get(key);        
+            return volatileProperties.get(key);
         return null;
     }
-    
+
     public void setVolatile(String key, String value) {
         volatileProperties.put(key, value);
     }
