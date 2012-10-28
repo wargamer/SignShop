@@ -39,12 +39,12 @@ public class SignShopConfig {
     public static Map<String,List> Commands;
     public static Map<String,Integer> ShopLimits;
     public static Map<Material, String> LinkableMaterials;
-    public static List<String> SpecialsOps = new LinkedList();    
-    
+    public static List<String> SpecialsOps = new LinkedList<String>();
+
     private SignShop instance = null;
-    
+
     //Configurables
-    private FileConfiguration config;    
+    private FileConfiguration config;
     private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
     private static Boolean TransactionLog = false;
@@ -56,19 +56,19 @@ public class SignShopConfig {
     private static boolean AllowMultiWorldShops = true;
     private static boolean EnablePermits = false;
     private static boolean PreventVillagerTrade = false;
-    private static boolean ProtectShopsInCreative = true;   
+    private static boolean ProtectShopsInCreative = true;
     private static boolean EnableSignStacking = false;
     private static boolean fixIncompleteOperations = true;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
-    
+
     public SignShopConfig() {
-        instance = SignShop.getInstance();        
+        instance = SignShop.getInstance();
         preferedLanguage = "";
         Languages = "english";
     }
-    
+
     private List<String> getOrderedListFromArray(String[] array) {
         List<String> list = new LinkedList<String>();
         for(String item : array)
@@ -76,13 +76,13 @@ public class SignShopConfig {
                 list.add(item.toLowerCase().trim());
         return list;
     }
-    
-    public void init() {        
+
+    public void init() {
         initConfig();
         Languages = Languages.replace(baseLanguage, "config");
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
         if(!aLanguages.contains("config"))
-            aLanguages.add("config");                
+            aLanguages.add("config");
         Messages = new LinkedHashMap<String,Map<String,HashMap<String,String>>>();
         Errors = new LinkedHashMap<String,Map<String,String>>();
         for(String language : aLanguages) {
@@ -90,10 +90,10 @@ public class SignShopConfig {
             String languageName = (language.equals("config") ? baseLanguage : language);
             copyFileFromJar(filename, false);
             File languageFile = new File(instance.getDataFolder(), filename);
-            if(languageFile.exists()) {                
-                FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);                
+            if(languageFile.exists()) {
+                FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);
                 if(ymlThing != null && !language.equals("config")) {
-                    configUtil.loadYMLFromJar(ymlThing, filename);                    
+                    configUtil.loadYMLFromJar(ymlThing, filename);
                 }
 
                 Messages.put(languageName, configUtil.fetchHasmapInHashmap("messages", ymlThing));
@@ -102,13 +102,13 @@ public class SignShopConfig {
                 Errors.put(languageName, configUtil.fetchStringStringHashMap("errors", ymlThing));
                 if(Errors.get(languageName) == null)
                     continue;
-                if(preferedLanguage.equals(""))
-                    preferedLanguage = languageName;                
+                if(preferedLanguage.isEmpty())
+                    preferedLanguage = languageName;
             } else {
                 SignShop.log("The languagefile " + languageFile + " for language: " + languageName + " could not be found in the plugin directory!", Level.WARNING);
             }
-        } 
-        if(preferedLanguage.equals(""))
+        }
+        if(preferedLanguage.isEmpty())
             preferedLanguage = baseLanguage;
         PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         Commands = configUtil.fetchListInHashmap("commands", config);
@@ -120,9 +120,9 @@ public class SignShopConfig {
         setupHooks();
         setupSpecialsOps();
         setupLinkables();
-        initConfig();        
+        initConfig();
     }
-    
+
     private void setupHooks() {
         HookManager.addHook("LWC");
         HookManager.addHook("Lockette");
@@ -130,7 +130,7 @@ public class SignShopConfig {
         HookManager.addHook("Deadbolt");
         HookManager.addHook("Residence");
     }
-    
+
     private void setupSpecialsOps() {
         SpecialsOps.add("convertChestshop");
         SpecialsOps.add("copySign");
@@ -139,17 +139,18 @@ public class SignShopConfig {
         SpecialsOps.add("linkShareSign");
         SpecialsOps.add("linkRestrictedSign");
         SpecialsOps.add("changeOwner");
+        SpecialsOps.add("linkAdditionalBlocks");
     }
-    
+
     private void safeAddLinkeable(String sName, String sGroup) {
         if(Material.getMaterial(sName) != null)
             LinkableMaterials.put(Material.getMaterial(sName), sGroup);
     }
-    
+
     private void setupLinkables() {
         LinkableMaterials = new HashMap<Material, String>();
         safeAddLinkeable("CHEST", "chest");
-        safeAddLinkeable("DISPENSER", "dispenser");        
+        safeAddLinkeable("DISPENSER", "dispenser");
         safeAddLinkeable("FURNACE", "furnace");
         safeAddLinkeable("BURNING_FURNACE", "furnace");
         safeAddLinkeable("BREWING_STAND", "brewingstand");
@@ -157,22 +158,23 @@ public class SignShopConfig {
         safeAddLinkeable("LEVER", "lever");
         safeAddLinkeable("SIGN", "sign");
         safeAddLinkeable("SIGN_POST", "sign");
-        safeAddLinkeable("WALL_SIGN", "sign");        
+        safeAddLinkeable("WALL_SIGN", "sign");
         safeAddLinkeable("STEP", "slab");
         safeAddLinkeable("JUKEBOX", "jukebox");
     }
-    
-    private void initConfig() {    
+
+    private void initConfig() {
         String filename = "config.yml";
         FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);
-        if(ymlThing != null)            
-            configUtil.loadYMLFromJar(ymlThing, filename);
-        
+        if(ymlThing == null)
+            return;
+        configUtil.loadYMLFromJar(ymlThing, filename);
+
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
-        AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);        
+        AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
         AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
         DisableEssentialsSigns = ymlThing.getBoolean("DisableEssentialsSigns", DisableEssentialsSigns);
         AllowUnsafeEnchantments = ymlThing.getBoolean("AllowUnsafeEnchantments", AllowUnsafeEnchantments);
@@ -181,27 +183,27 @@ public class SignShopConfig {
         PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
         EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
-        fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);       
+        fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         Languages = ymlThing.getString("Languages", Languages);
         this.config = ymlThing;
     }
-    
+
     private void setupOperations() {
         Operations = new HashMap<String,List<String>>();
-        
+
         HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
 
-        List<String> tempSignOperationString = new LinkedList();
-        List<String> tempCheckedSignOperation = new LinkedList();
+        List<String> tempSignOperationString = new LinkedList<String>();
+        List<String> tempCheckedSignOperation = new LinkedList<String>();
         Boolean failedOp = false;
-        
+
         for(String sKey : tempSignOperations.keySet()){
-            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));            
-            if(tempSignOperationString.size() > 0) {                
+            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));
+            if(tempSignOperationString.size() > 0) {
                 for(int i = 0; i < tempSignOperationString.size(); i++) {
                     List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
-                    String op = bits.get(0);                    
-                    try {                        
+                    String op = bits.get(0);
+                    try {
                         Class.forName("org.wargamer2010.signshop.operations."+(op.trim()));
                         tempCheckedSignOperation.add(tempSignOperationString.get(i).trim());
                     } catch(ClassNotFoundException notfound) {
@@ -211,22 +213,22 @@ public class SignShopConfig {
                 }
                 if(!failedOp && !tempCheckedSignOperation.isEmpty())
                     Operations.put(sKey.toLowerCase(), tempCheckedSignOperation);
-                tempCheckedSignOperation = new LinkedList();
+                tempCheckedSignOperation = new LinkedList<String>();
                 failedOp = false;
             }
         }
-        
+
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
         aLanguages.remove("config");
-        SignShopConfig.OperationAliases = new HashMap<String,String>();        
-        
+        SignShopConfig.OperationAliases = new HashMap<String,String>();
+
         for(String language : aLanguages) {
-            String filename = (language + ".yml");            
+            String filename = (language + ".yml");
             File languageFile = new File(instance.getDataFolder(), filename);
-            if(languageFile.exists()) {                                
-                FileConfiguration ymlThing = new YamlConfiguration();                                
+            if(languageFile.exists()) {
+                FileConfiguration ymlThing = new YamlConfiguration();
                 try {
-                    ymlThing.load(languageFile);                    
+                    ymlThing.load(languageFile);
                 } catch(FileNotFoundException ex) {
                     continue;
                 } catch(IOException ex) {
@@ -234,32 +236,32 @@ public class SignShopConfig {
                 } catch(InvalidConfigurationException ex) {
                     continue;
                 }
-                HashMap<String,String> tempSignAliases = configUtil.fetchStringStringHashMap("signs", ymlThing);                
+                HashMap<String,String> tempSignAliases = configUtil.fetchStringStringHashMap("signs", ymlThing);
                 for(Map.Entry<String, String> alias : tempSignAliases.entrySet()) {
                     if(Operations.containsKey(alias.getValue().toLowerCase())) {
                         SignShopConfig.OperationAliases.put(alias.getKey().toLowerCase(), alias.getValue().toLowerCase());
                     } else {
                         SignShop.log("Could not find " + alias.getValue() + " to alias as " + alias.getKey(), Level.WARNING);
                     }
-                    
+
                 }
             }
         }
     }
-    
+
     private String opListToString(List<String> operations) {
         return signshopUtil.implode(operations.toArray(new String[operations.size()]), ",");
     }
-    
+
     private void saveConfig() {
         File tempFile = new File(SignShop.getInstance().getDataFolder(), "config.yml");
         try {
             config.save(tempFile);
         } catch(IOException ex) {
-            
+
         }
     }
-    
+
     private String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
         for(Map.Entry<String, String> entry : map.entrySet()) {
             if(entry.getKey().equalsIgnoreCase(lowercased))
@@ -267,15 +269,15 @@ public class SignShopConfig {
         }
         return "";
     }
-    
-    private void fixIncompleOperations() {        
+
+    private void fixIncompleOperations() {
         if(!fixIncompleteOperations)
             return;
         HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config, true);
-        Boolean changedSomething = false;                
+        Boolean changedSomething = false;
         for(Map.Entry<String, List<String>> entry :  Operations.entrySet()) {
             if(SignShopConfig.Commands.containsKey(entry.getKey().toLowerCase())) {
-                Map<SignShopOperation, List> tempMap = signshopUtil.getSignShopOps(entry.getValue());
+                Map<SignShopOperation, List<String>> tempMap = signshopUtil.getSignShopOps(entry.getValue());
                 Boolean found = false;
                 for(SignShopOperation tempOp : tempMap.keySet())
                     if(tempOp instanceof runCommand)
@@ -283,8 +285,8 @@ public class SignShopConfig {
                 if(found)
                     continue;
                 entry.getValue().add("runCommand");
-                String opName = entry.getKey();
-                if((opName = fetchCaseCorrectedKey(tempSignOperations, entry.getKey())).equals(""))
+                String opName = fetchCaseCorrectedKey(tempSignOperations, entry.getKey());
+                if(opName.isEmpty())
                     opName = entry.getKey();
                 config.set(("signs." + opName), opListToString(entry.getValue()));
                 if(!changedSomething)
@@ -295,18 +297,18 @@ public class SignShopConfig {
         if(changedSomething)
             saveConfig();
     }
-    
+
     private void closeStream(Closeable in) {
         if(in == null)
             return;
         try {
             in.close();
         } catch(IOException ex) {
-            
+
         }
     }
-            
-    
+
+
     private void copyFileFromJar(String filename, Boolean delete) {
         InputStream in = getClass().getResourceAsStream("/" + filename);
         File file = new File(instance.getDataFolder(), filename);
@@ -328,24 +330,24 @@ public class SignShopConfig {
             int bytesRead;
             while ((bytesRead = in.read(buffer)) != -1) {
               os.write(buffer, 0, bytesRead);
-            }            
-        } catch(java.io.FileNotFoundException notfoundex) {            
-            
-        } catch(java.io.IOException ioex) {            
-            
-        } catch(NullPointerException nullex) {            
-            
+            }
+        } catch(java.io.FileNotFoundException notfoundex) {
+
+        } catch(java.io.IOException ioex) {
+
+        } catch(NullPointerException nullex) {
+
         }
-        
-        closeStream(in);            
+
+        closeStream(in);
         closeStream(os);
     }
-    
-    public static String getError(String sType, Map<String, String> messageParts) {        
-        Map<String,String> localisedError = Errors.get(SignShopConfig.preferedLanguage);        
+
+    public static String getError(String sType, Map<String, String> messageParts) {
+        Map<String,String> localisedError = Errors.get(SignShopConfig.preferedLanguage);
         Map<String,String> defaultError = Errors.get(SignShopConfig.baseLanguage);
-        
-        String error = "";
+
+        String error;
         if(!localisedError.containsKey(sType) || localisedError.get(sType) == null) {
             if(!defaultError.containsKey(sType) || defaultError.get(sType) == null)
                 return "";
@@ -355,14 +357,15 @@ public class SignShopConfig {
             error = localisedError.get(sType);
         return fillInBlanks(error, messageParts);
     }
-    
-    public static String getMessage(String sType, String sOperation, Map<String, String> messageParts) {
-        Map<String,HashMap<String,String>> localisedMessage = Messages.get(SignShopConfig.preferedLanguage);        
+
+    public static String getMessage(String sType, String pOperation, Map<String, String> messageParts) {
+        Map<String,HashMap<String,String>> localisedMessage = Messages.get(SignShopConfig.preferedLanguage);
         Map<String,HashMap<String,String>> defaultMessage = Messages.get(SignShopConfig.baseLanguage);
-        
+
+        String sOperation = pOperation;
         if(OperationAliases.containsKey(sOperation))
             sOperation = OperationAliases.get(sOperation);
-        
+
         String message = "";
         if(!localisedMessage.containsKey(sType) || !localisedMessage.get(sType).containsKey(sOperation) || localisedMessage.get(sType).get(sOperation) == null) {
             if(!defaultMessage.containsKey(sType) || !defaultMessage.get(sType).containsKey(sOperation) || defaultMessage.get(sType).get(sOperation) == null) {
@@ -371,35 +374,37 @@ public class SignShopConfig {
                 message = defaultMessage.get(sType).get(sOperation);
         } else
             message = localisedMessage.get(sType).get(sOperation);
-        
+
         return fillInBlanks(message, messageParts);
     }
-    
-    public static List<String> getBlocks(String op) {
+
+    public static List<String> getBlocks(String pOp) {
+        String op = pOp;
         if(OperationAliases.containsKey(op))
             op = OperationAliases.get(op);
-        
+
         if(Operations.containsKey(op))
             return Operations.get(op);
         else
             return new LinkedList<String>();
     }
-    
-    public static String fillInBlanks(String message, Map<String, String> messageParts) {
+
+    public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
+        String message = pMessage;
         if(messageParts == null)
             return message;
-        for(Map.Entry<String, String> part : messageParts.entrySet()) {            
+        for(Map.Entry<String, String> part : messageParts.entrySet()) {
             message = message.replace(part.getKey(), part.getValue());
-        }        
+        }
         message = message.replace("\\", "");
         return message;
     }
-    
+
     public static Boolean isItemOnBlacklist(int id, SignShopPlayer player) {
         return (SignShopConfig.BlacklistedItems.contains(id));
     }
-    
-    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks, SignShopArguments ssArgs) {        
+
+    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks, SignShopArguments ssArgs) {
         if(stacks == null)
             return null;
         SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
@@ -412,58 +417,58 @@ public class SignShopConfig {
                 } else
                     return single;
             }
-        return null;        
+        return null;
     }
-            
-    
+
+
     public static int getMaxSellDistance() {
         return MaxSellDistance;
     }
-    
+
     public static int getMaxShopsPerPerson() {
         return MaxShopsPerPerson;
     }
-    
+
     public static Boolean getOPOverride() {
         return OPOverride;
     }
-    
+
     public static Boolean getAllowVariableAmounts() {
         return AllowVariableAmounts;
     }
-    
+
     public static Boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
     }
-    
+
     public static Boolean getAllowUnsafeEnchantments() {
         return AllowUnsafeEnchantments;
     }
-    
+
     public static Boolean getAllowMultiWorldShops() {
         return AllowMultiWorldShops;
     }
-    
+
     public static Boolean getEnablePermits() {
         return EnablePermits;
     }
-    
+
     public static Boolean getPreventVillagerTrade() {
         return PreventVillagerTrade;
     }
-    
+
     public static Boolean getProtectShopsInCreative() {
         return ProtectShopsInCreative;
     }
-    
+
     public static Boolean getEnableSignStacking() {
         return EnableSignStacking;
     }
-    
+
     public static Boolean getTransactionLog() {
         return TransactionLog;
     }
-    
+
     public static Boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
     }
