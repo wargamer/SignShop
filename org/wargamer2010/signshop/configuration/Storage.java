@@ -82,13 +82,15 @@ public class Storage {
 
     private Boolean Load() {
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
-        if(sellersection == null) {
-            SignShop.log("Sellers is empty!", Level.INFO);
+        if(sellersection == null)
             return false;
-        }
+
         Map<String,HashMap<String,List>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
-        if(tempSellers == null || tempSellers.isEmpty()){
+        if(tempSellers == null) {
             return legacyLoad();
+        }
+        if (tempSellers.isEmpty()) {
+            return false;
         }
 
         Boolean needSave = false;

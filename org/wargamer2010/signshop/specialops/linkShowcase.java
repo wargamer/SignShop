@@ -30,7 +30,7 @@ public class linkShowcase implements SignShopSpecialOp {
             return false;
         if(!itemUtil.clickedSign(shopSign))
             return false;
-        
+
         Block bStep = null;
         for(Block bTemp : clickedBlocks) {
             if(bTemp.getType() == Material.getMaterial("STEP"))
@@ -38,23 +38,23 @@ public class linkShowcase implements SignShopSpecialOp {
         }
         if(bStep == null)
             return false;
-        
-        ItemStack showcasing = null;        
+
+        ItemStack showcasing = null;
         if(seller.getItems() == null || seller.getItems().length == 0 || seller.getItems()[0] == null) {
             ssPlayer.sendMessage(SignShopConfig.getError(("chest_empty"), null));
             return false;
         }
         showcasing = seller.getItems()[0];
-        
+
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
             return false;
         ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
-        com.kellerkindt.scs.internals.Storage storage = new com.kellerkindt.scs.internals.Storage(1, Integer.toString(bStep.hashCode()));        
+        com.kellerkindt.scs.internals.Storage storage = new com.kellerkindt.scs.internals.Storage(1, Integer.toString(bStep.hashCode()));
         if(storage == null) {
             SignShop.log("Invalid version of ShowCaseStandalone detected, please get the latest!", Level.WARNING);
             return true;
         }
-        
+
         com.kellerkindt.scs.shops.Shop p = new com.kellerkindt.scs.shops.DisplayShop(scs, storage);
         p.setItemStack(showcasing);
         p.setLocation(bStep.getLocation());
@@ -62,6 +62,7 @@ public class linkShowcase implements SignShopSpecialOp {
         scs.getShopHandler().addShop(p);
         scs.getShopHandler().showAll();
         seller.getMisc().put("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
+        SignShop.log("Showcase has been successfully created.", Level.WARNING);
         return true;
     }
 }

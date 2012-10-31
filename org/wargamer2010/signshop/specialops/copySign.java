@@ -106,7 +106,7 @@ public class copySign implements SignShopSpecialOp {
 
         itemUtil.setSignStatus(shopSign, ChatColor.DARK_BLUE);
 
-        ssPlayer.sendMessage("The sign has been succesfully updated.");
+        ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", null));
         return true;
     }
 

@@ -32,9 +32,9 @@ public class changeOwner implements SignShopSpecialOp {
                 break;
             }
         }
-        if(sNewOwner.equals(""))
+        if(sNewOwner.isEmpty())
             return false;
-        
+
         seller.setOwner(sNewOwner);
         SignShop.Storage.SafeSave();
         ssPlayer.sendMessage("Succesfully changed ownership of shop to " + sNewOwner);

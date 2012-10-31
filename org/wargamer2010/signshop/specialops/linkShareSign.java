@@ -27,13 +27,13 @@ public class linkShareSign implements SignShopSpecialOp {
             return false;
         if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;
-        
-        List<Block> shareSigns = new LinkedList();
-        
+
+        List<Block> shareSigns = new LinkedList<Block>();
+
         List<Block> currentSigns = signshopUtil.getSignsFromMisc(seller, "sharesigns");
         Boolean bUnlinked = false;
         for(Block bTemp : clickedBlocks) {
-            if(currentSigns.contains(bTemp)) {                
+            if(currentSigns.contains(bTemp)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("unlinked_share_sign", null));
                 bUnlinked = true;
                 currentSigns.remove(bTemp);
@@ -43,15 +43,15 @@ public class linkShareSign implements SignShopSpecialOp {
                     shareSigns.add(bTemp);
             }
         }
-        
+
         if((bUnlinked && shareSigns.isEmpty()) || !shareSigns.isEmpty()) {
             if(!seller.getOwner().equals(player.getName()) && !player.isOp()) {
                 ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_link_sharesigns", null));
                 return true;
             }
         }
-        
-        
+
+
         if(!bUnlinked && shareSigns.isEmpty())
             return false;
         else if(shareSigns.isEmpty()) {
@@ -60,16 +60,16 @@ public class linkShareSign implements SignShopSpecialOp {
             return true;
         }
         shareSigns.addAll(currentSigns);
-        
-        String locations = "";
-        if((locations = signshopUtil.validateShareSign(shareSigns, ssPlayer)).equals(""))
+
+        String locations = signshopUtil.validateShareSign(shareSigns, ssPlayer);
+        if(locations.isEmpty())
             return true;
         else {
             ssPlayer.sendMessage(SignShopConfig.getError("linked_share_sign", null));
             seller.getMisc().put("sharesigns", locations);
             SignShop.Storage.SafeSave();
         }
-        
+
         return true;
     }
 }
