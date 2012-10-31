@@ -34,28 +34,28 @@ public class configUtil {
         }
         return tempHasinHash;
     }
-    
+
     static HashMap<String,HashMap<String,Float>> fetchFloatHasmapInHashmap(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,Float>> tempHasinHash = new HashMap<String,HashMap<String,Float>>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempHasinHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
-            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {                
+            for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 MemorySection memsec = (MemorySection)entry.getValue();
                 HashMap<String,Float> tempmap = new HashMap<String, Float>();
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
                     tempmap.put(subentry.getKey().toLowerCase(), ((Double)subentry.getValue()).floatValue());
                 tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
-        } catch(ClassCastException ex) {            
+        } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
         return tempHasinHash;
     }
-    
+
     static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
-        HashMap<String,List> tempListinHash = new HashMap<String,List>();        
+        HashMap<String,List> tempListinHash = new HashMap<String,List>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempListinHash;
@@ -63,7 +63,7 @@ public class configUtil {
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 try {
                     tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
-                } catch(ClassCastException ex) {                    
+                } catch(ClassCastException ex) {
                     List<String> temp = new LinkedList<String>();
                     temp.add((String)entry.getValue());
                     tempListinHash.put(entry.getKey().toLowerCase(), temp);
@@ -74,7 +74,7 @@ public class configUtil {
         }
         return tempListinHash;
     }
-    
+
     static Map<String,HashMap<String,List>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,List>> tempStringHashMap = new HashMap<String,HashMap<String,List>>();
         try {
@@ -93,18 +93,18 @@ public class configUtil {
                         tempmap.put(subentry.getKey().toLowerCase(), temp);
                     }
                 }
-                tempStringHashMap.put(entry.getKey(), tempmap);                
+                tempStringHashMap.put(entry.getKey(), tempmap);
             }
         } catch(ClassCastException ex) {
-            
+            return null;
         }
         return tempStringHashMap;
     }
-    
+
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
         return fetchStringStringHashMap(path, config, false);
     }
-    
+
     static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config, Boolean caseSensitive) {
         HashMap<String,String> tempStringStringHash = new HashMap<String,String>();
         try {
@@ -122,7 +122,7 @@ public class configUtil {
         }
         return tempStringStringHash;
     }
-    
+
     static HashMap<String, Integer> fetchStringIntegerHashMap(String path, FileConfiguration config) {
         HashMap<String,Integer> tempStringIntegerHash = new HashMap<String,Integer>();
         try {
@@ -136,11 +136,11 @@ public class configUtil {
         }
         return tempStringIntegerHash;
     }
-    
+
     static FileConfiguration loadYMLFromPluginFolder(String filename) {
         File configFile = new File(SignShop.getInstance().getDataFolder(), filename);
         FileConfiguration ymlThing = new YamlConfiguration();
-        
+
         try {
             ymlThing.load(configFile);
             return ymlThing;
@@ -149,21 +149,21 @@ public class configUtil {
         } catch(IOException ex) {
             SignShop.log(filename + " could not be loaded. Configuration could not be loaded.", Level.WARNING);
         } catch(InvalidConfigurationException ex) {
-            SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);            
-        }        
+            SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);
+        }
         return null;
     }
-    
+
     static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {
         File configFile = new File(SignShop.getInstance().getDataFolder(), filenameInJar);
         FileConfiguration thingInJar = new YamlConfiguration();
         try {
-            InputStream in = SignShop.class.getResourceAsStream("/" + filenameInJar);            
+            InputStream in = SignShop.class.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
-                thingInJar.load(in);                        
+                thingInJar.load(in);
                 ymlInPluginFolder.options().copyDefaults(true);
                 ymlInPluginFolder.options().copyHeader(true);
-                ymlInPluginFolder.setDefaults(thingInJar);                  
+                ymlInPluginFolder.setDefaults(thingInJar);
                 ymlInPluginFolder.save(configFile);
                 in.close();
             }
@@ -173,5 +173,5 @@ public class configUtil {
         catch(InvalidConfigurationException ex) { }
         return null;
     }
-    
+
 }

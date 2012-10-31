@@ -46,6 +46,9 @@ public class SignShopPlayerListener implements Listener {
         if(!specialops.isEmpty()) {
             for(SignShopSpecialOp special : specialops) {
                 ranSomething = (special.runOperation(clickedBlocks, event) ? true : ranSomething);
+                if (ranSomething) {
+                    break;
+                }
             }
             if(ranSomething)
                 clicks.removePlayerFromClickmap(player);
@@ -271,14 +274,15 @@ public class SignShopPlayerListener implements Listener {
                 if(!bRunOK)
                     return;
             }
-
+            if (!bRunOK)
+                return;
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 // Seems to still be needed. TODO: Find a proper way to update the player inventory
                 player.updateInventory();
             }
 
-            List<String> chests = new LinkedList();
+            List<String> chests = new LinkedList<String>();
             for(Map.Entry<String, String> entry : ssArgs.messageParts.entrySet())
                 if(entry.getKey().contains("chest"))
                     chests.add(entry.getValue());

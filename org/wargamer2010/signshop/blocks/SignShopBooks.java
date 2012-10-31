@@ -28,22 +28,22 @@ public class SignShopBooks {
     private static char pageSeperator = (char)3;
     private static String filename = "books.db";
     private static final String downloadURL = "http://cloud.github.com/downloads/wargamer/SignShop/";
-    
+
     public void init() {
         File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
         Boolean initDB = false;
         if(!DBFile.exists())
             initDB = true;
         loadLib();
-        
-        if(initDB) {            
+
+        if(initDB) {
             newConn();
-            runStatement("CREATE TABLE Book ( BookID INT AUTO_INCREMENT NOT NULL, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);            
+            runStatement("CREATE TABLE Book ( BookID INT AUTO_INCREMENT NOT NULL, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);
             closeConn();
         }
     }
-    
-    public void loadLib() {        
+
+    public void loadLib() {
         try {
             File libLocation = new File(SignShop.getInstance().getDataFolder(), ("lib" + File.separator + "sqlite.jar"));
             if(!libLocation.exists())
@@ -52,29 +52,29 @@ public class SignShopBooks {
             String className = "org.sqlite.JDBC";
             driver = (Driver) classLoader.loadClass(className).newInstance();
         } catch(MalformedURLException ex) {
-            ex.printStackTrace();
+
         } catch(ClassNotFoundException ex) {
-            ex.printStackTrace();
+
         } catch(InstantiationException ex) {
-            ex.printStackTrace();
+
         } catch(IllegalAccessException ex) {
-            ex.printStackTrace();
-        }        
+
+        }
     }
-    
+
     private void getDriver(File destination) {
         try {
             if (destination.exists())
                 destination.delete();
-            
+
             if(!destination.getParentFile().exists())
                 destination.getParentFile().mkdirs();
-            
+
             destination.createNewFile();
 
             OutputStream outputStream = new FileOutputStream(destination);
 
-            String sURL = (downloadURL + destination.getName());            
+            String sURL = (downloadURL + destination.getName());
             URL url = new URL(sURL);
             URLConnection connection = url.openConnection();
 
@@ -108,30 +108,29 @@ public class SignShopBooks {
             outputStream.close();
             inputStream.close();
         } catch (IOException e) {
-            e.printStackTrace();
-            return;
+
         }
     }
-        
-    private static void newConn() {        
+
+    private static void newConn() {
         try {
             if(driver == null)
                 return;
             File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
             conn = driver.connect("jdbc:sqlite:" + DBFile.getPath(), new Properties());
-        } catch(SQLException ex) {  
-            ex.printStackTrace();
+        } catch(SQLException ex) {
+
         }
     }
-    
+
     private static void closeConn() {
         try {
             conn.close();
         } catch(SQLException ex) { }
     }
-    
-    private static Object runStatement(String Query, Map<Integer, Object> params, Boolean expectingResult) {        
-        newConn();        
+
+    private static Object runStatement(String Query, Map<Integer, Object> params, Boolean expectingResult) {
+        newConn();
         try {
             PreparedStatement st = conn.prepareStatement(Query, PreparedStatement.RETURN_GENERATED_KEYS);
             if(params != null && !params.isEmpty()) {
@@ -142,8 +141,8 @@ public class SignShopBooks {
                         st.setString(param.getKey(), ((String)param.getValue()));
                     }
                 }
-            }            
-            if(expectingResult) {     
+            }
+            if(expectingResult) {
                 return st.executeQuery();
             } else {
                 int result = st.executeUpdate();
@@ -154,17 +153,15 @@ public class SignShopBooks {
                     try {
                         return genKeys.getInt("last_insert_rowid()");
                     } catch(SQLException ex) {
-                        ex.printStackTrace();
                         return result;
                     }
                 }
             }
         } catch(SQLException ex) {
-            ex.printStackTrace();
             return null;
-        }        
+        }
     }
-    
+
     public static int addBook(ItemStack bookStack) {
         BookItem item = new BookItem(bookStack);
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
@@ -179,7 +176,7 @@ public class SignShopBooks {
         }
         return ID;
     }
-    
+
     public static void removeBook(Integer id) {
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
         pars.put(1, id);
@@ -189,18 +186,18 @@ public class SignShopBooks {
             closeConn();
         }
     }
-    
+
     public static void addBooksProps(ItemStack bookStack, Integer id) {
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
         pars.put(1, id);
         ResultSet set = (ResultSet)runStatement("SELECT * FROM Book WHERE BookID = ?", pars, true);
-        try {            
+        try {
             BookItem item = new BookItem(bookStack);
             item.setAuthor(set.getString("Author"));
             item.setTitle(set.getString("Title"));
             item.setPages(set.getString("Pages").split(String.valueOf(pageSeperator)));
         } catch(SQLException ex) {
-            ex.printStackTrace();
+
         } finally {
             closeConn();
         }

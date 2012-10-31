@@ -17,7 +17,7 @@ public class convertChestshop implements SignShopSpecialOp {
         Block sign = event.getClickedBlock();
         if(!itemUtil.clickedSign(sign))
             return false;
-        
+
         Block emptySign = null;
         for(Block tempBlock : clickedBlocks) {
             if(this.emptySign(tempBlock)) {
@@ -25,17 +25,17 @@ public class convertChestshop implements SignShopSpecialOp {
                 break;
             }
         }
-        
+
         Sign signblock = ((Sign)sign.getState());
-        String[] sLines = signblock.getLines();        
-        Integer iPrice = -1;        
+        String[] sLines = signblock.getLines();
+        Integer iPrice = -1;
         String sAmount = sLines[1];
         String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
         if(!player.isOp())
-            return false; 
+            return false;
         if(Material.getMaterial(sMaterial) == null)
             return false;
-        
+
         Sign emptyBlock = null;
         if(emptySign != null)
             emptyBlock = ((Sign)emptySign.getState());
@@ -53,7 +53,7 @@ public class convertChestshop implements SignShopSpecialOp {
                 iPrice = Math.round(economyUtil.parsePrice(bits[1]));
             else
                 return false;
-            
+
             emptyBlock.setLine(0, "[Sell]");
             emptyBlock.setLine(1, (sAmount + " of"));
             emptyBlock.setLine(2, sLines[3]);
@@ -65,37 +65,37 @@ public class convertChestshop implements SignShopSpecialOp {
             else if(bits[1].contains("B"))
                 iPrice = Math.round(economyUtil.parsePrice(bits[1]));
             else
-                return false;            
+                return false;
             signblock.setLine(0, "[Buy]");
-        } else if(sLines[2].contains("B")) {            
+        } else if(sLines[2].contains("B")) {
             iPrice = Math.round(economyUtil.parsePrice(sLines[2]));
             if(iPrice == 0.0f)
                 return false;
             signblock.setLine(0, "[Buy]");
-        } else if(sLines[2].contains("S")) {            
+        } else if(sLines[2].contains("S")) {
             iPrice = Math.round(economyUtil.parsePrice(sLines[2]));
             if(iPrice == 0.0f)
                 return false;
             signblock.setLine(0, "[Sell]");
-        } else 
+        } else
             return false;
-        
+
         signblock.setLine(1, (sAmount + " of"));
         signblock.setLine(2, sLines[3]);
         signblock.setLine(3, Integer.toString(iPrice));
         signblock.update();
-        
+
         ssPlayer.sendMessage("ChestShop sign detected and successfully converted!");
-                        
+
         return true;
     }
-    
+
     private Boolean emptySign(Block sign) {
         if(!itemUtil.clickedSign(sign))
             return false;
         String[] sLines = ((Sign) sign.getState()).getLines();
         for(int i = 0; i < 4; i++)
-            if(!sLines[i].equals(""))
+            if(!sLines[i].isEmpty())
                 return false;
         return true;
     }
