@@ -45,10 +45,10 @@ signs:
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
   iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
-  TpToOwner: takePlayerMoney,playerIsOp
+  TpToOwner: takePlayerMoney,playerIsOp,runCommand
   Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
-  Command: takePlayerMoney, playerIsOp
+  Command: takePlayerMoney, playerIsOp,runCommand
   Share: ShareSign
   Restricted: RestrictedSign
   Jukebox: playJukebox,takePlayerMoney

@@ -15,7 +15,7 @@ import org.wargamer2010.signshop.util.*;
 
 public class linkRestrictedSign implements SignShopSpecialOp {
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
@@ -27,13 +27,13 @@ public class linkRestrictedSign implements SignShopSpecialOp {
             return false;
         if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;
-        
+
         List<Block> restrictedSigns = new LinkedList();
-        
+
         List<Block> currentSigns = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
         Boolean bUnlinked = false;
         for(Block bTemp : clickedBlocks) {
-            if(currentSigns.contains(bTemp)) {                
+            if(currentSigns.contains(bTemp)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("unlinked_restricted_sign", null));
                 bUnlinked = true;
                 currentSigns.remove(bTemp);
@@ -43,15 +43,15 @@ public class linkRestrictedSign implements SignShopSpecialOp {
                     restrictedSigns.add(bTemp);
             }
         }
-        
+
         if((bUnlinked && restrictedSigns.isEmpty()) || !restrictedSigns.isEmpty()) {
             if(!seller.getOwner().equals(player.getName()) && !player.isOp()) {
                 ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_link_restrictedsigns", null));
                 return true;
             }
         }
-        
-        
+
+
         if(!bUnlinked && restrictedSigns.isEmpty())
             return false;
         else if(restrictedSigns.isEmpty()) {
@@ -60,7 +60,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
             return true;
         }
         restrictedSigns.addAll(currentSigns);
-        
+
         String locations = "";
         if((locations = signshopUtil.validateRestrictSign(restrictedSigns, ssPlayer)).equals(""))
             return true;
@@ -69,7 +69,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
             seller.getMisc().put("restrictedsigns", locations);
             SignShop.Storage.SafeSave();
         }
-        
+
         return true;
     }
 }
