@@ -97,7 +97,6 @@ public class SignShop extends JavaPlugin{
         if(!this.getDataFolder().exists()) {
             this.getDataFolder().mkdir();
         }
-        fixStackSize();
         itemUtil.initDiscs();
         clicks.init();
         instance = this;
@@ -110,6 +109,7 @@ public class SignShop extends JavaPlugin{
         SignShopConfig = new SignShopConfig();
         SignShopConfig.init();
         BookStore.init();
+        fixStackSize();
 
         //Create a storage locker for shops
         SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
@@ -167,7 +167,7 @@ public class SignShop extends JavaPlugin{
             PluginDescriptionFile pdfFile = this.getDescription();
             String message = "Amount of Shops: " + Storage.shopCount() + "\n"
                     + "SignShop version: " + pdfFile.getVersion() + "\n"
-                    + "Vault version: " + vault.getVersion() + "\n"
+                    + "Vault version: " + (vault == null ? "Unknown" : vault.getVersion()) + "\n"
                     + "SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "") + "\n"
                     + "SignShop Home: http://tiny.cc/signshop" + "\n";
             if((sender instanceof Player))

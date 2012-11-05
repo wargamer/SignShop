@@ -40,7 +40,9 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
     }
 
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
+        if(ranSomething)
+            return false;
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block bClicked = event.getClickedBlock();
@@ -63,6 +65,8 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         List<Block> activatables = new LinkedList<Block>();
         Boolean wentOK = signshopUtil.getSignshopBlocksFromList(ssPlayer, containables, activatables, event.getClickedBlock());
         if (!wentOK)
+            return false;
+        if(containables.isEmpty() && activatables.isEmpty())
             return false;
 
         Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);

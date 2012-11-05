@@ -45,7 +45,7 @@ public class SignShopPlayerListener implements Listener {
             clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
         if(!specialops.isEmpty()) {
             for(SignShopSpecialOp special : specialops) {
-                ranSomething = (special.runOperation(clickedBlocks, event) ? true : ranSomething);
+                ranSomething = (special.runOperation(clickedBlocks, event, ranSomething) ? true : ranSomething);
                 if (ranSomething) {
                     break;
                 }

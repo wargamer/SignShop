@@ -11,7 +11,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class convertChestshop implements SignShopSpecialOp {
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block sign = event.getClickedBlock();

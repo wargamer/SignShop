@@ -16,6 +16,10 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.wargamer2010.signshop.SignShop;
 
 public class configUtil {
+    private configUtil() {
+
+    }
+
     static HashMap<String,HashMap<String,String>> fetchHasmapInHashmap(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,String>> tempHasinHash = new HashMap<String,HashMap<String,String>>();
         try {
@@ -140,6 +144,8 @@ public class configUtil {
     static FileConfiguration loadYMLFromPluginFolder(String filename) {
         File configFile = new File(SignShop.getInstance().getDataFolder(), filename);
         FileConfiguration ymlThing = new YamlConfiguration();
+        if(!configFile.exists())
+            return ymlThing;
 
         try {
             ymlThing.load(configFile);
@@ -151,7 +157,7 @@ public class configUtil {
         } catch(InvalidConfigurationException ex) {
             SignShop.log(filename + " is invalid YML. Configuration could not be loaded. Message: " + ex.getMessage(), Level.WARNING);
         }
-        return null;
+        return ymlThing;
     }
 
     static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {

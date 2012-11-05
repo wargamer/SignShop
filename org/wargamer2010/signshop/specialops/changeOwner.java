@@ -12,7 +12,7 @@ import org.wargamer2010.signshop.util.*;
 
 public class changeOwner implements SignShopSpecialOp {
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();

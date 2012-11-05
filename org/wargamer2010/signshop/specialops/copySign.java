@@ -17,7 +17,7 @@ import org.wargamer2010.signshop.operations.*;
 
 public class copySign implements SignShopSpecialOp {
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         Block shopSign = event.getClickedBlock();
         if(!itemUtil.clickedSign(shopSign))

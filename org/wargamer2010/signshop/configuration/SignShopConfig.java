@@ -120,7 +120,6 @@ public class SignShopConfig {
         setupHooks();
         setupSpecialsOps();
         setupLinkables();
-        initConfig();
     }
 
     private void setupHooks() {

@@ -19,7 +19,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class linkShowcase implements SignShopSpecialOp {
     @Override
-    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event) {
+    public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
@@ -62,7 +62,7 @@ public class linkShowcase implements SignShopSpecialOp {
         scs.getShopHandler().addShop(p);
         scs.getShopHandler().showAll();
         seller.getMisc().put("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
-        SignShop.log("Showcase has been successfully created.", Level.WARNING);
+        ssPlayer.sendMessage("Showcase has been successfully created.");
         return true;
     }
 }
