@@ -67,7 +67,7 @@ public class SignShopServerListener implements Listener {
                 essConflictFound = false;
                 for(EssentialsSign sign : this.ess.getSettings().enabledSigns()) {
                     String essShopName = signshopUtil.getOperation(sign.getTemplateName());
-                    if(essShopName.equals(""))
+                    if(essShopName.isEmpty())
                         continue;
                     essShopName = ChatColor.stripColor(essShopName).toLowerCase();
                     if(!SignShopConfig.getBlocks(essShopName).isEmpty()) {

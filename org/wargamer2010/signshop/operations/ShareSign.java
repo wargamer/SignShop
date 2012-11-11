@@ -18,7 +18,7 @@ public class ShareSign implements SignShopOperation {
             for(Block bTemp : shops) {                
                 Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
                 if(seller != null && seller.getMisc().containsKey("sharesigns")) {
-                    if(signshopUtil.validateShareSign(signshopUtil.getSignsFromMisc(seller, "sharesigns"), ssArgs.get_ssPlayer()).equals(""))            
+                    if(signshopUtil.validateShareSign(signshopUtil.getSignsFromMisc(seller, "sharesigns"), ssArgs.get_ssPlayer()).isEmpty())            
                         return false;        
                 }
             }

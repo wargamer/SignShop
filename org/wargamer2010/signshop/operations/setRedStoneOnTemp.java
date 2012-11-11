@@ -51,7 +51,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
         Block bLever = null;
 
         Integer delay = 20;
-        if(!ssArgs.getFirstOperationParameter().equals("")) {
+        if(!ssArgs.getFirstOperationParameter().isEmpty()) {
             try {
                 delay = Integer.parseInt(ssArgs.getFirstOperationParameter());
                 if(delay <= 0)

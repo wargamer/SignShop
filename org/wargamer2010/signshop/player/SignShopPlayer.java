@@ -44,7 +44,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().equals("") || ssPlayer == null)
+        if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
             return;
         ssPlayer.sendMessage(ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
     }
@@ -62,7 +62,7 @@ public class SignShopPlayer {
     }
     
     public void setOp(Boolean OP) {
-        if(sPlayername.equals(""))
+        if(sPlayername.isEmpty())
             return;
         if(ssPlayer == null)            
             Bukkit.getOfflinePlayer(sPlayername).setOp(OP);
@@ -71,7 +71,7 @@ public class SignShopPlayer {
     }
     
     public Boolean isOp() {
-        if(sPlayername.equals(""))
+        if(sPlayername.isEmpty())
             return false;
         if(ssPlayer == null)            
             return Bukkit.getOfflinePlayer(sPlayername).isOp();
@@ -88,7 +88,7 @@ public class SignShopPlayer {
     public Boolean hasPerm(String perm, World world, Boolean OPOperation) {
         if(Vault.permission == null)
             return false;
-        if(sPlayername.equals(""))
+        if(sPlayername.isEmpty())
             return true;
         Boolean isOP = isOp();
         Boolean OPOverride = SignShopConfig.getOPOverride();
@@ -117,7 +117,7 @@ public class SignShopPlayer {
     public Boolean hasMoney(float amount) {        
         if(Vault.economy == null)
             return false;
-        if(sPlayername.equals(""))
+        if(sPlayername.isEmpty())
             return true;
         else
             return Vault.economy.has(sPlayername, amount);
@@ -126,7 +126,7 @@ public class SignShopPlayer {
     public Boolean mutateMoney(float amount) {
         if(Vault.economy == null)
             return false;
-        if(sPlayername.equals(""))
+        if(sPlayername.isEmpty())
             return true;
         EconomyResponse response;
         if(amount > 0.0)
@@ -191,7 +191,7 @@ public class SignShopPlayer {
     }
     
     public int reachedMaxShops() {        
-        if(Vault.permission == null || sPlayername.equals(""))
+        if(Vault.permission == null || sPlayername.isEmpty())
             return 0;
         if(hasPerm("SignShop.ignoremax", true))
             return 0;

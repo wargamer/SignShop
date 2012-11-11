@@ -113,7 +113,7 @@ public class BookItem {
             if (tags == null) {
                 tags = item.tag = new NBTTagCompound();
             }
-            if(author != null && !author.equals("")) {
+            if(author != null && !author.isEmpty()) {
                     tags.setString("author", author);
             }
         }
@@ -123,7 +123,7 @@ public class BookItem {
             if (tags == null) {
                 tags = item.tag = new NBTTagCompound();
             }
-            if(title != null && !title.equals("")) {
+            if(title != null && !title.isEmpty()) {
                     tags.setString("title", title);
             }
         }

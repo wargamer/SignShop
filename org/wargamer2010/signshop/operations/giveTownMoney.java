@@ -43,7 +43,7 @@ public class giveTownMoney implements SignShopOperation {
                 if (Vault.economy == null) {
                     ssPlayer.sendMessage("Error with the economy, tell the System Administrator to install Vault properly.");
                     return false;
-                } else if (town.getEconomyName().equals("")) {
+                } else if (town.getEconomyName().isEmpty()) {
                     ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
                     return false;
                 }
