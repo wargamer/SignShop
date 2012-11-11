@@ -75,12 +75,12 @@ public class SignShopArguments {
     public void set_bSign(Block pbSign) { special.activate(this); special.props.bSign = pbSign; }
     
     private String sOperation = "";
-    public String get_sOperation() { return (special.bActive && !special.props.sOperation.equals("") ? special.props.sOperation : sOperation); } 
+    public String get_sOperation() { return (special.bActive && !special.props.sOperation.isEmpty() ? special.props.sOperation : sOperation); } 
     public String get_sOperation_root() { return sOperation; } 
     public void set_sOperation(String psOperation) { special.activate(this); special.props.sOperation = psOperation; }
     
     private String sEnchantments = "";
-    public String get_sEnchantments() { return (special.bActive && !special.props.sEnchantments.equals("") ? special.props.sEnchantments : sEnchantments); } 
+    public String get_sEnchantments() { return (special.bActive && !special.props.sEnchantments.isEmpty() ? special.props.sEnchantments : sEnchantments); } 
     public String get_sEnchantments_root() { return sEnchantments; } 
     public void set_sEnchantments(String psEnchantments) { special.activate(this); special.props.sEnchantments = psEnchantments; }
     

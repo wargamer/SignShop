@@ -62,7 +62,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         restrictedSigns.addAll(currentSigns);
 
         String locations = "";
-        if((locations = signshopUtil.validateRestrictSign(restrictedSigns, ssPlayer)).equals(""))
+        if((locations = signshopUtil.validateRestrictSign(restrictedSigns, ssPlayer)).isEmpty())
             return true;
         else {
             ssPlayer.sendMessage(SignShopConfig.getError("linked_restricted_sign", null));

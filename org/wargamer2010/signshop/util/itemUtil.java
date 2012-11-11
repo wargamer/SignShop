@@ -144,7 +144,7 @@ public class itemUtil {
         if(data instanceof SimpleAttachableMaterialData)
             return stringFormat(data.getItemType().name());
 
-        if(!(sData = lookupDisc(data.getItemTypeId())).equals(""))
+        if(!(sData = lookupDisc(data.getItemTypeId())).isEmpty())
             return sData;
         else
             sData = data.toString().toLowerCase();
