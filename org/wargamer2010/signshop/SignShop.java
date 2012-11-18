@@ -19,8 +19,10 @@ import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.bergerkiller.bukkit.common.SafeField;
+import org.bukkit.event.Event;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.metrics.setupMetrics;
 
@@ -34,12 +36,12 @@ public class SignShop extends JavaPlugin{
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
 
     //Statics
-    public static Storage Storage;
+    private static Storage store;
     private static SignShopConfig SignShopConfig;
-    public static SignShopBooks BookStore = new SignShopBooks();
+    private static SignShopBooks BookStore = new SignShopBooks();
 
     //Permissions
-    public static boolean USE_PERMISSIONS = false;
+    private static boolean USE_PERMISSIONS = false;
 
     // Vault
     private Vault vault = null;
@@ -112,7 +114,7 @@ public class SignShop extends JavaPlugin{
         fixStackSize();
 
         //Create a storage locker for shops
-        SignShop.Storage = new Storage(new File(this.getDataFolder(),"sellers.yml"));
+        store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
 
         try {
             FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
@@ -140,6 +142,7 @@ public class SignShop extends JavaPlugin{
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
             }
+            registerSSListeners();
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         } else {
             log("v" + pdfFile.getVersion() + " Disabled", Level.INFO);
@@ -165,7 +168,7 @@ public class SignShop extends JavaPlugin{
                 ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
         } else if(args[0].equalsIgnoreCase("stats") || args[0].equalsIgnoreCase("version") || args[0].equalsIgnoreCase("help")) {
             PluginDescriptionFile pdfFile = this.getDescription();
-            String message = "Amount of Shops: " + Storage.shopCount() + "\n"
+            String message = "Amount of Shops: " + store.shopCount() + "\n"
                     + "SignShop version: " + pdfFile.getVersion() + "\n"
                     + "Vault version: " + (vault == null ? "Unknown" : vault.getVersion()) + "\n"
                     + "SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "") + "\n"
@@ -184,6 +187,10 @@ public class SignShop extends JavaPlugin{
         return instance;
     }
 
+    public static void scheduleEvent(Event event) {
+        SignShop.getInstance().getServer().getPluginManager().callEvent(event);
+    }
+
     public static String getLogPrefix() {
         PluginDescriptionFile pdfFile = SignShop.getInstance().getDescription();
         String prefix = ChatColor.GOLD + "[SignShop] [" +pdfFile.getVersion() +"]" + ChatColor.RED;
@@ -199,7 +206,7 @@ public class SignShop extends JavaPlugin{
     @Override
     public void onDisable() {
         closeHandlers();
-        Storage.SafeSave();
+        store.SafeSave();
         log("Disabled", Level.INFO);
     }
 
@@ -217,9 +224,25 @@ public class SignShop extends JavaPlugin{
             log("Could not hook into Vault's Economy!", Level.WARNING);
     }
 
+    private void registerSSListeners() {
+        PluginManager pm = getServer().getPluginManager();
+        pm.registerEvents(new SimpleBlacklister(), this);
+        pm.registerEvents(new SimpleMessenger(), this);
+        pm.registerEvents(new SimpleRestricter(), this);
+        pm.registerEvents(new SimpleShopLimiter(), this);
+        pm.registerEvents(new PermissionChecker(), this);
+        pm.registerEvents(new PermitChecker(), this);
+        pm.registerEvents(new ShopUpdater(), this);
+    }
+
     public static Logger getMainLogger() {
         return logger;
     }
+
+    public static boolean usePermissions() {
+        return USE_PERMISSIONS;
+    }
+
 
     private class TransferFormatter extends Formatter {
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");

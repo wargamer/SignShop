@@ -11,25 +11,26 @@ import org.wargamer2010.signshop.util.itemUtil;
 
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 
 public class SignShopPlayer {
     Player ssPlayer = null;
     String sPlayername = "";
-    
-    public SignShopPlayer() {        
+
+    public SignShopPlayer() {
     }
-    
+
     public SignShopPlayer(String sName) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
 
         for(Player pPlayer : players){
             if(pPlayer.getName().equals(sName)){
-                ssPlayer = pPlayer;                                
+                ssPlayer = pPlayer;
             }
         }
         sPlayername = sName;
     }
-    
+
     public SignShopPlayer(Player pPlayer) {
         ssPlayer = pPlayer;
         if(ssPlayer != null)
@@ -48,38 +49,38 @@ public class SignShopPlayer {
             return;
         ssPlayer.sendMessage(ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
     }
-    
+
     public String getName() {
         return sPlayername;
     }
-    
+
     public Player getPlayer() {
         return ssPlayer;
     }
-    
+
     public World getWorld() {
         return (ssPlayer == null) ? null : ssPlayer.getWorld();
     }
-    
+
     public void setOp(Boolean OP) {
         if(sPlayername.isEmpty())
             return;
-        if(ssPlayer == null)            
+        if(ssPlayer == null)
             Bukkit.getOfflinePlayer(sPlayername).setOp(OP);
         else
             ssPlayer.setOp(OP);
     }
-    
+
     public Boolean isOp() {
         if(sPlayername.isEmpty())
             return false;
-        if(ssPlayer == null)            
+        if(ssPlayer == null)
             return Bukkit.getOfflinePlayer(sPlayername).isOp();
         else
             return ssPlayer.isOp();
     }
-    
-    public Boolean hasPerm(String perm, Boolean OPOperation) { 
+
+    public Boolean hasPerm(String perm, Boolean OPOperation) {
         if(ssPlayer == null)
             return false;
         return this.hasPerm(perm, ssPlayer.getWorld(), OPOperation);
@@ -94,27 +95,27 @@ public class SignShopPlayer {
         Boolean OPOverride = SignShopConfig.getOPOverride();
         // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
-        if(SignShop.USE_PERMISSIONS && isOP && !OPOverride)
+        if(SignShop.usePermissions() && isOP && !OPOverride)
             setOp(false);
         // If we're using Permissions, OPOverride is enabled and the Player has OP, he can do everything
-        if(SignShop.USE_PERMISSIONS && OPOverride && isOP)
+        if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
         // Using Permissions so check his permissions and restore his OP if he has it
-        else if(SignShop.USE_PERMISSIONS && Vault.permission.playerHas(world, sPlayername, perm)) {
+        else if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, perm)) {
             setOp(isOP);
             return true;
         // Not using Permissions but he is OP, so he's allowed
-        } else if(!SignShop.USE_PERMISSIONS && isOP)
+        } else if(!SignShop.usePermissions() && isOP)
             return true;
         // Not using Permissions, he doesn't have OP but it's not an OP Operation
-        else if(!SignShop.USE_PERMISSIONS && !OPOperation)
+        else if(!SignShop.usePermissions() && !OPOperation)
             return true;
         // Reset OP
         setOp(isOP);
         return false;
     }
-    
-    public Boolean hasMoney(float amount) {        
+
+    public Boolean hasMoney(float amount) {
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -122,7 +123,7 @@ public class SignShopPlayer {
         else
             return Vault.economy.has(sPlayername, amount);
     }
-    
+
     public Boolean mutateMoney(float amount) {
         if(Vault.economy == null)
             return false;
@@ -140,21 +141,21 @@ public class SignShopPlayer {
         else
             return false;
     }
-    
+
     public void givePlayerItems(ItemStack[] isItemsToTake) {
         if(ssPlayer == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
         ssPlayer.getInventory().addItem(isBackup);
     }
-    
+
     public void takePlayerItems(ItemStack[] isItemsToTake) {
         if(ssPlayer == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
         ssPlayer.getInventory().removeItem(isBackup);
     }
-    
+
     private String[] getPlayerGroups() {
         String[] sGroups = null;
         if(ssPlayer == null)
@@ -166,7 +167,7 @@ public class SignShopPlayer {
         }
         return sGroups;
     }
-    
+
     public Float getPlayerPricemod(String sOperation, Boolean bBuyorSell) {
         Float fPricemod = 1.0f;
         Float fTemp = fPricemod;
@@ -174,7 +175,7 @@ public class SignShopPlayer {
             return fPricemod;
         String[] sGroups = getPlayerGroups();
         if(sGroups == null) return fPricemod;
-                
+
         if(sGroups.length == 0)
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
@@ -186,22 +187,22 @@ public class SignShopPlayer {
                 else if(!bBuyorSell && fTemp > fPricemod)
                     fPricemod = fTemp;
             }
-        }       
+        }
         return fPricemod;
     }
-    
-    public int reachedMaxShops() {        
+
+    public int reachedMaxShops() {
         if(Vault.permission == null || sPlayername.isEmpty())
             return 0;
         if(hasPerm("SignShop.ignoremax", true))
             return 0;
-        
-        String[] sGroups = getPlayerGroups();        
-        int iShopAmount = SignShop.Storage.countLocations(sPlayername);
-        
-        if(SignShopConfig.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShopConfig.getMaxShopsPerPerson()) return SignShopConfig.getMaxShopsPerPerson();        
+
+        String[] sGroups = getPlayerGroups();
+        int iShopAmount = Storage.get().countLocations(sPlayername);
+
+        if(SignShopConfig.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShopConfig.getMaxShopsPerPerson()) return SignShopConfig.getMaxShopsPerPerson();
         if(sGroups == null) return 0;
-        
+
         int iLimit = 1;
         Boolean bInRelGroup = false;
         for(int i = 0; i < sGroups.length; i++) {
@@ -213,10 +214,10 @@ public class SignShopPlayer {
                 else if(iLimit != 0 && SignShopConfig.ShopLimits.get(sGroup) > iLimit)
                     iLimit = SignShopConfig.ShopLimits.get(sGroup);
             }
-            
+
         }
-        
+
         return ((!bInRelGroup) ? 0 : iLimit);
     }
-    
+
 }

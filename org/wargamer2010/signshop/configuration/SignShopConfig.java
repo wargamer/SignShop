@@ -160,6 +160,7 @@ public class SignShopConfig {
         safeAddLinkeable("WALL_SIGN", "sign");
         safeAddLinkeable("STEP", "slab");
         safeAddLinkeable("JUKEBOX", "jukebox");
+        safeAddLinkeable("WOODEN_DOOR", "door");
     }
 
     private void initConfig() {
@@ -388,6 +389,11 @@ public class SignShopConfig {
             return new LinkedList<String>();
     }
 
+    public static void registerOperation(String sName, List<String> blocks) {
+        if(sName != null && blocks != null && !blocks.isEmpty())
+            Operations.put(sName, blocks);
+    }
+
     public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
         String message = pMessage;
         if(messageParts == null)
@@ -399,23 +405,18 @@ public class SignShopConfig {
         return message;
     }
 
-    public static Boolean isItemOnBlacklist(int id, SignShopPlayer player) {
+    public static Boolean isItemOnBlacklist(int id) {
         return (SignShopConfig.BlacklistedItems.contains(id));
     }
 
-    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks, SignShopArguments ssArgs) {
+    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks) {
         if(stacks == null)
             return null;
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
-        for(ItemStack single : stacks)
-            if(isItemOnBlacklist(single.getTypeId(), ssPlayer)) {
-                if(ssArgs.get_ssPlayer().isOp()) {
-                    ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(single.getData(), single.getDurability()));
-                    ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist_but_op", ssArgs.messageParts));
-                    return null;
-                } else
-                    return single;
+        for(ItemStack single : stacks) {
+            if(isItemOnBlacklist(single.getTypeId())) {
+                return single;
             }
+        }
         return null;
     }
 

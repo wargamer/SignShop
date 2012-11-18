@@ -5,7 +5,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
-import java.lang.reflect.*;
 import org.bukkit.Material;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
@@ -16,6 +15,7 @@ import com.kellerkindt.scs.*;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 
 public class linkShowcase implements SignShopSpecialOp {
     @Override
@@ -23,7 +23,7 @@ public class linkShowcase implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
-        Seller seller = SignShop.Storage.getSeller(shopSign.getLocation());
+        Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
         if(seller.getContainables().isEmpty())
@@ -39,7 +39,7 @@ public class linkShowcase implements SignShopSpecialOp {
         if(bStep == null)
             return false;
 
-        ItemStack showcasing = null;
+        ItemStack showcasing;
         if(seller.getItems() == null || seller.getItems().length == 0 || seller.getItems()[0] == null) {
             ssPlayer.sendMessage(SignShopConfig.getError(("chest_empty"), null));
             return false;

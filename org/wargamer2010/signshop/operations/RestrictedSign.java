@@ -2,23 +2,23 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.block.Block;
 import org.bukkit.Location;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
+import org.wargamer2010.signshop.configuration.Storage;
 
-public class RestrictedSign implements SignShopOperation {    
+public class RestrictedSign implements SignShopOperation {
     @Override
-    public Boolean setupOperation(SignShopArguments ssArgs) {                
-        signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());            
+    public Boolean setupOperation(SignShopArguments ssArgs) {
+        signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
         ssArgs.bDoNotClearClickmap = true;
         ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_restricted_sign", null));
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        List<Block> shops = SignShop.Storage.getShopsWithMiscSetting("restrictedsigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));        
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("restrictedsigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
         if(shops.isEmpty()) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_restrictedsign", null));
         } else {
@@ -32,14 +32,14 @@ public class RestrictedSign implements SignShopOperation {
                 else if(bTemp == bLast) restrictedshops += " and ";
                 restrictedshops += ("(" + loc.getX() + ", " + loc.getY() + ", " + loc.getZ() + ")");
             }
-            ssArgs.messageParts.put("!restrictedshops", restrictedshops);            
+            ssArgs.messageParts.put("!restrictedshops", restrictedshops);
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("restricted_sign_restricts", ssArgs.messageParts));
         }
         return true;
     }
-    
+
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {  
+    public Boolean runOperation(SignShopArguments ssArgs) {
         return true;
     }
 }

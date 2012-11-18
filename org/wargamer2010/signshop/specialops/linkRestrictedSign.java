@@ -7,9 +7,9 @@ import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.LinkedList;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -19,7 +19,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
-        Seller seller = SignShop.Storage.getSeller(shopSign.getLocation());
+        Seller seller = Storage.get().getSeller(shopSign.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
         if(seller == null)
             return false;
@@ -28,7 +28,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;
 
-        List<Block> restrictedSigns = new LinkedList();
+        List<Block> restrictedSigns = new LinkedList<Block>();
 
         List<Block> currentSigns = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
         Boolean bUnlinked = false;
@@ -56,7 +56,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
             return false;
         else if(restrictedSigns.isEmpty()) {
             seller.getMisc().remove("restrictedsigns");
-            SignShop.Storage.SafeSave();
+            Storage.get().SafeSave();
             return true;
         }
         restrictedSigns.addAll(currentSigns);
@@ -67,7 +67,7 @@ public class linkRestrictedSign implements SignShopSpecialOp {
         else {
             ssPlayer.sendMessage(SignShopConfig.getError("linked_restricted_sign", null));
             seller.getMisc().put("restrictedsigns", locations);
-            SignShop.Storage.SafeSave();
+            Storage.get().SafeSave();
         }
 
         return true;

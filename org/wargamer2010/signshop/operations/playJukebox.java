@@ -8,14 +8,14 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.InventoryHolder;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
-public class playJukebox implements SignShopOperation {    
+public class playJukebox implements SignShopOperation {
     private ItemStack[] getRecords(List<Block> containables) {
         List<ItemStack> tempItems = new ArrayList<ItemStack>();
         ItemStack[] isTotalItems = null;
-        
+
         for(Block bHolder : containables) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
@@ -24,50 +24,50 @@ public class playJukebox implements SignShopOperation {
                         tempItems.add(item);
                     }
                 }
-            }             
+            }
         }
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
         return isTotalItems;
     }
-    
+
     @Override
-    public Boolean setupOperation(SignShopArguments ssArgs) {        
+    public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
             return false;
-        }        
+        }
         ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
-        
+
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
             return false;
         }
-        ssArgs.set_isItems(isTotalItems);        
+        ssArgs.set_isItems(isTotalItems);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
-       
-    
+
+
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {        
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
-        
+
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
             return false;
         }
-        
+
         return true;
     }
-    
+
     private void playEffect(SignShopArguments ssArgs, int id) {
         ssArgs.get_bSign().getWorld().playEffect(ssArgs.get_bSign().getLocation(), Effect.RECORD_PLAY, id);
     }
-    
+
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
-        Seller seller = SignShop.Storage.getSeller(ssArgs.get_bSign().getLocation());
+        Seller seller = Storage.get().getSeller(ssArgs.get_bSign().getLocation());
         String sLastrecord = seller.getVolatile("lastrecord");
         Integer iLastrecord = -1;
         if(sLastrecord != null)
@@ -78,8 +78,8 @@ public class playJukebox implements SignShopOperation {
         for(ItemStack item : isTotalItems) {
             counter++;
             if(iLastrecord == -1 || doNext == true) {
-                playEffect(ssArgs, item.getTypeId());                
-                iLastrecord = item.getTypeId();                
+                playEffect(ssArgs, item.getTypeId());
+                iLastrecord = item.getTypeId();
                 if(iLastrecord == -1)
                     doNext = true;
                 break;

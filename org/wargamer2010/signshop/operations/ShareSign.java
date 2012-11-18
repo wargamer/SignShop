@@ -3,36 +3,36 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.block.Block;
 import org.bukkit.Location;
 import org.bukkit.block.Sign;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
 import java.util.LinkedList;
+import org.wargamer2010.signshop.configuration.Storage;
 
-public class ShareSign implements SignShopOperation {    
+public class ShareSign implements SignShopOperation {
     @Override
-    public Boolean setupOperation(SignShopArguments ssArgs) {        
-        List<Block> shops = SignShop.Storage.getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));        
+    public Boolean setupOperation(SignShopArguments ssArgs) {
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
         if(!shops.isEmpty()) {
-            for(Block bTemp : shops) {                
-                Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
+            for(Block bTemp : shops) {
+                Seller seller = Storage.get().getSeller(bTemp.getLocation());
                 if(seller != null && seller.getMisc().containsKey("sharesigns")) {
-                    if(signshopUtil.validateShareSign(signshopUtil.getSignsFromMisc(seller, "sharesigns"), ssArgs.get_ssPlayer()).isEmpty())            
-                        return false;        
+                    if(signshopUtil.validateShareSign(signshopUtil.getSignsFromMisc(seller, "sharesigns"), ssArgs.get_ssPlayer()).isEmpty())
+                        return false;
                 }
             }
         } else {
-            signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());            
+            signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
             ssArgs.bDoNotClearClickmap = true;
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_share_sign", null));
         }
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        List<Block> shops = SignShop.Storage.getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));        
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
         if(shops.isEmpty()) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_sharesign", null));
         } else {
@@ -56,7 +56,7 @@ public class ShareSign implements SignShopOperation {
             names.add("the Shop's respective owners");
             first = true;
             String sLast = names.get(names.size()-1);
-            for(String sTemp : names) {                
+            for(String sTemp : names) {
                 if(first) first = false;
                 else if(!sLast.equals(sTemp)) profits += ", ";
                 else if(sLast.equals(sTemp)) profits += " and ";
@@ -67,9 +67,9 @@ public class ShareSign implements SignShopOperation {
         }
         return true;
     }
-    
+
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {  
+    public Boolean runOperation(SignShopArguments ssArgs) {
         return true;
     }
 }

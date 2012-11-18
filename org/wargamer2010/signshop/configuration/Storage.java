@@ -35,13 +35,14 @@ public class Storage {
     private File ymlfile;
 
     private static ReentrantLock savelock = new ReentrantLock();
+    private static Storage instance = null;
 
     private static Map<Location,Seller> sellers;
     private static String itemSeperator = "&";
 
     private Boolean safetosave = true;
 
-    public Storage(File ymlFile) {
+    private Storage(File ymlFile) {
         if(!ymlFile.exists()) {
             try {
                 ymlFile.createNewFile();
@@ -66,6 +67,16 @@ public class Storage {
             }
             Save();
         }
+    }
+
+    public static Storage init(File ymlFile) {
+        if(instance == null)
+            instance = new Storage(ymlFile);
+        return instance;
+    }
+
+    public static Storage get() {
+        return instance;
     }
 
     public int shopCount() {
@@ -377,6 +388,16 @@ public class Storage {
         return null;
     }
 
+    public Block getSignFromSeller(Seller pSeller) {
+        if(Storage.sellers.containsValue(pSeller)) {
+            for(Map.Entry<Location, Seller> entry : sellers.entrySet()) {
+                if(entry.getValue() == pSeller)
+                    return entry.getKey().getBlock();
+            }
+        }
+        return null;
+    }
+
     public void removeSeller(Location lKey) {
         if(Storage.sellers.containsKey(lKey)){
             Storage.sellers.get(lKey).cleanUp();
@@ -405,15 +426,23 @@ public class Storage {
 
     public List<Block> getSignsFromHolder(Block bHolder) {
         List<Block> signs = new LinkedList<Block>();
-        for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
+        for(Map.Entry<Location, Seller> entry : sellers.entrySet())
             if(entry.getValue().getContainables().contains(bHolder))
                 signs.add(Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey()));
         return signs;
     }
 
+    public List<Seller> getShopsByBlock(Block bBlock) {
+        List<Seller> tempsellers = new LinkedList<Seller>();
+        for(Map.Entry<Location, Seller> entry : sellers.entrySet())
+            if(entry.getValue().getActivatables().contains(bBlock) || entry.getValue().getContainables().contains(bBlock))
+                tempsellers.add(entry.getValue());
+        return tempsellers;
+    }
+
     public List<Block> getShopsWithMiscSetting(String key, String value) {
         List<Block> shops = new LinkedList<Block>();
-        for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet()) {
+        for(Map.Entry<Location, Seller> entry : sellers.entrySet()) {
             if(entry.getValue().getMisc().containsKey(key)) {
                 if(entry.getValue().getMisc().get(key).contains(value))
                     shops.add(entry.getKey().getBlock());

@@ -8,12 +8,11 @@ import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Map;
-import org.bukkit.ChatColor;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -46,7 +45,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block bClicked = event.getClickedBlock();
-        Seller seller = SignShop.Storage.getSeller(bClicked.getLocation());
+        Seller seller = Storage.get().getSeller(bClicked.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getLine(0));
         if(seller == null)
             return false;
@@ -104,7 +103,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.messageParts));
             return true;
         }
-        ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems(), ssArgs);
+        ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems());
         if (blacklisted != null) {
             ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
             ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.messageParts));
@@ -116,7 +115,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         }
 
 
-        SignShop.Storage.updateSeller(bClicked, containables, activatables, ssArgs.get_isItems_root());
+        Storage.get().updateSeller(bClicked, containables, activatables, ssArgs.get_isItems_root());
 
         if (!ssArgs.bDoNotClearClickmap) {
             clicks.removePlayerFromClickmap(player);

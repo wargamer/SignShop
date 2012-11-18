@@ -374,44 +374,51 @@ public class itemUtil {
     }
 
     public static void updateStockStatusPerChest(Block bHolder, Block bIgnore) {
-        List<Block> signs = SignShop.Storage.getSignsFromHolder(bHolder);
+        List<Block> signs = Storage.get().getSignsFromHolder(bHolder);
         if(signs != null) {
             for (Block temp : signs) {
                 if(temp == bIgnore)
                     continue;
-                Seller seller = null;
                 if(!clickedSign(temp))
                     continue;
-                if((seller = SignShop.Storage.getSeller(temp.getLocation())) != null) {
-                    String[] sLines = ((Sign) temp.getState()).getLines();
-                    if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
-                        continue;
-                    List operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
-                    Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
-                    if(SignShopOperations == null)
-                        return;
-                    SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                                                                        null, null, temp, signshopUtil.getOperation(sLines[0]), null);
-                    if(seller.getMisc() != null)
-                        ssArgs.miscSettings = seller.getMisc();
-                    Boolean reqOK = true;
-                    for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                        ssArgs.set_operationParameters(ssOperation.getValue());
-                        if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {
-                            itemUtil.setSignStatus(temp, ChatColor.DARK_RED);
-                            break;
-                        }
-                    }
-                    if(reqOK)
-                        itemUtil.setSignStatus(temp, ChatColor.DARK_BLUE);
-                }
+                Seller seller = Storage.get().getSeller(temp.getLocation());
+                updateStockStatusPerShop(seller);
             }
         }
     }
 
+    public static void updateStockStatusPerShop(Seller pSeller) {
+        if(pSeller != null) {
+            Block pSign = Storage.get().getSignFromSeller(pSeller);
+            if(pSign == null)
+                return;
+            String[] sLines = ((Sign) pSign.getState()).getLines();
+            if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
+                return;
+            List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
+            Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+            if(SignShopOperations == null)
+                return;
+            SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
+                                                                null, null, pSign, signshopUtil.getOperation(sLines[0]), null);
+            if(pSeller.getMisc() != null)
+                ssArgs.miscSettings = pSeller.getMisc();
+            Boolean reqOK = true;
+            for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
+                ssArgs.set_operationParameters(ssOperation.getValue());
+                if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {
+                    itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
+                    break;
+                }
+            }
+            if(reqOK)
+                itemUtil.setSignStatus(pSign, ChatColor.DARK_BLUE);
+        }
+    }
+
     public static void updateStockStatus(Block bSign, ChatColor ccColor) {
-        Seller seTemp;
-        if((seTemp = SignShop.Storage.getSeller(bSign.getLocation())) != null) {
+        Seller seTemp = Storage.get().getSeller(bSign.getLocation());
+        if(seTemp != null) {
             List<Block> iChests = seTemp.getContainables();
             for(Block bHolder : iChests)
                 updateStockStatusPerChest(bHolder, bSign);
@@ -473,11 +480,11 @@ public class itemUtil {
             if(isItems[i] != null) {
                 isCurrent = isItems[i];
                 String ID = (meta != null && meta.containsKey(isItems[i]) ? meta.get(isItems[i]).toString() : "");
-                sItems.add((isCurrent.getAmount() + SignShop.Storage.getItemSeperator()
-                        + isCurrent.getTypeId() + SignShop.Storage.getItemSeperator()
-                        + isCurrent.getDurability() + SignShop.Storage.getItemSeperator()
-                        + isCurrent.getData().getData() + SignShop.Storage.getItemSeperator()
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + SignShop.Storage.getItemSeperator()
+                sItems.add((isCurrent.getAmount() + Storage.get().getItemSeperator()
+                        + isCurrent.getTypeId() + Storage.get().getItemSeperator()
+                        + isCurrent.getDurability() + Storage.get().getItemSeperator()
+                        + isCurrent.getData().getData() + Storage.get().getItemSeperator()
+                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.get().getItemSeperator()
                         + ID));
             }
 
