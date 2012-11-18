@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.LinkedList;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -19,7 +19,7 @@ public class linkShareSign implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
-        Seller seller = SignShop.Storage.getSeller(shopSign.getLocation());
+        Seller seller = Storage.get().getSeller(shopSign.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
         if(seller == null)
             return false;
@@ -56,7 +56,7 @@ public class linkShareSign implements SignShopSpecialOp {
             return false;
         else if(shareSigns.isEmpty()) {
             seller.getMisc().remove("sharesigns");
-            SignShop.Storage.SafeSave();
+            Storage.get().SafeSave();
             return true;
         }
         shareSigns.addAll(currentSigns);
@@ -67,7 +67,7 @@ public class linkShareSign implements SignShopSpecialOp {
         else {
             ssPlayer.sendMessage(SignShopConfig.getError("linked_share_sign", null));
             seller.getMisc().put("sharesigns", locations);
-            SignShop.Storage.SafeSave();
+            Storage.get().SafeSave();
         }
 
         return true;

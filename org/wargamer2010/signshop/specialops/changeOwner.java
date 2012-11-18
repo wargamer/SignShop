@@ -5,8 +5,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
 import java.util.Map;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -16,7 +16,7 @@ public class changeOwner implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         Block shopSign = event.getClickedBlock();
-        Seller seller = SignShop.Storage.getSeller(shopSign.getLocation());
+        Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
         if(!ssPlayer.hasPerm("SignShop.ChangeOwner", true))
@@ -36,7 +36,7 @@ public class changeOwner implements SignShopSpecialOp {
             return false;
 
         seller.setOwner(sNewOwner);
-        SignShop.Storage.SafeSave();
+        Storage.get().SafeSave();
         ssPlayer.sendMessage("Succesfully changed ownership of shop to " + sNewOwner);
         clicks.mClicksPerPlayername.remove(sNewOwner);
         return true;

@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 import org.wargamer2010.signshop.operations.*;
@@ -32,13 +32,13 @@ public class copySign implements SignShopSpecialOp {
                 break;
             }
         }
-        if(signNewSign == null || SignShop.Storage.getSeller(signNewSign.getLocation()) != null)
+        if(signNewSign == null || Storage.get().getSeller(signNewSign.getLocation()) != null)
             return false;
 
         Sign signToChange = ((Sign) shopSign.getState());
         String[] sNewSign = signNewSign.getLines();
         String[] sToChange = signToChange.getLines().clone();
-        Seller seller = SignShop.Storage.getSeller(shopSign.getLocation());
+        Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
         SignShopPlayer ssPlayer = new SignShopPlayer(player);

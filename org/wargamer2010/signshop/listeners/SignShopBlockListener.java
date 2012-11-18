@@ -14,44 +14,44 @@ import java.util.List;
 import java.util.ArrayList;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBlockListener implements Listener {
-    
+
     private Block getBlockAttachedTo(Block bBlock) {
         if(bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
-            org.bukkit.material.Sign sign = (org.bukkit.material.Sign)bBlock.getState().getData();             
+            org.bukkit.material.Sign sign = (org.bukkit.material.Sign)bBlock.getState().getData();
             return bBlock.getRelative(sign.getAttachedFace());
         } else
             return null;
     }
-    
+
     private Boolean checkSign(Block bBlock, Block bDestroyed, BlockFace bf, Player player) {
         if(bBlock.getType() == Material.getMaterial("SIGN_POST") && bf.equals(BlockFace.UP))
-            return (canDestroy(player, bBlock, false));        
+            return (canDestroy(player, bBlock, false));
         else if(bBlock.getType() == Material.getMaterial("WALL_SIGN") && getBlockAttachedTo(bBlock).equals(bDestroyed))
             return (canDestroy(player, bBlock, false));
         else
             return true;
     }
-    
-    private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) { 
+
+    private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
         if(bBlock.getType() == Material.getMaterial("SIGN_POST") || bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
-            Seller seller = SignShop.Storage.getSeller(bBlock.getLocation());        
+            Seller seller = Storage.get().getSeller(bBlock.getLocation());
             if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || player.isOp()))) {
-                SignShop.Storage.removeSeller(bBlock.getLocation());
+                Storage.get().removeSeller(bBlock.getLocation());
                 return true;
             } else
                 return false;
         }
-        if(firstcall) {            
+        if(firstcall) {
             Block bSign = null;
-            List<BlockFace> checkFaces = new ArrayList();            
+            List<BlockFace> checkFaces = new ArrayList();
             checkFaces.add(BlockFace.UP);
             checkFaces.add(BlockFace.NORTH);
             checkFaces.add(BlockFace.EAST);
@@ -61,17 +61,17 @@ public class SignShopBlockListener implements Listener {
                 if(checkSign(bBlock.getRelative(checkFaces.get(i)), bBlock, checkFaces.get(i), player))
                     bSign = bBlock.getRelative(checkFaces.get(i));
                 else
-                    return false;            
+                    return false;
             if(bSign != null)
-                SignShop.Storage.removeSeller(bSign.getLocation());
+                Storage.get().removeSeller(bSign.getLocation());
         }
         return true;
     }
-    
+
     private void cleanUpMiscStuff(String miscname, Block block) {
-        List<Block> shopsWithSharesign = SignShop.Storage.getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(block.getLocation()));
+        List<Block> shopsWithSharesign = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(block.getLocation()));
             for(Block bTemp : shopsWithSharesign) {
-            Seller seller = SignShop.Storage.getSeller(bTemp.getLocation());
+            Seller seller = Storage.get().getSeller(bTemp.getLocation());
             String temp = seller.getMisc().get(miscname);
             temp = temp.replace(signshopUtil.convertLocationToString(block.getLocation()), "");
             temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
@@ -87,10 +87,10 @@ public class SignShopBlockListener implements Listener {
                 seller.getMisc().put(miscname, temp);
         }
     }
-    
+
     @EventHandler(priority = EventPriority.NORMAL)
-    public void onBlockBreak(BlockBreakEvent event) {        
-        if(event.getPlayer().getItemInHand() != null 
+    public void onBlockBreak(BlockBreakEvent event) {
+        if(event.getPlayer().getItemInHand() != null
                 && event.getPlayer().getItemInHand().getType() == Material.getMaterial("REDSTONE")
                 && event.getPlayer().getGameMode() == GameMode.CREATIVE
                 && SignShopConfig.getProtectShopsInCreative()) {
@@ -99,19 +99,19 @@ public class SignShopBlockListener implements Listener {
         }
         Boolean bCanDestroy = canDestroy(event.getPlayer(), event.getBlock(), true);
         if(!bCanDestroy)
-            event.setCancelled(true);        
-        if(!event.isCancelled() && event.getBlock() instanceof InventoryHolder) {            
-            List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());
-            if(signs != null)
+            event.setCancelled(true);
+        if(!event.isCancelled() && event.getBlock() instanceof InventoryHolder) {
+            List<Block> signs = Storage.get().getSignsFromHolder(event.getBlock());
+            if(signs != null) {
                 for (Block temp : signs) {
-                    SignShop.Storage.removeSeller(temp.getLocation());
+                    Storage.get().removeSeller(temp.getLocation());
                     itemUtil.setSignStatus(temp, ChatColor.BLACK);
                 }
-            return;
+            }
         } else if(!event.isCancelled() && itemUtil.clickedSign(event.getBlock())) {
             cleanUpMiscStuff("sharesigns", event.getBlock());
             cleanUpMiscStuff("restrictedsigns", event.getBlock());
-            SignShop.Storage.SafeSave();
+            Storage.get().SafeSave();
         }
     }
 
@@ -119,12 +119,12 @@ public class SignShopBlockListener implements Listener {
     public void onBlockBurn(BlockBurnEvent event){
         if(event.getBlock().getType() == Material.getMaterial("WALL_SIGN")
         || event.getBlock().getType() == Material.getMaterial("SIGN_POST")){
-            SignShop.Storage.removeSeller(event.getBlock().getLocation());
+            Storage.get().removeSeller(event.getBlock().getLocation());
         } else if(event.getBlock() instanceof InventoryHolder) {
-            List<Block> signs = SignShop.Storage.getSignsFromHolder(event.getBlock());
+            List<Block> signs = Storage.get().getSignsFromHolder(event.getBlock());
             if(signs != null)
-                for (Block temp : signs) {                    
-                    SignShop.Storage.removeSeller(temp.getLocation());
+                for (Block temp : signs) {
+                    Storage.get().removeSeller(temp.getLocation());
                     itemUtil.setSignStatus(temp, ChatColor.BLACK);
                 }
         }

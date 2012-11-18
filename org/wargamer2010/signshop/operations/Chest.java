@@ -10,32 +10,33 @@ import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 
-public class Chest implements SignShopOperation {    
+public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
         ssArgs.get_ssPlayer().sendMessage("Could not complete operation, contact your System Administrator and checks the logs.");
         SignShop.log("Invalid Chest{}, check your config.yml!", Level.WARNING);
         return false;
     }
-    
+
     private Block checkChestAmount(SignShopArguments ssArgs, Integer iChestnumber) {
         Block bHolder = null;
-        int iCount = 0;        
-        Seller seller = SignShop.Storage.getSeller(ssArgs.get_bSign().getLocation());        
+        int iCount = 0;
+        Seller seller = Storage.get().getSeller(ssArgs.get_bSign().getLocation());
         for(Block bTemp : ssArgs.get_containables_root()) {
             if(bTemp.getState() instanceof InventoryHolder) {
                 iCount++;
                 if(iCount == iChestnumber)
-                    bHolder = bTemp;                                
+                    bHolder = bTemp;
             }
-        }        
+        }
         return bHolder;
     }
-    
+
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(!ssArgs.hasOperationParameters())
-            return incorrectPar(ssArgs);        
+            return incorrectPar(ssArgs);
         Integer iChestnumber;
         try {
             iChestnumber = Integer.parseInt(ssArgs.getFirstOperationParameter());
@@ -44,31 +45,31 @@ public class Chest implements SignShopOperation {
         }
         if(iChestnumber < 1)
             return incorrectPar(ssArgs);
-        
+
         ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));
-        
+
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder == null) {
             ssArgs.get_ssPlayer().sendMessage("You need at least " + (iChestnumber) + " chest(s) to setup this shop!");
             return false;
         }
-        
+
         List<Block> containables = new LinkedList();
         containables.add(bHolder);
         ssArgs.set_containables(containables);
-        
+
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         return this.runOperation(ssArgs);
     }
-    
+
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {        
+    public Boolean runOperation(SignShopArguments ssArgs) {
         Integer iChestnumber;
-        try {            
+        try {
             iChestnumber = Integer.parseInt(ssArgs.getFirstOperationParameter());
         } catch(NumberFormatException ex) {
             return incorrectPar(ssArgs);
@@ -76,28 +77,28 @@ public class Chest implements SignShopOperation {
         if(iChestnumber < 1)
             return incorrectPar(ssArgs);
         if(!ssArgs.miscSettings.containsKey(("chest" + iChestnumber)))
-            return incorrectPar(ssArgs);        
-                
-        ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));        
-        String misc = ssArgs.miscSettings.get(("chest" + iChestnumber));        
+            return incorrectPar(ssArgs);
+
+        ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));
+        String misc = ssArgs.miscSettings.get(("chest" + iChestnumber));
         String[] sItemss;
         if(!misc.contains(SignShopArguments.seperator)) {
             sItemss = new String[1];
             sItemss[0] = misc;
         } else
             sItemss = misc.split(SignShopArguments.seperator);
-        ItemStack[] isItemss = null;        
-            
-        isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));        
+        ItemStack[] isItemss = null;
+
+        isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));
         ssArgs.set_isItems(isItemss);
-        
+
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder != null) {
-            LinkedList<Block> tempContainables = new LinkedList(); 
+            LinkedList<Block> tempContainables = new LinkedList();
             tempContainables.add(bHolder);
             ssArgs.set_containables(tempContainables);
         }
-        
+
         return true;
     }
 }
