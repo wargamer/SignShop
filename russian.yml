@@ -14,38 +14,6 @@ AllowMultiWorldShops: false
 EnablePermits: false
 PreventVillagerTrade: false
 ProtectShopsInCreative: true
-signs:
-  Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
-  Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
-  Donate: takeVariablePlayerItems,giveShopItems
-  DonateHand: takeItemInHand,giveShopItems
-  Slot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems{oneslot},takeShopItems
-  iSell: takeVariablePlayerItems,givePlayerMoney,playerIsOp
-  iBuy: takePlayerMoney,givePlayerItems,playerIsOp
-  gBuy: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
-  gSell: takeVariablePlayerItems,givePlayerMoney,giveShopItems,playerIsOp
-  Day: takePlayerMoney,setDayTime,playerIsOp
-  Night: takePlayerMoney,setNightTime,playerIsOp
-  Rain: takePlayerMoney,setRaining,playerIsOp
-  ClearSkies: takePlayerMoney,setClearSkies,playerIsOp
-  DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
-  DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
-  Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
-  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
-  Heal: takePlayerMoney,healPlayer,playerIsOp
-  Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
-  Dispose: takeItemInHand
-  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
-  iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
-  Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
-  iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
-  iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
-  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
-  TpToOwner: takePlayerMoney,playerIsOp
-  Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
-  Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
-  Command: takePlayerMoney, playerIsOp
-  Share: ShareSign
 messages:
   setup:
     Buy: Вы выставили на продажу !items по цене !price!
