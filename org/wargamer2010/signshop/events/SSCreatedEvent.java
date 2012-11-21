@@ -10,7 +10,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public class SSPreCreatedEvent extends SSEvent {
+public class SSCreatedEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private Float fPrice = -1.0f;
@@ -22,7 +22,7 @@ public class SSPreCreatedEvent extends SSEvent {
     private String sOperation = "";
     private Map<String, String> messageParts = new HashMap<String, String>();
 
-    public SSPreCreatedEvent(Float pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts) {
+    public SSCreatedEvent(Float pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts) {
         fPrice = pPrice;
         isItems = pItems;
         containables = pContainables;
