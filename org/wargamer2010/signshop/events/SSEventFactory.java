@@ -13,19 +13,8 @@ public class SSEventFactory {
 
     }
 
-    public static SSPreCreatedEvent generatePreCreatedEvent(SignShopArguments ssArgs) {
-        return new SSPreCreatedEvent(ssArgs.get_fPrice(),
-                                                            ssArgs.get_isItems(),
-                                                            ssArgs.get_containables_root(),
-                                                            ssArgs.get_activatables_root(),
-                                                            ssArgs.get_ssPlayer(),
-                                                            ssArgs.get_bSign(),
-                                                            ssArgs.get_sOperation(),
-                                                            ssArgs.messageParts);
-    }
-
-    public static SSPostCreatedEvent generatePostCreatedEvent(SignShopArguments ssArgs) {
-        return new SSPostCreatedEvent(ssArgs.get_fPrice(),
+    public static SSCreatedEvent generatePreCreatedEvent(SignShopArguments ssArgs) {
+        return new SSCreatedEvent(ssArgs.get_fPrice(),
                                                             ssArgs.get_isItems(),
                                                             ssArgs.get_containables_root(),
                                                             ssArgs.get_activatables_root(),
@@ -63,6 +52,10 @@ public class SSEventFactory {
 
     public static SSTouchShopEvent generateTouchShopEvent(SignShopPlayer pPlayer, Seller pShop, Action pAction, Block pBlock) {
         return new SSTouchShopEvent(pPlayer, pShop, pAction, pBlock);
+    }
+
+    public static SSDestroyedEvent generateDestroyedEvent(Block pSign, SignShopPlayer pPlayer, Seller pShop, SSDestroyedEventType pReason) {
+        return new SSDestroyedEvent(pSign, pPlayer, pShop, pReason);
     }
 
 }

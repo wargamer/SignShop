@@ -9,7 +9,6 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
-import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
@@ -25,9 +24,8 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
-import org.wargamer2010.signshop.events.SSPreCreatedEvent;
+import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
-import org.wargamer2010.signshop.events.SSPostCreatedEvent;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
@@ -171,7 +169,7 @@ public class SignShopPlayerListener implements Listener {
                 if(ssArgs.get_isItems() == null)
                     ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.getMaterial("DIRT"),1)});
 
-                SSPreCreatedEvent precreatedevent = SSEventFactory.generatePreCreatedEvent(ssArgs);
+                SSCreatedEvent precreatedevent = SSEventFactory.generatePreCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(precreatedevent);
                 if(precreatedevent.isCancelled())
                     return;
@@ -179,11 +177,6 @@ public class SignShopPlayerListener implements Listener {
                 Storage.get().addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
-
-                SSPostCreatedEvent postcreatedevent = SSEventFactory.generatePostCreatedEvent(ssArgs);
-                SignShop.scheduleEvent(postcreatedevent);
-                if(postcreatedevent.isCancelled())
-                    return;
 
                 return;
             }

@@ -7,7 +7,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
-import org.wargamer2010.signshop.events.SSPreCreatedEvent;
+import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -31,7 +31,7 @@ public class SimpleBlacklister implements Listener {
     }
 
     @EventHandler(priority = EventPriority.HIGH)
-    public void onSSBuildEvent(SSPreCreatedEvent event) {
+    public void onSSBuildEvent(SSCreatedEvent event) {
         if(event.isCancelled())
             return;
         boolean isBlacklisted = this.runBlacklistCheck(event.getItems(), event.getPlayer(), event.getMessageParts());

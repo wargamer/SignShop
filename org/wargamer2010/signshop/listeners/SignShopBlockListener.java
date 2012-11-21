@@ -12,121 +12,73 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.InventoryHolder;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.events.SSDestroyedEvent;
+import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBlockListener implements Listener {
 
-    private Block getBlockAttachedTo(Block bBlock) {
-        if(bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
-            org.bukkit.material.Sign sign = (org.bukkit.material.Sign)bBlock.getState().getData();
-            return bBlock.getRelative(sign.getAttachedFace());
-        } else
-            return null;
-    }
-
-    private Boolean checkSign(Block bBlock, Block bDestroyed, BlockFace bf, Player player) {
-        if(bBlock.getType() == Material.getMaterial("SIGN_POST") && bf.equals(BlockFace.UP))
-            return (canDestroy(player, bBlock, false));
-        else if(bBlock.getType() == Material.getMaterial("WALL_SIGN") && getBlockAttachedTo(bBlock).equals(bDestroyed))
-            return (canDestroy(player, bBlock, false));
-        else
-            return true;
-    }
-
-    private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
-        if(bBlock.getType() == Material.getMaterial("SIGN_POST") || bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
-            Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || player.isOp()))) {
-                Storage.get().removeSeller(bBlock.getLocation());
-                return true;
-            } else
-                return false;
+    private List<Seller> getShopsFromMiscSetting(String miscname, Block pBlock) {
+        List<Block> shopsWithBlockInMisc = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(pBlock.getLocation()));
+        List<Seller> sellers = new LinkedList<Seller>();
+        if(!shopsWithBlockInMisc.isEmpty()) {
+            for(Block block : shopsWithBlockInMisc) {
+                sellers.add(Storage.get().getSeller(block.getLocation()));
+            }
         }
-        if(firstcall) {
-            Block bSign = null;
-            List<BlockFace> checkFaces = new ArrayList();
-            checkFaces.add(BlockFace.UP);
-            checkFaces.add(BlockFace.NORTH);
-            checkFaces.add(BlockFace.EAST);
-            checkFaces.add(BlockFace.SOUTH);
-            checkFaces.add(BlockFace.WEST);
-            for(int i = 0; i < checkFaces.size(); i++)
-                if(checkSign(bBlock.getRelative(checkFaces.get(i)), bBlock, checkFaces.get(i), player))
-                    bSign = bBlock.getRelative(checkFaces.get(i));
-                else
-                    return false;
-            if(bSign != null)
-                Storage.get().removeSeller(bSign.getLocation());
+        return sellers;
+    }
+
+    private boolean canBreakBlock(Block block, Player player) {
+        Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+
+        if(Storage.get().getSeller(block.getLocation()) != null)
+            affectedSellers.put(Storage.get().getSeller(block.getLocation()), SSDestroyedEventType.sign);
+        if(itemUtil.clickedSign(block)) {
+            for(Seller seller : getShopsFromMiscSetting("sharesigns", block))
+                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
+            for(Seller seller : getShopsFromMiscSetting("restrictedsigns", block))
+                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
+        }
+        for(Seller seller : Storage.get().getShopsByBlock(block))
+            affectedSellers.put(seller, SSDestroyedEventType.attachable);
+
+        for(Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
+            SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());
+            SignShop.scheduleEvent(event);
+            if(event.isCancelled())
+                return false;
         }
         return true;
     }
 
-    private void cleanUpMiscStuff(String miscname, Block block) {
-        List<Block> shopsWithSharesign = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(block.getLocation()));
-            for(Block bTemp : shopsWithSharesign) {
-            Seller seller = Storage.get().getSeller(bTemp.getLocation());
-            String temp = seller.getMisc().get(miscname);
-            temp = temp.replace(signshopUtil.convertLocationToString(block.getLocation()), "");
-            temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
-            if(temp.length() > 0) {
-                if(temp.endsWith(SignShopArguments.seperator))
-                    temp = temp.substring(0, temp.length()-1);
-                if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.seperator.charAt(0))
-                    temp = temp.substring(1, temp.length());
-            }
-            if(temp.length() == 0)
-                seller.getMisc().remove(miscname);
-            else
-                seller.getMisc().put(miscname, temp);
-        }
-    }
-
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBreak(BlockBreakEvent event) {
-        if(event.getPlayer().getItemInHand() != null
-                && event.getPlayer().getItemInHand().getType() == Material.getMaterial("REDSTONE")
-                && event.getPlayer().getGameMode() == GameMode.CREATIVE
-                && SignShopConfig.getProtectShopsInCreative()) {
-            event.setCancelled(true);
+        if(event.isCancelled())
             return;
-        }
-        Boolean bCanDestroy = canDestroy(event.getPlayer(), event.getBlock(), true);
-        if(!bCanDestroy)
+        if(!canBreakBlock(event.getBlock(), event.getPlayer()))
             event.setCancelled(true);
-        if(!event.isCancelled() && event.getBlock() instanceof InventoryHolder) {
-            List<Block> signs = Storage.get().getSignsFromHolder(event.getBlock());
-            if(signs != null) {
-                for (Block temp : signs) {
-                    Storage.get().removeSeller(temp.getLocation());
-                    itemUtil.setSignStatus(temp, ChatColor.BLACK);
-                }
-            }
-        } else if(!event.isCancelled() && itemUtil.clickedSign(event.getBlock())) {
-            cleanUpMiscStuff("sharesigns", event.getBlock());
-            cleanUpMiscStuff("restrictedsigns", event.getBlock());
-            Storage.get().SafeSave();
-        }
     }
 
     @EventHandler(priority = EventPriority.NORMAL)
-    public void onBlockBurn(BlockBurnEvent event){
-        if(event.getBlock().getType() == Material.getMaterial("WALL_SIGN")
-        || event.getBlock().getType() == Material.getMaterial("SIGN_POST")){
-            Storage.get().removeSeller(event.getBlock().getLocation());
-        } else if(event.getBlock() instanceof InventoryHolder) {
-            List<Block> signs = Storage.get().getSignsFromHolder(event.getBlock());
-            if(signs != null)
-                for (Block temp : signs) {
-                    Storage.get().removeSeller(temp.getLocation());
-                    itemUtil.setSignStatus(temp, ChatColor.BLACK);
-                }
-        }
+    public void onBlockBurn(BlockBurnEvent event) {
+        if(event.isCancelled())
+            return;
+
+        if(!canBreakBlock(event.getBlock(), null))
+            event.setCancelled(true);
     }
 }

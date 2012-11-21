@@ -230,6 +230,7 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new SimpleMessenger(), this);
         pm.registerEvents(new SimpleRestricter(), this);
         pm.registerEvents(new SimpleShopLimiter(), this);
+        pm.registerEvents(new SimpleShopProtector(), this);
         pm.registerEvents(new PermissionChecker(), this);
         pm.registerEvents(new PermitChecker(), this);
         pm.registerEvents(new ShopUpdater(), this);
