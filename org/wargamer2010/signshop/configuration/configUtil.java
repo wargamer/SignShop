@@ -20,7 +20,7 @@ public class configUtil {
 
     }
 
-    static HashMap<String,HashMap<String,String>> fetchHasmapInHashmap(String path, FileConfiguration config) {
+    public static HashMap<String,HashMap<String,String>> fetchHasmapInHashmap(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,String>> tempHasinHash = new HashMap<String,HashMap<String,String>>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -39,7 +39,7 @@ public class configUtil {
         return tempHasinHash;
     }
 
-    static HashMap<String,HashMap<String,Float>> fetchFloatHasmapInHashmap(String path, FileConfiguration config) {
+    public static HashMap<String,HashMap<String,Float>> fetchFloatHasmapInHashmap(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,Float>> tempHasinHash = new HashMap<String,HashMap<String,Float>>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -58,7 +58,7 @@ public class configUtil {
         return tempHasinHash;
     }
 
-    static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
+    public static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
         HashMap<String,List> tempListinHash = new HashMap<String,List>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -79,7 +79,7 @@ public class configUtil {
         return tempListinHash;
     }
 
-    static Map<String,HashMap<String,List>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
+    public static Map<String,HashMap<String,List>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
         HashMap<String,HashMap<String,List>> tempStringHashMap = new HashMap<String,HashMap<String,List>>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -105,11 +105,11 @@ public class configUtil {
         return tempStringHashMap;
     }
 
-    static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
+    public static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config) {
         return fetchStringStringHashMap(path, config, false);
     }
 
-    static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config, Boolean caseSensitive) {
+    public static HashMap<String, String> fetchStringStringHashMap(String path, FileConfiguration config, Boolean caseSensitive) {
         HashMap<String,String> tempStringStringHash = new HashMap<String,String>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -127,7 +127,7 @@ public class configUtil {
         return tempStringStringHash;
     }
 
-    static HashMap<String, Integer> fetchStringIntegerHashMap(String path, FileConfiguration config) {
+    public static HashMap<String, Integer> fetchStringIntegerHashMap(String path, FileConfiguration config) {
         HashMap<String,Integer> tempStringIntegerHash = new HashMap<String,Integer>();
         try {
             if(config.getConfigurationSection(path) == null)
@@ -141,7 +141,7 @@ public class configUtil {
         return tempStringIntegerHash;
     }
 
-    static FileConfiguration loadYMLFromPluginFolder(String filename) {
+    public static FileConfiguration loadYMLFromPluginFolder(String filename) {
         File configFile = new File(SignShop.getInstance().getDataFolder(), filename);
         FileConfiguration ymlThing = new YamlConfiguration();
         if(!configFile.exists())
@@ -160,7 +160,7 @@ public class configUtil {
         return ymlThing;
     }
 
-    static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {
+    public static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {
         File configFile = new File(SignShop.getInstance().getDataFolder(), filenameInJar);
         FileConfiguration thingInJar = new YamlConfiguration();
         try {

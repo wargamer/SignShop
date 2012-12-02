@@ -23,7 +23,7 @@ public class linkShareSign implements SignShopSpecialOp {
         String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
         if(seller == null)
             return false;
-        if(ssPlayer.getPlayer().getItemInHand() == null || ssPlayer.getPlayer().getItemInHand().getType() != Material.getMaterial("REDSTONE"))
+        if(ssPlayer.getPlayer().getItemInHand() == null || ssPlayer.getPlayer().getItemInHand().getType() != SignShopConfig.getLinkMaterial())
             return false;
         if(!itemUtil.clickedSign(shopSign) || sOperation.equals("restricted") || sOperation.equals("share"))
             return false;

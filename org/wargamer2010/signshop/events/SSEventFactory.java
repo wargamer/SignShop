@@ -13,7 +13,7 @@ public class SSEventFactory {
 
     }
 
-    public static SSCreatedEvent generatePreCreatedEvent(SignShopArguments ssArgs) {
+    public static SSCreatedEvent generateCreatedEvent(SignShopArguments ssArgs) {
         return new SSCreatedEvent(ssArgs.get_fPrice(),
                                                             ssArgs.get_isItems(),
                                                             ssArgs.get_containables_root(),
