@@ -6,6 +6,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
 import java.util.Map;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
@@ -19,12 +20,16 @@ public class changeOwner implements SignShopSpecialOp {
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
-        if(!ssPlayer.hasPerm("SignShop.ChangeOwner", true))
-            return false;
-        if(!seller.getOwner().equals(player.getName()) && !ssPlayer.hasPerm("SignShop.ChangeOwner.Others", true))
-            return false;
         if(!clicks.mClicksPerPlayername.containsValue(player))
             return false;
+        if(!ssPlayer.hasPerm("SignShop.ChangeOwner", true)) {
+            ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
+            return false;
+        }
+        if(!seller.getOwner().equals(player.getName()) && !ssPlayer.hasPerm("SignShop.ChangeOwner.Others", true)) {
+            ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
+            return false;
+        }
         String sNewOwner = "";
         for(Map.Entry<String, Player> entry : clicks.mClicksPerPlayername.entrySet()) {
             if(entry.getValue() == player) {

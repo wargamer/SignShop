@@ -138,6 +138,7 @@ public class SignShop extends JavaPlugin{
             // Register events
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
+            pm.registerEvents(new SignShopWorthListener(), this);
             if(SignShopConfig.getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);

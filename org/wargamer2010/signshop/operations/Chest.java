@@ -22,7 +22,6 @@ public class Chest implements SignShopOperation {
     private Block checkChestAmount(SignShopArguments ssArgs, Integer iChestnumber) {
         Block bHolder = null;
         int iCount = 0;
-        Seller seller = Storage.get().getSeller(ssArgs.get_bSign().getLocation());
         for(Block bTemp : ssArgs.get_containables_root()) {
             if(bTemp.getState() instanceof InventoryHolder) {
                 iCount++;
@@ -54,7 +53,7 @@ public class Chest implements SignShopOperation {
             return false;
         }
 
-        List<Block> containables = new LinkedList();
+        List<Block> containables = new LinkedList<Block>();
         containables.add(bHolder);
         ssArgs.set_containables(containables);
 
@@ -87,14 +86,14 @@ public class Chest implements SignShopOperation {
             sItemss[0] = misc;
         } else
             sItemss = misc.split(SignShopArguments.seperator);
-        ItemStack[] isItemss = null;
+        ItemStack[] isItemss;
 
         isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));
         ssArgs.set_isItems(isItemss);
 
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder != null) {
-            LinkedList<Block> tempContainables = new LinkedList();
+            LinkedList<Block> tempContainables = new LinkedList<Block>();
             tempContainables.add(bHolder);
             ssArgs.set_containables(tempContainables);
         }

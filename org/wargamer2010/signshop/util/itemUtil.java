@@ -17,7 +17,6 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookItem;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
@@ -28,6 +27,10 @@ import org.wargamer2010.signshop.operations.SignShopArguments;
 
 public class itemUtil {
     private static HashMap<Integer, String> discs;
+
+    private itemUtil() {
+
+    }
 
     public static void initDiscs() {
         // This is pretty ugly but I really couldn't find another way in
@@ -45,6 +48,7 @@ public class itemUtil {
         discs.put(2264, "Strad Disc");
         discs.put(2265, "Ward Disc");
         discs.put(2266, "11 Disc");
+        discs.put(2267, "wait Disc");
     }
 
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
@@ -122,7 +126,7 @@ public class itemUtil {
     }
 
     public static boolean isDisc(int id) {
-        return discs.containsKey(id);
+        return (discs.containsKey(id) || id > 2267);
     }
 
     public static String formatData(MaterialData data) {
@@ -337,7 +341,7 @@ public class itemUtil {
         }
         returnMap.put(isItemsToTake, 0.0f);
         float iCount = 0;
-        float tempCount = 0;
+        float tempCount;
         int i = 0;
         HashMap<ItemStack, Integer> mItemsToTake = StackToMap(isBackup);
         HashMap<ItemStack, Integer> mInventory = StackToMap(iiFrom.getContents());
@@ -406,7 +410,8 @@ public class itemUtil {
             Boolean reqOK = true;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                 ssArgs.set_operationParameters(ssOperation.getValue());
-                if(!(reqOK = ssOperation.getKey().checkRequirements(ssArgs, false))) {
+                reqOK = ssOperation.getKey().checkRequirements(ssArgs, false);
+                if(!reqOK) {
                     itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
                     break;
                 }
@@ -473,18 +478,18 @@ public class itemUtil {
     }
 
     public static String[] convertItemStacksToString(ItemStack[] isItems, Map<ItemStack, Integer> meta) {
-        List<String> sItems = new ArrayList();
+        List<String> sItems = new ArrayList<String>();
 
         ItemStack isCurrent = null;
         for(int i = 0; i < isItems.length; i++) {
             if(isItems[i] != null) {
                 isCurrent = isItems[i];
                 String ID = (meta != null && meta.containsKey(isItems[i]) ? meta.get(isItems[i]).toString() : "");
-                sItems.add((isCurrent.getAmount() + Storage.get().getItemSeperator()
-                        + isCurrent.getTypeId() + Storage.get().getItemSeperator()
-                        + isCurrent.getDurability() + Storage.get().getItemSeperator()
-                        + isCurrent.getData().getData() + Storage.get().getItemSeperator()
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.get().getItemSeperator()
+                sItems.add((isCurrent.getAmount() + Storage.getItemSeperator()
+                        + isCurrent.getTypeId() + Storage.getItemSeperator()
+                        + isCurrent.getDurability() + Storage.getItemSeperator()
+                        + isCurrent.getData().getData() + Storage.getItemSeperator()
+                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
                         + ID));
             }
 

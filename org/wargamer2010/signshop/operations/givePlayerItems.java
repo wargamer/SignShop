@@ -8,7 +8,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
 import java.util.ArrayList;
 
-public class givePlayerItems implements SignShopOperation {    
+public class givePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
@@ -17,7 +17,7 @@ public class givePlayerItems implements SignShopOperation {
         }
         List<ItemStack> tempItems = new ArrayList<ItemStack>();
         ItemStack[] isTotalItems = null;
-        
+
         for(Block bHolder : ssArgs.get_containables()) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
@@ -31,14 +31,14 @@ public class givePlayerItems implements SignShopOperation {
         isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
@@ -49,22 +49,23 @@ public class givePlayerItems implements SignShopOperation {
                 if(stack == null)
                     bEmptySlot = true;
             }
-            if(!bEmptySlot)
-                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));                
-            return bEmptySlot;
+            if(!bEmptySlot) {
+                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));
+                return false;
+            }
         }
-        if(ssArgs.isOperationParameter("ignorefull")) {
-            if(!itemUtil.isStockOK(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), false)) {                        
-                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));                
+        if(!ssArgs.isOperationParameter("ignorefull")) {
+            if(!itemUtil.isStockOK(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), false)) {
+                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));
                 return false;
             }
         }
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
-    
+
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {        
+    public Boolean runOperation(SignShopArguments ssArgs) {
         ssArgs.get_ssPlayer().givePlayerItems(ssArgs.get_isItems());
         return true;
     }

@@ -23,11 +23,8 @@ import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.runCommand;
-import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopConfig {
     private static Map<String,List<String>> Operations;
@@ -62,6 +59,9 @@ public class SignShopConfig {
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
+    private static Material linkMaterial = Material.getMaterial("REDSTONE");
+    private static Material updateMaterial = Material.getMaterial("INK_SACK");
+
 
     public SignShopConfig() {
         instance = SignShop.getInstance();
@@ -113,7 +113,7 @@ public class SignShopConfig {
         PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         Commands = configUtil.fetchListInHashmap("commands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
-        BlacklistedItems = config.getIntegerList("Blacklisted_items");
+        setupBlacklist();
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
         fixIncompleOperations();
@@ -185,7 +185,26 @@ public class SignShopConfig {
         EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         Languages = ymlThing.getString("Languages", Languages);
+        linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
+        updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
+
         this.config = ymlThing;
+    }
+
+    private Material getMaterial(String mat, Material defaultmat) {
+        Material temp;
+        try {
+            Integer ID = Integer.parseInt(mat);
+            temp = Material.getMaterial(ID);
+        } catch(NumberFormatException ex) {
+            String name = mat.toUpperCase();
+            temp = Material.getMaterial(name);
+        }
+        if(temp == null) {
+            SignShop.log("Material called: " + mat + " does not exist, please check your config.yml!", Level.WARNING);
+            return defaultmat;
+        }
+        return temp;
     }
 
     private void setupOperations() {
@@ -193,7 +212,7 @@ public class SignShopConfig {
 
         HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
 
-        List<String> tempSignOperationString = new LinkedList<String>();
+        List<String> tempSignOperationString;
         List<String> tempCheckedSignOperation = new LinkedList<String>();
         Boolean failedOp = false;
 
@@ -389,9 +408,12 @@ public class SignShopConfig {
             return new LinkedList<String>();
     }
 
-    public static void registerOperation(String sName, List<String> blocks) {
-        if(sName != null && blocks != null && !blocks.isEmpty())
+    public static boolean registerOperation(String sName, List<String> blocks) {
+        if(sName != null && blocks != null && !blocks.isEmpty()) {
             Operations.put(sName, blocks);
+            return true;
+        }
+        return false;
     }
 
     public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
@@ -403,6 +425,23 @@ public class SignShopConfig {
         }
         message = message.replace("\\", "");
         return message;
+    }
+
+    private void setupBlacklist() {
+        List<String> tempList = config.getStringList("Blacklisted_items");
+        BlacklistedItems = new LinkedList<Integer>();
+        for(String item : tempList) {
+            try {
+                Integer ID = Integer.parseInt(item);
+                BlacklistedItems.add(ID);
+            } catch(NumberFormatException ex) {
+                Material mat = Material.getMaterial(item.toUpperCase());
+                if(mat != null)
+                    BlacklistedItems.add(mat.getId());
+                else
+                    SignShop.log("Material called: " + item + " could not be added to the blacklist as it does not exist, please check your config.yml!", Level.WARNING);
+            }
+        }
     }
 
     public static Boolean isItemOnBlacklist(int id) {
@@ -471,5 +510,17 @@ public class SignShopConfig {
 
     public static Boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
+    }
+
+    public static Material getLinkMaterial() {
+        return linkMaterial;
+    }
+
+    public static Material getUpdateMaterial() {
+        return updateMaterial;
+    }
+
+    public static boolean isOPMaterial(Material check) {
+        return (check == updateMaterial || check == linkMaterial);
     }
 }

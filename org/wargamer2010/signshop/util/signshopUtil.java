@@ -432,6 +432,8 @@ public class signshopUtil {
         LinkedHashSet<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, ssPlayer.getPlayer());
         for (Location loc : lClicked) {
             Block bBlockat = loc.getBlock();
+            if(bBlockat.getLocation().equals(bClicked.getLocation()))
+                continue;
             if (bBlockat.getState() instanceof InventoryHolder) {
                 containables.add(bBlockat);
             } else if (signshopUtil.clickedSignShopMat(bBlockat, ssPlayer)) {

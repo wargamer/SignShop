@@ -16,6 +16,8 @@ PreventVillagerTrade: false
 ProtectShopsInCreative: true
 fixIncompleteOperations: true
 Languages: english
+LinkMaterial: redstone
+UpdateMaterial: ink_sack
 Blacklisted_items:
   - 0
 signs:
@@ -187,6 +189,7 @@ messages:
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
+  no_permission_changeowner: You don't have permission to change to the owner of this shop!
   invalid_operation: The sign you clicked doesnt have a valid operation!
   chest_empty: The shop is empty!
   chest_missing: You need to link at least one chest for this shop type!
@@ -252,6 +255,7 @@ errors:
   block_is_protected: This block is protected, you are not allowed to interact with it.
   updated_shop: The shop has been succesfully updated.
   failed_to_update_shop: Failed to update the shop due to the error above.
+  price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
 commands:
   TpToOwner:
   - tp !player !owner

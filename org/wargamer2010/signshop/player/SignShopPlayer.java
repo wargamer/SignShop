@@ -124,6 +124,20 @@ public class SignShopPlayer {
             return Vault.economy.has(sPlayername, amount);
     }
 
+    public Boolean canHaveMoney(float amount) {
+        if(Vault.economy == null)
+            return false;
+        if(sPlayername.isEmpty())
+            return true;
+        EconomyResponse response;
+        response = Vault.economy.depositPlayer(sPlayername, amount);
+        if(response.type == EconomyResponse.ResponseType.SUCCESS)
+            Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
+        else
+            return false;
+        return true;
+    }
+
     public Boolean mutateMoney(float amount) {
         if(Vault.economy == null)
             return false;
