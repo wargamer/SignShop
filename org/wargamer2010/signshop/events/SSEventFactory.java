@@ -58,4 +58,8 @@ public class SSEventFactory {
         return new SSDestroyedEvent(pSign, pPlayer, pShop, pReason);
     }
 
+    public static SSLinkEvent generateLinkEvent(Block pSign, SignShopPlayer pPlayer, Seller pShop) {
+        return new SSLinkEvent(pSign, pPlayer, pShop);
+    }
+
 }

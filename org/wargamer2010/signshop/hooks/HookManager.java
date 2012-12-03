@@ -9,7 +9,11 @@ import java.util.Map;
 
 public class HookManager {
     private static HashMap<String, Plugin> hooks = new HashMap<String, Plugin>();
-    
+
+    private HookManager() {
+
+    }
+
     public static Boolean addHook(String sName) {
         Plugin pHook = Bukkit.getServer().getPluginManager().getPlugin(sName);
         if(pHook != null) {
@@ -18,14 +22,14 @@ public class HookManager {
         } else
             return false;
     }
-    
+
     public static Plugin getHook(String sName) {
         if(hooks.containsKey(sName))
             return hooks.get(sName);
         else
             return null;
     }
-    
+
     public static Boolean canBuild(Player player, Block block) {
         Boolean canBuild = true;
         for(Map.Entry<String, Plugin> hookEntry : hooks.entrySet()) {
@@ -41,6 +45,6 @@ public class HookManager {
             catch(IllegalAccessException illex) { }
         }
         return canBuild;
-        
+
     }
 }
