@@ -61,6 +61,7 @@ public class SignShopConfig {
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SACK");
+    private static Material destroyMaterial = Material.getMaterial("IRON_HOE");
 
 
     public SignShopConfig() {
@@ -128,6 +129,7 @@ public class SignShopConfig {
         HookManager.addHook("WorldGuard");
         HookManager.addHook("Deadbolt");
         HookManager.addHook("Residence");
+        HookManager.addHook("GriefPrevention");
     }
 
     private void setupSpecialsOps() {
@@ -187,6 +189,7 @@ public class SignShopConfig {
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
+        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "IRON_HOE"), Material.getMaterial("IRON_HOE"));
 
         this.config = ymlThing;
     }
@@ -518,6 +521,10 @@ public class SignShopConfig {
 
     public static Material getUpdateMaterial() {
         return updateMaterial;
+    }
+
+    public static Material getDestroyMaterial() {
+        return destroyMaterial;
     }
 
     public static boolean isOPMaterial(Material check) {

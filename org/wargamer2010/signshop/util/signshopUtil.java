@@ -20,9 +20,11 @@ import java.util.LinkedHashMap;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.blocks.SignShopChest;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.events.SSEventFactory;
+import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -402,15 +404,15 @@ public class signshopUtil {
                 clicks.mClicksPerLocation.remove(bClicked.getLocation());
                 ssPlayer.sendMessage("Removed stored location");
             } else {
-                if(bClicked.getState() instanceof InventoryHolder) {
-                    SignShopChest ssChest = new SignShopChest(bClicked);
-                    if(!ssChest.allowedToLink(ssPlayer)) {
-                        ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
-                        return false;
-                    }
+                SSLinkEvent event = SSEventFactory.generateLinkEvent(bClicked, ssPlayer, null);
+                SignShop.scheduleEvent(event);
+                if(event.isCancelled()) {
+                    ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
+                    return false;
+                } else {
+                    clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());
+                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
                 }
-                clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());
-                ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
             }
             return true;
         }

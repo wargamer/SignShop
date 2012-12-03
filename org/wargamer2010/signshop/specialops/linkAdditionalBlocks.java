@@ -12,7 +12,10 @@ import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.events.SSEventFactory;
+import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -20,7 +23,7 @@ import org.wargamer2010.signshop.util.*;
 
 public class linkAdditionalBlocks implements SignShopSpecialOp {
 
-    private List<Block> updateList(final List<Block> masterBlocks, final List<Block> newBlocks, SignShopPlayer ssPlayer) {
+    private List<Block> updateList(final List<Block> masterBlocks, final List<Block> newBlocks, final SignShopPlayer ssPlayer, final Seller pSeller) {
         List<Block> updatedList = newBlocks;
         for (Block masterBlock : masterBlocks) {
             if (newBlocks.contains(masterBlock)) {
@@ -32,7 +35,15 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         }
         for (Block newBlock : newBlocks) {
             if (!masterBlocks.contains(newBlock)) {
-                ssPlayer.sendMessage("Attempting to link " + itemUtil.formatData(newBlock.getState().getData()) + " to shop.");
+                SSLinkEvent event = SSEventFactory.generateLinkEvent(newBlock, ssPlayer, pSeller);
+                SignShop.scheduleEvent(event);
+                if(event.isCancelled()) {
+                    ssPlayer.sendMessage("You are not allowed to link this " + itemUtil.formatData(newBlock.getState().getData()) + " to the shop.");
+                    updatedList.remove(newBlock);
+                } else {
+                    ssPlayer.sendMessage("Attempting to link " + itemUtil.formatData(newBlock.getState().getData()) + " to the shop.");
+                }
+
             }
         }
         return updatedList;
@@ -74,8 +85,8 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             return false;
         }
 
-        containables = this.updateList(seller.getContainables(), containables, ssPlayer);
-        activatables = this.updateList(seller.getActivatables(), activatables, ssPlayer);
+        containables = this.updateList(seller.getContainables(), containables, ssPlayer, seller);
+        activatables = this.updateList(seller.getActivatables(), activatables, ssPlayer, seller);
 
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), containables, activatables,
                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());

@@ -99,10 +99,9 @@ public class SimpleShopProtector implements Listener {
 
         Player player = event.getPlayer().getPlayer();
 
-        if(player.getItemInHand() != null
-                && player.getItemInHand().getType() == SignShopConfig.getLinkMaterial()
-                && player.getGameMode() == GameMode.CREATIVE
-                && SignShopConfig.getProtectShopsInCreative()) {
+        if(player.getGameMode() == GameMode.CREATIVE
+                && SignShopConfig.getProtectShopsInCreative()
+                && (player.getItemInHand() == null || player.getItemInHand().getType() != SignShopConfig.getDestroyMaterial())) {
             event.setCancelled(true);
             return;
         }

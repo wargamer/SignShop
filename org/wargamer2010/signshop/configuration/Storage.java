@@ -175,11 +175,17 @@ public class Storage {
     }
 
     private String getInvalidError(String template, String[] locations) {
-        return template
+        if(locations.length == 0) {
+            return "";
+        } else if(locations.length < 4) {
+            return template.replace("!world", locations[0]);
+        } else {
+            return template
                 .replace("!world", locations[0])
                 .replace("!x", locations[1])
                 .replace("!y", locations[2])
                 .replace("!z", locations[3]);
+        }
     }
 
     public Boolean legacyLoad() {
@@ -344,7 +350,8 @@ public class Storage {
                 if(misc.size() > 0)
                     temp.put("misc", MapToList(misc));
 
-                tempSellers.put(lKey.getWorld().getName() + "/" + signshopUtil.convertLocationToString(lKey), temp);
+                // YML Parser really does not like dots in the name
+                tempSellers.put(signshopUtil.convertLocationToString(lKey).replace(".", ""), temp);
             }
         } catch(ConcurrentModificationException ex) {
             // No need to retry because this will be called again, for sure, after the lock is released
