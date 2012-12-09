@@ -9,7 +9,6 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.block.Sign;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -167,7 +166,7 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
                 if(ssArgs.get_isItems() == null)
-                    ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.getMaterial("DIRT"),1)});
+                    ssArgs.set_isItems(itemUtil.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
 
                 SSCreatedEvent precreatedevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(precreatedevent);

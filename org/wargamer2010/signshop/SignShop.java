@@ -18,8 +18,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.util.itemUtil;
-import com.bergerkiller.bukkit.common.SafeField;
 import org.bukkit.event.Event;
+import org.wargamer2010.signshop.blocks.BookProxy;
+import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
@@ -77,18 +78,15 @@ public class SignShop extends JavaPlugin{
         }
     }
 
-    private void setItemMaxSize(Material material, int maxstacksize) {
-        SafeField.set(net.minecraft.server.Item.byId[material.getId()], "maxStackSize", maxstacksize);
-    }
-
     private void fixStackSize() {
+        IItemTags tags = BookProxy.getItemTags();
         if(SignShopConfig.getEnableSignStacking()) {
             if(Material.getMaterial("SIGN") != null)
-                setItemMaxSize(Material.getMaterial("SIGN"), 64);
+                tags.setItemMaxSize(Material.getMaterial("SIGN"), 64);
             if(Material.getMaterial("SIGN_POST") != null)
-                setItemMaxSize(Material.getMaterial("SIGN_POST"), 64);
+                tags.setItemMaxSize(Material.getMaterial("SIGN_POST"), 64);
             if(Material.getMaterial("WALL_SIGN") != null)
-                setItemMaxSize(Material.getMaterial("WALL_SIGN"), 64);
+                tags.setItemMaxSize(Material.getMaterial("WALL_SIGN"), 64);
         }
     }
 

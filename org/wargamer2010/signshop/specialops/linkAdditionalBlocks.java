@@ -8,7 +8,6 @@ import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Map;
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
@@ -122,7 +121,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         }
 
         if (ssArgs.get_isItems() == null) {
-            ssArgs.set_isItems(new CraftItemStack[]{new CraftItemStack(Material.getMaterial("DIRT"), 1)});
+            ssArgs.set_isItems(itemUtil.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
         }
 
 

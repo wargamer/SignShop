@@ -163,7 +163,7 @@ public class SignShopBooks {
     }
 
     public static int addBook(ItemStack bookStack) {
-        BookItem item = new BookItem(bookStack);
+        IBookItem item = BookProxy.getBookItem(bookStack);
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
         pars.put(1, item.getTitle());
         pars.put(2, item.getAuthor());
@@ -192,7 +192,7 @@ public class SignShopBooks {
         pars.put(1, id);
         ResultSet set = (ResultSet)runStatement("SELECT * FROM Book WHERE BookID = ?", pars, true);
         try {
-            BookItem item = new BookItem(bookStack);
+            IBookItem item = BookProxy.getBookItem(bookStack);
             item.setAuthor(set.getString("Author"));
             item.setTitle(set.getString("Title"));
             item.setPages(set.getString("Pages").split(String.valueOf(pageSeperator)));
