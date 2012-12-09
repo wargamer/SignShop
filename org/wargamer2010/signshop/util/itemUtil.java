@@ -9,16 +9,19 @@ import org.bukkit.block.Sign;
 import org.bukkit.material.MaterialData;
 import org.bukkit.Material;
 import org.bukkit.material.SimpleAttachableMaterialData;
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.blocks.BookItem;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.blocks.BookProxy;
+import org.wargamer2010.signshop.blocks.IBookItem;
+import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -54,7 +57,7 @@ public class itemUtil {
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
         List<ItemStack> items = new ArrayList<ItemStack>();
         for(ItemStack item: isItems) {
-            ItemStack isBackup = new CraftItemStack(
+            ItemStack isBackup = getCraftItemstack(
                 item.getType(),
                 1,
                 item.getDurability()
@@ -190,10 +193,11 @@ public class itemUtil {
         String sItems = "";
         Boolean first = true;
         Integer tempAmount = 0;
+        IItemTags tags = BookProxy.getItemTags();
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
-            ItemStack isBackup = new CraftItemStack(
+            ItemStack isBackup = getCraftItemstack(
                 item.getType(),
                 1,
                 item.getDurability()
@@ -203,7 +207,7 @@ public class itemUtil {
                 isBackup.setData(item.getData());
             }
             if(itemUtil.isWriteableBook(item)) {
-                itemTags.copyTags(item, isBackup);
+                tags.copyTags(item, isBackup);
             }
 
             if(item.getEnchantments().size() > 0)
@@ -227,7 +231,7 @@ public class itemUtil {
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
             }
             if(itemUtil.isWriteableBook(entry.getKey())) {
-                BookItem book = new BookItem(entry.getKey());
+                IBookItem book = BookProxy.getBookItem(entry.getKey());
                 if(book != null && (book.getAuthor() != null || book.getTitle() != null))
                     sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");
             }
@@ -308,14 +312,15 @@ public class itemUtil {
     }
 
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
-        ItemStack isBackup = new CraftItemStack(
+        IItemTags tags = BookProxy.getItemTags();
+        ItemStack isBackup = getCraftItemstack(
             isOriginal.getType(),
             isOriginal.getAmount(),
             isOriginal.getDurability()
         );
         itemUtil.addSafeEnchantments(isBackup, isOriginal.getEnchantments());
         if(itemUtil.isWriteableBook(isOriginal)) {
-            itemTags.copyTags(isOriginal, isBackup);
+            tags.copyTags(isOriginal, isBackup);
         }
 
         if(isOriginal.getData() != null) {
@@ -330,6 +335,7 @@ public class itemUtil {
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
         Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
+        IItemTags tags = BookProxy.getItemTags();
         if(fromOK) {
             returnMap.put(isItemsToTake, 1.0f);
             if(bTake)
@@ -356,14 +362,14 @@ public class itemUtil {
             } else
                 return returnMap;
 
-            isActual[i] = new CraftItemStack(
+            isActual[i] = getCraftItemstack(
                 entry.getKey().getType(),
                 mInventory.get(entry.getKey()),
                 entry.getKey().getDurability()
             );
             addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());
             if(itemUtil.isWriteableBook(entry.getKey())) {
-                itemTags.copyTags(entry.getKey(), isActual[i]);
+                tags.copyTags(entry.getKey(), isActual[i]);
             }
             if(entry.getKey().getData() != null) {
                 isActual[i].setData(entry.getKey().getData());
@@ -445,8 +451,8 @@ public class itemUtil {
                 String[] sItemprops = sItems.get(i).split(Storage.getItemSeperator());
                 if(sItemprops.length < 4)
                     continue;
-                isItems[i] = new CraftItemStack(
-                        Integer.parseInt(sItemprops[1]),
+                isItems[i] = getCraftItemstack(
+                        Material.getMaterial(Integer.parseInt(sItemprops[1])),
                         Integer.parseInt(sItemprops[0]),
                         Short.parseShort(sItemprops[2])
                 );
@@ -497,5 +503,42 @@ public class itemUtil {
         String[] items = new String[sItems.size()];
         sItems.toArray(items);
         return items;
+    }
+
+    protected static Object tryReflection(String fullClassname, Material pMat, int pAmount, short pDurability) {
+        try {
+            Class<?> fc = (Class<?>)Class.forName(fullClassname);
+            return fc.getConstructor(Material.class, int.class, short.class).newInstance(pMat, pAmount, pDurability);
+        } catch (Exception ex) {
+            // Way too many exceptions could be thrown by the statements above
+            // So for the sake of my sanity, we'll just catch everything
+            return null;
+        }
+    }
+
+    public static ItemStack[] getCraftItemstacks(int size, Material pMat, int pAmount, short pDurability) {
+        ItemStack[] stacks = new ItemStack[size];
+        for(int i = 0; i < size; i++) {
+            Object temp = getCraftItemstack(pMat, pAmount, pDurability);
+            if(temp != null)
+                stacks[i] = (ItemStack)temp;
+        }
+        return stacks;
+    }
+
+    public static ItemStack getCraftItemstack(Material pMat, int pAmount, short pDurability) {
+        String useType;
+        if(tryReflection("org.bukkit.craftbukkit.inventory.CraftItemStack", pMat, pAmount, pDurability) != null)
+            useType = "org.bukkit.craftbukkit.inventory.CraftItemStack";
+        else if(tryReflection("org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack", pMat, pAmount, pDurability) != null)
+            useType = "org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack";
+        else {
+            SignShop.log("Could not create a CraftItemStack instance!", Level.SEVERE);
+            return null;
+        }
+        Object temp = tryReflection(useType, pMat, pAmount, pDurability);
+        if(temp != null)
+            return (ItemStack)temp;
+        return null;
     }
 }

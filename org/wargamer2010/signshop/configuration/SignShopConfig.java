@@ -189,7 +189,7 @@ public class SignShopConfig {
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
-        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "IRON_HOE"), Material.getMaterial("IRON_HOE"));
+        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
 
         this.config = ymlThing;
     }
@@ -417,6 +417,20 @@ public class SignShopConfig {
             return true;
         }
         return false;
+    }
+
+    public static boolean registerMessage(String type, String shop, String message) {
+        return registerMessage(SignShopConfig.baseLanguage, type, shop, message);
+    }
+
+    public static boolean registerMessage(String language, String type, String shop, String message) {
+        if(Messages.containsKey(language) && Messages.get(language).containsKey(type)) {
+            HashMap<String, String> temp = Messages.get(language).get(type);
+            temp.put(shop, message);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {

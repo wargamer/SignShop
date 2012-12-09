@@ -1,11 +1,9 @@
 package org.wargamer2010.signshop.configuration;
 
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.Location;
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -24,6 +22,7 @@ import java.nio.channels.*;
 import java.util.List;
 import java.util.ConcurrentModificationException;
 import java.util.concurrent.locks.ReentrantLock;
+import org.bukkit.Material;
 
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
@@ -287,16 +286,15 @@ public class Storage {
                 amounts = (ArrayList<Integer>) tempSeller.get("amounts");
                 durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
                 enchantments = (ArrayList<String>) tempSeller.get("enchantments");
-                isItems = new CraftItemStack[items.size()];
+                isItems = new ItemStack[items.size()];
 
-                for(int i=0;i<items.size();i++){
-                    isItems[i] = new CraftItemStack(items.get(i),amounts.get(i));
+                for(int i=0;i<items.size();i++) {
+                    short dur = (durabilities != null && durabilities.get(i) != null) ? durabilities.get(i).shortValue() : 0;
+                    isItems[i] = itemUtil.getCraftItemstack(Material.getMaterial(items.get(i)), amounts.get(i), dur);
+                    //isItems[i] = new CraftItemStack(items.get(i),amounts.get(i));
 
                     if(datas != null && datas.get(i) != null)
                         isItems[i].getData().setData(new Byte(datas.get(i)));
-
-                    if(durabilities != null && durabilities.get(i) != null)
-                        isItems[i].setDurability(durabilities.get(i).shortValue());
 
                     if(enchantments != null && enchantments.get(i) != null)
                         itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));
