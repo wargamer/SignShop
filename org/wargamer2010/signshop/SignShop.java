@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.bukkit.event.Event;
-import org.wargamer2010.signshop.blocks.BookProxy;
+import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -79,7 +79,7 @@ public class SignShop extends JavaPlugin{
     }
 
     private void fixStackSize() {
-        IItemTags tags = BookProxy.getItemTags();
+        IItemTags tags = BookFactory.getItemTags();
         if(SignShopConfig.getEnableSignStacking()) {
             if(Material.getMaterial("SIGN") != null)
                 tags.setItemMaxSize(Material.getMaterial("SIGN"), 64);

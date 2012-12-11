@@ -189,7 +189,7 @@ public class SignShopConfig {
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
-        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
+        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLD_AXE"), Material.getMaterial("GOLD_AXE"));
 
         this.config = ymlThing;
     }
