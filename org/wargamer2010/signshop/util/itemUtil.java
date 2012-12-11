@@ -19,7 +19,7 @@ import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.blocks.BookProxy;
+import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
@@ -193,7 +193,7 @@ public class itemUtil {
         String sItems = "";
         Boolean first = true;
         Integer tempAmount = 0;
-        IItemTags tags = BookProxy.getItemTags();
+        IItemTags tags = BookFactory.getItemTags();
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
@@ -231,7 +231,7 @@ public class itemUtil {
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
             }
             if(itemUtil.isWriteableBook(entry.getKey())) {
-                IBookItem book = BookProxy.getBookItem(entry.getKey());
+                IBookItem book = BookFactory.getBookItem(entry.getKey());
                 if(book != null && (book.getAuthor() != null || book.getTitle() != null))
                     sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");
             }
@@ -312,7 +312,7 @@ public class itemUtil {
     }
 
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
-        IItemTags tags = BookProxy.getItemTags();
+        IItemTags tags = BookFactory.getItemTags();
         ItemStack isBackup = getCraftItemstack(
             isOriginal.getType(),
             isOriginal.getAmount(),
@@ -335,7 +335,7 @@ public class itemUtil {
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
         Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
-        IItemTags tags = BookProxy.getItemTags();
+        IItemTags tags = BookFactory.getItemTags();
         if(fromOK) {
             returnMap.put(isItemsToTake, 1.0f);
             if(bTake)

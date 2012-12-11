@@ -29,8 +29,7 @@ public class BookItem implements IBookItem {
         private net.minecraft.server.v1_4_5.ItemStack item = null;
         private CraftItemStack stack = null;
 
-        @Override
-        public void setStack(org.bukkit.inventory.ItemStack item) {
+        public BookItem(org.bukkit.inventory.ItemStack item) {
             if(item instanceof CraftItemStack) {
                     stack = (CraftItemStack)item;
                     this.item = stack.getHandle();

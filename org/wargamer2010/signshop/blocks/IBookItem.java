@@ -2,8 +2,6 @@
 package org.wargamer2010.signshop.blocks;
 
 public interface IBookItem {
-    public void setStack(org.bukkit.inventory.ItemStack item);
-
     public String[] getPages();
 
     public String getAuthor();

@@ -38,7 +38,7 @@ public class SignShopBooks {
 
         if(initDB) {
             newConn();
-            runStatement("CREATE TABLE Book ( BookID INT AUTO_INCREMENT NOT NULL, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);
+            runStatement("CREATE TABLE Book ( BookID INTEGER, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);
             closeConn();
         }
     }
@@ -163,7 +163,7 @@ public class SignShopBooks {
     }
 
     public static int addBook(ItemStack bookStack) {
-        IBookItem item = BookProxy.getBookItem(bookStack);
+        IBookItem item = BookFactory.getBookItem(bookStack);
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
         pars.put(1, item.getTitle());
         pars.put(2, item.getAuthor());
@@ -192,7 +192,7 @@ public class SignShopBooks {
         pars.put(1, id);
         ResultSet set = (ResultSet)runStatement("SELECT * FROM Book WHERE BookID = ?", pars, true);
         try {
-            IBookItem item = BookProxy.getBookItem(bookStack);
+            IBookItem item = BookFactory.getBookItem(bookStack);
             item.setAuthor(set.getString("Author"));
             item.setTitle(set.getString("Title"));
             item.setPages(set.getString("Pages").split(String.valueOf(pageSeperator)));
