@@ -21,8 +21,10 @@ public class SSCreatedEvent extends SSEvent {
     private Block bSign = null;
     private String sOperation = "";
     private Map<String, String> messageParts = new HashMap<String, String>();
+    private Map<String, String> miscSettings = new HashMap<String, String>();
 
-    public SSCreatedEvent(Float pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts) {
+
+    public SSCreatedEvent(Float pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts, Map<String, String> pMisc) {
         fPrice = pPrice;
         isItems = pItems;
         containables = pContainables;
@@ -31,6 +33,7 @@ public class SSCreatedEvent extends SSEvent {
         bSign = pSign;
         sOperation = pOperation;
         messageParts = pMessageParts;
+        miscSettings = pMisc;
     }
 
     @Override
@@ -44,6 +47,10 @@ public class SSCreatedEvent extends SSEvent {
 
     public Float getPrice() {
         return fPrice;
+    }
+
+    public void setPrice(Float fPrice) {
+        this.fPrice = fPrice;
     }
 
     public ItemStack[] getItems() {
@@ -72,5 +79,17 @@ public class SSCreatedEvent extends SSEvent {
 
     public Map<String, String> getMessageParts() {
         return messageParts;
+    }
+
+    public void setMessagePart(String part, String value) {
+        messageParts.put(part, value);
+    }
+
+    public Map<String, String> getMiscSettings() {
+        return miscSettings;
+    }
+
+    public void setMiscSetting(String setting, String value) {
+        miscSettings.put(setting, value);
     }
 }

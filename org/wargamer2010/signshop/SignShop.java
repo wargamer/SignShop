@@ -233,6 +233,7 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new PermissionChecker(), this);
         pm.registerEvents(new PermitChecker(), this);
         pm.registerEvents(new ShopUpdater(), this);
+        pm.registerEvents(new GetPriceFromWorth(), this);
     }
 
     public static Logger getMainLogger() {

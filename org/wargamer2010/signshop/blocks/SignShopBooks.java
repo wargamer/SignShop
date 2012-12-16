@@ -153,11 +153,13 @@ public class SignShopBooks {
                     try {
                         return genKeys.getInt("last_insert_rowid()");
                     } catch(SQLException ex) {
+                        SignShop.log("Query: " + Query + " threw exception: " + ex.getMessage(), Level.WARNING);
                         return result;
                     }
                 }
             }
         } catch(SQLException ex) {
+            SignShop.log("Query: " + Query + " threw exception: " + ex.getMessage(), Level.WARNING);
             return null;
         }
     }
@@ -174,7 +176,10 @@ public class SignShopBooks {
         } finally {
             closeConn();
         }
-        return ID;
+        if(ID == null)
+            return -1;
+        else
+            return ID;
     }
 
     public static void removeBook(Integer id) {

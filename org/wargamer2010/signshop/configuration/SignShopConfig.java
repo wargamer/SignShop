@@ -56,6 +56,7 @@ public class SignShopConfig {
     private static boolean ProtectShopsInCreative = true;
     private static boolean EnableSignStacking = false;
     private static boolean fixIncompleteOperations = true;
+    private static boolean EnablePriceFromWorth = false;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -186,6 +187,7 @@ public class SignShopConfig {
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
         EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
+        EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -527,6 +529,9 @@ public class SignShopConfig {
 
     public static Boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
+    }
+    public static Boolean getEnablePriceFromWorth() {
+        return EnablePriceFromWorth;
     }
 
     public static Material getLinkMaterial() {

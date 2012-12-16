@@ -21,7 +21,8 @@ public class SSEventFactory {
                                                             ssArgs.get_ssPlayer(),
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
-                                                            ssArgs.messageParts);
+                                                            ssArgs.messageParts,
+                                                            ssArgs.miscSettings);
     }
 
     public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller) {
