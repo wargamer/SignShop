@@ -421,12 +421,16 @@ public class signshopUtil {
 
     public static Float ApplyPriceMod(SignShopArguments ssArgs) {
         if(ssArgs.tryToApplyPriceMod()) {
-            Float fPricemod = ssArgs.get_ssPlayer().getPlayerPricemod(ssArgs.get_sOperation(), true);
-            Float fPrice = (ssArgs.get_fPrice() * fPricemod);
+            Float fPrice = ApplyPriceMod(ssArgs.get_ssPlayer(), ssArgs.get_fPrice(), ssArgs.get_sOperation());
             ssArgs.set_fPrice(fPrice);
             ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         }
         return ssArgs.get_fPrice();
+    }
+
+    public static Float ApplyPriceMod(SignShopPlayer player, Float fPrice, String sOperation) {
+        Float fPricemod = player.getPlayerPricemod(sOperation, true);
+        return (fPrice * fPricemod);
     }
 
     public static boolean getSignshopBlocksFromList(SignShopPlayer ssPlayer, List<Block> containables, List<Block> activatables, Block bClicked) {

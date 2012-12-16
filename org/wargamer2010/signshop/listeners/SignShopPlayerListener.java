@@ -168,12 +168,12 @@ public class SignShopPlayerListener implements Listener {
                 if(ssArgs.get_isItems() == null)
                     ssArgs.set_isItems(itemUtil.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
 
-                SSCreatedEvent precreatedevent = SSEventFactory.generateCreatedEvent(ssArgs);
-                SignShop.scheduleEvent(precreatedevent);
-                if(precreatedevent.isCancelled())
+                SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
+                SignShop.scheduleEvent(createdevent);
+                if(createdevent.isCancelled())
                     return;
 
-                Storage.get().addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), ssArgs.miscSettings);
+                Storage.get().addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), createdevent.getMiscSettings());
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
 
@@ -240,6 +240,8 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             ssArgs.special.deactivate();
+            ssArgs.set_root_fPrice(pretransactevent.getPrice());
+
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                 ssArgs.set_operationParameters(ssOperation.getValue());
                 bRunOK = ssOperation.getKey().runOperation(ssArgs);

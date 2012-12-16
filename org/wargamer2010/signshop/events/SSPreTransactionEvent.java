@@ -71,6 +71,10 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
         return fPrice;
     }
 
+    public void setPrice(Float fPrice) {
+        this.fPrice = fPrice;
+    }
+
     public ItemStack[] getItems() {
         return isItems;
     }
@@ -105,5 +109,9 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
 
     public Map<String, String> getMessageParts() {
         return messageParts;
+    }
+
+    public void setMessagePart(String part, String value) {
+        messageParts.put(part, value);
     }
 }

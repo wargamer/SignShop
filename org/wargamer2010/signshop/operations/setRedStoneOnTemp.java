@@ -72,7 +72,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
                     state.setData(lever);
                     state.update();
                     signshopUtil.generateInteractEvent(bLever, ssArgs.get_ssPlayer().getPlayer(), ssArgs.get_bfBlockFace());
-                    Bukkit.getServer().getScheduler().scheduleAsyncDelayedTask(SignShop.getInstance(),new lagSetter(bLever),10*delay);
+                    Bukkit.getServer().getScheduler().runTaskLaterAsynchronously(SignShop.getInstance(),new lagSetter(bLever),10*delay);
                 }
             }
         }
