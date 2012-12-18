@@ -35,14 +35,13 @@ public class BookFactory {
     protected static String getNamespaceType() {
         if(namespaceType.isEmpty()) {
             if(tryReflection("org.bukkit.craftbukkit.inventory.CraftItemStack", 1) != null)
-                return "pre145";
+                namespaceType = "pre145";
             else if(tryReflection("org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack", 1) != null)
-                return "v145";
+                namespaceType = "v145";
             else
-                return "";
-        } else {
-            return namespaceType;
+                namespaceType = "unkown";
         }
+        return namespaceType;
     }
 
     protected static Object tryReflection(String fullClassname, Integer number) {

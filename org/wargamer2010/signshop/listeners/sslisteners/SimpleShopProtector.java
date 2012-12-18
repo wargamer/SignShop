@@ -126,12 +126,7 @@ public class SimpleShopProtector implements Listener {
             cleanUpMiscStuff("restrictedsigns", event.getBlock());
         } else if(event.getReason() == SSDestroyedEventType.attachable) {
             // More shops might be attached to this attachable, but the event will be fired multiple times
-            // if that's the case
-            Block bSign = Storage.get().getSignFromSeller(event.getShop());
-            if(itemUtil.clickedSign(bSign)) {
-                itemUtil.setSignStatus(bSign, ChatColor.BLACK);
-                Storage.get().removeSeller(bSign.getLocation());
-            }
+            // No need to remove the seller as we can't safely assume breaking things like a Chest makes the shop useless
         }
     }
 }

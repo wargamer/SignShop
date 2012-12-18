@@ -1,7 +1,7 @@
 # If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
 # You can also visit our Bukkit page at tiny.cc/SignShop
 
-signs: 
+signs:
   Koop: Buy
   Verkoop: Sell
   Doneer: Donate
@@ -223,6 +223,10 @@ errors:
   restricted_but_owner: Je bent niet uitgesloten van het gebruik van deze winkel omdat je de eigenaar bent.
   item_on_blacklist: Het item !blacklisted_item staat op de zwarte lijst en mag niet gebruikt worden.
   item_on_blacklist_but_op: Het item !blacklisted_item staat op de zwarte lijst maar je bent OP.
+  block_is_protected: Het block is beveiligd en het is je niet toegestaan om het aan te raken.
+  updated_shop: The winkel is succesvol geüpdatet.
+  failed_to_update_shop: De winkel kon niet geüpdate worden, de reden is hierboven vermeld.
+  price_drawn_from_essentials: Let op, de prijs wordt door Essentials bepaald en is dus variabel.
 commands:
   TpToOwner:
   - tp !player !owner
