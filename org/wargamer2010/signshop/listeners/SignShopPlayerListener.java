@@ -21,6 +21,8 @@ import java.util.*;
 import org.bukkit.entity.EntityType;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.blocks.BookFactory;
+import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
@@ -112,6 +114,7 @@ public class SignShopPlayerListener implements Listener {
         String sOperation;
         World world = player.getWorld();
         Seller seller = Storage.get().getSeller(event.getClickedBlock().getLocation());
+        IItemTags tags = BookFactory.getItemTags();
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && SignShopConfig.isOPMaterial(event.getItem().getType())) {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShopConfig.getLinkMaterial()) {
                 sLines = ((Sign) bClicked.getState()).getLines();
@@ -166,7 +169,7 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
                 if(ssArgs.get_isItems() == null)
-                    ssArgs.set_isItems(itemUtil.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
+                    ssArgs.set_isItems(tags.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
 
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);

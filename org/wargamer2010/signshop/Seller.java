@@ -15,12 +15,10 @@ import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {
-    private List<Block> containables = new LinkedList();
-    private List<Block> activatables = new LinkedList();
+    private List<Block> containables = new LinkedList<Block>();
+    private List<Block> activatables = new LinkedList<Block>();
     private ItemStack[] isItems;
     private Map<String, String> miscProps = new HashMap<String, String>();
-    private Map<ItemStack, Integer> itemMeta = new LinkedHashMap<ItemStack, Integer>();
-    private static Map<ItemStack, Integer> tempItemMeta = new LinkedHashMap<ItemStack, Integer>();
     private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();
 
     private String owner;
@@ -35,7 +33,8 @@ public class Seller {
         activatables = pActivatables;
         if(pMiscProps != null)
             miscProps.putAll(pMiscProps);
-        storeBooks(save);
+        if(save)
+            storeBooks();
     }
 
     public ItemStack[] getItems() {
@@ -78,10 +77,6 @@ public class Seller {
         return miscProps;
     }
 
-    public Map<ItemStack, Integer> getMeta() {
-        return itemMeta;
-    }
-
     public void cleanUp() {
         if(miscProps.containsKey("showcaselocation")) {
             if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
@@ -97,33 +92,14 @@ public class Seller {
             if(shop != null)
                 scs.getShopHandler().removeShop(shop);
         }
-        if(!itemMeta.isEmpty()) {
-            for(Integer id : itemMeta.values()) {
-                SignShopBooks.removeBook(id);
-            }
-        }
     }
 
-    private void storeBooks(Boolean save) {
+    private void storeBooks() {
         for(ItemStack stack : isItems) {
             if(itemUtil.isWriteableBook(stack)) {
-                Integer id;
-                if(save) {
-                    id = SignShopBooks.addBook(stack);
-                    itemMeta.put(stack, id);
-                } else {
-                    if(tempItemMeta.containsKey(stack)) {
-                        id = tempItemMeta.get(stack);
-                        itemMeta.put(stack, id);
-                        tempItemMeta.remove(stack);
-                    }
-                }
+                SignShopBooks.addBook(stack);
             }
         }
-    }
-
-    public static void addMeta(ItemStack stack, Integer id)  {
-        tempItemMeta.put(stack, id);
     }
 
     public String getVolatile(String key) {

@@ -197,6 +197,8 @@ public class signshopUtil {
 
     public static String implode(String[] ary, String delim) {
         String out = "";
+        if(ary == null)
+            return out;
         for(int i=0; i<ary.length; i++) {
             if(i!=0) { out += delim; }
             out += ary[i];

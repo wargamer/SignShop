@@ -26,6 +26,8 @@ import org.bukkit.Material;
 
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.blocks.BookFactory;
+import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -195,6 +197,7 @@ public class Storage {
             return false;
         }
         Map<String,Object> tempSellers = sellersection.getValues(false);
+        IItemTags tags = BookFactory.getItemTags();
 
         if(tempSellers == null){
             return false;
@@ -290,8 +293,7 @@ public class Storage {
 
                 for(int i=0;i<items.size();i++) {
                     short dur = (durabilities != null && durabilities.get(i) != null) ? durabilities.get(i).shortValue() : 0;
-                    isItems[i] = itemUtil.getCraftItemstack(Material.getMaterial(items.get(i)), amounts.get(i), dur);
-                    //isItems[i] = new CraftItemStack(items.get(i),amounts.get(i));
+                    isItems[i] = tags.getCraftItemstack(Material.getMaterial(items.get(i)), amounts.get(i), dur);
 
                     if(datas != null && datas.get(i) != null)
                         isItems[i].getData().setData(new Byte(datas.get(i)));
@@ -328,7 +330,7 @@ public class Storage {
                 seller = sellers.get(lKey);
                 temp.put("shopworld", seller.getWorld());
                 temp.put("owner", seller.getOwner());
-                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(), seller.getMeta()));
+                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));
 
                 List<Block> containables = seller.getContainables();
                 String[] sContainables = new String[containables.size()];
