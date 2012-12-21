@@ -1,6 +1,8 @@
 
 package org.wargamer2010.signshop.blocks;
 
+import org.bukkit.inventory.ItemStack;
+
 public interface IBookItem {
     public String[] getPages();
 
@@ -16,5 +18,5 @@ public interface IBookItem {
 
     public void setTitle(String title);
 
-    public org.bukkit.inventory.ItemStack getItemStack();
+    public ItemStack getStack();
 }

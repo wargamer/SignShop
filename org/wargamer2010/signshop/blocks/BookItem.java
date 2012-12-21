@@ -22,6 +22,7 @@ import net.minecraft.server.NBTTagList;
 import net.minecraft.server.NBTTagString;
 
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
+import org.bukkit.inventory.ItemStack;
 
 public class BookItem implements IBookItem {
 
@@ -136,8 +137,7 @@ public class BookItem implements IBookItem {
         }
 
         @Override
-        public org.bukkit.inventory.ItemStack getItemStack() {
+        public ItemStack getStack() {
             return stack;
         }
-
 }

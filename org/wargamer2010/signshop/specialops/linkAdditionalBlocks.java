@@ -12,6 +12,8 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.blocks.BookFactory;
+import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
@@ -120,8 +122,9 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             return true;
         }
 
+        IItemTags tags = BookFactory.getItemTags();
         if (ssArgs.get_isItems() == null) {
-            ssArgs.set_isItems(itemUtil.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
+            ssArgs.set_isItems(tags.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
         }
 
 

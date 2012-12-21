@@ -1,6 +1,9 @@
 
 package org.wargamer2010.signshop.blocks;
 
+import java.util.logging.Level;
+import org.wargamer2010.signshop.SignShop;
+
 public class BookFactory {
     private static String namespaceType = "";
 
@@ -13,10 +16,8 @@ public class BookFactory {
         IBookItem item;
         if(useType.equals("pre145"))
             item = new org.wargamer2010.signshop.blocks.BookItem(stack);
-        else if(useType.equals("v145"))
-            item = new org.wargamer2010.signshop.blocks.v145.BookItem(stack);
         else
-            return null;
+            item = new org.wargamer2010.signshop.blocks.v145.BookItem(stack);
         return item;
     }
 
@@ -27,31 +28,36 @@ public class BookFactory {
             tags = new org.wargamer2010.signshop.blocks.itemTags();
         else if(useType.equals("v145"))
             tags = new org.wargamer2010.signshop.blocks.v145.itemTags();
-        else
+        else if(useType.equals("v146"))
+            tags = new org.wargamer2010.signshop.blocks.v146.itemTags();
+        else {
+            SignShop.log("Could not find the proper craftbukkit namespace! This SignShop version does not support this version of Bukkit. Please visit http://dev.bukkit.org/server-mods/signshop/ for more info.", Level.SEVERE);
             return null;
+        }
         return tags;
     }
 
     protected static String getNamespaceType() {
         if(namespaceType.isEmpty()) {
-            if(tryReflection("org.bukkit.craftbukkit.inventory.CraftItemStack", 1) != null)
+            if(tryReflection("org.bukkit.craftbukkit.inventory.CraftItemStack"))
                 namespaceType = "pre145";
-            else if(tryReflection("org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack", 1) != null)
+            else if(tryReflection("org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack"))
                 namespaceType = "v145";
+            else if(tryReflection("org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack"))
+                namespaceType = "v146";
             else
-                namespaceType = "unkown";
+                namespaceType = "post146";
+
         }
         return namespaceType;
     }
 
-    protected static Object tryReflection(String fullClassname, Integer number) {
+    protected static boolean tryReflection(String fullClassname) {
         try {
-            Class<?> fc = (Class<?>)Class.forName(fullClassname);
-            return fc.getConstructor(int.class).newInstance(number);
-        } catch (Exception ex) {
-            // Way too many exceptions could be thrown by the statements above
-            // So for the sake of my sanity, we'll just catch everything
-            return null;
-        }
+            Class.forName(fullClassname);
+            return true;
+        } catch (ClassNotFoundException ex) { }
+
+        return false;
     }
 }

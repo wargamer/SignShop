@@ -21,7 +21,7 @@ LinkMaterial: redstone
 UpdateMaterial: ink_sack
 DestroyMaterial: gold_axe
 Blacklisted_items:
-  - 0
+- 0
 signs:
   Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
   Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
@@ -49,6 +49,7 @@ signs:
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
   iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
   iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
+  Trade: Chest{1},takePlayerItems,giveShopItems,Chest{2},givePlayerItems,takeShopItems
   TpToOwner: takePlayerMoney,playerIsOp,runCommand
   Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
@@ -84,6 +85,7 @@ messages:
     iSellXP: You have put a bounty of !price for !xp XP
     iBuyXP: You have put !xp XP for sale at a price of !price!
     iTrade: You have setup a trade shop that costs !chest1 for !chest2!
+    Trade: You have setup a trade shop that costs !chest1 for !chest2!
     TpToOwner: You have setup a command example shop, selling teleports to !owner for !price!
     Class: You have setup a shop to sell a class of items for !price!
     Disenchant: You have setup a sign that removes enchantments for !price!
@@ -117,6 +119,7 @@ messages:
     iSellXP: Sell !xp XP for !price?
     iBuyXP: Buy !xp XP for !price?
     iTrade: Buy !chest2 with !chest1?
+    Trade: Buy !chest2 with !chest1?
     TpToOwner: Teleport to !owner for !price?
     Class: Buy the class containing !items for !price?
     Disenchant: Remove enchantments on the item in your hand for !price?
@@ -150,6 +153,7 @@ messages:
     iSellXP: Sold !xp XP for !price!
     iBuyXP: Added !xp XP for !price!
     iTrade: Traded !chest1 for !chest2!
+    Trade: Traded !chest1 for !chest2!
     TpToOwner: You teleported to !owner for !price!
     Class: You bought the class containing !items for !price!
     Disenchant: You removed the enchantments on the item in your hand for !price!
@@ -183,6 +187,7 @@ messages:
     iSellXP: ''
     iBuyXP: ''
     iTrade: ''
+    Trade: \!customer traded !chest1 for your !chest2!
     TpToOwner: \!customer teleported to you for !price!
     Class: ''
     Disenchant: ''
@@ -258,8 +263,6 @@ errors:
   updated_shop: The shop has been succesfully updated.
   failed_to_update_shop: Failed to update the shop due to the error above.
   price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
-  only_one_time: You've already used this shop once and you're not allowed to use it again.
-  nothing_to_reset_ontime: You are allowed to use the shop one time. Come back when you've done so.
 commands:
   TpToOwner:
   - tp !player !owner
