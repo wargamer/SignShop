@@ -2,12 +2,10 @@ package org.wargamer2010.signshop.blocks;
 
 
 import com.bergerkiller.bukkit.common.SafeField;
-import java.util.logging.Level;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import net.minecraft.server.ItemStack;
 import net.minecraft.server.NBTTagCompound;
 import org.bukkit.Material;
-import org.wargamer2010.signshop.SignShop;
 
 public class itemTags implements IItemTags {
     @Override

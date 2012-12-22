@@ -61,7 +61,7 @@ public class itemUtil {
                 1,
                 item.getDurability()
             );
-            addSafeEnchantments(isBackup, item.getEnchantments());
+            safelyAddEnchantments(isBackup, item.getEnchantments());
             if(item.getData() != null) {
                 isBackup.setData(item.getData());
             }
@@ -201,13 +201,11 @@ public class itemUtil {
                 1,
                 item.getDurability()
             );
-            addSafeEnchantments(isBackup, item.getEnchantments());
+            safelyAddEnchantments(isBackup, item.getEnchantments());
             if(item.getData() != null){
                 isBackup.setData(item.getData());
             }
-            if(itemUtil.isWriteableBook(item)) {
-                isBackup = tags.copyTags(item, isBackup);
-            }
+            isBackup = tags.copyTags(item, isBackup);
 
             if(item.getEnchantments().size() > 0)
                 enchantments.put(isBackup, item.getEnchantments());
@@ -232,7 +230,7 @@ public class itemUtil {
             if(itemUtil.isWriteableBook(entry.getKey())) {
                 IBookItem book = BookFactory.getBookItem(entry.getKey());
                 if(book != null && (book.getAuthor() != null || book.getTitle() != null))
-                    sItems += (" (" + (book.getTitle() == null ? "Unkown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unkown" : book.getAuthor()) + ")");
+                    sItems += (" (" + (book.getTitle() == null ? "Unknown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unknown" : book.getAuthor()) + ")");
             }
         }
 
@@ -264,9 +262,10 @@ public class itemUtil {
         }
     }
 
-    public static Boolean addSafeEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {
+    public static Boolean safelyAddEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {
         if(enchantments.isEmpty())
             return true;
+
         try {
             isEnchantMe.addEnchantments(enchantments);
         } catch(IllegalArgumentException ex) {
@@ -317,10 +316,9 @@ public class itemUtil {
             isOriginal.getAmount(),
             isOriginal.getDurability()
         );
-        itemUtil.addSafeEnchantments(isBackup, isOriginal.getEnchantments());
-        if(itemUtil.isWriteableBook(isOriginal)) {
-            isBackup = tags.copyTags(isOriginal, isBackup);
-        }
+        itemUtil.safelyAddEnchantments(isBackup, isOriginal.getEnchantments());
+        isBackup = tags.copyTags(isOriginal, isBackup);
+
 
         if(isOriginal.getData() != null) {
             isBackup.setData(isOriginal.getData());
@@ -366,10 +364,9 @@ public class itemUtil {
                 mInventory.get(entry.getKey()),
                 entry.getKey().getDurability()
             );
-            addSafeEnchantments(isActual[i], entry.getKey().getEnchantments());
-            if(itemUtil.isWriteableBook(entry.getKey())) {
-                isActual[i] = tags.copyTags(entry.getKey(), isActual[i]);
-            }
+            safelyAddEnchantments(isActual[i], entry.getKey().getEnchantments());
+            isActual[i] = tags.copyTags(entry.getKey(), isActual[i]);
+
             if(entry.getKey().getData() != null) {
                 isActual[i].setData(entry.getKey().getData());
             }
@@ -458,7 +455,7 @@ public class itemUtil {
                 );
                 isItems[i].getData().setData(new Byte(sItemprops[3]));
                 if(sItemprops.length > 4)
-                    addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
+                    safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
                 if(sItemprops.length > 5) {
                     try {
                         isItems[i] = SignShopBooks.addBooksProps(isItems[i], Integer.parseInt(sItemprops[5]));
@@ -481,11 +478,13 @@ public class itemUtil {
     public static String[] convertItemStacksToString(ItemStack[] isItems) {
         List<String> sItems = new ArrayList<String>();
 
-        ItemStack isCurrent = null;
+        ItemStack isCurrent;
         for(int i = 0; i < isItems.length; i++) {
             if(isItems[i] != null) {
                 isCurrent = isItems[i];
-                String ID = SignShopBooks.getBookID(isCurrent).toString();
+                String ID = "";
+                if(itemUtil.isWriteableBook(isCurrent))
+                    ID = SignShopBooks.getBookID(isCurrent).toString();
                 sItems.add((isCurrent.getAmount() + Storage.getItemSeperator()
                         + isCurrent.getTypeId() + Storage.getItemSeperator()
                         + isCurrent.getDurability() + Storage.getItemSeperator()
