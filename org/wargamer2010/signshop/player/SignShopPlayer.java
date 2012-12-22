@@ -79,7 +79,7 @@ public class SignShopPlayer {
         else
             return ssPlayer.isOp();
     }
-
+    
     public Boolean hasPerm(String perm, Boolean OPOperation) {
         if(ssPlayer == null)
             return false;

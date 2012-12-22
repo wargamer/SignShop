@@ -10,6 +10,8 @@ import org.bukkit.Material;
 public class itemTags implements IItemTags {
     @Override
     public org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
+        if(from == null || to == null)
+            return to;
         try {
             ItemStack s = ((CraftItemStack) from).getHandle();
             if(s.tag == null) {
