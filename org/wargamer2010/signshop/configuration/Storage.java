@@ -299,7 +299,7 @@ public class Storage {
                         isItems[i].getData().setData(new Byte(datas.get(i)));
 
                     if(enchantments != null && enchantments.get(i) != null)
-                        itemUtil.addSafeEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));
+                        itemUtil.safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));
                 }
                 List<Block> seller_containables = new LinkedList<Block>();
                 List<Block> seller_activatables = new LinkedList<Block>();

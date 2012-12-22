@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBooks {
@@ -61,6 +62,9 @@ public class SignShopBooks {
     }
 
     public static Integer getBookID(ItemStack bookStack) {
+        if(!itemUtil.isWriteableBook(bookStack))
+            return -1;
+
         SSDatabase db = new SSDatabase(filename);
         IBookItem item = BookFactory.getBookItem(bookStack);
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();

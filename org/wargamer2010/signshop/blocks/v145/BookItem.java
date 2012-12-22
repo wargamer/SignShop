@@ -29,12 +29,9 @@ public class BookItem implements IBookItem {
         private ItemStack _stack = null;
 
         public BookItem(org.bukkit.inventory.ItemStack pItem) {
-            if(!pItem.hasItemMeta()) {
+            if(pItem.getItemMeta() instanceof BookMeta) {
                 meta = (BookMeta)pItem.getItemMeta();
                 pItem.setItemMeta(meta);
-            } else {
-                if(pItem.getItemMeta() instanceof BookMeta)
-                    meta = (BookMeta)pItem.getItemMeta();
             }
             this._stack = pItem;
         }
