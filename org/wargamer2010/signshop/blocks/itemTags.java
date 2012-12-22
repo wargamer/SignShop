@@ -3,9 +3,9 @@ package org.wargamer2010.signshop.blocks;
 
 import com.bergerkiller.bukkit.common.SafeField;
 import java.util.logging.Level;
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
-import net.minecraft.server.ItemStack;
-import net.minecraft.server.NBTTagCompound;
+import org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack;
+import net.minecraft.server.v1_4_6.ItemStack;
+import net.minecraft.server.v1_4_6.NBTTagCompound;
 import org.bukkit.Material;
 import org.wargamer2010.signshop.SignShop;
 
@@ -13,11 +13,11 @@ public class itemTags implements IItemTags {
     @Override
     public org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
         try {
-            ItemStack s = ((CraftItemStack) from).getHandle();
-            if(s.tag == null) {
-                s.tag = new NBTTagCompound();
+            ItemStack s = CraftItemStack.asNMSCopy(from);
+            if(s.getTag() == null) {
+                s.setTag(new NBTTagCompound());
             }
-            ((CraftItemStack) to).getHandle().setTag((NBTTagCompound)s.tag.clone());
+            CraftItemStack.asNMSCopy(to).setTag((NBTTagCompound)s.getTag().clone());
             return to;
         } catch(ClassCastException ex) {
             return to;

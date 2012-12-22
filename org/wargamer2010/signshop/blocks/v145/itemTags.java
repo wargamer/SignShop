@@ -14,7 +14,7 @@ public class itemTags implements IItemTags {
 
     @Override
     public void setItemMaxSize(Material material, int maxstacksize) {
-        SafeField.set(net.minecraft.server.v1_4_5.Item.byId[material.getId()], "maxStackSize", maxstacksize);
+        SafeField.set(net.minecraft.server.v1_4_6.Item.byId[material.getId()], "maxStackSize", maxstacksize);
     }
 
     @Override
