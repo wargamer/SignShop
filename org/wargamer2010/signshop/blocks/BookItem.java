@@ -17,25 +17,25 @@
  package org.wargamer2010.signshop.blocks;
 
 
-import net.minecraft.server.NBTTagCompound;
-import net.minecraft.server.NBTTagList;
-import net.minecraft.server.NBTTagString;
+import net.minecraft.server.v1_4_6.NBTTagCompound;
+import net.minecraft.server.v1_4_6.NBTTagList;
+import net.minecraft.server.v1_4_6.NBTTagString;
 
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 
 public class BookItem implements IBookItem {
 
-        private net.minecraft.server.ItemStack item = null;
+        private net.minecraft.server.v1_4_6.ItemStack item = null;
         private CraftItemStack stack = null;
 
         public BookItem(org.bukkit.inventory.ItemStack item) {
             if(item instanceof CraftItemStack) {
                     stack = (CraftItemStack)item;
-                    this.item = stack.getHandle();
-            }else if(item instanceof org.bukkit.inventory.ItemStack) {
-                    stack = new CraftItemStack(item);
-                    this.item = stack.getHandle();
+                    this.item = CraftItemStack.asNMSCopy(stack);
+            } else if(item instanceof org.bukkit.inventory.ItemStack) {
+                    stack = CraftItemStack.asCraftCopy(item);
+                    this.item = CraftItemStack.asNMSCopy(item);
             }
         }
 
