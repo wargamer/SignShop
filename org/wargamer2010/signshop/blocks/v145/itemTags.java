@@ -8,6 +8,8 @@ import org.wargamer2010.signshop.blocks.IItemTags;
 public class itemTags implements IItemTags {
     @Override
     public org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
+        if(from == null || to == null || from.getItemMeta() == null)
+            return to;
         to.setItemMeta(from.getItemMeta().clone());
         return to;
     }
