@@ -22,6 +22,7 @@ import org.bukkit.event.Event;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
+import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.util.clicks;
@@ -39,7 +40,6 @@ public class SignShop extends JavaPlugin{
     //Statics
     private static Storage store;
     private static SignShopConfig SignShopConfig;
-    private static SignShopBooks BookStore = new SignShopBooks();
 
     //Permissions
     private static boolean USE_PERMISSIONS = false;
@@ -108,7 +108,8 @@ public class SignShop extends JavaPlugin{
 
         SignShopConfig = new SignShopConfig();
         SignShopConfig.init();
-        BookStore.init();
+        SignShopBooks.init();
+        SignShopItemMeta.init();
         fixStackSize();
 
         //Create a storage locker for shops

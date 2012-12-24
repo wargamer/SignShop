@@ -12,6 +12,7 @@ import org.wargamer2010.signshop.util.itemUtil;
 import com.kellerkindt.scs.*;
 import java.util.LinkedHashMap;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
+import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {
@@ -34,7 +35,7 @@ public class Seller {
         if(pMiscProps != null)
             miscProps.putAll(pMiscProps);
         if(save)
-            storeBooks();
+            storeMeta();
     }
 
     public ItemStack[] getItems() {
@@ -94,11 +95,12 @@ public class Seller {
         }
     }
 
-    private void storeBooks() {
+    private void storeMeta() {
         for(ItemStack stack : isItems) {
             if(itemUtil.isWriteableBook(stack)) {
                 SignShopBooks.addBook(stack);
             }
+            SignShopItemMeta.storeMeta(stack);
         }
     }
 
