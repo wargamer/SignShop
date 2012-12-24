@@ -15,13 +15,16 @@ public class SignShopBooks {
     private static char pageSeperator = (char)3;
     private static String filename = "books.db";
 
-    public void init() {
+    private SignShopBooks() {
+        
+    }
+
+    public static void init() {
         SSDatabase db = new SSDatabase(filename);
 
-        if(db.isNewDB()) {
+        if(!db.tableExists("Book")) {
             db.runStatement("CREATE TABLE Book ( BookID INTEGER, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);
             db.close();
-            db.setNewDB(false);
         }
     }
 

@@ -21,6 +21,7 @@ import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
+import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -463,6 +464,13 @@ public class itemUtil {
 
                     }
                 }
+                if(sItemprops.length > 6) {
+                    try {
+                        SignShopItemMeta.setMetaForID(isItems[i], Integer.parseInt(sItemprops[6]));
+                    } catch(NumberFormatException ex) {
+
+                    }
+                }
             } catch(Exception ex) {
                 continue;
             }
@@ -485,12 +493,16 @@ public class itemUtil {
                 String ID = "";
                 if(itemUtil.isWriteableBook(isCurrent))
                     ID = SignShopBooks.getBookID(isCurrent).toString();
+                String metaID = SignShopItemMeta.getMetaID(isCurrent).toString();
+                if(metaID.equals("-1"))
+                    metaID = "";
                 sItems.add((isCurrent.getAmount() + Storage.getItemSeperator()
                         + isCurrent.getTypeId() + Storage.getItemSeperator()
                         + isCurrent.getDurability() + Storage.getItemSeperator()
                         + isCurrent.getData().getData() + Storage.getItemSeperator()
                         + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
-                        + ID));
+                        + ID + Storage.getItemSeperator()
+                        + metaID));
             }
 
         }

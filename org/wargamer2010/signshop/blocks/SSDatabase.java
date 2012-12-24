@@ -15,10 +15,12 @@ import java.sql.Driver;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.wargamer2010.signshop.SignShop;
 
 public class SSDatabase {
@@ -27,7 +29,6 @@ public class SSDatabase {
     private Connection conn = null;
     private ReentrantLock loadLocker = new ReentrantLock();
     private String filename = "";
-    private boolean newDB = false;
 
     public SSDatabase(final String pFilename) {
         filename = pFilename;
@@ -35,17 +36,22 @@ public class SSDatabase {
         if(driver == null)
             loadLib();
 
-        File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
-        if(!DBFile.exists())
-            newDB = true;
+        this.open();
     }
 
-    public boolean isNewDB() {
-        return newDB;
-    }
+    public Boolean tableExists(String tablename) {
+        try {
+            Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
+            pars.put(1, "table");
+            pars.put(2, tablename);
+            ResultSet set = (ResultSet)runStatement("SELECT name FROM sqlite_master WHERE type = ? AND name = ?;", pars, true);
+            if(set.next()) {
+                set.close();
+                return true;
+            }
+        } catch (SQLException ex) { }
 
-    public void setNewDB(boolean newDB) {
-        this.newDB = newDB;
+        return false;
     }
 
     public final void loadLib() {
@@ -121,7 +127,7 @@ public class SSDatabase {
         }
     }
 
-    public void open() {
+    public final void open() {
         if(driver == null)
             return;
         try {
@@ -141,7 +147,6 @@ public class SSDatabase {
     }
 
     public Object runStatement(String Query, Map<Integer, Object> params, Boolean expectingResult) {
-        this.open();
         try {
             PreparedStatement st = conn.prepareStatement(Query, PreparedStatement.RETURN_GENERATED_KEYS);
 
