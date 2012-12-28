@@ -1,6 +1,7 @@
 
 package org.wargamer2010.signshop.blocks;
 
+import com.google.common.collect.ImmutableList;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
@@ -8,24 +9,40 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Color;
+import org.bukkit.FireworkEffect;
+import org.bukkit.FireworkEffect.Builder;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
-import org.bukkit.material.Skull;
-import org.wargamer2010.signshop.SignShop;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+import org.wargamer2010.signshop.util.itemUtil;
 
 import org.wargamer2010.signshop.util.signshopUtil;
 public class SignShopItemMeta {
     private static final String listSeperator = "~";
+    private static final String valueSeperator = "-";
+    private static final String innerListSeperator = "^";
+    private static Map<String, String> headResolves = null;
     private static String filename = "books.db";
+    private static Boolean legacy = false;
 
     private SignShopItemMeta() {
 
     }
 
     public static void init() {
+        try {
+            Class.forName("org.bukkit.inventory.meta.ItemMeta");
+        } catch (ClassNotFoundException ex) {
+            legacy = true;
+            return;
+        }
+
+
         SSDatabase db = new SSDatabase(filename);
 
         try {
@@ -38,8 +55,143 @@ public class SignShopItemMeta {
         }
     }
 
+    public static String convertColorsToDisplay(List<Color> colors) {
+        if(colors == null || colors.isEmpty())
+            return "";
+        List<String> temp = new LinkedList<String>();
+
+        for(Color color : colors) {
+            temp.add(itemUtil.getColorAsString(color));
+        }
+
+        String[] arr = new String[temp.size()];
+        return signshopUtil.implode(temp.toArray(arr), ", ");
+    }
+
+    private static String convertFireworkTypeToDisplay(FireworkEffect.Type type) {
+        String temp = signshopUtil.capFirstLetter(type.toString().toLowerCase()).replace("_", " ");
+        if(temp.contains(" ")) {
+            String[] temparr = temp.split(" ");
+            String bak = temparr[0]; temparr[0] = temparr[1];
+            temparr[1] = bak;
+            temp = signshopUtil.implode(temparr, " ");
+        }
+        return signshopUtil.capFirstLetter(temp);
+    }
+
+    private static String resolveUknownHeads(int ID, short durability) {
+        if(headResolves == null) {
+            headResolves = new LinkedHashMap<String, String>();
+            headResolves.put("3970", "Skeleton Skull");
+            headResolves.put("3971", "Wither Skeleton Skull");
+            headResolves.put("3972", "Zombie Head");
+            headResolves.put("3973", "Steve's Head");
+            headResolves.put("3974", "Creeper Head");
+        }
+        String fullid = (Integer.toString(ID) + Short.toString(durability));
+        if(headResolves.containsKey(fullid)) {
+            return headResolves.get(fullid);
+        }
+        return "";
+
+    }
+
+    public static String getName(ItemStack stack) {
+        if(isLegacy())
+            return "";
+
+        ItemMeta meta = stack.getItemMeta();
+        List<MetaType> metatypes = getTypesOfMeta(meta);
+        for(MetaType type : metatypes) {
+            if(type == MetaType.EnchantmentStorage) {
+                EnchantmentStorageMeta enchantmeta = (EnchantmentStorageMeta) meta;
+                if(enchantmeta.hasStoredEnchants())
+                    return (ChatColor.DARK_PURPLE + itemUtil.formatData(stack.getData(), stack.getDurability()) + ChatColor.WHITE + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
+            } else if(type == MetaType.LeatherArmor) {
+                LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
+                return (itemUtil.getColorAsString(leathermeta.getColor()) + " Colored " + itemUtil.formatData(stack.getData(), stack.getDurability()));
+            } else if(type == MetaType.Skull) {
+                String postfix = "'s Head";
+                SkullMeta skullmeta = (SkullMeta) meta;
+                if(skullmeta.getOwner() != null) {
+                    if(Bukkit.getServer().getPlayer(skullmeta.getOwner()) == null) {
+                        if(Bukkit.getServer().getOfflinePlayer(skullmeta.getOwner()) == null) {
+                            return (skullmeta.getOwner() + postfix);
+                        } else {
+                            return (Bukkit.getServer().getOfflinePlayer(skullmeta.getOwner()).getName() + postfix);
+                        }
+                    } else {
+                        return (ChatColor.RESET + Bukkit.getServer().getPlayer(skullmeta.getOwner()).getDisplayName() + postfix);
+                    }
+                } else {
+                    return resolveUknownHeads(stack.getTypeId(), stack.getDurability());
+                }
+            } else if(type == MetaType.Potion) {
+                PotionMeta potionmeta = (PotionMeta) meta;
+                boolean first = true;
+                StringBuilder namebuilder = new StringBuilder();
+                namebuilder.append(ChatColor.DARK_PURPLE);
+                namebuilder.append(itemUtil.formatData(stack.getData(), stack.getDurability()));
+                namebuilder.append(ChatColor.WHITE);
+
+                if(potionmeta.hasCustomEffects()) {
+                    namebuilder.append(" (");
+                    for(PotionEffect effect : potionmeta.getCustomEffects()) {
+                        if(first) first = false;
+                        else namebuilder.append(", ");
+
+                        namebuilder.append(signshopUtil.capFirstLetter(effect.getType().getName().toLowerCase()));
+                        namebuilder.append(" with");
+                        namebuilder.append(" amplifier: ");
+                        namebuilder.append(effect.getAmplifier());
+                        namebuilder.append(" and duration: ");
+                        namebuilder.append(effect.getDuration());
+                    }
+                    namebuilder.append(")");
+                }
+
+                return namebuilder.toString();
+            } else if(type == MetaType.Fireworks) {
+                FireworkMeta fireworkmeta = (FireworkMeta) meta;
+
+                StringBuilder namebuilder = new StringBuilder();
+                namebuilder.append(ChatColor.DARK_PURPLE);
+                namebuilder.append(itemUtil.formatData(stack.getData(), stack.getDurability()));
+                namebuilder.append(ChatColor.WHITE);
+
+                if(fireworkmeta.hasEffects()) {
+                    namebuilder.append(" (");
+                    namebuilder.append("Duration : ");
+                    namebuilder.append(fireworkmeta.getPower());
+                    for(FireworkEffect effect : fireworkmeta.getEffects()) {
+                        namebuilder.append(", ");
+
+                        namebuilder.append(convertFireworkTypeToDisplay(effect.getType()));
+                        namebuilder.append(" with");
+                        namebuilder.append((effect.getColors().size() > 0 ? " colors: " : ""));
+                        namebuilder.append(convertColorsToDisplay(effect.getColors()));
+                        namebuilder.append((effect.getFadeColors().size() > 0 ? " and fadecolors: " : ""));
+                        namebuilder.append(convertColorsToDisplay(effect.getFadeColors()));
+
+                        namebuilder.append(effect.hasFlicker() ? " +twinkle" : "");
+                        namebuilder.append(effect.hasTrail()? " +trail" : "");
+                    }
+                    namebuilder.append(")");
+                }
+
+                return namebuilder.toString();
+            }
+        }
+
+        if(stack.getItemMeta().getDisplayName() != null && !stack.getItemMeta().getDisplayName().isEmpty())
+            return stack.getItemMeta().getDisplayName();
+        return "";
+    }
 
     public static void setMetaForID(ItemStack stack, Integer ID) {
+        if(isLegacy())
+            return;
+
         SSDatabase db = new SSDatabase(filename);
 
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
@@ -86,7 +238,7 @@ public class SignShopItemMeta {
                 else if(type == MetaType.LeatherArmor) {
                     LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
                     if(!getPropValue("color", metamap).isEmpty())
-                        leathermeta.setColor(Color.fromRGB(Integer.getInteger(getPropValue("color", metamap))));
+                        leathermeta.setColor(Color.fromRGB(Integer.parseInt(getPropValue("color", metamap))));
                 }
                 else if(type == MetaType.Map) {
                     MapMeta mapmeta = (MapMeta) meta;
@@ -96,12 +248,22 @@ public class SignShopItemMeta {
                 else if(type == MetaType.Repairable) {
                     Repairable repairmeta = (Repairable) meta;
                     if(!getPropValue("repaircost", metamap).isEmpty())
-                        repairmeta.setRepairCost(Integer.getInteger(getPropValue("repaircost", metamap)));
+                        repairmeta.setRepairCost(Integer.parseInt(getPropValue("repaircost", metamap)));
                 }
                 else if(type == MetaType.Skull) {
                     SkullMeta skullmeta = (SkullMeta) meta;
                     if(!getPropValue("owner", metamap).isEmpty())
                         skullmeta.setOwner(getPropValue("owner", metamap));
+                } else if(type == MetaType.Potion) {
+                    PotionMeta potionmeta = (PotionMeta) meta;
+                    List<PotionEffect> effects = convertStringToPotionMeta(getPropValue("potioneffects", metamap));
+                    for(PotionEffect effect : effects) {
+                        potionmeta.addCustomEffect(effect, true);
+                    }
+                } else if(type == MetaType.Fireworks) {
+                    FireworkMeta fireworkmeta = (FireworkMeta) meta;
+                    fireworkmeta.addEffects(convertStringToFireworkEffects(getPropValue("fireworkeffects", metamap)));
+                    fireworkmeta.setPower(Integer.parseInt(getPropValue("fireworkpower", metamap)));
                 }
             }
         } catch(ClassCastException ex) {
@@ -115,6 +277,9 @@ public class SignShopItemMeta {
     }
 
     public static Integer storeMeta(ItemStack stack) {
+        if(isLegacy())
+            return -1;
+
         SSDatabase db = new SSDatabase(filename);
         Map<String, String> metamap = getMetaAsMap(stack.getItemMeta());
 
@@ -147,6 +312,9 @@ public class SignShopItemMeta {
     }
 
     public static Integer getMetaID(ItemStack stack) {
+        if(isLegacy())
+            return -1;
+
         return getMetaID(stack, null);
     }
 
@@ -206,6 +374,17 @@ public class SignShopItemMeta {
                 if(repairmeta.hasRepairCost()) {
                     metamap.put("repaircost", Integer.toString(repairmeta.getRepairCost()));
                 }
+            } else if(type == MetaType.Potion) {
+                PotionMeta potionmeta = (PotionMeta) meta;
+                if(potionmeta.hasCustomEffects()) {
+                    metamap.put("potioneffects", convertPotionMetaToString(potionmeta));
+                }
+            } else if(type == MetaType.Fireworks) {
+                FireworkMeta fireworkmeta = (FireworkMeta) meta;
+                if(fireworkmeta.hasEffects()) {
+                    metamap.put("fireworkeffects", convertFireworkMetaToString(fireworkmeta));
+                    metamap.put("fireworkpower", Integer.toString(fireworkmeta.getPower()));
+                }
             }
         }
 
@@ -225,7 +404,10 @@ public class SignShopItemMeta {
             types.add(MetaType.Skull);
         if(meta instanceof org.bukkit.inventory.meta.Repairable)
             types.add(MetaType.Repairable);
-
+        if(meta instanceof org.bukkit.inventory.meta.PotionMeta)
+            types.add(MetaType.Potion);
+        if(meta instanceof org.bukkit.inventory.meta.FireworkMeta)
+            types.add(MetaType.Fireworks);
         return types;
     }
 
@@ -237,11 +419,129 @@ public class SignShopItemMeta {
         }
     }
 
+    private static String convertPotionMetaToString(PotionMeta meta) {
+        if(!meta.hasCustomEffects())
+            return "";
+        StringBuilder returnbuilder = new StringBuilder();
+        for(PotionEffect effect : meta.getCustomEffects()) {
+            returnbuilder.append(Integer.toString(effect.getType().getId()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(Integer.toString(effect.getDuration()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(Integer.toString(effect.getAmplifier()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(Boolean.toString(effect.isAmbient()));
+            returnbuilder.append(listSeperator);
+        }
+        return returnbuilder.toString();
+    }
+
+    private static List<PotionEffect> convertStringToPotionMeta(String meta) {
+        List<PotionEffect> effects = new LinkedList<PotionEffect>();
+        List<String> splitted = Arrays.asList(meta.split(listSeperator));
+        if(splitted.isEmpty())
+            return effects;
+        for(String split : splitted) {
+            String[] bits = split.split(valueSeperator);
+            if(bits.length == 4) {
+                try {
+                    int id = Integer.parseInt(bits[0]);
+                    int dur = Integer.parseInt(bits[1]);
+                    int amp = Integer.parseInt(bits[2]);
+                    boolean amb = Boolean.parseBoolean(bits[3]);
+                    effects.add(new PotionEffect(PotionEffectType.getById(id), dur, amp, amb));
+                } catch(NumberFormatException ex) {
+                    continue;
+                }
+            }
+        }
+
+        return effects;
+    }
+
+    private static String getColorsAsAString(List<Color> colors) {
+        List<String> temp = new LinkedList<String>();
+        for(Color color : colors) {
+            temp.add(Integer.toString(color.asRGB()));
+        }
+        String[] colorarr = new String[temp.size()];
+        return signshopUtil.implode(temp.toArray(colorarr), innerListSeperator);
+    }
+
+    private static ImmutableList<Color> getColorsFromString(String colors) {
+        List<Color> temp = new LinkedList<Color>();
+        List<String> split = Arrays.asList(colors.split(innerListSeperator));
+        for(String part : split) {
+            try {
+                temp.add(Color.fromRGB(Integer.parseInt(part)));
+            } catch(NumberFormatException ex) {
+                continue;
+            }
+        }
+
+        return ImmutableList.copyOf(temp);
+    }
+
+    private static String convertFireworkMetaToString(FireworkMeta meta) {
+        if(!meta.hasEffects())
+            return "";
+        StringBuilder returnbuilder = new StringBuilder();
+
+        for(FireworkEffect effect : meta.getEffects()) {
+            returnbuilder.append(effect.getType().toString());
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(getColorsAsAString(effect.getColors()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(getColorsAsAString(effect.getFadeColors()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(Boolean.toString(effect.hasFlicker()));
+            returnbuilder.append(valueSeperator);
+            returnbuilder.append(Boolean.toString(effect.hasTrail()));
+            returnbuilder.append(listSeperator);
+        }
+        return returnbuilder.toString();
+    }
+
+    private static List<FireworkEffect> convertStringToFireworkEffects(String meta) {
+        List<FireworkEffect> effects = new LinkedList<FireworkEffect>();
+        List<String> splitted = Arrays.asList(meta.split(listSeperator));
+        if(splitted.isEmpty())
+            return effects;
+        for(String split : splitted) {
+            String[] bits = split.split(valueSeperator);
+            if(bits.length == 5) {
+                try {
+                    Builder builder = FireworkEffect.builder().with(FireworkEffect.Type.valueOf(bits[0]));
+                    ImmutableList<Color> colors = getColorsFromString(bits[1]);
+                    if(colors != null)
+                        builder = builder.withColor(colors);
+                    ImmutableList<Color> fadecolors = getColorsFromString(bits[2]);
+                    if(fadecolors != null)
+                        builder = builder.withFade(fadecolors);
+                    builder = (Boolean.parseBoolean(bits[3]) ? builder.withFlicker() : builder);
+                    builder = (Boolean.parseBoolean(bits[4]) ? builder.withTrail() : builder);
+
+                    effects.add(builder.build());
+                } catch(NumberFormatException ex) {
+                    continue;
+                }
+            }
+        }
+        return effects;
+    }
+
+
+    private static Boolean isLegacy() {
+        return legacy;
+    }
+
     private static enum MetaType {
         EnchantmentStorage,
         LeatherArmor,
         Map,
+        Potion,
         Repairable,
+        Fireworks,
         Skull,
         Stock,
     }

@@ -482,4 +482,22 @@ public class signshopUtil {
             return true;
         }
     }
+
+    public static String capFirstLetter(String string) {
+        if(string == null || string.isEmpty())
+            return string;
+        String[] spacesplit;
+        if(string.contains(" "))
+            spacesplit = string.split(" ");
+        else {
+            spacesplit = new String[1];
+            spacesplit[0] = string;
+        }
+        for(int i = 0; i < spacesplit.length; i++) {
+            char[] arr = spacesplit[i].toCharArray();
+            arr[0] = Character.toUpperCase(arr[0]);
+            spacesplit[i] = new String(arr);
+        }
+        return implode(spacesplit, " ");
+    }
 }

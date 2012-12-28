@@ -13,10 +13,13 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
+import org.bukkit.Color;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
@@ -29,6 +32,7 @@ import org.wargamer2010.signshop.operations.SignShopArguments;
 
 public class itemUtil {
     private static HashMap<Integer, String> discs;
+    private static Map<Integer, String> colorLookup = null;
 
     private itemUtil() {
 
@@ -133,11 +137,11 @@ public class itemUtil {
     }
 
     public static String formatData(MaterialData data) {
-        Short s = 0;
+        short s = 0;
         return formatData(data, s);
     }
 
-    public static String formatData(MaterialData data, Short durability) {
+    public static String formatData(MaterialData data, short durability) {
         String sData;
         // Lookup spout custom material
         if(Bukkit.getServer().getPluginManager().isPluginEnabled("Spout")) {
@@ -192,7 +196,7 @@ public class itemUtil {
         HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
         String sItems = "";
         Boolean first = true;
-        Integer tempAmount = 0;
+        Integer tempAmount;
         IItemTags tags = BookFactory.getItemTags();
         for(ItemStack item: isStacks) {
             if(item == null)
@@ -224,7 +228,11 @@ public class itemUtil {
             String sDamaged = " ";
             if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
                 sDamaged = " Damaged ";
-            sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
+            String newItemMeta = SignShopItemMeta.getName(entry.getKey());
+            if(newItemMeta.isEmpty())
+                sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
+            else
+                sItems += (entry.getValue() + sDamaged + newItemMeta);
             if(enchantments.containsKey(entry.getKey())) {
                 sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
             }
@@ -285,7 +293,7 @@ public class itemUtil {
     public static HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
         ItemStack[] isBackup = getBackupItemStack(isStacks);
         HashMap<ItemStack, Integer> mReturn = new HashMap<ItemStack, Integer>();
-        int tempAmount = 0;
+        int tempAmount;
         for(int i = 0; i < isBackup.length; i++) {
             if(isBackup[i] == null) continue;
             tempAmount = isBackup[i].getAmount();
@@ -509,5 +517,42 @@ public class itemUtil {
         String[] items = new String[sItems.size()];
         sItems.toArray(items);
         return items;
+    }
+
+    public static String getColorAsString(Color color) {
+        if(colorLookup == null) {
+            colorLookup = new HashMap<Integer, String>();
+
+            colorLookup.put(8339378 , "purple");
+            colorLookup.put(11685080 , "magenta");
+            colorLookup.put(8073150 , "purple");
+            colorLookup.put(6724056 , "light blue");
+            colorLookup.put(5013401 , "cyan");
+            colorLookup.put(5000268 , "gray");
+            colorLookup.put(10066329 , "light gray");
+            colorLookup.put(15892389 , "pink");
+            colorLookup.put(14188339 , "orange");
+            colorLookup.put(8375321 , "lime");
+            colorLookup.put(11743532 , "red");
+            colorLookup.put(2437522 , "blue");
+            colorLookup.put(15066419 , "yellow");
+            colorLookup.put(10040115 , "red");
+            colorLookup.put(1644825 , "black");
+            colorLookup.put(6704179 , "brown");
+            colorLookup.put(6717235 , "green");
+            colorLookup.put(16777215 , "white");
+            colorLookup.put(3361970 , "blue");
+            colorLookup.put(1973019 , "black");
+            colorLookup.put(14188952 , "pink");
+            colorLookup.put(14602026, "yellow");
+        }
+
+        int rgb = color.asRGB();
+        if(colorLookup.containsKey(rgb)) {
+            return signshopUtil.capFirstLetter(colorLookup.get(rgb));
+        } else {
+            SignShop.log("Could not find color with RGB of: " + rgb, Level.WARNING);
+            return "Unknown";
+        }
     }
 }
