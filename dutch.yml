@@ -227,6 +227,8 @@ errors:
   updated_shop: The winkel is succesvol geüpdatet.
   failed_to_update_shop: De winkel kon niet geüpdate worden, de reden is hierboven vermeld.
   price_drawn_from_essentials: Let op, de prijs wordt door Essentials bepaald en is dus variabel.
+  only_one_time: Je mag deze winkel slechts eenmalig gebruiken.
+  nothing_to_reset_ontime: Je mag de gegeven winkel al één keer gebruiken. Er valt dus niets te resetten.
 commands:
   TpToOwner:
   - tp !player !owner

@@ -10,9 +10,8 @@ public class clicks {
     public static Map<Location, Player> mClicksPerLocation = new LinkedHashMap<Location, Player>();
     public static Map<String, Player> mClicksPerPlayername = new LinkedHashMap<String, Player>();
 
-    public static void init() {
-        mClicksPerLocation = new LinkedHashMap<Location, Player>();
-        mClicksPerPlayername = new LinkedHashMap<String, Player>();
+    private clicks() {
+
     }
 
     public static void removePlayerFromClickmap(Player player) {

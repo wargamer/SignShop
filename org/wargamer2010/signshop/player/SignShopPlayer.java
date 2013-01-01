@@ -1,29 +1,30 @@
 package org.wargamer2010.signshop.player;
 
+import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.util.itemUtil;
-
-import net.milkbowl.vault.economy.EconomyResponse;
+import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopPlayer {
-    Player ssPlayer = null;
-    String sPlayername = "";
+    private Player ssPlayer = null;
+    private String sPlayername = "";
+    private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
 
-    public SignShopPlayer() {
+    private SignShopPlayer() {
+
     }
 
     public SignShopPlayer(String sName) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
 
-        for(Player pPlayer : players){
+        for(Player pPlayer : players) {
             if(pPlayer.getName().equals(sName)){
                 ssPlayer = pPlayer;
             }
@@ -71,7 +72,34 @@ public class SignShopPlayer {
             ssPlayer.setOp(OP);
     }
 
-    public Boolean isOp() {
+    public static boolean isOp(Player player) {
+        if(player == null)
+            return false;
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        return ssPlayer.isOp(player.getWorld());
+    }
+
+    public boolean isOp() {
+        if(ssPlayer == null)
+            return false;
+        return isOp(ssPlayer.getWorld());
+    }
+
+
+    public boolean isOp(World world) {
+        return isOp(world, "");
+    }
+
+    public boolean isOp(World world, String perm) {
+        if(isOpRaw())
+            return true;
+        String fullperm = (perm.isEmpty() ? "SignShop.SuperAdmin" : "SignShop.SuperAdmin." + perm);
+        if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, fullperm))
+            return true;
+        return false;
+    }
+
+    private boolean isOpRaw() {
         if(sPlayername.isEmpty())
             return false;
         if(ssPlayer == null)
@@ -79,19 +107,19 @@ public class SignShopPlayer {
         else
             return ssPlayer.isOp();
     }
-    
+
     public Boolean hasPerm(String perm, Boolean OPOperation) {
         if(ssPlayer == null)
             return false;
         return this.hasPerm(perm, ssPlayer.getWorld(), OPOperation);
     }
 
-    public Boolean hasPerm(String perm, World world, Boolean OPOperation) {
+    public boolean hasPerm(String perm, World world, Boolean OPOperation) {
         if(Vault.permission == null)
             return false;
         if(sPlayername.isEmpty())
             return true;
-        Boolean isOP = isOp();
+        Boolean isOP = isOpRaw();
         Boolean OPOverride = SignShopConfig.getOPOverride();
         // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
@@ -115,7 +143,7 @@ public class SignShopPlayer {
         return false;
     }
 
-    public Boolean hasMoney(float amount) {
+    public boolean hasMoney(float amount) {
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -124,7 +152,7 @@ public class SignShopPlayer {
             return Vault.economy.has(sPlayername, amount);
     }
 
-    public Boolean canHaveMoney(float amount) {
+    public boolean canHaveMoney(float amount) {
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -138,7 +166,7 @@ public class SignShopPlayer {
         return true;
     }
 
-    public Boolean mutateMoney(float amount) {
+    public boolean mutateMoney(float amount) {
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -184,7 +212,7 @@ public class SignShopPlayer {
 
     public Float getPlayerPricemod(String sOperation, Boolean bBuyorSell) {
         Float fPricemod = 1.0f;
-        Float fTemp = fPricemod;
+        Float fTemp;
         if(Vault.permission == null || ssPlayer == null)
             return fPricemod;
         String[] sGroups = getPlayerGroups();
@@ -232,6 +260,22 @@ public class SignShopPlayer {
         }
 
         return ((!bInRelGroup) ? 0 : iLimit);
+    }
+
+    public boolean setMeta(String key, String value) {
+        return meta.setMetavalue(key, value);
+    }
+
+    public String getMeta(String key) {
+        return meta.getMetaValue(key);
+    }
+
+    public boolean hasMeta(String key) {
+        return meta.hasMeta(key);
+    }
+
+    public boolean removeMeta(String key) {
+        return meta.removeMeta(key);
     }
 
 }

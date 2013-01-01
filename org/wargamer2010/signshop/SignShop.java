@@ -25,8 +25,10 @@ import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
-import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.metrics.setupMetrics;
+import org.wargamer2010.signshop.player.PlayerMetadata;
+import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.timing.TimeManager;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
@@ -40,6 +42,7 @@ public class SignShop extends JavaPlugin{
     //Statics
     private static Storage store;
     private static SignShopConfig SignShopConfig;
+    private static TimeManager manager = null;
 
     //Permissions
     private static boolean USE_PERMISSIONS = false;
@@ -98,7 +101,7 @@ public class SignShop extends JavaPlugin{
             this.getDataFolder().mkdir();
         }
         itemUtil.initDiscs();
-        clicks.init();
+
         instance = this;
         metricsSetup = new setupMetrics();
         if(metricsSetup.setup(this))
@@ -109,11 +112,13 @@ public class SignShop extends JavaPlugin{
         SignShopConfig = new SignShopConfig();
         SignShopConfig.init();
         SignShopBooks.init();
+        PlayerMetadata.init();
         SignShopItemMeta.init();
         fixStackSize();
 
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
+        manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
 
         try {
             FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
@@ -156,7 +161,7 @@ public class SignShop extends JavaPlugin{
             return true;
         if(args.length != 1)
             return false;
-        if((sender instanceof Player) && !((Player)sender).isOp()) {
+        if((sender instanceof Player) && !SignShopPlayer.isOp((Player)sender)) {
             ((Player)sender).sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
             return true;
         }
@@ -244,6 +249,10 @@ public class SignShop extends JavaPlugin{
 
     public static boolean usePermissions() {
         return USE_PERMISSIONS;
+    }
+
+    public static TimeManager getTimeManager() {
+        return manager;
     }
 
 

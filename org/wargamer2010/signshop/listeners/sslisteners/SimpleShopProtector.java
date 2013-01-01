@@ -18,6 +18,7 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -42,7 +43,7 @@ public class SimpleShopProtector implements Listener {
     private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || player.isOp()))) {
+            if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player)))) {
                 Storage.get().removeSeller(bBlock.getLocation());
                 return true;
             } else

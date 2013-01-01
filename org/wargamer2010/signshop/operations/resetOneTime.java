@@ -1,20 +1,18 @@
 package org.wargamer2010.signshop.operations;
 
-import java.util.Date;
 import java.util.logging.Level;
 import org.bukkit.entity.Player;
-import org.bukkit.metadata.MetadataValue;
-import org.bukkit.plugin.Plugin;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class resetOneTime implements SignShopOperation {
 
     private String getParam(SignShopArguments ssArgs) {
         String rawparam = ssArgs.get_sOperation().toLowerCase();
         if(ssArgs.hasOperationParameters())
-            rawparam = ssArgs.getFirstOperationParameter();
-        return ("signshop_" + rawparam);
+            rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
+        return rawparam;
     }
 
     @Override
@@ -31,10 +29,10 @@ public class resetOneTime implements SignShopOperation {
         }
 
         String param = getParam(ssArgs);
-        Player player = ssArgs.get_ssPlayer().getPlayer();
-        if(player == null)
+        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        if(ssPlayer == null)
             return true;
-        if(player.getMetadata(param) == null || player.getMetadata(param).isEmpty()) {
+        if(!ssPlayer.hasMeta(param)) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("nothing_to_reset_ontime", ssArgs.messageParts));
             return false;
         }
@@ -44,10 +42,11 @@ public class resetOneTime implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        String param = ("signshop_" + ssArgs.getFirstOperationParameter());
-        Player player = ssArgs.get_ssPlayer().getPlayer();
-        player.removeMetadata(param, SignShop.getInstance());
-
-        return true;
+        String param = getParam(ssArgs);
+        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        boolean ok = ssPlayer.removeMeta(param);
+        if(!ok)
+            ssPlayer.sendMessage("Could not reset the Metadata needed for this shop. Please check the logs for more information.");
+        return ok;
     }
 }
