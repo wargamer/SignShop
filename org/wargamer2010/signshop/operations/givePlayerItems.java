@@ -7,6 +7,7 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
 import java.util.ArrayList;
+import org.bukkit.Material;
 
 public class givePlayerItems implements SignShopOperation {
     @Override
@@ -46,15 +47,14 @@ public class givePlayerItems implements SignShopOperation {
         if(ssArgs.isOperationParameter("oneslot")) {
             Boolean bEmptySlot = false;
             for(ItemStack stack : ssArgs.get_ssPlayer().getPlayer().getInventory().getContents()) {
-                if(stack == null)
+                if(stack == null || stack.getAmount() == 0 || stack.getType() == Material.AIR)
                     bEmptySlot = true;
             }
             if(!bEmptySlot) {
                 ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));
                 return false;
             }
-        }
-        if(!ssArgs.isOperationParameter("ignorefull")) {
+        } else if(!ssArgs.isOperationParameter("ignorefull")) {
             if(!itemUtil.isStockOK(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), false)) {
                 ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));
                 return false;
