@@ -31,7 +31,7 @@ public class convertChestshop implements SignShopSpecialOp {
         Integer iPrice = -1;
         String sAmount = sLines[1];
         String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
-        if(!player.isOp())
+        if(!ssPlayer.isOp())
             return false;
         if(Material.getMaterial(sMaterial) == null)
             return false;

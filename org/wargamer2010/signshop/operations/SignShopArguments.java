@@ -5,6 +5,7 @@ import org.bukkit.block.BlockFace;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
+import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -19,11 +20,11 @@ public class SignShopArguments {
         if(pssPlayer != null)
             ssPlayer = pssPlayer;
         else
-            ssPlayer = new SignShopPlayer();
+            ssPlayer = new SignShopPlayer((Player)null);
         if(pssOwner != null)
             ssOwner = pssOwner;
         else
-            ssOwner = new SignShopPlayer();
+            ssOwner = new SignShopPlayer((Player)null);
         bSign = pbSign;
         sOperation = psOperation;
         bfBlockFace = pbfBlockFace;

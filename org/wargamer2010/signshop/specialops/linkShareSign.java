@@ -45,7 +45,7 @@ public class linkShareSign implements SignShopSpecialOp {
         }
 
         if((bUnlinked && shareSigns.isEmpty()) || !shareSigns.isEmpty()) {
-            if(!seller.getOwner().equals(player.getName()) && !player.isOp()) {
+            if(!seller.getOwner().equals(player.getName()) && !ssPlayer.isOp()) {
                 ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_link_sharesigns", null));
                 return true;
             }

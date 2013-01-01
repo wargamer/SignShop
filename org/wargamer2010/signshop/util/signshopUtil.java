@@ -285,7 +285,7 @@ public class signshopUtil {
             player.sendMessage(SignShopConfig.getError("restricted_but_owner", null));
             return false;
         } else
-            return (playerGroups.size() > 0 ? !player.getPlayer().isOp() : false);
+            return (playerGroups.size() > 0 ? !player.isOp() : false);
     }
 
     public static Boolean lineIsEmpty(String line) {
@@ -383,7 +383,7 @@ public class signshopUtil {
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
         String materialName = SignShopConfig.LinkableMaterials.get(bBlock.getType());
         if(SignShopConfig.LinkableMaterials.containsKey(bBlock.getType())) {
-            if(!ssPlayer.getPlayer().isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
+            if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                 return false;
             }

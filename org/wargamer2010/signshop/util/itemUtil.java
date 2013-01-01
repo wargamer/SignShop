@@ -54,7 +54,7 @@ public class itemUtil {
         discs.put(2264, "Strad Disc");
         discs.put(2265, "Ward Disc");
         discs.put(2266, "11 Disc");
-        discs.put(2267, "wait Disc");
+        discs.put(2267, "Wait Disc");
     }
 
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
@@ -159,6 +159,7 @@ public class itemUtil {
             return sData;
         else
             sData = data.toString().toLowerCase();
+
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
         Matcher m = p.matcher(sData);
         sData = m.replaceAll("");

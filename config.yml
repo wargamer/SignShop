@@ -263,6 +263,8 @@ errors:
   updated_shop: The shop has been succesfully updated.
   failed_to_update_shop: Failed to update the shop due to the error above.
   price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
+  only_one_time: You can only use this shop once.
+  nothing_to_reset_ontime: You are already allowed to use the shop one time. So there's nothing to reset.
 commands:
   TpToOwner:
   - tp !player !owner
