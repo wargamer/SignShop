@@ -12,6 +12,8 @@ public class resetOneTime implements SignShopOperation {
         String rawparam = ssArgs.get_sOperation().toLowerCase();
         if(ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.messageParts);
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.messageParts);
         return rawparam;
     }
 
@@ -29,6 +31,7 @@ public class resetOneTime implements SignShopOperation {
         }
 
         String param = getParam(ssArgs);
+        ssArgs.messageParts.put("!param", param);
         SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
         if(ssPlayer == null)
             return true;
@@ -36,13 +39,13 @@ public class resetOneTime implements SignShopOperation {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("nothing_to_reset_ontime", ssArgs.messageParts));
             return false;
         }
-
         return true;
     }
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         String param = getParam(ssArgs);
+        ssArgs.messageParts.put("!param", param);
         SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
         boolean ok = ssPlayer.removeMeta(param);
         if(!ok)
