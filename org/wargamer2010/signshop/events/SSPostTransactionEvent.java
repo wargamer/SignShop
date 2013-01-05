@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -20,8 +21,9 @@ public class SSPostTransactionEvent extends SSPreTransactionEvent {
                                 Block pSign,
                                 String pOperation,
                                 Map<String, String> pMessageParts,
-                                Seller pShop) {
-        super(pPrice, pItems, pContainables, pActivatables, pPlayer, pOwner, pSign, pOperation, pMessageParts, pShop);
+                                Seller pShop,
+                                Action pAction) {
+        super(pPrice, pItems, pContainables, pActivatables, pPlayer, pOwner, pSign, pOperation, pMessageParts, pShop, pAction);
     }
 
     @Override

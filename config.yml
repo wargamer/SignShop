@@ -3,6 +3,7 @@
 
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
+ShopCooldown: 0
 TransactionLog: false
 OPOverride: true
 AllowVariableAmounts: false
@@ -265,6 +266,7 @@ errors:
   price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
   only_one_time: You can only use this shop once.
   nothing_to_reset_ontime: You are already allowed to use the shop one time. So there's nothing to reset.
+  shop_on_cooldown: This shop is on cooldown, try again in !cooldownleft seconds.
 commands:
   TpToOwner:
   - tp !player !owner

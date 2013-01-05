@@ -44,6 +44,7 @@ public class SignShopConfig {
     private FileConfiguration config;
     private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
+    private static int ShopCooldown = 0;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
@@ -176,6 +177,7 @@ public class SignShopConfig {
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
+        ShopCooldown = ymlThing.getInt("ShopCooldown", ShopCooldown);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
         AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
@@ -485,6 +487,10 @@ public class SignShopConfig {
 
     public static int getMaxShopsPerPerson() {
         return MaxShopsPerPerson;
+    }
+
+    public static int getShopCooldown() {
+        return ShopCooldown;
     }
 
     public static Boolean getOPOverride() {
