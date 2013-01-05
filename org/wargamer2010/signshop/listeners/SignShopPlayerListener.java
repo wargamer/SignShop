@@ -231,7 +231,7 @@ public class SignShopPlayerListener implements Listener {
             if(!bRequirementsOK)
                 return;
 
-            SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller);
+            SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction());
             SignShop.scheduleEvent(pretransactevent);
             if(pretransactevent.isCancelled())
                 return;
@@ -254,7 +254,7 @@ public class SignShopPlayerListener implements Listener {
             if (!bRunOK)
                 return;
 
-            SSPostTransactionEvent posttransactevent = SSEventFactory.generatePostTransactionEvent(ssArgs, seller);
+            SSPostTransactionEvent posttransactevent = SSEventFactory.generatePostTransactionEvent(ssArgs, seller, event.getAction());
             SignShop.scheduleEvent(posttransactevent);
             if(posttransactevent.isCancelled())
                 return;

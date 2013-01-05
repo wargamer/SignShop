@@ -7,6 +7,7 @@ import org.bukkit.block.Block;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -24,6 +25,7 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
     private Block bSign = null;
     private String sOperation = "";
     private Seller seShop = null;
+    private Action aAction = null;
     private Map<String, String> messageParts = new HashMap<String, String>();
 
     public SSPreTransactionEvent(Float pPrice,
@@ -35,7 +37,8 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
                                 Block pSign,
                                 String pOperation,
                                 Map<String, String> pMessageParts,
-                                Seller pShop) {
+                                Seller pShop,
+                                Action pAction) {
         fPrice = pPrice;
         isItems = pItems;
         containables = pContainables;
@@ -46,6 +49,7 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
         sOperation = pOperation;
         messageParts = pMessageParts;
         seShop = pShop;
+        aAction = pAction;
     }
 
     @Override
@@ -105,6 +109,10 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
 
     public String getOperation() {
         return sOperation;
+    }
+
+    public Action getAction() {
+        return aAction;
     }
 
     public Map<String, String> getMessageParts() {

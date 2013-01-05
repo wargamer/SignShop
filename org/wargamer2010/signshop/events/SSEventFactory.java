@@ -26,7 +26,7 @@ public class SSEventFactory {
                                                             ssArgs.miscSettings);
     }
 
-    public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller) {
+    public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction) {
         return new SSPreTransactionEvent(ssArgs.get_fPrice(),
                                                             ssArgs.get_isItems(),
                                                             ssArgs.get_containables_root(),
@@ -36,10 +36,11 @@ public class SSEventFactory {
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
                                                             ssArgs.messageParts,
-                                                            pSeller);
+                                                            pSeller,
+                                                            pAction);
     }
 
-    public static SSPostTransactionEvent generatePostTransactionEvent(SignShopArguments ssArgs, Seller pSeller) {
+    public static SSPostTransactionEvent generatePostTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction) {
         return new SSPostTransactionEvent(ssArgs.get_fPrice(),
                                                             ssArgs.get_isItems(),
                                                             ssArgs.get_containables_root(),
@@ -49,7 +50,8 @@ public class SSEventFactory {
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
                                                             ssArgs.messageParts,
-                                                            pSeller);
+                                                            pSeller,
+                                                            pAction);
     }
 
     public static SSTouchShopEvent generateTouchShopEvent(SignShopPlayer pPlayer, Seller pShop, Action pAction, Block pBlock) {
