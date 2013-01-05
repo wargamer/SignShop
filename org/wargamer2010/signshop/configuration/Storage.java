@@ -21,8 +21,13 @@ import java.io.*;
 import java.nio.channels.*;
 import java.util.List;
 import java.util.ConcurrentModificationException;
+import java.util.LinkedHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 import org.bukkit.Material;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.world.WorldLoadEvent;
 
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
@@ -31,7 +36,7 @@ import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class Storage {
+public class Storage implements Listener {
     private FileConfiguration yml;
     private File ymlfile;
 
@@ -42,6 +47,7 @@ public class Storage {
     private static String itemSeperator = "&";
 
     private Boolean safetosave = true;
+    private Map<String,HashMap<String,List>> invalidShops = new LinkedHashMap<String, HashMap<String,List>>();
 
     private Storage(File ymlFile) {
         if(!ymlFile.exists()) {
@@ -84,12 +90,88 @@ public class Storage {
         return sellers.size();
     }
 
+    @EventHandler(priority = EventPriority.MONITOR)
+    public void onWorldLoad(WorldLoadEvent event) {
+        if(invalidShops.isEmpty())
+            return;
+
+        String worldname = event.getWorld().getName();
+        List<String> loaded = new LinkedList<String>();
+        SignShop.log("Loading shops for world: " + worldname, Level.INFO);
+        for(Map.Entry<String,HashMap<String,List>> shopSettings : invalidShops.entrySet())
+        {
+            if(shopSettings.getKey().contains(worldname.replace(".", ""))) {
+                if(loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()))
+                    loaded.add(shopSettings.getKey());
+            }
+        }
+
+        if(!loaded.isEmpty()) {
+            for(String loadedshop : loaded) {
+                invalidShops.remove(loadedshop);
+            }
+        }
+    }
+
     private List getSetting(HashMap<String,List> settings, String settingName) throws StorageException {
         StorageException ex = new StorageException();
         if(settings.containsKey(settingName))
             return settings.get(settingName);
         else
             throw ex;
+    }
+
+    private boolean loadSellerFromSettings(String key, HashMap<String,List> sellerSettings) {
+        Block seller_sign;
+        String seller_owner;
+        List<Block> seller_activatables;
+        List<Block> seller_containables;
+        String seller_shopworld;
+        ItemStack[] seller_items;
+        Map<String, String> miscsettings;
+        StorageException storageex = new StorageException();
+
+        List<String> tempList = new LinkedList();
+        try {
+            tempList = getSetting(sellerSettings, "shopworld");
+            if(tempList.isEmpty())
+                throw storageex;
+            seller_shopworld = tempList.get(0);
+            if(Bukkit.getServer().getWorld(seller_shopworld) == null)
+                throw storageex;
+            tempList = getSetting(sellerSettings, "owner");
+            if(tempList.isEmpty())
+                throw storageex;
+            seller_owner = tempList.get(0);
+            tempList = getSetting(sellerSettings, "sign");
+            if(tempList.isEmpty())
+                throw storageex;
+            World world = Bukkit.getServer().getWorld(seller_shopworld);
+            seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
+            if(!itemUtil.clickedSign(seller_sign))
+                throw storageex;
+            seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
+            seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
+            seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
+            miscsettings = new HashMap<String, String>();
+            if(sellerSettings.containsKey("misc")) {
+                for(String miscsetting : (List<String>)sellerSettings.get("misc")) {
+                    String[] miscbits = miscsetting.split(":", 2);
+                    if(miscbits.length == 2)
+                        miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
+                }
+            }
+        } catch(StorageException caughtex) {
+            try {
+                SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), ((List<String>)getSetting(sellerSettings, "sign")).get(0), ((List<String>)getSetting(sellerSettings, "shopworld")).get(0)), Level.INFO);
+            } catch(StorageException lastex) {
+                SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
+            }
+            invalidShops.put(key, sellerSettings);
+            return false;
+        }
+        addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
+        return true;
     }
 
     private Boolean Load() {
@@ -106,59 +188,13 @@ public class Storage {
         }
 
         Boolean needSave = false;
-        Block seller_sign;
-        String seller_owner;
-        List<Block> seller_activatables;
-        List<Block> seller_containables;
-        String seller_shopworld;
-        ItemStack[] seller_items;
-        Map<String, String> miscsettings;
-        StorageException storageex = new StorageException();
 
         for(Map.Entry<String,HashMap<String,List>> shopSettings : tempSellers.entrySet())
         {
-            HashMap<String,List> sellerSettings = shopSettings.getValue();
-            List<String> tempList = new LinkedList();
-            try {
-                tempList = getSetting(sellerSettings, "shopworld");
-                if(tempList.isEmpty())
-                    throw storageex;
-                seller_shopworld = tempList.get(0);
-                if(Bukkit.getServer().getWorld(seller_shopworld) == null)
-                    throw storageex;
-                tempList = getSetting(sellerSettings, "owner");
-                if(tempList.isEmpty())
-                    throw storageex;
-                seller_owner = tempList.get(0);
-                tempList = getSetting(sellerSettings, "sign");
-                if(tempList.isEmpty())
-                    throw storageex;
-                World world = Bukkit.getServer().getWorld(seller_shopworld);
-                seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
-                if(!itemUtil.clickedSign(seller_sign))
-                    throw storageex;
-                seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
-                seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
-                seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
-                miscsettings = new HashMap<String, String>();
-                if(sellerSettings.containsKey("misc")) {
-                    for(String miscsetting : (List<String>)sellerSettings.get("misc")) {
-                        String[] miscbits = miscsetting.split(":", 2);
-                        if(miscbits.length == 2)
-                            miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
-                    }
-                }
-            } catch(StorageException caughtex) {
-                try {
-                    SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), ((List<String>)getSetting(sellerSettings, "sign")).get(0), ((List<String>)getSetting(sellerSettings, "shopworld")).get(0)), Level.INFO);
-                } catch(StorageException lastex) {
-                    SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
-                }
-                needSave = true;
-                continue;
-            }
-            addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
+            needSave = (loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) ? needSave : false);
         }
+
+        Bukkit.getPluginManager().registerEvents(this, SignShop.getInstance());
         return needSave;
     }
 
@@ -190,7 +226,6 @@ public class Storage {
     }
 
     public Boolean legacyLoad() {
-
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
         if(sellersection == null) {
             SignShop.log("Sellers is empty!", Level.INFO);
@@ -483,8 +518,8 @@ public class Storage {
             throw e;
         }
         finally {
-            if (inChannel != null) inChannel.close();
-            if (outChannel != null) outChannel.close();
+            inChannel.close();
+            outChannel.close();
         }
     }
 
