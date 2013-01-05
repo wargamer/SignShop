@@ -229,7 +229,7 @@ public class SignShopItemMeta {
             for(MetaType type : metatypes) {
                 if(type == MetaType.EnchantmentStorage) {
                     EnchantmentStorageMeta enchantmentmeta = (EnchantmentStorageMeta) meta;
-                    if(getPropValue("storedenchants", metamap).isEmpty()) {
+                    if(!getPropValue("storedenchants", metamap).isEmpty()) {
                         for(Map.Entry<Enchantment, Integer> enchant : signshopUtil.convertStringToEnchantments(getPropValue("storedenchants", metamap)).entrySet()) {
                             enchantmentmeta.addStoredEnchant(enchant.getKey(), enchant.getValue(), true);
                         }
