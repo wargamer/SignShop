@@ -31,30 +31,32 @@ public class runCommand implements SignShopOperation {
         String[] sLines = ((Sign) ssArgs.get_bSign().getState()).getLines();
         for(int i = 0; i < sLines.length; i++)
             ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
+        boolean isOK = true;
 
         if(SignShopConfig.Commands.containsKey(sOperation.toLowerCase())) {
             List<String> commands = SignShopConfig.Commands.get(sOperation.toLowerCase());
             for(String sCommand : commands) {
+                boolean ok = true;
                 if(sCommand != null && sCommand.length() > 0) {
                     sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.messageParts);
                     sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.messageParts);
                     if(ssArgs.isOperationParameter("asOriginalUser")) {
-                        return Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
+                        ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
                     } else if(ssArgs.isOperationParameter("asUser")) {
                         if(!ssPlayer.hasPerm("*", true))
                             Vault.permission.playerAdd(ssPlayer.getPlayer(), "*");
                         else
                             hasStartPerm = true;
-                        boolean isOK = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
+                        ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
                         if(!hasStartPerm)
                             Vault.permission.playerRemove(ssPlayer.getPlayer(), "*");
-                        return isOK;
                     } else {
-                        return Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), sCommand);
+                        ok = Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), sCommand);
                     }
                 }
+                isOK = (ok ? isOK : false);
             }
         }
-        return true;
+        return isOK;
     }
 }
