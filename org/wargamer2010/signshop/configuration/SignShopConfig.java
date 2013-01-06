@@ -177,7 +177,7 @@ public class SignShopConfig {
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
-        ShopCooldown = ymlThing.getInt("ShopCooldown", ShopCooldown);
+        ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
         AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
