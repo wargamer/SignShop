@@ -3,7 +3,7 @@
 
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
-ShopCooldown: 0
+ShopCooldownMilliseconds: 0
 TransactionLog: false
 OPOverride: true
 AllowVariableAmounts: false
@@ -40,11 +40,11 @@ signs:
   DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
   DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
   Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
-  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
+  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp{10}
   Heal: takePlayerMoney,healPlayer,playerIsOp
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
   Dispose: takeItemInHand
-  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
+  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp{10}
   iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
   Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
