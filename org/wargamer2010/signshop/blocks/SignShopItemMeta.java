@@ -201,6 +201,8 @@ public class SignShopItemMeta {
         ItemMeta meta = stack.getItemMeta();
 
         ResultSet setprops = (ResultSet)db.runStatement("SELECT PropertyName, ProperyValue FROM MetaProperty WHERE ItemMetaID = ?;", pars, true);
+        if(setprops == null)
+            return;
         try {
             while(setprops.next())
                 metamap.put(setprops.getString("PropertyName"), setprops.getString("ProperyValue"));
@@ -294,7 +296,7 @@ public class SignShopItemMeta {
 
             itemmetaid = (Integer)db.runStatement("INSERT INTO ItemMeta(ItemMetaHash) VALUES (?);", pars, false);
 
-            if(itemmetaid == -1)
+            if(itemmetaid == null || itemmetaid == -1)
                 return -1;
 
             for(Map.Entry<String, String> metaproperty : metamap.entrySet()) {
@@ -325,7 +327,7 @@ public class SignShopItemMeta {
             Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
             pars.put(1, metamap.hashCode());
             ResultSet set = (ResultSet)db.runStatement("SELECT ItemMetaID FROM ItemMeta WHERE ItemMetaHash = ?;", pars, true);
-            if(set.next())
+            if(set != null && set.next())
                 return set.getInt("ItemMetaID");
         } catch (SQLException ex) {
 

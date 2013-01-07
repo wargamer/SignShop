@@ -33,7 +33,10 @@ public class ShopCooldown implements Listener {
         long left = (((lastused + cooldown) - now) / 1000);
 
         if((now - lastused) < cooldown) {
-            event.getMessageParts().put("!cooldownleft", Long.toString(left));
+            if(left >= 1)
+                event.getMessageParts().put("!cooldownleft", Long.toString(left));
+            else
+                event.getMessageParts().put("!cooldownleft", "< 1");
             event.getPlayer().sendMessage(SignShopConfig.getError("shop_on_cooldown", event.getMessageParts()));
             event.setCancelled(true);
             return;
