@@ -36,7 +36,28 @@ public class SSDatabase {
         if(driver == null)
             loadLib();
 
-        this.open();
+        checkLegacy();
+        if(!open())
+            SignShop.log("Connection to: " + filename + " could not be established", Level.WARNING);
+    }
+
+    private void checkLegacy() {
+        String dbdirname = "db";
+        File dbdir = new File(SignShop.getInstance().getDataFolder(), dbdirname);
+        if(!dbdir.exists() && !dbdir.mkdirs()) {
+            SignShop.log("Could not create db directory in plugin folder. Will use old path (plugins/SignShop) in stead of (plugins/SignShop/ " + dbdirname + ").", Level.WARNING);
+            return;
+        }
+        File olddb = new File(SignShop.getInstance().getDataFolder(), filename);
+        File newdb = new File(SignShop.getInstance().getDataFolder(), (dbdirname + File.separator + filename));
+        if(olddb.exists()) {
+            if(!newdb.exists() && !olddb.renameTo(newdb)) {
+                SignShop.log("Could not move " + filename + " to (plugins/SignShop/ " + dbdirname + ") directory. Please move the file manually. Will use old path for now.", Level.WARNING);
+                return;
+            }
+        }
+
+        filename = (dbdirname + File.separator + filename);
     }
 
     public Boolean tableExists(String tablename) {
@@ -45,7 +66,7 @@ public class SSDatabase {
             pars.put(1, "table");
             pars.put(2, tablename);
             ResultSet set = (ResultSet)runStatement("SELECT name FROM sqlite_master WHERE type = ? AND name = ?;", pars, true);
-            if(set.next()) {
+            if(set != null && set.next()) {
                 set.close();
                 return true;
             }
@@ -127,15 +148,16 @@ public class SSDatabase {
         }
     }
 
-    public final void open() {
+    public final boolean open() {
         if(driver == null)
-            return;
+            return false;
         try {
             File DBFile = new File(SignShop.getInstance().getDataFolder(), filename);
             conn = driver.connect("jdbc:sqlite:" + DBFile.getPath(), new Properties());
         } catch(SQLException ex) {
 
         }
+        return (conn != null);
     }
 
     public void close() {
@@ -148,6 +170,10 @@ public class SSDatabase {
 
     public Object runStatement(String Query, Map<Integer, Object> params, Boolean expectingResult) {
         try {
+            if(conn == null) {
+                SignShop.log("Query: " + Query + " could not be run because the connection to: " + filename + " could not be established", Level.WARNING);
+                return null;
+            }
             PreparedStatement st = conn.prepareStatement(Query, PreparedStatement.RETURN_GENERATED_KEYS);
 
             if(params != null && !params.isEmpty()) {

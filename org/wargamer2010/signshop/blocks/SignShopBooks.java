@@ -16,7 +16,7 @@ public class SignShopBooks {
     private static String filename = "books.db";
 
     private SignShopBooks() {
-        
+
     }
 
     public static void init() {
@@ -78,7 +78,7 @@ public class SignShopBooks {
 
         try {
             ResultSet set = (ResultSet)db.runStatement("SELECT BookID FROM Book WHERE Title = ? AND Author = ? AND Pages = ?;", pars, true);
-            if(set.next())
+            if(set != null && set.next())
                 ID = set.getInt("BookID");
             else
                 ID = -1;
@@ -99,6 +99,8 @@ public class SignShopBooks {
         Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
         pars.put(1, id);
         ResultSet set = (ResultSet)db.runStatement("SELECT * FROM Book WHERE BookID = ?", pars, true);
+        if(set == null)
+            return bookStack;
         IBookItem item = null;
         try {
             item = BookFactory.getBookItem(bookStack);
