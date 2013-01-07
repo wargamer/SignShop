@@ -147,7 +147,15 @@ public class Storage implements Listener {
             if(tempList.isEmpty())
                 throw storageex;
             World world = Bukkit.getServer().getWorld(seller_shopworld);
-            seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
+            try {
+                seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
+            } catch(Exception ex) {
+                SignShop.log("Caught an unexpected exception: " + ex.getMessage(), Level.WARNING);
+                // May have caught a FileNotFoundException originating from the chunkloader
+                // In any case, the shop can not be loaded at this point so let's assume it's invalid
+                throw storageex;
+            }
+
             if(!itemUtil.clickedSign(seller_sign))
                 throw storageex;
             seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
