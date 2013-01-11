@@ -483,15 +483,16 @@ public class signshopUtil {
         }
     }
 
-    public static String capFirstLetter(String string) {
+    public static String capFirstLetter(final String string) {
         if(string == null || string.isEmpty())
             return string;
+        String workwith = string.replace("_", " ");
         String[] spacesplit;
-        if(string.contains(" "))
-            spacesplit = string.split(" ");
+        if(workwith.contains(" "))
+            spacesplit = workwith.split(" ");
         else {
             spacesplit = new String[1];
-            spacesplit[0] = string;
+            spacesplit[0] = workwith;
         }
         for(int i = 0; i < spacesplit.length; i++) {
             char[] arr = spacesplit[i].toCharArray();

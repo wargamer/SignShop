@@ -5,6 +5,7 @@ import com.google.common.collect.ImmutableList;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,8 +18,10 @@ import org.bukkit.FireworkEffect.Builder;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
+import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.util.itemUtil;
 
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -101,6 +104,9 @@ public class SignShopItemMeta {
             return "";
 
         ItemMeta meta = stack.getItemMeta();
+        if(meta.hasDisplayName())
+            return meta.getDisplayName();
+
         List<MetaType> metatypes = getTypesOfMeta(meta);
         for(MetaType type : metatypes) {
             if(type == MetaType.EnchantmentStorage) {
@@ -128,27 +134,65 @@ public class SignShopItemMeta {
                 }
             } else if(type == MetaType.Potion) {
                 PotionMeta potionmeta = (PotionMeta) meta;
+
                 boolean first = true;
                 StringBuilder namebuilder = new StringBuilder();
                 namebuilder.append(ChatColor.DARK_PURPLE);
                 namebuilder.append(itemUtil.formatData(stack.getData(), stack.getDurability()));
                 namebuilder.append(ChatColor.WHITE);
 
-                if(potionmeta.hasCustomEffects()) {
-                    namebuilder.append(" (");
-                    for(PotionEffect effect : potionmeta.getCustomEffects()) {
-                        if(first) first = false;
-                        else namebuilder.append(", ");
+                Collection<PotionEffect> effects = null;
+                Potion pot = null;
+                if(!potionmeta.hasCustomEffects()) {
+                    try {
+                        pot = Potion.fromItemStack(stack);
+                        effects = pot.getEffects();
+                    } catch(IllegalArgumentException ex) {
+                        int EXTENDED_BIT = 0x40;
+                        short damage = stack.getDurability();
+                        if ((damage & EXTENDED_BIT) > 0) {
+                            // Instant potions cannot be extended!
+                            // So let's invert the extended bit and retry.
+                            Integer tempint = (damage ^ EXTENDED_BIT);
+                            stack.setDurability(tempint.shortValue());
+                            try {
+                                pot = Potion.fromItemStack(stack);
+                                effects = pot.getEffects();
+                            } catch (IllegalArgumentException ex2) {
+                                // I give up
+                            }
+                            stack.setDurability(damage);
+                        }
+                        if(effects == null) {
+                            pot = new Potion(PotionType.WATER);
+                            effects = pot.getEffects();
+                        }
+                    }
+                } else
+                    effects = potionmeta.getCustomEffects();
 
-                        namebuilder.append(signshopUtil.capFirstLetter(effect.getType().getName().toLowerCase()));
+                namebuilder.append(" (");
+
+                for(PotionEffect effect : effects) {
+                    if(first) first = false;
+                    else namebuilder.append(", ");
+
+                    namebuilder.append(signshopUtil.capFirstLetter(effect.getType().getName().toLowerCase()));
+                    if(pot != null && pot.getLevel() > 0) {
+                        namebuilder.append(" ");
+                        namebuilder.append(itemUtil.binaryToRoman(pot.getLevel()));
+                    } else {
                         namebuilder.append(" with");
                         namebuilder.append(" amplifier: ");
                         namebuilder.append(effect.getAmplifier());
+                    }
+                    if(effect.getDuration() > 1) {
                         namebuilder.append(" and duration: ");
                         namebuilder.append(effect.getDuration());
                     }
-                    namebuilder.append(")");
                 }
+
+                namebuilder.append(")");
 
                 return namebuilder.toString();
             } else if(type == MetaType.Fireworks) {
