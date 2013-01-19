@@ -267,6 +267,7 @@ errors:
   only_one_time: You can only use this shop once.
   nothing_to_reset_ontime: You are already allowed to use the shop one time. So there's nothing to reset.
   shop_on_cooldown: This shop is on cooldown, try again in !cooldownleft seconds.
+  damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
 commands:
   TpToOwner:
   - tp !player !owner

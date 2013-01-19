@@ -30,6 +30,8 @@ public class BookFactory {
             tags = new org.wargamer2010.signshop.blocks.v145.itemTags();
         else if(useType.equals("v146"))
             tags = new org.wargamer2010.signshop.blocks.v146.itemTags();
+        else if(useType.equals("v147"))
+            tags = new org.wargamer2010.signshop.blocks.v147.itemTags();
         else {
             SignShop.log("Could not find the proper craftbukkit namespace! This SignShop version does not support this version of Bukkit. Please visit http://dev.bukkit.org/server-mods/signshop/ for more info.", Level.SEVERE);
             return null;
@@ -45,9 +47,10 @@ public class BookFactory {
                 namespaceType = "v145";
             else if(tryReflection("org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack"))
                 namespaceType = "v146";
+            else if(tryReflection("net.minecraft.server.v1_4_R1.Item"))
+                namespaceType = "v147";
             else
-                namespaceType = "post146";
-
+                namespaceType = "post147";
         }
         return namespaceType;
     }

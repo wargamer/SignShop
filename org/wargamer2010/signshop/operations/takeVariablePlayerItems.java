@@ -10,65 +10,52 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.LinkedList;
 
-public class takeVariablePlayerItems implements SignShopOperation {    
+public class takeVariablePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));                        
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
             return false;
         }
-        List<ItemStack> tempItems = new LinkedList<ItemStack>();
-        ItemStack[] isTotalItems = null;
-        
-        for(Block bHolder : ssArgs.get_containables()) {
-            if(bHolder.getState() instanceof InventoryHolder) {
-                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-                for(ItemStack item : Holder.getInventory().getContents()) {
-                    if(item != null && item.getAmount() > 0) {
-                        tempItems.add(item);
-                    }
-                }
-            }
-        }
-        isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));                        
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
-            return true;        
+            return true;
         Player player = ssArgs.get_ssPlayer().getPlayer();
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.get_isItems(), false);        
+        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.get_isItems(), false);
         Float iCount = (Float)variableAmount.values().toArray()[0];
         if(iCount == 0.0f) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.messageParts));
-            return false;        
-        }        
-        
+            return false;
+        }
+
         ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
         ssArgs.set_isItems(isActual);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        ssArgs.set_fPrice(ssArgs.get_fPrice() * iCount);        
+        ssArgs.set_fPrice(ssArgs.get_fPrice() * iCount);
         return true;
     }
-    
+
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), true);                
+        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(ssArgs.get_ssPlayer().getPlayer().getInventory(), ssArgs.get_isItems(), true);
         Float iCount = (Float)variableAmount.values().toArray()[0];
         ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
         ssArgs.set_isItems(isActual);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        ssArgs.set_fPrice(ssArgs.get_fPrice() * iCount);        
+        ssArgs.set_fPrice(ssArgs.get_fPrice() * iCount);
         return true;
     }
 }

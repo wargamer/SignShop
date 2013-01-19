@@ -16,20 +16,7 @@ public class givePlayerItems implements SignShopOperation {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
             return false;
         }
-        List<ItemStack> tempItems = new ArrayList<ItemStack>();
-        ItemStack[] isTotalItems = null;
-
-        for(Block bHolder : ssArgs.get_containables()) {
-            if(bHolder.getState() instanceof InventoryHolder) {
-                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-                for(ItemStack item : Holder.getInventory().getContents()) {
-                    if(item != null && item.getAmount() > 0) {
-                        tempItems.add(item);
-                    }
-                }
-            }
-        }
-        isTotalItems = tempItems.toArray(new ItemStack[tempItems.size()]);
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(isTotalItems.length == 0) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
