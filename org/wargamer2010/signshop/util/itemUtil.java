@@ -12,12 +12,14 @@ import org.bukkit.material.SimpleAttachableMaterialData;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
+import org.bukkit.inventory.InventoryHolder;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.BookFactory;
@@ -82,11 +84,43 @@ public class itemUtil {
         return isBackupToTake;
     }
 
-    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
+    public static ItemStack[] getAllItemStacksForContainables(List<Block> containables) {
+        List<ItemStack> tempItems = new LinkedList<ItemStack>();
+
+        for(Block bHolder : containables) {
+            if(bHolder.getState() instanceof InventoryHolder) {
+                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
+                for(ItemStack item : Holder.getInventory().getContents()) {
+                    if(item != null && item.getAmount() > 0) {
+                        tempItems.add(item);
+                    }
+                }
+            }
+        }
+
+        return tempItems.toArray(new ItemStack[tempItems.size()]);
+    }
+
+    public static boolean stockOKForContainables(List<Block> containables, ItemStack[] items, boolean bTakeOrGive) {
+        return (getFirstStockOKForContainables(containables, items, bTakeOrGive) != null);
+    }
+
+    public static InventoryHolder getFirstStockOKForContainables(List<Block> containables, ItemStack[] items, boolean bTakeOrGive) {
+        for(Block bHolder : containables) {
+            if(bHolder.getState() instanceof InventoryHolder) {
+                InventoryHolder Holder = (InventoryHolder)bHolder.getState();
+                if(isStockOK(Holder.getInventory(), items, bTakeOrGive))
+                    return Holder;
+            }
+        }
+        return null;
+    }
+
+    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, boolean bTakeOrGive) {
         return isStockOK(iiInventory, getSingleAmount(isItemsToTake), bTakeOrGive);
     }
 
-    public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, Boolean bTakeOrGive) {
+    public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, boolean bTakeOrGive) {
         try {
             ItemStack[] isChestItems = iiInventory.getContents();
             ItemStack[] isBackup = getBackupItemStack(isChestItems);
