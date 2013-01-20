@@ -44,7 +44,7 @@ public class takeShopItems implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         InventoryHolder Holder = itemUtil.getFirstStockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), true);
-        if(Holder != null)
+        if(Holder == null)
             return false;
         Holder.getInventory().removeItem(ssArgs.get_isItems());
         if(!itemUtil.stockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), true))

@@ -8,7 +8,7 @@ import org.bukkit.block.Block;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
-public class setRedstoneOff implements SignShopOperation {    
+public class setRedstoneOff implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         Boolean foundLever = false;
@@ -16,14 +16,17 @@ public class setRedstoneOff implements SignShopOperation {
             if(block.getType() == Material.getMaterial("LEVER"))
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));
             return false;
         }
         return true;
     }
-    
+
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+        if(!setupOperation(ssArgs))
+            return false;
+
         Boolean bReturn = false;
         Block bLever = null;
         for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
@@ -37,22 +40,25 @@ public class setRedstoneOff implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_off", ssArgs.messageParts));            
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_off", ssArgs.messageParts));
         return bReturn;
     }
-    
+
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Block bLever = null;
+        if(!setupOperation(ssArgs))
+            return false;
         
+        Block bLever = null;
+
         for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
             bLever = ssArgs.get_activatables().get(i);
             if(bLever.getType() == Material.getMaterial("LEVER")) {
                 BlockState state = bLever.getState();
-                MaterialData data = state.getData();                                        
-                Lever lever = (Lever)data;                               
+                MaterialData data = state.getData();
+                Lever lever = (Lever)data;
                 if(lever.isPowered()) {
-                    lever.setPowered(false);                
+                    lever.setPowered(false);
                     state.setData(lever);
                     state.update();
                     signshopUtil.generateInteractEvent(bLever, ssArgs.get_ssPlayer().getPlayer(), ssArgs.get_bfBlockFace());

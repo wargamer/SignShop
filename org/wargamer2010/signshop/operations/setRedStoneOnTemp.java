@@ -27,6 +27,8 @@ public class setRedStoneOnTemp implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+        if(!setupOperation(ssArgs))
+            return false;
         Boolean bReturn = false;
         Block bLever = null;
 
@@ -48,7 +50,10 @@ public class setRedStoneOnTemp implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Block bLever = null;
+        if(!setupOperation(ssArgs))
+            return false;
+        
+        Block bLever;
 
         Integer delay = 20;
         if(!ssArgs.getFirstOperationParameter().isEmpty()) {
