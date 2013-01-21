@@ -2,8 +2,9 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
-import org.bukkit.ChatColor;
+import java.util.Map;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -104,6 +105,13 @@ public class SimpleShopProtector implements Listener {
                 && SignShopConfig.getProtectShopsInCreative()
                 && (player.getItemInHand() == null || player.getItemInHand().getType() != SignShopConfig.getDestroyMaterial())) {
             event.setCancelled(true);
+
+            if(event.getPlayer().getName().equals(event.getShop().getOwner()) || event.getPlayer().isOp()) {
+                Map<String, String> temp = new LinkedHashMap<String, String>();
+                temp.put("!destroymaterial", signshopUtil.capFirstLetter(SignShopConfig.getDestroyMaterial().name().toLowerCase()));
+
+                event.getPlayer().sendMessage(SignShopConfig.getError("use_item_to_destroy_shop", temp));
+            }
             return;
         }
 
