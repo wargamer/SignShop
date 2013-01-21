@@ -40,11 +40,11 @@ signs:
   DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
   DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
   Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
-  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp{10}
+  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
   Heal: takePlayerMoney,healPlayer,playerIsOp
   Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
   Dispose: takeItemInHand
-  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp{10}
+  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
   iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
   Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
   iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
@@ -58,6 +58,8 @@ signs:
   Share: ShareSign
   Restricted: RestrictedSign
   Jukebox: playJukebox,takePlayerMoney
+  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
+  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -92,6 +94,8 @@ messages:
     Disenchant: You have setup a sign that removes enchantments for !price!
     Command: You have created a sign that runs commands for !price!
     Jukebox: You have set up a Jukebox that plays records from the chest for !price!
+    Kit: You have setup a one time use kit (!items) for !price!
+    ResetKit: You have setup a sign that resets !param signs!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -126,6 +130,8 @@ messages:
     Disenchant: Remove enchantments on the item in your hand for !price?
     Command: Run the commands on this sign for !price?
     Jukebox: Play a record for !price?
+    Kit: Get this kit (!items) one time for !price?
+    ResetKit: Reset your !param signs for !price!
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -160,6 +166,8 @@ messages:
     Disenchant: You removed the enchantments on the item in your hand for !price!
     Command: You ran the commands in the sign for !price!
     Jukebox: You've made the Jukebox play a record for !price!
+    Kit: You acquired !items for !price!
+    ResetKit: You reset !param signs for !price!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -194,6 +202,8 @@ messages:
     Disenchant: ''
     Command: ''
     Jukebox: \!customer played a record on your jukebox for !price!
+    Kit: ''
+    ResetKit: ''
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!
@@ -265,9 +275,10 @@ errors:
   failed_to_update_shop: Failed to update the shop due to the error above.
   price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
   only_one_time: You can only use this shop once.
-  nothing_to_reset_ontime: You are already allowed to use the shop one time. So there's nothing to reset.
+  nothing_to_reset_ontime: You are already allowed to use !param signs one time. So there's nothing to reset.
   shop_on_cooldown: This shop is on cooldown, try again in !cooldownleft seconds.
   damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
+  use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
 commands:
   TpToOwner:
   - tp !player !owner
