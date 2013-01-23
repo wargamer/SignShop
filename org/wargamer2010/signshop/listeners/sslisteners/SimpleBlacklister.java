@@ -15,6 +15,8 @@ import org.wargamer2010.signshop.util.itemUtil;
 public class SimpleBlacklister implements Listener {
 
     private boolean runBlacklistCheck(ItemStack[] isItems, SignShopPlayer ssPlayer, Map<String, String> messageParts) {
+        if(isItems == null)
+            return false;
         ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(isItems);
         if(blacklisted != null) {
             if(ssPlayer.isOp()) {

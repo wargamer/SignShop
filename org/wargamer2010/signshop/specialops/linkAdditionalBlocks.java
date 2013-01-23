@@ -115,18 +115,14 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.messageParts));
             return true;
         }
-        ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems());
+        ItemStack blacklisted = null;
+        if(ssArgs.get_isItems() != null)
+            blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems());
         if (blacklisted != null) {
             ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
             ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.messageParts));
             return true;
         }
-
-        IItemTags tags = BookFactory.getItemTags();
-        if (ssArgs.get_isItems() == null) {
-            ssArgs.set_isItems(tags.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
-        }
-
 
         Storage.get().updateSeller(bClicked, containables, activatables, ssArgs.get_isItems_root());
 

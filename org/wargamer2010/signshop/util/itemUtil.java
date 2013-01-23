@@ -344,6 +344,8 @@ public class itemUtil {
     }
 
     public static ItemStack[] getBackupItemStack(ItemStack[] isOriginal) {
+        if(isOriginal == null)
+            return null;
         ItemStack[] isBackup = new ItemStack[isOriginal.length];
         for(int i = 0; i < isOriginal.length; i++){
             if(isOriginal[i] != null) {
@@ -528,6 +530,8 @@ public class itemUtil {
 
     public static String[] convertItemStacksToString(ItemStack[] isItems) {
         List<String> sItems = new ArrayList<String>();
+        if(isItems == null)
+            return new String[1];
 
         ItemStack isCurrent;
         for(int i = 0; i < isItems.length; i++) {

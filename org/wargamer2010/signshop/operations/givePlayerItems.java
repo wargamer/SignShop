@@ -31,6 +31,11 @@ public class givePlayerItems implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
+        if(ssArgs.get_isItems() == null) {
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            return false;
+        }
+        
         if(ssArgs.isOperationParameter("oneslot")) {
             Boolean bEmptySlot = false;
             for(ItemStack stack : ssArgs.get_ssPlayer().getPlayer().getInventory().getContents()) {

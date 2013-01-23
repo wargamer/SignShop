@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.util.itemUtil;
 import java.util.Random;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class RandomItem implements SignShopOperation {
     @Override
@@ -12,6 +13,11 @@ public class RandomItem implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+        if(ssArgs.get_isItems() == null) {
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            return false;
+        }
+
         ssArgs.set_isItems(itemUtil.getSingleAmount(ssArgs.get_isItems()));
         return true;
     }

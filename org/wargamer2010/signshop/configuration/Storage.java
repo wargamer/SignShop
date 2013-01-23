@@ -373,7 +373,7 @@ public class Storage implements Listener {
                 seller = sellers.get(lKey);
                 temp.put("shopworld", seller.getWorld());
                 temp.put("owner", seller.getOwner());
-                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems()));
+                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(false)));
 
                 List<Block> containables = seller.getContainables();
                 String[] sContainables = new String[containables.size()];

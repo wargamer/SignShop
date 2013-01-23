@@ -39,7 +39,14 @@ public class Seller {
     }
 
     public ItemStack[] getItems() {
-        return itemUtil.getBackupItemStack(isItems);
+        return getItems(true);
+    }
+
+    public ItemStack[] getItems(boolean backup) {
+        if(backup)
+            return itemUtil.getBackupItemStack(isItems);
+        else
+            return isItems;
     }
 
     public void setItems(ItemStack[] items) {
@@ -96,6 +103,8 @@ public class Seller {
     }
 
     private void storeMeta() {
+        if(isItems == null)
+            return;
         for(ItemStack stack : isItems) {
             if(itemUtil.isWriteableBook(stack)) {
                 SignShopBooks.addBook(stack);
