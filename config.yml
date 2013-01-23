@@ -279,6 +279,7 @@ errors:
   shop_on_cooldown: This shop is on cooldown, try again in !cooldownleft seconds.
   damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
   use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
+  no_items_defined_for_shop: There are no items defined for this shop, can not complete the operation.
 commands:
   TpToOwner:
   - tp !player !owner

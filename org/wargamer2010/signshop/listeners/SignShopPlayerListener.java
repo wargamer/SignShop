@@ -168,8 +168,6 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.setMessagePart("!owner", player.getName());
                 ssArgs.setMessagePart("!player", ssPlayer.getName());
                 ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
-                if(ssArgs.get_isItems() == null)
-                    ssArgs.set_isItems(tags.getCraftItemstacks(1, Material.getMaterial("DIRT"), 1, (short)0));
 
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);

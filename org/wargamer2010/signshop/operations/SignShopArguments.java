@@ -14,7 +14,8 @@ public class SignShopArguments {
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                                 SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace) {
         fPrice = pfPrice;
-        isItems = pisItems;
+        if(pisItems != null && pisItems.length > 0)
+            isItems = pisItems;
         containables = pContainables;
         activatables = pActivatables;
         if(pssPlayer != null)
