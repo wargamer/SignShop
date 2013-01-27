@@ -94,7 +94,7 @@ public class SignShopPlayer {
         if(isOpRaw())
             return true;
         String fullperm = (perm.isEmpty() ? "SignShop.SuperAdmin" : "SignShop.SuperAdmin." + perm);
-        if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, fullperm))
+        if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, fullperm.toLowerCase()))
             return true;
         return false;
     }
@@ -129,7 +129,7 @@ public class SignShopPlayer {
         if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
         // Using Permissions so check his permissions and restore his OP if he has it
-        else if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, perm)) {
+        else if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, perm.toLowerCase())) {
             setOp(isOP);
             return true;
         // Not using Permissions but he is OP, so he's allowed
@@ -158,7 +158,12 @@ public class SignShopPlayer {
         if(sPlayername.isEmpty())
             return true;
         EconomyResponse response;
-        response = Vault.economy.depositPlayer(sPlayername, amount);
+        try {
+            response = Vault.economy.depositPlayer(sPlayername, amount);
+        } catch(java.lang.RuntimeException ex) {
+            response = new EconomyResponse(0, 0, EconomyResponse.ResponseType.FAILURE, "");
+        }
+
         if(response.type == EconomyResponse.ResponseType.SUCCESS)
             Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
         else
@@ -172,12 +177,17 @@ public class SignShopPlayer {
         if(sPlayername.isEmpty())
             return true;
         EconomyResponse response;
-        if(amount > 0.0)
-            response = Vault.economy.depositPlayer(sPlayername, amount);
-        else if(amount < 0.0)
-            response = Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
-        else
-            return true;
+        try {
+            if(amount > 0.0)
+                response = Vault.economy.depositPlayer(sPlayername, amount);
+            else if(amount < 0.0)
+                response = Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
+            else
+                return true;
+        } catch(java.lang.RuntimeException ex) {
+            response = new EconomyResponse(0, 0, EconomyResponse.ResponseType.FAILURE, "");
+        }
+
         if(response.type == EconomyResponse.ResponseType.SUCCESS)
             return true;
         else
@@ -260,6 +270,18 @@ public class SignShopPlayer {
         }
 
         return ((!bInRelGroup) ? 0 : iLimit);
+    }
+
+    public ItemStack[] getInventoryContents() {
+        if(ssPlayer == null)
+            return null;
+        return ssPlayer.getInventory().getContents();
+    }
+
+    public void setInventoryContents(ItemStack[] newContents) {
+        if(ssPlayer == null)
+            return;
+        ssPlayer.getInventory().setContents(newContents);
     }
 
     public boolean setMeta(String key, String value) {
