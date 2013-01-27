@@ -382,7 +382,7 @@ public class SignShopItemMeta {
         return -1;
     }
 
-    private static Map<String, String> getMetaAsMap(ItemMeta meta) {
+    public static Map<String, String> getMetaAsMap(ItemMeta meta) {
         Map<String, String> metamap = new LinkedHashMap<String, String>();
         List<MetaType> types = getTypesOfMeta(meta);
 
@@ -577,7 +577,7 @@ public class SignShopItemMeta {
     }
 
 
-    private static Boolean isLegacy() {
+    public static Boolean isLegacy() {
         return legacy;
     }
 

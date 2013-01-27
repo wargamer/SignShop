@@ -373,7 +373,7 @@ public class itemUtil {
         return isBackup;
     }
 
-    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake, Boolean bTake) {
+    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake) {
         ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
         HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
         returnMap.put(isItemsToTake, 1.0f);
@@ -381,8 +381,6 @@ public class itemUtil {
         IItemTags tags = BookFactory.getItemTags();
         if(fromOK) {
             returnMap.put(isItemsToTake, 1.0f);
-            if(bTake)
-                iiFrom.removeItem(isBackup);
             return returnMap;
         } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {
             returnMap.put(isItemsToTake, 0.0f);
@@ -420,8 +418,6 @@ public class itemUtil {
         }
         returnMap.clear();
         returnMap.put(isActual, iCount);
-        if(bTake)
-            iiFrom.removeItem(isActual);
         return returnMap;
     }
 
@@ -558,6 +554,22 @@ public class itemUtil {
         return items;
     }
 
+    public static boolean itemstackEqual(ItemStack a, ItemStack b, boolean ignoredur) {
+        if(a.getType() != b.getType())
+            return false;
+        if(!ignoredur && a.getData().getData() != b.getData().getData())
+            return false;
+        if(!ignoredur && a.getDurability() != b.getDurability())
+            return false;
+        if(a.getEnchantments() != b.getEnchantments())
+            return false;
+        if(!SignShopItemMeta.isLegacy() && !SignShopItemMeta.getMetaAsMap(a.getItemMeta()).equals(SignShopItemMeta.getMetaAsMap(b.getItemMeta())))
+            return false;
+        if(a.getMaxStackSize() != b.getMaxStackSize())
+            return false;
+        return true;
+    }
+
     public static String getColorAsString(Color color) {
         if(colorLookup == null) {
             colorLookup = new HashMap<Integer, String>();
@@ -584,6 +596,7 @@ public class itemUtil {
             colorLookup.put(1973019 , "black");
             colorLookup.put(14188952 , "pink");
             colorLookup.put(14602026, "yellow");
+            colorLookup.put(10511680, "brown");
         }
 
         int rgb = color.asRGB();
