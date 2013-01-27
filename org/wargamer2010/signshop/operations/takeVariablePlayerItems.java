@@ -1,12 +1,12 @@
 package org.wargamer2010.signshop.operations;
 
+import java.util.Collections;
 import java.util.Comparator;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -15,19 +15,33 @@ import java.util.TreeSet;
 import org.bukkit.Material;
 
 public class takeVariablePlayerItems implements SignShopOperation {
-    static <K,V extends Comparable<? super V>> void SortEntriesByValue(Map<K,V> map) {
-        SortedSet<Map.Entry<K,V>> sortedEntries = new TreeSet<Map.Entry<K,V>>(
-            new Comparator<Map.Entry<K,V>>() {
-                @Override public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
-                    int res = e1.getValue().compareTo(e2.getValue());
-                    return res != 0 ? res : 1;
-                }
-            }
-        );
-        sortedEntries.addAll(map.entrySet());
-        map.clear();
-        for(Map.Entry<K,V> entry : sortedEntries) {
-            map.put(entry.getKey(), entry.getValue());
+    private static class StackDurabilityPair implements Comparator<StackDurabilityPair> {
+        private ItemStack _stack;
+        private Short _durability;
+
+        private StackDurabilityPair(ItemStack stack, Short durability) {
+            _stack = stack;
+            _durability = durability;
+        }
+
+        private StackDurabilityPair() {
+
+        }
+
+        public ItemStack getStack() {
+            return _stack;
+        }
+
+        public Short getDurability() {
+            return _durability;
+        }
+
+        @Override
+        public int compare(StackDurabilityPair o1, StackDurabilityPair o2) {
+            if (!(o1 instanceof StackDurabilityPair) || !(o2 instanceof StackDurabilityPair))
+                throw new ClassCastException();
+
+            return (o1.getDurability() - o2.getDurability());
         }
     }
 
@@ -55,32 +69,32 @@ public class takeVariablePlayerItems implements SignShopOperation {
     }
 
     private ItemStack[] getRealItemStack(ItemStack[] playerinv, ItemStack[] actual) {
-        Map<ItemStack,Short> sortedbydurability = new LinkedHashMap<ItemStack, Short>();
+        List<StackDurabilityPair> sortedbydurability = new LinkedList<StackDurabilityPair>();
         for(ItemStack playerstack : playerinv) {
             if(playerstack != null)
-                sortedbydurability.put(playerstack, playerstack.getDurability());
+                sortedbydurability.add(new StackDurabilityPair(playerstack, playerstack.getDurability()));
         }
-        SortEntriesByValue(sortedbydurability);
+        Collections.sort(sortedbydurability, new StackDurabilityPair());
 
         Map<ItemStack, Integer> map = itemUtil.StackToMap(actual);
-        ItemStack neededstack = null;
-        int needed = -1;
+        ItemStack neededstack;
+        int needed;
+        List<ItemStack> toTakeForReal = new LinkedList<ItemStack>();
+
         for(Map.Entry<ItemStack, Integer> entry : map.entrySet()) {
             neededstack = entry.getKey();
             needed = entry.getValue();
-        }
-
-        List<ItemStack> toTakeForReal = new LinkedList<ItemStack>();
-
-        for(ItemStack stackfrominv : sortedbydurability.keySet()) {
-            if(itemUtil.itemstackEqual(stackfrominv, neededstack, true)) {
-                ItemStack bak = itemUtil.getBackupSingleItemStack(stackfrominv);
-                if(bak.getAmount() >= needed)
-                    bak.setAmount(needed);
-                toTakeForReal.add(bak);
-                needed -= bak.getAmount();
-                if(needed <= 0)
-                    break;
+            for(StackDurabilityPair pair : sortedbydurability) {
+                ItemStack stackfrominv = pair.getStack();
+                if(itemUtil.itemstackEqual(stackfrominv, neededstack, true)) {
+                    ItemStack bak = itemUtil.getBackupSingleItemStack(stackfrominv);
+                    if(bak.getAmount() >= needed)
+                        bak.setAmount(needed);
+                    toTakeForReal.add(bak);
+                    needed -= bak.getAmount();
+                    if(needed <= 0)
+                        break;
+                }
             }
         }
 
