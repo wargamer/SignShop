@@ -438,7 +438,7 @@ public class itemUtil {
     public static void updateStockStatusPerShop(Seller pSeller) {
         if(pSeller != null) {
             Block pSign = Storage.get().getSignFromSeller(pSeller);
-            if(pSign == null)
+            if(pSign == null || !(pSign.getState() instanceof Sign))
                 return;
             String[] sLines = ((Sign) pSign.getState()).getLines();
             if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
