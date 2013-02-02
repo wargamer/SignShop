@@ -54,12 +54,14 @@ signs:
   TpToOwner: takePlayerMoney,playerIsOp,runCommand
   Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
-  Command: takePlayerMoney, playerIsOp,runCommand
+  Command: takePlayerMoney,playerIsOp,runCommand
   Share: ShareSign
   Restricted: RestrictedSign
   Jukebox: playJukebox,takePlayerMoney
-  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
-  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
+  Kit: givePlayerItems,takePlayerMoney,oneTime,playerIsOp
+  ResetKit: takePlayerMoney,resetOneTime{Kit},playerIsOp
+  iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
+  iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
 messages:
   setup:
     Buy: You have put !items for sale at a price of !price!
@@ -96,6 +98,8 @@ messages:
     Jukebox: You have set up a Jukebox that plays records from the chest for !price!
     Kit: You have setup a one time use kit (!items) for !price!
     ResetKit: You have setup a sign that resets !param signs!
+    iXPBuy: You have put !items for sale at the cost of !xp XP points!
+    iXPSell: You have put !items infinitely for sale at a price of !xp XP points!
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -132,6 +136,8 @@ messages:
     Jukebox: Play a record for !price?
     Kit: Get this kit (!items) one time for !price?
     ResetKit: Reset your !param signs for !price!
+    iXPBuy: Buy !items for !xp XP points?
+    iXPSell: Sell !items for !xp XP points?
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -168,6 +174,8 @@ messages:
     Jukebox: You've made the Jukebox play a record for !price!
     Kit: You acquired !items for !price!
     ResetKit: You reset !param signs for !price!
+    iXPBuy: You have bought !items for !xp XP points!
+    iXPSell: You have sold !items for !xp XP points!
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -204,6 +212,8 @@ messages:
     Jukebox: \!customer played a record on your jukebox for !price!
     Kit: ''
     ResetKit: ''
+    iXPBuy: ''
+    iXPSell: ''
 errors:
   no_permission: You don't have permission to create this sign!
   no_permission_use: You don't have permission to use this sign!

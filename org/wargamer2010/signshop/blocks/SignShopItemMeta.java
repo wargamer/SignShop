@@ -236,26 +236,30 @@ public class SignShopItemMeta {
         if(isLegacy())
             return;
 
-        SSDatabase db = new SSDatabase(filename);
-
-        Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
-        pars.put(1, ID);
-
         Map<String, String> metamap = new LinkedHashMap<String, String>();
         ItemMeta meta = stack.getItemMeta();
+        SSDatabase db = new SSDatabase(filename);
 
-        ResultSet setprops = (ResultSet)db.runStatement("SELECT PropertyName, ProperyValue FROM MetaProperty WHERE ItemMetaID = ?;", pars, true);
-        if(setprops == null)
-            return;
         try {
-            while(setprops.next())
-                metamap.put(setprops.getString("PropertyName"), setprops.getString("ProperyValue"));
-        } catch(SQLException ex) {
-            return;
+            Map<Integer, Object> pars = new LinkedHashMap<Integer, Object>();
+            pars.put(1, ID);
+
+            ResultSet setprops = (ResultSet)db.runStatement("SELECT PropertyName, ProperyValue FROM MetaProperty WHERE ItemMetaID = ?;", pars, true);
+            if(setprops == null)
+                return;
+            try {
+                while(setprops.next())
+                    metamap.put(setprops.getString("PropertyName"), setprops.getString("ProperyValue"));
+            } catch(SQLException ex) {
+                return;
+            }
+
+            if(metamap.isEmpty())
+                return;
+        } finally {
+            db.close();
         }
 
-        if(metamap.isEmpty())
-            return;
 
         if(!getPropValue("displayname", metamap).isEmpty())
             meta.setDisplayName(getPropValue("displayname", metamap));
@@ -384,6 +388,8 @@ public class SignShopItemMeta {
 
     public static Map<String, String> getMetaAsMap(ItemMeta meta) {
         Map<String, String> metamap = new LinkedHashMap<String, String>();
+        if(isLegacy())
+            return metamap;
         List<MetaType> types = getTypesOfMeta(meta);
 
         if(meta.getDisplayName() != null)
