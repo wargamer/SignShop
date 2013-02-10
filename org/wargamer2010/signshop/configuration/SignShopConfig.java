@@ -473,6 +473,8 @@ public class SignShopConfig {
         if(stacks == null)
             return null;
         for(ItemStack single : stacks) {
+            if(single == null)
+                continue;
             if(isItemOnBlacklist(single.getTypeId())) {
                 return single;
             }
