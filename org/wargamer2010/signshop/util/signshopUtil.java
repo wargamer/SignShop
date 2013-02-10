@@ -446,6 +446,11 @@ public class signshopUtil {
                 containables.add(bBlockat);
             } else if (signshopUtil.clickedSignShopMat(bBlockat, ssPlayer)) {
                 activatables.add(bBlockat);
+                if(itemUtil.clickedDoor(bBlockat)) {
+                    Block otherpart = itemUtil.getOtherDoorPart(bBlockat);
+                    if(otherpart != null)
+                        activatables.add(otherpart);
+                }
             }
             if (!multiWorld && !bBlockat.getWorld().getName().equals(bClicked.getWorld().getName())) {
                 if (SignShopConfig.getAllowMultiWorldShops()) {

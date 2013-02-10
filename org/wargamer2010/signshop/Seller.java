@@ -11,8 +11,10 @@ import java.util.Map;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.kellerkindt.scs.*;
 import java.util.LinkedHashMap;
+import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {
@@ -121,5 +123,20 @@ public class Seller {
 
     public void setVolatile(String key, String value) {
         volatileProperties.put(key, value);
+    }
+
+    public Block getSign() {
+        return Storage.get().getSignFromSeller(this);
+    }
+
+    public String getOperation() {
+        Block block = getSign();
+        if(block == null)
+            return "";
+        if(itemUtil.clickedSign(block)) {
+            Sign sign = (Sign) block.getState();
+            return signshopUtil.getOperation(sign.getLine(0));
+        }
+        return "";
     }
 }

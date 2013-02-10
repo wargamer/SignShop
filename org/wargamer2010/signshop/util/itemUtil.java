@@ -476,10 +476,27 @@ public class itemUtil {
     }
 
     public static Boolean clickedSign(Block bBlock) {
-        if(bBlock.getType() == Material.getMaterial("SIGN") || bBlock.getType() == Material.getMaterial("WALL_SIGN") || bBlock.getType() == Material.getMaterial("SIGN_POST"))
-            return true;
-        else
-            return false;
+        return (bBlock.getType() == Material.getMaterial("SIGN") || bBlock.getType() == Material.getMaterial("WALL_SIGN") || bBlock.getType() == Material.getMaterial("SIGN_POST"));
+    }
+
+    public static Boolean clickedDoor(Block bBlock) {
+        return (bBlock.getType() == Material.getMaterial("WOODEN_DOOR") || bBlock.getType() == Material.getMaterial("IRON_DOOR") || bBlock.getType() == Material.getMaterial("IRON_DOOR_BLOCK"));
+    }
+
+    private static boolean isTopHalf(byte data) {
+        return ((data & 0x8) == 0x8);
+    }
+
+    public static Block getOtherDoorPart(Block bBlock) {
+        if(!clickedDoor(bBlock))
+            return null;
+        Block up = bBlock.getWorld().getBlockAt(bBlock.getX(), bBlock.getY()+1, bBlock.getZ());
+        Block down = bBlock.getWorld().getBlockAt(bBlock.getX(), bBlock.getY()-1, bBlock.getZ());
+
+        Block otherpart = isTopHalf(bBlock.getData()) ? down : up;
+        if(clickedDoor(otherpart))
+            return otherpart;
+        return null;
     }
 
     public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
