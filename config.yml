@@ -54,12 +54,12 @@ signs:
   TpToOwner: takePlayerMoney,playerIsOp,runCommand
   Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
-  Command: takePlayerMoney,playerIsOp,runCommand
+  Command: takePlayerMoney, playerIsOp,runCommand
   Share: ShareSign
   Restricted: RestrictedSign
   Jukebox: playJukebox,takePlayerMoney
-  Kit: givePlayerItems,takePlayerMoney,oneTime,playerIsOp
-  ResetKit: takePlayerMoney,resetOneTime{Kit},playerIsOp
+  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
+  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
   iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
 messages:
@@ -196,7 +196,7 @@ messages:
     Toggle: \!customer toggled your device for !price!
     Device: \!customer temporarily activated your device for !price!
     Heal: \!customer healed at your station for !price!
-    Repair: \!customer repaired an item at your station for !price!
+    Repair: ''
     Dispose: ''
     DeviceItem: \!customer temporarily activated your device for !items!
     iSlot: ''
