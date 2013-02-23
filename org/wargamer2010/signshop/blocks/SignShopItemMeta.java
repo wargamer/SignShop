@@ -98,6 +98,10 @@ public class SignShopItemMeta {
         return "";
     }
 
+    private static boolean hasMeta(ItemStack stack) {
+        return (stack.hasItemMeta() && stack.getItemMeta() != null);
+    }
+
     private static String getDisplayName(ItemStack stack) {
         if(stack.getItemMeta().hasDisplayName())
             return (ChatColor.ITALIC + "\"" + stack.getItemMeta().getDisplayName() + "\"" + ChatColor.RESET);
@@ -106,7 +110,7 @@ public class SignShopItemMeta {
     }
 
     public static String getName(ItemStack stack) {
-        if(isLegacy())
+        if(isLegacy() || !hasMeta(stack))
             return "";
 
         ItemMeta meta = stack.getItemMeta();
@@ -331,7 +335,7 @@ public class SignShopItemMeta {
     }
 
     public static Integer storeMeta(ItemStack stack) {
-        if(isLegacy())
+        if(isLegacy() || !hasMeta(stack))
             return -1;
 
         SSDatabase db = new SSDatabase(filename);
@@ -366,7 +370,7 @@ public class SignShopItemMeta {
     }
 
     public static Integer getMetaID(ItemStack stack) {
-        if(isLegacy())
+        if(isLegacy() || !hasMeta(stack))
             return -1;
 
         return getMetaID(stack, null);
@@ -392,7 +396,7 @@ public class SignShopItemMeta {
 
     public static Map<String, String> getMetaAsMap(ItemMeta meta) {
         Map<String, String> metamap = new LinkedHashMap<String, String>();
-        if(isLegacy())
+        if(isLegacy() || meta == null)
             return metamap;
         List<MetaType> types = getTypesOfMeta(meta);
 
