@@ -61,7 +61,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getLine(0));
         if(seller == null)
             return false;
-        if(ssPlayer.getPlayer().getItemInHand() == null || ssPlayer.getPlayer().getItemInHand().getType() != SignShopConfig.getLinkMaterial())
+        if(ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShopConfig.getLinkMaterial())
             return false;
         SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
         List<String> operation = SignShopConfig.getBlocks(sOperation);

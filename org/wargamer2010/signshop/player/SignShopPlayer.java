@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.player;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -307,6 +308,15 @@ public class SignShopPlayer {
 
     public boolean removeMeta(String key) {
         return meta.removeMeta(key);
+    }
+
+    public ItemStack getItemInHand() {
+        if(ssPlayer == null)
+            return null;
+        ItemStack stack = ssPlayer.getItemInHand();
+        if(stack.getType() == Material.getMaterial("AIR"))
+            return null;
+        return stack;
     }
 
 }

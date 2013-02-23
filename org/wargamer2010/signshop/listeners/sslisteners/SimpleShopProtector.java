@@ -99,9 +99,9 @@ public class SimpleShopProtector implements Listener {
         if(event.getPlayer().getPlayer() == null)
             event.setCancelled(true);
 
-        Player player = event.getPlayer().getPlayer();
+        SignShopPlayer player = event.getPlayer();
 
-        if(player.getGameMode() == GameMode.CREATIVE
+        if(player.getPlayer().getGameMode() == GameMode.CREATIVE
                 && SignShopConfig.getProtectShopsInCreative()
                 && (player.getItemInHand() == null || player.getItemInHand().getType() != SignShopConfig.getDestroyMaterial())) {
             event.setCancelled(true);
@@ -115,7 +115,7 @@ public class SimpleShopProtector implements Listener {
             return;
         }
 
-        Boolean bCanDestroy = canDestroy(player, event.getBlock(), true);
+        Boolean bCanDestroy = canDestroy(player.getPlayer(), event.getBlock(), true);
         if(!bCanDestroy)
             event.setCancelled(true);
     }

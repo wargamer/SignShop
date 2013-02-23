@@ -81,10 +81,11 @@ public class SignShopPlayerListener implements Listener {
         if(!(event.getDamager().getType() == EntityType.PLAYER))
             return;
         Player player = (Player)event.getDamager();
-
-        if(!SignShopConfig.isOPMaterial(player.getItemInHand().getType()))
-            return;
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
+
+        if(!SignShopConfig.isOPMaterial(ssPlayer.getItemInHand().getType()))
+            return;
+
         if(event.getEntity().getType() == EntityType.PLAYER) {
             Player clickedPlayer = (Player)event.getEntity();
             if(clicks.mClicksPerPlayername.containsKey(clickedPlayer.getName())) {
