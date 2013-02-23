@@ -290,6 +290,7 @@ errors:
   damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
   use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
   no_items_defined_for_shop: There are no items defined for this shop, can not complete the operation.
+  notifications_shop_built: \!player just created a(n) !signtype sign at (!x, !y, !z)
 commands:
   TpToOwner:
   - tp !player !owner
