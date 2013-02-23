@@ -14,12 +14,12 @@ public class takeItemInHand implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
-        if(ssArgs.get_ssPlayer().getPlayer().getItemInHand() == null) {
+        if(ssArgs.get_ssPlayer().getItemInHand() == null) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_in_hand", ssArgs.messageParts));
             return false;
         } else {
             ItemStack[] isItems = new ItemStack[1];
-            isItems[0] = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+            isItems[0] = ssArgs.get_ssPlayer().getItemInHand();
             ssArgs.set_isItems(isItems);
             ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         }
@@ -29,7 +29,7 @@ public class takeItemInHand implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         ItemStack[] isItems = new ItemStack[1];
-        isItems[0] = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+        isItems[0] = ssArgs.get_ssPlayer().getItemInHand();
         ssArgs.set_isItems(isItems);
         ssArgs.get_ssPlayer().takePlayerItems(ssArgs.get_isItems());
         return true;

@@ -20,9 +20,10 @@ public class copySign implements SignShopSpecialOp {
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         Block shopSign = event.getClickedBlock();
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
         if(!itemUtil.clickedSign(shopSign))
             return false;
-        if(player.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())
+        if(ssPlayer.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())
             return false;
 
         Sign signNewSign = null;
@@ -41,7 +42,6 @@ public class copySign implements SignShopSpecialOp {
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
         if((!seller.getOwner().equals(player.getName()) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
             ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
             return true;

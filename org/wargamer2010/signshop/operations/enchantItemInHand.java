@@ -60,7 +60,7 @@ public class enchantItemInHand implements SignShopOperation {
         Map<Enchantment, Integer> enchantments = signshopUtil.convertStringToEnchantments(ssArgs.miscSettings.get("enchantmentInHand"));
         String enchantmentsString = itemUtil.enchantmentsToMessageFormat(enchantments);
         ssArgs.setMessagePart("!enchantments", enchantmentsString);
-        ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
         ItemStack isBackup = itemUtil.getBackupSingleItemStack(isInHand);
         if(isInHand == null) {
             ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.messageParts));
@@ -74,7 +74,7 @@ public class enchantItemInHand implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ItemStack isInHand = ssArgs.get_ssPlayer().getPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
         Map<Enchantment, Integer> enchantments = signshopUtil.convertStringToEnchantments(ssArgs.miscSettings.get("enchantmentInHand"));
         return itemUtil.safelyAddEnchantments(isInHand, enchantments);
     }
