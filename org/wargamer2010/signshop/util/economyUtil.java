@@ -4,17 +4,23 @@ import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.Vault;
 
 public class economyUtil {
-    public static String formatMoney(double money) {
-        if(Vault.economy == null)
-            return Double.toString(money);
-        else
-            return Vault.economy.format(money);
+    private economyUtil() {
+
     }
-    
-    public static float parsePrice(String priceline) {
-        priceline = ChatColor.stripColor(priceline);
+
+    public static String formatMoney(Float money) {
+        if(money.isNaN() || money.isInfinite())
+            return "0.00";
+        if(Vault.economy == null)
+            return Float.toString(money);
+        else
+            return Vault.economy.format(money.doubleValue());
+    }
+
+    public static float parsePrice(String line) {
+        String priceline = ChatColor.stripColor(line);
         String sPrice = "";
-        float fPrice = 0.0f;
+        Float fPrice;
         for(int i = 0; i < priceline.length(); i++)
             if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.')
                 sPrice += priceline.charAt(i);
@@ -27,7 +33,9 @@ public class economyUtil {
         if(fPrice < 0.0f) {
             fPrice = 0.0f;
         }
-        return fPrice;
+        if(fPrice.isNaN() || fPrice.isInfinite())
+            fPrice = 0.0f;
+        return fPrice.floatValue();
     }
-    
+
 }

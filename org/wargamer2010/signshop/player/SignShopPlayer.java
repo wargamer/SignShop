@@ -111,7 +111,7 @@ public class SignShopPlayer {
     public Boolean hasPerm(String perm, Boolean OPOperation) {
         if(ssPlayer == null)
             return false;
-        return this.hasPerm(perm, ssPlayer.getWorld(), OPOperation);
+        return hasPerm(perm, ssPlayer.getWorld(), OPOperation);
     }
 
     public boolean hasPerm(String perm, World world, Boolean OPOperation) {
@@ -143,7 +143,14 @@ public class SignShopPlayer {
         return false;
     }
 
+    private boolean isNothing(float amount) {
+        Float floater = new Float(amount);
+        return (floater == 0.0f || floater.isInfinite() || floater.isNaN());
+    }
+
     public boolean hasMoney(float amount) {
+        if(isNothing(amount))
+            return true;
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -153,6 +160,8 @@ public class SignShopPlayer {
     }
 
     public boolean canHaveMoney(float amount) {
+        if(isNothing(amount))
+            return true;
         if(Vault.economy == null)
             return false;
         if(sPlayername.isEmpty())
@@ -174,7 +183,7 @@ public class SignShopPlayer {
     public boolean mutateMoney(float amount) {
         if(Vault.economy == null)
             return false;
-        if(sPlayername.isEmpty())
+        if(sPlayername.isEmpty() || isNothing(amount))
             return true;
         EconomyResponse response;
         try {
