@@ -35,7 +35,19 @@ public class signshopUtil {
     private signshopUtil() {
     }
 
-    public static String getOperation(String sSignOperation){
+    public static String getOperation(Sign sign, boolean lowercase) {
+        if(sign == null)
+            return "";
+        String sSignOperation = sign.getLine(0);
+        if(sSignOperation.length() < 4){
+            return "";
+        }
+        String stripped = ChatColor.stripColor(sSignOperation);
+        String temp = stripped.substring(1, stripped.length()-1);
+        return (lowercase ? temp.toLowerCase() : temp);
+    }
+
+    public static String getOperation(String sSignOperation) {
         if(sSignOperation.length() < 4){
             return "";
         }
