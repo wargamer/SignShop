@@ -99,7 +99,8 @@ public class SignShopItemMeta {
     }
 
     private static boolean hasMeta(ItemStack stack) {
-        return (stack.hasItemMeta() && stack.getItemMeta() != null);
+        // This seems silly but some parts of the code below function when an item has no meta data but itemmeta is not null
+        return (stack.getItemMeta() != null);
     }
 
     private static String getDisplayName(ItemStack stack) {
