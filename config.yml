@@ -106,7 +106,6 @@ messages:
     Donate: Donate !items?
     DonateHand: Donate !items?
     Slot: Play this slot machine for !price?
-    Redstone: Activate this device for !price?
     iBuy: Buy !items for !price?
     iSell: Sell !items for !price?
     gBuy: Buy !items for !price?
@@ -144,7 +143,6 @@ messages:
     Donate: You have donated !items!
     DonateHand: You have donated !items!
     Slot: You won !items!
-    Redstone: Device activated for !price!
     iBuy: You have bought !items for !price!
     iSell: You have sold !items for !price!
     gBuy: You have bought !items for !price!
@@ -182,30 +180,29 @@ messages:
     Donate: \!customer donated !items to you!
     DonateHand: \!customer donated !items to you!
     Slot: \!customer played a slot machine for !price and won !items!
-    Redstone: \!customer activated your redstone device for !price!
     iBuy: ''
     iSell: ''
     gBuy: \!customer bought !items from your ghost store!
     gSell: \!customer sold !items to your ghost store!
-    Day: \!customer set the time to day for !price!
-    Night: \!customer set the time to night for !price!
-    Rain: \!customer set the weather to raining for !price!
-    ClearSkies: \!customer set the weather to clear skies for !price!
+    Day: ''
+    Night: ''
+    Rain: ''
+    ClearSkies: ''
     DeviceOn: \!customer activated your device for !price!
     DeviceOff: \!customer deactivated your device for !price!
     Toggle: \!customer toggled your device for !price!
     Device: \!customer temporarily activated your device for !price!
-    Heal: \!customer healed at your station for !price!
+    Heal: ''
     Repair: ''
     Dispose: ''
     DeviceItem: \!customer temporarily activated your device for !items!
     iSlot: ''
-    Enchant: \!customer enchanted his item with !enchantments for !price!
+    Enchant: ''
     iSellXP: ''
     iBuyXP: ''
     iTrade: ''
     Trade: \!customer traded !chest1 for your !chest2!
-    TpToOwner: \!customer teleported to you for !price!
+    TpToOwner: ''
     Class: ''
     Disenchant: ''
     Command: ''

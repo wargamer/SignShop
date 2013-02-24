@@ -78,10 +78,11 @@ public class SignShopPlayerListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
-        if(!(event.getDamager().getType() == EntityType.PLAYER))
-            return;
         Player player = (Player)event.getDamager();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
+
+        if(event.getDamager().getType() != EntityType.PLAYER || ssPlayer.getItemInHand() == null)
+            return;
 
         if(!SignShopConfig.isOPMaterial(ssPlayer.getItemInHand().getType()))
             return;
