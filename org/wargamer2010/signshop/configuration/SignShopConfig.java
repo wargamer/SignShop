@@ -132,6 +132,8 @@ public class SignShopConfig {
         HookManager.addHook("Deadbolt");
         HookManager.addHook("Residence");
         HookManager.addHook("GriefPrevention");
+        HookManager.addHook("PreciousStones");
+        HookManager.addHook("PlotMe");
     }
 
     private void setupSpecialsOps() {

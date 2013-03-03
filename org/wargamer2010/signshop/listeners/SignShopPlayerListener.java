@@ -80,7 +80,7 @@ public class SignShopPlayerListener implements Listener {
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
         if(event.getDamager().getType() != EntityType.PLAYER)
             return;
-        
+
         Player player = (Player)event.getDamager();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
 
@@ -116,7 +116,7 @@ public class SignShopPlayerListener implements Listener {
         String sOperation;
         World world = player.getWorld();
         Seller seller = Storage.get().getSeller(event.getClickedBlock().getLocation());
-        IItemTags tags = BookFactory.getItemTags();
+
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && SignShopConfig.isOPMaterial(event.getItem().getType())) {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShopConfig.getLinkMaterial()) {
                 sLines = ((Sign) bClicked.getState()).getLines();
