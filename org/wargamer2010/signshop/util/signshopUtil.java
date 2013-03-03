@@ -228,6 +228,8 @@ public class signshopUtil {
                 percentages.addAll(tempperc);
                 blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
                 if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                    ssPlayer.sendMessage("No usernames have been given on the second and third line so the Share sign will be ignored.");
+                else if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
                     ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
                 else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2)))
                     ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
@@ -308,6 +310,10 @@ public class signshopUtil {
         List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
         HashMap<String, Integer> shares = new HashMap<String, Integer>();
 
+        if(tempperc.size() == 2 && lineIsEmpty(sign.getLine(1)) && lineIsEmpty(sign.getLine(2))) {
+            ssPlayer.sendMessage("No usernames have been given on the second and third line so ignoring Share sign.");
+            return shares;
+        }
         if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2)))) {
             shares.put((sign.getLine(1) == null ? sign.getLine(2) : sign.getLine(1)), tempperc.get(0));
             ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
@@ -420,10 +426,9 @@ public class signshopUtil {
             } else {
                 SSLinkEvent event = SSEventFactory.generateLinkEvent(bClicked, ssPlayer, null);
                 SignShop.scheduleEvent(event);
-                if(event.isCancelled()) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
+                if(event.isCancelled())                    
                     return false;
-                } else {
+                else {
                     clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());
                     ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
                 }
