@@ -16,7 +16,7 @@ public class setRedstoneOn implements SignShopOperation {
             if(block.getType() == Material.getMaterial("LEVER"))
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -40,7 +40,7 @@ public class setRedstoneOn implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_on", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_on", ssArgs.getMessageParts()));
         return bReturn;
     }
 

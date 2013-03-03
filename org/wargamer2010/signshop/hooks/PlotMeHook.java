@@ -11,6 +11,8 @@ public class PlotMeHook implements Hook {
         if(HookManager.getHook("PlotMe") == null)
             return true;
         boolean foundAllowed = false;
+        if(PlotManager.getPlots(block) == null)
+            return true;
         for(Plot plot : PlotManager.getPlots(block).values()) {            
             if(plot.isAllowed(player.getName()) || plot.getOwner().equals(player.getName()))
                 foundAllowed = true;

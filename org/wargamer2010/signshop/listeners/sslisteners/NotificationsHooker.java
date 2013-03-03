@@ -25,10 +25,10 @@ public class NotificationsHooker implements Listener {
             return;
         String op = signshopUtil.getOperation((Sign) event.getSign().getState(), false);
 
-        event.getMessageParts().put("!signtype", op);
-        event.getMessageParts().put("!x", Integer.toString(event.getSign().getX()));
-        event.getMessageParts().put("!y", Integer.toString(event.getSign().getY()));
-        event.getMessageParts().put("!z", Integer.toString(event.getSign().getZ()));
+        event.setMessagePart("!signtype", op);
+        event.setMessagePart("!x", Integer.toString(event.getSign().getX()));
+        event.setMessagePart("!y", Integer.toString(event.getSign().getY()));
+        event.setMessagePart("!z", Integer.toString(event.getSign().getZ()));
         String message = SignShopConfig.getError("notifications_shop_built", event.getMessageParts());
         if(message.isEmpty())
             return;

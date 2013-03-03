@@ -271,6 +271,25 @@ public class signshopUtil {
 
         return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
     }
+    
+    public static String validateBankSign(List<Block> clickedBlocks, SignShopPlayer player) {
+        List<String> blocklocations = new LinkedList<String>();        
+        for(Block banksign : clickedBlocks) {
+            if(itemUtil.clickedSign(banksign)) {
+                Sign sign = (Sign)banksign.getState();
+                if(Vault.economy.hasBankSupport()) {
+                    if(!Vault.economy.bankBalance(sign.getLine(1)).transactionSuccess())
+                        player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
+                    blocklocations.add(signshopUtil.convertLocationToString(banksign.getLocation()));
+                }
+            }
+        }
+
+        String[] implodedLocations = new String[blocklocations.size()];
+        blocklocations.toArray(implodedLocations);
+
+        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+    }
 
     public static Boolean restrictedFromUsing(Seller seller, SignShopPlayer player) {
         List<Block> blocks = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
@@ -306,29 +325,6 @@ public class signshopUtil {
         return (line == null || line.length() == 0);
     }
 
-    private static Map<String, Integer> getShares(Sign sign, SignShopPlayer ssPlayer) {
-        List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
-        HashMap<String, Integer> shares = new HashMap<String, Integer>();
-
-        if(tempperc.size() == 2 && lineIsEmpty(sign.getLine(1)) && lineIsEmpty(sign.getLine(2))) {
-            ssPlayer.sendMessage("No usernames have been given on the second and third line so ignoring Share sign.");
-            return shares;
-        }
-        if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2)))) {
-            shares.put((sign.getLine(1) == null ? sign.getLine(2) : sign.getLine(1)), tempperc.get(0));
-            ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
-        } else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2))) {
-            shares.put(sign.getLine(1), tempperc.get(0));
-            ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
-        } else if(tempperc.size() == 2) {
-            shares.put(sign.getLine(1), tempperc.get(0));
-            shares.put(sign.getLine(2), tempperc.get(1));
-        } else if(tempperc.size() == 1) {
-            shares.put(sign.getLine(1), tempperc.get(0));
-        }
-        return shares;
-    }
-
     public static List<Block> getSignsFromMisc(Seller seller, String miscprop) {
         List<Block> signs = new LinkedList<Block>();
         if(seller.getMisc().containsKey(miscprop)) {
@@ -347,46 +343,7 @@ public class signshopUtil {
     }
 
 
-    public static Boolean distributeMoney(Seller seller, Float fPrice, SignShopPlayer ssPlayer) {
-        List<Block> shareSigns = getSignsFromMisc(seller, "sharesigns");
-        SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
-        if(shareSigns.isEmpty()) {
-            return ssOwner.mutateMoney(fPrice);
-        } else {
-            Boolean bTotalTransaction;
-            Map<String, Integer> shares = new HashMap<String, Integer>();
-            for(Block sharesign : shareSigns) {
-                if(itemUtil.clickedSign(sharesign)) {
-                    shares.putAll(getShares((Sign)sharesign.getState(), ssPlayer));
-                }
-            }
-            Integer totalPercentage = 0;
-            for(Map.Entry<String, Integer> share : shares.entrySet()) {
-
-                Float amount = (fPrice / 100 * share.getValue());
-                SignShopPlayer sharee = new SignShopPlayer(share.getKey());
-                if(sharee.getPlayer() == null && Bukkit.getServer().getOfflinePlayer(share.getKey()) == null)
-                    ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
-                else {
-                    ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
-                    sharee.sendMessage("You were given a share of " + economyUtil.formatMoney(amount));
-                    totalPercentage += share.getValue();
-                    bTotalTransaction = sharee.mutateMoney(amount);
-                    if(!bTotalTransaction) {
-                        ssOwner.sendMessage("Money transaction failed for player: " + share.getKey());
-                        return false;
-                    }
-                }
-            }
-            if(totalPercentage != 100) {
-                Float amount = fPrice;
-                if(totalPercentage > 0)
-                    amount = (fPrice / 100 * (100 - totalPercentage));
-                return ssOwner.mutateMoney(amount);
-            } else
-                return true;
-        }
-    }
+    
 
     public static List<Block> getBlocksFromLocStringList(List<String> sLocs, World world) {
         List<Block> blocklist = new LinkedList<Block>();

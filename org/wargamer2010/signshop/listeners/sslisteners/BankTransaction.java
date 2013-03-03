@@ -1,0 +1,119 @@
+package org.wargamer2010.signshop.listeners.sslisteners;
+
+import java.util.LinkedList;
+import java.util.List;
+import net.milkbowl.vault.economy.EconomyResponse;
+import org.bukkit.block.Block;
+import org.bukkit.block.Sign;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.Vault;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToOwner;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToPlayer;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromPlayer;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.Unknown;
+import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
+import org.wargamer2010.signshop.util.itemUtil;
+import static org.wargamer2010.signshop.util.signshopUtil.getSignsFromMisc;
+
+public class BankTransaction implements Listener {
+    @EventHandler(priority = EventPriority.NORMAL)
+    public void onSSMoneyTransaction(SSMoneyTransactionEvent event) {
+        if(event.isHandled() || event.isCancelled() || event.getPlayer().getPlayer() == null)
+            return;
+        if(event.getShop() == null || !event.getShop().getMisc().containsKey("banksigns"))
+            return;
+        
+        if(!Vault.economy.hasBankSupport()) {
+            event.getPlayer().sendMessage("The current Economy plugin offers no Bank support!");
+            return;
+        }
+        
+        List<String> banks = getBanks(event.getShop());
+        if(banks.isEmpty())
+            return;
+        
+        if(event.isCheckOnly()) {
+            switch(event.getTransactionType()) {
+                case GiveToOwner:
+                    // Does a Bank have a money cap?
+                break;
+                case TakeFromOwner:
+                    boolean hasTheMoney = true;
+                    for(String bank : banks) {
+                        EconomyResponse response = Vault.economy.bankHas(bank, event.getAmount());
+                        if(response.transactionSuccess()) {
+                            hasTheMoney = true;
+                            break;
+                        }                        
+                    }
+                    if(!hasTheMoney)
+                        event.setCancelled(true);
+                break;
+                case GiveToPlayer:
+                    return;
+                case TakeFromPlayer:
+                    return;                
+                case Unknown:
+                    return;
+            }
+        } else {
+            boolean bTransaction = false;
+            
+            switch(event.getTransactionType()) {
+                case GiveToOwner:
+                    for(String bank : banks) {
+                        EconomyResponse response = Vault.economy.bankDeposit(bank, event.getAmount());
+                        if(response.transactionSuccess()) {
+                            bTransaction = true;
+                            break;
+                        }
+                    }
+                break;
+                case TakeFromOwner:
+                    for(String bank : banks) {
+                        EconomyResponse response = Vault.economy.bankHas(bank, event.getAmount());
+                        if(response.transactionSuccess()) {
+                            EconomyResponse second = Vault.economy.bankWithdraw(bank, event.getAmount());
+                            if(second.transactionSuccess()) {
+                                bTransaction = true;
+                                break;
+                            }
+                        }
+                    }
+                break;
+                case GiveToPlayer:
+                    return;
+                case TakeFromPlayer:
+                    return;
+                case Unknown:
+                    return;
+            }
+            
+            if(!bTransaction) {
+                event.getPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
+                event.setCancelled(true);
+            }
+        }
+        
+        event.setHandled(true);
+    }    
+    
+    private static List<String> getBanks(Seller seller) {
+        List<Block> bankSigns = getSignsFromMisc(seller, "banksigns");        
+        List<String> banks = new LinkedList<String>();
+        if(!bankSigns.isEmpty()) {
+            for(Block banksign : bankSigns) {
+                if(itemUtil.clickedSign(banksign)) {
+                    Sign sign = (Sign) banksign.getState();
+                    if(sign.getLine(1) != null)
+                        banks.add(sign.getLine(1));             
+                }
+            }
+        }
+        return banks;
+    }
+}

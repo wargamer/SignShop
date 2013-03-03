@@ -13,13 +13,13 @@ public class takePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
         ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -32,13 +32,13 @@ public class takePlayerItems implements SignShopOperation {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
         if(ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
         Player player = ssArgs.get_ssPlayer().getPlayer();
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         if(!itemUtil.isStockOK(player.getInventory(), ssArgs.get_isItems(), true)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
             return false;
         }
         return true;

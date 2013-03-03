@@ -243,6 +243,12 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new GetPriceFromWorth(), this);
         pm.registerEvents(new ShopCooldown(), this);
         pm.registerEvents(new NotificationsHooker(), this);
+        pm.registerEvents(new StockChecker(), this);
+        
+        // Money Transactions Types
+        pm.registerEvents(new DefaultMoneyTransaction(), this);
+        pm.registerEvents(new BankTransaction(), this);
+        pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
     public static Logger getMainLogger() {

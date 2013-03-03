@@ -15,16 +15,16 @@ public class repairPlayerHeldItem implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_to_repair", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_to_repair", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getType().getMaxDurability() < 30) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("invalid_item_to_repair", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("invalid_item_to_repair", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getEnchantments().size() > 0 && !SignShopConfig.getAllowEnchantedRepair() && !ssArgs.get_ssPlayer().hasPerm("SignShop.ignorerepair", false)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("enchanted_not_allowed", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("enchanted_not_allowed", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getDurability() == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_already_repair", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_already_repair", ssArgs.getMessageParts()));
             return false;
         }
         return true;

@@ -1,9 +1,10 @@
 package org.wargamer2010.signshop.operations;
 
 import org.wargamer2010.signshop.util.economyUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
-import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.events.SSEventFactory;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 
 public class giveOwnerMoney implements SignShopOperation {
     @Override
@@ -14,22 +15,15 @@ public class giveOwnerMoney implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        signshopUtil.ApplyPriceMod(ssArgs);
-        return true;
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.GiveToOwner, true);
+        SignShop.scheduleEvent(event);
+        return (!event.isCancelled() && event.isHandled());
     }
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
-        Seller seller = Storage.get().getSeller(ssArgs.get_bSign().getLocation());
-        Boolean bTransaction = false;
-        if(seller != null && seller.getMisc().containsKey("sharesigns")) {
-            bTransaction = signshopUtil.distributeMoney(seller, fPrice, ssArgs.get_ssPlayer());
-        } else {
-            bTransaction = ssArgs.get_ssOwner().mutateMoney(fPrice);
-        }
-        if(!bTransaction)
-            ssArgs.get_ssPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
-        return bTransaction;
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.GiveToOwner, false);
+        SignShop.scheduleEvent(event);
+        return (!event.isCancelled() && event.isHandled());        
     }
 }

@@ -16,7 +16,7 @@ public class ShopCooldown implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled() || event.getAction() != Action.RIGHT_CLICK_BLOCK)
+        if(event.isCancelled() || event.getAction() != Action.RIGHT_CLICK_BLOCK || !event.getRequirementsOK())
             return;
         int cooldown = SignShopConfig.getShopCooldown();
         long now = new Date().getTime();
@@ -34,9 +34,9 @@ public class ShopCooldown implements Listener {
 
         if((now - lastused) < cooldown) {
             if(left >= 1)
-                event.getMessageParts().put("!cooldownleft", Long.toString(left));
+                event.setMessagePart("!cooldownleft", Long.toString(left));
             else
-                event.getMessageParts().put("!cooldownleft", "< 1");
+                event.setMessagePart("!cooldownleft", "< 1");
             event.getPlayer().sendMessage(SignShopConfig.getError("shop_on_cooldown", event.getMessageParts()));
             event.setCancelled(true);
             return;

@@ -57,6 +57,7 @@ signs:
   Command: takePlayerMoney, playerIsOp,runCommand
   Share: ShareSign
   Restricted: RestrictedSign
+  Bank: BankSign
   Jukebox: playJukebox,takePlayerMoney
   Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
   ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
@@ -288,6 +289,13 @@ errors:
   use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
   no_items_defined_for_shop: There are no items defined for this shop, can not complete the operation.
   notifications_shop_built: \!player just created a(n) !signtype sign at (!x, !y, !z)
+  shop_contains: This shop contains !shopinventory @ !items for !price
+  not_allowed_to_link_banksigns: You are not allowed to link Bank signs to this shop!
+  no_shop_linked_to_banksign: This Bank sign has not been linked to any shops.
+  bank_sign_linked_to_banks: This Bank sign communicates with banks called !banks in the name of the shops at !bankshops
+  registered_bank_sign: Registered a Bank sign, please click the Shop sign next.
+  unlinked_bank_sign: Unlinked Bank sign from Shop.
+  linked_bank_sign: Succesfully linked Bank sign to Shop.
 commands:
   TpToOwner:
   - tp !player !owner

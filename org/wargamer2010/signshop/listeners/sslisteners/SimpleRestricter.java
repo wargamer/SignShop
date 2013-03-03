@@ -1,13 +1,11 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
-import java.util.List;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
-import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SimpleRestricter implements Listener {

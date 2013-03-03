@@ -1,13 +1,24 @@
 
 package org.wargamer2010.signshop.events;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 public abstract class SSEvent extends Event implements Cancellable {
     private boolean bCancelled = false;
+    private Map<String, String> messageParts = new HashMap<String, String>();
 
+    public SSEvent() {
+        
+    }
+    
+    public SSEvent(Map<String, String> pMessageParts) {
+        messageParts = pMessageParts;
+    }
+    
     @Override
     public boolean isCancelled() {
         return bCancelled;
@@ -16,6 +27,14 @@ public abstract class SSEvent extends Event implements Cancellable {
     @Override
     public void setCancelled(boolean pCancelled) {
         bCancelled = pCancelled;
+    }
+    
+    public Map<String, String> getMessageParts() {
+        return messageParts;
+    }
+
+    public void setMessagePart(String part, String value) {
+        messageParts.put(part, value);
     }
 
     @Override

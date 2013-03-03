@@ -14,13 +14,13 @@ public class giveShopItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
         ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(!ssArgs.isOperationParameter("allowemptychest") && isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -31,13 +31,13 @@ public class giveShopItems implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(!ssArgs.isOperationParameter("allowemptychest") && ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
 
         Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), false);
         if(!bStockOK)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("overstocked", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("overstocked", ssArgs.getMessageParts()));
         if(activeCheck && !bStockOK)
             itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
         else if(activeCheck)

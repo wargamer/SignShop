@@ -35,7 +35,7 @@ public class takePlayerXP implements SignShopOperation {
             refXP = ssArgs.get_ssPlayer().getPlayer().getLevel();
         ssArgs.setMessagePart("!hasxp", refXP.toString());
         if(refXP < XP) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_player_xp", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_player_xp", ssArgs.getMessageParts()));
             return false;
         }        
         return true;

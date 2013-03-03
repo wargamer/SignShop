@@ -3,38 +3,26 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.block.Block;
 import org.bukkit.Location;
 import org.bukkit.block.Sign;
-import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.List;
 import java.util.LinkedList;
 import org.wargamer2010.signshop.configuration.Storage;
 
-public class ShareSign implements SignShopOperation {
+public class BankSign implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        List<Block> shops = Storage.get().getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
-        if(!shops.isEmpty()) {
-            for(Block bTemp : shops) {
-                Seller seller = Storage.get().getSeller(bTemp.getLocation());
-                if(seller != null && seller.getMisc().containsKey("sharesigns")) {
-                    if(signshopUtil.validateShareSign(signshopUtil.getSignsFromMisc(seller, "sharesigns"), ssArgs.get_ssPlayer()).isEmpty())
-                        return false;
-                }
-            }
-        } else {
-            signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
-            ssArgs.bDoNotClearClickmap = true;
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_share_sign", null));
-        }
+        signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
+        ssArgs.bDoNotClearClickmap = true;
+        ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_bank_sign", null));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        List<Block> shops = Storage.get().getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_sharesign", null));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_banksign", null));
         } else {
             String profitshops = "";
             Boolean first = true;
@@ -46,14 +34,13 @@ public class ShareSign implements SignShopOperation {
                 else if(bTemp == bLast) profitshops += " and ";
                 profitshops += ("(" + loc.getX() + ", " + loc.getY() + ", " + loc.getZ() + ")");
             }
-            ssArgs.setMessagePart("!profitshops", profitshops);
+            ssArgs.setMessagePart("!bankshops", profitshops);
             String profits = "";
             List<String> names = new LinkedList<String>();
             Sign sign = (Sign)ssArgs.get_bSign().getState();
             String[] lines = sign.getLines();
             if(!signshopUtil.lineIsEmpty(lines[1])) names.add(lines[1]);
-            if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);
-            names.add("the Shop's respective owners");
+            if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);            
             first = true;
             String sLast = names.get(names.size()-1);
             for(String sTemp : names) {
@@ -62,8 +49,8 @@ public class ShareSign implements SignShopOperation {
                 else if(sLast.equals(sTemp)) profits += " and ";
                 profits += sTemp;
             }
-            ssArgs.setMessagePart("!profits", profits);
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("share_sign_splits_profit", ssArgs.getMessageParts()));
+            ssArgs.setMessagePart("!banks", profits);
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
         }
         return true;
     }
