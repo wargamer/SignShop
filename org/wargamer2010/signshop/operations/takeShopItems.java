@@ -13,13 +13,13 @@ public class takeShopItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
         ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -30,14 +30,14 @@ public class takeShopItems implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
         
         Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), true);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
         if(!bStockOK)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("out_of_stock", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("out_of_stock", ssArgs.getMessageParts()));
         if(!bStockOK && activeCheck)
             itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
         else if(activeCheck)

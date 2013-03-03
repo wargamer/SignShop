@@ -38,8 +38,8 @@ public class runCommand implements SignShopOperation {
             for(String sCommand : commands) {
                 boolean ok = true;
                 if(sCommand != null && sCommand.length() > 0) {
-                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.messageParts);
-                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.messageParts);
+                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());
+                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());
                     if(ssArgs.isOperationParameter("asOriginalUser")) {
                         ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
                     } else if(ssArgs.isOperationParameter("asUser")) {

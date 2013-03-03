@@ -1,8 +1,10 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.events.SSEventFactory;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.util.economyUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
 
 public class givePlayerMoney implements SignShopOperation {
     @Override
@@ -13,20 +15,15 @@ public class givePlayerMoney implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        signshopUtil.ApplyPriceMod(ssArgs);
-        if(!ssArgs.get_ssPlayer().canHaveMoney(ssArgs.get_fPrice())) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.messageParts));
-            return false;
-        }
-        return true;
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.GiveToPlayer, true);
+        SignShop.scheduleEvent(event);
+        return (!event.isCancelled() && event.isHandled());
     }
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
-        Boolean bTransaction = ssArgs.get_ssPlayer().mutateMoney(fPrice);
-        if(!bTransaction)
-            ssArgs.get_ssPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
-        return bTransaction;
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.GiveToPlayer, false);
+        SignShop.scheduleEvent(event);
+        return (!event.isCancelled() && event.isHandled());
     }
 }

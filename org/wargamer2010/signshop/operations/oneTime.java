@@ -13,8 +13,8 @@ public class oneTime implements SignShopOperation {
         String rawparam = ssArgs.get_sOperation().toLowerCase();
         if(ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.messageParts);
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.messageParts);
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
         return rawparam;
     }
 
@@ -30,10 +30,10 @@ public class oneTime implements SignShopOperation {
         if(ssPlayer == null)
             return true;
         if(ssPlayer.hasMeta(param)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("only_one_time", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("only_one_time", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.messageParts.put("!param", param);
+        ssArgs.setMessagePart("!param", param);
         return true;
     }
 
@@ -45,7 +45,7 @@ public class oneTime implements SignShopOperation {
         boolean ok = ssPlayer.setMeta(param, Long.toString(new Date().getTime()));
         if(!ok)
             ssPlayer.sendMessage("Could not set the Metadata needed for this shop. Please check the logs for more information.");
-        ssArgs.messageParts.put("!param", param);
+        ssArgs.setMessagePart("!param", param);
         return ok;
     }
 }

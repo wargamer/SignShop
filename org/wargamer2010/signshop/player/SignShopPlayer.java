@@ -7,6 +7,7 @@ import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -317,6 +318,10 @@ public class SignShopPlayer {
         if(stack.getType() == Material.getMaterial("AIR"))
             return null;
         return stack;
+    }
+    
+    public boolean isOwner(Seller seller) {
+        return (seller.getOwner().equals(sPlayername));
     }
 
 }

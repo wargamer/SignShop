@@ -12,9 +12,8 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public class SSPreTransactionEvent extends Event implements Cancellable {
+public class SSPreTransactionEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
-    private boolean bCancelled = false;
 
     private Float fPrice = -1.0f;
     private ItemStack[] isItems = null;
@@ -26,7 +25,7 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
     private String sOperation = "";
     private Seller seShop = null;
     private Action aAction = null;
-    private Map<String, String> messageParts = new HashMap<String, String>();
+    private boolean bRequirementsOK = true;    
 
     public SSPreTransactionEvent(Float pPrice,
                                 ItemStack[] pItems,
@@ -38,7 +37,9 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
                                 String pOperation,
                                 Map<String, String> pMessageParts,
                                 Seller pShop,
-                                Action pAction) {
+                                Action pAction,
+                                boolean pRequirementsOK) {
+        super(pMessageParts);
         fPrice = pPrice;
         isItems = pItems;
         containables = pContainables;
@@ -47,9 +48,9 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
         ssOwner = pOwner;
         bSign = pSign;
         sOperation = pOperation;
-        messageParts = pMessageParts;
         seShop = pShop;
         aAction = pAction;
+        bRequirementsOK = pRequirementsOK;
     }
 
     @Override
@@ -59,16 +60,6 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
 
     public static HandlerList getHandlerList() {
         return handlers;
-    }
-
-    @Override
-    public boolean isCancelled() {
-        return bCancelled;
-    }
-
-    @Override
-    public void setCancelled(boolean pCancelled) {
-        bCancelled = pCancelled;
     }
 
     public Float getPrice() {
@@ -114,12 +105,8 @@ public class SSPreTransactionEvent extends Event implements Cancellable {
     public Action getAction() {
         return aAction;
     }
-
-    public Map<String, String> getMessageParts() {
-        return messageParts;
-    }
-
-    public void setMessagePart(String part, String value) {
-        messageParts.put(part, value);
-    }
+    
+    public boolean getRequirementsOK() {
+        return bRequirementsOK;
+    }   
 }

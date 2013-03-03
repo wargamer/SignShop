@@ -4,9 +4,11 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.Action;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.IExpirable;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SSEventFactory {
 
@@ -22,11 +24,11 @@ public class SSEventFactory {
                                                             ssArgs.get_ssPlayer(),
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
-                                                            ssArgs.messageParts,
+                                                            ssArgs.getRawMessageParts(),
                                                             ssArgs.miscSettings);
     }
 
-    public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction) {
+    public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction, boolean pRequirementsOK) {
         return new SSPreTransactionEvent(ssArgs.get_fPrice(),
                                                             ssArgs.get_isItems(),
                                                             ssArgs.get_containables_root(),
@@ -35,9 +37,10 @@ public class SSEventFactory {
                                                             ssArgs.get_ssOwner(),
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
-                                                            ssArgs.messageParts,
+                                                            ssArgs.getRawMessageParts(),
                                                             pSeller,
-                                                            pAction);
+                                                            pAction,
+                                                            pRequirementsOK);
     }
 
     public static SSPostTransactionEvent generatePostTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction) {
@@ -49,9 +52,10 @@ public class SSEventFactory {
                                                             ssArgs.get_ssOwner(),
                                                             ssArgs.get_bSign(),
                                                             ssArgs.get_sOperation(),
-                                                            ssArgs.messageParts,
+                                                            ssArgs.getRawMessageParts(),
                                                             pSeller,
-                                                            pAction);
+                                                            pAction,
+                                                            true);
     }
 
     public static SSTouchShopEvent generateTouchShopEvent(SignShopPlayer pPlayer, Seller pShop, Action pAction, Block pBlock) {
@@ -68,6 +72,15 @@ public class SSEventFactory {
 
     public static SSExpiredEvent generateExpiredEvent(IExpirable pExpirable) {
         return new SSExpiredEvent(pExpirable);
+    }
+    
+    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, Float fPrice, SSMoneyEventType type, boolean pCheckOnly) {        
+        return new SSMoneyTransactionEvent(ssArgs.get_ssPlayer(),
+                                            Storage.get().getSeller(ssArgs.get_bSign().getLocation()),
+                                            signshopUtil.ApplyPriceMod(ssArgs),
+                                            type,
+                                            ssArgs.getRawMessageParts(),
+                                            pCheckOnly);
     }
 
 }

@@ -6,7 +6,7 @@ public class playerIsOp implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {        
         if(!ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin."+ssArgs.get_sOperation()), true) && !ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin.*"), true)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_permission", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_permission", ssArgs.getMessageParts()));
             return false;        
         }
         return true;

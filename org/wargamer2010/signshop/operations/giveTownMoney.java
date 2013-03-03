@@ -36,7 +36,7 @@ public class giveTownMoney implements SignShopOperation {
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
-                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.messageParts));
+                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.getMessageParts()));
                         return false;
                     }
                 }
@@ -44,12 +44,12 @@ public class giveTownMoney implements SignShopOperation {
                     ssPlayer.sendMessage("Error with the economy, tell the System Administrator to install Vault properly.");
                     return false;
                 } else if (town.getEconomyName().isEmpty()) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                    ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                     return false;
                 }
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(player, x.getMessage());
-                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                 return false;
             }
             return true;

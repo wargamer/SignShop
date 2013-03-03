@@ -32,8 +32,8 @@ public class RestrictedSign implements SignShopOperation {
                 else if(bTemp == bLast) restrictedshops += " and ";
                 restrictedshops += ("(" + loc.getX() + ", " + loc.getY() + ", " + loc.getZ() + ")");
             }
-            ssArgs.messageParts.put("!restrictedshops", restrictedshops);
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("restricted_sign_restricts", ssArgs.messageParts));
+            ssArgs.setMessagePart("!restrictedshops", restrictedshops);
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("restricted_sign_restricts", ssArgs.getMessageParts()));
         }
         return true;
     }

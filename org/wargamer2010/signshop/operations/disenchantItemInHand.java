@@ -15,10 +15,10 @@ public class disenchantItemInHand implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_to_disenchant", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_to_disenchant", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getEnchantments().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("nothing_to_disenchant", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("nothing_to_disenchant", ssArgs.getMessageParts()));
             return false;
         }
         return true;

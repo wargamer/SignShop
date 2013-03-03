@@ -22,8 +22,9 @@ public class SSPostTransactionEvent extends SSPreTransactionEvent {
                                 String pOperation,
                                 Map<String, String> pMessageParts,
                                 Seller pShop,
-                                Action pAction) {
-        super(pPrice, pItems, pContainables, pActivatables, pPlayer, pOwner, pSign, pOperation, pMessageParts, pShop, pAction);
+                                Action pAction,
+                                boolean pRequirementsOK) {
+        super(pPrice, pItems, pContainables, pActivatables, pPlayer, pOwner, pSign, pOperation, pMessageParts, pShop, pAction, pRequirementsOK);
     }
 
     @Override

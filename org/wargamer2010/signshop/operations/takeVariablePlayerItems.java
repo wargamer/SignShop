@@ -52,7 +52,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
             Material mat;
             Map<ItemStack, Integer> map = itemUtil.StackToMap(ssArgs.get_isItems());
             if(map.size() > 1) {
-                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("damaged_items_shop_homogeneous", ssArgs.messageParts));
+                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("damaged_items_shop_homogeneous", ssArgs.getMessageParts()));
                 return false;
             }
             ItemStack arr[] = new ItemStack[1]; map.keySet().toArray(arr);
@@ -120,13 +120,13 @@ public class takeVariablePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
         ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.set_isItems(isTotalItems);
@@ -139,7 +139,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         if(ssArgs.get_ssPlayer().getPlayer() == null)
             return true;
         if(ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", null));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
 
@@ -153,7 +153,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
 
         ssArgs.get_ssPlayer().setInventoryContents(backupinv);
         if(iCount == 0.0f) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.messageParts));
+            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
             return false;
         }
 

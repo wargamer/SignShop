@@ -372,6 +372,21 @@ public class itemUtil {
 
         return isBackup;
     }
+    
+    public static ItemStack[] filterStacks(ItemStack[] all, ItemStack[] filterby) {
+        ItemStack[] filtered = new ItemStack[all.length];        
+        List<ItemStack> tempFiltered = new LinkedList<ItemStack>();
+        HashMap<ItemStack, Integer> mFilter = StackToMap(filterby);
+        for(ItemStack stack : all) {
+            ItemStack temp = getBackupSingleItemStack(stack);
+            temp.setAmount(1);
+            if(mFilter.containsKey(temp)) {
+                tempFiltered.add(stack);
+            }
+        }
+        
+        return tempFiltered.toArray(filtered);
+    }
 
     public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake) {
         ItemStack[] isBackup = getBackupItemStack(isItemsToTake);

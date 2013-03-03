@@ -1,4 +1,5 @@
 package org.wargamer2010.signshop.operations;
+import java.util.Collections;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -110,12 +111,26 @@ public class SignShopArguments {
         return (bPriceModApplied = true);
     }
 
-    public Map<String, String> messageParts = new HashMap<String, String>();
+    private Map<String, String> messageParts = new HashMap<String, String>();
     public void setMessagePart(String name, String value) {
         messageParts.put(name, value);
         if(forceMessageKeys.containsKey(name))
             name = forceMessageKeys.get(name);
         messageParts.put(name, value);
+    }
+    public boolean hasMessagePart(String name) {
+        return messageParts.containsKey(name);
+    }
+    public String getMessagePart(String name) {
+        if(hasMessagePart(name))
+            return messageParts.get(name);
+        return "";
+    }
+    public Map<String, String> getMessageParts() {
+        return Collections.unmodifiableMap(messageParts);
+    }
+    public Map<String, String> getRawMessageParts() {
+        return messageParts;
     }
 
     public SpecialArguments special = null;

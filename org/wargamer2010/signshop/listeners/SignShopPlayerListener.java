@@ -6,7 +6,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.block.Sign;
@@ -21,8 +20,6 @@ import java.util.*;
 import org.bukkit.entity.EntityType;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.blocks.BookFactory;
-import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
@@ -148,8 +145,8 @@ public class SignShopPlayerListener implements Listener {
                 for(Block bCheckme : containables) {
                      if(bClicked.getWorld().getName().equals(bCheckme.getWorld().getName())) {
                         if(!signshopUtil.checkDistance(bClicked, bCheckme, SignShopConfig.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
-                            ssArgs.messageParts.put("!max", Integer.toString(SignShopConfig.getMaxSellDistance()));
-                            ssPlayer.sendMessage(SignShopConfig.getError("too_far", ssArgs.messageParts));
+                            ssArgs.setMessagePart("!max", Integer.toString(SignShopConfig.getMaxSellDistance()));
+                            ssPlayer.sendMessage(SignShopConfig.getError("too_far", ssArgs.getMessageParts()));
                             itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                             return;
                         }
@@ -217,27 +214,30 @@ public class SignShopPlayerListener implements Listener {
             ssArgs.setMessagePart("!customer", ssPlayer.getName());
             ssArgs.setMessagePart("!owner", ssOwner.getName());
             ssArgs.setMessagePart("!player", ssPlayer.getName());
-            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
+            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());            
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
-            Boolean bRequirementsOK = false;
+            Boolean bRequirementsOK = true;
             Boolean bRunOK = false;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                 ssArgs.set_operationParameters(ssOperation.getValue());
-                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
+                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);                
                 if(!bRequirementsOK)
-                    return;
+                    break;
             }
-            if(!bRequirementsOK)
-                return;
-
-            SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction());
+            if(ssArgs.hasMessagePart("!items") && !ssArgs.hasMessagePart("!price"))
+                signshopUtil.ApplyPriceMod(ssArgs);
+            
+            SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction(), bRequirementsOK);
             SignShop.scheduleEvent(pretransactevent);
             if(pretransactevent.isCancelled())
                 return;
+            
+            if(!bRequirementsOK)
+                return;
 
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
-                ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.get_sOperation(), ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.get_sOperation(), ssArgs.getMessageParts()));
 
                 ssArgs.special.deactivate();
                 return;
@@ -265,11 +265,11 @@ public class SignShopPlayerListener implements Listener {
             }
 
             List<String> chests = new LinkedList<String>();
-            for(Map.Entry<String, String> entry : ssArgs.messageParts.entrySet())
+            for(Map.Entry<String, String> entry : ssArgs.getMessageParts().entrySet())
                 if(entry.getKey().contains("chest"))
                     chests.add(entry.getValue());
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
-            String items = (ssArgs.messageParts.get("!items") == null ? signshopUtil.implode(sChests, " and ") : ssArgs.messageParts.get("!items"));
+            String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
             SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.get_fPrice()));
             return;
         }

@@ -95,8 +95,8 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         for (Block bCheckme : containables) {
             if (bClicked.getWorld().getName().equals(bCheckme.getWorld().getName())) {
                 if (!signshopUtil.checkDistance(bClicked, bCheckme, SignShopConfig.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
-                    ssArgs.messageParts.put("!max", Integer.toString(SignShopConfig.getMaxSellDistance()));
-                    ssPlayer.sendMessage(SignShopConfig.getError("too_far", ssArgs.messageParts));
+                    ssArgs.setMessagePart("!max", Integer.toString(SignShopConfig.getMaxSellDistance()));
+                    ssPlayer.sendMessage(SignShopConfig.getError("too_far", ssArgs.getMessageParts()));
                     return true;
                 }
             }
@@ -107,20 +107,20 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             ssArgs.set_operationParameters(ssOperation.getValue());
             bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
             if (!bSetupOK) {
-                ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.messageParts));
+                ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
                 return true;
             }
         }
         if (!bSetupOK) {
-            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.messageParts));
+            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }
         ItemStack blacklisted = null;
         if(ssArgs.get_isItems() != null)
             blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems());
         if (blacklisted != null) {
-            ssArgs.messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
-            ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.messageParts));
+            ssArgs.setMessagePart("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
+            ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.getMessageParts()));
             return true;
         }
 
@@ -130,7 +130,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             clicks.removePlayerFromClickmap(player);
         }
 
-        ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", ssArgs.messageParts));
+        ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", ssArgs.getMessageParts()));
 
         return true;
     }
