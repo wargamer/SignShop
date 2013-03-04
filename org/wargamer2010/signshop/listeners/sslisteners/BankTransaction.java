@@ -10,12 +10,14 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.Unknown;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import static org.wargamer2010.signshop.util.signshopUtil.getSignsFromMisc;
 
@@ -35,6 +37,27 @@ public class BankTransaction implements Listener {
         List<String> banks = getBanks(event.getShop());
         if(banks.isEmpty())
             return;
+        
+        List<String> ownedBanks = new LinkedList<String>();
+        SignShopPlayer ssOwner = new SignShopPlayer(event.getShop().getOwner());
+        for(String bank : banks) {
+            String owner = event.getShop().getOwner();
+            if(Vault.economy.isBankOwner(bank, owner).transactionSuccess() || Vault.economy.isBankMember(bank, owner).transactionSuccess() 
+                    || ssOwner.isOp(event.getPlayer().getWorld())) {
+                ownedBanks.add(bank);
+            } else {
+                event.setMessagePart("!bank", bank);                
+                ssOwner.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", event.getMessageParts()));
+            }
+        }
+        
+        if(ownedBanks.isEmpty()) {
+            event.setHandled(true);
+            event.setCancelled(true);
+            event.getPlayer().sendMessage(SignShopConfig.getError("no_bank_available", event.getMessageParts()));
+            return;
+        }
+            
         
         if(event.isCheckOnly()) {
             switch(event.getTransactionType()) {

@@ -57,13 +57,15 @@ public class takeVariablePlayerItems implements SignShopOperation {
             }
             ItemStack arr[] = new ItemStack[1]; map.keySet().toArray(arr);
             mat = arr[0].getType();
+            boolean didnull = false;
 
             for(ItemStack stack : inv_stacks) {
                 if(stack != null && stack.getType() == mat && stack.getType().getMaxDurability() >= 30 && stack.getDurability() != nodamage) {
                     stack.setDurability(nodamage);
+                    didnull = true;
                 }
             }
-            return true;
+            return didnull;
         }
         return false;
     }
