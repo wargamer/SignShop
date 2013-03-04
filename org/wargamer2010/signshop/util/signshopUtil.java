@@ -274,12 +274,22 @@ public class signshopUtil {
     
     public static String validateBankSign(List<Block> clickedBlocks, SignShopPlayer player) {
         List<String> blocklocations = new LinkedList<String>();        
+        Map<String, String> messageParts = new LinkedHashMap<String, String>();
+        
         for(Block banksign : clickedBlocks) {
             if(itemUtil.clickedSign(banksign)) {
                 Sign sign = (Sign)banksign.getState();
                 if(Vault.economy.hasBankSupport()) {
-                    if(!Vault.economy.bankBalance(sign.getLine(1)).transactionSuccess())
+                    String bank = sign.getLine(1);
+                    if(!Vault.economy.bankBalance(bank).transactionSuccess())
                         player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
+                    else if(!Vault.economy.isBankOwner(bank, player.getName()).transactionSuccess() && !Vault.economy.isBankMember(bank, player.getName()).transactionSuccess() 
+                            && !player.isOp()) {
+                        messageParts.put("!bank", bank);
+                        player.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", messageParts));
+                        continue;
+                    }
+                    
                     blocklocations.add(signshopUtil.convertLocationToString(banksign.getLocation()));
                 }
             }
