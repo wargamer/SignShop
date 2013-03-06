@@ -9,20 +9,20 @@ import org.wargamer2010.signshop.util.economyUtil;
 public class takePlayerMoney implements SignShopOperation {    
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.get_fPrice()));
+        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
         return true;
     }
     
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {                        
-        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.TakeFromPlayer, true);
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getPrice().get(), SSMoneyEventType.TakeFromPlayer, true);
         SignShop.scheduleEvent(event);
         return (!event.isCancelled() && event.isHandled());
     }
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {        
-        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.get_fPrice(), SSMoneyEventType.TakeFromPlayer, false);
+        SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getPrice().get(), SSMoneyEventType.TakeFromPlayer, false);
         SignShop.scheduleEvent(event);
         return (!event.isCancelled() && event.isHandled());
     }

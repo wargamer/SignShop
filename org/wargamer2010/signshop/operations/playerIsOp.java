@@ -5,8 +5,8 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 public class playerIsOp implements SignShopOperation {    
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {        
-        if(!ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin."+ssArgs.get_sOperation()), true) && !ssArgs.get_ssPlayer().hasPerm(("SignShop.Admin.*"), true)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_permission", ssArgs.getMessageParts()));
+        if(!ssArgs.getPlayer().get().hasPerm(("SignShop.Admin."+ssArgs.getOperation().get()), true) && !ssArgs.getPlayer().get().hasPerm(("SignShop.Admin.*"), true)) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_permission", ssArgs.getMessageParts()));
             return false;        
         }
         return true;

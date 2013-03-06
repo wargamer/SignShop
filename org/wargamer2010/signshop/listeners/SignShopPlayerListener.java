@@ -1,23 +1,24 @@
 package org.wargamer2010.signshop.listeners;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.Sign;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
-import org.bukkit.block.Sign;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
-import org.bukkit.Location;
-import org.bukkit.event.block.Action;
-import org.bukkit.World;
-
-import java.util.*;
-
-import org.bukkit.entity.EntityType;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -27,12 +28,14 @@ import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
-import org.wargamer2010.signshop.player.SignShopPlayer;
-
-import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
-import org.wargamer2010.signshop.util.*;
+import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
+import org.wargamer2010.signshop.util.clicks;
+import org.wargamer2010.signshop.util.economyUtil;
+import org.wargamer2010.signshop.util.itemUtil;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopPlayerListener implements Listener {
 
@@ -155,7 +158,7 @@ public class SignShopPlayerListener implements Listener {
 
                 Boolean bSetupOK = false;
                 for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                    ssArgs.set_operationParameters(ssOperation.getValue());
+                    ssArgs.setOperationParameters(ssOperation.getValue());
                     bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
@@ -173,7 +176,8 @@ public class SignShopPlayerListener implements Listener {
                 if(createdevent.isCancelled())
                     return;
 
-                Storage.get().addSeller(player.getName(), world.getName(), ssArgs.get_bSign(), ssArgs.get_containables_root(), ssArgs.get_activatables_root(), ssArgs.get_isItems(), createdevent.getMiscSettings());
+                Storage.get().addSeller(player.getName(), world.getName(), ssArgs.getSign().get(), ssArgs.getContainables().getRoot(), ssArgs.getActivatables().getRoot()
+                                            , ssArgs.getItems().get(), createdevent.getMiscSettings());
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
 
@@ -199,11 +203,9 @@ public class SignShopPlayerListener implements Listener {
             }
 
             for(Block bContainable : seller.getContainables())
-                if(!bContainable.getLocation().getChunk().isLoaded())
-                    bContainable.getLocation().getChunk().load();
+                itemUtil.loadChunkByBlock(bContainable);                
             for(Block bActivatable : seller.getActivatables())
-                if(!bActivatable.getLocation().getChunk().isLoaded())
-                    bActivatable.getLocation().getChunk().load();
+                itemUtil.loadChunkByBlock(bActivatable);                
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null){
                 event.setCancelled(true);
@@ -220,7 +222,7 @@ public class SignShopPlayerListener implements Listener {
             Boolean bRequirementsOK = true;
             Boolean bRunOK = false;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.set_operationParameters(ssOperation.getValue());
+                ssArgs.setOperationParameters(ssOperation.getValue());
                 bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);                
                 if(!bRequirementsOK)
                     break;
@@ -237,16 +239,16 @@ public class SignShopPlayerListener implements Listener {
                 return;
 
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
-                ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.get_sOperation(), ssArgs.getMessageParts()));
+                ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.getOperation().get(), ssArgs.getMessageParts()));
 
-                ssArgs.special.deactivate();
+                ssArgs.reset();
                 return;
             }
-            ssArgs.special.deactivate();
-            ssArgs.set_root_fPrice(pretransactevent.getPrice());
+            ssArgs.reset();
+            ssArgs.getPrice().setRoot(pretransactevent.getPrice());
 
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.set_operationParameters(ssOperation.getValue());
+                ssArgs.setOperationParameters(ssOperation.getValue());
                 bRunOK = ssOperation.getKey().runOperation(ssArgs);
                 if(!bRunOK)
                     return;
@@ -270,7 +272,7 @@ public class SignShopPlayerListener implements Listener {
                     chests.add(entry.getValue());
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
             String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
-            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.get_fPrice()));
+            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
             return;
         }
         if(event.getItem() != null && seller != null && SignShopConfig.isOPMaterial(event.getItem().getType())) {

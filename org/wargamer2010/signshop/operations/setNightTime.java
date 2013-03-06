@@ -17,7 +17,7 @@ public class setNightTime implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();        
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();        
         world.setTime(14000);        
         SignShopPlayer.broadcastMsg(world, SignShopConfig.getError("made_night", ssArgs.getMessageParts()));
         return true;

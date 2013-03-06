@@ -17,26 +17,26 @@ public class SSEventFactory {
     }
 
     public static SSCreatedEvent generateCreatedEvent(SignShopArguments ssArgs) {
-        return new SSCreatedEvent(ssArgs.get_fPrice(),
-                                                            ssArgs.get_isItems(),
-                                                            ssArgs.get_containables_root(),
-                                                            ssArgs.get_activatables_root(),
-                                                            ssArgs.get_ssPlayer(),
-                                                            ssArgs.get_bSign(),
-                                                            ssArgs.get_sOperation(),
+        return new SSCreatedEvent(ssArgs.getPrice().get(),
+                                                            ssArgs.getItems().get(),
+                                                            ssArgs.getContainables().getRoot(),
+                                                            ssArgs.getActivatables().getRoot(),
+                                                            ssArgs.getPlayer().get(),
+                                                            ssArgs.getSign().get(),
+                                                            ssArgs.getOperation().get(),
                                                             ssArgs.getRawMessageParts(),
                                                             ssArgs.miscSettings);
     }
 
     public static SSPreTransactionEvent generatePreTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction, boolean pRequirementsOK) {
-        return new SSPreTransactionEvent(ssArgs.get_fPrice(),
-                                                            ssArgs.get_isItems(),
-                                                            ssArgs.get_containables_root(),
-                                                            ssArgs.get_activatables_root(),
-                                                            ssArgs.get_ssPlayer(),
-                                                            ssArgs.get_ssOwner(),
-                                                            ssArgs.get_bSign(),
-                                                            ssArgs.get_sOperation(),
+        return new SSPreTransactionEvent(ssArgs.getPrice().get(),
+                                                            ssArgs.getItems().get(),
+                                                            ssArgs.getContainables().getRoot(),
+                                                            ssArgs.getActivatables().getRoot(),
+                                                            ssArgs.getPlayer().get(),
+                                                            ssArgs.getOwner().get(),
+                                                            ssArgs.getSign().get(),
+                                                            ssArgs.getOperation().get(),
                                                             ssArgs.getRawMessageParts(),
                                                             pSeller,
                                                             pAction,
@@ -44,14 +44,14 @@ public class SSEventFactory {
     }
 
     public static SSPostTransactionEvent generatePostTransactionEvent(SignShopArguments ssArgs, Seller pSeller, Action pAction) {
-        return new SSPostTransactionEvent(ssArgs.get_fPrice(),
-                                                            ssArgs.get_isItems(),
-                                                            ssArgs.get_containables_root(),
-                                                            ssArgs.get_activatables_root(),
-                                                            ssArgs.get_ssPlayer(),
-                                                            ssArgs.get_ssOwner(),
-                                                            ssArgs.get_bSign(),
-                                                            ssArgs.get_sOperation(),
+        return new SSPostTransactionEvent(ssArgs.getPrice().get(),
+                                                            ssArgs.getItems().get(),
+                                                            ssArgs.getContainables().getRoot(),
+                                                            ssArgs.getActivatables().getRoot(),
+                                                            ssArgs.getPlayer().get(),
+                                                            ssArgs.getOwner().get(),
+                                                            ssArgs.getSign().get(),
+                                                            ssArgs.getOperation().get(),
                                                             ssArgs.getRawMessageParts(),
                                                             pSeller,
                                                             pAction,
@@ -75,8 +75,8 @@ public class SSEventFactory {
     }
     
     public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, Float fPrice, SSMoneyEventType type, boolean pCheckOnly) {        
-        return new SSMoneyTransactionEvent(ssArgs.get_ssPlayer(),
-                                            Storage.get().getSeller(ssArgs.get_bSign().getLocation()),
+        return new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
+                                            Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
                                             signshopUtil.ApplyPriceMod(ssArgs),
                                             type,
                                             ssArgs.getRawMessageParts(),

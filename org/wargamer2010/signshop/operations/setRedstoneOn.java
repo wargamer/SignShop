@@ -12,11 +12,11 @@ public class setRedstoneOn implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         Boolean foundLever = false;
-        for(Block block : ssArgs.get_activatables())
+        for(Block block : ssArgs.getActivatables().get())
             if(block.getType() == Material.getMaterial("LEVER"))
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -28,9 +28,9 @@ public class setRedstoneOn implements SignShopOperation {
             return false;
 
         Boolean bReturn = false;
-        Block bLever = null;
-        for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
-            bLever = ssArgs.get_activatables().get(i);
+        Block bLever;
+        for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
+            bLever = ssArgs.getActivatables().get().get(i);
             if(bLever.getType() == Material.getMaterial("LEVER")) {
                 BlockState state = bLever.getState();
                 MaterialData data = state.getData();
@@ -40,7 +40,7 @@ public class setRedstoneOn implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_on", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_on", ssArgs.getMessageParts()));
         return bReturn;
     }
 
@@ -51,8 +51,8 @@ public class setRedstoneOn implements SignShopOperation {
         
         Block bLever = null;
 
-        for(int i = 0; i < ssArgs.get_activatables().size(); i++) {
-            bLever = ssArgs.get_activatables().get(i);
+        for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
+            bLever = ssArgs.getActivatables().get().get(i);
             if(bLever.getType() == Material.getMaterial("LEVER")) {
                 BlockState state = bLever.getState();
                 MaterialData data = state.getData();
@@ -61,7 +61,7 @@ public class setRedstoneOn implements SignShopOperation {
                     lever.setPowered(true);
                     state.setData(lever);
                     state.update();
-                    signshopUtil.generateInteractEvent(bLever, ssArgs.get_ssPlayer().getPlayer(), ssArgs.get_bfBlockFace());
+                    signshopUtil.generateInteractEvent(bLever, ssArgs.getPlayer().get().getPlayer(), ssArgs.getBlockFace().get());
                 }
             }
         }

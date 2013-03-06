@@ -20,23 +20,24 @@ public class runCommand implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
-        String sOperation = ssArgs.get_sOperation();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
+        String sOperation = ssArgs.getOperation().get();
         Boolean hasStartPerm = false;
 
         ssArgs.setMessagePart("!customer", ssPlayer.getName());
-        ssArgs.setMessagePart("!owner", ssArgs.get_ssOwner().getName());
+        ssArgs.setMessagePart("!owner", ssArgs.getOwner().get().getName());
         ssArgs.setMessagePart("!player", ssPlayer.getName());
         ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
-        String[] sLines = ((Sign) ssArgs.get_bSign().getState()).getLines();
+        String[] sLines = ((Sign) ssArgs.getSign().get().getState()).getLines();
         for(int i = 0; i < sLines.length; i++)
             ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
         boolean isOK = true;
 
         if(SignShopConfig.Commands.containsKey(sOperation.toLowerCase())) {
             List<String> commands = SignShopConfig.Commands.get(sOperation.toLowerCase());
-            for(String sCommand : commands) {
+            for(String command : commands) {
                 boolean ok = true;
+                String sCommand = command;
                 if(sCommand != null && sCommand.length() > 0) {
                     sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());
                     sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());

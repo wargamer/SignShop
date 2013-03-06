@@ -9,7 +9,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class resetOneTime implements SignShopOperation {
 
     private String getParam(SignShopArguments ssArgs) {
-        String rawparam = ssArgs.get_sOperation().toLowerCase();
+        String rawparam = ssArgs.getOperation().get().toLowerCase();
         if(ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
         rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
@@ -25,18 +25,18 @@ public class resetOneTime implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(!ssArgs.hasOperationParameters()) {
-            ssArgs.get_ssPlayer().sendMessage("Config error, please check the logs for more information.");
+            ssArgs.getPlayer().get().sendMessage("Config error, please check the logs for more information.");
             SignShop.log("Missing parameter for resetOneTime, please check the config.yml and Quick Reference.", Level.WARNING);
             return false;
         }
 
         String param = getParam(ssArgs);
         ssArgs.setMessagePart("!param", param);
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         if(ssPlayer == null)
             return true;
         if(!ssPlayer.hasMeta(param)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("nothing_to_reset_ontime", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("nothing_to_reset_ontime", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -46,7 +46,7 @@ public class resetOneTime implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         String param = getParam(ssArgs);
         ssArgs.setMessagePart("!param", param);
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         boolean ok = ssPlayer.removeMeta(param);
         if(!ok)
             ssPlayer.sendMessage("Could not reset the Metadata needed for this shop. Please check the logs for more information.");

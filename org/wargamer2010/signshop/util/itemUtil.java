@@ -468,7 +468,7 @@ public class itemUtil {
                 ssArgs.miscSettings = pSeller.getMisc();
             Boolean reqOK = true;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.set_operationParameters(ssOperation.getValue());
+                ssArgs.setOperationParameters(ssOperation.getValue());
                 reqOK = ssOperation.getKey().checkRequirements(ssArgs, false);
                 if(!reqOK) {
                     itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
@@ -599,6 +599,34 @@ public class itemUtil {
             return false;
         if(a.getMaxStackSize() != b.getMaxStackSize())
             return false;
+        return true;
+    }
+    
+    public static boolean loadChunkByBlock(Block block, int radius) {
+        boolean OK = true;
+        int chunksize = 12;
+        for(int x = -radius; x <= radius; x++) {
+            for(int y = -radius; y <= radius; y++) {
+                for(int z = -radius; z <= radius; z++) {
+                    if(x == 0 && y == 0 && z == 0)
+                        continue;
+                    OK = (OK ? loadChunkByBlock(
+                            block.getWorld().getBlockAt(
+                                block.getX()+(x*chunksize),
+                                block.getY()+(y*chunksize), 
+                                block.getZ()+(z*chunksize)))
+                            : true);
+                }
+            }
+        }
+        return OK;
+    }
+    
+    public static boolean loadChunkByBlock(Block block) {
+        if(block == null)
+            return false;
+        if(!block.getChunk().isLoaded())
+            return block.getChunk().load();
         return true;
     }
 

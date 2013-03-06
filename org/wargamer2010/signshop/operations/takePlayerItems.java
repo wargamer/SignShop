@@ -12,33 +12,33 @@ import java.util.LinkedList;
 public class takePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+        if(ssArgs.getContainables().isEmpty()) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
-        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.getContainables().get());
 
-        if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
+        if(!ssArgs.isOperationParameter("allowemptychest") && isTotalItems.length == 0) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.set_isItems(isTotalItems);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
+        ssArgs.getItems().set(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.get_ssPlayer().getPlayer() == null)
+        if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
-        if(ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
+        if(ssArgs.getItems().get() == null) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
-        Player player = ssArgs.get_ssPlayer().getPlayer();
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        if(!itemUtil.isStockOK(player.getInventory(), ssArgs.get_isItems(), true)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
+        Player player = ssArgs.getPlayer().get().getPlayer();
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
+        if(!itemUtil.isStockOK(player.getInventory(), ssArgs.getItems().get(), true)) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -46,7 +46,7 @@ public class takePlayerItems implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.get_ssPlayer().takePlayerItems(ssArgs.get_isItems());
+        ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get());
         return true;
     }
 }

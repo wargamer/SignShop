@@ -12,17 +12,17 @@ import org.wargamer2010.signshop.configuration.Storage;
 public class BankSign implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
+        signshopUtil.registerClickedMaterial(ssArgs.getSign().get(), ssArgs.getPlayer().get());
         ssArgs.bDoNotClearClickmap = true;
-        ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_bank_sign", null));
+        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("registered_bank_sign", null));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_banksign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_shop_linked_to_banksign", null));
         } else {
             String profitshops = "";
             Boolean first = true;
@@ -37,7 +37,7 @@ public class BankSign implements SignShopOperation {
             ssArgs.setMessagePart("!bankshops", profitshops);
             String profits = "";
             List<String> names = new LinkedList<String>();
-            Sign sign = (Sign)ssArgs.get_bSign().getState();
+            Sign sign = (Sign)ssArgs.getSign().get().getState();
             String[] lines = sign.getLines();
             if(!signshopUtil.lineIsEmpty(lines[1])) names.add(lines[1]);
             if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);            
@@ -50,7 +50,7 @@ public class BankSign implements SignShopOperation {
                 profits += sTemp;
             }
             ssArgs.setMessagePart("!banks", profits);
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
         }
         return true;
     }

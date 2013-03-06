@@ -15,44 +15,15 @@ import java.util.TreeSet;
 import org.bukkit.Material;
 
 public class takeVariablePlayerItems implements SignShopOperation {
-    private static class StackDurabilityPair implements Comparator<StackDurabilityPair> {
-        private ItemStack _stack;
-        private Short _durability;
-
-        private StackDurabilityPair(ItemStack stack, Short durability) {
-            _stack = stack;
-            _durability = durability;
-        }
-
-        private StackDurabilityPair() {
-
-        }
-
-        public ItemStack getStack() {
-            return _stack;
-        }
-
-        public Short getDurability() {
-            return _durability;
-        }
-
-        @Override
-        public int compare(StackDurabilityPair o1, StackDurabilityPair o2) {
-            if (!(o1 instanceof StackDurabilityPair) || !(o2 instanceof StackDurabilityPair))
-                throw new ClassCastException();
-
-            return (o1.getDurability() - o2.getDurability());
-        }
-    }
 
     private boolean doDurabilityNullification(SignShopArguments ssArgs) {
-        ItemStack[] inv_stacks = ssArgs.get_ssPlayer().getInventoryContents();
+        ItemStack[] inv_stacks = ssArgs.getPlayer().get().getInventoryContents();
         if(ssArgs.isOperationParameter("acceptdamaged")) {
             short nodamage = 0;
             Material mat;
-            Map<ItemStack, Integer> map = itemUtil.StackToMap(ssArgs.get_isItems());
+            Map<ItemStack, Integer> map = itemUtil.StackToMap(ssArgs.getItems().get());
             if(map.size() > 1) {
-                ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("damaged_items_shop_homogeneous", ssArgs.getMessageParts()));
+                ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("damaged_items_shop_homogeneous", ssArgs.getMessageParts()));
                 return false;
             }
             ItemStack arr[] = new ItemStack[1]; map.keySet().toArray(arr);
@@ -121,41 +92,41 @@ public class takeVariablePlayerItems implements SignShopOperation {
 
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+        if(ssArgs.getContainables().isEmpty()) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
-        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.getContainables().get());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.set_isItems(isTotalItems);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
+        ssArgs.getItems().set(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.get_ssPlayer().getPlayer() == null)
+        if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
-        if(ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
+        if(ssArgs.getItems().get() == null) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
 
-        ItemStack[] backupinv = itemUtil.getBackupItemStack(ssArgs.get_ssPlayer().getInventoryContents());
+        ItemStack[] backupinv = itemUtil.getBackupItemStack(ssArgs.getPlayer().get().getInventoryContents());
         boolean didnull = doDurabilityNullification(ssArgs);
 
-        Player player = ssArgs.get_ssPlayer().getPlayer();
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.get_isItems());
+        Player player = ssArgs.getPlayer().get().getPlayer();
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
+        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.getItems().get());
         Float iCount = (Float)variableAmount.values().toArray()[0];
 
-        ssArgs.get_ssPlayer().setInventoryContents(backupinv);
+        ssArgs.getPlayer().get().setInventoryContents(backupinv);
         if(iCount == 0.0f) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
             return false;
         }
 
@@ -169,9 +140,9 @@ public class takeVariablePlayerItems implements SignShopOperation {
             }
         }
 
-        ssArgs.set_isItems(isActual);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
-        ssArgs.set_fPrice(ssArgs.get_fPrice() * iCount * pricemod);
+        ssArgs.getItems().set(isActual);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
+        ssArgs.getPrice().set(ssArgs.getPrice().get() * iCount * pricemod);
         return true;
     }
 
@@ -179,7 +150,37 @@ public class takeVariablePlayerItems implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         if(!checkRequirements(ssArgs, true))
             return false;
-        ssArgs.get_ssPlayer().takePlayerItems(ssArgs.get_isItems());
+        ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get());
         return true;
+    }
+    
+    private static class StackDurabilityPair implements Comparator<StackDurabilityPair> {
+        private ItemStack _stack;
+        private Short _durability;
+
+        private StackDurabilityPair(ItemStack stack, Short durability) {
+            _stack = stack;
+            _durability = durability;
+        }
+
+        private StackDurabilityPair() {
+
+        }
+
+        public ItemStack getStack() {
+            return _stack;
+        }
+
+        public Short getDurability() {
+            return _durability;
+        }
+
+        @Override
+        public int compare(StackDurabilityPair o1, StackDurabilityPair o2) {
+            if (!(o1 instanceof StackDurabilityPair) || !(o2 instanceof StackDurabilityPair))
+                throw new ClassCastException();
+
+            return (o1.getDurability() - o2.getDurability());
+        }
     }
 }

@@ -12,9 +12,9 @@ public class setRaining implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();
         if(world.hasStorm() && world.isThundering()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_raining", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_raining", ssArgs.getMessageParts()));
             return false;
         }                
         return true;
@@ -22,7 +22,7 @@ public class setRaining implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();
         world.setStorm(true);
         world.setThundering(true);
 

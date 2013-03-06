@@ -15,15 +15,15 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 public class enchantItemInHand implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+        if(ssArgs.getContainables().isEmpty()) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
 
         Map<Enchantment, Integer> AllEnchantments = new HashMap<Enchantment, Integer>();
         Map<Enchantment, Integer> TempEnchantments;
 
-        for(Block bHolder : ssArgs.get_containables()) {
+        for(Block bHolder : ssArgs.getContainables().get()) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
                 for(ItemStack item : Holder.getInventory().getContents()) {
@@ -41,7 +41,7 @@ public class enchantItemInHand implements SignShopOperation {
             }
         }
         if(AllEnchantments.isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("enchantment_missing", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("enchantment_missing", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.miscSettings.put("enchantmentInHand", signshopUtil.convertEnchantmentsToString(AllEnchantments));
@@ -51,22 +51,22 @@ public class enchantItemInHand implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.get_ssPlayer().getPlayer() == null)
+        if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
         if(!ssArgs.miscSettings.containsKey("enchantmentInHand")) {
-            SignShop.log(("misc property enchantmentInHand was not found for shop @ " + signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation())), Level.WARNING);
+            SignShop.log(("misc property enchantmentInHand was not found for shop @ " + signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation())), Level.WARNING);
             return false;
         }
         Map<Enchantment, Integer> enchantments = signshopUtil.convertStringToEnchantments(ssArgs.miscSettings.get("enchantmentInHand"));
         String enchantmentsString = itemUtil.enchantmentsToMessageFormat(enchantments);
         ssArgs.setMessagePart("!enchantments", enchantmentsString);
-        ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         ItemStack isBackup = itemUtil.getBackupSingleItemStack(isInHand);
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
             return false;
         } else if(!itemUtil.safelyAddEnchantments(isBackup, enchantments)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -74,7 +74,7 @@ public class enchantItemInHand implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         Map<Enchantment, Integer> enchantments = signshopUtil.convertStringToEnchantments(ssArgs.miscSettings.get("enchantmentInHand"));
         return itemUtil.safelyAddEnchantments(isInHand, enchantments);
     }

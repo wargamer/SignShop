@@ -14,7 +14,7 @@ import org.wargamer2010.signshop.configuration.Storage;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
-        ssArgs.get_ssPlayer().sendMessage("Could not complete operation, contact your System Administrator and checks the logs.");
+        ssArgs.getPlayer().get().sendMessage("Could not complete operation, contact your System Administrator and checks the logs.");
         SignShop.log("Invalid Chest{}, check your config.yml!", Level.WARNING);
         return false;
     }
@@ -22,7 +22,7 @@ public class Chest implements SignShopOperation {
     private Block checkChestAmount(SignShopArguments ssArgs, Integer iChestnumber) {
         Block bHolder = null;
         int iCount = 0;
-        for(Block bTemp : ssArgs.get_containables_root()) {
+        for(Block bTemp : ssArgs.getContainables().getRoot()) {
             if(bTemp.getState() instanceof InventoryHolder) {
                 iCount++;
                 if(iCount == iChestnumber)
@@ -49,13 +49,13 @@ public class Chest implements SignShopOperation {
 
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder == null) {
-            ssArgs.get_ssPlayer().sendMessage("You need at least " + (iChestnumber) + " chest(s) to setup this shop!");
+            ssArgs.getPlayer().get().sendMessage("You need at least " + (iChestnumber) + " chest(s) to setup this shop!");
             return false;
         }
 
         List<Block> containables = new LinkedList<Block>();
         containables.add(bHolder);
-        ssArgs.set_containables(containables);
+        ssArgs.getContainables().set(containables);
 
         return true;
     }
@@ -89,13 +89,13 @@ public class Chest implements SignShopOperation {
         ItemStack[] isItemss;
 
         isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));
-        ssArgs.set_isItems(isItemss);
+        ssArgs.getItems().set(isItemss);
 
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder != null) {
             LinkedList<Block> tempContainables = new LinkedList<Block>();
             tempContainables.add(bHolder);
-            ssArgs.set_containables(tempContainables);
+            ssArgs.getContainables().set(tempContainables);
         }
 
         return true;

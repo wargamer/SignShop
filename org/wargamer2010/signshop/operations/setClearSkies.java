@@ -12,9 +12,9 @@ public class setClearSkies implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();
         if(!world.hasStorm() && !world.isThundering()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("already_clear_skies", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_clear_skies", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -22,7 +22,7 @@ public class setClearSkies implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        World world = ssArgs.get_ssPlayer().getPlayer().getWorld();
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();
         world.setStorm(false);
         world.setThundering(false);
 

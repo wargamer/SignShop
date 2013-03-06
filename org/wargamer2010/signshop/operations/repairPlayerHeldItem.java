@@ -13,18 +13,18 @@ public class repairPlayerHeldItem implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        ItemStack isInHand = ssArgs.get_ssPlayer().getItemInHand();
+        ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         if(isInHand == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_item_to_repair", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_item_to_repair", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getType().getMaxDurability() < 30) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("invalid_item_to_repair", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("invalid_item_to_repair", ssArgs.getMessageParts()));
             return false;
-        } else if(isInHand.getEnchantments().size() > 0 && !SignShopConfig.getAllowEnchantedRepair() && !ssArgs.get_ssPlayer().hasPerm("SignShop.ignorerepair", false)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("enchanted_not_allowed", ssArgs.getMessageParts()));
+        } else if(isInHand.getEnchantments().size() > 0 && !SignShopConfig.getAllowEnchantedRepair() && !ssArgs.getPlayer().get().hasPerm("SignShop.ignorerepair", false)) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("enchanted_not_allowed", ssArgs.getMessageParts()));
             return false;
         } else if(isInHand.getDurability() == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("item_already_repair", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_already_repair", ssArgs.getMessageParts()));
             return false;
         }
         return true;
@@ -32,7 +32,7 @@ public class repairPlayerHeldItem implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.get_ssPlayer().getItemInHand().setDurability((short) 0);
+        ssArgs.getPlayer().get().getItemInHand().setDurability((short) 0);
         return true;
     }
 }

@@ -1,5 +1,10 @@
 package org.wargamer2010.signshop.player;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -18,6 +23,7 @@ public class SignShopPlayer {
     private Player ssPlayer = null;
     private String sPlayername = "";
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
+    private static Map<String, HashMap<String, Long>> mPlayerMessageMap = new HashMap<String, HashMap<String, Long>>();
 
     private SignShopPlayer() {
 
@@ -50,7 +56,31 @@ public class SignShopPlayer {
     public void sendMessage(String sMessage) {
         if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
             return;
-        ssPlayer.sendMessage(ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
+        Calendar c = Calendar.getInstance();        
+        long timenow = c.getTimeInMillis();
+        String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
+        
+        HashMap<String, Long> mMessageMap = mPlayerMessageMap.get(sPlayername);
+        
+        if(mMessageMap == null) {
+            mMessageMap = new HashMap<String, Long>();
+            mPlayerMessageMap.put(sPlayername, mMessageMap);
+        } else if(mMessageMap.containsKey(message) && (timenow - mMessageMap.get(message)) <= 2000)
+            // Check if message is the same and if more than 2 seconds have passed
+            return;
+            
+        mMessageMap.put(message, timenow);
+        ssPlayer.sendMessage(message);
+        
+        List<String> toRemove = new ArrayList<String>();
+        for(Map.Entry<String, Long> entry : mMessageMap.entrySet()) {
+            // Older than 1 minute? Remove it
+            if((timenow - mMessageMap.get(message)) >= 60000) {                
+                toRemove.add(entry.getKey());
+            }
+        }
+        for(String removeMe : toRemove)
+            mMessageMap.remove(removeMe);
     }
 
     public String getName() {
