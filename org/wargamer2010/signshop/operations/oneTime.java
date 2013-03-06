@@ -10,7 +10,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class oneTime implements SignShopOperation {
 
     private String getParam(SignShopArguments ssArgs) {
-        String rawparam = ssArgs.get_sOperation().toLowerCase();
+        String rawparam = ssArgs.getOperation().get().toLowerCase();
         if(ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
         rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
@@ -26,11 +26,11 @@ public class oneTime implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         String param = getParam(ssArgs);
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         if(ssPlayer == null)
             return true;
         if(ssPlayer.hasMeta(param)) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("only_one_time", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("only_one_time", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.setMessagePart("!param", param);
@@ -40,7 +40,7 @@ public class oneTime implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         String param = getParam(ssArgs);
-        SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
 
         boolean ok = ssPlayer.setMeta(param, Long.toString(new Date().getTime()));
         if(!ok)

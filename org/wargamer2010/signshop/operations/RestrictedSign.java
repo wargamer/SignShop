@@ -10,17 +10,17 @@ import org.wargamer2010.signshop.configuration.Storage;
 public class RestrictedSign implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        signshopUtil.registerClickedMaterial(ssArgs.get_bSign(), ssArgs.get_ssPlayer());
+        signshopUtil.registerClickedMaterial(ssArgs.getSign().get(), ssArgs.getPlayer().get());
         ssArgs.bDoNotClearClickmap = true;
-        ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("registered_restricted_sign", null));
+        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("registered_restricted_sign", null));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        List<Block> shops = Storage.get().getShopsWithMiscSetting("restrictedsigns", signshopUtil.convertLocationToString(ssArgs.get_bSign().getLocation()));
+        List<Block> shops = Storage.get().getShopsWithMiscSetting("restrictedsigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_shop_linked_to_restrictedsign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_shop_linked_to_restrictedsign", null));
         } else {
             String restrictedshops = "";
             Boolean first = true;
@@ -33,7 +33,7 @@ public class RestrictedSign implements SignShopOperation {
                 restrictedshops += ("(" + loc.getX() + ", " + loc.getY() + ", " + loc.getZ() + ")");
             }
             ssArgs.setMessagePart("!restrictedshops", restrictedshops);
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("restricted_sign_restricts", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("restricted_sign_restricts", ssArgs.getMessageParts()));
         }
         return true;
     }

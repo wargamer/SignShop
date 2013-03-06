@@ -32,28 +32,28 @@ public class playJukebox implements SignShopOperation {
 
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+        if(ssArgs.getContainables().isEmpty()) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
-        ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
+        ItemStack[] isTotalItems = getRecords(ssArgs.getContainables().get());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.set_isItems(isTotalItems);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
+        ssArgs.getItems().set(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }
 
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
+        ItemStack[] isTotalItems = getRecords(ssArgs.getContainables().get());
 
         if(isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
 
@@ -61,13 +61,13 @@ public class playJukebox implements SignShopOperation {
     }
 
     private void playEffect(SignShopArguments ssArgs, int id) {
-        ssArgs.get_bSign().getWorld().playEffect(ssArgs.get_bSign().getLocation(), Effect.RECORD_PLAY, id);
+        ssArgs.getSign().get().getWorld().playEffect(ssArgs.getSign().get().getLocation(), Effect.RECORD_PLAY, id);
     }
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ItemStack[] isTotalItems = getRecords(ssArgs.get_containables());
-        Seller seller = Storage.get().getSeller(ssArgs.get_bSign().getLocation());
+        ItemStack[] isTotalItems = getRecords(ssArgs.getContainables().get());
+        Seller seller = Storage.get().getSeller(ssArgs.getSign().get().getLocation());
         String sLastrecord = seller.getVolatile("lastrecord");
         Integer iLastrecord = -1;
         if(sLastrecord != null)

@@ -104,7 +104,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
 
         Boolean bSetupOK = false;
         for (Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-            ssArgs.set_operationParameters(ssOperation.getValue());
+            ssArgs.setOperationParameters(ssOperation.getValue());
             bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
             if (!bSetupOK) {
                 ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
@@ -116,15 +116,15 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
             return true;
         }
         ItemStack blacklisted = null;
-        if(ssArgs.get_isItems() != null)
-            blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.get_isItems());
+        if(ssArgs.getItems().get() != null)
+            blacklisted = SignShopConfig.isAnyItemOnBlacklist(ssArgs.getItems().get());
         if (blacklisted != null) {
             ssArgs.setMessagePart("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
             ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", ssArgs.getMessageParts()));
             return true;
         }
 
-        Storage.get().updateSeller(bClicked, containables, activatables, ssArgs.get_isItems_root());
+        Storage.get().updateSeller(bClicked, containables, activatables, ssArgs.getItems().getRoot());
 
         if (!ssArgs.bDoNotClearClickmap) {
             clicks.removePlayerFromClickmap(player);

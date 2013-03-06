@@ -18,13 +18,13 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class takeTownMoney implements SignShopOperation {
 	@Override
 	public Boolean setupOperation(SignShopArguments ssArgs) {
-            ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.get_fPrice()));
+            ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
             return true;
 	}
 
 	@Override
 	public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-            SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+            SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
             if (ssPlayer.getPlayer() == null)
                 return true;
 
@@ -58,7 +58,7 @@ public class takeTownMoney implements SignShopOperation {
 
 	@Override
 	public Boolean runOperation(SignShopArguments ssArgs) {
-            SignShopPlayer ssPlayer = ssArgs.get_ssPlayer();
+            SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
             if (ssPlayer == null)
                     return true;
 
@@ -74,7 +74,7 @@ public class takeTownMoney implements SignShopOperation {
                     return false;
                 }
 
-                resident = TownyUniverse.getDataSource().getResident(ssArgs.get_ssOwner().getName());
+                resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
                 town = resident.getTown();
 
                 // take the money from the town bank account

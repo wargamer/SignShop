@@ -1,100 +1,117 @@
 package org.wargamer2010.signshop.operations;
+
 import java.util.Collections;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments {
-    public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
-                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace) {
-        fPrice = pfPrice;
-        if(pisItems != null && pisItems.length > 0)
-            isItems = pisItems;
-        containables = pContainables;
-        activatables = pActivatables;
-        if(pssPlayer != null)
-            ssPlayer = pssPlayer;
-        else
-            ssPlayer = new SignShopPlayer((Player)null);
-        if(pssOwner != null)
-            ssOwner = pssOwner;
-        else
-            ssOwner = new SignShopPlayer((Player)null);
-        bSign = pbSign;
-        sOperation = psOperation;
-        bfBlockFace = pbfBlockFace;
-        special = new SpecialArguments();
-    }
-
+    
     public SignShopArguments() {
 
     }
+    
+    public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
+                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace) {
+        fPrice.setRoot(pfPrice);        
+        isItems.setRoot(pisItems);
+        containables.setRoot(pContainables);
+        activatables.setRoot(pActivatables);
+        if(pssPlayer != null)
+            ssPlayer.setRoot(pssPlayer);
+        else
+            ssPlayer.setRoot(new SignShopPlayer((Player)null));
+        if(pssOwner != null)
+            ssOwner.setRoot(pssOwner);
+        else
+            ssOwner.setRoot(new SignShopPlayer((Player)null));
+        bSign.setRoot(pbSign);
+        sOperation.setRoot(psOperation);
+        bfBlockFace.setRoot(pbfBlockFace);
+    }
+    
+    public void reset() {
+        fPrice.setSpecial(false);
+        isItems.setSpecial(false);
+        containables.setSpecial(false);
+        activatables.setSpecial(false);
+        ssPlayer.setSpecial(false);
+        ssOwner.setSpecial(false);
+        bSign.setSpecial(false);
+        sOperation.setSpecial(false);
+        bfBlockFace.setSpecial(false);
+    }
+    
     public static String seperator = "~";
 
-    private Float fPrice = -1.0f;
-    public Float get_fPrice() { return (special.bActive && special.props.fPrice != -1.0f ? special.props.fPrice : fPrice); }
-    public Float get_fPrice_root() { return fPrice; }
-    public void set_fPrice(Float pfPrice) { special.activate(this); special.props.fPrice = pfPrice; }
-    public void set_root_fPrice(Float pfPrice) { fPrice = pfPrice; }
-
-    private ItemStack[] isItems = null;
-    public ItemStack[] get_isItems() { return (special.bActive && special.props.isItems != null ? special.props.isItems : isItems); }
-    public ItemStack[] get_isItems_root() { return isItems; }
-    public void set_isItems(ItemStack[] pisItems) {
-        if(this.forceMessageKeys.containsKey("!items"))
-            this.miscSettings.put(this.forceMessageKeys.get("!items").replace("!", ""), signshopUtil.implode(itemUtil.convertItemStacksToString(pisItems), seperator));
-        special.activate(this); special.props.isItems = pisItems;
+    private SignShopArgument<Float> fPrice = new SignShopArgument<Float>(this);
+    public SignShopArgument<Float> getPrice() {
+        return fPrice;
+    }
+    
+    private SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
+        @Override
+        public void set(ItemStack[] pItems) { 
+            if(getCollection().forceMessageKeys.containsKey("!items"))
+                getCollection().miscSettings.put(getCollection().forceMessageKeys.get("!items").replace("!", ""), 
+                        signshopUtil.implode(itemUtil.convertItemStacksToString(pItems), seperator));
+            super.set(pItems);
+        }
+    };
+    public SignShopArgument<ItemStack[]> getItems() {
+        return isItems;
     }
 
-    private List<Block> containables = null;
-    public List<Block> get_containables() { return (special.bActive && special.props.containables != null ? special.props.containables : containables); }
-    public List<Block> get_containables_root() { return containables; }
-    public void set_containables(List<Block> pcontainables) { special.activate(this); special.props.containables = pcontainables; }
+    private SignShopArgument<List<Block>> containables = new SignShopArgument<List<Block>>(this);
+    public SignShopArgument<List<Block>> getContainables() {
+        return containables;
+    }
+    
+    private SignShopArgument<List<Block>> activatables = new SignShopArgument<List<Block>>(this);
+    public SignShopArgument<List<Block>> getActivatables() {
+        return activatables;
+    }
 
-    private List<Block> activatables = null;
-    public List<Block> get_activatables() { return (special.bActive && special.props.activatables != null ? special.props.activatables : activatables); }
-    public List<Block> get_activatables_root() { return activatables; }
-    public void set_activatables(List<Block> pactivatables) { special.activate(this); special.props.activatables = pactivatables; }
+    private SignShopArgument<SignShopPlayer> ssPlayer = new SignShopArgument<SignShopPlayer>(this);
+    public SignShopArgument<SignShopPlayer> getPlayer() {
+        return ssPlayer;
+    }
 
-    private SignShopPlayer ssPlayer = null;
-    public SignShopPlayer get_ssPlayer() { return (special.bActive && special.props.ssPlayer != null ? special.props.ssPlayer : ssPlayer); }
-    public SignShopPlayer get_ssPlayer_root() { return ssPlayer; }
-    public void set_activatables(SignShopPlayer pssPlayer) { special.activate(this); special.props.ssPlayer = pssPlayer; }
+    private SignShopArgument<SignShopPlayer> ssOwner = new SignShopArgument<SignShopPlayer>(this);
+    public SignShopArgument<SignShopPlayer> getOwner() {
+        return ssOwner;
+    }
 
-    private SignShopPlayer ssOwner = null;
-    public SignShopPlayer get_ssOwner() { return (special.bActive && special.props.ssOwner != null ? special.props.ssOwner : ssOwner); }
-    public SignShopPlayer get_ssOwner_root() { return ssOwner; }
-    public void set_ssOwner(SignShopPlayer pssOwner) { special.activate(this); special.props.ssOwner = pssOwner; }
+    private SignShopArgument<Block> bSign = new SignShopArgument<Block>(this);
+    public SignShopArgument<Block> getSign() {
+        return bSign;
+    }
 
-    private Block bSign = null;
-    public Block get_bSign() { return (special.bActive && special.props.bSign != null ? special.props.bSign : bSign); }
-    public Block get_bSign_root() { return bSign; }
-    public void set_bSign(Block pbSign) { special.activate(this); special.props.bSign = pbSign; }
+    private SignShopArgument<String> sOperation = new SignShopArgument<String>(this);
+    public SignShopArgument<String> getOperation() {
+        return sOperation;
+    }
 
-    private String sOperation = "";
-    public String get_sOperation() { return (special.bActive && !special.props.sOperation.isEmpty() ? special.props.sOperation : sOperation); }
-    public String get_sOperation_root() { return sOperation; }
-    public void set_sOperation(String psOperation) { special.activate(this); special.props.sOperation = psOperation; }
+    private SignShopArgument<String> sEnchantments = new SignShopArgument<String>(this);
+    public SignShopArgument<String> getEnchantments() {
+        return sEnchantments;
+    }
 
-    private String sEnchantments = "";
-    public String get_sEnchantments() { return (special.bActive && !special.props.sEnchantments.isEmpty() ? special.props.sEnchantments : sEnchantments); }
-    public String get_sEnchantments_root() { return sEnchantments; }
-    public void set_sEnchantments(String psEnchantments) { special.activate(this); special.props.sEnchantments = psEnchantments; }
-
-    private BlockFace bfBlockFace = null;
-    public BlockFace get_bfBlockFace() { return (special.bActive && special.props.bfBlockFace != null ? special.props.bfBlockFace : bfBlockFace); }
-    public BlockFace get_bfBlockFace_root() { return bfBlockFace; }
-    public void set_bfBlockFace(BlockFace pbfBlockFace) { special.activate(this); special.props.bfBlockFace = pbfBlockFace; }
-
-    private List<String> operationParameters = null;
-    public void set_operationParameters(List<String> pOperationParameters) { operationParameters = pOperationParameters; }
+    private SignShopArgument<BlockFace> bfBlockFace = new SignShopArgument<BlockFace>(this);
+    public SignShopArgument<BlockFace> getBlockFace() {
+        return bfBlockFace;
+    }
+    
+    private List<String> operationParameters = new LinkedList<String>();
+    public void setOperationParameters(List<String> pOperationParameters) { operationParameters.clear(); operationParameters.addAll(pOperationParameters); }
     public boolean isOperationParameter(String sOperationParameter) { return operationParameters.contains(sOperationParameter); }
     public boolean hasOperationParameters() { return !operationParameters.isEmpty(); }
     public String getFirstOperationParameter() { return hasOperationParameters() ? operationParameters.get(0) : ""; }
@@ -104,7 +121,12 @@ public class SignShopArguments {
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;
     public boolean bRunCommandAsUser = false;
-
+    
+    public void ignoreEmptyChest() {
+        if(!isOperationParameter("allowemptychest"))
+            operationParameters.add("allowemptychest");
+    }
+    
     public boolean tryToApplyPriceMod() {
         if(bPriceModApplied)
             return false;
@@ -112,46 +134,29 @@ public class SignShopArguments {
     }
 
     private Map<String, String> messageParts = new HashMap<String, String>();
+    
     public void setMessagePart(String name, String value) {
         messageParts.put(name, value);
         if(forceMessageKeys.containsKey(name))
             name = forceMessageKeys.get(name);
         messageParts.put(name, value);
     }
+    
     public boolean hasMessagePart(String name) {
         return messageParts.containsKey(name);
     }
+    
     public String getMessagePart(String name) {
         if(hasMessagePart(name))
             return messageParts.get(name);
         return "";
     }
+    
     public Map<String, String> getMessageParts() {
         return Collections.unmodifiableMap(messageParts);
     }
+    
     public Map<String, String> getRawMessageParts() {
         return messageParts;
     }
-
-    public SpecialArguments special = null;
-
-    public static class SpecialArguments {
-        public Boolean bActive = false;
-        public SignShopArguments props = new SignShopArguments();
-
-        private SpecialArguments() {
-        }
-
-        public void activate(SignShopArguments ssArgs) {
-            if(!bActive) {
-                ssArgs.special = new SpecialArguments();
-                ssArgs.special.bActive = true;
-            }
-        }
-
-        public void deactivate() {
-            bActive = false;
-        }
-    }
-
 }

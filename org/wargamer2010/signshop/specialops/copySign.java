@@ -1,19 +1,21 @@
 package org.wargamer2010.signshop.specialops;
 
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import org.bukkit.block.Sign;
-import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.Sign;
+import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.util.*;
-import org.wargamer2010.signshop.operations.*;
+import org.wargamer2010.signshop.util.economyUtil;
+import org.wargamer2010.signshop.util.itemUtil;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class copySign implements SignShopSpecialOp {
     @Override
@@ -79,11 +81,12 @@ public class copySign implements SignShopSpecialOp {
                 return true;
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());
-
+                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());            
+            
             Boolean bSetupOK = false;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.set_operationParameters(ssOperation.getValue());
+                ssArgs.setOperationParameters(ssOperation.getValue());
+                ssArgs.ignoreEmptyChest();
                 bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
                 if(!bSetupOK)
                     break;

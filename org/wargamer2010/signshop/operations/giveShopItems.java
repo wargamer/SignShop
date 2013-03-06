@@ -13,49 +13,49 @@ import java.util.HashMap;
 public class giveShopItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        if(ssArgs.get_containables().isEmpty()) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+        if(ssArgs.getContainables().isEmpty()) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
-        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.get_containables());
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.getContainables().get());
 
         if(!ssArgs.isOperationParameter("allowemptychest") && isTotalItems.length == 0) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.set_isItems(isTotalItems);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
+        ssArgs.getItems().set(isTotalItems);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(!ssArgs.isOperationParameter("allowemptychest") && ssArgs.get_isItems() == null) {
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
+        if(!ssArgs.isOperationParameter("allowemptychest") && ssArgs.getItems().get() == null) {
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
 
-        Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), false);
+        Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false);
         if(!bStockOK)
-            ssArgs.get_ssPlayer().sendMessage(SignShopConfig.getError("overstocked", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("overstocked", ssArgs.getMessageParts()));
         if(activeCheck && !bStockOK)
-            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
         else if(activeCheck)
-            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_BLUE);
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.get_isItems()));
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return bStockOK;
     }
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        InventoryHolder Holder = itemUtil.getFirstStockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), false);
+        InventoryHolder Holder = itemUtil.getFirstStockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false);
         if(Holder == null)
             return false;
-        HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(ssArgs.get_isItems());
-        if(!itemUtil.stockOKForContainables(ssArgs.get_containables(), ssArgs.get_isItems(), false))
-            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_RED);
+        HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(ssArgs.getItems().get());
+        if(!itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false))
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
         else
-            itemUtil.updateStockStatus(ssArgs.get_bSign(), ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
         return (isLeftOver.isEmpty());
     }
 }

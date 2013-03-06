@@ -1,24 +1,24 @@
 package org.wargamer2010.signshop.util;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Bukkit;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
-import org.bukkit.entity.Player;
-import org.bukkit.event.block.Action;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.Location;
-import org.bukkit.block.Sign;
-import org.bukkit.World;
-import org.bukkit.inventory.InventoryHolder;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Arrays;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.block.Sign;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.InventoryHolder;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
@@ -26,9 +26,9 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
-import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.operations.SignShopOperation;
-import org.wargamer2010.signshop.specialops.*;
+import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
 public class signshopUtil {
 
@@ -81,7 +81,7 @@ public class signshopUtil {
 
     public static SignShopOperation getSignShopBlock(String blockName) {
         try {
-            Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.operations."+blockName);
+            Class<?> fc = Class.forName("org.wargamer2010.signshop.operations."+blockName);
             return ((SignShopOperation)fc.newInstance());
         } catch(ClassNotFoundException notfoundex) {
             return null;
@@ -111,7 +111,7 @@ public class signshopUtil {
         List<SignShopSpecialOp> SignShopOperations = new LinkedList<SignShopSpecialOp>();
         for(String sSignShopOp : SignShopConfig.SpecialsOps) {
             try {
-                Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.specialops."+sSignShopOp);
+                Class<?> fc = Class.forName("org.wargamer2010.signshop.specialops."+sSignShopOp);
                 SignShopOperations.add((SignShopSpecialOp)fc.newInstance());
             } catch(ClassNotFoundException notfoundex) {
                 return null;
@@ -407,11 +407,11 @@ public class signshopUtil {
 
     public static Float ApplyPriceMod(SignShopArguments ssArgs) {
         if(ssArgs.tryToApplyPriceMod()) {
-            Float fPrice = ApplyPriceMod(ssArgs.get_ssPlayer(), ssArgs.get_fPrice(), ssArgs.get_sOperation());
-            ssArgs.set_fPrice(fPrice);
+            Float fPrice = ApplyPriceMod(ssArgs.getPlayer().get(), ssArgs.getPrice().get(), ssArgs.getOperation().get());
+            ssArgs.getPrice().set(fPrice);
             ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         }
-        return ssArgs.get_fPrice();
+        return ssArgs.getPrice().get();
     }
 
     public static Float ApplyPriceMod(SignShopPlayer player, Float fPrice, String sOperation) {

@@ -45,6 +45,7 @@ public class SignShopConfig {
     private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
     private static int ShopCooldown = 0;
+    private static int ChunkLoadRadius = 2;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
@@ -178,6 +179,7 @@ public class SignShopConfig {
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
+        ChunkLoadRadius = ymlThing.getInt("ChunkLoadRadius", ChunkLoadRadius);
         ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
@@ -196,6 +198,10 @@ public class SignShopConfig {
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
         destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLD_AXE"), Material.getMaterial("GOLD_AXE"));
 
+        // Sanity check
+        if(ChunkLoadRadius > 50 || ChunkLoadRadius < 0)
+            ChunkLoadRadius = 3;
+        
         this.config = ymlThing;
     }
 
@@ -393,7 +399,7 @@ public class SignShopConfig {
         if(OperationAliases.containsKey(sOperation))
             sOperation = OperationAliases.get(sOperation);
 
-        String message = "";
+        String message;
         if(!localisedMessage.containsKey(sType) || !localisedMessage.get(sType).containsKey(sOperation) || localisedMessage.get(sType).get(sOperation) == null) {
             if(!defaultMessage.containsKey(sType) || !defaultMessage.get(sType).containsKey(sOperation) || defaultMessage.get(sType).get(sOperation) == null) {
                 return "";
@@ -494,6 +500,10 @@ public class SignShopConfig {
 
     public static int getShopCooldown() {
         return ShopCooldown;
+    }
+    
+    public static int getChunkLoadRadius() {
+        return ChunkLoadRadius;
     }
 
     public static Boolean getOPOverride() {
