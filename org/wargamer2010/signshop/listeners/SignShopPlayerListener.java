@@ -173,8 +173,11 @@ public class SignShopPlayerListener implements Listener {
 
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);
-                if(createdevent.isCancelled())
+                if(createdevent.isCancelled()) {
+                    itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
                     return;
+                }
+
 
                 Storage.get().addSeller(player.getName(), world.getName(), ssArgs.getSign().get(), ssArgs.getContainables().getRoot(), ssArgs.getActivatables().getRoot()
                                             , ssArgs.getItems().get(), createdevent.getMiscSettings());
@@ -203,9 +206,9 @@ public class SignShopPlayerListener implements Listener {
             }
 
             for(Block bContainable : seller.getContainables())
-                itemUtil.loadChunkByBlock(bContainable);                
+                itemUtil.loadChunkByBlock(bContainable);
             for(Block bActivatable : seller.getActivatables())
-                itemUtil.loadChunkByBlock(bActivatable);                
+                itemUtil.loadChunkByBlock(bActivatable);
 
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null){
                 event.setCancelled(true);
@@ -216,25 +219,25 @@ public class SignShopPlayerListener implements Listener {
             ssArgs.setMessagePart("!customer", ssPlayer.getName());
             ssArgs.setMessagePart("!owner", ssOwner.getName());
             ssArgs.setMessagePart("!player", ssPlayer.getName());
-            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());            
+            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
             Boolean bRequirementsOK = true;
             Boolean bRunOK = false;
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                 ssArgs.setOperationParameters(ssOperation.getValue());
-                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);                
+                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
                 if(!bRequirementsOK)
                     break;
             }
             if(ssArgs.hasMessagePart("!items") && !ssArgs.hasMessagePart("!price"))
                 signshopUtil.ApplyPriceMod(ssArgs);
-            
+
             SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction(), bRequirementsOK);
             SignShop.scheduleEvent(pretransactevent);
             if(pretransactevent.isCancelled())
                 return;
-            
+
             if(!bRequirementsOK)
                 return;
 

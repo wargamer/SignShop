@@ -4,6 +4,7 @@
 MaxSellDistance: 0
 MaxShopsPerPerson: 0
 ShopCooldownMilliseconds: 0
+MessageCooldownSeconds: 0
 ChunkLoadRadius: 2
 TransactionLog: false
 OPOverride: true
@@ -299,6 +300,7 @@ errors:
   linked_bank_sign: Succesfully linked Bank sign to Shop.
   not_allowed_to_use_bank: You are not the owner or a member of !bank Bank so the related Bank sign will be ignored.
   no_bank_available: There is no Bank available to process the request, please contact the shop owner.
+  repeated_x_times: (repeated !x times)
 commands:
   TpToOwner:
   - tp !player !owner

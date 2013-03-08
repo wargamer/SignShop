@@ -13,6 +13,7 @@ import java.util.LinkedList;
 import java.util.logging.Level;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.wargamer2010.signshop.SignShop;
 
 public class configUtil {
@@ -142,7 +143,11 @@ public class configUtil {
     }
 
     public static FileConfiguration loadYMLFromPluginFolder(String filename) {
-        File configFile = new File(SignShop.getInstance().getDataFolder(), filename);
+        return loadYMLFromPluginFolder(SignShop.getInstance(), filename);
+    }
+
+    public static FileConfiguration loadYMLFromPluginFolder(Plugin plugin, String filename) {
+        File configFile = new File(plugin.getDataFolder(), filename);
         FileConfiguration ymlThing = new YamlConfiguration();
         if(!configFile.exists())
             return ymlThing;
@@ -161,10 +166,14 @@ public class configUtil {
     }
 
     public static FileConfiguration loadYMLFromJar(FileConfiguration ymlInPluginFolder, String filenameInJar) {
-        File configFile = new File(SignShop.getInstance().getDataFolder(), filenameInJar);
+        return loadYMLFromJar(SignShop.getInstance(), SignShop.class, ymlInPluginFolder, filenameInJar);
+    }
+
+    public static FileConfiguration loadYMLFromJar(Plugin plugin, Class<?> pluginclass, FileConfiguration ymlInPluginFolder, String filenameInJar) {
+        File configFile = new File(plugin.getDataFolder(), filenameInJar);
         FileConfiguration thingInJar = new YamlConfiguration();
         try {
-            InputStream in = SignShop.class.getResourceAsStream("/" + filenameInJar);
+            InputStream in = pluginclass.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
                 thingInJar.load(in);
                 ymlInPluginFolder.options().copyDefaults(true);
