@@ -38,13 +38,14 @@ public class SignShopConfig {
     public static Map<Material, String> LinkableMaterials;
     public static List<String> SpecialsOps = new LinkedList<String>();
 
-    private SignShop instance = null;
+    private static SignShop instance = null;
 
     //Configurables
     private FileConfiguration config;
     private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
     private static int ShopCooldown = 0;
+    private static int MessageCooldown = 0;
     private static int ChunkLoadRadius = 2;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
@@ -73,7 +74,7 @@ public class SignShopConfig {
         Languages = "english";
     }
 
-    private List<String> getOrderedListFromArray(String[] array) {
+    private static List<String> getOrderedListFromArray(String[] array) {
         List<String> list = new LinkedList<String>();
         for(String item : array)
             if(!list.contains(item.toLowerCase().trim()))
@@ -142,7 +143,7 @@ public class SignShopConfig {
         SpecialsOps.add("copySign");
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add("linkShowcase");
-        SpecialsOps.add("LinkSpecialSign");        
+        SpecialsOps.add("LinkSpecialSign");
         SpecialsOps.add("changeOwner");
         SpecialsOps.add("linkAdditionalBlocks");
     }
@@ -181,6 +182,7 @@ public class SignShopConfig {
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
         ChunkLoadRadius = ymlThing.getInt("ChunkLoadRadius", ChunkLoadRadius);
         ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
+        MessageCooldown = ymlThing.getInt("MessageCooldownSeconds", MessageCooldown);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
         AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
@@ -201,7 +203,7 @@ public class SignShopConfig {
         // Sanity check
         if(ChunkLoadRadius > 50 || ChunkLoadRadius < 0)
             ChunkLoadRadius = 3;
-        
+
         this.config = ymlThing;
     }
 
@@ -222,16 +224,19 @@ public class SignShopConfig {
     }
 
     private void setupOperations() {
-        Operations = new HashMap<String,List<String>>();
+        setupOperations(configUtil.fetchStringStringHashMap("signs", config));
+    }
 
-        HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config);
+    public static void setupOperations(Map<String, String> allSignOperations) {
+        if(Operations == null)
+            Operations = new HashMap<String,List<String>>();
 
         List<String> tempSignOperationString;
         List<String> tempCheckedSignOperation = new LinkedList<String>();
         Boolean failedOp = false;
 
-        for(String sKey : tempSignOperations.keySet()){
-            tempSignOperationString = Arrays.asList(tempSignOperations.get(sKey).split("\\,"));
+        for(String sKey : allSignOperations.keySet()){
+            tempSignOperationString = Arrays.asList(allSignOperations.get(sKey).split("\\,"));
             if(tempSignOperationString.size() > 0) {
                 for(int i = 0; i < tempSignOperationString.size(); i++) {
                     List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
@@ -253,6 +258,7 @@ public class SignShopConfig {
 
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
         aLanguages.remove("config");
+
         SignShopConfig.OperationAliases = new HashMap<String,String>();
 
         for(String language : aLanguages) {
@@ -444,6 +450,47 @@ public class SignShopConfig {
         }
     }
 
+    public static boolean registerMessages(String type, Map<String, String> messagesByShop) {
+        return registerMessages(SignShopConfig.baseLanguage, type, messagesByShop);
+    }
+
+    public static boolean registerMessages(String language, String type, Map<String, String> messagesByShop) {
+        if(Messages.containsKey(language) && Messages.get(language).containsKey(type)) {
+            HashMap<String, String> temp = Messages.get(language).get(type);
+            temp.putAll(messagesByShop);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean registerErrorMessage(String type, String message) {
+        return registerErrorMessage(SignShopConfig.baseLanguage, type, message);
+    }
+
+    public static boolean registerErrorMessage(String language, String type, String message) {
+        if(Messages.containsKey(language)) {
+            Map<String, String> temp = Errors.get(language);
+            temp.put(type, message);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean registerErrorMessages(Map<String, String> messagesByType) {
+        return registerErrorMessages(SignShopConfig.baseLanguage, messagesByType);
+    }
+
+    public static boolean registerErrorMessages(String language, Map<String, String> messagesByType) {
+        if(Messages.containsKey(language)) {
+            Errors.get(language).putAll(messagesByType);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
         String message = pMessage;
         if(messageParts == null)
@@ -501,9 +548,13 @@ public class SignShopConfig {
     public static int getShopCooldown() {
         return ShopCooldown;
     }
-    
+
     public static int getChunkLoadRadius() {
         return ChunkLoadRadius;
+    }
+
+    public static int getMessageCooldown() {
+        return MessageCooldown;
     }
 
     public static Boolean getOPOverride() {

@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.player;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import net.milkbowl.vault.economy.EconomyResponse;
@@ -23,7 +24,7 @@ public class SignShopPlayer {
     private Player ssPlayer = null;
     private String sPlayername = "";
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
-    private static Map<String, HashMap<String, Long>> mPlayerMessageMap = new HashMap<String, HashMap<String, Long>>();
+    private static Map<String, HashMap<String, MessageCount>> mPlayerMessageMap = new HashMap<String, HashMap<String, MessageCount>>();
 
     private SignShopPlayer() {
 
@@ -56,31 +57,49 @@ public class SignShopPlayer {
     public void sendMessage(String sMessage) {
         if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
             return;
-        Calendar c = Calendar.getInstance();        
+        Calendar c = Calendar.getInstance();
         long timenow = c.getTimeInMillis();
+        int cooldown = (SignShopConfig.getMessageCooldown() * 1000); // Convert to millis
         String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
-        
-        HashMap<String, Long> mMessageMap = mPlayerMessageMap.get(sPlayername);
-        
-        if(mMessageMap == null) {
-            mMessageMap = new HashMap<String, Long>();
-            mPlayerMessageMap.put(sPlayername, mMessageMap);
-        } else if(mMessageMap.containsKey(message) && (timenow - mMessageMap.get(message)) <= 2000)
-            // Check if message is the same and if more than 2 seconds have passed
+        if(cooldown <= 0) {
+            ssPlayer.sendMessage(message);
             return;
-            
-        mMessageMap.put(message, timenow);
-        ssPlayer.sendMessage(message);
-        
+        }
+
+
+        HashMap<String, MessageCount> mMessageMap = mPlayerMessageMap.get(sPlayername);
+
+        if(mMessageMap == null) {
+            mMessageMap = new HashMap<String, MessageCount>();
+            mPlayerMessageMap.put(sPlayername, mMessageMap);
+        } else if(mMessageMap.containsKey(message) && (timenow - mMessageMap.get(message).getLastSeen()) <= cooldown) {
+            // Check if message is the same and if more than 2 seconds have passed
+            // Increment count if that's not the case
+            mMessageMap.get(message).incCount();
+            return;
+        }
+
+        if(!mMessageMap.containsKey(message)) {
+            mMessageMap.put(message, new MessageCount(0, timenow));
+        }
+
+        Map<String, String> pars = new LinkedHashMap<String, String>();
+        pars.put("!x", Integer.toString(mMessageMap.get(message).getCount()));
+        String appender = (mMessageMap.get(message).getCount() > 0 ? (" " + SignShopConfig.getError("repeated_x_times", pars)) : "");
+        ssPlayer.sendMessage(message + appender);
+
         List<String> toRemove = new ArrayList<String>();
-        for(Map.Entry<String, Long> entry : mMessageMap.entrySet()) {
-            // Older than 1 minute? Remove it
-            if((timenow - mMessageMap.get(message)) >= 60000) {                
+        for(Map.Entry<String, MessageCount> entry : mMessageMap.entrySet()) {
+            // Old message?
+            if((timenow - mMessageMap.get(message).getLastSeen()) >= (cooldown * 10) && mMessageMap.get(message).getCount() == 0) {
                 toRemove.add(entry.getKey());
             }
         }
         for(String removeMe : toRemove)
             mMessageMap.remove(removeMe);
+
+        mMessageMap.get(message).clrCount();
+        mMessageMap.get(message).setLastSeen(timenow);
     }
 
     public String getName() {
@@ -349,9 +368,39 @@ public class SignShopPlayer {
             return null;
         return stack;
     }
-    
+
     public boolean isOwner(Seller seller) {
         return (seller.getOwner().equals(sPlayername));
+    }
+
+    private class MessageCount {
+        private int iCount = 1;
+        private long lLastSeen;
+
+        private MessageCount(int pCount, long pLastSeen) {
+            iCount = pCount;
+            lLastSeen = pLastSeen;
+        }
+
+        public int getCount() {
+            return iCount;
+        }
+
+        public void incCount() {
+            this.iCount++;
+        }
+
+        public void clrCount() {
+            this.iCount = 0;
+        }
+
+        public long getLastSeen() {
+            return lLastSeen;
+        }
+
+        public void setLastSeen(long lLastSeen) {
+            this.lLastSeen = lLastSeen;
+        }
     }
 
 }
