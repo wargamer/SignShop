@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -57,49 +61,20 @@ public class SignShopPlayer {
     public void sendMessage(String sMessage) {
         if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
             return;
-        Calendar c = Calendar.getInstance();
-        long timenow = c.getTimeInMillis();
-        int cooldown = (SignShopConfig.getMessageCooldown() * 1000); // Convert to millis
+        if(SignShopConfig.getMessageCooldown() <= 0) {
+            sendNonDelayedMessage(sMessage);
+            return;
+        }
+
+        MessageWorker.init();
+        MessageWorker.OfferMessage(sMessage, this);
+    }
+
+    public void sendNonDelayedMessage(String sMessage) {
+        if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
+            return;
         String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
-        if(cooldown <= 0) {
-            ssPlayer.sendMessage(message);
-            return;
-        }
-
-
-        HashMap<String, MessageCount> mMessageMap = mPlayerMessageMap.get(sPlayername);
-
-        if(mMessageMap == null) {
-            mMessageMap = new HashMap<String, MessageCount>();
-            mPlayerMessageMap.put(sPlayername, mMessageMap);
-        } else if(mMessageMap.containsKey(message) && (timenow - mMessageMap.get(message).getLastSeen()) <= cooldown) {
-            // Check if message is the same and if more than 2 seconds have passed
-            // Increment count if that's not the case
-            mMessageMap.get(message).incCount();
-            return;
-        }
-
-        if(!mMessageMap.containsKey(message)) {
-            mMessageMap.put(message, new MessageCount(0, timenow));
-        }
-
-        Map<String, String> pars = new LinkedHashMap<String, String>();
-        pars.put("!x", Integer.toString(mMessageMap.get(message).getCount()));
-        String appender = (mMessageMap.get(message).getCount() > 0 ? (" " + SignShopConfig.getError("repeated_x_times", pars)) : "");
-        ssPlayer.sendMessage(message + appender);
-
-        List<String> toRemove = new ArrayList<String>();
-        for(Map.Entry<String, MessageCount> entry : mMessageMap.entrySet()) {
-            // Old message?
-            if((timenow - mMessageMap.get(message).getLastSeen()) >= (cooldown * 10) && mMessageMap.get(message).getCount() == 0) {
-                toRemove.add(entry.getKey());
-            }
-        }
-        for(String removeMe : toRemove)
-            mMessageMap.remove(removeMe);
-
-        mMessageMap.get(message).clrCount();
-        mMessageMap.get(message).setLastSeen(timenow);
+        ssPlayer.sendMessage(message);
     }
 
     public String getName() {
