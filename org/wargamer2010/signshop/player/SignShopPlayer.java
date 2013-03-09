@@ -1,15 +1,5 @@
 package org.wargamer2010.signshop.player;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -28,7 +18,6 @@ public class SignShopPlayer {
     private Player ssPlayer = null;
     private String sPlayername = "";
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
-    private static Map<String, HashMap<String, MessageCount>> mPlayerMessageMap = new HashMap<String, HashMap<String, MessageCount>>();
 
     private SignShopPlayer() {
 

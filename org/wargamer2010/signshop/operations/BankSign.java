@@ -40,7 +40,7 @@ public class BankSign implements SignShopOperation {
             Sign sign = (Sign)ssArgs.getSign().get().getState();
             String[] lines = sign.getLines();
             if(!signshopUtil.lineIsEmpty(lines[1])) names.add(lines[1]);
-            if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);            
+            if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);
             first = true;
             String sLast = names.get(names.size()-1);
             for(String sTemp : names) {
@@ -49,7 +49,7 @@ public class BankSign implements SignShopOperation {
                 else if(sLast.equals(sTemp)) profits += " and ";
                 profits += sTemp;
             }
-            ssArgs.setMessagePart("!banks", profits);
+            ssArgs.setMessagePart("!bank", profits);
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
         }
         return true;

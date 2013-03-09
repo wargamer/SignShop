@@ -72,7 +72,7 @@ public class MessageWorker implements Runnable {
 
     private static void SendRepeatedMessage(Message message) {
         Map<String, String> pars = new LinkedHashMap<String, String>();
-        pars.put("!x", Integer.toString(message.getCount()));
+        pars.put("!times", Integer.toString(message.getCount()));
         String appender = (message.getCount() > 0 ? (" " + SignShopConfig.getError("repeated_x_times", pars)) : "");
         message.getPlayer().sendNonDelayedMessage(message.getMessage() + appender);
         message.clrCount();
