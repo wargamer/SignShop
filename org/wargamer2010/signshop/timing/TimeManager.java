@@ -5,6 +5,8 @@ import org.wargamer2010.signshop.events.SSExpiredEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -16,6 +18,7 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSEventFactory;
 
@@ -108,6 +111,7 @@ public class TimeManager extends TimerTask {
     @Override
     public void run() {
         timerLock.lock();
+        
         try {
             Map<IExpirable, Integer> update = new LinkedHashMap<IExpirable, Integer>();
             for(Map.Entry<IExpirable, Integer> entry : timeByExpirable.entrySet()) {
@@ -188,8 +192,36 @@ public class TimeManager extends TimerTask {
         return tempHasinHash;
     }
 
+    private static Method fetchSchedulerMethod(String methodName) {
+        try {
+            return Bukkit.getScheduler().getClass().getDeclaredMethod(methodName, Plugin.class, Runnable.class, long.class, long.class);
+        }
+        catch (NoSuchMethodException ex) { }
+        catch (SecurityException ex) { }
+
+        return null;
+    }
+
     private void scheduleCheck() {
-        Bukkit.getScheduler().runTaskTimerAsynchronously(SignShop.getInstance(), this, 0, getTicks(interval));
+        boolean ranOperation = false;
+        Method scheduleAsync = fetchSchedulerMethod("runTaskTimerAsynchronously");
+        String reason = "Method was not found";
+
+        if(scheduleAsync == null)
+            scheduleAsync = fetchSchedulerMethod("scheduleAsyncRepeatingTask");
+
+        if(scheduleAsync != null) {
+            try {
+                scheduleAsync.invoke(Bukkit.getScheduler(), SignShop.getInstance(), this, 0, getTicks(interval));
+                ranOperation = true;
+            }
+            catch (IllegalAccessException ex) { reason = ex.getMessage(); }
+            catch (IllegalArgumentException ex) { reason = ex.getMessage(); }
+            catch (InvocationTargetException ex) { reason = ex.getMessage(); }
+        }
+
+        if(!ranOperation)
+            SignShop.log("Could not find proper method to schedule TimeManager task! Reason: " + reason, Level.SEVERE);
     }
 
     private int getTicks(int ms) {

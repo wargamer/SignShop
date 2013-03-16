@@ -6,7 +6,7 @@ import org.wargamer2010.signshop.SignShop;
 
 public class BookFactory {
     private static String namespaceType = "";
-
+    
     private BookFactory() {
 
     }
@@ -26,12 +26,8 @@ public class BookFactory {
         IItemTags tags;
         if(useType.equals("pre145"))
             tags = new org.wargamer2010.signshop.blocks.itemTags();
-        else if(useType.equals("v145"))
-            tags = new org.wargamer2010.signshop.blocks.v145.itemTags();
-        else if(useType.equals("v146"))
-            tags = new org.wargamer2010.signshop.blocks.v146.itemTags();
         else
-            tags = new org.wargamer2010.signshop.blocks.v147.itemTags();
+            tags = new org.wargamer2010.signshop.blocks.v145.itemTags();
 
         return tags;
     }
@@ -40,12 +36,8 @@ public class BookFactory {
         if(namespaceType.isEmpty()) {
             if(tryReflection("org.bukkit.craftbukkit.inventory.CraftItemStack"))
                 namespaceType = "pre145";
-            else if(tryReflection("org.bukkit.craftbukkit.v1_4_5.inventory.CraftItemStack"))
-                namespaceType = "v145";
-            else if(tryReflection("org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack"))
-                namespaceType = "v146";
             else
-                namespaceType = "post146";
+                namespaceType = "post145";
         }
         return namespaceType;
     }

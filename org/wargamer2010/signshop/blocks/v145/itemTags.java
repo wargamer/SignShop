@@ -1,8 +1,9 @@
 package org.wargamer2010.signshop.blocks.v145;
 
 
-import com.bergerkiller.bukkit.common.SafeField;
+import java.util.logging.Level;
 import org.bukkit.Material;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.IItemTags;
 
 public class itemTags implements IItemTags {
@@ -16,7 +17,8 @@ public class itemTags implements IItemTags {
 
     @Override
     public void setItemMaxSize(Material material, int maxstacksize) {
-        SafeField.set(net.minecraft.server.v1_4_5.Item.byId[material.getId()], "maxStackSize", maxstacksize);
+        // Support for this has ended due to Bukkit shifting package names around too often
+        SignShop.log("Support for sign stacking has ended with the release of 1.4.7. For information, please visit http://tiny.cc/signshop", Level.WARNING);
     }
 
     @Override
