@@ -418,7 +418,7 @@ public class signshopUtil {
     }
 
     public static Float ApplyPriceMod(SignShopPlayer player, Float fPrice, String sOperation) {
-        Float fPricemod = player.getPlayerPricemod(sOperation, true);
+        Float fPricemod = player.getPlayerPricemod(sOperation);
         return (fPrice * fPricemod);
     }
 

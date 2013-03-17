@@ -14,14 +14,14 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments {
-    
+
     public SignShopArguments() {
 
     }
-    
+
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                                 SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace) {
-        fPrice.setRoot(pfPrice);        
+        fPrice.setRoot(pfPrice);
         isItems.setRoot(pisItems);
         containables.setRoot(pContainables);
         activatables.setRoot(pActivatables);
@@ -37,7 +37,7 @@ public class SignShopArguments {
         sOperation.setRoot(psOperation);
         bfBlockFace.setRoot(pbfBlockFace);
     }
-    
+
     public void reset() {
         fPrice.setSpecial(false);
         isItems.setSpecial(false);
@@ -49,19 +49,19 @@ public class SignShopArguments {
         sOperation.setSpecial(false);
         bfBlockFace.setSpecial(false);
     }
-    
+
     public static String seperator = "~";
 
     private SignShopArgument<Float> fPrice = new SignShopArgument<Float>(this);
     public SignShopArgument<Float> getPrice() {
         return fPrice;
     }
-    
+
     private SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
         @Override
-        public void set(ItemStack[] pItems) { 
+        public void set(ItemStack[] pItems) {
             if(getCollection().forceMessageKeys.containsKey("!items"))
-                getCollection().miscSettings.put(getCollection().forceMessageKeys.get("!items").replace("!", ""), 
+                getCollection().miscSettings.put(getCollection().forceMessageKeys.get("!items").replace("!", ""),
                         signshopUtil.implode(itemUtil.convertItemStacksToString(pItems), seperator));
             super.set(pItems);
         }
@@ -74,7 +74,7 @@ public class SignShopArguments {
     public SignShopArgument<List<Block>> getContainables() {
         return containables;
     }
-    
+
     private SignShopArgument<List<Block>> activatables = new SignShopArgument<List<Block>>(this);
     public SignShopArgument<List<Block>> getActivatables() {
         return activatables;
@@ -109,7 +109,7 @@ public class SignShopArguments {
     public SignShopArgument<BlockFace> getBlockFace() {
         return bfBlockFace;
     }
-    
+
     private List<String> operationParameters = new LinkedList<String>();
     public void setOperationParameters(List<String> pOperationParameters) { operationParameters.clear(); operationParameters.addAll(pOperationParameters); }
     public boolean isOperationParameter(String sOperationParameter) { return operationParameters.contains(sOperationParameter); }
@@ -121,12 +121,12 @@ public class SignShopArguments {
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;
     public boolean bRunCommandAsUser = false;
-    
+
     public void ignoreEmptyChest() {
         if(!isOperationParameter("allowemptychest"))
             operationParameters.add("allowemptychest");
     }
-    
+
     public boolean tryToApplyPriceMod() {
         if(bPriceModApplied)
             return false;
@@ -134,28 +134,28 @@ public class SignShopArguments {
     }
 
     private Map<String, String> messageParts = new HashMap<String, String>();
-    
+
     public void setMessagePart(String name, String value) {
         messageParts.put(name, value);
         if(forceMessageKeys.containsKey(name))
             name = forceMessageKeys.get(name);
         messageParts.put(name, value);
     }
-    
+
     public boolean hasMessagePart(String name) {
         return messageParts.containsKey(name);
     }
-    
+
     public String getMessagePart(String name) {
         if(hasMessagePart(name))
             return messageParts.get(name);
         return "";
     }
-    
+
     public Map<String, String> getMessageParts() {
         return Collections.unmodifiableMap(messageParts);
     }
-    
+
     public Map<String, String> getRawMessageParts() {
         return messageParts;
     }
