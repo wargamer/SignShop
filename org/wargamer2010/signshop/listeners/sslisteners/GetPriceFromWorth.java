@@ -8,6 +8,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
+import org.wargamer2010.signshop.events.SSEvent;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.listeners.SignShopWorthListener;
@@ -63,17 +64,15 @@ public class GetPriceFromWorth implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled())
-            return;
-        Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
-        if(newPrice > -1.0f) {
-            event.setPrice(newPrice);
-            event.setMessagePart("!price", newPrice.toString());
-        }
+        HandleTransactionEvent(event);
     }
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPostTransactionEvent(SSPostTransactionEvent event) {
+        HandleTransactionEvent(event);
+    }
+
+    private void HandleTransactionEvent(SSPreTransactionEvent event) {
         if(event.isCancelled())
             return;
         Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
