@@ -17,7 +17,7 @@ public class PermissionChecker implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         List<String> operation = SignShopConfig.getBlocks(event.getOperation());
         String sOperation = event.getOperation();
@@ -29,7 +29,7 @@ public class PermissionChecker implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         String sOperation = event.getOperation();
         SignShopPlayer ssPlayer = event.getPlayer();

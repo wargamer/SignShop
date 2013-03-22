@@ -19,7 +19,7 @@ public class PermitChecker implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         List<String> operation = SignShopConfig.getBlocks(event.getOperation());
         if(!hasPermit(event.getPlayer(), operation, event.getPlayer().getWorld())) {
@@ -30,7 +30,7 @@ public class PermitChecker implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         List<String> operation = SignShopConfig.getBlocks(event.getOperation());
         if(!hasPermit(event.getOwner(), operation, event.getPlayer().getWorld())) {
