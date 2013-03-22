@@ -13,7 +13,7 @@ public class SimpleShopLimiter implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         int iLimit = event.getPlayer().reachedMaxShops();
         if(!SignShopConfig.getBlocks(event.getOperation()).contains("playerIsOp") && iLimit > 0) {

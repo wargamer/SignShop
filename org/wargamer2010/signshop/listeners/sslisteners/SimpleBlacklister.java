@@ -34,7 +34,7 @@ public class SimpleBlacklister implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         boolean isBlacklisted = this.runBlacklistCheck(event.getItems(), event.getPlayer(), event.getMessageParts());
         if(isBlacklisted)
@@ -43,7 +43,7 @@ public class SimpleBlacklister implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         boolean isBlacklisted = this.runBlacklistCheck(event.getItems(), event.getPlayer(), event.getMessageParts());
         if(isBlacklisted)

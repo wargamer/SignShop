@@ -12,7 +12,7 @@ public class SimpleBlockProtector implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSLinkEvent(SSLinkEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
         if(!HookManager.canBuild(event.getPlayer().getPlayer(), event.getBlock())) {
             event.getPlayer().sendMessage(SignShopConfig.getError("link_notallowed", null));

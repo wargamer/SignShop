@@ -91,13 +91,15 @@ public class SimpleShopProtector implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSDestroyEvent(SSDestroyedEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || !event.canBeCancelled())
             return;
 
         // Check if the shop is being destroyed by something other than a player
         // If that is the case, we'd like to cancel it as shops shouldn't burn to the ground
-        if(event.getPlayer().getPlayer() == null)
+        if(event.getPlayer().getPlayer() == null) {
             event.setCancelled(true);
+            return;
+        }
 
         SignShopPlayer player = event.getPlayer();
 

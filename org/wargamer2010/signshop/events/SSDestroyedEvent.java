@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class SSDestroyedEvent extends SSEvent {
@@ -14,9 +15,15 @@ public class SSDestroyedEvent extends SSEvent {
     private SSDestroyedEventType reason = SSDestroyedEventType.unknown;
 
     public SSDestroyedEvent(Block pBlock, SignShopPlayer pPlayer, Seller pShop, SSDestroyedEventType pReason) {
-        ssPlayer = pPlayer;
+        if(pPlayer == null)
+            ssPlayer = new SignShopPlayer("");
+        else
+            ssPlayer = pPlayer;
         bBlock = pBlock;
-        seShop = pShop;
+        if(pShop != null)
+            seShop = pShop;
+        else if(pReason == SSDestroyedEventType.sign)
+            seShop = Storage.get().getSeller(pBlock.getLocation());
         reason = pReason;
     }
 

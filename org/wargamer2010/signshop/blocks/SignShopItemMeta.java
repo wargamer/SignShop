@@ -82,7 +82,7 @@ public class SignShopItemMeta {
         return signshopUtil.capFirstLetter(temp);
     }
 
-    private static String resolveUknownHeads(int ID, short durability) {
+    private static String resolveUnknownHeads(int ID, short durability) {
         if(headResolves == null) {
             headResolves = new LinkedHashMap<String, String>();
             headResolves.put("3970", "Skeleton Skull");
@@ -139,7 +139,7 @@ public class SignShopItemMeta {
                         return (ChatColor.RESET + Bukkit.getServer().getPlayer(skullmeta.getOwner()).getDisplayName() + postfix);
                     }
                 } else {
-                    return resolveUknownHeads(stack.getTypeId(), stack.getDurability());
+                    return resolveUnknownHeads(stack.getTypeId(), stack.getDurability());
                 }
             } else if(type == MetaType.Potion) {
                 PotionMeta potionmeta = (PotionMeta) meta;
