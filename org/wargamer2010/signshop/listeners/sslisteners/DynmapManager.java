@@ -65,6 +65,7 @@ public class DynmapManager implements Listener {
             return;
         MarkerIcon markerIcon = markerAPI.getMarkerIcon("sign");
         String id = ("SignShop_" + signshopUtil.convertLocationToString(loc).replace(".", ""));
+        String label = (owner + "'s SignShop");
 
         Marker m = ms.findMarker(id);
         if(remove) {
@@ -74,10 +75,10 @@ public class DynmapManager implements Listener {
         }
 
         if(m == null) {
-            ms.createMarker(id, owner, world, loc.getX(), loc.getY(), loc.getZ(), markerIcon, false);
+            ms.createMarker(id, label, world, loc.getX(), loc.getY(), loc.getZ(), markerIcon, false);
         } else {
             m.setLocation(world, loc.getX(), loc.getY(), loc.getZ());
-            m.setLabel(owner);
+            m.setLabel(label);
             m.setMarkerIcon(markerIcon);
         }
     }
