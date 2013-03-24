@@ -120,9 +120,6 @@ public class SimpleShopProtector implements Listener {
     public void onSSDestroyCleanup(SSDestroyedEvent event) {
         if(event.isCancelled())
             return;
-        // Does the seller still exist?
-        if(Storage.get().getSignFromSeller(event.getShop()) == null)
-            return;
 
         if(event.getReason() == SSDestroyedEventType.sign) {
             Storage.get().removeSeller(event.getBlock().getLocation());

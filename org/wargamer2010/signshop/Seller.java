@@ -21,19 +21,22 @@ public class Seller {
     private List<Block> containables = new LinkedList<Block>();
     private List<Block> activatables = new LinkedList<Block>();
     private ItemStack[] isItems;
+    private Location signLocation;
     private Map<String, String> miscProps = new HashMap<String, String>();
     private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();
 
     private String owner;
     private String world;
 
-    public Seller(String sPlayer, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Map<String, String> pMiscProps, Boolean save) {
+    public Seller(String sPlayer, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
+            Map<String, String> pMiscProps, Boolean save) {
         owner = sPlayer;
         world = sWorld;
 
         isItems = itemUtil.getBackupItemStack(isChestItems);
         containables = pContainables;
         activatables = pActivatables;
+        signLocation = location;
         if(pMiscProps != null)
             miscProps.putAll(pMiscProps);
         if(save)
@@ -126,7 +129,11 @@ public class Seller {
     }
 
     public Block getSign() {
-        return Storage.get().getSignFromSeller(this);
+        return signLocation.getBlock();
+    }
+
+    public Location getSignLocation() {
+        return signLocation;
     }
 
     public String getOperation() {
