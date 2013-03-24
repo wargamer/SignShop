@@ -157,6 +157,10 @@ public class SignShopConfig {
     private void setupLinkables() {
         LinkableMaterials = new HashMap<Material, String>();
         safeAddLinkeable("CHEST", "chest");
+        safeAddLinkeable("TRAPPED_CHEST", "chest");
+        safeAddLinkeable("DROPPER", "dropper");
+        safeAddLinkeable("HOPPER", "hopper");
+        safeAddLinkeable("ANVIL", "anvil");
         safeAddLinkeable("DISPENSER", "dispenser");
         safeAddLinkeable("FURNACE", "furnace");
         safeAddLinkeable("BURNING_FURNACE", "furnace");
@@ -602,7 +606,7 @@ public class SignShopConfig {
     public static Boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
     }
-    
+
     public static Boolean getEnablePriceFromWorth() {
         return EnablePriceFromWorth;
     }
