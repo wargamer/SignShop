@@ -19,6 +19,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
+import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class DynmapManager implements Listener {
@@ -55,9 +56,7 @@ public class DynmapManager implements Listener {
     }
 
     private void ManageMarkerForSeller(Seller seller, boolean remove) {
-        Block block = Storage.get().getSignFromSeller(seller);
-        if(block != null)
-            ManageMarkerForSeller(block.getLocation(), seller.getOwner(), seller.getWorld(), remove);
+        ManageMarkerForSeller(seller.getSignLocation(), seller.getOwner(), seller.getWorld(), remove);
     }
 
     private void ManageMarkerForSeller(Location loc, String owner, String world, boolean remove) {
@@ -83,10 +82,9 @@ public class DynmapManager implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.HIGH)
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onSSDestroyCleanup(SSDestroyedEvent event) {
-        // High priority in stead of Monitor so we can run before the full cleanup starts
-        if(event.isCancelled())
+        if(event.isCancelled() || event.getReason() != SSDestroyedEventType.sign)
             return;
 
         ManageMarkerForSeller(event.getShop(), true);

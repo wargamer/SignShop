@@ -422,7 +422,7 @@ public class Storage implements Listener {
     }
 
     public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
-        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, misc, save));
+        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
         if(save)
             this.SafeSave();
     }
@@ -444,14 +444,15 @@ public class Storage implements Listener {
         return Collections.unmodifiableCollection(sellers.values());
     }
 
+    /**
+     * The Seller now keeps it's own Sign Location so call getSign in stead
+     * @param pSeller
+     * @return
+     * @deprecated
+     */
+    @Deprecated
     public Block getSignFromSeller(Seller pSeller) {
-        if(Storage.sellers.containsValue(pSeller)) {
-            for(Map.Entry<Location, Seller> entry : sellers.entrySet()) {
-                if(entry.getValue() == pSeller)
-                    return entry.getKey().getBlock();
-            }
-        }
-        return null;
+        return pSeller.getSign();
     }
 
     public void removeSeller(Location lKey) {

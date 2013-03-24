@@ -372,9 +372,9 @@ public class itemUtil {
 
         return isBackup;
     }
-    
+
     public static ItemStack[] filterStacks(ItemStack[] all, ItemStack[] filterby) {
-        ItemStack[] filtered = new ItemStack[all.length];        
+        ItemStack[] filtered = new ItemStack[all.length];
         List<ItemStack> tempFiltered = new LinkedList<ItemStack>();
         HashMap<ItemStack, Integer> mFilter = StackToMap(filterby);
         for(ItemStack stack : all) {
@@ -384,7 +384,7 @@ public class itemUtil {
                 tempFiltered.add(stack);
             }
         }
-        
+
         return tempFiltered.toArray(filtered);
     }
 
@@ -452,7 +452,7 @@ public class itemUtil {
 
     public static void updateStockStatusPerShop(Seller pSeller) {
         if(pSeller != null) {
-            Block pSign = Storage.get().getSignFromSeller(pSeller);
+            Block pSign = pSeller.getSign();
             if(pSign == null || !(pSign.getState() instanceof Sign))
                 return;
             String[] sLines = ((Sign) pSign.getState()).getLines();
@@ -601,7 +601,7 @@ public class itemUtil {
             return false;
         return true;
     }
-    
+
     public static boolean loadChunkByBlock(Block block, int radius) {
         boolean OK = true;
         int chunksize = 12;
@@ -613,7 +613,7 @@ public class itemUtil {
                     OK = (OK ? loadChunkByBlock(
                             block.getWorld().getBlockAt(
                                 block.getX()+(x*chunksize),
-                                block.getY()+(y*chunksize), 
+                                block.getY()+(y*chunksize),
                                 block.getZ()+(z*chunksize)))
                             : true);
                 }
@@ -621,7 +621,7 @@ public class itemUtil {
         }
         return OK;
     }
-    
+
     public static boolean loadChunkByBlock(Block block) {
         if(block == null)
             return false;
