@@ -44,14 +44,12 @@ public class SimpleShopProtector implements Listener {
     private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            if(seller == null || (seller != null && (seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player)))) {
-                Storage.get().removeSeller(bBlock.getLocation());
+            if(seller == null || seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player))
                 return true;
-            } else
+            else
                 return false;
         }
         if(firstcall) {
-            Block bSign = null;
             List<BlockFace> checkFaces = new ArrayList<BlockFace>();
             checkFaces.add(BlockFace.UP);
             checkFaces.add(BlockFace.NORTH);
@@ -59,12 +57,8 @@ public class SimpleShopProtector implements Listener {
             checkFaces.add(BlockFace.SOUTH);
             checkFaces.add(BlockFace.WEST);
             for(int i = 0; i < checkFaces.size(); i++)
-                if(checkSign(bBlock.getRelative(checkFaces.get(i)), bBlock, checkFaces.get(i), player))
-                    bSign = bBlock.getRelative(checkFaces.get(i));
-                else
+                if(!checkSign(bBlock.getRelative(checkFaces.get(i)), bBlock, checkFaces.get(i), player))
                     return false;
-            if(bSign != null)
-                Storage.get().removeSeller(bSign.getLocation());
         }
         return true;
     }

@@ -16,7 +16,7 @@ public class SSDestroyedEvent extends SSEvent {
 
     public SSDestroyedEvent(Block pBlock, SignShopPlayer pPlayer, Seller pShop, SSDestroyedEventType pReason) {
         if(pPlayer == null)
-            ssPlayer = new SignShopPlayer("");
+            ssPlayer = new SignShopPlayer();
         else
             ssPlayer = pPlayer;
         bBlock = pBlock;

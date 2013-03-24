@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.ConcurrentModificationException;
 import java.util.LinkedHashMap;
@@ -436,6 +438,10 @@ public class Storage implements Listener {
         if(Storage.sellers.containsKey(lKey))
             return Storage.sellers.get(lKey);
         return null;
+    }
+
+    public Collection<Seller> getSellers() {
+        return Collections.unmodifiableCollection(sellers.values());
     }
 
     public Block getSignFromSeller(Seller pSeller) {
