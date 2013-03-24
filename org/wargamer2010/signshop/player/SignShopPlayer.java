@@ -19,7 +19,7 @@ public class SignShopPlayer {
     private String sPlayername = "";
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
 
-    private SignShopPlayer() {
+    public SignShopPlayer() {
 
     }
 
