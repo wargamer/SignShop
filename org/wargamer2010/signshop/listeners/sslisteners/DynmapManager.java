@@ -1,7 +1,10 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
@@ -26,9 +29,13 @@ public class DynmapManager implements Listener {
     private DynmapAPI dynmapAPI = null;
     private MarkerAPI markerAPI = null;
     private MarkerSet ms = null;
+    private MarkerIcon mi = null;
 
     private static String MarkerSetName = "SignShopMarkers";
     private static String MarkerSetLabel = "SignShop Marker Set";
+    private static String Filename = "signshopsign.png";
+    private static String MarkerName = "signshop_icon_555";
+    private static String MarkerLabel = "SignShop";
 
     public DynmapManager() {
         init();
@@ -49,6 +56,19 @@ public class DynmapManager implements Listener {
             return;
         }
 
+        try {
+            if(markerAPI.getMarkerIcon(MarkerName) == null) {
+                InputStream in = getClass().getResourceAsStream("/" + Filename);
+                if(in.available() > 0) {
+                    mi = markerAPI.createMarkerIcon(MarkerName, MarkerLabel, in);
+                }
+            } else {
+                mi = markerAPI.getMarkerIcon(MarkerName);
+            }
+        } catch (IOException ex) { }
+
+        if(mi == null)
+            mi = markerAPI.getMarkerIcon("sign");
 
         for(Seller seller : Storage.get().getSellers()) {
             ManageMarkerForSeller(seller, false);
@@ -62,7 +82,7 @@ public class DynmapManager implements Listener {
     private void ManageMarkerForSeller(Location loc, String owner, String world, boolean remove) {
         if(ms == null)
             return;
-        MarkerIcon markerIcon = markerAPI.getMarkerIcon("sign");
+
         String id = ("SignShop_" + signshopUtil.convertLocationToString(loc).replace(".", ""));
         String label = (owner + "'s SignShop");
 
@@ -74,11 +94,11 @@ public class DynmapManager implements Listener {
         }
 
         if(m == null) {
-            ms.createMarker(id, label, world, loc.getX(), loc.getY(), loc.getZ(), markerIcon, false);
+            ms.createMarker(id, label, world, loc.getX(), loc.getY(), loc.getZ(), mi, false);
         } else {
             m.setLocation(world, loc.getX(), loc.getY(), loc.getZ());
             m.setLabel(label);
-            m.setMarkerIcon(markerIcon);
+            m.setMarkerIcon(mi);
         }
     }
 
