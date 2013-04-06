@@ -22,9 +22,11 @@ import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
+import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.itemUtil;
 
 import org.wargamer2010.signshop.util.signshopUtil;
+import org.wargamer2010.signshop.util.versionUtil;
 public class SignShopItemMeta {
     private static final String listSeperator = "~";
     private static final String valueSeperator = "-";
@@ -38,14 +40,10 @@ public class SignShopItemMeta {
     }
 
     public static void init() {
-        try {
-            Class.forName("org.bukkit.inventory.meta.ItemMeta");
-        } catch (ClassNotFoundException ex) {
-            legacy = true;
+        legacy = (versionUtil.getBukkitVersionType() == SSBukkitVersion.Pre145);
+        if(legacy)
             return;
-        }
-
-
+        
         SSDatabase db = new SSDatabase(filename);
 
         try {

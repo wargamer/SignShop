@@ -29,6 +29,8 @@ import org.wargamer2010.signshop.metrics.setupMetrics;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.TimeManager;
+import org.wargamer2010.signshop.util.SSBukkitVersion;
+import org.wargamer2010.signshop.util.versionUtil;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
@@ -53,11 +55,11 @@ public class SignShop extends JavaPlugin{
 
     //Logging
     public void log(String message, Level level,int tag) {
-        if(!message.isEmpty())
+        if(message != null && !message.trim().isEmpty())
             logger.log(level,("[SignShop] ["+tag+"] " + message));
     }
     public static void log(String message, Level level) {
-        if(!message.isEmpty())
+        if(message != null && !message.trim().isEmpty())
             logger.log(level,("[SignShop] " + message));
     }
     public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
@@ -93,8 +95,18 @@ public class SignShop extends JavaPlugin{
         }
     }
 
+    private void DisableSignShop() {
+        PluginManager pm = Bukkit.getServer().getPluginManager();
+        pm.disablePlugin(this);
+    }
+
     @Override
     public void onEnable() {
+        if(versionUtil.getBukkitVersionType() == SSBukkitVersion.Unknown) {
+            DisableSignShop();
+            return;
+        }
+
         // Migrate configs from old directory
         this.checkOldDir();
         if(!this.getDataFolder().exists()) {
@@ -150,7 +162,7 @@ public class SignShop extends JavaPlugin{
             registerSSListeners();
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         } else {
-            log("v" + pdfFile.getVersion() + " Disabled", Level.INFO);
+            DisableSignShop();
         }
     }
 
@@ -203,6 +215,8 @@ public class SignShop extends JavaPlugin{
     }
 
     private void closeHandlers() {
+        if(transactionlogger == null || transactionlogger.getHandlers() == null)
+            return;
         Handler[] handlers = transactionlogger.getHandlers();
         for(int i = 0; i < handlers.length; i++)
             handlers[i].close();
@@ -211,7 +225,8 @@ public class SignShop extends JavaPlugin{
     @Override
     public void onDisable() {
         closeHandlers();
-        store.SafeSave();
+        if(store != null)
+            store.SafeSave();
         log("Disabled", Level.INFO);
     }
 
