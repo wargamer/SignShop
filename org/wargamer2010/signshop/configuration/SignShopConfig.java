@@ -160,6 +160,7 @@ public class SignShopConfig {
         safeAddLinkeable("TRAPPED_CHEST", "chest");
         safeAddLinkeable("DROPPER", "dropper");
         safeAddLinkeable("HOPPER", "hopper");
+        safeAddLinkeable("HOPPER_MINECART", "hopper");
         safeAddLinkeable("ANVIL", "anvil");
         safeAddLinkeable("DISPENSER", "dispenser");
         safeAddLinkeable("FURNACE", "furnace");
