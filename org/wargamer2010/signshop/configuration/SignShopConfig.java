@@ -41,7 +41,7 @@ public class SignShopConfig {
     private static SignShop instance = null;
 
     //Configurables
-    private FileConfiguration config;
+    private static FileConfiguration config;
     private static int MaxSellDistance = 0;
     private static int MaxShopsPerPerson = 0;
     private static int ShopCooldown = 0;
@@ -68,11 +68,8 @@ public class SignShopConfig {
     private static Material updateMaterial = Material.getMaterial("INK_SACK");
     private static Material destroyMaterial = Material.getMaterial("IRON_HOE");
 
+    private SignShopConfig() {
 
-    public SignShopConfig() {
-        instance = SignShop.getInstance();
-        preferedLanguage = "";
-        Languages = "english";
     }
 
     private static List<String> getOrderedListFromArray(String[] array) {
@@ -83,7 +80,8 @@ public class SignShopConfig {
         return list;
     }
 
-    public void init() {
+    public static void init() {
+        instance = SignShop.getInstance();
         initConfig();
         Languages = Languages.replace(baseLanguage, "config");
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
@@ -128,7 +126,7 @@ public class SignShopConfig {
         setupLinkables();
     }
 
-    private void setupHooks() {
+    private static void setupHooks() {
         HookManager.addHook("LWC");
         HookManager.addHook("Lockette");
         HookManager.addHook("WorldGuard");
@@ -139,7 +137,7 @@ public class SignShopConfig {
         HookManager.addHook("PlotMe");
     }
 
-    private void setupSpecialsOps() {
+    private static void setupSpecialsOps() {
         SpecialsOps.add("convertChestshop");
         SpecialsOps.add("copySign");
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
@@ -149,12 +147,12 @@ public class SignShopConfig {
         SpecialsOps.add("linkAdditionalBlocks");
     }
 
-    private void safeAddLinkeable(String sName, String sGroup) {
+    private static void safeAddLinkeable(String sName, String sGroup) {
         if(Material.getMaterial(sName) != null)
             LinkableMaterials.put(Material.getMaterial(sName), sGroup);
     }
 
-    private void setupLinkables() {
+    private static void setupLinkables() {
         LinkableMaterials = new HashMap<Material, String>();
         safeAddLinkeable("CHEST", "chest");
         safeAddLinkeable("TRAPPED_CHEST", "chest");
@@ -176,7 +174,7 @@ public class SignShopConfig {
         safeAddLinkeable("WOODEN_DOOR", "door");
     }
 
-    private void initConfig() {
+    private static void initConfig() {
         String filename = "config.yml";
         FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);
         if(ymlThing == null)
@@ -211,10 +209,10 @@ public class SignShopConfig {
         if(ChunkLoadRadius > 50 || ChunkLoadRadius < 0)
             ChunkLoadRadius = 3;
 
-        this.config = ymlThing;
+        config = ymlThing;
     }
 
-    private Material getMaterial(String mat, Material defaultmat) {
+    private static Material getMaterial(String mat, Material defaultmat) {
         Material temp;
         try {
             Integer ID = Integer.parseInt(mat);
@@ -230,7 +228,7 @@ public class SignShopConfig {
         return temp;
     }
 
-    private void setupOperations() {
+    private static void setupOperations() {
         setupOperations(configUtil.fetchStringStringHashMap("signs", config));
     }
 
@@ -295,11 +293,11 @@ public class SignShopConfig {
         }
     }
 
-    private String opListToString(List<String> operations) {
+    private static String opListToString(List<String> operations) {
         return signshopUtil.implode(operations.toArray(new String[operations.size()]), ",");
     }
 
-    private void saveConfig() {
+    private static void saveConfig() {
         File tempFile = new File(SignShop.getInstance().getDataFolder(), "config.yml");
         try {
             config.save(tempFile);
@@ -308,7 +306,7 @@ public class SignShopConfig {
         }
     }
 
-    private String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
+    private static String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
         for(Map.Entry<String, String> entry : map.entrySet()) {
             if(entry.getKey().equalsIgnoreCase(lowercased))
                 return entry.getKey();
@@ -316,7 +314,7 @@ public class SignShopConfig {
         return "";
     }
 
-    private void fixIncompleOperations() {
+    private static void fixIncompleOperations() {
         if(!fixIncompleteOperations)
             return;
         HashMap<String,String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config, true);
@@ -344,7 +342,7 @@ public class SignShopConfig {
             saveConfig();
     }
 
-    private void closeStream(Closeable in) {
+    private static void closeStream(Closeable in) {
         if(in == null)
             return;
         try {
@@ -355,8 +353,8 @@ public class SignShopConfig {
     }
 
 
-    private void copyFileFromJar(String filename, Boolean delete) {
-        InputStream in = getClass().getResourceAsStream("/" + filename);
+    private static void copyFileFromJar(String filename, Boolean delete) {
+        InputStream in = SignShopConfig.class.getResourceAsStream("/" + filename);
         File file = new File(instance.getDataFolder(), filename);
         OutputStream os = null;
         if(file.exists() && delete) {
@@ -509,7 +507,7 @@ public class SignShopConfig {
         return message;
     }
 
-    private void setupBlacklist() {
+    private static void setupBlacklist() {
         List<String> tempList = config.getStringList("Blacklisted_items");
         BlacklistedItems = new LinkedList<Integer>();
         for(String item : tempList) {
