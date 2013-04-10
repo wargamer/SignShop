@@ -43,7 +43,6 @@ public class SignShop extends JavaPlugin{
 
     //Statics
     private static Storage store;
-    private static SignShopConfig SignShopConfig;
     private static TimeManager manager = null;
 
     //Permissions
@@ -65,7 +64,7 @@ public class SignShop extends JavaPlugin{
     public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
         if(SignShopConfig.getTransactionLog() && !items.isEmpty()) {
             String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + items + ", Price: " + Price);
-            transactionlogger.log(Level.FINER, message);
+            transactionlogger.log(Level.INFO, message);
         }
     }
 
@@ -121,7 +120,6 @@ public class SignShop extends JavaPlugin{
         else
             log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
 
-        SignShopConfig = new SignShopConfig();
         SignShopConfig.init();
         SignShopBooks.init();
         PlayerMetadata.init();
@@ -132,16 +130,20 @@ public class SignShop extends JavaPlugin{
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
 
-        try {
-            FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
-            TransferFormatter formatter = new TransferFormatter();
-            fh.setFormatter(formatter);
-            fh.setLevel(Level.FINEST);
-            transactionlogger.addHandler(fh);
-            transactionlogger.setLevel(Level.FINEST);
-            logger.setUseParentHandlers(false);
-        } catch(IOException ex) {
-            log("Failed to create transaction log", Level.INFO);
+        if(SignShopConfig.getTransactionLog()) {
+            try {
+                FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
+                TransferFormatter formatter = new TransferFormatter();
+                fh.setFormatter(formatter);
+                fh.setLevel(Level.FINEST);
+                transactionlogger.addHandler(fh);
+                transactionlogger.setLevel(Level.INFO);
+                // logger.setUseParentHandlers(false);
+                transactionlogger.setParent(logger);
+                transactionlogger.setUseParentHandlers(false);
+            } catch(IOException ex) {
+                log("Failed to create transaction log", Level.INFO);
+            }
         }
 
         setupVault();
@@ -268,10 +270,6 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
-    public static Logger getMainLogger() {
-        return logger;
-    }
-
     public static boolean usePermissions() {
         return USE_PERMISSIONS;
     }
@@ -279,7 +277,6 @@ public class SignShop extends JavaPlugin{
     public static TimeManager getTimeManager() {
         return manager;
     }
-
 
     private class TransferFormatter extends Formatter {
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
