@@ -40,7 +40,7 @@ public class Seller {
         if(pMiscProps != null)
             miscProps.putAll(pMiscProps);
         if(save)
-            storeMeta();
+            storeMeta(isItems);
     }
 
     public ItemStack[] getItems() {
@@ -107,10 +107,10 @@ public class Seller {
         }
     }
 
-    private void storeMeta() {
-        if(isItems == null)
+    public static void storeMeta(ItemStack[] stacks) {
+        if(stacks == null)
             return;
-        for(ItemStack stack : isItems) {
+        for(ItemStack stack : stacks) {
             if(itemUtil.isWriteableBook(stack)) {
                 SignShopBooks.addBook(stack);
             }
