@@ -43,7 +43,7 @@ public class SignShopItemMeta {
         legacy = (versionUtil.getBukkitVersionType() == SSBukkitVersion.Pre145);
         if(legacy)
             return;
-        
+
         SSDatabase db = new SSDatabase(filename);
 
         try {
@@ -102,10 +102,14 @@ public class SignShopItemMeta {
     }
 
     private static String getDisplayName(ItemStack stack) {
+        return getDisplayName(stack, ChatColor.WHITE);
+    }
+
+    private static String getDisplayName(ItemStack stack, ChatColor color) {
         if(stack.getItemMeta().hasDisplayName())
-            return (ChatColor.ITALIC + "\"" + stack.getItemMeta().getDisplayName() + "\"" + ChatColor.RESET);
+            return ("\"" + color + ChatColor.ITALIC + stack.getItemMeta().getDisplayName() + ChatColor.RESET + ChatColor.WHITE + "\"");
         else
-            return itemUtil.formatData(stack.getData(), stack.getDurability());
+            return (color + itemUtil.formatData(stack.getData(), stack.getDurability()) + ChatColor.WHITE);
     }
 
     public static String getName(ItemStack stack) {
@@ -119,7 +123,7 @@ public class SignShopItemMeta {
             if(type == MetaType.EnchantmentStorage) {
                 EnchantmentStorageMeta enchantmeta = (EnchantmentStorageMeta) meta;
                 if(enchantmeta.hasStoredEnchants())
-                    return (ChatColor.DARK_PURPLE + getDisplayName(stack) + ChatColor.WHITE + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
+                    return (getDisplayName(stack, ChatColor.DARK_PURPLE) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
             } else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
                 return (itemUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack));
@@ -144,9 +148,7 @@ public class SignShopItemMeta {
 
                 boolean first = true;
                 StringBuilder namebuilder = new StringBuilder();
-                namebuilder.append(ChatColor.DARK_PURPLE);
-                namebuilder.append(getDisplayName(stack));
-                namebuilder.append(ChatColor.WHITE);
+                namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
 
                 Collection<PotionEffect> effects = null;
                 Potion pot = null;
@@ -206,9 +208,7 @@ public class SignShopItemMeta {
                 FireworkMeta fireworkmeta = (FireworkMeta) meta;
 
                 StringBuilder namebuilder = new StringBuilder();
-                namebuilder.append(ChatColor.DARK_PURPLE);
-                namebuilder.append(getDisplayName(stack));
-                namebuilder.append(ChatColor.WHITE);
+                namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
 
                 if(fireworkmeta.hasEffects()) {
                     namebuilder.append(" (");

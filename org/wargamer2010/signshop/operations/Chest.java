@@ -57,6 +57,9 @@ public class Chest implements SignShopOperation {
         containables.add(bHolder);
         ssArgs.getContainables().set(containables);
 
+        // Since we'll be requesting the MetaID before the Seller is created, we need to register the items here
+        Seller.storeMeta(itemUtil.getAllItemStacksForContainables(containables));
+
         return true;
     }
 

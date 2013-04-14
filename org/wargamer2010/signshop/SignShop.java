@@ -138,7 +138,6 @@ public class SignShop extends JavaPlugin{
                 fh.setLevel(Level.FINEST);
                 transactionlogger.addHandler(fh);
                 transactionlogger.setLevel(Level.INFO);
-                // logger.setUseParentHandlers(false);
                 transactionlogger.setParent(logger);
                 transactionlogger.setUseParentHandlers(false);
             } catch(IOException ex) {
