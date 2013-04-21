@@ -250,7 +250,7 @@ public class signshopUtil {
 
     public static String validateRestrictSign(List<Block> clickedBlocks, SignShopPlayer player) {
         List<String> blocklocations = new LinkedList<String>();
-        List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
+        List<String> permGroups = Arrays.asList(Vault.getPermission().getGroups());
         for(Block restrictedsign : clickedBlocks) {
             if(itemUtil.clickedSign(restrictedsign)) {
                 Sign sign = (Sign)restrictedsign.getState();
@@ -276,7 +276,7 @@ public class signshopUtil {
         List<String> blocklocations = new LinkedList<String>();
         Map<String, String> messageParts = new LinkedHashMap<String, String>();
 
-        if(!Vault.economy.hasBankSupport()) {
+        if(!Vault.getEconomy().hasBankSupport()) {
             player.sendMessage(SignShopConfig.getError("no_bank_support", messageParts));
             return "";
         }
@@ -285,9 +285,9 @@ public class signshopUtil {
             if(itemUtil.clickedSign(banksign)) {
                 Sign sign = (Sign)banksign.getState();
                 String bank = sign.getLine(1);
-                if(!Vault.economy.bankBalance(bank).transactionSuccess())
+                if(!Vault.getEconomy().bankBalance(bank).transactionSuccess())
                     player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
-                else if(!Vault.economy.isBankOwner(bank, player.getName()).transactionSuccess() && !Vault.economy.isBankMember(bank, player.getName()).transactionSuccess()
+                else if(!Vault.getEconomy().isBankOwner(bank, player.getName()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getName()).transactionSuccess()
                         && !player.isOp()) {
                     messageParts.put("!bank", bank);
                     player.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", messageParts));
@@ -308,7 +308,7 @@ public class signshopUtil {
         List<Block> blocks = signshopUtil.getSignsFromMisc(seller, "restrictedsigns");
         if(blocks.isEmpty())
             return false;
-        List<String> permGroups = Arrays.asList(Vault.permission.getGroups());
+        List<String> permGroups = Arrays.asList(Vault.getPermission().getGroups());
         List<String> playerGroups = new LinkedList<String>();
         for(Block restrictedsign : blocks) {
             if(itemUtil.clickedSign(restrictedsign)) {
@@ -323,7 +323,7 @@ public class signshopUtil {
             }
         }
         for(String group : playerGroups) {
-            if(Vault.permission.playerInGroup(player.getPlayer(), group)) {
+            if(Vault.getPermission().playerInGroup(player.getPlayer(), group)) {
                 return false;
             }
         }
@@ -492,5 +492,14 @@ public class signshopUtil {
             spacesplit[i] = new String(arr);
         }
         return implode(spacesplit, " ");
+    }
+
+    public static boolean hasOPForCommand(SignShopPlayer player) {
+        if(player != null && !player.isOp()) {
+            player.sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
+            return false;
+        }
+
+        return true;
     }
 }

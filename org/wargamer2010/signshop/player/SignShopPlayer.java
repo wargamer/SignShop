@@ -109,7 +109,7 @@ public class SignShopPlayer {
         if(isOpRaw())
             return true;
         String fullperm = (perm.isEmpty() ? "SignShop.SuperAdmin" : "SignShop.SuperAdmin." + perm);
-        if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, fullperm.toLowerCase()))
+        if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, sPlayername, fullperm.toLowerCase()))
             return true;
         return false;
     }
@@ -130,7 +130,7 @@ public class SignShopPlayer {
     }
 
     public boolean hasPerm(String perm, World world, Boolean OPOperation) {
-        if(Vault.permission == null)
+        if(Vault.getPermission() == null)
             return false;
         if(sPlayername.isEmpty())
             return true;
@@ -144,7 +144,7 @@ public class SignShopPlayer {
         if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
         // Using Permissions so check his permissions and restore his OP if he has it
-        else if(SignShop.usePermissions() && Vault.permission.playerHas(world, sPlayername, perm.toLowerCase())) {
+        else if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, sPlayername, perm.toLowerCase())) {
             setOp(isOP);
             return true;
         // Not using Permissions but he is OP, so he's allowed
@@ -166,46 +166,46 @@ public class SignShopPlayer {
     public boolean hasMoney(float amount) {
         if(isNothing(amount))
             return true;
-        if(Vault.economy == null)
+        if(Vault.getEconomy() == null)
             return false;
         if(sPlayername.isEmpty())
             return true;
         else
-            return Vault.economy.has(sPlayername, amount);
+            return Vault.getEconomy().has(sPlayername, amount);
     }
 
     public boolean canHaveMoney(float amount) {
         if(isNothing(amount))
             return true;
-        if(Vault.economy == null)
+        if(Vault.getEconomy() == null)
             return false;
         if(sPlayername.isEmpty())
             return true;
         EconomyResponse response;
         try {
-            response = Vault.economy.depositPlayer(sPlayername, amount);
+            response = Vault.getEconomy().depositPlayer(sPlayername, amount);
         } catch(java.lang.RuntimeException ex) {
             response = new EconomyResponse(0, 0, EconomyResponse.ResponseType.FAILURE, "");
         }
 
         if(response.type == EconomyResponse.ResponseType.SUCCESS)
-            Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
+            Vault.getEconomy().withdrawPlayer(sPlayername, Math.abs(amount));
         else
             return false;
         return true;
     }
 
     public boolean mutateMoney(float amount) {
-        if(Vault.economy == null)
+        if(Vault.getEconomy() == null)
             return false;
         if(sPlayername.isEmpty() || isNothing(amount))
             return true;
         EconomyResponse response;
         try {
             if(amount > 0.0)
-                response = Vault.economy.depositPlayer(sPlayername, amount);
+                response = Vault.getEconomy().depositPlayer(sPlayername, amount);
             else if(amount < 0.0)
-                response = Vault.economy.withdrawPlayer(sPlayername, Math.abs(amount));
+                response = Vault.getEconomy().withdrawPlayer(sPlayername, Math.abs(amount));
             else
                 return true;
         } catch(java.lang.RuntimeException ex) {
@@ -237,7 +237,7 @@ public class SignShopPlayer {
         if(ssPlayer == null)
             return sGroups;
         try {
-            sGroups = Vault.permission.getPlayerGroups(ssPlayer);
+            sGroups = Vault.getPermission().getPlayerGroups(ssPlayer);
         } catch(UnsupportedOperationException UnsupportedEX) {
             return sGroups;
         }
@@ -250,7 +250,7 @@ public class SignShopPlayer {
         boolean bBuyorSell = true;
         boolean first = true;
 
-        if(Vault.permission == null || ssPlayer == null)
+        if(Vault.getPermission() == null || ssPlayer == null)
             return fPricemod;
         String[] sGroups = getPlayerGroups();
         if(sGroups == null) return fPricemod;
@@ -278,7 +278,7 @@ public class SignShopPlayer {
     }
 
     public int reachedMaxShops() {
-        if(Vault.permission == null || sPlayername.isEmpty())
+        if(Vault.getPermission() == null || sPlayername.isEmpty())
             return 0;
         if(hasPerm("SignShop.ignoremax", true))
             return 0;

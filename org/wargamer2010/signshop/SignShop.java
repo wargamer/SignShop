@@ -23,6 +23,7 @@ import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
+import org.wargamer2010.signshop.commands.CommandDispatcher;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.metrics.setupMetrics;
@@ -124,6 +125,7 @@ public class SignShop extends JavaPlugin{
         SignShopBooks.init();
         PlayerMetadata.init();
         SignShopItemMeta.init();
+        CommandDispatcher.init();
         fixStackSize();
 
         //Create a storage locker for shops
@@ -151,7 +153,7 @@ public class SignShop extends JavaPlugin{
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(loginListener, this);
 
-        if(Vault.vaultFound) {
+        if(Vault.isVaultFound()) {
             // Register events
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
@@ -172,32 +174,23 @@ public class SignShop extends JavaPlugin{
         String commandName = cmd.getName().toLowerCase();
         if(!commandName.equalsIgnoreCase("signshop"))
             return true;
-        if(args.length != 1)
-            return false;
-        if((sender instanceof Player) && !SignShopPlayer.isOp((Player)sender)) {
-            ((Player)sender).sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
-            return true;
+        SignShopPlayer player = null;
+        if(sender instanceof Player)
+            player = new SignShopPlayer((Player) sender);
+        String[] remainingArgs;
+        String subCommandName;
+        if(args.length == 0) {
+            subCommandName = "";
+            remainingArgs = new String[0];
+        } else {
+            subCommandName = args[0].toLowerCase();
+            remainingArgs = new String[args.length-1];
+            if(args.length > 1) {
+                for(int i = 1; i < args.length; i++)
+                    remainingArgs[i-1] = args[i].toLowerCase();
+            }
         }
-        if(args[0].equalsIgnoreCase("reload")) {
-            Bukkit.getServer().getPluginManager().disablePlugin(this);
-            Bukkit.getServer().getPluginManager().enablePlugin(this);
-            SignShop.log("Reloaded", Level.INFO);
-            if((sender instanceof Player))
-                ((Player)sender).sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
-        } else if(args[0].equalsIgnoreCase("stats") || args[0].equalsIgnoreCase("version") || args[0].equalsIgnoreCase("help")) {
-            PluginDescriptionFile pdfFile = this.getDescription();
-            String message = "Amount of Shops: " + store.shopCount() + "\n"
-                    + "SignShop version: " + pdfFile.getVersion() + "\n"
-                    + "Vault version: " + (vault == null ? "Unknown" : vault.getVersion()) + "\n"
-                    + "SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "") + "\n"
-                    + "SignShop Home: http://tiny.cc/signshop" + "\n";
-            if((sender instanceof Player))
-                ((Player)sender).sendMessage(ChatColor.GREEN + message);
-            else
-                SignShop.log(message, Level.INFO);
-        } else
-            return false;
-        return true;
+        return CommandDispatcher.handle(subCommandName, remainingArgs, player);
     }
 
 
@@ -232,10 +225,10 @@ public class SignShop extends JavaPlugin{
     }
 
     private void setupVault() {
-        vault = new Vault(getServer());
+        vault = new Vault();
         vault.setupChat();
         Boolean vault_Perms = vault.setupPermissions();
-        if(!vault_Perms || Vault.permission.getName().equals("SuperPerms")) {
+        if(!vault_Perms || Vault.getPermission().getName().equals("SuperPerms")) {
             log("Vault's permissions not found, defaulting to OP.", Level.INFO);
             USE_PERMISSIONS = false;
         } else

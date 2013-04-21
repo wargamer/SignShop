@@ -45,12 +45,12 @@ public class runCommand implements SignShopOperation {
                         ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
                     } else if(ssArgs.isOperationParameter("asUser")) {
                         if(!ssPlayer.hasPerm("*", true))
-                            Vault.permission.playerAdd(ssPlayer.getPlayer(), "*");
+                            Vault.getPermission().playerAdd(ssPlayer.getPlayer(), "*");
                         else
                             hasStartPerm = true;
                         ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
                         if(!hasStartPerm)
-                            Vault.permission.playerRemove(ssPlayer.getPlayer(), "*");
+                            Vault.getPermission().playerRemove(ssPlayer.getPlayer(), "*");
                     } else {
                         ok = Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), sCommand);
                     }
