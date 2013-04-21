@@ -11,10 +11,10 @@ public class economyUtil {
     public static String formatMoney(Float money) {
         if(money.isNaN() || money.isInfinite())
             return "0.00";
-        if(Vault.economy == null)
+        if(Vault.getEconomy() == null)
             return Float.toString(money);
         else
-            return Vault.economy.format(money.doubleValue());
+            return Vault.getEconomy().format(money.doubleValue());
     }
 
     public static float parsePrice(String line) {

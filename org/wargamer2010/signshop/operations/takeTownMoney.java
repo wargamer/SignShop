@@ -43,7 +43,7 @@ public class takeTownMoney implements SignShopOperation {
                         return false;
                     }
                 }
-                if (!Vault.economy.has(town.getEconomyName(), fPrice)) {
+                if (!Vault.getEconomy().has(town.getEconomyName(), fPrice)) {
                     ssPlayer.sendMessage(SignShopConfig.getError("no_shop_money", ssArgs.getMessageParts()));
                     return false;
                 }
@@ -78,7 +78,7 @@ public class takeTownMoney implements SignShopOperation {
                 town = resident.getTown();
 
                 // take the money from the town bank account
-                response = Vault.economy.withdrawPlayer(town.getEconomyName(), fPrice);
+                response = Vault.getEconomy().withdrawPlayer(town.getEconomyName(), fPrice);
                 if (response.type != EconomyResponse.ResponseType.SUCCESS) {
                     ssPlayer.sendMessage(SignShopConfig.getError("towny_insufficient_funds", ssArgs.getMessageParts()));
                     return false;

@@ -28,37 +28,37 @@ public class BankTransaction implements Listener {
             return;
         if(event.getShop() == null || !event.getShop().getMisc().containsKey("banksigns"))
             return;
-        
-        if(!Vault.economy.hasBankSupport()) {
+
+        if(!Vault.getEconomy().hasBankSupport()) {
             event.getPlayer().sendMessage("The current Economy plugin offers no Bank support!");
             return;
         }
-        
+
         List<String> banks = getBanks(event.getShop());
         if(banks.isEmpty())
             return;
-        
+
         List<String> ownedBanks = new LinkedList<String>();
         SignShopPlayer ssOwner = new SignShopPlayer(event.getShop().getOwner());
         for(String bank : banks) {
             String owner = event.getShop().getOwner();
-            if(Vault.economy.isBankOwner(bank, owner).transactionSuccess() || Vault.economy.isBankMember(bank, owner).transactionSuccess() 
+            if(Vault.getEconomy().isBankOwner(bank, owner).transactionSuccess() || Vault.getEconomy().isBankMember(bank, owner).transactionSuccess()
                     || ssOwner.isOp(event.getPlayer().getWorld())) {
                 ownedBanks.add(bank);
             } else {
-                event.setMessagePart("!bank", bank);                
+                event.setMessagePart("!bank", bank);
                 ssOwner.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", event.getMessageParts()));
             }
         }
-        
+
         if(ownedBanks.isEmpty()) {
             event.setHandled(true);
             event.setCancelled(true);
             event.getPlayer().sendMessage(SignShopConfig.getError("no_bank_available", event.getMessageParts()));
             return;
         }
-            
-        
+
+
         if(event.isCheckOnly()) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
@@ -67,11 +67,11 @@ public class BankTransaction implements Listener {
                 case TakeFromOwner:
                     boolean hasTheMoney = true;
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.economy.bankHas(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getAmount());
                         if(response.transactionSuccess()) {
                             hasTheMoney = true;
                             break;
-                        }                        
+                        }
                     }
                     if(!hasTheMoney)
                         event.setCancelled(true);
@@ -79,17 +79,17 @@ public class BankTransaction implements Listener {
                 case GiveToPlayer:
                     return;
                 case TakeFromPlayer:
-                    return;                
+                    return;
                 case Unknown:
                     return;
             }
         } else {
             boolean bTransaction = false;
-            
+
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.economy.bankDeposit(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankDeposit(bank, event.getAmount());
                         if(response.transactionSuccess()) {
                             bTransaction = true;
                             break;
@@ -98,9 +98,9 @@ public class BankTransaction implements Listener {
                 break;
                 case TakeFromOwner:
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.economy.bankHas(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getAmount());
                         if(response.transactionSuccess()) {
-                            EconomyResponse second = Vault.economy.bankWithdraw(bank, event.getAmount());
+                            EconomyResponse second = Vault.getEconomy().bankWithdraw(bank, event.getAmount());
                             if(second.transactionSuccess()) {
                                 bTransaction = true;
                                 break;
@@ -115,25 +115,25 @@ public class BankTransaction implements Listener {
                 case Unknown:
                     return;
             }
-            
+
             if(!bTransaction) {
                 event.getPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
                 event.setCancelled(true);
             }
         }
-        
+
         event.setHandled(true);
-    }    
-    
+    }
+
     private static List<String> getBanks(Seller seller) {
-        List<Block> bankSigns = getSignsFromMisc(seller, "banksigns");        
+        List<Block> bankSigns = getSignsFromMisc(seller, "banksigns");
         List<String> banks = new LinkedList<String>();
         if(!bankSigns.isEmpty()) {
             for(Block banksign : bankSigns) {
                 if(itemUtil.clickedSign(banksign)) {
                     Sign sign = (Sign) banksign.getState();
                     if(sign.getLine(1) != null)
-                        banks.add(sign.getLine(1));             
+                        banks.add(sign.getLine(1));
                 }
             }
         }

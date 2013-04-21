@@ -40,7 +40,7 @@ public class giveTownMoney implements SignShopOperation {
                         return false;
                     }
                 }
-                if (Vault.economy == null) {
+                if (Vault.getEconomy() == null) {
                     ssPlayer.sendMessage("Error with the economy, tell the System Administrator to install Vault properly.");
                     return false;
                 } else if (town.getEconomyName().isEmpty()) {
@@ -77,7 +77,7 @@ public class giveTownMoney implements SignShopOperation {
                         throw new TownyException(String.format(TownySettings.getLangString("msg_err_deposit_capped"), bankcap));
                 }
 
-                EconomyResponse response = Vault.economy.depositPlayer(town.getEconomyName(), fPrice);
+                EconomyResponse response = Vault.getEconomy().depositPlayer(town.getEconomyName(), fPrice);
                 if (response.type != EconomyResponse.ResponseType.SUCCESS) {
                     ssPlayer.sendMessage("Error depositing into shop owners account!");
                     return false;

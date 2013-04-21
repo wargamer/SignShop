@@ -18,6 +18,8 @@ import java.io.InputStream;
 import java.io.Closeable;
 import java.io.OutputStream;
 import java.io.FileOutputStream;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -148,8 +150,9 @@ public class SignShopConfig {
     }
 
     private static void safeAddLinkeable(String sName, String sGroup) {
-        if(Material.getMaterial(sName) != null)
-            LinkableMaterials.put(Material.getMaterial(sName), sGroup);
+        Material mat = Material.getMaterial(sName);
+        if(mat != null && !LinkableMaterials.containsKey(mat))
+            LinkableMaterials.put(mat, sGroup);
     }
 
     private static void setupLinkables() {
@@ -172,6 +175,21 @@ public class SignShopConfig {
         safeAddLinkeable("STEP", "slab");
         safeAddLinkeable("JUKEBOX", "jukebox");
         safeAddLinkeable("WOODEN_DOOR", "door");
+        safeAddLinkeable("IRON_DOOR", "door");
+        safeAddLinkeable("IRON_DOOR_BLOCK", "door");
+    }
+
+    /**
+     * Register a material so that it can be linked and used for a shop
+     * The Alias is used when checking for DenyLink permission nodes (i.e. DenyLink.door)
+     *
+     * @param material Material to register
+     * @param alias Alias to use for the given material
+     */
+    public static void addLinkable(String material, String alias) {
+        if(material == null || material.isEmpty())
+            return;
+        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase());
     }
 
     private static void initConfig() {
@@ -431,6 +449,10 @@ public class SignShopConfig {
             return Operations.get(op);
         else
             return new LinkedList<String>();
+    }
+
+    public static Collection<String> getOperations() {
+        return Collections.unmodifiableCollection(Operations.keySet());
     }
 
     public static boolean registerOperation(String sName, List<String> blocks) {
