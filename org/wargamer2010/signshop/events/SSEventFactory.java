@@ -73,11 +73,14 @@ public class SSEventFactory {
     public static SSExpiredEvent generateExpiredEvent(IExpirable pExpirable) {
         return new SSExpiredEvent(pExpirable);
     }
-    
-    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, Float fPrice, SSMoneyEventType type, boolean pCheckOnly) {        
+
+    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, Float fPrice, SSMoneyEventType type, boolean pCheckOnly) {
         return new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
                                             Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
                                             signshopUtil.ApplyPriceMod(ssArgs),
+                                            ssArgs.getSign().get(),
+                                            ssArgs.getOperation().get(),
+                                            ssArgs.getItems().get(),
                                             type,
                                             ssArgs.getRawMessageParts(),
                                             pCheckOnly);

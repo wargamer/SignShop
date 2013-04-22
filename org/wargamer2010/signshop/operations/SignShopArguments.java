@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
+import java.applet.Applet;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -48,6 +49,7 @@ public class SignShopArguments {
         bSign.setSpecial(false);
         sOperation.setSpecial(false);
         bfBlockFace.setSpecial(false);
+        this.bPriceModApplied = false;
     }
 
     public static String seperator = "~";

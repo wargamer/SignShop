@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import java.util.Map;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
+import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -13,15 +14,22 @@ public class SSMoneyTransactionEvent extends SSEvent {
     private Block bBlock = null;
     private Seller seShop = null;
     private Float fAmount;
+    private Block bSign = null;
+    private String sOperation = "";
+    private ItemStack[] isItems = null;
     private SSMoneyEventType meType = SSMoneyEventType.Unknown;
     private boolean bCheckOnly = false;
     private boolean bHandled = false;
 
-    public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, Float pAmount, SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
+    public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, Float pAmount, Block pSign, String pOperation, ItemStack[] pItems,
+            SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
         super(pMessageParts);
-        ssPlayer = pPlayer;        
+        ssPlayer = pPlayer;
         seShop = pShop;
         fAmount = pAmount;
+        bSign = pSign;
+        sOperation = pOperation;
+        isItems = pItems;
         meType = pType;
         bCheckOnly = pCheckOnly;
     }
@@ -50,19 +58,35 @@ public class SSMoneyTransactionEvent extends SSEvent {
     public Float getAmount() {
         return fAmount;
     }
-    
+
+    public void setAmount(Float pAmount) {
+        fAmount = pAmount;
+    }
+
+    public Block getSign() {
+        return bSign;
+    }
+
+    public String getOperation() {
+        return sOperation;
+    }
+
+    public ItemStack[] getItems() {
+        return isItems;
+    }
+
     public SSMoneyEventType getTransactionType() {
         return meType;
     }
-    
+
     public boolean isCheckOnly() {
         return bCheckOnly;
     }
-    
+
     public boolean isHandled() {
         return bHandled;
     }
-    
+
     public void setHandled(boolean pHandled) {
         bHandled = pHandled;
     }
