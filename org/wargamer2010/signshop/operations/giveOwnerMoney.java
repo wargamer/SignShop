@@ -17,6 +17,7 @@ public class giveOwnerMoney implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getPrice().get(), SSMoneyEventType.GiveToOwner, true);
         SignShop.scheduleEvent(event);
+        ssArgs.getPrice().set(event.getAmount());
         return (!event.isCancelled() && event.isHandled());
     }
 
@@ -24,6 +25,7 @@ public class giveOwnerMoney implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         SSMoneyTransactionEvent event = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getPrice().get(), SSMoneyEventType.GiveToOwner, false);
         SignShop.scheduleEvent(event);
-        return (!event.isCancelled() && event.isHandled());        
+        ssArgs.getPrice().set(event.getAmount());
+        return (!event.isCancelled() && event.isHandled());
     }
 }

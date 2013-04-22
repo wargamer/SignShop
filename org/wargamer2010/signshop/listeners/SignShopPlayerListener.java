@@ -241,6 +241,8 @@ public class SignShopPlayerListener implements Listener {
             if(!bRequirementsOK)
                 return;
 
+            ssArgs.getPrice().set(pretransactevent.getPrice());
+
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
                 ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.getOperation().get(), ssArgs.getMessageParts()));
 
@@ -248,7 +250,6 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             ssArgs.reset();
-            ssArgs.getPrice().setRoot(pretransactevent.getPrice());
 
             for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
                 ssArgs.setOperationParameters(ssOperation.getValue());
