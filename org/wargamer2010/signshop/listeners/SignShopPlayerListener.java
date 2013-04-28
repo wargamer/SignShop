@@ -19,8 +19,10 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.block.SignChangeEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.commands.CommandDispatcher;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
@@ -38,6 +40,8 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopPlayerListener implements Listener {
+    private static final String helpPrefix = "help_";
+    private static final String anyHelp = "help_anyhelp";
 
     private Boolean runSpecialOperations(PlayerInteractEvent event) {
         Player player = event.getPlayer();
@@ -97,6 +101,36 @@ public class SignShopPlayerListener implements Listener {
                 clicks.mClicksPerPlayername.put(clickedPlayer.getName(), player);
             }
             event.setCancelled(true);
+        }
+    }
+
+    @EventHandler(priority = EventPriority.HIGH)
+    public void onPlayerSignChange(SignChangeEvent event) {
+        if(event.getPlayer() == null || !itemUtil.clickedSign(event.getBlock()))
+            return;
+        String[] oldLines = ((Sign) event.getBlock().getState()).getLines();
+        // Prevent the message from being shown when the top line remains the same
+        if(oldLines[0].equals(event.getLine(0)))
+            return;
+
+        String[] sLines = event.getLines();
+        String sOperation = signshopUtil.getOperation(sLines[0]);
+        if(SignShopConfig.getBlocks(sOperation).isEmpty())
+            return;
+
+        List<String> operation = SignShopConfig.getBlocks(sOperation);
+        if(signshopUtil.getSignShopOps(operation) == null)
+            return;
+
+        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+        if(SignShopConfig.getEnableTutorialMessages()) {
+            if(!ssPlayer.hasMeta(helpPrefix + sOperation.toLowerCase()) && !ssPlayer.hasMeta(anyHelp)) {
+                ssPlayer.setMeta(helpPrefix + sOperation.toLowerCase(), "1");
+                String[] args = new String[] {
+                    sOperation
+                };
+                CommandDispatcher.handle("sign", args, ssPlayer);
+            }
         }
     }
 

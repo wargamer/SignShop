@@ -63,6 +63,7 @@ public class SignShopConfig {
     private static boolean fixIncompleteOperations = true;
     private static boolean EnablePriceFromWorth = false;
     private static boolean EnableDynmapSupport = false;
+    private static boolean EnableTutorialMessages = true;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -218,6 +219,7 @@ public class SignShopConfig {
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
+        EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -634,6 +636,10 @@ public class SignShopConfig {
 
     public static Boolean getEnableDynmapSupport() {
         return EnableDynmapSupport;
+    }
+
+    public static Boolean getEnableTutorialMessages() {
+        return EnableTutorialMessages;
     }
 
     public static Material getLinkMaterial() {

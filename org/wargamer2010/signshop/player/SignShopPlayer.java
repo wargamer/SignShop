@@ -334,6 +334,10 @@ public class SignShopPlayer {
         return meta.removeMeta(key);
     }
 
+    public boolean removeMetaByPrefix(String keyPrefix) {
+        return meta.removeMetakeyLike(keyPrefix + "%");
+    }
+
     public ItemStack getItemInHand() {
         if(ssPlayer == null)
             return null;

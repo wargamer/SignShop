@@ -82,4 +82,17 @@ public class PlayerMetadata {
         }
     }
 
+    public boolean removeMetakeyLike(String key) {
+        SSDatabase metadb = new SSDatabase(filename);
+        try {
+            Map<Integer, Object> params = new LinkedHashMap<Integer, Object>();
+            params.put(1, plugin.getName());
+            params.put(2, ssPlayer.getName());
+            params.put(3, key);
+            return (metadb.runStatement("DELETE FROM PlayerMeta WHERE Plugin = ? AND Playername = ? AND Metakey LIKE ?", params, false) != null);
+        } finally {
+            metadb.close();
+        }
+    }
+
 }

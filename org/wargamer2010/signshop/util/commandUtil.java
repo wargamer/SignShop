@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
+import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -71,16 +72,24 @@ public class commandUtil {
         StringBuilder builder = new StringBuilder(200);
         builder.append("Available Commands: ");
         List<String> commands = new LinkedList<String>();
-        commands.add("help");
-        commands.add("list (Gives a list of signs)");
-        commands.add("sign SIGN (Replace SIGN with a type of sign)");
-        commands.add("reload (Reloads the signshop configs)");
-        commands.add("[about|version] (Gives version information about signshop)");
+        commands.add("help~");
+        commands.add("list~(Gives a list of signs)");
+        commands.add("sign SIGN~(Replace SIGN with a type of sign)");
+        commands.add("reload~(Reloads the signshop configs)");
+        commands.add("[about|version]~(Gives version information about signshop)");
+        commands.add("tutorial [on|off]~(Toggles the help message on sign creation)");
         for(String comm : commands) {
+            builder.append(ChatColor.GOLD);
             builder.append("\n/");
             builder.append(RootCommand);
             builder.append(" ");
-            builder.append(comm);
+            String[] parts = comm.split("~");
+            builder.append(parts[0]);
+            if(parts.length > 1) {
+                builder.append(" ");
+                builder.append(ChatColor.WHITE);
+                builder.append(parts[1]);
+            }
         }
         builder.append("\n");
         return builder.toString();

@@ -19,6 +19,7 @@ public class CommandDispatcher {
         handlers.put("version", StatsHandler.getInstance());
         handlers.put("about", StatsHandler.getInstance());
         handlers.put("reload", ReloadHandler.getInstance());
+        handlers.put("tutorial", TutorialHandler.getInstance());
         handlers.put("help", HelpHandler.getInstance());
         handlers.put("sign", HelpHandler.getInstance());
         handlers.put("list", HelpHandler.getInstance());
