@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.util;
 
+import java.lang.String;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -19,6 +20,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
@@ -392,7 +394,7 @@ public class signshopUtil {
         if(clickedSignShopMat(bClicked, ssPlayer)) {
             if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
                 clicks.mClicksPerLocation.remove(bClicked.getLocation());
-                ssPlayer.sendMessage("Removed stored location");
+                ssPlayer.sendMessage(SignShopConfig.getError("removed_location", null));
             } else {
                 SSLinkEvent event = SSEventFactory.generateLinkEvent(bClicked, ssPlayer, null);
                 SignShop.scheduleEvent(event);
@@ -400,7 +402,17 @@ public class signshopUtil {
                     return false;
                 else {
                     clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());
-                    ssPlayer.sendMessage("Stored location of " + itemUtil.formatData(bClicked.getState().getData()));
+                    Map<String, String> messageParts = new LinkedHashMap<String, String>();
+                    messageParts.put("!block", itemUtil.formatData(bClicked.getState().getData()));
+                    if(bClicked.getState() instanceof InventoryHolder) {
+                        List<Block> containables = new LinkedList<Block>();
+                        containables.add(bClicked);
+                        ItemStack[] allStacks = itemUtil.getAllItemStacksForContainables(containables);
+                        messageParts.put("!items", (allStacks.length == 0 ? "nothing" : itemUtil.itemStackToString(allStacks)));
+                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location_containable", messageParts));
+                    } else {
+                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location", messageParts));
+                    }
                 }
             }
             return true;
