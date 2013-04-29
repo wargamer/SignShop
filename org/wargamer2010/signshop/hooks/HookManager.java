@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HookManager {
-    private static HashMap<String, Plugin> hooks = new HashMap<String, Plugin>();
+    private static HashMap<Hook, Plugin> hooks = new HashMap<Hook, Plugin>();
 
     private HookManager() {
 
@@ -17,34 +17,40 @@ public class HookManager {
     public static Boolean addHook(String sName) {
         Plugin pHook = Bukkit.getServer().getPluginManager().getPlugin(sName);
         if(pHook != null) {
-            hooks.put(sName, pHook);
+            Hook hook = createHook(sName);
+            if(hook != null)
+                hooks.put(hook, pHook);
             return true;
         } else
             return false;
     }
 
+    private static Hook createHook(String hookName) {
+        String hookClassname = (hookName + "Hook");
+        try {
+            Class<?> fc = Class.forName("org.wargamer2010.signshop.hooks."+hookClassname);
+            return ((Hook)fc.newInstance());
+        } catch(ClassNotFoundException notfoundex) { }
+        catch(InstantiationException instex) { }
+        catch(IllegalAccessException illex) { }
+
+        return null;
+    }
+
     public static Plugin getHook(String sName) {
-        if(hooks.containsKey(sName))
-            return hooks.get(sName);
-        else
-            return null;
+        for(Map.Entry<Hook, Plugin> entry : hooks.entrySet()) {
+            if(entry.getKey().getName().equals(sName))
+                return entry.getValue();
+        }
+
+        return null;
     }
 
     public static Boolean canBuild(Player player, Block block) {
-        Boolean canBuild = true;
-        for(Map.Entry<String, Plugin> hookEntry : hooks.entrySet()) {
-            String hookClassname = (hookEntry.getKey() + "Hook");
-            try {
-                Class<Object> fc = (Class<Object>)Class.forName("org.wargamer2010.signshop.hooks."+hookClassname);
-                Hook testHook = ((Hook)fc.newInstance());
-                canBuild = testHook.canBuild(player, block);
-                if(!canBuild)
-                    break;
-            } catch(ClassNotFoundException notfoundex) { }
-            catch(InstantiationException instex) { }
-            catch(IllegalAccessException illex) { }
+        for(Hook hookEntry : hooks.keySet()) {
+            if(!hookEntry.canBuild(player, block))
+                return false;
         }
-        return canBuild;
-
+        return true;
     }
 }

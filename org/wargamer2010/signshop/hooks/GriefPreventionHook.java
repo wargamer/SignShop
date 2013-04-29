@@ -6,6 +6,12 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 public class GriefPreventionHook implements Hook {
+
+    @Override
+    public String getName() {
+        return "GriefPrevention";
+    }
+
     @Override
     public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("GriefPrevention") == null)

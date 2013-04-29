@@ -1,7 +1,10 @@
 
 package org.wargamer2010.signshop.commands;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -19,6 +22,21 @@ public class HelpHandler implements ICommandHandler {
         return instance;
     }
 
+    public Collection<String> getFilteredOperation(SignShopPlayer player) {
+        Collection<String> all = SignShopConfig.getOperations();
+        Collection<String> filtered = new LinkedList<String>();
+
+        for(String op : all) {
+            List<String> operation = SignShopConfig.getBlocks(op);
+            if(!operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Signs." + op), false) || player.hasPerm(("SignShop.Signs.*"), false)))
+                filtered.add(op);
+            else if(operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Admin."+op), true) || player.hasPerm(("SignShop.Admin.*"), true)))
+                filtered.add(op);
+        }
+
+        return filtered;
+    }
+
     @Override
     public boolean handle(String command, String[] args, SignShopPlayer player) {
         StringBuilder messageBuilder = new StringBuilder(200);
@@ -30,7 +48,7 @@ public class HelpHandler implements ICommandHandler {
 
         String availableSigns = "Available Signs: ";
         String moreInfo = "\n\n(For more information about a sign, type /signshop sign SIGN, where SIGN is the sign's name from this list)";
-        String signList = commandUtil.getCommandList(SignShopConfig.getOperations(), availableSigns, ",", false, "sign");
+        String signList = commandUtil.getCommandList(getFilteredOperation(player), availableSigns, ",", false, "sign");
 
         if(command.equals("list")) {
             messageBuilder.append(signList);
