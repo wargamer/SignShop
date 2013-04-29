@@ -5,10 +5,16 @@ import org.bukkit.entity.Player;
 import com.daemitus.deadbolt.Deadbolt;
 
 public class DeadboltHook implements Hook {
+
+    @Override
+    public String getName() {
+        return "Deadbolt";
+    }
+
     @Override
     public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("Deadbolt") == null)
-            return true;        
+            return true;
         try {
             return Deadbolt.isAuthorized(player, block);
         } catch(NullPointerException ex) {

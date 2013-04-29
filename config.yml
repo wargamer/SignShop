@@ -21,6 +21,7 @@ fixIncompleteOperations: true
 EnablePriceFromWorth: false
 EnableDynmapSupport: true
 EnableTutorialMessages: true
+EnableWGAllowShopFlag: false
 Languages: english
 LinkMaterial: redstone
 UpdateMaterial: ink_sack
@@ -344,6 +345,7 @@ errors:
   removed_location: Removed stored location
   stored_location: Stored location of !block
   stored_location_containable: Stored location of !block containing !items
+  region_does_not_allow_shops: Shops are not allowed within this region. Please move the sign somewhere else.
 commands:
   TpToOwner:
   - tp !player !owner

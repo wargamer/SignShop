@@ -5,6 +5,12 @@ import org.bukkit.entity.Player;
 import org.yi.acru.bukkit.Lockette.Lockette;
 
 public class LocketteHook implements Hook {
+
+    @Override
+    public String getName() {
+        return "Lockette";
+    }
+
     @Override
     public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("Lockette") == null)

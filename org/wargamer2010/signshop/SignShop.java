@@ -255,6 +255,8 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new StockChecker(), this);
         if(SignShopConfig.getEnableDynmapSupport())
             pm.registerEvents(new DynmapManager(), this);
+        if(SignShopConfig.getEnableWGAllowShopFlag())
+            pm.registerEvents(new WorldGuardChecker(), this);
 
         // Money Transactions Types
         pm.registerEvents(new DefaultMoneyTransaction(), this);

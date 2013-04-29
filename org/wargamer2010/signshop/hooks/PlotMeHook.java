@@ -6,6 +6,12 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 public class PlotMeHook implements Hook {
+
+    @Override
+    public String getName() {
+        return "PlotMe";
+    }
+
     @Override
     public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("PlotMe") == null)
@@ -13,7 +19,7 @@ public class PlotMeHook implements Hook {
         boolean foundAllowed = false;
         if(PlotManager.getPlots(block) == null)
             return true;
-        for(Plot plot : PlotManager.getPlots(block).values()) {            
+        for(Plot plot : PlotManager.getPlots(block).values()) {
             if(plot.isAllowed(player.getName()) || plot.getOwner().equals(player.getName()))
                 foundAllowed = true;
         }

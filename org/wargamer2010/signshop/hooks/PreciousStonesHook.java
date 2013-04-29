@@ -6,6 +6,12 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 public class PreciousStonesHook implements Hook {
+
+    @Override
+    public String getName() {
+        return "PreciousStones";
+    }
+
     @Override
     public Boolean canBuild(Player player, Block block) {
         if(HookManager.getHook("PreciousStones") == null)
