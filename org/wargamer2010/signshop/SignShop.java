@@ -115,11 +115,13 @@ public class SignShop extends JavaPlugin{
         itemUtil.initDiscs();
 
         instance = this;
-        metricsSetup = new setupMetrics();
-        if(metricsSetup.setup(this))
-            log("Succesfully started Metrics, see http://mcstats.org for more information.", Level.INFO);
-        else
-            log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
+        metricsSetup = new setupMetrics(this);
+        if(!metricsSetup.isOptOut()) {
+            if(metricsSetup.setup())
+                log("Succesfully started Metrics, see http://mcstats.org for more information.", Level.INFO);
+            else
+                log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
+        }
 
         SignShopConfig.init();
         SignShopBooks.init();
