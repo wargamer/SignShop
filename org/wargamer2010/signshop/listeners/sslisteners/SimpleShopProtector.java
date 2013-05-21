@@ -44,7 +44,7 @@ public class SimpleShopProtector implements Listener {
     private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            if(seller == null || seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player))
+            if(seller == null || seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player) || !SignShopConfig.getEnableShopOwnerProtection())
                 return true;
             else
                 return false;

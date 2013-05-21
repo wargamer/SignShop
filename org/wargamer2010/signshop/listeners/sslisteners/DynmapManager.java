@@ -4,10 +4,8 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -46,6 +44,10 @@ public class DynmapManager implements Listener {
         if(plugin == null)
             return;
         dynmapAPI = (DynmapAPI)plugin;
+        if(!dynmapAPI.markerAPIInitialized()) {
+            SignShop.log("MarkerAPI for Dynmap has not been initialised, please check dynmap's configuration.", Level.WARNING);
+            return;
+        }
 
         markerAPI = dynmapAPI.getMarkerAPI();
         ms = markerAPI.getMarkerSet(MarkerSetName);

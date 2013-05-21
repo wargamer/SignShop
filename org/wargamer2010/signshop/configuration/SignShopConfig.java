@@ -65,6 +65,7 @@ public class SignShopConfig {
     private static boolean EnableDynmapSupport = false;
     private static boolean EnableTutorialMessages = true;
     private static boolean EnableWGAllowShopFlag = true;
+    private static boolean EnableShopOwnerProtection = true;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -222,6 +223,7 @@ public class SignShopConfig {
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
         EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
         EnableWGAllowShopFlag = ymlThing.getBoolean("EnableWGAllowShopFlag", EnableWGAllowShopFlag);
+        EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -648,6 +650,10 @@ public class SignShopConfig {
         return EnableWGAllowShopFlag;
     }
 
+    public static Boolean getEnableShopOwnerProtection() {
+        return EnableShopOwnerProtection;
+    }
+
     public static Material getLinkMaterial() {
         return linkMaterial;
     }
@@ -659,7 +665,7 @@ public class SignShopConfig {
     public static Material getDestroyMaterial() {
         return destroyMaterial;
     }
-    
+
     public static boolean isOPMaterial(Material check) {
         return (check == updateMaterial || check == linkMaterial);
     }
