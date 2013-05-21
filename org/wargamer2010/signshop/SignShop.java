@@ -63,8 +63,9 @@ public class SignShop extends JavaPlugin{
             logger.log(level,("[SignShop] " + message));
     }
     public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
-        if(SignShopConfig.getTransactionLog() && !items.isEmpty()) {
-            String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + items + ", Price: " + Price);
+        if(SignShopConfig.getTransactionLog()) {
+            String fixedItems = (items.isEmpty() ? "none" : items);
+            String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + fixedItems + ", Price: " + Price);
             transactionlogger.log(Level.INFO, message);
         }
     }

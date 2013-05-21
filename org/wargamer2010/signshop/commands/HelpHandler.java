@@ -24,6 +24,8 @@ public class HelpHandler implements ICommandHandler {
 
     public Collection<String> getFilteredOperation(SignShopPlayer player) {
         Collection<String> all = SignShopConfig.getOperations();
+        if(player == null)
+            return all;
         Collection<String> filtered = new LinkedList<String>();
 
         for(String op : all) {
