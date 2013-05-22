@@ -24,6 +24,7 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.itemUtil;
+import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
 
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.util.versionUtil;
@@ -34,6 +35,7 @@ public class SignShopItemMeta {
     private static Map<String, String> headResolves = null;
     private static String filename = "books.db";
     private static Boolean legacy = false;
+    private static ChatColor txtColor = ChatColor.YELLOW;
 
     private SignShopItemMeta() {
 
@@ -69,6 +71,10 @@ public class SignShopItemMeta {
         return signshopUtil.implode(temp.toArray(arr), ", ");
     }
 
+    public static ChatColor getTextColor() {
+        return txtColor;
+    }
+
     private static String convertFireworkTypeToDisplay(FireworkEffect.Type type) {
         String temp = signshopUtil.capFirstLetter(type.toString().toLowerCase()).replace("_", " ");
         if(temp.contains(" ")) {
@@ -102,19 +108,35 @@ public class SignShopItemMeta {
     }
 
     private static String getDisplayName(ItemStack stack) {
-        return getDisplayName(stack, ChatColor.WHITE);
+        return getDisplayName(stack, txtColor);
     }
 
     private static String getDisplayName(ItemStack stack, ChatColor color) {
-        if(stack.getItemMeta().hasDisplayName())
-            return ("\"" + color + ChatColor.ITALIC + stack.getItemMeta().getDisplayName() + ChatColor.RESET + ChatColor.WHITE + "\"");
-        else
-            return (color + itemUtil.formatData(stack.getData(), stack.getDurability()) + ChatColor.WHITE);
+        String txtcolor = txtColor.toString();
+        String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
+        String normal = itemUtil.formatData(stack.getData(), stack.getDurability());
+        String displayname = "";
+
+        if(!isLegacy()) {
+            String custom = (stack.getItemMeta().hasDisplayName()
+                            ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");
+            if(custom.length() > 0)
+                displayname = (custom + " (" + normal + ")" + txtcolor);
+        }
+        if(displayname.isEmpty())
+            displayname = (txtcolor + customcolor + normal + txtcolor);
+
+        if(stack.getType().getMaxDurability() >= 30 && stack.getDurability() != 0)
+            displayname = (" Damaged " + displayname);
+        if(stack.getEnchantments().size() > 0)
+            displayname += (txtcolor + " " + enchantmentsToMessageFormat(stack.getEnchantments()));
+
+        return displayname;
     }
 
     public static String getName(ItemStack stack) {
         if(isLegacy() || !hasMeta(stack))
-            return "";
+            return getDisplayName(stack);
 
         ItemMeta meta = stack.getItemMeta();
 
@@ -236,7 +258,7 @@ public class SignShopItemMeta {
 
         if(stack.getItemMeta().hasDisplayName())
             return getDisplayName(stack);
-        return "";
+        return getDisplayName(stack);
     }
 
     public static void setMetaForID(ItemStack stack, Integer ID) {
@@ -481,7 +503,7 @@ public class SignShopItemMeta {
     private static String convertPotionMetaToString(PotionMeta meta) {
         if(!meta.hasCustomEffects())
             return "";
-        StringBuilder returnbuilder = new StringBuilder();
+        StringBuilder returnbuilder = new StringBuilder(meta.getCustomEffects().size() * 50);
         for(PotionEffect effect : meta.getCustomEffects()) {
             returnbuilder.append(Integer.toString(effect.getType().getId()));
             returnbuilder.append(valueSeperator);
@@ -544,7 +566,7 @@ public class SignShopItemMeta {
     private static String convertFireworkMetaToString(FireworkMeta meta) {
         if(!meta.hasEffects())
             return "";
-        StringBuilder returnbuilder = new StringBuilder();
+        StringBuilder returnbuilder = new StringBuilder(meta.getEffects().size() * 50);
 
         for(FireworkEffect effect : meta.getEffects()) {
             returnbuilder.append(effect.getType().toString());
