@@ -4,17 +4,23 @@ import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.Vault;
 
 public class economyUtil {
+    private static ChatColor moneyColor = ChatColor.GREEN;
+
     private economyUtil() {
 
     }
 
+    private static String attachColor(String money) {
+        return (moneyColor + money + ChatColor.WHITE);
+    }
+
     public static String formatMoney(Float money) {
         if(money.isNaN() || money.isInfinite())
-            return "0.00";
+            return attachColor("0.00");
         if(Vault.getEconomy() == null)
-            return Float.toString(money);
+            return attachColor(Float.toString(money));
         else
-            return Vault.getEconomy().format(money.doubleValue());
+            return attachColor(Vault.getEconomy().format(money.doubleValue()));
     }
 
     public static float parsePrice(String line) {

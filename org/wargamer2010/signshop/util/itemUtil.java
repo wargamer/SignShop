@@ -258,24 +258,18 @@ public class itemUtil {
         for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
             if(first) first = false;
             else sItems += ", ";
-            if(enchantments.containsKey(entry.getKey()))
-                sItems += ChatColor.DARK_PURPLE;
-            String sDamaged = " ";
-            if(entry.getKey().getType().getMaxDurability() >= 30 && entry.getKey().getDurability() != 0)
-                sDamaged = " Damaged ";
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
+            String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
-                sItems += (entry.getValue()) + sDamaged + formatData(entry.getKey().getData(), entry.getKey().getDurability());
+                sItems += (count + formatData(entry.getKey().getData(), entry.getKey().getDurability()));
             else
-                sItems += (entry.getValue() + sDamaged + newItemMeta);
-            if(enchantments.containsKey(entry.getKey())) {
-                sItems += (ChatColor.WHITE + " " + enchantmentsToMessageFormat(enchantments.get(entry.getKey())));
-            }
+                sItems += (count + newItemMeta);
             if(itemUtil.isWriteableBook(entry.getKey())) {
                 IBookItem book = BookFactory.getBookItem(entry.getKey());
                 if(book != null && (book.getAuthor() != null || book.getTitle() != null))
                     sItems += (" (" + (book.getTitle() == null ? "Unknown" : book.getTitle())  + " by " + (book.getAuthor() == null ? "Unknown" : book.getAuthor()) + ")");
             }
+            sItems += ChatColor.WHITE;
         }
 
         return sItems;
