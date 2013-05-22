@@ -350,6 +350,13 @@ public class itemUtil {
     }
 
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
+        // Calls to Bukkit's inventory modifiers like "removeItem" and such used to modify the incoming stack
+        // Hence, it was decided to backup all stacks before attempting to do anything with it to prevent the shop's or player's inventory
+        // from being modified. The bugs have been solved at some point and especially from 1.4.5 onward. Which is why we version-check now
+        // and take a shortcut if we can. Clone always does a shallow copy here.
+        if(versionUtil.getBukkitVersionType() == SSBukkitVersion.Post145)
+            return isOriginal.clone();
+
         IItemTags tags = BookFactory.getItemTags();
         ItemStack isBackup = tags.getCraftItemstack(
             isOriginal.getType(),
@@ -412,17 +419,9 @@ public class itemUtil {
             } else
                 return returnMap;
 
-            isActual[i] = tags.getCraftItemstack(
-                entry.getKey().getType(),
-                mInventory.get(entry.getKey()),
-                entry.getKey().getDurability()
-            );
-            safelyAddEnchantments(isActual[i], entry.getKey().getEnchantments());
-            isActual[i] = tags.copyTags(entry.getKey(), isActual[i]);
+            isActual[i] = itemUtil.getBackupSingleItemStack(entry.getKey());
+            isActual[i].setAmount(mInventory.get(entry.getKey()));
 
-            if(entry.getKey().getData() != null) {
-                isActual[i].setData(entry.getKey().getData());
-            }
             i++;
         }
         returnMap.clear();
