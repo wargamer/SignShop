@@ -19,7 +19,7 @@ public class WorldGuardChecker implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled() || !event.canBeCancelled())
+        if(event.isCancelled() || !event.canBeCancelled() || event.getPlayer().getPlayer() == null)
             return;
         if(HookManager.getHook("WorldGuard") == null)
             return;
@@ -31,9 +31,14 @@ public class WorldGuardChecker implements Listener {
                 if(flag.getKey().getName().equals("allow-shop")) {
                     if(flag.getKey() instanceof StateFlag) {
                         if(flag.getValue() == StateFlag.State.DENY) { // allow-shop is false
-                            event.getPlayer().sendMessage(SignShopConfig.getError("region_does_not_allow_shops", event.getMessageParts()));
-                            event.setCancelled(true);
-                            return;
+                            if(event.getPlayer().isOp()) {
+                                event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_op", event.getMessageParts()));
+                                return;
+                            } else {
+                                event.getPlayer().sendMessage(SignShopConfig.getError("region_does_not_allow_shops", event.getMessageParts()));
+                                event.setCancelled(true);
+                                return;
+                            }
                         }
                     }
                 }
