@@ -347,6 +347,7 @@ errors:
   stored_location: Stored location of !block
   stored_location_containable: Stored location of !block containing !items
   region_does_not_allow_shops: Shops are not allowed within this region. Please move the sign somewhere else.
+  region_allow_shops_but_op: This shop is in a region with the "allow-shop" flag set to false, but you are OP.
 commands:
   TpToOwner:
   - tp !player !owner
