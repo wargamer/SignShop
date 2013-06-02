@@ -31,6 +31,7 @@ import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
+import org.wargamer2010.signshop.util.googleTranslateUtil;
 import org.wargamer2010.signshop.util.versionUtil;
 
 public class SignShop extends JavaPlugin{
@@ -130,6 +131,7 @@ public class SignShop extends JavaPlugin{
         SignShopItemMeta.init();
         CommandDispatcher.init();
         fixStackSize();
+        googleTranslateUtil.init();
 
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
@@ -258,8 +260,10 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new StockChecker(), this);
         if(SignShopConfig.getEnableDynmapSupport())
             pm.registerEvents(new DynmapManager(), this);
-        if(SignShopConfig.getEnableWGAllowShopFlag())
+        if(SignShopConfig.getEnableShopPlotSupport()) {
             pm.registerEvents(new WorldGuardChecker(), this);
+            pm.registerEvents(new TownyChecker(), this);
+        }
 
         // Money Transactions Types
         pm.registerEvents(new DefaultMoneyTransaction(), this);

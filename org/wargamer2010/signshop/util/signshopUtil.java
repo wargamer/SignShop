@@ -1,6 +1,16 @@
 package org.wargamer2010.signshop.util;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.String;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.net.URLConnection;
+import java.sql.Driver;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -8,6 +18,8 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -33,6 +45,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
 public class signshopUtil {
+    private static ReentrantLock loadLocker = new ReentrantLock();
 
     private signshopUtil() {
     }
@@ -513,5 +526,83 @@ public class signshopUtil {
         }
 
         return true;
+    }
+
+    public static Driver loadDriver(String downloadURL, String filename, String className) {
+        Class<?> thing = loadClass(downloadURL, filename, className);
+        try {
+            if(thing != null)
+                return (Driver) thing.newInstance();
+        } catch(InstantiationException ex) { }
+        catch(IllegalAccessException ex) { }
+
+        return null;
+    }
+
+    public static Class<?> loadClass(String downloadURL, String filename, String className) {
+        try {
+            loadLocker.tryLock();
+            File libLocation = new File(SignShop.getInstance().getDataFolder(), ("lib" + File.separator + filename));
+            if(!libLocation.exists())
+                getDriver(downloadURL, libLocation);
+            ClassLoader classLoader = new URLClassLoader(new URL[]{new URL("jar:file:" + libLocation.getPath() + "!/")});
+            return classLoader.loadClass(className);
+        } catch(MalformedURLException ex) { }
+        catch(ClassNotFoundException ex) { }
+        finally {
+            loadLocker.unlock();
+        }
+
+        return null;
+    }
+
+    private static void getDriver(String downloadURL, File destination) {
+        try {
+            if (destination.exists())
+                destination.delete();
+
+            if(!destination.getParentFile().exists())
+                destination.getParentFile().mkdirs();
+
+            destination.createNewFile();
+
+            OutputStream outputStream = new FileOutputStream(destination);
+
+            String sURL = (downloadURL + destination.getName());
+            URL url = new URL(sURL);
+            URLConnection connection = url.openConnection();
+
+            InputStream inputStream = connection.getInputStream();
+
+            int contentLength = connection.getContentLength();
+
+            int iBytesTransffered = 0;
+            long lastUpdate = 0L;
+
+            byte[] buffer = new byte[1024];
+            int read = 0;
+
+            SignShop.log("Starting download of " + destination.getName(), Level.INFO);
+            while ((read = inputStream.read(buffer)) > 0) {
+                outputStream.write(buffer, 0, read);
+                iBytesTransffered += read;
+
+                if (contentLength > 0) {
+                    if (System.currentTimeMillis() - lastUpdate > 500L) {
+                        int percentTransferred = (int) (((float) iBytesTransffered / contentLength) * 100);
+                        lastUpdate = System.currentTimeMillis();
+
+                        if (percentTransferred != 100) {
+                            SignShop.log("Download at " + percentTransferred + "%", Level.INFO);
+                        }
+                    }
+                }
+            }
+
+            outputStream.close();
+            inputStream.close();
+        } catch (IOException e) {
+
+        }
     }
 }
