@@ -123,6 +123,14 @@ public class SignShopPlayer {
             return ssPlayer.isOp();
     }
 
+    public boolean hasBypassShopPlots(String pluginName) {
+        String starPerm = "SignShop.BypassShopPlots.*";
+        String perm = starPerm;
+        if(!pluginName.isEmpty())
+            perm = ("SignShop.BypassShopPlots." + pluginName);
+        return (hasPerm(perm, true) || hasPerm(starPerm, true));
+    }
+
     public Boolean hasPerm(String perm, Boolean OPOperation) {
         if(ssPlayer == null)
             return false;

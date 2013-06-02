@@ -82,7 +82,7 @@ public class GetPriceFromWorth implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.HIGH)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onSSMoneyTransactionEvent(SSMoneyTransactionEvent event) {
         if(event.isCancelled())
             return;

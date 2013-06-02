@@ -2,14 +2,6 @@
 package org.wargamer2010.signshop.blocks;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.URLConnection;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.PreparedStatement;
@@ -18,16 +10,14 @@ import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SSDatabase {
     private static final String downloadURL = "http://cloud.github.com/downloads/wargamer/SignShop/";
     private static Driver driver = null;
     private Connection conn = null;
-    private ReentrantLock loadLocker = new ReentrantLock();
     private String filename = "";
 
     public SSDatabase(final String pFilename) {
@@ -76,76 +66,7 @@ public class SSDatabase {
     }
 
     public final void loadLib() {
-        try {
-            loadLocker.tryLock();
-            File libLocation = new File(SignShop.getInstance().getDataFolder(), ("lib" + File.separator + "sqlite.jar"));
-            if(!libLocation.exists())
-                getDriver(libLocation);
-            ClassLoader classLoader = new URLClassLoader(new URL[]{new URL("jar:file:" + libLocation.getPath() + "!/")});
-            String className = "org.sqlite.JDBC";
-            driver = (Driver) classLoader.loadClass(className).newInstance();
-        } catch(MalformedURLException ex) {
-
-        } catch(ClassNotFoundException ex) {
-
-        } catch(InstantiationException ex) {
-
-        } catch(IllegalAccessException ex) {
-
-        } finally {
-            loadLocker.unlock();
-        }
-
-    }
-
-    private void getDriver(File destination) {
-        try {
-            if (destination.exists())
-                destination.delete();
-
-            if(!destination.getParentFile().exists())
-                destination.getParentFile().mkdirs();
-
-            destination.createNewFile();
-
-            OutputStream outputStream = new FileOutputStream(destination);
-
-            String sURL = (downloadURL + destination.getName());
-            URL url = new URL(sURL);
-            URLConnection connection = url.openConnection();
-
-            InputStream inputStream = connection.getInputStream();
-
-            int contentLength = connection.getContentLength();
-
-            int iBytesTransffered = 0;
-            long lastUpdate = 0L;
-
-            byte[] buffer = new byte[1024];
-            int read = 0;
-
-            SignShop.log("Starting download of " + destination.getName(), Level.INFO);
-            while ((read = inputStream.read(buffer)) > 0) {
-                outputStream.write(buffer, 0, read);
-                iBytesTransffered += read;
-
-                if (contentLength > 0) {
-                    if (System.currentTimeMillis() - lastUpdate > 500L) {
-                        int percentTransferred = (int) (((float) iBytesTransffered / contentLength) * 100);
-                        lastUpdate = System.currentTimeMillis();
-
-                        if (percentTransferred != 100) {
-                            SignShop.log("Download at " + percentTransferred + "%", Level.INFO);
-                        }
-                    }
-                }
-            }
-
-            outputStream.close();
-            inputStream.close();
-        } catch (IOException e) {
-
-        }
+        driver = signshopUtil.loadDriver(downloadURL, "sqlite.jar", "org.sqlite.JDBC");
     }
 
     public final boolean open() {

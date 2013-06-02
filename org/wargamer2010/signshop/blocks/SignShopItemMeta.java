@@ -23,6 +23,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
+import org.wargamer2010.signshop.util.googleTranslateUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
 
@@ -114,7 +115,7 @@ public class SignShopItemMeta {
     private static String getDisplayName(ItemStack stack, ChatColor color) {
         String txtcolor = txtColor.toString();
         String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
-        String normal = itemUtil.formatData(stack.getData(), stack.getDurability());
+        String normal = googleTranslateUtil.translateFromEnglish(itemUtil.formatData(stack.getData(), stack.getDurability()));
         String displayname = "";
 
         if(!isLegacy()) {

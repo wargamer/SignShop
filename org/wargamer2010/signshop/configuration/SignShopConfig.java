@@ -64,8 +64,9 @@ public class SignShopConfig {
     private static boolean EnablePriceFromWorth = false;
     private static boolean EnableDynmapSupport = false;
     private static boolean EnableTutorialMessages = true;
-    private static boolean EnableWGAllowShopFlag = true;
+    private static boolean EnableShopPlotSupport = true;
     private static boolean EnableShopOwnerProtection = true;
+    private static boolean EnableGoogleTranslation = false;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -131,6 +132,10 @@ public class SignShopConfig {
         setupLinkables();
     }
 
+    public static String getPreferredLanguage() {
+        return preferedLanguage;
+    }
+
     private static void setupHooks() {
         HookManager.addHook("LWC");
         HookManager.addHook("Lockette");
@@ -140,6 +145,7 @@ public class SignShopConfig {
         HookManager.addHook("GriefPrevention");
         HookManager.addHook("PreciousStones");
         HookManager.addHook("PlotMe");
+        HookManager.addHook("Towny");
     }
 
     private static void setupSpecialsOps() {
@@ -222,8 +228,9 @@ public class SignShopConfig {
         EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
         EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
-        EnableWGAllowShopFlag = ymlThing.getBoolean("EnableWGAllowShopFlag", EnableWGAllowShopFlag);
+        EnableShopPlotSupport = ymlThing.getBoolean("EnableShopPlotSupport", EnableShopPlotSupport);
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
+        EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -646,12 +653,16 @@ public class SignShopConfig {
         return EnableTutorialMessages;
     }
 
-    public static Boolean getEnableWGAllowShopFlag() {
-        return EnableWGAllowShopFlag;
+    public static Boolean getEnableShopPlotSupport() {
+        return EnableShopPlotSupport;
     }
 
     public static Boolean getEnableShopOwnerProtection() {
         return EnableShopOwnerProtection;
+    }
+
+    public static boolean getEnableGoogleTranslation() {
+        return EnableGoogleTranslation;
     }
 
     public static Material getLinkMaterial() {
