@@ -348,11 +348,11 @@ errors:
   stored_location: Stored location of !block
   stored_location_containable: Stored location of !block containing !items
   region_does_not_allow_shops: Shops are not allowed within this region. Please move the sign somewhere else.
-  region_allow_shops_but_op: This shop is in a region with the "allow-shop" flag set to false but you are OP.
-  region_allow_shops_but_perm: This shop is in a region with the "allow-shop" flag set to false but you have the bypass permission node.
-  towny_shop_plot_not_allowed: This shop is built on a shop plot but you do not have the required permission.
-  towny_shop_plot_not_allowed_but_op: This shop is built on a shop plot but you are OP.
-  towny_shop_plot_not_allowed_but_perm: This shop is built on a shop plot but you have the bypass permission node.
+  region_allow_shops_but_op: This shop is not in a region with the "allow-shop" flag set to true but you are OP.
+  region_allow_shops_but_perm: This shop is not in a region with the "allow-shop" flag set to true but you have the bypass permission node.
+  towny_shop_plot_not_allowed: This shop is not on a shop plot, please move it.
+  towny_shop_plot_not_allowed_but_op: This shop is not on a shop plot but you are OP.
+  towny_shop_plot_not_allowed_but_perm: This shop is not on a shop plot but you have the bypass permission node.
 commands:
   TpToOwner:
   - tp !player !owner

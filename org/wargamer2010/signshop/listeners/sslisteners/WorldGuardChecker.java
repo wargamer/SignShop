@@ -29,22 +29,20 @@ public class WorldGuardChecker implements Listener {
             for(Map.Entry<Flag<?>, Object> flag : r.getFlags().entrySet()) {
                 if(flag.getKey().getName().equals("allow-shop")) {
                     if(flag.getKey() instanceof StateFlag) {
-                        if(flag.getValue() == StateFlag.State.DENY) { // allow-shop is false
-                            if(event.getPlayer().isOp()) {
-                                event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_op", event.getMessageParts()));
-                                return;
-                            } else if(event.getPlayer().hasBypassShopPlots("WorldGuard")) {
-                                event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_perm", event.getMessageParts()));
-                                return;
-                            } else {
-                                event.getPlayer().sendMessage(SignShopConfig.getError("region_does_not_allow_shops", event.getMessageParts()));
-                                event.setCancelled(true);
-                                return;
-                            }
-                        }
+                        if(flag.getValue() == StateFlag.State.ALLOW) // allow-shop is true
+                            return;
                     }
                 }
             }
+        }
+
+        if(event.getPlayer().isOp()) {
+            event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_op", event.getMessageParts()));
+        } else if(event.getPlayer().hasBypassShopPlots("WorldGuard")) {
+            event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_perm", event.getMessageParts()));
+        } else {
+            event.getPlayer().sendMessage(SignShopConfig.getError("region_does_not_allow_shops", event.getMessageParts()));
+            event.setCancelled(true);
         }
     }
 }
