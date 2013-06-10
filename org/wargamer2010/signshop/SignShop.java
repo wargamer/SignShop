@@ -259,8 +259,10 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new ShopCooldown(), this);
         pm.registerEvents(new NotificationsHooker(), this);
         pm.registerEvents(new StockChecker(), this);
+
+        DynmapManager dmm = new DynmapManager();
         if(SignShopConfig.getEnableDynmapSupport())
-            pm.registerEvents(new DynmapManager(), this);
+            pm.registerEvents(dmm, this);
         if(SignShopConfig.getEnableShopPlotSupport()) {
             pm.registerEvents(new WorldGuardChecker(), this);
             pm.registerEvents(new TownyChecker(), this);
