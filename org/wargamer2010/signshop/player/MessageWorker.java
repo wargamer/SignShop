@@ -23,8 +23,6 @@ public class MessageWorker implements Runnable {
     }
 
     public static void init() {
-        if(bWorking)
-            return;
         synchronized(MessageWorker.class) {
             if(bWorking)
                 return;

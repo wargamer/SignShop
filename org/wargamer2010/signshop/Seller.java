@@ -11,10 +11,10 @@ import java.util.Map;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.kellerkindt.scs.*;
 import java.util.LinkedHashMap;
+import java.util.logging.Level;
 import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
-import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {
@@ -96,10 +96,12 @@ public class Seller {
                 return;
             Location loc = signshopUtil.convertStringToLocation(miscProps.get("showcaselocation"), Bukkit.getWorld(world));
             ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
-            com.kellerkindt.scs.shops.Shop shop = null;
+            com.kellerkindt.scs.shops.Shop shop;
             try {
                 shop = scs.getShopHandler().getShopForBlock(Bukkit.getWorld(world).getBlockAt(loc));
             } catch(Exception ex) {
+                SignShop.log(String.format("Caught an exception (%s) while attempting to remove showcase for shop at (%s, %s, %s)"
+                        , ex.getMessage(), loc.getX(), loc.getY(), loc.getZ()), Level.WARNING);
                 return;
             }
             if(shop != null)

@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Level;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.JarUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SSDatabase {
@@ -66,7 +67,7 @@ public class SSDatabase {
     }
 
     public final void loadLib() {
-        driver = signshopUtil.loadDriver(downloadURL, "sqlite.jar", "org.sqlite.JDBC");
+        driver = JarUtil.loadDriver(downloadURL, "sqlite.jar", "org.sqlite.JDBC");
     }
 
     public final boolean open() {

@@ -1,14 +1,8 @@
 
 package org.wargamer2010.signshop.commands;
 
-import java.util.logging.Level;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.commandUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
 
 public class TutorialHandler implements ICommandHandler {
     private static ICommandHandler instance = new TutorialHandler();
