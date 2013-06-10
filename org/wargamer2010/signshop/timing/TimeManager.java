@@ -23,8 +23,8 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSEventFactory;
 
 public class TimeManager extends TimerTask {
-    private final int interval = 1000; // in ms
-    private final int saveinterval = 10000;
+    private static final int interval = 1000; // in ms
+    private static final int saveinterval = 10000;
     private int intervalcount = 0;
     private Map<IExpirable, Integer> timeByExpirable = new LinkedHashMap<IExpirable, Integer>();
     private ReentrantLock timerLock = new ReentrantLock();
@@ -111,7 +111,7 @@ public class TimeManager extends TimerTask {
     @Override
     public void run() {
         timerLock.lock();
-        
+
         try {
             Map<IExpirable, Integer> update = new LinkedHashMap<IExpirable, Integer>();
             for(Map.Entry<IExpirable, Integer> entry : timeByExpirable.entrySet()) {

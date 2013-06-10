@@ -23,7 +23,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
-import org.wargamer2010.signshop.util.googleTranslateUtil;
+import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
 
@@ -33,10 +33,10 @@ public class SignShopItemMeta {
     private static final String listSeperator = "~";
     private static final String valueSeperator = "-";
     private static final String innerListSeperator = "^";
+    private static final ChatColor txtColor = ChatColor.YELLOW;
     private static Map<String, String> headResolves = null;
     private static String filename = "books.db";
     private static Boolean legacy = false;
-    private static ChatColor txtColor = ChatColor.YELLOW;
 
     private SignShopItemMeta() {
 
@@ -113,11 +113,13 @@ public class SignShopItemMeta {
     }
 
     private static String getDisplayName(ItemStack stack, ChatColor color) {
+        String nameFromWeb = WebUtil.getNameFromWeb(stack);
         String txtcolor = txtColor.toString();
         String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
-        String normal = googleTranslateUtil.translateFromEnglish(itemUtil.formatData(stack.getData(), stack.getDurability()));
+        String normal = nameFromWeb.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : nameFromWeb;
+        normal = WebUtil.translateFromEnglish(normal);
         String displayname = "";
-
+        
         if(!isLegacy()) {
             String custom = (stack.getItemMeta().hasDisplayName()
                             ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");

@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.commands;
 
 import java.util.logging.Level;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;

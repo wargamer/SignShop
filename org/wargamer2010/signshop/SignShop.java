@@ -31,7 +31,7 @@ import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
-import org.wargamer2010.signshop.util.googleTranslateUtil;
+import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.versionUtil;
 
 public class SignShop extends JavaPlugin{
@@ -97,7 +97,7 @@ public class SignShop extends JavaPlugin{
         }
     }
 
-    private void DisableSignShop() {
+    private void disableSignShop() {
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.disablePlugin(this);
     }
@@ -105,14 +105,15 @@ public class SignShop extends JavaPlugin{
     @Override
     public void onEnable() {
         if(versionUtil.getBukkitVersionType() == SSBukkitVersion.Unknown) {
-            DisableSignShop();
+            disableSignShop();
             return;
         }
 
         // Migrate configs from old directory
         this.checkOldDir();
         if(!this.getDataFolder().exists()) {
-            this.getDataFolder().mkdir();
+            if(!this.getDataFolder().mkdir())
+                log("Could not create plugins/SignShop folder.", Level.SEVERE);
         }
         itemUtil.initDiscs();
 
@@ -131,7 +132,7 @@ public class SignShop extends JavaPlugin{
         SignShopItemMeta.init();
         CommandDispatcher.init();
         fixStackSize();
-        googleTranslateUtil.init();
+        WebUtil.init();
 
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
@@ -170,7 +171,7 @@ public class SignShop extends JavaPlugin{
             registerSSListeners();
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         } else {
-            DisableSignShop();
+            disableSignShop();
         }
     }
 

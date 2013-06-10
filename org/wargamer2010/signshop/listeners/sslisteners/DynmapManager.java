@@ -29,11 +29,11 @@ public class DynmapManager implements Listener {
     private MarkerSet ms = null;
     private MarkerIcon mi = null;
 
-    private static String MarkerSetName = "SignShopMarkers";
-    private static String MarkerSetLabel = "SignShop Marker Set";
-    private static String Filename = "signshopsign.png";
-    private static String MarkerName = "signshop_icon_555";
-    private static String MarkerLabel = "SignShop";
+    private final static String MarkerSetName = "SignShopMarkers";
+    private final static String MarkerSetLabel = "SignShop Marker Set";
+    private final static String Filename = "signshopsign.png";
+    private final static String MarkerName = "signshop_icon_555";
+    private final static String MarkerLabel = "SignShop";
 
     public DynmapManager() {
         init();

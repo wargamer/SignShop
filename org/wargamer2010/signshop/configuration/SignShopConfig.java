@@ -67,6 +67,7 @@ public class SignShopConfig {
     private static boolean EnableShopPlotSupport = true;
     private static boolean EnableShopOwnerProtection = true;
     private static boolean EnableGoogleTranslation = false;
+    private static boolean EnableNamesFromTheWeb = false;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -95,6 +96,7 @@ public class SignShopConfig {
             aLanguages.add("config");
         Messages = new LinkedHashMap<String,Map<String,HashMap<String,String>>>();
         Errors = new LinkedHashMap<String,Map<String,String>>();
+        preferedLanguage = "";
         for(String language : aLanguages) {
             String filename = (language + ".yml");
             String languageName = (language.equals("config") ? baseLanguage : language);
@@ -231,6 +233,7 @@ public class SignShopConfig {
         EnableShopPlotSupport = ymlThing.getBoolean("EnableShopPlotSupport", EnableShopPlotSupport);
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
         EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
+        EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -663,6 +666,10 @@ public class SignShopConfig {
 
     public static boolean getEnableGoogleTranslation() {
         return EnableGoogleTranslation;
+    }
+
+    public static boolean getEnableNamesFromTheWeb() {
+        return EnableNamesFromTheWeb;
     }
 
     public static Material getLinkMaterial() {

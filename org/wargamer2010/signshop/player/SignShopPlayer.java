@@ -316,7 +316,7 @@ public class SignShopPlayer {
 
     public ItemStack[] getInventoryContents() {
         if(ssPlayer == null)
-            return null;
+            return new ItemStack[0];
         return ssPlayer.getInventory().getContents();
     }
 
