@@ -24,19 +24,30 @@ public class HelpHandler implements ICommandHandler {
 
     public Collection<String> getFilteredOperation(SignShopPlayer player) {
         Collection<String> all = SignShopConfig.getOperations();
-        if(player == null)
-            return all;
         Collection<String> filtered = new LinkedList<String>();
+        Collection<String> aliased = new LinkedList<String>();
 
-        for(String op : all) {
-            List<String> operation = SignShopConfig.getBlocks(op);
-            if(!operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Signs." + op), false) || player.hasPerm(("SignShop.Signs.*"), false)))
-                filtered.add(op);
-            else if(operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Admin."+op), true) || player.hasPerm(("SignShop.Admin.*"), true)))
-                filtered.add(op);
+        if(player == null)
+            filtered.addAll(all);
+        else {
+            for(String op : all) {
+                List<String> operation = SignShopConfig.getBlocks(op);
+                if(!operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Signs." + op), false) || player.hasPerm(("SignShop.Signs.*"), false)))
+                    filtered.add(op);
+                else if(operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Admin."+op), true) || player.hasPerm(("SignShop.Admin.*"), true)))
+                    filtered.add(op);
+            }
         }
 
-        return filtered;
+        for(String op : filtered) {
+            Collection<String> temp = SignShopConfig.getAliases(op);
+            if(temp.isEmpty())
+                aliased.add(op);
+            else
+                aliased.addAll(temp);
+        }
+        
+        return aliased;
     }
 
     @Override

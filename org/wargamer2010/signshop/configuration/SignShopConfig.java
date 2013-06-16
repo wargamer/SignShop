@@ -20,25 +20,36 @@ import java.io.OutputStream;
 import java.io.FileOutputStream;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.EnumMap;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.runCommand;
+import org.wargamer2010.signshop.specialops.LinkSpecialSign;
+import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
+import org.wargamer2010.signshop.specialops.changeOwner;
+import org.wargamer2010.signshop.specialops.convertChestshop;
+import org.wargamer2010.signshop.specialops.copySign;
+import org.wargamer2010.signshop.specialops.linkAdditionalBlocks;
+import org.wargamer2010.signshop.specialops.linkShowcase;
 
 public class SignShopConfig {
-    private static Map<String,List<String>> Operations;
+    private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
+    private static Map<String,SignShopOperation> OperationInstances = new LinkedHashMap<String, SignShopOperation>();
+    private static Map<String,List<String>> Operations = new HashMap<String,List<String>>();
     private static Map<String,String> OperationAliases;                         // Alias <-> Original
     private static Map<String,Map<String,HashMap<String,String>>> Messages;
     private static Map<String,Map<String,String>> Errors;
     private static List<Integer> BlacklistedItems;
-    public static Map<String,HashMap<String,Float>> PriceMultipliers;
-    public static Map<String,List> Commands;
-    public static Map<String,Integer> ShopLimits;
-    public static Map<Material, String> LinkableMaterials;
-    public static List<String> SpecialsOps = new LinkedList<String>();
+    private static Map<String,HashMap<String,Float>> PriceMultipliers;
+    private static Map<String,List<String>> Commands;
+    private static Map<String,Integer> ShopLimits;
+    private static Map<Material, String> LinkableMaterials;
+    private static List<SignShopSpecialOp> SpecialsOps = new LinkedList<SignShopSpecialOp>();
 
     private static SignShop instance = null;
 
@@ -90,8 +101,8 @@ public class SignShopConfig {
     public static void init() {
         instance = SignShop.getInstance();
         initConfig();
-        Languages = Languages.replace(baseLanguage, "config");
-        List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
+        String LanguagesAdjusted = Languages.replace(baseLanguage, "config");
+        List<String> aLanguages = getOrderedListFromArray(LanguagesAdjusted.split(","));
         if(!aLanguages.contains("config"))
             aLanguages.add("config");
         Messages = new LinkedHashMap<String,Map<String,HashMap<String,String>>>();
@@ -151,13 +162,13 @@ public class SignShopConfig {
     }
 
     private static void setupSpecialsOps() {
-        SpecialsOps.add("convertChestshop");
-        SpecialsOps.add("copySign");
+        SpecialsOps.add(new convertChestshop());
+        SpecialsOps.add(new copySign());
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
-            SpecialsOps.add("linkShowcase");
-        SpecialsOps.add("LinkSpecialSign");
-        SpecialsOps.add("changeOwner");
-        SpecialsOps.add("linkAdditionalBlocks");
+            SpecialsOps.add(new linkShowcase());
+        SpecialsOps.add(new LinkSpecialSign());
+        SpecialsOps.add(new changeOwner());
+        SpecialsOps.add(new linkAdditionalBlocks());
     }
 
     private static void safeAddLinkeable(String sName, String sGroup) {
@@ -167,7 +178,7 @@ public class SignShopConfig {
     }
 
     private static void setupLinkables() {
-        LinkableMaterials = new HashMap<Material, String>();
+        LinkableMaterials = new EnumMap<Material, String>(Material.class);
         safeAddLinkeable("CHEST", "chest");
         safeAddLinkeable("TRAPPED_CHEST", "chest");
         safeAddLinkeable("DROPPER", "dropper");
@@ -267,36 +278,55 @@ public class SignShopConfig {
     }
 
     public static void setupOperations(Map<String, String> allSignOperations) {
+        setupOperations(allSignOperations, defaultOPPackage);
+    }
+
+    private static Object getInstance(String fullClassPath) {
+        try {
+            Class<?> aclass = Class.forName(fullClassPath);
+            return aclass.newInstance();
+        } catch(ClassNotFoundException notfound) {
+            return null;
+        } catch (InstantiationException ex) {
+            return null;
+        } catch (IllegalAccessException ex) {
+            return null;
+        }
+    }
+
+    public static void setupOperations(Map<String, String> allSignOperations, String packageName) {
         if(Operations == null)
             Operations = new HashMap<String,List<String>>();
 
-        List<String> tempSignOperationString;
-        List<String> tempCheckedSignOperation = new LinkedList<String>();
-        Boolean failedOp = false;
-
         for(String sKey : allSignOperations.keySet()){
-            tempSignOperationString = Arrays.asList(allSignOperations.get(sKey).split("\\,"));
-            if(tempSignOperationString.size() > 0) {
-                for(int i = 0; i < tempSignOperationString.size(); i++) {
-                    List<String> bits = signshopUtil.getParameters(tempSignOperationString.get(i).trim());
-                    String op = bits.get(0);
-                    try {
-                        Class.forName("org.wargamer2010.signshop.operations."+(op.trim()));
-                        tempCheckedSignOperation.add(tempSignOperationString.get(i).trim());
-                    } catch(ClassNotFoundException notfound) {
-                        failedOp = true;
-                        break;
-                    }
+            boolean failedOp = false;
+            List<String> tempCheckedSignOperation = new LinkedList<String>();
+
+            List<String> tempSignOperationString = Arrays.asList(allSignOperations.get(sKey).split("\\,"));
+            for(String tempOperationString : tempSignOperationString) {
+                List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
+                String op = bits.get(0);
+                Object opinstance = getInstance(packageName + "." + op.trim());
+                if(opinstance == null) // Retry with default package
+                    opinstance = getInstance(defaultOPPackage + "." + op.trim());
+                if(opinstance == null) {
+                    failedOp = true;
+                    break;
                 }
-                if(!failedOp && !tempCheckedSignOperation.isEmpty())
-                    Operations.put(sKey.toLowerCase(), tempCheckedSignOperation);
-                tempCheckedSignOperation = new LinkedList<String>();
-                failedOp = false;
+
+                if(opinstance instanceof SignShopOperation) {
+                    SignShopConfig.OperationInstances.put(op.trim(), (SignShopOperation)opinstance);
+                    tempCheckedSignOperation.add(tempOperationString.trim());
+                } else {
+                    failedOp = true;
+                }
             }
+            if(!failedOp && !tempCheckedSignOperation.isEmpty())
+                Operations.put(sKey.toLowerCase(), tempCheckedSignOperation);
         }
 
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
-        aLanguages.remove("config");
+        aLanguages.remove("english");
 
         SignShopConfig.OperationAliases = new HashMap<String,String>();
 
@@ -471,6 +501,17 @@ public class SignShopConfig {
         return Collections.unmodifiableCollection(Operations.keySet());
     }
 
+    public static Collection<String> getAliases(String op) {
+        Collection<String> aliases = new LinkedList<String>();
+        if(Languages.contains(baseLanguage))
+            aliases.add(op); // If the baseLanguage is explicitly requested, we'll add the english OP as an alias
+        for(Map.Entry<String, String> entry : OperationAliases.entrySet()) {
+            if(entry.getValue().equals(op))
+                aliases.add(entry.getKey());
+        }
+        return aliases;
+    }
+
     public static boolean registerOperation(String sName, List<String> blocks) {
         if(sName != null && blocks != null && !blocks.isEmpty()) {
             Operations.put(sName, blocks);
@@ -579,6 +620,29 @@ public class SignShopConfig {
         return null;
     }
 
+    public static Map<String, SignShopOperation> getOperationInstances() {
+        return Collections.unmodifiableMap(OperationInstances);
+    }
+
+    public static Map<String, HashMap<String, Float>> getPriceMultipliers() {
+        return Collections.unmodifiableMap(PriceMultipliers);
+    }
+
+    public static Map<String, List<String>> getCommands() {
+        return Collections.unmodifiableMap(Commands);
+    }
+
+    public static Map<String, Integer> getShopLimits() {
+        return Collections.unmodifiableMap(ShopLimits);
+    }
+
+    public static Map<Material, String> getLinkableMaterials() {
+        return Collections.unmodifiableMap(LinkableMaterials);
+    }
+
+    public static List<SignShopSpecialOp> getSpecialOps() {
+        return Collections.unmodifiableList(SpecialsOps);
+    }
 
     public static int getMaxSellDistance() {
         return MaxSellDistance;

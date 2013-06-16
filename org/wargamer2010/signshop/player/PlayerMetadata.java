@@ -55,6 +55,9 @@ public class PlayerMetadata {
     }
 
     public boolean setMetavalue(String key, String value) {
+        if(getMetaValue(key) != null) {
+            return updateMeta(key, value);
+        }
         SSDatabase metadb = new SSDatabase(filename);
         try {
             Map<Integer, Object> params = new LinkedHashMap<Integer, Object>();
@@ -67,6 +70,20 @@ public class PlayerMetadata {
             metadb.close();
         }
 
+    }
+
+    public boolean updateMeta(String key, String value) {
+        SSDatabase metadb = new SSDatabase(filename);
+        try {
+            Map<Integer, Object> params = new LinkedHashMap<Integer, Object>();
+            params.put(1, value);
+            params.put(2, plugin.getName());
+            params.put(3, ssPlayer.getName());
+            params.put(4, key);
+            return (metadb.runStatement("UPDATE PlayerMeta SET Metavalue = ? WHERE Plugin = ? AND Playername = ? AND Metakey = ?", params, false) != null);
+        } finally {
+            metadb.close();
+        }
     }
 
     public boolean removeMeta(String key) {

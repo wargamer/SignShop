@@ -33,8 +33,8 @@ public class runCommand implements SignShopOperation {
             ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
         boolean isOK = true;
 
-        if(SignShopConfig.Commands.containsKey(sOperation.toLowerCase())) {
-            List<String> commands = SignShopConfig.Commands.get(sOperation.toLowerCase());
+        if(SignShopConfig.getCommands().containsKey(sOperation.toLowerCase())) {
+            List<String> commands = SignShopConfig.getCommands().get(sOperation.toLowerCase());
             for(String command : commands) {
                 boolean ok = true;
                 String sCommand = command;

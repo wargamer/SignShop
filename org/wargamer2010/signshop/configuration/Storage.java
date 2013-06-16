@@ -49,7 +49,7 @@ public class Storage implements Listener {
     private static String itemSeperator = "&";
 
     private Boolean safetosave = true;
-    private Map<String,HashMap<String,List>> invalidShops = new LinkedHashMap<String, HashMap<String,List>>();
+    private Map<String,HashMap<String,List<String>>> invalidShops = new LinkedHashMap<String, HashMap<String,List<String>>>();
 
     private Storage(File ymlFile) {
         if(!ymlFile.exists()) {
@@ -100,7 +100,7 @@ public class Storage implements Listener {
         String worldname = event.getWorld().getName();
         List<String> loaded = new LinkedList<String>();
         SignShop.log("Loading shops for world: " + worldname, Level.INFO);
-        for(Map.Entry<String,HashMap<String,List>> shopSettings : invalidShops.entrySet())
+        for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : invalidShops.entrySet())
         {
             if(shopSettings.getKey().contains(worldname.replace(".", ""))) {
                 if(loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()))
@@ -115,7 +115,7 @@ public class Storage implements Listener {
         }
     }
 
-    private List getSetting(HashMap<String,List> settings, String settingName) throws StorageException {
+    private List<String> getSetting(HashMap<String,List<String>> settings, String settingName) throws StorageException {
         StorageException ex = new StorageException();
         if(settings.containsKey(settingName))
             return settings.get(settingName);
@@ -123,7 +123,7 @@ public class Storage implements Listener {
             throw ex;
     }
 
-    private boolean loadSellerFromSettings(String key, HashMap<String,List> sellerSettings) {
+    private boolean loadSellerFromSettings(String key, HashMap<String,List<String>> sellerSettings) {
         Block seller_sign;
         String seller_owner;
         List<Block> seller_activatables;
@@ -133,7 +133,7 @@ public class Storage implements Listener {
         Map<String, String> miscsettings;
         StorageException storageex = new StorageException();
 
-        List<String> tempList = new LinkedList();
+        List<String> tempList;
         try {
             tempList = getSetting(sellerSettings, "shopworld");
             if(tempList.isEmpty())
@@ -165,7 +165,7 @@ public class Storage implements Listener {
             seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
             miscsettings = new HashMap<String, String>();
             if(sellerSettings.containsKey("misc")) {
-                for(String miscsetting : (List<String>)sellerSettings.get("misc")) {
+                for(String miscsetting : sellerSettings.get("misc")) {
                     String[] miscbits = miscsetting.split(":", 2);
                     if(miscbits.length == 2)
                         miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
@@ -173,7 +173,8 @@ public class Storage implements Listener {
             }
         } catch(StorageException caughtex) {
             try {
-                SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), ((List<String>)getSetting(sellerSettings, "sign")).get(0), ((List<String>)getSetting(sellerSettings, "shopworld")).get(0)), Level.INFO);
+                SignShop.log(getInvalidError(
+                        SignShopConfig.getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
             } catch(StorageException lastex) {
                 SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
             }
@@ -189,7 +190,7 @@ public class Storage implements Listener {
         if(sellersection == null)
             return false;
 
-        Map<String,HashMap<String,List>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
+        Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
         if(tempSellers == null) {
             return legacyLoad();
         }
@@ -199,7 +200,7 @@ public class Storage implements Listener {
 
         Boolean needSave = false;
 
-        for(Map.Entry<String,HashMap<String,List>> shopSettings : tempSellers.entrySet())
+        for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : tempSellers.entrySet())
         {
             needSave = (loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) ? needSave : false);
         }
@@ -546,6 +547,7 @@ public class Storage implements Listener {
     }
 
     private class StorageException extends Exception {
+        private static final long serialVersionUID = 1L;
 
     }
 }

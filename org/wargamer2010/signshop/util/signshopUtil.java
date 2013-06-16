@@ -95,16 +95,9 @@ public class signshopUtil {
     }
 
     public static SignShopOperation getSignShopBlock(String blockName) {
-        try {
-            Class<?> fc = Class.forName("org.wargamer2010.signshop.operations."+blockName);
-            return ((SignShopOperation)fc.newInstance());
-        } catch(ClassNotFoundException notfoundex) {
-            return null;
-        } catch(InstantiationException instex) {
-            return null;
-        } catch(IllegalAccessException illex) {
-            return null;
-        }
+        if(SignShopConfig.getOperationInstances().containsKey(blockName))
+            return SignShopConfig.getOperationInstances().get(blockName);
+        return null;
     }
 
     public static Map<SignShopOperation, List<String>> getSignShopOps(List<String> operation) {
@@ -123,20 +116,7 @@ public class signshopUtil {
     }
 
     public static List<SignShopSpecialOp> getSignShopSpecialOps() {
-        List<SignShopSpecialOp> SignShopOperations = new LinkedList<SignShopSpecialOp>();
-        for(String sSignShopOp : SignShopConfig.SpecialsOps) {
-            try {
-                Class<?> fc = Class.forName("org.wargamer2010.signshop.specialops."+sSignShopOp);
-                SignShopOperations.add((SignShopSpecialOp)fc.newInstance());
-            } catch(ClassNotFoundException notfoundex) {
-                return null;
-            } catch(InstantiationException instex) {
-                return null;
-            } catch(IllegalAccessException illex) {
-                return null;
-            }
-        }
-        return SignShopOperations;
+        return SignShopConfig.getSpecialOps();
     }
 
     public static Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {
@@ -195,12 +175,16 @@ public class signshopUtil {
     }
 
     public static Float getNumberFromThirdLine(Block bSign) {
-        Sign sign = (Sign)bSign.getState();
-        String XPline = sign.getLines()[2];
-        return economyUtil.parsePrice(XPline);
+        return getNumberFromLine(bSign, 2);
     }
 
-
+    public static Float getNumberFromLine(Block bSign, int line) {
+        Sign sign = (Sign)bSign.getState();
+        String XPline = sign.getLines()[line];
+        if(XPline == null)
+            return 0.0f;
+        return economyUtil.parsePrice(XPline);
+    }
 
     public static List<Integer> getSharePercentages(String line) {
         List<String> bits = new LinkedList<String>();
@@ -384,8 +368,8 @@ public class signshopUtil {
     }
 
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
-        String materialName = SignShopConfig.LinkableMaterials.get(bBlock.getType());
-        if(SignShopConfig.LinkableMaterials.containsKey(bBlock.getType())) {
+        String materialName = SignShopConfig.getLinkableMaterials().get(bBlock.getType());
+        if(SignShopConfig.getLinkableMaterials().containsKey(bBlock.getType())) {
             if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                 return false;
