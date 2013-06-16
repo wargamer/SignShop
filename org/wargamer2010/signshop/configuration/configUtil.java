@@ -59,20 +59,22 @@ public class configUtil {
         return tempHasinHash;
     }
 
-    public static HashMap<String,List> fetchListInHashmap(String path, FileConfiguration config) {
-        HashMap<String,List> tempListinHash = new HashMap<String,List>();
+    public static HashMap<String,List<String>> fetchListInHashmap(String path, FileConfiguration config) {
+        HashMap<String,List<String>> tempListinHash = new HashMap<String,List<String>>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempListinHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
-                try {
-                    tempListinHash.put(entry.getKey().toLowerCase(), (List<String>)entry.getValue());
-                } catch(ClassCastException ex) {
-                    List<String> temp = new LinkedList<String>();
-                    temp.add((String)entry.getValue());
-                    tempListinHash.put(entry.getKey().toLowerCase(), temp);
+                List<String> temp = new LinkedList<String>();
+                if(entry.getValue() instanceof List) {
+                    for(Object thing : ((List)entry.getValue()))
+                        if(thing != null)
+                            temp.add(thing.toString());
+                } else {
+                    temp.add(entry.getValue().toString());
                 }
+                tempListinHash.put(entry.getKey().toLowerCase(), temp);
             }
         } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
@@ -80,24 +82,29 @@ public class configUtil {
         return tempListinHash;
     }
 
-    public static Map<String,HashMap<String,List>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
-        HashMap<String,HashMap<String,List>> tempStringHashMap = new HashMap<String,HashMap<String,List>>();
+    public static Map<String,HashMap<String,List<String>>> fetchHashmapInHashmapwithList(String path, FileConfiguration config) {
+        HashMap<String,HashMap<String,List<String>>> tempStringHashMap = new HashMap<String,HashMap<String,List<String>>>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempStringHashMap;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 MemorySection memsec = (MemorySection)entry.getValue();
-                HashMap<String,List> tempmap = new HashMap<String, List>();
+                HashMap<String,List<String>> tempmap = new HashMap<String, List<String>>();
+
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet()) {
-                    try {
-                        tempmap.put(subentry.getKey(), (List)subentry.getValue());
-                    } catch(ClassCastException ex) {
-                        List<String> temp = new LinkedList<String>();
-                        temp.add((String)subentry.getValue());
-                        tempmap.put(subentry.getKey().toLowerCase(), temp);
+                    List<String> temp = new LinkedList<String>();
+                    if(subentry.getValue() instanceof List) {
+                        for(Object thing : ((List)subentry.getValue())) {
+                            if(thing != null)
+                                temp.add(thing.toString());
+                        }
+                    } else {
+                        temp.add(subentry.getValue().toString());
                     }
+                    tempmap.put(subentry.getKey().toLowerCase(), temp);
                 }
+
                 tempStringHashMap.put(entry.getKey(), tempmap);
             }
         } catch(ClassCastException ex) {

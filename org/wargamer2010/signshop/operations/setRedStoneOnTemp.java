@@ -52,7 +52,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         if(!setupOperation(ssArgs))
             return false;
-        
+
         Block bLever;
 
         Integer delay = 20;
@@ -77,7 +77,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
                     state.setData(lever);
                     state.update();
                     signshopUtil.generateInteractEvent(bLever, ssArgs.getPlayer().get().getPlayer(), ssArgs.getBlockFace().get());
-                    Bukkit.getServer().getScheduler().runTaskLaterAsynchronously(SignShop.getInstance(),new lagSetter(bLever),10*delay);
+                    Bukkit.getServer().getScheduler().runTaskLater(SignShop.getInstance(),new lagSetter(bLever),10*delay);
                 }
             }
         }

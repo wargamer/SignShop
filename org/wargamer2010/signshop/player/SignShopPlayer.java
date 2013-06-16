@@ -267,8 +267,8 @@ public class SignShopPlayer {
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
             String sGroup = sGroups[i].toLowerCase();
-            if(SignShopConfig.PriceMultipliers.containsKey(sGroup) && SignShopConfig.PriceMultipliers.get(sGroup).containsKey(sOperation)) {
-                fTemp = SignShopConfig.PriceMultipliers.get(sGroup).get(sOperation);
+            if(SignShopConfig.getPriceMultipliers().containsKey(sGroup) && SignShopConfig.getPriceMultipliers().get(sGroup).containsKey(sOperation)) {
+                fTemp = SignShopConfig.getPriceMultipliers().get(sGroup).get(sOperation);
                 if(first && fTemp != 1.0f) {
                     // Use the first price multiplier to check whether it's a buy or sell transaction
                     // TODO: This setting should probably be pulled from somewhere else but will work with a proper configuration for now
@@ -301,12 +301,12 @@ public class SignShopPlayer {
         Boolean bInRelGroup = false;
         for(int i = 0; i < sGroups.length; i++) {
             String sGroup = sGroups[i].toLowerCase();
-            if(SignShopConfig.ShopLimits.containsKey(sGroup)) {
+            if(SignShopConfig.getShopLimits().containsKey(sGroup)) {
                 bInRelGroup = true;
-                if(iShopAmount < SignShopConfig.ShopLimits.get(sGroup))
+                if(iShopAmount < SignShopConfig.getShopLimits().get(sGroup))
                     iLimit = 0;
-                else if(iLimit != 0 && SignShopConfig.ShopLimits.get(sGroup) > iLimit)
-                    iLimit = SignShopConfig.ShopLimits.get(sGroup);
+                else if(iLimit != 0 && SignShopConfig.getShopLimits().get(sGroup) > iLimit)
+                    iLimit = SignShopConfig.getShopLimits().get(sGroup);
             }
 
         }
@@ -358,35 +358,4 @@ public class SignShopPlayer {
     public boolean isOwner(Seller seller) {
         return (seller.getOwner().equals(sPlayername));
     }
-
-    private class MessageCount {
-        private int iCount = 1;
-        private long lLastSeen;
-
-        private MessageCount(int pCount, long pLastSeen) {
-            iCount = pCount;
-            lLastSeen = pLastSeen;
-        }
-
-        public int getCount() {
-            return iCount;
-        }
-
-        public void incCount() {
-            this.iCount++;
-        }
-
-        public void clrCount() {
-            this.iCount = 0;
-        }
-
-        public long getLastSeen() {
-            return lLastSeen;
-        }
-
-        public void setLastSeen(long lLastSeen) {
-            this.lLastSeen = lLastSeen;
-        }
-    }
-
 }
