@@ -361,6 +361,7 @@ errors:
   itemframe_linked: ItemFrame has been successfully linked.
   itemframe_already_linked: This ItemFrame is already linked to another shop.
   shop_is_now_protected: Your chest(s) have been locked automatically.
+  now_allowed_to_rotate_frame: You are not allowed to rotate this ItemFrame.
 commands:
   TpToOwner:
   - tp !player !owner
