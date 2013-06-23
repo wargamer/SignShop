@@ -18,7 +18,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class SignShopHangingListener implements Listener {
     @EventHandler(priority = EventPriority.HIGH)
     public void onHangingBreakByEntity(HangingBreakByEntityEvent event) {
-        if(event.getRemover() == null || !(event.getRemover() instanceof Player))
+        if(event.getRemover() == null || !(event.getRemover() instanceof Player) || event.isCancelled())
             return;
         Player player = (Player)event.getRemover();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
@@ -28,13 +28,13 @@ public class SignShopHangingListener implements Listener {
                 event.setCancelled(true); // Breaking the frame while being linked to a shop causes an exploit
             return;
         }
-
+        
         event.setCancelled(true);
         if(clicks.mClicksPerEntity.containsKey(event.getEntity())) {
-            ssPlayer.sendMessage("You have deselected a Hanging item.");
+            ssPlayer.sendMessage(SignShopConfig.getError("deselected_hanging", null));
             clicks.mClicksPerEntity.remove(event.getEntity());
         } else {
-            ssPlayer.sendMessage("You have selected a Hanging item.");
+            ssPlayer.sendMessage(SignShopConfig.getError("selected_hanging", null));
             clicks.mClicksPerEntity.put(event.getEntity(), ssPlayer.getPlayer());
         }
     }

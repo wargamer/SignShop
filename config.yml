@@ -354,6 +354,11 @@ errors:
   towny_shop_plot_not_allowed: This shop is not on a shop plot, please move it.
   towny_shop_plot_not_allowed_but_op: This shop is not on a shop plot but you are OP.
   towny_shop_plot_not_allowed_but_perm: This shop is not on a shop plot but you have the bypass permission node.
+  deselected_hanging: You have deselected a Hanging item.
+  selected_hanging: You have selected a Hanging item.
+  itemframe_unlinked: ItemFrame has been successfully unlinked.
+  itemframe_linked: ItemFrame has been successfully linked.
+  itemframe_already_linked: This ItemFrame is already linked to another shop.
 commands:
   TpToOwner:
   - tp !player !owner
