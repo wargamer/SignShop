@@ -24,4 +24,9 @@ public class ResidenceHook implements Hook {
         }
         return true;
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

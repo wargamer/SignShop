@@ -53,4 +53,13 @@ public class HookManager {
         }
         return true;
     }
+
+    public static boolean protectBlock(Player player, Block block) {
+        for(Hook hookEntry : hooks.keySet()) {
+            if(hookEntry.protectBlock(player, block))
+                return true;
+        }
+
+        return false;
+    }
 }

@@ -79,6 +79,7 @@ public class SignShopConfig {
     private static boolean EnableShopOwnerProtection = true;
     private static boolean EnableGoogleTranslation = false;
     private static boolean EnableNamesFromTheWeb = false;
+    private static boolean EnableAutomaticLock = false;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -247,6 +248,7 @@ public class SignShopConfig {
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
         EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
         EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
+        EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -736,6 +738,10 @@ public class SignShopConfig {
 
     public static boolean getEnableNamesFromTheWeb() {
         return EnableNamesFromTheWeb;
+    }
+
+    public static boolean getEnableAutomaticLock() {
+        return EnableAutomaticLock;
     }
 
     public static Material getLinkMaterial() {

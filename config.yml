@@ -25,6 +25,7 @@ EnableShopPlotSupport: false
 EnableShopOwnerProtection: true
 EnableGoogleTranslation: false
 EnableNamesFromTheWeb: false
+EnableAutomaticLock: false
 Languages: english
 LinkMaterial: redstone
 UpdateMaterial: ink_sack
@@ -359,6 +360,7 @@ errors:
   itemframe_unlinked: ItemFrame has been successfully unlinked.
   itemframe_linked: ItemFrame has been successfully linked.
   itemframe_already_linked: This ItemFrame is already linked to another shop.
+  shop_is_now_protected: Your chest(s) have been locked automatically.
 commands:
   TpToOwner:
   - tp !player !owner

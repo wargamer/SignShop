@@ -19,4 +19,9 @@ public class PreciousStonesHook implements Hook {
         IApi api = PreciousStones.API();
         return (api.canPlace(player, block.getLocation()));
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

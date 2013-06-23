@@ -25,4 +25,9 @@ public class PlotMeHook implements Hook {
         }
         return foundAllowed;
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }
