@@ -12,7 +12,10 @@ import org.wargamer2010.signshop.util.itemUtil;
 import com.kellerkindt.scs.*;
 import java.util.LinkedHashMap;
 import java.util.logging.Level;
+import org.bukkit.Material;
 import org.bukkit.block.Sign;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.ItemFrame;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -106,6 +109,15 @@ public class Seller {
             }
             if(shop != null)
                 scs.getShopHandler().removeShop(shop);
+        }
+        if(miscProps.containsKey("itemframelocation") && Material.getMaterial("ITEM_FRAME") != null) {
+            Location loc = signshopUtil.convertStringToLocation(miscProps.get("itemframelocation"), Bukkit.getWorld(world));
+            for(Entity ent : Bukkit.getWorld(world).getEntities()) {
+                Location entloc = ent.getLocation();
+                if(signshopUtil.roughLocationCompare(entloc, loc))
+                     if(ent instanceof ItemFrame)
+                        ((ItemFrame)ent).setItem(null);
+            }
         }
     }
 

@@ -1,12 +1,16 @@
 package org.wargamer2010.signshop.configuration;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.List;
 import java.util.LinkedList;
@@ -15,6 +19,7 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class configUtil {
     private configUtil() {
@@ -186,7 +191,11 @@ public class configUtil {
                 ymlInPluginFolder.options().copyDefaults(true);
                 ymlInPluginFolder.options().copyHeader(true);
                 ymlInPluginFolder.setDefaults(thingInJar);
-                ymlInPluginFolder.save(configFile);
+                // ymlInPluginFolder.save(configFile);
+                FileWriter writer = new FileWriter(configFile);
+                in = pluginclass.getResourceAsStream("/" + filenameInJar);
+                writer.write(addOriginalCommentsToStream(in, ymlInPluginFolder.saveToString()));
+                writer.close();
                 in.close();
             }
             return thingInJar;
@@ -196,4 +205,104 @@ public class configUtil {
         return null;
     }
 
+    private static String addOriginalCommentsToStream(InputStream configInJar, String configOnDisc) {
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(configInJar));
+            StringBuilder builder = new StringBuilder(1000);
+            String temp = "";
+            CommentOccurence lastComment = null;
+            List<CommentOccurence> comments = new LinkedList<CommentOccurence>();
+            List<String> configLines = new LinkedList<String>();
+            while(temp != null) {
+                temp = reader.readLine();
+                if(temp != null) {
+                    builder.append(temp);
+
+                    if(temp.trim().startsWith("#")) {
+                        if(lastComment == null)
+                            lastComment = new CommentOccurence(temp);
+                        else
+                            lastComment.addCommentLine(temp);
+                    } else if(temp.contains(":")) {
+                        String lastConfigLine = temp.split(":")[0];
+                        configLines.add(lastConfigLine.trim());
+                        if(lastComment != null)
+                            lastComment.setConfigLine(lastConfigLine);
+                    }
+
+                    if(!temp.trim().startsWith("#") && lastComment != null && !lastComment.getConfigLine().isEmpty()) {
+                        int tempCount = 0;
+                        for(String configLine : configLines) {
+                            if(configLine.startsWith(lastComment.getConfigLine()))
+                                tempCount++;
+                        }
+                        lastComment.setConfigLineCount(tempCount);
+                        comments.add(lastComment);
+                        lastComment = null;
+                    }
+                }
+            }
+
+            String newConfigOnDisc = configOnDisc;
+            String[] lines = newConfigOnDisc.split("\n");
+            for(int i = 0; i < lines.length; i++) {
+                String line = lines[i];
+                for(CommentOccurence comment : comments) {
+                    if(line.startsWith(comment.getConfigLine()) && comment.hitCount()) {
+                        lines[i] = (comment.getComment() + "\n" + line);
+                    }
+                }
+            }
+
+            return signshopUtil.implode(lines, "\n");
+        } catch(FileNotFoundException ex) { }
+        catch(IOException ex) { }
+
+        return configOnDisc;
+    }
+
+    private static class CommentOccurence {
+        private String Comment = "";
+        private String ConfigLine = "";
+        private int ConfigLineCount = -1;
+        private int Counter = 1;
+
+        private CommentOccurence(String commentLine) {
+            Comment = commentLine;
+        }
+
+        public void addCommentLine(String line) {
+            if(Comment.isEmpty())
+                Comment = line;
+            else
+                Comment += ("\n" + line);
+        }
+
+        public void setConfigLine(String ConfigLine) {
+            this.ConfigLine = ConfigLine;
+        }
+
+        public void setConfigLineCount(int ConfigLineCount) {
+            this.ConfigLineCount = ConfigLineCount;
+        }
+
+        public String getComment() {
+            return Comment;
+        }
+
+        public String getConfigLine() {
+            return ConfigLine;
+        }
+
+        public int getConfigLineCount() {
+            return ConfigLineCount;
+        }
+
+        public boolean hitCount() {
+            boolean hit = Counter != ConfigLineCount;
+            if(!hit)
+                Counter++;
+            return hit;
+        }
+    }
 }

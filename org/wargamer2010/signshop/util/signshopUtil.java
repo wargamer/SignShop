@@ -29,6 +29,7 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Cancellable;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.InventoryHolder;
@@ -369,7 +370,7 @@ public class signshopUtil {
 
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
         String materialName = SignShopConfig.getLinkableMaterials().get(bBlock.getType());
-        if(SignShopConfig.getLinkableMaterials().containsKey(bBlock.getType())) {
+        if(materialName != null) {
             if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                 return false;
@@ -380,8 +381,12 @@ public class signshopUtil {
     }
 
     public static Boolean registerClickedMaterial(PlayerInteractEvent event) {
-        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
-        Boolean signshopMat = registerClickedMaterial(event.getClickedBlock(), ssPlayer);
+        return registerClickedMaterial(event, event.getPlayer(), event.getClickedBlock());
+    }
+
+    public static Boolean registerClickedMaterial(Cancellable event, Player player, Block clickedBlock) {
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        Boolean signshopMat = registerClickedMaterial(clickedBlock, ssPlayer);
         if(signshopMat)
             event.setCancelled(true);
         return signshopMat;
@@ -510,5 +515,13 @@ public class signshopUtil {
         }
 
         return true;
+    }
+
+    public static boolean doublesAsInts(double DoubleA, double DoubleB) {
+        return (Math.floor(DoubleA) == Math.floor(DoubleB) || Math.ceil(DoubleA) == Math.ceil(DoubleB));
+    }
+
+    public static boolean roughLocationCompare(Location locA, Location locB) {
+        return (doublesAsInts(locA.getX(), locB.getX()) && doublesAsInts(locA.getY(), locB.getY()) && doublesAsInts(locA.getZ(), locB.getZ()));
     }
 }
