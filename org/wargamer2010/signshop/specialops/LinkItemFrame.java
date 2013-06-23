@@ -40,8 +40,16 @@ public class LinkItemFrame implements SignShopSpecialOp {
 
         List<ItemFrame> itemframes = new LinkedList<ItemFrame>();
         for(Map.Entry<Entity, Player> entry : clicks.mClicksPerEntity.entrySet()) {
-            if(entry.getValue() == player && entry.getKey() instanceof ItemFrame)
-                itemframes.add((ItemFrame)entry.getKey());
+            if(entry.getValue() == player && entry.getKey() instanceof ItemFrame) {
+                List<Block> existingShops = Storage.get().getShopsWithMiscSetting("itemframelocation", signshopUtil.convertLocationToString(entry.getKey().getLocation()));
+                existingShops.remove(seller.getSign());
+                if(existingShops.isEmpty())
+                    itemframes.add((ItemFrame)entry.getKey());
+                else {
+                    ssPlayer.sendMessage(SignShopConfig.getError("itemframe_already_linked", null));
+                    return true;
+                }
+            }
         }
         if(itemframes.isEmpty())
             return false;
@@ -59,7 +67,7 @@ public class LinkItemFrame implements SignShopSpecialOp {
         Boolean bUnlinked = false;
         for(ItemFrame bTemp : itemframes) {
             if(currentEntities.contains(bTemp)) {
-                ssPlayer.sendMessage(SignShopConfig.getError("ItemFrame has been successfully unlinked.", null));
+                ssPlayer.sendMessage(SignShopConfig.getError("itemframe_unlinked", null));
                 bUnlinked = true;
                 currentEntities.remove(bTemp);
                 bTemp.setItem(null);
@@ -88,12 +96,10 @@ public class LinkItemFrame implements SignShopSpecialOp {
         if(locations.isEmpty())
             return true;
 
-        ssPlayer.sendMessage("ItemFrame has been successfully linked.");
+        ssPlayer.sendMessage(SignShopConfig.getError("itemframe_linked", null));
         seller.getMisc().put(MiscSetting, locations);
         Storage.get().SafeSave();
 
-        // seller.getMisc().put("itemframelocation", signshopUtil.convertLocationToString(itemframe.getLocation()));
-        // ssPlayer.sendMessage("ItemFrame has been successfully linked.");
         return true;
     }
 }
