@@ -1,16 +1,6 @@
 package org.wargamer2010.signshop.util;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.lang.String;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.URLConnection;
-import java.sql.Driver;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -18,8 +8,6 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -28,13 +16,13 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
@@ -355,9 +343,6 @@ public class signshopUtil {
         return signs;
     }
 
-
-
-
     public static List<Block> getBlocksFromLocStringList(List<String> sLocs, World world) {
         List<Block> blocklist = new LinkedList<Block>();
         for(String loc : sLocs) {
@@ -366,6 +351,39 @@ public class signshopUtil {
                 blocklist.add(temp.getBlock());
         }
         return blocklist;
+    }
+
+    public static List<Entity> getEntitiesFromMisc(Seller seller, String miscprop) {
+        List<Entity> entities = new LinkedList<Entity>();
+        if(seller.getMisc().containsKey(miscprop)) {
+            String imploded = seller.getMisc().get(miscprop);
+            String[] exploded;
+            if(imploded.contains(SignShopArguments.seperator))
+                exploded = imploded.split(SignShopArguments.seperator);
+            else {
+                exploded = new String[1];
+                exploded[0] = imploded;
+            }
+            List<String> tempList = Arrays.asList(exploded);
+            entities = getEntitiesFromLocStringList(tempList, Bukkit.getServer().getWorld(seller.getWorld()));
+        }
+        return entities;
+    }
+
+    public static List<Entity> getEntitiesFromLocStringList(List<String> sLocs, World world) {
+        List<Entity> entities = new LinkedList<Entity>();
+        List<Entity> worldEntities = world.getEntities();
+        for(String loc : sLocs) {
+            Location temp = signshopUtil.convertStringToLocation(loc, world);
+            if(temp != null) {
+                for(Entity ent : worldEntities) {
+                    if(signshopUtil.roughLocationCompare(temp, ent.getLocation())) {
+                        entities.add(ent);
+                    }
+                }
+            }
+        }
+        return entities;
     }
 
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
@@ -518,7 +536,7 @@ public class signshopUtil {
     }
 
     public static boolean doublesAsInts(double DoubleA, double DoubleB) {
-        return (Math.floor(DoubleA) == Math.floor(DoubleB) || Math.ceil(DoubleA) == Math.ceil(DoubleB));
+        return (Math.floor(DoubleA) == Math.floor(DoubleB));
     }
 
     public static boolean roughLocationCompare(Location locA, Location locB) {

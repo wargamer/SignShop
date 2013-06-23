@@ -111,12 +111,10 @@ public class Seller {
                 scs.getShopHandler().removeShop(shop);
         }
         if(miscProps.containsKey("itemframelocation") && Material.getMaterial("ITEM_FRAME") != null) {
-            Location loc = signshopUtil.convertStringToLocation(miscProps.get("itemframelocation"), Bukkit.getWorld(world));
-            for(Entity ent : Bukkit.getWorld(world).getEntities()) {
-                Location entloc = ent.getLocation();
-                if(signshopUtil.roughLocationCompare(entloc, loc))
-                     if(ent instanceof ItemFrame)
-                        ((ItemFrame)ent).setItem(null);
+            for(Entity ent : signshopUtil.getEntitiesFromMisc(this, "itemframelocation")) {
+                if(ent instanceof ItemFrame) {
+                    ((ItemFrame)ent).setItem(null);
+                }
             }
         }
     }
