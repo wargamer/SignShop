@@ -22,13 +22,13 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.runCommand;
+import org.wargamer2010.signshop.specialops.LinkItemFrame;
 import org.wargamer2010.signshop.specialops.LinkSpecialSign;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 import org.wargamer2010.signshop.specialops.changeOwner;
@@ -166,6 +166,7 @@ public class SignShopConfig {
         SpecialsOps.add(new copySign());
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add(new linkShowcase());
+        SpecialsOps.add(new LinkItemFrame());
         SpecialsOps.add(new LinkSpecialSign());
         SpecialsOps.add(new changeOwner());
         SpecialsOps.add(new linkAdditionalBlocks());
@@ -199,6 +200,7 @@ public class SignShopConfig {
         safeAddLinkeable("WOODEN_DOOR", "door");
         safeAddLinkeable("IRON_DOOR", "door");
         safeAddLinkeable("IRON_DOOR_BLOCK", "door");
+        safeAddLinkeable("ITEM_FRAME", "itemframe");
     }
 
     /**
