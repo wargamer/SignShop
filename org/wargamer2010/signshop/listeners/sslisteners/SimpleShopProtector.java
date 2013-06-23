@@ -16,8 +16,10 @@ import org.bukkit.event.Listener;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
+import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -130,5 +132,17 @@ public class SimpleShopProtector implements Listener {
             // More shops might be attached to this attachable, but the event will be fired multiple times
             // No need to remove the seller as we can't safely assume breaking things like a Chest makes the shop useless
         }
+    }
+
+    @EventHandler(priority = EventPriority.MONITOR)
+    public void onSSCreatedEvent(SSCreatedEvent event) {
+        if(event.isCancelled() || !SignShopConfig.getEnableAutomaticLock())
+            return;
+
+        for(Block containable : event.getContainables()) {
+            if(HookManager.protectBlock(event.getPlayer().getPlayer(), containable))
+                event.getPlayer().sendMessage(SignShopConfig.getError("shop_is_now_protected", event.getMessageParts()));
+        }
+
     }
 }

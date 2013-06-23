@@ -19,4 +19,9 @@ public class GriefPreventionHook implements Hook {
         GriefPrevention plugin = (GriefPrevention)HookManager.getHook("GriefPrevention");
         return (plugin.allowBuild(player, block.getLocation()) == null);
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

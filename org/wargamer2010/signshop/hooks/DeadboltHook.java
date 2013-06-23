@@ -22,4 +22,9 @@ public class DeadboltHook implements Hook {
             return true;
         }
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

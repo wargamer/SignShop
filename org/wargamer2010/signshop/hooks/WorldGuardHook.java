@@ -22,4 +22,9 @@ public class WorldGuardHook implements Hook  {
         WorldGuardPlugin WG = (WorldGuardPlugin)HookManager.getHook("WorldGuard");
         return WG.canBuild(player, block);
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

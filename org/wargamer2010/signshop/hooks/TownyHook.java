@@ -15,4 +15,9 @@ public class TownyHook implements Hook {
     public Boolean canBuild(Player player, Block block) {
         return true;
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }

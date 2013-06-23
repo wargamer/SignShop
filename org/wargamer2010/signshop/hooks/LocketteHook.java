@@ -17,4 +17,9 @@ public class LocketteHook implements Hook {
             return true;
         return (Lockette.isUser(block, player.getName(), false) || Lockette.isEveryone(block));
     }
+
+    @Override
+    public Boolean protectBlock(Player player, Block block) {
+        return false;
+    }
 }
