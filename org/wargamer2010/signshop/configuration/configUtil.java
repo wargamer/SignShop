@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
@@ -188,10 +189,10 @@ public class configUtil {
             InputStream in = pluginclass.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
                 thingInJar.load(in);
+                thingInJar.options().copyHeader(false);
                 ymlInPluginFolder.options().copyDefaults(true);
-                ymlInPluginFolder.options().copyHeader(true);
+                ymlInPluginFolder.options().copyHeader(false); // Don't copy header since addOriginalCommentsToStream will fix that
                 ymlInPluginFolder.setDefaults(thingInJar);
-                // ymlInPluginFolder.save(configFile);
                 FileWriter writer = new FileWriter(configFile);
                 in = pluginclass.getResourceAsStream("/" + filenameInJar);
                 writer.write(addOriginalCommentsToStream(in, ymlInPluginFolder.saveToString()));
@@ -200,9 +201,9 @@ public class configUtil {
             }
             return thingInJar;
         }
-        catch(FileNotFoundException ex) { ex.printStackTrace(); }
-        catch(IOException ex) { ex.printStackTrace(); }
-        catch(InvalidConfigurationException ex) { ex.printStackTrace(); }
+        catch(FileNotFoundException ex) { SignShop.log("YML file called " + filenameInJar + " could not be found!", Level.SEVERE); }
+        catch(IOException ex) { SignShop.log("YML file called " + filenameInJar + " could not be loaded because: " + ex.getMessage(), Level.SEVERE); }
+        catch(InvalidConfigurationException ex) { SignShop.log("YML file called " + filenameInJar + " could not be loaded because: " + ex.getMessage(), Level.SEVERE); }
         return null;
     }
 
@@ -249,7 +250,9 @@ public class configUtil {
             }
 
             String newConfigOnDisc = configOnDisc;
-            String[] lines = newConfigOnDisc.split("\n");
+            // Remove annoying auto-generated header lines by filtering on lines starting with #
+            String[] lines = filterByStarting(newConfigOnDisc.split("\n"), "#");
+
             for(int i = 0; i < lines.length; i++) {
                 String line = lines[i];
                 for(CommentOccurence comment : comments) {
@@ -264,6 +267,17 @@ public class configUtil {
         catch(IOException ex) { }
 
         return configOnDisc;
+    }
+
+    private static String[] filterByStarting(String[] arr, String lineStartsWith) {
+        List<String> tempLines = Arrays.asList(arr);
+        List<String> finalList = new LinkedList<String>();
+
+        for(String tempLine : tempLines)
+            if(!tempLine.startsWith(lineStartsWith))
+                finalList.add(tempLine);
+        String[] newArr = new String[finalList.size()];
+        return finalList.toArray(newArr);
     }
 
     private static class CommentOccurence {
