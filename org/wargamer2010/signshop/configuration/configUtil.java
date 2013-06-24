@@ -199,10 +199,15 @@ public class configUtil {
                 in.close();
             }
             return thingInJar;
-        } catch(FileNotFoundException ex) { }
-        catch(IOException ex) { }
-        catch(InvalidConfigurationException ex) { }
+        }
+        catch(FileNotFoundException ex) { ex.printStackTrace(); }
+        catch(IOException ex) { ex.printStackTrace(); }
+        catch(InvalidConfigurationException ex) { ex.printStackTrace(); }
         return null;
+    }
+
+    private static boolean isCommentLine(String line) {
+        return (line == null || line.trim().isEmpty() || line.trim().startsWith("#"));
     }
 
     private static String addOriginalCommentsToStream(InputStream configInJar, String configOnDisc) {
@@ -218,7 +223,7 @@ public class configUtil {
                 if(temp != null) {
                     builder.append(temp);
 
-                    if(temp.trim().startsWith("#")) {
+                    if(isCommentLine(temp)) {
                         if(lastComment == null)
                             lastComment = new CommentOccurence(temp);
                         else
@@ -230,7 +235,7 @@ public class configUtil {
                             lastComment.setConfigLine(lastConfigLine);
                     }
 
-                    if(!temp.trim().startsWith("#") && lastComment != null && !lastComment.getConfigLine().isEmpty()) {
+                    if(!isCommentLine(temp) && lastComment != null && !lastComment.getConfigLine().isEmpty()) {
                         int tempCount = 0;
                         for(String configLine : configLines) {
                             if(configLine.startsWith(lastComment.getConfigLine()))
@@ -250,6 +255,7 @@ public class configUtil {
                 for(CommentOccurence comment : comments) {
                     if(line.startsWith(comment.getConfigLine()) && comment.hitCount()) {
                         lines[i] = (comment.getComment() + "\n" + line);
+                        System.out.println("New line: " + lines[i]);
                     }
                 }
             }
@@ -268,12 +274,12 @@ public class configUtil {
         private int Counter = 1;
 
         private CommentOccurence(String commentLine) {
-            Comment = commentLine;
+            Comment = commentLine.isEmpty() ? " " : commentLine;
         }
 
         public void addCommentLine(String line) {
             if(Comment.isEmpty())
-                Comment = line;
+                Comment = line.isEmpty() ? " " : line;
             else
                 Comment += ("\n" + line);
         }
@@ -299,7 +305,7 @@ public class configUtil {
         }
 
         public boolean hitCount() {
-            boolean hit = Counter != ConfigLineCount;
+            boolean hit = Counter == ConfigLineCount;
             if(!hit)
                 Counter++;
             return hit;
