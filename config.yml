@@ -13,8 +13,8 @@ OPOverride: true
 # Whether or not to make a log of all SignShop transactions (Default = false)
 TransactionLog: false
 
-# If commands are detected for a sign in the “commands:” section, SignShop will automatically add the “runCommand” block to the sign name in the “signs:” section (Default = true)
-# Disable to prevent SignShop from modifying the “signs:” section [Not Recommended]
+# If commands are detected for a sign in the "commands:" section, SignShop will automatically add the "runCommand" block to the sign name in the "signs:" section (Default = true)
+# Disable to prevent SignShop from modifying the "signs:" section [Not Recommended]
 fixIncompleteOperations: true
 
 # Minimum time (in seconds) between SignShop sending messages to players (Default = 0)
@@ -45,7 +45,7 @@ DestroyMaterial: gold_axe
 # Changes the default language for SignShop, allowing signs in english and and the selected language
 # Available languages are dutch, english, portuguese, russian
 # Send us your translated configs and we will add it to our supported languages
-# NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do “english, dutch”
+# NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
 Languages: english
 
 # Fetch more readable item names from the internet (Default = false)
@@ -134,14 +134,14 @@ Blacklisted_items:
 # Disable to silence the warnings [Not Recommended]
 DisableEssentialsSigns: true
 
-# Must be enabled to use Essentials' worth.yml for prices by writing “[worth]” on the bottom line of a sign (Default = false)
+# Must be enabled to use Essentials' worth.yml for prices by writing "[worth]" on the bottom line of a sign (Default = false)
 EnablePriceFromWorth: false
 
 # Must be enabled for SignShop to place shop icons over dynmap maps (Default = true)
 EnableDynmapSupport: true
 
 # Forces players to only create shops in allowed areas (Default = false)
-# Currently supports Worldguard's “allow-shop” flag, and Towny's shop plots
+# Currently supports Worldguard's "allow-shop" flag, and Towny's shop plots
 # Can be bypassed with the SignShop.BypassShopPlots.* permission
 EnableShopPlotSupport: false
 
@@ -195,7 +195,7 @@ signs:
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
   iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
 
-  
+
 #----------- Sign Commands ------------------
 
 # Used to make signs run commands
@@ -254,7 +254,7 @@ messages:
     ResetKit: You have setup a sign that resets !param signs!
     iXPBuy: You have put !items for sale at the cost of !xp XP points!
     iXPSell: You have put !items infinitely for sale at a price of !xp XP points!
-    
+
   # These are given when you left click a sign
   confirm:
     Buy: Buy !items for !price?
@@ -373,7 +373,7 @@ messages:
     ResetKit: ''
     iXPBuy: ''
     iXPSell: ''
-    
+
   # These are used in conjunction with the /signshop sign SIGNNAME command.
   help:
     Buy: The Buy sign exchanges the customer's money for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
