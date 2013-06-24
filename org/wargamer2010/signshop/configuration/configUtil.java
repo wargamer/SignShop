@@ -255,7 +255,6 @@ public class configUtil {
                 for(CommentOccurence comment : comments) {
                     if(line.startsWith(comment.getConfigLine()) && comment.hitCount()) {
                         lines[i] = (comment.getComment() + "\n" + line);
-                        System.out.println("New line: " + lines[i]);
                     }
                 }
             }
