@@ -58,6 +58,6 @@ public class SignShopHangingListener implements Listener {
             }
         }
         event.setCancelled(true);
-        ssPlayer.sendMessage(SignShopConfig.getError("now_allowed_to_rotate_frame", null));
+        ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_rotate_frame", null));
     }
 }
