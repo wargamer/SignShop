@@ -231,7 +231,7 @@ public class configUtil {
                             lastComment.addCommentLine(temp);
                     } else if(temp.contains(":")) {
                         String lastConfigLine = temp.split(":")[0];
-                        configLines.add(lastConfigLine.trim());
+                        configLines.add(lastConfigLine);
                         if(lastComment != null)
                             lastComment.setConfigLine(lastConfigLine);
                     }
