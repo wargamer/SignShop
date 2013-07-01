@@ -1,0 +1,326 @@
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+
+signs:
+  Comprar: Buy
+  Vender: Sell
+  Doar: Donate
+  DoarMao: DonateHand
+  Slot: Slot
+  euVendo: iSell
+  euCompro: iBuy
+  fComprar: gBuy
+  fVender: gSell
+  Dia: Day
+  Noite: Night
+  Chuva: Rain
+  LimparCéus: ClearSkies
+  LigarDsp: DeviceOn
+  DesligarDsp: DeviceOff
+  Alternar: Toggle
+  Dispositivo: Device
+  Curar: Heal
+  Reparar: Repair
+  Lixo: Dispose
+  DspItem: DeviceItem
+  euSlot: iSlot
+  Encantar: Enchant
+  euComproEXP: iBuyXP
+  euVendoEXP: iSellXP
+  euTroco: iTrade
+  Trocar: Trade
+  TpParaDono: TpToOwner
+  Classe: Class
+  Desencantar: Disenchant
+  Comando: Command
+  Partilhar: Share
+  Restrito: Restricted
+  Banco: Bank
+  Jukebox: Jukebox
+  Kit: Kit
+  ResetarKit: ResetKit
+  euEXPCompro: iXPBuy
+  euEXPVendo: iXPSell
+messages:
+  setup:
+    Buy: Você pos !items à venda pelo preço !price!
+    Sell: Você pos uma recompensa de !price por !items!
+    Donate: Você criou uma caixa de doaçao de !items!
+    DonateHand: Você criou uma caixa de doação para qualquer item
+    Slot: Você criou um caçaníquel cobrando !price oferencendo !items como recompensa
+    iBuy: Você pos infinitos !items à venda pelo preço !price!
+    iSell: Você pos uma recompensa infinita de !price por !items!
+    gBuy: Você criou uma loja fantasma vendendo !items por !price! (Aviso, você nao vai ganhar ou perder dinheiro por esta loja)
+    gSell: Você criou uma loja fantasma comprando !items por !price! (Aviso, você nao vai ganher ou perder dinheiro por esta loja)
+    Day: Você criou um controlador de tempo que custa !price!
+    Night: Você criou um controlador de tempo que custa !price!
+    Rain: Você criou um controlador de clima pelo preço de que custa !price!
+    ClearSkies: Você criou um controlador de clima que custa !price!
+    DeviceOn: Você criou um ativador de dispositivo que custa !price!
+    DeviceOff: Você criou um desativador de dispositivo que custa !price!
+    Toggle: Você criou um alternador que custa !price!
+    Device: Você criou um dispositivo ativador temporário que custa !price!
+    Heal: Você criou uma estaçao de cura que custa !price!
+    Repair: Você criou uma estaçao de reparo que custa !price!
+    Dispose: Você criou uma placa de lixo
+    DeviceItem: Você criou um dispositivo ativador temporário que custa !items!
+    iSlot: Você criou um caçaníquel que custa !price oferencendo !items infinitos!
+    Enchant: Você criou um Encantador que custa !price e encanta com !enchantments!
+    iSellXP: Você pos uma recompensa de !price por !xp EXP
+    iBuyXP: Você pos !xp XP à venda pelo preço de !price!
+    iTrade: Você criou um baú de troca que custa !chest1 for !chest2!
+    Trade: Você criou um baú de troca que custa !chest1 for !chest2!
+    TpToOwner: Você criou uma loja de comando exemplo, vendendo teleportes para !owner por !price!
+    Class: Você criou uma loja que vende uma série de itens por !price!
+    Disenchant: Você criou uma placa que remove os encantamentos por !price!
+    Command: Você criou uma placa que executa comandos por !price!
+    Jukebox: Você criou uma Jukebox que toca discos do baú por !price!
+    Kit: Você criou um kit de uso único (!items) por !price!
+    ResetKit: Você criou uma placa que reseta !param signs!
+    iXPBuy: Você pos !items à venda pelo preço de !xp pontos de EXP!
+    iXPSell: Você pos infinitos !items à venda pelo preço de !xp pontos de EXP!
+  confirm:
+    Buy: Comprar !items por !price?
+    Sell: Vender !items por !price?
+    Donate: Doar !items?
+    DonateHand: Doar !items?
+    Slot: Jogar neste caçaníquel por !price?
+    iBuy: Comprar !items por !price?
+    iSell: Vender !items por !price?
+    gBuy: Comprar !items por !price?
+    gSell: Vender !items por !price?
+    Day: Mudar para dia por !price?
+    Night: Mudar para noite por !price?
+    Rain: Mudar o tempo para chuvoso por !price?
+    ClearSkies: Mudar o tempo para ensolarado por !price?
+    DeviceOn: Ligar este dispositivo por !price?
+    DeviceOff: Desativar este dispositivo por !price?
+    Toggle: Alternar este dispositivo por !price?
+    Device: Ativar este dispositivo temporariamente por !price?
+    Heal: Quer se curar !price?
+    Repair: Quer reparar o item na sua mao por !price?
+    Dispose: Jogar !items no lixo?
+    DeviceItem: Ativar este dispositivo temporariamente por !items?
+    iSlot: Quer jogar este CaçaNíquel infinito por !price?
+    Enchant: Encantar o seu item com !enchantments por !price?
+    iSellXP: Vender !xp EXP por !price?
+    iBuyXP: Comprar !xp XP por !price?
+    iTrade: Trocar !chest2 pelo !chest1?
+    Trade: Trocar !chest2 pelo !chest1?
+    TpToOwner: Teleportar para !owner por !price?
+    Class: Comprar a série de itens contendo !items por !price?
+    Disenchant: Remover encantamentos do item na sua mao por !price?
+    Command: Executar os comandos nesta placa por !price?
+    Jukebox: Tocar o disco por !price?
+    Kit: Pegar este kit (!items) uma vez por !price?
+    ResetKit: Resetar a placa !param por !price!
+    iXPBuy: Comprar !items por !xp pontos de EXP?
+    iXPSell: Vender !items por !xp pontos de EXP?
+  transaction:
+    Buy: Você comprou !items por !price!
+    Sell: Você vendeu !items por !price!
+    Donate: Você doou !items!
+    DonateHand: Você doou !items!
+    Slot: Você ganhou !items!
+    iBuy: Você comprou !items por !price!
+    iSell: Você vendeu !items por !price!
+    gBuy: Você comprou !items por !price!
+    gSell: Você vendeu !items por !price!
+    Day: Você mudou para dia por !price!
+    Night: Você mudou para noite por !price!
+    Rain: Você mudou o tempo para chuvoso por !price!
+    ClearSkies: Você mudou o tempo para ensolarado por !price!
+    DeviceOn: Você ativou este dispositivo por !price!
+    DeviceOff: Você desativou este dispositivo por !price!
+    Toggle: Você alternou este dispositivo !price!
+    Device: Você ativou este dispositivo temporariamente por !price!
+    Heal: Você se curou por !price!
+    Repair: Você reparou um item por !price!
+    Dispose: Você jogou !items no lixo!
+    DeviceItem: Você ativou este dispositivo temporariamente por !items!
+    iSlot: Você ganhou !items!
+    Enchant: Você encantou seu item com !enchantments por !price!
+    iSellXP: Você vendeu !xp pontos de EXP por !price!
+    iBuyXP: Você comprou !xp pontos de EXP por !price!
+    iTrade: Você trocou !chest1 por !chest2!
+    Trade: Você trocou !chest1 por !chest2!
+    TpToOwner: Você foi teleportado para !owner por !price!
+    Class: Você comprou a série de itens contendo !items por !price!
+    Disenchant: Você removeu os encantamentos do item na sua mao por !price!
+    Command: Você executou os comandos na placa por !price!
+    Jukebox: Você fez a Jukebox tocar o disco por !price!
+    Kit: Você pegou !items por !price!
+    ResetKit: Voce resetou a placa !param por !price!
+    iXPBuy: Você comprou !items por !xp pontos de EXP!
+    iXPSell: Você vendeu !items por !xp pontos de EXP!
+  transaction_owner:
+    Buy: \!customer comprou !items por !price de você!
+    Sell: \!customer te vendeu !items por !price!
+    Donate: \!customer doou !items para você!
+    DonateHand: \!customer doou !items para você!
+    Slot: \!customer jogou no CaçaNíquel !price e ganhou !items!
+    iBuy: ''
+    iSell: ''
+    gBuy: \!customer comprou !items de sua loja fantasma!
+    gSell: \!customer vendeu !items para a sua loja fantasma!
+    Day: ''
+    Night: ''
+    Rain: ''
+    ClearSkies: ''
+    DeviceOn: \!customer activou seu dispostivo por !price!
+    DeviceOff: \!customer desativou seu dispositivo por !price!
+    Toggle: \!customer alternou seu dispositivo por !price!
+    Device: \!customer ativou seu dispositivo temporariamente por !price!
+    Heal: ''
+    Repair: ''
+    Dispose: ''
+    DeviceItem: \!customer ativou seu dispostivo temporariamente por !items!
+    iSlot: ''
+    Enchant: ''
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    Trade: \!customer trocou !chest1 pelo seu !chest2!
+    TpToOwner: ''
+    Class: ''
+    Disenchant: ''
+    Commando: ''
+    Jukebox: \!customer tocou o disco na sua Jukebox por !price!
+    Kit: ''
+    ResetKit: ''
+    iXPBuy: ''
+    iXPSell: ''
+  help:
+    Buy: A placa de Comprar troca o dinheiro do cliente pelo item no baú.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta. Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.
+    Sell: A placa de Vender troca o item do cliente pelo dinheiro do dono da placa.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta. Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.
+    Donate: A placa de Doar items ao baú. As linhas 2, 3 e 4 da placa podem conter o que você desejar.  Bata no(s) baú(s) usando !linkmaterial contedo os itens que você quer aceitar como doação.
+    DonateHand: A placa de DoarMao vai pegar o item da mao do cliente e por no baú.  As linhas 2, 3 e 4 da placa podem conter o que você desejar.  Bata no baú que vai guardar os itens doados.
+    Slot: A placa CaçaNíquel troca o dinheiro do cliente por um item do baú selecionado aleatóriamente. Cada espaço de um baú tem chances iguais de ser selecionado. A quantidade de itens em cada espaço será a quantidade de itens que o cliente vai receber caso o espaço seja selecionado (espaços vazios são ignorados).
+    iBuy: A placa euCompro troca o dinheiro do cliente por itens.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Esta loja nunca vai ficar sem items para vender, entao o baú pode ser destruido após a venda. Dinheiro nao vai para a conta do dono.
+    iSell: A placa de euVendo troca os itens do cliente por dinheiro.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Esta loja nunca vai ficar sem items para vender, entao o baú pode ser destruido após a venda.  Dinheiro nao é removido da conta do dono.
+    gBuy: A placa fComprar troca o dinheiro do cliente pelos itens do baú.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Dinheiro nao vai para a conta do dono da loja.
+    gSell: A placa fVender troca os itens do cliente por dinheiro.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Dinheiro nao é removido da conta do dono.
+    Day: A placa Dia troca o dinheiro do cliente para acertar o relógio na hora do amanhecer.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    Night: A placa Noite troca o dinheiro do cliente para acertar o relógio para noite.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    Rain: A placa Chuva troca o dinheiro do cliente para deixar o tempo chuvoso.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    ClearSkies: A placa LimparCéus troca o dinheiro do cliente para remover o clima chuvoso.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    DeviceOn: A placa LigarDsp troca o dinheiro do cliente para ligar uma alavanca de redstone.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata na alavanca que você quer ligar usando !linkmaterial.
+    DeviceOff: A placa LigarDsp troca o dinheiro do cliente para desligar uma alavanca de redstone.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata na alavanca que você quer desligar usando !linkmaterial.
+    Toggle: A placa Alternar troca o dinheiro do cliente para alternar uma alavanca de redstone entre ligado/desligado.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata na alavanca que você deseja alternar entre ligado/desligado usando !linkmaterial.
+    Device: A placa Dispositivo troca o dinheiro do cliente para alternar uma alavanca de redstone temporariamente.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata na alavanca que você deseja alternar entre ligado/desligado temporariamente usando !linkmaterial.
+    Heal: A placa Curar troca o dinheiro do cliente e o curo completamente.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    Repair: A placa Reparar troca o dinheiro do cliente para reparar completamente o item em sua mão.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    Dispose: A placa Lixo tira os itens da mao do cliente e os destrói.  As linhas 2, 3 e 4 da placa podem conter o que você desejar.
+    DeviceItem: A placa DspItem troca os itens do cliente para ligar temporariamente uma alavanca de redstone.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata na(s) alavanca(s) que você quer ligar temporariamente usando !linkmaterial.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.
+    iSlot: A placa euCaçaNíquel troca o dinheiro por itens selecionados aleatoriamente.  Cada espaço de um baú tem chances iguais de ser selecionado. A quantidade de itens em cada espaço será a quantidade de itens que o cliente vai receber caso o espaço seja selecionado (espaços vazios são ignorados).  Esta loja nunca vai ficar sem items para vender, entao o baú pode ser destruido após a venda.  Dinheiro nao vai para a conta do dono.
+    Enchant: A placa de Encantamento troca o dinheiro do cliente para encantar um item em sua mao.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  O encantamento é determinado por um item encantado no baú.  Dinheiro nao vai para a conta do dono.
+    iSellXP: A placa euVendoEXP compra pontos de EXP e paga ao cliente. A segunda linha da placa pode dizer o que você desejar, q quantidade de niveis vai na terceira e o preço na quarta.  Dinheiro nao vai para a conta do dono.
+    iBuyXP: A placa euComproEXP vende pontos de EXP em troca do dinheiro do cliente. A segunda linha da placa pode dizer o que você desejar, q quantidade de niveis vai na terceira e o preço na quarta.  Dinheiro nao é removido do dono.
+    iTrade: A placa euTroco troca os itens do cliente por itens no baú. The Infinite Trade sign exchanges the customer's items for the chest's items.  As linhas 2, 3 e 4 da placa podem conter o que você desejar.  Bata no baú com os itens que você quer dar usando !linkmaterial, entao bata no baú com os itens que você gostaria de receber e só entao bata na placa.  Os itens nao serao adicionados ou removidos do baú, entao este pode ser destruído.
+    Trade: A placa Trocar troca os itens do cliente pelos itens no baú. As linhas 2, 3 e 4 da placa podem conter o que você desejar.  Bata no baú com os itens que você quer trocar usando !linkmaterial, entao bata no baú com itens que você quer e só então bata na placa.
+    TpToOwner: A placa TpParaDono troca o dinheiro do cliente para os teletransportar ao dono da placa.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.  Esta é uma placa exemplo para comandos customizados, saiba mais no Quick Reference (encontra-se na pasta plugins/Signshop).
+    Class: A placa Classe troca o dinheiro e o inventário do cliente pelos itens no baú.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Dinheiro nao vai para a conta do dono.
+    Disenchant: A placa Desencantar troca o dinheiro do cliente para remover encantamentos do item na mao.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    Command: A placa Comando troca o dinheiro do cliente para executar o comando escrito na placa.A segunda e a terceira linha da placa contem o comando escrito (sem a "/"), o preço vai na quarta linha. SignShop nao sabe se o comando foi executado corretamente, entao vai tirar o dinheiro do cliente mesmo que o comando nao funcione.
+    Jukebox: A placa Jukebox troca o dinheiro do cliente para escutar a música no disco. A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) contendo o disco desejado usando !linkmaterial.  A placa vai tocar a música do disco quando for usada.
+    Kit: A placa Kir troca o dinheiro e o inventário do cliente para dar os itens do baú.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Esta placa pode ser usada uma vez por jogador antes que este precise resetar a placa.  Dinheiro nao vai para a conta do dono.
+    ResetKit: A placa ResetarKit troca o dinheiro do cliente para que este possa usa a placa Kit novamente.  A segunda e terceira linhas da placa podem conter o que você desejar, o preço vai na quarta.  Dinheiro nao vai para a conta do dono.
+    iXPBuy: A placa euEXPCompro troca os pontos de EXP do cliente por itens. A segunda e a quarta linha da placa podem conter o que você desejar, os pontos de EXP vao na terceira.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Esta loja nunca vai ficar sem items para vender, entao o baú pode ser destruido após a venda.
+    iXPSell: A placa euEXPVendo troca os itens do cliente por pontos de EXP.A segunda e a quarta linha da placa podem conter o que você desejar, os pontos de EXP vao na terceira.  Bata no(s) baú(s) usando !linkmaterial contedo o tipo e a quantidade de itens você deseja para uma única transação.  Esta loja nunca vai ficar sem espaço no baú, entao este pode ser destruido após ser conectado.
+errors:
+  no_permission: Você nao tem permissao para criar esta placa!
+  no_permission_use: Você nao tem permissao para usar esta placa!
+  no_permission_changeowner: Você nao tem permissao para mudar o dono desta loja!
+  invalid_operation: A placa clicada nao tem uma operaçao válida!
+  chest_empty: Esta loja está vazia!
+  chest_missing: Você precisa conectar ao menos um baú à este tipo de loja!
+  lever_missing: Você precisa conectar ao menos uma alavanca à este tipo de loja!
+  no_player_money: Voce nao tem !price para pagar!
+  no_shop_money: Esta loja nao tem !price para te pagar!
+  out_of_business: Parece que esta loja está fechada!
+  out_of_stock: Esta loja está sem estoque!
+  overstocked: Esta loja está super estocada!
+  player_doesnt_have_items: Você nao tem estes itens! (!items)
+  no_item_in_hand: Você precisa estar segurando um item para a loja tirar de você!
+  player_overstocked: Seu inventário está muito cheio.!
+  sign_location_stored: Localizaçao da loja guardada!
+  made_day: '!player fez ficar de dia!'
+  made_night: '!player fez ficar de noite!'
+  made_rain: '!player fez começar a chover!'
+  made_clear_skies: '!player limpou os céus!'
+  already_on: Dispositivo já está ligado
+  already_off: Dispositivo já está desligado
+  link_notallowed: Você nao pode conectar isto!
+  item_already_repair: Este item já está reparado!
+  already_raining: Já está chovendo!
+  already_clear_skies: O céu já está limpo!
+  already_full_health: A sua vida já está cheia!
+  saving: Salvado lojas...
+  saved: Lojas salvas!
+  shop_removed: Removida uma loja inválida! Ela deveria estar no '!world' em (!x, !y, !z).
+  invalid_item_to_repair: Este item nao pode ser reparado!
+  no_item_to_repair: Você precisa estar segurando o item para o reparar!
+  backup_fail: Back do disco falhou.!
+  too_far: A distância entre você e o baú é muito grande. O máximo é !max.
+  too_many_shops: Você alcançou o máximo de lojas. O máximo é !max.
+  enchanted_not_allowed: Voce nao pode reparar itens encantados.
+  enchantment_missing: Pelo menos um item encantado é necessário, ponha-o no(s) baú(s)!
+  item_not_enchantable: O item na mao nao é encantável.
+  no_player_xp: Você nao tem pontos de EXP o suficiente para vender (!xp)!
+  no_item_to_disenchant: Você precisa estar segurando o item que quer desencantar!
+  nothing_to_disenchant: Este item nao pode ser desencantado!
+  multiworld_not_allowed: Lojas MultiWorld nao sao permitidas neste servidor!
+  no_permit_owner: O dono desta loja já nao tem um passe.!
+  need_permit: Voce precisa de um passe para criar esta loja!
+  villager_trading_disabled: Troca com aldeoes nao é permitido neste servidor!
+  not_allowed_to_link_sharesigns: Você nao pode conectar lojas Divididas neste servidor!
+  no_shop_linked_to_sharesign: Esta loja Dividida nao está conectada à nenhuma loja.
+  share_sign_splits_profit: Esta placa de Dividr divide os ganhos entre !profits para as lojas em !profitshops
+  registered_share_sign: Placa Dividir registrada, clique na loja em seguinda.
+  unlinked_share_sign: Plava Divir desconectada da loja.
+  linked_share_sign: Placa Dividir conectada à loja.
+  not_allowed_to_link_restrictedsigns: Você nao pode conectar a placa Restrita a esta loja.
+  no_shop_linked_to_restrictedsign: Esta placa Restrita nao está conectada à nenhuma loja.
+  registered_restricted_sign: Placa Restrita registrada, clique na loja em seguida.
+  unlinked_restricted_sign: Placa Restrita desconectada da loja.
+  linked_restricted_sign: Placa Restrita conectada à loja.
+  restricted_sign_restricts: Esta placa Restrita restringe o uso da(s) loja(s) em !restrictedshops
+  towny_insufficient_funds: Fundos insuficientes na conta da loja!
+  towny_owner_not_mayor_or_assistant: O dono da loja nao é prefeito ou assistente de uma cidade.
+  towny_owner_not_belong_to_town: É provável que o dono da loja nao pertença a uma cidade.
+  towny_bank_withdrawls_not_allowed: A atual configuraçao do Towny nao aceita saques de banco.
+  restricted_from_using: Você está restringido de usar esta loja.
+  restricted_but_owner: Você nao está restringido de usar esta loja porque é o dono.
+  item_on_blacklist: O item !blacklisted_item está na lista negra e nao pode ser usado com lojas.
+  item_on_blacklist_but_op: O item !blacklisted_item está na lista negra mas você é o OP.
+  block_is_protected: Este bloco está protegido, você nao pode interagir com ele.
+  updated_shop: Esta loja foi atualizada.
+  failed_to_update_shop: Falha ao atualizar a loja devido ao erro acima.
+  price_drawn_from_essentials: Note que o preço foi debitado do Essentials entao pode ser variável.
+  only_one_time: Você só pode usar esta loja uma vez.
+  nothing_to_reset_ontime: Você já pode usar !param mais uma vez. Nao há nada a resetar.
+  shop_on_cooldown: Esta loja esta em cooldown, tente novamente em !cooldownleft segundos.
+  damaged_items_shop_homogeneous: A loja aceitando itens com dano só pode lidar com um tipo de item! Itens danificados nao serao aceitos até a loja ser consertada.
+  use_item_to_destroy_shop: Está loja é protegida e só pode ser destruida com um(a) !destroymaterial.
+  no_items_defined_for_shop: Nenhum item está definido para esta loja, operaçao cancelada.
+  notifications_shop_built: \!player acabou de criar uma placa !signtype em (!x, !y, !z)
+  shop_contains: Esta loja contem !shopinventory @ !items por !price
+  not_allowed_to_link_banksigns: Você nao pode conectar placas Banco a esta loja!
+  no_shop_linked_to_banksign: Esta placa Banco nao foi conectada a nenhuma loja.
+  bank_sign_linked_to_banks: Esta placa Banco se comunica com o banco chamado !bank na loja !bankshops
+  registered_bank_sign: Placa banco registrada, clique em na loja em seguida.
+  unlinked_bank_sign: Placa Banco desconectada da loja.
+  linked_bank_sign: Placa Banco conectada da loja.
+  not_allowed_to_use_bank: Você nao é o dono ou membro do banco !bank entao placas Banco ligadas serao ignoradas.
+  no_bank_available: Nao há nenhum banco disponível, por favor contacte o dono da loja.
+  no_bank_support: O plugin de economia neste servidor nao suporta Bancos.
+  repeated_x_times: (repetido !times vezes)
+  removed_location: Localizaçao salva foi removida.
+  stored_location: Salvou localizaçao de !block
+  stored_location_containable: Salvou localizaçao de !block contendo !items
+  region_does_not_allow_shops: Lojas nao sao permitidas nesta regiao. Por favor, mova a placa para outro lugar.
+  region_allow_shops_but_op: Esta loja nao esta em uma regiao com a flag "allow-shop" como "true" mas você é o OP.
+  region_allow_shops_but_perm: Esta loja nao esta em uma regiao com a flag "allow-shop" como "true" mas você tem a permissao para fazer isto.
+  towny_shop_plot_not_allowed: Este nao é um lote de lojas, por favor mova a placa.
+  towny_shop_plot_not_allowed_but_op: Este nao é um lote de lojas, mas você é OP.
+  towny_shop_plot_not_allowed_but_perm: Este nao é um lote de lojas, mas você tem a permissao para fazer isto.
