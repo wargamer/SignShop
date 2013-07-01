@@ -2,7 +2,7 @@
 # You can also visit our Bukkit page at tiny.cc/SignShop
 
 # There are a few basic options to modify how SignShop acts globally
-# You can edit any of these options and use "/signshop reload" to reload the config while the server is running
+# You can edit anything in this config and use "/signshop reload" to reload the config while the server is running
 
 
 #----------- Admin Options ------------------
@@ -30,20 +30,20 @@ ChunkLoadRadius: 2
 # All items can be listed by item number (http://www.minecraftwiki.net/wiki/Data_values)
 # Or by item name (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
 
-# Used to create shops and tell shops what they are connected with
+# Used to create and tell shops what they are connected with
 LinkMaterial: redstone
 
-# Used to change the owner of a sign, or update an active sign's words by punching another sign first
+# Used to change the owner of a sign or update an active sign's words by punching another sign first
 UpdateMaterial: ink_sack
 
-# Used to destroy shops in creative mode if "ProtectShopsInCreative" is set to "true")
+# Used to destroy shops in creative mode if "ProtectShopsInCreative" is set to "true"
 DestroyMaterial: gold_axe
 
 
 #----------- Language ------------------
 
-# Changes the default language for SignShop, allowing signs in english and and the selected language
-# Available languages are dutch, english, portuguese, russian
+# Changes the default language for SignShop
+# Available languages are dutch, english, french, portuguese, russian
 # Send us your translated configs and we will add it to our supported languages
 # NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
 Languages: english
@@ -73,7 +73,7 @@ AllowVariableAmounts: false
 AllowEnchantedRepair: true
 
 # Allow inventories to stack signs in groups of 64 (Default = false)
-# This option has been deprecated, as Minecraft now allows stacks of 16 signs by default
+# This option doesn't do anything for newer versions of Minecraft, as signs now stack automatically
 EnableSignStacking: false
 
 # Disables shops for owners without the SignShop.Permit permission node (Default = false)
@@ -96,7 +96,7 @@ pricemultipliers:
 MaxSellDistance: 0
 
 # Maximum number of SignShops allowed globally per person (Infinite/Default = 0)
-# This number does not including admin "playerIsOp" shops
+# This number does not include admin "playerIsOp" shops
 # Can be bypassed with the Signshop.IgnoreMax permission
 # For more help with this, please read the Quick Reference
 MaxShopsPerPerson: 0
@@ -115,14 +115,13 @@ ShopCooldownMilliseconds: 0
 # Allow players to right-click villagers and trade with them (Default = false)
 PreventVillagerTrade: false
 
-# Enable support for unofficial enchantments (Default = false)
+# Enable support for non-vanilla enchantments (Default = false)
 AllowUnsafeEnchantments: false
 
 # Allow shops with the chest and sign in different worlds (Default = false)
 AllowMultiWorldShops: false
 
-# Items not allowed to be used with shops
-# List multiple items on new lines
+# List items not allowed to be used in shops on new lines
 # All items can be listed by item number (http://www.minecraftwiki.net/wiki/Data_values)
 # Or by item name (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
 Blacklisted_items:
@@ -145,7 +144,7 @@ EnableDynmapSupport: true
 # Can be bypassed with the SignShop.BypassShopPlots.* permission
 EnableShopPlotSupport: false
 
-# Automatically add a LWC protection to a chest, when it is linked (Default = false)
+# Automatically add a LWC protection to a chest when it is linked (Default = false)
 EnableAutomaticLock: false
 
 
@@ -185,13 +184,14 @@ signs:
   TpToOwner: takePlayerMoney,playerIsOp,runCommand
   Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
   Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
-  Command: takePlayerMoney, playerIsOp,runCommand
+  Command: takePlayerMoney,playerIsOp,runCommand
+  UserCommand: takePlayerMoney,playerIsOp,runCommand{asOriginalUser}
   Share: ShareSign
   Restricted: RestrictedSign
   Bank: BankSign
   Jukebox: playJukebox,takePlayerMoney
-  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
-  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
+  Kit: givePlayerItems,takePlayerMoney, oneTime, playerIsOp
+  ResetKit: takePlayerMoney,resetOneTime{Kit}, playerIsOp
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
   iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
 
@@ -199,13 +199,15 @@ signs:
 #----------- Sign Commands ------------------
 
 # Used to make signs run commands
-# You can list multiple commands on different lines
+# You can list multiple commands on new lines
 # A sign must have the runCommand block in order for these to work (added automatically if "fixIncompleteOperations" is set to "true")
 # For help with this, please read the Quick Reference
 commands:
   TpToOwner:
   - tp !player !owner
   Command:
+  - \!line2 !line3
+  UserCommand:
   - \!line2 !line3
 
 
@@ -216,7 +218,7 @@ commands:
 # For a full list of available !"variables and what they do, please read the Quick Reference
 messages:
 
-  # These are given when you create a sign by punching it with the link material (Redstone by default)
+# These are given when you create a sign by punching it with the link material (Redstone by default)
   setup:
     Buy: You have put !items for sale at a price of !price!
     Sell: You have put a bounty of !price for !items!
@@ -249,13 +251,14 @@ messages:
     Class: You have setup a shop to sell a class of items for !price!
     Disenchant: You have setup a sign that removes enchantments for !price!
     Command: You have created a sign that runs commands for !price!
+    UserCommand: You have created a sign that runs commands as if a player typed it in chat for !price!
     Jukebox: You have set up a Jukebox that plays records from the chest for !price!
     Kit: You have setup a one time use kit (!items) for !price!
     ResetKit: You have setup a sign that resets !param signs!
     iXPBuy: You have put !items for sale at the cost of !xp XP points!
     iXPSell: You have put !items infinitely for sale at a price of !xp XP points!
-
-  # These are given when you left click a sign
+    
+# These are given when you left click a sign
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -288,13 +291,14 @@ messages:
     Class: Buy the class containing !items for !price?
     Disenchant: Remove enchantments on the item in your hand for !price?
     Command: Run the commands on this sign for !price?
+    UserCommand: Run the commands on this sign for !price?
     Jukebox: Play a record for !price?
     Kit: Get this kit (!items) one time for !price?
     ResetKit: Reset your !param signs for !price!
     iXPBuy: Buy !items for !xp XP points?
     iXPSell: Sell !items for !xp XP points?
 
-  # These are given when you complete a transaction
+# These are given when you complete a transaction
   transaction:
     Buy: You have bought !items for !price!
     Sell: You have sold !items for !price!
@@ -326,16 +330,17 @@ messages:
     TpToOwner: You teleported to !owner for !price!
     Class: You bought the class containing !items for !price!
     Disenchant: You removed the enchantments on the item in your hand for !price!
-    Command: You ran the commands in the sign for !price!
+    Command: You ran the commands on the sign for !price!
+    UserCommand: You ran the commands on the sign for !price!
     Jukebox: You've made the Jukebox play a record for !price!
     Kit: You acquired !items for !price!
     ResetKit: You reset !param signs for !price!
     iXPBuy: You have bought !items for !xp XP points!
     iXPSell: You have sold !items for !xp XP points!
 
-  # Used to inform shop owners that someone used their shop
-  # You can use empty single or double quotes to make it so SignShop does not inform the owner
-  # NOTE: You must use a "\" if you start a line with "!"
+# These are given to shop owners when someone uses their shop
+# You can use empty single or double quotes to make it so SignShop does not inform the owner
+# NOTE: You must use a "\" if you start a line with "!"
   transaction_owner:
     Buy: \!customer bought !items for !price from you!
     Sell: \!customer sold you !items for !price!
@@ -368,13 +373,15 @@ messages:
     Class: ''
     Disenchant: ''
     Command: ''
+    UserCommand: ''
     Jukebox: \!customer played a record on your jukebox for !price!
     Kit: ''
     ResetKit: ''
     iXPBuy: ''
     iXPSell: ''
-
-  # These are used in conjunction with the /signshop sign SIGNNAME command.
+    
+# These are used for the /signshop sign SIGNNAME command
+# New lines are automatically made at the end of sentences when printing
   help:
     Buy: The Buy sign exchanges the customer's money for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
     Sell: The Sell sign exchanges the customer's items for the owner's money. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
@@ -407,6 +414,7 @@ messages:
     Class:  The Class sign exchanges the customer's money and their inventory for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  Money is not put in the owner's account.
     Disenchant: The Disenchant sign exchanges the customer's money for removing the enchantment on the item in their hands.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
     Command: The Command sign exchanges the customer's money to run the command on the sign. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work.
+    UserCommand: The UserCommand sign exchanges the customer's money to run the command on the sign as if they typed it in. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work, or they don't have permission.
     Jukebox: The Jukebox sign exchanges the customer's money to listen to music discs. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the music discs you'd like to play.  The sign will play the next disc in the chest when used.
     Kit:  The Kit sign exchanges the customer's money and their inventory for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This sign can only be used once per player before needing to be reset.  Money is not put in the owner's account.
     ResetKit: The ResetKit sign exchanges the customer's money so they are allowed to use the Kit sign again.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
