@@ -1,4 +1,3 @@
-
 package org.wargamer2010.signshop.listeners;
 
 import org.bukkit.Material;
@@ -56,8 +55,8 @@ public class SignShopHangingListener implements Listener {
                 if(seller.getOwner().equals(ssPlayer.getName()))
                     return;
             }
+            event.setCancelled(true);
+            ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_rotate_frame", null));
         }
-        event.setCancelled(true);
-        ssPlayer.sendMessage(SignShopConfig.getError("not_allowed_to_rotate_frame", null));
     }
 }
