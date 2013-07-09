@@ -12,8 +12,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Level;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.util.JarUtil;
-import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SSDatabase {
     private static final String downloadURL = "http://cloud.github.com/downloads/wargamer/SignShop/";
@@ -67,7 +65,13 @@ public class SSDatabase {
     }
 
     public final void loadLib() {
-        driver = JarUtil.loadDriver(downloadURL, "sqlite.jar", "org.sqlite.JDBC");
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch(ClassNotFoundException ex) {
+            SignShop.log("Could not find JDBC class in Bukkit JAR, please report this issue with details at http://tiny.cc/signshop", Level.SEVERE);
+            return;
+        }
+        driver = new org.sqlite.JDBC();
     }
 
     public final boolean open() {

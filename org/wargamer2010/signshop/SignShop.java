@@ -24,6 +24,7 @@ import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.commands.CommandDispatcher;
+import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.metrics.setupMetrics;
@@ -133,6 +134,7 @@ public class SignShop extends JavaPlugin{
         CommandDispatcher.init();
         fixStackSize();
         WebUtil.init();
+        ColorUtil.init();
 
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));

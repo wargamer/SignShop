@@ -131,9 +131,9 @@ public class configUtil {
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 if(caseSensitive)
-                    tempStringStringHash.put(entry.getKey(), (String)entry.getValue());
+                    tempStringStringHash.put(entry.getKey(), entry.getValue().toString());
                 else
-                    tempStringStringHash.put(entry.getKey().toLowerCase(), (String)entry.getValue());
+                    tempStringStringHash.put(entry.getKey().toLowerCase(), entry.getValue().toString());
             }
         } catch(ClassCastException ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);

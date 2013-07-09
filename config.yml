@@ -194,7 +194,7 @@ signs:
   ResetKit: takePlayerMoney,resetOneTime{Kit}, playerIsOp
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
   iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
-
+  Promote: promotePlayer,takePlayerMoney,playerIsOp
 
 #----------- Sign Commands ------------------
 
@@ -257,7 +257,8 @@ messages:
     ResetKit: You have setup a sign that resets !param signs!
     iXPBuy: You have put !items for sale at the cost of !xp XP points!
     iXPSell: You have put !items infinitely for sale at a price of !xp XP points!
-    
+    Promote: You have set up a Promote sign that promotes to the !promoteto group.
+
 # These are given when you left click a sign
   confirm:
     Buy: Buy !items for !price?
@@ -297,6 +298,7 @@ messages:
     ResetKit: Reset your !param signs for !price!
     iXPBuy: Buy !items for !xp XP points?
     iXPSell: Sell !items for !xp XP points?
+    Promote: Promote from !promotefrom to !promoteto?
 
 # These are given when you complete a transaction
   transaction:
@@ -337,6 +339,7 @@ messages:
     ResetKit: You reset !param signs for !price!
     iXPBuy: You have bought !items for !xp XP points!
     iXPSell: You have sold !items for !xp XP points!
+    Promote: You have been promoted from !promotefrom to !promoteto!
 
 # These are given to shop owners when someone uses their shop
 # You can use empty single or double quotes to make it so SignShop does not inform the owner
@@ -379,7 +382,8 @@ messages:
     ResetKit: ''
     iXPBuy: ''
     iXPSell: ''
-    
+    Promote: ''
+
 # These are used for the /signshop sign SIGNNAME command
 # New lines are automatically made at the end of sentences when printing
   help:
@@ -526,3 +530,10 @@ errors:
   itemframe_already_linked: This ItemFrame is already linked to another shop.
   shop_is_now_protected: Your chest(s) have been locked automatically.
   not_allowed_to_rotate_frame: You are not allowed to rotate this ItemFrame.
+  no_permission_plugin: No permission plugin could be found.
+  missing_promote_group: Please write the Permission group to promote to on the second line.
+  promote_group_does_not_exist: The Permission group on the second line does not exist.
+  not_in_permission_group: You aren't in a permission group yet.
+  already_in_promote_group: You are already in the group.
+  could_not_remove_primary_group: Could not remove you from your primary group
+  could_not_promote: Could not promote you.
