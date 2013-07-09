@@ -148,7 +148,16 @@ public class Storage implements Listener {
             tempList = getSetting(sellerSettings, "sign");
             if(tempList.isEmpty())
                 throw storageex;
+            
+            for(World temp : Bukkit.getServer().getWorlds()) {
+                if(temp.getName().equalsIgnoreCase(seller_shopworld) && temp.getLoadedChunks().length == 0) {
+                    invalidShops.put(key, sellerSettings);
+                    return true; // World hasn't been loaded yet
+                }
+            }
+
             World world = Bukkit.getServer().getWorld(seller_shopworld);
+
             try {
                 seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
             } catch(Exception ex) {

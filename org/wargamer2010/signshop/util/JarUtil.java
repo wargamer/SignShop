@@ -23,21 +23,6 @@ public class JarUtil {
 
     }
 
-    public static Driver loadDriver(String downloadURL, String filename, String className) {
-        if(!loadClass(downloadURL, filename, className))
-            return null;
-        try {
-            Class<?> thing = Class.forName(className);
-            if (thing != null) {
-                return (Driver) thing.newInstance();
-            }
-        } catch (InstantiationException ex) {
-        } catch (IllegalAccessException ex) {
-        } catch (ClassNotFoundException ex) {
-        }
-        return null;
-    }
-
     public static Class<?> getClass(String downloadURL, String filename, String className) {
         if(!loadClass(downloadURL, filename, className))
             return null;

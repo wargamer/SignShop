@@ -22,6 +22,7 @@ import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
+import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -65,7 +66,7 @@ public class SignShopItemMeta {
         List<String> temp = new LinkedList<String>();
 
         for(Color color : colors) {
-            temp.add(itemUtil.getColorAsString(color));
+            temp.add(ColorUtil.getColorAsString(color));
         }
 
         String[] arr = new String[temp.size()];
@@ -119,7 +120,7 @@ public class SignShopItemMeta {
         String normal = nameFromWeb.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : nameFromWeb;
         normal = WebUtil.translateFromEnglish(normal);
         String displayname = "";
-        
+
         if(!isLegacy()) {
             String custom = (stack.getItemMeta().hasDisplayName()
                             ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");
@@ -151,7 +152,7 @@ public class SignShopItemMeta {
                     return (getDisplayName(stack, ChatColor.DARK_PURPLE) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
             } else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
-                return (itemUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack));
+                return (ColorUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack));
             } else if(type == MetaType.Skull) {
                 String postfix = "'s Head";
                 SkullMeta skullmeta = (SkullMeta) meta;

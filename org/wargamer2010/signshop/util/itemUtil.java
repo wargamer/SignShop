@@ -34,7 +34,6 @@ import org.wargamer2010.signshop.operations.SignShopArguments;
 
 public class itemUtil {
     private static HashMap<Integer, String> discs;
-    private static Map<Integer, String> colorLookup = null;
 
     private itemUtil() {
 
@@ -621,43 +620,5 @@ public class itemUtil {
         if(!block.getChunk().isLoaded())
             return block.getChunk().load();
         return true;
-    }
-
-    public static String getColorAsString(Color color) {
-        if(colorLookup == null) {
-            colorLookup = new HashMap<Integer, String>();
-
-            colorLookup.put(8339378 , "purple");
-            colorLookup.put(11685080 , "magenta");
-            colorLookup.put(8073150 , "purple");
-            colorLookup.put(6724056 , "light blue");
-            colorLookup.put(5013401 , "cyan");
-            colorLookup.put(5000268 , "gray");
-            colorLookup.put(10066329 , "light gray");
-            colorLookup.put(15892389 , "pink");
-            colorLookup.put(14188339 , "orange");
-            colorLookup.put(8375321 , "lime");
-            colorLookup.put(11743532 , "red");
-            colorLookup.put(2437522 , "blue");
-            colorLookup.put(15066419 , "yellow");
-            colorLookup.put(10040115 , "red");
-            colorLookup.put(1644825 , "black");
-            colorLookup.put(6704179 , "brown");
-            colorLookup.put(6717235 , "green");
-            colorLookup.put(16777215 , "white");
-            colorLookup.put(3361970 , "blue");
-            colorLookup.put(1973019 , "black");
-            colorLookup.put(14188952 , "pink");
-            colorLookup.put(14602026, "yellow");
-            colorLookup.put(10511680, "brown");
-        }
-
-        int rgb = color.asRGB();
-        if(colorLookup.containsKey(rgb)) {
-            return signshopUtil.capFirstLetter(colorLookup.get(rgb));
-        } else {
-            SignShop.log("Could not find color with RGB of: " + rgb, Level.WARNING);
-            return "Unknown";
-        }
     }
 }
