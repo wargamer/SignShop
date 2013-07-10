@@ -3,11 +3,9 @@ package org.wargamer2010.signshop.configuration;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 import org.bukkit.Color;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class ColorUtil {
@@ -67,7 +65,7 @@ public class ColorUtil {
             double diff = -1;
             String last = "";
             for(int val : colorLookup.keySet()) {
-                double currentdiff = Math.abs(rgb - val);
+                double currentdiff = getDifferenceBetweenColors(rgb, val);
                 if(diff == -1 || currentdiff < diff) {
                     diff = currentdiff;
                     last = colorLookup.get(val);
@@ -75,5 +73,13 @@ public class ColorUtil {
             }
             return signshopUtil.capFirstLetter(last);
         }
+    }
+
+    public static double getDifferenceBetweenColors(int colorone, int colortwo) {
+        java.awt.Color a = new java.awt.Color(colorone);
+        java.awt.Color b = new java.awt.Color(colortwo);
+        int comboa = (a.getRed() + a.getGreen() + a.getBlue());
+        int combob = (b.getRed() + b.getGreen() + b.getBlue());
+        return Math.abs(comboa - combob);
     }
 }
