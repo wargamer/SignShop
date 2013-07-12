@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.listeners;
 
+import java.util.List;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.ItemFrame;
@@ -46,11 +47,16 @@ public class SignShopHangingListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteractEntityEvent(PlayerInteractEntityEvent event) {
-        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
-        if(ssPlayer.isOp())
-            return;
         if(Material.getMaterial("ITEM_FRAME") != null && event.getRightClicked() instanceof ItemFrame) {
-            for(Block block : Storage.get().getShopsWithMiscSetting("itemframelocation", signshopUtil.convertLocationToString(event.getRightClicked().getLocation()))) {
+            SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+            if(ssPlayer.isOp())
+                return;
+
+            List<Block> shops = Storage.get().getShopsWithMiscSetting("itemframelocation", signshopUtil.convertLocationToString(event.getRightClicked().getLocation()));
+            if(shops.isEmpty())
+                return;
+
+            for(Block block : shops) {
                 Seller seller = Storage.get().getSeller(block.getLocation());
                 if(seller.getOwner().equals(ssPlayer.getName()))
                     return;
