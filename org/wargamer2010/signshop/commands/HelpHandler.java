@@ -75,7 +75,7 @@ public class HelpHandler implements ICommandHandler {
 
             String temp = SignShopConfig.getMessage("help", args[0], messageParts).replace(". ", ".\n- ");
             if(temp.trim().isEmpty()) {
-                messageBuilder.append("Sign does not exist.\n");
+                messageBuilder.append("Sign help does not exist.\n");
                 messageBuilder.append(signList);
             } else {
                 messageBuilder.append("*** ");
