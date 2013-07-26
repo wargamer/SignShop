@@ -33,6 +33,7 @@ import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 import org.wargamer2010.signshop.util.clicks;
@@ -163,7 +164,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 List<String> operation = SignShopConfig.getBlocks(sOperation);
-                Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+                List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
                 if(SignShopOperations == null) {
                     ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                     return;
@@ -192,9 +193,9 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 Boolean bSetupOK = false;
-                for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                    ssArgs.setOperationParameters(ssOperation.getValue());
-                    bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
+                for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                    ssArgs.setOperationParameters(ssOperation.getParameters());
+                    bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
                 }
@@ -234,7 +235,7 @@ public class SignShopPlayerListener implements Listener {
 
             List<String> operation = SignShopConfig.getBlocks(sOperation);
 
-            Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+            List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null) {
                 ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                 return;
@@ -259,9 +260,9 @@ public class SignShopPlayerListener implements Listener {
                 ssArgs.miscSettings = seller.getMisc();
             Boolean bRequirementsOK = true;
             Boolean bRunOK = false;
-            for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.setOperationParameters(ssOperation.getValue());
-                bRequirementsOK = ssOperation.getKey().checkRequirements(ssArgs, true);
+            for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                ssArgs.setOperationParameters(ssOperation.getParameters());
+                bRequirementsOK = ssOperation.getOperation().checkRequirements(ssArgs, true);
                 if(!bRequirementsOK)
                     break;
             }
@@ -286,9 +287,9 @@ public class SignShopPlayerListener implements Listener {
             }
             ssArgs.reset();
 
-            for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.setOperationParameters(ssOperation.getValue());
-                bRunOK = ssOperation.getKey().runOperation(ssArgs);
+            for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                ssArgs.setOperationParameters(ssOperation.getParameters());
+                bRunOK = ssOperation.getOperation().runOperation(ssArgs);
                 if(!bRunOK)
                     return;
             }

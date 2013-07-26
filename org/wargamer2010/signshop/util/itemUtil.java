@@ -31,6 +31,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 
 public class itemUtil {
     private static HashMap<Integer, String> discs;
@@ -451,7 +452,7 @@ public class itemUtil {
             if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
                 return;
             List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
-            Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+            List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null)
                 return;
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
@@ -459,9 +460,9 @@ public class itemUtil {
             if(pSeller.getMisc() != null)
                 ssArgs.miscSettings = pSeller.getMisc();
             Boolean reqOK = true;
-            for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.setOperationParameters(ssOperation.getValue());
-                reqOK = ssOperation.getKey().checkRequirements(ssArgs, false);
+            for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                ssArgs.setOperationParameters(ssOperation.getParameters());
+                reqOK = ssOperation.getOperation().checkRequirements(ssArgs, false);
                 if(!reqOK) {
                     itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
                     break;

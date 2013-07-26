@@ -19,6 +19,7 @@ import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -80,7 +81,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         if(containables.isEmpty() && activatables.isEmpty())
             return false;
 
-        Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+        List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
         if (SignShopOperations == null) {
             ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
             return false;
@@ -103,9 +104,9 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         }
 
         Boolean bSetupOK = false;
-        for (Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-            ssArgs.setOperationParameters(ssOperation.getValue());
-            bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
+        for (SignShopOperationListItem ssOperation : SignShopOperations) {
+            ssArgs.setOperationParameters(ssOperation.getParameters());
+            bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
             if (!bSetupOK) {
                 ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
                 return true;
