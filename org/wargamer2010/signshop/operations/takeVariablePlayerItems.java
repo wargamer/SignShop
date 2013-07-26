@@ -10,9 +10,8 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.SortedSet;
-import java.util.TreeSet;
 import org.bukkit.Material;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class takeVariablePlayerItems implements SignShopOperation {
 
@@ -75,21 +74,6 @@ public class takeVariablePlayerItems implements SignShopOperation {
         return toTakeForReal.toArray(arr);
     }
 
-    private float calculateDurabilityModifier(ItemStack[] stacks) {
-        if(stacks.length == 0)
-            return 1.0f;
-        float totalmod = 0.0f;
-        float totalamount = 0;
-        for(ItemStack stack : stacks) {
-            float dur = stack.getDurability();
-            float max = stack.getType().getMaxDurability();
-            float amount = stack.getAmount();
-            totalmod += ((dur/max) * amount);
-            totalamount += amount;
-        }
-        return (1.0f - (totalmod / totalamount));
-    }
-
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.getContainables().isEmpty()) {
@@ -136,7 +120,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
             ItemStack[] temp = getRealItemStack(backupinv, isActual);
             if(temp.length > 0) {
                 isActual = temp;
-                pricemod = calculateDurabilityModifier(isActual);
+                pricemod = signshopUtil.calculateDurabilityModifier(isActual);
             }
         }
 
@@ -153,7 +137,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get());
         return true;
     }
-    
+
     private static class StackDurabilityPair implements Comparator<StackDurabilityPair> {
         private ItemStack _stack;
         private Short _durability;
