@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.util;
 
-import java.lang.String;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -31,6 +30,7 @@ import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
@@ -89,8 +89,8 @@ public class signshopUtil {
         return null;
     }
 
-    public static Map<SignShopOperation, List<String>> getSignShopOps(List<String> operation) {
-        Map<SignShopOperation, List<String>> SignShopOperations = new LinkedHashMap<SignShopOperation, List<String>>();
+    public static List<SignShopOperationListItem> getSignShopOps(List<String> operation) {
+        List<SignShopOperationListItem> SignShopOperations = new LinkedList<SignShopOperationListItem>();
         for(String sSignShopOp : operation) {
             List<String> bits = getParameters(sSignShopOp);
             String op = bits.get(0);
@@ -99,7 +99,7 @@ public class signshopUtil {
             if(ssOP == null)
                 return null;
             else
-                SignShopOperations.put(ssOP, bits);
+                SignShopOperations.add(new SignShopOperationListItem(ssOP, bits));
         }
         return SignShopOperations;
     }

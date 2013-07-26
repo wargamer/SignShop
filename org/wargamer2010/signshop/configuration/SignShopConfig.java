@@ -27,6 +27,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.operations.runCommand;
 import org.wargamer2010.signshop.specialops.LinkItemFrame;
 import org.wargamer2010.signshop.specialops.LinkSpecialSign;
@@ -306,8 +307,7 @@ public class SignShopConfig {
             boolean failedOp = false;
             List<String> tempCheckedSignOperation = new LinkedList<String>();
 
-            List<String> tempSignOperationString = Arrays.asList(allSignOperations.get(sKey).split("\\,"));
-            for(String tempOperationString : tempSignOperationString) {
+            for(String tempOperationString : allSignOperations.get(sKey).split("\\,")) {
                 List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
                 String op = bits.get(0);
                 Object opinstance = getInstance(packageName + "." + op.trim());
@@ -389,10 +389,10 @@ public class SignShopConfig {
         Boolean changedSomething = false;
         for(Map.Entry<String, List<String>> entry :  Operations.entrySet()) {
             if(SignShopConfig.Commands.containsKey(entry.getKey().toLowerCase())) {
-                Map<SignShopOperation, List<String>> tempMap = signshopUtil.getSignShopOps(entry.getValue());
+                List<SignShopOperationListItem> tempList = signshopUtil.getSignShopOps(entry.getValue());
                 Boolean found = false;
-                for(SignShopOperation tempOp : tempMap.keySet())
-                    if(tempOp instanceof runCommand)
+                for(SignShopOperationListItem tempOp : tempList)
+                    if(tempOp.getOperation() instanceof runCommand)
                         found = true;
                 if(found)
                     continue;

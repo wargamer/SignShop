@@ -12,6 +12,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -74,20 +75,20 @@ public class copySign implements SignShopSpecialOp {
                 ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
                 return true;
             }
-            Map<SignShopOperation, List<String>> SignShopOperations = signshopUtil.getSignShopOps(operation);
+            List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null) {
                 ssPlayer.sendMessage("The new operation does not exist!");
                 revert(shopSign, sToChange);
                 return true;
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());            
-            
+                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());
+
             Boolean bSetupOK = false;
-            for(Map.Entry<SignShopOperation, List<String>> ssOperation : SignShopOperations.entrySet()) {
-                ssArgs.setOperationParameters(ssOperation.getValue());
+            for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                ssArgs.setOperationParameters(ssOperation.getParameters());
                 ssArgs.ignoreEmptyChest();
-                bSetupOK = ssOperation.getKey().setupOperation(ssArgs);
+                bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
                 if(!bSetupOK)
                     break;
             }

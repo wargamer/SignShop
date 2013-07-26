@@ -17,9 +17,11 @@ import org.wargamer2010.signshop.util.*;
 public class LinkSpecialSign implements SignShopSpecialOp {
     @Override
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
+        Block shopSign = event.getClickedBlock();
+        if(!itemUtil.clickedSign(shopSign))
+            return false;
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
-        Block shopSign = event.getClickedBlock();
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
         if(seller == null)
@@ -32,7 +34,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         // TODO: May have to consider working with multiple Special sign types at the same time
         // For now, let's support linking/unlinking a single special sign type at a time
         String SignName = null;
-        for(Block bTemp : clickedBlocks) {            
+        for(Block bTemp : clickedBlocks) {
             if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
                 if(isSupported(signshopUtil.getOperation(sign.getLine(0)))) {
@@ -42,12 +44,12 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         }
         if(SignName == null)
             return false;
-        
+
         String MiscSetting = ("**op**signs").replace("**op**", SignName);
         String UnlinkedMessage = ("unlinked_**op**_sign").replace("**op**", SignName);
         String LinkedMessage = ("linked_**op**_sign").replace("**op**", SignName);
         String NotAllowedMessage = ("not_allowed_to_link_**op**signs").replace("**op**", SignName);
-        
+
         List<Block> newSigns = new LinkedList<Block>();
 
         List<Block> currentSigns = signshopUtil.getSignsFromMisc(seller, MiscSetting);
@@ -90,7 +92,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
             locations = signshopUtil.validateBankSign(newSigns, ssPlayer);
         else
             return false;
-        
+
         if(locations.isEmpty())
             return true;
         else {
@@ -101,7 +103,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
 
         return true;
     }
-    
+
     private boolean isSupported(String name) {
         return (name.equals("restricted") || name.equals("share") || name.equals("bank"));
     }
