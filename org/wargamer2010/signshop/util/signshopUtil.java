@@ -542,4 +542,19 @@ public class signshopUtil {
     public static boolean roughLocationCompare(Location locA, Location locB) {
         return (doublesAsInts(locA.getX(), locB.getX()) && doublesAsInts(locA.getY(), locB.getY()) && doublesAsInts(locA.getZ(), locB.getZ()));
     }
+
+    public static float calculateDurabilityModifier(ItemStack[] stacks) {
+        if(stacks.length == 0)
+            return 1.0f;
+        float totalmod = 0.0f;
+        float totalamount = 0;
+        for(ItemStack stack : stacks) {
+            float dur = stack.getDurability();
+            float max = stack.getType().getMaxDurability();
+            float amount = stack.getAmount();
+            totalmod += ((dur/max) * amount);
+            totalamount += amount;
+        }
+        return (1.0f - (totalmod / totalamount));
+    }
 }
