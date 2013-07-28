@@ -89,6 +89,33 @@ pricemultipliers:
   BlacksmithEx:
     Repair: 0.5
 
+# Below is a list of all the materials that SignShop will allow to be linked to a shop.
+# The key (stuff before the colon) can either be the material name (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
+# or it can the ID. To only allow blocks with a specific data value, just attach a ~ with the damage value (ex. WOOL~4 or 35~4 for Yellow Wool)
+# The value (stuff after the colon) is the "alias" which is used when checking for the DenyLink permission node.
+# So before a player can link a CHEST, the player will be checked for OP (OP's can link everything from the list below) and the SignShop.DenyLink.chest permission node.
+linkableMaterials:
+  CHEST: chest
+  TRAPPED_CHEST: chest
+  DROPPER: dropper
+  HOPPER: hopper
+  HOPPER_MINECART: hopper
+  ANVIL: anvil
+  DISPENSER: dispenser
+  FURNACE: furnace
+  BURNING_FURNACE: furnace
+  BREWING_STAND: brewingstand
+  ENCHANTMENT_TABLE: enchantmenttable
+  LEVER: lever
+  SIGN: sign
+  SIGN_POST: sign
+  WALL_SIGN: sign
+  STEP: slab
+  JUKEBOX: jukebox
+  WOODEN_DOOR: door
+  IRON_DOOR: door
+  IRON_DOOR_BLOCK: door
+  ITEM_FRAME: itemframe
 
 #----------- Restrictions ------------------
 

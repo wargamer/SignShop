@@ -18,6 +18,7 @@ import java.io.InputStream;
 import java.io.Closeable;
 import java.io.OutputStream;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
@@ -40,6 +41,7 @@ import org.wargamer2010.signshop.specialops.linkShowcase;
 
 public class SignShopConfig {
     private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
+    private static final String configFilename = "config.yml";
     private static Map<String,SignShopOperation> OperationInstances = new LinkedHashMap<String, SignShopOperation>();
     private static Map<String,List<String>> Operations = new HashMap<String,List<String>>();
     private static Map<String,String> OperationAliases;                         // Alias <-> Original
@@ -49,7 +51,7 @@ public class SignShopConfig {
     private static Map<String,HashMap<String,Float>> PriceMultipliers;
     private static Map<String,List<String>> Commands;
     private static Map<String,Integer> ShopLimits;
-    private static Map<Material, String> LinkableMaterials;
+    private static List<LinkableMaterial> LinkableMaterials;
     private static List<SignShopSpecialOp> SpecialsOps = new LinkedList<SignShopSpecialOp>();
 
     private static SignShop instance = null;
@@ -174,35 +176,36 @@ public class SignShopConfig {
         SpecialsOps.add(new linkAdditionalBlocks());
     }
 
-    private static void safeAddLinkeable(String sName, String sGroup) {
-        Material mat = Material.getMaterial(sName);
-        if(mat != null && !LinkableMaterials.containsKey(mat))
-            LinkableMaterials.put(mat, sGroup);
+    private static void safeAddLinkeable(String sName, String sGroup, byte sData) {
+        if(sName == null || sGroup == null || sName.isEmpty())
+            return;
+        Material mat = getMaterial(sName, null);
+        if(mat != null)
+            LinkableMaterials.add(new LinkableMaterial(mat, sGroup, sData));
+    }
+
+    private static byte getDataFromString(String dur) {
+        try {
+            return Byte.parseByte(dur);
+        } catch(NumberFormatException ex) {
+            return -1;
+        }
     }
 
     private static void setupLinkables() {
-        LinkableMaterials = new EnumMap<Material, String>(Material.class);
-        safeAddLinkeable("CHEST", "chest");
-        safeAddLinkeable("TRAPPED_CHEST", "chest");
-        safeAddLinkeable("DROPPER", "dropper");
-        safeAddLinkeable("HOPPER", "hopper");
-        safeAddLinkeable("HOPPER_MINECART", "hopper");
-        safeAddLinkeable("ANVIL", "anvil");
-        safeAddLinkeable("DISPENSER", "dispenser");
-        safeAddLinkeable("FURNACE", "furnace");
-        safeAddLinkeable("BURNING_FURNACE", "furnace");
-        safeAddLinkeable("BREWING_STAND", "brewingstand");
-        safeAddLinkeable("ENCHANTMENT_TABLE", "enchantmenttable");
-        safeAddLinkeable("LEVER", "lever");
-        safeAddLinkeable("SIGN", "sign");
-        safeAddLinkeable("SIGN_POST", "sign");
-        safeAddLinkeable("WALL_SIGN", "sign");
-        safeAddLinkeable("STEP", "slab");
-        safeAddLinkeable("JUKEBOX", "jukebox");
-        safeAddLinkeable("WOODEN_DOOR", "door");
-        safeAddLinkeable("IRON_DOOR", "door");
-        safeAddLinkeable("IRON_DOOR_BLOCK", "door");
-        safeAddLinkeable("ITEM_FRAME", "itemframe");
+        LinkableMaterials = new ArrayList<LinkableMaterial>();
+        for(Map.Entry<String, String> entry : configUtil.fetchStringStringHashMap("linkableMaterials", config, false).entrySet()) {
+            byte data = -1;
+            String material;
+            if(entry.getKey().contains("~")) {
+                String[] bits = entry.getKey().split("~");
+                material = bits[0];
+                data = getDataFromString(bits[1]);
+            } else {
+                material = entry.getKey();
+            }
+            safeAddLinkeable(material, entry.getValue(), data);
+        }
     }
 
     /**
@@ -215,15 +218,30 @@ public class SignShopConfig {
     public static void addLinkable(String material, String alias) {
         if(material == null || material.isEmpty())
             return;
-        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase());
+        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase(), (byte)-1);
+    }
+
+    /**
+     * Register a material so that it can be linked and used for a shop
+     * The Alias is used when checking for DenyLink permission nodes (i.e. DenyLink.door)
+     * Passing a value for data other than -1 will only allow the given material with that specific
+     * data value to be linked. It is allowed to register the same material with multiple data values.
+     *
+     * @param material Material to register
+     * @param alias Alias to use for the given material
+     * @param data Durability value to compare
+     */
+    public static void addLinkable(String material, String alias, byte data) {
+        if(material == null || material.isEmpty())
+            return;
+        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase(), data);
     }
 
     private static void initConfig() {
-        String filename = "config.yml";
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(filename);
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
         if(ymlThing == null)
             return;
-        configUtil.loadYMLFromJar(ymlThing, filename);
+        configUtil.loadYMLFromJar(ymlThing, configFilename);
 
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
@@ -365,15 +383,6 @@ public class SignShopConfig {
         return signshopUtil.implode(operations.toArray(new String[operations.size()]), ",");
     }
 
-    private static void saveConfig() {
-        File tempFile = new File(SignShop.getInstance().getDataFolder(), "config.yml");
-        try {
-            config.save(tempFile);
-        } catch(IOException ex) {
-
-        }
-    }
-
     private static String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
         for(Map.Entry<String, String> entry : map.entrySet()) {
             if(entry.getKey().equalsIgnoreCase(lowercased))
@@ -407,7 +416,7 @@ public class SignShopConfig {
             }
         }
         if(changedSomething)
-            saveConfig();
+            configUtil.loadYMLFromJar(config, configFilename);
     }
 
     private static void closeStream(Closeable in) {
@@ -640,8 +649,8 @@ public class SignShopConfig {
         return Collections.unmodifiableMap(ShopLimits);
     }
 
-    public static Map<Material, String> getLinkableMaterials() {
-        return Collections.unmodifiableMap(LinkableMaterials);
+    public static List<LinkableMaterial> getLinkableMaterials() {
+        return Collections.unmodifiableList(LinkableMaterials);
     }
 
     public static List<SignShopSpecialOp> getSpecialOps() {

@@ -25,6 +25,7 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
+import org.wargamer2010.signshop.configuration.LinkableMaterial;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
@@ -387,8 +388,14 @@ public class signshopUtil {
     }
 
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
-        String materialName = SignShopConfig.getLinkableMaterials().get(bBlock.getType());
+        String materialName = null;
+        for(LinkableMaterial linkable : SignShopConfig.getLinkableMaterials()) {
+            if((linkable.getData() == -1 || linkable.getData() == bBlock.getData()) && linkable.getMaterialName() == bBlock.getType())
+                materialName = linkable.getAlias();
+        }
         if(materialName != null) {
+            if(materialName.isEmpty()) // Leaving the alias empty probably means denylink shouldn't be checked
+                return true;
             if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
                 ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
                 return false;
