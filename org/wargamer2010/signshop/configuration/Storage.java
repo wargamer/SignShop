@@ -139,6 +139,7 @@ public class Storage implements Listener {
             if(tempList.isEmpty())
                 throw storageex;
             seller_shopworld = tempList.get(0);
+            storageex.setWorld(seller_shopworld);
             if(Bukkit.getServer().getWorld(seller_shopworld) == null)
                 throw storageex;
             tempList = getSetting(sellerSettings, "owner");
@@ -148,13 +149,6 @@ public class Storage implements Listener {
             tempList = getSetting(sellerSettings, "sign");
             if(tempList.isEmpty())
                 throw storageex;
-            
-            for(World temp : Bukkit.getServer().getWorlds()) {
-                if(temp.getName().equalsIgnoreCase(seller_shopworld) && temp.getLoadedChunks().length == 0) {
-                    invalidShops.put(key, sellerSettings);
-                    return true; // World hasn't been loaded yet
-                }
-            }
 
             World world = Bukkit.getServer().getWorld(seller_shopworld);
 
@@ -181,6 +175,15 @@ public class Storage implements Listener {
                 }
             }
         } catch(StorageException caughtex) {
+            if(!caughtex.getWorld().isEmpty()) {
+                for(World temp : Bukkit.getServer().getWorlds()) {
+                    if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) {
+                        invalidShops.put(key, sellerSettings);
+                        return true; // World might not be loaded yet
+                    }
+                }
+            }
+
             try {
                 SignShop.log(getInvalidError(
                         SignShopConfig.getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
@@ -558,5 +561,14 @@ public class Storage implements Listener {
     private class StorageException extends Exception {
         private static final long serialVersionUID = 1L;
 
+        private String world = "";
+
+        public String getWorld() {
+            return world;
+        }
+
+        public void setWorld(String world) {
+            this.world = world;
+        }
     }
 }
