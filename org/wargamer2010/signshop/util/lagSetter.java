@@ -5,13 +5,15 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.material.Lever;
 import org.bukkit.material.MaterialData;
+import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
 
 public class lagSetter implements Runnable{
-    private final Block blockToChange;        
+    private final Block blockToChange;
 
     public lagSetter(Block blockToChange){
-        this.blockToChange = blockToChange;
+        this.blockToChange = blockToChange.getWorld().getBlockAt(blockToChange.getX(), blockToChange.getY(), blockToChange.getZ());
     }
 
     @Override
@@ -22,11 +24,11 @@ public class lagSetter implements Runnable{
             BlockState state = blockToChange.getState();
             MaterialData data = state.getData();
             Lever lever = (Lever)data;
-            if(lever.isPowered()) {
-                lever.setPowered(false);
-                state.setData(lever);
-                state.update();                    
-            }                    
-        }            
+            lever.setPowered(false);
+            state.setData(lever);
+            state.update();
+            for(Seller seller : Storage.get().getShopsByBlock(blockToChange))
+                seller.reloadBlocks();
+        }
     }
 }

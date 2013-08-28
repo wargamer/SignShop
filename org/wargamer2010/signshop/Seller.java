@@ -158,4 +158,15 @@ public class Seller {
         }
         return "";
     }
+
+    public void reloadBlocks() {
+        List<Block> tempContainables = new LinkedList<Block>();
+        List<Block> tempActivatables = new LinkedList<Block>();
+        for(Block a : containables)
+            tempContainables.add(a.getWorld().getBlockAt(a.getX(), a.getY(), a.getZ()));
+        for(Block b : activatables)
+            tempActivatables.add(b.getWorld().getBlockAt(b.getX(), b.getY(), b.getZ()));
+        containables = tempContainables;
+        activatables = tempActivatables;
+    }
 }

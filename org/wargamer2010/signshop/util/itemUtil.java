@@ -601,8 +601,6 @@ public class itemUtil {
         for(int x = -radius; x <= radius; x++) {
             for(int y = -radius; y <= radius; y++) {
                 for(int z = -radius; z <= radius; z++) {
-                    if(x == 0 && y == 0 && z == 0)
-                        continue;
                     OK = (OK ? loadChunkByBlock(
                             block.getWorld().getBlockAt(
                                 block.getX()+(x*chunksize),
@@ -618,8 +616,6 @@ public class itemUtil {
     public static boolean loadChunkByBlock(Block block) {
         if(block == null)
             return false;
-        if(!block.getChunk().isLoaded())
-            return block.getChunk().load();
-        return true;
+        return block.getChunk().load();
     }
 }
