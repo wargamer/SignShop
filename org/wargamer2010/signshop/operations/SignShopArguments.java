@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
+import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -40,14 +41,26 @@ public class SignShopArguments {
     }
 
     private void SetDefaultMessageParts() {
-        setMessagePart("!customer", ssPlayer.get().getName());
-        setMessagePart("!owner", ssOwner.get().getName());
-        setMessagePart("!player", ssPlayer.get().getName());
-        setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
+        if(ssPlayer != null) {
+            setMessagePart("!customer", ssPlayer.get().getName());
+            setMessagePart("!player", ssPlayer.get().getName());
+            setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
+        }
 
-        setMessagePart("!x", Integer.toString(bSign.get().getX()));
-        setMessagePart("!y", Integer.toString(bSign.get().getY()));
-        setMessagePart("!z", Integer.toString(bSign.get().getZ()));
+        if(ssOwner != null)
+            setMessagePart("!owner", ssOwner.get().getName());
+
+        if(bSign != null) {
+            setMessagePart("!x", Integer.toString(bSign.get().getX()));
+            setMessagePart("!y", Integer.toString(bSign.get().getY()));
+            setMessagePart("!z", Integer.toString(bSign.get().getZ()));
+
+            if(bSign.get() instanceof Sign) {
+                String[] sLines = ((Sign) bSign.get().getState()).getLines();
+                for(int i = 0; i < sLines.length; i++)
+                    setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
+            }
+        }
     }
 
     public void reset() {
