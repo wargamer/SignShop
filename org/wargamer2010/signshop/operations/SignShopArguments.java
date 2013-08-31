@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.operations;
 
-import java.applet.Applet;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -37,6 +36,18 @@ public class SignShopArguments {
         bSign.setRoot(pbSign);
         sOperation.setRoot(psOperation);
         bfBlockFace.setRoot(pbfBlockFace);
+        SetDefaultMessageParts();
+    }
+
+    private void SetDefaultMessageParts() {
+        setMessagePart("!customer", ssPlayer.get().getName());
+        setMessagePart("!owner", ssOwner.get().getName());
+        setMessagePart("!player", ssPlayer.get().getName());
+        setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
+
+        setMessagePart("!x", Integer.toString(bSign.get().getX()));
+        setMessagePart("!y", Integer.toString(bSign.get().getY()));
+        setMessagePart("!z", Integer.toString(bSign.get().getZ()));
     }
 
     public void reset() {

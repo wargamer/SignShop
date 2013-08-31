@@ -202,11 +202,6 @@ public class SignShopPlayerListener implements Listener {
                 if(!bSetupOK)
                     return;
 
-                ssArgs.setMessagePart("!customer", ssPlayer.getName());
-                ssArgs.setMessagePart("!owner", player.getName());
-                ssArgs.setMessagePart("!player", ssPlayer.getName());
-                ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
-
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);
                 if(createdevent.isCancelled()) {
@@ -252,10 +247,6 @@ public class SignShopPlayerListener implements Listener {
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                                                                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());
 
-            ssArgs.setMessagePart("!customer", ssPlayer.getName());
-            ssArgs.setMessagePart("!owner", ssOwner.getName());
-            ssArgs.setMessagePart("!player", ssPlayer.getName());
-            ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
             Boolean bRequirementsOK = true;

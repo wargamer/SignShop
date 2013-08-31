@@ -329,6 +329,8 @@ public class SignShopConfig {
                 List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
                 String op = bits.get(0);
                 Object opinstance = getInstance(packageName + "." + op.trim());
+                if(op.trim().equals("cooldown"))
+                    System.out.println("Found cooldown!");
                 if(opinstance == null) // Retry with default package
                     opinstance = getInstance(defaultOPPackage + "." + op.trim());
                 if(opinstance == null) {
