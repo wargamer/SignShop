@@ -24,9 +24,6 @@ public class runCommand implements SignShopOperation {
         String sOperation = ssArgs.getOperation().get();
         Boolean hasStartPerm = false;
 
-        String[] sLines = ((Sign) ssArgs.getSign().get().getState()).getLines();
-        for(int i = 0; i < sLines.length; i++)
-            ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
         boolean isOK = true;
 
         if(SignShopConfig.getCommands().containsKey(sOperation.toLowerCase())) {
