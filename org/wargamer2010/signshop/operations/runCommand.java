@@ -24,10 +24,6 @@ public class runCommand implements SignShopOperation {
         String sOperation = ssArgs.getOperation().get();
         Boolean hasStartPerm = false;
 
-        ssArgs.setMessagePart("!customer", ssPlayer.getName());
-        ssArgs.setMessagePart("!owner", ssArgs.getOwner().get().getName());
-        ssArgs.setMessagePart("!player", ssPlayer.getName());
-        ssArgs.setMessagePart("!world", ssPlayer.getPlayer().getWorld().getName());
         String[] sLines = ((Sign) ssArgs.getSign().get().getState()).getLines();
         for(int i = 0; i < sLines.length; i++)
             ssArgs.setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
