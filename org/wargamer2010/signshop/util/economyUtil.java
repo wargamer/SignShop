@@ -24,6 +24,8 @@ public class economyUtil {
     }
 
     public static float parsePrice(String line) {
+        if(line == null)
+            return 0.0f;
         String priceline = ChatColor.stripColor(line);
         String sPrice = "";
         Float fPrice;
