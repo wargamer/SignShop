@@ -85,6 +85,8 @@ public class signshopUtil {
     }
 
     public static SignShopOperation getSignShopBlock(String blockName) {
+        if(blockName == null)
+            return null;
         if(SignShopConfig.getOperationInstances().containsKey(blockName))
             return SignShopConfig.getOperationInstances().get(blockName);
         return null;
@@ -108,7 +110,7 @@ public class signshopUtil {
     public static List<SignShopSpecialOp> getSignShopSpecialOps() {
         return SignShopConfig.getSpecialOps();
     }
-
+    
     public static Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {
         Map<Enchantment, Integer> mEnchantments = new HashMap<Enchantment, Integer>();
         String saEnchantments[] = sEnchantments.split(";");

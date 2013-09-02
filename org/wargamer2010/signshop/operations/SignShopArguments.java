@@ -5,19 +5,22 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments {
 
     public SignShopArguments() {
-
+        SetDefaultMessageParts();
     }
 
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
@@ -40,22 +43,42 @@ public class SignShopArguments {
         SetDefaultMessageParts();
     }
 
+    public SignShopArguments(Seller seller, SignShopPlayer player) {
+        if(seller.getSign().getState() instanceof Sign)
+            fPrice.setRoot(economyUtil.parsePrice(((Sign)seller.getSign().getState()).getLine(3)));
+
+        isItems.setRoot(seller.getItems());
+        containables.setRoot(seller.getContainables());
+        activatables.setRoot(seller.getActivatables());
+        if(player != null)
+            ssPlayer.setRoot(player);
+        else
+            ssPlayer.setRoot(new SignShopPlayer((Player)null));
+
+        ssOwner.setRoot(new SignShopPlayer(seller.getOwner()));
+        bSign.setRoot(seller.getSign());
+        sOperation.setRoot(seller.getOperation());
+        bfBlockFace.setRoot(BlockFace.SELF);
+        SetDefaultMessageParts();
+    }
+
     private void SetDefaultMessageParts() {
         if(ssPlayer != null) {
             setMessagePart("!customer", ssPlayer.get().getName());
             setMessagePart("!player", ssPlayer.get().getName());
-            setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
+            if(ssPlayer.get().getPlayer() != null && ssPlayer.get().getPlayer().getWorld() != null)
+                setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
         }
 
         if(ssOwner != null)
             setMessagePart("!owner", ssOwner.get().getName());
 
-        if(bSign != null) {
+        if(bSign != null && bSign.get() != null) {
             setMessagePart("!x", Integer.toString(bSign.get().getX()));
             setMessagePart("!y", Integer.toString(bSign.get().getY()));
             setMessagePart("!z", Integer.toString(bSign.get().getZ()));
 
-            if(bSign.get() instanceof Sign) {
+            if(bSign.get().getState() instanceof Sign) {
                 String[] sLines = ((Sign) bSign.get().getState()).getLines();
                 for(int i = 0; i < sLines.length; i++)
                     setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));

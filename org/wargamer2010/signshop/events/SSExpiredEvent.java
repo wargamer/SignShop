@@ -1,10 +1,9 @@
 package org.wargamer2010.signshop.events;
 
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.wargamer2010.signshop.timing.IExpirable;
 
-public class SSExpiredEvent extends Event {
+public class SSExpiredEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private IExpirable expirable = null;
