@@ -68,16 +68,13 @@ public class signshopUtil {
     public static List<String> getParameters(String sOperation) {
         List<String> parts = new LinkedList<String>();
         if(sOperation.contains("{") && sOperation.contains("}")) {
-            String[] bits = sOperation.split("\\{");
-            if(bits.length == 2) {
-                parts.add(bits[0]);
-                String parameters = bits[1].replace("}", "");
-                String[] parbits = parameters.split(",");
-                if(parbits.length > 1)
-                    parts.addAll(Arrays.asList(parbits));
-                else
-                    parts.add(parameters);
-            }
+            parts.add(sOperation.substring(0, sOperation.indexOf('{')));
+            String parameter = sOperation.substring(sOperation.indexOf('{')+1, (sOperation.lastIndexOf('}')));
+            String[] parbits = parameter.split(",");
+            if(parbits.length > 1)
+                parts.addAll(Arrays.asList(parbits));
+            else
+                parts.add(parameter);
         }
         if(parts.isEmpty())
             parts.add(sOperation);
@@ -110,7 +107,7 @@ public class signshopUtil {
     public static List<SignShopSpecialOp> getSignShopSpecialOps() {
         return SignShopConfig.getSpecialOps();
     }
-    
+
     public static Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {
         Map<Enchantment, Integer> mEnchantments = new HashMap<Enchantment, Integer>();
         String saEnchantments[] = sEnchantments.split(";");
