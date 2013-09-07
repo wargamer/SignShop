@@ -4,11 +4,11 @@ import org.bukkit.plugin.Plugin;
 import java.io.IOException;
 
 public class setupMetrics {
-    private MetricsLite metrics = null;
+    private Metrics metrics = null;
 
     public setupMetrics(Plugin pPlugin) {
         try {
-            metrics = new MetricsLite(pPlugin);
+            metrics = new Metrics(pPlugin);
         } catch(IOException ex) {
             metrics = null;
         }
