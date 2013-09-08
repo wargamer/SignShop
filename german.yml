@@ -6,37 +6,35 @@
 #
 #
 signs:
-  Koop: Buy
-  Verkoop: Sell
-  Doneer: Donate
-  DoneerHand: DonateHand
-  Gokmachine: Slot
-  iVerkoop: iSell
-  iKoop: iBuy
-  gKoop: gBuy
-  gVerkoop: gSell
-  Dag: Day
+  Kauf: Buy
+  Verkauf: Sell
+  Spend: Donate
+  SpendHand: DonateHand
+  iVerkauf: iSell
+  iKauf: iBuy
+  gKauf: gBuy
+  gVerkauf: gSell
+  Tag: Day
   Nacht: Night
   Regen: Rain
-  Droog: ClearSkies
-  ApparaatAan: DeviceOn
-  ApparaatUit: DeviceOff
-  Schakel: Toggle
-  Apparaat: Device
-  Heel: Heal
-  Repareer: Repair
-  Deponeer: Dispose
-  ApparaatIt: DeviceItem
-  iGokmachine: iSlot
-  Betover: Enchant
-  iKoopXP: iBuyXP
-  iVerkoopXP: iSellXP
-  iRuil: iTrade
+  Trocken: ClearSkies
+  Aktivier: DeviceOn
+  Deaktivier: DeviceOff
+  Toggler: Toggle
+  Redstone: Device
+  Heil: Heal
+  Reparier: Repair
+  Entsor: Dispose
+  RedstoneIt: DeviceItem
+  Verzauber: Enchant
+  iKaufXP: iBuyXP
+  iVerkaufXP: iSellXP
+  iTausch: iTrade
   Klasse: Class
-  Onttover: Disenchant
-  Commando: Command
-  Deel: Share
-  Uitsluitend: Restricted
+  Entzauber: Disenchant
+  Befehl: Command
+  Teil: Share
+  Begrenzt: Restricted
 messages:
   setup:
     Buy: Du hast !items zum Verkauf gestellt zu einem Preis von !price!
