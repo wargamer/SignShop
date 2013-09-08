@@ -1,0 +1,345 @@
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+#
+#
+# ÜBERSETZT VON MGbeenieboy ! Das hat Stunden gedauert. Besucht craftwood.me ;)
+#
+#
+signs:
+  Koop: Buy
+  Verkoop: Sell
+  Doneer: Donate
+  DoneerHand: DonateHand
+  Gokmachine: Slot
+  iVerkoop: iSell
+  iKoop: iBuy
+  gKoop: gBuy
+  gVerkoop: gSell
+  Dag: Day
+  Nacht: Night
+  Regen: Rain
+  Droog: ClearSkies
+  ApparaatAan: DeviceOn
+  ApparaatUit: DeviceOff
+  Schakel: Toggle
+  Apparaat: Device
+  Heel: Heal
+  Repareer: Repair
+  Deponeer: Dispose
+  ApparaatIt: DeviceItem
+  iGokmachine: iSlot
+  Betover: Enchant
+  iKoopXP: iBuyXP
+  iVerkoopXP: iSellXP
+  iRuil: iTrade
+  Klasse: Class
+  Onttover: Disenchant
+  Commando: Command
+  Deel: Share
+  Uitsluitend: Restricted
+messages:
+  setup:
+    Buy: Du hast !items zum Verkauf gestellt zu einem Preis von !price!
+    Sell: Du hast angegeben !price für !items zu bezahlen!
+    Donate: Du hast eine Spendenbox für !items erstellt!
+    DonateHand: Du hast eine Spendenbox für alle Items erstellt
+    Slot: Du hast eine !price Slotmaschine erstellt, die !items bietet!
+    iBuy: Du hast !items unendlich zum Verkauf gestellt zu einem Preis von !price!
+    iSell: Du hast angegeben eine unendliche Anzahl an !items für !price zu bezahlen!
+    gBuy: Du hast einen Geistershop erstellt, der !items für !price verkauft! (Du wirst kein Geld verlieren oder gewinnen von diesem Shop)
+    gSell: Du hast einen Geistershop erstellt, der !items für !price kauft! (Du wirst kein Geld verlieren oder gewinnen von diesem Shop)
+    Day: Du hast einen Item Controller erstellt, der !price kostet!
+    Night: Du hast einen Zeit Controller erstellt, der !price kostet!
+    Rain: Du hast einen Wetter Controller erstellt, der !price kostet!
+    ClearSkies: Du hast einen Wetter Controller erstellt, der !price kostet!
+    DeviceOn: Du hast einen Redstone-Aktivierer erstellt, der !price kostet!
+    DeviceOff: Du hast einen Redstone-Deaktivierer erstellt, der !price kostet!
+    Toggle: Du hast einen Redstone-Toggler erstellt, der !price kostet!
+    Device: Du hast einen temporären Redstone-Aktivierer erstellt, der !price kostet!
+    Heal: Du hast eine Heilstation erstellt, der !price kostet!
+    Repair: Du hast eine Reparierstation erstellt, der !price kostet!
+    Dispose: Du hast ein Entsorg-Schild erstellt
+    DeviceItem: Du hast einen Redstone-Aktivierer erstellt, der !items kostet!
+    iSlot: Du hast eine !price Slotmaschine erstellt, die unendlich !items bietet!
+    Enchant: Du hast einen Verzauberer erstellt, der !price kostet und mit !enchantments verzaubert!
+    iSellXP: Du hast angegeben !price zu bezahlen für !xp XP
+    iBuyXP: Du hast !xp XP zum Verkauf gestellt zu einem Preis von !price!
+    iTrade: Du hast ein Tausch-Shop erstellt, der !chest1 kostet und es gegen !chest2 eintauscht!
+    Trade: Du hast einen Tausch-Shop erstellt, der !chest1 kostet und es gegen !chest2 eintauscht!
+    TpToOwner: Du hast ein Befehl-Beispiel Shop erstellt, der Teleports zu !owner für !price bietet!
+    Class: Du hast einen Shop erstellt, der eine Klasse verkauft zu einem Preis von !price!
+    Disenchant: Du hast ein Schild erstellt, welches Verzauberungen entfernt zu einem Preis von !price!
+    Command: Du hast ein Schild erstellt, welches Befehle für !price ausführt!
+    UserCommand: Du hast ein Schild erstellt, welches Befehle ausführt, als würde es der Spieler in den Chat tippen, zu einem Preis von !price!
+    Jukebox: Du hast eine Jukebox erstellt, die CDs aus der Kiste abspielt zu einem Preis von !price!
+    Kit: Du hast ein Einmal-Benutz-Kit erstellt (!items) für !price!
+    ResetKit: Du hast ein Schild erstellt, das !param Schilder resettet!
+    iXPBuy: Du hast !items zum Verkauf gestellt für !xp XP Punkte!
+    iXPSell: Du hast !items unendlich zum Verkauf gestellt für !xp XP Punkte!
+    Promote: Du hast ein Promote Schild erstellt, welches promotet in die !promoteto Gruppe.
+  confirm:
+    Buy: !items für !price kaufen?
+    Sell: !items für !price kaufen?
+    Donate: !items spenden?
+    DonateHand: !items spenden?
+    Slot: Slot-Maschine spielen für !price?
+    iBuy: !items für !price kaufen?
+    iSell: !items für !price verkaufen?
+    gBuy: !items fürr !price kaufen?
+    gSell: !items für !price verkaufen?
+    Day: Tag machen für !price?
+    Night: Nacht machen für !price?
+    Rain: Regen an machen für !price?
+    ClearSkies: Sonning machen für !price?
+    DeviceOn: Diese Leitung aktivieren für !price?
+    DeviceOff: Diese Leitung deaktivieren für !price?
+    Toggle: Die Leitung togglen für !price?
+    Device: Diese Leitung temporär aktivieren für !price?
+    Heal: Heilen für !price?
+    Repair: Item in deiner Hand reparieren für !price?
+    Dispose: Entsorgen von !items?
+    DeviceItem: Die Leitung temporär aktivieren für !items?
+    iSlot: Diese unendliche Slot-Maschine für !price spielem?
+    Enchant: Dein Item mit !enchantments verzaubern für !price?
+    iSellXP: !xp XP verkaufen für !price?
+    iBuyXP: !xp XP kaufen für !price?
+    iTrade: !chest2 kaufen mit !chest1?
+    Trade: !chest2 kaufen mit !chest1?
+    TpToOwner: Zu !owner teleportieren für !price?
+    Class: Diese Klasse mit !items für !price kaufen?
+    Disenchant: Verzauberungen aus dem Item entfernen für !price?
+    Command: Befhehle auf diesem Schild ausführen für !price?
+    UserCommand: Befehle auf diesem Schild ausführen für !price?
+    Jukebox: CD abspielen für !price?
+    Kit: Dieses Kit (!items) einmalig für !price kaufen?
+    ResetKit: Deine !param Schilder für !price resetten!
+    iXPBuy: !items für !xp XP Punkte kaufen?
+    iXPSell: S!items für !xp XP Punkte verkaufen?
+    Promote: Von !promotefrom zu !promoteto promoten?
+  transaction:
+    Buy: Du hast !items für !price gekauft!
+    Sell: Du hast !items für !price verkauft!
+    Donate: Du hast !items gespendet!
+    DonateHand: Du hast !items gespendet!
+    Slot: Du hast !items gewonnen!
+    iBuy: Du hast !items für !price gekauft!
+    iSell: Du hast !items für !price verkauft!
+    gBuy: Du hast !items für !price gekauft!
+    gSell: You hast !items für !price verkauft!
+    Day: Du hast Tag gemacht für !price!
+    Night: Du hast Nacht gemacht für !price!
+    Rain: Du hast Regen gemacht für !price!
+    ClearSkies: Du hast es sonnig gemacht für !price!
+    DeviceOn: Du hast die Leitung aktiviert für !price!
+    DeviceOff: Du hast die Leitung deaktiviert für !price!
+    Toggle: Du hast die Leitung getogglet für !price!
+    Device: Du hast die Leitung temporär aktiviert für !price!
+    Heal: Du hast dich geheilt für !price!
+    Repair: Du hast ein Item für !price repariert!
+    Dispose: Du hast !items entsorgt!
+    DeviceItem: Du hast die Leitung temporär aktiviert für !items!
+    iSlot: Du hast !items gewonnen!
+    Enchant: Dein Item wurde mit !enchantments verzaubert für !price!
+    iSellXP: !xp XP für !price verkauft!
+    iBuyXP: !xp XP für !price gekauft!
+    iTrade: !chest1 gegen !chest2 getauscht!
+    Trade: !chest1 gegen !chest2 getauscht!
+    TpToOwner: Du hast dich zu !owner teleportiert für !price!
+    Class: Du hast die Klasse mit !items für !price gekauft!
+    Disenchant: Du hast die Verzauberungen des Items in deiner Hand entfernt für !price!
+    Command: Du hast die Befehle auf dem Schild ausgeführt für !price!
+    UserCommand: Du hast die Befehle auf dem Schild ausgeführt für !price!
+    Jukebox: Du hast die Jukebox eine Platte spielen lassen für !price!
+    Kit: Du hast !items für !price erworben!
+    ResetKit: Du hast !param Schilder für !price resettet!
+    iXPBuy: Du hast !items für !xp XP Punkte gekauft!
+    iXPSell: Du hast !items für !xp XP Punkte verkauft!
+    Promote: Du wurdest von !promotefrom zu !promoteto promotet!
+  transaction_owner:
+    Buy: \!customer kaufte !items für !price from you!
+    Sell: \!customer verkaufte dir !items für !price!
+    Donate: \!customer spendete !items an dich!
+    DonateHand: \!customer spendete !items an dich!
+    Slot: \!customer spielte eine Slot-Maschine für !price und gewann !items!
+    iBuy: ''
+    iSell: ''
+    gBuy: \!customer kaufte !items aus deinem Geist-Shop!
+    gSell: \!customer verkaufte !items aus deinem Geist-Shop!
+    Day: ''
+    Night: ''
+    Rain: ''
+    ClearSkies: ''
+    DeviceOn: \!customer aktivierte deine Leitung für !price!
+    DeviceOff: \!customer deaktivierte deine Leitung für !price!
+    Toggle: \!customer toggelte deine Leitung für !price!
+    Device: \!customer aktivierte deine Leitung temporär für !price!
+    Heal: ''
+    Repair: ''
+    Dispose: ''
+    DeviceItem: \!customer aktivierte deine Leitung temporär für !items!
+    iSlot: ''
+    Enchant: ''
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    Trade: \!customer tauschte !chest1 für deine !chest2!
+    TpToOwner: ''
+    Class: ''
+    Disenchant: ''
+    Command: ''
+    UserCommand: ''
+    Jukebox: \!customer spielte eine Platte auf deiner Jukebox für !price!
+    Kit: ''
+    ResetKit: ''
+    iXPBuy: ''
+    iXPSell: ''
+    Promote: ''
+  help:
+    Buy: Das Buy-Schild tauscht dein Geld mit den angebotenen Items.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile.  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.
+    Sell: Das Sell-Schild tauscht des Kunden Items mit des Owners Geld. In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.
+    Donate: Das Donate-Schild würde die Items aus der Kiste geben.  Du kannst was immer du willst in die 2., 3. und 4. Zeile schreiben.  Schlage die Kiste(n), welche die Items, welche du für eine Spende akzeptierst, beinhaltet, mit einem !linkmaterial.
+    DonateHand: The DonateHand sign will take the items from a customer's hand and give it to the chest.  Du kannst was immer du willst in die 2., 3. und 4. Zeile schreiben.  Schlage die leeren Kisten, welche die gespendeten Items halten wird, mit einem !linkmaterial.
+    Slot: Das Slot-Schild tauscht des Kunden Geldes gegen zufällig ausgewähltes Item aus der Kiste.  Jedes Slot in der Kiste hat die selbe Wahrscheinlichkeit.  Die Menge der Items in jedem Slot der Kiste wird zur Anzahl der Items, die der Kunde bekommt, falls das Kisten Slot ausgewählt ist (leere Kisten Slots werden ignoriert).
+    iBuy: Das Unendliche-Buy-Schild tauscht dein Geld mit den angebotenen Items.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Dieser Shop wird nie ausverkauft sein, also kann die Kiste nach der Verlinkung zerstört werden.  Geld kommt nicht ins Konto des Besitzers.
+    iSell: The Infinite Sell sign exchanges the customer's items for money. In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Dieser Shop wird nie keinen Platz mehr in der Kiste haben, also kann die Kiste nach der Verlinkung zerstört werden.  Geld wird nicht vom Konto des Besitzers abgezogen.
+    gBuy: Das Geister-Buy-Schild tauscht des Kunden Geldes gegen die Items in der Kiste.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Geld kommt nicht in des Besitzers Konto.
+    gSell: Das Geister-Sell-Schild tauscht des Kunden Items gegen Geld.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Geld wird nicht vom Besitzers Konto abgezogen.
+    Day: Das Day-Schild tauscht des Kunden Geldes gegen das Stellen der Zeit zu Tag.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    Night: Das Nacht-Schild tauscht des Kunden Geldes gegen das Stellen der Zeit zu Nacht.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    Rain: Das Rain-Schild tauscht des Kunden Geldes gegen das Stellen des Wetters auf Regen.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    ClearSkies: The ClearSkies sign exchanges the customer's money for removing stormy weather.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    DeviceOn: Das DeviceOn Schild tauscht des Kunden Geldes gegen das Einschalten von Schaltern.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlag die Schalter, die eingeschaltet werden sollen mit !linkmaterial.
+    DeviceOff: Das DeviceOff Schild tauscht des Kunden Geldes gegen das Ausschalten von Schaltern.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlag die Schalter, die ausgeschaltet werden sollen mit !linkmaterial.
+    Toggle: Das Toggle Schild tauscht des Kunden Geldes gegen das Ein-/ Ausschalten von Schaltern.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlag die Schalter, die an-/ ausgeschaltet werden sollen mit !linkmaterial.
+    Device: Das Device Schild tauscht des Kunden Geldes gegen das temporäre Einschalten von Schaltern.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlag die Schalter, die temporär geschaltet werden sollen mit !linkmaterial.
+    Heal: Das Heal Schild tauscht des Kunden Geldes gegen Heilen.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    Repair: Das Repair Schild tauscht des Kunden Geldes gegen das Reparieren der Items in seiner Hand.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    Dispose: Das Dispose Schild zerstört die Items in der Hand des Kunden.  Du kannst was immer du willst in die 2., 3. und 4. Zeile schreiben.
+    DeviceItem: Das Device Schild tauscht des Kunden Items gegen das Einschalten von Schaltern.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlag die Schalter, die an-/ ausgeschaltet werden sollen mit !linkmaterial.  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.
+    iSlot: Das iSlot Schild tauscht des Kundes Geldes für zufällig gewählte Items.  Die Slots in der Kiste haben alle die selbe Wahrscheinlichkeit um ausgewählt zu werden.  Die Anzahl der Items, die in jenem Slot sind, wird die Anzahl sein, die der Kunde erhält (leere Kisten Slots werden ignoriert).  Dieser Shop wird nie ausverkauft sein, also kann die Kiste nach der Verlinkung zerstört werden.  Geld kommt nicht in des Besitzers Konto.
+    Enchant: Das Enchant Schild tauscht des Kunden Geldes gegen das Verzauberun des Items in ihrer Hand.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Die Verzauberung wird durch einen verzauberten Gegenstand in der Kiste festgestellt.  Geld kommt nicht in des Besitzers Konto.
+    iSellXP: Das Infinite Sell XP Schild ertauscht des Kunden XP Level gegen Geld.  Die zweite Zeile des Schildes kann sein was immer du willst, die XP Level gehen in die dritte und der Preis in die vierte Zeile.  Geld kommt nicht in des Besitzers Konto.
+    iBuyXP: Das Infinite Buy XP tauscht des Kunden Geldes gegen XP Level.  Die zweite Zeile des Schildes kann sein was immer du willst, die XP Level gehen in die dritte und der Preis in die vierte Zeile.  Geld wird dem Konto des Besitzers nicht abgezogen.
+    iTrade: Das Infinite Trade sign exchanges the customer's items for the chest's items.  The 2nd, 3rd and 4th lines of this sign can say whatever you like.  Punch the chest of the items you want to give away using !linkmaterial, then punch the chest items you would like to recieve, then punch the sign.  The items will not be added or removed from the chests, so they can be destroyed after linking.
+    Trade: The Trade sign exchanges the customer's items for the chest's items.  The 2nd, 3rd and 4th lines of this sign can say whatever you like.  Punch the chest of the items you want to give away using !linkmaterial, then punch the chest items you would like to recieve, then punch the sign.
+    TpToOwner: Das TpToOwner Schild tauscht des Kunden Geldes für das Teleportieren ihrerseits zum Owner.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile.  Geld kommt nicht in des Besitzers Konto.  Das ist ein Beispiel Schild für custom Befehle, lies mehr im Quick Reference (befindet sich im plugins/SignShop Ordner).
+    Class: Das Class Schild tauscht des Kunden Geldes und deren Inventar (!) gegen die Items in der Kiste.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile.  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Geld kommt nicht in des Besitzers Konto.
+    Disenchant: Das Disenchant Schild tauscht des Kunden Geldes gegen das Entfernen der Verzauberungen vom Item in deren Hand.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    Command: Das Command Schild tauscht des Kunden Geldes um Befehle auf dem Schild auszuführen. In der zweiten und dritten Zeile können Befehle stehen (ohne "/"), der Preis kommt in die vierte Zeile.  SignShop kontrolliert nicht, ob dieser Befehl ausgeführt wurde, also wird es dennoch des Kunden Geldes nehmen.
+    UserCommand: Das UserCommand Schild tauscht des Kunden Geldes um Befehle auf dem Schild auszuführen als hätten sie es in den Chat getippt. In der zweiten und dritten Zeile können Befehle stehen (ohne "/"), der Preis kommt in die vierte Zeile.  SignShop kontrolliert nicht, ob dieser Befehl ausgeführt wurde, oder sie die Berechtigung dazu haben, also wird es dennoch des Kunden Geldes nehmen.
+    Jukebox: Das Jukebox Schild tauscht des Kunden Geldes gegen das Abspielen einer Schallplatte. In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Punch the chest(s) using !linkmaterial containing the music discs you'd like to play.  Das Schild wird die nächste Schallplatte in der Kiste nehmen, falls benutzt.
+    Kit: Das Kit Schild tauscht des Kunden Geldes und deren Inventar (!) gegen die Items in der Kiste.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Das Schild kann nur einmal per Spieler benutzt werden, bevor es resettet wird.  Geld kommt nicht in des Besitzers Konto.
+    ResetKit: Das ResetKit Schild tauscht des Spielers Geldes, dass sie das Kit-Schild erneut benutzen dürfen.  In der zweiten und dritten Zeile des Schildes kann stehen, was immer du willst, der Preis kommt in die vierte Zeile..  Geld kommt nicht in des Besitzers Konto.
+    iXPBuy: Das Infinite XP Buy Schild tauscht des Kunden XP Punkte gegen Items.  In der zweiten und vierten Zeilen kann stehen was immer du willst, die XP Punkte kommen in die dritte Zeile.  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Die Kiste des Shoppes wird nie voll werden, darum kann die Kiste nach dem Verlinken zerstört werden.
+    iXPSell: Das Infinite XP Sell Schild tauscht des Kunden Items gegen XP Punkte.  In der zweiten und vierten Zeilen kann stehen was immer du willst, die XP Punkte kommen in die dritte Zeile.  Schlage die Kiste(n), welche den Typ und die Anzahl der Items beinhaltet, um welche es in einer einzelnen Transaktion geht, mit einem !linkmaterial.  Die Kiste des Shoppes wird nie voll werden, darum kann die Kiste nach dem Verlinken zerstört werden.
+errors:
+  no_permission: Du hast nicht die Berechtigung dieses Schild zu erstellen!
+  no_permission_use: Du hast nicht die Berechtigung dieses Schild zu benutzen!
+  no_permission_changeowner: Du hast nicht die Berechtigung den Besitzer des Shops zu wechseln!
+  invalid_operation: Das Schild, das du angeklickt hast, ist falsch eingestellt!
+  chest_empty: Der Shop ist leer!
+  chest_missing: Du musst mindestens 1 Kiste auswählen für diesen Shop Typ!
+  lever_missing: Du musst mindestens 1 Kiste auswählen für diesen Shop Typ!
+  no_player_money: Du hast nicht !price zu Bezahlen!
+  no_shop_money: Der Shop hat nicht !price um dir zu bezahlen!
+  out_of_business: Dieser Shop ist out of business!
+  out_of_stock: Dieser Shop ist ausverkauft!
+  overstocked: Dieser Shop ist überfüllt!
+  player_doesnt_have_items: Du hast nicht die Items! (!items)
+  no_item_in_hand: Für diesen Shop musst du ein Item in der Hand halten um es nehmen zu können!
+  player_overstocked: Du bist überfüllt, entweder dein Inventar ist voll oder du hast nicht genug Geld!
+  sign_location_stored: Schild Position gespeichert!
+  made_day: '!player hat es Tag gemacht!'
+  made_night: '!player hat es Nacht gemacht!'
+  made_rain: '!player hat Regen gemacht!'
+  made_clear_skies: '!player hat es sonnig gemacht!'
+  already_on: Leitung ist bereits aktiviert
+  already_off: Leitung ist bereits deaktiviert
+  link_notallowed: Du darfst dies nicht verlinken!
+  item_already_repair: Dieses Item ist bereits vollständig repariert!
+  already_raining: Es regnet bereits!
+  already_clear_skies: Es ist schon sonnig!
+  already_full_health: Dein Leben ist schon voll!
+  saving: Shops werden gespeichert...
+  saved: Shops gespeichert!
+  shop_removed: Ungültiger Shop entfernt! Es sollte in '!world' an (!x, !y, !z) seom.
+  invalid_item_to_repair: Dieses Item kann nicht repariert werden!
+  no_item_to_repair: Du musst ein Item in der Hand halten welches du reparieren willst!
+  backup_fail: Failed to backup Storage!
+  too_far: Die Distanz zwischen dem Schild und der Kiste ist zu groß. Das Maximum ist !max. Wenn du den Abstand zu klein findest, melde dich beim Owner.
+  too_many_shops: Du hast das Maximum an Shops erreicht. Maximum ist !max.
+  enchanted_not_allowed: Du darfst keine verzauberten Items reparieren.
+  enchantment_missing: Mindestens ein verzaubertes Item ist notwendig, leg es in die Kiste(n)!
+  item_not_enchantable: Das Item in deiner Hand ist nicht verzauberbar!
+  no_player_xp: Du hast nicht genug XP zu verkaufen (!xp)!
+  no_item_to_disenchant: Du musst ein Item in der Hand halten zum Disenchant!
+  nothing_to_disenchant: Dieses Item kann nicht disenchanted werden!
+  multiworld_not_allowed: MultiWorld shops sind auf diesem Server nicht erlaubt.
+  no_permit_owner: Der Besitzer dieses Shops hat nicht mehr die Lizens!
+  need_permit: Du brauchst eine Lizens um diese Art Shops zu Erstellen!
+  villager_trading_disabled: Handeln mit Dorfbewohnern ist auf diesem Server nicht erlaubt!
+  not_allowed_to_link_sharesigns: Du darfst nicht Share Schilder mit diesem Shop verlinken!
+  no_shop_linked_to_sharesign: Dieses Share Schild wurde mit noch keinem Shop verlinkt.
+  share_sign_splits_profit: Dieses Share Schild spaltet Profite zwischen !profits für die Shop(s) bei !profitshops
+  registered_share_sign: Ein Share Schild wurde registriert, bitte klicke auf das nächste Shop Schild.
+  unlinked_share_sign: Share Schild vom Shop unlicked.
+  linked_share_sign: Share Schild mit Shop erfolgreich verlinkt.
+  not_allowed_to_link_restrictedsigns: Du darfst nicht offene Schilder mit diesem Shop verlinken!
+  no_shop_linked_to_restrictedsign: Dieses offene Schild wurde mit noch keinem Shop verlinkt!
+  registered_restricted_sign: Offenes Schild registriert, bitte klicke auf das nächste Schop Schild.
+  unlinked_restricted_sign: Offenes Schild vom Shop unlinked.
+  linked_restricted_sign: Offenes Schild erfolgreich mit Shop verlinkt.
+  restricted_sign_restricts: Dieses offene Schild schränkt die Nutzung des/ der Shops bei !restrictedshops ein
+  towny_insufficient_funds: Unzureichende Mittel im Shop angemeldet!
+  towny_owner_not_mayor_or_assistant: The shop owner isn't a mayor or assistant of a town.
+  towny_owner_not_belong_to_town: The shop owner likely doesn't belong to a town.
+  towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
+  restricted_from_using: You are restricted from using this shop!
+  restricted_but_owner: You are not restricted to use this shop as you are the owner.
+  item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
+  item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
+  block_is_protected: Dieser Block ist gesichert, du darfst nicht mit ihm interagieren
+  updated_shop: Der Shop wurde erfolgreich aktualisiert.
+  failed_to_update_shop: Aktualisieren des Shops fehlgeschlagen.
+  price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
+  only_one_time: Du kannst diesen Shop nur einmal benutzen.
+  nothing_to_reset_ontime: Dir ist bereits erlaubt !param Schilder einmal zu benutzen. Es gibt also nicht zu resetten.
+  shop_on_cooldown: Dieser Shop ist im Cooldown, versuch es wieder in !cooldownleft Sekunden.
+  damaged_items_shop_homogeneous: Ein Shop, der beschädigte Items akzeptiert, kann nur mit einer Art Item umgehen! Beschädigte Items werden bis der Shop gefixt ist, nicht angenommen.
+  use_item_to_destroy_shop: Dieser Shop ist gesichert und kann nur mit einer !destroymaterial zerstört werden.
+  no_items_defined_for_shop: Es sind keine Items für diesen Shop definiert, Operation kann nicht abgeschlossen werden.
+  notifications_shop_built: \!player hat gerade ein !signtype Schild bei (!x, !y, !z) erstellt
+  shop_contains: Dieser Shop beinhaltet !shopinventory @ !items für !price
+  not_allowed_to_link_banksigns: Du darfst Bank Schilder nicht mit diesem Shop verbinden!
+  no_shop_linked_to_banksign: Dieses Bank Schild wurde mit keinem Shop verbunden.
+  bank_sign_linked_to_banks: Dieses Bank Schild kommuniziert mit der Bank !bank im Namen des Shops bei !bankshops
+  registered_bank_sign: Bank Schild registriert, bitte klicke auf das nächste Bank Schild.
+  unlinked_bank_sign: Bank vom Schild unlinked
+  linked_bank_sign: Bank Schild mit Shop erfolgreich verlinkt.
+  not_allowed_to_use_bank: Du bist nicht der Besitzer oder Member der !bank Bank also wird das verbundene Bank Schild ignoriert.
+  no_bank_available: Es ist keine Bank verfügbar um diese Anfrage zu verarbeiten, bitte kontaktiere den Shop Besitzer.
+  no_bank_support: The Economy plugin installed on this server does not support Banks.
+  repeated_x_times: (wiederholt !times mal)
+  removed_location: Gepspeicherte Position entfernt
+  stored_location: Gespeicherte Position von !block
+  stored_location_containable: Gespeicherte Position von !block mit dem Inhalt von !items
+  region_does_not_allow_shops: Shops sind in dieser Region nicht erlaubt. Bitte erstelle das Schild irgendwo anders.
+  region_allow_shops_but_op: This shop is not in a region with the "allow-shop" flag set to true but you are OP.
+  region_allow_shops_but_perm: This shop is not in a region with the "allow-shop" flag set to true but you have the bypass permission node.
+  towny_shop_plot_not_allowed: Dieser Shop ist nicht auf einem Shop Grundstück, bitte machs woanders.
+  towny_shop_plot_not_allowed_but_op: This shop is not on a shop plot but you are OP.
+  towny_shop_plot_not_allowed_but_perm: This shop is not on a shop plot but you have the bypass permission node.
+  deselected_hanging: You have deselected a Hanging item.
+  selected_hanging: You have selected a Hanging item.
+  itemframe_unlinked: ItemFrame has been successfully unlinked.
+  itemframe_linked: ItemFrame has been successfully linked.
+  itemframe_already_linked: This ItemFrame is already linked to another shop.
+  shop_is_now_protected: Your chest(s) have been locked automatically.
+  not_allowed_to_rotate_frame: You are not allowed to rotate this ItemFrame.
+  no_permission_plugin: No permission plugin could be found.
+  missing_promote_group: Please write the Permission group to promote to on the second line.
+  promote_group_does_not_exist: The Permission group on the second line does not exist.
+  not_in_permission_group: Du bist noch nicht in der Permission Gruppe.
+  already_in_promote_group: Du bist bereits in der Gruppe.
+  could_not_remove_primary_group: Du konntest nicht von deiner jetzigen Gruppe entfernt werden
+  could_not_promote: Promote fehlgeschlagen.
