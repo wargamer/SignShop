@@ -76,15 +76,15 @@ messages:
     iXPSell: Du hast !items unendlich zum Verkauf gestellt für !xp XP Punkte!
     Promote: Du hast ein Promote Schild erstellt, welches promotet in die !promoteto Gruppe.
   confirm:
-    Buy: !items für !price kaufen?
-    Sell: !items für !price kaufen?
-    Donate: !items spenden?
-    DonateHand: !items spenden?
+    Buy: \!items für !price kaufen?
+    Sell: \!items für !price kaufen?
+    Donate: \!items spenden?
+    DonateHand: \!items spenden?
     Slot: Slot-Maschine spielen für !price?
-    iBuy: !items für !price kaufen?
-    iSell: !items für !price verkaufen?
-    gBuy: !items fürr !price kaufen?
-    gSell: !items für !price verkaufen?
+    iBuy: \!items für !price kaufen?
+    iSell: \!items für !price verkaufen?
+    gBuy: \!items fürr !price kaufen?
+    gSell: \!items für !price verkaufen?
     Day: Tag machen für !price?
     Night: Nacht machen für !price?
     Rain: Regen an machen für !price?
@@ -99,10 +99,10 @@ messages:
     DeviceItem: Die Leitung temporär aktivieren für !items?
     iSlot: Diese unendliche Slot-Maschine für !price spielem?
     Enchant: Dein Item mit !enchantments verzaubern für !price?
-    iSellXP: !xp XP verkaufen für !price?
-    iBuyXP: !xp XP kaufen für !price?
-    iTrade: !chest2 kaufen mit !chest1?
-    Trade: !chest2 kaufen mit !chest1?
+    iSellXP: \!xp XP verkaufen für !price?
+    iBuyXP: \!xp XP kaufen für !price?
+    iTrade: \!chest2 kaufen mit !chest1?
+    Trade: \!chest2 kaufen mit !chest1?
     TpToOwner: Zu !owner teleportieren für !price?
     Class: Diese Klasse mit !items für !price kaufen?
     Disenchant: Verzauberungen aus dem Item entfernen für !price?
@@ -111,7 +111,7 @@ messages:
     Jukebox: CD abspielen für !price?
     Kit: Dieses Kit (!items) einmalig für !price kaufen?
     ResetKit: Deine !param Schilder für !price resetten!
-    iXPBuy: !items für !xp XP Punkte kaufen?
+    iXPBuy: \!items für !xp XP Punkte kaufen?
     iXPSell: S!items für !xp XP Punkte verkaufen?
     Promote: Von !promotefrom zu !promoteto promoten?
   transaction:
@@ -138,10 +138,10 @@ messages:
     DeviceItem: Du hast die Leitung temporär aktiviert für !items!
     iSlot: Du hast !items gewonnen!
     Enchant: Dein Item wurde mit !enchantments verzaubert für !price!
-    iSellXP: !xp XP für !price verkauft!
-    iBuyXP: !xp XP für !price gekauft!
-    iTrade: !chest1 gegen !chest2 getauscht!
-    Trade: !chest1 gegen !chest2 getauscht!
+    iSellXP: \!xp XP für !price verkauft!
+    iBuyXP: \!xp XP für !price gekauft!
+    iTrade: \!chest1 gegen !chest2 getauscht!
+    Trade: \!chest1 gegen !chest2 getauscht!
     TpToOwner: Du hast dich zu !owner teleportiert für !price!
     Class: Du hast die Klasse mit !items für !price gekauft!
     Disenchant: Du hast die Verzauberungen des Items in deiner Hand entfernt für !price!
