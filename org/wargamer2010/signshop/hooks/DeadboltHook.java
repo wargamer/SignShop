@@ -16,7 +16,7 @@ public class DeadboltHook implements Hook {
         if(HookManager.getHook("Deadbolt") == null)
             return true;
         try {
-            return Deadbolt.isAuthorized(player, block);
+            return (!Deadbolt.isProtected(block) || Deadbolt.isAuthorized(player, block));
         } catch(NullPointerException ex) {
             // Deadbolt does not support checking for specific materials
             return true;
