@@ -11,6 +11,7 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -82,7 +83,7 @@ public class copySign implements SignShopSpecialOp {
                 return true;
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace());
+                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
 
             Boolean bSetupOK = false;
             for(SignShopOperationListItem ssOperation : SignShopOperations) {

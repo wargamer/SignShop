@@ -34,6 +34,7 @@ import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.versionUtil;
+import org.wargamer2010.skript.EvtSSPretransaction;
 
 public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
@@ -54,6 +55,9 @@ public class SignShop extends JavaPlugin{
     // Vault
     private Vault vault = null;
     private setupMetrics metricsSetup = null;
+
+    // Skript
+    private static boolean registeredWithSkript = false;
 
     //Logging
     public void log(String message, Level level,int tag) {
@@ -171,6 +175,10 @@ public class SignShop extends JavaPlugin{
             if(SignShopConfig.getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
+            }
+            if(!registeredWithSkript && pm.getPlugin("Skript") != null) {
+                EvtSSPretransaction.register();
+                registeredWithSkript = true;
             }
             registerSSListeners();
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
