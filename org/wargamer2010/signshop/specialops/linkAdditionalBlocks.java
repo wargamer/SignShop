@@ -18,6 +18,7 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -91,7 +92,7 @@ public class linkAdditionalBlocks implements SignShopSpecialOp {
         activatables = this.updateList(seller.getActivatables(), activatables, ssPlayer, seller);
 
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), containables, activatables,
-                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());
+                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
 
         for (Block bCheckme : containables) {
             if (bClicked.getWorld().getName().equals(bCheckme.getWorld().getName())) {

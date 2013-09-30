@@ -19,12 +19,13 @@ import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments {
 
-    public SignShopArguments() {
+    public SignShopArguments(SignShopArgumentsType type) {
         SetDefaultMessageParts();
+        argumentType = type;
     }
 
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
-                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace) {
+                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, SignShopArgumentsType type) {
         fPrice.setRoot(pfPrice);
         isItems.setRoot(pisItems);
         containables.setRoot(pContainables);
@@ -40,10 +41,11 @@ public class SignShopArguments {
         bSign.setRoot(pbSign);
         sOperation.setRoot(psOperation);
         bfBlockFace.setRoot(pbfBlockFace);
+        argumentType = type;
         SetDefaultMessageParts();
     }
 
-    public SignShopArguments(Seller seller, SignShopPlayer player) {
+    public SignShopArguments(Seller seller, SignShopPlayer player, SignShopArgumentsType type) {
         if(seller.getSign().getState() instanceof Sign)
             fPrice.setRoot(economyUtil.parsePrice(((Sign)seller.getSign().getState()).getLine(3)));
 
@@ -59,6 +61,7 @@ public class SignShopArguments {
         bSign.setRoot(seller.getSign());
         sOperation.setRoot(seller.getOperation());
         bfBlockFace.setRoot(BlockFace.SELF);
+        argumentType = type;
         SetDefaultMessageParts();
     }
 
@@ -109,7 +112,7 @@ public class SignShopArguments {
     private SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
         @Override
         public void set(ItemStack[] pItems) {
-            if(getCollection().forceMessageKeys.containsKey("!items"))
+            if(getCollection().forceMessageKeys.containsKey("!items") && argumentType == SignShopArgumentsType.Setup)
                 getCollection().miscSettings.put(getCollection().forceMessageKeys.get("!items").replace("!", ""),
                         signshopUtil.implode(itemUtil.convertItemStacksToString(pItems), seperator));
             super.set(pItems);
@@ -164,6 +167,10 @@ public class SignShopArguments {
     public boolean isOperationParameter(String sOperationParameter) { return operationParameters.contains(sOperationParameter); }
     public boolean hasOperationParameters() { return !operationParameters.isEmpty(); }
     public String getFirstOperationParameter() { return hasOperationParameters() ? operationParameters.get(0) : ""; }
+
+    private SignShopArgumentsType argumentType = SignShopArgumentsType.Unknown;
+    public SignShopArgumentsType getArgumentType() { return argumentType; }
+    public void setArgumentType(SignShopArgumentsType argumentType) { this.argumentType = argumentType; }
 
     public Map<String, String> miscSettings = new HashMap<String, String>();
     public Map<String, String> forceMessageKeys = new HashMap<String, String>();

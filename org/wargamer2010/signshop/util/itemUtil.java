@@ -14,14 +14,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.logging.Level;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
-import org.bukkit.Color;
 import org.bukkit.inventory.InventoryHolder;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
@@ -29,8 +26,8 @@ import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
-import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 
 public class itemUtil {
@@ -63,15 +60,7 @@ public class itemUtil {
         List<ItemStack> items = new ArrayList<ItemStack>();
         IItemTags tags = BookFactory.getItemTags();
         for(ItemStack item: isItems) {
-            ItemStack isBackup = tags.getCraftItemstack(
-                item.getType(),
-                1,
-                item.getDurability()
-            );
-            safelyAddEnchantments(isBackup, item.getEnchantments());
-            if(item.getData() != null) {
-                isBackup.setData(item.getData());
-            }
+            ItemStack isBackup = getSingleAmountOfStack(item);
             if(!items.contains(isBackup))
                 items.add(isBackup);
         }
@@ -226,6 +215,22 @@ public class itemUtil {
         return sb.toString();
     }
 
+    private static ItemStack getSingleAmountOfStack(ItemStack item) {
+        if(item == null)
+            return null;
+        IItemTags tags = BookFactory.getItemTags();
+        ItemStack isBackup = tags.getCraftItemstack(
+            item.getType(),
+            1,
+            item.getDurability()
+        );
+        safelyAddEnchantments(isBackup, item.getEnchantments());
+        if(item.getData() != null){
+            isBackup.setData(item.getData());
+        }
+        return tags.copyTags(item, isBackup);
+    }
+
     public static String itemStackToString(ItemStack[] isStacks) {
         HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
         HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
@@ -236,16 +241,7 @@ public class itemUtil {
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
-            ItemStack isBackup = tags.getCraftItemstack(
-                item.getType(),
-                1,
-                item.getDurability()
-            );
-            safelyAddEnchantments(isBackup, item.getEnchantments());
-            if(item.getData() != null){
-                isBackup.setData(item.getData());
-            }
-            isBackup = tags.copyTags(item, isBackup);
+            ItemStack isBackup = getSingleAmountOfStack(item);
 
             if(item.getEnchantments().size() > 0)
                 enchantments.put(isBackup, item.getEnchantments());
@@ -456,7 +452,7 @@ public class itemUtil {
             if(SignShopOperations == null)
                 return;
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
-                                                                null, null, pSign, signshopUtil.getOperation(sLines[0]), null);
+                                                                null, null, pSign, signshopUtil.getOperation(sLines[0]), null, SignShopArgumentsType.Check);
             if(pSeller.getMisc() != null)
                 ssArgs.miscSettings = pSeller.getMisc();
             Boolean reqOK = true;

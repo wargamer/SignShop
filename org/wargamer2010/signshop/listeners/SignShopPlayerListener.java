@@ -32,6 +32,7 @@ import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -179,7 +180,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
-                        ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace());
+                        ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
 
                 for(Block bCheckme : containables) {
                      if(bClicked.getWorld().getName().equals(bCheckme.getWorld().getName())) {
@@ -245,7 +246,7 @@ public class SignShopPlayerListener implements Listener {
                 event.setCancelled(true);
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace());
+                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Check);
 
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
@@ -268,6 +269,7 @@ public class SignShopPlayerListener implements Listener {
             if(!bRequirementsOK)
                 return;
 
+            ssArgs.setArgumentType(SignShopArgumentsType.Run);
             ssArgs.getPrice().set(pretransactevent.getPrice());
 
             if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
