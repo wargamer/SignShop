@@ -9,7 +9,7 @@ import org.bukkit.Material;
 import org.wargamer2010.signshop.util.*;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public class convertChestshop implements SignShopSpecialOp {
+public class ConvertChestshop implements SignShopSpecialOp {
     @Override
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();

@@ -2,6 +2,7 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
 import java.util.Map;
+import net.milkbowl.vault.item.Items;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -19,14 +20,20 @@ public class SimpleBlacklister implements Listener {
             return false;
         ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(isItems);
         if(blacklisted != null) {
+            messageParts.put("!blacklisted_item", itemUtil.itemStackToString(new ItemStack[]{ blacklisted }));
+
             if(ssPlayer.isOp()) {
-                messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
-                ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist_but_op", messageParts));
+                if(SignShopConfig.getUseBlacklistAsWhitelist())
+                    ssPlayer.sendMessage(SignShopConfig.getError("item_not_on_whitelist_but_op", messageParts));
+                else
+                    ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist_but_op", messageParts));
                 return false;
             }
 
-            messageParts.put("!blacklisted_item", itemUtil.formatData(blacklisted.getData(), blacklisted.getDurability()));
-            ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", messageParts));
+            if(SignShopConfig.getUseBlacklistAsWhitelist())
+                ssPlayer.sendMessage(SignShopConfig.getError("item_not_on_whitelist", messageParts));
+            else
+                ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", messageParts));
             return true;
         }
         return false;

@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.Arrays;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.File;
@@ -21,7 +20,6 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.EnumMap;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -30,14 +28,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.operations.runCommand;
-import org.wargamer2010.signshop.specialops.LinkItemFrame;
-import org.wargamer2010.signshop.specialops.LinkSpecialSign;
-import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
-import org.wargamer2010.signshop.specialops.changeOwner;
-import org.wargamer2010.signshop.specialops.convertChestshop;
-import org.wargamer2010.signshop.specialops.copySign;
-import org.wargamer2010.signshop.specialops.linkAdditionalBlocks;
-import org.wargamer2010.signshop.specialops.linkShowcase;
+import org.wargamer2010.signshop.specialops.*;
 
 public class SignShopConfig {
     private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
@@ -83,6 +74,7 @@ public class SignShopConfig {
     private static boolean EnableGoogleTranslation = false;
     private static boolean EnableNamesFromTheWeb = false;
     private static boolean EnableAutomaticLock = false;
+    private static boolean UseBlacklistAsWhitelist = false;
     private static String Languages = "english";
     private static String baseLanguage = "english";
     private static String preferedLanguage = "";
@@ -166,14 +158,15 @@ public class SignShopConfig {
     }
 
     private static void setupSpecialsOps() {
-        SpecialsOps.add(new convertChestshop());
-        SpecialsOps.add(new copySign());
+        SpecialsOps.add(new ConvertChestshop());
+        SpecialsOps.add(new CopySign());
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
-            SpecialsOps.add(new linkShowcase());
+            SpecialsOps.add(new LinkShowcase());
         SpecialsOps.add(new LinkItemFrame());
         SpecialsOps.add(new LinkSpecialSign());
-        SpecialsOps.add(new changeOwner());
-        SpecialsOps.add(new linkAdditionalBlocks());
+        SpecialsOps.add(new ChangeOwner());
+        SpecialsOps.add(new LinkAdditionalBlocks());
+        SpecialsOps.add(new ChangeShopItems());
     }
 
     private static void safeAddLinkeable(String sName, String sGroup, byte sData) {
@@ -268,6 +261,7 @@ public class SignShopConfig {
         EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
         EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
+        UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -617,7 +611,11 @@ public class SignShopConfig {
     }
 
     public static Boolean isItemOnBlacklist(int id) {
-        return (SignShopConfig.BlacklistedItems.contains(id));
+        return (
+                (SignShopConfig.BlacklistedItems.contains(id) && !SignShopConfig.getUseBlacklistAsWhitelist())
+                    ||
+                (!SignShopConfig.BlacklistedItems.contains(id) && SignShopConfig.getUseBlacklistAsWhitelist())
+        );
     }
 
     public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks) {
@@ -751,6 +749,10 @@ public class SignShopConfig {
 
     public static boolean getEnableAutomaticLock() {
         return EnableAutomaticLock;
+    }
+
+    public static boolean getUseBlacklistAsWhitelist() {
+        return UseBlacklistAsWhitelist;
     }
 
     public static Material getLinkMaterial() {

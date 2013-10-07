@@ -8,8 +8,11 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.events.SSCreatedEvent;
+import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperation;
@@ -19,7 +22,7 @@ import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class copySign implements SignShopSpecialOp {
+public class CopySign implements SignShopSpecialOp {
     @Override
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
@@ -98,6 +101,14 @@ public class copySign implements SignShopSpecialOp {
                 revert(shopSign, sToChange);
                 return true;
             }
+
+            SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
+            SignShop.scheduleEvent(createdevent);
+            if(createdevent.isCancelled()) {
+                ssPlayer.sendMessage("The new and old operation are not compatible.");
+                return true;
+            }
+
             if(sNewSign[0] != null && sNewSign[0].length() > 0) {
                 signToChange = ((Sign) shopSign.getState());
                 signToChange.setLine(0, sNewSign[0]);

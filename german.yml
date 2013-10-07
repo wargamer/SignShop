@@ -297,6 +297,8 @@ errors:
   restricted_but_owner: You are not restricted to use this shop as you are the owner.
   item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
   item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
+  item_not_on_whitelist: The item !blacklisted_item is not on the whitelist and can not be used with Shops.
+  item_not_on_whitelist_but_op: The item !blacklisted_item is not on the whitelist but you're OP.
   block_is_protected: Dieser Block ist gesichert, du darfst nicht mit ihm interagieren
   updated_shop: Der Shop wurde erfolgreich aktualisiert.
   failed_to_update_shop: Aktualisieren des Shops fehlgeschlagen.

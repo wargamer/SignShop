@@ -17,7 +17,7 @@ import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 
-public class linkShowcase implements SignShopSpecialOp {
+public class LinkShowcase implements SignShopSpecialOp {
     @Override
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();

@@ -154,6 +154,9 @@ AllowMultiWorldShops: false
 Blacklisted_items:
 - 0
 
+# If set to true, only the items listed under Blacklist will be allowed for use in shops (Default = false)
+UseBlacklistAsWhitelist: false
+
 #----------- Other Plugins ------------------
 
 # Allows SignShop to warn of sign conflicts with Essentials at startup (Default = true)
@@ -520,6 +523,8 @@ errors:
   restricted_but_owner: You are not restricted to use this shop as you are the owner.
   item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
   item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
+  item_not_on_whitelist: The item !blacklisted_item is not on the whitelist and can not be used with Shops.
+  item_not_on_whitelist_but_op: The item !blacklisted_item is not on the whitelist but you're OP.
   block_is_protected: This block is protected, you are not allowed to interact with it.
   updated_shop: The shop has been succesfully updated.
   failed_to_update_shop: Failed to update the shop due to the error above.
