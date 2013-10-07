@@ -182,17 +182,6 @@ public class SignShopPlayerListener implements Listener {
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
 
-                for(Block bCheckme : containables) {
-                     if(bClicked.getWorld().getName().equals(bCheckme.getWorld().getName())) {
-                        if(!signshopUtil.checkDistance(bClicked, bCheckme, SignShopConfig.getMaxSellDistance()) && !operation.contains("playerIsOp")) {
-                            ssArgs.setMessagePart("!max", Integer.toString(SignShopConfig.getMaxSellDistance()));
-                            ssPlayer.sendMessage(SignShopConfig.getError("too_far", ssArgs.getMessageParts()));
-                            itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
-                            return;
-                        }
-                    }
-                }
-
                 Boolean bSetupOK = false;
                 for(SignShopOperationListItem ssOperation : SignShopOperations) {
                     ssArgs.setOperationParameters(ssOperation.getParameters());
