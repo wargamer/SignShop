@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.listeners;
 
+import java.util.ArrayList;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -11,6 +12,9 @@ import java.util.List;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import org.bukkit.Material;
+import org.bukkit.block.BlockFace;
+import org.bukkit.material.Attachable;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -33,6 +37,26 @@ public class SignShopBlockListener implements Listener {
         return sellers;
     }
 
+    private List<Block> getAttachables(Block from) {
+        List<Block> attachables = new ArrayList<Block>();
+        List<BlockFace> checkFaces = new ArrayList<BlockFace>();
+        checkFaces.add(BlockFace.UP);
+        checkFaces.add(BlockFace.NORTH);
+        checkFaces.add(BlockFace.EAST);
+        checkFaces.add(BlockFace.SOUTH);
+        checkFaces.add(BlockFace.WEST);
+
+        for(BlockFace face : checkFaces) {
+            if(from.getRelative(face).getState().getData() instanceof Attachable) {
+                Attachable att = (Attachable)from.getRelative(face).getState().getData();
+                if(from.getRelative(face).getRelative(att.getAttachedFace()).equals(from))
+                    attachables.add(from.getRelative(face));
+            }
+        }
+
+        return attachables;
+    }
+    
     private boolean canBreakBlock(Block block, Player player) {
         Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
@@ -54,6 +78,12 @@ public class SignShopBlockListener implements Listener {
             if(event.isCancelled())
                 return false;
         }
+
+        for(Block attached : getAttachables(block)) {
+            if(!canBreakBlock(attached, player))
+                return false;
+        }
+
         return true;
     }
 

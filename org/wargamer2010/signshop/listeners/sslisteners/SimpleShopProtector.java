@@ -1,14 +1,11 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.GameMode;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -26,41 +23,13 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SimpleShopProtector implements Listener {
-    private Block getBlockAttachedTo(Block bBlock) {
-        if(bBlock.getType() == Material.getMaterial("WALL_SIGN")) {
-            org.bukkit.material.Sign sign = (org.bukkit.material.Sign)bBlock.getState().getData();
-            return bBlock.getRelative(sign.getAttachedFace());
-        } else
-            return null;
-    }
-
-    private Boolean checkSign(Block bBlock, Block bDestroyed, BlockFace bf, Player player) {
-        if(bBlock.getType() == Material.getMaterial("SIGN_POST") && bf.equals(BlockFace.UP))
-            return (canDestroy(player, bBlock, false));
-        else if(bBlock.getType() == Material.getMaterial("WALL_SIGN") && getBlockAttachedTo(bBlock).equals(bDestroyed))
-            return (canDestroy(player, bBlock, false));
-        else
-            return true;
-    }
-
-    private Boolean canDestroy(Player player, Block bBlock, Boolean firstcall) {
+    private Boolean canDestroy(Player player, Block bBlock) {
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
             if(seller == null || seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player) || !SignShopConfig.getEnableShopOwnerProtection())
                 return true;
             else
                 return false;
-        }
-        if(firstcall) {
-            List<BlockFace> checkFaces = new ArrayList<BlockFace>();
-            checkFaces.add(BlockFace.UP);
-            checkFaces.add(BlockFace.NORTH);
-            checkFaces.add(BlockFace.EAST);
-            checkFaces.add(BlockFace.SOUTH);
-            checkFaces.add(BlockFace.WEST);
-            for(int i = 0; i < checkFaces.size(); i++)
-                if(!checkSign(bBlock.getRelative(checkFaces.get(i)), bBlock, checkFaces.get(i), player))
-                    return false;
         }
         return true;
     }
@@ -113,7 +82,7 @@ public class SimpleShopProtector implements Listener {
             return;
         }
 
-        Boolean bCanDestroy = canDestroy(player.getPlayer(), event.getBlock(), true);
+        Boolean bCanDestroy = canDestroy(player.getPlayer(), event.getBlock());
         if(!bCanDestroy)
             event.setCancelled(true);
     }
