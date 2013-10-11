@@ -172,9 +172,7 @@ public class SignShopConfig {
     private static void safeAddLinkeable(String sName, String sGroup, byte sData) {
         if(sName == null || sGroup == null || sName.isEmpty())
             return;
-        Material mat = getMaterial(sName, null);
-        if(mat != null)
-            LinkableMaterials.add(new LinkableMaterial(mat, sGroup, sData));
+        LinkableMaterials.add(new LinkableMaterial(sName, sGroup, sData));
     }
 
     private static byte getDataFromString(String dur) {
