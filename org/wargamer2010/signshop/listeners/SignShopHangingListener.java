@@ -36,6 +36,10 @@ public class SignShopHangingListener implements Listener {
         }
 
         event.setCancelled(true);
+
+        if(!signshopUtil.clickedSignShopMat(event.getEntity(), ssPlayer))
+            return;
+
         if(clicks.mClicksPerEntity.containsKey(event.getEntity())) {
             ssPlayer.sendMessage(SignShopConfig.getError("deselected_hanging", null));
             clicks.mClicksPerEntity.remove(event.getEntity());

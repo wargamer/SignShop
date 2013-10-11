@@ -10,6 +10,7 @@ import java.util.Map;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -387,9 +388,17 @@ public class signshopUtil {
     }
 
     public static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
+        return clickedSignShopMat(bBlock.getType().toString(), bBlock.getData(), ssPlayer);
+    }
+
+    public static Boolean clickedSignShopMat(Entity eEntity, SignShopPlayer ssPlayer) {
+        return clickedSignShopMat(eEntity.getType().toString(), (short)-1, ssPlayer);
+    }
+
+    public static Boolean clickedSignShopMat(String mat, short dur, SignShopPlayer ssPlayer) {
         String materialName = null;
         for(LinkableMaterial linkable : SignShopConfig.getLinkableMaterials()) {
-            if((linkable.getData() == -1 || linkable.getData() == bBlock.getData()) && linkable.getMaterialName() == bBlock.getType())
+            if((linkable.getData() == -1 || linkable.getData() == dur) && linkable.getMaterialName().equalsIgnoreCase(mat))
                 materialName = linkable.getAlias();
         }
         if(materialName != null) {
