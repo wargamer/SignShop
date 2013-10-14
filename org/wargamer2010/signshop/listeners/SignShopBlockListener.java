@@ -6,6 +6,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockBurnEvent;
+import org.bukkit.event.block.BlockPistonExtendEvent;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import java.util.List;
@@ -14,6 +15,9 @@ import java.util.LinkedList;
 import java.util.Map;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.ItemFrame;
 import org.bukkit.material.Attachable;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
@@ -56,7 +60,7 @@ public class SignShopBlockListener implements Listener {
 
         return attachables;
     }
-    
+
     private boolean canBreakBlock(Block block, Player player) {
         Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
@@ -87,6 +91,36 @@ public class SignShopBlockListener implements Listener {
         return true;
     }
 
+    public boolean clearAttachedEntities(Block block, SignShopPlayer player) {
+        if(player != null && player.isOp())
+            return false;
+        List<BlockFace> checkFaces = new ArrayList<BlockFace>();
+        checkFaces.add(BlockFace.UP);
+        checkFaces.add(BlockFace.NORTH);
+        checkFaces.add(BlockFace.EAST);
+        checkFaces.add(BlockFace.SOUTH);
+        checkFaces.add(BlockFace.WEST);
+
+        boolean foundOne = false;
+        for(Entity ent : block.getWorld().getEntities()) {
+            if(ent.getType() == EntityType.valueOf("ITEM_FRAME")) {
+                for(BlockFace face : checkFaces) {
+                    if(signshopUtil.roughLocationCompare(block.getRelative(face).getLocation(), ent.getLocation())) {
+                        if(!Storage.get().getShopsWithMiscSetting("itemframelocation", signshopUtil.convertLocationToString(ent.getLocation())).isEmpty()) {
+                            // The frame is attached to a shop, player is not OP and it will be broken
+                            ItemFrame frame = (ItemFrame)ent;
+                            // So clean it to prevent an exploit
+                            frame.setItem(null);
+                            foundOne = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        return foundOne;
+    }
+
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockBreak(BlockBreakEvent event) {
         // We want to run at the Highest level so we can tell if other plugins cancelled the event
@@ -104,5 +138,24 @@ public class SignShopBlockListener implements Listener {
 
         if(!canBreakBlock(event.getBlock(), null))
             event.setCancelled(true);
+    }
+
+    @EventHandler(priority = EventPriority.MONITOR)
+    public void onBlockBreakMonitor(BlockBreakEvent event) {
+        if(event.isCancelled())
+            return;
+        SignShopPlayer player = event.getPlayer() == null ? null : new SignShopPlayer(event.getPlayer());
+        clearAttachedEntities(event.getBlock(), player);
+    }
+
+    @EventHandler(priority = EventPriority.MONITOR)
+    public void onPistonMoveMonitor(BlockPistonExtendEvent event) {
+        if(event.isCancelled())
+            return;
+        Block facing = event.getBlock().getRelative(event.getDirection());
+        if(facing.getType() == Material.getMaterial("AIR"))
+            return;
+
+        clearAttachedEntities(facing, null);
     }
 }
