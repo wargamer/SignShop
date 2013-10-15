@@ -6,14 +6,12 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockBurnEvent;
-import org.bukkit.event.block.BlockPistonExtendEvent;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import java.util.List;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -138,24 +136,5 @@ public class SignShopBlockListener implements Listener {
 
         if(!canBreakBlock(event.getBlock(), null))
             event.setCancelled(true);
-    }
-
-    @EventHandler(priority = EventPriority.MONITOR)
-    public void onBlockBreakMonitor(BlockBreakEvent event) {
-        if(event.isCancelled())
-            return;
-        SignShopPlayer player = event.getPlayer() == null ? null : new SignShopPlayer(event.getPlayer());
-        clearAttachedEntities(event.getBlock(), player);
-    }
-
-    @EventHandler(priority = EventPriority.MONITOR)
-    public void onPistonMoveMonitor(BlockPistonExtendEvent event) {
-        if(event.isCancelled())
-            return;
-        Block facing = event.getBlock().getRelative(event.getDirection());
-        if(facing.getType() == Material.getMaterial("AIR"))
-            return;
-
-        clearAttachedEntities(facing, null);
     }
 }

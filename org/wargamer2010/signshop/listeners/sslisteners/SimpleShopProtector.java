@@ -1,11 +1,16 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.GameMode;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -97,6 +102,7 @@ public class SimpleShopProtector implements Listener {
         } else if(event.getReason() == SSDestroyedEventType.miscblock) {
             cleanUpMiscStuff("sharesigns", event.getBlock());
             cleanUpMiscStuff("restrictedsigns", event.getBlock());
+            cleanUpMiscStuff("itemframelocation", event.getBlock());
         } else if(event.getReason() == SSDestroyedEventType.attachable) {
             // More shops might be attached to this attachable, but the event will be fired multiple times
             // No need to remove the seller as we can't safely assume breaking things like a Chest makes the shop useless
