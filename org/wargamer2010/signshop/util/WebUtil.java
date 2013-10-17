@@ -17,9 +17,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class WebUtil {
-    private static final String downloadURL = "http://java-google-translate-text-to-speech.googlecode.com/files/";
     private static final String namesURL = "http://minecraft-ids.grahamedgecombe.com/";
-    private static final String htmlParserURL = "http://jsoup.org/packages/";
     private static final String baseLanguage = "en";
     private static final Map<String, String> translateCache = new HashMap<String, String>();
     private static final Map<String, String> namesFromTheWeb = new HashMap<String, String>();
@@ -33,9 +31,9 @@ public class WebUtil {
     public static void init() {
         if(SignShopConfig.getEnableGoogleTranslation()) {
             // Download the Jar if needed and load the two needed classes with the current classloader
-            if(!JarUtil.loadClass(downloadURL, "gtranslateapi-1.0.jar", "com.gtranslate.Translator"))
+            if(!JarUtil.loadClass("gtranslateapi-1.0.jar", "com.gtranslate.Translator"))
                 return;
-            if(!JarUtil.loadClass(downloadURL, "gtranslateapi-1.0.jar", "com.gtranslate.Language"))
+            if(!JarUtil.loadClass("gtranslateapi-1.0.jar", "com.gtranslate.Language"))
                 return;
 
             try {
@@ -102,7 +100,7 @@ public class WebUtil {
         if(!SignShopConfig.getEnableNamesFromTheWeb())
             return;
         try {
-            if(!JarUtil.loadClass(htmlParserURL, "jsoup-1.7.2.jar", "Jsoup")) {
+            if(!JarUtil.loadClass("jsoup-1.7.2.jar", "Jsoup")) {
                 SignShop.log("JSoup could not be loaded (needed for the NamesFromTheWeb feature),"
                         + " please make sure you have an active internet connection and remove any jsoup JAR's from the SignShop/lib folder to try again.", Level.WARNING);
                 return;

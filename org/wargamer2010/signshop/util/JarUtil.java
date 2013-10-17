@@ -23,23 +23,12 @@ public class JarUtil {
 
     }
 
-    public static Class<?> getClass(String downloadURL, String filename, String className) {
-        if(!loadClass(downloadURL, filename, className))
-            return null;
-        try {
-            return Class.forName(className);
-        } catch (ClassNotFoundException ex) {
-        }
-        return null;
-    }
-
-    public static boolean loadClass(String downloadURL, String filename, String className) {
+    public static boolean loadClass(String filename, String className) {
         try {
             loadLocker.tryLock();
             File libLocation = new File(SignShop.getInstance().getDataFolder(), "lib" + File.separator + filename);
-            if (!libLocation.exists()) {
-                getDriver(downloadURL, libLocation);
-            }
+            if (!libLocation.exists())
+                getDriver(libLocation);
             JarUtil.addClassPath(new URL("jar:file:" + libLocation.getPath() + "!/"));
             return true;
         } catch (MalformedURLException ex) {
@@ -50,7 +39,7 @@ public class JarUtil {
         return false;
     }
 
-    static void getDriver(String downloadURL, File destination) {
+    static void getDriver(File destination) {
         try {
             if (destination.exists()) {
                 destination.delete();
@@ -59,32 +48,18 @@ public class JarUtil {
                 destination.getParentFile().mkdirs();
             }
             destination.createNewFile();
-            OutputStream outputStream = new FileOutputStream(destination);
-            String sURL = downloadURL + destination.getName();
-            URL url = new URL(sURL);
-            URLConnection connection = url.openConnection();
-            InputStream inputStream = connection.getInputStream();
-            int contentLength = connection.getContentLength();
-            int iBytesTransffered = 0;
-            long lastUpdate = 0L;
+            SignShop.log("Copying " + destination.getName() + " from JAR to Lib folder", Level.INFO);
+
+            FileOutputStream out = new FileOutputStream(destination);
+            InputStream in = SignShop.class.getResourceAsStream("/" + destination.getName());
             byte[] buffer = new byte[1024];
-            int read;
-            SignShop.log("Starting download of " + destination.getName(), Level.INFO);
-            while ((read = inputStream.read(buffer)) > 0) {
-                outputStream.write(buffer, 0, read);
-                iBytesTransffered += read;
-                if (contentLength > 0) {
-                    if (System.currentTimeMillis() - lastUpdate > 500L) {
-                        int percentTransferred = (int) (((float) iBytesTransffered / contentLength) * 100);
-                        lastUpdate = System.currentTimeMillis();
-                        if (percentTransferred != 100) {
-                            SignShop.log("Download at " + percentTransferred + "%", Level.INFO);
-                        }
-                    }
-                }
+            int len;
+            while ((len = in.read(buffer)) != -1) {
+                out.write(buffer, 0, len);
             }
-            outputStream.close();
-            inputStream.close();
+
+            in.close();
+            out.close();
         } catch (IOException e) {
         }
     }
