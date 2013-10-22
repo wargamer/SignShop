@@ -155,6 +155,7 @@ public class SignShopConfig {
         HookManager.addHook("PreciousStones");
         HookManager.addHook("PlotMe");
         HookManager.addHook("Towny");
+        HookManager.addHook("Lorelocks");
     }
 
     private static void setupSpecialsOps() {
