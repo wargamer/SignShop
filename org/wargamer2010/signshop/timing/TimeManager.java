@@ -89,23 +89,61 @@ public class TimeManager extends TimerTask {
         scheduleCheck();
     }
 
+    /**
+     * Adds the given expirable to the internal map
+     *
+     * @param pExpirable Expirable to register
+     * @param seconds Total amount of seconds the expirable should last
+     */
     public void addExpirable(IExpirable pExpirable, Integer seconds) {
-        if(!timeByExpirable.containsKey(pExpirable))
+        if(pExpirable == null || seconds <= 0)
+            return;
+        if(getExpirable(pExpirable.getEntry()) == null)
             timeByExpirable.put(pExpirable, seconds);
     }
 
+    /**
+     * Removes the expirable matching the given descriptor
+     *
+     * @param descriptor Map of string,string describing the expirable
+     * @return True if the expirable was removed succesfully
+     */
     public boolean removeExpirable(Map<String, String> descriptor) {
-        IExpirable toremove = null;
-        for(IExpirable exp : timeByExpirable.keySet()) {
-            if(exp.getEntry().equals(descriptor)) {
-                toremove = exp;
-            }
-        }
+        IExpirable toremove = getExpirable(descriptor);
         if(toremove != null) {
             timeByExpirable.remove(toremove);
             return true;
         }
         return false;
+    }
+
+    /**
+     * Returns the expirable matching the given map
+     * Or returns null
+     *
+     * @param descriptor Map of string,string describing the expirable
+     * @return IExpirable instance or null
+     */
+    public IExpirable getExpirable(Map<String, String> descriptor) {
+        IExpirable getter = null;
+        for(IExpirable exp : timeByExpirable.keySet())
+            if(exp.getEntry().equals(descriptor))
+                getter = exp;
+        return getter;
+    }
+
+    /**
+     * Returns the amount of time left for expirable matching the given descriptor
+     * The time is returned in seconds
+     *
+     * @param descriptor Map of string,string describing the expirable
+     * @return Time left for expirable or -1
+     */
+    public int getTimeLeftForExpirable(Map<String, String> descriptor) {
+        IExpirable ex = getExpirable(descriptor);
+        if(ex == null)
+            return -1;
+        return timeByExpirable.get(ex);
     }
 
     @Override
