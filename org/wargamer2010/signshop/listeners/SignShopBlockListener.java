@@ -59,7 +59,7 @@ public class SignShopBlockListener implements Listener {
         return attachables;
     }
 
-    private boolean canBreakBlock(Block block, Player player) {
+    private boolean canBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
         Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
 
@@ -81,9 +81,11 @@ public class SignShopBlockListener implements Listener {
                 return false;
         }
 
-        for(Block attached : getAttachables(block)) {
-            if(!canBreakBlock(attached, player))
-                return false;
+        if(recurseOverAttachables) {
+            for(Block attached : getAttachables(block)) {
+                if(!canBreakBlock(attached, player, false))
+                    return false;
+            }
         }
 
         return true;
@@ -125,7 +127,7 @@ public class SignShopBlockListener implements Listener {
         // But we don't want to run at Monitor since we want to be able to cancel the event ourselves
         if(event.isCancelled())
             return;
-        if(!canBreakBlock(event.getBlock(), event.getPlayer()))
+        if(!canBreakBlock(event.getBlock(), event.getPlayer(), true))
             event.setCancelled(true);
     }
 
@@ -134,7 +136,7 @@ public class SignShopBlockListener implements Listener {
         if(event.isCancelled())
             return;
 
-        if(!canBreakBlock(event.getBlock(), null))
+        if(!canBreakBlock(event.getBlock(), null, true))
             event.setCancelled(true);
     }
 }
