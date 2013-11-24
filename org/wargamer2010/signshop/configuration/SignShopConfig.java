@@ -41,6 +41,7 @@ public class SignShopConfig {
     private static List<Integer> BlacklistedItems;
     private static Map<String,HashMap<String,Float>> PriceMultipliers;
     private static Map<String,List<String>> Commands;
+    private static Map<String,List<String>> DelayedCommands;
     private static Map<String,Integer> ShopLimits;
     private static List<LinkableMaterial> LinkableMaterials;
     private static List<SignShopSpecialOp> SpecialsOps = new LinkedList<SignShopSpecialOp>();
@@ -131,6 +132,7 @@ public class SignShopConfig {
             preferedLanguage = baseLanguage;
         PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
         Commands = configUtil.fetchListInHashmap("commands", config);
+        DelayedCommands = configUtil.fetchListInHashmap("timedCommands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
         setupBlacklist();
         copyFileFromJar("SSQuickReference.pdf", true);
@@ -640,6 +642,10 @@ public class SignShopConfig {
 
     public static Map<String, List<String>> getCommands() {
         return Collections.unmodifiableMap(Commands);
+    }
+
+    public static Map<String, List<String>> getDelayedCommands() {
+        return Collections.unmodifiableMap(DelayedCommands);
     }
 
     public static Map<String, Integer> getShopLimits() {
