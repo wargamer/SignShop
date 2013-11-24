@@ -225,6 +225,7 @@ signs:
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
   iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
   Promote: promotePlayer,takePlayerMoney,playerIsOp
+  TCommand: runTimedCommand{10}
 
 #----------- Sign Commands ------------------
 
@@ -240,6 +241,9 @@ commands:
   UserCommand:
   - \!line2 !line3
 
+timedCommands:
+  TCommand:
+  - \!line2 !line3
 
 #----------- Messages and Errors ------------------
 
