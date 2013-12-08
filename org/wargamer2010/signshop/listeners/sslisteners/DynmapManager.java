@@ -40,6 +40,15 @@ public class DynmapManager implements Listener {
         init();
     }
 
+    private boolean safelyCheckInit() {
+        try {
+            return dynmapAPI != null && dynmapAPI.markerAPIInitialized();
+        } catch(NullPointerException ex) {
+            // markerAPIInitialized call doesn't null check
+            return false;
+        }
+    }
+
     private void init() {
         Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("dynmap");
         if(plugin == null)
@@ -47,7 +56,7 @@ public class DynmapManager implements Listener {
 
         dynmapAPI = (DynmapAPI)plugin;
         if(!SignShopConfig.getEnableDynmapSupport()) {
-            if(dynmapAPI.markerAPIInitialized()) {
+            if(safelyCheckInit()) {
                 MarkerSet temp = dynmapAPI.getMarkerAPI().getMarkerSet(MarkerSetName);
                 if(temp != null)
                     temp.deleteMarkerSet();
@@ -55,7 +64,7 @@ public class DynmapManager implements Listener {
             return;
         }
 
-        if(!dynmapAPI.markerAPIInitialized()) {
+        if(!safelyCheckInit()) {
             SignShop.log("MarkerAPI for Dynmap has not been initialised, please check dynmap's configuration.", Level.WARNING);
             return;
         }
