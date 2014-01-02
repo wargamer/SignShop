@@ -137,7 +137,7 @@ public class SignShopPlayerListener implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.HIGH)
+    @EventHandler(priority = EventPriority.LOW)
     public void onPlayerInteract(PlayerInteractEvent event) {
         // Respect protection plugins
         if(event.getClickedBlock() == null
