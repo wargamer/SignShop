@@ -5,6 +5,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
+import org.bukkit.Chunk;
 import org.bukkit.block.Sign;
 import org.bukkit.material.MaterialData;
 import org.bukkit.Material;
@@ -612,6 +613,9 @@ public class itemUtil {
     public static boolean loadChunkByBlock(Block block) {
         if(block == null)
             return false;
-        return block.getChunk().load();
+        Chunk chunk = block.getChunk();
+        if (!chunk.isLoaded())
+            return chunk.load();
+        return true; // Chunk already loaded
     }
 }
