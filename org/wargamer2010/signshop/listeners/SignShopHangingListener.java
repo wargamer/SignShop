@@ -173,14 +173,23 @@ public class SignShopHangingListener implements Listener {
         if(lastBlock.getType() == Material.getMaterial("AIR"))
             return;
 
+        int maximum = 12;
+        int current = 0;
+
         while(!foundAir) {
+            // A piston should only be able to push up to 12 blocks
+            // Source: http://minecraft.gamepedia.com/Piston
+            if(current > maximum)
+                break;
             Block block = lastBlock.getRelative(event.getDirection());
             if(block.getType() == Material.getMaterial("AIR"))
                 foundAir = true;
             else
                 lastBlock = block;
+            current++;
         }
 
-        clearAttachedEntities(lastBlock);
+        if(foundAir)
+            clearAttachedEntities(lastBlock);
     }
 }
