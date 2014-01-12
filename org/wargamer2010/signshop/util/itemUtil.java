@@ -347,6 +347,8 @@ public class itemUtil {
     }
 
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
+        if(isOriginal == null)
+            return isOriginal;
         // Calls to Bukkit's inventory modifiers like "removeItem" and such used to modify the incoming stack
         // Hence, it was decided to backup all stacks before attempting to do anything with it to prevent the shop's or player's inventory
         // from being modified. The bugs have been solved at some point and especially from 1.4.5 onward. Which is why we version-check now
