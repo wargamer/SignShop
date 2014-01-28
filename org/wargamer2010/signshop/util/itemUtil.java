@@ -18,6 +18,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookFactory;
@@ -455,7 +456,7 @@ public class itemUtil {
             if(SignShopOperations == null)
                 return;
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
-                                                                null, null, pSign, signshopUtil.getOperation(sLines[0]), null, SignShopArgumentsType.Check);
+                                                                null, null, pSign, signshopUtil.getOperation(sLines[0]), null, Action.RIGHT_CLICK_BLOCK, SignShopArgumentsType.Check);
             if(pSeller.getMisc() != null)
                 ssArgs.miscSettings = pSeller.getMisc();
             Boolean reqOK = true;

@@ -5,13 +5,15 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import org.bukkit.Bukkit;
+import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -25,7 +27,7 @@ public class SignShopArguments {
     }
 
     public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
-                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, SignShopArgumentsType type) {
+                                SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, Action ac, SignShopArgumentsType type) {
         fPrice.setRoot(pfPrice);
         isItems.setRoot(pisItems);
         containables.setRoot(pContainables);
@@ -41,6 +43,7 @@ public class SignShopArguments {
         bSign.setRoot(pbSign);
         sOperation.setRoot(psOperation);
         bfBlockFace.setRoot(pbfBlockFace);
+        aAction.setRoot(ac);
         argumentType = type;
         SetDefaultMessageParts();
     }
@@ -71,6 +74,12 @@ public class SignShopArguments {
             setMessagePart("!player", ssPlayer.get().getName());
             if(ssPlayer.get().getPlayer() != null && ssPlayer.get().getPlayer().getWorld() != null)
                 setMessagePart("!world", ssPlayer.get().getPlayer().getWorld().getName());
+
+            if(Vault.getPermission() != null && ssPlayer.get() != null && ssPlayer.get().getWorld() != null) {
+                World world = ssPlayer.get().getWorld();
+                String name = ssPlayer.get().getName();
+                setMessagePart("!permgroup", Vault.getPermission().getPrimaryGroup(world, name));
+            }
         }
 
         if(ssOwner != null)
@@ -162,6 +171,11 @@ public class SignShopArguments {
         return bfBlockFace;
     }
 
+    private SignShopArgument<Action> aAction = new SignShopArgument<Action>(this);
+    public SignShopArgument<Action> getAction() {
+        return aAction;
+    }
+
     private List<String> operationParameters = new LinkedList<String>();
     public void setOperationParameters(List<String> pOperationParameters) { operationParameters.clear(); operationParameters.addAll(pOperationParameters); }
     public boolean isOperationParameter(String sOperationParameter) { return operationParameters.contains(sOperationParameter); }
@@ -181,6 +195,10 @@ public class SignShopArguments {
     public void ignoreEmptyChest() {
         if(!isOperationParameter("allowemptychest"))
             operationParameters.add("allowemptychest");
+    }
+
+    public boolean isLeftClicking() {
+        return (getAction().get() == Action.LEFT_CLICK_AIR || getAction().get() == Action.LEFT_CLICK_BLOCK);
     }
 
     public boolean tryToApplyPriceMod() {

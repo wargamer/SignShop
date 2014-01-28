@@ -93,7 +93,7 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
         activatables = this.updateList(seller.getActivatables(), activatables, ssPlayer, seller);
 
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), containables, activatables,
-                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
+                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 
         Boolean bSetupOK = false;
         for (SignShopOperationListItem ssOperation : SignShopOperations) {
@@ -108,7 +108,7 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
             ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }
-        
+
         SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
         SignShop.scheduleEvent(createdevent);
         if(createdevent.isCancelled()) {

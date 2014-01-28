@@ -31,7 +31,8 @@ public class givePlayerItems implements SignShopOperation {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
-        
+
+        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         if(ssArgs.isOperationParameter("oneslot")) {
             Boolean bEmptySlot = false;
             for(ItemStack stack : ssArgs.getPlayer().get().getPlayer().getInventory().getContents()) {
@@ -39,16 +40,19 @@ public class givePlayerItems implements SignShopOperation {
                     bEmptySlot = true;
             }
             if(!bEmptySlot) {
+                if(ssArgs.isLeftClicking())
+                    return false;
                 ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.getMessageParts()));
                 return false;
             }
         } else if(!ssArgs.isOperationParameter("ignorefull")) {
             if(!itemUtil.isStockOK(ssArgs.getPlayer().get().getPlayer().getInventory(), ssArgs.getItems().get(), false)) {
+                if(ssArgs.isLeftClicking())
+                    return false;
                 ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.getMessageParts()));
                 return false;
             }
         }
-        ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }
 

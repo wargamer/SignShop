@@ -81,6 +81,7 @@ public class SSEventFactory {
                                             ssArgs.getSign().get(),
                                             ssArgs.getOperation().get(),
                                             ssArgs.getItems().get(),
+                                            ssArgs.isLeftClicking(),
                                             type,
                                             ssArgs.getRawMessageParts(),
                                             pCheckOnly);

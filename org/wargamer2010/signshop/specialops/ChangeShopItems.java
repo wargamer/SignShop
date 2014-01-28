@@ -65,7 +65,7 @@ public class ChangeShopItems implements SignShopSpecialOp {
         }
 
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
-                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
+                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 
         Boolean bSetupOK = false;
         for (SignShopOperationListItem ssOperation : SignShopOperations) {
