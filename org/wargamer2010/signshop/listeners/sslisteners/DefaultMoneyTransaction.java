@@ -22,40 +22,44 @@ public class DefaultMoneyTransaction implements Listener {
             event.setHandled(true);
             return;
         }
-            
+
         SignShopPlayer ssOwner = new SignShopPlayer(event.getShop().getOwner());
         if(event.isCheckOnly()) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     if(!ssOwner.canHaveMoney(event.getAmount())) {
-                        event.getPlayer().sendMessage(SignShopConfig.getError("overstocked", event.getMessageParts()));
+                        if(!event.isLeftClicking())
+                            event.getPlayer().sendMessage(SignShopConfig.getError("overstocked", event.getMessageParts()));
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromOwner:
                     if(!ssOwner.hasMoney(event.getAmount())) {
-                        event.getPlayer().sendMessage(SignShopConfig.getError("no_shop_money", event.getMessageParts()));
+                        if(!event.isLeftClicking())
+                            event.getPlayer().sendMessage(SignShopConfig.getError("no_shop_money", event.getMessageParts()));
                         event.setCancelled(true);
-                    }   
+                    }
                 break;
                 case GiveToPlayer:
                     if(!event.getPlayer().canHaveMoney(event.getAmount())) {
-                        event.getPlayer().sendMessage(SignShopConfig.getError("player_overstocked", event.getMessageParts()));
+                        if(!event.isLeftClicking())
+                            event.getPlayer().sendMessage(SignShopConfig.getError("player_overstocked", event.getMessageParts()));
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromPlayer:
                     if(!event.getPlayer().hasMoney(event.getAmount())) {
-                        event.getPlayer().sendMessage(SignShopConfig.getError("no_player_money", event.getMessageParts()));
+                        if(!event.isLeftClicking())
+                            event.getPlayer().sendMessage(SignShopConfig.getError("no_player_money", event.getMessageParts()));
                         event.setCancelled(true);
                     }
                 break;
                 case Unknown:
                     return;
-            }            
+            }
         } else {
             boolean bTransaction = false;
-            
+
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     bTransaction = ssOwner.mutateMoney(event.getAmount());
@@ -72,13 +76,13 @@ public class DefaultMoneyTransaction implements Listener {
                 case Unknown:
                     return;
             }
-            
+
             if(!bTransaction) {
                 event.getPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
                 event.setCancelled(true);
             }
         }
-        
+
         event.setHandled(true);
     }
 }

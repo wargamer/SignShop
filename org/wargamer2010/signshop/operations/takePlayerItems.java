@@ -38,6 +38,8 @@ public class takePlayerItems implements SignShopOperation {
         Player player = ssArgs.getPlayer().get().getPlayer();
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         if(!itemUtil.isStockOK(player.getInventory(), ssArgs.getItems().get(), true)) {
+            if(ssArgs.isLeftClicking())
+                return false;
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
             return false;
         }

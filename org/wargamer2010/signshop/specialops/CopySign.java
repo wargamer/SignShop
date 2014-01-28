@@ -86,7 +86,7 @@ public class CopySign implements SignShopSpecialOp {
                 return true;
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
+                    ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 
             Boolean bSetupOK = false;
             for(SignShopOperationListItem ssOperation : SignShopOperations) {

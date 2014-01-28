@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import java.util.Map;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -17,12 +18,13 @@ public class SSMoneyTransactionEvent extends SSEvent {
     private Block bSign = null;
     private String sOperation = "";
     private ItemStack[] isItems = null;
+    private boolean bLeftClicking = false;
     private SSMoneyEventType meType = SSMoneyEventType.Unknown;
     private boolean bCheckOnly = false;
     private boolean bHandled = false;
 
     public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, Float pAmount, Block pSign, String pOperation, ItemStack[] pItems,
-            SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
+            boolean leftClicking, SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
         super(pMessageParts);
         ssPlayer = pPlayer;
         seShop = pShop;
@@ -30,6 +32,7 @@ public class SSMoneyTransactionEvent extends SSEvent {
         bSign = pSign;
         sOperation = pOperation;
         isItems = pItems;
+        bLeftClicking = leftClicking;
         meType = pType;
         bCheckOnly = pCheckOnly;
     }
@@ -73,6 +76,10 @@ public class SSMoneyTransactionEvent extends SSEvent {
 
     public ItemStack[] getItems() {
         return isItems;
+    }
+
+    public boolean isLeftClicking() {
+        return bLeftClicking;
     }
 
     public SSMoneyEventType getTransactionType() {

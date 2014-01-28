@@ -180,7 +180,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
-                        ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Setup);
+                        ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 
                 Boolean bSetupOK = false;
                 for(SignShopOperationListItem ssOperation : SignShopOperations) {
@@ -235,33 +235,42 @@ public class SignShopPlayerListener implements Listener {
                 event.setCancelled(true);
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
-                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), SignShopArgumentsType.Check);
+                                                                ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Check);
 
             if(seller.getMisc() != null)
                 ssArgs.miscSettings = seller.getMisc();
-            Boolean bRequirementsOK = true;
-            Boolean bRunOK = false;
+            boolean bRequirementsOK = true;
+            boolean bReqOKSolid = true;
+            boolean bRunOK = false;
+
+            // If left clicking, all blocks should get a chance to run checkRequirements
             for(SignShopOperationListItem ssOperation : SignShopOperations) {
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 bRequirementsOK = ssOperation.getOperation().checkRequirements(ssArgs, true);
-                if(!bRequirementsOK)
+                if(!ssArgs.isLeftClicking() && !bRequirementsOK)
                     break;
+                else if(!bRequirementsOK)
+                    bReqOKSolid = false;
             }
+
+            if(!bReqOKSolid)
+                bRequirementsOK = false;
+
             if(ssArgs.hasMessagePart("!items") && !ssArgs.hasMessagePart("!price"))
                 signshopUtil.ApplyPriceMod(ssArgs);
 
             SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction(), bRequirementsOK);
             SignShop.scheduleEvent(pretransactevent);
-            if(pretransactevent.isCancelled())
-                return;
 
-            if(!bRequirementsOK)
+            // Skip the requirements check if we're left clicking
+            // The confirm message should always be shown when left clicking
+            if(!ssArgs.isLeftClicking() && (!bRequirementsOK || pretransactevent.isCancelled()))
                 return;
 
             ssArgs.setArgumentType(SignShopArgumentsType.Run);
             ssArgs.getPrice().set(pretransactevent.getPrice());
 
-            if(event.getAction() == Action.LEFT_CLICK_BLOCK) {
+            if(ssArgs.isLeftClicking()) {
                 ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.getOperation().get(), ssArgs.getMessageParts()));
 
                 ssArgs.reset();
