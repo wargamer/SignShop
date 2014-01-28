@@ -13,6 +13,7 @@ import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.listeners.SignShopWorthListener;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -58,7 +59,7 @@ public class GetPriceFromWorth implements Listener {
         if(newPrice > -1.0f) {
             event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
             event.setPrice(newPrice);
-            event.setMessagePart("!price", newPrice.toString());
+            event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
         }
     }
 
@@ -78,7 +79,7 @@ public class GetPriceFromWorth implements Listener {
         Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
         if(newPrice > -1.0f) {
             event.setPrice(newPrice);
-            event.setMessagePart("!price", newPrice.toString());
+            event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
         }
     }
 
@@ -89,7 +90,7 @@ public class GetPriceFromWorth implements Listener {
         Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
         if(newPrice > -1.0f) {
             event.setAmount(newPrice);
-            event.setMessagePart("!price", newPrice.toString());
+            event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
         }
     }
 }
