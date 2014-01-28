@@ -1,5 +1,4 @@
 
-
 # If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
 # You can also visit our Bukkit page at tiny.cc/SignShop
 
@@ -65,7 +64,7 @@ ProtectShopsInCreative: true
 # Protects signs when they are made into shops.  Can be bypased by OP (Default = true)
 EnableShopOwnerProtection: true
  
-# Gives players a message the first time they create a sign (Default = true)
+# Gives players a message the first time they create a SignShop sign (Default = true)
 EnableTutorialMessages: true
  
 # Allow players to sell partial amounts to signs and get partial money (Default = false)
@@ -117,7 +116,6 @@ linkableMaterials:
   WOODEN_DOOR: door
   IRON_DOOR: door
   IRON_DOOR_BLOCK: door
-  ITEM_FRAME: itemframe
  
 #----------- Restrictions ------------------
 
@@ -141,11 +139,11 @@ limits:
 # Minimum time (in ms) a player may consecutively use a shop (Default = 0)
 ShopCooldownMilliseconds: 0
  
-# Allow players to right-click villagers and trade with them (Default = false)
+# Prevent players frome right-clicking villagers to trade with them (Default = false)
 PreventVillagerTrade: false
  
-# Enable support for non-vanilla enchantments (Default = false)
-AllowUnsafeEnchantments: false
+# Enable support for non-vanilla enchantments (Default = true)
+AllowUnsafeEnchantments: true
  
 # Allow shops with the chest and sign in different worlds (Default = false)
 AllowMultiWorldShops: false
@@ -204,7 +202,7 @@ signs:
   Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
   Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
   Heal: takePlayerMoney,healPlayer,playerIsOp
-  Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
+  Repair: repairPlayerHeldItem,takePlayerMoney,playerIsOp
   Dispose: takeItemInHand
   DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
   iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
@@ -336,7 +334,7 @@ messages:
     ResetKit: Reset your !param signs for !price!
     iXPBuy: Buy !items for !xp XP points?
     iXPSell: Sell !items for !xp XP points?
-    Promote: Promote from !promotefrom to !promoteto?
+    Promote: Promote from !permgroup to !promoteto?
     TCommand: Run the commands on this sign in 10 seconds for !price?
  
 # These are given when you complete a transaction
@@ -378,7 +376,7 @@ messages:
     ResetKit: You reset !param signs for !price!
     iXPBuy: You have bought !items for !xp XP points!
     iXPSell: You have sold !items for !xp XP points!
-    Promote: You have been promoted from !promotefrom to !promoteto!
+    Promote: You have been promoted from !permgroup to !promoteto!
     TCommand: The commands on this sign will be run in 10 seconds!
  
 # These are given to shop owners when someone uses their shop
@@ -460,6 +458,9 @@ messages:
     Disenchant: The Disenchant sign exchanges the customer's money for removing the enchantment on the item in their hands.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
     Command: The Command sign exchanges the customer's money to run the command on the sign. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work.
     UserCommand: The UserCommand sign exchanges the customer's money to run the command on the sign as if they typed it in. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work, or they don't have permission.
+    Share: The Share sign is used to share profits with other users.  List other usernames on the 2nd and/or 3rd lines of the sign.  The percentage you would like to share goes on the 4th line.  If you list multiple people on the sign, you put both percentages on the 4th line, separated by a "/".  Any remaining money is given to the owner of the shop.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
+    Restricted: The Restricted sign is used to make it so only certain permission groups can use a sign.  List the permission groups on the 2nd, 3rd, and/or 4th lines of the sign.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
+    Bank: The Bank sign is used to share profits with your bank account.  List a bank account you own on the 2nd line of the sign.  The percentage you would like to share goes on the 4th line.  Any remaining money is given to the owner of the shop.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
     Jukebox: The Jukebox sign exchanges the customer's money to listen to music discs. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the music discs you'd like to play.  The sign will play the next disc in the chest when used.
     Kit: The Kit sign exchanges the customer's money and their inventory for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This sign can only be used once per player before needing to be reset.  Money is not put in the owner's account.
     ResetKit: The ResetKit sign exchanges the customer's money so they are allowed to use the Kit sign again.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
