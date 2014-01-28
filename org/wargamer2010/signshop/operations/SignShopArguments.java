@@ -14,6 +14,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -199,6 +200,11 @@ public class SignShopArguments {
 
     public boolean isLeftClicking() {
         return (getAction().get() == Action.LEFT_CLICK_AIR || getAction().get() == Action.LEFT_CLICK_BLOCK);
+    }
+
+    public void sendFailedRequirementsMessage(String messageName) {
+        if(!isLeftClicking())
+            getPlayer().get().sendMessage(SignShopConfig.getError(messageName, getMessageParts()));
     }
 
     public boolean tryToApplyPriceMod() {

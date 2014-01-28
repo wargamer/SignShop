@@ -40,16 +40,12 @@ public class givePlayerItems implements SignShopOperation {
                     bEmptySlot = true;
             }
             if(!bEmptySlot) {
-                if(ssArgs.isLeftClicking())
-                    return false;
-                ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.getMessageParts()));
+                ssArgs.sendFailedRequirementsMessage("player_overstocked");
                 return false;
             }
         } else if(!ssArgs.isOperationParameter("ignorefull")) {
             if(!itemUtil.isStockOK(ssArgs.getPlayer().get().getPlayer().getInventory(), ssArgs.getItems().get(), false)) {
-                if(ssArgs.isLeftClicking())
-                    return false;
-                ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_overstocked", ssArgs.getMessageParts()));
+                ssArgs.sendFailedRequirementsMessage("player_overstocked");
                 return false;
             }
         }

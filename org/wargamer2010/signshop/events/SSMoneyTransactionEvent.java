@@ -6,6 +6,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class SSMoneyTransactionEvent extends SSEvent {
@@ -96,5 +97,10 @@ public class SSMoneyTransactionEvent extends SSEvent {
 
     public void setHandled(boolean pHandled) {
         bHandled = pHandled;
+    }
+
+    public void sendFailedRequirementsMessage(String messageName) {
+        if(!isLeftClicking())
+            getPlayer().sendMessage(SignShopConfig.getError(messageName, getMessageParts()));
     }
 }

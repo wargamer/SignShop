@@ -47,7 +47,7 @@ public class promotePlayer implements SignShopOperation {
 
         String[] groups = Vault.getPermission().getPlayerGroups(player);
         if(groups.length == 0) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("not_in_permission_group", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("not_in_permission_group");
             return false;
         }
 
@@ -55,7 +55,7 @@ public class promotePlayer implements SignShopOperation {
         ssArgs.setMessagePart("!promotefrom", primaryGroup);
 
         if(Vault.getPermission().playerInGroup(player, groupOnSign)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_in_promote_group", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("already_in_promote_group");
             return false;
         }
 

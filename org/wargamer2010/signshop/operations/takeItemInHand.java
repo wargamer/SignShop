@@ -15,7 +15,7 @@ public class takeItemInHand implements SignShopOperation {
         if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
         if(ssArgs.getPlayer().get().getItemInHand() == null) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_item_in_hand", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("no_item_in_hand");
             return false;
         } else {
             ItemStack[] isItems = new ItemStack[1];

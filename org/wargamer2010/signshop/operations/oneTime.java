@@ -27,7 +27,7 @@ public class oneTime implements SignShopOperation {
         if(ssPlayer == null)
             return true;
         if(ssPlayer.hasMeta(param)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("only_one_time", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("only_one_time");
             return false;
         }
         ssArgs.setMessagePart("!param", param);

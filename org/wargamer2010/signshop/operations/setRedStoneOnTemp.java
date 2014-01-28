@@ -44,7 +44,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_on", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("already_on");
         return bReturn;
     }
 

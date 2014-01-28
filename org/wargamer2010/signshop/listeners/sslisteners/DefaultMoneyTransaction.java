@@ -28,29 +28,25 @@ public class DefaultMoneyTransaction implements Listener {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     if(!ssOwner.canHaveMoney(event.getAmount())) {
-                        if(!event.isLeftClicking())
-                            event.getPlayer().sendMessage(SignShopConfig.getError("overstocked", event.getMessageParts()));
+                        event.sendFailedRequirementsMessage("overstocked");
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromOwner:
                     if(!ssOwner.hasMoney(event.getAmount())) {
-                        if(!event.isLeftClicking())
-                            event.getPlayer().sendMessage(SignShopConfig.getError("no_shop_money", event.getMessageParts()));
+                        event.sendFailedRequirementsMessage("no_shop_money");
                         event.setCancelled(true);
                     }
                 break;
                 case GiveToPlayer:
                     if(!event.getPlayer().canHaveMoney(event.getAmount())) {
-                        if(!event.isLeftClicking())
-                            event.getPlayer().sendMessage(SignShopConfig.getError("player_overstocked", event.getMessageParts()));
+                        event.sendFailedRequirementsMessage("player_overstocked");
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromPlayer:
                     if(!event.getPlayer().hasMoney(event.getAmount())) {
-                        if(!event.isLeftClicking())
-                            event.getPlayer().sendMessage(SignShopConfig.getError("no_player_money", event.getMessageParts()));
+                        event.sendFailedRequirementsMessage("no_player_money");
                         event.setCancelled(true);
                     }
                 break;
