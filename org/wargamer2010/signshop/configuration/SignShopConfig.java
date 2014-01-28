@@ -165,7 +165,6 @@ public class SignShopConfig {
         SpecialsOps.add(new CopySign());
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") != null)
             SpecialsOps.add(new LinkShowcase());
-        SpecialsOps.add(new LinkItemFrame());
         SpecialsOps.add(new LinkSpecialSign());
         SpecialsOps.add(new ChangeOwner());
         SpecialsOps.add(new LinkAdditionalBlocks());
