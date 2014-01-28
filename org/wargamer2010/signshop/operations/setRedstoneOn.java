@@ -40,7 +40,7 @@ public class setRedstoneOn implements SignShopOperation {
             }
         }
         if(!bReturn)
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("already_on", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("already_on");
         return bReturn;
     }
 
@@ -48,7 +48,7 @@ public class setRedstoneOn implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         if(!setupOperation(ssArgs))
             return false;
-        
+
         Block bLever = null;
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {

@@ -36,7 +36,7 @@ public class resetOneTime implements SignShopOperation {
         if(ssPlayer == null)
             return true;
         if(!ssPlayer.hasMeta(param)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("nothing_to_reset_ontime", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("nothing_to_reset_ontime");
             return false;
         }
         return true;

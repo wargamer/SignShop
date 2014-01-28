@@ -63,10 +63,10 @@ public class enchantItemInHand implements SignShopOperation {
         ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         ItemStack isBackup = itemUtil.getBackupSingleItemStack(isInHand);
         if(isInHand == null) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("item_not_enchantable");
             return false;
         } else if(!itemUtil.safelyAddEnchantments(isBackup, enchantments)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_not_enchantable", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("item_not_enchantable");
             return false;
         }
         return true;

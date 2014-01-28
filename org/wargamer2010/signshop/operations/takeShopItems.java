@@ -33,11 +33,11 @@ public class takeShopItems implements SignShopOperation {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));
             return false;
         }
-        
+
         Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), true);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         if(!bStockOK)
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("out_of_stock", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("out_of_stock");
         if(!bStockOK && activeCheck)
             itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
         else if(activeCheck)

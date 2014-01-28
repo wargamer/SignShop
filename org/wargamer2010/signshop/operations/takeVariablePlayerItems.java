@@ -123,11 +123,9 @@ public class takeVariablePlayerItems implements SignShopOperation {
         ssArgs.getItems().set(isActual);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         ssArgs.getPrice().set(ssArgs.getPrice().get() * iCount * pricemod);
-        
+
         if(iCount == 0.0f) {
-            if(ssArgs.isLeftClicking())
-                return false;
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("player_doesnt_have_items", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("player_doesnt_have_items");
             return false;
         }
         return true;

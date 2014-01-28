@@ -23,16 +23,16 @@ public class repairPlayerHeldItem implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         if(isInHand == null) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_item_to_repair", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("no_item_to_repair");
             return false;
         } else if(isInHand.getType().getMaxDurability() < 30) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("invalid_item_to_repair", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("invalid_item_to_repair");
             return false;
         } else if(isInHand.getEnchantments().size() > 0 && !SignShopConfig.getAllowEnchantedRepair() && !ssArgs.getPlayer().get().hasPerm("SignShop.ignorerepair", false)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("enchanted_not_allowed", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("enchanted_not_allowed");
             return false;
         } else if(isInHand.getDurability() == 0) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("item_already_repair", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("item_already_repair");
             return false;
         }
         calculatePrice(ssArgs);

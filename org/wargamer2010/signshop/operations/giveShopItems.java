@@ -37,7 +37,7 @@ public class giveShopItems implements SignShopOperation {
 
         Boolean bStockOK = itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false);
         if(!bStockOK)
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("overstocked", ssArgs.getMessageParts()));
+            ssArgs.sendFailedRequirementsMessage("overstocked");
         if(activeCheck && !bStockOK)
             itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
         else if(activeCheck)
