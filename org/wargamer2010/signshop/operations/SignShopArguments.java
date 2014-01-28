@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -213,7 +214,7 @@ public class SignShopArguments {
         return (bPriceModApplied = true);
     }
 
-    private Map<String, String> messageParts = new HashMap<String, String>();
+    private Map<String, String> messageParts = new LinkedHashMap<String, String>();
 
     public void setMessagePart(String name, String value) {
         messageParts.put(name, value);
