@@ -170,8 +170,6 @@ public class SignShop extends JavaPlugin{
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
             pm.registerEvents(new SignShopWorthListener(), this);
-            if(Material.getMaterial("ITEM_FRAME") != null)
-                pm.registerEvents(new SignShopHangingListener(), this);
             if(SignShopConfig.getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);

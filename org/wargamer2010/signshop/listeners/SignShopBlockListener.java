@@ -13,9 +13,6 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import org.bukkit.block.BlockFace;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.ItemFrame;
 import org.bukkit.material.Attachable;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
@@ -89,36 +86,6 @@ public class SignShopBlockListener implements Listener {
         }
 
         return true;
-    }
-
-    public boolean clearAttachedEntities(Block block, SignShopPlayer player) {
-        if(player != null && player.isOp())
-            return false;
-        List<BlockFace> checkFaces = new ArrayList<BlockFace>();
-        checkFaces.add(BlockFace.UP);
-        checkFaces.add(BlockFace.NORTH);
-        checkFaces.add(BlockFace.EAST);
-        checkFaces.add(BlockFace.SOUTH);
-        checkFaces.add(BlockFace.WEST);
-
-        boolean foundOne = false;
-        for(Entity ent : block.getWorld().getEntities()) {
-            if(ent.getType() == EntityType.valueOf("ITEM_FRAME")) {
-                for(BlockFace face : checkFaces) {
-                    if(signshopUtil.roughLocationCompare(block.getRelative(face).getLocation(), ent.getLocation())) {
-                        if(!Storage.get().getShopsWithMiscSetting("itemframelocation", signshopUtil.convertLocationToString(ent.getLocation())).isEmpty()) {
-                            // The frame is attached to a shop, player is not OP and it will be broken
-                            ItemFrame frame = (ItemFrame)ent;
-                            // So clean it to prevent an exploit
-                            frame.setItem(null);
-                            foundOne = true;
-                        }
-                    }
-                }
-            }
-        }
-
-        return foundOne;
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)

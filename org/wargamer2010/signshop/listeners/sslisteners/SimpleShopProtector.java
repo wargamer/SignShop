@@ -102,7 +102,6 @@ public class SimpleShopProtector implements Listener {
         } else if(event.getReason() == SSDestroyedEventType.miscblock) {
             cleanUpMiscStuff("sharesigns", event.getBlock());
             cleanUpMiscStuff("restrictedsigns", event.getBlock());
-            cleanUpMiscStuff("itemframelocation", event.getBlock());
         } else if(event.getReason() == SSDestroyedEventType.attachable) {
             // More shops might be attached to this attachable, but the event will be fired multiple times
             // No need to remove the seller as we can't safely assume breaking things like a Chest makes the shop useless
