@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.listeners;
 
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -15,9 +16,13 @@ public class SignShopLoginListener implements Listener {
         if(event.getPlayer() == null)
             return;
         Player player = event.getPlayer();
-        if(!Vault.isVaultFound() && SignShopPlayer.isOp(player))
-            player.sendMessage(SignShop.getLogPrefix() + " Vault not found so plugin can not run. Please install Vault!");
-        if(SignShopServerListener.essConflictFound && SignShopPlayer.isOp(player))
-            player.sendMessage(SignShop.getLogPrefix() + " Essentials Signs are enabled that conflict with SignShop. Please check the log for more info!");
+        if(!Vault.isVaultFound() && SignShopPlayer.isOp(player)) {
+            player.sendMessage(SignShop.getLogPrefix()
+                + " Vault not found so plugin can not run. Please install Vault!");
+        }
+        if(SignShopServerListener.isEssentialsConflictFound() && SignShopPlayer.isOp(player)) {
+            player.sendMessage(SignShop.getLogPrefix()
+                + " Essentials Signs are enabled that conflict with SignShop. Please check the log for more info!");
+        }
     }
 }
