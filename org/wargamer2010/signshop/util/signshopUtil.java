@@ -312,7 +312,7 @@ public class signshopUtil {
             }
         }
         for(String group : playerGroups) {
-            if(Vault.getPermission().playerInGroup(player.getPlayer(), group)) {
+            if(Vault.playerInGroupAnyWorld(player.getPlayer(), group)) {
                 return false;
             }
         }

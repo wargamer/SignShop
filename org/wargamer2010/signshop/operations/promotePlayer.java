@@ -7,7 +7,9 @@ import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class promotePlayer implements SignShopOperation {
-
+    // Note: promotePlayer works with global permission groups explicitly.
+    // It will not add players to local groups unless adding to global groups is not possible
+    
     private String getGroupFromLine(Block bSign) {
         Sign sign = (Sign)bSign.getState();
         return sign.getLine(1);
@@ -45,16 +47,16 @@ public class promotePlayer implements SignShopOperation {
         String groupOnSign = getGroupFromLine(ssArgs.getSign().get());
         ssArgs.setMessagePart("!promoteto", groupOnSign);
 
-        String[] groups = Vault.getPermission().getPlayerGroups(player);
+        String[] groups = Vault.getGlobalGroups(player);
         if(groups.length == 0) {
             ssArgs.sendFailedRequirementsMessage("not_in_permission_group");
             return false;
         }
 
-        String primaryGroup = Vault.getPermission().getPrimaryGroup(player);
+        String primaryGroup = Vault.getGlobalPrimaryGroup(player);
         ssArgs.setMessagePart("!promotefrom", primaryGroup);
 
-        if(Vault.getPermission().playerInGroup(player, groupOnSign)) {
+        if(Vault.playerInGlobalGroup(player, groupOnSign)) {
             ssArgs.sendFailedRequirementsMessage("already_in_promote_group");
             return false;
         }
@@ -66,17 +68,17 @@ public class promotePlayer implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         Player player = ssArgs.getPlayer().get().getPlayer();
         String groupOnSign = getGroupFromLine(ssArgs.getSign().get());
-        String primaryGroup = Vault.getPermission().getPrimaryGroup(player);
+        String primaryGroup = Vault.getGlobalPrimaryGroup(player);
 
         ssArgs.setMessagePart("!promoteto", groupOnSign);
         ssArgs.setMessagePart("!promotefrom", primaryGroup);
 
-        if(!Vault.getPermission().playerRemoveGroup(player, primaryGroup)) {
+        if(!Vault.removeGroupAnyWorld(player, primaryGroup)) {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_remove_primary_group", ssArgs.getMessageParts()));
             return false;
         }
 
-        if(!Vault.getPermission().playerAddGroup(player, groupOnSign)) {
+        if(!Vault.addGroupAnyWorld(player, groupOnSign)) {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_promote", ssArgs.getMessageParts()));
             return false;
         }

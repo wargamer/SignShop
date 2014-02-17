@@ -7,6 +7,7 @@ import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.Server;
+import org.bukkit.entity.Player;
 
 public class Vault {
     private static Permission permission = null;
@@ -14,6 +15,7 @@ public class Vault {
     private static Chat chat = null;
     private static Boolean vaultFound = false;
     private static Server server = Bukkit.getServer();
+    private static final String nullString = null;
 
     public Vault() {
         if(server.getPluginManager().isPluginEnabled("Vault"))
@@ -91,5 +93,91 @@ public class Vault {
         }
 
         return (getEconomy() != null);
+    }
+
+    /**
+     * Returns true if the player has been removed from the given permission group succesfully
+     * First an attempt is made to remove the player from the global group with the given name
+     * If that fails, the player is removed from the local group by the passed name
+     *
+     * @param player
+     * @param group
+     * @return
+     */
+    public static boolean removeGroupAnyWorld(Player player, String group) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return false;
+        return perm.playerRemoveGroup(nullString, player.getName(), group) || perm.playerRemoveGroup(player, group);
+    }
+
+    /**
+     * Returns true if the player has been added to the given permission group succesfully
+     * First an attempt is made to add the player to the global group
+     * If that fails, the player is added to the group in the current world
+     *
+     * @param player
+     * @param group
+     * @return
+     */
+    public static boolean addGroupAnyWorld(Player player, String group) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return false;
+        return perm.playerAddGroup(nullString, player.getName(), group) || perm.playerAddGroup(player, group);
+    }
+
+    /**
+     * Returns true if the player is in a global or local group with the given name
+     *
+     * @param player
+     * @param group
+     * @return
+     */
+    public static boolean playerInGroupAnyWorld(Player player, String group) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return false;
+        return playerInGlobalGroup(player, group) || perm.playerInGroup(player, group);
+    }
+
+    /**
+     * Returns true if the player is in a global group by the given name
+     *
+     * @param player
+     * @param group
+     * @return
+     */
+    public static boolean playerInGlobalGroup(Player player, String group) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return false;
+        return perm.playerInGroup(nullString, player.getName(), group);
+    }
+
+    /**
+     * Returns the player's global group membership
+     *
+     * @param player
+     * @return
+     */
+    public static String getGlobalPrimaryGroup(Player player) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return null;
+        return perm.getPrimaryGroup(nullString, player.getName());
+    }
+
+    /**
+     * Returns the player's global group memberships
+     *
+     * @param player
+     * @return
+     */
+    public static String[] getGlobalGroups(Player player) {
+        Permission perm = getPermission();
+        if(perm == null || !perm.hasGroupSupport())
+            return null;
+        return perm.getPlayerGroups(nullString, player.getName());
     }
 }
