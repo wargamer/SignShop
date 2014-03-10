@@ -28,7 +28,7 @@ public class Vault {
      * @return the permission provider
      */
     public static Permission getPermission() {
-        return permission;
+        return permission == null || permission.getName().equals("SuperPerms") ? null : permission;
     }
 
     /**
