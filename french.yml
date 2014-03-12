@@ -4,9 +4,7 @@ signs:
   Donner: Donate
   DonnerPaume: DonateHand
   Sous: Slot
-  iAcheter: iSell
   iAcheter: iBuy
-  gVendre: gBuy
   gVendre: gSell
   Jour: Day
   Nuit: Night
@@ -31,158 +29,168 @@ signs:
   Commande: Command
   Partager: Share
   Restreint: Restricted
+  iVendre: iSell
+  Sante: Heal
+  Achat: Buy
+  Vente: Sell
+  Acces: Device
+  AccesMagasins: Device
+  AcheterXP: iBuyXP
+  VendreXP: iSellXP
+  DonnerMain: DonateHand
+  Slot: Slot
 messages:
   setup:
-    Buy: Vous avez mis des !items en vente au !price de !price!
-    Sell: Vous avez mis une prime de !price pour les !items!
-    Donate: Vous avez configuré une boîte de dons pour les !items!
+    Buy: Vous avez mis !items en vente au prix de !price! crédits
+    Sell: Vous avez mis en vente !items pour !price crédits !
+    Donate: Vous avez configuré une boite de dons pour !items!
     DonateHand: Vous avez configuré une boîte de dons pour tous les types d'éléments
-    Slot: Vous avez configuré une offre de !price machine à sous !items
-    iBuy: Vous avez mis éléments infiniment pour la vente au !price de !price
-    iSell: Vous avez mis une infinie bonté de !price pour les !items
-    gBuy: Vous avez configuré un magasin vendant des !items pour le fantôme !price (Notez que vous ne recevrez pas de perdre de l'argent à partir de cette boutique)
-    gSell: Vous avez configuré un achat achats fictifs !items pour le !price (Notez que vous ne recevrez pas de perdre de l'argent à partir de cette boutique)
-    Day: Vous avez configuré un contrôleur de temps que les coûts de !price
-    Night: Vous avez configuré un contrôleur de temps que les coûts de !price
-    Rain: Vous avez configuré un contrôleur temps que les coûts de !price
-    ClearSkies: Vous avez configuré un contrôleur temps que les coûts de !price
-    DeviceOn: Vous avez configuré un dispositif activateur que les coûts de !price
-    DeviceOff: Vous avez configuré un dispositif que les coûts désactivateur !price
-    Toggle: Vous avez configuré un dispositif toggler que les coûts de !price
-    Device: Vous avez configuré un dispositif temporaire activateur que les coûts de !price
-    Heal: Vous avez configuré une station de guérison que les coûts de !price
-    Repair: Vous avez configuré une station de réparation que les coûts de !price
+    Slot: Vous avez configuré une offre de !price crédits pour cette boutique !items
+    iBuy: Vous avez créé un achat illimité de !price crédits pour !items
+    iSell: Vous avez créé une vente illimité de !price crédits pour !items
+    gBuy: Vous avez configuré un magasin vendant des !items pour !price crédits (Notez que vous ne recevrez pas d'argent de cette boutique)
+    gSell: Vous avez configuré un achat fictifs !items pour !price crédits (Notez que vous ne recevrez pas d'argent de cette boutique)
+    Day: Vous avez configuré un contrôleur de jour pour un coût de !price crédits
+    Night: Vous avez configuré un contrôleur de nuit pour un coût de !price crédits
+    Rain: Vous avez configuré un contrôleur de pluie pour un coût de !price crédits
+    ClearSkies: Vous avez configuré un contrôleur de temps clair pour un coût de !price crédits
+    DeviceOn: Vous avez configuré un dispositif activateur pour un coût de !price crédits
+    DeviceOff: Vous avez configuré un dispositif désactivateur pour un coût de !price crédits
+    Toggle: Vous avez configuré un dispositif toggler que les coûts de !price crédits
+    Device: Vous avez configuré un dispositif temporaire activateur que les coûts de !price crédits
+    Heal: Vous avez configuré une station de guérison que les coûts de !price crédits
+    Repair: Vous avez configuré une station de réparation que les coûts de !price crédits
     Dispose: Vous avez configuré un signe Dispose
     DeviceItem: Vous avez configuré un dispositif temporaire activateur !items que les coûts!
-    iSlot: Vous avez configuré une offre de !price machine à sous infini !items
+    iSlot: Vous avez configuré une offre de !price crédits pour machine à sous infini !items
     Enchant: Vous avez configuré un enchanteur que les coûts et les !price enchante avec des !enchantements!
     iSellXP: Vous avez mis une prime de !price pour !xp XP
     iBuyXP: Vous avez mis !xp XP en vente à un prix de !price
     iTrade: Vous avez configuré une boutique de commerce que les coûts !chest1 pour !chest2!
     TpToOwner: Vous avez configuré un magasin par exemple la commande, la vente se téléporte au propriétaire pour le !price
-    Class: Vous avez configuré une boutique pour vendre une catégorie de postes pour le !price
-    Disenchant: Vous avez configuré un signe qui élimine les enchantements pour le !price
-    Command: Vous avez créé un signe qui exécute des commandes pour le !price
+    Class: Vous avez configuré une boutique pour vendre un ensemble d'article pour !price crédits
+    Disenchant: Vous avez configuré un panneau qui élimine les enchantements pour !price crédits
+    Command: Vous avez créé un panneau qui exécute des commandes pour !price crédits
   confirm:
-    Buy: Acheter des objets pour le !price?
-    Sell: Vendre des objets pour le !price?
+    Buy: Acheter !items pour !price crédits?
+    Sell: Vendre !items pour un montant de !price crédits?
     Donate: Donner! Articles?
     DonateHand: Donner !items?
-    Slot: Jouer cette machine à sous pour !price?
-    Emplacement: Jouez cette machine à sous pour le !price?
-    Redstone: Activer cet appareil pour le !price?
-    iBuy: Acheter des !items pour !price!?
-    iSell: Vendre des objets pour le !price?
-    gBuy: Acheter des !items pour !price!?
-    gSell: Vendre des objets pour le !price?
-    Day: Réglez l'heure de jour pour les !price?
-    Night: Réglez l'heure de nuit pour le !price?
-    Rain: Réglez le temps de pluie pour le !price?
-    ClearSkies: Réglez le temps pour effacer ciel pour le !price?
-    DeviceOn: Activer cet appareil pour le !price?
-    DeviceOff: Désactiver ce périphérique pour le !price?
-    Toggle: Basculer cet appareil pour le !price?
-    Device: Temporairement activer ce dispositif pour le !price?
-    Heal: vous guérir de !price?
-    Repair: Réparation de l'objet tenu dans la main pour le !price?
+    Slot: Jouer à cette machine à sous pour !price crédits?
+    Emplacement: Jouez à cette machine à sous pour le !price crédits?
+    Redstone: Activer cet appareil pour !price crédits?
+    iBuy: Acheter !items pour !price! crédits?
+    iSell: Vendre des objets pour !price crédits?
+    gBuy: Acheter !items pour !price! crédits?
+    gSell: Vendre !items pour un montant de !price crédits?
+    Day: Mettre le jour pour !price crédits?
+    Night: Mettre la nuit pour !price crédits?
+    Rain: Faire tomber la pluie pour !price crédits?
+    ClearSkies: Eclaircir le ciel pour !price crédits?
+    DeviceOn: Activer pour !price crédits?
+    DeviceOff: Désactiver pour !price crédits?
+    Toggle: Activer pour !price crédits?
+    Device: Activer temporairement ce dispositif pour !price crédits?
+    Heal: Vous guérir pour !price crédits?
+    Repair: Réparation de l'objet tenu dans la main pour !price crédits?
     Jeter: Jeter les !items?
     DeviceItem: Temporairement activer ce dispositif des !items?
-    iSlot: Jouez cette machine à sous infiniment garni pour le !price?
-    Enchant: Ench votre article avec des enchantements pour le !price!?
-    iSellXP: Vendre !xp XP pour le !price?
-    iBuyXP: Acheter !xp XP pour les !price?
+    iSlot: Jouez à cette machine à sous pour !price crédits?
+    Enchant: Enchanter cet objet pour !price! crédits?
+    iSellXP: Vendre !xp niveau(x) d'expérience pour !price crédits?
+    iBuyXP: Acheter !xp d'expérience pour !price crédits?
     iTrade: Achat !chest2 avec !chest1?
-    TpToOwner: Téléportation au propriétaire pour le !price?
-    Class: Acheter le contenant classe !items pour le !price?
-    Désenchanter: Retirer enchantements sur l'objet dans votre main pour le !price?
-    Command: Exécutez les commandes sur ce signe pour le !price?
+    TpToOwner: Téléportation vers le propriétaire pour !price crédits?
+    Class: Acheter cet ensemble d'élément (!items) pour !price crédits?
+    Désenchanter: Retirer enchantements sur l'objet dans votre main pour le !price crédits?
+    Command: Exécutez les commandes sur ce signe pour le !price crédits?
   transaction:
-    Buy: Vous avez acheté des !items pour le !price!
-    Sell: Vous avez vendu des !items pour le !price!
+    Buy: Vous avez acheté !items pour !price crédits !
+    Sell: Vous avez vendu !items pour !price crédits !
     Donate: Vous avez donné des objets!!
     DonateHand: Vous avez donné des objets!
     Slot: Vous avez gagné !items
-    Redstone: Dispositif activé pour le !price
-    iBuy: Vous avez acheté des !items pour le !price!
-    iSell: Vous avez vendu des !items pour le !price!
-    gBuy: Vous avez acheté des !items pour le !price!
-    gSell: Vous avez vendu des !items pour le !price!
-    Day: Vous avez mis le temps en jour pour le !price
-    Night: Vous pouvez définir le temps de la nuit pour le !price
-    Rain: Vous pouvez définir le temps de pluie pour le !price
-    ClearSkies: Vous pouvez définir le temps de dégager le ciel pour le !price
-    DeviceOn: Vous avez activé ce dispositif pour le !price
-    DeviceOff: Vous avez désactivé ce !price
-    Toggle: Vous basculé cet appareil pour le !price
-    Device: Vous temporairement activé ce dispositif pour le !price
-    Heal: Vous-même guéri pour le !price
-    Réparation: Vous réparé un élément pour le !price
+    Redstone: Dispositif activé pour !price crédits
+    iBuy: Vous avez acheté !items pour !price crédits!
+    iSell: Vous avez vendu !items pour !price crédits!
+    gBuy: Vous avez acheté !items pour !price crédits!
+    gSell: Vous avez vendu !items pour !price crédits!
+    Day: Vous avez fait lever le soleil pour !price crédits
+    Night: Vous avez fait coucher le soleil pour !price crédits
+    Rain: Vous avez fait pleuvoir pour !price crédits
+    ClearSkies: Vous avez fait s'éclaircir le ciel pour !price crédits
+    DeviceOn: Vous avez activé ce dispositif pour !price crédits
+    DeviceOff: Vous avez désactivé ce dispositif pour !price crédits
+    Toggle: Vous basculé cet appareil pour !price crédits
+    Device: Vous avez temporairement activé ce dispositif pour !price crédits
+    Heal: Vous vous êtes guéri pour !price crédits
+    Réparation: Vous avez réparé un élément pour !price crédits
     Dispose: Vous avez disposé d'éléments!!
-    DeviceItem: Vous temporairement activé ce dispositif des !items
+    DeviceItem: Vous avez temporairement activé le dispositif des !items
     iSlot: Vous avez gagné !items
-    Enchant: Enchanted votre article avec des enchantements pour le !price!
-    iSellXP: Vendu !xp XP pour le !price
-    iBuyXP: Ajouté !xp XP pour le !price
+    Enchant: Vous avez enchanté votre objet pour !price crédits!
+    iSellXP: Vous avez vendu !xp d'expérience pour !price crédits
+    iBuyXP: Vous avez acheté !xp d'expérience pour !price crédits
     iTrade: Échangé !chest1 pour !chest2!
-    TpToOwner: Vous téléporte au !owner pour le !price
-    Class: Vous avez acheté la classe contenant des !items pour le !price
-    Disenchant: Vous avez retiré les enchantements sur l'objet dans votre main pour le !price
-    Command: Vous exécutez les commandes du panneau pour le !price
+    TpToOwner: Vous téléporte au !owner pour le !price crédits
+    Class: Vous avez acheté l'ensemble contenant les articles !items pour !price crédits
+    Disenchant: Vous avez retiré les enchantements sur l'objet dans votre main pour !price crédits
+    Command: Vous exécutez les commandes du panneau pour !price crédits
   transaction_owner:
-    Buy: \!customer acheté des !items pour le !price de vous!
-    Sell: \!customer vous vendu des !items pour le !price
-    Donate: \!customer a fait don d'!items à vous!
-    DonateHand: \!customer a fait don d'!items à vous!
-    Slot: \!customer joué une machine à sous pour ça !price et gagné !items!
-    Emplacement: \!customer joué une machine à sous pour le !price et a remporté !items
-    Redstone:  \!customer activé votre appareil redstone pour le !price
+    Buy: \!customer vous a acheté !items pour !price crédits!
+    Sell: \!customer vous a vendu des !items pour !price crédits!
+    Donate: \!customer vous a fait don d'!items!
+    DonateHand: \!customer vous a fait don d'!items!
+    Slot: \!customer a joué sur une machine à sous pour !price crédits et gagné !items!
+    Emplacement: \!customer a joué sur une machine à sous pour !price crédits et a remporté !items
+    Redstone: \!customer a activé votre machine à redstone pour !price crédits
     iBuy: ''
     iSell: ''
     gBuy: \!customer a acheté des !items de votre boutique fantôme!
-    gSell: \!customer vendu des !items à votre magasin fantôme!
-    Day: \!customer régler l'heure à jour pour les !price
-    Night: \!customer régler l'heure de nuit pour le !price
-    Rain: \!customer mis du temps à pleuvoir pour le !price
-    ClearSkies: \!customer mis le temps pour effacer ciel pour le !price
-    DeviceOn:  \!customer activé votre appareil pour le !price
-    DeviceOff:  \!customer désactivé votre appareil pour le !price
-    Basculez: \!customer basculé votre appareil pour le !price
-    Device:  \!customer activé temporairement votre appareil pour le !price
-    Guérir: \!customer guéri à votre station pour le !price
-    Réparation: \!customer réparer un article à votre station pour le !price
+    gSell: \!customer a vendu des !items à votre magasin fantôme!
+    Day: \!customer a mis le jour pour !price crédits
+    Night: \!customer a mis la nuit pour !price crédits
+    Rain: \!customer a fait pleuvoir pour !price crédits
+    ClearSkies: \!customer mis le temps pour effacer ciel pour le !price crédits
+    DeviceOn: \!customer a activé votre appareil pour !price crédits
+    DeviceOff: \!customer a désactivé votre appareil pour !price crédits
+    Basculez: \!customer a basculé votre appareil pour !price crédits
+    Device: \!customer a activé temporairement votre appareil pour !price crédits
+    Guérir: \!customer s'est guéri à votre station pour !price crédits
+    Réparation: \!customer a réparé un article à votre station pour !price crédits
     Dispose: ''
-    DeviceItem:  \!customer activé temporairement votre appareil des !items
+    DeviceItem: \!customer a activé temporairement votre appareil des !items
     iSlot: ''
-    Enchant: \!customer enchanté son article avec des enchantements pour le !price!
+    Enchant: \!customer a enchanté son article avec des enchantements pour !price crédits!
     iSellXP: ''
     iBuyXP: ''
     iTrade: ''
-    TpToOwner: \!customer téléporté à vous pour le !price
+    TpToOwner: \!customer s'est téléporté jusqu'à vous pour !price crédits
     Class: ''
     Disenchant: ''
     Command: ''
 errors:
   no_permission: Vous n'avez pas la permission de créer ce signe!
   no_permission_use: Vous n'avez pas la permission d'utiliser ce signe!
-  invalid_operation: Le signe vous avez cliqué n'est pas une opération valide!
+  invalid_operation: Le signe sur lequel vous avez cliqué n'est pas valide!
   chest_empty: Le magasin est vide!
-  chest_missing: Vous devez lier au moins une poitrine de ce type de magasin!
-  lever_missing: Vous devez lier au moins un levier pour ce type de magasin!
-  no_player_money: Vous n'avez pas le !price à payer!
-  no_shop_money: Le magasin n'a pas de !price à vous payer!
+  chest_missing: Vous devez lier au moins un coffre avec ce magasin!
+  lever_missing: Vous devez lier au moins un levier pour ce magasin!
+  no_player_money: Vous n'avez pas assez d'argent pour payer ce prix (!price crédits)!
+  no_shop_money: Le magasin n'a pas la somme de !price crédits pour vous payer!
   out_of_business: Cette boutique semble avoir disparu du marché!
   out_of_stock: Cette boutique est en rupture de stock!
-  overstocked: Cette boutique est surchargé!
+  overstocked: Cette boutique est surchargé, demandez au propriétaire de vider le stock!
   player_doesnt_have_items: Vous n'avez pas les !items
   no_item_in_hand: Vous devez être titulaire d'un article pour le magasin pour être en mesure de le prendre!
   player_overstocked: Votre inventaire est trop plein!
   sign_location_stored: Connexion emplacement mémorisé!
-  made_day: Joueur a fait jour!
-  made_night: Joueur a fait nuit!
-  made_rain: Joueur a fait pleuvoir!
-  made_clear_skies: joueur! a autorisé le ciel!
-  already_on: Le périphérique est déjà sur
-  already_off: Le périphérique est déjà éteint
+  made_day: \!customer a fait apparaître le jour!
+  made_night: \!customer a fait apparaître la nuit!
+  made_rain: \!customer a fait pleuvoir!
+  made_clear_skies: \!customer a éclaici le ciel !
+  already_on: Le périphérique est déjà activé.
+  already_off: Le périphérique est déjà éteint.
   link_notallowed: Vous n'êtes pas autorisé à lier ça!
   item_already_repair: C'est article est déjà entièrement réparé!
   already_raining: Il est déjà prise d'assaut!
@@ -192,10 +200,10 @@ errors:
   saved: Magasins sauvé!
   shop_removed: Suppression d'une boutique invalide! Il devrait être en '!world' À (!x,!y, !z).
   invalid_item_to_repair: Cet objet ne peut pas être réparé!
-  no_item_to_repair: Vous devez être maintenant l'élément que vous voulez réparer!
+  no_item_to_repair: Vous devez tenir en main l'objet que vous voulez réparer ! ;-)
   backup_fail: Échec de la sauvegarde de stockage!
-  too_far: La distance entre le signe et la poitrine est trop grand. Maximale est! Max.
-  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Maximale est! Max.
+  too_far: La distance entre le signe et la poitrine est trop grand. Le maximum est de !Max.
+  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Le maximum est de !Max.
   enchanted_not_allowed: Vous n'êtes pas autorisé à réparer des objets enchantés.
   enchantment_missing: Au moins un objet enchanté est nécessaire, s'il vous plaît mettre un dans la poitrine (s)!
   item_not_enchantable: L'article dans votre main n'est pas enchantable!
@@ -203,8 +211,8 @@ errors:
   no_item_to_disenchant: Vous devez être maintenant l'élément que vous voulez désenchanter!
   nothing_to_disenchant: Cet objet ne peut pas être déçus!
   multiworld_not_allowed: Multiworld magasins ne sont pas autorisés sur ce serveur!
-  no_permit_owner: Le propriétaire de cette boutique n'a plus de permis!
-  need_permit: Il faut un permis de mettre en place cette boutique!
+  no_permit_owner: Le propriétaire de cette boutique n'est plus autorisé!
+  need_permit: Il faut être autorisé pour mettre en place cette boutique!
   villager_trading_disabled: Échanges avec les villageois n'est pas activé sur ce serveur!
   not_allowed_to_link_sharesigns: Vous n'êtes pas autorisé à lier signes Partager ce magasin!
   no_shop_linked_to_sharesign: Ce signe Partagez n'a pas été lié à tous les magasins.
@@ -222,7 +230,7 @@ errors:
   towny_owner_not_mayor_or_assistant: Le propriétaire de la boutique n'est pas un maire ou d'adjoint d'une ville.
   towny_owner_not_belong_to_town: Le propriétaire du magasin ne devrait pas appartenir à une ville.
   towny_bank_withdrawls_not_allowed: La configuration actuelle ne permet pas Towny retraits bancaires!
-  restricted_from_using: Vous êtes limité d'utiliser ce magasin!
-  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique que vous êtes le propriétaire.
-  item_on_blacklist: L'article !blacklisted_item est sur la liste noire et ne peut pas être utilisé avec Shops.
-  item_on_blacklist_but_op: L'article !blacklisted_item est sur ??la liste noire, mais vous êtes OP.
+  restricted_from_using: Vous êtes limité dans l'utilisation de ce magasin!
+  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique car vous êtes le propriétaire.
+  item_on_blacklist: L'article !blacklisted_item est sur LISTE NOIRE et ne peut donc pas être utilisé.
+  item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais vous êtes OP.
