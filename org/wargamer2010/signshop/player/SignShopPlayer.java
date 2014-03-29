@@ -138,8 +138,6 @@ public class SignShopPlayer {
     }
 
     public boolean hasPerm(String perm, World world, Boolean OPOperation) {
-        if(Vault.getPermission() == null)
-            return false;
         if(sPlayername.isEmpty())
             return true;
         Boolean isOP = isOpRaw();
