@@ -6,13 +6,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.List;
 import org.bukkit.Material;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
 import com.kellerkindt.scs.*;
-import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -50,10 +48,6 @@ public class LinkShowcase implements SignShopSpecialOp {
             return false;
         ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
         com.kellerkindt.scs.internals.Storage storage = new com.kellerkindt.scs.internals.Storage(1, Integer.toString(bStep.hashCode()));
-        if(storage == null) {
-            SignShop.log("Invalid version of ShowCaseStandalone detected, please get the latest!", Level.WARNING);
-            return true;
-        }
 
         com.kellerkindt.scs.shops.Shop p = new com.kellerkindt.scs.shops.DisplayShop(scs, storage);
         p.setItemStack(showcasing);

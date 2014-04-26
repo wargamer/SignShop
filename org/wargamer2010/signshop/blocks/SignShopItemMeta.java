@@ -10,7 +10,6 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
@@ -35,7 +34,6 @@ public class SignShopItemMeta {
     private static final String valueSeperator = "-";
     private static final String innerListSeperator = "^";
     private static final ChatColor txtColor = ChatColor.YELLOW;
-    private static Map<String, String> headResolves = null;
     private static String filename = "books.db";
     private static Boolean legacy = false;
 
@@ -86,22 +84,6 @@ public class SignShopItemMeta {
             temp = signshopUtil.implode(temparr, " ");
         }
         return signshopUtil.capFirstLetter(temp);
-    }
-
-    private static String resolveUnknownHeads(int ID, short durability) {
-        if(headResolves == null) {
-            headResolves = new LinkedHashMap<String, String>();
-            headResolves.put("3970", "Skeleton Skull");
-            headResolves.put("3971", "Wither Skeleton Skull");
-            headResolves.put("3972", "Zombie Head");
-            headResolves.put("3973", "Steve's Head");
-            headResolves.put("3974", "Creeper Head");
-        }
-        String fullid = (Integer.toString(ID) + Short.toString(durability));
-        if(headResolves.containsKey(fullid)) {
-            return headResolves.get(fullid);
-        }
-        return "";
     }
 
     private static boolean hasMeta(ItemStack stack) {
@@ -157,23 +139,19 @@ public class SignShopItemMeta {
                 String postfix = "'s Head";
                 SkullMeta skullmeta = (SkullMeta) meta;
                 if(skullmeta.getOwner() != null) {
-                    if(Bukkit.getServer().getPlayer(skullmeta.getOwner()) == null) {
-                        if(Bukkit.getServer().getOfflinePlayer(skullmeta.getOwner()) == null) {
-                            return (skullmeta.getOwner() + postfix);
-                        } else {
-                            return (Bukkit.getServer().getOfflinePlayer(skullmeta.getOwner()).getName() + postfix);
-                        }
-                    } else {
-                        return (ChatColor.RESET + Bukkit.getServer().getPlayer(skullmeta.getOwner()).getDisplayName() + postfix);
-                    }
+                    // Name coloring support had to be dropped since there is no more link between
+                    // the skull owner and the actual player
+                    return (skullmeta.getOwner() + postfix);
                 } else {
-                    return resolveUnknownHeads(stack.getTypeId(), stack.getDurability());
+                    // We can no longer get a pretty name by ID (SKULL_ITEM isn't pretty, is it?)
+                    // So we'll have to rely on the web lookup, if the server owner has it enabled
+                    return getDisplayName(stack);
                 }
             } else if(type == MetaType.Potion) {
                 PotionMeta potionmeta = (PotionMeta) meta;
 
                 boolean first = true;
-                StringBuilder namebuilder = new StringBuilder();
+                StringBuilder namebuilder = new StringBuilder(512);
                 namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
 
                 Collection<PotionEffect> effects = null;
@@ -233,7 +211,7 @@ public class SignShopItemMeta {
             } else if(type == MetaType.Fireworks) {
                 FireworkMeta fireworkmeta = (FireworkMeta) meta;
 
-                StringBuilder namebuilder = new StringBuilder();
+                StringBuilder namebuilder = new StringBuilder(256);
                 namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
 
                 if(fireworkmeta.hasEffects()) {
@@ -455,9 +433,11 @@ public class SignShopItemMeta {
                 }
             }
             else if(type == MetaType.Repairable) {
-                Repairable repairmeta = (Repairable) meta;
-                if(repairmeta.hasRepairCost()) {
-                    metamap.put("repaircost", Integer.toString(repairmeta.getRepairCost()));
+                if(meta instanceof Repairable) {
+                    Repairable repairmeta = (Repairable) meta;
+                    if(repairmeta.hasRepairCost()) {
+                        metamap.put("repaircost", Integer.toString(repairmeta.getRepairCost()));
+                    }
                 }
             } else if(type == MetaType.Potion) {
                 PotionMeta potionmeta = (PotionMeta) meta;
@@ -509,7 +489,7 @@ public class SignShopItemMeta {
             return "";
         StringBuilder returnbuilder = new StringBuilder(meta.getCustomEffects().size() * 50);
         for(PotionEffect effect : meta.getCustomEffects()) {
-            returnbuilder.append(Integer.toString(effect.getType().getId()));
+            returnbuilder.append(effect.getType().getName());
             returnbuilder.append(valueSeperator);
             returnbuilder.append(Integer.toString(effect.getDuration()));
             returnbuilder.append(valueSeperator);
@@ -521,6 +501,7 @@ public class SignShopItemMeta {
         return returnbuilder.toString();
     }
 
+    @SuppressWarnings("deprecation") // Allowed for transition purposes
     private static List<PotionEffect> convertStringToPotionMeta(String meta) {
         List<PotionEffect> effects = new LinkedList<PotionEffect>();
         List<String> splitted = Arrays.asList(meta.split(listSeperator));
@@ -530,14 +511,25 @@ public class SignShopItemMeta {
             String[] bits = split.split(valueSeperator);
             if(bits.length == 4) {
                 try {
-                    int id = Integer.parseInt(bits[0]);
                     int dur = Integer.parseInt(bits[1]);
                     int amp = Integer.parseInt(bits[2]);
                     boolean amb = Boolean.parseBoolean(bits[3]);
-                    effects.add(new PotionEffect(PotionEffectType.getById(id), dur, amp, amb));
+                    PotionEffect effect = null;
+                    try {
+                        int id = Integer.parseInt(bits[0]);
+                        effect = new PotionEffect(PotionEffectType.getById(id), dur, amp, amb);
+                    } catch(NumberFormatException ex) {
+                        PotionEffectType type = PotionEffectType.getByName(bits[0]);
+                        if(type != null)
+                            effect = new PotionEffect(PotionEffectType.getByName(bits[0]), dur, amp, amb);
+                    }
+                    if(effect != null)
+                        effects.add(effect);
                 } catch(NumberFormatException ex) {
                     continue;
                 }
+
+
             }
         }
 

@@ -1,4 +1,3 @@
-
 package org.wargamer2010.signshop.blocks;
 
 import org.bukkit.block.Block;
@@ -6,8 +5,9 @@ import org.bukkit.material.Door;
 
 /**
  * Class that will temporarily fix the issues that exist with the Door class
- * @author Wargamer2010
+ * Deprecation is accepted for this class since it is itself deprecated
  */
+@SuppressWarnings("deprecation")
 public class SSDoor extends Door {
     private Block bBottomHalf = null;
 

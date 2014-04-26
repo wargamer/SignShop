@@ -2,7 +2,6 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
 import java.util.Map;
-import net.milkbowl.vault.item.Items;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

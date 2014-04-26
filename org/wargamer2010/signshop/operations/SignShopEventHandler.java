@@ -9,6 +9,7 @@ import org.wargamer2010.signshop.events.SSEvent;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public abstract class SignShopEventHandler implements SignShopOperation {
+    @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         return true;
     }

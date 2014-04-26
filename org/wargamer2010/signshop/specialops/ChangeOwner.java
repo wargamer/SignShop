@@ -8,6 +8,7 @@ import java.util.Map;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -20,30 +21,30 @@ public class ChangeOwner implements SignShopSpecialOp {
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
-        if(!clicks.mClicksPerPlayername.containsValue(player))
+        if(!clicks.mClicksPerPlayerId.containsValue(player))
             return false;
         if(!ssPlayer.hasPerm("SignShop.ChangeOwner", true)) {
             ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
             return false;
         }
-        if(!seller.getOwner().equals(player.getName()) && !ssPlayer.hasPerm("SignShop.ChangeOwner.Others", true)) {
+        if(!seller.isOwner(ssPlayer) && !ssPlayer.hasPerm("SignShop.ChangeOwner.Others", true)) {
             ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
             return false;
         }
-        String sNewOwner = "";
-        for(Map.Entry<String, Player> entry : clicks.mClicksPerPlayername.entrySet()) {
+        PlayerIdentifier newOwner = null;
+        for(Map.Entry<PlayerIdentifier, Player> entry : clicks.mClicksPerPlayerId.entrySet()) {
             if(entry.getValue() == player) {
-                sNewOwner = entry.getKey();
+                newOwner = entry.getKey();
                 break;
             }
         }
-        if(sNewOwner.isEmpty())
+        if(newOwner == null)
             return false;
 
-        seller.setOwner(sNewOwner);
+        seller.setOwner(new SignShopPlayer(newOwner));
         Storage.get().SafeSave();
-        ssPlayer.sendMessage("Succesfully changed ownership of shop to " + sNewOwner);
-        clicks.mClicksPerPlayername.remove(sNewOwner);
+        ssPlayer.sendMessage("Succesfully changed ownership of shop to " + newOwner.getName());
+        clicks.mClicksPerPlayerId.remove(newOwner);
         return true;
     }
 }

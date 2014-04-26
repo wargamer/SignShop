@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
 import java.util.logging.Level;
-import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;

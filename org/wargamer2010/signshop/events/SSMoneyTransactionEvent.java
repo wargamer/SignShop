@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.events;
 import java.util.Map;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
-import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;

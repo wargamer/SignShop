@@ -62,7 +62,7 @@ public class SignShopArguments {
         else
             ssPlayer.setRoot(new SignShopPlayer((Player)null));
 
-        ssOwner.setRoot(new SignShopPlayer(seller.getOwner()));
+        ssOwner.setRoot(seller.getOwner());
         bSign.setRoot(seller.getSign());
         sOperation.setRoot(seller.getOperation());
         bfBlockFace.setRoot(BlockFace.SELF);

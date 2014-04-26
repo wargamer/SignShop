@@ -31,7 +31,7 @@ public class toggleRedstone implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Block bLever = null;
+        Block bLever;
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);

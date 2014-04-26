@@ -6,11 +6,9 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.LinkedList;
-import org.bukkit.Location;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.Storage;
-import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
@@ -67,7 +65,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         }
 
         if((bUnlinked && newSigns.isEmpty()) || !newSigns.isEmpty()) {
-            if(!seller.getOwner().equals(player.getName()) && !ssPlayer.isOp()) {
+            if(!seller.isOwner(ssPlayer) && !ssPlayer.isOp()) {
                 ssPlayer.sendMessage(SignShopConfig.getError(NotAllowedMessage, null));
                 return true;
             }
@@ -83,7 +81,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         }
         newSigns.addAll(currentSigns);
 
-        String locations = "";
+        String locations;
         if(SignName.equals("restricted"))
             locations = signshopUtil.validateRestrictSign(newSigns, ssPlayer);
         else if(SignName.equals("share"))

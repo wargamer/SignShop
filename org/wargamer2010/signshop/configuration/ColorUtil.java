@@ -11,7 +11,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 public class ColorUtil {
     private static Map<Integer, String> colorLookup = new HashMap<Integer, String>();
 
-    public ColorUtil() {
+    private ColorUtil() {
 
     }
 

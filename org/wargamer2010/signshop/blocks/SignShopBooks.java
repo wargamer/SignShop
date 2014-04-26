@@ -5,7 +5,6 @@ import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;

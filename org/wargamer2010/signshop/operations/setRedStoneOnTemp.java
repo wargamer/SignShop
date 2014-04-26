@@ -30,7 +30,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
         if(!setupOperation(ssArgs))
             return false;
         Boolean bReturn = false;
-        Block bLever = null;
+        Block bLever;
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);

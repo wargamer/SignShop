@@ -1,24 +1,15 @@
-package org.wargamer2010.signshop.blocks.v145;
+package org.wargamer2010.signshop.blocks;
 
 
-import java.util.logging.Level;
 import org.bukkit.Material;
-import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.blocks.IItemTags;
 
-public class itemTags implements IItemTags {
+public class ItemTags implements IItemTags {
     @Override
     public org.bukkit.inventory.ItemStack copyTags(org.bukkit.inventory.ItemStack from, org.bukkit.inventory.ItemStack to) {
         if(from == null || to == null || from.getItemMeta() == null)
             return to;
         to.setItemMeta(from.getItemMeta().clone());
         return to;
-    }
-
-    @Override
-    public void setItemMaxSize(Material material, int maxstacksize) {
-        // Support for this has ended due to Bukkit shifting package names around too often
-        SignShop.log("Support for sign stacking has ended with the release of 1.4.7. For information, please visit http://tiny.cc/signshop", Level.WARNING);
     }
 
     @Override
