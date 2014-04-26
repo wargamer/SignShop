@@ -38,7 +38,7 @@ public class SignShopConfig {
     private static Map<String,String> OperationAliases;                         // Alias <-> Original
     private static Map<String,Map<String,HashMap<String,String>>> Messages;
     private static Map<String,Map<String,String>> Errors;
-    private static List<Integer> BlacklistedItems;
+    private static List<Material> BlacklistedItems;
     private static Map<String,HashMap<String,Float>> PriceMultipliers;
     private static Map<String,List<String>> Commands;
     private static Map<String,List<String>> DelayedCommands;
@@ -65,7 +65,6 @@ public class SignShopConfig {
     private static boolean EnablePermits = false;
     private static boolean PreventVillagerTrade = false;
     private static boolean ProtectShopsInCreative = true;
-    private static boolean EnableSignStacking = false;
     private static boolean fixIncompleteOperations = true;
     private static boolean EnablePriceFromWorth = false;
     private static boolean EnableDynmapSupport = false;
@@ -251,7 +250,6 @@ public class SignShopConfig {
         EnablePermits = ymlThing.getBoolean("EnablePermits", EnablePermits);
         PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
-        EnableSignStacking = ymlThing.getBoolean("EnableSignStacking", EnableSignStacking);
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
@@ -275,14 +273,8 @@ public class SignShopConfig {
     }
 
     private static Material getMaterial(String mat, Material defaultmat) {
-        Material temp;
-        try {
-            Integer ID = Integer.parseInt(mat);
-            temp = Material.getMaterial(ID);
-        } catch(NumberFormatException ex) {
-            String name = mat.toUpperCase();
-            temp = Material.getMaterial(name);
-        }
+        String name = mat.toUpperCase();
+        Material temp = Material.getMaterial(name);
         if(temp == null) {
             SignShop.log("Material called: " + mat + " does not exist, please check your config.yml!", Level.WARNING);
             return defaultmat;
@@ -595,26 +587,21 @@ public class SignShopConfig {
 
     private static void setupBlacklist() {
         List<String> tempList = config.getStringList("Blacklisted_items");
-        BlacklistedItems = new LinkedList<Integer>();
+        BlacklistedItems = new LinkedList<Material>();
         for(String item : tempList) {
-            try {
-                Integer ID = Integer.parseInt(item);
-                BlacklistedItems.add(ID);
-            } catch(NumberFormatException ex) {
-                Material mat = Material.getMaterial(item.toUpperCase());
-                if(mat != null)
-                    BlacklistedItems.add(mat.getId());
-                else
-                    SignShop.log("Material called: " + item + " could not be added to the blacklist as it does not exist, please check your config.yml!", Level.WARNING);
-            }
+            Material mat = Material.getMaterial(item.toUpperCase());
+            if(mat != null)
+                BlacklistedItems.add(mat);
+            else
+                SignShop.log("Material called: " + item + " could not be added to the blacklist as it does not exist, please check your config.yml!", Level.WARNING);
         }
     }
 
-    public static Boolean isItemOnBlacklist(int id) {
+    public static Boolean isItemOnBlacklist(Material mat) {
         return (
-                (SignShopConfig.BlacklistedItems.contains(id) && !SignShopConfig.getUseBlacklistAsWhitelist())
+                (SignShopConfig.BlacklistedItems.contains(mat) && !SignShopConfig.getUseBlacklistAsWhitelist())
                     ||
-                (!SignShopConfig.BlacklistedItems.contains(id) && SignShopConfig.getUseBlacklistAsWhitelist())
+                (!SignShopConfig.BlacklistedItems.contains(mat) && SignShopConfig.getUseBlacklistAsWhitelist())
         );
     }
 
@@ -624,7 +611,7 @@ public class SignShopConfig {
         for(ItemStack single : stacks) {
             if(single == null)
                 continue;
-            if(isItemOnBlacklist(single.getTypeId())) {
+            if(isItemOnBlacklist(single.getType())) {
                 return single;
             }
         }
@@ -709,10 +696,6 @@ public class SignShopConfig {
 
     public static Boolean getProtectShopsInCreative() {
         return ProtectShopsInCreative;
-    }
-
-    public static Boolean getEnableSignStacking() {
-        return EnableSignStacking;
     }
 
     public static Boolean getTransactionLog() {

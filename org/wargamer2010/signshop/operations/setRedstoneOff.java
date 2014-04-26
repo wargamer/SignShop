@@ -28,7 +28,7 @@ public class setRedstoneOff implements SignShopOperation {
             return false;
 
         Boolean bReturn = false;
-        Block bLever = null;
+        Block bLever;
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);
             if(bLever.getType() == Material.getMaterial("LEVER")) {
@@ -49,7 +49,7 @@ public class setRedstoneOff implements SignShopOperation {
         if(!setupOperation(ssArgs))
             return false;
 
-        Block bLever = null;
+        Block bLever;
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);

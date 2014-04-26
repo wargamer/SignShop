@@ -9,13 +9,10 @@ import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.MemorySection;
-import org.bukkit.inventory.InventoryHolder;
 
 import java.util.Map;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.io.*;
 import java.nio.channels.*;
@@ -25,7 +22,6 @@ import java.util.List;
 import java.util.ConcurrentModificationException;
 import java.util.LinkedHashMap;
 import java.util.concurrent.locks.ReentrantLock;
-import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -33,8 +29,8 @@ import org.bukkit.event.world.WorldLoadEvent;
 
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.blocks.BookFactory;
-import org.wargamer2010.signshop.blocks.IItemTags;
+import org.wargamer2010.signshop.player.PlayerIdentifier;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -125,7 +121,7 @@ public class Storage implements Listener {
 
     private boolean loadSellerFromSettings(String key, HashMap<String,List<String>> sellerSettings) {
         Block seller_sign;
-        String seller_owner;
+        SignShopPlayer seller_owner;
         List<Block> seller_activatables;
         List<Block> seller_containables;
         String seller_shopworld;
@@ -145,7 +141,7 @@ public class Storage implements Listener {
             tempList = getSetting(sellerSettings, "owner");
             if(tempList.isEmpty())
                 throw storageex;
-            seller_owner = tempList.get(0);
+            seller_owner = PlayerIdentifier.getPlayerFromString(tempList.get(0));
             tempList = getSetting(sellerSettings, "sign");
             if(tempList.isEmpty())
                 throw storageex;
@@ -193,7 +189,7 @@ public class Storage implements Listener {
             invalidShops.put(key, sellerSettings);
             return false;
         }
-        addSeller(seller_owner, seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
+        addSeller(seller_owner.GetIdentifier(), seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
         return true;
     }
 
@@ -204,7 +200,10 @@ public class Storage implements Listener {
 
         Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
         if(tempSellers == null) {
-            return legacyLoad();
+            SignShop.log("Invalid sellers.yml format detected. Old sellers format is no longer supported."
+                    + " Visit http://tiny.cc/signshop for more information.",
+                    Level.SEVERE);
+            return false;
         }
         if (tempSellers.isEmpty()) {
             return false;
@@ -248,134 +247,6 @@ public class Storage implements Listener {
         }
     }
 
-    public Boolean legacyLoad() {
-        ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
-        if(sellersection == null) {
-            SignShop.log("Sellers is empty!", Level.INFO);
-            return false;
-        }
-        Map<String,Object> tempSellers = sellersection.getValues(false);
-        IItemTags tags = BookFactory.getItemTags();
-
-        if(tempSellers == null){
-            return false;
-        }
-
-        SignShop.log("Legacy sellers.yml detected, backing up and attempting to load it!", Level.INFO);
-        File backup_legacy = new File(ymlfile.getParentFile().getPath() + "/sellers.legacy.backup");
-
-        if(!backup_legacy.exists()) {
-            try {
-                copyFile(ymlfile, backup_legacy);
-            } catch(IOException ex) {
-                safetosave = false;
-                SignShop.log("Failed to backup legacy sellers.yml, please manually back it up to sellers.legacy.backup in the same folder!", Level.SEVERE);
-                return false;
-            }
-        }
-
-        Map<String,Object> tempSeller;
-
-        String[] sSignLocation;
-        Block bChest;
-        ItemStack[] isItems;
-        ArrayList<Integer> items;
-        ArrayList<Integer> amounts;
-        ArrayList<String> datas;
-        ArrayList<Integer> durabilities;
-        ArrayList<String> enchantments;
-        boolean invalidShop;
-        boolean needToSave = false;
-        for(String sKey : tempSellers.keySet()){
-            invalidShop = false;
-
-            sSignLocation = sKey.split("/");
-
-            while(sSignLocation.length > 4){
-                sSignLocation[0] = sSignLocation[0]+"/"+sSignLocation[1];
-
-                for(int i=0;i<sSignLocation.length-1;i++){
-                    sSignLocation[i] = sSignLocation[i+1];
-                }
-            }
-
-            int iX = 0;
-            int iY = 0;
-            int iZ = 0;
-
-            try {
-                iX = Integer.parseInt(sSignLocation[1]);
-                iY = Integer.parseInt(sSignLocation[2]);
-                iZ = Integer.parseInt(sSignLocation[3]);
-            } catch(NumberFormatException nfe) {
-                invalidShop = true; //only used in the conditional below this
-                needToSave = true;
-            } catch(ArrayIndexOutOfBoundsException aio) {
-                invalidShop = true;
-                needToSave = true;
-            }
-            if(sSignLocation[0] == null || Bukkit.getServer().getWorld(sSignLocation[0]) == null) {
-                invalidShop = true;
-                needToSave = true;
-            }
-
-            if(invalidShop) {
-                SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), sSignLocation), Level.INFO);
-                continue;
-            }
-
-            Block bSign = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(iX, iY, iZ);
-
-            //If no longer valid, remove this sign (this would happen from worldedit, movecraft, etc)
-            if(itemUtil.clickedSign(bSign)) {
-                SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), sSignLocation), Level.INFO);
-                needToSave = true;
-                continue;
-            }
-
-            try {
-                MemorySection memsec = (MemorySection) tempSellers.get(sKey);
-                tempSeller = memsec.getValues(false);
-
-                bChest = Bukkit.getServer().getWorld(sSignLocation[0]).getBlockAt(
-                    (Integer) tempSeller.get("chestx"),
-                    (Integer) tempSeller.get("chesty"),
-                    (Integer) tempSeller.get("chestz"));
-
-                datas = (ArrayList<String>) tempSeller.get("datas");
-                items = (ArrayList<Integer>) tempSeller.get("items");
-                amounts = (ArrayList<Integer>) tempSeller.get("amounts");
-                durabilities = (ArrayList<Integer>) tempSeller.get("durabilities");
-                enchantments = (ArrayList<String>) tempSeller.get("enchantments");
-                isItems = new ItemStack[items.size()];
-
-                for(int i=0;i<items.size();i++) {
-                    short dur = (durabilities != null && durabilities.get(i) != null) ? durabilities.get(i).shortValue() : 0;
-                    isItems[i] = tags.getCraftItemstack(Material.getMaterial(items.get(i)), amounts.get(i), dur);
-
-                    if(datas != null && datas.get(i) != null)
-                        isItems[i].getData().setData(new Byte(datas.get(i)));
-
-                    if(enchantments != null && enchantments.get(i) != null)
-                        itemUtil.safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(enchantments.get(i)));
-                }
-                List<Block> seller_containables = new LinkedList<Block>();
-                List<Block> seller_activatables = new LinkedList<Block>();
-                if(bChest.getState() instanceof InventoryHolder)
-                    seller_containables.add(bChest);
-                else
-                    seller_activatables.add(bChest);
-
-                addSeller((String) tempSeller.get("owner"), sSignLocation[0], bSign, seller_containables, seller_activatables, isItems, null, false);
-            } catch(NullPointerException ex) {
-                SignShop.log(getInvalidError(SignShopConfig.getError("shop_removed", null), sSignLocation), Level.INFO);
-                continue;
-            }
-        }
-        return needToSave;
-
-    }
-
     private void Save() {
         Map<String,Object> tempSellers = new HashMap<String,Object>();
 
@@ -387,7 +258,7 @@ public class Storage implements Listener {
 
                 seller = sellers.get(lKey);
                 temp.put("shopworld", seller.getWorld());
-                temp.put("owner", seller.getOwner());
+                temp.put("owner", seller.getOwner().GetIdentifier().toString());
                 temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(false)));
 
                 List<Block> containables = seller.getContainables();
@@ -430,12 +301,12 @@ public class Storage implements Listener {
         }
     }
 
-    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
-        addSeller(sPlayer, sWorld, bSign, containables, activatables, isItems, misc, true);
+    public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
+        addSeller(playerId, sWorld, bSign, containables, activatables, isItems, misc, true);
     }
 
-    public void addSeller(String sPlayer, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
-        Storage.sellers.put(bSign.getLocation(), new Seller(sPlayer, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
+    public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
+        Storage.sellers.put(bSign.getLocation(), new Seller(playerId, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
         if(save)
             this.SafeSave();
     }
@@ -476,10 +347,10 @@ public class Storage implements Listener {
         }
     }
 
-    public Integer countLocations(String sellerName) {
+    public Integer countLocations(SignShopPlayer player) {
         Integer count = 0;
         for(Map.Entry<Location, Seller> entry : Storage.sellers.entrySet())
-            if(entry.getValue().getOwner().equals(sellerName)) {
+            if(entry.getValue().isOwner(player)) {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
                 if(itemUtil.clickedSign(bSign)) {
                     String[] sLines = ((Sign) bSign.getState()).getLines();

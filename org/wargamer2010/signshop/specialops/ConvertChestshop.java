@@ -28,7 +28,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
 
         Sign signblock = ((Sign)sign.getState());
         String[] sLines = signblock.getLines();
-        Integer iPrice = -1;
+        Integer iPrice;
         String sAmount = sLines[1];
         String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
         if(!ssPlayer.isOp())
@@ -44,7 +44,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
                 ssPlayer.sendMessage("ChestShop sign detected, punch an empty sign first!");
                 return false;
             }
-            if(sLines[2].indexOf(":") == -1)
+            if(sLines[2].indexOf(':') == -1)
                 return false;
             String bits[] = sLines[2].split(":");
             if(bits[0].contains("S"))

@@ -33,29 +33,8 @@ import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 
 public class itemUtil {
-    private static HashMap<Integer, String> discs;
-
     private itemUtil() {
 
-    }
-
-    public static void initDiscs() {
-        // This is pretty ugly but I really couldn't find another way in
-        // bukkit's source to get this via a native function
-        // Source: http://www.minecraftwiki.net/wiki/Data_values
-        discs = new HashMap<Integer, String>();
-        discs.put(2256, "13 Disc");
-        discs.put(2257, "Cat Disc");
-        discs.put(2258, "Blocks Disc");
-        discs.put(2259, "Chirp Disc");
-        discs.put(2260, "Far Disc");
-        discs.put(2261, "Mall Disc");
-        discs.put(2262, "Mellohi Disc");
-        discs.put(2263, "Stal Disc");
-        discs.put(2264, "Strad Disc");
-        discs.put(2265, "Ward Disc");
-        discs.put(2266, "11 Disc");
-        discs.put(2267, "Wait Disc");
     }
 
     public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
@@ -150,17 +129,6 @@ public class itemUtil {
         return roman;
     }
 
-    private static String lookupDisc(int id) {
-        if(discs.containsKey(id))
-            return discs.get(id);
-        else
-            return "";
-    }
-
-    public static boolean isDisc(int id) {
-        return (discs.containsKey(id) || id > 2267);
-    }
-
     public static String formatData(MaterialData data) {
         short s = 0;
         return formatData(data, s);
@@ -180,10 +148,7 @@ public class itemUtil {
         if(data instanceof SimpleAttachableMaterialData)
             return stringFormat(data.getItemType().name());
 
-        if(!(sData = lookupDisc(data.getItemTypeId())).isEmpty())
-            return sData;
-        else
-            sData = data.toString().toLowerCase();
+        sData = data.toString().toLowerCase();
 
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
         Matcher m = p.matcher(sData);
@@ -239,7 +204,6 @@ public class itemUtil {
         String sItems = "";
         Boolean first = true;
         Integer tempAmount;
-        IItemTags tags = BookFactory.getItemTags();
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
@@ -320,6 +284,8 @@ public class itemUtil {
     public static HashMap<ItemStack, Integer> StackToMap(ItemStack[] isStacks) {
         ItemStack[] isBackup = getBackupItemStack(isStacks);
         HashMap<ItemStack, Integer> mReturn = new HashMap<ItemStack, Integer>();
+        if(isBackup == null)
+            return mReturn;
         int tempAmount;
         for(int i = 0; i < isBackup.length; i++) {
             if(isBackup[i] == null) continue;

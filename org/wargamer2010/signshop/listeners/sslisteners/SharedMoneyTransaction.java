@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.event.EventHandler;
@@ -16,6 +15,7 @@ import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.Unknown;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
+import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -30,7 +30,7 @@ public class SharedMoneyTransaction implements Listener {
             return;
         if(event.getShop() == null || !event.getShop().getMisc().containsKey("sharesigns"))
             return;
-        
+
         if(event.isCheckOnly()) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
@@ -48,7 +48,7 @@ public class SharedMoneyTransaction implements Listener {
             }
         } else {
             boolean bTransaction = false;
-            
+
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     bTransaction = distributeMoney(event.getShop(), event.getAmount(), event.getPlayer());
@@ -62,19 +62,19 @@ public class SharedMoneyTransaction implements Listener {
                 case Unknown:
                     return;
             }
-            
+
             if(!bTransaction) {
                 event.getPlayer().sendMessage("The money transaction failed, please contact the System Administrator");
                 event.setCancelled(true);
             }
         }
-        
+
         event.setHandled(true);
     }
-    
+
     private static boolean distributeMoney(Seller seller, Float fPrice, SignShopPlayer ssPlayer) {
         List<Block> shareSigns = getSignsFromMisc(seller, "sharesigns");
-        SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
+        SignShopPlayer ssOwner = seller.getOwner();
         if(shareSigns.isEmpty()) {
             return ssOwner.mutateMoney(fPrice);
         } else {
@@ -89,8 +89,8 @@ public class SharedMoneyTransaction implements Listener {
             for(Map.Entry<String, Integer> share : shares.entrySet()) {
 
                 Float amount = (fPrice / 100 * share.getValue());
-                SignShopPlayer sharee = new SignShopPlayer(share.getKey());
-                if(sharee.getPlayer() == null && Bukkit.getServer().getOfflinePlayer(share.getKey()) == null)
+                SignShopPlayer sharee = PlayerIdentifier.getByName(share.getKey());
+                if(!sharee.playerExistsOnServer())
                     ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
                 else {
                     ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));
@@ -112,7 +112,7 @@ public class SharedMoneyTransaction implements Listener {
                 return true;
         }
     }
-    
+
     private static Map<String, Integer> getShares(Sign sign, SignShopPlayer ssPlayer) {
         List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
         HashMap<String, Integer> shares = new HashMap<String, Integer>();

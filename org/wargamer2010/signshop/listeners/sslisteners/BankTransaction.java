@@ -39,9 +39,9 @@ public class BankTransaction implements Listener {
             return;
 
         List<String> ownedBanks = new LinkedList<String>();
-        SignShopPlayer ssOwner = new SignShopPlayer(event.getShop().getOwner());
+        SignShopPlayer ssOwner = event.getShop().getOwner();
         for(String bank : banks) {
-            String owner = event.getShop().getOwner();
+            String owner = event.getShop().getOwner().getName();
             if(Vault.getEconomy().isBankOwner(bank, owner).transactionSuccess() || Vault.getEconomy().isBankMember(bank, owner).transactionSuccess()
                     || ssOwner.isOp(event.getPlayer().getWorld())) {
                 ownedBanks.add(bank);

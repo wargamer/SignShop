@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.specialops;
 
 import java.util.List;
-import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
@@ -15,7 +14,6 @@ import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
-import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
@@ -49,7 +47,7 @@ public class CopySign implements SignShopSpecialOp {
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
-        if((!seller.getOwner().equals(player.getName()) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
+        if((!seller.isOwner(ssPlayer) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
             ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
             return true;
         }

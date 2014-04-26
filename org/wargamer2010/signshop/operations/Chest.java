@@ -10,7 +10,6 @@ import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.Storage;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {

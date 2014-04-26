@@ -93,13 +93,14 @@ public class SignShopPlayerListener implements Listener {
             return;
 
         if(event.getEntity().getType() == EntityType.PLAYER) {
-            Player clickedPlayer = (Player)event.getEntity();
-            if(clicks.mClicksPerPlayername.containsKey(clickedPlayer.getName())) {
+            SignShopPlayer clickedPlayer = new SignShopPlayer((Player)event.getEntity());
+
+            if(clicks.mClicksPerPlayerId.containsKey(clickedPlayer.GetIdentifier())) {
                 ssPlayer.sendMessage("You have deselected a player with name: " + clickedPlayer.getName());
-                clicks.mClicksPerPlayername.remove(clickedPlayer.getName());
+                clicks.mClicksPerPlayerId.remove(clickedPlayer.GetIdentifier());
             } else {
                 ssPlayer.sendMessage("You hit a player with name: " + clickedPlayer.getName());
-                clicks.mClicksPerPlayername.put(clickedPlayer.getName(), player);
+                clicks.mClicksPerPlayerId.put(clickedPlayer.GetIdentifier(), player);
             }
             event.setCancelled(true);
         }
@@ -198,7 +199,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
 
-                Storage.get().addSeller(player.getName(), world.getName(), ssArgs.getSign().get(), ssArgs.getContainables().getRoot(), ssArgs.getActivatables().getRoot()
+                Storage.get().addSeller(ssPlayer.GetIdentifier(), world.getName(), ssArgs.getSign().get(), ssArgs.getContainables().getRoot(), ssArgs.getActivatables().getRoot()
                                             , ssArgs.getItems().get(), createdevent.getMiscSettings());
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
@@ -207,7 +208,7 @@ public class SignShopPlayerListener implements Listener {
             }
             signshopUtil.registerClickedMaterial(event);
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShopConfig.isOPMaterial(event.getItem().getType()))) {
-            SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
+            SignShopPlayer ssOwner = seller.getOwner();
             sLines = ((Sign) bClicked.getState()).getLines();
             sOperation = signshopUtil.getOperation(sLines[0]);
 
@@ -301,7 +302,7 @@ public class SignShopPlayerListener implements Listener {
                     chests.add(entry.getValue());
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
             String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
-            SignShop.logTransaction(player.getName(), seller.getOwner(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
+            SignShop.logTransaction(player.getName(), seller.getOwner().getName(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
             return;
         }
         if(event.getItem() != null && seller != null && SignShopConfig.isOPMaterial(event.getItem().getType())) {

@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.itemUtil;
 
 public class takeItemInHand implements SignShopOperation {

@@ -17,127 +17,84 @@
  package org.wargamer2010.signshop.blocks;
 
 
-import net.minecraft.server.NBTTagCompound;
-import net.minecraft.server.NBTTagList;
-import net.minecraft.server.NBTTagString;
+import java.util.Arrays;
 
-import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BookMeta;
 
 public class BookItem implements IBookItem {
 
-        private net.minecraft.server.ItemStack item = null;
-        private CraftItemStack stack = null;
+        private BookMeta meta = null;
+        private ItemStack _stack = null;
 
-        public BookItem(org.bukkit.inventory.ItemStack item) {
-            if(item instanceof CraftItemStack) {
-                    stack = (CraftItemStack)item;
-                    this.item = stack.getHandle();
-            }else if(item instanceof org.bukkit.inventory.ItemStack) {
-                    stack = new CraftItemStack(item);
-                    this.item = stack.getHandle();
+        public BookItem(org.bukkit.inventory.ItemStack pItem) {
+            if(pItem.getItemMeta() instanceof BookMeta) {
+                meta = (BookMeta)pItem.getItemMeta();
+                pItem.setItemMeta(meta);
             }
+            this._stack = pItem;
         }
 
         @Override
         public String[] getPages() {
-            NBTTagCompound tags = item.getTag();
-            if(tags == null) {
-                    return null;
-            }
-            NBTTagList pages = tags.getList("pages");
-            String[] pagestrings = new String[pages.size()];
-            for(int i = 0; i < pages.size(); i++) {
-                    pagestrings[i] = pages.get(i).toString();
-            }
-            return pagestrings;
+            if(meta == null)
+                return new String[1];
+            String[] arr = new String[meta.getPages().size()];
+            return meta.getPages().toArray(arr);
         }
 
         @Override
         public String getAuthor() {
-            NBTTagCompound tags = item.getTag();
-            if(tags == null) {
-                    return null;
-            }
-            String author = tags.getString("author");
-            return author;
+            if(meta == null)
+                return "";
+            return meta.getAuthor();
         }
 
         @Override
         public String getTitle() {
-            NBTTagCompound tags = item.getTag();
-            if(tags == null) {
-                    return null;
-            }
-            String title = tags.getString("title");
-            return title;
+            if(meta == null)
+                return "";
+            return meta.getTitle();
         }
 
         @Override
         public void setPages(String[] newpages) {
-            NBTTagCompound tags = item.tag;
-            if (tags == null) {
-                tags = item.tag = new NBTTagCompound();
-            }
-            NBTTagList pages = new NBTTagList("pages");
-            //we don't want to throw any errors if the book is blank!
-            if(newpages.length == 0) {
-                    pages.add(new NBTTagString("1", ""));
-            }else {
-                    for(int i = 0; i < newpages.length; i++) {
-                            pages.add(new NBTTagString("" + i + "", newpages[i]));
-                    }
-            }
-            tags.set("pages", pages);
+            if(meta == null)
+                return;
+            meta.setPages(Arrays.asList(newpages));
+            updateMeta();
         }
 
         @Override
         public void addPages(String[] newpages) {
-            NBTTagCompound tags = item.tag;
-            if (tags == null) {
-                tags = item.tag = new NBTTagCompound();
-            }
-            NBTTagList pages;
-            if(getPages() == null) {
-                    pages = new NBTTagList("pages");
-            }else {
-                    pages = tags.getList("pages");
-            }
-            //we don't want to throw any errors if the book is blank!
-            if(newpages.length == 0 && pages.size() == 0) {
-                    pages.add(new NBTTagString("1", ""));
-            }else {
-                    for(int i = 0; i < newpages.length; i++) {
-                            pages.add(new NBTTagString("" + pages.size() + "", newpages[i]));
-                    }
-            }
-            tags.set("pages", pages);
+            if(meta == null)
+                return;
+            meta.addPage(newpages);
+            updateMeta();
         }
 
         @Override
         public void setAuthor(String author) {
-            NBTTagCompound tags = item.tag;
-            if (tags == null) {
-                tags = item.tag = new NBTTagCompound();
-            }
-            if(author != null && !author.isEmpty()) {
-                    tags.setString("author", author);
-            }
+            if(meta == null)
+                return;
+            meta.setAuthor(author);
+            updateMeta();
         }
 
         @Override
         public void setTitle(String title) {
-            NBTTagCompound tags = item.tag;
-            if (tags == null) {
-                tags = item.tag = new NBTTagCompound();
-            }
-            if(title != null && !title.isEmpty()) {
-                    tags.setString("title", title);
-            }
+            if(meta == null)
+                return;
+            meta.setTitle(title);
+            updateMeta();
         }
 
         @Override
         public ItemStack getStack() {
-            return stack;
+            return _stack;
+        }
+
+        private void updateMeta() {
+            _stack.setItemMeta(meta);
         }
 }

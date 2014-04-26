@@ -107,7 +107,11 @@ public class WebUtil {
             }
 
             Document doc = Jsoup.connect(namesURL).get();
-            for(Element tablerow : doc.getElementById("items").getElementsByTag("tr")) {
+            Element rows = doc.getElementById("rows");
+            if(rows == null)
+                return;
+
+            for(Element tablerow : rows.getElementsByTag("tr")) {
                 String id = tablerow.getElementsByClass("id").first().text();
                 String name = tablerow.getElementsByClass("name").first().text();
                 namesFromTheWeb.put(id, name);

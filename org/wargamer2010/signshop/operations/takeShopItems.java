@@ -3,11 +3,8 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.ChatColor;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.block.Block;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.itemUtil;
-import java.util.List;
-import java.util.LinkedList;
 
 public class takeShopItems implements SignShopOperation {
     @Override

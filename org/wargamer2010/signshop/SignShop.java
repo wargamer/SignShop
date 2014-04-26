@@ -9,7 +9,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import java.io.IOException;
 import java.io.File;
 import java.util.logging.*;
@@ -17,10 +16,7 @@ import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import org.wargamer2010.signshop.listeners.*;
-import org.wargamer2010.signshop.util.itemUtil;
 import org.bukkit.event.Event;
-import org.wargamer2010.signshop.blocks.BookFactory;
-import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.commands.CommandDispatcher;
@@ -90,18 +86,6 @@ public class SignShop extends JavaPlugin{
         }
     }
 
-    private void fixStackSize() {
-        IItemTags tags = BookFactory.getItemTags();
-        if(SignShopConfig.getEnableSignStacking()) {
-            if(Material.getMaterial("SIGN") != null)
-                tags.setItemMaxSize(Material.getMaterial("SIGN"), 64);
-            if(Material.getMaterial("SIGN_POST") != null)
-                tags.setItemMaxSize(Material.getMaterial("SIGN_POST"), 64);
-            if(Material.getMaterial("WALL_SIGN") != null)
-                tags.setItemMaxSize(Material.getMaterial("WALL_SIGN"), 64);
-        }
-    }
-
     private void disableSignShop() {
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.disablePlugin(this);
@@ -120,7 +104,6 @@ public class SignShop extends JavaPlugin{
             if(!this.getDataFolder().mkdir())
                 log("Could not create plugins/SignShop folder.", Level.SEVERE);
         }
-        itemUtil.initDiscs();
 
         instance = this;
         metricsSetup = new setupMetrics(this);
@@ -136,7 +119,6 @@ public class SignShop extends JavaPlugin{
         PlayerMetadata.init();
         SignShopItemMeta.init();
         CommandDispatcher.init();
-        fixStackSize();
         WebUtil.init();
         ColorUtil.init();
 

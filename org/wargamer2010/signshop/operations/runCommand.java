@@ -2,7 +2,6 @@ package org.wargamer2010.signshop.operations;
 
 import java.util.List;
 import org.bukkit.Bukkit;
-import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;

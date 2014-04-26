@@ -1,11 +1,8 @@
 package org.wargamer2010.signshop.events;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.block.Block;
-import org.bukkit.event.Cancellable;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
@@ -105,8 +102,8 @@ public class SSPreTransactionEvent extends SSEvent {
     public Action getAction() {
         return aAction;
     }
-    
+
     public boolean getRequirementsOK() {
         return bRequirementsOK;
-    }   
+    }
 }

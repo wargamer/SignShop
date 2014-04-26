@@ -98,7 +98,7 @@ public class DynmapManager implements Listener {
     }
 
     private void ManageMarkerForSeller(Seller seller, boolean remove) {
-        ManageMarkerForSeller(seller.getSignLocation(), seller.getOwner(), seller.getWorld(), remove);
+        ManageMarkerForSeller(seller.getSignLocation(), seller.getOwner().getName(), seller.getWorld(), remove);
     }
 
     private void ManageMarkerForSeller(Location loc, String owner, String world, boolean remove) {

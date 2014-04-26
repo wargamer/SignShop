@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.essentials.SetExpFix;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -28,7 +27,7 @@ public class takePlayerXP implements SignShopOperation {
             return false;
         }
         ssArgs.setMessagePart("!xp", XP.toString());
-        Integer refXP = 0;
+        Integer refXP;
         if(ssArgs.isOperationParameter("raw"))
             refXP = SetExpFix.getTotalExperience(ssArgs.getPlayer().get().getPlayer());
         else
@@ -44,7 +43,7 @@ public class takePlayerXP implements SignShopOperation {
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
         Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
-        Integer setAmount = 0;
+        Integer setAmount;
 
         if(ssArgs.isOperationParameter("raw")) {
             setAmount = (SetExpFix.getTotalExperience(ssArgs.getPlayer().get().getPlayer()) - XP.intValue());

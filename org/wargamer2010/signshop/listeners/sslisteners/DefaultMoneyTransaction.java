@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
@@ -23,7 +22,7 @@ public class DefaultMoneyTransaction implements Listener {
             return;
         }
 
-        SignShopPlayer ssOwner = new SignShopPlayer(event.getShop().getOwner());
+        SignShopPlayer ssOwner = event.getShop().getOwner();
         if(event.isCheckOnly()) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:

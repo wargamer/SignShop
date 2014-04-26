@@ -3,25 +3,17 @@ package org.wargamer2010.signshop.specialops;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import java.util.List;
 import java.util.LinkedList;
-import java.util.Map;
-import org.bukkit.ChatColor;
-import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.blocks.BookFactory;
-import org.wargamer2010.signshop.blocks.IItemTags;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
-import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
-import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
@@ -41,11 +33,11 @@ public class ChangeShopItems implements SignShopSpecialOp {
             return false;
         if(ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())
             return false;
-        SignShopPlayer ssOwner = new SignShopPlayer(seller.getOwner());
+        SignShopPlayer ssOwner = seller.getOwner();
         List<String> operation = SignShopConfig.getBlocks(sOperation);
         String[] sLines = ((Sign) bClicked.getState()).getLines();
 
-        if (!seller.getOwner().equals(player.getName()) && !ssPlayer.isOp()) {
+        if (!seller.isOwner(ssPlayer) && !ssPlayer.isOp()) {
             ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
             return true;
         }

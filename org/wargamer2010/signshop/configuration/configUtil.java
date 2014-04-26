@@ -11,7 +11,6 @@ import java.util.Arrays;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.MemorySection;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.List;
 import java.util.LinkedList;

@@ -24,9 +24,10 @@ import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SimpleShopProtector implements Listener {
     private Boolean canDestroy(Player player, Block bBlock) {
+        SignShopPlayer ssPlayer = new SignShopPlayer(player);
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            if(seller == null || seller.getOwner().equals(player.getName()) || SignShopPlayer.isOp(player) || !SignShopConfig.getEnableShopOwnerProtection())
+            if(seller == null || seller.isOwner(ssPlayer) || SignShopPlayer.isOp(player) || !SignShopConfig.getEnableShopOwnerProtection())
                 return true;
             else
                 return false;
@@ -73,7 +74,7 @@ public class SimpleShopProtector implements Listener {
                 && (player.getItemInHand() == null || player.getItemInHand().getType() != SignShopConfig.getDestroyMaterial())) {
             event.setCancelled(true);
 
-            if(event.getPlayer().getName().equals(event.getShop().getOwner()) || event.getPlayer().isOp()) {
+            if(event.getShop().isOwner(player) || event.getPlayer().isOp()) {
                 Map<String, String> temp = new LinkedHashMap<String, String>();
                 temp.put("!destroymaterial", signshopUtil.capFirstLetter(SignShopConfig.getDestroyMaterial().name().toLowerCase()));
 

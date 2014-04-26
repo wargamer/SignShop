@@ -15,6 +15,8 @@ import java.util.logging.Level;
 import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
+import org.wargamer2010.signshop.player.PlayerIdentifier;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Seller {
@@ -25,12 +27,12 @@ public class Seller {
     private Map<String, String> miscProps = new HashMap<String, String>();
     private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();
 
-    private String owner;
+    private SignShopPlayer owner;
     private String world;
 
-    public Seller(String sPlayer, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
+    public Seller(PlayerIdentifier playerId, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
             Map<String, String> pMiscProps, Boolean save) {
-        owner = sPlayer;
+        owner = new SignShopPlayer(playerId);
         world = sWorld;
 
         isItems = itemUtil.getBackupItemStack(isChestItems);
@@ -74,12 +76,16 @@ public class Seller {
         activatables = blocklist;
     }
 
-    public String getOwner() {
+    public SignShopPlayer getOwner() {
         return owner;
     }
 
-    public void setOwner(String newowner) {
+    public void setOwner(SignShopPlayer newowner) {
         owner = newowner;
+    }
+
+    public boolean isOwner(SignShopPlayer player) {
+        return player.compareTo(owner);
     }
 
     public String getWorld() {

@@ -2,7 +2,6 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.enchantments.Enchantment;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.Map;
 
 public class disenchantItemInHand implements SignShopOperation {

@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.block.Block;
-import org.bukkit.event.Cancellable;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -77,10 +75,12 @@ public class SSCreatedEvent extends SSEvent {
         return sOperation;
     }
 
+    @Override
     public Map<String, String> getMessageParts() {
         return messageParts;
     }
 
+    @Override
     public void setMessagePart(String part, String value) {
         messageParts.put(part, value);
     }

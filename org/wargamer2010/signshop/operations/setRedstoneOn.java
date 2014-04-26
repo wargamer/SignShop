@@ -49,7 +49,7 @@ public class setRedstoneOn implements SignShopOperation {
         if(!setupOperation(ssArgs))
             return false;
 
-        Block bLever = null;
+        Block bLever;
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);

@@ -4,6 +4,7 @@ import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -15,29 +16,29 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopPlayer {
-    private Player ssPlayer = null;
-    private String sPlayername = "";
+    private Player playerObject = null;
+    private String playername = "";
+    private PlayerIdentifier playerId = null;
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
 
     public SignShopPlayer() {
 
     }
 
-    public SignShopPlayer(String sName) {
-        Player[] players = Bukkit.getServer().getOnlinePlayers();
-
-        for(Player pPlayer : players) {
-            if(pPlayer.getName().equals(sName)){
-                ssPlayer = pPlayer;
-            }
-        }
-        sPlayername = sName;
+    public SignShopPlayer(PlayerIdentifier id) {
+        if(id == null)
+            return;
+        playerObject = id.getPlayer();
+        playername = id.getName();
+        playerId = id;
     }
 
     public SignShopPlayer(Player pPlayer) {
-        ssPlayer = pPlayer;
-        if(ssPlayer != null)
-            sPlayername = ssPlayer.getName();
+        playerObject = pPlayer;
+        if(playerObject != null) {
+            playerId = new PlayerIdentifier(pPlayer);
+            playername = playerObject.getName();
+        }
     }
 
     public static void broadcastMsg(World world, String sMessage) {
@@ -48,7 +49,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
+        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null)
             return;
         if(SignShopConfig.getMessageCooldown() <= 0) {
             sendNonDelayedMessage(sMessage);
@@ -60,31 +61,42 @@ public class SignShopPlayer {
     }
 
     public void sendNonDelayedMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().isEmpty() || ssPlayer == null)
+        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null)
             return;
         String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
-        ssPlayer.sendMessage(message);
+        playerObject.sendMessage(message);
     }
 
     public String getName() {
-        return sPlayername;
+        return playername;
     }
 
     public Player getPlayer() {
-        return ssPlayer;
+        return playerObject;
     }
 
     public World getWorld() {
-        return (ssPlayer == null) ? null : ssPlayer.getWorld();
+        return (playerObject == null) ? null : playerObject.getWorld();
+    }
+
+    public boolean compareTo(SignShopPlayer other) {
+        if(other == null)
+            return false;
+        if(GetIdentifier() == null)
+            return other.GetIdentifier() == null;
+        return other.GetIdentifier().equals(GetIdentifier());
     }
 
     public void setOp(Boolean OP) {
-        if(sPlayername.isEmpty())
+        if(playername.isEmpty())
             return;
-        if(ssPlayer == null)
-            Bukkit.getOfflinePlayer(sPlayername).setOp(OP);
-        else
-            ssPlayer.setOp(OP);
+        if(playerObject == null) {
+            OfflinePlayer player = playerId.getOfflinePlayer();
+            if(player != null)
+                player.setOp(OP);
+        } else {
+            playerObject.setOp(OP);
+        }
     }
 
     public static boolean isOp(Player player) {
@@ -95,9 +107,9 @@ public class SignShopPlayer {
     }
 
     public boolean isOp() {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return false;
-        return isOp(ssPlayer.getWorld());
+        return isOp(playerObject.getWorld());
     }
 
 
@@ -109,18 +121,20 @@ public class SignShopPlayer {
         if(isOpRaw())
             return true;
         String fullperm = (perm.isEmpty() ? "SignShop.SuperAdmin" : "SignShop.SuperAdmin." + perm);
-        if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, sPlayername, fullperm.toLowerCase()))
+        if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, fullperm.toLowerCase()))
             return true;
         return false;
     }
 
     private boolean isOpRaw() {
-        if(sPlayername.isEmpty())
+        if(playername.isEmpty())
             return false;
-        if(ssPlayer == null)
-            return Bukkit.getOfflinePlayer(sPlayername).isOp();
+        if(playerObject == null) {
+            OfflinePlayer offplayer = playerId.getOfflinePlayer();
+            return offplayer != null && offplayer.isOp();
+        }
         else
-            return ssPlayer.isOp();
+            return playerObject.isOp();
     }
 
     public boolean hasBypassShopPlots(String pluginName) {
@@ -132,13 +146,13 @@ public class SignShopPlayer {
     }
 
     public Boolean hasPerm(String perm, Boolean OPOperation) {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return false;
-        return hasPerm(perm, ssPlayer.getWorld(), OPOperation);
+        return hasPerm(perm, playerObject.getWorld(), OPOperation);
     }
 
     public boolean hasPerm(String perm, World world, Boolean OPOperation) {
-        if(sPlayername.isEmpty())
+        if(playername.isEmpty())
             return true;
         Boolean isOP = isOpRaw();
         Boolean OPOverride = SignShopConfig.getOPOverride();
@@ -150,7 +164,7 @@ public class SignShopPlayer {
         if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
         // Using Permissions so check his permissions and restore his OP if he has it
-        else if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, sPlayername, perm.toLowerCase())) {
+        else if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, perm.toLowerCase())) {
             setOp(isOP);
             return true;
         // Not using Permissions but he is OP, so he's allowed
@@ -174,44 +188,54 @@ public class SignShopPlayer {
             return true;
         if(Vault.getEconomy() == null)
             return false;
-        if(sPlayername.isEmpty())
+        if(playername.isEmpty())
             return true;
         else
-            return Vault.getEconomy().has(sPlayername, amount);
+            return Vault.getEconomy().has(playername, amount);
     }
 
     public boolean canHaveMoney(float amount) {
-        if(isNothing(amount))
+        // Negative amounts make no sense in this context, so fix it if needed
+        float actual = amount < 0 ? (amount * -1) : amount;
+
+        if(isNothing(actual))
             return true;
         if(Vault.getEconomy() == null)
             return false;
-        if(sPlayername.isEmpty())
+        if(playername.isEmpty())
             return true;
         EconomyResponse response;
+        double currentBalance = Vault.getEconomy().getBalance(playername);
+
         try {
-            response = Vault.getEconomy().depositPlayer(sPlayername, amount);
+            response = Vault.getEconomy().depositPlayer(playername, actual);
         } catch(java.lang.RuntimeException ex) {
             response = new EconomyResponse(0, 0, EconomyResponse.ResponseType.FAILURE, "");
         }
 
-        if(response.type == EconomyResponse.ResponseType.SUCCESS)
-            Vault.getEconomy().withdrawPlayer(sPlayername, Math.abs(amount));
-        else
+        double newBalance = Vault.getEconomy().getBalance(playername);
+        double subtract = (newBalance - currentBalance);
+
+        if(response.type == EconomyResponse.ResponseType.SUCCESS) {
+            response = Vault.getEconomy().withdrawPlayer(playername, subtract);
+            return response.type == EconomyResponse.ResponseType.SUCCESS;
+        }
+        else {
             return false;
-        return true;
+        }
     }
 
     public boolean mutateMoney(float amount) {
         if(Vault.getEconomy() == null)
             return false;
-        if(sPlayername.isEmpty() || isNothing(amount))
+        if(playername.isEmpty() || isNothing(amount))
             return true;
         EconomyResponse response;
         try {
             if(amount > 0.0)
-                response = Vault.getEconomy().depositPlayer(sPlayername, amount);
+                response = Vault.getEconomy().depositPlayer(playername, amount);
             else if(amount < 0.0)
-                response = Vault.getEconomy().withdrawPlayer(sPlayername, Math.abs(amount));
+                response = Vault.getEconomy().withdrawPlayer(playername, Math.abs(amount));
             else
                 return true;
         } catch(java.lang.RuntimeException ex) {
@@ -225,25 +249,25 @@ public class SignShopPlayer {
     }
 
     public void givePlayerItems(ItemStack[] isItemsToTake) {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        ssPlayer.getInventory().addItem(isBackup);
+        playerObject.getInventory().addItem(isBackup);
     }
 
     public void takePlayerItems(ItemStack[] isItemsToTake) {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        ssPlayer.getInventory().removeItem(isBackup);
+        playerObject.getInventory().removeItem(isBackup);
     }
 
     private String[] getPlayerGroups() {
         String[] sGroups = null;
-        if(ssPlayer == null)
+        if(playerObject == null)
             return sGroups;
         try {
-            sGroups = Vault.getPermission().getPlayerGroups(ssPlayer);
+            sGroups = Vault.getPermission().getPlayerGroups(playerObject);
         } catch(UnsupportedOperationException UnsupportedEX) {
             return sGroups;
         }
@@ -256,7 +280,7 @@ public class SignShopPlayer {
         boolean bBuyorSell = true;
         boolean first = true;
 
-        if(Vault.getPermission() == null || ssPlayer == null)
+        if(Vault.getPermission() == null || playerObject == null)
             return fPricemod;
         String[] sGroups = getPlayerGroups();
         if(sGroups == null) return fPricemod;
@@ -284,13 +308,13 @@ public class SignShopPlayer {
     }
 
     public int reachedMaxShops() {
-        if(Vault.getPermission() == null || sPlayername.isEmpty())
+        if(Vault.getPermission() == null || playername.isEmpty())
             return 0;
         if(hasPerm("SignShop.ignoremax", true))
             return 0;
 
         String[] sGroups = getPlayerGroups();
-        int iShopAmount = Storage.get().countLocations(sPlayername);
+        int iShopAmount = Storage.get().countLocations(this);
 
         if(SignShopConfig.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShopConfig.getMaxShopsPerPerson()) return SignShopConfig.getMaxShopsPerPerson();
         if(sGroups == null) return 0;
@@ -313,15 +337,23 @@ public class SignShopPlayer {
     }
 
     public ItemStack[] getInventoryContents() {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return new ItemStack[0];
-        return ssPlayer.getInventory().getContents();
+        return playerObject.getInventory().getContents();
     }
 
     public void setInventoryContents(ItemStack[] newContents) {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return;
-        ssPlayer.getInventory().setContents(newContents);
+        playerObject.getInventory().setContents(newContents);
+    }
+
+    public boolean playerExistsOnServer() {
+        return (playerId != null);
+    }
+
+    public PlayerIdentifier GetIdentifier() {
+        return playerId;
     }
 
     public boolean setMeta(String key, String value) {
@@ -345,15 +377,15 @@ public class SignShopPlayer {
     }
 
     public ItemStack getItemInHand() {
-        if(ssPlayer == null)
+        if(playerObject == null)
             return null;
-        ItemStack stack = ssPlayer.getItemInHand();
+        ItemStack stack = playerObject.getItemInHand();
         if(stack.getType() == Material.getMaterial("AIR"))
             return null;
         return stack;
     }
 
     public boolean isOwner(Seller seller) {
-        return (seller.getOwner().equals(sPlayername));
+        return seller.getOwner().compareTo(this);
     }
 }

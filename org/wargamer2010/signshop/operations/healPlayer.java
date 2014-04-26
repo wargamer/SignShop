@@ -1,7 +1,5 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.configuration.SignShopConfig;
-
 public class healPlayer implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
@@ -21,7 +19,7 @@ public class healPlayer implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.getPlayer().get().getPlayer().setHealth(20);
+        ssArgs.getPlayer().get().getPlayer().setHealth(20.0);
         return true;
     }
 }

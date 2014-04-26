@@ -5,7 +5,6 @@ import org.bukkit.entity.Player;
 import com.griefcraft.lwc.LWCPlugin;
 import com.griefcraft.lwc.LWC;
 import com.griefcraft.model.Protection;
-import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class LWCHook implements Hook {
 

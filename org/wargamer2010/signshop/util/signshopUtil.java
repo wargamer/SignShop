@@ -10,7 +10,6 @@ import java.util.Map;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -109,6 +108,7 @@ public class signshopUtil {
         return SignShopConfig.getSpecialOps();
     }
 
+    @SuppressWarnings("deprecation") // Accepted for transition reasons
     public static Map<Enchantment, Integer> convertStringToEnchantments(String sEnchantments) {
         Map<Enchantment, Integer> mEnchantments = new HashMap<Enchantment, Integer>();
         String saEnchantments[] = sEnchantments.split(";");
@@ -120,15 +120,19 @@ public class signshopUtil {
             if(sEnchantment.length < 2)
                 continue;
             else {
+                Enchantment eTemp;
                 try {
                     iEnchantment = Integer.parseInt(sEnchantment[0]);
-                    iEnchantmentLevel = Integer.parseInt(sEnchantment[1]);
+                    eTemp = Enchantment.getById(iEnchantment);
                 } catch(NumberFormatException ex) {
-                    continue;
+                    eTemp = Enchantment.getByName(sEnchantment[0]);
                 }
-                Enchantment eTemp = Enchantment.getById(iEnchantment);
-                if(eTemp != null)
+                if(eTemp == null)
+                    continue;
+                try {
+                    iEnchantmentLevel = Integer.parseInt(sEnchantment[1]);
                     mEnchantments.put(eTemp, iEnchantmentLevel);
+                } catch(NumberFormatException ex) { }
             }
         }
         return mEnchantments;
@@ -140,7 +144,7 @@ public class signshopUtil {
         for(Map.Entry<Enchantment, Integer> entry : aEnchantments.entrySet()) {
             if(first) first = false;
             else sEnchantments += ";";
-            sEnchantments += (entry.getKey().getId() + "|" + entry.getValue());
+            sEnchantments += (entry.getKey().getName() + "|" + entry.getValue());
         }
         return sEnchantments;
     }
@@ -316,7 +320,7 @@ public class signshopUtil {
                 return false;
             }
         }
-        if(playerGroups.size() > 0 && seller.getOwner().equals(player.getPlayer().getName())) {
+        if(playerGroups.size() > 0 && seller.isOwner(player)) {
             player.sendMessage(SignShopConfig.getError("restricted_but_owner", null));
             return false;
         } else
