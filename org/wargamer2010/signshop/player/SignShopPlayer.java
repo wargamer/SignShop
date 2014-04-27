@@ -41,6 +41,23 @@ public class SignShopPlayer {
         }
     }
 
+    /**
+     * Constructs a SignshopPlayer by player name
+     * This is a legacy constructor and is purely here for backwards compatibility
+     * 
+     * @param name Player name
+     * @deprecated Lookup by name has been deprecated so use the PlayerIdentifier alternative in stead
+     */
+    @Deprecated
+    public SignShopPlayer(String name) {
+        SignShopPlayer player = PlayerIdentifier.getByName(name);
+        if(player != null) {
+            playerObject = player.getPlayer();
+            playerId = player.GetIdentifier();
+            playername = player.getName();
+        }
+    }
+
     public static void broadcastMsg(World world, String sMessage) {
         Player[] players = Bukkit.getServer().getOnlinePlayers();
         for(Player player : players)
