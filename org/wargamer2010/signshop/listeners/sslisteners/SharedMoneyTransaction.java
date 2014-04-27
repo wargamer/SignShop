@@ -90,7 +90,7 @@ public class SharedMoneyTransaction implements Listener {
 
                 Float amount = (fPrice / 100 * share.getValue());
                 SignShopPlayer sharee = PlayerIdentifier.getByName(share.getKey());
-                if(!sharee.playerExistsOnServer())
+                if(sharee == null || !sharee.playerExistsOnServer())
                     ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
                 else {
                     ssOwner.sendMessage("Giving " + share.getKey() + " a share of " + economyUtil.formatMoney(amount));

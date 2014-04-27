@@ -142,6 +142,8 @@ public class Storage implements Listener {
             if(tempList.isEmpty())
                 throw storageex;
             seller_owner = PlayerIdentifier.getPlayerFromString(tempList.get(0));
+            if(seller_owner == null)
+                throw storageex;
             tempList = getSetting(sellerSettings, "sign");
             if(tempList.isEmpty())
                 throw storageex;
