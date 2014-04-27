@@ -195,12 +195,12 @@ public class SignShopPlayer {
         return false;
     }
 
-    private boolean isNothing(float amount) {
-        Float floater = new Float(amount);
-        return (floater == 0.0f || floater.isInfinite() || floater.isNaN());
+    private boolean isNothing(double amount) {
+        Double doubler = new Double(amount);
+        return (doubler == 0.0f || doubler.isInfinite() || doubler.isNaN());
     }
 
-    public boolean hasMoney(float amount) {
+    public boolean hasMoney(double amount) {
         if(isNothing(amount))
             return true;
         if(Vault.getEconomy() == null)
@@ -211,9 +211,9 @@ public class SignShopPlayer {
             return Vault.getEconomy().has(playername, amount);
     }
 
-    public boolean canHaveMoney(float amount) {
+    public boolean canHaveMoney(double amount) {
         // Negative amounts make no sense in this context, so fix it if needed
-        float actual = amount < 0 ? (amount * -1) : amount;
+        double actual = amount < 0 ? (amount * -1) : amount;
 
         if(isNothing(actual))
             return true;
@@ -242,7 +242,7 @@ public class SignShopPlayer {
         }
     }
 
-    public boolean mutateMoney(float amount) {
+    public boolean mutateMoney(double amount) {
         if(Vault.getEconomy() == null)
             return false;
         if(playername.isEmpty() || isNothing(amount))
@@ -291,9 +291,9 @@ public class SignShopPlayer {
         return sGroups;
     }
 
-    public Float getPlayerPricemod(String sOperation) {
-        Float fPricemod = 1.0f;
-        Float fTemp;
+    public Double getPlayerPricemod(String sOperation) {
+        Double fPricemod = 1.0d;
+        Double fTemp;
         boolean bBuyorSell = true;
         boolean first = true;
 

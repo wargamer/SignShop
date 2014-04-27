@@ -3,10 +3,10 @@ package org.wargamer2010.signshop.operations;
 import org.wargamer2010.essentials.SetExpFix;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class givePlayerXP implements SignShopOperation {    
+public class givePlayerXP implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(XP == 0.0) {
             ssArgs.getPlayer().get().sendMessage("Please put the amount of XP you'd like to Sell on the third line!");
             return false;
@@ -14,12 +14,12 @@ public class givePlayerXP implements SignShopOperation {
         ssArgs.setMessagePart("!xp", XP.toString());
         return true;
     }
-    
+
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {        
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(XP == 0.0) {
             ssArgs.getPlayer().get().sendMessage("Invalid amount of XP on the third line!");
             return false;
@@ -27,12 +27,12 @@ public class givePlayerXP implements SignShopOperation {
         ssArgs.setMessagePart("!xp", XP.toString());
         return true;
     }
-    
+
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(ssArgs.isOperationParameter("raw")) {
-            ssArgs.getPlayer().get().getPlayer().giveExp(XP.intValue());                        
+            ssArgs.getPlayer().get().getPlayer().giveExp(XP.intValue());
             ssArgs.setMessagePart("!hasxp", ((Integer)SetExpFix.getTotalExperience(ssArgs.getPlayer().get().getPlayer())).toString());
         } else {
             Integer setLevel = (ssArgs.getPlayer().get().getPlayer().getLevel() + XP.intValue());

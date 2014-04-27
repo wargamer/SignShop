@@ -355,31 +355,31 @@ public class itemUtil {
         return tempFiltered.toArray(filtered);
     }
 
-    public static HashMap<ItemStack[], Float> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake) {
+    public static HashMap<ItemStack[], Double> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake) {
         ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
-        HashMap<ItemStack[], Float> returnMap = new HashMap<ItemStack[], Float>();
-        returnMap.put(isItemsToTake, 1.0f);
+        HashMap<ItemStack[], Double> returnMap = new HashMap<ItemStack[], Double>();
+        returnMap.put(isItemsToTake, 1.0d);
         Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
         IItemTags tags = BookFactory.getItemTags();
         if(fromOK) {
-            returnMap.put(isItemsToTake, 1.0f);
+            returnMap.put(isItemsToTake, 1.0d);
             return returnMap;
         } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {
-            returnMap.put(isItemsToTake, 0.0f);
+            returnMap.put(isItemsToTake, 0.0d);
             return returnMap;
         }
-        returnMap.put(isItemsToTake, 0.0f);
-        float iCount = 0;
-        float tempCount;
+        returnMap.put(isItemsToTake, 0.0d);
+        double iCount = 0;
+        double tempCount;
         int i = 0;
         HashMap<ItemStack, Integer> mItemsToTake = StackToMap(isBackup);
         HashMap<ItemStack, Integer> mInventory = StackToMap(iiFrom.getContents());
         ItemStack[] isActual = new ItemStack[mItemsToTake.size()];
         for(Map.Entry<ItemStack, Integer> entry : mItemsToTake.entrySet()) {
             if(iCount == 0 && mInventory.containsKey(entry.getKey()))
-                iCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());
+                iCount = ((double)mInventory.get(entry.getKey()) / (double)entry.getValue());
             else if(iCount != 0 && mInventory.containsKey(entry.getKey())) {
-                tempCount = ((float)mInventory.get(entry.getKey()) / (float)entry.getValue());
+                tempCount = ((double)mInventory.get(entry.getKey()) / (double)entry.getValue());
                 if(tempCount != iCount)
                     return returnMap;
             } else

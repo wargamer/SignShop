@@ -12,7 +12,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSPostTransactionEvent extends SSPreTransactionEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    public SSPostTransactionEvent(Float pPrice,
+    public SSPostTransactionEvent(double pPrice,
                                 ItemStack[] pItems,
                                 List<Block> pContainables,
                                 List<Block> pActivatables,

@@ -39,7 +39,7 @@ public class SignShopConfig {
     private static Map<String,Map<String,HashMap<String,String>>> Messages;
     private static Map<String,Map<String,String>> Errors;
     private static List<Material> BlacklistedItems;
-    private static Map<String,HashMap<String,Float>> PriceMultipliers;
+    private static Map<String,HashMap<String,Double>> PriceMultipliers;
     private static Map<String,List<String>> Commands;
     private static Map<String,List<String>> DelayedCommands;
     private static Map<String,Integer> ShopLimits;
@@ -129,7 +129,7 @@ public class SignShopConfig {
         }
         if(preferedLanguage.isEmpty())
             preferedLanguage = baseLanguage;
-        PriceMultipliers = configUtil.fetchFloatHasmapInHashmap("pricemultipliers", config);
+        PriceMultipliers = configUtil.fetchDoubleHasmapInHashmap("pricemultipliers", config);
         Commands = configUtil.fetchListInHashmap("commands", config);
         DelayedCommands = configUtil.fetchListInHashmap("timedCommands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
@@ -622,7 +622,7 @@ public class SignShopConfig {
         return Collections.unmodifiableMap(OperationInstances);
     }
 
-    public static Map<String, HashMap<String, Float>> getPriceMultipliers() {
+    public static Map<String, HashMap<String, Double>> getPriceMultipliers() {
         return Collections.unmodifiableMap(PriceMultipliers);
     }
 

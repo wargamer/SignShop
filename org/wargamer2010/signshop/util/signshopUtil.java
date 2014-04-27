@@ -168,15 +168,15 @@ public class signshopUtil {
         }
     }
 
-    public static Float getNumberFromThirdLine(Block bSign) {
+    public static double getNumberFromThirdLine(Block bSign) {
         return getNumberFromLine(bSign, 2);
     }
 
-    public static Float getNumberFromLine(Block bSign, int line) {
+    public static Double getNumberFromLine(Block bSign, int line) {
         Sign sign = (Sign)bSign.getState();
         String XPline = sign.getLines()[line];
         if(XPline == null)
-            return 0.0f;
+            return 0.0d;
         return economyUtil.parsePrice(XPline);
     }
 
@@ -459,17 +459,17 @@ public class signshopUtil {
         return false;
     }
 
-    public static Float ApplyPriceMod(SignShopArguments ssArgs) {
+    public static double ApplyPriceMod(SignShopArguments ssArgs) {
         if(ssArgs.tryToApplyPriceMod()) {
-            Float fPrice = ApplyPriceMod(ssArgs.getPlayer().get(), ssArgs.getPrice().get(), ssArgs.getOperation().get());
+            double fPrice = ApplyPriceMod(ssArgs.getPlayer().get(), ssArgs.getPrice().get(), ssArgs.getOperation().get());
             ssArgs.getPrice().set(fPrice);
             ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         }
         return ssArgs.getPrice().get();
     }
 
-    public static Float ApplyPriceMod(SignShopPlayer player, Float fPrice, String sOperation) {
-        Float fPricemod = player.getPlayerPricemod(sOperation);
+    public static double ApplyPriceMod(SignShopPlayer player, double fPrice, String sOperation) {
+        double fPricemod = player.getPlayerPricemod(sOperation);
         return (fPrice * fPricemod);
     }
 
@@ -562,18 +562,18 @@ public class signshopUtil {
         return (doublesAsInts(locA.getX(), locB.getX()) && doublesAsInts(locA.getY(), locB.getY()) && doublesAsInts(locA.getZ(), locB.getZ()));
     }
 
-    public static float calculateDurabilityModifier(ItemStack[] stacks) {
+    public static double calculateDurabilityModifier(ItemStack[] stacks) {
         if(stacks.length == 0)
             return 1.0f;
-        float totalmod = 0.0f;
-        float totalamount = 0;
+        double totalmod = 0.0f;
+        double totalamount = 0;
         for(ItemStack stack : stacks) {
-            float dur = stack.getDurability();
-            float max = stack.getType().getMaxDurability();
-            float amount = stack.getAmount();
+            double dur = stack.getDurability();
+            double max = stack.getType().getMaxDurability();
+            double amount = stack.getAmount();
             totalmod += ((dur/max) * amount);
             totalamount += amount;
         }
-        return (1.0f - (totalmod / totalamount));
+        return (1.0d - (totalmod / totalamount));
     }
 }

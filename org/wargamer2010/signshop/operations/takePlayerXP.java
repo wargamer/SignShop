@@ -8,7 +8,7 @@ public class takePlayerXP implements SignShopOperation {
 
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(XP == 0.0) {
             ssArgs.getPlayer().get().sendMessage("Please put the amount of XP you'd like players to Buy on the third line!");
             return false;
@@ -21,7 +21,7 @@ public class takePlayerXP implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         if(ssArgs.getPlayer().get().getPlayer() == null)
             return true;
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(XP == 0.0) {
             ssArgs.getPlayer().get().sendMessage("Invalid amount of XP on the third line!");
             return false;
@@ -42,7 +42,7 @@ public class takePlayerXP implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        Float XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
+        Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         Integer setAmount;
 
         if(ssArgs.isOperationParameter("raw")) {

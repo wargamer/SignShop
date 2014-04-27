@@ -19,14 +19,14 @@ import org.wargamer2010.signshop.util.signshopUtil;
 
 public class GetPriceFromWorth implements Listener {
 
-    private Float getTotalPrice(final ItemStack[] pStacks) {
+    private double getTotalPrice(final ItemStack[] pStacks) {
         if(!SignShopWorthListener.essLoaded())
             return -1.0f;
-        Float fTotal = 0.0f;
+        double fTotal = 0.0f;
         for(ItemStack stack : pStacks) {
-            Double dTemp = SignShopWorthListener.getPrice(stack);
+            double dTemp = SignShopWorthListener.getPrice(stack);
             if(dTemp > 0.0d) {
-                fTotal += (dTemp.floatValue() * stack.getAmount());
+                fTotal += (dTemp * stack.getAmount());
             }
         }
         return fTotal;
@@ -42,8 +42,8 @@ public class GetPriceFromWorth implements Listener {
     }
 
 
-    private Float adjustPrice(Block sign, ItemStack[] items, SignShopPlayer player, String sOperation) {
-        Float returnValue = -1.0f;
+    private double adjustPrice(Block sign, ItemStack[] items, SignShopPlayer player, String sOperation) {
+        double returnValue = -1.0d;
         if(!SignShopConfig.getEnablePriceFromWorth() || !signHasPlaceholder(sign))
             return returnValue;
         returnValue = getTotalPrice(items);
@@ -55,7 +55,7 @@ public class GetPriceFromWorth implements Listener {
     public void onSSBuildEvent(SSCreatedEvent event) {
         if(event.isCancelled())
             return;
-        Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
+        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
         if(newPrice > -1.0f) {
             event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
             event.setPrice(newPrice);
@@ -76,7 +76,7 @@ public class GetPriceFromWorth implements Listener {
     private void HandleTransactionEvent(SSPreTransactionEvent event) {
         if(event.isCancelled())
             return;
-        Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
+        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
         if(newPrice > -1.0f) {
             event.setPrice(newPrice);
             event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
@@ -87,7 +87,7 @@ public class GetPriceFromWorth implements Listener {
     public void onSSMoneyTransactionEvent(SSMoneyTransactionEvent event) {
         if(event.isCancelled())
             return;
-        Float newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
+        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
         if(newPrice > -1.0f) {
             event.setAmount(newPrice);
             event.setMessagePart("!price", economyUtil.formatMoney(newPrice));

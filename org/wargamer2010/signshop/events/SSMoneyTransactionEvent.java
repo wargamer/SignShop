@@ -14,7 +14,7 @@ public class SSMoneyTransactionEvent extends SSEvent {
     private SignShopPlayer ssPlayer = null;
     private Block bBlock = null;
     private Seller seShop = null;
-    private Float fAmount;
+    private double fAmount;
     private Block bSign = null;
     private String sOperation = "";
     private ItemStack[] isItems = null;
@@ -23,7 +23,7 @@ public class SSMoneyTransactionEvent extends SSEvent {
     private boolean bCheckOnly = false;
     private boolean bHandled = false;
 
-    public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, Float pAmount, Block pSign, String pOperation, ItemStack[] pItems,
+    public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, double pAmount, Block pSign, String pOperation, ItemStack[] pItems,
             boolean leftClicking, SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
         super(pMessageParts);
         ssPlayer = pPlayer;
@@ -58,11 +58,11 @@ public class SSMoneyTransactionEvent extends SSEvent {
         return seShop;
     }
 
-    public Float getAmount() {
+    public double getAmount() {
         return fAmount;
     }
 
-    public void setAmount(Float pAmount) {
+    public void setAmount(double pAmount) {
         fAmount = pAmount;
     }
 

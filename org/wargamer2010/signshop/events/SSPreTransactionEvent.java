@@ -12,7 +12,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSPreTransactionEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private Float fPrice = -1.0f;
+    private double fPrice = -1.0f;
     private ItemStack[] isItems = null;
     private List<Block> containables = null;
     private List<Block> activatables = null;
@@ -22,9 +22,9 @@ public class SSPreTransactionEvent extends SSEvent {
     private String sOperation = "";
     private Seller seShop = null;
     private Action aAction = null;
-    private boolean bRequirementsOK = true;    
+    private boolean bRequirementsOK = true;
 
-    public SSPreTransactionEvent(Float pPrice,
+    public SSPreTransactionEvent(double pPrice,
                                 ItemStack[] pItems,
                                 List<Block> pContainables,
                                 List<Block> pActivatables,
@@ -59,11 +59,11 @@ public class SSPreTransactionEvent extends SSEvent {
         return handlers;
     }
 
-    public Float getPrice() {
+    public double getPrice() {
         return fPrice;
     }
 
-    public void setPrice(Float fPrice) {
+    public void setPrice(double fPrice) {
         this.fPrice = fPrice;
     }
 

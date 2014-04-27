@@ -105,13 +105,13 @@ public class takeVariablePlayerItems implements SignShopOperation {
 
         Player player = ssArgs.getPlayer().get().getPlayer();
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
-        HashMap<ItemStack[], Float> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.getItems().get());
-        Float iCount = (Float)variableAmount.values().toArray()[0];
+        HashMap<ItemStack[], Double> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.getItems().get());
+        Double iCount = (Double)variableAmount.values().toArray()[0];
 
         ssArgs.getPlayer().get().setInventoryContents(backupinv);
 
         ItemStack[] isActual = (ItemStack[])variableAmount.keySet().toArray()[0];
-        float pricemod = 1.0f;
+        double pricemod = 1.0d;
         if(didnull) {
             ItemStack[] temp = getRealItemStack(backupinv, isActual);
             if(temp.length > 0) {
@@ -124,7 +124,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         ssArgs.getPrice().set(ssArgs.getPrice().get() * iCount * pricemod);
 
-        if(iCount == 0.0f) {
+        if(iCount == 0.0d) {
             ssArgs.sendFailedRequirementsMessage("player_doesnt_have_items");
             return false;
         }

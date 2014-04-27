@@ -45,17 +45,17 @@ public class configUtil {
         return tempHasinHash;
     }
 
-    public static HashMap<String,HashMap<String,Float>> fetchFloatHasmapInHashmap(String path, FileConfiguration config) {
-        HashMap<String,HashMap<String,Float>> tempHasinHash = new HashMap<String,HashMap<String,Float>>();
+    public static HashMap<String,HashMap<String,Double>> fetchDoubleHasmapInHashmap(String path, FileConfiguration config) {
+        HashMap<String,HashMap<String,Double>> tempHasinHash = new HashMap<String,HashMap<String,Double>>();
         try {
             if(config.getConfigurationSection(path) == null)
                 return tempHasinHash;
             Map<String, Object> messages_section = config.getConfigurationSection(path).getValues(false);
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 MemorySection memsec = (MemorySection)entry.getValue();
-                HashMap<String,Float> tempmap = new HashMap<String, Float>();
+                HashMap<String,Double> tempmap = new HashMap<String, Double>();
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
-                    tempmap.put(subentry.getKey().toLowerCase(), ((Double)subentry.getValue()).floatValue());
+                    tempmap.put(subentry.getKey().toLowerCase(), ((Double)subentry.getValue()));
                 tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
         } catch(ClassCastException ex) {

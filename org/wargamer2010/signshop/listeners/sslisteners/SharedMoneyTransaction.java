@@ -72,7 +72,7 @@ public class SharedMoneyTransaction implements Listener {
         event.setHandled(true);
     }
 
-    private static boolean distributeMoney(Seller seller, Float fPrice, SignShopPlayer ssPlayer) {
+    private static boolean distributeMoney(Seller seller, double fPrice, SignShopPlayer ssPlayer) {
         List<Block> shareSigns = getSignsFromMisc(seller, "sharesigns");
         SignShopPlayer ssOwner = seller.getOwner();
         if(shareSigns.isEmpty()) {
@@ -88,7 +88,7 @@ public class SharedMoneyTransaction implements Listener {
             Integer totalPercentage = 0;
             for(Map.Entry<String, Integer> share : shares.entrySet()) {
 
-                Float amount = (fPrice / 100 * share.getValue());
+                double amount = (fPrice / 100 * share.getValue());
                 SignShopPlayer sharee = PlayerIdentifier.getByName(share.getKey());
                 if(sharee == null || !sharee.playerExistsOnServer())
                     ssOwner.sendMessage("Not giving " + share.getKey() + " " + economyUtil.formatMoney(amount) + " because player doesn't exist!");
@@ -104,7 +104,7 @@ public class SharedMoneyTransaction implements Listener {
                 }
             }
             if(totalPercentage != 100) {
-                Float amount = fPrice;
+                double amount = fPrice;
                 if(totalPercentage > 0)
                     amount = (fPrice / 100 * (100 - totalPercentage));
                 return ssOwner.mutateMoney(amount);
