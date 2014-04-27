@@ -28,7 +28,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
 
         Sign signblock = ((Sign)sign.getState());
         String[] sLines = signblock.getLines();
-        Integer iPrice;
+        long iPrice;
         String sAmount = sLines[1];
         String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
         if(!ssPlayer.isOp())
@@ -57,7 +57,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
             emptyBlock.setLine(0, "[Sell]");
             emptyBlock.setLine(1, (sAmount + " of"));
             emptyBlock.setLine(2, sLines[3]);
-            emptyBlock.setLine(3, Integer.toString(iPrice));
+            emptyBlock.setLine(3, Long.toString(iPrice));
             emptyBlock.update();
 
             if(bits[0].contains("B"))
@@ -82,7 +82,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
 
         signblock.setLine(1, (sAmount + " of"));
         signblock.setLine(2, sLines[3]);
-        signblock.setLine(3, Integer.toString(iPrice));
+        signblock.setLine(3, Long.toString(iPrice));
         signblock.update();
 
         ssPlayer.sendMessage("ChestShop sign detected and successfully converted!");

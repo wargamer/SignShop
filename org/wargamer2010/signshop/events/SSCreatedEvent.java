@@ -11,7 +11,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSCreatedEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private Float fPrice = -1.0f;
+    private double fPrice = -1.0f;
     private ItemStack[] isItems = null;
     private List<Block> containables = null;
     private List<Block> activatables = null;
@@ -22,7 +22,7 @@ public class SSCreatedEvent extends SSEvent {
     private Map<String, String> miscSettings = new HashMap<String, String>();
 
 
-    public SSCreatedEvent(Float pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts, Map<String, String> pMisc) {
+    public SSCreatedEvent(double pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts, Map<String, String> pMisc) {
         fPrice = pPrice;
         isItems = pItems;
         containables = pContainables;
@@ -43,11 +43,11 @@ public class SSCreatedEvent extends SSEvent {
         return handlers;
     }
 
-    public Float getPrice() {
+    public double getPrice() {
         return fPrice;
     }
 
-    public void setPrice(Float fPrice) {
+    public void setPrice(double fPrice) {
         this.fPrice = fPrice;
     }
 

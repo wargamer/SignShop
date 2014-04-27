@@ -74,7 +74,7 @@ public class SSEventFactory {
         return new SSExpiredEvent(pExpirable);
     }
 
-    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, Float fPrice, SSMoneyEventType type, boolean pCheckOnly) {
+    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, double fPrice, SSMoneyEventType type, boolean pCheckOnly) {
         return new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
                                             Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
                                             signshopUtil.ApplyPriceMod(ssArgs),

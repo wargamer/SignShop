@@ -27,7 +27,7 @@ public class takeTownMoney implements SignShopOperation {
             if (ssPlayer.getPlayer() == null)
                 return true;
 
-            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
+            Double fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
@@ -61,7 +61,7 @@ public class takeTownMoney implements SignShopOperation {
             if (ssPlayer == null)
                     return true;
 
-            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
+            Double fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             // first withdraw money from the bank
             Resident resident;

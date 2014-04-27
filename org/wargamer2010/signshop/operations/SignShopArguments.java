@@ -28,7 +28,7 @@ public class SignShopArguments {
         argumentType = type;
     }
 
-    public SignShopArguments(float pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
+    public SignShopArguments(double pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                                 SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, Action ac, SignShopArgumentsType type) {
         fPrice.setRoot(pfPrice);
         isItems.setRoot(pisItems);
@@ -115,8 +115,8 @@ public class SignShopArguments {
 
     public static String seperator = "~";
 
-    private SignShopArgument<Float> fPrice = new SignShopArgument<Float>(this);
-    public SignShopArgument<Float> getPrice() {
+    private SignShopArgument<Double> fPrice = new SignShopArgument<Double>(this);
+    public SignShopArgument<Double> getPrice() {
         return fPrice;
     }
 

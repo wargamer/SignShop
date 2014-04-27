@@ -28,7 +28,7 @@ public class giveTownMoney implements SignShopOperation {
             SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
             if (ssPlayer.getPlayer() == null)
                 return true;
-            
+
             signshopUtil.ApplyPriceMod(ssArgs);
 
             try {
@@ -62,7 +62,7 @@ public class giveTownMoney implements SignShopOperation {
                     return false;
             }
 
-            Float fPrice = signshopUtil.ApplyPriceMod(ssArgs);
+            Double fPrice = signshopUtil.ApplyPriceMod(ssArgs);
 
             // then deposit it into the bank
             Resident resident;
