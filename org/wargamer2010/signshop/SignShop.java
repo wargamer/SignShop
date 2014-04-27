@@ -122,6 +122,9 @@ public class SignShop extends JavaPlugin{
         WebUtil.init();
         ColorUtil.init();
 
+        // Convert legacy player names to UUID
+        PlayerMetadata.convertToUuid(this);
+
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(),"sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));

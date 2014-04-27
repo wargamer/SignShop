@@ -44,7 +44,7 @@ public class SignShopPlayer {
     /**
      * Constructs a SignshopPlayer by player name
      * This is a legacy constructor and is purely here for backwards compatibility
-     * 
+     *
      * @param name Player name
      * @deprecated Lookup by name has been deprecated so use the PlayerIdentifier alternative in stead
      */
@@ -366,7 +366,7 @@ public class SignShopPlayer {
     }
 
     public boolean playerExistsOnServer() {
-        return (playerId != null);
+        return (playerId != null && playerId.getOfflinePlayer() != null);
     }
 
     public PlayerIdentifier GetIdentifier() {

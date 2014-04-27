@@ -72,6 +72,9 @@ public class PlayerIdentifier {
     }
 
     public static SignShopPlayer getPlayerFromString(String string) {
+        if(string == null || string.isEmpty())
+            return null;
+
         if(GetUUIDSupport()) {
             try {
                 return new SignShopPlayer(new PlayerIdentifier(UUID.fromString(string)));
@@ -93,6 +96,8 @@ public class PlayerIdentifier {
      * @return SignShopPlayer instance
      */
     public static SignShopPlayer getByName(String name) {
+        if(name == null || name.isEmpty())
+            return null;
         PlayerIdentifier id = null;
 
         if(GetUUIDSupport()) {
