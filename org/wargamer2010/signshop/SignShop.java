@@ -24,6 +24,7 @@ import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.metrics.setupMetrics;
+import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.TimeManager;
@@ -121,6 +122,7 @@ public class SignShop extends JavaPlugin{
         CommandDispatcher.init();
         WebUtil.init();
         ColorUtil.init();
+        MoneyModifierManager.init();
 
         // Convert legacy player names to UUID
         PlayerMetadata.convertToUuid(this);
@@ -255,6 +257,7 @@ public class SignShop extends JavaPlugin{
         pm.registerEvents(new NotificationsHooker(), this);
         pm.registerEvents(new StockChecker(), this);
         pm.registerEvents(new TimedCommandListener(), this);
+        pm.registerEvents(new MoneyModifierListener(), this);
 
         DynmapManager dmm = new DynmapManager();
         if(SignShopConfig.getEnableDynmapSupport())

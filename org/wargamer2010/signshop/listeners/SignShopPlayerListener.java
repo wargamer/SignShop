@@ -27,9 +27,13 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.events.SSMoneyRequestType;
+import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
+import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
@@ -191,6 +195,13 @@ public class SignShopPlayerListener implements Listener {
                 if(!bSetupOK)
                     return;
 
+                SSMoneyTransactionEvent moneyevent = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getMoneyEventType(), SSMoneyRequestType.GetAmount);
+                SignShop.scheduleEvent(moneyevent);
+                ssArgs.getPrice().set(moneyevent.getPrice());
+                ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
+                if(event.isCancelled() || !moneyevent.isHandled())
+                    return;
+
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);
                 if(createdevent.isCancelled()) {
@@ -254,9 +265,6 @@ public class SignShopPlayerListener implements Listener {
 
             if(!bReqOKSolid)
                 bRequirementsOK = false;
-
-            if(ssArgs.hasMessagePart("!items") && !ssArgs.hasMessagePart("!price"))
-                signshopUtil.ApplyPriceMod(ssArgs);
 
             SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction(), bRequirementsOK);
             SignShop.scheduleEvent(pretransactevent);

@@ -7,11 +7,15 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.events.IOperationEvent;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.listeners.SignShopWorthListener;
+import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -42,54 +46,23 @@ public class GetPriceFromWorth implements Listener {
     }
 
 
-    private double adjustPrice(Block sign, ItemStack[] items, SignShopPlayer player, String sOperation) {
+    private double adjustPrice(Block sign, ItemStack[] items, SignShopPlayer player, String sOperation, SSMoneyEventType type) {
         double returnValue = -1.0d;
         if(!SignShopConfig.getEnablePriceFromWorth() || !signHasPlaceholder(sign))
             return returnValue;
         returnValue = getTotalPrice(items);
-        returnValue = signshopUtil.ApplyPriceMod(player, returnValue, sOperation);
         return returnValue;
-    }
-
-    @EventHandler(priority = EventPriority.HIGH)
-    public void onSSBuildEvent(SSCreatedEvent event) {
-        if(event.isCancelled())
-            return;
-        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
-        if(newPrice > -1.0f) {
-            event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
-            event.setPrice(newPrice);
-            event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
-        }
-    }
-
-    @EventHandler(priority = EventPriority.HIGH)
-    public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
-        HandleTransactionEvent(event);
-    }
-
-    @EventHandler(priority = EventPriority.HIGH)
-    public void onSSPostTransactionEvent(SSPostTransactionEvent event) {
-        HandleTransactionEvent(event);
-    }
-
-    private void HandleTransactionEvent(SSPreTransactionEvent event) {
-        if(event.isCancelled())
-            return;
-        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
-        if(newPrice > -1.0f) {
-            event.setPrice(newPrice);
-            event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
-        }
     }
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void onSSMoneyTransactionEvent(SSMoneyTransactionEvent event) {
-        if(event.isCancelled())
+        if(event.isCancelled() || event.getItems() == null)
             return;
-        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation());
+        double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation(), event.getTransactionType());
         if(newPrice > -1.0f) {
-            event.setAmount(newPrice);
+            if(event.getRequestType() == SSMoneyRequestType.GetAmount)
+                event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
+            event.setPrice(newPrice);
             event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
         }
     }

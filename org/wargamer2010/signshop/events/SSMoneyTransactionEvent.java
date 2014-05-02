@@ -6,9 +6,10 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public class SSMoneyTransactionEvent extends SSEvent {
+public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private SignShopPlayer ssPlayer = null;
@@ -20,11 +21,12 @@ public class SSMoneyTransactionEvent extends SSEvent {
     private ItemStack[] isItems = null;
     private boolean bLeftClicking = false;
     private SSMoneyEventType meType = SSMoneyEventType.Unknown;
-    private boolean bCheckOnly = false;
+    private SSMoneyRequestType rtRequestType = SSMoneyRequestType.Unknown;
     private boolean bHandled = false;
+    private SignShopArguments ssArgs = null;
 
     public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, double pAmount, Block pSign, String pOperation, ItemStack[] pItems,
-            boolean leftClicking, SSMoneyEventType pType, Map<String, String> pMessageParts, boolean pCheckOnly) {
+            boolean leftClicking, SSMoneyEventType pType, Map<String, String> pMessageParts, SSMoneyRequestType pRequestType) {
         super(pMessageParts);
         ssPlayer = pPlayer;
         seShop = pShop;
@@ -34,7 +36,7 @@ public class SSMoneyTransactionEvent extends SSEvent {
         isItems = pItems;
         bLeftClicking = leftClicking;
         meType = pType;
-        bCheckOnly = pCheckOnly;
+        rtRequestType = pRequestType;
     }
 
     @Override
@@ -58,11 +60,11 @@ public class SSMoneyTransactionEvent extends SSEvent {
         return seShop;
     }
 
-    public double getAmount() {
+    public double getPrice() {
         return fAmount;
     }
 
-    public void setAmount(double pAmount) {
+    public void setPrice(double pAmount) {
         fAmount = pAmount;
     }
 
@@ -82,12 +84,25 @@ public class SSMoneyTransactionEvent extends SSEvent {
         return bLeftClicking;
     }
 
+    public SignShopArguments getArguments() {
+        return ssArgs;
+    }
+
+    public void setArguments(SignShopArguments ssArgs) {
+        this.ssArgs = ssArgs;
+    }
+
+
     public SSMoneyEventType getTransactionType() {
         return meType;
     }
 
-    public boolean isCheckOnly() {
-        return bCheckOnly;
+    public SSMoneyRequestType getRequestType() {
+        return rtRequestType;
+    }
+
+    public boolean isBalanceOrExecution() {
+        return rtRequestType == SSMoneyRequestType.CheckBalance || rtRequestType == SSMoneyRequestType.ExecuteTransaction;
     }
 
     public boolean isHandled() {

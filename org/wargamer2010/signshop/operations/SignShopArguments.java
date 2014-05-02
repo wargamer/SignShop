@@ -16,6 +16,8 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -84,6 +86,9 @@ public class SignShopArguments {
             }
         }
 
+        if(fPrice != null)
+            setMessagePart("!price", economyUtil.formatMoney(fPrice.get()));
+
         if(ssOwner != null)
             setMessagePart("!owner", ssOwner.get().getName());
 
@@ -110,7 +115,11 @@ public class SignShopArguments {
         bSign.setSpecial(false);
         sOperation.setSpecial(false);
         bfBlockFace.setSpecial(false);
-        this.bPriceModApplied = false;
+        resetPriceMod();
+    }
+
+    public void resetPriceMod() {
+        bPriceModApplied = false;
     }
 
     public static String seperator = "~";
@@ -193,6 +202,14 @@ public class SignShopArguments {
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;
     public boolean bRunCommandAsUser = false;
+
+    private SSMoneyEventType moneyEventType = SSMoneyEventType.Unknown;
+    public SSMoneyEventType getMoneyEventType() {
+        return moneyEventType;
+    }
+    public void setMoneyEventType(SSMoneyEventType type) {
+        moneyEventType = type;
+    }
 
     public void ignoreEmptyChest() {
         if(!isOperationParameter("allowemptychest"))
