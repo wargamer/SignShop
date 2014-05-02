@@ -14,13 +14,16 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import com.palmergames.bukkit.towny.object.TownyUniverse;
+import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class giveTownMoney implements SignShopOperation {
 	@Override
 	public Boolean setupOperation(SignShopArguments ssArgs) {
-		ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
-		return true;
+            ssArgs.setMoneyEventType(SSMoneyEventType.GiveToTown);
+            ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
+            return true;
 	}
 
 	@Override
@@ -29,7 +32,7 @@ public class giveTownMoney implements SignShopOperation {
             if (ssPlayer.getPlayer() == null)
                 return true;
 
-            signshopUtil.ApplyPriceMod(ssArgs);
+            MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.GiveToTown);
 
             try {
                 Resident resident = TownyUniverse.getDataSource().getResident(ssPlayer.getName());
@@ -62,7 +65,7 @@ public class giveTownMoney implements SignShopOperation {
                     return false;
             }
 
-            Double fPrice = signshopUtil.ApplyPriceMod(ssArgs);
+            Double fPrice = MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.GiveToTown);
 
             // then deposit it into the bank
             Resident resident;

@@ -459,17 +459,17 @@ public class signshopUtil {
         return false;
     }
 
-    public static double ApplyPriceMod(SignShopArguments ssArgs) {
+    public static double ApplyPriceMod(SignShopArguments ssArgs, boolean bBuyOperation) {
         if(ssArgs.tryToApplyPriceMod()) {
-            double fPrice = ApplyPriceMod(ssArgs.getPlayer().get(), ssArgs.getPrice().get(), ssArgs.getOperation().get());
+            double fPrice = ApplyPriceMod(ssArgs.getPlayer().get(), ssArgs.getPrice().get(), ssArgs.getOperation().get(), bBuyOperation);
             ssArgs.getPrice().set(fPrice);
             ssArgs.setMessagePart("!price", economyUtil.formatMoney(fPrice));
         }
         return ssArgs.getPrice().get();
     }
 
-    public static double ApplyPriceMod(SignShopPlayer player, double fPrice, String sOperation) {
-        double fPricemod = player.getPlayerPricemod(sOperation);
+    public static double ApplyPriceMod(SignShopPlayer player, double fPrice, String sOperation, boolean bBuyOperation) {
+        double fPricemod = player.getPlayerPricemod(sOperation, bBuyOperation);
         return (fPrice * fPricemod);
     }
 

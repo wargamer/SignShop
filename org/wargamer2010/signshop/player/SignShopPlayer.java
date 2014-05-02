@@ -291,11 +291,9 @@ public class SignShopPlayer {
         return sGroups;
     }
 
-    public Double getPlayerPricemod(String sOperation) {
+    public Double getPlayerPricemod(String sOperation, boolean bBuyOperation) {
         Double fPricemod = 1.0d;
         Double fTemp;
-        boolean bBuyorSell = true;
-        boolean first = true;
 
         if(Vault.getPermission() == null || playerObject == null)
             return fPricemod;
@@ -308,16 +306,10 @@ public class SignShopPlayer {
             String sGroup = sGroups[i].toLowerCase();
             if(SignShopConfig.getPriceMultipliers().containsKey(sGroup) && SignShopConfig.getPriceMultipliers().get(sGroup).containsKey(sOperation)) {
                 fTemp = SignShopConfig.getPriceMultipliers().get(sGroup).get(sOperation);
-                if(first && fTemp != 1.0f) {
-                    // Use the first price multiplier to check whether it's a buy or sell transaction
-                    // TODO: This setting should probably be pulled from somewhere else but will work with a proper configuration for now
-                    first = false;
-                    bBuyorSell = (fTemp < 1.0f);
-                }
 
-                if(bBuyorSell && fTemp < fPricemod)
+                if(bBuyOperation && fTemp < fPricemod)
                     fPricemod = fTemp;
-                else if(!bBuyorSell && fTemp > fPricemod)
+                else if(!bBuyOperation && fTemp > fPricemod)
                     fPricemod = fTemp;
             }
         }

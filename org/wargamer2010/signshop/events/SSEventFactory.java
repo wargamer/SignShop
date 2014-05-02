@@ -74,17 +74,19 @@ public class SSEventFactory {
         return new SSExpiredEvent(pExpirable);
     }
 
-    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, double fPrice, SSMoneyEventType type, boolean pCheckOnly) {
-        return new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
+    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, SSMoneyEventType type, SSMoneyRequestType pRequestType) {
+        SSMoneyTransactionEvent event = new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
                                             Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
-                                            signshopUtil.ApplyPriceMod(ssArgs),
+                                            ssArgs.getPrice().get(),
                                             ssArgs.getSign().get(),
                                             ssArgs.getOperation().get(),
                                             ssArgs.getItems().get(),
                                             ssArgs.isLeftClicking(),
                                             type,
                                             ssArgs.getRawMessageParts(),
-                                            pCheckOnly);
+                                            pRequestType);
+        event.setArguments(ssArgs);
+        return event;
     }
 
 }

@@ -16,6 +16,7 @@ import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.Unknown;
+import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -27,6 +28,8 @@ public class BankTransaction implements Listener {
         if(event.isHandled() || event.isCancelled() || event.getPlayer().getPlayer() == null)
             return;
         if(event.getShop() == null || !event.getShop().getMisc().containsKey("banksigns"))
+            return;
+        if(!event.isBalanceOrExecution())
             return;
 
         if(!Vault.getEconomy().hasBankSupport()) {
@@ -59,7 +62,7 @@ public class BankTransaction implements Listener {
         }
 
 
-        if(event.isCheckOnly()) {
+        if(event.getRequestType() == SSMoneyRequestType.CheckBalance) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     // Does a Bank have a money cap?
@@ -67,7 +70,7 @@ public class BankTransaction implements Listener {
                 case TakeFromOwner:
                     boolean hasTheMoney = true;
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getPrice());
                         if(response.transactionSuccess()) {
                             hasTheMoney = true;
                             break;
@@ -89,7 +92,7 @@ public class BankTransaction implements Listener {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.getEconomy().bankDeposit(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankDeposit(bank, event.getPrice());
                         if(response.transactionSuccess()) {
                             bTransaction = true;
                             break;
@@ -98,9 +101,9 @@ public class BankTransaction implements Listener {
                 break;
                 case TakeFromOwner:
                     for(String bank : banks) {
-                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getAmount());
+                        EconomyResponse response = Vault.getEconomy().bankHas(bank, event.getPrice());
                         if(response.transactionSuccess()) {
-                            EconomyResponse second = Vault.getEconomy().bankWithdraw(bank, event.getAmount());
+                            EconomyResponse second = Vault.getEconomy().bankWithdraw(bank, event.getPrice());
                             if(second.transactionSuccess()) {
                                 bTransaction = true;
                                 break;

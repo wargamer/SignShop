@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public class SSPreTransactionEvent extends SSEvent {
+public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private double fPrice = -1.0f;

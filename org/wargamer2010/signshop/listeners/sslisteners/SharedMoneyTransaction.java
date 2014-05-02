@@ -14,6 +14,7 @@ import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromPlayer;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.Unknown;
+import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -30,8 +31,10 @@ public class SharedMoneyTransaction implements Listener {
             return;
         if(event.getShop() == null || !event.getShop().getMisc().containsKey("sharesigns"))
             return;
+        if(!event.isBalanceOrExecution())
+            return;
 
-        if(event.isCheckOnly()) {
+        if(event.getRequestType() == SSMoneyRequestType.CheckBalance) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
                     // This is tricky, we'd have to check whether all the people we're sharing with could
@@ -51,7 +54,7 @@ public class SharedMoneyTransaction implements Listener {
 
             switch(event.getTransactionType()) {
                 case GiveToOwner:
-                    bTransaction = distributeMoney(event.getShop(), event.getAmount(), event.getPlayer());
+                    bTransaction = distributeMoney(event.getShop(), event.getPrice(), event.getPlayer());
                 break;
                 case TakeFromOwner:
                     return;
