@@ -23,6 +23,7 @@ public class CommandDispatcher {
         handlers.put("help", HelpHandler.getInstance());
         handlers.put("sign", HelpHandler.getInstance());
         handlers.put("list", HelpHandler.getInstance());
+        handlers.put("unlink", UnlinkHandler.getInstance());
         handlers.put("", HelpHandler.getInstance());
     }
 

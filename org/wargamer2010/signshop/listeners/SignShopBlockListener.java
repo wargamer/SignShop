@@ -9,32 +9,17 @@ import org.bukkit.event.block.BlockBurnEvent;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import java.util.List;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
 import java.util.Map;
 import org.bukkit.block.BlockFace;
 import org.bukkit.material.Attachable;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.player.SignShopPlayer;
-import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBlockListener implements Listener {
-
-    private List<Seller> getShopsFromMiscSetting(String miscname, Block pBlock) {
-        List<Block> shopsWithBlockInMisc = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(pBlock.getLocation()));
-        List<Seller> sellers = new LinkedList<Seller>();
-        if(!shopsWithBlockInMisc.isEmpty()) {
-            for(Block block : shopsWithBlockInMisc) {
-                sellers.add(Storage.get().getSeller(block.getLocation()));
-            }
-        }
-        return sellers;
-    }
 
     private List<Block> getAttachables(Block from) {
         List<Block> attachables = new ArrayList<Block>();
@@ -57,19 +42,8 @@ public class SignShopBlockListener implements Listener {
     }
 
     private boolean canBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
-        Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
+        Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.GetRelatedShopsByBlock(block);
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
-
-        if(Storage.get().getSeller(block.getLocation()) != null)
-            affectedSellers.put(Storage.get().getSeller(block.getLocation()), SSDestroyedEventType.sign);
-        if(itemUtil.clickedSign(block)) {
-            for(Seller seller : getShopsFromMiscSetting("sharesigns", block))
-                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
-            for(Seller seller : getShopsFromMiscSetting("restrictedsigns", block))
-                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
-        }
-        for(Seller seller : Storage.get().getShopsByBlock(block))
-            affectedSellers.put(seller, SSDestroyedEventType.attachable);
 
         for(Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());

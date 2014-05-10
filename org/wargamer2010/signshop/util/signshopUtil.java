@@ -27,6 +27,8 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.LinkableMaterial;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
@@ -502,6 +504,34 @@ public class signshopUtil {
         return true;
     }
 
+    public static List<Seller> getShopsFromMiscSetting(String miscname, Block pBlock) {
+        List<Block> shopsWithBlockInMisc = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(pBlock.getLocation()));
+        List<Seller> sellers = new LinkedList<Seller>();
+        if(!shopsWithBlockInMisc.isEmpty()) {
+            for(Block block : shopsWithBlockInMisc) {
+                sellers.add(Storage.get().getSeller(block.getLocation()));
+            }
+        }
+        return sellers;
+    }
+
+    public static Map<Seller, SSDestroyedEventType> GetRelatedShopsByBlock(Block block) {
+        Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
+
+        if(Storage.get().getSeller(block.getLocation()) != null)
+            affectedSellers.put(Storage.get().getSeller(block.getLocation()), SSDestroyedEventType.sign);
+        if(itemUtil.clickedSign(block)) {
+            for(Seller seller : getShopsFromMiscSetting("sharesigns", block))
+                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
+            for(Seller seller : getShopsFromMiscSetting("restrictedsigns", block))
+                affectedSellers.put(seller, SSDestroyedEventType.miscblock);
+        }
+        for(Seller seller : Storage.get().getShopsByBlock(block))
+            affectedSellers.put(seller, SSDestroyedEventType.attachable);
+
+        return affectedSellers;
+    }
+
     public static <T, E> LinkedHashSet<T> getKeysByValue(Map<T, E> map, E value) {
         LinkedHashSet<T> keys = new LinkedHashSet<T>();
         for (Map.Entry<T, E> entry : map.entrySet()) {
@@ -547,7 +577,7 @@ public class signshopUtil {
 
     public static boolean hasOPForCommand(SignShopPlayer player) {
         if(player != null && !player.isOp()) {
-            player.sendMessage(ChatColor.RED + "You are not allowed to use that command. OP only.");
+            player.sendMessage(SignShopConfig.getError("must_be_op_to_run", null));
             return false;
         }
 
