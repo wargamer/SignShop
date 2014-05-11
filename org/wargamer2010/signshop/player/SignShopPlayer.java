@@ -20,6 +20,7 @@ public class SignShopPlayer {
     private String playername = "";
     private PlayerIdentifier playerId = null;
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
+    private boolean ignoreMessages = false;
 
     public SignShopPlayer() {
 
@@ -78,7 +79,7 @@ public class SignShopPlayer {
     }
 
     public void sendNonDelayedMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null)
+        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null || ignoreMessages)
             return;
         String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
         playerObject.sendMessage(message);
@@ -396,5 +397,13 @@ public class SignShopPlayer {
 
     public boolean isOwner(Seller seller) {
         return seller.getOwner().compareTo(this);
+    }
+
+    public void setIgnoreMessages(boolean ignoreMessages) {
+        this.ignoreMessages = ignoreMessages;
+    }
+
+    public boolean isIgnoreMessages() {
+        return ignoreMessages;
     }
 }

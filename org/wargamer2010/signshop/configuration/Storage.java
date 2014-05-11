@@ -313,6 +313,12 @@ public class Storage implements Listener {
             this.SafeSave();
     }
 
+    public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables) {
+        Seller seller = Storage.sellers.get(bSign.getLocation());
+        seller.setActivatables(activatables);
+        seller.setContainables(containables);
+    }
+
     public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems) {
         Seller seller = Storage.sellers.get(bSign.getLocation());
         seller.setActivatables(activatables);
