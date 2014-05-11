@@ -2,25 +2,33 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.event.block.Action;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
+import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
+import org.wargamer2010.signshop.operations.SignShopArgumentsType;
+import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -55,6 +63,56 @@ public class SimpleShopProtector implements Listener {
             else
                 seller.getMisc().put(miscname, temp);
         }
+    }
+
+    private boolean isShopBrokenAfterBlockUnlink(Seller seller, Block toUnlink) {
+        List<Block> containables = new LinkedList<Block>();
+        containables.addAll(seller.getContainables());
+        List<Block> activatables = new LinkedList<Block>();
+        activatables.addAll(seller.getActivatables());
+
+        if(containables.contains(toUnlink))
+            containables.remove(toUnlink);
+        if(activatables.contains(toUnlink))
+            activatables.remove(toUnlink);
+
+        SignShopPlayer ssPlayer = new SignShopPlayer(seller.getOwner().GetIdentifier());
+        ssPlayer.setIgnoreMessages(true);
+
+        if(!(seller.getSign().getState() instanceof Sign))
+            return true;
+        Sign sign = (Sign) seller.getSign().getState();
+
+        SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sign.getLines()[3]), seller.getItems(), containables, activatables,
+                ssPlayer, seller.getOwner(), seller.getSign(), seller.getOperation(), BlockFace.DOWN, Action.LEFT_CLICK_BLOCK, SignShopArgumentsType.Setup);
+
+        List<String> operation = SignShopConfig.getBlocks(seller.getOperation());
+        List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
+        if (SignShopOperations == null)
+            return true;
+
+        Boolean bSetupOK = false;
+        for (SignShopOperationListItem ssOperation : SignShopOperations) {
+            List<String> params = ssOperation.getParameters();
+            params.add("allowemptychest");
+            ssArgs.setOperationParameters(params);
+            bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
+            if (!bSetupOK) {
+                return true;
+            }
+        }
+        if (!bSetupOK) {
+            return true;
+        }
+
+        SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
+        SignShop.scheduleEvent(createdevent);
+        if(createdevent.isCancelled()) {
+            return true;
+        }
+
+        Storage.get().updateSeller(seller.getSign(), containables, activatables);
+        return false;
     }
 
     @EventHandler(priority = EventPriority.HIGH)
@@ -104,15 +162,11 @@ public class SimpleShopProtector implements Listener {
             cleanUpMiscStuff("restrictedsigns", event.getBlock());
         } else if(event.getReason() == SSDestroyedEventType.attachable) {
             // More shops might be attached to this attachable, but the event will be fired multiple times
-            if(event.getBlock() != null && event.getBlock().getState() instanceof InventoryHolder) {
-                // If a chest is broken, we can no longer safely assume the shop will continue working
-                // So we can't just unlink it from the shop as it might completely break it's functionality
-                if(event.getShop() != null && event.getShop().getSign() != null) {
-                    itemUtil.setSignStatus(event.getShop().getSign(), ChatColor.BLACK);
-                    Storage.get().removeSeller(event.getShop().getSignLocation());
-                }
+            if(isShopBrokenAfterBlockUnlink(event.getShop(), event.getBlock())) {
+                // Shop can not be updated without breaking functionality
+                itemUtil.setSignStatus(event.getShop().getSign(), ChatColor.BLACK);
+                Storage.get().removeSeller(event.getShop().getSignLocation());
             }
-            // No need to remove the seller as we can't safely assume breaking anything else than a chest will make the shop useless
         }
     }
 
