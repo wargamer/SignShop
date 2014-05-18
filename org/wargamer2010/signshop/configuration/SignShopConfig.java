@@ -579,7 +579,8 @@ public class SignShopConfig {
         if(messageParts == null)
             return message;
         for(Map.Entry<String, String> part : messageParts.entrySet()) {
-            message = message.replace(part.getKey(), part.getValue());
+            if(part != null && part.getKey() != null && part.getValue() != null)
+                message = message.replace(part.getKey(), part.getValue());
         }
         message = message.replace("\\", "");
         return message;
