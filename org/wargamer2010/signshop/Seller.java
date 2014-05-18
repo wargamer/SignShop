@@ -26,6 +26,7 @@ public class Seller {
     private Location signLocation;
     private Map<String, String> miscProps = new HashMap<String, String>();
     private Map<String, String> volatileProperties = new LinkedHashMap<String, String>();
+    private Map<String, Object> serializedData = new HashMap<String,Object>();
 
     private SignShopPlayer owner;
     private String world;
@@ -43,6 +44,8 @@ public class Seller {
             miscProps.putAll(pMiscProps);
         if(save)
             storeMeta(isItems);
+
+        calculateSerialization();
     }
 
     public ItemStack[] getItems() {
@@ -58,6 +61,7 @@ public class Seller {
 
     public void setItems(ItemStack[] items) {
         isItems = items;
+        calculateSerialization();
     }
 
     public List<Block> getContainables() {
@@ -66,6 +70,7 @@ public class Seller {
 
     public void setContainables(List<Block> blocklist) {
         containables = blocklist;
+        calculateSerialization();
     }
 
     public List<Block> getActivatables() {
@@ -74,6 +79,7 @@ public class Seller {
 
     public void setActivatables(List<Block> blocklist) {
         activatables = blocklist;
+        calculateSerialization();
     }
 
     public SignShopPlayer getOwner() {
@@ -82,6 +88,7 @@ public class Seller {
 
     public void setOwner(SignShopPlayer newowner) {
         owner = newowner;
+        calculateSerialization();
     }
 
     public boolean isOwner(SignShopPlayer player) {
@@ -164,5 +171,44 @@ public class Seller {
             tempActivatables.add(b.getWorld().getBlockAt(b.getX(), b.getY(), b.getZ()));
         containables = tempContainables;
         activatables = tempActivatables;
+        calculateSerialization();
     }
+
+    public Map<String, Object> getSerializedData() {
+        return serializedData;
+    }
+
+    private void calculateSerialization() {
+        Map<String,Object> temp = new HashMap<String,Object>();
+
+        temp.put("shopworld", getWorld());
+        temp.put("owner", getOwner().GetIdentifier().toString());
+        temp.put("items", itemUtil.convertItemStacksToString(getItems(false)));
+
+        String[] sContainables = new String[containables.size()];
+        for(int i = 0; i < containables.size(); i++)
+            sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
+        temp.put("containables", sContainables);
+
+        String[] sActivatables = new String[activatables.size()];
+        for(int i = 0; i < activatables.size(); i++)
+            sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
+        temp.put("activatables", sActivatables);
+
+        temp.put("sign", signshopUtil.convertLocationToString(getSignLocation()));
+
+        Map<String, String> misc = getMisc();
+        if(misc.size() > 0)
+            temp.put("misc", MapToList(misc));
+
+        serializedData = temp;
+    }
+
+    private List<String> MapToList(Map<String, String> map) {
+        List<String> returnList = new LinkedList<String>();
+        for(Map.Entry<String, String> entry : map.entrySet())
+            returnList.add(entry.getKey() + ":" + entry.getValue());
+        return returnList;
+    }
+
 }

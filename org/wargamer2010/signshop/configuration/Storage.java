@@ -252,34 +252,11 @@ public class Storage implements Listener, Runnable {
         Map<String,Object> tempSellers = new HashMap<String,Object>();
         FileConfiguration config = new YamlConfiguration();
 
-        for(Location lKey : Storage.sellers.keySet()){
-            Map<String,Object> temp = new HashMap<String,Object>();
-
-            Seller seller = sellers.get(lKey);
-            temp.put("shopworld", seller.getWorld());
-            temp.put("owner", seller.getOwner().GetIdentifier().toString());
-            temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(false)));
-
-            List<Block> containables = seller.getContainables();
-            String[] sContainables = new String[containables.size()];
-            for(int i = 0; i < containables.size(); i++)
-                sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
-            temp.put("containables", sContainables);
-
-            List<Block> activatables = seller.getActivatables();
-            String[] sActivatables = new String[activatables.size()];
-            for(int i = 0; i < activatables.size(); i++)
-                sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
-            temp.put("activatables", sActivatables);
-
-            temp.put("sign", signshopUtil.convertLocationToString(lKey));
-
-            Map<String, String> misc = seller.getMisc();
-            if(misc.size() > 0)
-                temp.put("misc", MapToList(misc));
-
+        for(Seller seller : Storage.sellers.values()) {
             // YML Parser really does not like dots in the name
-            tempSellers.put(signshopUtil.convertLocationToString(lKey).replace(".", ""), temp);
+            String signLocation = signshopUtil.convertLocationToString(seller.getSignLocation()).replace(".", "");
+
+            tempSellers.put(signLocation, seller.getSerializedData());
         }
 
         config.set("sellers", tempSellers);
@@ -438,13 +415,6 @@ public class Storage implements Listener, Runnable {
             inChannel.close();
             outChannel.close();
         }
-    }
-
-    private List<String> MapToList(Map<String, String> map) {
-        List<String> returnList = new LinkedList<String>();
-        for(Map.Entry<String, String> entry : map.entrySet())
-            returnList.add(entry.getKey() + ":" + entry.getValue());
-        return returnList;
     }
 
     private class StorageException extends Exception {
