@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.wargamer2010.signshop.util.itemUtil;
 import com.kellerkindt.scs.*;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.logging.Level;
 import org.bukkit.block.Sign;
@@ -99,7 +100,27 @@ public class Seller {
         return world;
     }
 
-    public Map<String, String> getMisc() {
+    public boolean hasMisc(String key) {
+        return miscProps.containsKey(key);
+    }
+
+    public void removeMisc(String key) {
+        miscProps.remove(key);
+        calculateSerialization();
+    }
+
+    public void addMisc(String key, String value) {
+        miscProps.put(key, value);
+        calculateSerialization();
+    }
+
+    public String getMisc(String key) {
+        if(miscProps.containsKey(key))
+            return miscProps.get(key);
+        return null;
+    }
+
+    public Map<String, String> getRawMisc() {
         return miscProps;
     }
 
@@ -197,7 +218,7 @@ public class Seller {
 
         temp.put("sign", signshopUtil.convertLocationToString(getSignLocation()));
 
-        Map<String, String> misc = getMisc();
+        Map<String, String> misc = miscProps;
         if(misc.size() > 0)
             temp.put("misc", MapToList(misc));
 

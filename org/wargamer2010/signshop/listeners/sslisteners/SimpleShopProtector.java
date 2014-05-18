@@ -49,7 +49,7 @@ public class SimpleShopProtector implements Listener {
         List<Block> shopsWithSharesign = Storage.get().getShopsWithMiscSetting(miscname, signshopUtil.convertLocationToString(block.getLocation()));
         for(Block bTemp : shopsWithSharesign) {
             Seller seller = Storage.get().getSeller(bTemp.getLocation());
-            String temp = seller.getMisc().get(miscname);
+            String temp = seller.getMisc(miscname);
             temp = temp.replace(signshopUtil.convertLocationToString(block.getLocation()), "");
             temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
             if(temp.length() > 0) {
@@ -59,9 +59,9 @@ public class SimpleShopProtector implements Listener {
                     temp = temp.substring(1, temp.length());
             }
             if(temp.length() == 0)
-                seller.getMisc().remove(miscname);
+                seller.removeMisc(miscname);
             else
-                seller.getMisc().put(miscname, temp);
+                seller.addMisc(miscname, temp);
         }
     }
 

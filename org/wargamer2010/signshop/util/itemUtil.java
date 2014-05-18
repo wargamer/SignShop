@@ -423,8 +423,8 @@ public class itemUtil {
                 return;
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
                                                                 null, null, pSign, signshopUtil.getOperation(sLines[0]), null, Action.RIGHT_CLICK_BLOCK, SignShopArgumentsType.Check);
-            if(pSeller.getMisc() != null)
-                ssArgs.miscSettings = pSeller.getMisc();
+            if(pSeller.getRawMisc() != null)
+                ssArgs.miscSettings = pSeller.getRawMisc();
             Boolean reqOK = true;
             for(SignShopOperationListItem ssOperation : SignShopOperations) {
                 ssArgs.setOperationParameters(ssOperation.getParameters());

@@ -55,7 +55,7 @@ public class LinkShowcase implements SignShopSpecialOp {
         p.setBlock(bStep);
         scs.getShopHandler().addShop(p);
         scs.getShopHandler().showAll();
-        seller.getMisc().put("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
+        seller.addMisc("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
         ssPlayer.sendMessage("Showcase has been successfully created.");
         return true;
     }

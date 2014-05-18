@@ -29,7 +29,7 @@ public class SharedMoneyTransaction implements Listener {
     public void onSSMoneyTransaction(SSMoneyTransactionEvent event) {
         if(event.isHandled() || event.isCancelled() || event.getPlayer().getPlayer() == null)
             return;
-        if(event.getShop() == null || !event.getShop().getMisc().containsKey("sharesigns"))
+        if(event.getShop() == null || !event.getShop().hasMisc("sharesigns"))
             return;
         if(!event.isBalanceOrExecution())
             return;

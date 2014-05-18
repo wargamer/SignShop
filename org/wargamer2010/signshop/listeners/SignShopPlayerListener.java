@@ -245,8 +245,8 @@ public class SignShopPlayerListener implements Listener {
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                                                                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Check);
 
-            if(seller.getMisc() != null)
-                ssArgs.miscSettings = seller.getMisc();
+            if(seller.getRawMisc() != null)
+                ssArgs.miscSettings = seller.getRawMisc();
             boolean bRequirementsOK = true;
             boolean bReqOKSolid = true;
             boolean bRunOK = false;

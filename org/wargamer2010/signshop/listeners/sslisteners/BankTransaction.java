@@ -27,7 +27,7 @@ public class BankTransaction implements Listener {
     public void onSSMoneyTransaction(SSMoneyTransactionEvent event) {
         if(event.isHandled() || event.isCancelled() || event.getPlayer().getPlayer() == null)
             return;
-        if(event.getShop() == null || !event.getShop().getMisc().containsKey("banksigns"))
+        if(event.getShop() == null || !event.getShop().hasMisc("banksigns"))
             return;
         if(!event.isBalanceOrExecution())
             return;
