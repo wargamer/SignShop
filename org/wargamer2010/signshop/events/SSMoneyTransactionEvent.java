@@ -48,6 +48,7 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
         return handlers;
     }
 
+    @Override
     public SignShopPlayer getPlayer() {
         return ssPlayer;
     }
@@ -56,26 +57,32 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
         return bBlock;
     }
 
+    @Override
     public Seller getShop() {
         return seShop;
     }
 
+    @Override
     public double getPrice() {
         return fAmount;
     }
 
+    @Override
     public void setPrice(double pAmount) {
         fAmount = pAmount;
     }
 
+    @Override
     public Block getSign() {
         return bSign;
     }
 
+    @Override
     public String getOperation() {
         return sOperation;
     }
 
+    @Override
     public ItemStack[] getItems() {
         return isItems;
     }

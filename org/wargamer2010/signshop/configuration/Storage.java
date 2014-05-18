@@ -19,9 +19,8 @@ import java.nio.channels.*;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.ConcurrentModificationException;
 import java.util.LinkedHashMap;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.LinkedBlockingQueue;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -34,17 +33,15 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class Storage implements Listener {
-    private FileConfiguration yml;
+public class Storage implements Listener, Runnable {
     private File ymlfile;
+    private LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<FileConfiguration>();
 
-    private static ReentrantLock savelock = new ReentrantLock();
     private static Storage instance = null;
 
     private static Map<Location,Seller> sellers;
     private static String itemSeperator = "&";
 
-    private Boolean safetosave = true;
     private Map<String,HashMap<String,List<String>>> invalidShops = new LinkedHashMap<String, HashMap<String,List<String>>>();
 
     private Storage(File ymlFile) {
@@ -56,7 +53,6 @@ public class Storage implements Listener {
             }
         }
         ymlfile = ymlFile;
-        yml = YamlConfiguration.loadConfiguration(ymlFile);
         sellers = new HashMap <Location,Seller>();
 
         // Load into memory, this also removes invalid signs (hence the backup)
@@ -75,8 +71,10 @@ public class Storage implements Listener {
     }
 
     public static Storage init(File ymlFile) {
-        if(instance == null)
+        if(instance == null) {
             instance = new Storage(ymlFile);
+            Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance);
+        }
         return instance;
     }
 
@@ -196,6 +194,7 @@ public class Storage implements Listener {
     }
 
     private Boolean Load() {
+        FileConfiguration yml = YamlConfiguration.loadConfiguration(ymlfile);
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
         if(sellersection == null)
             return false;
@@ -249,58 +248,50 @@ public class Storage implements Listener {
         }
     }
 
-    private void Save() {
+    public final void Save() {
         Map<String,Object> tempSellers = new HashMap<String,Object>();
+        FileConfiguration config = new YamlConfiguration();
 
-        Seller seller;
-        Map<String,Object> temp;
-        try {
-            for(Location lKey : Storage.sellers.keySet()){
-                temp = new HashMap<String,Object>();
+        for(Location lKey : Storage.sellers.keySet()){
+            Map<String,Object> temp = new HashMap<String,Object>();
 
-                seller = sellers.get(lKey);
-                temp.put("shopworld", seller.getWorld());
-                temp.put("owner", seller.getOwner().GetIdentifier().toString());
-                temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(false)));
+            Seller seller = sellers.get(lKey);
+            temp.put("shopworld", seller.getWorld());
+            temp.put("owner", seller.getOwner().GetIdentifier().toString());
+            temp.put("items", itemUtil.convertItemStacksToString(seller.getItems(false)));
 
-                List<Block> containables = seller.getContainables();
-                String[] sContainables = new String[containables.size()];
-                for(int i = 0; i < containables.size(); i++)
-                    sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
-                temp.put("containables", sContainables);
+            List<Block> containables = seller.getContainables();
+            String[] sContainables = new String[containables.size()];
+            for(int i = 0; i < containables.size(); i++)
+                sContainables[i] = signshopUtil.convertLocationToString(containables.get(i).getLocation());
+            temp.put("containables", sContainables);
 
-                List<Block> activatables = seller.getActivatables();
-                String[] sActivatables = new String[activatables.size()];
-                for(int i = 0; i < activatables.size(); i++)
-                    sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
-                temp.put("activatables", sActivatables);
+            List<Block> activatables = seller.getActivatables();
+            String[] sActivatables = new String[activatables.size()];
+            for(int i = 0; i < activatables.size(); i++)
+                sActivatables[i] = signshopUtil.convertLocationToString(activatables.get(i).getLocation());
+            temp.put("activatables", sActivatables);
 
-                temp.put("sign", signshopUtil.convertLocationToString(lKey));
+            temp.put("sign", signshopUtil.convertLocationToString(lKey));
 
-                Map<String, String> misc = seller.getMisc();
-                if(misc.size() > 0)
-                    temp.put("misc", MapToList(misc));
+            Map<String, String> misc = seller.getMisc();
+            if(misc.size() > 0)
+                temp.put("misc", MapToList(misc));
 
-                // YML Parser really does not like dots in the name
-                tempSellers.put(signshopUtil.convertLocationToString(lKey).replace(".", ""), temp);
-            }
-        } catch(ConcurrentModificationException ex) {
-            // No need to retry because this will be called again, for sure, after the lock is released
-            return;
+            // YML Parser really does not like dots in the name
+            tempSellers.put(signshopUtil.convertLocationToString(lKey).replace(".", ""), temp);
         }
 
-        yml.set("sellers", tempSellers);
-        saveToFile();
+        config.set("sellers", tempSellers);
+        // We can not run the logic above async but we can save to disc on another thread
+        queueSave(config);
     }
 
+    /**
+     * Legacy call, Save can be called directly now
+     */
     public void SafeSave() {
-        // Locking here to make sure the latest version is always saved
-        savelock.lock();
-        try {
-            Save();
-        } finally {
-            savelock.unlock();
-        }
+        Save();
     }
 
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
@@ -310,7 +301,7 @@ public class Storage implements Listener {
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
         Storage.sellers.put(bSign.getLocation(), new Seller(playerId, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
         if(save)
-            this.SafeSave();
+            this.Save();
     }
 
     public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables) {
@@ -351,7 +342,7 @@ public class Storage implements Listener {
         if(Storage.sellers.containsKey(lKey)){
             Storage.sellers.get(lKey).cleanUp();
             Storage.sellers.remove(lKey);
-            this.SafeSave();
+            this.Save();
         }
     }
 
@@ -404,13 +395,32 @@ public class Storage implements Listener {
         return itemSeperator;
     }
 
-    private void saveToFile() {
-        if(!safetosave)
+    @Override
+    public void run() {
+        saveToFile();
+    }
+
+    private void queueSave(FileConfiguration config) {
+        if(config == null)
             return;
+
         try {
-            yml.save(ymlfile);
-        } catch(IOException IO) {
+            saveQueue.put(config);
+        } catch (InterruptedException ex) {
             SignShop.log("Failed to save sellers.yml", Level.WARNING);
+        }
+    }
+
+    private void saveToFile() {
+        while(true) {
+            try {
+                FileConfiguration config = saveQueue.take();
+                config.save(ymlfile);
+            } catch(InterruptedException ex) {
+                SignShop.log("Failed to save sellers.yml", Level.WARNING);
+            } catch (IOException ex) {
+                SignShop.log("Failed to save sellers.yml", Level.WARNING);
+            }
         }
     }
 
