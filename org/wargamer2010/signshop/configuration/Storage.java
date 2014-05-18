@@ -360,8 +360,8 @@ public class Storage implements Listener, Runnable {
     public List<Block> getShopsWithMiscSetting(String key, String value) {
         List<Block> shops = new LinkedList<Block>();
         for(Map.Entry<Location, Seller> entry : sellers.entrySet()) {
-            if(entry.getValue().getMisc().containsKey(key)) {
-                if(entry.getValue().getMisc().get(key).contains(value))
+            if(entry.getValue().hasMisc(key)) {
+                if(entry.getValue().getMisc(key).contains(value))
                     shops.add(entry.getKey().getBlock());
             }
         }

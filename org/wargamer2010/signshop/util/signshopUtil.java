@@ -335,8 +335,8 @@ public class signshopUtil {
 
     public static List<Block> getSignsFromMisc(Seller seller, String miscprop) {
         List<Block> signs = new LinkedList<Block>();
-        if(seller.getMisc().containsKey(miscprop)) {
-            String imploded = seller.getMisc().get(miscprop);
+        if(seller.hasMisc(miscprop)) {
+            String imploded = seller.getMisc(miscprop);
             String[] exploded;
             if(imploded.contains(SignShopArguments.seperator))
                 exploded = imploded.split(SignShopArguments.seperator);
@@ -362,8 +362,8 @@ public class signshopUtil {
 
     public static List<Entity> getEntitiesFromMisc(Seller seller, String miscprop) {
         List<Entity> entities = new LinkedList<Entity>();
-        if(seller.getMisc().containsKey(miscprop)) {
-            String imploded = seller.getMisc().get(miscprop);
+        if(seller.hasMisc(miscprop)) {
+            String imploded = seller.getMisc(miscprop);
             String[] exploded;
             if(imploded.contains(SignShopArguments.seperator))
                 exploded = imploded.split(SignShopArguments.seperator);
