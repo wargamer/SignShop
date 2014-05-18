@@ -121,6 +121,7 @@ public class PlayerMetadata {
      * Called a single time on plugin startup
      * @param pPlugin Plugin
      */
+    @SuppressWarnings("UnusedAssignment") // Assignment is used in case of exception
     public static void convertToUuid(Plugin pPlugin) {
         if(!PlayerIdentifier.GetUUIDSupport())
             return; // Legacy mode

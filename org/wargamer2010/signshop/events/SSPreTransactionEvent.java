@@ -59,14 +59,17 @@ public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
         return handlers;
     }
 
+    @Override
     public double getPrice() {
         return fPrice;
     }
 
+    @Override
     public void setPrice(double fPrice) {
         this.fPrice = fPrice;
     }
 
+    @Override
     public ItemStack[] getItems() {
         return isItems;
     }
@@ -79,6 +82,7 @@ public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
         return activatables;
     }
 
+    @Override
     public SignShopPlayer getPlayer() {
         return ssPlayer;
     }
@@ -87,14 +91,17 @@ public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
         return ssOwner;
     }
 
+    @Override
     public Seller getShop() {
         return seShop;
     }
 
+    @Override
     public Block getSign() {
         return bSign;
     }
 
+    @Override
     public String getOperation() {
         return sOperation;
     }

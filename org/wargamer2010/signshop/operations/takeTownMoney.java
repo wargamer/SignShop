@@ -14,7 +14,6 @@ import com.palmergames.bukkit.towny.object.TownyUniverse;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
-import org.wargamer2010.signshop.util.signshopUtil;
 
 public class takeTownMoney implements SignShopOperation {
 	@Override

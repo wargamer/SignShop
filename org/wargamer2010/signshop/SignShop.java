@@ -223,7 +223,7 @@ public class SignShop extends JavaPlugin{
     public void onDisable() {
         closeHandlers();
         if(store != null)
-            store.SafeSave();
+            store.Save();
         log("Disabled", Level.INFO);
     }
 

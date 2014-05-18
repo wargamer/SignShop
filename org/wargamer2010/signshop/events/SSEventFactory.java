@@ -8,7 +8,6 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.IExpirable;
-import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SSEventFactory {
 

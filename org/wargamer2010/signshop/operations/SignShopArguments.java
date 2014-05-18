@@ -17,7 +17,6 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
-import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
