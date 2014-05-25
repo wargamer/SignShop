@@ -193,11 +193,7 @@ public class SignShopPlayerListener implements Listener {
                 if(!bSetupOK)
                     return;
 
-                SSMoneyTransactionEvent moneyevent = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getMoneyEventType(), SSMoneyRequestType.GetAmount);
-                SignShop.scheduleEvent(moneyevent);
-                ssArgs.getPrice().set(moneyevent.getPrice());
-                ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
-                if(event.isCancelled() || !moneyevent.isHandled())
+                if(!signshopUtil.getPriceFromMoneyEvent(ssArgs))
                     return;
 
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);

@@ -9,6 +9,8 @@ public class givePlayerItems implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.getContainables().isEmpty()) {
+            if(ssArgs.isOperationParameter("allowNoChests"))
+                return true;
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
@@ -18,7 +20,8 @@ public class givePlayerItems implements SignShopOperation {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_empty", ssArgs.getMessageParts()));
             return false;
         }
-        ssArgs.getItems().set(isTotalItems);
+        if(isTotalItems.length > 0)
+            ssArgs.getItems().set(isTotalItems);
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }

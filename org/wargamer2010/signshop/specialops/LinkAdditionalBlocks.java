@@ -91,7 +91,12 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
 
         Boolean bSetupOK = false;
         for (SignShopOperationListItem ssOperation : SignShopOperations) {
-            ssArgs.setOperationParameters(ssOperation.getParameters());
+            List<String> params = ssOperation.getParameters();
+            params.addAll(ssOperation.getParameters());
+            params.add("allowemptychest");
+            params.add("allowNoChests");
+            ssArgs.setOperationParameters(params);
+
             bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
             if (!bSetupOK) {
                 ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
@@ -99,6 +104,11 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
             }
         }
         if (!bSetupOK) {
+            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+            return true;
+        }
+
+        if(!signshopUtil.getPriceFromMoneyEvent(ssArgs)) {
             ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }

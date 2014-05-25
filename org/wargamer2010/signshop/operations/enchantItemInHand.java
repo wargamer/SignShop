@@ -16,6 +16,8 @@ public class enchantItemInHand implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(ssArgs.getContainables().isEmpty()) {
+            if(ssArgs.isOperationParameter("allowNoChests"))
+                return true;
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }

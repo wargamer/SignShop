@@ -199,6 +199,8 @@ public class itemUtil {
     }
 
     public static String itemStackToString(ItemStack[] isStacks) {
+        if(isStacks == null || isStacks.length == 0)
+            return "";
         HashMap<ItemStack, Integer> items = new HashMap<ItemStack, Integer>();
         HashMap<ItemStack, Map<Enchantment,Integer>> enchantments = new HashMap<ItemStack, Map<Enchantment,Integer>>();
         String sItems = "";
