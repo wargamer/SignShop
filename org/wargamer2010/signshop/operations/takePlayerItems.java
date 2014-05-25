@@ -28,7 +28,7 @@ public class takePlayerItems implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.getPlayer().get().getPlayer() == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         if(ssArgs.getItems().get() == null) {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_items_defined_for_shop", ssArgs.getMessageParts()));

@@ -28,7 +28,7 @@ public class giveTownMoney implements SignShopOperation {
 	@Override
 	public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
             SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
-            if (ssPlayer.getPlayer() == null)
+            if(!ssArgs.isPlayerOnline())
                 return true;
 
             MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.GiveToTown);

@@ -9,7 +9,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 public class promotePlayer implements SignShopOperation {
     // Note: promotePlayer works with global permission groups explicitly.
     // It will not add players to local groups unless adding to global groups is not possible
-    
+
     private String getGroupFromLine(Block bSign) {
         Sign sign = (Sign)bSign.getState();
         return sign.getLine(1);
@@ -42,7 +42,7 @@ public class promotePlayer implements SignShopOperation {
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         Player player = ssArgs.getPlayer().get().getPlayer();
-        if(player == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         String groupOnSign = getGroupFromLine(ssArgs.getSign().get());
         ssArgs.setMessagePart("!promoteto", groupOnSign);

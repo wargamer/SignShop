@@ -17,7 +17,7 @@ public class givePlayerXP implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.getPlayer().get().getPlayer() == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         Double XP = signshopUtil.getNumberFromThirdLine(ssArgs.getSign().get());
         if(XP == 0.0) {

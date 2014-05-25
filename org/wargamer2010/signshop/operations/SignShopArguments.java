@@ -228,6 +228,10 @@ public class SignShopArguments {
             getPlayer().get().sendMessage(SignShopConfig.getError(messageName, getMessageParts()));
     }
 
+    public boolean isPlayerOnline() {
+        return (ssPlayer.get() != null && ssPlayer.get().getPlayer() != null && ssPlayer.get().GetIdentifier() != null);
+    }
+
     public boolean tryToApplyPriceMod() {
         if(bPriceModApplied)
             return false;
