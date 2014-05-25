@@ -73,6 +73,11 @@ public class ChangeShopItems implements SignShopSpecialOp {
             return true;
         }
 
+        if(!signshopUtil.getPriceFromMoneyEvent(ssArgs)) {
+            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+            return true;
+        }
+
         SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
         SignShop.scheduleEvent(createdevent);
         if(createdevent.isCancelled()) {

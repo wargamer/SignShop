@@ -102,6 +102,10 @@ public class SignShopArguments {
                     setMessagePart(("!line" + (i+1)), (sLines[i] == null ? "" : sLines[i]));
             }
         }
+
+        if(isItems != null && isItems.get() != null && isItems.get().length > 0) {
+            setMessagePart("!items", itemUtil.itemStackToString(isItems.get()));
+        }
     }
 
     public void reset() {

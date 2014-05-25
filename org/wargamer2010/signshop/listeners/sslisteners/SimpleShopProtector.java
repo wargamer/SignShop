@@ -94,7 +94,9 @@ public class SimpleShopProtector implements Listener {
         Boolean bSetupOK = false;
         for (SignShopOperationListItem ssOperation : SignShopOperations) {
             List<String> params = ssOperation.getParameters();
+            params.addAll(ssOperation.getParameters());
             params.add("allowemptychest");
+            params.add("allowNoChests");
             ssArgs.setOperationParameters(params);
             bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
             if (!bSetupOK) {

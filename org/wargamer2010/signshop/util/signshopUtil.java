@@ -31,6 +31,8 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSLinkEvent;
+import org.wargamer2010.signshop.events.SSMoneyRequestType;
+import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
@@ -89,6 +91,14 @@ public class signshopUtil {
         if(SignShopConfig.getOperationInstances().containsKey(blockName))
             return SignShopConfig.getOperationInstances().get(blockName);
         return null;
+    }
+
+    public static boolean getPriceFromMoneyEvent(SignShopArguments ssArgs) {
+        SSMoneyTransactionEvent moneyevent = SSEventFactory.generateMoneyEvent(ssArgs, ssArgs.getMoneyEventType(), SSMoneyRequestType.GetAmount);
+        SignShop.scheduleEvent(moneyevent);
+        ssArgs.getPrice().set(moneyevent.getPrice());
+        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
+        return ((!moneyevent.isCancelled()) && moneyevent.isHandled());
     }
 
     public static List<SignShopOperationListItem> getSignShopOps(List<String> operation) {

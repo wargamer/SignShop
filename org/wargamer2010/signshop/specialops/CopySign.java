@@ -100,10 +100,17 @@ public class CopySign implements SignShopSpecialOp {
                 return true;
             }
 
+            if(!signshopUtil.getPriceFromMoneyEvent(ssArgs)) {
+                ssPlayer.sendMessage("The new and old operation are not compatible.");
+                revert(shopSign, sToChange);
+                return true;
+            }
+
             SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
             SignShop.scheduleEvent(createdevent);
             if(createdevent.isCancelled()) {
                 ssPlayer.sendMessage("The new and old operation are not compatible.");
+                revert(shopSign, sToChange);
                 return true;
             }
 

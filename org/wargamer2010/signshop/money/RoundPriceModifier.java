@@ -37,6 +37,8 @@ public class RoundPriceModifier implements IMoneyModifier {
     }
 
     private static double roundToTwoDigits(double value, boolean roundDown) {
+        if(value < 0.005)
+            return 0.0d;
         if((((value) % 0.01) - 0.01) > -.0001)
             return value;
         double modifier = roundDown ? (-0.5) : (0.5);
