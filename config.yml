@@ -144,10 +144,9 @@ AllowUnsafeEnchantments: true
 AllowMultiWorldShops: false
 
 # List items not allowed to be used in shops on new lines
-# All items can be listed by item number (http://www.minecraftwiki.net/wiki/Data_values)
-# Or by item name (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
+# All items can only be listed by item name since IDs are deprecated (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
 Blacklisted_items:
-- 0
+- AIR
 
 # If set to true, only the items listed under Blacklist will be allowed for use in shops (Default = false)
 UseBlacklistAsWhitelist: false
