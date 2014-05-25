@@ -26,7 +26,7 @@ public class takeTownMoney implements SignShopOperation {
 	@Override
 	public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
             SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
-            if (ssPlayer.getPlayer() == null)
+            if(!ssArgs.isPlayerOnline())
                 return true;
 
             Double fPrice = MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.TakeFromTown);

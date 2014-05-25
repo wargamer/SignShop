@@ -11,7 +11,7 @@ public class takeItemInHand implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.getPlayer().get().getPlayer() == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         if(ssArgs.getPlayer().get().getItemInHand() == null) {
             ssArgs.sendFailedRequirementsMessage("no_item_in_hand");

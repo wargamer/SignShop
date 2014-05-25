@@ -24,7 +24,7 @@ public class oneTime implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         String param = getParam(ssArgs);
         SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
-        if(ssPlayer == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         if(ssPlayer.hasMeta(param)) {
             ssArgs.sendFailedRequirementsMessage("only_one_time");

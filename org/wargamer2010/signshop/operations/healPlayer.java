@@ -8,7 +8,7 @@ public class healPlayer implements SignShopOperation {
 
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
-        if(ssArgs.getPlayer().get().getPlayer() == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
         if(ssArgs.getPlayer().get().getPlayer().getHealth() >= 20) {
             ssArgs.sendFailedRequirementsMessage("already_full_health");

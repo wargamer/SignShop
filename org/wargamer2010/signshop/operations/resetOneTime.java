@@ -28,12 +28,12 @@ public class resetOneTime implements SignShopOperation {
             SignShop.log("Missing parameter for resetOneTime, please check the config.yml and Quick Reference.", Level.WARNING);
             return false;
         }
+        if(!ssArgs.isPlayerOnline())
+            return true;
 
         String param = getParam(ssArgs);
         ssArgs.setMessagePart("!param", param);
         SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
-        if(ssPlayer == null)
-            return true;
         if(!ssPlayer.hasMeta(param)) {
             ssArgs.sendFailedRequirementsMessage("nothing_to_reset_ontime");
             return false;

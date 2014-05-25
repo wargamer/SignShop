@@ -36,7 +36,7 @@ public class cooldown implements SignShopOperation {
         SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         ssArgs.setMessagePart("!param", param);
 
-        if(ssPlayer == null)
+        if(!ssArgs.isPlayerOnline())
             return true;
 
         if(!ssPlayer.hasMeta(param))
