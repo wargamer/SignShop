@@ -11,9 +11,12 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.*;
 
 import com.kellerkindt.scs.*;
+import java.util.logging.Level;
 import org.bukkit.Bukkit;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.player.PlayerIdentifier;
 
 public class LinkShowcase implements SignShopSpecialOp {
     @Override
@@ -46,13 +49,18 @@ public class LinkShowcase implements SignShopSpecialOp {
 
         if(Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone") == null)
             return false;
-        ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
-        com.kellerkindt.scs.internals.Storage storage = new com.kellerkindt.scs.internals.Storage(1, Integer.toString(bStep.hashCode()));
+        if(!PlayerIdentifier.GetUUIDSupport()) {
+            SignShop.log("No UUID support detected but ShowCaseStandalone requires it. Please downgrade ShowCaseStandalone or upgrade Bukkit.", Level.WARNING);
+            return false;
+        }
 
-        com.kellerkindt.scs.shops.Shop p = new com.kellerkindt.scs.shops.DisplayShop(scs, storage);
+        ShowCaseStandalone scs = (ShowCaseStandalone) Bukkit.getServer().getPluginManager().getPlugin("ShowCaseStandalone");
+
+        com.kellerkindt.scs.shops.Shop p = new com.kellerkindt.scs.shops.DisplayShop(bStep.getWorld().getUID(),
+                ssPlayer.getPlayer().getUniqueId(), bStep.getLocation(), showcasing);
         p.setItemStack(showcasing);
-        p.setLocation(bStep.getLocation());
-        p.setBlock(bStep);
+        p.setAmount(1);
+        p.setVisible(true);
         scs.getShopHandler().addShop(p);
         scs.getShopHandler().showAll();
         seller.addMisc("showcaselocation", signshopUtil.convertLocationToString(bStep.getLocation()));
