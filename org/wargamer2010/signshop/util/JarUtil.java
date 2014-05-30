@@ -62,13 +62,20 @@ public class JarUtil {
     }
 
     private static void addClassPath(final URL url) throws IOException {
-        final URLClassLoader sysloader = (URLClassLoader) ClassLoader.getSystemClassLoader();
+        URLClassLoader loader = (URLClassLoader) SignShop.class.getClassLoader();
+        URLClassLoader sysloader = (URLClassLoader) ClassLoader.getSystemClassLoader();
+        URLClassLoader loaderToUse;
+        if(loader != sysloader && loader != null)
+            loaderToUse = loader;
+        else
+            loaderToUse = sysloader;
+
         final Class<URLClassLoader> sysclass = URLClassLoader.class;
         try {
             final Method method = sysclass.getDeclaredMethod("addURL",
                     new Class<?>[] { URL.class });
             method.setAccessible(true);
-            method.invoke(sysloader, new Object[] { url });
+            method.invoke(loaderToUse, new Object[] { url });
         } catch (final Throwable t) {
             throw new IOException("Error adding " + url + " to system classloader");
         }
