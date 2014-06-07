@@ -242,11 +242,11 @@ public class TimeManager extends TimerTask {
 
     private void scheduleCheck() {
         boolean ranOperation = false;
-        Method scheduleAsync = fetchSchedulerMethod("runTaskTimerAsynchronously");
+        Method scheduleAsync = fetchSchedulerMethod("runTaskTimer");
         String reason = "Method was not found";
 
         if(scheduleAsync == null)
-            scheduleAsync = fetchSchedulerMethod("scheduleAsyncRepeatingTask");
+            scheduleAsync = fetchSchedulerMethod("scheduleSyncRepeatingTask");
 
         if(scheduleAsync != null) {
             try {

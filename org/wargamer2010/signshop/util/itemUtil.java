@@ -24,6 +24,7 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
+import org.wargamer2010.signshop.blocks.NBTUtil;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -475,6 +476,16 @@ public class itemUtil {
         return null;
     }
 
+    public static String Join(String[] arr, int fromIndex) {
+        StringBuilder builder = new StringBuilder(400);
+        if(fromIndex > arr.length || fromIndex < 0)
+            return "";
+        for(int i = fromIndex; i < arr.length; i++) {
+            builder.append(arr[i]);
+        }
+        return builder.toString();
+    }
+
     public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
         IItemTags tags = BookFactory.getItemTags();
         ItemStack isItems[] = new ItemStack[sItems.size()];
@@ -489,6 +500,15 @@ public class itemUtil {
                         Short.parseShort(sItemprops[2])
                 );
                 isItems[i].getData().setData(new Byte(sItemprops[3]));
+                if(sItemprops.length > 7) {
+                    // If the NBT output contained our seperator, we'll just join the rest
+                    // of the array into one string since we're not expecting anything after it
+                    // other than dumped NBT data
+                    String joined = Join(sItemprops, 7);
+                    ItemStack stack = NBTUtil.getStackFromNBT(joined);
+                    if(stack != null)
+                        isItems[i] = stack;
+                }
                 if(sItemprops.length > 4)
                     safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
                 if(sItemprops.length > 5) {
@@ -538,7 +558,8 @@ public class itemUtil {
                         + isCurrent.getData().getData() + Storage.getItemSeperator()
                         + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
                         + ID + Storage.getItemSeperator()
-                        + metaID));
+                        + metaID + Storage.getItemSeperator()
+                        + NBTUtil.getNBTAsString(isCurrent)));
             }
 
         }
