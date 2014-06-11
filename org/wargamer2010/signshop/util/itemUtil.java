@@ -13,6 +13,7 @@ import org.bukkit.material.SimpleAttachableMaterialData;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -38,18 +39,25 @@ public class itemUtil {
 
     }
 
-    public static ItemStack[] getSingleAmount(ItemStack[] isItems) {
-        List<ItemStack> items = new ArrayList<ItemStack>();
-        IItemTags tags = BookFactory.getItemTags();
+    /**
+     * Returns the minimum amount of ItemStacks needed to function with RandomItem
+     *
+     * @param isItems Stacks to filter
+     * @return The minimum ItemStacks needed
+     */
+    public static ItemStack[] getMinimumAmount(ItemStack[] isItems) {
+        HashMap<ItemStack, Integer> materialByMaximumAmount = new LinkedHashMap<ItemStack, Integer>();
+
         for(ItemStack item: isItems) {
             ItemStack isBackup = getSingleAmountOfStack(item);
-            if(!items.contains(isBackup))
-                items.add(isBackup);
+            if(!materialByMaximumAmount.containsKey(isBackup) || materialByMaximumAmount.get(isBackup) < item.getAmount())
+                materialByMaximumAmount.put(isBackup, item.getAmount());
         }
-        ItemStack[] isBackupToTake = new ItemStack[items.size()];
+        ItemStack[] isBackupToTake = new ItemStack[materialByMaximumAmount.size()];
         int i = 0;
-        for(ItemStack entry : items) {
-            isBackupToTake[i] = entry;
+        for(Map.Entry<ItemStack, Integer> entry : materialByMaximumAmount.entrySet()) {
+            entry.getKey().setAmount(entry.getValue());
+            isBackupToTake[i] = entry.getKey();
             i++;
         }
         return isBackupToTake;
@@ -85,10 +93,6 @@ public class itemUtil {
             }
         }
         return null;
-    }
-
-    public static Boolean singeAmountStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, boolean bTakeOrGive) {
-        return isStockOK(iiInventory, getSingleAmount(isItemsToTake), bTakeOrGive);
     }
 
     public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, boolean bTakeOrGive) {
