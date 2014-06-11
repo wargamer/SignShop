@@ -18,7 +18,7 @@ public class RandomItem implements SignShopOperation {
             return false;
         }
 
-        ssArgs.getItems().set(itemUtil.getSingleAmount(ssArgs.getItems().get()));
+        ssArgs.getItems().set(itemUtil.getMinimumAmount(ssArgs.getItems().get()));
         return true;
     }
 
