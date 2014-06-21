@@ -174,10 +174,19 @@ public class SignShopPlayer {
             return true;
         Boolean isOP = isOpRaw();
         Boolean OPOverride = SignShopConfig.getOPOverride();
+
         // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
         if(SignShop.usePermissions() && isOP && !OPOverride)
             setOp(false);
+
+        // Having Signshop.Superadmin while Permissions are in use should allow you to do everything with SignShop
+        // And since the node is explicitly given to a player, the OPOverride setting is not relevant
+        if(SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, "signshop.superadmin")) {
+            setOp(isOP);
+            return true;
+        }
+        
         // If we're using Permissions, OPOverride is enabled and the Player has OP, he can do everything
         if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
