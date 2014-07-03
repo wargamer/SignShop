@@ -186,7 +186,7 @@ public class SignShopPlayer {
             setOp(isOP);
             return true;
         }
-        
+
         // If we're using Permissions, OPOverride is enabled and the Player has OP, he can do everything
         if(SignShop.usePermissions() && OPOverride && isOP)
             return true;
@@ -310,6 +310,7 @@ public class SignShopPlayer {
         String[] sGroups = getPlayerGroups();
         if(sGroups == null) return fPricemod;
 
+        boolean firstRun = true;
         if(sGroups.length == 0)
             return fPricemod;
         for(int i = 0; i < sGroups.length; i++) {
@@ -317,10 +318,11 @@ public class SignShopPlayer {
             if(SignShopConfig.getPriceMultipliers().containsKey(sGroup) && SignShopConfig.getPriceMultipliers().get(sGroup).containsKey(sOperation)) {
                 fTemp = SignShopConfig.getPriceMultipliers().get(sGroup).get(sOperation);
 
-                if(bBuyOperation && fTemp < fPricemod)
+                if(bBuyOperation && (fTemp < fPricemod || firstRun))
                     fPricemod = fTemp;
-                else if(!bBuyOperation && fTemp > fPricemod)
+                else if(!bBuyOperation && (fTemp > fPricemod || firstRun))
                     fPricemod = fTemp;
+                firstRun = false;
             }
         }
         return fPricemod;
