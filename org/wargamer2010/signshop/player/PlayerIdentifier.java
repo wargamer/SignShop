@@ -103,9 +103,11 @@ public class PlayerIdentifier {
         if(GetUUIDSupport()) {
             UUID uuid = null;
             for(OfflinePlayer player : Bukkit.getServer().getOfflinePlayers()) {
-                if(player != null && player.getName() != null) {
-                    if(player.getName().equalsIgnoreCase(name))
-                        uuid = player.getUniqueId();
+                if(player != null){
+                    if(player.getName() != null) {
+                        if(player.getName().equalsIgnoreCase(name))
+                           uuid = player.getUniqueId();
+                    }
                 }
             }
             if(uuid != null)
