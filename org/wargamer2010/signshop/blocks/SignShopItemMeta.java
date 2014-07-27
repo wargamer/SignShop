@@ -1,6 +1,7 @@
 
 package org.wargamer2010.signshop.blocks;
 
+import com.flobi.WhatIsIt.WhatIsIt;
 import com.google.common.collect.ImmutableList;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,6 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
@@ -26,9 +28,9 @@ import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
-
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.util.versionUtil;
+
 public class SignShopItemMeta {
     private static final String listSeperator = "~";
     private static final String valueSeperator = "-";
@@ -99,7 +101,11 @@ public class SignShopItemMeta {
         String nameFromWeb = WebUtil.getNameFromWeb(stack);
         String txtcolor = txtColor.toString();
         String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
-        String normal = nameFromWeb.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : nameFromWeb;
+        String nameFromWhatIsIt = "Unknown";
+        if(Bukkit.getServer().getPluginManager().isPluginEnabled("WhatIsIt"))
+        	nameFromWhatIsIt = WhatIsIt.itemName(stack);
+        String itemName = nameFromWhatIsIt.isEmpty() || (nameFromWhatIsIt.compareTo("Unknown")) == 0 ? nameFromWeb : nameFromWhatIsIt;
+        String normal = itemName.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : itemName;
         normal = WebUtil.translateFromEnglish(normal);
         String displayname = "";
 
