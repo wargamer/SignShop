@@ -16,7 +16,6 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
 public class SignShopPlayer {
-    private Player playerObject = null;
     private String playername = "";
     private PlayerIdentifier playerId = null;
     private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
@@ -29,16 +28,14 @@ public class SignShopPlayer {
     public SignShopPlayer(PlayerIdentifier id) {
         if(id == null)
             return;
-        playerObject = id.getPlayer();
         playername = id.getName();
         playerId = id;
     }
 
     public SignShopPlayer(Player pPlayer) {
-        playerObject = pPlayer;
-        if(playerObject != null) {
+        if(pPlayer != null) {
             playerId = new PlayerIdentifier(pPlayer);
-            playername = playerObject.getName();
+            playername = playerId.getName();
         }
     }
 
@@ -53,7 +50,6 @@ public class SignShopPlayer {
     public SignShopPlayer(String name) {
         SignShopPlayer player = PlayerIdentifier.getByName(name);
         if(player != null) {
-            playerObject = player.getPlayer();
             playerId = player.GetIdentifier();
             playername = player.getName();
         }
@@ -67,7 +63,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null)
+        if(sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null)
             return;
         if(SignShopConfig.getMessageCooldown() <= 0) {
             sendNonDelayedMessage(sMessage);
@@ -79,10 +75,10 @@ public class SignShopPlayer {
     }
 
     public void sendNonDelayedMessage(String sMessage) {
-        if(sMessage == null || sMessage.trim().isEmpty() || playerObject == null || ignoreMessages)
+        if(sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
         String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
-        playerObject.sendMessage(message);
+        getPlayer().sendMessage(message);
     }
 
     public String getName() {
@@ -90,11 +86,11 @@ public class SignShopPlayer {
     }
 
     public Player getPlayer() {
-        return playerObject;
+        return playerId == null ? null : playerId.getPlayer();
     }
 
     public World getWorld() {
-        return (playerObject == null) ? null : playerObject.getWorld();
+        return (getPlayer() == null) ? null : getPlayer().getWorld();
     }
 
     public boolean compareTo(SignShopPlayer other) {
@@ -108,12 +104,12 @@ public class SignShopPlayer {
     public void setOp(Boolean OP) {
         if(playername.isEmpty())
             return;
-        if(playerObject == null) {
+        if(getPlayer() == null) {
             OfflinePlayer player = playerId.getOfflinePlayer();
             if(player != null)
                 player.setOp(OP);
         } else {
-            playerObject.setOp(OP);
+            getPlayer().setOp(OP);
         }
     }
 
@@ -125,9 +121,9 @@ public class SignShopPlayer {
     }
 
     public boolean isOp() {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return false;
-        return isOp(playerObject.getWorld());
+        return isOp(getPlayer().getWorld());
     }
 
 
@@ -147,12 +143,12 @@ public class SignShopPlayer {
     private boolean isOpRaw() {
         if(playername.isEmpty())
             return false;
-        if(playerObject == null) {
+        if(getPlayer() == null) {
             OfflinePlayer offplayer = playerId.getOfflinePlayer();
             return offplayer != null && offplayer.isOp();
         }
         else
-            return playerObject.isOp();
+            return getPlayer().isOp();
     }
 
     public boolean hasBypassShopPlots(String pluginName) {
@@ -164,13 +160,13 @@ public class SignShopPlayer {
     }
 
     public Boolean hasPerm(String perm, Boolean OPOperation) {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return false;
-        return hasPerm(perm, playerObject.getWorld(), OPOperation);
+        return hasPerm(perm, getPlayer().getWorld(), OPOperation);
     }
 
     public boolean hasPerm(String perm, World world, Boolean OPOperation) {
-        if(playername.isEmpty())
+        if(playername == null || playername.isEmpty())
             return true;
         Boolean isOP = isOpRaw();
         Boolean OPOverride = SignShopConfig.getOPOverride();
@@ -276,25 +272,25 @@ public class SignShopPlayer {
     }
 
     public void givePlayerItems(ItemStack[] isItemsToTake) {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        playerObject.getInventory().addItem(isBackup);
+        getPlayer().getInventory().addItem(isBackup);
     }
 
     public void takePlayerItems(ItemStack[] isItemsToTake) {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return;
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        playerObject.getInventory().removeItem(isBackup);
+        getPlayer().getInventory().removeItem(isBackup);
     }
 
     private String[] getPlayerGroups() {
         String[] sGroups = null;
-        if(playerObject == null)
+        if(getPlayer() == null)
             return sGroups;
         try {
-            sGroups = Vault.getPermission().getPlayerGroups(playerObject);
+            sGroups = Vault.getPermission().getPlayerGroups(getPlayer());
         } catch(UnsupportedOperationException UnsupportedEX) {
             return sGroups;
         }
@@ -305,7 +301,7 @@ public class SignShopPlayer {
         Double fPricemod = 1.0d;
         Double fTemp;
 
-        if(Vault.getPermission() == null || playerObject == null)
+        if(Vault.getPermission() == null || getPlayer() == null)
             return fPricemod;
         String[] sGroups = getPlayerGroups();
         if(sGroups == null) return fPricemod;
@@ -358,15 +354,15 @@ public class SignShopPlayer {
     }
 
     public ItemStack[] getInventoryContents() {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return new ItemStack[0];
-        return playerObject.getInventory().getContents();
+        return getPlayer().getInventory().getContents();
     }
 
     public void setInventoryContents(ItemStack[] newContents) {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return;
-        playerObject.getInventory().setContents(newContents);
+        getPlayer().getInventory().setContents(newContents);
     }
 
     public boolean playerExistsOnServer() {
@@ -398,9 +394,9 @@ public class SignShopPlayer {
     }
 
     public ItemStack getItemInHand() {
-        if(playerObject == null)
+        if(getPlayer() == null)
             return null;
-        ItemStack stack = playerObject.getItemInHand();
+        ItemStack stack = getPlayer().getItemInHand();
         if(stack.getType() == Material.getMaterial("AIR"))
             return null;
         return stack;
