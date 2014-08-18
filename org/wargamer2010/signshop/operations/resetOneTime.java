@@ -2,22 +2,13 @@ package org.wargamer2010.signshop.operations;
 
 import java.util.logging.Level;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class resetOneTime implements SignShopOperation {
-
-    private String getParam(SignShopArguments ssArgs) {
-        String rawparam = ssArgs.getOperation().get().toLowerCase();
-        if(ssArgs.hasOperationParameters())
-            rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        return rawparam;
-    }
-
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
+        signshopUtil.getParam(ssArgs);
         return true;
     }
 
@@ -31,8 +22,7 @@ public class resetOneTime implements SignShopOperation {
         if(!ssArgs.isPlayerOnline())
             return true;
 
-        String param = getParam(ssArgs);
-        ssArgs.setMessagePart("!param", param);
+        String param = signshopUtil.getParam(ssArgs);
         SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         if(!ssPlayer.hasMeta(param)) {
             ssArgs.sendFailedRequirementsMessage("nothing_to_reset_ontime");
@@ -43,8 +33,7 @@ public class resetOneTime implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        String param = getParam(ssArgs);
-        ssArgs.setMessagePart("!param", param);
+        String param = signshopUtil.getParam(ssArgs);
         SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
         boolean ok = ssPlayer.removeMeta(param);
         if(!ok)
