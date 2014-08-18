@@ -616,4 +616,22 @@ public class signshopUtil {
         }
         return (1.0d - (totalmod / totalamount));
     }
+
+    /**
+     * Gets the first operation parameter or gets operation name, replaces the placeholders
+     * and writes it to the !param message part.
+     *
+     * @param ssArgs SignShopArguments
+     * @return The first operation parameter or the operation name
+     */
+    public static String getParam(SignShopArguments ssArgs) {
+        String rawparam = ssArgs.getOperation().get().toLowerCase();
+        if(ssArgs.hasOperationParameters())
+            rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        if(rawparam != null && !rawparam.isEmpty())
+            ssArgs.setMessagePart("!param", rawparam);
+        return rawparam;
+    }
 }

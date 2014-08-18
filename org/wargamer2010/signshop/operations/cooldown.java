@@ -27,6 +27,9 @@ public class cooldown implements SignShopOperation {
 
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
+        String param = ("cooldown_" + ssArgs.getOperation().get());
+        ssArgs.setMessagePart("!param", param);
+        
         return (getCooldown(ssArgs) > 0);
     }
 
