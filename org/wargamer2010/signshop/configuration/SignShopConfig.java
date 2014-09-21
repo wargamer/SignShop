@@ -20,6 +20,8 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.TreeMap;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -576,9 +578,14 @@ public class SignShopConfig {
 
     public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
         String message = pMessage;
+
         if(messageParts == null)
             return message;
-        for(Map.Entry<String, String> part : messageParts.entrySet()) {
+
+        TreeMap<String, String> temp = new TreeMap<String, String>(new StringLengthComparator());
+        temp.putAll(messageParts);
+
+        for(Map.Entry<String, String> part : temp.entrySet()) {
             if(part != null && part.getKey() != null && part.getValue() != null)
                 message = message.replace(part.getKey(), part.getValue());
         }
@@ -757,5 +764,19 @@ public class SignShopConfig {
 
     public static boolean isOPMaterial(Material check) {
         return (check == updateMaterial || check == linkMaterial);
+    }
+
+    /**
+     * Orders strings by their length from long to short
+     */
+    private static class StringLengthComparator implements Comparator<String> {
+        @Override
+        public int compare(String s1, String s2) {
+            int s2Length = s2.length();
+            int s1Length = s1.length();
+            if(s2Length == s1Length)
+                return -1;
+            return s2Length - s1Length;
+        }
     }
 }
