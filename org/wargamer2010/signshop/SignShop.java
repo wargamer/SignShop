@@ -263,9 +263,11 @@ public class SignShop extends JavaPlugin{
         if(SignShopConfig.getEnableDynmapSupport())
             pm.registerEvents(dmm, this);
         if(SignShopConfig.getEnableShopPlotSupport()) {
-            pm.registerEvents(new WorldGuardChecker(), this);
             pm.registerEvents(new TownyChecker(), this);
         }
+        if(SignShopConfig.getEnableWGRegionSupport()) {
+        	pm.registerEvents(new WorldGuardChecker(), this);
+        }        
 
         // Money Transactions Types
         pm.registerEvents(new DefaultMoneyTransaction(), this);

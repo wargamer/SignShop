@@ -72,6 +72,7 @@ public class SignShopConfig {
     private static boolean EnableDynmapSupport = false;
     private static boolean EnableTutorialMessages = true;
     private static boolean EnableShopPlotSupport = true;
+    private static boolean EnableWGRegionSupport = true;
     private static boolean EnableShopOwnerProtection = true;
     private static boolean EnableGoogleTranslation = false;
     private static boolean EnableNamesFromTheWeb = false;
@@ -257,6 +258,7 @@ public class SignShopConfig {
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
         EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
         EnableShopPlotSupport = ymlThing.getBoolean("EnableShopPlotSupport", EnableShopPlotSupport);
+        EnableWGRegionSupport = ymlThing.getBoolean("EnableWGRegionSupport", EnableWGRegionSupport);
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
         EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
         EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
@@ -728,6 +730,10 @@ public class SignShopConfig {
 
     public static Boolean getEnableShopPlotSupport() {
         return EnableShopPlotSupport;
+    }
+    
+    public static Boolean getEnableWGRegionSupport() {
+        return EnableWGRegionSupport;
     }
 
     public static Boolean getEnableShopOwnerProtection() {
