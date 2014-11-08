@@ -17,7 +17,7 @@ public class GriefPreventionHook implements Hook {
         if(HookManager.getHook("GriefPrevention") == null)
             return true;
         GriefPrevention plugin = (GriefPrevention)HookManager.getHook("GriefPrevention");
-        return (plugin.allowBuild(player, block.getLocation()) == null);
+        return (plugin.allowBuild(player, block.getLocation(), block.getType()) == null);
     }
 
     @Override
