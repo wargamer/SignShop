@@ -167,6 +167,7 @@ EnableDynmapSupport: true
 # Currently supports Worldguard's "allow-shop" flag, and Towny's shop plots
 # Can be bypassed with the SignShop.BypassShopPlots.* permission
 EnableShopPlotSupport: false
+EnableWGRegionSupport: false
 
 # Automatically add a LWC protection to a chest when it is linked (Default = false)
 EnableAutomaticLock: false
