@@ -10,6 +10,9 @@ import java.util.Arrays;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
+import static org.wargamer2010.signshop.operations.SignShopArguments.seperator;
+import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
@@ -55,6 +58,13 @@ public class Chest implements SignShopOperation {
         List<Block> containables = new LinkedList<Block>();
         containables.add(bHolder);
         ssArgs.getContainables().set(containables);
+
+        // In case the next operation doesn't write to !items, in other cases it will be overwritten (by f.e. takePlayerItems)
+        ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.getContainables().get());
+        if(isTotalItems.length > 0) {
+            ssArgs.setMessagePart("!items", itemUtil.itemStackToString(isTotalItems));
+            ssArgs.miscSettings.put("chest" + iChestnumber, signshopUtil.implode(itemUtil.convertItemStacksToString(isTotalItems), seperator));
+        }
 
         // Since we'll be requesting the MetaID before the Seller is created, we need to register the items here
         Seller.storeMeta(itemUtil.getAllItemStacksForContainables(containables));
