@@ -38,6 +38,7 @@ public class Storage implements Listener, Runnable {
     private LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<FileConfiguration>();
 
     private static Storage instance = null;
+    private static int taskId = 0;
 
     private static Map<Location,Seller> sellers;
     private static String itemSeperator = "&";
@@ -73,9 +74,22 @@ public class Storage implements Listener, Runnable {
     public static Storage init(File ymlFile) {
         if(instance == null) {
             instance = new Storage(ymlFile);
-            Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance);
+            taskId = Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance).getTaskId();
         }
         return instance;
+    }
+
+    public static void dispose() {
+        instance = null;
+        if(taskId != 0) {
+            try {
+                Bukkit.getScheduler().cancelTask(taskId);
+                SignShop.log("Successfully cancelled Async Storage task with ID: " + taskId, Level.INFO);
+            } catch(Exception ex) {
+                SignShop.log("Failed to cancel Storage task because: " + ex.getMessage(), Level.WARNING);
+            }
+        }
+        taskId = 0;
     }
 
     public static Storage get() {
