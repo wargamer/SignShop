@@ -51,6 +51,12 @@ public class Chest implements SignShopOperation {
 
         Block bHolder = checkChestAmount(ssArgs, iChestnumber);
         if(bHolder == null) {
+            if(ssArgs.isOperationParameter("allowNoChests")) {
+                List<Block> containables = new LinkedList<Block>();
+                ssArgs.getContainables().set(containables);
+                return true;
+            }
+
             ssArgs.getPlayer().get().sendMessage("You need at least " + (iChestnumber) + " chest(s) to setup this shop!");
             return false;
         }
