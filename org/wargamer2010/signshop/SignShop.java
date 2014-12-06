@@ -1,27 +1,27 @@
 package org.wargamer2010.signshop;
 
-import org.wargamer2010.signshop.configuration.Storage;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.PluginManager;
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.*;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import java.io.IOException;
-import java.io.File;
-import java.util.logging.*;
-import java.util.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import org.wargamer2010.signshop.listeners.*;
 import org.bukkit.event.Event;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
-import org.wargamer2010.signshop.commands.CommandDispatcher;
+import org.wargamer2010.signshop.commands.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.metrics.setupMetrics;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
@@ -30,6 +30,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
+import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.util.versionUtil;
 import org.wargamer2010.skript.EvtSSPretransaction;
 
@@ -55,6 +56,9 @@ public class SignShop extends JavaPlugin{
 
     // Skript
     private static boolean registeredWithSkript = false;
+
+    // Commands
+    private static CommandDispatcher commandDispatcher = new CommandDispatcher();
 
     //Logging
     public void log(String message, Level level,int tag) {
@@ -115,11 +119,12 @@ public class SignShop extends JavaPlugin{
                 log("Could not start Metrics, see http://mcstats.org for more information.", Level.INFO);
         }
 
+        setupCommands();
+
         SignShopConfig.init();
         SignShopBooks.init();
         PlayerMetadata.init();
         SignShopItemMeta.init();
-        CommandDispatcher.init();
         WebUtil.init();
         ColorUtil.init();
         MoneyModifierManager.init();
@@ -177,23 +182,7 @@ public class SignShop extends JavaPlugin{
         String commandName = cmd.getName().toLowerCase();
         if(!commandName.equalsIgnoreCase("signshop"))
             return true;
-        SignShopPlayer player = null;
-        if(sender instanceof Player)
-            player = new SignShopPlayer((Player) sender);
-        String[] remainingArgs;
-        String subCommandName;
-        if(args.length == 0) {
-            subCommandName = "";
-            remainingArgs = new String[0];
-        } else {
-            subCommandName = args[0].toLowerCase();
-            remainingArgs = new String[args.length-1];
-            if(args.length > 1) {
-                for(int i = 1; i < args.length; i++)
-                    remainingArgs[i-1] = args[i].toLowerCase();
-            }
-        }
-        return CommandDispatcher.handle(subCommandName, remainingArgs, player);
+        return commandUtil.handleCommand(sender, cmd, commandLabel, args, commandDispatcher);
     }
 
 
@@ -242,6 +231,19 @@ public class SignShop extends JavaPlugin{
             log("Could not hook into Vault's Economy!", Level.WARNING);
     }
 
+    private void setupCommands() {
+        commandDispatcher.registerHandler("stats", StatsHandler.getInstance());
+        commandDispatcher.registerHandler("version", StatsHandler.getInstance());
+        commandDispatcher.registerHandler("about", StatsHandler.getInstance());
+        commandDispatcher.registerHandler("reload", ReloadHandler.getInstance());
+        commandDispatcher.registerHandler("tutorial", TutorialHandler.getInstance());
+        commandDispatcher.registerHandler("help", HelpHandler.getInstance());
+        commandDispatcher.registerHandler("sign", HelpHandler.getInstance());
+        commandDispatcher.registerHandler("list", HelpHandler.getInstance());
+        commandDispatcher.registerHandler("unlink", UnlinkHandler.getInstance());
+        commandDispatcher.registerHandler("", HelpHandler.getInstance());
+    }
+
     private void registerSSListeners() {
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new SimpleBlacklister(), this);
@@ -280,6 +282,10 @@ public class SignShop extends JavaPlugin{
 
     public static TimeManager getTimeManager() {
         return manager;
+    }
+
+    public static CommandDispatcher getCommandDispatcher() {
+        return commandDispatcher;
     }
 
     private class TransferFormatter extends Formatter {

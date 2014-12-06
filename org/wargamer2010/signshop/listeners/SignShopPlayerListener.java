@@ -133,7 +133,7 @@ public class SignShopPlayerListener implements Listener {
                 String[] args = new String[] {
                     sOperation
                 };
-                CommandDispatcher.handle("sign", args, ssPlayer);
+                SignShop.getCommandDispatcher().handle("sign", args, ssPlayer);
             }
         }
     }
