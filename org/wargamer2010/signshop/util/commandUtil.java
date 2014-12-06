@@ -6,7 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
 import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.commands.CommandDispatcher;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class commandUtil {
@@ -69,8 +73,6 @@ public class commandUtil {
     }
 
     public static String getAllCommands() {
-        StringBuilder builder = new StringBuilder(200);
-        builder.append("Available Commands: ");
         List<String> commands = new LinkedList<String>();
         commands.add("help~");
         commands.add("list~(Gives a list of signs)");
@@ -78,10 +80,16 @@ public class commandUtil {
         commands.add("reload~(Reloads the signshop configs)");
         commands.add("[about|version]~(Gives version information about signshop)");
         commands.add("tutorial [on|off]~(Toggles the help message on sign creation)");
+        return formatAllCommands(commands, RootCommand);
+    }
+
+    public static String formatAllCommands(List<String> commands, String rootCommand) {
+        StringBuilder builder = new StringBuilder(200);
+        builder.append("Available Commands: ");
         for(String comm : commands) {
             builder.append(ChatColor.GOLD);
             builder.append("\n/");
-            builder.append(RootCommand);
+            builder.append(rootCommand);
             builder.append(" ");
             String[] parts = comm.split("~");
             builder.append(parts[0]);
@@ -95,4 +103,23 @@ public class commandUtil {
         return builder.toString();
     }
 
+    public static boolean handleCommand(CommandSender sender, Command cmd, String commandLabel, String args[], CommandDispatcher commandDispatcher) {
+        SignShopPlayer player = null;
+        if(sender instanceof Player)
+            player = new SignShopPlayer((Player) sender);
+        String[] remainingArgs;
+        String subCommandName;
+        if(args.length == 0) {
+            subCommandName = "";
+            remainingArgs = new String[0];
+        } else {
+            subCommandName = args[0].toLowerCase();
+            remainingArgs = new String[args.length-1];
+            if(args.length > 1) {
+                for(int i = 1; i < args.length; i++)
+                    remainingArgs[i-1] = args[i].toLowerCase();
+            }
+        }
+        return commandDispatcher.handle(subCommandName, remainingArgs, player);
+    }
 }
