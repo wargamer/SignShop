@@ -108,7 +108,7 @@ public class Vault {
         Permission perm = getPermission();
         if(perm == null || !perm.hasGroupSupport())
             return false;
-        return perm.playerRemoveGroup(nullString, player.getName(), group) || perm.playerRemoveGroup(player, group);
+        return perm.playerRemoveGroup(nullString, player, group) || perm.playerRemoveGroup(player, group);
     }
 
     /**
@@ -124,7 +124,7 @@ public class Vault {
         Permission perm = getPermission();
         if(perm == null || !perm.hasGroupSupport())
             return false;
-        return perm.playerAddGroup(nullString, player.getName(), group) || perm.playerAddGroup(player, group);
+        return perm.playerAddGroup(nullString, player, group) || perm.playerAddGroup(player, group);
     }
 
     /**
@@ -152,7 +152,7 @@ public class Vault {
         Permission perm = getPermission();
         if(perm == null || !perm.hasGroupSupport())
             return false;
-        return perm.playerInGroup(nullString, player.getName(), group);
+        return perm.playerInGroup(nullString, player, group);
     }
 
     /**
@@ -165,7 +165,7 @@ public class Vault {
         Permission perm = getPermission();
         if(perm == null || !perm.hasGroupSupport())
             return null;
-        return perm.getPrimaryGroup(nullString, player.getName());
+        return perm.getPrimaryGroup(nullString, player);
     }
 
     /**
@@ -178,6 +178,6 @@ public class Vault {
         Permission perm = getPermission();
         if(perm == null || !perm.hasGroupSupport())
             return null;
-        return perm.getPlayerGroups(nullString, player.getName());
+        return perm.getPlayerGroups(nullString, player);
     }
 }

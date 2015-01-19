@@ -290,7 +290,7 @@ public class SignShopPlayer {
         if(getPlayer() == null)
             return sGroups;
         try {
-            sGroups = Vault.getPermission().getPlayerGroups(getPlayer());
+            sGroups = Vault.getPermission().getPlayerGroups((String)null, getPlayer());
         } catch(UnsupportedOperationException UnsupportedEX) {
             return sGroups;
         }
