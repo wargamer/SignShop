@@ -34,7 +34,7 @@ public class giveTownMoney implements SignShopOperation {
             MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.GiveToTown);
 
             try {
-                Resident resident = TownyUniverse.getDataSource().getResident(ssPlayer.getName());
+                Resident resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {

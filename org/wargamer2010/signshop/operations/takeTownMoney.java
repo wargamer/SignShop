@@ -36,7 +36,7 @@ public class takeTownMoney implements SignShopOperation {
                     ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
                     return false;
                 }
-                Resident resident = TownyUniverse.getDataSource().getResident(ssPlayer.getName());
+                Resident resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
