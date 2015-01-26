@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
@@ -16,19 +17,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.block.SignChangeEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.commands.CommandDispatcher;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
-import org.wargamer2010.signshop.events.SSMoneyRequestType;
-import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.events.SSPostTransactionEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
@@ -67,6 +66,22 @@ public class SignShopPlayerListener implements Listener {
         }
 
         return ranSomething;
+    }
+
+    @EventHandler(priority = EventPriority.LOWEST)
+    public void SSBugFix(BlockPlaceEvent event) {
+        // credits go to Cat7373 for the fix below, https://github.com/wargamer/SignShop/issues/15
+        if(event.isCancelled())
+            return;
+        Block block = event.getBlock();
+
+        if(itemUtil.clickedSign(block)) {
+            Location location = block.getLocation();
+
+            if(Storage.get().getSeller(location) != null) {
+                Storage.get().removeSeller(location);
+            }
+        }
     }
 
     @EventHandler(priority = EventPriority.HIGH)

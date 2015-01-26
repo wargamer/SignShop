@@ -57,6 +57,8 @@ public class GetPriceFromWorth implements Listener {
             if(event.getRequestType() == SSMoneyRequestType.GetAmount)
                 event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
             event.setPrice(newPrice);
+            if(event.getArguments() != null)
+                event.getArguments().resetPriceMod();
             event.setMessagePart("!price", economyUtil.formatMoney(newPrice));
         }
     }
