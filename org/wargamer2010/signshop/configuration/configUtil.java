@@ -54,8 +54,15 @@ public class configUtil {
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 MemorySection memsec = (MemorySection)entry.getValue();
                 HashMap<String,Double> tempmap = new HashMap<String, Double>();
-                for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet())
-                    tempmap.put(subentry.getKey().toLowerCase(), ((Double)subentry.getValue()));
+                for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet()) {
+                    Object raw = subentry.getValue();
+                    Double val;
+                    if(raw instanceof Number)
+                        val = ((Number)raw).doubleValue();
+                    else
+                        val = (Double)raw;
+                    tempmap.put(subentry.getKey().toLowerCase(), val);
+                }
                 tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
         } catch(ClassCastException ex) {
