@@ -16,13 +16,14 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.events.IMessagePartContainer;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-public class SignShopArguments {
+public class SignShopArguments implements IMessagePartContainer {
 
     public SignShopArguments(SignShopArgumentsType type) {
         SetDefaultMessageParts();
