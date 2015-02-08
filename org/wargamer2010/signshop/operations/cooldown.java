@@ -59,7 +59,12 @@ public class cooldown implements SignShopOperation {
                     ssArgs.setMessagePart("!cooldownleft", Long.toString(left));
                 else
                     ssArgs.setMessagePart("!cooldownleft", "< 1");
-
+                    
+                if(left >= 60)
+                    event.setMessagePart("!cooldownminutesleft", Long.toString(left/60));
+                else
+                    event.setMessagePart("!cooldownminutesleft", "< 1");
+                
                 ssPlayer.sendMessage(SignShopConfig.getError("shop_on_cooldown", ssArgs.getMessageParts()));
                 return false;
             }
