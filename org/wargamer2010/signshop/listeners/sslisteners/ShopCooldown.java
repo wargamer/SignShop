@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
+import org.wargamer2010.signshop.util.CooldownUtil;
 
 public class ShopCooldown implements Listener {
     private static Map<String, Long> lastusedByPlayer = new LinkedHashMap<String, Long>();
@@ -33,10 +34,7 @@ public class ShopCooldown implements Listener {
         long left = (((lastused + cooldown) - now) / 1000);
 
         if((now - lastused) < cooldown) {
-            if(left >= 1)
-                event.setMessagePart("!cooldownleft", Long.toString(left));
-            else
-                event.setMessagePart("!cooldownleft", "< 1");
+            CooldownUtil.setCooldownMessage(event, left);
             event.getPlayer().sendMessage(SignShopConfig.getError("shop_on_cooldown", event.getMessageParts()));
             event.setCancelled(true);
             return;

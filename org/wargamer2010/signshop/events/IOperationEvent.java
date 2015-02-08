@@ -8,7 +8,7 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
-public interface IOperationEvent extends Cancellable {
+public interface IOperationEvent extends Cancellable, IMessagePartContainer {
     public SignShopPlayer getPlayer();
 
     public Seller getShop();
@@ -23,7 +23,9 @@ public interface IOperationEvent extends Cancellable {
 
     public ItemStack[] getItems();
 
+    @Override
     public Map<String, String> getMessageParts();
 
+    @Override
     public void setMessagePart(String part, String value);
 }

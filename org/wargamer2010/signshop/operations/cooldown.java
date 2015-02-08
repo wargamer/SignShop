@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.operations;
 import java.util.Date;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.CooldownUtil;
 
 public class cooldown implements SignShopOperation {
 
@@ -29,7 +30,7 @@ public class cooldown implements SignShopOperation {
     public Boolean setupOperation(SignShopArguments ssArgs) {
         String param = ("cooldown_" + ssArgs.getOperation().get());
         ssArgs.setMessagePart("!param", param);
-        
+
         return (getCooldown(ssArgs) > 0);
     }
 
@@ -55,11 +56,8 @@ public class cooldown implements SignShopOperation {
 
             if(diffInSeconds < cooldown) {
                 long left = (cooldown - diffInSeconds);
-                if(left >= 1)
-                    ssArgs.setMessagePart("!cooldownleft", Long.toString(left));
-                else
-                    ssArgs.setMessagePart("!cooldownleft", "< 1");
-
+                CooldownUtil.setCooldownMessage(ssArgs, left);
+                
                 ssPlayer.sendMessage(SignShopConfig.getError("shop_on_cooldown", ssArgs.getMessageParts()));
                 return false;
             }
