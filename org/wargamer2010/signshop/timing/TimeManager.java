@@ -19,6 +19,7 @@ import org.bukkit.configuration.MemorySection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitTask;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSEventFactory;
 
@@ -30,6 +31,7 @@ public class TimeManager extends TimerTask {
     private ReentrantLock timerLock = new ReentrantLock();
     private File storageFile = null;
     private YamlConfiguration storageConfiguration = null;
+    private int taskId = -1;
 
     public TimeManager(File storage) {
         storageFile = storage;
@@ -146,6 +148,15 @@ public class TimeManager extends TimerTask {
         return timeByExpirable.get(ex);
     }
 
+    /**
+     * Stops the Async Task started by the TImeManager
+     */
+    public void stop() {
+        if(taskId >= 0) {
+            Bukkit.getScheduler().cancelTask(taskId);
+        }
+    }
+
     @Override
     public void run() {
         timerLock.lock();
@@ -244,14 +255,22 @@ public class TimeManager extends TimerTask {
         boolean ranOperation = false;
         Method scheduleAsync = fetchSchedulerMethod("runTaskTimer");
         String reason = "Method was not found";
+        boolean usingDeprecatedMethod = false;
 
-        if(scheduleAsync == null)
+        if(scheduleAsync == null) {
+            usingDeprecatedMethod = true;
             scheduleAsync = fetchSchedulerMethod("scheduleSyncRepeatingTask");
+        }
 
         if(scheduleAsync != null) {
             try {
-                scheduleAsync.invoke(Bukkit.getScheduler(), SignShop.getInstance(), this, 0, getTicks(interval));
+                Object returnValue = scheduleAsync.invoke(Bukkit.getScheduler(), SignShop.getInstance(), this, 0, getTicks(interval));
                 ranOperation = true;
+
+                if(!usingDeprecatedMethod)
+                    taskId = ((BukkitTask)returnValue).getTaskId();
+                else
+                    taskId = (Integer)returnValue;
             }
             catch (IllegalAccessException ex) { reason = ex.getMessage(); }
             catch (IllegalArgumentException ex) { reason = ex.getMessage(); }

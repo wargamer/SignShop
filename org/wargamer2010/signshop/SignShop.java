@@ -212,6 +212,8 @@ public class SignShop extends JavaPlugin{
         if(store != null)
             store.Save();
         Storage.dispose();
+        if(manager != null)
+            manager.stop();
         log("Disabled", Level.INFO);
     }
 

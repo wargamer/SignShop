@@ -41,10 +41,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -53,6 +55,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.zip.GZIPOutputStream;
+import org.bukkit.entity.Player;
 
 public class Metrics {
 
@@ -60,57 +63,46 @@ public class Metrics {
      * The current revision number
      */
     private final static int REVISION = 7;
-
     /**
      * The base url of the metrics domain
      */
     private static final String BASE_URL = "http://report.mcstats.org";
-
     /**
      * The url used to report a server's status
      */
     private static final String REPORT_URL = "/plugin/%s";
-
     /**
      * Interval of time to ping (in minutes)
      */
     private static final int PING_INTERVAL = 15;
-
     /**
      * The plugin this metrics submits for
      */
     private final Plugin plugin;
-
     /**
      * All of the custom graphs to submit to metrics
      */
     private final Set<Graph> graphs = Collections.synchronizedSet(new HashSet<Graph>());
-
     /**
      * The plugin configuration file
      */
     private final YamlConfiguration configuration;
-
     /**
      * The plugin configuration file
      */
     private final File configurationFile;
-
     /**
      * Unique server id
      */
     private final String guid;
-
     /**
      * Debug mode
      */
     private final boolean debug;
-
     /**
      * Lock for synchronization
      */
     private final Object optOutLock = new Object();
-
     /**
      * The scheduled task
      */
@@ -144,11 +136,13 @@ public class Metrics {
     }
 
     /**
-     * Construct and create a Graph that can be used to separate specific plotters to their own graphs on the metrics
-     * website. Plotters can be added to the graph object returned.
+     * Construct and create a Graph that can be used to separate specific
+     * plotters to their own graphs on the metrics website. Plotters can be
+     * added to the graph object returned.
      *
      * @param name The name of the graph
-     * @return Graph object created. Will never return NULL under normal circumstances unless bad parameters are given
+     * @return Graph object created. Will never return NULL under normal
+     * circumstances unless bad parameters are given
      */
     public Graph createGraph(final String name) {
         if (name == null) {
@@ -166,7 +160,8 @@ public class Metrics {
     }
 
     /**
-     * Add a Graph object to BukkitMetrics that represents data for the plugin that should be sent to the backend
+     * Add a Graph object to BukkitMetrics that represents data for the plugin
+     * that should be sent to the backend
      *
      * @param graph The name of the graph
      */
@@ -179,9 +174,10 @@ public class Metrics {
     }
 
     /**
-     * Start measuring statistics. This will immediately create an async repeating task as the plugin and send the
-     * initial data to the metrics backend, and then after that it will post in increments of PING_INTERVAL * 1200
-     * ticks.
+     * Start measuring statistics. This will immediately create an async
+     * repeating task as the plugin and send the initial data to the metrics
+     * backend, and then after that it will post in increments of PING_INTERVAL
+     * * 1200 ticks.
      *
      * @return True if statistics measuring is running, otherwise false.
      */
@@ -199,10 +195,8 @@ public class Metrics {
 
             // Begin hitting the server with glorious data
             task = plugin.getServer().getScheduler().runTaskTimerAsynchronously(plugin, new Runnable() {
-
                 private boolean firstPost = true;
 
-                @Override
                 public void run() {
                     try {
                         // This has to be synchronized or it can collide with the disable method.
@@ -264,7 +258,8 @@ public class Metrics {
     }
 
     /**
-     * Enables metrics for the server by setting "opt-out" to false in the config file and starting the metrics task.
+     * Enables metrics for the server by setting "opt-out" to false in the
+     * config file and starting the metrics task.
      *
      * @throws java.io.IOException
      */
@@ -285,7 +280,8 @@ public class Metrics {
     }
 
     /**
-     * Disables metrics for the server by setting "opt-out" to true in the config file and canceling the metrics task.
+     * Disables metrics for the server by setting "opt-out" to true in the
+     * config file and canceling the metrics task.
      *
      * @throws java.io.IOException
      */
@@ -307,7 +303,8 @@ public class Metrics {
     }
 
     /**
-     * Gets the File object of the config file that should be used to store data such as the GUID and opt-out status
+     * Gets the File object of the config file that should be used to store data
+     * such as the GUID and opt-out status
      *
      * @return the File object for the config file
      */
@@ -333,7 +330,17 @@ public class Metrics {
         boolean onlineMode = Bukkit.getServer().getOnlineMode(); // TRUE if online mode is enabled
         String pluginVersion = description.getVersion();
         String serverVersion = Bukkit.getVersion();
-        int playersOnline = Bukkit.getServer().getOnlinePlayers().length;
+
+        int playersOnline = 0;
+        try {
+            if (Bukkit.class.getMethod("getOnlinePlayers", new Class<?>[0]).getReturnType() == Collection.class) {
+                playersOnline = ((Collection<?>) Bukkit.class.getMethod("getOnlinePlayers", new Class<?>[0]).invoke(null, new Object[0])).size();
+            } else {
+                playersOnline = ((Player[]) Bukkit.class.getMethod("getOnlinePlayers", new Class<?>[0]).invoke(null, new Object[0])).length;
+            }
+        } catch (NoSuchMethodException ex) { } // can never happen
+        catch (InvocationTargetException ex) { } // can also never happen
+        catch (IllegalAccessException ex) { } // can still never happen
 
         // END server software specific section -- all code below does not use any code outside of this class / Java
 
@@ -501,9 +508,11 @@ public class Metrics {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (gzos != null) try {
-                gzos.close();
-            } catch (IOException ignore) {
+            if (gzos != null) {
+                try {
+                    gzos.close();
+                } catch (IOException ignore) {
+                }
             }
         }
 
@@ -511,7 +520,8 @@ public class Metrics {
     }
 
     /**
-     * Check if mineshafter is present. If it is, we need to bypass it to send POST requests
+     * Check if mineshafter is present. If it is, we need to bypass it to send
+     * POST requests
      *
      * @return true if mineshafter is installed on the server
      */
@@ -620,11 +630,10 @@ public class Metrics {
     public static class Graph {
 
         /**
-         * The graph's name, alphanumeric and spaces only :) If it does not comply to the above when submitted, it is
-         * rejected
+         * The graph's name, alphanumeric and spaces only :) If it does not
+         * comply to the above when submitted, it is rejected
          */
         private final String name;
-
         /**
          * The set of plotters that are contained within this graph
          */
@@ -686,7 +695,8 @@ public class Metrics {
         }
 
         /**
-         * Called when the server owner decides to opt-out of BukkitMetrics while the server is running.
+         * Called when the server owner decides to opt-out of BukkitMetrics
+         * while the server is running.
          */
         protected void onOptOut() {
         }
@@ -712,16 +722,19 @@ public class Metrics {
         /**
          * Construct a plotter with a specific plot name
          *
-         * @param name the name of the plotter to use, which will show up on the website
+         * @param name the name of the plotter to use, which will show up on the
+         * website
          */
         public Plotter(final String name) {
             this.name = name;
         }
 
         /**
-         * Get the current value for the plotted point. Since this function defers to an external function it may or may
-         * not return immediately thus cannot be guaranteed to be thread friendly or safe. This function can be called
-         * from any thread so care should be taken when accessing resources that need to be synchronized.
+         * Get the current value for the plotted point. Since this function
+         * defers to an external function it may or may not return immediately
+         * thus cannot be guaranteed to be thread friendly or safe. This
+         * function can be called from any thread so care should be taken when
+         * accessing resources that need to be synchronized.
          *
          * @return the current value for the point to be plotted.
          */
