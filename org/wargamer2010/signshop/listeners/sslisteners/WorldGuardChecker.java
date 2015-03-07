@@ -25,7 +25,8 @@ public class WorldGuardChecker implements Listener {
         WorldGuardPlugin WG = (WorldGuardPlugin)HookManager.getHook("WorldGuard");
 
         World world = event.getPlayer().getWorld();
-        for(ProtectedRegion r : WG.getRegionManager(world).getApplicableRegions(event.getSign().getLocation())) {
+
+        for(ProtectedRegion r : WG.getRegionManager(world).getApplicableRegions(event.getSign().getLocation()).getRegions()) {
             for(Map.Entry<Flag<?>, Object> flag : r.getFlags().entrySet()) {
                 if(flag.getKey().getName().equals("allow-shop")) {
                     if(flag.getKey() instanceof StateFlag) {

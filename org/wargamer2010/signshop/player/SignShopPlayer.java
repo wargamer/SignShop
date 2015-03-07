@@ -56,8 +56,7 @@ public class SignShopPlayer {
     }
 
     public static void broadcastMsg(World world, String sMessage) {
-        Player[] players = Bukkit.getServer().getOnlinePlayers();
-        for(Player player : players)
+        for(Player player : Bukkit.getServer().getOnlinePlayers())
             if(player.getWorld() == world)
                 player.sendMessage(ChatColor.GOLD+"[SignShop] [" + world.getName() + "] " + ChatColor.WHITE + sMessage);
     }
