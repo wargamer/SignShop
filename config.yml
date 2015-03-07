@@ -213,7 +213,7 @@ signs:
   Share: ShareSign
   Restricted: RestrictedSign
   Bank: BankSign
-  Jukebox: playJukebox,takePlayerMoney
+  Jukebox: playJukebox,takePlayerMoney,giveOwnerMoney
   Kit: givePlayerItems,takePlayerMoney,oneTime,playerIsOp
   ResetKit: takePlayerMoney,resetOneTime{Kit}, playerIsOp
   iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
