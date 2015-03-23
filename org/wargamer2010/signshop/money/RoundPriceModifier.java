@@ -5,6 +5,7 @@ import org.wargamer2010.signshop.events.SSMoneyEventType;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToOwner;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.GiveToTown;
 import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromOwner;
+import static org.wargamer2010.signshop.events.SSMoneyEventType.TakeFromTown;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -17,11 +18,11 @@ public class RoundPriceModifier implements IMoneyModifier {
         // This prevents exploits where the player can profit from improper rounding
         switch(type) {
             case GiveToOwner:
-            case TakeFromTown:
+            case GiveToTown:
             case TakeFromPlayer:
                 return roundToTwoDigits(fPrice, false);
             case TakeFromOwner:
-            case GiveToTown:
+            case TakeFromTown:
             case GiveToPlayer:
                 return roundToTwoDigits(fPrice, true);
             default:
@@ -39,8 +40,9 @@ public class RoundPriceModifier implements IMoneyModifier {
     private static double roundToTwoDigits(double value, boolean roundDown) {
         if(value < 0.005)
             return 0.0d;
-        if((((value) % 0.01) - 0.01) > -.0001)
-            return value;
+        double division = value % 0.01;
+        if(division < 0.000000001 && division >= 0.0d)
+            return value; // value is already at two digit precision
         double modifier = roundDown ? (-0.5) : (0.5);
         return Math.floor(value * 100 + modifier) / 100;
     }
