@@ -40,7 +40,7 @@ public class RoundPriceModifier implements IMoneyModifier {
     private static double roundToTwoDigits(double value, boolean roundDown) {
         if(value < 0.005)
             return 0.0d;
-        double division = value % 0.01;
+        double division = (value * 100) % 1;
         if(division < 0.000000001 && division >= 0.0d)
             return value; // value is already at two digit precision
         double modifier = roundDown ? (-0.5) : (0.5);
