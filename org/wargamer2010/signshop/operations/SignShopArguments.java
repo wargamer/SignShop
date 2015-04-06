@@ -24,12 +24,6 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopArguments implements IMessagePartContainer {
-
-    public SignShopArguments(SignShopArgumentsType type) {
-        SetDefaultMessageParts();
-        argumentType = type;
-    }
-
     public SignShopArguments(double pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                                 SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, Action ac, SignShopArgumentsType type) {
         fPrice.setRoot(pfPrice);
@@ -49,7 +43,8 @@ public class SignShopArguments implements IMessagePartContainer {
         bfBlockFace.setRoot(pbfBlockFace);
         aAction.setRoot(ac);
         argumentType = type;
-        SetDefaultMessageParts();
+        setDefaultMessageParts();
+        fixBooks();
     }
 
     public SignShopArguments(Seller seller, SignShopPlayer player, SignShopArgumentsType type) {
@@ -69,11 +64,36 @@ public class SignShopArguments implements IMessagePartContainer {
         sOperation.setRoot(seller.getOperation());
         bfBlockFace.setRoot(BlockFace.SELF);
         argumentType = type;
-        SetDefaultMessageParts();
+        setDefaultMessageParts();
+        fixBooks();
     }
 
-    private void SetDefaultMessageParts() {
-        if(ssPlayer != null) {
+    private void fixBooks() {
+        if(isItems.getRoot() != null) {
+            itemUtil.fixBooks(isItems.getRoot());
+        }
+
+        if(containables.getRoot() != null) {
+            itemUtil.fixBooks(itemUtil.getAllItemStacksForContainables(containables.getRoot()));
+        }
+
+        SignShopPlayer root = ssPlayer.getRoot();
+        if(root != null && root.getPlayer() != null) {
+            if(root.getItemInHand() != null) {
+                ItemStack[] stacks = new ItemStack[1];
+                stacks[0] = root.getItemInHand();
+                itemUtil.fixBooks(stacks);
+            }
+
+            ItemStack[] inventory = root.getInventoryContents();
+            itemUtil.fixBooks(inventory);
+            root.setInventoryContents(inventory);
+            root.getPlayer().updateInventory();
+        }
+    }
+
+    private void setDefaultMessageParts() {
+        if(ssPlayer.get() != null) {
             setMessagePart("!customer", ssPlayer.get().getName());
             setMessagePart("!player", ssPlayer.get().getName());
             if(ssPlayer.get().getPlayer() != null && ssPlayer.get().getPlayer().getWorld() != null)
@@ -86,13 +106,13 @@ public class SignShopArguments implements IMessagePartContainer {
             }
         }
 
-        if(fPrice != null)
+        if(fPrice.get() != null)
             setMessagePart("!price", economyUtil.formatMoney(fPrice.get()));
 
-        if(ssOwner != null)
+        if(ssOwner.get() != null)
             setMessagePart("!owner", ssOwner.get().getName());
 
-        if(bSign != null && bSign.get() != null) {
+        if(bSign.get() != null) {
             setMessagePart("!x", Integer.toString(bSign.get().getX()));
             setMessagePart("!y", Integer.toString(bSign.get().getY()));
             setMessagePart("!z", Integer.toString(bSign.get().getZ()));
@@ -104,7 +124,7 @@ public class SignShopArguments implements IMessagePartContainer {
             }
         }
 
-        if(isItems != null && isItems.get() != null && isItems.get().length > 0) {
+        if(isItems.get() != null && isItems.get().length > 0) {
             setMessagePart("!items", itemUtil.itemStackToString(isItems.get()));
         }
     }

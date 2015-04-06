@@ -60,7 +60,7 @@ EnableGoogleTranslation: false
 # SignShops will not break if punched in creative mode, must use DestroyMaterial to break them (Default = true)
 ProtectShopsInCreative: true
 
-# Protects signs when they are made into shops.  Can be bypased by OP (Default = true)
+# Protects signs when they are made into shops. Can be bypassed by OP (Default = true)
 EnableShopOwnerProtection: true
 
 # Gives players a message the first time they create a SignShop sign (Default = true)
@@ -74,6 +74,9 @@ AllowEnchantedRepair: true
 
 # Disables shops for owners without the SignShop.Permit permission node (Default = false)
 EnablePermits: false
+
+# Enables the Written Book fix when set to true (Default = true)
+EnableWrittenBookFix: true
 
 # Used to allow groups of users to use shops for different amounts of money
 # A multiplier of "1.0" means the amount is the same as it is on the sign
