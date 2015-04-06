@@ -21,6 +21,7 @@ import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.meta.BookMeta;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
@@ -113,6 +114,33 @@ public class itemUtil {
         } catch(NullPointerException ex) {
             // Chest is not available, contents are NULL. So let's assume the Stock is not OK
             return false;
+        }
+    }
+
+    public static void fixBooks(ItemStack[] stacks) {
+        if(stacks == null || !SignShopConfig.getEnableWrittenBookFix())
+            return;
+
+        for(ItemStack stack : stacks) {
+            if(stack != null && stack.getType() == Material.WRITTEN_BOOK &&
+                    stack.hasItemMeta() && stack.getItemMeta() instanceof BookMeta) {
+                ItemStack copy = new ItemStack(Material.WRITTEN_BOOK);
+
+                BookMeta copyMeta = (BookMeta)copy.getItemMeta();
+                BookMeta realMeta = (BookMeta)stack.getItemMeta();
+
+                copyMeta.setPages(realMeta.getPages());
+                copyMeta.setAuthor(realMeta.getAuthor());
+                copyMeta.setTitle(realMeta.getTitle());
+
+                copyMeta.setDisplayName(realMeta.getDisplayName());
+                copyMeta.setLore(realMeta.getLore());
+
+                for(Map.Entry<Enchantment, Integer> entry : realMeta.getEnchants().entrySet())
+                    copyMeta.addEnchant(entry.getKey(), entry.getValue(), true);
+
+                stack.setItemMeta(copyMeta);
+            }
         }
     }
 

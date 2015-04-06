@@ -35,7 +35,7 @@ import org.wargamer2010.signshop.specialops.*;
 public class SignShopConfig {
     private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
     private static final String configFilename = "config.yml";
-    private static Map<String,SignShopOperation> OperationInstances = new LinkedHashMap<String, SignShopOperation>();
+    private static final Map<String,SignShopOperation> OperationInstances = new LinkedHashMap<String, SignShopOperation>();
     private static Map<String,List<String>> Operations = new HashMap<String,List<String>>();
     private static Map<String,String> OperationAliases;                         // Alias <-> Original
     private static Map<String,Map<String,HashMap<String,String>>> Messages;
@@ -46,7 +46,7 @@ public class SignShopConfig {
     private static Map<String,List<String>> DelayedCommands;
     private static Map<String,Integer> ShopLimits;
     private static List<LinkableMaterial> LinkableMaterials;
-    private static List<SignShopSpecialOp> SpecialsOps = new LinkedList<SignShopSpecialOp>();
+    private static final List<SignShopSpecialOp> SpecialsOps = new LinkedList<SignShopSpecialOp>();
 
     private static SignShop instance = null;
 
@@ -77,8 +77,9 @@ public class SignShopConfig {
     private static boolean EnableNamesFromTheWeb = false;
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
+    private static boolean EnableWrittenBookFix = true;
     private static String Languages = "english";
-    private static String baseLanguage = "english";
+    private static final String baseLanguage = "english";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SACK");
@@ -262,6 +263,7 @@ public class SignShopConfig {
         EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
+        EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
@@ -748,6 +750,10 @@ public class SignShopConfig {
 
     public static boolean getUseBlacklistAsWhitelist() {
         return UseBlacklistAsWhitelist;
+    }
+
+    public static boolean getEnableWrittenBookFix() {
+        return EnableWrittenBookFix;
     }
 
     public static Material getLinkMaterial() {

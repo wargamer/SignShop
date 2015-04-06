@@ -355,7 +355,9 @@ public class SignShopPlayer {
     public ItemStack[] getInventoryContents() {
         if(getPlayer() == null)
             return new ItemStack[0];
-        return getPlayer().getInventory().getContents();
+        ItemStack[] temp = getPlayer().getInventory().getContents();
+        itemUtil.fixBooks(temp);
+        return temp;
     }
 
     public void setInventoryContents(ItemStack[] newContents) {
