@@ -88,7 +88,6 @@ public class SignShopArguments implements IMessagePartContainer {
             ItemStack[] inventory = root.getInventoryContents();
             itemUtil.fixBooks(inventory);
             root.setInventoryContents(inventory);
-            root.getPlayer().updateInventory();
         }
     }
 
