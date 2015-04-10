@@ -1,31 +1,20 @@
-/*
- * Copyright (C) 2012  Joshua Reetz
+package org.wargamer2010.signshop.blocks;
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
- package org.wargamer2010.signshop.blocks;
-
-
+import java.lang.reflect.Field;
 import java.util.Arrays;
+import java.util.logging.Level;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
+import org.wargamer2010.signshop.SignShop;
 
 public class BookItem implements IBookItem {
 
         private BookMeta meta = null;
         private ItemStack _stack = null;
+
+        private static boolean attemptedReflection = false;
+        private static Field reflectedGenerationField = null;
 
         public BookItem(org.bukkit.inventory.ItemStack pItem) {
             if(pItem.getItemMeta() instanceof BookMeta) {
@@ -55,6 +44,24 @@ public class BookItem implements IBookItem {
             if(meta == null)
                 return "";
             return meta.getTitle();
+        }
+
+        @Override
+        public Integer getGeneration() {
+            Field field = getGenerationField();
+            if(field == null)
+                return null;
+            try {
+                return (Integer)field.get(meta);
+            } catch (IllegalArgumentException ex) {
+                SignShop.log("Failed to get Generation for Written Book, API might have changed. Please report this problem.",
+                        Level.WARNING);
+            } catch (IllegalAccessException ex) {
+                SignShop.log("Failed to get Generation for Written Book, API might have changed. Please report this problem.",
+                        Level.WARNING);
+            }
+
+            return null;
         }
 
         @Override
@@ -90,11 +97,64 @@ public class BookItem implements IBookItem {
         }
 
         @Override
+        public void setGeneration(Integer generation) {
+            Field field = getGenerationField();
+            if(field == null || generation == null)
+                return;
+            try {
+                field.set(meta, generation);
+                updateMeta();
+            } catch (IllegalArgumentException ex) {
+                SignShop.log("Failed to set Generation for Written Book, API might have changed. Please report this problem.",
+                        Level.WARNING);
+            } catch (IllegalAccessException ex) {
+                SignShop.log("Failed to set Generation for Written Book, API might have changed. Please report this problem.",
+                        Level.WARNING);
+            }
+        }
+
+        @Override
+        public void copyFrom(IBookItem item) {
+            if(meta == null)
+                return;
+            setTitle(item.getTitle());
+            setAuthor(item.getAuthor());
+            setPages(item.getPages());
+            setGeneration(item.getGeneration());
+
+            updateMeta();
+        }
+
+        @Override
         public ItemStack getStack() {
             return _stack;
         }
 
         private void updateMeta() {
             _stack.setItemMeta(meta);
+        }
+
+        private Field getGenerationField() {
+            if(meta == null)
+                return null;
+            if(attemptedReflection)
+                return reflectedGenerationField;
+
+            try {
+                reflectedGenerationField = meta.getClass().getSuperclass().getDeclaredField("generation");
+                reflectedGenerationField.setAccessible(true);
+            }
+            catch (NoSuchFieldException ex) { reflectedGenerationField = null; }
+            catch (SecurityException ex) { reflectedGenerationField = null; }
+            catch (IllegalArgumentException ex) { reflectedGenerationField = null; }
+
+            attemptedReflection = true;
+
+            if(reflectedGenerationField == null) {
+                SignShop.log("Failed to retrieve Generation field for Written Book, API might have changed. Please report this problem.",
+                        Level.WARNING);
+            }
+
+            return reflectedGenerationField;
         }
 }

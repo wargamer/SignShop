@@ -11,8 +11,8 @@ import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class SignShopBooks {
-    private static char pageSeperator = (char)3;
-    private static String filename = "books.db";
+    private static final char pageSeperator = (char)3;
+    private static final String filename = "books.db";
 
     private SignShopBooks() {
 
@@ -22,7 +22,12 @@ public class SignShopBooks {
         SSDatabase db = new SSDatabase(filename);
 
         if(!db.tableExists("Book")) {
-            db.runStatement("CREATE TABLE Book ( BookID INTEGER, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, PRIMARY KEY(BookID) )", null, false);
+            db.runStatement("CREATE TABLE Book ( BookID INTEGER, Title TEXT NOT NULL, Author VARCHAR(200) NOT NULL, Pages TEXT, "
+                    + "Generation INTEGER NOT NULL DEFAULT -1, PRIMARY KEY(BookID) )", null, false);
+            db.close();
+        } else if(!db.columnExists("Generation")) {
+            db.open();
+            db.runStatement("ALTER TABLE Book ADD COLUMN Generation INTEGER NOT NULL DEFAULT -1;", null, false);
             db.close();
         }
     }
@@ -38,10 +43,12 @@ public class SignShopBooks {
         pars.put(1, (item.getTitle() == null) ? "" : item.getTitle());
         pars.put(2, (item.getAuthor() == null) ? "" : item.getAuthor());
         pars.put(3, signshopUtil.implode(item.getPages(), String.valueOf(pageSeperator)));
+        Integer gen = item.getGeneration();
+        pars.put(4, gen == null ? -1 : gen);
         Integer ID;
 
         try {
-            ID = (Integer)db.runStatement("INSERT INTO Book(Title, Author, Pages) VALUES (?, ?, ?);", pars, false);
+            ID = (Integer)db.runStatement("INSERT INTO Book(Title, Author, Pages, Generation) VALUES (?, ?, ?, ?);", pars, false);
         } finally {
             db.close();
         }
@@ -73,10 +80,12 @@ public class SignShopBooks {
         pars.put(1, (item.getTitle() == null) ? "" : item.getTitle());
         pars.put(2, (item.getAuthor() == null) ? "" : item.getAuthor());
         pars.put(3, signshopUtil.implode(item.getPages(), String.valueOf(pageSeperator)));
+        Integer gen = item.getGeneration();
+        pars.put(4, gen == null ? -1 : gen);
         Integer ID = null;
 
         try {
-            ResultSet set = (ResultSet)db.runStatement("SELECT BookID FROM Book WHERE Title = ? AND Author = ? AND Pages = ?;", pars, true);
+            ResultSet set = (ResultSet)db.runStatement("SELECT BookID FROM Book WHERE Title = ? AND Author = ? AND Pages = ? AND Generation = ?;", pars, true);
             if(set != null && set.next())
                 ID = set.getInt("BookID");
             else
@@ -106,6 +115,8 @@ public class SignShopBooks {
             item.setAuthor(set.getString("Author"));
             item.setTitle(set.getString("Title"));
             item.setPages(set.getString("Pages").split(String.valueOf(pageSeperator)));
+            int gen = set.getInt("Generation");
+            item.setGeneration(gen == -1 ? null : set.getInt("Generation"));
         } catch(SQLException ex) {
 
         } finally {
