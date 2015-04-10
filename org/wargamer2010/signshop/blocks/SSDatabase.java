@@ -64,6 +64,26 @@ public class SSDatabase {
         return false;
     }
 
+    public boolean columnExists(String needle) {
+        ResultSet result = (ResultSet) runStatement("PRAGMA table_info(Book);", null, true);
+        if(result == null)
+            return false;
+
+        try {
+            do {
+                String columnName = result.getString("name");
+                if(columnName.equalsIgnoreCase(needle))
+                    return true;
+            } while(result.next());
+        } catch (SQLException ex) {
+            SignShop.log("Failed to check for column existence on Book table because: " + ex.getMessage(), Level.WARNING);
+        } finally {
+            close();
+        }
+
+        return false;
+    }
+
     public final void loadLib() {
         try {
             Class.forName("org.sqlite.JDBC");

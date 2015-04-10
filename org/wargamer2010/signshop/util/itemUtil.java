@@ -22,6 +22,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.meta.BookMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookFactory;
 import org.wargamer2010.signshop.blocks.IBookItem;
@@ -126,12 +127,10 @@ public class itemUtil {
                     stack.hasItemMeta() && stack.getItemMeta() instanceof BookMeta) {
                 ItemStack copy = new ItemStack(Material.WRITTEN_BOOK);
 
-                BookMeta copyMeta = (BookMeta)copy.getItemMeta();
-                BookMeta realMeta = (BookMeta)stack.getItemMeta();
+                BookFactory.getBookItem(copy).copyFrom(BookFactory.getBookItem(stack));
 
-                copyMeta.setPages(realMeta.getPages());
-                copyMeta.setAuthor(realMeta.getAuthor());
-                copyMeta.setTitle(realMeta.getTitle());
+                ItemMeta copyMeta = copy.getItemMeta();
+                ItemMeta realMeta = stack.getItemMeta();
 
                 copyMeta.setDisplayName(realMeta.getDisplayName());
                 copyMeta.setLore(realMeta.getLore());

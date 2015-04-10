@@ -4,19 +4,25 @@ package org.wargamer2010.signshop.blocks;
 import org.bukkit.inventory.ItemStack;
 
 public interface IBookItem {
-    public String[] getPages();
+    String[] getPages();
 
-    public String getAuthor();
+    String getAuthor();
 
-    public String getTitle();
+    String getTitle();
 
-    public void setPages(String[] newpages);
+    Integer getGeneration();
 
-    public void addPages(String[] newpages);
+    void setPages(String[] newpages);
 
-    public void setAuthor(String author);
+    void addPages(String[] newpages);
 
-    public void setTitle(String title);
+    void setAuthor(String author);
 
-    public ItemStack getStack();
+    void setTitle(String title);
+
+    void setGeneration(Integer generation);
+
+    void copyFrom(IBookItem item);
+
+    ItemStack getStack();
 }
