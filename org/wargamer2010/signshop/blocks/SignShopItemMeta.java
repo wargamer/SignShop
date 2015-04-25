@@ -310,9 +310,8 @@ public class SignShopItemMeta {
                         leathermeta.setColor(Color.fromRGB(Integer.parseInt(getPropValue("color", metamap))));
                 }
                 else if(type == MetaType.Map) {
-                    MapMeta mapmeta = (MapMeta) meta;
-                    if(!getPropValue("scaling", metamap).isEmpty())
-                        mapmeta.setScaling(Boolean.valueOf(getPropValue("scaling", metamap)));
+                    // We could set scaling here but for some reason Spigot doesn't when stacks are built up
+                    // Which results in items not matching anymore if we do, so we won't
                 }
                 else if(type == MetaType.Repairable) {
                     Repairable repairmeta = (Repairable) meta;
