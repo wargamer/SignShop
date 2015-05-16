@@ -57,6 +57,7 @@ public class SignShopConfig {
     private static int ShopCooldown = 0;
     private static int MessageCooldown = 0;
     private static int ChunkLoadRadius = 2;
+    private static int MaxChestsPerShop = 100;
     private static Boolean TransactionLog = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
@@ -244,6 +245,7 @@ public class SignShopConfig {
         ChunkLoadRadius = ymlThing.getInt("ChunkLoadRadius", ChunkLoadRadius);
         ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
         MessageCooldown = ymlThing.getInt("MessageCooldownSeconds", MessageCooldown);
+        MaxChestsPerShop = ymlThing.getInt("MaxChestsPerShop", MaxChestsPerShop);
         OPOverride = ymlThing.getBoolean("OPOverride", OPOverride);
         AllowVariableAmounts = ymlThing.getBoolean("AllowVariableAmounts", AllowVariableAmounts);
         AllowEnchantedRepair = ymlThing.getBoolean("AllowEnchantedRepair", AllowEnchantedRepair);
@@ -626,6 +628,14 @@ public class SignShopConfig {
             }
         }
         return null;
+    }
+
+    public static int getMaxChestsPerShop() {
+        return MaxChestsPerShop;
+    }
+
+    public static Boolean ExceedsMaxChestsPerShop(int currentAmountOfChests) {
+        return MaxChestsPerShop != 0 && currentAmountOfChests > MaxChestsPerShop;
     }
 
     public static Map<String, SignShopOperation> getOperationInstances() {
