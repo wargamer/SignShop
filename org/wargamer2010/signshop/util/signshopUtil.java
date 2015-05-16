@@ -488,12 +488,22 @@ public class signshopUtil {
     public static boolean getSignshopBlocksFromList(SignShopPlayer ssPlayer, List<Block> containables, List<Block> activatables, Block bClicked) {
         Boolean multiWorld = false;
         LinkedHashSet<Location> lClicked = getKeysByValue(clicks.mClicksPerLocation, ssPlayer.getPlayer());
+        int chestCounter = 0;
         for (Location loc : lClicked) {
             Block bBlockat = loc.getBlock();
             if(bBlockat.getLocation().equals(bClicked.getLocation()))
                 continue;
             if (bBlockat.getState() instanceof InventoryHolder) {
                 containables.add(bBlockat);
+
+                chestCounter++;
+                boolean exceeded = SignShopConfig.ExceedsMaxChestsPerShop(chestCounter);
+                if(exceeded) {
+                    Map<String, String> parts = new LinkedHashMap<String, String>();
+                    parts.put("!maxAmountOfChests", Integer.toString(SignShopConfig.getMaxChestsPerShop()));
+                    ssPlayer.sendMessage(SignShopConfig.getError("exceeded_max_amount_of_chests_per_shop", parts));
+                    return false;
+                }
             } else if (signshopUtil.clickedSignShopMat(bBlockat, ssPlayer)) {
                 activatables.add(bBlockat);
                 if(itemUtil.clickedDoor(bBlockat)) {

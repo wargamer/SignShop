@@ -126,6 +126,10 @@ MaxSellDistance: 0
 # For more help with this, please read the Quick Reference
 MaxShopsPerPerson: 0
 
+# Maximum number of chests that can be linked to a single sign (Infinite/Default = 0)
+# Used to prevent players from crashing the server when using a shop because there are too many chests for SignShop to check.
+MaxChestsPerShop: 100
+
 # The maximum number of shops a group of users can have
 # These numbers are ignored if set higher than MaxShopsPerPerson
 # Can be bypassed with the Signshop.IgnoreMax permission
@@ -583,3 +587,5 @@ errors:
   must_be_op_to_run: You do not have the right permission to run this command, it is for OPs only.
   not_allowed_on_plot: You are not allowed to link this on this plot!
   not_allowed_on_plot_but_op: You are not allowed to link this on this plot, but you are OP.
+  exceeded_max_amount_of_chests_per_shop: You have exceeded the maximum amount of chests (!maxAmountOfChests) that can be linked to a single shop. Please unlink one or more before continuing.
+  this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!

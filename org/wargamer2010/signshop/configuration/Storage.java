@@ -203,6 +203,18 @@ public class Storage implements Listener, Runnable {
             invalidShops.put(key, sellerSettings);
             return false;
         }
+
+        if(SignShopConfig.ExceedsMaxChestsPerShop(seller_containables.size())) {
+            Map<String, String> parts = new LinkedHashMap<String, String>();
+            Integer x = seller_sign.getX(); Integer y = seller_sign.getY(); Integer z = seller_sign.getZ();
+            parts.put("!world", seller_shopworld);
+            parts.put("!x", x.toString());
+            parts.put("!y", y.toString());
+            parts.put("!z", z.toString());
+
+            SignShop.log(SignShopConfig.getError("this_shop_exceeded_max_amount_of_chests", parts), Level.WARNING);
+        }
+
         addSeller(seller_owner.GetIdentifier(), seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
         return true;
     }
