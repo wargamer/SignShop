@@ -51,10 +51,6 @@ Languages: english
 # Fetch more readable item names from the internet (Default = false)
 EnableNamesFromTheWeb: false
 
-# SignShop will fetch item names from Google translate if set to a different language (Default = false)
-EnableGoogleTranslation: false
-
-
 #----------- Mechanics ------------------
 
 # SignShops will not break if punched in creative mode, must use DestroyMaterial to break them (Default = true)
@@ -589,3 +585,4 @@ errors:
   not_allowed_on_plot_but_op: You are not allowed to link this on this plot, but you are OP.
   exceeded_max_amount_of_chests_per_shop: You have exceeded the maximum amount of chests (!maxAmountOfChests) that can be linked to a single shop. Please unlink one or more before continuing.
   this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
+  could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.

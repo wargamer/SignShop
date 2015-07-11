@@ -1,19 +1,6 @@
 # If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
 # You can also visit our Bukkit page at tiny.cc/SignShop
 
-MaxSellDistance: 0
-MaxShopsPerPerson: 0
-TransactionLog: false
-OPOverride: true
-AllowVariableAmounts: false
-AllowEnchantedRepair: true
-DisableEssentialsSigns: true
-AllowUnsafeEnchantments: false
-EnableSignStacking: false
-AllowMultiWorldShops: false
-EnablePermits: false
-PreventVillagerTrade: false
-ProtectShopsInCreative: true
 messages:
   setup:
     Buy: Вы выставили на продажу !items по цене !price!
@@ -193,17 +180,3 @@ errors:
   registered_share_sign: Табличка Share зарегистрирована, теперь кликните по табличке магазина.
   unlinked_share_sign: Табличка Share отвязана от магазина.
   linked_share_sign: Табличка Share успешно привязана к магазину.
-commands:
-  TpToOwner:
-  - tp !player !owner
-  Command:
-  - \!line2 !line3
-pricemultipliers:
-  VIPEx:
-    iBuy: 0.7
-    iSell: 1.2
-  BlacksmithEx:
-    Repair: 0.5
-limits:
-  DefaultEx: 5
-  MemberEx: 10

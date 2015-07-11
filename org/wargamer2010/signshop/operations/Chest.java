@@ -16,7 +16,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
-        ssArgs.getPlayer().get().sendMessage("Could not complete operation, contact your System Administrator and checks the logs.");
+        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_complete_operation", null));
         SignShop.log("Invalid Chest{}, check your config.yml!", Level.WARNING);
         return false;
     }

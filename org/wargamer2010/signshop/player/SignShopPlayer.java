@@ -1,5 +1,7 @@
 package org.wargamer2010.signshop.player;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -270,18 +272,24 @@ public class SignShopPlayer {
             return false;
     }
 
-    public void givePlayerItems(ItemStack[] isItemsToTake) {
+    public Map<Integer, ItemStack> givePlayerItems(ItemStack[] isItemsToTake) {
         if(getPlayer() == null)
-            return;
+            return new LinkedHashMap<Integer, ItemStack>();
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        getPlayer().getInventory().addItem(isBackup);
+        return getPlayer().getInventory().addItem(isBackup);
     }
 
-    public void takePlayerItems(ItemStack[] isItemsToTake) {
+    public Map<Integer, ItemStack> takePlayerItems(ItemStack[] isItemsToTake) {
         if(getPlayer() == null)
-            return;
+            return new LinkedHashMap<Integer, ItemStack>();
         ItemStack[] isBackup = itemUtil.getBackupItemStack(isItemsToTake);
-        getPlayer().getInventory().removeItem(isBackup);
+        return getPlayer().getInventory().removeItem(isBackup);
+    }
+
+    public VirtualInventory getVirtualInventory() {
+        if(getPlayer() == null)
+            return null;
+        return new VirtualInventory(getPlayer().getInventory());
     }
 
     private String[] getPlayerGroups() {
