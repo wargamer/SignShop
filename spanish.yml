@@ -1,0 +1,198 @@
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+
+messages:
+  confirm:
+    Buy: Compraras !items Por !price?
+    Sell: Venderas !items Por !price?
+    Donate: Donaras !items?
+    DonateHand: Vas a donar !items?
+    Slot: Gana !items?
+    iBuy: Compraras !items Por !price?
+    iSell: Venderas !items Por !price?
+    gBuy: Compraras !items Por !price?
+    gSell: Venderas !items Por !price?
+    Day: Haras el tiempo a dia por !price?
+    Night: Haras el tiempo a noche por !price?
+    Rain: Estableceras el tiempo a llover por !price?
+    ClearSkies: Estableceras el tiempo a despejado por !price?
+    DeviceOn: Activaras este dispositivo por !price?
+    DeviceOff: Desactivaras este dispositivo por !price?
+    Toggle: Activaras este dispositivo por !price?
+    Device: Activaras temporalmente este dispositivo por !price?
+    Heal: Te curaras por !price?
+    Repair: Lo repararas por !price?
+    Dispose: Eliminaras !items?
+    DeviceItem: Activaras temporalmente este dispositivo por !items?
+    iSlot: Ganaras !items?
+    Enchant: Encantaras tu objeto por !enchantments por !price?
+    iSellXP: Venderas !xp XP por !price?
+    iBuyXP: Compraras !xp XP por !price?
+    iTrade: Cambiaras !chest1 por !chest2?
+    Trade: Cambiaras !chest1 por !chest2?
+    TpToOwner: Te haras teletransporte al creador !owner por !price?
+    Class: Compraras esta clase de !items por !price?
+    Disenchant: Removeras el encantamiento del obleto en tu mano por !price?
+    Command: Ejecutaras el comando en el cartel por !price?
+    UserCommand: Ejecuto el comando del cartel por !price?
+    Jukebox: Vas a hacer sonar el tocadiscos por !price?
+    Kit: Vas a adquirir !items por !price?
+    ResetKit: Resetearas !param signs for !price?
+    iXPBuy: Compraras !items por !xp XP points?
+    iXPSell: Venderas !items por !xp XP points?
+    Promote: Promoveras de !permgroup a !promoteto?
+    TCommand: Los comandos en este cartel se ejecutaran dentro de 10 segundos!
+  transaction:
+    Buy: Compraste !items Por !price!
+    Sell: Vendiste !items Por !price!
+    Donate: Donaste !items!
+    DonateHand: Has Donado !items!
+    Slot: Has ganado un !items!
+    iBuy: Compraste !items Por !price!
+    iSell: Vendiste !items Por !price!
+    gBuy: Compraste !items Por !price!
+    gSell: Vendiste !items Por !price!
+    Day: Has puesto el tiempo a dia por !price!
+    Night: Has puesto el tiempo a noche por !price!
+    Rain: Estableciste el tiempo a llover por !price!
+    ClearSkies: Estableciste el tiempo a despejado por !price!
+    DeviceOn: Ha activado este dispositivo por !price!
+    DeviceOff: Ha desactivado este dispositivo por !price!
+    Toggle: Activaste este dispositivo por !price!
+    Device: Activaste temporalmente este dispositivo por !price!
+    Heal: Te curaste por !price!
+    Repair: Lo reparaste por !price!
+    Dispose: Eliminaste !items!
+    DeviceItem: Activaste temporalmente este dispositivo por !items!
+    iSlot: Ganaste !items!
+    Enchant: Encantaste tu objeto !enchantments por !price!
+    iSellXP: Vendiste !xp XP por !price!
+    iBuyXP: Compraste !xp XP por !price!
+    iTrade: Cambiaste !chest1 por !chest2!
+    Trade: Cambiaste !chest1 por !chest2!
+    TpToOwner: Te has teletransportado al creador !owner por !price!
+    Class: Compraste esta clase de !items por !price!
+    Disenchant: Removiste el encantamiento del objeto en tu mano por !price!
+    Command: Ejecuto el comando en el cartel por !price!
+    UserCommand: Ejecuto el comando del cartel por !price!
+    Jukebox: Hiciste sonar el tocadiscos por !price!
+    Kit: Has adquirido !items por !price!
+    ResetKit: Reseteaste !param signs for !price!
+    iXPBuy: Compraste !items por !xp XP points!
+    iXPSell: Vendiste !items por !xp XP points!
+    Promote: Has promovido de !permgroup a !promoteto!
+    TCommand: Los comandos en este cartel se ejecutaran dentro de 10 segundos!
+errors:
+  no_permission: No tiene permiso para crear este cartel!
+  no_permission_use: No tiene permiso para usar este cartel!
+  no_permission_changeowner: No tiene permiso para cambiar el creador de esta tienda!
+  invalid_operation: El cartel que clickeo no tiene operacion valida!
+  chest_empty: Esta tienda esta vacia!
+  chest_missing: Tienes que unir al menos un cofre para este tipo de tienda!
+  lever_missing: Tienes que unir al menos una palanca para este tipo de tienda!
+  no_player_money: Usted no tiene !price para pagar!
+  no_shop_money: Esta tienda no tiene !price para pagarle!
+  out_of_business: This shop appears to have gone out of business!
+  out_of_stock: La tienda esta fuera de servicio!
+  overstocked: La tienda esta sobrecargada!
+  player_doesnt_have_items: No tienes! (!items)
+  no_item_in_hand: Tiene que tener el objeto en mano para venderlo!
+  player_overstocked: Estas sobrecargado, Tu inventario esta lleno, o no puedes tener mas dinero!
+  sign_location_stored: Locacion de cartel establecida!
+  made_day: '!player cambio el tiempo a dia!'
+  made_night: '!player cambio el tiempo a noche!'
+  made_rain: '!player hizo llover!'
+  made_clear_skies: '!player hizo el cielo despejado!'
+  already_on: El dispositivo Ya esta encendido
+  already_off: El dispositivo Ya esta apagado
+  link_notallowed: No tienes permiso para unir!
+  item_already_repair: Este objeto Ya esta reparado!
+  already_raining: Ya esta lloviendo!
+  already_clear_skies: Ya el cielo esta despejado!
+  already_full_health: Tu vida ya esta totalmente llena!
+  saving: Guardando tiendas...
+  saved: Tiendas guardadas!
+  shop_removed: Removida una tienda invalida! Se ubica en '!world' a (!x, !y, !z).
+  invalid_item_to_repair: Este objeto no se puede reparar!
+  no_item_to_repair: Necesitas tener el objeto en mano para repararlo!
+  backup_fail: Creacion de copia de seguridad fallida!
+  too_far: La distancia entre el cofre y el cartel es demasiada grande. la maxima es !max.
+  too_many_shops: Has alcanzado el limite de creacion de tiendas. maximas son !max.
+  enchanted_not_allowed: Insificiente permisos para reparar objetos encantados.
+  enchantment_missing: Al menos un obleto encantado se necesita, Por favor pon uno en el cofre(s)!
+  item_not_enchantable: El objeto en tu mano no se puede encantar!
+  no_player_xp: Tienes insuficientes niveles de experiencia (!xp)!
+  no_item_to_disenchant: Tienes que tener el objeto para desencantarlo!
+  nothing_to_disenchant: Este objeto no se puede desencantar!
+  multiworld_not_allowed: Tiendas MultiMundo no estan permitidos aqui!
+  no_permit_owner: el creador de esta tienda se le acabara el permiso!
+  need_permit: No tienes permiso para configurar esta tienda!
+  villager_trading_disabled: Cambiar con Ciudadanos no esta permitido aqui!
+  not_allowed_to_link_sharesigns: No se permite linkear los carteles de compartir!
+  no_shop_linked_to_sharesign: El cartel de compartir no esta linkeado.
+  share_sign_splits_profit: This Share sign splits profits between !profits for the Shop(s) at !profitshops
+  registered_share_sign: Cartel de compartir registrado, por favor clickea en la tienda.
+  unlinked_share_sign: Cartel de compartir deslinkeado.
+  linked_share_sign: Cartel de compartir linkeado correctamente.
+  not_allowed_to_link_restrictedsigns: No se le permite vincular signos restringidos a esta tienda!
+  no_shop_linked_to_restrictedsign: Este signo restringido no se ha relacionado con ninguna tienda.
+  registered_restricted_sign: Signo restringido Registrado, por favor haga clic en la tienda.
+  unlinked_restricted_sign: Signo restringido desvinculado correctamente.
+  linked_restricted_sign: Signo restringido vinculado correctamente a la tienda.
+  restricted_sign_restricts: El cartel restringido impide que uses las tienda(s) en !restrictedshops
+  towny_insufficient_funds: Insuficciente credito en tu cuenta!
+  towny_owner_not_mayor_or_assistant: El dueño de la tienda no es mayor o asistente de una ciudad.
+  towny_owner_not_belong_to_town: El dueño de la tienda probablemente no pertenece a una ciudad.
+  towny_bank_withdrawls_not_allowed: La configuración actual parece que no permite retiros bancarios!
+  restricted_from_using: Has sido restringido para usar tiendas!
+  restricted_but_owner: Usted no esta limitado a usar esta tienda porque usted es el dueño.
+  item_on_blacklist: El objeto !blacklisted_item esta en la lista negra y no se puede usar en tiendas.
+  item_on_blacklist_but_op: El objeto !blacklisted_item Esta en la lista negra pero eres OP.
+  item_not_on_whitelist: El objeto !blacklisted_item no esta en la lista negra y se puede usar en tiendas.
+  item_not_on_whitelist_but_op: El objeto !blacklisted_item no esta en la lista blanca pero eres OP.
+  block_is_protected: Este bloque esta protegido, no puedes interactuar en el.
+  updated_shop: Esta tienda se actualizo correctamente.
+  failed_to_update_shop: Esta tienda no se actualizo debido a un fallo.
+  price_drawn_from_essentials: Tenga en cuenta que el precio se ha elaborado a partir de Essentials y es por lo tanto la variable.
+  only_one_time: Solo puedes usar una tienda a la vez.
+  nothing_to_reset_ontime: Usted ya esta permitido el uso de !param carteles un tiempo. asi que no hay nada para restablecer.
+  shop_on_cooldown: Esta tienda tiene retrasos, Intenta de nuevo dentro de !cooldownleft segundos.
+  damaged_items_shop_homogeneous: Una tienda aceptando Objetos dañados solo se puede tratar en un tipo de articulo! items dañados no son aceptados cuando la tienda se arregle.
+  use_item_to_destroy_shop: Esta tienda esta protegida solo se destruye con una !destroymaterial.
+  no_items_defined_for_shop: No hay objetos definidos para esta tienda, no se puede completar la operacion.
+  notifications_shop_built: Alguien ha creado un(as) !signtype cartel en (!x, !y, !z)
+  shop_contains: Esta tienda contiene !shopinventory @ !items por !price
+  not_allowed_to_link_banksigns: no tienes derecho a unir un cartel de banco a una tienda!
+  no_shop_linked_to_banksign: Este cartel de banco no esta vinculado a ninguna tienda.
+  bank_sign_linked_to_banks: Este signo de Banco comunica el banco llamado !bank en nombre de las tiendas en !bankshops
+  registered_bank_sign: Cartel de banco registrado, por favor clickea en el siguiente cartel de tienda.
+  unlinked_bank_sign: Cartel de banco desvinculado de esta tienda.
+  linked_bank_sign: Cartel de banco vinculado correctamente a esta tienda.
+  not_allowed_to_use_bank: Usted no es el propietario o un miembro del !bank Banco por lo que el signo del Banco relacionado se ignorara.
+  no_bank_available: No hay bancario disponible para procesar la solicitud, por favor póngase en contacto con el dueño de la tienda.
+  no_bank_support: El plugin de economia instalado a este server no soporta bancos.
+  repeated_x_times: (repetiste !times veces)
+  removed_location: Locacion vinculada removida
+  stored_location: Locacion vinculada a !block
+  stored_location_containable: Locacion vinculada al !block que contiene !items
+  region_does_not_allow_shops: Tiendas no están permitidos dentro de esta region. Por favor, mueva el signo a otro lugar.
+  region_allow_shops_but_op: Esta tienda no esta en una region con "allow-shop" flag permitido, pero usted es OP.
+  region_allow_shops_but_perm: Esta tienda no esta en una region con "allow-shop" flag permitido,pero usted tiene el nodo de bypass.
+  towny_shop_plot_not_allowed: Esto no es una tienda plot, por favor muevela.
+  towny_shop_plot_not_allowed_but_op: Esta tienda no esta en una tienda mercado solo los ops pueden.
+  towny_shop_plot_not_allowed_but_perm: Las tiendas no estan activadas aqui necesitas el bypass.
+  deselected_hanging: Has des-seleccionado un Hanging item.
+  selected_hanging: Has seleccionado un Hanging item.
+  itemframe_unlinked: El marco se desvinculo correctamente.
+  itemframe_linked: El marco se vinculo correctamente.
+  itemframe_already_linked: Estos marcos ya estan unidos a otra tienda.
+  shop_is_now_protected: A los cofre(s) se le activo la seguridad.
+  not_allowed_to_rotate_frame: No tienes derecho para rotar los marcos.
+  no_permission_plugin: Plugin de permisos no encontrado.
+  missing_promote_group: Por favor escribe el permiso para promover el grupo.
+  promote_group_does_not_exist: La segunda linea del permiso del grupo no se encuentra.
+  not_in_permission_group: No tienes permiso del grupo.
+  already_in_promote_group: Ya estas en ese grupo.
+  could_not_remove_primary_group: No puedes removerte en un grupo primario
+  could_not_promote: No te pudieron promover.
+  must_be_op_to_run: No tienes el derecho para ejecutar este comando,solo los OP's pueden.

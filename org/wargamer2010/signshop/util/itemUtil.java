@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
+import org.bukkit.craftbukkit.v1_8_R2.inventory.CraftInventory;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.meta.BookMeta;
@@ -35,6 +36,7 @@ import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.VirtualInventory;
 
 public class itemUtil {
     private itemUtil() {
@@ -90,32 +92,12 @@ public class itemUtil {
         for(Block bHolder : containables) {
             if(bHolder.getState() instanceof InventoryHolder) {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
-                if(isStockOK(Holder.getInventory(), items, bTakeOrGive))
+                VirtualInventory vInventory = new VirtualInventory(Holder.getInventory());
+                if(vInventory.isStockOK(items, bTakeOrGive))
                     return Holder;
             }
         }
         return null;
-    }
-
-    public static Boolean isStockOK(Inventory iiInventory, ItemStack[] isItemsToTake, boolean bTakeOrGive) {
-        try {
-            ItemStack[] isChestItems = iiInventory.getContents();
-            ItemStack[] isBackup = getBackupItemStack(isChestItems);
-            ItemStack[] isBackupToTake = getBackupItemStack(isItemsToTake);
-            HashMap<Integer, ItemStack> leftOver;
-            if(bTakeOrGive)
-                leftOver = iiInventory.removeItem(isBackupToTake);
-            else
-                leftOver = iiInventory.addItem(isBackupToTake);
-            Boolean bStockOK = true;
-            if(!leftOver.isEmpty())
-                bStockOK = false;
-            iiInventory.setContents(isBackup);
-            return bStockOK;
-        } catch(NullPointerException ex) {
-            // Chest is not available, contents are NULL. So let's assume the Stock is not OK
-            return false;
-        }
     }
 
     public static void fixBooks(ItemStack[] stacks) {
@@ -387,46 +369,6 @@ public class itemUtil {
         }
 
         return tempFiltered.toArray(filtered);
-    }
-
-    public static HashMap<ItemStack[], Double> variableAmount(Inventory iiFrom, ItemStack[] isItemsToTake) {
-        ItemStack[] isBackup = getBackupItemStack(isItemsToTake);
-        HashMap<ItemStack[], Double> returnMap = new HashMap<ItemStack[], Double>();
-        returnMap.put(isItemsToTake, 1.0d);
-        Boolean fromOK = itemUtil.isStockOK(iiFrom, isBackup, true);
-        IItemTags tags = BookFactory.getItemTags();
-        if(fromOK) {
-            returnMap.put(isItemsToTake, 1.0d);
-            return returnMap;
-        } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {
-            returnMap.put(isItemsToTake, 0.0d);
-            return returnMap;
-        }
-        returnMap.put(isItemsToTake, 0.0d);
-        double iCount = 0;
-        double tempCount;
-        int i = 0;
-        HashMap<ItemStack, Integer> mItemsToTake = StackToMap(isBackup);
-        HashMap<ItemStack, Integer> mInventory = StackToMap(iiFrom.getContents());
-        ItemStack[] isActual = new ItemStack[mItemsToTake.size()];
-        for(Map.Entry<ItemStack, Integer> entry : mItemsToTake.entrySet()) {
-            if(iCount == 0 && mInventory.containsKey(entry.getKey()))
-                iCount = ((double)mInventory.get(entry.getKey()) / (double)entry.getValue());
-            else if(iCount != 0 && mInventory.containsKey(entry.getKey())) {
-                tempCount = ((double)mInventory.get(entry.getKey()) / (double)entry.getValue());
-                if(tempCount != iCount)
-                    return returnMap;
-            } else
-                return returnMap;
-
-            isActual[i] = itemUtil.getBackupSingleItemStack(entry.getKey());
-            isActual[i].setAmount(mInventory.get(entry.getKey()));
-
-            i++;
-        }
-        returnMap.clear();
-        returnMap.put(isActual, iCount);
-        return returnMap;
     }
 
     public static void updateStockStatusPerChest(Block bHolder, Block bIgnore) {

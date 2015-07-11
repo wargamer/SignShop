@@ -16,6 +16,8 @@ public class BookItem implements IBookItem {
         private static boolean attemptedReflection = false;
         private static Field reflectedGenerationField = null;
 
+        private static final String generationError = "Failed to set Generation for Written Book, API might have changed. Please report this problem.";
+
         public BookItem(org.bukkit.inventory.ItemStack pItem) {
             if(pItem.getItemMeta() instanceof BookMeta) {
                 meta = (BookMeta)pItem.getItemMeta();
@@ -54,11 +56,9 @@ public class BookItem implements IBookItem {
             try {
                 return (Integer)field.get(meta);
             } catch (IllegalArgumentException ex) {
-                SignShop.log("Failed to get Generation for Written Book, API might have changed. Please report this problem.",
-                        Level.WARNING);
+                SignShop.log(generationError, Level.WARNING);
             } catch (IllegalAccessException ex) {
-                SignShop.log("Failed to get Generation for Written Book, API might have changed. Please report this problem.",
-                        Level.WARNING);
+                SignShop.log(generationError, Level.WARNING);
             }
 
             return null;
@@ -105,11 +105,9 @@ public class BookItem implements IBookItem {
                 field.set(meta, generation);
                 updateMeta();
             } catch (IllegalArgumentException ex) {
-                SignShop.log("Failed to set Generation for Written Book, API might have changed. Please report this problem.",
-                        Level.WARNING);
+                SignShop.log(generationError, Level.WARNING);
             } catch (IllegalAccessException ex) {
-                SignShop.log("Failed to set Generation for Written Book, API might have changed. Please report this problem.",
-                        Level.WARNING);
+                SignShop.log(generationError, Level.WARNING);
             }
         }
 
@@ -151,8 +149,7 @@ public class BookItem implements IBookItem {
             attemptedReflection = true;
 
             if(reflectedGenerationField == null) {
-                SignShop.log("Failed to retrieve Generation field for Written Book, API might have changed. Please report this problem.",
-                        Level.WARNING);
+                SignShop.log(generationError, Level.WARNING);
             }
 
             return reflectedGenerationField;

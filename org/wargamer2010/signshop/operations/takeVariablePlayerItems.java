@@ -11,6 +11,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import org.bukkit.Material;
+import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class takeVariablePlayerItems implements SignShopOperation {
@@ -105,9 +106,10 @@ public class takeVariablePlayerItems implements SignShopOperation {
         ItemStack[] backupinv = itemUtil.getBackupItemStack(ssArgs.getPlayer().get().getInventoryContents());
         boolean didnull = doDurabilityNullification(ssArgs);
 
-        Player player = ssArgs.getPlayer().get().getPlayer();
+        SignShopPlayer ssPlayer = ssArgs.getPlayer().get();
+
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
-        HashMap<ItemStack[], Double> variableAmount = itemUtil.variableAmount(player.getInventory(), ssArgs.getItems().get());
+        HashMap<ItemStack[], Double> variableAmount = ssPlayer.getVirtualInventory().variableAmount(ssArgs.getItems().get());
         Double iCount = (Double)variableAmount.values().toArray()[0];
 
         ssArgs.getPlayer().get().setInventoryContents(backupinv);
@@ -140,17 +142,19 @@ public class takeVariablePlayerItems implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         if(!checkRequirements(ssArgs, true))
             return false;
-        ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get());
-        return true;
+        boolean transactedAll = ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get()).isEmpty();
+        if(!transactedAll)
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_complete_operation", null));
+        return transactedAll;
     }
 
     private static class StackDurabilityPair implements Comparator<StackDurabilityPair> {
-        private ItemStack _stack;
-        private Short _durability;
+        private ItemStack stack;
+        private Short durability;
 
         private StackDurabilityPair(ItemStack stack, Short durability) {
-            _stack = stack;
-            _durability = durability;
+            this.stack = stack;
+            this.durability = durability;
         }
 
         private StackDurabilityPair() {
@@ -158,11 +162,11 @@ public class takeVariablePlayerItems implements SignShopOperation {
         }
 
         public ItemStack getStack() {
-            return _stack;
+            return stack;
         }
 
         public Short getDurability() {
-            return _durability;
+            return durability;
         }
 
         @Override

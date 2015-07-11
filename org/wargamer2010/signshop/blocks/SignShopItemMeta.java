@@ -36,7 +36,7 @@ public class SignShopItemMeta {
     private static final String valueSeperator = "-";
     private static final String innerListSeperator = "^";
     private static final ChatColor txtColor = ChatColor.YELLOW;
-    private static String filename = "books.db";
+    private static final String filename = "books.db";
     private static Boolean legacy = false;
 
     private SignShopItemMeta() {
@@ -106,7 +106,6 @@ public class SignShopItemMeta {
         	nameFromWhatIsIt = WhatIsIt.itemName(stack);
         String itemName = nameFromWhatIsIt.isEmpty() || (nameFromWhatIsIt.compareTo("Unknown")) == 0 ? nameFromWeb : nameFromWhatIsIt;
         String normal = itemName.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : itemName;
-        normal = WebUtil.translateFromEnglish(normal);
         String displayname = "";
 
         if(!isLegacy()) {

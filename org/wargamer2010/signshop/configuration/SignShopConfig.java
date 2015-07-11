@@ -74,7 +74,6 @@ public class SignShopConfig {
     private static boolean EnableTutorialMessages = true;
     private static boolean EnableShopPlotSupport = true;
     private static boolean EnableShopOwnerProtection = true;
-    private static boolean EnableGoogleTranslation = false;
     private static boolean EnableNamesFromTheWeb = false;
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
@@ -261,7 +260,6 @@ public class SignShopConfig {
         EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
         EnableShopPlotSupport = ymlThing.getBoolean("EnableShopPlotSupport", EnableShopPlotSupport);
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
-        EnableGoogleTranslation = ymlThing.getBoolean("EnableGoogleTranslation", EnableGoogleTranslation);
         EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
@@ -744,10 +742,6 @@ public class SignShopConfig {
 
     public static Boolean getEnableShopOwnerProtection() {
         return EnableShopOwnerProtection;
-    }
-
-    public static boolean getEnableGoogleTranslation() {
-        return EnableGoogleTranslation;
     }
 
     public static boolean getEnableNamesFromTheWeb() {

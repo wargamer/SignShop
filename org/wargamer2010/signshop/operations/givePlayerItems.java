@@ -4,6 +4,7 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.bukkit.Material;
+import org.wargamer2010.signshop.player.VirtualInventory;
 
 public class givePlayerItems implements SignShopOperation {
     @Override
@@ -47,7 +48,7 @@ public class givePlayerItems implements SignShopOperation {
                 return false;
             }
         } else if(!ssArgs.isOperationParameter("ignorefull")) {
-            if(!itemUtil.isStockOK(ssArgs.getPlayer().get().getPlayer().getInventory(), ssArgs.getItems().get(), false)) {
+            if(!ssArgs.getPlayer().get().getVirtualInventory().isStockOK(ssArgs.getItems().get(), false)) {
                 ssArgs.sendFailedRequirementsMessage("player_overstocked");
                 return false;
             }
@@ -57,7 +58,9 @@ public class givePlayerItems implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        ssArgs.getPlayer().get().givePlayerItems(ssArgs.getItems().get());
-        return true;
+        boolean transactedAll = ssArgs.getPlayer().get().givePlayerItems(ssArgs.getItems().get()).isEmpty();
+        if(!transactedAll)
+            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_complete_operation", null));
+        return transactedAll;
     }
 }
