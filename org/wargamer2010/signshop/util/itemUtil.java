@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.util;
 
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
@@ -19,7 +18,6 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_8_R2.inventory.CraftInventory;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.meta.BookMeta;
