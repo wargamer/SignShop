@@ -122,7 +122,7 @@ MaxSellDistance: 0
 # For more help with this, please read the Quick Reference
 MaxShopsPerPerson: 0
 
-# Maximum number of chests that can be linked to a single sign (Infinite/Default = 0)
+# Maximum number of chests that can be linked to a single sign (Infinite= 0,  Default = 100)
 # Used to prevent players from crashing the server when using a shop because there are too many chests for SignShop to check.
 MaxChestsPerShop: 100
 
