@@ -24,7 +24,7 @@ public class SignShopPlayer {
     private boolean ignoreMessages = false;
 
     public SignShopPlayer() {
-
+        playername = "";
     }
 
     public SignShopPlayer(PlayerIdentifier id) {
@@ -32,6 +32,9 @@ public class SignShopPlayer {
             return;
         playername = id.getName();
         playerId = id;
+
+        if(playername == null)
+            playername = "";
     }
 
     public SignShopPlayer(Player pPlayer) {
@@ -39,6 +42,9 @@ public class SignShopPlayer {
             playerId = new PlayerIdentifier(pPlayer);
             playername = playerId.getName();
         }
+
+        if(playername == null)
+            playername = "";
     }
 
     /**
@@ -55,6 +61,9 @@ public class SignShopPlayer {
             playerId = player.GetIdentifier();
             playername = player.getName();
         }
+
+        if(playername == null)
+            playername = "";
     }
 
     public static void broadcastMsg(World world, String sMessage) {
