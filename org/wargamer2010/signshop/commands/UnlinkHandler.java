@@ -101,7 +101,7 @@ public class UnlinkHandler implements ICommandHandler {
         if(block == null)
             return false;
 
-        Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.GetRelatedShopsByBlock(block);
+        Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
 
         for(Map.Entry<Seller, SSDestroyedEventType> entry : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, null, entry.getKey(), entry.getValue());

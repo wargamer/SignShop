@@ -535,7 +535,7 @@ public class signshopUtil {
         return sellers;
     }
 
-    public static Map<Seller, SSDestroyedEventType> GetRelatedShopsByBlock(Block block) {
+    public static Map<Seller, SSDestroyedEventType> getRelatedShopsByBlock(Block block) {
         Map<Seller, SSDestroyedEventType> affectedSellers = new LinkedHashMap<Seller, SSDestroyedEventType>();
 
         if(Storage.get().getSeller(block.getLocation()) != null)

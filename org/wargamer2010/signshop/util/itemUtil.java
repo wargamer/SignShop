@@ -24,9 +24,9 @@ import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.blocks.BookFactory;
+import org.wargamer2010.signshop.blocks.BukkitSerialization;
 import org.wargamer2010.signshop.blocks.IBookItem;
 import org.wargamer2010.signshop.blocks.IItemTags;
-import org.wargamer2010.signshop.blocks.NBTUtil;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -465,23 +465,32 @@ public class itemUtil {
                 String[] sItemprops = sItems.get(i).split(Storage.getItemSeperator());
                 if(sItemprops.length < 4)
                     continue;
-                isItems[i] = tags.getCraftItemstack(
+
+                if(sItemprops.length > 7) {
+                    String base64prop = sItemprops[7];
+                    // The ~ is used to differentiate between the old NBTLib and the BukkitSerialization
+                    if(base64prop != null && base64prop.startsWith("~")) {
+                        String joined = Join(sItemprops, 7).substring(1);
+
+                        ItemStack[] convertedStacks = BukkitSerialization.itemStackArrayFromBase64(joined);
+                        if(convertedStacks.length > 0 && convertedStacks[0] != null) {
+                            isItems[i] = convertedStacks[0];
+                        }
+                    }
+                }
+
+                if(isItems[i] == null) {
+                    isItems[i] = tags.getCraftItemstack(
                         Material.getMaterial(Integer.parseInt(sItemprops[1])),
                         Integer.parseInt(sItemprops[0]),
                         Short.parseShort(sItemprops[2])
-                );
-                isItems[i].getData().setData(new Byte(sItemprops[3]));
-                if(sItemprops.length > 7) {
-                    // If the NBT output contained our seperator, we'll just join the rest
-                    // of the array into one string since we're not expecting anything after it
-                    // other than dumped NBT data
-                    String joined = Join(sItemprops, 7);
-                    ItemStack stack = NBTUtil.getStackFromNBT(joined);
-                    if(stack != null)
-                        isItems[i] = stack;
+                    );
+                    isItems[i].getData().setData(new Byte(sItemprops[3]));
+
+                    if(sItemprops.length > 4)
+                        safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
                 }
-                if(sItemprops.length > 4)
-                    safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
+
                 if(sItemprops.length > 5) {
                     try {
                         isItems[i] = SignShopBooks.addBooksProps(isItems[i], Integer.parseInt(sItemprops[5]));
@@ -523,6 +532,9 @@ public class itemUtil {
                 String metaID = SignShopItemMeta.getMetaID(isCurrent).toString();
                 if(metaID.equals("-1"))
                     metaID = "";
+                ItemStack[] stacks = new ItemStack[1];
+                stacks[0] = isCurrent;
+
                 sItems.add((isCurrent.getAmount() + Storage.getItemSeperator()
                         + isCurrent.getTypeId() + Storage.getItemSeperator()
                         + isCurrent.getDurability() + Storage.getItemSeperator()
@@ -530,7 +542,7 @@ public class itemUtil {
                         + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
                         + ID + Storage.getItemSeperator()
                         + metaID + Storage.getItemSeperator()
-                        + NBTUtil.getNBTAsString(isCurrent)));
+                        + "~" + BukkitSerialization.itemStackArrayToBase64(stacks)));
             }
 
         }

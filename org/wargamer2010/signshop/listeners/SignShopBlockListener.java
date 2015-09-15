@@ -42,7 +42,7 @@ public class SignShopBlockListener implements Listener {
     }
 
     private boolean canBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
-        Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.GetRelatedShopsByBlock(block);
+        Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
 
         for(Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
