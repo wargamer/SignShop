@@ -95,25 +95,16 @@ public class PlayerIdentifier {
      * @param name Player name
      * @return SignShopPlayer instance
      */
+    @SuppressWarnings("deprecation") // Backwards compatibility
     public static SignShopPlayer getByName(String name) {
         if(name == null || name.isEmpty())
             return null;
+
+        OfflinePlayer player = Bukkit.getOfflinePlayer(name);
         PlayerIdentifier id = null;
 
-        if(GetUUIDSupport()) {
-            UUID uuid = null;
-            for(OfflinePlayer player : Bukkit.getServer().getOfflinePlayers()) {
-                if(player != null && player.getName() != null) {
-                    if(player.getName().equalsIgnoreCase(name))
-                        uuid = player.getUniqueId();
-                }
-            }
-            if(uuid != null)
-                id = new PlayerIdentifier(uuid);
-        }
-
-        if(id == null)
-            id = new PlayerIdentifier(name);
+        if(player != null && player.getFirstPlayed() != 0)
+            id = new PlayerIdentifier(player.getUniqueId());
 
         return new SignShopPlayer(id);
     }
