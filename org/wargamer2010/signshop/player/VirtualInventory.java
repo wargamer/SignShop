@@ -140,10 +140,9 @@ public class VirtualInventory {
                         lookaside.put(freeSpaceIndex, new StackWithAmount(toSet, item));
                     }
                 } else {
-                    ItemStack partialItem = inventory.getItem(partialSpaceIndex);
-
-                    int partialAmount = lookaside.get(partialSpaceIndex).getAmount();
-                    int maxAmount = partialItem.getMaxStackSize();
+                    StackWithAmount stackWithAmount = lookaside.get(partialSpaceIndex);
+                    int partialAmount = stackWithAmount.getAmount();
+                    int maxAmount = stackWithAmount.getStack().getMaxStackSize();
 
                     int toSet;
                     if (amountToAdd + partialAmount <= maxAmount) {
