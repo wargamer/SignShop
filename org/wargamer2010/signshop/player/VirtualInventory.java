@@ -162,7 +162,7 @@ public class VirtualInventory {
     }
 
     private int findSpace(ItemStack item, Map<Integer, StackWithAmount> lookaside, boolean findEmpty) {
-        ItemStack[] stacks = inventory.getContents();
+        ItemStack[] stacks = inventory.getStorageContents();
         if (item == null) {
             return -1;
         }
