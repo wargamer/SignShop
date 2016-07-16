@@ -330,28 +330,7 @@ public class itemUtil {
     public static ItemStack getBackupSingleItemStack(ItemStack isOriginal) {
         if(isOriginal == null)
             return isOriginal;
-        // Calls to Bukkit's inventory modifiers like "removeItem" and such used to modify the incoming stack
-        // Hence, it was decided to backup all stacks before attempting to do anything with it to prevent the shop's or player's inventory
-        // from being modified. The bugs have been solved at some point and especially from 1.4.5 onward. Which is why we version-check now
-        // and take a shortcut if we can. Clone always does a shallow copy here.
-        if(versionUtil.getBukkitVersionType() == SSBukkitVersion.Post145)
-            return isOriginal.clone();
-
-        IItemTags tags = BookFactory.getItemTags();
-        ItemStack isBackup = tags.getCraftItemstack(
-            isOriginal.getType(),
-            isOriginal.getAmount(),
-            isOriginal.getDurability()
-        );
-        itemUtil.safelyAddEnchantments(isBackup, isOriginal.getEnchantments());
-        isBackup = tags.copyTags(isOriginal, isBackup);
-
-
-        if(isOriginal.getData() != null) {
-            isBackup.setData(isOriginal.getData());
-        }
-
-        return isBackup;
+        return isOriginal.clone();
     }
 
     public static ItemStack[] filterStacks(ItemStack[] all, ItemStack[] filterby) {
@@ -460,16 +439,28 @@ public class itemUtil {
     public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
         IItemTags tags = BookFactory.getItemTags();
         ItemStack isItems[] = new ItemStack[sItems.size()];
+        int invalidItems = 0;
+        
         for(int i = 0; i < sItems.size(); i++) {
             try {
                 String[] sItemprops = sItems.get(i).split(Storage.getItemSeperator());
-                if(sItemprops.length < 4)
+                if(sItemprops.length < 4) {
+                    invalidItems++;
                     continue;
+                }
 
+                if(sItemprops.length <= 7) {
+                    if(i < (sItems.size() - 1) && sItems.get(i + 1).split(Storage.getItemSeperator()).length < 4) {
+                        // Bug detected, the next item will be the base64 string belonging to the current item
+                        // This bug will be fixed at the next save as the ~ will be replaced with a |
+                        sItemprops = (sItems.get(i) + "|" + sItems.get(i + 1)).split(Storage.getItemSeperator());
+                    }
+                }
+                
                 if(sItemprops.length > 7) {
                     String base64prop = sItemprops[7];
-                    // The ~ is used to differentiate between the old NBTLib and the BukkitSerialization
-                    if(base64prop != null && base64prop.startsWith("~")) {
+                    // The ~ and | are used to differentiate between the old NBTLib and the BukkitSerialization
+                    if(base64prop != null && (base64prop.startsWith("~") || base64prop.startsWith("|"))) {
                         String joined = Join(sItemprops, 7).substring(1);
 
                         ItemStack[] convertedStacks = BukkitSerialization.itemStackArrayFromBase64(joined);
@@ -509,6 +500,21 @@ public class itemUtil {
                 continue;
             }
         }
+        
+        if(invalidItems > 0) {
+            ItemStack temp[] = new ItemStack[sItems.size() - invalidItems];
+            int counter = 0;
+            for(ItemStack i : isItems) {
+                if(i != null) {
+                    temp[counter] = i;
+                    counter++;
+                }
+            }
+            
+            isItems = temp;
+        }
+        
+        
         return isItems;
     }
 
@@ -542,7 +548,7 @@ public class itemUtil {
                         + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
                         + ID + Storage.getItemSeperator()
                         + metaID + Storage.getItemSeperator()
-                        + "~" + BukkitSerialization.itemStackArrayToBase64(stacks)));
+                        + "|" + BukkitSerialization.itemStackArrayToBase64(stacks)));
             }
 
         }
@@ -560,11 +566,10 @@ public class itemUtil {
             return false;
         if(a.getEnchantments() != b.getEnchantments())
             return false;
-        if(!SignShopItemMeta.isLegacy() && !SignShopItemMeta.getMetaAsMap(a.getItemMeta()).equals(SignShopItemMeta.getMetaAsMap(b.getItemMeta())))
+        if(!SignShopItemMeta.getMetaAsMap(a.getItemMeta()).equals(SignShopItemMeta.getMetaAsMap(b.getItemMeta())))
             return false;
-        if(a.getMaxStackSize() != b.getMaxStackSize())
-            return false;
-        return true;
+        
+        return a.getMaxStackSize() == b.getMaxStackSize();
     }
 
     public static boolean loadChunkByBlock(Block block, int radius) {

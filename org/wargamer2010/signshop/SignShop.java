@@ -26,10 +26,8 @@ import org.wargamer2010.signshop.metrics.setupMetrics;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.timing.TimeManager;
-import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.commandUtil;
-import org.wargamer2010.signshop.util.versionUtil;
 import org.wargamer2010.skript.EvtSSPretransaction;
 
 public class SignShop extends JavaPlugin{
@@ -75,20 +73,6 @@ public class SignShop extends JavaPlugin{
         }
     }
 
-    private void checkOldDir() {
-        File olddir = new File("plugins", "SignShops");
-        if(olddir.exists()) {
-            if(!this.getDataFolder().exists()) {
-                boolean renamed = olddir.renameTo(this.getDataFolder());
-                if(renamed)
-                    log("Old configuration directory (SignShops) found and succesfully migrated.", Level.INFO);
-                else
-                    log("Old configuration directory (SignShops) found, but could not rename to SignShop. Please move configs manually!", Level.INFO);
-            } else
-                log("Old configuration directory (SignShops) found, but new (SignShop) exists. Please move configs manually!", Level.INFO);
-        }
-    }
-
     private void disableSignShop() {
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.disablePlugin(this);
@@ -96,13 +80,6 @@ public class SignShop extends JavaPlugin{
 
     @Override
     public void onEnable() {
-        if(versionUtil.getBukkitVersionType() == SSBukkitVersion.Unknown) {
-            disableSignShop();
-            return;
-        }
-
-        // Migrate configs from old directory
-        this.checkOldDir();
         if(!this.getDataFolder().exists()) {
             if(!this.getDataFolder().mkdir())
                 log("Could not create plugins/SignShop folder.", Level.SEVERE);

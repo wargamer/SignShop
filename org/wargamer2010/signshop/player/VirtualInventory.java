@@ -117,6 +117,8 @@ public class VirtualInventory {
         Map<Integer, StackWithAmount> lookaside = getAmountsMapping();
         for (int i = 0; i < isItemsToGive.length; i++) {
             ItemStack item = isItemsToGive[i];
+            if(item == null)
+                continue;
             int amountToAdd = item.getAmount();
 
             while (amountToAdd > 0) {
@@ -162,7 +164,7 @@ public class VirtualInventory {
     }
 
     private int findSpace(ItemStack item, Map<Integer, StackWithAmount> lookaside, boolean findEmpty) {
-        ItemStack[] stacks = inventory.getContents();
+        ItemStack[] stacks = inventory.getStorageContents();
         if (item == null) {
             return -1;
         }

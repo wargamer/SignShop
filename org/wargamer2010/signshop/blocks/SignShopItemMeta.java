@@ -24,12 +24,10 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.configuration.ColorUtil;
-import org.wargamer2010.signshop.util.SSBukkitVersion;
 import org.wargamer2010.signshop.util.WebUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
 import org.wargamer2010.signshop.util.signshopUtil;
-import org.wargamer2010.signshop.util.versionUtil;
 
 public class SignShopItemMeta {
     private static final String listSeperator = "~";
@@ -37,17 +35,12 @@ public class SignShopItemMeta {
     private static final String innerListSeperator = "^";
     private static final ChatColor txtColor = ChatColor.YELLOW;
     private static final String filename = "books.db";
-    private static Boolean legacy = false;
-
+    
     private SignShopItemMeta() {
 
     }
 
     public static void init() {
-        legacy = (versionUtil.getBukkitVersionType() == SSBukkitVersion.Pre145);
-        if(legacy)
-            return;
-
         SSDatabase db = new SSDatabase(filename);
 
         try {
@@ -108,14 +101,13 @@ public class SignShopItemMeta {
         String normal = itemName.isEmpty() ? itemUtil.formatData(stack.getData(), stack.getDurability()) : itemName;
         String displayname = "";
 
-        if(!isLegacy()) {
-            if(stack.getItemMeta() != null) {
-                String custom = (stack.getItemMeta().hasDisplayName()
-                            ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");
-                if(custom.length() > 0)
-                    displayname = (custom + " (" + normal + ")" + txtcolor);
-            }
+        if(stack.getItemMeta() != null) {
+            String custom = (stack.getItemMeta().hasDisplayName()
+                        ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");
+            if(custom.length() > 0)
+                displayname = (custom + " (" + normal + ")" + txtcolor);
         }
+        
         if(displayname.isEmpty())
             displayname = (txtcolor + customcolor + normal + txtcolor);
 
@@ -128,7 +120,7 @@ public class SignShopItemMeta {
     }
 
     public static String getName(ItemStack stack) {
-        if(isLegacy() || !hasMeta(stack))
+        if(!hasMeta(stack))
             return getDisplayName(stack);
 
         ItemMeta meta = stack.getItemMeta();
@@ -251,9 +243,6 @@ public class SignShopItemMeta {
     }
 
     public static void setMetaForID(ItemStack stack, Integer ID) {
-        if(isLegacy())
-            return;
-
         Map<String, String> metamap = new LinkedHashMap<String, String>();
         ItemMeta meta = stack.getItemMeta();
         SSDatabase db = new SSDatabase(filename);
@@ -344,7 +333,7 @@ public class SignShopItemMeta {
     }
 
     public static Integer storeMeta(ItemStack stack) {
-        if(isLegacy() || !hasMeta(stack))
+        if(!hasMeta(stack))
             return -1;
 
         SSDatabase db = new SSDatabase(filename);
@@ -379,7 +368,7 @@ public class SignShopItemMeta {
     }
 
     public static Integer getMetaID(ItemStack stack) {
-        if(isLegacy() || !hasMeta(stack))
+        if(!hasMeta(stack))
             return -1;
 
         return getMetaID(stack, null);
@@ -405,7 +394,7 @@ public class SignShopItemMeta {
 
     public static Map<String, String> getMetaAsMap(ItemMeta meta) {
         Map<String, String> metamap = new LinkedHashMap<String, String>();
-        if(isLegacy() || meta == null)
+        if(meta == null)
             return metamap;
         List<MetaType> types = getTypesOfMeta(meta);
 
@@ -605,17 +594,10 @@ public class SignShopItemMeta {
                     builder = (Boolean.parseBoolean(bits[4]) ? builder.withTrail() : builder);
 
                     effects.add(builder.build());
-                } catch(NumberFormatException ex) {
-                    continue;
-                }
+                } catch(NumberFormatException ex) { }
             }
         }
         return effects;
-    }
-
-
-    public static Boolean isLegacy() {
-        return legacy;
     }
 
     private static enum MetaType {
