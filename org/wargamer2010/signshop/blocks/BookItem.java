@@ -23,7 +23,7 @@ public class BookItem implements IBookItem {
 
         @Override
         public String[] getPages() {
-            if(meta == null)
+            if(meta == null || !meta.hasPages())
                 return new String[1];
             String[] arr = new String[meta.getPages().size()];
             return meta.getPages().toArray(arr);
@@ -31,21 +31,22 @@ public class BookItem implements IBookItem {
 
         @Override
         public String getAuthor() {
-            if(meta == null)
+            if(meta == null || !meta.hasAuthor())
                 return "";
             return meta.getAuthor();
         }
 
         @Override
         public String getTitle() {
-            if(meta == null)
+            if(meta == null || !meta.hasTitle())
                 return "";
             return meta.getTitle();
         }
 
         @Override
         public Integer getGeneration() {
-            if(meta == null)
+            // Some 1.9.4 servers are missing .hasGeneration()
+            if(meta == null || meta.getGeneration() == null)
                 return 0;
             return meta.getGeneration().ordinal();
         }
