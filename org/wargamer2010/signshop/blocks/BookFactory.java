@@ -1,6 +1,8 @@
 
 package org.wargamer2010.signshop.blocks;
 
+import org.bukkit.inventory.meta.BookMeta;
+
 public class BookFactory {
     private BookFactory() {
 
@@ -17,7 +19,16 @@ public class BookFactory {
     }
 
     public static IBookItem getBookItem(org.bukkit.inventory.ItemStack stack) {
-        return new BookItem(stack);
+
+        try {
+            // Bukkit API 1.9.4+
+            BookMeta.Generation.class.isEnum();
+            return new BookItem(stack);
+        } catch( NoClassDefFoundError e ) {
+            // Bukkit API 1.8.8-
+            return new LegacyBookItem(stack);
+        }
+
     }
 
     public static IItemTags getItemTags() {

@@ -1,22 +1,17 @@
 package org.wargamer2010.signshop.blocks;
 
-import java.lang.reflect.Field;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BookMeta;
+import org.bukkit.inventory.meta.BookMeta.Generation;
+import org.wargamer2010.signshop.SignShop;
+
 import java.util.Arrays;
 import java.util.logging.Level;
 
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.BookMeta;
-import org.wargamer2010.signshop.SignShop;
-
 public class BookItem implements IBookItem {
 
-        private BookMeta meta = null;
-        private ItemStack _stack = null;
-
-        private static boolean attemptedReflection = false;
-        private static Field reflectedGenerationField = null;
-
-        private static final String generationError = "Failed to set Generation for Written Book, API might have changed. Please report this problem.";
+        protected BookMeta meta = null;
+        protected ItemStack _stack = null;
 
         public BookItem(org.bukkit.inventory.ItemStack pItem) {
             if(pItem.getItemMeta() instanceof BookMeta) {
@@ -50,18 +45,9 @@ public class BookItem implements IBookItem {
 
         @Override
         public Integer getGeneration() {
-            Field field = getGenerationField();
-            if(field == null)
-                return null;
-            try {
-                return (Integer)field.get(meta);
-            } catch (IllegalArgumentException ex) {
-                SignShop.log(generationError, Level.WARNING);
-            } catch (IllegalAccessException ex) {
-                SignShop.log(generationError, Level.WARNING);
-            }
-
-            return null;
+            if(meta == null)
+                return 0;
+            return meta.getGeneration().ordinal();
         }
 
         @Override
@@ -98,16 +84,19 @@ public class BookItem implements IBookItem {
 
         @Override
         public void setGeneration(Integer generation) {
-            Field field = getGenerationField();
-            if(field == null || generation == null)
+            if(meta == null)
                 return;
+            else if(generation == null)
+            {
+                meta.setGeneration(null);
+                return;
+            }
+
             try {
-                field.set(meta, generation);
-                updateMeta();
-            } catch (IllegalArgumentException ex) {
-                SignShop.log(generationError, Level.WARNING);
-            } catch (IllegalAccessException ex) {
-                SignShop.log(generationError, Level.WARNING);
+                Generation enumGen = Generation.values()[generation];
+                meta.setGeneration(enumGen);
+            } catch(ArrayIndexOutOfBoundsException e) {
+                SignShop.log("Book's generation is out of bounds; leaving as default (ORIGINAL)", Level.WARNING);
             }
         }
 
@@ -128,30 +117,7 @@ public class BookItem implements IBookItem {
             return _stack;
         }
 
-        private void updateMeta() {
+        protected void updateMeta() {
             _stack.setItemMeta(meta);
-        }
-
-        private Field getGenerationField() {
-            if(meta == null)
-                return null;
-            if(attemptedReflection)
-                return reflectedGenerationField;
-
-            try {
-                reflectedGenerationField = meta.getClass().getSuperclass().getDeclaredField("generation");
-                reflectedGenerationField.setAccessible(true);
-            }
-            catch (NoSuchFieldException ex) { reflectedGenerationField = null; }
-            catch (SecurityException ex) { reflectedGenerationField = null; }
-            catch (IllegalArgumentException ex) { reflectedGenerationField = null; }
-
-            attemptedReflection = true;
-
-            if(reflectedGenerationField == null) {
-                SignShop.log(generationError, Level.WARNING);
-            }
-
-            return reflectedGenerationField;
         }
 }
