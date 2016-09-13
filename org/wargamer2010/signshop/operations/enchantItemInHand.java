@@ -67,7 +67,12 @@ public class enchantItemInHand implements SignShopOperation {
         if(isInHand == null) {
             ssArgs.sendFailedRequirementsMessage("item_not_enchantable");
             return false;
-        } else if(!itemUtil.safelyAddEnchantments(isBackup, enchantments)) {
+        } else if(!itemUtil.needsEnchantment(isBackup, enchantments)) {
+            ssArgs.sendFailedRequirementsMessage("item_already_enchanted");
+            return false;
+        }
+        
+        if(!itemUtil.safelyAddEnchantments(isBackup, enchantments)) {
             ssArgs.sendFailedRequirementsMessage("item_not_enchantable");
             return false;
         }
@@ -78,6 +83,44 @@ public class enchantItemInHand implements SignShopOperation {
     public Boolean runOperation(SignShopArguments ssArgs) {
         ItemStack isInHand = ssArgs.getPlayer().get().getItemInHand();
         Map<Enchantment, Integer> enchantments = signshopUtil.convertStringToEnchantments(ssArgs.miscSettings.get("enchantmentInHand"));
-        return itemUtil.safelyAddEnchantments(isInHand, enchantments);
+        
+        if(isInHand.getAmount() > 1) {
+            ItemStack single = itemUtil.getBackupSingleItemStack(isInHand);
+            single.setAmount(1);
+            
+            ItemStack[] singleStacks = new ItemStack[] { single };
+            Map<Integer, ItemStack> taken = ssArgs.getPlayer().get().takePlayerItems(singleStacks);
+            if(!taken.isEmpty()) {
+                ssArgs.sendFailedRequirementsMessage("no_item_in_hand");
+                return false;
+            }
+            
+            boolean didEnchantment = itemUtil.safelyAddEnchantments(single, enchantments);
+            if(!didEnchantment)
+                return false;
+            
+            Map<Integer, ItemStack> given = ssArgs.getPlayer().get().givePlayerItems(singleStacks);
+            if(!given.isEmpty()) {
+                ItemStack singleOriginal = itemUtil.getBackupSingleItemStack(isInHand);
+                singleOriginal.setAmount(1);
+                given = ssArgs.getPlayer().get().givePlayerItems(new ItemStack[] { singleOriginal });
+                
+                ssArgs.sendFailedRequirementsMessage("player_overstocked");
+                
+                if(!given.isEmpty()) {
+                    String message = "Failed enchantment of item in hand because inventory is too full for player."
+                                        + " Player: " + ssArgs.getPlayer().get().getName() 
+                                        + ", Shop: (" + ssArgs.getSign().get().getX() + ", " + ssArgs.getSign().get().getY() + ")";
+                    
+                    SignShop.log(message, Level.WARNING);
+                }
+
+                return false;
+            }
+            
+            return true;
+        } else {
+            return itemUtil.safelyAddEnchantments(isInHand, enchantments);
+        }
     }
 }

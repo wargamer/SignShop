@@ -276,6 +276,20 @@ public class itemUtil {
         }
     }
 
+    public static Boolean needsEnchantment(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {
+        if(enchantments.isEmpty())
+            return false;
+        Map<Enchantment, Integer> currentEnchantments = isEnchantMe.getEnchantments();
+        
+        for(Map.Entry<Enchantment, Integer> enchantment : enchantments.entrySet()) {
+            if(!currentEnchantments.containsKey(enchantment.getKey()) || !currentEnchantments.get(enchantment.getKey()).equals(enchantment.getValue())) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
     public static Boolean safelyAddEnchantments(ItemStack isEnchantMe, Map<Enchantment, Integer> enchantments) {
         if(enchantments.isEmpty())
             return true;
