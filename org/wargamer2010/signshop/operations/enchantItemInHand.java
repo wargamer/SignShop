@@ -8,6 +8,8 @@ import org.wargamer2010.signshop.SignShop;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
+import org.bukkit.Material;
+import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -30,7 +32,12 @@ public class enchantItemInHand implements SignShopOperation {
                 InventoryHolder Holder = (InventoryHolder)bHolder.getState();
                 for(ItemStack item : Holder.getInventory().getContents()) {
                     if(item != null && item.getAmount() > 0) {
-                        TempEnchantments = item.getEnchantments();
+                        if(item.getType() == Material.ENCHANTED_BOOK && item.hasItemMeta() && item.getItemMeta() instanceof EnchantmentStorageMeta) {
+                            TempEnchantments = ((EnchantmentStorageMeta)item.getItemMeta()).getStoredEnchants();
+                        } else {
+                            TempEnchantments = item.getEnchantments();
+                        }
+                        
                         if(TempEnchantments.isEmpty()) continue;
                         for(Map.Entry<Enchantment, Integer> enchantment : TempEnchantments.entrySet()) {
                             if(AllEnchantments.containsKey(enchantment.getKey()) && AllEnchantments.get(enchantment.getKey()) > enchantment.getValue())
