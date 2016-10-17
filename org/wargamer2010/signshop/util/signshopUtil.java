@@ -241,8 +241,13 @@ public class signshopUtil {
             }
         }
         int sum = 0;
-        for(Integer percentage : percentages)
+        for(Integer percentage : percentages) {
+            if (percentage <= 0) {
+                ssPlayer.sendMessage("Each percentage should be greater than 0, please adjust the number(s) on the fourth line.");
+                return "";
+            }
             sum += percentage;
+        }
         if(sum > 100) {
             ssPlayer.sendMessage("Sum of the percentages can never be greater than 100, please adjust the number(s) on the fourth line.");
             return "";
