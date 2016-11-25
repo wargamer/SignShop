@@ -188,6 +188,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
 
+                event.setCancelled(true);
                 List<Block> containables = new LinkedList<Block>();
                 List<Block> activatables = new LinkedList<Block>();
                 Boolean wentOK = signshopUtil.getSignshopBlocksFromList(ssPlayer, containables, activatables, bClicked);
