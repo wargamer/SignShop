@@ -190,11 +190,10 @@ public class configUtil {
 
     public static FileConfiguration loadYMLFromJar(Plugin plugin, Class<?> pluginclass, FileConfiguration ymlInPluginFolder, String filenameInJar) {
         File configFile = new File(plugin.getDataFolder(), filenameInJar);
-        FileConfiguration thingInJar = new YamlConfiguration();
+        FileConfiguration thingInJar = new YamlConfiguration().load(configFile);
         try {
             InputStream in = pluginclass.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
-                thingInJar.load(in);
                 thingInJar.options().copyHeader(false);
                 ymlInPluginFolder.options().copyDefaults(true);
                 ymlInPluginFolder.options().copyHeader(false); // Don't copy header since addOriginalCommentsToStream will fix that
