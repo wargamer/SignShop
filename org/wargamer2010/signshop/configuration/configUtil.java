@@ -194,7 +194,7 @@ public class configUtil {
         try {
             InputStream in = pluginclass.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
-                thingInJar.load(in);
+                thingInJar.load(new InputStreamReader(in));
                 thingInJar.options().copyHeader(false);
                 ymlInPluginFolder.options().copyDefaults(true);
                 ymlInPluginFolder.options().copyHeader(false); // Don't copy header since addOriginalCommentsToStream will fix that
