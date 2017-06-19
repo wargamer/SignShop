@@ -144,6 +144,11 @@ public class PlayerMetadata {
                 SignShopPlayer player = PlayerIdentifier.getPlayerFromString(playername);
                 if(player == null)
                     continue;
+                // Adding a NPE check to solve an issue where SignShop is failing to load.
+                // Presumably the DB file is missing some necessary info, but in the sample
+                // case UUID conversion happened long ago so it does not need to happen again. 
+                if(player.GetIdentifier() == null)
+                    continue;
                 String id = player.GetIdentifier().toString();
                 if(!playername.equalsIgnoreCase(id))
                     toConverts.add(new ToConvert(playername, id, metakey, metavalue));
