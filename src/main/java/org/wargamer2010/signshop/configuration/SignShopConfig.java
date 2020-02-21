@@ -44,6 +44,7 @@ public class SignShopConfig {
     private static int ChunkLoadRadius = 2;
     private static int MaxChestsPerShop = 100;
     private static Boolean TransactionLog = false;
+    private static boolean Debugging = false;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
     private static boolean AllowVariableAmounts = false;
@@ -135,16 +136,11 @@ public class SignShopConfig {
     }
 
     private static void setupHooks() {
-        HookManager.addHook("LWC");
-        HookManager.addHook("Lockette");
+
         HookManager.addHook("WorldGuard");
-        HookManager.addHook("Deadbolt");
-        HookManager.addHook("Residence");
         HookManager.addHook("GriefPrevention");
-        HookManager.addHook("PreciousStones");
-        HookManager.addHook("PlotMe");
         HookManager.addHook("Towny");
-        HookManager.addHook("Lorelocks");
+
     }
 
     private static void setupSpecialsOps() {
@@ -223,6 +219,7 @@ public class SignShopConfig {
 
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
+        Debugging = ymlThing.getBoolean("Debugging", Debugging);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
         ChunkLoadRadius = ymlThing.getInt("ChunkLoadRadius", ChunkLoadRadius);
         ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
@@ -746,6 +743,8 @@ public class SignShopConfig {
     public static boolean isOPMaterial(Material check) {
         return (check == updateMaterial || check == linkMaterial);
     }
+
+    public static boolean debugging(){return Debugging;}
 
     /**
      * Orders strings by their length from long to short

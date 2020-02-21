@@ -24,20 +24,21 @@ MessageCooldownSeconds: 0
 # Setting this to a high number will keep more chunks loaded, at the cost of server performance, use at your own risk
 ChunkLoadRadius: 2
 
+# Should verbose debugging messages be enabled? This could get very spammy.
+Debugging: false
 
 #----------- Tools ------------------
 
-# All items can be listed by item number (http://www.minecraftwiki.net/wiki/Data_values)
-# Or by item name (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html)
+# Item names (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
 
 # Used to create and tell shops what they are connected with
 LinkMaterial: redstone
 
 # Used to change the owner of a sign or update an active sign's words by punching another sign first
-UpdateMaterial: ink_sack
+UpdateMaterial: ink_sac
 
 # Used to destroy shops in creative mode if "ProtectShopsInCreative" is set to "true"
-DestroyMaterial: gold_axe
+DestroyMaterial: golden_axe
 
 
 #----------- Language ------------------
@@ -48,7 +49,7 @@ DestroyMaterial: gold_axe
 # NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
 Languages: english
 
-# Fetch more readable item names from the internet (Default = false)
+# Fetch more readable item names from the internet (Default = false) Currently not available.
 EnableNamesFromTheWeb: false
 
 #----------- Mechanics ------------------
@@ -102,9 +103,18 @@ linkableMaterials:
   BREWING_STAND: brewingstand
   ENCHANTMENT_TABLE: enchantmenttable
   LEVER: lever
-  SIGN: sign
-  SIGN_POST: sign
-  WALL_SIGN: sign
+  ACACIA_SIGN: sign
+  ACACIA_WALL_SIGN: sign
+  BIRCH_SIGN: sign
+  BIRCH_WALL_SIGN: sign
+  DARK_OAK_SIGN: sign
+  DARK_OAK_WALL_SIGN: sign
+  JUNGLE_SIGN: sign
+  JUNGLE_WALL_SIGN: sign
+  OAK_SIGN: sign
+  OAK_WALL_SIGN: sign
+  SPRUCE_SIGN: sign
+  SPRUCE_WALL_SIGN: sign
   STEP: slab
   JUKEBOX: jukebox
   WOODEN_DOOR: door
