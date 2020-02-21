@@ -17,6 +17,8 @@ public class SimpleBlockProtector implements Listener {
         if(!HookManager.canBuild(event.getPlayer().getPlayer(), event.getBlock())) {
             event.getPlayer().sendMessage(SignShopConfig.getError("link_notallowed", null));
             event.setCancelled(true);
+        }else {//TODO remove
+            event.getPlayer().sendMessage("Link event allowed.");
         }
     }
 }

@@ -1,13 +1,20 @@
 
 package org.wargamer2010.signshop.events;
 
+
 import org.bukkit.block.Block;
 import org.bukkit.event.block.Action;
+import org.bukkit.plugin.RegisteredListener;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.IExpirable;
+
+
+import java.util.logging.Level;
 
 public class SSEventFactory {
 
@@ -66,7 +73,14 @@ public class SSEventFactory {
     }
 
     public static SSLinkEvent generateLinkEvent(Block pSign, SignShopPlayer pPlayer, Seller pShop) {
-        return new SSLinkEvent(pSign, pPlayer, pShop);
+        SSLinkEvent linkEvent = new SSLinkEvent(pSign, pPlayer, pShop);
+        if (SignShopConfig.debugging()){//TODO remove
+            SignShop.log("Generated SSLinkEvent "+ pSign.toString() +" "+pPlayer.getName() +" "+ pShop, Level.INFO);
+            RegisteredListener[] registeredListener = linkEvent.getHandlers().getRegisteredListeners();
+            SignShop.log("Handlers "+ registeredListener[0].getListener().getClass(), Level.INFO);
+        }
+
+        return linkEvent;
     }
 
     public static SSExpiredEvent generateExpiredEvent(IExpirable pExpirable) {

@@ -68,7 +68,7 @@ public class SignShopConfig {
     private static final String baseLanguage = "english";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
-    private static Material updateMaterial = Material.getMaterial("INK_SACK");
+    private static Material updateMaterial = Material.getMaterial("INK_SAC");
     private static Material destroyMaterial = Material.getMaterial("IRON_HOE");
 
     private SignShopConfig() {
@@ -246,8 +246,8 @@ public class SignShopConfig {
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
-        updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SACK"), Material.getMaterial("INK_SACK"));
-        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLD_AXE"), Material.getMaterial("GOLD_AXE"));
+        updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SAC"), Material.getMaterial("INK_SAC"));
+        destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
 
         // Sanity check
         if(ChunkLoadRadius > 50 || ChunkLoadRadius < 0)

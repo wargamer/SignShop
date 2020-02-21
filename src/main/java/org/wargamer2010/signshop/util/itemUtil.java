@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.util;
 import org.bukkit.ChatColor;
 import org.bukkit.Chunk;
 import org.bukkit.Material;
+import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.enchantments.Enchantment;
@@ -14,6 +15,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.material.MaterialData;
 import org.bukkit.material.SimpleAttachableMaterialData;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.*;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -23,6 +25,7 @@ import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.VirtualInventory;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -135,16 +138,24 @@ public class itemUtil {
         short s = 0;
         return formatData(data, s);
     }
-
+//TODO THIS COULD BE WERE THE LEGACY STUFF IS FROM, I PROBABLY NEED TO CHANGE THIS TO BLOCKDATA
     public static String formatData(MaterialData data, short durability) {
         String sData;
 
         // For some reason running tostring on data when it's from an attachable material
         // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
-        if(data instanceof SimpleAttachableMaterialData)
+        if(data instanceof SimpleAttachableMaterialData) {
+            if (SignShopConfig.debugging()){
+                SignShop.log("formatData SimpleAttachableMaterialData "+ data.getItemType().name(), Level.INFO);
+            }
             return stringFormat(data.getItemType().name());
+        }
 
         sData = data.toString().toLowerCase();
+
+        if (SignShopConfig.debugging()){
+            SignShop.log("formatData sData "+ sData, Level.INFO);
+        }
 
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
         Matcher m = p.matcher(sData);
@@ -402,12 +413,12 @@ public class itemUtil {
         setSignStatus(bSign, ccColor);
     }
 
-    public static Boolean clickedSign(Block bBlock) {
-        return (bBlock.getType() == Material.getMaterial("SIGN") || bBlock.getType() == Material.getMaterial("WALL_SIGN") || bBlock.getType() == Material.getMaterial("SIGN_POST"));
+    public static Boolean clickedSign(Block bBlock) {//TODO change to Tag in a later version?
+        return (bBlock.getBlockData() instanceof org.bukkit.block.data.type.Sign || bBlock.getBlockData() instanceof org.bukkit.block.data.type.WallSign);
     }
 
     public static Boolean clickedDoor(Block bBlock) {
-        return (bBlock.getType() == Material.getMaterial("WOODEN_DOOR") || bBlock.getType() == Material.getMaterial("IRON_DOOR") || bBlock.getType() == Material.getMaterial("IRON_DOOR_BLOCK"));
+       return Tag.DOORS.isTagged(bBlock.getType());
     }
 
     private static boolean isTopHalf(byte data) {
