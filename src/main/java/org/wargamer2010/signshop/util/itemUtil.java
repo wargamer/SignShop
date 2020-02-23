@@ -141,16 +141,6 @@ public class itemUtil {
 
     private static String formatMaterialName(Material material) {
         String sData;
-
-        // For some reason running tostring on data when it's from an attachable material
-        // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
-        /*if(material instanceof SimpleAttachableMaterialData) {
-            if (SignShopConfig.debugging()){
-                SignShop.log("formatMaterialName SimpleAttachableMaterialData "+ material.getItemType().name(), Level.INFO);
-            }
-            return stringFormat(material.getItemType().name());
-        }*/
-
         sData = material.toString().toLowerCase();
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
         Matcher m = p.matcher(sData);

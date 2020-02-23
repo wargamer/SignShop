@@ -45,6 +45,7 @@ public class SignShopConfig {
     private static int MaxChestsPerShop = 100;
     private static Boolean TransactionLog = false;
     private static boolean Debugging = false;
+    private static boolean MetricsEnabled = true;
     private static boolean OPOverride = true;
     private static boolean AllowUnsafeEnchantments = false;
     private static boolean AllowVariableAmounts = false;
@@ -220,6 +221,7 @@ public class SignShopConfig {
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         Debugging = ymlThing.getBoolean("Debugging", Debugging);
+        MetricsEnabled = ymlThing.getBoolean("MetricsEnabled", MetricsEnabled);
         MaxShopsPerPerson = ymlThing.getInt("MaxShopsPerPerson", MaxShopsPerPerson);
         ChunkLoadRadius = ymlThing.getInt("ChunkLoadRadius", ChunkLoadRadius);
         ShopCooldown = ymlThing.getInt("ShopCooldownMilliseconds", ShopCooldown);
@@ -745,6 +747,8 @@ public class SignShopConfig {
     }
 
     public static boolean debugging(){return Debugging;}
+
+    public static boolean metricsEnabled(){return MetricsEnabled;}
 
     /**
      * Orders strings by their length from long to short

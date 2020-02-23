@@ -24,7 +24,10 @@ MessageCooldownSeconds: 0
 # Setting this to a high number will keep more chunks loaded, at the cost of server performance, use at your own risk
 ChunkLoadRadius: 2
 
-# Should verbose debugging messages be enabled? This could get very spammy.
+# Enable annonymous metrics data? Please do, it helps us stay motivated.
+MetricsEnabled: true
+
+# Should verbose debugging messages be enabled? This could get very spammy or it may do nothing.
 Debugging: false
 
 #----------- Tools ------------------

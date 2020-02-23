@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SignShop" />
+        <module name="SignShopV" />
+        <module name="SignShopV3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SignShop" target="1.8" />
+      <module name="SignShopV" target="1.8" />
+      <module name="SignShopV3" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
