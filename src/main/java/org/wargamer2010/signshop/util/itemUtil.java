@@ -12,10 +12,7 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.material.MaterialData;
-import org.bukkit.material.SimpleAttachableMaterialData;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.*;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -25,7 +22,6 @@ import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.VirtualInventory;
 
 import java.util.*;
-import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -133,30 +129,29 @@ public class itemUtil {
         }
         return roman.toString();
     }
+    public static String formatMaterialName(ItemStack itemStack){
 
-    public static String formatData(MaterialData data) {
-        short s = 0;
-        return formatData(data, s);
+        return formatMaterialName(itemStack.getType());
     }
-//TODO THIS COULD BE WERE THE LEGACY STUFF IS FROM, I PROBABLY NEED TO CHANGE THIS TO BLOCKDATA
-    public static String formatData(MaterialData data, short durability) {
+
+    public  static String formatMaterialName(Block block){
+
+       return formatMaterialName(block.getType());
+    }
+
+    private static String formatMaterialName(Material material) {
         String sData;
 
         // For some reason running tostring on data when it's from an attachable material
         // will cause a NullPointerException, thus if we're dealing with an attachable, go the easy way :)
-        if(data instanceof SimpleAttachableMaterialData) {
+        /*if(material instanceof SimpleAttachableMaterialData) {
             if (SignShopConfig.debugging()){
-                SignShop.log("formatData SimpleAttachableMaterialData "+ data.getItemType().name(), Level.INFO);
+                SignShop.log("formatMaterialName SimpleAttachableMaterialData "+ material.getItemType().name(), Level.INFO);
             }
-            return stringFormat(data.getItemType().name());
-        }
+            return stringFormat(material.getItemType().name());
+        }*/
 
-        sData = data.toString().toLowerCase();
-
-        if (SignShopConfig.debugging()){
-            SignShop.log("formatData sData "+ sData, Level.INFO);
-        }
-
+        sData = material.toString().toLowerCase();
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");
         Matcher m = p.matcher(sData);
         sData = m.replaceAll("");
@@ -233,7 +228,7 @@ public class itemUtil {
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
             String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
-                sItems.append(count).append(formatData(entry.getKey().getData(), entry.getKey().getDurability()));
+                sItems.append(count).append(formatMaterialName(entry.getKey()));
             else
                 sItems.append(count).append(newItemMeta);
             if(itemUtil.isWriteableBook(entry.getKey())) {

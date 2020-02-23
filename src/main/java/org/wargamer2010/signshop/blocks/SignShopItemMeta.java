@@ -89,7 +89,7 @@ public class SignShopItemMeta {
         String txtcolor = txtColor.toString();
         String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
 
-        String normal = itemUtil.formatData(stack.getData(), stack.getDurability());
+        String normal = itemUtil.formatMaterialName(stack);
         String displayname = "";
 
         if(stack.getItemMeta() != null) {

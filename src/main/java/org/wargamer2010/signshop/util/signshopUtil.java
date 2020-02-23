@@ -447,7 +447,7 @@ public class signshopUtil {
                 else {
                     clicks.mClicksPerLocation.put(bClicked.getLocation(), ssPlayer.getPlayer());
                     Map<String, String> messageParts = new LinkedHashMap<>();
-                    messageParts.put("!block", itemUtil.formatData(bClicked.getState().getData()));
+                    messageParts.put("!block", itemUtil.formatMaterialName(bClicked));
                     if(bClicked.getState() instanceof InventoryHolder) {
                         List<Block> containables = new LinkedList<>();
                         containables.add(bClicked);
