@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -32,6 +33,7 @@ public class SignShop extends JavaPlugin{
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
     private final SignShopLoginListener loginListener = new SignShopLoginListener();
+    private final int bStatsId = 6574;
     private static SignShop instance;
 
     private static final Logger logger = Logger.getLogger("Minecraft");
@@ -46,9 +48,6 @@ public class SignShop extends JavaPlugin{
 
     // Vault
     private Vault vault = null;
-
-    // Skript
-    private static boolean registeredWithSkript = false;
 
     // Commands
     private static CommandDispatcher commandDispatcher = new CommandDispatcher();
@@ -94,7 +93,6 @@ public class SignShop extends JavaPlugin{
             if(!this.getDataFolder().mkdir())
                 log("Could not create plugins/SignShop folder.", Level.SEVERE);
         }
-//Todo Setup bstats
         instance = this;
 
         setupCommands();
@@ -147,6 +145,9 @@ public class SignShop extends JavaPlugin{
             log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         } else {
             disableSignShop();
+        }
+        if (SignShopConfig.metricsEnabled()) {
+            Metrics metrics = new Metrics(this, bStatsId);
         }
     }
 

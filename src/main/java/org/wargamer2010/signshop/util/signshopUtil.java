@@ -114,7 +114,6 @@ public class signshopUtil {
 
 
     public static Map<Enchantment, Integer> convertStringToEnchantments(String multiEnchantmentString) {
-        System.out.println("convertStringToEnchantments() was used in ssUtil");//Todo, remove
         Map<Enchantment, Integer> enchantmentsMap = new HashMap<>();
         String[] enchantmentStrings = multiEnchantmentString.split(";");
         if (enchantmentStrings.length == 0)
