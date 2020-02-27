@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.operations.SignShopArguments;
@@ -40,6 +41,7 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
         rtRequestType = pRequestType;
     }
 
+    @NotNull
     @Override
     public HandlerList getHandlers() {
         return handlers;

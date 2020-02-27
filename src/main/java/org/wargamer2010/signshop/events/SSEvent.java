@@ -4,6 +4,7 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,6 +50,7 @@ public abstract class SSEvent extends Event implements Cancellable {
         messageParts.put(part, value);
     }
 
+    @NotNull
     @Override
     public abstract HandlerList getHandlers();
 

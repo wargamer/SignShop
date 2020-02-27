@@ -6,26 +6,35 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
-import org.wargamer2010.signshop.listeners.SignShopWorthListener;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 
+import java.util.logging.Level;
+
 public class GetPriceFromWorth implements Listener {
 
     private double getTotalPrice(final ItemStack[] pStacks) {
-        if(!SignShopWorthListener.essLoaded())
+        if (SignShop.worthHandler == null) {
+            if (SignShopConfig.debugging()) {
+                SignShop.log("worthHandler is null", Level.INFO);
+            }
             return -1.0f;
+        }
         double fTotal = 0.0f;
         for(ItemStack stack : pStacks) {
-            double dTemp = SignShopWorthListener.getPrice(stack);
+            double dTemp = SignShop.worthHandler.getPrice(stack);
             if(dTemp > 0.0d) {
                 fTotal += (dTemp * stack.getAmount());
             }
+        }
+        if (SignShopConfig.debugging()) {
+            SignShop.log("Total price is " + fTotal, Level.INFO);
         }
         return fTotal;
     }

@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
+import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -21,6 +22,7 @@ public class SSTouchShopEvent extends SSEvent {
         bBlock = pBlock;
     }
 
+    @NotNull
     @Override
     public HandlerList getHandlers() {
         return handlers;

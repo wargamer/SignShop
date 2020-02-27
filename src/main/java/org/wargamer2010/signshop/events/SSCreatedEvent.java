@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 import java.util.List;
@@ -34,6 +35,7 @@ public class SSCreatedEvent extends SSEvent {
         miscSettings = pMisc;
     }
 
+    @NotNull
     @Override
     public HandlerList getHandlers() {
         return handlers;

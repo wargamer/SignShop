@@ -5,10 +5,14 @@ package org.wargamer2010.signshop.events;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.Action;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.timing.IExpirable;
+
+import java.util.logging.Level;
 
 public class SSEventFactory {
 
@@ -75,6 +79,9 @@ public class SSEventFactory {
     }
 
     public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, SSMoneyEventType type, SSMoneyRequestType pRequestType) {
+        if (SignShopConfig.debugging()) {
+            SignShop.log("Generate money event: " + ssArgs + " " + type + " " + pRequestType, Level.INFO);
+        }
         SSMoneyTransactionEvent event = new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
                                             Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
                                             ssArgs.getPrice().get(),

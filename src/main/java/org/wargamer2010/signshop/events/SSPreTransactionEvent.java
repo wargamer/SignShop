@@ -4,6 +4,7 @@ import org.bukkit.block.Block;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -51,6 +52,7 @@ public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
         bRequirementsOK = pRequirementsOK;
     }
 
+    @NotNull
     @Override
     public HandlerList getHandlers() {
         return handlers;
