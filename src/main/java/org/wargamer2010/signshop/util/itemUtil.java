@@ -6,6 +6,8 @@ import org.bukkit.Material;
 import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.data.Bisected;
+import org.bukkit.block.data.BlockData;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
@@ -13,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.*;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -22,10 +25,12 @@ import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.player.VirtualInventory;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class itemUtil {
+
     private itemUtil() {
 
     }
@@ -184,9 +189,6 @@ public class itemUtil {
             item.getDurability()
         );
         safelyAddEnchantments(isBackup, item.getEnchantments());
-        if(item.getData() != null){
-            isBackup.setData(item.getData());
-        }
         return tags.copyTags(item, isBackup);
     }
 
@@ -406,8 +408,12 @@ public class itemUtil {
        return Tag.DOORS.isTagged(bBlock.getType());
     }
 
-    private static boolean isTopHalf(byte data) {
-        return ((data & 0x8) == 0x8);
+    private static boolean isTopHalf(BlockData blockData) {
+        if (blockData instanceof Bisected) {
+            Bisected bisected = ((Bisected) blockData);
+            return bisected.getHalf() == Bisected.Half.TOP;
+        }
+        return false;
     }
 
     public static Block getOtherDoorPart(Block bBlock) {
@@ -416,7 +422,7 @@ public class itemUtil {
         Block up = bBlock.getWorld().getBlockAt(bBlock.getX(), bBlock.getY()+1, bBlock.getZ());
         Block down = bBlock.getWorld().getBlockAt(bBlock.getX(), bBlock.getY()-1, bBlock.getZ());
 
-        Block otherpart = isTopHalf(bBlock.getData()) ? down : up;
+        Block otherpart = isTopHalf(bBlock.getBlockData()) ? down : up;
         if(clickedDoor(otherpart))
             return otherpart;
         return null;
@@ -432,131 +438,61 @@ public class itemUtil {
         return builder.toString();
     }
 
-    public static ItemStack[] convertStringtoItemStacks(List<String> sItems) {
-        IItemTags tags = BookFactory.getItemTags();
-        ItemStack[] isItems = new ItemStack[sItems.size()];
-        int invalidItems = 0;
-        
-        for(int i = 0; i < sItems.size(); i++) {
+
+    public static ItemStack[] convertStringtoItemStacks(List<String> itemStringList) {//TODO test
+        ItemStack[] itemStacks = new ItemStack[itemStringList.size()];
+
+        for (int i = 0; i < itemStringList.size(); i++) {
             try {
-                String[] sItemprops = sItems.get(i).split(Storage.getItemSeperator());
-                if(sItemprops.length < 4) {
-                    invalidItems++;
-                    continue;
-                }
-
-                if(sItemprops.length <= 7) {
-                    if(i < (sItems.size() - 1) && sItems.get(i + 1).split(Storage.getItemSeperator()).length < 4) {
-                        // Bug detected, the next item will be the base64 string belonging to the current item
-                        // This bug will be fixed at the next save as the ~ will be replaced with a |
-                        sItemprops = (sItems.get(i) + "|" + sItems.get(i + 1)).split(Storage.getItemSeperator());
+                String base64prop = itemStringList.get(i);
+                if (base64prop != null) {
+                    ItemStack[] convertedStacks = BukkitSerialization.itemStackArrayFromBase64(base64prop);
+                    if(convertedStacks.length > 0 && convertedStacks[0] != null) {
+                        itemStacks[i] = convertedStacks[0];
                     }
                 }
-                
-                if(sItemprops.length > 7) {
-                    String base64prop = sItemprops[7];
-                    // The ~ and | are used to differentiate between the old NBTLib and the BukkitSerialization
-                    if(base64prop != null && (base64prop.startsWith("~") || base64prop.startsWith("|"))) {
-                        String joined = Join(sItemprops, 7).substring(1);
-
-                        ItemStack[] convertedStacks = BukkitSerialization.itemStackArrayFromBase64(joined);
-                        if(convertedStacks.length > 0 && convertedStacks[0] != null) {
-                            isItems[i] = convertedStacks[0];
-                        }
-                    }
+            } catch (Exception e) {
+                if (SignShopConfig.debugging()) {
+                    SignShop.log("Error converting strings to item stacks.", Level.WARNING);
                 }
-
-                if(isItems[i] == null) {
-                    isItems[i] = tags.getCraftItemstack(
-                            Material.getMaterial(sItemprops[1]),
-                        Integer.parseInt(sItemprops[0]),
-                        Short.parseShort(sItemprops[2])
-                    );
-                    isItems[i].getData().setData(new Byte(sItemprops[3]));
-
-                    if(sItemprops.length > 4)
-                        safelyAddEnchantments(isItems[i], signshopUtil.convertStringToEnchantments(sItemprops[4]));
-                }
-
-                if(sItemprops.length > 5) {
-                    try {
-                        isItems[i] = SignShopBooks.addBooksProps(isItems[i], Integer.parseInt(sItemprops[5]));
-                    } catch (NumberFormatException ignored) {
-
-                    }
-                }
-                if(sItemprops.length > 6) {
-                    try {
-                        SignShopItemMeta.setMetaForID(isItems[i], Integer.parseInt(sItemprops[6]));
-                    } catch (NumberFormatException ignored) {
-
-                    }
-                }
-            } catch (Exception ignored) {
-
             }
         }
-        
-        if(invalidItems > 0) {
-            ItemStack[] temp = new ItemStack[sItems.size() - invalidItems];
-            int counter = 0;
-            for(ItemStack i : isItems) {
-                if(i != null) {
-                    temp[counter] = i;
-                    counter++;
-                }
-            }
-            
-            isItems = temp;
-        }
-        
-        
-        return isItems;
+
+
+        return itemStacks;
     }
 
-    public static boolean isWriteableBook(ItemStack item) {
-        if(item == null) return false;
-        return (item.getType() == Material.getMaterial("WRITTEN_BOOK") || item.getType() == Material.getMaterial("BOOK_AND_QUILL"));
-    }
-
-    public static String[] convertItemStacksToString(ItemStack[] isItems) {
-        List<String> sItems = new ArrayList<>();
-        if(isItems == null)
+    public static String[] convertItemStacksToString(ItemStack[] itemStackArray) {//TODO test
+        List<String> itemStringList = new ArrayList<>();
+        if (itemStackArray == null)
             return new String[1];
 
-        ItemStack isCurrent;
-        for (ItemStack isItem : isItems) {
-            if (isItem != null) {
-                isCurrent = isItem;
-                String ID = "";
-                if (itemUtil.isWriteableBook(isCurrent))
-                    ID = SignShopBooks.getBookID(isCurrent).toString();
-                String metaID = SignShopItemMeta.getMetaID(isCurrent).toString();
-                if (metaID.equals("-1"))
-                    metaID = "";
+        ItemStack currentItemStack;
+        for (ItemStack itemStack : itemStackArray) {
+            if (itemStack != null) {
+                currentItemStack = itemStack;
                 ItemStack[] stacks = new ItemStack[1];
-                stacks[0] = isCurrent;
+                stacks[0] = currentItemStack;
 
-                sItems.add((isCurrent.getAmount() + Storage.getItemSeperator()
-                        + isCurrent.getType() + Storage.getItemSeperator()
-                        + isCurrent.getDurability() + Storage.getItemSeperator()
-                        + isCurrent.getData().getData() + Storage.getItemSeperator()
-                        + signshopUtil.convertEnchantmentsToString(isCurrent.getEnchantments()) + Storage.getItemSeperator()
-                        + ID + Storage.getItemSeperator()
-                        + metaID + Storage.getItemSeperator()
-                        + "|" + BukkitSerialization.itemStackArrayToBase64(stacks)));
+                itemStringList.add(BukkitSerialization.itemStackArrayToBase64(stacks));
+
             }
 
         }
-        String[] items = new String[sItems.size()];
-        sItems.toArray(items);
+        String[] items = new String[itemStringList.size()];
+        itemStringList.toArray(items);
         return items;
     }
 
+
+    public static boolean isWriteableBook(ItemStack item) {
+        if (item == null) return false;
+        return (item.getType() == Material.getMaterial("WRITTEN_BOOK") || item.getType() == Material.getMaterial("BOOK_AND_QUILL"));
+    }
+
+
     public static boolean itemstackEqual(ItemStack a, ItemStack b, boolean ignoredur) {
         if(a.getType() != b.getType())
-            return false;
-        if(!ignoredur && a.getData().getData() != b.getData().getData())
             return false;
         if(!ignoredur && a.getDurability() != b.getDurability())
             return false;

@@ -394,19 +394,15 @@ public class signshopUtil {
         return entities;
     }
 
-    //noInspection "deprectated"
+    //TODO remove deprecated getData calls
     private static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
-        return clickedSignShopMat(bBlock.getType().toString(), bBlock.getData(), ssPlayer);
+        return clickedSignShopMat(bBlock.getType().toString(), ssPlayer);
     }
 
-    public static Boolean clickedSignShopMat(Entity eEntity, SignShopPlayer ssPlayer) {
-        return clickedSignShopMat(eEntity.getType().toString(), (short)-1, ssPlayer);
-    }
-
-    private static Boolean clickedSignShopMat(String mat, short dur, SignShopPlayer ssPlayer) {
+    private static Boolean clickedSignShopMat(String mat, SignShopPlayer ssPlayer) {
         String materialName = null;
         for(LinkableMaterial linkable : SignShopConfig.getLinkableMaterials()) {
-            if((linkable.getData() == -1 || linkable.getData() == dur) && linkable.getMaterialName().equalsIgnoreCase(mat))
+            if (linkable.getMaterialName().equalsIgnoreCase(mat))
                 materialName = linkable.getAlias();
         }
         if(materialName != null) {

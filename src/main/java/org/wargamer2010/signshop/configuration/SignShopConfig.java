@@ -153,10 +153,10 @@ public class SignShopConfig {
         SpecialsOps.add(new ChangeShopItems());
     }
 
-    private static void safeAddLinkeable(String sName, String sGroup, byte sData) {
+    private static void safeAddLinkeable(String sName, String sGroup) {
         if(sName == null || sGroup == null || sName.isEmpty())
             return;
-        LinkableMaterials.add(new LinkableMaterial(sName, sGroup, sData));
+        LinkableMaterials.add(new LinkableMaterial(sName, sGroup));
     }
 
     private static byte getDataFromString(String dur) {
@@ -170,16 +170,7 @@ public class SignShopConfig {
     private static void setupLinkables() {
         LinkableMaterials = new ArrayList<>();
         for(Map.Entry<String, String> entry : configUtil.fetchStringStringHashMap("linkableMaterials", config, false).entrySet()) {
-            byte data = -1;
-            String material;
-            if(entry.getKey().contains("~")) {
-                String[] bits = entry.getKey().split("~");
-                material = bits[0];
-                data = getDataFromString(bits[1]);
-            } else {
-                material = entry.getKey();
-            }
-            safeAddLinkeable(material, entry.getValue(), data);
+            safeAddLinkeable(entry.getKey(), entry.getValue());
         }
     }
 
@@ -193,23 +184,7 @@ public class SignShopConfig {
     public static void addLinkable(String material, String alias) {
         if(material == null || material.isEmpty())
             return;
-        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase(), (byte)-1);
-    }
-
-    /**
-     * Register a material so that it can be linked and used for a shop
-     * The Alias is used when checking for DenyLink permission nodes (i.e. DenyLink.door)
-     * Passing a value for data other than -1 will only allow the given material with that specific
-     * data value to be linked. It is allowed to register the same material with multiple data values.
-     *
-     * @param material Material to register
-     * @param alias Alias to use for the given material
-     * @param data Durability value to compare
-     */
-    public static void addLinkable(String material, String alias, byte data) {
-        if(material == null || material.isEmpty())
-            return;
-        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase(), data);
+        safeAddLinkeable(material.toUpperCase(), alias.toLowerCase());
     }
 
     private static void initConfig() {

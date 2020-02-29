@@ -2,13 +2,16 @@ package org.wargamer2010.signshop.listeners;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
+import org.bukkit.block.data.BlockData;
+import org.bukkit.block.data.type.Sign;
+import org.bukkit.block.data.type.Switch;
+import org.bukkit.block.data.type.WallSign;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockBurnEvent;
-import org.bukkit.material.Attachable;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
@@ -22,7 +25,7 @@ import java.util.Map;
 
 public class SignShopBlockListener implements Listener {
 
-    private List<Block> getAttachables(Block from) {
+    private List<Block> getAttachables(Block originalBlock) {
         List<Block> attachables = new ArrayList<>();
         List<BlockFace> checkFaces = new ArrayList<>();
         checkFaces.add(BlockFace.UP);
@@ -31,14 +34,30 @@ public class SignShopBlockListener implements Listener {
         checkFaces.add(BlockFace.SOUTH);
         checkFaces.add(BlockFace.WEST);
 
-        for(BlockFace face : checkFaces) {
-            if(from.getRelative(face).getState().getData() instanceof Attachable) {
-                Attachable att = (Attachable)from.getRelative(face).getState().getData();
-                if(from.getRelative(face).getRelative(att.getAttachedFace()).equals(from))
-                    attachables.add(from.getRelative(face));
-            }
-        }
+        Block relativeBlock;
+        BlockData relativeBlockData;
 
+        for(BlockFace face : checkFaces) {
+            relativeBlock = originalBlock.getRelative(face);
+            relativeBlockData = relativeBlock.getBlockData();
+            if (relativeBlockData instanceof Switch) {
+                Switch switchData = (Switch) relativeBlockData;
+                if (switchData.getFace() == Switch.Face.FLOOR
+                        && relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
+                    attachables.add(relativeBlock);
+                }
+            }
+            else if (relativeBlockData instanceof WallSign) {
+                WallSign wallSign = (WallSign) relativeBlockData;
+                if (relativeBlock.getRelative(wallSign.getFacing().getOppositeFace()).equals(originalBlock)) { //may need to add getOppositeFace
+                    attachables.add(relativeBlock);
+                }
+            }
+            else if (relativeBlockData instanceof Sign)
+                if (relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
+                    attachables.add(relativeBlock);
+                }
+        }
         return attachables;
     }
 

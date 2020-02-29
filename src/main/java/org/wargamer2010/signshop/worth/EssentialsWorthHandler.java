@@ -6,6 +6,8 @@ import com.earth2me.essentials.Worth;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
 
+import java.math.BigDecimal;
+
 public class EssentialsWorthHandler implements WorthHandler {
     IEssentials ess;
     Worth worth;
@@ -17,6 +19,8 @@ public class EssentialsWorthHandler implements WorthHandler {
 
     @Override
     public double getPrice(ItemStack stack) {
-        return worth.getPrice(ess, stack).doubleValue();
+
+        BigDecimal worthPrice = worth.getPrice(ess, stack);
+        return (worthPrice == null ? 0 : worthPrice.doubleValue());
     }
 }
