@@ -394,7 +394,6 @@ public class signshopUtil {
         return entities;
     }
 
-    //TODO remove deprecated getData calls
     private static Boolean clickedSignShopMat(Block bBlock, SignShopPlayer ssPlayer) {
         return clickedSignShopMat(bBlock.getType().toString(), ssPlayer);
     }

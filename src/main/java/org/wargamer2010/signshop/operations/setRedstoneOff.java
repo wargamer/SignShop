@@ -2,9 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockState;
-import org.bukkit.material.Lever;
-import org.bukkit.material.MaterialData;
+import org.bukkit.block.data.type.Switch;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -31,11 +29,9 @@ public class setRedstoneOff implements SignShopOperation {
         Block bLever;
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);
-            if(bLever.getType() == Material.getMaterial("LEVER")) {
-                BlockState state = bLever.getState();
-                MaterialData data = state.getData();
-                Lever lever = (Lever)data;
-                if(lever.isPowered())
+            if(bLever.getType() == Material.getMaterial("LEVER") && bLever.getBlockData() instanceof Switch) {
+                Switch switchLever = (Switch) bLever.getBlockData();
+                if(switchLever.isPowered())
                     bReturn = true;
             }
         }
@@ -53,14 +49,11 @@ public class setRedstoneOff implements SignShopOperation {
 
         for(int i = 0; i < ssArgs.getActivatables().get().size(); i++) {
             bLever = ssArgs.getActivatables().get().get(i);
-            if(bLever.getType() == Material.getMaterial("LEVER")) {
-                BlockState state = bLever.getState();
-                MaterialData data = state.getData();
-                Lever lever = (Lever)data;
-                if(lever.isPowered()) {
-                    lever.setPowered(false);
-                    state.setData(lever);
-                    state.update();
+            if(bLever.getType() == Material.getMaterial("LEVER")&& bLever.getBlockData() instanceof Switch) {
+                Switch switchLever = (Switch) bLever.getBlockData();
+                if(switchLever.isPowered()) {
+                    switchLever.setPowered(false);
+                    bLever.setBlockData(switchLever);
                     signshopUtil.generateInteractEvent(bLever, ssArgs.getPlayer().get().getPlayer(), ssArgs.getBlockFace().get());
                 }
             }

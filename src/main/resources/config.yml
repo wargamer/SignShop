@@ -94,6 +94,7 @@ pricemultipliers:
 # So before a player can link a CHEST, the player will be checked for OP (OP's can link everything from the list below) and the SignShop.DenyLink.chest permission node.
 linkableMaterials:
   CHEST: chest
+  BARREL: chest
   TRAPPED_CHEST: chest
   DROPPER: dropper
   HOPPER: hopper
