@@ -192,7 +192,7 @@ public class itemUtil {
         return tags.copyTags(item, isBackup);
     }
 
-    @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")//TODO fix
+   @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
     public static String itemStackToString(ItemStack[] isStacks) {
         if(isStacks == null || isStacks.length == 0)
             return "";

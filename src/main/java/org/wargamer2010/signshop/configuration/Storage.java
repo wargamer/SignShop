@@ -341,7 +341,6 @@ public class Storage implements Listener, Runnable {
 
     public void removeSeller(Location lKey) {
         if(Storage.sellers.containsKey(lKey)){
-            //TODO remove? -->   Storage.sellers.get(lKey).cleanUp();
             Storage.sellers.remove(lKey);
             this.Save();
         }
@@ -412,7 +411,7 @@ public class Storage implements Listener, Runnable {
         }
     }
 
-    @SuppressWarnings("InfiniteLoopStatement")//Todo revisit this
+    @SuppressWarnings("InfiniteLoopStatement")
     private void saveToFile() {
         while(true) {
             try {
