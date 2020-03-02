@@ -1,0 +1,247 @@
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+
+signs:
+  Koop: Buy
+  Verkoop: Sell
+  Doneer: Donate
+  DoneerHand: DonateHand
+  Gokmachine: Slot
+  iVerkoop: iSell
+  iKoop: iBuy
+  gKoop: gBuy
+  gVerkoop: gSell
+  Dag: Day
+  Nacht: Night
+  Regen: Rain
+  Droog: ClearSkies
+  ApparaatAan: DeviceOn
+  ApparaatUit: DeviceOff
+  Schakel: Toggle
+  Apparaat: Device
+  Heel: Heal
+  Repareer: Repair
+  Deponeer: Dispose
+  ApparaatIt: DeviceItem
+  iGokmachine: iSlot
+  Betover: Enchant
+  iKoopXP: iBuyXP
+  iVerkoopXP: iSellXP
+  iRuil: iTrade
+  Klasse: Class
+  Onttover: Disenchant
+  Commando: Command
+  Deel: Share
+  Uitsluitend: Restricted
+messages:
+  setup:
+    Buy: Je hebt !items te koop aangeboden voor !price
+    Sell: Je hebt een winkel opgezet die !items inkoopt voor !price
+    Donate: Je hebt een donatiebox opgezet voor !items
+    DonateHand: Je hebt een algemene donatiebox opgezet
+    Slot: Je hebt een gokmachine opgezet waarbij voor !price een van !items valt te winnen
+    iBuy: Je hebt een winkel opgezet die !items aanbiedt voor !price met een oneindige voorraad
+    iSell: Je hebt een winkel opgezet die !items inkoopt voor !price zonder ze op te slaan
+    gBuy: Je hebt een schaduw winkel opgezet die !items voor !price verkoopt. (Let op, je verdient of verliest hier geen geld mee)
+    gSell: Je hebt een schaduw winkel opgezet die !items voor !price inkoopt. (Let op, je verdient of verliest hier geen geld mee)
+    Day: Je hebt een tijd beheerder opgezet die het voor !price dag kan maken.
+    Night: Je hebt een tijd beheerder opgezet die het voor !price nacht kan maken.
+    Rain: Je hebt een weer beheerder opgezet die het voor !price kan laten regenen.
+    ClearSkies: Je hebt een weer beheerder opgezet die het voor !price droog kan maken.
+    DeviceOn: Je hebt een apparaat activator opgezet die voor !price het apparaat aan zet.
+    DeviceOff: Je hebt een apparaat deactivator opgezet die voor !price het apparaat uit zet.
+    Toggle: Je hebt een schakelaar opgezet die voor !price het apparaat schakeld.
+    Device: Je hebt een apparaat activator opgezet die voor !price het apparaat tijdelijk aan zet.
+    Heal: Je hebt een genees station opgezet die voor !price de gebruiker volledig geneest.
+    Repair: Je hebt een reparatie station opgezet die voor !price het item van de gebruiker repareert.
+    Dispose: Je hebt een vuilnisbak opgezet.
+    DeviceItem: Je hebt een apparaat activator opgezet die voor !items het apparaat aan zet.
+    iSlot: Je hebt een gokmachine met oneindige voorraad opgezet waarbij voor !price een van !items valt te winnen.
+    Enchant: Je hebt een betoveraar opgezet die voor !price een item met !enchantments betovert.
+    iSellXP: Je hebt een winkel opgezet die !xp inkoopt voor !price.
+    iBuyXP: Je hebt een winkel opgezet die !xp verkoopt voor !price.
+    iTrade: Je hebt een handel winkel opgezet die !chest1 inkoopt en !chest2 terug geeft.
+    TpToOwner: Je hebt een voorbeeld commando shop opgezet die voor !price naar !owner teleporteert.
+    Class: Je hebt een winkel opgezet die voor !price een klasse van items verkoopt.
+    Disenchant: Je hebt een onttoveraar opgezet die voor !price alle betoveringen verwijderd van een item.
+    Command: Je hebt een winkel opgezet die voor !price een commando uitvoert.
+  confirm:
+    Buy: \!items kopen voor !price?
+    Sell: \!items verkopen voor !price?
+    Donate: \!items doneren?
+    DonateHand: \!items doneren?
+    Slot: Gokje wagen voor !price?
+    iBuy: \!items kopen voor !price?
+    iSell: \!items verkopen voor !price?
+    gBuy: \!items kopen voor !price?
+    gSell: \!items verkopen voor !price?
+    Day: Dag maken voor !price?
+    Night: Nacht maken voor !price?
+    Rain: Laat het regenen voor !price?
+    ClearSkies: Zonnetje laten schijnen voor !price?
+    DeviceOn: Apparaat activeren voor !price?
+    DeviceOff: Apparaat deactiveren voor !price?
+    Toggle: Apparaat schakelen voor !price?
+    Device: Apparaat tijdelijke activeren voor !price?
+    Heal: Jezelf genezen voor !price?
+    Repair: Item in je hand repareren voor !price?
+    Dispose: \!items weg gooien?
+    DeviceItem: Apparaat tijdelijk activeren voor !items?
+    iSlot: Gokje wagen bij deze oneindig gevuld gokmachine voor !price?
+    Enchant: Item betoveren met !enchantments voor !price?
+    iSellXP: \!xp XP verkopen voor !price?
+    iBuyXP: \!xp XP kopen voor !price?
+    iTrade: \!chest1 ruilen voor !chest2?
+    TpToOwner: Teleporteer naar !owner voor !price?
+    Class: Deze klasse met !items kopen voor !price?
+    Disenchant: Verwijder de betoveringen van het item in je hand voor !price?
+    Command: Draai de commando's op dit bord voor !price?
+  transaction:
+    Buy: Je hebt !items gekocht voor !price!
+    Sell: Je hebt !items verkocht voor !price!
+    Donate: Je hebt !items gedoneerd!
+    DonateHand: Je hebt !items gedoneerd!
+    Slot: Je hebt !items gewonnen!
+    iBuy: Je hebt !items gekocht voor !price!
+    iSell: Je hebt !items verkocht voor !price!
+    gBuy: Je hebt !items gekocht voor !price!
+    gSell: Je hebt !items verkocht voor !price!
+    Day: Je hebt het dag gemaakt voor !price!
+    Night: Je hebt het nacht gemaakt voor !price!
+    Rain: Je hebt het laten regenen voor !price!
+    ClearSkies: Je hebt het zonnetje laten schijnen voor !price!
+    DeviceOn: Je hebt het apparaat geactiveerd voor !price!
+    DeviceOff: Je hebt het apparaat gedeactiveerd voor !price!
+    Toggle: Je hebt het apparaat geschakeld voor !price!
+    Device: Je hebt het apparaat tijdelijke geactiveerd voor !price!
+    Heal: Je hebt jezelf genesen voor !price!
+    Repair: Je hebt een item gerepareerd voor !price!
+    Dispose: Je hebt !items weg gegooid!
+    DeviceItem: Je hebt het apparaat tijdelijk geactiveerd voor !items!
+    iSlot: Je hebt !items gewonnen!
+    Enchant: Je hebt een item betoverd met !enchantments voor !price!
+    iSellXP: Je hebt !xp XP verkocht voor !price!
+    iBuyXP: Je hebt !xp XP gekocht voor !price!
+    iTrade: Je hebt !chest1 geruild voor !chest2!
+    TpToOwner: Je bent naar !owner geteleporteerd voor !price!
+    Class: Je hebt de klasse met !items gekocht voor !price!
+    Disenchant: Je hebt de betoveringen verwijderd van het item in je hand voor !price!
+    Command: Je hebt de commando's op het bord laten draaien voor !price!
+  transaction_owner:
+    Buy: \!customer kocht !items voor !price van jou!
+    Sell: \!customer verkocht !items aan jou voor !price!
+    Donate: \!customer doneerde !items aan jou!
+    DonateHand: \!customer doneerde !items aan jou!
+    Slot: \!customer heeft een gokje gewaagd bij jouw gokmachine voor !price en heeft !items gewonnen!
+    iBuy: ''
+    iSell: ''
+    gBuy: \!customer kocht !items van jouw (spook) winkel!
+    gSell: \!customer verkocht !items aan jou (spook) winkel!
+    Day: \!customer heeft het dag gemaakt voor !price!
+    Night: \!customer heeft het nacht gemaakt voor !price!
+    Rain: \!customer heeft het laten regenen voor !price!
+    ClearSkies: \!customer heeft het zonnetje laten schijnen voor !price!
+    DeviceOn: \!customer heeft jouw apparaat geactiveerd voor !price!
+    DeviceOff: \!customer heeft jouw apparaat geactiveerd voor !price!
+    Toggle: \!customer heeft jouw apparaat geschakeld voor !price!
+    Device: \!customer heeft jouw apparaat tijdelijk geactiveerd voor !price!
+    Heal: \!customer heeft zichzelf genesen voor !price!
+    Repair: \!customer heeft een item gerepareerd bij jouw winkel voor !price!
+    Dispose: ''
+    DeviceItem: \!customer heeft jouw apparaat tijdelijk geactiveerd voor !items!
+    iSlot: ''
+    Enchant: \!customer betoverde zijn item met !enchantments voor !price!
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    TpToOwner: \!customer is naar jouw geteleporteerd voor !price!
+    Class: ''
+    Disenchant: ''
+    Command: ''
+errors:
+  no_permission: Je hebt niet de juiste toestemming om deze winkel te maken!
+  no_permission_use: Je hebt niet de juiste toestemming om deze winkel te gebruiken!
+  invalid_operation: Het bord waar op is geklikt heeft geen valide operatie!
+  chest_empty: De opslag is leeg!
+  chest_missing: Je moet minstens een kist selecteren om deze winkel te maken!
+  lever_missing: Je moet minstens een schakelaar selecteren om deze winkel te maken!
+  no_player_money: Je hebt geen !price!
+  no_shop_money: De winkeleigenaar heeft geen !price!
+  out_of_business: Deze winkel is opgedoekt!
+  out_of_stock: De winkel heeft onvoldoende voorraad!
+  overstocked: De winkel is overvol!
+  player_doesnt_have_items: Je hebt hebt geen !items!
+  no_item_in_hand: Je moet een item in je hand houden!
+  player_overstocked: Jouw inventory zit vol!
+  sign_location_stored: Locatie van bord opgeslagen!
+  made_day: '!player heeft het dag gemaakt!'
+  made_night: '!player heeft het nacht gemaakt!'
+  made_rain: '!player heeft het laten regenen!'
+  made_clear_skies: '!player heeft het zonnetje laten schijnen!'
+  already_on: Het apparaat staat al aan
+  already_off: Het apparaat staat al uit
+  link_notallowed: Je mag dat block niet linken!
+  item_already_repair: Dat item is al volledig gerepareerd!
+  already_raining: Het regent al!
+  already_clear_skies: Het zonnetje schijnt al!
+  already_full_health: Je bent al volledig fit!
+  saving: Winkels opslaan...
+  saved: Winkels zijn opgeslagen!
+  shop_removed: Invalide winkel verwijderd! Het zou in '!world' moet staan op (!x, !y, !z).
+  invalid_item_to_repair: Dat item kan niet gerepareerd worden!
+  no_item_to_repair: Je moet het item dat wilt laten repareren beet houden!
+  backup_fail: Kon Storage niet backuppen!
+  too_far: De afstand tussen de opslag en het bord is te groot. De maximum is !max.
+  too_many_shops: Je hebt de maximale hoeveelheid winkels bereikt. De maximum is !max.
+  enchanted_not_allowed: Je mag geen betoverde items repareren.
+  enchantment_missing: Er moet minimaal een betoverd item aanwezig zijn, stop er een in de kist(en)!
+  item_not_enchantable: Het item in je hand kan niet betoverd worden!
+  no_player_xp: Je hebt geen !xp om te verkopen!
+  no_item_to_disenchant: Je moet het item dat je wilt onttoveren beet houden!
+  nothing_to_disenchant: Dat item kan niet onttoverd worden!
+  multiworld_not_allowed: MultiWorld winkels zijn niet toegestaan op de wereld!
+  no_permit_owner: De winkeleigenaar heeft geen vergunning meer!
+  need_permit: Je hebt een vergunning nodig om deze winkel te bouwen!
+  villager_trading_disabled: Er mag op deze server niet met Villagers gehandeld worden!
+  not_allowed_to_link_sharesigns: Je hebt niet de juiste toestemming om het Deel bord aan deze winkel te verbinden!
+  no_shop_linked_to_sharesign: Dit Deel bord is nog niet aan een winkel verbonden.
+  share_sign_splits_profit: Dit Deel bord verdeelt de winst over !profits voor winkel(s) @ !profitshops
+  registered_share_sign: Deel bord is geregisteeerd, klik nu op een actieve winkel.
+  unlinked_share_sign: Deel bord is ontbonden van de winkel.
+  linked_share_sign: Deel bord is succesvol verbonden met de winkel.
+  not_allowed_to_link_restrictedsigns: Je hebt niet de juiste toestemming om het Uitsluitend bord aan deze winkel te verbinden!
+  no_shop_linked_to_restrictedsign: Dit Uitsluitend bord is nog niet aan een winkel verbonden.
+  registered_restricted_sign: Uitsluitend bord is geregisteeerd, klik nu op een actieve winkel.
+  unlinked_restricted_sign: Uitsluitend bord is ontbonden van de winkel.
+  linked_restricted_sign: Uitsluitend bord is succesvol verbonden met de winkel.
+  restricted_sign_restricts: Dit Uitsluitend bord werkt voor de winkel(s) @ !restrictedshops
+  towny_insufficient_funds: De Town heeft onvoldoende geld!
+  towny_owner_not_mayor_or_assistant: De winkel eigenaar is niet de burgemeester of assistent van de Town.
+  towny_owner_not_belong_to_town: De winkel eigenaar behoort niet tot een Town.
+  towny_bank_withdrawls_not_allowed: De huidige Towny instellingen staan geen geld opnames toe!
+  restricted_from_using: Je bent uitgesloten van het gebruik van deze winkel!
+  restricted_but_owner: Je bent niet uitgesloten van het gebruik van deze winkel omdat je de eigenaar bent.
+  item_on_blacklist: Het item !blacklisted_item staat op de zwarte lijst en mag niet gebruikt worden.
+  item_on_blacklist_but_op: Het item !blacklisted_item staat op de zwarte lijst maar je bent OP.
+  item_not_on_whitelist: Het item !blacklisted_item staat niet op de lijst met toegestane items en mag niet gebruikt worden.
+  item_not_on_whitelist_but_op: Het item !blacklisted_item staat niet op de lijst met toegestane items maar je bent OP.
+  block_is_protected: Het block is beveiligd en het is je niet toegestaan om het aan te raken.
+  updated_shop: The winkel is succesvol geüpdatet.
+  failed_to_update_shop: De winkel kon niet geüpdate worden, de reden is hierboven vermeld.
+  price_drawn_from_essentials: Let op, de prijs wordt door Essentials bepaald en is dus variabel.
+  only_one_time: Je mag deze winkel slechts eenmalig gebruiken.
+  nothing_to_reset_ontime: Je mag de gegeven winkel al één keer gebruiken. Er valt dus niets te resetten.
+commands:
+  TpToOwner:
+  - tp !player !owner
+  Command:
+  - \!line2 !line3
+pricemultipliers:
+  VIPEx:
+    iBuy: 0.7
+    iSell: 1.2
+  BlacksmithEx:
+    Repair: 0.5
+limits:
+  DefaultEx: 5
+  MemberEx: 10

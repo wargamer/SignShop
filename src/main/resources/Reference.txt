@@ -1,0 +1,199 @@
+Basic Features
+Don't need to memorize any annoying commands
+Can create global shops (with infinite items and infinite money using [iBuy] and [iSell])
+Can create player owned shops
+Can buy and sell raw XP and XP levels
+Signs have colors: [Blue] means the shop is stocked and working, [Red] means the shop is out or overstocked, [Black] means the sign is not active
+Can sell multiple items per sign (e.g. Alchemy Starter Kit, containing 3 glass bottles 1 brewing stand, netherwarts, ghast tears, etc.)
+Chests do not need to be directly under signs, they can be anywhere (Distance can be customized in the config)
+Can use multiple signs per chest (just remove any extra items, link the chest to the new sign, and stock the chest with multiple item types!)
+Ability to set up shops to control redstone levers (to charge admittance to a door, power some sort of contraption, blow up a bunch of TNT, whatever you want!)
+Can limit number of shops per player or permission group
+Can edit active signs by clicking a sign with the desired text using Black Dye and then clicking the active SignShop
+Can disable trading with villagers
+Profit sharing using [Share] signs linked to SignShops
+Restrict shop use to only groups listed on [Restricted] signs
+Localization support (if you would like your native language to be supported, help us translate our config! More information on this page.)
+Supports books (sqlite is required and will be downloaded automatically)
+Supports custom potions, fireworks, and lores
+Advanced Features
+Can set up signs to run commands in console
+Can run commands as if the buyer typed the command themselves (use "runCommand{asUser}" block in the config. NOTE: "*" permission nodes must be supported by your permission plugin for this feature)
+Can sell partial amounts to signs (disabled by default)
+Customizable messages
+Customizable signs
+Can define multipliers for groups to allow certain groups to get discounts or make more money for selling items
+
+
+Signs
+Sign	  Admin	Description
+[Buy]	     No	    Buy an item from the shop chest for the price specified on the 4th line
+[Sell]	     No	    Sell an item to the shop chest for the price specified on the 4th line
+[Trade]	     No	    Trades one set of items for another, 2 chests required
+[Share]	     No	    Link to another SignShop to split profits, lines 2 and 3 are for the other players, line 4 is for % amounts (e.g. "25/50" for 75% to others)
+[Bank]	     No	    Link to another SignShop to make the shop take/give money to a bank account, The bank account is specified on line 2 of the sign (Note: you must own the bank account for this to work)
+[Donate]	 No	    Gives an item to the shop chest
+[DonateHand] No	    Donates the item in your hand to the shop chest
+[Dispose]	 No	    Takes the item in your hand and safely decomposes the material
+[Slot]	     No	    Gives a random item from the selected chest items (not the entire inventory) to the player
+[DeviceOn]	 No	    Turns a lever on
+[DeviceOff]	 No	    Turns a lever off
+[Toggle]	 No 	Toggles a lever
+[Device]	 No	    Temporarily turns on a lever
+[DeviceItem] No	    Temporarily turns on a lever using items as payment
+[Jukebox]	 No	    Allows players create jukeboxes by placing music discs in a chest
+[Restricted] No	    Makes it so only certain permission groups can use the linked SignShop (listed on lines 2, 3, and 4)
+[gBuy]	     Yes	Buy an item from the shop chest, but the owner receives no money
+[gSell]	     Yes	Sell an item to the shop chest, and the player receives money, but not from the owner
+[iBuy]	     Yes	Buy an item from the "shop", money goes to noone, infinite items
+[iSell]	     Yes	Sell an item to the "shop", infinite money, item disappears
+[iTrade]	 Yes	Trades one set of items for another, infinite stock
+[Class]	     Yes	Takes the user's inventory and replaces it with items from a chest, infinite stock
+[Kit]	     Yes	Gives the buyer a set of items once (infinite stock), must be reset using ResetKit sign before they can use it again
+[ResetKit]	 Yes	Allows a player to use a Kit sign again
+[iBuyXP]	 Yes	Buy the number of XP levels on the third line of the sign
+[iSellXP]	 Yes	Sell the number of XP levels on the third line of the sign
+[iXPBuy]	 Yes	Buy an item using raw XP points on the third line of the sign
+[iXPSell]  	 Yes	Sell an item using raw XP points on the third line of the sign
+[iSlot]	     Yes	Gives a random item from the selected chest items with infinite stock
+[Day]	     Yes	Turns the time to day
+[Night]	     Yes	Turns the time to night
+[Rain]	     Yes	Turns on rain + thunder
+[ClearSkies] Yes	Turns off rain + thunder
+[Repair]	 Yes	Repairs the current item
+[Heal]	     Yes	Fully heals the player
+[Enchant]	 Yes	Sells the enchantments from the item in the chest
+[Disenchant] Yes	Removes enchantments from an item
+[TpToOwner]	 Yes	An example of a custom sign for running commands
+[Command]	 Yes	Allows players to run commands on the 2nd and 3rd lines of the sign
+[UserCommand]Yes	Allows players to run commands on the 2nd and 3rd lines of the sign as if they typed it themselves
+[Promote]	 Yes	Promotes players to the permission group listed on the 2nd line of the sign
+
+"Admin" signs require OP or SignShop.Admin.* to create
+
+P.S. If the sign you are looking for isn't here, you can create custom signs in the config. Just add it to the signs: section and give it the appropriate blocks. If you need help, make sure to chec
+
+
+Permissions
+Firstly, you should be using one of the permission plugins Vault supports (PEX, Luckperms, etc). If you do not use one of these plugins, SignShop will default to OP permissions.
+
+Basic Permission Nodes
+There are a few basic SignShop permission nodes. The “*” symbol indicates either the name of a sign or a type of block (depending on the permission node). The permission will then affect that sign or type of block. This also works for custom signs. Here are the basic nodes:
+
+Signshop.DenyUse.* (Note: Signshop.Signs.* overrides this permission node)
+This permission denies usage of signs.
+Example: You may wish to deny a group's ability to sell to an infinite shop (i.e. an [iSell] sign), in which case you would give them: Signshop.DenyUse.iSell
+Signshop.DenyLink.* (Note: OP overrides this permission node)
+This permission denies the linking of shops to certain in-game blocks (Chest, Sign, Lever, Dispenser, Furnace, Brewingstand, Enchantmenttable, Slab).
+Example: You may wish to deny a group's ability to link their shops to a furnace to prevent automatic smelting, in which case you would give them: Signshop.DenyLink.Furnace
+Signshop.Signs.*
+This permission allows players to create signs.
+Example: You might want to disallow a group from creating signs to modify redstone levers, you can remove that ability by negating them with the following permission nodes (assuming your permission plugin allows negating permissions):
+-Signshop.Signs.Device
+-Signshop.Signs.DeviceOn
+-Signshop.Signs.DeviceOff
+-Signshop.Signs.Toggle
+Signshop.CopyPaste
+This permission allows players to click on signs with black dye to copy information onto an already active SignShop.
+Example: If you want to update the price of an item, create a new sign and put the new price on the bottom line, leave the other 3 lines blank, and click with black dye. You can modify the description, the price, and the type of sign this way. Blank lines are ignored. You cannot, however, change a Device sign to a Buy sign, as the operations are incompatible with one another. You can also allow moderators and admins to edit other player's signs with Signshop.CopyPaste.Others
+Signshop.Permit
+If the "AllowPermits" setting in the global options is set to true, players must have this node in order for their shops to work.
+Example: You can use SignShop and a permission plugin to sell permits allowing users to be merchants. Without a permit, the shop will be disabled and they will need to buy another in order for their shops to continue functioning.
+Signshop.ChangeOwner
+This permission allows a player to click on another player with redstone to change the owner of a SignShop.
+Example: If you would like to set up a player account as a bank, or transfer a store to another player, you would punch them with redstone, then punch the sign you would like to modify. If you do not own the sign that is being modified, you will also need the permission Signshop.ChangeOwner.Others to do so.
+Signshop.IgnoreMax
+This permission bypasses any defined maximum shop settings in the config.
+Example: You can make it so normal players can only create something like 10 signs, while donators can create infinite, by giving them Signshop.IgnoreMax
+Signshop.IgnoreRepair
+This permission bypasses AllowEnchantedRepair setting in the config.
+Example: You can make it so "Blacksmiths" can repair enchanted items with Signshop.IgnoreRepair
+Signshop.Admin.*
+This permission allows players to create administrative signs (such as shops with infinite items for global shops).
+Example: You can use this permission to grant the ability to make signs with the playerIsOp tag (defined in the config). Signshop.Admin.Heal allows a player to create a healing station.
+
+Some Other Notes
+If a player has the ability to create a [Buy] sign (by using Signshop.Signs.Buy) and is also denied the ability to use that sign via permissions (which can happen when a group inherits another group's permissions containing Signshop.DenyUse.Buy), they will be able to use the sign anyway. This makes it safe for you to use inheritance. In other words, if a player is allowed to create a sign, they are also allowed to use the sign, regardless of Signshop.DenyUse settings.
+In order for a player with Signshop.Signs.Repair to create a [Repair] sign (or any other playerIsOp sign, as defined in the config), they must also have the corresponding admin permission node, in this case Signshop.Admin.Repair. In other words, it is safe to give a group of players Signshop.Signs.* to allow creation of all signs, without worrying about them creating infinite, or otherwise administrative SignShops.
+
+Developer API
+There are two entirely different ways a plugin can interact with SignShop. The plugin can either listen and cancel events generated by SignShop or create and register blocks, messages and events.
+Because of that, I will explain both "parts" separately here. And I will try to refer to good code examples in stead of trying to explain how it should be implemented through words.
+
+Part I
+Events
+So first of, the events you can listen to. SignShop offers the following events:
+
+SSCreatedEvent
+SSDestroyedEvent
+SSExpiredEvent
+SSLinkEvent
+SSMoneyTransactionEvent
+SSPreTransactionEvent
+SSPostTransactionEvent
+SSTouchShopEvent
+All of those events can be cancelled so that the result will not be executed. And when generated, the "canbecancelled" flag can be set to false (it's true by default).
+When you cancel one of the events, you should tell the player why you're cancelling it. And you should check whether the event can be cancelled by calling "canBeCancelled" before you cancel the event.
+The "canbecancelled" flag is only used in very special cases though.
+A good example of a SignShop event listener is the PermissionChecker which can be found here.
+This shows a class which checks the player's permissions when a shop is being built and during the transaction checks.
+
+So what do all of those events stand, when are they generated and how are they of use to me, you ask.
+
+SSCreatedEvent
+Generated when a shop is created. In other words, when the player hits the sign with redstone and finalizes the shop setup.
+When it's cancelled, the shop will not be registered, so it won't end up in the sellers.yml and it won't turn blue.
+A protection plugin could cancel that plugin when a shop is built on ground that is protected.
+
+SSDestroyedEvent
+Generated when any part of a shop is destroyed.
+So it gets generated when the sign, any attachable (chest, lever, button, etc.) or a miscblock (Bank sign, Share sign, etc.) is destroyed.
+When it's cancelled, the block will not be destroyed. And when you listen to it with an EventPriority of Monitor, you'll get notified whenever a shop is destroyed (if it hasn't been cancelled yet).
+You can figure out what part of the shop was destroyed by calling "getReason" on the event object.
+This can be used for various reasons. But mostly to protect a shop or clean up any blocks attached to the shop.
+
+SSExpiredEvent
+Generated when an IExpirable is found to be expired by the internal TimeManager.
+A good example of how this can be used is SSHotel which has a RentExpired listener, code can be found here.
+You can create a class that is derived from IExpirable and pass an instance to the TimeManager (org.wargamer2010.signshop.timing package).
+The TimeManager will then keep track of it, store it in the timing.yml so it's restored on reboot and notify you when it's expired by tossing the SSExpiredEvent.
+
+SSLinkEvent
+Generated when a player tries to link a block to a shop.
+This can either be during shop setup or when the player attempts to link additional blocks to an existing shop.
+In other words, this is thrown when, for example, Player X hits a chest and then hits a valid SignShop sign.
+This can be used to prevent players from linking blocks they don't own.
+
+SSMoneyTransactionEvent
+Generated when a money transaction is taking place.
+This can either happen when the preconditions are checked for a transaction or when the money is actually taken/given.
+So when a player hits a Sell sign, this event is first fired with the "isCheckOnly" flag set to true to make sure the owner has enough money and the player is able to carry more money.
+If that is the case, the event is fired twice again but with the "isCheckOnly" flag set to false.
+I said twice because it's fired once with TransactionType set to "TakeFromOwner" and once with "GiveToPlayer".
+It's generated twice for both the check and the actual transaction so for a Sell shop, the event is fired four times in total.
+If there is no listener which sets the "Handled" flag to true (by calling "setHandled" on the event object), the DefaultMoneyTransaction listener will handle it.
+That code can be found here.
+This event can be used to handle money transactions. The SharedMoneyTransaction class uses this to distribute money across the people denoted on the Share sign.
+You could use this to give people diamonds for every piece of meat they buy. Or you could, for example, use this if your plugin is not supported by Vault.
+
+SSPreTransactionEvent
+Generated when a player hits the shop and after the prerequisites have been checked.
+When this is cancelled, the player will not see the confirm message and the transaction is never executed.
+In the Sell shop case, this happens when the player is checked for the items by takeVariablePlayerItems, shop is checked for it's free space by giveShopItems, etc.
+By listening to this event you can inject additional checks like checking for permissions, permits, etc.
+You can also alter the price by calling "setPrice".
+
+SSPostTransactionEvent
+Generated after the transaction has taken place and should generally not be cancelled.
+When it is cancelled, the player will not see the transaction message ("You have bought ...").
+You can, for instance, use it to give more money to the player, tell the entire server about the transaction or log it somewhere.
+
+SSTouchShopEvent
+Generated when a part of a shop is interacted with (or "being touched").
+In other words, this is fired when the lever of a Device shop is switched or the door of a Hotel shop is being opened.
+Cancelling this will cancel the interaction and will prevent the lever from being switched or the door from being messed with.
+SignShopHotel uses this to prevent people from entering a room they haven't rented yet (code here).
+
+Part II
+Creating a Custom Shop
+Coming soon ...

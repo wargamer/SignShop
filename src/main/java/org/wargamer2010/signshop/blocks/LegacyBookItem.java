@@ -14,7 +14,7 @@ public class LegacyBookItem extends BookItem {
 
         private static final String generationError = "Failed to set Generation for Written Book. Please report this problem.";
 
-        public LegacyBookItem(ItemStack pItem) {
+    LegacyBookItem(ItemStack pItem) {
             super(pItem);
         }
 
@@ -25,9 +25,7 @@ public class LegacyBookItem extends BookItem {
                 return null;
             try {
                 return (Integer)field.get(meta);
-            } catch (IllegalArgumentException ex) {
-                SignShop.log(generationError, Level.WARNING);
-            } catch (IllegalAccessException ex) {
+            } catch (IllegalArgumentException | IllegalAccessException ex) {
                 SignShop.log(generationError, Level.WARNING);
             }
 
@@ -42,9 +40,7 @@ public class LegacyBookItem extends BookItem {
             try {
                 field.set(meta, generation);
                 updateMeta();
-            } catch (IllegalArgumentException ex) {
-                SignShop.log(generationError, Level.WARNING);
-            } catch (IllegalAccessException ex) {
+            } catch (IllegalArgumentException | IllegalAccessException ex) {
                 SignShop.log(generationError, Level.WARNING);
             }
         }
@@ -58,10 +54,9 @@ public class LegacyBookItem extends BookItem {
             try {
                 reflectedGenerationField = meta.getClass().getSuperclass().getDeclaredField("generation");
                 reflectedGenerationField.setAccessible(true);
+            } catch (NoSuchFieldException | IllegalArgumentException | SecurityException ex) {
+                reflectedGenerationField = null;
             }
-            catch (NoSuchFieldException ex) { reflectedGenerationField = null; }
-            catch (SecurityException ex) { reflectedGenerationField = null; }
-            catch (IllegalArgumentException ex) { reflectedGenerationField = null; }
 
             attemptedReflection = true;
 
