@@ -159,9 +159,9 @@ public class SignShop extends JavaPlugin {
                 pm.registerEvents(SListener, this);
             }
             registerSSListeners();
-            log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
         }
         else {
+            log("Vault was not found.", Level.WARNING);
             disableSignShop();
         }
         //Setup worth
@@ -184,6 +184,7 @@ public class SignShop extends JavaPlugin {
         if (SignShopConfig.debugging()) {
             SignShop.log("Debugging enabled.", Level.INFO);
         }
+        log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
     }
 
     @Override
@@ -271,7 +272,7 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
-    private class TransferFormatter extends Formatter {
+    private static class TransferFormatter extends Formatter {
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
 
         @Override

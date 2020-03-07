@@ -10,6 +10,9 @@ import java.util.List;
 
 public class ConvertData { //TODO will use this to convert the old '&' delimitited data to BukkitSerialization
 
+    public static void init(){
+
+    }
     public static ItemStack[] convertOldStringtoItemStacks(List<String> itemStringList) {
         IItemTags itemTags = BookFactory.getItemTags();
         ItemStack[] itemStacks = new ItemStack[itemStringList.size()];

@@ -156,8 +156,8 @@ public class SignShopItemMeta {
                         if ((damage & EXTENDED_BIT) > 0) {
                             // Instant potions cannot be extended!
                             // So let's invert the extended bit and retry.
-                            Integer tempint = (damage ^ EXTENDED_BIT);
-                            stack.setDurability(tempint.shortValue());
+                            int tempint = (damage ^ EXTENDED_BIT);
+                            stack.setDurability((short) tempint);
                             try {
                                 pot = Potion.fromItemStack(stack);
                                 effects = pot.getEffects();
@@ -228,8 +228,7 @@ public class SignShopItemMeta {
             }
         }
 
-        if(stack.getItemMeta().hasDisplayName())
-            return getDisplayName(stack);
+        stack.getItemMeta().hasDisplayName();
         return getDisplayName(stack);
     }
 

@@ -200,7 +200,7 @@ public class itemUtil {
         HashMap<ItemStack, Map<Enchantment, Integer>> enchantments = new HashMap<>();
         StringBuilder sItems = new StringBuilder();
         boolean first = true;
-        Integer tempAmount;
+        int tempAmount;
         for(ItemStack item: isStacks) {
             if(item == null)
                 continue;
@@ -305,10 +305,8 @@ public class itemUtil {
             if (mReturn.containsKey(itemStack)) {
                 tempAmount += mReturn.get(itemStack);
                 mReturn.remove(itemStack);
-                mReturn.put(itemStack, tempAmount);
             }
-            else
-                mReturn.put(itemStack, tempAmount);
+            mReturn.put(itemStack, tempAmount);
         }
         return mReturn;
     }
