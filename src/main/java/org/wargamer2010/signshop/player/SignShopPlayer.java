@@ -206,6 +206,7 @@ public class SignShopPlayer {
         return false;
     }
 
+    @SuppressWarnings("WrapperTypeMayBePrimitive")
     private boolean isNothing(double amount) {
         Double doubler = amount;
         return (doubler == 0.0f || doubler.isInfinite() || doubler.isNaN());
