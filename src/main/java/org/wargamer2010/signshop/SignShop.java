@@ -24,6 +24,7 @@ import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.timing.TimeManager;
+import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -44,6 +45,7 @@ public class SignShop extends JavaPlugin {
     //Statics
     private static Storage store;
     private static TimeManager manager = null;
+    public static final int DATA_VERSION = 3;
     //Permissions
     private static boolean USE_PERMISSIONS = false;
     // Commands
@@ -51,7 +53,8 @@ public class SignShop extends JavaPlugin {
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
     private final SignShopLoginListener loginListener = new SignShopLoginListener();
-    private final int bStatsId = 6574;
+    private final int B_STATS_ID = 6574;
+
     // Vault
     private Vault vault = null;
 
@@ -124,6 +127,9 @@ public class SignShop extends JavaPlugin {
         // Convert legacy player names to UUID
         PlayerMetadata.convertToUuid(this);
 
+        // Convert old data to new format if needed
+        DataConverter.init();
+
         //Create a storage locker for shops
         store = Storage.init(new File(this.getDataFolder(), "sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
@@ -178,7 +184,7 @@ public class SignShop extends JavaPlugin {
         }
         //Enable metrics
         if (SignShopConfig.metricsEnabled()) {
-            Metrics metrics = new Metrics(this, bStatsId);
+            Metrics metrics = new Metrics(this, B_STATS_ID);
             log("Thank you for enabling metrics!", Level.INFO);
         }
         if (SignShopConfig.debugging()) {

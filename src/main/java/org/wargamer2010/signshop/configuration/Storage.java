@@ -284,15 +284,9 @@ public class Storage implements Listener, Runnable {
         }
 
         config.set("sellers", tempSellers);
+        config.set("DataVersion",SignShop.DATA_VERSION); //TODO This seems hacky but nothing else works, come back to it.
         // We can not run the logic above async but we can save to disc on another thread
         queueSave(config);
-    }
-
-    /**
-     * Legacy call, Save can be called directly now
-     */
-    public void SafeSave() {
-        Save();
     }
 
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
@@ -430,7 +424,7 @@ public class Storage implements Listener, Runnable {
         }
     }
 
-    private class StorageException extends Exception {
+    private static class StorageException extends Exception {
         private static final long serialVersionUID = 1L;
 
         private String world = "";

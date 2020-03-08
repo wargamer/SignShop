@@ -340,8 +340,10 @@ public class SignShopConfig {
                 List<SignShopOperationListItem> tempList = signshopUtil.getSignShopOps(entry.getValue());
                 boolean found = false;
                 for(SignShopOperationListItem tempOp : tempList)
-                    if(tempOp.getOperation() instanceof runCommand || tempOp.getParameters().contains("runCommand"))
+                    if (tempOp.getOperation() instanceof runCommand || tempOp.getParameters().contains("runCommand")) {
                         found = true;
+                        break;
+                    }
                 if(found)
                     continue;
                 entry.getValue().add("runCommand");

@@ -1,19 +1,70 @@
 package org.wargamer2010.signshop.util;
 
 import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.util.FileUtil;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.*;
 import org.wargamer2010.signshop.configuration.Storage;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.logging.Level;
 
-public class ConvertData { //TODO will use this to convert the old '&' delimitited data to BukkitSerialization
+public class DataConverter {
+    static File sellersFile;
+    static File sellersBackup;
 
-    public static void init(){
+    public static void init() {
+        File dataFolder = SignShop.getInstance().getDataFolder();
+        sellersFile = new File(dataFolder, "sellers.yml");
+        FileConfiguration sellers = new YamlConfiguration();
+        try {
+            sellers.load(sellersFile);
+            SignShop.log("Checking data version.", Level.INFO);
+            if (sellers.getInt("DataVersion") < SignShop.DATA_VERSION){
+                sellersBackup = new File(dataFolder, "sellersBackup.yml");
+                FileUtil.copy(sellersFile, sellersBackup);
+                convertData(sellers);
+            }
+            else {
+                SignShop.log("Your data is current.",Level.INFO);
+            }
+        } catch (IOException | InvalidConfigurationException ignored) {
+
+        }
 
     }
-    public static ItemStack[] convertOldStringtoItemStacks(List<String> itemStringList) {
+
+    private static void convertData(FileConfiguration sellers) {
+
+        try {
+            SignShop.log("Converting old data.", Level.INFO);
+            ConfigurationSection section = sellers.getConfigurationSection("sellers");
+            Set<String> shops = section.getKeys(false);
+            for (String shop : shops) {
+                StringBuilder path = new StringBuilder();
+                path.append("sellers.").append(shop).append(".items");
+                List<String> items = sellers.getStringList(path.toString());
+                ItemStack[] itemStacks = convertOldStringsToItemStacks(items);
+                sellers.set(path.toString(), itemUtil.convertItemStacksToString(itemStacks));
+                sellers.set("DataVersion",3);
+                sellers.save(sellersFile);
+            }
+            SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
+        } catch (IOException e) {
+            SignShop.log("Error converting data!", Level.WARNING);
+        }
+    }
+
+    public static ItemStack[] convertOldStringsToItemStacks(List<String> itemStringList) {
         IItemTags itemTags = BookFactory.getItemTags();
         ItemStack[] itemStacks = new ItemStack[itemStringList.size()];
         int invalidItems = 0;
@@ -95,7 +146,8 @@ public class ConvertData { //TODO will use this to convert the old '&' delimitit
         return itemStacks;
     }
 
-    public static String[] convertItemStacksToOldString(ItemStack[] itemStackArray) {//TODO May not need this but saving anyway
+    //Probably won't need this but saving it anyway.
+    public static String[] convertItemStacksToOldString(ItemStack[] itemStackArray) {
         List<String> itemStringList = new ArrayList<>();
         if (itemStackArray == null)
             return new String[1];
