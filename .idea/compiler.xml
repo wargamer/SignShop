@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SignShop" />
+        <module name="SignShopV" />
+        <module name="SignShopV3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SignShop" target="1.8" />
+      <module name="SignShopV" target="1.8" />
+      <module name="SignShopV3" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
