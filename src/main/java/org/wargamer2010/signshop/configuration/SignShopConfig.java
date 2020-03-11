@@ -141,6 +141,7 @@ public class SignShopConfig {
         HookManager.addHook("WorldGuard");
         HookManager.addHook("GriefPrevention");
         HookManager.addHook("Towny");
+        HookManager.addHook("BentoBox");
 
     }
 
