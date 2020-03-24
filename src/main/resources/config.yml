@@ -270,11 +270,17 @@ timedCommands:
 
 #----------- Messages and Errors ------------------
 
+# Character to use for colorcode prefix ("&" by default)
+ColorCode: "&"
+
+# Prefix to use when sending SignShop messages to players ("&6[SignShop]" by default)
+ChatPrefix: "&6[SignShop]"
+
 # These are given when players interact with shops
 # Words beginning with "!" are replaced when the message is given
 # For a full list of available !variables and what they do, please read the Quick Reference
+# If you you start a message with a color code you need to make sure you surround the message with quotes
 messages:
-
 # These are given when you create a sign by punching it with the link material (Redstone by default)
   setup:
     Buy: You have put !items for sale at a price of !price!

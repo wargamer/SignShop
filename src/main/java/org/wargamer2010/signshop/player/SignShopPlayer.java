@@ -66,7 +66,8 @@ public class SignShopPlayer {
     public static void broadcastMsg(World world, String sMessage) {
         for(Player player : Bukkit.getServer().getOnlinePlayers())
             if(player.getWorld() == world)
-                player.sendMessage(ChatColor.GOLD+"[SignShop] [" + world.getName() + "] " + ChatColor.WHITE + sMessage);
+                player.sendMessage(ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(),
+                        ChatColor.GOLD + SignShopConfig.getChatPrefix() + " [" + world.getName() + "] " + ChatColor.WHITE + sMessage));
     }
 
     public void sendMessage(String sMessage) {
@@ -80,11 +81,12 @@ public class SignShopPlayer {
         MessageWorker.init();
         MessageWorker.OfferMessage(sMessage, this);
     }
-
+//TODO Test
     public void sendNonDelayedMessage(String sMessage) {
         if(sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
-        String message = (ChatColor.GOLD + "[SignShop] " + ChatColor.WHITE + sMessage);
+        String message = (ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(),
+                ChatColor.GOLD + SignShopConfig.getChatPrefix() + ChatColor.WHITE+ " " + sMessage));
         getPlayer().sendMessage(message);
     }
 

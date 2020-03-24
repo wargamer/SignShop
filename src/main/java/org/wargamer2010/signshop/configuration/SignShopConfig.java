@@ -65,12 +65,14 @@ public class SignShopConfig {
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
     private static boolean EnableWrittenBookFix = true;
+    private static String ColorCode = "&";
+    private static String ChatPrefix = "&6[SignShop]";
     private static String Languages = "english";
     private static final String baseLanguage = "english";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SAC");
-    private static Material destroyMaterial = Material.getMaterial("IRON_HOE");
+    private static Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
 
     private SignShopConfig() {
 
@@ -222,6 +224,8 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
+        ColorCode = ymlThing.getString("ColorCode", ColorCode);
+        ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SAC"), Material.getMaterial("INK_SAC"));
@@ -238,10 +242,41 @@ public class SignShopConfig {
         String name = mat.toUpperCase();
         Material temp = Material.getMaterial(name);
         if(temp == null) {
-            SignShop.log("Material called: " + mat + " does not exist, please check your config.yml!", Level.WARNING);
+            if (name.equals("INK_SACK")|| name.equals("GOLD_AXE")){
+                SignShop.log("Material called: " + mat + " no longer exists, updating config.yml now.", Level.INFO);
+                updateConfigMaterials(name);
+            }
+            else {
+                SignShop.log("Material called: " + mat + " does not exist, please check your config.yml!", Level.WARNING);
+            }
             return defaultmat;
         }
         return temp;
+    }
+
+    public static void updateConfigMaterials(String name){
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
+        if (name.equals("INK_SACK") && ymlThing.getString("UpdateMaterial").toUpperCase().equals("INK_SACK")){
+            ymlThing.set("UpdateMaterial","ink_sac");
+            SignShop.log("UpdateMaterial changed successfully from ink_sack to ink_sac in the config.yml", Level.INFO);
+            saveConfig(ymlThing,configFile);
+        }
+        if (name.equals("GOLD_AXE") && ymlThing.getString("DestroyMaterial").toUpperCase().equals("GOLD_AXE")){
+            ymlThing.set("DestroyMaterial","golden_axe");
+            SignShop.log("DestroyMaterial changed successfully from gold_axe to golden_axe in the config.yml", Level.INFO);
+            saveConfig(ymlThing,configFile);
+        }
+
+    }
+
+    private static void saveConfig(FileConfiguration ymlThing,File file){
+        try {
+            ymlThing.save(file);
+            configUtil.loadYMLFromJar(ymlThing, configFilename);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     private static void setupOperations() {
@@ -727,6 +762,13 @@ public class SignShopConfig {
     public static boolean debugging(){return Debugging;}
 
     public static boolean metricsEnabled(){return MetricsEnabled;}
+
+    public static String getChatPrefix(){return ChatPrefix;}
+
+    public static char getColorCode(){
+         char[] code = ColorCode.toCharArray();
+         return code[0];
+    }
 
     /**
      * Orders strings by their length from long to short
