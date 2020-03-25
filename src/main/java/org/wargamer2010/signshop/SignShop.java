@@ -5,10 +5,12 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.FileUtil;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
@@ -16,6 +18,7 @@ import org.wargamer2010.signshop.commands.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.configuration.configUtil;
 import org.wargamer2010.signshop.listeners.SignShopBlockListener;
 import org.wargamer2010.signshop.listeners.SignShopLoginListener;
 import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
@@ -25,6 +28,7 @@ import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
+import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -38,6 +42,7 @@ import java.util.Date;
 import java.util.logging.*;
 
 public class SignShop extends JavaPlugin {
+    public static final int DATA_VERSION = 3;
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
     public static WorthHandler worthHandler;
@@ -45,7 +50,6 @@ public class SignShop extends JavaPlugin {
     //Statics
     private static Storage store;
     private static TimeManager manager = null;
-    public static final int DATA_VERSION = 3;
     //Permissions
     private static boolean USE_PERMISSIONS = false;
     // Commands
@@ -116,6 +120,9 @@ public class SignShop extends JavaPlugin {
         instance = this;
 
         setupCommands();
+
+        // Backup config if it is an old version
+        backupOldConfig();
 
         SignShopConfig.init();
         SignShopBooks.init();
@@ -276,6 +283,21 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new DefaultMoneyTransaction(), this);
         pm.registerEvents(new BankTransaction(), this);
         pm.registerEvents(new SharedMoneyTransaction(), this);
+    }
+
+    private void backupOldConfig() {
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.configFilename);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.configFilename);
+
+        if ((ymlThing != null && configFile.exists())
+                && (!ymlThing.isSet("ConfigVersionDoNotTouch") || ymlThing.getInt("ConfigVersionDoNotTouch") != SignShopConfig.getConfigVersionDoNotTouch())) {
+
+            SignShop.log("Old config detected, backing it up before modifiying it.", Level.INFO);
+            File configBackup = new File(SignShop.getInstance().getDataFolder(), "configBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
+            FileUtil.copy(configFile, configBackup);
+            ymlThing.set("ConfigVersionDoNotTouch", SignShopConfig.getConfigVersionDoNotTouch());
+            SignShopConfig.saveConfig(ymlThing, configFile);
+        }
     }
 
     private static class TransferFormatter extends Formatter {

@@ -29,13 +29,13 @@ public class DataConverter {
         try {
             sellers.load(sellersFile);
             SignShop.log("Checking data version.", Level.INFO);
-            if (sellers.getInt("DataVersion") < SignShop.DATA_VERSION){
-                sellersBackup = new File(dataFolder, "sellersBackup.yml");
+            if (sellers.getInt("DataVersion") < SignShop.DATA_VERSION) {
+                sellersBackup = new File(dataFolder, "sellersBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
                 FileUtil.copy(sellersFile, sellersBackup);
                 convertData(sellers);
             }
             else {
-                SignShop.log("Your data is current.",Level.INFO);
+                SignShop.log("Your data is current.", Level.INFO);
             }
         } catch (IOException | InvalidConfigurationException ignored) {
 
@@ -58,22 +58,22 @@ public class DataConverter {
                 sellers.set(itemPath.toString(), itemUtil.convertItemStacksToString(itemStacks));
                 //Strip old data from misc
                 List<String> misc = sellers.getStringList(miscPath.toString());
-                if (!misc.isEmpty()){
+                if (!misc.isEmpty()) {
                     List<String> newMisc = new ArrayList<>();
-                    for (String miscString : misc){
-                        if (miscString.startsWith("sharesigns:")){
+                    for (String miscString : misc) {
+                        if (miscString.startsWith("sharesigns:")) {
                             newMisc.add(miscString);
                             continue;
                         }
-                        String[] strings = miscString.split("\\|",2);
-                        String[] keyPair = strings[0].split(":",2);
+                        String[] strings = miscString.split("\\|", 2);
+                        String[] keyPair = strings[0].split(":", 2);
                         String key = keyPair[0];
                         String data = strings[1];
-                        newMisc.add(key+":"+data);
+                        newMisc.add(key + ":" + data);
                     }
-                    sellers.set(miscPath.toString(),newMisc);
+                    sellers.set(miscPath.toString(), newMisc);
                 }
-                sellers.set("DataVersion",SignShop.DATA_VERSION);
+                sellers.set("DataVersion", SignShop.DATA_VERSION);
                 sellers.save(sellersFile);
             }
             SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
