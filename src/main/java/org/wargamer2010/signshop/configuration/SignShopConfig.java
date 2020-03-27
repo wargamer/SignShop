@@ -144,6 +144,7 @@ public class SignShopConfig {
         HookManager.addHook("GriefPrevention");
         HookManager.addHook("Towny");
         HookManager.addHook("BentoBox");
+        HookManager.addHook("Residence");
 
     }
 

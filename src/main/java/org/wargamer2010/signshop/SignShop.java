@@ -110,6 +110,13 @@ public class SignShop extends JavaPlugin {
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.disablePlugin(this);
     }
+    @Override
+    public void onLoad(){
+        // This has to be registered before WorldGuard is enabled.
+        if (this.getServer().getPluginManager().getPlugin("WorldGuard") != null) {
+            WorldGuardChecker.registerWorldGuardFlag(this.getServer());
+        }
+    }
 
     @Override
     public void onEnable() {
@@ -275,7 +282,9 @@ public class SignShop extends JavaPlugin {
         if (SignShopConfig.getEnableDynmapSupport())
             pm.registerEvents(dmm, this);
         if (SignShopConfig.getEnableShopPlotSupport()) {
-            pm.registerEvents(new WorldGuardChecker(), this);
+            if (this.getServer().getPluginManager().isPluginEnabled("WorldGuard")) {
+                pm.registerEvents(new WorldGuardChecker(), this);
+            }
             pm.registerEvents(new TownyChecker(), this);
         }
 
