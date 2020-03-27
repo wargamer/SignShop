@@ -9,6 +9,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,7 +34,7 @@ public class configUtil {
                     tempmap.put(subentry.getKey().toLowerCase(), (String)subentry.getValue());
                 tempHasinHash.put(entry.getKey().toLowerCase(), tempmap);
             }
-        } catch(ClassCastException ex) {
+        } catch(ClassCastException  ex) {
             SignShop.log("Incorrect section in config found.", Level.WARNING);
         }
         return tempHasinHash;
@@ -74,7 +75,7 @@ public class configUtil {
             for(Map.Entry<String, Object> entry : messages_section.entrySet()) {
                 List<String> temp = new LinkedList<>();
                 if(entry.getValue() instanceof List) {
-                    for(Object thing : ((List)entry.getValue()))
+                    for(Object thing : ((List<?>)entry.getValue()))
                         if(thing != null)
                             temp.add(thing.toString());
                 } else {
@@ -101,7 +102,7 @@ public class configUtil {
                 for(Map.Entry<String, Object> subentry : memsec.getValues(false).entrySet()) {
                     List<String> temp = new LinkedList<>();
                     if(subentry.getValue() instanceof List) {
-                        for(Object thing : ((List)subentry.getValue())) {
+                        for(Object thing : ((List<?>)subentry.getValue())) {
                             if(thing != null)
                                 temp.add(thing.toString());
                         }
@@ -193,7 +194,8 @@ public class configUtil {
                 ymlInPluginFolder.options().copyDefaults(true);
                 ymlInPluginFolder.options().copyHeader(false); // Don't copy header since addOriginalCommentsToStream will fix that
                 ymlInPluginFolder.setDefaults(thingInJar);
-                FileWriter writer = new FileWriter(configFile);
+                FileOutputStream fileOutputStream = new FileOutputStream(configFile);
+                OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
                 in = pluginclass.getResourceAsStream("/" + filenameInJar);
                 writer.write(addOriginalCommentsToStream(in, ymlInPluginFolder.saveToString()));
                 writer.close();
