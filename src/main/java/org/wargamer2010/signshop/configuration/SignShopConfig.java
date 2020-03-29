@@ -146,6 +146,7 @@ public class SignShopConfig {
         HookManager.addHook("BentoBox");
         HookManager.addHook("Residence");
         HookManager.addHook("LWC");
+        HookManager.addHook("BlockLocker");
 
     }
 
