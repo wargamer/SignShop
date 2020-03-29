@@ -4,7 +4,8 @@ api-version: "1.13"
 version: "${project.version}"
 dev-url: http://dev.bukkit.org/projects/signshop
 authors: [Wargamer2010, Devinish, Weaves]
-softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox]
+depend: [Vault]
+softdepend: [Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker]
 commands:
   signshop:
     description: Admin commands for SignShop
