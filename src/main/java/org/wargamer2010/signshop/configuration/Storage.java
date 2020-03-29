@@ -45,6 +45,7 @@ public class Storage implements Listener, Runnable {
         if(!ymlFile.exists()) {
             try {
                 ymlFile.createNewFile();
+                Save();
             } catch(IOException ex) {
                 SignShop.log("Could not create sellers.yml", Level.WARNING);
             }
@@ -276,11 +277,13 @@ public class Storage implements Listener, Runnable {
         Map<String, Object> tempSellers = new HashMap<>();
         FileConfiguration config = new YamlConfiguration();
 
-        for(Seller seller : Storage.sellers.values()) {
-            // YML Parser really does not like dots in the name
-            String signLocation = signshopUtil.convertLocationToString(seller.getSignLocation()).replace(".", "");
+        if (sellers != null) {
+            for(Seller seller : Storage.sellers.values()) {
+                // YML Parser really does not like dots in the name
+                String signLocation = signshopUtil.convertLocationToString(seller.getSignLocation()).replace(".", "");
 
-            tempSellers.put(signLocation, seller.getSerializedData());
+                tempSellers.put(signLocation, seller.getSerializedData());
+            }
         }
 
         config.set("sellers", tempSellers);

@@ -73,9 +73,9 @@ public class DataConverter {
                     }
                     sellers.set(miscPath.toString(), newMisc);
                 }
-                sellers.set("DataVersion", SignShop.DATA_VERSION);
-                sellers.save(sellersFile);
             }
+            sellers.set("DataVersion", SignShop.DATA_VERSION);
+            sellers.save(sellersFile);
             SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
         } catch (IOException e) {
             SignShop.log("Error converting data!", Level.WARNING);
