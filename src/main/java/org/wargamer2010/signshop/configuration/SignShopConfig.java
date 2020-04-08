@@ -43,7 +43,7 @@ public class SignShopConfig {
     private static int MessageCooldown = 0;
     private static int ChunkLoadRadius = 2;
     private static int MaxChestsPerShop = 100;
-    private static Boolean TransactionLog = false;
+    private static boolean TransactionLog = false;
     private static boolean Debugging = false;
     private static boolean MetricsEnabled = true;
     private static boolean OPOverride = true;
@@ -55,6 +55,7 @@ public class SignShopConfig {
     private static boolean EnablePermits = false;
     private static boolean PreventVillagerTrade = false;
     private static boolean ProtectShopsInCreative = true;
+    private static boolean ProtectShopsFromExplosions = true;
     private static boolean fixIncompleteOperations = true;
     private static boolean EnablePriceFromWorth = false;
     private static boolean EnableDynmapSupport = false;
@@ -218,6 +219,7 @@ public class SignShopConfig {
         EnablePermits = ymlThing.getBoolean("EnablePermits", EnablePermits);
         PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
+        ProtectShopsFromExplosions = ymlThing.getBoolean("ProtectShopsFromExplosions", ProtectShopsFromExplosions);
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
@@ -685,63 +687,65 @@ public class SignShopConfig {
         return MessageCooldown;
     }
 
-    public static Boolean getOPOverride() {
+    public static boolean getOPOverride() {
         return OPOverride;
     }
 
-    public static Boolean getAllowVariableAmounts() {
+    public static boolean getAllowVariableAmounts() {
         return AllowVariableAmounts;
     }
 
-    public static Boolean getAllowEnchantedRepair() {
+    public static boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
     }
 
-    public static Boolean getAllowUnsafeEnchantments() {
+    public static boolean getAllowUnsafeEnchantments() {
         return AllowUnsafeEnchantments;
     }
 
-    public static Boolean getAllowMultiWorldShops() {
+    public static boolean getAllowMultiWorldShops() {
         return AllowMultiWorldShops;
     }
 
-    public static Boolean getEnablePermits() {
+    public static boolean getEnablePermits() {
         return EnablePermits;
     }
 
-    public static Boolean getPreventVillagerTrade() {
+    public static boolean getPreventVillagerTrade() {
         return PreventVillagerTrade;
     }
 
-    public static Boolean getProtectShopsInCreative() {
+    public static boolean getProtectShopsInCreative() {
         return ProtectShopsInCreative;
     }
 
-    public static Boolean getTransactionLog() {
+    public static boolean getProtectShopsFromExplosions() {return ProtectShopsFromExplosions;}
+
+    public static boolean getTransactionLog() {
         return TransactionLog;
     }
 
-    public static Boolean getDisableEssentialsSigns() {
+    public static boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
     }
 
-    public static Boolean getEnablePriceFromWorth() {
+    public static boolean getEnablePriceFromWorth() {
         return EnablePriceFromWorth;
     }
 
-    public static Boolean getEnableDynmapSupport() {
+    public static boolean getEnableDynmapSupport() {
         return EnableDynmapSupport;
     }
 
-    public static Boolean getEnableTutorialMessages() {
+    public static boolean getEnableTutorialMessages() {
         return EnableTutorialMessages;
     }
 
-    public static Boolean getEnableShopPlotSupport() {
+    public static boolean getEnableShopPlotSupport() {
         return EnableShopPlotSupport;
     }
 
-    public static Boolean getEnableShopOwnerProtection() {
+    public static boolean getEnableShopOwnerProtection() {
         return EnableShopOwnerProtection;
     }
 
@@ -761,6 +765,17 @@ public class SignShopConfig {
         return EnableWrittenBookFix;
     }
 
+    public static boolean debugging() {
+        return Debugging;
+    }
+
+    public static boolean metricsEnabled() {
+        return MetricsEnabled;
+    }
+
+    public static boolean isOPMaterial(Material check) {
+        return (check == updateMaterial || check == linkMaterial);
+    }
     public static Material getLinkMaterial() {
         return linkMaterial;
     }
@@ -771,18 +786,6 @@ public class SignShopConfig {
 
     public static Material getDestroyMaterial() {
         return destroyMaterial;
-    }
-
-    public static boolean isOPMaterial(Material check) {
-        return (check == updateMaterial || check == linkMaterial);
-    }
-
-    public static boolean debugging() {
-        return Debugging;
-    }
-
-    public static boolean metricsEnabled() {
-        return MetricsEnabled;
     }
 
     public static String getChatPrefix() {

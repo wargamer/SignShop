@@ -63,6 +63,9 @@ ProtectShopsInCreative: true
 # Protects signs when they are made into shops. Can be bypassed by OP (Default = true)
 EnableShopOwnerProtection: true
 
+# Protect shops from explosions. A dedicated protection plugin is better. (Default = true)
+ProtectShopsFromExplosions: true
+
 # Gives players a message the first time they create a SignShop sign (Default = true)
 EnableTutorialMessages: true
 
