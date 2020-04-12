@@ -34,6 +34,7 @@ public class SignShopConfig {
     private static List<LinkableMaterial> LinkableMaterials;
     private static Map<String, List<String>> Operations = new HashMap<>();
     private static SignShop instance = null;
+    private static Map<String,SignShopOperation> ExternalOperations = new HashMap<>();
     //Configurables
     private static FileConfiguration config;
     private static int ConfigVersionDoNotTouch = 3;
@@ -295,6 +296,9 @@ public class SignShopConfig {
 
     private static Object getInstance(String fullClassPath) {
         try {
+            if (ExternalOperations.containsKey(fullClassPath)){
+                return ExternalOperations.get(fullClassPath);
+            }
             Class<?> aclass = Class.forName(fullClassPath);
             return aclass.newInstance();
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException notfound) {
@@ -508,6 +512,10 @@ public class SignShopConfig {
                 aliases.add(entry.getKey());
         }
         return aliases;
+    }
+
+    public static void registerExternalOperation(SignShopOperation signShopOperation ){
+        ExternalOperations.put(signShopOperation.getClass().getName(), signShopOperation);
     }
 
     public static boolean registerOperation(String sName, List<String> blocks) {
