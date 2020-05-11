@@ -210,13 +210,13 @@ errors:
   already_on: 设备已被开启!
   already_off: 设备已被开关!
   link_notallowed: 你沒有权限连接这个!
-  item_already_repair: 无法修理这个物品!它已经是完好無損的!
+  item_already_repair: 无法修理这个物品!它已经是完好无损的!
   already_raining: 看看外面,已经在下雨了!
   already_clear_skies: 看看外面,已经是晴天了!
   already_full_health: 你的生命值已经是满的了!
   saving: 保存商店中......
   saved: 商店已保存!
-  shop_removed: 移除一个無效的商店!商店所在世界：'!world' 坐标(!x, !y, !z).
+  shop_removed: 移除一个无效的商店!商店所在世界：'!world' 坐标(!x, !y, !z).
   invalid_item_to_repair: 无法修理这个物品!
   no_item_to_repair: 空手?你在耍我吗？请手持你要修理的物品!
   backup_fail: 无法恢复!
@@ -254,7 +254,7 @@ errors:
   item_on_blacklist_but_op: 物品：!blacklisted_item 是禁止在商店买卖的!但你是OP!
   block_is_protected: 这个方块处于保证状态,你无法使用!
   updated_shop: 商店信息已更新!
-  failed_to_update_shop: 无法更新商店信息!以上是錯誤信息!
+  failed_to_update_shop: 无法更新商店信息!以上是错误信息!
   price_drawn_from_essentials: 请注意，价格是从Essentials抽取的，因此是可变的。
   only_one_time: 新手礼包只能领取一次哦!
   nothing_to_reset_ontime: 你已经重置了新手身份,不需要再重置了!
@@ -263,7 +263,7 @@ errors:
   use_item_to_destroy_shop: 这个商店处于保护状态。只能使用!destroymaterial来拆除！
   no_items_defined_for_shop: 沒有为此商店定义的项目，无法完成操作。
   notifications_shop_built: \!player刚刚创建了一个!signtype类型的商店,坐标:(!x, !y, !z)
-  shop_contains: 这个商店里有: !shopinventory @ !items 价格 !price
+  shop_contains: This shop contains !shopinventory @ !items for !price
   not_allowed_to_link_banksigns: 你不能连接银行到这个商店！
   no_shop_linked_to_banksign: 这个银行标志沒有连接到任何商店。
   bank_sign_linked_to_banks: 这个银行标志称为  !bank 商店名称在!bankshops沟通
