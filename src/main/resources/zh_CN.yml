@@ -1,0 +1,285 @@
+signs:
+
+messages:
+  setup:
+    Buy: 你将要出售!items，价格为：!price!
+    Sell: 你将要开始收购!items，收购价格为：!price!
+    Donate: 你放置了一个捐物箱，可以接受的物品为： !items!
+    DonateHand: 你放置了一个捐献箱，可以接受任何捐献物品!
+    Slot: 你放置了一个抽奖箱，价格为：!price，奖品有：!items!
+    iBuy: 你将开始无限出售!items，出售价格为：!price!
+    iSell: 你将开始无限收购!items，收购价格为：!price!
+    gBuy: 你已经设置了一个商店出售!items !price! （注意，你不会收到或从这家店亏钱）
+    gSell: 你已经设置了一个商店收购!items !price! （注意，你不会收到或从这家店亏钱）
+    Day: 你放置了一个时间控制器，可以将时间设置为：白天。使用价格为：!price!
+    Night: 你放置了一个时间控制器，可以将时间设置为：黑夜。使用价格为：!price!
+    Rain: 你放置了一个天气控制器，可以将天气设置为：雨天。使用价格为：!price!
+    ClearSkies: 你放置了一个天气控制器，可以将天气恢复正常。使用价格为：!price!
+    DeviceOn: 你放置了一个红石启动器。使用价格为：!price!
+    DeviceOff: 你放置了一个红石开关器。使用价格为：!price!
+    Toggle: 你放置了一个红石开关。使用价格为：!price!
+    Device: 你放置了一个脉冲红石开关。使用价格为：!price!
+    Heal: 你放置了一个医疗站。使用价格为：!price!
+    Repair: 你放置了一个维修站。使用价格为：!price!
+    Dispose: 你放置了一个分解牌!
+    DeviceItem: 你放置了一个特殊脉冲红石开关。仅能使用!items激活!
+    iSlot: 你放置了一个无限抽奖箱，抽奖价格为：!price，设置的奖品有：!items!
+    Enchant: 你放置了一个!enchantments附魔箱，附魔价格为：!price!
+    iSellXP: 你放置了一个经验出售箱。出售价格为：!price 换 !xp点经验!
+    iBuyXP: 你放置了一个经验收购箱。收购价格为：!xp点经验 换 !price!
+    iTrade: 你放置了一个无限交换箱。可以使用!chest1来换!chest2!
+    Trade: 你放置了一个交换箱。可以使用!chest1来换!chest2!
+    TpToOwner: 你放置了一个店主传送牌。可以传送到!owner身边。传送价格为：!price!
+    Class: 你放置了一个职业装备箱，出售价格为：!price!
+    Disenchant: 你放置了一个移除附魔牌，使用价格为：!price!
+    Command: 你放置了一个命令牌，使用价格为：!price!
+    Jukebox: 你放置了一个音乐箱，使用价格为：!price!
+    Kit: 你放置了一个新手礼包箱，箱子內包含有： (!items) 领取价格为：!price! !param
+    ResetKit: 你放置了一个新手身份牌，可以重置新手身份，使用价格为：!price! !param
+    iXPBuy: 经验商店_你将开始出售!items，出售价格为：!xp点经验!
+    iXPSell: 经验商店_你将开始收购!items，收购价格为：!xp点经验!
+  confirm:
+    Buy: 你想要以!price的价格购买!items吗？ (空手按右键确认购买)
+    Sell: 你想要以!price的价格出售!items吗？ (空手按右键确认出售)
+    Donate: 你想要捐献!items吗?(手持物品按右键确认捐献)
+    DonateHand: 你想要捐献!items吗?(手持物品按右键确认捐献)
+    Slot: 你想要来抽奖吗？一次只要!price哦!(空手按右键开始抽奖)
+    iBuy: 你想要以!price的价格购买!items吗？ (空手按右键确认购买)
+    iSell: 你想要以!price的价格出售!items吗？ (空手按右键确认出售)
+    gBuy: 你想要以!price的价格购买!items吗？
+    gSell: 你想要以!price的价格出售!items吗？
+    Day: 你想要把时间改成白天吗？只要!price就能满足你的愿望!(空手按右键确认)
+    Night: 你想要把时间改成黑夜吗？只要!price就能满足你的愿望!(空手按右键确认)
+    Rain: 你想要把天气改成雨天吗？只要!price就能满足你的愿望!(空手按右键确认)
+    ClearSkies: 你想要把天气改成晴天吗？只要!price就能满足你的愿望!(空手按右键确认)
+    DeviceOn: 你想要启动这个红石设备吗？只要!price就能满足你的愿望!(空手按右键启动)
+    DeviceOff: 你想要开关这个红石设备吗？只要!price就能满足你的愿望!(空手按右键开关)
+    Toggle: 你想使用这个红石开关吗？只要!price就能满足你的愿望!(空手按右键开关)
+    Device: 你想使用这个脉冲红石开关吗？只要!price就能满足你的愿望!(空手按右键启动)
+    Heal: 你想要回复血量吗？只要!price就能满足你的愿望!(空手按右键回复)
+    Repair: 你想要修理你手上的物品吗？包括附魔物品哦!只要!price就能满足你的愿望!(手持物品按右键修理)
+    Dispose: 你想要分解你手上的物品吗？只要!price就能满足你的愿望!(空手按右键分解)
+    DeviceItem: 你想使用这个你手上的物品来启动这个脈沖开关吗？你現在手上持有的是：!items!(手持物品按右键启动)
+    iSlot: 你想要来参加这个系统抽奖吗？一次只要!price哦!(空手按右键开始抽奖)
+    Enchant: 给你手持的物品附上!enchantments只要!price哦!(手持物品按右键开始附魔)
+    iSellXP: 要用!xp点经验换!price吗？ (空手按右键确认)
+    iBuyXP: 要用!price换!xp点经验吗？ (空手按右键确认)
+    iTrade: 要用!chest1来换!chest2吗?(空手按右键交换)
+    Trade: 要用!chest1来换!chest2吗?(手持物品按右键交换)
+    TpToOwner: 要传送到店主：!owner 身边吗？使用价格为：!price!(空手按右键开始传送)
+    Class: 你想要购买职业套装吗？套装包括：!items，只要!price哦!(空手按右键购买)
+    Disenchant: 你想要移除你手上物品的附魔吗？只要!price哦!(手持物品按右键移除附魔)
+    Command: 你想要使用牌子上的命令吗？只要!price哦!(空手按右键运行命令)
+    Jukebox: 你想要播放音乐吗？只要!price哦!(空手按右键播放)
+    Kit: 你想要领取新手礼包吗？礼包里有：(!items)，只要!price哦!(空手按右键领取) !param
+    ResetKit: 你想要重置新手身份吗？这样可以再领取一次新手礼包了!只要!price哦!(空手按右键领取)!param
+    iXPBuy: 经验商店_你想要用!xp点经验购买!items吗？ (空手按右键购买)
+    iXPSell: 经验商店_你想要用!xp点经验出售!items吗？ (空手按右键出售)
+  transaction:
+    Buy: 你以!price的价格购买了!items!
+    Sell: 你以!price的价格出售了!items!
+    Donate: 你捐献了：!items!
+    DonateHand: 你捐献了：!items!
+    Slot: 你获得了奖品：!items!
+    iBuy: 你以!price的价格购买了!items!
+    iSell: 你以!price的价格出售了!items!
+    gBuy: 你以!price的价格购买了!items!
+    gSell: 你以!price的价格出售了!items!
+    Day: 你以!price的价格将时间设置为：白天!
+    Night: 你以!price的价格将时间设置为：黑夜!
+    Rain: 你以!price的价格将天气设置为：雨天!
+    ClearSkies: 你以!price的价格将天气设置为：晴天!
+    DeviceOn: 你以!price的价格启动了这个红石设备。
+    DeviceOff: 你以!price的价格开关了这个红石设备。
+    Toggle: 你以!price的价格激活了这个红石开关。
+    Device: 你以!price的价格激活了这个脉冲红石开关。
+    Heal: 你以!price的价格回复了自己的生命!
+    Repair: 你以!price的价格修理了一个物品!
+    Dispose: 你以!price的价格分解了!items!
+    DeviceItem: 你以!items作为代价激活了这个脉冲红石开关!
+    iSlot: 你获得了奖品：!items!
+    Enchant: 你以!price的价格给物品附上了!enchantments!
+    iSellXP: 你被扣除了!xp点经验，但获得了!price!
+    iBuyXP: 你获得了!xp点经验，但被扣除了!price!
+    iTrade: 你以!chest1换到了!chest2!
+    Trade: 你以!chest1换到了!chest2!
+    TpToOwner: 你以!price的价格传送到店主：!owner的身边!
+    Class: 你以!price的价格购买了职业套装!套装里有：!items!
+    Disenchant: 你以!price的价格移除了附魔!
+    Command: 你以!price的价格使用了命令!
+    Jukebox: 你以!price的价格播放了音乐!
+    Kit: 你以!price的价格领取了新手礼包!礼包里有：!items!
+    ResetKit: 你以!price的价格重新获得了新手身份!
+    iXPBuy: 经验商店_你以!xp点经验购买了!items!
+    iXPSell: 经验商店_你以!xp点经验出售了!items!
+  transaction_owner:
+    Buy: \!customer从你的商店购买了!items，你获得了!price!
+    Sell: \!customer以!price的价格向你出售了!items!
+    Donate: \!customer向你的捐物箱捐献了!items!
+    DonateHand: \!customer向你的捐物箱捐献了!items!
+    Slot: \!customer以!price的价格在你的抽奖箱获得了奖品：!items!
+    iBuy: ''
+    iSell: ''
+    gBuy: \!customer从你的幽灵商店购买了!items!
+    gSell: \!customer向你的幽灵商店出售了!items!
+    Day: ''
+    Night: ''
+    Rain: ''
+    ClearSkies: ''
+    DeviceOn: \!customer启动了你的红石设备，你获得了!price!
+    DeviceOff: \!customer开关了你的红石设备，你获得了!price!
+    Toggle: \!customer使用你的红石开关，你获得了!price!
+    Device: \!customer激活了你的脉冲红石开关，你获得了!price!
+    Heal: ''
+    Repair: ''
+    Dispose: ''
+    DeviceItem: \!customer用!items激活了你的脉冲红石开关!
+    iSlot: ''
+    Enchant: ''
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    Trade: \!customer用!chest1交换了你的!chest2!
+    TpToOwner: ''
+    Class: ''
+    Disenchant: ''
+    Command: ''
+    Jukebox: \!customer播放你的音乐箱，你获得了!price!
+    Kit: ''
+    ResetKit: ''
+    iXPBuy: ''
+    iXPSell: ''
+  help:
+    Buy: 这个标志表示客人用钱购买箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了!
+    Sell: 这个标志表示你要收购箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格.然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了!
+    Donate: 这个标志表示客人向箱子中捐献指定物品. 剩下三行可以写任何东西.不需要设置价格. 箱子里面放好物品,数量代表一次要捐献的数量. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的捐献箱就激活了!
+    DonateHand: 这个标志表示客人向箱子中捐献任何物品. 剩下三行可以写任何东西.不需要设置价格. 箱子可以有东西，也可以空的. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的捐献箱就激活了!
+    Slot: 这个标志表示客人可以从箱子中随机抽取一个格子的物品. 箱子中有多少物品则每个物品被抽到的概率就是:1/总格数. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的抽奖箱就激活了!
+    iBuy: 这个标志表示客人用钱购买箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 系统箱子中的物品不会随着买卖而增多或減少,钱也是由系统付賬,與店主無關.
+    iSell: 这个标志表示客人用钱购买箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 系统箱子中的物品不会随着买卖而增多或減少,钱也是由系统付賬,與店主無關.
+    gBuy: 这个标志表示客人用钱购买箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 幽灵箱子收到的钱不会支付给店主,而是直接消失,用於创建限量系统商店使用.
+    gSell: 这个标志表示你要收购箱子中的物品. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好物品,1个代表单价,10个代表10个的价格.然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 幽灵箱子收购所需的钱会直接从系统扣除,不会由店主付賬,用於创建限量系统收购商店使用.
+    Day: 这个标志表示客人用钱来将时间改为白天. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 此类商店收到的钱是给系统的,店主不会获得任何金钱.
+    Night: 这个标志表示客人用钱来将时间改为黑夜. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 此类商店收到的钱是给系统的,店主不会获得任何金钱.
+    Rain: 这个标志表示客人用钱来将天气改为雨天. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 此类商店收到的钱是给系统的,店主不会获得任何金钱.
+    ClearSkies: 这个标志表示客人用钱来将天气改为晴天. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 此类商店收到的钱是给系统的,店主不会获得任何金钱.
+    DeviceOn: 这个标志表示客人用钱来开启一个红石工具. 第二,三行可以写任何东西.第四排的数字代表价格. 然后手持红石,左键选择你要使用的红石工具,接着再左键选择牌子,你的商店就激活了!
+    DeviceOff: 这个标志表示客人用钱来开关一个红石工具. 第二,三行可以写任何东西.第四排的数字代表价格. 然后手持红石,左键选择你要使用的红石工具,接着再左键选择牌子,你的商店就激活了!
+    Toggle: 这个标志表示客人用钱来开关一个红石工具. 第二,三行可以写任何东西.第四排的数字代表价格. 然后手持红石,左键选择你要使用的红石工具,接着再左键选择牌子,你的商店就激活了!
+    Device: 这个标志表示客人用钱来暂时启动一个红石工具.类似于脈沖开关. 第二,三行可以写任何东西.第四排的数字代表价格. 然后手持红石,左键选择你要使用的红石工具,接着再左键选择牌子,你的商店就激活了!
+    Heal: 这个标志表示客人用钱来回复自己的生命值. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 这个商店收到的钱是到店主的账户.
+    Repair: 这个标志表示客人用钱来修理手上的装备. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 这个商店收到的钱是到店主的账户.
+    Dispose: 这个标志表示客人用钱来分解手上的装备. 第二,三行可以写任何东西.第四排的数字代表价格. 不需要连接箱子,直接手持红石左键激活即可. 这个商店收到的钱是到店主的账户.
+    DeviceItem: 这个标志表示客人用指定物品来暂时启动一个红石工具.类似于脈沖开关. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好你指定的物品. 然后手持红石,左键选择你要使用的红石工具,接着再左键选择箱子,最后再左键选择牌子,你的商店就激活了!
+    iSlot: 这个标志表示客人可以从箱子中随机抽取一个格子的物品. 箱子中有多少物品则每个物品被抽到的概率就是:1/总格数. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的抽奖箱就激活了!
+    Enchant: 这个标志表示客人用钱来给手上的物品进行附魔. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放好帶有附魔属性的物品. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 此类商店属于系统商店.收到的钱直接给到系统账户!
+    iSellXP: 这个标志表示客人用经验来换钱. 第二行可以写任何东西,第三行的数字代表需要的经验值,第四排的数字代表能换到的钱. 然后手持红石,左键激活牌子就可以了. 此类商店属于系统商店.收到的钱直接给到系统账户!
+    iBuyXP: 这个标志表示客人用钱来换经验. 第二行可以写任何东西,第三行的数字代表需要的经验值,第四排的数字代表能换到的钱. 然后手持红石,左键激活牌子就可以了. 此类商店属于系统商店.收到的钱直接给到系统账户!
+    iTrade: 这个标志表示客人用指定的物品换箱子里的物品. 剩下3行可以写任何东西.你需要放置2个箱子. 然后手持红石,先左键选择你要给客人的物品的箱子,接着左键选择你想得到的物品的箱子. 最后左键选择牌子,你的商店就激活了!
+    Trade: 这个标志表示客人用指定的物品换箱子里的物品. 剩下3行可以写任何东西.你需要放置2个箱子. 然后手持红石,先左键选择你要给客人的物品的箱子,接着左键选择你想得到的物品的箱子. 最后左键选择牌子,你的商店就激活了!
+    TpToOwner: 这个标志表示客人用钱来传送到店主身边. 第二,三行可以写任何东西.第四排的数字代表价格. 然后手持红石左键激活牌子就可以了. 这种商店的钱是给到店主的账户!
+    Class: 这个标志表示客人用钱来换指定的套装. 第二,三行可以写任何东西,第四排的数字代代表价格. 箱子里放好套装,然后手持红石左键选择牌子,再左键激活牌子就可以了. 此类商店属于系统商店.收到的钱直接给到系统账户
+    Disenchant: 这个标志表示客人用钱来给手上的物品移除附魔. 第二,三行可以写任何东西.第四排的数字代表价格. 注意这种商店会将物品的所有附魔属性都移除. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了! 此类商店属于系统商店.收到的钱直接给到系统账户!
+    Command: 这个标志表示客人用钱来执行牌子上的命令. 第二,三行写上需要运行的命令(不包括"/").第四排的数字代表价格. 然后手持红石左键激活牌子就可以了. 注意请确保輸入的命令是正确的,因为无论命令是否正确,客人都要被扣钱!
+    Jukebox: 这个标志表示客人用钱来给播放箱子中的CD. 第二,三行可以写任何东西.第四排的数字代表价格. 箱子里放入你要播放的CD唱片. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了!
+    Kit: 这个标志表示客人用钱来领取一份新人礼包. 第二,三行可以写任何东西,第四排的数字代代表价格. 箱子里放好新人礼包中的物品,然后手持红石,左键选择箱子,接着再左键选择牌子. 注意此类牌子只每个人都只能领取一次,除非他重置了新人身份! 此类商店属于系统商店.收到的钱直接给到系统账户!
+    ResetKit: “重置新人身份”用来表示客人点击这个牌子后可以再次领取新人礼包. 第二,三行可以写任何东西,第四排的数字代代表价格.然后手持红石左键激活! 此类商店属于系统商店.收到的钱直接给到系统账户!
+    iXPBuy: 这个标志表示客人用经验来购买物品. 第二,四行可以写任何东西.第三行的数字代表所需的经验. 箱子里放好物品1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了!
+    iXPSell: 这个标志表示客人用指定物品来购买经验. 第二,四行可以写任何东西.第三行的数字代表能换到的经验. 箱子里放好物品1个代表单价,10个代表10个的价格. 然后手持红石,左键选择箱子,接着再左键选择牌子.你的商店就激活了!
+errors:
+  no_permission: 你沒有权限创建这种商店!
+  no_permission_use: 你沒有权限使用这种商店!
+  no_permission_changeowner: 你沒有权限更改这个商店的店主!
+  invalid_operation: 你点击的牌子无法运行!
+  chest_empty: 这个商店是空的!
+  chest_missing: 你需要连接最少一个箱子到这种商店!
+  lever_missing: 你需要连接最少一个红石设备到这种商店!
+  no_player_money: 你的钱不够啦！物品价值：!price!
+  no_shop_money: 店主的钱不够啦！物品价值：!price!请联系店主!
+  out_of_business: 这个商店已经停止营业!
+  out_of_stock: 这个商店已经脱销了!请联系店主补充库存!
+  overstocked: 这个商店的库存已经满了!无法收购更多的东西!请联系店主补充库存!
+  player_doesnt_have_items: 你沒有!items 来使用这个商店!
+  no_item_in_hand: 你需要手持物品来使用这个商店!
+  player_overstocked: 你的背包满了!
+  sign_location_stored: 牌子已选择!
+  made_day: '!player将时间改成：白天!'
+  made_night: '!player将时间改成：黑夜!'
+  made_rain: '!player将天气改成：雨天!'
+  made_clear_skies: '!player将天气改成：晴天!'
+  already_on: 设备已被开启!
+  already_off: 设备已被开关!
+  link_notallowed: 你沒有权限连接这个!
+  item_already_repair: 无法修理这个物品!它已经是完好无损的!
+  already_raining: 看看外面,已经在下雨了!
+  already_clear_skies: 看看外面,已经是晴天了!
+  already_full_health: 你的生命值已经是满的了!
+  saving: 保存商店中......
+  saved: 商店已保存!
+  shop_removed: 移除一个无效的商店!商店所在世界：'!world' 坐标(!x, !y, !z).
+  invalid_item_to_repair: 无法修理这个物品!
+  no_item_to_repair: 空手?你在耍我吗？请手持你要修理的物品!
+  backup_fail: 无法恢复!
+  too_far: 箱子离牌子的距离太远啦!最远距离为：!max.
+  too_many_shops: 你开的店太多啦!每个人最多能拥有的商店为：!max.
+  enchanted_not_allowed: 你沒有权限修理已被附魔的装备!
+  enchantment_missing: 你至少需要将一个附魔物品放在箱子里!
+  item_not_enchantable: 你手上的物品无法被附魔!
+  no_player_xp: 你沒有足够的经验来出售物品!需要的经验值：(!xp)!
+  no_item_to_disenchant: 你需要手持你要移除附魔的物品!
+  nothing_to_disenchant: 这个物品无法移除附魔!
+  multiworld_not_allowed: 服务器不允许多世界商店!
+  no_permit_owner: 这个商店的店主已经沒有相关权限了!
+  need_permit: 你需要权限来创建这个商店!
+  villager_trading_disabled: 服务器不允许和村民交易!
+  not_allowed_to_link_sharesigns: 你不能连接共享标志到这家商店！
+  no_shop_linked_to_sharesign: 此“共享”标志尚未连接到任何商店。
+  share_sign_splits_profit: This Share sign splits profits between !profits for the Shop(s) at !profitshops
+  registered_share_sign: 注册一个共享标志，请点击下一个商店标志。
+  unlinked_share_sign: 未连接的共享标志从商店。
+  linked_share_sign: 成功连接共享标志到商店。
+  not_allowed_to_link_restrictedsigns: 你不能连接限制标志到这家商店！
+  no_shop_linked_to_restrictedsign: 此受限制的标志沒有连接到任何商店。
+  registered_restricted_sign: 注册限制标志，请点击下一个商店标志。
+  unlinked_restricted_sign: 从商店取消关联的限制标志。
+  linked_restricted_sign: 已成功将限制标志连接到商店。
+  restricted_sign_restricts: 此限制标志限制在限制店使用商店
+  towny_insufficient_funds: 店铺资金不足！
+  towny_owner_not_mayor_or_assistant: 店主不是城镇的市长或助理。
+  towny_owner_not_belong_to_town: 店主可能不属于一个城镇。
+  towny_bank_withdrawls_not_allowed: 当前的Towny设置不允许银行提款！
+  restricted_from_using: 你被禁止使用这家店！
+  restricted_but_owner: 你不是被限制使用这家商店，因为你是店主。
+  item_on_blacklist: 物品：!blacklisted_item 是禁止在商店买卖的!
+  item_on_blacklist_but_op: 物品：!blacklisted_item 是禁止在商店买卖的!但你是OP!
+  block_is_protected: 这个方块处于保证状态,你无法使用!
+  updated_shop: 商店信息已更新!
+  failed_to_update_shop: 无法更新商店信息!以上是错误信息!
+  price_drawn_from_essentials: 请注意，价格是从Essentials抽取的，因此是可变的。
+  only_one_time: 新手礼包只能领取一次哦!
+  nothing_to_reset_ontime: 你已经重置了新手身份,不需要再重置了!
+  shop_on_cooldown: 这个商店已被锁定!请!cooldownleft秒后再试!
+  damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
+  use_item_to_destroy_shop: 这个商店处于保护状态。只能使用!destroymaterial来拆除！
+  no_items_defined_for_shop: 沒有为此商店定义的项目，无法完成操作。
+  notifications_shop_built: \!player刚刚创建了一个!signtype类型的商店,坐标:(!x, !y, !z)
+  shop_contains: This shop contains !shopinventory @ !items for !price
+  not_allowed_to_link_banksigns: 你不能连接银行到这个商店！
+  no_shop_linked_to_banksign: 这个银行标志沒有连接到任何商店。
+  bank_sign_linked_to_banks: 这个银行标志称为  !bank 商店名称在!bankshops沟通
+  registered_bank_sign: 注册一个银行标志，请点击下一个商店标志。
+  unlinked_bank_sign: 从商店的未连接的银行标志。
+  linked_bank_sign: 成功连接银行标志到商店。
+  not_allowed_to_use_bank: 您不是银行银行的所有者或成员，因此相关的银行标志将被忽略。
+  no_bank_available: 沒有银行可以处理请求，请联系店主。
+  no_bank_support: 此服务器上安裝的经济插件不支持银行。
+  repeated_x_times: (repeated !times times)
+  removed_location: 已取消选择
+  stored_location: 位置已选择!block
+  stored_location_containable: 箱子已选择!block 內有物品 !items
+  region_does_not_allow_shops: 这块领地禁止开店,请把牌子移到其他地方吧!要开放权限请设置"allow-shop"权限!
+  region_allow_shops_but_op: 这块领地沒有设置"allow-shop"权限，但你是管理员所以不受限制!
+  region_allow_shops_but_perm: 这块领地沒有设置"allow-shop"权限，但你有全球权限所以不受限制!
+  towny_shop_plot_not_allowed: 这个商店沒有放在交易区!
+  towny_shop_plot_not_allowed_but_op: 这个商店沒有放在交易区，但你是管理员所以不受限制!
+  towny_shop_plot_not_allowed_but_perm: 这个商店沒有放在交易区，但你有全球权限所以不受限制!
