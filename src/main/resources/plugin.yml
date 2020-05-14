@@ -5,7 +5,7 @@ version: "${project.version}"
 dev-url: http://dev.bukkit.org/projects/signshop
 authors: [Wargamer2010, Devinish, Weaves]
 depend: [Vault]
-softdepend: [Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker]
+softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker, Ultimate_Economy]
 commands:
   signshop:
     description: Admin commands for SignShop
