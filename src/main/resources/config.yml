@@ -47,13 +47,10 @@ DestroyMaterial: golden_axe
 #----------- Language ------------------
 
 # Changes the default language for SignShop
-# Available languages are dutch, english, french, portuguese, russian, and spanish
+# Available languages are nl_NL, en_US, de_DE, fr_FR, pt_PT, ru_RU, zh_CN, zh_TW and es_ES
 # Send us your translated configs and we will add it to our supported languages
-# NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
-Languages: english
-
-# Fetch more readable item names from the internet (Default = false) Currently not available.
-EnableNamesFromTheWeb: false
+# NOTE: If you only want to use the sign aliases from nl_NL but keep the messages in en_US for example, you can do "en_US, nl_NL"
+Languages: en_US
 
 #----------- Mechanics ------------------
 
