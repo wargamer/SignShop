@@ -1,9 +1,10 @@
 package org.wargamer2010.signshop.hooks;
 
+import com.bekvon.bukkit.residence.Residence;
+import com.bekvon.bukkit.residence.containers.Flags;
+import com.bekvon.bukkit.residence.protection.ClaimedResidence;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import com.bekvon.bukkit.residence.Residence;
-import com.bekvon.bukkit.residence.protection.ClaimedResidence;
 
 public class ResidenceHook implements Hook {
 
@@ -14,13 +15,14 @@ public class ResidenceHook implements Hook {
 
     @Override
     public Boolean canBuild(Player player, Block block) {
-        if(HookManager.getHook("Residence") == null)
+        if (HookManager.getHook("Residence") == null)
             return true;
         ClaimedResidence res = Residence.getInstance().getResidenceManager().getByLoc(block.getLocation());
-        if(res != null) {
-            return res.getPermissions().playerHas(player.getName(), "container", false) || Residence.getInstance().isResAdminOn(player);
+        if (res == null || res.isOwner(player)) {
+            return true;
         }
-        return true;
+        return res.getPermissions().playerHas(player, player.getWorld().toString(), Flags.container, false) || Residence.getInstance().isResAdminOn(player);
+
     }
 
     @Override
