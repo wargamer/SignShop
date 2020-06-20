@@ -30,11 +30,16 @@ public class BentoBoxHook implements Hook {
         User user = User.getInstance(player);
         IslandsManager islandsManager = bentoBox.getIslands();
         Optional<Island> island = islandsManager.getIslandAt(block.getLocation());
-        if (island.isPresent() && island.get().getMembers().containsKey(user.getUniqueId())) {
+        if (!island.isPresent()) {
+            return true;
+        }
+        if (island.get().getMembers().containsKey(user.getUniqueId())) {
             //visitor:0 coop:200 trusted:400 member:500 sub-owner:900 owner:1000
             return island.get().getMembers().get(user.getUniqueId()) >= 500; // visitor:0 coop:
         }
-        return false;
+        else {
+            return false;
+        }
     }
 
     @Override
