@@ -75,36 +75,42 @@ public class DataConverter {
         try {
             SignShop.log("Converting old data.", Level.INFO);
             ConfigurationSection section = sellers.getConfigurationSection("sellers");
-            Set<String> shops = section.getKeys(false);
-            for (String shop : shops) {
-                StringBuilder itemPath = new StringBuilder().append("sellers.").append(shop).append(".items");
-                StringBuilder miscPath = new StringBuilder().append("sellers.").append(shop).append(".misc");
-                //Strip old data from items
-                List<String> items = sellers.getStringList(itemPath.toString());
-                ItemStack[] itemStacks = convertOldStringsToItemStacks(items);
-                sellers.set(itemPath.toString(), itemUtil.convertItemStacksToString(itemStacks));
-                //Strip old data from misc
-                List<String> misc = sellers.getStringList(miscPath.toString());
-                if (!misc.isEmpty()) {
-                    List<String> newMisc = new ArrayList<>();
+            if (section == null) {
+                SignShop.log("There was a problem with the sellers.yml, attempting to fix it. If the problem persists try regenerating the SignShop folder.",Level.WARNING);
+                sellers.set("sellers", new ArrayList<>());
+            }
+            else {
+                Set<String> shops = section.getKeys(false);
+                for (String shop : shops) {
+                    StringBuilder itemPath = new StringBuilder().append("sellers.").append(shop).append(".items");
+                    StringBuilder miscPath = new StringBuilder().append("sellers.").append(shop).append(".misc");
+                    //Strip old data from items
+                    List<String> items = sellers.getStringList(itemPath.toString());
+                    ItemStack[] itemStacks = convertOldStringsToItemStacks(items);
+                    sellers.set(itemPath.toString(), itemUtil.convertItemStacksToString(itemStacks));
+                    //Strip old data from misc
+                    List<String> misc = sellers.getStringList(miscPath.toString());
+                    if (!misc.isEmpty()) {
+                        List<String> newMisc = new ArrayList<>();
 
-                    for (String miscString : misc) {
-                        String[] keyPair = miscString.split(":", 2);
-                        String key = keyPair.length >= 1 ? keyPair[0] : "";
-                        String data = keyPair.length == 2 ? keyPair[1] : "";
-                        //This strips the old data if it exists.
-                        if (data.contains("|")) {
-                            String[] dataPair = data.split("\\|", 2);
-                            data = dataPair.length == 2 ? dataPair[1] : dataPair[0];
+                        for (String miscString : misc) {
+                            String[] keyPair = miscString.split(":", 2);
+                            String key = keyPair.length >= 1 ? keyPair[0] : "";
+                            String data = keyPair.length == 2 ? keyPair[1] : "";
+                            //This strips the old data if it exists.
+                            if (data.contains("|")) {
+                                String[] dataPair = data.split("\\|", 2);
+                                data = dataPair.length == 2 ? dataPair[1] : dataPair[0];
+                            }
+                            newMisc.add(key + ":" + data);
                         }
-                        newMisc.add(key + ":" + data);
+                        sellers.set(miscPath.toString(), newMisc);
                     }
-                    sellers.set(miscPath.toString(), newMisc);
                 }
+                SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
             }
             sellers.set("DataVersion", SignShop.DATA_VERSION);
             sellers.save(sellersFile);
-            SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
         } catch (IOException e) {
             SignShop.log("Error converting data!", Level.WARNING);
         }
