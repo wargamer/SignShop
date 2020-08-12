@@ -1,17 +1,17 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
+
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
-import com.sk89q.worldedit.math.BlockVector3;
-import com.sk89q.worldedit.world.World;
+import com.sk89q.worldedit.util.Location;
+import com.sk89q.worldguard.LocalPlayer;
 import com.sk89q.worldguard.WorldGuard;
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.flags.Flag;
 import com.sk89q.worldguard.protection.flags.StateFlag;
 import com.sk89q.worldguard.protection.flags.registry.FlagConflictException;
 import com.sk89q.worldguard.protection.flags.registry.FlagRegistry;
-import com.sk89q.worldguard.protection.managers.RegionManager;
-import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import com.sk89q.worldguard.protection.regions.RegionContainer;
-import org.bukkit.Location;
+import com.sk89q.worldguard.protection.regions.RegionQuery;
 import org.bukkit.Server;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -21,7 +21,6 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.hooks.HookManager;
 
-import java.util.Map;
 import java.util.logging.Level;
 
 public class WorldGuardChecker implements Listener {
@@ -52,21 +51,13 @@ public class WorldGuardChecker implements Listener {
         if (HookManager.getHook("WorldGuard") == null)
             return;
 
-        RegionContainer regionContainer = WorldGuard.getInstance().getPlatform().getRegionContainer();
-        World world = BukkitAdapter.adapt(event.getPlayer().getWorld());
-        RegionManager regions = regionContainer.get(world);
-        Location loc = event.getSign().getLocation();
-        BlockVector3 blockVector3 = BlockVector3.at(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
+        LocalPlayer localPlayer = WorldGuardPlugin.inst().wrapPlayer(event.getPlayer().getPlayer());
+        Location loc = BukkitAdapter.adapt(event.getSign().getLocation());
+        RegionContainer container = WorldGuard.getInstance().getPlatform().getRegionContainer();
+        RegionQuery query = container.createQuery();
 
-        for (ProtectedRegion r : regions.getApplicableRegions(blockVector3)) {
-            for (Map.Entry<Flag<?>, Object> flag : r.getFlags().entrySet()) {
-                if (flag.getKey().getName().equals("allow-shop")) {
-                    if (flag.getKey() instanceof StateFlag) {
-                        if (flag.getValue() == StateFlag.State.ALLOW) // allow-shop is true
-                            return;
-                    }
-                }
-            }
+        if (query.testState(loc, localPlayer, ALLOW_SHOP_FLAG)) {
+            return;
         }
 
         if (event.getPlayer().isOp()) {

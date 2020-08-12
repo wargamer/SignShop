@@ -22,7 +22,7 @@ public class SignShopConfig {
     private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
     private static final Map<String, SignShopOperation> OperationInstances = new LinkedHashMap<>();
     private static final List<SignShopSpecialOp> SpecialsOps = new LinkedList<>();
-    private static final String baseLanguage = "english";
+    private static final String baseLanguage = "en_US";
     private static Map<String, String> OperationAliases;                         // Alias <-> Original
     private static Map<String, Map<String, HashMap<String, String>>> Messages;
     private static Map<String, Map<String, String>> Errors;
@@ -34,6 +34,7 @@ public class SignShopConfig {
     private static List<LinkableMaterial> LinkableMaterials;
     private static Map<String, List<String>> Operations = new HashMap<>();
     private static SignShop instance = null;
+    private static Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
     //Configurables
     private static FileConfiguration config;
     private static int ConfigVersionDoNotTouch = 3;
@@ -43,7 +44,7 @@ public class SignShopConfig {
     private static int MessageCooldown = 0;
     private static int ChunkLoadRadius = 2;
     private static int MaxChestsPerShop = 100;
-    private static Boolean TransactionLog = false;
+    private static boolean TransactionLog = false;
     private static boolean Debugging = false;
     private static boolean MetricsEnabled = true;
     private static boolean OPOverride = true;
@@ -55,23 +56,24 @@ public class SignShopConfig {
     private static boolean EnablePermits = false;
     private static boolean PreventVillagerTrade = false;
     private static boolean ProtectShopsInCreative = true;
+    private static boolean ProtectShopsFromExplosions = true;
     private static boolean fixIncompleteOperations = true;
     private static boolean EnablePriceFromWorth = false;
     private static boolean EnableDynmapSupport = false;
     private static boolean EnableTutorialMessages = true;
     private static boolean EnableShopPlotSupport = true;
     private static boolean EnableShopOwnerProtection = true;
-    private static boolean EnableNamesFromTheWeb = false;
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
     private static boolean EnableWrittenBookFix = true;
     private static String ColorCode = "&";
     private static String ChatPrefix = "&6[SignShop]";
-    private static String Languages = "english";
+    private static String Languages = "en_US";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SAC");
     private static Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
+
 
     private SignShopConfig() {
 
@@ -85,17 +87,20 @@ public class SignShopConfig {
         return list;
     }
 
+
     public static void init() {
         instance = SignShop.getInstance();
         initConfig();
-        String LanguagesAdjusted = Languages.replace(baseLanguage, "config");
-        List<String> aLanguages = getOrderedListFromArray(LanguagesAdjusted.split(","));
+        updateLanguageFileNames();
+        String adjustedLanguages = createAdjustedLanguages();
+        List<String> aLanguages = getOrderedListFromArray(adjustedLanguages.split(","));
         if (!aLanguages.contains("config"))
             aLanguages.add("config");
         Messages = new LinkedHashMap<>();
         Errors = new LinkedHashMap<>();
         preferedLanguage = "";
         for (String language : aLanguages) {
+            language = toLanguageCase(language);
             String filename = (language + ".yml");
             String languageName = (language.equals("config") ? baseLanguage : language);
             copyFileFromJar(filename, false);
@@ -218,13 +223,13 @@ public class SignShopConfig {
         EnablePermits = ymlThing.getBoolean("EnablePermits", EnablePermits);
         PreventVillagerTrade = ymlThing.getBoolean("PreventVillagerTrade", PreventVillagerTrade);
         ProtectShopsInCreative = ymlThing.getBoolean("ProtectShopsInCreative", ProtectShopsInCreative);
+        ProtectShopsFromExplosions = ymlThing.getBoolean("ProtectShopsFromExplosions", ProtectShopsFromExplosions);
         fixIncompleteOperations = ymlThing.getBoolean("fixIncompleteOperations", fixIncompleteOperations);
         EnablePriceFromWorth = ymlThing.getBoolean("EnablePriceFromWorth", EnablePriceFromWorth);
         EnableDynmapSupport = ymlThing.getBoolean("EnableDynmapSupport", EnableDynmapSupport);
         EnableTutorialMessages = ymlThing.getBoolean("EnableTutorialMessages", EnableTutorialMessages);
         EnableShopPlotSupport = ymlThing.getBoolean("EnableShopPlotSupport", EnableShopPlotSupport);
         EnableShopOwnerProtection = ymlThing.getBoolean("EnableShopOwnerProtection", EnableShopOwnerProtection);
-        EnableNamesFromTheWeb = ymlThing.getBoolean("EnableNamesFromTheWeb", EnableNamesFromTheWeb);
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
@@ -293,6 +298,9 @@ public class SignShopConfig {
 
     private static Object getInstance(String fullClassPath) {
         try {
+            if (ExternalOperations.containsKey(fullClassPath)) {
+                return ExternalOperations.get(fullClassPath);
+            }
             Class<?> aclass = Class.forName(fullClassPath);
             return aclass.newInstance();
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException notfound) {
@@ -412,7 +420,6 @@ public class SignShopConfig {
         }
     }
 
-
     private static void copyFileFromJar(String filename, Boolean delete) {
         InputStream in = SignShopConfig.class.getResourceAsStream("/" + filename);
         File file = new File(instance.getDataFolder(), filename);
@@ -506,6 +513,10 @@ public class SignShopConfig {
                 aliases.add(entry.getKey());
         }
         return aliases;
+    }
+
+    public static void registerExternalOperation(SignShopOperation signShopOperation) {
+        ExternalOperations.put(signShopOperation.getClass().getName(), signShopOperation);
     }
 
     public static boolean registerOperation(String sName, List<String> blocks) {
@@ -685,69 +696,70 @@ public class SignShopConfig {
         return MessageCooldown;
     }
 
-    public static Boolean getOPOverride() {
+    public static boolean getOPOverride() {
         return OPOverride;
     }
 
-    public static Boolean getAllowVariableAmounts() {
+    public static boolean getAllowVariableAmounts() {
         return AllowVariableAmounts;
     }
 
-    public static Boolean getAllowEnchantedRepair() {
+    public static boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
     }
 
-    public static Boolean getAllowUnsafeEnchantments() {
+    public static boolean getAllowUnsafeEnchantments() {
         return AllowUnsafeEnchantments;
     }
 
-    public static Boolean getAllowMultiWorldShops() {
+    public static boolean getAllowMultiWorldShops() {
         return AllowMultiWorldShops;
     }
 
-    public static Boolean getEnablePermits() {
+    public static boolean getEnablePermits() {
         return EnablePermits;
     }
 
-    public static Boolean getPreventVillagerTrade() {
+    public static boolean getPreventVillagerTrade() {
         return PreventVillagerTrade;
     }
 
-    public static Boolean getProtectShopsInCreative() {
+    public static boolean getProtectShopsInCreative() {
         return ProtectShopsInCreative;
     }
 
-    public static Boolean getTransactionLog() {
+    public static boolean getProtectShopsFromExplosions() {
+        return ProtectShopsFromExplosions;
+    }
+
+    public static boolean getTransactionLog() {
         return TransactionLog;
     }
 
-    public static Boolean getDisableEssentialsSigns() {
+    public static boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
     }
 
-    public static Boolean getEnablePriceFromWorth() {
+    public static boolean getEnablePriceFromWorth() {
         return EnablePriceFromWorth;
     }
 
-    public static Boolean getEnableDynmapSupport() {
+    public static boolean getEnableDynmapSupport() {
         return EnableDynmapSupport;
     }
 
-    public static Boolean getEnableTutorialMessages() {
+    public static boolean getEnableTutorialMessages() {
         return EnableTutorialMessages;
     }
 
-    public static Boolean getEnableShopPlotSupport() {
+    public static boolean getEnableShopPlotSupport() {
         return EnableShopPlotSupport;
     }
 
-    public static Boolean getEnableShopOwnerProtection() {
+    public static boolean getEnableShopOwnerProtection() {
         return EnableShopOwnerProtection;
     }
 
-    public static boolean getEnableNamesFromTheWeb() {
-        return EnableNamesFromTheWeb;
-    }
 
     public static boolean getEnableAutomaticLock() {
         return EnableAutomaticLock;
@@ -759,6 +771,18 @@ public class SignShopConfig {
 
     public static boolean getEnableWrittenBookFix() {
         return EnableWrittenBookFix;
+    }
+
+    public static boolean debugging() {
+        return Debugging;
+    }
+
+    public static boolean metricsEnabled() {
+        return MetricsEnabled;
+    }
+
+    public static boolean isOPMaterial(Material check) {
+        return (check == updateMaterial || check == linkMaterial);
     }
 
     public static Material getLinkMaterial() {
@@ -773,18 +797,6 @@ public class SignShopConfig {
         return destroyMaterial;
     }
 
-    public static boolean isOPMaterial(Material check) {
-        return (check == updateMaterial || check == linkMaterial);
-    }
-
-    public static boolean debugging() {
-        return Debugging;
-    }
-
-    public static boolean metricsEnabled() {
-        return MetricsEnabled;
-    }
-
     public static String getChatPrefix() {
         return ChatPrefix;
     }
@@ -792,6 +804,54 @@ public class SignShopConfig {
     public static char getColorCode() {
         char[] code = ColorCode.toCharArray();
         return code[0];
+    }
+
+    private static String toLanguageCase(String language){
+        String[] languageParts = language.split("_");
+        if (languageParts.length ==2){
+            return (languageParts[0].toLowerCase()+"_"+languageParts[1].toUpperCase());
+        }
+        return language;
+    }
+
+    private static String createAdjustedLanguages() {
+        String adjustedLanguages = Languages;
+        for (LanguageSpelling languageSpelling : LanguageSpelling.values()) {
+            adjustedLanguages = adjustedLanguages.replace(languageSpelling.oldName, languageSpelling.localeName);
+        }
+        adjustedLanguages = adjustedLanguages.replace("en_US","config");
+        return adjustedLanguages;
+
+    }
+
+    private static void updateLanguageFileNames() {
+        for (LanguageSpelling languageSpelling : LanguageSpelling.values()) {
+            File oldLangFile = new File(instance.getDataFolder(), languageSpelling.oldName + ".yml");
+            if (oldLangFile.exists()) {
+                SignShop.log("Renaming deprecated language filename '" + languageSpelling.oldName + ".yml' to '" + languageSpelling.localeName + ".yml'.", Level.INFO);
+                oldLangFile.renameTo(new File(instance.getDataFolder(), languageSpelling.localeName + ".yml"));
+
+            }
+        }
+    }
+
+    private enum LanguageSpelling {
+        ENGLISH("english", "config"),
+        CHINESE("chinese", "zh_TW"),
+        DUTCH("dutch", "nl_NL"),
+        FRENCH("french", "fr_FR"),
+        GERMAN("german", "de_DE"),
+        PORTUGUESE("portuguese", "pt_PT"),
+        RUSSIAN("russian", "ru_RU"),
+        SPANISH("spanish", "es_ES");
+
+        String oldName;
+        String localeName;
+
+        LanguageSpelling(String oldName, String localeName) {
+            this.oldName = oldName;
+            this.localeName = localeName;
+        }
     }
 
     /**

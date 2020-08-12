@@ -12,8 +12,11 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockBurnEvent;
+import org.bukkit.event.block.BlockExplodeEvent;
+import org.bukkit.event.entity.EntityExplodeEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -37,7 +40,7 @@ public class SignShopBlockListener implements Listener {
         Block relativeBlock;
         BlockData relativeBlockData;
 
-        for(BlockFace face : checkFaces) {
+        for (BlockFace face : checkFaces) {
             relativeBlock = originalBlock.getRelative(face);
             relativeBlockData = relativeBlock.getBlockData();
             if (relativeBlockData instanceof Switch) {
@@ -65,15 +68,15 @@ public class SignShopBlockListener implements Listener {
         Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
 
-        for(Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
+        for (Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());
             SignShop.scheduleEvent(event);
-            if(event.isCancelled())
+            if (event.isCancelled())
                 return true;
         }
 
-        if(recurseOverAttachables) {
-            for(Block attached : getAttachables(block)) {
+        if (recurseOverAttachables) {
+            for (Block attached : getAttachables(block)) {
                 if (canNotBreakBlock(attached, player, false))
                     return true;
             }
@@ -86,7 +89,7 @@ public class SignShopBlockListener implements Listener {
     public void onBlockBreak(BlockBreakEvent event) {
         // We want to run at the Highest level so we can tell if other plugins cancelled the event
         // But we don't want to run at Monitor since we want to be able to cancel the event ourselves
-        if(event.isCancelled())
+        if (event.isCancelled())
             return;
         if (canNotBreakBlock(event.getBlock(), event.getPlayer(), true))
             event.setCancelled(true);
@@ -94,10 +97,24 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL)
     public void onBlockBurn(BlockBurnEvent event) {
-        if(event.isCancelled())
+        if (event.isCancelled())
             return;
 
         if (canNotBreakBlock(event.getBlock(), null, true))
             event.setCancelled(true);
+    }
+
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void onBlockExplode(BlockExplodeEvent event) {
+        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+            return;
+        event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
+    }
+
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void onEntityExplode(EntityExplodeEvent event) {
+        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+            return;
+        event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
     }
 }

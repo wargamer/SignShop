@@ -29,9 +29,11 @@ import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.Level;
 
-public class Storage implements Listener, Runnable {
+public class Storage implements Listener {
     private File ymlfile;
     private LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
+
+    private static FileSaveWorker fileSaveWorker;
 
     private static Storage instance = null;
     private static int taskId = 0;
@@ -42,6 +44,8 @@ public class Storage implements Listener, Runnable {
     private Map<String, HashMap<String, List<String>>> invalidShops = new LinkedHashMap<>();
 
     private Storage(File ymlFile) {
+        fileSaveWorker = new FileSaveWorker(ymlFile);
+        taskId = fileSaveWorker.runTaskTimerAsynchronously(SignShop.getInstance(),1,1).getTaskId();
         if(!ymlFile.exists()) {
             try {
                 ymlFile.createNewFile();
@@ -71,22 +75,14 @@ public class Storage implements Listener, Runnable {
     public static Storage init(File ymlFile) {
         if(instance == null) {
             instance = new Storage(ymlFile);
-            taskId = Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance).getTaskId();
+           // taskId = Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance).getTaskId();
         }
         return instance;
     }
 
     public static void dispose() {
         instance = null;
-        if(taskId != 0) {
-            try {
-                Bukkit.getScheduler().cancelTask(taskId);
-                SignShop.log("Successfully cancelled Async Storage task with ID: " + taskId, Level.INFO);
-            } catch(Exception ex) {
-                SignShop.log("Failed to cancel Storage task because: " + ex.getMessage(), Level.WARNING);
-            }
-        }
-        taskId = 0;
+        fileSaveWorker.stop();
     }
 
     public static Storage get() {
@@ -96,6 +92,7 @@ public class Storage implements Listener, Runnable {
     public int shopCount() {
         return sellers.size();
     }
+
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onWorldLoad(WorldLoadEvent event) {
@@ -287,9 +284,9 @@ public class Storage implements Listener, Runnable {
         }
 
         config.set("sellers", tempSellers);
-        config.set("DataVersion",SignShop.DATA_VERSION); //TODO This seems hacky but nothing else works, come back to it.
+        config.set("DataVersion",SignShop.DATA_VERSION);
         // We can not run the logic above async but we can save to disc on another thread
-        queueSave(config);
+        fileSaveWorker.queueSave(config);
     }
 
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc) {
@@ -390,34 +387,6 @@ public class Storage implements Listener, Runnable {
 
     public static String getItemSeperator() {
         return itemSeperator;
-    }
-
-    @Override
-    public void run() {
-        saveToFile();
-    }
-
-    private void queueSave(FileConfiguration config) {
-        if(config == null)
-            return;
-
-        try {
-            saveQueue.put(config);
-        } catch (InterruptedException ex) {
-            SignShop.log("Failed to save sellers.yml", Level.WARNING);
-        }
-    }
-
-    @SuppressWarnings("InfiniteLoopStatement")
-    private void saveToFile() {
-        while(true) {
-            try {
-                FileConfiguration config = saveQueue.take();
-                config.save(ymlfile);
-            } catch (InterruptedException | IOException ex) {
-                SignShop.log("Failed to save sellers.yml", Level.WARNING);
-            }
-        }
     }
 
     private void copyFile(File in, File out) throws IOException

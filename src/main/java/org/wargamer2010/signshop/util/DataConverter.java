@@ -15,13 +15,17 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 
 public class DataConverter {
     static File sellersFile;
-    static File sellersBackup;
+    static File sellersFileBackup;
+    static File timingFile;
+    static File timingFileBackup;
 
+    //TODO Make a very complex 1.8 set of data to convert.
     public static void init() {
         File dataFolder = SignShop.getInstance().getDataFolder();
         sellersFile = new File(dataFolder, "sellers.yml");
@@ -30,15 +34,38 @@ public class DataConverter {
             sellers.load(sellersFile);
             SignShop.log("Checking data version.", Level.INFO);
             if (sellers.getInt("DataVersion") < SignShop.DATA_VERSION) {
-                sellersBackup = new File(dataFolder, "sellersBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
-                FileUtil.copy(sellersFile, sellersBackup);
+                sellersFileBackup = new File(dataFolder, "sellersBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
+                FileUtil.copy(sellersFile, sellersFileBackup);
                 convertData(sellers);
+                convertTiming();
             }
             else {
                 SignShop.log("Your data is current.", Level.INFO);
             }
         } catch (IOException | InvalidConfigurationException ignored) {
+        }
+    }
 
+    private static void convertTiming() {
+        File dataFolder = SignShop.getInstance().getDataFolder();
+        timingFile = new File(dataFolder, "timing.yml");
+        FileConfiguration timing = new YamlConfiguration();
+        try {
+            timing.load(timingFile);
+            ConfigurationSection expirables = timing.getConfigurationSection("expirables");
+            if (!expirables.getKeys(false).isEmpty()) {
+                timingFileBackup = new File(dataFolder, "timingBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
+                FileUtil.copy(timingFile, timingFileBackup);
+                for (String key : expirables.getKeys(false)) {
+                    if (key.contains("sshotel")) {
+                        Map<String, Object> propertyMap = expirables.getConfigurationSection(key).getValues(true);
+                        timing.createSection("expirables." + key.replace("sshotel", "signshophotel"), propertyMap);
+                    }
+                }
+                timing.save(timingFile);
+            }
+        } catch (InvalidConfigurationException | IOException e) {
+            e.printStackTrace();
         }
 
     }
@@ -48,35 +75,42 @@ public class DataConverter {
         try {
             SignShop.log("Converting old data.", Level.INFO);
             ConfigurationSection section = sellers.getConfigurationSection("sellers");
-            Set<String> shops = section.getKeys(false);
-            for (String shop : shops) {
-                StringBuilder itemPath = new StringBuilder().append("sellers.").append(shop).append(".items");
-                StringBuilder miscPath = new StringBuilder().append("sellers.").append(shop).append(".misc");
-                //Strip old data from items
-                List<String> items = sellers.getStringList(itemPath.toString());
-                ItemStack[] itemStacks = convertOldStringsToItemStacks(items);
-                sellers.set(itemPath.toString(), itemUtil.convertItemStacksToString(itemStacks));
-                //Strip old data from misc
-                List<String> misc = sellers.getStringList(miscPath.toString());
-                if (!misc.isEmpty()) {
-                    List<String> newMisc = new ArrayList<>();
-                    for (String miscString : misc) {
-                        if (miscString.startsWith("sharesigns:")) {
-                            newMisc.add(miscString);
-                            continue;
+            if (section == null) {
+                SignShop.log("There was a problem with the sellers.yml, attempting to fix it. If the problem persists try regenerating the SignShop folder.",Level.WARNING);
+                sellers.set("sellers", new ArrayList<>());
+            }
+            else {
+                Set<String> shops = section.getKeys(false);
+                for (String shop : shops) {
+                    StringBuilder itemPath = new StringBuilder().append("sellers.").append(shop).append(".items");
+                    StringBuilder miscPath = new StringBuilder().append("sellers.").append(shop).append(".misc");
+                    //Strip old data from items
+                    List<String> items = sellers.getStringList(itemPath.toString());
+                    ItemStack[] itemStacks = convertOldStringsToItemStacks(items);
+                    sellers.set(itemPath.toString(), itemUtil.convertItemStacksToString(itemStacks));
+                    //Strip old data from misc
+                    List<String> misc = sellers.getStringList(miscPath.toString());
+                    if (!misc.isEmpty()) {
+                        List<String> newMisc = new ArrayList<>();
+
+                        for (String miscString : misc) {
+                            String[] keyPair = miscString.split(":", 2);
+                            String key = keyPair.length >= 1 ? keyPair[0] : "";
+                            String data = keyPair.length == 2 ? keyPair[1] : "";
+                            //This strips the old data if it exists.
+                            if (data.contains("|")) {
+                                String[] dataPair = data.split("\\|", 2);
+                                data = dataPair.length == 2 ? dataPair[1] : dataPair[0];
+                            }
+                            newMisc.add(key + ":" + data);
                         }
-                        String[] strings = miscString.split("\\|", 2);
-                        String[] keyPair = strings[0].split(":", 2);
-                        String key = keyPair[0];
-                        String data = strings[1];
-                        newMisc.add(key + ":" + data);
+                        sellers.set(miscPath.toString(), newMisc);
                     }
-                    sellers.set(miscPath.toString(), newMisc);
                 }
+                SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
             }
             sellers.set("DataVersion", SignShop.DATA_VERSION);
             sellers.save(sellersFile);
-            SignShop.log("Data conversion of " + shops.size() + " shops has finished.", Level.INFO);
         } catch (IOException e) {
             SignShop.log("Error converting data!", Level.WARNING);
         }

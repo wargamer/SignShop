@@ -47,13 +47,10 @@ DestroyMaterial: golden_axe
 #----------- Language ------------------
 
 # Changes the default language for SignShop
-# Available languages are dutch, english, french, portuguese, russian, and spanish
+# Available languages are nl_NL, en_US, de_DE, fr_FR, pt_PT, ru_RU, zh_CN, zh_TW and es_ES
 # Send us your translated configs and we will add it to our supported languages
-# NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
-Languages: english
-
-# Fetch more readable item names from the internet (Default = false) Currently not available.
-EnableNamesFromTheWeb: false
+# NOTE: If you only want to use the sign aliases from nl_NL but keep the messages in en_US for example, you can do "en_US, nl_NL"
+Languages: en_US
 
 #----------- Mechanics ------------------
 
@@ -62,6 +59,9 @@ ProtectShopsInCreative: true
 
 # Protects signs when they are made into shops. Can be bypassed by OP (Default = true)
 EnableShopOwnerProtection: true
+
+# Protect shops from explosions. A dedicated protection plugin is better. (Default = true)
+ProtectShopsFromExplosions: true
 
 # Gives players a message the first time they create a SignShop sign (Default = true)
 EnableTutorialMessages: true
@@ -118,6 +118,8 @@ linkableMaterials:
   OAK_WALL_SIGN: sign
   SPRUCE_SIGN: sign
   SPRUCE_WALL_SIGN: sign
+  CRIMSON_SIGN: sign
+  WARPED_SIGN: sign
   STEP: slab
   JUKEBOX: jukebox
   ACACIA_DOOR: door
@@ -127,6 +129,8 @@ linkableMaterials:
   OAK_DOOR: door
   SPRUCE_DOOR: door
   IRON_DOOR: door
+  CRIMSON_DOOR: door
+  WARPED_DOOR: door
   IRON_DOOR_BLOCK: door
   ACACIA_BUTTON: button
   BIRCH_BUTTON: button
@@ -134,6 +138,8 @@ linkableMaterials:
   JUNGLE_BUTTON: button
   OAK_BUTTON: button
   SPRUCE_BUTTON: button
+  CRIMSON_BUTTON: button
+  WARPED_BUTTON: button
 
 
 #----------- Restrictions ------------------
@@ -490,7 +496,7 @@ messages:
     Restricted: The Restricted sign is used to make it so only certain permission groups can use a sign.  List the permission groups on the 2nd, 3rd, and/or 4th lines of the sign.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
     Bank: The Bank sign is used to share profits with your bank account.  List a bank account you own on the 2nd line of the sign.  The percentage you would like to share goes on the 4th line.  Any remaining money is given to the owner of the shop.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
     Jukebox: The Jukebox sign exchanges the customer's money to listen to music discs. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the music discs you'd like to play.  The sign will play the next disc in the chest when used.
-    Kit: The Kit sign exchanges the customer's money and their inventory for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This sign can only be used once per player before needing to be reset.  Money is not put in the owner's account.
+    Kit: The Kit sign exchanges the customer's money for the chest's items. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This sign can only be used once per player before needing to be reset.  Money is not put in the owner's account.
     ResetKit: The ResetKit sign exchanges the customer's money so they are allowed to use the Kit sign again.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
     iXPBuy: The Infinite XP Buy sign exchanges the customer's XP points for items.  The 2nd and 4th lines of this sign can say whatever you like, the XP points goes on the 3rd line.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of items, so the chest can be destroyed after linking.
     iXPSell: The Infinite XP Sell sign exchanges the customer's items for XP points.  The 2nd and 4th lines of this sign can say whatever you like, the XP points goes on the 3rd line.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of space in the chest, so the chest can be destroyed after linking.

@@ -5,16 +5,13 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.scheduler.BukkitTask;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.configuration.FileSaveWorker;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSExpiredEvent;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -28,12 +25,17 @@ public class TimeManager extends TimerTask {
     private int intervalcount = 0;
     private Map<IExpirable, Integer> timeByExpirable = new LinkedHashMap<>();
     private ReentrantLock timerLock = new ReentrantLock();
+
+    private FileSaveWorker fileSaveWorker;
     private File storageFile;
     private YamlConfiguration storageConfiguration = null;
     private int taskId = -1;
 
     public TimeManager(File storage) {
         storageFile = storage;
+        fileSaveWorker = new FileSaveWorker(storageFile);
+        fileSaveWorker.runTaskTimerAsynchronously(SignShop.getInstance(), 1, 1);
+
         if (storage.exists()) {
             YamlConfiguration yml = new YamlConfiguration();
             try {
@@ -86,15 +88,6 @@ public class TimeManager extends TimerTask {
             }
         }
         scheduleCheck();
-    }
-
-    private static Method fetchSchedulerMethod(String methodName) {
-        try {
-            return Bukkit.getScheduler().getClass().getDeclaredMethod(methodName, Plugin.class, Runnable.class, long.class, long.class);
-        } catch (NoSuchMethodException | SecurityException ignored) {
-        }
-
-        return null;
     }
 
     /**
@@ -161,6 +154,7 @@ public class TimeManager extends TimerTask {
         if (taskId >= 0) {
             Bukkit.getScheduler().cancelTask(taskId);
         }
+        fileSaveWorker.stop();
     }
 
     @Override
@@ -213,11 +207,7 @@ public class TimeManager extends TimerTask {
             counter++;
         }
         this.storageConfiguration.set("expirables", saveStructure);
-        try {
-            this.storageConfiguration.save(storageFile);
-        } catch (IOException ex) {
-            SignShop.log("Unable to save expirables to file due to: " + ex.getMessage(), Level.SEVERE);
-        }
+        fileSaveWorker.queueSave(storageConfiguration);
     }
 
     private Object tryReflection(String fullClassname) {
@@ -250,32 +240,7 @@ public class TimeManager extends TimerTask {
     }
 
     private void scheduleCheck() {
-        boolean ranOperation = false;
-        Method scheduleAsync = fetchSchedulerMethod("runTaskTimer");
-        String reason = "Method was not found";
-        boolean usingDeprecatedMethod = false;
-
-        if (scheduleAsync == null) {
-            usingDeprecatedMethod = true;
-            scheduleAsync = fetchSchedulerMethod("scheduleSyncRepeatingTask");
-        }
-
-        if (scheduleAsync != null) {
-            try {
-                Object returnValue = scheduleAsync.invoke(Bukkit.getScheduler(), SignShop.getInstance(), this, 0, getTicks());
-                ranOperation = true;
-
-                if (!usingDeprecatedMethod)
-                    taskId = ((BukkitTask) returnValue).getTaskId();
-                else
-                    taskId = (Integer) returnValue;
-            } catch (IllegalAccessException | InvocationTargetException | IllegalArgumentException ex) {
-                reason = ex.getMessage();
-            }
-        }
-
-        if (!ranOperation)
-            SignShop.log("Could not find proper method to schedule TimeManager task! Reason: " + reason, Level.SEVERE);
+        taskId = Bukkit.getScheduler().runTaskTimer(SignShop.getInstance(),this,0,getTicks()).getTaskId();
     }
 
     private int getTicks() {

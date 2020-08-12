@@ -6,7 +6,7 @@
 
     <groupId>org.makershaven</groupId>
     <artifactId>SignShop</artifactId>
-    <version>3.4.4</version>
+    <version>3.4.13-dev</version>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -34,7 +34,6 @@
         </repository>
     </repositories>
     <dependencies>
-        <!--Spigot API-->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
@@ -131,10 +130,7 @@
             <version>1.7</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
-
-
     <build>
         <plugins>
             <plugin>
@@ -153,12 +149,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.1.0</version>
-                <!-- Do not include the <configuration>...</configuration> part if you are using Sponge! -->
                 <configuration>
                     <relocations>
                         <relocation>
                             <pattern>org.bstats.bukkit</pattern>
-                            <!-- Replace this with your package! -->
                             <shadedPattern>org.makershaven.weaves</shadedPattern>
                         </relocation>
                     </relocations>
@@ -171,6 +165,18 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>txt</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>png</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                </configuration>
             </plugin>
         </plugins>
         <resources>
