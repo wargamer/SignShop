@@ -185,11 +185,11 @@ public class SignShop extends JavaPlugin {
             disableSignShop();
         }
         //Setup worth
-        if (Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
+        if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
             worthHandler = new CMIWorthHandler();
             log("Using worth information from CMI.", Level.INFO);
         }
-        else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+        else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
             worthHandler = new EssentialsWorthHandler();
             log("Using worth information from Essentials.", Level.INFO);
         }
