@@ -152,6 +152,7 @@ public class SignShopConfig {
         HookManager.addHook("Residence");
         HookManager.addHook("LWC");
         HookManager.addHook("BlockLocker");
+        HookManager.addHook("Lands");
 
     }
 

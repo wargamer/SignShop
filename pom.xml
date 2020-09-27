@@ -125,6 +125,12 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>com.github.angeschossen</groupId>
+            <artifactId>LandsAPI</artifactId>
+            <version>4.9.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>1.7</version>
