@@ -185,16 +185,18 @@ public class SignShop extends JavaPlugin {
             disableSignShop();
         }
         //Setup worth
-        if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
-            worthHandler = new CMIWorthHandler();
-            log("Using worth information from CMI.", Level.INFO);
-        }
-        else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
-            worthHandler = new EssentialsWorthHandler();
-            log("Using worth information from Essentials.", Level.INFO);
-        }
-        else {
-            log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
+        if (SignShopConfig.getEnablePriceFromWorth()) {
+            if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
+                worthHandler = new CMIWorthHandler();
+                log("Using worth information from CMI.", Level.INFO);
+            }
+            else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+                worthHandler = new EssentialsWorthHandler();
+                log("Using worth information from Essentials.", Level.INFO);
+            }
+            else {
+                log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
+            }
         }
         //Enable metrics
         if (SignShopConfig.metricsEnabled()) {
