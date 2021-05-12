@@ -14,6 +14,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 import org.wargamer2010.signshop.configuration.ColorUtil;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -27,8 +28,10 @@ public class SignShopItemMeta {
     private static final String listSeperator = "~";
     private static final String valueSeperator = "-";
     private static final String innerListSeperator = "^";
-    private static final ChatColor txtColor = ChatColor.YELLOW;
     private static final String filename = "books.db";
+
+    private static  ChatColor txtColor = ChatColor.YELLOW;
+    private static  ChatColor txtColorTwo = ChatColor.DARK_PURPLE;
     
     private SignShopItemMeta() {
 
@@ -36,7 +39,8 @@ public class SignShopItemMeta {
 
     public static void init() {
         SSDatabase db = new SSDatabase(filename);
-
+        txtColor = SignShopConfig.getTextColor();
+        txtColorTwo = SignShopConfig.getTextColorTwo();
         try {
             if(!db.tableExists("ItemMeta"))
                 db.runStatement("CREATE TABLE ItemMeta ( ItemMetaID INTEGER, ItemMetaHash INT, PRIMARY KEY(ItemMetaID) )", null, false);
@@ -87,7 +91,7 @@ public class SignShopItemMeta {
     //May need to implement my own WhatIsIt friendly name yml
     private static String getDisplayName(ItemStack stack, ChatColor color) {
         String txtcolor = txtColor.toString();
-        String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : ChatColor.DARK_PURPLE.toString());
+        String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : txtColorTwo.toString());
 
         String normal = itemUtil.formatMaterialName(stack);
         String displayname = "";
@@ -121,7 +125,7 @@ public class SignShopItemMeta {
             if(type == MetaType.EnchantmentStorage) {
                 EnchantmentStorageMeta enchantmeta = (EnchantmentStorageMeta) meta;
                 if(enchantmeta.hasStoredEnchants())
-                    return (getDisplayName(stack, ChatColor.DARK_PURPLE) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
+                    return (getDisplayName(stack, txtColorTwo) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
             } else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
                 return (ColorUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack));
@@ -142,7 +146,7 @@ public class SignShopItemMeta {
 
                 boolean first = true;
                 StringBuilder namebuilder = new StringBuilder(512);
-                namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
+                namebuilder.append(getDisplayName(stack, txtColorTwo));
 
                 Collection<PotionEffect> effects = null;
                 Potion pot = null;
@@ -202,7 +206,7 @@ public class SignShopItemMeta {
                 FireworkMeta fireworkmeta = (FireworkMeta) meta;
 
                 StringBuilder namebuilder = new StringBuilder(256);
-                namebuilder.append(getDisplayName(stack, ChatColor.DARK_PURPLE));
+                namebuilder.append(getDisplayName(stack, txtColorTwo));
 
                 if(fireworkmeta.hasEffects()) {
                     namebuilder.append(" (");

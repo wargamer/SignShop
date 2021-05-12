@@ -282,6 +282,15 @@ ColorCode: "&"
 # Prefix to use when sending SignShop messages to players ("&6[SignShop]" by default)
 ChatPrefix: "&6[SignShop]"
 
+# Internal item color code ("&e" which is yellow by default)
+ItemColor: "&e"
+
+# Internal item secondary color code ("&5" which is dark purple by default)
+ItemColorTwo: "&5"
+
+# Internal money color code ("&a" which is green by default)
+MoneyColor: "&a"
+
 # These are given when players interact with shops
 # Words beginning with "!" are replaced when the message is given
 # For a full list of available !variables and what they do, please read the Quick Reference
