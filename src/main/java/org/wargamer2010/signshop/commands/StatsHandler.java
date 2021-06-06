@@ -47,7 +47,7 @@ public class StatsHandler implements ICommandHandler {
         message = message
                 + "Vault version: " + Vault.getVersion() + "\n"
                 + "SignShop Authors: " + pdfFile.getAuthors().toString().replace("[", "").replace("]", "") + "\n"
-                + "SignShop Home: http://tiny.cc/signshop" + "\n";
+                + "SignShop Home: http://tiny.cc/signshop3" + "\n";
         
         if(player != null)
             player.sendMessage(ChatColor.GREEN + message);
