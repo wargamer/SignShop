@@ -148,7 +148,7 @@ public class SignShopPlayer {
         if (isOpRaw())
             return true;
         String fullperm = (perm.isEmpty() ? "SignShop.SuperAdmin" : "SignShop.SuperAdmin." + perm);
-        return SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, fullperm.toLowerCase());
+        return SignShop.usePermissions() && Vault.getPermission().playerHas(world.toString(), getOfflinePlayer(), fullperm.toLowerCase());
     }
 
     private boolean isOpRaw() {
@@ -186,10 +186,9 @@ public class SignShopPlayer {
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
         if (SignShop.usePermissions() && isOP && !OPOverride)
             setOp(false);
-
         // Having Signshop.Superadmin while Permissions are in use should allow you to do everything with SignShop
         // And since the node is explicitly given to a player, the OPOverride setting is not relevant
-        if (SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, "signshop.superadmin")) {
+        if (SignShop.usePermissions() && Vault.getPermission().playerHas(world.toString(), getOfflinePlayer(), "signshop.superadmin")) {
             setOp(isOP);
             return true;
         }
@@ -198,7 +197,7 @@ public class SignShopPlayer {
         if (SignShop.usePermissions() && OPOverride && isOP)
             return true;
             // Using Permissions so check his permissions and restore his OP if he has it
-        else if (SignShop.usePermissions() && Vault.getPermission().playerHas(world, playername, perm.toLowerCase())) {
+        else if (SignShop.usePermissions() && Vault.getPermission().playerHas(world.toString(), getOfflinePlayer(), perm.toLowerCase())) {
             setOp(isOP);
             return true;
             // Not using Permissions but he is OP, so he's allowed
@@ -414,7 +413,7 @@ public class SignShopPlayer {
     public ItemStack getItemInHand() {
         if (getPlayer() == null)
             return null;
-        ItemStack stack = getPlayer().getItemInHand();
+        ItemStack stack = getPlayer().getInventory().getItemInMainHand();
         if (stack.getType() == Material.getMaterial("AIR"))
             return null;
         return stack;

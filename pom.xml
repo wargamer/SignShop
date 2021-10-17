@@ -6,7 +6,7 @@
 
     <groupId>org.makershaven</groupId>
     <artifactId>SignShop</artifactId>
-    <version>3.5.0</version>
+    <version>3.6.0</version>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -122,6 +122,12 @@
             <groupId>nl.rutgerkok</groupId>
             <artifactId>blocklocker</artifactId>
             <version>0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.angeschossen</groupId>
+            <artifactId>LandsAPI</artifactId>
+            <version>4.9.4</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

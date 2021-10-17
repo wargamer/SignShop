@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.configuration;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -68,6 +69,9 @@ public class SignShopConfig {
     private static boolean EnableWrittenBookFix = true;
     private static String ColorCode = "&";
     private static String ChatPrefix = "&6[SignShop]";
+    private static ChatColor TextColor = ChatColor.YELLOW;
+    private static ChatColor TextColorTwo = ChatColor.DARK_PURPLE;
+    private static ChatColor MoneyColor = ChatColor.GREEN;
     private static String Languages = "en_US";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
@@ -152,6 +156,7 @@ public class SignShopConfig {
         HookManager.addHook("Residence");
         HookManager.addHook("LWC");
         HookManager.addHook("BlockLocker");
+        HookManager.addHook("Lands");
 
     }
 
@@ -236,9 +241,20 @@ public class SignShopConfig {
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
+
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SAC"), Material.getMaterial("INK_SAC"));
         destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
+
+        TextColor = ChatColor.getByChar(ymlThing.getString("ItemColor", "e").replace(ColorCode,""));
+        if (TextColor == null) TextColor = ChatColor.YELLOW;
+
+        TextColorTwo = ChatColor.getByChar(ymlThing.getString("ItemColorTwo", "5").replace(ColorCode,""));
+        if (TextColorTwo == null) TextColorTwo = ChatColor.DARK_PURPLE;
+
+        MoneyColor = ChatColor.getByChar(ymlThing.getString("MoneyColor", "a").replace(ColorCode,""));
+        if (MoneyColor == null) MoneyColor = ChatColor.GREEN;
+
 
         // Sanity check
         if (ChunkLoadRadius > 50 || ChunkLoadRadius < 0)
@@ -805,6 +821,17 @@ public class SignShopConfig {
         char[] code = ColorCode.toCharArray();
         return code[0];
     }
+    public static ChatColor getTextColor() {
+        return TextColor;
+    }
+
+    public static ChatColor getTextColorTwo() {
+        return TextColorTwo;
+    }
+
+    public static ChatColor getMoneyColor() {
+        return MoneyColor;
+    }
 
     private static String toLanguageCase(String language){
         String[] languageParts = language.split("_");
@@ -834,6 +861,9 @@ public class SignShopConfig {
             }
         }
     }
+
+
+
 
     private enum LanguageSpelling {
         ENGLISH("english", "config"),

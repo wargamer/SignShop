@@ -38,7 +38,7 @@ public class SimpleShopProtector implements Listener {
         SignShopPlayer ssPlayer = new SignShopPlayer(player);
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
-            return seller == null || seller.isOwner(ssPlayer) || SignShopPlayer.isOp(player) || !SignShopConfig.getEnableShopOwnerProtection();
+            return seller == null || seller.isOwner(ssPlayer) || SignShopPlayer.isOp(player) || ssPlayer.hasPerm("Signshop.Destroy.Others", true)|| !SignShopConfig.getEnableShopOwnerProtection();
         }
         return true;
     }
@@ -130,7 +130,7 @@ public class SimpleShopProtector implements Listener {
                 && (player.getItemInHand() == null || player.getItemInHand().getType() != SignShopConfig.getDestroyMaterial())) {
             event.setCancelled(true);
 
-            if(event.getShop().isOwner(player) || event.getPlayer().isOp()) {
+            if(event.getShop().isOwner(player) || event.getPlayer().isOp() || player.hasPerm("Signshop.Destroy.Others", true)) {
                 Map<String, String> temp = new LinkedHashMap<>();
                 temp.put("!destroymaterial", signshopUtil.capFirstLetter(SignShopConfig.getDestroyMaterial().name().toLowerCase()));
 

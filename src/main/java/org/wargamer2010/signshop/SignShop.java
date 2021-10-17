@@ -185,16 +185,18 @@ public class SignShop extends JavaPlugin {
             disableSignShop();
         }
         //Setup worth
-        if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null) {
-            worthHandler = new CMIWorthHandler();
-            log("Using worth information from CMI.", Level.INFO);
-        }
-        else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null) {
-            worthHandler = new EssentialsWorthHandler();
-            log("Using worth information from Essentials.", Level.INFO);
-        }
-        else {
-            log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
+        if (SignShopConfig.getEnablePriceFromWorth()) {
+            if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
+                worthHandler = new CMIWorthHandler();
+                log("Using worth information from CMI.", Level.INFO);
+            }
+            else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+                worthHandler = new EssentialsWorthHandler();
+                log("Using worth information from Essentials.", Level.INFO);
+            }
+            else {
+                log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
+            }
         }
         //Enable metrics
         if (SignShopConfig.metricsEnabled()) {
@@ -204,6 +206,16 @@ public class SignShop extends JavaPlugin {
         if (SignShopConfig.debugging()) {
             SignShop.log("Debugging enabled.", Level.INFO);
         }
+
+        //Warn if spawn-protection is enabled
+        if(Bukkit.getSpawnRadius() > 0 && Bukkit.getOperators().size() > 0){
+            int opsCount = Bukkit.getOperators().size();
+            String opsPhrase = (opsCount > 1) ? ("are " + opsCount + " ops!") : ("is " + opsCount + " op!");
+            log("Spawn-Protection is set to " + Bukkit.getSpawnRadius() + " in server.properties and there " + opsPhrase, Level.WARNING);
+            log("Non-opped players may not be able to use SignShop signs in spawn!", Level.WARNING);
+            log("Please set 'spawn-protection' to 0 and use a protection plugin to protect spawn instead.", Level.WARNING);
+        }
+
         log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
     }
 

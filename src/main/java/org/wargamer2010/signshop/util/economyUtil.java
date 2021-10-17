@@ -2,16 +2,16 @@ package org.wargamer2010.signshop.util;
 
 import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.Vault;
+import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 public class economyUtil {
-    private static ChatColor moneyColor = ChatColor.GREEN;
 
     private economyUtil() {
 
     }
 
     private static String attachColor(String money) {
-        return (moneyColor + money + ChatColor.WHITE);
+        return (SignShopConfig.getMoneyColor() + money + ChatColor.WHITE);
     }
 
     public static String formatMoney(double money) {
@@ -39,7 +39,7 @@ public class economyUtil {
         if(fPrice < 0.0f) {
             fPrice = 0.0d;
         }
-        if(fPrice.isNaN() || fPrice.isInfinite())
+        if(Double.isNaN(fPrice) || fPrice.isInfinite())
             fPrice = 0.0d;
         return fPrice;
     }

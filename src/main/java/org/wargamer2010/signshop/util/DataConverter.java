@@ -53,7 +53,7 @@ public class DataConverter {
         try {
             timing.load(timingFile);
             ConfigurationSection expirables = timing.getConfigurationSection("expirables");
-            if (!expirables.getKeys(false).isEmpty()) {
+            if (expirables != null && !expirables.getKeys(false).isEmpty()) {
                 timingFileBackup = new File(dataFolder, "timingBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
                 FileUtil.copy(timingFile, timingFileBackup);
                 for (String key : expirables.getKeys(false)) {
