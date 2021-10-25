@@ -6,6 +6,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
 import org.bukkit.FireworkEffect.Builder;
+import org.bukkit.block.ShulkerBox;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
@@ -209,6 +210,43 @@ public class SignShopItemMeta {
                 }
 
                 return namebuilder.toString();
+
+            } else if(type == MetaType.BlockState){
+                BlockStateMeta blockStateMeta = (BlockStateMeta) meta;
+                if (blockStateMeta.getBlockState() instanceof ShulkerBox){
+                    ShulkerBox shulker = (ShulkerBox) blockStateMeta.getBlockState();
+                    StringBuilder nameBuilder = new StringBuilder();
+                    nameBuilder.append(getDisplayName(stack, txtColorTwo));
+
+                    nameBuilder.append(txtColor);
+                    nameBuilder.append(" [");
+
+                    boolean isEmpty = true;
+                    ItemStack[] itemStacks = shulker.getInventory().getContents();
+                    for (ItemStack item : itemStacks) {
+                        if (item != null){
+                            isEmpty = false;
+                            break;
+                        }
+                    }
+                    if (isEmpty){//TODO change to shulker.getInventory().isEmpty() when available
+                        nameBuilder.append("Empty");
+                    } else {
+
+                        boolean first = true;
+                        for (ItemStack item : itemStacks) {
+                            if (item == null) continue;
+                            if (first) first = false;
+                            else nameBuilder.append(", ");
+                            nameBuilder.append(item.getAmount()).append(" ");
+                            nameBuilder.append(getName(item));
+                        }
+                    }
+                    nameBuilder.append(txtColor);
+                    nameBuilder.append("]");
+
+                    return nameBuilder.toString();
+                }
             }
         }
 
@@ -441,6 +479,8 @@ public class SignShopItemMeta {
             types.add(MetaType.Potion);
         if(meta instanceof org.bukkit.inventory.meta.FireworkMeta)
             types.add(MetaType.Fireworks);
+        if (meta instanceof org.bukkit.inventory.meta.BlockStateMeta)
+            types.add(MetaType.BlockState);
         return types;
     }
 
@@ -577,5 +617,7 @@ public class SignShopItemMeta {
         Fireworks,
         Skull,
         Stock,
+        Bundle,
+        BlockState,
     }
 }
