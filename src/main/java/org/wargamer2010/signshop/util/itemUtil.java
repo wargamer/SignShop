@@ -164,11 +164,11 @@ public class itemUtil {
         return sb.toString();
     }
 
-    private static String stringFormat(String sMaterial){
-        sMaterial = sMaterial.replace("_"," ");
+    public static String stripConstantCase(String constantCaseString){
+        constantCaseString = constantCaseString.replace("_"," ");
         Pattern p = Pattern.compile("(^|\\W)([a-z])");
-        Matcher m = p.matcher(sMaterial.toLowerCase());
-        StringBuffer sb = new StringBuffer(sMaterial.length());
+        Matcher m = p.matcher(constantCaseString.toLowerCase());
+        StringBuffer sb = new StringBuffer(constantCaseString.length());
 
         while(m.find()){
             m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
@@ -216,7 +216,7 @@ public class itemUtil {
         }
         for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
             if(first) first = false;
-            else sItems.append(", ");
+            else sItems.append(SignShopConfig.getTextColor()).append(", ");
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
             String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
@@ -242,7 +242,7 @@ public class itemUtil {
         for(Map.Entry<Enchantment,Integer> eEntry : enchantments.entrySet()) {
             if(eFirst) eFirst = false;
             else enchantmentMessage.append(", ");
-            enchantmentMessage.append(stringFormat(eEntry.getKey().getName())).append(" ").append(binaryToRoman(eEntry.getValue()));
+            enchantmentMessage.append(stripConstantCase(eEntry.getKey().getName())).append(" ").append(binaryToRoman(eEntry.getValue()));
         }
         enchantmentMessage.append(")");
         return enchantmentMessage.toString();
@@ -437,7 +437,7 @@ public class itemUtil {
     }
 
 
-    public static ItemStack[] convertStringtoItemStacks(List<String> itemStringList) {//TODO test
+    public static ItemStack[] convertStringtoItemStacks(List<String> itemStringList) {
         ItemStack[] itemStacks = new ItemStack[itemStringList.size()];
 
         for (int i = 0; i < itemStringList.size(); i++) {
@@ -460,7 +460,7 @@ public class itemUtil {
         return itemStacks;
     }
 
-    public static String[] convertItemStacksToString(ItemStack[] itemStackArray) {//TODO test
+    public static String[] convertItemStacksToString(ItemStack[] itemStackArray) {
         List<String> itemStringList = new ArrayList<>();
         if (itemStackArray == null)
             return new String[1];

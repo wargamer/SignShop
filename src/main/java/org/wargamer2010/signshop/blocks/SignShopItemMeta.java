@@ -9,12 +9,10 @@ import org.bukkit.FireworkEffect.Builder;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
-import org.bukkit.potion.Potion;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
-import org.bukkit.potion.PotionType;
+import org.bukkit.potion.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -22,7 +20,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-import static org.wargamer2010.signshop.util.itemUtil.enchantmentsToMessageFormat;
 
 public class SignShopItemMeta {
     private static final String listSeperator = "~";
@@ -106,10 +103,11 @@ public class SignShopItemMeta {
         if(displayname.isEmpty())
             displayname = (txtcolor + customcolor + normal + txtcolor);
 
+        //noinspection deprecation TODO remove deprecation
         if(stack.getType().getMaxDurability() >= 30 && stack.getDurability() != 0)
             displayname = (" Damaged " + displayname);
         if(stack.getEnchantments().size() > 0)
-            displayname += (txtcolor + " " + enchantmentsToMessageFormat(stack.getEnchantments()));
+            displayname += (txtcolor + " " + itemUtil.enchantmentsToMessageFormat(stack.getEnchantments()));
 
         return displayname;
     }
@@ -132,76 +130,58 @@ public class SignShopItemMeta {
             } else if(type == MetaType.Skull) {
                 String postfix = "'s Head";
                 SkullMeta skullmeta = (SkullMeta) meta;
-                if(skullmeta.getOwner() != null) {
+                if(skullmeta.getOwningPlayer() !=null && skullmeta.getOwningPlayer().getName() != null) {
                     // Name coloring support had to be dropped since there is no more link between
                     // the skull owner and the actual player
-                    return (skullmeta.getOwner() + postfix);
+                    return (skullmeta.getOwningPlayer().getName() + postfix);
                 } else {
                     // We can no longer get a pretty name by ID (SKULL_ITEM isn't pretty, is it?)
                     // So we'll have to rely on the web lookup, if the server owner has it enabled
                     return getDisplayName(stack);
                 }
             } else if(type == MetaType.Potion) {
-                PotionMeta potionmeta = (PotionMeta) meta;
-
-                boolean first = true;
-                StringBuilder namebuilder = new StringBuilder(512);
-                namebuilder.append(getDisplayName(stack, txtColorTwo));
-
-                Collection<PotionEffect> effects = null;
-                Potion pot = null;
-                if(!potionmeta.hasCustomEffects()) {
-                    try {
-                        pot = Potion.fromItemStack(stack);
-                        effects = pot.getEffects();
-                    } catch(IllegalArgumentException ex) {
-                        int EXTENDED_BIT = 0x40;
-                        short damage = stack.getDurability();
-                        if ((damage & EXTENDED_BIT) > 0) {
-                            // Instant potions cannot be extended!
-                            // So let's invert the extended bit and retry.
-                            int tempint = (damage ^ EXTENDED_BIT);
-                            stack.setDurability((short) tempint);
-                            try {
-                                pot = Potion.fromItemStack(stack);
-                                effects = pot.getEffects();
-                            } catch (IllegalArgumentException ex2) {
-                                // I give up
-                            }
-                            stack.setDurability(damage);
-                        }
-                        if(effects == null) {
-                            pot = new Potion(PotionType.WATER);
-                            effects = pot.getEffects();
-                        }
-                    }
-                } else
-                    effects = potionmeta.getCustomEffects();
-
-                namebuilder.append(" (");
-
-                for(PotionEffect effect : effects) {
-                    if(first) first = false;
-                    else namebuilder.append(", ");
-
-                    namebuilder.append(signshopUtil.capFirstLetter(effect.getType().getName().toLowerCase()));
-                    if(pot != null && pot.getLevel() > 0) {
-                        namebuilder.append(" ");
-                        namebuilder.append(itemUtil.binaryToRoman(pot.getLevel()));
-                    } else {
-                        namebuilder.append(" with");
-                        namebuilder.append(" amplifier: ");
-                        namebuilder.append(effect.getAmplifier());
-                    }
-                    if(effect.getDuration() > 1) {
-                        namebuilder.append(" and duration: ");
-                        namebuilder.append(effect.getDuration());
-                    }
+                PotionMeta potionMeta = (PotionMeta) meta;
+                StringBuilder nameBuilder = new StringBuilder();
+                nameBuilder.append(txtColorTwo);
+                nameBuilder.append(itemUtil.stripConstantCase(stack.getType().toString()));
+                nameBuilder.append(txtColor);
+                nameBuilder.append(" (");
+                if (potionMeta.hasDisplayName()) {
+                    nameBuilder.append("\"");
+                    nameBuilder.append(potionMeta.getDisplayName());
+                    nameBuilder.append(txtColor);
+                    nameBuilder.append("\" ");
                 }
 
-                namebuilder.append(")");
+                if (potionMeta.getBasePotionData().getType() == PotionType.UNCRAFTABLE || potionMeta.getBasePotionData().getType() == PotionType.WATER) {
 
-                return namebuilder.toString();
+                    boolean first = true;
+                    for (PotionEffect potionEffect : potionMeta.getCustomEffects()) {
+                        if (first) first = false;
+                        else nameBuilder.append(", ");
+                        StringBuilder effectString = new StringBuilder();
+                        effectString.append(itemUtil.stripConstantCase(potionEffect.getType().getName()));
+                        if (potionEffect.getAmplifier() > 0) {
+                            effectString.append(" ");
+                            effectString.append(potionEffect.getAmplifier());
+                        }
+                        effectString.append(" for ");
+                        effectString.append(SSTimeUtil.parseTime(potionEffect.getDuration() / 20));
+                        nameBuilder.append(effectString);
+
+                    }
+                }
+                else {
+                    String prefix = "";
+                    if (potionMeta.getBasePotionData().isUpgraded()) prefix = "Strong ";
+                    if (potionMeta.getBasePotionData().isExtended()) prefix = "Lasting ";
+                    nameBuilder.append(prefix);
+                    nameBuilder.append(itemUtil.stripConstantCase(potionMeta.getBasePotionData().getType().toString()));
+                }
+
+                nameBuilder.append(")");
+
+                return nameBuilder.toString();
             } else if(type == MetaType.Fireworks) {
                 FireworkMeta fireworkmeta = (FireworkMeta) meta;
 
@@ -235,7 +215,8 @@ public class SignShopItemMeta {
         stack.getItemMeta().hasDisplayName();
         return getDisplayName(stack);
     }
-
+    //This method is only used for converting legacy data. Deprecation can be ignored until it is no longer valid.
+    /** @noinspection deprecation*/
     public static void setMetaForID(ItemStack stack, Integer ID) {
         Map<String, String> metamap = new LinkedHashMap<>();
         ItemMeta meta = stack.getItemMeta();
@@ -416,7 +397,7 @@ public class SignShopItemMeta {
             else if(type == MetaType.Skull) {
                 SkullMeta skullmeta = (SkullMeta) meta;
                 if(skullmeta.hasOwner()) {
-                    metamap.put("owner", skullmeta.getOwner());
+                    metamap.put("owner", skullmeta.getOwningPlayer().getName());
                 }
             }
             else if(type == MetaType.Repairable) {
