@@ -29,6 +29,7 @@ import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/** @noinspection deprecation*/ //TODO Remove deprecated calls
 public class itemUtil {
 
     private itemUtil() {
@@ -252,7 +253,7 @@ public class itemUtil {
         if(clickedSign(sign)) {
             Sign signblock = ((Sign) sign.getState());
             String[] sLines = signblock.getLines();
-            if(ChatColor.stripColor(sLines[0]).length() < 14) {
+            if(ChatColor.stripColor(sLines[0]).length() <= 14) {
                 signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
                 signblock.update();
             }
