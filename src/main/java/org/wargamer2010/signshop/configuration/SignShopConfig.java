@@ -332,7 +332,7 @@ public class SignShopConfig {
             boolean failedOp = false;
             List<String> tempCheckedSignOperation = new LinkedList<>();
 
-            for (String tempOperationString : allSignOperations.get(sKey).split(",")) {
+            for (String tempOperationString : allSignOperations.get(sKey).split("(,(?![^{]*}))")) { //Matches commas outside of curly braces
                 List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
                 String op = bits.get(0);
                 Object opinstance = getInstance(packageName + "." + op.trim());
@@ -875,8 +875,8 @@ public class SignShopConfig {
         RUSSIAN("russian", "ru_RU"),
         SPANISH("spanish", "es_ES");
 
-        String oldName;
-        String localeName;
+        final String oldName;
+        final String localeName;
 
         LanguageSpelling(String oldName, String localeName) {
             this.oldName = oldName;
