@@ -59,6 +59,7 @@ public class Storage implements Listener {
 
         // Load into memory, this also removes invalid signs (hence the backup)
         Boolean needToSave = Load();
+
         if(needToSave) {
             File backupTo = new File(ymlFile.getPath()+".bak");
             if(backupTo.exists())
@@ -216,11 +217,13 @@ public class Storage implements Listener {
     }
 
     private Boolean Load() {
+        SignShop.log("Loading and validating shops, please wait...",Level.INFO);
         FileConfiguration yml = YamlConfiguration.loadConfiguration(ymlfile);
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
-        if(sellersection == null)
+        if(sellersection == null) {
+            SignShop.log("There are no shops available. This is likely your first startup with SignShop.",Level.INFO);
             return false;
-
+        }
         Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
         if(tempSellers == null) {
             SignShop.log("Invalid sellers.yml format detected. Old sellers format is no longer supported."
@@ -229,6 +232,7 @@ public class Storage implements Listener {
             return false;
         }
         if (tempSellers.isEmpty()) {
+            SignShop.log("Loaded zero valid shops.",Level.INFO);
             return false;
         }
 
@@ -240,6 +244,7 @@ public class Storage implements Listener {
         }
 
         Bukkit.getPluginManager().registerEvents(this, SignShop.getInstance());
+        SignShop.log("Loaded " + shopCount() + " valid shops.", Level.INFO);
         return needSave;
     }
 
