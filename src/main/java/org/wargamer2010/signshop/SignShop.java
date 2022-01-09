@@ -62,6 +62,11 @@ public class SignShop extends JavaPlugin {
     // Vault
     private Vault vault = null;
 
+    public static void debugMessage(String message){
+        if(SignShopConfig.debugging()){
+            log(message,Level.INFO);
+        }
+    }
     public static void log(String message, Level level) {
         if (message != null && !message.trim().isEmpty())
             logger.log(level, ("[SignShop] " + message));

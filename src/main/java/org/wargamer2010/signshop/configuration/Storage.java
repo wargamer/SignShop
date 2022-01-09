@@ -179,7 +179,7 @@ public class Storage implements Listener {
                         miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
                 }
             }
-        } catch(StorageException caughtex) {
+        } catch(StorageException caughtex) {    //Caught when shop is invalid
             if(!caughtex.getWorld().isEmpty()) {
                 for(World temp : Bukkit.getServer().getWorlds()) {
                     if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) { //TODO Option to short circuit this to prevent invalid shop removal
