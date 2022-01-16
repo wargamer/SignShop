@@ -11,13 +11,15 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class SignShopPlayer {
+
     private String playername = "";
     private PlayerIdentifier playerId = null;
-    private PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
+    private final PlayerMetadata meta = new PlayerMetadata(this, SignShop.getInstance());
     private boolean ignoreMessages = false;
 
     public SignShopPlayer() {
