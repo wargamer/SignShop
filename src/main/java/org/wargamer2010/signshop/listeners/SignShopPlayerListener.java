@@ -25,6 +25,7 @@ import org.wargamer2010.signshop.events.*;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 import org.wargamer2010.signshop.util.clicks;
@@ -52,7 +53,7 @@ public class SignShopPlayerListener implements Listener {
             clickedBlocks.add(player.getWorld().getBlockAt(lTemp));
         if(!specialops.isEmpty()) {
             for(SignShopSpecialOp special : specialops) {
-                ranSomething = (special.runOperation(clickedBlocks, event, ranSomething) ? true : ranSomething);
+                ranSomething = (special.runOperation(clickedBlocks, event, ranSomething) || ranSomething);
                 if (ranSomething) {
                     break;
                 }
@@ -85,7 +86,7 @@ public class SignShopPlayerListener implements Listener {
         if(event.getPlayer() == null || event.getRightClicked() == null)
             return;
         Entity ent = event.getRightClicked();
-        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(event.getPlayer());
         if(SignShopConfig.getPreventVillagerTrade() && ent.getType() == EntityType.VILLAGER) {
             if(!event.isCancelled()) {
                 ssPlayer.sendMessage(SignShopConfig.getError("villager_trading_disabled", null));
@@ -100,13 +101,12 @@ public class SignShopPlayerListener implements Listener {
             return;
 
         Player player = (Player)event.getDamager();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
 
-        if(ssPlayer.getItemInHand() == null || !SignShopConfig.isOPMaterial(ssPlayer.getItemInHand().getType()))
+        if(player.getInventory().getItemInMainHand() == null || !SignShopConfig.isOPMaterial(player.getInventory().getItemInMainHand().getType()))
             return;
-
         if(event.getEntity().getType() == EntityType.PLAYER) {
-            SignShopPlayer clickedPlayer = new SignShopPlayer((Player)event.getEntity());
+            SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
+            SignShopPlayer clickedPlayer = PlayerCache.getPlayer((Player) event.getEntity());
 
             if(clicks.mClicksPerPlayerId.containsKey(clickedPlayer.GetIdentifier())) {
                 ssPlayer.sendMessage("You have deselected a player with name: " + clickedPlayer.getName());
@@ -137,7 +137,7 @@ public class SignShopPlayerListener implements Listener {
         if(signshopUtil.getSignShopOps(operation) == null)
             return;
 
-        SignShopPlayer ssPlayer = new SignShopPlayer(event.getPlayer());
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(event.getPlayer());
         if(SignShopConfig.getEnableTutorialMessages()) {
             if(!ssPlayer.hasMeta(helpPrefix + sOperation.toLowerCase()) && !ssPlayer.hasMeta(anyHelp)) {
                 ssPlayer.setMeta(helpPrefix + sOperation.toLowerCase(), "1");
@@ -160,7 +160,6 @@ public class SignShopPlayerListener implements Listener {
         // Initialize needed variables
         Block bClicked = event.getClickedBlock();
         Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
         String[] sLines;
         String sOperation;
         World world = player.getWorld();
@@ -170,6 +169,7 @@ public class SignShopPlayerListener implements Listener {
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShopConfig.getLinkMaterial()) {
                 sLines = ((Sign) bClicked.getState()).getLines();
                 sOperation = signshopUtil.getOperation(sLines[0]);
+                SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
                 if(SignShopConfig.getBlocks(sOperation).isEmpty()) {
                     if(!runSpecialOperations(event) && !signshopUtil.registerClickedMaterial(event))
                         ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
@@ -237,6 +237,7 @@ public class SignShopPlayerListener implements Listener {
             List<String> operation = SignShopConfig.getBlocks(sOperation);
 
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
+            SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
             if(SignShopOperations == null) {
                 ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                 return;
@@ -326,6 +327,7 @@ public class SignShopPlayerListener implements Listener {
         }
         List<Seller> touchedShops = Storage.get().getShopsByBlock(bClicked);
         if(!touchedShops.isEmpty()) {
+            SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
             for(Seller shop : touchedShops) {
                 SSTouchShopEvent touchevent = new SSTouchShopEvent(ssPlayer, shop, event.getAction(), bClicked);
                 SignShop.scheduleEvent(touchevent);
