@@ -74,7 +74,7 @@ public class SignShopPlayer {
     public static boolean isOp(Player player) {
         if (player == null)
             return false;
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         return ssPlayer.isOp(player.getWorld());
     }
 

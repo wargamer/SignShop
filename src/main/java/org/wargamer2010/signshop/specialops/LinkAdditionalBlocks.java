@@ -14,6 +14,7 @@ import org.wargamer2010.signshop.events.SSLinkEvent;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.util.economyUtil;
@@ -55,7 +56,7 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
         if(ranSomething)
             return false;
         Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Block bClicked = event.getClickedBlock();
         Seller seller = Storage.get().getSeller(bClicked.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getLine(0));
