@@ -14,6 +14,7 @@ import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -26,7 +27,7 @@ public class CopySign implements SignShopSpecialOp {
     public Boolean runOperation(List<Block> clickedBlocks, PlayerInteractEvent event, Boolean ranSomething) {
         Player player = event.getPlayer();
         Block shopSign = event.getClickedBlock();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         if(!itemUtil.clickedSign(shopSign))
             return false;
         if(ssPlayer.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())

@@ -26,6 +26,7 @@ import org.wargamer2010.signshop.events.*;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
@@ -421,7 +422,7 @@ public class signshopUtil {
     }
 
     private static Boolean registerClickedMaterial(Cancellable event, Player player, Block clickedBlock) {
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Boolean signshopMat = registerClickedMaterial(clickedBlock, ssPlayer);
         if(signshopMat)
             event.setCancelled(true);

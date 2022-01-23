@@ -7,6 +7,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -21,7 +22,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         if(!itemUtil.clickedSign(shopSign))
             return false;
         Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
         if(seller == null)
