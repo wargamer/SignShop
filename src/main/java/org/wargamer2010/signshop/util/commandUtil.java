@@ -108,7 +108,7 @@ public class commandUtil {
     public static boolean handleCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, CommandDispatcher commandDispatcher) {
         SignShopPlayer player = null;
         if(sender instanceof Player)
-            player = new SignShopPlayer((Player) sender);
+            player = PlayerCache.getPlayer((Player) sender);
         String[] remainingArgs;
         String subCommandName;
         if(args.length == 0) {
