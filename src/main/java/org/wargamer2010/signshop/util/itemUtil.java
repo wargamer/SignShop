@@ -93,10 +93,11 @@ public class itemUtil {
         return null;
     }
 
-    public static void fixBooks(ItemStack[] stacks) {
+    public static void fixBooks(ItemStack[] stacks) {//TODO this causes a ton of lag do we really even need this?
         if(stacks == null || !SignShopConfig.getEnableWrittenBookFix())
             return;
 
+        long timeMillis = System.currentTimeMillis();
         for(ItemStack stack : stacks) {
             if(stack != null && stack.getType() == Material.WRITTEN_BOOK &&
                     stack.hasItemMeta() && stack.getItemMeta() instanceof BookMeta) {
@@ -116,6 +117,8 @@ public class itemUtil {
                 stack.setItemMeta(copyMeta);
             }
         }
+        long timeMillis2 = System.currentTimeMillis();
+        SignShop.debugTiming("Fixbook loop",timeMillis,timeMillis2);
     }
 
     public static String binaryToRoman(int binary) {
@@ -359,7 +362,7 @@ public class itemUtil {
         }
     }
 
-    public static void updateStockStatusPerShop(Seller pSeller) {
+    public static void updateStockStatusPerShop(Seller pSeller) {//TODO called frequently
         if(pSeller != null) {
             Block pSign = pSeller.getSign();
             if(pSign == null || !(pSign.getState() instanceof Sign))
@@ -371,6 +374,7 @@ public class itemUtil {
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null)
                 return;
+            SignShop.debugMessage("itemUtil create args");
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), pSeller.getItems(), pSeller.getContainables(), pSeller.getActivatables(),
                                                                 null, null, pSign, signshopUtil.getOperation(sLines[0]), null, Action.RIGHT_CLICK_BLOCK, SignShopArgumentsType.Check);
             if(pSeller.getRawMisc() != null)
@@ -389,7 +393,9 @@ public class itemUtil {
         }
     }
 
-    public static void updateStockStatus(Block bSign, ChatColor ccColor) {
+    public static void updateStockStatus(Block bSign, ChatColor ccColor) {//TODO this is called frequently and makes many ops take a while
+        SignShop.debugMessage("Updating Stock Status");
+        long timeMillis = System.currentTimeMillis();
         Seller seTemp = Storage.get().getSeller(bSign.getLocation());
         if(seTemp != null) {
             List<Block> iChests = seTemp.getContainables();
@@ -397,6 +403,8 @@ public class itemUtil {
                 updateStockStatusPerChest(bHolder, bSign);
         }
         setSignStatus(bSign, ccColor);
+        long timeMillis2 = System.currentTimeMillis();
+        SignShop.debugTiming("Stock update",timeMillis,timeMillis2);
     }
 
     //TODO This is what is loading chunks

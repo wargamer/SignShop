@@ -151,9 +151,10 @@ public class SignShopPlayerListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteract(PlayerInteractEvent event) {
+        long timeMillis = System.currentTimeMillis();
         // Respect protection plugins
         if(event.getClickedBlock() == null
-        || event.isCancelled()
+        || event.isCancelled()//TODO Make a debug message that says when this starts out canceled and is a SignShop sign
         || event.getPlayer() == null) {
             return;
         }
@@ -165,17 +166,29 @@ public class SignShopPlayerListener implements Listener {
         World world = player.getWorld();
         Seller seller = Storage.get().getSeller(event.getClickedBlock().getLocation());
 
+        long timeMillis1 = System.currentTimeMillis();
+        SignShop.debugMessage("++++++++++++++++++++++++++++++++++++++++++++++");
+        SignShop.debugTiming("Setup",timeMillis,timeMillis1);
         if(event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && SignShopConfig.isOPMaterial(event.getItem().getType())) {
+
+            long timeMillis2 = System.currentTimeMillis();
+            SignShop.debugTiming("Main if statement",timeMillis1,timeMillis2);
+
             if(itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShopConfig.getLinkMaterial()) {
+                long timeMillis3 = System.currentTimeMillis();
                 sLines = ((Sign) bClicked.getState()).getLines();
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
+                long timeMillis4 = System.currentTimeMillis();
+                SignShop.debugTiming("Parse op and player",timeMillis2,timeMillis4);
                 if(SignShopConfig.getBlocks(sOperation).isEmpty()) {
                     if(!runSpecialOperations(event) && !signshopUtil.registerClickedMaterial(event))
                         ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                     return;
                 }
 
+                long timeMillis5 = System.currentTimeMillis();
+                SignShop.debugTiming("Check if op is empty",timeMillis4,timeMillis5);
                 List<String> operation = SignShopConfig.getBlocks(sOperation);
                 List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
                 if(SignShopOperations == null) {
@@ -184,133 +197,192 @@ public class SignShopPlayerListener implements Listener {
                 }
 
 
+                long timeMillis6 = System.currentTimeMillis();
+                SignShop.debugTiming("Create ops lists",timeMillis5,timeMillis6);
                 event.setCancelled(true);
                 List<Block> containables = new LinkedList<>();
                 List<Block> activatables = new LinkedList<>();
+                long timeMillis7 = System.currentTimeMillis();
                 boolean wentOK = signshopUtil.getSignshopBlocksFromList(ssPlayer, containables, activatables, bClicked);
                 if (!wentOK) {
                     return;
                 }
-
+                long timeMillis15 = System.currentTimeMillis();
+                SignShop.debugTiming("Get blocks from list",timeMillis7,timeMillis15);
+                long timeMillis8 = System.currentTimeMillis();
+                SignShop.debugMessage("SSPlayerlistener create args 1");
                 SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 
+                long timeMillis9 = System.currentTimeMillis();
+                SignShop.debugTiming("Create ssArgs",timeMillis8,timeMillis9);
                 Boolean bSetupOK = false;
+
+                long timeMillis16 = System.currentTimeMillis();
                 for(SignShopOperationListItem ssOperation : SignShopOperations) {
                     ssArgs.setOperationParameters(ssOperation.getParameters());
                     bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
                     if(!bSetupOK)
                         return;
                 }
+                long timeMillis10 = System.currentTimeMillis();
+                SignShop.debugTiming("Setup ops",timeMillis16,timeMillis10);
                 if(!bSetupOK)
                     return;
 
+                long timeMillis11 = System.currentTimeMillis();
                 if (signshopUtil.cantGetPriceFromMoneyEvent(ssArgs))
                     return;
 
+                long timeMillis12 = System.currentTimeMillis();
+                SignShop.debugTiming("Check price from money event",timeMillis11,timeMillis12);
+                long timeMillis17 = System.currentTimeMillis();
                 SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
                 SignShop.scheduleEvent(createdevent);
+                long timeMillis18 = System.currentTimeMillis();
+                SignShop.debugTiming("Created event",timeMillis17,timeMillis18);
                 if(createdevent.isCancelled()) {
+                    long timeMillis13 = System.currentTimeMillis();
                     itemUtil.setSignStatus(bClicked, ChatColor.BLACK);
+                    long timeMillis14 = System.currentTimeMillis();
+                    SignShop.debugTiming("Set sign status",timeMillis13,timeMillis14);
                     return;
                 }
 
+                long timeMillis13 = System.currentTimeMillis();
 
                 Storage.get().addSeller(ssPlayer.GetIdentifier(), world.getName(), ssArgs.getSign().get(), ssArgs.getContainables().getRoot(), ssArgs.getActivatables().getRoot()
                                             , ssArgs.getItems().get(), createdevent.getMiscSettings());
+                long timeMillis14 = System.currentTimeMillis();
+                SignShop.debugTiming("Storage addseller",timeMillis13,timeMillis14);
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
 
                 return;
             }
+            long timeMillis3 = System.currentTimeMillis();
             signshopUtil.registerClickedMaterial(event);
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShopConfig.isOPMaterial(event.getItem().getType()))) {
+            long timeMillis2 = System.currentTimeMillis();
+            SignShop.debugTiming("Main else statement",timeMillis1,timeMillis2);
             SignShopPlayer ssOwner = seller.getOwner();
             sLines = ((Sign) bClicked.getState()).getLines();
             sOperation = signshopUtil.getOperation(sLines[0]);
 
+            long timeMillis3 = System.currentTimeMillis();
             // Verify the operation
             if(SignShopConfig.getBlocks(sOperation).isEmpty()){
                 return;
             }
 
+            long timeMillis4 = System.currentTimeMillis();
+            SignShop.debugTiming("Verify op",timeMillis3,timeMillis4);
             List<String> operation = SignShopConfig.getBlocks(sOperation);
 
+            long timeMillis5 = System.currentTimeMillis();
+            SignShop.debugTiming("Config getblocks",timeMillis4,timeMillis5);
+            long timeMillis22 = System.currentTimeMillis();
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
+            long timeMillis6 = System.currentTimeMillis();
+            SignShop.debugTiming("Get ops and player",timeMillis22,timeMillis6);
             if(SignShopOperations == null) {
                 ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
                 return;
             }
 
+            long  timeMillis7 = System.currentTimeMillis();
             for(Block bContainable : seller.getContainables())
                 itemUtil.loadChunkByBlock(bContainable);
+            long timeMillis8 = System.currentTimeMillis();
+            SignShop.debugTiming("Load container chunks",timeMillis7,timeMillis8);
+            long timeMillis23 = System.currentTimeMillis();
             for(Block bActivatable : seller.getActivatables())
                 itemUtil.loadChunkByBlock(bActivatable);
-
+            long timeMillis9 = System.currentTimeMillis();
+            SignShop.debugTiming("Load activatable chunks",timeMillis23,timeMillis9);
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null){
                 event.setCancelled(true);
             }
+            long timeMillis10 = System.currentTimeMillis();
+            SignShop.debugMessage("SSPlayerListener create args 2");
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                                                                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Check);
 
+            long timeMillis11 = System.currentTimeMillis();
+            SignShop.debugTiming("Create ssArgs",timeMillis10,timeMillis11); //Decent lag source
             if(seller.getRawMisc() != null)
                 ssArgs.miscSettings = seller.getRawMisc();
+            long timeMillis12 = System.currentTimeMillis();
             boolean bRequirementsOK = true;
             boolean bReqOKSolid = true;
             boolean bRunOK = false;
 
             // If left clicking, all blocks should get a chance to run checkRequirements
             for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                long timeMillis13 = System.currentTimeMillis();
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 bRequirementsOK = ssOperation.getOperation().checkRequirements(ssArgs, true);
+                long timeMillis14 = System.currentTimeMillis();
+                SignShop.debugTiming("--checkRequirements op "+ssOperation.getOperation(),timeMillis13,timeMillis14);
                 if(!ssArgs.isLeftClicking() && !bRequirementsOK)
                     break;
                 else if(!bRequirementsOK)
                     bReqOKSolid = false;
             }
 
+            long timeMillis13 = System.currentTimeMillis();
+            SignShop.debugTiming("Run checkRequirements for ops",timeMillis12,timeMillis13);
             if(!bReqOKSolid)
                 bRequirementsOK = false;
-
+            long timeMillis14 = System.currentTimeMillis();
             SSPreTransactionEvent pretransactevent = SSEventFactory.generatePreTransactionEvent(ssArgs, seller, event.getAction(), bRequirementsOK);
             SignShop.scheduleEvent(pretransactevent);
-
+            long timeMillis15 = System.currentTimeMillis();
+            SignShop.debugTiming("Run preTransactionEvent",timeMillis14,timeMillis15);
             // Skip the requirements check if we're left clicking
             // The confirm message should always be shown when left clicking
             if(!ssArgs.isLeftClicking() && (!bRequirementsOK || pretransactevent.isCancelled()))
                 return;
-
+            long timeMillis16 = System.currentTimeMillis();
             ssArgs.setArgumentType(SignShopArgumentsType.Run);
             ssArgs.getPrice().set(pretransactevent.getPrice());
-
+            long timeMillis17 = System.currentTimeMillis();
             if(ssArgs.isLeftClicking()) {
                 ssPlayer.sendMessage(SignShopConfig.getMessage("confirm", ssArgs.getOperation().get(), ssArgs.getMessageParts()));
-
+                long timeMillis18 = System.currentTimeMillis();
                 ssArgs.reset();
                 return;
             }
             ssArgs.reset();
-
+            long timeMillis18 = System.currentTimeMillis();
             for(SignShopOperationListItem ssOperation : SignShopOperations) {
+                long timeMillis19 = System.currentTimeMillis();
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 bRunOK = ssOperation.getOperation().runOperation(ssArgs);
+                long timeMillis20 = System.currentTimeMillis();
+                SignShop.debugTiming("--runOperation op "+ssOperation.getOperation(),timeMillis19,timeMillis20);
+
                 if(!bRunOK)
                     return;
             }
+            long timeMillis19 = System.currentTimeMillis();
+            SignShop.debugTiming("Run operation for each op",timeMillis18,timeMillis19);
             if (!bRunOK)
                 return;
 
+            long timeMillis24 = System.currentTimeMillis();
             SSPostTransactionEvent posttransactevent = SSEventFactory.generatePostTransactionEvent(ssArgs, seller, event.getAction());
             SignShop.scheduleEvent(posttransactevent);
             if(posttransactevent.isCancelled())
                 return;
-
+            long timeMillis20 = System.currentTimeMillis();
+            SignShop.debugTiming("Run posttransaction event",timeMillis24,timeMillis20);
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 // Seems to still be needed. TODO: Find a proper way to update the player inventory
                 player.updateInventory();
             }
-
+            long timeMillis21 = System.currentTimeMillis();
             List<String> chests = new LinkedList<>();
             for(Map.Entry<String, String> entry : ssArgs.getMessageParts().entrySet())
                 if(entry.getKey().contains("chest"))
@@ -318,15 +390,22 @@ public class SignShopPlayerListener implements Listener {
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
             String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
             SignShop.logTransaction(player.getName(), seller.getOwner().getName(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
+            long timeMillis25 = System.currentTimeMillis();
+            SignShop.debugTiming("Formulate and log message",timeMillis21,timeMillis25);
             return;
         }
+        long timeMillis2 = System.currentTimeMillis();
         if(event.getItem() != null && seller != null && SignShopConfig.isOPMaterial(event.getItem().getType())) {
             if(!runSpecialOperations(event)) {
                 signshopUtil.registerClickedMaterial(event);
             }
         }
+        long timeMillis3 = System.currentTimeMillis();
         List<Seller> touchedShops = Storage.get().getShopsByBlock(bClicked);
+        long timeMillis5 = System.currentTimeMillis();
+        SignShop.debugTiming("Get shops by block",timeMillis3,timeMillis5);
         if(!touchedShops.isEmpty()) {
+            long timeMillis6 = System.currentTimeMillis();
             SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
             for(Seller shop : touchedShops) {
                 SSTouchShopEvent touchevent = new SSTouchShopEvent(ssPlayer, shop, event.getAction(), bClicked);
@@ -336,6 +415,8 @@ public class SignShopPlayerListener implements Listener {
                     break;
                 }
             }
+            long timeMillis4 = System.currentTimeMillis();
+            SignShop.debugTiming("Touch shop event loop",timeMillis6,timeMillis4);
         }
     }
 

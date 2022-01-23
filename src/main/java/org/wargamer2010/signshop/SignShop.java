@@ -62,6 +62,11 @@ public class SignShop extends JavaPlugin {
     // Vault
     private Vault vault = null;
 
+    public static void debugTiming(String message,long start, long end){
+        if (SignShopConfig.debugging()){
+            debugMessage(message+" took: "+(end-start)+"ms");
+        }
+    }
     public static void debugMessage(String message){
         if(SignShopConfig.debugging()){
             log(message,Level.INFO);

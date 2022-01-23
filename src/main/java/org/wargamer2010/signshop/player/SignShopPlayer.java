@@ -11,7 +11,6 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -374,7 +373,7 @@ public class SignShopPlayer {
         if (getPlayer() == null)
             return new ItemStack[0];
         ItemStack[] temp = getPlayer().getInventory().getContents();
-        itemUtil.fixBooks(temp);
+        if (SignShopConfig.getEnableWrittenBookFix()) itemUtil.fixBooks(temp); //TODO do we even need to fix books anymore?
         return temp;
     }
 

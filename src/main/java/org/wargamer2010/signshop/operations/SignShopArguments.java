@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.IMessagePartContainer;
@@ -52,6 +53,8 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public SignShopArguments(double pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                              SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, Action ac, SignShopArgumentsType type) {
+        SignShop.debugMessage("Constructing Args!");
+        long timeMillis = System.currentTimeMillis();
         fPrice.setRoot(pfPrice);
         isItems.setRoot(pisItems);
         containables.setRoot(pContainables);
@@ -69,11 +72,18 @@ public class SignShopArguments implements IMessagePartContainer {
         bfBlockFace.setRoot(pbfBlockFace);
         aAction.setRoot(ac);
         argumentType = type;
+        long timeMillis1 = System.currentTimeMillis();
         setDefaultMessageParts();
-        fixBooks();
+        long timeMillis2 = System.currentTimeMillis();
+        fixBooks();//TODO this make this constructor more expensive
+        long timeMillis3 = System.currentTimeMillis();
+        SignShop.debugTiming("Args constructor set message parts",timeMillis1,timeMillis2);
+        SignShop.debugTiming("Args constructor fixbooks",timeMillis2,timeMillis3);
+        SignShop.debugTiming("Args constructor total",timeMillis,timeMillis3);
     }
 
     public SignShopArguments(Seller seller, SignShopPlayer player, SignShopArgumentsType type) {
+        long timeMillis3 = System.currentTimeMillis();
         if (seller.getSign().getState() instanceof Sign)
             fPrice.setRoot(economyUtil.parsePrice(((Sign) seller.getSign().getState()).getLine(3)));
 
@@ -92,32 +102,44 @@ public class SignShopArguments implements IMessagePartContainer {
         argumentType = type;
         setDefaultMessageParts();
         fixBooks();
+        long timeMillis4 = System.currentTimeMillis();
+        SignShop.debugTiming("Args constructor 2",timeMillis3,timeMillis4);
     }
 
-    private void fixBooks() {
+    private void fixBooks() {//TODO Do we even need to fix books anymore? This adds several millis to each ssArgs creation.
+        if (!SignShopConfig.getEnableWrittenBookFix()) return; //Don't do the rest if we aren't even doing this.
+        long timeMillis = System.currentTimeMillis();
         if (isItems.getRoot() != null) {
+            SignShop.debugMessage("items getRoot is not null");
             itemUtil.fixBooks(isItems.getRoot());
         }
-
+        long timeMillis1 = System.currentTimeMillis();
         if (containables.getRoot() != null) {
+            SignShop.debugMessage("containables getRoot is not null");
             itemUtil.fixBooks(itemUtil.getAllItemStacksForContainables(containables.getRoot()));
         }
-
-        SignShopPlayer root = ssPlayer.getRoot();
-        if (root != null && root.getPlayer() != null) {
-            if (root.getItemInHand() != null) {
+        long timeMillis2 = System.currentTimeMillis();
+        SignShopPlayer ssPlayerRoot = ssPlayer.getRoot();
+        if (ssPlayerRoot != null && ssPlayerRoot.getPlayer() != null) {
+            SignShop.debugMessage("playerRoot is not null");
+            if (ssPlayerRoot.getItemInHand() != null) {
+                SignShop.debugMessage("playerRoot itemInHand is not null");
                 ItemStack[] stacks = new ItemStack[1];
-                stacks[0] = root.getItemInHand();
+                stacks[0] = ssPlayerRoot.getItemInHand();
                 itemUtil.fixBooks(stacks);
             }
 
-            ItemStack[] inventory = root.getInventoryContents();
+            ItemStack[] inventory = ssPlayerRoot.getInventoryContents();//TODO this already calls fixbooks
             itemUtil.fixBooks(inventory);
-            root.setInventoryContents(inventory);
+            ssPlayerRoot.setInventoryContents(inventory);
         }
+        long timeMillis3 = System.currentTimeMillis();
+        SignShop.debugTiming("++fixbooks root items",timeMillis,timeMillis1);
+        SignShop.debugTiming("++fixbooks root containers",timeMillis1,timeMillis2);
+        SignShop.debugTiming("++fixbooks root player",timeMillis2,timeMillis3);
     }
 
-    private void setDefaultMessageParts() {
+    private void setDefaultMessageParts() {//TODO this is a bit slow
         if (ssPlayer.get() != null) {
             setMessagePart("!customer", ssPlayer.get().getName());
             setMessagePart("!player", ssPlayer.get().getName());

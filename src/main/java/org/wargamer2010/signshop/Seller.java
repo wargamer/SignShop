@@ -28,7 +28,7 @@ public class Seller {
 
     public Seller(PlayerIdentifier playerId, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
             Map<String, String> pMiscProps, Boolean save) {
-        owner = new SignShopPlayer(playerId);
+        owner = new SignShopPlayer(playerId);//TODO use PlayerCache
         world = sWorld;
 
         isItems = itemUtil.getBackupItemStack(isChestItems);
