@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 
 public class JarUtil {
-    private static ReentrantLock loadLocker = new ReentrantLock();
+    private static final ReentrantLock loadLocker = new ReentrantLock();
 
     private JarUtil() {
 

@@ -9,7 +9,7 @@ import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.plugin.Plugin;
 
 public class SignShopServerListener implements Listener {
-    private Server server;
+    private final Server server;
     private static final String pluginName = "Essentials";
 
     public SignShopServerListener(Server pServer) {

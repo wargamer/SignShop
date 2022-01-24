@@ -7,7 +7,7 @@ import org.wargamer2010.signshop.timing.IExpirable;
 public class SSExpiredEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private IExpirable expirable;
+    private final IExpirable expirable;
 
     public SSExpiredEvent(IExpirable pExpirable) {
         expirable = pExpirable;

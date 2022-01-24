@@ -15,8 +15,8 @@ import java.util.logging.Level;
 
 public class PlayerMetadata {
     private static final String filename = "player.db";
-    private SignShopPlayer ssPlayer;
-    private Plugin plugin;
+    private final SignShopPlayer ssPlayer;
+    private final Plugin plugin;
 
     public PlayerMetadata(SignShopPlayer pPlayer, Plugin pPlugin) {
         ssPlayer = pPlayer;

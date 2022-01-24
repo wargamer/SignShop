@@ -53,7 +53,7 @@ public class SignShop extends JavaPlugin {
     //Permissions
     private static boolean USE_PERMISSIONS = false;
     // Commands
-    private static CommandDispatcher commandDispatcher = new CommandDispatcher();
+    private static final CommandDispatcher commandDispatcher = new CommandDispatcher();
     private final SignShopPlayerListener playerListener = new SignShopPlayerListener();
     private final SignShopBlockListener blockListener = new SignShopBlockListener();
     private final SignShopLoginListener loginListener = new SignShopLoginListener();

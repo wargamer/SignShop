@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ColorUtil {
-    private static Map<Integer, String> colorLookup = new HashMap<>();
+    private static final Map<Integer, String> colorLookup = new HashMap<>();
 
     private ColorUtil() {
 
@@ -42,7 +42,7 @@ public class ColorUtil {
         colorLookup.put(14602026, "yellow");
         colorLookup.put(10511680, "brown");
 
-        // Load colors that will help guessing custom colornames
+        // Load colors that will help to guess custom colornames
         FileConfiguration config = new YamlConfiguration();
         config = configUtil.loadYMLFromJar(config, "colors.yml");
         if(config == null)

@@ -16,8 +16,8 @@ import java.util.logging.Level;
 public class MessageWorker implements Runnable {
     private static boolean bWorking = false;
     private static MessageWorker instance = null;
-    private static DelayQueue<Message> messageQueue = new DelayQueue<>();
-    private static Map<String, HashMap<String, Message>> mPlayerMessageMap = new HashMap<>();
+    private static final DelayQueue<Message> messageQueue = new DelayQueue<>();
+    private static final Map<String, HashMap<String, Message>> mPlayerMessageMap = new HashMap<>();
 
     private MessageWorker() {
 
@@ -63,7 +63,7 @@ public class MessageWorker implements Runnable {
             mMessageMap.put(message, new Message(message, player.GetIdentifier(), timenow));
         }
         else if (mMessageMap.get(message).getCount() > 0) {
-            // We've been repeating the message and this is the last in the row so we should count it
+            // We've been repeating the message and this is the last in the row, so we should count it
             // That way it's easier to read the message and just multiply the repeated_x_times with the numbers in the message
             mMessageMap.get(message).incCount();
         }
@@ -100,11 +100,11 @@ public class MessageWorker implements Runnable {
     }
 
     private static class Message implements Delayed {
-        private String sMessage;
-        private PlayerIdentifier playerIdentifier;
+        private final String sMessage;
+        private final PlayerIdentifier playerIdentifier;
         private int iCount = 0;
         private long lLastSeen;
-        private int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
+        private final int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
 
         private Message(String pMessage, PlayerIdentifier playerIdentifier, long pTime) {
             sMessage = pMessage;

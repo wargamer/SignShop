@@ -23,10 +23,10 @@ public class TimeManager extends TimerTask {
     private static final int interval = 1000; // in ms
     private static final int saveinterval = 10000;
     private int intervalcount = 0;
-    private Map<IExpirable, Integer> timeByExpirable = new LinkedHashMap<>();
-    private ReentrantLock timerLock = new ReentrantLock();
+    private final Map<IExpirable, Integer> timeByExpirable = new LinkedHashMap<>();
+    private final ReentrantLock timerLock = new ReentrantLock();
 
-    private FileSaveWorker fileSaveWorker;
+    private final FileSaveWorker fileSaveWorker;
     private File storageFile;
     private YamlConfiguration storageConfiguration = null;
     private int taskId = -1;
@@ -174,9 +174,7 @@ public class TimeManager extends TimerTask {
                 }
             }
             timeByExpirable.clear();
-            for (Map.Entry<IExpirable, Integer> entry : update.entrySet()) {
-                timeByExpirable.put(entry.getKey(), entry.getValue());
-            }
+            timeByExpirable.putAll(update);
 
             if (intervalcount == saveinterval) {
                 save();
@@ -213,7 +211,7 @@ public class TimeManager extends TimerTask {
     private Object tryReflection(String fullClassname) {
         try {
             Class<?> fc = Class.forName(fullClassname);
-            return fc.newInstance();
+            return fc.newInstance();//TODO fix this
         } catch (InstantiationException | ClassNotFoundException | IllegalAccessException ignored) {
         }
 

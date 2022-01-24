@@ -46,7 +46,7 @@ public class PlayerIdentifier {
         }
     }
 
-    @SuppressWarnings("deprecation") // Backwards compatibility
+    // Backwards compatibility
     public Player getPlayer() {
         if(GetUUIDSupport()) {
             return id == null ? null : Bukkit.getPlayer(id);
@@ -114,8 +114,10 @@ public class PlayerIdentifier {
         if(didMethodLookup)
             return uuidSupport;
         for(Method method : OfflinePlayer.class.getMethods()) {
-            if(method.getName().equalsIgnoreCase("getUniqueId"))
+            if (method.getName().equalsIgnoreCase("getUniqueId")) {
                 uuidSupport = true;
+                break;
+            }
         }
         didMethodLookup = true;
         return uuidSupport;

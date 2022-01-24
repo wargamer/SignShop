@@ -92,9 +92,7 @@ public class BankTransaction implements Listener {
                         event.setCancelled(true);
                 break;
                 case GiveToPlayer:
-                    return;
                 case TakeFromPlayer:
-                    return;
                 case Unknown:
                     return;
             }
@@ -124,9 +122,7 @@ public class BankTransaction implements Listener {
                     }
                 break;
                 case GiveToPlayer:
-                    return;
                 case TakeFromPlayer:
-                    return;
                 case Unknown:
                     return;
             }

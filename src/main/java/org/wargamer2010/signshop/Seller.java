@@ -19,13 +19,13 @@ public class Seller {
     private List<Block> containables;
     private List<Block> activatables;
     private ItemStack[] isItems;
-    private Location signLocation;
-    private Map<String, String> miscProps = new HashMap<>();
-    private Map<String, String> volatileProperties = new LinkedHashMap<>();
+    private final Location signLocation;
+    private final Map<String, String> miscProps = new HashMap<>();
+    private final Map<String, String> volatileProperties = new LinkedHashMap<>();
     private Map<String, Object> serializedData = new HashMap<>();
 
     private SignShopPlayer owner;
-    private String world;
+    private final String world;
 
     public Seller(PlayerIdentifier playerId, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
             Map<String, String> pMiscProps, Boolean save) {

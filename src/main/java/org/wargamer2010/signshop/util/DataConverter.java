@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 
+@SuppressWarnings("deprecation")
 public class DataConverter {
     static File sellersFile;
     static File sellersFileBackup;
@@ -156,7 +157,7 @@ public class DataConverter {
                             Integer.parseInt(itemProperties[0]),
                             Short.parseShort(itemProperties[2])
                     );
-                    itemStacks[i].getData().setData(new Byte(itemProperties[3]));
+                    itemStacks[i].getData().setData(Byte.parseByte(itemProperties[3]));
 
                     if (itemProperties.length > 4)
                         itemUtil.safelyAddEnchantments(itemStacks[i], signshopUtil.convertStringToEnchantments(itemProperties[4]));

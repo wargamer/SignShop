@@ -78,7 +78,7 @@ public class SignShopItemMeta {
     }
 
     private static boolean hasNoMeta(ItemStack stack) {
-        // This seems silly but some parts of the code below function when an item has no meta data but itemmeta is not null
+        // This seems silly but some parts of the code below function when an item has no metadata but itemmeta is not null
         return (stack.getItemMeta() == null);
     }
 
@@ -548,6 +548,7 @@ public class SignShopItemMeta {
         return signshopUtil.implode(temp.toArray(colorarr), innerListSeperator);
     }
 
+    @SuppressWarnings("SuspiciousRegexArgument")
     private static ImmutableList<Color> getColorsFromString(String colors) {
         List<Color> temp = new LinkedList<>();
         String[] split = colors.split(innerListSeperator);
@@ -567,7 +568,7 @@ public class SignShopItemMeta {
         StringBuilder returnbuilder = new StringBuilder(meta.getEffects().size() * 50);
 
         for(FireworkEffect effect : meta.getEffects()) {
-            returnbuilder.append(effect.getType().toString());
+            returnbuilder.append(effect.getType());
             returnbuilder.append(valueSeperator);
             returnbuilder.append(getColorsAsAString(effect.getColors()));
             returnbuilder.append(valueSeperator);

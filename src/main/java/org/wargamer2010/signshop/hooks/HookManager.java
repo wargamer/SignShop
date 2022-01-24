@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HookManager {
-    private static HashMap<Hook, Plugin> hooks = new HashMap<>();
+    private static final HashMap<Hook, Plugin> hooks = new HashMap<>();
 
     private HookManager() {
 

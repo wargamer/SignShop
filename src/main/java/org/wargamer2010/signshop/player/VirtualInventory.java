@@ -26,7 +26,7 @@ public class VirtualInventory {
     }
 
     /**
-     * Attempts to take all of the items defined by isItemsToTake or a simple part (1/2 of all request items, 1/4, etc.)
+     * Attempts to take all the items defined by isItemsToTake or a simple part (1/2 of all request items, 1/4, etc.)
      * @param isItemsToTake Items to take as a whole or an equal part of each individual stack
      * @return A map filled with the items that can be taken which may be the same as specified by isItemsToTake or a part. Returns an empty map in case of failure.
      */

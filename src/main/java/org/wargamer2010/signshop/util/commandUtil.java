@@ -63,7 +63,7 @@ public class commandUtil {
                 if(!first)
                     builder.append(delimiter);
                 if(prefixRoot)
-                    builder.append(rootBuilder.toString());
+                    builder.append(rootBuilder);
                 if(prefixRoot || !first)
                     builder.append(" ");
                 builder.append(sub);

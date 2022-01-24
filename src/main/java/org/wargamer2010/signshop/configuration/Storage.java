@@ -30,8 +30,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.Level;
 
 public class Storage implements Listener {
-    private File ymlfile;
-    private LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
+    private final File ymlfile;
+    private final LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
 
     private static FileSaveWorker fileSaveWorker;
 
@@ -39,9 +39,9 @@ public class Storage implements Listener {
     private static int taskId = 0;
 
     private static Map<Location,Seller> sellers;
-    private static String itemSeperator = "&";
+    private static final String itemSeperator = "&";
 
-    private Map<String, HashMap<String, List<String>>> invalidShops = new LinkedHashMap<>();
+    private final Map<String, HashMap<String, List<String>>> invalidShops = new LinkedHashMap<>();
 
     private Storage(File ymlFile) {
         fileSaveWorker = new FileSaveWorker(ymlFile);
@@ -290,7 +290,7 @@ public class Storage implements Listener {
 
         config.set("sellers", tempSellers);
         config.set("DataVersion",SignShop.DATA_VERSION);
-        // We can not run the logic above async but we can save to disc on another thread
+        // We can not run the logic above async, but we can save to disc on another thread
         fileSaveWorker.queueSave(config);
     }
 
@@ -328,7 +328,7 @@ public class Storage implements Listener {
     }
 
     /**
-     * The Seller now keeps it's own Sign Location so call getSign in stead
+     * The Seller now keeps its own Sign Location so call getSign in stead
      * @param pSeller
      * @return
      * @deprecated

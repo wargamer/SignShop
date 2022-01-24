@@ -318,7 +318,7 @@ public class SignShopPlayerListener implements Listener {
             boolean bReqOKSolid = true;
             boolean bRunOK = false;
 
-            // If left clicking, all blocks should get a chance to run checkRequirements
+            // If left-clicking, all blocks should get a chance to run checkRequirements
             for(SignShopOperationListItem ssOperation : SignShopOperations) {
                 long timeMillis13 = System.currentTimeMillis();
                 ssArgs.setOperationParameters(ssOperation.getParameters());
@@ -340,8 +340,8 @@ public class SignShopPlayerListener implements Listener {
             SignShop.scheduleEvent(pretransactevent);
             long timeMillis15 = System.currentTimeMillis();
             SignShop.debugTiming("Run preTransactionEvent",timeMillis14,timeMillis15);
-            // Skip the requirements check if we're left clicking
-            // The confirm message should always be shown when left clicking
+            // Skip the requirements check if we're left-clicking
+            // The confirmation message should always be shown when left-clicking
             if(!ssArgs.isLeftClicking() && (!bRequirementsOK || pretransactevent.isCancelled()))
                 return;
             long timeMillis16 = System.currentTimeMillis();
