@@ -6,7 +6,7 @@ import com.palmergames.bukkit.towny.exceptions.EconomyException;
 import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
-import com.palmergames.bukkit.towny.object.TownyUniverse;
+import com.palmergames.bukkit.towny.TownyUniverse;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -32,7 +32,7 @@ public class giveTownMoney implements SignShopOperation {
             MoneyModifierManager.applyModifiers(ssArgs, SSMoneyEventType.GiveToTown);
 
             try {
-                Resident resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
+                Resident resident = TownyUniverse.getInstance().getDataSource().getResident(ssArgs.getOwner().get().getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
@@ -68,7 +68,7 @@ public class giveTownMoney implements SignShopOperation {
             Resident resident;
             Town town;
             try {
-                resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
+                resident = TownyUniverse.getInstance().getDataSource().getResident(ssArgs.getOwner().get().getName());
                 town = resident.getTown();
 
                 double bankcap = TownySettings.getTownBankCap();
@@ -77,6 +77,7 @@ public class giveTownMoney implements SignShopOperation {
                         throw new TownyException(String.format(TownySettings.getLangString("msg_err_deposit_capped"), bankcap));
                 }
 
+                @SuppressWarnings("deprecation")
                 EconomyResponse response = Vault.getEconomy().depositPlayer(town.getEconomyName(), fPrice);
                 if (response.type != EconomyResponse.ResponseType.SUCCESS) {
                     ssPlayer.sendMessage("Error depositing into shop owners account!");

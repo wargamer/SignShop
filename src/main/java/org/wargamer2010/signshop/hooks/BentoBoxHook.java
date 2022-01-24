@@ -22,7 +22,7 @@ public class BentoBoxHook implements Hook {
             return true;
         }
 
-        //BentoBox does not currently have a general bypass for all gamemodes so we will check for op/superadmin
+        //BentoBox does not currently have a general bypass for all gamemodes, so we will check for op/superadmin
         if (SignShopPlayer.isOp(player)) {
             return true;
         }
@@ -39,7 +39,7 @@ public class BentoBoxHook implements Hook {
                     island.get().getMemberSet(RanksManager.MEMBER_RANK).contains(player.getUniqueId());
         }
 
-        // If bentobox does not operates in given world then return true?
+        // If bentobox does not operate in given world then return true?
         return true;
     }
 

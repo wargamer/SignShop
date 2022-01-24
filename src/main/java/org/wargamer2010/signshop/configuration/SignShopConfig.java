@@ -333,7 +333,7 @@ public class SignShopConfig {
             boolean failedOp = false;
             List<String> tempCheckedSignOperation = new LinkedList<>();
 
-            for (String tempOperationString : allSignOperations.get(sKey).split("(,(?![^{]*}))")) { //Matches commas outside of curly braces
+            for (String tempOperationString : allSignOperations.get(sKey).split("(,(?![^{]*}))")) { //Matches commas outside curly braces
                 List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
                 String op = bits.get(0);
                 Object opinstance = getInstance(packageName + "." + op.trim());
