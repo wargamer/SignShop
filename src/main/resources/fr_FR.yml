@@ -41,7 +41,7 @@ signs:
   Slot: Slot
 messages:
   setup:
-    Buy: Vous avez mis !items en vente au prix de !price! crédits.
+    Buy: Vous avez mis !items en vente au prix de !price crédits.
     Sell: Vous achetez maintenant !items pour !price crédits.
     Donate: Vous avez configuré une boite de dons pour !items.
     DonateHand: Vous avez configuré une boîte de dons pour tous les types d'éléments.
@@ -285,3 +285,8 @@ errors:
     pas être utilisé!
   item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais
     vous êtes OP!
+  shop_contains: Ce magasin contient !shopinventory @ !items pour !price crédits!
+  removed_location: Emplacement supprimé!
+  stored_location: Emplacement de !block enregistré!
+  stored_location_containable: Emplacement de !block contenant !items enregistré!
+  failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur ci-haut!
