@@ -361,7 +361,7 @@ public class SignShopConfig {
         SignShopConfig.OperationAliases = new HashMap<>();
 
         for (String language : aLanguages) {
-            String filename = (language + ".yml");
+            String filename = (toLanguageCase(language)+ ".yml");
             File languageFile = new File(instance.getDataFolder(), filename);
             if (languageFile.exists()) {
                 FileConfiguration ymlThing = new YamlConfiguration();
