@@ -10,7 +10,7 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import java.util.logging.Level;
 
 public class CMIWorthHandler implements WorthHandler {
-    private WorthManager worthManager;
+    private final WorthManager worthManager;
 
     public CMIWorthHandler() {
         worthManager = CMI.getInstance().getWorthManager();

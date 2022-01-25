@@ -12,7 +12,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import java.util.logging.Level;
 
 public class ReloadHandler implements ICommandHandler {
-    private static ICommandHandler instance = new ReloadHandler();
+    private static final ICommandHandler instance = new ReloadHandler();
 
     private ReloadHandler() {
 

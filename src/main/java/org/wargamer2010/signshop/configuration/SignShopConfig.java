@@ -35,7 +35,7 @@ public class SignShopConfig {
     private static List<LinkableMaterial> LinkableMaterials;
     private static Map<String, List<String>> Operations = new HashMap<>();
     private static SignShop instance = null;
-    private static Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
+    private static final Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
     //Configurables
     private static FileConfiguration config;
     private static int ConfigVersionDoNotTouch = 3;
@@ -282,12 +282,12 @@ public class SignShopConfig {
     public static void updateConfigMaterials(String name) {
         FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
         File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
-        if (name.equals("INK_SACK") && ymlThing.getString("UpdateMaterial").toUpperCase().equals("INK_SACK")) {
+        if (name.equals("INK_SACK") && ymlThing.getString("UpdateMaterial").equalsIgnoreCase("INK_SACK")) {
             ymlThing.set("UpdateMaterial", "ink_sac");
             SignShop.log("UpdateMaterial changed successfully from ink_sack to ink_sac in the config.yml", Level.INFO);
             saveConfig(ymlThing, configFile);
         }
-        if (name.equals("GOLD_AXE") && ymlThing.getString("DestroyMaterial").toUpperCase().equals("GOLD_AXE")) {
+        if (name.equals("GOLD_AXE") && ymlThing.getString("DestroyMaterial").equalsIgnoreCase("GOLD_AXE")) {
             ymlThing.set("DestroyMaterial", "golden_axe");
             SignShop.log("DestroyMaterial changed successfully from gold_axe to golden_axe in the config.yml", Level.INFO);
             saveConfig(ymlThing, configFile);
@@ -318,6 +318,7 @@ public class SignShopConfig {
                 return ExternalOperations.get(fullClassPath);
             }
             Class<?> aclass = Class.forName(fullClassPath);
+            //noinspection deprecation
             return aclass.newInstance();
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException notfound) {
             return null;

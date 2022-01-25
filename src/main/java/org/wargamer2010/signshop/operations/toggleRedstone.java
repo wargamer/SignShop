@@ -33,10 +33,7 @@ public class toggleRedstone implements SignShopOperation {
             bLever = ssArgs.getActivatables().get().get(i);
             if(bLever.getType() == Material.getMaterial("LEVER") && bLever.getBlockData() instanceof Switch) {
                 Switch switchLever = (Switch) bLever.getBlockData();
-                if(!switchLever.isPowered())
-                    switchLever.setPowered(true);
-                else
-                    switchLever.setPowered(false);
+                switchLever.setPowered(!switchLever.isPowered());
                 bLever.setBlockData(switchLever);
                 signshopUtil.generateInteractEvent(bLever, ssArgs.getPlayer().get().getPlayer(), ssArgs.getBlockFace().get());
             }

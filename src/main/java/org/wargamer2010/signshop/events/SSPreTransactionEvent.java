@@ -15,16 +15,16 @@ public class SSPreTransactionEvent extends SSEvent implements IOperationEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private double fPrice;
-    private ItemStack[] isItems;
-    private List<Block> containables;
-    private List<Block> activatables;
-    private SignShopPlayer ssPlayer;
-    private SignShopPlayer ssOwner;
-    private Block bSign;
-    private String sOperation;
-    private Seller seShop;
-    private Action aAction;
-    private boolean bRequirementsOK;
+    private final ItemStack[] isItems;
+    private final List<Block> containables;
+    private final List<Block> activatables;
+    private final SignShopPlayer ssPlayer;
+    private final SignShopPlayer ssOwner;
+    private final Block bSign;
+    private final String sOperation;
+    private final Seller seShop;
+    private final Action aAction;
+    private final boolean bRequirementsOK;
 
     public SSPreTransactionEvent(double pPrice,
                                 ItemStack[] pItems,

@@ -21,7 +21,7 @@ public class PermitChecker implements Listener {
         if(ssPlayer.hasPerm("SignShop.Permit", world, true))
             return false;
         for(ItemStack stack : stacks) {
-            if(!ssPlayer.hasPerm("SignShop.Permit." + stack.getType().toString(), world, true))
+            if(!ssPlayer.hasPerm("SignShop.Permit." + stack.getType(), world, true))
                 return true;
         }
 

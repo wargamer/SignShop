@@ -14,7 +14,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class ShopCooldown implements Listener {
-    private static Map<String, Long> lastusedByPlayer = new LinkedHashMap<>();
+    private static final Map<String, Long> lastusedByPlayer = new LinkedHashMap<>();
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {

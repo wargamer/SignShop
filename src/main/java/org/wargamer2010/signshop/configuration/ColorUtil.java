@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ColorUtil {
-    private static Map<Integer, String> colorLookup = new HashMap<>();
+    private static final Map<Integer, String> colorLookup = new HashMap<>();
 
     private ColorUtil() {
 

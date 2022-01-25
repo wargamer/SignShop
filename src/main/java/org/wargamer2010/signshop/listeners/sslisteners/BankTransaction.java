@@ -1,6 +1,8 @@
 package org.wargamer2010.signshop.listeners.sslisteners;
 
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.event.EventHandler;
@@ -56,7 +58,7 @@ public class BankTransaction implements Listener {
         List<String> ownedBanks = new LinkedList<>();
         SignShopPlayer ssOwner = event.getShop().getOwner();
         for(String bank : banks) {
-            String owner = event.getShop().getOwner().getName();
+            OfflinePlayer owner = event.getShop().getOwner().getOfflinePlayer();
             if(Vault.getEconomy().isBankOwner(bank, owner).transactionSuccess() || Vault.getEconomy().isBankMember(bank, owner).transactionSuccess()
                     || ssOwner.isOp(event.getPlayer().getWorld())) {
                 ownedBanks.add(bank);
@@ -92,10 +94,8 @@ public class BankTransaction implements Listener {
                         event.setCancelled(true);
                 break;
                 case GiveToPlayer:
-                    return;
-                case TakeFromPlayer:
-                    return;
                 case Unknown:
+                case TakeFromPlayer:
                     return;
             }
         } else {
@@ -124,10 +124,8 @@ public class BankTransaction implements Listener {
                     }
                 break;
                 case GiveToPlayer:
-                    return;
-                case TakeFromPlayer:
-                    return;
                 case Unknown:
+                case TakeFromPlayer:
                     return;
             }
 

@@ -15,7 +15,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import java.util.logging.Level;
 
 public class StatsHandler implements ICommandHandler {
-    private static ICommandHandler instance = new StatsHandler();
+    private static final ICommandHandler instance = new StatsHandler();
 
     private StatsHandler() {
 
