@@ -550,6 +550,7 @@ public class SignShopItemMeta {
 
     private static ImmutableList<Color> getColorsFromString(String colors) {
         List<Color> temp = new LinkedList<>();
+        //noinspection SuspiciousRegexArgument
         String[] split = colors.split(innerListSeperator);
         for(String part : split) {
             try {
@@ -567,7 +568,7 @@ public class SignShopItemMeta {
         StringBuilder returnbuilder = new StringBuilder(meta.getEffects().size() * 50);
 
         for(FireworkEffect effect : meta.getEffects()) {
-            returnbuilder.append(effect.getType().toString());
+            returnbuilder.append(effect.getType());
             returnbuilder.append(valueSeperator);
             returnbuilder.append(getColorsAsAString(effect.getColors()));
             returnbuilder.append(valueSeperator);

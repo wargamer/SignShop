@@ -15,7 +15,7 @@ public class Vault {
     private static Economy economy = null;
     private static Chat chat = null;
     private static Boolean vaultFound = false;
-    private static Server server = Bukkit.getServer();
+    private static final Server server = Bukkit.getServer();
     private static final String nullString = null;
 
     public Vault() {

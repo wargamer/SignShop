@@ -10,10 +10,10 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSTouchShopEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private SignShopPlayer ssPlayer;
-    private Seller seShop;
-    private Action aAction;
-    private Block bBlock;
+    private final SignShopPlayer ssPlayer;
+    private final Seller seShop;
+    private final Action aAction;
+    private final Block bBlock;
 
     public SSTouchShopEvent(SignShopPlayer pPlayer, Seller pShop, Action pAction, Block pBlock) {
         ssPlayer = pPlayer;

@@ -1,6 +1,7 @@
 package org.wargamer2010.signshop.hooks;
 
 import nl.rutgerkok.blocklocker.BlockLockerAPI;
+import nl.rutgerkok.blocklocker.BlockLockerAPIv2;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
@@ -14,7 +15,7 @@ public class BlockLockerHook implements Hook {
     public Boolean canBuild(Player player, Block block) {
         if (HookManager.getHook("BlockLocker") == null)
             return true;
-        return BlockLockerAPI.isAllowed(player,block,true);
+        return BlockLockerAPIv2.isAllowed(player,block,true);
     }
 
     @Override

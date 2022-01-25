@@ -16,8 +16,8 @@ import java.util.logging.Level;
 public class MessageWorker implements Runnable {
     private static boolean bWorking = false;
     private static MessageWorker instance = null;
-    private static DelayQueue<Message> messageQueue = new DelayQueue<>();
-    private static Map<String, HashMap<String, Message>> mPlayerMessageMap = new HashMap<>();
+    private static final DelayQueue<Message> messageQueue = new DelayQueue<>();
+    private static final Map<String, HashMap<String, Message>> mPlayerMessageMap = new HashMap<>();
 
     private MessageWorker() {
 
@@ -100,11 +100,11 @@ public class MessageWorker implements Runnable {
     }
 
     private static class Message implements Delayed {
-        private String sMessage;
-        private PlayerIdentifier Player;
+        private final String sMessage;
+        private final PlayerIdentifier Player;
         private int iCount = 0;
         private long lLastSeen;
-        private int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
+        private final int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
 
         private Message(String pMessage, PlayerIdentifier player, long pTime) {
             sMessage = pMessage;

@@ -4,8 +4,8 @@ package org.wargamer2010.signshop.configuration;
 import org.bukkit.Material;
 
 public class LinkableMaterial {
-    private String materialName;
-    private String alias;
+    private final String materialName;
+    private final String alias;
 
 
     public LinkableMaterial(Material materialName, String alias) {

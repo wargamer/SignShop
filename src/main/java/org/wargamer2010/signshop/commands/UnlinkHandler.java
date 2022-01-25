@@ -16,7 +16,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import java.util.Map;
 
 public class UnlinkHandler implements ICommandHandler {
-    private static ICommandHandler instance = new UnlinkHandler();
+    private static final ICommandHandler instance = new UnlinkHandler();
 
     private UnlinkHandler() {
 

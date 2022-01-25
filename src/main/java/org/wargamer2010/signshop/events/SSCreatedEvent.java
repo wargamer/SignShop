@@ -13,14 +13,14 @@ public class SSCreatedEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
     private double fPrice;
-    private ItemStack[] isItems;
-    private List<Block> containables;
-    private List<Block> activatables;
-    private SignShopPlayer ssPlayer;
-    private Block bSign;
-    private String sOperation;
-    private Map<String, String> messageParts;
-    private Map<String, String> miscSettings;
+    private final ItemStack[] isItems;
+    private final List<Block> containables;
+    private final List<Block> activatables;
+    private final SignShopPlayer ssPlayer;
+    private final Block bSign;
+    private final String sOperation;
+    private final Map<String, String> messageParts;
+    private final Map<String, String> miscSettings;
 
 
     public SSCreatedEvent(double pPrice, ItemStack[] pItems, List<Block> pContainables, List<Block> pActivatables, SignShopPlayer pPlayer, Block pSign, String pOperation, Map<String, String> pMessageParts, Map<String, String> pMisc) {

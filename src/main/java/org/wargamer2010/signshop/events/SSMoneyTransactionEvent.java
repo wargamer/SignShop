@@ -14,16 +14,16 @@ import java.util.Map;
 public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private SignShopPlayer ssPlayer;
-    private Block bBlock = null;
-    private Seller seShop;
+    private final SignShopPlayer ssPlayer;
+    private final Block bBlock = null;
+    private final Seller seShop;
     private double fAmount;
-    private Block bSign;
-    private String sOperation;
-    private ItemStack[] isItems;
-    private boolean bLeftClicking;
-    private SSMoneyEventType meType;
-    private SSMoneyRequestType rtRequestType;
+    private final Block bSign;
+    private final String sOperation;
+    private final ItemStack[] isItems;
+    private final boolean bLeftClicking;
+    private final SSMoneyEventType meType;
+    private final SSMoneyRequestType rtRequestType;
     private boolean bHandled = false;
     private SignShopArguments ssArgs = null;
 

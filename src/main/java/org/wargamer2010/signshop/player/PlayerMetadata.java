@@ -15,8 +15,8 @@ import java.util.logging.Level;
 
 public class PlayerMetadata {
     private static final String filename = "player.db";
-    private SignShopPlayer ssPlayer;
-    private Plugin plugin;
+    private final SignShopPlayer ssPlayer;
+    private final Plugin plugin;
 
     public PlayerMetadata(SignShopPlayer pPlayer, Plugin pPlugin) {
         ssPlayer = pPlayer;
@@ -173,14 +173,14 @@ public class PlayerMetadata {
         }
     }
 
-    public boolean removeMetakeyLike(String key) {
+    public void removeMetakeyLike(String key) {
         SSDatabase metadb = new SSDatabase(filename);
         try {
             Map<Integer, Object> params = new LinkedHashMap<>();
             params.put(1, plugin.getName());
             params.put(2, ssPlayer.GetIdentifier().toString());
             params.put(3, key);
-            return (metadb.runStatement("DELETE FROM PlayerMeta WHERE Plugin = ? AND Playername = ? AND Metakey LIKE ?", params, false) != null);
+            metadb.runStatement("DELETE FROM PlayerMeta WHERE Plugin = ? AND Playername = ? AND Metakey LIKE ?", params, false);
         } finally {
             metadb.close();
         }
