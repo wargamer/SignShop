@@ -48,10 +48,8 @@ messages:
     Slot: Vous avez configuré une machine à sous à !price offrant !items.
     iBuy: Vous avez créé une vente illimitée de !items pour !price.
     iSell: Vous avez créé un achat illimité de !items pour !price.
-    gBuy: Vous avez configuré un magasin fictif vendant des !items pour !price.
-      (Notez que vous ne recevrez pas d'argent de cette boutique)
-    gSell: Vous avez configuré un achat fictif de !items pour !price. (Notez
-      que vous ne recevrez pas d'argent de cette boutique)
+    gBuy: Vous avez configuré un magasin fictif vendant des !items pour !price. (Notez que vous ne recevrez pas d'argent de cette boutique)
+    gSell: Vous avez configuré un achat fictif de !items pour !price. (Notez que vous ne recevrez pas d'argent de cette boutique)
     Day: Vous avez configuré un contrôleur de jour pour un coût de !price.
     Night: Vous avez configuré un contrôleur de nuit pour un coût de !price.
     Rain: Vous avez configuré un contrôleur de pluie pour un coût de !price.
@@ -63,8 +61,7 @@ messages:
     Heal: Vous avez configuré une station de guérison pour un coût de !price.
     Repair: Vous avez configuré une station de réparation pour un coût de !price.
     Dispose: Vous avez configuré un signe Jeter.
-    DeviceItem: Vous avez configuré un dispositif activateur temporaire pour un coût
-      de !items!
+    DeviceItem: Vous avez configuré un dispositif activateur temporaire pour un coût de !items!
     iSlot: Vous avez configuré une machine à sous illimitée offrant !items pour !price.
     Enchant: Vous avez configuré un enchanteur qui coûte !price et enchante avec !enchantements.
     iSellXP: Vous avez configuré un achat illimité de !xp au prix de !price.
@@ -181,11 +178,9 @@ errors:
   no_shop_money: Le magasin n'a pas la somme de !price pour vous payer!
   out_of_business: Cette boutique semble avoir disparu du marché!
   out_of_stock: Cette boutique est en rupture de stock!
-  overstocked: Cette boutique est surchargée, demandez au propriétaire de vider le
-    stock!
+  overstocked: Cette boutique est surchargée, demandez au propriétaire de vider le stock!
   player_doesnt_have_items: Vous n'avez pas les !items!
-  no_item_in_hand: Vous devez tenir un objet en main pour que le magasin puisse le
-    prendre!
+  no_item_in_hand: Vous devez tenir un objet en main pour que le magasin puisse le prendre!
   player_overstocked: Votre inventaire est trop plein!
   sign_location_stored: Emplacement du signe mémorisé!
   made_day: \!customer a fait apparaître le jour!
@@ -201,18 +196,14 @@ errors:
   already_full_health: Votre santé est déjà bien remplie!
   saving: Enregistrement des magasins ...
   saved: Magasins sauvegardés!
-  shop_removed: Suppression d'une boutique invalide! Il devrait être en '!world' (!x,!y,
-    !z).
+  shop_removed: Suppression d'une boutique invalide! Il devrait être en '!world' (!x,!y,!z).
   invalid_item_to_repair: Cet objet ne peut pas être réparé!
   no_item_to_repair: Vous devez tenir en main l'objet que vous voulez réparer!
   backup_fail: Échec de la sauvegarde de stockage!
-  too_far: La distance entre le signe et le coffre est trop grande. Le maximum est
-    de !Max!
-  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Le
-    maximum est de !Max!
+  too_far: La distance entre le signe et le coffre est trop grande. Le maximum est de !Max!
+  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Le maximum est de !Max!
   enchanted_not_allowed: Vous n'êtes pas autorisé à réparer des objets enchantés!
-  enchantment_missing: Au moins un objet enchanté est nécessaire, mettez en un dans
-    le(s) coffre(s)!
+  enchantment_missing: Au moins un objet enchanté est nécessaire, mettez en un dans le(s) coffre(s)!
   item_not_enchantable: L'article dans votre main n'est pas enchantable!
   no_player_xp: Vous n'avez pas assez d'expérience pour vendre (!xp)!
   no_item_to_disenchant: Vous devez tenir en main l'objet que vous voulez désenchanter!
@@ -220,46 +211,31 @@ errors:
   multiworld_not_allowed: Les magasins Multiworld ne sont pas autorisés sur ce serveur!
   no_permit_owner: Le propriétaire de cette boutique n'est plus autorisé!
   need_permit: Il faut être autorisé pour mettre en place cette boutique!
-  villager_trading_disabled: Les échanges avec les villageois ne sont pas autorisés
-    sur ce serveur!
-  not_allowed_to_link_sharesigns: Vous n'êtes pas autorisé à lier les signes partagés
-    à ce magasin!
+  villager_trading_disabled: Les échanges avec les villageois ne sont pas autorisés sur ce serveur!
+  not_allowed_to_link_sharesigns: Vous n'êtes pas autorisé à lier les signes partagés à ce magasin!
   no_shop_linked_to_sharesign: Ce signe Partagez n'a pas été lié à tous les magasins!
-  share_sign_splits_profit: Ce signe se partage les bénéfices entre les !profits pour
-    la boutique (s) à !profitshops!
-  registered_share_sign: Pour inscrire le signe Partager, cliquer sur le signe magasin
-    le plus proche!
+  share_sign_splits_profit: Ce signe se partage les bénéfices entre les !profits pour la boutique (s) à !profitshops!
+  registered_share_sign: Pour inscrire le signe Partager, cliquer sur le signe magasin le plus proche!
   unlinked_share_sign: Signe Partager délié de la boutique!
   linked_share_sign: Signe Partager lié à la boutique avec succès!
-  not_allowed_to_link_restrictedsigns: Vous n'êtes pas autorisé à lier signes affectés
-    à ce magasin!
-  no_shop_linked_to_restrictedsign: Ce signe restreint n'a pas été lié à tous les
-    magasins!
-  registered_restricted_sign: Inscrit le signe restreint, s'il vous plaît cliquer
-    sur le signe magasin le plus proche!
+  not_allowed_to_link_restrictedsigns: Vous n'êtes pas autorisé à lier signes affectés à ce magasin!
+  no_shop_linked_to_restrictedsign: Ce signe restreint n'a pas été lié à tous les magasins!
+  registered_restricted_sign: Inscrit le signe restreint, s'il vous plaît cliquer sur le signe magasin le plus proche!
   unlinked_restricted_sign: Le signe restreint à été délié!
   linked_restricted_sign: Signe Restreint lié à la boutique avec succès!
-  restricted_sign_restricts: Ce signe Restreint limite l'utilisation de la boutique(s)
-    à !restrictedshops!
+  restricted_sign_restricts: Ce signe Restreint limite l'utilisation de la boutique(s) à !restrictedshops!
   towny_insufficient_funds: Manque de fonds dans le compte de la boutique!
-  towny_owner_not_mayor_or_assistant: Le propriétaire de la boutique n'est pas maire
-    ou adjoint d'une ville!
-  towny_owner_not_belong_to_town: Le propriétaire du magasin ne devrait pas appartenir
-    à une ville!
-  towny_bank_withdrawls_not_allowed: La configuration actuelle de Towny ne permet
-    pas des retraits bancaires!
+  towny_owner_not_mayor_or_assistant: Le propriétaire de la boutique n'est pas maire ou adjoint d'une ville!
+  towny_owner_not_belong_to_town: Le propriétaire du magasin ne devrait pas appartenir à une ville!
+  towny_bank_withdrawls_not_allowed: La configuration actuelle de Towny ne permet pas des retraits bancaires!
   restricted_from_using: Vous êtes limité dans l'utilisation de ce magasin!
-  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique car
-    vous êtes le propriétaire!
-  item_on_blacklist: L'article !blacklisted_item est sur LISTE NOIRE et ne peut donc
-    pas être utilisé!
-  item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais
-    vous êtes OP!
+  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique car vous êtes le propriétaire!
+  item_on_blacklist: L'article !blacklisted_item est sur LISTE NOIRE et ne peut donc pas être utilisé!
+  item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais vous êtes OP!
   shop_contains: Ce magasin contient !shopinventory @ !items pour !price!
   removed_location: Emplacement supprimé!
   stored_location: Emplacement de !block enregistré!
   stored_location_containable: Emplacement de !block contenant !items enregistré!
-  failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur
-    ci-haut!
-  price_drawn_from_essentials: Veuillez noter que le prix est fourni par le gestionnaire
-    d'économie Essentials. Il est donc variable.
+  failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur ci-haut!
+  price_drawn_from_essentials: Veuillez noter que le prix est fourni par le gestionnaire d'économie Essentials. Il est donc variable.
+  shop_on_cooldown: Ce magasin termine une transaction. Veuillez patienter !cooldownleft secondes.
