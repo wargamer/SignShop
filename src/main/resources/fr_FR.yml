@@ -1,8 +1,11 @@
+ 
 signs:
+  Réparer: Repair
+  Éliminer: Dispose
+  Désenchanter: Disenchant
   Acheter: Buy
   Vendre: Sell
   Donner: Donate
-  DonnerPaume: DonateHand
   Sous: Slot
   iAcheter: iBuy
   gVendre: gSell
@@ -10,29 +13,26 @@ signs:
   Nuit: Night
   Pluie: Rain
   CielClair: ClearSkies
-  AppareilSur: DeviceOn
-  AppareilVide: DeviceOff
+  AppareilOn: DeviceOn
+  AppareilOff: DeviceOff
   Toggle: Toggle
+  Basculer: Toggle
   Appareil: Device
-  Heal: Heal
-  Réparation: Repair
-  Éliminer: Dispose
+  Guérir: Heal
+  Jeter: Dispose
   AppareilItem: DeviceItem
   iSous: iSlot
-  Enchant: Enchant
+  Enchanter: Enchant
   iAcheterXP: iBuyXP
   iVendreXP: iSellXP
   iTroquer: iTrade
   TpToOwner: TpToOwner
   Classe: Class
-  Désenchant: Disenchant
   Commande: Command
   Partager: Share
   Restreint: Restricted
   iVendre: iSell
-  Sante: Heal
-  Achat: Buy
-  Vente: Sell
+  Santé: Heal
   Acces: Device
   AccesMagasins: Device
   AcheterXP: iBuyXP
@@ -41,196 +41,225 @@ signs:
   Slot: Slot
 messages:
   setup:
-    Buy: Vous avez mis !items en vente au prix de !price! cr\xe9dits
-    Sell: Vous avez mis en vente !items pour !price cr\xe9dits !
-    Donate: Vous avez configur\xe9 une boite de dons pour !items!
-    DonateHand: Vous avez configur\xe9 une bo\xeete de dons pour tous les  types d'\xe9l\xe9ments
-    Slot: Vous avez configur\xe9 une offre de !price cr\xe9dits pour cette boutique !items
-    iBuy: Vous avez cr\xe9\xe9 un achat illimit\xe9 de !price cr\xe9dits pour !items
-    iSell: Vous avez cr\xe9\xe9 une vente illimit\xe9 de !price cr\xe9dits pour !items cr\xe9dits
-    gBuy: Vous avez configur\xe9 un magasin vendant des !items pour !price cr\xe9dits (Notez que vous ne recevrez pas d'argent de cette boutique)
-    gSell: Vous avez configur\xe9 un achat fictifs !items pour !price cr\xe9dits (Notez que vous ne recevrez pas d'argent de cette boutique)
-    Day: Vous avez configur\xe9 un contr\xf4leur de jour pour un co\xfbt de !price cr\xe9dits
-    Night: Vous avez configur\xe9 un contr\xf4leur de nuit pour un co\xfbt de !price cr\xe9dits
-    Rain: Vous avez configur\xe9 un contr\xf4leur de pluie pour un co\xfbt de !price cr\xe9dits
-    ClearSkies: Vous avez configur\xe9 un contr\xf4leur de temps clair pour  co\xfbt de !price cr\xe9dits
-    DeviceOn: Vous avez configur\xe9 un dispositif activateur pour un co\xfbt de !price cr\xe9dits
-    DeviceOff: Vous avez configur\xe9 un dispositif d\xe9sactivateur pour un co\xfbt de !price cr\xe9dits
-    Toggle: Vous avez configur\xe9 un dispositif toggler que les co\xfbts de !price cr\xe9dits
-    Device: Vous avez configur\xe9 un dispositif temporaire activateur que les co\xfbts de !price cr\xe9dits
-    Heal: Vous avez configur\xe9 une station de gu\xe9rison que les co\xfbts de !price cr\xe9dits
-    Repair: Vous avez configur\xe9 une station de r\xe9paration que les co\xfbts de !price cr\xe9dits
-    Dispose: Vous avez configur\xe9 un signe Dispose
-    DeviceItem: Vous avez configur\xe9 un dispositif temporaire activateur !items que les co\xfbts!
-    iSlot: Vous avez configur\xe9 une offre de !price cr\xe9dits pour machine \xe0 sous infini !items
-    Enchant: Vous avez configur\xe9 un enchanteur qui co\xfbt !price et enchante avec !enchantements!
-    iSellXP: Vous avez mis une prime de !price pour !xp XP
-    iBuyXP: Vous avez mis !xp XP en vente au prix de !price
-    iTrade: Vous avez configur\xe9 une boutique de commerce qui co\xfbte !chest1 pour !chest2!
-    TpToOwner: Vous avez configur\xe9 une commande qui t\xe9l\xe9porte au propri\xe9taire pour le !price
-    Class: Vous avez configur\xe9 une boutique pour vendre un ensemble d'article pour !price cr\xe9dits
-    Disenchant: Vous avez configur\xe9 un panneau qui \xe9limine les enchantements pour !price cr\xe9dits
-    Command: Vous avez cr\xe9\xe9 un panneau qui ex\xe9cute des commandes pour !price cr\xe9dits
+    Buy: Vous avez mis !items en vente au prix de !price.
+    Sell: Vous achetez maintenant !items pour !price.
+    Donate: Vous avez configuré une boite de dons pour !items.
+    DonateHand: Vous avez configuré une boîte de dons pour tous les types d'éléments.
+    Slot: Vous avez configuré une machine à sous à !price offrant !items.
+    iBuy: Vous avez créé une vente illimitée de !items pour !price.
+    iSell: Vous avez créé un achat illimité de !items pour !price.
+    gBuy: Vous avez configuré un magasin fictif vendant des !items pour !price.
+      (Notez que vous ne recevrez pas d'argent de cette boutique)
+    gSell: Vous avez configuré un achat fictif de !items pour !price. (Notez
+      que vous ne recevrez pas d'argent de cette boutique)
+    Day: Vous avez configuré un contrôleur de jour pour un coût de !price.
+    Night: Vous avez configuré un contrôleur de nuit pour un coût de !price.
+    Rain: Vous avez configuré un contrôleur de pluie pour un coût de !price.
+    ClearSkies: Vous avez configuré un contrôleur de temps clair pour un coût de !price.
+    DeviceOn: Vous avez configuré un dispositif activateur pour un coût de !price.
+    DeviceOff: Vous avez configuré un dispositif désactivateur pour un coût de !price.
+    Toggle: Vous avez configuré un dispositif bascule pour un coût de !price.
+    Device: Vous avez configuré un dispositif activateur temporaire pour un coût de !price.
+    Heal: Vous avez configuré une station de guérison pour un coût de !price.
+    Repair: Vous avez configuré une station de réparation pour un coût de !price.
+    Dispose: Vous avez configuré un signe Jeter.
+    DeviceItem: Vous avez configuré un dispositif activateur temporaire pour un coût
+      de !items!
+    iSlot: Vous avez configuré une machine à sous illimitée offrant !items pour !price.
+    Enchant: Vous avez configuré un enchanteur qui coûte !price et enchante avec !enchantements.
+    iSellXP: Vous avez configuré un achat illimité de !xp au prix de !price.
+    iBuyXP: Vous avez configuré une vente illimitée de !xp XP au prix de !price.
+    iTrade: Vous avez configuré une boutique de commerce qui coûte !chest1 pour !chest2.
+    TpToOwner: Vous avez configuré une commande qui téléporte au propriétaire pour !price.
+    Class: Vous avez configuré une boutique pour vendre un ensemble d'articles pour !price.
+    Disenchant: Vous avez configuré un panneau qui élimine les enchantements pour !price.
+    Command: Vous avez créé un panneau qui exécute des commandes pour !price.
   confirm:
-    Buy: Acheter !items pour !price cr\xe9dits?
-    Sell: Vendre !items pour un montant de !price cr\xe9dits?
+    Disenchant: Retirer les enchantements de l'objet dans votre main pour !price?
+    Buy: Acheter !items pour !price?
+    Sell: Vendre !items pour un montant de !price?
     Donate: Donner !items?
     DonateHand: Donner !items?
-    Slot: Jouer \xe0 cette machine \xe0 sous pour !price cr\xe9dits?
-    Emplacement: Jouez \xe0 cette machine \xe0 sous pour le !price cr\xe9dits?
-    Redstone: Activer cet appareil pour !price cr\xe9dits?
-    iBuy: Acheter !items pour !price! cr\xe9dits?
-    iSell: Vendre des objets pour !price cr\xe9dits?
-    gBuy: Acheter !items pour !price! cr\xe9dits?
-    gSell: Vendre !items pour un montant de !price cr\xe9dits?
-    Day: Mettre le jour pour !price cr\xe9dits?
-    Night: Mettre la nuit pour !price cr\xe9dits?
-    Rain: Faire tomber la pluie pour !price cr\xe9dits?
-    ClearSkies: Eclaircir le ciel pour !price cr\xe9dits?
-    DeviceOn: Activer pour !price cr\xe9dits?
-    DeviceOff: D\xe9sactiver pour !price cr\xe9dits?
-    Toggle: Activer pour !price cr\xe9dits?
-    Device: Activer temporairement ce dispositif pour !price cr\xe9dits?
-    Heal: Vous gu\xe9rir pour !price cr\xe9dits?
-    Repair: R\xe9paration de l'objet tenu dans la main pour !price cr\xe9dits?
+    Slot: Jouer à cette machine à sous pour !price?
+    Redstone: Activer cet appareil pour !price?
+    iBuy: Acheter !items pour !price!?
+    iSell: Vendre des objets pour !price?
+    gBuy: Acheter !items pour !price!?
+    gSell: Vendre !items pour un montant de !price?
+    Day: Mettre le jour pour !price?
+    Night: Mettre la nuit pour !price?
+    Rain: Faire tomber la pluie pour !price?
+    ClearSkies: Eclaircir le ciel pour !price?
+    DeviceOn: Activer pour !price?
+    DeviceOff: Désactiver pour !price?
+    Toggle: Activer pour !price?
+    Device: Activer temporairement ce dispositif pour !price?
+    Heal: Vous guérir pour !price?
+    Repair: Réparation de l'objet tenu dans la main pour !price?
     Jeter: Jeter les !items?
     DeviceItem: Temporairement activer ce dispositif des !items?
-    iSlot: Jouez \xe0 cette machine \xe0 sous pour !price cr\xe9dits?
-    Enchant: Enchanter cet objet pour !price! cr\xe9dits?
-    iSellXP: Vendre !xp niveau(x) d'exp\xe9rience pour !price cr\xe9dits?
-    iBuyXP: Acheter !xp d'exp\xe9rience pour !price cr\xe9dits?
+    iSlot: Jouer à cette machine à sous pour !price?
+    Enchant: Enchanter cet objet pour !price!?
+    iSellXP: Vendre !xp niveau(x) d'expérience pour !price?
+    iBuyXP: Acheter !xp d'expérience pour !price?
     iTrade: Achat !chest2 avec !chest1?
-    TpToOwner: T\xe9l\xe9portation vers le propri\xe9taire pour !price c\xe9dits?
-    Class: Acheter cet ensemble d'\xe9l\xe9ment (!items) pour !price cr\xe9dits?
-    D\xe9senchanter: Retirer les enchantements de l'objet dans votre main pour le !price cr\xe9dits?
-    Command: Ex\xe9cutez les commandes sur ce signe pour le !price cr\xe9dits?
+    TpToOwner: Téléportation vers le propriétaire pour !price?
+    Class: Acheter cet ensemble d'élément (!items) pour !price?
+    Command: Exécute les commandes sur ce signe pour !price?
   transaction:
-    Buy: Vous avez achet\xe9 !items pour !price cr\xe9dits !
-    Sell: Vous avez vendu !items pour !price cr\xe9dits !
-    Donate: Vous avez donn\xe9 des objets!!
-    DonateHand: Vous avez donn\xe9 des objets!
-    Slot: Vous avez gagn\xe9 !items
-    Redstone: Dispositif activ\xe9 pour !price cr\xe9dits
-    iBuy: Vous avez achet\xe9 !items pour !price cr\xe9dits!
-    iSell: Vous avez vendu !items pour !price cr\xe9dits!
-    gBuy: Vous avez achet\xe9 !items pour !price cr\xe9dits!
-    gSell: Vous avez vendu !items pour !price cr\xe9dits!
-    Day: Vous avez fait lever le soleil pour !price cr\xe9dits
-    Night: Vous avez fait coucher le soleil pour !price cr\xe9dits
-    Rain: Vous avez fait pleuvoir pour !price cr\xe9dits
-    ClearSkies: Vous avez fait s'\xe9claircir le ciel pour !price cr\xe9dits
-    DeviceOn: Vous avez activ\xe9 ce dispositif pour !price cr\xe9dits
-    DeviceOff: Vous avez d\xe9sactiv\xe9 ce dispositif pour !price cr\xe9dits
-    Toggle: Vous bascul\xe9 cet appareil pour !price cr\xe9dits
-    Device: Vous avez temporairement activ\xe9 ce dispositif pour !price cr\xe9dits
-    Heal: Vous vous \xeates gu\xe9ri pour !price cr\xe9dits
-    R\xe9paration: Vous avez r\xe9par\xe9 un \xe9l\xe9ment pour !price cr\xe9dits
-    Dispose: Vous avez dispos\xe9 d'\xe9l\xe9ments!
-    DeviceItem: Vous avez temporairement activ\xe9 le dispositif des !items
-    iSlot: Vous avez gagn\xe9 !items
-    Enchant: Vous avez enchant\xe9 votre objet pour !price cr\xe9dits!
-    iSellXP: Vous avez vendu !xp d'exp\xe9rience pour !price cr\xe9dits
-    iBuyXP: Vous avez achet\xe9 !xp d'exp\xe9rience pour !price cr\xe9\dits
-    iTrade: \xc3\u2030chang\xe9 !chest1 pour !chest2!
-    TpToOwner: Vous t\xe9l\xe9porte au !owner pour le !price cr\xe9dits
-    Class: Vous avez achet\xe9 l'ensemble contenant les articles !items pour !price cr\xe9dits
-    Disenchant: Vous avez retir\xe9 les enchantements sur l'objet dans votre main pour !price cr\xe9dits
-    Command: Vous ex\xe9cutez les commandes du panneau pour !price cr\xe9\dits
+    Repair: Vous avez réparé un élément pour !price
+    Buy: Vous avez acheté !items pour !price!
+    Sell: Vous avez vendu !items pour !price!
+    Donate: Vous avez donné des objets!
+    DonateHand: Vous avez donné des objets!
+    Slot: Vous avez gagné !items!
+    Redstone: Dispositif activé pour !price!
+    iBuy: Vous avez acheté !items pour !price!
+    iSell: Vous avez vendu !items pour !price!
+    gBuy: Vous avez acheté !items pour !price!
+    gSell: Vous avez vendu !items pour !price!
+    Day: Vous avez fait lever le soleil pour !price!
+    Night: Vous avez fait coucher le soleil pour !price!
+    Rain: Vous avez fait pleuvoir pour !price!
+    ClearSkies: Vous avez fait s'éclaircir le ciel pour !price!
+    DeviceOn: Vous avez activé ce dispositif pour !price!
+    DeviceOff: Vous avez désactivé ce dispositif pour !price!
+    Toggle: Vous avez basculé cet appareil pour !price!
+    Device: Vous avez temporairement activé ce dispositif pour !price!
+    Heal: Vous vous êtes guéri pour !price!
+    Dispose: Vous avez jeté des éléments!
+    DeviceItem: Vous avez temporairement activé le dispositif des !items !
+    iSlot: Vous avez gagné !items !
+    Enchant: Vous avez enchanté votre objet pour !price!
+    iSellXP: Vous avez vendu !xp points d'expérience pour !price!
+    iBuyXP: Vous avez acheté !xp points d'expérience pour !price!
+    iTrade: Vous avez échangé !chest1 pour !chest2!
+    TpToOwner: Vous serez téléporté au propriétaire !owner pour !price!
+    Class: Vous avez acheté l'ensemble contenant les articles !items pour !price!
+    Disenchant: Vous avez retiré les enchantements sur l'objet dans votre main pour !price!
+    Command: Vous exécutez les commandes du panneau pour !price!
   transaction_owner:
-    Buy: \!customer vous a achet\xe9 !items pour !price cr\xe9dits!
-    Sell: \!customer vous a vendu des !items pour !price cr\xe9dits!
+    Heal: \!customer s'est guéri à votre station pour !price!
+    Repair: \!customer a réparé un article à votre station pour !price!
+    Buy: \!customer vous a acheté !items pour !price!
+    Sell: \!customer vous a vendu des !items pour !price!
     Donate: \!customer vous a fait don d'!items!
-    DonateHand: \!customer vous a fait don d'!items!
-    Slot: \!customer a jou\xe9 sur une machine \xe0 sous pour !price cr\xe9dits et gagn\xe9 !items!
-    Emplacement: \!customer a jou\xe9 sur une machine \xe0 sous pour !price cr\xe9dits et a remport\xe9 !items
-    Redstone: \!customer a activ\xe9 votre machine \xe0 redstone pour !price cr\xe9dits
+    DonateHand: \!customer vous a fait don de !items!
+    Slot: \!customer a joué sur une machine à sous pour !price et a remporté !items!
+    Redstone: \!customer a activé votre machine à redstone pour !price!
     iBuy: ''
     iSell: ''
-    gBuy: \!customer a achet\xe9 des !items de votre boutique fant\xf4me!
-    gSell: \!customer a vendu des !items \xe0 votre magasin fant\xf4me!
-    Day: \!customer a mis le jour pour !price cr\xe9dits
-    Night: \!customer a mis la nuit pour !price cr\xe9dits
-    Rain: \!customer a fait pleuvoir pour !price cr\xe9dits
-    ClearSkies: \!customer \xe0 \xe9claircie le ciel pour le !price cr\xe9dits
-    DeviceOn: \!customer a activ\xe9 votre appareil pour !price cr\xe9dits
-    DeviceOff: \!customer a d\xe9sactiv\xe9 votre appareil pour !price cr\xe9dits
-    Basculez: \!customer a bascul\xe9 votre appareil pour !price cr\xe9dits
-    Device: \!customer a activ\xe9 temporairement votre appareil pour !price cr\xe9dits
-    Gu\xe9rir: \!customer s'est gu\xe9ri \xe0 votre station pour !price cr\xe9dits
-    R\xe9paration: \!customer a r\xe9par\xe9 un article \xe0 votre station pour !price cr\xe9dits
+    gBuy: \!customer a acheté des !items de votre boutique fictive!
+    gSell: \!customer a vendu des !items à votre magasin fictive!
+    Day: \!customer a mis le jour pour !price!
+    Night: \!customer a mis la nuit pour !price!
+    Rain: \!customer a fait pleuvoir pour !price!
+    ClearSkies: \!customer a éclairci le ciel pour !price!
+    DeviceOn: \!customer a activé votre appareil pour !price!
+    DeviceOff: \!customer a désactivé votre appareil pour !price!
+    Toggle: \!customer a basculé votre appareil pour !price!
+    Device: \!customer a activé temporairement votre appareil pour !price!
     Dispose: ''
-    DeviceItem: \!customer a activ\xe9 temporairement votre appareil des !items
+    DeviceItem: \!customer a activé temporairement votre appareil des !items!
     iSlot: ''
-    Enchant: \!customer a enchant\xe9 son article avec des enchantements pour !price cr\xe9dits!
+    Enchant: \!customer a enchanté son article avec des enchantements pour !price!
     iSellXP: ''
     iBuyXP: ''
     iTrade: ''
-    TpToOwner: \!customer s'est t\xe9l\xe9port\xe9 jusqu'\xe0 vous pour !price cr\xe9dits
+    TpToOwner: \!customer s'est téléporté jusqu'à vous pour !price!
     Class: ''
     Disenchant: ''
     Command: ''
 errors:
-  no_permission: Vous n'avez pas la permission de cr\xe9er ce signe!
+  no_permission: Vous n'avez pas la permission de créer ce signe!
   no_permission_use: Vous n'avez pas la permission d'utiliser ce signe!
-  invalid_operation: Le signe sur lequel vous avez cliqu\xe9 n'est pas valide!
+  invalid_operation: Le signe sur lequel vous avez cliqué n'est pas valide!
   chest_empty: Le magasin est vide!
   chest_missing: Vous devez lier au moins un coffre avec ce magasin!
   lever_missing: Vous devez lier au moins un levier pour ce magasin!
-  no_player_money: Vous n'avez pas assez d'argent pour payer ce prix (!price cr\xe9dits)!
-  no_shop_money: Le magasin n'a pas la somme de !price cr\xe9dits pour vous payer!
-  out_of_business: Cette boutique semble avoir disparu du march\xe9!
+  no_player_money: Vous n'avez pas assez d'argent pour effectuer cet achat (!price)!
+  no_shop_money: Le magasin n'a pas la somme de !price pour vous payer!
+  out_of_business: Cette boutique semble avoir disparu du marché!
   out_of_stock: Cette boutique est en rupture de stock!
-  overstocked: Cette boutique est surcharg\xe9, demandez au propri\xe9taire de vider le stock!
-  player_doesnt_have_items: Vous n'avez pas les !items
-  no_item_in_hand: Vous devez tenir un objet en main pour que le magasin puisse le prendre.!
+  overstocked: Cette boutique est surchargée, demandez au propriétaire de vider le
+    stock!
+  player_doesnt_have_items: Vous n'avez pas les !items!
+  no_item_in_hand: Vous devez tenir un objet en main pour que le magasin puisse le
+    prendre!
   player_overstocked: Votre inventaire est trop plein!
-  sign_location_stored: Connexion emplacement m\xe9moris\xe9!
-  made_day: \!customer a fait appara\xeetre le jour!
-  made_night: \!customer a fait appara\xeetre la nuit!
+  sign_location_stored: Emplacement du signe mémorisé!
+  made_day: \!customer a fait apparaître le jour!
+  made_night: \!customer a fait apparaître la nuit!
   made_rain: \!customer a fait pleuvoir!
-  made_clear_skies: \!customer a \xe9claici le ciel !
-  already_on: Le p\xe9riph\xe9rique est d\xe9j\xe0 activ\xe9.
-  already_off: Le p\xe9riph\xe9rique est d\xe9j\xe0 \xe9teint.
-  link_notallowed: Vous n'\xeates pas autoris\xe9 \xe0 \xe9ffectuer le lien!
-  item_already_repair: C'est article est d\xe9j\xe0 enti\xc3\xa8rement r\xe9par\xe9!
-  already_raining: Il est d\xe9j\xe0 prise d'assaut!
-  already_clear_skies: Le ciel est d\xe9j\xe0 clair!
-  already_full_health: Votre sant\xe9 est d\xe9j\xe0 bien rempli!
-  saving: Enregistrement magasins ...
-  saved: Magasins sauv\xe9!
-  shop_removed: Suppression d'une boutique invalide! Il devrait \xeatre en '!world' (!x,!y, !z).
-  invalid_item_to_repair: Cet objet ne peut pas \xeatre r\xe9par\xe9!
-  no_item_to_repair: Vous devez tenir en main l'objet que vous voulez r\xe9parer! ;-)
-  backup_fail: \xe9chec de la sauvegarde de stockage!
-  too_far: La distance entre le signe et le coffre est trop grand. Le maximum est de !Max.
-  too_many_shops: Vous avez atteint la quantit\xe9 maximale de magasins autoris\xe9s. Le maximum est de !Max.
-  enchanted_not_allowed: Vous n'\xeates pas autoris\xe9 \xe0 r\xe9parer des objets enchant\xe9s.
-  enchantment_missing: Au moins un objet enchant\xe9 est n\xe9cessaire, mettez en un dans le coffre(s)!
+  made_clear_skies: \!customer a éclaici le ciel!
+  already_on: Le périphérique est déjà activé!
+  already_off: Le périphérique est déjà éteint!
+  link_notallowed: Vous n'êtes pas autorisé à effectuer le lien!
+  item_already_repair: C'est article est déjà entièrement réparé!
+  already_raining: Il pleut déjà!
+  already_clear_skies: Le ciel est déjà clair!
+  already_full_health: Votre santé est déjà bien remplie!
+  saving: Enregistrement des magasins ...
+  saved: Magasins sauvegardés!
+  shop_removed: Suppression d'une boutique invalide! Il devrait être en '!world' (!x,!y,
+    !z).
+  invalid_item_to_repair: Cet objet ne peut pas être réparé!
+  no_item_to_repair: Vous devez tenir en main l'objet que vous voulez réparer!
+  backup_fail: Échec de la sauvegarde de stockage!
+  too_far: La distance entre le signe et le coffre est trop grande. Le maximum est
+    de !Max!
+  too_many_shops: Vous avez atteint la quantité maximale de magasins autorisés. Le
+    maximum est de !Max!
+  enchanted_not_allowed: Vous n'êtes pas autorisé à réparer des objets enchantés!
+  enchantment_missing: Au moins un objet enchanté est nécessaire, mettez en un dans
+    le(s) coffre(s)!
   item_not_enchantable: L'article dans votre main n'est pas enchantable!
-  no_player_xp: Vous n'avez pas assez d'exp\xe9rience pour vendre (!xp)!
-  no_item_to_disenchant: Vous devez tenir en main l'objet que vous voulez d\xe9senchanter!
-  nothing_to_disenchant: Cet objet ne peut pas \xeatre d\xe9senchant\xe9!
-  multiworld_not_allowed: Multiworld magasins ne sont pas autoris\xe9s sur ce serveur!
-  no_permit_owner: Le propri\xe9taire de cette boutique n'est plus autoris\xe9!
-  need_permit: Il faut \xeatre autoris\xe9 pour mettre en place cette boutique!
-  villager_trading_disabled: Les \xe9changes avec les villageois ne sont pas autos\xe9s sur ce serveur!
-  not_allowed_to_link_sharesigns: Vous n'\xeates pas autoris\xe9 \xe0 lier les signes partag\xe9s \xe0 ce magasin!
-  no_shop_linked_to_sharesign: Ce signe Partagez n'a pas \xe9t\xe9 li\xe9 \xe0 tous les magasins.
-  share_sign_splits_profit: Ce signe se partage les b\xe9n\xe9fices entre les !profits pour la boutique (s) \xe0 !profitshops!
-  registered_share_sign: Inscrit le signe Partager, s'il vous pla\xeet cliquer sur le signe magasin le plus proche.
-  unlinked_share_sign: Signe Partager D\xe9li\xe9 de la boutique.
-  linked_share_sign: Signe Partager avec succ\xc3\xa8s li\xe9s \xe0 la boutique.
-  not_allowed_to_link_restrictedsigns: Vous n'\xeates pas autoris\xe9 \xe0 lier signes affect\xe9s \xe0 ce magasin!
-  no_shop_linked_to_restrictedsign: Ce signe restreint n'a pas \xe9t\xe9\ li\xe9 \xe0 tous les magasins.
-  registered_restricted_sign: Inscrit le signe restreint, s'il vous pla\xeet cliquer sur le signe magasin le plus proche.
-  unlinked_restricted_sign: Le signe restreint \xe0 \xe9t\xe9 d\xe9li\xe9.
-  linked_restricted_sign: succ\xc3\xa8s li\xe9s signe R\xe9serv\xe9 \xe0 la boutique.
-  restricted_sign_restricts: Ce signe restreint limite l'utilisation de la boutique(s) \xe0 restrictedshops!
-  towny_insufficient_funds: Le manque de fonds dans le compte de boutique!
-  towny_owner_not_mayor_or_assistant: Le propri\xe9taire de la boutique n'est pas un maire ou d'adjoint d'une ville.
-  towny_owner_not_belong_to_town: Le propri\xe9taire du magasin ne devrait pas appartenir \xe0 une ville.
-  towny_bank_withdrawls_not_allowed: La configuration actuelle ne permet pas Towny retraits bancaires!
-  restricted_from_using: Vous \xeates limit\xe9 dans l'utilisation de ce magasin!
-  restricted_but_owner: Vous n'\xeates pas limit\xe9 \xe0 l'utilisation de cette boutique car vous \xeates le propri\xe9taire.
-  item_on_blacklist: L'article !blacklisted_item est sur LISTE NOIRE et ne peut donc pas \xeatre utilis\xe9.
-  item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais vous \xeates OP.
+  no_player_xp: Vous n'avez pas assez d'expérience pour vendre (!xp)!
+  no_item_to_disenchant: Vous devez tenir en main l'objet que vous voulez désenchanter!
+  nothing_to_disenchant: Cet objet ne peut pas être désenchanté!
+  multiworld_not_allowed: Les magasins Multiworld ne sont pas autorisés sur ce serveur!
+  no_permit_owner: Le propriétaire de cette boutique n'est plus autorisé!
+  need_permit: Il faut être autorisé pour mettre en place cette boutique!
+  villager_trading_disabled: Les échanges avec les villageois ne sont pas autorisés
+    sur ce serveur!
+  not_allowed_to_link_sharesigns: Vous n'êtes pas autorisé à lier les signes partagés
+    à ce magasin!
+  no_shop_linked_to_sharesign: Ce signe Partagez n'a pas été lié à tous les magasins!
+  share_sign_splits_profit: Ce signe se partage les bénéfices entre les !profits pour
+    la boutique (s) à !profitshops!
+  registered_share_sign: Pour inscrire le signe Partager, cliquer sur le signe magasin
+    le plus proche!
+  unlinked_share_sign: Signe Partager délié de la boutique!
+  linked_share_sign: Signe Partager lié à la boutique avec succès!
+  not_allowed_to_link_restrictedsigns: Vous n'êtes pas autorisé à lier signes affectés
+    à ce magasin!
+  no_shop_linked_to_restrictedsign: Ce signe restreint n'a pas été lié à tous les
+    magasins!
+  registered_restricted_sign: Inscrit le signe restreint, s'il vous plaît cliquer
+    sur le signe magasin le plus proche!
+  unlinked_restricted_sign: Le signe restreint à été délié!
+  linked_restricted_sign: Signe Restreint lié à la boutique avec succès!
+  restricted_sign_restricts: Ce signe Restreint limite l'utilisation de la boutique(s)
+    à !restrictedshops!
+  towny_insufficient_funds: Manque de fonds dans le compte de la boutique!
+  towny_owner_not_mayor_or_assistant: Le propriétaire de la boutique n'est pas maire
+    ou adjoint d'une ville!
+  towny_owner_not_belong_to_town: Le propriétaire du magasin ne devrait pas appartenir
+    à une ville!
+  towny_bank_withdrawls_not_allowed: La configuration actuelle de Towny ne permet
+    pas des retraits bancaires!
+  restricted_from_using: Vous êtes limité dans l'utilisation de ce magasin!
+  restricted_but_owner: Vous n'êtes pas limité à l'utilisation de cette boutique car
+    vous êtes le propriétaire!
+  item_on_blacklist: L'article !blacklisted_item est sur LISTE NOIRE et ne peut donc
+    pas être utilisé!
+  item_on_blacklist_but_op: L'article !blacklisted_item est sur LISTE NOIRE, mais
+    vous êtes OP!
+  shop_contains: Ce magasin contient !shopinventory @ !items pour !price!
+  removed_location: Emplacement supprimé!
+  stored_location: Emplacement de !block enregistré!
+  stored_location_containable: Emplacement de !block contenant !items enregistré!
+  failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur
+    ci-haut!
+  price_drawn_from_essentials: Veuillez noter que le prix est fourni par le gestionnaire
+    d'économie Essentials. Il est donc variable.
