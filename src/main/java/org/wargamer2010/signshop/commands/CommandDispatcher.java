@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CommandDispatcher {
-    private Map<String, ICommandHandler> handlers = new LinkedHashMap<>();
+    private final Map<String, ICommandHandler> handlers = new LinkedHashMap<>();
 
     public synchronized void registerHandler(String commandName, ICommandHandler handler) {
         handlers.put(commandName, handler);

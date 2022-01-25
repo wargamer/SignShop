@@ -11,7 +11,6 @@ import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -130,8 +129,7 @@ public class SignShopPlayer {
             OfflinePlayer player = playerId.getOfflinePlayer();
             if (player != null)
                 player.setOp(OP);
-        }
-        else {
+        } else {
             getPlayer().setOp(OP);
         }
     }
@@ -159,8 +157,7 @@ public class SignShopPlayer {
         if (getPlayer() == null) {
             OfflinePlayer offplayer = playerId.getOfflinePlayer();
             return offplayer != null && offplayer.isOp();
-        }
-        else
+        } else
             return getPlayer().isOp();
     }
 
@@ -203,8 +200,7 @@ public class SignShopPlayer {
             setOp(isOP);
             return true;
             // Not using Permissions but he is OP, so he's allowed
-        }
-        else if (!SignShop.usePermissions() && isOP)
+        } else if (!SignShop.usePermissions() && isOP)
             return true;
             // Not using Permissions, he doesn't have OP but it's not an OP Operation
         else if (!SignShop.usePermissions() && !OPOperation)
@@ -256,8 +252,7 @@ public class SignShopPlayer {
         if (response.type == EconomyResponse.ResponseType.SUCCESS) {
             response = Vault.getEconomy().withdrawPlayer(getOfflinePlayer(), subtract);
             return response.type != EconomyResponse.ResponseType.SUCCESS;
-        }
-        else {
+        } else {
             return true;
         }
     }

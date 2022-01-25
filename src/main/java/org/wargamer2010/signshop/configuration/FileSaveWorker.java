@@ -13,7 +13,7 @@ public class FileSaveWorker extends BukkitRunnable {
 
     File ymlfile;
     String fileName;
-    private LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
+    private final LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
 
     public FileSaveWorker(File ymlfile) {
         this.ymlfile = ymlfile;
@@ -55,6 +55,7 @@ public class FileSaveWorker extends BukkitRunnable {
 
             int count = 0;
             while (!this.isCancelled() && count < 1000) {
+                //noinspection BusyWait
                 Thread.sleep(1);
                 count++;
             }

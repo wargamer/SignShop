@@ -9,7 +9,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import java.util.*;
 
 public class HelpHandler implements ICommandHandler {
-    private static ICommandHandler instance = new HelpHandler();
+    private static final ICommandHandler instance = new HelpHandler();
 
     private HelpHandler() {
 

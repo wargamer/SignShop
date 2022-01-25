@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
+import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -26,19 +27,19 @@ public class SignShopArguments implements IMessagePartContainer {
     public boolean bDoNotClearClickmap = false;
     public boolean bPriceModApplied = false;
     public boolean bRunCommandAsUser = false;
-    private SignShopArgument<Double> fPrice = new SignShopArgument<>(this);
-    private SignShopArgument<List<Block>> containables = new SignShopArgument<>(this);
-    private SignShopArgument<List<Block>> activatables = new SignShopArgument<>(this);
-    private SignShopArgument<SignShopPlayer> ssPlayer = new SignShopArgument<>(this);
-    private SignShopArgument<SignShopPlayer> ssOwner = new SignShopArgument<>(this);
-    private SignShopArgument<Block> bSign = new SignShopArgument<>(this);
-    private SignShopArgument<String> sOperation = new SignShopArgument<>(this);
-    private SignShopArgument<String> sEnchantments = new SignShopArgument<>(this);
-    private SignShopArgument<BlockFace> bfBlockFace = new SignShopArgument<>(this);
-    private SignShopArgument<Action> aAction = new SignShopArgument<>(this);
-    private List<String> operationParameters = new LinkedList<>();
+    private final SignShopArgument<Double> fPrice = new SignShopArgument<>(this);
+    private final SignShopArgument<List<Block>> containables = new SignShopArgument<>(this);
+    private final SignShopArgument<List<Block>> activatables = new SignShopArgument<>(this);
+    private final SignShopArgument<SignShopPlayer> ssPlayer = new SignShopArgument<>(this);
+    private final SignShopArgument<SignShopPlayer> ssOwner = new SignShopArgument<>(this);
+    private final SignShopArgument<Block> bSign = new SignShopArgument<>(this);
+    private final SignShopArgument<String> sOperation = new SignShopArgument<>(this);
+    private final SignShopArgument<String> sEnchantments = new SignShopArgument<>(this);
+    private final SignShopArgument<BlockFace> bfBlockFace = new SignShopArgument<>(this);
+    private final SignShopArgument<Action> aAction = new SignShopArgument<>(this);
+    private final List<String> operationParameters = new LinkedList<>();
     private SignShopArgumentsType argumentType;
-    private SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
+    private final SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
         @Override
         public void set(ItemStack[] pItems) {
             if (getCollection().forceMessageKeys.containsKey("!items") && argumentType == SignShopArgumentsType.Setup)
@@ -48,7 +49,7 @@ public class SignShopArguments implements IMessagePartContainer {
         }
     };
     private SSMoneyEventType moneyEventType = SSMoneyEventType.Unknown;
-    private Map<String, String> messageParts = new LinkedHashMap<>();
+    private final Map<String, String> messageParts = new LinkedHashMap<>();
 
     public SignShopArguments(double pfPrice, ItemStack[] pisItems, List<Block> pContainables, List<Block> pActivatables,
                              SignShopPlayer pssPlayer, SignShopPlayer pssOwner, Block pbSign, String psOperation, BlockFace pbfBlockFace, Action ac, SignShopArgumentsType type) {
@@ -126,8 +127,8 @@ public class SignShopArguments implements IMessagePartContainer {
 
             if (Vault.getPermission() != null && ssPlayer.get() != null && ssPlayer.get().getWorld() != null) {
                 World world = ssPlayer.get().getWorld();
-                String name = ssPlayer.get().getName();
-                setMessagePart("!permgroup", Vault.getPermission().getPrimaryGroup(world, name));
+                OfflinePlayer name = ssPlayer.get().getOfflinePlayer();
+                setMessagePart("!permgroup", Vault.getPermission().getPrimaryGroup(world.getName(), name));
             }
         }
 

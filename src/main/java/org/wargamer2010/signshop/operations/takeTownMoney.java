@@ -1,10 +1,10 @@
 package org.wargamer2010.signshop.operations;
 
 import com.palmergames.bukkit.towny.TownySettings;
+import com.palmergames.bukkit.towny.TownyUniverse;
 import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
-import com.palmergames.bukkit.towny.object.TownyUniverse;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -13,6 +13,7 @@ import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 
+@SuppressWarnings("deprecation")
 public class takeTownMoney implements SignShopOperation {
 	@Override
 	public Boolean setupOperation(SignShopArguments ssArgs) {
@@ -34,7 +35,7 @@ public class takeTownMoney implements SignShopOperation {
                     ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
                     return false;
                 }
-                Resident resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
+                Resident resident = TownyUniverse.getInstance().getDataSource().getResident(ssArgs.getOwner().get().getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
@@ -73,7 +74,7 @@ public class takeTownMoney implements SignShopOperation {
                     return false;
                 }
 
-                resident = TownyUniverse.getDataSource().getResident(ssArgs.getOwner().get().getName());
+                resident = TownyUniverse.getInstance().getDataSource().getResident(ssArgs.getOwner().get().getName());
                 town = resident.getTown();
 
                 // take the money from the town bank account
