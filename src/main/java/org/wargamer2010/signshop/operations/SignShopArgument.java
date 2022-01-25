@@ -6,7 +6,7 @@ public class SignShopArgument<E> {
     private E inner;
     private E special;
     private boolean bSpecial = false;
-    private SignShopArguments collection;
+    private final SignShopArguments collection;
 
     public SignShopArgument(SignShopArguments pCollection) {
         collection = pCollection;
@@ -42,7 +42,7 @@ public class SignShopArgument<E> {
 
     public boolean isEmpty() {
         if(get() instanceof Collection)
-            return ((Collection)get()).isEmpty();
+            return ((Collection<?>)get()).isEmpty();
         else if(get() instanceof String)
             return ((String)get()).isEmpty();            
         return false;

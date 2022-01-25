@@ -10,10 +10,10 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSDestroyedEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private SignShopPlayer ssPlayer;
-    private Block bBlock;
+    private final SignShopPlayer ssPlayer;
+    private final Block bBlock;
     private Seller seShop = null;
-    private SSDestroyedEventType reason;
+    private final SSDestroyedEventType reason;
 
     public SSDestroyedEvent(Block pBlock, SignShopPlayer pPlayer, Seller pShop, SSDestroyedEventType pReason) {
         if(pPlayer == null)

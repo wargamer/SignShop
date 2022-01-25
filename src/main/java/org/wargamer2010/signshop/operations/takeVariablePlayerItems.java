@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.Damageable;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -27,8 +28,10 @@ public class takeVariablePlayerItems implements SignShopOperation {
             boolean didnull = false;
 
             for(ItemStack stack : inv_stacks) {
-                if(stack != null && stack.getType() == mat && stack.getType().getMaxDurability() >= 30 && stack.getDurability() != nodamage) {
-                    stack.setDurability(nodamage);
+                if(stack != null && stack.getType() == mat && stack.getType().getMaxDurability() >= 30 && ((Damageable) stack.getItemMeta()).getDamage() != nodamage) {
+                    Damageable meta = (Damageable) stack.getItemMeta();
+                    meta.setDamage(nodamage);
+                    stack.setItemMeta(meta);
                     didnull = true;
                 }
             }
@@ -41,7 +44,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
         List<StackDurabilityPair> sortedbydurability = new LinkedList<>();
         for(ItemStack playerstack : playerinv) {
             if(playerstack != null)
-                sortedbydurability.add(new StackDurabilityPair(playerstack, playerstack.getDurability()));
+                sortedbydurability.add(new StackDurabilityPair(playerstack, (short) ((Damageable) playerstack).getDamage()));
         }
         sortedbydurability.sort(new StackDurabilityPair());
 

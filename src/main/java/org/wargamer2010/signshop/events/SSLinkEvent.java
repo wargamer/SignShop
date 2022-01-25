@@ -9,9 +9,9 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 public class SSLinkEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
-    private SignShopPlayer ssPlayer;
-    private Block bBlock;
-    private Seller seShop;
+    private final SignShopPlayer ssPlayer;
+    private final Block bBlock;
+    private final Seller seShop;
 
     public SSLinkEvent(Block pBlock, SignShopPlayer pPlayer, Seller pShop) {
         ssPlayer = pPlayer;

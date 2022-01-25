@@ -5,7 +5,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.commandUtil;
 
 public class TutorialHandler implements ICommandHandler {
-    private static ICommandHandler instance = new TutorialHandler();
+    private static final ICommandHandler instance = new TutorialHandler();
 
     private TutorialHandler() {
 

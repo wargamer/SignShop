@@ -4,8 +4,8 @@ package org.wargamer2010.signshop.operations;
 import java.util.List;
 
 public class SignShopOperationListItem {
-    private SignShopOperation operation;
-    private List<String> parameters;
+    private final SignShopOperation operation;
+    private final List<String> parameters;
 
     public SignShopOperationListItem(SignShopOperation op, List<String> param) {
         operation = op;
