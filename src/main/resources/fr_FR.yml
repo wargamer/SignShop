@@ -331,55 +331,54 @@ errors:
   item_not_on_whitelist: L'item !blacklisted_item ne figure pas sur la liste d'autorisations (whitelist) et ne peut donc pas être utilisé dans les boutiques.
   item_not_on_whitelist_but_op: L'item !blacklisted_item ne figure pas sur la liste d'autorisations (whitelist), mais vous êtes OP!
 
-  #TODO / A FAIRE
-  block_is_protected: This block is protected, you are not allowed to interact with it.
-  updated_shop: The shop has been succesfully updated.
+  block_is_protected: Ce bloc est prorégé, vous n'êtes pas autorisé à interagir avec celui-ci.
+  updated_shop: La boutique a été mise à jour avec succès.
   failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur ci-haut!
   price_drawn_from_essentials: Veuillez noter que le prix est fourni par le gestionnaire d'économie Essentials. Il peut donc varier.
-  only_one_time: You can only use this shop once.
-  nothing_to_reset_ontime: You are already allowed to use !param signs one time. So there's nothing to reset.
+  only_one_time: Vous ne pouvez utiliser cette boutique qu'une seule fois.
+  nothing_to_reset_ontime: Vous êtes déjà autorisé à utiliser les panneaux !param une fois. Il n'y a donc rien à réinitialiser.
   shop_on_cooldown: Ce magasin termine une transaction. Veuillez patienter !cooldownleft secondes.
-  damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
-  use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
-  no_items_defined_for_shop: There are no items defined for this shop, can not complete the operation.
-  notifications_shop_built: \!player just created a(n) !signtype sign at (!x, !y, !z)
+  damaged_items_shop_homogeneous: Une boutique acceptant des items endommagés ne peut accepter qu'un seul type d'item! Les items endommagés ne sont pas acceptés tant que la boutique n'est pas réparée.
+  use_item_to_destroy_shop: Cette boutique est protégée et peut seulement être détruite avec (n) !destroymaterial.
+  no_items_defined_for_shop: Il n'y a aucun item défini pour cette boutique, l'opération ne peut être complétée.
+  notifications_shop_built: \!player vient de créer (n) panneau !signtype  à (!x, !y, !z)
   shop_contains: Ce magasin contient !shopinventory @ !items pour !price!
-  not_allowed_to_link_banksigns: You are not allowed to link Bank signs to this shop!
-  no_shop_linked_to_banksign: This Bank sign has not been linked to any shops.
-  bank_sign_linked_to_banks: This Bank sign communicates with bank called !bank in the name of the shops at !bankshops
-  registered_bank_sign: Registered a Bank sign, please click the Shop sign next.
-  unlinked_bank_sign: Unlinked Bank sign from Shop.
-  linked_bank_sign: Succesfully linked Bank sign to Shop.
-  not_allowed_to_use_bank: You are not the owner or a member of !bank Bank so the related Bank sign will be ignored.
-  no_bank_available: There is no Bank available to process the request, please contact the shop owner.
-  no_bank_support: The Economy plugin installed on this server does not support Banks.
-  repeated_x_times: (repeated !times times)
+  not_allowed_to_link_banksigns: Vous n'êtes pas autorisé à lier des panneaux Banque à cette boutique!
+  no_shop_linked_to_banksign: Ce panneau Banque n'est lié à aucune boutique!
+  bank_sign_linked_to_banks: Ce panneau Banque communique avec la banque nommée !bank au nom bes boutiques à !bankshops
+  registered_bank_sign: Panneau Banque enregistré. Veuillez maintenant cliquer sur le panneau de la boutique.
+  unlinked_bank_sign: Panneau Banque délié de la boutique.Unlinked Bank sign from Shop.
+  linked_bank_sign: Panneau Banque lié avec succès à la boutique.
+  not_allowed_to_use_bank: Vous n'êtes pas propriétaire ou membre de la banque !bank. Le panneau Banque qui y est lié sera ignoré.
+  no_bank_available: Aucune banque n'est disponible pour traiter votre requête, veuillez contacter le propriétaire de la boutique.
+  no_bank_support: Le plugin d'Économie installé sur ce serveur ne supporte pas les banques.
+  repeated_x_times: (répété !times fois)
   removed_location: Emplacement supprimé!
   stored_location: Emplacement de !block enregistré!
   stored_location_containable: Emplacement de !block contenant !items enregistré!
-  region_does_not_allow_shops: Shops are not allowed within this region. Please move the sign somewhere else.
-  region_allow_shops_but_op: This shop is not in a region with the "allow-shop" flag set to true but you are OP.
-  region_allow_shops_but_perm: This shop is not in a region with the "allow-shop" flag set to true but you have the bypass permission node.
-  towny_shop_plot_not_allowed: This shop is not on a shop plot, please move it.
-  towny_shop_plot_not_allowed_but_op: This shop is not on a shop plot but you are OP.
-  towny_shop_plot_not_allowed_but_perm: This shop is not on a shop plot but you have the bypass permission node.
-  deselected_hanging: You have deselected a Hanging item.
-  selected_hanging: You have selected a Hanging item.
-  itemframe_unlinked: ItemFrame has been successfully unlinked.
-  itemframe_linked: ItemFrame has been successfully linked.
-  itemframe_already_linked: This ItemFrame is already linked to another shop.
-  shop_is_now_protected: Your chest(s) have been locked automatically.
-  not_allowed_to_rotate_frame: You are not allowed to rotate this ItemFrame.
-  no_permission_plugin: No permission plugin could be found.
-  missing_promote_group: Please write the Permission group to promote to on the second line.
-  promote_group_does_not_exist: The Permission group on the second line does not exist.
-  not_in_permission_group: You aren't in a permission group yet.
-  already_in_promote_group: You are already in the group.
-  could_not_remove_primary_group: Could not remove you from your primary group
-  could_not_promote: Could not promote you.
-  must_be_op_to_run: You do not have the right permission to run this command, it is for OPs only.
-  not_allowed_on_plot: You are not allowed to link this on this plot!
-  not_allowed_on_plot_but_op: You are not allowed to link this on this plot, but you are OP.
-  exceeded_max_amount_of_chests_per_shop: You have exceeded the maximum amount of chests (!maxAmountOfChests) that can be linked to a single shop. Please unlink one or more before continuing.
-  this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
-  could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
+  region_does_not_allow_shops: Les boutiques ne sont pas autorisées dans cette région. Veuillez déplacer votre panneau à un autre endroit.
+  region_allow_shops_but_op: Cette boutique n'est pas dans une région ayant le flag "allow-shop" défini à "true", mais vous êtes OP.
+  region_allow_shops_but_perm: Cette boutique n'est pas dans une région ayant le flag "allow-shop" défini à "true", mais vous avez la permission "bypass".
+  towny_shop_plot_not_allowed: Cette boutique n'est pas sur un terrain pour boutiques (shop plot), veuillez la déplacer.
+  towny_shop_plot_not_allowed_but_op: Cette boutique n'est pas sur un terrain pour boutiques (shop plot), mais vous êtes OP.
+  towny_shop_plot_not_allowed_but_perm: Cette boutique n'est pas sur un terrain pour boutiques (shop plot), mais vous avez la permission "bypass".
+  deselected_hanging: Vous avez désélectionné un item pouvant être accroché.
+  selected_hanging: Vous avez sélectionné un item pouvant être accroché.
+  itemframe_unlinked: Le cadre a été délié de la boutique.
+  itemframe_linked: Le cadre a été lié à la boutique.
+  itemframe_already_linked: Ce cadre est déjà lié à une boutique.
+  shop_is_now_protected: Vos coffres ont été verrouillés automatiquement.
+  not_allowed_to_rotate_frame: Vous n'êtes pas autorisé à faire pivoter l'objet sur ce cadre.
+  no_permission_plugin: Aucun plugin de permissions n'a été trouvé..
+  missing_promote_group: Veuillez inscrire le group de permission à donner en promotion sur le seconde ligne.
+  promote_group_does_not_exist: Le groupe de permission inscrit sur la deuxième ligne n'existe pas.
+  not_in_permission_group: Vous n'êtes dans aucun groupe de permission pour le moment.
+  already_in_promote_group: Vous êtes déjà dans le groupe de promotion.
+  could_not_remove_primary_group: Impossible de vous retirer de votre groupe primaire.
+  could_not_promote: Impossible de vous donner la promotion.
+  must_be_op_to_run: Vous n'avez pas la permission d'exécuter cette commande, elle est destinée seulement aux OP.
+  not_allowed_on_plot: Vous n'êtes pas autorisé à lier une boutique sur ce terrain!
+  not_allowed_on_plot_but_op: Vous n'êtes pas autorisé à lier une boutique sur ce terrain, mais vous êtes OP!
+  exceeded_max_amount_of_chests_per_shop: Vous avez dépassé le nombre maximal de coffres (!maxAmountOfChests) qui peuvent être liés à une seule boutique. Veuillez délier un ou plusieurs coffres avant de poursuivre.
+  this_shop_exceeded_max_amount_of_chests: La boutique dans le monde '!world' à la position (!x, !y, !z) dépasse le nombre maximal de coffres alloués par boutique.
+  could_not_complete_operation: Impossible de compléter l'opération, veuillez contacter un administrateur et consultez les journaux d'événements.
