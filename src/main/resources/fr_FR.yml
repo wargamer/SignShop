@@ -9,12 +9,15 @@ signs:
   Acheter: Buy
   Vendre: Sell
   Donner: Donate
+  Hasard: Slot
   Sous: Slot
   iAcheter: iBuy
   gVendre: gSell
+  gAcheter: gBuy
   Jour: Day
   Nuit: Night
   Pluie: Rain
+  BeauTemps: ClearSkies
   CielClair: ClearSkies
   AppareilOn: DeviceOn
   AppareilOff: DeviceOff
@@ -24,14 +27,18 @@ signs:
   Guérir: Heal
   Jeter: Dispose
   AppareilItem: DeviceItem
+  iHasard: iSlot
   iSous: iSlot
   Enchanter: Enchant
   iAcheterXP: iBuyXP
   iVendreXP: iSellXP
   iTroquer: iTrade
   TpToOwner: TpToOwner
+  TpProprio: TpToOwner
   Classe: Class
   Commande: Command
+  CommandeUtil: UserCommand
+  TCommande: TCommand
   Partager: Share
   Restreint: Restricted
   iVendre: iSell
@@ -42,6 +49,8 @@ signs:
   VendreXP: iSellXP
   DonnerMain: DonateHand
   Slot: Slot
+  ReinitKit: ResetKit
+  Promotion: Promote
 
 
 # Messages apparaissant quand les joueurs interagissent avec les panneaux
@@ -79,13 +88,13 @@ messages:
     Class: Vous avez configuré une boutique pour vendre un ensemble d'articles pour !price.
     Disenchant: Vous avez configuré un panneau qui élimine les enchantements pour !price.
     Command: Vous avez configuré un panneau qui exécute des commandes pour !price.
-    UserCommand: Vous avez configuré un panneau qui exécute des commandes comme si un jour les avait tappées dans le chat pour !price.
+    UserCommand: Vous avez configuré un panneau qui exécute des commandes comme si un joueur les avait tappées dans le chat pour !price.
     Jukebox: Vous avez configuré un Jukebox qui joue les disques du coffre pour !price.
     Kit: Vous avez configuré un kit d'items à usage unique (!items) pour !price.
     ResetKit: Vous avez configuré un panneau qui réinitialise les panneaux !param.
     iXPBuy: Vous avez mis en vente !items au prix de !xp points XP.
     iXPSell: Vous avez configuré une vente illimitée de !items pour !xp points XP.
-    Promote: Vous avez configuré un panneau de promotion qui promouvoit l'utilisateur au groupe !promoteto.
+    Promote: Vous avez configuré un panneau de promotion qui ajoute l'utilisateur au groupe !promoteto.
     TCommand: Vous avez configuré un panneau qui exécute les commandes sur ce panneau après 10 secondes pour !price.
   
   # Messages affichés quand vous faites un clic gauche sur un panneau
@@ -217,48 +226,49 @@ messages:
 # De nouvelles lignes sont automatiquement faites à la fin des phrases au moment de l'affichage.
 # TODO / A FAIRE
   help:
-    Buy: The Buy sign exchanges the customer's money for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
-    Sell: The Sell sign exchanges the customer's items for the owner's money. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
-    Donate: The Donate sign will give the chest's items.  You can put whatever you like on lines 2, 3, and 4 of this sign.  Punch the chest(s) with !linkmaterial containing the items you want to accept for donations.
-    DonateHand: The DonateHand sign will take the items from a customer's hand and give it to the chest.  You can put whatever you like on lines 2, 3, and 4 of this sign.  Punch the empty chest(s) with !linkmaterial that will hold the donated items.
-    Slot: The Slot sign exchanges the customer's money for the chest's randomly selected items.  Each slot in the chest has an equal probability of being selected.  The amount of items in each slot of the chest will be the amount of items the customer gets if that chest slot is selected (empty chest slots are ignored).
-    iBuy: The Infinite Buy sign exchanges the customer's money for items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of items, so the chest can be destroyed after linking.  Money is not put in the owner's account.
-    iSell: The Infinite Sell sign exchanges the customer's items for money. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of space in the chest, so the chest can be destroyed after linking.  Money is not removed from the owner's account.
-    gBuy: The Ghost Buy sign exchanges the customer's money for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  Money is not put in the owner's account.
-    gSell: The Ghost Sell sign exchanges the customer's items for money.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  Money is not removed from the owner's account.
-    Day: The Day sign exchanges the customer's money for setting the time to sunrise.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    Night: The Night sign exchanges the customer's money for setting the time to night.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    Rain: The Rain sign exchanges the customer's money for setting the weather to stormy.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    ClearSkies: The ClearSkies sign exchanges the customer's money for removing stormy weather.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    DeviceOn: The DeviceOn sign exchanges the customer's money for turning on a redstone lever.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the lever(s) you want to turn on using !linkmaterial.
-    DeviceOff: The DeviceOff sign exchanges the customer's money for turning off a redstone lever.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the lever(s) you want to turn off using !linkmaterial.
-    Toggle: The Toggle sign exchanges the customer's money for toggling a redstone lever on/off.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the lever(s) you want to toggle on/off using !linkmaterial.
-    Device: The Device sign exchanges the customer's money for temporarily turning a redstone lever on.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the lever(s) you want to temporarily turn on using !linkmaterial.
-    Heal: The Heal sign exchanges the customer's money for setting their health to full.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    Repair: The Repair sign exchanges the customer's money for fully repairing the item in their hands.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    Dispose: The Dispose sign will take the items from a customer's hand and destroy them.  You can put whatever you like on lines 2, 3, and 4 of this sign.
-    DeviceItem: The Device sign exchanges the customer's items for temporarily turning a redstone lever on.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the lever(s) you want to temporarily turn on using !linkmaterial.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.
-    iSlot: The iSlot sign exchanges the customer's money for randomly selected items.  Each slot in the chest has an equal probability of being selected.  The amount of items in each slot of the chest will be the amount of items the customer gets if that chest slot is selected (empty chest slots are ignored).  This shop will never run out of items, so the chest can be destroyed after linking.  Money is not put in the owner's account.
-    Enchant: The Enchant sign exchanges the customer's money for enchanting the item in their hands.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  The enchantment is determined by an enchanted item in the chest.  Money is not put in the owner's account.
-    iSellXP: The Infinite Sell XP sign exchanges the customer's XP levels for money.  The 2nd line of this sign can say whatever you like, the XP levels goes on the 3rd and the price goes on the 4th.  Money is not put in the owner's account.
-    iBuyXP: The Infinite Buy XP sign exchanges the customer's money for XP levels.  The 2nd line of this sign can say whatever you like, the XP levels goes on the 3rd and the price goes on the 4th.  Money is not removed from the owner's account.
-    iTrade: The Infinite Trade sign exchanges the customer's items for the chest's items.  The 2nd, 3rd and 4th lines of this sign can say whatever you like.  Punch the chest of the items you want to receive using !linkmaterial, then punch the chest items you would like to give away, then punch the sign.  The items will not be added or removed from the chests, so they can be destroyed after linking.
-    Trade: The Trade sign exchanges the customer's items for the chest's items.  The 2nd, 3rd and 4th lines of this sign can say whatever you like.  Punch the chest of the items you want to receive using !linkmaterial, then punch the chest items you would like to give away, then punch the sign.
-    TpToOwner: The TpToOwner sign exchanges the customer's money for teleporting the themselves to the owner.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.  This is an example sign for custom commands, read more in the Quick Reference (found in the plugins/SignShop folder).
-    Class: The Class sign exchanges the customer's money and their inventory for the chest's items.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  Money is not put in the owner's account.
-    Disenchant: The Disenchant sign exchanges the customer's money for removing the enchantment on the item in their hands.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    Command: The Command sign exchanges the customer's money to run the command on the sign. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work.
-    UserCommand: The UserCommand sign exchanges the customer's money to run the command on the sign as if they typed it in. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work, or they don't have permission.
-    Share: The Share sign is used to share profits with other users.  List other usernames on the 2nd and/or 3rd lines of the sign.  The percentage you would like to share goes on the 4th line.  If you list multiple people on the sign, you put both percentages on the 4th line, separated by a "/".  Any remaining money is given to the owner of the shop.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
-    Restricted: The Restricted sign is used to make it so only certain permission groups can use a sign.  List the permission groups on the 2nd, 3rd, and/or 4th lines of the sign.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
-    Bank: The Bank sign is used to share profits with your bank account.  List a bank account you own on the 2nd line of the sign.  The percentage you would like to share goes on the 4th line.  Any remaining money is given to the owner of the shop.  Punch this sign and then any active shop signs you own with !linkmaterial to activate.
-    Jukebox: The Jukebox sign exchanges the customer's money to listen to music discs. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the music discs you'd like to play.  The sign will play the next disc in the chest when used.
-    Kit: The Kit sign exchanges the customer's money for the chest's items. The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This sign can only be used once per player before needing to be reset.  Money is not put in the owner's account.
-    ResetKit: The ResetKit sign exchanges the customer's money so they are allowed to use the Kit sign again.  The 2nd and 3rd lines of this sign can say whatever you like, the price goes on the 4th.  Money is not put in the owner's account.
-    iXPBuy: The Infinite XP Buy sign exchanges the customer's XP points for items.  The 2nd and 4th lines of this sign can say whatever you like, the XP points goes on the 3rd line.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of items, so the chest can be destroyed after linking.
-    iXPSell: The Infinite XP Sell sign exchanges the customer's items for XP points.  The 2nd and 4th lines of this sign can say whatever you like, the XP points goes on the 3rd line.  Punch the chest(s) using !linkmaterial containing the type and amount of items you want for a single transaction.  This shop will never run out of space in the chest, so the chest can be destroyed after linking.
-    Promote: The Promote sign exchanges the customer's money to be added to a permission group.  The 2nd line of this sign must have the permission group listed.  The 3rd line can say anything.  The 4th line lists the amount of money required for the promotion.  Money is not put in the owner's account.
-    TCommand: The TCommand sign exchanges the customer's money to run the command on the sign after 10 seconds. The 2nd and 3rd lines of this sign have the command written on them (without the "/"), the price goes on the 4th.  SignShop cannot know if the command was successfully completed, so it will take the customer's money even if the command doesn't work.
+    Buy: Le panneau Acheter échange l'argent du client contre des items dans le coffre. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction.
+    Sell: Le panneau Vendre échange les items du client contre l'argent du propriétaire de la boutique. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction.
+    Donate: Le panneau Donner va donner les items dans le coffre. Sur la 2ème, la 3ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction.
+    DonateHand: Le panneau DonnerMain va prendre l'item qui se trouve dans la main du joueur et le mettre dans le coffre. Sur la 2ème, la 3ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Avec !linkmaterial, frappez le coffre vide qui recevra les items donnés.
+    Slot: Le panneau Hasard échange l'argent du client contre des items choisis au hasard dans le coffre. Tous les emplacements du coffre ont une chance égale d'être sélectionnés. Le nombre d'items dans chaque emplacement correspond au nombre d'items qui seront remis au client si cet emplacement est sélectionné. De plus, les coffres vides sont ignorés.
+    iBuy: Le panneau Achat Infini échange l'argent du client contre des items. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. Cette boutique ne manquera jamais d'items, donc le coffre peut être détruit après la liaison. L'argent ne sera pas déposé dans le compte du propriétaire.
+    iSell: Le panneau Vente Infinie échange les items du client contre de l'argent. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. Cette boutique ne manquera jamais d'espace dans le coffre. Il peut donc être détruit après la liaison. L'argent ne sera pas prélevé dans le compte du propriétaire.    
+    gBuy: Le panneau Achat Fantôme échange l'argent du client contre des items dans le coffre. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. L'argent n'est pas déposé dans le compte du propriétaire.
+    gSell: Le panneau Vente Fantôme échange les items du client contre de l'argent. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. L'argent n'est pas prélevé dans le compte du propriétaire.
+    Day: Le panneau Jour prélève l'argent du client  pour définir l'heure au lever du Soleil. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    Night: Le panneau Nuit prélève l'argent du client pour définir l'heure au coucher du Soleil. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    Rain: Le panneau Nuit prélève l'argent du client pour définir la météo en Pluie. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    ClearSkies: Le panneau BeauTemps prélève l'argent du client pour définir la météo en beau temps. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    DeviceOn: Le panneau AppareilOn échange l'argent du client contre l'activation d'un levier de redstone. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le(s) levier(s) que vous désirez activer.
+    DeviceOff: Le panneau AppareilOff échange l'argent du client contre la désactivation d'un levier de redstone. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le(s) levier(s) que vous désirez désactiver.
+    Toggle: Le panneau Basculer échange l'argent du client contre la bascule (on/off) d'un levier de redstone. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le(s) levier(s) que vous désirez basculer.
+    Device: Le panneau Appareil échange l'argent du client contre l'activation temporaire d'un levier de redstone. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le(s) levier(s) que vous désirez activer temporairement.
+    Heal: Le panneau Santé échange l'argent du client contre un rétablissement complet de la santé. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    Repair: Le panneau Réparer échange l'argent du client contre la réparation complète de l'item dans leur main. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.    
+    Dispose: Le panneau Jeter détruit l'item dans la main du client. Sur la 2ème, la 3ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez.
+    DeviceItem: Le panneau AppareilItem échange les items du client contre l'activation temporaire d'un levier de redstone. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le(s) levier(s) que vous désirez activer temporairement. Avec !linkmaterial, frappez le coffre contenant le type et le nombre d'items que vous désirez pour une seule transaction.
+    iSlot: Le panneau Hasard Infini échange l'argent du client contre des items choisis au hasard. Tous les emplacements du coffre ont une chance égale d'être sélectionnés. Le nombre d'items dans chaque emplacement correspond au nombre d'items qui seront remis au client si cet emplacement est sélectionné. De plus, les coffres vides sont ignorés. Cette boutique ne manquera jamais d'items, donc le coffre peut être détruit après la liaison. L'argent ne sera pas déposé dans le compte du propriétaire.    
+    Enchant: Le panneau Enchanter échange l'argent du client contre l'enchantement de l'item dans leur main. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Le type d'enchantement(s) est déterminé par l'item enchanté dans le coffre. L'argent n'est pas déposé dans le compte du propriétaire.
+    iSellXP: Le panneau Vente Infinie d'XP échange des niveaux d'XP du client contre de l'argent. Sur la 2ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 3ème ligne, inscrivez le nombre de niveaux XP. Sur la 4ème ligne, inscrivez le prix. Les niveaux d'XP ne sont pas transférés au propriétaire.
+    iBuyXP: Le panneau Achat Infini d'XP échange l'argent du client contre des niveaux d'XP. Sur la 2ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 3ème ligne, inscrivez le nombre de niveaux XP. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas prélevé dans le compte du propriétaire.
+    iTrade: Le panneau Échange Infini échange les items du client contre lers items du coffre. Sur la 2ème, la 3ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Avec !linkmaterial, frappez le coffre contenant les items vous souhaitez recevoir, puis frappez le coffre contenant les items que vous souhaitez donner en échange. Frappez finalement le panneau. Les items ne seront pas ajoutés ni supprimés des coffres, ils peuvent donc être détruits après la liaison.
+    Trade: Le panneau Échange échange les items du client contre lers items du coffre. Sur la 2ème, la 3ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Avec !linkmaterial, frappez le coffre contenant les items vous souhaitez recevoir, puis frappez le coffre contenant les items que vous souhaitez donner en échange. Frappez finalement le panneau.
+    TpToOwner: Le panneau TP Propriétaire échange l'argent du client contre la téléportation au propriétaire. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire. Ce panneau est un exemple de commande personnalisée. Pour en savoir plus, consultez la Référence Rapide (dans le dossier plugins/SignShop)
+    Class:  Le panneau classe échange de l'argent et des items dans l'inventaire du client contre les items du coffre. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items que vous désirez pour une seule transaction. L'argent n'est pas déposé dans le compte du propriétaire.
+    Disenchant: Le panneau Désenchanter prélève l'argent du client pour désenchanter l'item dans leur main. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    Command: Le panneau Commande échange l'argent du client contre l'exécution de la commande inscrite sur le panneau. Sur la 2ème et la 3ème ligne, inscrivez la commande à exécuter (sans le "/"). Sur la 4ème ligne, inscrivez le prix. SignShop ne peut pas savoir is la commande s'est exécutée avec succès, l'argent du client sera donc prélevé même si la commande ne fonctionne pas.
+    UserCommand: Le panneau Commande Utilisateur échange l'argent du client contre l'exécution de la commande inscrite sur le panneau, conmme si le client l'avait entrée dans le chat. Sur la 2ème et la 3ème ligne, inscrivez la commande à exécuter (sans le "/"). Sur la 4ème ligne, inscrivez le prix. SignShop ne peut pas savoir is la commande s'est exécutée avec succès, l'argent du client sera donc prélevé même si la commande ne fonctionne pas où si le client n'a pas la permission.    
+    Share: Le panneau Partage est utilisé pour partager les profits avec d'autres utilisateurs. Sur la 2ème et la 3ème ligne, inscrivez les noms d'utilisateur. Sur la 4ème ligne, inscrivez le pourcentage que vous désirez partager. Si vous inscrivez plusieurs utilisateurs, vous pouvez définir des pourcentages différents sur la 4ème ligne, en les séparant par un "/". Tout l'argent restant est donné au propriétaire de la boutique. Avec !linkmaterial, frappez d'abord ce panneau, puis frappez tout autre panneau que vous possédez, pour l'activer.
+    Restricted: Le panneau Restreint est utilisé pour faire en sorte que seuls les membres de certains groupes de permission peuvent utiliser un panneau. Sur les lignes 2, 3 et 4 du panneau, inscrivez les groupes de permissions. Avec !linkmaterial, frappez d'abord ce panneau, puis frappez tout autre panneau que vous possédez, pour l'activer.
+    Bank: Le panneau Banque est utilisé pour partager les profits avec votre compte en banque. Sur la 2ème ligne du panneau, inscrivez votre compte en banque. Sur la 4ème ligne, inscrivez le pourcentage qui sera partagé. L'argent restant est donné au propriétaire. Avec !linkmaterial, frappez d'abord ce panneau, puis frappez tout autre panneau que vous possédez, pour l'activer.
+    Jukebox: Le panneau Jukebox échange l'argent du client contre l'écoute de disques. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant les disques de musique que vous souhaitez rendre accessibles. Le panneau jouera le prochain disque dans le coffre lorsqu'il est utilisé.
+    Kit: Le panneau Kit échange l'argent du client contre les items dans le coffre. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. Ce panneau ne peut être utilisé qu'une seule fois par joueur avant de devoir être réintiialisé. L'argent n'est pas déposé dans le coffre du propriétaire.    
+    ResetKit: Le panneau Réinitialiser Kit échange l'argent du client contre la réinitialisation d'un panneau Kit, pour qu'ils puissent l'utiliser à nouveau. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    iXPBuy: Le panneau Achat Infini XP échange des points XP du client contre des items. Sur la 2ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 3ème ligne, inscrivez le nombre de points XP. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction. Cette boutique ne manquera jamais d'items, donc le coffre peut être détruit après la liaison. Les points d'XP ne sont pas transférés au propriétaire.    
+    iXPSell: Le panneau Vente Infinie XP échange des itemps du client contre des points XP. Sur la 2ème et la 4ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 3ème ligne, inscrivez le nombre de points XP. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items que vous désirez pour une seule transaction. Cette boutique ne manquera jamais d'espace dans le coffre, donc le coffre peut être détruit après la liaison. Les points d'XP ne sont pas prélevés du propriétaire.    
+    Promote: Le panneau Promotion échange l'argent du client contre l'ajout à un groupe de permissions. Sur la 2ème ligne, vous devez inscrire le groupe de permissions. Sur la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. L'argent n'est pas déposé dans le compte du propriétaire.
+    TCommand: Le panneau TCommande échange l'argent du client contre l'exécution de la commande inscrite sur le panneau après 10 secondes. Sur la 2ème et la 3ème ligne, inscrivez la commande à exécuter (sans le "/"). Sur la 4ème ligne, inscrivez le prix. SignShop ne peut pas savoir is la commande s'est exécutée avec succès, l'argent du client sera donc prélevé même si la commande ne fonctionne pas.
+
 
 # Ces messages sont affichés pour informer l'utilisateur sur ce que SignShop est en train de faire
 errors:
@@ -330,7 +340,6 @@ errors:
   item_on_blacklist_but_op: L'article !blacklisted_item est sur liste d'interdictions (blacklist), mais vous êtes OP!
   item_not_on_whitelist: L'item !blacklisted_item ne figure pas sur la liste d'autorisations (whitelist) et ne peut donc pas être utilisé dans les boutiques.
   item_not_on_whitelist_but_op: L'item !blacklisted_item ne figure pas sur la liste d'autorisations (whitelist), mais vous êtes OP!
-
   block_is_protected: Ce bloc est prorégé, vous n'êtes pas autorisé à interagir avec celui-ci.
   updated_shop: La boutique a été mise à jour avec succès.
   failed_to_update_shop: Impossible de mettre à jour le magasin en raison de l'erreur ci-haut!
