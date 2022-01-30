@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.listeners;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.FaceAttachable;
 import org.bukkit.block.data.type.Sign;
 import org.bukkit.block.data.type.Switch;
 import org.bukkit.block.data.type.WallSign;
@@ -46,7 +45,7 @@ public class SignShopBlockListener implements Listener {
             relativeBlockData = relativeBlock.getBlockData();
             if (relativeBlockData instanceof Switch) {
                 Switch switchData = (Switch) relativeBlockData;
-                if (switchData.getAttachedFace() == FaceAttachable.AttachedFace.FLOOR
+                if (switchData.getFace() == Switch.Face.FLOOR
                         && relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
@@ -88,7 +87,7 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockBreak(BlockBreakEvent event) {
-        // We want to run at the Highest level so we can tell if other plugins cancelled the event
+        // We want to run at the Highest level, so we can tell if other plugins cancelled the event
         // But we don't want to run at Monitor since we want to be able to cancel the event ourselves
         if (event.isCancelled())
             return;

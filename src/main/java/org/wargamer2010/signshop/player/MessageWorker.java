@@ -63,7 +63,7 @@ public class MessageWorker implements Runnable {
             mMessageMap.put(message, new Message(message, player.GetIdentifier(), timenow));
         }
         else if (mMessageMap.get(message).getCount() > 0) {
-            // We've been repeating the message and this is the last in the row so we should count it
+            // We've been repeating the message and this is the last in the row, so we should count it
             // That way it's easier to read the message and just multiply the repeated_x_times with the numbers in the message
             mMessageMap.get(message).incCount();
         }

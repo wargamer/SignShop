@@ -179,7 +179,7 @@ public class Storage implements Listener {
                         miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
                 }
             }
-        } catch(StorageException caughtex) {
+        } catch(StorageException caughtex) {    //Caught when shop is invalid
             if(!caughtex.getWorld().isEmpty()) {
                 for(World temp : Bukkit.getServer().getWorlds()) {
                     if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) { //TODO Option to short circuit this to prevent invalid shop removal
@@ -290,7 +290,7 @@ public class Storage implements Listener {
 
         config.set("sellers", tempSellers);
         config.set("DataVersion",SignShop.DATA_VERSION);
-        // We can not run the logic above async but we can save to disc on another thread
+        // We can not run the logic above async, but we can save to disc on another thread
         fileSaveWorker.queueSave(config);
     }
 
@@ -328,7 +328,7 @@ public class Storage implements Listener {
     }
 
     /**
-     * The Seller now keeps it's own Sign Location so call getSign in stead
+     * The Seller now keeps its own Sign Location so call getSign in stead
      * @param pSeller
      * @return
      * @deprecated
