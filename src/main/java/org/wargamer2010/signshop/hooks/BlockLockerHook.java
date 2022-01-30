@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.hooks;
 
-import nl.rutgerkok.blocklocker.BlockLockerAPI;
 import nl.rutgerkok.blocklocker.BlockLockerAPIv2;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;

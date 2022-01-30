@@ -74,7 +74,7 @@ public class SignShopPlayer {
     public static boolean isOp(Player player) {
         if (player == null)
             return false;
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         return ssPlayer.isOp(player.getWorld());
     }
 
@@ -199,10 +199,10 @@ public class SignShopPlayer {
         else if (SignShop.usePermissions() && Vault.getPermission().playerHas(world.getName(), getOfflinePlayer(), perm.toLowerCase())) {
             setOp(isOP);
             return true;
-            // Not using Permissions but he is OP, so he's allowed
+            // Not using Permissions, but he is OP, so he's allowed
         } else if (!SignShop.usePermissions() && isOP)
             return true;
-            // Not using Permissions, he doesn't have OP but it's not an OP Operation
+            // Not using Permissions, he doesn't have OP, but it's not an OP Operation
         else if (!SignShop.usePermissions() && !OPOperation)
             return true;
         // Reset OP

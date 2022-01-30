@@ -20,6 +20,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -67,7 +68,7 @@ public class SignShopBlockListener implements Listener {
 
     private boolean canNotBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
         Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
 
         for (Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());
@@ -88,7 +89,7 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockBreak(BlockBreakEvent event) {
-        // We want to run at the Highest level so we can tell if other plugins cancelled the event
+        // We want to run at the Highest level, so we can tell if other plugins cancelled the event
         // But we don't want to run at Monitor since we want to be able to cancel the event ourselves
         if (event.isCancelled())
             return;

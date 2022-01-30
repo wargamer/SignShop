@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.commands.CommandDispatcher;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 import java.util.Collection;
@@ -107,7 +108,7 @@ public class commandUtil {
     public static boolean handleCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, CommandDispatcher commandDispatcher) {
         SignShopPlayer player = null;
         if(sender instanceof Player)
-            player = new SignShopPlayer((Player) sender);
+            player = PlayerCache.getPlayer((Player) sender);
         String[] remainingArgs;
         String subCommandName;
         if(args.length == 0) {

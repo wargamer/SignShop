@@ -63,7 +63,7 @@ public class MessageWorker implements Runnable {
             mMessageMap.put(message, new Message(message, player.GetIdentifier(), timenow));
         }
         else if (mMessageMap.get(message).getCount() > 0) {
-            // We've been repeating the message and this is the last in the row so we should count it
+            // We've been repeating the message and this is the last in the row, so we should count it
             // That way it's easier to read the message and just multiply the repeated_x_times with the numbers in the message
             mMessageMap.get(message).incCount();
         }
@@ -101,14 +101,14 @@ public class MessageWorker implements Runnable {
 
     private static class Message implements Delayed {
         private final String sMessage;
-        private final PlayerIdentifier Player;
+        private final PlayerIdentifier playerIdentifier;
         private int iCount = 0;
         private long lLastSeen;
         private final int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
 
-        private Message(String pMessage, PlayerIdentifier player, long pTime) {
+        private Message(String pMessage, PlayerIdentifier playerIdentifier, long pTime) {
             sMessage = pMessage;
-            Player = player;
+            this.playerIdentifier = playerIdentifier;
             lLastSeen = pTime;
         }
 
@@ -133,7 +133,7 @@ public class MessageWorker implements Runnable {
         }
 
         public SignShopPlayer getPlayer() {
-            return new SignShopPlayer(Player);
+           return PlayerCache.getPlayer(playerIdentifier);
         }
 
         public synchronized int getCount() {

@@ -23,6 +23,7 @@ import org.wargamer2010.signshop.hooks.HookManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -35,7 +36,7 @@ import java.util.Map;
 
 public class SimpleShopProtector implements Listener {
     private Boolean canDestroy(Player player, Block bBlock) {
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         if(itemUtil.clickedSign(bBlock)) {
             Seller seller = Storage.get().getSeller(bBlock.getLocation());
             return seller == null || seller.isOwner(ssPlayer) || SignShopPlayer.isOp(player) || ssPlayer.hasPerm("Signshop.Destroy.Others", true)|| !SignShopConfig.getEnableShopOwnerProtection();
@@ -70,7 +71,7 @@ public class SimpleShopProtector implements Listener {
         containables.remove(toUnlink);
         activatables.remove(toUnlink);
 
-        SignShopPlayer ssPlayer = new SignShopPlayer(seller.getOwner().GetIdentifier());
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(seller.getOwner().GetIdentifier());
         ssPlayer.setIgnoreMessages(true);
 
         if(!(seller.getSign().getState() instanceof Sign))

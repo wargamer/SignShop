@@ -6,6 +6,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -28,7 +29,7 @@ public class Seller {
 
     public Seller(PlayerIdentifier playerId, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
             Map<String, String> pMiscProps, Boolean save) {
-        owner = new SignShopPlayer(playerId);
+        owner = PlayerCache.getPlayer(playerId);
         world = sWorld;
 
         isItems = itemUtil.getBackupItemStack(isChestItems);
