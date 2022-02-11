@@ -276,6 +276,7 @@ public class SignShop extends JavaPlugin {
         commandDispatcher.registerHandler("list", HelpHandler.getInstance());
         commandDispatcher.registerHandler("unlink", UnlinkHandler.getInstance());
         commandDispatcher.registerHandler("", HelpHandler.getInstance());
+        commandDispatcher.registerHandler("ignore", IgnoreHandler.getInstance());
     }
 
     private void registerSSListeners() {

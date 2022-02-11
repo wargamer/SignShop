@@ -79,7 +79,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null)
+        if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
         if (SignShopConfig.getMessageCooldown() <= 0) {
             sendNonDelayedMessage(sMessage);
