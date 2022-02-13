@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 import java.lang.reflect.Method;
 import java.util.UUID;
 
-public class PlayerIdentifier {
+public class PlayerIdentifier { //TODO completely switch over to UUID support instead of PlayerIdentifier
     private static boolean didMethodLookup = false;
     private static boolean uuidSupport = false;
     private UUID id = null;
@@ -78,7 +78,7 @@ public class PlayerIdentifier {
 
         if(GetUUIDSupport()) {
             try {
-                return new SignShopPlayer(new PlayerIdentifier(UUID.fromString(string)));
+                return PlayerCache.getPlayer(new PlayerIdentifier(UUID.fromString(string)));
             } catch(IllegalArgumentException ex) {
                 // Legacy mode, name will be converted to UUID on next Save
             }

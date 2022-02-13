@@ -71,7 +71,8 @@ public class SimpleShopProtector implements Listener {
         containables.remove(toUnlink);
         activatables.remove(toUnlink);
 
-        SignShopPlayer ssPlayer = PlayerCache.getPlayer(seller.getOwner().GetIdentifier());
+        //Do not use the PlayerCache for this. It will make them ignore messages permanently.
+        SignShopPlayer ssPlayer = new SignShopPlayer(seller.getOwner().GetIdentifier());
         ssPlayer.setIgnoreMessages(true);
 
         if(!(seller.getSign().getState() instanceof Sign))

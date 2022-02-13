@@ -18,6 +18,7 @@ import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -148,6 +149,12 @@ public class SignShopPlayerListener implements Listener {
                 SignShop.getCommandDispatcher().handle("sign", args, ssPlayer);
             }
         }
+    }
+
+    @EventHandler
+    public void onPlayerLeave(PlayerQuitEvent event){
+        SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
+        signShopPlayer.setIgnoreMessages(false);
     }
 
     @EventHandler(priority = EventPriority.HIGH)
