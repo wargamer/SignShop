@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.configuration;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -12,6 +13,7 @@ import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.operations.runCommand;
 import org.wargamer2010.signshop.specialops.*;
+import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.io.*;
@@ -134,7 +136,9 @@ public class SignShopConfig {
         Commands = configUtil.fetchListInHashmap("commands", config);
         DelayedCommands = configUtil.fetchListInHashmap("timedCommands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
+        updateFormattedMaterials();
         setupBlacklist();
+        copyFileFromJar("materials.yml",false);
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
         fixIncompleOperations();
@@ -864,6 +868,18 @@ public class SignShopConfig {
     }
 
 
+    private static void updateFormattedMaterials() {
+        File file = new File(SignShop.getInstance().getDataFolder(), "materials.yml");
+        FileConfiguration configuration = YamlConfiguration.loadConfiguration(file);
+        ConfigurationSection section = configuration.getConfigurationSection("materials");
+        if (section != null) {
+            for (String matString : section.getKeys(false)) {
+                Material matKey = Material.matchMaterial(matString);
+                String customName = section.getString(matString);
+                itemUtil.updateFormattedMaterial(matKey, ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(), customName));
+            }
+        }
+    }
 
 
     private enum LanguageSpelling {
