@@ -35,10 +35,7 @@ import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class SignShopPlayerListener implements Listener {
     private static final String helpPrefix = "help_";
@@ -232,6 +229,14 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             signshopUtil.registerClickedMaterial(event);
+        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && SignShopConfig.isInspectionMaterial(event.getItem())){
+            SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
+            if (playerCanInspect(seller,signShopPlayer)) {
+                signShopPlayer.sendMessage(seller.getInfo());
+            }
+            else {
+                signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_inspect_shop",null));
+            }
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShopConfig.isOPMaterial(event.getItem().getType()))) {
             SignShopPlayer ssOwner = seller.getOwner();
             sLines = ((Sign) bClicked.getState()).getLines();
@@ -345,6 +350,11 @@ public class SignShopPlayerListener implements Listener {
                 }
             }
         }
+    }
+
+    private boolean playerCanInspect(Seller seller, SignShopPlayer signShopPlayer){
+              return ((signShopPlayer.isOwner(seller) && signShopPlayer.hasPerm("Signshop.Inspect.Own",false))
+                || signShopPlayer.isOp() || signShopPlayer.hasPerm("Signshop.Inspect.Others",true));
     }
 
 }

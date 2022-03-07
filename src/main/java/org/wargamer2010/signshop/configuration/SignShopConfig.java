@@ -79,6 +79,7 @@ public class SignShopConfig {
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SAC");
     private static Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
+    private static Material inspectMaterial = Material.getMaterial("WRITABLE_BOOK");
 
 
     private SignShopConfig() {
@@ -249,6 +250,7 @@ public class SignShopConfig {
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SAC"), Material.getMaterial("INK_SAC"));
         destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
+        inspectMaterial = getMaterial(ymlThing.getString("InspectMaterial", "WRITABLE_BOOK"), Material.getMaterial("WRITABLE_BOOK"));
 
         TextColor = ChatColor.getByChar(ymlThing.getString("ItemColor", "e").replace(ColorCode,""));
         if (TextColor == null) TextColor = ChatColor.YELLOW;
@@ -804,6 +806,10 @@ public class SignShopConfig {
 
     public static boolean isOPMaterial(Material check) {
         return (check == updateMaterial || check == linkMaterial);
+    }
+
+    public static boolean isInspectionMaterial(ItemStack item) {
+        return (item !=null && item.getType() == inspectMaterial);
     }
 
     public static Material getLinkMaterial() {
