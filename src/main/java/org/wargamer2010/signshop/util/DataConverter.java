@@ -6,6 +6,7 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.util.FileUtil;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.blocks.*;
@@ -19,7 +20,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 
-@SuppressWarnings("deprecation")
 public class DataConverter {
     static File sellersFile;
     static File sellersFileBackup;
@@ -157,6 +157,7 @@ public class DataConverter {
                             Integer.parseInt(itemProperties[0]),
                             Short.parseShort(itemProperties[2])
                     );
+                    //noinspection deprecation
                     itemStacks[i].getData().setData(Byte.parseByte(itemProperties[3]));
 
                     if (itemProperties.length > 4)
@@ -220,9 +221,10 @@ public class DataConverter {
 
                 itemStringList.add(BukkitSerialization.itemStackArrayToBase64(stacks));
 
+                //noinspection deprecation
                 itemStringList.add((currentItemStack.getAmount() + Storage.getItemSeperator()
                         + currentItemStack.getType() + Storage.getItemSeperator()
-                        + currentItemStack.getDurability() + Storage.getItemSeperator()
+                        + ((Damageable) currentItemStack.getItemMeta()).getDamage() + Storage.getItemSeperator()
                         + currentItemStack.getData().getData() + Storage.getItemSeperator()
                         + signshopUtil.convertEnchantmentsToString(currentItemStack.getEnchantments()) + Storage.getItemSeperator()
                         + ID + Storage.getItemSeperator()

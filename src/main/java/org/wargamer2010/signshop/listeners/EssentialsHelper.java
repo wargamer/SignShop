@@ -32,6 +32,7 @@ class EssentialsHelper {
                 return;
             if(!settings.areSignsDisabled()) {
                 SignShop.log("Essentials signs are enabled, checking for conflicts now!", Level.WARNING);
+                SignShop.log("Even if no conflicts are found, it is recommended to disable all of Essentials signs including -color!", Level.WARNING);
                 FileConfiguration config = ess.getConfig();
                 if(config == null)
                     return;

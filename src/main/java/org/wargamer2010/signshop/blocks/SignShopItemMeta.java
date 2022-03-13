@@ -551,6 +551,7 @@ public class SignShopItemMeta {
     @SuppressWarnings("SuspiciousRegexArgument")
     private static ImmutableList<Color> getColorsFromString(String colors) {
         List<Color> temp = new LinkedList<>();
+        //noinspection SuspiciousRegexArgument
         String[] split = colors.split(innerListSeperator);
         for(String part : split) {
             try {

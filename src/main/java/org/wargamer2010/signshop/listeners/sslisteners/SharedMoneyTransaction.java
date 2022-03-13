@@ -116,9 +116,9 @@ public class SharedMoneyTransaction implements Listener {
                     bTransaction = distributeMoney(event.getShop(), event.getPrice(), event.getPlayer());
                     break;
                 case TakeFromOwner:
-                case GiveToPlayer:
-                case TakeFromPlayer:
                 case Unknown:
+                case TakeFromPlayer:
+                case GiveToPlayer:
                     return;
             }
 

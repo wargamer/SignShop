@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.configuration;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -12,6 +13,7 @@ import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.operations.runCommand;
 import org.wargamer2010.signshop.specialops.*;
+import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.io.*;
@@ -77,6 +79,7 @@ public class SignShopConfig {
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
     private static Material updateMaterial = Material.getMaterial("INK_SAC");
     private static Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
+    private static Material inspectMaterial = Material.getMaterial("WRITABLE_BOOK");
 
 
     private SignShopConfig() {
@@ -134,7 +137,9 @@ public class SignShopConfig {
         Commands = configUtil.fetchListInHashmap("commands", config);
         DelayedCommands = configUtil.fetchListInHashmap("timedCommands", config);
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
+        updateFormattedMaterials();
         setupBlacklist();
+        copyFileFromJar("materials.yml",false);
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
         fixIncompleOperations();
@@ -245,6 +250,7 @@ public class SignShopConfig {
         linkMaterial = getMaterial(ymlThing.getString("LinkMaterial", "REDSTONE"), Material.getMaterial("REDSTONE"));
         updateMaterial = getMaterial(ymlThing.getString("UpdateMaterial", "INK_SAC"), Material.getMaterial("INK_SAC"));
         destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
+        inspectMaterial = getMaterial(ymlThing.getString("InspectMaterial", "WRITABLE_BOOK"), Material.getMaterial("WRITABLE_BOOK"));
 
         TextColor = ChatColor.getByChar(ymlThing.getString("ItemColor", "e").replace(ColorCode,""));
         if (TextColor == null) TextColor = ChatColor.YELLOW;
@@ -318,6 +324,7 @@ public class SignShopConfig {
                 return ExternalOperations.get(fullClassPath);
             }
             Class<?> aclass = Class.forName(fullClassPath);
+            //noinspection deprecation
             return aclass.newInstance();//TODO replace with propper call
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException notfound) {
             return null;
@@ -332,7 +339,7 @@ public class SignShopConfig {
             boolean failedOp = false;
             List<String> tempCheckedSignOperation = new LinkedList<>();
 
-            for (String tempOperationString : allSignOperations.get(sKey).split("(,(?![^{]*}))")) { //Matches commas outside of curly braces
+            for (String tempOperationString : allSignOperations.get(sKey).split("(,(?![^{]*}))")) { //Matches commas outside curly braces
                 List<String> bits = signshopUtil.getParameters(tempOperationString.trim());
                 String op = bits.get(0);
                 Object opinstance = getInstance(packageName + "." + op.trim());
@@ -361,7 +368,7 @@ public class SignShopConfig {
         SignShopConfig.OperationAliases = new HashMap<>();
 
         for (String language : aLanguages) {
-            String filename = (language + ".yml");
+            String filename = (toLanguageCase(language)+ ".yml");
             File languageFile = new File(instance.getDataFolder(), filename);
             if (languageFile.exists()) {
                 FileConfiguration ymlThing = new YamlConfiguration();
@@ -801,6 +808,10 @@ public class SignShopConfig {
         return (check == updateMaterial || check == linkMaterial);
     }
 
+    public static boolean isInspectionMaterial(ItemStack item) {
+        return (item !=null && item.getType() == inspectMaterial);
+    }
+
     public static Material getLinkMaterial() {
         return linkMaterial;
     }
@@ -863,6 +874,18 @@ public class SignShopConfig {
     }
 
 
+    private static void updateFormattedMaterials() {
+        File file = new File(SignShop.getInstance().getDataFolder(), "materials.yml");
+        FileConfiguration configuration = YamlConfiguration.loadConfiguration(file);
+        ConfigurationSection section = configuration.getConfigurationSection("materials");
+        if (section != null) {
+            for (String matString : section.getKeys(false)) {
+                Material matKey = Material.matchMaterial(matString);
+                String customName = section.getString(matString);
+                itemUtil.updateFormattedMaterial(matKey, ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(), customName));
+            }
+        }
+    }
 
 
     private enum LanguageSpelling {

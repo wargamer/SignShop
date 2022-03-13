@@ -3,7 +3,7 @@ main: org.wargamer2010.signshop.SignShop
 api-version: "1.13"
 version: "${project.version}"
 dev-url: http://dev.bukkit.org/projects/signshop
-authors: [Wargamer2010, Devinish, Weaves]
+authors: [Wargamer2010, Devinish, Weaves, IndexOutOfMJ]
 depend: [Vault]
 softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker, Ultimate_Economy, LuckPerms, PermissionsEx, Skript, CMIPaperLib, EasyConomy, Lands]
 commands:

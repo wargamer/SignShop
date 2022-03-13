@@ -19,6 +19,7 @@ public class BankSign implements SignShopOperation {
         return true;
     }
 
+    @SuppressWarnings("DuplicateCondition")
     @Override
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));

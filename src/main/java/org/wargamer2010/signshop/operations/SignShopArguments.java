@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
+import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -148,8 +149,8 @@ public class SignShopArguments implements IMessagePartContainer {
 
             if (Vault.getPermission() != null && ssPlayer.get() != null && ssPlayer.get().getWorld() != null) {
                 World world = ssPlayer.get().getWorld();
-                String name = ssPlayer.get().getName();
-                setMessagePart("!permgroup", Vault.getPermission().getPrimaryGroup(world, name));
+                OfflinePlayer name = ssPlayer.get().getOfflinePlayer();
+                setMessagePart("!permgroup", Vault.getPermission().getPrimaryGroup(world.getName(), name));
             }
         }
 

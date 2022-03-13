@@ -211,6 +211,7 @@ public class TimeManager extends TimerTask {
     private Object tryReflection(String fullClassname) {
         try {
             Class<?> fc = Class.forName(fullClassname);
+            //noinspection deprecation
             return fc.newInstance();//TODO fix this
         } catch (InstantiationException | ClassNotFoundException | IllegalAccessException ignored) {
         }

@@ -101,14 +101,14 @@ public class MessageWorker implements Runnable {
 
     private static class Message implements Delayed {
         private final String sMessage;
-        private final PlayerIdentifier playerIdentifier;
+        private final PlayerIdentifier Player;
         private int iCount = 0;
         private long lLastSeen;
         private final int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
 
-        private Message(String pMessage, PlayerIdentifier playerIdentifier, long pTime) {
+        private Message(String pMessage, PlayerIdentifier player, long pTime) {
             sMessage = pMessage;
-            this.playerIdentifier = playerIdentifier;
+            Player = player;
             lLastSeen = pTime;
         }
 
@@ -133,7 +133,7 @@ public class MessageWorker implements Runnable {
         }
 
         public SignShopPlayer getPlayer() {
-            return PlayerCache.getPlayer(playerIdentifier);
+            return new SignShopPlayer(Player);
         }
 
         public synchronized int getCount() {

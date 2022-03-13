@@ -174,7 +174,7 @@ public class VirtualInventory {
         // 1.9.4 and later extend living entity slots beyond 36, but some of these are read-only.
         // We could use .getStorageContents(), but this breaks 1.8.8 compatibility
         int length = (inventory.getHolder() instanceof HumanEntity) ? 36 : inventory.getSize();
-        ItemStack[] stacks = Arrays.copyOfRange(inventory.getContents(), 0, length);
+        @SuppressWarnings("MismatchedReadAndWriteOfArray") ItemStack[] stacks = Arrays.copyOfRange(inventory.getContents(), 0, length);
 
         if (item == null) {
             return -1;
@@ -211,7 +211,7 @@ public class VirtualInventory {
         return map;
     }
 
-    private class StackWithAmount {
+    private static class StackWithAmount {
         private int amount;
         private ItemStack stack;
 

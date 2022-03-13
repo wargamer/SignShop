@@ -8,6 +8,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -17,6 +18,7 @@ import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -33,10 +35,7 @@ import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class SignShopPlayerListener implements Listener {
     private static final String helpPrefix = "help_";
@@ -149,12 +148,18 @@ public class SignShopPlayerListener implements Listener {
         }
     }
 
+    @EventHandler
+    public void onPlayerLeave(PlayerQuitEvent event){
+        SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
+        signShopPlayer.setIgnoreMessages(false);
+    }
+
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerInteract(PlayerInteractEvent event) {
         long timeMillis = System.currentTimeMillis();
         // Respect protection plugins
         if(event.getClickedBlock() == null
-        || event.isCancelled()//TODO Make a debug message that says when this starts out canceled and is a SignShop sign
+        || event.useInteractedBlock() == Event.Result.DENY
         || event.getPlayer() == null) {
             return;
         }
@@ -262,6 +267,14 @@ public class SignShopPlayerListener implements Listener {
             }
             long timeMillis3 = System.currentTimeMillis();
             signshopUtil.registerClickedMaterial(event);
+        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && SignShopConfig.isInspectionMaterial(event.getItem())){
+            SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
+            if (playerCanInspect(seller,signShopPlayer)) {
+                signShopPlayer.sendMessage(seller.getInfo());
+            }
+            else {
+                signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_inspect_shop",null));
+            }
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShopConfig.isOPMaterial(event.getItem().getType()))) {
             long timeMillis2 = System.currentTimeMillis();
             SignShop.debugTiming("Main else statement",timeMillis1,timeMillis2);
@@ -418,6 +431,11 @@ public class SignShopPlayerListener implements Listener {
             long timeMillis4 = System.currentTimeMillis();
             SignShop.debugTiming("Touch shop event loop",timeMillis6,timeMillis4);
         }
+    }
+
+    private boolean playerCanInspect(Seller seller, SignShopPlayer signShopPlayer){
+              return ((signShopPlayer.isOwner(seller) && signShopPlayer.hasPerm("Signshop.Inspect.Own",false))
+                || signShopPlayer.isOp() || signShopPlayer.hasPerm("Signshop.Inspect.Others",true));
     }
 
 }

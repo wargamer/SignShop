@@ -10,6 +10,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
         <repository>
@@ -108,8 +109,8 @@
         </dependency>
         <dependency>
             <groupId>com.Zrips</groupId>
-            <artifactId>CMI</artifactId>
-            <version>8.5.1.2</version>
+            <artifactId>CMI-API</artifactId>
+            <version>9.0.0.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -177,6 +178,7 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
+                    <encoding>UTF-8</encoding>
                     <nonFilteredFileExtensions>
                         <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
                         <nonFilteredFileExtension>txt</nonFilteredFileExtension>

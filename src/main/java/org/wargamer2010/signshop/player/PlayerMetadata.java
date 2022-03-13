@@ -39,7 +39,7 @@ public class PlayerMetadata {
 
     /**
      * Attempts to convert all player names to UUID where needed
-     * Called a single time on plugin startup
+     * To be Called a single time on plugin startup
      *
      * @param pPlugin Plugin
      */
@@ -68,7 +68,7 @@ public class PlayerMetadata {
                     continue;
                 // Adding a NPE check to solve an issue where SignShop is failing to load.
                 // Presumably the DB file is missing some necessary info, but in the sample
-                // case UUID conversion happened long ago so it does not need to happen again.
+                // case UUID conversion happened long ago, so it does not need to happen again.
                 if (player.GetIdentifier() == null)
                     continue;
                 String id = player.GetIdentifier().toString();
@@ -173,14 +173,14 @@ public class PlayerMetadata {
         }
     }
 
-    public boolean removeMetakeyLike(String key) {
+    public void removeMetakeyLike(String key) {
         SSDatabase metadb = new SSDatabase(filename);
         try {
             Map<Integer, Object> params = new LinkedHashMap<>();
             params.put(1, plugin.getName());
             params.put(2, ssPlayer.GetIdentifier().toString());
             params.put(3, key);
-            return (metadb.runStatement("DELETE FROM PlayerMeta WHERE Plugin = ? AND Playername = ? AND Metakey LIKE ?", params, false) != null);
+            metadb.runStatement("DELETE FROM PlayerMeta WHERE Plugin = ? AND Playername = ? AND Metakey LIKE ?", params, false);
         } finally {
             metadb.close();
         }

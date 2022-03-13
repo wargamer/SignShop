@@ -1,9 +1,6 @@
 package org.wargamer2010.signshop.util;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
@@ -58,7 +55,7 @@ public class signshopUtil {
     }
 
     public static void generateInteractEvent(Block bLever, Player player, BlockFace bfBlockface) {
-        PlayerInteractEvent event = new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, player.getItemInHand(), bLever, bfBlockface);
+        PlayerInteractEvent event = new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, player.getInventory().getItemInMainHand(), bLever, bfBlockface);
         Bukkit.getServer().getPluginManager().callEvent(event);
     }
 
@@ -124,7 +121,7 @@ public class signshopUtil {
             Enchantment enchantment;
             int enchantmentLevel;
             String[] enchantmentPair = singleEnchantmentString.split("\\|");
-            enchantment = Enchantment.getByName(enchantmentPair[0]);
+            enchantment = Enchantment.getByKey(NamespacedKey.minecraft(enchantmentPair[0]));
             try {
                 enchantmentLevel = Integer.parseInt(enchantmentPair[1]);
                 enchantmentsMap.put(enchantment, enchantmentLevel);
@@ -142,7 +139,7 @@ public class signshopUtil {
         for(Map.Entry<Enchantment, Integer> entry : aEnchantments.entrySet()) {
             if(first) first = false;
             else sEnchantments.append(";");
-            sEnchantments.append(entry.getKey().getName()).append("|").append(entry.getValue());
+            sEnchantments.append(entry.getKey().getKey().getKey()).append("|").append(entry.getValue());
         }
         return sEnchantments.toString();
     }
@@ -284,7 +281,7 @@ public class signshopUtil {
                 String bank = sign.getLine(1);
                 if(!Vault.getEconomy().bankBalance(bank).transactionSuccess())
                     player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
-                else if(!Vault.getEconomy().isBankOwner(bank, player.getName()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getName()).transactionSuccess()
+                else if(!Vault.getEconomy().isBankOwner(bank, player.getOfflinePlayer()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getOfflinePlayer()).transactionSuccess()
                         && !player.isOp()) {
                     messageParts.put("!bank", bank);
                     player.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", messageParts));

@@ -28,6 +28,7 @@ public class HookManager {
         String hookClassname = (hookName + "Hook");
         try {
             Class<?> fc = Class.forName("org.wargamer2010.signshop.hooks."+hookClassname);
+            //noinspection deprecation
             return ((Hook)fc.newInstance());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ignored) {
         }
