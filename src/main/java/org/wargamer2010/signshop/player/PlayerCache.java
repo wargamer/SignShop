@@ -17,6 +17,11 @@ public class PlayerCache {
         return cachedPlayers.get(cachedIdentifiers.get(player.getUniqueId()));
     }
 
+    public static SignShopPlayer getPlayer(PlayerIdentifier playerIdentifier){
+        cachedPlayers.computeIfAbsent(playerIdentifier, v -> new SignShopPlayer(playerIdentifier));
+        return cachedPlayers.get(playerIdentifier);
+    }
+
     public static void removeFromCache(Player player) {
         cachedPlayers.remove(cachedIdentifiers.get(player.getUniqueId()));
         cachedIdentifiers.remove(player.getUniqueId());

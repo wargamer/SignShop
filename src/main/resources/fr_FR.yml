@@ -224,7 +224,6 @@ messages:
 
 # Ces messages sont utilisés par la commande /signshop sign SIGNNAME
 # De nouvelles lignes sont automatiquement faites à la fin des phrases au moment de l'affichage.
-# TODO / A FAIRE
   help:
     Buy: Le panneau Acheter échange l'argent du client contre des items dans le coffre. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction.
     Sell: Le panneau Vendre échange les items du client contre l'argent du propriétaire de la boutique. Sur la 2ème et la 3ème ligne, vous pouvez inscrire ce que vous voulez. Sur la 4ème ligne, inscrivez le prix. Avec !linkmaterial, frappez le coffre contenant le type et la quantité d'items compris dans une seule transaction.

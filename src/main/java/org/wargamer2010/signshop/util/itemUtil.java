@@ -31,6 +31,11 @@ import java.util.regex.Pattern;
 
 /** @noinspection deprecation*/ //TODO Remove deprecated calls
 public class itemUtil {
+    public static Map<Material,String> formattedMaterials = new HashMap<>();
+
+    static {
+        initializeFormattedMaterialMap();
+    }
 
     private itemUtil() {
 
@@ -145,7 +150,23 @@ public class itemUtil {
        return formatMaterialName(block.getType());
     }
 
+
+
+    private static void initializeFormattedMaterialMap(){
+        for (Material mat:Material.values()){
+            formattedMaterials.putIfAbsent(mat,formatMaterialName(mat));
+        }
+    }
+
+    public static void updateFormattedMaterial(Material material,String string){
+        formattedMaterials.replace(material,string);
+    }
+
     private static String formatMaterialName(Material material) {
+        if(formattedMaterials.containsKey(material)) {
+            return formattedMaterials.get(material);
+        }
+
         String sData;
         sData = material.toString().toLowerCase();
         Pattern p = Pattern.compile("\\(-?[0-9]+\\)");

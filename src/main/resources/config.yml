@@ -43,6 +43,8 @@ UpdateMaterial: ink_sac
 # Used to destroy shops in creative mode if "ProtectShopsInCreative" is set to "true"
 DestroyMaterial: golden_axe
 
+# Used to see extra information about a shop(Permission or Op required)
+InspectMaterial: writable_book
 
 #----------- Language ------------------
 
@@ -635,6 +637,7 @@ errors:
   exceeded_max_amount_of_chests_per_shop: You have exceeded the maximum amount of chests (!maxAmountOfChests) that can be linked to a single shop. Please unlink one or more before continuing.
   this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
   could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
+  no_permission_to_inspect_shop: You do not have permission to inspect this shop.
 
 # Used for checking if the config needs to be backed up before upgrading it. (Do not modify unless told to do so)
 ConfigVersionDoNotTouch: 3
