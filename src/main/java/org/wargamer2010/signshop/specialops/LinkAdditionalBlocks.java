@@ -90,6 +90,7 @@ public class LinkAdditionalBlocks implements SignShopSpecialOp {
         containables = this.updateList(seller.getContainables(), containables, ssPlayer, seller);
         activatables = this.updateList(seller.getActivatables(), activatables, ssPlayer, seller);
 
+        SignShop.debugMessage("LinkAdditionalBlocks create args");
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), containables, activatables,
                 ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 

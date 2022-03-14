@@ -548,6 +548,7 @@ public class SignShopItemMeta {
         return signshopUtil.implode(temp.toArray(colorarr), innerListSeperator);
     }
 
+    @SuppressWarnings("SuspiciousRegexArgument")
     private static ImmutableList<Color> getColorsFromString(String colors) {
         List<Color> temp = new LinkedList<>();
         //noinspection SuspiciousRegexArgument

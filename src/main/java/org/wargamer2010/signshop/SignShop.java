@@ -62,6 +62,11 @@ public class SignShop extends JavaPlugin {
     // Vault
     private Vault vault = null;
 
+    public static void debugTiming(String message,long start, long end){
+        if (SignShopConfig.debugging()){
+            debugMessage(message+" took: "+(end-start)+"ms");
+        }
+    }
     public static void debugMessage(String message){
         if(SignShopConfig.debugging()){
             log(message,Level.INFO);
@@ -276,6 +281,7 @@ public class SignShop extends JavaPlugin {
         commandDispatcher.registerHandler("list", HelpHandler.getInstance());
         commandDispatcher.registerHandler("unlink", UnlinkHandler.getInstance());
         commandDispatcher.registerHandler("", HelpHandler.getInstance());
+        commandDispatcher.registerHandler("ignore", IgnoreHandler.getInstance());
     }
 
     private void registerSSListeners() {

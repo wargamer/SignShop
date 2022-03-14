@@ -73,6 +73,7 @@ public class promotePlayer implements SignShopOperation {
         ssArgs.setMessagePart("!promoteto", groupOnSign);
         ssArgs.setMessagePart("!promotefrom", primaryGroup);
 
+        System.out.println("Primary Group: "+Vault.getGlobalPrimaryGroup(player));
         if(!Vault.removeGroupAnyWorld(player, primaryGroup)) {
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_remove_primary_group", ssArgs.getMessageParts()));
             return false;

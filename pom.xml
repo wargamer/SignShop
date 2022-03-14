@@ -6,7 +6,7 @@
 
     <groupId>org.makershaven</groupId>
     <artifactId>SignShop</artifactId>
-    <version>3.6.2.4-dev</version>
+    <version>3.7.0.0-optimize</version>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -109,8 +109,8 @@
         </dependency>
         <dependency>
             <groupId>com.Zrips</groupId>
-            <artifactId>CMI</artifactId>
-            <version>8.5.1.2</version>
+            <artifactId>CMI-API</artifactId>
+            <version>9.0.0.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

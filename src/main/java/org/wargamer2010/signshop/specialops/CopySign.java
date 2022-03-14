@@ -85,6 +85,7 @@ public class CopySign implements SignShopSpecialOp {
                 revert(shopSign, sToChange);
                 return true;
             }
+            SignShop.debugMessage("CopySign create args");
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                     ssPlayer, ssPlayer, shopSign, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
 

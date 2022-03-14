@@ -71,13 +71,15 @@ public class SimpleShopProtector implements Listener {
         containables.remove(toUnlink);
         activatables.remove(toUnlink);
 
-        SignShopPlayer ssPlayer = PlayerCache.getPlayer(seller.getOwner().GetIdentifier());
+        //Do not use the PlayerCache for this. It will make them ignore messages permanently.
+        SignShopPlayer ssPlayer = new SignShopPlayer(seller.getOwner().GetIdentifier());
         ssPlayer.setIgnoreMessages(true);
 
         if(!(seller.getSign().getState() instanceof Sign))
             return true;
         Sign sign = (Sign) seller.getSign().getState();
 
+        SignShop.debugMessage("SimpleShopProtector create args");
         SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sign.getLines()[3]), seller.getItems(), containables, activatables,
                 ssPlayer, seller.getOwner(), seller.getSign(), seller.getOperation(), BlockFace.DOWN, Action.LEFT_CLICK_BLOCK, SignShopArgumentsType.Setup);
 

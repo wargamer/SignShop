@@ -212,7 +212,7 @@ public class TimeManager extends TimerTask {
         try {
             Class<?> fc = Class.forName(fullClassname);
             //noinspection deprecation
-            return fc.newInstance();
+            return fc.newInstance();//TODO fix this
         } catch (InstantiationException | ClassNotFoundException | IllegalAccessException ignored) {
         }
 

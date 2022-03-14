@@ -94,7 +94,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
     }
 
     @Override
-    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
+    public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) { //TODO this takes a while
         if(!ssArgs.isPlayerOnline())
             return true;
         if(ssArgs.getItems().get() == null) {
@@ -138,7 +138,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
     }
 
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {
+    public Boolean runOperation(SignShopArguments ssArgs) {//TODO this takes a while
         if(!checkRequirements(ssArgs, true))
             return false;
         boolean transactedAll = ssArgs.getPlayer().get().takePlayerItems(ssArgs.getItems().get()).isEmpty();

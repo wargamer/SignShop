@@ -56,7 +56,7 @@ public class givePlayerItems implements SignShopOperation {
     }
 
     @Override
-    public Boolean runOperation(SignShopArguments ssArgs) {
+    public Boolean runOperation(SignShopArguments ssArgs) {//TODO this seems to take a while
         boolean transactedAll = ssArgs.getPlayer().get().givePlayerItems(ssArgs.getItems().get()).isEmpty();
         if(!transactedAll)
             ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_complete_operation", null));

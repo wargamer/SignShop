@@ -208,4 +208,27 @@ public class Seller {
         return returnList;
     }
 
+
+    public String getInfo(){
+        String newLine = "\n";
+        StringBuilder sb = new StringBuilder();
+        sb.append("--ShopInfo--").append(newLine)
+                .append("  Owner: ").append(owner.getName()).append(newLine)
+                .append("  Sign Location: ").append(signshopUtil.convertLocationToString(getSignLocation())).append(newLine)
+                .append("  Container Locations: ");
+        for (Block block: containables){
+            sb.append("  ").append(signshopUtil.convertLocationToString(block.getLocation())).append(" ");
+        }
+        sb.append(newLine)
+                .append("  Activatable Locations: ");
+        for (Block block: activatables){
+            sb.append("  ").append(signshopUtil.convertLocationToString(block.getLocation())).append(" ");
+        }
+        sb.append(newLine)
+                .append("  Misc: ");
+        for (String key : miscProps.keySet())
+            sb.append("  ").append(key).append(": ").append(miscProps.get(key)).append(" ");
+
+        return sb.toString();
+    }
 }

@@ -79,7 +79,7 @@ public class SignShopPlayer {
     }
 
     public void sendMessage(String sMessage) {
-        if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null)
+        if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
         if (SignShopConfig.getMessageCooldown() <= 0) {
             sendNonDelayedMessage(sMessage);
@@ -369,7 +369,7 @@ public class SignShopPlayer {
         if (getPlayer() == null)
             return new ItemStack[0];
         ItemStack[] temp = getPlayer().getInventory().getContents();
-        itemUtil.fixBooks(temp);
+        if (SignShopConfig.getEnableWrittenBookFix()) itemUtil.fixBooks(temp); //TODO do we even need to fix books anymore?
         return temp;
     }
 
