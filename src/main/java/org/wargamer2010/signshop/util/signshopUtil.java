@@ -121,7 +121,7 @@ public class signshopUtil {
             Enchantment enchantment;
             int enchantmentLevel;
             String[] enchantmentPair = singleEnchantmentString.split("\\|");
-            enchantment = Enchantment.getByKey(NamespacedKey.minecraft(enchantmentPair[0]));
+            enchantment = Enchantment.getByKey(NamespacedKey.minecraft(enchantmentPair[0].toLowerCase()));
             try {
                 enchantmentLevel = Integer.parseInt(enchantmentPair[1]);
                 enchantmentsMap.put(enchantment, enchantmentLevel);
