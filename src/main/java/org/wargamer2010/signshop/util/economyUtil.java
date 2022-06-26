@@ -32,9 +32,9 @@ public class economyUtil {
         StringBuilder sPrice = new StringBuilder();
         Double fPrice;
         for(int i = 0; i < priceline.length(); i++)
-            if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (SignShopConfig.allowCommaDecimalSeperator() && priceline.charAt(i) == ','))
+            if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (SignShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
                 sPrice.append(priceline.charAt(i));
-        if (SignShopConfig.allowCommaDecimalSeperator()) return parsePriceInternational(sPrice.toString());
+        if (SignShopConfig.allowCommaDecimalSeparator().isPermitted()) return parsePriceInternational(sPrice.toString());
         try {
             fPrice = Double.parseDouble(sPrice.toString());
         }
@@ -89,55 +89,55 @@ public class economyUtil {
                 // There are delimiters, determine what kind
 
                 /*
-                    If the comma comes last, and there is only one comma, it is *probably* comma seperated
-                        Sidenote: it doesn't matter if not actually comma seperated, the parser will fix that later
-                    If there are no commas and more than one period, it has to be a comma seperated number
-                        A comma seperated number cannot be valid with more than one comma,
-                        the same way that a period seperated number cannot be valid with more than one period.
+                    If the comma comes last, and there is only one comma, it is *probably* comma separated
+                        Sidenote: it doesn't matter if not actually comma separated, the parser will fix that later
+                    If there are no commas and more than one period, it has to be a comma separated number
+                        A comma separated number cannot be valid with more than one comma,
+                        the same way that a period separated number cannot be valid with more than one period.
 
-                    This method does not select a guess that is theoretically impossible (contains more than one decimal seperator),
-                    although it will default to attempting to parse a period seperated number
+                    This method does not select a guess that is theoretically impossible (contains more than one decimal separator),
+                    although it will default to attempting to parse a period separated number
                 */
-                boolean likelyCommaSeperated = (lastComma > lastPeriod && totalCommas == 1) || (totalCommas == 0 && totalPeriods > 1);
+                boolean likelyCommaSeparated = (lastComma > lastPeriod && totalCommas == 1) || (totalCommas == 0 && totalPeriods > 1);
 
-                SignShop.debugMessage("Likely: " + (likelyCommaSeperated ? "COMMA SEPERATED" : "PERIOD SEPERATED"));
+                SignShop.debugMessage("Likely: " + (likelyCommaSeparated ? "COMMA SEPARATED" : "PERIOD SEPARATED"));
 
                 /*
                     Start of String
-                    Group 1- All digits and divisions up to a decimal seperator
-                    NCG- A single decimal seperator
+                    Group 1- All digits and divisions up to a decimal separator
+                    NCG- A single decimal separator
                       Group 2- 2 digits after the decimals
                     End of String
 
                     These regexs must match the ENTIRE string. If a complete match is not found it is considered invalid.
-                    This ensures that there is only one decimal seperator. Having 2+ is not valid
+                    This ensures that there is only one decimal separator. Having 2+ is not valid
 
-                    Period-seperated Parser uses ',' as a division, and '.' as a decimal seperator
-                    Comma-seperated Parser uses '.' as a division, and ',' as a decimal seperator
+                    Period-separated Parser uses ',' as a division, and '.' as a decimal separator
+                    Comma-separated Parser uses '.' as a division, and ',' as a decimal separator
                  */
-                Matcher periodSeperatedParser = Pattern.compile("^([\\d,]*+)(?:[.](\\d{0,2}))?$").matcher(price);
-                Matcher commaSeperatedParser = Pattern.compile("^([\\d.]*+)(?:[,](\\d{0,2}))?$").matcher(price);
+                Matcher periodSeparatedParser = Pattern.compile("^([\\d,]*+)(?:[.](\\d{0,2}))?$").matcher(price);
+                Matcher commaSeparatedParser = Pattern.compile("^([\\d.]*+)(?:[,](\\d{0,2}))?$").matcher(price);
 
-                String periodSeperatedString = periodSeperatedParser.matches() ? price.replace(",", "") : null;
-                String commaSeperatedString = commaSeperatedParser.matches() ? price.replace(".", "").replace(",", ".") : null;
+                String periodSeparatedString = periodSeparatedParser.matches() ? price.replace(",", "") : null;
+                String commaSeparatedString = commaSeparatedParser.matches() ? price.replace(".", "").replace(",", ".") : null;
 
                 String priceString = null;
 
-                if (likelyCommaSeperated && commaSeperatedString != null) {
-                    // If the price was guessed to be comma-seperated and the comma-seperated regex passed, its comma-seperated
-                    SignShop.debugMessage("Actual: COMMA SEPERATED");
-                    priceString = commaSeperatedString;
-                } else if (periodSeperatedString != null) {
-                    // If the price was guessed to be period-seperated or the comma-seperated regex failed
-                    // AND the period-seperated regex passed, its period-seperated
-                    SignShop.debugMessage("Actual: PERIOD SEPERATED");
-                    priceString = periodSeperatedString;
+                if (likelyCommaSeparated && commaSeparatedString != null) {
+                    // If the price was guessed to be comma-separated and the comma-separated regex passed, its comma-separated
+                    SignShop.debugMessage("Actual: COMMA SEPARATED");
+                    priceString = commaSeparatedString;
+                } else if (periodSeparatedString != null) {
+                    // If the price was guessed to be period-separated or the comma-separated regex failed
+                    // AND the period-separated regex passed, its period-separated
+                    SignShop.debugMessage("Actual: PERIOD SEPARATED");
+                    priceString = periodSeparatedString;
                 } else {
                     // If the price has not yet been parsed, attempt error correction
-                    if (!likelyCommaSeperated && commaSeperatedString != null) {
-                        // Detection made a mistake, price was guessed as period-seperated, but the period-seperated regex failed and the comma-seperated passed. Its comma-seperated
-                        SignShop.debugMessage("Actual: COMMA SEPERATED");
-                        priceString = commaSeperatedString;
+                    if (!likelyCommaSeparated && commaSeparatedString != null) {
+                        // Detection made a mistake, price was guessed as period-separated, but the period-separated regex failed and the comma-separated passed. Its comma-separated
+                        SignShop.debugMessage("Actual: COMMA SEPARATED");
+                        priceString = commaSeparatedString;
                     } else {
                         // No valid match could be parsed
                         SignShop.debugMessage("Actual: INVALID");
