@@ -244,7 +244,7 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
-        setAllowCommaDecimalSeparator(CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", CommaDecimalSeparatorState.AUTO.name)));
+        setAllowCommaDecimalSeparator(CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", AllowCommaDecimalSeparator.name)));
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
