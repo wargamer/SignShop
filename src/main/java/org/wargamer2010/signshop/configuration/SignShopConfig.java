@@ -69,7 +69,7 @@ public class SignShopConfig {
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
     private static boolean EnableWrittenBookFix = true;
-    private static boolean UseInternationalCurrencyParser = false;
+    private static boolean AllowCommaDecimalSeperator = false;
     private static String ColorCode = "&";
     private static String ChatPrefix = "&6[SignShop]";
     private static ChatColor TextColor = ChatColor.YELLOW;
@@ -244,7 +244,7 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
-        UseInternationalCurrencyParser = ymlThing.getBoolean("UseInternationalCurrencyParser", UseInternationalCurrencyParser);
+        AllowCommaDecimalSeperator = ymlThing.getBoolean("AllowCommaDecimalSeperator", AllowCommaDecimalSeperator);
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
@@ -814,7 +814,7 @@ public class SignShopConfig {
         return (item !=null && item.getType() == inspectMaterial);
     }
 
-    public static boolean useInternationalCurrencyParser() { return UseInternationalCurrencyParser; }
+    public static boolean allowCommaDecimalSeperator() { return AllowCommaDecimalSeperator; }
 
     public static Material getLinkMaterial() {
         return linkMaterial;
