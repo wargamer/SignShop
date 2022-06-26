@@ -30,6 +30,10 @@ MetricsEnabled: true
 # Should verbose debugging messages be enabled? This could get very spammy or it may do nothing.
 Debugging: false
 
+# Use an internationally compatible currency parser that supports ',' and '.' decimal separators.  This may, but likely will not be, incompatible with existing servers.
+# This will be automatically enabled on new servers, and disabled for servers that have existing shops
+AllowCommaDecimalSeparator: auto
+
 #----------- Tools ------------------
 
 # Item names (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
