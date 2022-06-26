@@ -50,10 +50,10 @@ public class economyUtil {
     }
 
     private static double parsePriceInternational(String price) {
-        if (SignShopConfig.debugging()) SignShop.debugMessage("Parsing a price from '" + price + "'");
+        SignShop.debugMessage("Parsing a price from '" + price + "'");
 
         if (price == null || price.equals("")) {
-            if (SignShopConfig.debugging()) SignShop.debugMessage("Empty! (no price found)");
+            SignShop.debugMessage("Empty! (no price found)");
             return 0.0d;
         }
 
@@ -83,39 +83,38 @@ public class economyUtil {
 
             if (totalPeriods == 0 && totalCommas == 0) {
                 // If there are no delimiters, just parse the price
-                if (SignShopConfig.debugging()) SignShop.debugMessage(price + " is not delimited");
+                SignShop.debugMessage(price + " is not delimited");
                 parsedPrice = Double.parseDouble(price);
             } else {
                 // There are delimiters, determine what kind
 
-            /*
-                If the comma comes last, and there is only one comma, it is *probably* comma seperated
-                    Sidenote: it doesn't matter if not actually comma seperated, the parser will fix that later
-                If there are no commas and more than one period, it has to be a comma seperated number
-                    A comma seperated number cannot be valid with more than one comma,
-                    the same way that a period seperated number cannot be valid with more than one period.
+                /*
+                    If the comma comes last, and there is only one comma, it is *probably* comma seperated
+                        Sidenote: it doesn't matter if not actually comma seperated, the parser will fix that later
+                    If there are no commas and more than one period, it has to be a comma seperated number
+                        A comma seperated number cannot be valid with more than one comma,
+                        the same way that a period seperated number cannot be valid with more than one period.
 
-                This method does not select a guess that is theoretically impossible (contains more than one decimal seperator),
-                although it will default to attempting to parse a period seperated number
-            */
+                    This method does not select a guess that is theoretically impossible (contains more than one decimal seperator),
+                    although it will default to attempting to parse a period seperated number
+                */
                 boolean likelyCommaSeperated = (lastComma > lastPeriod && totalCommas == 1) || (totalCommas == 0 && totalPeriods > 1);
 
-                if (SignShopConfig.debugging())
-                    SignShop.debugMessage("Likely: " + (likelyCommaSeperated ? "COMMA SEPERATED" : "PERIOD SEPERATED"));
+                SignShop.debugMessage("Likely: " + (likelyCommaSeperated ? "COMMA SEPERATED" : "PERIOD SEPERATED"));
 
-            /*
-                Start of String
-                Group 1- All digits and divisions up to a decimal seperator
-                NCG- A single decimal seperator
-                  Group 2- 2 digits after the decimals
-                End of String
+                /*
+                    Start of String
+                    Group 1- All digits and divisions up to a decimal seperator
+                    NCG- A single decimal seperator
+                      Group 2- 2 digits after the decimals
+                    End of String
 
-                These regexs must match the ENTIRE string. If a complete match is not found it is considered invalid.
-                This ensures that there is only one decimal seperator. Having 2+ is not valid
+                    These regexs must match the ENTIRE string. If a complete match is not found it is considered invalid.
+                    This ensures that there is only one decimal seperator. Having 2+ is not valid
 
-                Period-seperated Parser uses ',' as a division, and '.' as a decimal seperator
-                Comma-seperated Parser uses '.' as a division, and ',' as a decimal seperator
-             */
+                    Period-seperated Parser uses ',' as a division, and '.' as a decimal seperator
+                    Comma-seperated Parser uses '.' as a division, and ',' as a decimal seperator
+                 */
                 Matcher periodSeperatedParser = Pattern.compile("^([\\d,]*+)(?:[.](\\d{0,2}))?$").matcher(price);
                 Matcher commaSeperatedParser = Pattern.compile("^([\\d.]*+)(?:[,](\\d{0,2}))?$").matcher(price);
 
@@ -126,22 +125,22 @@ public class economyUtil {
 
                 if (likelyCommaSeperated && commaSeperatedString != null) {
                     // If the price was guessed to be comma-seperated and the comma-seperated regex passed, its comma-seperated
-                    if (SignShopConfig.debugging()) SignShop.debugMessage("Actual: COMMA SEPERATED");
+                    SignShop.debugMessage("Actual: COMMA SEPERATED");
                     priceString = commaSeperatedString;
                 } else if (periodSeperatedString != null) {
                     // If the price was guessed to be period-seperated or the comma-seperated regex failed
                     // AND the period-seperated regex passed, its period-seperated
-                    if (SignShopConfig.debugging()) SignShop.debugMessage("Actual: PERIOD SEPERATED");
+                    SignShop.debugMessage("Actual: PERIOD SEPERATED");
                     priceString = periodSeperatedString;
                 } else {
                     // If the price has not yet been parsed, attempt error correction
                     if (!likelyCommaSeperated && commaSeperatedString != null) {
                         // Detection made a mistake, price was guessed as period-seperated, but the period-seperated regex failed and the comma-seperated passed. Its comma-seperated
-                        if (SignShopConfig.debugging()) SignShop.debugMessage("Actual: COMMA SEPERATED");
+                        SignShop.debugMessage("Actual: COMMA SEPERATED");
                         priceString = commaSeperatedString;
                     } else {
                         // No valid match could be parsed
-                        if (SignShopConfig.debugging()) SignShop.debugMessage("Actual: INVALID");
+                        SignShop.debugMessage("Actual: INVALID");
                     }
                 }
 
@@ -155,6 +154,8 @@ public class economyUtil {
 
         // Normalize
         if(parsedPrice < 0.0d || Double.isNaN(parsedPrice) || Double.isInfinite(parsedPrice)) parsedPrice = 0.0d;
+
+        SignShop.debugMessage("Parsed price: " + parsedPrice);
 
         return parsedPrice;
     }
