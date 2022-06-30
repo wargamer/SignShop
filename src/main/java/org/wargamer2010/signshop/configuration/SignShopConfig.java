@@ -491,7 +491,8 @@ public class SignShopConfig {
         }
         else
             error = localisedError.get(sType);
-        return fillInBlanks(error, messageParts);
+        String coloredError = ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(), error);
+        return fillInBlanks(coloredError, messageParts);
     }
 
     public static String getMessage(String sType, String pOperation, Map<String, String> messageParts) {
@@ -513,7 +514,8 @@ public class SignShopConfig {
         else
             message = localisedMessage.get(sType).get(sOperation);
 
-        return fillInBlanks(message, messageParts);
+        String coloredMessage = ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(), message);
+        return  fillInBlanks(coloredMessage, messageParts);
     }
 
     public static List<String> getBlocks(String pOp) {
@@ -876,7 +878,7 @@ public class SignShopConfig {
     }
 
     public static String getChatPrefix() {
-        return ChatPrefix;
+        return ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(),ChatPrefix);
     }
 
     public static char getColorCode() {
