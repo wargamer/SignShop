@@ -75,7 +75,7 @@ public class economyUtilTest extends TestCase {
         runParserCacheTests(true, testSize, runs);
     }
 
-    public void runParserCacheTests(boolean oldParser, int testSize, int runs) {
+    private void runParserCacheTests(boolean oldParser, int testSize, int runs) {
         System.out.println("Parser  : " + (oldParser ? "UNITED STATES" : "INTERNATIONAL"));
         System.out.println("Data set: " + testSize + " price(s)");
         System.out.println("Runs    : " + runs);
@@ -234,7 +234,7 @@ public class economyUtilTest extends TestCase {
     /*
     Data storage
      */
-    static class PriceCacheTestData {
+    private static class PriceCacheTestData {
         // Data variables
         long timePriceParseBegin;
         long timePriceParseEnd;
@@ -290,7 +290,7 @@ public class economyUtilTest extends TestCase {
     Statistics calculator
      */
 
-    static class Statistics {
+    private static class Statistics {
         long mean, standardDeviation;
 
         Statistics(long mean, long standardDeviation) {
