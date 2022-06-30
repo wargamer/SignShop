@@ -34,6 +34,11 @@ Debugging: false
 # This will be automatically enabled on new servers, and disabled for servers that have existing shops
 AllowCommaDecimalSeparator: auto
 
+# If the server should cache the parses prices for signs.
+# This slightly increases computation time per request, but greatly reduces computation time for repeated requests
+# Most useful on larger servers with many signs
+CachePrices: true
+
 #----------- Tools ------------------
 
 # Item names (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
