@@ -1,11 +1,14 @@
 package org.wargamer2010.signshop.util;
 
+import com.opencsv.CSVWriter;
 import junit.framework.TestCase;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class economyUtilTest extends TestCase {
     /**
@@ -70,57 +73,117 @@ public class economyUtilTest extends TestCase {
     }
 
     public void testPriceCaching() {
-        int testSize = 3000000, runs = 5;
-        runParserCacheTests(false, testSize, runs);
-        runParserCacheTests(true, testSize, runs);
+        runBatchParserCacheTests(
+                new boolean[]{true, false},
+                new int[]{1000, 10000},
+                new int[]{10},
+                new int[]{10, 55, 100},
+                new Order[]{Order.GROUPED, Order.SEQUENTIAL, Order.RANDOM}
+        );
     }
 
-    private void runParserCacheTests(boolean oldParser, int testSize, int runs) {
-        System.out.println("Parser  : " + (oldParser ? "UNITED STATES" : "INTERNATIONAL"));
-        System.out.println("Data set: " + testSize + " price(s)");
-        System.out.println("Runs    : " + runs);
+    private void runBatchParserCacheTests(boolean[] newParserValues, int[] testSizeValues, int[] runsValues, int[] variationValues, Order[] orderValues) {
+        List<ParserCacheTestData> allTestData = new ArrayList<>();
 
+        for (int testSize : testSizeValues) {
+            for (int variation : variationValues) {
+                for (Order order : orderValues) {
+                    /*
+                    Generate Input Data
+                     */
+                    List<String> testValues = new ArrayList<>();
+                    if (variation > 0) {
+                        List<String> variations = new ArrayList<>();
+                        for (int i = 0; i < variation; i++) variations.add(randomPriceString());
+
+                        int repeats = (int) ((double) testSize / variation);
+                        int variant;
+
+                        for (int i = 0; i < testSize; i++) {
+                            if (order == Order.GROUPED) variant = i / repeats;
+                            else variant = i;
+
+                            // Normalize
+                            variant %= variation;
+
+                            testValues.add(variations.get(variant));
+                        }
+
+                        if (order == Order.RANDOM) Collections.shuffle(testValues);
+                    } else {
+                        for (int i = 0; i < testSize; i++) testValues.add(randomPriceString());
+                    }
+
+                    for (boolean newParser : newParserValues) {
+                        for (int runs : runsValues) {
+                            ParserCacheTestData testData = runParserCacheTest(newParser, runs, testValues);
+
+                            testData.testSize = testSize;
+                            testData.variation = variation;
+                            testData.order = order;
+
+                            testData.calculate();
+
+                            allTestData.add(testData);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        try {
+            File f = new File("ParserCacheTest" + System.currentTimeMillis() + ".csv");
+            CSVWriter writer = new CSVWriter(new FileWriter(f));
+
+            writer.writeNext(ParserCacheTestData.csvHeaders);
+            writer.writeAll(allTestData.stream()
+                    .sorted(Comparator.comparing(ParserCacheTestData::getParser)
+                            .thenComparing(ParserCacheTestData::getTestSize)
+                            .thenComparing(ParserCacheTestData::getVariation)
+                            .thenComparing(ParserCacheTestData::getOrder))
+                    .map(ParserCacheTestData::csvData).collect(Collectors.toList()));
+            writer.close();
+            System.out.println("Saved data to " + f.getCanonicalPath());
+        } catch (IOException e) {
+            System.out.println("Failed to write CSV file");
+        }
+    }
+
+    private ParserCacheTestData runParserCacheTest(boolean newParser, int runs, List<String> testValues) {
         // Set up the correct parser
         SignShopConfig.CommaDecimalSeparatorState state = SignShopConfig.allowCommaDecimalSeparator();
-        if (oldParser) SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.FALSE, false);
-        else SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
+        if (newParser)
+            SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
+        else SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.FALSE, false);
 
         // Data storage for run statistics
-        List<PriceCacheTestData> runData = new ArrayList<>();
+        ParserCacheTestData testData = new ParserCacheTestData();
 
-        /*
-        Generate Input Data
-         */
-
-        String[] testData = new String[testSize];
-        for (int i = 0; i < testData.length; i++) testData[i] = randomPriceString();
+        testData.newParser = newParser;
+        testData.runs = runs;
 
         /*
         Run the parser and collect data
          */
         for (int run = 0; run < runs; run++) {
-            System.out.println("Executing: Run " + (run + 1) + " / " + runs);
-
             // Clear the cache
             economyUtil.priceCache.clear();
 
             // Data variables
-            long timePriceParseBegin, timePriceParseEnd,
-                    timePriceParseCacheBegin, timePriceParseCacheEnd,
-                    timeCacheHitBegin, timeCacheHitEnd;
-            long cacheSize;
+            ParserCacheTestRunData runData = new ParserCacheTestRunData();
 
             /*
             Parse Data, no cache
              */
 
             // Time before parsing
-            timePriceParseBegin = System.currentTimeMillis();
+            runData.timePriceParseBegin = System.currentTimeMillis();
 
-            double[] parsed = parsePrices(testData, false);
+            parsePrices(testValues, false);
 
             // Time after parsing
-            timePriceParseEnd = System.currentTimeMillis();
+            runData.timePriceParseEnd = System.currentTimeMillis();
 
             /*
             Parse data, with cache
@@ -130,74 +193,50 @@ public class economyUtilTest extends TestCase {
             long preParseCacheMemory = usedMemory();
 
             // Time before parsing with cache
-            timePriceParseCacheBegin = System.currentTimeMillis();
+            runData.timePriceParseCacheBegin = System.currentTimeMillis();
 
-            parsePrices(testData, true);
+            List<Double> ignored = parsePrices(testValues, true);
 
             // Time after parsing
-            timePriceParseCacheEnd = System.currentTimeMillis();
+            runData.timePriceParseCacheEnd = System.currentTimeMillis();
 
             // Measure memory after data is parsed with cache
-            cacheSize = usedMemory() - preParseCacheMemory;
+            runData.cacheSize = usedMemory() - preParseCacheMemory;
 
             /*
             Hit the cached data
              */
 
             // Time before hitting cache
-            timeCacheHitBegin = System.currentTimeMillis();
+            runData.timeCacheHitBegin = System.currentTimeMillis();
 
-            parsePrices(testData, true);
+            parsePrices(testValues, true);
 
             // Time after cache hit
-            timeCacheHitEnd = System.currentTimeMillis();
+            runData.timeCacheHitEnd = System.currentTimeMillis();
 
             /*
             Test is complete
              */
-            runData.add(new PriceCacheTestData(timePriceParseBegin, timePriceParseEnd,
-                    timePriceParseCacheBegin, timePriceParseCacheEnd,
-                    timeCacheHitBegin, timeCacheHitEnd,
-                    cacheSize));
+            testData.runData.add(runData);
         }
 
         SignShopConfig.setAllowCommaDecimalSeparator(state, false);
 
-        System.out.println("Aggregating data...");
-        Statistics parseTimes = statistics(runData.stream().mapToLong((data) -> data.timePriceParseEnd - data.timePriceParseBegin).toArray());
-        Statistics cachedParseTimes = statistics(runData.stream().mapToLong((data) -> data.timePriceParseCacheEnd - data.timePriceParseCacheBegin).toArray());
-        Statistics cacheHitTimes = statistics(runData.stream().mapToLong((data) -> data.timeCacheHitEnd - data.timeCacheHitBegin).toArray());
-        Statistics cacheSizes = statistics(runData.stream().mapToLong(PriceCacheTestData::getCacheSize).toArray());
-
-        System.out.println("Test Complete. Results:");
-        System.out.println();
-        System.out.println("Average time to parse prices (no cache)  : " + parseTimes.mean + "ms");
-        System.out.println("  Deviation                              : " + parseTimes.standardDeviation + "ms");
-        System.out.println();
-        System.out.println("Average time to parse prices (with cache): " + cachedParseTimes.mean + "ms");
-        System.out.println("  Deviation                              : " + cachedParseTimes.standardDeviation + "ms");
-        System.out.println();
-        System.out.println("Average time to hit cache                : " + cacheHitTimes.mean + "ms");
-        System.out.println("  Deviation                              : " + cacheHitTimes.standardDeviation + "ms");
-        System.out.println();
-        System.out.println("Average total cache size                 : " + cacheSizes.mean + "MB");
-        System.out.println("  Deviation                              : " + cacheSizes.standardDeviation + "MB");
+        return testData;
     }
 
     /**
      * Parse an array of prices
-     * @param prices The data to be parsed
+     *
+     * @param prices   The data to be parsed
      * @param useCache If the cache should be used
-     * @return An array of parsed prices
      */
-    private double[] parsePrices(String[] prices, boolean useCache) {
+    private List<Double> parsePrices(List<String> prices, boolean useCache) {
         boolean prev = SignShopConfig.CachePrices();
         SignShopConfig.setCachePrices(useCache);
 
-        double[] parsed = new double[prices.length];
-        for (int i = 0; i < prices.length; i++) {
-            parsed[i] = economyUtil.parsePrice(prices[i]);
-        }
+        List<Double> parsed = prices.stream().map(economyUtil::parsePrice).collect(Collectors.toList());
 
         SignShopConfig.setCachePrices(prev);
 
@@ -206,35 +245,116 @@ public class economyUtilTest extends TestCase {
 
     /**
      * Random alphanumeric price string
+     *
      * @return A 20-character alpha-numeric string
      */
     private String randomPriceString() {
-        int leftLimit = 48; // numeral '0'
-        int rightLimit = 122; // letter 'z'
-        int targetStringLength = 20;
+        int targetStringLength = 7;
         Random random = new Random();
 
-        return random.ints(leftLimit, rightLimit + 1)
-                .filter(i -> (i <= 57 || i >= 65) && (i <= 90 || i >= 97))
+        String prefix = random.ints('A', 'z')
+                .filter(i -> (i <= 'Z' || i >= 'a'))
                 .limit(targetStringLength)
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                 .toString();
+
+        String number = String.valueOf(random.nextInt(10000) + random.nextDouble());
+        if (random.nextDouble() > 0.5) number = number.replace('.', ',');
+
+        String suffix = random.ints('A', 'z')
+                .filter(i -> (i <= 'Z' || i >= 'a'))
+                .limit(targetStringLength)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+
+        return prefix + number + suffix;
     }
 
     /**
      * Get amount of memory currently in use
-     * @return Used memory (in MB)
+     *
+     * @return Used memory (in KB)
      */
     private long usedMemory() {
         Runtime runtime = Runtime.getRuntime();
         runtime.gc();
-        return (runtime.totalMemory() - runtime.freeMemory()) / 1000000;
+        return (runtime.totalMemory() - runtime.freeMemory()) / 1000;
+    }
+
+    private enum Order {
+        GROUPED,
+        SEQUENTIAL,
+        RANDOM
     }
 
     /*
     Data storage
      */
-    private static class PriceCacheTestData {
+    private static class ParserCacheTestData {
+        static String[] csvHeaders = {"New Parser", "# of Runs", "Test Size", "Variations", "Order",
+                "Avg. Parse Time", "Parse Time Deviation",
+                "Avg. Parse Time w/ Cache", "Parse Time w/ Cache Deviation",
+                "Avg. Cache Hit Time", "Cache Hit Time Deviation",
+                "Avg. Cache Size", "Cache Size Deviation"
+        };
+
+        boolean newParser;
+
+        boolean getParser() {
+            return newParser;
+        }
+
+        int testSize, runs, variation;
+
+        int getTestSize() {
+            return testSize;
+        }
+
+        int getRuns() {
+            return runs;
+        }
+
+        int getVariation() {
+            return variation;
+        }
+
+        Order order;
+
+        Order getOrder() {
+            return order;
+        }
+
+        List<ParserCacheTestRunData> runData = new ArrayList<>();
+
+        NumeralArrayStatistic parseTimes, cachedParseTimes, cacheHitTimes, cacheSizes;
+
+        void calculate() {
+            parseTimes = new NumeralArrayStatistic(runData.stream().mapToLong(ParserCacheTestRunData::priceParseDuration).toArray());
+            cachedParseTimes = new NumeralArrayStatistic(runData.stream().mapToLong(ParserCacheTestRunData::priceParseCacheDuration).toArray());
+            cacheHitTimes = new NumeralArrayStatistic(runData.stream().mapToLong(ParserCacheTestRunData::cacheHitDuration).toArray());
+            cacheSizes = new NumeralArrayStatistic(runData.stream().mapToLong(ParserCacheTestRunData::getCacheSize).toArray());
+        }
+
+        String[] csvData() {
+            return new String[]{
+                    String.valueOf(newParser),
+                    String.valueOf(runs),
+                    String.valueOf(testSize),
+                    String.valueOf(variation),
+                    order.toString(),
+                    parseTimes.mean + "ms",
+                    parseTimes.standardDeviation + "ms",
+                    cachedParseTimes.mean + "ms",
+                    cachedParseTimes.standardDeviation + "ms",
+                    cacheHitTimes.mean + "ms",
+                    cacheHitTimes.standardDeviation + "ms",
+                    cacheSizes.mean + " KB",
+                    cacheSizes.standardDeviation + " KB"
+            };
+        }
+    }
+
+    private static class ParserCacheTestRunData {
         // Data variables
         long timePriceParseBegin;
         long timePriceParseEnd;
@@ -244,45 +364,20 @@ public class economyUtilTest extends TestCase {
         long timeCacheHitEnd;
         long cacheSize;
 
-        public long getTimePriceParseBegin() {
-            return timePriceParseBegin;
+        public long priceParseDuration() {
+            return timePriceParseEnd - timePriceParseBegin;
         }
 
-        public long getTimePriceParseEnd() {
-            return timePriceParseEnd;
+        public long priceParseCacheDuration() {
+            return timePriceParseCacheEnd - timePriceParseCacheBegin;
         }
 
-        public long getTimePriceParseCacheBegin() {
-            return timePriceParseCacheBegin;
-        }
-
-        public long getTimePriceParseCacheEnd() {
-            return timePriceParseCacheEnd;
-        }
-
-        public long getTimeCacheHitBegin() {
-            return timeCacheHitBegin;
-        }
-
-        public long getTimeCacheHitEnd() {
-            return timeCacheHitEnd;
+        public long cacheHitDuration() {
+            return timeCacheHitEnd - timeCacheHitBegin;
         }
 
         public long getCacheSize() {
             return cacheSize;
-        }
-
-        PriceCacheTestData(long timePriceParseBegin, long timePriceParseEnd,
-                           long timePriceParseCacheBegin, long timePriceParseCacheEnd,
-                           long timeCacheHitBegin, long timeCacheHitEnd,
-                           long cacheSize) {
-            this.timePriceParseBegin = timePriceParseBegin;
-            this.timePriceParseEnd = timePriceParseEnd;
-            this.timePriceParseCacheBegin = timePriceParseCacheBegin;
-            this.timePriceParseCacheEnd = timePriceParseCacheEnd;
-            this.timeCacheHitBegin = timeCacheHitBegin;
-            this.timeCacheHitEnd = timeCacheHitEnd;
-            this.cacheSize = cacheSize;
         }
     }
 
@@ -290,29 +385,23 @@ public class economyUtilTest extends TestCase {
     Statistics calculator
      */
 
-    private static class Statistics {
+    private static class NumeralArrayStatistic {
+        long[] data;
         long mean, standardDeviation;
 
-        Statistics(long mean, long standardDeviation) {
-            this.mean = mean;
-            this.standardDeviation = standardDeviation;
+        NumeralArrayStatistic(long[] arr) {
+            data = arr;
+
+            double sum = 0.0, standardDeviation = 0.0;
+
+            for (long num : arr) sum += num;
+
+            double mean = sum / arr.length;
+
+            for (long num : arr) standardDeviation += Math.pow(num - mean, 2);
+
+            this.mean = (long) mean;
+            this.standardDeviation = (long) Math.sqrt(standardDeviation / arr.length);
         }
-    }
-
-    private static Statistics statistics(long[] numArray) {
-        double sum = 0.0, standardDeviation = 0.0;
-        int length = numArray.length;
-
-        for (long num : numArray) {
-            sum += num;
-        }
-
-        double mean = sum / length;
-
-        for (long num : numArray) {
-            standardDeviation += Math.pow(num - mean, 2);
-        }
-
-        return new Statistics((long) mean, (long) Math.sqrt(standardDeviation / length));
     }
 }
