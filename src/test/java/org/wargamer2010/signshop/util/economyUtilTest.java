@@ -72,78 +72,114 @@ public class economyUtilTest extends TestCase {
         SignShopConfig.setAllowCommaDecimalSeparator(prev, false);
     }
 
+    /**
+     * Test the efficiency of the parsers, with and without caching enabled
+     */
     public void testPriceCaching() {
         runBatchParserCacheTests(
                 new boolean[]{true, false},
                 new int[]{1000, 10000},
-                new int[]{10},
+                10,
                 new int[]{10, 55, 100},
                 new Order[]{Order.GROUPED, Order.SEQUENTIAL, Order.RANDOM}
         );
     }
 
-    private void runBatchParserCacheTests(boolean[] newParserValues, int[] testSizeValues, int[] runsValues, int[] variationValues, Order[] orderValues) {
+    /**
+     * Test the parsers. This function will iterate over every possible permutation of the provided input parameters, calling {@link economyUtilTest#runParserCacheTest(boolean, int, List)}
+     * The function will generate one random set of data for each permutation of the test size, number of variations, and order of the variations
+     *
+     * @param newParserValues Possible values for "use new parser"
+     * @param testSizeValues  A set of values for the size of tests to execute
+     * @param runs            How many times the same test should be run (increases data reliability using data averages and standard deviation)
+     * @param variationValues A set of values for the number of different prices to be tested
+     * @param orderValues     A set of values for the order of the prices to be tested
+     */
+    private void runBatchParserCacheTests(boolean[] newParserValues, int[] testSizeValues, int runs, int[] variationValues, Order[] orderValues) {
+        // Create a list to store all the test data
         List<ParserCacheTestData> allTestData = new ArrayList<>();
 
+        // For every test size
         for (int testSize : testSizeValues) {
+            // Test every number of variations
             for (int variation : variationValues) {
+                // Test in every order
                 for (Order order : orderValues) {
                     /*
-                    Generate Input Data
+                    Generate Input Data (only 1 set of input data per permutation of test size, number of variations, and order
                      */
+                    // Store the test values
                     List<String> testValues = new ArrayList<>();
+
                     if (variation > 0) {
+                        // If we have a limited number of variations
+
+                        // Generate the different variations
                         List<String> variations = new ArrayList<>();
                         for (int i = 0; i < variation; i++) variations.add(randomPriceString());
 
+                        // Calculate how many times each variation will be used (only needs to be done once)
                         int repeats = (int) ((double) testSize / variation);
-                        int variant;
-
+                        // Populate the test data with the variations
                         for (int i = 0; i < testSize; i++) {
-                            if (order == Order.GROUPED) variant = i / repeats;
-                            else variant = i;
+                            // Calculate the variant to be used
+                            int variant = (order == Order.GROUPED) ? i / repeats : i;
 
-                            // Normalize
+                            // Normalize (loop repeatedly from the first variant to the last)
                             variant %= variation;
 
+                            // Add the variant
                             testValues.add(variations.get(variant));
                         }
 
+                        // If it's random, shuffle it.
                         if (order == Order.RANDOM) Collections.shuffle(testValues);
                     } else {
+                        // Infinite variations
                         for (int i = 0; i < testSize; i++) testValues.add(randomPriceString());
                     }
 
+                    // Test every parser variant
                     for (boolean newParser : newParserValues) {
-                        for (int runs : runsValues) {
-                            ParserCacheTestData testData = runParserCacheTest(newParser, runs, testValues);
+                        // Run the test
+                        ParserCacheTestData testData = runParserCacheTest(newParser, runs, testValues);
 
-                            testData.testSize = testSize;
-                            testData.variation = variation;
-                            testData.order = order;
+                        // Set some metadata about the test
+                        testData.testSize = testSize;
+                        testData.variation = variation;
+                        testData.order = order;
 
-                            testData.calculate();
+                        // Calculate the statistics
+                        testData.calculate();
 
-                            allTestData.add(testData);
-                        }
+                        // Store the test
+                        allTestData.add(testData);
                     }
 
                 }
             }
         }
 
+        // Save the data to a CSV
         try {
+            // Get a file and a CSV writer
             File f = new File("ParserCacheTest" + System.currentTimeMillis() + ".csv");
             CSVWriter writer = new CSVWriter(new FileWriter(f));
 
+            // Write the headers
             writer.writeNext(ParserCacheTestData.csvHeaders);
+
+            // Write all the data sorted by parser version, then test size, then number of variations, then order of variations
             writer.writeAll(allTestData.stream()
                     .sorted(Comparator.comparing(ParserCacheTestData::getParser)
                             .thenComparing(ParserCacheTestData::getTestSize)
                             .thenComparing(ParserCacheTestData::getVariation)
                             .thenComparing(ParserCacheTestData::getOrder))
                     .map(ParserCacheTestData::csvData).collect(Collectors.toList()));
+
+            // Close the writer
             writer.close();
+
             System.out.println("Saved data to " + f.getCanonicalPath());
         } catch (IOException e) {
             System.out.println("Failed to write CSV file");
@@ -160,6 +196,7 @@ public class economyUtilTest extends TestCase {
         // Data storage for run statistics
         ParserCacheTestData testData = new ParserCacheTestData();
 
+        // Set some metadata for the test
         testData.newParser = newParser;
         testData.runs = runs;
 
@@ -221,6 +258,7 @@ public class economyUtilTest extends TestCase {
             testData.runData.add(runData);
         }
 
+        // Reset the parser, just in case
         SignShopConfig.setAllowCommaDecimalSeparator(state, false);
 
         return testData;
@@ -245,22 +283,29 @@ public class economyUtilTest extends TestCase {
 
     /**
      * Random alphanumeric price string
-     *
+     * <br>7 letter prefix
+     * <br>A number between 0.0 and 10000.0, with a 50% chance of being period seperated and a 50% chance of being comma seperated
+     * <br>7 letter suffix
      * @return A 20-character alpha-numeric string
      */
     private String randomPriceString() {
         int targetStringLength = 7;
         Random random = new Random();
 
+        // Generate 7 random integers corresponding to Unicode a-zA-Z
         String prefix = random.ints('A', 'z')
                 .filter(i -> (i <= 'Z' || i >= 'a'))
                 .limit(targetStringLength)
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                 .toString();
 
+        // Random double between 0.0 and 10000.0
         String number = String.valueOf(random.nextInt(10000) + random.nextDouble());
+
+        // 50% chance to be comma seperated, 50% chance to be period seperated
         if (random.nextDouble() > 0.5) number = number.replace('.', ',');
 
+        // Generate 7 random integers corresponding to Unicode a-zA-Z
         String suffix = random.ints('A', 'z')
                 .filter(i -> (i <= 'Z' || i >= 'a'))
                 .limit(targetStringLength)
