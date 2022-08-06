@@ -244,7 +244,7 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
-        setAllowCommaDecimalSeparator(CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", AllowCommaDecimalSeparator.name)));
+        AllowCommaDecimalSeparator = CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", AllowCommaDecimalSeparator.name));
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
@@ -845,11 +845,11 @@ public class SignShopConfig {
         AllowCommaDecimalSeparator = state;
 
         if (doSave) {
-            SignShop.log("AllowCommaDecimalSeparator has been updated to " + state.name, Level.INFO);
             FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
             File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
             ymlThing.set("AllowCommaDecimalSeparator", state.name);
             saveConfig(ymlThing, configFile);
+            SignShop.debugMessage("AllowCommaDecimalSeparator has been updated to " + state.name + " in the config.");
         }
     }
     public static void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state) {

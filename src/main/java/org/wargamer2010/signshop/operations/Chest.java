@@ -14,7 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
 
-import static org.wargamer2010.signshop.operations.SignShopArguments.seperator;
+import static org.wargamer2010.signshop.operations.SignShopArguments.separator;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
@@ -71,7 +71,7 @@ public class Chest implements SignShopOperation {
         ItemStack[] isTotalItems = itemUtil.getAllItemStacksForContainables(ssArgs.getContainables().get());
         if(isTotalItems.length > 0) {
             ssArgs.setMessagePart("!items", itemUtil.itemStackToString(isTotalItems));
-            ssArgs.miscSettings.put("chest" + iChestnumber, signshopUtil.implode(itemUtil.convertItemStacksToString(isTotalItems), seperator));
+            ssArgs.miscSettings.put("chest" + iChestnumber, signshopUtil.implode(itemUtil.convertItemStacksToString(isTotalItems), separator));
         }
 
         // Since we'll be requesting the MetaID before the Seller is created, we need to register the items here
@@ -101,11 +101,11 @@ public class Chest implements SignShopOperation {
         ssArgs.forceMessageKeys.put("!items", ("!chest" + iChestnumber));
         String misc = ssArgs.miscSettings.get(("chest" + iChestnumber));
         String[] sItemss;
-        if(!misc.contains(SignShopArguments.seperator)) {
+        if(!misc.contains(SignShopArguments.separator)) {
             sItemss = new String[1];
             sItemss[0] = misc;
         } else
-            sItemss = misc.split(SignShopArguments.seperator);
+            sItemss = misc.split(SignShopArguments.separator);
         ItemStack[] isItemss;
 
         isItemss = itemUtil.convertStringtoItemStacks(Arrays.asList(sItemss));
