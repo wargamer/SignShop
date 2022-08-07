@@ -435,7 +435,11 @@ public class SignShopItemMeta {
             else if(type == MetaType.Skull) {
                 SkullMeta skullmeta = (SkullMeta) meta;
                 if(skullmeta.hasOwner()) {
-                    metamap.put("owner", skullmeta.getOwningPlayer().getName());
+                    String name = skullmeta.getOwningPlayer().getName();
+                    if (name == null){
+                        name = "null";
+                    }
+                    metamap.put("owner",name);
                 }
             }
             else if(type == MetaType.Repairable) {

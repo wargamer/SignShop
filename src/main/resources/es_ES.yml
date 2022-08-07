@@ -1,5 +1,11 @@
 # If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
 # You can also visit our Bukkit page at tiny.cc/SignShop
+signs:
+  CompraFinita: Buy
+  VentaFinita: Sell
+  Comprar: iBuy
+  Vender: iSell
+  Dispositivo: Device
 
 messages:
   confirm:

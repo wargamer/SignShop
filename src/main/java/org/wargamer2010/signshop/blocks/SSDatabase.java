@@ -123,6 +123,11 @@ public class SSDatabase {
 
             if(params != null && !params.isEmpty()) {
                 for(Map.Entry<Integer, Object> param : params.entrySet()) {
+                    if (param.getValue() == null) {
+                        SignShop.log("Query: " + Query + " with Key: "+param.getKey()+ " has null value. Setting the value to a String object of 'null'", Level.WARNING);
+                        param.setValue("null");
+
+                    }
                     if(param.getValue().getClass().equals(int.class) || param.getValue().getClass().equals(Integer.class)) {
                         st.setInt(param.getKey(), ((Integer)param.getValue()));
                     } else if(param.getValue().getClass().equals(String.class)) {

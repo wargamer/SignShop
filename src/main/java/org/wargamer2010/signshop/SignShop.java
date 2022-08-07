@@ -158,6 +158,20 @@ public class SignShop extends JavaPlugin {
         store = Storage.init(new File(this.getDataFolder(), "sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
 
+        if (SignShopConfig.allowCommaDecimalSeparator() == SignShopConfig.CommaDecimalSeparatorState.AUTO) {
+            // Plugin must decide if the comma separators are enabled
+            SignShopConfig.CommaDecimalSeparatorState state;
+            if (store.shopCount() == 0) {
+                log("Comma decimal seperators have been enabled because this server has 0 shops.",Level.INFO);
+                state = SignShopConfig.CommaDecimalSeparatorState.TRUE;
+            } else {
+                log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.",Level.INFO);
+                state = SignShopConfig.CommaDecimalSeparatorState.FALSE;
+            }
+            log("This can be changed by modifying 'AllowCommaDecimalSeperators' in the config.", Level.INFO);
+            SignShopConfig.setAllowCommaDecimalSeparator(state);
+        }
+
         if (SignShopConfig.getTransactionLog()) {
             try {
                 FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);

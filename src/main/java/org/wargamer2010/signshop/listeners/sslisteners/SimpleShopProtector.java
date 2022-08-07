@@ -50,11 +50,11 @@ public class SimpleShopProtector implements Listener {
             Seller seller = Storage.get().getSeller(bTemp.getLocation());
             String temp = seller.getMisc(miscname);
             temp = temp.replace(signshopUtil.convertLocationToString(block.getLocation()), "");
-            temp = temp.replace(SignShopArguments.seperator+SignShopArguments.seperator, SignShopArguments.seperator);
+            temp = temp.replace(SignShopArguments.separator +SignShopArguments.separator, SignShopArguments.separator);
             if(temp.length() > 0) {
-                if(temp.endsWith(SignShopArguments.seperator))
+                if(temp.endsWith(SignShopArguments.separator))
                     temp = temp.substring(0, temp.length()-1);
-                if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.seperator.charAt(0))
+                if(temp.length() > 1 && temp.charAt(0) == SignShopArguments.separator.charAt(0))
                     temp = temp.substring(1);
             }
             if(temp.length() == 0)

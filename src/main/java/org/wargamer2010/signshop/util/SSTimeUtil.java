@@ -46,6 +46,12 @@ public class SSTimeUtil {
         return new SimpleDateFormat("MMddyyHHmm").format(new Date(System.currentTimeMillis()));
     }
 
+    public static String getDateTimeFromLong(Long timeSinceEpoch){
+        if (timeSinceEpoch <= 0) return "Never";
+        return new SimpleDateFormat("MM'/'dd'/'yy'-'HH':'mm").format(new Date(timeSinceEpoch));
+
+    }
+
     private static class timeUnit {
         int maxAmount;
         int currentAmount = 0;

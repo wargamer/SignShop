@@ -9,6 +9,7 @@ import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -213,7 +214,7 @@ public class Seller {
         String newLine = "\n";
         StringBuilder sb = new StringBuilder();
         sb.append("--ShopInfo--").append(newLine)
-                .append("  Owner: ").append(owner.getName()).append(newLine)
+                .append("  Owner: ").append(owner.getName()).append(" LastSeen: ").append(SSTimeUtil.getDateTimeFromLong(owner.getOfflinePlayer().getLastPlayed())).append(newLine)
                 .append("  Sign Location: ").append(signshopUtil.convertLocationToString(getSignLocation())).append(newLine)
                 .append("  Container Locations: ");
         for (Block block: containables){
