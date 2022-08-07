@@ -69,8 +69,8 @@ public class SignShopConfig {
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
     private static boolean EnableWrittenBookFix = true;
-    private static CommaDecimalSeparatorState AllowCommaDecimalSeparator = CommaDecimalSeparatorState.AUTO;
     private static boolean CachePrices = true;
+    private static CommaDecimalSeparatorState AllowCommaDecimalSeparator = CommaDecimalSeparatorState.AUTO;
     private static String ColorCode = "&";
     private static String ChatPrefix = "&6[SignShop]";
     private static ChatColor TextColor = ChatColor.YELLOW;
@@ -858,7 +858,7 @@ public class SignShopConfig {
         setAllowCommaDecimalSeparator(state, true);
     }
 
-    public static boolean CachePrices() {
+    public static boolean cachePrices() {
         return CachePrices;
     }
     public static void setCachePrices(boolean value) {

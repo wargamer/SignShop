@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class economyUtilTest extends TestCase {
+public class EconomyUtilTests extends TestCase {
     /**
      * Test the international price parser.
      */
@@ -79,23 +79,20 @@ public class economyUtilTest extends TestCase {
         runBatchParserCacheTests(
                 new boolean[]{true, false},
                 new int[]{1000, 10000},
-                10,
                 new int[]{10, 55, 100},
                 new Order[]{Order.GROUPED, Order.SEQUENTIAL, Order.RANDOM}
         );
     }
 
     /**
-     * Test the parsers. This function will iterate over every possible permutation of the provided input parameters, calling {@link economyUtilTest#runParserCacheTest(boolean, int, List)}
+     * Test the parsers. This function will iterate over every possible permutation of the provided input parameters, calling {@link EconomyUtilTests#runParserCacheTest(boolean, int, List)}
      * The function will generate one random set of data for each permutation of the test size, number of variations, and order of the variations
-     *
-     * @param newParserValues Possible values for "use new parser"
+     *  @param newParserValues Possible values for "use new parser"
      * @param testSizeValues  A set of values for the size of tests to execute
-     * @param runs            How many times the same test should be run (increases data reliability using data averages and standard deviation)
      * @param variationValues A set of values for the number of different prices to be tested
      * @param orderValues     A set of values for the order of the prices to be tested
      */
-    private void runBatchParserCacheTests(boolean[] newParserValues, int[] testSizeValues, int runs, int[] variationValues, Order[] orderValues) {
+    private void runBatchParserCacheTests(boolean[] newParserValues, int[] testSizeValues, int[] variationValues, Order[] orderValues) {
         // Create a list to store all the test data
         List<ParserCacheTestData> allTestData = new ArrayList<>();
 
@@ -142,7 +139,7 @@ public class economyUtilTest extends TestCase {
                     // Test every parser variant
                     for (boolean newParser : newParserValues) {
                         // Run the test
-                        ParserCacheTestData testData = runParserCacheTest(newParser, runs, testValues);
+                        ParserCacheTestData testData = runParserCacheTest(newParser, 10, testValues);
 
                         // Set some metadata about the test
                         testData.testSize = testSize;
@@ -271,7 +268,7 @@ public class economyUtilTest extends TestCase {
      * @param useCache If the cache should be used
      */
     private List<Double> parsePrices(List<String> prices, boolean useCache) {
-        boolean prev = SignShopConfig.CachePrices();
+        boolean prev = SignShopConfig.cachePrices();
         SignShopConfig.setCachePrices(useCache);
 
         List<Double> parsed = prices.stream().map(economyUtil::parsePrice).collect(Collectors.toList());
@@ -286,7 +283,7 @@ public class economyUtilTest extends TestCase {
      * <br>7 letter prefix
      * <br>A number between 0.0 and 10000.0, with a 50% chance of being period seperated and a 50% chance of being comma seperated
      * <br>7 letter suffix
-     * @return A 20-character alpha-numeric string
+     * @return A 20-character alphanumeric string
      */
     private String randomPriceString() {
         int targetStringLength = 7;

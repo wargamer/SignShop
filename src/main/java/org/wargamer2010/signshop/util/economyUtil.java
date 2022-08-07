@@ -31,7 +31,7 @@ public class economyUtil {
     public static double parsePrice(String line) {
         if(line == null)
             return 0.0d;
-        if (SignShopConfig.CachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
+        if (SignShopConfig.cachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
         String priceline = ChatColor.stripColor(line);
         StringBuilder sPrice = new StringBuilder();
         Double fPrice;
@@ -40,7 +40,7 @@ public class economyUtil {
                 sPrice.append(priceline.charAt(i));
         if (SignShopConfig.allowCommaDecimalSeparator().isPermitted()) {
             double price = parsePriceInternational(sPrice.toString());
-            if (SignShopConfig.CachePrices()) priceCache.put(line, price);
+            if (SignShopConfig.cachePrices()) priceCache.put(line, price);
             return price;
         }
         try {
@@ -55,7 +55,7 @@ public class economyUtil {
         if(Double.isNaN(fPrice) || fPrice.isInfinite())
             fPrice = 0.0d;
 
-        if (SignShopConfig.CachePrices()) priceCache.put(line, fPrice);
+        if (SignShopConfig.cachePrices()) priceCache.put(line, fPrice);
         return fPrice;
     }
 

@@ -34,8 +34,8 @@ Debugging: false
 # This will be automatically enabled on new servers, and disabled for servers that have existing shops. (true, false or auto by Default)
 AllowCommaDecimalSeparator: auto
 
-# If the server should cache the parses prices for signs.
-# This slightly increases computation time per request, but greatly reduces computation time for repeated requests
+# If the server should cache the parsed prices for signs.
+# This slightly increases computation time per request, but greatly reduces computation time for repeated requests.
 # Most useful on larger servers with many signs
 CachePrices: true
 
@@ -307,7 +307,7 @@ MoneyColor: "&a"
 # These are given when players interact with shops
 # Words beginning with "!" are replaced when the message is given
 # For a full list of available !variables and what they do, please read the Quick Reference
-# If you you start a message with a color code you need to make sure you surround the message with quotes
+# If you start a message with a color code you need to make sure you surround the message with quotes
 messages:
 # These are given when you create a sign by punching it with the link material (Redstone by default)
   setup:
@@ -351,7 +351,7 @@ messages:
     Promote: You have set up a Promote sign that promotes to the !promoteto group.
     TCommand: You have created a command sign that runs commands on this sign after 10 seconds for !price!
 
-# These are given when you left click a sign
+# These are given when you left-click a sign
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
