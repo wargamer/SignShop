@@ -5,10 +5,13 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class economyUtil {
+    public static final Map<String, Double> priceCache = new HashMap<>();
 
     private economyUtil() {
 
@@ -28,13 +31,18 @@ public class economyUtil {
     public static double parsePrice(String line) {
         if(line == null)
             return 0.0d;
+        if (SignShopConfig.CachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
         String priceline = ChatColor.stripColor(line);
         StringBuilder sPrice = new StringBuilder();
         Double fPrice;
         for(int i = 0; i < priceline.length(); i++)
             if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (SignShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
                 sPrice.append(priceline.charAt(i));
-        if (SignShopConfig.allowCommaDecimalSeparator().isPermitted()) return parsePriceInternational(sPrice.toString());
+        if (SignShopConfig.allowCommaDecimalSeparator().isPermitted()) {
+            double price = parsePriceInternational(sPrice.toString());
+            if (SignShopConfig.CachePrices()) priceCache.put(line, price);
+            return price;
+        }
         try {
             fPrice = Double.parseDouble(sPrice.toString());
         }
@@ -46,6 +54,8 @@ public class economyUtil {
         }
         if(Double.isNaN(fPrice) || fPrice.isInfinite())
             fPrice = 0.0d;
+
+        if (SignShopConfig.CachePrices()) priceCache.put(line, fPrice);
         return fPrice;
     }
 
