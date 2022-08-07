@@ -156,15 +156,14 @@ public class SignShop extends JavaPlugin {
         if (SignShopConfig.allowCommaDecimalSeparator() == SignShopConfig.CommaDecimalSeparatorState.AUTO) {
             // Plugin must decide if the comma separators are enabled
             SignShopConfig.CommaDecimalSeparatorState state;
-            String logMessage;
             if (store.shopCount() == 0) {
-                logMessage = "Comma decimal seperators have been enabled because this server has 0 shops";
+                log("Comma decimal seperators have been enabled because this server has 0 shops.",Level.INFO);
                 state = SignShopConfig.CommaDecimalSeparatorState.TRUE;
             } else {
-                logMessage = "Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may not be compatible with the new parser";
+                log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.",Level.INFO);
                 state = SignShopConfig.CommaDecimalSeparatorState.FALSE;
             }
-            log(logMessage + ". This can be changed by modifying 'AllowCommaDecimalSeperators' in the config.", Level.INFO);
+            log("This can be changed by modifying 'AllowCommaDecimalSeperators' in the config.", Level.INFO);
             SignShopConfig.setAllowCommaDecimalSeparator(state);
         }
 

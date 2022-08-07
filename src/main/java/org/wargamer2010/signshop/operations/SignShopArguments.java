@@ -21,7 +21,7 @@ import org.wargamer2010.signshop.util.signshopUtil;
 import java.util.*;
 
 public class SignShopArguments implements IMessagePartContainer {
-    public static String seperator = "~";
+    public static String separator = "~";
     public Map<String, String> miscSettings = new HashMap<>();
     public Map<String, String> forceMessageKeys = new HashMap<>();
     public boolean bDoNotClearClickmap = false;
@@ -44,7 +44,7 @@ public class SignShopArguments implements IMessagePartContainer {
         public void set(ItemStack[] pItems) {
             if (getCollection().forceMessageKeys.containsKey("!items") && argumentType == SignShopArgumentsType.Setup)
                 getCollection().miscSettings.put(getCollection().forceMessageKeys.get("!items").replace("!", ""),
-                        signshopUtil.implode(itemUtil.convertItemStacksToString(pItems), seperator));
+                        signshopUtil.implode(itemUtil.convertItemStacksToString(pItems), separator));
             super.set(pItems);
         }
     };
