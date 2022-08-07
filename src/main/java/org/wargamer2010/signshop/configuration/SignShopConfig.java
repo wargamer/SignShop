@@ -69,6 +69,8 @@ public class SignShopConfig {
     private static boolean EnableAutomaticLock = false;
     private static boolean UseBlacklistAsWhitelist = false;
     private static boolean EnableWrittenBookFix = true;
+    private static boolean CachePrices = true;
+    private static CommaDecimalSeparatorState AllowCommaDecimalSeparator = CommaDecimalSeparatorState.AUTO;
     private static String ColorCode = "&";
     private static String ChatPrefix = "&6[SignShop]";
     private static ChatColor TextColor = ChatColor.YELLOW;
@@ -243,6 +245,8 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
+        CachePrices = ymlThing.getBoolean("CachePrices", CachePrices);
+        AllowCommaDecimalSeparator = CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", AllowCommaDecimalSeparator.name));
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
@@ -812,6 +816,53 @@ public class SignShopConfig {
 
     public static boolean isInspectionMaterial(ItemStack item) {
         return (item !=null && item.getType() == inspectMaterial);
+    }
+
+    public enum CommaDecimalSeparatorState {
+        AUTO("auto", false),
+        FALSE("false", false),
+        TRUE("true", true);
+
+        private final String name;
+        private final boolean permitted;
+        public String getName() { return name; }
+        public boolean isPermitted() { return permitted; }
+
+        public static CommaDecimalSeparatorState fromName(String name) {
+            for (CommaDecimalSeparatorState state : CommaDecimalSeparatorState.values()) {
+                if (state.name.equalsIgnoreCase(name)) return state;
+            }
+
+            return CommaDecimalSeparatorState.AUTO;
+        }
+
+        CommaDecimalSeparatorState(String name, boolean permitted) {
+            this.name = name;
+            this.permitted = permitted;
+        }
+    }
+
+    public static CommaDecimalSeparatorState allowCommaDecimalSeparator() { return AllowCommaDecimalSeparator; }
+    public static void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state, boolean doSave) {
+        AllowCommaDecimalSeparator = state;
+
+        if (doSave) {
+            FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
+            File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
+            ymlThing.set("AllowCommaDecimalSeparator", state.name);
+            saveConfig(ymlThing, configFile);
+            SignShop.debugMessage("AllowCommaDecimalSeparator has been updated to " + state.name + " in the config.");
+        }
+    }
+    public static void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state) {
+        setAllowCommaDecimalSeparator(state, true);
+    }
+
+    public static boolean cachePrices() {
+        return CachePrices;
+    }
+    public static void setCachePrices(boolean value) {
+        CachePrices = value;
     }
 
     public static Material getLinkMaterial() {

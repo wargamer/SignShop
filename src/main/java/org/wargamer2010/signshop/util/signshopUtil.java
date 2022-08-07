@@ -238,7 +238,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static String validateRestrictSign(List<Block> clickedBlocks, SignShopPlayer player) {
@@ -262,7 +262,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static String validateBankSign(List<Block> clickedBlocks, SignShopPlayer player) {
@@ -294,7 +294,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static Boolean restrictedFromUsing(Seller seller, SignShopPlayer player) {
@@ -336,8 +336,8 @@ public class signshopUtil {
         if(seller.hasMisc(miscprop)) {
             String imploded = seller.getMisc(miscprop);
             String[] exploded;
-            if(imploded.contains(SignShopArguments.seperator))
-                exploded = imploded.split(SignShopArguments.seperator);
+            if(imploded.contains(SignShopArguments.separator))
+                exploded = imploded.split(SignShopArguments.separator);
             else {
                 exploded = new String[1];
                 exploded[0] = imploded;
@@ -363,8 +363,8 @@ public class signshopUtil {
         if(seller.hasMisc(miscprop)) {
             String imploded = seller.getMisc(miscprop);
             String[] exploded;
-            if(imploded.contains(SignShopArguments.seperator))
-                exploded = imploded.split(SignShopArguments.seperator);
+            if(imploded.contains(SignShopArguments.separator))
+                exploded = imploded.split(SignShopArguments.separator);
             else {
                 exploded = new String[1];
                 exploded[0] = imploded;
