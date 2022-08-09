@@ -60,10 +60,8 @@ public class economyUtil {
     }
 
     private static double parsePriceInternational(String price) {
-        SignShop.debugMessage("Parsing a price from '" + price + "'");
 
         if (price == null || price.equals("")) {
-            SignShop.debugMessage("Empty! (no price found)");
             return 0.0d;
         }
 
@@ -93,7 +91,6 @@ public class economyUtil {
 
             if (totalPeriods == 0 && totalCommas == 0) {
                 // If there are no delimiters, just parse the price
-                SignShop.debugMessage(price + " is not delimited");
                 parsedPrice = Double.parseDouble(price);
             } else {
                 // There are delimiters, determine what kind
@@ -109,8 +106,6 @@ public class economyUtil {
                     although it will default to attempting to parse a period separated number
                 */
                 boolean likelyCommaSeparated = (lastComma > lastPeriod && totalCommas == 1) || (totalCommas == 0 && totalPeriods > 1);
-
-                SignShop.debugMessage("Likely: " + (likelyCommaSeparated ? "COMMA SEPARATED" : "PERIOD SEPARATED"));
 
                 /*
                     Start of String
@@ -135,22 +130,19 @@ public class economyUtil {
 
                 if (likelyCommaSeparated && commaSeparatedString != null) {
                     // If the price was guessed to be comma-separated and the comma-separated regex passed, its comma-separated
-                    SignShop.debugMessage("Actual: COMMA SEPARATED");
                     priceString = commaSeparatedString;
                 } else if (periodSeparatedString != null) {
                     // If the price was guessed to be period-separated or the comma-separated regex failed
                     // AND the period-separated regex passed, its period-separated
-                    SignShop.debugMessage("Actual: PERIOD SEPARATED");
                     priceString = periodSeparatedString;
                 } else {
                     // If the price has not yet been parsed, attempt error correction
                     if (!likelyCommaSeparated && commaSeparatedString != null) {
                         // Detection made a mistake, price was guessed as period-separated, but the period-separated regex failed and the comma-separated passed. Its comma-separated
-                        SignShop.debugMessage("Actual: COMMA SEPARATED");
                         priceString = commaSeparatedString;
                     } else {
                         // No valid match could be parsed
-                        SignShop.debugMessage("Actual: INVALID");
+                        SignShop.debugMessage("Parsed price was INVALID");
                     }
                 }
 
@@ -158,14 +150,11 @@ public class economyUtil {
                 parsedPrice = priceString != null ? Double.parseDouble(priceString) : 0.0D;
             }
         } catch(NumberFormatException nFE) {
-            // something was wrong... don't even ask what cause I don't know
+            // something was wrong... don't even ask what because I don't know
             parsedPrice = 0.0d;
         }
-
         // Normalize
         if(parsedPrice < 0.0d || Double.isNaN(parsedPrice) || Double.isInfinite(parsedPrice)) parsedPrice = 0.0d;
-
-        SignShop.debugMessage("Parsed price: " + parsedPrice);
 
         return parsedPrice;
     }

@@ -190,9 +190,9 @@ public class configUtil {
             InputStream in = pluginclass.getResourceAsStream("/" + filenameInJar);
             if(in != null) {
                 thingInJar.load(new InputStreamReader(in));
-                thingInJar.options().parseComments(false);
+                thingInJar.options().copyHeader(false);
                 ymlInPluginFolder.options().copyDefaults(true);
-                ymlInPluginFolder.options().parseComments(false); //Don't copy header since addOriginalCommentsToStream will fix that
+                ymlInPluginFolder.options().copyHeader(false); //Don't copy header since addOriginalCommentsToStream will fix that
                 ymlInPluginFolder.setDefaults(thingInJar);
                 FileOutputStream fileOutputStream = new FileOutputStream(configFile);
                 OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);

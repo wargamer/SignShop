@@ -851,7 +851,6 @@ public class SignShopConfig {
             File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
             ymlThing.set("AllowCommaDecimalSeparator", state.name);
             saveConfig(ymlThing, configFile);
-            SignShop.debugMessage("AllowCommaDecimalSeparator has been updated to " + state.name + " in the config.");
         }
     }
     public static void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state) {
