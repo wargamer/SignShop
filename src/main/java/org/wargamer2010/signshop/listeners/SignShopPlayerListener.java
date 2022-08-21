@@ -326,6 +326,9 @@ public class SignShopPlayerListener implements Listener {
             String[] sChests = new String[chests.size()]; chests.toArray(sChests);
             String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
             SignShop.logTransaction(player.getName(), seller.getOwner().getName(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
+
+            // TODO: test test test
+            event.setCancelled(true);
             return;
         }
         if(event.getItem() != null && seller != null && SignShopConfig.isOPMaterial(event.getItem().getType())) {
