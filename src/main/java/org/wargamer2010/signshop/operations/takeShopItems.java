@@ -37,9 +37,9 @@ public class takeShopItems implements SignShopOperation {
         if(!bStockOK)
             ssArgs.sendFailedRequirementsMessage("out_of_stock");
         if(!bStockOK && activeCheck)
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getOutOfStockColor());
         else if(activeCheck)
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getInStockColor());
 
         return bStockOK;
     }
@@ -51,9 +51,9 @@ public class takeShopItems implements SignShopOperation {
             return false;
         Holder.getInventory().removeItem(ssArgs.getItems().get());
         if(!itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), true))
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getOutOfStockColor());
         else
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getInStockColor());
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return true;
     }

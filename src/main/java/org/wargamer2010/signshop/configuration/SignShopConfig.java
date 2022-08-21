@@ -76,6 +76,8 @@ public class SignShopConfig {
     private static ChatColor TextColor = ChatColor.YELLOW;
     private static ChatColor TextColorTwo = ChatColor.DARK_PURPLE;
     private static ChatColor MoneyColor = ChatColor.GREEN;
+    private static ChatColor InStockColor = ChatColor.DARK_BLUE;
+    private static ChatColor OutOfStockColor = ChatColor.DARK_RED;
     private static String Languages = "en_US";
     private static String preferedLanguage = "";
     private static Material linkMaterial = Material.getMaterial("REDSTONE");
@@ -264,6 +266,12 @@ public class SignShopConfig {
 
         MoneyColor = ChatColor.getByChar(ymlThing.getString("MoneyColor", "a").replace(ColorCode,""));
         if (MoneyColor == null) MoneyColor = ChatColor.GREEN;
+
+        InStockColor = ChatColor.getByChar(ymlThing.getString("InStockColor", "1").replace(ColorCode,""));
+        if (InStockColor == null) InStockColor = ChatColor.DARK_BLUE;
+
+        OutOfStockColor = ChatColor.getByChar(ymlThing.getString("OutOfStockColor", "4").replace(ColorCode,""));
+        if (OutOfStockColor == null) OutOfStockColor = ChatColor.DARK_RED;
 
 
         // Sanity check
@@ -895,6 +903,15 @@ public class SignShopConfig {
     public static ChatColor getMoneyColor() {
         return MoneyColor;
     }
+
+    public static ChatColor getInStockColor() {
+        return InStockColor;
+    }
+
+    public static ChatColor getOutOfStockColor() {
+        return OutOfStockColor;
+    }
+
 
     private static String toLanguageCase(String language){
         String[] languageParts = language.split("_");

@@ -38,9 +38,9 @@ public class giveShopItems implements SignShopOperation {
         if(!bStockOK)
             ssArgs.sendFailedRequirementsMessage("overstocked");
         if(activeCheck && !bStockOK)
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getOutOfStockColor());
         else if(activeCheck)
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getInStockColor());
         ssArgs.setMessagePart("!items", itemUtil.itemStackToString(ssArgs.getItems().get()));
         return bStockOK;
     }
@@ -52,9 +52,9 @@ public class giveShopItems implements SignShopOperation {
             return false;
         HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(ssArgs.getItems().get());
         if(!itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false))
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_RED);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getOutOfStockColor());
         else
-            itemUtil.updateStockStatus(ssArgs.getSign().get(), ChatColor.DARK_BLUE);
+            itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShopConfig.getInStockColor());
         return (isLeftOver.isEmpty());
     }
 }

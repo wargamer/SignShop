@@ -304,6 +304,12 @@ ItemColorTwo: "&5"
 # Internal money color code ("&a" which is green by default)
 MoneyColor: "&a"
 
+# Internal shop is in stock color code ("&1" which is dark blue by default)
+InStockColor: "&1"
+
+# Internal shop is out of stock color code ("&4" which is dark red by default)
+OutOfStockColor: "&4"
+
 # These are given when players interact with shops
 # Words beginning with "!" are replaced when the message is given
 # For a full list of available !variables and what they do, please read the Quick Reference

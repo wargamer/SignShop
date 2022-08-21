@@ -401,12 +401,12 @@ public class itemUtil {
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 reqOK = ssOperation.getOperation().checkRequirements(ssArgs, false);
                 if(!reqOK) {
-                    itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
+                    itemUtil.setSignStatus(pSign, SignShopConfig.getOutOfStockColor());
                     break;
                 }
             }
             if(reqOK)
-                itemUtil.setSignStatus(pSign, ChatColor.DARK_BLUE);
+                itemUtil.setSignStatus(pSign, SignShopConfig.getInStockColor());
         }
     }
 

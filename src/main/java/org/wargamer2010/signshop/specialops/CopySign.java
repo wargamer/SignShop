@@ -127,7 +127,7 @@ public class CopySign implements SignShopSpecialOp {
             return true;
         }
 
-        itemUtil.setSignStatus(shopSign, ChatColor.DARK_BLUE);
+        itemUtil.setSignStatus(shopSign, SignShopConfig.getInStockColor());
 
         ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", null));
         return true;
