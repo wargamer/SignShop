@@ -1,8 +1,6 @@
 package org.wargamer2010.signshop.listeners;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Entity;
@@ -19,6 +17,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
@@ -225,14 +224,22 @@ public class SignShopPlayerListener implements Listener {
                 return;
             }
             signshopUtil.registerClickedMaterial(event);
-        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && SignShopConfig.isInspectionMaterial(event.getItem())){
+        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && SignShopConfig.isInspectionMaterial(event.getItem())) {
             SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
-            if (playerCanInspect(seller,signShopPlayer)) {
+            if (playerCanInspect(seller, signShopPlayer)) {
                 signShopPlayer.sendMessage(seller.getInfo());
             }
             else {
-                signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_inspect_shop",null));
+                signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_inspect_shop", null));
             }
+
+        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && itemIsGlowInkOrDye(event.getItem())) {
+            SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
+            if (!playerCanDyeShop(seller, signShopPlayer)) {
+                event.setCancelled(true);
+                signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_dye_shop",null));
+            }
+
         } else if(itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShopConfig.isOPMaterial(event.getItem().getType()))) {
             SignShopPlayer ssOwner = seller.getOwner();
             sLines = ((Sign) bClicked.getState()).getLines();
@@ -341,8 +348,42 @@ public class SignShopPlayerListener implements Listener {
     }
 
     private boolean playerCanInspect(Seller seller, SignShopPlayer signShopPlayer){
-              return ((signShopPlayer.isOwner(seller) && signShopPlayer.hasPerm("Signshop.Inspect.Own",false))
+        return ((signShopPlayer.isOwner(seller) && signShopPlayer.hasPerm("Signshop.Inspect.Own",false))
                 || signShopPlayer.isOp() || signShopPlayer.hasPerm("Signshop.Inspect.Others",true));
+    }
+
+    private boolean playerCanDyeShop(Seller seller, SignShopPlayer signShopPlayer){
+        return ((signShopPlayer.isOwner(seller) && signShopPlayer.hasPerm("Signshop.Dye.Own",false))
+                || signShopPlayer.isOp() || signShopPlayer.hasPerm("Signshop.Dye.Others",true));
+
+    }
+    private boolean itemIsGlowInkOrDye(ItemStack item){
+        if (item == null || SignShopConfig.isOPMaterial(item.getType()) || SignShopConfig.isInspectionMaterial(item)) return false;
+        String materialName = item.getType().name();
+
+        switch (materialName){
+            case"BLACK_DYE":
+            case"BLUE_DYE":
+            case"BROWN_DYE":
+            case"CYAN_DYE":
+            case"GRAY_DYE":
+            case"GREEN_DYE":
+            case"LIGHT_BLUE_DYE":
+            case"LIGHT_GRAY_DYE":
+            case"LIME_DYE":
+            case"MAGENTA_DYE":
+            case"ORANGE_DYE":
+            case"PINK_DYE":
+            case"PURPLE_DYE":
+            case"RED_DYE":
+            case"WHITE_DYE":
+            case"YELLOW_DYE":
+            case"GLOW_INK_SAC":
+                return true;
+            default:
+                return false;
+
+        }
     }
 
 }
