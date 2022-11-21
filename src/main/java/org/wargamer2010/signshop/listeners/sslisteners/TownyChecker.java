@@ -1,9 +1,9 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
+import com.palmergames.bukkit.towny.TownyAPI;
 import com.palmergames.bukkit.towny.object.TownBlock;
 import com.palmergames.bukkit.towny.object.TownBlockType;
-import com.palmergames.bukkit.towny.object.TownyUniverse;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -21,7 +21,7 @@ public class TownyChecker implements Listener {
             return;
 
         // Towny will take of plot ownership so no need to check that here
-        TownBlock block = TownyUniverse.getTownBlock(event.getSign().getLocation());
+        TownBlock block = TownyAPI.getInstance().getTownBlock(event.getSign().getLocation());
         if(block == null || block.getType() != TownBlockType.COMMERCIAL) { // Commercial == ShopPlot
             if(event.getPlayer().isOp())
                 event.getPlayer().sendMessage(SignShopConfig.getError("towny_shop_plot_not_allowed_but_op", event.getMessageParts()));
