@@ -627,5 +627,19 @@ public class signshopUtil {
         return rawparam;
     }
 
+    // Fixes creative clients rendering signs as blank when left interact is canceled. This code is wet, see SimpleShopProtector
+    // One of these methods don't update the shop stock status on creation. Also need to see what is up with dyed shops
+    public static void fixCreativeModeSignRendering(Block block, Player player){ //(PlayerInteractEvent event){
+        if (player.getGameMode() == GameMode.CREATIVE && block.getState() instanceof Sign ) {
+            Sign sign = (Sign) block.getState();
+            Bukkit.getScheduler().runTaskLater(SignShop.getInstance(), () -> sendSignUpdate(player,sign),2);
+        }
+    }
+
+    private static void sendSignUpdate(Player player, Sign sign){
+        player.sendSignChange(sign.getLocation(), sign.getLines());
+    }
+
+
 
 }

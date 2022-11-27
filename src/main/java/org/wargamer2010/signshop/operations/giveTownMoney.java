@@ -2,11 +2,11 @@ package org.wargamer2010.signshop.operations;
 
 import com.palmergames.bukkit.towny.TownyMessaging;
 import com.palmergames.bukkit.towny.TownySettings;
+import com.palmergames.bukkit.towny.TownyUniverse;
 import com.palmergames.bukkit.towny.exceptions.EconomyException;
 import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
-import com.palmergames.bukkit.towny.TownyUniverse;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;

@@ -1,8 +1,6 @@
 package org.wargamer2010.signshop.listeners;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Entity;
@@ -188,6 +186,7 @@ public class SignShopPlayerListener implements Listener {
                 }
 
                 event.setCancelled(true);
+                signshopUtil.fixCreativeModeSignRendering(event.getClickedBlock(), event.getPlayer());
                 List<Block> containables = new LinkedList<>();
                 List<Block> activatables = new LinkedList<>();
                 boolean wentOK = signshopUtil.getSignshopBlocksFromList(ssPlayer, containables, activatables, bClicked);
@@ -222,6 +221,7 @@ public class SignShopPlayerListener implements Listener {
                 if(!ssArgs.bDoNotClearClickmap)
                     clicks.removePlayerFromClickmap(player);
 
+                signshopUtil.fixCreativeModeSignRendering(event.getClickedBlock(),event.getPlayer());
                 return;
             }
             signshopUtil.registerClickedMaterial(event);
@@ -334,6 +334,7 @@ public class SignShopPlayerListener implements Listener {
                 SignShop.scheduleEvent(touchevent);
                 if(touchevent.isCancelled()) {
                     event.setCancelled(true);
+                    signshopUtil.fixCreativeModeSignRendering(event.getClickedBlock(),event.getPlayer());
                     break;
                 }
             }

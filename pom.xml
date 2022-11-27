@@ -6,7 +6,7 @@
 
     <groupId>org.makershaven</groupId>
     <artifactId>SignShop</artifactId>
-    <version>3.6.4.4-dev</version>
+    <version>3.6.5.0-dev</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -19,27 +19,27 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>CodeMC</id>
-            <url>https://repo.codemc.org/repository/maven-public</url>
-        </repository>
-        <repository>
-            <id>ender-zone-repo</id>
-            <url>https://ci.ender.zone/plugin/repository/everything/</url>
+            <id>paper-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
             <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io/</url>
+        </repository>
+        <repository>
+            <id>CodeMC</id>
             <url>https://repo.codemc.org/repository/maven-public/</url>
         </repository>
         <repository>
             <id>sk89q-repo</id>
-            <url>https://maven.enginehub.org/repo</url>
+            <url>https://maven.enginehub.org/repo/</url>
         </repository>
         <repository>
-            <id>essentials</id>
+            <id>essentials-releases</id>
             <url>https://repo.essentialsx.net/releases/</url>
         </repository>
     </repositories>
@@ -143,13 +143,13 @@
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
-            <version>1.7</version>
+            <version>3.0.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
-            <version>4.4</version>
+            <version>5.7.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -174,7 +174,7 @@
                 <configuration>
                     <relocations>
                         <relocation>
-                            <pattern>org.bstats.bukkit</pattern>
+                            <pattern>org.bstats</pattern>
                             <shadedPattern>org.makershaven.weaves</shadedPattern>
                         </relocation>
                     </relocations>

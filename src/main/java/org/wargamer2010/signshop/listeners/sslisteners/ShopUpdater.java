@@ -1,7 +1,6 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
-import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
