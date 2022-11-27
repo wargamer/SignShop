@@ -822,6 +822,10 @@ public class SignShopConfig {
         return (check == updateMaterial || check == linkMaterial);
     }
 
+    public static boolean isLinkMaterial(Material material){
+        return material == linkMaterial;
+    }
+
     public static boolean isInspectionMaterial(ItemStack item) {
         return (item !=null && item.getType() == inspectMaterial);
     }

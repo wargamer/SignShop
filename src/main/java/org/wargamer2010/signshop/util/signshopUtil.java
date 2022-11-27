@@ -636,6 +636,7 @@ public class signshopUtil {
         }
     }
 
+    //TODO: Add sign.getColor() and sign.isGlowingText() to sendSignChange() call after updating to MC1.17+
     private static void sendSignUpdate(Player player, Sign sign){
         player.sendSignChange(sign.getLocation(), sign.getLines());
     }

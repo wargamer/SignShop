@@ -235,9 +235,12 @@ public class SignShopPlayerListener implements Listener {
                 signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_inspect_shop", null));
             }
 
-        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && itemIsGlowInkOrDye(event.getItem())) {
+        } else if(event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && itemIsInkOrDye(event.getItem())) {
             SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
-            if (!playerCanDyeShop(seller, signShopPlayer)) {
+            if (playerCanDyeShop(seller, signShopPlayer)){
+                return;
+            }
+            else {
                 event.setCancelled(true);
                 signShopPlayer.sendMessage(SignShopConfig.getError("no_permission_to_dye_shop",null));
             }
@@ -363,8 +366,8 @@ public class SignShopPlayerListener implements Listener {
                 || signShopPlayer.isOp() || signShopPlayer.hasPerm("Signshop.Dye.Others",true));
 
     }
-    private boolean itemIsGlowInkOrDye(ItemStack item){
-        if (item == null || SignShopConfig.isOPMaterial(item.getType()) || SignShopConfig.isInspectionMaterial(item)) return false;
+    private boolean itemIsInkOrDye(ItemStack item){
+        if (item == null || SignShopConfig.isLinkMaterial(item.getType()) || SignShopConfig.isInspectionMaterial(item)) return false;
         String materialName = item.getType().name();
 
         switch (materialName){
@@ -385,6 +388,7 @@ public class SignShopPlayerListener implements Listener {
             case"WHITE_DYE":
             case"YELLOW_DYE":
             case"GLOW_INK_SAC":
+            case"INK_SAC":
                 return true;
             default:
                 return false;
