@@ -653,6 +653,7 @@ errors:
   this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
   could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
   no_permission_to_inspect_shop: You do not have permission to inspect this shop.
+  no_permission_to_dye_shop: You do not have permission to dye this shop.
 
 # Used for checking if the config needs to be backed up before upgrading it. (Do not modify unless told to do so)
 ConfigVersionDoNotTouch: 3
