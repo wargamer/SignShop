@@ -127,6 +127,7 @@ public class Storage implements Listener {
     }
 
     private boolean loadSellerFromSettings(String key, HashMap<String,List<String>> sellerSettings) {
+        SignShop.debugMessage("Loading seller from settings.");
         Block seller_sign;
         SignShopPlayer seller_owner;
         List<Block> seller_activatables;
@@ -143,21 +144,27 @@ public class Storage implements Listener {
                 throw storageex;
             seller_shopworld = tempList.get(0);
             storageex.setWorld(seller_shopworld);
+            SignShop.debugMessage("Checking for world.");
             if(Bukkit.getServer().getWorld(seller_shopworld) == null)
                 throw storageex;
             tempList = getSetting(sellerSettings, "owner");
             if(tempList.isEmpty())
                 throw storageex;
+            SignShop.debugMessage("Checking for player.");
             seller_owner = PlayerIdentifier.getPlayerFromString(tempList.get(0));
             if(seller_owner == null)
                 throw storageex;
+            SignShop.debugMessage("Checking for sign.");
             tempList = getSetting(sellerSettings, "sign");
             if(tempList.isEmpty())
                 throw storageex;
 
+            SignShop.debugMessage("Worldname, owner and sign are valid.");
             World world = Bukkit.getServer().getWorld(seller_shopworld);
 
+            SignShop.debugMessage("World is called: " + world);
             try {
+                SignShop.debugMessage("Getting sign block.");
                 seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
             } catch(Exception ex) {
                 SignShop.log("Caught an unexpected exception: " + ex.getMessage(), Level.WARNING);
@@ -168,8 +175,11 @@ public class Storage implements Listener {
 
             if(!itemUtil.clickedSign(seller_sign))
                 throw storageex;
+            SignShop.debugMessage("Checking activatables.");
             seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
+            SignShop.debugMessage("Checking containables.");
             seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
+            SignShop.debugMessage("Checking items.");
             seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
             miscsettings = new HashMap<>();
             if(sellerSettings.containsKey("misc")) {
@@ -179,11 +189,13 @@ public class Storage implements Listener {
                         miscsettings.put(miscbits[0].trim(), miscbits[1].trim());
                 }
             }
-        } catch(StorageException caughtex) {    //Caught when shop is invalid
+        } catch(StorageException caughtex) {
+            SignShop.debugMessage("Shop may be invalid.");//Caught when shop is invalid
             if(!caughtex.getWorld().isEmpty()) {
                 for(World temp : Bukkit.getServer().getWorlds()) {
                     if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) { //TODO Option to short circuit this to prevent invalid shop removal
                         invalidShops.put(key, sellerSettings);
+                        SignShop.debugMessage("World may not be loaded yet.");
                         return true; // World might not be loaded yet
                     }
                 }
@@ -199,6 +211,7 @@ public class Storage implements Listener {
             return false;
         }
 
+        SignShop.debugMessage("Checking for too many chests.");
         if(SignShopConfig.ExceedsMaxChestsPerShop(seller_containables.size())) {
             Map<String, String> parts = new LinkedHashMap<>();
             int x = seller_sign.getX();
@@ -212,6 +225,7 @@ public class Storage implements Listener {
             SignShop.log(SignShopConfig.getError("this_shop_exceeded_max_amount_of_chests", parts), Level.WARNING);
         }
 
+        SignShop.debugMessage("Shop is valid, adding it now.");
         addSeller(seller_owner.GetIdentifier(), seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
         return true;
     }
@@ -225,6 +239,7 @@ public class Storage implements Listener {
             return false;
         }
         Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
+        SignShop.debugMessage("tempSellers size is: "+ tempSellers.size());
         if(tempSellers == null) {
             SignShop.log("Invalid sellers.yml format detected. Old sellers format is no longer supported."
                     + " Visit http://tiny.cc/signshop for more information.",
@@ -238,11 +253,13 @@ public class Storage implements Listener {
 
         boolean needSave = false;
 
+        SignShop.debugMessage("Starting validation loop.");
         for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : tempSellers.entrySet())
         {
             needSave = (loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) && needSave);
         }
 
+        SignShop.debugMessage("Validation loop has completed. Registering events.");
         Bukkit.getPluginManager().registerEvents(this, SignShop.getInstance());
         SignShop.log("Loaded " + shopCount() + " valid shops.", Level.INFO);
         return needSave;
@@ -300,8 +317,11 @@ public class Storage implements Listener {
 
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
         Storage.sellers.put(bSign.getLocation(), new Seller(playerId, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
-        if(save)
+        if(save) {
+            SignShop.debugMessage("Shop added, saving now.");
             this.Save();
+        }
+        SignShop.debugMessage("Shop number "+Storage.sellers.size()+" loaded and verified, save not required.");
     }
 
     public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables) {
