@@ -166,6 +166,7 @@ public class Storage implements Listener {
             try {
                 SignShop.debugMessage("Getting sign block.");
                 seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
+                SignShop.debugMessage("Sign block is: " + seller_sign);
             } catch(Exception ex) {
                 SignShop.log("Caught an unexpected exception: " + ex.getMessage(), Level.WARNING);
                 // May have caught a FileNotFoundException originating from the chunkloader
