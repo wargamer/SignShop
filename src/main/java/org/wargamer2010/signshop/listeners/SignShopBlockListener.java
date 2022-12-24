@@ -67,7 +67,7 @@ public class SignShopBlockListener implements Listener {
 
     private boolean canNotBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
         Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
-        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
+        SignShopPlayer ssPlayer = (player == null) ? new SignShopPlayer() : PlayerCache.getPlayer(player);
 
         for (Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());
