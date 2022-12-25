@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.util;
 
 import com.opencsv.CSVWriter;
 import junit.framework.TestCase;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 import java.io.File;
@@ -15,8 +16,8 @@ public class EconomyUtilTests extends TestCase {
      * Test the international price parser.
      */
     public void testparsePrice() {
-        SignShopConfig.CommaDecimalSeparatorState prev = SignShopConfig.allowCommaDecimalSeparator();
-        SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
+        SignShopConfig.CommaDecimalSeparatorState prev = SignShop.getInstance().getSignShopConfig().allowCommaDecimalSeparator();
+        SignShop.getInstance().getSignShopConfig().setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
         assertEquals(0.0D, economyUtil.parsePrice(null));
         assertEquals(0.0D, economyUtil.parsePrice("null"));
         assertEquals(0.0D, economyUtil.parsePrice("NaN"));
@@ -69,7 +70,7 @@ public class EconomyUtilTests extends TestCase {
         assertEquals(12341234.0D, economyUtil.parsePrice("1234.1234"));
         assertEquals(12341234.0D, economyUtil.parsePrice("1234,1234"));
         assertEquals(12341234.0D, economyUtil.parsePrice("1234+1234"));
-        SignShopConfig.setAllowCommaDecimalSeparator(prev, false);
+        SignShop.getInstance().getSignShopConfig().setAllowCommaDecimalSeparator(prev, false);
     }
 
     /**
@@ -185,10 +186,11 @@ public class EconomyUtilTests extends TestCase {
 
     private ParserCacheTestData runParserCacheTest(boolean newParser, int runs, List<String> testValues) {
         // Set up the correct parser
-        SignShopConfig.CommaDecimalSeparatorState state = SignShopConfig.allowCommaDecimalSeparator();
+        SignShopConfig.CommaDecimalSeparatorState state = SignShop.getInstance().getSignShopConfig().allowCommaDecimalSeparator();
         if (newParser)
-            SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
-        else SignShopConfig.setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.FALSE, false);
+            SignShop.getInstance().getSignShopConfig().setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.TRUE, false);
+        else
+            SignShop.getInstance().getSignShopConfig().setAllowCommaDecimalSeparator(SignShopConfig.CommaDecimalSeparatorState.FALSE, false);
 
         // Data storage for run statistics
         ParserCacheTestData testData = new ParserCacheTestData();
@@ -256,7 +258,7 @@ public class EconomyUtilTests extends TestCase {
         }
 
         // Reset the parser, just in case
-        SignShopConfig.setAllowCommaDecimalSeparator(state, false);
+        SignShop.getInstance().getSignShopConfig().setAllowCommaDecimalSeparator(state, false);
 
         return testData;
     }
@@ -268,12 +270,12 @@ public class EconomyUtilTests extends TestCase {
      * @param useCache If the cache should be used
      */
     private List<Double> parsePrices(List<String> prices, boolean useCache) {
-        boolean prev = SignShopConfig.cachePrices();
-        SignShopConfig.setCachePrices(useCache);
+        boolean prev = SignShop.getInstance().getSignShopConfig().cachePrices();
+        SignShop.getInstance().getSignShopConfig().setCachePrices(useCache);
 
         List<Double> parsed = prices.stream().map(economyUtil::parsePrice).collect(Collectors.toList());
 
-        SignShopConfig.setCachePrices(prev);
+        SignShop.getInstance().getSignShopConfig().setCachePrices(prev);
 
         return parsed;
     }

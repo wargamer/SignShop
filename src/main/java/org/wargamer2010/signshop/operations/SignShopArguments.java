@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.IMessagePartContainer;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -96,7 +96,8 @@ public class SignShopArguments implements IMessagePartContainer {
     }
 
     private void fixBooks() {//TODO Do we even need to fix books anymore? This adds several millis to each ssArgs creation.
-        if (!SignShopConfig.getEnableWrittenBookFix()) return; //Don't do the rest if we aren't even doing this.
+        if (!SignShop.getInstance().getSignShopConfig().getEnableWrittenBookFix())
+            return; //Don't do the rest if we aren't even doing this.
         if (isItems.getRoot() != null) {
             itemUtil.fixBooks(isItems.getRoot());
         }
@@ -259,7 +260,7 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public void sendFailedRequirementsMessage(String messageName) {
         if (!isLeftClicking())
-            getPlayer().get().sendMessage(SignShopConfig.getError(messageName, getMessageParts()));
+            getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError(messageName, getMessageParts()));
     }
 
     public boolean isPlayerOnline() {

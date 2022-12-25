@@ -31,7 +31,8 @@ import java.util.regex.Pattern;
 
 /** @noinspection deprecation*/ //TODO Remove deprecated calls
 public class itemUtil {
-    public static Map<Material,String> formattedMaterials = new HashMap<>();
+    public static Map<Material, String> formattedMaterials = new HashMap<>();
+    private static SignShopConfig signShopConfig;
 
     static {
         initializeFormattedMaterialMap();
@@ -39,6 +40,10 @@ public class itemUtil {
 
     private itemUtil() {
 
+    }
+
+    public static void setSignShopConfig(SignShopConfig config) {
+        signShopConfig = config;
     }
 
     /**
@@ -50,7 +55,7 @@ public class itemUtil {
     public static ItemStack[] getMinimumAmount(ItemStack[] isItems) {
         HashMap<ItemStack, Integer> materialByMaximumAmount = new LinkedHashMap<>();
 
-        for(ItemStack item: isItems) {
+        for (ItemStack item : isItems) {
             ItemStack isBackup = getSingleAmountOfStack(item);
             if(!materialByMaximumAmount.containsKey(isBackup) || materialByMaximumAmount.get(isBackup) < item.getAmount())
                 materialByMaximumAmount.put(isBackup, item.getAmount());
@@ -99,7 +104,7 @@ public class itemUtil {
     }
 
     public static void fixBooks(ItemStack[] stacks) {//TODO this causes a ton of lag do we really even need this?
-        if(stacks == null || !SignShopConfig.getEnableWrittenBookFix())
+        if (stacks == null || !signShopConfig.getEnableWrittenBookFix())
             return;
 
         for(ItemStack stack : stacks) {
@@ -237,8 +242,8 @@ public class itemUtil {
                 items.put(isBackup, item.getAmount());
         }
         for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
-            if(first) first = false;
-            else sItems.append(SignShopConfig.getTextColor()).append(", ");
+            if (first) first = false;
+            else sItems.append(signShopConfig.getTextColor()).append(", ");
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
             String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
@@ -302,13 +307,14 @@ public class itemUtil {
         try {
             isEnchantMe.addEnchantments(enchantments);
         } catch(IllegalArgumentException ex) {
-            if(SignShopConfig.getAllowUnsafeEnchantments()) {
+            if (signShopConfig.getAllowUnsafeEnchantments()) {
                 try {
                     isEnchantMe.addUnsafeEnchantments(enchantments);
-                } catch(IllegalArgumentException exfinal) {
+                } catch (IllegalArgumentException exfinal) {
                     return false;
                 }
-            } else
+            }
+            else
                 return false;
         }
         return true;
@@ -386,9 +392,9 @@ public class itemUtil {
             if(pSign == null || !(pSign.getState() instanceof Sign))
                 return;
             String[] sLines = ((Sign) pSign.getState()).getLines();
-            if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
+            if (signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
                 return;
-            List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
+            List<String> operation = signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null)
                 return;
@@ -401,12 +407,12 @@ public class itemUtil {
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 reqOK = ssOperation.getOperation().checkRequirements(ssArgs, false);
                 if(!reqOK) {
-                    itemUtil.setSignStatus(pSign, SignShopConfig.getOutOfStockColor());
+                    itemUtil.setSignStatus(pSign, signShopConfig.getOutOfStockColor());
                     break;
                 }
             }
             if(reqOK)
-                itemUtil.setSignStatus(pSign, SignShopConfig.getInStockColor());
+                itemUtil.setSignStatus(pSign, signShopConfig.getInStockColor());
         }
     }
 
@@ -473,7 +479,7 @@ public class itemUtil {
                     }
                 }
             } catch (Exception e) {
-                if (SignShopConfig.debugging()) {
+                if (signShopConfig.debugging()) {
                     SignShop.log("Error converting strings to item stacks.", Level.WARNING);
                 }
             }

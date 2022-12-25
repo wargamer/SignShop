@@ -5,7 +5,6 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -18,7 +17,7 @@ import static org.wargamer2010.signshop.operations.SignShopArguments.separator;
 
 public class Chest implements SignShopOperation {
     private Boolean incorrectPar(SignShopArguments ssArgs) {
-        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_complete_operation", null));
+        ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("could_not_complete_operation", null));
         SignShop.log("Invalid Chest{}, check your config.yml!", Level.WARNING);
         return false;
     }

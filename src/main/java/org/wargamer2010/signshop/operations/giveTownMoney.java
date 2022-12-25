@@ -8,8 +8,8 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -36,7 +36,7 @@ public class giveTownMoney implements SignShopOperation {
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
-                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.getMessageParts()));
+                        ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_mayor_or_assistant", ssArgs.getMessageParts()));
                         return false;
                     }
                 }
@@ -44,12 +44,12 @@ public class giveTownMoney implements SignShopOperation {
                     ssPlayer.sendMessage("Error with the economy, tell the System Administrator to install Vault properly.");
                     return false;
                 } else if (town.getEconomyName().isEmpty()) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                     return false;
                 }
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(player, x.getMessage());
-                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                 return false;
             }
             return true;

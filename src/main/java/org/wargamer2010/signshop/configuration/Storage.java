@@ -67,7 +67,7 @@ public class Storage implements Listener {
             try {
                 copyFile(ymlFile, backupTo);
             } catch(IOException ex) {
-                SignShop.log(SignShopConfig.getError("backup_fail", null), Level.WARNING);
+                SignShop.log(SignShop.getInstance().getSignShopConfig().getError("backup_fail", null), Level.WARNING);
             }
             Save();
         }
@@ -191,15 +191,15 @@ public class Storage implements Listener {
 
             try {
                 SignShop.log(getInvalidError(
-                        SignShopConfig.getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
+                        SignShop.getInstance().getSignShopConfig().getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
             } catch(StorageException lastex) {
-                SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
+                SignShop.log(SignShop.getInstance().getSignShopConfig().getError("shop_removed", null), Level.INFO);
             }
             invalidShops.put(key, sellerSettings);
             return false;
         }
 
-        if(SignShopConfig.ExceedsMaxChestsPerShop(seller_containables.size())) {
+        if (SignShop.getInstance().getSignShopConfig().ExceedsMaxChestsPerShop(seller_containables.size())) {
             Map<String, String> parts = new LinkedHashMap<>();
             int x = seller_sign.getX();
             int y = seller_sign.getY();
@@ -209,7 +209,7 @@ public class Storage implements Listener {
             parts.put("!y", Integer.toString(y));
             parts.put("!z", Integer.toString(z));
 
-            SignShop.log(SignShopConfig.getError("this_shop_exceeded_max_amount_of_chests", parts), Level.WARNING);
+            SignShop.log(SignShop.getInstance().getSignShopConfig().getError("this_shop_exceeded_max_amount_of_chests", parts), Level.WARNING);
         }
 
         addSeller(seller_owner.GetIdentifier(), seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
@@ -352,7 +352,7 @@ public class Storage implements Listener {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
                 if(itemUtil.clickedSign(bSign)) {
                     String[] sLines = ((Sign) bSign.getState()).getLines();
-                    List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
+                    List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(signshopUtil.getOperation(sLines[0]));
                     if(operation.isEmpty())
                         continue;
                     // Not isOP. No need to count OP signs here because admins aren't really their owner

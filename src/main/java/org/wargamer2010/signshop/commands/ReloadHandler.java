@@ -28,25 +28,25 @@ public class ReloadHandler implements ICommandHandler {
             return true;
         PluginManager pm = Bukkit.getPluginManager();
 
-        pm.disablePlugin(SignShop.getInstance());
-        pm.enablePlugin(SignShop.getInstance());
+        SignShop.getInstance().reload();
 
         // Reload hard dependencies
         for(Plugin plugin : pm.getPlugins()) {
-            if(plugin != null && plugin.getDescription() != null && plugin.isEnabled() && plugin.getDescription().getDepend() != null) {
-                for(String depend : plugin.getDescription().getDepend()) {
-                    if(depend.equalsIgnoreCase("signshop")) {
-                        pm.disablePlugin(plugin);
-                        pm.enablePlugin(plugin);
+            if (plugin != null && plugin.getDescription() != null && plugin.isEnabled() && plugin.getDescription().getDepend() != null) {
+                for (String depend : plugin.getDescription().getDepend()) {
+                    if (depend.equalsIgnoreCase("signshop")) {
+                        SignShop.log("You may also need to reload " + plugin.getName(), Level.INFO);
+                        if (player != null) {
+                            player.sendMessage(ChatColor.GREEN + "You may also need to reload " + plugin.getName());
+                        }
                     }
                 }
             }
         }
-
         SignShop.log("Reloaded", Level.INFO);
-        if(player != null)
+        if (player != null) {
             player.sendMessage(ChatColor.GREEN + "SignShop has been reloaded");
-
+        }
         return true;
     }
 

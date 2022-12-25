@@ -1,8 +1,8 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.Bukkit;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 import java.util.List;
@@ -26,23 +26,24 @@ public class runCommand implements SignShopOperation {
 
         boolean isOK = true;
 
-        if(SignShopConfig.getCommands().containsKey(sOperation.toLowerCase())) {
-            List<String> commands = SignShopConfig.getCommands().get(sOperation.toLowerCase());
-            for(String command : commands) {
+        if (SignShop.getInstance().getSignShopConfig().getCommands().containsKey(sOperation.toLowerCase())) {
+            List<String> commands = SignShop.getInstance().getSignShopConfig().getCommands().get(sOperation.toLowerCase());
+            for (String command : commands) {
                 boolean ok = true;
                 String sCommand = command;
-                if(sCommand != null && sCommand.length() > 0) {
-                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());
-                    sCommand = SignShopConfig.fillInBlanks(sCommand, ssArgs.getMessageParts());
-                    if(ssArgs.isOperationParameter("asOriginalUser")) {
+                if (sCommand != null && sCommand.length() > 0) {
+                    sCommand = SignShop.getInstance().getSignShopConfig().fillInBlanks(sCommand, ssArgs.getMessageParts());
+                    sCommand = SignShop.getInstance().getSignShopConfig().fillInBlanks(sCommand, ssArgs.getMessageParts());
+                    if (ssArgs.isOperationParameter("asOriginalUser")) {
                         ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
-                    } else if(ssArgs.isOperationParameter("asUser")) {
-                        if(!ssPlayer.hasPerm("*", true))
+                    }
+                    else if (ssArgs.isOperationParameter("asUser")) {
+                        if (!ssPlayer.hasPerm("*", true))
                             Vault.getPermission().playerAdd(ssPlayer.getPlayer(), "*");
                         else
                             hasStartPerm = true;
                         ok = Bukkit.getServer().dispatchCommand(ssPlayer.getPlayer(), sCommand);
-                        if(!hasStartPerm)
+                        if (!hasStartPerm)
                             Vault.getPermission().playerRemove(ssPlayer.getPlayer(), "*");
                     } else {
                         ok = Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), sCommand);

@@ -10,9 +10,11 @@ import org.bukkit.block.ShulkerBox;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
-import org.bukkit.potion.*;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.ColorUtil;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -37,12 +39,12 @@ public class SignShopItemMeta {
 
     public static void init() {
         SSDatabase db = new SSDatabase(filename);
-        txtColor = SignShopConfig.getTextColor();
-        txtColorTwo = SignShopConfig.getTextColorTwo();
+        txtColor = SignShop.getInstance().getSignShopConfig().getTextColor();
+        txtColorTwo = SignShop.getInstance().getSignShopConfig().getTextColorTwo();
         try {
-            if(!db.tableExists("ItemMeta"))
+            if (!db.tableExists("ItemMeta"))
                 db.runStatement("CREATE TABLE ItemMeta ( ItemMetaID INTEGER, ItemMetaHash INT, PRIMARY KEY(ItemMetaID) )", null, false);
-            if(!db.tableExists("MetaProperty"))
+            if (!db.tableExists("MetaProperty"))
                 db.runStatement("CREATE TABLE MetaProperty ( PropertyID INTEGER, ItemMetaID INTEGER, PropertyName TEXT NOT NULL, ProperyValue TEXT NOT NULL, PRIMARY KEY(PropertyID) )", null, false);
         } finally {
             db.close();

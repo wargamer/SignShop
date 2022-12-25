@@ -6,7 +6,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
@@ -27,9 +26,9 @@ public class CopySign implements SignShopSpecialOp {
         Player player = event.getPlayer();
         Block shopSign = event.getClickedBlock();
         SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
-        if(!itemUtil.clickedSign(shopSign))
+        if (!itemUtil.clickedSign(shopSign))
             return false;
-        if(ssPlayer.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())
+        if (ssPlayer.getItemInHand().getType() != SignShop.getInstance().getSignShopConfig().getUpdateMaterial())
             return false;
 
         Sign signNewSign = null;
@@ -49,7 +48,7 @@ public class CopySign implements SignShopSpecialOp {
         if(seller == null)
             return false;
         if((!seller.isOwner(ssPlayer) || !ssPlayer.hasPerm("SignShop.CopyPaste", true)) && !ssPlayer.hasPerm("SignShop.CopyPaste.Others", true)) {
-            ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission", null));
             return true;
         }
 
@@ -67,19 +66,19 @@ public class CopySign implements SignShopSpecialOp {
             price = sToChange[3];
 
         String sOperation;
-        if(sNewSign[0] != null && sNewSign[0].length() > 0)
+        if (sNewSign[0] != null && sNewSign[0].length() > 0)
             sOperation = signshopUtil.getOperation(sNewSign[0]);
         else
             sOperation = signshopUtil.getOperation(sToChange[0]);
 
-        if(!SignShopConfig.getBlocks(sOperation).isEmpty()) {
-            List<String> operation = SignShopConfig.getBlocks(sOperation);
-            if(!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs."+sOperation), false)) {
-                ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
+        if (!SignShop.getInstance().getSignShopConfig().getBlocks(sOperation).isEmpty()) {
+            List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(sOperation);
+            if (!operation.contains("playerIsOp") && !ssPlayer.hasPerm(("SignShop.Signs." + sOperation), false)) {
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission", null));
                 return true;
             }
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
-            if(SignShopOperations == null) {
+            if (SignShopOperations == null) {
                 ssPlayer.sendMessage("The new operation does not exist!");
                 revert(shopSign, sToChange);
                 return true;
@@ -126,9 +125,9 @@ public class CopySign implements SignShopSpecialOp {
             return true;
         }
 
-        itemUtil.setSignStatus(shopSign, SignShopConfig.getInStockColor());
+        itemUtil.setSignStatus(shopSign, SignShop.getInstance().getSignShopConfig().getInStockColor());
 
-        ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", null));
+        ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("updated_shop", null));
         return true;
     }
 

@@ -3,7 +3,7 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class repairPlayerHeldItem implements SignShopOperation {
@@ -26,13 +26,15 @@ public class repairPlayerHeldItem implements SignShopOperation {
         if(isInHand == null) {
             ssArgs.sendFailedRequirementsMessage("no_item_to_repair");
             return false;
-        } else if(isInHand.getType().getMaxDurability() < 30) {
+        } else if (isInHand.getType().getMaxDurability() < 30) {
             ssArgs.sendFailedRequirementsMessage("invalid_item_to_repair");
             return false;
-        } else if(isInHand.getEnchantments().size() > 0 && !SignShopConfig.getAllowEnchantedRepair() && !ssArgs.getPlayer().get().hasPerm("SignShop.ignorerepair", false)) {
+        }
+        else if (isInHand.getEnchantments().size() > 0 && !SignShop.getInstance().getSignShopConfig().getAllowEnchantedRepair() && !ssArgs.getPlayer().get().hasPerm("SignShop.ignorerepair", false)) {
             ssArgs.sendFailedRequirementsMessage("enchanted_not_allowed");
             return false;
-        } else if(((Damageable) isInHand.getItemMeta()).getDamage() == 0) {
+        }
+        else if (((Damageable) isInHand.getItemMeta()).getDamage() == 0) {
             ssArgs.sendFailedRequirementsMessage("item_already_repair");
             return false;
         }

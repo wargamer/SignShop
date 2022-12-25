@@ -5,7 +5,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -125,6 +125,6 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
 
     public void sendFailedRequirementsMessage(String messageName) {
         if(!isLeftClicking())
-            getPlayer().sendMessage(SignShopConfig.getError(messageName, getMessageParts()));
+            getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError(messageName, getMessageParts()));
     }
 }

@@ -12,6 +12,7 @@ import org.wargamer2010.signshop.events.SSExpiredEvent;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -211,9 +212,10 @@ public class TimeManager extends TimerTask {
     private Object tryReflection(String fullClassname) {
         try {
             Class<?> fc = Class.forName(fullClassname);
-            //noinspection deprecation
-            return fc.newInstance();//TODO fix this
-        } catch (InstantiationException | ClassNotFoundException | IllegalAccessException ignored) {
+
+            return fc.getDeclaredConstructor().newInstance();
+        } catch (InstantiationException | ClassNotFoundException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            SignShop.getInstance().debugMessage(e.getMessage());
         }
 
         return null;

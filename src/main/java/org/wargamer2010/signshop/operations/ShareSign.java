@@ -4,7 +4,7 @@ import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -26,7 +26,7 @@ public class ShareSign implements SignShopOperation {
         } else {
             signshopUtil.registerClickedMaterial(ssArgs.getSign().get(), ssArgs.getPlayer().get());
             ssArgs.bDoNotClearClickmap = true;
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("registered_share_sign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("registered_share_sign", null));
         }
         return true;
     }
@@ -36,7 +36,7 @@ public class ShareSign implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         List<Block> shops = Storage.get().getShopsWithMiscSetting("sharesigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_shop_linked_to_sharesign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_shop_linked_to_sharesign", null));
         } else {
             StringBuilder profitshops = new StringBuilder();
             boolean first = true;
@@ -65,7 +65,7 @@ public class ShareSign implements SignShopOperation {
                 profits.append(sTemp);
             }
             ssArgs.setMessagePart("!profits", profits.toString());
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("share_sign_splits_profit", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("share_sign_splits_profit", ssArgs.getMessageParts()));
         }
         return true;
     }

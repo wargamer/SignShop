@@ -7,7 +7,6 @@ import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.itemUtil;
 
@@ -67,7 +66,7 @@ public class SignShopPlayer {
     public static void broadcastMsg(World world, String sMessage) {
         for (Player player : Bukkit.getServer().getOnlinePlayers())
             if (player.getWorld() == world)
-                player.sendMessage(ChatColor.GOLD + SignShopConfig.getChatPrefix() + " [" + world.getName() + "] " + ChatColor.WHITE + sMessage);
+                player.sendMessage(ChatColor.GOLD + SignShop.getInstance().getSignShopConfig().getChatPrefix() + " [" + world.getName() + "] " + ChatColor.WHITE + sMessage);
     }
 
     public static boolean isOp(Player player) {
@@ -80,7 +79,7 @@ public class SignShopPlayer {
     public void sendMessage(String sMessage) {
         if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
-        if (SignShopConfig.getMessageCooldown() <= 0) {
+        if (SignShop.getInstance().getSignShopConfig().getMessageCooldown() <= 0) {
             sendNonDelayedMessage(sMessage);
             return;
         }
@@ -93,7 +92,7 @@ public class SignShopPlayer {
     public void sendNonDelayedMessage(String sMessage) {
         if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
-        String message = (ChatColor.GOLD + SignShopConfig.getChatPrefix() + ChatColor.WHITE + " " + sMessage);
+        String message = (ChatColor.GOLD + SignShop.getInstance().getSignShopConfig().getChatPrefix() + ChatColor.WHITE + " " + sMessage);
         getPlayer().sendMessage(message);
     }
 
@@ -178,7 +177,7 @@ public class SignShopPlayer {
         if (playername == null || playername.isEmpty())
             return true;
         boolean isOP = isOpRaw();
-        boolean OPOverride = SignShopConfig.getOPOverride();
+        boolean OPOverride = SignShop.getInstance().getSignShopConfig().getOPOverride();
 
         // If we're using Permissions, OPOverride is disabled then we need to ignore his OP
         // So let's temporarily disable it so the outcome of the Vault call won't be influenced
@@ -321,8 +320,8 @@ public class SignShopPlayer {
             return fPricemod;
         for (String sGroup1 : sGroups) {
             String sGroup = sGroup1.toLowerCase();
-            if (SignShopConfig.getPriceMultipliers().containsKey(sGroup) && SignShopConfig.getPriceMultipliers().get(sGroup).containsKey(sOperation)) {
-                fTemp = SignShopConfig.getPriceMultipliers().get(sGroup).get(sOperation);
+            if (SignShop.getInstance().getSignShopConfig().getPriceMultipliers().containsKey(sGroup) && SignShop.getInstance().getSignShopConfig().getPriceMultipliers().get(sGroup).containsKey(sOperation)) {
+                fTemp = SignShop.getInstance().getSignShopConfig().getPriceMultipliers().get(sGroup).get(sOperation);
 
                 if (bBuyOperation && (fTemp < fPricemod || firstRun))
                     fPricemod = fTemp;
@@ -343,20 +342,20 @@ public class SignShopPlayer {
         String[] sGroups = getPlayerGroups();
         int iShopAmount = Storage.get().countLocations(this);
 
-        if (SignShopConfig.getMaxShopsPerPerson() != 0 && iShopAmount >= SignShopConfig.getMaxShopsPerPerson())
-            return SignShopConfig.getMaxShopsPerPerson();
+        if (SignShop.getInstance().getSignShopConfig().getMaxShopsPerPerson() != 0 && iShopAmount >= SignShop.getInstance().getSignShopConfig().getMaxShopsPerPerson())
+            return SignShop.getInstance().getSignShopConfig().getMaxShopsPerPerson();
         if (sGroups == null) return 0;
 
         int iLimit = 1;
         boolean bInRelGroup = false;
         for (String sGroup1 : sGroups) {
             String sGroup = sGroup1.toLowerCase();
-            if (SignShopConfig.getShopLimits().containsKey(sGroup)) {
+            if (SignShop.getInstance().getSignShopConfig().getShopLimits().containsKey(sGroup)) {
                 bInRelGroup = true;
-                if (iShopAmount < SignShopConfig.getShopLimits().get(sGroup))
+                if (iShopAmount < SignShop.getInstance().getSignShopConfig().getShopLimits().get(sGroup))
                     iLimit = 0;
-                else if (iLimit != 0 && SignShopConfig.getShopLimits().get(sGroup) > iLimit)
-                    iLimit = SignShopConfig.getShopLimits().get(sGroup);
+                else if (iLimit != 0 && SignShop.getInstance().getSignShopConfig().getShopLimits().get(sGroup) > iLimit)
+                    iLimit = SignShop.getInstance().getSignShopConfig().getShopLimits().get(sGroup);
             }
 
         }
@@ -368,7 +367,8 @@ public class SignShopPlayer {
         if (getPlayer() == null)
             return new ItemStack[0];
         ItemStack[] temp = getPlayer().getInventory().getContents();
-        if (SignShopConfig.getEnableWrittenBookFix()) itemUtil.fixBooks(temp); //TODO do we even need to fix books anymore?
+        if (SignShop.getInstance().getSignShopConfig().getEnableWrittenBookFix())
+            itemUtil.fixBooks(temp); //TODO do we even need to fix books anymore?
         return temp;
     }
 

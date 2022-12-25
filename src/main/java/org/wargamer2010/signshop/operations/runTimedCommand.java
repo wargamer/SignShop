@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.timing.TimedCommand;
 
 import java.util.logging.Level;
@@ -19,11 +18,11 @@ public class runTimedCommand implements SignShopOperation {
 
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        if(SignShopConfig.getDelayedCommands().containsKey(ssArgs.getOperation().get().toLowerCase())) {
+        if (SignShop.getInstance().getSignShopConfig().getDelayedCommands().containsKey(ssArgs.getOperation().get().toLowerCase())) {
             String commandType;
-            if(ssArgs.isOperationParameter("asOriginalUser"))
+            if (ssArgs.isOperationParameter("asOriginalUser"))
                 commandType = "asOriginalUser";
-            else if(ssArgs.isOperationParameter("asUser"))
+            else if (ssArgs.isOperationParameter("asUser"))
                 commandType = "asUser";
             else
                 commandType = "asConsole";

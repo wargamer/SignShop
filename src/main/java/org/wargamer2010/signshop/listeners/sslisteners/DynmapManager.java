@@ -14,7 +14,6 @@ import org.dynmap.markers.MarkerIcon;
 import org.dynmap.markers.MarkerSet;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
@@ -56,10 +55,10 @@ public class DynmapManager implements Listener {
             return;
 
         dynmapAPI = (DynmapAPI)plugin;
-        if(!SignShopConfig.getEnableDynmapSupport()) {
-            if(safelyCheckInit()) {
+        if (!SignShop.getInstance().getSignShopConfig().getEnableDynmapSupport()) {
+            if (safelyCheckInit()) {
                 MarkerSet temp = dynmapAPI.getMarkerAPI().getMarkerSet(MarkerSetName);
-                if(temp != null)
+                if (temp != null)
                     temp.deleteMarkerSet();
             }
             return;

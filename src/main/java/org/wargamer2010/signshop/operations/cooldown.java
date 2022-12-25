@@ -1,6 +1,6 @@
 package org.wargamer2010.signshop.operations;
 
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.CooldownUtil;
 
@@ -59,8 +59,8 @@ public class cooldown implements SignShopOperation {
             if(diffInSeconds < cooldown) {
                 long left = (cooldown - diffInSeconds);
                 CooldownUtil.setCooldownMessage(ssArgs, left);
-                
-                ssPlayer.sendMessage(SignShopConfig.getError("shop_on_cooldown", ssArgs.getMessageParts()));
+
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("shop_on_cooldown", ssArgs.getMessageParts()));
                 return false;
             }
         } catch(NumberFormatException ex) {

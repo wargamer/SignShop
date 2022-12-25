@@ -16,7 +16,6 @@ import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
 import org.wargamer2010.signshop.player.PlayerCache;
@@ -107,14 +106,14 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockExplode(BlockExplodeEvent event) {
-        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+        if (event.isCancelled() || !(SignShop.getInstance().getSignShopConfig().getProtectShopsFromExplosions()))
             return;
         event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onEntityExplode(EntityExplodeEvent event) {
-        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+        if (event.isCancelled() || !(SignShop.getInstance().getSignShopConfig().getProtectShopsFromExplosions()))
             return;
         event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
     }
