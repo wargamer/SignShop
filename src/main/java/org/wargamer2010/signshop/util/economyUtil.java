@@ -12,35 +12,40 @@ import java.util.regex.Pattern;
 
 public class economyUtil {
     public static final Map<String, Double> priceCache = new HashMap<>();
+    private static SignShopConfig signShopConfig;
 
     private economyUtil() {
 
     }
 
+    public static void setSignShopConfig(SignShopConfig config) {
+        signShopConfig = config;
+    }
+
     private static String attachColor(String money) {
-        return (SignShopConfig.getMoneyColor() + money + ChatColor.WHITE);
+        return (signShopConfig.getMoneyColor() + money + ChatColor.WHITE);
     }
 
     public static String formatMoney(double money) {
-        if(Vault.getEconomy() == null)
+        if (Vault.getEconomy() == null)
             return attachColor(Double.toString(money));
         else
             return attachColor(Vault.getEconomy().format(money));
     }
 
     public static double parsePrice(String line) {
-        if(line == null)
+        if (line == null)
             return 0.0d;
-        if (SignShopConfig.cachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
+        if (signShopConfig.cachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
         String priceline = ChatColor.stripColor(line);
         StringBuilder sPrice = new StringBuilder();
         Double fPrice;
         for(int i = 0; i < priceline.length(); i++)
-            if(Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (SignShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
+            if (Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (signShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
                 sPrice.append(priceline.charAt(i));
-        if (SignShopConfig.allowCommaDecimalSeparator().isPermitted()) {
+        if (signShopConfig.allowCommaDecimalSeparator().isPermitted()) {
             double price = parsePriceInternational(sPrice.toString());
-            if (SignShopConfig.cachePrices()) priceCache.put(line, price);
+            if (signShopConfig.cachePrices()) priceCache.put(line, price);
             return price;
         }
         try {
@@ -55,7 +60,7 @@ public class economyUtil {
         if(Double.isNaN(fPrice) || fPrice.isInfinite())
             fPrice = 0.0d;
 
-        if (SignShopConfig.cachePrices()) priceCache.put(line, fPrice);
+        if (signShopConfig.cachePrices()) priceCache.put(line, fPrice);
         return fPrice;
     }
 
@@ -142,7 +147,7 @@ public class economyUtil {
                         priceString = commaSeparatedString;
                     } else {
                         // No valid match could be parsed
-                        SignShop.debugMessage("Parsed price was INVALID");
+                        SignShop.getInstance().debugMessage("Parsed price was INVALID");
                     }
                 }
 

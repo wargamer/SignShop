@@ -7,7 +7,6 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -21,7 +20,7 @@ public class enchantItemInHand implements SignShopOperation {
         if(ssArgs.getContainables().isEmpty()) {
             if(ssArgs.isOperationParameter("allowNoChests"))
                 return true;
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("chest_missing", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("chest_missing", ssArgs.getMessageParts()));
             return false;
         }
 
@@ -51,7 +50,7 @@ public class enchantItemInHand implements SignShopOperation {
             }
         }
         if(AllEnchantments.isEmpty()) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("enchantment_missing", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("enchantment_missing", ssArgs.getMessageParts()));
             return false;
         }
         ssArgs.miscSettings.put("enchantmentInHand", signshopUtil.convertEnchantmentsToString(AllEnchantments));

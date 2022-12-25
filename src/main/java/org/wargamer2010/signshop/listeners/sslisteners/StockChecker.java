@@ -6,7 +6,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.util.itemUtil;
 
@@ -21,8 +21,8 @@ public class StockChecker implements Listener {
         
         if(!event.getMessageParts().containsKey("!price") || !event.getMessageParts().containsKey("!items") || event.getContainables().isEmpty())
             return;
-        
-        List<String> operation = SignShopConfig.getBlocks(event.getOperation());
+
+        List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(event.getOperation());
         // TODO: Think of a better way to check whether the stock check is needed.
         // For now we'll assume that all admin shops don't have stock that needs to be checked.
         if(operation.contains("playerIsOp"))
@@ -30,8 +30,8 @@ public class StockChecker implements Listener {
         
         ItemStack[] allStacks = itemUtil.getAllItemStacksForContainables(event.getShop().getContainables());
         ItemStack[] filtered = itemUtil.filterStacks(allStacks, event.getShop().getItems());
-        
+
         event.setMessagePart("!shopinventory", (filtered.length == 0 ? "nothing" : itemUtil.itemStackToString(filtered)));
-        event.getPlayer().sendMessage(SignShopConfig.getError("shop_contains", event.getMessageParts()));
+        event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("shop_contains", event.getMessageParts()));
     }
 }

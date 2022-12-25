@@ -30,19 +30,24 @@ import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 import java.util.*;
 
 public class signshopUtil {
+    private static SignShopConfig signShopConfig;
 
     private signshopUtil() {
     }
 
+    public static void setSignShopConfig(SignShopConfig config) {
+        signShopConfig = config;
+    }
+
     public static String getOperation(Sign sign, boolean lowercase) {
-        if(sign == null)
+        if (sign == null)
             return "";
         String sSignOperation = sign.getLine(0);
-        if(sSignOperation.length() < 4){
+        if (sSignOperation.length() < 4) {
             return "";
         }
         String stripped = ChatColor.stripColor(sSignOperation);
-        String temp = stripped.substring(1, stripped.length()-1);
+        String temp = stripped.substring(1, stripped.length() - 1);
         return (lowercase ? temp.toLowerCase() : temp);
     }
 
@@ -76,10 +81,10 @@ public class signshopUtil {
     }
 
     private static SignShopOperation getSignShopBlock(String blockName) {
-        if(blockName == null)
+        if (blockName == null)
             return null;
-        if(SignShopConfig.getOperationInstances().containsKey(blockName))
-            return SignShopConfig.getOperationInstances().get(blockName);
+        if (signShopConfig.getOperationInstances().containsKey(blockName))
+            return signShopConfig.getOperationInstances().get(blockName);
         return null;
     }
 
@@ -107,7 +112,7 @@ public class signshopUtil {
     }
 
     public static List<SignShopSpecialOp> getSignShopSpecialOps() {
-        return SignShopConfig.getSpecialOps();
+        return signShopConfig.getSpecialOps();
     }
 
 
@@ -271,7 +276,7 @@ public class signshopUtil {
         Map<String, String> messageParts = new LinkedHashMap<>();
 
         if(!Vault.getEconomy().hasBankSupport()) {
-            player.sendMessage(SignShopConfig.getError("no_bank_support", messageParts));
+            player.sendMessage(signShopConfig.getError("no_bank_support", messageParts));
             return "";
         }
 
@@ -284,7 +289,7 @@ public class signshopUtil {
                 else if(!Vault.getEconomy().isBankOwner(bank, player.getOfflinePlayer()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getOfflinePlayer()).transactionSuccess()
                         && !player.isOp()) {
                     messageParts.put("!bank", bank);
-                    player.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", messageParts));
+                    player.sendMessage(signShopConfig.getError("not_allowed_to_use_bank", messageParts));
                     continue;
                 }
 
@@ -322,7 +327,7 @@ public class signshopUtil {
             }
         }
         if(playerGroups.size() > 0 && seller.isOwner(player)) {
-            player.sendMessage(SignShopConfig.getError("restricted_but_owner", null));
+            player.sendMessage(signShopConfig.getError("restricted_but_owner", null));
             return false;
         } else
             return (playerGroups.size() > 0 && !player.isOp());
@@ -398,7 +403,7 @@ public class signshopUtil {
 
     private static Boolean clickedSignShopMat(String mat, SignShopPlayer ssPlayer) {
         String materialName = null;
-        for(LinkableMaterial linkable : SignShopConfig.getLinkableMaterials()) {
+        for (LinkableMaterial linkable : signShopConfig.getLinkableMaterials()) {
             if (linkable.getMaterialName().equalsIgnoreCase(mat))
                 materialName = linkable.getAlias();
         }
@@ -406,7 +411,7 @@ public class signshopUtil {
             if(materialName.isEmpty()) // Leaving the alias empty probably means denylink shouldn't be checked
                 return true;
             if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
-                ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
+                ssPlayer.sendMessage(signShopConfig.getError("link_notallowed", null));
                 return false;
             }
             return true;
@@ -430,7 +435,7 @@ public class signshopUtil {
         if(clickedSignShopMat(bClicked, ssPlayer)) {
             if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
                 clicks.mClicksPerLocation.remove(bClicked.getLocation());
-                ssPlayer.sendMessage(SignShopConfig.getError("removed_location", null));
+                ssPlayer.sendMessage(signShopConfig.getError("removed_location", null));
             } else {
                 SSLinkEvent event = SSEventFactory.generateLinkEvent(bClicked, ssPlayer, null);
                 SignShop.scheduleEvent(event);
@@ -445,9 +450,9 @@ public class signshopUtil {
                         containables.add(bClicked);
                         ItemStack[] allStacks = itemUtil.getAllItemStacksForContainables(containables);
                         messageParts.put("!items", (allStacks.length == 0 ? "nothing" : itemUtil.itemStackToString(allStacks)));
-                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location_containable", messageParts));
+                        ssPlayer.sendMessage(signShopConfig.getError("stored_location_containable", messageParts));
                     } else {
-                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location", messageParts));
+                        ssPlayer.sendMessage(signShopConfig.getError("stored_location", messageParts));
                     }
                 }
             }
@@ -482,11 +487,11 @@ public class signshopUtil {
                 containables.add(bBlockat);
 
                 chestCounter++;
-                boolean exceeded = SignShopConfig.ExceedsMaxChestsPerShop(chestCounter);
+                boolean exceeded = signShopConfig.ExceedsMaxChestsPerShop(chestCounter);
                 if(exceeded) {
                     Map<String, String> parts = new LinkedHashMap<>();
-                    parts.put("!maxAmountOfChests", Integer.toString(SignShopConfig.getMaxChestsPerShop()));
-                    ssPlayer.sendMessage(SignShopConfig.getError("exceeded_max_amount_of_chests_per_shop", parts));
+                    parts.put("!maxAmountOfChests", Integer.toString(signShopConfig.getMaxChestsPerShop()));
+                    ssPlayer.sendMessage(signShopConfig.getError("exceeded_max_amount_of_chests_per_shop", parts));
                     return false;
                 }
             } else if (signshopUtil.clickedSignShopMat(bBlockat, ssPlayer)) {
@@ -498,10 +503,11 @@ public class signshopUtil {
                 }
             }
             if (!multiWorld && !bBlockat.getWorld().getName().equals(bClicked.getWorld().getName())) {
-                if (SignShopConfig.getAllowMultiWorldShops()) {
+                if (signShopConfig.getAllowMultiWorldShops()) {
                     multiWorld = true;
-                } else {
-                    ssPlayer.sendMessage(SignShopConfig.getError("multiworld_not_allowed", null));
+                }
+                else {
+                    ssPlayer.sendMessage(signShopConfig.getError("multiworld_not_allowed", null));
                     return false;
                 }
             }
@@ -578,7 +584,7 @@ public class signshopUtil {
 
     public static boolean notOPForCommand(SignShopPlayer player) {
         if(player != null && !player.isOp()) {
-            player.sendMessage(SignShopConfig.getError("must_be_op_to_run", null));
+            player.sendMessage(signShopConfig.getError("must_be_op_to_run", null));
             return true;
         }
 
@@ -618,11 +624,11 @@ public class signshopUtil {
      */
     public static String getParam(SignShopArguments ssArgs) {
         String rawparam = ssArgs.getOperation().get().toLowerCase();
-        if(ssArgs.hasOperationParameters())
+        if (ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        if(rawparam != null && !rawparam.isEmpty())
+        rawparam = signShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        rawparam = signShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        if (rawparam != null && !rawparam.isEmpty())
             ssArgs.setMessagePart("!param", rawparam);
         return rawparam;
     }

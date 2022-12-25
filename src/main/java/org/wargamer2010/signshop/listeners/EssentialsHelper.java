@@ -8,7 +8,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.util.logging.Level;
@@ -42,9 +41,9 @@ class EssentialsHelper {
                     if(essShopName.isEmpty())
                         continue;
                     essShopName = ChatColor.stripColor(essShopName).toLowerCase();
-                    if(!SignShopConfig.getBlocks(essShopName).isEmpty()) {
+                    if (!SignShop.getInstance().getSignShopConfig().getBlocks(essShopName).isEmpty()) {
                         SignShop.log("Sign with name " + sign.getTemplateName() + " is enabled for Essentials and conflicts with SignShop!", Level.SEVERE);
-                        if(!essConflictFound)
+                        if (!essConflictFound)
                             essConflictFound = true;
                     }
                 }

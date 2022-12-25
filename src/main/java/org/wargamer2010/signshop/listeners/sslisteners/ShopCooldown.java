@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.util.CooldownUtil;
 
@@ -20,7 +20,7 @@ public class ShopCooldown implements Listener {
     public void onSSPreTransactionEvent(SSPreTransactionEvent event) {
         if(event.isCancelled() || event.getAction() != Action.RIGHT_CLICK_BLOCK || !event.getRequirementsOK())
             return;
-        int cooldown = SignShopConfig.getShopCooldown();
+        int cooldown = SignShop.getInstance().getSignShopConfig().getShopCooldown();
         long now = new Date().getTime();
         String playername = event.getPlayer().getName();
 
@@ -36,7 +36,7 @@ public class ShopCooldown implements Listener {
 
         if((now - lastused) < cooldown) {
             CooldownUtil.setCooldownMessage(event, left);
-            event.getPlayer().sendMessage(SignShopConfig.getError("shop_on_cooldown", event.getMessageParts()));
+            event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("shop_on_cooldown", event.getMessageParts()));
             event.setCancelled(true);
             return;
         }

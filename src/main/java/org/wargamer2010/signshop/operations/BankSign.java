@@ -3,7 +3,7 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -15,7 +15,7 @@ public class BankSign implements SignShopOperation {
     public Boolean setupOperation(SignShopArguments ssArgs) {
         signshopUtil.registerClickedMaterial(ssArgs.getSign().get(), ssArgs.getPlayer().get());
         ssArgs.bDoNotClearClickmap = true;
-        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("registered_bank_sign", null));
+        ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("registered_bank_sign", null));
         return true;
     }
 
@@ -24,7 +24,7 @@ public class BankSign implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_shop_linked_to_banksign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_shop_linked_to_banksign", null));
         } else {
             StringBuilder profitshops = new StringBuilder();
             boolean first = true;
@@ -52,7 +52,7 @@ public class BankSign implements SignShopOperation {
                 profits.append(sTemp);
             }
             ssArgs.setMessagePart("!bank", profits.toString());
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
         }
         return true;
     }

@@ -5,12 +5,10 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.util.FileUtil;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
@@ -18,7 +16,6 @@ import org.wargamer2010.signshop.commands.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
-import org.wargamer2010.signshop.configuration.configUtil;
 import org.wargamer2010.signshop.listeners.SignShopBlockListener;
 import org.wargamer2010.signshop.listeners.SignShopLoginListener;
 import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
@@ -28,7 +25,6 @@ import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
-import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -42,6 +38,7 @@ import java.util.Date;
 import java.util.logging.*;
 
 public class SignShop extends JavaPlugin {
+    private SignShopConfig signShopConfig;
     public static final int DATA_VERSION = 3;
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
@@ -62,23 +59,34 @@ public class SignShop extends JavaPlugin {
     // Vault
     private Vault vault = null;
 
-    public static void debugTiming(String message,long start, long end){
-        if (SignShopConfig.debugging()){
-            debugMessage(message+" took: "+(end-start)+"ms");
+    public void reload() {
+        signShopConfig = new SignShopConfig();
+    }
+
+
+    public SignShopConfig getSignShopConfig() {
+        return signShopConfig;
+    }
+
+    public void debugTiming(String message, long start, long end) {
+        if (getSignShopConfig().debugging()) {
+            debugMessage(message + " took: " + (end - start) + "ms");
         }
     }
-    public static void debugMessage(String message){
-        if(SignShopConfig.debugging()){
-            log(message,Level.INFO);
+
+    public void debugMessage(String message) {
+        if (getSignShopConfig().debugging()) {
+            log(message, Level.INFO);
         }
     }
+
     public static void log(String message, Level level) {
         if (message != null && !message.trim().isEmpty())
             logger.log(level, ("[SignShop] " + message));
     }
 
-    public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
-        if (SignShopConfig.getTransactionLog()) {
+    public void logTransaction(String customer, String owner, String Operation, String items, String Price) {
+        if (getSignShopConfig().getTransactionLog()) {
             String fixedItems = (items.isEmpty() ? "none" : items);
             String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + fixedItems + ", Price: " + Price);
             transactionlogger.log(Level.INFO, message);
@@ -138,10 +146,9 @@ public class SignShop extends JavaPlugin {
 
         setupCommands();
 
-        // Backup config if it is an old version
-        backupOldConfig();
-
-        SignShopConfig.init();
+        // Backup config if it is an old version TODO remake this to work without static methods
+        /*backupOldConfig();*/
+        signShopConfig = new SignShopConfig();
         SignShopBooks.init();
         PlayerMetadata.init();
         SignShopItemMeta.init();
@@ -158,21 +165,22 @@ public class SignShop extends JavaPlugin {
         store = Storage.init(new File(this.getDataFolder(), "sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
 
-        if (SignShopConfig.allowCommaDecimalSeparator() == SignShopConfig.CommaDecimalSeparatorState.AUTO) {
+        if (getSignShopConfig().allowCommaDecimalSeparator() == SignShopConfig.CommaDecimalSeparatorState.AUTO) {
             // Plugin must decide if the comma separators are enabled
             SignShopConfig.CommaDecimalSeparatorState state;
             if (store.shopCount() == 0) {
-                log("Comma decimal seperators have been enabled because this server has 0 shops.",Level.INFO);
+                log("Comma decimal seperators have been enabled because this server has 0 shops.", Level.INFO);
                 state = SignShopConfig.CommaDecimalSeparatorState.TRUE;
-            } else {
-                log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.",Level.INFO);
+            }
+            else {
+                log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.", Level.INFO);
                 state = SignShopConfig.CommaDecimalSeparatorState.FALSE;
             }
             log("This can be changed by modifying 'AllowCommaDecimalSeperators' in the config.", Level.INFO);
-            SignShopConfig.setAllowCommaDecimalSeparator(state);
+            getSignShopConfig().setAllowCommaDecimalSeparator(state);
         }
 
-        if (SignShopConfig.getTransactionLog()) {
+        if (getSignShopConfig().getTransactionLog()) {
             try {
                 FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
                 TransferFormatter formatter = new TransferFormatter();
@@ -198,7 +206,7 @@ public class SignShop extends JavaPlugin {
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
 
-            if (SignShopConfig.getDisableEssentialsSigns()) {
+            if (getSignShopConfig().getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
             }
@@ -209,7 +217,7 @@ public class SignShop extends JavaPlugin {
             disableSignShop();
         }
         //Setup worth
-        if (SignShopConfig.getEnablePriceFromWorth()) {
+        if (getSignShopConfig().getEnablePriceFromWorth()) {
             if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
                 worthHandler = new CMIWorthHandler();
                 log("Using worth information from CMI.", Level.INFO);
@@ -223,11 +231,11 @@ public class SignShop extends JavaPlugin {
             }
         }
         //Enable metrics
-        if (SignShopConfig.metricsEnabled()) {
+        if (getSignShopConfig().metricsEnabled()) {
             Metrics metrics = new Metrics(this, B_STATS_ID);
             log("Thank you for enabling metrics!", Level.INFO);
         }
-        if (SignShopConfig.debugging()) {
+        if (getSignShopConfig().debugging()) {
             SignShop.log("Debugging enabled.", Level.INFO);
         }
 
@@ -316,9 +324,9 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new MoneyModifierListener(), this);
 
         DynmapManager dmm = new DynmapManager();
-        if (SignShopConfig.getEnableDynmapSupport())
+        if (getSignShopConfig().getEnableDynmapSupport())
             pm.registerEvents(dmm, this);
-        if (SignShopConfig.getEnableShopPlotSupport()) {
+        if (getSignShopConfig().getEnableShopPlotSupport()) {
             if (this.getServer().getPluginManager().isPluginEnabled("WorldGuard")) {
                 pm.registerEvents(new WorldGuardChecker(), this);
             }
@@ -331,7 +339,7 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
-    private void backupOldConfig() {
+   /* private void backupOldConfig() {
         FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.configFilename);
         File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.configFilename);
 
@@ -344,7 +352,7 @@ public class SignShop extends JavaPlugin {
             ymlThing.set("ConfigVersionDoNotTouch", SignShopConfig.getConfigVersionDoNotTouch());
             SignShopConfig.saveConfig(ymlThing, configFile);
         }
-    }
+    }*/
 
     private static class TransferFormatter extends Formatter {
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");

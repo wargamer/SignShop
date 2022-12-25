@@ -4,7 +4,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+import org.wargamer2010.signshop.SignShop;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,10 +29,12 @@ public class HookManager {
     private static Hook createHook(String hookName) {
         String hookClassname = (hookName + "Hook");
         try {
-            Class<?> fc = Class.forName("org.wargamer2010.signshop.hooks."+hookClassname);
-            //noinspection deprecation
-            return ((Hook)fc.newInstance());
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ignored) {
+            Class<?> fc = Class.forName("org.wargamer2010.signshop.hooks." + hookClassname);
+
+            return ((Hook) fc.getDeclaredConstructor().newInstance());
+
+        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException e) {
+            SignShop.getInstance().debugMessage(e.getMessage());
         }
 
         return null;

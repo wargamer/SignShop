@@ -1,7 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.World;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class setNightTime implements SignShopOperation {    
@@ -17,9 +17,9 @@ public class setNightTime implements SignShopOperation {
     
     @Override
     public Boolean runOperation(SignShopArguments ssArgs) {
-        World world = ssArgs.getPlayer().get().getPlayer().getWorld();        
-        world.setTime(14000);        
-        SignShopPlayer.broadcastMsg(world, SignShopConfig.getError("made_night", ssArgs.getMessageParts()));
+        World world = ssArgs.getPlayer().get().getPlayer().getWorld();
+        world.setTime(14000);
+        SignShopPlayer.broadcastMsg(world, SignShop.getInstance().getSignShopConfig().getError("made_night", ssArgs.getMessageParts()));
         return true;
     }
 }

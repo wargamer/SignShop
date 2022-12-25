@@ -4,7 +4,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.PlayerIdentifier;
@@ -26,11 +26,11 @@ public class ChangeOwner implements SignShopSpecialOp {
         if(!clicks.mClicksPerPlayerId.containsValue(player))
             return false;
         if(!ssPlayer.hasPerm("SignShop.ChangeOwner", true)) {
-            ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission_changeowner", null));
             return false;
         }
         if(!seller.isOwner(ssPlayer) && !ssPlayer.hasPerm("SignShop.ChangeOwner.Others", true)) {
-            ssPlayer.sendMessage(SignShopConfig.getError("no_permission_changeowner", null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission_changeowner", null));
             return false;
         }
         PlayerIdentifier newOwner = null;

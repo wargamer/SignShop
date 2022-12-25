@@ -3,7 +3,7 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.type.Switch;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 public class setRedstoneOff implements SignShopOperation {
@@ -14,7 +14,7 @@ public class setRedstoneOff implements SignShopOperation {
             if(block.getType() == Material.getMaterial("LEVER"))
                 foundLever = true;
         if(!foundLever) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("lever_missing", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("lever_missing", ssArgs.getMessageParts()));
             return false;
         }
         return true;

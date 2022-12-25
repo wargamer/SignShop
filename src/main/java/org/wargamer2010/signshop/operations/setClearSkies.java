@@ -1,7 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.World;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class setClearSkies implements SignShopOperation {
@@ -26,7 +26,7 @@ public class setClearSkies implements SignShopOperation {
         world.setStorm(false);
         world.setThundering(false);
 
-        SignShopPlayer.broadcastMsg(world,SignShopConfig.getError("made_clear_skies", ssArgs.getMessageParts()));
+        SignShopPlayer.broadcastMsg(world, SignShop.getInstance().getSignShopConfig().getError("made_clear_skies", ssArgs.getMessageParts()));
         return true;
     }
 }
