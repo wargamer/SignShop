@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.specialops;
 
-import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;

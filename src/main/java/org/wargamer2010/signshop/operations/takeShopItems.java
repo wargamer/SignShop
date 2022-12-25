@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.operations;
 
-import org.bukkit.ChatColor;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.configuration.SignShopConfig;

@@ -321,7 +321,6 @@ public class SignShopPlayerListener implements Listener {
             if(posttransactevent.isCancelled())
                 return;
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                // Seems to still be needed. TODO: Find a proper way to update the player inventory
                 player.updateInventory();
             }
             List<String> chests = new LinkedList<>();
@@ -332,7 +331,6 @@ public class SignShopPlayerListener implements Listener {
             String items = (!ssArgs.hasMessagePart("!items") ? signshopUtil.implode(sChests, " and ") : ssArgs.getMessagePart("!items"));
             SignShop.logTransaction(player.getName(), seller.getOwner().getName(), sOperation, items, economyUtil.formatMoney(ssArgs.getPrice().get()));
 
-            // TODO: test test test
             event.setCancelled(true);
             return;
         }

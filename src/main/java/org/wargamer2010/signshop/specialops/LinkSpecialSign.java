@@ -32,7 +32,6 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         if(isSupported(sOperation)) // Can't link a special sign to a special sign
             return false;
 
-        // TODO: May have to consider working with multiple Special sign types at the same time
         // For now, let's support linking/unlinking a single special sign type at a time
         String SignName = null;
         for(Block bTemp : clickedBlocks) {

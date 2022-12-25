@@ -89,12 +89,10 @@ public class SignShopPlayer {
         MessageWorker.OfferMessage(sMessage, this);
     }
 
-    //TODO
+
     public void sendNonDelayedMessage(String sMessage) {
         if (sMessage == null || sMessage.trim().isEmpty() || getPlayer() == null || ignoreMessages)
             return;
-        /*String message = (ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(),
-                ChatColor.GOLD + SignShopConfig.getChatPrefix() + ChatColor.WHITE + " " + sMessage))*/
         String message = (ChatColor.GOLD + SignShopConfig.getChatPrefix() + ChatColor.WHITE + " " + sMessage);
         getPlayer().sendMessage(message);
     }
