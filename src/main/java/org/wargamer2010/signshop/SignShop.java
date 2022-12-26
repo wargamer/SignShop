@@ -339,7 +339,7 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
-   /* private void backupOldConfig() {
+   /* private void backupOldConfig() { TODO reintroduce this
         FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.configFilename);
         File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.configFilename);
 

@@ -245,7 +245,7 @@ public class itemUtil {
             if (first) first = false;
             else sItems.append(signShopConfig.getTextColor()).append(", ");
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
-            String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
+            String count = (signShopConfig.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
                 sItems.append(count).append(formatMaterialName(entry.getKey()));
             else
