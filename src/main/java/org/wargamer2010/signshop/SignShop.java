@@ -5,10 +5,12 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.FileUtil;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
@@ -16,6 +18,7 @@ import org.wargamer2010.signshop.commands.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.configuration.configUtil;
 import org.wargamer2010.signshop.listeners.SignShopBlockListener;
 import org.wargamer2010.signshop.listeners.SignShopLoginListener;
 import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
@@ -25,6 +28,7 @@ import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
+import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -38,12 +42,13 @@ import java.util.Date;
 import java.util.logging.*;
 
 public class SignShop extends JavaPlugin {
-    private SignShopConfig signShopConfig;
+    private static final int CONFIG_VERSION_DO_NOT_TOUCH = 4;
     public static final int DATA_VERSION = 3;
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
     public static WorthHandler worthHandler;
     private static SignShop instance;
+    private SignShopConfig signShopConfig;
     //Statics
     private static Storage store;
     private static TimeManager manager = null;
@@ -146,9 +151,10 @@ public class SignShop extends JavaPlugin {
 
         setupCommands();
 
-        // Backup config if it is an old version TODO remake this to work without static methods
-        /*backupOldConfig();*/
+        // Backup config if it is an old version
+        backupOldConfig();
         signShopConfig = new SignShopConfig();
+
         SignShopBooks.init();
         PlayerMetadata.init();
         SignShopItemMeta.init();
@@ -339,20 +345,20 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new SharedMoneyTransaction(), this);
     }
 
-   /* private void backupOldConfig() { TODO reintroduce this
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.configFilename);
-        File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.configFilename);
+    private void backupOldConfig() {
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.CONFIG_FILENAME);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.CONFIG_FILENAME);
 
         if ((ymlThing != null && configFile.exists())
-                && (!ymlThing.isSet("ConfigVersionDoNotTouch") || ymlThing.getInt("ConfigVersionDoNotTouch") != SignShopConfig.getConfigVersionDoNotTouch())) {
+                && (!ymlThing.isSet("ConfigVersionDoNotTouch") || ymlThing.getInt("ConfigVersionDoNotTouch") != CONFIG_VERSION_DO_NOT_TOUCH)) {
 
             SignShop.log("Old config detected, backing it up before modifiying it.", Level.INFO);
             File configBackup = new File(SignShop.getInstance().getDataFolder(), "configBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
             FileUtil.copy(configFile, configBackup);
-            ymlThing.set("ConfigVersionDoNotTouch", SignShopConfig.getConfigVersionDoNotTouch());
+            ymlThing.set("ConfigVersionDoNotTouch", CONFIG_VERSION_DO_NOT_TOUCH);
             SignShopConfig.saveConfig(ymlThing, configFile);
         }
-    }*/
+    }
 
     private static class TransferFormatter extends Formatter {
         private final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");

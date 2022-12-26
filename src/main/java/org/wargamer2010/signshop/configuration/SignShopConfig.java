@@ -23,7 +23,7 @@ import java.util.*;
 import java.util.logging.Level;
 
 public class SignShopConfig {
-    public final String configFilename = "config.yml";
+    public static final String CONFIG_FILENAME = "config.yml";
     private final String defaultOPPackage = "org.wargamer2010.signshop.operations";
     private final Map<String, SignShopOperation> OperationInstances = new LinkedHashMap<>();
     private final List<SignShopSpecialOp> SpecialsOps = new LinkedList<>();
@@ -42,7 +42,6 @@ public class SignShopConfig {
     private SignShop instance = null;
     //Configurables
     private FileConfiguration config;
-    private int ConfigVersionDoNotTouch = 3;
     private int MaxSellDistance = 0;
     private int MaxShopsPerPerson = 0;
     private int ShopCooldown = 0;
@@ -218,12 +217,12 @@ public class SignShopConfig {
     }
 
     private void initConfig() {
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
         if (ymlThing == null)
             return;
-        configUtil.loadYMLFromJar(ymlThing, configFilename);
+        configUtil.loadYMLFromJar(ymlThing, CONFIG_FILENAME);
 
-        ConfigVersionDoNotTouch = ymlThing.getInt("ConfigVersionDoNotTouch", ConfigVersionDoNotTouch);
+       // ConfigVersionDoNotTouch = ymlThing.getInt("ConfigVersionDoNotTouch", ConfigVersionDoNotTouch);
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         Debugging = ymlThing.getBoolean("Debugging", Debugging);
@@ -303,8 +302,8 @@ public class SignShopConfig {
     }
 
     public void updateConfigMaterials(String name) {
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
-        File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), CONFIG_FILENAME);
         if (name.equals("INK_SACK") && ymlThing.getString("UpdateMaterial").equalsIgnoreCase("INK_SACK")) {
             ymlThing.set("UpdateMaterial", "ink_sac");
             SignShop.log("UpdateMaterial changed successfully from ink_sack to ink_sac in the config.yml", Level.INFO);
@@ -318,10 +317,10 @@ public class SignShopConfig {
 
     }
 
-    public void saveConfig(FileConfiguration ymlThing, File file) {
+    public static void saveConfig(FileConfiguration ymlThing, File file) {
         try {
             ymlThing.save(file);
-            configUtil.loadYMLFromJar(ymlThing, configFilename);
+            configUtil.loadYMLFromJar(ymlThing, CONFIG_FILENAME);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -449,7 +448,7 @@ public class SignShopConfig {
             }
         }
         if (changedSomething)
-            configUtil.loadYMLFromJar(config, configFilename);
+            configUtil.loadYMLFromJar(config, CONFIG_FILENAME);
     }
 
     private void closeStream(Closeable in) {
@@ -716,10 +715,6 @@ public class SignShopConfig {
         return Collections.unmodifiableList(SpecialsOps);
     }
 
-    public int getConfigVersionDoNotTouch() {
-        return ConfigVersionDoNotTouch;
-    }
-
     public int getMaxSellDistance() {
         return MaxSellDistance;
     }
@@ -845,8 +840,8 @@ public class SignShopConfig {
         AllowCommaDecimalSeparator = state;
 
         if (doSave) {
-            FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
-            File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
+            FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
+            File configFile = new File(SignShop.getInstance().getDataFolder(), CONFIG_FILENAME);
             ymlThing.set("AllowCommaDecimalSeparator", state.name);
             saveConfig(ymlThing, configFile);
         }
