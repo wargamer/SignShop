@@ -341,9 +341,9 @@ public class SignShopConfig {
             }
             Class<?> aclass = Class.forName(fullClassPath);
 
-            return aclass.getDeclaredConstructor().newInstance();//TODO test
-        } catch (ClassNotFoundException | InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException e) {
-            SignShop.getInstance().debugMessage(e.getMessage());
+            return aclass.getDeclaredConstructor().newInstance();
+        } catch (ClassNotFoundException | InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException ignored) {
+            // It failed so the operation or classpath must be invalid.
         }
 
         return null;
