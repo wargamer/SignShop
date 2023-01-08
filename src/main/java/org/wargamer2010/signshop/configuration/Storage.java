@@ -133,7 +133,6 @@ public class Storage implements Listener {
     }
 
     private boolean loadSellerFromSettings(String key, HashMap<String,List<String>> sellerSettings) {
-        SignShop.debugMessage("Loading seller from settings.");
         Block seller_sign;
         SignShopPlayer seller_owner;
         List<Block> seller_activatables;
@@ -198,17 +197,13 @@ public class Storage implements Listener {
                 }
             }
         } catch(StorageException caughtex) {
-            SignShop.debugMessage("StorageException caught. " + caughtex.getReason());//Caught when shop may be invalid
             if(caughtex.getReason() == StorageExceptionReason.NULL_WORLD){
-                SignShop.debugMessage("Null_World shop added to deferred shops.");
                 deferredSellers.put(key, sellerSettings);
                 return false; // World may not even be loaded for this startup. May be loaded by a plugin later, or future startup.
             }
             else if(!caughtex.getWorld().isEmpty()) {
                 for(World temp : Bukkit.getServer().getWorlds()) {
-                    SignShop.debugMessage("World: "+temp.getName()+", Loaded chunks: "+temp.getLoadedChunks().length);
                     if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) {
-                        SignShop.debugMessage("World is not null but there are no loaded chunks. Adding to deferred shops.");
                         deferredSellers.put(key, sellerSettings);
                         return false; // World chunks might not be loaded yet
                     }
@@ -219,14 +214,12 @@ public class Storage implements Listener {
                 SignShop.log(getInvalidError(
                         SignShopConfig.getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
             } catch(StorageException lastex) {
-                SignShop.debugMessage("Second StorageException caught. " + lastex.getReason());
                 SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
             }
             invalidShops.put(key, sellerSettings);
             return false;
         }
 
-        SignShop.debugMessage("Checking for too many chests.");
         if(SignShopConfig.ExceedsMaxChestsPerShop(seller_containables.size())) {
             Map<String, String> parts = new LinkedHashMap<>();
             int x = seller_sign.getX();
@@ -240,7 +233,6 @@ public class Storage implements Listener {
             SignShop.log(SignShopConfig.getError("this_shop_exceeded_max_amount_of_chests", parts), Level.WARNING);
         }
 
-        SignShop.debugMessage("Shop is valid, adding it now.");
         addSeller(seller_owner.GetIdentifier(), seller_shopworld, seller_sign, seller_containables, seller_activatables, seller_items, miscsettings, false);
         return true;
     }
@@ -256,7 +248,6 @@ public class Storage implements Listener {
         }
         Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
         tempSellers.putAll(configUtil.fetchHashmapInHashmapwithList("deferred_sellers",yml));
-        SignShop.debugMessage("tempSellers size is: "+ tempSellers.size());
         if(tempSellers == null) {
             SignShop.log("Invalid sellers.yml format detected. Old sellers format is no longer supported."
                     + " Visit http://tiny.cc/signshop for more information.",
@@ -270,14 +261,11 @@ public class Storage implements Listener {
 
         boolean needSave = false;
 
-        SignShop.debugMessage("Starting validation loop.");
         for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : tempSellers.entrySet())
         {
             needSave = !loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) || needSave;
-           SignShop.debugMessage("needSave is: "+needSave);
         }
 
-        SignShop.debugMessage("Validation loop has completed. Registering events.");
         Bukkit.getPluginManager().registerEvents(this, SignShop.getInstance());
         SignShop.log("Loaded " + shopCount() + " valid shops.", Level.INFO);
         return needSave;
@@ -338,10 +326,7 @@ public class Storage implements Listener {
     public void addSeller(PlayerIdentifier playerId, String sWorld, Block bSign, List<Block> containables, List<Block> activatables, ItemStack[] isItems, Map<String, String> misc, Boolean save) {
         Storage.sellers.put(bSign.getLocation(), new Seller(playerId, sWorld, containables, activatables, isItems, bSign.getLocation(), misc, save));
         if(save) {
-            SignShop.debugMessage("Shop added, saving now.");
             this.Save();
-        }else {
-            SignShop.debugMessage("Shop number " + Storage.sellers.size() + " loaded and verified, save not required.");
         }
     }
 
