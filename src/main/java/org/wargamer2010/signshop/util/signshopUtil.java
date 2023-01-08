@@ -159,8 +159,9 @@ public class signshopUtil {
             return null;
         try {
             World world = pWorld;
-            if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null)
+            if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null) {
                 world = Bukkit.getWorld(sCoords[3]);
+            }
             return new Location(world, Double.parseDouble(sCoords[0]), Double.parseDouble(sCoords[1]), Double.parseDouble(sCoords[2]));
         } catch(NumberFormatException ex) {
             return null;
