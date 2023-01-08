@@ -51,6 +51,9 @@ public class FileSaveWorker extends BukkitRunnable {
 
     public void stop() {
         try {
+            if(!saveQueue.isEmpty()){
+                saveToFile(saveQueue.poll());
+            }
             this.cancel();
 
             int count = 0;

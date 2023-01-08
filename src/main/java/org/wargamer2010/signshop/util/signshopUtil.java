@@ -149,20 +149,14 @@ public class signshopUtil {
     }
 
     public static Location convertStringToLocation(String sLoc, World pWorld) {
-        SignShop.debugMessage("Converting string '"+sLoc+"'  to location in world, "+pWorld+".");
-        SignShop.debugMessage("From these worlds: " + Bukkit.getWorlds());
         String[] sCoords = sLoc.split("/");
         if(sCoords.length < 3)
             return null;
         try {
             World world = pWorld;
             if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null) {
-                SignShop.debugMessage("World string is not null.");
                 world = Bukkit.getWorld(sCoords[3]);
-            }else {
-                SignShop.debugMessage("World string is null. Using passed world.");
             }
-
             return new Location(world, Double.parseDouble(sCoords[0]), Double.parseDouble(sCoords[1]), Double.parseDouble(sCoords[2]));
         } catch(NumberFormatException ex) {
             return null;

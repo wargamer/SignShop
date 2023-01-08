@@ -420,7 +420,7 @@ public class itemUtil {
         setSignStatus(bSign, ccColor);
     }
 
-    //TODO This is what is loading chunks
+    //TODO This is what is loading chunks This gets called in some loop????????
     public static Boolean clickedSign(Block bBlock) {//TODO change to Tag in a later version?
         return (bBlock.getBlockData() instanceof org.bukkit.block.data.type.Sign || bBlock.getBlockData() instanceof org.bukkit.block.data.type.WallSign);
     }

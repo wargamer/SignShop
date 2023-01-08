@@ -42,6 +42,7 @@ public class Storage implements Listener {
     private static final String itemSeperator = "&";
 
     private final Map<String, HashMap<String, List<String>>> invalidShops = new LinkedHashMap<>();
+    private final Map<String, HashMap<String, List<String>>> deferredSellers = new LinkedHashMap<>();
 
     private Storage(File ymlFile) {
         fileSaveWorker = new FileSaveWorker(ymlFile);
@@ -61,7 +62,9 @@ public class Storage implements Listener {
         Boolean needToSave = Load();
 
         if(needToSave) {
-            File backupTo = new File(ymlFile.getPath()+".bak");
+            StringBuilder backupExt = new StringBuilder(".bak");
+            if (SignShopConfig.debugging()) backupExt.insert(0, "-" + System.currentTimeMillis());
+            File backupTo = new File(ymlFile.getPath() + backupExt);
             if(backupTo.exists())
                 backupTo.delete();
             try {
@@ -76,7 +79,6 @@ public class Storage implements Listener {
     public static Storage init(File ymlFile) {
         if(instance == null) {
             instance = new Storage(ymlFile);
-           // taskId = Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance).getTaskId();
         }
         return instance;
     }
@@ -97,13 +99,13 @@ public class Storage implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onWorldLoad(WorldLoadEvent event) {
-        if(invalidShops.isEmpty())
+        if(deferredSellers.isEmpty())
             return;
 
         String worldname = event.getWorld().getName();
         List<String> loaded = new LinkedList<>();
         SignShop.log("Loading shops for world: " + worldname, Level.INFO);
-        for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : invalidShops.entrySet())
+        for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : deferredSellers.entrySet())
         {
             if(shopSettings.getKey().contains(worldname.replace(".", ""))) {
                 if(loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()))
@@ -113,17 +115,21 @@ public class Storage implements Listener {
 
         if(!loaded.isEmpty()) {
             for(String loadedshop : loaded) {
-                invalidShops.remove(loadedshop);
+                deferredSellers.remove(loadedshop);
             }
+            Save();
         }
     }
 
     private List<String> getSetting(HashMap<String,List<String>> settings, String settingName) throws StorageException {
         StorageException ex = new StorageException();
-        if(settings.containsKey(settingName))
+        if(settings.containsKey(settingName)) {
             return settings.get(settingName);
-        else
+        }
+        else {
+            ex.setReason(StorageExceptionReason.NO_SUCH_SETTING);
             throw ex;
+        }
     }
 
     private boolean loadSellerFromSettings(String key, HashMap<String,List<String>> sellerSettings) {
@@ -135,52 +141,53 @@ public class Storage implements Listener {
         String seller_shopworld;
         ItemStack[] seller_items;
         Map<String, String> miscsettings;
-        StorageException storageex = new StorageException();
+        StorageException storageEx = new StorageException();
 
         List<String> tempList;
         try {
             tempList = getSetting(sellerSettings, "shopworld");
-            if(tempList.isEmpty())
-                throw storageex;
+            if(tempList.isEmpty()) {
+                storageEx.setReason(StorageExceptionReason.EMPTY_WORLD_STRING);
+                throw storageEx;
+            }
             seller_shopworld = tempList.get(0);
-            storageex.setWorld(seller_shopworld);
-            SignShop.debugMessage("Checking for world.");
-            if(Bukkit.getServer().getWorld(seller_shopworld) == null)
-                throw storageex;
+            storageEx.setWorld(seller_shopworld);
+            if(Bukkit.getServer().getWorld(seller_shopworld) == null) {
+                storageEx.setReason(StorageExceptionReason.NULL_WORLD);
+                throw storageEx;
+            }
             tempList = getSetting(sellerSettings, "owner");
-            if(tempList.isEmpty())
-                throw storageex;
-            SignShop.debugMessage("Checking for player.");
+            if(tempList.isEmpty()) {
+                storageEx.setReason(StorageExceptionReason.EMPTY_OWNER_STRING);
+                throw storageEx;
+            }
             seller_owner = PlayerIdentifier.getPlayerFromString(tempList.get(0));
-            if(seller_owner == null)
-                throw storageex;
-            SignShop.debugMessage("Checking for sign.");
+            if(seller_owner == null){
+                storageEx.setReason(StorageExceptionReason.NULL_OWNER);
+                throw storageEx;
+            }
             tempList = getSetting(sellerSettings, "sign");
-            if(tempList.isEmpty())
-                throw storageex;
+            if(tempList.isEmpty()) {
+                storageEx.setReason(StorageExceptionReason.EMPTY_SIGN_STRING);
+                throw storageEx;
+            }
 
-            SignShop.debugMessage("Worldname, owner and sign are valid.");
             World world = Bukkit.getServer().getWorld(seller_shopworld);
 
-            SignShop.debugMessage("World is called: " + world);
             try {
-                SignShop.debugMessage("Getting sign block.");
                 seller_sign = signshopUtil.convertStringToLocation(tempList.get(0), world).getBlock();
-                SignShop.debugMessage("Sign block is: " + seller_sign);
             } catch(Exception ex) {
                 SignShop.log("Caught an unexpected exception: " + ex.getMessage(), Level.WARNING);
                 // May have caught a FileNotFoundException originating from the chunkloader
                 // In any case, the shop can not be loaded at this point so let's assume it's invalid
-                throw storageex;
+                throw storageEx;
             }
-
-            if(!itemUtil.clickedSign(seller_sign))
-                throw storageex;
-            SignShop.debugMessage("Checking activatables.");
+            if(!itemUtil.clickedSign(seller_sign)) {
+                storageEx.setReason(StorageExceptionReason.SIGN_LOCATION_NOT_ACTUALLY_SIGN);
+                throw storageEx;
+            }
             seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
-            SignShop.debugMessage("Checking containables.");
             seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);
-            SignShop.debugMessage("Checking items.");
             seller_items = itemUtil.convertStringtoItemStacks(getSetting(sellerSettings, "items"));
             miscsettings = new HashMap<>();
             if(sellerSettings.containsKey("misc")) {
@@ -191,13 +198,19 @@ public class Storage implements Listener {
                 }
             }
         } catch(StorageException caughtex) {
-            SignShop.debugMessage("Shop may be invalid.");//Caught when shop is invalid
-            if(!caughtex.getWorld().isEmpty()) {
+            SignShop.debugMessage("StorageException caught. " + caughtex.getReason());//Caught when shop may be invalid
+            if(caughtex.getReason() == StorageExceptionReason.NULL_WORLD){
+                SignShop.debugMessage("Null_World shop added to deferred shops.");
+                deferredSellers.put(key, sellerSettings);
+                return false; // World may not even be loaded for this startup. May be loaded by a plugin later, or future startup.
+            }
+            else if(!caughtex.getWorld().isEmpty()) {
                 for(World temp : Bukkit.getServer().getWorlds()) {
-                    if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) { //TODO Option to short circuit this to prevent invalid shop removal
-                        invalidShops.put(key, sellerSettings);
-                        SignShop.debugMessage("World may not be loaded yet.");
-                        return true; // World might not be loaded yet
+                    SignShop.debugMessage("World: "+temp.getName()+", Loaded chunks: "+temp.getLoadedChunks().length);
+                    if(temp.getName().equalsIgnoreCase(caughtex.getWorld()) && temp.getLoadedChunks().length == 0) {
+                        SignShop.debugMessage("World is not null but there are no loaded chunks. Adding to deferred shops.");
+                        deferredSellers.put(key, sellerSettings);
+                        return false; // World chunks might not be loaded yet
                     }
                 }
             }
@@ -206,6 +219,7 @@ public class Storage implements Listener {
                 SignShop.log(getInvalidError(
                         SignShopConfig.getError("shop_removed", null), getSetting(sellerSettings, "sign").get(0), getSetting(sellerSettings, "shopworld").get(0)), Level.INFO);
             } catch(StorageException lastex) {
+                SignShop.debugMessage("Second StorageException caught. " + lastex.getReason());
                 SignShop.log(SignShopConfig.getError("shop_removed", null), Level.INFO);
             }
             invalidShops.put(key, sellerSettings);
@@ -235,11 +249,13 @@ public class Storage implements Listener {
         SignShop.log("Loading and validating shops, please wait...",Level.INFO);
         FileConfiguration yml = YamlConfiguration.loadConfiguration(ymlfile);
         ConfigurationSection sellersection = yml.getConfigurationSection("sellers");
-        if(sellersection == null) {
+        ConfigurationSection pendingSellerSection = yml.getConfigurationSection("deferred_sellers");
+        if(sellersection == null && pendingSellerSection == null) {
             SignShop.log("There are no shops available. This is likely your first startup with SignShop.",Level.INFO);
             return false;
         }
         Map<String,HashMap<String,List<String>>> tempSellers = configUtil.fetchHashmapInHashmapwithList("sellers", yml);
+        tempSellers.putAll(configUtil.fetchHashmapInHashmapwithList("deferred_sellers",yml));
         SignShop.debugMessage("tempSellers size is: "+ tempSellers.size());
         if(tempSellers == null) {
             SignShop.log("Invalid sellers.yml format detected. Old sellers format is no longer supported."
@@ -248,7 +264,7 @@ public class Storage implements Listener {
             return false;
         }
         if (tempSellers.isEmpty()) {
-            SignShop.log("Loaded zero valid shops.",Level.INFO);
+            SignShop.log("Loaded zero potential shops.",Level.INFO);
             return false;
         }
 
@@ -257,7 +273,8 @@ public class Storage implements Listener {
         SignShop.debugMessage("Starting validation loop.");
         for(Map.Entry<String,HashMap<String,List<String>>> shopSettings : tempSellers.entrySet())
         {
-            needSave = (loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) && needSave);
+            needSave = !loadSellerFromSettings(shopSettings.getKey(), shopSettings.getValue()) || needSave;
+           SignShop.debugMessage("needSave is: "+needSave);
         }
 
         SignShop.debugMessage("Validation loop has completed. Registering events.");
@@ -307,6 +324,8 @@ public class Storage implements Listener {
         }
 
         config.set("sellers", tempSellers);
+        config.set("deferred_sellers", deferredSellers);
+        config.set("invalid_sellers",invalidShops);
         config.set("DataVersion",SignShop.DATA_VERSION);
         // We can not run the logic above async, but we can save to disc on another thread
         fileSaveWorker.queueSave(config);
@@ -321,8 +340,9 @@ public class Storage implements Listener {
         if(save) {
             SignShop.debugMessage("Shop added, saving now.");
             this.Save();
+        }else {
+            SignShop.debugMessage("Shop number " + Storage.sellers.size() + " loaded and verified, save not required.");
         }
-        SignShop.debugMessage("Shop number "+Storage.sellers.size()+" loaded and verified, save not required.");
     }
 
     public void updateSeller(Block bSign, List<Block> containables, List<Block> activatables) {
@@ -424,8 +444,8 @@ public class Storage implements Listener {
 
     private static class StorageException extends Exception {
         private static final long serialVersionUID = 1L;
-
         private String world = "";
+        private StorageExceptionReason exceptionReason = StorageExceptionReason.UNDEFINED;
 
         public String getWorld() {
             return world;
@@ -434,5 +454,39 @@ public class Storage implements Listener {
         public void setWorld(String world) {
             this.world = world;
         }
+
+        public StorageExceptionReason getReason() {
+            return exceptionReason;
+        }
+
+        public void setReason(StorageExceptionReason exceptionReason) {
+            this.exceptionReason = exceptionReason;
+        }
+
+
+    }
+    private enum StorageExceptionReason {
+        EMPTY_WORLD_STRING("Shopworld string is empty."),
+        EMPTY_OWNER_STRING("Owner string is empty."),
+        EMPTY_SIGN_STRING("Sign string is empty."),
+        NULL_OWNER("The shop owner is null"),
+        SIGN_LOCATION_NOT_ACTUALLY_SIGN("The block at the sign location is not actually a sign."),
+        NO_SUCH_SETTING("There is no such setting."),
+        UNDEFINED("Undefined"),
+
+        //This is the only one thay may become valid(even on subsequent restarts, think dungeon plugins)
+        NULL_WORLD("Shopworld is null, or it may not be loaded.");
+
+
+        private final String REASON;
+
+        StorageExceptionReason(String reason) {
+            REASON = reason;
+        }
+        @Override
+        public String toString(){
+            return REASON;
+        }
+
     }
 }
