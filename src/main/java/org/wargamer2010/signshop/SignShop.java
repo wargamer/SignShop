@@ -182,7 +182,7 @@ public class SignShop extends JavaPlugin {
                 log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.", Level.INFO);
                 state = SignShopConfig.CommaDecimalSeparatorState.FALSE;
             }
-            log("This can be changed by modifying 'AllowCommaDecimalSeperators' in the config.", Level.INFO);
+            log("This can be changed by modifying 'AllowCommaDecimalSeparator' in the config.", Level.INFO);
             getSignShopConfig().setAllowCommaDecimalSeparator(state);
         }
 
