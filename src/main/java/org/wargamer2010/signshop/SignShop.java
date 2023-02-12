@@ -19,10 +19,7 @@ import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.configuration.configUtil;
-import org.wargamer2010.signshop.listeners.SignShopBlockListener;
-import org.wargamer2010.signshop.listeners.SignShopLoginListener;
-import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
-import org.wargamer2010.signshop.listeners.SignShopServerListener;
+import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
@@ -294,8 +291,10 @@ public class SignShop extends JavaPlugin {
         else
             USE_PERMISSIONS = true;
         Boolean vault_Economy = vault.setupEconomy();
-        if (!vault_Economy)
-            log("Could not hook into Vault's Economy!", Level.WARNING);
+        if (!vault_Economy) {
+            getServer().getPluginManager().registerEvents(new ServerLoadedListener(),this);
+            log("Could not hook into Vault's Economy! Signshop will retry after server is loaded.", Level.WARNING);
+        }
     }
 
     private void setupCommands() {
@@ -358,6 +357,10 @@ public class SignShop extends JavaPlugin {
             ymlThing.set("ConfigVersionDoNotTouch", CONFIG_VERSION_DO_NOT_TOUCH);
             SignShopConfig.saveConfig(ymlThing, configFile);
         }
+    }
+
+    public Vault getVault() {
+        return vault;
     }
 
     private static class TransferFormatter extends Formatter {
