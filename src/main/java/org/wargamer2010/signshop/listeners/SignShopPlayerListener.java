@@ -1,9 +1,8 @@
 package org.wargamer2010.signshop.listeners;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockState;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -174,6 +173,12 @@ public class SignShopPlayerListener implements Listener {
         World world = player.getWorld();
         Seller seller = Storage.get().getSeller(event.getClickedBlock().getLocation());
 
+        //Cancel all right clicks on shops because of 1.20 sign edit feature. Uncancel below if needed.
+        if (event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null){
+            event.setCancelled(true);
+        }
+
+
         if (event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && SignShop.getInstance().getSignShopConfig().isOPMaterial(event.getItem().getType())) {
             if (itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShop.getInstance().getSignShopConfig().getLinkMaterial()) {
                 sLines = ((Sign) bClicked.getState()).getLines();
@@ -245,12 +250,31 @@ public class SignShopPlayerListener implements Listener {
         else if (event.getAction() == Action.RIGHT_CLICK_BLOCK && seller != null && itemIsInkOrDye(event.getItem())) {
             SignShopPlayer signShopPlayer = PlayerCache.getPlayer(event.getPlayer());
             if (playerCanDyeShop(seller, signShopPlayer)) {
-                return;
+                BlockState blockState = bClicked.getState();
+                ItemStack item = event.getItem();
+                boolean alreadyApplied = false;
+                if (blockState instanceof Sign){
+                    Sign sign = (Sign) blockState;
+                    boolean signIsGlowing = sign.isGlowingText();
+                    DyeColor signColor = sign.getColor();
+                    boolean itemIsDye = item.getType().name().contains("DYE");
+                    boolean itemIsHoneyComb = item.getType().equals(Material.HONEYCOMB);
+                    boolean itemIsInkSac = item.getType().equals(Material.INK_SAC);
+                    boolean itemIsGlowInkSac = item.getType().equals(Material.GLOW_INK_SAC);
+
+                    if (itemIsGlowInkSac && signIsGlowing ) alreadyApplied = true;
+                    if (itemIsInkSac && !signIsGlowing) alreadyApplied = true;
+                    if (itemIsDye && item.getType().name().contains(signColor.name())) alreadyApplied = true;
+                    if (itemIsHoneyComb && !sign.isEditable()) alreadyApplied = true;
+
+                }
+                event.setCancelled(alreadyApplied);
             }
             else {
                 event.setCancelled(true);
                 signShopPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission_to_dye_shop", null));
             }
+            return;
 
         }
         else if (itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShop.getInstance().getSignShopConfig().isOPMaterial(event.getItem().getType()))) {
@@ -379,6 +403,7 @@ public class SignShopPlayerListener implements Listener {
         String materialName = item.getType().name();
 
         switch (materialName){
+            case"HONEYCOMB":
             case"BLACK_DYE":
             case"BLUE_DYE":
             case"BROWN_DYE":
