@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
@@ -52,7 +53,7 @@ public class ShareSign implements SignShopOperation {
             StringBuilder profits = new StringBuilder();
             List<String> names = new LinkedList<>();
             Sign sign = (Sign)ssArgs.getSign().get().getState();
-            String[] lines = sign.getLines();
+            String[] lines = sign.getSide(Side.FRONT).getLines();
             if(!signshopUtil.lineIsEmpty(lines[1])) names.add(lines[1]);
             if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);
             names.add("the Shop's respective owners");

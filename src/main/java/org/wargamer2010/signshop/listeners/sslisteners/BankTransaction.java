@@ -4,6 +4,7 @@ import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -28,8 +29,8 @@ public class BankTransaction implements Listener {
             for (Block banksign : bankSigns) {
                 if (itemUtil.clickedSign(banksign)) {
                     Sign sign = (Sign) banksign.getState();
-                    if (sign.getLine(1) != null)
-                        banks.add(sign.getLine(1));
+                    if (sign.getSide(Side.FRONT).getLine(1) != null)
+                        banks.add(sign.getSide(Side.FRONT).getLine(1));
                 }
             }
         }

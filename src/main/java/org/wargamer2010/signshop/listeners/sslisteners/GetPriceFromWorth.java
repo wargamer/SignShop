@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -42,7 +43,7 @@ public class GetPriceFromWorth implements Listener {
         if(!itemUtil.clickedSign(bSign))
             return false;
         Sign sign = (Sign)bSign.getState();
-        return sign.getLine(3) != null && sign.getLine(3).equalsIgnoreCase("[worth]");
+        return sign.getSide(Side.FRONT).getLine(3) != null && sign.getSide(Side.FRONT).getLine(3).equalsIgnoreCase("[worth]");
     }
 
 

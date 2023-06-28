@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
@@ -42,8 +43,8 @@ public class CopySign implements SignShopSpecialOp {
             return false;
 
         Sign signToChange = ((Sign) shopSign.getState());
-        String[] sNewSign = signNewSign.getLines();
-        String[] sToChange = signToChange.getLines().clone();
+        String[] sNewSign = signNewSign.getSide(Side.FRONT).getLines();
+        String[] sToChange = signToChange.getSide(Side.FRONT).getLines().clone();
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
@@ -53,11 +54,11 @@ public class CopySign implements SignShopSpecialOp {
         }
 
         if(sNewSign[1] != null && sNewSign[1].length() > 0)
-            signToChange.setLine(1, sNewSign[1]);
+            signToChange.getSide(Side.FRONT).setLine(1, sNewSign[1]);
         if(sNewSign[2] != null && sNewSign[2].length() > 0)
-            signToChange.setLine(2, sNewSign[2]);
+            signToChange.getSide(Side.FRONT).setLine(2, sNewSign[2]);
         if(sNewSign[3] != null && sNewSign[3].length() > 0)
-            signToChange.setLine(3, sNewSign[3]);
+            signToChange.getSide(Side.FRONT).setLine(3, sNewSign[3]);
         signToChange.update();
         String price;
         if(sNewSign[3] != null && sNewSign[3].length() > 0)
@@ -116,7 +117,7 @@ public class CopySign implements SignShopSpecialOp {
 
             if(sNewSign[0] != null && sNewSign[0].length() > 0) {
                 signToChange = ((Sign) shopSign.getState());
-                signToChange.setLine(0, sNewSign[0]);
+                signToChange.getSide(Side.FRONT).setLine(0, sNewSign[0]);
                 signToChange.update();
             }
         } else {
@@ -133,9 +134,9 @@ public class CopySign implements SignShopSpecialOp {
 
     public void revert(Block bSign, String[] oldLines) {
         Sign sign = (Sign)bSign.getState();
-        sign.setLine(1, oldLines[1]);
-        sign.setLine(2, oldLines[2]);
-        sign.setLine(3, oldLines[3]);
+        sign.getSide(Side.FRONT).setLine(1, oldLines[1]);
+        sign.getSide(Side.FRONT).setLine(2, oldLines[2]);
+        sign.getSide(Side.FRONT).setLine(3, oldLines[3]);
         sign.update();
     }
 }

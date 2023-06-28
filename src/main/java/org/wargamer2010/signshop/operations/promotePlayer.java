@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
@@ -11,7 +12,7 @@ public class promotePlayer implements SignShopOperation {
 
     private String getGroupFromLine(Block bSign) {
         Sign sign = (Sign)bSign.getState();
-        return sign.getLine(1);
+        return sign.getSide(Side.FRONT).getLine(1);
     }
 
     @Override

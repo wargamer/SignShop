@@ -5,6 +5,7 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
@@ -39,7 +40,7 @@ public class SignShopArguments implements IMessagePartContainer {
     private final SignShopArgument<Action> aAction = new SignShopArgument<>(this);
     private final List<String> operationParameters = new LinkedList<>();
     private SignShopArgumentsType argumentType;
-    private final SignShopArgument<ItemStack[]> isItems = new SignShopArgument<ItemStack[]>(this) {
+    private final SignShopArgument<ItemStack[]> isItems = new SignShopArgument<>(this) {
         @Override
         public void set(ItemStack[] pItems) {
             if (getCollection().forceMessageKeys.containsKey("!items") && argumentType == SignShopArgumentsType.Setup)
@@ -57,14 +58,8 @@ public class SignShopArguments implements IMessagePartContainer {
         isItems.setRoot(pisItems);
         containables.setRoot(pContainables);
         activatables.setRoot(pActivatables);
-        if (pssPlayer != null)
-            ssPlayer.setRoot(pssPlayer);
-        else
-            ssPlayer.setRoot(new SignShopPlayer((Player) null));
-        if (pssOwner != null)
-            ssOwner.setRoot(pssOwner);
-        else
-            ssOwner.setRoot(new SignShopPlayer((Player) null));
+        ssPlayer.setRoot(Objects.requireNonNullElseGet(pssPlayer, () -> new SignShopPlayer((Player) null)));
+        ssOwner.setRoot(Objects.requireNonNullElseGet(pssOwner, () -> new SignShopPlayer((Player) null)));
         bSign.setRoot(pbSign);
         sOperation.setRoot(psOperation);
         bfBlockFace.setRoot(pbfBlockFace);
@@ -76,15 +71,12 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public SignShopArguments(Seller seller, SignShopPlayer player, SignShopArgumentsType type) {
         if (seller.getSign().getState() instanceof Sign)
-            fPrice.setRoot(economyUtil.parsePrice(((Sign) seller.getSign().getState()).getLine(3)));
+            fPrice.setRoot(economyUtil.parsePrice(((Sign) seller.getSign().getState()).getSide(Side.FRONT).getLine(3)));
 
         isItems.setRoot(seller.getItems());
         containables.setRoot(seller.getContainables());
         activatables.setRoot(seller.getActivatables());
-        if (player != null)
-            ssPlayer.setRoot(player);
-        else
-            ssPlayer.setRoot(new SignShopPlayer((Player) null));
+        ssPlayer.setRoot(Objects.requireNonNullElseGet(player, () -> new SignShopPlayer((Player) null)));
 
         ssOwner.setRoot(seller.getOwner());
         bSign.setRoot(seller.getSign());
@@ -144,7 +136,7 @@ public class SignShopArguments implements IMessagePartContainer {
             setMessagePart("!z", Integer.toString(bSign.get().getZ()));
 
             if (bSign.get().getState() instanceof Sign) {
-                String[] sLines = ((Sign) bSign.get().getState()).getLines();
+                String[] sLines = ((Sign) bSign.get().getState()).getSide(Side.FRONT).getLines();
                 for (int i = 0; i < sLines.length; i++)
                     setMessagePart(("!line" + (i + 1)), (sLines[i] == null ? "" : sLines[i]));
             }

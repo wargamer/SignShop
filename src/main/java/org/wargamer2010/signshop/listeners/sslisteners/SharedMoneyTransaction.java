@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -64,24 +65,24 @@ public class SharedMoneyTransaction implements Listener {
     }
 
     private static Map<String, Integer> getShares(Sign sign, SignShopPlayer ssPlayer) {
-        List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+        List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getSide(Side.FRONT).getLine(3));
         HashMap<String, Integer> shares = new HashMap<>();
 
-        if(tempperc.size() == 2 && signshopUtil.lineIsEmpty(sign.getLine(1)) && signshopUtil.lineIsEmpty(sign.getLine(2))) {
+        if(tempperc.size() == 2 && signshopUtil.lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) && signshopUtil.lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))) {
             ssPlayer.sendMessage("No usernames have been given on the second and third line so ignoring Share sign.");
             return shares;
         }
-        if(tempperc.size() == 2 && (signshopUtil.lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2)))) {
-            shares.put((sign.getLine(1) == null ? sign.getLine(2) : sign.getLine(1)), tempperc.get(0));
+        if(tempperc.size() == 2 && (signshopUtil.lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) || lineIsEmpty(sign.getSide(Side.FRONT).getLine(2)))) {
+            shares.put((sign.getSide(Side.FRONT).getLine(1) == null ? sign.getSide(Side.FRONT).getLine(2) : sign.getSide(Side.FRONT).getLine(1)), tempperc.get(0));
             ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
-        } else if(tempperc.size() == 1 && !signshopUtil.lineIsEmpty(sign.getLine(2))) {
-            shares.put(sign.getLine(1), tempperc.get(0));
+        } else if(tempperc.size() == 1 && !signshopUtil.lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))) {
+            shares.put(sign.getSide(Side.FRONT).getLine(1), tempperc.get(0));
             ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
         } else if(tempperc.size() == 2) {
-            shares.put(sign.getLine(1), tempperc.get(0));
-            shares.put(sign.getLine(2), tempperc.get(1));
+            shares.put(sign.getSide(Side.FRONT).getLine(1), tempperc.get(0));
+            shares.put(sign.getSide(Side.FRONT).getLine(2), tempperc.get(1));
         } else if(tempperc.size() == 1) {
-            shares.put(sign.getLine(1), tempperc.get(0));
+            shares.put(sign.getSide(Side.FRONT).getLine(1), tempperc.get(0));
         }
         return shares;
     }

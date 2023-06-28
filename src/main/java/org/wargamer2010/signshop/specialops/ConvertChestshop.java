@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.specialops;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.player.PlayerCache;
@@ -30,7 +31,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
         }
 
         Sign signblock = ((Sign)sign.getState());
-        String[] sLines = signblock.getLines();
+        String[] sLines = signblock.getSide(Side.FRONT).getLines();
         long iPrice;
         String sAmount = sLines[1];
         String sMaterial = sLines[3].toUpperCase().replace(" ", "_");
@@ -57,10 +58,10 @@ public class ConvertChestshop implements SignShopSpecialOp {
             else
                 return false;
 
-            emptyBlock.setLine(0, "[Sell]");
-            emptyBlock.setLine(1, (sAmount + " of"));
-            emptyBlock.setLine(2, sLines[3]);
-            emptyBlock.setLine(3, Long.toString(iPrice));
+            emptyBlock.getSide(Side.FRONT).setLine(0, "[Sell]");
+            emptyBlock.getSide(Side.FRONT).setLine(1, (sAmount + " of"));
+            emptyBlock.getSide(Side.FRONT).setLine(2, sLines[3]);
+            emptyBlock.getSide(Side.FRONT).setLine(3, Long.toString(iPrice));
             emptyBlock.update();
 
             if(bits[0].contains("B"))
@@ -69,23 +70,23 @@ public class ConvertChestshop implements SignShopSpecialOp {
                 iPrice = Math.round(economyUtil.parsePrice(bits[1]));
             else
                 return false;
-            signblock.setLine(0, "[Buy]");
+            signblock.getSide(Side.FRONT).setLine(0, "[Buy]");
         } else if(sLines[2].contains("B")) {
             iPrice = Math.round(economyUtil.parsePrice(sLines[2]));
             if(iPrice == 0.0f)
                 return false;
-            signblock.setLine(0, "[Buy]");
+            signblock.getSide(Side.FRONT).setLine(0, "[Buy]");
         } else if(sLines[2].contains("S")) {
             iPrice = Math.round(economyUtil.parsePrice(sLines[2]));
             if(iPrice == 0.0f)
                 return false;
-            signblock.setLine(0, "[Sell]");
+            signblock.getSide(Side.FRONT).setLine(0, "[Sell]");
         } else
             return false;
 
-        signblock.setLine(1, (sAmount + " of"));
-        signblock.setLine(2, sLines[3]);
-        signblock.setLine(3, Long.toString(iPrice));
+        signblock.getSide(Side.FRONT).setLine(1, (sAmount + " of"));
+        signblock.getSide(Side.FRONT).setLine(2, sLines[3]);
+        signblock.getSide(Side.FRONT).setLine(3, Long.toString(iPrice));
         signblock.update();
 
         ssPlayer.sendMessage("ChestShop sign detected and successfully converted!");
@@ -96,7 +97,7 @@ public class ConvertChestshop implements SignShopSpecialOp {
     private Boolean emptySign(Block sign) {
         if(!itemUtil.clickedSign(sign))
             return false;
-        String[] sLines = ((Sign) sign.getState()).getLines();
+        String[] sLines = ((Sign) sign.getState()).getSide(Side.FRONT).getLines();
         for(int i = 0; i < 4; i++)
             if(!sLines[i].isEmpty())
                 return false;

@@ -5,6 +5,7 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -20,10 +21,7 @@ import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.channels.FileChannel;
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -379,7 +377,7 @@ public class Storage implements Listener {
             if(entry.getValue().isOwner(player)) {
                 Block bSign = Bukkit.getServer().getWorld(entry.getValue().getWorld()).getBlockAt(entry.getKey());
                 if(itemUtil.clickedSign(bSign)) {
-                    String[] sLines = ((Sign) bSign.getState()).getLines();
+                    String[] sLines = ((Sign) bSign.getState()).getSide(Side.FRONT).getLines();
                     List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(signshopUtil.getOperation(sLines[0]));
                     if(operation.isEmpty())
                         continue;

@@ -2,7 +2,6 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -47,7 +46,7 @@ public class repairPlayerHeldItem implements SignShopOperation {
         calculatePrice(ssArgs);
         Damageable meta = (Damageable) ssArgs.getPlayer().get().getItemInHand().getItemMeta();
         meta.setDamage(0);
-        ssArgs.getPlayer().get().getItemInHand().setItemMeta((ItemMeta) meta);
+        ssArgs.getPlayer().get().getItemInHand().setItemMeta(meta);
         return true;
     }
 }

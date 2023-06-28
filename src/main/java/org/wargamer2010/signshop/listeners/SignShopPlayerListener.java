@@ -4,6 +4,7 @@ import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -125,7 +126,7 @@ public class SignShopPlayerListener implements Listener {
     public void onPlayerSignChange(SignChangeEvent event) {
         if(event.getPlayer() == null || !itemUtil.clickedSign(event.getBlock()))
             return;
-        String[] oldLines = ((Sign) event.getBlock().getState()).getLines();
+        String[] oldLines = ((Sign) event.getBlock().getState()).getSide(Side.FRONT).getLines();
         // Prevent the message from being shown when the top line remains the same
         if(oldLines[0].equals(event.getLine(0)))
             return;
@@ -181,7 +182,7 @@ public class SignShopPlayerListener implements Listener {
 
         if (event.getAction() == Action.LEFT_CLICK_BLOCK && event.getItem() != null && seller == null && SignShop.getInstance().getSignShopConfig().isOPMaterial(event.getItem().getType())) {
             if (itemUtil.clickedSign(bClicked) && event.getItem().getType() == SignShop.getInstance().getSignShopConfig().getLinkMaterial()) {
-                sLines = ((Sign) bClicked.getState()).getLines();
+                sLines = ((Sign) bClicked.getState()).getSide(Side.FRONT).getLines();
                 sOperation = signshopUtil.getOperation(sLines[0]);
                 SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
                 if (SignShop.getInstance().getSignShopConfig().getBlocks(sOperation).isEmpty()) {
@@ -255,8 +256,8 @@ public class SignShopPlayerListener implements Listener {
                 boolean alreadyApplied = false;
                 if (blockState instanceof Sign){
                     Sign sign = (Sign) blockState;
-                    boolean signIsGlowing = sign.isGlowingText();
-                    DyeColor signColor = sign.getColor();
+                    boolean signIsGlowing = sign.getSide(Side.FRONT).isGlowingText();
+                    DyeColor signColor = sign.getSide(Side.FRONT).getColor();
                     boolean itemIsDye = item.getType().name().contains("DYE");
                     boolean itemIsHoneyComb = item.getType().equals(Material.HONEYCOMB);
                     boolean itemIsInkSac = item.getType().equals(Material.INK_SAC);
@@ -265,7 +266,7 @@ public class SignShopPlayerListener implements Listener {
                     if (itemIsGlowInkSac && signIsGlowing ) alreadyApplied = true;
                     if (itemIsInkSac && !signIsGlowing) alreadyApplied = true;
                     if (itemIsDye && item.getType().name().contains(signColor.name())) alreadyApplied = true;
-                    if (itemIsHoneyComb && !sign.isEditable()) alreadyApplied = true;
+                    if (itemIsHoneyComb && !sign.isWaxed()) alreadyApplied = true;
 
                 }
                 event.setCancelled(alreadyApplied);
@@ -279,7 +280,7 @@ public class SignShopPlayerListener implements Listener {
         }
         else if (itemUtil.clickedSign(bClicked) && seller != null && (event.getItem() == null || !SignShop.getInstance().getSignShopConfig().isOPMaterial(event.getItem().getType()))) {
             SignShopPlayer ssOwner = seller.getOwner();
-            sLines = ((Sign) bClicked.getState()).getLines();
+            sLines = ((Sign) bClicked.getState()).getSide(Side.FRONT).getLines();
             sOperation = signshopUtil.getOperation(sLines[0]);
 
             // Verify the operation

@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -32,7 +31,7 @@ public class takeVariablePlayerItems implements SignShopOperation {
                 if(stack != null && stack.getType() == mat && stack.getType().getMaxDurability() >= 30 && ((Damageable) stack.getItemMeta()).getDamage() != nodamage) {
                     Damageable meta = (Damageable) stack.getItemMeta();
                     meta.setDamage(nodamage);
-                    stack.setItemMeta((ItemMeta) meta);
+                    stack.setItemMeta(meta);
                     didnull = true;
                 }
             }

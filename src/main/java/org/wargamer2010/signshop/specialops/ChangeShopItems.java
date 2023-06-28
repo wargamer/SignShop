@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
@@ -31,14 +32,14 @@ public class ChangeShopItems implements SignShopSpecialOp {
         SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Block bClicked = event.getClickedBlock();
         Seller seller = Storage.get().getSeller(bClicked.getLocation());
-        String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getLine(0));
+        String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getSide(Side.FRONT).getLine(0));
         if (seller == null)
             return false;
         if (ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShop.getInstance().getSignShopConfig().getUpdateMaterial())
             return false;
         SignShopPlayer ssOwner = seller.getOwner();
         List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(sOperation);
-        String[] sLines = ((Sign) bClicked.getState()).getLines();
+        String[] sLines = ((Sign) bClicked.getState()).getSide(Side.FRONT).getLines();
 
         if (!seller.isOwner(ssPlayer) && !ssPlayer.isOp()) {
             ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission", null));

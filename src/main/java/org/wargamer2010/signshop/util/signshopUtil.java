@@ -4,6 +4,7 @@ import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -42,7 +43,7 @@ public class signshopUtil {
     public static String getOperation(Sign sign, boolean lowercase) {
         if (sign == null)
             return "";
-        String sSignOperation = sign.getLine(0);
+        String sSignOperation = sign.getSide(Side.FRONT).getLine(0);
         if (sSignOperation.length() < 4) {
             return "";
         }
@@ -174,7 +175,7 @@ public class signshopUtil {
 
     public static Double getNumberFromLine(Block bSign, int line) {
         Sign sign = (Sign)bSign.getState();
-        String XPline = sign.getLines()[line];
+        String XPline = sign.getSide(Side.FRONT).getLines()[line];
         if(XPline == null)
             return 0.0d;
         return economyUtil.parsePrice(XPline);
@@ -219,14 +220,14 @@ public class signshopUtil {
         for(Block sharesign : clickedBlocks) {
             if(itemUtil.clickedSign(sharesign)) {
                 Sign sign = (Sign)sharesign.getState();
-                List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+                List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getSide(Side.FRONT).getLine(3));
                 percentages.addAll(tempperc);
                 blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
-                if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                if(tempperc.size() == 2 && (lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) || lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))))
                     ssPlayer.sendMessage("No usernames have been given on the second and third line so the Share sign will be ignored.");
-                else if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                else if(tempperc.size() == 2 && (lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) || lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))))
                     ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
-                else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2)))
+                else if(tempperc.size() == 1 && !lineIsEmpty(sign.getSide(Side.FRONT).getLine(2)))
                     ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
             }
         }
@@ -256,10 +257,10 @@ public class signshopUtil {
                 Sign sign = (Sign)restrictedsign.getState();
                 boolean bValidGroup = false;
                 for(int i = 1; i < 4; i++) {
-                    if(!lineIsEmpty(sign.getLine(i)))
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)))
                         bValidGroup = true;
-                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i)))
-                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && !permGroups.contains(sign.getSide(Side.FRONT).getLine(i)))
+                        player.sendMessage("The group " + sign.getSide(Side.FRONT).getLine(i) + " does not currently exist!");
                 }
                 if(bValidGroup)
                     blocklocations.add(signshopUtil.convertLocationToString(restrictedsign.getLocation()));
@@ -284,9 +285,9 @@ public class signshopUtil {
         for(Block banksign : clickedBlocks) {
             if(itemUtil.clickedSign(banksign)) {
                 Sign sign = (Sign)banksign.getState();
-                String bank = sign.getLine(1);
+                String bank = sign.getSide(Side.FRONT).getLine(1);
                 if(!Vault.getEconomy().bankBalance(bank).transactionSuccess())
-                    player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
+                    player.sendMessage("The bank called " + sign.getSide(Side.FRONT).getLine(1) + " probably does not exist!");
                 else if(!Vault.getEconomy().isBankOwner(bank, player.getOfflinePlayer()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getOfflinePlayer()).transactionSuccess()
                         && !player.isOp()) {
                     messageParts.put("!bank", bank);
@@ -314,10 +315,10 @@ public class signshopUtil {
             if(itemUtil.clickedSign(restrictedsign)) {
                 Sign sign = (Sign)restrictedsign.getState();
                 for(int i = 1; i < 4; i++) {
-                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i))) {
-                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
-                    } else if(!lineIsEmpty(sign.getLine(i)) && permGroups.contains(sign.getLine(i))) {
-                        playerGroups.add(sign.getLine(i));
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && !permGroups.contains(sign.getSide(Side.FRONT).getLine(i))) {
+                        player.sendMessage("The group " + sign.getSide(Side.FRONT).getLine(i) + " does not currently exist!");
+                    } else if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && permGroups.contains(sign.getSide(Side.FRONT).getLine(i))) {
+                        playerGroups.add(sign.getSide(Side.FRONT).getLine(i));
                     }
                 }
             }
@@ -643,9 +644,8 @@ public class signshopUtil {
         }
     }
 
-    //TODO: Add sign.getColor() and sign.isGlowingText() to sendSignChange() call after updating to MC1.17+
     private static void sendSignUpdate(Player player, Sign sign){
-        player.sendSignChange(sign.getLocation(), sign.getLines());
+        player.sendSignChange(sign.getLocation(), sign.getSide(Side.FRONT).getLines(),sign.getSide(Side.FRONT).getColor(),sign.getSide(Side.FRONT).isGlowingText());
     }
 
 

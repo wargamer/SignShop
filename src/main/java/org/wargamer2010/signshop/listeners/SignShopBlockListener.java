@@ -3,9 +3,7 @@ package org.wargamer2010.signshop.listeners;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.type.Sign;
-import org.bukkit.block.data.type.Switch;
-import org.bukkit.block.data.type.WallSign;
+import org.bukkit.block.data.type.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -45,7 +43,7 @@ public class SignShopBlockListener implements Listener {
             relativeBlockData = relativeBlock.getBlockData();
             if (relativeBlockData instanceof Switch) {
                 Switch switchData = (Switch) relativeBlockData;
-                if (switchData.getFace() == Switch.Face.FLOOR
+                if (switchData.getFace() == Switch.Face.FLOOR //TODO use FaceAttachable.getAttachedFace() and FaceAttachable.AttachedFace
                         && relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
@@ -56,10 +54,11 @@ public class SignShopBlockListener implements Listener {
                     attachables.add(relativeBlock);
                 }
             }
-            else if (relativeBlockData instanceof Sign)
+            else if (relativeBlockData instanceof Sign) {
                 if (relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
+            } //TODO add hanging sign variants
         }
         return attachables;
     }

@@ -3,6 +3,7 @@ package org.wargamer2010.signshop;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
@@ -155,7 +156,7 @@ public class Seller {
             return "";
         if(itemUtil.clickedSign(block)) {
             Sign sign = (Sign) block.getState();
-            return signshopUtil.getOperation(sign.getLine(0));
+            return signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0));
         }
         return "";
     }

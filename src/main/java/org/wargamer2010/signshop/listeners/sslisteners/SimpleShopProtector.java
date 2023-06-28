@@ -7,6 +7,7 @@ import org.bukkit.GameMode;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -79,7 +80,7 @@ public class SimpleShopProtector implements Listener {
             return true;
         Sign sign = (Sign) seller.getSign().getState();
 
-        SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sign.getLines()[3]), seller.getItems(), containables, activatables,
+        SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sign.getSide(Side.FRONT).getLines()[3]), seller.getItems(), containables, activatables,
                 ssPlayer, seller.getOwner(), seller.getSign(), seller.getOperation(), BlockFace.DOWN, Action.LEFT_CLICK_BLOCK, SignShopArgumentsType.Setup);
 
         List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(seller.getOperation());
@@ -191,6 +192,6 @@ public class SimpleShopProtector implements Listener {
     }
 
     private void sendSignUpdate(Player player, Sign sign){
-        player.sendSignChange(sign.getLocation(), sign.getLines());
+        player.sendSignChange(sign.getLocation(), sign.getSide(Side.FRONT).getLines());
     }
 }

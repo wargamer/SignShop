@@ -2,6 +2,7 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
@@ -24,7 +25,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         Player player = event.getPlayer();
         SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
-        String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
+        String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getSide(Side.FRONT).getLine(0));
         if (seller == null)
             return false;
         if (ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShop.getInstance().getSignShopConfig().getLinkMaterial() || !itemUtil.clickedSign(shopSign))
@@ -37,8 +38,8 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         for(Block bTemp : clickedBlocks) {
             if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
-                if(isSupported(signshopUtil.getOperation(sign.getLine(0)))) {
-                    SignName = signshopUtil.getOperation(sign.getLine(0));
+                if(isSupported(signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0)))) {
+                    SignName = signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0));
                 }
             }
         }
@@ -61,7 +62,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
                 currentSigns.remove(bTemp);
             } else if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
-                if(signshopUtil.getOperation(sign.getLine(0)).equals(SignName))
+                if(signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0)).equals(SignName))
                     newSigns.add(bTemp);
             }
         }

@@ -8,6 +8,7 @@ import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.block.data.Bisected;
 import org.bukkit.block.data.BlockData;
+import org.bukkit.block.sign.Side;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
@@ -29,7 +30,7 @@ import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/** @noinspection deprecation*/ //TODO Remove deprecated calls
+
 public class itemUtil {
     public static Map<Material, String> formattedMaterials = new HashMap<>();
     private static SignShopConfig signShopConfig;
@@ -179,7 +180,7 @@ public class itemUtil {
         sData = m.replaceAll("");
         sData = sData.replace("_", " ");
 
-        StringBuffer sb = new StringBuffer(sData.length());
+        StringBuilder sb = new StringBuilder(sData.length());
         p = Pattern.compile("(^|\\W)([a-z])");
         m = p.matcher(sData);
         while(m.find()) {
@@ -195,7 +196,7 @@ public class itemUtil {
         constantCaseString = constantCaseString.replace("_"," ");
         Pattern p = Pattern.compile("(^|\\W)([a-z])");
         Matcher m = p.matcher(constantCaseString.toLowerCase());
-        StringBuffer sb = new StringBuffer(constantCaseString.length());
+        StringBuilder sb = new StringBuilder(constantCaseString.length());
 
         while(m.find()){
             m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
@@ -278,9 +279,9 @@ public class itemUtil {
     public static void setSignStatus(Block sign, ChatColor color) {
         if(clickedSign(sign)) {
             Sign signblock = ((Sign) sign.getState());
-            String[] sLines = signblock.getLines();
+            String[] sLines = signblock.getSide(Side.FRONT).getLines();
             if(ChatColor.stripColor(sLines[0]).length() <= 14) {
-                signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                signblock.getSide(Side.FRONT).setLine(0, (color + ChatColor.stripColor(sLines[0])));
                 signblock.update();
             }
         }
@@ -391,7 +392,7 @@ public class itemUtil {
             Block pSign = pSeller.getSign();
             if(pSign == null || !(pSign.getState() instanceof Sign))
                 return;
-            String[] sLines = ((Sign) pSign.getState()).getLines();
+            String[] sLines = ((Sign) pSign.getState()).getSide(Side.FRONT).getLines();
             if (signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
                 return;
             List<String> operation = signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
