@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.listeners;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.BlockData;
+import org.bukkit.block.data.FaceAttachable;
 import org.bukkit.block.data.type.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -41,9 +42,9 @@ public class SignShopBlockListener implements Listener {
         for (BlockFace face : checkFaces) {
             relativeBlock = originalBlock.getRelative(face);
             relativeBlockData = relativeBlock.getBlockData();
-            if (relativeBlockData instanceof Switch) {
-                Switch switchData = (Switch) relativeBlockData;
-                if (switchData.getFace() == Switch.Face.FLOOR //TODO use FaceAttachable.getAttachedFace() and FaceAttachable.AttachedFace
+            if (relativeBlockData instanceof Switch && relativeBlockData instanceof FaceAttachable ) {
+               FaceAttachable attachableSwitch = (FaceAttachable) relativeBlockData;
+                if (attachableSwitch.getAttachedFace() == FaceAttachable.AttachedFace.FLOOR
                         && relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }

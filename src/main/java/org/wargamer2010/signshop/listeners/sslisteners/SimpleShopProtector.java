@@ -1,7 +1,6 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.block.Block;
@@ -180,18 +179,5 @@ public class SimpleShopProtector implements Listener {
                 event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("shop_is_now_protected", event.getMessageParts()));
         }
 
-    }
-
-    //This code is wet, see SignShopPlayerListener
-    private void fixCreativeModeSignRendering(SSDestroyedEvent event){
-        Block block =event.getBlock();
-        if (block.getState() instanceof Sign ) {
-            Sign sign = (Sign) block.getState();
-            Bukkit.getScheduler().runTaskLater(SignShop.getInstance(), () -> sendSignUpdate(event.getPlayer().getPlayer(),sign),2);
-        }
-    }
-
-    private void sendSignUpdate(Player player, Sign sign){
-        player.sendSignChange(sign.getLocation(), sign.getSide(Side.FRONT).getLines());
     }
 }

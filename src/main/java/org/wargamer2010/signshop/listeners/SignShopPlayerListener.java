@@ -354,7 +354,7 @@ public class SignShopPlayerListener implements Listener {
             if(posttransactevent.isCancelled())
                 return;
             if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                player.updateInventory();
+                 player.updateInventory();
             }
             List<String> chests = new LinkedList<>();
             for (Map.Entry<String, String> entry : ssArgs.getMessageParts().entrySet())
