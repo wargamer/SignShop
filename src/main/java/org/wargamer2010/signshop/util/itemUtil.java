@@ -207,6 +207,7 @@ public class itemUtil {
         return sb.toString();
     }
 
+    @SuppressWarnings("deprecation")
     private static ItemStack getSingleAmountOfStack(ItemStack item) {
         if(item == null)
             return null;
@@ -262,6 +263,7 @@ public class itemUtil {
         return sItems.toString();
     }
 
+    @SuppressWarnings("deprecation")
     public static String enchantmentsToMessageFormat(Map<Enchantment,Integer> enchantments) {
         StringBuilder enchantmentMessage = new StringBuilder();
         boolean eFirst = true;
@@ -282,6 +284,9 @@ public class itemUtil {
             String[] sLines = signblock.getSide(Side.FRONT).getLines();
             if(ChatColor.stripColor(sLines[0]).length() <= 14) {
                 signblock.getSide(Side.FRONT).setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                if (ChatColor.stripColor(signblock.getSide(Side.BACK).getLine(0)).equals(ChatColor.stripColor(sLines[0]))) {
+                    signblock.getSide(Side.BACK).setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                }
                 signblock.update();
             }
         }
@@ -427,9 +432,8 @@ public class itemUtil {
         setSignStatus(bSign, ccColor);
     }
 
-    //TODO This is what is loading chunks This gets called in some loop????????
-    public static Boolean clickedSign(Block bBlock) {//TODO change to Tag in a later version?
-        return (bBlock.getBlockData() instanceof org.bukkit.block.data.type.Sign || bBlock.getBlockData() instanceof org.bukkit.block.data.type.WallSign);
+    public static Boolean clickedSign(Block bBlock) {
+        return (Tag.ALL_SIGNS.isTagged(bBlock.getType()));
     }
 
     public static Boolean clickedDoor(Block bBlock) {
@@ -519,6 +523,7 @@ public class itemUtil {
     }
 
 
+    @SuppressWarnings("deprecation")
     public static boolean itemstackEqual(ItemStack a, ItemStack b, boolean ignoredur) {
         if(a.getType() != b.getType())
             return false;

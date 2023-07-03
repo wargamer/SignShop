@@ -35,6 +35,7 @@ public class SignShopBlockListener implements Listener {
         checkFaces.add(BlockFace.EAST);
         checkFaces.add(BlockFace.SOUTH);
         checkFaces.add(BlockFace.WEST);
+        checkFaces.add(BlockFace.DOWN);
 
         Block relativeBlock;
         BlockData relativeBlockData;
@@ -59,7 +60,12 @@ public class SignShopBlockListener implements Listener {
                 if (relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
-            } //TODO add hanging sign variants
+            }
+            else if (relativeBlockData instanceof HangingSign) {
+                if (relativeBlock.getRelative(BlockFace.UP).equals(originalBlock)) {
+                    attachables.add(relativeBlock);
+                }
+            }
         }
         return attachables;
     }

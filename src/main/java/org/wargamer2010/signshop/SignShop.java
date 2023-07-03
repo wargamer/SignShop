@@ -327,6 +327,7 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new StockChecker(), this);
         pm.registerEvents(new TimedCommandListener(), this);
         pm.registerEvents(new MoneyModifierListener(), this);
+        pm.registerEvents(new SignSidesValidator(),this);
 
         DynmapManager dmm = new DynmapManager();
         if (getSignShopConfig().getEnableDynmapSupport())

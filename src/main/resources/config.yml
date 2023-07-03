@@ -119,20 +119,48 @@ linkableMaterials:
   LEVER: lever
   ACACIA_SIGN: sign
   ACACIA_WALL_SIGN: sign
+  ACACIA_HANGING_SIGN: sign
+  ACACIA_WALL_HANGING_SIGN: sign
+  BAMBOO_SIGN: sign
+  BAMBOO_WALL_SIGN: sign
+  BAMBOO_HANGING_SIGN: sign
+  BAMBOO_WALL_HANGING_SIGN: sign
   BIRCH_SIGN: sign
   BIRCH_WALL_SIGN: sign
+  BIRCH_HANGING_SIGN: sign
+  BIRCH_WALL_HANGING_SIGN: sign
+  CHERRY_SIGN: sign
+  CHERRY_WALL_SIGN: sign
+  CHERRY_HANGING_SIGN: sign
+  CHERRY_WALL_HANGING_SIGN: sign
   DARK_OAK_SIGN: sign
   DARK_OAK_WALL_SIGN: sign
+  DARK_OAK_HANGING_SIGN: sign
+  DARK_OAK_WALL_HANGING_SIGN: sign
   JUNGLE_SIGN: sign
   JUNGLE_WALL_SIGN: sign
+  JUNGLE_HANGING_SIGN: sign
+  JUNGLE_WALL_HANGING_SIGN: sign
+  MANGROVE_SIGN: sign
+  MANGROVE_WALL_SIGN: sign
+  MANGROVE_HANGING_SIGN: sign
+  MANGROVE_WALL_HANGING_SIGN: sign
   OAK_SIGN: sign
   OAK_WALL_SIGN: sign
+  OAK_HANGING_SIGN: sign
+  OAK_WALL_HANGING_SIGN: sign
   SPRUCE_SIGN: sign
   SPRUCE_WALL_SIGN: sign
+  SPRUCE_HANGING_SIGN: sign
+  SPRUCE_WALL_HANGING_SIGN: sign
   CRIMSON_SIGN: sign
   CRIMSON_WALL_SIGN: sign
+  CRIMSON_HANGING_SIGN: sign
+  CRIMSON_WALL_HANGING_SIGN: sign
   WARPED_SIGN: sign
   WARPED_WALL_SIGN: sign
+  WARPED_HANGING_SIGN: sign
+  WARPED_WALL_HANGING_SIGN: sign
   STEP: slab
   JUKEBOX: jukebox
   ACACIA_DOOR: door
@@ -197,6 +225,9 @@ Blacklisted_items:
 
 # If set to true, only the items listed under Blacklist will be allowed for use in shops (Default = false)
 UseBlacklistAsWhitelist: false
+
+# List of text that cannot be on the back of a shop sign (Signshops that do not match the front are already blocked)
+BlacklistedBackOfSignText: []
 
 #----------- Other Plugins ------------------
 
@@ -654,6 +685,8 @@ errors:
   could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
   no_permission_to_inspect_shop: You do not have permission to inspect this shop.
   no_permission_to_dye_shop: You do not have permission to dye this shop.
+  shop_on_sign_back_must_match_front: The back of the sign must match the front of the shop exactly, if you want it to look like a shop.
+  text_on_blacklist: The text '!blacklisted_text' is not allowed on the back of a shop sign.
 
 # Used for checking if the config needs to be backed up before upgrading it. (Do not modify unless told to do so)
 ConfigVersionDoNotTouch: 3

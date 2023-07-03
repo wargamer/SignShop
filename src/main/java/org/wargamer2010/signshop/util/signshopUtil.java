@@ -645,7 +645,8 @@ public class signshopUtil {
     }
 
     private static void sendSignUpdate(Player player, Sign sign){
-        player.sendSignChange(sign.getLocation(), sign.getSide(Side.FRONT).getLines(),sign.getSide(Side.FRONT).getColor(),sign.getSide(Side.FRONT).isGlowingText());
+        //noinspection UnstableApiUsage
+        player.sendBlockUpdate(sign.getLocation(), sign);
     }
 
 

@@ -29,6 +29,7 @@ public class SignShopConfig {
     private final List<SignShopSpecialOp> SpecialsOps = new LinkedList<>();
     private final String baseLanguage = "en_US";
     private final Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
+    private List<String> BlacklistedBackOfSignText;
     private Map<String, String> OperationAliases;                         // Alias <-> Original
     private Map<String, Map<String, HashMap<String, String>>> Messages;
     private Map<String, Map<String, String>> Errors;
@@ -147,6 +148,7 @@ public class SignShopConfig {
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
         updateFormattedMaterials();
         setupBlacklist();
+        setupBackOfSignTextBlacklist();
         copyFileFromJar("materials.yml", false);
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
@@ -664,6 +666,15 @@ public class SignShopConfig {
                         ||
                         (!BlacklistedItems.contains(mat) && getUseBlacklistAsWhitelist())
         );
+    }
+
+    private void setupBackOfSignTextBlacklist() {
+        BlacklistedBackOfSignText = new ArrayList<>();
+        config.getStringList("BlacklistedBackOfSignText").forEach(s -> BlacklistedBackOfSignText.add(ChatColor.stripColor(s.toLowerCase())));
+    }
+
+    public Boolean stringIsOnBackOfSignTextBlacklist(String string){
+        return BlacklistedBackOfSignText.contains(string);
     }
 
     public ItemStack isAnyItemOnBlacklist(ItemStack[] stacks) {

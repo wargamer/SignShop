@@ -19,6 +19,7 @@ import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class CopySign implements SignShopSpecialOp {
@@ -43,8 +44,9 @@ public class CopySign implements SignShopSpecialOp {
             return false;
 
         Sign signToChange = ((Sign) shopSign.getState());
-        String[] sNewSign = signNewSign.getSide(Side.FRONT).getLines();
-        String[] sToChange = signToChange.getSide(Side.FRONT).getLines().clone();
+        String[] sNewSignFront = signNewSign.getSide(Side.FRONT).getLines();
+        String[] sToChangeFront = signToChange.getSide(Side.FRONT).getLines().clone();
+        String[] sToChangeBack = signToChange.getSide(Side.BACK).getLines().clone();
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
         if(seller == null)
             return false;
@@ -53,24 +55,36 @@ public class CopySign implements SignShopSpecialOp {
             return true;
         }
 
-        if(sNewSign[1] != null && sNewSign[1].length() > 0)
-            signToChange.getSide(Side.FRONT).setLine(1, sNewSign[1]);
-        if(sNewSign[2] != null && sNewSign[2].length() > 0)
-            signToChange.getSide(Side.FRONT).setLine(2, sNewSign[2]);
-        if(sNewSign[3] != null && sNewSign[3].length() > 0)
-            signToChange.getSide(Side.FRONT).setLine(3, sNewSign[3]);
+        boolean signsFrontAndBackWereTheSame =Arrays.equals(sToChangeFront,sToChangeBack);
+
+        if(sNewSignFront[1] != null && sNewSignFront[1].length() > 0)
+            signToChange.getSide(Side.FRONT).setLine(1, sNewSignFront[1]);
+        if(sNewSignFront[2] != null && sNewSignFront[2].length() > 0)
+            signToChange.getSide(Side.FRONT).setLine(2, sNewSignFront[2]);
+        if(sNewSignFront[3] != null && sNewSignFront[3].length() > 0)
+            signToChange.getSide(Side.FRONT).setLine(3, sNewSignFront[3]);
+
+        if (signsFrontAndBackWereTheSame) {
+            if(sNewSignFront[1] != null && sNewSignFront[1].length() > 0)
+                signToChange.getSide(Side.BACK).setLine(1, sNewSignFront[1]);
+            if(sNewSignFront[2] != null && sNewSignFront[2].length() > 0)
+                signToChange.getSide(Side.BACK).setLine(2, sNewSignFront[2]);
+            if(sNewSignFront[3] != null && sNewSignFront[3].length() > 0)
+                signToChange.getSide(Side.BACK).setLine(3, sNewSignFront[3]);
+        }
+
         signToChange.update();
         String price;
-        if(sNewSign[3] != null && sNewSign[3].length() > 0)
-            price = sNewSign[3];
+        if(sNewSignFront[3] != null && sNewSignFront[3].length() > 0)
+            price = sNewSignFront[3];
         else
-            price = sToChange[3];
+            price = sToChangeFront[3];
 
         String sOperation;
-        if (sNewSign[0] != null && sNewSign[0].length() > 0)
-            sOperation = signshopUtil.getOperation(sNewSign[0]);
+        if (sNewSignFront[0] != null && sNewSignFront[0].length() > 0)
+            sOperation = signshopUtil.getOperation(sNewSignFront[0]);
         else
-            sOperation = signshopUtil.getOperation(sToChange[0]);
+            sOperation = signshopUtil.getOperation(sToChangeFront[0]);
 
         if (!SignShop.getInstance().getSignShopConfig().getBlocks(sOperation).isEmpty()) {
             List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(sOperation);
@@ -81,7 +95,7 @@ public class CopySign implements SignShopSpecialOp {
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if (SignShopOperations == null) {
                 ssPlayer.sendMessage("The new operation does not exist!");
-                revert(shopSign, sToChange);
+                revert(shopSign, sToChangeFront, sToChangeBack);
                 return true;
             }
             SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(price), seller.getItems(), seller.getContainables(), seller.getActivatables(),
@@ -97,13 +111,13 @@ public class CopySign implements SignShopSpecialOp {
             }
             if(!bSetupOK) {
                 ssPlayer.sendMessage("The new and old operation are not compatible.");
-                revert(shopSign, sToChange);
+                revert(shopSign, sToChangeFront, sToChangeBack);
                 return true;
             }
 
             if (signshopUtil.cantGetPriceFromMoneyEvent(ssArgs)) {
                 ssPlayer.sendMessage("The new and old operation are not compatible.");
-                revert(shopSign, sToChange);
+                revert(shopSign, sToChangeFront, sToChangeBack);
                 return true;
             }
 
@@ -111,18 +125,21 @@ public class CopySign implements SignShopSpecialOp {
             SignShop.scheduleEvent(createdevent);
             if(createdevent.isCancelled()) {
                 ssPlayer.sendMessage("The new and old operation are not compatible.");
-                revert(shopSign, sToChange);
+                revert(shopSign, sToChangeFront, sToChangeBack);
                 return true;
             }
 
-            if(sNewSign[0] != null && sNewSign[0].length() > 0) {
+            if(sNewSignFront[0] != null && sNewSignFront[0].length() > 0) {
                 signToChange = ((Sign) shopSign.getState());
-                signToChange.getSide(Side.FRONT).setLine(0, sNewSign[0]);
+                signToChange.getSide(Side.FRONT).setLine(0, sNewSignFront[0]);
+                if (signsFrontAndBackWereTheSame){
+                    signToChange.getSide(Side.BACK).setLine(0, sNewSignFront[0]);
+                }
                 signToChange.update();
             }
         } else {
             ssPlayer.sendMessage("The new operation does not exist!");
-            revert(shopSign, sToChange);
+            revert(shopSign, sToChangeFront, sToChangeBack);
             return true;
         }
 
@@ -132,11 +149,14 @@ public class CopySign implements SignShopSpecialOp {
         return true;
     }
 
-    public void revert(Block bSign, String[] oldLines) {
+    public void revert(Block bSign, String[] oldLinesFront, String[] oldLinesBack) {
         Sign sign = (Sign)bSign.getState();
-        sign.getSide(Side.FRONT).setLine(1, oldLines[1]);
-        sign.getSide(Side.FRONT).setLine(2, oldLines[2]);
-        sign.getSide(Side.FRONT).setLine(3, oldLines[3]);
+        sign.getSide(Side.FRONT).setLine(1, oldLinesFront[1]);
+        sign.getSide(Side.FRONT).setLine(2, oldLinesFront[2]);
+        sign.getSide(Side.FRONT).setLine(3, oldLinesFront[3]);
+        sign.getSide(Side.BACK).setLine(1, oldLinesBack[1]);
+        sign.getSide(Side.BACK).setLine(2, oldLinesBack[2]);
+        sign.getSide(Side.BACK).setLine(3, oldLinesBack[3]);
         sign.update();
     }
 }
