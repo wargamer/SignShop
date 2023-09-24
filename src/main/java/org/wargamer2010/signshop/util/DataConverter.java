@@ -26,7 +26,7 @@ public class DataConverter {
     static File timingFile;
     static File timingFileBackup;
 
-    //TODO Make a very complex 1.8 set of data to convert.
+
     public static void init() {
         File dataFolder = SignShop.getInstance().getDataFolder();
         sellersFile = new File(dataFolder, "sellers.yml");

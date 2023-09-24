@@ -7,6 +7,8 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
+import java.util.Objects;
+
 public class SSDestroyedEvent extends SSEvent {
     private static final HandlerList handlers = new HandlerList();
 
@@ -16,10 +18,7 @@ public class SSDestroyedEvent extends SSEvent {
     private final SSDestroyedEventType reason;
 
     public SSDestroyedEvent(Block pBlock, SignShopPlayer pPlayer, Seller pShop, SSDestroyedEventType pReason) {
-        if(pPlayer == null)
-            ssPlayer = new SignShopPlayer();
-        else
-            ssPlayer = pPlayer;
+        ssPlayer = Objects.requireNonNullElseGet(pPlayer, SignShopPlayer::new);
         bBlock = pBlock;
         if(pShop != null)
             seShop = pShop;

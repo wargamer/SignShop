@@ -6,8 +6,8 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -32,24 +32,24 @@ public class takeTownMoney implements SignShopOperation {
 
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
                     return false;
                 }
                 Resident resident = TownyUniverse.getInstance().getDataSource().getResident(ssArgs.getOwner().get().getName());
                 Town town = resident.getTown();
                 if (!resident.isMayor()) {
                     if (!town.hasAssistant(resident)) {
-                        ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_mayor_or_assistant", ssArgs.getMessageParts()));
+                        ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_mayor_or_assistant", ssArgs.getMessageParts()));
                         return false;
                     }
                 }
                 if (!Vault.getEconomy().has(town.getEconomyName(), fPrice)) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("no_shop_money", ssArgs.getMessageParts()));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_shop_money", ssArgs.getMessageParts()));
                     return false;
                 }
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(player, x.getMessage());
-                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                 return false;
             }
 
@@ -70,7 +70,7 @@ public class takeTownMoney implements SignShopOperation {
             EconomyResponse response;
             try {
                 if (!TownySettings.getTownBankAllowWithdrawls()) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_bank_withdrawls_not_allowed", ssArgs.getMessageParts()));
                     return false;
                 }
 
@@ -80,14 +80,14 @@ public class takeTownMoney implements SignShopOperation {
                 // take the money from the town bank account
                 response = Vault.getEconomy().withdrawPlayer(town.getEconomyName(), fPrice);
                 if (response.type != EconomyResponse.ResponseType.SUCCESS) {
-                    ssPlayer.sendMessage(SignShopConfig.getError("towny_insufficient_funds", ssArgs.getMessageParts()));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_insufficient_funds", ssArgs.getMessageParts()));
                     return false;
                 }
 
                 return true;
             } catch (TownyException x) {
                 // TownyMessaging.sendErrorMsg(ssPlayer.getPlayer(), x.getMessage());
-                ssPlayer.sendMessage(SignShopConfig.getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("towny_owner_not_belong_to_town", ssArgs.getMessageParts()));
                 return false;
             }
 	}

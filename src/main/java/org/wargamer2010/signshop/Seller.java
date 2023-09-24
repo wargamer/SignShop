@@ -3,12 +3,14 @@ package org.wargamer2010.signshop;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.blocks.SignShopBooks;
 import org.wargamer2010.signshop.blocks.SignShopItemMeta;
 import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.PlayerIdentifier;
 import org.wargamer2010.signshop.player.SignShopPlayer;
+import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -29,7 +31,7 @@ public class Seller {
 
     public Seller(PlayerIdentifier playerId, String sWorld, List<Block> pContainables, List<Block> pActivatables, ItemStack[] isChestItems, Location location,
             Map<String, String> pMiscProps, Boolean save) {
-        owner = PlayerCache.getPlayer(playerId);//new SignShopPlayer(playerId);
+        owner = PlayerCache.getPlayer(playerId);
         world = sWorld;
 
         isItems = itemUtil.getBackupItemStack(isChestItems);
@@ -154,7 +156,7 @@ public class Seller {
             return "";
         if(itemUtil.clickedSign(block)) {
             Sign sign = (Sign) block.getState();
-            return signshopUtil.getOperation(sign.getLine(0));
+            return signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0));
         }
         return "";
     }
@@ -213,7 +215,7 @@ public class Seller {
         String newLine = "\n";
         StringBuilder sb = new StringBuilder();
         sb.append("--ShopInfo--").append(newLine)
-                .append("  Owner: ").append(owner.getName()).append(newLine)
+                .append("  Owner: ").append(owner.getName()).append(" LastSeen: ").append(SSTimeUtil.getDateTimeFromLong(owner.getOfflinePlayer().getLastPlayed())).append(newLine)
                 .append("  Sign Location: ").append(signshopUtil.convertLocationToString(getSignLocation())).append(newLine)
                 .append("  Container Locations: ");
         for (Block block: containables){

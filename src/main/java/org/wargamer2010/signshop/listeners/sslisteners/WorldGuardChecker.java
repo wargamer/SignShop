@@ -17,7 +17,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.hooks.HookManager;
 
@@ -61,13 +60,13 @@ public class WorldGuardChecker implements Listener {
         }
 
         if (event.getPlayer().isOp()) {
-            event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_op", event.getMessageParts()));
+            event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("region_allow_shops_but_op", event.getMessageParts()));
         }
         else if (event.getPlayer().hasBypassShopPlots("WorldGuard")) {
-            event.getPlayer().sendMessage(SignShopConfig.getError("region_allow_shops_but_perm", event.getMessageParts()));
+            event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("region_allow_shops_but_perm", event.getMessageParts()));
         }
         else {
-            event.getPlayer().sendMessage(SignShopConfig.getError("region_does_not_allow_shops", event.getMessageParts()));
+            event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("region_does_not_allow_shops", event.getMessageParts()));
             event.setCancelled(true);
         }
     }

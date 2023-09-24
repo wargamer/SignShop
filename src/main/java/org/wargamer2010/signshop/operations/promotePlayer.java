@@ -2,23 +2,23 @@ package org.wargamer2010.signshop.operations;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
-
 public class promotePlayer implements SignShopOperation {
     // Note: promotePlayer works with global permission groups explicitly.
     // It will not add players to local groups unless adding to global groups is not possible
 
     private String getGroupFromLine(Block bSign) {
         Sign sign = (Sign)bSign.getState();
-        return sign.getLine(1);
+        return sign.getSide(Side.FRONT).getLine(1);
     }
 
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         if(Vault.getPermission() == null) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_permission_plugin", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission_plugin", ssArgs.getMessageParts()));
             return false;
         }
         String group = getGroupFromLine(ssArgs.getSign().get());
@@ -31,11 +31,11 @@ public class promotePlayer implements SignShopOperation {
                 }
             }
         } else {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("missing_promote_group", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("missing_promote_group", ssArgs.getMessageParts()));
             return false;
         }
 
-        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("promote_group_does_not_exist", ssArgs.getMessageParts()));
+        ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("promote_group_does_not_exist", ssArgs.getMessageParts()));
         return false;
     }
 
@@ -73,14 +73,13 @@ public class promotePlayer implements SignShopOperation {
         ssArgs.setMessagePart("!promoteto", groupOnSign);
         ssArgs.setMessagePart("!promotefrom", primaryGroup);
 
-        System.out.println("Primary Group: "+Vault.getGlobalPrimaryGroup(player));
         if(!Vault.removeGroupAnyWorld(player, primaryGroup)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_remove_primary_group", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("could_not_remove_primary_group", ssArgs.getMessageParts()));
             return false;
         }
 
         if(!Vault.addGroupAnyWorld(player, groupOnSign)) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("could_not_promote", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("could_not_promote", ssArgs.getMessageParts()));
             return false;
         }
 

@@ -3,7 +3,8 @@ package org.wargamer2010.signshop.operations;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.bukkit.block.sign.Side;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -15,7 +16,7 @@ public class BankSign implements SignShopOperation {
     public Boolean setupOperation(SignShopArguments ssArgs) {
         signshopUtil.registerClickedMaterial(ssArgs.getSign().get(), ssArgs.getPlayer().get());
         ssArgs.bDoNotClearClickmap = true;
-        ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("registered_bank_sign", null));
+        ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("registered_bank_sign", null));
         return true;
     }
 
@@ -24,7 +25,7 @@ public class BankSign implements SignShopOperation {
     public Boolean checkRequirements(SignShopArguments ssArgs, Boolean activeCheck) {
         List<Block> shops = Storage.get().getShopsWithMiscSetting("banksigns", signshopUtil.convertLocationToString(ssArgs.getSign().get().getLocation()));
         if(shops.isEmpty()) {
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("no_shop_linked_to_banksign", null));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_shop_linked_to_banksign", null));
         } else {
             StringBuilder profitshops = new StringBuilder();
             boolean first = true;
@@ -40,19 +41,19 @@ public class BankSign implements SignShopOperation {
             StringBuilder profits = new StringBuilder();
             List<String> names = new LinkedList<>();
             Sign sign = (Sign)ssArgs.getSign().get().getState();
-            String[] lines = sign.getLines();
+            String[] lines = sign.getSide(Side.FRONT).getLines();
             if(!signshopUtil.lineIsEmpty(lines[1])) names.add(lines[1]);
             if(!signshopUtil.lineIsEmpty(lines[2])) names.add(lines[2]);
             first = true;
             String sLast = names.get(names.size()-1);
             for(String sTemp : names) {
                 if(first) first = false;
-                else if (!sLast.equals(sTemp)) profits.append(", ");
+                else if (!sLast.equals(sTemp)) profits.append(", ");//TODO fix this
                 else if (sLast.equals(sTemp)) profits.append(" and ");
                 profits.append(sTemp);
             }
             ssArgs.setMessagePart("!bank", profits.toString());
-            ssArgs.getPlayer().get().sendMessage(SignShopConfig.getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
+            ssArgs.getPlayer().get().sendMessage(SignShop.getInstance().getSignShopConfig().getError("bank_sign_linked_to_banks", ssArgs.getMessageParts()));
         }
         return true;
     }

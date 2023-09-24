@@ -79,6 +79,7 @@ public class commandUtil {
         commands.add("help~");
         commands.add("list~(Gives a list of signs)");
         commands.add("sign SIGN~(Replace SIGN with a type of sign)");
+        commands.add("ignore~(Toggles ignoring signshop messages)");
         commands.add("reload~(Reloads the signshop configs)");
         commands.add("[about|version]~(Gives version information about signshop)");
         commands.add("tutorial [on|off]~(Toggles the help message on sign creation)");

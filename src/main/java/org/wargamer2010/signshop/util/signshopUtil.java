@@ -4,6 +4,7 @@ import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -23,25 +24,31 @@ import org.wargamer2010.signshop.events.*;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.specialops.SignShopSpecialOp;
 
 import java.util.*;
 
 public class signshopUtil {
+    private static SignShopConfig signShopConfig;
 
     private signshopUtil() {
     }
 
+    public static void setSignShopConfig(SignShopConfig config) {
+        signShopConfig = config;
+    }
+
     public static String getOperation(Sign sign, boolean lowercase) {
-        if(sign == null)
+        if (sign == null)
             return "";
-        String sSignOperation = sign.getLine(0);
-        if(sSignOperation.length() < 4){
+        String sSignOperation = sign.getSide(Side.FRONT).getLine(0);
+        if (sSignOperation.length() < 4) {
             return "";
         }
         String stripped = ChatColor.stripColor(sSignOperation);
-        String temp = stripped.substring(1, stripped.length()-1);
+        String temp = stripped.substring(1, stripped.length() - 1);
         return (lowercase ? temp.toLowerCase() : temp);
     }
 
@@ -75,10 +82,10 @@ public class signshopUtil {
     }
 
     private static SignShopOperation getSignShopBlock(String blockName) {
-        if(blockName == null)
+        if (blockName == null)
             return null;
-        if(SignShopConfig.getOperationInstances().containsKey(blockName))
-            return SignShopConfig.getOperationInstances().get(blockName);
+        if (signShopConfig.getOperationInstances().containsKey(blockName))
+            return signShopConfig.getOperationInstances().get(blockName);
         return null;
     }
 
@@ -106,7 +113,7 @@ public class signshopUtil {
     }
 
     public static List<SignShopSpecialOp> getSignShopSpecialOps() {
-        return SignShopConfig.getSpecialOps();
+        return signShopConfig.getSpecialOps();
     }
 
 
@@ -153,8 +160,9 @@ public class signshopUtil {
             return null;
         try {
             World world = pWorld;
-            if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null)
+            if(sCoords.length > 3 && Bukkit.getWorld(sCoords[3]) != null) {
                 world = Bukkit.getWorld(sCoords[3]);
+            }
             return new Location(world, Double.parseDouble(sCoords[0]), Double.parseDouble(sCoords[1]), Double.parseDouble(sCoords[2]));
         } catch(NumberFormatException ex) {
             return null;
@@ -167,7 +175,7 @@ public class signshopUtil {
 
     public static Double getNumberFromLine(Block bSign, int line) {
         Sign sign = (Sign)bSign.getState();
-        String XPline = sign.getLines()[line];
+        String XPline = sign.getSide(Side.FRONT).getLines()[line];
         if(XPline == null)
             return 0.0d;
         return economyUtil.parsePrice(XPline);
@@ -212,14 +220,14 @@ public class signshopUtil {
         for(Block sharesign : clickedBlocks) {
             if(itemUtil.clickedSign(sharesign)) {
                 Sign sign = (Sign)sharesign.getState();
-                List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getLine(3));
+                List<Integer> tempperc = signshopUtil.getSharePercentages(sign.getSide(Side.FRONT).getLine(3));
                 percentages.addAll(tempperc);
                 blocklocations.add(signshopUtil.convertLocationToString(sharesign.getLocation()));
-                if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                if(tempperc.size() == 2 && (lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) || lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))))
                     ssPlayer.sendMessage("No usernames have been given on the second and third line so the Share sign will be ignored.");
-                else if(tempperc.size() == 2 && (lineIsEmpty(sign.getLine(1)) || lineIsEmpty(sign.getLine(2))))
+                else if(tempperc.size() == 2 && (lineIsEmpty(sign.getSide(Side.FRONT).getLine(1)) || lineIsEmpty(sign.getSide(Side.FRONT).getLine(2))))
                     ssPlayer.sendMessage("The second percentage will be ignored as only one username is given.");
-                else if(tempperc.size() == 1 && !lineIsEmpty(sign.getLine(2)))
+                else if(tempperc.size() == 1 && !lineIsEmpty(sign.getSide(Side.FRONT).getLine(2)))
                     ssPlayer.sendMessage("The second username will be ignored as only one percentage is given.");
             }
         }
@@ -238,7 +246,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static String validateRestrictSign(List<Block> clickedBlocks, SignShopPlayer player) {
@@ -249,10 +257,10 @@ public class signshopUtil {
                 Sign sign = (Sign)restrictedsign.getState();
                 boolean bValidGroup = false;
                 for(int i = 1; i < 4; i++) {
-                    if(!lineIsEmpty(sign.getLine(i)))
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)))
                         bValidGroup = true;
-                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i)))
-                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && !permGroups.contains(sign.getSide(Side.FRONT).getLine(i)))
+                        player.sendMessage("The group " + sign.getSide(Side.FRONT).getLine(i) + " does not currently exist!");
                 }
                 if(bValidGroup)
                     blocklocations.add(signshopUtil.convertLocationToString(restrictedsign.getLocation()));
@@ -262,7 +270,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static String validateBankSign(List<Block> clickedBlocks, SignShopPlayer player) {
@@ -270,20 +278,20 @@ public class signshopUtil {
         Map<String, String> messageParts = new LinkedHashMap<>();
 
         if(!Vault.getEconomy().hasBankSupport()) {
-            player.sendMessage(SignShopConfig.getError("no_bank_support", messageParts));
+            player.sendMessage(signShopConfig.getError("no_bank_support", messageParts));
             return "";
         }
 
         for(Block banksign : clickedBlocks) {
             if(itemUtil.clickedSign(banksign)) {
                 Sign sign = (Sign)banksign.getState();
-                String bank = sign.getLine(1);
+                String bank = sign.getSide(Side.FRONT).getLine(1);
                 if(!Vault.getEconomy().bankBalance(bank).transactionSuccess())
-                    player.sendMessage("The bank called " + sign.getLine(1) + " probably does not exist!");
+                    player.sendMessage("The bank called " + sign.getSide(Side.FRONT).getLine(1) + " probably does not exist!");
                 else if(!Vault.getEconomy().isBankOwner(bank, player.getOfflinePlayer()).transactionSuccess() && !Vault.getEconomy().isBankMember(bank, player.getOfflinePlayer()).transactionSuccess()
                         && !player.isOp()) {
                     messageParts.put("!bank", bank);
-                    player.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", messageParts));
+                    player.sendMessage(signShopConfig.getError("not_allowed_to_use_bank", messageParts));
                     continue;
                 }
 
@@ -294,7 +302,7 @@ public class signshopUtil {
         String[] implodedLocations = new String[blocklocations.size()];
         blocklocations.toArray(implodedLocations);
 
-        return signshopUtil.implode(implodedLocations, SignShopArguments.seperator);
+        return signshopUtil.implode(implodedLocations, SignShopArguments.separator);
     }
 
     public static Boolean restrictedFromUsing(Seller seller, SignShopPlayer player) {
@@ -307,10 +315,10 @@ public class signshopUtil {
             if(itemUtil.clickedSign(restrictedsign)) {
                 Sign sign = (Sign)restrictedsign.getState();
                 for(int i = 1; i < 4; i++) {
-                    if(!lineIsEmpty(sign.getLine(i)) && !permGroups.contains(sign.getLine(i))) {
-                        player.sendMessage("The group " + sign.getLine(i) + " does not currently exist!");
-                    } else if(!lineIsEmpty(sign.getLine(i)) && permGroups.contains(sign.getLine(i))) {
-                        playerGroups.add(sign.getLine(i));
+                    if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && !permGroups.contains(sign.getSide(Side.FRONT).getLine(i))) {
+                        player.sendMessage("The group " + sign.getSide(Side.FRONT).getLine(i) + " does not currently exist!");
+                    } else if(!lineIsEmpty(sign.getSide(Side.FRONT).getLine(i)) && permGroups.contains(sign.getSide(Side.FRONT).getLine(i))) {
+                        playerGroups.add(sign.getSide(Side.FRONT).getLine(i));
                     }
                 }
             }
@@ -321,7 +329,7 @@ public class signshopUtil {
             }
         }
         if(playerGroups.size() > 0 && seller.isOwner(player)) {
-            player.sendMessage(SignShopConfig.getError("restricted_but_owner", null));
+            player.sendMessage(signShopConfig.getError("restricted_but_owner", null));
             return false;
         } else
             return (playerGroups.size() > 0 && !player.isOp());
@@ -336,8 +344,8 @@ public class signshopUtil {
         if(seller.hasMisc(miscprop)) {
             String imploded = seller.getMisc(miscprop);
             String[] exploded;
-            if(imploded.contains(SignShopArguments.seperator))
-                exploded = imploded.split(SignShopArguments.seperator);
+            if(imploded.contains(SignShopArguments.separator))
+                exploded = imploded.split(SignShopArguments.separator);
             else {
                 exploded = new String[1];
                 exploded[0] = imploded;
@@ -363,8 +371,8 @@ public class signshopUtil {
         if(seller.hasMisc(miscprop)) {
             String imploded = seller.getMisc(miscprop);
             String[] exploded;
-            if(imploded.contains(SignShopArguments.seperator))
-                exploded = imploded.split(SignShopArguments.seperator);
+            if(imploded.contains(SignShopArguments.separator))
+                exploded = imploded.split(SignShopArguments.separator);
             else {
                 exploded = new String[1];
                 exploded[0] = imploded;
@@ -397,7 +405,7 @@ public class signshopUtil {
 
     private static Boolean clickedSignShopMat(String mat, SignShopPlayer ssPlayer) {
         String materialName = null;
-        for(LinkableMaterial linkable : SignShopConfig.getLinkableMaterials()) {
+        for (LinkableMaterial linkable : signShopConfig.getLinkableMaterials()) {
             if (linkable.getMaterialName().equalsIgnoreCase(mat))
                 materialName = linkable.getAlias();
         }
@@ -405,7 +413,7 @@ public class signshopUtil {
             if(materialName.isEmpty()) // Leaving the alias empty probably means denylink shouldn't be checked
                 return true;
             if(!ssPlayer.isOp() && ssPlayer.hasPerm("SignShop.DenyLink." + materialName, true) && !ssPlayer.hasPerm("SignShop.AllowLink." + materialName, true)) {
-                ssPlayer.sendMessage(SignShopConfig.getError("link_notallowed", null));
+                ssPlayer.sendMessage(signShopConfig.getError("link_notallowed", null));
                 return false;
             }
             return true;
@@ -418,7 +426,7 @@ public class signshopUtil {
     }
 
     private static Boolean registerClickedMaterial(Cancellable event, Player player, Block clickedBlock) {
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Boolean signshopMat = registerClickedMaterial(clickedBlock, ssPlayer);
         if(signshopMat)
             event.setCancelled(true);
@@ -429,7 +437,7 @@ public class signshopUtil {
         if(clickedSignShopMat(bClicked, ssPlayer)) {
             if(clicks.mClicksPerLocation.containsKey(bClicked.getLocation())) {
                 clicks.mClicksPerLocation.remove(bClicked.getLocation());
-                ssPlayer.sendMessage(SignShopConfig.getError("removed_location", null));
+                ssPlayer.sendMessage(signShopConfig.getError("removed_location", null));
             } else {
                 SSLinkEvent event = SSEventFactory.generateLinkEvent(bClicked, ssPlayer, null);
                 SignShop.scheduleEvent(event);
@@ -444,9 +452,9 @@ public class signshopUtil {
                         containables.add(bClicked);
                         ItemStack[] allStacks = itemUtil.getAllItemStacksForContainables(containables);
                         messageParts.put("!items", (allStacks.length == 0 ? "nothing" : itemUtil.itemStackToString(allStacks)));
-                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location_containable", messageParts));
+                        ssPlayer.sendMessage(signShopConfig.getError("stored_location_containable", messageParts));
                     } else {
-                        ssPlayer.sendMessage(SignShopConfig.getError("stored_location", messageParts));
+                        ssPlayer.sendMessage(signShopConfig.getError("stored_location", messageParts));
                     }
                 }
             }
@@ -481,11 +489,11 @@ public class signshopUtil {
                 containables.add(bBlockat);
 
                 chestCounter++;
-                boolean exceeded = SignShopConfig.ExceedsMaxChestsPerShop(chestCounter);
+                boolean exceeded = signShopConfig.ExceedsMaxChestsPerShop(chestCounter);
                 if(exceeded) {
                     Map<String, String> parts = new LinkedHashMap<>();
-                    parts.put("!maxAmountOfChests", Integer.toString(SignShopConfig.getMaxChestsPerShop()));
-                    ssPlayer.sendMessage(SignShopConfig.getError("exceeded_max_amount_of_chests_per_shop", parts));
+                    parts.put("!maxAmountOfChests", Integer.toString(signShopConfig.getMaxChestsPerShop()));
+                    ssPlayer.sendMessage(signShopConfig.getError("exceeded_max_amount_of_chests_per_shop", parts));
                     return false;
                 }
             } else if (signshopUtil.clickedSignShopMat(bBlockat, ssPlayer)) {
@@ -497,10 +505,11 @@ public class signshopUtil {
                 }
             }
             if (!multiWorld && !bBlockat.getWorld().getName().equals(bClicked.getWorld().getName())) {
-                if (SignShopConfig.getAllowMultiWorldShops()) {
+                if (signShopConfig.getAllowMultiWorldShops()) {
                     multiWorld = true;
-                } else {
-                    ssPlayer.sendMessage(SignShopConfig.getError("multiworld_not_allowed", null));
+                }
+                else {
+                    ssPlayer.sendMessage(signShopConfig.getError("multiworld_not_allowed", null));
                     return false;
                 }
             }
@@ -577,7 +586,7 @@ public class signshopUtil {
 
     public static boolean notOPForCommand(SignShopPlayer player) {
         if(player != null && !player.isOp()) {
-            player.sendMessage(SignShopConfig.getError("must_be_op_to_run", null));
+            player.sendMessage(signShopConfig.getError("must_be_op_to_run", null));
             return true;
         }
 
@@ -617,14 +626,29 @@ public class signshopUtil {
      */
     public static String getParam(SignShopArguments ssArgs) {
         String rawparam = ssArgs.getOperation().get().toLowerCase();
-        if(ssArgs.hasOperationParameters())
+        if (ssArgs.hasOperationParameters())
             rawparam = ssArgs.getFirstOperationParameter().toLowerCase();
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        rawparam = SignShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
-        if(rawparam != null && !rawparam.isEmpty())
+        rawparam = signShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        rawparam = signShopConfig.fillInBlanks(rawparam, ssArgs.getMessageParts());
+        if (rawparam != null && !rawparam.isEmpty())
             ssArgs.setMessagePart("!param", rawparam);
         return rawparam;
     }
+
+    // Fixes creative clients rendering signs as blank when left interact is canceled. This code is wet, see SimpleShopProtector
+    // One of these methods don't update the shop stock status on creation. Also need to see what is up with dyed shops. See below.
+    public static void fixCreativeModeSignRendering(Block block, Player player){
+        if (player.getGameMode() == GameMode.CREATIVE && block.getState() instanceof Sign ) {
+            Sign sign = (Sign) block.getState();
+            Bukkit.getScheduler().runTaskLater(SignShop.getInstance(), () -> sendSignUpdate(player,sign),2);
+        }
+    }
+
+    private static void sendSignUpdate(Player player, Sign sign){
+        //noinspection UnstableApiUsage
+        player.sendBlockUpdate(sign.getLocation(), sign);
+    }
+
 
 
 }

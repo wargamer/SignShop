@@ -1,12 +1,12 @@
 
 package org.wargamer2010.signshop.listeners.sslisteners;
 
-import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSTouchShopEvent;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -16,7 +16,7 @@ public class ShopUpdater implements Listener {
     @EventHandler(priority = EventPriority.MONITOR)
     public void onSSPostCreatedEvent(SSCreatedEvent event) {
         if(!event.isCancelled())
-            itemUtil.setSignStatus(event.getSign(), ChatColor.DARK_BLUE);
+            itemUtil.setSignStatus(event.getSign(), SignShop.getInstance().getSignShopConfig().getInStockColor());
     }
 
     @EventHandler(priority = EventPriority.HIGH)

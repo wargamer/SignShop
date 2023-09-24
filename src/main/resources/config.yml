@@ -10,7 +10,7 @@
 # Allow OP to have all permissions, regardless of permission settings (Default = true)
 OPOverride: true
 
-# Whether or not to make a log of all SignShop transactions (Default = false)
+# Whether to make a log of all SignShop transactions (Default = false)
 TransactionLog: false
 
 # If commands are detected for a sign in the "commands:" section, SignShop will automatically add the "runCommand" block to the sign name in the "signs:" section (Default = true)
@@ -27,8 +27,17 @@ ChunkLoadRadius: 2
 # Enable anonymous metrics data? Please do, it helps us stay motivated.
 MetricsEnabled: true
 
-# Should verbose debugging messages be enabled? This could get very spammy or it may do nothing.
+# Should verbose debugging messages be enabled? This could get very spammy, or it may do nothing.
 Debugging: false
+
+# Use an internationally compatible currency parser that supports ',' and '.' decimal separators.  This may, but likely will not be, incompatible with existing servers.
+# This will be automatically enabled on new servers, and disabled for servers that have existing shops. (true, false or auto by Default)
+AllowCommaDecimalSeparator: auto
+
+# If the server should cache the parsed prices for signs.
+# This slightly increases computation time per request, but greatly reduces computation time for repeated requests.
+# Most useful on larger servers with many signs
+CachePrices: true
 
 #----------- Tools ------------------
 
@@ -50,7 +59,7 @@ InspectMaterial: writable_book
 
 # Changes the default language for SignShop
 # Available languages are nl_NL, en_US, de_DE, fr_FR, pt_PT, ru_RU, zh_CN, zh_TW and es_ES
-# Send us your translated configs and we will add it to our supported languages
+# Send us your translated configs, and we will add it to our supported languages
 # NOTE: If you only want to use the sign aliases from nl_NL but keep the messages in en_US for example, you can do "en_US, nl_NL"
 Languages: en_US
 
@@ -59,7 +68,7 @@ Languages: en_US
 # SignShops will not break if punched in creative mode, must use DestroyMaterial to break them (Default = true)
 ProtectShopsInCreative: true
 
-# Protects signs when they are made into shops. Can be bypassed by OP (Default = true)
+# Protect signs when they are made into shops. Can be bypassed by OP (Default = true)
 EnableShopOwnerProtection: true
 
 # Protect shops from explosions. A dedicated protection plugin is better. (Default = true)
@@ -74,7 +83,7 @@ AllowVariableAmounts: false
 # Allow enchanted items to be repaired with [Repair] signs (Default = true)
 AllowEnchantedRepair: true
 
-# Disables shops for owners without the SignShop.Permit permission node (Default = false)
+# Disable shops for owners without the SignShop.Permit permission node (Default = false)
 EnablePermits: false
 
 # Enables the Written Book fix when set to true (Default = true)
@@ -110,20 +119,48 @@ linkableMaterials:
   LEVER: lever
   ACACIA_SIGN: sign
   ACACIA_WALL_SIGN: sign
+  ACACIA_HANGING_SIGN: sign
+  ACACIA_WALL_HANGING_SIGN: sign
+  BAMBOO_SIGN: sign
+  BAMBOO_WALL_SIGN: sign
+  BAMBOO_HANGING_SIGN: sign
+  BAMBOO_WALL_HANGING_SIGN: sign
   BIRCH_SIGN: sign
   BIRCH_WALL_SIGN: sign
+  BIRCH_HANGING_SIGN: sign
+  BIRCH_WALL_HANGING_SIGN: sign
+  CHERRY_SIGN: sign
+  CHERRY_WALL_SIGN: sign
+  CHERRY_HANGING_SIGN: sign
+  CHERRY_WALL_HANGING_SIGN: sign
   DARK_OAK_SIGN: sign
   DARK_OAK_WALL_SIGN: sign
+  DARK_OAK_HANGING_SIGN: sign
+  DARK_OAK_WALL_HANGING_SIGN: sign
   JUNGLE_SIGN: sign
   JUNGLE_WALL_SIGN: sign
+  JUNGLE_HANGING_SIGN: sign
+  JUNGLE_WALL_HANGING_SIGN: sign
+  MANGROVE_SIGN: sign
+  MANGROVE_WALL_SIGN: sign
+  MANGROVE_HANGING_SIGN: sign
+  MANGROVE_WALL_HANGING_SIGN: sign
   OAK_SIGN: sign
   OAK_WALL_SIGN: sign
+  OAK_HANGING_SIGN: sign
+  OAK_WALL_HANGING_SIGN: sign
   SPRUCE_SIGN: sign
   SPRUCE_WALL_SIGN: sign
+  SPRUCE_HANGING_SIGN: sign
+  SPRUCE_WALL_HANGING_SIGN: sign
   CRIMSON_SIGN: sign
   CRIMSON_WALL_SIGN: sign
+  CRIMSON_HANGING_SIGN: sign
+  CRIMSON_WALL_HANGING_SIGN: sign
   WARPED_SIGN: sign
   WARPED_WALL_SIGN: sign
+  WARPED_HANGING_SIGN: sign
+  WARPED_WALL_HANGING_SIGN: sign
   STEP: slab
   JUKEBOX: jukebox
   ACACIA_DOOR: door
@@ -188,6 +225,9 @@ Blacklisted_items:
 
 # If set to true, only the items listed under Blacklist will be allowed for use in shops (Default = false)
 UseBlacklistAsWhitelist: false
+
+# List of text that cannot be on the back of a shop sign (Signshops that do not match the front are already blocked)
+BlacklistedBackOfSignText: []
 
 #----------- Other Plugins ------------------
 
@@ -295,10 +335,16 @@ ItemColorTwo: "&5"
 # Internal money color code ("&a" which is green by default)
 MoneyColor: "&a"
 
+# Internal shop is in stock color code ("&1" which is dark blue by default)
+InStockColor: "&1"
+
+# Internal shop is out of stock color code ("&4" which is dark red by default)
+OutOfStockColor: "&4"
+
 # These are given when players interact with shops
 # Words beginning with "!" are replaced when the message is given
 # For a full list of available !variables and what they do, please read the Quick Reference
-# If you you start a message with a color code you need to make sure you surround the message with quotes
+# If you start a message with a color code you need to make sure you surround the message with quotes
 messages:
 # These are given when you create a sign by punching it with the link material (Redstone by default)
   setup:
@@ -342,7 +388,7 @@ messages:
     Promote: You have set up a Promote sign that promotes to the !promoteto group.
     TCommand: You have created a command sign that runs commands on this sign after 10 seconds for !price!
 
-# These are given when you left click a sign
+# These are given when you left-click a sign
   confirm:
     Buy: Buy !items for !price?
     Sell: Sell !items for !price?
@@ -638,6 +684,9 @@ errors:
   this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
   could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
   no_permission_to_inspect_shop: You do not have permission to inspect this shop.
+  no_permission_to_dye_shop: You do not have permission to dye this shop.
+  shop_on_sign_back_must_match_front: The back of the sign must match the front of the shop exactly, if you want it to look like a shop.
+  text_on_blacklist: The text '!blacklisted_text' is not allowed on the back of a shop sign.
 
 # Used for checking if the config needs to be backed up before upgrading it. (Do not modify unless told to do so)
 ConfigVersionDoNotTouch: 3

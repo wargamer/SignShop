@@ -2,17 +2,18 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopArgumentsType;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.clicks;
 import org.wargamer2010.signshop.util.economyUtil;
@@ -28,20 +29,20 @@ public class ChangeShopItems implements SignShopSpecialOp {
         if(ranSomething)
             return false;
         Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Block bClicked = event.getClickedBlock();
         Seller seller = Storage.get().getSeller(bClicked.getLocation());
-        String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getLine(0));
-        if(seller == null)
+        String sOperation = signshopUtil.getOperation(((Sign) bClicked.getState()).getSide(Side.FRONT).getLine(0));
+        if (seller == null)
             return false;
-        if(ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShopConfig.getUpdateMaterial())
+        if (ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShop.getInstance().getSignShopConfig().getUpdateMaterial())
             return false;
         SignShopPlayer ssOwner = seller.getOwner();
-        List<String> operation = SignShopConfig.getBlocks(sOperation);
-        String[] sLines = ((Sign) bClicked.getState()).getLines();
+        List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(sOperation);
+        String[] sLines = ((Sign) bClicked.getState()).getSide(Side.FRONT).getLines();
 
         if (!seller.isOwner(ssPlayer) && !ssPlayer.isOp()) {
-            ssPlayer.sendMessage(SignShopConfig.getError("no_permission", null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_permission", null));
             return true;
         }
 
@@ -55,7 +56,7 @@ public class ChangeShopItems implements SignShopSpecialOp {
 
         List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
         if (SignShopOperations == null) {
-            ssPlayer.sendMessage(SignShopConfig.getError("invalid_operation", null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("invalid_operation", null));
             return false;
         }
 
@@ -67,24 +68,24 @@ public class ChangeShopItems implements SignShopSpecialOp {
             ssArgs.setOperationParameters(ssOperation.getParameters());
             bSetupOK = ssOperation.getOperation().setupOperation(ssArgs);
             if (!bSetupOK) {
-                ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("failed_to_update_shop", ssArgs.getMessageParts()));
                 return true;
             }
         }
         if (!bSetupOK) {
-            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }
 
         if (signshopUtil.cantGetPriceFromMoneyEvent(ssArgs)) {
-            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }
 
         SSCreatedEvent createdevent = SSEventFactory.generateCreatedEvent(ssArgs);
         SignShop.scheduleEvent(createdevent);
         if(createdevent.isCancelled()) {
-            ssPlayer.sendMessage(SignShopConfig.getError("failed_to_update_shop", ssArgs.getMessageParts()));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("failed_to_update_shop", ssArgs.getMessageParts()));
             return true;
         }
 
@@ -94,7 +95,7 @@ public class ChangeShopItems implements SignShopSpecialOp {
             clicks.removePlayerFromClickmap(player);
         }
 
-        ssPlayer.sendMessage(SignShopConfig.getError("updated_shop", ssArgs.getMessageParts()));
+        ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("updated_shop", ssArgs.getMessageParts()));
 
         return true;
     }

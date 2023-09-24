@@ -3,9 +3,8 @@ package org.wargamer2010.signshop.listeners;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.type.Sign;
-import org.bukkit.block.data.type.Switch;
-import org.bukkit.block.data.type.WallSign;
+import org.bukkit.block.data.FaceAttachable;
+import org.bukkit.block.data.type.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -16,9 +15,9 @@ import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSDestroyedEvent;
 import org.wargamer2010.signshop.events.SSDestroyedEventType;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -36,6 +35,7 @@ public class SignShopBlockListener implements Listener {
         checkFaces.add(BlockFace.EAST);
         checkFaces.add(BlockFace.SOUTH);
         checkFaces.add(BlockFace.WEST);
+        checkFaces.add(BlockFace.DOWN);
 
         Block relativeBlock;
         BlockData relativeBlockData;
@@ -43,9 +43,9 @@ public class SignShopBlockListener implements Listener {
         for (BlockFace face : checkFaces) {
             relativeBlock = originalBlock.getRelative(face);
             relativeBlockData = relativeBlock.getBlockData();
-            if (relativeBlockData instanceof Switch) {
-                Switch switchData = (Switch) relativeBlockData;
-                if (switchData.getFace() == Switch.Face.FLOOR
+            if (relativeBlockData instanceof Switch && relativeBlockData instanceof FaceAttachable ) {
+               FaceAttachable attachableSwitch = (FaceAttachable) relativeBlockData;
+                if (attachableSwitch.getAttachedFace() == FaceAttachable.AttachedFace.FLOOR
                         && relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
@@ -56,17 +56,23 @@ public class SignShopBlockListener implements Listener {
                     attachables.add(relativeBlock);
                 }
             }
-            else if (relativeBlockData instanceof Sign)
+            else if (relativeBlockData instanceof Sign) {
                 if (relativeBlock.getRelative(BlockFace.DOWN).equals(originalBlock)) {
                     attachables.add(relativeBlock);
                 }
+            }
+            else if (relativeBlockData instanceof HangingSign) {
+                if (relativeBlock.getRelative(BlockFace.UP).equals(originalBlock)) {
+                    attachables.add(relativeBlock);
+                }
+            }
         }
         return attachables;
     }
 
     private boolean canNotBreakBlock(Block block, Player player, boolean recurseOverAttachables) {
         Map<Seller, SSDestroyedEventType> affectedSellers = signshopUtil.getRelatedShopsByBlock(block);
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = (player == null) ? new SignShopPlayer() : PlayerCache.getPlayer(player);
 
         for (Map.Entry<Seller, SSDestroyedEventType> destroyal : affectedSellers.entrySet()) {
             SSDestroyedEvent event = new SSDestroyedEvent(block, ssPlayer, destroyal.getKey(), destroyal.getValue());
@@ -106,14 +112,14 @@ public class SignShopBlockListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockExplode(BlockExplodeEvent event) {
-        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+        if (event.isCancelled() || !(SignShop.getInstance().getSignShopConfig().getProtectShopsFromExplosions()))
             return;
         event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onEntityExplode(EntityExplodeEvent event) {
-        if (event.isCancelled() || !(SignShopConfig.getProtectShopsFromExplosions()))
+        if (event.isCancelled() || !(SignShop.getInstance().getSignShopConfig().getProtectShopsFromExplosions()))
             return;
         event.blockList().removeIf(block -> canNotBreakBlock(block, null, true));
     }

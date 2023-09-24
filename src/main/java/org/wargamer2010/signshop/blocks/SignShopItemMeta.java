@@ -10,9 +10,11 @@ import org.bukkit.block.ShulkerBox;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
-import org.bukkit.potion.*;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.ColorUtil;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -28,8 +30,6 @@ public class SignShopItemMeta {
     private static final String innerListSeperator = "^";
     private static final String filename = "books.db";
 
-    private static  ChatColor txtColor = ChatColor.YELLOW;
-    private static  ChatColor txtColorTwo = ChatColor.DARK_PURPLE;
     
     private SignShopItemMeta() {
 
@@ -37,12 +37,10 @@ public class SignShopItemMeta {
 
     public static void init() {
         SSDatabase db = new SSDatabase(filename);
-        txtColor = SignShopConfig.getTextColor();
-        txtColorTwo = SignShopConfig.getTextColorTwo();
         try {
-            if(!db.tableExists("ItemMeta"))
+            if (!db.tableExists("ItemMeta"))
                 db.runStatement("CREATE TABLE ItemMeta ( ItemMetaID INTEGER, ItemMetaHash INT, PRIMARY KEY(ItemMetaID) )", null, false);
-            if(!db.tableExists("MetaProperty"))
+            if (!db.tableExists("MetaProperty"))
                 db.runStatement("CREATE TABLE MetaProperty ( PropertyID INTEGER, ItemMetaID INTEGER, PropertyName TEXT NOT NULL, ProperyValue TEXT NOT NULL, PRIMARY KEY(PropertyID) )", null, false);
         } finally {
             db.close();
@@ -63,7 +61,11 @@ public class SignShopItemMeta {
     }
 
     public static ChatColor getTextColor() {
-        return txtColor;
+        return SignShop.getInstance().getSignShopConfig().getTextColor();
+    }
+
+    public static ChatColor getTextColorTwo() {
+        return SignShop.getInstance().getSignShopConfig().getTextColorTwo();
     }
 
     private static String convertFireworkTypeToDisplay(FireworkEffect.Type type) {
@@ -78,18 +80,18 @@ public class SignShopItemMeta {
     }
 
     private static boolean hasNoMeta(ItemStack stack) {
-        // This seems silly but some parts of the code below function when an item has no meta data but itemmeta is not null
+        // This seems silly but some parts of the code below function when an item has no metadata but itemmeta is not null
         return (stack.getItemMeta() == null);
     }
 
     private static String getDisplayName(ItemStack stack) {
-        return getDisplayName(stack, txtColor);
+        return getDisplayName(stack, getTextColor());
     }
 
     //May need to implement my own WhatIsIt friendly name yml
     private static String getDisplayName(ItemStack stack, ChatColor color) {
-        String txtcolor = txtColor.toString();
-        String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : txtColorTwo.toString());
+        String txtcolor = getTextColor().toString();
+        String customcolor = (stack.getEnchantments().isEmpty() ? color.toString() : getTextColorTwo().toString());
 
         String normal = itemUtil.formatMaterialName(stack);
         String displayname = "";
@@ -124,7 +126,7 @@ public class SignShopItemMeta {
             if(type == MetaType.EnchantmentStorage) {
                 EnchantmentStorageMeta enchantmeta = (EnchantmentStorageMeta) meta;
                 if(enchantmeta.hasStoredEnchants())
-                    return (getDisplayName(stack, txtColorTwo) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
+                    return (getDisplayName(stack, getTextColorTwo()) + " " + itemUtil.enchantmentsToMessageFormat(enchantmeta.getStoredEnchants()));
             } else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
                 return (ColorUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack));
@@ -143,14 +145,14 @@ public class SignShopItemMeta {
             } else if(type == MetaType.Potion) {
                 PotionMeta potionMeta = (PotionMeta) meta;
                 StringBuilder nameBuilder = new StringBuilder();
-                nameBuilder.append(txtColorTwo);
+                nameBuilder.append(getTextColorTwo());
                 nameBuilder.append(itemUtil.stripConstantCase(stack.getType().toString()));
-                nameBuilder.append(txtColor);
+                nameBuilder.append(getTextColor());
                 nameBuilder.append(" (");
                 if (potionMeta.hasDisplayName()) {
                     nameBuilder.append("\"");
                     nameBuilder.append(potionMeta.getDisplayName());
-                    nameBuilder.append(txtColor);
+                    nameBuilder.append(getTextColor());
                     nameBuilder.append("\" ");
                 }
 
@@ -187,7 +189,7 @@ public class SignShopItemMeta {
                 FireworkMeta fireworkmeta = (FireworkMeta) meta;
 
                 StringBuilder namebuilder = new StringBuilder(256);
-                namebuilder.append(getDisplayName(stack, txtColorTwo));
+                namebuilder.append(getDisplayName(stack, getTextColorTwo()));
 
                 if(fireworkmeta.hasEffects()) {
                     namebuilder.append(" (");
@@ -216,9 +218,9 @@ public class SignShopItemMeta {
                 if (blockStateMeta.getBlockState() instanceof ShulkerBox){
                     ShulkerBox shulker = (ShulkerBox) blockStateMeta.getBlockState();
                     StringBuilder nameBuilder = new StringBuilder();
-                    nameBuilder.append(getDisplayName(stack, txtColorTwo));
+                    nameBuilder.append(getDisplayName(stack, getTextColorTwo()));
 
-                    nameBuilder.append(txtColor);
+                    nameBuilder.append(getTextColor());
                     nameBuilder.append(" [");
 
                     boolean isEmpty = true;
@@ -242,7 +244,7 @@ public class SignShopItemMeta {
                             nameBuilder.append(getName(item));
                         }
                     }
-                    nameBuilder.append(txtColor);
+                    nameBuilder.append(getTextColor());
                     nameBuilder.append("]");
 
                     return nameBuilder.toString();
@@ -552,6 +554,7 @@ public class SignShopItemMeta {
         return signshopUtil.implode(temp.toArray(colorarr), innerListSeperator);
     }
 
+    @SuppressWarnings("SuspiciousRegexArgument")
     private static ImmutableList<Color> getColorsFromString(String colors) {
         List<Color> temp = new LinkedList<>();
         //noinspection SuspiciousRegexArgument

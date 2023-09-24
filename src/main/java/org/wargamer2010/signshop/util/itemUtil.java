@@ -8,6 +8,7 @@ import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.block.data.Bisected;
 import org.bukkit.block.data.BlockData;
+import org.bukkit.block.sign.Side;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.InventoryHolder;
@@ -29,9 +30,10 @@ import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/** @noinspection deprecation*/ //TODO Remove deprecated calls
+
 public class itemUtil {
-    public static Map<Material,String> formattedMaterials = new HashMap<>();
+    public static Map<Material, String> formattedMaterials = new HashMap<>();
+    private static SignShopConfig signShopConfig;
 
     static {
         initializeFormattedMaterialMap();
@@ -39,6 +41,10 @@ public class itemUtil {
 
     private itemUtil() {
 
+    }
+
+    public static void setSignShopConfig(SignShopConfig config) {
+        signShopConfig = config;
     }
 
     /**
@@ -50,7 +56,7 @@ public class itemUtil {
     public static ItemStack[] getMinimumAmount(ItemStack[] isItems) {
         HashMap<ItemStack, Integer> materialByMaximumAmount = new LinkedHashMap<>();
 
-        for(ItemStack item: isItems) {
+        for (ItemStack item : isItems) {
             ItemStack isBackup = getSingleAmountOfStack(item);
             if(!materialByMaximumAmount.containsKey(isBackup) || materialByMaximumAmount.get(isBackup) < item.getAmount())
                 materialByMaximumAmount.put(isBackup, item.getAmount());
@@ -98,8 +104,8 @@ public class itemUtil {
         return null;
     }
 
-    public static void fixBooks(ItemStack[] stacks) {
-        if(stacks == null || !SignShopConfig.getEnableWrittenBookFix())
+    public static void fixBooks(ItemStack[] stacks) {//TODO this causes a ton of lag do we really even need this?
+        if (stacks == null || !signShopConfig.getEnableWrittenBookFix())
             return;
 
         for(ItemStack stack : stacks) {
@@ -174,7 +180,7 @@ public class itemUtil {
         sData = m.replaceAll("");
         sData = sData.replace("_", " ");
 
-        StringBuffer sb = new StringBuffer(sData.length());
+        StringBuilder sb = new StringBuilder(sData.length());
         p = Pattern.compile("(^|\\W)([a-z])");
         m = p.matcher(sData);
         while(m.find()) {
@@ -190,7 +196,7 @@ public class itemUtil {
         constantCaseString = constantCaseString.replace("_"," ");
         Pattern p = Pattern.compile("(^|\\W)([a-z])");
         Matcher m = p.matcher(constantCaseString.toLowerCase());
-        StringBuffer sb = new StringBuffer(constantCaseString.length());
+        StringBuilder sb = new StringBuilder(constantCaseString.length());
 
         while(m.find()){
             m.appendReplacement(sb, m.group(1) + m.group(2).toUpperCase() );
@@ -201,6 +207,7 @@ public class itemUtil {
         return sb.toString();
     }
 
+    @SuppressWarnings("deprecation")
     private static ItemStack getSingleAmountOfStack(ItemStack item) {
         if(item == null)
             return null;
@@ -237,10 +244,10 @@ public class itemUtil {
                 items.put(isBackup, item.getAmount());
         }
         for(Map.Entry<ItemStack, Integer> entry : items.entrySet()) {
-            if(first) first = false;
-            else sItems.append(SignShopConfig.getTextColor()).append(", ");
+            if (first) first = false;
+            else sItems.append(signShopConfig.getTextColor()).append(", ");
             String newItemMeta = SignShopItemMeta.getName(entry.getKey());
-            String count = (SignShopItemMeta.getTextColor() + entry.getValue().toString() + " ");
+            String count = (signShopConfig.getTextColor() + entry.getValue().toString() + " ");
             if(newItemMeta.isEmpty())
                 sItems.append(count).append(formatMaterialName(entry.getKey()));
             else
@@ -256,6 +263,7 @@ public class itemUtil {
         return sItems.toString();
     }
 
+    @SuppressWarnings("deprecation")
     public static String enchantmentsToMessageFormat(Map<Enchantment,Integer> enchantments) {
         StringBuilder enchantmentMessage = new StringBuilder();
         boolean eFirst = true;
@@ -273,9 +281,12 @@ public class itemUtil {
     public static void setSignStatus(Block sign, ChatColor color) {
         if(clickedSign(sign)) {
             Sign signblock = ((Sign) sign.getState());
-            String[] sLines = signblock.getLines();
+            String[] sLines = signblock.getSide(Side.FRONT).getLines();
             if(ChatColor.stripColor(sLines[0]).length() <= 14) {
-                signblock.setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                signblock.getSide(Side.FRONT).setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                if (ChatColor.stripColor(signblock.getSide(Side.BACK).getLine(0)).equals(ChatColor.stripColor(sLines[0]))) {
+                    signblock.getSide(Side.BACK).setLine(0, (color + ChatColor.stripColor(sLines[0])));
+                }
                 signblock.update();
             }
         }
@@ -302,13 +313,14 @@ public class itemUtil {
         try {
             isEnchantMe.addEnchantments(enchantments);
         } catch(IllegalArgumentException ex) {
-            if(SignShopConfig.getAllowUnsafeEnchantments()) {
+            if (signShopConfig.getAllowUnsafeEnchantments()) {
                 try {
                     isEnchantMe.addUnsafeEnchantments(enchantments);
-                } catch(IllegalArgumentException exfinal) {
+                } catch (IllegalArgumentException exfinal) {
                     return false;
                 }
-            } else
+            }
+            else
                 return false;
         }
         return true;
@@ -380,15 +392,15 @@ public class itemUtil {
         }
     }
 
-    public static void updateStockStatusPerShop(Seller pSeller) {
+    public static void updateStockStatusPerShop(Seller pSeller) {//TODO called frequently
         if(pSeller != null) {
             Block pSign = pSeller.getSign();
             if(pSign == null || !(pSign.getState() instanceof Sign))
                 return;
-            String[] sLines = ((Sign) pSign.getState()).getLines();
-            if(SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
+            String[] sLines = ((Sign) pSign.getState()).getSide(Side.FRONT).getLines();
+            if (signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0])).isEmpty())
                 return;
-            List<String> operation = SignShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
+            List<String> operation = signShopConfig.getBlocks(signshopUtil.getOperation(sLines[0]));
             List<SignShopOperationListItem> SignShopOperations = signshopUtil.getSignShopOps(operation);
             if(SignShopOperations == null)
                 return;
@@ -401,16 +413,16 @@ public class itemUtil {
                 ssArgs.setOperationParameters(ssOperation.getParameters());
                 reqOK = ssOperation.getOperation().checkRequirements(ssArgs, false);
                 if(!reqOK) {
-                    itemUtil.setSignStatus(pSign, ChatColor.DARK_RED);
+                    itemUtil.setSignStatus(pSign, signShopConfig.getOutOfStockColor());
                     break;
                 }
             }
             if(reqOK)
-                itemUtil.setSignStatus(pSign, ChatColor.DARK_BLUE);
+                itemUtil.setSignStatus(pSign, signShopConfig.getInStockColor());
         }
     }
 
-    public static void updateStockStatus(Block bSign, ChatColor ccColor) {
+    public static void updateStockStatus(Block bSign, ChatColor ccColor) {//TODO this is called frequently and makes many ops take a while
         Seller seTemp = Storage.get().getSeller(bSign.getLocation());
         if(seTemp != null) {
             List<Block> iChests = seTemp.getContainables();
@@ -420,9 +432,8 @@ public class itemUtil {
         setSignStatus(bSign, ccColor);
     }
 
-    //TODO This is what is loading chunks
-    public static Boolean clickedSign(Block bBlock) {//TODO change to Tag in a later version?
-        return (bBlock.getBlockData() instanceof org.bukkit.block.data.type.Sign || bBlock.getBlockData() instanceof org.bukkit.block.data.type.WallSign);
+    public static Boolean clickedSign(Block bBlock) {
+        return (Tag.ALL_SIGNS.isTagged(bBlock.getType()));
     }
 
     public static Boolean clickedDoor(Block bBlock) {
@@ -473,7 +484,7 @@ public class itemUtil {
                     }
                 }
             } catch (Exception e) {
-                if (SignShopConfig.debugging()) {
+                if (signShopConfig.debugging()) {
                     SignShop.log("Error converting strings to item stacks.", Level.WARNING);
                 }
             }
@@ -512,6 +523,7 @@ public class itemUtil {
     }
 
 
+    @SuppressWarnings("deprecation")
     public static boolean itemstackEqual(ItemStack a, ItemStack b, boolean ignoredur) {
         if(a.getType() != b.getType())
             return false;

@@ -2,12 +2,12 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
 import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
@@ -21,7 +21,7 @@ public class GetPriceFromWorth implements Listener {
 
     private double getTotalPrice(final ItemStack[] pStacks) {
         if (SignShop.worthHandler == null) {
-            if (SignShopConfig.debugging()) {
+            if (SignShop.getInstance().getSignShopConfig().debugging()) {
                 SignShop.log("worthHandler is null", Level.INFO);
             }
             return -1.0f;
@@ -33,7 +33,7 @@ public class GetPriceFromWorth implements Listener {
                 fTotal += (dTemp * stack.getAmount());
             }
         }
-        if (SignShopConfig.debugging()) {
+        if (SignShop.getInstance().getSignShopConfig().debugging()) {
             SignShop.log("Total price is " + fTotal, Level.INFO);
         }
         return fTotal;
@@ -43,13 +43,13 @@ public class GetPriceFromWorth implements Listener {
         if(!itemUtil.clickedSign(bSign))
             return false;
         Sign sign = (Sign)bSign.getState();
-        return sign.getLine(3) != null && sign.getLine(3).equalsIgnoreCase("[worth]");
+        return sign.getSide(Side.FRONT).getLine(3) != null && sign.getSide(Side.FRONT).getLine(3).equalsIgnoreCase("[worth]");
     }
 
 
     private double adjustPrice(Block sign, ItemStack[] items, SignShopPlayer player, String sOperation, SSMoneyEventType type) {
         double returnValue = -1.0d;
-        if(!SignShopConfig.getEnablePriceFromWorth() || !signHasPlaceholder(sign))
+        if (!SignShop.getInstance().getSignShopConfig().getEnablePriceFromWorth() || !signHasPlaceholder(sign))
             return returnValue;
         returnValue = getTotalPrice(items);
         return returnValue;
@@ -62,7 +62,7 @@ public class GetPriceFromWorth implements Listener {
         double newPrice = this.adjustPrice(event.getSign(), event.getItems(), event.getPlayer(), event.getOperation(), event.getTransactionType());
         if(newPrice > -1.0f) {
             if(event.getRequestType() == SSMoneyRequestType.GetAmount)
-                event.getPlayer().sendMessage(SignShopConfig.getError("price_drawn_from_essentials", null));
+                event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("price_drawn_from_essentials", null));
             event.setPrice(newPrice);
             if(event.getArguments() != null)
                 event.getArguments().resetPriceMod();

@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSCreatedEvent;
 import org.wargamer2010.signshop.events.SSPreTransactionEvent;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -18,22 +18,22 @@ public class SimpleBlacklister implements Listener {
     private boolean runBlacklistCheck(ItemStack[] isItems, SignShopPlayer ssPlayer, Map<String, String> messageParts) {
         if(isItems == null)
             return false;
-        ItemStack blacklisted = SignShopConfig.isAnyItemOnBlacklist(isItems);
+        ItemStack blacklisted = SignShop.getInstance().getSignShopConfig().isAnyItemOnBlacklist(isItems);
         if(blacklisted != null) {
-            messageParts.put("!blacklisted_item", itemUtil.itemStackToString(new ItemStack[]{ blacklisted }));
+            messageParts.put("!blacklisted_item", itemUtil.itemStackToString(new ItemStack[]{blacklisted}));
 
-            if(ssPlayer.isOp()) {
-                if(SignShopConfig.getUseBlacklistAsWhitelist())
-                    ssPlayer.sendMessage(SignShopConfig.getError("item_not_on_whitelist_but_op", messageParts));
+            if (ssPlayer.isOp()) {
+                if (SignShop.getInstance().getSignShopConfig().getUseBlacklistAsWhitelist())
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("item_not_on_whitelist_but_op", messageParts));
                 else
-                    ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist_but_op", messageParts));
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("item_on_blacklist_but_op", messageParts));
                 return false;
             }
 
-            if(SignShopConfig.getUseBlacklistAsWhitelist())
-                ssPlayer.sendMessage(SignShopConfig.getError("item_not_on_whitelist", messageParts));
+            if (SignShop.getInstance().getSignShopConfig().getUseBlacklistAsWhitelist())
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("item_not_on_whitelist", messageParts));
             else
-                ssPlayer.sendMessage(SignShopConfig.getError("item_on_blacklist", messageParts));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("item_on_blacklist", messageParts));
             return true;
         }
         return false;

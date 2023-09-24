@@ -1,7 +1,7 @@
 
 package org.wargamer2010.signshop.commands;
 
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -20,7 +20,7 @@ public class HelpHandler implements ICommandHandler {
     }
 
     public Collection<String> getFilteredOperation(SignShopPlayer player) {
-        Collection<String> all = SignShopConfig.getOperations();
+        Collection<String> all = SignShop.getInstance().getSignShopConfig().getOperations();
         Collection<String> filtered = new LinkedList<>();
         Collection<String> aliased = new LinkedList<>();
 
@@ -28,7 +28,7 @@ public class HelpHandler implements ICommandHandler {
             filtered.addAll(all);
         else {
             for(String op : all) {
-                List<String> operation = SignShopConfig.getBlocks(op);
+                List<String> operation = SignShop.getInstance().getSignShopConfig().getBlocks(op);
                 if(!operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Signs." + op), false) || player.hasPerm(("SignShop.Signs.*"), false)))
                     filtered.add(op);
                 else if(operation.contains("playerIsOp") && (player.hasPerm(("SignShop.Admin."+op), true) || player.hasPerm(("SignShop.Admin.*"), true)))
@@ -37,7 +37,7 @@ public class HelpHandler implements ICommandHandler {
         }
 
         for(String op : filtered) {
-            Collection<String> temp = SignShopConfig.getAliases(op);
+            Collection<String> temp = SignShop.getInstance().getSignShopConfig().getAliases(op);
             if(temp.isEmpty())
                 aliased.add(op);
             else
@@ -68,9 +68,9 @@ public class HelpHandler implements ICommandHandler {
             messageBuilder.append(moreInfo);
         } else if(!command.isEmpty() && args.length > 0 && command.equals("sign")) {
             Map<String, String> messageParts = new LinkedHashMap<>();
-            messageParts.put("!linkmaterial", signshopUtil.capFirstLetter(SignShopConfig.getLinkMaterial().name().toLowerCase()));
+            messageParts.put("!linkmaterial", signshopUtil.capFirstLetter(SignShop.getInstance().getSignShopConfig().getLinkMaterial().name().toLowerCase()));
 
-            String temp = SignShopConfig.getMessage("help", args[0], messageParts).replace(". ", ".\n- ");
+            String temp = SignShop.getInstance().getSignShopConfig().getMessage("help", args[0], messageParts).replace(". ", ".\n- ");
             if(temp.trim().isEmpty()) {
                 messageBuilder.append("Sign help does not exist.\n");
                 messageBuilder.append(signList);

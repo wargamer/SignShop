@@ -4,12 +4,13 @@ import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.wargamer2010.signshop.Seller;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.player.SignShopPlayer;
@@ -28,8 +29,8 @@ public class BankTransaction implements Listener {
             for (Block banksign : bankSigns) {
                 if (itemUtil.clickedSign(banksign)) {
                     Sign sign = (Sign) banksign.getState();
-                    if (sign.getLine(1) != null)
-                        banks.add(sign.getLine(1));
+                    if (sign.getSide(Side.FRONT).getLine(1) != null)
+                        banks.add(sign.getSide(Side.FRONT).getLine(1));
                 }
             }
         }
@@ -63,14 +64,14 @@ public class BankTransaction implements Listener {
                 ownedBanks.add(bank);
             } else {
                 event.setMessagePart("!bank", bank);
-                ssOwner.sendMessage(SignShopConfig.getError("not_allowed_to_use_bank", event.getMessageParts()));
+                ssOwner.sendMessage(SignShop.getInstance().getSignShopConfig().getError("not_allowed_to_use_bank", event.getMessageParts()));
             }
         }
 
         if(ownedBanks.isEmpty()) {
             event.setHandled(true);
             event.setCancelled(true);
-            event.getPlayer().sendMessage(SignShopConfig.getError("no_bank_available", event.getMessageParts()));
+            event.getPlayer().sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_bank_available", event.getMessageParts()));
             return;
         }
 

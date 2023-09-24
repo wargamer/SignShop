@@ -2,7 +2,6 @@
 package org.wargamer2010.signshop.operations;
 
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.events.SSEvent;
 import org.wargamer2010.signshop.util.signshopUtil;
 
@@ -18,7 +17,7 @@ public abstract class SignShopEventHandler implements SignShopOperation {
     public abstract boolean handleEvent(SignShopArguments ssArgs, SSEvent event);
 
     public static boolean dispatchEvent(SignShopArguments ssArgs, SSEvent event, String operation) {
-        List<String> stringops = SignShopConfig.getBlocks(operation);
+        List<String> stringops = SignShop.getInstance().getSignShopConfig().getBlocks(operation);
         if(stringops.isEmpty()) {
             SignShop.log("Invalid operation found while trying to dispatch event: " + operation, Level.WARNING);
             return false;

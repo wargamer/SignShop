@@ -1,7 +1,7 @@
 package org.wargamer2010.signshop.operations;
 
 import org.bukkit.World;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 public class setRaining implements SignShopOperation {
@@ -26,7 +26,7 @@ public class setRaining implements SignShopOperation {
         world.setStorm(true);
         world.setThundering(true);
 
-        SignShopPlayer.broadcastMsg(world, SignShopConfig.getError("made_rain", ssArgs.getMessageParts()));
+        SignShopPlayer.broadcastMsg(world, SignShop.getInstance().getSignShopConfig().getError("made_rain", ssArgs.getMessageParts()));
         return true;
     }
 }

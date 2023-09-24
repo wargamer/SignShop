@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.player;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.SignShop;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -42,7 +41,7 @@ public class MessageWorker implements Runnable {
         String playername = player.getName();
         long timenow = System.currentTimeMillis();
         HashMap<String, Message> mMessageMap = mPlayerMessageMap.get(playername);
-        int cooldown = (SignShopConfig.getMessageCooldown() * 1000); // Convert to millis
+        int cooldown = (SignShop.getInstance().getSignShopConfig().getMessageCooldown() * 1000); // Convert to millis
 
         if (mMessageMap == null) {
             mMessageMap = new HashMap<>();
@@ -74,7 +73,7 @@ public class MessageWorker implements Runnable {
     private static void SendRepeatedMessage(Message message) {
         Map<String, String> pars = new LinkedHashMap<>();
         pars.put("!times", Integer.toString(message.getCount()));
-        String appender = (message.getCount() > 0 ? (" " + SignShopConfig.getError("repeated_x_times", pars)) : "");
+        String appender = (message.getCount() > 0 ? (" " + SignShop.getInstance().getSignShopConfig().getError("repeated_x_times", pars)) : "");
         message.getPlayer().sendNonDelayedMessage(message.getMessage() + appender);
         message.clrCount();
         message.setLastSeen(System.currentTimeMillis());
@@ -101,14 +100,14 @@ public class MessageWorker implements Runnable {
 
     private static class Message implements Delayed {
         private final String sMessage;
-        private final PlayerIdentifier Player;
+        private final PlayerIdentifier playerIdentifier;
         private int iCount = 0;
         private long lLastSeen;
-        private final int delay = (SignShopConfig.getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
+        private final int delay = (SignShop.getInstance().getSignShopConfig().getMessageCooldown() * 1000 + 1000); // Convert to millis and give it a second
 
-        private Message(String pMessage, PlayerIdentifier player, long pTime) {
+        private Message(String pMessage, PlayerIdentifier playerIdentifier, long pTime) {
             sMessage = pMessage;
-            Player = player;
+            this.playerIdentifier = playerIdentifier;
             lLastSeen = pTime;
         }
 
@@ -133,7 +132,7 @@ public class MessageWorker implements Runnable {
         }
 
         public SignShopPlayer getPlayer() {
-            return new SignShopPlayer(Player);
+           return PlayerCache.getPlayer(playerIdentifier);
         }
 
         public synchronized int getCount() {

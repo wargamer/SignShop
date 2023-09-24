@@ -2,11 +2,13 @@ package org.wargamer2010.signshop.specialops;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
+import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.wargamer2010.signshop.Seller;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.Storage;
+import org.wargamer2010.signshop.player.PlayerCache;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -21,24 +23,23 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         if(!itemUtil.clickedSign(shopSign))
             return false;
         Player player = event.getPlayer();
-        SignShopPlayer ssPlayer = new SignShopPlayer(player);
+        SignShopPlayer ssPlayer = PlayerCache.getPlayer(player);
         Seller seller = Storage.get().getSeller(shopSign.getLocation());
-        String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getLine(0));
-        if(seller == null)
+        String sOperation = signshopUtil.getOperation(((Sign)shopSign.getState()).getSide(Side.FRONT).getLine(0));
+        if (seller == null)
             return false;
-        if(ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShopConfig.getLinkMaterial() || !itemUtil.clickedSign(shopSign))
+        if (ssPlayer.getItemInHand() == null || ssPlayer.getItemInHand().getType() != SignShop.getInstance().getSignShopConfig().getLinkMaterial() || !itemUtil.clickedSign(shopSign))
             return false;
-        if(isSupported(sOperation)) // Can't link a special sign to a special sign
+        if (isSupported(sOperation)) // Can't link a special sign to a special sign
             return false;
 
-        // TODO: May have to consider working with multiple Special sign types at the same time
         // For now, let's support linking/unlinking a single special sign type at a time
         String SignName = null;
         for(Block bTemp : clickedBlocks) {
             if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
-                if(isSupported(signshopUtil.getOperation(sign.getLine(0)))) {
-                    SignName = signshopUtil.getOperation(sign.getLine(0));
+                if(isSupported(signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0)))) {
+                    SignName = signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0));
                 }
             }
         }
@@ -56,19 +57,19 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         boolean bUnlinked = false;
         for(Block bTemp : clickedBlocks) {
             if(currentSigns.contains(bTemp)) {
-                ssPlayer.sendMessage(SignShopConfig.getError(UnlinkedMessage, null));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError(UnlinkedMessage, null));
                 bUnlinked = true;
                 currentSigns.remove(bTemp);
             } else if(itemUtil.clickedSign(bTemp)) {
                 Sign sign = (Sign)bTemp.getState();
-                if(signshopUtil.getOperation(sign.getLine(0)).equals(SignName))
+                if(signshopUtil.getOperation(sign.getSide(Side.FRONT).getLine(0)).equals(SignName))
                     newSigns.add(bTemp);
             }
         }
 
         if (bUnlinked || !newSigns.isEmpty()) {
             if(!seller.isOwner(ssPlayer) && !ssPlayer.isOp()) {
-                ssPlayer.sendMessage(SignShopConfig.getError(NotAllowedMessage, null));
+                ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError(NotAllowedMessage, null));
                 return true;
             }
         }
@@ -101,7 +102,7 @@ public class LinkSpecialSign implements SignShopSpecialOp {
         if(locations.isEmpty())
             return true;
         else {
-            ssPlayer.sendMessage(SignShopConfig.getError(LinkedMessage, null));
+            ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError(LinkedMessage, null));
             seller.addMisc(MiscSetting, locations);
             Storage.get().Save();
         }

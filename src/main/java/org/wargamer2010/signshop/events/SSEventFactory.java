@@ -74,7 +74,7 @@ public class SSEventFactory {
         return new SSExpiredEvent(pExpirable);
     }
 
-    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, SSMoneyEventType type, SSMoneyRequestType pRequestType) {
+    public static SSMoneyTransactionEvent generateMoneyEvent(SignShopArguments ssArgs, SSMoneyEventType type, SSMoneyRequestType pRequestType) {//TODO this seems to be slow(or the running and handleing of it by other classes)
         SSMoneyTransactionEvent event = new SSMoneyTransactionEvent(ssArgs.getPlayer().get(),
                                             Storage.get().getSeller(ssArgs.getSign().get().getLocation()),
                                             ssArgs.getPrice().get(),

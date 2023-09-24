@@ -4,7 +4,7 @@ package org.wargamer2010.signshop.player;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.util.itemUtil;
 
 import java.util.Arrays;
@@ -36,10 +36,11 @@ public class VirtualInventory {
         returnMap.put(isItemsToTake, 1.0d);
         boolean fromOK = hasItems(isBackup);
 
-        if(fromOK) {
+        if (fromOK) {
             returnMap.put(isItemsToTake, 1.0d);
             return returnMap;
-        } else if(!SignShopConfig.getAllowVariableAmounts() && !fromOK) {
+        }
+        else if (!SignShop.getInstance().getSignShopConfig().getAllowVariableAmounts() && !fromOK) {
             returnMap.put(isItemsToTake, 0.0d);
             return returnMap;
         }
@@ -173,7 +174,7 @@ public class VirtualInventory {
     private int findSpace(ItemStack item, Map<Integer, StackWithAmount> lookaside, boolean findEmpty) {
         // 1.9.4 and later extend living entity slots beyond 36, but some of these are read-only.
         // We could use .getStorageContents(), but this breaks 1.8.8 compatibility
-        int length = (inventory.getHolder() instanceof HumanEntity) ? 36 : inventory.getSize();
+        int length = (inventory.getHolder() instanceof HumanEntity) ? 36 : inventory.getSize(); //TODO get rid of calls to getHolder and getItemMeta where possible, due to excessive copying fo the data
         @SuppressWarnings("MismatchedReadAndWriteOfArray") ItemStack[] stacks = Arrays.copyOfRange(inventory.getContents(), 0, length);
 
         if (item == null) {

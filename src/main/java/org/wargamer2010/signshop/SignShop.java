@@ -19,10 +19,7 @@ import org.wargamer2010.signshop.configuration.ColorUtil;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.configuration.Storage;
 import org.wargamer2010.signshop.configuration.configUtil;
-import org.wargamer2010.signshop.listeners.SignShopBlockListener;
-import org.wargamer2010.signshop.listeners.SignShopLoginListener;
-import org.wargamer2010.signshop.listeners.SignShopPlayerListener;
-import org.wargamer2010.signshop.listeners.SignShopServerListener;
+import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
@@ -42,11 +39,13 @@ import java.util.Date;
 import java.util.logging.*;
 
 public class SignShop extends JavaPlugin {
+    private static final int CONFIG_VERSION_DO_NOT_TOUCH = 4;
     public static final int DATA_VERSION = 3;
     private static final Logger logger = Logger.getLogger("Minecraft");
     private static final Logger transactionlogger = Logger.getLogger("SignShop_Transactions");
     public static WorthHandler worthHandler;
     private static SignShop instance;
+    private SignShopConfig signShopConfig;
     //Statics
     private static Storage store;
     private static TimeManager manager = null;
@@ -62,18 +61,34 @@ public class SignShop extends JavaPlugin {
     // Vault
     private Vault vault = null;
 
-    public static void debugMessage(String message){
-        if(SignShopConfig.debugging()){
-            log(message,Level.INFO);
+    public void reload() {
+        signShopConfig = new SignShopConfig();
+    }
+
+
+    public SignShopConfig getSignShopConfig() {
+        return signShopConfig;
+    }
+
+    public void debugTiming(String message, long start, long end) {
+        if (getSignShopConfig().debugging()) {
+            debugMessage(message + " took: " + (end - start) + "ms");
         }
     }
+
+    public void debugMessage(String message) {
+        if (getSignShopConfig().debugging()) {
+            log(message, Level.INFO);
+        }
+    }
+
     public static void log(String message, Level level) {
         if (message != null && !message.trim().isEmpty())
             logger.log(level, ("[SignShop] " + message));
     }
 
-    public static void logTransaction(String customer, String owner, String Operation, String items, String Price) {
-        if (SignShopConfig.getTransactionLog()) {
+    public void logTransaction(String customer, String owner, String Operation, String items, String Price) {
+        if (getSignShopConfig().getTransactionLog()) {
             String fixedItems = (items.isEmpty() ? "none" : items);
             String message = ("Customer: " + customer + ", Owner: " + owner + ", Operation: " + Operation + ", Items: " + fixedItems + ", Price: " + Price);
             transactionlogger.log(Level.INFO, message);
@@ -135,8 +150,8 @@ public class SignShop extends JavaPlugin {
 
         // Backup config if it is an old version
         backupOldConfig();
+        signShopConfig = new SignShopConfig();
 
-        SignShopConfig.init();
         SignShopBooks.init();
         PlayerMetadata.init();
         SignShopItemMeta.init();
@@ -153,7 +168,22 @@ public class SignShop extends JavaPlugin {
         store = Storage.init(new File(this.getDataFolder(), "sellers.yml"));
         manager = new TimeManager(new File(this.getDataFolder(), "timing.yml"));
 
-        if (SignShopConfig.getTransactionLog()) {
+        if (getSignShopConfig().allowCommaDecimalSeparator() == SignShopConfig.CommaDecimalSeparatorState.AUTO) {
+            // Plugin must decide if the comma separators are enabled
+            SignShopConfig.CommaDecimalSeparatorState state;
+            if (store.shopCount() == 0) {
+                log("Comma decimal seperators have been enabled because this server has 0 shops.", Level.INFO);
+                state = SignShopConfig.CommaDecimalSeparatorState.TRUE;
+            }
+            else {
+                log("Comma decimal separators have been disabled because this server has " + store.shopCount() + " shop(s) that may or may not be compatible with the new parser.", Level.INFO);
+                state = SignShopConfig.CommaDecimalSeparatorState.FALSE;
+            }
+            log("This can be changed by modifying 'AllowCommaDecimalSeparator' in the config.", Level.INFO);
+            getSignShopConfig().setAllowCommaDecimalSeparator(state);
+        }
+
+        if (getSignShopConfig().getTransactionLog()) {
             try {
                 FileHandler fh = new FileHandler("plugins/SignShop/Transaction.log", true);
                 TransferFormatter formatter = new TransferFormatter();
@@ -179,7 +209,7 @@ public class SignShop extends JavaPlugin {
             pm.registerEvents(playerListener, this);
             pm.registerEvents(blockListener, this);
 
-            if (SignShopConfig.getDisableEssentialsSigns()) {
+            if (getSignShopConfig().getDisableEssentialsSigns()) {
                 SignShopServerListener SListener = new SignShopServerListener(getServer());
                 pm.registerEvents(SListener, this);
             }
@@ -190,7 +220,7 @@ public class SignShop extends JavaPlugin {
             disableSignShop();
         }
         //Setup worth
-        if (SignShopConfig.getEnablePriceFromWorth()) {
+        if (getSignShopConfig().getEnablePriceFromWorth()) {
             if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
                 worthHandler = new CMIWorthHandler();
                 log("Using worth information from CMI.", Level.INFO);
@@ -204,11 +234,11 @@ public class SignShop extends JavaPlugin {
             }
         }
         //Enable metrics
-        if (SignShopConfig.metricsEnabled()) {
+        if (getSignShopConfig().metricsEnabled()) {
             Metrics metrics = new Metrics(this, B_STATS_ID);
             log("Thank you for enabling metrics!", Level.INFO);
         }
-        if (SignShopConfig.debugging()) {
+        if (getSignShopConfig().debugging()) {
             SignShop.log("Debugging enabled.", Level.INFO);
         }
 
@@ -261,8 +291,10 @@ public class SignShop extends JavaPlugin {
         else
             USE_PERMISSIONS = true;
         Boolean vault_Economy = vault.setupEconomy();
-        if (!vault_Economy)
-            log("Could not hook into Vault's Economy!", Level.WARNING);
+        if (!vault_Economy) {
+            getServer().getPluginManager().registerEvents(new ServerLoadedListener(),this);
+            log("Could not hook into Vault's Economy! Signshop will retry after server is loaded.", Level.WARNING);
+        }
     }
 
     private void setupCommands() {
@@ -295,11 +327,12 @@ public class SignShop extends JavaPlugin {
         pm.registerEvents(new StockChecker(), this);
         pm.registerEvents(new TimedCommandListener(), this);
         pm.registerEvents(new MoneyModifierListener(), this);
+        pm.registerEvents(new SignSidesValidator(),this);
 
         DynmapManager dmm = new DynmapManager();
-        if (SignShopConfig.getEnableDynmapSupport())
+        if (getSignShopConfig().getEnableDynmapSupport())
             pm.registerEvents(dmm, this);
-        if (SignShopConfig.getEnableShopPlotSupport()) {
+        if (getSignShopConfig().getEnableShopPlotSupport()) {
             if (this.getServer().getPluginManager().isPluginEnabled("WorldGuard")) {
                 pm.registerEvents(new WorldGuardChecker(), this);
             }
@@ -313,18 +346,22 @@ public class SignShop extends JavaPlugin {
     }
 
     private void backupOldConfig() {
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.configFilename);
-        File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.configFilename);
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(SignShopConfig.CONFIG_FILENAME);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), SignShopConfig.CONFIG_FILENAME);
 
         if ((ymlThing != null && configFile.exists())
-                && (!ymlThing.isSet("ConfigVersionDoNotTouch") || ymlThing.getInt("ConfigVersionDoNotTouch") != SignShopConfig.getConfigVersionDoNotTouch())) {
+                && (!ymlThing.isSet("ConfigVersionDoNotTouch") || ymlThing.getInt("ConfigVersionDoNotTouch") != CONFIG_VERSION_DO_NOT_TOUCH)) {
 
             SignShop.log("Old config detected, backing it up before modifiying it.", Level.INFO);
             File configBackup = new File(SignShop.getInstance().getDataFolder(), "configBackup" + SSTimeUtil.getDateTimeStamp() + ".yml");
             FileUtil.copy(configFile, configBackup);
-            ymlThing.set("ConfigVersionDoNotTouch", SignShopConfig.getConfigVersionDoNotTouch());
+            ymlThing.set("ConfigVersionDoNotTouch", CONFIG_VERSION_DO_NOT_TOUCH);
             SignShopConfig.saveConfig(ymlThing, configFile);
         }
+    }
+
+    public Vault getVault() {
+        return vault;
     }
 
     private static class TransferFormatter extends Formatter {

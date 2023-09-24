@@ -13,80 +13,89 @@ import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
 import org.wargamer2010.signshop.operations.runCommand;
 import org.wargamer2010.signshop.specialops.*;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.logging.Level;
 
 public class SignShopConfig {
-    public static final String configFilename = "config.yml";
-    private static final String defaultOPPackage = "org.wargamer2010.signshop.operations";
-    private static final Map<String, SignShopOperation> OperationInstances = new LinkedHashMap<>();
-    private static final List<SignShopSpecialOp> SpecialsOps = new LinkedList<>();
-    private static final String baseLanguage = "en_US";
-    private static Map<String, String> OperationAliases;                         // Alias <-> Original
-    private static Map<String, Map<String, HashMap<String, String>>> Messages;
-    private static Map<String, Map<String, String>> Errors;
-    private static List<Material> BlacklistedItems;
-    private static Map<String, HashMap<String, Double>> PriceMultipliers;
-    private static Map<String, List<String>> Commands;
-    private static Map<String, List<String>> DelayedCommands;
-    private static Map<String, Integer> ShopLimits;
-    private static List<LinkableMaterial> LinkableMaterials;
-    private static Map<String, List<String>> Operations = new HashMap<>();
-    private static SignShop instance = null;
-    private static final Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
+    public static final String CONFIG_FILENAME = "config.yml";
+    private final String defaultOPPackage = "org.wargamer2010.signshop.operations";
+    private final Map<String, SignShopOperation> OperationInstances = new LinkedHashMap<>();
+    private final List<SignShopSpecialOp> SpecialsOps = new LinkedList<>();
+    private final String baseLanguage = "en_US";
+    private final Map<String, SignShopOperation> ExternalOperations = new HashMap<>();
+    private List<String> BlacklistedBackOfSignText;
+    private Map<String, String> OperationAliases;                         // Alias <-> Original
+    private Map<String, Map<String, HashMap<String, String>>> Messages;
+    private Map<String, Map<String, String>> Errors;
+    private List<Material> BlacklistedItems;
+    private Map<String, HashMap<String, Double>> PriceMultipliers;
+    private Map<String, List<String>> Commands;
+    private Map<String, List<String>> DelayedCommands;
+    private Map<String, Integer> ShopLimits;
+    private List<LinkableMaterial> LinkableMaterials;
+    private Map<String, List<String>> Operations = new HashMap<>();
+    private SignShop instance = null;
     //Configurables
-    private static FileConfiguration config;
-    private static int ConfigVersionDoNotTouch = 3;
-    private static int MaxSellDistance = 0;
-    private static int MaxShopsPerPerson = 0;
-    private static int ShopCooldown = 0;
-    private static int MessageCooldown = 0;
-    private static int ChunkLoadRadius = 2;
-    private static int MaxChestsPerShop = 100;
-    private static boolean TransactionLog = false;
-    private static boolean Debugging = false;
-    private static boolean MetricsEnabled = true;
-    private static boolean OPOverride = true;
-    private static boolean AllowUnsafeEnchantments = false;
-    private static boolean AllowVariableAmounts = false;
-    private static boolean AllowEnchantedRepair = true;
-    private static boolean DisableEssentialsSigns = true;
-    private static boolean AllowMultiWorldShops = true;
-    private static boolean EnablePermits = false;
-    private static boolean PreventVillagerTrade = false;
-    private static boolean ProtectShopsInCreative = true;
-    private static boolean ProtectShopsFromExplosions = true;
-    private static boolean fixIncompleteOperations = true;
-    private static boolean EnablePriceFromWorth = false;
-    private static boolean EnableDynmapSupport = false;
-    private static boolean EnableTutorialMessages = true;
-    private static boolean EnableShopPlotSupport = true;
-    private static boolean EnableShopOwnerProtection = true;
-    private static boolean EnableAutomaticLock = false;
-    private static boolean UseBlacklistAsWhitelist = false;
-    private static boolean EnableWrittenBookFix = true;
-    private static String ColorCode = "&";
-    private static String ChatPrefix = "&6[SignShop]";
-    private static ChatColor TextColor = ChatColor.YELLOW;
-    private static ChatColor TextColorTwo = ChatColor.DARK_PURPLE;
-    private static ChatColor MoneyColor = ChatColor.GREEN;
-    private static String Languages = "en_US";
-    private static String preferedLanguage = "";
-    private static Material linkMaterial = Material.getMaterial("REDSTONE");
-    private static Material updateMaterial = Material.getMaterial("INK_SAC");
-    private static Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
-    private static Material inspectMaterial = Material.getMaterial("WRITABLE_BOOK");
+    private FileConfiguration config;
+    private int MaxSellDistance = 0;
+    private int MaxShopsPerPerson = 0;
+    private int ShopCooldown = 0;
+    private int MessageCooldown = 0;
+    private int ChunkLoadRadius = 2;
+    private int MaxChestsPerShop = 100;
+    private boolean TransactionLog = false;
+    private boolean Debugging = false;
+    private boolean MetricsEnabled = true;
+    private boolean OPOverride = true;
+    private boolean AllowUnsafeEnchantments = false;
+    private boolean AllowVariableAmounts = false;
+    private boolean AllowEnchantedRepair = true;
+    private boolean DisableEssentialsSigns = true;
+    private boolean AllowMultiWorldShops = true;
+    private boolean EnablePermits = false;
+    private boolean PreventVillagerTrade = false;
+    private boolean ProtectShopsInCreative = true;
+    private boolean ProtectShopsFromExplosions = true;
+    private boolean fixIncompleteOperations = true;
+    private boolean EnablePriceFromWorth = false;
+    private boolean EnableDynmapSupport = false;
+    private boolean EnableTutorialMessages = true;
+    private boolean EnableShopPlotSupport = true;
+    private boolean EnableShopOwnerProtection = true;
+    private boolean EnableAutomaticLock = false;
+    private boolean UseBlacklistAsWhitelist = false;
+    private boolean EnableWrittenBookFix = true;
+    private boolean CachePrices = true;
+    private CommaDecimalSeparatorState AllowCommaDecimalSeparator = CommaDecimalSeparatorState.AUTO;
+    private String ColorCode = "&";
+    private String ChatPrefix = "&6[SignShop]";
+    private ChatColor TextColor = ChatColor.YELLOW;
+    private ChatColor TextColorTwo = ChatColor.DARK_PURPLE;
+    private ChatColor MoneyColor = ChatColor.GREEN;
+    private ChatColor InStockColor = ChatColor.DARK_BLUE;
+    private ChatColor OutOfStockColor = ChatColor.DARK_RED;
+    private String Languages = "en_US";
+    private String preferedLanguage = "";
+    private Material linkMaterial = Material.getMaterial("REDSTONE");
+    private Material updateMaterial = Material.getMaterial("INK_SAC");
+    private Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
+    private Material inspectMaterial = Material.getMaterial("WRITABLE_BOOK");
 
 
-    private SignShopConfig() {
-
+    public SignShopConfig() {
+        signshopUtil.setSignShopConfig(this);
+        itemUtil.setSignShopConfig(this);
+        economyUtil.setSignShopConfig(this);
+        init();
     }
 
-    private static List<String> getOrderedListFromArray(String[] array) {
+    private List<String> getOrderedListFromArray(String[] array) {
         List<String> list = new LinkedList<>();
         for (String item : array)
             if (!list.contains(item.toLowerCase().trim()))
@@ -95,7 +104,7 @@ public class SignShopConfig {
     }
 
 
-    public static void init() {
+    public void init() {
         instance = SignShop.getInstance();
         initConfig();
         updateLanguageFileNames();
@@ -139,7 +148,8 @@ public class SignShopConfig {
         ShopLimits = configUtil.fetchStringIntegerHashMap("limits", config);
         updateFormattedMaterials();
         setupBlacklist();
-        copyFileFromJar("materials.yml",false);
+        setupBackOfSignTextBlacklist();
+        copyFileFromJar("materials.yml", false);
         copyFileFromJar("SSQuickReference.pdf", true);
         setupOperations();
         fixIncompleOperations();
@@ -148,11 +158,11 @@ public class SignShopConfig {
         setupLinkables();
     }
 
-    public static String getPreferredLanguage() {
+    public String getPreferredLanguage() {
         return preferedLanguage;
     }
 
-    private static void setupHooks() {
+    private void setupHooks() {
 
         HookManager.addHook("WorldGuard");
         HookManager.addHook("GriefPrevention");
@@ -165,7 +175,7 @@ public class SignShopConfig {
 
     }
 
-    private static void setupSpecialsOps() {
+    private void setupSpecialsOps() {
         SpecialsOps.add(new ConvertChestshop());
         SpecialsOps.add(new CopySign());
         SpecialsOps.add(new LinkSpecialSign());
@@ -174,13 +184,13 @@ public class SignShopConfig {
         SpecialsOps.add(new ChangeShopItems());
     }
 
-    private static void safeAddLinkeable(String sName, String sGroup) {
+    private void safeAddLinkeable(String sName, String sGroup) {
         if (sName == null || sGroup == null || sName.isEmpty())
             return;
         LinkableMaterials.add(new LinkableMaterial(sName, sGroup));
     }
 
-    private static byte getDataFromString(String dur) {
+    private byte getDataFromString(String dur) {
         try {
             return Byte.parseByte(dur);
         } catch (NumberFormatException ex) {
@@ -188,7 +198,7 @@ public class SignShopConfig {
         }
     }
 
-    private static void setupLinkables() {
+    private void setupLinkables() {
         LinkableMaterials = new ArrayList<>();
         for (Map.Entry<String, String> entry : configUtil.fetchStringStringHashMap("linkableMaterials", config, false).entrySet()) {
             safeAddLinkeable(entry.getKey(), entry.getValue());
@@ -202,19 +212,19 @@ public class SignShopConfig {
      * @param material Material to register
      * @param alias    Alias to use for the given material
      */
-    public static void addLinkable(String material, String alias) {
+    public void addLinkable(String material, String alias) {
         if (material == null || material.isEmpty())
             return;
         safeAddLinkeable(material.toUpperCase(), alias.toLowerCase());
     }
 
-    private static void initConfig() {
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
+    private void initConfig() {
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
         if (ymlThing == null)
             return;
-        configUtil.loadYMLFromJar(ymlThing, configFilename);
+        configUtil.loadYMLFromJar(ymlThing, CONFIG_FILENAME);
 
-        ConfigVersionDoNotTouch = ymlThing.getInt("ConfigVersionDoNotTouch", ConfigVersionDoNotTouch);
+       // ConfigVersionDoNotTouch = ymlThing.getInt("ConfigVersionDoNotTouch", ConfigVersionDoNotTouch);
         MaxSellDistance = ymlThing.getInt("MaxSellDistance", MaxSellDistance);
         TransactionLog = ymlThing.getBoolean("TransactionLog", TransactionLog);
         Debugging = ymlThing.getBoolean("Debugging", Debugging);
@@ -243,6 +253,8 @@ public class SignShopConfig {
         EnableAutomaticLock = ymlThing.getBoolean("EnableAutomaticLock", EnableAutomaticLock);
         UseBlacklistAsWhitelist = ymlThing.getBoolean("UseBlacklistAsWhitelist", UseBlacklistAsWhitelist);
         EnableWrittenBookFix = ymlThing.getBoolean("EnableWrittenBookFix", EnableWrittenBookFix);
+        CachePrices = ymlThing.getBoolean("CachePrices", CachePrices);
+        AllowCommaDecimalSeparator = CommaDecimalSeparatorState.fromName(ymlThing.getString("AllowCommaDecimalSeparator", AllowCommaDecimalSeparator.name));
         ColorCode = ymlThing.getString("ColorCode", ColorCode);
         ChatPrefix = ymlThing.getString("ChatPrefix", ChatPrefix);
         Languages = ymlThing.getString("Languages", Languages);
@@ -252,14 +264,20 @@ public class SignShopConfig {
         destroyMaterial = getMaterial(ymlThing.getString("DestroyMaterial", "GOLDEN_AXE"), Material.getMaterial("GOLDEN_AXE"));
         inspectMaterial = getMaterial(ymlThing.getString("InspectMaterial", "WRITABLE_BOOK"), Material.getMaterial("WRITABLE_BOOK"));
 
-        TextColor = ChatColor.getByChar(ymlThing.getString("ItemColor", "e").replace(ColorCode,""));
+        TextColor = ChatColor.getByChar(ymlThing.getString("ItemColor", "e").replace(ColorCode, ""));
         if (TextColor == null) TextColor = ChatColor.YELLOW;
 
-        TextColorTwo = ChatColor.getByChar(ymlThing.getString("ItemColorTwo", "5").replace(ColorCode,""));
+        TextColorTwo = ChatColor.getByChar(ymlThing.getString("ItemColorTwo", "5").replace(ColorCode, ""));
         if (TextColorTwo == null) TextColorTwo = ChatColor.DARK_PURPLE;
 
-        MoneyColor = ChatColor.getByChar(ymlThing.getString("MoneyColor", "a").replace(ColorCode,""));
+        MoneyColor = ChatColor.getByChar(ymlThing.getString("MoneyColor", "a").replace(ColorCode, ""));
         if (MoneyColor == null) MoneyColor = ChatColor.GREEN;
+
+        InStockColor = ChatColor.getByChar(ymlThing.getString("InStockColor", "1").replace(ColorCode, ""));
+        if (InStockColor == null) InStockColor = ChatColor.DARK_BLUE;
+
+        OutOfStockColor = ChatColor.getByChar(ymlThing.getString("OutOfStockColor", "4").replace(ColorCode, ""));
+        if (OutOfStockColor == null) OutOfStockColor = ChatColor.DARK_RED;
 
 
         // Sanity check
@@ -269,7 +287,7 @@ public class SignShopConfig {
         config = ymlThing;
     }
 
-    private static Material getMaterial(String mat, Material defaultmat) {
+    private Material getMaterial(String mat, Material defaultmat) {
         String name = mat.toUpperCase();
         Material temp = Material.getMaterial(name);
         if (temp == null) {
@@ -285,9 +303,9 @@ public class SignShopConfig {
         return temp;
     }
 
-    public static void updateConfigMaterials(String name) {
-        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(configFilename);
-        File configFile = new File(SignShop.getInstance().getDataFolder(), configFilename);
+    public void updateConfigMaterials(String name) {
+        FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
+        File configFile = new File(SignShop.getInstance().getDataFolder(), CONFIG_FILENAME);
         if (name.equals("INK_SACK") && ymlThing.getString("UpdateMaterial").equalsIgnoreCase("INK_SACK")) {
             ymlThing.set("UpdateMaterial", "ink_sac");
             SignShop.log("UpdateMaterial changed successfully from ink_sack to ink_sac in the config.yml", Level.INFO);
@@ -304,34 +322,36 @@ public class SignShopConfig {
     public static void saveConfig(FileConfiguration ymlThing, File file) {
         try {
             ymlThing.save(file);
-            configUtil.loadYMLFromJar(ymlThing, configFilename);
+            configUtil.loadYMLFromJar(ymlThing, CONFIG_FILENAME);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
-    private static void setupOperations() {
+    private void setupOperations() {
         setupOperations(configUtil.fetchStringStringHashMap("signs", config));
     }
 
-    public static void setupOperations(Map<String, String> allSignOperations) {
+    public void setupOperations(Map<String, String> allSignOperations) {
         setupOperations(allSignOperations, defaultOPPackage);
     }
 
-    private static Object getInstance(String fullClassPath) {
+    private Object getInstance(String fullClassPath) {
         try {
             if (ExternalOperations.containsKey(fullClassPath)) {
                 return ExternalOperations.get(fullClassPath);
             }
             Class<?> aclass = Class.forName(fullClassPath);
-            //noinspection deprecation
-            return aclass.newInstance();
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException notfound) {
-            return null;
+
+            return aclass.getDeclaredConstructor().newInstance();
+        } catch (ClassNotFoundException | InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException ignored) {
+            // It failed so the operation or classpath must be invalid.
         }
+
+        return null;
     }
 
-    public static void setupOperations(Map<String, String> allSignOperations, String packageName) {
+    public void setupOperations(Map<String, String> allSignOperations, String packageName) {
         if (Operations == null)
             Operations = new HashMap<>();
 
@@ -351,7 +371,7 @@ public class SignShopConfig {
                 }
 
                 if (opinstance instanceof SignShopOperation) {
-                    SignShopConfig.OperationInstances.put(op.trim(), (SignShopOperation) opinstance);
+                    OperationInstances.put(op.trim(), (SignShopOperation) opinstance);
                     tempCheckedSignOperation.add(tempOperationString.trim());
                 }
                 else {
@@ -365,10 +385,10 @@ public class SignShopConfig {
         List<String> aLanguages = getOrderedListFromArray(Languages.split(","));
         aLanguages.remove("english");
 
-        SignShopConfig.OperationAliases = new HashMap<>();
+        OperationAliases = new HashMap<>();
 
         for (String language : aLanguages) {
-            String filename = (toLanguageCase(language)+ ".yml");
+            String filename = (toLanguageCase(language) + ".yml");
             File languageFile = new File(instance.getDataFolder(), filename);
             if (languageFile.exists()) {
                 FileConfiguration ymlThing = new YamlConfiguration();
@@ -380,7 +400,7 @@ public class SignShopConfig {
                 HashMap<String, String> tempSignAliases = configUtil.fetchStringStringHashMap("signs", ymlThing);
                 for (Map.Entry<String, String> alias : tempSignAliases.entrySet()) {
                     if (Operations.containsKey(alias.getValue().toLowerCase())) {
-                        SignShopConfig.OperationAliases.put(alias.getKey().toLowerCase(), alias.getValue().toLowerCase());
+                        OperationAliases.put(alias.getKey().toLowerCase(), alias.getValue().toLowerCase());
                     }
                     else {
                         SignShop.log("Could not find " + alias.getValue() + " to alias as " + alias.getKey(), Level.WARNING);
@@ -391,11 +411,11 @@ public class SignShopConfig {
         }
     }
 
-    private static String opListToString(List<String> operations) {
+    private String opListToString(List<String> operations) {
         return signshopUtil.implode(operations.toArray(new String[0]), ",");
     }
 
-    private static String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
+    private String fetchCaseCorrectedKey(Map<String, String> map, String lowercased) {
         for (Map.Entry<String, String> entry : map.entrySet()) {
             if (entry.getKey().equalsIgnoreCase(lowercased))
                 return entry.getKey();
@@ -403,13 +423,13 @@ public class SignShopConfig {
         return "";
     }
 
-    private static void fixIncompleOperations() {
+    private void fixIncompleOperations() {
         if (!fixIncompleteOperations)
             return;
         HashMap<String, String> tempSignOperations = configUtil.fetchStringStringHashMap("signs", config, true);
         boolean changedSomething = false;
         for (Map.Entry<String, List<String>> entry : Operations.entrySet()) {
-            if (SignShopConfig.Commands.containsKey(entry.getKey().toLowerCase())) {
+            if (Commands.containsKey(entry.getKey().toLowerCase())) {
                 List<SignShopOperationListItem> tempList = signshopUtil.getSignShopOps(entry.getValue());
                 boolean found = false;
                 for (SignShopOperationListItem tempOp : tempList)
@@ -430,10 +450,10 @@ public class SignShopConfig {
             }
         }
         if (changedSomething)
-            configUtil.loadYMLFromJar(config, configFilename);
+            configUtil.loadYMLFromJar(config, CONFIG_FILENAME);
     }
 
-    private static void closeStream(Closeable in) {
+    private void closeStream(Closeable in) {
         if (in == null)
             return;
         try {
@@ -443,7 +463,7 @@ public class SignShopConfig {
         }
     }
 
-    private static void copyFileFromJar(String filename, Boolean delete) {
+    private void copyFileFromJar(String filename, Boolean delete) {
         InputStream in = SignShopConfig.class.getResourceAsStream("/" + filename);
         File file = new File(instance.getDataFolder(), filename);
         OutputStream os = null;
@@ -474,9 +494,9 @@ public class SignShopConfig {
         closeStream(os);
     }
 
-    public static String getError(String sType, Map<String, String> messageParts) {
-        Map<String, String> localisedError = Errors.get(SignShopConfig.preferedLanguage);
-        Map<String, String> defaultError = Errors.get(SignShopConfig.baseLanguage);
+    public String getError(String sType, Map<String, String> messageParts) {
+        Map<String, String> localisedError = Errors.get(preferedLanguage);
+        Map<String, String> defaultError = Errors.get(baseLanguage);
 
         String error;
         if (!localisedError.containsKey(sType) || localisedError.get(sType) == null) {
@@ -487,12 +507,13 @@ public class SignShopConfig {
         }
         else
             error = localisedError.get(sType);
-        return fillInBlanks(error, messageParts);
+        String coloredError = ChatColor.translateAlternateColorCodes(getColorCode(), error);
+        return fillInBlanks(coloredError, messageParts);
     }
 
-    public static String getMessage(String sType, String pOperation, Map<String, String> messageParts) {
-        Map<String, HashMap<String, String>> localisedMessage = Messages.get(SignShopConfig.preferedLanguage);
-        Map<String, HashMap<String, String>> defaultMessage = Messages.get(SignShopConfig.baseLanguage);
+    public String getMessage(String sType, String pOperation, Map<String, String> messageParts) {
+        Map<String, HashMap<String, String>> localisedMessage = Messages.get(preferedLanguage);
+        Map<String, HashMap<String, String>> defaultMessage = Messages.get(baseLanguage);
 
         String sOperation = pOperation;
         if (OperationAliases.containsKey(sOperation))
@@ -509,10 +530,11 @@ public class SignShopConfig {
         else
             message = localisedMessage.get(sType).get(sOperation);
 
-        return fillInBlanks(message, messageParts);
+        String coloredMessage = ChatColor.translateAlternateColorCodes(getColorCode(), message);
+        return fillInBlanks(coloredMessage, messageParts);
     }
 
-    public static List<String> getBlocks(String pOp) {
+    public List<String> getBlocks(String pOp) {
         String op = pOp;
         if (OperationAliases.containsKey(op))
             op = OperationAliases.get(op);
@@ -523,11 +545,11 @@ public class SignShopConfig {
             return new LinkedList<>();
     }
 
-    public static Collection<String> getOperations() {
+    public Collection<String> getOperations() {
         return Collections.unmodifiableCollection(Operations.keySet());
     }
 
-    public static Collection<String> getAliases(String op) {
+    public Collection<String> getAliases(String op) {
         Collection<String> aliases = new LinkedList<>();
         if (Languages.contains(baseLanguage))
             aliases.add(op); // If the baseLanguage is explicitly requested, we'll add the english OP as an alias
@@ -538,11 +560,11 @@ public class SignShopConfig {
         return aliases;
     }
 
-    public static void registerExternalOperation(SignShopOperation signShopOperation) {
+    public void registerExternalOperation(SignShopOperation signShopOperation) {
         ExternalOperations.put(signShopOperation.getClass().getName(), signShopOperation);
     }
 
-    public static boolean registerOperation(String sName, List<String> blocks) {
+    public boolean registerOperation(String sName, List<String> blocks) {
         if (sName != null && blocks != null && !blocks.isEmpty()) {
             Operations.put(sName, blocks);
             return true;
@@ -550,11 +572,11 @@ public class SignShopConfig {
         return false;
     }
 
-    public static boolean registerMessage(String type, String shop, String message) {
-        return registerMessage(SignShopConfig.baseLanguage, type, shop, message);
+    public boolean registerMessage(String type, String shop, String message) {
+        return registerMessage(baseLanguage, type, shop, message);
     }
 
-    public static boolean registerMessage(String language, String type, String shop, String message) {
+    public boolean registerMessage(String language, String type, String shop, String message) {
         if (Messages.containsKey(language) && Messages.get(language).containsKey(type)) {
             HashMap<String, String> temp = Messages.get(language).get(type);
             temp.put(shop, message);
@@ -565,11 +587,11 @@ public class SignShopConfig {
         }
     }
 
-    public static boolean registerMessages(String type, Map<String, String> messagesByShop) {
-        return registerMessages(SignShopConfig.baseLanguage, type, messagesByShop);
+    public boolean registerMessages(String type, Map<String, String> messagesByShop) {
+        return registerMessages(baseLanguage, type, messagesByShop);
     }
 
-    public static boolean registerMessages(String language, String type, Map<String, String> messagesByShop) {
+    public boolean registerMessages(String language, String type, Map<String, String> messagesByShop) {
         if (Messages.containsKey(language) && Messages.get(language).containsKey(type)) {
             HashMap<String, String> temp = Messages.get(language).get(type);
             temp.putAll(messagesByShop);
@@ -580,11 +602,11 @@ public class SignShopConfig {
         }
     }
 
-    public static boolean registerErrorMessage(String type, String message) {
-        return registerErrorMessage(SignShopConfig.baseLanguage, type, message);
+    public boolean registerErrorMessage(String type, String message) {
+        return registerErrorMessage(baseLanguage, type, message);
     }
 
-    public static boolean registerErrorMessage(String language, String type, String message) {
+    public boolean registerErrorMessage(String language, String type, String message) {
         if (Messages.containsKey(language)) {
             Map<String, String> temp = Errors.get(language);
             temp.put(type, message);
@@ -595,11 +617,11 @@ public class SignShopConfig {
         }
     }
 
-    public static boolean registerErrorMessages(Map<String, String> messagesByType) {
-        return registerErrorMessages(SignShopConfig.baseLanguage, messagesByType);
+    public boolean registerErrorMessages(Map<String, String> messagesByType) {
+        return registerErrorMessages(baseLanguage, messagesByType);
     }
 
-    public static boolean registerErrorMessages(String language, Map<String, String> messagesByType) {
+    public boolean registerErrorMessages(String language, Map<String, String> messagesByType) {
         if (Messages.containsKey(language)) {
             Errors.get(language).putAll(messagesByType);
             return true;
@@ -609,7 +631,7 @@ public class SignShopConfig {
         }
     }
 
-    public static String fillInBlanks(String pMessage, Map<String, String> messageParts) {
+    public String fillInBlanks(String pMessage, Map<String, String> messageParts) {
         String message = pMessage;
 
         if (messageParts == null)
@@ -626,7 +648,7 @@ public class SignShopConfig {
         return message;
     }
 
-    private static void setupBlacklist() {
+    private void setupBlacklist() {
         List<String> tempList = config.getStringList("Blacklisted_items");
         BlacklistedItems = new LinkedList<>();
         for (String item : tempList) {
@@ -638,15 +660,24 @@ public class SignShopConfig {
         }
     }
 
-    public static Boolean isItemOnBlacklist(Material mat) {
+    public Boolean isItemOnBlacklist(Material mat) {
         return (
-                (SignShopConfig.BlacklistedItems.contains(mat) && !SignShopConfig.getUseBlacklistAsWhitelist())
+                (BlacklistedItems.contains(mat) && !getUseBlacklistAsWhitelist())
                         ||
-                        (!SignShopConfig.BlacklistedItems.contains(mat) && SignShopConfig.getUseBlacklistAsWhitelist())
+                        (!BlacklistedItems.contains(mat) && getUseBlacklistAsWhitelist())
         );
     }
 
-    public static ItemStack isAnyItemOnBlacklist(ItemStack[] stacks) {
+    private void setupBackOfSignTextBlacklist() {
+        BlacklistedBackOfSignText = new ArrayList<>();
+        config.getStringList("BlacklistedBackOfSignText").forEach(s -> BlacklistedBackOfSignText.add(ChatColor.stripColor(s.toLowerCase())));
+    }
+
+    public Boolean stringIsOnBackOfSignTextBlacklist(String string){
+        return BlacklistedBackOfSignText.contains(string);
+    }
+
+    public ItemStack isAnyItemOnBlacklist(ItemStack[] stacks) {
         if (stacks == null)
             return null;
         for (ItemStack single : stacks) {
@@ -659,210 +690,246 @@ public class SignShopConfig {
         return null;
     }
 
-    public static int getMaxChestsPerShop() {
+    public int getMaxChestsPerShop() {
         return MaxChestsPerShop;
     }
 
-    public static Boolean ExceedsMaxChestsPerShop(int currentAmountOfChests) {
+    public Boolean ExceedsMaxChestsPerShop(int currentAmountOfChests) {
         return MaxChestsPerShop != 0 && currentAmountOfChests > MaxChestsPerShop;
     }
 
-    public static Map<String, SignShopOperation> getOperationInstances() {
+    public Map<String, SignShopOperation> getOperationInstances() {
         return Collections.unmodifiableMap(OperationInstances);
     }
 
-    public static Map<String, HashMap<String, Double>> getPriceMultipliers() {
+    public Map<String, HashMap<String, Double>> getPriceMultipliers() {
         return Collections.unmodifiableMap(PriceMultipliers);
     }
 
-    public static Map<String, List<String>> getCommands() {
+    public Map<String, List<String>> getCommands() {
         return Collections.unmodifiableMap(Commands);
     }
 
-    public static Map<String, List<String>> getDelayedCommands() {
+    public Map<String, List<String>> getDelayedCommands() {
         return Collections.unmodifiableMap(DelayedCommands);
     }
 
-    public static Map<String, Integer> getShopLimits() {
+    public Map<String, Integer> getShopLimits() {
         return Collections.unmodifiableMap(ShopLimits);
     }
 
-    public static List<LinkableMaterial> getLinkableMaterials() {
+    public List<LinkableMaterial> getLinkableMaterials() {
         return Collections.unmodifiableList(LinkableMaterials);
     }
 
-    public static List<SignShopSpecialOp> getSpecialOps() {
+    public List<SignShopSpecialOp> getSpecialOps() {
         return Collections.unmodifiableList(SpecialsOps);
     }
 
-    public static int getConfigVersionDoNotTouch() {
-        return ConfigVersionDoNotTouch;
-    }
-
-    public static int getMaxSellDistance() {
+    public int getMaxSellDistance() {
         return MaxSellDistance;
     }
 
-    public static int getMaxShopsPerPerson() {
+    public int getMaxShopsPerPerson() {
         return MaxShopsPerPerson;
     }
 
-    public static int getShopCooldown() {
+    public int getShopCooldown() {
         return ShopCooldown;
     }
 
-    public static int getChunkLoadRadius() {
+    public int getChunkLoadRadius() {
         return ChunkLoadRadius;
     }
 
-    public static int getMessageCooldown() {
+    public int getMessageCooldown() {
         return MessageCooldown;
     }
 
-    public static boolean getOPOverride() {
+    public boolean getOPOverride() {
         return OPOverride;
     }
 
-    public static boolean getAllowVariableAmounts() {
+    public boolean getAllowVariableAmounts() {
         return AllowVariableAmounts;
     }
 
-    public static boolean getAllowEnchantedRepair() {
+    public boolean getAllowEnchantedRepair() {
         return AllowEnchantedRepair;
     }
 
-    public static boolean getAllowUnsafeEnchantments() {
+    public boolean getAllowUnsafeEnchantments() {
         return AllowUnsafeEnchantments;
     }
 
-    public static boolean getAllowMultiWorldShops() {
+    public boolean getAllowMultiWorldShops() {
         return AllowMultiWorldShops;
     }
 
-    public static boolean getEnablePermits() {
+    public boolean getEnablePermits() {
         return EnablePermits;
     }
 
-    public static boolean getPreventVillagerTrade() {
+    public boolean getPreventVillagerTrade() {
         return PreventVillagerTrade;
     }
 
-    public static boolean getProtectShopsInCreative() {
+    public boolean getProtectShopsInCreative() {
         return ProtectShopsInCreative;
     }
 
-    public static boolean getProtectShopsFromExplosions() {
+    public boolean getProtectShopsFromExplosions() {
         return ProtectShopsFromExplosions;
     }
 
-    public static boolean getTransactionLog() {
+    public boolean getTransactionLog() {
         return TransactionLog;
     }
 
-    public static boolean getDisableEssentialsSigns() {
+    public boolean getDisableEssentialsSigns() {
         return DisableEssentialsSigns;
     }
 
-    public static boolean getEnablePriceFromWorth() {
+    public boolean getEnablePriceFromWorth() {
         return EnablePriceFromWorth;
     }
 
-    public static boolean getEnableDynmapSupport() {
+    public boolean getEnableDynmapSupport() {
         return EnableDynmapSupport;
     }
 
-    public static boolean getEnableTutorialMessages() {
+    public boolean getEnableTutorialMessages() {
         return EnableTutorialMessages;
     }
 
-    public static boolean getEnableShopPlotSupport() {
+    public boolean getEnableShopPlotSupport() {
         return EnableShopPlotSupport;
     }
 
-    public static boolean getEnableShopOwnerProtection() {
+    public boolean getEnableShopOwnerProtection() {
         return EnableShopOwnerProtection;
     }
 
 
-    public static boolean getEnableAutomaticLock() {
+    public boolean getEnableAutomaticLock() {
         return EnableAutomaticLock;
     }
 
-    public static boolean getUseBlacklistAsWhitelist() {
+    public boolean getUseBlacklistAsWhitelist() {
         return UseBlacklistAsWhitelist;
     }
 
-    public static boolean getEnableWrittenBookFix() {
+    public boolean getEnableWrittenBookFix() {
         return EnableWrittenBookFix;
     }
 
-    public static boolean debugging() {
+    public boolean debugging() {
         return Debugging;
     }
 
-    public static boolean metricsEnabled() {
+    public boolean metricsEnabled() {
         return MetricsEnabled;
     }
 
-    public static boolean isOPMaterial(Material check) {
+    public boolean isOPMaterial(Material check) {
         return (check == updateMaterial || check == linkMaterial);
     }
 
-    public static boolean isInspectionMaterial(ItemStack item) {
-        return (item !=null && item.getType() == inspectMaterial);
+    public boolean isLinkMaterial(Material material) {
+        return material == linkMaterial;
     }
 
-    public static Material getLinkMaterial() {
+    public boolean isInspectionMaterial(ItemStack item) {
+        return (item != null && item.getType() == inspectMaterial);
+    }
+
+    public CommaDecimalSeparatorState allowCommaDecimalSeparator() {
+        return AllowCommaDecimalSeparator;
+    }
+
+    public void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state, boolean doSave) {
+        AllowCommaDecimalSeparator = state;
+
+        if (doSave) {
+            FileConfiguration ymlThing = configUtil.loadYMLFromPluginFolder(CONFIG_FILENAME);
+            File configFile = new File(SignShop.getInstance().getDataFolder(), CONFIG_FILENAME);
+            ymlThing.set("AllowCommaDecimalSeparator", state.name);
+            saveConfig(ymlThing, configFile);
+        }
+    }
+
+    public void setAllowCommaDecimalSeparator(CommaDecimalSeparatorState state) {
+        setAllowCommaDecimalSeparator(state, true);
+    }
+
+    public boolean cachePrices() {
+        return CachePrices;
+    }
+
+    public void setCachePrices(boolean value) {
+        CachePrices = value;
+    }
+
+    public Material getLinkMaterial() {
         return linkMaterial;
     }
 
-    public static Material getUpdateMaterial() {
+    public Material getUpdateMaterial() {
         return updateMaterial;
     }
 
-    public static Material getDestroyMaterial() {
+    public Material getDestroyMaterial() {
         return destroyMaterial;
     }
 
-    public static String getChatPrefix() {
-        return ChatPrefix;
+    public String getChatPrefix() {
+        return ChatColor.translateAlternateColorCodes(getColorCode(), ChatPrefix);
     }
 
-    public static char getColorCode() {
+    public char getColorCode() {
         char[] code = ColorCode.toCharArray();
         return code[0];
     }
-    public static ChatColor getTextColor() {
+
+    public ChatColor getTextColor() {
         return TextColor;
     }
 
-    public static ChatColor getTextColorTwo() {
+    public ChatColor getTextColorTwo() {
         return TextColorTwo;
     }
 
-    public static ChatColor getMoneyColor() {
+    public ChatColor getMoneyColor() {
         return MoneyColor;
     }
 
-    private static String toLanguageCase(String language){
+    public ChatColor getInStockColor() {
+        return InStockColor;
+    }
+
+    public ChatColor getOutOfStockColor() {
+        return OutOfStockColor;
+    }
+
+    private String toLanguageCase(String language) {
         String[] languageParts = language.split("_");
-        if (languageParts.length ==2){
-            return (languageParts[0].toLowerCase()+"_"+languageParts[1].toUpperCase());
+        if (languageParts.length == 2) {
+            return (languageParts[0].toLowerCase() + "_" + languageParts[1].toUpperCase());
         }
         return language;
     }
 
-    private static String createAdjustedLanguages() {
+    private String createAdjustedLanguages() {
         String adjustedLanguages = Languages;
         for (LanguageSpelling languageSpelling : LanguageSpelling.values()) {
             adjustedLanguages = adjustedLanguages.replace(languageSpelling.oldName, languageSpelling.localeName);
         }
-        adjustedLanguages = adjustedLanguages.replace("en_US","config");
+        adjustedLanguages = adjustedLanguages.replace("en_US", "config");
         return adjustedLanguages;
 
     }
 
-    private static void updateLanguageFileNames() {
+    private void updateLanguageFileNames() {
         for (LanguageSpelling languageSpelling : LanguageSpelling.values()) {
             File oldLangFile = new File(instance.getDataFolder(), languageSpelling.oldName + ".yml");
             if (oldLangFile.exists()) {
@@ -873,8 +940,7 @@ public class SignShopConfig {
         }
     }
 
-
-    private static void updateFormattedMaterials() {
+    private void updateFormattedMaterials() {
         File file = new File(SignShop.getInstance().getDataFolder(), "materials.yml");
         FileConfiguration configuration = YamlConfiguration.loadConfiguration(file);
         ConfigurationSection section = configuration.getConfigurationSection("materials");
@@ -882,8 +948,39 @@ public class SignShopConfig {
             for (String matString : section.getKeys(false)) {
                 Material matKey = Material.matchMaterial(matString);
                 String customName = section.getString(matString);
-                itemUtil.updateFormattedMaterial(matKey, ChatColor.translateAlternateColorCodes(SignShopConfig.getColorCode(), customName));
+                itemUtil.updateFormattedMaterial(matKey, ChatColor.translateAlternateColorCodes(getColorCode(), customName));
             }
+        }
+    }
+
+
+    public enum CommaDecimalSeparatorState {
+        AUTO("auto", false),
+        FALSE("false", false),
+        TRUE("true", true);
+
+        private final String name;
+        private final boolean permitted;
+
+        CommaDecimalSeparatorState(String name, boolean permitted) {
+            this.name = name;
+            this.permitted = permitted;
+        }
+
+        public static CommaDecimalSeparatorState fromName(String name) {
+            for (CommaDecimalSeparatorState state : CommaDecimalSeparatorState.values()) {
+                if (state.name.equalsIgnoreCase(name)) return state;
+            }
+
+            return CommaDecimalSeparatorState.AUTO;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public boolean isPermitted() {
+            return permitted;
         }
     }
 

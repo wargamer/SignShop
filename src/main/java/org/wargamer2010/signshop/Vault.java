@@ -113,7 +113,7 @@ public class Vault {
 
     }
 
-    Boolean setupEconomy() {
+    public Boolean setupEconomy() {
         if (!isVaultFound())
             return false;
         RegisteredServiceProvider<Economy> economyProvider = server.getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
