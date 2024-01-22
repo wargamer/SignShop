@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "beechen button"
+  ACACIA_DOOR: "beechen door"
+  ACACIA_FENCE: "beechen hedge"
+  ACACIA_FENCE_GATE: "beechen hedge gate"
+  ACACIA_HANGING_SIGN: "beechen hung wallsign"
+  ACACIA_LEAVES: "beech leaves"
+  ACACIA_LOG: "beechen log"
+  ACACIA_PLANKS: "beechen timber"
+  ACACIA_PRESSURE_PLATE: "beechen pressure plate"
+  ACACIA_SAPLING: "beech sapling"
+  ACACIA_SIGN: "beechen sign"
+  ACACIA_SLAB: "beechen slab"
+  ACACIA_STAIRS: "beechen stairs"
+  ACACIA_TRAPDOOR: "beechen hatch"
+  ACACIA_WALL_HANGING_SIGN: "beechen hung wallsign"
+  ACACIA_WALL_SIGN: "beechen hung sign"
+  ACACIA_WOOD: "beechen log"
+  ACTIVATOR_RAIL: "sparking iron-rut"
+  AIR: "air"
+  ALLIUM: "saffron"
+  AMETHYST_BLOCK: "block of amethyst"
+  AMETHYST_CLUSTER: "amethyst clust'r"
+  ANCIENT_DEBRIS: "olde debris"
+  ANDESITE: "grainstone"
+  ANDESITE_SLAB: "grainstone slab"
+  ANDESITE_STAIRS: "grainstone stairs"
+  ANDESITE_WALL: "grainstone hedge"
+  ANVIL: "anvil"
+  ATTACHED_MELON_STEM: "attach'd melon stem"
+  ATTACHED_PUMPKIN_STEM: "attach'd pumpion stem"
+  AZALEA: "shrub"
+  AZALEA_LEAVES: "shrub leaves"
+  AZURE_BLUET: "harebell"
+  BAMBOO: "bamboo"
+  BAMBOO_BLOCK: "block of bamboo"
+  BAMBOO_BUTTON: "bamboo button"
+  BAMBOO_DOOR: "bamboo door"
+  BAMBOO_FENCE: "bamboo hedge"
+  BAMBOO_FENCE_GATE: "bamboo hedge gate"
+  BAMBOO_HANGING_SIGN: "bamboo hung sign"
+  BAMBOO_MOSAIC: "mosaic'd bamboo"
+  BAMBOO_MOSAIC_SLAB: "mosaic'd bamboo slab"
+  BAMBOO_MOSAIC_STAIRS: "mosaic'd bamboo stairs"
+  BAMBOO_PLANKS: "bamboo timber"
+  BAMBOO_PRESSURE_PLATE: "bamboo pressure plate"
+  BAMBOO_SAPLING: "bamboo shoot"
+  BAMBOO_SIGN: "bamboo sign"
+  BAMBOO_SLAB: "bamboo slab"
+  BAMBOO_STAIRS: "bamboo stairs"
+  BAMBOO_TRAPDOOR: "bamboo hatch"
+  BAMBOO_WALL_HANGING_SIGN: "bamboo hung wallsign"
+  BAMBOO_WALL_SIGN: "bamboo wallsign"
+  BANNER_BASE_BLACK: "entirely black plain"
+  BANNER_BASE_BLUE: "entirely blue plain"
+  BANNER_BASE_BROWN: "entirely brown plain"
+  BANNER_BASE_CYAN: "entirely cyan plain"
+  BANNER_BASE_GRAY: "entirely grey plain"
+  BANNER_BASE_GREEN: "entirely green plain"
+  BANNER_BASE_LIGHT_BLUE: "entirely whey plain"
+  BANNER_BASE_LIGHT_GRAY: "entirely pale grey plain"
+  BANNER_BASE_LIME: "entirely lime plain"
+  BANNER_BASE_MAGENTA: "entirely magenta plain"
+  BANNER_BASE_ORANGE: "entirely tawny plain"
+  BANNER_BASE_PINK: "entirely pink plain"
+  BANNER_BASE_PURPLE: "entirely purple plain"
+  BANNER_BASE_RED: "entirely crimson plain"
+  BANNER_BASE_WHITE: "entirely white plain"
+  BANNER_BASE_YELLOW: "entirely yellow plain"
+  BANNER_BORDER_BLACK: "black bordure"
+  BANNER_BORDER_BLUE: "blue bordure"
+  BANNER_BORDER_BROWN: "brown bordure"
+  BANNER_BORDER_CYAN: "turquoise bordure"
+  BANNER_BORDER_GRAY: "grey bordure"
+  BANNER_BORDER_GREEN: "green bordure"
+  BANNER_BORDER_LIGHT_BLUE: "whey bordure"
+  BANNER_BORDER_LIGHT_GRAY: "pale grey bordure"
+  BANNER_BORDER_LIME: "lincoln bordure"
+  BANNER_BORDER_MAGENTA: "mulberry bordure"
+  BANNER_BORDER_ORANGE: "tawny bordure"
+  BANNER_BORDER_PINK: "carnation bordure"
+  BANNER_BORDER_PURPLE: "purple bordure"
+  BANNER_BORDER_RED: "red bordure"
+  BANNER_BORDER_WHITE: "white bordure"
+  BANNER_BORDER_YELLOW: "yellow bordure"
+  BANNER_BRICKS_BLACK: "black field masoned"
+  BANNER_BRICKS_BLUE: "blue field masoned"
+  BANNER_BRICKS_BROWN: "brown field masoned"
+  BANNER_BRICKS_CYAN: "turquoise field masoned"
+  BANNER_BRICKS_GRAY: "grey field masoned"
+  BANNER_BRICKS_GREEN: "green field masoned"
+  BANNER_BRICKS_LIGHT_BLUE: "whey field masoned"
+  BANNER_BRICKS_LIGHT_GRAY: "pale grey field masoned"
+  BANNER_BRICKS_LIME: "lincoln field masoned"
+  BANNER_BRICKS_MAGENTA: "mulberry field masoned"
+  BANNER_BRICKS_ORANGE: "tawny field masoned"
+  BANNER_BRICKS_PINK: "carnation field masoned"
+  BANNER_BRICKS_PURPLE: "purple field masoned"
+  BANNER_BRICKS_RED: "red field masoned"
+  BANNER_BRICKS_WHITE: "white field masoned"
+  BANNER_BRICKS_YELLOW: "yellow field masoned"
+  BANNER_CIRCLE_BLACK: "black roundel"
+  BANNER_CIRCLE_BLUE: "blue roundel"
+  BANNER_CIRCLE_BROWN: "brown roundel"
+  BANNER_CIRCLE_CYAN: "turquoise roundel"
+  BANNER_CIRCLE_GRAY: "grey roundel"
+  BANNER_CIRCLE_GREEN: "green roundel"
+  BANNER_CIRCLE_LIGHT_BLUE: "whey roundel"
+  BANNER_CIRCLE_LIGHT_GRAY: "pale grey roundel"
+  BANNER_CIRCLE_LIME: "lincoln roundel"
+  BANNER_CIRCLE_MAGENTA: "mulberry roundel"
+  BANNER_CIRCLE_ORANGE: "tawny roundel"
+  BANNER_CIRCLE_PINK: "carnation roundel"
+  BANNER_CIRCLE_PURPLE: "purple roundel"
+  BANNER_CIRCLE_RED: "red roundel"
+  BANNER_CIRCLE_WHITE: "white roundel"
+  BANNER_CIRCLE_YELLOW: "yellow roundel"
+  BANNER_CREEPER_BLACK: "black creeper charge"
+  BANNER_CREEPER_BLUE: "blue creeper charge"
+  BANNER_CREEPER_BROWN: "brown creeper charge"
+  BANNER_CREEPER_CYAN: "turquoise creeper charge"
+  BANNER_CREEPER_GRAY: "grey creeper charge"
+  BANNER_CREEPER_GREEN: "green creeper charge"
+  BANNER_CREEPER_LIGHT_BLUE: "whey creeper charge"
+  BANNER_CREEPER_LIGHT_GRAY: "pale grey creeper charge"
+  BANNER_CREEPER_LIME: "lincoln creeper charge"
+  BANNER_CREEPER_MAGENTA: "mulberry creeper charge"
+  BANNER_CREEPER_ORANGE: "tawny creeper charge"
+  BANNER_CREEPER_PINK: "carnation creeper charge"
+  BANNER_CREEPER_PURPLE: "purple creeper charge"
+  BANNER_CREEPER_RED: "red creeper charge"
+  BANNER_CREEPER_WHITE: "white creeper charge"
+  BANNER_CREEPER_YELLOW: "yellow creeper charge"
+  BANNER_CROSS_BLACK: "black saltire"
+  BANNER_CROSS_BLUE: "blue saltire"
+  BANNER_CROSS_BROWN: "brown saltire"
+  BANNER_CROSS_CYAN: "turquoise saltire"
+  BANNER_CROSS_GRAY: "grey saltire"
+  BANNER_CROSS_GREEN: "green saltire"
+  BANNER_CROSS_LIGHT_BLUE: "whey saltire"
+  BANNER_CROSS_LIGHT_GRAY: "pale grey saltire"
+  BANNER_CROSS_LIME: "lincoln saltire"
+  BANNER_CROSS_MAGENTA: "mulberry saltire"
+  BANNER_CROSS_ORANGE: "tawny saltire"
+  BANNER_CROSS_PINK: "carnation saltire"
+  BANNER_CROSS_PURPLE: "purple saltire"
+  BANNER_CROSS_RED: "red saltire"
+  BANNER_CROSS_WHITE: "white saltire"
+  BANNER_CROSS_YELLOW: "yellow saltire"
+  BANNER_CURLY_BORDER_BLACK: "black bordure indented"
+  BANNER_CURLY_BORDER_BLUE: "blue bordure indented"
+  BANNER_CURLY_BORDER_BROWN: "brown bordure indented"
+  BANNER_CURLY_BORDER_CYAN: "turquoise bordure indented"
+  BANNER_CURLY_BORDER_GRAY: "grey bordure indented"
+  BANNER_CURLY_BORDER_GREEN: "green bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "whey bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "pale grey bordure indented"
+  BANNER_CURLY_BORDER_LIME: "lincoln bordure indented"
+  BANNER_CURLY_BORDER_MAGENTA: "mulberry bordure indented"
+  BANNER_CURLY_BORDER_ORANGE: "tawny bordure indented"
+  BANNER_CURLY_BORDER_PINK: "carnation bordure indented"
+  BANNER_CURLY_BORDER_PURPLE: "purple bordure indented"
+  BANNER_CURLY_BORDER_RED: "red bordure indented"
+  BANNER_CURLY_BORDER_WHITE: "white bordure indented"
+  BANNER_CURLY_BORDER_YELLOW: "yellow bordure indented"
+  BANNER_DIAGONAL_LEFT_BLACK: "black per bend sinister"
+  BANNER_DIAGONAL_LEFT_BLUE: "blue per bend sinister"
+  BANNER_DIAGONAL_LEFT_BROWN: "brown per bend sinister"
+  BANNER_DIAGONAL_LEFT_CYAN: "turquoise per bend sinister"
+  BANNER_DIAGONAL_LEFT_GRAY: "grey per bend sinister"
+  BANNER_DIAGONAL_LEFT_GREEN: "green per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "whey per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "pale grey per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIME: "lincoln per bend sinister"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "mulberry per bend sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "tawny per bend sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "carnation per bend sinister"
+  BANNER_DIAGONAL_LEFT_PURPLE: "purple per bend sinister"
+  BANNER_DIAGONAL_LEFT_RED: "red per bend sinister"
+  BANNER_DIAGONAL_LEFT_WHITE: "white per bend sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "yellow per bend sinister"
+  BANNER_DIAGONAL_RIGHT_BLACK: "black per bend"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blue per bend"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brown per bend"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turquoise per bend"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grey per bend"
+  BANNER_DIAGONAL_RIGHT_GREEN: "green per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "whey per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "pale grey per bend"
+  BANNER_DIAGONAL_RIGHT_LIME: "lincoln per bend"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "mulberry per bend"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "tawny per bend"
+  BANNER_DIAGONAL_RIGHT_PINK: "carnation per bend"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "purple per bend"
+  BANNER_DIAGONAL_RIGHT_RED: "red per bend"
+  BANNER_DIAGONAL_RIGHT_WHITE: "white per bend"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "yellow per bend"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "black per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blue per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brown per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turquoise per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grey per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "green per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "whey per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "pale grey per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "lincoln per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "mulberry per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "tawny per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "carnation per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "purple per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_RED: "red per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "white per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "yellow per bend inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "black per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blue per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brown per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turquoise per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grey per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "green per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "whey per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "pale grey per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "lincoln per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "mulberry per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "tawny per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "carnation per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "purple per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "red per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "white per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "yellow per bend sinister inverted"
+  BANNER_FLOWER_BLACK: "black flower charge"
+  BANNER_FLOWER_BLUE: "blue flower charge"
+  BANNER_FLOWER_BROWN: "brown flower charge"
+  BANNER_FLOWER_CYAN: "turquoise flower charge"
+  BANNER_FLOWER_GRAY: "grey flower charge"
+  BANNER_FLOWER_GREEN: "green flower charge"
+  BANNER_FLOWER_LIGHT_BLUE: "whey flower charge"
+  BANNER_FLOWER_LIGHT_GRAY: "pale grey flower charge"
+  BANNER_FLOWER_LIME: "lincoln flower charge"
+  BANNER_FLOWER_MAGENTA: "mulberry flower charge"
+  BANNER_FLOWER_ORANGE: "tawny flower charge"
+  BANNER_FLOWER_PINK: "carnation flower charge"
+  BANNER_FLOWER_PURPLE: "purple flower charge"
+  BANNER_FLOWER_RED: "red flower charge"
+  BANNER_FLOWER_WHITE: "white flower charge"
+  BANNER_FLOWER_YELLOW: "yellow flower charge"
+  BANNER_GLOBE_BLACK: "black globe"
+  BANNER_GLOBE_BLUE: "blue globe"
+  BANNER_GLOBE_BROWN: "brown globe"
+  BANNER_GLOBE_CYAN: "turquoise globe"
+  BANNER_GLOBE_GRAY: "grey globe"
+  BANNER_GLOBE_GREEN: "green globe"
+  BANNER_GLOBE_LIGHT_BLUE: "whey globe"
+  BANNER_GLOBE_LIGHT_GRAY: "pale grey globe"
+  BANNER_GLOBE_LIME: "lincoln globe"
+  BANNER_GLOBE_MAGENTA: "mulberry globe"
+  BANNER_GLOBE_ORANGE: "tawny globe"
+  BANNER_GLOBE_PINK: "carnation globe"
+  BANNER_GLOBE_PURPLE: "purple globe"
+  BANNER_GLOBE_RED: "red globe"
+  BANNER_GLOBE_WHITE: "white globe"
+  BANNER_GLOBE_YELLOW: "yellow globe"
+  BANNER_GRADIENT_BLACK: "black gradient"
+  BANNER_GRADIENT_BLUE: "blue gradient"
+  BANNER_GRADIENT_BROWN: "brown gradient"
+  BANNER_GRADIENT_CYAN: "turquoise gradient"
+  BANNER_GRADIENT_GRAY: "grey gradient"
+  BANNER_GRADIENT_GREEN: "green gradient"
+  BANNER_GRADIENT_LIGHT_BLUE: "whey gradient"
+  BANNER_GRADIENT_LIGHT_GRAY: "pale grey gradient"
+  BANNER_GRADIENT_LIME: "lincoln gradient"
+  BANNER_GRADIENT_MAGENTA: "mulberry gradient"
+  BANNER_GRADIENT_ORANGE: "tawny gradient"
+  BANNER_GRADIENT_PINK: "carnation gradient"
+  BANNER_GRADIENT_PURPLE: "purple gradient"
+  BANNER_GRADIENT_RED: "red gradient"
+  BANNER_GRADIENT_WHITE: "white gradient"
+  BANNER_GRADIENT_YELLOW: "yellow gradient"
+  BANNER_GRADIENT_UP_BLACK: "black base gradient"
+  BANNER_GRADIENT_UP_BLUE: "blue base gradient"
+  BANNER_GRADIENT_UP_BROWN: "brown base gradient"
+  BANNER_GRADIENT_UP_CYAN: "turquoise base gradient"
+  BANNER_GRADIENT_UP_GRAY: "grey base gradient"
+  BANNER_GRADIENT_UP_GREEN: "green base gradient"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "whey base gradient"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "pale grey base gradient"
+  BANNER_GRADIENT_UP_LIME: "lincoln base gradient"
+  BANNER_GRADIENT_UP_MAGENTA: "mulberry base gradient"
+  BANNER_GRADIENT_UP_ORANGE: "tawny base gradient"
+  BANNER_GRADIENT_UP_PINK: "carnation base gradient"
+  BANNER_GRADIENT_UP_PURPLE: "purple base gradient"
+  BANNER_GRADIENT_UP_RED: "red base gradient"
+  BANNER_GRADIENT_UP_WHITE: "white base gradient"
+  BANNER_GRADIENT_UP_YELLOW: "yellow base gradient"
+  BANNER_HALF_HORIZONTAL_BLACK: "black per fess"
+  BANNER_HALF_HORIZONTAL_BLUE: "blue per fess"
+  BANNER_HALF_HORIZONTAL_BROWN: "brown per fess"
+  BANNER_HALF_HORIZONTAL_CYAN: "turquoise per fess"
+  BANNER_HALF_HORIZONTAL_GRAY: "grey per fess"
+  BANNER_HALF_HORIZONTAL_GREEN: "green per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "whey per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "pale grey per fess"
+  BANNER_HALF_HORIZONTAL_LIME: "lincoln per fess"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "mulberry per fess"
+  BANNER_HALF_HORIZONTAL_ORANGE: "tawny per fess"
+  BANNER_HALF_HORIZONTAL_PINK: "carnation per fess"
+  BANNER_HALF_HORIZONTAL_PURPLE: "purple per fess"
+  BANNER_HALF_HORIZONTAL_RED: "red per fess"
+  BANNER_HALF_HORIZONTAL_WHITE: "white per fess"
+  BANNER_HALF_HORIZONTAL_YELLOW: "yellow per fess"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "black per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blue per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brown per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turquoise per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grey per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "green per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "whey per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "pale grey per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "lincoln per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "mulberry per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "tawny per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "carnation per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "purple per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "red per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "white per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "yellow per fess inverted"
+  BANNER_HALF_VERTICAL_BLACK: "black per pale"
+  BANNER_HALF_VERTICAL_BLUE: "blue per pale"
+  BANNER_HALF_VERTICAL_BROWN: "brown per pale"
+  BANNER_HALF_VERTICAL_CYAN: "turquoise per pale"
+  BANNER_HALF_VERTICAL_GRAY: "grey per pale"
+  BANNER_HALF_VERTICAL_GREEN: "green per pale"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "whey per pale"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "pale grey per pale"
+  BANNER_HALF_VERTICAL_LIME: "lincoln per pale"
+  BANNER_HALF_VERTICAL_MAGENTA: "mulberry per pale"
+  BANNER_HALF_VERTICAL_ORANGE: "tawny per pale"
+  BANNER_HALF_VERTICAL_PINK: "carnation per pale"
+  BANNER_HALF_VERTICAL_PURPLE: "purple per pale"
+  BANNER_HALF_VERTICAL_RED: "red per pale"
+  BANNER_HALF_VERTICAL_WHITE: "white per pale"
+  BANNER_HALF_VERTICAL_YELLOW: "yellow per pale"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "black per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blue per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brown per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turquoise per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grey per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "green per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "whey per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "pale grey per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "lincoln per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "mulberry per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "tawny per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "carnation per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "purple per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "red per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "white per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "yellow per pale inverted"
+  BANNER_MOJANG_BLACK: "black emblem"
+  BANNER_MOJANG_BLUE: "blue emblem"
+  BANNER_MOJANG_BROWN: "brown emblem"
+  BANNER_MOJANG_CYAN: "turquoise emblem"
+  BANNER_MOJANG_GRAY: "grey emblem"
+  BANNER_MOJANG_GREEN: "green emblem"
+  BANNER_MOJANG_LIGHT_BLUE: "whey emblem"
+  BANNER_MOJANG_LIGHT_GRAY: "pale grey emblem"
+  BANNER_MOJANG_LIME: "lincoln emblem"
+  BANNER_MOJANG_MAGENTA: "mulberry emblem"
+  BANNER_MOJANG_ORANGE: "tawny emblem"
+  BANNER_MOJANG_PINK: "carnation emblem"
+  BANNER_MOJANG_PURPLE: "purple emblem"
+  BANNER_MOJANG_RED: "red emblem"
+  BANNER_MOJANG_WHITE: "white emblem"
+  BANNER_MOJANG_YELLOW: "yellow emblem"
+  BANNER_PIGLIN_BLACK: "black snout"
+  BANNER_PIGLIN_BLUE: "blue snout"
+  BANNER_PIGLIN_BROWN: "brown snout"
+  BANNER_PIGLIN_CYAN: "turquoise snout"
+  BANNER_PIGLIN_GRAY: "grey snout"
+  BANNER_PIGLIN_GREEN: "green snout"
+  BANNER_PIGLIN_LIGHT_BLUE: "whey snout"
+  BANNER_PIGLIN_LIGHT_GRAY: "pale grey snout"
+  BANNER_PIGLIN_LIME: "lincoln snout"
+  BANNER_PIGLIN_MAGENTA: "mulberry snout"
+  BANNER_PIGLIN_ORANGE: "tawny snout"
+  BANNER_PIGLIN_PINK: "carnation snout"
+  BANNER_PIGLIN_PURPLE: "purple snout"
+  BANNER_PIGLIN_RED: "red snout"
+  BANNER_PIGLIN_WHITE: "white snout"
+  BANNER_PIGLIN_YELLOW: "yellow snout"
+  BANNER_RHOMBUS_BLACK: "black lozenge"
+  BANNER_RHOMBUS_BLUE: "blue lozenge"
+  BANNER_RHOMBUS_BROWN: "brown lozenge"
+  BANNER_RHOMBUS_CYAN: "turquoise lozenge"
+  BANNER_RHOMBUS_GRAY: "grey lozenge"
+  BANNER_RHOMBUS_GREEN: "green lozenge"
+  BANNER_RHOMBUS_LIGHT_BLUE: "whey lozenge"
+  BANNER_RHOMBUS_LIGHT_GRAY: "pale grey lozenge"
+  BANNER_RHOMBUS_LIME: "lincoln lozenge"
+  BANNER_RHOMBUS_MAGENTA: "mulberry lozenge"
+  BANNER_RHOMBUS_ORANGE: "tawny lozenge"
+  BANNER_RHOMBUS_PINK: "carnation lozenge"
+  BANNER_RHOMBUS_PURPLE: "purple lozenge"
+  BANNER_RHOMBUS_RED: "red lozenge"
+  BANNER_RHOMBUS_WHITE: "white lozenge"
+  BANNER_RHOMBUS_YELLOW: "yellow lozenge"
+  BANNER_SKULL_BLACK: "black skull charge"
+  BANNER_SKULL_BLUE: "blue skull charge"
+  BANNER_SKULL_BROWN: "brown skull charge"
+  BANNER_SKULL_CYAN: "turquoise skull charge"
+  BANNER_SKULL_GRAY: "grey skull charge"
+  BANNER_SKULL_GREEN: "green skull charge"
+  BANNER_SKULL_LIGHT_BLUE: "whey skull charge"
+  BANNER_SKULL_LIGHT_GRAY: "pale grey skull charge"
+  BANNER_SKULL_LIME: "lincoln skull charge"
+  BANNER_SKULL_MAGENTA: "mulberry skull charge"
+  BANNER_SKULL_ORANGE: "tawny skull charge"
+  BANNER_SKULL_PINK: "carnation skull charge"
+  BANNER_SKULL_PURPLE: "purple skull charge"
+  BANNER_SKULL_RED: "red skull charge"
+  BANNER_SKULL_WHITE: "white skull charge"
+  BANNER_SKULL_YELLOW: "yellow skull charge"
+  BANNER_SMALL_STRIPES_BLACK: "black paly"
+  BANNER_SMALL_STRIPES_BLUE: "blue paly"
+  BANNER_SMALL_STRIPES_BROWN: "brown paly"
+  BANNER_SMALL_STRIPES_CYAN: "turquoise paly"
+  BANNER_SMALL_STRIPES_GRAY: "grey paly"
+  BANNER_SMALL_STRIPES_GREEN: "green paly"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "whey paly"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "pale grey paly"
+  BANNER_SMALL_STRIPES_LIME: "lincoln paly"
+  BANNER_SMALL_STRIPES_MAGENTA: "mulberry paly"
+  BANNER_SMALL_STRIPES_ORANGE: "tawny paly"
+  BANNER_SMALL_STRIPES_PINK: "carnation paly"
+  BANNER_SMALL_STRIPES_PURPLE: "purple paly"
+  BANNER_SMALL_STRIPES_RED: "red paly"
+  BANNER_SMALL_STRIPES_WHITE: "white paly"
+  BANNER_SMALL_STRIPES_YELLOW: "yellow paly"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "black base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blue base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "brown base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turquoise base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "grey base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "green base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "whey base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "pale grey base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "lincoln base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "mulberry base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "tawny base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "carnation base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "purple base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "red base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "white base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "yellow base dexter canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "black base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blue base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brown base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turquoise base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "grey base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "green base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "whey base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "pale grey base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "lincoln base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "mulberry base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "tawny base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "carnation base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "purple base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "red base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "white base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "yellow base sinister canton"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "black chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blue chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "brown chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turquoise chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "grey chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "green chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "whey chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "pale grey chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIME: "lincoln chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "mulberry chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "tawny chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PINK: "carnation chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "purple chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_RED: "red chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "white chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "yellow chief dexter canton"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "black chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blue chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brown chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turquoise chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "grey chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "green chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "whey chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "pale grey chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "lincoln chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "mulberry chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "tawny chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "carnation chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "purple chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_RED: "red chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "white chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "yellow chief sinister canton"
+  BANNER_STRAIGHT_CROSS_BLACK: "black cross"
+  BANNER_STRAIGHT_CROSS_BLUE: "blue cross"
+  BANNER_STRAIGHT_CROSS_BROWN: "brown cross"
+  BANNER_STRAIGHT_CROSS_CYAN: "turquoise cross"
+  BANNER_STRAIGHT_CROSS_GRAY: "grey cross"
+  BANNER_STRAIGHT_CROSS_GREEN: "green cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "whey cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "pale grey cross"
+  BANNER_STRAIGHT_CROSS_LIME: "lincoln cross"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "mulberry cross"
+  BANNER_STRAIGHT_CROSS_ORANGE: "tawny cross"
+  BANNER_STRAIGHT_CROSS_PINK: "carnation cross"
+  BANNER_STRAIGHT_CROSS_PURPLE: "purple cross"
+  BANNER_STRAIGHT_CROSS_RED: "red cross"
+  BANNER_STRAIGHT_CROSS_WHITE: "white cross"
+  BANNER_STRAIGHT_CROSS_YELLOW: "yellow cross"
+  BANNER_STRIPE_BOTTOM_BLACK: "black base"
+  BANNER_STRIPE_BOTTOM_BLUE: "blue base"
+  BANNER_STRIPE_BOTTOM_BROWN: "brown base"
+  BANNER_STRIPE_BOTTOM_CYAN: "turquoise base"
+  BANNER_STRIPE_BOTTOM_GRAY: "grey base"
+  BANNER_STRIPE_BOTTOM_GREEN: "green base"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "whey base"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "pale grey base"
+  BANNER_STRIPE_BOTTOM_LIME: "lincoln base"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "mulberry base"
+  BANNER_STRIPE_BOTTOM_ORANGE: "tawny base"
+  BANNER_STRIPE_BOTTOM_PINK: "carnation base"
+  BANNER_STRIPE_BOTTOM_PURPLE: "purple base"
+  BANNER_STRIPE_BOTTOM_RED: "red base"
+  BANNER_STRIPE_BOTTOM_WHITE: "white base"
+  BANNER_STRIPE_BOTTOM_YELLOW: "yellow base"
+  BANNER_STRIPE_CENTER_BLACK: "black pale"
+  BANNER_STRIPE_CENTER_BLUE: "blue pale"
+  BANNER_STRIPE_CENTER_BROWN: "brown pale"
+  BANNER_STRIPE_CENTER_CYAN: "turquoise pale"
+  BANNER_STRIPE_CENTER_GRAY: "grey pale"
+  BANNER_STRIPE_CENTER_GREEN: "green pale"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "whey pale"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "pale grey pale"
+  BANNER_STRIPE_CENTER_LIME: "lincoln pale"
+  BANNER_STRIPE_CENTER_MAGENTA: "mulberry pale"
+  BANNER_STRIPE_CENTER_ORANGE: "tawny pale"
+  BANNER_STRIPE_CENTER_PINK: "carnation pale"
+  BANNER_STRIPE_CENTER_PURPLE: "purple pale"
+  BANNER_STRIPE_CENTER_RED: "red pale"
+  BANNER_STRIPE_CENTER_WHITE: "white pale"
+  BANNER_STRIPE_CENTER_YELLOW: "yellow pale"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "black bend sinister"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blue bend sinister"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brown bend sinister"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turquoise bend sinister"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "grey bend sinister"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "green bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "whey bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "pale grey bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIME: "lincoln bend sinister"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "mulberry bend sinister"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "tawny bend sinister"
+  BANNER_STRIPE_DOWNLEFT_PINK: "carnation bend sinister"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "purple bend sinister"
+  BANNER_STRIPE_DOWNLEFT_RED: "red bend sinister"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "white bend sinister"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "yellow bend sinister"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "black bend"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blue bend"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brown bend"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turquoise bend"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "grey bend"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "green bend"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "whey bend"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "pale grey bend"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "lincoln bend"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "mulberry bend"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "tawny bend"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "carnation bend"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "purple bend"
+  BANNER_STRIPE_DOWNRIGHT_RED: "red bend"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "white bend"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "yellow bend"
+  BANNER_STRIPE_LEFT_BLACK: "black pale dexter"
+  BANNER_STRIPE_LEFT_BLUE: "blue pale dexter"
+  BANNER_STRIPE_LEFT_BROWN: "brown pale dexter"
+  BANNER_STRIPE_LEFT_CYAN: "turquoise pale dexter"
+  BANNER_STRIPE_LEFT_GRAY: "grey pale dexter"
+  BANNER_STRIPE_LEFT_GREEN: "green pale dexter"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "whey pale dexter"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "pale grey pale dexter"
+  BANNER_STRIPE_LEFT_LIME: "lincoln pale dexter"
+  BANNER_STRIPE_LEFT_MAGENTA: "mulberry pale dexter"
+  BANNER_STRIPE_LEFT_ORANGE: "tawny pale dexter"
+  BANNER_STRIPE_LEFT_PINK: "carnation pale dexter"
+  BANNER_STRIPE_LEFT_PURPLE: "purple pale dexter"
+  BANNER_STRIPE_LEFT_RED: "red pale dexter"
+  BANNER_STRIPE_LEFT_WHITE: "white pale dexter"
+  BANNER_STRIPE_LEFT_YELLOW: "yellow pale dexter"
+  BANNER_STRIPE_MIDDLE_BLACK: "black fess"
+  BANNER_STRIPE_MIDDLE_BLUE: "blue fess"
+  BANNER_STRIPE_MIDDLE_BROWN: "brown fess"
+  BANNER_STRIPE_MIDDLE_CYAN: "turquoise fess"
+  BANNER_STRIPE_MIDDLE_GRAY: "grey fess"
+  BANNER_STRIPE_MIDDLE_GREEN: "green fess"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "whey fess"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "pale grey fess"
+  BANNER_STRIPE_MIDDLE_LIME: "lincoln fess"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "mulberry fess"
+  BANNER_STRIPE_MIDDLE_ORANGE: "tawny fess"
+  BANNER_STRIPE_MIDDLE_PINK: "carnation fess"
+  BANNER_STRIPE_MIDDLE_PURPLE: "purple fess"
+  BANNER_STRIPE_MIDDLE_RED: "red fess"
+  BANNER_STRIPE_MIDDLE_WHITE: "white fess"
+  BANNER_STRIPE_MIDDLE_YELLOW: "yellow fess"
+  BANNER_STRIPE_RIGHT_BLACK: "black pale sinister"
+  BANNER_STRIPE_RIGHT_BLUE: "blue pale sinister"
+  BANNER_STRIPE_RIGHT_BROWN: "brown pale sinister"
+  BANNER_STRIPE_RIGHT_CYAN: "turquoise pale sinister"
+  BANNER_STRIPE_RIGHT_GRAY: "grey pale sinister"
+  BANNER_STRIPE_RIGHT_GREEN: "green pale sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "whey pale sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "pale grey pale sinister"
+  BANNER_STRIPE_RIGHT_LIME: "lincoln pale sinister"
+  BANNER_STRIPE_RIGHT_MAGENTA: "mulberry pale sinister"
+  BANNER_STRIPE_RIGHT_ORANGE: "tawny pale sinister"
+  BANNER_STRIPE_RIGHT_PINK: "carnation pale sinister"
+  BANNER_STRIPE_RIGHT_PURPLE: "purple pale sinister"
+  BANNER_STRIPE_RIGHT_RED: "red pale sinister"
+  BANNER_STRIPE_RIGHT_WHITE: "white pale sinister"
+  BANNER_STRIPE_RIGHT_YELLOW: "yellow pale sinister"
+  BANNER_STRIPE_TOP_BLACK: "black chief"
+  BANNER_STRIPE_TOP_BLUE: "blue chief"
+  BANNER_STRIPE_TOP_BROWN: "brown chief"
+  BANNER_STRIPE_TOP_CYAN: "turquoise chief"
+  BANNER_STRIPE_TOP_GRAY: "grey chief"
+  BANNER_STRIPE_TOP_GREEN: "green chief"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "whey chief"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "pale grey chief"
+  BANNER_STRIPE_TOP_LIME: "lincoln chief"
+  BANNER_STRIPE_TOP_MAGENTA: "mulberry chief"
+  BANNER_STRIPE_TOP_ORANGE: "tawny chief"
+  BANNER_STRIPE_TOP_PINK: "carnation chief"
+  BANNER_STRIPE_TOP_PURPLE: "purple chief"
+  BANNER_STRIPE_TOP_RED: "red chief"
+  BANNER_STRIPE_TOP_WHITE: "white chief"
+  BANNER_STRIPE_TOP_YELLOW: "yellow chief"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "black chevron"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blue chevron"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "brown chevron"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turquoise chevron"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "grey chevron"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "green chevron"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "whey chevron"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "pale grey chevron"
+  BANNER_TRIANGLE_BOTTOM_LIME: "lincoln chevron"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "mulberry chevron"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "tawny chevron"
+  BANNER_TRIANGLE_BOTTOM_PINK: "carnation chevron"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "purple chevron"
+  BANNER_TRIANGLE_BOTTOM_RED: "red chevron"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "white chevron"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "yellow chevron"
+  BANNER_TRIANGLE_TOP_BLACK: "black chevron inverted"
+  BANNER_TRIANGLE_TOP_BLUE: "blue chevron inverted"
+  BANNER_TRIANGLE_TOP_BROWN: "brown chevron inverted"
+  BANNER_TRIANGLE_TOP_CYAN: "turquoise chevron inverted"
+  BANNER_TRIANGLE_TOP_GRAY: "grey chevron inverted"
+  BANNER_TRIANGLE_TOP_GREEN: "green chevron inverted"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "whey chevron inverted"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "pale grey chevron inverted"
+  BANNER_TRIANGLE_TOP_LIME: "lincoln chevron inverted"
+  BANNER_TRIANGLE_TOP_MAGENTA: "mulberry chevron inverted"
+  BANNER_TRIANGLE_TOP_ORANGE: "tawny chevron inverted"
+  BANNER_TRIANGLE_TOP_PINK: "carnation chevron inverted"
+  BANNER_TRIANGLE_TOP_PURPLE: "purple chevron inverted"
+  BANNER_TRIANGLE_TOP_RED: "red chevron inverted"
+  BANNER_TRIANGLE_TOP_WHITE: "white chevron inverted"
+  BANNER_TRIANGLE_TOP_YELLOW: "yellow chevron inverted"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "black base indented"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blue base indented"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brown base indented"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turquoise base indented"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "grey base indented"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "green base indented"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "whey base indented"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "pale grey base indented"
+  BANNER_TRIANGLES_BOTTOM_LIME: "lincoln base indented"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "mulberry base indented"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "tawny base indented"
+  BANNER_TRIANGLES_BOTTOM_PINK: "carnation base indented"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "purple base indented"
+  BANNER_TRIANGLES_BOTTOM_RED: "red base indented"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "white base indented"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "yellow base indented"
+  BANNER_TRIANGLES_TOP_BLACK: "black chief indented"
+  BANNER_TRIANGLES_TOP_BLUE: "blue chief indented"
+  BANNER_TRIANGLES_TOP_BROWN: "brown chief indented"
+  BANNER_TRIANGLES_TOP_CYAN: "turquoise chief indented"
+  BANNER_TRIANGLES_TOP_GRAY: "grey chief indented"
+  BANNER_TRIANGLES_TOP_GREEN: "green chief indented"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "whey chief indented"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "pale grey chief indented"
+  BANNER_TRIANGLES_TOP_LIME: "lincoln chief indented"
+  BANNER_TRIANGLES_TOP_MAGENTA: "mulberry chief indented"
+  BANNER_TRIANGLES_TOP_ORANGE: "tawny chief indented"
+  BANNER_TRIANGLES_TOP_PINK: "carnation chief indented"
+  BANNER_TRIANGLES_TOP_PURPLE: "purple chief indented"
+  BANNER_TRIANGLES_TOP_RED: "red chief indented"
+  BANNER_TRIANGLES_TOP_WHITE: "white chief indented"
+  BANNER_TRIANGLES_TOP_YELLOW: "yellow chief indented"
+  BARREL: "barrel"
+  BARRIER: "closture"
+  BASALT: "basalt"
+  BEACON: "beacon"
+  BEACON_PRIMARY: "dominant power"
+  BEACON_SECONDARY: "secondary power"
+  BED_NO_SLEEP: "thou mayst sleep at times of night or tempest alone"
+  BED_NOT_SAFE: "thou cannot to bed vouchsafe for creatures draw near"
+  BED_OBSTRUCTED: "alas an obstruct lies 'tween this bed and thou"
+  BED_OCCUPIED: "alas some fellow slumbers thereon"
+  BED_TOO_FAR_AWAY: "thou cannot to bed yonder it lies"
+  BEDROCK: "touchstone"
+  BEE_NEST: "beehive"
+  BEEHIVE: "beehive"
+  BEETROOTS: "beets"
+  BELL: "bell"
+  BIG_DRIPLEAF: "big dripleaf"
+  BIG_DRIPLEAF_STEM: "big dripleaf stem"
+  BIRCH_BUTTON: "birchen button"
+  BIRCH_DOOR: "birchen door"
+  BIRCH_FENCE: "birchen hedge"
+  BIRCH_FENCE_GATE: "birchen hedge gate"
+  BIRCH_HANGING_SIGN: "birchen hung sign"
+  BIRCH_LEAVES: "birch leaves"
+  BIRCH_LOG: "birchen log"
+  BIRCH_PLANKS: "birchen timber"
+  BIRCH_PRESSURE_PLATE: "birchen pressure plate"
+  BIRCH_SAPLING: "birch sapling"
+  BIRCH_SIGN: "birchen sign"
+  BIRCH_SLAB: "birchen slab"
+  BIRCH_STAIRS: "birchen stairs"
+  BIRCH_TRAPDOOR: "birchen hatch"
+  BIRCH_WALL_HANGING_SIGN: "birchen hung wallsign"
+  BIRCH_WALL_SIGN: "birchen hung sign"
+  BIRCH_WOOD: "birchen log"
+  BLACK_BANNER: "black banner"
+  BLACK_BED: "black bed"
+  BLACK_CANDLE: "black candle"
+  BLACK_CANDLE_CAKE: "black candle upon a cake"
+  BLACK_CARPET: "black carpet"
+  BLACK_CONCRETE: "black cement"
+  BLACK_CONCRETE_POWDER: "black cement powder"
+  BLACK_GLAZED_TERRACOTTA: "black porcelain"
+  BLACK_SHULKER_BOX: "black shulker case"
+  BLACK_STAINED_GLASS: "black-coloured glass"
+  BLACK_STAINED_GLASS_PANE: "black-coloured glass pane"
+  BLACK_TERRACOTTA: "black earthen block"
+  BLACK_WOOL: "black wool"
+  BLACKSTONE: "blackstone"
+  BLACKSTONE_SLAB: "blackstone slab"
+  BLACKSTONE_STAIRS: "blackstone stairs"
+  BLACKSTONE_WALL: "blackstone hedge"
+  BLAST_FURNACE: "forge"
+  BLUE_BANNER: "blue banner"
+  BLUE_BED: "blue bed"
+  BLUE_CANDLE: "blue candle"
+  BLUE_CANDLE_CAKE: "blue candle upon a cake"
+  BLUE_CARPET: "blue carpet"
+  BLUE_CONCRETE: "blue cement"
+  BLUE_CONCRETE_POWDER: "blue cement powder"
+  BLUE_GLAZED_TERRACOTTA: "blue porcelain"
+  BLUE_ICE: "blue ice"
+  BLUE_ORCHID: "violets"
+  BLUE_SHULKER_BOX: "blue shulker case"
+  BLUE_STAINED_GLASS: "blue-coloured glass"
+  BLUE_STAINED_GLASS_PANE: "blue-coloured glass pane"
+  BLUE_TERRACOTTA: "blue earthen block"
+  BLUE_WOOL: "blue wool"
+  BONE_BLOCK: "block of bones"
+  BOOKSHELF: "bookshelf"
+  BRAIN_CORAL: "carnation coral"
+  BRAIN_CORAL_BLOCK: "block of carnation coral"
+  BRAIN_CORAL_FAN: "small carnation coral"
+  BRAIN_CORAL_WALL_FAN: "small hanging carnation coral"
+  BREWING_STAND: "alchemy table"
+  BRICK_SLAB: "brick slab"
+  BRICK_STAIRS: "brick stairs"
+  BRICK_WALL: "brick hedge"
+  BRICKS: "bricks"
+  BROWN_BANNER: "brown banner"
+  BROWN_BED: "brown bed"
+  BROWN_CANDLE: "brown candle"
+  BROWN_CANDLE_CAKE: "brown candle upon a cake"
+  BROWN_CARPET: "brown carpet"
+  BROWN_CONCRETE: "brown cement"
+  BROWN_CONCRETE_POWDER: "brown cement powder"
+  BROWN_GLAZED_TERRACOTTA: "brown porcelain"
+  BROWN_MUSHROOM: "brown mushroom"
+  BROWN_MUSHROOM_BLOCK: "block of brown mushrooms"
+  BROWN_SHULKER_BOX: "brown shulker case"
+  BROWN_STAINED_GLASS: "brown-coloured glass"
+  BROWN_STAINED_GLASS_PANE: "brown-coloured glass pane"
+  BROWN_TERRACOTTA: "brown earthen block"
+  BROWN_WOOL: "brown wool"
+  BUBBLE_COLUMN: "pillar of bubbles"
+  BUBBLE_CORAL: "purple coral"
+  BUBBLE_CORAL_BLOCK: "block of purple coral"
+  BUBBLE_CORAL_FAN: "small purple coral"
+  BUBBLE_CORAL_WALL_FAN: "small hanging purple coral"
+  BUDDING_AMETHYST: "budding amethyst"
+  CACTUS: "cactus"
+  CAKE: "cake"
+  CALCITE: "calcite"
+  CALIBRATED_SCULK_SENSOR: "calibrat'd sculk sens'r"
+  CAMPFIRE: "camp fire"
+  CANDLE: "candle"
+  CANDLE_CAKE: "candle cake"
+  CARROTS: "carets"
+  CARTOGRAPHY_TABLE: "mappery table"
+  CARVED_PUMPKIN: "carved pumpion"
+  CAULDRON: "cauldron"
+  CAVE_AIR: "cave air"
+  CAVE_VINES: "cavern vines"
+  CAVE_VINES_PLANT: "cavern vines plant"
+  CHAIN: "chain"
+  CHAIN_COMMAND_BLOCK: "chain command block"
+  CHERRY_BUTTON: "stoneberrywood button"
+  CHERRY_DOOR: "stoneberrywood door"
+  CHERRY_FENCE: "stoneberrywood hedge"
+  CHERRY_FENCE_GATE: "stoneberrywood hedge gate"
+  CHERRY_HANGING_SIGN: "stoneberrywood hung sign"
+  CHERRY_LEAVES: "stoneberrywood leaves"
+  CHERRY_LOG: "stoneberrywood log"
+  CHERRY_PLANKS: "stoneberrywood planks"
+  CHERRY_PRESSURE_PLATE: "stoneberrywood pressure plate"
+  CHERRY_SAPLING: "stoneberrywood sapling"
+  CHERRY_SIGN: "stoneberrywood sign"
+  CHERRY_SLAB: "stoneberrywood slab"
+  CHERRY_STAIRS: "stoneberrywood stairs"
+  CHERRY_TRAPDOOR: "stoneberrywood hatch"
+  CHERRY_WALL_HANGING_SIGN: "ch'rry mure hung wallsign"
+  CHERRY_WALL_SIGN: "ch'rry mure signeth"
+  CHERRY_WOOD: "ch'rry wood"
+  CHEST: "chest"
+  CHIPPED_ANVIL: "crack'd anvil"
+  CHISELED_BOOKSHELF: "chisel'd bookshelf"
+  CHISELED_COPPER: "chisel'd copp'r"
+  CHISELED_DEEPSLATE: "chisel'd deepethslate"
+  CHISELED_NETHER_BRICKS: "chisel'd nether bricks"
+  CHISELED_POLISHED_BLACKSTONE: "chisel'd polish'd blackstone"
+  CHISELED_QUARTZ_BLOCK: "chisel'd block of quarz"
+  CHISELED_RED_SANDSTONE: "chisel'd red sandstone"
+  CHISELED_SANDSTONE: "graven sandstone"
+  CHISELED_STONE_BRICKS: "chisel'd stone bricks"
+  CHISELED_TUFF: "chisel'd tuff"
+  CHISELED_TUFF_BRICKS: "chisel'd tuff bricks"
+  CHORUS_FLOWER: "chorus flower"
+  CHORUS_PLANT: "chorus plant"
+  CLAY: "clay"
+  COAL_BLOCK: "block of coal"
+  COAL_ORE: "coal ore"
+  COARSE_DIRT: "coarse dirt"
+  COBBLED_DEEPSLATE: "cobbl'd deepethslate"
+  COBBLED_DEEPSLATE_SLAB: "cobbl'd deepethslate slab"
+  COBBLED_DEEPSLATE_STAIRS: "cobbl'd deepethslate stairs"
+  COBBLED_DEEPSLATE_WALL: "cobbl'd deepethslate hedge"
+  COBBLESTONE: "cobble"
+  COBBLESTONE_SLAB: "cobble slab"
+  COBBLESTONE_STAIRS: "cobble stairs"
+  COBBLESTONE_WALL: "cobble hedge"
+  COBWEB: "cobweb"
+  COCOA: "cacao"
+  COMMAND_BLOCK: "command block"
+  COMPARATOR: "redstone metre"
+  COMPOSTER: "composter"
+  CONDUIT: "conduit"
+  COPPER_BLOCK: "block of copp'r"
+  COPPER_BULB: "copp'r bulb"
+  COPPER_DOOR: "copp'r door"
+  COPPER_GRATE: "copp'r grate"
+  COPPER_ORE: "copp'r ore"
+  COPPER_TRAPDOOR: "copp'r trapdoor"
+  CORNFLOWER: "pansy"
+  CRACKED_DEEPSLATE_BRICKS: "crack'd deepethslate bricks"
+  CRACKED_DEEPSLATE_TILES: "crack'd deepethslate tyles"
+  CRACKED_NETHER_BRICKS: "crack'd nether bricks"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "crack'd polish'd blackstone bricks"
+  CRACKED_STONE_BRICKS: "crack'd stone bricks"
+  CRAFTER: "craft'r"
+  CRAFTING_TABLE: "crafts table"
+  CREEPER_HEAD: "creeper head"
+  CREEPER_WALL_HEAD: "hung creeper head"
+  CRIMSON_BUTTON: "crimsonwood button"
+  CRIMSON_DOOR: "crimsonwood door"
+  CRIMSON_FENCE: "crimsonwood hedge"
+  CRIMSON_FENCE_GATE: "crimsonwood hedge gate"
+  CRIMSON_FUNGUS: "crimson mushrump"
+  CRIMSON_HANGING_SIGN: "crimsonwood hung sign"
+  CRIMSON_HYPHAE: "crimson hyphæ"
+  CRIMSON_NYLIUM: "crimson nylium"
+  CRIMSON_PLANKS: "crimsonwood planks"
+  CRIMSON_PRESSURE_PLATE: "crimsonwood pressure plate"
+  CRIMSON_ROOTS: "crimson rootes"
+  CRIMSON_SIGN: "crimsonwood sign"
+  CRIMSON_SLAB: "crimsonwood slab"
+  CRIMSON_STAIRS: "crimsonwood stairs"
+  CRIMSON_STEM: "crimson stem"
+  CRIMSON_TRAPDOOR: "crimsonwood hatch"
+  CRIMSON_WALL_HANGING_SIGN: "crimsonwood hung wallsign"
+  CRIMSON_WALL_SIGN: "crimsonwood wallsign"
+  CRYING_OBSIDIAN: "crying obsidian"
+  CUT_COPPER: "cutteth copp'r"
+  CUT_COPPER_SLAB: "cutteth copp'r slab"
+  CUT_COPPER_STAIRS: "cutteth copp'r stairs"
+  CUT_RED_SANDSTONE: "cut red sandstone"
+  CUT_RED_SANDSTONE_SLAB: "cut red sandstone slab"
+  CUT_SANDSTONE: "cut sandstone"
+  CUT_SANDSTONE_SLAB: "cut sandstone slab"
+  CYAN_BANNER: "turquoise banner"
+  CYAN_BED: "turquoise bed"
+  CYAN_CANDLE: "turquoise candle"
+  CYAN_CANDLE_CAKE: "cyan candle upon a cake"
+  CYAN_CARPET: "turquoise carpet"
+  CYAN_CONCRETE: "turquoise cement"
+  CYAN_CONCRETE_POWDER: "turquoise cement powder"
+  CYAN_GLAZED_TERRACOTTA: "turquoise porcelain"
+  CYAN_SHULKER_BOX: "turquoise shulker case"
+  CYAN_STAINED_GLASS: "turquoise-coloured glass"
+  CYAN_STAINED_GLASS_PANE: "turquoise-coloured glass pane"
+  CYAN_TERRACOTTA: "turquoise earthen block"
+  CYAN_WOOL: "turquoise wool"
+  DAMAGED_ANVIL: "fracted anvil"
+  DANDELION: "daffodil"
+  DARK_OAK_BUTTON: "ebon button"
+  DARK_OAK_DOOR: "ebon door"
+  DARK_OAK_FENCE: "ebony hedge"
+  DARK_OAK_FENCE_GATE: "ebony hedge gate"
+  DARK_OAK_HANGING_SIGN: "ebon hung sign"
+  DARK_OAK_LEAVES: "ebon leaves"
+  DARK_OAK_LOG: "ebon log"
+  DARK_OAK_PLANKS: "ebon timber"
+  DARK_OAK_PRESSURE_PLATE: "ebon pressure plate"
+  DARK_OAK_SAPLING: "ebon sapling"
+  DARK_OAK_SIGN: "ebon sign"
+  DARK_OAK_SLAB: "ebon slab"
+  DARK_OAK_STAIRS: "ebon stairs"
+  DARK_OAK_TRAPDOOR: "ebon hatch"
+  DARK_OAK_WALL_HANGING_SIGN: "ebon hung wallsign"
+  DARK_OAK_WALL_SIGN: "ebon hung sign"
+  DARK_OAK_WOOD: "ebony log"
+  DARK_PRISMARINE: "dark prismarine"
+  DARK_PRISMARINE_SLAB: "dark prismarine slab"
+  DARK_PRISMARINE_STAIRS: "dark prismarine stairs"
+  DAYLIGHT_DETECTOR: "sun watcher"
+  DEAD_BRAIN_CORAL: "dead carnation coral"
+  DEAD_BRAIN_CORAL_BLOCK: "block of dead carnation coral"
+  DEAD_BRAIN_CORAL_FAN: "dead small carnation coral"
+  DEAD_BRAIN_CORAL_WALL_FAN: "dead small hanging carnation coral"
+  DEAD_BUBBLE_CORAL: "dead purple coral"
+  DEAD_BUBBLE_CORAL_BLOCK: "block of dead purple coral"
+  DEAD_BUBBLE_CORAL_FAN: "dead small purple coral"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "dead small hanging purple coral"
+  DEAD_BUSH: "wither'd shrub"
+  DEAD_FIRE_CORAL: "dead red coral"
+  DEAD_FIRE_CORAL_BLOCK: "block of dead red coral"
+  DEAD_FIRE_CORAL_FAN: "dead small red coral"
+  DEAD_FIRE_CORAL_WALL_FAN: "dead small hanging red coral"
+  DEAD_HORN_CORAL: "dead yellow coral"
+  DEAD_HORN_CORAL_BLOCK: "block of dead yellow coral"
+  DEAD_HORN_CORAL_FAN: "dead small yellow coral"
+  DEAD_HORN_CORAL_WALL_FAN: "dead small hanging yellow coral"
+  DEAD_TUBE_CORAL: "dead blue coral"
+  DEAD_TUBE_CORAL_BLOCK: "block of dead blue coral"
+  DEAD_TUBE_CORAL_FAN: "dead small blue coral"
+  DEAD_TUBE_CORAL_WALL_FAN: "dead small hanging blue coral"
+  DECORATED_POT: "decorated pot"
+  DEEPSLATE: "deepethslate"
+  DEEPSLATE_BRICK_SLAB: "deepethslate brick slab"
+  DEEPSLATE_BRICK_STAIRS: "deepethslate brick stairs"
+  DEEPSLATE_BRICK_WALL: "deepethslate brick hedge"
+  DEEPSLATE_BRICKS: "deepethslate bricks"
+  DEEPSLATE_COAL_ORE: "deepethslate coal ore"
+  DEEPSLATE_COPPER_ORE: "deepethslate copp'r ore"
+  DEEPSLATE_DIAMOND_ORE: "deepethslate diamond ore"
+  DEEPSLATE_EMERALD_ORE: "deepethslate emerald ore"
+  DEEPSLATE_GOLD_ORE: "deepethslate gold ore"
+  DEEPSLATE_IRON_ORE: "deepethslate iron ore"
+  DEEPSLATE_LAPIS_ORE: "deepethslate lapis ore"
+  DEEPSLATE_REDSTONE_ORE: "deepethslate redstone ore"
+  DEEPSLATE_TILE_SLAB: "deepethslate tyle slab"
+  DEEPSLATE_TILE_STAIRS: "deepethslate tyle stairs"
+  DEEPSLATE_TILE_WALL: "deepethslate tyle hedge"
+  DEEPSLATE_TILES: "deepethslate tyles"
+  DETECTOR_RAIL: "sensing iron-rut"
+  DIAMOND_BLOCK: "block of diamond"
+  DIAMOND_ORE: "diamond ore"
+  DIORITE: "limestone"
+  DIORITE_SLAB: "limestone slab"
+  DIORITE_STAIRS: "limestone stairs"
+  DIORITE_WALL: "limestone hedge"
+  DIRT: "dirt"
+  DIRT_PATH: "path of loose soil"
+  DISPENSER: "dispenser"
+  DRAGON_EGG: "dragon egg"
+  DRAGON_HEAD: "dragon head"
+  DRAGON_WALL_HEAD: "hung dragon head"
+  DRIED_KELP_BLOCK: "block of dried seaweed"
+  DRIPSTONE_BLOCK: "block of dripstone"
+  DROPPER: "dropper"
+  EMERALD_BLOCK: "block of emerald"
+  EMERALD_ORE: "emerald ore"
+  ENCHANTING_TABLE: "table of witchcrafts"
+  END_GATEWAY: "end entrance"
+  END_PORTAL: "end portal"
+  END_PORTAL_FRAME: "end portal frame"
+  END_ROD: "end rod"
+  END_STONE: "end stone"
+  END_STONE_BRICK_SLAB: "end stone brick slab"
+  END_STONE_BRICK_STAIRS: "end stone brick stairs"
+  END_STONE_BRICK_WALL: "end stone brick hedge"
+  END_STONE_BRICKS: "end stone bricks"
+  ENDER_CHEST: "ender chest"
+  EXPOSED_CHISELED_COPPER: "expos'd chisel'd copp'r"
+  EXPOSED_COPPER: "expos'd copp'r"
+  EXPOSED_COPPER_BULB: "expos'd copp'r bulb"
+  EXPOSED_COPPER_DOOR: "expos'd copp'r door"
+  EXPOSED_COPPER_GRATE: "expos'd copp'r grate"
+  EXPOSED_COPPER_TRAPDOOR: "expos'd copp'r hatch"
+  EXPOSED_CUT_COPPER: "expos'd cutteth copp'r"
+  EXPOSED_CUT_COPPER_SLAB: "expos's cutteth copp'r slab"
+  EXPOSED_CUT_COPPER_STAIRS: "expos'd cutteth copp'r stairs"
+  FARMLAND: "ploughed dirt"
+  FERN: "fern"
+  FIRE: "fire"
+  FIRE_CORAL: "red coral"
+  FIRE_CORAL_BLOCK: "red coral block"
+  FIRE_CORAL_FAN: "small red coral"
+  FIRE_CORAL_WALL_FAN: "small hanging red coral"
+  FLETCHING_TABLE: "fletching table"
+  FLOWER_POT: "flower pot"
+  FLOWERING_AZALEA: "flowering shrub"
+  FLOWERING_AZALEA_LEAVES: "flowering shrub leaves"
+  FROGSPAWN: "frogspawn"
+  FROSTED_ICE: "frost'd ice"
+  FURNACE: "furnace"
+  GILDED_BLACKSTONE: "gilded blackstone"
+  GLASS: "glass"
+  GLASS_PANE: "glass pane"
+  GLOW_LICHEN: "glowen lich'n"
+  GLOWSTONE: "glowstone"
+  GOLD_BLOCK: "block of gold"
+  GOLD_ORE: "gold ore"
+  GRANITE: "red grainstone"
+  GRANITE_SLAB: "red grainstone slab"
+  GRANITE_STAIRS: "red grainstone stairs"
+  GRANITE_WALL: "red grainstone hedge"
+  GRASS: "grass"
+  GRASS_BLOCK: "block of grassy dirt"
+  GRAVEL: "gravel"
+  GRAY_BANNER: "grey banner"
+  GRAY_BED: "grey bed"
+  GRAY_CANDLE: "grey candle"
+  GRAY_CANDLE_CAKE: "grey candle upon a cake"
+  GRAY_CARPET: "grey carpet"
+  GRAY_CONCRETE: "grey cement"
+  GRAY_CONCRETE_POWDER: "grey cement powder"
+  GRAY_GLAZED_TERRACOTTA: "grey porcelain"
+  GRAY_SHULKER_BOX: "grey shulker case"
+  GRAY_STAINED_GLASS: "grey-coloured glass"
+  GRAY_STAINED_GLASS_PANE: "grey-coloured glass pane"
+  GRAY_TERRACOTTA: "grey earthen block"
+  GRAY_WOOL: "grey wool"
+  GREEN_BANNER: "green banner"
+  GREEN_BED: "green bed"
+  GREEN_CANDLE: "green candle"
+  GREEN_CANDLE_CAKE: "green candle upon a cake"
+  GREEN_CARPET: "green carpet"
+  GREEN_CONCRETE: "green cement"
+  GREEN_CONCRETE_POWDER: "green cement powder"
+  GREEN_GLAZED_TERRACOTTA: "green porcelain"
+  GREEN_SHULKER_BOX: "green shulker case"
+  GREEN_STAINED_GLASS: "green-coloured glass"
+  GREEN_STAINED_GLASS_PANE: "green-coloured glass pane"
+  GREEN_TERRACOTTA: "green earthen block"
+  GREEN_WOOL: "green wool"
+  GRINDSTONE: "grindstone"
+  HANGING_ROOTS: "hanging rootes"
+  HAY_BLOCK: "bottle of hay"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "heavy pressure plate"
+  HONEY_BLOCK: "honey block"
+  HONEYCOMB_BLOCK: "honeycomb block"
+  HOPPER: "conveyer"
+  HORN_CORAL: "yellow coral"
+  HORN_CORAL_BLOCK: "yellow coral block"
+  HORN_CORAL_FAN: "small yellow coral"
+  HORN_CORAL_WALL_FAN: "small hanging yellow coral"
+  ICE: "ice"
+  INFESTED_CHISELED_STONE_BRICKS: "infested chisel'd stone bricks"
+  INFESTED_COBBLESTONE: "infested cobble"
+  INFESTED_CRACKED_STONE_BRICKS: "infested crack'd bricks"
+  INFESTED_DEEPSLATE: "infested deepethslate"
+  INFESTED_MOSSY_STONE_BRICKS: "infested moss'd bricks"
+  INFESTED_STONE: "infested stone"
+  INFESTED_STONE_BRICKS: "infested bricks"
+  IRON_BARS: "iron bars"
+  IRON_BLOCK: "block of iron"
+  IRON_DOOR: "iron door"
+  IRON_ORE: "iron ore"
+  IRON_TRAPDOOR: "iron hatch"
+  JACK_O_LANTERN: "jack o'lantern"
+  JIGSAW: "unfolding block"
+  JUKEBOX: "music box"
+  JUNGLE_BUTTON: "exotic button"
+  JUNGLE_DOOR: "exotic door"
+  JUNGLE_FENCE: "exotic wood hedge"
+  JUNGLE_FENCE_GATE: "exotic hedge gate"
+  JUNGLE_HANGING_SIGN: "exotic hung sign"
+  JUNGLE_LEAVES: "exotic leaves"
+  JUNGLE_LOG: "exotic log"
+  JUNGLE_PLANKS: "exotic timber"
+  JUNGLE_PRESSURE_PLATE: "exotic pressure plate"
+  JUNGLE_SAPLING: "exotic sapling"
+  JUNGLE_SIGN: "exotic sign"
+  JUNGLE_SLAB: "exotic slab"
+  JUNGLE_STAIRS: "exotic stairs"
+  JUNGLE_TRAPDOOR: "exotic hatch"
+  JUNGLE_WALL_HANGING_SIGN: "exotic hung wallsign"
+  JUNGLE_WALL_SIGN: "exotic hung sign"
+  JUNGLE_WOOD: "exotic log"
+  KELP: "seaweed"
+  KELP_PLANT: "seaweed plant"
+  LADDER: "ladder"
+  LANTERN: "lantern"
+  LAPIS_BLOCK: "block of lapis"
+  LAPIS_ORE: "lapis ore"
+  LARGE_AMETHYST_BUD: "large amethyst bud"
+  LARGE_FERN: "large fern"
+  LAVA: "molten stone"
+  LAVA_CAULDRON: "casket of molten stone"
+  LECTERN: "lectern"
+  LEVER: "lever"
+  LIGHT: "illumination"
+  LIGHT_BLUE_BANNER: "whey banner"
+  LIGHT_BLUE_BED: "whey bed"
+  LIGHT_BLUE_CANDLE: "whey candle"
+  LIGHT_BLUE_CANDLE_CAKE: "whey candle upon a cake"
+  LIGHT_BLUE_CARPET: "whey carpet"
+  LIGHT_BLUE_CONCRETE: "whey cement"
+  LIGHT_BLUE_CONCRETE_POWDER: "whey cement powder"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "whey porcelain"
+  LIGHT_BLUE_SHULKER_BOX: "whey shulker case"
+  LIGHT_BLUE_STAINED_GLASS: "whey-coloured glass"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "whey-coloured glass pane"
+  LIGHT_BLUE_TERRACOTTA: "whey earthen block"
+  LIGHT_BLUE_WOOL: "whey wool"
+  LIGHT_GRAY_BANNER: "pale grey banner"
+  LIGHT_GRAY_BED: "pale grey bed"
+  LIGHT_GRAY_CANDLE: "pale grey candle"
+  LIGHT_GRAY_CANDLE_CAKE: "pale grey candle upon a cake"
+  LIGHT_GRAY_CARPET: "pale grey carpet"
+  LIGHT_GRAY_CONCRETE: "pale grey cement"
+  LIGHT_GRAY_CONCRETE_POWDER: "pale grey cement powder"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "pale grey porcelain"
+  LIGHT_GRAY_SHULKER_BOX: "pale grey shulker case"
+  LIGHT_GRAY_STAINED_GLASS: "pale grey-coloured glass"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "pale grey-coloured glass pane"
+  LIGHT_GRAY_TERRACOTTA: "pale grey earthen block"
+  LIGHT_GRAY_WOOL: "pale grey wool"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "light pressure plate"
+  LIGHTNING_ROD: "lightning rod"
+  LILAC: "gillyvor"
+  LILY_OF_THE_VALLEY: "lily of the valley"
+  LILY_PAD: "water-lily"
+  LIME_BANNER: "lincoln banner"
+  LIME_BED: "lincoln bed"
+  LIME_CANDLE: "lincoln candle"
+  LIME_CANDLE_CAKE: "lime candle upon a cake"
+  LIME_CARPET: "lincoln carpet"
+  LIME_CONCRETE: "lincoln cement"
+  LIME_CONCRETE_POWDER: "lincoln cement powder"
+  LIME_GLAZED_TERRACOTTA: "lincoln porcelain"
+  LIME_SHULKER_BOX: "lincoln shulker case"
+  LIME_STAINED_GLASS: "lincoln-coloured glass"
+  LIME_STAINED_GLASS_PANE: "lincoln-coloured glass pane"
+  LIME_TERRACOTTA: "lincoln earthen block"
+  LIME_WOOL: "lincoln wool"
+  LODESTONE: "lodestone"
+  LOOM: "loom"
+  MAGENTA_BANNER: "mulberry banner"
+  MAGENTA_BED: "mulberry bed"
+  MAGENTA_CANDLE: "mulberry candle"
+  MAGENTA_CANDLE_CAKE: "magenta candle upon a cake"
+  MAGENTA_CARPET: "mulberry carpet"
+  MAGENTA_CONCRETE: "mulberry cement"
+  MAGENTA_CONCRETE_POWDER: "mulberry cement powder"
+  MAGENTA_GLAZED_TERRACOTTA: "mulberry porcelain"
+  MAGENTA_SHULKER_BOX: "mulberry shulker case"
+  MAGENTA_STAINED_GLASS: "mulberry-coloured glass"
+  MAGENTA_STAINED_GLASS_PANE: "mulberry-coloured glass pane"
+  MAGENTA_TERRACOTTA: "mulberry earthen block"
+  MAGENTA_WOOL: "mulberry wool"
+  MAGMA_BLOCK: "block of burning stone"
+  MANGROVE_BUTTON: "marsh button"
+  MANGROVE_DOOR: "marsh door"
+  MANGROVE_FENCE: "marsh hedge"
+  MANGROVE_FENCE_GATE: "marsh hedge gate"
+  MANGROVE_HANGING_SIGN: "marsh hung sign"
+  MANGROVE_LEAVES: "marsh leaves"
+  MANGROVE_LOG: "marsh log"
+  MANGROVE_PLANKS: "marsh timber"
+  MANGROVE_PRESSURE_PLATE: "marsh pressure plate"
+  MANGROVE_PROPAGULE: "marsh bud"
+  MANGROVE_ROOTS: "marsh roots"
+  MANGROVE_SIGN: "marsh sign"
+  MANGROVE_SLAB: "marsh slab"
+  MANGROVE_STAIRS: "marsh stairs"
+  MANGROVE_TRAPDOOR: "marsh hatch"
+  MANGROVE_WALL_HANGING_SIGN: "marsh hung wallsign"
+  MANGROVE_WALL_SIGN: "marsh hung sign"
+  MANGROVE_WOOD: "marsh wood"
+  MEDIUM_AMETHYST_BUD: "medium amethyst bud"
+  MELON: "melon"
+  MELON_STEM: "melon stem"
+  MOSS_BLOCK: "moss block"
+  MOSS_CARPET: "moss carpet"
+  MOSSY_COBBLESTONE: "moss'd cobble"
+  MOSSY_COBBLESTONE_SLAB: "moss'd cobble slab"
+  MOSSY_COBBLESTONE_STAIRS: "moss'd cobble stairs"
+  MOSSY_COBBLESTONE_WALL: "moss'd cobble hedge"
+  MOSSY_STONE_BRICK_SLAB: "moss'd stone brick slab"
+  MOSSY_STONE_BRICK_STAIRS: "moss'd stone brick stairs"
+  MOSSY_STONE_BRICK_WALL: "moss'd stone brick hedge"
+  MOSSY_STONE_BRICKS: "moss'd stone bricks"
+  MOVING_PISTON: "moving extender"
+  MUD: "mud"
+  MUD_BRICK_SLAB: "mud brick slab"
+  MUD_BRICK_STAIRS: "mud brick stairs"
+  MUD_BRICK_WALL: "mud brick hedge"
+  MUD_BRICKS: "mud bricks"
+  MUDDY_MANGROVE_ROOTS: "muddy marsh roots"
+  MUSHROOM_STEM: "mushroom stem"
+  MYCELIUM: "mouldy dirt"
+  NETHER_BRICK_FENCE: "small nether brick hedge"
+  NETHER_BRICK_SLAB: "nether brick slab"
+  NETHER_BRICK_STAIRS: "nether brick stairs"
+  NETHER_BRICK_WALL: "nether brick hedge"
+  NETHER_BRICKS: "nether bricks"
+  NETHER_GOLD_ORE: "nether gold ore"
+  NETHER_PORTAL: "nether portal"
+  NETHER_QUARTZ_ORE: "nether quarz ore"
+  NETHER_SPROUTS: "nether sprouts"
+  NETHER_WART: "nether wart"
+  NETHER_WART_BLOCK: "block of nether wart"
+  NETHERITE_BLOCK: "block of netherite"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "note block"
+  OAK_BUTTON: "oaken button"
+  OAK_DOOR: "oaken door"
+  OAK_FENCE: "oaken hedge"
+  OAK_FENCE_GATE: "oaken hedge gate"
+  OAK_HANGING_SIGN: "oaken hung sign"
+  OAK_LEAVES: "oak leaves"
+  OAK_LOG: "oaken log"
+  OAK_PLANKS: "oaken timber"
+  OAK_PRESSURE_PLATE: "oaken pressure plate"
+  OAK_SAPLING: "oak sapling"
+  OAK_SIGN: "oaken sign"
+  OAK_SLAB: "oaken slab"
+  OAK_STAIRS: "oaken stairs"
+  OAK_TRAPDOOR: "oaken hatch"
+  OAK_WALL_HANGING_SIGN: "oaken hung wallsign"
+  OAK_WALL_SIGN: "oaken hung sign"
+  OAK_WOOD: "oaken log"
+  OBSERVER: "watcher"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "ochre froglight"
+  OMINOUS_BANNER: "ominous banner"
+  ORANGE_BANNER: "tawny banner"
+  ORANGE_BED: "tawny bed"
+  ORANGE_CANDLE: "tawny candle"
+  ORANGE_CANDLE_CAKE: "tawny candle upon a cake"
+  ORANGE_CARPET: "tawny carpet"
+  ORANGE_CONCRETE: "tawny cement"
+  ORANGE_CONCRETE_POWDER: "tawny cement powder"
+  ORANGE_GLAZED_TERRACOTTA: "tawny porcelain"
+  ORANGE_SHULKER_BOX: "tawny shulker case"
+  ORANGE_STAINED_GLASS: "tawny-coloured glass"
+  ORANGE_STAINED_GLASS_PANE: "tawny-coloured glass pane"
+  ORANGE_TERRACOTTA: "tawny earthen block"
+  ORANGE_TULIP: "tawny carnation"
+  ORANGE_WOOL: "tawny wool"
+  OXEYE_DAISY: "daisy"
+  OXIDIZED_CHISELED_COPPER: "oxidis'd chisel'd copp'r"
+  OXIDIZED_COPPER: "oxidis'd copp'r"
+  OXIDIZED_COPPER_BULB: "oxidis'd copp'r bulb"
+  OXIDIZED_COPPER_DOOR: "oxidis'd copp'r door"
+  OXIDIZED_COPPER_GRATE: "oxidis'd copp'r grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidis'd copp'r hatch"
+  OXIDIZED_CUT_COPPER: "oxidiz'd cutteth copp'r"
+  OXIDIZED_CUT_COPPER_SLAB: "oxidis'd cutteth copp'r slab"
+  OXIDIZED_CUT_COPPER_STAIRS: "oxidiz'd cutteth copp'r stairs"
+  PACKED_ICE: "press'd ice"
+  PACKED_MUD: "press'd mud"
+  PEARLESCENT_FROGLIGHT: "p'rlescent froglight"
+  PEONY: "musk-rose"
+  PETRIFIED_OAK_SLAB: "slab o' petrified oak"
+  PIGLIN_HEAD: "piglin head"
+  PIGLIN_WALL_HEAD: "hung piglin head"
+  PINK_BANNER: "carnation banner"
+  PINK_BED: "carnation bed"
+  PINK_CANDLE: "carnation candle"
+  PINK_CANDLE_CAKE: "pink candle upon a cake"
+  PINK_CARPET: "carnation carpet"
+  PINK_CONCRETE: "carnelian cement"
+  PINK_CONCRETE_POWDER: "carnelian cement powder"
+  PINK_GLAZED_TERRACOTTA: "carnation porcelain"
+  PINK_PETALS: "pink petals"
+  PINK_SHULKER_BOX: "carnation shulker case"
+  PINK_STAINED_GLASS: "carnation-coloured glass"
+  PINK_STAINED_GLASS_PANE: "carnation-coloured glass pane"
+  PINK_TERRACOTTA: "carnation earthen block"
+  PINK_TULIP: "carnation"
+  PINK_WOOL: "carnation wool"
+  PISTON: "extender"
+  PISTON_HEAD: "extender head"
+  PITCHER_CROP: "pitch'r crop"
+  PITCHER_PLANT: "pitch'r planteth"
+  PLAYER_HEAD: "player's head"
+  PLAYER_HEAD_NAMED: "%s's head"
+  PLAYER_WALL_HEAD: "hung player head"
+  PODZOL: "ashy dirt"
+  POINTED_DRIPSTONE: "point'd dripstone"
+  POLISHED_ANDESITE: "grained marble"
+  POLISHED_ANDESITE_SLAB: "grained marble slab"
+  POLISHED_ANDESITE_STAIRS: "grained marble stairs"
+  POLISHED_BASALT: "polish'd basalt"
+  POLISHED_BLACKSTONE: "polish'd blackstone"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "polish'd blackstone brick slab"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "polish'd blackstone brick stairs"
+  POLISHED_BLACKSTONE_BRICK_WALL: "polish'd blackstone brick hedge"
+  POLISHED_BLACKSTONE_BRICKS: "polish'd blackstone bricks"
+  POLISHED_BLACKSTONE_BUTTON: "polish'd blackstone button"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "polish'd blackstone pressure plate"
+  POLISHED_BLACKSTONE_SLAB: "polish'd blackstone slab"
+  POLISHED_BLACKSTONE_STAIRS: "polish'd blackstone stairs"
+  POLISHED_BLACKSTONE_WALL: "polish'd blackstone hedge"
+  POLISHED_DEEPSLATE: "polish'd deepethslate"
+  POLISHED_DEEPSLATE_SLAB: "polish'd deepethslate slab"
+  POLISHED_DEEPSLATE_STAIRS: "polish'd deepethslate stairs"
+  POLISHED_DEEPSLATE_WALL: "polish'd deepethslate hedge"
+  POLISHED_DIORITE: "white marble"
+  POLISHED_DIORITE_SLAB: "white marble slab"
+  POLISHED_DIORITE_STAIRS: "white marble stairs"
+  POLISHED_GRANITE: "red grained marble"
+  POLISHED_GRANITE_SLAB: "red grained marble slab"
+  POLISHED_GRANITE_STAIRS: "red grained marble stairs"
+  POLISHED_TUFF: "polish'd tuff"
+  POLISHED_TUFF_SLAB: "polish'd tuff slab"
+  POLISHED_TUFF_STAIRS: "polish'd tuff stairs"
+  POLISHED_TUFF_WALL: "polish'd tuff hedge"
+  POPPY: "primrose"
+  POTATOES: "potatoes"
+  POTTED_ACACIA_SAPLING: "pott'd beech sapling"
+  POTTED_ALLIUM: "pott'd saffron"
+  POTTED_AZALEA_BUSH: "pott'd shrub"
+  POTTED_AZURE_BLUET: "pott'd harebell"
+  POTTED_BAMBOO: "pott'd bamboo"
+  POTTED_BIRCH_SAPLING: "pott'd birch sapling"
+  POTTED_BLUE_ORCHID: "pott'd violets"
+  POTTED_BROWN_MUSHROOM: "pott'd truffle"
+  POTTED_CACTUS: "pott'd cactus"
+  POTTED_CHERRY_SAPLING: "pott'd stoneberrywood sapling"
+  POTTED_CORNFLOWER: "pott'd pansy"
+  POTTED_CRIMSON_FUNGUS: "pott'd crimson mushrump"
+  POTTED_CRIMSON_ROOTS: "pott'd crimson rootes"
+  POTTED_DANDELION: "pott'd daffodil"
+  POTTED_DARK_OAK_SAPLING: "pott'd ebony sapling"
+  POTTED_DEAD_BUSH: "pott'd wither'd shrub"
+  POTTED_FERN: "pott'd fern"
+  POTTED_FLOWERING_AZALEA_BUSH: "pott'd flowering shrub"
+  POTTED_JUNGLE_SAPLING: "pott'd exotic sapling"
+  POTTED_LILY_OF_THE_VALLEY: "pott'd lily of the valley"
+  POTTED_MANGROVE_PROPAGULE: "pott'd marsh bud"
+  POTTED_OAK_SAPLING: "pott'd oak sapling"
+  POTTED_ORANGE_TULIP: "pott'd tawny carnation"
+  POTTED_OXEYE_DAISY: "pott'd daisy"
+  POTTED_PINK_TULIP: "pott'd carnation"
+  POTTED_POPPY: "pott'd primrose"
+  POTTED_RED_MUSHROOM: "pott'd toadstool"
+  POTTED_RED_TULIP: "pott'd crimson carnation"
+  POTTED_SPRUCE_SAPLING: "pott'd pine sapling"
+  POTTED_TORCHFLOWER: "pott'd t'rchflow'r"
+  POTTED_WARPED_FUNGUS: "pott'd warp'd fungus"
+  POTTED_WARPED_ROOTS: "pott'd warp'd rootes"
+  POTTED_WHITE_TULIP: "pott'd white carnation"
+  POTTED_WITHER_ROSE: "pott'd wither'd rose"
+  POWDER_SNOW: "powdered snow"
+  POWDER_SNOW_CAULDRON: "casket of powdered snow"
+  POWERED_RAIL: "sparkling iron-rut"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "prismarine brick slab"
+  PRISMARINE_BRICK_STAIRS: "prismarine brick stairs"
+  PRISMARINE_BRICKS: "prismarine bricks"
+  PRISMARINE_SLAB: "prismarine slab"
+  PRISMARINE_STAIRS: "prismarine stairs"
+  PRISMARINE_WALL: "prismarine hedge"
+  PUMPKIN: "pumpion"
+  PUMPKIN_STEM: "pumpion stem"
+  PURPLE_BANNER: "purple banner"
+  PURPLE_BED: "purple bed"
+  PURPLE_CANDLE: "purple candle"
+  PURPLE_CANDLE_CAKE: "purple candle upon a cake"
+  PURPLE_CARPET: "purple carpet"
+  PURPLE_CONCRETE: "purple cement"
+  PURPLE_CONCRETE_POWDER: "purple cement powder"
+  PURPLE_GLAZED_TERRACOTTA: "purple porcelain"
+  PURPLE_SHULKER_BOX: "purple shulker case"
+  PURPLE_STAINED_GLASS: "purple-coloured glass"
+  PURPLE_STAINED_GLASS_PANE: "purple-coloured glass pane"
+  PURPLE_TERRACOTTA: "purple earthen block"
+  PURPLE_WOOL: "purple wool"
+  PURPUR_BLOCK: "block of purpur"
+  PURPUR_PILLAR: "purpur pillar"
+  PURPUR_SLAB: "purpur slab"
+  PURPUR_STAIRS: "purpur stairs"
+  QUARTZ_BLOCK: "block of quarz"
+  QUARTZ_BRICKS: "quarz bricks"
+  QUARTZ_PILLAR: "pillar of quarz"
+  QUARTZ_SLAB: "quarz slab"
+  QUARTZ_STAIRS: "quarz stairs"
+  RAIL: "rut of iron"
+  RAW_COPPER_BLOCK: "block of raw copp'r"
+  RAW_GOLD_BLOCK: "block of raw gold"
+  RAW_IRON_BLOCK: "block of raw iron"
+  RED_BANNER: "red banner"
+  RED_BED: "red bed"
+  RED_CANDLE: "red candle"
+  RED_CANDLE_CAKE: "red candle upon a cake"
+  RED_CARPET: "red carpet"
+  RED_CONCRETE: "red cement"
+  RED_CONCRETE_POWDER: "red cement powder"
+  RED_GLAZED_TERRACOTTA: "red porcelain"
+  RED_MUSHROOM: "red mushroom"
+  RED_MUSHROOM_BLOCK: "block of red mushrooms"
+  RED_NETHER_BRICK_SLAB: "red nether brick slab"
+  RED_NETHER_BRICK_STAIRS: "red nether brick stairs"
+  RED_NETHER_BRICK_WALL: "red nether brick hedge"
+  RED_NETHER_BRICKS: "red nether bricks"
+  RED_SAND: "red sand"
+  RED_SANDSTONE: "red sandstone"
+  RED_SANDSTONE_SLAB: "red sandstone slab"
+  RED_SANDSTONE_STAIRS: "red sandstone stairs"
+  RED_SANDSTONE_WALL: "red sandstone hedge"
+  RED_SHULKER_BOX: "red shulker case"
+  RED_STAINED_GLASS: "red-coloured glass"
+  RED_STAINED_GLASS_PANE: "red-coloured glass pane"
+  RED_TERRACOTTA: "red earthen block"
+  RED_TULIP: "crimson carnation"
+  RED_WOOL: "red wool"
+  REDSTONE_BLOCK: "block of redstone"
+  REDSTONE_LAMP: "redstone lamp"
+  REDSTONE_ORE: "redstone ore"
+  REDSTONE_TORCH: "redstone torch"
+  REDSTONE_WALL_TORCH: "redstone wall torch"
+  REDSTONE_WIRE: "redstone trail"
+  REINFORCED_DEEPSLATE: "reinforced deepethslate"
+  REPEATER: "redstone repeater"
+  REPEATING_COMMAND_BLOCK: "repeating command block"
+  RESPAWN_ANCHOR: "respawn anchor"
+  ROOTED_DIRT: "root'd dirt"
+  ROSE_BUSH: "rose bush"
+  SAND: "sand"
+  SANDSTONE: "sandstone"
+  SANDSTONE_SLAB: "sandstone slab"
+  SANDSTONE_STAIRS: "sandstone stairs"
+  SANDSTONE_WALL: "sandstone hedge"
+  SCAFFOLDING: "scaffolding"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk catalyst"
+  SCULK_SENSOR: "sculk detector"
+  SCULK_SHRIEKER: "sculk shrieker"
+  SCULK_VEIN: "sculk vein"
+  SEA_LANTERN: "sea lantern"
+  SEA_PICKLE: "sea cucumber"
+  SEAGRASS: "sargasso"
+  SET_SPAWN: "reviving point establish'd"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "shroomlight"
+  SHULKER_BOX: "shulker case"
+  SKELETON_SKULL: "skull"
+  SKELETON_WALL_SKULL: "hung skull"
+  SLIME_BLOCK: "block of slime"
+  SMALL_AMETHYST_BUD: "small amethyst bud"
+  SMALL_DRIPLEAF: "small dripleaf"
+  SMITHING_TABLE: "smiths table"
+  SMOKER: "smoker"
+  SMOOTH_BASALT: "smooth basalt"
+  SMOOTH_QUARTZ: "block of smooth quarz"
+  SMOOTH_QUARTZ_SLAB: "smooth quarz slab"
+  SMOOTH_QUARTZ_STAIRS: "smooth quarz stairs"
+  SMOOTH_RED_SANDSTONE: "smooth red sandstone"
+  SMOOTH_RED_SANDSTONE_SLAB: "smooth red sandstone slab"
+  SMOOTH_RED_SANDSTONE_STAIRS: "smooth red sandstone stairs"
+  SMOOTH_SANDSTONE: "smooth sandstone"
+  SMOOTH_SANDSTONE_SLAB: "smooth sandstone slab"
+  SMOOTH_SANDSTONE_STAIRS: "smooth sandstone stairs"
+  SMOOTH_STONE: "smooth stone"
+  SMOOTH_STONE_SLAB: "smooth stone slab"
+  SNIFFER_EGG: "sniffener egg"
+  SNOW: "snow"
+  SNOW_BLOCK: "block of snow"
+  SOUL_CAMPFIRE: "campfire of soules"
+  SOUL_FIRE: "soule fire"
+  SOUL_LANTERN: "soule lantern"
+  SOUL_SAND: "quicksand"
+  SOUL_SOIL: "soil of soules"
+  SOUL_TORCH: "soule torch"
+  SOUL_WALL_TORCH: "wall-mounted soule torch"
+  SPAWN_NOT_VALID: "thou hath no home bed or respawn anchor or it hath been obstructed"
+  SPAWNER: "creature spawner"
+  SPAWNER_DESC1: "interact with atter stone:"
+  SPAWNER_DESC2: "sets creature typ"
+  SPONGE: "sponge"
+  SPORE_BLOSSOM: "sp're blossom"
+  SPRUCE_BUTTON: "pine button"
+  SPRUCE_DOOR: "pine door"
+  SPRUCE_FENCE: "pine hedge"
+  SPRUCE_FENCE_GATE: "pine hedge gate"
+  SPRUCE_HANGING_SIGN: "pine hung sign"
+  SPRUCE_LEAVES: "pine needles"
+  SPRUCE_LOG: "pine log"
+  SPRUCE_PLANKS: "pine timber"
+  SPRUCE_PRESSURE_PLATE: "pine pressure plate"
+  SPRUCE_SAPLING: "pine sapling"
+  SPRUCE_SIGN: "pine sign"
+  SPRUCE_SLAB: "pine slab"
+  SPRUCE_STAIRS: "pine stairs"
+  SPRUCE_TRAPDOOR: "pine hatch"
+  SPRUCE_WALL_HANGING_SIGN: "pine hung wallsign"
+  SPRUCE_WALL_SIGN: "pine hung sign"
+  SPRUCE_WOOD: "pine log"
+  STICKY_PISTON: "gluey extruder"
+  STONE: "stone"
+  STONE_BRICK_SLAB: "stone brick slab"
+  STONE_BRICK_STAIRS: "stone brick stairs"
+  STONE_BRICK_WALL: "stone brick hedge"
+  STONE_BRICKS: "stone bricks"
+  STONE_BUTTON: "stone button"
+  STONE_PRESSURE_PLATE: "stone pressure plate"
+  STONE_SLAB: "stone slab"
+  STONE_STAIRS: "stone stairs"
+  STONECUTTER: "masons table"
+  STRIPPED_ACACIA_LOG: "hulled beech log"
+  STRIPPED_ACACIA_WOOD: "hulled beechen wood"
+  STRIPPED_BAMBOO_BLOCK: "block of hulled bamboo"
+  STRIPPED_BIRCH_LOG: "hulled birch log"
+  STRIPPED_BIRCH_WOOD: "hulled birchen wood"
+  STRIPPED_CHERRY_LOG: "hulled stoneberrywood log"
+  STRIPPED_CHERRY_WOOD: "hulled stoneberrywood wood"
+  STRIPPED_CRIMSON_HYPHAE: "debarked crimson hyphae"
+  STRIPPED_CRIMSON_STEM: "bare crimson stem"
+  STRIPPED_DARK_OAK_LOG: "hulled ebony log"
+  STRIPPED_DARK_OAK_WOOD: "hulled ebon wood"
+  STRIPPED_JUNGLE_LOG: "hulled exotic log"
+  STRIPPED_JUNGLE_WOOD: "hulled exotic wood"
+  STRIPPED_MANGROVE_LOG: "hulled marsh log"
+  STRIPPED_MANGROVE_WOOD: "hulled marsh wood"
+  STRIPPED_OAK_LOG: "hulled oak log"
+  STRIPPED_OAK_WOOD: "hulled oaken wood"
+  STRIPPED_SPRUCE_LOG: "hulled pine log"
+  STRIPPED_SPRUCE_WOOD: "hulled pine wood"
+  STRIPPED_WARPED_HYPHAE: "debarked warped hyphae"
+  STRIPPED_WARPED_STEM: "bare warp'd stem"
+  STRUCTURE_BLOCK: "structure block"
+  STRUCTURE_VOID: "structure void"
+  SUGAR_CANE: "sugar cane"
+  SUNFLOWER: "heliotrope"
+  SUSPICIOUS_GRAVEL: "suspicious gravel"
+  SUSPICIOUS_SAND: "suspicious sand"
+  SWEET_BERRY_BUSH: "sweet berry bush"
+  TALL_GRASS: "tall grass"
+  TALL_SEAGRASS: "tall sargasso"
+  TARGET: "target"
+  TERRACOTTA: "earthen block"
+  TINTED_GLASS: "tint'd glass"
+  TNT: "gunpowder cask"
+  TORCH: "torch"
+  TORCHFLOWER: "t'rchflow'r"
+  TORCHFLOWER_CROP: "t'rchflow'r crop"
+  TRAPPED_CHEST: "entrapped chest"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "tripping string"
+  TRIPWIRE_HOOK: "tripping hook"
+  TUBE_CORAL: "blue coral"
+  TUBE_CORAL_BLOCK: "block of blue coral"
+  TUBE_CORAL_FAN: "small blue coral"
+  TUBE_CORAL_WALL_FAN: "small hanging blue coral"
+  TUFF: "tuff"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick hedge"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff hedge"
+  TURTLE_EGG: "turtle egg"
+  TWISTING_VINES: "twisting tendrils"
+  TWISTING_VINES_PLANT: "twisting tendrils plant"
+  VERDANT_FROGLIGHT: "v'rdant froglight"
+  VINE: "vines"
+  VOID_AIR: "void air"
+  WALL_TORCH: "hung torch"
+  WARPED_BUTTON: "warpwood button"
+  WARPED_DOOR: "warpwood door"
+  WARPED_FENCE: "warpwood hedge"
+  WARPED_FENCE_GATE: "warpwood hedge gate"
+  WARPED_FUNGUS: "warped mushrump"
+  WARPED_HANGING_SIGN: "warp'd hanging signeth"
+  WARPED_HYPHAE: "warp'd hyphæ"
+  WARPED_NYLIUM: "warp'd nylium"
+  WARPED_PLANKS: "warpwood planks"
+  WARPED_PRESSURE_PLATE: "warpwood pressure plate"
+  WARPED_ROOTS: "warp'd rootes"
+  WARPED_SIGN: "warpwood sign"
+  WARPED_SLAB: "warpwood slab"
+  WARPED_STAIRS: "warpwood stairs"
+  WARPED_STEM: "warp'd stem"
+  WARPED_TRAPDOOR: "warpwood hatch"
+  WARPED_WALL_HANGING_SIGN: "warp'd mure hanging signeth"
+  WARPED_WALL_SIGN: "warpwood wallsign"
+  WARPED_WART_BLOCK: "block of warp'd wart"
+  WATER: "water"
+  WATER_CAULDRON: "casket of water"
+  WAXED_CHISELED_COPPER: "wax'd chisel'd copp'r"
+  WAXED_COPPER_BLOCK: "wax'd block of copp'r"
+  WAXED_COPPER_BULB: "wax'd copp'r bulb"
+  WAXED_COPPER_DOOR: "wax'd copp'r door"
+  WAXED_COPPER_GRATE: "wax'd copp'r grate"
+  WAXED_COPPER_TRAPDOOR: "wax'd copp'r hatch"
+  WAXED_CUT_COPPER: "wax'd cutteth copp'r"
+  WAXED_CUT_COPPER_SLAB: "wax'd cutteth copp'r slab"
+  WAXED_CUT_COPPER_STAIRS: "wax'd cutteth copp'r stairs"
+  WAXED_EXPOSED_CHISELED_COPPER: "wax'd expos'd chisel'd copp'r"
+  WAXED_EXPOSED_COPPER: "wax'd expos'd copp'r"
+  WAXED_EXPOSED_COPPER_BULB: "wax'd expos'd copp'r bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "wax'd expos'd copp'r door"
+  WAXED_EXPOSED_COPPER_GRATE: "wax'd expos'd copp'r grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "wax'd expos'd copper hatch"
+  WAXED_EXPOSED_CUT_COPPER: "wax'd expos'd cutteth copp'r"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "wax'd expos'd cutteth copp'r slab"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "wax'd expos'd cutteth copp'r stairs"
+  WAXED_OXIDIZED_CHISELED_COPPER: "wax'd oxidis'd chisel'd copp'r"
+  WAXED_OXIDIZED_COPPER: "wax'd oxidis'd copp'r"
+  WAXED_OXIDIZED_COPPER_BULB: "wax'd oxidis'd copp'r bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "wax'd oxidis'd copp'r door"
+  WAXED_OXIDIZED_COPPER_GRATE: "wax'd oxidis'd copp'r grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "wax'd oxidis'd copp'r hatch"
+  WAXED_OXIDIZED_CUT_COPPER: "wax'd oxidis'd cutteth copp'r"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "wax'd oxidis'd cutteth copp'r slab"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "wax'd oxidis'd cutteth copp'r stairs"
+  WAXED_WEATHERED_CHISELED_COPPER: "wax'd weather'd chisel'd copp'r"
+  WAXED_WEATHERED_COPPER: "wax'd weather'd copp'r"
+  WAXED_WEATHERED_COPPER_BULB: "wax'd weather'd copp'r bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "wax'd weather'd copp'r door"
+  WAXED_WEATHERED_COPPER_GRATE: "wax'd weather'd copp'r grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "wax'd weather'd copp'r hatch"
+  WAXED_WEATHERED_CUT_COPPER: "wax'd weather'd cutteth copp'r"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "wax'd weather'd cutteth copp'r slab"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "wax'd weather'd cutteth copp'r stairs"
+  WEATHERED_CHISELED_COPPER: "weather'd chisel'd copp'r"
+  WEATHERED_COPPER: "weather'd copp'r"
+  WEATHERED_COPPER_BULB: "weather'd copp'r bulb"
+  WEATHERED_COPPER_DOOR: "weather'd copp'r door"
+  WEATHERED_COPPER_GRATE: "weather'd copp'r grate"
+  WEATHERED_COPPER_TRAPDOOR: "weather'd copp'r hatch"
+  WEATHERED_CUT_COPPER: "weather'd cutteth copp'r"
+  WEATHERED_CUT_COPPER_SLAB: "weather'd cutteth copp'r slab"
+  WEATHERED_CUT_COPPER_STAIRS: "weather'd cutteth copp'r stairs"
+  WEEPING_VINES: "weeping tendrils"
+  WEEPING_VINES_PLANT: "weeping tendrils plant"
+  WET_SPONGE: "wet sponge"
+  WHEAT: "wheat crops"
+  WHITE_BANNER: "white banner"
+  WHITE_BED: "white bed"
+  WHITE_CANDLE: "white candle"
+  WHITE_CANDLE_CAKE: "white candle upon a cake"
+  WHITE_CARPET: "white carpet"
+  WHITE_CONCRETE: "white cement"
+  WHITE_CONCRETE_POWDER: "white cement powder"
+  WHITE_GLAZED_TERRACOTTA: "white porcelain"
+  WHITE_SHULKER_BOX: "white shulker case"
+  WHITE_STAINED_GLASS: "white-coloured glass"
+  WHITE_STAINED_GLASS_PANE: "white-coloured glass pane"
+  WHITE_TERRACOTTA: "white earthen block"
+  WHITE_TULIP: "white carnation"
+  WHITE_WOOL: "white wool"
+  WITHER_ROSE: "wither'd rose"
+  WITHER_SKELETON_SKULL: "wither'd skull"
+  WITHER_SKELETON_WALL_SKULL: "hung wither'd skull"
+  YELLOW_BANNER: "yellow banner"
+  YELLOW_BED: "yellow bed"
+  YELLOW_CANDLE: "yellow candle"
+  YELLOW_CANDLE_CAKE: "yellow candle upon a cake"
+  YELLOW_CARPET: "yellow carpet"
+  YELLOW_CONCRETE: "yellow cement"
+  YELLOW_CONCRETE_POWDER: "yellow cement powder"
+  YELLOW_GLAZED_TERRACOTTA: "yellow porcelain"
+  YELLOW_SHULKER_BOX: "yellow shulker case"
+  YELLOW_STAINED_GLASS: "yellow-coloured glass"
+  YELLOW_STAINED_GLASS_PANE: "yellow-coloured glass pane"
+  YELLOW_TERRACOTTA: "yellow earthen block"
+  YELLOW_WOOL: "yellow wool"
+  ZOMBIE_HEAD: "rotten head"
+  ZOMBIE_WALL_HEAD: "hung rotten head"
+  ACACIA_BOAT: "beechen boat"
+  ACACIA_CHEST_BOAT: "chest in a beechen boat"
+  ALLAY_SPAWN_EGG: "adder stone o' fairy"
+  AMETHYST_SHARD: "amethyst shard"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "apple"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "armour stand"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "arrow"
+  AXOLOTL_BUCKET: "axolotl in a bucket"
+  AXOLOTL_SPAWN_EGG: "adder stone o' axolotl"
+  BAKED_POTATO: "roasted potato"
+  BAMBOO_CHEST_RAFT: "bamboo raft with chest"
+  BAMBOO_RAFT: "bamboo raft"
+  BAT_SPAWN_EGG: "adder stone o' bat"
+  BEE_SPAWN_EGG: "adder stone o' bee"
+  BEEF: "raw beef"
+  BEETROOT: "beet"
+  BEETROOT_SEEDS: "beet seeds"
+  BEETROOT_SOUP: "beet soup"
+  BIRCH_BOAT: "birchen boat"
+  BIRCH_CHEST_BOAT: "chest in a birchen boat"
+  BLACK_DYE: "black dye"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "brimstone powder"
+  BLAZE_ROD: "red-hot rod"
+  BLAZE_SPAWN_EGG: "adder stone of will o' the wisp"
+  BLUE_DYE: "blue dye"
+  BONE: "bone"
+  BONE_MEAL: "bone powder"
+  BOOK: "book"
+  BOW: "bow"
+  BOWL: "bowl"
+  BREAD: "bread"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BRICK: "brick"
+  BROWN_DYE: "brown dye"
+  BRUSH: "brush"
+  BUCKET: "bucket"
+  BUNDLE: "fardel"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "adder stone o' camel"
+  CARROT: "caret"
+  CARROT_ON_A_STICK: "caret o'stick"
+  CAT_SPAWN_EGG: "adder stone o' cat"
+  CAULDRON: "caldron"
+  CAVE_SPIDER_SPAWN_EGG: "adder stone o' cave spider"
+  CHAINMAIL_BOOTS: "mailed sabatons"
+  CHAINMAIL_CHESTPLATE: "mailed hauberk"
+  CHAINMAIL_HELMET: "mailed coif"
+  CHAINMAIL_LEGGINGS: "mailed hose"
+  CHARCOAL: "charcoal"
+  CHERRY_BOAT: "stoneberrywood boat"
+  CHERRY_CHEST_BOAT: "chest in a stoneberrywood boat"
+  CHEST_MINECART: "chest in a cart"
+  CHICKEN: "raw fowl"
+  CHICKEN_SPAWN_EGG: "adder stone o' fowl"
+  CHORUS_FRUIT: "chorus fruit"
+  CLAY_BALL: "ball of clay"
+  CLOCK: "clock"
+  COAL: "coal"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "cocoa beans"
+  COD: "raw cod"
+  COD_BUCKET: "cod in a bucket"
+  COD_SPAWN_EGG: "adder stone o' cod"
+  COMMAND_BLOCK_MINECART: "command block in a cart"
+  COMPASS: "compass"
+  COOKED_BEEF: "roasted beef"
+  COOKED_CHICKEN: "roasted fowl"
+  COOKED_COD: "cooked cod"
+  COOKED_MUTTON: "roasted mutton"
+  COOKED_PORKCHOP: "roasted bacon"
+  COOKED_RABBIT: "roasted hare"
+  COOKED_SALMON: "cooked salmon"
+  COOKIE: "biscuit"
+  COPPER_INGOT: "copp'r ingot"
+  COW_SPAWN_EGG: "adder stone o' cow"
+  CREEPER_BANNER_PATTERN: "creeper banner pattern"
+  CREEPER_BANNER_PATTERN_DESC: "creeper charge"
+  CREEPER_SPAWN_EGG: "adder stone o' creeper"
+  CROSSBOW: "cross-bow"
+  CROSSBOW_PROJECTILE: "bolt:"
+  CYAN_DYE: "turquoise dye"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "ebony boat"
+  DARK_OAK_CHEST_BOAT: "chest in an ebony boat"
+  DEBUG_STICK: "stick o' remedy"
+  DEBUG_STICK_EMPTY: "%s hath properties of naught"
+  DEBUG_STICK_SELECT: "'tis \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" to %s"
+  DIAMOND: "diamond"
+  DIAMOND_AXE: "diamond axe"
+  DIAMOND_BOOTS: "diamond sabatons"
+  DIAMOND_CHESTPLATE: "diamond breast plate"
+  DIAMOND_HELMET: "diamond casque"
+  DIAMOND_HOE: "diamond hoe"
+  DIAMOND_HORSE_ARMOR: "horse barding of diamond"
+  DIAMOND_LEGGINGS: "diamond greaves"
+  DIAMOND_PICKAXE: "diamond pickaxe"
+  DIAMOND_SHOVEL: "diamond spade"
+  DIAMOND_SWORD: "diamond sword"
+  DISC_FRAGMENT_5: "disc fragment"
+  DISC_FRAGMENT_5_DESC: "music plate - 5"
+  DOLPHIN_SPAWN_EGG: "adder stone o' dolphin"
+  DONKEY_SPAWN_EGG: "adder stone o' ass"
+  DRAGON_BREATH: "dragons breath"
+  DRIED_KELP: "dried seaweed"
+  DROWNED_SPAWN_EGG: "adder stone o' grindylow"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "echo shard"
+  EGG: "egg"
+  ELDER_GUARDIAN_SPAWN_EGG: "adder stone o' morgen sprite"
+  ELYTRA: "wings"
+  EMERALD: "emerald"
+  ENCHANTED_BOOK: "enchanted book"
+  ENCHANTED_GOLDEN_APPLE: "bewitch'd gilded apple"
+  END_CRYSTAL: "end crystal"
+  ENDER_DRAGON_SPAWN_EGG: "adder stone o' ender dragon"
+  ENDER_EYE: "bewitch'd ender pearl"
+  ENDER_PEARL: "ender pearl"
+  ENDERMAN_SPAWN_EGG: "adder stone o' enderman"
+  ENDERMITE_SPAWN_EGG: "adder stone o' endermite"
+  EVOKER_SPAWN_EGG: "adder stone o' sorcerer"
+  EXPERIENCE_BOTTLE: "bottle o' bewitchment"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  FEATHER: "feather"
+  FERMENTED_SPIDER_EYE: "fermented spider eye"
+  FILLED_MAP: "map"
+  FIRE_CHARGE: "blasting charge"
+  FIREWORK_ROCKET: "firework"
+  FIREWORK_ROCKET_FLIGHT: "length of burn:"
+  FIREWORK_STAR: "firework charge"
+  FIREWORK_STAR_BLACK: "black"
+  FIREWORK_STAR_BLUE: "blue"
+  FIREWORK_STAR_BROWN: "brown"
+  FIREWORK_STAR_CUSTOM_COLOR: "custom"
+  FIREWORK_STAR_CYAN: "turquoise"
+  FIREWORK_STAR_FADE_TO: "fade to"
+  FIREWORK_STAR_FLICKER: "twinkle"
+  FIREWORK_STAR_GRAY: "grey"
+  FIREWORK_STAR_GREEN: "green"
+  FIREWORK_STAR_LIGHT_BLUE: "whey"
+  FIREWORK_STAR_LIGHT_GRAY: "pale grey"
+  FIREWORK_STAR_LIME: "lincoln"
+  FIREWORK_STAR_MAGENTA: "mulberry"
+  FIREWORK_STAR_ORANGE: "tawny"
+  FIREWORK_STAR_PINK: "carnation"
+  FIREWORK_STAR_PURPLE: "purple"
+  FIREWORK_STAR_RED: "red"
+  FIREWORK_STAR_SHAPE: "unknown shape"
+  FIREWORK_STAR_SHAPE_BURST: "burst"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper shaped"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "large ball"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "small ball"
+  FIREWORK_STAR_SHAPE_STAR: "star-shape"
+  FIREWORK_STAR_TRAIL: "trail"
+  FIREWORK_STAR_WHITE: "white"
+  FIREWORK_STAR_YELLOW: "yellow"
+  FISHING_ROD: "fishing rod"
+  FLINT: "flint"
+  FLINT_AND_STEEL: "flint and steel"
+  FLOWER_BANNER_PATTERN: "banner pattern"
+  FLOWER_BANNER_PATTERN_DESC: "flower charge"
+  FOX_SPAWN_EGG: "adder stone o' fox"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "adder stone o' frog"
+  FURNACE_MINECART: "furnace in a cart"
+  GHAST_SPAWN_EGG: "adder stone o' ghast"
+  GHAST_TEAR: "ghast tear"
+  GLASS_BOTTLE: "glass bottle"
+  GLISTERING_MELON_SLICE: "gilded melon piece"
+  GLOBE_BANNER_PATTERN: "globe banner pattern"
+  GLOBE_BANNER_PATTERN_DESC: "globe"
+  GLOW_BERRIES: "glowen berries"
+  GLOW_INK_SAC: "glowen ink sack"
+  GLOW_ITEM_FRAME: "glowen item frame"
+  GLOW_SQUID_SPAWN_EGG: "adder stone o' glowen cuttlefish"
+  GLOWSTONE_DUST: "glowstone dust"
+  GOAT_HORN: "goat horn"
+  GOAT_SPAWN_EGG: "adder stone o' goat"
+  GOLD_INGOT: "gold ingot"
+  GOLD_NUGGET: "gold lump"
+  GOLDEN_APPLE: "gilded apple"
+  GOLDEN_AXE: "golden axe"
+  GOLDEN_BOOTS: "golden sabatons"
+  GOLDEN_CARROT: "golden caret"
+  GOLDEN_CHESTPLATE: "golden breast plate"
+  GOLDEN_HELMET: "golden casque"
+  GOLDEN_HOE: "golden hoe"
+  GOLDEN_HORSE_ARMOR: "gilded horse barding"
+  GOLDEN_LEGGINGS: "golden greaves"
+  GOLDEN_PICKAXE: "golden pickaxe"
+  GOLDEN_SHOVEL: "golden spade"
+  GOLDEN_SWORD: "golden sword"
+  GRAY_DYE: "grey dye"
+  GREEN_DYE: "green dye"
+  GUARDIAN_SPAWN_EGG: "adder stone o' water sprite"
+  GUNPOWDER: "gunpowder"
+  HEART_OF_THE_SEA: "neptune's heart"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "adder stone o' hoglin"
+  HONEY_BOTTLE: "honey bottle"
+  HONEYCOMB: "honeycomb"
+  HOPPER_MINECART: "conveyer in a cart"
+  HORSE_SPAWN_EGG: "adder stone o' horse"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "adder stone o' fear gortach"
+  INK_SAC: "ink sack"
+  IRON_AXE: "iron axe"
+  IRON_BOOTS: "iron sabatons"
+  IRON_CHESTPLATE: "iron breast plate"
+  IRON_GOLEM_SPAWN_EGG: "atter stone o' iron homunculus"
+  IRON_HELMET: "iron casque"
+  IRON_HOE: "iron hoe"
+  IRON_HORSE_ARMOR: "iron horse barding"
+  IRON_INGOT: "iron ingot"
+  IRON_LEGGINGS: "iron greaves"
+  IRON_NUGGET: "iron lump"
+  IRON_PICKAXE: "iron pickaxe"
+  IRON_SHOVEL: "iron spade"
+  IRON_SWORD: "iron sword"
+  ITEM_FRAME: "item frame"
+  JUNGLE_BOAT: "exotic boat"
+  JUNGLE_CHEST_BOAT: "chest in an exotic boat"
+  KNOWLEDGE_BOOK: "book o' knowledge"
+  LAPIS_LAZULI: "lapis"
+  LAVA_BUCKET: "bucket of molten stone"
+  LEAD: "tether"
+  LEATHER: "leather"
+  LEATHER_BOOTS: "leathern boots"
+  LEATHER_CHESTPLATE: "leathern doublet"
+  LEATHER_HELMET: "leathern coif"
+  LEATHER_HORSE_ARMOR: "leathern horse barding"
+  LEATHER_LEGGINGS: "leathern hose"
+  LIGHT_BLUE_DYE: "whey dye"
+  LIGHT_GRAY_DYE: "pale grey dye"
+  LIME_DYE: "lincoln dye"
+  LINGERING_POTION: "lingering potion"
+  LINGERING_POTION_EFFECT_AWKWARD: "awkward lingering potion"
+  LINGERING_POTION_EFFECT_EMPTY: "uncraftable lingering potion"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "lingering potion o' incombustion"
+  LINGERING_POTION_EFFECT_HARMING: "lingering potion o' debilitation"
+  LINGERING_POTION_EFFECT_HEALING: "lingering potion o' physic"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "lingering potion o' invisibility"
+  LINGERING_POTION_EFFECT_LEAPING: "lingering potion o' lightness"
+  LINGERING_POTION_EFFECT_LEVITATION: "lingering potion o' floating"
+  LINGERING_POTION_EFFECT_LUCK: "lingering potion o' fortune"
+  LINGERING_POTION_EFFECT_MUNDANE: "mundane lingering potion"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "lingering potion o' arrant vision"
+  LINGERING_POTION_EFFECT_POISON: "lingering potion o' plague"
+  LINGERING_POTION_EFFECT_REGENERATION: "lingering potion o' restorative"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "lingering potion o' ground's forbearance"
+  LINGERING_POTION_EFFECT_SLOWNESS: "lingering potion o' tarrying"
+  LINGERING_POTION_EFFECT_STRENGTH: "lingering potion o' power"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "lingering potion o' hieing"
+  LINGERING_POTION_EFFECT_THICK: "thick lingering potion"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "lingering potion o' shield wall"
+  LINGERING_POTION_EFFECT_WATER: "lingering water bottle"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "lingering potion o' water breathing"
+  LINGERING_POTION_EFFECT_WEAKNESS: "lingering potion o' ague"
+  LLAMA_SPAWN_EGG: "adder stone o' llama"
+  LODESTONE_COMPASS: "lodestone compass"
+  MAGENTA_DYE: "mulberry dye"
+  MAGMA_CREAM: "brimstone cream"
+  MAGMA_CUBE_SPAWN_EGG: "adder stone o' burning cube"
+  MANGROVE_BOAT: "marsh boat"
+  MANGROVE_CHEST_BOAT: "chest in a marsh boat"
+  MAP: "blank map"
+  MELON_SEEDS: "melon seeds"
+  MELON_SLICE: "melon piece"
+  MILK_BUCKET: "bucket o' milk"
+  MINECART: "iron cart"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "mojang banner pattern"
+  MOJANG_BANNER_PATTERN_DESC: "thing"
+  MOOSHROOM_SPAWN_EGG: "adder stone o' mooshroom"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "adder stone o' mule"
+  MUSHROOM_STEW: "mushroom stew"
+  MUSIC_DISC_11: "music plate"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "music plate"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "music plate"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "music plate"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "music plate"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "music plate"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "music plate"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "music plate"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "music plate"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "music plate"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "music plate"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "music plate"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "music plate"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "music plate"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "music plate"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "music plate"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "raw mutton"
+  NAME_TAG: "name marker"
+  NAUTILUS_SHELL: "nautilus shell"
+  NETHER_BRICK: "nether brick"
+  NETHER_STAR: "nether star"
+  NETHERITE_AXE: "netherite axe"
+  NETHERITE_BOOTS: "netherite sabatons"
+  NETHERITE_CHESTPLATE: "netherite breastplate"
+  NETHERITE_HELMET: "netherite helmet"
+  NETHERITE_HOE: "netherite hoe"
+  NETHERITE_INGOT: "netherite ingot"
+  NETHERITE_LEGGINGS: "netherite greaves"
+  NETHERITE_PICKAXE: "netherite pickaxe"
+  NETHERITE_SCRAP: "scrap of netherite"
+  NETHERITE_SHOVEL: "netherite shovel"
+  NETHERITE_SWORD: "netherite sword"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "oaken boat"
+  OAK_CHEST_BOAT: "chest in an oaken boat"
+  OCELOT_SPAWN_EGG: "adder stone o' wildcat"
+  ORANGE_DYE: "tawny dye"
+  PAINTING: "painting"
+  PANDA_SPAWN_EGG: "adder stone o' parti-coloured bear"
+  PAPER: "paper"
+  PARROT_SPAWN_EGG: "adder stone o' parrot"
+  PHANTOM_MEMBRANE: "night hag's skin"
+  PHANTOM_SPAWN_EGG: "adder stone o' night hag"
+  PIG_SPAWN_EGG: "adder stone o' pig"
+  PIGLIN_BANNER_PATTERN: "banner pattern"
+  PIGLIN_BANNER_PATTERN_DESC: "snout"
+  PIGLIN_BRUTE_SPAWN_EGG: "adder stone o' piglin brute"
+  PIGLIN_SPAWN_EGG: "adder stone o' piglin"
+  PILLAGER_SPAWN_EGG: "adder stone o' wild huntsman"
+  PINK_DYE: "carnation dye"
+  PITCHER_POD: "pitch'r pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "green potato"
+  POLAR_BEAR_SPAWN_EGG: "adder stone o' bear"
+  POPPED_CHORUS_FRUIT: "popp'd chorus fruit"
+  PORKCHOP: "raw bacon"
+  POTATO: "potato"
+  POTION: "potion"
+  POTION_EFFECT_AWKWARD: "awkward potion"
+  POTION_EFFECT_EMPTY: "uncraftable potion"
+  POTION_EFFECT_FIRE_RESISTANCE: "potion o' incombustion"
+  POTION_EFFECT_HARMING: "potion o' debilitation"
+  POTION_EFFECT_HEALING: "potion o' physic"
+  POTION_EFFECT_INVISIBILITY: "potion o' invisibility"
+  POTION_EFFECT_LEAPING: "potion o' lightness"
+  POTION_EFFECT_LEVITATION: "potion o' floating"
+  POTION_EFFECT_LUCK: "potion o' fortune"
+  POTION_EFFECT_MUNDANE: "mundane potion"
+  POTION_EFFECT_NIGHT_VISION: "potion o' arrant vision"
+  POTION_EFFECT_POISON: "potion o' plague"
+  POTION_EFFECT_REGENERATION: "potion o' restorative"
+  POTION_EFFECT_SLOW_FALLING: "potion o' ground's forbearance"
+  POTION_EFFECT_SLOWNESS: "potion o' tarrying"
+  POTION_EFFECT_STRENGTH: "potion o' power"
+  POTION_EFFECT_SWIFTNESS: "potion o' hieing"
+  POTION_EFFECT_THICK: "thick potion"
+  POTION_EFFECT_TURTLE_MASTER: "potion o' shield wall"
+  POTION_EFFECT_WATER: "water bottle"
+  POTION_EFFECT_WATER_BREATHING: "potion o' water breathing"
+  POTION_EFFECT_WEAKNESS: "potion o' ague"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "death's-mazzard pottery shard"
+  POWDER_SNOW_BUCKET: "bucket of powdered snow"
+  PRISMARINE_CRYSTALS: "prismarine crystals"
+  PRISMARINE_SHARD: "prismarine shard"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "blowfish"
+  PUFFERFISH_BUCKET: "blowfish in a bucket"
+  PUFFERFISH_SPAWN_EGG: "adder stone o' blowfish"
+  PUMPKIN_PIE: "pumpion pie"
+  PUMPKIN_SEEDS: "pumpion seeds"
+  PURPLE_DYE: "purple dye"
+  QUARTZ: "nether quarz"
+  RABBIT: "raw hare"
+  RABBIT_FOOT: "hare's foot"
+  RABBIT_HIDE: "hare skin"
+  RABBIT_SPAWN_EGG: "adder stone o' hare"
+  RABBIT_STEW: "hare stew"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "adder stone o' wild hound"
+  RAW_COPPER: "raw copp'r"
+  RAW_GOLD: "raw gold"
+  RAW_IRON: "raw iron"
+  RECOVERY_COMPASS: "recovery compass"
+  RED_DYE: "red dye"
+  REDSTONE: "redstone dust"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "rotten flesh"
+  SADDLE: "saddle"
+  SALMON: "raw salmon"
+  SALMON_BUCKET: "salmon in a bucket"
+  SALMON_SPAWN_EGG: "adder stone o' salmon"
+  SCUTE: "scale"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "shears"
+  SHEEP_SPAWN_EGG: "adder stone o' sheep"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "shield"
+  SHIELD_BLACK: "black shield"
+  SHIELD_BLUE: "blue shield"
+  SHIELD_BROWN: "brown shield"
+  SHIELD_CYAN: "turquoise shield"
+  SHIELD_GRAY: "grey shield"
+  SHIELD_GREEN: "green shield"
+  SHIELD_LIGHT_BLUE: "whey shield"
+  SHIELD_LIGHT_GRAY: "pale grey shield"
+  SHIELD_LIME: "lincoln shield"
+  SHIELD_MAGENTA: "mulberry shield"
+  SHIELD_ORANGE: "tawny shield"
+  SHIELD_PINK: "carnation shield"
+  SHIELD_PURPLE: "purple shield"
+  SHIELD_RED: "red shield"
+  SHIELD_WHITE: "white shield"
+  SHIELD_YELLOW: "yellow shield"
+  SHULKER_SHELL: "shulker shell"
+  SHULKER_SPAWN_EGG: "adder stone o' shulker"
+  SIGN: "sign"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "forging template"
+  SILVERFISH_SPAWN_EGG: "adder stone o' atomy"
+  SKELETON_HORSE_SPAWN_EGG: "adder stone o' ghostly horse"
+  SKELETON_SPAWN_EGG: "adder stone o' restless skeleton"
+  SKULL_BANNER_PATTERN: "skull banner pattern"
+  SKULL_BANNER_PATTERN_DESC: "poor yorick's charge"
+  SKULL_POTTERY_SHARD: "death's-mazzard pottery shard"
+  SKULL_POTTERY_SHERD: "death's-mazzard pottery shard"
+  SLIME_BALL: "slimeball"
+  SLIME_SPAWN_EGG: "adder stone o' slime cube"
+  SMITHING_TEMPLATE: "mending"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "addeth ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armour"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "addeth a piece of armour"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "minerals & gemstones"
+  SMITHING_TEMPLATE_INGREDIENTS: "components:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "addeth netherite ingot"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "mending"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "addeth diamond armour weapon or implement"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ingot"
+  SMITHING_TEMPLATE_UPGRADE: "reform: "
+  SNIFFER_SPAWN_EGG: "adder stone o' sniffener"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "atter stone o' snow homunculus"
+  SNOWBALL: "snowball"
+  SPECTRAL_ARROW: "ghostly arrow"
+  SPIDER_EYE: "spider eye"
+  SPIDER_SPAWN_EGG: "adder stone o' spider"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "throwing potion"
+  SPLASH_POTION_EFFECT_AWKWARD: "awkward throwing potion"
+  SPLASH_POTION_EFFECT_EMPTY: "uncraftable throwing potion"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "throwing potion o’ incombustion"
+  SPLASH_POTION_EFFECT_HARMING: "throwing potion o’ debilitation"
+  SPLASH_POTION_EFFECT_HEALING: "throwing potion o’ physic"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "throwing potion o’ invisibility"
+  SPLASH_POTION_EFFECT_LEAPING: "throwing potion o’ lightness"
+  SPLASH_POTION_EFFECT_LEVITATION: "throwing potion o’ floating"
+  SPLASH_POTION_EFFECT_LUCK: "throwing potion o’ fortune"
+  SPLASH_POTION_EFFECT_MUNDANE: "mundane throwing potion"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "throwing potion o’ arrant vision"
+  SPLASH_POTION_EFFECT_POISON: "throwing potion o’ plague"
+  SPLASH_POTION_EFFECT_REGENERATION: "throwing potion o’ restorative"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "throwing potion o’ ground's forbearance"
+  SPLASH_POTION_EFFECT_SLOWNESS: "throwing potion o’ tarrying"
+  SPLASH_POTION_EFFECT_STRENGTH: "throwing potion o’ power"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "throwing potion o’ hieing"
+  SPLASH_POTION_EFFECT_THICK: "thick throwing potion"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "throwing potion o’ shield wall"
+  SPLASH_POTION_EFFECT_WATER: "throwing potion o’ water"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "throwing potion o’ water breathinig"
+  SPLASH_POTION_EFFECT_WEAKNESS: "throwing potion o’ ague"
+  SPRUCE_BOAT: "pine boat"
+  SPRUCE_CHEST_BOAT: "chest in a pine boat"
+  SPYGLASS: "spyglass"
+  SQUID_SPAWN_EGG: "adder stone o' cuttlefish"
+  STICK: "stick"
+  STONE_AXE: "stone axe"
+  STONE_HOE: "stone hoe"
+  STONE_PICKAXE: "stone pickaxe"
+  STONE_SHOVEL: "stone spade"
+  STONE_SWORD: "stone sword"
+  STRAY_SPAWN_EGG: "adder stone o' mummy"
+  STRIDER_SPAWN_EGG: "adder stone o' strider"
+  STRING: "string"
+  SUGAR: "sugar"
+  SUSPICIOUS_STEW: "suspicious stew"
+  SWEET_BERRIES: "sweet berries"
+  TADPOLE_BUCKET: "todpole in a bucket"
+  TADPOLE_SPAWN_EGG: "adder stone o' todpole"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "steeped arrow"
+  TIPPED_ARROW_EFFECT_AWKWARD: "steeped arrow"
+  TIPPED_ARROW_EFFECT_EMPTY: "uncraftable steeped arrow"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "arrow o' incombustion"
+  TIPPED_ARROW_EFFECT_HARMING: "arrow o' debilitation"
+  TIPPED_ARROW_EFFECT_HEALING: "arrow o' physic"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "arrow o' invisibility"
+  TIPPED_ARROW_EFFECT_LEAPING: "arrow o' lightness"
+  TIPPED_ARROW_EFFECT_LEVITATION: "arrow o' floating"
+  TIPPED_ARROW_EFFECT_LUCK: "arrow o' fortune"
+  TIPPED_ARROW_EFFECT_MUNDANE: "steeped arrow"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "arrow o' arrant vision"
+  TIPPED_ARROW_EFFECT_POISON: "arrow o' plague"
+  TIPPED_ARROW_EFFECT_REGENERATION: "arrow o' restorative"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "arrow o' ground's forbearance"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "arrow o' tarrying"
+  TIPPED_ARROW_EFFECT_STRENGTH: "arrow o' power"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "arrow o' hieing"
+  TIPPED_ARROW_EFFECT_THICK: "taynted arewe"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "arrow o' shield wall"
+  TIPPED_ARROW_EFFECT_WATER: "plashing arrow"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "arrow o' water breathing"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "arrow o' weakness"
+  TNT_MINECART: "gunpowder cask in a cart"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "periapt"
+  TRADER_LLAMA_SPAWN_EGG: "adder stone o' pack llama"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "trident"
+  TROPICAL_FISH: "exotic fish"
+  TROPICAL_FISH_BUCKET: "exotic fish in a bucket"
+  TROPICAL_FISH_SPAWN_EGG: "adder stone o' exotic fish"
+  TURTLE_HELMET: "turtle shell"
+  TURTLE_SPAWN_EGG: "adder stone o' turtle"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "adder stone o' familiar"
+  VILLAGER_SPAWN_EGG: "adder stone o' peasant"
+  VINDICATOR_SPAWN_EGG: "adder stone o' boggart"
+  WANDERING_TRADER_SPAWN_EGG: "adder stone o' wandering merchant"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "adder stone o' warden"
+  WARPED_FUNGUS_ON_A_STICK: "warp'd mushrump on a stick"
+  WATER_BUCKET: "water'd bucket"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "wheat"
+  WHEAT_SEEDS: "wheat seeds"
+  WHITE_DYE: "white dye"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "adder stone o' witch"
+  WITHER_SKELETON_SPAWN_EGG: "adder stone o' wither'd skeleton"
+  WITHER_SPAWN_EGG: "adder stone o' wither"
+  WOLF_SPAWN_EGG: "adder stone o' wolf"
+  WOODEN_AXE: "wooden axe"
+  WOODEN_HOE: "wooden hoe"
+  WOODEN_PICKAXE: "wooden pickaxe"
+  WOODEN_SHOVEL: "wooden spade"
+  WOODEN_SWORD: "wooden sword"
+  WRITABLE_BOOK: "book and quill"
+  WRITTEN_BOOK: "writ book"
+  YELLOW_DYE: "yellow dye"
+  ZOGLIN_SPAWN_EGG: "adder stone o' zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "adder stone o' undead horse"
+  ZOMBIE_SPAWN_EGG: "adder stone o' undead wight"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "adder stone o' cannibal peasant"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "adder stone o' rott'd piglin"
+  CHEST: "on the torso:"
+  FEET: "on the feet:"
+  HEAD: "on the head:"
+  LEGS: "on the legs:"
+  MAINHAND: "in the main hand:"
+  OFFHAND: "in the off-hand:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

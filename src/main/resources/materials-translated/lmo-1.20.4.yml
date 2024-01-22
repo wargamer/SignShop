@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "boton de rubinia"
+  ACACIA_DOOR: "porta de rubinia"
+  ACACIA_FENCE: "stongarda de rubinia"
+  ACACIA_FENCE_GATE: "restell de rubinia"
+  ACACIA_HANGING_SIGN: "insegna de rubinia"
+  ACACIA_LEAVES: "foeuje de rubinia"
+  ACACIA_LOG: "bora de rubinia"
+  ACACIA_PLANKS: "ass de rubinia"
+  ACACIA_PRESSURE_PLATE: "pian a pression de rubinia"
+  ACACIA_SAPLING: "but de rubinia"
+  ACACIA_SIGN: "cartell de rubinia"
+  ACACIA_SLAB: "pioda de rubinia"
+  ACACIA_STAIRS: "basei de rubinia"
+  ACACIA_TRAPDOOR: "bussera de rubinia"
+  ACACIA_WALL_HANGING_SIGN: "insegna a mur de rubinia"
+  ACACIA_WALL_SIGN: "cartell de mur de rubinia"
+  ACACIA_WOOD: "legn de rubinia"
+  ACTIVATOR_RAIL: "binari pizzador"
+  AIR: "aria"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "bloch de ametista"
+  AMETHYST_CLUSTER: "grapell de ametista"
+  ANCIENT_DEBRIS: "rest antigh"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "pioda de andesit"
+  ANDESITE_STAIRS: "basei de andesit"
+  ANDESITE_WALL: "mur de andesit"
+  ANVIL: "incusgen"
+  ATTACHED_MELON_STEM: "pianta de inguria madura"
+  ATTACHED_PUMPKIN_STEM: "pianta de zuca madura"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "foeuje de azalea"
+  AZURE_BLUET: "houstonia"
+  BAMBOO: "bamboo"
+  BAMBOO_BLOCK: "bloch de bamboo"
+  BAMBOO_BUTTON: "boton de bamboo"
+  BAMBOO_DOOR: "porta de bamboo"
+  BAMBOO_FENCE: "stongarda de bamboo"
+  BAMBOO_FENCE_GATE: "restell de bamboo"
+  BAMBOO_HANGING_SIGN: "insegna de bamboo"
+  BAMBOO_MOSAIC: "mosaegh de bamboo"
+  BAMBOO_MOSAIC_SLAB: "pioda de mosaegh de bamboo"
+  BAMBOO_MOSAIC_STAIRS: "basei de mosaegh de bamboo"
+  BAMBOO_PLANKS: "ass de bamboo"
+  BAMBOO_PRESSURE_PLATE: "pian a pression de bamboo"
+  BAMBOO_SAPLING: "but de bamboo"
+  BAMBOO_SIGN: "cartell de bamboo"
+  BAMBOO_SLAB: "pioda de bamboo"
+  BAMBOO_STAIRS: "basei de bamboo"
+  BAMBOO_TRAPDOOR: "bussera de bamboo"
+  BAMBOO_WALL_HANGING_SIGN: "insegna a mur de bamboo"
+  BAMBOO_WALL_SIGN: "cartell de mur de bamboo"
+  BANNER_BASE_BLACK: "camp negher"
+  BANNER_BASE_BLUE: "camp bleou"
+  BANNER_BASE_BROWN: "camp marron"
+  BANNER_BASE_CYAN: "camp cian"
+  BANNER_BASE_GRAY: "camp gris"
+  BANNER_BASE_GREEN: "camp verd"
+  BANNER_BASE_LIGHT_BLUE: "camp bloeu ciar"
+  BANNER_BASE_LIGHT_GRAY: "camp gris ciar"
+  BANNER_BASE_LIME: "camp lime"
+  BANNER_BASE_MAGENTA: "camp magenta"
+  BANNER_BASE_ORANGE: "camp naranz"
+  BANNER_BASE_PINK: "camp roeusa"
+  BANNER_BASE_PURPLE: "camp vioeula"
+  BANNER_BASE_RED: "camp ross"
+  BANNER_BASE_WHITE: "camp bianch"
+  BANNER_BASE_YELLOW: "camp sgiald"
+  BANNER_BORDER_BLACK: "bordura negra"
+  BANNER_BORDER_BLUE: "bordura bloeu"
+  BANNER_BORDER_BROWN: "bordura marrona"
+  BANNER_BORDER_CYAN: "bordura ciana"
+  BANNER_BORDER_GRAY: "bordura grisa"
+  BANNER_BORDER_GREEN: "bordura verda"
+  BANNER_BORDER_LIGHT_BLUE: "bordura bloeu ciar"
+  BANNER_BORDER_LIGHT_GRAY: "bordura gris ciar"
+  BANNER_BORDER_LIME: "bordura lime"
+  BANNER_BORDER_MAGENTA: "bordura magenta"
+  BANNER_BORDER_ORANGE: "bordura naranza"
+  BANNER_BORDER_PINK: "bordura roeusa"
+  BANNER_BORDER_PURPLE: "bordura vioeula"
+  BANNER_BORDER_RED: "bordura rossa"
+  BANNER_BORDER_WHITE: "bordura bianca"
+  BANNER_BORDER_YELLOW: "bordura sgialda"
+  BANNER_BRICKS_BLACK: "camp de quadrei negher"
+  BANNER_BRICKS_BLUE: "camp de quadrei bloeu"
+  BANNER_BRICKS_BROWN: "camp de quadrei marron"
+  BANNER_BRICKS_CYAN: "camp de quadrei celest"
+  BANNER_BRICKS_GRAY: "camp de quadrei gris"
+  BANNER_BRICKS_GREEN: "camp de quadrei verd"
+  BANNER_BRICKS_LIGHT_BLUE: "camp de quadrei bloeu ciar"
+  BANNER_BRICKS_LIGHT_GRAY: "camp de quadrei gris ciar"
+  BANNER_BRICKS_LIME: "camp de quadrei lime"
+  BANNER_BRICKS_MAGENTA: "camp de quadrei magenta"
+  BANNER_BRICKS_ORANGE: "camp de quadrei naranz"
+  BANNER_BRICKS_PINK: "camp de quadrei roeusa"
+  BANNER_BRICKS_PURPLE: "camp de quadrei vioeula"
+  BANNER_BRICKS_RED: "camp de quadrei ross"
+  BANNER_BRICKS_WHITE: "camp de quadrei bianch"
+  BANNER_BRICKS_YELLOW: "camp de quadrei sgiald"
+  BANNER_CIRCLE_BLACK: "sercet negher"
+  BANNER_CIRCLE_BLUE: "sercet bloeu"
+  BANNER_CIRCLE_BROWN: "sercet marron"
+  BANNER_CIRCLE_CYAN: "sercet celest"
+  BANNER_CIRCLE_GRAY: "sercet gris"
+  BANNER_CIRCLE_GREEN: "sercet verd"
+  BANNER_CIRCLE_LIGHT_BLUE: "sercet bloeu ciar"
+  BANNER_CIRCLE_LIGHT_GRAY: "sercet gris ciar"
+  BANNER_CIRCLE_LIME: "sercet lime"
+  BANNER_CIRCLE_MAGENTA: "sercet magenta"
+  BANNER_CIRCLE_ORANGE: "sercet naranz"
+  BANNER_CIRCLE_PINK: "sercet roeusa"
+  BANNER_CIRCLE_PURPLE: "sercet vioeula"
+  BANNER_CIRCLE_RED: "sercet ross"
+  BANNER_CIRCLE_WHITE: "sercet bianch"
+  BANNER_CIRCLE_YELLOW: "sercet sgiald"
+  BANNER_CREEPER_BLACK: "faza de creeper negra"
+  BANNER_CREEPER_BLUE: "faza de creeper bloeu"
+  BANNER_CREEPER_BROWN: "faza de creeper marrona"
+  BANNER_CREEPER_CYAN: "faza de creeper celest"
+  BANNER_CREEPER_GRAY: "faza de creeper grisa"
+  BANNER_CREEPER_GREEN: "faza de creeper verda"
+  BANNER_CREEPER_LIGHT_BLUE: "faza de creeper bloeu ciar"
+  BANNER_CREEPER_LIGHT_GRAY: "faza de creeper grisa ciar"
+  BANNER_CREEPER_LIME: "faza de creeper lime"
+  BANNER_CREEPER_MAGENTA: "faza de creeper magenta"
+  BANNER_CREEPER_ORANGE: "faza de creeper naranza"
+  BANNER_CREEPER_PINK: "faza de creeper roeusa"
+  BANNER_CREEPER_PURPLE: "faza de creeper vioeula"
+  BANNER_CREEPER_RED: "faza de creeper rossa"
+  BANNER_CREEPER_WHITE: "faza da creeper bianca"
+  BANNER_CREEPER_YELLOW: "faza de creeper sgialda"
+  BANNER_CROSS_BLACK: "cros de sant andrea negra"
+  BANNER_CROSS_BLUE: "cros de sant andrea bloeu"
+  BANNER_CROSS_BROWN: "cros de andrea marrona"
+  BANNER_CROSS_CYAN: "cros de sant andrea celesta"
+  BANNER_CROSS_GRAY: "cros de sant andrea grisa"
+  BANNER_CROSS_GREEN: "cros de andrea verda"
+  BANNER_CROSS_LIGHT_BLUE: "cros de sant andrea bloeu ciar"
+  BANNER_CROSS_LIGHT_GRAY: "cros de sant andrea grisa ciar"
+  BANNER_CROSS_LIME: "cros de sant andrea lime"
+  BANNER_CROSS_MAGENTA: "cros de sant andrea magenta"
+  BANNER_CROSS_ORANGE: "cros de sant andrea naranza"
+  BANNER_CROSS_PINK: "cros de sant andrea roeusa"
+  BANNER_CROSS_PURPLE: "cros de sant andrea vioeula"
+  BANNER_CROSS_RED: "cros de sant andrea rossa"
+  BANNER_CROSS_WHITE: "cros de sant andrea bianca"
+  BANNER_CROSS_YELLOW: "cros de sant andrea sgialda"
+  BANNER_CURLY_BORDER_BLACK: "bordura negra dentada"
+  BANNER_CURLY_BORDER_BLUE: "bordura bloeu dentada"
+  BANNER_CURLY_BORDER_BROWN: "bordura marrona dentada"
+  BANNER_CURLY_BORDER_CYAN: "bordura ciana dentada"
+  BANNER_CURLY_BORDER_GRAY: "bordura grisa dentada"
+  BANNER_CURLY_BORDER_GREEN: "bordura verda dentada"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bordura bloeu ciar dentada"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bordura gris ciar dentada"
+  BANNER_CURLY_BORDER_LIME: "bordura lime dentada"
+  BANNER_CURLY_BORDER_MAGENTA: "bordura magenta dentada"
+  BANNER_CURLY_BORDER_ORANGE: "bordura naranza dentada"
+  BANNER_CURLY_BORDER_PINK: "bordura roeusa dentada"
+  BANNER_CURLY_BORDER_PURPLE: "bordura vioeula dentada"
+  BANNER_CURLY_BORDER_RED: "bordura rossa dentada"
+  BANNER_CURLY_BORDER_WHITE: "bordura bianca dentada"
+  BANNER_CURLY_BORDER_YELLOW: "bordura sgialda dentada"
+  BANNER_DIAGONAL_LEFT_BLACK: "tajad negher"
+  BANNER_DIAGONAL_LEFT_BLUE: "tajad bloeu"
+  BANNER_DIAGONAL_LEFT_BROWN: "tajad marron"
+  BANNER_DIAGONAL_LEFT_CYAN: "tajad celest"
+  BANNER_DIAGONAL_LEFT_GRAY: "tajad gris"
+  BANNER_DIAGONAL_LEFT_GREEN: "tajad verd"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "tajad bloeu ciar"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "tajad gris ciar"
+  BANNER_DIAGONAL_LEFT_LIME: "tajad lime"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "tajad magenta"
+  BANNER_DIAGONAL_LEFT_ORANGE: "tajad naranz"
+  BANNER_DIAGONAL_LEFT_PINK: "tajad roeusa"
+  BANNER_DIAGONAL_LEFT_PURPLE: "tajad vioeula"
+  BANNER_DIAGONAL_LEFT_RED: "tajad ross"
+  BANNER_DIAGONAL_LEFT_WHITE: "tajad bianch"
+  BANNER_DIAGONAL_LEFT_YELLOW: "tajad sgiald"
+  BANNER_DIAGONAL_RIGHT_BLACK: "stretajad negher"
+  BANNER_DIAGONAL_RIGHT_BLUE: "stretajad bloeu"
+  BANNER_DIAGONAL_RIGHT_BROWN: "stretajad marron"
+  BANNER_DIAGONAL_RIGHT_CYAN: "stretajad celest"
+  BANNER_DIAGONAL_RIGHT_GRAY: "stretajad gris"
+  BANNER_DIAGONAL_RIGHT_GREEN: "stretajad verd"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "stretajad bloeu ciar"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "stretajad gris ciar"
+  BANNER_DIAGONAL_RIGHT_LIME: "stretajad lime"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "stretajad magenta"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "stretajad naranz"
+  BANNER_DIAGONAL_RIGHT_PINK: "stretajad roeusa"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "stretajad vioeula"
+  BANNER_DIAGONAL_RIGHT_RED: "stretajad ross"
+  BANNER_DIAGONAL_RIGHT_WHITE: "stretajad bianch"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "stretajad sgiald"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "stretajad negher a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "stretajad bloeu a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "stretajad marron a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "stretajad celest a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "stretajad gris a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "stretajad verd a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "stretajad bloeu ciar a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "stretajad gris ciar a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "stretajad lime a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "stretajad magenta a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "stretajad naranz a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "stretajad roeusa a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "stretajad vioeula a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_RED: "stretajad ross a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "stretajad bianch a l'invers"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "stretajad sgiald a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "tajad negher a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "tajad bloeu a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "tajad marron a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tajad celest a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "tajad gris a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "tajad verd a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "tajad bloeu ciar a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "tajad gris ciar a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "tajad lime a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "tajad magenta a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "tajad naranz a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "tajad roeusa a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "tajad vioeula a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "tajad ross a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "tajad bianch a l'invers"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "tajad sgiald a l'invers"
+  BANNER_FLOWER_BLACK: "fior negher"
+  BANNER_FLOWER_BLUE: "fior bloeu"
+  BANNER_FLOWER_BROWN: "fior marron"
+  BANNER_FLOWER_CYAN: "fior cian"
+  BANNER_FLOWER_GRAY: "fior gris"
+  BANNER_FLOWER_GREEN: "fior verd"
+  BANNER_FLOWER_LIGHT_BLUE: "fior bloeu ciar"
+  BANNER_FLOWER_LIGHT_GRAY: "fior gris ciar"
+  BANNER_FLOWER_LIME: "fior lime"
+  BANNER_FLOWER_MAGENTA: "fior magenta"
+  BANNER_FLOWER_ORANGE: "fior naranz"
+  BANNER_FLOWER_PINK: "fior roeusa"
+  BANNER_FLOWER_PURPLE: "fior vioeula"
+  BANNER_FLOWER_RED: "fior ross"
+  BANNER_FLOWER_WHITE: "fior bianch"
+  BANNER_FLOWER_YELLOW: "fior sgiald"
+  BANNER_GLOBE_BLACK: "pianeda negher"
+  BANNER_GLOBE_BLUE: "pianeda bloeu"
+  BANNER_GLOBE_BROWN: "pianeda marron"
+  BANNER_GLOBE_CYAN: "pianeda cian"
+  BANNER_GLOBE_GRAY: "pianeda gris"
+  BANNER_GLOBE_GREEN: "pianeda verd"
+  BANNER_GLOBE_LIGHT_BLUE: "pianeda bloeu ciar"
+  BANNER_GLOBE_LIGHT_GRAY: "pianeda gris ciar"
+  BANNER_GLOBE_LIME: "pianeda lime"
+  BANNER_GLOBE_MAGENTA: "pianeda magenta"
+  BANNER_GLOBE_ORANGE: "pianeda naranz"
+  BANNER_GLOBE_PINK: "pianeda roeusa"
+  BANNER_GLOBE_PURPLE: "pianeda vioeula"
+  BANNER_GLOBE_RED: "pianeda ross"
+  BANNER_GLOBE_WHITE: "pianeda bianch"
+  BANNER_GLOBE_YELLOW: "pianeda sgiald"
+  BANNER_GRADIENT_BLACK: "sfumadura negra"
+  BANNER_GRADIENT_BLUE: "sfumadura bloeu"
+  BANNER_GRADIENT_BROWN: "sfumadura marrona"
+  BANNER_GRADIENT_CYAN: "sfumadura celesta"
+  BANNER_GRADIENT_GRAY: "sfumadura grisa"
+  BANNER_GRADIENT_GREEN: "sfumadura verda"
+  BANNER_GRADIENT_LIGHT_BLUE: "sfumadura bloeu ciar"
+  BANNER_GRADIENT_LIGHT_GRAY: "sfumadura gris ciar"
+  BANNER_GRADIENT_LIME: "sfumadura lime"
+  BANNER_GRADIENT_MAGENTA: "sfumadura magenta"
+  BANNER_GRADIENT_ORANGE: "sfumadura naranza"
+  BANNER_GRADIENT_PINK: "sfumadura roeusa"
+  BANNER_GRADIENT_PURPLE: "sfumadura vioeula"
+  BANNER_GRADIENT_RED: "sfumadura rossa"
+  BANNER_GRADIENT_WHITE: "sfumadura bianca"
+  BANNER_GRADIENT_YELLOW: "sfumadura sgialda"
+  BANNER_GRADIENT_UP_BLACK: "sfumadura negra a la bas"
+  BANNER_GRADIENT_UP_BLUE: "sfumadura bloeu a la bas"
+  BANNER_GRADIENT_UP_BROWN: "sfumadura marrona a la bas"
+  BANNER_GRADIENT_UP_CYAN: "sfumadura cian a la bas"
+  BANNER_GRADIENT_UP_GRAY: "sfumadura grisa a la bas"
+  BANNER_GRADIENT_UP_GREEN: "sfumadura verda a la bas"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "sfumadura bloeu ciar a la bas"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "sfumadura gris ciar a la bas"
+  BANNER_GRADIENT_UP_LIME: "sfumadura lime a la bas"
+  BANNER_GRADIENT_UP_MAGENTA: "sfumadura magenta a la bas"
+  BANNER_GRADIENT_UP_ORANGE: "sfumadura naranza a la bas"
+  BANNER_GRADIENT_UP_PINK: "sfumadura roeusa a la bas"
+  BANNER_GRADIENT_UP_PURPLE: "sfumadura vioeula a la bas"
+  BANNER_GRADIENT_UP_RED: "sfumadura rossa a la bas"
+  BANNER_GRADIENT_UP_WHITE: "sfumadura bianca a la bas"
+  BANNER_GRADIENT_UP_YELLOW: "sfumadura sgialda a la bas"
+  BANNER_HALF_HORIZONTAL_BLACK: "s'cioncad negher"
+  BANNER_HALF_HORIZONTAL_BLUE: "s'cioncad bloeu"
+  BANNER_HALF_HORIZONTAL_BROWN: "s'cioncad marron"
+  BANNER_HALF_HORIZONTAL_CYAN: "s'cioncad celest"
+  BANNER_HALF_HORIZONTAL_GRAY: "s'cioncad gris"
+  BANNER_HALF_HORIZONTAL_GREEN: "s'cioncad verd"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "s'cioncad bloeu ciar"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "s'cioncad gris ciar"
+  BANNER_HALF_HORIZONTAL_LIME: "s'cioncad lime"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "s'cioncad magenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "s'cioncad naranz"
+  BANNER_HALF_HORIZONTAL_PINK: "s'cioncad roeusa"
+  BANNER_HALF_HORIZONTAL_PURPLE: "s'cioncad vioeula"
+  BANNER_HALF_HORIZONTAL_RED: "s'cioncad ross"
+  BANNER_HALF_HORIZONTAL_WHITE: "s'cioncad bianch"
+  BANNER_HALF_HORIZONTAL_YELLOW: "s'cioncad sgiald"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "s'cioncad negher a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "s'cioncad bloeu a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "s'cioncad marron a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "s'cioncad celest a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "s'cioncad gris a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "s'cioncad verd a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "s'cioncad bloeu ciar a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "s'cioncad gris ciar a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "s'cioncad lime a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "s'cioncad magenta a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "s'cioncad naranz a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "s'cioncad roeusa a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "s'cioncad vioeula a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "s'cioncad ross a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "s'cioncad bianch a l'invers"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "s'cioncad sgiald a l'invers"
+  BANNER_HALF_VERTICAL_BLACK: "partid negher"
+  BANNER_HALF_VERTICAL_BLUE: "partid bloeu"
+  BANNER_HALF_VERTICAL_BROWN: "partid marron"
+  BANNER_HALF_VERTICAL_CYAN: "partid celest"
+  BANNER_HALF_VERTICAL_GRAY: "partid gris"
+  BANNER_HALF_VERTICAL_GREEN: "partid verd"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "partid bloeu ciar"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "partid gris ciar"
+  BANNER_HALF_VERTICAL_LIME: "partid lime"
+  BANNER_HALF_VERTICAL_MAGENTA: "partid magenta"
+  BANNER_HALF_VERTICAL_ORANGE: "partid naranz"
+  BANNER_HALF_VERTICAL_PINK: "partid roeusa"
+  BANNER_HALF_VERTICAL_PURPLE: "partid vioeula"
+  BANNER_HALF_VERTICAL_RED: "partid ross"
+  BANNER_HALF_VERTICAL_WHITE: "partid bianch"
+  BANNER_HALF_VERTICAL_YELLOW: "partid sgiald"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "partid negher a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "partid bloeu a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "partid marron a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "partid celest a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "partid gris a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "partid verd a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "partid bloeu a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "partid gris ciar a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "partid lime a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "partid magenta a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "partid naranz a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "partid roeusa a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "partid vioeula a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "partid ross a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "partid bianch a l'invers"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "partid sgiald a l'invers"
+  BANNER_MOJANG_BLACK: "loeugh negher"
+  BANNER_MOJANG_BLUE: "loeugh bloeu"
+  BANNER_MOJANG_BROWN: "loeugh marron"
+  BANNER_MOJANG_CYAN: "loeugh cian"
+  BANNER_MOJANG_GRAY: "loeugh gris"
+  BANNER_MOJANG_GREEN: "loeugh verd"
+  BANNER_MOJANG_LIGHT_BLUE: "loeugh bloeu ciar"
+  BANNER_MOJANG_LIGHT_GRAY: "loeugh gris ciar"
+  BANNER_MOJANG_LIME: "loeugh lime"
+  BANNER_MOJANG_MAGENTA: "loeugh magenta"
+  BANNER_MOJANG_ORANGE: "loeugh naranz"
+  BANNER_MOJANG_PINK: "loeugh roeusa"
+  BANNER_MOJANG_PURPLE: "loeugh vioeula"
+  BANNER_MOJANG_RED: "loeugh ross"
+  BANNER_MOJANG_WHITE: "loeugh bianch"
+  BANNER_MOJANG_YELLOW: "loeugh sgiald"
+  BANNER_PIGLIN_BLACK: "grugn negher"
+  BANNER_PIGLIN_BLUE: "grugn bloeu"
+  BANNER_PIGLIN_BROWN: "grugn marron"
+  BANNER_PIGLIN_CYAN: "grugn cian"
+  BANNER_PIGLIN_GRAY: "grugn gris"
+  BANNER_PIGLIN_GREEN: "grugn verd"
+  BANNER_PIGLIN_LIGHT_BLUE: "grugn bloeu ciar"
+  BANNER_PIGLIN_LIGHT_GRAY: "grugn gris ciar"
+  BANNER_PIGLIN_LIME: "grugn lime"
+  BANNER_PIGLIN_MAGENTA: "grugn magenta"
+  BANNER_PIGLIN_ORANGE: "grugn naranz"
+  BANNER_PIGLIN_PINK: "grugn roeusa"
+  BANNER_PIGLIN_PURPLE: "grugn vioeula"
+  BANNER_PIGLIN_RED: "grugn ross"
+  BANNER_PIGLIN_WHITE: "grugn bianch"
+  BANNER_PIGLIN_YELLOW: "grugn sgiald"
+  BANNER_RHOMBUS_BLACK: "romb negher"
+  BANNER_RHOMBUS_BLUE: "romb bloeu"
+  BANNER_RHOMBUS_BROWN: "romb marron"
+  BANNER_RHOMBUS_CYAN: "romb celest"
+  BANNER_RHOMBUS_GRAY: "romb gris"
+  BANNER_RHOMBUS_GREEN: "romb verd"
+  BANNER_RHOMBUS_LIGHT_BLUE: "romb bloeu ciar"
+  BANNER_RHOMBUS_LIGHT_GRAY: "romb gris ciar"
+  BANNER_RHOMBUS_LIME: "romb lime"
+  BANNER_RHOMBUS_MAGENTA: "romb magenta"
+  BANNER_RHOMBUS_ORANGE: "romb naranz"
+  BANNER_RHOMBUS_PINK: "romb roeusa"
+  BANNER_RHOMBUS_PURPLE: "romb vioeula"
+  BANNER_RHOMBUS_RED: "romb ross"
+  BANNER_RHOMBUS_WHITE: "romb bianch"
+  BANNER_RHOMBUS_YELLOW: "romb sgiald"
+  BANNER_SKULL_BLACK: "crani negher"
+  BANNER_SKULL_BLUE: "crani bloeu"
+  BANNER_SKULL_BROWN: "crani marron"
+  BANNER_SKULL_CYAN: "crani cian"
+  BANNER_SKULL_GRAY: "crani gris"
+  BANNER_SKULL_GREEN: "crani verd"
+  BANNER_SKULL_LIGHT_BLUE: "crani bloeu ciar"
+  BANNER_SKULL_LIGHT_GRAY: "crani gris ciar"
+  BANNER_SKULL_LIME: "crani lime"
+  BANNER_SKULL_MAGENTA: "crani magenta"
+  BANNER_SKULL_ORANGE: "crani naranz"
+  BANNER_SKULL_PINK: "crani roeusa"
+  BANNER_SKULL_PURPLE: "crani vioeula"
+  BANNER_SKULL_RED: "crani ross"
+  BANNER_SKULL_WHITE: "crani bianch"
+  BANNER_SKULL_YELLOW: "crani sgiald"
+  BANNER_SMALL_STRIPES_BLACK: "palad negher"
+  BANNER_SMALL_STRIPES_BLUE: "palad bloeu"
+  BANNER_SMALL_STRIPES_BROWN: "palad marron"
+  BANNER_SMALL_STRIPES_CYAN: "palad celest"
+  BANNER_SMALL_STRIPES_GRAY: "palad gris"
+  BANNER_SMALL_STRIPES_GREEN: "palad verd"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "palad bloeu ciar"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "palad gris ciar"
+  BANNER_SMALL_STRIPES_LIME: "palad lime"
+  BANNER_SMALL_STRIPES_MAGENTA: "palad magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "palad naranz"
+  BANNER_SMALL_STRIPES_PINK: "palad roeusa"
+  BANNER_SMALL_STRIPES_PURPLE: "palad vioeula"
+  BANNER_SMALL_STRIPES_RED: "palad ross"
+  BANNER_SMALL_STRIPES_WHITE: "palad bianch"
+  BANNER_SMALL_STRIPES_YELLOW: "palad sgiald"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "canton drizz negher de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "canton drizz bloeu de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "canton drizz marron de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "canton drizz celest de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "canton drizz gris de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "canton drizz verd de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "canton drizz bloeu ciar de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "canton drizz gris ciar de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "canton drizz de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "canton drizz magenta de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "canton drizz naranz de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "canton drizz roeusa de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "canton drizz vioeula de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "canton drizz ross de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "canton drizz bianch de la guzza"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "canton drizz sgiald de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "canton manzin negher de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "canton manzin bloeu de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "canton manzin marron de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "canton manzin celest de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "canton manzin gris de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "canton manzin verd de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "canton manzin bloeu ciar de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "canton manzin gris ciar de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "canton manzin lime de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "canton manzin magenta de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "canton manzin naranz de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "canton manzin roeusa de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "canton manzin vioeula de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "canton manzin ross de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "canton manzin bianch de la guzza"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "canton manzin sgiald de la guzza"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "canton drizz negher del capo"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "canton drizz bloeu del capo"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "canton drizz marron del capo"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "canton drizz celest del capo"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "canton drizz gris del capo"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "canton drizz verd del capo"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "canton drizz bloeu ciar del capo"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "canton drizz gris ciar del capo"
+  BANNER_SQUARE_TOP_LEFT_LIME: "canton drizz lime del capo"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "canton drizz magenta del capo"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "canton drizz naranz del capo"
+  BANNER_SQUARE_TOP_LEFT_PINK: "canton drizz roeusa del capo"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "canton drizz vioeula del capo"
+  BANNER_SQUARE_TOP_LEFT_RED: "canton ross negher del capo"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "canton drizz bianch del capo"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "canton drizz sgiald del capo"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "canton manzin negher del capo"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "canton manzin bloeu del capo"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "canton manzin marron del capo"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "canton manzin celest del capo"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "canton manzin gris del capo"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "canton manzin verd del capo"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "canton manzin bloeu ciar del capo"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "canton manzin gris ciar del capo"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "canton manzin lime del capo"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "canton manzin magenta del capo"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "canton manzin naranz del capo"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "canton manzin roeusa del capo"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "canton manzin vioeula del capo"
+  BANNER_SQUARE_TOP_RIGHT_RED: "canton ross negher del capo"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "canton manzin bianch del capo"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "canton manzin sgiald del capo"
+  BANNER_STRAIGHT_CROSS_BLACK: "cros negra"
+  BANNER_STRAIGHT_CROSS_BLUE: "cros bloeu"
+  BANNER_STRAIGHT_CROSS_BROWN: "cros marrona"
+  BANNER_STRAIGHT_CROSS_CYAN: "cros ciana"
+  BANNER_STRAIGHT_CROSS_GRAY: "cros grisa"
+  BANNER_STRAIGHT_CROSS_GREEN: "cros verda"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "cros bloeu ciara"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "cros grisa ciara"
+  BANNER_STRAIGHT_CROSS_LIME: "cros lime"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "cros magenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "cros naranza"
+  BANNER_STRAIGHT_CROSS_PINK: "cros roeusa"
+  BANNER_STRAIGHT_CROSS_PURPLE: "cros vioeula"
+  BANNER_STRAIGHT_CROSS_RED: "cros rossa"
+  BANNER_STRAIGHT_CROSS_WHITE: "cros bianca"
+  BANNER_STRAIGHT_CROSS_YELLOW: "cros sgialda"
+  BANNER_STRIPE_BOTTOM_BLACK: "fassa negra"
+  BANNER_STRIPE_BOTTOM_BLUE: "fassa bloeu"
+  BANNER_STRIPE_BOTTOM_BROWN: "fassa marrona"
+  BANNER_STRIPE_BOTTOM_CYAN: "fassa celesta"
+  BANNER_STRIPE_BOTTOM_GRAY: "fassa grisa"
+  BANNER_STRIPE_BOTTOM_GREEN: "fassa verda"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "fassa bloeu ciar"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "fassa grisa ciar"
+  BANNER_STRIPE_BOTTOM_LIME: "fassa lime"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "fassa magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "fassa naranza"
+  BANNER_STRIPE_BOTTOM_PINK: "fassa roeusa"
+  BANNER_STRIPE_BOTTOM_PURPLE: "fassa vioeula"
+  BANNER_STRIPE_BOTTOM_RED: "fassa rossa"
+  BANNER_STRIPE_BOTTOM_WHITE: "fassa bianca"
+  BANNER_STRIPE_BOTTOM_YELLOW: "fassa sgialda"
+  BANNER_STRIPE_CENTER_BLACK: "pal negher"
+  BANNER_STRIPE_CENTER_BLUE: "pal bloeu"
+  BANNER_STRIPE_CENTER_BROWN: "pal marron"
+  BANNER_STRIPE_CENTER_CYAN: "pal celest"
+  BANNER_STRIPE_CENTER_GRAY: "pal gris"
+  BANNER_STRIPE_CENTER_GREEN: "pal verd"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "pal bloeu ciar"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "pal gris ciar"
+  BANNER_STRIPE_CENTER_LIME: "pal lime"
+  BANNER_STRIPE_CENTER_MAGENTA: "pal magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "pal naranz"
+  BANNER_STRIPE_CENTER_PINK: "pal roeusa"
+  BANNER_STRIPE_CENTER_PURPLE: "pal vioeula"
+  BANNER_STRIPE_CENTER_RED: "pal ross"
+  BANNER_STRIPE_CENTER_WHITE: "pal bianch"
+  BANNER_STRIPE_CENTER_YELLOW: "pal sgiald"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "banda manzina negra"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "banda manzina bloeu"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "banda manzina marrona"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "banda manzina celesta"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "banda manzina grisa"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "banda manzina verda"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "banda manzina bloeu ciar"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "banda manzina grisa ciar"
+  BANNER_STRIPE_DOWNLEFT_LIME: "banda manzina lime"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "banda manzina magenta"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "banda manzina naranza"
+  BANNER_STRIPE_DOWNLEFT_PINK: "banda manzina roeusa"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "banda manzina vioeula"
+  BANNER_STRIPE_DOWNLEFT_RED: "banda manzina rossa"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "banda manzina bianca"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "banda manzina sgialda"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "banda negra"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "banda bloeu"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "banda marrona"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "banda celesta"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "banda grisa"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "banda verda"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "banda bloeu ciar"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "banda grisa ciar"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "banda lime"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "banda magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "banda naranza"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "banda roeusa"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "banda vioeula"
+  BANNER_STRIPE_DOWNRIGHT_RED: "banda rossa"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "banda bianca"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "banda sgialda"
+  BANNER_STRIPE_LEFT_BLACK: "pal drizz negher"
+  BANNER_STRIPE_LEFT_BLUE: "pal drizz bloeu"
+  BANNER_STRIPE_LEFT_BROWN: "pal drizz marron"
+  BANNER_STRIPE_LEFT_CYAN: "pal drizz celest"
+  BANNER_STRIPE_LEFT_GRAY: "pal drizz gris"
+  BANNER_STRIPE_LEFT_GREEN: "pal drizz verd"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "pal drizz bloeu ciar"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "pal drizz gris ciar"
+  BANNER_STRIPE_LEFT_LIME: "pal drizz lime"
+  BANNER_STRIPE_LEFT_MAGENTA: "pal drizz magenta"
+  BANNER_STRIPE_LEFT_ORANGE: "pal drizz naranz"
+  BANNER_STRIPE_LEFT_PINK: "pal drizz roeusa"
+  BANNER_STRIPE_LEFT_PURPLE: "pal drizz vioeula"
+  BANNER_STRIPE_LEFT_RED: "pal drizz ross"
+  BANNER_STRIPE_LEFT_WHITE: "pal drizz bianch"
+  BANNER_STRIPE_LEFT_YELLOW: "pal drizz sgiald"
+  BANNER_STRIPE_MIDDLE_BLACK: "fassa negra"
+  BANNER_STRIPE_MIDDLE_BLUE: "fassa bloeu"
+  BANNER_STRIPE_MIDDLE_BROWN: "fassa marrona"
+  BANNER_STRIPE_MIDDLE_CYAN: "fassa celesta"
+  BANNER_STRIPE_MIDDLE_GRAY: "fassa grisa"
+  BANNER_STRIPE_MIDDLE_GREEN: "fassa verda"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "fassa bloeu ciar"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "fassa grisa ciar"
+  BANNER_STRIPE_MIDDLE_LIME: "fassa lime"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "fassa magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "fassa naranza"
+  BANNER_STRIPE_MIDDLE_PINK: "fassa roeusa"
+  BANNER_STRIPE_MIDDLE_PURPLE: "fassa vioeula"
+  BANNER_STRIPE_MIDDLE_RED: "fassa rossa"
+  BANNER_STRIPE_MIDDLE_WHITE: "fassa bianca"
+  BANNER_STRIPE_MIDDLE_YELLOW: "fassa sgialda"
+  BANNER_STRIPE_RIGHT_BLACK: "pal manzin negher"
+  BANNER_STRIPE_RIGHT_BLUE: "pal manzin bloeu"
+  BANNER_STRIPE_RIGHT_BROWN: "pal manzin marron"
+  BANNER_STRIPE_RIGHT_CYAN: "pal manzin celest"
+  BANNER_STRIPE_RIGHT_GRAY: "pal manzin gris"
+  BANNER_STRIPE_RIGHT_GREEN: "pal manzin verd"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "pal manzin bloeu ciar"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "pal manzin gris ciar"
+  BANNER_STRIPE_RIGHT_LIME: "pal manzin lime"
+  BANNER_STRIPE_RIGHT_MAGENTA: "pal manzin magenta"
+  BANNER_STRIPE_RIGHT_ORANGE: "pal manzin naranz"
+  BANNER_STRIPE_RIGHT_PINK: "pal manzin roeusa"
+  BANNER_STRIPE_RIGHT_PURPLE: "pal manzin vioeula"
+  BANNER_STRIPE_RIGHT_RED: "pal manzin ross"
+  BANNER_STRIPE_RIGHT_WHITE: "pal manzin bianch"
+  BANNER_STRIPE_RIGHT_YELLOW: "pal manzin sgiald"
+  BANNER_STRIPE_TOP_BLACK: "fassa capo negra"
+  BANNER_STRIPE_TOP_BLUE: "fassa capo bloeu"
+  BANNER_STRIPE_TOP_BROWN: "fassa capo marrona"
+  BANNER_STRIPE_TOP_CYAN: "fassa capo celesta"
+  BANNER_STRIPE_TOP_GRAY: "fassa capo grisa"
+  BANNER_STRIPE_TOP_GREEN: "fassa capo verda"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "fassa capo bloeu ciar"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "fassa capo grisa ciar"
+  BANNER_STRIPE_TOP_LIME: "fassa capo lime"
+  BANNER_STRIPE_TOP_MAGENTA: "fassa capo magenta"
+  BANNER_STRIPE_TOP_ORANGE: "fassa capo naranza"
+  BANNER_STRIPE_TOP_PINK: "fassa capo roeusa"
+  BANNER_STRIPE_TOP_PURPLE: "fassa capo vioeula"
+  BANNER_STRIPE_TOP_RED: "fassa capo rossa"
+  BANNER_STRIPE_TOP_WHITE: "fassa capo bianca"
+  BANNER_STRIPE_TOP_YELLOW: "fassa capo sgialda"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "guzza negra"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "guzza bloeu"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "guzza marrona"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "guzza celesta"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "guzza grisa"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "guzza verda"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "guzza bloeu ciar"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "guzza grisa ciar"
+  BANNER_TRIANGLE_BOTTOM_LIME: "guzza lime"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "guzza magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "guzza naranza"
+  BANNER_TRIANGLE_BOTTOM_PINK: "guzza roeusa"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "guzza vioeula"
+  BANNER_TRIANGLE_BOTTOM_RED: "guzza rossa"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "guzza bianca"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "guzza sgialda"
+  BANNER_TRIANGLE_TOP_BLACK: "guzza negra a l'invers"
+  BANNER_TRIANGLE_TOP_BLUE: "guzza bloeu a l'invers"
+  BANNER_TRIANGLE_TOP_BROWN: "guzza marrona a l'invers"
+  BANNER_TRIANGLE_TOP_CYAN: "guzza celesta a l'invers"
+  BANNER_TRIANGLE_TOP_GRAY: "guzza grisa a l'invers"
+  BANNER_TRIANGLE_TOP_GREEN: "guzza verda a l'invers"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "guzza bloeu ciar a l'invers"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "guzza grisa ciar a l'invers"
+  BANNER_TRIANGLE_TOP_LIME: "guzza lime a l'invers"
+  BANNER_TRIANGLE_TOP_MAGENTA: "guzza magenta a l'invers"
+  BANNER_TRIANGLE_TOP_ORANGE: "guzza naranza a l'invers"
+  BANNER_TRIANGLE_TOP_PINK: "guzza roeusa a l'invers"
+  BANNER_TRIANGLE_TOP_PURPLE: "guzza vioeula a l'invers"
+  BANNER_TRIANGLE_TOP_RED: "guzza rossa a l'invers"
+  BANNER_TRIANGLE_TOP_WHITE: "guzza bianca a l'invers"
+  BANNER_TRIANGLE_TOP_YELLOW: "guzza sgialda a l'invers"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "bas negra dentada"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "bas bloeu dentada"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "bas marrona dentada"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "bas celesta dentada"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "bas grisa dentada"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "bas verda dentada"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "bas bloeu ciar dentada"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "bas grisa ciar dentada"
+  BANNER_TRIANGLES_BOTTOM_LIME: "bas lime dentada"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "bas magenta dentada"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "bas naranza dentada"
+  BANNER_TRIANGLES_BOTTOM_PINK: "bas roeusa dentada"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "bas vioeula dentada"
+  BANNER_TRIANGLES_BOTTOM_RED: "bas rossa dentada"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "bas bianca dentada"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "bas sgialda dentada"
+  BANNER_TRIANGLES_TOP_BLACK: "capo negher dentad"
+  BANNER_TRIANGLES_TOP_BLUE: "capo bloeu dentad"
+  BANNER_TRIANGLES_TOP_BROWN: "capo marron dentad"
+  BANNER_TRIANGLES_TOP_CYAN: "capo celest dentad"
+  BANNER_TRIANGLES_TOP_GRAY: "capo gris dentad"
+  BANNER_TRIANGLES_TOP_GREEN: "capo verd dentad"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "capo bloeu ciar dentad"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "capo gris ciar dentad"
+  BANNER_TRIANGLES_TOP_LIME: "capo lime dentad"
+  BANNER_TRIANGLES_TOP_MAGENTA: "capo magenta dentad"
+  BANNER_TRIANGLES_TOP_ORANGE: "capo naranz dentad"
+  BANNER_TRIANGLES_TOP_PINK: "capo roeusa dentad"
+  BANNER_TRIANGLES_TOP_PURPLE: "capo vioeula dentad"
+  BANNER_TRIANGLES_TOP_RED: "capo ross dentad"
+  BANNER_TRIANGLES_TOP_WHITE: "capo bianch dentad"
+  BANNER_TRIANGLES_TOP_YELLOW: "capo sgiald dentad"
+  BARREL: "baril"
+  BARRIER: "bariera"
+  BASALT: "basalt"
+  BEACON: "far"
+  BEACON_PRIMARY: "poder primari"
+  BEACON_SECONDARY: "poder segondari"
+  BED_NO_SLEEP: "te poeudet dormì domà de nocc o in di temporai"
+  BED_NOT_SAFE: "adess te poeudet mìa possà; gh'è di moster chì arent"
+  BED_OBSTRUCTED: "quell lecc chì l'è intralciad"
+  BED_OCCUPIED: "quell lecc chì l'è ocupad"
+  BED_TOO_FAR_AWAY: "adess te poeudet mìa possà; el lecc l'è trop lontan"
+  BEDROCK: "preja del fond"
+  BEE_NEST: "bisoeul"
+  BEEHIVE: "avigg"
+  BEETROOTS: "biedrave"
+  BELL: "campana"
+  BIG_DRIPLEAF: "foeuja-gota granda"
+  BIG_DRIPLEAF_STEM: "fust de foeuja-gota granda"
+  BIRCH_BUTTON: "boton de biolla"
+  BIRCH_DOOR: "porta de biolla"
+  BIRCH_FENCE: "stongarda de biolla"
+  BIRCH_FENCE_GATE: "restell de biolla"
+  BIRCH_HANGING_SIGN: "insegna de biolla"
+  BIRCH_LEAVES: "foeuje de biolla"
+  BIRCH_LOG: "bora de biolla"
+  BIRCH_PLANKS: "ass de biolla"
+  BIRCH_PRESSURE_PLATE: "pian a pression de biolla"
+  BIRCH_SAPLING: "but de biolla"
+  BIRCH_SIGN: "cartell de biolla"
+  BIRCH_SLAB: "pioda de biolla"
+  BIRCH_STAIRS: "basei de biolla"
+  BIRCH_TRAPDOOR: "bussera de biolla"
+  BIRCH_WALL_HANGING_SIGN: "insegna a mur de biolla"
+  BIRCH_WALL_SIGN: "cartell de mur de biolla"
+  BIRCH_WOOD: "legn de biolla"
+  BLACK_BANNER: "bandera negra"
+  BLACK_BED: "lecc negher"
+  BLACK_CANDLE: "candira negra"
+  BLACK_CANDLE_CAKE: "torta con candila negra"
+  BLACK_CARPET: "tapet negher"
+  BLACK_CONCRETE: "ciment negher"
+  BLACK_CONCRETE_POWDER: "polver de ciment negra"
+  BLACK_GLAZED_TERRACOTTA: "terracota smaltada negra"
+  BLACK_SHULKER_BOX: "scatola de shulker negra"
+  BLACK_STAINED_GLASS: "veder negher"
+  BLACK_STAINED_GLASS_PANE: "panell de veder negher"
+  BLACK_TERRACOTTA: "terracota negra"
+  BLACK_WOOL: "lana negra"
+  BLACKSTONE: "prejanegra"
+  BLACKSTONE_SLAB: "pioda de prejanegra"
+  BLACKSTONE_STAIRS: "basei de prejanegra"
+  BLACKSTONE_WALL: "mur de prejanegra"
+  BLAST_FURNACE: "volt-forn"
+  BLUE_BANNER: "bandera bloeu"
+  BLUE_BED: "lecc bloeu"
+  BLUE_CANDLE: "candira bloeu"
+  BLUE_CANDLE_CAKE: "torta con candila bloeu"
+  BLUE_CARPET: "tapet bloeu"
+  BLUE_CONCRETE: "ciment bloeu"
+  BLUE_CONCRETE_POWDER: "polver de ciment bloeu"
+  BLUE_GLAZED_TERRACOTTA: "terracota smaltada bloeu"
+  BLUE_ICE: "giazz bloeu"
+  BLUE_ORCHID: "orchidea bloeu"
+  BLUE_SHULKER_BOX: "scatola de shulker bloeu"
+  BLUE_STAINED_GLASS: "veder bloeu"
+  BLUE_STAINED_GLASS_PANE: "panell de veder bloeu"
+  BLUE_TERRACOTTA: "terracota bloeu"
+  BLUE_WOOL: "lana bloeu"
+  BONE_BLOCK: "bloch de oss"
+  BOOKSHELF: "libreria"
+  BRAIN_CORAL: "corall a cervell"
+  BRAIN_CORAL_BLOCK: "bloch de corall a cervell"
+  BRAIN_CORAL_FAN: "gorgonia a cervell"
+  BRAIN_CORAL_WALL_FAN: "gorgonia a cervell a mur"
+  BREWING_STAND: "destillador"
+  BRICK_SLAB: "pioda de quadrei"
+  BRICK_STAIRS: "basei de quadrei"
+  BRICK_WALL: "mur de quadrei"
+  BRICKS: "quadrei"
+  BROWN_BANNER: "bandera marrona"
+  BROWN_BED: "lecc marron"
+  BROWN_CANDLE: "candira marrona"
+  BROWN_CANDLE_CAKE: "torta con candila marrona"
+  BROWN_CARPET: "tapet marron"
+  BROWN_CONCRETE: "ciment marron"
+  BROWN_CONCRETE_POWDER: "polver de ciment marrona"
+  BROWN_GLAZED_TERRACOTTA: "terracota smaltada marrona"
+  BROWN_MUSHROOM: "fonsg marron"
+  BROWN_MUSHROOM_BLOCK: "bloch de fonsg marron"
+  BROWN_SHULKER_BOX: "scatola de shulker marrona"
+  BROWN_STAINED_GLASS: "veder marron"
+  BROWN_STAINED_GLASS_PANE: "panell de veder marron"
+  BROWN_TERRACOTTA: "terracota marrona"
+  BROWN_WOOL: "lana marrona"
+  BUBBLE_COLUMN: "colona de balle"
+  BUBBLE_CORAL: "corall a balle"
+  BUBBLE_CORAL_BLOCK: "bloch de corall a balle"
+  BUBBLE_CORAL_FAN: "gorgonia a balle"
+  BUBBLE_CORAL_WALL_FAN: "gorgonia a balle a mur"
+  BUDDING_AMETHYST: "ametista che la cascia foeura i gemme"
+  CACTUS: "cactus"
+  CAKE: "torta"
+  CALCITE: "calcit"
+  CALIBRATED_SCULK_SENSOR: "sensore di sculk calibrato"
+  CAMPFIRE: "falò"
+  CANDLE: "candira"
+  CANDLE_CAKE: "torta con candila"
+  CARROTS: "carotole"
+  CARTOGRAPHY_TABLE: "banch de cartografia"
+  CARVED_PUMPKIN: "zuca sigillada"
+  CAULDRON: "calderon"
+  CAVE_AIR: "aria di grote"
+  CAVE_VINES: "ergna di crote"
+  CAVE_VINES_PLANT: "pianta de la vid di caverne"
+  CHAIN: "cadena"
+  CHAIN_COMMAND_BLOCK: "bloch di comand a cadena"
+  CHERRY_BUTTON: "boton de scireser"
+  CHERRY_DOOR: "porta de scireser"
+  CHERRY_FENCE: "stongarda de scireser"
+  CHERRY_FENCE_GATE: "restell de scireser"
+  CHERRY_HANGING_SIGN: "insegna de scireser"
+  CHERRY_LEAVES: "foeuje de scireser"
+  CHERRY_LOG: "bora de scireser"
+  CHERRY_PLANKS: "ass de scireser"
+  CHERRY_PRESSURE_PLATE: "pian a pression de scireser"
+  CHERRY_SAPLING: "but de scireser"
+  CHERRY_SIGN: "placard de scireser"
+  CHERRY_SLAB: "pioda de scireser"
+  CHERRY_STAIRS: "basei de scireser"
+  CHERRY_TRAPDOOR: "bussera de scireser"
+  CHERRY_WALL_HANGING_SIGN: "insegna a mur de scireser"
+  CHERRY_WALL_SIGN: "placard de mur de scireser"
+  CHERRY_WOOD: "legn de scireser"
+  CHEST: "cesta"
+  CHIPPED_ANVIL: "incusgen sfrisada"
+  CHISELED_BOOKSHELF: "libreria sigillada"
+  CHISELED_COPPER: "rame cesellato"
+  CHISELED_DEEPSLATE: "lavagna profonda sigillada"
+  CHISELED_NETHER_BRICKS: "quadrei del nether sigillad"
+  CHISELED_POLISHED_BLACKSTONE: "prejanegra soliada sigillada"
+  CHISELED_QUARTZ_BLOCK: "bloch de quarz sigillad"
+  CHISELED_RED_SANDSTONE: "molera rossa sigillada"
+  CHISELED_SANDSTONE: "molera sigillada"
+  CHISELED_STONE_BRICKS: "quadrei de preja sigillad"
+  CHISELED_TUFF: "tufo cesellato"
+  CHISELED_TUFF_BRICKS: "mattoni di tufo cesellati"
+  CHORUS_FLOWER: "fior de chorus"
+  CHORUS_PLANT: "pianta de chorus"
+  CLAY: "terra creja"
+  COAL_BLOCK: "bloch de carbon"
+  COAL_ORE: "mineral de carbon"
+  COARSE_DIRT: "terra strasida"
+  COBBLED_DEEPSLATE: "sass de lavagna profonda"
+  COBBLED_DEEPSLATE_SLAB: "pioda de sass de lavagna profonda"
+  COBBLED_DEEPSLATE_STAIRS: "basei de sass de lavagna profonda"
+  COBBLED_DEEPSLATE_WALL: "mur de sass de lavagna profonda"
+  COBBLESTONE: "rizzoeui"
+  COBBLESTONE_SLAB: "pioda de rizzoeui"
+  COBBLESTONE_STAIRS: "basei de rizzoeui"
+  COBBLESTONE_WALL: "mur de rizzoeui"
+  COBWEB: "ragnera"
+  COCOA: "cacao"
+  COMMAND_BLOCK: "bloch di comand"
+  COMPARATOR: "comparador de prejarossa"
+  COMPOSTER: "compostera"
+  CONDUIT: "condot"
+  COPPER_BLOCK: "bloch de ram"
+  COPPER_BULB: "lampada di rame"
+  COPPER_DOOR: "porta di rame"
+  COPPER_GRATE: "grata di rame"
+  COPPER_ORE: "ram sgrezz"
+  COPPER_TRAPDOOR: "botola di rame"
+  CORNFLOWER: "lori"
+  CRACKED_DEEPSLATE_BRICKS: "quadrei de lavagna profonda crep"
+  CRACKED_DEEPSLATE_TILES: "piastrelle de lavagna profonda crepe"
+  CRACKED_NETHER_BRICKS: "quadrei del nether crep"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "quadrei de prejanegra soliada crep"
+  CRACKED_STONE_BRICKS: "quadrei de preja crep"
+  CRAFTER: "fabbricatore"
+  CRAFTING_TABLE: "banch de lavorà"
+  CREEPER_HEAD: "coo de creeper"
+  CREEPER_WALL_HEAD: "coo de creeper de mur"
+  CRIMSON_BUTTON: "boton cremes"
+  CRIMSON_DOOR: "porta cremesa"
+  CRIMSON_FENCE: "stongarda cremes"
+  CRIMSON_FENCE_GATE: "restell cremes"
+  CRIMSON_FUNGUS: "fonsg cremes"
+  CRIMSON_HANGING_SIGN: "insegna cremes"
+  CRIMSON_HYPHAE: "ife cremese"
+  CRIMSON_NYLIUM: "neceli cremes"
+  CRIMSON_PLANKS: "ass cremese"
+  CRIMSON_PRESSURE_PLATE: "pian a pression cremes"
+  CRIMSON_ROOTS: "radis cremes"
+  CRIMSON_SIGN: "cartell cremes"
+  CRIMSON_SLAB: "pioda cremesa"
+  CRIMSON_STAIRS: "basei cremes"
+  CRIMSON_STEM: "gamba cremesa"
+  CRIMSON_TRAPDOOR: "bussera cremesa"
+  CRIMSON_WALL_HANGING_SIGN: "insegna a mur cremes"
+  CRIMSON_WALL_SIGN: "cartell de mur cremes"
+  CRYING_OBSIDIAN: "ossidiana caragnenta"
+  CUT_COPPER: "ram tajad"
+  CUT_COPPER_SLAB: "pioda de ram tajad"
+  CUT_COPPER_STAIRS: "basei de ram tajad"
+  CUT_RED_SANDSTONE: "molera rossa tajada"
+  CUT_RED_SANDSTONE_SLAB: "pioda de molera rossa tajada"
+  CUT_SANDSTONE: "molera tajada"
+  CUT_SANDSTONE_SLAB: "pioda de molera tajada"
+  CYAN_BANNER: "bandera celesta"
+  CYAN_BED: "lecc celest"
+  CYAN_CANDLE: "candira celesta"
+  CYAN_CANDLE_CAKE: "torta con candila ciana"
+  CYAN_CARPET: "tapet celest"
+  CYAN_CONCRETE: "ciment celest"
+  CYAN_CONCRETE_POWDER: "polver de ciment celesta"
+  CYAN_GLAZED_TERRACOTTA: "terracota smaltada celesta"
+  CYAN_SHULKER_BOX: "scatola de shulker celesta"
+  CYAN_STAINED_GLASS: "veder celest"
+  CYAN_STAINED_GLASS_PANE: "panell de veder celest"
+  CYAN_TERRACOTTA: "terracota celesta"
+  CYAN_WOOL: "lana celesta"
+  DAMAGED_ANVIL: "incusgen strapellada"
+  DANDELION: "bofanella"
+  DARK_OAK_BUTTON: "boton de rogora"
+  DARK_OAK_DOOR: "porta de rogora"
+  DARK_OAK_FENCE: "stongarda de rogora"
+  DARK_OAK_FENCE_GATE: "restell de rogora"
+  DARK_OAK_HANGING_SIGN: "insegna de rogora"
+  DARK_OAK_LEAVES: "foeuje de rogora"
+  DARK_OAK_LOG: "bora de rogora"
+  DARK_OAK_PLANKS: "ass de rogora"
+  DARK_OAK_PRESSURE_PLATE: "pian a pression de rogora"
+  DARK_OAK_SAPLING: "but de rogora"
+  DARK_OAK_SIGN: "cartell de rogora"
+  DARK_OAK_SLAB: "pioda de rogora"
+  DARK_OAK_STAIRS: "basei de rogora"
+  DARK_OAK_TRAPDOOR: "bussera de rogora"
+  DARK_OAK_WALL_HANGING_SIGN: "insegna a mur de rogora"
+  DARK_OAK_WALL_SIGN: "cartell de mur de rogora"
+  DARK_OAK_WOOD: "legn de rogora"
+  DARK_PRISMARINE: "prismarina scura"
+  DARK_PRISMARINE_SLAB: "pioda de prismarina scura"
+  DARK_PRISMARINE_STAIRS: "basei de prismarina scura"
+  DAYLIGHT_DETECTOR: "rilevador del sol"
+  DEAD_BRAIN_CORAL: "corall a cervell mort"
+  DEAD_BRAIN_CORAL_BLOCK: "bloch de corall a cervell mort"
+  DEAD_BRAIN_CORAL_FAN: "gorgonia a cervell morta"
+  DEAD_BRAIN_CORAL_WALL_FAN: "gorgonia a cervell morta a mur"
+  DEAD_BUBBLE_CORAL: "corall a balle mort"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloch de corall a balle mort"
+  DEAD_BUBBLE_CORAL_FAN: "gorgonia a balle morta"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "gorgonia a balle morta a mur"
+  DEAD_BUSH: "pianta seca"
+  DEAD_FIRE_CORAL: "corall de foeugh mort"
+  DEAD_FIRE_CORAL_BLOCK: "bloch de corall de foeugh mort"
+  DEAD_FIRE_CORAL_FAN: "gorgonia de foeugh morta"
+  DEAD_FIRE_CORAL_WALL_FAN: "gorgonia de foeugh morta a mur"
+  DEAD_HORN_CORAL: "corall a corna mort"
+  DEAD_HORN_CORAL_BLOCK: "bloch de corall a corna mort"
+  DEAD_HORN_CORAL_FAN: "gorgonia a corna morta"
+  DEAD_HORN_CORAL_WALL_FAN: "gorgonia a corna morta a mur"
+  DEAD_TUBE_CORAL: "corall a tubo mort"
+  DEAD_TUBE_CORAL_BLOCK: "bloch de corall a tubo mort"
+  DEAD_TUBE_CORAL_FAN: "gorgonia a tubo morta"
+  DEAD_TUBE_CORAL_WALL_FAN: "gorgonia a tubo morta a mur"
+  DECORATED_POT: "vas decorad"
+  DEEPSLATE: "lavagna profonda"
+  DEEPSLATE_BRICK_SLAB: "pioda de quadrei de lavagna profonda"
+  DEEPSLATE_BRICK_STAIRS: "basei de quadrei de lavagna profonda"
+  DEEPSLATE_BRICK_WALL: "mur de quadrei de lavagna profonda"
+  DEEPSLATE_BRICKS: "quadrei de lavagna profonda"
+  DEEPSLATE_COAL_ORE: "carbon sgresg in lavagna profonda"
+  DEEPSLATE_COPPER_ORE: "ram sgresg in lavagna profonda"
+  DEEPSLATE_DIAMOND_ORE: "diamant sgresg in lavagna profonda"
+  DEEPSLATE_EMERALD_ORE: "smerald sgresg in lavagna profonda"
+  DEEPSLATE_GOLD_ORE: "or sgresg in lavagna profonda"
+  DEEPSLATE_IRON_ORE: "ferr sgresg in lavagna profonda"
+  DEEPSLATE_LAPIS_ORE: "lapislazzer sgresg in lavagna profonda"
+  DEEPSLATE_REDSTONE_ORE: "preja rossa sgresgia in lavagna profonda"
+  DEEPSLATE_TILE_SLAB: "pioda de piastrelle de lavagna profonda"
+  DEEPSLATE_TILE_STAIRS: "basei de piastrelle de lavagna profonda"
+  DEEPSLATE_TILE_WALL: "mur de piastrelle de lavagna profonda"
+  DEEPSLATE_TILES: "piastrelle de lavagna profonda"
+  DETECTOR_RAIL: "binari relevador"
+  DIAMOND_BLOCK: "bloch de diamant"
+  DIAMOND_ORE: "mineral de diamant"
+  DIORITE: "serizz"
+  DIORITE_SLAB: "pioda de serizz"
+  DIORITE_STAIRS: "basei de serizz"
+  DIORITE_WALL: "mur de serizz"
+  DIRT: "terra"
+  DIRT_PATH: "senter voncc"
+  DISPENSER: "scompartidor"
+  DRAGON_EGG: "oeuv de dragon"
+  DRAGON_HEAD: "coo de dragon"
+  DRAGON_WALL_HEAD: "coo de dragon de mur"
+  DRIED_KELP_BLOCK: "bloch de alghe seche"
+  DRIPSTONE_BLOCK: "bloch de speleotema"
+  DROPPER: "lassador"
+  EMERALD_BLOCK: "bloch de smerald"
+  EMERALD_ORE: "mineral de smerald"
+  ENCHANTING_TABLE: "banch de instriament"
+  END_GATEWAY: "entrada a l'end"
+  END_PORTAL: "portal de l'end"
+  END_PORTAL_FRAME: "telar del portal de l'end"
+  END_ROD: "barra de l'end"
+  END_STONE: "preja del bord"
+  END_STONE_BRICK_SLAB: "pioda de quadrei de preja de l'end"
+  END_STONE_BRICK_STAIRS: "basei de quadrei de preja de l'end"
+  END_STONE_BRICK_WALL: "mur de quadrei de preja de l'end"
+  END_STONE_BRICKS: "quadrei de preja de l'end"
+  ENDER_CHEST: "cesta de l'end"
+  EXPOSED_CHISELED_COPPER: "rame cesellato esposto"
+  EXPOSED_COPPER: "ram espost"
+  EXPOSED_COPPER_BULB: "lampada di rame esposto"
+  EXPOSED_COPPER_DOOR: "porta di rame esposto"
+  EXPOSED_COPPER_GRATE: "grata di rame esposto"
+  EXPOSED_COPPER_TRAPDOOR: "botola di rame esposto"
+  EXPOSED_CUT_COPPER: "ram tajad espost"
+  EXPOSED_CUT_COPPER_SLAB: "pioda de ram tajad espost"
+  EXPOSED_CUT_COPPER_STAIRS: "basei de ram tajad espost"
+  FARMLAND: "terra de somenà"
+  FERN: "files"
+  FIRE: "foeugh"
+  FIRE_CORAL: "corall de foeugh"
+  FIRE_CORAL_BLOCK: "bloch de corall de foeugh"
+  FIRE_CORAL_FAN: "gorgonia de foeugh"
+  FIRE_CORAL_WALL_FAN: "gorgonia de foeugh a mur"
+  FLETCHING_TABLE: "banch di flizze"
+  FLOWER_POT: "vas de fior"
+  FLOWERING_AZALEA: "azalea fiorida"
+  FLOWERING_AZALEA_LEAVES: "foeuje de azalea fioride"
+  FROGSPAWN: "oeuv de rana"
+  FROSTED_ICE: "giazz dur"
+  FURNACE: "fornas"
+  GILDED_BLACKSTONE: "prejanegra d'ora"
+  GLASS: "veder"
+  GLASS_PANE: "panell de veder"
+  GLOW_LICHEN: "lichen sberlusent"
+  GLOWSTONE: "preja lusenta"
+  GOLD_BLOCK: "bloch d'or"
+  GOLD_ORE: "mineral d'or"
+  GRANITE: "miaroeul"
+  GRANITE_SLAB: "pioda de miaroeul"
+  GRANITE_STAIRS: "basei de miaroeul"
+  GRANITE_WALL: "mur de miaroeul"
+  GRASS: "erba"
+  GRASS_BLOCK: "erba"
+  GRAVEL: "gera"
+  GRAY_BANNER: "bandera grisa"
+  GRAY_BED: "lecc gris"
+  GRAY_CANDLE: "candira grisa"
+  GRAY_CANDLE_CAKE: "torta con candila grisa"
+  GRAY_CARPET: "tapet gris"
+  GRAY_CONCRETE: "ciment gris"
+  GRAY_CONCRETE_POWDER: "polver de ciment grisa"
+  GRAY_GLAZED_TERRACOTTA: "terracota smaltada grisa"
+  GRAY_SHULKER_BOX: "scatola de shulker grisa"
+  GRAY_STAINED_GLASS: "veder gris"
+  GRAY_STAINED_GLASS_PANE: "panell de veder gris"
+  GRAY_TERRACOTTA: "terracota grisa"
+  GRAY_WOOL: "lana grisa"
+  GREEN_BANNER: "bandera verda"
+  GREEN_BED: "lecc verd"
+  GREEN_CANDLE: "candira verda"
+  GREEN_CANDLE_CAKE: "torta con candila verda"
+  GREEN_CARPET: "tapet verd"
+  GREEN_CONCRETE: "ciment verd"
+  GREEN_CONCRETE_POWDER: "polver de ciment verda"
+  GREEN_GLAZED_TERRACOTTA: "terracota smaltada verda"
+  GREEN_SHULKER_BOX: "scatola de shulker verda"
+  GREEN_STAINED_GLASS: "veder verd"
+  GREEN_STAINED_GLASS_PANE: "panell de veder verd"
+  GREEN_TERRACOTTA: "terracota verda"
+  GREEN_WOOL: "lana verda"
+  GRINDSTONE: "moeula"
+  HANGING_ROOTS: "radis a bandolera"
+  HAY_BLOCK: "balla de fen"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "pian a pression per pes grand"
+  HONEY_BLOCK: "bloch de mel"
+  HONEYCOMB_BLOCK: "bloch de beden"
+  HOPPER: "tremoeusgia"
+  HORN_CORAL: "corall a corna"
+  HORN_CORAL_BLOCK: "bloch de corall a corna"
+  HORN_CORAL_FAN: "gorgonia a corna"
+  HORN_CORAL_WALL_FAN: "gorgonia a corna a mur"
+  ICE: "giazz"
+  INFESTED_CHISELED_STONE_BRICKS: "quadrei de preja sigillad infestad"
+  INFESTED_COBBLESTONE: "rizzoeui infestad"
+  INFESTED_CRACKED_STONE_BRICKS: "quadrei de preja crep infestad"
+  INFESTED_DEEPSLATE: "lavagna profonda infestada"
+  INFESTED_MOSSY_STONE_BRICKS: "quadrei de preja tepos infestad"
+  INFESTED_STONE: "preja infestada"
+  INFESTED_STONE_BRICKS: "quadrei de preja infestad"
+  IRON_BARS: "sbarre de ferr"
+  IRON_BLOCK: "bloch de ferr"
+  IRON_DOOR: "porta de ferr"
+  IRON_ORE: "mineral de ferr"
+  IRON_TRAPDOOR: "bussera de ferr"
+  JACK_O_LANTERN: "lanterna de zuca"
+  JIGSAW: "bloch puzzle"
+  JUKEBOX: "sgira-disch"
+  JUNGLE_BUTTON: "boton de la sgiungla"
+  JUNGLE_DOOR: "porta de la sgiungla"
+  JUNGLE_FENCE: "stongarda de la sgiungla"
+  JUNGLE_FENCE_GATE: "restell de la sgiungla"
+  JUNGLE_HANGING_SIGN: "insegna de la sgiungla"
+  JUNGLE_LEAVES: "foeuje de la sgiungla"
+  JUNGLE_LOG: "bora de la giungla"
+  JUNGLE_PLANKS: "ass de la sgiungla"
+  JUNGLE_PRESSURE_PLATE: "pian a pression de la sgiungla"
+  JUNGLE_SAPLING: "but de la sgiungla"
+  JUNGLE_SIGN: "cartell de la sgiungla"
+  JUNGLE_SLAB: "pioda de la sgiungla"
+  JUNGLE_STAIRS: "basei de la sgiungla"
+  JUNGLE_TRAPDOOR: "bussera de la sgiungla"
+  JUNGLE_WALL_HANGING_SIGN: "insegna a mur de la sgiungla"
+  JUNGLE_WALL_SIGN: "cartell de mur de la sgiungla"
+  JUNGLE_WOOD: "legn de la giungla"
+  KELP: "alga"
+  KELP_PLANT: "picol d'alga"
+  LADDER: "scala a man"
+  LANTERN: "lanterna"
+  LAPIS_BLOCK: "bloch de lapis lazuli"
+  LAPIS_ORE: "mineral de lapislazzer"
+  LARGE_AMETHYST_BUD: "gemma de ametista granda"
+  LARGE_FERN: "files gigant"
+  LAVA: "lava"
+  LAVA_CAULDRON: "calderon de lava"
+  LECTERN: "letorin"
+  LEVER: "leva"
+  LIGHT: "lus"
+  LIGHT_BLUE_BANNER: "bandera bloeu ciar"
+  LIGHT_BLUE_BED: "lecc bloeu ciar"
+  LIGHT_BLUE_CANDLE: "candira bloeu ciara"
+  LIGHT_BLUE_CANDLE_CAKE: "torta con candila celesta"
+  LIGHT_BLUE_CARPET: "tapet bloeu ciar"
+  LIGHT_BLUE_CONCRETE: "ciment bloeu ciar"
+  LIGHT_BLUE_CONCRETE_POWDER: "polver de ciment bloeu ciar"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "terracota smaltada bloeu ciar"
+  LIGHT_BLUE_SHULKER_BOX: "scatola de shulker bloeu ciar"
+  LIGHT_BLUE_STAINED_GLASS: "veder bloeu ciar"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "panell de veder bloeu ciar"
+  LIGHT_BLUE_TERRACOTTA: "terracota bloeu ciar"
+  LIGHT_BLUE_WOOL: "lana bloeu ciar"
+  LIGHT_GRAY_BANNER: "bandera grisa ciar"
+  LIGHT_GRAY_BED: "lecc gris ciar"
+  LIGHT_GRAY_CANDLE: "candira grisa ciara"
+  LIGHT_GRAY_CANDLE_CAKE: "torta con candile grisa ciara"
+  LIGHT_GRAY_CARPET: "tapet gris ciar"
+  LIGHT_GRAY_CONCRETE: "ciment gris ciar"
+  LIGHT_GRAY_CONCRETE_POWDER: "polver de ciment grisa ciar"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "terracota smaltada grisa ciar"
+  LIGHT_GRAY_SHULKER_BOX: "scatola de shulker grisa ciar"
+  LIGHT_GRAY_STAINED_GLASS: "veder gris ciar"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "panell de veder gris ciar"
+  LIGHT_GRAY_TERRACOTTA: "terracota grisa ciar"
+  LIGHT_GRAY_WOOL: "lana grisa ciar"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "pian a pression per pes piscinin"
+  LIGHTNING_ROD: "parasaete"
+  LILAC: "lilà"
+  LILY_OF_THE_VALLEY: "moneghin"
+  LILY_PAD: "lavedon"
+  LIME_BANNER: "bandera lime"
+  LIME_BED: "lecc lime"
+  LIME_CANDLE: "candira lime"
+  LIME_CANDLE_CAKE: "torta con candila lime"
+  LIME_CARPET: "tapet lime"
+  LIME_CONCRETE: "ciment lime"
+  LIME_CONCRETE_POWDER: "polver de ciment lime"
+  LIME_GLAZED_TERRACOTTA: "terracota smaltada lime"
+  LIME_SHULKER_BOX: "scatola de shulker lime"
+  LIME_STAINED_GLASS: "veder lime"
+  LIME_STAINED_GLASS_PANE: "panell de veder lime"
+  LIME_TERRACOTTA: "terracota lime"
+  LIME_WOOL: "lana lime"
+  LODESTONE: "magnetit"
+  LOOM: "telar"
+  MAGENTA_BANNER: "bandera magenta"
+  MAGENTA_BED: "lecc magenta"
+  MAGENTA_CANDLE: "candira magenta"
+  MAGENTA_CANDLE_CAKE: "torta con candila magenta"
+  MAGENTA_CARPET: "tapet magenta"
+  MAGENTA_CONCRETE: "ciment magenta"
+  MAGENTA_CONCRETE_POWDER: "polver de ciment magenta"
+  MAGENTA_GLAZED_TERRACOTTA: "terracota smaltada magenta"
+  MAGENTA_SHULKER_BOX: "scatola de shulker magenta"
+  MAGENTA_STAINED_GLASS: "veder magenta"
+  MAGENTA_STAINED_GLASS_PANE: "panell de veder magenta"
+  MAGENTA_TERRACOTTA: "terracota magenta"
+  MAGENTA_WOOL: "lana magenta"
+  MAGMA_BLOCK: "bloch de magma"
+  MANGROVE_BUTTON: "boton de mangrovia"
+  MANGROVE_DOOR: "porta de mangrovia"
+  MANGROVE_FENCE: "stongarda de mangrovia"
+  MANGROVE_FENCE_GATE: "restell de mangrovia"
+  MANGROVE_HANGING_SIGN: "insegna de mangrovia"
+  MANGROVE_LEAVES: "foeuje de mangrovia"
+  MANGROVE_LOG: "bora de mangrovia"
+  MANGROVE_PLANKS: "ass de mangrovia"
+  MANGROVE_PRESSURE_PLATE: "pian a pression de mangrovia"
+  MANGROVE_PROPAGULE: "propapagul de mangrovia"
+  MANGROVE_ROOTS: "radis de mangrovia"
+  MANGROVE_SIGN: "cartell de mangrovia"
+  MANGROVE_SLAB: "pioda de mangrovia"
+  MANGROVE_STAIRS: "basei de mangrovia"
+  MANGROVE_TRAPDOOR: "bussera de mangrovia"
+  MANGROVE_WALL_HANGING_SIGN: "insegna a mur de mangrovia"
+  MANGROVE_WALL_SIGN: "cartell de mur de mangrovia"
+  MANGROVE_WOOD: "legn de mangrovia"
+  MEDIUM_AMETHYST_BUD: "gemma de ametista media"
+  MELON: "inguria"
+  MELON_STEM: "pianta de inguria"
+  MOSS_BLOCK: "bloch de tepa"
+  MOSS_CARPET: "taped de tepa"
+  MOSSY_COBBLESTONE: "bloch de rizzoeui tepos"
+  MOSSY_COBBLESTONE_SLAB: "pioda de rizzoeui tepos"
+  MOSSY_COBBLESTONE_STAIRS: "basei de rizzoeui tepos"
+  MOSSY_COBBLESTONE_WALL: "mur de rizzoeui tepos"
+  MOSSY_STONE_BRICK_SLAB: "pioda de quadrei de preja tepos"
+  MOSSY_STONE_BRICK_STAIRS: "basei de quadrei de preja tepos"
+  MOSSY_STONE_BRICK_WALL: "mur de quadrei de preja tepos"
+  MOSSY_STONE_BRICKS: "quadrei de preja tepos"
+  MOVING_PISTON: "piston in moviment"
+  MUD: "palta"
+  MUD_BRICK_SLAB: "pioda de quadrei de palta"
+  MUD_BRICK_STAIRS: "basei de quadrei de palta"
+  MUD_BRICK_WALL: "mur de quadrei de palta"
+  MUD_BRICKS: "quadrei de palta"
+  MUDDY_MANGROVE_ROOTS: "radis paltuscent de mangrovia"
+  MUSHROOM_STEM: "picol de fonsg"
+  MYCELIUM: "miceli"
+  NETHER_BRICK_FENCE: "stongarda de quadrei del nether"
+  NETHER_BRICK_SLAB: "pioda de quadrei del nether"
+  NETHER_BRICK_STAIRS: "basei de quadrei del nether"
+  NETHER_BRICK_WALL: "mur de quadrei del nether"
+  NETHER_BRICKS: "quadrei del nether"
+  NETHER_GOLD_ORE: "mineral d'or del nether"
+  NETHER_PORTAL: "porta del nether"
+  NETHER_QUARTZ_ORE: "mineral de quarz del nether"
+  NETHER_SPROUTS: "but del nether"
+  NETHER_WART: "brossera del nether"
+  NETHER_WART_BLOCK: "bloch de brossere del nether"
+  NETHERITE_BLOCK: "bloch de netherite"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloch sonador"
+  OAK_BUTTON: "boton de cerr"
+  OAK_DOOR: "porta de cerr"
+  OAK_FENCE: "stongarda de cerr"
+  OAK_FENCE_GATE: "restell de cerr"
+  OAK_HANGING_SIGN: "insegna de cerr"
+  OAK_LEAVES: "foeuje de cerr"
+  OAK_LOG: "bora de cerr"
+  OAK_PLANKS: "ass de cerr"
+  OAK_PRESSURE_PLATE: "pian a pression de cerr"
+  OAK_SAPLING: "but de cerr"
+  OAK_SIGN: "cartell de cerr"
+  OAK_SLAB: "pioda de cerr"
+  OAK_STAIRS: "basei de cerr"
+  OAK_TRAPDOOR: "bussera de cerr"
+  OAK_WALL_HANGING_SIGN: "insegna a mur de cerr"
+  OAK_WALL_SIGN: "cartell de mur de cerr"
+  OAK_WOOD: "legn de cerr"
+  OBSERVER: "osservador"
+  OBSIDIAN: "ossidiana"
+  OCHRE_FROGLIGHT: "rana-lus ocra"
+  OMINOUS_BANNER: "bandera de la deslipa"
+  ORANGE_BANNER: "bandera naranza"
+  ORANGE_BED: "lecc naranz"
+  ORANGE_CANDLE: "candira naranza"
+  ORANGE_CANDLE_CAKE: "torta con candila naranza"
+  ORANGE_CARPET: "tapet naranz"
+  ORANGE_CONCRETE: "ciment naranz"
+  ORANGE_CONCRETE_POWDER: "polver de ciment naranz"
+  ORANGE_GLAZED_TERRACOTTA: "terracota smaltada naranza"
+  ORANGE_SHULKER_BOX: "scatola de shulker naranza"
+  ORANGE_STAINED_GLASS: "veder naranz"
+  ORANGE_STAINED_GLASS_PANE: "panell de veder naranz"
+  ORANGE_TERRACOTTA: "terracota naranza"
+  ORANGE_TULIP: "tolipan naranz"
+  ORANGE_WOOL: "lana naranza"
+  OXEYE_DAISY: "margherita"
+  OXIDIZED_CHISELED_COPPER: "rame cesellato ossidato"
+  OXIDIZED_COPPER: "ram ossidad"
+  OXIDIZED_COPPER_BULB: "lampada di rame ossidato"
+  OXIDIZED_COPPER_DOOR: "porta di rame ossidato"
+  OXIDIZED_COPPER_GRATE: "grata di rame ossidato"
+  OXIDIZED_COPPER_TRAPDOOR: "botola di rame ossidato"
+  OXIDIZED_CUT_COPPER: "ram tajad ossidad"
+  OXIDIZED_CUT_COPPER_SLAB: "pioda de ram tajad ossidad"
+  OXIDIZED_CUT_COPPER_STAIRS: "basei de ram tajad ossidad"
+  PACKED_ICE: "giazz compat"
+  PACKED_MUD: "palta compata"
+  PEARLESCENT_FROGLIGHT: "rana-lus color perla"
+  PEONY: "peonia"
+  PETRIFIED_OAK_SLAB: "pioda de cerr de preja"
+  PIGLIN_HEAD: "coo de piglin"
+  PIGLIN_WALL_HEAD: "coo de piglin de mur"
+  PINK_BANNER: "bandera roeusa"
+  PINK_BED: "lecc roeusa"
+  PINK_CANDLE: "candira roeusa"
+  PINK_CANDLE_CAKE: "torta con candila roeusa"
+  PINK_CARPET: "tapet roeusa"
+  PINK_CONCRETE: "ciment roeusa"
+  PINK_CONCRETE_POWDER: "polver de ciment roeusa"
+  PINK_GLAZED_TERRACOTTA: "terracota smaltada roeusa"
+  PINK_PETALS: "petali rosa"
+  PINK_SHULKER_BOX: "scatola de shulker roeusa"
+  PINK_STAINED_GLASS: "veder roeusa"
+  PINK_STAINED_GLASS_PANE: "panell de veder roeusa"
+  PINK_TERRACOTTA: "terracota roeusa"
+  PINK_TULIP: "tolipan roeusa"
+  PINK_WOOL: "lana roeusa"
+  PISTON: "piston"
+  PISTON_HEAD: "coo de piston"
+  PITCHER_CROP: "coltura di pianta carnivora"
+  PITCHER_PLANT: "pianta carnivora"
+  PLAYER_HEAD: "coo de sgiugador"
+  PLAYER_HEAD_NAMED: "coo del %s"
+  PLAYER_WALL_HEAD: "coo de sgiugador de mur"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "speleotema guzz"
+  POLISHED_ANDESITE: "andesit soliada"
+  POLISHED_ANDESITE_SLAB: "pioda de andesit soliada"
+  POLISHED_ANDESITE_STAIRS: "basei de andesit soliada"
+  POLISHED_BASALT: "basalt soliad"
+  POLISHED_BLACKSTONE: "prejanegra soliada"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "pioda de quadrei de prejanegra soliada"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "basei de quadrei de prejanegra soliada"
+  POLISHED_BLACKSTONE_BRICK_WALL: "mur de quadrei de prejanegra soliada"
+  POLISHED_BLACKSTONE_BRICKS: "quadrei de prejanegra soliada"
+  POLISHED_BLACKSTONE_BUTTON: "boton de prejanegra soliada"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "pian a pression de prejanegra soliada"
+  POLISHED_BLACKSTONE_SLAB: "pioda de prejanegra soliada"
+  POLISHED_BLACKSTONE_STAIRS: "basei de prejanegra soliada"
+  POLISHED_BLACKSTONE_WALL: "mur de prejanegra soliada"
+  POLISHED_DEEPSLATE: "lavagna profonda soliada"
+  POLISHED_DEEPSLATE_SLAB: "pioda de lavagna profonda soliada"
+  POLISHED_DEEPSLATE_STAIRS: "basei de lavagna profonda soliada"
+  POLISHED_DEEPSLATE_WALL: "mur de lavagna profonda soliada"
+  POLISHED_DIORITE: "serizz soliad"
+  POLISHED_DIORITE_SLAB: "pioda de serizz soliad"
+  POLISHED_DIORITE_STAIRS: "basei de serizz soliad"
+  POLISHED_GRANITE: "miaroeul soliad"
+  POLISHED_GRANITE_SLAB: "pioda de miaroeul soliad"
+  POLISHED_GRANITE_STAIRS: "basei de miaroeul soliad"
+  POLISHED_TUFF: "tufo levigato"
+  POLISHED_TUFF_SLAB: "lastra di tufo levigato"
+  POLISHED_TUFF_STAIRS: "scalini di tufo levigato"
+  POLISHED_TUFF_WALL: "muretto di tufo levigato"
+  POPPY: "popolana"
+  POTATOES: "pom de terra"
+  POTTED_ACACIA_SAPLING: "vas con but de rubinia"
+  POTTED_ALLIUM: "vas con fior de ai"
+  POTTED_AZALEA_BUSH: "vas con azalea"
+  POTTED_AZURE_BLUET: "vas con houstonia"
+  POTTED_BAMBOO: "vas con bamboo"
+  POTTED_BIRCH_SAPLING: "vas con but de biolla"
+  POTTED_BLUE_ORCHID: "vas cont orchidea bloeu"
+  POTTED_BROWN_MUSHROOM: "vas con fonsg marron"
+  POTTED_CACTUS: "vas con cactus"
+  POTTED_CHERRY_SAPLING: "vas con but de scireser"
+  POTTED_CORNFLOWER: "vas con lori"
+  POTTED_CRIMSON_FUNGUS: "vas con fonsg cremes"
+  POTTED_CRIMSON_ROOTS: "vas con radis cremese"
+  POTTED_DANDELION: "vas con bofanella"
+  POTTED_DARK_OAK_SAPLING: "vas con but de rogora"
+  POTTED_DEAD_BUSH: "vas con pianta seca"
+  POTTED_FERN: "vas con files"
+  POTTED_FLOWERING_AZALEA_BUSH: "vas con azalea fiorida"
+  POTTED_JUNGLE_SAPLING: "vas con but de la sgiungla"
+  POTTED_LILY_OF_THE_VALLEY: "vas con moneghin"
+  POTTED_MANGROVE_PROPAGULE: "vas con propagul de mangrovia"
+  POTTED_OAK_SAPLING: "vas con but de cerr"
+  POTTED_ORANGE_TULIP: "vas con tolipan naranz"
+  POTTED_OXEYE_DAISY: "vas con margherita"
+  POTTED_PINK_TULIP: "vas con tolipan roeusa"
+  POTTED_POPPY: "vas con popolana"
+  POTTED_RED_MUSHROOM: "vas con fonsg ross"
+  POTTED_RED_TULIP: "vas con tolipan ross"
+  POTTED_SPRUCE_SAPLING: "vas con but de abiezz"
+  POTTED_TORCHFLOWER: "vas con torcia-fior"
+  POTTED_WARPED_FUNGUS: "vas con fonsg desformad"
+  POTTED_WARPED_ROOTS: "vas con radis desformade"
+  POTTED_WHITE_TULIP: "vas con tolipan bianch"
+  POTTED_WITHER_ROSE: "vas con roeusa del wither"
+  POWDER_SNOW: "fioca in polver"
+  POWDER_SNOW_CAULDRON: "calderon de fioca in polver"
+  POWERED_RAIL: "binari motorizad"
+  PRISMARINE: "prismarina"
+  PRISMARINE_BRICK_SLAB: "pioda de quadrei de prismarina"
+  PRISMARINE_BRICK_STAIRS: "basei de quadrei de prismarina"
+  PRISMARINE_BRICKS: "quadrei de prismarina"
+  PRISMARINE_SLAB: "pioda de prismarina"
+  PRISMARINE_STAIRS: "basei de prismarina"
+  PRISMARINE_WALL: "mur de prismarina"
+  PUMPKIN: "zuca"
+  PUMPKIN_STEM: "pianta de zuca"
+  PURPLE_BANNER: "bandera vioeula"
+  PURPLE_BED: "lecc vioeula"
+  PURPLE_CANDLE: "candira vioeula"
+  PURPLE_CANDLE_CAKE: "torta con candila vioeula"
+  PURPLE_CARPET: "tapet vioeula"
+  PURPLE_CONCRETE: "ciment vioeula"
+  PURPLE_CONCRETE_POWDER: "polver de ciment vioeula"
+  PURPLE_GLAZED_TERRACOTTA: "terracota smaltada vioeula"
+  PURPLE_SHULKER_BOX: "scatola de shulker vioeula"
+  PURPLE_STAINED_GLASS: "veder vioeula"
+  PURPLE_STAINED_GLASS_PANE: "panell de veder vioeula"
+  PURPLE_TERRACOTTA: "terracota vioeula"
+  PURPLE_WOOL: "lana vioeula"
+  PURPUR_BLOCK: "bloch de purpur"
+  PURPUR_PILLAR: "pilaster de purpur"
+  PURPUR_SLAB: "pioda de purpur"
+  PURPUR_STAIRS: "basei de purpur"
+  QUARTZ_BLOCK: "bloch de quarz"
+  QUARTZ_BRICKS: "quadrei de quarz"
+  QUARTZ_PILLAR: "pilaster de quarz"
+  QUARTZ_SLAB: "pioda de quarz"
+  QUARTZ_STAIRS: "basei de quarz"
+  RAIL: "binari"
+  RAW_COPPER_BLOCK: "bloch de mineral de ram"
+  RAW_GOLD_BLOCK: "bloch de mineral d'or"
+  RAW_IRON_BLOCK: "bloch de mineral de ferr"
+  RED_BANNER: "bandera rossa"
+  RED_BED: "lecc ross"
+  RED_CANDLE: "candira rossa"
+  RED_CANDLE_CAKE: "torta con candila rossa"
+  RED_CARPET: "tapet ross"
+  RED_CONCRETE: "ciment ross"
+  RED_CONCRETE_POWDER: "polver de ciment rossa"
+  RED_GLAZED_TERRACOTTA: "terracota smaltada rossa"
+  RED_MUSHROOM: "fonsg ross"
+  RED_MUSHROOM_BLOCK: "bloch de fonsg ross"
+  RED_NETHER_BRICK_SLAB: "pioda de quadrei ross del nether"
+  RED_NETHER_BRICK_STAIRS: "basei de quadrei ross del nether"
+  RED_NETHER_BRICK_WALL: "mur de quadrei ross del nether"
+  RED_NETHER_BRICKS: "quadrei ross del nether"
+  RED_SAND: "sabia rossa"
+  RED_SANDSTONE: "molera rossa"
+  RED_SANDSTONE_SLAB: "pioda de molera rossa"
+  RED_SANDSTONE_STAIRS: "basei de molera rossa"
+  RED_SANDSTONE_WALL: "mur de molera rossa"
+  RED_SHULKER_BOX: "scatola de shulker rossa"
+  RED_STAINED_GLASS: "veder ross"
+  RED_STAINED_GLASS_PANE: "panell de veder ross"
+  RED_TERRACOTTA: "terracota rossa"
+  RED_TULIP: "tolipan ross"
+  RED_WOOL: "lana rossa"
+  REDSTONE_BLOCK: "bloch de preja rossa"
+  REDSTONE_LAMP: "lampeda de prejarossa"
+  REDSTONE_ORE: "mineral de prejarossa"
+  REDSTONE_TORCH: "torcia de prejarossa"
+  REDSTONE_WALL_TORCH: "torcia de prejarossa de mur"
+  REDSTONE_WIRE: "fil de prejarossa"
+  REINFORCED_DEEPSLATE: "lavagna profonda renforzada"
+  REPEATER: "repetidor de prejarossa"
+  REPEATING_COMMAND_BLOCK: "bloch di comand a repetizzion"
+  RESPAWN_ANCHOR: "ancora de la renassida"
+  ROOTED_DIRT: "terra con radis"
+  ROSE_BUSH: "boscal de roeuse"
+  SAND: "sabia"
+  SANDSTONE: "molera"
+  SANDSTONE_SLAB: "pioda de molera"
+  SANDSTONE_STAIRS: "basei de molera"
+  SANDSTONE_WALL: "mur de molera"
+  SCAFFOLDING: "pontegg"
+  SCULK: "sculk"
+  SCULK_CATALYST: "catalizador de sculk"
+  SCULK_SENSOR: "sensor sculk"
+  SCULK_SHRIEKER: "sculk vosador"
+  SCULK_VEIN: "vena de sculk"
+  SEA_LANTERN: "lanterna del mar"
+  SEA_PICKLE: "cocumer del mar"
+  SEAGRASS: "erba del mar"
+  SET_SPAWN: "pont de renassida configurad"
+  SHORT_GRASS: "erba bassa"
+  SHROOMLIGHT: "sberlus-fonsg"
+  SHULKER_BOX: "scatola de shulker"
+  SKELETON_SKULL: "coo de schelter"
+  SKELETON_WALL_SKULL: "coo de schelter de mur"
+  SLIME_BLOCK: "bloch de slime"
+  SMALL_AMETHYST_BUD: "gemma de ametista piscinina"
+  SMALL_DRIPLEAF: "foeuja-gota picola"
+  SMITHING_TABLE: "tavol del ferrer"
+  SMOKER: "afumegador"
+  SMOOTH_BASALT: "basalt soli"
+  SMOOTH_QUARTZ: "bloch de quarz liss"
+  SMOOTH_QUARTZ_SLAB: "pioda de quarz liss"
+  SMOOTH_QUARTZ_STAIRS: "basei de quarz liss"
+  SMOOTH_RED_SANDSTONE: "molera rossa lissa"
+  SMOOTH_RED_SANDSTONE_SLAB: "pioda de molera rossa lissa"
+  SMOOTH_RED_SANDSTONE_STAIRS: "basei de molera rossa soliada"
+  SMOOTH_SANDSTONE: "molera lissa"
+  SMOOTH_SANDSTONE_SLAB: "pioda de molera lissa"
+  SMOOTH_SANDSTONE_STAIRS: "basei de molera lissa"
+  SMOOTH_STONE: "preja soliada"
+  SMOOTH_STONE_SLAB: "pioda de preja lissa"
+  SNIFFER_EGG: "oeuv de nasador"
+  SNOW: "fioca"
+  SNOW_BLOCK: "bloch de fioca"
+  SOUL_CAMPFIRE: "falò de l'anima"
+  SOUL_FIRE: "foeugh di anime"
+  SOUL_LANTERN: "lanterna di anime"
+  SOUL_SAND: "sabia di anime"
+  SOUL_SOIL: "terra di anime"
+  SOUL_TORCH: "torcia di anime"
+  SOUL_WALL_TORCH: "torcia di anime de mur"
+  SPAWN_NOT_VALID: "te gh'heet nissun lecc o ancora de la renassida cargada o inn intrlciad"
+  SPAWNER: "generatore di mostri"
+  SPAWNER_DESC1: "interagisci con uovo generatore:"
+  SPAWNER_DESC2: "imposta il tipo di mob"
+  SPONGE: "sponga"
+  SPORE_BLOSSOM: "fior produtor de spore"
+  SPRUCE_BUTTON: "boton de abiezz"
+  SPRUCE_DOOR: "porta de abiezz"
+  SPRUCE_FENCE: "stongarda de abiezz"
+  SPRUCE_FENCE_GATE: "restell de abiezz"
+  SPRUCE_HANGING_SIGN: "insegna de abiezz"
+  SPRUCE_LEAVES: "foeuje de abiezz"
+  SPRUCE_LOG: "bora de abiezz"
+  SPRUCE_PLANKS: "ass de abiezz"
+  SPRUCE_PRESSURE_PLATE: "pian a pression de abiezz"
+  SPRUCE_SAPLING: "but de abiezz"
+  SPRUCE_SIGN: "cartell de abiezz"
+  SPRUCE_SLAB: "pioda de abiezz"
+  SPRUCE_STAIRS: "basei de abiezz"
+  SPRUCE_TRAPDOOR: "bussera de abiezz"
+  SPRUCE_WALL_HANGING_SIGN: "insegna a mur de abiezz"
+  SPRUCE_WALL_SIGN: "cartell de mur de abiezz"
+  SPRUCE_WOOD: "legn de abiezz"
+  STICKY_PISTON: "piston impatachent"
+  STONE: "preja"
+  STONE_BRICK_SLAB: "pioda de quadrei de preja"
+  STONE_BRICK_STAIRS: "basei de quadrei de preja"
+  STONE_BRICK_WALL: "mur de quadrei de preja"
+  STONE_BRICKS: "quadrei de preja"
+  STONE_BUTTON: "boton de preja"
+  STONE_PRESSURE_PLATE: "pian a pression de preja"
+  STONE_SLAB: "pioda de preja"
+  STONE_STAIRS: "basei de preja"
+  STONECUTTER: "taja-preje"
+  STRIPPED_ACACIA_LOG: "bora de rubinia scarpada"
+  STRIPPED_ACACIA_WOOD: "legn de rubinia scarpad"
+  STRIPPED_BAMBOO_BLOCK: "bloch de bamboo scarpad"
+  STRIPPED_BIRCH_LOG: "bora de biolla scarpada"
+  STRIPPED_BIRCH_WOOD: "legn de biolla scarpad"
+  STRIPPED_CHERRY_LOG: "bora de scireser scarpad"
+  STRIPPED_CHERRY_WOOD: "legn de scireser scarpad"
+  STRIPPED_CRIMSON_HYPHAE: "ife cremese scarpade"
+  STRIPPED_CRIMSON_STEM: "gamba cremesa scarpada"
+  STRIPPED_DARK_OAK_LOG: "bora de rogora scarpada"
+  STRIPPED_DARK_OAK_WOOD: "legn de rogora scarpad"
+  STRIPPED_JUNGLE_LOG: "bora de la giungla scarpada"
+  STRIPPED_JUNGLE_WOOD: "legn de la giungla scarpad"
+  STRIPPED_MANGROVE_LOG: "bora de mangrovia scarpada"
+  STRIPPED_MANGROVE_WOOD: "legn de mangrovia scarpad"
+  STRIPPED_OAK_LOG: "bora de cerr scarpada"
+  STRIPPED_OAK_WOOD: "legn de cerr scarpad"
+  STRIPPED_SPRUCE_LOG: "bora de abiezz scarpada"
+  STRIPPED_SPRUCE_WOOD: "legn de abiezz scarpad"
+  STRIPPED_WARPED_HYPHAE: "ife desformade scarpade"
+  STRIPPED_WARPED_STEM: "gamba desformada scarpada"
+  STRUCTURE_BLOCK: "bloch strutura"
+  STRUCTURE_VOID: "voeui de la strutura"
+  SUGAR_CANE: "cana de zucher"
+  SUNFLOWER: "girasol"
+  SUSPICIOUS_GRAVEL: "gera sospeta"
+  SUSPICIOUS_SAND: "sabia sospeta"
+  SWEET_BERRY_BUSH: "boscal de frut dolz"
+  TALL_GRASS: "erba volta"
+  TALL_SEAGRASS: "erba volta del mar"
+  TARGET: "bersai"
+  TERRACOTTA: "terracota"
+  TINTED_GLASS: "veder colorad"
+  TNT: "tnt"
+  TORCH: "torcia"
+  TORCHFLOWER: "torcia-fior"
+  TORCHFLOWER_CROP: "pianta de torcia-fior"
+  TRAPPED_CHEST: "cesta-trapola"
+  TRIAL_SPAWNER: "generatore della prova"
+  TRIPWIRE: "fil trapola"
+  TRIPWIRE_HOOK: "rampin de fil trapola"
+  TUBE_CORAL: "corall a tubo"
+  TUBE_CORAL_BLOCK: "bloch de corall a tubo"
+  TUBE_CORAL_FAN: "gorgonia a tubo"
+  TUBE_CORAL_WALL_FAN: "gorgonia a tubo a mur"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "lastra di mattoni di tufo"
+  TUFF_BRICK_STAIRS: "scalini di mattoni di tufo"
+  TUFF_BRICK_WALL: "muretto di mattoni di tufo"
+  TUFF_BRICKS: "mattoni di tufo"
+  TUFF_SLAB: "lastra di tufo"
+  TUFF_STAIRS: "scalini di tufo"
+  TUFF_WALL: "muretto di tufo"
+  TURTLE_EGG: "oeuv de bissa scudellera"
+  TWISTING_VINES: "ergna intortia"
+  TWISTING_VINES_PLANT: "pianta de ergna intortia"
+  VERDANT_FROGLIGHT: "rana-lus verdenta"
+  VINE: "ergna"
+  VOID_AIR: "aria del voeui"
+  WALL_TORCH: "torcia de mur"
+  WARPED_BUTTON: "boton desformad"
+  WARPED_DOOR: "porta desformada"
+  WARPED_FENCE: "stongarda desformada"
+  WARPED_FENCE_GATE: "restell desformad"
+  WARPED_FUNGUS: "fonsg desformad"
+  WARPED_HANGING_SIGN: "insegna desformada"
+  WARPED_HYPHAE: "ife desformade"
+  WARPED_NYLIUM: "neceli desformad"
+  WARPED_PLANKS: "ass desformade"
+  WARPED_PRESSURE_PLATE: "pian a pression desformad"
+  WARPED_ROOTS: "radis desformade"
+  WARPED_SIGN: "cartell desformad"
+  WARPED_SLAB: "pioda desformada"
+  WARPED_STAIRS: "basei desformad"
+  WARPED_STEM: "gamba desformada"
+  WARPED_TRAPDOOR: "bussera desformada"
+  WARPED_WALL_HANGING_SIGN: "insegna a mur desformada"
+  WARPED_WALL_SIGN: "cartell de mur desformad"
+  WARPED_WART_BLOCK: "bloch de brossera desformada"
+  WATER: "aqua"
+  WATER_CAULDRON: "calderon de aqua"
+  WAXED_CHISELED_COPPER: "rame cesellato cerato"
+  WAXED_COPPER_BLOCK: "bloch de ram incerad"
+  WAXED_COPPER_BULB: "lampada di rame cerato"
+  WAXED_COPPER_DOOR: "porta di rame cerato"
+  WAXED_COPPER_GRATE: "grata di rame cerato"
+  WAXED_COPPER_TRAPDOOR: "botola di rame cerato"
+  WAXED_CUT_COPPER: "ram tajad incerad"
+  WAXED_CUT_COPPER_SLAB: "pioda de ram tajad incerad"
+  WAXED_CUT_COPPER_STAIRS: "basei de ram tajad incerad"
+  WAXED_EXPOSED_CHISELED_COPPER: "rame cesellato esposto cerato"
+  WAXED_EXPOSED_COPPER: "ram espost incerad"
+  WAXED_EXPOSED_COPPER_BULB: "lampada di rame esposto cerato"
+  WAXED_EXPOSED_COPPER_DOOR: "porta di rame esposto cerato"
+  WAXED_EXPOSED_COPPER_GRATE: "grata di rame esposto cerato"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "botola di rame esposto cerato"
+  WAXED_EXPOSED_CUT_COPPER: "ram tajad espost incerad"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "pioda de ram tajad espost incerad"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "basei de ram tajad espost incerad"
+  WAXED_OXIDIZED_CHISELED_COPPER: "rame cesellato ossidato cerato"
+  WAXED_OXIDIZED_COPPER: "ram ossidad incerad"
+  WAXED_OXIDIZED_COPPER_BULB: "lampada di rame ossidato cerato"
+  WAXED_OXIDIZED_COPPER_DOOR: "porta di rame ossidato cerato"
+  WAXED_OXIDIZED_COPPER_GRATE: "grata di rame ossidato cerato"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "botola di rame ossidato cerato"
+  WAXED_OXIDIZED_CUT_COPPER: "ram tajad ossidad incerad"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "pioda de ram tajad ossidad incerad"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "basei de ram tajad ossidad incerad"
+  WAXED_WEATHERED_CHISELED_COPPER: "rame cesellato corroso cerato"
+  WAXED_WEATHERED_COPPER: "ram smangiad incerad"
+  WAXED_WEATHERED_COPPER_BULB: "lampada di rame corroso cerato"
+  WAXED_WEATHERED_COPPER_DOOR: "porta di rame corroso cerato"
+  WAXED_WEATHERED_COPPER_GRATE: "grata di rame corroso cerato"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "botola di rame corroso cerato"
+  WAXED_WEATHERED_CUT_COPPER: "ram tajad smangiad incerad"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "pioda de ram tajad smangiad incerad"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "basei de ram tajad smangiad incerad"
+  WEATHERED_CHISELED_COPPER: "rame cesellato corroso"
+  WEATHERED_COPPER: "ram ruvinad"
+  WEATHERED_COPPER_BULB: "lampada di rame corroso"
+  WEATHERED_COPPER_DOOR: "porta di rame corroso"
+  WEATHERED_COPPER_GRATE: "grata di rame corroso"
+  WEATHERED_COPPER_TRAPDOOR: "botola di rame corroso"
+  WEATHERED_CUT_COPPER: "ram tajad smangiad"
+  WEATHERED_CUT_COPPER_SLAB: "pioda de ram tajad smangiad"
+  WEATHERED_CUT_COPPER_STAIRS: "basei de ram tajad smangiad"
+  WEEPING_VINES: "ergna caragnenta"
+  WEEPING_VINES_PLANT: "pianta de ergna caragnenta"
+  WET_SPONGE: "sponga masarada"
+  WHEAT: "forment"
+  WHITE_BANNER: "bandera bianca"
+  WHITE_BED: "lecc bianch"
+  WHITE_CANDLE: "candira bianca"
+  WHITE_CANDLE_CAKE: "torta con candila bianca"
+  WHITE_CARPET: "tapet bianch"
+  WHITE_CONCRETE: "ciment bianch"
+  WHITE_CONCRETE_POWDER: "polver de ciment bianca"
+  WHITE_GLAZED_TERRACOTTA: "terracota smaltada bianca"
+  WHITE_SHULKER_BOX: "scatola de shulker bianca"
+  WHITE_STAINED_GLASS: "veder bianch"
+  WHITE_STAINED_GLASS_PANE: "panell de veder bianch"
+  WHITE_TERRACOTTA: "terracota bianca"
+  WHITE_TULIP: "tolipan bianch"
+  WHITE_WOOL: "lana bianca"
+  WITHER_ROSE: "roeusa del wither"
+  WITHER_SKELETON_SKULL: "coo de schelter wither"
+  WITHER_SKELETON_WALL_SKULL: "coo de schelter wither a mur"
+  YELLOW_BANNER: "bandera sgialda"
+  YELLOW_BED: "lecc sgiald"
+  YELLOW_CANDLE: "candira sgialda"
+  YELLOW_CANDLE_CAKE: "torta con candila sgialda"
+  YELLOW_CARPET: "tapet sgiald"
+  YELLOW_CONCRETE: "ciment sgiald"
+  YELLOW_CONCRETE_POWDER: "polver de ciment sgialda"
+  YELLOW_GLAZED_TERRACOTTA: "terracota smaltada sgialda"
+  YELLOW_SHULKER_BOX: "scatola de shulker sgialda"
+  YELLOW_STAINED_GLASS: "veder sgiald"
+  YELLOW_STAINED_GLASS_PANE: "panell de veder sgiald"
+  YELLOW_TERRACOTTA: "terracota sgialda"
+  YELLOW_WOOL: "lana sgialda"
+  ZOMBIE_HEAD: "coo de zombie"
+  ZOMBIE_WALL_HEAD: "coo de zombie de mur"
+  ACACIA_BOAT: "barca de rubinia"
+  ACACIA_CHEST_BOAT: "barca de rubinia con cesta"
+  ALLAY_SPAWN_EGG: "oeuv de allay"
+  AMETHYST_SHARD: "scheja de ametista"
+  ANGLER_POTTERY_SHARD: "toch de terra-cota con cana de pesca"
+  ANGLER_POTTERY_SHERD: "toch de terra-cota con cana de pesca"
+  APPLE: "pom"
+  ARCHER_POTTERY_SHARD: "toch de terra-cota con arch"
+  ARCHER_POTTERY_SHERD: "toch de terra-cota con arch"
+  ARMOR_STAND: "suport per armadure"
+  ARMS_UP_POTTERY_SHARD: "toch de terra-cota con figura"
+  ARMS_UP_POTTERY_SHERD: "toch de terra-cota con figura"
+  ARROW: "flizza"
+  AXOLOTL_BUCKET: "sidel con assolot"
+  AXOLOTL_SPAWN_EGG: "oeuv de axolotl"
+  BAKED_POTATO: "pom de terra cot"
+  BAMBOO_CHEST_RAFT: "barchin de bamboo con cesta"
+  BAMBOO_RAFT: "barchin de bamboo"
+  BAT_SPAWN_EGG: "oeuv de tegnoeula"
+  BEE_SPAWN_EGG: "oeuv de ava"
+  BEEF: "manz crud"
+  BEETROOT: "biedrava"
+  BEETROOT_SEEDS: "somenza de biedrave"
+  BEETROOT_SOUP: "supa de biedrave"
+  BIRCH_BOAT: "barca de biolla"
+  BIRCH_CHEST_BOAT: "barca de biolla con cesta"
+  BLACK_DYE: "colorant negher"
+  BLADE_POTTERY_SHARD: "toch de terra-cota con spada"
+  BLADE_POTTERY_SHERD: "toch de terra-cota con spada"
+  BLAZE_POWDER: "polver de blaze"
+  BLAZE_ROD: "verga del blaze"
+  BLAZE_SPAWN_EGG: "oeuv de blaze"
+  BLUE_DYE: "colorant bloeu"
+  BONE: "oss"
+  BONE_MEAL: "polver de oss"
+  BOOK: "liber"
+  BOW: "arch"
+  BOWL: "squella"
+  BREAD: "pan"
+  BREEZE_SPAWN_EGG: "uovo generatore di breeze"
+  BREWER_POTTERY_SHARD: "toch de terra-cota con pozzion"
+  BREWER_POTTERY_SHERD: "toch de terra-cota con pozzion"
+  BREWING_STAND: "lambich"
+  BRICK: "quadrell"
+  BROWN_DYE: "colorant marron"
+  BRUSH: "penell"
+  BUCKET: "sidell"
+  BUNDLE: "sachet"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "toch de terra-cota con foeugh"
+  BURN_POTTERY_SHERD: "toch de terra-cota con foeugh"
+  CAMEL_SPAWN_EGG: "oeuv de camell"
+  CARROT: "carotola"
+  CARROT_ON_A_STICK: "baston e carotola"
+  CAT_SPAWN_EGG: "oeuv de gat"
+  CAVE_SPIDER_SPAWN_EGG: "oeuv de ragn di grote"
+  CHAINMAIL_BOOTS: "strivai de maja"
+  CHAINMAIL_CHESTPLATE: "cota de maja"
+  CHAINMAIL_HELMET: "elm de maja"
+  CHAINMAIL_LEGGINGS: "gambai de maja"
+  CHARCOAL: "carbonella"
+  CHERRY_BOAT: "barca de scireser"
+  CHERRY_CHEST_BOAT: "barca de scireser con cesta"
+  CHEST_MINECART: "carrell de minera con cesta"
+  CHICKEN: "pollaster crud"
+  CHICKEN_SPAWN_EGG: "oeuv de pollaster"
+  CHORUS_FRUIT: "frut de chorus"
+  CLAY_BALL: "balla de argilla"
+  CLOCK: "orelogg"
+  COAL: "carbon"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  COCOA_BEANS: "fave de cacao"
+  COD: "merluzz crud"
+  COD_BUCKET: "sidell con merluzz"
+  COD_SPAWN_EGG: "oeuv de merluzz"
+  COMMAND_BLOCK_MINECART: "carrell de minera con bloch di comand"
+  COMPASS: "bussola"
+  COOKED_BEEF: "bisteca"
+  COOKED_CHICKEN: "pollaster cot"
+  COOKED_COD: "merluzz cot"
+  COOKED_MUTTON: "bar cot"
+  COOKED_PORKCHOP: "brassoeula de porcell cota"
+  COOKED_RABBIT: "conili cot"
+  COOKED_SALMON: "salmon cot"
+  COOKIE: "biscot"
+  COPPER_INGOT: "lingot de ram"
+  COW_SPAWN_EGG: "oeuv de vaca"
+  CREEPER_BANNER_PATTERN: "motiv de la bandera"
+  CREEPER_BANNER_PATTERN_DESC: "faza de creeper"
+  CREEPER_SPAWN_EGG: "oeuv de creeper"
+  CROSSBOW: "balestra"
+  CROSSBOW_PROJECTILE: "balla:"
+  CYAN_DYE: "colorant celest"
+  DANGER_POTTERY_SHARD: "toch de terra-cota con creeper"
+  DANGER_POTTERY_SHERD: "toch de terra-cota con creeper"
+  DARK_OAK_BOAT: "barca de rogora"
+  DARK_OAK_CHEST_BOAT: "barca de rogora con cesta"
+  DEBUG_STICK: "baston de debug"
+  DEBUG_STICK_EMPTY: "%s el gh'ha mìa proprietà"
+  DEBUG_STICK_SELECT: "scernid \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" adess l'è %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "segurin de diamant"
+  DIAMOND_BOOTS: "strivai de diamant"
+  DIAMOND_CHESTPLATE: "corazza de diamant"
+  DIAMOND_HELMET: "elm de diamant"
+  DIAMOND_HOE: "zapa de diamant"
+  DIAMOND_HORSE_ARMOR: "armadura de diamant per cavall"
+  DIAMOND_LEGGINGS: "gambai de diamant"
+  DIAMOND_PICKAXE: "picozz de diamant"
+  DIAMOND_SHOVEL: "baira de diamant"
+  DIAMOND_SWORD: "spada de diamant"
+  DISC_FRAGMENT_5: "toch de disch"
+  DISC_FRAGMENT_5_DESC: "disch de musega - 5"
+  DOLPHIN_SPAWN_EGG: "oeuv de delfin"
+  DONKEY_SPAWN_EGG: "oeuv de asen"
+  DRAGON_BREATH: "bofada de dragon"
+  DRIED_KELP: "alga seca"
+  DROWNED_SPAWN_EGG: "oeuv de negad"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  ECHO_SHARD: "scheja resonanta"
+  EGG: "oeuv"
+  ELDER_GUARDIAN_SPAWN_EGG: "oeuv de guardian antigh"
+  ELYTRA: "eliter"
+  EMERALD: "smerald"
+  ENCHANTED_BOOK: "liber instriad"
+  ENCHANTED_GOLDEN_APPLE: "pom d'or instriad"
+  END_CRYSTAL: "cristall de l'end"
+  ENDER_DRAGON_SPAWN_EGG: "oeuv de l'enderdragon"
+  ENDER_EYE: "oeugg de l'ender"
+  ENDER_PEARL: "perla de l'ender"
+  ENDERMAN_SPAWN_EGG: "oeuv de enderman"
+  ENDERMITE_SPAWN_EGG: "oeuv de endermite"
+  EVOKER_SPAWN_EGG: "oeuv de evocador"
+  EXPERIENCE_BOTTLE: "botilia d'esperienza"
+  EXPLORER_POTTERY_SHARD: "toch de terra-cota con mapa"
+  EXPLORER_POTTERY_SHERD: "toch de terra-cota con mapa"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  FEATHER: "piuma"
+  FERMENTED_SPIDER_EYE: "oeugg de ragn surbuid"
+  FILLED_MAP: "mapa"
+  FIRE_CHARGE: "carga de foeugh"
+  FIREWORK_ROCKET: "razz pirotecnegh"
+  FIREWORK_ROCKET_FLIGHT: "durada del sgol:"
+  FIREWORK_STAR: "stella pirotecnega"
+  FIREWORK_STAR_BLACK: "negher"
+  FIREWORK_STAR_BLUE: "bloeu"
+  FIREWORK_STAR_BROWN: "marron"
+  FIREWORK_STAR_CUSTOM_COLOR: "personalizad"
+  FIREWORK_STAR_CYAN: "celest"
+  FIREWORK_STAR_FADE_TO: "sfuma in"
+  FIREWORK_STAR_FLICKER: "lusor"
+  FIREWORK_STAR_GRAY: "gris"
+  FIREWORK_STAR_GREEN: "verd"
+  FIREWORK_STAR_LIGHT_BLUE: "bloeu ciar"
+  FIREWORK_STAR_LIGHT_GRAY: "gris ciar"
+  FIREWORK_STAR_LIME: "lime"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "naranz"
+  FIREWORK_STAR_PINK: "roeusa"
+  FIREWORK_STAR_PURPLE: "vioeula"
+  FIREWORK_STAR_RED: "ross"
+  FIREWORK_STAR_SHAPE: "forma descognossuda"
+  FIREWORK_STAR_SHAPE_BURST: "s'ciop"
+  FIREWORK_STAR_SHAPE_CREEPER: "a forma de creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "balla granda"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "balla piscinina"
+  FIREWORK_STAR_SHAPE_STAR: "a forma de stella"
+  FIREWORK_STAR_TRAIL: "segn"
+  FIREWORK_STAR_WHITE: "bianch"
+  FIREWORK_STAR_YELLOW: "sgiald"
+  FISHING_ROD: "cana de pescà"
+  FLINT: "serizz"
+  FLINT_AND_STEEL: "spara-foeugh"
+  FLOWER_BANNER_PATTERN: "motiv de la bandera"
+  FLOWER_BANNER_PATTERN_DESC: "fior"
+  FOX_SPAWN_EGG: "oeuv de volp"
+  FRIEND_POTTERY_SHARD: "toch de terra-cota con amis"
+  FRIEND_POTTERY_SHERD: "toch de terra-cota con amis"
+  FROG_SPAWN_EGG: "oeuv de rana"
+  FURNACE_MINECART: "carrell de minera con prestin"
+  GHAST_SPAWN_EGG: "oeuv de ghast"
+  GHAST_TEAR: "lagrima de ghast"
+  GLASS_BOTTLE: "botilia de veder"
+  GLISTERING_MELON_SLICE: "feta de inguria lusenta"
+  GLOBE_BANNER_PATTERN: "motiv de la bandera"
+  GLOBE_BANNER_PATTERN_DESC: "pianeta"
+  GLOW_BERRIES: "borlit sberlusent"
+  GLOW_INK_SAC: "saca de incioster sberlusenta"
+  GLOW_ITEM_FRAME: "cornis sberlusenta"
+  GLOW_SQUID_SPAWN_EGG: "oeuv de calamar sberlusent"
+  GLOWSTONE_DUST: "polver de preja lusenta"
+  GOAT_HORN: "corn de cavra"
+  GOAT_SPAWN_EGG: "oeuv de cavra"
+  GOLD_INGOT: "lingot d'or"
+  GOLD_NUGGET: "pepita d'ora"
+  GOLDEN_APPLE: "pom d'or"
+  GOLDEN_AXE: "segurin d'or"
+  GOLDEN_BOOTS: "strivai d'or"
+  GOLDEN_CARROT: "carotola d'ora"
+  GOLDEN_CHESTPLATE: "corazza d'ora"
+  GOLDEN_HELMET: "elm d'or"
+  GOLDEN_HOE: "zapa d'or"
+  GOLDEN_HORSE_ARMOR: "armadura d'ora per cavall"
+  GOLDEN_LEGGINGS: "gambai d'or"
+  GOLDEN_PICKAXE: "picozz d'or"
+  GOLDEN_SHOVEL: "baira d'ora"
+  GOLDEN_SWORD: "spada d'or"
+  GRAY_DYE: "colorant gris"
+  GREEN_DYE: "colorant verd"
+  GUARDIAN_SPAWN_EGG: "oeuv de guardian"
+  GUNPOWDER: "polver de s'ciop"
+  HEART_OF_THE_SEA: "coeur del mar"
+  HEART_POTTERY_SHARD: "toch de terra-cota con coeur"
+  HEART_POTTERY_SHERD: "toch de terra-cota con coeur"
+  HEARTBREAK_POTTERY_SHARD: "toch de terra-cota con coeur s'cepad"
+  HEARTBREAK_POTTERY_SHERD: "toch de terra-cota con coeur s'cepad"
+  HOGLIN_SPAWN_EGG: "oeuv de hoglin"
+  HONEY_BOTTLE: "botilia de mel"
+  HONEYCOMB: "beden"
+  HOPPER_MINECART: "carrell de minera con tramoeugia"
+  HORSE_SPAWN_EGG: "oeuv de cavall"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  HOWL_POTTERY_SHARD: "toch de terra-cota con lov"
+  HOWL_POTTERY_SHERD: "toch de terra-cota con lov"
+  HUSK_SPAWN_EGG: "oeuv de zombie del desert"
+  INK_SAC: "saca de incioster"
+  IRON_AXE: "segurin de ferr"
+  IRON_BOOTS: "strivai de ferr"
+  IRON_CHESTPLATE: "corazza de ferr"
+  IRON_GOLEM_SPAWN_EGG: "oeuv de golem de ferr"
+  IRON_HELMET: "elm de ferr"
+  IRON_HOE: "zapa de ferr"
+  IRON_HORSE_ARMOR: "armadura de ferr per cavall"
+  IRON_INGOT: "lingot de ferr"
+  IRON_LEGGINGS: "gambai de ferr"
+  IRON_NUGGET: "pepita de ferr"
+  IRON_PICKAXE: "picozz de ferr"
+  IRON_SHOVEL: "baira de ferr"
+  IRON_SWORD: "spada de ferr"
+  ITEM_FRAME: "cornis"
+  JUNGLE_BOAT: "barca de la sgiungla"
+  JUNGLE_CHEST_BOAT: "barca de la sgiungla con cesta"
+  KNOWLEDGE_BOOK: "liber de la cognossenza"
+  LAPIS_LAZULI: "lapislazzer"
+  LAVA_BUCKET: "sidell de lava"
+  LEAD: "sguinzal"
+  LEATHER: "coram"
+  LEATHER_BOOTS: "strivai de coram"
+  LEATHER_CHESTPLATE: "gipa de coram"
+  LEATHER_HELMET: "capell de coram"
+  LEATHER_HORSE_ARMOR: "armadura de coram per cavall"
+  LEATHER_LEGGINGS: "braghe de coram"
+  LIGHT_BLUE_DYE: "colorant bloeu ciar"
+  LIGHT_GRAY_DYE: "colorant gris ciar"
+  LIME_DYE: "colorant lime"
+  LINGERING_POTION: "pozzion persistenta"
+  LINGERING_POTION_EFFECT_AWKWARD: "pozzion strana persistenta"
+  LINGERING_POTION_EFFECT_EMPTY: "pozzion persistenta minga fabricabil"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "pozzion persistenta de resistenza al foeugh"
+  LINGERING_POTION_EFFECT_HARMING: "pozzion persistenta de dagn"
+  LINGERING_POTION_EFFECT_HEALING: "pozzion persistenta de cura"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "pozzion persistenta d'invisibilità"
+  LINGERING_POTION_EFFECT_LEAPING: "pozzion persistenta de salt"
+  LINGERING_POTION_EFFECT_LEVITATION: "pozzion persistenta de levitazzion"
+  LINGERING_POTION_EFFECT_LUCK: "pozzion persistenta de fortuna"
+  LINGERING_POTION_EFFECT_MUNDANE: "pozzion normala persistenta"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "pozzion persistenta de la vision per la nocc"
+  LINGERING_POTION_EFFECT_POISON: "pozzion persistenta de velen"
+  LINGERING_POTION_EFFECT_REGENERATION: "pozzion persistenta de regenerazzion"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "pozzion persistenta de borlada lenta"
+  LINGERING_POTION_EFFECT_SLOWNESS: "pozzion persistenta de lentezza"
+  LINGERING_POTION_EFFECT_STRENGTH: "pozzion persistenta de forza"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "pozzion persistenta de sveltezza"
+  LINGERING_POTION_EFFECT_THICK: "pozzion densa persistenta"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "pozzion persistenta del maester bissa scudellera"
+  LINGERING_POTION_EFFECT_WATER: "botilia d'aqua persistenta"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "pozzion persistenta de respirazzion aquatega"
+  LINGERING_POTION_EFFECT_WEAKNESS: "pozzion persistenta de debolezza"
+  LLAMA_SPAWN_EGG: "oeuv de lama"
+  LODESTONE_COMPASS: "bussola magnetizada"
+  MAGENTA_DYE: "colorant magenta"
+  MAGMA_CREAM: "crema de magma"
+  MAGMA_CUBE_SPAWN_EGG: "oeuv de cub de magma"
+  MANGROVE_BOAT: "barca de mangrovia"
+  MANGROVE_CHEST_BOAT: "barca de mangrovia con cesta"
+  MAP: "mapa voeuda"
+  MELON_SEEDS: "somenza de inguria"
+  MELON_SLICE: "feta de inguria"
+  MILK_BUCKET: "sidell de lacc"
+  MINECART: "carrell de minera"
+  MINER_POTTERY_SHARD: "toch de terra-cota con picozz"
+  MINER_POTTERY_SHERD: "toch de terra-cota con picozz"
+  MOJANG_BANNER_PATTERN: "motiv de la bandera"
+  MOJANG_BANNER_PATTERN_DESC: "loeugh"
+  MOOSHROOM_SPAWN_EGG: "oeuv de vaca-fonsg"
+  MOURNER_POTTERY_SHARD: "toch de terra-cota con warden"
+  MOURNER_POTTERY_SHERD: "toch de terra-cota con warden"
+  MULE_SPAWN_EGG: "oeuv de mull"
+  MUSHROOM_STEW: "stracot de fonsg"
+  MUSIC_DISC_11: "disch de musega"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "disch de musega"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "disch de musega"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "disch de musega"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "disch de musega"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "disch de musega"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "disch de musega"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "disch de musega"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "disch de musega"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "disch de musega"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "disch de musega"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "disch de musega"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "disch de musega"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "disch de musega"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "disch de musega"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "disch de musega"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "bar crud"
+  NAME_TAG: "eticheta"
+  NAUTILUS_SHELL: "guss de nautilus"
+  NETHER_BRICK: "quadrell del nether"
+  NETHER_STAR: "stella del nether"
+  NETHERITE_AXE: "segurin de netherite"
+  NETHERITE_BOOTS: "strivai de netherite"
+  NETHERITE_CHESTPLATE: "corazza de netherite"
+  NETHERITE_HELMET: "elm de netherite"
+  NETHERITE_HOE: "zapa de netherite"
+  NETHERITE_INGOT: "lingot de netherite"
+  NETHERITE_LEGGINGS: "gambai de netherite"
+  NETHERITE_PICKAXE: "picozz de netherite"
+  NETHERITE_SCRAP: "tochei de netherite"
+  NETHERITE_SHOVEL: "baira de netherite"
+  NETHERITE_SWORD: "spada de netherite"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "model del ferrer"
+  OAK_BOAT: "barca de cerr"
+  OAK_CHEST_BOAT: "barca de rogora con cesta"
+  OCELOT_SPAWN_EGG: "oeuv de gatopard"
+  ORANGE_DYE: "colorant naranz"
+  PAINTING: "quader"
+  PANDA_SPAWN_EGG: "oeuv de panda"
+  PAPER: "carta"
+  PARROT_SPAWN_EGG: "oeuv de papagall"
+  PHANTOM_MEMBRANE: "membrana de fantasma"
+  PHANTOM_SPAWN_EGG: "oeuv de fantasma"
+  PIG_SPAWN_EGG: "oeuv de porscell"
+  PIGLIN_BANNER_PATTERN: "motiv de la bandera"
+  PIGLIN_BANNER_PATTERN_DESC: "grugn"
+  PIGLIN_BRUTE_SPAWN_EGG: "oeuv de piglin brut"
+  PIGLIN_SPAWN_EGG: "oeuv de piglin"
+  PILLAGER_SPAWN_EGG: "oeuv de lader"
+  PINK_DYE: "colorant roeusa"
+  PITCHER_POD: "baccello di pianta carnivora"
+  PLENTY_POTTERY_SHARD: "toch de terra-cota con cesta"
+  PLENTY_POTTERY_SHERD: "toch de terra-cota con cesta"
+  POISONOUS_POTATO: "pom de terra toeussega"
+  POLAR_BEAR_SPAWN_EGG: "oeuv de ors polar"
+  POPPED_CHORUS_FRUIT: "frut de chorus s'ciopad"
+  PORKCHOP: "brassoeula de porcell cruda"
+  POTATO: "pom de terra"
+  POTION: "pozzion"
+  POTION_EFFECT_AWKWARD: "pozzion strana"
+  POTION_EFFECT_EMPTY: "pozzion che se poeu mìa fà su"
+  POTION_EFFECT_FIRE_RESISTANCE: "pozzion de resistenza al foeugh"
+  POTION_EFFECT_HARMING: "pozzion de dagn"
+  POTION_EFFECT_HEALING: "pozzion de cura"
+  POTION_EFFECT_INVISIBILITY: "pozzion d'invisibilità"
+  POTION_EFFECT_LEAPING: "pozzion de salt"
+  POTION_EFFECT_LEVITATION: "pozzion de levitazzion"
+  POTION_EFFECT_LUCK: "pozzion de fortuna"
+  POTION_EFFECT_MUNDANE: "pozzion normala"
+  POTION_EFFECT_NIGHT_VISION: "pozzion de la vision per la nocc"
+  POTION_EFFECT_POISON: "pozzion de velen"
+  POTION_EFFECT_REGENERATION: "pozzion de regenerazzion"
+  POTION_EFFECT_SLOW_FALLING: "pozzion de borlada lenta"
+  POTION_EFFECT_SLOWNESS: "pozzion de lentezza"
+  POTION_EFFECT_STRENGTH: "pozzion de forza"
+  POTION_EFFECT_SWIFTNESS: "pozzion de sveltezza"
+  POTION_EFFECT_THICK: "pozzion densa"
+  POTION_EFFECT_TURTLE_MASTER: "pozzion del maester bissa scudellera"
+  POTION_EFFECT_WATER: "botilia d'aqua"
+  POTION_EFFECT_WATER_BREATHING: "pozzion de respirazzion aquatega"
+  POTION_EFFECT_WEAKNESS: "pozzion de debolezza"
+  POTTERY_SHARD_ARCHER: "toch de terra-cota con arch"
+  POTTERY_SHARD_ARMS_UP: "toch de terra-cota con figura"
+  POTTERY_SHARD_PRIZE: "toch de terra-cota con bisgiô"
+  POTTERY_SHARD_SKULL: "toch de terra-cota con coo"
+  POWDER_SNOW_BUCKET: "sidel de fioca in polver"
+  PRISMARINE_CRYSTALS: "cristai de prismarina"
+  PRISMARINE_SHARD: "scheja de prismarina"
+  PRIZE_POTTERY_SHARD: "toch de terra-cota con bisgiô"
+  PRIZE_POTTERY_SHERD: "toch de terra-cota con bisgiô"
+  PUFFERFISH: "pess-balla"
+  PUFFERFISH_BUCKET: "sidell con pess-balla"
+  PUFFERFISH_SPAWN_EGG: "oeuv de pess-balla"
+  PUMPKIN_PIE: "torta de zuca"
+  PUMPKIN_SEEDS: "somenza de zuca"
+  PURPLE_DYE: "colorant vioeula"
+  QUARTZ: "quarz del nether"
+  RABBIT: "conili crud"
+  RABBIT_FOOT: "sciampa de conili"
+  RABBIT_HIDE: "pell de conili"
+  RABBIT_SPAWN_EGG: "oeuv de conili"
+  RABBIT_STEW: "stuvad de conili"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  RAVAGER_SPAWN_EGG: "oeuv de s'cepa-tut"
+  RAW_COPPER: "ram crud"
+  RAW_GOLD: "or crud"
+  RAW_IRON: "ferr crud"
+  RECOVERY_COMPASS: "bussola del retrovà"
+  RED_DYE: "colorant ross"
+  REDSTONE: "polver de prejarossa"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  ROTTEN_FLESH: "carna marscia"
+  SADDLE: "sella"
+  SALMON: "salmon crud"
+  SALMON_BUCKET: "sidell con salmon"
+  SALMON_SPAWN_EGG: "oeuv de salmon"
+  SCUTE: "scheja de bissa scudellera"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  SHEAF_POTTERY_SHARD: "toch de terra-cota con fen"
+  SHEAF_POTTERY_SHERD: "toch de terra-cota con fen"
+  SHEARS: "s'cesora"
+  SHEEP_SPAWN_EGG: "oeuv de pegora"
+  SHELTER_POTTERY_SHARD: "toch de terra-cota con refusg"
+  SHELTER_POTTERY_SHERD: "toch de terra-cota con refusg"
+  SHIELD: "scud"
+  SHIELD_BLACK: "scud negher"
+  SHIELD_BLUE: "scud bloeu"
+  SHIELD_BROWN: "scud marron"
+  SHIELD_CYAN: "scud celest"
+  SHIELD_GRAY: "scud gris"
+  SHIELD_GREEN: "scud verd"
+  SHIELD_LIGHT_BLUE: "scud bloeu ciar"
+  SHIELD_LIGHT_GRAY: "scud gris ciar"
+  SHIELD_LIME: "scud lime"
+  SHIELD_MAGENTA: "scud magenta"
+  SHIELD_ORANGE: "scud naranz"
+  SHIELD_PINK: "scud roeusa"
+  SHIELD_PURPLE: "scud vioeula"
+  SHIELD_RED: "scud ross"
+  SHIELD_WHITE: "scud bianch"
+  SHIELD_YELLOW: "scud sgiald"
+  SHULKER_SHELL: "guss de shulker"
+  SHULKER_SPAWN_EGG: "oeuv de shulker"
+  SIGN: "cartell"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  SILVERFISH_SPAWN_EGG: "oeuv de pess d'arsgent"
+  SKELETON_HORSE_SPAWN_EGG: "oeuv de cavall schelter"
+  SKELETON_SPAWN_EGG: "oeuv de schelter"
+  SKULL_BANNER_PATTERN: "motiv de la bandera"
+  SKULL_BANNER_PATTERN_DESC: "crani"
+  SKULL_POTTERY_SHARD: "toch de terra-cota con coo"
+  SKULL_POTTERY_SHERD: "toch de terra-cota con coo"
+  SLIME_BALL: "balla de slime"
+  SLIME_SPAWN_EGG: "oeuv de slime"
+  SMITHING_TEMPLATE: "model del ferrer"
+  SMITHING_TEMPLATE_APPLIES_TO: "el se aplica a:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "sgionta un lingot o un cristall"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "sgionta una part de armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "lingot e cristall"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredient:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "sgionta un lingot de netherite"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "fornitù de diamant"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "sgionta un armadura un'arma o un arnes de diamant"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "lingot de netherite"
+  SMITHING_TEMPLATE_UPGRADE: "mijoria: "
+  SNIFFER_SPAWN_EGG: "oeuv de nasador"
+  SNORT_POTTERY_SHARD: "toch de terra-cota con nasador"
+  SNORT_POTTERY_SHERD: "toch de terra-cota con nasador"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  SNOW_GOLEM_SPAWN_EGG: "oeuv de golem de nev"
+  SNOWBALL: "balla de fioca"
+  SPECTRAL_ARROW: "flizza spetrala"
+  SPIDER_EYE: "oeugg de ragn"
+  SPIDER_SPAWN_EGG: "oeuv de ragn"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  SPLASH_POTION: "pozzion de tirà"
+  SPLASH_POTION_EFFECT_AWKWARD: "pozzion strana de tirà"
+  SPLASH_POTION_EFFECT_EMPTY: "pozzion de tirà che se poeu mìa fà su"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "pozzion de tirà de resistenza al foeugh"
+  SPLASH_POTION_EFFECT_HARMING: "pozzion de tirà de dagn"
+  SPLASH_POTION_EFFECT_HEALING: "pozzion de tirà de cura"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "pozzion de tirà d'invisibilità"
+  SPLASH_POTION_EFFECT_LEAPING: "pozzion de tirà de salt"
+  SPLASH_POTION_EFFECT_LEVITATION: "pozzion de tirà de levitazzion"
+  SPLASH_POTION_EFFECT_LUCK: "pozzion de tirà de fortuna"
+  SPLASH_POTION_EFFECT_MUNDANE: "pozzion normala de tirà"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "pozzion de tirà de vision per la nocc"
+  SPLASH_POTION_EFFECT_POISON: "pozzion de tirà de velen"
+  SPLASH_POTION_EFFECT_REGENERATION: "pozzion de tirà de regenerazzion"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "pozzion de tirà de borlada lenta"
+  SPLASH_POTION_EFFECT_SLOWNESS: "pozzion de tirà de lentezza"
+  SPLASH_POTION_EFFECT_STRENGTH: "pozzion de tirà de forza"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "pozzion de tirà de sveltezza"
+  SPLASH_POTION_EFFECT_THICK: "pozzion densa de tirà"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "pozzion de tirà del maester bissa scudellera"
+  SPLASH_POTION_EFFECT_WATER: "botilia d'aqua de tirà"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "pozzion de tirà de respirazzion aquatega"
+  SPLASH_POTION_EFFECT_WEAKNESS: "pozzion de tirà de debolezza"
+  SPRUCE_BOAT: "barca de abiezz"
+  SPRUCE_CHEST_BOAT: "barca de abiezz con cesta"
+  SPYGLASS: "canoccial"
+  SQUID_SPAWN_EGG: "oeuv de calamar"
+  STICK: "baston"
+  STONE_AXE: "segurin de preja"
+  STONE_HOE: "zapa de preja"
+  STONE_PICKAXE: "picozz de preja"
+  STONE_SHOVEL: "baira de preja"
+  STONE_SWORD: "spada de preja"
+  STRAY_SPAWN_EGG: "oeuv de schelter di nev"
+  STRIDER_SPAWN_EGG: "oeuv de strider"
+  STRING: "fil"
+  SUGAR: "zucher"
+  SUSPICIOUS_STEW: "supa sospeta"
+  SWEET_BERRIES: "frut dolz"
+  TADPOLE_BUCKET: "sidell con botarana"
+  TADPOLE_SPAWN_EGG: "oeuv de botarana"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  TIPPED_ARROW: "flizza guzza"
+  TIPPED_ARROW_EFFECT_AWKWARD: "flizza imbibida"
+  TIPPED_ARROW_EFFECT_EMPTY: "flizza imbibida che se poeu mìa fà su"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "flizza de resistenza al foeugh"
+  TIPPED_ARROW_EFFECT_HARMING: "flizza de dagn"
+  TIPPED_ARROW_EFFECT_HEALING: "flizza de cura"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "flizza de invisibilità"
+  TIPPED_ARROW_EFFECT_LEAPING: "flizza de salt"
+  TIPPED_ARROW_EFFECT_LEVITATION: "flizza de levitazzion"
+  TIPPED_ARROW_EFFECT_LUCK: "flizza de fortuna"
+  TIPPED_ARROW_EFFECT_MUNDANE: "flizza imbibida"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "flizza de vision per la nocc"
+  TIPPED_ARROW_EFFECT_POISON: "flizza de velen"
+  TIPPED_ARROW_EFFECT_REGENERATION: "flizza de regenerazzion"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "flizza de borlada lenta"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "flizza de lentezza"
+  TIPPED_ARROW_EFFECT_STRENGTH: "flizza de forza"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "flizza de sveltezza"
+  TIPPED_ARROW_EFFECT_THICK: "flizza imbibida"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "flizza del maester bissa scudellera"
+  TIPPED_ARROW_EFFECT_WATER: "flizza d'aqua"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "flizza de respirazzion aquatega"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "flizza de debolezza"
+  TNT_MINECART: "carrell de minera con dimanit"
+  TORCHFLOWER_SEEDS: "somenza de torcia-fior"
+  TOTEM_OF_UNDYING: "totem de l'imortalità"
+  TRADER_LLAMA_SPAWN_EGG: "oeuv de lama ramingh"
+  TRIAL_KEY: "chiave della prova"
+  TRIDENT: "trident"
+  TROPICAL_FISH: "pess tropegal"
+  TROPICAL_FISH_BUCKET: "sidell de pess tropegal"
+  TROPICAL_FISH_SPAWN_EGG: "oeuv de pess tropegal"
+  TURTLE_HELMET: "guss de bissa scudellera"
+  TURTLE_SPAWN_EGG: "oeuv de bissa scudellera"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  VEX_SPAWN_EGG: "oeuv de spirit"
+  VILLAGER_SPAWN_EGG: "oeuv de paisan"
+  VINDICATOR_SPAWN_EGG: "oeuv de vendegador"
+  WANDERING_TRADER_SPAWN_EGG: "oeuv de mercant ramingh"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  WARDEN_SPAWN_EGG: "oeuv de warden"
+  WARPED_FUNGUS_ON_A_STICK: "baston con fonsg desformad"
+  WATER_BUCKET: "sidell d'aqua"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  WHEAT_SEEDS: "somenza de forment"
+  WHITE_DYE: "colorant bianch"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "model del ferrer"
+  WITCH_SPAWN_EGG: "oeuv de stria"
+  WITHER_SKELETON_SPAWN_EGG: "oeuv de schelter wither"
+  WITHER_SPAWN_EGG: "oeuv de wither"
+  WOLF_SPAWN_EGG: "oeuv de lov"
+  WOODEN_AXE: "segurin de legn"
+  WOODEN_HOE: "zapa de legn"
+  WOODEN_PICKAXE: "picozz de legn"
+  WOODEN_SHOVEL: "baira de legn"
+  WOODEN_SWORD: "spada de legn"
+  WRITABLE_BOOK: "liber e pena"
+  WRITTEN_BOOK: "liber scrit"
+  YELLOW_DYE: "colorant sgiald"
+  ZOGLIN_SPAWN_EGG: "oeuv de zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "oeuv de cavall zombie"
+  ZOMBIE_SPAWN_EGG: "oeuv de zombie"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "oeuv de paisan zombie"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "oeuv de piglin zombifegad"
+  CHEST: "in sul corp:"
+  FEET: "in sui pè:"
+  HEAD: "in sul coo:"
+  LEGS: "in sui gambe:"
+  MAINHAND: "in la man principala:"
+  OFFHAND: "in la man segondaria:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

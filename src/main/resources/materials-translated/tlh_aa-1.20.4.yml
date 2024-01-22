@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "'aqey'sa sor leq"
+  ACACIA_DOOR: "'aqey'sa sor lojmit"
+  ACACIA_FENCE: "'aqey'sa sor tlhoy'hom"
+  ACACIA_FENCE_GATE: "'aqey'sa sor tlhoy'hom lojmit"
+  ACACIA_HANGING_SIGN: "'aqey'sa sor qin 'echlet tlhep"
+  ACACIA_LEAVES: "'aqey'sa sor pormey"
+  ACACIA_LOG: "'aqey'sa sor qechjem'a'"
+  ACACIA_PLANKS: "'aqey'sa sor 'echletmey"
+  ACACIA_PRESSURE_PLATE: "'aqey'sa sor surmen 'echlet"
+  ACACIA_SAPLING: "'aqey'sa sor lav"
+  ACACIA_SIGN: "'aqey'sa sor qin 'echlet"
+  ACACIA_SLAB: "'aqey'sa sor buq'ir bid"
+  ACACIA_STAIRS: "'aqey'sa sor letlh"
+  ACACIA_TRAPDOOR: "'aqey'sa sor vonmeh lojmit"
+  ACACIA_WALL_HANGING_SIGN: "'aqey'sa sor tlhoy' qin 'echlet tlhep"
+  ACACIA_WALL_SIGN: "'aqey'sa sor tlhoy' qin 'echlet"
+  ACACIA_WOOD: "'aqey'sa sor hap"
+  ACTIVATOR_RAIL: "chu'wi' tihmey"
+  AIR: "rewve'"
+  ALLIUM: "'anyan o'qqar 'insong"
+  AMETHYST_BLOCK: "chosom nguv buq'ir"
+  AMETHYST_CLUSTER: "chosom nguv qutmey"
+  ANCIENT_DEBRIS: "di tiq"
+  ANDESITE: "yuwey nagh"
+  ANDESITE_SLAB: "yuwey nagh buq'ir bid"
+  ANDESITE_STAIRS: "yuwey nagh letlh"
+  ANDESITE_WALL: "yuwey nagh tlhoy'"
+  ANVIL: "mitlhmeh jan"
+  ATTACHED_MELON_STEM: "qaq nah qechjem rarlu'bogh"
+  ATTACHED_PUMPKIN_STEM: "'aquta' rarlu'bogh"
+  AZALEA: "dis lav"
+  AZALEA_LEAVES: "dis lav pormey"
+  AZURE_BLUET: "'asur bilu'et 'insong"
+  BAMBOO: "bambu'"
+  BAMBOO_BLOCK: "bambu' buq'ir"
+  BAMBOO_BUTTON: "bambu' leq"
+  BAMBOO_DOOR: "bambu' lojmit"
+  BAMBOO_FENCE: "bambu' tlhoy'hom"
+  BAMBOO_FENCE_GATE: "bambu' tlhoy'hom lojmit"
+  BAMBOO_HANGING_SIGN: "bambu' qin 'echlet tlhep"
+  BAMBOO_MOSAIC: "bambu' hasreh"
+  BAMBOO_MOSAIC_SLAB: "bambu' hasreh buq'ir bid"
+  BAMBOO_MOSAIC_STAIRS: "bambu' hasreh letlh"
+  BAMBOO_PLANKS: "bambu' 'echletmey"
+  BAMBOO_PRESSURE_PLATE: "bambu' surmen 'echlet"
+  BAMBOO_SAPLING: "bambu' ghub"
+  BAMBOO_SIGN: "bambu' qin 'echlet"
+  BAMBOO_SLAB: "bambu' buq'ir bid"
+  BAMBOO_STAIRS: "bambu' letlh"
+  BAMBOO_TRAPDOOR: "bambu' vonmeh lojmit"
+  BAMBOO_WALL_HANGING_SIGN: "bambu' tlhoy' qin 'echlet tlhep"
+  BAMBOO_WALL_SIGN: "bambu' tlhoy' qin 'echlet"
+  BANNER_BASE_BLACK: "wesjech qij"
+  BANNER_BASE_BLUE: "sudbogh wesjech 'ej hurghbogh"
+  BANNER_BASE_BROWN: "doqbogh wesjech 'ej wovbe'bogh"
+  BANNER_BASE_CYAN: "sudqu'bogh wesjech 'ej wovbogh"
+  BANNER_BASE_GRAY: "qijbogh wesjech 'ej wovbogh"
+  BANNER_BASE_GREEN: "wesjech sudqu'"
+  BANNER_BASE_LIGHT_BLUE: "sudbogh wesjech 'ej wovbogh"
+  BANNER_BASE_LIGHT_GRAY: "qijbogh wesjech 'ej wovqu'bogh"
+  BANNER_BASE_LIME: "sudqu'bogh wesjech 'ej wovqu'bogh"
+  BANNER_BASE_MAGENTA: "doqqu'bogh wesjech 'ej wovbogh"
+  BANNER_BASE_ORANGE: "doqbogh wesjech 'ej wovbogh"
+  BANNER_BASE_PINK: "doqqu'bogh wesjech 'ej wovqu'bogh"
+  BANNER_BASE_PURPLE: "ghirep hurgh rurbogh wesjech'e'"
+  BANNER_BASE_RED: "doqqu'bogh joqwi' naq"
+  BANNER_BASE_WHITE: "wesjech chis"
+  BANNER_BASE_YELLOW: "sudbogh wesjech 'ej wovqu'bogh"
+  BANNER_BORDER_BLACK: "heh qij"
+  BANNER_BORDER_BLUE: "sudbogh heh 'ej hurghbogh"
+  BANNER_BORDER_BROWN: "doqbogh heh 'ej wovbe'bogh"
+  BANNER_BORDER_CYAN: "sudqu'bogh heh 'ej wovbogh"
+  BANNER_BORDER_GRAY: "qijbogh heh 'ej wovbogh"
+  BANNER_BORDER_GREEN: "heh sudqu'"
+  BANNER_BORDER_LIGHT_BLUE: "sudbogh heh 'ej wovbogh"
+  BANNER_BORDER_LIGHT_GRAY: "qijbogh heh 'ej wovqu'bogh"
+  BANNER_BORDER_LIME: "sudqu'bogh heh 'ej wovqu'bogh"
+  BANNER_BORDER_MAGENTA: "doqqu'bogh heh 'ej wovbogh"
+  BANNER_BORDER_ORANGE: "doqbogh heh 'ej wovbogh"
+  BANNER_BORDER_PINK: "doqqu'bogh heh 'ej wovqu'bogh"
+  BANNER_BORDER_PURPLE: "ghirep hurgh rurbogh heh'e'"
+  BANNER_BORDER_RED: "heh doqqu'"
+  BANNER_BORDER_WHITE: "heh chis"
+  BANNER_BORDER_YELLOW: "sudbogh heh 'ej wovqu'bogh"
+  BANNER_BRICKS_BLACK: "ngogh red qij"
+  BANNER_BRICKS_BLUE: "sudbogh ngogh red 'ej hurghbogh"
+  BANNER_BRICKS_BROWN: "doqbogh ngogh red 'ej wovbe'bogh"
+  BANNER_BRICKS_CYAN: "sudqu'bogh ngogh red 'ej wovbogh"
+  BANNER_BRICKS_GRAY: "qijbogh ngogh red 'ej wovbogh"
+  BANNER_BRICKS_GREEN: "ngogh red sudqu'"
+  BANNER_BRICKS_LIGHT_BLUE: "sudbogh ngogh red 'ej wovbogh"
+  BANNER_BRICKS_LIGHT_GRAY: "qijbogh ngogh red 'ej wovqu'bogh"
+  BANNER_BRICKS_LIME: "sudqu'bogh ngogh red 'ej wovqu'bogh"
+  BANNER_BRICKS_MAGENTA: "doqqu'bogh ngogh red 'ej wovbogh"
+  BANNER_BRICKS_ORANGE: "doqbogh ngogh red 'ej wovbogh"
+  BANNER_BRICKS_PINK: "doqqu'bogh ngogh red 'ej wovqu'bogh"
+  BANNER_BRICKS_PURPLE: "ghirep hurgh rurbogh ngogh red'e'"
+  BANNER_BRICKS_RED: "ngogh doqqu'"
+  BANNER_BRICKS_WHITE: "ngogh red chis"
+  BANNER_BRICKS_YELLOW: "sudbogh ngogh red 'ej wovqu'bogh"
+  BANNER_CIRCLE_BLACK: "botlh gho qij"
+  BANNER_CIRCLE_BLUE: "sudbogh botlh gho 'ej hurghbogh"
+  BANNER_CIRCLE_BROWN: "doqbogh botlh gho 'ej wovbe'bogh"
+  BANNER_CIRCLE_CYAN: "sudqu'bogh botlh gho 'ej wovbogh"
+  BANNER_CIRCLE_GRAY: "qijbogh botlh gho 'ej wovbogh"
+  BANNER_CIRCLE_GREEN: "botlh gho sudqu'"
+  BANNER_CIRCLE_LIGHT_BLUE: "sudbogh botlh gho 'ej wovbogh"
+  BANNER_CIRCLE_LIGHT_GRAY: "qijbogh botlh gho 'ej wovqu'bogh"
+  BANNER_CIRCLE_LIME: "sudqu'bogh botlh gho 'ej wovqu'bogh"
+  BANNER_CIRCLE_MAGENTA: "doqqu'bogh botlh gho 'ej wovbogh"
+  BANNER_CIRCLE_ORANGE: "doqbogh botlh gho 'ej wovbogh"
+  BANNER_CIRCLE_PINK: "doqqu'bogh botlh gho 'ej wovqu'bogh"
+  BANNER_CIRCLE_PURPLE: "ghirep hurgh rurbogh botlh gho'e'"
+  BANNER_CIRCLE_RED: "botlh gho doqqu'"
+  BANNER_CIRCLE_WHITE: "botlh gho chis"
+  BANNER_CIRCLE_YELLOW: "sudbogh botlh gho 'ej wovqu'bogh"
+  BANNER_CREEPER_BLACK: "creeper degh qij"
+  BANNER_CREEPER_BLUE: "sudbogh creeper degh 'ej hurghbogh"
+  BANNER_CREEPER_BROWN: "doqbogh creeper degh 'ej wovbe'bogh"
+  BANNER_CREEPER_CYAN: "sudqu'bogh creeper degh 'ej wovbogh"
+  BANNER_CREEPER_GRAY: "qijbogh creeper degh 'ej wovbogh"
+  BANNER_CREEPER_GREEN: "creeper degh sudqu'"
+  BANNER_CREEPER_LIGHT_BLUE: "sudbogh creeper degh 'ej wovbogh"
+  BANNER_CREEPER_LIGHT_GRAY: "qijbogh creeper degh 'ej wovqu'bogh"
+  BANNER_CREEPER_LIME: "sudqu'bogh creeper degh 'ej wovqu'bogh"
+  BANNER_CREEPER_MAGENTA: "doqqu'bogh creeper degh 'ej wovbogh"
+  BANNER_CREEPER_ORANGE: "doqbogh creeper degh 'ej wovbogh"
+  BANNER_CREEPER_PINK: "doqqu'bogh creeper degh 'ej wovqu'bogh"
+  BANNER_CREEPER_PURPLE: "ghirep hurgh rurbogh creeper degh'e'"
+  BANNER_CREEPER_RED: "creeper degh doqqu'"
+  BANNER_CREEPER_WHITE: "creeper degh chis"
+  BANNER_CREEPER_YELLOW: "sudbogh creeper degh 'ej wovqu'bogh"
+  BANNER_CROSS_BLACK: "bo'ghey me'ched qij"
+  BANNER_CROSS_BLUE: "sudbogh bo'ghey me'ched 'ej hurghbogh"
+  BANNER_CROSS_BROWN: "doqbogh bo'ghey me'ched 'ej wovbe'bogh"
+  BANNER_CROSS_CYAN: "sudqu'bogh bo'ghey me'ched 'ej wovbogh"
+  BANNER_CROSS_GRAY: "qijbogh bo'ghey me'ched 'ej wovbogh"
+  BANNER_CROSS_GREEN: "bo'ghey me'ched sudqu'"
+  BANNER_CROSS_LIGHT_BLUE: "sudbogh bo'ghey me'ched 'ej wovbogh"
+  BANNER_CROSS_LIGHT_GRAY: "qijbogh bo'ghey me'ched 'ej wovqu'bogh"
+  BANNER_CROSS_LIME: "sudqu'bogh bo'ghey me'ched 'ej wovqu'bogh"
+  BANNER_CROSS_MAGENTA: "doqqu'bogh bo'ghey me'ched 'ej wovbogh"
+  BANNER_CROSS_ORANGE: "doqbogh bo'ghey me'ched 'ej wovbogh"
+  BANNER_CROSS_PINK: "doqqu'bogh bo'ghey me'ched 'ej wovqu'bogh"
+  BANNER_CROSS_PURPLE: "ghirep hurgh rurbogh bo'ghey me'ched'e'"
+  BANNER_CROSS_RED: "bo'ghey me'ched doqqu'"
+  BANNER_CROSS_WHITE: "bo'ghey me'ched chis"
+  BANNER_CROSS_YELLOW: "sudbogh bo'ghey me'ched 'ej wovqu'bogh"
+  BANNER_CURLY_BORDER_BLACK: "qijbogh heh tiy"
+  BANNER_CURLY_BORDER_BLUE: "sudbogh heh tiy 'ej hurghbogh"
+  BANNER_CURLY_BORDER_BROWN: "doqbogh heh tiy 'ej wovbe'bogh"
+  BANNER_CURLY_BORDER_CYAN: "sudqu'bogh heh tiy 'ej wovbogh"
+  BANNER_CURLY_BORDER_GRAY: "qijbogh heh tiy 'ej wovbogh"
+  BANNER_CURLY_BORDER_GREEN: "sudqu'bogh heh tiy"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "sudbogh heh tiy 'ej wovbogh"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "qijbogh heh tiy 'ej wovqu'bogh"
+  BANNER_CURLY_BORDER_LIME: "sudqu'bogh heh tiy 'ej wovqu'bogh"
+  BANNER_CURLY_BORDER_MAGENTA: "doqqu'bogh heh tiy 'ej wovbogh"
+  BANNER_CURLY_BORDER_ORANGE: "doqbogh heh tiy 'ej wovbogh"
+  BANNER_CURLY_BORDER_PINK: "doqqu'bogh heh tiy 'ej wovqu'bogh"
+  BANNER_CURLY_BORDER_PURPLE: "ghirep hurgh rurbogh heh'e' tiy"
+  BANNER_CURLY_BORDER_RED: "doqqu'bogh heh tiy"
+  BANNER_CURLY_BORDER_WHITE: "chisbogh heh tiy"
+  BANNER_CURLY_BORDER_YELLOW: "sudbogh heh tiy 'ej wovqu'bogh"
+  BANNER_DIAGONAL_LEFT_BLACK: "yor pos bo'ghey qij"
+  BANNER_DIAGONAL_LEFT_BLUE: "sudbogh yor pos bo'ghey 'ej hurghbogh"
+  BANNER_DIAGONAL_LEFT_BROWN: "doqbogh yor pos bo'ghey 'ej wovbe'bogh"
+  BANNER_DIAGONAL_LEFT_CYAN: "sudqu'bogh yor pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_LEFT_GRAY: "qijbogh yor pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_LEFT_GREEN: "yor pos bo'ghey sudqu'"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "sudbogh yor pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "qijbogh yor pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_LEFT_LIME: "sudqu'bogh yor pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "doqqu'bogh yor pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_LEFT_ORANGE: "doqbogh yor pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_LEFT_PINK: "doqqu'bogh yor pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_LEFT_PURPLE: "ghirep hurgh rurbogh yor pos bo'ghey'e'"
+  BANNER_DIAGONAL_LEFT_RED: "yor pos bo'ghey doqqu'"
+  BANNER_DIAGONAL_LEFT_WHITE: "yor pos bo'ghey chis"
+  BANNER_DIAGONAL_LEFT_YELLOW: "sudbogh yor pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_RIGHT_BLACK: "yor nih bo'ghey qij"
+  BANNER_DIAGONAL_RIGHT_BLUE: "sudbogh yor nih bo'ghey 'ej hurghbogh"
+  BANNER_DIAGONAL_RIGHT_BROWN: "doqbogh yor nih bo'ghey 'ej wovbe'bogh"
+  BANNER_DIAGONAL_RIGHT_CYAN: "sudqu'bogh yor nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_RIGHT_GRAY: "qijbogh yor nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_RIGHT_GREEN: "yor nih bo'ghey sudqu'"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "sudbogh yor nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "qijbogh yor nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_RIGHT_LIME: "sudqu'bogh yor nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "doqqu'bogh yor nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "doqbogh yor nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_RIGHT_PINK: "doqqu'bogh yor nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "ghirep hurgh rurbogh yor nih bo'ghey'e'"
+  BANNER_DIAGONAL_RIGHT_RED: "yor nih bo'ghey doqqu'"
+  BANNER_DIAGONAL_RIGHT_WHITE: "yor nih bo'ghey chis"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "sudbogh yor nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "pirmus pos bo'ghey qij"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "sudbogh pirmus pos bo'ghey 'ej hurghbogh"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "doqbogh pirmus pos bo'ghey 'ej wovbe'bogh"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "sudqu'bogh pirmus pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "qijbogh pirmus pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "pirmus pos bo'ghey sudqu'"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "sudbogh pirmus pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "qijbogh pirmus pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "sudqu'bogh pirmus pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "doqqu'bogh pirmus pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "doqbogh pirmus pos bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "doqqu'bogh pirmus pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "ghirep hurgh rurbogh pirmus pos bo'ghey'e'"
+  BANNER_DIAGONAL_UP_LEFT_RED: "pirmus pos bo'ghey doqqu'"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "pirmus pos bo'ghey chis"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "sudbogh pirmus pos bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "pirmus nih bo'ghey qij"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "sudbogh pirmus nih bo'ghey 'ej hurghbogh"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "doqbogh pirmus nih bo'ghey 'ej wovbe'bogh"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "sudqu'bogh pirmus nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "qijbogh pirmus nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "pirmus nih bo'ghey sudqu'"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "sudbogh pirmus nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "qijbogh pirmus nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "sudqu'bogh pirmus nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "doqqu'bogh pirmus nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "doqbogh pirmus nih bo'ghey 'ej wovbogh"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "doqqu'bogh pirmus nih bo'ghey 'ej wovqu'bogh"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "ghirep hurgh rurbogh pirmus nih bo'ghey'e'"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "pirmus nih bo'ghey doqqu'"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "pirmus nih bo'ghey chis"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "sudbogh pirmus nih bo'ghey 'ej wovqu'bogh"
+  BANNER_FLOWER_BLACK: "'insong degh qij"
+  BANNER_FLOWER_BLUE: "sudbogh 'insong degh 'ej hurghbogh"
+  BANNER_FLOWER_BROWN: "doqbogh 'insong degh 'ej wovbe'bogh"
+  BANNER_FLOWER_CYAN: "sudqu'bogh 'insong degh 'ej wovbogh"
+  BANNER_FLOWER_GRAY: "qijbogh 'insong degh 'ej wovbogh"
+  BANNER_FLOWER_GREEN: "'insong degh sudqu’"
+  BANNER_FLOWER_LIGHT_BLUE: "sudbogh 'insong degh 'ej wovbogh"
+  BANNER_FLOWER_LIGHT_GRAY: "qijbogh 'insong degh 'ej wovqu'bogh"
+  BANNER_FLOWER_LIME: "sudqu'bogh 'insong degh 'ej wovqu'bogh"
+  BANNER_FLOWER_MAGENTA: "doqqu'bogh 'insong degh 'ej wovbogh"
+  BANNER_FLOWER_ORANGE: "doqbogh 'insong degh 'ej wovbogh"
+  BANNER_FLOWER_PINK: "doqqu'bogh 'insong degh 'ej wovqu'bogh"
+  BANNER_FLOWER_PURPLE: "ghirep hurgh rurbogh 'insong degh'e'"
+  BANNER_FLOWER_RED: "'insong degh doqqu'"
+  BANNER_FLOWER_WHITE: "'insong degh chis"
+  BANNER_FLOWER_YELLOW: "sudbogh 'insong degh 'ej wovqu'bogh"
+  BANNER_GLOBE_BLACK: "yuq qij"
+  BANNER_GLOBE_BLUE: "sudbogh yuq 'ej hurghbogh"
+  BANNER_GLOBE_BROWN: "doqbogh yuq 'ej wovbe'bogh"
+  BANNER_GLOBE_CYAN: "sudqu'bogh yuq 'ej wovbogh"
+  BANNER_GLOBE_GRAY: "qijbogh yuq 'ej wovbogh"
+  BANNER_GLOBE_GREEN: "yuq sudqu'"
+  BANNER_GLOBE_LIGHT_BLUE: "sudbogh yuq 'ej wovbogh"
+  BANNER_GLOBE_LIGHT_GRAY: "qijbogh yuq 'ej wovqu'bogh"
+  BANNER_GLOBE_LIME: "sudqu'bogh yuq 'ej wovqu'bogh"
+  BANNER_GLOBE_MAGENTA: "doqqu'bogh yuq 'ej wovbogh"
+  BANNER_GLOBE_ORANGE: "doqbogh yuq 'ej wovbogh"
+  BANNER_GLOBE_PINK: "doqqu'bogh yuq 'ej wovqu'bogh"
+  BANNER_GLOBE_PURPLE: "ghirep hurgh rurbogh yuq'e'"
+  BANNER_GLOBE_RED: "qo' doqqu'"
+  BANNER_GLOBE_WHITE: "yuq chis"
+  BANNER_GLOBE_YELLOW: "sudbogh yuq 'ej wovqu'bogh"
+  BANNER_GRADIENT_BLACK: "qijbogh yor choh hab"
+  BANNER_GRADIENT_BLUE: "sudbogh yor choh hab 'ej hurghbogh"
+  BANNER_GRADIENT_BROWN: "doqbogh yor choh hab 'ej wovbe'bogh"
+  BANNER_GRADIENT_CYAN: "sudqu'bogh yor choh hab 'ej wovbogh"
+  BANNER_GRADIENT_GRAY: "qijbogh yor choh hab 'ej wovbogh"
+  BANNER_GRADIENT_GREEN: "sudqu'bogh yor choh hab"
+  BANNER_GRADIENT_LIGHT_BLUE: "sudbogh yor choh hab 'ej wovbogh"
+  BANNER_GRADIENT_LIGHT_GRAY: "qijbogh yor choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_LIME: "sudqu'bogh yor choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_MAGENTA: "doqqu'bogh yor choh hab 'ej wovbogh"
+  BANNER_GRADIENT_ORANGE: "doqbogh yor choh hab 'ej wovbogh"
+  BANNER_GRADIENT_PINK: "doqqu'bogh yor choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_PURPLE: "ghirep hurgh rurbogh yor choh'e' hab"
+  BANNER_GRADIENT_RED: "doqqu'bogh yor choh hab"
+  BANNER_GRADIENT_WHITE: "chisbogh yor choh hab"
+  BANNER_GRADIENT_YELLOW: "sudbogh yor choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_UP_BLACK: "qijbogh pirmus choh hab"
+  BANNER_GRADIENT_UP_BLUE: "sudbogh pirmus choh hab 'ej hurghbogh"
+  BANNER_GRADIENT_UP_BROWN: "doqbogh pirmus choh hab 'ej wovbe'bogh"
+  BANNER_GRADIENT_UP_CYAN: "sudqu'bogh pirmus choh hab 'ej wovbogh"
+  BANNER_GRADIENT_UP_GRAY: "qijbogh pirmus choh hab 'ej wovbogh"
+  BANNER_GRADIENT_UP_GREEN: "sudqu'bogh pirmus choh hab"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "sudbogh pirmus choh hab 'ej wovbogh"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "qijbogh pirmus choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_UP_LIME: "sudqu'bogh pirmus choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_UP_MAGENTA: "doqqu'bogh pirmus choh hab 'ej wovbogh"
+  BANNER_GRADIENT_UP_ORANGE: "doqbogh pirmus choh hab 'ej wovbogh"
+  BANNER_GRADIENT_UP_PINK: "doqqu'bogh pirmus choh hab 'ej wovqu'bogh"
+  BANNER_GRADIENT_UP_PURPLE: "ghirep hurgh rurbogh pirmus choh'e' hab"
+  BANNER_GRADIENT_UP_RED: "doqqu'bogh pirmus choh hab"
+  BANNER_GRADIENT_UP_WHITE: "chisbogh pirmus choh hab"
+  BANNER_GRADIENT_UP_YELLOW: "sudbogh pirmus choh hab 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_BLACK: "yor bid qij"
+  BANNER_HALF_HORIZONTAL_BLUE: "sudbogh yor bid 'ej hurghbogh"
+  BANNER_HALF_HORIZONTAL_BROWN: "doqbogh yor bid 'ej wovbe'bogh"
+  BANNER_HALF_HORIZONTAL_CYAN: "sudqu'bogh yor bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_GRAY: "qijbogh yor bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_GREEN: "yor bid sudqu'"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "sudbogh yor bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "qijbogh yor bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_LIME: "sudqu'bogh yor bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "doqqu'bogh yor bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_ORANGE: "doqbogh yor bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_PINK: "doqqu'bogh yor bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_PURPLE: "ghirep hurgh rurbogh yor bid'e'"
+  BANNER_HALF_HORIZONTAL_RED: "yor bid doqqu'"
+  BANNER_HALF_HORIZONTAL_WHITE: "yor bid chis"
+  BANNER_HALF_HORIZONTAL_YELLOW: "sudbogh yor bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "pirmus bid qij"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "sudbogh pirmus bid 'ej hurghbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "doqbogh pirmus bid 'ej wovbe'bogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "sudqu'bogh pirmus bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "qijbogh pirmus bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "pirmus bid sudqu'"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "sudbogh pirmus bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "qijbogh pirmus bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "sudqu'bogh pirmus bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "doqqu'bogh pirmus bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "doqbogh pirmus bid 'ej wovbogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "doqqu'bogh pirmus bid 'ej wovqu'bogh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "ghirep hurgh rurbogh pirmus bid'e'"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "pirmus bid doqqu'"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "pirmus bid chis"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "sudbogh pirmus bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_BLACK: "pos bid qij"
+  BANNER_HALF_VERTICAL_BLUE: "sudbogh pos bid 'ej hurghbogh"
+  BANNER_HALF_VERTICAL_BROWN: "doqbogh pos bid 'ej wovbe'bogh"
+  BANNER_HALF_VERTICAL_CYAN: "sudqu'bogh pos bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_GRAY: "qijbogh pos bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_GREEN: "pos bid sudqu'"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "sudbogh pos bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "qijbogh pos bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_LIME: "sudqu'bogh pos bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_MAGENTA: "doqqu'bogh pos bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_ORANGE: "doqbogh pos bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_PINK: "doqqu'bogh pos bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_PURPLE: "ghirep hurgh rurbogh pos bid'e'"
+  BANNER_HALF_VERTICAL_RED: "pos bid doqqu'"
+  BANNER_HALF_VERTICAL_WHITE: "pos bid chis"
+  BANNER_HALF_VERTICAL_YELLOW: "sudbogh pos bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "nih bid qij"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "sudbogh nih bid 'ej hurghbogh"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "doqbogh nih bid 'ej wovbe'bogh"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "sudqu'bogh nih bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "qijbogh nih bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "nih bid sudqu'"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "sudbogh nih bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "qijbogh nih bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "sudqu'bogh nih bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "doqqu'bogh nih bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "doqbogh nih bid 'ej wovbogh"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "doqqu'bogh nih bid 'ej wovqu'bogh"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "ghirep hurgh rurbogh nih bid'e'"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "nih bid doqqu'"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "nih bid chis"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "sudbogh nih bid 'ej wovqu'bogh"
+  BANNER_MOJANG_BLACK: "viqraq qij"
+  BANNER_MOJANG_BLUE: "sudbogh viqraq 'ej hurghbogh"
+  BANNER_MOJANG_BROWN: "doqbogh viqraq 'ej wovbe'bogh"
+  BANNER_MOJANG_CYAN: "sudqu'bogh viqraq 'ej wovbogh"
+  BANNER_MOJANG_GRAY: "qijbogh viqraq 'ej wovbogh"
+  BANNER_MOJANG_GREEN: "viqraq sudqu'"
+  BANNER_MOJANG_LIGHT_BLUE: "sudbogh viqraq 'ej wovbogh"
+  BANNER_MOJANG_LIGHT_GRAY: "qijbogh viqraq 'ej wovqu'bogh"
+  BANNER_MOJANG_LIME: "sudqu'bogh viqraq 'ej wovqu'bogh"
+  BANNER_MOJANG_MAGENTA: "doqqu'bogh viqraq 'ej wovbogh"
+  BANNER_MOJANG_ORANGE: "doqbogh viqraq 'ej wovbogh"
+  BANNER_MOJANG_PINK: "doqqu'bogh viqraq 'ej wovqu'bogh"
+  BANNER_MOJANG_PURPLE: "ghirep hurgh rurbogh viqraq'e'"
+  BANNER_MOJANG_RED: "doch doqqu'"
+  BANNER_MOJANG_WHITE: "viqraq chis"
+  BANNER_MOJANG_YELLOW: "sudbogh viqraq 'ej wovqu'bogh"
+  BANNER_PIGLIN_BLACK: "ghich qij"
+  BANNER_PIGLIN_BLUE: "sudbogh ghich 'ej hurghbogh"
+  BANNER_PIGLIN_BROWN: "doqbogh ghich 'ej wovbe'bogh"
+  BANNER_PIGLIN_CYAN: "sudqu'bogh ghich 'ej wovbogh"
+  BANNER_PIGLIN_GRAY: "qijbogh ghich 'ej wovbogh"
+  BANNER_PIGLIN_GREEN: "ghich sudqu'"
+  BANNER_PIGLIN_LIGHT_BLUE: "sudbogh ghich 'ej wovbogh"
+  BANNER_PIGLIN_LIGHT_GRAY: "qijbogh ghich 'ej wovqu'bogh"
+  BANNER_PIGLIN_LIME: "sudqu'bogh ghich 'ej wovqu'bogh"
+  BANNER_PIGLIN_MAGENTA: "doqqu'bogh ghich 'ej wovbogh"
+  BANNER_PIGLIN_ORANGE: "doqbogh ghich 'ej wovbogh"
+  BANNER_PIGLIN_PINK: "doqqu'bogh ghich 'ej wovqu'bogh"
+  BANNER_PIGLIN_PURPLE: "ghirep hurgh rurbogh ghich'e'"
+  BANNER_PIGLIN_RED: "ghich doqqu'"
+  BANNER_PIGLIN_WHITE: "ghich chis"
+  BANNER_PIGLIN_YELLOW: "sudbogh ghich 'ej wovqu'bogh"
+  BANNER_RHOMBUS_BLACK: "botlh meyri' qij"
+  BANNER_RHOMBUS_BLUE: "sudbogh botlh meyri' 'ej hurghbogh"
+  BANNER_RHOMBUS_BROWN: "doqbogh botlh meyri' 'ej wovbe'bogh"
+  BANNER_RHOMBUS_CYAN: "sudqu'bogh botlh meyri' 'ej wovbogh"
+  BANNER_RHOMBUS_GRAY: "qijbogh botlh meyri' 'ej wovbogh"
+  BANNER_RHOMBUS_GREEN: "botlh meyri' sudqu'"
+  BANNER_RHOMBUS_LIGHT_BLUE: "sudbogh botlh meyri' 'ej wovbogh"
+  BANNER_RHOMBUS_LIGHT_GRAY: "qijbogh botlh meyri' 'ej wovqu'bogh"
+  BANNER_RHOMBUS_LIME: "sudqu'bogh botlh meyri' 'ej wovqu'bogh"
+  BANNER_RHOMBUS_MAGENTA: "doqqu'bogh botlh meyri' 'ej wovbogh"
+  BANNER_RHOMBUS_ORANGE: "doqbogh botlh meyri' 'ej wovbogh"
+  BANNER_RHOMBUS_PINK: "doqqu'bogh botlh meyri' 'ej wovqu'bogh"
+  BANNER_RHOMBUS_PURPLE: "ghirep hurgh rurbogh botlh meyri''e'"
+  BANNER_RHOMBUS_RED: "botlh hov doqqu'"
+  BANNER_RHOMBUS_WHITE: "botlh meyri' chis"
+  BANNER_RHOMBUS_YELLOW: "sudbogh botlh meyri' 'ej wovqu'bogh"
+  BANNER_SKULL_BLACK: "dughri' degh qij"
+  BANNER_SKULL_BLUE: "sudbogh dughri' degh 'ej hurghbogh"
+  BANNER_SKULL_BROWN: "doqbogh dughri' degh 'ej wovbe'bogh"
+  BANNER_SKULL_CYAN: "sudqu'bogh dughri' degh 'ej wovbogh"
+  BANNER_SKULL_GRAY: "qijbogh dughri' degh 'ej wovbogh"
+  BANNER_SKULL_GREEN: "dughri' degh sudqu'"
+  BANNER_SKULL_LIGHT_BLUE: "sudbogh dughri' degh 'ej wovbogh"
+  BANNER_SKULL_LIGHT_GRAY: "qijbogh dughri' degh 'ej wovqu'bogh"
+  BANNER_SKULL_LIME: "sudqu'bogh dughri' degh 'ej wovqu'bogh"
+  BANNER_SKULL_MAGENTA: "doqqu'bogh dughri' degh 'ej wovbogh"
+  BANNER_SKULL_ORANGE: "doqbogh dughri' degh 'ej wovbogh"
+  BANNER_SKULL_PINK: "doqqu'bogh dughri' degh 'ej wovqu'bogh"
+  BANNER_SKULL_PURPLE: "ghirep hurgh rurbogh dughri' degh'e'"
+  BANNER_SKULL_RED: "dughri' degh doqqu'"
+  BANNER_SKULL_WHITE: "dughri' degh chis"
+  BANNER_SKULL_YELLOW: "sudbogh dughri' degh 'ej wovqu'bogh"
+  BANNER_SMALL_STRIPES_BLACK: "qijbogh wesjech way"
+  BANNER_SMALL_STRIPES_BLUE: "sudbogh wesjech way 'ej hurghbogh"
+  BANNER_SMALL_STRIPES_BROWN: "doqbogh wesjech way 'ej wovbe'bogh"
+  BANNER_SMALL_STRIPES_CYAN: "sudqu'bogh wesjech way 'ej wovbogh"
+  BANNER_SMALL_STRIPES_GRAY: "qijbogh wesjech way 'ej wovbogh"
+  BANNER_SMALL_STRIPES_GREEN: "sudqu'bogh wesjech way"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "sudbogh wesjech way 'ej wovbogh"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "qijbogh wesjech way 'ej wovqu'bogh"
+  BANNER_SMALL_STRIPES_LIME: "sudqu'bogh wesjech way 'ej wovqu'bogh"
+  BANNER_SMALL_STRIPES_MAGENTA: "doqqu'bogh wesjech way 'ej wovbogh"
+  BANNER_SMALL_STRIPES_ORANGE: "doqbogh wesjech way 'ej wovbogh"
+  BANNER_SMALL_STRIPES_PINK: "doqqu'bogh wesjech way 'ej wovqu'bogh"
+  BANNER_SMALL_STRIPES_PURPLE: "ghirep hurgh rurbogh wesjech'e' way"
+  BANNER_SMALL_STRIPES_RED: "doqqu'bogh wesjech way"
+  BANNER_SMALL_STRIPES_WHITE: "chisbogh wesjech way"
+  BANNER_SMALL_STRIPES_YELLOW: "sudbogh wesjech way 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "pirmus pos po'oh qij"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "sudbogh pirmus pos po'oh 'ej hurghbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "doqbogh pirmus pos po'oh 'ej wovbe'bogh"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "sudqu'bogh pirmus pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "qijbogh pirmus pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "pirmus pos po'oh sudqu'"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "sudbogh pirmus pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "qijbogh pirmus pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "sudqu'bogh pirmus pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "doqqu'bogh pirmus pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "doqbogh pirmus pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "doqqu'bogh pirmus pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "ghirep hurgh rurbogh pirmus pos po'oh'e'"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "pirmus pos po'oh doqqu'"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "pirmus pos po'oh chis"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "sudbogh pirmus pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "pirmus nih po'oh qij"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "sudbogh pirmus nih po'oh 'ej hurghbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "doqbogh pirmus nih po'oh 'ej wovbe'bogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "sudqu'bogh pirmus nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "qijbogh pirmus nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "pirmus nih po'oh sudqu'"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "sudbogh pirmus nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "qijbogh pirmus nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "sudqu'bogh pirmus nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "doqqu'bogh pirmus nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "doqbogh pirmus nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "doqqu'bogh pirmus nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "ghirep hurgh rurbogh pirmus nih po'oh'e'"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "pirmus nih po'oh doqqu'"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "pirmus nih po'oh chis"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "sudbogh pirmus nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "yor pos po'oh qij"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "sudbogh yor pos po'oh 'ej hurghbogh"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "doqbogh yor pos po'oh 'ej wovbe'bogh"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "sudqu'bogh yor pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "qijbogh yor pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "yor pos po'oh sudqu'"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "sudbogh yor pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "qijbogh yor pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_LEFT_LIME: "sudqu'bogh yor pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "doqqu'bogh yor pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "doqbogh yor pos po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_LEFT_PINK: "doqqu'bogh yor pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "ghirep hurgh rurbogh yor pos po'oh'e'"
+  BANNER_SQUARE_TOP_LEFT_RED: "yor pos po'oh doqqu'"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "yor pos po'oh chis"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "sudbogh yor pos po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "yor nih po'oh qij"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "sudbogh yor nih po'oh 'ej hurghbogh"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "doqbogh yor nih po'oh 'ej wovbe'bogh"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "sudqu'bogh yor nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "qijbogh yor nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "yor nih po'oh sudqu'"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "sudbogh yor nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "qijbogh yor nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "sudqu'bogh yor nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "doqqu'bogh yor nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "doqbogh yor nih po'oh 'ej wovbogh"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "doqqu'bogh yor nih po'oh 'ej wovqu'bogh"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "ghirep hurgh rurbogh yor nih po'oh'e'"
+  BANNER_SQUARE_TOP_RIGHT_RED: "yor nih po'oh doqqu'"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "yor nih po'oh chis"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "sudbogh yor nih po'oh 'ej wovqu'bogh"
+  BANNER_STRAIGHT_CROSS_BLACK: "me'ched qij"
+  BANNER_STRAIGHT_CROSS_BLUE: "sudbogh me'ched 'ej hurghbogh"
+  BANNER_STRAIGHT_CROSS_BROWN: "doqbogh me'ched 'ej wovbe'bogh"
+  BANNER_STRAIGHT_CROSS_CYAN: "sudqu'bogh me'ched 'ej wovbogh"
+  BANNER_STRAIGHT_CROSS_GRAY: "qijbogh me'ched 'ej wovbogh"
+  BANNER_STRAIGHT_CROSS_GREEN: "me'ched sudqu'"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "sudbogh me'ched 'ej wovbogh"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "qijbogh me'ched 'ej wovqu'bogh"
+  BANNER_STRAIGHT_CROSS_LIME: "sudqu'bogh me'ched 'ej wovqu'bogh"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "doqqu'bogh me'ched 'ej wovbogh"
+  BANNER_STRAIGHT_CROSS_ORANGE: "doqbogh me'ched 'ej wovbogh"
+  BANNER_STRAIGHT_CROSS_PINK: "doqqu'bogh me'ched 'ej wovqu'bogh"
+  BANNER_STRAIGHT_CROSS_PURPLE: "ghirep hurgh rurbogh me'ched'e'"
+  BANNER_STRAIGHT_CROSS_RED: "me'ched doqqu'"
+  BANNER_STRAIGHT_CROSS_WHITE: "me'ched chis"
+  BANNER_STRAIGHT_CROSS_YELLOW: "sudbogh me'ched 'ej wovqu'bogh"
+  BANNER_STRIPE_BOTTOM_BLACK: "pirmus 'ejvoh qij"
+  BANNER_STRIPE_BOTTOM_BLUE: "sudbogh pirmus 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_BOTTOM_BROWN: "doqbogh pirmus 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_BOTTOM_CYAN: "sudqu'bogh pirmus 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_BOTTOM_GRAY: "qijbogh pirmus 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_BOTTOM_GREEN: "pirmus 'ejvoh sudqu'"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "sudbogh pirmus 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "qijbogh pirmus 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_BOTTOM_LIME: "sudqu'bogh pirmus 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "doqqu'bogh pirmus 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_BOTTOM_ORANGE: "doqbogh pirmus 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_BOTTOM_PINK: "doqqu'bogh pirmus 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_BOTTOM_PURPLE: "ghirep hurgh rurbogh pirmus 'ejvoh'e'"
+  BANNER_STRIPE_BOTTOM_RED: "pirmus 'ejvoh doqqu'"
+  BANNER_STRIPE_BOTTOM_WHITE: "pirmus 'ejvoh chis"
+  BANNER_STRIPE_BOTTOM_YELLOW: "sudbogh pirmus 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_CENTER_BLACK: "botlh 'ejvoh chong qij"
+  BANNER_STRIPE_CENTER_BLUE: "sudbogh botlh 'ejvoh chong 'ej hurghbogh"
+  BANNER_STRIPE_CENTER_BROWN: "doqbogh botlh 'ejvoh chong 'ej wovbe'bogh"
+  BANNER_STRIPE_CENTER_CYAN: "sudqu'bogh botlh 'ejvoh chong 'ej wovbogh"
+  BANNER_STRIPE_CENTER_GRAY: "qijbogh botlh 'ejvoh chong 'ej wovbogh"
+  BANNER_STRIPE_CENTER_GREEN: "botlh 'ejvoh chong sudqu'"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "sudbogh botlh 'ejvoh chong 'ej wovbogh"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "qijbogh botlh 'ejvoh chong 'ej wovqu'bogh"
+  BANNER_STRIPE_CENTER_LIME: "sudqu'bogh botlh 'ejvoh chong 'ej wovqu'bogh"
+  BANNER_STRIPE_CENTER_MAGENTA: "doqqu'bogh botlh 'ejvoh chong 'ej wovbogh"
+  BANNER_STRIPE_CENTER_ORANGE: "doqbogh botlh 'ejvoh chong 'ej wovbogh"
+  BANNER_STRIPE_CENTER_PINK: "doqqu'bogh botlh 'ejvoh chong 'ej wovqu'bogh"
+  BANNER_STRIPE_CENTER_PURPLE: "ghirep hurgh rurbogh botlh 'ejvoh'e' chong"
+  BANNER_STRIPE_CENTER_RED: "doqqu'bogh botlh 'ejvoh chong"
+  BANNER_STRIPE_CENTER_WHITE: "chisbogh botlh 'ejvoh chong"
+  BANNER_STRIPE_CENTER_YELLOW: "sudbogh botlh 'ejvoh chong 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "pos bo'ghey 'ejvoh qij"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "sudbogh pos bo'ghey 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "doqbogh pos bo'ghey 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "sudqu'bogh pos bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "qijbogh pos bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "pos bo'ghey 'ejvoh sudqu'"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "sudbogh pos bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "qijbogh pos bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNLEFT_LIME: "sudqu'bogh pos bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "doqqu'bogh pos bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "doqbogh pos bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNLEFT_PINK: "doqqu'bogh pos bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "ghirep hurgh rurbogh pos bo'ghey 'ejvoh'e'"
+  BANNER_STRIPE_DOWNLEFT_RED: "pos bo'ghey 'ejvoh doqqu'"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "pos bo'ghey 'ejvoh chis"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "sudbogh pos bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "nih bo'ghey 'ejvoh qij"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "sudbogh nih bo'ghey 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "doqbogh nih bo'ghey 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "sudqu'bogh nih bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "qijbogh nih bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "nih bo'ghey 'ejvoh sudqu'"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "sudbogh nih bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "qijbogh nih bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "sudqu'bogh nih bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "doqqu'bogh nih bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "doqbogh nih bo'ghey 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "doqqu'bogh nih bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "ghirep hurgh rurbogh nih bo'ghey 'ejvoh'e'"
+  BANNER_STRIPE_DOWNRIGHT_RED: "nih bo'ghey 'ejvoh doqqu'"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "nih bo'ghey 'ejvoh chis"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "sudbogh nih bo'ghey 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_LEFT_BLACK: "pos 'ejvoh qij"
+  BANNER_STRIPE_LEFT_BLUE: "sudbogh pos 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_LEFT_BROWN: "doqbogh pos 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_LEFT_CYAN: "sudqu'bogh pos 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_LEFT_GRAY: "qijbogh pos 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_LEFT_GREEN: "pos 'ejvoh sudqu'"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "sudbogh pos 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "qijbogh pos 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_LEFT_LIME: "sudqu'bogh pos 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_LEFT_MAGENTA: "doqqu'bogh pos 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_LEFT_ORANGE: "doqbogh pos 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_LEFT_PINK: "doqqu'bogh pos 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_LEFT_PURPLE: "ghirep hurgh rurbogh pos 'ejvoh'e'"
+  BANNER_STRIPE_LEFT_RED: "pos 'ejvoh doqqu'"
+  BANNER_STRIPE_LEFT_WHITE: "pos 'ejvoh chis"
+  BANNER_STRIPE_LEFT_YELLOW: "sudbogh pos 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_MIDDLE_BLACK: "qijbogh botlh 'ejvoh sas"
+  BANNER_STRIPE_MIDDLE_BLUE: "sudbogh botlh 'ejvoh sas 'ej hurghbogh"
+  BANNER_STRIPE_MIDDLE_BROWN: "doqbogh botlh 'ejvoh sas 'ej wovbe'bogh"
+  BANNER_STRIPE_MIDDLE_CYAN: "sudqu'bogh botlh 'ejvoh sas 'ej wovbogh"
+  BANNER_STRIPE_MIDDLE_GRAY: "qijbogh botlh 'ejvoh sas 'ej wovbogh"
+  BANNER_STRIPE_MIDDLE_GREEN: "sudqu'bogh botlh 'ejvoh sas"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "sudbogh botlh 'ejvoh sas 'ej wovbogh"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "qijbogh botlh 'ejvoh sas 'ej wovqu'bogh"
+  BANNER_STRIPE_MIDDLE_LIME: "sudqu'bogh botlh 'ejvoh sas 'ej wovqu'bogh"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "doqqu'bogh botlh 'ejvoh sas 'ej wovbogh"
+  BANNER_STRIPE_MIDDLE_ORANGE: "doqbogh botlh 'ejvoh sas 'ej wovbogh"
+  BANNER_STRIPE_MIDDLE_PINK: "doqqu'bogh botlh 'ejvoh sas 'ej wovqu'bogh"
+  BANNER_STRIPE_MIDDLE_PURPLE: "ghirep hurgh rurbogh botlh 'ejvoh'e' sas"
+  BANNER_STRIPE_MIDDLE_RED: "doqqu'bogh botlh 'ejvoh sas"
+  BANNER_STRIPE_MIDDLE_WHITE: "chisbogh botlh 'ejvoh sas"
+  BANNER_STRIPE_MIDDLE_YELLOW: "sudbogh botlh 'ejvoh sas 'ej wovqu'bogh"
+  BANNER_STRIPE_RIGHT_BLACK: "nih 'ejvoh qij"
+  BANNER_STRIPE_RIGHT_BLUE: "sudbogh nih 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_RIGHT_BROWN: "doqbogh nih 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_RIGHT_CYAN: "sudqu'bogh nih 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_RIGHT_GRAY: "qijbogh nih 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_RIGHT_GREEN: "nih 'ejvoh sudqu'"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "sudbogh nih 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "qijbogh nih 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_RIGHT_LIME: "sudqu'bogh nih 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_RIGHT_MAGENTA: "doqqu'bogh nih 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_RIGHT_ORANGE: "doqbogh nih 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_RIGHT_PINK: "doqqu'bogh nih 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_RIGHT_PURPLE: "ghirep hurgh rurbogh nih 'ejvoh'e'"
+  BANNER_STRIPE_RIGHT_RED: "nih 'ejvoh doqqu'"
+  BANNER_STRIPE_RIGHT_WHITE: "nih 'ejvoh chis"
+  BANNER_STRIPE_RIGHT_YELLOW: "sudbogh nih 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_TOP_BLACK: "yor 'ejvoh qij"
+  BANNER_STRIPE_TOP_BLUE: "sudbogh yor 'ejvoh 'ej hurghbogh"
+  BANNER_STRIPE_TOP_BROWN: "doqbogh yor 'ejvoh 'ej wovbe'bogh"
+  BANNER_STRIPE_TOP_CYAN: "sudqu'bogh yor 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_TOP_GRAY: "qijbogh yor 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_TOP_GREEN: "sudqu' yor 'ejvoh"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "sudbogh yor 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "qijbogh yor 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_TOP_LIME: "sudqu'bogh yor 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_TOP_MAGENTA: "doqqu'bogh yor 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_TOP_ORANGE: "doqbogh yor 'ejvoh 'ej wovbogh"
+  BANNER_STRIPE_TOP_PINK: "doqqu'bogh yor 'ejvoh 'ej wovqu'bogh"
+  BANNER_STRIPE_TOP_PURPLE: "ghirep hurgh rurbogh yor 'ejvoh'e'"
+  BANNER_STRIPE_TOP_RED: "yor 'ejvoh doqqu'"
+  BANNER_STRIPE_TOP_WHITE: "yor 'ejvoh chis"
+  BANNER_STRIPE_TOP_YELLOW: "sudbogh yor 'ejvoh 'ej wovqu'bogh"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "pirmus ra'duch qij"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "sudbogh pirmus ra'duch 'ej hurghbogh"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "doqbogh pirmus ra'duch 'ej wovbe'bogh"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "sudqu'bogh pirmus ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "qijbogh pirmus ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "pirmus ra'duch sudqu'"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "sudbogh pirmus ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "qijbogh pirmus ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_BOTTOM_LIME: "sudqu'bogh pirmus ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "doqqu'bogh pirmus ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "doqbogh pirmus ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_BOTTOM_PINK: "doqqu'bogh pirmus ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "ghirep hurgh rurbogh pirmus ra'duch'e'"
+  BANNER_TRIANGLE_BOTTOM_RED: "pirmus ra'duch doqqu'"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "pirmus ra'duch chis"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "sudbogh pirmus ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_TOP_BLACK: "yor ra'duch qij"
+  BANNER_TRIANGLE_TOP_BLUE: "sudbogh yor ra'duch 'ej hurghbogh"
+  BANNER_TRIANGLE_TOP_BROWN: "doqbogh yor ra'duch 'ej wovbe'bogh"
+  BANNER_TRIANGLE_TOP_CYAN: "sudqu'bogh yor ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_TOP_GRAY: "qijbogh yor ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_TOP_GREEN: "yor ra'duch sudqu'"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "sudbogh yor ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "qijbogh yor ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_TOP_LIME: "sudqu'bogh yor ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_TOP_MAGENTA: "doqqu'bogh yor ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_TOP_ORANGE: "doqbogh yor ra'duch 'ej wovbogh"
+  BANNER_TRIANGLE_TOP_PINK: "doqqu'bogh yor ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLE_TOP_PURPLE: "ghirep hurgh rurbogh yor ra'duch'e'"
+  BANNER_TRIANGLE_TOP_RED: "yor ra'duch doqqu'"
+  BANNER_TRIANGLE_TOP_WHITE: "yor ra'duch chis"
+  BANNER_TRIANGLE_TOP_YELLOW: "sudbogh yor ra'duch 'ej wovqu'bogh"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "pirmus ho'du' qij"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "sudbogh pirmus ho'du' 'ej hurghbogh"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "doqbogh pirmus ho'du' 'ej wovbe'bogh"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "sudqu'bogh pirmus ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "qijbogh pirmus ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "pirmus ho'du' sudqu'"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "sudbogh pirmus ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "qijbogh pirmus ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_BOTTOM_LIME: "sudqu'bogh pirmus ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "doqqu'bogh pirmus ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "doqbogh pirmus ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_BOTTOM_PINK: "doqqu'bogh pirmus ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "ghirep hurgh rurbogh pirmus ho'du''e'"
+  BANNER_TRIANGLES_BOTTOM_RED: "pirmus ho'du' doqqu'"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "pirmus ho'du' chis"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "sudbogh pirmus ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_TOP_BLACK: "yor ho'du' qij"
+  BANNER_TRIANGLES_TOP_BLUE: "sudbogh yor ho'du' 'ej hurghbogh"
+  BANNER_TRIANGLES_TOP_BROWN: "doqbogh yor ho'du' 'ej wovbe'bogh"
+  BANNER_TRIANGLES_TOP_CYAN: "sudqu'bogh yor ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_TOP_GRAY: "qijbogh yor ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_TOP_GREEN: "yor ho'du' sudqu'"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "sudbogh yor ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "qijbogh yor ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_TOP_LIME: "sudqu'bogh yor ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_TOP_MAGENTA: "doqqu'bogh yor ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_TOP_ORANGE: "doqbogh yor ho'du' 'ej wovbogh"
+  BANNER_TRIANGLES_TOP_PINK: "doqqu'bogh yor ho'du' 'ej wovqu'bogh"
+  BANNER_TRIANGLES_TOP_PURPLE: "ghirep hurgh rurbogh yor ho'du''e'"
+  BANNER_TRIANGLES_TOP_RED: "yor ho'du' doqqu'"
+  BANNER_TRIANGLES_TOP_WHITE: "yor ho'du' chis"
+  BANNER_TRIANGLES_TOP_YELLOW: "sudbogh yor ho'du' 'ej wovqu'bogh"
+  BARREL: "qegh"
+  BARRIER: "botwi' buq'ir"
+  BASALT: "hotnagh"
+  BEACON: "ri'meh wovmohwi'"
+  BEACON_PRIMARY: "hos'a'"
+  BEACON_SECONDARY: "hos cha'dich"
+  BED_NO_SLEEP: "biqongmeh qasnistah ram qoj jevnistah mud"
+  BED_NOT_SAFE: "biqonglahbe'; soh sum tlhapragh"
+  BED_OBSTRUCTED: "qongdaqvam waqlu'"
+  BED_OCCUPIED: "buy' qongdaqvam"
+  BED_TOO_FAR_AWAY: "biqonglahbe'; hop qongdaq"
+  BEDROCK: "ghorbe'bogh nagh"
+  BEE_NEST: "lachvoh but"
+  BEEHIVE: "lachvoh"
+  BEETROOTS: "'oqqarmey doqqu'"
+  BELL: "'in"
+  BIG_DRIPLEAF: "por tom tin"
+  BIG_DRIPLEAF_STEM: "por tom qechjem"
+  BIRCH_BUTTON: "berich sor leq"
+  BIRCH_DOOR: "berich sor lojmit"
+  BIRCH_FENCE: "berich sor solrogh"
+  BIRCH_FENCE_GATE: "berich sor solrogh lojmit"
+  BIRCH_HANGING_SIGN: "berich sor qin 'echlet tlhep"
+  BIRCH_LEAVES: "berich sor pormey"
+  BIRCH_LOG: "berich sor qechjem'a'"
+  BIRCH_PLANKS: "berich sor 'echletmey"
+  BIRCH_PRESSURE_PLATE: "berich sor surmen 'echlet"
+  BIRCH_SAPLING: "berich sor lav"
+  BIRCH_SIGN: "berich sor qin 'echlet"
+  BIRCH_SLAB: "berich sor buq'ir bid"
+  BIRCH_STAIRS: "berich sor letlh"
+  BIRCH_TRAPDOOR: "berich sor vonmeh lojmit"
+  BIRCH_WALL_HANGING_SIGN: "berich sor tlhoy' qin 'echlet tlhep"
+  BIRCH_WALL_SIGN: "berich sor tlhoy' qin 'echlet"
+  BIRCH_WOOD: "berich sor hap"
+  BLACK_BANNER: "joqwi' qij"
+  BLACK_BED: "qongdaq qij"
+  BLACK_CANDLE: "weq qij"
+  BLACK_CANDLE_CAKE: "weq qij ghajbogh chab'a''e'"
+  BLACK_CARPET: "tlhim qij"
+  BLACK_CONCRETE: "tungyen qij"
+  BLACK_CONCRETE_POWDER: "tungyen say'qis qij"
+  BLACK_GLAZED_TERRACOTTA: "qijbogh dabqi' nguv"
+  BLACK_SHULKER_BOX: "shulker ngaswi' qij"
+  BLACK_STAINED_GLASS: "'al'on qij"
+  BLACK_STAINED_GLASS_PANE: "'al'on 'echlet qij"
+  BLACK_TERRACOTTA: "qijbogh dabqi' let"
+  BLACK_WOOL: "ved qij"
+  BLACKSTONE: "nagh qij"
+  BLACKSTONE_SLAB: "nagh qij buq'ir bid"
+  BLACKSTONE_STAIRS: "nagh qij letlh"
+  BLACKSTONE_WALL: "nagh qij tlhoy'"
+  BLAST_FURNACE: "vincha' tujqu'"
+  BLUE_BANNER: "sudbogh joqwi' 'ej hurghbogh"
+  BLUE_BED: "sudbogh qongdaq 'ej hurghbogh"
+  BLUE_CANDLE: "sudbogh weq 'ej hurghbogh"
+  BLUE_CANDLE_CAKE: "sudbogh weq 'ej hurghbogh ghajbogh chab'a''e'"
+  BLUE_CARPET: "sudbogh tlhim 'ej hurghbogh"
+  BLUE_CONCRETE: "sudbogh tungyen 'ej hurghbogh"
+  BLUE_CONCRETE_POWDER: "sudbogh tungyen say'qis 'ej hurghbogh"
+  BLUE_GLAZED_TERRACOTTA: "sudbogh dabqi' nguv 'ej hurghbogh"
+  BLUE_ICE: "chuch sud"
+  BLUE_ORCHID: "bilu 'orqid 'insong"
+  BLUE_SHULKER_BOX: "sudbogh shulker ngaswi' 'ej hurghbogh"
+  BLUE_STAINED_GLASS: "'al'on sud"
+  BLUE_STAINED_GLASS_PANE: "'al'on 'echlet sud"
+  BLUE_TERRACOTTA: "sudbogh dabqi' let 'ej hurghbogh"
+  BLUE_WOOL: "sudbogh ved 'ej hurghbogh"
+  BONE_BLOCK: "hom buq'ir"
+  BOOKSHELF: "paq bey'"
+  BRAIN_CORAL: "qoghij 'oqe'"
+  BRAIN_CORAL_BLOCK: "qoghij 'oqe' buq'ir"
+  BRAIN_CORAL_FAN: "qoghij 'oqe' mijdang"
+  BRAIN_CORAL_WALL_FAN: "qoghij 'oqe' tlhoy' mijdang"
+  BREWING_STAND: "tas vutmeh qal'aq"
+  BRICK_SLAB: "ngoghmey buq'ir bid"
+  BRICK_STAIRS: "ngogh letlh"
+  BRICK_WALL: "ngoghmey tlhoy'"
+  BRICKS: "ngoghmey"
+  BROWN_BANNER: "doqbogh joqwi' 'ej wovbe'bogh"
+  BROWN_BED: "doqbogh qongdaq 'ej wovbe'bogh"
+  BROWN_CANDLE: "doqbogh weq 'ej wovbe'bogh"
+  BROWN_CANDLE_CAKE: "doqbogh weq 'ej wovbe'bogh ghajbogh chab'a''e'"
+  BROWN_CARPET: "doqbogh tlhim 'ej wovbe'bogh"
+  BROWN_CONCRETE: "doqbogh tungyen 'ej wovbe'bogh"
+  BROWN_CONCRETE_POWDER: "doqbogh tungyen say'qis 'ej wovbe'bogh"
+  BROWN_GLAZED_TERRACOTTA: "doqbogh dabqi' nguv 'ej wovbe'bogh"
+  BROWN_MUSHROOM: "yav 'atlhqam wovbe'"
+  BROWN_MUSHROOM_BLOCK: "yav 'atlhqam wovbe' buq'ir"
+  BROWN_SHULKER_BOX: "doqbogh shulker ngaswi' 'ej wovbe'bogh"
+  BROWN_STAINED_GLASS: "'al'on doq 'ej hurgh"
+  BROWN_STAINED_GLASS_PANE: "'al'on 'echlet doq 'ej hurgh"
+  BROWN_TERRACOTTA: "doqbogh dabqi' let 'ej wovbe'bogh"
+  BROWN_WOOL: "doqbogh 'ej wovbe'bogh ved"
+  BUBBLE_COLUMN: "ba'suq tut"
+  BUBBLE_CORAL: "ba'suq 'oqe'"
+  BUBBLE_CORAL_BLOCK: "ba'suq 'oqe' buq'ir"
+  BUBBLE_CORAL_FAN: "ba'suq 'oqe' mijdang"
+  BUBBLE_CORAL_WALL_FAN: "ba'suq 'oqe' tlhoy' mijdang"
+  BUDDING_AMETHYST: "sachbogh chosom nguv"
+  CACTUS: "qaqtas san'emder"
+  CAKE: "chab'a'"
+  CALCITE: "'apraq nagh"
+  CALIBRATED_SCULK_SENSOR: "sculk noch pup"
+  CAMPFIRE: "raq qul"
+  CANDLE: "weq"
+  CANDLE_CAKE: "weq ghajbogh chab'a'"
+  CARROTS: "qe'rot 'oqqarmey"
+  CARTOGRAPHY_TABLE: "pu'jin ras"
+  CARVED_PUMPKIN: "'aquta' nah pe'lu'ta'bogh"
+  CAULDRON: "bargh'a'"
+  CAVE_AIR: "dis rewve'"
+  CAVE_VINES: "dis tlhegh ti"
+  CAVE_VINES_PLANT: "dis tlhegh ti san'emder"
+  CHAIN: "mir"
+  CHAIN_COMMAND_BLOCK: "mir ra'wi' buq'ir"
+  CHERRY_BUTTON: "tapqej sor leq"
+  CHERRY_DOOR: "tapqej sor lojmit"
+  CHERRY_FENCE: "tapqej sor tlhoy'hom"
+  CHERRY_FENCE_GATE: "tapqej sor tlhoy'hom lojmit"
+  CHERRY_HANGING_SIGN: "tapqej sor qin 'echlet tlhep"
+  CHERRY_LEAVES: "tapqej sor pormey"
+  CHERRY_LOG: "tapqej sor qechjem'a'"
+  CHERRY_PLANKS: "tapqej sor 'echletmey"
+  CHERRY_PRESSURE_PLATE: "tapqej sor surmen 'echlet"
+  CHERRY_SAPLING: "tapqej sor lav"
+  CHERRY_SIGN: "tapqej sor qin 'echlet"
+  CHERRY_SLAB: "tapqej sor buq'ir bid"
+  CHERRY_STAIRS: "tapqej sor letlh"
+  CHERRY_TRAPDOOR: "tapqej sor vonmeh lojmit"
+  CHERRY_WALL_HANGING_SIGN: "tapqej sor tlhoy' qin 'echlet tlhep"
+  CHERRY_WALL_SIGN: "tapqej sor tlhoy' qin 'echlet"
+  CHERRY_WOOD: "tapqej sor hap"
+  CHEST: "derliq"
+  CHIPPED_ANVIL: "mitlhmeh jan qihlu'pu'bogh"
+  CHISELED_BOOKSHELF: "paq yorgh nanlu'bogh"
+  CHISELED_COPPER: "sorpuq nanlu'bogh"
+  CHISELED_DEEPSLATE: "nagh jaq nanlu'bogh"
+  CHISELED_NETHER_BRICKS: "nether ngoghmey nanlu'bogh"
+  CHISELED_POLISHED_BLACKSTONE: "habqu'bogh nagh qij nanlu'bogh"
+  CHISELED_QUARTZ_BLOCK: "chosom buq'ir nanlu'bogh"
+  CHISELED_RED_SANDSTONE: "do'ol nagh doq nanlu'bogh"
+  CHISELED_SANDSTONE: "do'ol nagh nanlu'bogh"
+  CHISELED_STONE_BRICKS: "nagh ngoghmey nanlu'bogh"
+  CHISELED_TUFF: "tipqan nagh nanlu'bogh"
+  CHISELED_TUFF_BRICKS: "tipqan nagh ngoghmey nanlu'bogh"
+  CHORUS_FLOWER: "bomwi' ghom 'insong"
+  CHORUS_PLANT: "bomwi' ghom san'emder"
+  CLAY: "dabqi'"
+  COAL_BLOCK: "ghav nin buq'ir"
+  COAL_ORE: "nagh ghav nin"
+  COARSE_DIRT: "lam ghegh"
+  COBBLED_DEEPSLATE: "nagh jaq ghorlu'bogh"
+  COBBLED_DEEPSLATE_SLAB: "tlherbogh nagh jaq buq'ir bid"
+  COBBLED_DEEPSLATE_STAIRS: "tlherbogh nagh jaq letlh"
+  COBBLED_DEEPSLATE_WALL: "tlherbogh nagh jaq tlhoy'"
+  COBBLESTONE: "nagh tlher"
+  COBBLESTONE_SLAB: "nagh tlher buq'ir bid"
+  COBBLESTONE_STAIRS: "nagh tlher letlh"
+  COBBLESTONE_WALL: "nagh tlher tlhoy'"
+  COBWEB: "sirgh sir'o'"
+  COCOA: "yuch"
+  COMMAND_BLOCK: "ra'wi' buq'ir"
+  COMPARATOR: "redstone daywi'"
+  COMPOSTER: "nonmohwi' 'ib"
+  CONDUIT: "'och"
+  COPPER_BLOCK: "sorpuq buq'ir"
+  COPPER_BULB: "sorpuq wovmohwi'"
+  COPPER_DOOR: "sorpuq lojmit"
+  COPPER_GRATE: "sorpuq neng'el"
+  COPPER_ORE: "nagh sorpuq"
+  COPPER_TRAPDOOR: "sorpuq vonmeh lojmit"
+  CORNFLOWER: "meyis tir 'insong"
+  CRACKED_DEEPSLATE_BRICKS: "nagh jaq ngoghmey qihlu'bogh"
+  CRACKED_DEEPSLATE_TILES: "nagh jaq majyang qihlu'bogh"
+  CRACKED_NETHER_BRICKS: "nether ngogh qihlu'bogh"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "habbogh nagh qij ngoghmey qihlu'bogh"
+  CRACKED_STONE_BRICKS: "nagh ngoghmey qihlu'bogh"
+  CRAFTER: "mutlhwi'"
+  CRAFTING_TABLE: "vummeh ras"
+  CREEPER_HEAD: "creeper nach"
+  CREEPER_WALL_HEAD: "creeper tlhoy' nach"
+  CRIMSON_BUTTON: "nether sor doq leq"
+  CRIMSON_DOOR: "nether sor doq lojmit"
+  CRIMSON_FENCE: "nether sor doq tlhoy'hom"
+  CRIMSON_FENCE_GATE: "nether sor doq tlhoy'hom lojmit"
+  CRIMSON_FUNGUS: "'atlhqam doq"
+  CRIMSON_HANGING_SIGN: "nether sor doq qin 'echlet tlhep"
+  CRIMSON_HYPHAE: "nether sor doq sirghmey"
+  CRIMSON_NYLIUM: "nether magh doq"
+  CRIMSON_PLANKS: "nether sor doq 'echletmey"
+  CRIMSON_PRESSURE_PLATE: "nether sor doq surmen 'echlet"
+  CRIMSON_ROOTS: "'oqqar doq"
+  CRIMSON_SIGN: "nether sor doq qin 'echlet"
+  CRIMSON_SLAB: "nether sor doq buq'ir bid"
+  CRIMSON_STAIRS: "nether sor doq letlh"
+  CRIMSON_STEM: "nether sor doq qechjem"
+  CRIMSON_TRAPDOOR: "nether sor doq vonmeh lojmit"
+  CRIMSON_WALL_HANGING_SIGN: "nether sor doq tlhoy' qin 'echlet tlhep"
+  CRIMSON_WALL_SIGN: "nether sor doq tlhoy' qin 'echlet"
+  CRYING_OBSIDIAN: "saqbogh 'al'on nagh"
+  CUT_COPPER: "sorpuq pe'lu'bogh"
+  CUT_COPPER_SLAB: "sorpuq pe'lu'bogh buq'ir bid"
+  CUT_COPPER_STAIRS: "sorpuq pe'lu'bogh letlh"
+  CUT_RED_SANDSTONE: "do'ol nagh doq pe'lu'bogh"
+  CUT_RED_SANDSTONE_SLAB: "do'ol nagh doq pe'lu'bogh buq'ir bid"
+  CUT_SANDSTONE: "do'ol nagh pe'lu'bogh"
+  CUT_SANDSTONE_SLAB: "do'ol nagh pe'lu'bogh buq'ir bid"
+  CYAN_BANNER: "sudqu'bogh joqwi' 'ej wovbogh"
+  CYAN_BED: "sudqu'bogh qongdaq 'ej wovbogh"
+  CYAN_CANDLE: "sudqu'bogh weq 'ej wovbogh"
+  CYAN_CANDLE_CAKE: "sudqu'bogh weq 'ej wovbogh ghajbogh chab'a''e'"
+  CYAN_CARPET: "sudqu'bogh tlhim 'ej wovbogh"
+  CYAN_CONCRETE: "sudqu'bogh tungyen 'ej wovbogh"
+  CYAN_CONCRETE_POWDER: "sudqu'bogh tungyen say'qis 'ej wovbogh"
+  CYAN_GLAZED_TERRACOTTA: "sudqu'bogh dabqi' nguv 'ej wovbogh"
+  CYAN_SHULKER_BOX: "sudqu'bogh shulker ngaswi' 'ej wovbogh"
+  CYAN_STAINED_GLASS: "sudqu'bogh 'al'on 'ej wovbogh"
+  CYAN_STAINED_GLASS_PANE: "sudqu'bogh 'al'on 'echlet 'ej wovbogh"
+  CYAN_TERRACOTTA: "sudqu'bogh dabqi' let 'ej wovbogh"
+  CYAN_WOOL: "sudqu'bogh ved 'ej wovbogh"
+  DAMAGED_ANVIL: "mitlhmeh jan qihqu'lu'pu'bogh"
+  DANDELION: "dandelay'an 'insong"
+  DARK_OAK_BUTTON: "'oq hurgh sor leq"
+  DARK_OAK_DOOR: "sor hurgh lojmit"
+  DARK_OAK_FENCE: "'oq hurgh sor tlhoy'hom"
+  DARK_OAK_FENCE_GATE: "'oq hurgh sor tlhoy'hom lojmit"
+  DARK_OAK_HANGING_SIGN: "'oq hurgh sor qin 'echlet tlhep"
+  DARK_OAK_LEAVES: "'oq hurgh sor pormey"
+  DARK_OAK_LOG: "'oq hurgh sor qechjem'a'"
+  DARK_OAK_PLANKS: "'oq hurgh sor 'echletmey"
+  DARK_OAK_PRESSURE_PLATE: "'oq hurgh sor surmen 'echlet"
+  DARK_OAK_SAPLING: "'oq hurgh sor lav"
+  DARK_OAK_SIGN: "'oq hurgh sor qin 'echlet"
+  DARK_OAK_SLAB: "'oq hurgh sor buq'ir bid"
+  DARK_OAK_STAIRS: "'oq hurgh sor letlh"
+  DARK_OAK_TRAPDOOR: "'oq hurgh sor vonmeh lojmit"
+  DARK_OAK_WALL_HANGING_SIGN: "'oq hurgh sor tlhoy' qin 'echlet tlhep"
+  DARK_OAK_WALL_SIGN: "'oq hurgh sor tlhoy' qin 'echlet"
+  DARK_OAK_WOOD: "'oq hurgh sor hap"
+  DARK_PRISMARINE: "prismarine hurgh"
+  DARK_PRISMARINE_SLAB: "prismarine hurgh buq'ir bid"
+  DARK_PRISMARINE_STAIRS: "prismarine hurgh letlh"
+  DAYLIGHT_DETECTOR: "pem noch"
+  DEAD_BRAIN_CORAL: "heghpu'bogh qoghij 'oqe'"
+  DEAD_BRAIN_CORAL_BLOCK: "heghpu'bogh qoghij 'oqe' buq'ir"
+  DEAD_BRAIN_CORAL_FAN: "heghpu'bogh qoghij 'oqe' mijdang"
+  DEAD_BRAIN_CORAL_WALL_FAN: "heghpu'bogh qoghij 'oqe' tlhoy' mijdang"
+  DEAD_BUBBLE_CORAL: "heghpu'bogh ba'suq 'oqe'"
+  DEAD_BUBBLE_CORAL_BLOCK: "heghpu'bogh ba'suq 'oqe' buq'ir"
+  DEAD_BUBBLE_CORAL_FAN: "heghpu'bogh ba'suq 'oqe' mijdang"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "heghpu'bogh ba'suq 'oqe' tlhoy' mijdang"
+  DEAD_BUSH: "heghbogh lav"
+  DEAD_FIRE_CORAL: "heghpu'bogh qul 'oqe'"
+  DEAD_FIRE_CORAL_BLOCK: "heghpu'bogh qul 'oqe' buq'ir"
+  DEAD_FIRE_CORAL_FAN: "heghpu'bogh qul 'oqe' mijdang"
+  DEAD_FIRE_CORAL_WALL_FAN: "heghpu'bogh qul 'oqe' tlhoy' mijdang"
+  DEAD_HORN_CORAL: "heghpu'bogh pu' 'oqe'"
+  DEAD_HORN_CORAL_BLOCK: "heghpu'bogh pu' 'oqe' buq'ir"
+  DEAD_HORN_CORAL_FAN: "heghpu'bogh pu' 'oqe' mijdang"
+  DEAD_HORN_CORAL_WALL_FAN: "heghpu'bogh pu' 'oqe' tlhoy' mijdang"
+  DEAD_TUBE_CORAL: "heghpu'bogh 'och 'oqe'"
+  DEAD_TUBE_CORAL_BLOCK: "heghpu'bogh 'och 'oqe' buq'ir"
+  DEAD_TUBE_CORAL_FAN: "heghpu'bogh 'och 'oqe' mijdang"
+  DEAD_TUBE_CORAL_WALL_FAN: "heghpu'bogh 'och 'oqe' tlhoy' mijdang"
+  DECORATED_POT: "millogh bal"
+  DEEPSLATE: "nagh jaq"
+  DEEPSLATE_BRICK_SLAB: "nagh jaq ngoghmey buq'ir bid"
+  DEEPSLATE_BRICK_STAIRS: "nagh jaq ngoghmey letlh"
+  DEEPSLATE_BRICK_WALL: "nagh jaq ngoghmey tlhoy'"
+  DEEPSLATE_BRICKS: "nagh jaq ngoghmey"
+  DEEPSLATE_COAL_ORE: "nagh jaq ghav nin"
+  DEEPSLATE_COPPER_ORE: "nagh jaq sorpuq"
+  DEEPSLATE_DIAMOND_ORE: "nagh jaq chanmon"
+  DEEPSLATE_EMERALD_ORE: "nagh jaq patmor"
+  DEEPSLATE_GOLD_ORE: "nagh jaq qol'om"
+  DEEPSLATE_IRON_ORE: "nagh jaq 'usqan tlhil"
+  DEEPSLATE_LAPIS_ORE: "nagh jaq tlhil sud"
+  DEEPSLATE_REDSTONE_ORE: "nagh jaq redstone"
+  DEEPSLATE_TILE_SLAB: "nagh jaq majyang buq'ir bid"
+  DEEPSLATE_TILE_STAIRS: "nagh jaq majyang letlh"
+  DEEPSLATE_TILE_WALL: "nagh jaq majyang tlhoy'"
+  DEEPSLATE_TILES: "nagh jaq majyang"
+  DETECTOR_RAIL: "noch tihmey"
+  DIAMOND_BLOCK: "chanmon buq'ir"
+  DIAMOND_ORE: "nagh chanmon"
+  DIORITE: "nagh chis"
+  DIORITE_SLAB: "nagh chis buq'ir bid"
+  DIORITE_STAIRS: "nagh chis letlh"
+  DIORITE_WALL: "nagh chis tlhoy'"
+  DIRT: "lam"
+  DIRT_PATH: "lam taw"
+  DISPENSER: "bahjan"
+  DRAGON_EGG: "lung'a' qim"
+  DRAGON_HEAD: "lung'a' nach"
+  DRAGON_WALL_HEAD: "lung'a' tlhoy' nach"
+  DRIED_KELP_BLOCK: "monqiv qad ngogh"
+  DRIPSTONE_BLOCK: "de'lor buq'ir"
+  DROPPER: "chaghwi'"
+  EMERALD_BLOCK: "patmor ngogh"
+  EMERALD_ORE: "nagh patmor"
+  ENCHANTING_TABLE: "resmeh ras"
+  END_GATEWAY: "end lojmit"
+  END_PORTAL: "end lojmit"
+  END_PORTAL_FRAME: "end lojmit qal'aq"
+  END_ROD: "end naq"
+  END_STONE: "end nagh"
+  END_STONE_BRICK_SLAB: "end nagh ngoghmey buq'ir bid"
+  END_STONE_BRICK_STAIRS: "end nagh ngoghmey letlh"
+  END_STONE_BRICK_WALL: "end nagh ngoghmey tlhoy'"
+  END_STONE_BRICKS: "end nagh ngoghmey"
+  ENDER_CHEST: "ender derliq"
+  EXPOSED_CHISELED_COPPER: "raghchohbogh sorpuq nanlu'bogh"
+  EXPOSED_COPPER: "raghchohbogh sorpuq"
+  EXPOSED_COPPER_BULB: "raghchohbogh sorpuq wovmohwi'"
+  EXPOSED_COPPER_DOOR: "raghchohbogh sorpuq lojmit"
+  EXPOSED_COPPER_GRATE: "raghchohbogh sorpuq neng'el"
+  EXPOSED_COPPER_TRAPDOOR: "raghchohbogh sorpuq vonmeh lojmit"
+  EXPOSED_CUT_COPPER: "raghchohbogh sorpuq pe'lu'pu'bogh"
+  EXPOSED_CUT_COPPER_SLAB: "raghchohbogh sorpuq pe'lu'bogh buq'ir bid"
+  EXPOSED_CUT_COPPER_STAIRS: "raghchohbogh sorpuq pe'lu'bogh letlh"
+  FARMLAND: "du' puh"
+  FERN: "sanmir san'emder"
+  FIRE: "qul"
+  FIRE_CORAL: "qul 'oqe'"
+  FIRE_CORAL_BLOCK: "qul 'oqe' ngogh"
+  FIRE_CORAL_FAN: "qul 'oqe' mijdang"
+  FIRE_CORAL_WALL_FAN: "qul 'oqe' tlhoy' mijdang"
+  FLETCHING_TABLE: "naqjejhom ras"
+  FLOWER_POT: "'insong 'aplo'"
+  FLOWERING_AZALEA: "'insong dis lav"
+  FLOWERING_AZALEA_LEAVES: "'insong dis lav pormey"
+  FROGSPAWN: "mabeb qimmey"
+  FROSTED_ICE: "chuch ru'"
+  FURNACE: "vincha'"
+  GILDED_BLACKSTONE: "qol'om nagh qij"
+  GLASS: "'al'on"
+  GLASS_PANE: "'al'on 'echlet"
+  GLOW_LICHEN: "wewbogh 'atlhqam"
+  GLOWSTONE: "wovbogh nagh"
+  GOLD_BLOCK: "qol'om buq'ir"
+  GOLD_ORE: "nagh qol'om"
+  GRANITE: "livri'"
+  GRANITE_SLAB: "livri' buq'ir bid"
+  GRANITE_STAIRS: "livri' letlh"
+  GRANITE_WALL: "livri' tlhoy'"
+  GRASS: "magh"
+  GRASS_BLOCK: "magh buq'ir"
+  GRAVEL: "yetmos"
+  GRAY_BANNER: "qijbogh joqwi' 'ej wovbogh"
+  GRAY_BED: "qijbogh qongdaq 'ej wovbogh"
+  GRAY_CANDLE: "qijbogh weq 'ej wovbogh"
+  GRAY_CANDLE_CAKE: "qijbogh weq 'ej wovbogh ghajbogh chab'a''e'"
+  GRAY_CARPET: "qijbogh tlhim 'ej wovbogh"
+  GRAY_CONCRETE: "qijbogh tungyen 'ej wovbogh"
+  GRAY_CONCRETE_POWDER: "qijbogh tungyen say'qis 'ej wovbogh"
+  GRAY_GLAZED_TERRACOTTA: "qijbogh dabqi' nguv 'ej wovbogh"
+  GRAY_SHULKER_BOX: "qijbogh shulker ngaswi' 'ej wovbogh"
+  GRAY_STAINED_GLASS: "'al'on qij 'ej wov"
+  GRAY_STAINED_GLASS_PANE: "'al'on 'echlet qij 'ej wov"
+  GRAY_TERRACOTTA: "qijbogh dabqi' let 'ej wovbogh"
+  GRAY_WOOL: "qijbogh 'ej wovbogh ved"
+  GREEN_BANNER: "joqwi' sudqu'"
+  GREEN_BED: "qongdaq sudqu'"
+  GREEN_CANDLE: "weq sudqu'"
+  GREEN_CANDLE_CAKE: "weq sudqu' ghajbogh chab'a''e'"
+  GREEN_CARPET: "tlhim sudqu'"
+  GREEN_CONCRETE: "tungyen sudqu'"
+  GREEN_CONCRETE_POWDER: "tungyen say'qis sudqu'"
+  GREEN_GLAZED_TERRACOTTA: "dabqi' nguv sudqu'"
+  GREEN_SHULKER_BOX: "shulker ngaswi' sudqu'"
+  GREEN_STAINED_GLASS: "'al'on sudqu'"
+  GREEN_STAINED_GLASS_PANE: "'al'on 'echlet sudqu'"
+  GREEN_TERRACOTTA: "sudqu'bogh dabqi' let"
+  GREEN_WOOL: "ved sudqu'"
+  GRINDSTONE: "jejmohmeh nagh"
+  HANGING_ROOTS: "'oqqar tlhep"
+  HAY_BLOCK: "tir buq'ir"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "surmen 'echlet 'ugh"
+  HONEY_BLOCK: "dayqir buq'ir"
+  HONEYCOMB_BLOCK: "dayqir sir'o' buq'ir"
+  HOPPER: "tomter"
+  HORN_CORAL: "pu' 'oqe'"
+  HORN_CORAL_BLOCK: "pu' 'oqe' buq'ir"
+  HORN_CORAL_FAN: "pu' 'oqe' mijdang"
+  HORN_CORAL_WALL_FAN: "pu' 'oqe' tlhoy' mijdang"
+  ICE: "chuch"
+  INFESTED_CHISELED_STONE_BRICKS: "nagh ngoghmey nanlu'bogh 'ej ngejlu'bogh"
+  INFESTED_COBBLESTONE: "nagh tlher ngejlu'bogh"
+  INFESTED_CRACKED_STONE_BRICKS: "nagh ngoghmey qihlu'bogh 'ej ngejlu'bogh"
+  INFESTED_DEEPSLATE: "nagh jaq ngejlu'bogh"
+  INFESTED_MOSSY_STONE_BRICKS: "'ayivlas nagh ngoghmey ngejlu'bogh"
+  INFESTED_STONE: "nagh ngejlu'bogh"
+  INFESTED_STONE_BRICKS: "nagh ngoghmey ngejlu'bogh"
+  IRON_BARS: "'usqan naqmey"
+  IRON_BLOCK: "'usqan buq'ir"
+  IRON_DOOR: "'usqan lojmit"
+  IRON_ORE: "nagh 'usqan"
+  IRON_TRAPDOOR: "'usqan vonmeh lojmit"
+  JACK_O_LANTERN: "'aquta' nah wovmohwi'"
+  JIGSAW: "qay'mol buq'ir"
+  JUKEBOX: "bom jengva' chu'wi'"
+  JUNGLE_BUTTON: "ngem yiq sor leq"
+  JUNGLE_DOOR: "ngem yiq sor lojmit"
+  JUNGLE_FENCE: "ngem yiq sor tlhoy'hom"
+  JUNGLE_FENCE_GATE: "ngem yiq sor tlhoy'hom lojmit"
+  JUNGLE_HANGING_SIGN: "ngem yiq sor qin 'echlet tlhep"
+  JUNGLE_LEAVES: "ngem yiq sor pormey"
+  JUNGLE_LOG: "ngem yiq sor qechjem'a'"
+  JUNGLE_PLANKS: "ngem yiq sor 'echletmey"
+  JUNGLE_PRESSURE_PLATE: "ngem yiq sor surmen 'echlet"
+  JUNGLE_SAPLING: "ngem yiq sor lav"
+  JUNGLE_SIGN: "ngem yiq sor qin 'echlet"
+  JUNGLE_SLAB: "ngem yiq sor buq'ir bid"
+  JUNGLE_STAIRS: "ngem yiq sor letlh"
+  JUNGLE_TRAPDOOR: "ngem yiq sor vonmeh lojmit"
+  JUNGLE_WALL_HANGING_SIGN: "ngem yiq sor tlhoy' qin 'echlet tlhep"
+  JUNGLE_WALL_SIGN: "ngem yiq sor tlhoy' qin 'echlet"
+  JUNGLE_WOOD: "ngem yiq sor hap"
+  KELP: "monqiv"
+  KELP_PLANT: "monqiv san'emder"
+  LADDER: "letlh chong"
+  LANTERN: "wovmohwi'"
+  LAPIS_BLOCK: "tlhil sud buq'ir"
+  LAPIS_ORE: "nagh tlhil sud"
+  LARGE_AMETHYST_BUD: "chosom nguv ghub'a'"
+  LARGE_FERN: "sanmir san'emder tin"
+  LAVA: "vahbo'"
+  LAVA_CAULDRON: "vahbo' bargh'a'"
+  LECTERN: "paq ras"
+  LEVER: "chu'meh naq"
+  LIGHT: "wovmohwi'"
+  LIGHT_BLUE_BANNER: "sudbogh joqwi' 'ej wovbogh"
+  LIGHT_BLUE_BED: "sudbogh qongdaq 'ej wovbogh"
+  LIGHT_BLUE_CANDLE: "sudbogh weq 'ej wovbogh"
+  LIGHT_BLUE_CANDLE_CAKE: "sudbogh weq 'ej wovbogh ghajbogh chab'a''e'"
+  LIGHT_BLUE_CARPET: "sudbogh tlhim 'ej wovbogh"
+  LIGHT_BLUE_CONCRETE: "sudbogh tungyen 'ej wovbogh"
+  LIGHT_BLUE_CONCRETE_POWDER: "sudbogh tungyen say'qis 'ej wovbogh"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "sudbogh dabqi' nguv 'ej wovbogh"
+  LIGHT_BLUE_SHULKER_BOX: "sudbogh shulker ngaswi' 'ej wovbogh"
+  LIGHT_BLUE_STAINED_GLASS: "'al'on sud 'ej wov"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "'al'on 'echlet sud 'ej wov"
+  LIGHT_BLUE_TERRACOTTA: "sudbogh dabqi' let 'ej wovbogh"
+  LIGHT_BLUE_WOOL: "sudbogh ved 'ej wovbogh"
+  LIGHT_GRAY_BANNER: "qijbogh joqwi' 'ej wovqu'bogh"
+  LIGHT_GRAY_BED: "qijbogh qongdaq 'ej wovqu'bogh"
+  LIGHT_GRAY_CANDLE: "qijbogh weq 'ej wovqu'bogh"
+  LIGHT_GRAY_CANDLE_CAKE: "qijbogh weq 'ej wovqu'bogh ghajbogh chab'a''e'"
+  LIGHT_GRAY_CARPET: "qijbogh tlhim 'ej wovqu'bogh"
+  LIGHT_GRAY_CONCRETE: "qijbogh tungyen 'ej wovqu'bogh"
+  LIGHT_GRAY_CONCRETE_POWDER: "qijbogh tungyen say'qis 'ej wovqu'bogh"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "qijbogh dabqi' nguv 'ej wovqu'bogh"
+  LIGHT_GRAY_SHULKER_BOX: "qijbogh shulker ngaswi' 'ej wovqu'bogh"
+  LIGHT_GRAY_STAINED_GLASS: "'al'on qij 'ej wovqu'"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "'al'on 'echlet qij 'ej wovqu'"
+  LIGHT_GRAY_TERRACOTTA: "qijbogh dabqi' let 'ej wovqu'bogh"
+  LIGHT_GRAY_WOOL: "qijbogh 'ej wovqu'bogh ved"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "surmen 'echlet tis"
+  LIGHTNING_ROD: "pe'bil naq"
+  LILAC: "laylaq 'insong"
+  LILY_OF_THE_VALLEY: "ngech li'liy"
+  LILY_PAD: "'echlet por'a'"
+  LIME_BANNER: "sudqu'bogh joqwi' 'ej wovqu'bogh"
+  LIME_BED: "sudqu'bogh qongdaq 'ej wovqu'bogh"
+  LIME_CANDLE: "sudqu'bogh weq 'ej wovqu'bogh"
+  LIME_CANDLE_CAKE: "sudqu'bogh weq 'ej wovqu'bogh ghajbogh chab'a''e'"
+  LIME_CARPET: "sudqu'bogh tlhim 'ej wovqu'bogh"
+  LIME_CONCRETE: "sudqu'bogh tungyen 'ej wovqu'bogh"
+  LIME_CONCRETE_POWDER: "sudqu'bogh tungyen say'qis 'ej wovqu'bogh"
+  LIME_GLAZED_TERRACOTTA: "sudqu'bogh dabqi' nguv 'ej wovqu'bogh"
+  LIME_SHULKER_BOX: "sudqu'bogh shulker ngaswi' 'ej wovqu'bogh"
+  LIME_STAINED_GLASS: "sudqu'bogh 'al'on 'ej wovqu'bogh"
+  LIME_STAINED_GLASS_PANE: "sudqu'bogh 'al'on 'echlet 'ej wovqu'bogh"
+  LIME_TERRACOTTA: "sudqu'bogh dabqi' let 'ej wovqu'bogh"
+  LIME_WOOL: "sudqu'bogh ved 'ej wovqu'bogh"
+  LODESTONE: "peqnagh"
+  LOOM: "niqmeh qal'aq"
+  MAGENTA_BANNER: "doqqu'bogh joqwi' 'ej wovbogh"
+  MAGENTA_BED: "doqqu'bogh qongdaq 'ej wovbogh"
+  MAGENTA_CANDLE: "doqqu'bogh weq 'ej wovbogh"
+  MAGENTA_CANDLE_CAKE: "doqqu'bogh weq 'ej wovbogh ghajbogh chab'a''e'"
+  MAGENTA_CARPET: "doqqu'bogh tlhim 'ej wovbogh"
+  MAGENTA_CONCRETE: "doqqu'bogh tungyen 'ej wovbogh"
+  MAGENTA_CONCRETE_POWDER: "doqqu'bogh tungyen say'qis 'ej wovbogh"
+  MAGENTA_GLAZED_TERRACOTTA: "doqqu'bogh dabqi' nguv 'ej wovbogh"
+  MAGENTA_SHULKER_BOX: "doqqu'bogh shulker ngaswi' 'ej wovbogh"
+  MAGENTA_STAINED_GLASS: "doqqu'bogh 'al'on 'ej wovbogh"
+  MAGENTA_STAINED_GLASS_PANE: "doqqu'bogh 'al'on 'echlet 'ej wovbogh"
+  MAGENTA_TERRACOTTA: "doqqu'bogh dabqi' let 'ej wovbogh"
+  MAGENTA_WOOL: "doqqu'bogh ved 'ej wovbogh"
+  MAGMA_BLOCK: "vahbo' sub buq'ir"
+  MANGROVE_BUTTON: "mangghov sor leq"
+  MANGROVE_DOOR: "mangghov sor lojmit"
+  MANGROVE_FENCE: "mangghov sor tlhoy'hom"
+  MANGROVE_FENCE_GATE: "mangghov sor tlhoy'hom lojmit"
+  MANGROVE_HANGING_SIGN: "mangghov sor qin 'echlet tlhep"
+  MANGROVE_LEAVES: "mangghov sor pormey"
+  MANGROVE_LOG: "mangghov sor qechjem'a'"
+  MANGROVE_PLANKS: "mangghov sor 'echletmey"
+  MANGROVE_PRESSURE_PLATE: "mangghov sor surmen 'echlet"
+  MANGROVE_PROPAGULE: "mangghov sor ras'is'a'"
+  MANGROVE_ROOTS: "mangghov sor 'oqqar"
+  MANGROVE_SIGN: "mangghov sor qin 'echlet"
+  MANGROVE_SLAB: "mangghov sor buq'ir bid"
+  MANGROVE_STAIRS: "mangghov sor letlh"
+  MANGROVE_TRAPDOOR: "mangghov sor jonmeh lojmit"
+  MANGROVE_WALL_HANGING_SIGN: "mangghov sor tlhoy' qin 'echlet tlhep"
+  MANGROVE_WALL_SIGN: "mangghov sor tlhoy' qin 'echlet"
+  MANGROVE_WOOD: "mangghov sor hap"
+  MEDIUM_AMETHYST_BUD: "chosom nguv ghub"
+  MELON: "qaq nah"
+  MELON_STEM: "qaq nah qechjem"
+  MOSS_BLOCK: "'ayivlas buq'ir"
+  MOSS_CARPET: "'ayivlas tlhim"
+  MOSSY_COBBLESTONE: "'ayivlas nagh tlher"
+  MOSSY_COBBLESTONE_SLAB: "'ayivlas nagh tlher buq'ir bid"
+  MOSSY_COBBLESTONE_STAIRS: "'ayivlas nagh tlher letlh"
+  MOSSY_COBBLESTONE_WALL: "'ayivlas nagh tlher tlhoy'"
+  MOSSY_STONE_BRICK_SLAB: "'ayivlas nagh ngoghmey buq'ir bid"
+  MOSSY_STONE_BRICK_STAIRS: "'ayivlas nagh ngoghmey letlh"
+  MOSSY_STONE_BRICK_WALL: "'ayivlas nagh ngoghmey tlhoy'"
+  MOSSY_STONE_BRICKS: "'ayivlas nagh ngoghmey"
+  MOVING_PISTON: "vihtahbogh ghunglitlh"
+  MUD: "dabqi' yiq"
+  MUD_BRICK_SLAB: "dabqi' yiq ngoghmey buq'ir bid"
+  MUD_BRICK_STAIRS: "dabqi' yiq ngoghmey letlh"
+  MUD_BRICK_WALL: "dabqi' yiq ngoghmey tlhoy'"
+  MUD_BRICKS: "dabqi' yiq ngoghmey"
+  MUDDY_MANGROVE_ROOTS: "mangghov sor 'oqqar lam"
+  MUSHROOM_STEM: "yav 'atlhqam qechjem"
+  MYCELIUM: "'atlhqam sirghmey"
+  NETHER_BRICK_FENCE: "nether ngogh solrogh"
+  NETHER_BRICK_SLAB: "nether ngogh buq'ir bid"
+  NETHER_BRICK_STAIRS: "nether ngogh letlh"
+  NETHER_BRICK_WALL: "nether ngogh tlhoy'"
+  NETHER_BRICKS: "nether ngoghmey"
+  NETHER_GOLD_ORE: "nether nagh qol'om"
+  NETHER_PORTAL: "nether lojmit"
+  NETHER_QUARTZ_ORE: "nether nagh chosom"
+  NETHER_SPROUTS: "nether ghubmey"
+  NETHER_WART: "nether yav 'atlhqam"
+  NETHER_WART_BLOCK: "nether yav 'atlhqam buq'ir"
+  NETHERITE_BLOCK: "netherite buq'ir"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "'awtir buq'ir"
+  OAK_BUTTON: "'oq sor leq"
+  OAK_DOOR: "'oq sor lojmit"
+  OAK_FENCE: "'oq sor tlhoy'hom"
+  OAK_FENCE_GATE: "'oq sor tlhoy'hom lojmit"
+  OAK_HANGING_SIGN: "'oq sor qin 'echlet tlhep"
+  OAK_LEAVES: "'oq sor pormey"
+  OAK_LOG: "'oq sor qechjem'a'"
+  OAK_PLANKS: "'oq sor 'echletmey"
+  OAK_PRESSURE_PLATE: "'oq sor surmen 'echlet"
+  OAK_SAPLING: "'oq sor lav"
+  OAK_SIGN: "'oq sor qin 'echlet"
+  OAK_SLAB: "'oq sor buq'ir bid"
+  OAK_STAIRS: "'oq sor letlh"
+  OAK_TRAPDOOR: "'oq sor vonmeh lojmit"
+  OAK_WALL_HANGING_SIGN: "'oq sor tlhoy' qin 'echlet tlhep"
+  OAK_WALL_SIGN: "'oq sor tlhoy' qin 'echlet"
+  OAK_WOOD: "'oq sor hap"
+  OBSERVER: "bejwi'"
+  OBSIDIAN: "'al'on nagh"
+  OCHRE_FROGLIGHT: "mabeb wovmohwi' sud"
+  OMINOUS_BANNER: "maq joqwi'"
+  ORANGE_BANNER: "doqbogh joqwi' 'ej wovbogh"
+  ORANGE_BED: "doqbogh qongdaq 'ej wovbogh"
+  ORANGE_CANDLE: "doqbogh weq 'ej wovbogh"
+  ORANGE_CANDLE_CAKE: "doqbogh weq 'ej wovbogh ghajbogh chab'a''e'"
+  ORANGE_CARPET: "doqbogh tlhim 'ej wovbogh"
+  ORANGE_CONCRETE: "doqbogh tungyen 'ej wovbogh"
+  ORANGE_CONCRETE_POWDER: "doqbogh tungyen say'qis 'ej wovbogh"
+  ORANGE_GLAZED_TERRACOTTA: "doqbogh dabqi' nguv 'ej wovbogh"
+  ORANGE_SHULKER_BOX: "doqbogh shulker ngaswi' 'ej wovbogh"
+  ORANGE_STAINED_GLASS: "doqbogh 'al'on 'ej wovbogh"
+  ORANGE_STAINED_GLASS_PANE: "doqbogh 'al'on 'echlet 'ej wovbogh"
+  ORANGE_TERRACOTTA: "doqbogh dabqi' let 'ej wovbogh"
+  ORANGE_TULIP: "doqbogh tu'lip 'ej wovbogh"
+  ORANGE_WOOL: "doqbogh ved 'ej wovbogh"
+  OXEYE_DAISY: "tangqa' min deysiy 'insong"
+  OXIDIZED_CHISELED_COPPER: "raghchu'bogh sorpuq nanlu'bogh"
+  OXIDIZED_COPPER: "raghchu'bogh sorpuq"
+  OXIDIZED_COPPER_BULB: "raghchu'bogh sorpuq wovmohwi'"
+  OXIDIZED_COPPER_DOOR: "raghchu'bogh sorpuq lojmit"
+  OXIDIZED_COPPER_GRATE: "raghchu'bogh sorpuq neng'el"
+  OXIDIZED_COPPER_TRAPDOOR: "raghchu'bogh sorpuq vonmeh lojmit"
+  OXIDIZED_CUT_COPPER: "raghchu'bogh sorpuq pe'lu'bogh"
+  OXIDIZED_CUT_COPPER_SLAB: "raghchu'bogh sorpuq pe'lu'bogh buq'ir bid"
+  OXIDIZED_CUT_COPPER_STAIRS: "raghchu'bogh sorpuq pe'lu'bogh letlh"
+  PACKED_ICE: "chuch his"
+  PACKED_MUD: "hisbogh dabqi' yiq"
+  PEARLESCENT_FROGLIGHT: "mabeb wovmohwi' doq"
+  PEONY: "piy'aniy 'insong"
+  PETRIFIED_OAK_SLAB: "'oq sor buq'ir bid 'an"
+  PIGLIN_HEAD: "piglin nach"
+  PIGLIN_WALL_HEAD: "piglin tlhoy' nach"
+  PINK_BANNER: "doqqu'bogh joqwi' 'ej wovqu'bogh"
+  PINK_BED: "doqqu'bogh qongdaq 'ej wovqu'bogh"
+  PINK_CANDLE: "doqqu'bogh weq 'ej wovqu'bogh"
+  PINK_CANDLE_CAKE: "doqqu'bogh weq 'ej wovqu'bogh ghajbogh chab'a''e'"
+  PINK_CARPET: "doqqu'bogh tlhim 'ej wovqu'bogh"
+  PINK_CONCRETE: "doqqu'bogh tungyen 'ej wovqu'bogh"
+  PINK_CONCRETE_POWDER: "doqqu'bogh tungyen say'qis 'ej wovqu'bogh"
+  PINK_GLAZED_TERRACOTTA: "doqqu'bogh dabqi' nguv 'ej wovqu'bogh"
+  PINK_PETALS: "doqqu'bogh 'uma'mey 'ej wovqu'bogh"
+  PINK_SHULKER_BOX: "doqqu'bogh shulker ngaswi' 'ej wovqu'bogh"
+  PINK_STAINED_GLASS: "'al'on doqqu' 'ej wov"
+  PINK_STAINED_GLASS_PANE: "'al'on 'echlet doqqu' 'ej wov"
+  PINK_TERRACOTTA: "doqqu'bogh dabqi' let 'ej wovqu'bogh"
+  PINK_TULIP: "doqqu'bogh tu'lip 'ej wovqu'bogh"
+  PINK_WOOL: "doqqu'bogh 'ej wovbogh ved"
+  PISTON: "ghunglitlh"
+  PISTON_HEAD: "ghunglitlh nach"
+  PITCHER_CROP: "bal san'emder wijlu'bogh"
+  PITCHER_PLANT: "bal san'emder"
+  PLAYER_HEAD: "qujwi' nach"
+  PLAYER_HEAD_NAMED: "%s nach"
+  PLAYER_WALL_HEAD: "qujwi' tlhoy' nach"
+  PODZOL: "ngem bir lam"
+  POINTED_DRIPSTONE: "de'lor jej"
+  POLISHED_ANDESITE: "yuwey nagh hab"
+  POLISHED_ANDESITE_SLAB: "yuwey nagh hab buq'ir bid"
+  POLISHED_ANDESITE_STAIRS: "yuwey nagh hab letlh"
+  POLISHED_BASALT: "hotnagh hab"
+  POLISHED_BLACKSTONE: "habbogh nagh qij"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "habbogh nagh qij ngoghmey buq'ir bid"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "habbogh nagh qij ngoghmey letlh"
+  POLISHED_BLACKSTONE_BRICK_WALL: "habbogh nagh qij ngoghmey tlhoy'"
+  POLISHED_BLACKSTONE_BRICKS: "habbogh nagh qij ngoghmey"
+  POLISHED_BLACKSTONE_BUTTON: "habbogh nagh qij leq"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "habbogh nagh qij jembogh 'echlet"
+  POLISHED_BLACKSTONE_SLAB: "habbogh nagh qij buq'ir bid"
+  POLISHED_BLACKSTONE_STAIRS: "habbogh nagh qij letlh"
+  POLISHED_BLACKSTONE_WALL: "habbogh nagh qij tlhoy'"
+  POLISHED_DEEPSLATE: "habbogh nagh jaq"
+  POLISHED_DEEPSLATE_SLAB: "habbogh nagh jaq buq'ir bid"
+  POLISHED_DEEPSLATE_STAIRS: "habbogh nagh jaq letlh"
+  POLISHED_DEEPSLATE_WALL: "habbogh nagh jaq tlhoy'"
+  POLISHED_DIORITE: "habbogh nagh chis"
+  POLISHED_DIORITE_SLAB: "habbogh nagh chis buq'ir bid"
+  POLISHED_DIORITE_STAIRS: "habbogh nagh chis letlh"
+  POLISHED_GRANITE: "livri' hab"
+  POLISHED_GRANITE_SLAB: "livri' hab buq'ir bid"
+  POLISHED_GRANITE_STAIRS: "livri' hab letlh"
+  POLISHED_TUFF: "tipqan nagh habqu'"
+  POLISHED_TUFF_SLAB: "tipqan nagh buq'ir bid habqu'"
+  POLISHED_TUFF_STAIRS: "tipqan nagh letlh habqu'"
+  POLISHED_TUFF_WALL: "tipqan nagh tlhoy' habqu'"
+  POPPY: "dighna'"
+  POTATOES: "patat 'oqqarmey"
+  POTTED_ACACIA_SAPLING: "'aqey'sa sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_ALLIUM: "'anyan o'qqar 'insong chor barghdaq"
+  POTTED_AZALEA_BUSH: "dis lav chor barghdaq"
+  POTTED_AZURE_BLUET: "bilu'et sud 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_BAMBOO: "bambu' chor barghdaq"
+  POTTED_BIRCH_SAPLING: "berich sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_BLUE_ORCHID: "bilu 'orqid 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_BROWN_MUSHROOM: "yav 'atlhqam wovbe' 'e' ngasbogh 'insong 'aplo'"
+  POTTED_CACTUS: "qaqtas san'emder chor barghdaq"
+  POTTED_CHERRY_SAPLING: "tapqej sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_CORNFLOWER: "meyis tir 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_CRIMSON_FUNGUS: "'atlhqam doq 'e' ngasbogh 'insong 'aplo'"
+  POTTED_CRIMSON_ROOTS: "'oqqar doq 'e' ngasbogh 'insong 'aplo'"
+  POTTED_DANDELION: "dandelay'an 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_DARK_OAK_SAPLING: "'oq hurgh sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_DEAD_BUSH: "heghbogh lav chor barghdaq"
+  POTTED_FERN: "sanmir san'emder 'e' ngasbogh 'insong 'aplo'"
+  POTTED_FLOWERING_AZALEA_BUSH: "'insong dis lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_JUNGLE_SAPLING: "ngem yiq sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_LILY_OF_THE_VALLEY: "ngech li'liy 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_MANGROVE_PROPAGULE: "mangghov sor ras'is'a''e' ngasbogh chor bargh"
+  POTTED_OAK_SAPLING: "'oq sor lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_ORANGE_TULIP: "doqbogh tu'lip 'ej wovbogh 'e' ngasbogh 'insong 'aplo'"
+  POTTED_OXEYE_DAISY: "tangqa' min deysiy 'insong chor barghdaq"
+  POTTED_PINK_TULIP: "doqqu'bogh tu'lip 'ej wovqu'bogh 'e' ngasbogh 'insong 'aplo'"
+  POTTED_POPPY: "dighna' 'e' ngasbogh 'insong 'aplo'"
+  POTTED_RED_MUSHROOM: "yav atlhqam yegh 'e' ngasbogh 'insong 'aplo'"
+  POTTED_RED_TULIP: "tu'lip doqqu' 'e' ngasbogh 'insong 'aplo'"
+  POTTED_SPRUCE_SAPLING: "qirqod lav 'e' ngasbogh 'insong 'aplo'"
+  POTTED_TORCHFLOWER: "sech 'insong 'e' ngasbogh 'insong 'aplo'"
+  POTTED_WARPED_FUNGUS: "'atlhqam sud 'e' ngasbogh 'insong 'aplo'"
+  POTTED_WARPED_ROOTS: "'oqqar sud 'e' ngasbogh 'insong 'aplo'"
+  POTTED_WHITE_TULIP: "tu'lip chis 'e' ngasbogh 'insong 'aplo'"
+  POTTED_WITHER_ROSE: "wither ro'sa' 'e' ngasbogh 'insong 'aplo'"
+  POWDER_SNOW: "chal chuch say'qis"
+  POWDER_SNOW_CAULDRON: "chal chuch say'qis bargh'a'"
+  POWERED_RAIL: "hosbogh tihmey"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "prismarine ngoghmey buq'ir bid"
+  PRISMARINE_BRICK_STAIRS: "prismarine ngoghmey letlh"
+  PRISMARINE_BRICKS: "prismarine ngoghmey"
+  PRISMARINE_SLAB: "prismarine buq'ir bid"
+  PRISMARINE_STAIRS: "prismarine letlh"
+  PRISMARINE_WALL: "prismarine tlhoy'"
+  PUMPKIN: "'aquta' nah"
+  PUMPKIN_STEM: "'aquta'"
+  PURPLE_BANNER: "ghirep hurgh rurbogh joqwi''e'"
+  PURPLE_BED: "ghirep hurgh rurbogh qongdaq'e'"
+  PURPLE_CANDLE: "ghirep hurgh rurbogh weq'e'"
+  PURPLE_CANDLE_CAKE: "ghirep hurgh rurbogh weq ghajbogh chab'a''e'"
+  PURPLE_CARPET: "ghirep hurgh rurbogh tlhim'e'"
+  PURPLE_CONCRETE: "ghirep hurgh rurbogh tungyen'e'"
+  PURPLE_CONCRETE_POWDER: "ghirep hurgh rurbogh tungyen say'qis'e'"
+  PURPLE_GLAZED_TERRACOTTA: "ghirep hurgh rurbogh dabqi''e' nguv"
+  PURPLE_SHULKER_BOX: "ghirep hurgh rurbogh shulker ngaswi''e'"
+  PURPLE_STAINED_GLASS: "ghirep hurgh rurbogh 'al'on'e'"
+  PURPLE_STAINED_GLASS_PANE: "ghirep hurgh rurbogh 'al'on 'echlet'e'"
+  PURPLE_TERRACOTTA: "ghirep hurgh rurbogh dabqi''e' let"
+  PURPLE_WOOL: "doqbogh 'ej sudbogh ved"
+  PURPUR_BLOCK: "purpur buq'ir"
+  PURPUR_PILLAR: "purpur tut"
+  PURPUR_SLAB: "purpur buq'ir bid"
+  PURPUR_STAIRS: "purpur letlh"
+  QUARTZ_BLOCK: "chosom buq'ir"
+  QUARTZ_BRICKS: "chosom ngoghmey"
+  QUARTZ_PILLAR: "chosom tut"
+  QUARTZ_SLAB: "chosom buq'ir bid"
+  QUARTZ_STAIRS: "chosom letlh"
+  RAIL: "tihmey"
+  RAW_COPPER_BLOCK: "sorpuq tlhol buq'ir"
+  RAW_GOLD_BLOCK: "qol'om tlhol buq'ir"
+  RAW_IRON_BLOCK: "'usqan tlhol buq'ir"
+  RED_BANNER: "joqwi' doqqu'"
+  RED_BED: "qongdaq doqqu'"
+  RED_CANDLE: "weq doqqu'"
+  RED_CANDLE_CAKE: "weq doqqu' ghajbogh chab'a'"
+  RED_CARPET: "tlhim doqqu'"
+  RED_CONCRETE: "tungyen doqqu'"
+  RED_CONCRETE_POWDER: "tungyen say'qis doqqu'"
+  RED_GLAZED_TERRACOTTA: "doqqu'bogh dabqi' nguv"
+  RED_MUSHROOM: "yav atlhqam yegh"
+  RED_MUSHROOM_BLOCK: "yav atlhqam yegh buq'ir"
+  RED_NETHER_BRICK_SLAB: "nether ngogh wov buq'ir bid"
+  RED_NETHER_BRICK_STAIRS: "nether ngogh wov letlh"
+  RED_NETHER_BRICK_WALL: "nether ngogh wov tlhoy'"
+  RED_NETHER_BRICKS: "nether ngoghmey wov"
+  RED_SAND: "do'ol doq"
+  RED_SANDSTONE: "do'ol nagh doq"
+  RED_SANDSTONE_SLAB: "do'ol nagh doq buq'ir bid"
+  RED_SANDSTONE_STAIRS: "do'ol nagh doq letlh"
+  RED_SANDSTONE_WALL: "do'ol nagh doq tlhoy'"
+  RED_SHULKER_BOX: "shulker ngaswi' doqqu'"
+  RED_STAINED_GLASS: "'al'on doqqu'"
+  RED_STAINED_GLASS_PANE: "'al'on 'echlet doqqu'"
+  RED_TERRACOTTA: "doqqu'bogh dabqi' let"
+  RED_TULIP: "tu'lip doqqu'"
+  RED_WOOL: "ved doqqu'"
+  REDSTONE_BLOCK: "redstone buq'ir"
+  REDSTONE_LAMP: "redstone wovmohwi'"
+  REDSTONE_ORE: "nagh redstone"
+  REDSTONE_TORCH: "redstone sech"
+  REDSTONE_WALL_TORCH: "redstone tlhoy' sech"
+  REDSTONE_WIRE: "redstone sirgh"
+  REINFORCED_DEEPSLATE: "hosbogh nagh jaq"
+  REPEATER: "redstone hosmohwi'"
+  REPEATING_COMMAND_BLOCK: "ra'qa'bogh ra'wi' buq'ir"
+  RESPAWN_ANCHOR: "boghqa'meh jan"
+  ROOTED_DIRT: "'oqqar lam"
+  ROSE_BUSH: "ro'sa' lav"
+  SAND: "do'ol"
+  SANDSTONE: "do'ol nagh"
+  SANDSTONE_SLAB: "do'ol nagh buq'ir bid"
+  SANDSTONE_STAIRS: "do'ol nagh letlh"
+  SANDSTONE_WALL: "do'ol nagh tlhoy'"
+  SCAFFOLDING: "chenmohmeh qal'aq"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk lingwi'"
+  SCULK_SENSOR: "sculk noch"
+  SCULK_SHRIEKER: "sculk jachwi'"
+  SCULK_VEIN: "sculk sir'o'"
+  SEA_LANTERN: "biq'a' wovmohwi'"
+  SEA_PICKLE: "biq'a' hurgh"
+  SEAGRASS: "biq'a' magh"
+  SET_SPAWN: "boghqa'meh daq cherlu'"
+  SHORT_GRASS: "magh run"
+  SHROOMLIGHT: "'atlhqam wovmohwi'"
+  SHULKER_BOX: "shulker ngaswi'"
+  SKELETON_SKULL: "nobmed dughri'"
+  SKELETON_WALL_SKULL: "nobmed tlhoy' dughri'"
+  SLIME_BLOCK: "huh buq'ir"
+  SMALL_AMETHYST_BUD: "chosom nguv ghubhom"
+  SMALL_DRIPLEAF: "por tom mach"
+  SMITHING_TABLE: "mitlhmeh ras"
+  SMOKER: "tlhich vincha'"
+  SMOOTH_BASALT: "hotnagh habqu'"
+  SMOOTH_QUARTZ: "chosom hab buq'ir"
+  SMOOTH_QUARTZ_SLAB: "chosom hab buq'ir bid"
+  SMOOTH_QUARTZ_STAIRS: "chosom hab letlh"
+  SMOOTH_RED_SANDSTONE: "habbogh do'ol nagh doq"
+  SMOOTH_RED_SANDSTONE_SLAB: "habbogh do'ol nagh doq bid ngogh"
+  SMOOTH_RED_SANDSTONE_STAIRS: "habbogh do'ol nagh doq letlh"
+  SMOOTH_SANDSTONE: "do'ol nagh hab"
+  SMOOTH_SANDSTONE_SLAB: "do'ol nagh hab buq'ir bid"
+  SMOOTH_SANDSTONE_STAIRS: "do'ol nagh hab letlh"
+  SMOOTH_STONE: "nagh hab"
+  SMOOTH_STONE_SLAB: "nagh hab buq'ir bid"
+  SNIFFER_EGG: "larghwi' qim"
+  SNOW: "chal chuch"
+  SNOW_BLOCK: "chal chuch buq'ir"
+  SOUL_CAMPFIRE: "qa' raq qul"
+  SOUL_FIRE: "qa' qul"
+  SOUL_LANTERN: "qa' wovmohwi'"
+  SOUL_SAND: "qa' do'ol"
+  SOUL_SOIL: "qa' lam"
+  SOUL_TORCH: "qa' sech"
+  SOUL_WALL_TORCH: "qa' tlhoy' sech"
+  SPAWN_NOT_VALID: "juh qongdaq boghqa'meh jan hujlu'pu' bogh ghap tu'lu'be' pagh waqlu'"
+  SPAWNER: "tlhapragh boghmohwi'"
+  SPAWNER_DESC1: "boghmohbogh qim lo'lu'di':"
+  SPAWNER_DESC2: "yagh segh choh"
+  SPONGE: "va'chum"
+  SPORE_BLOSSOM: "sanmir 'insong"
+  SPRUCE_BUTTON: "qirqod leq"
+  SPRUCE_DOOR: "qirqod lojmit"
+  SPRUCE_FENCE: "qirqod solrogh"
+  SPRUCE_FENCE_GATE: "qirqod solrogh lojmit"
+  SPRUCE_HANGING_SIGN: "qirqod qin 'echlet tlhep"
+  SPRUCE_LEAVES: "qirqod pormey"
+  SPRUCE_LOG: "qirqod qechjem'a'"
+  SPRUCE_PLANKS: "qirqod 'echletmey"
+  SPRUCE_PRESSURE_PLATE: "qirqod surmen 'echlet"
+  SPRUCE_SAPLING: "qirqod lav"
+  SPRUCE_SIGN: "qirqod qin 'echlet"
+  SPRUCE_SLAB: "qirqod buq'ir bid"
+  SPRUCE_STAIRS: "qirqod letlh"
+  SPRUCE_TRAPDOOR: "qirqod vonmeh lojmit"
+  SPRUCE_WALL_HANGING_SIGN: "qirqod tlhoy' qin 'echlet tlhep"
+  SPRUCE_WALL_SIGN: "qirqod tlhoy' qin 'echlet"
+  SPRUCE_WOOD: "qirqod sor hap"
+  STICKY_PISTON: "ghunglitlh hum"
+  STONE: "nagh"
+  STONE_BRICK_SLAB: "nagh ngoghmey buq'ir bid"
+  STONE_BRICK_STAIRS: "nagh ngogh letlh"
+  STONE_BRICK_WALL: "nagh ngoghmey tlhoy'"
+  STONE_BRICKS: "nagh ngoghmey"
+  STONE_BUTTON: "nagh leq"
+  STONE_PRESSURE_PLATE: "nagh surmen 'echlet"
+  STONE_SLAB: "nagh buq'ir bid"
+  STONE_STAIRS: "nagh letlh"
+  STONECUTTER: "nagh pe'wi'"
+  STRIPPED_ACACIA_LOG: "'aqey'sa sor qechjem'a' qen"
+  STRIPPED_ACACIA_WOOD: "'aqey'sa sor hap qen"
+  STRIPPED_BAMBOO_BLOCK: "bambu' qen buq'ir"
+  STRIPPED_BIRCH_LOG: "berich sor qechjem'a' qen"
+  STRIPPED_BIRCH_WOOD: "berich sor hap qen"
+  STRIPPED_CHERRY_LOG: "tapqej sor qechjem'a' qen"
+  STRIPPED_CHERRY_WOOD: "tapqej sor hap qen"
+  STRIPPED_CRIMSON_HYPHAE: "nether sor doq sirghmey qen"
+  STRIPPED_CRIMSON_STEM: "nether sor doq qechjem qen"
+  STRIPPED_DARK_OAK_LOG: "'oq hurgh sor qechjem'a' qen"
+  STRIPPED_DARK_OAK_WOOD: "'oq hurgh sor hap qen"
+  STRIPPED_JUNGLE_LOG: "ngem yiq sor qechjem'a' qen"
+  STRIPPED_JUNGLE_WOOD: "ngem yiq sor hap qen"
+  STRIPPED_MANGROVE_LOG: "mangghov sor qechjem'a' qen"
+  STRIPPED_MANGROVE_WOOD: "mangghov sor hap qen"
+  STRIPPED_OAK_LOG: "'oq sor qechjem'a' qen"
+  STRIPPED_OAK_WOOD: "'oq sor hap qen"
+  STRIPPED_SPRUCE_LOG: "qirqod qechjem'a' qen"
+  STRIPPED_SPRUCE_WOOD: "qirqod hap qen"
+  STRIPPED_WARPED_HYPHAE: "nether sor sud sirghmey qen"
+  STRIPPED_WARPED_STEM: "nether sor sud qechjem qen"
+  STRUCTURE_BLOCK: "qach buq'ir"
+  STRUCTURE_VOID: "qach 'achghej"
+  SUGAR_CANE: "siyech"
+  SUNFLOWER: "du'qamhom"
+  SUSPICIOUS_GRAVEL: "yetmos nub"
+  SUSPICIOUS_SAND: "do'ol nub"
+  SWEET_BERRY_BUSH: "nah doqqu' lav"
+  TALL_GRASS: "magh woch"
+  TALL_SEAGRASS: "biq'a' magh woch"
+  TARGET: "dos"
+  TERRACOTTA: "dabqi' let"
+  TINTED_GLASS: "'al'on nguv"
+  TNT: "jorwi'"
+  TORCH: "sech"
+  TORCHFLOWER: "sech 'insong"
+  TORCHFLOWER_CROP: "sech 'insong san'emder"
+  TRAPPED_CHEST: "vonwi' derliq"
+  TRIAL_SPAWNER: "qad boghmohwi'"
+  TRIPWIRE: "jemmeh sirgh"
+  TRIPWIRE_HOOK: "tangmohmeh sirgh siril"
+  TUBE_CORAL: "'och 'oqe'"
+  TUBE_CORAL_BLOCK: "'och 'oqe' buq'ir"
+  TUBE_CORAL_FAN: "'och 'oqe' mijdang"
+  TUBE_CORAL_WALL_FAN: "'och 'oqe' tlhoy' mijdang"
+  TUFF: "tipqan nagh"
+  TUFF_BRICK_SLAB: "tipqan nagh ngogh buq'ir bid"
+  TUFF_BRICK_STAIRS: "tipqan nagh ngogh letlh"
+  TUFF_BRICK_WALL: "tipqan nagh ngogh tlhoy'"
+  TUFF_BRICKS: "tipqan nagh ngoghmey"
+  TUFF_SLAB: "tipqan nagh buq'ir bid"
+  TUFF_STAIRS: "tipqan nagh letlh"
+  TUFF_WALL: "tipqan nagh tlhoy'"
+  TURTLE_EGG: "la'siv qim"
+  TWISTING_VINES: "tlhegh ti ver"
+  TWISTING_VINES_PLANT: "tlhegh ti ver san'emder"
+  VERDANT_FROGLIGHT: "mabeb wovmohwi' sudqu'"
+  VINE: "tlhegh ti"
+  VOID_AIR: "'achghej rewve'"
+  WALL_TORCH: "tlhoy' sech"
+  WARPED_BUTTON: "nether sor sud leq"
+  WARPED_DOOR: "nether sor sud lojmit"
+  WARPED_FENCE: "nether sor sud tlhoy'hom"
+  WARPED_FENCE_GATE: "nether sor sud tlhoy'hom lojmit"
+  WARPED_FUNGUS: "'atlhqam sud"
+  WARPED_HANGING_SIGN: "nether sor sud qin 'echlet tlhep"
+  WARPED_HYPHAE: "nether sor sud sirghmey"
+  WARPED_NYLIUM: "nether magh sud"
+  WARPED_PLANKS: "nether sor sud 'echletmey"
+  WARPED_PRESSURE_PLATE: "nether sor sud surmen 'echlet"
+  WARPED_ROOTS: "'oqqar sud"
+  WARPED_SIGN: "nether sor sud qin 'echlet"
+  WARPED_SLAB: "nether sor sud buq'ir bid"
+  WARPED_STAIRS: "nether sor sud letlh"
+  WARPED_STEM: "nether sor sud qechjem"
+  WARPED_TRAPDOOR: "nether sor sud vonmeh lojmit"
+  WARPED_WALL_HANGING_SIGN: "nether sor sud tlhoy' qin 'echlet tlhep"
+  WARPED_WALL_SIGN: "nether sor sud tlhoy' qin 'echlet"
+  WARPED_WART_BLOCK: "nether sor sud ti"
+  WATER: "biq"
+  WATER_CAULDRON: "biq bargh'a'"
+  WAXED_CHISELED_COPPER: "req sorpuq nanlu'bogh"
+  WAXED_COPPER_BLOCK: "req sorpuq ngogh'a'"
+  WAXED_COPPER_BULB: "req sorpuq wovmohwi'"
+  WAXED_COPPER_DOOR: "req sorpuq lojmit"
+  WAXED_COPPER_GRATE: "req sorpuq neng'el"
+  WAXED_COPPER_TRAPDOOR: "req sorpuq vonmeh lojmit"
+  WAXED_CUT_COPPER: "req sorpuq pe'lu'bogh"
+  WAXED_CUT_COPPER_SLAB: "req sorpuq pe'lu'bogh buq'ir bid"
+  WAXED_CUT_COPPER_STAIRS: "req sorpuq pe'lu'bogh letlh"
+  WAXED_EXPOSED_CHISELED_COPPER: "req raghchohbogh sorpuq nanlu'bogh"
+  WAXED_EXPOSED_COPPER: "req raghchohbogh sorpuq"
+  WAXED_EXPOSED_COPPER_BULB: "req raghchohbogh sorpuq wovmohwi'"
+  WAXED_EXPOSED_COPPER_DOOR: "req raghchohbogh sorpuq lojmit"
+  WAXED_EXPOSED_COPPER_GRATE: "req raghchohbogh sorpuq neng'el"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "req raghchohbogh sorpuq vonmeh lojmit"
+  WAXED_EXPOSED_CUT_COPPER: "req raghchohbogh sorpuq pe'lu'bogh"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "req raghchohbogh sorpuq pe'lu'bogh buq'ir bid"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "req raghchohbogh sorpuq pe'lu'pu'bogh letlh"
+  WAXED_OXIDIZED_CHISELED_COPPER: "req raghchu'bogh sorpuq nanlu'bogh"
+  WAXED_OXIDIZED_COPPER: "req raghchu'bogh sorpuq"
+  WAXED_OXIDIZED_COPPER_BULB: "req raghchu'bogh sorpuq wovmohwi'"
+  WAXED_OXIDIZED_COPPER_DOOR: "req raghchu'bogh sorpuq lojmit"
+  WAXED_OXIDIZED_COPPER_GRATE: "req raghchu'bogh sorpuq neng'el"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "req raghchu'bogh sorpuq vonmeh lojmit"
+  WAXED_OXIDIZED_CUT_COPPER: "req raghchu'bogh sorpuq pe'lu'pu'bogh"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "req raghchu'bogh sorpuq pe'lu'pu'bogh buq'ir bid"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "req raghchu'bogh sorpuq pe'lu'pu'bogh letlh"
+  WAXED_WEATHERED_CHISELED_COPPER: "req raghtahbogh sorpuq nanlu'bogh"
+  WAXED_WEATHERED_COPPER: "req raghtahbogh sorpuq"
+  WAXED_WEATHERED_COPPER_BULB: "req raghtahbogh sorpuq wovmohwi'"
+  WAXED_WEATHERED_COPPER_DOOR: "req raghtahbogh sorpuq lojmit"
+  WAXED_WEATHERED_COPPER_GRATE: "req raghtahbogh sorpuq neng'el"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "req raghtahbogh sorpuq vonmeh lojmit"
+  WAXED_WEATHERED_CUT_COPPER: "req raghtahbogh sorpuq pe'lu'pu'bogh"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "req raghtahbogh sorpuq pe'lu'pu'bogh buq'ir bid"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "req raghtahbogh sorpuq pe'lu'pu'bogh letlh"
+  WEATHERED_CHISELED_COPPER: "raghtahbogh sorpuq nanlu'bogh"
+  WEATHERED_COPPER: "raghtahbogh sorpuq"
+  WEATHERED_COPPER_BULB: "raghtahbogh sorpuq wovmohwi'"
+  WEATHERED_COPPER_DOOR: "raghtahbogh sorpuq lojmit"
+  WEATHERED_COPPER_GRATE: "raghtahbogh sorpuq neng'el"
+  WEATHERED_COPPER_TRAPDOOR: "raghtahbogh sorpuq vonmeh lojmit"
+  WEATHERED_CUT_COPPER: "raghtahbogh sorpuq pe'lu'pu'bogh"
+  WEATHERED_CUT_COPPER_SLAB: "raghtahbogh sorpuq pe'lu'pu'bogh buq'ir bid"
+  WEATHERED_CUT_COPPER_STAIRS: "raghtahbogh sorpuq pe'lu'pu'bogh letlh"
+  WEEPING_VINES: "tlhegh ti saqbogh"
+  WEEPING_VINES_PLANT: "tlhegh ti saqbogh san'emder"
+  WET_SPONGE: "va'chum yiq"
+  WHEAT: "wevpev san'emder"
+  WHITE_BANNER: "joqwi' chis"
+  WHITE_BED: "qongdaq chis"
+  WHITE_CANDLE: "weq chis"
+  WHITE_CANDLE_CAKE: "weq chis ghajbogh chab'a''e'"
+  WHITE_CARPET: "tlhim chis"
+  WHITE_CONCRETE: "tungyen chis"
+  WHITE_CONCRETE_POWDER: "tungyen say'qis chis"
+  WHITE_GLAZED_TERRACOTTA: "chisbogh dabqi' nguv"
+  WHITE_SHULKER_BOX: "shulker ngaswi' chis"
+  WHITE_STAINED_GLASS: "'al'on chis"
+  WHITE_STAINED_GLASS_PANE: "'al'on 'echlet chis"
+  WHITE_TERRACOTTA: "chisbogh dabqi' let"
+  WHITE_TULIP: "tu'lip chis"
+  WHITE_WOOL: "ved chis"
+  WITHER_ROSE: "wither ro'sa'"
+  WITHER_SKELETON_SKULL: "wither nobmed dughri'"
+  WITHER_SKELETON_WALL_SKULL: "wither nobmed tlhoy' dughri'"
+  YELLOW_BANNER: "sudbogh joqwi' 'ej wovqu'bogh"
+  YELLOW_BED: "sudbogh qongdaq 'ej wovqu'bogh"
+  YELLOW_CANDLE: "sudbogh weq 'ej wovqu'bogh"
+  YELLOW_CANDLE_CAKE: "sudbogh weq 'ej wovqu'bogh ghajbogh chab'a''e'"
+  YELLOW_CARPET: "sudbogh tlhim 'ej wovqu'bogh"
+  YELLOW_CONCRETE: "sudbogh tungyen 'ej wovqu'bogh"
+  YELLOW_CONCRETE_POWDER: "sudbogh tungyen say'qis 'ej wovqu'bogh"
+  YELLOW_GLAZED_TERRACOTTA: "sudbogh dabqi' nguv 'ej wovqu'bogh"
+  YELLOW_SHULKER_BOX: "sudbogh shulker ngaswi' 'ej wovqu'bogh"
+  YELLOW_STAINED_GLASS: "'al'on sud 'ej wovqu'"
+  YELLOW_STAINED_GLASS_PANE: "'al'on 'echlet sud 'ej wovqu'"
+  YELLOW_TERRACOTTA: "sudbogh dabqi' let 'ej wovqu'bogh"
+  YELLOW_WOOL: "sudbogh ved 'ej wovqu'bogh"
+  ZOMBIE_HEAD: "yinbogh lom nach"
+  ZOMBIE_WALL_HEAD: "yinbogh lom tlhoy' nach"
+  ACACIA_BOAT: "'aqey'sa sor biq duj"
+  ACACIA_CHEST_BOAT: "derliq ghajbogh 'aqey'sa sor biq duj'e'"
+  ALLAY_SPAWN_EGG: "yirwi' boghmohbogh qim'e'"
+  AMETHYST_SHARD: "chosom nguv qut"
+  ANGLER_POTTERY_SHARD: "ghoti' wamwi' millogh bal 'ay'"
+  ANGLER_POTTERY_SHERD: "ghoti' millogh bal 'ay'"
+  APPLE: "'epil nah"
+  ARCHER_POTTERY_SHARD: "hurwi' millogh bal 'ay'"
+  ARCHER_POTTERY_SHERD: "hurwi' millogh bal 'ay'"
+  ARMOR_STAND: "may' sut qal'aq"
+  ARMS_UP_POTTERY_SHARD: "desdu' millogh bal 'ay'"
+  ARMS_UP_POTTERY_SHERD: "desdu' millogh bal 'ay'"
+  ARROW: "naqjejhom"
+  AXOLOTL_BUCKET: "'evta' haysin"
+  AXOLOTL_SPAWN_EGG: "'evta' boghmohbogh qim"
+  BAKED_POTATO: "patat 'oqqar meqlu'pu'bogh"
+  BAMBOO_CHEST_RAFT: "derliq ghajbogh bambu' biq duj'e'"
+  BAMBOO_RAFT: "bambu' biq duj"
+  BAT_SPAWN_EGG: "valqe' boghmohbogh qim'e'"
+  BEE_SPAWN_EGG: "maqsung boghmohbogh qim'e'"
+  BEEF: "tangqa' ghab vutbe'lu'bogh"
+  BEETROOT: "'oqqar doqqu'"
+  BEETROOT_SEEDS: "'oqqar doqqu' ras'is"
+  BEETROOT_SOUP: "'oqqar doqqu' chatlh"
+  BIRCH_BOAT: "berich sor biq duj"
+  BIRCH_CHEST_BOAT: "derliq ghajbogh berich sor biq duj'e'"
+  BLACK_DYE: "ritlh qij"
+  BLADE_POTTERY_SHARD: "'etlh millogh bal 'ay'"
+  BLADE_POTTERY_SHERD: "'etlh millogh bal 'ay'"
+  BLAZE_POWDER: "qul yagh say'qis"
+  BLAZE_ROD: "qul naq"
+  BLAZE_SPAWN_EGG: "qul tlhapragh boghmohbogh qim'e'"
+  BLUE_DYE: "sudbogh ritlh 'ej hurghbogh"
+  BONE: "hom"
+  BONE_MEAL: "hom say'qis"
+  BOOK: "paq"
+  BOW: "hurwi'"
+  BOWL: "duq"
+  BREAD: "tir ngogh"
+  BREEZE_SPAWN_EGG: "sus tlhapragh boghmohbogh qim'e'"
+  BREWER_POTTERY_SHARD: "bewsom millogh bal 'ay'"
+  BREWER_POTTERY_SHERD: "bewsom millogh bal 'ay'"
+  BRICK: "ngogh"
+  BROWN_DYE: "doqbogh ritlh 'ej wovbe'bogh"
+  BRUSH: "yachwi'"
+  BUCKET: "haysin"
+  BUNDLE: "doj tlhum"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "meq millogh bal 'ay'"
+  BURN_POTTERY_SHERD: "meq millogh bal 'ay'"
+  CAMEL_SPAWN_EGG: "qa'mel boghmohbogh qim'e'"
+  CARROT: "qe'rot 'oqqar"
+  CARROT_ON_A_STICK: "qe'rot 'oqqar naq"
+  CAT_SPAWN_EGG: "vighro' boghmohbogh qim'e'"
+  CAVE_SPIDER_SPAWN_EGG: "dis vodchuch boghmohbogh qim'e'"
+  CHAINMAIL_BOOTS: "mir das"
+  CHAINMAIL_CHESTPLATE: "mir wep"
+  CHAINMAIL_HELMET: "mir miv"
+  CHAINMAIL_LEGGINGS: "mir yopwah"
+  CHARCOAL: "nil'atrogh"
+  CHERRY_BOAT: "tapqej sor biq duj"
+  CHERRY_CHEST_BOAT: "derliq ghajbogh tapqej sor biq duj'e'"
+  CHEST_MINECART: "derliq ghajbogh tlhilhal duj'e'"
+  CHICKEN: "'usgheb ghab tlhol"
+  CHICKEN_SPAWN_EGG: "'usgheb boghmohbogh qim'e'"
+  CHORUS_FRUIT: "bomwi' ghom nah"
+  CLAY_BALL: "dabqi' 'ay'"
+  CLOCK: "tlhaq"
+  COAL: "ghav nin"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  COCOA_BEANS: "yuch qurgh"
+  COD: "qad ghoti' tlhol"
+  COD_BUCKET: "qad ghoti' haysin"
+  COD_SPAWN_EGG: "qad ghoti' boghmohbogh qim'e'"
+  COMMAND_BLOCK_MINECART: "ra'wi' buq'ir tlhilhal duj"
+  COMPASS: "sinan"
+  COOKED_BEEF: "tangqa' ghab vutlu'ta'bogh"
+  COOKED_CHICKEN: "'usgheb ghab vutlu'ta'bogh"
+  COOKED_COD: "qad ghoti' vutlu'pu'bogh"
+  COOKED_MUTTON: "di'raq ghab vutlu'ta'bogh"
+  COOKED_PORKCHOP: "targh ghab vut'lu'ta'bogh"
+  COOKED_RABBIT: "ches vut'lu'pu'bogh"
+  COOKED_SALMON: "samin ghoti' vutlu'pu'bogh"
+  COOKIE: "su'ghar chabhom"
+  COPPER_INGOT: "sorpuq ngogh"
+  COW_SPAWN_EGG: "tangqa' boghmohbogh qim'e'"
+  CREEPER_BANNER_PATTERN: "joqwi' hasreh"
+  CREEPER_BANNER_PATTERN_DESC: "creeper degh"
+  CREEPER_SPAWN_EGG: "creeper boghmohbogh qim'e'"
+  CROSSBOW: "jo' hurwi'"
+  CROSSBOW_PROJECTILE: "nich:"
+  CYAN_DYE: "sudqu'bogh ritlh 'ej wovbogh"
+  DANGER_POTTERY_SHARD: "qob millogh bal 'ay'"
+  DANGER_POTTERY_SHERD: "qob millogh bal 'ay'"
+  DARK_OAK_BOAT: "'oq hurgh sor biq duj"
+  DARK_OAK_CHEST_BOAT: "derliq ghajbogh 'oq hurgh sor biq duj'e'"
+  DEBUG_STICK: "ti'meh naq"
+  DEBUG_STICK_EMPTY: "di'onmey hutlh %s"
+  DEBUG_STICK_SELECT: "\"%s\" (%s) wivlu'pu'"
+  DEBUG_STICK_UPDATE: "%s moj \"%s\""
+  DIAMOND: "chanmon"
+  DIAMOND_AXE: "chanmon 'obmaq"
+  DIAMOND_BOOTS: "chanmon das"
+  DIAMOND_CHESTPLATE: "chanmon wep"
+  DIAMOND_HELMET: "chanmon miv"
+  DIAMOND_HOE: "chanmon rutned"
+  DIAMOND_HORSE_ARMOR: "chanmon sargh may'sut"
+  DIAMOND_LEGGINGS: "chanmon yopwah"
+  DIAMOND_PICKAXE: "chanmon tlhilwi' jan"
+  DIAMOND_SHOVEL: "chanmon ghevjur"
+  DIAMOND_SWORD: "chanmon yan"
+  DISC_FRAGMENT_5: "qoq ngop 'ay'"
+  DISC_FRAGMENT_5_DESC: "qoq ngop - 5"
+  DOLPHIN_SPAWN_EGG: "solbis boghmohbogh qim'e'"
+  DONKEY_SPAWN_EGG: "jachbogh sargh boghmohbogh qim'e'"
+  DRAGON_BREATH: "lung'a' tlhuh"
+  DRIED_KELP: "monqiv qad"
+  DROWNED_SPAWN_EGG: "biqdaq viqbogh 'ej yinbogh lom boghmohbogh qim'e'"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  ECHO_SHARD: "ya'ris 'ay'"
+  EGG: "qim"
+  ELDER_GUARDIAN_SPAWN_EGG: "'avwi' qup boghmohbogh qim'e'"
+  ELYTRA: "teldu'qoq"
+  EMERALD: "patmor"
+  ENCHANTED_BOOK: "tlheh paq"
+  ENCHANTED_GOLDEN_APPLE: "tlheh qol'om ep'il nah"
+  END_CRYSTAL: "end qut"
+  ENDER_DRAGON_SPAWN_EGG: "ender lung'a' boghmohbogh qim'e'"
+  ENDER_EYE: "ender min"
+  ENDER_PEARL: "ender moq"
+  ENDERMAN_SPAWN_EGG: "enderman boghmohbogh qim'e'"
+  ENDERMITE_SPAWN_EGG: "endermite boghmohbogh qim'e'"
+  EVOKER_SPAWN_EGG: "reswi' boghmohbogh qim'e'"
+  EXPERIENCE_BOTTLE: "resmeh bal"
+  EXPLORER_POTTERY_SHARD: "tlharghwi' millogh bal 'ay'"
+  EXPLORER_POTTERY_SHERD: "tlharghwi' millogh bal 'ay'"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  FEATHER: "bo"
+  FERMENTED_SPIDER_EYE: "ghew nas min roghmohlu'"
+  FILLED_MAP: "pu'jin"
+  FIRE_CHARGE: "qul moq"
+  FIREWORK_ROCKET: "lop jorwi'"
+  FIREWORK_ROCKET_FLIGHT: "leng poh:"
+  FIREWORK_STAR: "lop jorwi' hov"
+  FIREWORK_STAR_BLACK: "qij"
+  FIREWORK_STAR_BLUE: "sud 'ej hurgh"
+  FIREWORK_STAR_BROWN: "doq 'ej wovbe'"
+  FIREWORK_STAR_CUSTOM_COLOR: "tlhin"
+  FIREWORK_STAR_CYAN: "sud 'ej wov"
+  FIREWORK_STAR_FADE_TO: "moj"
+  FIREWORK_STAR_FLICKER: "ghon"
+  FIREWORK_STAR_GRAY: "qij 'ej wov"
+  FIREWORK_STAR_GREEN: "sudqu'"
+  FIREWORK_STAR_LIGHT_BLUE: "sud 'ej wov"
+  FIREWORK_STAR_LIGHT_GRAY: "qij 'ej wovqu'"
+  FIREWORK_STAR_LIME: "sudqu' 'ej wovqu'"
+  FIREWORK_STAR_MAGENTA: "doqqu' 'ej wov"
+  FIREWORK_STAR_ORANGE: "doq 'ej wov"
+  FIREWORK_STAR_PINK: "doqqu' 'ej wovqu'"
+  FIREWORK_STAR_PURPLE: "ghirep hurgh rur"
+  FIREWORK_STAR_RED: "doqqu'"
+  FIREWORK_STAR_SHAPE: "tu'qom sovbe'lu'bogh"
+  FIREWORK_STAR_SHAPE_BURST: "jorqu'"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper rur"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "moq tin"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "moqhom"
+  FIREWORK_STAR_SHAPE_STAR: "dujtlhuq"
+  FIREWORK_STAR_TRAIL: "ratlh"
+  FIREWORK_STAR_WHITE: "chis"
+  FIREWORK_STAR_YELLOW: "sud 'ej wovqu'"
+  FISHING_ROD: "ghoti' jonmeh naq"
+  FLINT: "qijbogh 'ej letbogh nagh"
+  FLINT_AND_STEEL: "qul chenmohwi'"
+  FLOWER_BANNER_PATTERN: "joqwi' hasreh"
+  FLOWER_BANNER_PATTERN_DESC: "'insong degh"
+  FOX_SPAWN_EGG: "qeshos boghmohbogh qim'e'"
+  FRIEND_POTTERY_SHARD: "jup millogh bal 'ay'"
+  FRIEND_POTTERY_SHERD: "jup millogh bal 'ay'"
+  FROG_SPAWN_EGG: "mabeb boghmohbogh qim'e'"
+  FURNACE_MINECART: "vincha' ghajbogh tlhilhal duj"
+  GHAST_SPAWN_EGG: "ghast boghmohbogh qim'e'"
+  GHAST_TEAR: "ghast min 'onros"
+  GLASS_BOTTLE: "'al'on bal"
+  GLISTERING_MELON_SLICE: "ghonbogh qaq nah baylad"
+  GLOBE_BANNER_PATTERN: "joqwi' hasreh"
+  GLOBE_BANNER_PATTERN_DESC: "qo'"
+  GLOW_BERRIES: "wewbogh nah"
+  GLOW_INK_SAC: "wewbogh ritlh 'endeq"
+  GLOW_ITEM_FRAME: "wewbogh doch bey'"
+  GLOW_SQUID_SPAWN_EGG: "wewbogh cheyis boghmohbogh qim"
+  GLOWSTONE_DUST: "wewbogh nagh say'qis"
+  GOAT_HORN: "gha'cher pu'"
+  GOAT_SPAWN_EGG: "gha'cher boghmohbogh qim"
+  GOLD_INGOT: "qol'om ngogh"
+  GOLD_NUGGET: "qol'om sawqe'"
+  GOLDEN_APPLE: "qol'om 'epil nah"
+  GOLDEN_AXE: "qol'om 'obmaq"
+  GOLDEN_BOOTS: "qol'om dasmey"
+  GOLDEN_CARROT: "qol'om qe'rot 'oqqar"
+  GOLDEN_CHESTPLATE: "qol'om wep"
+  GOLDEN_HELMET: "qol'om miv"
+  GOLDEN_HOE: "qol'om rutned"
+  GOLDEN_HORSE_ARMOR: "qol'om sargh may' sut"
+  GOLDEN_LEGGINGS: "qol'om yopwah"
+  GOLDEN_PICKAXE: "qol'om tlhilwi' jan"
+  GOLDEN_SHOVEL: "qol'om ghevjur"
+  GOLDEN_SWORD: "qol'om yan"
+  GRAY_DYE: "qijbogh 'ej wovbogh ritlh"
+  GREEN_DYE: "ritlh sudqu'"
+  GUARDIAN_SPAWN_EGG: "'avwi' boghmohbogh qim'e'"
+  GUNPOWDER: "ngat"
+  HEART_OF_THE_SEA: "biq'a' tiq"
+  HEART_POTTERY_SHARD: "tiq millogh bal 'ay'"
+  HEART_POTTERY_SHERD: "tiq millogh bal 'ay'"
+  HEARTBREAK_POTTERY_SHARD: "ghor tiq millogh bal 'ay'"
+  HEARTBREAK_POTTERY_SHERD: "ghor tiq millogh bal 'ay'"
+  HOGLIN_SPAWN_EGG: "hoglin boghmohbogh qim'e'"
+  HONEY_BOTTLE: "dayqir bal"
+  HONEYCOMB: "dayqir sir'o'"
+  HOPPER_MINECART: "tomter ghajbogh tlhilhal duj"
+  HORSE_SPAWN_EGG: "sargh boghmohbogh qim'e'"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  HOWL_POTTERY_SHARD: "bey millogh bal 'ay'"
+  HOWL_POTTERY_SHERD: "bey millogh bal 'ay'"
+  HUSK_SPAWN_EGG: "yub boghmohbogh qim'e'"
+  INK_SAC: "qijbogh ritlh"
+  IRON_AXE: "'usqan 'obmaq"
+  IRON_BOOTS: "'usqan das"
+  IRON_CHESTPLATE: "'usqan wep"
+  IRON_GOLEM_SPAWN_EGG: "'usqan velqa' nuv boghmohbogh qim'e'"
+  IRON_HELMET: "'usqan miv"
+  IRON_HOE: "'usqan rutned"
+  IRON_HORSE_ARMOR: "'usqan sargh may'sut"
+  IRON_INGOT: "'usqan ngogh"
+  IRON_LEGGINGS: "'usqan yopwah"
+  IRON_NUGGET: "'usqan sawqe'"
+  IRON_PICKAXE: "'usqan tlhilwi' jan"
+  IRON_SHOVEL: "'usqan ghevjur"
+  IRON_SWORD: "'usqan yan"
+  ITEM_FRAME: "doch bey'"
+  JUNGLE_BOAT: "ngem yiq sor biq duj"
+  JUNGLE_CHEST_BOAT: "derliq ghajbogh ngem yiq sor biq duj'e'"
+  KNOWLEDGE_BOOK: "sov paq"
+  LAPIS_LAZULI: "tlhil sud"
+  LAVA_BUCKET: "vahbo' haysin"
+  LEAD: "rijmeh tlhegh"
+  LEATHER: "qo'rin dir"
+  LEATHER_BOOTS: "qo'rin dir das"
+  LEATHER_CHESTPLATE: "qo'rin dir wep"
+  LEATHER_HELMET: "qo'rin dir miv"
+  LEATHER_HORSE_ARMOR: "qo'rin dir sargh may'sut"
+  LEATHER_LEGGINGS: "qo'rin dir yopwah"
+  LIGHT_BLUE_DYE: "sudbogh 'ej wovbogh ritlh"
+  LIGHT_GRAY_DYE: "qijbogh 'ej wovqu'bogh ritlh"
+  LIME_DYE: "sudbogh 'ej wovbe'bogh ritlh"
+  LINGERING_POTION: "ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_AWKWARD: "ratlhbogh 'idnar tas mitha'"
+  LINGERING_POTION_EFFECT_EMPTY: "ratlhbogh 'idnar tas'e' mutlhlahbe'bogh vay'"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "qul 'ommeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_HARMING: "qih ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_HEALING: "do hergh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "so'meh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_LEAPING: "pe'vil supmohmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_LEVITATION: "'almohmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_LUCK: "do'mohmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_MUNDANE: "ratlhbogh 'idnar tas motlh"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "ram leghlahghach ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_POISON: "tar ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_REGENERATION: "rachmohtahmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "pedmohmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_SLOWNESS: "qit vihmohmeh ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_STRENGTH: "hos ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "do ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_THICK: "ratlhbogh 'idnar tas jed"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "la'siv pin'a' ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_WATER: "ratlhbogh biq bal"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "niwqen ratlhbogh 'idnar tas"
+  LINGERING_POTION_EFFECT_WEAKNESS: "pujmohmeh ratlhbogh 'idnar tas"
+  LLAMA_SPAWN_EGG: "'imtiy boghmohbogh qim'e'"
+  LODESTONE_COMPASS: "peqnagh sinan"
+  MAGENTA_DYE: "doqqu'bogh ritlh 'ej wovbogh"
+  MAGMA_CREAM: "vahbo' tlhagh"
+  MAGMA_CUBE_SPAWN_EGG: "vahbo' buq'ir boghmohbogh qim'e'"
+  MANGROVE_BOAT: "mangghov sor biq duj"
+  MANGROVE_CHEST_BOAT: "derliq ghajbogh mangghov sor biq duj'e'"
+  MAP: "pu'jin chim"
+  MELON_SEEDS: "qaq nah ras'is"
+  MELON_SLICE: "qaq nah baylad"
+  MILK_BUCKET: "nim haysin"
+  MINECART: "tlhilhal duj"
+  MINER_POTTERY_SHARD: "tlhilwi' millogh bal 'ay'"
+  MINER_POTTERY_SHERD: "tlhilwi' millogh bal 'ay'"
+  MOJANG_BANNER_PATTERN: "joqwi' hasreh"
+  MOJANG_BANNER_PATTERN_DESC: "doch"
+  MOOSHROOM_SPAWN_EGG: "mooshroom boghmohbogh qim'e'"
+  MOURNER_POTTERY_SHARD: "'ubwi' millogh bal 'ay'"
+  MOURNER_POTTERY_SHERD: "'ubwi' millogh bal 'ay'"
+  MULE_SPAWN_EGG: "qu'vatlh boghmohbogh qim'e'"
+  MUSHROOM_STEW: "yav 'atlhqam tlhiq"
+  MUSIC_DISC_11: "bom jengva'"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "bom jengva'"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "bom jengva'"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "bom jengva'"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "bom jengva'"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "bom jengva'"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "bom jengva'"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "bom jengva'"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "bom jengva'"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "bom jengva'"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - dop dop"
+  MUSIC_DISC_PIGSTEP: "bom jengva'"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "bom jengva'"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "bom jengva'"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "bom jengva'"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "bom jengva'"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "bom jengva'"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "di'raq ghab tlhol"
+  NAME_TAG: "pong per"
+  NAUTILUS_SHELL: "qatvoh nagh dir"
+  NETHER_BRICK: "nether ngogh"
+  NETHER_STAR: "nether hov"
+  NETHERITE_AXE: "netherite 'obmaq"
+  NETHERITE_BOOTS: "netherite das"
+  NETHERITE_CHESTPLATE: "netherite wep"
+  NETHERITE_HELMET: "netherite miv"
+  NETHERITE_HOE: "netherite rutned"
+  NETHERITE_INGOT: "netherite ngogh"
+  NETHERITE_LEGGINGS: "netherite yopwah"
+  NETHERITE_PICKAXE: "netherite tlhilwi' jan"
+  NETHERITE_SCRAP: "netherite bas 'ay'"
+  NETHERITE_SHOVEL: "netherite ghevjur"
+  NETHERITE_SWORD: "netherite yan"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  OAK_BOAT: "'oq sor biq duj"
+  OAK_CHEST_BOAT: "derliq ghajbogh 'oq sor biq duj'e'"
+  OCELOT_SPAWN_EGG: "vighro''a' boghmohbogh qim'e'"
+  ORANGE_DYE: "doqbogh ritlh 'ej wovbogh"
+  PAINTING: "nagh beq"
+  PANDA_SPAWN_EGG: "panda' boghmohbogh qim'e'"
+  PAPER: "nav"
+  PARROT_SPAWN_EGG: "vilinhod boghmohbogh qim'e'"
+  PHANTOM_MEMBRANE: "ram toq yelmo’"
+  PHANTOM_SPAWN_EGG: "ram toq boghmohbogh qim'e'"
+  PIG_SPAWN_EGG: "suy' boghmohbogh qim'e'"
+  PIGLIN_BANNER_PATTERN: "joqwi' hasreh"
+  PIGLIN_BANNER_PATTERN_DESC: "ghich"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin mang boghmohbogh qim'e'"
+  PIGLIN_SPAWN_EGG: "piglin boghmohbogh qim'e'"
+  PILLAGER_SPAWN_EGG: "wehwi' boghmohbogh qim'e'"
+  PINK_DYE: "doqqu'bogh 'ej wovbogh ritlh"
+  PITCHER_POD: "bal san'emder ras'is"
+  PLENTY_POTTERY_SHARD: "qenghod millogh bal 'ay'"
+  PLENTY_POTTERY_SHERD: "qenghod millogh bal 'ay'"
+  POISONOUS_POTATO: "patat 'oqqar suq"
+  POLAR_BEAR_SPAWN_EGG: "chuch mil'od boghmohbogh qim'e'"
+  POPPED_CHORUS_FRUIT: "bomwi' ghom nah ghorlu'pu'bogh"
+  PORKCHOP: "targh ghab tlhol"
+  POTATO: "patat 'oqqar"
+  POTION: "'idnar tas"
+  POTION_EFFECT_AWKWARD: "'idnar tas mitha'"
+  POTION_EFFECT_EMPTY: "'idnar tas'e' mutlhlahbe'bogh vay'"
+  POTION_EFFECT_FIRE_RESISTANCE: "qul 'ommeh 'idnar tas"
+  POTION_EFFECT_HARMING: "qih 'idnar tas"
+  POTION_EFFECT_HEALING: "do hergh 'idnar tas"
+  POTION_EFFECT_INVISIBILITY: "so'meh 'idnar tas"
+  POTION_EFFECT_LEAPING: "pe'vil supmohmeh 'idnar tas"
+  POTION_EFFECT_LEVITATION: "'almohmeh 'idnar tas"
+  POTION_EFFECT_LUCK: "do'mohmeh 'idnar tas"
+  POTION_EFFECT_MUNDANE: "'idnar tas motlh"
+  POTION_EFFECT_NIGHT_VISION: "ram leghlahghach 'idnar tas"
+  POTION_EFFECT_POISON: "tar 'idnar tas"
+  POTION_EFFECT_REGENERATION: "rachmohtahmeh 'idnar tas"
+  POTION_EFFECT_SLOW_FALLING: "pedmohmeh 'idnar tas"
+  POTION_EFFECT_SLOWNESS: "qit vihmohwi' 'idnar tas"
+  POTION_EFFECT_STRENGTH: "hos 'idnar tas"
+  POTION_EFFECT_SWIFTNESS: "do 'idnar tas"
+  POTION_EFFECT_THICK: "'idnar tas jed"
+  POTION_EFFECT_TURTLE_MASTER: "la'siv pin'a' 'idnar tas"
+  POTION_EFFECT_WATER: "biq bal"
+  POTION_EFFECT_WATER_BREATHING: "niwqen 'idnar tas"
+  POTION_EFFECT_WEAKNESS: "pujmohmeh 'idnar tas"
+  POTTERY_SHARD_ARCHER: "hurwi' millogh bal 'ay'"
+  POTTERY_SHARD_ARMS_UP: "desdu' millogh bal 'ay'"
+  POTTERY_SHARD_PRIZE: "tev millogh bal 'ay'"
+  POTTERY_SHARD_SKULL: "dughri' millogh bal 'ay'"
+  POWDER_SNOW_BUCKET: "chal chuch say'qis haysin"
+  PRISMARINE_CRYSTALS: "prismarine qutmey"
+  PRISMARINE_SHARD: "prismarine 'ay'"
+  PRIZE_POTTERY_SHARD: "tev millogh bal 'ay'"
+  PRIZE_POTTERY_SHERD: "tev millogh bal 'ay'"
+  PUFFERFISH: "lunbogh ghoti'"
+  PUFFERFISH_BUCKET: "lunbogh ghoti' haysin"
+  PUFFERFISH_SPAWN_EGG: "lunbogh ghoti' boghmohbogh qim'e'"
+  PUMPKIN_PIE: "'aquta' nah chab"
+  PUMPKIN_SEEDS: "'aquta' ras'ismey"
+  PURPLE_DYE: "ghirep hurgh rurbogh ritlh'e'"
+  QUARTZ: "nether chosom"
+  RABBIT: "ches tlhol"
+  RABBIT_FOOT: "ches qam"
+  RABBIT_HIDE: "ches dir"
+  RABBIT_SPAWN_EGG: "ches boghmohbogh qim'e'"
+  RABBIT_STEW: "ches chatlh"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  RAVAGER_SPAWN_EGG: "ha'dibah qaw'bogh boghmohbogh qim'e'"
+  RAW_COPPER: "sorpuq tlhol"
+  RAW_GOLD: "qol'om tlhol"
+  RAW_IRON: "'usqan tlhol"
+  RECOVERY_COMPASS: "cheghwi' sinan"
+  RED_DYE: "ritlh doqqu'"
+  REDSTONE: "redstone say'qis"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  ROTTEN_FLESH: "ha'dibah non"
+  SADDLE: "lighmeh qus"
+  SALMON: "samin ghoti' tlhol"
+  SALMON_BUCKET: "samin ghoti' haysin"
+  SALMON_SPAWN_EGG: "samin ghoti' boghmohbogh qim'e'"
+  SCUTE: "la'siv nagh dir 'ay'"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SHEAF_POTTERY_SHARD: "doj millogh bal 'ay'"
+  SHEAF_POTTERY_SHERD: "doj millogh bal 'ay'"
+  SHEARS: "cha''etlh pe'wi''a'"
+  SHEEP_SPAWN_EGG: "di'raq boghmohbogh qim'e'"
+  SHELTER_POTTERY_SHARD: "luligh millogh bal 'ay'"
+  SHELTER_POTTERY_SHERD: "luligh millogh bal 'ay'"
+  SHIELD: "yod"
+  SHIELD_BLACK: "yod qij"
+  SHIELD_BLUE: "sudbogh yod 'ej hurghbogh"
+  SHIELD_BROWN: "doqbogh yod 'ej wovbe'bogh"
+  SHIELD_CYAN: "sudqu'bogh yod 'ej wovbogh"
+  SHIELD_GRAY: "qijbogh yod 'ej wovbogh"
+  SHIELD_GREEN: "yod sudqu'"
+  SHIELD_LIGHT_BLUE: "sudbogh yod 'ej wovbogh"
+  SHIELD_LIGHT_GRAY: "qijbogh yod 'ej wovqu'bogh"
+  SHIELD_LIME: "sudqu'bogh yod 'ej wovqu'bogh"
+  SHIELD_MAGENTA: "doqqu'bogh yod 'ej wovbogh"
+  SHIELD_ORANGE: "doqbogh yod 'ej wovbogh"
+  SHIELD_PINK: "doqqu'bogh yod 'ej wovqu'bogh"
+  SHIELD_PURPLE: "ghirep hurgh rurbogh yod'e'"
+  SHIELD_RED: "yod doqqu'"
+  SHIELD_WHITE: "yod chis"
+  SHIELD_YELLOW: "sudbogh yod 'ej wovqu'bogh"
+  SHULKER_SHELL: "ghachwi' nagh dir"
+  SHULKER_SPAWN_EGG: "shulker boghmohbogh qim'e'"
+  SIGN: "qin 'echlet"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SILVERFISH_SPAWN_EGG: "sirliy ghew boghmohbogh qim'e'"
+  SKELETON_HORSE_SPAWN_EGG: "nobmed sargh boghmohbogh qim'e'"
+  SKELETON_SPAWN_EGG: "nobmed boghmohbogh qim'e'"
+  SKULL_BANNER_PATTERN: "joqwi' hasreh"
+  SKULL_BANNER_PATTERN_DESC: "dughri' degh"
+  SKULL_POTTERY_SHARD: "dughri' millogh bal 'ay'"
+  SKULL_POTTERY_SHERD: "dughri' millogh bal 'ay'"
+  SLIME_BALL: "huh moq"
+  SLIME_SPAWN_EGG: "huh boghmohbogh qim'e'"
+  SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SMITHING_TEMPLATE_APPLIES_TO: "bop:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "bas ngogh qut ghap yilan"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "may' sut"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "may' sut yilan"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "bas ngogh qut je"
+  SMITHING_TEMPLATE_INGREDIENTS: "qurme':"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "netherite ngogh yilan"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "chanmon luch"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "chanmon may' sut nuh sommi' ghap yilan"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ngogh"
+  SMITHING_TEMPLATE_UPGRADE: "dub:"
+  SNIFFER_SPAWN_EGG: "larghwi' boghmohbogh qim'e'"
+  SNORT_POTTERY_SHARD: "qoghogh millogh bal 'ay'"
+  SNORT_POTTERY_SHERD: "qoghogh millogh bal 'ay'"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SNOW_GOLEM_SPAWN_EGG: "chal chuch velqa' nuv boghmohbogh qim'e'"
+  SNOWBALL: "chal chuch moq"
+  SPECTRAL_ARROW: "le' bach"
+  SPIDER_EYE: "vodchuch min"
+  SPIDER_SPAWN_EGG: "vodchuch boghmohbogh qim'e'"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  SPLASH_POTION: "bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_AWKWARD: "bobdar 'idnar tas mitha'"
+  SPLASH_POTION_EFFECT_EMPTY: "bobdar 'idnar tas'e' mutlhlahbe'bogh vay'"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "qul 'ommeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_HARMING: "qih bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_HEALING: "do hergh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "so'meh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_LEAPING: "pe'vil supmohmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_LEVITATION: "'almohmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_LUCK: "do'mohmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_MUNDANE: "'bobdar 'idnar tas motlh"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "ram leghlahghach bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_POISON: "tar bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_REGENERATION: "rachmohtahmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "pedmohmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_SLOWNESS: "qit vihmohmeh bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_STRENGTH: "hos bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "do bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_THICK: "bobdar 'idnar tas jed"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "la'siv pin'a' bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_WATER: "bobdar biq bal"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "niwqen bobdar 'idnar tas"
+  SPLASH_POTION_EFFECT_WEAKNESS: "pujmohmeh bobdar 'idnar tas"
+  SPRUCE_BOAT: "qirqod biq duj"
+  SPRUCE_CHEST_BOAT: "derliq ghajbogh qirqod biq duj'e'"
+  SPYGLASS: "hov tut"
+  SQUID_SPAWN_EGG: "cheyis boghmohbogh qim'e'"
+  STICK: "naq"
+  STONE_AXE: "nagh 'obmaq"
+  STONE_HOE: "nagh rutned"
+  STONE_PICKAXE: "nagh tlhilwi' jan"
+  STONE_SHOVEL: "nagh ghevjur"
+  STONE_SWORD: "nagh yan"
+  STRAY_SPAWN_EGG: "nobmed tad boghmohbogh qim'e'"
+  STRIDER_SPAWN_EGG: "yitwi' boghmohbogh qim'e'"
+  STRING: "sirgh"
+  SUGAR: "su'ghar"
+  SUSPICIOUS_STEW: "tlhiq nub"
+  SWEET_BERRIES: "nah doqqu'"
+  TADPOLE_BUCKET: "mabeb ghu haysin"
+  TADPOLE_SPAWN_EGG: "mabeb ghu boghmohbogh qim'e'"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  TIPPED_ARROW: "'idnar naqjejhom"
+  TIPPED_ARROW_EFFECT_AWKWARD: "'idnar naqjejhom"
+  TIPPED_ARROW_EFFECT_EMPTY: "'idnar naqjejhom'e' mutlhlahbe'bogh vay'"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "qul 'ommeh naqjejhom"
+  TIPPED_ARROW_EFFECT_HARMING: "qih naqjejhom"
+  TIPPED_ARROW_EFFECT_HEALING: "do hergh naqjejhom"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "so'meh naqjejhom"
+  TIPPED_ARROW_EFFECT_LEAPING: "pe'vil supmohmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_LEVITATION: "'almohmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_LUCK: "do'mohmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_MUNDANE: "'idnar naqjejhom"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "ram leghlahghach naqjejhom"
+  TIPPED_ARROW_EFFECT_POISON: "tar naqjejhom"
+  TIPPED_ARROW_EFFECT_REGENERATION: "rachmohtahmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "pedmohmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "qit vihmohmeh naqjejhom"
+  TIPPED_ARROW_EFFECT_STRENGTH: "hos naqjejhom"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "do naqjejhom"
+  TIPPED_ARROW_EFFECT_THICK: "'idnar naqjejhom"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "la'siv pin'a' naqjejhom"
+  TIPPED_ARROW_EFFECT_WATER: "bobdar naqjejhom"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "niwqen naqjejhom"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "pujmohmeh naqjejhom"
+  TNT_MINECART: "jorwi' tlhilhal duj"
+  TORCHFLOWER_SEEDS: "sech 'insong ras'is"
+  TOTEM_OF_UNDYING: "jubmohmeh hewhom"
+  TRADER_LLAMA_SPAWN_EGG: "suy 'imtiy boghmohbogh qim'e'"
+  TRIAL_KEY: "qad ngaqha'mohwi'"
+  TRIDENT: "chonnaq"
+  TROPICAL_FISH: "biq ghun ghoti'"
+  TROPICAL_FISH_BUCKET: "biq ghun ghoti' haysin"
+  TROPICAL_FISH_SPAWN_EGG: "biq ghun ghoti' boghmohbogh qim'e'"
+  TURTLE_HELMET: "la'siv nagh dir"
+  TURTLE_SPAWN_EGG: "la'siv boghmohbogh qim'e'"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  VEX_SPAWN_EGG: "nuqwi' boghmohbogh qim'e'"
+  VILLAGER_SPAWN_EGG: "venghom ghot boghmohbogh qim"
+  VINDICATOR_SPAWN_EGG: "'obmaq ghajbogh wehwi' boghmohbogh qim"
+  WANDERING_TRADER_SPAWN_EGG: "yorqej suy boghmohbogh qim'e'"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  WARDEN_SPAWN_EGG: "hubwi' boghmohbogh qim'e'"
+  WARPED_FUNGUS_ON_A_STICK: "'atlhqam sud naq"
+  WATER_BUCKET: "biq haysin"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  WHEAT: "wevpev"
+  WHEAT_SEEDS: "wevpev ras'is"
+  WHITE_DYE: "ritlh chis"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "mitlhmeh ghantoh"
+  WITCH_SPAWN_EGG: "'idnar pin'a' boghmohbogh qim"
+  WITHER_SKELETON_SPAWN_EGG: "wither nobmed boghmohbogh qim'e'"
+  WITHER_SPAWN_EGG: "wither boghmohbogh qim'e'"
+  WOLF_SPAWN_EGG: "ngavyaw' boghmohbogh qim'e'"
+  WOODEN_AXE: "sor hap 'obmaq"
+  WOODEN_HOE: "sor hap rutned"
+  WOODEN_PICKAXE: "sor hap tlhilwi' jan"
+  WOODEN_SHOVEL: "sor hap ghevjur"
+  WOODEN_SWORD: "sor hap yan"
+  WRITABLE_BOOK: "paq ghitlhwi' bo je"
+  WRITTEN_BOOK: "ghitlhta' paq"
+  YELLOW_DYE: "sudbogh ritlh 'ej wovqu'bogh"
+  ZOGLIN_SPAWN_EGG: "zoglin boghmohbogh qim'e'"
+  ZOMBIE_HORSE_SPAWN_EGG: "yinbogh lom sargh boghmohbogh qim"
+  ZOMBIE_SPAWN_EGG: "yinbogh lom boghmohbogh qim'e'"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "yinbogh venghom ghot lom boghmohbogh qim'e'"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "yinbogh piglin lom boghmohbogh qim'e'"
+  CHEST: "rodaq tu'lu'di':"
+  FEET: "qamdaq tu'lu'di':"
+  HEAD: "nachdaq tu'lu'di':"
+  LEGS: "'usdaq tu'lu'di':"
+  MAINHAND: "ghop wa'dichdaq tu'lu'di':"
+  OFFHAND: "ghop cha'dichdaq tu'lu'di':"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

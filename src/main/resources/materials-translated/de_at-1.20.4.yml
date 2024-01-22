@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akazienhoizknopf"
+  ACACIA_DOOR: "akazienhoiztir"
+  ACACIA_FENCE: "akazienhoizzaun"
+  ACACIA_FENCE_GATE: "akazienhoizzauntor"
+  ACACIA_HANGING_SIGN: "akazienhängeschüd"
+  ACACIA_LEAVES: "akazienlab"
+  ACACIA_LOG: "akazienstomm"
+  ACACIA_PLANKS: "akazienhoizbrettl"
+  ACACIA_PRESSURE_PLATE: "akazeinhoizdruckplottn"
+  ACACIA_SAPLING: "akaziensetzling"
+  ACACIA_SIGN: "akazienhoizschüd"
+  ACACIA_SLAB: "akazienhoizstufn"
+  ACACIA_STAIRS: "akazienhoiztreppn"
+  ACACIA_TRAPDOOR: "akazienhoizfoitir"
+  ACACIA_WALL_HANGING_SIGN: "akazienwondhängeschüd"
+  ACACIA_WALL_SIGN: "akazienhoizwondschüd"
+  ACACIA_WOOD: "akazienhoiz"
+  ACTIVATOR_RAIL: "aktivierungsschiene"
+  AIR: "luft"
+  ALLIUM: "sternlauch"
+  AMETHYST_BLOCK: "amethyst-block"
+  AMETHYST_CLUSTER: "amethysthaufn"
+  ANCIENT_DEBRIS: "antika schrott"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "andesitstufn"
+  ANDESITE_STAIRS: "andestittreppn"
+  ANDESITE_WALL: "andesitmaua"
+  ANVIL: "amboss"
+  ATTACHED_MELON_STEM: "melonenronkn"
+  ATTACHED_PUMPKIN_STEM: "kürbisronkn"
+  AZALEA: "azalee"
+  AZALEA_LEAVES: "azaleenlab"
+  AZURE_BLUET: "porzellansternchen"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "bambusblock"
+  BAMBOO_BUTTON: "bambusknopf"
+  BAMBOO_DOOR: "bambustir"
+  BAMBOO_FENCE: "bambuszaun"
+  BAMBOO_FENCE_GATE: "bambuszauntor"
+  BAMBOO_HANGING_SIGN: "bambushängeschüd"
+  BAMBOO_MOSAIC: "bambusmosaik"
+  BAMBOO_MOSAIC_SLAB: "bambusmosaikstufn"
+  BAMBOO_MOSAIC_STAIRS: "bambusmosaiktreppn"
+  BAMBOO_PLANKS: "bambusbrettl"
+  BAMBOO_PRESSURE_PLATE: "bambusdruckplottn"
+  BAMBOO_SAPLING: "bambussprössling"
+  BAMBOO_SIGN: "bambusschüd"
+  BAMBOO_SLAB: "bambusstufn"
+  BAMBOO_STAIRS: "bambustreppn"
+  BAMBOO_TRAPDOOR: "bambusfoitir"
+  BAMBOO_WALL_HANGING_SIGN: "bambuswondhängeschüd"
+  BAMBOO_WALL_SIGN: "bambuswondschüd"
+  BANNER_BASE_BLACK: "komplett schworzs föd"
+  BANNER_BASE_BLUE: "komplett blaus föd"
+  BANNER_BASE_BROWN: "komplett brauns föd"
+  BANNER_BASE_CYAN: "komplett türkises föd"
+  BANNER_BASE_GRAY: "komplett graus föd"
+  BANNER_BASE_GREEN: "komplett grüns föd"
+  BANNER_BASE_LIGHT_BLUE: "komplett hellblaus föd"
+  BANNER_BASE_LIGHT_GRAY: "komplett hellgraus föd"
+  BANNER_BASE_LIME: "komplett hellgrüns föd"
+  BANNER_BASE_MAGENTA: "komplett magentas föd"
+  BANNER_BASE_ORANGE: "komplett oranges föd"
+  BANNER_BASE_PINK: "komplett rosas föd"
+  BANNER_BASE_PURPLE: "komplett lilas föd"
+  BANNER_BASE_RED: "komplett rots föd"
+  BANNER_BASE_WHITE: "komplett weißes föd"
+  BANNER_BASE_YELLOW: "komplett gelbs föd"
+  BANNER_BORDER_BLACK: "schworza bord"
+  BANNER_BORDER_BLUE: "blaua bord"
+  BANNER_BORDER_BROWN: "brauna bord"
+  BANNER_BORDER_CYAN: "türkisa bord"
+  BANNER_BORDER_GRAY: "graua bord"
+  BANNER_BORDER_GREEN: "grüna bord"
+  BANNER_BORDER_LIGHT_BLUE: "hellblaua bord"
+  BANNER_BORDER_LIGHT_GRAY: "hellgraua bord"
+  BANNER_BORDER_LIME: "hellgrüna bord"
+  BANNER_BORDER_MAGENTA: "magentana bord"
+  BANNER_BORDER_ORANGE: "oranga bord"
+  BANNER_BORDER_PINK: "rosana bord"
+  BANNER_BORDER_PURPLE: "lilana bord"
+  BANNER_BORDER_RED: "rota bord"
+  BANNER_BORDER_WHITE: "weißa bord"
+  BANNER_BORDER_YELLOW: "gelba bord"
+  BANNER_BRICKS_BLACK: "föd schworz gmauad"
+  BANNER_BRICKS_BLUE: "föd blau gmauad"
+  BANNER_BRICKS_BROWN: "föd braun gmauad"
+  BANNER_BRICKS_CYAN: "föd türkis gmauad"
+  BANNER_BRICKS_GRAY: "föd grau gmauad"
+  BANNER_BRICKS_GREEN: "föd grün gmauad"
+  BANNER_BRICKS_LIGHT_BLUE: "föd hellblau gmauad"
+  BANNER_BRICKS_LIGHT_GRAY: "föd hellgrau gmauad"
+  BANNER_BRICKS_LIME: "föd hellgrün gmauad"
+  BANNER_BRICKS_MAGENTA: "föd magenta gmauad"
+  BANNER_BRICKS_ORANGE: "föd orange gmauad"
+  BANNER_BRICKS_PINK: "föd rosa gmauad"
+  BANNER_BRICKS_PURPLE: "föd lila gmauad"
+  BANNER_BRICKS_RED: "föd rot gmauad"
+  BANNER_BRICKS_WHITE: "föd weiß gmauad"
+  BANNER_BRICKS_YELLOW: "föd gelb gmauad"
+  BANNER_CIRCLE_BLACK: "schworze kugl"
+  BANNER_CIRCLE_BLUE: "blaue kugl"
+  BANNER_CIRCLE_BROWN: "braune kugl"
+  BANNER_CIRCLE_CYAN: "türkise kugl"
+  BANNER_CIRCLE_GRAY: "graue kugl"
+  BANNER_CIRCLE_GREEN: "grüne kugl"
+  BANNER_CIRCLE_LIGHT_BLUE: "hellblaue kugl"
+  BANNER_CIRCLE_LIGHT_GRAY: "hellgraue kugl"
+  BANNER_CIRCLE_LIME: "hellgrüne kugl"
+  BANNER_CIRCLE_MAGENTA: "magentane kugl"
+  BANNER_CIRCLE_ORANGE: "orange kugl"
+  BANNER_CIRCLE_PINK: "rosane kugl"
+  BANNER_CIRCLE_PURPLE: "lilane kugl"
+  BANNER_CIRCLE_RED: "rote kugl"
+  BANNER_CIRCLE_WHITE: "weiße kugl"
+  BANNER_CIRCLE_YELLOW: "gelbe kugl"
+  BANNER_CREEPER_BLACK: "schworza creeper"
+  BANNER_CREEPER_BLUE: "blaua creeper"
+  BANNER_CREEPER_BROWN: "brauna creeper"
+  BANNER_CREEPER_CYAN: "türkisa creeper"
+  BANNER_CREEPER_GRAY: "graua creeper"
+  BANNER_CREEPER_GREEN: "grüna creeper"
+  BANNER_CREEPER_LIGHT_BLUE: "hellblaua creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "hellgraua creeper"
+  BANNER_CREEPER_LIME: "hellgrüna creeper"
+  BANNER_CREEPER_MAGENTA: "magentana creeper"
+  BANNER_CREEPER_ORANGE: "oranga creeper"
+  BANNER_CREEPER_PINK: "rosana creeper"
+  BANNER_CREEPER_PURPLE: "lilana creeper"
+  BANNER_CREEPER_RED: "rota creeper"
+  BANNER_CREEPER_WHITE: "weißa creeper"
+  BANNER_CREEPER_YELLOW: "gelba creeper"
+  BANNER_CROSS_BLACK: "schworzs andreaskreiz"
+  BANNER_CROSS_BLUE: "blaus andreaskreiz"
+  BANNER_CROSS_BROWN: "brauns andreaskreiz"
+  BANNER_CROSS_CYAN: "türkises andreaskreiz"
+  BANNER_CROSS_GRAY: "graus andreaskreiz"
+  BANNER_CROSS_GREEN: "grüns andreaskreiz"
+  BANNER_CROSS_LIGHT_BLUE: "hellblaus andreaskreiz"
+  BANNER_CROSS_LIGHT_GRAY: "hellgraus andreaskreiz"
+  BANNER_CROSS_LIME: "hellgrüns andreaskreiz"
+  BANNER_CROSS_MAGENTA: "magentas andreaskreiz"
+  BANNER_CROSS_ORANGE: "orangs andreaskreiz"
+  BANNER_CROSS_PINK: "rosas andreaskreiz"
+  BANNER_CROSS_PURPLE: "lilas andreaskreiz"
+  BANNER_CROSS_RED: "rots andreaskreiz"
+  BANNER_CROSS_WHITE: "weißs andreaskreiz"
+  BANNER_CROSS_YELLOW: "gelbs andreaskreiz"
+  BANNER_CURLY_BORDER_BLACK: "schworza spicklbord"
+  BANNER_CURLY_BORDER_BLUE: "blaua spicklbord"
+  BANNER_CURLY_BORDER_BROWN: "brauna spicklbord"
+  BANNER_CURLY_BORDER_CYAN: "türkisa spicklbord"
+  BANNER_CURLY_BORDER_GRAY: "graua spicklbord"
+  BANNER_CURLY_BORDER_GREEN: "grüna spicklbord"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "hellblaua spicklbord"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "hellgraua spicklbord"
+  BANNER_CURLY_BORDER_LIME: "hellgrüna spicklbord"
+  BANNER_CURLY_BORDER_MAGENTA: "magentana spicklbord"
+  BANNER_CURLY_BORDER_ORANGE: "oranga spicklbord"
+  BANNER_CURLY_BORDER_PINK: "rosana spicklbord"
+  BANNER_CURLY_BORDER_PURPLE: "lilana spicklbord"
+  BANNER_CURLY_BORDER_RED: "rota spicklbord"
+  BANNER_CURLY_BORDER_WHITE: "weißa spicklbord"
+  BANNER_CURLY_BORDER_YELLOW: "gelba spicklbord"
+  BANNER_DIAGONAL_LEFT_BLACK: "schworz schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_BLUE: "blau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_BROWN: "braun schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_CYAN: "türkis schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_GRAY: "grau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_GREEN: "grün schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "hellblau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "hellgrau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIME: "hellgrün schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_PINK: "rosa schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lila schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_RED: "rot schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_WHITE: "weiß schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gelb schräglinks teilt"
+  BANNER_DIAGONAL_RIGHT_BLACK: "schworz schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_BROWN: "braun schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_CYAN: "türkis schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_GREEN: "grün schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "hellblau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "hellgrau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIME: "hellgrün schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "orange schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_PINK: "rosa schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lila schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_RED: "rot schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_WHITE: "weiß schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gelb schrägrechts teilt"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "schworz schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "braun schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "türkis schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "grün schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "hellblau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "hellgrau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "hellgrün schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "orange schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "rosa schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lila schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_RED: "rot schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "weiß schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gelb schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "schworz schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "braun schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "türkis schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "grün schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "hellblau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "hellgrau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "hellgrün schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "orange schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "rosa schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lila schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "rot schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "weiß schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gelb schräglinks teilt (invertiert)"
+  BANNER_FLOWER_BLACK: "schworze blume"
+  BANNER_FLOWER_BLUE: "blaue blume"
+  BANNER_FLOWER_BROWN: "braune blume"
+  BANNER_FLOWER_CYAN: "türkise blume"
+  BANNER_FLOWER_GRAY: "graue blume"
+  BANNER_FLOWER_GREEN: "grüne blume"
+  BANNER_FLOWER_LIGHT_BLUE: "hellblaue blume"
+  BANNER_FLOWER_LIGHT_GRAY: "hellgraue blume"
+  BANNER_FLOWER_LIME: "hellgrüne blume"
+  BANNER_FLOWER_MAGENTA: "magentane blume"
+  BANNER_FLOWER_ORANGE: "orange blume"
+  BANNER_FLOWER_PINK: "rosane blume"
+  BANNER_FLOWER_PURPLE: "lilane blume"
+  BANNER_FLOWER_RED: "rote blume"
+  BANNER_FLOWER_WHITE: "weiße blume"
+  BANNER_FLOWER_YELLOW: "gelbe blume"
+  BANNER_GLOBE_BLACK: "schworza globus"
+  BANNER_GLOBE_BLUE: "blaua globus"
+  BANNER_GLOBE_BROWN: "brauna globus"
+  BANNER_GLOBE_CYAN: "türkisa globus"
+  BANNER_GLOBE_GRAY: "graua globus"
+  BANNER_GLOBE_GREEN: "grüna globus"
+  BANNER_GLOBE_LIGHT_BLUE: "hellblaua globus"
+  BANNER_GLOBE_LIGHT_GRAY: "hellgraua globus"
+  BANNER_GLOBE_LIME: "hellgrüna globus"
+  BANNER_GLOBE_MAGENTA: "magentana globus"
+  BANNER_GLOBE_ORANGE: "oranga globus"
+  BANNER_GLOBE_PINK: "rosana globus"
+  BANNER_GLOBE_PURPLE: "lilana globus"
+  BANNER_GLOBE_RED: "rota globus"
+  BANNER_GLOBE_WHITE: "weißa globus"
+  BANNER_GLOBE_YELLOW: "gelba globus"
+  BANNER_GRADIENT_BLACK: "schworza forbvalauf"
+  BANNER_GRADIENT_BLUE: "blaua forbvalauf"
+  BANNER_GRADIENT_BROWN: "brauna forbvalauf"
+  BANNER_GRADIENT_CYAN: "türkisa forbvalauf"
+  BANNER_GRADIENT_GRAY: "graua forbvalauf"
+  BANNER_GRADIENT_GREEN: "grüna forbvalauf"
+  BANNER_GRADIENT_LIGHT_BLUE: "hellblaua forbvalauf"
+  BANNER_GRADIENT_LIGHT_GRAY: "hellgraua forbvalauf"
+  BANNER_GRADIENT_LIME: "hellgrüna forbvalauf"
+  BANNER_GRADIENT_MAGENTA: "magentana forbvalauf"
+  BANNER_GRADIENT_ORANGE: "oranga forbvalauf"
+  BANNER_GRADIENT_PINK: "rosana forbvalauf"
+  BANNER_GRADIENT_PURPLE: "lilana forbvalauf"
+  BANNER_GRADIENT_RED: "rota forbvalauf"
+  BANNER_GRADIENT_WHITE: "weißa forbvalauf"
+  BANNER_GRADIENT_YELLOW: "gelba forbvalauf"
+  BANNER_GRADIENT_UP_BLACK: "schworza forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_BLUE: "blaua forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_BROWN: "brauna forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_CYAN: "türkisa forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_GRAY: "graua forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_GREEN: "grüna forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "hellblaua forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "hellgraua forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_LIME: "hellgrüna forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_MAGENTA: "magentana forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_ORANGE: "oranga forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_PINK: "rosana forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_PURPLE: "lilana forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_RED: "rota forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_WHITE: "weißa forbvalauf (invertiert)"
+  BANNER_GRADIENT_UP_YELLOW: "gelba forbvalauf (invertiert)"
+  BANNER_HALF_HORIZONTAL_BLACK: "obn schworz teilt"
+  BANNER_HALF_HORIZONTAL_BLUE: "obn blau teilt"
+  BANNER_HALF_HORIZONTAL_BROWN: "obn braun teilt"
+  BANNER_HALF_HORIZONTAL_CYAN: "obn türkis teilt"
+  BANNER_HALF_HORIZONTAL_GRAY: "obn grau teilt"
+  BANNER_HALF_HORIZONTAL_GREEN: "obn grün teilt"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "obn hellblau teilt"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "obn hellgrau teilt"
+  BANNER_HALF_HORIZONTAL_LIME: "obn hellgrün teilt"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "obn magenta teilt"
+  BANNER_HALF_HORIZONTAL_ORANGE: "obn orange teilt"
+  BANNER_HALF_HORIZONTAL_PINK: "obn rosa teilt"
+  BANNER_HALF_HORIZONTAL_PURPLE: "obn lila teilt"
+  BANNER_HALF_HORIZONTAL_RED: "obn rot teilt"
+  BANNER_HALF_HORIZONTAL_WHITE: "obn weiß teilt"
+  BANNER_HALF_HORIZONTAL_YELLOW: "obn gelb teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "untn schworz teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "untn blau teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "untn braun teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "untn türkis teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "untn grau teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "untn grün teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "untn hellblau teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "untn hellgrau teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "untn hellgrün teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "untn magenta teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "untn orange teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "untn rosa teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "untn lila teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "untn rot teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "untn weiß teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "untn gelb teilt"
+  BANNER_HALF_VERTICAL_BLACK: "rechts schworz gspoitn"
+  BANNER_HALF_VERTICAL_BLUE: "rechts blau gspoitn"
+  BANNER_HALF_VERTICAL_BROWN: "rechts braun gspoitn"
+  BANNER_HALF_VERTICAL_CYAN: "rechts türkis gspoitn"
+  BANNER_HALF_VERTICAL_GRAY: "rechts grau gspoitn"
+  BANNER_HALF_VERTICAL_GREEN: "rechts grün gspoitn"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "rechts hellblau gspoitn"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "rechts hellgrau gspoitn"
+  BANNER_HALF_VERTICAL_LIME: "rechts hellgrün gspoitn"
+  BANNER_HALF_VERTICAL_MAGENTA: "rechts magenta gspoitn"
+  BANNER_HALF_VERTICAL_ORANGE: "rechts orange gspoitn"
+  BANNER_HALF_VERTICAL_PINK: "rechts rosa gspoitn"
+  BANNER_HALF_VERTICAL_PURPLE: "rechts lila gspoitn"
+  BANNER_HALF_VERTICAL_RED: "rechts rot gspoitn"
+  BANNER_HALF_VERTICAL_WHITE: "rechts weiß gspoitn"
+  BANNER_HALF_VERTICAL_YELLOW: "rechts gelb gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "links schworz gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "links blau gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "links braun gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "links türkis gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "links grau gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "links grün gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "links hellblau gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "links hellgrau gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "links hellgrün gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "links magenta gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "links orange gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "links rosa gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "links lila gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "links rot gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "links weiß gspoitn"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "links gelb gspoitn"
+  BANNER_MOJANG_BLACK: "schworzs mojang-logo"
+  BANNER_MOJANG_BLUE: "blaus mojang-logo"
+  BANNER_MOJANG_BROWN: "brauns mojang-logo"
+  BANNER_MOJANG_CYAN: "türkises mojang-logo"
+  BANNER_MOJANG_GRAY: "graus mojang-logo"
+  BANNER_MOJANG_GREEN: "grüns mojang-logo"
+  BANNER_MOJANG_LIGHT_BLUE: "hellblaus mojang-logo"
+  BANNER_MOJANG_LIGHT_GRAY: "hellgraus mojang-logo"
+  BANNER_MOJANG_LIME: "hellgrüns mojang-logo"
+  BANNER_MOJANG_MAGENTA: "magentas mojang-logo"
+  BANNER_MOJANG_ORANGE: "orangs mojang-logo"
+  BANNER_MOJANG_PINK: "rosas mojang-logo"
+  BANNER_MOJANG_PURPLE: "lilas mojang-logo"
+  BANNER_MOJANG_RED: "rots mojang-logo"
+  BANNER_MOJANG_WHITE: "weißs mojang-logo"
+  BANNER_MOJANG_YELLOW: "gelbs mojang-logo"
+  BANNER_PIGLIN_BLACK: "schworze schnauzn"
+  BANNER_PIGLIN_BLUE: "blaue schnauzn"
+  BANNER_PIGLIN_BROWN: "braune schnauzn"
+  BANNER_PIGLIN_CYAN: "türkise schnauzn"
+  BANNER_PIGLIN_GRAY: "graue schnauzn"
+  BANNER_PIGLIN_GREEN: "grüne schnauzn"
+  BANNER_PIGLIN_LIGHT_BLUE: "hellblaue schnauzn"
+  BANNER_PIGLIN_LIGHT_GRAY: "hellgraue schnauzn"
+  BANNER_PIGLIN_LIME: "hellgrüne schnauzn"
+  BANNER_PIGLIN_MAGENTA: "magenta schnauzn"
+  BANNER_PIGLIN_ORANGE: "orange schnauzn"
+  BANNER_PIGLIN_PINK: "rosa schnauzn"
+  BANNER_PIGLIN_PURPLE: "lila schnauzn"
+  BANNER_PIGLIN_RED: "rote schnauzn"
+  BANNER_PIGLIN_WHITE: "weiße schnauzn"
+  BANNER_PIGLIN_YELLOW: "gelbe schnauzn"
+  BANNER_RHOMBUS_BLACK: "schworze rautn"
+  BANNER_RHOMBUS_BLUE: "blaue rautn"
+  BANNER_RHOMBUS_BROWN: "braune rautn"
+  BANNER_RHOMBUS_CYAN: "türkise rautn"
+  BANNER_RHOMBUS_GRAY: "graue rautn"
+  BANNER_RHOMBUS_GREEN: "grüne rautn"
+  BANNER_RHOMBUS_LIGHT_BLUE: "hellblaue rautn"
+  BANNER_RHOMBUS_LIGHT_GRAY: "hellgraue rautn"
+  BANNER_RHOMBUS_LIME: "hellgrüne rautn"
+  BANNER_RHOMBUS_MAGENTA: "magentane rautn"
+  BANNER_RHOMBUS_ORANGE: "orange rautn"
+  BANNER_RHOMBUS_PINK: "rosane rautn"
+  BANNER_RHOMBUS_PURPLE: "lilane rautn"
+  BANNER_RHOMBUS_RED: "rote rautn"
+  BANNER_RHOMBUS_WHITE: "weiße rautn"
+  BANNER_RHOMBUS_YELLOW: "gelbe rautn"
+  BANNER_SKULL_BLACK: "schworza schädl"
+  BANNER_SKULL_BLUE: "blaua schädl"
+  BANNER_SKULL_BROWN: "brauna schädl"
+  BANNER_SKULL_CYAN: "türkisa schädl"
+  BANNER_SKULL_GRAY: "graua schädl"
+  BANNER_SKULL_GREEN: "grüna schädl"
+  BANNER_SKULL_LIGHT_BLUE: "hellblaua schädl"
+  BANNER_SKULL_LIGHT_GRAY: "hellgraua schädl"
+  BANNER_SKULL_LIME: "hellgrüna schädl"
+  BANNER_SKULL_MAGENTA: "magentana schädl"
+  BANNER_SKULL_ORANGE: "oranga schädl"
+  BANNER_SKULL_PINK: "rosana schädl"
+  BANNER_SKULL_PURPLE: "lilana schädl"
+  BANNER_SKULL_RED: "rota schädl"
+  BANNER_SKULL_WHITE: "weißa schädl"
+  BANNER_SKULL_YELLOW: "gelba schädl"
+  BANNER_SMALL_STRIPES_BLACK: "vier schworze pfoi"
+  BANNER_SMALL_STRIPES_BLUE: "vier blaue pfoi"
+  BANNER_SMALL_STRIPES_BROWN: "vier braune pfoi"
+  BANNER_SMALL_STRIPES_CYAN: "vier türkise pfoi"
+  BANNER_SMALL_STRIPES_GRAY: "vier graue pfoi"
+  BANNER_SMALL_STRIPES_GREEN: "vier grüne pfoi"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "vier hellblaue pfoi"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "vier hellgraue pfoi"
+  BANNER_SMALL_STRIPES_LIME: "vier hellgrüne pfoi"
+  BANNER_SMALL_STRIPES_MAGENTA: "vier magentane pfoi"
+  BANNER_SMALL_STRIPES_ORANGE: "vier orange pfoi"
+  BANNER_SMALL_STRIPES_PINK: "vier rosane pfoi"
+  BANNER_SMALL_STRIPES_PURPLE: "vier lilane pfoi"
+  BANNER_SMALL_STRIPES_RED: "vier rote pfoi"
+  BANNER_SMALL_STRIPES_WHITE: "vier weiße pfoi"
+  BANNER_SMALL_STRIPES_YELLOW: "vier gelbe pfoi"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "schworzs rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blaus rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "brauns rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "türkises rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "graus rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "grüns rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "hellblaus rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "hellgraus rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "hellgrüns rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "magentas rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "orangs rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "rosas rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lilas rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "rots rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "weißs rechts untaegg"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gelbs rechts untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "schworzs links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blaus links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brauns links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "türkises links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "graus links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "grüns links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "hellblaus links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "hellgraus links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "hellgrüns links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "magentas links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "orangs links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "rosas links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lilas links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "rots links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "weißs links untaegg"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gelbs links untaegg"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "schworzs rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blaus rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "brauns rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "türkises rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "graus rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "grüns rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "hellblaus rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "hellgraus rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_LIME: "hellgrüns rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "magentas rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "orangs rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_PINK: "rosas rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lilas rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_RED: "rots rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "weißs rechts obaegg"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gelbs rechts obaegg"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "schworzs links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blaus links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brauns links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "türkises links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "graus links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "grüns links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "hellblaus links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "hellgraus links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "hellgrüns links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "magentas links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "orangs links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "rosas links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lilas links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_RED: "rots links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "weißs links obaegg"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gelbs links obaegg"
+  BANNER_STRAIGHT_CROSS_BLACK: "schworzs kreiz"
+  BANNER_STRAIGHT_CROSS_BLUE: "blaus kreiz"
+  BANNER_STRAIGHT_CROSS_BROWN: "brauns kreiz"
+  BANNER_STRAIGHT_CROSS_CYAN: "türkises kreiz"
+  BANNER_STRAIGHT_CROSS_GRAY: "graus kreiz"
+  BANNER_STRAIGHT_CROSS_GREEN: "grüns kreiz"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "hellblaus kreiz"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "hellgraus kreiz"
+  BANNER_STRAIGHT_CROSS_LIME: "hellgrüns kreiz"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magentas kreiz"
+  BANNER_STRAIGHT_CROSS_ORANGE: "orangs kreiz"
+  BANNER_STRAIGHT_CROSS_PINK: "rosas kreiz"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lilas kreiz"
+  BANNER_STRAIGHT_CROSS_RED: "rots kreiz"
+  BANNER_STRAIGHT_CROSS_WHITE: "weißs kreiz"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gelbs kreiz"
+  BANNER_STRIPE_BOTTOM_BLACK: "schworza bannafuaß"
+  BANNER_STRIPE_BOTTOM_BLUE: "blaua bannafuaß"
+  BANNER_STRIPE_BOTTOM_BROWN: "brauna bannafuaß"
+  BANNER_STRIPE_BOTTOM_CYAN: "türkisa bannafuaß"
+  BANNER_STRIPE_BOTTOM_GRAY: "graua bannafuaß"
+  BANNER_STRIPE_BOTTOM_GREEN: "grüna bannafuaß"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "hellblaua bannafuaß"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "hellgraua bannafuaß"
+  BANNER_STRIPE_BOTTOM_LIME: "hellgrüna bannafuaß"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "magentana bannafuaß"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranga bannafuaß"
+  BANNER_STRIPE_BOTTOM_PINK: "rosana bannafuaß"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lilana bannafuaß"
+  BANNER_STRIPE_BOTTOM_RED: "rota bannafuaß"
+  BANNER_STRIPE_BOTTOM_WHITE: "weißa bannafuaß"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gelba bannafuaß"
+  BANNER_STRIPE_CENTER_BLACK: "schworza pfoi"
+  BANNER_STRIPE_CENTER_BLUE: "blaua pfoi"
+  BANNER_STRIPE_CENTER_BROWN: "brauna pfoi"
+  BANNER_STRIPE_CENTER_CYAN: "türkisa pfoi"
+  BANNER_STRIPE_CENTER_GRAY: "graua pfoi"
+  BANNER_STRIPE_CENTER_GREEN: "grüna pfoi"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "hellblaua pfoi"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "hellgraua pfoi"
+  BANNER_STRIPE_CENTER_LIME: "hellgrüna pfoi"
+  BANNER_STRIPE_CENTER_MAGENTA: "magentana pfoi"
+  BANNER_STRIPE_CENTER_ORANGE: "oranga pfoi"
+  BANNER_STRIPE_CENTER_PINK: "rosana pfoi"
+  BANNER_STRIPE_CENTER_PURPLE: "lilana pfoi"
+  BANNER_STRIPE_CENTER_RED: "rota pfoi"
+  BANNER_STRIPE_CENTER_WHITE: "weißa pfoi"
+  BANNER_STRIPE_CENTER_YELLOW: "gelba pfoi"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "schworza schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blaua schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brauna schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "türkisa schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "graua schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "grüna schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "hellblaua schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "hellgraua schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_LIME: "hellgrüna schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magentana schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "oranga schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rosana schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lilana schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_RED: "rota schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "weißa schräglinksboikn"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gelba schräglinksboikn"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "schworza schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blaua schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brauna schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "türkisa schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "graua schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "grüna schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "hellblaua schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "hellgraua schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "hellgrüna schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "magentana schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "oranga schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rosana schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lilana schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rota schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "weißa schrägboikn"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gelba schrägboikn"
+  BANNER_STRIPE_LEFT_BLACK: "schworze rechte flonkn"
+  BANNER_STRIPE_LEFT_BLUE: "blaue rechte flonkn"
+  BANNER_STRIPE_LEFT_BROWN: "braune rechte flonkn"
+  BANNER_STRIPE_LEFT_CYAN: "türkise rechte flonkn"
+  BANNER_STRIPE_LEFT_GRAY: "graue rechte flonkn"
+  BANNER_STRIPE_LEFT_GREEN: "grüne rechte flonkn"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "hellblaue rechte flonkn"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "hellgraue rechte flonkn"
+  BANNER_STRIPE_LEFT_LIME: "hellgrüne rechte flonkn"
+  BANNER_STRIPE_LEFT_MAGENTA: "magentane rechte flonkn"
+  BANNER_STRIPE_LEFT_ORANGE: "orange rechte flonkn"
+  BANNER_STRIPE_LEFT_PINK: "rosane rechte flonkn"
+  BANNER_STRIPE_LEFT_PURPLE: "lilane rechte flonkn"
+  BANNER_STRIPE_LEFT_RED: "rote rechte flonkn"
+  BANNER_STRIPE_LEFT_WHITE: "weiße rechte flonkn"
+  BANNER_STRIPE_LEFT_YELLOW: "gelbe rechte flonkn"
+  BANNER_STRIPE_MIDDLE_BLACK: "schworza boikn"
+  BANNER_STRIPE_MIDDLE_BLUE: "blaua boikn"
+  BANNER_STRIPE_MIDDLE_BROWN: "brauna boikn"
+  BANNER_STRIPE_MIDDLE_CYAN: "türkisa boikn"
+  BANNER_STRIPE_MIDDLE_GRAY: "graua boikn"
+  BANNER_STRIPE_MIDDLE_GREEN: "grüna boikn"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "hellblaua boikn"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "hellgraua boikn"
+  BANNER_STRIPE_MIDDLE_LIME: "hellgrüna boikn"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "magentana boikn"
+  BANNER_STRIPE_MIDDLE_ORANGE: "oranga boikn"
+  BANNER_STRIPE_MIDDLE_PINK: "rosana boikn"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lilana boikn"
+  BANNER_STRIPE_MIDDLE_RED: "rota boikn"
+  BANNER_STRIPE_MIDDLE_WHITE: "weißa boikn"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gelba boikn"
+  BANNER_STRIPE_RIGHT_BLACK: "schworze linke flonkn"
+  BANNER_STRIPE_RIGHT_BLUE: "blaue linke flonkn"
+  BANNER_STRIPE_RIGHT_BROWN: "braune linke flonkn"
+  BANNER_STRIPE_RIGHT_CYAN: "türkise linke flonkn"
+  BANNER_STRIPE_RIGHT_GRAY: "graue linke flonkn"
+  BANNER_STRIPE_RIGHT_GREEN: "grüne linke flonkn"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "hellblaue linke flonkn"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "hellgraue linke flonkn"
+  BANNER_STRIPE_RIGHT_LIME: "hellgrüne linke flonkn"
+  BANNER_STRIPE_RIGHT_MAGENTA: "magentane linke flonkn"
+  BANNER_STRIPE_RIGHT_ORANGE: "orange linke flonkn"
+  BANNER_STRIPE_RIGHT_PINK: "rosane linke flonkn"
+  BANNER_STRIPE_RIGHT_PURPLE: "lilane linke flonkn"
+  BANNER_STRIPE_RIGHT_RED: "rote linke flonkn"
+  BANNER_STRIPE_RIGHT_WHITE: "weiße linke flonkn"
+  BANNER_STRIPE_RIGHT_YELLOW: "gelbe linke flonkn"
+  BANNER_STRIPE_TOP_BLACK: "schworza bannakopf"
+  BANNER_STRIPE_TOP_BLUE: "blaua bannakopf"
+  BANNER_STRIPE_TOP_BROWN: "brauna bannakopf"
+  BANNER_STRIPE_TOP_CYAN: "türkisa bannakopf"
+  BANNER_STRIPE_TOP_GRAY: "graua bannakopf"
+  BANNER_STRIPE_TOP_GREEN: "grüna bannakopf"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "hellblaua bannakopf"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "hellgraua bannakopf"
+  BANNER_STRIPE_TOP_LIME: "hellgrüna bannakopf"
+  BANNER_STRIPE_TOP_MAGENTA: "magentana bannakopf"
+  BANNER_STRIPE_TOP_ORANGE: "oranga bannakopf"
+  BANNER_STRIPE_TOP_PINK: "rosana bannakopf"
+  BANNER_STRIPE_TOP_PURPLE: "lilana bannakopf"
+  BANNER_STRIPE_TOP_RED: "rota bannakopf"
+  BANNER_STRIPE_TOP_WHITE: "weißa bannakopf"
+  BANNER_STRIPE_TOP_YELLOW: "gelba bannakopf"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "schworze hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blaue hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "braune hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "türkise hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "graue hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "grüne hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "hellblaue hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "hellgraue hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_LIME: "hellgrüne hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "magentane hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "orange hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_PINK: "rosane hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lilane hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_RED: "rote hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "weiße hoibe spitzn"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gelbe hoibe spitzn"
+  BANNER_TRIANGLE_TOP_BLACK: "schworze gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_BLUE: "blaue gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_BROWN: "braune gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_CYAN: "türkise gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_GRAY: "graue gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_GREEN: "grüne gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "hellblaue gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "hellgraue gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_LIME: "hellgrüne gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_MAGENTA: "magentane gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_ORANGE: "orange gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_PINK: "rosane gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_PURPLE: "lilane gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_RED: "rote gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_WHITE: "weiße gstürzte hoibe spitzn"
+  BANNER_TRIANGLE_TOP_YELLOW: "gelbe gstürzte hoibe spitzn"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "schworza gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blaua gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brauna gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "türkisa gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "graua gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "grüna gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "hellblaua gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "hellgraua gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_LIME: "hellgrüna gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "magentana gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oranga gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_PINK: "rosana gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lilana gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_RED: "rota gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "weißa gspicklta bannafuaß"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gelba gspicklta bannafuaß"
+  BANNER_TRIANGLES_TOP_BLACK: "schworzs gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_BLUE: "blaus gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_BROWN: "brauns gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_CYAN: "türkises gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_GRAY: "graus gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_GREEN: "grüns gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "hellblaus gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "hellgraus gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_LIME: "hellgrüns gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_MAGENTA: "magentas gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_ORANGE: "orangs gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_PINK: "rosas gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_PURPLE: "lilas gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_RED: "rots gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_WHITE: "weißs gspicklta bannakopf"
+  BANNER_TRIANGLES_TOP_YELLOW: "gelbs gspicklta bannakopf"
+  BARREL: "foss"
+  BARRIER: "barriere"
+  BASALT: "basalt"
+  BEACON: "leichtfeia"
+  BEACON_PRIMARY: "primäre kroft"
+  BEACON_SECONDARY: "sekundäre kroft"
+  BED_NO_SLEEP: "du konnst nur nochts oder während eines gewitters schlofn"
+  BED_NOT_SAFE: "du kust jetz nu ned schlofn; es san monsta in da nähe"
+  BED_OBSTRUCTED: "des bett is blockiat"
+  BED_OCCUPIED: "des bett is scho b'setzt"
+  BED_TOO_FAR_AWAY: "du kost jetz ned schlofn; as bett is zu weit weg"
+  BEDROCK: "grundstoa"
+  BEE_NEST: "bienennest"
+  BEEHIVE: "bienenstock"
+  BEETROOTS: "rote bete"
+  BELL: "glockn"
+  BIG_DRIPLEAF: "großes tropfblatt"
+  BIG_DRIPLEAF_STEM: "großer tropfblattstiel"
+  BIRCH_BUTTON: "birknhoizknopf"
+  BIRCH_DOOR: "birknhoiztir"
+  BIRCH_FENCE: "birknhoizzaun"
+  BIRCH_FENCE_GATE: "birknhoizzauntor"
+  BIRCH_HANGING_SIGN: "birknhängeschüd"
+  BIRCH_LEAVES: "birknlab"
+  BIRCH_LOG: "birknstomm"
+  BIRCH_PLANKS: "birknhoizbrettl"
+  BIRCH_PRESSURE_PLATE: "birknhoizdruckplottn"
+  BIRCH_SAPLING: "birknsetzling"
+  BIRCH_SIGN: "birknhoizschüd"
+  BIRCH_SLAB: "birknhoizstufn"
+  BIRCH_STAIRS: "birknhoiztreppn"
+  BIRCH_TRAPDOOR: "birknhoizfoitir"
+  BIRCH_WALL_HANGING_SIGN: "birknwondhängeschüd"
+  BIRCH_WALL_SIGN: "birknhoizwondschüd"
+  BIRCH_WOOD: "birknhoiz"
+  BLACK_BANNER: "schworzs banna"
+  BLACK_BED: "schworzs bett"
+  BLACK_CANDLE: "schworze kerzn"
+  BLACK_CANDLE_CAKE: "kuchn mit schworza kerzn"
+  BLACK_CARPET: "schworza teppich"
+  BLACK_CONCRETE: "schworza beton"
+  BLACK_CONCRETE_POWDER: "schworza trocknbeton"
+  BLACK_GLAZED_TERRACOTTA: "schworz glosiate keramik"
+  BLACK_SHULKER_BOX: "schworze shulkerkistn"
+  BLACK_STAINED_GLASS: "schworzs glos"
+  BLACK_STAINED_GLASS_PANE: "schworze glosscheibn"
+  BLACK_TERRACOTTA: "schworze keramik"
+  BLACK_WOOL: "schworze woin"
+  BLACKSTONE: "schworzstoa"
+  BLACKSTONE_SLAB: "schworzstoastufn"
+  BLACKSTONE_STAIRS: "schworzstoatreppn"
+  BLACKSTONE_WALL: "schworzstoamaua"
+  BLAST_FURNACE: "schmözofn"
+  BLUE_BANNER: "blaus banna"
+  BLUE_BED: "blaus bett"
+  BLUE_CANDLE: "blaue kerzn"
+  BLUE_CANDLE_CAKE: "kuchn mit blaua kerzn"
+  BLUE_CARPET: "blaua teppich"
+  BLUE_CONCRETE: "blaua beton"
+  BLUE_CONCRETE_POWDER: "blaua trocknbeton"
+  BLUE_GLAZED_TERRACOTTA: "blau glosiate keramik"
+  BLUE_ICE: "blaus eis"
+  BLUE_ORCHID: "blaue orchidee"
+  BLUE_SHULKER_BOX: "blaue shulkerkistn"
+  BLUE_STAINED_GLASS: "blaus glos"
+  BLUE_STAINED_GLASS_PANE: "blaue glosscheibn"
+  BLUE_TERRACOTTA: "blaue keramik"
+  BLUE_WOOL: "blaue woin"
+  BONE_BLOCK: "knochnblock"
+  BOOKSHELF: "biacharegal"
+  BRAIN_CORAL: "hiankoralln"
+  BRAIN_CORAL_BLOCK: "hiankorallnblock"
+  BRAIN_CORAL_FAN: "hiankorallnfächa"
+  BRAIN_CORAL_WALL_FAN: "hiankorallnwondfächa"
+  BREWING_STAND: "braustond"
+  BRICK_SLAB: "ziaglstufn"
+  BRICK_STAIRS: "ziagltreppn"
+  BRICK_WALL: "ziaglmaua"
+  BRICKS: "ziagl"
+  BROWN_BANNER: "brauns banna"
+  BROWN_BED: "brauns bett"
+  BROWN_CANDLE: "braune kerzn"
+  BROWN_CANDLE_CAKE: "kuchn mit brauna kerzn"
+  BROWN_CARPET: "brauna teppich"
+  BROWN_CONCRETE: "brauna beton"
+  BROWN_CONCRETE_POWDER: "brauna trocknbeton"
+  BROWN_GLAZED_TERRACOTTA: "braun glosiate keramik"
+  BROWN_MUSHROOM: "brauna püz"
+  BROWN_MUSHROOM_BLOCK: "brauna püzblock"
+  BROWN_SHULKER_BOX: "braune shulkerkistn"
+  BROWN_STAINED_GLASS: "brauns glos"
+  BROWN_STAINED_GLASS_PANE: "braune glosscheibn"
+  BROWN_TERRACOTTA: "braune keramik"
+  BROWN_WOOL: "braune woin"
+  BUBBLE_COLUMN: "blosnsäule"
+  BUBBLE_CORAL: "blosnkoralln"
+  BUBBLE_CORAL_BLOCK: "blosnkorallnblock"
+  BUBBLE_CORAL_FAN: "blosnkorallnfächa"
+  BUBBLE_CORAL_WALL_FAN: "blosnkorallnwondfächa"
+  BUDDING_AMETHYST: "wochsenda amethyst"
+  CACTUS: "kaktus"
+  CAKE: "kuchn"
+  CALCITE: "kalzit"
+  CALIBRATED_SCULK_SENSOR: "kalibriata sculk-sensor"
+  CAMPFIRE: "logafeia"
+  CANDLE: "kerzn"
+  CANDLE_CAKE: "kuchn mit kerzn"
+  CARROTS: "karottn"
+  CARTOGRAPHY_TABLE: "kartntisch"
+  CARVED_PUMPKIN: "gschnitzta kürbis"
+  CAULDRON: "kessl"
+  CAVE_AIR: "höhlnluft"
+  CAVE_VINES: "höhlnlianen"
+  CAVE_VINES_PLANT: "höhlnlianenpflonz"
+  CHAIN: "kettn"
+  CHAIN_COMMAND_BLOCK: "kettn-befehlsblock"
+  CHERRY_BUTTON: "kirschnhoizknopf"
+  CHERRY_DOOR: "kirschnhoiztir"
+  CHERRY_FENCE: "kirschnhoizzaun"
+  CHERRY_FENCE_GATE: "kirschnhoizzauntor"
+  CHERRY_HANGING_SIGN: "kirschnhoizhängeschüd"
+  CHERRY_LEAVES: "kirschnlab"
+  CHERRY_LOG: "kirschnbamstomm"
+  CHERRY_PLANKS: "kirschnhoizbrettl"
+  CHERRY_PRESSURE_PLATE: "kirschnhoizdruckplottn"
+  CHERRY_SAPLING: "kirschnsetzling"
+  CHERRY_SIGN: "kirschnhoizschüd"
+  CHERRY_SLAB: "kirschnhoizstufn"
+  CHERRY_STAIRS: "kirschnhoiztreppn"
+  CHERRY_TRAPDOOR: "kirschnhoizfoitir"
+  CHERRY_WALL_HANGING_SIGN: "kirschnhoizwondhängeschüd"
+  CHERRY_WALL_SIGN: "kirschnhoizwondschüd"
+  CHERRY_WOOD: "kirschnhoiz"
+  CHEST: "kistn"
+  CHIPPED_ANVIL: "ugschlogena amboss"
+  CHISELED_BOOKSHELF: "chiseldel buachregal"
+  CHISELED_COPPER: "gmoaßlta kupfablock"
+  CHISELED_DEEPSLATE: "gmoaßlta tiafnschiefa"
+  CHISELED_NETHER_BRICKS: "gmoaßlte netherziagl"
+  CHISELED_POLISHED_BLACKSTONE: "gmoaßlta poliata schworzstoa"
+  CHISELED_QUARTZ_BLOCK: "gmoaßlta quarzblock"
+  CHISELED_RED_SANDSTONE: "gmoaßlta rota sondstoa"
+  CHISELED_SANDSTONE: "gmoaßlta sondstoa"
+  CHISELED_STONE_BRICKS: "gmoaßlte stoaziagl"
+  CHISELED_TUFF: "gmoaßlta tuffstoa"
+  CHISELED_TUFF_BRICKS: "gmoaßlta tuffstoaziagl"
+  CHORUS_FLOWER: "chorusblütn"
+  CHORUS_PLANT: "choruspflonzn"
+  CLAY: "ton"
+  COAL_BLOCK: "kohleblock"
+  COAL_ORE: "stoakohle"
+  COARSE_DIRT: "grobe erdn"
+  COBBLED_DEEPSLATE: "bruchtiafnschiefa"
+  COBBLED_DEEPSLATE_SLAB: "bruchtiafnschiefastufn"
+  COBBLED_DEEPSLATE_STAIRS: "bruchtiafnschiefatreppn"
+  COBBLED_DEEPSLATE_WALL: "bruchtiafnschiefamaua"
+  COBBLESTONE: "bruchstoa"
+  COBBLESTONE_SLAB: "bruchstoastufn"
+  COBBLESTONE_STAIRS: "bruchstoatreppn"
+  COBBLESTONE_WALL: "bruchstoamaua"
+  COBWEB: "spinnennetz"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "befehlsblock"
+  COMPARATOR: "redstone-komparator"
+  COMPOSTER: "komposta"
+  CONDUIT: "aquisator"
+  COPPER_BLOCK: "kupfablock"
+  COPPER_BULB: "kupfalompn"
+  COPPER_DOOR: "kupfatir"
+  COPPER_GRATE: "kupfarost"
+  COPPER_ORE: "kupfaerz"
+  COPPER_TRAPDOOR: "kupfafoitir"
+  CORNFLOWER: "kornblume"
+  CRACKED_DEEPSLATE_BRICKS: "rissige tiafnschiefaziagl"
+  CRACKED_DEEPSLATE_TILES: "rissige tiafnschiefafliesn"
+  CRACKED_NETHER_BRICKS: "rissige netherziagl"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "rissige poliate schworzstoaziagl"
+  CRACKED_STONE_BRICKS: "rissige stoaziagl"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "werkbonk"
+  CREEPER_HEAD: "creeperkopf"
+  CREEPER_WALL_HEAD: "creeper-wondkopf"
+  CRIMSON_BUTTON: "karmesinknopf"
+  CRIMSON_DOOR: "karmesintir"
+  CRIMSON_FENCE: "karmesinzaun"
+  CRIMSON_FENCE_GATE: "karmesinzauntor"
+  CRIMSON_FUNGUS: "karmesinpüz"
+  CRIMSON_HANGING_SIGN: "karmesinhängeschüd"
+  CRIMSON_HYPHAE: "karmesinhyphn"
+  CRIMSON_NYLIUM: "karmesinnetzl"
+  CRIMSON_PLANKS: "karmesinbrettl"
+  CRIMSON_PRESSURE_PLATE: "karmesindruckplottn"
+  CRIMSON_ROOTS: "karmesinwurzln"
+  CRIMSON_SIGN: "karmesinschüd"
+  CRIMSON_SLAB: "karmesinstufn"
+  CRIMSON_STAIRS: "karmesintreppn"
+  CRIMSON_STEM: "karmesinstomm"
+  CRIMSON_TRAPDOOR: "karmesinfoitir"
+  CRIMSON_WALL_HANGING_SIGN: "karmesinwondhängeschüd"
+  CRIMSON_WALL_SIGN: "karmesinwondschüd"
+  CRYING_OBSIDIAN: "weinender obsidian"
+  CUT_COPPER: "gschnittana kupfablock"
+  CUT_COPPER_SLAB: "gschnittene kupfastufn"
+  CUT_COPPER_STAIRS: "gschnittene kupfatreppn"
+  CUT_RED_SANDSTONE: "gschnittena rota sondstoa"
+  CUT_RED_SANDSTONE_SLAB: "gschnittene rote sondstoastufn"
+  CUT_SANDSTONE: "gschnittena sondstoa"
+  CUT_SANDSTONE_SLAB: "gschnittene sondstoastufn"
+  CYAN_BANNER: "türkises banna"
+  CYAN_BED: "türkises bett"
+  CYAN_CANDLE: "türkise kerzn"
+  CYAN_CANDLE_CAKE: "kuchn mit türkisa kerzn"
+  CYAN_CARPET: "türkisa teppich"
+  CYAN_CONCRETE: "türkisa beton"
+  CYAN_CONCRETE_POWDER: "türkisa trocknbeton"
+  CYAN_GLAZED_TERRACOTTA: "türkis glosiate keramik"
+  CYAN_SHULKER_BOX: "türkise shulkerkistn"
+  CYAN_STAINED_GLASS: "türkises glos"
+  CYAN_STAINED_GLASS_PANE: "türkise glosscheibn"
+  CYAN_TERRACOTTA: "türkise keramik"
+  CYAN_WOOL: "türkise woin"
+  DAMAGED_ANVIL: "beschädigta amboss"
+  DANDELION: "löwnzohn"
+  DARK_OAK_BUTTON: "schworzoachnhoizknopf"
+  DARK_OAK_DOOR: "schworzoachnhoiztir"
+  DARK_OAK_FENCE: "schworzoachnhoizzaun"
+  DARK_OAK_FENCE_GATE: "schworzoachnhoizzauntor"
+  DARK_OAK_HANGING_SIGN: "schworzoachnhängeschüd"
+  DARK_OAK_LEAVES: "schworzoachnlab"
+  DARK_OAK_LOG: "schworzoachnstomm"
+  DARK_OAK_PLANKS: "schworzoachnhoizbrettl"
+  DARK_OAK_PRESSURE_PLATE: "schworzoachndruckplottn"
+  DARK_OAK_SAPLING: "schworzoachnsetzling"
+  DARK_OAK_SIGN: "schworzoachnhoizschüd"
+  DARK_OAK_SLAB: "schworzoachnstufn"
+  DARK_OAK_STAIRS: "schworzoachnhoiztreppn"
+  DARK_OAK_TRAPDOOR: "schworzoachnhoizfoitir"
+  DARK_OAK_WALL_HANGING_SIGN: "schworzoachnwondhängeschüd"
+  DARK_OAK_WALL_SIGN: "schworzoachnhoizwondschüd"
+  DARK_OAK_WOOD: "schworzoachnhoiz"
+  DARK_PRISMARINE: "dunkla prismarin"
+  DARK_PRISMARINE_SLAB: "dunkle prismarinstufn"
+  DARK_PRISMARINE_STAIRS: "dunkle prismarintreppn"
+  DAYLIGHT_DETECTOR: "togeslichtsensor"
+  DEAD_BRAIN_CORAL: "obgstorbene hiankoralln"
+  DEAD_BRAIN_CORAL_BLOCK: "obgstorbena hiankorallnblock"
+  DEAD_BRAIN_CORAL_FAN: "obgstorbena hiankorallnfächa"
+  DEAD_BRAIN_CORAL_WALL_FAN: "obgstorbena hiankorallnwondfächa"
+  DEAD_BUBBLE_CORAL: "obgstorbene blosnkoralle"
+  DEAD_BUBBLE_CORAL_BLOCK: "obgstorbena blosnkorallnblock"
+  DEAD_BUBBLE_CORAL_FAN: "obgstorbena blosnkorallnfächa"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "obgstorbena blosnkorallnwondfächa"
+  DEAD_BUSH: "austrockneta busch"
+  DEAD_FIRE_CORAL: "obgstorbene feiakoralln"
+  DEAD_FIRE_CORAL_BLOCK: "obgstorbena feiakorallnblock"
+  DEAD_FIRE_CORAL_FAN: "obgstorbena feiakorallnfächa"
+  DEAD_FIRE_CORAL_WALL_FAN: "obgstorbena feiakorallnwondfächa"
+  DEAD_HORN_CORAL: "obgstorbene geweihkoralle"
+  DEAD_HORN_CORAL_BLOCK: "obgstorbena geweihkorallnblock"
+  DEAD_HORN_CORAL_FAN: "obgstorbena geweihkorallnfächa"
+  DEAD_HORN_CORAL_WALL_FAN: "obgstorbena geweihkorallnwondfächa"
+  DEAD_TUBE_CORAL: "obgstorbene orglkoralln"
+  DEAD_TUBE_CORAL_BLOCK: "obgstorbena orglkorallnblock"
+  DEAD_TUBE_CORAL_FAN: "obgstorbena orglkorallnfächa"
+  DEAD_TUBE_CORAL_WALL_FAN: "obgstorbena orglkorallnwondfächa"
+  DECORATED_POT: "vazierta kruag"
+  DEEPSLATE: "tiafnschiefa"
+  DEEPSLATE_BRICK_SLAB: "tiafnschiefaziaglstufn"
+  DEEPSLATE_BRICK_STAIRS: "tiafnschiefaziagltreppn"
+  DEEPSLATE_BRICK_WALL: "tiafnschiefaziaglmaua"
+  DEEPSLATE_BRICKS: "tiafnschiefaziagl"
+  DEEPSLATE_COAL_ORE: "tiafnschiefa-stoakohle"
+  DEEPSLATE_COPPER_ORE: "tiafnschiefa-kupfaerz"
+  DEEPSLATE_DIAMOND_ORE: "tiafnschiefa-diamanterz"
+  DEEPSLATE_EMERALD_ORE: "tiafnschiefa-smaragderz"
+  DEEPSLATE_GOLD_ORE: "tiafnschiefa-goiderz"
+  DEEPSLATE_IRON_ORE: "tiafnschiefa-eisnerz"
+  DEEPSLATE_LAPIS_ORE: "tiafnschiefa-lapislazulierz"
+  DEEPSLATE_REDSTONE_ORE: "tiafnschiefa-redstoneerz"
+  DEEPSLATE_TILE_SLAB: "tiafnschiefafliesnstufn"
+  DEEPSLATE_TILE_STAIRS: "tiafnschiefafliesntreppn"
+  DEEPSLATE_TILE_WALL: "tiafnschiefafliesnmaua"
+  DEEPSLATE_TILES: "tiafnschiefafliesn"
+  DETECTOR_RAIL: "sensorschiene"
+  DIAMOND_BLOCK: "diamantblock"
+  DIAMOND_ORE: "diamanterz"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dioritstufn"
+  DIORITE_STAIRS: "diorittreppn"
+  DIORITE_WALL: "dioritmaua"
+  DIRT: "erdn"
+  DIRT_PATH: "tramplpfad"
+  DISPENSER: "werfa"
+  DRAGON_EGG: "drochnei"
+  DRAGON_HEAD: "drochnkopf"
+  DRAGON_WALL_HEAD: "drochn-wondkopf"
+  DRIED_KELP_BLOCK: "trockneta seetongblock"
+  DRIPSTONE_BLOCK: "tropfstoablock"
+  DROPPER: "spenda"
+  EMERALD_BLOCK: "smaragdblock"
+  EMERALD_ORE: "smaragderz"
+  ENCHANTING_TABLE: "zaubatisch"
+  END_GATEWAY: "endtransitportal"
+  END_PORTAL: "endportalrohmen"
+  END_PORTAL_FRAME: "endportalrohmen"
+  END_ROD: "endstob"
+  END_STONE: "endstoa"
+  END_STONE_BRICK_SLAB: "endstoaziaglstufn"
+  END_STONE_BRICK_STAIRS: "endstoaziagltreppn"
+  END_STONE_BRICK_WALL: "endstoaziaglmaua"
+  END_STONE_BRICKS: "endstoaziagl"
+  ENDER_CHEST: "enderkistn"
+  EXPOSED_CHISELED_COPPER: "ausgsetzta gmoaßlta kupfablock"
+  EXPOSED_COPPER: "ausgsetzta kupfablock"
+  EXPOSED_COPPER_BULB: "ausgsetzte kupfalompn"
+  EXPOSED_COPPER_DOOR: "ausgsetzte kupfatir"
+  EXPOSED_COPPER_GRATE: "ausgsetzta kupfarost"
+  EXPOSED_COPPER_TRAPDOOR: "ausgsetzte kupfafoitir"
+  EXPOSED_CUT_COPPER: "ausgsetzta gschnittena kupfablock"
+  EXPOSED_CUT_COPPER_SLAB: "ausgsetzte gschnittene kupferstufn"
+  EXPOSED_CUT_COPPER_STAIRS: "ausgsetzte gschnittene kupfatreppn"
+  FARMLAND: "ocka"
+  FERN: "farn"
+  FIRE: "feia"
+  FIRE_CORAL: "feiakoralln"
+  FIRE_CORAL_BLOCK: "feiakorallnblock"
+  FIRE_CORAL_FAN: "feiakorallnfächa"
+  FIRE_CORAL_WALL_FAN: "feiakorallnwondfächa"
+  FLETCHING_TABLE: "bognatisch"
+  FLOWER_POT: "blumentopf"
+  FLOWERING_AZALEA: "bliande azalee"
+  FLOWERING_AZALEA_LEAVES: "bliands azaleenlaub"
+  FROGSPAWN: "froschlaich"
+  FROSTED_ICE: "brüchigs eis"
+  FURNACE: "ofn"
+  GILDED_BLACKSTONE: "golddurchzogena schworzstoa"
+  GLASS: "glos"
+  GLASS_PANE: "glosscheibn"
+  GLOW_LICHEN: "leichtflechtn"
+  GLOWSTONE: "leichtstoa"
+  GOLD_BLOCK: "goidblock"
+  GOLD_ORE: "goiderz"
+  GRANITE: "granit"
+  GRANITE_SLAB: "granitstufn"
+  GRANITE_STAIRS: "granittreppn"
+  GRANITE_WALL: "granitmaua"
+  GRASS: "gros"
+  GRASS_BLOCK: "grosblock"
+  GRAVEL: "kies"
+  GRAY_BANNER: "graus banna"
+  GRAY_BED: "graus bett"
+  GRAY_CANDLE: "graue kerzn"
+  GRAY_CANDLE_CAKE: "kuchn mit graua kerzn"
+  GRAY_CARPET: "graua teppich"
+  GRAY_CONCRETE: "graua beton"
+  GRAY_CONCRETE_POWDER: "graua trocknbeton"
+  GRAY_GLAZED_TERRACOTTA: "grau glosiate keramik"
+  GRAY_SHULKER_BOX: "graue shulkerkistn"
+  GRAY_STAINED_GLASS: "graus glos"
+  GRAY_STAINED_GLASS_PANE: "graue glosscheibn"
+  GRAY_TERRACOTTA: "graue keramik"
+  GRAY_WOOL: "graue woin"
+  GREEN_BANNER: "grüns banna"
+  GREEN_BED: "grüns bett"
+  GREEN_CANDLE: "grüne kerzn"
+  GREEN_CANDLE_CAKE: "kuchn mit grüna kerzn"
+  GREEN_CARPET: "grüna teppich"
+  GREEN_CONCRETE: "grüna beton"
+  GREEN_CONCRETE_POWDER: "grüna trocknbeton"
+  GREEN_GLAZED_TERRACOTTA: "grün glosiate keramik"
+  GREEN_SHULKER_BOX: "grüne shulkerkistn"
+  GREEN_STAINED_GLASS: "grüns glos"
+  GREEN_STAINED_GLASS_PANE: "grüne glosscheibn"
+  GREEN_TERRACOTTA: "grüne keramik"
+  GREEN_WOOL: "grüne woin"
+  GRINDSTONE: "schleifstoa"
+  HANGING_ROOTS: "hängende wurzln"
+  HAY_BLOCK: "heiboin"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "grobwägeplottn"
+  HONEY_BLOCK: "honigblock"
+  HONEYCOMB_BLOCK: "honigwobnblock"
+  HOPPER: "trichta"
+  HORN_CORAL: "geweihkoralln"
+  HORN_CORAL_BLOCK: "geweihkorallnblock"
+  HORN_CORAL_FAN: "geweihkorallnfächa"
+  HORN_CORAL_WALL_FAN: "geweihkorallnwondfächa"
+  ICE: "eis"
+  INFESTED_CHISELED_STONE_BRICKS: "befoiene gmoaßlte stoaziagl"
+  INFESTED_COBBLESTONE: "befoiena bruchstoa"
+  INFESTED_CRACKED_STONE_BRICKS: "befoiene rissige stoaziagl"
+  INFESTED_DEEPSLATE: "befoiena tiafnschiefa"
+  INFESTED_MOSSY_STONE_BRICKS: "befoiene bemooste stoaziagl"
+  INFESTED_STONE: "befoiena stoa"
+  INFESTED_STONE_BRICKS: "befoiene stoaziagl"
+  IRON_BARS: "eisngitta"
+  IRON_BLOCK: "eisnblock"
+  IRON_DOOR: "eisntir"
+  IRON_ORE: "eisnerz"
+  IRON_TRAPDOOR: "eisnfoitir"
+  JACK_O_LANTERN: "kürbislatern"
+  JIGSAW: "vabundblock"
+  JUKEBOX: "plottnspiela"
+  JUNGLE_BUTTON: "tropnhoizknopf"
+  JUNGLE_DOOR: "tropnhoiztir"
+  JUNGLE_FENCE: "tropnhoizzaun"
+  JUNGLE_FENCE_GATE: "tropnhoizzauntor"
+  JUNGLE_HANGING_SIGN: "tropnhoizhängeschüd"
+  JUNGLE_LEAVES: "tropnbamlab"
+  JUNGLE_LOG: "tropnbamstomm"
+  JUNGLE_PLANKS: "tropnhoizbrettl"
+  JUNGLE_PRESSURE_PLATE: "tropnhoizdruckplottn"
+  JUNGLE_SAPLING: "tropnbamsetzling"
+  JUNGLE_SIGN: "dschunglhoizschüd"
+  JUNGLE_SLAB: "tropnhoizstufn"
+  JUNGLE_STAIRS: "tropnhoiztreppn"
+  JUNGLE_TRAPDOOR: "tropnhoizfoitir"
+  JUNGLE_WALL_HANGING_SIGN: "tropnhoizwondhängeschüd"
+  JUNGLE_WALL_SIGN: "dschunglhoizwondschüd"
+  JUNGLE_WOOD: "tropnhoiz"
+  KELP: "seetong"
+  KELP_PLANT: "seetongpflonzn"
+  LADDER: "leita"
+  LANTERN: "latern"
+  LAPIS_BLOCK: "lapislazuliblock"
+  LAPIS_ORE: "lapislazulierz"
+  LARGE_AMETHYST_BUD: "große amethystknospn"
+  LARGE_FERN: "großa farn"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lavakessl"
+  LECTERN: "lesepuit"
+  LEVER: "schoita"
+  LIGHT: "liacht"
+  LIGHT_BLUE_BANNER: "hellblaus banna"
+  LIGHT_BLUE_BED: "hellblaus bett"
+  LIGHT_BLUE_CANDLE: "hellbaue kerzn"
+  LIGHT_BLUE_CANDLE_CAKE: "kuchn mit hellblaua kerzn"
+  LIGHT_BLUE_CARPET: "hellblaua teppich"
+  LIGHT_BLUE_CONCRETE: "hellblaua beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "hellblaua trocknbeton"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "hellblau glosiate keramik"
+  LIGHT_BLUE_SHULKER_BOX: "hellblaue shulkerkistn"
+  LIGHT_BLUE_STAINED_GLASS: "hellblaus glos"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "hellblaue glosscheibn"
+  LIGHT_BLUE_TERRACOTTA: "hellblaue keramik"
+  LIGHT_BLUE_WOOL: "hellblaue woin"
+  LIGHT_GRAY_BANNER: "hellgraus banna"
+  LIGHT_GRAY_BED: "hellgraus bett"
+  LIGHT_GRAY_CANDLE: "hellgraue kerzn"
+  LIGHT_GRAY_CANDLE_CAKE: "kuchn mit hellgraua kerzn"
+  LIGHT_GRAY_CARPET: "hellgraua teppich"
+  LIGHT_GRAY_CONCRETE: "hellgraua beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "hellgraua trocknbeton"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "hellgrau glosiate keramik"
+  LIGHT_GRAY_SHULKER_BOX: "hellgraue shulkerkistn"
+  LIGHT_GRAY_STAINED_GLASS: "hellgraus glos"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "hellgraue glosscheibn"
+  LIGHT_GRAY_TERRACOTTA: "hellgraue keramik"
+  LIGHT_GRAY_WOOL: "hellgraue woin"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "feinwägeplottn"
+  LIGHTNING_ROD: "blitzobleita"
+  LILAC: "flieda"
+  LILY_OF_THE_VALLEY: "maiglöckchen"
+  LILY_PAD: "seerosn"
+  LIME_BANNER: "hellgrüns banna"
+  LIME_BED: "hellgrüns bett"
+  LIME_CANDLE: "hellgrüne kerzn"
+  LIME_CANDLE_CAKE: "kuchn mit hellgrüna kerzn"
+  LIME_CARPET: "hellgrüna teppich"
+  LIME_CONCRETE: "hellgrüna beton"
+  LIME_CONCRETE_POWDER: "hellgrüna trocknbeton"
+  LIME_GLAZED_TERRACOTTA: "hellgrün glosiate keramik"
+  LIME_SHULKER_BOX: "hellgrüne shulkerkistn"
+  LIME_STAINED_GLASS: "hellgrüns glos"
+  LIME_STAINED_GLASS_PANE: "hellgrüne glosscheibn"
+  LIME_TERRACOTTA: "hellgrüne keramik"
+  LIME_WOOL: "hellgrüne woin"
+  LODESTONE: "leitstoa"
+  LOOM: "webstui"
+  MAGENTA_BANNER: "magentas banna"
+  MAGENTA_BED: "magentas bett"
+  MAGENTA_CANDLE: "magenta kerzn"
+  MAGENTA_CANDLE_CAKE: "kuchn mit magenta kerzn"
+  MAGENTA_CARPET: "magentana teppich"
+  MAGENTA_CONCRETE: "magentana beton"
+  MAGENTA_CONCRETE_POWDER: "magentana trocknbeton"
+  MAGENTA_GLAZED_TERRACOTTA: "magenta glosiate keramik"
+  MAGENTA_SHULKER_BOX: "magentane shulkerkistn"
+  MAGENTA_STAINED_GLASS: "magentas glos"
+  MAGENTA_STAINED_GLASS_PANE: "magentane glosscheibn"
+  MAGENTA_TERRACOTTA: "magentane keramik"
+  MAGENTA_WOOL: "magentane woin"
+  MAGMA_BLOCK: "magmablock"
+  MANGROVE_BUTTON: "mangrovnhoizknopf"
+  MANGROVE_DOOR: "mangrovnhoiztir"
+  MANGROVE_FENCE: "mangrovnhoizzaun"
+  MANGROVE_FENCE_GATE: "mangrovnhoizzauntor"
+  MANGROVE_HANGING_SIGN: "mangrovnhoizhängeschüd"
+  MANGROVE_LEAVES: "mangrovnlab"
+  MANGROVE_LOG: "mangrovnstomm"
+  MANGROVE_PLANKS: "mangrovnhoizbrettl"
+  MANGROVE_PRESSURE_PLATE: "mangrovnhoizdruckplottn"
+  MANGROVE_PROPAGULE: "mangrovn-keimling"
+  MANGROVE_ROOTS: "mangrovnwurzln"
+  MANGROVE_SIGN: "mangrovnhoizschüd"
+  MANGROVE_SLAB: "mangrovnhoizstufn"
+  MANGROVE_STAIRS: "mangrovnhoiztreppn"
+  MANGROVE_TRAPDOOR: "mangrovnhoizfoitir"
+  MANGROVE_WALL_HANGING_SIGN: "mangrovnhoizwondhängeschüd"
+  MANGROVE_WALL_SIGN: "mangrovnhoizwondschüd"
+  MANGROVE_WOOD: "mangrovnhoiz"
+  MEDIUM_AMETHYST_BUD: "mittlare amethystknospn"
+  MELON: "melone"
+  MELON_STEM: "melonenpflonzn"
+  MOSS_BLOCK: "moosblock"
+  MOSS_CARPET: "moosteppich"
+  MOSSY_COBBLESTONE: "bemoosta bruchstoa"
+  MOSSY_COBBLESTONE_SLAB: "bemooste bruchstoastufn"
+  MOSSY_COBBLESTONE_STAIRS: "bemooste bruchstoatreppn"
+  MOSSY_COBBLESTONE_WALL: "bemooste bruchstoamaua"
+  MOSSY_STONE_BRICK_SLAB: "bemooste stoaziaglstufn"
+  MOSSY_STONE_BRICK_STAIRS: "bemooste stoaziagltreppn"
+  MOSSY_STONE_BRICK_WALL: "bemooste bruchstoamaua"
+  MOSSY_STONE_BRICKS: "bemooste stoaziagl"
+  MOVING_PISTON: "bewegta block"
+  MUD: "schlomm"
+  MUD_BRICK_SLAB: "schlommige ziaglstufn"
+  MUD_BRICK_STAIRS: "schlommige ziagltreppn"
+  MUD_BRICK_WALL: "schlommige ziaglmaua"
+  MUD_BRICKS: "schlommige ziagl"
+  MUDDY_MANGROVE_ROOTS: "schlommige mangrovnwurzln"
+  MUSHROOM_STEM: "püzstengl"
+  MYCELIUM: "myzel"
+  NETHER_BRICK_FENCE: "netherziaglzaun"
+  NETHER_BRICK_SLAB: "netherziaglstufn"
+  NETHER_BRICK_STAIRS: "netherziagltreppn"
+  NETHER_BRICK_WALL: "netherziaglmaua"
+  NETHER_BRICKS: "netherziagl"
+  NETHER_GOLD_ORE: "nethergoiderz"
+  NETHER_PORTAL: "netherportal"
+  NETHER_QUARTZ_ORE: "netherquarzerz"
+  NETHER_SPROUTS: "nether-spross"
+  NETHER_WART: "netherwarzn"
+  NETHER_WART_BLOCK: "netherwarznblock"
+  NETHERITE_BLOCK: "netheritblock"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "notnblock"
+  OAK_BUTTON: "oachnhoizknopf"
+  OAK_DOOR: "oachnhoiztir"
+  OAK_FENCE: "oachnhoizzaun"
+  OAK_FENCE_GATE: "oachnhoizzauntor"
+  OAK_HANGING_SIGN: "oachnhoizhängeschüd"
+  OAK_LEAVES: "oachnlab"
+  OAK_LOG: "oachnstomm"
+  OAK_PLANKS: "oachnhoizbrettl"
+  OAK_PRESSURE_PLATE: "oachnhoizdruckplottn"
+  OAK_SAPLING: "oachnsetzling"
+  OAK_SIGN: "oachnhoizschüd"
+  OAK_SLAB: "oachnhoizstufn"
+  OAK_STAIRS: "oachnhoiztreppn"
+  OAK_TRAPDOOR: "oachnhoizfoitir"
+  OAK_WALL_HANGING_SIGN: "oachnhoizwondhängeschüd"
+  OAK_WALL_SIGN: "oachnhoizwondschüd"
+  OAK_WOOD: "oachnhoiz"
+  OBSERVER: "beobochta"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "ockans froschliacht"
+  OMINOUS_BANNER: "ominösas banna"
+  ORANGE_BANNER: "orangs banna"
+  ORANGE_BED: "orangs bett"
+  ORANGE_CANDLE: "orange kerzn"
+  ORANGE_CANDLE_CAKE: "kuchn mit oranga kerzn"
+  ORANGE_CARPET: "oranga teppich"
+  ORANGE_CONCRETE: "oranga beton"
+  ORANGE_CONCRETE_POWDER: "oranga trocknbeton"
+  ORANGE_GLAZED_TERRACOTTA: "orange glosiate keramik"
+  ORANGE_SHULKER_BOX: "orange shulkerkistn"
+  ORANGE_STAINED_GLASS: "orangs glos"
+  ORANGE_STAINED_GLASS_PANE: "orange glosscheibn"
+  ORANGE_TERRACOTTA: "orange keramik"
+  ORANGE_TULIP: "orange tulpn"
+  ORANGE_WOOL: "orange woin"
+  OXEYE_DAISY: "margerite"
+  OXIDIZED_CHISELED_COPPER: "varrosteta gmoaßlta kupfablock"
+  OXIDIZED_COPPER: "varrosteta kupfablock"
+  OXIDIZED_COPPER_BULB: "varrostete kupfalompn"
+  OXIDIZED_COPPER_DOOR: "varrostete kupfatir"
+  OXIDIZED_COPPER_GRATE: "varrosteta kupfarost"
+  OXIDIZED_COPPER_TRAPDOOR: "varrostete kupfafoitir"
+  OXIDIZED_CUT_COPPER: "varrosteta gschnittena kupfablock"
+  OXIDIZED_CUT_COPPER_SLAB: "varrostete gschnittene kupfastufn"
+  OXIDIZED_CUT_COPPER_STAIRS: "varrostete gschnittene kupfatreppn"
+  PACKED_ICE: "pockeis"
+  PACKED_MUD: "festa schlomm"
+  PEARLESCENT_FROGLIGHT: "perlmuttans froschliacht"
+  PEONY: "pfingstrosn"
+  PETRIFIED_OAK_SLAB: "vasteinate oachnhoizstufn"
+  PIGLIN_HEAD: "piglinkopf"
+  PIGLIN_WALL_HEAD: "piglin-wandkopf"
+  PINK_BANNER: "rosas banna"
+  PINK_BED: "rosas bett"
+  PINK_CANDLE: "rosane kerzn"
+  PINK_CANDLE_CAKE: "kuchn mit rosa kerzn"
+  PINK_CARPET: "rosana teppich"
+  PINK_CONCRETE: "rosana beton"
+  PINK_CONCRETE_POWDER: "rosana trocknbeton"
+  PINK_GLAZED_TERRACOTTA: "rosa glosiate keramik"
+  PINK_PETALS: "rosane bliatnblötta"
+  PINK_SHULKER_BOX: "rosane shulkerkistn"
+  PINK_STAINED_GLASS: "rosas glos"
+  PINK_STAINED_GLASS_PANE: "rosane glosscheibn"
+  PINK_TERRACOTTA: "rosane keramik"
+  PINK_TULIP: "rosane tulpn"
+  PINK_WOOL: "rosane woin"
+  PISTON: "kolbn"
+  PISTON_HEAD: "kolbnkopf"
+  PITCHER_CROP: "konnenpflonznkapsl"
+  PITCHER_PLANT: "konnenpflonzn"
+  PLAYER_HEAD: "spielakopf"
+  PLAYER_HEAD_NAMED: "kopf von %s"
+  PLAYER_WALL_HEAD: "spiela-wondkopf"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "spitza tropfstoa"
+  POLISHED_ANDESITE: "poliata andesit"
+  POLISHED_ANDESITE_SLAB: "poliate andesitstufn"
+  POLISHED_ANDESITE_STAIRS: "poliate andesittreppn"
+  POLISHED_BASALT: "poliata basalt"
+  POLISHED_BLACKSTONE: "poliata schworzstoa"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "poliate schworzstoaziaglstufn"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "poliate schworzstoaziagltreppn"
+  POLISHED_BLACKSTONE_BRICK_WALL: "poliate schworzstoaziaglmaua"
+  POLISHED_BLACKSTONE_BRICKS: "poliata schworzstoaziagl"
+  POLISHED_BLACKSTONE_BUTTON: "poliata schworzstoaknopf"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "poliate schworzstoadruckplottn"
+  POLISHED_BLACKSTONE_SLAB: "poliate schworzstoastufn"
+  POLISHED_BLACKSTONE_STAIRS: "poliate schworzstoatreppn"
+  POLISHED_BLACKSTONE_WALL: "poliate schworzstoamaua"
+  POLISHED_DEEPSLATE: "poliata tiafnschiefa"
+  POLISHED_DEEPSLATE_SLAB: "poliate tiafnschiefastufn"
+  POLISHED_DEEPSLATE_STAIRS: "poliate tiafnschiefatreppn"
+  POLISHED_DEEPSLATE_WALL: "poliate tiafnschiefamaua"
+  POLISHED_DIORITE: "poliata diorit"
+  POLISHED_DIORITE_SLAB: "poliate dioritstufn"
+  POLISHED_DIORITE_STAIRS: "poliate diorittreppn"
+  POLISHED_GRANITE: "poliata granit"
+  POLISHED_GRANITE_SLAB: "poliate granitstufn"
+  POLISHED_GRANITE_STAIRS: "poliate granittreppn"
+  POLISHED_TUFF: "polierta tuffstoa"
+  POLISHED_TUFF_SLAB: "polierte tuffstoastufn"
+  POLISHED_TUFF_STAIRS: "polierte tuffstoatreppn"
+  POLISHED_TUFF_WALL: "polierte tuffstoamaua"
+  POPPY: "mohn"
+  POTATOES: "kartoffe"
+  POTTED_ACACIA_SAPLING: "eingsetzter akaziensetzling"
+  POTTED_ALLIUM: "eingsetzta sternlauch"
+  POTTED_AZALEA_BUSH: "eingsetzte azalee"
+  POTTED_AZURE_BLUET: "eingsetztes porzellansternchen"
+  POTTED_BAMBOO: "eingsetzta bambus"
+  POTTED_BIRCH_SAPLING: "eingsetzta birknsetzling"
+  POTTED_BLUE_ORCHID: "eingsetzte blaue orchidee"
+  POTTED_BROWN_MUSHROOM: "eingsetzta brauna püz"
+  POTTED_CACTUS: "eingsetzta kaktus"
+  POTTED_CHERRY_SAPLING: "eingsetza kirschnsetzling"
+  POTTED_CORNFLOWER: "eingsetzte kornblume"
+  POTTED_CRIMSON_FUNGUS: "eingsetzta karmesinpüz"
+  POTTED_CRIMSON_ROOTS: "eingsetzte karmesinwurzln"
+  POTTED_DANDELION: "eingsetzta löwenzohn"
+  POTTED_DARK_OAK_SAPLING: "eingsetzta schworzoachnsetzling"
+  POTTED_DEAD_BUSH: "eingsetzta austrockneta busch"
+  POTTED_FERN: "eingsetzta farn"
+  POTTED_FLOWERING_AZALEA_BUSH: "eingsetzte bliande azalee"
+  POTTED_JUNGLE_SAPLING: "eingsetzta tropnbamsetzling"
+  POTTED_LILY_OF_THE_VALLEY: "eingsetztes maiglöckchen"
+  POTTED_MANGROVE_PROPAGULE: "eingsetzta mangrovn-keimling"
+  POTTED_OAK_SAPLING: "eingsetzta oachnsetzling"
+  POTTED_ORANGE_TULIP: "eingsetzte orange tulpn"
+  POTTED_OXEYE_DAISY: "eingsetzte magerite"
+  POTTED_PINK_TULIP: "eingsetzte rosane tulpn"
+  POTTED_POPPY: "eingsetzta mohn"
+  POTTED_RED_MUSHROOM: "eingsetzta rota püz"
+  POTTED_RED_TULIP: "eingsetzte rote tulpn"
+  POTTED_SPRUCE_SAPLING: "eingsetzta fichtnsetzling"
+  POTTED_TORCHFLOWER: "eingsetze focklblume"
+  POTTED_WARPED_FUNGUS: "eingsetzta wirrpüz"
+  POTTED_WARPED_ROOTS: "eingsetzte wirrwurzln"
+  POTTED_WHITE_TULIP: "eingsetzte weiße tulpn"
+  POTTED_WITHER_ROSE: "eingsetzte witherrosn"
+  POWDER_SNOW: "puivaschnee"
+  POWDER_SNOW_CAULDRON: "puivaschneekessl"
+  POWERED_RAIL: "ontriebsschiene"
+  PRISMARINE: "prismarin"
+  PRISMARINE_BRICK_SLAB: "prismarinziaglstufn"
+  PRISMARINE_BRICK_STAIRS: "prismarinziagltreppn"
+  PRISMARINE_BRICKS: "prismarinziagl"
+  PRISMARINE_SLAB: "prismarinstufn"
+  PRISMARINE_STAIRS: "prismarintreppn"
+  PRISMARINE_WALL: "prismarinmaua"
+  PUMPKIN: "kürbis"
+  PUMPKIN_STEM: "kürbispflonzn"
+  PURPLE_BANNER: "lilas banna"
+  PURPLE_BED: "lilas bett"
+  PURPLE_CANDLE: "lilane kerzn"
+  PURPLE_CANDLE_CAKE: "kuchn mit lila kerzn"
+  PURPLE_CARPET: "lilana teppich"
+  PURPLE_CONCRETE: "lilana beton"
+  PURPLE_CONCRETE_POWDER: "lilana trocknbeton"
+  PURPLE_GLAZED_TERRACOTTA: "lila glosiate keramik"
+  PURPLE_SHULKER_BOX: "lilane shulkerkistn"
+  PURPLE_STAINED_GLASS: "lilas glos"
+  PURPLE_STAINED_GLASS_PANE: "lilane glosscheibn"
+  PURPLE_TERRACOTTA: "lilane keramik"
+  PURPLE_WOOL: "lilane woin"
+  PURPUR_BLOCK: "purpurblock"
+  PURPUR_PILLAR: "purpursäule"
+  PURPUR_SLAB: "purpurstufn"
+  PURPUR_STAIRS: "purpurtreppn"
+  QUARTZ_BLOCK: "quarzblock"
+  QUARTZ_BRICKS: "quarzziagl"
+  QUARTZ_PILLAR: "quarzsäule"
+  QUARTZ_SLAB: "quarzstufn"
+  QUARTZ_STAIRS: "quarztreppn"
+  RAIL: "schiene"
+  RAW_COPPER_BLOCK: "rohkupfablock"
+  RAW_GOLD_BLOCK: "rohgoidblock"
+  RAW_IRON_BLOCK: "roheisnblock"
+  RED_BANNER: "rots banna"
+  RED_BED: "rots bett"
+  RED_CANDLE: "rote kerzn"
+  RED_CANDLE_CAKE: "kuchn mit rota kerzn"
+  RED_CARPET: "rota teppich"
+  RED_CONCRETE: "rota beton"
+  RED_CONCRETE_POWDER: "rota trocknbeton"
+  RED_GLAZED_TERRACOTTA: "rot glosiate keramik"
+  RED_MUSHROOM: "rota püz"
+  RED_MUSHROOM_BLOCK: "rota püzblock"
+  RED_NETHER_BRICK_SLAB: "rote netherziaglstufn"
+  RED_NETHER_BRICK_STAIRS: "rote netherziagltreppn"
+  RED_NETHER_BRICK_WALL: "rote netherziaglmaua"
+  RED_NETHER_BRICKS: "rote netherziagl"
+  RED_SAND: "rota sond"
+  RED_SANDSTONE: "rota sondstoa"
+  RED_SANDSTONE_SLAB: "rote sondstoastufn"
+  RED_SANDSTONE_STAIRS: "rote sondstoatreppn"
+  RED_SANDSTONE_WALL: "rote sondstoamaua"
+  RED_SHULKER_BOX: "rote shulkerkistn"
+  RED_STAINED_GLASS: "rots glos"
+  RED_STAINED_GLASS_PANE: "rote glosscheibn"
+  RED_TERRACOTTA: "rote keramik"
+  RED_TULIP: "rote tulpn"
+  RED_WOOL: "rote woin"
+  REDSTONE_BLOCK: "redstone-block"
+  REDSTONE_LAMP: "redstone-lompn"
+  REDSTONE_ORE: "redstoneerz"
+  REDSTONE_TORCH: "redstone-fockl"
+  REDSTONE_WALL_TORCH: "redstone-wondfockl"
+  REDSTONE_WIRE: "redstone-droht"
+  REINFORCED_DEEPSLATE: "vastärkta tiafnschiefa"
+  REPEATER: "redstone-vastärka"
+  REPEATING_COMMAND_BLOCK: "wiedahoi-befehlsblock"
+  RESPAWN_ANCHOR: "wiedereinstiegsanker"
+  ROOTED_DIRT: "wurzlerde"
+  ROSE_BUSH: "rosnstrauch"
+  SAND: "sond"
+  SANDSTONE: "sondstoa"
+  SANDSTONE_SLAB: "sondstoastufn"
+  SANDSTONE_STAIRS: "sondstoatreppn"
+  SANDSTONE_WALL: "sondstoamaua"
+  SCAFFOLDING: "grüst"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk-katalysatoa"
+  SCULK_SENSOR: "sculk-sensor"
+  SCULK_SHRIEKER: "sculk-kreischa"
+  SCULK_VEIN: "sculk-åda"
+  SEA_LANTERN: "seelatern"
+  SEA_PICKLE: "meeresgurkn"
+  SEAGRASS: "seegros"
+  SET_SPAWN: "wiedaeistiegspunkt gsetzt"
+  SHORT_GRASS: "niedriges gras"
+  SHROOMLIGHT: "pilzlicht"
+  SHULKER_BOX: "shulkerkistn"
+  SKELETON_SKULL: "skelettschädl"
+  SKELETON_WALL_SKULL: "skelett-wondschädl"
+  SLIME_BLOCK: "schleimblock"
+  SMALL_AMETHYST_BUD: "kloane amethystknospn"
+  SMALL_DRIPLEAF: "kleines tropfblatt"
+  SMITHING_TABLE: "schmiedtisch"
+  SMOKER: "räucherofn"
+  SMOOTH_BASALT: "glotta basalt"
+  SMOOTH_QUARTZ: "glotta quarzblock"
+  SMOOTH_QUARTZ_SLAB: "glotte quarzstufn"
+  SMOOTH_QUARTZ_STAIRS: "glotte quarztreppn"
+  SMOOTH_RED_SANDSTONE: "glotta rota sondstoa"
+  SMOOTH_RED_SANDSTONE_SLAB: "glotte rote stondstoastufn"
+  SMOOTH_RED_SANDSTONE_STAIRS: "glotte rote stondstoatreppn"
+  SMOOTH_SANDSTONE: "glotta sondstoa"
+  SMOOTH_SANDSTONE_SLAB: "glotte sondstoastufn"
+  SMOOTH_SANDSTONE_STAIRS: "glotte sondstoatreppn"
+  SMOOTH_STONE: "glotta stoa"
+  SMOOTH_STONE_SLAB: "glotte stoastufn"
+  SNIFFER_EGG: "schnüffla-ei"
+  SNOW: "schnee"
+  SNOW_BLOCK: "schneeblock"
+  SOUL_CAMPFIRE: "seelnlogafeia"
+  SOUL_FIRE: "seelnfeia"
+  SOUL_LANTERN: "seelnlatern"
+  SOUL_SAND: "seelnsond"
+  SOUL_SOIL: "seelnerdn"
+  SOUL_TORCH: "seelenfockl"
+  SOUL_WALL_TORCH: "seelenwondfockl"
+  SPAWN_NOT_VALID: "du host koa bett und koan aufglodenen seelnonker oda dei wiedaeistiegspunkt is blockiert woan."
+  SPAWNER: "monsta spawner"
+  SPAWNER_DESC1: "mit spawn-ei interagieren:"
+  SPAWNER_DESC2: "setzt den mob-typ"
+  SPONGE: "schwomm"
+  SPORE_BLOSSOM: "sporenblüte"
+  SPRUCE_BUTTON: "fichtnhoizknopf"
+  SPRUCE_DOOR: "fichtnhoiztir"
+  SPRUCE_FENCE: "fichtnhoizzaun"
+  SPRUCE_FENCE_GATE: "fichtnhoizzauntor"
+  SPRUCE_HANGING_SIGN: "fichtnhängeschüd"
+  SPRUCE_LEAVES: "fichtnnodln"
+  SPRUCE_LOG: "fichtnstomm"
+  SPRUCE_PLANKS: "fichtnhoizbrettl"
+  SPRUCE_PRESSURE_PLATE: "fichtnhoizdruckplottn"
+  SPRUCE_SAPLING: "fichtnsetzling"
+  SPRUCE_SIGN: "fichtnhoizschüd"
+  SPRUCE_SLAB: "fichtnhoizstufn"
+  SPRUCE_STAIRS: "fichtnhoiztreppn"
+  SPRUCE_TRAPDOOR: "fichtnhoizfoitir"
+  SPRUCE_WALL_HANGING_SIGN: "fichtnwondhängeschüd"
+  SPRUCE_WALL_SIGN: "fichtnhoizwondschüd"
+  SPRUCE_WOOD: "fichtnhoiz"
+  STICKY_PISTON: "pickiga kolbn"
+  STONE: "stoa"
+  STONE_BRICK_SLAB: "stoaziaglstufn"
+  STONE_BRICK_STAIRS: "stoaziagltreppn"
+  STONE_BRICK_WALL: "stoaziaglmaua"
+  STONE_BRICKS: "stoaziagl"
+  STONE_BUTTON: "stoaknopf"
+  STONE_PRESSURE_PLATE: "stoadruckplottn"
+  STONE_SLAB: "stoastufn"
+  STONE_STAIRS: "stoatreppn"
+  STONECUTTER: "stoasog"
+  STRIPPED_ACACIA_LOG: "entrindeta akazienstomm"
+  STRIPPED_ACACIA_WOOD: "entrindets akazienhoiz"
+  STRIPPED_BAMBOO_BLOCK: "entrindeta bambusblock"
+  STRIPPED_BIRCH_LOG: "entrindeta birknstomm"
+  STRIPPED_BIRCH_WOOD: "entrindets birknhoiz"
+  STRIPPED_CHERRY_LOG: "entrindeta kirschnstomm"
+  STRIPPED_CHERRY_WOOD: "entrindets kirschnhoiz"
+  STRIPPED_CRIMSON_HYPHAE: "entrindete karmesinhyphn"
+  STRIPPED_CRIMSON_STEM: "entrindeta karmesinstomm"
+  STRIPPED_DARK_OAK_LOG: "entrindeta schworzoachnstomm"
+  STRIPPED_DARK_OAK_WOOD: "entrindets schworzoachnhoiz"
+  STRIPPED_JUNGLE_LOG: "entrindeta tropnstomm"
+  STRIPPED_JUNGLE_WOOD: "entrindets tropnhoiz"
+  STRIPPED_MANGROVE_LOG: "entrindeta mangrovnstomm"
+  STRIPPED_MANGROVE_WOOD: "entrindets mangrovnhoiz"
+  STRIPPED_OAK_LOG: "entrindeta oachnstomm"
+  STRIPPED_OAK_WOOD: "entrindetes schworzoichenholz"
+  STRIPPED_SPRUCE_LOG: "entrindeta fichtnstomm"
+  STRIPPED_SPRUCE_WOOD: "entrindets fichtnhoiz"
+  STRIPPED_WARPED_HYPHAE: "entrindete wirrhyphn"
+  STRIPPED_WARPED_STEM: "entrindeta wirrstomm"
+  STRUCTURE_BLOCK: "konstruktionsblock"
+  STRUCTURE_VOID: "konstruktionsleere"
+  SUGAR_CANE: "zuggarohr"
+  SUNFLOWER: "sonnenblume"
+  SUSPICIOUS_GRAVEL: "vadächtiga kies"
+  SUSPICIOUS_SAND: "soltsomer sond"
+  SWEET_BERRY_BUSH: "süßbeernstrauch"
+  TALL_GRASS: "hochs gros"
+  TALL_SEAGRASS: "hochs seegros"
+  TARGET: "züscheibnblock"
+  TERRACOTTA: "keramik"
+  TINTED_GLASS: "getönts glos"
+  TNT: "tnt"
+  TORCH: "fockl"
+  TORCHFLOWER: "focklblume"
+  TORCHFLOWER_CROP: "focklblumensomen"
+  TRAPPED_CHEST: "redstonekistn"
+  TRIAL_SPAWNER: "prüfungs-spawner"
+  TRIPWIRE: "stoipadroht"
+  TRIPWIRE_HOOK: "hokn"
+  TUBE_CORAL: "orglkoralln"
+  TUBE_CORAL_BLOCK: "orglkorallnblock"
+  TUBE_CORAL_FAN: "orglkorallnfächa"
+  TUBE_CORAL_WALL_FAN: "orglkorallnwondfächa"
+  TUFF: "tuffstoa"
+  TUFF_BRICK_SLAB: "tuffstoaziaglstufn"
+  TUFF_BRICK_STAIRS: "tuffstoaziegltreppn"
+  TUFF_BRICK_WALL: "tuffstoaziaglmaua"
+  TUFF_BRICKS: "tuffstoaziagl"
+  TUFF_SLAB: "tuffstoastufn"
+  TUFF_STAIRS: "tuffstoatreppn"
+  TUFF_WALL: "tuffstoamaua"
+  TURTLE_EGG: "schüdkrötnei"
+  TWISTING_VINES: "zwirbllianen"
+  TWISTING_VINES_PLANT: "zwirbllianenpflonz"
+  VERDANT_FROGLIGHT: "junggrüns froschliacht"
+  VINE: "lianen"
+  VOID_AIR: "leernluft"
+  WALL_TORCH: "wondfockl"
+  WARPED_BUTTON: "wirrknopf"
+  WARPED_DOOR: "wirrtir"
+  WARPED_FENCE: "wirrzaun"
+  WARPED_FENCE_GATE: "wirrzauntor"
+  WARPED_FUNGUS: "wirrpüz"
+  WARPED_HANGING_SIGN: "wirrhängeschüd"
+  WARPED_HYPHAE: "wirrhyphn"
+  WARPED_NYLIUM: "wirrnetzl"
+  WARPED_PLANKS: "wirrbrettl"
+  WARPED_PRESSURE_PLATE: "wirrdruckplottn"
+  WARPED_ROOTS: "wirrwurzln"
+  WARPED_SIGN: "wirrschüd"
+  WARPED_SLAB: "wirrstufn"
+  WARPED_STAIRS: "wirrtreppn"
+  WARPED_STEM: "wirrstomm"
+  WARPED_TRAPDOOR: "wirrfoitir"
+  WARPED_WALL_HANGING_SIGN: "wirrwondhängeschüd"
+  WARPED_WALL_SIGN: "wirrwondschüd"
+  WARPED_WART_BLOCK: "wirrwarznblock"
+  WATER: "wossa"
+  WATER_CAULDRON: "wossakessl"
+  WAXED_CHISELED_COPPER: "gwochsta gmoaßlta kupfablock"
+  WAXED_COPPER_BLOCK: "gwochsta kupfablock"
+  WAXED_COPPER_BULB: "gwochste kupfalompn"
+  WAXED_COPPER_DOOR: "gwochste kupfatir"
+  WAXED_COPPER_GRATE: "gwochsta kupfarost"
+  WAXED_COPPER_TRAPDOOR: "gwochste kupfafoitir"
+  WAXED_CUT_COPPER: "gwochsta gschnittena kupfablock"
+  WAXED_CUT_COPPER_SLAB: "gwochste gschnittene kupfastufn"
+  WAXED_CUT_COPPER_STAIRS: "gwochste gschnittene kupfatreppn"
+  WAXED_EXPOSED_CHISELED_COPPER: "gwochsta ausgsetzta gmoaßlta kupfablock"
+  WAXED_EXPOSED_COPPER: "gwochsta ausgsetzta kupfablock"
+  WAXED_EXPOSED_COPPER_BULB: "gwochste ausgsetzte kupfalompn"
+  WAXED_EXPOSED_COPPER_DOOR: "gwochste ausgsetzte kupfatir"
+  WAXED_EXPOSED_COPPER_GRATE: "gwochsta ausgsetzta kupfarost"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "gwochste ausgsetzte kupfafoitir"
+  WAXED_EXPOSED_CUT_COPPER: "gwochsta ausgsetzta gschnittena kupfablock"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "gwochste ausgsetzte gschnittene kupferstufn"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "gwochste ausgsetzte gschnittene kupfertreppn"
+  WAXED_OXIDIZED_CHISELED_COPPER: "gwochsta varrosteta gmoaßlta kupfablock"
+  WAXED_OXIDIZED_COPPER: "gwochsta varrosteta kupfablock"
+  WAXED_OXIDIZED_COPPER_BULB: "gwochste varrostete kupfalompn"
+  WAXED_OXIDIZED_COPPER_DOOR: "gwochste varrostete kupfatir"
+  WAXED_OXIDIZED_COPPER_GRATE: "gwochsta varrosteta kupfarost"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "gwochste varrostete kupfafoitir"
+  WAXED_OXIDIZED_CUT_COPPER: "gwochsta varrosteta gschnittena kupfablock"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "gwochste varrostete gschnittene kupfastufn"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "gwochste varrostete gschnittene kupfatreppn"
+  WAXED_WEATHERED_CHISELED_COPPER: "gwochsta vawittata gmoaßlta kupfablock"
+  WAXED_WEATHERED_COPPER: "gwochsta vawittata kupfablock"
+  WAXED_WEATHERED_COPPER_BULB: "gwochste vawittate kupfalompn"
+  WAXED_WEATHERED_COPPER_DOOR: "gwochste vawittate kupfatir"
+  WAXED_WEATHERED_COPPER_GRATE: "gwochsta vawittate kupfarost"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "gwochste vawittate kupfafoitir"
+  WAXED_WEATHERED_CUT_COPPER: "gwochsta vawittata gschnittena kupfablock"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "gwochste vawittate geschnittene kupfastufn"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "gwochste vawittate geschnittene kupfatreppn"
+  WEATHERED_CHISELED_COPPER: "vawittata gmoaßlta kupfablock"
+  WEATHERED_COPPER: "vawittata kupfablock"
+  WEATHERED_COPPER_BULB: "vawittate kupfalompn"
+  WEATHERED_COPPER_DOOR: "vawittate kupfatir"
+  WEATHERED_COPPER_GRATE: "vawittata kupfarost"
+  WEATHERED_COPPER_TRAPDOOR: "vawittate kupfafoitir"
+  WEATHERED_CUT_COPPER: "vawittata gschnittena kupfablock"
+  WEATHERED_CUT_COPPER_SLAB: "vawittate gschnittene kupfastufn"
+  WEATHERED_CUT_COPPER_STAIRS: "vawittate gschnittne kupfatreppn"
+  WEEPING_VINES: "trauerlianen"
+  WEEPING_VINES_PLANT: "trauerlinanenpflonz"
+  WET_SPONGE: "nossa schwomm"
+  WHEAT: "weiznpflonzn"
+  WHITE_BANNER: "weißs banna"
+  WHITE_BED: "weißs bett"
+  WHITE_CANDLE: "weiße kerzn"
+  WHITE_CANDLE_CAKE: "kuchn mit weißa kerzn"
+  WHITE_CARPET: "weißa teppich"
+  WHITE_CONCRETE: "weißa beton"
+  WHITE_CONCRETE_POWDER: "weißa trocknbeton"
+  WHITE_GLAZED_TERRACOTTA: "weiß glosiate keramik"
+  WHITE_SHULKER_BOX: "weiße shulkerkistn"
+  WHITE_STAINED_GLASS: "weißs glos"
+  WHITE_STAINED_GLASS_PANE: "weiße glosscheibn"
+  WHITE_TERRACOTTA: "weiße keramik"
+  WHITE_TULIP: "weiße tulpn"
+  WHITE_WOOL: "weiße woin"
+  WITHER_ROSE: "witherrosn"
+  WITHER_SKELETON_SKULL: "witherskelettschädl"
+  WITHER_SKELETON_WALL_SKULL: "witherskelett-wondschädl"
+  YELLOW_BANNER: "gelbs banna"
+  YELLOW_BED: "gelbs bett"
+  YELLOW_CANDLE: "gelbe kerzn"
+  YELLOW_CANDLE_CAKE: "kuchn mit gelba kerzn"
+  YELLOW_CARPET: "gelba teppich"
+  YELLOW_CONCRETE: "gelba beton"
+  YELLOW_CONCRETE_POWDER: "gelba trocknbeton"
+  YELLOW_GLAZED_TERRACOTTA: "gelb glosiate keramik"
+  YELLOW_SHULKER_BOX: "gelbe shulkerkistn"
+  YELLOW_STAINED_GLASS: "gelbs glos"
+  YELLOW_STAINED_GLASS_PANE: "gelbe glosscheibn"
+  YELLOW_TERRACOTTA: "gelbe keramik"
+  YELLOW_WOOL: "gelbe woin"
+  ZOMBIE_HEAD: "zombiekopf"
+  ZOMBIE_WALL_HEAD: "zombie-wondkopf"
+  ACACIA_BOAT: "akazienhoizboot"
+  ACACIA_CHEST_BOAT: "akazienhoizboot mit kistn"
+  ALLAY_SPAWN_EGG: "hüfsgeist-spawn-ei"
+  AMETHYST_SHARD: "amethystscherbn"
+  ANGLER_POTTERY_SHARD: "ongla-töpfascherbn"
+  ANGLER_POTTERY_SHERD: "ongla-töpfascherbn"
+  APPLE: "opfe"
+  ARCHER_POTTERY_SHARD: "schützn-töpfascherbn"
+  ARCHER_POTTERY_SHERD: "schützn-töpfascherbn"
+  ARMOR_STAND: "rüstungsstända"
+  ARMS_UP_POTTERY_SHARD: "gebärdn-töpfascherbn"
+  ARMS_UP_POTTERY_SHERD: "gebärdn-töpfascherbn"
+  ARROW: "pfeil"
+  AXOLOTL_BUCKET: "axolotlkiwe"
+  AXOLOTL_SPAWN_EGG: "axolotl-spawn-ei"
+  BAKED_POTATO: "ofnkartoffe"
+  BAMBOO_CHEST_RAFT: "bambusfloß mit kistn"
+  BAMBOO_RAFT: "bambusfloß"
+  BAT_SPAWN_EGG: "fledamaus-spawn-ei"
+  BEE_SPAWN_EGG: "bienen-spawn-ei"
+  BEEF: "ruachs rindfleisch"
+  BEETROOT: "rote bete"
+  BEETROOT_SEEDS: "rote-bete-somen"
+  BEETROOT_SOUP: "borschtsch"
+  BIRCH_BOAT: "birknhoizboot"
+  BIRCH_CHEST_BOAT: "birknhoizboot mit kistn"
+  BLACK_DYE: "schworze forb"
+  BLADE_POTTERY_SHARD: "klingen-töpfascherbn"
+  BLADE_POTTERY_SHERD: "klingen-töpfascherbn"
+  BLAZE_POWDER: "lohnstab"
+  BLAZE_ROD: "lohenrutn"
+  BLAZE_SPAWN_EGG: "lohen-spawn-ei"
+  BLUE_DYE: "blaue forb"
+  BONE: "knochn"
+  BONE_MEAL: "knochnmöh"
+  BOOK: "buach"
+  BOW: "bogn"
+  BOWL: "schissl"
+  BREAD: "brot"
+  BREEZE_SPAWN_EGG: "böen-spawn-ei"
+  BREWER_POTTERY_SHARD: "brauer-töpfascherbn"
+  BREWER_POTTERY_SHERD: "brauer-töpfascherbn"
+  BRICK: "ziagl"
+  BROWN_DYE: "braune forb"
+  BRUSH: "pinsl"
+  BUCKET: "kiwe"
+  BUNDLE: "sackerl"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "flommen-töpfascherbn"
+  BURN_POTTERY_SHERD: "flommen-töpfascherbn"
+  CAMEL_SPAWN_EGG: "kamel-spawn-ei"
+  CARROT: "karottn"
+  CARROT_ON_A_STICK: "karottnongl"
+  CAT_SPAWN_EGG: "kotz-spawn-ei"
+  CAVE_SPIDER_SPAWN_EGG: "höhlnspinn-spawn-ei"
+  CHAINMAIL_BOOTS: "kettnstiefe"
+  CHAINMAIL_CHESTPLATE: "kettnhemd"
+  CHAINMAIL_HELMET: "kettnhaubn"
+  CHAINMAIL_LEGGINGS: "kettnhosn"
+  CHARCOAL: "hoizkohle"
+  CHERRY_BOAT: "kirschnhoizboot"
+  CHERRY_CHEST_BOAT: "kirschnhoizboot mit kistn"
+  CHEST_MINECART: "wagon mit kistn"
+  CHICKEN: "ruachs hendl"
+  CHICKEN_SPAWN_EGG: "hendl-spawn-ei"
+  CHORUS_FRUIT: "chorusfrucht"
+  CLAY_BALL: "tonklumpen"
+  CLOCK: "uhr"
+  COAL: "kohle"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  COCOA_BEANS: "kakaobohnen"
+  COD: "ruacha kabeljau"
+  COD_BUCKET: "kabeljaukiwe"
+  COD_SPAWN_EGG: "kabeljau-spawn-ei"
+  COMMAND_BLOCK_MINECART: "wagon mit befehlsblock"
+  COMPASS: "kompass"
+  COOKED_BEEF: "steak"
+  COOKED_CHICKEN: "brotns hendl"
+  COOKED_COD: "brotna kabeljau"
+  COOKED_MUTTON: "brotns hommefleisch"
+  COOKED_PORKCHOP: "schweinsbrotn"
+  COOKED_RABBIT: "brotna hos"
+  COOKED_SALMON: "brotna lachs"
+  COOKIE: "keks"
+  COPPER_INGOT: "kupfaborrn"
+  COW_SPAWN_EGG: "kua-spawn-ei"
+  CREEPER_BANNER_PATTERN: "bannamusta"
+  CREEPER_BANNER_PATTERN_DESC: "creeper"
+  CREEPER_SPAWN_EGG: "creeper-spawn-ei"
+  CROSSBOW: "oambrust"
+  CROSSBOW_PROJECTILE: "gschoss:"
+  CYAN_DYE: "türkise forb"
+  DANGER_POTTERY_SHARD: "gfohrn-töpfascherbn"
+  DANGER_POTTERY_SHERD: "gfohrn-töpfascherbn"
+  DARK_OAK_BOAT: "schworzoachnhoizboot"
+  DARK_OAK_CHEST_BOAT: "schworzoachnhoizboot mit kistn"
+  DEBUG_STICK: "debug-stab"
+  DEBUG_STICK_EMPTY: "%s hot koane eignschoftn"
+  DEBUG_STICK_SELECT: "\"%s\" (%s) ausgwöhd"
+  DEBUG_STICK_UPDATE: "‚%s‘ is jetz %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "diamantoxt"
+  DIAMOND_BOOTS: "diamantstiefe"
+  DIAMOND_CHESTPLATE: "diamantbrustplottn"
+  DIAMOND_HELMET: "diamanthöm"
+  DIAMOND_HOE: "diamanthock"
+  DIAMOND_HORSE_ARMOR: "roßrüstung aus diamant"
+  DIAMOND_LEGGINGS: "diamanthaxnschutz"
+  DIAMOND_PICKAXE: "diamantspitzhock"
+  DIAMOND_SHOVEL: "diamantschaufe"
+  DIAMOND_SWORD: "diamantschwert"
+  DISC_FRAGMENT_5: "schoiplottnscherbe"
+  DISC_FRAGMENT_5_DESC: "schoiplottn - 5"
+  DOLPHIN_SPAWN_EGG: "delfin-spawn-ei"
+  DONKEY_SPAWN_EGG: "esl-spawn-ei"
+  DRAGON_BREATH: "drochnatem"
+  DRIED_KELP: "trockneta seetong"
+  DROWNED_SPAWN_EGG: "ertrunkena-spawn-ei"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  ECHO_SHARD: "echoscherbn"
+  EGG: "ei"
+  ELDER_GUARDIAN_SPAWN_EGG: "großa-wächta-spawn-ei"
+  ELYTRA: "elytren"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "vazaubats buach"
+  ENCHANTED_GOLDEN_APPLE: "vazaubata goidana opfe"
+  END_CRYSTAL: "enderkristall"
+  ENDER_DRAGON_SPAWN_EGG: "enderdrochn-spawn-ei"
+  ENDER_EYE: "enderaug"
+  ENDER_PEARL: "enderperle"
+  ENDERMAN_SPAWN_EGG: "enderman-spawn-ei"
+  ENDERMITE_SPAWN_EGG: "endermite-spawn-ei"
+  EVOKER_SPAWN_EGG: "magier-spawn-ei"
+  EXPERIENCE_BOTTLE: "erfohrungsflosch"
+  EXPLORER_POTTERY_SHARD: "entdecka-töpfascherbn"
+  EXPLORER_POTTERY_SHERD: "entdecka-töpfascherbn"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  FEATHER: "feda"
+  FERMENTED_SPIDER_EYE: "fermentiads spinnenaug"
+  FILLED_MAP: "kortn"
+  FIRE_CHARGE: "feiakugl"
+  FIREWORK_ROCKET: "feiawerksraketn"
+  FIREWORK_ROCKET_FLIGHT: "flugdaua:"
+  FIREWORK_STAR: "feiawerksstern"
+  FIREWORK_STAR_BLACK: "schworz"
+  FIREWORK_STAR_BLUE: "blau"
+  FIREWORK_STAR_BROWN: "braun"
+  FIREWORK_STAR_CUSTOM_COLOR: "benutzadefiniert"
+  FIREWORK_STAR_CYAN: "türkis"
+  FIREWORK_STAR_FADE_TO: "übagong zu"
+  FIREWORK_STAR_FLICKER: "funkln"
+  FIREWORK_STAR_GRAY: "grau"
+  FIREWORK_STAR_GREEN: "grün"
+  FIREWORK_STAR_LIGHT_BLUE: "hellblau"
+  FIREWORK_STAR_LIGHT_GRAY: "hellgrau"
+  FIREWORK_STAR_LIME: "hellgrün"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "orange"
+  FIREWORK_STAR_PINK: "rosa"
+  FIREWORK_STAR_PURPLE: "lila"
+  FIREWORK_STAR_RED: "rot"
+  FIREWORK_STAR_SHAPE: "unbekonnte form"
+  FIREWORK_STAR_SHAPE_BURST: "explosion"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperförmig"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "große kugl"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "kloane kugl"
+  FIREWORK_STAR_SHAPE_STAR: "sternförmig"
+  FIREWORK_STAR_TRAIL: "schwoaf"
+  FIREWORK_STAR_WHITE: "weiß"
+  FIREWORK_STAR_YELLOW: "gelb"
+  FISHING_ROD: "ongl"
+  FLINT: "feiastoa"
+  FLINT_AND_STEEL: "feiazeig"
+  FLOWER_BANNER_PATTERN: "bannamusta"
+  FLOWER_BANNER_PATTERN_DESC: "blume"
+  FOX_SPAWN_EGG: "fux-spawn-ei"
+  FRIEND_POTTERY_SHARD: "freind-töpfascherbn"
+  FRIEND_POTTERY_SHERD: "freind-töpfascherbn"
+  FROG_SPAWN_EGG: "frosch-spawn-ei"
+  FURNACE_MINECART: "wagon mit ofn"
+  GHAST_SPAWN_EGG: "ghast-spawn-ei"
+  GHAST_TEAR: "ghastträne"
+  GLASS_BOTTLE: "glosflosch"
+  GLISTERING_MELON_SLICE: "glitzande melonenscheibn"
+  GLOBE_BANNER_PATTERN: "bannamusta"
+  GLOBE_BANNER_PATTERN_DESC: "globus"
+  GLOW_BERRIES: "leichtbeern"
+  GLOW_INK_SAC: "leichttintnbeitl"
+  GLOW_ITEM_FRAME: "leichtrohmen"
+  GLOW_SQUID_SPAWN_EGG: "leichttintnfisch-spawn-ei"
+  GLOWSTONE_DUST: "leichtstoastab"
+  GOAT_HORN: "goaßhorn"
+  GOAT_SPAWN_EGG: "goaß-spawn-ei"
+  GOLD_INGOT: "goidborrn"
+  GOLD_NUGGET: "goidklumpn"
+  GOLDEN_APPLE: "goidana opfe"
+  GOLDEN_AXE: "goidoxt"
+  GOLDEN_BOOTS: "goidstiefe"
+  GOLDEN_CARROT: "goidane karottn"
+  GOLDEN_CHESTPLATE: "goidbrustplottn"
+  GOLDEN_HELMET: "goidhöm"
+  GOLDEN_HOE: "goidhock"
+  GOLDEN_HORSE_ARMOR: "roßrüstung aus goid"
+  GOLDEN_LEGGINGS: "goidhaxnschutz"
+  GOLDEN_PICKAXE: "goidspitzhock"
+  GOLDEN_SHOVEL: "goidschaufe"
+  GOLDEN_SWORD: "goidschwert"
+  GRAY_DYE: "graue forb"
+  GREEN_DYE: "grüne forb"
+  GUARDIAN_SPAWN_EGG: "wächta-spawn-ei"
+  GUNPOWDER: "schworzpuiva"
+  HEART_OF_THE_SEA: "herz des meeres"
+  HEART_POTTERY_SHARD: "herz-töpfascherbn"
+  HEART_POTTERY_SHERD: "herz-töpfascherbn"
+  HEARTBREAK_POTTERY_SHARD: "herzbruch-töpfascherbn"
+  HEARTBREAK_POTTERY_SHERD: "herzbruch-töpfascherbn"
+  HOGLIN_SPAWN_EGG: "hoglin-spawn-ei"
+  HONEY_BOTTLE: "honigfloschn"
+  HONEYCOMB: "honigwobn"
+  HOPPER_MINECART: "wagon mit trichta"
+  HORSE_SPAWN_EGG: "roß-spawn-ei"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  HOWL_POTTERY_SHARD: "schreiate töpfascherbn"
+  HOWL_POTTERY_SHERD: "schreiate töpfascherbn"
+  HUSK_SPAWN_EGG: "wüstnzombie-spawn-ei"
+  INK_SAC: "tintnbeitl"
+  IRON_AXE: "eisnoxt"
+  IRON_BOOTS: "eisnstiefe"
+  IRON_CHESTPLATE: "eisnbrustplottn"
+  IRON_GOLEM_SPAWN_EGG: "eisngolem-spawn-ei"
+  IRON_HELMET: "eisnhöm"
+  IRON_HOE: "eisnhock"
+  IRON_HORSE_ARMOR: "roßrüstung aus eisn"
+  IRON_INGOT: "eisnborrn"
+  IRON_LEGGINGS: "eisnhaxnschutz"
+  IRON_NUGGET: "eisnklumpn"
+  IRON_PICKAXE: "eisnspitzhock"
+  IRON_SHOVEL: "eisnschaufe"
+  IRON_SWORD: "eisnschwert"
+  ITEM_FRAME: "rohmen"
+  JUNGLE_BOAT: "tropnhoizboot"
+  JUNGLE_CHEST_BOAT: "tropnhoizboot mit kistn"
+  KNOWLEDGE_BOOK: "buach des wissns"
+  LAPIS_LAZULI: "lapislazuli"
+  LAVA_BUCKET: "lavakiwe"
+  LEAD: "leine"
+  LEATHER: "leda"
+  LEATHER_BOOTS: "ledastiefe"
+  LEATHER_CHESTPLATE: "ledajanka"
+  LEATHER_HELMET: "ledakoppn"
+  LEATHER_HORSE_ARMOR: "roßrüstung aus leda"
+  LEATHER_LEGGINGS: "ledahosn"
+  LIGHT_BLUE_DYE: "hellblaue forb"
+  LIGHT_GRAY_DYE: "hellgraue forb"
+  LIME_DYE: "hellgrüne forb"
+  LINGERING_POTION: "vaweiltronk"
+  LINGERING_POTION_EFFECT_AWKWARD: "komischa vaweiltronk"
+  LINGERING_POTION_EFFECT_EMPTY: "ned braubora vaweiltronk"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "vaweiltronk der feiaresistenz"
+  LINGERING_POTION_EFFECT_HARMING: "vaweiltronk des schodns"
+  LINGERING_POTION_EFFECT_HEALING: "vaweiltronk der heilung"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "vaweiltronk der unsichtborkeit"
+  LINGERING_POTION_EFFECT_LEAPING: "vaweiltronk der sprungkroft"
+  LINGERING_POTION_EFFECT_LEVITATION: "vaweiltronk der schwebekroft"
+  LINGERING_POTION_EFFECT_LUCK: "vaweiltronk des glücks"
+  LINGERING_POTION_EFFECT_MUNDANE: "normala vaweiltronk"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "vaweiltronk der nochtsicht"
+  LINGERING_POTION_EFFECT_POISON: "vaweiltronk der vagiftung"
+  LINGERING_POTION_EFFECT_REGENERATION: "vaweiltronk der regeneration"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "vaweiltronk des sonftn fois"
+  LINGERING_POTION_EFFECT_SLOWNESS: "vaweiltronk der longsomkeit"
+  LINGERING_POTION_EFFECT_STRENGTH: "vaweiltronk der stärke"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "vaweiltronk der schnöigkeit"
+  LINGERING_POTION_EFFECT_THICK: "dickflüssiga vaweiltronk"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "vaweiltronk vom schüdkrötn-meista"
+  LINGERING_POTION_EFFECT_WATER: "vaweilnde wossaflosch"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "vaweiltronk der untawossaatmung"
+  LINGERING_POTION_EFFECT_WEAKNESS: "vaweiltronk der schwäche"
+  LLAMA_SPAWN_EGG: "lama-spawn-ei"
+  LODESTONE_COMPASS: "leitstoa-kompass"
+  MAGENTA_DYE: "magentane forb"
+  MAGMA_CREAM: "magmacreme"
+  MAGMA_CUBE_SPAWN_EGG: "magmawürlf-spawn-ei"
+  MANGROVE_BOAT: "mangrovnhoizboot"
+  MANGROVE_CHEST_BOAT: "mangrovnhoizboot mit kistn"
+  MAP: "laare kortn"
+  MELON_SEEDS: "melonenkeandl"
+  MELON_SLICE: "melonenscheibn"
+  MILK_BUCKET: "milchkibl"
+  MINECART: "wagon"
+  MINER_POTTERY_SHARD: "bergorbeita-töpfascherbn"
+  MINER_POTTERY_SHERD: "bergorbeita-töpfascherbn"
+  MOJANG_BANNER_PATTERN: "bannamusta"
+  MOJANG_BANNER_PATTERN_DESC: "mojang-logo"
+  MOOSHROOM_SPAWN_EGG: "mooshroom-spawn-ei"
+  MOURNER_POTTERY_SHARD: "sumsa-töpfascherbn"
+  MOURNER_POTTERY_SHERD: "sumsa-töpfascherbn"
+  MULE_SPAWN_EGG: "maultier-spawn-ei"
+  MUSHROOM_STEW: "püzsuppn"
+  MUSIC_DISC_11: "schoiplottn"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "schoiplottn"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "schoiplottn"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "schoiplottn"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "schoiplottn"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "schoiplottn"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "schoiplottn"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "schoiplottn"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "schoiplottn"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "schoiplottn"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "schoiplottn"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "schoiplottn"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "schoiplottn"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "schoiplottn"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "schoiplottn"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "schoiplottn"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "ruachs hommefleisch"
+  NAME_TAG: "nomnsschüd"
+  NAUTILUS_SHELL: "natilusschö"
+  NETHER_BRICK: "netherziagl"
+  NETHER_STAR: "netherstern"
+  NETHER_WART: "nether woazn"
+  NETHERITE_AXE: "netheritoxt"
+  NETHERITE_BOOTS: "netheritstiefe"
+  NETHERITE_CHESTPLATE: "netheritbrustplottn"
+  NETHERITE_HELMET: "netherithöm"
+  NETHERITE_HOE: "netherithock"
+  NETHERITE_INGOT: "netheritborrn"
+  NETHERITE_LEGGINGS: "netherithaxnschutz"
+  NETHERITE_PICKAXE: "netheritspitzhock"
+  NETHERITE_SCRAP: "netheritbrockn"
+  NETHERITE_SHOVEL: "netheritschaufe"
+  NETHERITE_SWORD: "netheritschwert"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "schmiedevorlog"
+  OAK_BOAT: "oachnhoizboot"
+  OAK_CHEST_BOAT: "oachnhoizboot mit kistn"
+  OCELOT_SPAWN_EGG: "ozelot-spawn-ei"
+  ORANGE_DYE: "orange forb"
+  PAINTING: "büd"
+  PANDA_SPAWN_EGG: "panda-spawn-ei"
+  PAPER: "papia"
+  PARROT_SPAWN_EGG: "popagei-spawn-ei"
+  PHANTOM_MEMBRANE: "phantomhaut"
+  PHANTOM_SPAWN_EGG: "phantom-spawn-ei"
+  PIG_SPAWN_EGG: "schwein-spawn-ei"
+  PIGLIN_BANNER_PATTERN: "bannamusta"
+  PIGLIN_BANNER_PATTERN_DESC: "schnauzn"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin-barbar-spawn-ei"
+  PIGLIN_SPAWN_EGG: "piglin-spawn-ei"
+  PILLAGER_SPAWN_EGG: "plündara-spawn-ei"
+  PINK_DYE: "rosane forb"
+  PITCHER_PLANT: "kannenpflanze"
+  PITCHER_POD: "kannenpflanzenkapsel"
+  PLENTY_POTTERY_SHARD: "schmattige töpfascherbn"
+  PLENTY_POTTERY_SHERD: "schmattige töpfascherbn"
+  POISONOUS_POTATO: "giftige kartoffe"
+  POLAR_BEAR_SPAWN_EGG: "eisbär-spawn-ei"
+  POPPED_CHORUS_FRUIT: "platzte chorusfrucht"
+  PORKCHOP: "ruachs schweinefleisch"
+  POTATO: "kartoffe"
+  POTION: "tronk"
+  POTION_EFFECT_AWKWARD: "komischa tronk"
+  POTION_EFFECT_EMPTY: "ned braubora tronk"
+  POTION_EFFECT_FIRE_RESISTANCE: "tronk der feiaresistenz"
+  POTION_EFFECT_HARMING: "tronk des schodns"
+  POTION_EFFECT_HEALING: "tronk der heilung"
+  POTION_EFFECT_INVISIBILITY: "tronk der unsichtborkeit"
+  POTION_EFFECT_LEAPING: "tronk der sprungkroft"
+  POTION_EFFECT_LEVITATION: "tronk der schwebekroft"
+  POTION_EFFECT_LUCK: "tronk des glücks"
+  POTION_EFFECT_MUNDANE: "normala tronk"
+  POTION_EFFECT_NIGHT_VISION: "nochtsichttronk"
+  POTION_EFFECT_POISON: "gifttronk"
+  POTION_EFFECT_REGENERATION: "tronk der regeneration"
+  POTION_EFFECT_SLOW_FALLING: "tronk des sonftn fois"
+  POTION_EFFECT_SLOWNESS: "tronk der longsomkeit"
+  POTION_EFFECT_STRENGTH: "tronk der stärke"
+  POTION_EFFECT_SWIFTNESS: "tronk der schnöigkeit"
+  POTION_EFFECT_THICK: "dickflüssiga tronk"
+  POTION_EFFECT_TURTLE_MASTER: "tronk vom schüdkrötn-meista"
+  POTION_EFFECT_WATER: "wossaflosch"
+  POTION_EFFECT_WATER_BREATHING: "tronk der untawossaatmung"
+  POTION_EFFECT_WEAKNESS: "tronk der schwäche"
+  POTTERY_SHARD_ARCHER: "schützn-töpfascherbn"
+  POTTERY_SHARD_ARMS_UP: "gebärdn-töpfascherbn"
+  POTTERY_SHARD_PRIZE: "juweln-töpfascherbn"
+  POTTERY_SHARD_SKULL: "schädl-töpfascherbn"
+  POWDER_SNOW_BUCKET: "puivaschneekiwe"
+  PRISMARINE_CRYSTALS: "prismarinkristoi"
+  PRISMARINE_SHARD: "prismarinscherbe"
+  PRIZE_POTTERY_SHARD: "juweln-töpfascherbn"
+  PRIZE_POTTERY_SHERD: "juweln-töpfascherbn"
+  PUFFERFISH: "kuglfisch"
+  PUFFERFISH_BUCKET: "kuglfischkiwe"
+  PUFFERFISH_SPAWN_EGG: "kuglfisch-spawn-ei"
+  PUMPKIN_PIE: "kürbiskuachn"
+  PUMPKIN_SEEDS: "kürbiskeandl"
+  PURPLE_DYE: "lilane forb"
+  QUARTZ: "netherquarz"
+  RABBIT: "ruacha hos"
+  RABBIT_FOOT: "hosnpfotn"
+  RABBIT_HIDE: "hosnfö"
+  RABBIT_SPAWN_EGG: "hos-spawn-ei"
+  RABBIT_STEW: "hosnragout"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  RAVAGER_SPAWN_EGG: "vawüsta-spawn-ei"
+  RAW_COPPER: "ruachs kupfa"
+  RAW_GOLD: "ruachs goid"
+  RAW_IRON: "ruachs eisn"
+  RECOVERY_COMPASS: "rettungskompass"
+  RED_DYE: "rote forb"
+  REDSTONE: "redstone-stab"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  ROTTEN_FLESH: "varottets fleisch"
+  SADDLE: "sottl"
+  SALMON: "ruacha lachs"
+  SALMON_BUCKET: "lachskiwe"
+  SALMON_SPAWN_EGG: "lachs-spawn-ei"
+  SCUTE: "hornschüd"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  SHEAF_POTTERY_SHARD: "köcher-töpfascherbn"
+  SHEAF_POTTERY_SHERD: "köcher-töpfascherbn"
+  SHEARS: "schar"
+  SHEEP_SPAWN_EGG: "schafe-spawn-ei"
+  SHELTER_POTTERY_SHARD: "heisl-töpfascherbn"
+  SHELTER_POTTERY_SHERD: "heisl-töpfascherbn"
+  SHIELD: "schüd"
+  SHIELD_BLACK: "schworzs schüd"
+  SHIELD_BLUE: "blaus schüd"
+  SHIELD_BROWN: "brauns schüd"
+  SHIELD_CYAN: "türkises schüd"
+  SHIELD_GRAY: "graus schüd"
+  SHIELD_GREEN: "grüns schüd"
+  SHIELD_LIGHT_BLUE: "hellblaus schüd"
+  SHIELD_LIGHT_GRAY: "hellgraus schüd"
+  SHIELD_LIME: "hellgrüns schüd"
+  SHIELD_MAGENTA: "magentas schüd"
+  SHIELD_ORANGE: "orangs schüd"
+  SHIELD_PINK: "rosas schüd"
+  SHIELD_PURPLE: "lilas schüd"
+  SHIELD_RED: "rots schüd"
+  SHIELD_WHITE: "weißs schüd"
+  SHIELD_YELLOW: "gelbs schüd"
+  SHULKER_SHELL: "shulkerschö"
+  SHULKER_SPAWN_EGG: "shulker-spawn-ei"
+  SIGN: "schüd"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  SILVERFISH_SPAWN_EGG: "sübafisch-spawn-ei"
+  SKELETON_HORSE_SPAWN_EGG: "skelettroß-spawn-ei"
+  SKELETON_SPAWN_EGG: "skelett-spawn-ei"
+  SKULL_BANNER_PATTERN: "bannamusta"
+  SKULL_BANNER_PATTERN_DESC: "schädl"
+  SKULL_POTTERY_SHARD: "schädl-töpfascherbn"
+  SKULL_POTTERY_SHERD: "schädl-töpfascherbn"
+  SLIME_BALL: "schleimboi"
+  SLIME_SPAWN_EGG: "schleim-spawn-ei"
+  SMITHING_TEMPLATE: "schmiedevorlog"
+  SMITHING_TEMPLATE_APPLIES_TO: "anwendbor auf:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "borren oda kristall hinzuafügn"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "rüstung"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "rüstungsteil hinzuafügn"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "borren & kristalle"
+  SMITHING_TEMPLATE_INGREDIENTS: "werkstoffe:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "netheritborren hinzuafügn"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamantausrüstung"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "rüstungsteil werkzeig oda schwert aus diamant hinzuafügn"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheritborrn"
+  SMITHING_TEMPLATE_UPGRADE: "aufwertung: "
+  SNIFFER_SPAWN_EGG: "schnüffla-spawn-ei"
+  SNORT_POTTERY_SHARD: "rotza-töpfascherbn"
+  SNORT_POTTERY_SHERD: "rotza-töpfascherbn"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  SNOW_GOLEM_SPAWN_EGG: "schneegolem-spawn-ei"
+  SNOWBALL: "schneeboi"
+  SPECTRAL_ARROW: "spektralpfeil"
+  SPIDER_EYE: "spinnenaug"
+  SPIDER_SPAWN_EGG: "spinnen-spawn-ei"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  SPLASH_POTION: "wurftronk"
+  SPLASH_POTION_EFFECT_AWKWARD: "komischa wurftronk"
+  SPLASH_POTION_EFFECT_EMPTY: "ned braubora wurftronk"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "wurftronk der feiaresistenz"
+  SPLASH_POTION_EFFECT_HARMING: "wurftronk des schodns"
+  SPLASH_POTION_EFFECT_HEALING: "wurftronk der heilung"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "wurftronk der unsichtborkeit"
+  SPLASH_POTION_EFFECT_LEAPING: "wurftronk der sprungkroft"
+  SPLASH_POTION_EFFECT_LEVITATION: "wurftronk der schwebekroft"
+  SPLASH_POTION_EFFECT_LUCK: "wurftronk des glücks"
+  SPLASH_POTION_EFFECT_MUNDANE: "normala wurftronk"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "wurftronk der nochtsicht"
+  SPLASH_POTION_EFFECT_POISON: "wurftronk der vagiftung"
+  SPLASH_POTION_EFFECT_REGENERATION: "wurftronk der regeneration"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "wurftronk des sonftn fois"
+  SPLASH_POTION_EFFECT_SLOWNESS: "wurftronk der longsomkeit"
+  SPLASH_POTION_EFFECT_STRENGTH: "wurftronk der stärke"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "wurftronk der schöigkeit"
+  SPLASH_POTION_EFFECT_THICK: "dickflüssiga wurftronk"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "wurftronk vom schüdkrötn-meista"
+  SPLASH_POTION_EFFECT_WATER: "werfbore wossaflosch"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "wurftronk der untawossaatmung"
+  SPLASH_POTION_EFFECT_WEAKNESS: "wurftronk der schwäche"
+  SPRUCE_BOAT: "fichtnhoizboot"
+  SPRUCE_CHEST_BOAT: "fichtnhoizboot mit kistn"
+  SPYGLASS: "binoggl"
+  SQUID_SPAWN_EGG: "tintnfisch-spawn-ei"
+  STICK: "stock"
+  STONE_AXE: "stoaoxt"
+  STONE_HOE: "stoahock"
+  STONE_PICKAXE: "stoaspitzhock"
+  STONE_SHOVEL: "stoaschaufe"
+  STONE_SWORD: "stoaschwert"
+  STRAY_SPAWN_EGG: "eiswondara-spawn-ei"
+  STRIDER_SPAWN_EGG: "schreita-spawn-ei"
+  STRING: "fodn"
+  SUGAR: "zugga"
+  SUSPICIOUS_STEW: "vadächtige suppn"
+  SWEET_BERRIES: "süßbeern"
+  TADPOLE_BUCKET: "kaulquappnkiwe"
+  TADPOLE_SPAWN_EGG: "kaulquappn-spawn-ei"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  TIPPED_ARROW: "getränkta pfeil"
+  TIPPED_ARROW_EFFECT_AWKWARD: "getränkta pfeil"
+  TIPPED_ARROW_EFFECT_EMPTY: "ned heastöhbora getränkta pfeil"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "pfeil der feiaresistenz"
+  TIPPED_ARROW_EFFECT_HARMING: "pfeil des schodens"
+  TIPPED_ARROW_EFFECT_HEALING: "pfeil der heilung"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "pfeil der unsichtborkeit"
+  TIPPED_ARROW_EFFECT_LEAPING: "pfeil der sprungkroft"
+  TIPPED_ARROW_EFFECT_LEVITATION: "pfeil der schwebekroft"
+  TIPPED_ARROW_EFFECT_LUCK: "pfeil des glücks"
+  TIPPED_ARROW_EFFECT_MUNDANE: "gertänkta pfeil"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "pfeil der nochtsicht"
+  TIPPED_ARROW_EFFECT_POISON: "pfeil der vagiftung"
+  TIPPED_ARROW_EFFECT_REGENERATION: "pfeil der regeneration"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "pfeil des sonftn fois"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "pfeil der longsomkeit"
+  TIPPED_ARROW_EFFECT_STRENGTH: "pfeil der stärke"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "pfeil der schöigkeit"
+  TIPPED_ARROW_EFFECT_THICK: "getränkta pfeil"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "pfeil vom schüdkrötn-meista"
+  TIPPED_ARROW_EFFECT_WATER: "nossa pfeil"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "pfeil der untawossaatmung"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "pfeil der schwäche"
+  TNT_MINECART: "wagon mit tnt"
+  TORCHFLOWER_SEEDS: "fackelliliensamen"
+  TOTEM_OF_UNDYING: "totem dea unsterblichkeit"
+  TRADER_LLAMA_SPAWN_EGG: "händlalama-spawn-ei"
+  TRIAL_KEY: "prüfungsschlüssel"
+  TRIDENT: "dreizock"
+  TROPICAL_FISH: "tropnfisch"
+  TROPICAL_FISH_BUCKET: "tropnfischkiwe"
+  TROPICAL_FISH_SPAWN_EGG: "tropnfisch-spawn-ei"
+  TURTLE_HELMET: "schüdkrötnponza"
+  TURTLE_SPAWN_EGG: "schüdkrötn-spawn-ei"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  VEX_SPAWN_EGG: "plogegeist-spawn-ei"
+  VILLAGER_SPAWN_EGG: "dorfbewohna-spawn-ei"
+  VINDICATOR_SPAWN_EGG: "diena-spawn-ei"
+  WANDERING_TRADER_SPAWN_EGG: "fohrenda-händla-spawn-ei"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  WARDEN_SPAWN_EGG: "wächta-spawn-ei"
+  WARPED_FUNGUS_ON_A_STICK: "wirrpüzongl"
+  WATER_BUCKET: "wossakiwe"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  WHEAT: "weizn"
+  WHEAT_SEEDS: "weiznkern"
+  WHITE_DYE: "weiße forb"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedevorlog"
+  WITCH_SPAWN_EGG: "hexn-spawn-ei"
+  WITHER_SKELETON_SPAWN_EGG: "witherskelett-spawn-ei"
+  WITHER_SPAWN_EGG: "wither-spawn-ei"
+  WOLF_SPAWN_EGG: "woif-spawn-ei"
+  WOODEN_AXE: "hoizoxt"
+  WOODEN_HOE: "hoizhock"
+  WOODEN_PICKAXE: "hoizspitzhock"
+  WOODEN_SHOVEL: "hoizschaufe"
+  WOODEN_SWORD: "hoizschwert"
+  WRITABLE_BOOK: "buach und feda"
+  WRITTEN_BOOK: "beschriebns buach"
+  YELLOW_DYE: "gelbe forb"
+  ZOGLIN_SPAWN_EGG: "zoglin-spawn-ei"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombieroß-spawn-ei"
+  ZOMBIE_SPAWN_EGG: "zombie-spawn-ei"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "dorfbewohnazombie-spawn-ei"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombifiziata-piglin-spawn-ei"
+  CHEST: "am körpa:"
+  FEET: "an de fiaß:"
+  HEAD: "am kopf:"
+  LEGS: "an de haxn:"
+  MAINHAND: "in da haupthond:"
+  OFFHAND: "in da zwoathond:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

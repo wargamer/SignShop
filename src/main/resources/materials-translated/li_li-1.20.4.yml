@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "acacia knop"
+  ACACIA_DOOR: "acaciahouten duuer"
+  ACACIA_FENCE: "acaciahouten hek"
+  ACACIA_FENCE_GATE: "acaciahouten peurtje"
+  ACACIA_HANGING_SIGN: "acaciahouten hangbord"
+  ACACIA_LEAVES: "acaciablajere"
+  ACACIA_LOG: "acaciastjam"
+  ACACIA_PLANKS: "acaciahouten plenk"
+  ACACIA_PRESSURE_PLATE: "acacia drukplaat"
+  ACACIA_SAPLING: "acaciakiemplant"
+  ACACIA_SIGN: "acaciahouten bord"
+  ACACIA_SLAB: "acacia plaat"
+  ACACIA_STAIRS: "acaciahoute traeje"
+  ACACIA_TRAPDOOR: "acaciahouten valloek"
+  ACACIA_WALL_HANGING_SIGN: "acaciahouten oethangbord"
+  ACACIA_WALL_SIGN: "acaciahouten bord aon moor"
+  ACACIA_WOOD: "acaciahout"
+  ACTIVATOR_RAIL: "activatiespoear"
+  AIR: "locht"
+  ALLIUM: "look"
+  AMETHYST_BLOCK: "amethistblok"
+  AMETHYST_CLUSTER: "amethistcluster"
+  ANCIENT_DEBRIS: "alt puin"
+  ANDESITE: "andesiet"
+  ANDESITE_SLAB: "andesietplaat"
+  ANDESITE_STAIRS: "andesiet traeje"
+  ANDESITE_WALL: "andesietmoer"
+  ANVIL: "aambild"
+  ATTACHED_MELON_STEM: "vastgezatte meloen sjtam"
+  ATTACHED_PUMPKIN_STEM: "vastgezette pompoensjtam"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "azaleablajere"
+  AZURE_BLUET: "porseleinsterretje"
+  BAMBOO: "bamboe"
+  BAMBOO_BLOCK: "bamboeblok"
+  BAMBOO_BUTTON: "bamboeknop"
+  BAMBOO_DOOR: "bamboeduuer"
+  BAMBOO_FENCE: "bamboehek"
+  BAMBOO_FENCE_GATE: "bamboepeurtje"
+  BAMBOO_HANGING_SIGN: "bamboehangbord"
+  BAMBOO_MOSAIC: "bamboemozaïek"
+  BAMBOO_MOSAIC_SLAB: "bamboemozaïekplaat"
+  BAMBOO_MOSAIC_STAIRS: "bamboemozaïektraeje"
+  BAMBOO_PLANKS: "bamboeplenk"
+  BAMBOO_PRESSURE_PLATE: "bamboedrukplaat"
+  BAMBOO_SAPLING: "bambooscheutje"
+  BAMBOO_SIGN: "bamboebord"
+  BAMBOO_SLAB: "bamboeplaat"
+  BAMBOO_STAIRS: "bamboetraeje"
+  BAMBOO_TRAPDOOR: "bamboevalloek"
+  BAMBOO_WALL_HANGING_SIGN: "bamboe-oethangbord"
+  BAMBOO_WALL_SIGN: "bamboebord aon moor"
+  BANNER_BASE_BLACK: "volledig zwart veld"
+  BANNER_BASE_BLUE: "volledig blauw veld"
+  BANNER_BASE_BROWN: "volledig broen veld"
+  BANNER_BASE_CYAN: "volledig turquoise veld"
+  BANNER_BASE_GRAY: "volledig gries veld"
+  BANNER_BASE_GREEN: "volledig greun veld"
+  BANNER_BASE_LIGHT_BLUE: "volledig licht blauw veld"
+  BANNER_BASE_LIGHT_GRAY: "volledig licht gries veld"
+  BANNER_BASE_LIME: "volledig limoengreun veld"
+  BANNER_BASE_MAGENTA: "volledig magenta veld"
+  BANNER_BASE_ORANGE: "volledig oranje veld"
+  BANNER_BASE_PINK: "volledig roze veld"
+  BANNER_BASE_PURPLE: "volledig paars veld"
+  BANNER_BASE_RED: "volledig roed veld"
+  BANNER_BASE_WHITE: "volledig wit veld"
+  BANNER_BASE_YELLOW: "volledig geel veld"
+  BANNER_BORDER_BLACK: "zjwarte zoom"
+  BANNER_BORDER_BLUE: "blauwe zoom"
+  BANNER_BORDER_BROWN: "broene zoom"
+  BANNER_BORDER_CYAN: "turquoise zoom"
+  BANNER_BORDER_GRAY: "grieze zoom"
+  BANNER_BORDER_GREEN: "greune zoom"
+  BANNER_BORDER_LIGHT_BLUE: "leechtblauwe zoom"
+  BANNER_BORDER_LIGHT_GRAY: "leechtgrieze zoom"
+  BANNER_BORDER_LIME: "limoengreune zoom"
+  BANNER_BORDER_MAGENTA: "magenta zoom"
+  BANNER_BORDER_ORANGE: "oranje zoom"
+  BANNER_BORDER_PINK: "roze zoom"
+  BANNER_BORDER_PURPLE: "paarse zoom"
+  BANNER_BORDER_RED: "roede zoom"
+  BANNER_BORDER_WHITE: "witte zoom"
+  BANNER_BORDER_YELLOW: "gaele zoom"
+  BANNER_BRICKS_BLACK: "zwart metselwerk"
+  BANNER_BRICKS_BLUE: "blauw metselwerk"
+  BANNER_BRICKS_BROWN: "broen metselwerk"
+  BANNER_BRICKS_CYAN: "turquoise metselwerk"
+  BANNER_BRICKS_GRAY: "gries metselwerk"
+  BANNER_BRICKS_GREEN: "greun metselwerk"
+  BANNER_BRICKS_LIGHT_BLUE: "leechtblauw metselwerk"
+  BANNER_BRICKS_LIGHT_GRAY: "leechtgries metselwerk"
+  BANNER_BRICKS_LIME: "limoengreun metselwerk"
+  BANNER_BRICKS_MAGENTA: "magenta metselwerk"
+  BANNER_BRICKS_ORANGE: "oranje metselwerk"
+  BANNER_BRICKS_PINK: "roze metselwerk"
+  BANNER_BRICKS_PURPLE: "blauw metselwerk"
+  BANNER_BRICKS_RED: "roed metselwerk"
+  BANNER_BRICKS_WHITE: "wit metselwerk"
+  BANNER_BRICKS_YELLOW: "gael metselwerk"
+  BANNER_CIRCLE_BLACK: "zjwart rozet"
+  BANNER_CIRCLE_BLUE: "blauw rozet"
+  BANNER_CIRCLE_BROWN: "broen rozet"
+  BANNER_CIRCLE_CYAN: "turquoise rozet"
+  BANNER_CIRCLE_GRAY: "gries rozet"
+  BANNER_CIRCLE_GREEN: "greun rozet"
+  BANNER_CIRCLE_LIGHT_BLUE: "leechtblauw rozet"
+  BANNER_CIRCLE_LIGHT_GRAY: "leechtgries rozet"
+  BANNER_CIRCLE_LIME: "limoengreun rozet"
+  BANNER_CIRCLE_MAGENTA: "magenta rozet"
+  BANNER_CIRCLE_ORANGE: "oranje rozet"
+  BANNER_CIRCLE_PINK: "roze rozet"
+  BANNER_CIRCLE_PURPLE: "paars rozet"
+  BANNER_CIRCLE_RED: "roed rozet"
+  BANNER_CIRCLE_WHITE: "wit rozet"
+  BANNER_CIRCLE_YELLOW: "gael rozet"
+  BANNER_CREEPER_BLACK: "zjwart creeperwapen"
+  BANNER_CREEPER_BLUE: "blauw creeperwapen"
+  BANNER_CREEPER_BROWN: "breun creeperwapen"
+  BANNER_CREEPER_CYAN: "turquoise creeper"
+  BANNER_CREEPER_GRAY: "gries creeperwapen"
+  BANNER_CREEPER_GREEN: "greun creeperwapen"
+  BANNER_CREEPER_LIGHT_BLUE: "leechtblauw creeperwapen"
+  BANNER_CREEPER_LIGHT_GRAY: "leechtgries creeperwapen"
+  BANNER_CREEPER_LIME: "limoengreun creeperwapen"
+  BANNER_CREEPER_MAGENTA: "magenta creeperwapen"
+  BANNER_CREEPER_ORANGE: "oranje creeperwapen"
+  BANNER_CREEPER_PINK: "roze creeperwapen"
+  BANNER_CREEPER_PURPLE: "paars creeperwapen"
+  BANNER_CREEPER_RED: "roed creeperwapen"
+  BANNER_CREEPER_WHITE: "wit creeperwapen"
+  BANNER_CREEPER_YELLOW: "gael creeperwapen"
+  BANNER_CROSS_BLACK: "zjwart andreaskroes"
+  BANNER_CROSS_BLUE: "blauw andreaskroes"
+  BANNER_CROSS_BROWN: "broen andreaskroes"
+  BANNER_CROSS_CYAN: "turquoise andreaskroes"
+  BANNER_CROSS_GRAY: "gries andreaskroes"
+  BANNER_CROSS_GREEN: "greun andreaskoes"
+  BANNER_CROSS_LIGHT_BLUE: "leechtblauw andreaskroes"
+  BANNER_CROSS_LIGHT_GRAY: "leechtgries andreaskroes"
+  BANNER_CROSS_LIME: "limoengreun andreaskroes"
+  BANNER_CROSS_MAGENTA: "magenta andreaskroes"
+  BANNER_CROSS_ORANGE: "oranje andreaskroes"
+  BANNER_CROSS_PINK: "roze andreaskroes"
+  BANNER_CROSS_PURPLE: "paars andreaskoes"
+  BANNER_CROSS_RED: "roed andreaskroes"
+  BANNER_CROSS_WHITE: "wit andreaskroes"
+  BANNER_CROSS_YELLOW: "gael andreaskroes"
+  BANNER_CURLY_BORDER_BLACK: "zjwarte ingesprongen zoom"
+  BANNER_CURLY_BORDER_BLUE: "blauwe ingesprongen zoom"
+  BANNER_CURLY_BORDER_BROWN: "broene ingesprongen zoom"
+  BANNER_CURLY_BORDER_CYAN: "turquoise ingesprongen zoom"
+  BANNER_CURLY_BORDER_GRAY: "grieze ingesprongen zoom"
+  BANNER_CURLY_BORDER_GREEN: "greune ingesprongen zoom"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "leechtblauwe ingesprongen zoom"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "leechtgrieze ingesprongen zoom"
+  BANNER_CURLY_BORDER_LIME: "limoengreune ingesprongen zoom"
+  BANNER_CURLY_BORDER_MAGENTA: "magenta ingesprongen zoom"
+  BANNER_CURLY_BORDER_ORANGE: "oranje ingesprongen zoom"
+  BANNER_CURLY_BORDER_PINK: "roze ingesprongen zoom"
+  BANNER_CURLY_BORDER_PURPLE: "paarse ingesprongen zoom"
+  BANNER_CURLY_BORDER_RED: "roede ingesprongen zoom"
+  BANNER_CURLY_BORDER_WHITE: "witte ingesprongen zoom"
+  BANNER_CURLY_BORDER_YELLOW: "gaele ingesprongen zoom"
+  BANNER_DIAGONAL_LEFT_BLACK: "zjwarte per band sinister"
+  BANNER_DIAGONAL_LEFT_BLUE: "blauwe per band sinister"
+  BANNER_DIAGONAL_LEFT_BROWN: "broene per band sinister"
+  BANNER_DIAGONAL_LEFT_CYAN: "turquoise per band sinister"
+  BANNER_DIAGONAL_LEFT_GRAY: "grieze per band sinister"
+  BANNER_DIAGONAL_LEFT_GREEN: "greune per band sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "leechtblauwe per band omgekeerd"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "leechtgrieze per band omgekeerd"
+  BANNER_DIAGONAL_LEFT_LIME: "limoengreune per band sinister"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta per band sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "oranje per band sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "roze per band sinister"
+  BANNER_DIAGONAL_LEFT_PURPLE: "paarse per band sinister"
+  BANNER_DIAGONAL_LEFT_RED: "roede per band sinister"
+  BANNER_DIAGONAL_LEFT_WHITE: "witte per band sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gaele per band sinister"
+  BANNER_DIAGONAL_RIGHT_BLACK: "zjwarte per band"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blauwe per band"
+  BANNER_DIAGONAL_RIGHT_BROWN: "broene per band"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turquoise per band"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grieze per band"
+  BANNER_DIAGONAL_RIGHT_GREEN: "greune per band"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "leechtblauwe per band"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "leechtgrieze per band"
+  BANNER_DIAGONAL_RIGHT_LIME: "limoengreune per band"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta per band"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oranje per band"
+  BANNER_DIAGONAL_RIGHT_PINK: "roze per band"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "paarse per band"
+  BANNER_DIAGONAL_RIGHT_RED: "roede per band"
+  BANNER_DIAGONAL_RIGHT_WHITE: "witte per band"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gaele per band"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "zjwarte per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blauwe per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "broene per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turquoise per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grieze per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "greune per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "leechtblauwe per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "leechtgrieze per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "limoengreune per band omgekierd"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "oranje per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "roze per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "paarse per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_RED: "roede per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "witte per band omgekeerd"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gaele per band omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "zjwarte per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blauwe per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "bruine per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turquoise per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "griese per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "greune per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "leechtblauwe per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "leechtgrieze per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "limoengreune per band sinister omgekierd"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "oranje per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "roze per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "paarse per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "roede per bocht sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "witte per band sinister omgekeerd"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gele per band sinister omgekeerd"
+  BANNER_FLOWER_BLACK: "zjwart bloomwapen"
+  BANNER_FLOWER_BLUE: "blauw bloomwapen"
+  BANNER_FLOWER_BROWN: "broen bloomwapen"
+  BANNER_FLOWER_CYAN: "turquoise bloomwapen"
+  BANNER_FLOWER_GRAY: "gries bloomwapen"
+  BANNER_FLOWER_GREEN: "greun bloomwapen"
+  BANNER_FLOWER_LIGHT_BLUE: "leechtblauw bloemwapen"
+  BANNER_FLOWER_LIGHT_GRAY: "leechtgries bloemwapen"
+  BANNER_FLOWER_LIME: "limoengreun bloemwapen"
+  BANNER_FLOWER_MAGENTA: "magenta bloomwapen"
+  BANNER_FLOWER_ORANGE: "oranje bloomwapen"
+  BANNER_FLOWER_PINK: "roze bloomwapen"
+  BANNER_FLOWER_PURPLE: "paars bloomwapen"
+  BANNER_FLOWER_RED: "roed bloomwapen"
+  BANNER_FLOWER_WHITE: "wit bloomwapen"
+  BANNER_FLOWER_YELLOW: "gael bloomwapen"
+  BANNER_GLOBE_BLACK: "zjwarte globe"
+  BANNER_GLOBE_BLUE: "blauwe globe"
+  BANNER_GLOBE_BROWN: "broene globe"
+  BANNER_GLOBE_CYAN: "turquoise globe"
+  BANNER_GLOBE_GRAY: "grieze globe"
+  BANNER_GLOBE_GREEN: "greune globe"
+  BANNER_GLOBE_LIGHT_BLUE: "leechtblauwe bol"
+  BANNER_GLOBE_LIGHT_GRAY: "leechtgrieze bol"
+  BANNER_GLOBE_LIME: "limoengreune aarde"
+  BANNER_GLOBE_MAGENTA: "magenta bol"
+  BANNER_GLOBE_ORANGE: "oranje globe"
+  BANNER_GLOBE_PINK: "roze globe"
+  BANNER_GLOBE_PURPLE: "poarse bol"
+  BANNER_GLOBE_RED: "roeje bol"
+  BANNER_GLOBE_WHITE: "witte globe"
+  BANNER_GLOBE_YELLOW: "gaele globe"
+  BANNER_GRADIENT_BLACK: "zjwart gradiënt"
+  BANNER_GRADIENT_BLUE: "blauw gradiënt"
+  BANNER_GRADIENT_BROWN: "broen gradiënt"
+  BANNER_GRADIENT_CYAN: "turquoise gradiënt"
+  BANNER_GRADIENT_GRAY: "gries gradiënt"
+  BANNER_GRADIENT_GREEN: "greun gradiënt"
+  BANNER_GRADIENT_LIGHT_BLUE: "leechtblauw gradiënt"
+  BANNER_GRADIENT_LIGHT_GRAY: "leechtgries gradiënt"
+  BANNER_GRADIENT_LIME: "limoengreun gradiënt"
+  BANNER_GRADIENT_MAGENTA: "magenta gradiënt"
+  BANNER_GRADIENT_ORANGE: "oranje gradiënt"
+  BANNER_GRADIENT_PINK: "roze gradiënt"
+  BANNER_GRADIENT_PURPLE: "paars gradiënt"
+  BANNER_GRADIENT_RED: "roed gradiënt"
+  BANNER_GRADIENT_WHITE: "wit gradiënt"
+  BANNER_GRADIENT_YELLOW: "gael gradiënt"
+  BANNER_GRADIENT_UP_BLACK: "zjwart basis gradiënt"
+  BANNER_GRADIENT_UP_BLUE: "blauw basis gradiënt"
+  BANNER_GRADIENT_UP_BROWN: "broen basis gradiënt"
+  BANNER_GRADIENT_UP_CYAN: "turquoise basis gradiënt"
+  BANNER_GRADIENT_UP_GRAY: "gries basis gradiënt"
+  BANNER_GRADIENT_UP_GREEN: "greun basis gradiënt"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "leechtblauw basis gradiënt"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "leechtgries basis gradiënt"
+  BANNER_GRADIENT_UP_LIME: "limoengreun basisgradiënt"
+  BANNER_GRADIENT_UP_MAGENTA: "magenta basis gradiënt"
+  BANNER_GRADIENT_UP_ORANGE: "oranje basis gradiënt"
+  BANNER_GRADIENT_UP_PINK: "roze basis gradiënt"
+  BANNER_GRADIENT_UP_PURPLE: "paars basis gradiënt"
+  BANNER_GRADIENT_UP_RED: "roed basis gradiënt"
+  BANNER_GRADIENT_UP_WHITE: "wit basis gradiënt"
+  BANNER_GRADIENT_UP_YELLOW: "gael basis gradiënt"
+  BANNER_HALF_HORIZONTAL_BLACK: "zjwarte per faas"
+  BANNER_HALF_HORIZONTAL_BLUE: "blauwe per faas"
+  BANNER_HALF_HORIZONTAL_BROWN: "broene per faas"
+  BANNER_HALF_HORIZONTAL_CYAN: "turquoise per faas"
+  BANNER_HALF_HORIZONTAL_GRAY: "grieze per faas"
+  BANNER_HALF_HORIZONTAL_GREEN: "greune per faas"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "leechtblauwe per faas"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "leechtgrieze per faas"
+  BANNER_HALF_HORIZONTAL_LIME: "limoengreune per faas"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "magenta per faas"
+  BANNER_HALF_HORIZONTAL_ORANGE: "oranje per faas"
+  BANNER_HALF_HORIZONTAL_PINK: "roze per faas"
+  BANNER_HALF_HORIZONTAL_PURPLE: "paarse per faas"
+  BANNER_HALF_HORIZONTAL_RED: "roede per faas"
+  BANNER_HALF_HORIZONTAL_WHITE: "witte per faas"
+  BANNER_HALF_HORIZONTAL_YELLOW: "gaele per faas"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "zjwarte per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blauwe per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "broene per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turquoise per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grieze per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "greune per fess omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "leechtblauwe per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "leechtgrieze per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "limoengreune per faas omgekierd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "magenta per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "oranje per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "roze per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "paarse per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "roede per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "witte per faas omgekeerd"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "gaele per faas omgekeerd"
+  BANNER_HALF_VERTICAL_BLACK: "zjwarte per päöl"
+  BANNER_HALF_VERTICAL_BLUE: "blauwe per päöl"
+  BANNER_HALF_VERTICAL_BROWN: "broene per päöl"
+  BANNER_HALF_VERTICAL_CYAN: "turquoise per päöl"
+  BANNER_HALF_VERTICAL_GRAY: "grieze per päöl"
+  BANNER_HALF_VERTICAL_GREEN: "greune per päöl"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "leechtblauwe per päöl"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "leechtgrieze per päöl"
+  BANNER_HALF_VERTICAL_LIME: "limoengreune per päöl"
+  BANNER_HALF_VERTICAL_MAGENTA: "magenta per päöl"
+  BANNER_HALF_VERTICAL_ORANGE: "oranje per päöl"
+  BANNER_HALF_VERTICAL_PINK: "roze per päöl"
+  BANNER_HALF_VERTICAL_PURPLE: "paarse per päöl"
+  BANNER_HALF_VERTICAL_RED: "roede per päöl"
+  BANNER_HALF_VERTICAL_WHITE: "witte per päöl"
+  BANNER_HALF_VERTICAL_YELLOW: "gaele per päöl"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "zjwarte per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blauwe per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "broene per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turquoise per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grieze per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "greune per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "leechtblauwe per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "leechtgrieze per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "limoengreune per päöl omgekierd"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "magenta per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "oranje per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "roze per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "paarse per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "roede per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "witte per päöl omgekeerd"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "gaele per päöl omgekeerd"
+  BANNER_MOJANG_BLACK: "zjwart mojangwapen"
+  BANNER_MOJANG_BLUE: "blauw mojangwapen"
+  BANNER_MOJANG_BROWN: "broen mojangwapen"
+  BANNER_MOJANG_CYAN: "turquoise mojangwapen"
+  BANNER_MOJANG_GRAY: "gries mojangwapen"
+  BANNER_MOJANG_GREEN: "greun mojangwapen"
+  BANNER_MOJANG_LIGHT_BLUE: "leechtblauw mojangwapen"
+  BANNER_MOJANG_LIGHT_GRAY: "leechtgries mojangwapen"
+  BANNER_MOJANG_LIME: "limoengreun mojangwapen"
+  BANNER_MOJANG_MAGENTA: "magenta mojangwapen"
+  BANNER_MOJANG_ORANGE: "oranje mojangwapen"
+  BANNER_MOJANG_PINK: "roze mojangwapen"
+  BANNER_MOJANG_PURPLE: "paars mojangwapen"
+  BANNER_MOJANG_RED: "roed mojangwapen"
+  BANNER_MOJANG_WHITE: "wit mojangwapen"
+  BANNER_MOJANG_YELLOW: "gael mojangwapen"
+  BANNER_PIGLIN_BLACK: "zwarte snoet"
+  BANNER_PIGLIN_BLUE: "blauwe snoet"
+  BANNER_PIGLIN_BROWN: "broene snoet"
+  BANNER_PIGLIN_CYAN: "turquoise snoet"
+  BANNER_PIGLIN_GRAY: "grieze snoet"
+  BANNER_PIGLIN_GREEN: "greune snoet"
+  BANNER_PIGLIN_LIGHT_BLUE: "leechtblauwe snoet"
+  BANNER_PIGLIN_LIGHT_GRAY: "leechtgrieze snoet"
+  BANNER_PIGLIN_LIME: "limoengreune snoet"
+  BANNER_PIGLIN_MAGENTA: "magenta snoet"
+  BANNER_PIGLIN_ORANGE: "oranje snoet"
+  BANNER_PIGLIN_PINK: "roze snoet"
+  BANNER_PIGLIN_PURPLE: "paarse snoet"
+  BANNER_PIGLIN_RED: "roeie snoet"
+  BANNER_PIGLIN_WHITE: "witte snoet"
+  BANNER_PIGLIN_YELLOW: "gaele snoet"
+  BANNER_RHOMBUS_BLACK: "zjwart roet"
+  BANNER_RHOMBUS_BLUE: "blauwe roet"
+  BANNER_RHOMBUS_BROWN: "broene roet"
+  BANNER_RHOMBUS_CYAN: "turquoise roet"
+  BANNER_RHOMBUS_GRAY: "grieze roet"
+  BANNER_RHOMBUS_GREEN: "greune roet"
+  BANNER_RHOMBUS_LIGHT_BLUE: "leechtblauwe roet"
+  BANNER_RHOMBUS_LIGHT_GRAY: "leechtgrieze roet"
+  BANNER_RHOMBUS_LIME: "limoengreune roet"
+  BANNER_RHOMBUS_MAGENTA: "magenta roet"
+  BANNER_RHOMBUS_ORANGE: "oranje roet"
+  BANNER_RHOMBUS_PINK: "roze roet"
+  BANNER_RHOMBUS_PURPLE: "paarse roet"
+  BANNER_RHOMBUS_RED: "roede roet"
+  BANNER_RHOMBUS_WHITE: "witte roet"
+  BANNER_RHOMBUS_YELLOW: "gaele roet"
+  BANNER_SKULL_BLACK: "zjwart schedelwapen"
+  BANNER_SKULL_BLUE: "blauw schedelwapen"
+  BANNER_SKULL_BROWN: "broen schedelwapen"
+  BANNER_SKULL_CYAN: "turquoise schedelwapen"
+  BANNER_SKULL_GRAY: "gries schedelwapen"
+  BANNER_SKULL_GREEN: "greun schedelwapen"
+  BANNER_SKULL_LIGHT_BLUE: "leechtblauw schedelwapen"
+  BANNER_SKULL_LIGHT_GRAY: "leechtgries schedelwapen"
+  BANNER_SKULL_LIME: "limoengreun schedelwapen"
+  BANNER_SKULL_MAGENTA: "magenta schedelwapen"
+  BANNER_SKULL_ORANGE: "oranje schedelwapen"
+  BANNER_SKULL_PINK: "roze schedelwapen"
+  BANNER_SKULL_PURPLE: "paars schedelwapen"
+  BANNER_SKULL_RED: "roed schedelwapen"
+  BANNER_SKULL_WHITE: "wit schedelwapen"
+  BANNER_SKULL_YELLOW: "gael schedelwapen"
+  BANNER_SMALL_STRIPES_BLACK: "zjwarte paly"
+  BANNER_SMALL_STRIPES_BLUE: "blauwe paly"
+  BANNER_SMALL_STRIPES_BROWN: "broene paly"
+  BANNER_SMALL_STRIPES_CYAN: "turquoise paly"
+  BANNER_SMALL_STRIPES_GRAY: "grieze paly"
+  BANNER_SMALL_STRIPES_GREEN: "greune paly"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "leechtblauwe paly"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "leechtgrieze paly"
+  BANNER_SMALL_STRIPES_LIME: "limoengreune paole"
+  BANNER_SMALL_STRIPES_MAGENTA: "magenta paly"
+  BANNER_SMALL_STRIPES_ORANGE: "oranje paly"
+  BANNER_SMALL_STRIPES_PINK: "roze paly"
+  BANNER_SMALL_STRIPES_PURPLE: "paarse paly"
+  BANNER_SMALL_STRIPES_RED: "roede paly"
+  BANNER_SMALL_STRIPES_WHITE: "witte paly"
+  BANNER_SMALL_STRIPES_YELLOW: "gaele paly"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "zjwart basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blauw basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "broen basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turquoise basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "gries basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "greun basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "leechtblauw basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "leechtgries basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "limoengreun basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "magenta basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "oranje basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "roze basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "paars basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "roed basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "wit basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gael basis dexter kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "zjwart basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blauw basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "broen basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turquoise basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "gries basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "greun basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "leechtblauw basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "leechtgries basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "limoengreun basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "magenta basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "oranje basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "roze basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "paars basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "roed basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "wit basis sinister kanton"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gael basis sinister kanton"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "zjwart hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blauw hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "broen hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turquoise hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "gries hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "greun hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "leechtblauw hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "leechtgries hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_LIME: "limoengreun hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "magenta hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "oranje hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_PINK: "roze hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "paars hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_RED: "roed hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "wit hoofd dexter kanton"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gael hoofd dexter kanton"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "zjwart hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blauw hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "broen hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turquoise hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "gries hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "greun hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "leechtblauw hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "leechtgries hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "limoengreun hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "magenta hoofd dexter kanton"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "oranje hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "roze hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "paars hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_RED: "roed hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "wit hoofd sinister kanton"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gael hoofd sinister kanton"
+  BANNER_STRAIGHT_CROSS_BLACK: "zjwart kroes"
+  BANNER_STRAIGHT_CROSS_BLUE: "blauw kroes"
+  BANNER_STRAIGHT_CROSS_BROWN: "broen kroes"
+  BANNER_STRAIGHT_CROSS_CYAN: "turquoise kroes"
+  BANNER_STRAIGHT_CROSS_GRAY: "gries kroes"
+  BANNER_STRAIGHT_CROSS_GREEN: "greun kroes"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "leechtblauw kroes"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "leechtgries kroes"
+  BANNER_STRAIGHT_CROSS_LIME: "limoengreun kroes"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magenta kroes"
+  BANNER_STRAIGHT_CROSS_ORANGE: "oranje kroes"
+  BANNER_STRAIGHT_CROSS_PINK: "roze kroes"
+  BANNER_STRAIGHT_CROSS_PURPLE: "paars kroes"
+  BANNER_STRAIGHT_CROSS_RED: "roed kroes"
+  BANNER_STRAIGHT_CROSS_WHITE: "wit kroes"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gael kroes"
+  BANNER_STRIPE_BOTTOM_BLACK: "zjwarte basis"
+  BANNER_STRIPE_BOTTOM_BLUE: "blauwe basis"
+  BANNER_STRIPE_BOTTOM_BROWN: "broene basis"
+  BANNER_STRIPE_BOTTOM_CYAN: "turquoise basis"
+  BANNER_STRIPE_BOTTOM_GRAY: "grieze basis"
+  BANNER_STRIPE_BOTTOM_GREEN: "greune basis"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "leechtblauwe basis"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "leechtgrieze basis"
+  BANNER_STRIPE_BOTTOM_LIME: "limoengreune basis"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "magenta basis"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranje basis"
+  BANNER_STRIPE_BOTTOM_PINK: "roze basis"
+  BANNER_STRIPE_BOTTOM_PURPLE: "paarse basis"
+  BANNER_STRIPE_BOTTOM_RED: "roede basis"
+  BANNER_STRIPE_BOTTOM_WHITE: "witte basis"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gaele basis"
+  BANNER_STRIPE_CENTER_BLACK: "zjwarte päöl"
+  BANNER_STRIPE_CENTER_BLUE: "blauwe päöl"
+  BANNER_STRIPE_CENTER_BROWN: "broene päöl"
+  BANNER_STRIPE_CENTER_CYAN: "turquoise päöl"
+  BANNER_STRIPE_CENTER_GRAY: "grieze päöl"
+  BANNER_STRIPE_CENTER_GREEN: "greune päöl"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "leechtblauwe päöl"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "leechtgrieze päöl"
+  BANNER_STRIPE_CENTER_LIME: "limoengreune päöl"
+  BANNER_STRIPE_CENTER_MAGENTA: "magenta päöl"
+  BANNER_STRIPE_CENTER_ORANGE: "oranje päöl"
+  BANNER_STRIPE_CENTER_PINK: "roze päöl"
+  BANNER_STRIPE_CENTER_PURPLE: "paarse päöl"
+  BANNER_STRIPE_CENTER_RED: "roede päöl"
+  BANNER_STRIPE_CENTER_WHITE: "witte päöl"
+  BANNER_STRIPE_CENTER_YELLOW: "gaele päöl"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "zjwarte band sinister"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blauwe band sinister"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "broene band sinister"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turquoise band sinister"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "grieze band sinister"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "greune band sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "leechtblauwe band sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "leechtgrieze band sinister"
+  BANNER_STRIPE_DOWNLEFT_LIME: "limoengreune band sinister"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta bocht sinister"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "oranje band sinister"
+  BANNER_STRIPE_DOWNLEFT_PINK: "roze band sinister"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "paarse band sinister"
+  BANNER_STRIPE_DOWNLEFT_RED: "roede band sinister"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "witte band sinister"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gaele band sinister"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "zjwarte band"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blauwe band"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "broene band"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turquoise band"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "grieze band"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "greune band"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "leechtblauwe band"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "leechtgrieze band"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "limoengreune band"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "magenta band"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "oranje band"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "roze band"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "paarse band"
+  BANNER_STRIPE_DOWNRIGHT_RED: "roede band"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "witte band"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gaele band"
+  BANNER_STRIPE_LEFT_BLACK: "zjwarte päöl dexter"
+  BANNER_STRIPE_LEFT_BLUE: "blauwe päöl dexter"
+  BANNER_STRIPE_LEFT_BROWN: "broene päöl dexter"
+  BANNER_STRIPE_LEFT_CYAN: "turquoise päöl dexter"
+  BANNER_STRIPE_LEFT_GRAY: "grieze päöl dexter"
+  BANNER_STRIPE_LEFT_GREEN: "greune päöl dexter"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "leechtblauwe päöl dexter"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "leechtgrieze päöl dexter"
+  BANNER_STRIPE_LEFT_LIME: "limoengreune päöl dexter"
+  BANNER_STRIPE_LEFT_MAGENTA: "magenta päöl dexter"
+  BANNER_STRIPE_LEFT_ORANGE: "oranje päöl dexter"
+  BANNER_STRIPE_LEFT_PINK: "roze päöl dexter"
+  BANNER_STRIPE_LEFT_PURPLE: "paarse päöl dexter"
+  BANNER_STRIPE_LEFT_RED: "roede päöl dexter"
+  BANNER_STRIPE_LEFT_WHITE: "witte päöl dexter"
+  BANNER_STRIPE_LEFT_YELLOW: "gaele päöl dexter"
+  BANNER_STRIPE_MIDDLE_BLACK: "zjwarte faas"
+  BANNER_STRIPE_MIDDLE_BLUE: "blauwe faas"
+  BANNER_STRIPE_MIDDLE_BROWN: "broene faas"
+  BANNER_STRIPE_MIDDLE_CYAN: "turquoise faas"
+  BANNER_STRIPE_MIDDLE_GRAY: "grieze faas"
+  BANNER_STRIPE_MIDDLE_GREEN: "greune faas"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "leechtblauwe faas"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "leechtgrieze faas"
+  BANNER_STRIPE_MIDDLE_LIME: "limoengreune faas"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "magenta faas"
+  BANNER_STRIPE_MIDDLE_ORANGE: "oranje faas"
+  BANNER_STRIPE_MIDDLE_PINK: "roze faas"
+  BANNER_STRIPE_MIDDLE_PURPLE: "paarse faas"
+  BANNER_STRIPE_MIDDLE_RED: "roede faas"
+  BANNER_STRIPE_MIDDLE_WHITE: "witte faas"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gaele faas"
+  BANNER_STRIPE_RIGHT_BLACK: "zjwarte päöl sinister"
+  BANNER_STRIPE_RIGHT_BLUE: "blauwe päöl sinister"
+  BANNER_STRIPE_RIGHT_BROWN: "broene päöl sinister"
+  BANNER_STRIPE_RIGHT_CYAN: "turquoise päöl sinister"
+  BANNER_STRIPE_RIGHT_GRAY: "griese päöl sinister"
+  BANNER_STRIPE_RIGHT_GREEN: "greune päöl sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "leechtblauwe päöl sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "leechtgrieze päöl sinister"
+  BANNER_STRIPE_RIGHT_LIME: "limoengreun päöl sinister"
+  BANNER_STRIPE_RIGHT_MAGENTA: "magenta päöl sinister"
+  BANNER_STRIPE_RIGHT_ORANGE: "oranje päöl sinister"
+  BANNER_STRIPE_RIGHT_PINK: "roze päöl sinister"
+  BANNER_STRIPE_RIGHT_PURPLE: "paarse päöl sinister"
+  BANNER_STRIPE_RIGHT_RED: "roede päöl sinister"
+  BANNER_STRIPE_RIGHT_WHITE: "witte päöl sinister"
+  BANNER_STRIPE_RIGHT_YELLOW: "gaele päöl sinister"
+  BANNER_STRIPE_TOP_BLACK: "zjwarte top"
+  BANNER_STRIPE_TOP_BLUE: "blauwe top"
+  BANNER_STRIPE_TOP_BROWN: "broene top"
+  BANNER_STRIPE_TOP_CYAN: "turquoise top"
+  BANNER_STRIPE_TOP_GRAY: "grieze top"
+  BANNER_STRIPE_TOP_GREEN: "greune top"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "leechtblauwe top"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "leechtgrieze top"
+  BANNER_STRIPE_TOP_LIME: "limoengreun top"
+  BANNER_STRIPE_TOP_MAGENTA: "magenta top"
+  BANNER_STRIPE_TOP_ORANGE: "oranje top"
+  BANNER_STRIPE_TOP_PINK: "roze top"
+  BANNER_STRIPE_TOP_PURPLE: "paarse top"
+  BANNER_STRIPE_TOP_RED: "roeje top"
+  BANNER_STRIPE_TOP_WHITE: "witte top"
+  BANNER_STRIPE_TOP_YELLOW: "gaele top"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "zjwarte keper"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blauwe keper"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "broene keper"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turquoise keper"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "grieze keper"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "greune keper"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "leechtblauwe keper"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "leechtgrieze keper"
+  BANNER_TRIANGLE_BOTTOM_LIME: "limoengreune keper"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "magenta keper"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "oranje keper"
+  BANNER_TRIANGLE_BOTTOM_PINK: "roze keper"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "paarse keper"
+  BANNER_TRIANGLE_BOTTOM_RED: "roede keper"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "witte keper"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gaele keper"
+  BANNER_TRIANGLE_TOP_BLACK: "zjwarte omgekeerde keper"
+  BANNER_TRIANGLE_TOP_BLUE: "blauwe omgekeerde keper"
+  BANNER_TRIANGLE_TOP_BROWN: "broene omgekeerde keper"
+  BANNER_TRIANGLE_TOP_CYAN: "turquoise omgekeerde keper"
+  BANNER_TRIANGLE_TOP_GRAY: "grieze omgekeerde keper"
+  BANNER_TRIANGLE_TOP_GREEN: "greune omgekeerde keper"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "leechtblauwe omgekeerde keper"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "leechtgrieze omgekeerde keper"
+  BANNER_TRIANGLE_TOP_LIME: "limoengreune omgekierde keper"
+  BANNER_TRIANGLE_TOP_MAGENTA: "magenta omgekeerde keper"
+  BANNER_TRIANGLE_TOP_ORANGE: "oranje omgekeerde keper"
+  BANNER_TRIANGLE_TOP_PINK: "roze omgekeerde keper"
+  BANNER_TRIANGLE_TOP_PURPLE: "paarse omgekeerde keper"
+  BANNER_TRIANGLE_TOP_RED: "roede omgekeerde keper"
+  BANNER_TRIANGLE_TOP_WHITE: "witte omgekeerde keper"
+  BANNER_TRIANGLE_TOP_YELLOW: "gaele omgekeerde keper"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "zjwarte ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blauwe ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "broene ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turquoise ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "grieze ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "greune ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "leechtblauwe ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "leechtgrieze ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_LIME: "limoengreune ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "magenta ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oranje ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_PINK: "roze ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "paarse ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_RED: "roede ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "witte ingesprongen basis"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gaele ingesprongen basis"
+  BANNER_TRIANGLES_TOP_BLACK: "zjwart ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_BLUE: "blauw ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_BROWN: "broen ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_CYAN: "turquoise ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_GRAY: "gries ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_GREEN: "greun ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "leechtblauw ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "leechtgries ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_LIME: "limoengreun ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_MAGENTA: "magenta ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_ORANGE: "oranje ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_PINK: "roze ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_PURPLE: "paars ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_RED: "roed ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_WHITE: "wit ingesprongen hoofd"
+  BANNER_TRIANGLES_TOP_YELLOW: "gael ingesprongen hoofd"
+  BARREL: "vaat"
+  BARRIER: "barrière"
+  BASALT: "basalt"
+  BEACON: "bake"
+  BEACON_PRIMARY: "primaire kracht"
+  BEACON_SECONDARY: "secundaire kracht"
+  BED_NO_SLEEP: "de kins allein tiedens de nach en tiedens onweer slaope"
+  BED_NOT_SAFE: "de kéns noe neet slaopen; er zien monsters in de buurt"
+  BED_OBSTRUCTED: "dit bèd is belemmerd"
+  BED_OCCUPIED: "dit bèd is bezat"
+  BED_TOO_FAR_AWAY: "de kéns noe neet slaopen; het bed is te ver weg"
+  BEDROCK: "fondsjtein"
+  BEE_NEST: "biejenest"
+  BEEHIVE: "biejekorf"
+  BEETROOTS: "bieten"
+  BELL: "bel"
+  BIG_DRIPLEAF: "groette druppelblaad"
+  BIG_DRIPLEAF_STEM: "groette druppelblaadstengel"
+  BIRCH_BUTTON: "berke knop"
+  BIRCH_DOOR: "birkehoute duuer"
+  BIRCH_FENCE: "berkenhouten hek"
+  BIRCH_FENCE_GATE: "berkenhouten peurtje"
+  BIRCH_HANGING_SIGN: "berkenhouten hangbord"
+  BIRCH_LEAVES: "bérkenblajere"
+  BIRCH_LOG: "berkenstjam"
+  BIRCH_PLANKS: "berkenhouten plenk"
+  BIRCH_PRESSURE_PLATE: "berkehoute drukplaat"
+  BIRCH_SAPLING: "berkenkiemplant"
+  BIRCH_SIGN: "berkenhouten bord"
+  BIRCH_SLAB: "berkenhouten plaat"
+  BIRCH_STAIRS: "berkehoute traeje"
+  BIRCH_TRAPDOOR: "berkehouten valloek"
+  BIRCH_WALL_HANGING_SIGN: "berkenhouten oethangbord"
+  BIRCH_WALL_SIGN: "berkenhouten bord aon moor"
+  BIRCH_WOOD: "birkehout"
+  BLACK_BANNER: "zjwarte banier"
+  BLACK_BED: "zjwart bèd"
+  BLACK_CANDLE: "zwarte kaars"
+  BLACK_CANDLE_CAKE: "taart met zwarte kaars"
+  BLACK_CARPET: "zjwart kerpèt"
+  BLACK_CONCRETE: "zjwart beton"
+  BLACK_CONCRETE_POWDER: "zjwart cement"
+  BLACK_GLAZED_TERRACOTTA: "zjwartgeglazuurde terracotta"
+  BLACK_SHULKER_BOX: "zjwarte shulkerdoeas"
+  BLACK_STAINED_GLASS: "zjwart gekleurd glaas"
+  BLACK_STAINED_GLASS_PANE: "zjwart gekleurde glazen roet"
+  BLACK_TERRACOTTA: "zjwarte terracotta"
+  BLACK_WOOL: "zjwarte wol"
+  BLACKSTONE: "zwartstein"
+  BLACKSTONE_SLAB: "zwartstein plaat"
+  BLACKSTONE_STAIRS: "zwartstein traeje"
+  BLACKSTONE_WALL: "zwartstein moor"
+  BLAST_FURNACE: "hoegaove"
+  BLUE_BANNER: "blauwe banier"
+  BLUE_BED: "blauw bèd"
+  BLUE_CANDLE: "blauwe kaars"
+  BLUE_CANDLE_CAKE: "taart met blauwe kaars"
+  BLUE_CARPET: "blauw kerpèt"
+  BLUE_CONCRETE: "blauw beton"
+  BLUE_CONCRETE_POWDER: "blauw cement"
+  BLUE_GLAZED_TERRACOTTA: "blauwgeglazuurde terracotta"
+  BLUE_ICE: "blauw ies"
+  BLUE_ORCHID: "blauwe orchidee"
+  BLUE_SHULKER_BOX: "blauwe shulkerdoeas"
+  BLUE_STAINED_GLASS: "blauw gekleurd glaas"
+  BLUE_STAINED_GLASS_PANE: "blauw gekleurde glazen roet"
+  BLUE_TERRACOTTA: "blauwe terracotta"
+  BLUE_WOOL: "blauwe wol"
+  BONE_BLOCK: "bottenblok"
+  BOOKSHELF: "bokekas"
+  BRAIN_CORAL: "hersenkoraal"
+  BRAIN_CORAL_BLOCK: "hersenkoraalblok"
+  BRAIN_CORAL_FAN: "hersenkoraalwaaijer"
+  BRAIN_CORAL_WALL_FAN: "hersenkoraalwaaier aon moer"
+  BREWING_STAND: "brouwstanderd"
+  BRICK_SLAB: "bakstein plaat"
+  BRICK_STAIRS: "bakstein traeje"
+  BRICK_WALL: "baksteinen moor"
+  BRICKS: "baksteinen"
+  BROWN_BANNER: "broene banier"
+  BROWN_BED: "broen bèd"
+  BROWN_CANDLE: "broene kaars"
+  BROWN_CANDLE_CAKE: "taart met broene kaars"
+  BROWN_CARPET: "broen kerpèt"
+  BROWN_CONCRETE: "broen beton"
+  BROWN_CONCRETE_POWDER: "broen cement"
+  BROWN_GLAZED_TERRACOTTA: "broengeglazuurde terracotta"
+  BROWN_MUSHROOM: "broene paddenstoel"
+  BROWN_MUSHROOM_BLOCK: "broen paddenstoelenblok"
+  BROWN_SHULKER_BOX: "broene shulkerdoeas"
+  BROWN_STAINED_GLASS: "broen gekleurd glaas"
+  BROWN_STAINED_GLASS_PANE: "broen gekleurde glazen roet"
+  BROWN_TERRACOTTA: "broene terracotta"
+  BROWN_WOOL: "broene wol"
+  BUBBLE_COLUMN: "bellekolom"
+  BUBBLE_CORAL: "blaaskoraal"
+  BUBBLE_CORAL_BLOCK: "blaaskoraalblok"
+  BUBBLE_CORAL_FAN: "blaaskoraalwaaijer"
+  BUBBLE_CORAL_WALL_FAN: "blaaskoraalwaaier aon moer"
+  BUDDING_AMETHYST: "ontloekende amethist"
+  CACTUS: "kaktus"
+  CAKE: "vlaai"
+  CALCITE: "calciet"
+  CALIBRATED_SCULK_SENSOR: "gekalibreerde sculksensor"
+  CAMPFIRE: "kampvuur"
+  CANDLE: "kaars"
+  CANDLE_CAKE: "taart met kaars"
+  CARROTS: "wortels"
+  CARTOGRAPHY_TABLE: "kartografietaofel"
+  CARVED_PUMPKIN: "gesjneeje pompoen"
+  CAULDRON: "kaetel"
+  CAVE_AIR: "grot loch"
+  CAVE_VINES: "grot lianen"
+  CAVE_VINES_PLANT: "grot liaanplant"
+  CHAIN: "ketting"
+  CHAIN_COMMAND_BLOCK: "gekoppeld opdrachblok"
+  CHERRY_BUTTON: "kesehouten knop"
+  CHERRY_DOOR: "kesehouten duuer"
+  CHERRY_FENCE: "kesehouten hek"
+  CHERRY_FENCE_GATE: "kesehouten peurtje"
+  CHERRY_HANGING_SIGN: "kesehouten hangbord"
+  CHERRY_LEAVES: "keseblajere"
+  CHERRY_LOG: "keseboumstam"
+  CHERRY_PLANKS: "kesehouten plenk"
+  CHERRY_PRESSURE_PLATE: "kesehouten drukplaat"
+  CHERRY_SAPLING: "kesekiemplant"
+  CHERRY_SIGN: "kesehouten bord"
+  CHERRY_SLAB: "kesehouten plaat"
+  CHERRY_STAIRS: "kesehouten traeje"
+  CHERRY_TRAPDOOR: "kesehouten valloek"
+  CHERRY_WALL_HANGING_SIGN: "kesehouten oethangbord"
+  CHERRY_WALL_SIGN: "kesehouten bord aon moor"
+  CHERRY_WOOD: "kesehout"
+  CHEST: "kis"
+  CHIPPED_ANVIL: "gebarsjte aambild"
+  CHISELED_BOOKSHELF: "bewerkte bokekas"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "gebieteld deepleistein"
+  CHISELED_NETHER_BRICKS: "gebietelde netherbakstein"
+  CHISELED_POLISHED_BLACKSTONE: "gebietelde gepolieste zwartstein"
+  CHISELED_QUARTZ_BLOCK: "gebieteld kwartsblok"
+  CHISELED_RED_SANDSTONE: "gebietelde roeje zandstein"
+  CHISELED_SANDSTONE: "gebietelde zandstein"
+  CHISELED_STONE_BRICKS: "gebietelde bloksteinen"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "chorusbloom"
+  CHORUS_PLANT: "chorusplant"
+  CLAY: "kleij"
+  COAL_BLOCK: "kaoleblok"
+  COAL_ORE: "sjteinkoolerts"
+  COARSE_DIRT: "grovve drek"
+  COBBLED_DEEPSLATE: "geplaveid deepleistein"
+  COBBLED_DEEPSLATE_SLAB: "geplaveid deepleistein plaat"
+  COBBLED_DEEPSLATE_STAIRS: "geplaveid deepleistein traeje"
+  COBBLED_DEEPSLATE_WALL: "geplaveid deepleistein môôr"
+  COBBLESTONE: "keij"
+  COBBLESTONE_SLAB: "keijplaat"
+  COBBLESTONE_STAIRS: "keijstein traeje"
+  COBBLESTONE_WALL: "keijmoor"
+  COBWEB: "spinneweb"
+  COCOA: "cacao"
+  COMMAND_BLOCK: "opdrachblok"
+  COMPARATOR: "redstonevergelieker"
+  COMPOSTER: "kómposbak"
+  CONDUIT: "krach van oet de zee"
+  COPPER_BLOCK: "kauperblok"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "kaupererts"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "korenbloom"
+  CRACKED_DEEPSLATE_BRICKS: "gebarsen deepleistein bakstein"
+  CRACKED_DEEPSLATE_TILES: "gebarsten deepleistein tégels"
+  CRACKED_NETHER_BRICKS: "gebarste netherbakstein"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "gebarste gepolieste zwartstein bakstein"
+  CRACKED_STONE_BRICKS: "gebarste bloksteinen"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "werkbank"
+  CREEPER_HEAD: "creeperhoofd"
+  CREEPER_WALL_HEAD: "creeperhoofd aon moor"
+  CRIMSON_BUTTON: "helroede houten knöp"
+  CRIMSON_DOOR: "helroede deur"
+  CRIMSON_FENCE: "helroede houten hek"
+  CRIMSON_FENCE_GATE: "helroede houten peurtje"
+  CRIMSON_FUNGUS: "helroede zwam"
+  CRIMSON_HANGING_SIGN: "helroed houten hangbord"
+  CRIMSON_HYPHAE: "helroede schimmeldraod"
+  CRIMSON_NYLIUM: "helroede nylium"
+  CRIMSON_PLANKS: "helroede houten plenk"
+  CRIMSON_PRESSURE_PLATE: "helroede houten drukplaat"
+  CRIMSON_ROOTS: "helroede wortelle"
+  CRIMSON_SIGN: "helroed houten bord"
+  CRIMSON_SLAB: "helroede houten plaat"
+  CRIMSON_STAIRS: "helroede houte traeje"
+  CRIMSON_STEM: "helroede stem"
+  CRIMSON_TRAPDOOR: "helroede houten valloek"
+  CRIMSON_WALL_HANGING_SIGN: "helroed houten oethangbord"
+  CRIMSON_WALL_SIGN: "helroed bord aan moor"
+  CRYING_OBSIDIAN: "huilend obsidiaan"
+  CUT_COPPER: "gesneeïen kauper"
+  CUT_COPPER_SLAB: "gesneeïen kauper plaat"
+  CUT_COPPER_STAIRS: "gesneeje kauper traeje"
+  CUT_RED_SANDSTONE: "gesneeje roeie zandstein"
+  CUT_RED_SANDSTONE_SLAB: "gesneeje roeje zandsteine plaat"
+  CUT_SANDSTONE: "gesneeje zandstein"
+  CUT_SANDSTONE_SLAB: "gesneeje zandsteine plaat"
+  CYAN_BANNER: "turquoise banier"
+  CYAN_BED: "turquoise bèd"
+  CYAN_CANDLE: "turquoise kaars"
+  CYAN_CANDLE_CAKE: "taart met turquoise kaars"
+  CYAN_CARPET: "turquoise kerpèt"
+  CYAN_CONCRETE: "turquoise beton"
+  CYAN_CONCRETE_POWDER: "turquoise cement"
+  CYAN_GLAZED_TERRACOTTA: "turquoisegeglazuurde terracotta"
+  CYAN_SHULKER_BOX: "turquoise shulkerdoeas"
+  CYAN_STAINED_GLASS: "turquoise gekleurde glaas"
+  CYAN_STAINED_GLASS_PANE: "turquoise gekleurde glazen roet"
+  CYAN_TERRACOTTA: "turqouoise terracotta"
+  CYAN_WOOL: "turquoise wol"
+  DAMAGED_ANVIL: "beschadigd aambild"
+  DANDELION: "paerdebloom"
+  DARK_OAK_BUTTON: "donkere eikehoute knop"
+  DARK_OAK_DOOR: "dónkere eikenhouten duuer"
+  DARK_OAK_FENCE: "dónkere eikenhouten hek"
+  DARK_OAK_FENCE_GATE: "donkere eikenhouten peurtje"
+  DARK_OAK_HANGING_SIGN: "donkereikenhouten hangbord"
+  DARK_OAK_LEAVES: "dónkere eikenblajere"
+  DARK_OAK_LOG: "donkereeikenhoutensjtam"
+  DARK_OAK_PLANKS: "donkereikenhouten plenk"
+  DARK_OAK_PRESSURE_PLATE: "donkere eikehoute drukplaat"
+  DARK_OAK_SAPLING: "donkere eikenkiemplant"
+  DARK_OAK_SIGN: "donkereikenhouten bord"
+  DARK_OAK_SLAB: "donkereeikenhouten plaat"
+  DARK_OAK_STAIRS: "donkereikenhoute traeje"
+  DARK_OAK_TRAPDOOR: "donkereikenhouten valloek"
+  DARK_OAK_WALL_HANGING_SIGN: "donkereikenhouten oethangbord"
+  DARK_OAK_WALL_SIGN: "donkereikenhouten bord aon moor"
+  DARK_OAK_WOOD: "donker eikehout"
+  DARK_PRISMARINE: "donkerprismarien"
+  DARK_PRISMARINE_SLAB: "donkerprismarienplaat"
+  DARK_PRISMARINE_STAIRS: "donkerprismarien traeje"
+  DAYLIGHT_DETECTOR: "daagleechsensor"
+  DEAD_BRAIN_CORAL: "doed hersenkoraal"
+  DEAD_BRAIN_CORAL_BLOCK: "doed hersenkoraalblok"
+  DEAD_BRAIN_CORAL_FAN: "doeje hersenkoraalwaaier"
+  DEAD_BRAIN_CORAL_WALL_FAN: "doeje hersenkoraalwaaier aon moer"
+  DEAD_BUBBLE_CORAL: "doed blaaskoraal"
+  DEAD_BUBBLE_CORAL_BLOCK: "doed blaaskoraalblok"
+  DEAD_BUBBLE_CORAL_FAN: "doeje blaaskoraalwaaier"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "doeje blaaskoraalwaaier aon moer"
+  DEAD_BUSH: "doeje stroek"
+  DEAD_FIRE_CORAL: "doed brandkoraal"
+  DEAD_FIRE_CORAL_BLOCK: "doed brandkoraalblok"
+  DEAD_FIRE_CORAL_FAN: "doeje brandkoraalwaaier"
+  DEAD_FIRE_CORAL_WALL_FAN: "doeje brandkoraalwaaier aon moer"
+  DEAD_HORN_CORAL: "doed hoornkoraal"
+  DEAD_HORN_CORAL_BLOCK: "doed haorekoraalblok"
+  DEAD_HORN_CORAL_FAN: "doeje hoornkoraalwaaier"
+  DEAD_HORN_CORAL_WALL_FAN: "doeje hoornkoraalwaaier aon moer"
+  DEAD_TUBE_CORAL: "doed buiskoraal"
+  DEAD_TUBE_CORAL_BLOCK: "doed buuskoraalblok"
+  DEAD_TUBE_CORAL_FAN: "doeje buiskoraalwaaier"
+  DEAD_TUBE_CORAL_WALL_FAN: "doeje buiskoraalwaaier aon moer"
+  DECORATED_POT: "versierde pot"
+  DEEPSLATE: "deepleistein"
+  DEEPSLATE_BRICK_SLAB: "deepleistein bakstein plaat"
+  DEEPSLATE_BRICK_STAIRS: "deepleistein bakstein traeje"
+  DEEPSLATE_BRICK_WALL: "deepleistein bakstein môôr"
+  DEEPSLATE_BRICKS: "deepleistein bakstein"
+  DEEPSLATE_COAL_ORE: "deepkoolerts"
+  DEEPSLATE_COPPER_ORE: "deepkaupererts"
+  DEEPSLATE_DIAMOND_ORE: "deepdiamanterts"
+  DEEPSLATE_EMERALD_ORE: "deepsmaragderts"
+  DEEPSLATE_GOLD_ORE: "deepgolderts"
+  DEEPSLATE_IRON_ORE: "deepiezererts"
+  DEEPSLATE_LAPIS_ORE: "deeplapislazuli-erts"
+  DEEPSLATE_REDSTONE_ORE: "deepredstone-erts"
+  DEEPSLATE_TILE_SLAB: "deepleistein tégel plaat"
+  DEEPSLATE_TILE_STAIRS: "deepleistein tégeltraeje"
+  DEEPSLATE_TILE_WALL: "deepleistein tégel môôr"
+  DEEPSLATE_TILES: "deepleistein tégels"
+  DETECTOR_RAIL: "detectiespoear"
+  DIAMOND_BLOCK: "diamantblok"
+  DIAMOND_ORE: "diamanterts"
+  DIORITE: "dioriet"
+  DIORITE_SLAB: "diorietplaat"
+  DIORITE_STAIRS: "dioriet traeje"
+  DIORITE_WALL: "diorietmoer"
+  DIRT: "drek"
+  DIRT_PATH: "aardepaej"
+  DISPENSER: "dispenser"
+  DRAGON_EGG: "drakenei"
+  DRAGON_HEAD: "drakenhoofd"
+  DRAGON_WALL_HEAD: "drakenhoofd aon moer"
+  DRIED_KELP_BLOCK: "gedraögde kelp blok"
+  DRIPSTONE_BLOCK: "druupsteinblok"
+  DROPPER: "dropper"
+  EMERALD_BLOCK: "smaragdblok"
+  EMERALD_ORE: "smaragderts"
+  ENCHANTING_TABLE: "betouvertaofel"
+  END_GATEWAY: "endtoegangsportaal"
+  END_PORTAL: "endportaal"
+  END_PORTAL_FRAME: "endportaalframe"
+  END_ROD: "endstaaf"
+  END_STONE: "endstein"
+  END_STONE_BRICK_SLAB: "endbloksteinen plaat"
+  END_STONE_BRICK_STAIRS: "endblokstein traeje"
+  END_STONE_BRICK_WALL: "endbakstein moor"
+  END_STONE_BRICKS: "endbloksteinen"
+  ENDER_CHEST: "enderkis"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "bloetgestelde kauper"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "bloetgestelde gesneeïen kauper"
+  EXPOSED_CUT_COPPER_SLAB: "bloetgestelde gesneeïen kauper plaat"
+  EXPOSED_CUT_COPPER_STAIRS: "bloetgestelde gesneeje kauper traeje"
+  FARMLAND: "akkerlandj"
+  FERN: "varen"
+  FIRE: "vuur"
+  FIRE_CORAL: "brandkoraal"
+  FIRE_CORAL_BLOCK: "brandkoraalblok"
+  FIRE_CORAL_FAN: "brandkoraalwaaijer"
+  FIRE_CORAL_WALL_FAN: "brandkoraalwaaier aon moer"
+  FLETCHING_TABLE: "bevederingstaofel"
+  FLOWER_POT: "bloompot"
+  FLOWERING_AZALEA: "bleuijende azalea"
+  FLOWERING_AZALEA_LEAVES: "bleuiende azaleablajer"
+  FROGSPAWN: "kwakkerdril"
+  FROSTED_ICE: "bevroren ies"
+  FURNACE: "aove"
+  GILDED_BLACKSTONE: "vergulde zwartstein"
+  GLASS: "glaas"
+  GLASS_PANE: "glazen roet"
+  GLOW_LICHEN: "gloeiende korstmos"
+  GLOWSTONE: "gloeistein"
+  GOLD_BLOCK: "goudblok"
+  GOLD_ORE: "gouderts"
+  GRANITE: "graniet"
+  GRANITE_SLAB: "granietplaat"
+  GRANITE_STAIRS: "graniet traeje"
+  GRANITE_WALL: "granietmoer"
+  GRASS: "graas"
+  GRASS_BLOCK: "graasblok"
+  GRAVEL: "grind"
+  GRAY_BANNER: "grieze banier"
+  GRAY_BED: "gries bèd"
+  GRAY_CANDLE: "grieze kaars"
+  GRAY_CANDLE_CAKE: "taart met grieze kaars"
+  GRAY_CARPET: "gries kerpèt"
+  GRAY_CONCRETE: "gries beton"
+  GRAY_CONCRETE_POWDER: "gries cement"
+  GRAY_GLAZED_TERRACOTTA: "griesgeglazuurde terracotta"
+  GRAY_SHULKER_BOX: "grieze shulkerdoeas"
+  GRAY_STAINED_GLASS: "gries gekleurd glaas"
+  GRAY_STAINED_GLASS_PANE: "gries gekleurde glazen roet"
+  GRAY_TERRACOTTA: "griese terracotta"
+  GRAY_WOOL: "grieze wol"
+  GREEN_BANNER: "greune banier"
+  GREEN_BED: "greun bèd"
+  GREEN_CANDLE: "greune kaars"
+  GREEN_CANDLE_CAKE: "taart met greune kaars"
+  GREEN_CARPET: "greun kerpèt"
+  GREEN_CONCRETE: "greun beton"
+  GREEN_CONCRETE_POWDER: "greun cement"
+  GREEN_GLAZED_TERRACOTTA: "greungeglazuurde terracotta"
+  GREEN_SHULKER_BOX: "greune shulkerdoeas"
+  GREEN_STAINED_GLASS: "greun gekleurd glaas"
+  GREEN_STAINED_GLASS_PANE: "greun gekleurde glazen roet"
+  GREEN_TERRACOTTA: "greune terracotta"
+  GREEN_WOOL: "greune wol"
+  GRINDSTONE: "sliepsjtein"
+  HANGING_ROOTS: "hangende wortelle"
+  HAY_BLOCK: " huijbaal"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "zware drukgevoelige plaat"
+  HONEY_BLOCK: "höning bluk"
+  HONEYCOMB_BLOCK: "höningraat bluk"
+  HOPPER: "trechter"
+  HORN_CORAL: "haorekoraal"
+  HORN_CORAL_BLOCK: "haorekoraalblok"
+  HORN_CORAL_FAN: "haorekoraalwaaijer"
+  HORN_CORAL_WALL_FAN: "hoornkoraalwaaier aon moer"
+  ICE: "ies"
+  INFESTED_CHISELED_STONE_BRICKS: "geïnfecteerde gebietelde bloksteinen"
+  INFESTED_COBBLESTONE: "geïnfecteerde kiezelsjtein"
+  INFESTED_CRACKED_STONE_BRICKS: "geïnfecteerde gebarste bloksteinen"
+  INFESTED_DEEPSLATE: "geïnfesteerde deepleistein"
+  INFESTED_MOSSY_STONE_BRICKS: "geïnfecteerde mossige bloksteinen"
+  INFESTED_STONE: "geïnfecteerde sjtein"
+  INFESTED_STONE_BRICKS: "geïnfecteerde bloksteinen"
+  IRON_BARS: "iezer stave"
+  IRON_BLOCK: "iezerblok"
+  IRON_DOOR: "iezere deur"
+  IRON_ORE: "iezererts"
+  IRON_TRAPDOOR: "iezer valloek"
+  JACK_O_LANTERN: "jack-o'-lantern"
+  JIGSAW: "puzzelblok"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "oerwoud knop"
+  JUNGLE_DOOR: "oerwoudhouten duuer"
+  JUNGLE_FENCE: "oerwoudhouten hek"
+  JUNGLE_FENCE_GATE: "oerwoudhouten peurtje"
+  JUNGLE_HANGING_SIGN: "oerwoudhouten hangbord"
+  JUNGLE_LEAVES: "oerwoudblajere"
+  JUNGLE_LOG: "oerwoudstam"
+  JUNGLE_PLANKS: "oerwoudhouten plenk"
+  JUNGLE_PRESSURE_PLATE: "oerwoudhoute drukplaat"
+  JUNGLE_SAPLING: "oerwoudkiemplant"
+  JUNGLE_SIGN: "oerwoudhouten bord"
+  JUNGLE_SLAB: "oerwoudhouten plaat"
+  JUNGLE_STAIRS: "oerwoudhoute traeje"
+  JUNGLE_TRAPDOOR: "oerwoudhouten valloek"
+  JUNGLE_WALL_HANGING_SIGN: "oerwoudhouten oethangbord"
+  JUNGLE_WALL_SIGN: "oerwoudhouten bord aon moor"
+  JUNGLE_WOOD: "oerwoudhout"
+  KELP: "kelp"
+  KELP_PLANT: "kelpplant"
+  LADDER: "lèdder"
+  LANTERN: "lantaer"
+  LAPIS_BLOCK: "lapislazuliblok"
+  LAPIS_ORE: "lapis lazuli-erts"
+  LARGE_AMETHYST_BUD: "groete amethistknöp"
+  LARGE_FERN: "groete varen"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lava kaetel"
+  LECTERN: "lessenear"
+  LEVER: "hendel"
+  LIGHT: "leecht"
+  LIGHT_BLUE_BANNER: "leechtblauwe banier"
+  LIGHT_BLUE_BED: "leechtblauw bèd"
+  LIGHT_BLUE_CANDLE: "lichtblauwe kaars"
+  LIGHT_BLUE_CANDLE_CAKE: "taart met licht blauwe kaars"
+  LIGHT_BLUE_CARPET: "leechblauw tapiet"
+  LIGHT_BLUE_CONCRETE: "leechtblauw beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "leechtblauw cement"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "leechtblauwgeglazuurde terracotta"
+  LIGHT_BLUE_SHULKER_BOX: "leechblauwe shulkerdoeas"
+  LIGHT_BLUE_STAINED_GLASS: "leechtblauwgekleurd glaas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "leechtblauwgekleurde glazen roet"
+  LIGHT_BLUE_TERRACOTTA: "leechtblauwe terracotta"
+  LIGHT_BLUE_WOOL: "leechtblauwe wol"
+  LIGHT_GRAY_BANNER: "leechtgrieze banier"
+  LIGHT_GRAY_BED: "leechtgries bèd"
+  LIGHT_GRAY_CANDLE: "lichtgrieze kaars"
+  LIGHT_GRAY_CANDLE_CAKE: "taart met licht grieze kaars"
+  LIGHT_GRAY_CARPET: "leechgries tapiet"
+  LIGHT_GRAY_CONCRETE: "leechtgries beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "leechtgries cement"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "leechtgriesgeglazuurde terracotta"
+  LIGHT_GRAY_SHULKER_BOX: "leechtgrieze shulkerdoeas"
+  LIGHT_GRAY_STAINED_GLASS: "leechtgriesgekleurd glaas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "leechtgriesgekleurde glazen roet"
+  LIGHT_GRAY_TERRACOTTA: "leechtgrieze terracotta"
+  LIGHT_GRAY_WOOL: "leechtgrieze wol"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "lichte drukgeveulige plaat"
+  LIGHTNING_ROD: "bliksem aafleijer"
+  LILAC: "sering"
+  LILY_OF_THE_VALLEY: "lelietje-van-dalen"
+  LILY_PAD: "waterlelie"
+  LIME_BANNER: "limoengreune banier"
+  LIME_BED: "limoengreun bèd"
+  LIME_CANDLE: "limoengreune kaars"
+  LIME_CANDLE_CAKE: "taart met limoengreune kaars"
+  LIME_CARPET: "limoengreun tapiet"
+  LIME_CONCRETE: "limoengreun beton"
+  LIME_CONCRETE_POWDER: "limoengreun cement"
+  LIME_GLAZED_TERRACOTTA: "limoengreungeglazuurde terracotta"
+  LIME_SHULKER_BOX: "limoengreune shulkerdoes"
+  LIME_STAINED_GLASS: "limoengreungekleurd glaas"
+  LIME_STAINED_GLASS_PANE: "limoengreungekleurde glazen roet"
+  LIME_TERRACOTTA: "limoengreune terracotta"
+  LIME_WOOL: "limoengreune wol"
+  LODESTONE: "zeilstein"
+  LOOM: "weefgetouw"
+  MAGENTA_BANNER: "magenta banier"
+  MAGENTA_BED: "magenta bèd"
+  MAGENTA_CANDLE: "magenta kaars"
+  MAGENTA_CANDLE_CAKE: "taart met magenta kaars"
+  MAGENTA_CARPET: "magenta kerpèt"
+  MAGENTA_CONCRETE: "magenta beton"
+  MAGENTA_CONCRETE_POWDER: "magenta cement"
+  MAGENTA_GLAZED_TERRACOTTA: "magentageglazuurde terracotta"
+  MAGENTA_SHULKER_BOX: "magenta shulkerdoeas"
+  MAGENTA_STAINED_GLASS: "magenta gekleurd glaas"
+  MAGENTA_STAINED_GLASS_PANE: "magenta gekleurde glazen roet"
+  MAGENTA_TERRACOTTA: "magenta terracotta"
+  MAGENTA_WOOL: "magenta wol"
+  MAGMA_BLOCK: "magmablok"
+  MANGROVE_BUTTON: "mangrovehouten knop"
+  MANGROVE_DOOR: "mangrovehouten duuer"
+  MANGROVE_FENCE: "mangrovehouten hek"
+  MANGROVE_FENCE_GATE: "mangrovehouten peurtje"
+  MANGROVE_HANGING_SIGN: "mangrovehouten hangbord"
+  MANGROVE_LEAVES: "mangroveblajere"
+  MANGROVE_LOG: "mangrovestam"
+  MANGROVE_PLANKS: "mangrovehouten plenk"
+  MANGROVE_PRESSURE_PLATE: "mangrovehouten drukplaat"
+  MANGROVE_PROPAGULE: "mangrovebreujknop"
+  MANGROVE_ROOTS: "mangrovewortelle"
+  MANGROVE_SIGN: "mangrovehouten bord"
+  MANGROVE_SLAB: "mangrovehouten plaat"
+  MANGROVE_STAIRS: "mangrovehouten traeje"
+  MANGROVE_TRAPDOOR: "mangrovehouten valloek"
+  MANGROVE_WALL_HANGING_SIGN: "mangrovehouten oethangbord"
+  MANGROVE_WALL_SIGN: "mangrovehouten bord aon moor"
+  MANGROVE_WOOD: "mangrovehout"
+  MEDIUM_AMETHYST_BUD: "middelgroete amethistknöp"
+  MELON: "meloen"
+  MELON_STEM: "meloen sjtam"
+  MOSS_BLOCK: "mosblok"
+  MOSS_CARPET: "mostapiét"
+  MOSSY_COBBLESTONE: "mossige keijstein"
+  MOSSY_COBBLESTONE_SLAB: "mossige keisjteinen plaat"
+  MOSSY_COBBLESTONE_STAIRS: "mossige keistein traeje"
+  MOSSY_COBBLESTONE_WALL: "mossige keijmoor"
+  MOSSY_STONE_BRICK_SLAB: "mossige bloksteinen plaat"
+  MOSSY_STONE_BRICK_STAIRS: "mossige blokstein traeje"
+  MOSSY_STONE_BRICK_WALL: "mossige bloksteinen moor"
+  MOSSY_STONE_BRICKS: "mossige bloksteinen"
+  MOVING_PISTON: "bewaegende zuiger"
+  MUD: "drek"
+  MUD_BRICK_SLAB: "dreksteinen plaat"
+  MUD_BRICK_STAIRS: "moddersteinen traeje"
+  MUD_BRICK_WALL: "dreksteinen moor"
+  MUD_BRICKS: "dreksteinen"
+  MUDDY_MANGROVE_ROOTS: "modderige mangrovewortelle"
+  MUSHROOM_STEM: "paddenstoelensjtam"
+  MYCELIUM: "zwamvlok"
+  NETHER_BRICK_FENCE: "netherbaksteinen hek"
+  NETHER_BRICK_SLAB: "netherbakstein plaat"
+  NETHER_BRICK_STAIRS: "netherbakstein traeje"
+  NETHER_BRICK_WALL: "netherbakstein moor"
+  NETHER_BRICKS: "netherbakstein"
+  NETHER_GOLD_ORE: "nethergolderts"
+  NETHER_PORTAL: "netherportaal"
+  NETHER_QUARTZ_ORE: "netherkwartserts"
+  NETHER_SPROUTS: "netherscheut'n"
+  NETHER_WART: "netherkroed"
+  NETHER_WART_BLOCK: "netherkroedblok"
+  NETHERITE_BLOCK: "netherietblok"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "nootblok"
+  OAK_BUTTON: "eike knop"
+  OAK_DOOR: "eike duuer"
+  OAK_FENCE: "eikenhouten hek"
+  OAK_FENCE_GATE: "eikenhouten peurtje"
+  OAK_HANGING_SIGN: "eikenhouten hangbord"
+  OAK_LEAVES: "eikenblajere"
+  OAK_LOG: "eikenstjam"
+  OAK_PLANKS: "eikenhouten plenk"
+  OAK_PRESSURE_PLATE: "eikehoute drukplaat"
+  OAK_SAPLING: "eikenkiemplant"
+  OAK_SIGN: "eikenhouten bord"
+  OAK_SLAB: "eikenhouten plaat"
+  OAK_STAIRS: "eikehoute traeje"
+  OAK_TRAPDOOR: "eikhouten valloek"
+  OAK_WALL_HANGING_SIGN: "eikenhouten oethangbord"
+  OAK_WALL_SIGN: "eikenhouten bord aon moor"
+  OAK_WOOD: "eikehout"
+  OBSERVER: "observeerder"
+  OBSIDIAN: "obsidiaan"
+  OCHRE_FROGLIGHT: "okergael kwakkerleecht"
+  OMINOUS_BANNER: "dreigende banner"
+  ORANGE_BANNER: "oranje banier"
+  ORANGE_BED: "oranje bèd"
+  ORANGE_CANDLE: "oranje kaars"
+  ORANGE_CANDLE_CAKE: "taart met oranje kaars"
+  ORANGE_CARPET: "oranje kerpèt"
+  ORANGE_CONCRETE: "oranje beton"
+  ORANGE_CONCRETE_POWDER: "oranje cement"
+  ORANGE_GLAZED_TERRACOTTA: "oranjegeglazuurde terracotta"
+  ORANGE_SHULKER_BOX: "oranje shulkerdoeas"
+  ORANGE_STAINED_GLASS: "oranje gekleurd glaas"
+  ORANGE_STAINED_GLASS_PANE: "oranjegekleurde glazen roet"
+  ORANGE_TERRACOTTA: "oranje terracotta"
+  ORANGE_TULIP: "oranje tulp"
+  ORANGE_WOOL: "oranje wol"
+  OXEYE_DAISY: "margriet"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "geoxideerd kauper"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "geoxideerd gesneeïen kauper"
+  OXIDIZED_CUT_COPPER_SLAB: "geoxideerd gesneeïen kauper plaat"
+  OXIDIZED_CUT_COPPER_STAIRS: "geoxideerde gesneeje kauper traeje"
+  PACKED_ICE: "pakies"
+  PACKED_MUD: "pakdrek"
+  PEARLESCENT_FROGLIGHT: "paars kwakkerleecht"
+  PEONY: "pioenroeas"
+  PETRIFIED_OAK_SLAB: "verstjeende eikenhouten plaat"
+  PIGLIN_HEAD: "piglinhoofd"
+  PIGLIN_WALL_HEAD: "piglinhoofd aon moer"
+  PINK_BANNER: "roze banier"
+  PINK_BED: "roze bèd"
+  PINK_CANDLE: "roze kaars"
+  PINK_CANDLE_CAKE: "taart met roze kaars"
+  PINK_CARPET: "roze kerpèt"
+  PINK_CONCRETE: "roze beton"
+  PINK_CONCRETE_POWDER: "roze cement"
+  PINK_GLAZED_TERRACOTTA: "rozegeglazuurde terracotta"
+  PINK_PETALS: "roze bleumblajere"
+  PINK_SHULKER_BOX: "roze shulkerdoeas"
+  PINK_STAINED_GLASS: "roze gekleurd glaas"
+  PINK_STAINED_GLASS_PANE: "roze gekleurde glazen roet"
+  PINK_TERRACOTTA: "roze terracotta"
+  PINK_TULIP: "roze tulp"
+  PINK_WOOL: "roze wol"
+  PISTON: "zuiger"
+  PISTON_HEAD: "zuiger kop"
+  PITCHER_CROP: "baekerplantgewas"
+  PITCHER_PLANT: "baekerplant"
+  PLAYER_HEAD: "sjpeler kop"
+  PLAYER_HEAD_NAMED: "%s's hoofd"
+  PLAYER_WALL_HEAD: "sjpelerhoofd aon moer"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "puntige druupstein"
+  POLISHED_ANDESITE: "gepolijste andesiet"
+  POLISHED_ANDESITE_SLAB: "gepolieste andesietplaat"
+  POLISHED_ANDESITE_STAIRS: "gepolieste andesiet traeje"
+  POLISHED_BASALT: "gepolieste basalt"
+  POLISHED_BLACKSTONE: "gepolieste zwartstein"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "gepolieste zwartstein bakstein plaat"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "gepolieste zwartstein bakstein traeje"
+  POLISHED_BLACKSTONE_BRICK_WALL: "gepolieste zwartstein bakstein moor"
+  POLISHED_BLACKSTONE_BRICKS: "gepolieste zwartstein bakstein"
+  POLISHED_BLACKSTONE_BUTTON: "gepolieste zwartstein knöp"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "gepolieste zwartstein drukplaat"
+  POLISHED_BLACKSTONE_SLAB: "gepolieste zwartstein plaat"
+  POLISHED_BLACKSTONE_STAIRS: "gepolieste zwartstein traeje"
+  POLISHED_BLACKSTONE_WALL: "gepolieste zwartstein moor"
+  POLISHED_DEEPSLATE: "gepoliest deepleistein"
+  POLISHED_DEEPSLATE_SLAB: "gepoliest deepleistein plaat"
+  POLISHED_DEEPSLATE_STAIRS: "gepolieste deepleistein traeje"
+  POLISHED_DEEPSLATE_WALL: "gepoliest deepleistein môôr"
+  POLISHED_DIORITE: "gepolijste dioriet"
+  POLISHED_DIORITE_SLAB: "gepolieste diorietplaat"
+  POLISHED_DIORITE_STAIRS: "gepolieste dioriet traeje"
+  POLISHED_GRANITE: "gepolijste graniet"
+  POLISHED_GRANITE_SLAB: "gepolieste granietplaat"
+  POLISHED_GRANITE_STAIRS: "gepolieste graniet traeje"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "klaproeas"
+  POTATOES: "aerpel"
+  POTTED_ACACIA_SAPLING: "opgepotte acaciakiemplant"
+  POTTED_ALLIUM: "opgepot look"
+  POTTED_AZALEA_BUSH: "opgepotte azalea"
+  POTTED_AZURE_BLUET: "opgepot porseleinsjterke"
+  POTTED_BAMBOO: "opgepotte bamboe"
+  POTTED_BIRCH_SAPLING: "opgepotte berkenkiemplant"
+  POTTED_BLUE_ORCHID: "opgepotte blauwe orchidee"
+  POTTED_BROWN_MUSHROOM: "opgepotte broene paddenstoel"
+  POTTED_CACTUS: "opgepotte kaktus"
+  POTTED_CHERRY_SAPLING: "opgepotte kesekiemplant"
+  POTTED_CORNFLOWER: "opgepotte korenbloom"
+  POTTED_CRIMSON_FUNGUS: "opgepotte helroede zwam"
+  POTTED_CRIMSON_ROOTS: "opgepotte helroede wortelle"
+  POTTED_DANDELION: "opgepotte paerdenbloem"
+  POTTED_DARK_OAK_SAPLING: "opgepotte donkereikenkiemplant"
+  POTTED_DEAD_BUSH: "opgepotte doeje sjtroek"
+  POTTED_FERN: "opgepotte varen"
+  POTTED_FLOWERING_AZALEA_BUSH: "opgepotte bleuiende azalea"
+  POTTED_JUNGLE_SAPLING: "opgepotte oerwoudkiemplant"
+  POTTED_LILY_OF_THE_VALLEY: "opgepot lelietje-van-dalen"
+  POTTED_MANGROVE_PROPAGULE: "opgepotte mangrovebreujknop"
+  POTTED_OAK_SAPLING: "opgepotte eikenkiemplant"
+  POTTED_ORANGE_TULIP: "opgepotte oranje tulp"
+  POTTED_OXEYE_DAISY: "opgepotte margriet"
+  POTTED_PINK_TULIP: "opgepotte roze tulp"
+  POTTED_POPPY: "opgepotte klaproos"
+  POTTED_RED_MUSHROOM: "opgepotte roeje paddenstoel"
+  POTTED_RED_TULIP: "opgepotte roeje tulp"
+  POTTED_SPRUCE_SAPLING: "opgepotte sparrenkiemplant"
+  POTTED_TORCHFLOWER: "opgepotte fakkelbloom"
+  POTTED_WARPED_FUNGUS: "opgepotte spoekachtige zwam"
+  POTTED_WARPED_ROOTS: "opgepotte spoekachtige wortelle"
+  POTTED_WHITE_TULIP: "opgepotte witte tulp"
+  POTTED_WITHER_ROSE: "opgepotte witherroes"
+  POWDER_SNOW: "poeijersjnie"
+  POWDER_SNOW_CAULDRON: "poeijersjnie kaetel"
+  POWERED_RAIL: "aandrijfspoear"
+  PRISMARINE: "prismarien"
+  PRISMARINE_BRICK_SLAB: "prismarienbakstein plaat"
+  PRISMARINE_BRICK_STAIRS: "prismarienbakstein traeje"
+  PRISMARINE_BRICKS: "prismarienbakstein"
+  PRISMARINE_SLAB: "prismarienplaat"
+  PRISMARINE_STAIRS: "prismarien traeje"
+  PRISMARINE_WALL: "prismarienmoer"
+  PUMPKIN: "pompoen"
+  PUMPKIN_STEM: "pompoensjtam"
+  PURPLE_BANNER: "paarse banier"
+  PURPLE_BED: "paars bèd"
+  PURPLE_CANDLE: "paarse kaars"
+  PURPLE_CANDLE_CAKE: "taart met paarse kaars"
+  PURPLE_CARPET: "paars kerpèt"
+  PURPLE_CONCRETE: "paars beton"
+  PURPLE_CONCRETE_POWDER: "paars cement"
+  PURPLE_GLAZED_TERRACOTTA: "paarsgeglazuurde terracotta"
+  PURPLE_SHULKER_BOX: "paarse shulkerdoeas"
+  PURPLE_STAINED_GLASS: "paars gekleurd glaas"
+  PURPLE_STAINED_GLASS_PANE: "paars gekleurde glazen roet"
+  PURPLE_TERRACOTTA: "paorse terracotta"
+  PURPLE_WOOL: "paarse wol"
+  PURPUR_BLOCK: "purpurblok"
+  PURPUR_PILLAR: "purpurpillaar"
+  PURPUR_SLAB: "purpurplaat"
+  PURPUR_STAIRS: "purpur traeje"
+  QUARTZ_BLOCK: "kwartsblok"
+  QUARTZ_BRICKS: "kwartsbakstein"
+  QUARTZ_PILLAR: "kwarts pillaar"
+  QUARTZ_SLAB: "kwartsplaat"
+  QUARTZ_STAIRS: "kwarts traeje"
+  RAIL: "rail"
+  RAW_COPPER_BLOCK: "ruw kauperblok"
+  RAW_GOLD_BLOCK: "ruw goldblok"
+  RAW_IRON_BLOCK: "ruw iezerblok"
+  RED_BANNER: "roede banier"
+  RED_BED: "roed bèd"
+  RED_CANDLE: "roeie kaars"
+  RED_CANDLE_CAKE: "taart met roeie kaars"
+  RED_CARPET: "roed kerpèt"
+  RED_CONCRETE: "roead beton"
+  RED_CONCRETE_POWDER: "roed cement"
+  RED_GLAZED_TERRACOTTA: "roeadgeglazuurde terracotta"
+  RED_MUSHROOM: "roeje paddesjtool"
+  RED_MUSHROOM_BLOCK: "roed paddenstoelenblok"
+  RED_NETHER_BRICK_SLAB: "roede netherbaksteinen plaat"
+  RED_NETHER_BRICK_STAIRS: "roede netherbakstein traeje"
+  RED_NETHER_BRICK_WALL: "roede netherbakstein moor"
+  RED_NETHER_BRICKS: "roede netherbakstein"
+  RED_SAND: "roed zandj"
+  RED_SANDSTONE: "roeje zandstein"
+  RED_SANDSTONE_SLAB: "roeje zandsteine plaat"
+  RED_SANDSTONE_STAIRS: "roeje zandstein traeje"
+  RED_SANDSTONE_WALL: "roede zandsjteinen moer"
+  RED_SHULKER_BOX: "roeje shulkerdoeas"
+  RED_STAINED_GLASS: "roed gekleurde glaas"
+  RED_STAINED_GLASS_PANE: "roed gekleurde glazen roet"
+  RED_TERRACOTTA: "roeke terracotta"
+  RED_TULIP: "roede tulp"
+  RED_WOOL: "roeje wol"
+  REDSTONE_BLOCK: "redstoneblok"
+  REDSTONE_LAMP: "redstonelamp"
+  REDSTONE_ORE: "redstone-erts"
+  REDSTONE_TORCH: "redstone fakkel"
+  REDSTONE_WALL_TORCH: "redstonefakkel aan moor"
+  REDSTONE_WIRE: "redstonedraod"
+  REINFORCED_DEEPSLATE: "gewapend deepleistein"
+  REPEATER: "redstoneversterker"
+  REPEATING_COMMAND_BLOCK: "herhaolend opdrachblok"
+  RESPAWN_ANCHOR: "herspawnanker"
+  ROOTED_DIRT: "geworteld drek"
+  ROSE_BUSH: "roeaze stroek"
+  SAND: "zandj"
+  SANDSTONE: "zandstein"
+  SANDSTONE_SLAB: "zandsteine plaat"
+  SANDSTONE_STAIRS: "zandstein traeje"
+  SANDSTONE_WALL: "zandsjteinen moer"
+  SCAFFOLDING: "sjtèlling"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculkkatalysator"
+  SCULK_SENSOR: "sculksensor"
+  SCULK_SHRIEKER: "sculkkrieser"
+  SCULK_VEIN: "sculkaor"
+  SEA_LANTERN: "ziëlantaarn"
+  SEA_PICKLE: "ziëaugurk"
+  SEAGRASS: "ziëgraas"
+  SET_SPAWN: "herspawn punt gezatte"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "zwammenleecht"
+  SHULKER_BOX: "shulkerdoeas"
+  SKELETON_SKULL: "skelettenschedel"
+  SKELETON_WALL_SKULL: "skelettenschedel aon moer"
+  SLIME_BLOCK: "sliémblok"
+  SMALL_AMETHYST_BUD: "kleine amethistknöp"
+  SMALL_DRIPLEAF: "kleine druppelblaad"
+  SMITHING_TABLE: "smeedstaofel"
+  SMOKER: "rouker"
+  SMOOTH_BASALT: "gladde basalt"
+  SMOOTH_QUARTZ: "gladde kwartsblok"
+  SMOOTH_QUARTZ_SLAB: "gladde kwartsplaat"
+  SMOOTH_QUARTZ_STAIRS: "gladde kwarts traeje"
+  SMOOTH_RED_SANDSTONE: "gladde roeje zandstein"
+  SMOOTH_RED_SANDSTONE_SLAB: "gladde roede zandsjteinen plaat"
+  SMOOTH_RED_SANDSTONE_STAIRS: "gladde roede zandstein traeje"
+  SMOOTH_SANDSTONE: "gladde zandstein"
+  SMOOTH_SANDSTONE_SLAB: "gladde zandsjteinen plaat"
+  SMOOTH_SANDSTONE_STAIRS: "gladde zandstein traeje"
+  SMOOTH_STONE: "gladde stein"
+  SMOOTH_STONE_SLAB: "gladde steine plaat"
+  SNIFFER_EGG: "snuffelaersei"
+  SNOW: "sjnie"
+  SNOW_BLOCK: "snie blok"
+  SOUL_CAMPFIRE: "zielenkampveur"
+  SOUL_FIRE: "ziel veur"
+  SOUL_LANTERN: "zielenlantaarn"
+  SOUL_SAND: "zeelzandj"
+  SOUL_SOIL: "zielenaarde"
+  SOUL_TORCH: "zeielenfakkel"
+  SOUL_WALL_TORCH: "zielenfakkel aan moor"
+  SPAWN_NOT_VALID: "de hebs gen thoes bed of opgelaode herspawnanker of 't waas belimmerd"
+  SPAWNER: "monsterspawner"
+  SPAWNER_DESC1: "interactie met spawnei:"
+  SPAWNER_DESC2: "bepaolt te spawne waeze type"
+  SPONGE: "sjpóns"
+  SPORE_BLOSSOM: "sporenbloesem"
+  SPRUCE_BUTTON: "sjparre knop"
+  SPRUCE_DOOR: "sparrenhoute duuer"
+  SPRUCE_FENCE: "sparrenhouten hek"
+  SPRUCE_FENCE_GATE: "sparrenhouten peurtje"
+  SPRUCE_HANGING_SIGN: "sjparrenhouten hangbord"
+  SPRUCE_LEAVES: "sparrennaoldje"
+  SPRUCE_LOG: "sparrenstjam"
+  SPRUCE_PLANKS: "sparrenhouten plenk"
+  SPRUCE_PRESSURE_PLATE: "sjparrehoute drukplaat"
+  SPRUCE_SAPLING: "sparrenkiemplant"
+  SPRUCE_SIGN: "sjparrenhouten bord"
+  SPRUCE_SLAB: "sparrenhouten plaat"
+  SPRUCE_STAIRS: "sparrenhoute traeje"
+  SPRUCE_TRAPDOOR: "sparrehouten valloek"
+  SPRUCE_WALL_HANGING_SIGN: "sjparrenhouten oethangbord"
+  SPRUCE_WALL_SIGN: "sjparrenhoutenbord aon moor"
+  SPRUCE_WOOD: "sjparrehout"
+  STICKY_PISTON: "kleefzuiger"
+  STONE: "stein"
+  STONE_BRICK_SLAB: "blokstein plaat"
+  STONE_BRICK_STAIRS: "blokstein traeje"
+  STONE_BRICK_WALL: "bloksteinen moor"
+  STONE_BRICKS: "bloksteinen"
+  STONE_BUTTON: "steine knop"
+  STONE_PRESSURE_PLATE: "steinen drukplaat"
+  STONE_SLAB: "steinen plaat"
+  STONE_STAIRS: "steine traeje"
+  STONECUTTER: "steinzaag"
+  STRIPPED_ACACIA_LOG: "gestripte acaciasjtam"
+  STRIPPED_ACACIA_WOOD: "gestript acaciahout"
+  STRIPPED_BAMBOO_BLOCK: "gestript bamboeblok"
+  STRIPPED_BIRCH_LOG: "gestripte berkesjtam"
+  STRIPPED_BIRCH_WOOD: "gestript berkehout"
+  STRIPPED_CHERRY_LOG: "gestripte keseboumstam"
+  STRIPPED_CHERRY_WOOD: "gestript kesehout"
+  STRIPPED_CRIMSON_HYPHAE: "gestripte helroede schimmeldraod"
+  STRIPPED_CRIMSON_STEM: "gestripte helroede stem"
+  STRIPPED_DARK_OAK_LOG: "gestripte donkere eikensjtam"
+  STRIPPED_DARK_OAK_WOOD: "gestript donkereikehout"
+  STRIPPED_JUNGLE_LOG: "gestripte oerwoudsjtam"
+  STRIPPED_JUNGLE_WOOD: "gestript oerwoudhout"
+  STRIPPED_MANGROVE_LOG: "gestripte mangrovestam"
+  STRIPPED_MANGROVE_WOOD: "gestript mangrovehout"
+  STRIPPED_OAK_LOG: "gestripte eikesjtam"
+  STRIPPED_OAK_WOOD: "gestript eikehout"
+  STRIPPED_SPRUCE_LOG: "gestripte sjparresjtam"
+  STRIPPED_SPRUCE_WOOD: "gestript sjparrehout"
+  STRIPPED_WARPED_HYPHAE: "gestripte spoekachtige schimmeldraod"
+  STRIPPED_WARPED_STEM: "gestripte spoekachtige stem"
+  STRUCTURE_BLOCK: "structuurblok"
+  STRUCTURE_VOID: "structuurleagte"
+  SUGAR_CANE: "soekër sjtek"
+  SUNFLOWER: "zónnebloom"
+  SUSPICIOUS_GRAVEL: "verdach grind"
+  SUSPICIOUS_SAND: "verdach zand"
+  SWEET_BERRY_BUSH: "zeutbesstroek"
+  TALL_GRASS: "hoog graas"
+  TALL_SEAGRASS: "hoeg ziëgraas"
+  TARGET: "doelwit"
+  TERRACOTTA: "terracotta"
+  TINTED_GLASS: "getint glaas"
+  TNT: "tnt"
+  TORCH: "fakkel"
+  TORCHFLOWER: "fakkelbloom"
+  TORCHFLOWER_CROP: "fakkelbloomgewas"
+  TRAPPED_CHEST: "kis mit val"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "stroekeldraod"
+  TRIPWIRE_HOOK: "stroekeldraodhaak"
+  TUBE_CORAL: "buuskoraal"
+  TUBE_CORAL_BLOCK: "buuskoraalblok"
+  TUBE_CORAL_FAN: "buuskoraalwaaijer"
+  TUBE_CORAL_WALL_FAN: "buiskoraalwaaier aon moer"
+  TUFF: "tufstein"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "sjildkróddel ei"
+  TWISTING_VINES: "dreiende lianen"
+  TWISTING_VINES_PLANT: "dreiende liaanplant"
+  VERDANT_FROGLIGHT: "greun kwakkerleecht"
+  VINE: "lianen"
+  VOID_AIR: "nurgens loch"
+  WALL_TORCH: "moer fakkel"
+  WARPED_BUTTON: "spoekachtige houten knöp"
+  WARPED_DOOR: "spoekachtige deur"
+  WARPED_FENCE: "spoekachtige houten hek"
+  WARPED_FENCE_GATE: "spoekachtig houten peurtje"
+  WARPED_FUNGUS: "spoekachtige zwam"
+  WARPED_HANGING_SIGN: "spoekachtige houten hangbord"
+  WARPED_HYPHAE: "spoekachtige schimmeldraod"
+  WARPED_NYLIUM: "spoekachtig nylium"
+  WARPED_PLANKS: "spoekachtige houten plenk"
+  WARPED_PRESSURE_PLATE: "spoekachtige houten drukplaat"
+  WARPED_ROOTS: "spoekachtige wortelle"
+  WARPED_SIGN: "spoekachtige houten bord"
+  WARPED_SLAB: "spoekachtige houten plaat"
+  WARPED_STAIRS: "spoekachtige houte traeje"
+  WARPED_STEM: "spoekachtige stem"
+  WARPED_TRAPDOOR: "spoekachtig houten valloek"
+  WARPED_WALL_HANGING_SIGN: "spoekachtige houten oethangbord"
+  WARPED_WALL_SIGN: "spoekachtig boord aan moor"
+  WARPED_WART_BLOCK: "spoekachtig kruudblok"
+  WATER: "water"
+  WATER_CAULDRON: "water kaetel"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "gewaxt kauperblok"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "gewaxt gesneeïen kauper"
+  WAXED_CUT_COPPER_SLAB: "gewaxt gesneeïen kauper plaat"
+  WAXED_CUT_COPPER_STAIRS: "ingewasse gesneeje kauper traeje"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "gewaxt bloedgestelde kauper"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "gewaxt bloedgestelde gesneeïen kauper"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "gewaxt bloedgestelde gesneeïen kauper plaat"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "ingewasse bloetgestelde gesneeje kauper traeje"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "gewaxt geoxideerd kauper"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "gewaxt geoxideerd gesneeïen kauper"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "gewaxt geoxideerd gesneeïen kauper plaat"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "ingewasse geoxideerde gesneeje kauper traeje"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "gewaxt verwierd kauper"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "gewaxt verwierd gesneeïen kauper"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "gewaxt verwierd gesneeïen kauper plaat"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "ingewasse verwierde gesneeje kauper traeje"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "verwierd kauper"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "verwierd gesneeïen kauper"
+  WEATHERED_CUT_COPPER_SLAB: "verwierd gesneeïen kauper plaat"
+  WEATHERED_CUT_COPPER_STAIRS: "verwierd gesneeje kauper traeje"
+  WEEPING_VINES: "hangende lianen"
+  WEEPING_VINES_PLANT: "hangende liaanplant"
+  WET_SPONGE: "natte sjpons"
+  WHEAT: "tarwe oogst"
+  WHITE_BANNER: "witte banier"
+  WHITE_BED: "wit bèd"
+  WHITE_CANDLE: "witte kaars"
+  WHITE_CANDLE_CAKE: "taart met witte kaars"
+  WHITE_CARPET: "wit kerpèt"
+  WHITE_CONCRETE: "wit beton"
+  WHITE_CONCRETE_POWDER: "wit cement"
+  WHITE_GLAZED_TERRACOTTA: "witgeglazuurde terracotta"
+  WHITE_SHULKER_BOX: "witte shulkerdoeas"
+  WHITE_STAINED_GLASS: "wit gekleurd glaas"
+  WHITE_STAINED_GLASS_PANE: "witgekleurde glazen roet"
+  WHITE_TERRACOTTA: "wit terracotta"
+  WHITE_TULIP: "witte tulp"
+  WHITE_WOOL: "witte wol"
+  WITHER_ROSE: "witherroes"
+  WITHER_SKELETON_SKULL: "witherskelettenschedel"
+  WITHER_SKELETON_WALL_SKULL: "witherskelettenschedel aon moer"
+  YELLOW_BANNER: "gaele banier"
+  YELLOW_BED: "gael bèd"
+  YELLOW_CANDLE: "gaele kaars"
+  YELLOW_CANDLE_CAKE: "taart met gaele kaars"
+  YELLOW_CARPET: "gael kerpèt"
+  YELLOW_CONCRETE: "gael beton"
+  YELLOW_CONCRETE_POWDER: "gael cement"
+  YELLOW_GLAZED_TERRACOTTA: "gaelgeglazuurde terracotta"
+  YELLOW_SHULKER_BOX: "gaele shulkerdoeas"
+  YELLOW_STAINED_GLASS: "gael gekleurd glaas"
+  YELLOW_STAINED_GLASS_PANE: "gael gekleurde glazen roet"
+  YELLOW_TERRACOTTA: "gaele terracotta"
+  YELLOW_WOOL: "gaele wol"
+  ZOMBIE_HEAD: "zombiehoofd"
+  ZOMBIE_WALL_HEAD: "zombiehoofd aon moer"
+  ACACIA_BOAT: "acaciahouten boeat"
+  ACACIA_CHEST_BOAT: "acaciahouten boeat met kis"
+  ALLAY_SPAWN_EGG: "helperspawnei"
+  AMETHYST_SHARD: "amethistscherf"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "aerdewerksjerf 'visser'"
+  APPLE: "appel"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "aerdewerksjerf 'baogsjötter'"
+  ARMOR_STAND: "harnashouder"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "aerdewerksjerf 'gehaeve erm'"
+  ARROW: "piel"
+  AXOLOTL_BUCKET: "tob met axolotl"
+  AXOLOTL_SPAWN_EGG: "axolotlspawnei"
+  BAKED_POTATO: "gebakke aerpel"
+  BAMBOO_CHEST_RAFT: "bamboevlot met kis"
+  BAMBOO_RAFT: "bamboevlot"
+  BAT_SPAWN_EGG: "flaermoesspawnei"
+  BEE_SPAWN_EGG: "biejspawnei"
+  BEEF: "rauw bufsjtök"
+  BEETROOT: "biet"
+  BEETROOT_SEEDS: "bietenzoaden"
+  BEETROOT_SOUP: "bietensoep"
+  BIRCH_BOAT: "birkehouten boeat"
+  BIRCH_CHEST_BOAT: "birkehouten boeat met kis"
+  BLACK_DYE: "zwarte kleursjtóf"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "aerdewerksjerf 'zjwaard'"
+  BLAZE_POWDER: "blaze poejer"
+  BLAZE_ROD: "blaze sjtaaf"
+  BLAZE_SPAWN_EGG: "blazespawnei"
+  BLUE_DYE: "blauwe kleursjtóf"
+  BONE: "knaok"
+  BONE_MEAL: "beendermeel"
+  BOOK: "book"
+  BOW: "bäög"
+  BOWL: "kom"
+  BREAD: "broed"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "aerdewerksjerf 'broewer'"
+  BRICK: "bakstein"
+  BROWN_DYE: "broene kleursjtóf"
+  BRUSH: "borstel"
+  BUCKET: "tob"
+  BUNDLE: "bundel"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "aerdewerksjerf 'branje'"
+  CAMEL_SPAWN_EGG: "dromedarisspawnei"
+  CARROT: "wórtel"
+  CARROT_ON_A_STICK: "wortel op een stek"
+  CAT_SPAWN_EGG: "kattenspawnei"
+  CAVE_SPIDER_SPAWN_EGG: "grottenspinnenspawnei"
+  CHAINMAIL_BOOTS: "maliënlaarzen"
+  CHAINMAIL_CHESTPLATE: "maliënkolder"
+  CHAINMAIL_HELMET: "maliënkap"
+  CHAINMAIL_LEGGINGS: "maliënbóks"
+  CHARCOAL: "houtskaol"
+  CHERRY_BOAT: "kesehouten boeat"
+  CHERRY_CHEST_BOAT: "kesehouten boeat met kis"
+  CHEST_MINECART: "mienkar mit kis"
+  CHICKEN: "rauw hin"
+  CHICKEN_SPAWN_EGG: "kippespawnei"
+  CHORUS_FRUIT: "chorusfruit"
+  CLAY_BALL: "kliébal"
+  CLOCK: "klok"
+  COAL: "sjteinkaol"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "cacaobonen"
+  COD: "rauwe kabeljauw"
+  COD_BUCKET: "tob mit kabeljauw"
+  COD_SPAWN_EGG: "kabeljauwspawnei"
+  COMMAND_BLOCK_MINECART: "mienkar mit opdrachblok"
+  COMPASS: "kómpas"
+  COOKED_BEEF: "bufsjtök"
+  COOKED_CHICKEN: "gekaokde kiep"
+  COOKED_COD: "gekoakte kabeljauw"
+  COOKED_MUTTON: "gebraoje sjaopevleis"
+  COOKED_PORKCHOP: "gekaok verkesvleisj"
+  COOKED_RABBIT: "gebraoje kenienvleisj"
+  COOKED_SALMON: "gekoakte zalm"
+  COOKIE: "koekje"
+  COPPER_INGOT: "kauperstaaf"
+  COW_SPAWN_EGG: "kospawnei"
+  CREEPER_BANNER_PATTERN: "banierpatroen"
+  CREEPER_BANNER_PATTERN_DESC: "creeperwapen"
+  CREEPER_SPAWN_EGG: "creeperspawnei"
+  CROSSBOW: "kruutsbaog"
+  CROSSBOW_PROJECTILE: "projectiel:"
+  CYAN_DYE: "turquoise kleurstof"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "aerdewerksjerf 'gevaor'"
+  DARK_OAK_BOAT: "donkereikenhouten boeat"
+  DARK_OAK_CHEST_BOAT: "donkereikenhouten boeat met kis"
+  DEBUG_STICK: "debugsjtek"
+  DEBUG_STICK_EMPTY: "%s haet geen eigenschappen"
+  DEBUG_STICK_SELECT: "'%s' geselecteerd (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" nao %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "diamant biel"
+  DIAMOND_BOOTS: "diamante laarzen"
+  DIAMOND_CHESTPLATE: "diamante borstplaat"
+  DIAMOND_HELMET: "diamante helm"
+  DIAMOND_HOE: "diamante sjoffel"
+  DIAMOND_HORSE_ARMOR: "diamante paerdeharnas"
+  DIAMOND_LEGGINGS: "diamante beinstukken"
+  DIAMOND_PICKAXE: "diamante bikkel"
+  DIAMOND_SHOVEL: "diamante sjöp"
+  DIAMOND_SWORD: "diamante zjwaard"
+  DISC_FRAGMENT_5: "meziekplaatfragment"
+  DISC_FRAGMENT_5_DESC: "meziekplaat - 5"
+  DOLPHIN_SPAWN_EGG: "dolfijnenspawnei"
+  DONKEY_SPAWN_EGG: "aezelspawnei"
+  DRAGON_BREATH: "drakenaom"
+  DRIED_KELP: "gedrüugde kelp"
+  DROWNED_SPAWN_EGG: "drenkelingenspawnei"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "echosjerf"
+  EGG: "ei"
+  ELDER_GUARDIAN_SPAWN_EGG: "oudebewakerspawnei"
+  ELYTRA: "elytra"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "betouverd book"
+  ENCHANTED_GOLDEN_APPLE: "betoverde gouwe appel"
+  END_CRYSTAL: "endkristal"
+  ENDER_DRAGON_SPAWN_EGG: "enderdraakspawnei"
+  ENDER_EYE: "enderoug"
+  ENDER_PEARL: "enderpaerel"
+  ENDERMAN_SPAWN_EGG: "endermannenspawnei"
+  ENDERMITE_SPAWN_EGG: "endermitespawnei"
+  EVOKER_SPAWN_EGG: "oproeperspawnei"
+  EXPERIENCE_BOTTLE: "flesj der betouvering"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "aerdewerksjerf 'ontdekker'"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  FEATHER: "vaer"
+  FERMENTED_SPIDER_EYE: "gefermenteerd spinnenoug"
+  FILLED_MAP: "kaart"
+  FIRE_CHARGE: "vuurbal"
+  FIREWORK_ROCKET: "vuurpiel"
+  FIREWORK_ROCKET_FLIGHT: "vluchtduur:"
+  FIREWORK_STAR: "vuurwerksjter"
+  FIREWORK_STAR_BLACK: "zjwart"
+  FIREWORK_STAR_BLUE: "blauw"
+  FIREWORK_STAR_BROWN: "broen"
+  FIREWORK_STAR_CUSTOM_COLOR: "aangepast"
+  FIREWORK_STAR_CYAN: "turquoise"
+  FIREWORK_STAR_FADE_TO: "overgang nao"
+  FIREWORK_STAR_FLICKER: "twinkel"
+  FIREWORK_STAR_GRAY: "gries"
+  FIREWORK_STAR_GREEN: "greun"
+  FIREWORK_STAR_LIGHT_BLUE: "leechtblauw"
+  FIREWORK_STAR_LIGHT_GRAY: "leechtgries"
+  FIREWORK_STAR_LIME: "limoengreun"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "oranje"
+  FIREWORK_STAR_PINK: "roze"
+  FIREWORK_STAR_PURPLE: "paars"
+  FIREWORK_STAR_RED: "roed"
+  FIREWORK_STAR_SHAPE: "onbekende vorm"
+  FIREWORK_STAR_SHAPE_BURST: "explosie"
+  FIREWORK_STAR_SHAPE_CREEPER: "creepervormig"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "groete bal"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "kleine bal"
+  FIREWORK_STAR_SHAPE_STAR: "sjtervormig"
+  FIREWORK_STAR_TRAIL: "spoear"
+  FIREWORK_STAR_WHITE: "wit"
+  FIREWORK_STAR_YELLOW: "gael"
+  FISHING_ROD: "vèsgaert"
+  FLINT: "vuursjtein"
+  FLINT_AND_STEEL: "vuursjtein en sjtaol"
+  FLOWER_BANNER_PATTERN: "banierpatroen"
+  FLOWER_BANNER_PATTERN_DESC: "bloomwapen"
+  FOX_SPAWN_EGG: "vossespawnei"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "aerdewerksjerf 'vrind'"
+  FROG_SPAWN_EGG: "kwakkertspawnei"
+  FURNACE_MINECART: "mienkar mit aove"
+  GHAST_SPAWN_EGG: "ghastspawnei"
+  GHAST_TEAR: "ghast traon"
+  GLASS_BOTTLE: "glaas fles"
+  GLISTERING_MELON_SLICE: "glinsterende meloensjief"
+  GLOBE_BANNER_PATTERN: "banierpatroen"
+  GLOBE_BANNER_PATTERN_DESC: "globe"
+  GLOW_BERRIES: "gloeibesse"
+  GLOW_INK_SAC: "gloeiende inktvèsje"
+  GLOW_ITEM_FRAME: "gloeiende veurwerpkader"
+  GLOW_SQUID_SPAWN_EGG: "gloeiendeinktvèsjespawnei"
+  GLOWSTONE_DUST: "gloeisteinstùf"
+  GOAT_HORN: "geitehoorn"
+  GOAT_SPAWN_EGG: "geitenspawnei"
+  GOLD_INGOT: "goudstaaf"
+  GOLD_NUGGET: "goudklompje"
+  GOLDEN_APPLE: "gouwe appel"
+  GOLDEN_AXE: "goude biel"
+  GOLDEN_BOOTS: "gouden laarzen"
+  GOLDEN_CARROT: "gouwe wortel"
+  GOLDEN_CHESTPLATE: "gouden borstplaat"
+  GOLDEN_HELMET: "gouden helm"
+  GOLDEN_HOE: "gouden sjoffel"
+  GOLDEN_HORSE_ARMOR: "gouwe paerdeharnas"
+  GOLDEN_LEGGINGS: "gouden beinstukken"
+  GOLDEN_PICKAXE: "goude bikkel"
+  GOLDEN_SHOVEL: "goude sjöp"
+  GOLDEN_SWORD: "goude zjwaard"
+  GRAY_DYE: "gries kleurstof"
+  GREEN_DYE: "greune kleursjtóf"
+  GUARDIAN_SPAWN_EGG: "bewakerspawnei"
+  GUNPOWDER: "buskroet"
+  HEART_OF_THE_SEA: "hert van de zië"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "aerdewerksjerf 'hert'"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "aerdewerksjerf 'gebraoke hert'"
+  HOGLIN_SPAWN_EGG: "hoglinspawnei"
+  HONEY_BOTTLE: "höning fleske"
+  HONEYCOMB: "höningraat"
+  HOPPER_MINECART: "mienkar mit trechter"
+  HORSE_SPAWN_EGG: "paerdespawnei"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "aerdewerksjerf 'bäöke'"
+  HUSK_SPAWN_EGG: "mummiespawnei"
+  INK_SAC: "inkttes"
+  IRON_AXE: "iezer biel"
+  IRON_BOOTS: "iezere laarzen"
+  IRON_CHESTPLATE: "iezere borsplaat"
+  IRON_GOLEM_SPAWN_EGG: "iezeregolemspawnei"
+  IRON_HELMET: "iezere helm"
+  IRON_HOE: "iezere sjoffel"
+  IRON_HORSE_ARMOR: "iezere paerdeharnas"
+  IRON_INGOT: "iezerstaaf"
+  IRON_LEGGINGS: "iezere beinstukke"
+  IRON_NUGGET: "iezerklumpke"
+  IRON_PICKAXE: "iezer bikkel"
+  IRON_SHOVEL: "iezer sjöp"
+  IRON_SWORD: "iezer zjwaard"
+  ITEM_FRAME: "voorwerpliest"
+  JUNGLE_BOAT: "oerwoudhouten boeat"
+  JUNGLE_CHEST_BOAT: "oerwoudhouten boeat met kis"
+  KNOWLEDGE_BOOK: "book der kennis"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "tob lava"
+  LEAD: "leidtuike"
+  LEATHER: "leer"
+  LEATHER_BOOTS: "laere laarzen"
+  LEATHER_CHESTPLATE: "laere tuniek"
+  LEATHER_HELMET: "laere kap"
+  LEATHER_HORSE_ARMOR: "lieëre paerden sjild"
+  LEATHER_LEGGINGS: "laere bóks"
+  LIGHT_BLUE_DYE: "leechtblauwe kleurstof"
+  LIGHT_GRAY_DYE: "leechtgrieze kleurstof"
+  LIME_DYE: "limoengreun kleurstof"
+  LINGERING_POTION: "aanhoudende drank"
+  LINGERING_POTION_EFFECT_AWKWARD: "aanhoudend vreemd drenkske"
+  LINGERING_POTION_EFFECT_EMPTY: "aanhoudend onmaakbaar drenkske"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "aanhoudende drank der vuurbesjtendighied"
+  LINGERING_POTION_EFFECT_HARMING: "aanhoudende drank der verwonding"
+  LINGERING_POTION_EFFECT_HEALING: "aanhoudende drank der genezing"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "aanhoudende drank der onzichtbaarheid"
+  LINGERING_POTION_EFFECT_LEAPING: "aanhoudende drank der sjprongen"
+  LINGERING_POTION_EFFECT_LEVITATION: "aanhoudende drank der zjweving"
+  LINGERING_POTION_EFFECT_LUCK: "aanhoudende drank des geluks"
+  LINGERING_POTION_EFFECT_MUNDANE: "aanhoudend triviaal drenkske"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "aanhoudende drank der nachtzicht"
+  LINGERING_POTION_EFFECT_POISON: "aanhoudende drank der vergif"
+  LINGERING_POTION_EFFECT_REGENERATION: "aanhoudende drank der regeneratie"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "aanhoudende drank der valvertraging"
+  LINGERING_POTION_EFFECT_SLOWNESS: "aanhoudende drank der traaghied"
+  LINGERING_POTION_EFFECT_STRENGTH: "aanhoudende drank der kracht"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "aanhoudende drank der sjnelhied"
+  LINGERING_POTION_EFFECT_THICK: "aanhoudende stroperige drank"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "aanhoudende drank van de sjildkróddelmeester"
+  LINGERING_POTION_EFFECT_WATER: "aanhoudende waterflesj"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "aanhoudende drank der wateraodem"
+  LINGERING_POTION_EFFECT_WEAKNESS: "aanhoudende drank der zwakheid"
+  LLAMA_SPAWN_EGG: "lamaspawnei"
+  LODESTONE_COMPASS: "kompas wiezend naor zeilstein"
+  MAGENTA_DYE: "magenta kleurstof"
+  MAGMA_CREAM: "magmacrème"
+  MAGMA_CUBE_SPAWN_EGG: "magmakubesspawnei"
+  MANGROVE_BOAT: "mangrovehouten boeat"
+  MANGROVE_CHEST_BOAT: "mangrovehouten boeat met kis"
+  MAP: "laege kaart"
+  MELON_SEEDS: "meloenzoaden"
+  MELON_SLICE: "meloenschijf"
+  MILK_BUCKET: "tob melk"
+  MINECART: "mienkar"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "aerdewerksjerf 'mienwirker'"
+  MOJANG_BANNER_PATTERN: "banierpatroen"
+  MOJANG_BANNER_PATTERN_DESC: "mojangwapen"
+  MOOSHROOM_SPAWN_EGG: "mooshroomspawnei"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "aerdewerksjerf 'roew'"
+  MULE_SPAWN_EGG: "muilaezelspawnei"
+  MUSHROOM_STEW: "paddestoel sop"
+  MUSIC_DISC_11: "meziekplaat"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "meziekplaat"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "meziekplaat"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "meziekplaat"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "meziekplaat"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "meziekplaat"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "meziekplaat"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "meziekplaat"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "meziekplaat"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "meziekplaat"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "meziekplaat"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "meziekplaat"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "meziekplaat"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "meziekplaat"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "meziekplaat"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "meziekplaat"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "rauw sjaopevleisj"
+  NAME_TAG: "naamkaartje"
+  NAUTILUS_SHELL: "nautilussjölp"
+  NETHER_BRICK: "netherbakstein"
+  NETHER_STAR: "netherster"
+  NETHERITE_AXE: "netherieten biel"
+  NETHERITE_BOOTS: "netherieten laars"
+  NETHERITE_CHESTPLATE: "netherieten borstplaat"
+  NETHERITE_HELMET: "netherieten helm"
+  NETHERITE_HOE: "netherieten schuffel"
+  NETHERITE_INGOT: "netherietstaaf"
+  NETHERITE_LEGGINGS: "netherieten boks"
+  NETHERITE_PICKAXE: "netherieten houwiel"
+  NETHERITE_SCRAP: "netherietschroet"
+  NETHERITE_SHOVEL: "netherieten schup"
+  NETHERITE_SWORD: "netherieten zwaard"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "eikehouten boeat"
+  OAK_CHEST_BOAT: "eikehouten boeat met kis"
+  OCELOT_SPAWN_EGG: "ocelottenspawnei"
+  ORANGE_DYE: "oranje kleurstof"
+  PAINTING: "sjilderie"
+  PANDA_SPAWN_EGG: "pandaspawnei"
+  PAPER: "pepeer"
+  PARROT_SPAWN_EGG: "pappegaejespawnei"
+  PHANTOM_MEMBRANE: "fantoommembraan"
+  PHANTOM_SPAWN_EGG: "fantomenspawnei"
+  PIG_SPAWN_EGG: "verkespawnei"
+  PIGLIN_BANNER_PATTERN: "banierpatroen"
+  PIGLIN_BANNER_PATTERN_DESC: "snoet"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglinbruutspawnei"
+  PIGLIN_SPAWN_EGG: "piglinspawnei"
+  PILLAGER_SPAWN_EGG: "roverspawnei"
+  PINK_DYE: "roze kleurstof"
+  PITCHER_POD: "baekerplantbaeker"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "aerdewerksjerf 'euvervloed'"
+  POISONOUS_POTATO: "vergiftige aerpel"
+  POLAR_BEAR_SPAWN_EGG: "iesbaerespawnei"
+  POPPED_CHORUS_FRUIT: "gepoft chorusfruit"
+  PORKCHOP: "rauw verkesvleisj"
+  POTATO: "aerpel"
+  POTION: "drank"
+  POTION_EFFECT_AWKWARD: "vreemde drank"
+  POTION_EFFECT_EMPTY: "onmaakbare drank"
+  POTION_EFFECT_FIRE_RESISTANCE: "drank der vuurbesjtendighied"
+  POTION_EFFECT_HARMING: "drank der verwonding"
+  POTION_EFFECT_HEALING: "drank der genaeshied"
+  POTION_EFFECT_INVISIBILITY: "drank der onzichtbaarheid"
+  POTION_EFFECT_LEAPING: "drank der sjprongen"
+  POTION_EFFECT_LEVITATION: "drank der zjweving"
+  POTION_EFFECT_LUCK: "drank der gelök"
+  POTION_EFFECT_MUNDANE: "triviale drank"
+  POTION_EFFECT_NIGHT_VISION: "drank der nachtzicht"
+  POTION_EFFECT_POISON: "drank des gifs"
+  POTION_EFFECT_REGENERATION: "drank der regeneratie"
+  POTION_EFFECT_SLOW_FALLING: "drank der valvertraging"
+  POTION_EFFECT_SLOWNESS: "drank der traaghied"
+  POTION_EFFECT_STRENGTH: "drank der sjterkte"
+  POTION_EFFECT_SWIFTNESS: "drank der sjnelhied"
+  POTION_EFFECT_THICK: "stroperige drank"
+  POTION_EFFECT_TURTLE_MASTER: "drank van de sjildkróddelmeester"
+  POTION_EFFECT_WATER: "waterflesj"
+  POTION_EFFECT_WATER_BREATHING: "drank der wateraodem"
+  POTION_EFFECT_WEAKNESS: "drank der zwakhied"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "tob poeijersjnie"
+  PRISMARINE_CRYSTALS: "prismarienkristallen"
+  PRISMARINE_SHARD: "prismariensjerf"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "aerdewerksjerf 'pries'"
+  PUFFERFISH: "keugelvès"
+  PUFFERFISH_BUCKET: "tob mit keugelvès"
+  PUFFERFISH_SPAWN_EGG: "keugelvèsespawnei"
+  PUMPKIN_PIE: "pompoentoert"
+  PUMPKIN_SEEDS: "pompoenpitten"
+  PURPLE_DYE: "paarse kleurstof"
+  QUARTZ: "netherkwarts"
+  RABBIT: "rauw kenienevleisj"
+  RABBIT_FOOT: "kenienepuuetje"
+  RABBIT_HIDE: "kenienehoed"
+  RABBIT_SPAWN_EGG: "kenienespawnei"
+  RABBIT_STEW: "kenienestoofpot"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "verwoesterspawnei"
+  RAW_COPPER: "ruw kauper"
+  RAW_GOLD: "ruw gold"
+  RAW_IRON: "ruw iezer"
+  RECOVERY_COMPASS: "herstelkompas"
+  RED_DYE: "roede kleursjtóf"
+  REDSTONE: "redstonestùf"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "gerot vleisj"
+  SADDLE: "zaal"
+  SALMON: "rauwe zalm"
+  SALMON_BUCKET: "tob mit zalm"
+  SALMON_SPAWN_EGG: "zalmspawnei"
+  SCUTE: "sjild"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "aerdewerksjerf 'schoef'"
+  SHEARS: "sjier"
+  SHEEP_SPAWN_EGG: "sjaopespawnei"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "aerdewerksjerf 'sjoelplaats'"
+  SHIELD: "sjild"
+  SHIELD_BLACK: "zjwart sjild"
+  SHIELD_BLUE: "blauw sjild"
+  SHIELD_BROWN: "broen sjild"
+  SHIELD_CYAN: "turquoise sjild"
+  SHIELD_GRAY: "gries sjild"
+  SHIELD_GREEN: "greun sjild"
+  SHIELD_LIGHT_BLUE: "leechtblauw sjild"
+  SHIELD_LIGHT_GRAY: "leechtgries sjild"
+  SHIELD_LIME: "limoengreun sjild"
+  SHIELD_MAGENTA: "magenta sjild"
+  SHIELD_ORANGE: "oranje sjild"
+  SHIELD_PINK: "roze sjild"
+  SHIELD_PURPLE: "paars sjild"
+  SHIELD_RED: "roed sjild"
+  SHIELD_WHITE: "wit sjild"
+  SHIELD_YELLOW: "gael sjild"
+  SHULKER_SHELL: "shulkerschelp"
+  SHULKER_SPAWN_EGG: "shulkerspawnei"
+  SIGN: "bord"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SILVERFISH_SPAWN_EGG: "zilvervèsjespawnei"
+  SKELETON_HORSE_SPAWN_EGG: "skeletpaerdespawnei"
+  SKELETON_SPAWN_EGG: "skelettenspawnei"
+  SKULL_BANNER_PATTERN: "banierpatroen"
+  SKULL_BANNER_PATTERN_DESC: "schedelwapen"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "aerdewerksjerf 'schedel'"
+  SLIME_BALL: "sliémbal"
+  SLIME_SPAWN_EGG: "sliémkubesspawnei"
+  SMITHING_TEMPLATE: "smeedssjabloon"
+  SMITHING_TEMPLATE_APPLIES_TO: "van toepassing op:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "staaf of kristal toevoge"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "harnas"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "harnasstuk toevoge"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "staave en kristalle"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingrediënte:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "netherietstaaf toevoge"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamante oetrusting"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "diamanten harnas waape of gereidschap toevoge"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherietstaaf"
+  SMITHING_TEMPLATE_UPGRADE: "upgrade(s): "
+  SNIFFER_SPAWN_EGG: "snuffelaerspawnei"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "aerdewerksjerf 'snuffele'"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "sjniegolemspawnei"
+  SNOWBALL: "sjniebal"
+  SPECTRAL_ARROW: "spectrale piel"
+  SPIDER_EYE: "spinnenoug"
+  SPIDER_SPAWN_EGG: "spinnenspawnei"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "spattende drank"
+  SPLASH_POTION_EFFECT_AWKWARD: "spattende vreemde drank"
+  SPLASH_POTION_EFFECT_EMPTY: "spattend onmaakbaar drenkske"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "spattende drank der vuurbesjtendighiedat"
+  SPLASH_POTION_EFFECT_HARMING: "spattende drank der verwonding"
+  SPLASH_POTION_EFFECT_HEALING: "spattende drank der genaezing"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "spattende drank der onzichtbaarheid"
+  SPLASH_POTION_EFFECT_LEAPING: "spattende drank der sjprongen"
+  SPLASH_POTION_EFFECT_LEVITATION: "spattende drank der zjweving"
+  SPLASH_POTION_EFFECT_LUCK: "spattende drank der gelök"
+  SPLASH_POTION_EFFECT_MUNDANE: "spattende triviale drank"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "spattende drank der nachtzicht"
+  SPLASH_POTION_EFFECT_POISON: "spattende drank des gifs"
+  SPLASH_POTION_EFFECT_REGENERATION: "spattende drank der regeneratie"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "spattende drank der valvertraging"
+  SPLASH_POTION_EFFECT_SLOWNESS: "spattende drank der traaghied"
+  SPLASH_POTION_EFFECT_STRENGTH: "spattende drank der kracht"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "spattende drank der sjnelhied"
+  SPLASH_POTION_EFFECT_THICK: "spattende stroperige drank"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "spattende drank van de sjildkróddelmeester"
+  SPLASH_POTION_EFFECT_WATER: "spattende waterflesj"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "spattende drank der wateraodem"
+  SPLASH_POTION_EFFECT_WEAKNESS: "spattende drank der zwakhied"
+  SPRUCE_BOAT: "sparrehouten boeat"
+  SPRUCE_CHEST_BOAT: "sparrehouten boeat met kis"
+  SPYGLASS: "verrekieker"
+  SQUID_SPAWN_EGG: "inktvèsjespawnei"
+  STICK: "sjtek"
+  STONE_AXE: "sjtein biel"
+  STONE_HOE: "sjteine sjoffel"
+  STONE_PICKAXE: "sjtein bikkel"
+  STONE_SHOVEL: "sjteine sjöp"
+  STONE_SWORD: "sjteine zjwaard"
+  STRAY_SPAWN_EGG: "verdwaaldenspawnei"
+  STRIDER_SPAWN_EGG: "lavariederspawnei"
+  STRING: "dräöj"
+  SUGAR: "soeker"
+  SUSPICIOUS_STEW: "geheimzinnige stoofpot"
+  SWEET_BERRIES: "zeutbessen"
+  TADPOLE_BUCKET: "emmer koelekop"
+  TADPOLE_SPAWN_EGG: "koelekopspawnei"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "getipte piel"
+  TIPPED_ARROW_EFFECT_AWKWARD: "getipte piel"
+  TIPPED_ARROW_EFFECT_EMPTY: "onmaakbare getipte piel"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "piel der vuurbesjtendighied"
+  TIPPED_ARROW_EFFECT_HARMING: "piel der verwonding"
+  TIPPED_ARROW_EFFECT_HEALING: "piel der genezing"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "piel der onzichtbaarhied"
+  TIPPED_ARROW_EFFECT_LEAPING: "piel der sjprongen"
+  TIPPED_ARROW_EFFECT_LEVITATION: "piel der zjweving"
+  TIPPED_ARROW_EFFECT_LUCK: "piel der gelök"
+  TIPPED_ARROW_EFFECT_MUNDANE: "getipte piel"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "piel der nachtzichts"
+  TIPPED_ARROW_EFFECT_POISON: "piel des gifs"
+  TIPPED_ARROW_EFFECT_REGENERATION: "piel der regeneratie"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "piel der valvertraging"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "piel der traaghied"
+  TIPPED_ARROW_EFFECT_STRENGTH: "piel der kracht"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "piel der sjnelhied"
+  TIPPED_ARROW_EFFECT_THICK: "getipte piel"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "piel van de sjildkróddelmeester"
+  TIPPED_ARROW_EFFECT_WATER: "piel der sjpatting"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "piel des wateraom"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "piel der zwakhied"
+  TNT_MINECART: "mienkar mit tnt"
+  TORCHFLOWER_SEEDS: "fakkelbloemzaaije"
+  TOTEM_OF_UNDYING: "totem der onsterfelijkhied"
+  TRADER_LLAMA_SPAWN_EGG: "hanjelaerslamaspawnei"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "dreejtand"
+  TROPICAL_FISH: "tropische vésj"
+  TROPICAL_FISH_BUCKET: "tob mit tropische vésj"
+  TROPICAL_FISH_SPAWN_EGG: "tropischevèsjespawnei"
+  TURTLE_HELMET: "sjildkróddelsjild"
+  TURTLE_SPAWN_EGG: "sjildkróddelespawnei"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "ergernissenspawnei"
+  VILLAGER_SPAWN_EGG: "durpelingenspawnei"
+  VINDICATOR_SPAWN_EGG: "verdedigerspawnei"
+  WANDERING_TRADER_SPAWN_EGG: "róndjreizendehanjelaerrsspawnei"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "hoederspawnei"
+  WARPED_FUNGUS_ON_A_STICK: "spoekachtige zwam aan ein stukske"
+  WATER_BUCKET: "tob water"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "weit"
+  WHEAT_SEEDS: "tarwezaden"
+  WHITE_DYE: "witter kleursjtóf"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "heksenspawnei"
+  WITHER_SKELETON_SPAWN_EGG: "witherskelettenspawnei"
+  WITHER_SPAWN_EGG: "witherspawnei"
+  WOLF_SPAWN_EGG: "wolvenspawnei"
+  WOODEN_AXE: "hout biel"
+  WOODEN_HOE: "houte sjoffel"
+  WOODEN_PICKAXE: "houte bikkel"
+  WOODEN_SHOVEL: "houte sjöp"
+  WOODEN_SWORD: "houte zjwaard"
+  WRITABLE_BOOK: "book 'n vaer"
+  WRITTEN_BOOK: "geschreven book"
+  YELLOW_DYE: "gaele kleursjtóf"
+  ZOGLIN_SPAWN_EGG: "zoglinspawnei"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombiepaerdespawnei"
+  ZOMBIE_SPAWN_EGG: "zombiespawnei"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "zombiedorpelingenspawnei"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombiepiglinspawnei"
+  CHEST: "wannier op 't lichaam:"
+  FEET: "wannier te veut:"
+  HEAD: "wannier op de kop:"
+  LEGS: "wannier op de bein:"
+  MAINHAND: "wannier in schriefhand:"
+  OFFHAND: "wannier in secundaire hand:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

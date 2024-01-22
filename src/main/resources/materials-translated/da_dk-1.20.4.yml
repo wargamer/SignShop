@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akacieknap"
+  ACACIA_DOOR: "akaciedør"
+  ACACIA_FENCE: "akaciehegn"
+  ACACIA_FENCE_GATE: "akaciehegnslåge"
+  ACACIA_HANGING_SIGN: "hængende akacieskilt"
+  ACACIA_LEAVES: "akacieløv"
+  ACACIA_LOG: "akaciestamme"
+  ACACIA_PLANKS: "akacieplanker"
+  ACACIA_PRESSURE_PLATE: "akacietrykplade"
+  ACACIA_SAPLING: "ungt akacietræ"
+  ACACIA_SIGN: "akacietræsskilt"
+  ACACIA_SLAB: "akacieplade"
+  ACACIA_STAIRS: "akacietrappe"
+  ACACIA_TRAPDOOR: "akacielem"
+  ACACIA_WALL_HANGING_SIGN: "væghængende akacieskilt"
+  ACACIA_WALL_SIGN: "akacietræsvægskilt"
+  ACACIA_WOOD: "akacietræ"
+  ACTIVATOR_RAIL: "aktiveringsspor"
+  AIR: "luft"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "blok af ametyst"
+  AMETHYST_CLUSTER: "ametystklynge"
+  ANCIENT_DEBRIS: "ældgamle stumper"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "andesitflise"
+  ANDESITE_STAIRS: "andesittrappe"
+  ANDESITE_WALL: "andesitvæg"
+  ANVIL: "ambolt"
+  ATTACHED_MELON_STEM: "forbundet melonstilk"
+  ATTACHED_PUMPKIN_STEM: "forbundet græskarstilk"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "azalealøv"
+  AZURE_BLUET: "blå porcelænstjerne"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "blok af bambus"
+  BAMBOO_BUTTON: "bambusknap"
+  BAMBOO_DOOR: "bambusdør"
+  BAMBOO_FENCE: "bambushegn"
+  BAMBOO_FENCE_GATE: "bambushegnslåge"
+  BAMBOO_HANGING_SIGN: "hængende bambusskilt"
+  BAMBOO_MOSAIC: "bambusmosaik"
+  BAMBOO_MOSAIC_SLAB: "bambus-mosaikflise"
+  BAMBOO_MOSAIC_STAIRS: "bambus-mosaiktrappe"
+  BAMBOO_PLANKS: "bambusplanker"
+  BAMBOO_PRESSURE_PLATE: "bambustrykplade"
+  BAMBOO_SAPLING: "bambus spirer"
+  BAMBOO_SIGN: "bambusskilt"
+  BAMBOO_SLAB: "bambusflise"
+  BAMBOO_STAIRS: "bambustrappe"
+  BAMBOO_TRAPDOOR: "bambuslem"
+  BAMBOO_WALL_HANGING_SIGN: "væghængende bambusskilt"
+  BAMBOO_WALL_SIGN: "bambusvægskilt"
+  BANNER_BASE_BLACK: "helt sort felt"
+  BANNER_BASE_BLUE: "helt blåt felt"
+  BANNER_BASE_BROWN: "helt brunt felt"
+  BANNER_BASE_CYAN: "helt turkis felt"
+  BANNER_BASE_GRAY: "helt gråt felt"
+  BANNER_BASE_GREEN: "helt grønt felt"
+  BANNER_BASE_LIGHT_BLUE: "helt lyseblåt felt"
+  BANNER_BASE_LIGHT_GRAY: "helt lysegråt felt"
+  BANNER_BASE_LIME: "helt limegrønt felt"
+  BANNER_BASE_MAGENTA: "helt magenta felt"
+  BANNER_BASE_ORANGE: "helt orange felt"
+  BANNER_BASE_PINK: "helt lyserødt felt"
+  BANNER_BASE_PURPLE: "helt lilla felt"
+  BANNER_BASE_RED: "helt rødt felt"
+  BANNER_BASE_WHITE: "helt hvidt felt"
+  BANNER_BASE_YELLOW: "helt gult felt"
+  BANNER_BORDER_BLACK: "sort ramme"
+  BANNER_BORDER_BLUE: "blå ramme"
+  BANNER_BORDER_BROWN: "brun ramme"
+  BANNER_BORDER_CYAN: "turkis ramme"
+  BANNER_BORDER_GRAY: "grå ramme"
+  BANNER_BORDER_GREEN: "grøn ramme"
+  BANNER_BORDER_LIGHT_BLUE: "lyseblå ramme"
+  BANNER_BORDER_LIGHT_GRAY: "lysegrå ramme"
+  BANNER_BORDER_LIME: "limegrøn ramme"
+  BANNER_BORDER_MAGENTA: "lyslilla ramme"
+  BANNER_BORDER_ORANGE: "orange ramme"
+  BANNER_BORDER_PINK: "lyserød ramme"
+  BANNER_BORDER_PURPLE: "lilla ramme"
+  BANNER_BORDER_RED: "rød ramme"
+  BANNER_BORDER_WHITE: "hvid ramme"
+  BANNER_BORDER_YELLOW: "gul ramme"
+  BANNER_BRICKS_BLACK: "sort murstensmønster"
+  BANNER_BRICKS_BLUE: "blåt murstensmønster"
+  BANNER_BRICKS_BROWN: "brunt murstensmønster"
+  BANNER_BRICKS_CYAN: "turkis murstensmønster"
+  BANNER_BRICKS_GRAY: "gråt murstensmønster"
+  BANNER_BRICKS_GREEN: "grønt murstensmønster"
+  BANNER_BRICKS_LIGHT_BLUE: "lyseblåt murstensmønster"
+  BANNER_BRICKS_LIGHT_GRAY: "lysegråt murstensmønster"
+  BANNER_BRICKS_LIME: "limegrønt murstensmønster"
+  BANNER_BRICKS_MAGENTA: "lyslilla murstensmønster"
+  BANNER_BRICKS_ORANGE: "orange murstensmønster"
+  BANNER_BRICKS_PINK: "lyserødt murstensmønster"
+  BANNER_BRICKS_PURPLE: "lilla murstensmønster"
+  BANNER_BRICKS_RED: "rødt murstensmønster"
+  BANNER_BRICKS_WHITE: "hvidt murstensmønster"
+  BANNER_BRICKS_YELLOW: "gult murstensmønster"
+  BANNER_CIRCLE_BLACK: "sort cirkel"
+  BANNER_CIRCLE_BLUE: "blå cirkel"
+  BANNER_CIRCLE_BROWN: "brun cirkel"
+  BANNER_CIRCLE_CYAN: "turkis cirkel"
+  BANNER_CIRCLE_GRAY: "grå cirkel"
+  BANNER_CIRCLE_GREEN: "grøn cirkel"
+  BANNER_CIRCLE_LIGHT_BLUE: "lyseblå cirkel"
+  BANNER_CIRCLE_LIGHT_GRAY: "lyssegrå cirkel"
+  BANNER_CIRCLE_LIME: "limegrøn cirkel"
+  BANNER_CIRCLE_MAGENTA: "lyslilla cirkel"
+  BANNER_CIRCLE_ORANGE: "orange cirkel"
+  BANNER_CIRCLE_PINK: "lyserød cirkel"
+  BANNER_CIRCLE_PURPLE: "lilla cirkel"
+  BANNER_CIRCLE_RED: "rød cirkel"
+  BANNER_CIRCLE_WHITE: "hvid cirkel"
+  BANNER_CIRCLE_YELLOW: "gul cirkel"
+  BANNER_CREEPER_BLACK: "sort creeper symbol"
+  BANNER_CREEPER_BLUE: "blåt creeper symbol"
+  BANNER_CREEPER_BROWN: "brunt creeper symbol"
+  BANNER_CREEPER_CYAN: "turkis creeper symbol"
+  BANNER_CREEPER_GRAY: "gråt creeper symbol"
+  BANNER_CREEPER_GREEN: "grønt creeper symbol"
+  BANNER_CREEPER_LIGHT_BLUE: "lyseblåt creeper symbol"
+  BANNER_CREEPER_LIGHT_GRAY: "lysegråt creeper symbol"
+  BANNER_CREEPER_LIME: "limegrønt creeper symbol"
+  BANNER_CREEPER_MAGENTA: "lyslilla creeper symbol"
+  BANNER_CREEPER_ORANGE: "orange creeper symbol"
+  BANNER_CREEPER_PINK: "lyserødt creeper symbol"
+  BANNER_CREEPER_PURPLE: "lilla creeper symbol"
+  BANNER_CREEPER_RED: "rødt creeper symbol"
+  BANNER_CREEPER_WHITE: "hvidt creeper symbol"
+  BANNER_CREEPER_YELLOW: "gult creeper symbol"
+  BANNER_CROSS_BLACK: "sort kryds"
+  BANNER_CROSS_BLUE: "blåt kryds"
+  BANNER_CROSS_BROWN: "brunt kryds"
+  BANNER_CROSS_CYAN: "turkis kryds"
+  BANNER_CROSS_GRAY: "gråt kryds"
+  BANNER_CROSS_GREEN: "grønt kryds"
+  BANNER_CROSS_LIGHT_BLUE: "lyseblåt kryds"
+  BANNER_CROSS_LIGHT_GRAY: "lysegråt kryds"
+  BANNER_CROSS_LIME: "limegrønt kryds"
+  BANNER_CROSS_MAGENTA: "lyselilla kryds"
+  BANNER_CROSS_ORANGE: "orange kryds"
+  BANNER_CROSS_PINK: "lyserødt kryds"
+  BANNER_CROSS_PURPLE: "lilla kryds"
+  BANNER_CROSS_RED: "rødt kryds"
+  BANNER_CROSS_WHITE: "hvidt kryds"
+  BANNER_CROSS_YELLOW: "gult kryds"
+  BANNER_CURLY_BORDER_BLACK: "sort takket ramme"
+  BANNER_CURLY_BORDER_BLUE: "blå takket ramme"
+  BANNER_CURLY_BORDER_BROWN: "brun takket ramme"
+  BANNER_CURLY_BORDER_CYAN: "turkis takket ramme"
+  BANNER_CURLY_BORDER_GRAY: "grå takket ramme"
+  BANNER_CURLY_BORDER_GREEN: "grøn takket ramme"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "lyseblå takket ramme"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "lysegrå takket ramme"
+  BANNER_CURLY_BORDER_LIME: "limegrøn takket ramme"
+  BANNER_CURLY_BORDER_MAGENTA: "lyslilla takket ramme"
+  BANNER_CURLY_BORDER_ORANGE: "orange takket ramme"
+  BANNER_CURLY_BORDER_PINK: "lyserød takket ramme"
+  BANNER_CURLY_BORDER_PURPLE: "lilla takket ramme"
+  BANNER_CURLY_BORDER_RED: "rød takket ramme"
+  BANNER_CURLY_BORDER_WHITE: "hvid takket ramme"
+  BANNER_CURLY_BORDER_YELLOW: "gul takket ramme"
+  BANNER_DIAGONAL_LEFT_BLACK: "sort øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_BLUE: "blå øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_BROWN: "brun øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_CYAN: "turkis øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_GRAY: "grå øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_GREEN: "grøn øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "lyseblå øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "lysegrå øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_LIME: "limegrøn øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "lyslilla øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_PINK: "lyserød øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lilla øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_RED: "rød øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_WHITE: "hvid øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gul øvre højrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_BLACK: "sort øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blå øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brun øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turkis øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grå øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_GREEN: "grøn øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "lyseblå øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "lysegrå øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_LIME: "limegrøn øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "lyslilla øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "orange øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_PINK: "lyserød øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lilla øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_RED: "rød øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_WHITE: "hvid øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gul øvre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "sort nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blå nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brun nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turkis nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grå nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "grøn nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "lyseblå nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "lysegrå nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "limegrøn nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "lyslilla nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "orange nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "lyserød nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lilla nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_RED: "rød nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "hvid nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gul nedre venstrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "sort nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blå nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brun nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turkis nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grå nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "grøn nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "lyseblå nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "lysegrå nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "limegrøn nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "lyslilla nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "orange nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "lyserød nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lilla nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "rød nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "hvid nedre højrebåndshalvdel"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gul nedre højrebåndshalvdel"
+  BANNER_FLOWER_BLACK: "sort blomster symbol"
+  BANNER_FLOWER_BLUE: "blåt blomster symbol"
+  BANNER_FLOWER_BROWN: "brunt blomster symbol"
+  BANNER_FLOWER_CYAN: "turkis blomster symbol"
+  BANNER_FLOWER_GRAY: "gråt blomster symbol"
+  BANNER_FLOWER_GREEN: "grønt blomster symbol"
+  BANNER_FLOWER_LIGHT_BLUE: "lyseblåt blomster symbol"
+  BANNER_FLOWER_LIGHT_GRAY: "lysegråt blomster symbol"
+  BANNER_FLOWER_LIME: "limegrønt blomster symbol"
+  BANNER_FLOWER_MAGENTA: "lyslilla blomster symbol"
+  BANNER_FLOWER_ORANGE: "orange blomster symbol"
+  BANNER_FLOWER_PINK: "lyserødt blomster symbol"
+  BANNER_FLOWER_PURPLE: "lilla blomster symbol"
+  BANNER_FLOWER_RED: "rødt blomster symbol"
+  BANNER_FLOWER_WHITE: "hvidt blomster symbol"
+  BANNER_FLOWER_YELLOW: "gult blomster symbol"
+  BANNER_GLOBE_BLACK: "sort globus"
+  BANNER_GLOBE_BLUE: "blå globus"
+  BANNER_GLOBE_BROWN: "brun globus"
+  BANNER_GLOBE_CYAN: "turkis globus"
+  BANNER_GLOBE_GRAY: "grå globus"
+  BANNER_GLOBE_GREEN: "grøn globus"
+  BANNER_GLOBE_LIGHT_BLUE: "lyseblå globus"
+  BANNER_GLOBE_LIGHT_GRAY: "lysegrå globus"
+  BANNER_GLOBE_LIME: "limegrøn globus"
+  BANNER_GLOBE_MAGENTA: "lyslilla globus"
+  BANNER_GLOBE_ORANGE: "orange globus"
+  BANNER_GLOBE_PINK: "lyserød globus"
+  BANNER_GLOBE_PURPLE: "lilla globus"
+  BANNER_GLOBE_RED: "rød globus"
+  BANNER_GLOBE_WHITE: "hvid globus"
+  BANNER_GLOBE_YELLOW: "gul globus"
+  BANNER_GRADIENT_BLACK: "øvre faldne sort"
+  BANNER_GRADIENT_BLUE: "øvre faldne brun"
+  BANNER_GRADIENT_BROWN: "øvre faldne brun"
+  BANNER_GRADIENT_CYAN: "øvre faldne turkis"
+  BANNER_GRADIENT_GRAY: "øvre faldne grå"
+  BANNER_GRADIENT_GREEN: "øvre faldne grøn"
+  BANNER_GRADIENT_LIGHT_BLUE: "øvre faldne lyseblå"
+  BANNER_GRADIENT_LIGHT_GRAY: "øvre faldne lysegrå"
+  BANNER_GRADIENT_LIME: "øvre faldne limegrøn"
+  BANNER_GRADIENT_MAGENTA: "øvre faldne lyslilla"
+  BANNER_GRADIENT_ORANGE: "øvre faldne orange"
+  BANNER_GRADIENT_PINK: "øvre faldne lyserød"
+  BANNER_GRADIENT_PURPLE: "øvre faldne lilla"
+  BANNER_GRADIENT_RED: "øvre faldne rød"
+  BANNER_GRADIENT_WHITE: "øvre faldne hvid"
+  BANNER_GRADIENT_YELLOW: "øvre faldne gul"
+  BANNER_GRADIENT_UP_BLACK: "nedre faldne sort"
+  BANNER_GRADIENT_UP_BLUE: "nedre faldne blå"
+  BANNER_GRADIENT_UP_BROWN: "nedre faldne brun"
+  BANNER_GRADIENT_UP_CYAN: "nedre faldne turkis"
+  BANNER_GRADIENT_UP_GRAY: "nedre faldne grå"
+  BANNER_GRADIENT_UP_GREEN: "nedre faldne grøn"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "nedre faldne lyseblå"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "nedre faldne lysegrå"
+  BANNER_GRADIENT_UP_LIME: "nedre faldne limegrøn"
+  BANNER_GRADIENT_UP_MAGENTA: "nedre faldne lyslilla"
+  BANNER_GRADIENT_UP_ORANGE: "nedre faldne orange"
+  BANNER_GRADIENT_UP_PINK: "nedre faldne lyserød"
+  BANNER_GRADIENT_UP_PURPLE: "nedre faldne lilla"
+  BANNER_GRADIENT_UP_RED: "nedre faldne rød"
+  BANNER_GRADIENT_UP_WHITE: "nedre faldne hvid"
+  BANNER_GRADIENT_UP_YELLOW: "nedre faldne gul"
+  BANNER_HALF_HORIZONTAL_BLACK: "sort øvre halvdel"
+  BANNER_HALF_HORIZONTAL_BLUE: "blå øvre halvdel"
+  BANNER_HALF_HORIZONTAL_BROWN: "brun øvre halvdel"
+  BANNER_HALF_HORIZONTAL_CYAN: "turkis øvre halvdel"
+  BANNER_HALF_HORIZONTAL_GRAY: "grå øvre halvdel"
+  BANNER_HALF_HORIZONTAL_GREEN: "grøn øvre halvdel"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "lyseblå øvre halvdel"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "lysegrå øvre halvdel"
+  BANNER_HALF_HORIZONTAL_LIME: "limegrøn øvre halvdel"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "lyslilla øvre halvdel"
+  BANNER_HALF_HORIZONTAL_ORANGE: "orange øvre halvdel"
+  BANNER_HALF_HORIZONTAL_PINK: "lyserød øvre halvdel"
+  BANNER_HALF_HORIZONTAL_PURPLE: "lilla øvre halvdel"
+  BANNER_HALF_HORIZONTAL_RED: "rød øvre halvdel"
+  BANNER_HALF_HORIZONTAL_WHITE: "hvid øvre halvdel"
+  BANNER_HALF_HORIZONTAL_YELLOW: "gul øvre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "sort nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blå nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brun nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turkis nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grå nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "grøn nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "lyseblå nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "lysegrå nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "limegrøn nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "lyslilla nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "orange nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "lyserød nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "lilla nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "rød nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "hvid nedre halvdel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "gul nedre halvdel"
+  BANNER_HALF_VERTICAL_BLACK: "sort venstreside"
+  BANNER_HALF_VERTICAL_BLUE: "blå venstreside"
+  BANNER_HALF_VERTICAL_BROWN: "brun venstreside"
+  BANNER_HALF_VERTICAL_CYAN: "turkis venstreside"
+  BANNER_HALF_VERTICAL_GRAY: "grå venstreside"
+  BANNER_HALF_VERTICAL_GREEN: "grøn venstreside"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "lyseblå venstreside"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "lysegrå venstreside"
+  BANNER_HALF_VERTICAL_LIME: "limegrøn venstreside"
+  BANNER_HALF_VERTICAL_MAGENTA: "lyslilla venstreside"
+  BANNER_HALF_VERTICAL_ORANGE: "orange venstreside"
+  BANNER_HALF_VERTICAL_PINK: "lyserød venstreside"
+  BANNER_HALF_VERTICAL_PURPLE: "lilla venstreside"
+  BANNER_HALF_VERTICAL_RED: "rød venstreside"
+  BANNER_HALF_VERTICAL_WHITE: "hvid venstreside"
+  BANNER_HALF_VERTICAL_YELLOW: "gul venstreside"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "sort højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blå højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brun højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turkis højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grå højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "grøn højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "lyseblå højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "lysegrå højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "limegrøn højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "lyslilla højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "orange højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "lyserød højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "lilla højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "rød højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "hvid højre halvdel"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "gul højre halvdel"
+  BANNER_MOJANG_BLACK: "sort ting"
+  BANNER_MOJANG_BLUE: "blå ting"
+  BANNER_MOJANG_BROWN: "brun ting"
+  BANNER_MOJANG_CYAN: "turkis ting"
+  BANNER_MOJANG_GRAY: "grå ting"
+  BANNER_MOJANG_GREEN: "grøn ting"
+  BANNER_MOJANG_LIGHT_BLUE: "lyseblå ting"
+  BANNER_MOJANG_LIGHT_GRAY: "lysegrå ting"
+  BANNER_MOJANG_LIME: "limegrøn ting"
+  BANNER_MOJANG_MAGENTA: "lyslilla ting"
+  BANNER_MOJANG_ORANGE: "orange ting"
+  BANNER_MOJANG_PINK: "lyserød ting"
+  BANNER_MOJANG_PURPLE: "lilla ting"
+  BANNER_MOJANG_RED: "rød ting"
+  BANNER_MOJANG_WHITE: "hvid ting"
+  BANNER_MOJANG_YELLOW: "gul ting"
+  BANNER_PIGLIN_BLACK: "sort snude"
+  BANNER_PIGLIN_BLUE: "blå snude"
+  BANNER_PIGLIN_BROWN: "brun snude"
+  BANNER_PIGLIN_CYAN: "turkis snude"
+  BANNER_PIGLIN_GRAY: "grå snude"
+  BANNER_PIGLIN_GREEN: "grøn snude"
+  BANNER_PIGLIN_LIGHT_BLUE: "lyseblå snude"
+  BANNER_PIGLIN_LIGHT_GRAY: "lysegrå snude"
+  BANNER_PIGLIN_LIME: "limegrøn snude"
+  BANNER_PIGLIN_MAGENTA: "lyslilla snude"
+  BANNER_PIGLIN_ORANGE: "orange snude"
+  BANNER_PIGLIN_PINK: "lyserød snude"
+  BANNER_PIGLIN_PURPLE: "lilla snude"
+  BANNER_PIGLIN_RED: "rød snude"
+  BANNER_PIGLIN_WHITE: "hvid snude"
+  BANNER_PIGLIN_YELLOW: "gul snude"
+  BANNER_RHOMBUS_BLACK: "sort rombe"
+  BANNER_RHOMBUS_BLUE: "blå rombe"
+  BANNER_RHOMBUS_BROWN: "brun rombe"
+  BANNER_RHOMBUS_CYAN: "turkis rombe"
+  BANNER_RHOMBUS_GRAY: "grå rombe"
+  BANNER_RHOMBUS_GREEN: "grøn rombe"
+  BANNER_RHOMBUS_LIGHT_BLUE: "lyseblå rombe"
+  BANNER_RHOMBUS_LIGHT_GRAY: "lysegrå rombe"
+  BANNER_RHOMBUS_LIME: "limegrøn rombe"
+  BANNER_RHOMBUS_MAGENTA: "lyslilla rombe"
+  BANNER_RHOMBUS_ORANGE: "orange rombe"
+  BANNER_RHOMBUS_PINK: "lyserød rombe"
+  BANNER_RHOMBUS_PURPLE: "lilla rombe"
+  BANNER_RHOMBUS_RED: "rød rombe"
+  BANNER_RHOMBUS_WHITE: "hvid rombe"
+  BANNER_RHOMBUS_YELLOW: "gul rombe"
+  BANNER_SKULL_BLACK: "sort kranium symbol"
+  BANNER_SKULL_BLUE: "blåt kranium symbol"
+  BANNER_SKULL_BROWN: "brunt kranium symbol"
+  BANNER_SKULL_CYAN: "turkis kranium symbol"
+  BANNER_SKULL_GRAY: "gråt kranium symbol"
+  BANNER_SKULL_GREEN: "grønt kranium symbol"
+  BANNER_SKULL_LIGHT_BLUE: "lyseblåt kranium symbol"
+  BANNER_SKULL_LIGHT_GRAY: "lysegråt kranium symbol"
+  BANNER_SKULL_LIME: "limegrønt kranium symbol"
+  BANNER_SKULL_MAGENTA: "lyslilla kranium symbol"
+  BANNER_SKULL_ORANGE: "orange kranium symbol"
+  BANNER_SKULL_PINK: "lyserødt kranium symbol"
+  BANNER_SKULL_PURPLE: "lilla kranium symbol"
+  BANNER_SKULL_RED: "rødt kranium symbol"
+  BANNER_SKULL_WHITE: "hvidt kranium symbol"
+  BANNER_SKULL_YELLOW: "gult kranium symbol"
+  BANNER_SMALL_STRIPES_BLACK: "sort gitter"
+  BANNER_SMALL_STRIPES_BLUE: "blåt gitter"
+  BANNER_SMALL_STRIPES_BROWN: "brunt gitter"
+  BANNER_SMALL_STRIPES_CYAN: "turkis gitter"
+  BANNER_SMALL_STRIPES_GRAY: "gråt gitter"
+  BANNER_SMALL_STRIPES_GREEN: "grønt gitter"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "lyseblåt gitter"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "lysegråt gitter"
+  BANNER_SMALL_STRIPES_LIME: "limegrønt gitter"
+  BANNER_SMALL_STRIPES_MAGENTA: "lyslilla gitter"
+  BANNER_SMALL_STRIPES_ORANGE: "orange gitter"
+  BANNER_SMALL_STRIPES_PINK: "lyserødt gitter"
+  BANNER_SMALL_STRIPES_PURPLE: "lilla gitter"
+  BANNER_SMALL_STRIPES_RED: "rødt gitter"
+  BANNER_SMALL_STRIPES_WHITE: "hvidt gitter"
+  BANNER_SMALL_STRIPES_YELLOW: "gult gitter"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "sort firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blå firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "brun firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turkis firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "grå firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "grøn firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "lyseblå firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "lysegrå firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "limegrøn firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "lyslilla firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "orange firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "lyserød firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lilla firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "rød firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "hvid firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gul firkant nederst til venstre"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "sort firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blå firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brun firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turkis firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "grå firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "grøn firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "lyseblå firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "lysegrå firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "limegrøn firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "lyslilla firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "orange firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "lyserød firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lilla firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "rød firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "hvid firkant nede til højre"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gul firkant nede til højre"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "sort firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blå firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "brun firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turkis firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "grå firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "grøn firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "lyseblå firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "lysegrå firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_LIME: "limegrøn firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "lyslilla firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "orange firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_PINK: "lyserød firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lilla firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_RED: "rød firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "hvid firkant oppe til venstre"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gul firkant oppe til venstre"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "sort firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blå firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brun firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turkis firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "grå firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "grøn firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "lyseblå firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "lysegrå firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "limegrøn firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "lyslilla firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "orange firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "lyserød firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lilla firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_RED: "rød firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "hvid firkant oppe til højre"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gul firkant oppe til højre"
+  BANNER_STRAIGHT_CROSS_BLACK: "sort kors"
+  BANNER_STRAIGHT_CROSS_BLUE: "blåt kors"
+  BANNER_STRAIGHT_CROSS_BROWN: "brunt kors"
+  BANNER_STRAIGHT_CROSS_CYAN: "turkis kors"
+  BANNER_STRAIGHT_CROSS_GRAY: "gråt kors"
+  BANNER_STRAIGHT_CROSS_GREEN: "grønt kors"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "lyseblåt kors"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "lysegråt kors"
+  BANNER_STRAIGHT_CROSS_LIME: "limefarvet kors"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "lyslilla kors"
+  BANNER_STRAIGHT_CROSS_ORANGE: "orange kors"
+  BANNER_STRAIGHT_CROSS_PINK: "lyserødt kors"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lilla kors"
+  BANNER_STRAIGHT_CROSS_RED: "rødt kors"
+  BANNER_STRAIGHT_CROSS_WHITE: "hvidt kors"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gult kors"
+  BANNER_STRIPE_BOTTOM_BLACK: "sort base"
+  BANNER_STRIPE_BOTTOM_BLUE: "blå base"
+  BANNER_STRIPE_BOTTOM_BROWN: "brun base"
+  BANNER_STRIPE_BOTTOM_CYAN: "turkis base"
+  BANNER_STRIPE_BOTTOM_GRAY: "grå base"
+  BANNER_STRIPE_BOTTOM_GREEN: "grøn base"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "lyseblå base"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "lysegrå base"
+  BANNER_STRIPE_BOTTOM_LIME: "limegrøn base"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "lyslilla base"
+  BANNER_STRIPE_BOTTOM_ORANGE: "orange base"
+  BANNER_STRIPE_BOTTOM_PINK: "lyserød base"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lilla base"
+  BANNER_STRIPE_BOTTOM_RED: "rød base"
+  BANNER_STRIPE_BOTTOM_WHITE: "hvid base"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gul base"
+  BANNER_STRIPE_CENTER_BLACK: "sort pæl"
+  BANNER_STRIPE_CENTER_BLUE: "blå pæl"
+  BANNER_STRIPE_CENTER_BROWN: "brun pæl"
+  BANNER_STRIPE_CENTER_CYAN: "turkis pæl"
+  BANNER_STRIPE_CENTER_GRAY: "grå pæl"
+  BANNER_STRIPE_CENTER_GREEN: "grøn pæl"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "lyseblå pæl"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "lysegrå pæl"
+  BANNER_STRIPE_CENTER_LIME: "limegrøn pæl"
+  BANNER_STRIPE_CENTER_MAGENTA: "lyslilla pæl"
+  BANNER_STRIPE_CENTER_ORANGE: "orange pæl"
+  BANNER_STRIPE_CENTER_PINK: "lyserød pæl"
+  BANNER_STRIPE_CENTER_PURPLE: "lilla pæl"
+  BANNER_STRIPE_CENTER_RED: "rød pæl"
+  BANNER_STRIPE_CENTER_WHITE: "hvid pæl"
+  BANNER_STRIPE_CENTER_YELLOW: "gul pæl"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "sort højrebånd"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blåt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brunt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turkis højrebånd"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "gråt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "grønt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "lyseblåt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "lysegråt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_LIME: "limegrønt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "lyslilla højrebånd"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "orange højrebånd"
+  BANNER_STRIPE_DOWNLEFT_PINK: "lyserødt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lilla højrebånd"
+  BANNER_STRIPE_DOWNLEFT_RED: "rødt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "hvidt højrebånd"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gult højrebånd"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "sort venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blåt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brunt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turkis venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "gråt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "grønt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "lyseblåt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "lysegråt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "limegrønt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "lyslilla venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "orange venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "lyserødt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lilla venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rødt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "hvidt venstrebånd"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gult venstrebånd"
+  BANNER_STRIPE_LEFT_BLACK: "sort venstre pæl"
+  BANNER_STRIPE_LEFT_BLUE: "blå venstre pæl"
+  BANNER_STRIPE_LEFT_BROWN: "brun venstre pæl"
+  BANNER_STRIPE_LEFT_CYAN: "turkis venstre pæl"
+  BANNER_STRIPE_LEFT_GRAY: "grå venstre pæl"
+  BANNER_STRIPE_LEFT_GREEN: "grøn venstre pæl"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "lyseblå venstre pæl"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "lysegrå venstre pæl"
+  BANNER_STRIPE_LEFT_LIME: "limegrøn venstre pæl"
+  BANNER_STRIPE_LEFT_MAGENTA: "lyslilla venstre pæl"
+  BANNER_STRIPE_LEFT_ORANGE: "orange venstre pæl"
+  BANNER_STRIPE_LEFT_PINK: "lyserød venstre pæl"
+  BANNER_STRIPE_LEFT_PURPLE: "lilla venstre pæl"
+  BANNER_STRIPE_LEFT_RED: "rød venstre pæl"
+  BANNER_STRIPE_LEFT_WHITE: "hvid venstre pæl"
+  BANNER_STRIPE_LEFT_YELLOW: "gul venstre pæl"
+  BANNER_STRIPE_MIDDLE_BLACK: "sort bjælke"
+  BANNER_STRIPE_MIDDLE_BLUE: "blå bjælke"
+  BANNER_STRIPE_MIDDLE_BROWN: "brun bjælke"
+  BANNER_STRIPE_MIDDLE_CYAN: "turkis bjælke"
+  BANNER_STRIPE_MIDDLE_GRAY: "grå bjælke"
+  BANNER_STRIPE_MIDDLE_GREEN: "grøn bjælke"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "lyseblå bjælke"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "lysegrå bjælke"
+  BANNER_STRIPE_MIDDLE_LIME: "limegrøn bjælke"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "lyslilla bjælke"
+  BANNER_STRIPE_MIDDLE_ORANGE: "orange bjælke"
+  BANNER_STRIPE_MIDDLE_PINK: "lyserød bjælke"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lilla bjælke"
+  BANNER_STRIPE_MIDDLE_RED: "rød bjælke"
+  BANNER_STRIPE_MIDDLE_WHITE: "hvid bjælke"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gul bjælke"
+  BANNER_STRIPE_RIGHT_BLACK: "sort højre pæl"
+  BANNER_STRIPE_RIGHT_BLUE: "blå højre pæl"
+  BANNER_STRIPE_RIGHT_BROWN: "brun højre pæl"
+  BANNER_STRIPE_RIGHT_CYAN: "turkis højre pæl"
+  BANNER_STRIPE_RIGHT_GRAY: "grå højre pæl"
+  BANNER_STRIPE_RIGHT_GREEN: "grøn højre pæl"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "lyseblå højre pæl"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "lysegrå højre pæl"
+  BANNER_STRIPE_RIGHT_LIME: "limegrøn højre pæl"
+  BANNER_STRIPE_RIGHT_MAGENTA: "lyslilla højre pæl"
+  BANNER_STRIPE_RIGHT_ORANGE: "orange højre pæl"
+  BANNER_STRIPE_RIGHT_PINK: "lyserød højre pæl"
+  BANNER_STRIPE_RIGHT_PURPLE: "lilla højre pæl"
+  BANNER_STRIPE_RIGHT_RED: "rød højre pæl"
+  BANNER_STRIPE_RIGHT_WHITE: "hvid højre pæl"
+  BANNER_STRIPE_RIGHT_YELLOW: "gul højre pæl"
+  BANNER_STRIPE_TOP_BLACK: "sort top"
+  BANNER_STRIPE_TOP_BLUE: "blå top"
+  BANNER_STRIPE_TOP_BROWN: "brun top"
+  BANNER_STRIPE_TOP_CYAN: "turkis top"
+  BANNER_STRIPE_TOP_GRAY: "grå top"
+  BANNER_STRIPE_TOP_GREEN: "grøn top"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "lyseblå top"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "lysegrå top"
+  BANNER_STRIPE_TOP_LIME: "limegrøn top"
+  BANNER_STRIPE_TOP_MAGENTA: "lyslilla top"
+  BANNER_STRIPE_TOP_ORANGE: "orange top"
+  BANNER_STRIPE_TOP_PINK: "pink top"
+  BANNER_STRIPE_TOP_PURPLE: "lilla top"
+  BANNER_STRIPE_TOP_RED: "rød top"
+  BANNER_STRIPE_TOP_WHITE: "hvid top"
+  BANNER_STRIPE_TOP_YELLOW: "gul top"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "sort nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blå nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "brun nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turkis nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "grå nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "grøn nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "lyseblå nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "lysegrå nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_LIME: "limegrøn nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "lyslilla nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "orange nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_PINK: "lyserød nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lilla nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_RED: "rød nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "hvid nedre trekant"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gul nedre trekant"
+  BANNER_TRIANGLE_TOP_BLACK: "sort øvre trekant"
+  BANNER_TRIANGLE_TOP_BLUE: "blå øvre trekant"
+  BANNER_TRIANGLE_TOP_BROWN: "brun øvre trekant"
+  BANNER_TRIANGLE_TOP_CYAN: "turkis øvre trekant"
+  BANNER_TRIANGLE_TOP_GRAY: "grå øvre trekant"
+  BANNER_TRIANGLE_TOP_GREEN: "grøn øvre trekant"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "lyseblå øvre trekant"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "lysegrå øvre trekant"
+  BANNER_TRIANGLE_TOP_LIME: "limegrøn øvre trekant"
+  BANNER_TRIANGLE_TOP_MAGENTA: "lyslilla øvre trekant"
+  BANNER_TRIANGLE_TOP_ORANGE: "orange øvre trekant"
+  BANNER_TRIANGLE_TOP_PINK: "lyserød øvre trekant"
+  BANNER_TRIANGLE_TOP_PURPLE: "lilla øvre trekant"
+  BANNER_TRIANGLE_TOP_RED: "rød øvre trekant"
+  BANNER_TRIANGLE_TOP_WHITE: "hvid øvre trekant"
+  BANNER_TRIANGLE_TOP_YELLOW: "gul øvre trekant"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "sorte bundpigge"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blå bundpigge"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brune bundpigge"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turkis bundpigge"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "grå bundpigge"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "grønne bundpigge"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "lyseblå bundpigge"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "lysegrå bundpigge"
+  BANNER_TRIANGLES_BOTTOM_LIME: "limegrønne bundpigge"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "lyslilla bundpigge"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "orange bundpigge"
+  BANNER_TRIANGLES_BOTTOM_PINK: "lyserøde bundpigge"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lilla bundpigge"
+  BANNER_TRIANGLES_BOTTOM_RED: "røde bundpigge"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "hvide bundpigge"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gule bundpigge"
+  BANNER_TRIANGLES_TOP_BLACK: "sorte toppigge"
+  BANNER_TRIANGLES_TOP_BLUE: "blå toppigge"
+  BANNER_TRIANGLES_TOP_BROWN: "brune toppigge"
+  BANNER_TRIANGLES_TOP_CYAN: "turkis toppigge"
+  BANNER_TRIANGLES_TOP_GRAY: "grå toppigge"
+  BANNER_TRIANGLES_TOP_GREEN: "grønne toppigge"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "lysseblå toppigge"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "lyssegrå toppigge"
+  BANNER_TRIANGLES_TOP_LIME: "limegrønne toppigge"
+  BANNER_TRIANGLES_TOP_MAGENTA: "lyslilla toppigge"
+  BANNER_TRIANGLES_TOP_ORANGE: "orange toppigge"
+  BANNER_TRIANGLES_TOP_PINK: "lysserøde toppigge"
+  BANNER_TRIANGLES_TOP_PURPLE: "lilla toppigge"
+  BANNER_TRIANGLES_TOP_RED: "røde toppigge"
+  BANNER_TRIANGLES_TOP_WHITE: "hvide toppigge"
+  BANNER_TRIANGLES_TOP_YELLOW: "gule toppigge"
+  BARREL: "tønde"
+  BARRIER: "barriere"
+  BASALT: "basalt"
+  BEACON: "signallys"
+  BEACON_PRIMARY: "primær kraft"
+  BEACON_SECONDARY: "sekundær kraft"
+  BED_NO_SLEEP: "du kan kun sove om natten eller under tordenvejr"
+  BED_NOT_SAFE: "du kan ikke sove nu; der er monstre i nærheden"
+  BED_OBSTRUCTED: "sengen er optaget"
+  BED_OCCUPIED: "denne seng er optaget"
+  BED_TOO_FAR_AWAY: "du kan ikke sove nu; sengen er for langt væk"
+  BEDROCK: "grundfjeld"
+  BEE_NEST: "bikube"
+  BEEHIVE: "bistade"
+  BEETROOTS: "rødbeder"
+  BELL: "klokke"
+  BIG_DRIPLEAF: "stort dryppeblad"
+  BIG_DRIPLEAF_STEM: "stor dryppebladsstilk"
+  BIRCH_BUTTON: "birkeknap"
+  BIRCH_DOOR: "birkedør"
+  BIRCH_FENCE: "birkehegn"
+  BIRCH_FENCE_GATE: "birkehegnslåge"
+  BIRCH_HANGING_SIGN: "hængende birkeskilt"
+  BIRCH_LEAVES: "birkeløv"
+  BIRCH_LOG: "birkestamme"
+  BIRCH_PLANKS: "birkeplanker"
+  BIRCH_PRESSURE_PLATE: "birketrykplade"
+  BIRCH_SAPLING: "ungt birketræ"
+  BIRCH_SIGN: "birketræsskilt"
+  BIRCH_SLAB: "birkeplade"
+  BIRCH_STAIRS: "birketrappe"
+  BIRCH_TRAPDOOR: "birkelem"
+  BIRCH_WALL_HANGING_SIGN: "væghængende birkeskilt"
+  BIRCH_WALL_SIGN: "birketræsvægskilt"
+  BIRCH_WOOD: "birketræ"
+  BLACK_BANNER: "sort banner"
+  BLACK_BED: "sort seng"
+  BLACK_CANDLE: "sort stearinlys"
+  BLACK_CANDLE_CAKE: "kage med sort stearinlys"
+  BLACK_CARPET: "sort tæppe"
+  BLACK_CONCRETE: "sort beton"
+  BLACK_CONCRETE_POWDER: "sort beton pulver"
+  BLACK_GLAZED_TERRACOTTA: "sort glaseret terrakotta"
+  BLACK_SHULKER_BOX: "sort shulker boks"
+  BLACK_STAINED_GLASS: "sort farvet glas"
+  BLACK_STAINED_GLASS_PANE: "sort farvet glaspanel"
+  BLACK_TERRACOTTA: "sort terrakotta"
+  BLACK_WOOL: "sort uld"
+  BLACKSTONE: "sortsten"
+  BLACKSTONE_SLAB: "sortstensflise"
+  BLACKSTONE_STAIRS: "sortstenstrappe"
+  BLACKSTONE_WALL: "sortstensvæg"
+  BLAST_FURNACE: "højovn"
+  BLUE_BANNER: "blåt banner"
+  BLUE_BED: "blå seng"
+  BLUE_CANDLE: "blåt stearinlys"
+  BLUE_CANDLE_CAKE: "kage med blåt stearinlys"
+  BLUE_CARPET: "blåt tæppe"
+  BLUE_CONCRETE: "blå beton"
+  BLUE_CONCRETE_POWDER: "blåt beton pulver"
+  BLUE_GLAZED_TERRACOTTA: "blå glaseret terrakotta"
+  BLUE_ICE: "blåis"
+  BLUE_ORCHID: "blå orkidé"
+  BLUE_SHULKER_BOX: "blå shulker boks"
+  BLUE_STAINED_GLASS: "blåt farvet glas"
+  BLUE_STAINED_GLASS_PANE: "blåt farvet glaspanel"
+  BLUE_TERRACOTTA: "blå terrakotta"
+  BLUE_WOOL: "blå uld"
+  BONE_BLOCK: "ben blok"
+  BOOKSHELF: "bogreol"
+  BRAIN_CORAL: "hjernekoral"
+  BRAIN_CORAL_BLOCK: "hjernekoralblok"
+  BRAIN_CORAL_FAN: "hjernekoralvifte"
+  BRAIN_CORAL_WALL_FAN: "hjernekoralvægvifte"
+  BREWING_STAND: "bryggestand"
+  BRICK_SLAB: "murstensflise"
+  BRICK_STAIRS: "murstenstrappe"
+  BRICK_WALL: "murstensvæg"
+  BRICKS: "mursten"
+  BROWN_BANNER: "brunt banner"
+  BROWN_BED: "brun seng"
+  BROWN_CANDLE: "brunt stearinlys"
+  BROWN_CANDLE_CAKE: "kage med brunt stearinlys"
+  BROWN_CARPET: "brunt tæppe"
+  BROWN_CONCRETE: "brun beton"
+  BROWN_CONCRETE_POWDER: "brunt beton pulver"
+  BROWN_GLAZED_TERRACOTTA: "brun glaseret terrakotta"
+  BROWN_MUSHROOM: "brun svamp"
+  BROWN_MUSHROOM_BLOCK: "brun svampeblok"
+  BROWN_SHULKER_BOX: "brun shulker boks"
+  BROWN_STAINED_GLASS: "brunt farvet glas"
+  BROWN_STAINED_GLASS_PANE: "brunt farvet glaspanel"
+  BROWN_TERRACOTTA: "brun terrakotta"
+  BROWN_WOOL: "brun uld"
+  BUBBLE_COLUMN: "boble søjle"
+  BUBBLE_CORAL: "boblekoral"
+  BUBBLE_CORAL_BLOCK: "boblekoralblok"
+  BUBBLE_CORAL_FAN: "boblekoralvifte"
+  BUBBLE_CORAL_WALL_FAN: "boblekoralvægvifte"
+  BUDDING_AMETHYST: "spirende ametyst"
+  CACTUS: "kaktus"
+  CAKE: "kage"
+  CALCITE: "calcit"
+  CALIBRATED_SCULK_SENSOR: "kalibreret sculk-sensor"
+  CAMPFIRE: "bål"
+  CANDLE: "stearinlys"
+  CANDLE_CAKE: "kage med stearinlys"
+  CARROTS: "gulerødder"
+  CARTOGRAPHY_TABLE: "kartografi bord"
+  CARVED_PUMPKIN: "udskåret græskar"
+  CAULDRON: "gryde"
+  CAVE_AIR: "grotteluft"
+  CAVE_VINES: "grottelianer"
+  CAVE_VINES_PLANT: "grottelian plante"
+  CHAIN: "kæde"
+  CHAIN_COMMAND_BLOCK: "kæde kommandoblok"
+  CHERRY_BUTTON: "kirsebærknap"
+  CHERRY_DOOR: "kirsebærdør"
+  CHERRY_FENCE: "kirsebærhegn"
+  CHERRY_FENCE_GATE: "kirsebærhegnslåge"
+  CHERRY_HANGING_SIGN: "hængende kirsebærskilt"
+  CHERRY_LEAVES: "kirsebærløv"
+  CHERRY_LOG: "kirsebærstamme"
+  CHERRY_PLANKS: "kirsebærplanker"
+  CHERRY_PRESSURE_PLATE: "kirsebærtrykplade"
+  CHERRY_SAPLING: "ungt kirsebærtræ"
+  CHERRY_SIGN: "kirsebærtræsskilt"
+  CHERRY_SLAB: "kirsebærplade"
+  CHERRY_STAIRS: "kirsebærtrappe"
+  CHERRY_TRAPDOOR: "kirsebærlem"
+  CHERRY_WALL_HANGING_SIGN: "væghængende kirsebærskilt"
+  CHERRY_WALL_SIGN: "kirsebærsvægskilt"
+  CHERRY_WOOD: "kirsebærtræ"
+  CHEST: "kiste"
+  CHIPPED_ANVIL: "hakket ambolt"
+  CHISELED_BOOKSHELF: "mejslet bogreol"
+  CHISELED_COPPER: "mejslet kobber"
+  CHISELED_DEEPSLATE: "mejslet dybskifer"
+  CHISELED_NETHER_BRICKS: "mejslet nether-mursten"
+  CHISELED_POLISHED_BLACKSTONE: "mejslet poleret sortsten"
+  CHISELED_QUARTZ_BLOCK: "mejslet kvartsblok"
+  CHISELED_RED_SANDSTONE: "mejslet rød sandsten"
+  CHISELED_SANDSTONE: "mejslet sandsten"
+  CHISELED_STONE_BRICKS: "mejslede stenmursten"
+  CHISELED_TUFF: "mejslet tuf"
+  CHISELED_TUFF_BRICKS: "mejslet tufmursten"
+  CHORUS_FLOWER: "omkvædsblomst"
+  CHORUS_PLANT: "omkvædsplante"
+  CLAY: "ler"
+  COAL_BLOCK: "blok af kul"
+  COAL_ORE: "kulmalm"
+  COARSE_DIRT: "groft jord"
+  COBBLED_DEEPSLATE: "dybskiferbrosten"
+  COBBLED_DEEPSLATE_SLAB: "dybskifer-brostensflise"
+  COBBLED_DEEPSLATE_STAIRS: "dybskifer-brostenstrappe"
+  COBBLED_DEEPSLATE_WALL: "dybskifer-brostensvæg"
+  COBBLESTONE: "brosten"
+  COBBLESTONE_SLAB: "brostensflise"
+  COBBLESTONE_STAIRS: "brostenstrappe"
+  COBBLESTONE_WALL: "brostensvæg"
+  COBWEB: "spindelvæv"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "kommandoblok"
+  COMPARATOR: "redstone-komparator"
+  COMPOSTER: "kompostbeholder"
+  CONDUIT: "fløder"
+  COPPER_BLOCK: "blok af kobber"
+  COPPER_BULB: "blok minecraft kobber pære"
+  COPPER_DOOR: "kobberdør"
+  COPPER_GRATE: "blok. minehåndværk. kobber_rist"
+  COPPER_ORE: "kobbermalm"
+  COPPER_TRAPDOOR: "blok minecraft kobber falddør"
+  CORNFLOWER: "kornblomst"
+  CRACKED_DEEPSLATE_BRICKS: "revnede dybskifermursten"
+  CRACKED_DEEPSLATE_TILES: "revnede dybskiferfliser"
+  CRACKED_NETHER_BRICKS: "revnede nether-mursten"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "revnede poleret sortsten-mursten"
+  CRACKED_STONE_BRICKS: "revnede stenmursten"
+  CRAFTER: "blok minecraft crafter"
+  CRAFTING_TABLE: "arbejdsbord"
+  CREEPER_HEAD: "creeper-hoved"
+  CREEPER_WALL_HEAD: "creeper væg hoved"
+  CRIMSON_BUTTON: "karmoisinknap"
+  CRIMSON_DOOR: "karmoisindør"
+  CRIMSON_FENCE: "karmoisinhegn"
+  CRIMSON_FENCE_GATE: "karmoisinhegnslåge"
+  CRIMSON_FUNGUS: "karmoisinsvamp"
+  CRIMSON_HANGING_SIGN: "hængende karmoisinskilt"
+  CRIMSON_HYPHAE: "karmoisinhyfer"
+  CRIMSON_NYLIUM: "karmoisin nylium"
+  CRIMSON_PLANKS: "karmoisinplanker"
+  CRIMSON_PRESSURE_PLATE: "karmoisintrykplade"
+  CRIMSON_ROOTS: "karmoisinrødder"
+  CRIMSON_SIGN: "karmoisinskilt"
+  CRIMSON_SLAB: "karmoisinplade"
+  CRIMSON_STAIRS: "karmoisintrappe"
+  CRIMSON_STEM: "karmoisinstilk"
+  CRIMSON_TRAPDOOR: "karmoisinlem"
+  CRIMSON_WALL_HANGING_SIGN: "væghængende karmoisinskilt"
+  CRIMSON_WALL_SIGN: "karmoisinvægskilt"
+  CRYING_OBSIDIAN: "grædende obsidian"
+  CUT_COPPER: "skåret kobber"
+  CUT_COPPER_SLAB: "skåret kobberplade"
+  CUT_COPPER_STAIRS: "skåret kobbertrappe"
+  CUT_RED_SANDSTONE: "skåret rød sandsten"
+  CUT_RED_SANDSTONE_SLAB: "skåret rød sandstensflise"
+  CUT_SANDSTONE: "skåret sandsten"
+  CUT_SANDSTONE_SLAB: "skåret sandstensflise"
+  CYAN_BANNER: "turkis banner"
+  CYAN_BED: "turkis seng"
+  CYAN_CANDLE: "turkis stearinlys"
+  CYAN_CANDLE_CAKE: "kage med turkis stearinlys"
+  CYAN_CARPET: "turkis tæppe"
+  CYAN_CONCRETE: "turkis beton"
+  CYAN_CONCRETE_POWDER: "turkis beton pulver"
+  CYAN_GLAZED_TERRACOTTA: "turkis glaseret terrakotta"
+  CYAN_SHULKER_BOX: "turkis shulker boks"
+  CYAN_STAINED_GLASS: "turkis farvet glas"
+  CYAN_STAINED_GLASS_PANE: "turkis farvet glaspanel"
+  CYAN_TERRACOTTA: "turkis terrakotta"
+  CYAN_WOOL: "turkis uld"
+  DAMAGED_ANVIL: "beskadet ambolt"
+  DANDELION: "mælkebøtte"
+  DARK_OAK_BUTTON: "mørk egeknap"
+  DARK_OAK_DOOR: "mørk egetræsdør"
+  DARK_OAK_FENCE: "mørk egetræshegn"
+  DARK_OAK_FENCE_GATE: "mørk egetræshegnslåge"
+  DARK_OAK_HANGING_SIGN: "hængende mørk egetræsskilt"
+  DARK_OAK_LEAVES: "mørkt egeløv"
+  DARK_OAK_LOG: "mørk egestamme"
+  DARK_OAK_PLANKS: "mørke egeplanker"
+  DARK_OAK_PRESSURE_PLATE: "mørk egetrykplade"
+  DARK_OAK_SAPLING: "ungt mørkt egetræ"
+  DARK_OAK_SIGN: "mørkt egetræsskilt"
+  DARK_OAK_SLAB: "mørk egeplade"
+  DARK_OAK_STAIRS: "mørke egetrappe"
+  DARK_OAK_TRAPDOOR: "mørk egelem"
+  DARK_OAK_WALL_HANGING_SIGN: "væghængende mørk egetræsskilt"
+  DARK_OAK_WALL_SIGN: "mørkt egetræsvægskilt"
+  DARK_OAK_WOOD: "mørk egetræ"
+  DARK_PRISMARINE: "mørk prismarine"
+  DARK_PRISMARINE_SLAB: "mørk prismarine-flise"
+  DARK_PRISMARINE_STAIRS: "mørk prismarine-trappe"
+  DAYLIGHT_DETECTOR: "dagslysdetektor"
+  DEAD_BRAIN_CORAL: "død hjernekoral"
+  DEAD_BRAIN_CORAL_BLOCK: "død hjernekoralblok"
+  DEAD_BRAIN_CORAL_FAN: "død hjernekoralvifte"
+  DEAD_BRAIN_CORAL_WALL_FAN: "død hjernekoralvægvifte"
+  DEAD_BUBBLE_CORAL: "død boblekoral"
+  DEAD_BUBBLE_CORAL_BLOCK: "død boblekoralblok"
+  DEAD_BUBBLE_CORAL_FAN: "død boblekoralvifte"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "død boblekoralvægvifte"
+  DEAD_BUSH: "død busk"
+  DEAD_FIRE_CORAL: "død ildkoral"
+  DEAD_FIRE_CORAL_BLOCK: "død ildkoralblok"
+  DEAD_FIRE_CORAL_FAN: "død ildkoralvifte"
+  DEAD_FIRE_CORAL_WALL_FAN: "død ildkoralvægvifte"
+  DEAD_HORN_CORAL: "død hornkoral"
+  DEAD_HORN_CORAL_BLOCK: "død hornkoralblok"
+  DEAD_HORN_CORAL_FAN: "død hornkoralvifte"
+  DEAD_HORN_CORAL_WALL_FAN: "død hornkoralvægvifte"
+  DEAD_TUBE_CORAL: "død orgelkoral"
+  DEAD_TUBE_CORAL_BLOCK: "død orgelkoralblok"
+  DEAD_TUBE_CORAL_FAN: "død orgelkoralvifte"
+  DEAD_TUBE_CORAL_WALL_FAN: "død orgelkoralvægvifte"
+  DECORATED_POT: "dekoreret krukke"
+  DEEPSLATE: "dybskifer"
+  DEEPSLATE_BRICK_SLAB: "dybskifer-murstensflise"
+  DEEPSLATE_BRICK_STAIRS: "dybskifer-murstenstrappe"
+  DEEPSLATE_BRICK_WALL: "dybskifer-murstensvæg"
+  DEEPSLATE_BRICKS: "dybskifermursten"
+  DEEPSLATE_COAL_ORE: "dybskiferkulmalm"
+  DEEPSLATE_COPPER_ORE: "dybskiferkobbermalm"
+  DEEPSLATE_DIAMOND_ORE: "dybskiferdiamantmalm"
+  DEEPSLATE_EMERALD_ORE: "dybskifersmaragdmalm"
+  DEEPSLATE_GOLD_ORE: "dybskiferguldmalm"
+  DEEPSLATE_IRON_ORE: "dybskiferjernmalm"
+  DEEPSLATE_LAPIS_ORE: "dybskifer-lapis lazulimalm"
+  DEEPSLATE_REDSTONE_ORE: "dybskifer-redstonemalm"
+  DEEPSLATE_TILE_SLAB: "dybskifer-klinkeflise"
+  DEEPSLATE_TILE_STAIRS: "dybskifer-klinketrappe"
+  DEEPSLATE_TILE_WALL: "dybskifer-klinkevæg"
+  DEEPSLATE_TILES: "dybskiferklinker"
+  DETECTOR_RAIL: "detektorspor"
+  DIAMOND_BLOCK: "blok af diamant"
+  DIAMOND_ORE: "diamantmalm"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dioritflise"
+  DIORITE_STAIRS: "diorittrappe"
+  DIORITE_WALL: "dioritvæg"
+  DIRT: "jord"
+  DIRT_PATH: "jord sti"
+  DISPENSER: "automat"
+  DRAGON_EGG: "drageæg"
+  DRAGON_HEAD: "dragehoved"
+  DRAGON_WALL_HEAD: "drage væg hoved"
+  DRIED_KELP_BLOCK: "tørret tangblok"
+  DRIPSTONE_BLOCK: "drypstenblok"
+  DROPPER: "udkaster"
+  EMERALD_BLOCK: "blok af smaragd"
+  EMERALD_ORE: "smaragdmalm"
+  ENCHANTING_TABLE: "fortryllelsesbord"
+  END_GATEWAY: "end port"
+  END_PORTAL: "end portal"
+  END_PORTAL_FRAME: "end portalramme"
+  END_ROD: "ender stang"
+  END_STONE: "end-sten"
+  END_STONE_BRICK_SLAB: "end-murstensflise"
+  END_STONE_BRICK_STAIRS: "end-murstenstrapper"
+  END_STONE_BRICK_WALL: "end-murstensvæg"
+  END_STONE_BRICKS: "end-mursten"
+  ENDER_CHEST: "enderkiste"
+  EXPOSED_CHISELED_COPPER: "blok minecraft eksponeret mejslet kobber"
+  EXPOSED_COPPER: "blotlagt kobber"
+  EXPOSED_COPPER_BULB: "blok minecraft eksponeret kobber pære"
+  EXPOSED_COPPER_DOOR: "blokere minecraft eksponeret kobberdør"
+  EXPOSED_COPPER_GRATE: "blok minecraft eksponeret kobber rist"
+  EXPOSED_COPPER_TRAPDOOR: "blokere minecraft eksponeret kobber falddør"
+  EXPOSED_CUT_COPPER: "blotlagt skåret kobber"
+  EXPOSED_CUT_COPPER_SLAB: "blotlagt skåret kobberplade"
+  EXPOSED_CUT_COPPER_STAIRS: "blotlagt skåret kobbertrappe"
+  FARMLAND: "landbrugsjord"
+  FERN: "bregne"
+  FIRE: "ild"
+  FIRE_CORAL: "ildkoral"
+  FIRE_CORAL_BLOCK: "ildkoralblok"
+  FIRE_CORAL_FAN: "ildkoralvifte"
+  FIRE_CORAL_WALL_FAN: "ildkoralvægvifte"
+  FLETCHING_TABLE: "pilemager bord"
+  FLOWER_POT: "blomsterkrukke"
+  FLOWERING_AZALEA: "blomstrende azalea"
+  FLOWERING_AZALEA_LEAVES: "blomstrende azalealøv"
+  FROGSPAWN: "frøæg"
+  FROSTED_ICE: "fortættet is"
+  FURNACE: "ovn"
+  GILDED_BLACKSTONE: "forgyldt sortsten"
+  GLASS: "glas"
+  GLASS_PANE: "glaspanel"
+  GLOW_LICHEN: "glødelav"
+  GLOWSTONE: "glødesten"
+  GOLD_BLOCK: "blok af guld"
+  GOLD_ORE: "guldmalm"
+  GRANITE: "granit"
+  GRANITE_SLAB: "granitflise"
+  GRANITE_STAIRS: "granittrappe"
+  GRANITE_WALL: "granitvæg"
+  GRASS: "græs"
+  GRASS_BLOCK: "græsblok"
+  GRAVEL: "grus"
+  GRAY_BANNER: "gråt banner"
+  GRAY_BED: "grå seng"
+  GRAY_CANDLE: "gråt stearinlys"
+  GRAY_CANDLE_CAKE: "kage med gråt stearinlys"
+  GRAY_CARPET: "gråt tæppe"
+  GRAY_CONCRETE: "grå beton"
+  GRAY_CONCRETE_POWDER: "gråt beton pulver"
+  GRAY_GLAZED_TERRACOTTA: "grå glaseret terrakotta"
+  GRAY_SHULKER_BOX: "grå shulker boks"
+  GRAY_STAINED_GLASS: "gråt farvet glas"
+  GRAY_STAINED_GLASS_PANE: "gråt farvet glaspanel"
+  GRAY_TERRACOTTA: "grå terrakotta"
+  GRAY_WOOL: "grå uld"
+  GREEN_BANNER: "grønt banner"
+  GREEN_BED: "grøn seng"
+  GREEN_CANDLE: "grønt stearinlys"
+  GREEN_CANDLE_CAKE: "kage med grønt stearinlys"
+  GREEN_CARPET: "grønt tæppe"
+  GREEN_CONCRETE: "grøn beton"
+  GREEN_CONCRETE_POWDER: "grønt beton pulver"
+  GREEN_GLAZED_TERRACOTTA: "grøn glaseret terrakotta"
+  GREEN_SHULKER_BOX: "grøn shulker boks"
+  GREEN_STAINED_GLASS: "grønt farvet glas"
+  GREEN_STAINED_GLASS_PANE: "grønt farvet glaspanel"
+  GREEN_TERRACOTTA: "grøn terrakotta"
+  GREEN_WOOL: "grøn uld"
+  GRINDSTONE: "slibesten"
+  HANGING_ROOTS: "hængende rødder"
+  HAY_BLOCK: "halmballe"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "tungvægtet trykplade"
+  HONEY_BLOCK: "honningblok"
+  HONEYCOMB_BLOCK: "bikageblok"
+  HOPPER: "tragt"
+  HORN_CORAL: "hornkoral"
+  HORN_CORAL_BLOCK: "hornkoralblok"
+  HORN_CORAL_FAN: "hornkoralvifte"
+  HORN_CORAL_WALL_FAN: "hornkoralvægvifte"
+  ICE: "is"
+  INFESTED_CHISELED_STONE_BRICKS: "inficeret mejslet stenmursten"
+  INFESTED_COBBLESTONE: "inficeret brosten"
+  INFESTED_CRACKED_STONE_BRICKS: "inficeret revnede stenmursten"
+  INFESTED_DEEPSLATE: "inficeret dybskifer"
+  INFESTED_MOSSY_STONE_BRICKS: "inficeret mosbegroede stenmursten"
+  INFESTED_STONE: "inficeret sten"
+  INFESTED_STONE_BRICKS: "inficeret stenmursten"
+  IRON_BARS: "jerntremmer"
+  IRON_BLOCK: "blok af jern"
+  IRON_DOOR: "jerndør"
+  IRON_ORE: "jernmalm"
+  IRON_TRAPDOOR: "jernlem"
+  JACK_O_LANTERN: "græskar lanterne"
+  JIGSAW: "puslespils blok"
+  JUKEBOX: "jukeboks"
+  JUNGLE_BUTTON: "jungleknap"
+  JUNGLE_DOOR: "jungledør"
+  JUNGLE_FENCE: "junglehegn"
+  JUNGLE_FENCE_GATE: "junglehegnslåge"
+  JUNGLE_HANGING_SIGN: "hængende jungleskilt"
+  JUNGLE_LEAVES: "jungleløv"
+  JUNGLE_LOG: "junglestamme"
+  JUNGLE_PLANKS: "jungleplanker"
+  JUNGLE_PRESSURE_PLATE: "jungletrykplade"
+  JUNGLE_SAPLING: "ungt jungletræ"
+  JUNGLE_SIGN: "jungletræsskilt"
+  JUNGLE_SLAB: "jungleplade"
+  JUNGLE_STAIRS: "jungletrappe"
+  JUNGLE_TRAPDOOR: "junglelem"
+  JUNGLE_WALL_HANGING_SIGN: "væghængende jungleskilt"
+  JUNGLE_WALL_SIGN: "jungletræsvægskilt"
+  JUNGLE_WOOD: "jungletræ"
+  KELP: "tang"
+  KELP_PLANT: "tangplante"
+  LADDER: "stige"
+  LANTERN: "lanterne"
+  LAPIS_BLOCK: "blok af lapis lazuli"
+  LAPIS_ORE: "lapis lazuli-malm"
+  LARGE_AMETHYST_BUD: "stor ametystknop"
+  LARGE_FERN: "stor bregne"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lavagryde"
+  LECTERN: "læsepult"
+  LEVER: "håndtag"
+  LIGHT: "lys"
+  LIGHT_BLUE_BANNER: "lyseblåt banner"
+  LIGHT_BLUE_BED: "lyseblå seng"
+  LIGHT_BLUE_CANDLE: "lyseblåt stearinlys"
+  LIGHT_BLUE_CANDLE_CAKE: "kage med lyseblåt stearinlys"
+  LIGHT_BLUE_CARPET: "lyseblåt tæppe"
+  LIGHT_BLUE_CONCRETE: "lyseblå beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "lyseblåt beton pulver"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "lyseblå glaseret terrakotta"
+  LIGHT_BLUE_SHULKER_BOX: "lysseblå shulker boks"
+  LIGHT_BLUE_STAINED_GLASS: "lyseblåt farvet glas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "lyseblåt farvet glaspanel"
+  LIGHT_BLUE_TERRACOTTA: "lyseblå terrakotta"
+  LIGHT_BLUE_WOOL: "lyseblå uld"
+  LIGHT_GRAY_BANNER: "lysegråt banner"
+  LIGHT_GRAY_BED: "lysegrå seng"
+  LIGHT_GRAY_CANDLE: "lysegråt stearinlys"
+  LIGHT_GRAY_CANDLE_CAKE: "kage med lysegråt stearinlys"
+  LIGHT_GRAY_CARPET: "lysegråt tæppe"
+  LIGHT_GRAY_CONCRETE: "lysegrå beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "lysegråt beton pulver"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "lysegrå glaseret terrakotta"
+  LIGHT_GRAY_SHULKER_BOX: "lyssegrå shulker boks"
+  LIGHT_GRAY_STAINED_GLASS: "lysegråt farvet glas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "lysegråt farvet glaspanel"
+  LIGHT_GRAY_TERRACOTTA: "lysegrå terrakotta"
+  LIGHT_GRAY_WOOL: "lysegrå uld"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "letvægtet trykplade"
+  LIGHTNING_ROD: "lynafleder"
+  LILAC: "syren"
+  LILY_OF_THE_VALLEY: "liljekonval"
+  LILY_PAD: "åkande"
+  LIME_BANNER: "limegrønt banner"
+  LIME_BED: "limegrøn seng"
+  LIME_CANDLE: "limegrønt stearinlys"
+  LIME_CANDLE_CAKE: "kage med limegrønt stearinlys"
+  LIME_CARPET: "limegrønt tæppe"
+  LIME_CONCRETE: "limegrøn beton"
+  LIME_CONCRETE_POWDER: "limegrønt beton pulver"
+  LIME_GLAZED_TERRACOTTA: "limegrøn glaseret terrakotta"
+  LIME_SHULKER_BOX: "limegrøn shulker boks"
+  LIME_STAINED_GLASS: "limegrønt farvet glas"
+  LIME_STAINED_GLASS_PANE: "limegrønt farvet glaspanel"
+  LIME_TERRACOTTA: "limegrøn terrakotta"
+  LIME_WOOL: "limegrønt uld"
+  LODESTONE: "ledesten"
+  LOOM: "væv"
+  MAGENTA_BANNER: "lyslilla banner"
+  MAGENTA_BED: "lyslilla seng"
+  MAGENTA_CANDLE: "lyslilla stearinlys"
+  MAGENTA_CANDLE_CAKE: "kage med lyslilla stearinlys"
+  MAGENTA_CARPET: "lyslilla tæppe"
+  MAGENTA_CONCRETE: "lyslilla beton"
+  MAGENTA_CONCRETE_POWDER: "lyslilla beton pulver"
+  MAGENTA_GLAZED_TERRACOTTA: "lyslilla glaseret terrakotta"
+  MAGENTA_SHULKER_BOX: "lyslilla shulker boks"
+  MAGENTA_STAINED_GLASS: "lyslilla farvet glas"
+  MAGENTA_STAINED_GLASS_PANE: "lyslilla farvet glaspanel"
+  MAGENTA_TERRACOTTA: "lyslilla terrakotta"
+  MAGENTA_WOOL: "lyslilla uld"
+  MAGMA_BLOCK: "magmablok"
+  MANGROVE_BUTTON: "mangroveknap"
+  MANGROVE_DOOR: "mangrovedør"
+  MANGROVE_FENCE: "mangrovehegn"
+  MANGROVE_FENCE_GATE: "mangrovehegnslåge"
+  MANGROVE_HANGING_SIGN: "hængende mangroveskilt"
+  MANGROVE_LEAVES: "mangroveløv"
+  MANGROVE_LOG: "mangrovestamme"
+  MANGROVE_PLANKS: "mangroveplanker"
+  MANGROVE_PRESSURE_PLATE: "mangrovetrykplade"
+  MANGROVE_PROPAGULE: "mangrove skud"
+  MANGROVE_ROOTS: "mangroverødder"
+  MANGROVE_SIGN: "mangrovetræsskilt"
+  MANGROVE_SLAB: "mangroveplade"
+  MANGROVE_STAIRS: "mangrovetrappe"
+  MANGROVE_TRAPDOOR: "mangrovelem"
+  MANGROVE_WALL_HANGING_SIGN: "væghængende mangroveskilt"
+  MANGROVE_WALL_SIGN: "mangrovetræsvægskilt"
+  MANGROVE_WOOD: "mangrovetræ"
+  MEDIUM_AMETHYST_BUD: "medium ametystknop"
+  MELON: "vandmelon"
+  MELON_STEM: "melonstilk"
+  MOSS_BLOCK: "mosblok"
+  MOSS_CARPET: "mostæppe"
+  MOSSY_COBBLESTONE: "mosbegroede brosten"
+  MOSSY_COBBLESTONE_SLAB: "mosbegroet brostensflise"
+  MOSSY_COBBLESTONE_STAIRS: "mosbegroet brostenstrappe"
+  MOSSY_COBBLESTONE_WALL: "mosbegroet brostensvæg"
+  MOSSY_STONE_BRICK_SLAB: "mosbegroet stenmurstensflise"
+  MOSSY_STONE_BRICK_STAIRS: "mosbegroet stenmurstenstrappe"
+  MOSSY_STONE_BRICK_WALL: "mosbegroet stenmurstensvæg"
+  MOSSY_STONE_BRICKS: "mosbegroede stenmursten"
+  MOVING_PISTON: "bevægende stempel"
+  MUD: "mudder"
+  MUD_BRICK_SLAB: "mudder-murstensflise"
+  MUD_BRICK_STAIRS: "mudder-murstenstrappe"
+  MUD_BRICK_WALL: "mudder-murstensvæg"
+  MUD_BRICKS: "muddermursten"
+  MUDDY_MANGROVE_ROOTS: "mudrede mangroverødder"
+  MUSHROOM_STEM: "svampestamme"
+  MYCELIUM: "svampevæv"
+  NETHER_BRICK_FENCE: "nether-murstenshegn"
+  NETHER_BRICK_SLAB: "nether-murstensflise"
+  NETHER_BRICK_STAIRS: "nether-murstenstrappe"
+  NETHER_BRICK_WALL: "nether-murstensvæg"
+  NETHER_BRICKS: "nethermursten"
+  NETHER_GOLD_ORE: "nether guldmalm"
+  NETHER_PORTAL: "netherportal"
+  NETHER_QUARTZ_ORE: "nether-kvartsmalm"
+  NETHER_SPROUTS: "nether spirer"
+  NETHER_WART: "nether-vorte"
+  NETHER_WART_BLOCK: "nether-vorteblok"
+  NETHERITE_BLOCK: "blok af netherrit"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "nodeblok"
+  OAK_BUTTON: "egeknap"
+  OAK_DOOR: "egetræsdør"
+  OAK_FENCE: "egetræshegn"
+  OAK_FENCE_GATE: "egetræshegnslåge"
+  OAK_HANGING_SIGN: "hængende egeskilt"
+  OAK_LEAVES: "egeløv"
+  OAK_LOG: "egestamme"
+  OAK_PLANKS: "egeplanker"
+  OAK_PRESSURE_PLATE: "egetrykplade"
+  OAK_SAPLING: "ungt egetræ"
+  OAK_SIGN: "egetræsskilt"
+  OAK_SLAB: "egeplade"
+  OAK_STAIRS: "egetrappe"
+  OAK_TRAPDOOR: "egelem"
+  OAK_WALL_HANGING_SIGN: "væghængende egeskilt"
+  OAK_WALL_SIGN: "egetræsvægskilt"
+  OAK_WOOD: "egetræ"
+  OBSERVER: "observatør"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "okkerfarvet frølys"
+  OMINOUS_BANNER: "ildevarslende banner"
+  ORANGE_BANNER: "orange banner"
+  ORANGE_BED: "orange seng"
+  ORANGE_CANDLE: "orange stearinlys"
+  ORANGE_CANDLE_CAKE: "kage med orange stearinlys"
+  ORANGE_CARPET: "orange tæppe"
+  ORANGE_CONCRETE: "orange beton"
+  ORANGE_CONCRETE_POWDER: "orange beton pulver"
+  ORANGE_GLAZED_TERRACOTTA: "orange glaseret terrakotta"
+  ORANGE_SHULKER_BOX: "orange shulker boks"
+  ORANGE_STAINED_GLASS: "orange farvet glas"
+  ORANGE_STAINED_GLASS_PANE: "orange farvet glaspanel"
+  ORANGE_TERRACOTTA: "orange terrakotta"
+  ORANGE_TULIP: "orange tulipan"
+  ORANGE_WOOL: "orange uld"
+  OXEYE_DAISY: "hvid okseøje"
+  OXIDIZED_CHISELED_COPPER: "blok minecraft oxideret mejslet kobber"
+  OXIDIZED_COPPER: "oxideret kobber"
+  OXIDIZED_COPPER_BULB: "blok minecraft oxideret kobber pære"
+  OXIDIZED_COPPER_DOOR: "oxideret kobber dør"
+  OXIDIZED_COPPER_GRATE: "blok minecraft oxideret kobber rist"
+  OXIDIZED_COPPER_TRAPDOOR: "blok minecraft oxideret kobber falddør"
+  OXIDIZED_CUT_COPPER: "oxideret skåret kobber"
+  OXIDIZED_CUT_COPPER_SLAB: "oxideret skåret kobberplade"
+  OXIDIZED_CUT_COPPER_STAIRS: "oxideret skåret kobbertrappe"
+  PACKED_ICE: "sammenpresset is"
+  PACKED_MUD: "sammenpresset mudder"
+  PEARLESCENT_FROGLIGHT: "perlelysende frølys"
+  PEONY: "pæon"
+  PETRIFIED_OAK_SLAB: "forstenet egeplade"
+  PIGLIN_HEAD: "piglinhoved"
+  PIGLIN_WALL_HEAD: "piglin væg hoved"
+  PINK_BANNER: "lyserødt banner"
+  PINK_BED: "lyserød seng"
+  PINK_CANDLE: "lyserødt stearinlys"
+  PINK_CANDLE_CAKE: "kage med lyserødt stearinlys"
+  PINK_CARPET: "lyserødt tæppe"
+  PINK_CONCRETE: "lyserød beton"
+  PINK_CONCRETE_POWDER: "lyserødt beton pulver"
+  PINK_GLAZED_TERRACOTTA: "lyserød glaseret terrakotta"
+  PINK_PETALS: "lyserøde kronblade"
+  PINK_SHULKER_BOX: "lyserød shulker boks"
+  PINK_STAINED_GLASS: "lyserødt farvet glas"
+  PINK_STAINED_GLASS_PANE: "lyserødt farvet glaspanel"
+  PINK_TERRACOTTA: "lyserød terrakotta"
+  PINK_TULIP: "lyserød tulipan"
+  PINK_WOOL: "lyserød uld"
+  PISTON: "stempel"
+  PISTON_HEAD: "stempelhoved"
+  PITCHER_CROP: "kandeafgrøde"
+  PITCHER_PLANT: "kandeplante"
+  PLAYER_HEAD: "spiller hoved"
+  PLAYER_HEAD_NAMED: "%ss hoved"
+  PLAYER_WALL_HEAD: "spiller væg hoved"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "spids drypsten"
+  POLISHED_ANDESITE: "poleret andesit"
+  POLISHED_ANDESITE_SLAB: "poleret andesitflise"
+  POLISHED_ANDESITE_STAIRS: "poleret andesittrappe"
+  POLISHED_BASALT: "poleret basalt"
+  POLISHED_BLACKSTONE: "poleret sortsten"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "poleret sortsten-murstensflise"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "poleret sortsten-murstenstrappe"
+  POLISHED_BLACKSTONE_BRICK_WALL: "poleret sortsten-murstensvæg"
+  POLISHED_BLACKSTONE_BRICKS: "poleret sortsten-mursten"
+  POLISHED_BLACKSTONE_BUTTON: "poleret sortsten-knap"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "poleret sortstenstrykplade"
+  POLISHED_BLACKSTONE_SLAB: "poleret sortstensflise"
+  POLISHED_BLACKSTONE_STAIRS: "poleret sortsten-trappe"
+  POLISHED_BLACKSTONE_WALL: "poleret sortsten-væg"
+  POLISHED_DEEPSLATE: "poleret dybskifer"
+  POLISHED_DEEPSLATE_SLAB: "poleret dybskiferflise"
+  POLISHED_DEEPSLATE_STAIRS: "poleret dybskifertrappe"
+  POLISHED_DEEPSLATE_WALL: "poleret dybskifervæg"
+  POLISHED_DIORITE: "poleret diorit"
+  POLISHED_DIORITE_SLAB: "poleret dioritflise"
+  POLISHED_DIORITE_STAIRS: "poleret diorittrappe"
+  POLISHED_GRANITE: "poleret granit"
+  POLISHED_GRANITE_SLAB: "poleret granitflise"
+  POLISHED_GRANITE_STAIRS: "poleret granittrappe"
+  POLISHED_TUFF: "blok minecraft poleret tuff"
+  POLISHED_TUFF_SLAB: "blok minecraft poleret tufplade"
+  POLISHED_TUFF_STAIRS: "blok minecraft polerede tuftrapper"
+  POLISHED_TUFF_WALL: "poleret tuff væg"
+  POPPY: "valmue"
+  POTATOES: "kartofler"
+  POTTED_ACACIA_SAPLING: "ungt akacietræ potteplante"
+  POTTED_ALLIUM: "allium potteplante"
+  POTTED_AZALEA_BUSH: "azalea potteplante"
+  POTTED_AZURE_BLUET: "blå porcelænstjerne potteplante"
+  POTTED_BAMBOO: "bambus potteplante"
+  POTTED_BIRCH_SAPLING: "ungt birketræ potteplante"
+  POTTED_BLUE_ORCHID: "blå orkidé potteplante"
+  POTTED_BROWN_MUSHROOM: "brun svamp potteplante"
+  POTTED_CACTUS: "kaktus potteplante"
+  POTTED_CHERRY_SAPLING: "ungt kirsebærtræ potteplante"
+  POTTED_CORNFLOWER: "kornblomst potteplante"
+  POTTED_CRIMSON_FUNGUS: "karmoisinsvamp potteplante"
+  POTTED_CRIMSON_ROOTS: "karmoisinrødder potteplante"
+  POTTED_DANDELION: "mælkebøtte potteplante"
+  POTTED_DARK_OAK_SAPLING: "ungt mørk egetræ potteplante"
+  POTTED_DEAD_BUSH: "død busk potteplante"
+  POTTED_FERN: "bregne potteplante"
+  POTTED_FLOWERING_AZALEA_BUSH: "blomstrende azalea potteplante"
+  POTTED_JUNGLE_SAPLING: "ungt jungletræ potteplante"
+  POTTED_LILY_OF_THE_VALLEY: "liljekonval potteplante"
+  POTTED_MANGROVE_PROPAGULE: "mangrove diaspore potteplante"
+  POTTED_OAK_SAPLING: "ungt egetræ potteplante"
+  POTTED_ORANGE_TULIP: "orange tulipan potteplante"
+  POTTED_OXEYE_DAISY: "hvid okseøje potteplante"
+  POTTED_PINK_TULIP: "lyserød tulipan potteplante"
+  POTTED_POPPY: "valmue potteplante"
+  POTTED_RED_MUSHROOM: "rød svamp potteplante"
+  POTTED_RED_TULIP: "rød tulipan potteplante"
+  POTTED_SPRUCE_SAPLING: "ungt grantræ potteplante"
+  POTTED_TORCHFLOWER: "fakkelblomst i potte"
+  POTTED_WARPED_FUNGUS: "forskruet svamp potteplante"
+  POTTED_WARPED_ROOTS: "forskruede rødder potteplante"
+  POTTED_WHITE_TULIP: "hvid tulipan potteplante"
+  POTTED_WITHER_ROSE: "wither rose potteplante"
+  POWDER_SNOW: "pulversne"
+  POWDER_SNOW_CAULDRON: "pulversnegryde"
+  POWERED_RAIL: "strømspor"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "prismarine-murstensflise"
+  PRISMARINE_BRICK_STAIRS: "prismarine-murstenstrappe"
+  PRISMARINE_BRICKS: "prismarine mursten"
+  PRISMARINE_SLAB: "prismarine-flise"
+  PRISMARINE_STAIRS: "prismarine-trappe"
+  PRISMARINE_WALL: "prismarine-væg"
+  PUMPKIN: "græskar"
+  PUMPKIN_STEM: "græskar stilk"
+  PURPLE_BANNER: "lilla banner"
+  PURPLE_BED: "lilla seng"
+  PURPLE_CANDLE: "lilla stearinlys"
+  PURPLE_CANDLE_CAKE: "kage med lilla stearinlys"
+  PURPLE_CARPET: "lilla tæppe"
+  PURPLE_CONCRETE: "lilla beton"
+  PURPLE_CONCRETE_POWDER: "lilla beton pulver"
+  PURPLE_GLAZED_TERRACOTTA: "lilla glaseret terrakotta"
+  PURPLE_SHULKER_BOX: "lilla shulker boks"
+  PURPLE_STAINED_GLASS: "lilla farvet glas"
+  PURPLE_STAINED_GLASS_PANE: "lilla farvet glaspanel"
+  PURPLE_TERRACOTTA: "lilla terrakotta"
+  PURPLE_WOOL: "lilla uld"
+  PURPUR_BLOCK: "purpurblok"
+  PURPUR_PILLAR: "purpur søjle"
+  PURPUR_SLAB: "purpur-flise"
+  PURPUR_STAIRS: "purpur trappe"
+  QUARTZ_BLOCK: "blok af kvarts"
+  QUARTZ_BRICKS: "kvartsmursten"
+  QUARTZ_PILLAR: "kvartssøjle"
+  QUARTZ_SLAB: "kvartsflise"
+  QUARTZ_STAIRS: "kvartstrappe"
+  RAIL: "spor"
+  RAW_COPPER_BLOCK: "blok af rå kobber"
+  RAW_GOLD_BLOCK: "blok af rå guld"
+  RAW_IRON_BLOCK: "blok af rå jern"
+  RED_BANNER: "rødt banner"
+  RED_BED: "rød seng"
+  RED_CANDLE: "rødt stearinlys"
+  RED_CANDLE_CAKE: "kage med rødt stearinlys"
+  RED_CARPET: "rødt tæppe"
+  RED_CONCRETE: "rød beton"
+  RED_CONCRETE_POWDER: "rødt beton pulver"
+  RED_GLAZED_TERRACOTTA: "rød glaseret terrakotta"
+  RED_MUSHROOM: "rød svamp"
+  RED_MUSHROOM_BLOCK: "rød svampeblok"
+  RED_NETHER_BRICK_SLAB: "rød nether-murstensflise"
+  RED_NETHER_BRICK_STAIRS: "rød nether-murstenstrappe"
+  RED_NETHER_BRICK_WALL: "rød nether-murstensvæg"
+  RED_NETHER_BRICKS: "røde nether-mursten"
+  RED_SAND: "rødt sand"
+  RED_SANDSTONE: "rød sandsten"
+  RED_SANDSTONE_SLAB: "rød sandstensflise"
+  RED_SANDSTONE_STAIRS: "rød sandstenstrappe"
+  RED_SANDSTONE_WALL: "rød sandstensvæg"
+  RED_SHULKER_BOX: "rød shulker boks"
+  RED_STAINED_GLASS: "rødt farvet glas"
+  RED_STAINED_GLASS_PANE: "rødt farvet glaspanel"
+  RED_TERRACOTTA: "rød terrakotta"
+  RED_TULIP: "rød tulipan"
+  RED_WOOL: "rød uld"
+  REDSTONE_BLOCK: "blok af redstone"
+  REDSTONE_LAMP: "redstonelampe"
+  REDSTONE_ORE: "redstonemalm"
+  REDSTONE_TORCH: "redstonefakkel"
+  REDSTONE_WALL_TORCH: "redstonevægfakkel"
+  REDSTONE_WIRE: "redstoneledning"
+  REINFORCED_DEEPSLATE: "forstærket dybskifer"
+  REPEATER: "redstone-gentager"
+  REPEATING_COMMAND_BLOCK: "gentagende kommandoblok"
+  RESPAWN_ANCHOR: "genoplivelsesanker"
+  ROOTED_DIRT: "rodfyldt jord"
+  ROSE_BUSH: "rosenbusk"
+  SAND: "sand"
+  SANDSTONE: "sandsten"
+  SANDSTONE_SLAB: "sandstensflise"
+  SANDSTONE_STAIRS: "sandstenstrappe"
+  SANDSTONE_WALL: "sandstensvæg"
+  SCAFFOLDING: "stillads"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculkkatalysator"
+  SCULK_SENSOR: "sculk-sensor"
+  SCULK_SHRIEKER: "sculkskriger"
+  SCULK_VEIN: "sculkåre"
+  SEA_LANTERN: "sølanterne"
+  SEA_PICKLE: "søpølse"
+  SEAGRASS: "søgræs"
+  SET_SPAWN: "genopståpunkt sat"
+  SHORT_GRASS: "kort græs"
+  SHROOMLIGHT: "svampelys"
+  SHULKER_BOX: "shulker boks"
+  SKELETON_SKULL: "kranium"
+  SKELETON_WALL_SKULL: "væg kranie"
+  SLIME_BLOCK: "slimblok"
+  SMALL_AMETHYST_BUD: "lille ametystknop"
+  SMALL_DRIPLEAF: "lille dryppeblad"
+  SMITHING_TABLE: "smedebord"
+  SMOKER: "rygeovn"
+  SMOOTH_BASALT: "glat basalt"
+  SMOOTH_QUARTZ: "glat kvartsblok"
+  SMOOTH_QUARTZ_SLAB: "glat kvartsflise"
+  SMOOTH_QUARTZ_STAIRS: "glat kvartstrappe"
+  SMOOTH_RED_SANDSTONE: "glat rød sandsten"
+  SMOOTH_RED_SANDSTONE_SLAB: "glat rød sandstensflise"
+  SMOOTH_RED_SANDSTONE_STAIRS: "glat rød sandstenstrappe"
+  SMOOTH_SANDSTONE: "glat sandsten"
+  SMOOTH_SANDSTONE_SLAB: "glat sandstensflise"
+  SMOOTH_SANDSTONE_STAIRS: "glat sandstenstrappe"
+  SMOOTH_STONE: "glat sten"
+  SMOOTH_STONE_SLAB: "glat stenflise"
+  SNIFFER_EGG: "snifferæg"
+  SNOW: "sne"
+  SNOW_BLOCK: "sneblok"
+  SOUL_CAMPFIRE: "sjælelejrbål"
+  SOUL_FIRE: "sjæleild"
+  SOUL_LANTERN: "sjælelanterne"
+  SOUL_SAND: "sjælesand"
+  SOUL_SOIL: "sjælejord"
+  SOUL_TORCH: "sjæleild fakkel"
+  SOUL_WALL_TORCH: "sjælevægsfakkel"
+  SPAWN_NOT_VALID: "du har ingen hjemmeseng eller ladet genoplivelsesanker eller så er det blevet blokeret"
+  SPAWNER: "monsterspawner"
+  SPAWNER_DESC1: "interager med fremkaldningsæg:"
+  SPAWNER_DESC2: "indstiller væsen-type"
+  SPONGE: "svamp"
+  SPORE_BLOSSOM: "sporeblomst"
+  SPRUCE_BUTTON: "granknap"
+  SPRUCE_DOOR: "grandør"
+  SPRUCE_FENCE: "granhegn"
+  SPRUCE_FENCE_GATE: "granhegnslåge"
+  SPRUCE_HANGING_SIGN: "hængende granskilt"
+  SPRUCE_LEAVES: "grannåle"
+  SPRUCE_LOG: "granstamme"
+  SPRUCE_PLANKS: "granplanker"
+  SPRUCE_PRESSURE_PLATE: "grantrykplade"
+  SPRUCE_SAPLING: "ungt grantræ"
+  SPRUCE_SIGN: "grantræsskilt"
+  SPRUCE_SLAB: "granplade"
+  SPRUCE_STAIRS: "grantrappe"
+  SPRUCE_TRAPDOOR: "granlem"
+  SPRUCE_WALL_HANGING_SIGN: "væghængende granskilt"
+  SPRUCE_WALL_SIGN: "grantræsvægskilt"
+  SPRUCE_WOOD: "grantræ"
+  STICKY_PISTON: "klistret stempel"
+  STONE: "sten"
+  STONE_BRICK_SLAB: "stenmurstensflise"
+  STONE_BRICK_STAIRS: "stenmurstenstrappe"
+  STONE_BRICK_WALL: "stenmurstensvæg"
+  STONE_BRICKS: "stenmursten"
+  STONE_BUTTON: "stenknap"
+  STONE_PRESSURE_PLATE: "sten trykplade"
+  STONE_SLAB: "stenflise"
+  STONE_STAIRS: "stentrappe"
+  STONECUTTER: "stenskærer"
+  STRIPPED_ACACIA_LOG: "afbarket akaciestamme"
+  STRIPPED_ACACIA_WOOD: "afbarket akacietræ"
+  STRIPPED_BAMBOO_BLOCK: "afbarket blok af bambus"
+  STRIPPED_BIRCH_LOG: "afbarket birkestamme"
+  STRIPPED_BIRCH_WOOD: "afbarket birketræ"
+  STRIPPED_CHERRY_LOG: "afbarket kirsebærstamme"
+  STRIPPED_CHERRY_WOOD: "afbarket kirsebærtræ"
+  STRIPPED_CRIMSON_HYPHAE: "afbarket karmoisinhyfer"
+  STRIPPED_CRIMSON_STEM: "afbarket karmoisinstilk"
+  STRIPPED_DARK_OAK_LOG: "afbarket mørk egestamme"
+  STRIPPED_DARK_OAK_WOOD: "afbarket mørk egetræ"
+  STRIPPED_JUNGLE_LOG: "afbarket junglestamme"
+  STRIPPED_JUNGLE_WOOD: "afbarket jungletræ"
+  STRIPPED_MANGROVE_LOG: "afbarket mangrovestamme"
+  STRIPPED_MANGROVE_WOOD: "afbarket mangrovetræ"
+  STRIPPED_OAK_LOG: "afbarket egestamme"
+  STRIPPED_OAK_WOOD: "afbarket egetræ"
+  STRIPPED_SPRUCE_LOG: "afbarket granstamme"
+  STRIPPED_SPRUCE_WOOD: "afbarket grantræ"
+  STRIPPED_WARPED_HYPHAE: "afbarkede forskruede hyfer"
+  STRIPPED_WARPED_STEM: "afbarket forskruet stilk"
+  STRUCTURE_BLOCK: "strukturblok"
+  STRUCTURE_VOID: "struktur-tomrum"
+  SUGAR_CANE: "sukkerrør"
+  SUNFLOWER: "solsikke"
+  SUSPICIOUS_GRAVEL: "mistænkeligt grus"
+  SUSPICIOUS_SAND: "mistænkeligt sand"
+  SWEET_BERRY_BUSH: "sød bærbusk"
+  TALL_GRASS: "højt græs"
+  TALL_SEAGRASS: "højt søgræs"
+  TARGET: "mål"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "tonet glas"
+  TNT: "tnt"
+  TORCH: "fakkel"
+  TORCHFLOWER: "fakkelblomst"
+  TORCHFLOWER_CROP: "fakkelblomst afgrøde"
+  TRAPPED_CHEST: "fældekiste"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "snubletråd"
+  TRIPWIRE_HOOK: "snubletrådskrog"
+  TUBE_CORAL: "orgelkoral"
+  TUBE_CORAL_BLOCK: "orgelkoralblok"
+  TUBE_CORAL_FAN: "orgelkoralvifte"
+  TUBE_CORAL_WALL_FAN: "orgelkoralvægvifte"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "blok minecraft tuff murstensplade"
+  TUFF_BRICK_STAIRS: "blokere minecraft tuff mursten trapper"
+  TUFF_BRICK_WALL: "blokere minecraft tuff murstensvæg"
+  TUFF_BRICKS: "tufmursten"
+  TUFF_SLAB: "tufplade"
+  TUFF_STAIRS: "tuftrappe"
+  TUFF_WALL: "tuff væg"
+  TURTLE_EGG: "skildpaddeæg"
+  TWISTING_VINES: "snoende lianer"
+  TWISTING_VINES_PLANT: "snoende-lian plante"
+  VERDANT_FROGLIGHT: "grønt frølys"
+  VINE: "lianer"
+  VOID_AIR: "tomrumsluft"
+  WALL_TORCH: "vægfakkel"
+  WARPED_BUTTON: "forskruet knap"
+  WARPED_DOOR: "forskruet dør"
+  WARPED_FENCE: "forskruet hegn"
+  WARPED_FENCE_GATE: "forskruet hegnslåge"
+  WARPED_FUNGUS: "forskruet svamp"
+  WARPED_HANGING_SIGN: "hængende forskruet skilt"
+  WARPED_HYPHAE: "forskruet hyfer"
+  WARPED_NYLIUM: "forskruet nylium"
+  WARPED_PLANKS: "forskruede planker"
+  WARPED_PRESSURE_PLATE: "forskruet trykplade"
+  WARPED_ROOTS: "forskruet rødder"
+  WARPED_SIGN: "forskruet skilt"
+  WARPED_SLAB: "forskruet plade"
+  WARPED_STAIRS: "forskruet trappe"
+  WARPED_STEM: "forskruet stilk"
+  WARPED_TRAPDOOR: "forskruet lem"
+  WARPED_WALL_HANGING_SIGN: "væghængende forskruet skilt"
+  WARPED_WALL_SIGN: "forskruet vægskilt"
+  WARPED_WART_BLOCK: "forskruet nether-vorteblok"
+  WATER: "vand"
+  WATER_CAULDRON: "vandgryde"
+  WAXED_CHISELED_COPPER: "vokset mejslet kobber"
+  WAXED_COPPER_BLOCK: "vokset blok af kobber"
+  WAXED_COPPER_BULB: "blok minecraft vokset kobberpære"
+  WAXED_COPPER_DOOR: "vokset kobberdør"
+  WAXED_COPPER_GRATE: "blok minecraft vokset kobberrist"
+  WAXED_COPPER_TRAPDOOR: "blok minecraft vokset kobber falddør"
+  WAXED_CUT_COPPER: "vokset skåret kobber"
+  WAXED_CUT_COPPER_SLAB: "vokset skåret kobberplade"
+  WAXED_CUT_COPPER_STAIRS: "vokset skåret kobbertrappe"
+  WAXED_EXPOSED_CHISELED_COPPER: "blok minecraft vokset eksponeret mejslet kobber"
+  WAXED_EXPOSED_COPPER: "vokset blotlagt kobber"
+  WAXED_EXPOSED_COPPER_BULB: "blok minecraft vokset eksponeret kobber pære"
+  WAXED_EXPOSED_COPPER_DOOR: "blok minecraft vokset eksponeret kobberdør"
+  WAXED_EXPOSED_COPPER_GRATE: "blok minecraft vokset eksponeret kobberrist"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "blok minecraft vokset eksponeret kobber falddør"
+  WAXED_EXPOSED_CUT_COPPER: "vokset blotlagt skåret kobber"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "vokset blotlagt skåret kobberplade"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "vokset blotlagt skåret kobbertrappe"
+  WAXED_OXIDIZED_CHISELED_COPPER: "blok minecraft vokset oxideret mejslet kobber"
+  WAXED_OXIDIZED_COPPER: "vokset oxideret kobber"
+  WAXED_OXIDIZED_COPPER_BULB: "blok minecraft vokset oxideret kobber pære"
+  WAXED_OXIDIZED_COPPER_DOOR: "blok minecraft vokset oxideret kobberdør"
+  WAXED_OXIDIZED_COPPER_GRATE: "blok minecraft vokset oxideret kobber rist"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "blok minecraft vokset oxideret kobber falddør"
+  WAXED_OXIDIZED_CUT_COPPER: "vokset oxideret skåret kobber"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "vokset oxideret skåret kobberplade"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "vokset oxideret skåret kobbertrappe"
+  WAXED_WEATHERED_CHISELED_COPPER: "blok minecraft vokset forvitret mejslet kobber"
+  WAXED_WEATHERED_COPPER: "vokset forvitret kobber"
+  WAXED_WEATHERED_COPPER_BULB: "blok minecraft vokset forvitret kobberpære"
+  WAXED_WEATHERED_COPPER_DOOR: "vokset forvitret kobberdør"
+  WAXED_WEATHERED_COPPER_GRATE: "blok minecraft vokset forvitret kobberrist"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "blok minecraft voksforvitret kobber falddør"
+  WAXED_WEATHERED_CUT_COPPER: "vokset forvitret skåret kobber"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "vokset forvitret skåret kobberplade"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "vokset forvitret skåret kobbertrappe"
+  WEATHERED_CHISELED_COPPER: "blok minecraft forvitret mejslet kobber"
+  WEATHERED_COPPER: "forvitret kobber"
+  WEATHERED_COPPER_BULB: "blok minecraft forvitret kobberpære"
+  WEATHERED_COPPER_DOOR: "blokere minecraft forvitret kobberdør"
+  WEATHERED_COPPER_GRATE: "blok minecraft forvitret kobberrist"
+  WEATHERED_COPPER_TRAPDOOR: "blok minecraft forvitret kobber falddør"
+  WEATHERED_CUT_COPPER: "forvitret skåret kobber"
+  WEATHERED_CUT_COPPER_SLAB: "forvitret skåret kobberplade"
+  WEATHERED_CUT_COPPER_STAIRS: "forvitret skåret kobbertrappe"
+  WEEPING_VINES: "tudende lianer"
+  WEEPING_VINES_PLANT: "grædende lianplante"
+  WET_SPONGE: "våd svamp"
+  WHEAT: "hvede afgrøder"
+  WHITE_BANNER: "hvidt banner"
+  WHITE_BED: "hvid seng"
+  WHITE_CANDLE: "hvidt stearinlys"
+  WHITE_CANDLE_CAKE: "kage med hvidt stearinlys"
+  WHITE_CARPET: "hvidt tæppe"
+  WHITE_CONCRETE: "hvid beton"
+  WHITE_CONCRETE_POWDER: "hvidt beton pulver"
+  WHITE_GLAZED_TERRACOTTA: "hvid glaseret terrakotta"
+  WHITE_SHULKER_BOX: "hvid shulker boks"
+  WHITE_STAINED_GLASS: "hvidt farvet glas"
+  WHITE_STAINED_GLASS_PANE: "hvidt farvet glaspanel"
+  WHITE_TERRACOTTA: "hvid terrakotta"
+  WHITE_TULIP: "hvid tulipan"
+  WHITE_WOOL: "hvid uld"
+  WITHER_ROSE: "wither rose"
+  WITHER_SKELETON_SKULL: "witherskeletkranium"
+  WITHER_SKELETON_WALL_SKULL: "wither væg kranie"
+  YELLOW_BANNER: "gult banner"
+  YELLOW_BED: "gul seng"
+  YELLOW_CANDLE: "gult stearinlys"
+  YELLOW_CANDLE_CAKE: "kage med gult stearinlys"
+  YELLOW_CARPET: "gult tæppe"
+  YELLOW_CONCRETE: "gul beton"
+  YELLOW_CONCRETE_POWDER: "gult beton pulver"
+  YELLOW_GLAZED_TERRACOTTA: "gul glaseret terrakotta"
+  YELLOW_SHULKER_BOX: "gul shulker boks"
+  YELLOW_STAINED_GLASS: "gult farvet glas"
+  YELLOW_STAINED_GLASS_PANE: "gult farvet glaspanel"
+  YELLOW_TERRACOTTA: "gul terrakotta"
+  YELLOW_WOOL: "gul uld"
+  ZOMBIE_HEAD: "zombiehoved"
+  ZOMBIE_WALL_HEAD: "zombie væg hoved"
+  ACACIA_BOAT: "akaciebåd"
+  ACACIA_CHEST_BOAT: "akaciebåd med kiste"
+  ALLAY_SPAWN_EGG: "hjælpeånd fremkaldningsæg"
+  AMETHYST_SHARD: "ametyst skår"
+  ANGLER_POTTERY_SHARD: "lystfisker keramikskår"
+  ANGLER_POTTERY_SHERD: "lystfisker-potteskår"
+  APPLE: "æble"
+  ARCHER_POTTERY_SHARD: "ancher keramikskår"
+  ARCHER_POTTERY_SHERD: "bueskytte-potteskår"
+  ARMOR_STAND: "brynjeholder"
+  ARMS_UP_POTTERY_SHARD: "arms u keramikskår"
+  ARMS_UP_POTTERY_SHERD: "armene oppe-potteskår"
+  ARROW: "pil"
+  AXOLOTL_BUCKET: "spand med axolotl"
+  AXOLOTL_SPAWN_EGG: "axolotl fremkaldningsæg"
+  BAKED_POTATO: "bagt kartoffel"
+  BAMBOO_CHEST_RAFT: "bambustømmerflåde med kiste"
+  BAMBOO_RAFT: "bambustømmerflåde"
+  BAT_SPAWN_EGG: "flagermus fremkaldningsæg"
+  BEE_SPAWN_EGG: "bi fremkaldingsæg"
+  BEEF: "rå bøf"
+  BEETROOT: "rødbede"
+  BEETROOT_SEEDS: "rødbedefrø"
+  BEETROOT_SOUP: "rødbedesuppe"
+  BIRCH_BOAT: "birkebåd"
+  BIRCH_CHEST_BOAT: "birkebåd med kiste"
+  BLACK_DYE: "sort farvestof"
+  BLADE_POTTERY_SHARD: "blade keramikskår"
+  BLADE_POTTERY_SHERD: "klinge-potteskår"
+  BLAZE_POWDER: "blaze-pulver"
+  BLAZE_ROD: "blaze-stav"
+  BLAZE_SPAWN_EGG: "blaze fremkaldningsæg"
+  BLUE_DYE: "blåt farvestof"
+  BONE: "knogle"
+  BONE_MEAL: "benmel"
+  BOOK: "bog"
+  BOW: "bue"
+  BOWL: "skål"
+  BREAD: "brød"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brygger keramik skærv"
+  BREWER_POTTERY_SHERD: "brygger-potteskår"
+  BRICK: "mursten"
+  BROWN_DYE: "brunt farvestof"
+  BRUSH: "børste"
+  BUCKET: "spand"
+  BUNDLE: "bundt"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "brænd keramikskår"
+  BURN_POTTERY_SHERD: "brænde-potteskår"
+  CAMEL_SPAWN_EGG: "kamel fremkaldningsæg"
+  CARROT: "gulerod"
+  CARROT_ON_A_STICK: "gulerod på en pind"
+  CAT_SPAWN_EGG: "kat fremkaldningsæg"
+  CAVE_SPIDER_SPAWN_EGG: "huleedderkop fremkaldningsæg"
+  CHAINMAIL_BOOTS: "brynjestøvler"
+  CHAINMAIL_CHESTPLATE: "brynjebrystplade"
+  CHAINMAIL_HELMET: "brynjehjelm"
+  CHAINMAIL_LEGGINGS: "brynjebukser"
+  CHARCOAL: "trækul"
+  CHERRY_BOAT: "kirsebærbåd"
+  CHERRY_CHEST_BOAT: "kirsebærbåd med kiste"
+  CHEST_MINECART: "minevogn med kiste"
+  CHICKEN: "rå kylling"
+  CHICKEN_SPAWN_EGG: "kylling fremkaldningsæg"
+  CHORUS_FRUIT: "omkvædsfrugt"
+  CLAY_BALL: "lerbold"
+  CLOCK: "ur"
+  COAL: "kul"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  COCOA_BEANS: "kakaobønner"
+  COD: "rå torsk"
+  COD_BUCKET: "spand med torsk"
+  COD_SPAWN_EGG: "torsk fremkaldningsæg"
+  COMMAND_BLOCK_MINECART: "minevogn med kommandoblok"
+  COMPASS: "kompas"
+  COOKED_BEEF: "bøf"
+  COOKED_CHICKEN: "stegt kylling"
+  COOKED_COD: "kogt torsk"
+  COOKED_MUTTON: "kogt fårekød"
+  COOKED_PORKCHOP: "stegt svinekotelet"
+  COOKED_RABBIT: "kogt kanin"
+  COOKED_SALMON: "kogt laks"
+  COOKIE: "småkage"
+  COPPER_INGOT: "kobberbarre"
+  COW_SPAWN_EGG: "ko fremkaldningsæg"
+  CREEPER_BANNER_PATTERN: "banner mønster"
+  CREEPER_BANNER_PATTERN_DESC: "creeper symbol"
+  CREEPER_SPAWN_EGG: "creeper fremkaldningsæg"
+  CROSSBOW: "armbrøst"
+  CROSSBOW_PROJECTILE: "projektil:"
+  CYAN_DYE: "turkis farvestof"
+  DANGER_POTTERY_SHARD: "fare keramikskår"
+  DANGER_POTTERY_SHERD: "fare-potteskår"
+  DARK_OAK_BOAT: "mørk egetræsbåd"
+  DARK_OAK_CHEST_BOAT: "mørk egetræsbåd med kiste"
+  DEBUG_STICK: "fejlfindingspind"
+  DEBUG_STICK_EMPTY: "%s har ingen egenskaber"
+  DEBUG_STICK_SELECT: "valgt \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" til %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "diamantøkse"
+  DIAMOND_BOOTS: "diamantstøvler"
+  DIAMOND_CHESTPLATE: "diamantbrystplade"
+  DIAMOND_HELMET: "diamanthjelm"
+  DIAMOND_HOE: "diamantlugejern"
+  DIAMOND_HORSE_ARMOR: "diamanthestearmering"
+  DIAMOND_LEGGINGS: "diamantbukser"
+  DIAMOND_PICKAXE: "diamanthakke"
+  DIAMOND_SHOVEL: "diamantspade"
+  DIAMOND_SWORD: "diamantsværd"
+  DISC_FRAGMENT_5: "pladefragment"
+  DISC_FRAGMENT_5_DESC: "musikplade - 5"
+  DOLPHIN_SPAWN_EGG: "delfin fremkaldningsæg"
+  DONKEY_SPAWN_EGG: "æsel fremkaldningsæg"
+  DRAGON_BREATH: "dragens ånde"
+  DRIED_KELP: "tørret tang"
+  DROWNED_SPAWN_EGG: "draug fremkaldningsæg"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  ECHO_SHARD: "ekkoskår"
+  EGG: "æg"
+  ELDER_GUARDIAN_SPAWN_EGG: "gammel beskytter fremkaldningsæg"
+  ELYTRA: "elytra"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "fortryllet bog"
+  ENCHANTED_GOLDEN_APPLE: "fortryllet gyldent æble"
+  END_CRYSTAL: "end-krystal"
+  ENDER_DRAGON_SPAWN_EGG: "ender-drage fremkaldningsæg"
+  ENDER_EYE: "ender-øje"
+  ENDER_PEARL: "ender-perle"
+  ENDERMAN_SPAWN_EGG: "enderman fremkaldningsæg"
+  ENDERMITE_SPAWN_EGG: "endermite fremkaldningsæg"
+  EVOKER_SPAWN_EGG: "fremkalder fremkaldningsæg"
+  EXPERIENCE_BOTTLE: "fortryllelsesflaske"
+  EXPLORER_POTTERY_SHARD: "udforsker keramikskår"
+  EXPLORER_POTTERY_SHERD: "opdagelsesrejsende-potteskår"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  FEATHER: "fjer"
+  FERMENTED_SPIDER_EYE: "fermenteret edderkoppeøje"
+  FILLED_MAP: "kort"
+  FIRE_CHARGE: "ildladning"
+  FIREWORK_ROCKET: "fyrværkeriraket"
+  FIREWORK_ROCKET_FLIGHT: "flyvevarighed:"
+  FIREWORK_STAR: "fyrværkeristjerne"
+  FIREWORK_STAR_BLACK: "sort"
+  FIREWORK_STAR_BLUE: "blå"
+  FIREWORK_STAR_BROWN: "brun"
+  FIREWORK_STAR_CUSTOM_COLOR: "tilpasset"
+  FIREWORK_STAR_CYAN: "turkis"
+  FIREWORK_STAR_FADE_TO: "udton til"
+  FIREWORK_STAR_FLICKER: "glimt"
+  FIREWORK_STAR_GRAY: "grå"
+  FIREWORK_STAR_GREEN: "grøn"
+  FIREWORK_STAR_LIGHT_BLUE: "lyseblå"
+  FIREWORK_STAR_LIGHT_GRAY: "lysegrå"
+  FIREWORK_STAR_LIME: "limegrøn"
+  FIREWORK_STAR_MAGENTA: "lyslilla"
+  FIREWORK_STAR_ORANGE: "orange"
+  FIREWORK_STAR_PINK: "lyserød"
+  FIREWORK_STAR_PURPLE: "lilla"
+  FIREWORK_STAR_RED: "rød"
+  FIREWORK_STAR_SHAPE: "ukendt form"
+  FIREWORK_STAR_SHAPE_BURST: "eksplosion"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper-formet"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "stor kugle"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "lille kugle"
+  FIREWORK_STAR_SHAPE_STAR: "stjerneformet"
+  FIREWORK_STAR_TRAIL: "spor"
+  FIREWORK_STAR_WHITE: "hvid"
+  FIREWORK_STAR_YELLOW: "gul"
+  FISHING_ROD: "fiskestang"
+  FLINT: "flint"
+  FLINT_AND_STEEL: "flint og stål"
+  FLOWER_BANNER_PATTERN: "banner mønster"
+  FLOWER_BANNER_PATTERN_DESC: "blomster symbol"
+  FOX_SPAWN_EGG: "ræv fremkaldningsæg"
+  FRIEND_POTTERY_SHARD: "ven keramikskår"
+  FRIEND_POTTERY_SHERD: "ven-potteskår"
+  FROG_SPAWN_EGG: "frø fremkaldningsæg"
+  FURNACE_MINECART: "minevogn med ovn"
+  GHAST_SPAWN_EGG: "ghast fremkaldningsæg"
+  GHAST_TEAR: "ghast-tåre"
+  GLASS_BOTTLE: "glasflaske"
+  GLISTERING_MELON_SLICE: "glitrende melonskive"
+  GLOBE_BANNER_PATTERN: "banner mønster"
+  GLOBE_BANNER_PATTERN_DESC: "globus"
+  GLOW_BERRIES: "glødebær"
+  GLOW_INK_SAC: "glødende blækpose"
+  GLOW_ITEM_FRAME: "glødende genstandsramme"
+  GLOW_SQUID_SPAWN_EGG: "glødesprutte-fremkaldningsæg"
+  GLOWSTONE_DUST: "glødestenspulver"
+  GOAT_HORN: "gedehorn"
+  GOAT_SPAWN_EGG: "ged fremkaldningsæg"
+  GOLD_INGOT: "guldbarre"
+  GOLD_NUGGET: "guldklump"
+  GOLDEN_APPLE: "gyldent æble"
+  GOLDEN_AXE: "guldøkse"
+  GOLDEN_BOOTS: "guldstøvler"
+  GOLDEN_CARROT: "gylden gulerod"
+  GOLDEN_CHESTPLATE: "guldbrystplade"
+  GOLDEN_HELMET: "guldhjelm"
+  GOLDEN_HOE: "guldlugejern"
+  GOLDEN_HORSE_ARMOR: "guldhestearmering"
+  GOLDEN_LEGGINGS: "guldbukser"
+  GOLDEN_PICKAXE: "guldhakke"
+  GOLDEN_SHOVEL: "guldspade"
+  GOLDEN_SWORD: "guldsværd"
+  GRAY_DYE: "gråt farvestof"
+  GREEN_DYE: "grønt farvestof"
+  GUARDIAN_SPAWN_EGG: "beskytter fremkaldningsæg"
+  GUNPOWDER: "krudt"
+  HEART_OF_THE_SEA: "havets hjerte"
+  HEART_POTTERY_SHARD: "hjerte keramikskår"
+  HEART_POTTERY_SHERD: "hjerte-potteskår"
+  HEARTBREAK_POTTERY_SHARD: "hjertesorg keramikskår"
+  HEARTBREAK_POTTERY_SHERD: "hjertesorg-potteskår"
+  HOGLIN_SPAWN_EGG: "hoglin fremkaldningsæg"
+  HONEY_BOTTLE: "honningflaske"
+  HONEYCOMB: "bikage"
+  HOPPER_MINECART: "minevogn med tragt"
+  HORSE_SPAWN_EGG: "hest fremkaldningsæg"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  HOWL_POTTERY_SHARD: "hyle keramikskår"
+  HOWL_POTTERY_SHERD: "hyl-potteskår"
+  HUSK_SPAWN_EGG: "udtørretskal fremkaldningsæg"
+  INK_SAC: "blækpose"
+  IRON_AXE: "jernøkse"
+  IRON_BOOTS: "jernstøvler"
+  IRON_CHESTPLATE: "jernbrystplade"
+  IRON_GOLEM_SPAWN_EGG: "jerngolem fremkaldningsæg"
+  IRON_HELMET: "jernhjelm"
+  IRON_HOE: "jernlugejern"
+  IRON_HORSE_ARMOR: "jernhestearmering"
+  IRON_INGOT: "jernbarre"
+  IRON_LEGGINGS: "jernbukser"
+  IRON_NUGGET: "jernklump"
+  IRON_PICKAXE: "jernhakke"
+  IRON_SHOVEL: "jernspade"
+  IRON_SWORD: "jernsværd"
+  ITEM_FRAME: "genstandsramme"
+  JUNGLE_BOAT: "junglebåd"
+  JUNGLE_CHEST_BOAT: "junglebåd med kiste"
+  KNOWLEDGE_BOOK: "kundskabsbog"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "lavaspand"
+  LEAD: "snor"
+  LEATHER: "læder"
+  LEATHER_BOOTS: "læderstøvler"
+  LEATHER_CHESTPLATE: "lædertunika"
+  LEATHER_HELMET: "læderhat"
+  LEATHER_HORSE_ARMOR: "læderhestearmering"
+  LEATHER_LEGGINGS: "læderbukser"
+  LIGHT_BLUE_DYE: "lyseblåt farvestof"
+  LIGHT_GRAY_DYE: "lysegråt farvestof"
+  LIME_DYE: "limegrønt farvestof"
+  LINGERING_POTION: "hængende eliksir"
+  LINGERING_POTION_EFFECT_AWKWARD: "hængende akavet eliksir"
+  LINGERING_POTION_EFFECT_EMPTY: "ulavelig hængende eliksir"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "hængende ildmodstandseliksir"
+  LINGERING_POTION_EFFECT_HARMING: "hængende skadeeliksir"
+  LINGERING_POTION_EFFECT_HEALING: "hængende helbredseliksir"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "hængende usynlighedseliksir"
+  LINGERING_POTION_EFFECT_LEAPING: "hængende springeliksir"
+  LINGERING_POTION_EFFECT_LEVITATION: "hængende levitationseliksir"
+  LINGERING_POTION_EFFECT_LUCK: "hængende heldeliksir"
+  LINGERING_POTION_EFFECT_MUNDANE: "hængende banal eliksir"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "hængende nattesynseliksir"
+  LINGERING_POTION_EFFECT_POISON: "hængende gifteliksir"
+  LINGERING_POTION_EFFECT_REGENERATION: "hængende regenereringseliksir"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "hængende langsom fald eliksir"
+  LINGERING_POTION_EFFECT_SLOWNESS: "hængende langsomhedseliksir"
+  LINGERING_POTION_EFFECT_STRENGTH: "hængende styrkeeliksir"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "hængende hurtighedseliksir"
+  LINGERING_POTION_EFFECT_THICK: "hængende tyk eliksir"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "hængende skildpaddemestereliksir"
+  LINGERING_POTION_EFFECT_WATER: "hængende vand flaske"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "hængende gælleeliksir"
+  LINGERING_POTION_EFFECT_WEAKNESS: "hængende svaghedseliksir"
+  LLAMA_SPAWN_EGG: "lama fremkaldningsæg"
+  LODESTONE_COMPASS: "ledestenkompas"
+  MAGENTA_DYE: "lyslilla farvestof"
+  MAGMA_CREAM: "magmacreme"
+  MAGMA_CUBE_SPAWN_EGG: "magmakube fremkaldningsæg"
+  MANGROVE_BOAT: "mangrovebåd"
+  MANGROVE_CHEST_BOAT: "mangrovebåd med kiste"
+  MAP: "tomt kort"
+  MELON_SEEDS: "vandmelonsfrø"
+  MELON_SLICE: "melonskive"
+  MILK_BUCKET: "mælkespand"
+  MINECART: "minevogn"
+  MINER_POTTERY_SHARD: "minearbejder keramikskår"
+  MINER_POTTERY_SHERD: "minearbejder-potteskår"
+  MOJANG_BANNER_PATTERN: "banner mønster"
+  MOJANG_BANNER_PATTERN_DESC: "ting"
+  MOOSHROOM_SPAWN_EGG: "mooshroom fremkaldningsæg"
+  MOURNER_POTTERY_SHARD: "sørgende keramikskår"
+  MOURNER_POTTERY_SHERD: "sørger-potteskår"
+  MULE_SPAWN_EGG: "muldyr fremkaldningsæg"
+  MUSHROOM_STEW: "svampestuvning"
+  MUSIC_DISC_11: "musikplade"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "musikplade"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "musikplade"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "musikplade"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "musikplade"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "musikplade"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "musikplade"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "musikplade"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "musikplade"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "musikplade"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "musikplade"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "musikplade"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "musikplade"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "musikplade"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "musikplade"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "musikplade"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "råt fårekød"
+  NAME_TAG: "navneskilt"
+  NAUTILUS_SHELL: "nautilskal"
+  NETHER_BRICK: "nether-mursten"
+  NETHER_STAR: "nether-stjerne"
+  NETHERITE_AXE: "netherritøkse"
+  NETHERITE_BOOTS: "netherritstøvler"
+  NETHERITE_CHESTPLATE: "netherritbrystplade"
+  NETHERITE_HELMET: "netherrithjelm"
+  NETHERITE_HOE: "netherritlugejern"
+  NETHERITE_INGOT: "netherritbarre"
+  NETHERITE_LEGGINGS: "netherritbukser"
+  NETHERITE_PICKAXE: "netherrithakke"
+  NETHERITE_SCRAP: "netherittskrot"
+  NETHERITE_SHOVEL: "netherritspade"
+  NETHERITE_SWORD: "netherritsværd"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smedeskabelon"
+  OAK_BOAT: "egetræsbåd"
+  OAK_CHEST_BOAT: "egetræsbåd med kiste"
+  OCELOT_SPAWN_EGG: "ozelot fremkaldningsæg"
+  ORANGE_DYE: "orange farvestof"
+  PAINTING: "maleri"
+  PANDA_SPAWN_EGG: "panda fremkaldningsæg"
+  PAPER: "papir"
+  PARROT_SPAWN_EGG: "papegøje fremkaldningsæg"
+  PHANTOM_MEMBRANE: "fantommembran"
+  PHANTOM_SPAWN_EGG: "fantom fremkaldningsæg"
+  PIG_SPAWN_EGG: "gris fremkaldningsæg"
+  PIGLIN_BANNER_PATTERN: "banner mønster"
+  PIGLIN_BANNER_PATTERN_DESC: "snude"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin bølle fremkaldningsæg"
+  PIGLIN_SPAWN_EGG: "piglin fremkaldningsæg"
+  PILLAGER_SPAWN_EGG: "plyndrer fremkaldningsæg"
+  PINK_DYE: "lyserødt farvestof"
+  PITCHER_POD: "kandeafgrøde"
+  PLENTY_POTTERY_SHARD: "mange keramikskår"
+  PLENTY_POTTERY_SHERD: "rigeligt-potteskår"
+  POISONOUS_POTATO: "giftig kartoffel"
+  POLAR_BEAR_SPAWN_EGG: "isbjørn fremkaldningsæg"
+  POPPED_CHORUS_FRUIT: "poppet omkvædsfrugt"
+  PORKCHOP: "rå svinekotelet"
+  POTATO: "kartoffel"
+  POTION: "eliksir"
+  POTION_EFFECT_AWKWARD: "akavet eliksir"
+  POTION_EFFECT_EMPTY: "ulavelig eliksir"
+  POTION_EFFECT_FIRE_RESISTANCE: "ildmodstandseliksir"
+  POTION_EFFECT_HARMING: "skadeeliksir"
+  POTION_EFFECT_HEALING: "helbredseliksir"
+  POTION_EFFECT_INVISIBILITY: "usynlighedseliksir"
+  POTION_EFFECT_LEAPING: "springeliksir"
+  POTION_EFFECT_LEVITATION: "levitationseliksir"
+  POTION_EFFECT_LUCK: "heldeliksir"
+  POTION_EFFECT_MUNDANE: "banal eliksir"
+  POTION_EFFECT_NIGHT_VISION: "nattesynseliksir"
+  POTION_EFFECT_POISON: "gifteliksir"
+  POTION_EFFECT_REGENERATION: "regenereringseliksir"
+  POTION_EFFECT_SLOW_FALLING: "langsom fald eliksir"
+  POTION_EFFECT_SLOWNESS: "langsomhedseliksir"
+  POTION_EFFECT_STRENGTH: "styrkeeliksir"
+  POTION_EFFECT_SWIFTNESS: "hurtighedseliksir"
+  POTION_EFFECT_THICK: "tyk eliksir"
+  POTION_EFFECT_TURTLE_MASTER: "skildpaddemestereliksir"
+  POTION_EFFECT_WATER: "vandflaske"
+  POTION_EFFECT_WATER_BREATHING: "gælleeliksir"
+  POTION_EFFECT_WEAKNESS: "svaghedseliksir"
+  POTTERY_SHARD_ARCHER: "ancher keramikskår"
+  POTTERY_SHARD_ARMS_UP: "arms u keramikskår"
+  POTTERY_SHARD_PRIZE: "præmie keramikskår"
+  POTTERY_SHARD_SKULL: "skuli keramik skærv"
+  POWDER_SNOW_BUCKET: "pulversnespand"
+  PRISMARINE_CRYSTALS: "prismarinekrystaller"
+  PRISMARINE_SHARD: "prismarine-splint"
+  PRIZE_POTTERY_SHARD: "præmie keramikskår"
+  PRIZE_POTTERY_SHERD: "gevinst-potteskår"
+  PUFFERFISH: "kuglefisk"
+  PUFFERFISH_BUCKET: "spand med kuglefisk"
+  PUFFERFISH_SPAWN_EGG: "kuglefisk fremkaldningsæg"
+  PUMPKIN_PIE: "græskartærte"
+  PUMPKIN_SEEDS: "græskarfrø"
+  PURPLE_DYE: "lilla farvestof"
+  QUARTZ: "nether-kvarts"
+  RABBIT: "rå kanin"
+  RABBIT_FOOT: "kaninfod"
+  RABBIT_HIDE: "kaninskind"
+  RABBIT_SPAWN_EGG: "kanin fremkaldningsæg"
+  RABBIT_STEW: "kaninstuvning"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  RAVAGER_SPAWN_EGG: "hærger fremkaldningsæg"
+  RAW_COPPER: "rå kobber"
+  RAW_GOLD: "rå guld"
+  RAW_IRON: "rå jern"
+  RECOVERY_COMPASS: "genfindingskompas"
+  RED_DYE: "rødt farvestof"
+  REDSTONE: "redstonestøv"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  ROTTEN_FLESH: "råddent kød"
+  SADDLE: "sadel"
+  SALMON: "rå laks"
+  SALMON_BUCKET: "spand med laks"
+  SALMON_SPAWN_EGG: "laks fremkaldningsæg"
+  SCUTE: "skildpaddeskjold"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  SHEAF_POTTERY_SHARD: "neg-potteskår"
+  SHEAF_POTTERY_SHERD: "neg-potteskår"
+  SHEARS: "saks"
+  SHEEP_SPAWN_EGG: "får fremkaldningsæg"
+  SHELTER_POTTERY_SHARD: "ly-potteskår"
+  SHELTER_POTTERY_SHERD: "ly-potteskår"
+  SHIELD: "skjold"
+  SHIELD_BLACK: "sort skjold"
+  SHIELD_BLUE: "blåt skjold"
+  SHIELD_BROWN: "brunt skjold"
+  SHIELD_CYAN: "turkis skjold"
+  SHIELD_GRAY: "gråt skjold"
+  SHIELD_GREEN: "grønt skjold"
+  SHIELD_LIGHT_BLUE: "lyseblåt skjold"
+  SHIELD_LIGHT_GRAY: "lysegråt skjold"
+  SHIELD_LIME: "limegrønt skjold"
+  SHIELD_MAGENTA: "lyslilla skjold"
+  SHIELD_ORANGE: "orange skjold"
+  SHIELD_PINK: "lyserødt skjold"
+  SHIELD_PURPLE: "lilla skjold"
+  SHIELD_RED: "rødt skjold"
+  SHIELD_WHITE: "hvidt skjold"
+  SHIELD_YELLOW: "gult skjold"
+  SHULKER_SHELL: "shulkerskal"
+  SHULKER_SPAWN_EGG: "shulker fremkaldningsæg"
+  SIGN: "skilt"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  SILVERFISH_SPAWN_EGG: "sølvfisk fremkaldningsæg"
+  SKELETON_HORSE_SPAWN_EGG: "skelethest fremkaldningsæg"
+  SKELETON_SPAWN_EGG: "skelet fremkaldningsæg"
+  SKULL_BANNER_PATTERN: "banner mønster"
+  SKULL_BANNER_PATTERN_DESC: "kranium symbol"
+  SKULL_POTTERY_SHARD: "kranie-potteskår"
+  SKULL_POTTERY_SHERD: "kranie-potteskår"
+  SLIME_BALL: "slimbold"
+  SLIME_SPAWN_EGG: "slimklump fremkaldningsæg"
+  SMITHING_TEMPLATE: "smedeskabelon"
+  SMITHING_TEMPLATE_APPLIES_TO: "gælder for:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "tilføj barre eller krystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "rustning"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "tilføj et stykke rustning"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "barrer & krystaller"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredienser:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "tilføj netherritbarre"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamantudstyr"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "tilføj diamantrustning -våben eller -værktøj"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherritbarre"
+  SMITHING_TEMPLATE_UPGRADE: "opgrader: "
+  SNIFFER_SPAWN_EGG: "sniffer spawner æg"
+  SNORT_POTTERY_SHARD: "pruste-potteskår"
+  SNORT_POTTERY_SHERD: "pruste-potteskår"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  SNOW_GOLEM_SPAWN_EGG: "snemand fremkaldningsæg"
+  SNOWBALL: "snebold"
+  SPECTRAL_ARROW: "spektral pil"
+  SPIDER_EYE: "edderkoppeøje"
+  SPIDER_SPAWN_EGG: "edderkop fremkaldningsæg"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  SPLASH_POTION: "sprøjtende eliksir"
+  SPLASH_POTION_EFFECT_AWKWARD: "akavet sprøjtende eliksir"
+  SPLASH_POTION_EFFECT_EMPTY: "ulavelig sprøjtende eliksir"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "sprøjtende ildmodstandseliksir"
+  SPLASH_POTION_EFFECT_HARMING: "sprøjtende skadeeliksir"
+  SPLASH_POTION_EFFECT_HEALING: "sprøjtende helbredseliksir"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "sprøjtende usynlighedseliksir"
+  SPLASH_POTION_EFFECT_LEAPING: "sprøjtende springeliksir"
+  SPLASH_POTION_EFFECT_LEVITATION: "sprøjtende levitationseliksir"
+  SPLASH_POTION_EFFECT_LUCK: "sprøjtende heldeliksir"
+  SPLASH_POTION_EFFECT_MUNDANE: "banal sprøjtende eliksir"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "sprøjtende nattesynseliksir"
+  SPLASH_POTION_EFFECT_POISON: "sprøjtende gifteliksir"
+  SPLASH_POTION_EFFECT_REGENERATION: "sprøjtende regenereringseliksir"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "sprøjtene langsom fald eliksir"
+  SPLASH_POTION_EFFECT_SLOWNESS: "sprøjtende langsomhedseliksir"
+  SPLASH_POTION_EFFECT_STRENGTH: "sprøjtende styrkeeliksir"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "sprøjtende hurtighedseliksir"
+  SPLASH_POTION_EFFECT_THICK: "tyk sprøjtende eliksir"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "sprøjtende skildpaddemestereliksir"
+  SPLASH_POTION_EFFECT_WATER: "sprøjtende vandflaske"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "sprøjtende gælleeliksir"
+  SPLASH_POTION_EFFECT_WEAKNESS: "sprøjtende svaghedseliksir"
+  SPRUCE_BOAT: "granbåd"
+  SPRUCE_CHEST_BOAT: "granbåd med kiste"
+  SPYGLASS: "kikkert"
+  SQUID_SPAWN_EGG: "blæksprutte fremkaldningsæg"
+  STICK: "pind"
+  STONE_AXE: "stenøkse"
+  STONE_HOE: "stenlugejern"
+  STONE_PICKAXE: "stenhakke"
+  STONE_SHOVEL: "stenspade"
+  STONE_SWORD: "stensværd"
+  STRAY_SPAWN_EGG: "omstrejfer fremkaldningsæg"
+  STRIDER_SPAWN_EGG: "lavavandrer fremkaldningsæg"
+  STRING: "tråd"
+  SUGAR: "sukker"
+  SUSPICIOUS_STEW: "mistænkelig stuvning"
+  SWEET_BERRIES: "søde bær"
+  TADPOLE_BUCKET: "spand med haletudser"
+  TADPOLE_SPAWN_EGG: "haletudse fremkaldningsæg"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  TIPPED_ARROW: "dyppet pil"
+  TIPPED_ARROW_EFFECT_AWKWARD: "dyppet pil"
+  TIPPED_ARROW_EFFECT_EMPTY: "ulavelig dyppet pil"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "pil af ildmodstand"
+  TIPPED_ARROW_EFFECT_HARMING: "pil af skade"
+  TIPPED_ARROW_EFFECT_HEALING: "pil af helbred"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "pil af usynlighed"
+  TIPPED_ARROW_EFFECT_LEAPING: "pil af superhop"
+  TIPPED_ARROW_EFFECT_LEVITATION: "pil af levitation"
+  TIPPED_ARROW_EFFECT_LUCK: "pil af lykke"
+  TIPPED_ARROW_EFFECT_MUNDANE: "dyppet pil"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "pil af nattesyn"
+  TIPPED_ARROW_EFFECT_POISON: "pil af gift"
+  TIPPED_ARROW_EFFECT_REGENERATION: "pil af regenerering"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "pil af langsom fald"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "pil af langsomhed"
+  TIPPED_ARROW_EFFECT_STRENGTH: "pil af styrke"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "pil af hurtighed"
+  TIPPED_ARROW_EFFECT_THICK: "dyppet pil"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "pil af skildpaddemester"
+  TIPPED_ARROW_EFFECT_WATER: "sprøjtende pil"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "pil af gæller"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "pil af svaghed"
+  TNT_MINECART: "minevogn med tnt"
+  TORCHFLOWER_SEEDS: "fakkelblomst-frø"
+  TOTEM_OF_UNDYING: "totem af udødelighed"
+  TRADER_LLAMA_SPAWN_EGG: "forhandler lama fremkaldningsæg"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "trefork"
+  TROPICAL_FISH: "tropisk fisk"
+  TROPICAL_FISH_BUCKET: "spand med tropisk fisk"
+  TROPICAL_FISH_SPAWN_EGG: "tropisk fisk fremkaldningsæg"
+  TURTLE_HELMET: "skildpaddeskjold"
+  TURTLE_SPAWN_EGG: "skildpadde fremkaldningsæg"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  VEX_SPAWN_EGG: "vex fremkaldningsæg"
+  VILLAGER_SPAWN_EGG: "landsbyboer fremkaldningsæg"
+  VINDICATOR_SPAWN_EGG: "hævner fremkaldningsæg"
+  WANDERING_TRADER_SPAWN_EGG: "handelsrejsende fremkaldningsæg"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  WARDEN_SPAWN_EGG: "vogter fremkaldningsæg"
+  WARPED_FUNGUS_ON_A_STICK: "forskruet svamp på en pind"
+  WATER_BUCKET: "vandspand"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  WHEAT: "hvede"
+  WHEAT_SEEDS: "hvede frø"
+  WHITE_DYE: "hvidt farvestof"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smedeskabelon"
+  WITCH_SPAWN_EGG: "heks fremkaldningsæg"
+  WITHER_SKELETON_SPAWN_EGG: "wither-skelet fremkaldningsæg"
+  WITHER_SPAWN_EGG: "wither fremkaldningsæg"
+  WOLF_SPAWN_EGG: "ulv fremkaldningsæg"
+  WOODEN_AXE: "træøkse"
+  WOODEN_HOE: "trælugejern"
+  WOODEN_PICKAXE: "træhakke"
+  WOODEN_SHOVEL: "træspade"
+  WOODEN_SWORD: "træsværd"
+  WRITABLE_BOOK: "bog og fjerpen"
+  WRITTEN_BOOK: "skrevet bog"
+  YELLOW_DYE: "gult farvestof"
+  ZOGLIN_SPAWN_EGG: "zoglin fremkaldningsæg"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombiehest fremkaldningsæg"
+  ZOMBIE_SPAWN_EGG: "zombie fremkaldningsæg"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "zombie landsbyboer fremkaldningsæg"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombificeret piglin fremkaldningsæg"
+  CHEST: "når på kroppen:"
+  FEET: "når på fødderne:"
+  HEAD: "når på hovedet:"
+  LEGS: "når på benene:"
+  MAINHAND: "når i primære hånd:"
+  OFFHAND: "når i anden hånd:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akazieholzchnopf"
+  ACACIA_DOOR: "akazieholztür"
+  ACACIA_FENCE: "akazieholzhaag"
+  ACACIA_FENCE_GATE: "akazieholzhaagtor"
+  ACACIA_HANGING_SIGN: "akazieholzhängeschild"
+  ACACIA_LEAVES: "akazielaub"
+  ACACIA_LOG: "akaziestamm"
+  ACACIA_PLANKS: "akazieholzbretter"
+  ACACIA_PRESSURE_PLATE: "akazieholzdruckplatte"
+  ACACIA_SAPLING: "akaziesetzling"
+  ACACIA_SIGN: "akazieholzschild"
+  ACACIA_SLAB: "akazieholzstufe"
+  ACACIA_STAIRS: "akazieholzstäge"
+  ACACIA_TRAPDOOR: "akazieholzfalltür"
+  ACACIA_WALL_HANGING_SIGN: "akazieholzwandhängeschild"
+  ACACIA_WALL_SIGN: "akazieholzwandschild"
+  ACACIA_WOOD: "akazieholz"
+  ACTIVATOR_RAIL: "aktivierigsschine"
+  AIR: "luft"
+  ALLIUM: "zierlauch"
+  AMETHYST_BLOCK: "amethystblock"
+  AMETHYST_CLUSTER: "amethysthuufe"
+  ANCIENT_DEBRIS: "antike schrott"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "andesitstufe"
+  ANDESITE_STAIRS: "andesitstäge"
+  ANDESITE_WALL: "andesitmur"
+  ANVIL: "amboss"
+  ATTACHED_MELON_STEM: "meloneranke"
+  ATTACHED_PUMPKIN_STEM: "chürbisranke"
+  AZALEA: "azalee"
+  AZALEA_LEAVES: "azaleelaub"
+  AZURE_BLUET: "porzellansternli"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "bambusblock"
+  BAMBOO_BUTTON: "bambuschnopf"
+  BAMBOO_DOOR: "bambustür"
+  BAMBOO_FENCE: "bambushaag"
+  BAMBOO_FENCE_GATE: "bambushaagtor"
+  BAMBOO_HANGING_SIGN: "bambushängeschild"
+  BAMBOO_MOSAIC: "bambusmosaik"
+  BAMBOO_MOSAIC_SLAB: "bambusmosaikstufe"
+  BAMBOO_MOSAIC_STAIRS: "bambusmosaikstäge"
+  BAMBOO_PLANKS: "bambusbretter"
+  BAMBOO_PRESSURE_PLATE: "bambusdruckplatte"
+  BAMBOO_SAPLING: "bambussprössling"
+  BAMBOO_SIGN: "bambusschild"
+  BAMBOO_SLAB: "bambusstufe"
+  BAMBOO_STAIRS: "bambusstäge"
+  BAMBOO_TRAPDOOR: "bambusfalltür"
+  BAMBOO_WALL_HANGING_SIGN: "bambuswandhängeschild"
+  BAMBOO_WALL_SIGN: "bambuswandschild"
+  BANNER_BASE_BLACK: "vollständig schwarzes feld"
+  BANNER_BASE_BLUE: "vollständig blaus feld"
+  BANNER_BASE_BROWN: "vollständig brunes feld"
+  BANNER_BASE_CYAN: "vollständig türkises feld"
+  BANNER_BASE_GRAY: "vollständig graus feld"
+  BANNER_BASE_GREEN: "vollständig grüens feld"
+  BANNER_BASE_LIGHT_BLUE: "vollständig hellblaus feld"
+  BANNER_BASE_LIGHT_GRAY: "vollständig hellgraus feld"
+  BANNER_BASE_LIME: "vollständig hellgrüens feld"
+  BANNER_BASE_MAGENTA: "vollständig magenta feld"
+  BANNER_BASE_ORANGE: "vollständig oranges feld"
+  BANNER_BASE_PINK: "vollständig rosa feld"
+  BANNER_BASE_PURPLE: "vollständig violetts feld"
+  BANNER_BASE_RED: "vollständig rots feld"
+  BANNER_BASE_WHITE: "vollständig wisses feld"
+  BANNER_BASE_YELLOW: "vollständig gelbs feld"
+  BANNER_BORDER_BLACK: "schwarzes bord"
+  BANNER_BORDER_BLUE: "blaus bord"
+  BANNER_BORDER_BROWN: "bruns bord"
+  BANNER_BORDER_CYAN: "türkises bord"
+  BANNER_BORDER_GRAY: "graus bord"
+  BANNER_BORDER_GREEN: "grüens bord"
+  BANNER_BORDER_LIGHT_BLUE: "hellblaus bord"
+  BANNER_BORDER_LIGHT_GRAY: "hellgraus bord"
+  BANNER_BORDER_LIME: "hellgrüens bord"
+  BANNER_BORDER_MAGENTA: "magenta bord"
+  BANNER_BORDER_ORANGE: "oranges bord"
+  BANNER_BORDER_PINK: "rosa bord"
+  BANNER_BORDER_PURPLE: "violetts bord"
+  BANNER_BORDER_RED: "rots bord"
+  BANNER_BORDER_WHITE: "wisses bord"
+  BANNER_BORDER_YELLOW: "gelbes bord"
+  BANNER_BRICKS_BLACK: "feld schwarz gmuuret"
+  BANNER_BRICKS_BLUE: "feld blau gmuuret"
+  BANNER_BRICKS_BROWN: "feld brun gmuuret"
+  BANNER_BRICKS_CYAN: "feld türkis gmuuret"
+  BANNER_BRICKS_GRAY: "feld grau gmuuret"
+  BANNER_BRICKS_GREEN: "feld grüen gmuuret"
+  BANNER_BRICKS_LIGHT_BLUE: "feld hellblau gmuuret"
+  BANNER_BRICKS_LIGHT_GRAY: "feld hellgrau gmuuret"
+  BANNER_BRICKS_LIME: "feld hellgrüen gmuuret"
+  BANNER_BRICKS_MAGENTA: "feld magenta gmuuret"
+  BANNER_BRICKS_ORANGE: "feld orange gmuuret"
+  BANNER_BRICKS_PINK: "feld rosa gmuuret"
+  BANNER_BRICKS_PURPLE: "feld violett gmuuret"
+  BANNER_BRICKS_RED: "feld rot gmuuret"
+  BANNER_BRICKS_WHITE: "feld wiss gmuuret"
+  BANNER_BRICKS_YELLOW: "feld gelb gmuuret"
+  BANNER_CIRCLE_BLACK: "schwarzi chugle"
+  BANNER_CIRCLE_BLUE: "blaui chugle"
+  BANNER_CIRCLE_BROWN: "bruni chugle"
+  BANNER_CIRCLE_CYAN: "türkisi chugle"
+  BANNER_CIRCLE_GRAY: "graui chugle"
+  BANNER_CIRCLE_GREEN: "grüeni chugle"
+  BANNER_CIRCLE_LIGHT_BLUE: "hellblaui chugle"
+  BANNER_CIRCLE_LIGHT_GRAY: "hellgraui chugle"
+  BANNER_CIRCLE_LIME: "hellgrüeni chugle"
+  BANNER_CIRCLE_MAGENTA: "magenta chugle"
+  BANNER_CIRCLE_ORANGE: "orangi chugle"
+  BANNER_CIRCLE_PINK: "rosa chugle"
+  BANNER_CIRCLE_PURPLE: "violetti chugle"
+  BANNER_CIRCLE_RED: "roti chugle"
+  BANNER_CIRCLE_WHITE: "wissi chugle"
+  BANNER_CIRCLE_YELLOW: "gelbi chugle"
+  BANNER_CREEPER_BLACK: "schwarze creeper"
+  BANNER_CREEPER_BLUE: "blaue creeper"
+  BANNER_CREEPER_BROWN: "brune creeper"
+  BANNER_CREEPER_CYAN: "türkise creeper"
+  BANNER_CREEPER_GRAY: "graue creeper"
+  BANNER_CREEPER_GREEN: "grüene creeper"
+  BANNER_CREEPER_LIGHT_BLUE: "hellblaue creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "hellgraue creeper"
+  BANNER_CREEPER_LIME: "hellgrüene creeper"
+  BANNER_CREEPER_MAGENTA: "magenta creeper"
+  BANNER_CREEPER_ORANGE: "orange creeper"
+  BANNER_CREEPER_PINK: "rosa creeper"
+  BANNER_CREEPER_PURPLE: "violette creeper"
+  BANNER_CREEPER_RED: "rote creeper"
+  BANNER_CREEPER_WHITE: "wisse creeper"
+  BANNER_CREEPER_YELLOW: "gelbe creeper"
+  BANNER_CROSS_BLACK: "schwarzes andreaschrüüz"
+  BANNER_CROSS_BLUE: "blaus andreaschrüüz"
+  BANNER_CROSS_BROWN: "bruns andreaschrüüz"
+  BANNER_CROSS_CYAN: "türkises andreaschrüüz"
+  BANNER_CROSS_GRAY: "graus andreaschrüüz"
+  BANNER_CROSS_GREEN: "grüens andreaschrüüz"
+  BANNER_CROSS_LIGHT_BLUE: "hellblaus andreaschrüüz"
+  BANNER_CROSS_LIGHT_GRAY: "hellgraus andreaschrüüz"
+  BANNER_CROSS_LIME: "hellgrüens andreaschrüüz"
+  BANNER_CROSS_MAGENTA: "magenta andreaschrüüz"
+  BANNER_CROSS_ORANGE: "oranges andreaschrüüz"
+  BANNER_CROSS_PINK: "rosa andreaschrüüz"
+  BANNER_CROSS_PURPLE: "violetts andreaschrüüz"
+  BANNER_CROSS_RED: "rots andreaschrüüz"
+  BANNER_CROSS_WHITE: "wisses andreaschrüüz"
+  BANNER_CROSS_YELLOW: "gelbes andreaschrüüz"
+  BANNER_CURLY_BORDER_BLACK: "schwarzes spickelbord"
+  BANNER_CURLY_BORDER_BLUE: "blaus spickelbord"
+  BANNER_CURLY_BORDER_BROWN: "bruns spickelbord"
+  BANNER_CURLY_BORDER_CYAN: "türkises spickelbord"
+  BANNER_CURLY_BORDER_GRAY: "graus spickelbord"
+  BANNER_CURLY_BORDER_GREEN: "grüens spickelbord"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "hellblaus spickelbord"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "hellgraus spickelbord"
+  BANNER_CURLY_BORDER_LIME: "hellgrüens spickelbord"
+  BANNER_CURLY_BORDER_MAGENTA: "magenta spickelbord"
+  BANNER_CURLY_BORDER_ORANGE: "oranges spickelbord"
+  BANNER_CURLY_BORDER_PINK: "rosa spickelbord"
+  BANNER_CURLY_BORDER_PURPLE: "violetts spickelbord"
+  BANNER_CURLY_BORDER_RED: "rots spickelbord"
+  BANNER_CURLY_BORDER_WHITE: "wisses spickelbord"
+  BANNER_CURLY_BORDER_YELLOW: "gelbes spickelbord"
+  BANNER_DIAGONAL_LEFT_BLACK: "schwarz schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_BLUE: "blau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_BROWN: "brun schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_CYAN: "türkis schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_GRAY: "grau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_GREEN: "grüen schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "hellblau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "hellgrau schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_LIME: "hellgrüen schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_PINK: "rosa schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_PURPLE: "violett schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_RED: "rot schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_WHITE: "wiss schräglinks teilt"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gelb schräglinks teilt"
+  BANNER_DIAGONAL_RIGHT_BLACK: "schwarz schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brun schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_CYAN: "türkis schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_GREEN: "grüen schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "hellblau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "hellgrau schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_LIME: "hellgrüen schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "orange schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_PINK: "rosa schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "violett schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_RED: "rot schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_WHITE: "wiss schrägrechts teilt"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gelb schrägrechts teilt"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "schwarz schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brun schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "türkis schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "grüen schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "hellblau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "hellgrau schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "hellgrüen schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "orange schrägrächts teilt (umkehrt)"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "rosa schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "violett schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_RED: "rot schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "wiss schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gelb schrägrechts teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "schwarz schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brun schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "türkis schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "grüen schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "hellblau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "hellgrau schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "hellgrüen schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "orange schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "rosa schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "violett schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "rot schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "wiss schräglinks teilt (invertiert)"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gelb schräglinks teilt (invertiert)"
+  BANNER_FLOWER_BLACK: "schwarzi blueme"
+  BANNER_FLOWER_BLUE: "blaui blueme"
+  BANNER_FLOWER_BROWN: "bruni blueme"
+  BANNER_FLOWER_CYAN: "türkisi blueme"
+  BANNER_FLOWER_GRAY: "graui blueme"
+  BANNER_FLOWER_GREEN: "grüeni blueme"
+  BANNER_FLOWER_LIGHT_BLUE: "hellblaui blueme"
+  BANNER_FLOWER_LIGHT_GRAY: "hellgraui blueme"
+  BANNER_FLOWER_LIME: "hellgrüeni blueme"
+  BANNER_FLOWER_MAGENTA: "magenta blueme"
+  BANNER_FLOWER_ORANGE: "orangi blueme"
+  BANNER_FLOWER_PINK: "rosa blueme"
+  BANNER_FLOWER_PURPLE: "violetti blueme"
+  BANNER_FLOWER_RED: "roti blueme"
+  BANNER_FLOWER_WHITE: "wissi blueme"
+  BANNER_FLOWER_YELLOW: "gelbi blueme"
+  BANNER_GLOBE_BLACK: "schwarze globus"
+  BANNER_GLOBE_BLUE: "blaue globus"
+  BANNER_GLOBE_BROWN: "brune globus"
+  BANNER_GLOBE_CYAN: "türkise globus"
+  BANNER_GLOBE_GRAY: "graue globus"
+  BANNER_GLOBE_GREEN: "grüene globus"
+  BANNER_GLOBE_LIGHT_BLUE: "hellblaue globus"
+  BANNER_GLOBE_LIGHT_GRAY: "hellgraue globus"
+  BANNER_GLOBE_LIME: "hellgrüene globus"
+  BANNER_GLOBE_MAGENTA: "magenta globus"
+  BANNER_GLOBE_ORANGE: "orange globus"
+  BANNER_GLOBE_PINK: "rosa globus"
+  BANNER_GLOBE_PURPLE: "violette globus"
+  BANNER_GLOBE_RED: "rote globus"
+  BANNER_GLOBE_WHITE: "wisse globus"
+  BANNER_GLOBE_YELLOW: "gelbe globus"
+  BANNER_GRADIENT_BLACK: "schwarze farbverlauf"
+  BANNER_GRADIENT_BLUE: "blaue farbverlauf"
+  BANNER_GRADIENT_BROWN: "brune farbverlauf"
+  BANNER_GRADIENT_CYAN: "türkise farbverlauf"
+  BANNER_GRADIENT_GRAY: "graue farbverlauf"
+  BANNER_GRADIENT_GREEN: "grüene farbverlauf"
+  BANNER_GRADIENT_LIGHT_BLUE: "hellblaue farbverlauf"
+  BANNER_GRADIENT_LIGHT_GRAY: "hellgraue farbverlauf"
+  BANNER_GRADIENT_LIME: "hellgrüene farbverlauf"
+  BANNER_GRADIENT_MAGENTA: "magenta farbverlauf"
+  BANNER_GRADIENT_ORANGE: "orange farbverlauf"
+  BANNER_GRADIENT_PINK: "rosa farbverlauf"
+  BANNER_GRADIENT_PURPLE: "violette farbverlauf"
+  BANNER_GRADIENT_RED: "rote farbverlauf"
+  BANNER_GRADIENT_WHITE: "wisse farbverlauf"
+  BANNER_GRADIENT_YELLOW: "gelbe farbverlauf"
+  BANNER_GRADIENT_UP_BLACK: "schwarze farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_BLUE: "blaue farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_BROWN: "brune farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_CYAN: "türkise farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_GRAY: "graue farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_GREEN: "grüene farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "hellblaue farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "hellgraue farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_LIME: "hellgrüene farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_MAGENTA: "magenta farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_ORANGE: "orange farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_PINK: "rosa farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_PURPLE: "violette farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_RED: "rote farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_WHITE: "wisse farbverlauf (invertiert)"
+  BANNER_GRADIENT_UP_YELLOW: "gelbe farbverlauf (invertiert)"
+  BANNER_HALF_HORIZONTAL_BLACK: "schwarz obe teilt"
+  BANNER_HALF_HORIZONTAL_BLUE: "blau obe teilt"
+  BANNER_HALF_HORIZONTAL_BROWN: "brun obe teilt"
+  BANNER_HALF_HORIZONTAL_CYAN: "türkis obe teilt"
+  BANNER_HALF_HORIZONTAL_GRAY: "grau obe teilt"
+  BANNER_HALF_HORIZONTAL_GREEN: "grüen obe teilt"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "hellblau obe teilt"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "hellgrau obe teilt"
+  BANNER_HALF_HORIZONTAL_LIME: "hellgrüen obe teilt"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "magenta obe teilt"
+  BANNER_HALF_HORIZONTAL_ORANGE: "orange obe teilt"
+  BANNER_HALF_HORIZONTAL_PINK: "rosa obe teilt"
+  BANNER_HALF_HORIZONTAL_PURPLE: "violett obe teilt"
+  BANNER_HALF_HORIZONTAL_RED: "rot obe teilt"
+  BANNER_HALF_HORIZONTAL_WHITE: "wiss obe teilt"
+  BANNER_HALF_HORIZONTAL_YELLOW: "gelb obe teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "schwarz une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blau une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brun une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "türkis une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grau une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "grüen une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "hellblau une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "hellgrau une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "hellgrüen une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "magenta une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "orange une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "rosa une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "violett une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "rot une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "wiss une teilt"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "gelb une teilt"
+  BANNER_HALF_VERTICAL_BLACK: "schwarz rechts gspalte"
+  BANNER_HALF_VERTICAL_BLUE: "blau rechts gspalte"
+  BANNER_HALF_VERTICAL_BROWN: "brun rechts gspalte"
+  BANNER_HALF_VERTICAL_CYAN: "türkis rechts gspalte"
+  BANNER_HALF_VERTICAL_GRAY: "grau rechts gspalte"
+  BANNER_HALF_VERTICAL_GREEN: "grüen rechts gspalte"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "hellblau rechts gspalte"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "hellgrau rechts gspalte"
+  BANNER_HALF_VERTICAL_LIME: "hellgrüen rechts gspalte"
+  BANNER_HALF_VERTICAL_MAGENTA: "magenta rechts gspalte"
+  BANNER_HALF_VERTICAL_ORANGE: "orange rechts gspalte"
+  BANNER_HALF_VERTICAL_PINK: "rosa rechts gspalte"
+  BANNER_HALF_VERTICAL_PURPLE: "violett rechts gspalte"
+  BANNER_HALF_VERTICAL_RED: "rot rechts gspalte"
+  BANNER_HALF_VERTICAL_WHITE: "wiss rechts gspalte"
+  BANNER_HALF_VERTICAL_YELLOW: "gelb rechts gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "schwarz links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blau links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brun links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "türkis links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grau links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "grüen links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "hellblau links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "hellgrau links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "hellgrüen links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "magenta links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "orange links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "rosa links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "violett links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "rot links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "wiss links gspalte"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "gelb links gspalte"
+  BANNER_MOJANG_BLACK: "schwarzes mojang-logo"
+  BANNER_MOJANG_BLUE: "blaus mojang-logo"
+  BANNER_MOJANG_BROWN: "bruns mojang-logo"
+  BANNER_MOJANG_CYAN: "türkises mojang-logo"
+  BANNER_MOJANG_GRAY: "graus mojang-logo"
+  BANNER_MOJANG_GREEN: "grüens mojang-logo"
+  BANNER_MOJANG_LIGHT_BLUE: "hellblaus mojang-logo"
+  BANNER_MOJANG_LIGHT_GRAY: "hellgraus mojang-logo"
+  BANNER_MOJANG_LIME: "hellgrüens mojang-logo"
+  BANNER_MOJANG_MAGENTA: "magenta mojang-logo"
+  BANNER_MOJANG_ORANGE: "oranges mojang-logo"
+  BANNER_MOJANG_PINK: "rosa mojang-logo"
+  BANNER_MOJANG_PURPLE: "violetts mojang-logo"
+  BANNER_MOJANG_RED: "rots mojang-logo"
+  BANNER_MOJANG_WHITE: "wisses mojang-logo"
+  BANNER_MOJANG_YELLOW: "gelbes mojang-logo"
+  BANNER_PIGLIN_BLACK: "schwarzi schnauze"
+  BANNER_PIGLIN_BLUE: "blaui schnauze"
+  BANNER_PIGLIN_BROWN: "bruni schnauze"
+  BANNER_PIGLIN_CYAN: "türkisi schnauze"
+  BANNER_PIGLIN_GRAY: "graui schnauze"
+  BANNER_PIGLIN_GREEN: "grüeni schnauze"
+  BANNER_PIGLIN_LIGHT_BLUE: "hellblaui schnauze"
+  BANNER_PIGLIN_LIGHT_GRAY: "hellgraui schnauze"
+  BANNER_PIGLIN_LIME: "hellgrüeni schnauze"
+  BANNER_PIGLIN_MAGENTA: "magenta schnauze"
+  BANNER_PIGLIN_ORANGE: "orangi schnauze"
+  BANNER_PIGLIN_PINK: "rosa schnauze"
+  BANNER_PIGLIN_PURPLE: "violetti schnauze"
+  BANNER_PIGLIN_RED: "roti schnauze"
+  BANNER_PIGLIN_WHITE: "wissi schnauze"
+  BANNER_PIGLIN_YELLOW: "gelbi schnauze"
+  BANNER_RHOMBUS_BLACK: "schwarzi raute"
+  BANNER_RHOMBUS_BLUE: "blaui raute"
+  BANNER_RHOMBUS_BROWN: "bruni raute"
+  BANNER_RHOMBUS_CYAN: "türkisi raute"
+  BANNER_RHOMBUS_GRAY: "graui raute"
+  BANNER_RHOMBUS_GREEN: "grüeni raute"
+  BANNER_RHOMBUS_LIGHT_BLUE: "hellblaui raute"
+  BANNER_RHOMBUS_LIGHT_GRAY: "hellgraui raute"
+  BANNER_RHOMBUS_LIME: "hellgrüeni raute"
+  BANNER_RHOMBUS_MAGENTA: "magenta raute"
+  BANNER_RHOMBUS_ORANGE: "orangi raute"
+  BANNER_RHOMBUS_PINK: "rosa raute"
+  BANNER_RHOMBUS_PURPLE: "violetti raute"
+  BANNER_RHOMBUS_RED: "roti raute"
+  BANNER_RHOMBUS_WHITE: "wissi raute"
+  BANNER_RHOMBUS_YELLOW: "gelbi raute"
+  BANNER_SKULL_BLACK: "schwarze schädel"
+  BANNER_SKULL_BLUE: "blaue schädel"
+  BANNER_SKULL_BROWN: "brune schädel"
+  BANNER_SKULL_CYAN: "türkise schädel"
+  BANNER_SKULL_GRAY: "graue schädel"
+  BANNER_SKULL_GREEN: "grüene schädel"
+  BANNER_SKULL_LIGHT_BLUE: "hellblaue schädel"
+  BANNER_SKULL_LIGHT_GRAY: "hellgraue schädel"
+  BANNER_SKULL_LIME: "hellgrüene schädel"
+  BANNER_SKULL_MAGENTA: "magenta schädel"
+  BANNER_SKULL_ORANGE: "orange schädel"
+  BANNER_SKULL_PINK: "rosa schädel"
+  BANNER_SKULL_PURPLE: "violette schädel"
+  BANNER_SKULL_RED: "rote schädel"
+  BANNER_SKULL_WHITE: "wisse schädel"
+  BANNER_SKULL_YELLOW: "gelbe schädel"
+  BANNER_SMALL_STRIPES_BLACK: "vier schwarzi pfähl"
+  BANNER_SMALL_STRIPES_BLUE: "vier blaui pfähl"
+  BANNER_SMALL_STRIPES_BROWN: "vier bruni pfähl"
+  BANNER_SMALL_STRIPES_CYAN: "vier türkisi pfähl"
+  BANNER_SMALL_STRIPES_GRAY: "vier graui pfähl"
+  BANNER_SMALL_STRIPES_GREEN: "vier grüeni pfähl"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "vier hellblaui pfähl"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "vier hellgraui pfähl"
+  BANNER_SMALL_STRIPES_LIME: "vier hellgrüeni pfähl"
+  BANNER_SMALL_STRIPES_MAGENTA: "vier magenta pfähl"
+  BANNER_SMALL_STRIPES_ORANGE: "vier orangi pfähl"
+  BANNER_SMALL_STRIPES_PINK: "vier rosa pfähl"
+  BANNER_SMALL_STRIPES_PURPLE: "vier violetti pfähl"
+  BANNER_SMALL_STRIPES_RED: "vier roti pfähl"
+  BANNER_SMALL_STRIPES_WHITE: "vier wissi pfähl"
+  BANNER_SMALL_STRIPES_YELLOW: "vier gelbi pfähl"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "schwarzes rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blaus rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "bruns rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "türkises rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "graus rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "grüens rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "hellblaus rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "hellgraus rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "hellgrüens rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "magenta rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "oranges rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "rosa rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "violetts rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "rots rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "wisses rechts unteregg"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gelbes rechts unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "schwarzes links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blaus links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "bruns links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "türkises links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "graus links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "grüens links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "hellblaus links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "hellgraus links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "hellgrüens links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "magenta links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "oranges links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "rosa links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "violetts links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "rots links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "wisses links unteregg"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gelbes links unteregg"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "schwarzes rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blaus rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "bruns rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "türkises rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "graus rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "grüens rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "hellblaus rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "hellgraus rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_LIME: "hellgrüens rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "magenta rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "oranges rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_PINK: "rosa rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "violetts rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_RED: "rots rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "wisses rechts oberegg"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gelbes rechts oberegg"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "schwarzes links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blaus links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "bruns links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "türkises links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "graus links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "grüens links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "hellblaus links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "hellgraus links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "hellgrüens links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "magenta links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "oranges links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "rosa links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "violetts links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_RED: "rots links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "wisses links oberegg"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gelbes links oberegg"
+  BANNER_STRAIGHT_CROSS_BLACK: "schwarzes chrüüz"
+  BANNER_STRAIGHT_CROSS_BLUE: "blaus chrüüz"
+  BANNER_STRAIGHT_CROSS_BROWN: "bruns chrüüz"
+  BANNER_STRAIGHT_CROSS_CYAN: "türkises chrüüz"
+  BANNER_STRAIGHT_CROSS_GRAY: "graus chrüüz"
+  BANNER_STRAIGHT_CROSS_GREEN: "grüens chrüüz"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "hellblaus chrüüz"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "hellgraus chrüüz"
+  BANNER_STRAIGHT_CROSS_LIME: "hellgrüens chrüüz"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magenta chrüüz"
+  BANNER_STRAIGHT_CROSS_ORANGE: "oranges chrüüz"
+  BANNER_STRAIGHT_CROSS_PINK: "rosa chrüüz"
+  BANNER_STRAIGHT_CROSS_PURPLE: "violetts chrüüz"
+  BANNER_STRAIGHT_CROSS_RED: "rots chrüüz"
+  BANNER_STRAIGHT_CROSS_WHITE: "wisses chrüüz"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gelbes chrüüz"
+  BANNER_STRIPE_BOTTOM_BLACK: "schwarze bannerfuess"
+  BANNER_STRIPE_BOTTOM_BLUE: "blaue bannerfuess"
+  BANNER_STRIPE_BOTTOM_BROWN: "brune bannerfuess"
+  BANNER_STRIPE_BOTTOM_CYAN: "türkise bannerfuess"
+  BANNER_STRIPE_BOTTOM_GRAY: "graue bannerfuess"
+  BANNER_STRIPE_BOTTOM_GREEN: "grüene bannerfuess"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "hellblaue bannerfuess"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "hellbraue bannerfuess"
+  BANNER_STRIPE_BOTTOM_LIME: "hellgrüene bannerfuess"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "magenta bannerfuess"
+  BANNER_STRIPE_BOTTOM_ORANGE: "orange bannerfuess"
+  BANNER_STRIPE_BOTTOM_PINK: "rosa bannerfuess"
+  BANNER_STRIPE_BOTTOM_PURPLE: "violette bannerfuess"
+  BANNER_STRIPE_BOTTOM_RED: "rote bannerfuess"
+  BANNER_STRIPE_BOTTOM_WHITE: "wisse bannerfuess"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gelbe bannerfuess"
+  BANNER_STRIPE_CENTER_BLACK: "schwarze pfahl"
+  BANNER_STRIPE_CENTER_BLUE: "blaue pfahl"
+  BANNER_STRIPE_CENTER_BROWN: "brune pfahl"
+  BANNER_STRIPE_CENTER_CYAN: "türkise pfahl"
+  BANNER_STRIPE_CENTER_GRAY: "graue pfahl"
+  BANNER_STRIPE_CENTER_GREEN: "grüene pfahl"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "hellblaue pfahl"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "hellgraue pfahl"
+  BANNER_STRIPE_CENTER_LIME: "hellgrüene pfahl"
+  BANNER_STRIPE_CENTER_MAGENTA: "magenta pfahl"
+  BANNER_STRIPE_CENTER_ORANGE: "orange pfahl"
+  BANNER_STRIPE_CENTER_PINK: "rosa pfahl"
+  BANNER_STRIPE_CENTER_PURPLE: "violette pfahl"
+  BANNER_STRIPE_CENTER_RED: "rote pfahl"
+  BANNER_STRIPE_CENTER_WHITE: "wisse pfahl"
+  BANNER_STRIPE_CENTER_YELLOW: "gelbe pfahl"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "schwarze schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blaue schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brune schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "türkise schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "graue schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "grüene schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "hellblaue schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "hellgraue schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_LIME: "hellgrüene schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "orange schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rosa schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "violette schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_RED: "rote schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "wisse schräglinksbalke"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gelbe schräglinksbalke"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "schwarze schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blaue schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brune schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "türkise schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "graue schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "grüene schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "hellblaue schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "hellgraue schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "hellgrüene schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "magenta schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "orange schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rosa schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "violette schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rote schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "wisse schrägbalke"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gelbe schrägbalke"
+  BANNER_STRIPE_LEFT_BLACK: "schwarzi rechti flanke"
+  BANNER_STRIPE_LEFT_BLUE: "blaui rechti flanke"
+  BANNER_STRIPE_LEFT_BROWN: "bruni rechti flanke"
+  BANNER_STRIPE_LEFT_CYAN: "türkisi rechti flanke"
+  BANNER_STRIPE_LEFT_GRAY: "graui rechti flanke"
+  BANNER_STRIPE_LEFT_GREEN: "grüeni rechti flanke"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "hellblaui rechti flanke"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "hellgraui rechti flanke"
+  BANNER_STRIPE_LEFT_LIME: "hellgrüeni rechti flanke"
+  BANNER_STRIPE_LEFT_MAGENTA: "magenta rechti flanke"
+  BANNER_STRIPE_LEFT_ORANGE: "orangi rechti flanke"
+  BANNER_STRIPE_LEFT_PINK: "rosa rechti flanke"
+  BANNER_STRIPE_LEFT_PURPLE: "violetti rechti flanke"
+  BANNER_STRIPE_LEFT_RED: "roti rechti flanke"
+  BANNER_STRIPE_LEFT_WHITE: "wissi rechti flanke"
+  BANNER_STRIPE_LEFT_YELLOW: "gelbi rechti flanke"
+  BANNER_STRIPE_MIDDLE_BLACK: "schwarze balke"
+  BANNER_STRIPE_MIDDLE_BLUE: "blaue balke"
+  BANNER_STRIPE_MIDDLE_BROWN: "brune balke"
+  BANNER_STRIPE_MIDDLE_CYAN: "türkise balke"
+  BANNER_STRIPE_MIDDLE_GRAY: "graue balke"
+  BANNER_STRIPE_MIDDLE_GREEN: "grüene balke"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "hellblaue balke"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "hellgraue balke"
+  BANNER_STRIPE_MIDDLE_LIME: "hellgrüene balke"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "magenta balke"
+  BANNER_STRIPE_MIDDLE_ORANGE: "orange balke"
+  BANNER_STRIPE_MIDDLE_PINK: "rosa balke"
+  BANNER_STRIPE_MIDDLE_PURPLE: "violette balke"
+  BANNER_STRIPE_MIDDLE_RED: "rote balke"
+  BANNER_STRIPE_MIDDLE_WHITE: "wisse balke"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gelbe balke"
+  BANNER_STRIPE_RIGHT_BLACK: "schwarzi linki flanke"
+  BANNER_STRIPE_RIGHT_BLUE: "blaui linki flanke"
+  BANNER_STRIPE_RIGHT_BROWN: "bruni linki flanke"
+  BANNER_STRIPE_RIGHT_CYAN: "türkisi linki flanke"
+  BANNER_STRIPE_RIGHT_GRAY: "graui linki flanke"
+  BANNER_STRIPE_RIGHT_GREEN: "grüeni linki flanke"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "hellblaui linki flanke"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "hellgraui linki flanke"
+  BANNER_STRIPE_RIGHT_LIME: "hellgrüeni linki flanke"
+  BANNER_STRIPE_RIGHT_MAGENTA: "magenta linki flanke"
+  BANNER_STRIPE_RIGHT_ORANGE: "orangi linki flanke"
+  BANNER_STRIPE_RIGHT_PINK: "rosa linki flanke"
+  BANNER_STRIPE_RIGHT_PURPLE: "violetti linki flanke"
+  BANNER_STRIPE_RIGHT_RED: "roti linki flanke"
+  BANNER_STRIPE_RIGHT_WHITE: "wissi linki flanke"
+  BANNER_STRIPE_RIGHT_YELLOW: "gelbi linki flanke"
+  BANNER_STRIPE_TOP_BLACK: "schwarzes bannerhaupt"
+  BANNER_STRIPE_TOP_BLUE: "blaus bannerhaupt"
+  BANNER_STRIPE_TOP_BROWN: "bruns bannerhaupt"
+  BANNER_STRIPE_TOP_CYAN: "türkises bannerhaupt"
+  BANNER_STRIPE_TOP_GRAY: "graus bannerhaupt"
+  BANNER_STRIPE_TOP_GREEN: "grüens bannerhaupt"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "hellblaus bannerhaupt"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "hellgraus bannerhaupt"
+  BANNER_STRIPE_TOP_LIME: "hellgrüens bannerhaupt"
+  BANNER_STRIPE_TOP_MAGENTA: "magenta bannerhaupt"
+  BANNER_STRIPE_TOP_ORANGE: "oranges bannerhaupt"
+  BANNER_STRIPE_TOP_PINK: "rosa bannerhaupt"
+  BANNER_STRIPE_TOP_PURPLE: "violetts bannerhaupt"
+  BANNER_STRIPE_TOP_RED: "rots bannerhaupt"
+  BANNER_STRIPE_TOP_WHITE: "wisses bannerhaupt"
+  BANNER_STRIPE_TOP_YELLOW: "gelbes bannerhaupt"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "schwarzi halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blaui halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "bruni halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "türkisi halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "graui halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "grüeni halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "hellblaui halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "hellgraui halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_LIME: "hellgrüeni halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "magenta halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "orangi halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_PINK: "rosa halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "violetti halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_RED: "roti halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "wissi halbi spitze"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gelbi halbi spitze"
+  BANNER_TRIANGLE_TOP_BLACK: "schwarzi gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_BLUE: "blaui gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_BROWN: "bruni gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_CYAN: "türkisi gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_GRAY: "graui gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_GREEN: "grüeni gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "hellblaui gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "hellgraui gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_LIME: "hellgrüeni gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_MAGENTA: "magenta gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_ORANGE: "orangi gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_PINK: "rosa gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_PURPLE: "violetti gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_RED: "roti gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_WHITE: "wissi gstürzti halbi spitze"
+  BANNER_TRIANGLE_TOP_YELLOW: "gelbi gstürzti halbi spitze"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "schwarze gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blaue gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brune gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "türkise gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "graue gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "grüene gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "hellblaue gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "hellgraue gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_LIME: "hellgrüene gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "magenta gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "orange gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_PINK: "rosa gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "violette gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_RED: "rote gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "wisse gspickelte bannerfuess"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gelbe gspickelte bannerfuess"
+  BANNER_TRIANGLES_TOP_BLACK: "schwarzes gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_BLUE: "blaus gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_BROWN: "bruns gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_CYAN: "türkises gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_GRAY: "graus gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_GREEN: "grüens gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "hellblaus gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "hellgraus gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_LIME: "hellgrüens gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_MAGENTA: "magenta gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_ORANGE: "oranges gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_PINK: "rosa gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_PURPLE: "violetts gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_RED: "rots gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_WHITE: "wisses gspickeltes bannerhaupt"
+  BANNER_TRIANGLES_TOP_YELLOW: "gelbes gspickeltes bannerhaupt"
+  BARREL: "fass"
+  BARRIER: "barriere"
+  BASALT: "basalt"
+  BEACON: "lüchtfüür"
+  BEACON_PRIMARY: "primäri chraft"
+  BEACON_SECONDARY: "sekundäri chraft"
+  BED_NO_SLEEP: "du chasch nur ide nacht oder während enem gwitter schlofe"
+  BED_NOT_SAFE: "du chasch jetzt nöd schlofe es sind monster ide nöchi"
+  BED_OBSTRUCTED: "das bett isch blockiert"
+  BED_OCCUPIED: "das bett isch belegt"
+  BED_TOO_FAR_AWAY: "du chasch jetzt nöd schlofe das bett isch z'wit weg"
+  BEDROCK: "grundgstei"
+  BEE_NEST: "bienenest"
+  BEEHIVE: "bienestock"
+  BEETROOTS: "rande"
+  BELL: "glocke"
+  BIG_DRIPLEAF: "grosses tropfblatt"
+  BIG_DRIPLEAF_STEM: "grosse tropfblattstiel"
+  BIRCH_BUTTON: "birkeholzchnopf"
+  BIRCH_DOOR: "birkeholztür"
+  BIRCH_FENCE: "birkeholzhaag"
+  BIRCH_FENCE_GATE: "birkeholzhaagtor"
+  BIRCH_HANGING_SIGN: "birkeholzhängeschild"
+  BIRCH_LEAVES: "birkelaub"
+  BIRCH_LOG: "birkestamm"
+  BIRCH_PLANKS: "birkeholzbretter"
+  BIRCH_PRESSURE_PLATE: "birkeholzdruckplatte"
+  BIRCH_SAPLING: "birkesetzling"
+  BIRCH_SIGN: "birkeholzschild"
+  BIRCH_SLAB: "birkeholzstufe"
+  BIRCH_STAIRS: "birkeholzstäge"
+  BIRCH_TRAPDOOR: "birkeholzfalltür"
+  BIRCH_WALL_HANGING_SIGN: "birkeholzwandhängeschild"
+  BIRCH_WALL_SIGN: "birkeholzwandschild"
+  BIRCH_WOOD: "birkeholz"
+  BLACK_BANNER: "schwarzes banner"
+  BLACK_BED: "schwarzes bett"
+  BLACK_CANDLE: "schwarzi cherze"
+  BLACK_CANDLE_CAKE: "chueche mit schwarzer cherze"
+  BLACK_CARPET: "schwarze teppich"
+  BLACK_CONCRETE: "schwarze beton"
+  BLACK_CONCRETE_POWDER: "schwarze trockebeton"
+  BLACK_GLAZED_TERRACOTTA: "schwarz glasierte keramik"
+  BLACK_SHULKER_BOX: "schwarzi shulker-chiste"
+  BLACK_STAINED_GLASS: "schwarzes glas"
+  BLACK_STAINED_GLASS_PANE: "schwarzi glasschiibe"
+  BLACK_TERRACOTTA: "schwarze keramik"
+  BLACK_WOOL: "schwarzi wulle"
+  BLACKSTONE: "schwarzstei"
+  BLACKSTONE_SLAB: "schwarzsteistufe"
+  BLACKSTONE_STAIRS: "schwarzsteistäge"
+  BLACKSTONE_WALL: "schwarzsteimur"
+  BLAST_FURNACE: "schmelzofe"
+  BLUE_BANNER: "blaus banner"
+  BLUE_BED: "blaus bett"
+  BLUE_CANDLE: "blaui cherze"
+  BLUE_CANDLE_CAKE: "chueche mit blauer cherze"
+  BLUE_CARPET: "blaue teppich"
+  BLUE_CONCRETE: "blaue beton"
+  BLUE_CONCRETE_POWDER: "blaue trockebeton"
+  BLUE_GLAZED_TERRACOTTA: "blaue glasierte keramik"
+  BLUE_ICE: "blauiis"
+  BLUE_ORCHID: "blaui orchidee"
+  BLUE_SHULKER_BOX: "blaui shulker-chiste"
+  BLUE_STAINED_GLASS: "blaus glas"
+  BLUE_STAINED_GLASS_PANE: "blaui glasschiibe"
+  BLUE_TERRACOTTA: "blaue keramik"
+  BLUE_WOOL: "blaui wulle"
+  BONE_BLOCK: "chnocheblock"
+  BOOKSHELF: "büecherregal"
+  BRAIN_CORAL: "hirnkoralle"
+  BRAIN_CORAL_BLOCK: "hirnkoralleblock"
+  BRAIN_CORAL_FAN: "hirnkorallefächer"
+  BRAIN_CORAL_WALL_FAN: "hirnkorallewandfächer"
+  BREWING_STAND: "braustand"
+  BRICK_SLAB: "ziegelstufe"
+  BRICK_STAIRS: "ziegelstäge"
+  BRICK_WALL: "ziegelsteimur"
+  BRICKS: "ziegelstei"
+  BROWN_BANNER: "bruns banner"
+  BROWN_BED: "bruns bett"
+  BROWN_CANDLE: "bruni cherze"
+  BROWN_CANDLE_CAKE: "chueche mit bruner cherze"
+  BROWN_CARPET: "brune teppich"
+  BROWN_CONCRETE: "brune beton"
+  BROWN_CONCRETE_POWDER: "brune trockebeton"
+  BROWN_GLAZED_TERRACOTTA: "brune glasierte keramik"
+  BROWN_MUSHROOM: "brune pilz"
+  BROWN_MUSHROOM_BLOCK: "brune pilzblock"
+  BROWN_SHULKER_BOX: "bruni shulker-chiste"
+  BROWN_STAINED_GLASS: "bruns glas"
+  BROWN_STAINED_GLASS_PANE: "bruni glasschiibe"
+  BROWN_TERRACOTTA: "brune keramik"
+  BROWN_WOOL: "bruni wulle"
+  BUBBLE_COLUMN: "blosesüüle"
+  BUBBLE_CORAL: "blosekoralle"
+  BUBBLE_CORAL_BLOCK: "blosekoralleblock"
+  BUBBLE_CORAL_FAN: "blosekorallefächer"
+  BUBBLE_CORAL_WALL_FAN: "blosekorallewandfächer"
+  BUDDING_AMETHYST: "amethystknospeblock"
+  CACTUS: "kaktus"
+  CAKE: "chueche"
+  CALCITE: "kalzit"
+  CALIBRATED_SCULK_SENSOR: "kalibrierte sculk-sensor"
+  CAMPFIRE: "lagerfüür"
+  CANDLE: "cherze"
+  CANDLE_CAKE: "cherzechueche"
+  CARROTS: "rüebli"
+  CARTOGRAPHY_TABLE: "chartetisch"
+  CARVED_PUMPKIN: "gschnitzte chürbis"
+  CAULDRON: "chessel"
+  CAVE_AIR: "höhleluft"
+  CAVE_VINES: "höhleranke"
+  CAVE_VINES_PLANT: "höhlerankepflanze"
+  CHAIN: "chette"
+  CHAIN_COMMAND_BLOCK: "kette-befehlsblock"
+  CHERRY_BUTTON: "chriesiholzchnopf"
+  CHERRY_DOOR: "chriesiholztür"
+  CHERRY_FENCE: "chriesiholzhaag"
+  CHERRY_FENCE_GATE: "chriesiholzhaagtor"
+  CHERRY_HANGING_SIGN: "chriesiholzhängeschild"
+  CHERRY_LEAVES: "chriesilaub"
+  CHERRY_LOG: "chriesistamm"
+  CHERRY_PLANKS: "chriesiholzbretter"
+  CHERRY_PRESSURE_PLATE: "chriesiholzdruckplatte"
+  CHERRY_SAPLING: "chriesisetzling"
+  CHERRY_SIGN: "chriesiholzschild"
+  CHERRY_SLAB: "chriesiholzstufe"
+  CHERRY_STAIRS: "chriesiholzstäge"
+  CHERRY_TRAPDOOR: "chriesiholzfalltür"
+  CHERRY_WALL_HANGING_SIGN: "chriesiholzwandhängeschild"
+  CHERRY_WALL_SIGN: "chriesiholzwandschild"
+  CHERRY_WOOD: "chriesiholz"
+  CHEST: "chiste"
+  CHIPPED_ANVIL: "agschlagene amboss"
+  CHISELED_BOOKSHELF: "garbeitets büecherregal"
+  CHISELED_COPPER: "gmeisslete chupferblock"
+  CHISELED_DEEPSLATE: "gmeisslete tüfschiefer"
+  CHISELED_NETHER_BRICKS: "gmeisslete netherziegel"
+  CHISELED_POLISHED_BLACKSTONE: "gmeisslete polierte schwarzstei"
+  CHISELED_QUARTZ_BLOCK: "gmeisslete quarzblock"
+  CHISELED_RED_SANDSTONE: "gmeisslete rote sandstei"
+  CHISELED_SANDSTONE: "gmeisslete sandstei"
+  CHISELED_STONE_BRICKS: "gmeisslete steiziegel"
+  CHISELED_TUFF: "gmeisslete tuffstei"
+  CHISELED_TUFF_BRICKS: "gmeisslete tuffsteiziegel"
+  CHORUS_FLOWER: "chorusblüete"
+  CHORUS_PLANT: "choruspflanze"
+  CLAY: "ton"
+  COAL_BLOCK: "steicholeblock"
+  COAL_ORE: "steicholeerz"
+  COARSE_DIRT: "grobi erde"
+  COBBLED_DEEPSLATE: "bruchtüfschiefer"
+  COBBLED_DEEPSLATE_SLAB: "bruchtüfschieferstufe"
+  COBBLED_DEEPSLATE_STAIRS: "bruchtüfschieferstäge"
+  COBBLED_DEEPSLATE_WALL: "bruchtüfschiefermur"
+  COBBLESTONE: "bruchstei"
+  COBBLESTONE_SLAB: "bruchsteistufe"
+  COBBLESTONE_STAIRS: "brochsteistäge"
+  COBBLESTONE_WALL: "bruchsteimur"
+  COBWEB: "spinnenetz"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "befehlsblock"
+  COMPARATOR: "redstone-komparator"
+  COMPOSTER: "komposter"
+  CONDUIT: "aquisator"
+  COPPER_BLOCK: "chupferblock"
+  COPPER_BULB: "chupferlüchte"
+  COPPER_DOOR: "chupfertür"
+  COPPER_GRATE: "chupferrost"
+  COPPER_ORE: "chupfererz"
+  COPPER_TRAPDOOR: "chupferfalltür"
+  CORNFLOWER: "chornblueme"
+  CRACKED_DEEPSLATE_BRICKS: "rissigi tüfschieferziegel"
+  CRACKED_DEEPSLATE_TILES: "rissigi tüfschieferfliese"
+  CRACKED_NETHER_BRICKS: "rissigi netherziegel"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "rissigi polierti schwarzsteiziegel"
+  CRACKED_STONE_BRICKS: "rissige steiziegel"
+  CRAFTER: "werker"
+  CRAFTING_TABLE: "werkbank"
+  CREEPER_HEAD: "creeperchopf"
+  CREEPER_WALL_HEAD: "creeper-wandchopf"
+  CRIMSON_BUTTON: "karmesinholzchnopf"
+  CRIMSON_DOOR: "karmesinholztür"
+  CRIMSON_FENCE: "karmesinholzhaag"
+  CRIMSON_FENCE_GATE: "karmesinholzhaagtor"
+  CRIMSON_FUNGUS: "karmesinpilz"
+  CRIMSON_HANGING_SIGN: "karmesinholzhängeschild"
+  CRIMSON_HYPHAE: "karmesinhyphe"
+  CRIMSON_NYLIUM: "karmesin-nezel"
+  CRIMSON_PLANKS: "karmesinholzbretter"
+  CRIMSON_PRESSURE_PLATE: "karmesinholzdruckplatte"
+  CRIMSON_ROOTS: "karmesinwurzle"
+  CRIMSON_SIGN: "karmesinholzschild"
+  CRIMSON_SLAB: "karmesinholzstufe"
+  CRIMSON_STAIRS: "karmesinholzstäge"
+  CRIMSON_STEM: "karmesinstiel"
+  CRIMSON_TRAPDOOR: "karmesinholzfalltür"
+  CRIMSON_WALL_HANGING_SIGN: "karmesinholzwandhängeschild"
+  CRIMSON_WALL_SIGN: "karmesinholzwandschild"
+  CRYING_OBSIDIAN: "brüelende obsidian"
+  CUT_COPPER: "gschnittene chupferblock"
+  CUT_COPPER_SLAB: "gschnitteni chupferstufe"
+  CUT_COPPER_STAIRS: "gschnitteni chupferstäge"
+  CUT_RED_SANDSTONE: "gschnittene rote sandstei"
+  CUT_RED_SANDSTONE_SLAB: "gschnitteni roti sandsteistufe"
+  CUT_SANDSTONE: "gschnittene sandstei"
+  CUT_SANDSTONE_SLAB: "gschnitteni sandsteistufe"
+  CYAN_BANNER: "türkises banner"
+  CYAN_BED: "türkises bett"
+  CYAN_CANDLE: "türkisi cherze"
+  CYAN_CANDLE_CAKE: "chueche mit hellblauer cherze"
+  CYAN_CARPET: "türkise teppich"
+  CYAN_CONCRETE: "türkise beton"
+  CYAN_CONCRETE_POWDER: "türkise trockebeton"
+  CYAN_GLAZED_TERRACOTTA: "türkise glasierte keramik"
+  CYAN_SHULKER_BOX: "türkisi shulker-chiste"
+  CYAN_STAINED_GLASS: "türkises glas"
+  CYAN_STAINED_GLASS_PANE: "türkisi glasschiibe"
+  CYAN_TERRACOTTA: "türkise keramik"
+  CYAN_WOOL: "türkisi wulle"
+  DAMAGED_ANVIL: "beschädigte amboss"
+  DANDELION: "löwezah"
+  DARK_OAK_BUTTON: "schwarzeicheholzchnopf"
+  DARK_OAK_DOOR: "schwarzeicheholztür"
+  DARK_OAK_FENCE: "schwarzeicheholzhaag"
+  DARK_OAK_FENCE_GATE: "schwarzeicheholzhaagtor"
+  DARK_OAK_HANGING_SIGN: "schwarzeicheholzhängeschild"
+  DARK_OAK_LEAVES: "schwarzeichelaub"
+  DARK_OAK_LOG: "schwarzeichestamm"
+  DARK_OAK_PLANKS: "schwarzeicheholzbretter"
+  DARK_OAK_PRESSURE_PLATE: "schwarzeicheholzdruckplatte"
+  DARK_OAK_SAPLING: "schwarzeichesetzling"
+  DARK_OAK_SIGN: "schwarzeicheholzschild"
+  DARK_OAK_SLAB: "schwarzeicheholzstufe"
+  DARK_OAK_STAIRS: "schwarzeichestäge"
+  DARK_OAK_TRAPDOOR: "schwarzeicheholzfalltür"
+  DARK_OAK_WALL_HANGING_SIGN: "schwarzeicheholzwandhängeschild"
+  DARK_OAK_WALL_SIGN: "schwarzeicheholzwandschild"
+  DARK_OAK_WOOD: "schwarzeicheholz"
+  DARK_PRISMARINE: "dunkle prismarin"
+  DARK_PRISMARINE_SLAB: "dunkli prismarinstufe"
+  DARK_PRISMARINE_STAIRS: "dunkli prismarinstäge"
+  DAYLIGHT_DETECTOR: "tageslichtsensor"
+  DEAD_BRAIN_CORAL: "abgstorbeni hirnkoralle"
+  DEAD_BRAIN_CORAL_BLOCK: "abgestorbene hirnkoralleblock"
+  DEAD_BRAIN_CORAL_FAN: "abgstorbeni hirnkorallefächer"
+  DEAD_BRAIN_CORAL_WALL_FAN: "abgstorbeni hirnkorallewandfächer"
+  DEAD_BUBBLE_CORAL: "abgstorbeni blosekoralle"
+  DEAD_BUBBLE_CORAL_BLOCK: "abgestorbene blosekoralleblock"
+  DEAD_BUBBLE_CORAL_FAN: "abgstorbeni blosekorallefächer"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "abgstorbeni blasekorallewandfächer"
+  DEAD_BUSH: "tote busch"
+  DEAD_FIRE_CORAL: "abgstorbeni füürkoralle"
+  DEAD_FIRE_CORAL_BLOCK: "abgestorbene füürkoralleblock"
+  DEAD_FIRE_CORAL_FAN: "abgstorbeni füurkorallefächer"
+  DEAD_FIRE_CORAL_WALL_FAN: "abgstorbeni füürkorallewandfächer"
+  DEAD_HORN_CORAL: "abgstorbeni geweihkoralle"
+  DEAD_HORN_CORAL_BLOCK: "abgestorbene gweihkoralleblock"
+  DEAD_HORN_CORAL_FAN: "abgstorbeni geweihkorallefächer"
+  DEAD_HORN_CORAL_WALL_FAN: "abgstorbeni geweihkorallewandfächer"
+  DEAD_TUBE_CORAL: "abgstorbeni orgelkoralle"
+  DEAD_TUBE_CORAL_BLOCK: "abgestorbene orgelkoralleblock"
+  DEAD_TUBE_CORAL_FAN: "abgstorbeni orgelkorallefächer"
+  DEAD_TUBE_CORAL_WALL_FAN: "abgstorbeni orgelkorallwandfächer"
+  DECORATED_POT: "verzierte chrueg"
+  DEEPSLATE: "tüfschiefer"
+  DEEPSLATE_BRICK_SLAB: "tüfschieferziegelstufe"
+  DEEPSLATE_BRICK_STAIRS: "tüfschieferziegelstäge"
+  DEEPSLATE_BRICK_WALL: "tüfschieferziegelmur"
+  DEEPSLATE_BRICKS: "tüfschieferziegel"
+  DEEPSLATE_COAL_ORE: "tüfschiefer-steicholeerz"
+  DEEPSLATE_COPPER_ORE: "tüfschiefer-chupfererz"
+  DEEPSLATE_DIAMOND_ORE: "tüfschiefer-diamanterz"
+  DEEPSLATE_EMERALD_ORE: "tüfschiefer-smaragderz"
+  DEEPSLATE_GOLD_ORE: "tüfschiefer-golderz"
+  DEEPSLATE_IRON_ORE: "tüfschiefer-iseerz"
+  DEEPSLATE_LAPIS_ORE: "tüfschiefer-lapislazulierz"
+  DEEPSLATE_REDSTONE_ORE: "tüfschiefer-redstone-erz"
+  DEEPSLATE_TILE_SLAB: "tüfschieferfliesestufe"
+  DEEPSLATE_TILE_STAIRS: "tüfschieferfliesestäge"
+  DEEPSLATE_TILE_WALL: "tüfschieferfliesemur"
+  DEEPSLATE_TILES: "tüfschieferfliese"
+  DETECTOR_RAIL: "sensorschine"
+  DIAMOND_BLOCK: "diamantblock"
+  DIAMOND_ORE: "diamanterz"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dioritstufe"
+  DIORITE_STAIRS: "dioritstäge"
+  DIORITE_WALL: "dioritmur"
+  DIRT: "erde"
+  DIRT_PATH: "trampelpfad"
+  DISPENSER: "werfer"
+  DRAGON_EGG: "dracheei"
+  DRAGON_HEAD: "drachechopf"
+  DRAGON_WALL_HEAD: "drache-wandchopf"
+  DRIED_KELP_BLOCK: "tröchnete seetangblock"
+  DRIPSTONE_BLOCK: "tropfsteiblock"
+  DROPPER: "spender"
+  EMERALD_BLOCK: "smaragdblock"
+  EMERALD_ORE: "smaragderz"
+  ENCHANTING_TABLE: "zaubertisch"
+  END_GATEWAY: "endtransitportal"
+  END_PORTAL: "endportal"
+  END_PORTAL_FRAME: "endportalrahme"
+  END_ROD: "endstab"
+  END_STONE: "endstei"
+  END_STONE_BRICK_SLAB: "endsteiziegelstufe"
+  END_STONE_BRICK_STAIRS: "endsteiziegelstäge"
+  END_STONE_BRICK_WALL: "endsteiziegelmur"
+  END_STONE_BRICKS: "endsteiziegel"
+  ENDER_CHEST: "enderchiste"
+  EXPOSED_CHISELED_COPPER: "agloffene gmeisslete chupferblock"
+  EXPOSED_COPPER: "agloffene chupferblock"
+  EXPOSED_COPPER_BULB: "agloffeni chupferlüchte"
+  EXPOSED_COPPER_DOOR: "agloffeni chupfertür"
+  EXPOSED_COPPER_GRATE: "agloffens chupferrost"
+  EXPOSED_COPPER_TRAPDOOR: "agloffeni chupferfalltür"
+  EXPOSED_CUT_COPPER: "agloffene gschnittene chupferblock"
+  EXPOSED_CUT_COPPER_SLAB: "agloffeni gschnitteni chupferstufe"
+  EXPOSED_CUT_COPPER_STAIRS: "agloffeni gschnitteni chupferstäge"
+  FARMLAND: "ackerbode"
+  FERN: "farn"
+  FIRE: "füür"
+  FIRE_CORAL: "füürkoralle"
+  FIRE_CORAL_BLOCK: "füürkoralleblock"
+  FIRE_CORAL_FAN: "füürkorallefächer"
+  FIRE_CORAL_WALL_FAN: "füürkorallewandfächer"
+  FLETCHING_TABLE: "bognertisch"
+  FLOWER_POT: "bluemetopf"
+  FLOWERING_AZALEA: "blühende azalee"
+  FLOWERING_AZALEA_LEAVES: "blühendes azaleelaub"
+  FROGSPAWN: "froschlaich"
+  FROSTED_ICE: "brüchigs iis"
+  FURNACE: "ofe"
+  GILDED_BLACKSTONE: "golddurchzogene schwarzstei"
+  GLASS: "glas"
+  GLASS_PANE: "glasschiibe"
+  GLOW_LICHEN: "lüchtflechte"
+  GLOWSTONE: "lüchtstei"
+  GOLD_BLOCK: "goldblock"
+  GOLD_ORE: "golderz"
+  GRANITE: "granit"
+  GRANITE_SLAB: "granitstufe"
+  GRANITE_STAIRS: "granitstäge"
+  GRANITE_WALL: "granitmur"
+  GRASS: "gras"
+  GRASS_BLOCK: "grasblock"
+  GRAVEL: "chis"
+  GRAY_BANNER: "graus banner"
+  GRAY_BED: "graus bett"
+  GRAY_CANDLE: "graui cherze"
+  GRAY_CANDLE_CAKE: "chueche mit grauer cherze"
+  GRAY_CARPET: "graue teppich"
+  GRAY_CONCRETE: "graue beton"
+  GRAY_CONCRETE_POWDER: "graue trockebeton"
+  GRAY_GLAZED_TERRACOTTA: "grau glasierte keramik"
+  GRAY_SHULKER_BOX: "graui shulker-chiste"
+  GRAY_STAINED_GLASS: "graus glas"
+  GRAY_STAINED_GLASS_PANE: "graui glasschiibe"
+  GRAY_TERRACOTTA: "graue keramik"
+  GRAY_WOOL: "graui wulle"
+  GREEN_BANNER: "grüens banner"
+  GREEN_BED: "grüens bett"
+  GREEN_CANDLE: "grüeni cherze"
+  GREEN_CANDLE_CAKE: "chueche mit grüener cherze"
+  GREEN_CARPET: "grüene teppich"
+  GREEN_CONCRETE: "grüene beton"
+  GREEN_CONCRETE_POWDER: "grüene trockebeton"
+  GREEN_GLAZED_TERRACOTTA: "grüene glasierte keramik"
+  GREEN_SHULKER_BOX: "grüeni shulker-chiste"
+  GREEN_STAINED_GLASS: "grüens glas"
+  GREEN_STAINED_GLASS_PANE: "grüeni glasschiibe"
+  GREEN_TERRACOTTA: "grüene keramik"
+  GREEN_WOOL: "grüeni wulle"
+  GRINDSTONE: "schlifstei"
+  HANGING_ROOTS: "hängendi wurzle"
+  HAY_BLOCK: "heuballe"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "grobwägplatte"
+  HONEY_BLOCK: "honigblock"
+  HONEYCOMB_BLOCK: "honigwabeblock"
+  HOPPER: "trichter"
+  HORN_CORAL: "gweihkoralle"
+  HORN_CORAL_BLOCK: "gweihkoralleblock"
+  HORN_CORAL_FAN: "gweihkorallefächer"
+  HORN_CORAL_WALL_FAN: "geweihkorallwandfächer"
+  ICE: "iis"
+  INFESTED_CHISELED_STONE_BRICKS: "befallene gmeisslete steiziegel"
+  INFESTED_COBBLESTONE: "infizierte buchstei"
+  INFESTED_CRACKED_STONE_BRICKS: "infizierte rissige steiziegel"
+  INFESTED_DEEPSLATE: "befallene tüfschiefer"
+  INFESTED_MOSSY_STONE_BRICKS: "infizierte bemooste steiziegel"
+  INFESTED_STONE: "infizierte stei"
+  INFESTED_STONE_BRICKS: "infizierte steiziegel"
+  IRON_BARS: "isegitter"
+  IRON_BLOCK: "iseblock"
+  IRON_DOOR: "isetür"
+  IRON_ORE: "iseerz"
+  IRON_TRAPDOOR: "isefalltür"
+  JACK_O_LANTERN: "chürbislaterne"
+  JIGSAW: "verbundblock"
+  JUKEBOX: "plattespieler"
+  JUNGLE_BUTTON: "tropeholzchnopf"
+  JUNGLE_DOOR: "tropeholztür"
+  JUNGLE_FENCE: "tropeholzhaag"
+  JUNGLE_FENCE_GATE: "tropeholzhaagtor"
+  JUNGLE_HANGING_SIGN: "tropeholzhängeschild"
+  JUNGLE_LEAVES: "tropelaub"
+  JUNGLE_LOG: "tropestamm"
+  JUNGLE_PLANKS: "tropeholzbretter"
+  JUNGLE_PRESSURE_PLATE: "tropeholzdruckplatte"
+  JUNGLE_SAPLING: "tropesetzling"
+  JUNGLE_SIGN: "tropeholzschild"
+  JUNGLE_SLAB: "tropeholzstufe"
+  JUNGLE_STAIRS: "tropeholzstäge"
+  JUNGLE_TRAPDOOR: "tropeholzfalltür"
+  JUNGLE_WALL_HANGING_SIGN: "tropeholzwandhängeschild"
+  JUNGLE_WALL_SIGN: "tropeholzwandschild"
+  JUNGLE_WOOD: "tropeholz"
+  KELP: "seetang"
+  KELP_PLANT: "seetangstängel"
+  LADDER: "leitere"
+  LANTERN: "laterne"
+  LAPIS_BLOCK: "lapislazuliblock"
+  LAPIS_ORE: "lapislazulierz"
+  LARGE_AMETHYST_BUD: "grossi amethystknospe"
+  LARGE_FERN: "grosse farn"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lavachessel"
+  LECTERN: "lesepult"
+  LEVER: "hebel"
+  LIGHT: "liechtblock"
+  LIGHT_BLUE_BANNER: "hellblaus banner"
+  LIGHT_BLUE_BED: "hellblaus bett"
+  LIGHT_BLUE_CANDLE: "hellblaui cherze"
+  LIGHT_BLUE_CANDLE_CAKE: "chueche mit hellblauer cherze"
+  LIGHT_BLUE_CARPET: "hellblaue teppich"
+  LIGHT_BLUE_CONCRETE: "hellblaue beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "hellblaue trockebeton"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "hellblaue glasierte keramik"
+  LIGHT_BLUE_SHULKER_BOX: "hellblaui shulker-chiste"
+  LIGHT_BLUE_STAINED_GLASS: "hellblaus glas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "hellblaui glasschiibe"
+  LIGHT_BLUE_TERRACOTTA: "hellblaue keramik"
+  LIGHT_BLUE_WOOL: "hellblaui wulle"
+  LIGHT_GRAY_BANNER: "hellgrüens banner"
+  LIGHT_GRAY_BED: "hellgraus bett"
+  LIGHT_GRAY_CANDLE: "hellgraui cherze"
+  LIGHT_GRAY_CANDLE_CAKE: "chueche mit hellgrauer cherze"
+  LIGHT_GRAY_CARPET: "hellgraue teppich"
+  LIGHT_GRAY_CONCRETE: "hellgraue beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "hellgraue trockebeton"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "hellgrau glasierte keramik"
+  LIGHT_GRAY_SHULKER_BOX: "hellgraui shulker-chiste"
+  LIGHT_GRAY_STAINED_GLASS: "hellgraus glas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "hellgraui glasschiibe"
+  LIGHT_GRAY_TERRACOTTA: "hellgraue keramik"
+  LIGHT_GRAY_WOOL: "hellgraui wulle"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "feinwägplatte"
+  LIGHTNING_ROD: "blitzableiter"
+  LILAC: "flieder"
+  LILY_OF_THE_VALLEY: "maiglöckli"
+  LILY_PAD: "seeroseblatt"
+  LIME_BANNER: "hellgrüens banner"
+  LIME_BED: "hellgrüens bett"
+  LIME_CANDLE: "hellgrüeni cherze"
+  LIME_CANDLE_CAKE: "chueche mit hellgrüener cherze"
+  LIME_CARPET: "hellgrüene teppich"
+  LIME_CONCRETE: "hellgrüene beton"
+  LIME_CONCRETE_POWDER: "hellgrüene trockebeton"
+  LIME_GLAZED_TERRACOTTA: "hellgrüene glasierte keramik"
+  LIME_SHULKER_BOX: "hellgrüeni shulker-chiste"
+  LIME_STAINED_GLASS: "hellgrüens glas"
+  LIME_STAINED_GLASS_PANE: "hellgrüeni glasschiibe"
+  LIME_TERRACOTTA: "hellgrüene keramik"
+  LIME_WOOL: "hellgrüeni wulle"
+  LODESTONE: "leitstei"
+  LOOM: "webstuehl"
+  MAGENTA_BANNER: "magenta banner"
+  MAGENTA_BED: "magenta bett"
+  MAGENTA_CANDLE: "magenta cherze"
+  MAGENTA_CANDLE_CAKE: "chueche mit magenta cherze"
+  MAGENTA_CARPET: "magenta teppich"
+  MAGENTA_CONCRETE: "magenta beton"
+  MAGENTA_CONCRETE_POWDER: "magenta trockebeton"
+  MAGENTA_GLAZED_TERRACOTTA: "magenta glasierte keramik"
+  MAGENTA_SHULKER_BOX: "magenta shulker-chiste"
+  MAGENTA_STAINED_GLASS: "magenta glas"
+  MAGENTA_STAINED_GLASS_PANE: "magenta glasschiibe"
+  MAGENTA_TERRACOTTA: "magenta keramik"
+  MAGENTA_WOOL: "magenta wulle"
+  MAGMA_BLOCK: "magmablock"
+  MANGROVE_BUTTON: "mangroveholzchnopf"
+  MANGROVE_DOOR: "mangroveholztür"
+  MANGROVE_FENCE: "mangroveholzhaag"
+  MANGROVE_FENCE_GATE: "mangroveholzhaagtor"
+  MANGROVE_HANGING_SIGN: "mangroveholzhängeschild"
+  MANGROVE_LEAVES: "mangrovelaub"
+  MANGROVE_LOG: "mangrovestamm"
+  MANGROVE_PLANKS: "mangroveholzbretter"
+  MANGROVE_PRESSURE_PLATE: "mangroveholzdruckplatte"
+  MANGROVE_PROPAGULE: "mangrove-keimling"
+  MANGROVE_ROOTS: "mangrovewurzle"
+  MANGROVE_SIGN: "mangroveholzschild"
+  MANGROVE_SLAB: "mangroveholzstufe"
+  MANGROVE_STAIRS: "mangroveholzstäge"
+  MANGROVE_TRAPDOOR: "mangroveholzfalltür"
+  MANGROVE_WALL_HANGING_SIGN: "mangroveholzwandhängeschild"
+  MANGROVE_WALL_SIGN: "mangroveholzwandschild"
+  MANGROVE_WOOD: "mangroveholz"
+  MEDIUM_AMETHYST_BUD: "mittleri amethystknospe"
+  MELON: "melone"
+  MELON_STEM: "melonepflanze"
+  MOSS_BLOCK: "moosblock"
+  MOSS_CARPET: "moosteppich"
+  MOSSY_COBBLESTONE: "bemooste bruchstei"
+  MOSSY_COBBLESTONE_SLAB: "bemoosti bruchsteistufe"
+  MOSSY_COBBLESTONE_STAIRS: "bemoosti bruchsteitstäge"
+  MOSSY_COBBLESTONE_WALL: "bemoosti bruchsteimur"
+  MOSSY_STONE_BRICK_SLAB: "bemoosti steiziegelstufe"
+  MOSSY_STONE_BRICK_STAIRS: "bemoosti steiziegelstäge"
+  MOSSY_STONE_BRICK_WALL: "bemoosti steiziegelmur"
+  MOSSY_STONE_BRICKS: "bemooste steiziegel"
+  MOVING_PISTON: "bewegte block"
+  MUD: "schlamm"
+  MUD_BRICK_SLAB: "schlammziegelstufe"
+  MUD_BRICK_STAIRS: "schlammziegelstäge"
+  MUD_BRICK_WALL: "schlammziegelmuur"
+  MUD_BRICKS: "schlammziegel"
+  MUDDY_MANGROVE_ROOTS: "schlammigi mangrovewurzle"
+  MUSHROOM_STEM: "pilzstiel"
+  MYCELIUM: "myzel"
+  NETHER_BRICK_FENCE: "netherziegelhaag"
+  NETHER_BRICK_SLAB: "netherziegelstufe"
+  NETHER_BRICK_STAIRS: "netherziegelstäge"
+  NETHER_BRICK_WALL: "netherziegelmur"
+  NETHER_BRICKS: "netherziegel"
+  NETHER_GOLD_ORE: "nethergolderz"
+  NETHER_PORTAL: "netherportal"
+  NETHER_QUARTZ_ORE: "netherquarzerz"
+  NETHER_SPROUTS: "nethersprosse"
+  NETHER_WART: "netherwarze"
+  NETHER_WART_BLOCK: "netherwarzeblock"
+  NETHERITE_BLOCK: "netheritblock"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "noteblock"
+  OAK_BUTTON: "eicheholzchnopf"
+  OAK_DOOR: "eicheholztür"
+  OAK_FENCE: "eicheholzhaag"
+  OAK_FENCE_GATE: "eicheholzhaagtor"
+  OAK_HANGING_SIGN: "eicheholzhängeschild"
+  OAK_LEAVES: "eichelaub"
+  OAK_LOG: "eichestamm"
+  OAK_PLANKS: "eicheholzbretter"
+  OAK_PRESSURE_PLATE: "eicheholzdruckplatte"
+  OAK_SAPLING: "eichesetzling"
+  OAK_SIGN: "eicheholzschild"
+  OAK_SLAB: "eicheholzstufe"
+  OAK_STAIRS: "eicheholzstäge"
+  OAK_TRAPDOOR: "eicheholzfalltür"
+  OAK_WALL_HANGING_SIGN: "eicheholzwandhängeschild"
+  OAK_WALL_SIGN: "eicheholzwandschild"
+  OAK_WOOD: "eicheholz"
+  OBSERVER: "beobachter"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "ockerni froschlampe"
+  OMINOUS_BANNER: "ominöses banner"
+  ORANGE_BANNER: "oranges banner"
+  ORANGE_BED: "oranges bett"
+  ORANGE_CANDLE: "orangi cherze"
+  ORANGE_CANDLE_CAKE: "chueche mit orangener cherze"
+  ORANGE_CARPET: "orange teppich"
+  ORANGE_CONCRETE: "orange beton"
+  ORANGE_CONCRETE_POWDER: "orange trockebeton"
+  ORANGE_GLAZED_TERRACOTTA: "orange glasierte keramik"
+  ORANGE_SHULKER_BOX: "orangi shulker-chiste"
+  ORANGE_STAINED_GLASS: "oranges glas"
+  ORANGE_STAINED_GLASS_PANE: "orangi glasschiibe"
+  ORANGE_TERRACOTTA: "orange keramik"
+  ORANGE_TULIP: "orangi tulpe"
+  ORANGE_WOOL: "orangi wulle"
+  OXEYE_DAISY: "margeritli"
+  OXIDIZED_CHISELED_COPPER: "oxidierte gmeisslete chupferblock"
+  OXIDIZED_COPPER: "oxidierte chupferblock"
+  OXIDIZED_COPPER_BULB: "oxidierti chupferlüchti"
+  OXIDIZED_COPPER_DOOR: "oxidierti chupfertür"
+  OXIDIZED_COPPER_GRATE: "oxidierts chupferrost"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidierti chupferfalltür"
+  OXIDIZED_CUT_COPPER: "oxidierte gschnittene chupferblock"
+  OXIDIZED_CUT_COPPER_SLAB: "oxidierti gschnitteni chupferstufe"
+  OXIDIZED_CUT_COPPER_STAIRS: "oxidierti gschnitteni chupferstäge"
+  PACKED_ICE: "packiis"
+  PACKED_MUD: "presste schlamm"
+  PEARLESCENT_FROGLIGHT: "perlmuetterni froschlampe"
+  PEONY: "pfingstrose"
+  PETRIFIED_OAK_SLAB: "versteinerti eicheholzstufe"
+  PIGLIN_HEAD: "piglinchopf"
+  PIGLIN_WALL_HEAD: "piglin-wandchopf"
+  PINK_BANNER: "rosa banner"
+  PINK_BED: "rosa bett"
+  PINK_CANDLE: "rosa cherze"
+  PINK_CANDLE_CAKE: "chueche mit rosa cherze"
+  PINK_CARPET: "rosa teppich"
+  PINK_CONCRETE: "rosa beton"
+  PINK_CONCRETE_POWDER: "rosa trockebeton"
+  PINK_GLAZED_TERRACOTTA: "rosa glasierte keramik"
+  PINK_PETALS: "rosa blüeteblätter"
+  PINK_SHULKER_BOX: "rosa shulker-chiste"
+  PINK_STAINED_GLASS: "rosa glas"
+  PINK_STAINED_GLASS_PANE: "rosa glasschiibe"
+  PINK_TERRACOTTA: "rosa keramik"
+  PINK_TULIP: "rosa tulpe"
+  PINK_WOOL: "rosa wulle"
+  PISTON: "cholbe"
+  PISTON_HEAD: "cholbechopf"
+  PITCHER_CROP: "channepflanzetrieb"
+  PITCHER_PLANT: "channepflanze"
+  PLAYER_HEAD: "spielerchopf"
+  PLAYER_HEAD_NAMED: "chopf vo %s"
+  PLAYER_WALL_HEAD: "spieler-wandchopf"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "spitze tropfstei"
+  POLISHED_ANDESITE: "polierte andesit"
+  POLISHED_ANDESITE_SLAB: "polierti andesitstufe"
+  POLISHED_ANDESITE_STAIRS: "polierti andesitstäge"
+  POLISHED_BASALT: "polierte basalt"
+  POLISHED_BLACKSTONE: "polierte schwarzstei"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "polierti schwarzsteiziegelstufe"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "polierti schwarzsteiziegelstäge"
+  POLISHED_BLACKSTONE_BRICK_WALL: "polierti schwarzsteiziegelmur"
+  POLISHED_BLACKSTONE_BRICKS: "polierti schwarzsteiziegel"
+  POLISHED_BLACKSTONE_BUTTON: "polierte schwarzsteichnopf"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "polierti schwarzsteidruckplatte"
+  POLISHED_BLACKSTONE_SLAB: "polierti schwarzsteistufe"
+  POLISHED_BLACKSTONE_STAIRS: "polierti schwarzsteistäge"
+  POLISHED_BLACKSTONE_WALL: "polierti schwarzsteimur"
+  POLISHED_DEEPSLATE: "polierte tüfschiefer"
+  POLISHED_DEEPSLATE_SLAB: "polierti tüfschieferstufe"
+  POLISHED_DEEPSLATE_STAIRS: "polierti tüfschieferstäge"
+  POLISHED_DEEPSLATE_WALL: "polierti tüfschiefermur"
+  POLISHED_DIORITE: "polierte diorit"
+  POLISHED_DIORITE_SLAB: "polierti dioritstufe"
+  POLISHED_DIORITE_STAIRS: "polierti dioritstäge"
+  POLISHED_GRANITE: "polierte granit"
+  POLISHED_GRANITE_SLAB: "polierti granitstufe"
+  POLISHED_GRANITE_STAIRS: "polierti granitstäge"
+  POLISHED_TUFF: "polierte tuffstei"
+  POLISHED_TUFF_SLAB: "polierti tuffsteistufe"
+  POLISHED_TUFF_STAIRS: "polierti tuffsteistäge"
+  POLISHED_TUFF_WALL: "polierti tuffsteimuur"
+  POPPY: "mohn"
+  POTATOES: "härdöpfel"
+  POTTED_ACACIA_SAPLING: "itopfte akaziesetzling"
+  POTTED_ALLIUM: "itopfte zierlauch"
+  POTTED_AZALEA_BUSH: "itopfte azalee"
+  POTTED_AZURE_BLUET: "itopftes porzellanstärnli"
+  POTTED_BAMBOO: "itopfte bambus"
+  POTTED_BIRCH_SAPLING: "itopfte birkesetzling"
+  POTTED_BLUE_ORCHID: "itopfte blaui orchideä"
+  POTTED_BROWN_MUSHROOM: "itopfte brune pilz"
+  POTTED_CACTUS: "itopfte kaktus"
+  POTTED_CHERRY_SAPLING: "itopfte chriesisetzling"
+  POTTED_CORNFLOWER: "itopfti chornblueme"
+  POTTED_CRIMSON_FUNGUS: "itopfti karmesinpilz"
+  POTTED_CRIMSON_ROOTS: "itopfti karmesinwurzle"
+  POTTED_DANDELION: "itopfte löwezah"
+  POTTED_DARK_OAK_SAPLING: "itopfte schwarzeichesetzling"
+  POTTED_DEAD_BUSH: "itopfte tote busch"
+  POTTED_FERN: "itopfte farn"
+  POTTED_FLOWERING_AZALEA_BUSH: "itopfti blühendi azalee"
+  POTTED_JUNGLE_SAPLING: "itopfte tropesetzling"
+  POTTED_LILY_OF_THE_VALLEY: "itopftes maiglöckli"
+  POTTED_MANGROVE_PROPAGULE: "itopfte mangrove-keimling"
+  POTTED_OAK_SAPLING: "itopfte eichesetzling"
+  POTTED_ORANGE_TULIP: "itopfti orangschi tulpe"
+  POTTED_OXEYE_DAISY: "itopfti margeritli"
+  POTTED_PINK_TULIP: "itopfti rosa tulpe"
+  POTTED_POPPY: "itopfte mohn"
+  POTTED_RED_MUSHROOM: "itopfte rote pilz"
+  POTTED_RED_TULIP: "itopfti roti tulpe"
+  POTTED_SPRUCE_SAPLING: "itopfte fichtesetzling"
+  POTTED_TORCHFLOWER: "itopfti fackellilie"
+  POTTED_WARPED_FUNGUS: "itopfte wirrpilz"
+  POTTED_WARPED_ROOTS: "itopfti wirrwurzle"
+  POTTED_WHITE_TULIP: "itopfti wissi tulpe"
+  POTTED_WITHER_ROSE: "itopfti witherrose"
+  POWDER_SNOW: "pulverschnee"
+  POWDER_SNOW_CAULDRON: "pulverschneechessel"
+  POWERED_RAIL: "atriebsschine"
+  PRISMARINE: "prismarin"
+  PRISMARINE_BRICK_SLAB: "prismarinziegelstufe"
+  PRISMARINE_BRICK_STAIRS: "prismarinziegelstäge"
+  PRISMARINE_BRICKS: "prismarinziegel"
+  PRISMARINE_SLAB: "prismarinstufe"
+  PRISMARINE_STAIRS: "prismarinstäge"
+  PRISMARINE_WALL: "prismarinmur"
+  PUMPKIN: "chürbis"
+  PUMPKIN_STEM: "chürbispflanze"
+  PURPLE_BANNER: "violetts banner"
+  PURPLE_BED: "violetts bett"
+  PURPLE_CANDLE: "violetti cherze"
+  PURPLE_CANDLE_CAKE: "chueche mit violetter cherze"
+  PURPLE_CARPET: "violette teppich"
+  PURPLE_CONCRETE: "violette beton"
+  PURPLE_CONCRETE_POWDER: "violette trockebeton"
+  PURPLE_GLAZED_TERRACOTTA: "violette glasierte keramik"
+  PURPLE_SHULKER_BOX: "violetti shulker-chiste"
+  PURPLE_STAINED_GLASS: "violetts glas"
+  PURPLE_STAINED_GLASS_PANE: "violetti glasschiibe"
+  PURPLE_TERRACOTTA: "violette keramik"
+  PURPLE_WOOL: "violetti wulle"
+  PURPUR_BLOCK: "purpurblock"
+  PURPUR_PILLAR: "purpursüle"
+  PURPUR_SLAB: "purpurstufe"
+  PURPUR_STAIRS: "purpurstäge"
+  QUARTZ_BLOCK: "quarzblock"
+  QUARTZ_BRICKS: "quarzziegel"
+  QUARTZ_PILLAR: "quarzsüüle"
+  QUARTZ_SLAB: "quarzstufe"
+  QUARTZ_STAIRS: "quarzstäge"
+  RAIL: "schine"
+  RAW_COPPER_BLOCK: "rohchupferblock"
+  RAW_GOLD_BLOCK: "rohgoldblock"
+  RAW_IRON_BLOCK: "rohiseblock"
+  RED_BANNER: "rots banner"
+  RED_BED: "rots bett"
+  RED_CANDLE: "roti cherze"
+  RED_CANDLE_CAKE: "chueche mit roter cherze"
+  RED_CARPET: "rote teppich"
+  RED_CONCRETE: "rote beton"
+  RED_CONCRETE_POWDER: "rote trockebeton"
+  RED_GLAZED_TERRACOTTA: "rote glasierte keramik"
+  RED_MUSHROOM: "rote pilz"
+  RED_MUSHROOM_BLOCK: "rote pilzblock"
+  RED_NETHER_BRICK_SLAB: "roti netherziegelstufe"
+  RED_NETHER_BRICK_STAIRS: "roti netherziegelstäge"
+  RED_NETHER_BRICK_WALL: "roti netherziegelmur"
+  RED_NETHER_BRICKS: "roti netherziegel"
+  RED_SAND: "rote sand"
+  RED_SANDSTONE: "rote standstei"
+  RED_SANDSTONE_SLAB: "roti sandsteistufe"
+  RED_SANDSTONE_STAIRS: "roti sandsteistäge"
+  RED_SANDSTONE_WALL: "roti sandsteimur"
+  RED_SHULKER_BOX: "roti shulker-chiste"
+  RED_STAINED_GLASS: "rots glas"
+  RED_STAINED_GLASS_PANE: "roti glasschiibe"
+  RED_TERRACOTTA: "rote keramik"
+  RED_TULIP: "roti tulpe"
+  RED_WOOL: "roti wulle"
+  REDSTONE_BLOCK: "redstone-block"
+  REDSTONE_LAMP: "redstone-lampe"
+  REDSTONE_ORE: "redstone-erz"
+  REDSTONE_TORCH: "redstone-fackle"
+  REDSTONE_WALL_TORCH: "redstone-wandfackle"
+  REDSTONE_WIRE: "redstone-leitig"
+  REINFORCED_DEEPSLATE: "verstärkte tüfschiefer"
+  REPEATER: "redstone-verstärker"
+  REPEATING_COMMAND_BLOCK: "wiederhol-befehlsblock"
+  RESPAWN_ANCHOR: "seeleanker"
+  ROOTED_DIRT: "wurzelerde"
+  ROSE_BUSH: "rosestruch"
+  SAND: "sand"
+  SANDSTONE: "sandstei"
+  SANDSTONE_SLAB: "sandsteistufe"
+  SANDSTONE_STAIRS: "sandsteistäge"
+  SANDSTONE_WALL: "sandsteimur"
+  SCAFFOLDING: "grüscht"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk-katalysator"
+  SCULK_SENSOR: "sculk-sensor"
+  SCULK_SHRIEKER: "sculk-kreischer"
+  SCULK_VEIN: "sculk-ader"
+  SEA_LANTERN: "seelaterne"
+  SEA_PICKLE: "meeresgurke"
+  SEAGRASS: "seegras"
+  SET_SPAWN: "wiederistigspunkt gsetzt"
+  SHORT_GRASS: "tüüfs gras"
+  SHROOMLIGHT: "pilzliecht"
+  SHULKER_BOX: "shulker-chiste"
+  SKELETON_SKULL: "skelettschädel"
+  SKELETON_WALL_SKULL: "skelett-wandschädel"
+  SLIME_BLOCK: "schlimblock"
+  SMALL_AMETHYST_BUD: "chlini amethystknospe"
+  SMALL_DRIPLEAF: "chliises tropfblatt"
+  SMITHING_TABLE: "schmiedtisch"
+  SMOKER: "rücherofe"
+  SMOOTH_BASALT: "glatte basalt"
+  SMOOTH_QUARTZ: "glatte quarzblock"
+  SMOOTH_QUARTZ_SLAB: "glatti quarzstufe"
+  SMOOTH_QUARTZ_STAIRS: "glatti quarzstäge"
+  SMOOTH_RED_SANDSTONE: "glatte rote sandstei"
+  SMOOTH_RED_SANDSTONE_SLAB: "glatti roti sandsteistufe"
+  SMOOTH_RED_SANDSTONE_STAIRS: "glatti roti sandsteistäge"
+  SMOOTH_SANDSTONE: "glatte sandstei"
+  SMOOTH_SANDSTONE_SLAB: "glatti sandsteistufe"
+  SMOOTH_SANDSTONE_STAIRS: "glatti sandsteistäge"
+  SMOOTH_STONE: "glatte stei"
+  SMOOTH_STONE_SLAB: "glatti steistufe"
+  SNIFFER_EGG: "schnüffler-ei"
+  SNOW: "schnee"
+  SNOW_BLOCK: "schneeblock"
+  SOUL_CAMPFIRE: "seelelagerfüür"
+  SOUL_FIRE: "seelefüür"
+  SOUL_LANTERN: "seelelaterne"
+  SOUL_SAND: "seelesand"
+  SOUL_SOIL: "seeleerde"
+  SOUL_TORCH: "seelefackle"
+  SOUL_WALL_TORCH: "seelewandfackle"
+  SPAWN_NOT_VALID: "du hesch kei bett und kein ufgladene seeleanker oder din wiederistigspunkt isch blockiert worde"
+  SPAWNER: "spawner"
+  SPAWNER_DESC1: "benutz spawn-ei:"
+  SPAWNER_DESC2: "leit kreaturetyp fest"
+  SPONGE: "schwamm"
+  SPORE_BLOSSOM: "sporeblüete"
+  SPRUCE_BUTTON: "fichteholzchnopf"
+  SPRUCE_DOOR: "fichteholztür"
+  SPRUCE_FENCE: "fichteholzhaag"
+  SPRUCE_FENCE_GATE: "fichteholzhaagtor"
+  SPRUCE_HANGING_SIGN: "fichteholzhängeschild"
+  SPRUCE_LEAVES: "fichtenadle"
+  SPRUCE_LOG: "fichtestamm"
+  SPRUCE_PLANKS: "fichteholzbretter"
+  SPRUCE_PRESSURE_PLATE: "fichteholzdruckplatte"
+  SPRUCE_SAPLING: "fichtesetzling"
+  SPRUCE_SIGN: "fichteholzschild"
+  SPRUCE_SLAB: "fichteholzstufe"
+  SPRUCE_STAIRS: "fichteholzstäge"
+  SPRUCE_TRAPDOOR: "fichteholzfalltür"
+  SPRUCE_WALL_HANGING_SIGN: "fichteholzwandhängeschild"
+  SPRUCE_WALL_SIGN: "fichteholzwandschild"
+  SPRUCE_WOOD: "fichteholz"
+  STICKY_PISTON: "chlebrige cholbe"
+  STONE: "stei"
+  STONE_BRICK_SLAB: "steiziegelstufe"
+  STONE_BRICK_STAIRS: "steiziegelstäge"
+  STONE_BRICK_WALL: "steiziegelmur"
+  STONE_BRICKS: "steiziegel"
+  STONE_BUTTON: "steichnopf"
+  STONE_PRESSURE_PLATE: "steidruckplatte"
+  STONE_SLAB: "steistufe"
+  STONE_STAIRS: "steistäge"
+  STONECUTTER: "steisägi"
+  STRIPPED_ACACIA_LOG: "entrindete akaziestamm"
+  STRIPPED_ACACIA_WOOD: "entrindets akazieholz"
+  STRIPPED_BAMBOO_BLOCK: "gschälte bambusblock"
+  STRIPPED_BIRCH_LOG: "entrindete birkestamm"
+  STRIPPED_BIRCH_WOOD: "entrindets birkeholz"
+  STRIPPED_CHERRY_LOG: "entrindete chriesistamm"
+  STRIPPED_CHERRY_WOOD: "entrindets chriesiholz"
+  STRIPPED_CRIMSON_HYPHAE: "entrindete karmesinhyphe"
+  STRIPPED_CRIMSON_STEM: "entrindete karmesinstamm"
+  STRIPPED_DARK_OAK_LOG: "entrindete schwarzeichestamm"
+  STRIPPED_DARK_OAK_WOOD: "entrindets schwarzeicheholz"
+  STRIPPED_JUNGLE_LOG: "entrindete tropestamm"
+  STRIPPED_JUNGLE_WOOD: "entrindets tropeholz"
+  STRIPPED_MANGROVE_LOG: "entrindete mangrovestamm"
+  STRIPPED_MANGROVE_WOOD: "entrindets mangroveholz"
+  STRIPPED_OAK_LOG: "entrindete eichestamm"
+  STRIPPED_OAK_WOOD: "entrindets eicheholz"
+  STRIPPED_SPRUCE_LOG: "entrindete fichtestamm"
+  STRIPPED_SPRUCE_WOOD: "entrindets fichteholz"
+  STRIPPED_WARPED_HYPHAE: "entrindete wirrhyphe"
+  STRIPPED_WARPED_STEM: "entrindete wirrstamm"
+  STRUCTURE_BLOCK: "konstruktionsblock"
+  STRUCTURE_VOID: "konstruktionsleeri"
+  SUGAR_CANE: "zuckerrohr"
+  SUNFLOWER: "sunneblueme"
+  SUSPICIOUS_GRAVEL: "seltsame chis"
+  SUSPICIOUS_SAND: "seltsame sand"
+  SWEET_BERRY_BUSH: "süessbeerestruch"
+  TALL_GRASS: "höchs gras"
+  TALL_SEAGRASS: "hohs seegras"
+  TARGET: "zielblock"
+  TERRACOTTA: "keramik"
+  TINTED_GLASS: "tönts glas"
+  TNT: "tnt"
+  TORCH: "fackle"
+  TORCHFLOWER: "fackellilie"
+  TORCHFLOWER_CROP: "fackelliliepflanze"
+  TRAPPED_CHEST: "redstone-chiste"
+  TRIAL_SPAWNER: "prüefigs-spawner"
+  TRIPWIRE: "stolperdroht"
+  TRIPWIRE_HOOK: "hoge"
+  TUBE_CORAL: "orgelkoralle"
+  TUBE_CORAL_BLOCK: "orgelkoralleblock"
+  TUBE_CORAL_FAN: "orgelkorallefächer"
+  TUBE_CORAL_WALL_FAN: "orgelkorallewandfächer"
+  TUFF: "tuffstei"
+  TUFF_BRICK_SLAB: "tuffsteiziegelstufe"
+  TUFF_BRICK_STAIRS: "tuffsteiziegelstäge"
+  TUFF_BRICK_WALL: "tuffsteiziegelmuur"
+  TUFF_BRICKS: "tuffsteiziegel"
+  TUFF_SLAB: "tuffsteistufe"
+  TUFF_STAIRS: "tuffsteistäge"
+  TUFF_WALL: "tuffsteimuur"
+  TURTLE_EGG: "schildchroteei"
+  TWISTING_VINES: "zwirbelranke"
+  TWISTING_VINES_PLANT: "zwirbelrankepflanze"
+  VERDANT_FROGLIGHT: "junggrüeni froschlampe"
+  VINE: "ranke"
+  VOID_AIR: "leerluft"
+  WALL_TORCH: "wandfackle"
+  WARPED_BUTTON: "wirrholzchnopf"
+  WARPED_DOOR: "wirrholztür"
+  WARPED_FENCE: "wirrholzhaag"
+  WARPED_FENCE_GATE: "wirrholzhaagtor"
+  WARPED_FUNGUS: "wirrpilz"
+  WARPED_HANGING_SIGN: "wirrholzhängeschild"
+  WARPED_HYPHAE: "wirrhyphe"
+  WARPED_NYLIUM: "wirr-nezel"
+  WARPED_PLANKS: "wirrholzbretter"
+  WARPED_PRESSURE_PLATE: "wirrholzdruckplatte"
+  WARPED_ROOTS: "wirrwurzle"
+  WARPED_SIGN: "wirrholzschild"
+  WARPED_SLAB: "wirrholzstufe"
+  WARPED_STAIRS: "wirrholzstäge"
+  WARPED_STEM: "wirrstil"
+  WARPED_TRAPDOOR: "wirrholzfalltür"
+  WARPED_WALL_HANGING_SIGN: "wirrholzwandhängeschild"
+  WARPED_WALL_SIGN: "wirrholzwandschild"
+  WARPED_WART_BLOCK: "wirrwarzeblock"
+  WATER: "wasser"
+  WATER_CAULDRON: "wasserchessel"
+  WAXED_CHISELED_COPPER: "gwachste gmeisslete chupferblock"
+  WAXED_COPPER_BLOCK: "gwachste chupferblock"
+  WAXED_COPPER_BULB: "gwachsti chupferlüchte"
+  WAXED_COPPER_DOOR: "gwachsti chupfertür"
+  WAXED_COPPER_GRATE: "gwachsts chupferrost"
+  WAXED_COPPER_TRAPDOOR: "gwachsti chupferfalltür"
+  WAXED_CUT_COPPER: "gwachste gschnittene chupferblock"
+  WAXED_CUT_COPPER_SLAB: "gwachsti gschnitteni chupferstufe"
+  WAXED_CUT_COPPER_STAIRS: "gwachsti gschnitteni chupferstäge"
+  WAXED_EXPOSED_CHISELED_COPPER: "gwachste agloffene gmeisslete chupferblock"
+  WAXED_EXPOSED_COPPER: "gwachste agloffene chupferblock"
+  WAXED_EXPOSED_COPPER_BULB: "gwachsti agloffeni chupferlüchte"
+  WAXED_EXPOSED_COPPER_DOOR: "gwachsti agloffeni chupfertür"
+  WAXED_EXPOSED_COPPER_GRATE: "gwachsts agloffens chupferrost"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "gwachsti agloffeni chupferfalltür"
+  WAXED_EXPOSED_CUT_COPPER: "gwachste agloffene gschnittene chupferblock"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "gwachsti agloffeni gschnitteni chupferstufe"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "gwachsti agloffeni gschnitteni chupferstäge"
+  WAXED_OXIDIZED_CHISELED_COPPER: "gwachste oxidierte gmeisslete chupferblock"
+  WAXED_OXIDIZED_COPPER: "gwachste aglaufene chupferblock"
+  WAXED_OXIDIZED_COPPER_BULB: "gwachsti oxidierti chupferlüchti"
+  WAXED_OXIDIZED_COPPER_DOOR: "gwachsti oxidierti chupfertür"
+  WAXED_OXIDIZED_COPPER_GRATE: "gwachsts oxidierts chupferrost"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "gwachsti oxidierti chupferfalltür"
+  WAXED_OXIDIZED_CUT_COPPER: "gwachste oxidierte gschnittene chupferblock"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "gwachsti oxidierti gschnitteni chupferstufe"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "gwachsti oxidierti gschnitteni chupferstäge"
+  WAXED_WEATHERED_CHISELED_COPPER: "gwachste verwitterete gmeisslete chupferblock"
+  WAXED_WEATHERED_COPPER: "gwachste verwitterete chupferblock"
+  WAXED_WEATHERED_COPPER_BULB: "gwachsti verwittereti chupferlüchte"
+  WAXED_WEATHERED_COPPER_DOOR: "gwachsti verwitterti chupfertür"
+  WAXED_WEATHERED_COPPER_GRATE: "gwachsts verwitterts chupferrost"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "gwachsti verwitterti chupferfalltür"
+  WAXED_WEATHERED_CUT_COPPER: "gwachste verwitterete gschnittene chupferblock"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "gwachsti verwittereti gschnitteni chupferstufe"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "gwachsti verwittereti gschnitteni chupferstäge"
+  WEATHERED_CHISELED_COPPER: "verwitterte gmeisslete chupferblock"
+  WEATHERED_COPPER: "verwitterete chupferblock"
+  WEATHERED_COPPER_BULB: "verwittereti chupferlüchte"
+  WEATHERED_COPPER_DOOR: "verwitterti chupfertür"
+  WEATHERED_COPPER_GRATE: "verwitterts chupferrost"
+  WEATHERED_COPPER_TRAPDOOR: "verwitterti chupferfalltür"
+  WEATHERED_CUT_COPPER: "verwitterte gschnittene chupferblock"
+  WEATHERED_CUT_COPPER_SLAB: "verwitterti gschnitteni chupferstufe"
+  WEATHERED_CUT_COPPER_STAIRS: "verwitterti chupferstäge"
+  WEEPING_VINES: "trauerranke"
+  WEEPING_VINES_PLANT: "trauerrankepflanze"
+  WET_SPONGE: "nasse schwamm"
+  WHEAT: "weizepflanze"
+  WHITE_BANNER: "wisses banner"
+  WHITE_BED: "wisses bett"
+  WHITE_CANDLE: "wissi cherze"
+  WHITE_CANDLE_CAKE: "chueche mit wisser cherze"
+  WHITE_CARPET: "wisse teppich"
+  WHITE_CONCRETE: "wisse beton"
+  WHITE_CONCRETE_POWDER: "wisse trockebeton"
+  WHITE_GLAZED_TERRACOTTA: "wisse glasierte keramik"
+  WHITE_SHULKER_BOX: "wissi shulker-chiste"
+  WHITE_STAINED_GLASS: "wisses glas"
+  WHITE_STAINED_GLASS_PANE: "wissi glasschiibe"
+  WHITE_TERRACOTTA: "wisse keramik"
+  WHITE_TULIP: "wissi tulpe"
+  WHITE_WOOL: "wissi wulle"
+  WITHER_ROSE: "witherrose"
+  WITHER_SKELETON_SKULL: "witherskelettschädel"
+  WITHER_SKELETON_WALL_SKULL: "witherskelett-wandschädel"
+  YELLOW_BANNER: "gelbes banner"
+  YELLOW_BED: "gelbes bett"
+  YELLOW_CANDLE: "gelbi cherze"
+  YELLOW_CANDLE_CAKE: "chueche mit gelber cherze"
+  YELLOW_CARPET: "gelbe teppich"
+  YELLOW_CONCRETE: "gelbe beton"
+  YELLOW_CONCRETE_POWDER: "gelbe trockebeton"
+  YELLOW_GLAZED_TERRACOTTA: "gelbe glasierte keramik"
+  YELLOW_SHULKER_BOX: "gelbi shulkerchiste"
+  YELLOW_STAINED_GLASS: "gelbes glas"
+  YELLOW_STAINED_GLASS_PANE: "gelbi glasschiibe"
+  YELLOW_TERRACOTTA: "gelbe keramik"
+  YELLOW_WOOL: "gelbi wulle"
+  ZOMBIE_HEAD: "zombiechopf"
+  ZOMBIE_WALL_HEAD: "zombie-wandchopf"
+  ACACIA_BOAT: "akazieholzboot"
+  ACACIA_CHEST_BOAT: "akazieholzchisteboot"
+  ALLAY_SPAWN_EGG: "hilfsgeist-spawn-ei"
+  AMETHYST_SHARD: "amethystscherbe"
+  ANGLER_POTTERY_SHARD: "angler-töpferscherbe"
+  ANGLER_POTTERY_SHERD: "angler-töpferscherbe"
+  APPLE: "öpfel"
+  ARCHER_POTTERY_SHARD: "schütze-töpferscherbe"
+  ARCHER_POTTERY_SHERD: "schütze-töpferscherbe"
+  ARMOR_STAND: "rüstigsständer"
+  ARMS_UP_POTTERY_SHARD: "gebärde-töpferscherbe"
+  ARMS_UP_POTTERY_SHERD: "gebärde-töpferscherbe"
+  ARROW: "pfil"
+  AXOLOTL_BUCKET: "axolotlchübel"
+  AXOLOTL_SPAWN_EGG: "axolotl-spawn-ei"
+  BAKED_POTATO: "ofeherdöpfel"
+  BAMBOO_CHEST_RAFT: "bambus-chistefloss"
+  BAMBOO_RAFT: "bambusfloss"
+  BAT_SPAWN_EGG: "flädermus-spawn-ei"
+  BEE_SPAWN_EGG: "biene-spawn-ei"
+  BEEF: "rohs rindfleisch"
+  BEETROOT: "rande"
+  BEETROOT_SEEDS: "randesame"
+  BEETROOT_SOUP: "borschtsch"
+  BIRCH_BOAT: "birkeholzboot"
+  BIRCH_CHEST_BOAT: "birkeholzchisteboot"
+  BLACK_DYE: "schwarze farbstoff"
+  BLADE_POTTERY_SHARD: "klinge-töpferscherbe"
+  BLADE_POTTERY_SHERD: "klinge-töpferscherbe"
+  BLAZE_POWDER: "lohestaub"
+  BLAZE_ROD: "loheruete"
+  BLAZE_SPAWN_EGG: "lohe-spawn-ei"
+  BLUE_DYE: "blaue farbstoff"
+  BONE: "chnoche"
+  BONE_MEAL: "chnochemehl"
+  BOOK: "buech"
+  BOW: "boge"
+  BOWL: "schüssle"
+  BREAD: "brot"
+  BREEZE_SPAWN_EGG: "windböe-spawn-ei"
+  BREWER_POTTERY_SHARD: "brauer-töpferscherbe"
+  BREWER_POTTERY_SHERD: "brauer-töpferscherbe"
+  BRICK: "ziegel"
+  BROWN_DYE: "brune farbstoff"
+  BRUSH: "pinsel"
+  BUCKET: "chübel"
+  BUNDLE: "bündel"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "flamme-töpferscherbe"
+  BURN_POTTERY_SHERD: "flamme-töpferscherbe"
+  CAMEL_SPAWN_EGG: "dromedar-spawn-ei"
+  CARROT: "rüebli"
+  CARROT_ON_A_STICK: "rüebliruete"
+  CAT_SPAWN_EGG: "chatze-spawn-ei"
+  CAVE_SPIDER_SPAWN_EGG: "höhlespinne-spawn-ei"
+  CHAINMAIL_BOOTS: "chettestiefel"
+  CHAINMAIL_CHESTPLATE: "chettehemd"
+  CHAINMAIL_HELMET: "chettehelm"
+  CHAINMAIL_LEGGINGS: "chettehose"
+  CHARCOAL: "holzchole"
+  CHERRY_BOAT: "chriesiholzboot"
+  CHERRY_CHEST_BOAT: "chriesiholzchisteboot"
+  CHEST_MINECART: "güeterlore"
+  CHICKEN: "rohs huehn"
+  CHICKEN_SPAWN_EGG: "huehn-spawn-ei"
+  CHORUS_FRUIT: "chorusfrucht"
+  CLAY_BALL: "tonchlumpe"
+  CLOCK: "uhr"
+  COAL: "steichole"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  COCOA_BEANS: "kakaobohne"
+  COD: "rohe kabeljau"
+  COD_BUCKET: "kabeljauchübel"
+  COD_SPAWN_EGG: "kabeljau-spawn-ei"
+  COMMAND_BLOCK_MINECART: "befehlsblocklore"
+  COMPASS: "kompass"
+  COOKED_BEEF: "steak"
+  COOKED_CHICKEN: "brotens huehn"
+  COOKED_COD: "brotene kabeljau"
+  COOKED_MUTTON: "brotens hammelfleisch"
+  COOKED_PORKCHOP: "brotens schwiifleisch"
+  COOKED_RABBIT: "brotene chüngel"
+  COOKED_SALMON: "brotene lachs"
+  COOKIE: "guetzli"
+  COPPER_INGOT: "chupferbarre"
+  COW_SPAWN_EGG: "chue-spawn-ei"
+  CREEPER_BANNER_PATTERN: "bannervorlag"
+  CREEPER_BANNER_PATTERN_DESC: "creeper"
+  CREEPER_SPAWN_EGG: "creeper-spawn-ei"
+  CROSSBOW: "armbrust"
+  CROSSBOW_PROJECTILE: "gschoss:"
+  CYAN_DYE: "türkise farbstoff"
+  DANGER_POTTERY_SHARD: "gefahre-töpferscherbe"
+  DANGER_POTTERY_SHERD: "gefahre-töpferscherbe"
+  DARK_OAK_BOAT: "schwarzeicheholzboot"
+  DARK_OAK_CHEST_BOAT: "schwarzeicheholzchisteboot"
+  DEBUG_STICK: "debug-stab"
+  DEBUG_STICK_EMPTY: "%s het kei blockzueständ"
+  DEBUG_STICK_SELECT: "'%s' usgwählt (%s)"
+  DEBUG_STICK_UPDATE: "«%s» isch jetzt %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "diamantaxt"
+  DIAMOND_BOOTS: "diamantstiefel"
+  DIAMOND_CHESTPLATE: "diamantharnisch"
+  DIAMOND_HELMET: "diamanthelm"
+  DIAMOND_HOE: "diamantehacke"
+  DIAMOND_HORSE_ARMOR: "diamantene rossharnisch"
+  DIAMOND_LEGGINGS: "diamantbeischutz"
+  DIAMOND_PICKAXE: "diamantspitzhacki"
+  DIAMOND_SHOVEL: "diamantschufle"
+  DIAMOND_SWORD: "diamantschwert"
+  DISC_FRAGMENT_5: "plattebruchstück"
+  DISC_FRAGMENT_5_DESC: "schallplatte - 5"
+  DOLPHIN_SPAWN_EGG: "delfin-spawn-ei"
+  DONKEY_SPAWN_EGG: "esel-spawn-ei"
+  DRAGON_BREATH: "dracheatem"
+  DRIED_KELP: "getröchnete seetang"
+  DROWNED_SPAWN_EGG: "ertrunkene-spawn-ei"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  ECHO_SHARD: "echoscherbe"
+  EGG: "ei"
+  ELDER_GUARDIAN_SPAWN_EGG: "grosse-wächter-spawn-ei"
+  ELYTRA: "elytre"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "verzauberts buech"
+  ENCHANTED_GOLDEN_APPLE: "verzauberte goldene öpfel"
+  END_CRYSTAL: "enderkristall"
+  ENDER_DRAGON_SPAWN_EGG: "enderdrache-spawn-ei"
+  ENDER_EYE: "enderaug"
+  ENDER_PEARL: "enderperle"
+  ENDERMAN_SPAWN_EGG: "enderman-spawn-ei"
+  ENDERMITE_SPAWN_EGG: "endermite-spawn-ei"
+  EVOKER_SPAWN_EGG: "magier-spawn-ei"
+  EXPERIENCE_BOTTLE: "erfahrigsfläschli"
+  EXPLORER_POTTERY_SHARD: "entdecker-töpferscherbe"
+  EXPLORER_POTTERY_SHERD: "entdecker-töpferscherbe"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  FEATHER: "federe"
+  FERMENTED_SPIDER_EYE: "fermentierts spinnenaug"
+  FILLED_MAP: "charte"
+  FIRE_CHARGE: "füürchugle"
+  FIREWORK_ROCKET: "füürwerksragete"
+  FIREWORK_ROCKET_FLIGHT: "flugduur:"
+  FIREWORK_STAR: "füürwerksstern"
+  FIREWORK_STAR_BLACK: "schwarz"
+  FIREWORK_STAR_BLUE: "blau"
+  FIREWORK_STAR_BROWN: "brun"
+  FIREWORK_STAR_CUSTOM_COLOR: "benutzerdefiniert"
+  FIREWORK_STAR_CYAN: "türkis"
+  FIREWORK_STAR_FADE_TO: "übergang zu"
+  FIREWORK_STAR_FLICKER: "funkle"
+  FIREWORK_STAR_GRAY: "grau"
+  FIREWORK_STAR_GREEN: "grüen"
+  FIREWORK_STAR_LIGHT_BLUE: "hellblau"
+  FIREWORK_STAR_LIGHT_GRAY: "hellgrau"
+  FIREWORK_STAR_LIME: "hellgrüen"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "orange"
+  FIREWORK_STAR_PINK: "rosa"
+  FIREWORK_STAR_PURPLE: "violett"
+  FIREWORK_STAR_RED: "rot"
+  FIREWORK_STAR_SHAPE: "unbekannti form"
+  FIREWORK_STAR_SHAPE_BURST: "explosion"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperförmig"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "grossi chugle"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "chlini chugle"
+  FIREWORK_STAR_SHAPE_STAR: "sternförmig"
+  FIREWORK_STAR_TRAIL: "schweif"
+  FIREWORK_STAR_WHITE: "wiss"
+  FIREWORK_STAR_YELLOW: "gelb"
+  FISHING_ROD: "angel"
+  FLINT: "füürstei"
+  FLINT_AND_STEEL: "füürzüg"
+  FLOWER_BANNER_PATTERN: "bannervorlag"
+  FLOWER_BANNER_PATTERN_DESC: "blueme"
+  FOX_SPAWN_EGG: "fuchs-spawn-ei"
+  FRIEND_POTTERY_SHARD: "fründes-töpferscherbe"
+  FRIEND_POTTERY_SHERD: "fründes-töpferscherbe"
+  FROG_SPAWN_EGG: "frosch-spawn-ei"
+  FURNACE_MINECART: "ofelore"
+  GHAST_SPAWN_EGG: "ghast-spawn-ei"
+  GHAST_TEAR: "ghastträne"
+  GLASS_BOTTLE: "glasfläsche"
+  GLISTERING_MELON_SLICE: "glitzerndi meloneschibe"
+  GLOBE_BANNER_PATTERN: "bannervorlag"
+  GLOBE_BANNER_PATTERN_DESC: "globus"
+  GLOW_BERRIES: "lüchtbeere"
+  GLOW_INK_SAC: "lüchttintebütel"
+  GLOW_ITEM_FRAME: "lüchtrahme"
+  GLOW_SQUID_SPAWN_EGG: "lüchttintefisch-spawn-ei"
+  GLOWSTONE_DUST: "lüchtsteistaub"
+  GOAT_HORN: "geissehorn"
+  GOAT_SPAWN_EGG: "geiss-spawn-ei"
+  GOLD_INGOT: "goldbarre"
+  GOLD_NUGGET: "goldchlumpe"
+  GOLDEN_APPLE: "goldene öpfel"
+  GOLDEN_AXE: "goldaxt"
+  GOLDEN_BOOTS: "goldstiefel"
+  GOLDEN_CARROT: "goldenes rüebli"
+  GOLDEN_CHESTPLATE: "goldharnisch"
+  GOLDEN_HELMET: "goldhelm"
+  GOLDEN_HOE: "goldhacke"
+  GOLDEN_HORSE_ARMOR: "goldene rossharnisch"
+  GOLDEN_LEGGINGS: "goldbeischutz"
+  GOLDEN_PICKAXE: "goldspitzhacki"
+  GOLDEN_SHOVEL: "goldschufle"
+  GOLDEN_SWORD: "goldschwert"
+  GRAY_DYE: "graue farbstoff"
+  GREEN_DYE: "grüene farbstoff"
+  GUARDIAN_SPAWN_EGG: "wächter-spawn-ei"
+  GUNPOWDER: "schwarzpulver"
+  HEART_OF_THE_SEA: "herz vom meer"
+  HEART_POTTERY_SHARD: "herz-töpferscherbe"
+  HEART_POTTERY_SHERD: "herz-töpferscherbe"
+  HEARTBREAK_POTTERY_SHARD: "herzschmerz-töpferscherbe"
+  HEARTBREAK_POTTERY_SHERD: "herzschmerz-töpferscherbe"
+  HOGLIN_SPAWN_EGG: "hoglin-spawn-ei"
+  HONEY_BOTTLE: "honigfläsche"
+  HONEYCOMB: "honigwabe"
+  HOPPER_MINECART: "trichterlore"
+  HORSE_SPAWN_EGG: "pferde-spawn-ei"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  HOWL_POTTERY_SHARD: "gehüle-töpferscherbe"
+  HOWL_POTTERY_SHERD: "gehüle-töpferscherbe"
+  HUSK_SPAWN_EGG: "wüestezombie-spawn-ei"
+  INK_SAC: "tintebütel"
+  IRON_AXE: "iseaxt"
+  IRON_BOOTS: "isestiefel"
+  IRON_CHESTPLATE: "iseharnisch"
+  IRON_GOLEM_SPAWN_EGG: "isegolem-spawn-ei"
+  IRON_HELMET: "isehelm"
+  IRON_HOE: "isehacke"
+  IRON_HORSE_ARMOR: "iserni rossharnisch"
+  IRON_INGOT: "isebarre"
+  IRON_LEGGINGS: "isebeischutz"
+  IRON_NUGGET: "isechlumpe"
+  IRON_PICKAXE: "isespitzhacki"
+  IRON_SHOVEL: "iseschufle"
+  IRON_SWORD: "iseschwert"
+  ITEM_FRAME: "rahme"
+  JUNGLE_BOAT: "tropeholzboot"
+  JUNGLE_CHEST_BOAT: "tropeholzchisteboot"
+  KNOWLEDGE_BOOK: "buch des wüssens"
+  LAPIS_LAZULI: "lapislazuli"
+  LAVA_BUCKET: "lavachübel"
+  LEAD: "leine"
+  LEATHER: "leder"
+  LEATHER_BOOTS: "lederstiefel"
+  LEATHER_CHESTPLATE: "lederjacke"
+  LEATHER_HELMET: "lederchappe"
+  LEATHER_HORSE_ARMOR: "lederne rossharnisch"
+  LEATHER_LEGGINGS: "lederhose"
+  LIGHT_BLUE_DYE: "hellblaue farbstoff"
+  LIGHT_GRAY_DYE: "hellgraue farbstoff"
+  LIME_DYE: "hellgrüene farbstoff"
+  LINGERING_POTION: "verwiltrank"
+  LINGERING_POTION_EFFECT_AWKWARD: "seltsame verwiltrank"
+  LINGERING_POTION_EFFECT_EMPTY: "nöd braubare verwiltrank"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "verwiltrank vode füürresistenz"
+  LINGERING_POTION_EFFECT_HARMING: "verwiltrank vom schade"
+  LINGERING_POTION_EFFECT_HEALING: "verwiltrank vode heilig"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "verwiltrank vode unsichtbarkeit"
+  LINGERING_POTION_EFFECT_LEAPING: "verwiltrank vode sprungchraft"
+  LINGERING_POTION_EFFECT_LEVITATION: "verwiltrank vode schwebechraft"
+  LINGERING_POTION_EFFECT_LUCK: "verwiltrank vom glück"
+  LINGERING_POTION_EFFECT_MUNDANE: "gwöhnliche verwiltrank"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "verwiltrank vode nachtsicht"
+  LINGERING_POTION_EFFECT_POISON: "verwiltrank vode vergiftig"
+  LINGERING_POTION_EFFECT_REGENERATION: "verwiltrank vode regeneration"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "verwiltrank vom sanfte fall"
+  LINGERING_POTION_EFFECT_SLOWNESS: "verwiltrank vode langsamkeit"
+  LINGERING_POTION_EFFECT_STRENGTH: "verwiltrank vode stärki"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "verwiltrank vode schnelligkeit"
+  LINGERING_POTION_EFFECT_THICK: "dickflüssige verwiltrank"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "verwiltrank vom schildchrotemeister"
+  LINGERING_POTION_EFFECT_WATER: "verwilendi wasserfläsche"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "verwiltrank vode unterwasseratmig"
+  LINGERING_POTION_EFFECT_WEAKNESS: "verwiltrank vode schwächi"
+  LLAMA_SPAWN_EGG: "lama-spawn-ei"
+  LODESTONE_COMPASS: "leitstei-kompass"
+  MAGENTA_DYE: "magenta farbstoff"
+  MAGMA_CREAM: "magmacreme"
+  MAGMA_CUBE_SPAWN_EGG: "magmawürfel-spawn-ei"
+  MANGROVE_BOAT: "mangroveholzboot"
+  MANGROVE_CHEST_BOAT: "mangroveholzchisteboot"
+  MAP: "leeri charte"
+  MELON_SEEDS: "melonecherne"
+  MELON_SLICE: "meloneschibe"
+  MILK_BUCKET: "milchchübel"
+  MINECART: "lore"
+  MINER_POTTERY_SHARD: "bergarbeiter-töpferscherbe"
+  MINER_POTTERY_SHERD: "bergarbeiter-töpferscherbe"
+  MOJANG_BANNER_PATTERN: "bannervorlag"
+  MOJANG_BANNER_PATTERN_DESC: "mojang-logo"
+  MOOSHROOM_SPAWN_EGG: "mooshroom-spawn-ei"
+  MOURNER_POTTERY_SHARD: "wimmerer-töpferscherbe"
+  MOURNER_POTTERY_SHERD: "wimmerer-töpferscherbe"
+  MULE_SPAWN_EGG: "muultier-spawn-ei"
+  MUSHROOM_STEW: "pilzsuppe"
+  MUSIC_DISC_11: "schallplatte"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "schallplatte"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "schallplatte"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "schallplatte"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "schallplatte"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "schallplatte"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "schallplatte"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "schallplatte"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "schallplatte"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "schallplatte"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "schallplatte"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "schallplatte"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "schallplatte"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "schallplatte"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "schallplatte"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "schallplatte"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "rohs hammelfleisch"
+  NAME_TAG: "namensschild"
+  NAUTILUS_SHELL: "nautilusschale"
+  NETHER_BRICK: "netherziegel"
+  NETHER_STAR: "netherstern"
+  NETHERITE_AXE: "netheritaxt"
+  NETHERITE_BOOTS: "netheritstiefel"
+  NETHERITE_CHESTPLATE: "netheritharnisch"
+  NETHERITE_HELMET: "netherithelm"
+  NETHERITE_HOE: "netherithacke"
+  NETHERITE_INGOT: "netheritbarre"
+  NETHERITE_LEGGINGS: "netheritbeischutz"
+  NETHERITE_PICKAXE: "netheritspitzhacki"
+  NETHERITE_SCRAP: "netheritplatte"
+  NETHERITE_SHOVEL: "netheritschufle"
+  NETHERITE_SWORD: "netheritschwert"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "schmiedvorlag"
+  OAK_BOAT: "eicheholzboot"
+  OAK_CHEST_BOAT: "eicheholzchisteboot"
+  OCELOT_SPAWN_EGG: "ozelot-spawn-ei"
+  ORANGE_DYE: "orange farbstoff"
+  PAINTING: "gmäld"
+  PANDA_SPAWN_EGG: "panda-spawn-ei"
+  PAPER: "papier"
+  PARROT_SPAWN_EGG: "papagei-spawn-ei"
+  PHANTOM_MEMBRANE: "phantomhuut"
+  PHANTOM_SPAWN_EGG: "phantom-spawn-ei"
+  PIG_SPAWN_EGG: "schwein-spawn-ei"
+  PIGLIN_BANNER_PATTERN: "bannervorlag"
+  PIGLIN_BANNER_PATTERN_DESC: "schnauze"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin-barbar-spawn-ei"
+  PIGLIN_SPAWN_EGG: "piglin-spawn-ei"
+  PILLAGER_SPAWN_EGG: "plünderer-spawn-ei"
+  PINK_DYE: "rosa farbstoff"
+  PITCHER_POD: "channepflanzekapsel"
+  PLENTY_POTTERY_SHARD: "richtums-töpferscherbe"
+  PLENTY_POTTERY_SHERD: "richtums-töpferscherbe"
+  POISONOUS_POTATO: "giftige herdöpfel"
+  POLAR_BEAR_SPAWN_EGG: "iisbär-spawn-ei"
+  POPPED_CHORUS_FRUIT: "platzti chorusfrucht"
+  PORKCHOP: "rohs schwiifleisch"
+  POTATO: "herdöpfel"
+  POTION: "trank"
+  POTION_EFFECT_AWKWARD: "seltsame trank"
+  POTION_EFFECT_EMPTY: "nöd braubare trank"
+  POTION_EFFECT_FIRE_RESISTANCE: "trank vode füürresistenz"
+  POTION_EFFECT_HARMING: "trank vom schade"
+  POTION_EFFECT_HEALING: "trank vode heilig"
+  POTION_EFFECT_INVISIBILITY: "trank vode unsichtbarkeit"
+  POTION_EFFECT_LEAPING: "trank vode sprungchraft"
+  POTION_EFFECT_LEVITATION: "trank vode schwebechraft"
+  POTION_EFFECT_LUCK: "trank vom glück"
+  POTION_EFFECT_MUNDANE: "gwöhnliche trank"
+  POTION_EFFECT_NIGHT_VISION: "trank vode nachtsicht"
+  POTION_EFFECT_POISON: "trank vode vergiftig"
+  POTION_EFFECT_REGENERATION: "trank vode regeneration"
+  POTION_EFFECT_SLOW_FALLING: "trank vom sanfte fall"
+  POTION_EFFECT_SLOWNESS: "trank vode langsamkeit"
+  POTION_EFFECT_STRENGTH: "trank vode stärki"
+  POTION_EFFECT_SWIFTNESS: "trank vode schnelligkeit"
+  POTION_EFFECT_THICK: "dickflüssige trank"
+  POTION_EFFECT_TURTLE_MASTER: "trank vom schildchrotemeister"
+  POTION_EFFECT_WATER: "wasserfläsche"
+  POTION_EFFECT_WATER_BREATHING: "trank vode unterwasseratmig"
+  POTION_EFFECT_WEAKNESS: "trank vode schwächi"
+  POTTERY_SHARD_ARCHER: "schütze-töpferscherbe"
+  POTTERY_SHARD_ARMS_UP: "gebärde-töpferscherbe"
+  POTTERY_SHARD_PRIZE: "juwele-töpferscherbe"
+  POTTERY_SHARD_SKULL: "totechopf-töpferscherbe"
+  POWDER_SNOW_BUCKET: "pulverschneechübel"
+  PRISMARINE_CRYSTALS: "prismarinkristall"
+  PRISMARINE_SHARD: "prismarinscherbe"
+  PRIZE_POTTERY_SHARD: "juwele-töpferscherbe"
+  PRIZE_POTTERY_SHERD: "juwele-töpferscherbe"
+  PUFFERFISH: "chugelfisch"
+  PUFFERFISH_BUCKET: "chugelfischchübel"
+  PUFFERFISH_SPAWN_EGG: "chugelfisch-spawn-ei"
+  PUMPKIN_PIE: "chürbischueche"
+  PUMPKIN_SEEDS: "chürbischerne"
+  PURPLE_DYE: "violette farbstoff"
+  QUARTZ: "netherquarz"
+  RABBIT: "rohe chüngel"
+  RABBIT_FOOT: "chüngelpfote"
+  RABBIT_HIDE: "chüngelfell"
+  RABBIT_SPAWN_EGG: "chüngel-spawn-ei"
+  RABBIT_STEW: "chüngelragout"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  RAVAGER_SPAWN_EGG: "verwüester-spawn-ei"
+  RAW_COPPER: "rohchupfer"
+  RAW_GOLD: "rohgold"
+  RAW_IRON: "rohise"
+  RECOVERY_COMPASS: "rettigskompass"
+  RED_DYE: "rote farbstoff"
+  REDSTONE: "redstone-staub"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  ROTTEN_FLESH: "verrottets fleisch"
+  SADDLE: "sattel"
+  SALMON: "rohe lachs"
+  SALMON_BUCKET: "lachschübel"
+  SALMON_SPAWN_EGG: "lachs-spawn-ei"
+  SCUTE: "hornschild"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  SHEAF_POTTERY_SHARD: "garbe-töpferscherbe"
+  SHEAF_POTTERY_SHERD: "garbe-töpferscherbe"
+  SHEARS: "schär"
+  SHEEP_SPAWN_EGG: "schof-spawn-ei"
+  SHELTER_POTTERY_SHARD: "zuefluchts-töpferscherbe"
+  SHELTER_POTTERY_SHERD: "zuefluchts-töpferscherbe"
+  SHIELD: "schild"
+  SHIELD_BLACK: "schwarzes schild"
+  SHIELD_BLUE: "blaus schild"
+  SHIELD_BROWN: "bruns schild"
+  SHIELD_CYAN: "türkises schild"
+  SHIELD_GRAY: "graus schild"
+  SHIELD_GREEN: "grüens schild"
+  SHIELD_LIGHT_BLUE: "hellblaus schild"
+  SHIELD_LIGHT_GRAY: "hellgraus schild"
+  SHIELD_LIME: "hellgrüens schild"
+  SHIELD_MAGENTA: "magenta schild"
+  SHIELD_ORANGE: "oranges schild"
+  SHIELD_PINK: "rosa schild"
+  SHIELD_PURPLE: "violetts schild"
+  SHIELD_RED: "rots schild"
+  SHIELD_WHITE: "wisses schild"
+  SHIELD_YELLOW: "gelbes schild"
+  SHULKER_SHELL: "shulker-schale"
+  SHULKER_SPAWN_EGG: "shulker-spawn-ei"
+  SIGN: "schild"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  SILVERFISH_SPAWN_EGG: "silberfischli-spawn-ei"
+  SKELETON_HORSE_SPAWN_EGG: "skelettpferd-spawn-ei"
+  SKELETON_SPAWN_EGG: "skelett-spawn-ei"
+  SKULL_BANNER_PATTERN: "bannervorlag"
+  SKULL_BANNER_PATTERN_DESC: "schädel"
+  SKULL_POTTERY_SHARD: "totechopf-töpferscherbe"
+  SKULL_POTTERY_SHERD: "totechopf-töpferscherbe"
+  SLIME_BALL: "schlimball"
+  SLIME_SPAWN_EGG: "schlim-spawn-ei"
+  SMITHING_TEMPLATE: "schmiedvorlag"
+  SMITHING_TEMPLATE_APPLIES_TO: "awendbar uf:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "barre oder kristall hinzuefüege"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "rüstig"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "rüstigsteil hinzuefüege"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "barre & kristall"
+  SMITHING_TEMPLATE_INGREDIENTS: "werkstoff:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "netheritbarre hinzuefüege"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamatusrüstig"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "rüstigsteil werkzüg oder schwert us diamant hinzuefüege"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheritbarre"
+  SMITHING_TEMPLATE_UPGRADE: "ufwertig: "
+  SNIFFER_SPAWN_EGG: "schnüffler-spawn-ei"
+  SNORT_POTTERY_SHARD: "schnaub-töpferscherbe"
+  SNORT_POTTERY_SHERD: "schnaub-töpferscherbe"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  SNOW_GOLEM_SPAWN_EGG: "schneegolem-spawn-ei"
+  SNOWBALL: "schneeball"
+  SPECTRAL_ARROW: "spektralpfil"
+  SPIDER_EYE: "spinnenaug"
+  SPIDER_SPAWN_EGG: "spinne-spawn-ei"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  SPLASH_POTION: "wurftrank"
+  SPLASH_POTION_EFFECT_AWKWARD: "seltsame wurftrank"
+  SPLASH_POTION_EFFECT_EMPTY: "nöd braubare wurftrank"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "wurftrank vode füürresistenz"
+  SPLASH_POTION_EFFECT_HARMING: "wurftrank vom schade"
+  SPLASH_POTION_EFFECT_HEALING: "wurftrank vode heilig"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "wurftrank vode unsichtbarkeit"
+  SPLASH_POTION_EFFECT_LEAPING: "wurftrank vode sprungchraft"
+  SPLASH_POTION_EFFECT_LEVITATION: "wurftrank vode schwebechraft"
+  SPLASH_POTION_EFFECT_LUCK: "wurftrank vom glück"
+  SPLASH_POTION_EFFECT_MUNDANE: "normale wurftrank"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "wurftrank vode nachtsicht"
+  SPLASH_POTION_EFFECT_POISON: "wurftrank vode vergiftig"
+  SPLASH_POTION_EFFECT_REGENERATION: "wurftrank vode regeneration"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "wurftrank vom sanfte fall"
+  SPLASH_POTION_EFFECT_SLOWNESS: "wurftrank vode langsamkeit"
+  SPLASH_POTION_EFFECT_STRENGTH: "wurftrank vode stärki"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "wurftrank vode schnelligkeit"
+  SPLASH_POTION_EFFECT_THICK: "dickflüssige wurftank"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "wurftrank vom schildchrotemeister"
+  SPLASH_POTION_EFFECT_WATER: "werfbari wasserfläsche"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "wurftrank vode unterwasseratmig"
+  SPLASH_POTION_EFFECT_WEAKNESS: "wurftrank vode schwächi"
+  SPRUCE_BOAT: "fichteholzboot"
+  SPRUCE_CHEST_BOAT: "fichteholzchisteboot"
+  SPYGLASS: "fernrohr"
+  SQUID_SPAWN_EGG: "tintefisch-spawn-ei"
+  STICK: "stock"
+  STONE_AXE: "steiaxt"
+  STONE_HOE: "steihacke"
+  STONE_PICKAXE: "steispitzhacki"
+  STONE_SHOVEL: "steischufle"
+  STONE_SWORD: "steischwert"
+  STRAY_SPAWN_EGG: "iiswanderer-spawn-ei"
+  STRIDER_SPAWN_EGG: "schreiter-spawn-ei"
+  STRING: "fade"
+  SUGAR: "zucker"
+  SUSPICIOUS_STEW: "seltsami suppe"
+  SWEET_BERRIES: "süessbeeri"
+  TADPOLE_BUCKET: "gugermöndlichübel"
+  TADPOLE_SPAWN_EGG: "gugermöndli-spawn-ei"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  TIPPED_ARROW: "tränkte pfil"
+  TIPPED_ARROW_EFFECT_AWKWARD: "tränkte pfil"
+  TIPPED_ARROW_EFFECT_EMPTY: "nöd herstellbare tränkte pfil"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "pfil vode füürresistenz"
+  TIPPED_ARROW_EFFECT_HARMING: "pfil vom schade"
+  TIPPED_ARROW_EFFECT_HEALING: "pfil vode heilig"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "pfil vode unsichtbarkeit"
+  TIPPED_ARROW_EFFECT_LEAPING: "pfil vode sprungchraft"
+  TIPPED_ARROW_EFFECT_LEVITATION: "pfil vode schwebechraft"
+  TIPPED_ARROW_EFFECT_LUCK: "pfil vom glück"
+  TIPPED_ARROW_EFFECT_MUNDANE: "tränkte pfil"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "pfil vode nachtsicht"
+  TIPPED_ARROW_EFFECT_POISON: "pfil vode vergiftig"
+  TIPPED_ARROW_EFFECT_REGENERATION: "pfil vode regeneration"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "pfil vom sanfte fall"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "pfil vode langsamkeit"
+  TIPPED_ARROW_EFFECT_STRENGTH: "pfil vode stärki"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "pfil vode schnelligkeit"
+  TIPPED_ARROW_EFFECT_THICK: "tränkte pfil"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "pfil vom schildchrotemeister"
+  TIPPED_ARROW_EFFECT_WATER: "nasse pfil"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "pfil vode unterwasseratmig"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "pfil vode schwächi"
+  TNT_MINECART: "tnt-lore"
+  TORCHFLOWER_SEEDS: "fackelliliesame"
+  TOTEM_OF_UNDYING: "totem vode unsterblichkeit"
+  TRADER_LLAMA_SPAWN_EGG: "händlerlama-spawn-ei"
+  TRIAL_KEY: "prüefigsschlüssel"
+  TRIDENT: "drüzack"
+  TROPICAL_FISH: "tropefisch"
+  TROPICAL_FISH_BUCKET: "tropefischchübel"
+  TROPICAL_FISH_SPAWN_EGG: "tropefisch-spawn-ei"
+  TURTLE_HELMET: "schildchrotepanzer"
+  TURTLE_SPAWN_EGG: "schildchrote-spawn-ei"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  VEX_SPAWN_EGG: "plagegeister-spawn-ei"
+  VILLAGER_SPAWN_EGG: "dorfbewohner-spawn-ei"
+  VINDICATOR_SPAWN_EGG: "diener-spawn-ei"
+  WANDERING_TRADER_SPAWN_EGG: "fahrende-händler-spawn-ei"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  WARDEN_SPAWN_EGG: "wärter-spawn-ei"
+  WARPED_FUNGUS_ON_A_STICK: "wirrpilzruete"
+  WATER_BUCKET: "wasserchübel"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  WHEAT: "weize"
+  WHEAT_SEEDS: "weizechörner"
+  WHITE_DYE: "wisse farbschtoff"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "schmiedvorlag"
+  WITCH_SPAWN_EGG: "hexe-spawn-ei"
+  WITHER_SKELETON_SPAWN_EGG: "witherskelett-spawn-ei"
+  WITHER_SPAWN_EGG: "wither-spawn-ei"
+  WOLF_SPAWN_EGG: "wolfs-spawn-ei"
+  WOODEN_AXE: "holzaxt"
+  WOODEN_HOE: "holzhacke"
+  WOODEN_PICKAXE: "holzspitzhacki"
+  WOODEN_SHOVEL: "holzschufle"
+  WOODEN_SWORD: "holzschwert"
+  WRITABLE_BOOK: "buech und federe"
+  WRITTEN_BOOK: "gschribenes buech"
+  YELLOW_DYE: "gelbe farbstoff"
+  ZOGLIN_SPAWN_EGG: "zoglin-spawn-ei"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombiepferde-spawn-ei"
+  ZOMBIE_SPAWN_EGG: "zombie-spawn-ei"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "zombiedorfbewohner-spawn-ei"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombifizierte-piglin-spawn-ei"
+  CHEST: "am körper:"
+  FEET: "ah de füess:"
+  HEAD: "ufem chopf:"
+  LEGS: "ah de bei:"
+  MAINHAND: "ide haupthand:"
+  OFFHAND: "i de zweithand:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

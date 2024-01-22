@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akaasianappi"
+  ACACIA_DOOR: "akaasiaovi"
+  ACACIA_FENCE: "akaasia-aita"
+  ACACIA_FENCE_GATE: "akaasiaportti"
+  ACACIA_HANGING_SIGN: "roikkuva akaasiakyltti"
+  ACACIA_LEAVES: "akaasianlehdet"
+  ACACIA_LOG: "akaasiahalko"
+  ACACIA_PLANKS: "akaasialankut"
+  ACACIA_PRESSURE_PLATE: "akaasiapainelaatta"
+  ACACIA_SAPLING: "akaasian taimi"
+  ACACIA_SIGN: "akaasiakyltti"
+  ACACIA_SLAB: "akaasialaatta"
+  ACACIA_STAIRS: "akaasiaportaat"
+  ACACIA_TRAPDOOR: "akaasialuukku"
+  ACACIA_WALL_HANGING_SIGN: "ripustettu roikkuva akaasiakyltti"
+  ACACIA_WALL_SIGN: "ripustettu akaasiakyltti"
+  ACACIA_WOOD: "akaasiapuu"
+  ACTIVATOR_RAIL: "aktivointiraide"
+  AIR: "ilma"
+  ALLIUM: "laukka"
+  AMETHYST_BLOCK: "ametistikuutio"
+  AMETHYST_CLUSTER: "ametistirykelmä"
+  ANCIENT_DEBRIS: "muinainen romu"
+  ANDESITE: "andesiitti"
+  ANDESITE_SLAB: "andesiittilaatta"
+  ANDESITE_STAIRS: "andesiittiportaat"
+  ANDESITE_WALL: "andesiittimuuri"
+  ANVIL: "alasin"
+  ATTACHED_MELON_STEM: "kytkeytynyt meloninvarsi"
+  ATTACHED_PUMPKIN_STEM: "kytkeytynyt kurpitsan varsi"
+  AZALEA: "atsalea"
+  AZALEA_LEAVES: "atsaleanlehdet"
+  AZURE_BLUET: "keijunsilmä"
+  BAMBOO: "bambu"
+  BAMBOO_BLOCK: "bambukuutio"
+  BAMBOO_BUTTON: "bambunappi"
+  BAMBOO_DOOR: "bambuovi"
+  BAMBOO_FENCE: "bambuaita"
+  BAMBOO_FENCE_GATE: "bambuportti"
+  BAMBOO_HANGING_SIGN: "roikkuva bambukyltti"
+  BAMBOO_MOSAIC: "bambumosaiikki"
+  BAMBOO_MOSAIC_SLAB: "bambumosaiikkilaatta"
+  BAMBOO_MOSAIC_STAIRS: "bambumosaiikkiportaat"
+  BAMBOO_PLANKS: "bambulankut"
+  BAMBOO_PRESSURE_PLATE: "bambupainelaatta"
+  BAMBOO_SAPLING: "bambunverso"
+  BAMBOO_SIGN: "bambukyltti"
+  BAMBOO_SLAB: "bambulaatta"
+  BAMBOO_STAIRS: "bambuportaat"
+  BAMBOO_TRAPDOOR: "bambuluukku"
+  BAMBOO_WALL_HANGING_SIGN: "ripustettu roikkuva bambukyltti"
+  BAMBOO_WALL_SIGN: "ripustettu bambukyltti"
+  BANNER_BASE_BLACK: "täysin musta pohja"
+  BANNER_BASE_BLUE: "täysin sininen pohja"
+  BANNER_BASE_BROWN: "täysin ruskea pohja"
+  BANNER_BASE_CYAN: "täysin syaani pohja"
+  BANNER_BASE_GRAY: "täysin harmaa pohja"
+  BANNER_BASE_GREEN: "täysin vihreä pohja"
+  BANNER_BASE_LIGHT_BLUE: "täysin vaaleansininen pohja"
+  BANNER_BASE_LIGHT_GRAY: "täysin vaaleanharmaa pohja"
+  BANNER_BASE_LIME: "täysin limenvihreä pohja"
+  BANNER_BASE_MAGENTA: "täysin magenta pohja"
+  BANNER_BASE_ORANGE: "täysin oranssi pohja"
+  BANNER_BASE_PINK: "täysin vaaleanpunainen pohja"
+  BANNER_BASE_PURPLE: "täysin violetti pohja"
+  BANNER_BASE_RED: "täysin punainen pohja"
+  BANNER_BASE_WHITE: "täysin valkoinen pohja"
+  BANNER_BASE_YELLOW: "täysin keltainen pohja"
+  BANNER_BORDER_BLACK: "musta reunus"
+  BANNER_BORDER_BLUE: "sininen reunus"
+  BANNER_BORDER_BROWN: "ruskea reunus"
+  BANNER_BORDER_CYAN: "syaani reunus"
+  BANNER_BORDER_GRAY: "harmaa reunus"
+  BANNER_BORDER_GREEN: "vihreä reunus"
+  BANNER_BORDER_LIGHT_BLUE: "vaaleansininen reunus"
+  BANNER_BORDER_LIGHT_GRAY: "vaaleanharmaa reunus"
+  BANNER_BORDER_LIME: "limetinvihreä reunus"
+  BANNER_BORDER_MAGENTA: "purppura reunus"
+  BANNER_BORDER_ORANGE: "oranssi reunus"
+  BANNER_BORDER_PINK: "vaaleanpunainen reunus"
+  BANNER_BORDER_PURPLE: "violetti reunus"
+  BANNER_BORDER_RED: "punainen reunus"
+  BANNER_BORDER_WHITE: "valkoinen reunus"
+  BANNER_BORDER_YELLOW: "keltainen reunus"
+  BANNER_BRICKS_BLACK: "musta tiilikuvio"
+  BANNER_BRICKS_BLUE: "sininen tiilikuvio"
+  BANNER_BRICKS_BROWN: "ruskea tiilikuvio"
+  BANNER_BRICKS_CYAN: "syaani tiilikuvio"
+  BANNER_BRICKS_GRAY: "harmaa tiilikuvio"
+  BANNER_BRICKS_GREEN: "vihreä tiilikuvio"
+  BANNER_BRICKS_LIGHT_BLUE: "vaaleansininen tiilikuvio"
+  BANNER_BRICKS_LIGHT_GRAY: "vaaleanharmaa tiilikuvio"
+  BANNER_BRICKS_LIME: "limetinvihreä tiilikuvio"
+  BANNER_BRICKS_MAGENTA: "purppura tiilikuvio"
+  BANNER_BRICKS_ORANGE: "oranssi tiilikuvio"
+  BANNER_BRICKS_PINK: "vaaleanpunainen tiilikuvio"
+  BANNER_BRICKS_PURPLE: "violetti tiilikuvio"
+  BANNER_BRICKS_RED: "punainen tiilikuvio"
+  BANNER_BRICKS_WHITE: "valkoinen tiilikuvio"
+  BANNER_BRICKS_YELLOW: "keltainen tiilikuvio"
+  BANNER_CIRCLE_BLACK: "musta ympyrä"
+  BANNER_CIRCLE_BLUE: "sininen ympyrä"
+  BANNER_CIRCLE_BROWN: "ruskea ympyrä"
+  BANNER_CIRCLE_CYAN: "syaani ympyrä"
+  BANNER_CIRCLE_GRAY: "harmaa ympyrä"
+  BANNER_CIRCLE_GREEN: "vihreä ympyrä"
+  BANNER_CIRCLE_LIGHT_BLUE: "vaaleansininen ympyrä"
+  BANNER_CIRCLE_LIGHT_GRAY: "vaaleanharmaa ympyrä"
+  BANNER_CIRCLE_LIME: "limetinvihreä ympyrä"
+  BANNER_CIRCLE_MAGENTA: "purppura ympyrä"
+  BANNER_CIRCLE_ORANGE: "oranssi ympyrä"
+  BANNER_CIRCLE_PINK: "vaaleanpunainen ympyrä"
+  BANNER_CIRCLE_PURPLE: "violetti ympyrä"
+  BANNER_CIRCLE_RED: "punainen ympyrä"
+  BANNER_CIRCLE_WHITE: "valkoinen ympyrä"
+  BANNER_CIRCLE_YELLOW: "keltainen ympyrä"
+  BANNER_CREEPER_BLACK: "musta creeper-räjähde"
+  BANNER_CREEPER_BLUE: "sininen creeper-räjähde"
+  BANNER_CREEPER_BROWN: "ruskea creeper-räjähde"
+  BANNER_CREEPER_CYAN: "syaani creeper-räjähde"
+  BANNER_CREEPER_GRAY: "harmaa creeper-räjähde"
+  BANNER_CREEPER_GREEN: "vihreä creeper-räjähde"
+  BANNER_CREEPER_LIGHT_BLUE: "vaaleansininen creeper-räjähde"
+  BANNER_CREEPER_LIGHT_GRAY: "vaaleanharmaa creeper-räjähde"
+  BANNER_CREEPER_LIME: "limetinvihreä creeper-räjähde"
+  BANNER_CREEPER_MAGENTA: "purppura creeper-räjähde"
+  BANNER_CREEPER_ORANGE: "oranssi creeper-räjähde"
+  BANNER_CREEPER_PINK: "vaaleanpunainen creeper-räjähde"
+  BANNER_CREEPER_PURPLE: "violetti creeper-räjähde"
+  BANNER_CREEPER_RED: "punainen creeper-räjähde"
+  BANNER_CREEPER_WHITE: "valkoinen creeper-räjähde"
+  BANNER_CREEPER_YELLOW: "keltainen creeper-räjähde"
+  BANNER_CROSS_BLACK: "musta vinoristi"
+  BANNER_CROSS_BLUE: "sininen vinoristi"
+  BANNER_CROSS_BROWN: "ruskea vinoristi"
+  BANNER_CROSS_CYAN: "syaani vinoristi"
+  BANNER_CROSS_GRAY: "harmaa vinoristi"
+  BANNER_CROSS_GREEN: "vihreä vinoristi"
+  BANNER_CROSS_LIGHT_BLUE: "vaaleansininen vinoristi"
+  BANNER_CROSS_LIGHT_GRAY: "vaaleanharmaa vinoristi"
+  BANNER_CROSS_LIME: "limetinvihreä vinoristi"
+  BANNER_CROSS_MAGENTA: "purppura vinoristi"
+  BANNER_CROSS_ORANGE: "oranssi vinoristi"
+  BANNER_CROSS_PINK: "vaaleanpunainen vinoristi"
+  BANNER_CROSS_PURPLE: "violetti vinoristi"
+  BANNER_CROSS_RED: "punainen vinoristi"
+  BANNER_CROSS_WHITE: "valkoinen vinoristi"
+  BANNER_CROSS_YELLOW: "keltainen vinoristi"
+  BANNER_CURLY_BORDER_BLACK: "musta hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_BLUE: "sininen hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_BROWN: "ruskea hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_CYAN: "syaani hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_GRAY: "harmaa hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_GREEN: "vihreä hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "vaaleansininen hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "vaaleanharmaa hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_LIME: "limetinvihreä hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_MAGENTA: "purppura hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_ORANGE: "oranssi hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_PINK: "vaaleanpunainen hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_PURPLE: "violetti hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_RED: "punainen hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_WHITE: "valkoinen hammaskoroinen reunus"
+  BANNER_CURLY_BORDER_YELLOW: "keltainen hammaskoroinen reunus"
+  BANNER_DIAGONAL_LEFT_BLACK: "musta lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_BLUE: "sininen lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_BROWN: "ruskea lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_CYAN: "syaani lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_GRAY: "harmaa lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_GREEN: "vihreä lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "vaaleansininen lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "vaaleanharmaa lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_LIME: "limetinvihreä lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "purppura lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_ORANGE: "oranssi lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_PINK: "vaaleanpunainen lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_PURPLE: "violetti lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_RED: "punainen lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_WHITE: "valkoinen lakiovastalohkoinen"
+  BANNER_DIAGONAL_LEFT_YELLOW: "keltainen lakiovastalohkoinen"
+  BANNER_DIAGONAL_RIGHT_BLACK: "musta lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_BLUE: "sininen lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_BROWN: "ruskea lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_CYAN: "syaani lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_GRAY: "harmaa lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_GREEN: "vihreä lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "vaaleansininen lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "vaaleanharmaa lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_LIME: "limetinvihreä lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "purppura lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oranssi lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_PINK: "vaaleanpunainen lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "violetti lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_RED: "punainen lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_WHITE: "valkoinen lakiolohkoinen"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "keltainen lakiolohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "musta tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "sininen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "ruskea tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "syaani tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "harmaa tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "vihreä tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "vaaleansininen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "vaaleanharmaa tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "limetinvihreä tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "purppura tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "oranssi tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "vaaleanpunainen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "violetti tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_RED: "punainen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "valkoinen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "keltainen tyviölohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "musta tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "sininen tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "ruskea tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "syaani tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "harmaa tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "vihreä tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "vaaleansininen tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "vaaleanharmaa tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "limetinvihreä tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "purppura tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "oranssi tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "vaaleanpunainen  tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "violetti tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "punainen tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "valkoinen tyviövastalohkoinen"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "keltainen tyviövastalohkoinen"
+  BANNER_FLOWER_BLACK: "musta kukkaräjähde"
+  BANNER_FLOWER_BLUE: "sininen kukkaräjähde"
+  BANNER_FLOWER_BROWN: "ruskea kukkaräjähde"
+  BANNER_FLOWER_CYAN: "syaani kukkaräjähde"
+  BANNER_FLOWER_GRAY: "harmaa kukkaräjähde"
+  BANNER_FLOWER_GREEN: "vihreä kukkaräjähde"
+  BANNER_FLOWER_LIGHT_BLUE: "vaaleansininen kukkaräjähde"
+  BANNER_FLOWER_LIGHT_GRAY: "vaaleanharmaa kukkaräjähde"
+  BANNER_FLOWER_LIME: "limetinvihreä kukkaräjähde"
+  BANNER_FLOWER_MAGENTA: "purppura kukkaräjähde"
+  BANNER_FLOWER_ORANGE: "oranssi kukkaräjähde"
+  BANNER_FLOWER_PINK: "vaaleanpunainen kukkaräjähde"
+  BANNER_FLOWER_PURPLE: "violetti kukkaräjähde"
+  BANNER_FLOWER_RED: "punainen kukkaräjähde"
+  BANNER_FLOWER_WHITE: "valkoinen kukkaräjähde"
+  BANNER_FLOWER_YELLOW: "keltainen kukkaräjähde"
+  BANNER_GLOBE_BLACK: "musta karttakuutio"
+  BANNER_GLOBE_BLUE: "sininen karttakuutio"
+  BANNER_GLOBE_BROWN: "ruskea karttakuutio"
+  BANNER_GLOBE_CYAN: "syaani karttakuutio"
+  BANNER_GLOBE_GRAY: "harmaa karttakuutio"
+  BANNER_GLOBE_GREEN: "vihreä karttakuutio"
+  BANNER_GLOBE_LIGHT_BLUE: "vaaleansininen karttakuutio"
+  BANNER_GLOBE_LIGHT_GRAY: "vaaleanharmaa karttakuutio"
+  BANNER_GLOBE_LIME: "limetinvihreä karttakuutio"
+  BANNER_GLOBE_MAGENTA: "purppura karttakuutio"
+  BANNER_GLOBE_ORANGE: "oranssi karttakuutio"
+  BANNER_GLOBE_PINK: "vaaleanpunainen karttakuutio"
+  BANNER_GLOBE_PURPLE: "violetti karttakuutio"
+  BANNER_GLOBE_RED: "punainen karttakuutio"
+  BANNER_GLOBE_WHITE: "valkoinen karttakuutio"
+  BANNER_GLOBE_YELLOW: "keltainen karttakuutio"
+  BANNER_GRADIENT_BLACK: "musta häivytys alas"
+  BANNER_GRADIENT_BLUE: "sininen häivytys alas"
+  BANNER_GRADIENT_BROWN: "ruskea häivytys alas"
+  BANNER_GRADIENT_CYAN: "syaani häivytys alas"
+  BANNER_GRADIENT_GRAY: "harmaa häivytys alas"
+  BANNER_GRADIENT_GREEN: "vihreä häivytys alas"
+  BANNER_GRADIENT_LIGHT_BLUE: "vaaleansininen häivytys alas"
+  BANNER_GRADIENT_LIGHT_GRAY: "vaaleanharmaa häivytys alas"
+  BANNER_GRADIENT_LIME: "limetinvihreä häivytys alas"
+  BANNER_GRADIENT_MAGENTA: "purppura häivytys alas"
+  BANNER_GRADIENT_ORANGE: "oranssi häivytys alas"
+  BANNER_GRADIENT_PINK: "vaaleanpunainen häivytys alas"
+  BANNER_GRADIENT_PURPLE: "violetti häivytys alas"
+  BANNER_GRADIENT_RED: "punainen häivytys alas"
+  BANNER_GRADIENT_WHITE: "valkoinen häivytys alas"
+  BANNER_GRADIENT_YELLOW: "keltainen häivytys alas"
+  BANNER_GRADIENT_UP_BLACK: "musta häivytys ylös"
+  BANNER_GRADIENT_UP_BLUE: "sininen häivytys ylös"
+  BANNER_GRADIENT_UP_BROWN: "ruskea häivytys ylös"
+  BANNER_GRADIENT_UP_CYAN: "syaani häivytys ylös"
+  BANNER_GRADIENT_UP_GRAY: "harmaa häivytys ylös"
+  BANNER_GRADIENT_UP_GREEN: "vihreä häivytys ylös"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "vaaleansininen häivytys ylös"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "vaaleanharmaa häivytys ylös"
+  BANNER_GRADIENT_UP_LIME: "limetinvihreä häivytys ylös"
+  BANNER_GRADIENT_UP_MAGENTA: "purppura häivytys ylös"
+  BANNER_GRADIENT_UP_ORANGE: "oranssi häivytys ylös"
+  BANNER_GRADIENT_UP_PINK: "vaaleanpunainen häivytys ylös"
+  BANNER_GRADIENT_UP_PURPLE: "violetti häivytys ylös"
+  BANNER_GRADIENT_UP_RED: "punainen häivytys ylös"
+  BANNER_GRADIENT_UP_WHITE: "valkoinen häivytys ylös"
+  BANNER_GRADIENT_UP_YELLOW: "keltainen häivytys ylös"
+  BANNER_HALF_HORIZONTAL_BLACK: "musta yläpuoli"
+  BANNER_HALF_HORIZONTAL_BLUE: "sininen yläpuoli"
+  BANNER_HALF_HORIZONTAL_BROWN: "ruskea yläpuoli"
+  BANNER_HALF_HORIZONTAL_CYAN: "syaani yläpuoli"
+  BANNER_HALF_HORIZONTAL_GRAY: "harmaa yläpuoli"
+  BANNER_HALF_HORIZONTAL_GREEN: "vihreä yläpuoli"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "vaaleansininen yläpuoli"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "vaaleanharmaa yläpuoli"
+  BANNER_HALF_HORIZONTAL_LIME: "limetinvihreä yläpuoli"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "purppura yläpuoli"
+  BANNER_HALF_HORIZONTAL_ORANGE: "oranssi yläpuoli"
+  BANNER_HALF_HORIZONTAL_PINK: "vaaleanpunainen yläpuoli"
+  BANNER_HALF_HORIZONTAL_PURPLE: "violetti yläpuoli"
+  BANNER_HALF_HORIZONTAL_RED: "punainen yläpuoli"
+  BANNER_HALF_HORIZONTAL_WHITE: "valkoinen yläpuoli"
+  BANNER_HALF_HORIZONTAL_YELLOW: "keltainen yläpuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "musta alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "sininen alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "ruskea alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "syaani alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "harmaa alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "vihreä alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "vaaleansininen alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "vaaleanharmaa alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "limetinvihreä alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "purppura alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "oranssi alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "vaaleanpunainen alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "violetti alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "punainen alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "valkoinen alapuoli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "keltainen alapuoli"
+  BANNER_HALF_VERTICAL_BLACK: "musta halkoinen"
+  BANNER_HALF_VERTICAL_BLUE: "sininen halkoinen"
+  BANNER_HALF_VERTICAL_BROWN: "ruskea halkoinen"
+  BANNER_HALF_VERTICAL_CYAN: "syaani halkoinen"
+  BANNER_HALF_VERTICAL_GRAY: "harmaa halkoinen"
+  BANNER_HALF_VERTICAL_GREEN: "vihreä halkoinen"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "vaaleansininen halkoinen"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "vaaleanharmaa halkoinen"
+  BANNER_HALF_VERTICAL_LIME: "lime halkoinen"
+  BANNER_HALF_VERTICAL_MAGENTA: "purppura halkoinen"
+  BANNER_HALF_VERTICAL_ORANGE: "oranssi halkoinen"
+  BANNER_HALF_VERTICAL_PINK: "vaaleanpunainen halkoinen"
+  BANNER_HALF_VERTICAL_PURPLE: "violetti halkoinen"
+  BANNER_HALF_VERTICAL_RED: "punainen halkoinen"
+  BANNER_HALF_VERTICAL_WHITE: "valkoinen halkoinen"
+  BANNER_HALF_VERTICAL_YELLOW: "keltainen halkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "musta vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "sininen vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "ruskea vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "syaani vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "harmaa vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "vihreä vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "vaaleansininen vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "vaaleanharmaa vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "limetinvihreä vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "purppura vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "oranssi vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "vaaleanpunainen vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "violetti vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "punainen vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "valkoinen vastahalkoinen"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "keltainen vastahalkoinen"
+  BANNER_MOJANG_BLACK: "musta mojang-logo"
+  BANNER_MOJANG_BLUE: "sininen mojang-logo"
+  BANNER_MOJANG_BROWN: "ruskea mojang-logo"
+  BANNER_MOJANG_CYAN: "syaani mojang-logo"
+  BANNER_MOJANG_GRAY: "harmaa mojang-logo"
+  BANNER_MOJANG_GREEN: "vihreä mojang-logo"
+  BANNER_MOJANG_LIGHT_BLUE: "vaaleansininen mojang-logo"
+  BANNER_MOJANG_LIGHT_GRAY: "vaaleanharmaa mojang-logo"
+  BANNER_MOJANG_LIME: "limetinvihreä mojang-logo"
+  BANNER_MOJANG_MAGENTA: "purppura mojang-logo"
+  BANNER_MOJANG_ORANGE: "oranssi mojang-logo"
+  BANNER_MOJANG_PINK: "vaaleanpunainen mojang-logo"
+  BANNER_MOJANG_PURPLE: "violetti mojang-logo"
+  BANNER_MOJANG_RED: "punainen mojang-logo"
+  BANNER_MOJANG_WHITE: "valkoinen mojang-logo"
+  BANNER_MOJANG_YELLOW: "keltainen mojang-logo"
+  BANNER_PIGLIN_BLACK: "musta kärsä"
+  BANNER_PIGLIN_BLUE: "sininen kärsä"
+  BANNER_PIGLIN_BROWN: "ruskea kärsä"
+  BANNER_PIGLIN_CYAN: "syaani kärsä"
+  BANNER_PIGLIN_GRAY: "harmaa kärsä"
+  BANNER_PIGLIN_GREEN: "vihreä kärsä"
+  BANNER_PIGLIN_LIGHT_BLUE: "vaaleansininen kärsä"
+  BANNER_PIGLIN_LIGHT_GRAY: "vaaleanharmaa kärsä"
+  BANNER_PIGLIN_LIME: "limetinvihreä kärsä"
+  BANNER_PIGLIN_MAGENTA: "purppura kärsä"
+  BANNER_PIGLIN_ORANGE: "oranssi kärsä"
+  BANNER_PIGLIN_PINK: "vaaleanpunainen kärsä"
+  BANNER_PIGLIN_PURPLE: "violetti kärsä"
+  BANNER_PIGLIN_RED: "punainen kärsä"
+  BANNER_PIGLIN_WHITE: "valkoinen kärsä"
+  BANNER_PIGLIN_YELLOW: "keltainen kärsä"
+  BANNER_RHOMBUS_BLACK: "musta ruutu"
+  BANNER_RHOMBUS_BLUE: "sininen ruutu"
+  BANNER_RHOMBUS_BROWN: "ruskea ruutu"
+  BANNER_RHOMBUS_CYAN: "syaani ruutu"
+  BANNER_RHOMBUS_GRAY: "harmaa ruutu"
+  BANNER_RHOMBUS_GREEN: "vihreä ruutu"
+  BANNER_RHOMBUS_LIGHT_BLUE: "vaaleansininen ruutu"
+  BANNER_RHOMBUS_LIGHT_GRAY: "vaaleanharmaa ruutu"
+  BANNER_RHOMBUS_LIME: "limetinvihreä ruutu"
+  BANNER_RHOMBUS_MAGENTA: "purppura ruutu"
+  BANNER_RHOMBUS_ORANGE: "oranssi ruutu"
+  BANNER_RHOMBUS_PINK: "vaaleanpunainen ruutu"
+  BANNER_RHOMBUS_PURPLE: "violetti ruutu"
+  BANNER_RHOMBUS_RED: "punainen ruutu"
+  BANNER_RHOMBUS_WHITE: "valkoinen ruutu"
+  BANNER_RHOMBUS_YELLOW: "keltainen ruutu"
+  BANNER_SKULL_BLACK: "musta pääkallo-räjähde"
+  BANNER_SKULL_BLUE: "sininen pääkallo-räjähde"
+  BANNER_SKULL_BROWN: "ruskea pääkallo-räjähde"
+  BANNER_SKULL_CYAN: "syaani pääkallo-räjähde"
+  BANNER_SKULL_GRAY: "harmaa pääkallo-räjähde"
+  BANNER_SKULL_GREEN: "vihreä pääkallo-räjähde"
+  BANNER_SKULL_LIGHT_BLUE: "vaaleansininen pääkallo-räjähde"
+  BANNER_SKULL_LIGHT_GRAY: "vaaleanharmaa pääkallo-räjähde"
+  BANNER_SKULL_LIME: "limetinvihreä pääkallo-räjähde"
+  BANNER_SKULL_MAGENTA: "purppura pääkallo-räjähde"
+  BANNER_SKULL_ORANGE: "oranssi pääkallo-räjähde"
+  BANNER_SKULL_PINK: "vaaleanpunainen pääkallo-räjähde"
+  BANNER_SKULL_PURPLE: "violetti pääkallo-räjähde"
+  BANNER_SKULL_RED: "punainen pääkallo-räjähde"
+  BANNER_SKULL_WHITE: "valkoinen pääkallo-räjähde"
+  BANNER_SKULL_YELLOW: "keltainen pääkallo-räjähde"
+  BANNER_SMALL_STRIPES_BLACK: "musta paalu"
+  BANNER_SMALL_STRIPES_BLUE: "sininen paalu"
+  BANNER_SMALL_STRIPES_BROWN: "ruskea paalu"
+  BANNER_SMALL_STRIPES_CYAN: "syaani paalu"
+  BANNER_SMALL_STRIPES_GRAY: "harmaa paalu"
+  BANNER_SMALL_STRIPES_GREEN: "vihreä paalu"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "vaaleansininen paalu"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "vaaleanharmaa paalu"
+  BANNER_SMALL_STRIPES_LIME: "limetinvihreä paalu"
+  BANNER_SMALL_STRIPES_MAGENTA: "purppura paalu"
+  BANNER_SMALL_STRIPES_ORANGE: "oranssi paalu"
+  BANNER_SMALL_STRIPES_PINK: "vaaleanpunainen paalu"
+  BANNER_SMALL_STRIPES_PURPLE: "violetti paalu"
+  BANNER_SMALL_STRIPES_RED: "punainen paalu"
+  BANNER_SMALL_STRIPES_WHITE: "valkoinen paalu"
+  BANNER_SMALL_STRIPES_YELLOW: "keltainen paalu"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "musta vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "sininen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "ruskea vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "syaani vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "harmaa vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "vihreä vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "vaaleansininen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "vaaleanharmaa vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "limetinvihreä vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "purppura vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "oranssi vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "vaaleanpunainen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "violetti vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "punainen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "valkoinen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "keltainen vasen alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "musta oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "sininen oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "ruskea oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "syaani oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "harmaa oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "vihreä oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "vaaleansininen oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "vaaleanharmaa oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "limetinvihreä oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "purppura oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "oranssi oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "vaaleanpunainen oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "violetti oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "punainen oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "valkoinen oikea alakulma"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "keltainen oikea alakulma"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "musta vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "sininen vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "ruskea vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "syaani vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "harmaa vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "vihreä vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "vaaleansininen vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "vaaleanharmaa vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_LIME: "limetinvihreä vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "purppura vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "oranssi vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_PINK: "vaaleanpunainen vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "violetti vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_RED: "punainen vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "valkoinen vasen yläkulma"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "keltainen vasen yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "musta oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "sininen oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "ruskea oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "syaani oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "harmaa oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "vihreä oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "vaaleansininen oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "vaaleanharmaa oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "limetinvihreä oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "purppura oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "oranssi oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "vaaleanpunainen oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "violetti oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_RED: "punainen oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "valkoinen oikea yläkulma"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "keltainen oikea yläkulma"
+  BANNER_STRAIGHT_CROSS_BLACK: "musta risti"
+  BANNER_STRAIGHT_CROSS_BLUE: "sininen risti"
+  BANNER_STRAIGHT_CROSS_BROWN: "ruskea risti"
+  BANNER_STRAIGHT_CROSS_CYAN: "syaani risti"
+  BANNER_STRAIGHT_CROSS_GRAY: "harmaa risti"
+  BANNER_STRAIGHT_CROSS_GREEN: "vihreä risti"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "vaaleansininen risti"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "vaaleanharmaa risti"
+  BANNER_STRAIGHT_CROSS_LIME: "limetinvihreä risti"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "purppura risti"
+  BANNER_STRAIGHT_CROSS_ORANGE: "oranssi risti"
+  BANNER_STRAIGHT_CROSS_PINK: "vaaleanpunainen risti"
+  BANNER_STRAIGHT_CROSS_PURPLE: "violetti risti"
+  BANNER_STRAIGHT_CROSS_RED: "punainen risti"
+  BANNER_STRAIGHT_CROSS_WHITE: "valkoinen risti"
+  BANNER_STRAIGHT_CROSS_YELLOW: "keltainen risti"
+  BANNER_STRIPE_BOTTOM_BLACK: "musta tyviö"
+  BANNER_STRIPE_BOTTOM_BLUE: "sininen tyviö"
+  BANNER_STRIPE_BOTTOM_BROWN: "ruskea tyviö"
+  BANNER_STRIPE_BOTTOM_CYAN: "syaani tyviö"
+  BANNER_STRIPE_BOTTOM_GRAY: "harmaa tyviö"
+  BANNER_STRIPE_BOTTOM_GREEN: "vihreä tyviö"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "vaaleansininen tyviö"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "vaaleanharmaa tyviö"
+  BANNER_STRIPE_BOTTOM_LIME: "limetinvihreä tyviö"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "purppura tyviö"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranssi tyviö"
+  BANNER_STRIPE_BOTTOM_PINK: "vaaleanpunainen tyviö"
+  BANNER_STRIPE_BOTTOM_PURPLE: "violetti tyviö"
+  BANNER_STRIPE_BOTTOM_RED: "punainen tyviö"
+  BANNER_STRIPE_BOTTOM_WHITE: "valkoinen tyviö"
+  BANNER_STRIPE_BOTTOM_YELLOW: "keltainen tyviö"
+  BANNER_STRIPE_CENTER_BLACK: "musta pystyraita"
+  BANNER_STRIPE_CENTER_BLUE: "sininen pystyraita"
+  BANNER_STRIPE_CENTER_BROWN: "ruskea pystyraita"
+  BANNER_STRIPE_CENTER_CYAN: "syaani pystyraita"
+  BANNER_STRIPE_CENTER_GRAY: "harmaa pystyraita"
+  BANNER_STRIPE_CENTER_GREEN: "vihreä pystyraita"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "vaaleansininen pystyraita"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "vaaleanharmaa pystyraita"
+  BANNER_STRIPE_CENTER_LIME: "limetinvihreä pystyraita"
+  BANNER_STRIPE_CENTER_MAGENTA: "purppura pystyraita"
+  BANNER_STRIPE_CENTER_ORANGE: "oranssi pystyraita"
+  BANNER_STRIPE_CENTER_PINK: "vaaleanpunainen pystyraita"
+  BANNER_STRIPE_CENTER_PURPLE: "violetti pystyraita"
+  BANNER_STRIPE_CENTER_RED: "punainen pystyraita"
+  BANNER_STRIPE_CENTER_WHITE: "valkoinen pystyraita"
+  BANNER_STRIPE_CENTER_YELLOW: "keltainen pystyraita"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "musta vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "sininen vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "ruskea vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "syaani vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "harmaa vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "vihreä vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "vaaleansinen vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "vaaleanharmaa vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_LIME: "limetinvihreä vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "purppura vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "oranssi vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_PINK: "vaaleanpunainen vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "violetti vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_RED: "punainen vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "valkoinen vastapalkki"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "keltainen vastapalkki"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "musta palkki"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "sininen palkki"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "ruskea palkki"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "syaani palkki"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "harmaa palkki"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "vihreä palkki"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "vaaleansininen palkki"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "vaaleanharmaa palkki"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "limetinvihreä palkki"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "purppura palkki"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "oranssi palkki"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "vaaleanpunainen palkki"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "violetti palkki"
+  BANNER_STRIPE_DOWNRIGHT_RED: "punainen palkki"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "valkoinen palkki"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "keltainen palkki"
+  BANNER_STRIPE_LEFT_BLACK: "musta vasen reuna"
+  BANNER_STRIPE_LEFT_BLUE: "sininen vasen reuna"
+  BANNER_STRIPE_LEFT_BROWN: "ruskea vasen reuna"
+  BANNER_STRIPE_LEFT_CYAN: "syaani vasen reuna"
+  BANNER_STRIPE_LEFT_GRAY: "harmaa vasen reuna"
+  BANNER_STRIPE_LEFT_GREEN: "vihreä vasen reuna"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "vaaleansininen vasen reuna"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "vaaleanharmaa vasen reuna"
+  BANNER_STRIPE_LEFT_LIME: "limetinvihreä vasen reuna"
+  BANNER_STRIPE_LEFT_MAGENTA: "purppura vasen reuna"
+  BANNER_STRIPE_LEFT_ORANGE: "oranssi vasen reuna"
+  BANNER_STRIPE_LEFT_PINK: "vaaleanpunainen vasen reuna"
+  BANNER_STRIPE_LEFT_PURPLE: "violetti vasen reuna"
+  BANNER_STRIPE_LEFT_RED: "punainen vasen reuna"
+  BANNER_STRIPE_LEFT_WHITE: "valkoinen vasen reuna"
+  BANNER_STRIPE_LEFT_YELLOW: "keltainen vasen reuna"
+  BANNER_STRIPE_MIDDLE_BLACK: "musta vaakaraita"
+  BANNER_STRIPE_MIDDLE_BLUE: "sininen vaakaraita"
+  BANNER_STRIPE_MIDDLE_BROWN: "ruskea vaakaraita"
+  BANNER_STRIPE_MIDDLE_CYAN: "syaani vaakaraita"
+  BANNER_STRIPE_MIDDLE_GRAY: "harmaa vaakaraita"
+  BANNER_STRIPE_MIDDLE_GREEN: "vihreä vaakaraita"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "vaaleansininen vaakaraita"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "vaaleanharmaa vaakaraita"
+  BANNER_STRIPE_MIDDLE_LIME: "limetinvihreä vaakaraita"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "purppura vaakaraita"
+  BANNER_STRIPE_MIDDLE_ORANGE: "oranssi vaakaraita"
+  BANNER_STRIPE_MIDDLE_PINK: "vaaleanpunainen vaakaraita"
+  BANNER_STRIPE_MIDDLE_PURPLE: "violetti vaakaraita"
+  BANNER_STRIPE_MIDDLE_RED: "punainen vaakaraita"
+  BANNER_STRIPE_MIDDLE_WHITE: "valkoinen vaakaraita"
+  BANNER_STRIPE_MIDDLE_YELLOW: "keltainen vaakaraita"
+  BANNER_STRIPE_RIGHT_BLACK: "musta oikea reuna"
+  BANNER_STRIPE_RIGHT_BLUE: "sininen oikea reuna"
+  BANNER_STRIPE_RIGHT_BROWN: "ruskea oikea reuna"
+  BANNER_STRIPE_RIGHT_CYAN: "syaani oikea reuna"
+  BANNER_STRIPE_RIGHT_GRAY: "harmaa oikea reuna"
+  BANNER_STRIPE_RIGHT_GREEN: "vihreä oikea reuna"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "vaaleansininen oikea reuna"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "vaaleanharmaa oikea reuna"
+  BANNER_STRIPE_RIGHT_LIME: "limetinvihreä oikea reuna"
+  BANNER_STRIPE_RIGHT_MAGENTA: "purppura oikea reuna"
+  BANNER_STRIPE_RIGHT_ORANGE: "oranssi oikea reuna"
+  BANNER_STRIPE_RIGHT_PINK: "vaaleanpunainen oikea reuna"
+  BANNER_STRIPE_RIGHT_PURPLE: "violetti oikea reuna"
+  BANNER_STRIPE_RIGHT_RED: "punainen oikea reuna"
+  BANNER_STRIPE_RIGHT_WHITE: "valkoinen oikea reuna"
+  BANNER_STRIPE_RIGHT_YELLOW: "keltainen oikea reuna"
+  BANNER_STRIPE_TOP_BLACK: "musta lakio"
+  BANNER_STRIPE_TOP_BLUE: "sininen lakio"
+  BANNER_STRIPE_TOP_BROWN: "ruskea lakio"
+  BANNER_STRIPE_TOP_CYAN: "syaani lakio"
+  BANNER_STRIPE_TOP_GRAY: "harmaa lakio"
+  BANNER_STRIPE_TOP_GREEN: "vihreä lakio"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "vaaleansininen lakio"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "vaaleanharmaa lakio"
+  BANNER_STRIPE_TOP_LIME: "limetinvihreä lakio"
+  BANNER_STRIPE_TOP_MAGENTA: "purppura lakio"
+  BANNER_STRIPE_TOP_ORANGE: "oranssi lakio"
+  BANNER_STRIPE_TOP_PINK: "vaaleanpunainen lakio"
+  BANNER_STRIPE_TOP_PURPLE: "violetti lakio"
+  BANNER_STRIPE_TOP_RED: "punainen lakio"
+  BANNER_STRIPE_TOP_WHITE: "valkoinen lakio"
+  BANNER_STRIPE_TOP_YELLOW: "keltainen lakio"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "musta polviorsi"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "sininen polviorsi"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "ruskea polviorsi"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "syaani polviorsi"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "harmaa polviorsi"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "vihreä polviorsi"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "vaaleansininen polviorsi"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "vaaleanharmaa polviorsi"
+  BANNER_TRIANGLE_BOTTOM_LIME: "limetinvihreä polviorsi"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "purppura polviorsi"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "oranssi polviorsi"
+  BANNER_TRIANGLE_BOTTOM_PINK: "vaaleanpunainen polviorsi"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "violetti polviorsi"
+  BANNER_TRIANGLE_BOTTOM_RED: "punainen polviorsi"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "valkoinen polviorsi"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "keltainen polviorsi"
+  BANNER_TRIANGLE_TOP_BLACK: "musta kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_BLUE: "sininen kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_BROWN: "ruskea kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_CYAN: "syaani kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_GRAY: "harmaa kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_GREEN: "vihreä kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "vaaleansininen kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "vaaleanharmaa kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_LIME: "limetinvihreä kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_MAGENTA: "purppura kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_ORANGE: "oranssi kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_PINK: "vaaleanpunainen kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_PURPLE: "violetti kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_RED: "punainen kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_WHITE: "valkoinen kaateinen polviorsi"
+  BANNER_TRIANGLE_TOP_YELLOW: "keltainen kaateinen polviorsi"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "musta hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "sininen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "ruskea hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "syaani hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "harmaa hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "vihreä hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "vaaleansininen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "vaaleanharmaa hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_LIME: "limetinvihreä hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "purppura hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oranssi hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_PINK: "vaaleanpunainen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "violetti hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_RED: "punainen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "valkoinen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "keltainen hammaskoroinen tyviö"
+  BANNER_TRIANGLES_TOP_BLACK: "musta hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_BLUE: "sininen hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_BROWN: "ruskea hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_CYAN: "syaani hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_GRAY: "harmaa hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_GREEN: "vihreä hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "vaaleansininen hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "vaaleanharmaa hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_LIME: "limetinvihreä hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_MAGENTA: "purppura hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_ORANGE: "oranssi hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_PINK: "vaaleanpunainen hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_PURPLE: "violetti hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_RED: "punainen hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_WHITE: "valkoinen hammaskoroinen lakio"
+  BANNER_TRIANGLES_TOP_YELLOW: "keltainen hammaskoroinen lakio"
+  BARREL: "tynnyri"
+  BARRIER: "este"
+  BASALT: "basaltti"
+  BEACON: "merkkivalo"
+  BEACON_PRIMARY: "ensisijainen voima"
+  BEACON_SECONDARY: "toissijainen voima"
+  BED_NO_SLEEP: "voit nukkua vain öisin ja ukkosmyrskyjen aikana"
+  BED_NOT_SAFE: "et voi levätä nyt; lähistöllä on hirviöitä"
+  BED_OBSTRUCTED: "tämä sänky on estetty"
+  BED_OCCUPIED: "tämä sänky on varattu"
+  BED_TOO_FAR_AWAY: "et voi levätä nyt; sänky on liian kaukana"
+  BEDROCK: "peruskallio"
+  BEE_NEST: "luonnollinen mehiläispesä"
+  BEEHIVE: "keinotekoinen mehiläispesä"
+  BEETROOTS: "punajuuri"
+  BELL: "soittokello"
+  BIG_DRIPLEAF: "iso tippulehti"
+  BIG_DRIPLEAF_STEM: "iso tippulehtivarsi"
+  BIRCH_BUTTON: "koivunappi"
+  BIRCH_DOOR: "koivuovi"
+  BIRCH_FENCE: "koivuaita"
+  BIRCH_FENCE_GATE: "koivuportti"
+  BIRCH_HANGING_SIGN: "roikkuva koivukyltti"
+  BIRCH_LEAVES: "koivunlehdet"
+  BIRCH_LOG: "koivuhalko"
+  BIRCH_PLANKS: "koivulankut"
+  BIRCH_PRESSURE_PLATE: "koivupainelaatta"
+  BIRCH_SAPLING: "koivun taimi"
+  BIRCH_SIGN: "koivukyltti"
+  BIRCH_SLAB: "koivulaatta"
+  BIRCH_STAIRS: "koivuportaat"
+  BIRCH_TRAPDOOR: "koivuluukku"
+  BIRCH_WALL_HANGING_SIGN: "ripustettu roikkuva koivukyltti"
+  BIRCH_WALL_SIGN: "ripustettu koivukyltti"
+  BIRCH_WOOD: "koivupuu"
+  BLACK_BANNER: "musta viiri"
+  BLACK_BED: "musta sänky"
+  BLACK_CANDLE: "musta kynttilä"
+  BLACK_CANDLE_CAKE: "kakku mustalla kynttilällä"
+  BLACK_CARPET: "musta matto"
+  BLACK_CONCRETE: "musta betoni"
+  BLACK_CONCRETE_POWDER: "musta betonijauhe"
+  BLACK_GLAZED_TERRACOTTA: "musta lasitettu terrakotta"
+  BLACK_SHULKER_BOX: "musta shulker-laatikko"
+  BLACK_STAINED_GLASS: "musta lasi"
+  BLACK_STAINED_GLASS_PANE: "musta lasipaneeli"
+  BLACK_TERRACOTTA: "musta terrakotta"
+  BLACK_WOOL: "musta villa"
+  BLACKSTONE: "mustakivi"
+  BLACKSTONE_SLAB: "mustakivilaatta"
+  BLACKSTONE_STAIRS: "mustakiviportaat"
+  BLACKSTONE_WALL: "mustakivimuuri"
+  BLAST_FURNACE: "masuuni"
+  BLUE_BANNER: "sininen viiri"
+  BLUE_BED: "sininen sänky"
+  BLUE_CANDLE: "sininen kynttilä"
+  BLUE_CANDLE_CAKE: "kakku sinisellä kynttilällä"
+  BLUE_CARPET: "sininen matto"
+  BLUE_CONCRETE: "sininen betoni"
+  BLUE_CONCRETE_POWDER: "sininen betonijauhe"
+  BLUE_GLAZED_TERRACOTTA: "sininen lasitettu terrakotta"
+  BLUE_ICE: "sininen jää"
+  BLUE_ORCHID: "sininen orkidea"
+  BLUE_SHULKER_BOX: "sininen shulker-laatikko"
+  BLUE_STAINED_GLASS: "sininen lasi"
+  BLUE_STAINED_GLASS_PANE: "sininen lasipaneeli"
+  BLUE_TERRACOTTA: "sininen terrakotta"
+  BLUE_WOOL: "sininen villa"
+  BONE_BLOCK: "luukuutio"
+  BOOKSHELF: "kirjahylly"
+  BRAIN_CORAL: "aivokoralli"
+  BRAIN_CORAL_BLOCK: "aivokorallikuutio"
+  BRAIN_CORAL_FAN: "aivokoralliviuhka"
+  BRAIN_CORAL_WALL_FAN: "seinäaivokoralliviuhka"
+  BREWING_STAND: "hautumateline"
+  BRICK_SLAB: "tiililaatta"
+  BRICK_STAIRS: "tiiliportaat"
+  BRICK_WALL: "tiilimuuri"
+  BRICKS: "tiili"
+  BROWN_BANNER: "ruskea viiri"
+  BROWN_BED: "ruskea sänky"
+  BROWN_CANDLE: "ruskea kynttilä"
+  BROWN_CANDLE_CAKE: "kakku ruskealla kynttilällä"
+  BROWN_CARPET: "ruskea matto"
+  BROWN_CONCRETE: "ruskea betoni"
+  BROWN_CONCRETE_POWDER: "ruskea betonijauhe"
+  BROWN_GLAZED_TERRACOTTA: "ruskea lasitettu terrakotta"
+  BROWN_MUSHROOM: "ruskea sieni"
+  BROWN_MUSHROOM_BLOCK: "ruskea sienikuutio"
+  BROWN_SHULKER_BOX: "ruskea shulker-laatikko"
+  BROWN_STAINED_GLASS: "ruskea lasi"
+  BROWN_STAINED_GLASS_PANE: "ruskea lasipaneeli"
+  BROWN_TERRACOTTA: "ruskea terrakotta"
+  BROWN_WOOL: "ruskea villa"
+  BUBBLE_COLUMN: "kuplapylväs"
+  BUBBLE_CORAL: "kuplakoralli"
+  BUBBLE_CORAL_BLOCK: "kuplakorallikuutio"
+  BUBBLE_CORAL_FAN: "kuplakoralliviuhka"
+  BUBBLE_CORAL_WALL_FAN: "seinäkuplakoralliviuhka"
+  BUDDING_AMETHYST: "versoava ametisti"
+  CACTUS: "kaktus"
+  CAKE: "kakku"
+  CALCITE: "kalsiitti"
+  CALIBRATED_SCULK_SENSOR: "kalibroitu sculk-sensori"
+  CAMPFIRE: "nuotio"
+  CANDLE: "kynttilä"
+  CANDLE_CAKE: "kynttiläkakku"
+  CARROTS: "porkkana"
+  CARTOGRAPHY_TABLE: "karttapöytä"
+  CARVED_PUMPKIN: "kaiverrettu kurpitsa"
+  CAULDRON: "pata"
+  CAVE_AIR: "luolailma"
+  CAVE_VINES: "luolaköynnös"
+  CAVE_VINES_PLANT: "luolaköynnöskasvi"
+  CHAIN: "ketju"
+  CHAIN_COMMAND_BLOCK: "sarjakomentokuutio"
+  CHERRY_BUTTON: "kirsikkapuunappi"
+  CHERRY_DOOR: "kirsikkapuuovi"
+  CHERRY_FENCE: "kirsikkapuuaita"
+  CHERRY_FENCE_GATE: "kirsikkapuuportti"
+  CHERRY_HANGING_SIGN: "roikkuva kirsikkapuukyltti"
+  CHERRY_LEAVES: "kirsikkapuun lehdet"
+  CHERRY_LOG: "kirsikkapuuhalko"
+  CHERRY_PLANKS: "kirsikkapuulankut"
+  CHERRY_PRESSURE_PLATE: "kirsikkapuupainelaatta"
+  CHERRY_SAPLING: "kirsikkapuun taimi"
+  CHERRY_SIGN: "kirsikkapuukyltti"
+  CHERRY_SLAB: "kirsikkapuulaatta"
+  CHERRY_STAIRS: "kirsikkapuuportaat"
+  CHERRY_TRAPDOOR: "kirsikkapuuluukku"
+  CHERRY_WALL_HANGING_SIGN: "ripustettu roikkuva kirsikkapuukyltti"
+  CHERRY_WALL_SIGN: "ripustettu kirsikkapuukyltti"
+  CHERRY_WOOD: "kirsikkapuu"
+  CHEST: "arkku"
+  CHIPPED_ANVIL: "kolhiintunut alasin"
+  CHISELED_BOOKSHELF: "täytettävä kirjahylly"
+  CHISELED_COPPER: "kaiverrettu kupari"
+  CHISELED_DEEPSLATE: "kaiverrettu pohjaliuskekivi"
+  CHISELED_NETHER_BRICKS: "kaiverrettu nether-tiili"
+  CHISELED_POLISHED_BLACKSTONE: "kaiverrettu kiillotettu mustakivi"
+  CHISELED_QUARTZ_BLOCK: "kaiverrettu kvartsikuutio"
+  CHISELED_RED_SANDSTONE: "kaiverrettu punahiekkakivi"
+  CHISELED_SANDSTONE: "kaiverrettu hiekkakivi"
+  CHISELED_STONE_BRICKS: "veistetty kivitiili"
+  CHISELED_TUFF: "kaiverrettu tuffi"
+  CHISELED_TUFF_BRICKS: "veistetty tuffitiili"
+  CHORUS_FLOWER: "chorus-kukka"
+  CHORUS_PLANT: "chorus-kasvi"
+  CLAY: "savi"
+  COAL_BLOCK: "hiilikuutio"
+  COAL_ORE: "hiilimalmi"
+  COARSE_DIRT: "karkea multa"
+  COBBLED_DEEPSLATE: "murtunut pohjaliuskekivi"
+  COBBLED_DEEPSLATE_SLAB: "murtunut pohjaliuskekivilaatta"
+  COBBLED_DEEPSLATE_STAIRS: "murtuneet pohjaliuskekiviportaat"
+  COBBLED_DEEPSLATE_WALL: "murtunut pohjaliuskekivimuuri"
+  COBBLESTONE: "mukulakivi"
+  COBBLESTONE_SLAB: "mukulakivilaatta"
+  COBBLESTONE_STAIRS: "mukulakiviportaat"
+  COBBLESTONE_WALL: "mukulakivimuuri"
+  COBWEB: "hämähäkinseitti"
+  COCOA: "kaakao"
+  COMMAND_BLOCK: "komentokuutio"
+  COMPARATOR: "redstone-komparaattori"
+  COMPOSTER: "komposti"
+  CONDUIT: "kanavoija"
+  COPPER_BLOCK: "kuparikuutio"
+  COPPER_BULB: "kuparilamppu"
+  COPPER_DOOR: "kupariovi"
+  COPPER_GRATE: "kupariritilä"
+  COPPER_ORE: "kuparimalmi"
+  COPPER_TRAPDOOR: "kupariluukku"
+  CORNFLOWER: "ruiskaunokki"
+  CRACKED_DEEPSLATE_BRICKS: "murtunut pohjaliuskekivitiili"
+  CRACKED_DEEPSLATE_TILES: "murtuneet pohjaliuskekivikaakelit"
+  CRACKED_NETHER_BRICKS: "murtunut nether-tiili"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "murtunut kiillotettu mustakivi"
+  CRACKED_STONE_BRICKS: "murtunut kivitiili"
+  CRAFTER: "työstin"
+  CRAFTING_TABLE: "työpöytä"
+  CREEPER_HEAD: "creeperin pää"
+  CREEPER_WALL_HEAD: "ripustettu creeperin pää"
+  CRIMSON_BUTTON: "karmiininappi"
+  CRIMSON_DOOR: "karmiiniovi"
+  CRIMSON_FENCE: "karmiiniaita"
+  CRIMSON_FENCE_GATE: "karmiiniportti"
+  CRIMSON_FUNGUS: "karmiinisieni"
+  CRIMSON_HANGING_SIGN: "roikkuva karmiinikyltti"
+  CRIMSON_HYPHAE: "karmiinirihma"
+  CRIMSON_NYLIUM: "karmiinisienirihmasto"
+  CRIMSON_PLANKS: "karmiinilankut"
+  CRIMSON_PRESSURE_PLATE: "karmiinipainelaatta"
+  CRIMSON_ROOTS: "karmiinijuuret"
+  CRIMSON_SIGN: "karmiinikyltti"
+  CRIMSON_SLAB: "karmiinilaatta"
+  CRIMSON_STAIRS: "karmiiniportaat"
+  CRIMSON_STEM: "karmiinivarsi"
+  CRIMSON_TRAPDOOR: "karmiiniluukku"
+  CRIMSON_WALL_HANGING_SIGN: "ripustettu roikkuva karmiinikyltti"
+  CRIMSON_WALL_SIGN: "ripustettu karmiinikyltti"
+  CRYING_OBSIDIAN: "itkevä obsidiaani"
+  CUT_COPPER: "leikattu kupari"
+  CUT_COPPER_SLAB: "leikattu kuparilaatta"
+  CUT_COPPER_STAIRS: "leikatut kupariportaat"
+  CUT_RED_SANDSTONE: "leikattu punahiekkakivi"
+  CUT_RED_SANDSTONE_SLAB: "leikattu punahiekkakivilaatta"
+  CUT_SANDSTONE: "leikattu hiekkakivi"
+  CUT_SANDSTONE_SLAB: "leikattu hiekkakivilaatta"
+  CYAN_BANNER: "syaani viiri"
+  CYAN_BED: "syaani sänky"
+  CYAN_CANDLE: "syaani kynttilä"
+  CYAN_CANDLE_CAKE: "kakku syaanilla kynttilällä"
+  CYAN_CARPET: "syaani matto"
+  CYAN_CONCRETE: "syaani betoni"
+  CYAN_CONCRETE_POWDER: "syaani betonijauhe"
+  CYAN_GLAZED_TERRACOTTA: "syaani lasitettu terrakotta"
+  CYAN_SHULKER_BOX: "syaani shulker-laatikko"
+  CYAN_STAINED_GLASS: "syaani lasi"
+  CYAN_STAINED_GLASS_PANE: "syaani lasipaneeli"
+  CYAN_TERRACOTTA: "syaani terrakotta"
+  CYAN_WOOL: "syaani villa"
+  DAMAGED_ANVIL: "vaurioitunut alasin"
+  DANDELION: "voikukka"
+  DARK_OAK_BUTTON: "tumma tamminappi"
+  DARK_OAK_DOOR: "tumma tammiovi"
+  DARK_OAK_FENCE: "tumma tammiaita"
+  DARK_OAK_FENCE_GATE: "tumma tammiportti"
+  DARK_OAK_HANGING_SIGN: "roikkuva tumma tammikyltti"
+  DARK_OAK_LEAVES: "tumman tammen lehdet"
+  DARK_OAK_LOG: "tumma tammihalko"
+  DARK_OAK_PLANKS: "tummat tammilankut"
+  DARK_OAK_PRESSURE_PLATE: "tumma tammipainelaatta"
+  DARK_OAK_SAPLING: "tumman tammen taimi"
+  DARK_OAK_SIGN: "tumma tammikyltti"
+  DARK_OAK_SLAB: "tumma tammilaatta"
+  DARK_OAK_STAIRS: "tummat tammiportaat"
+  DARK_OAK_TRAPDOOR: "tumma tammiluukku"
+  DARK_OAK_WALL_HANGING_SIGN: "ripustettu roikkuva tumma tammikyltti"
+  DARK_OAK_WALL_SIGN: "ripustettu tumma tammikyltti"
+  DARK_OAK_WOOD: "tumma tammipuu"
+  DARK_PRISMARINE: "tumma prismariini"
+  DARK_PRISMARINE_SLAB: "tumma prismariinilaatta"
+  DARK_PRISMARINE_STAIRS: "tummat prismariiniportaat"
+  DAYLIGHT_DETECTOR: "päivänvalotunnistin"
+  DEAD_BRAIN_CORAL: "kuollut aivokoralli"
+  DEAD_BRAIN_CORAL_BLOCK: "kuollut aivokorallikuutio"
+  DEAD_BRAIN_CORAL_FAN: "kuollut aivokoralliviuhka"
+  DEAD_BRAIN_CORAL_WALL_FAN: "kuollut seinäaivokoralliviuhka"
+  DEAD_BUBBLE_CORAL: "kuollut kuplakoralli"
+  DEAD_BUBBLE_CORAL_BLOCK: "kuollut kuplakorallikuutio"
+  DEAD_BUBBLE_CORAL_FAN: "kuollut kuplakoralliviuhka"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "kuollut seinäkuplakoralliviuhka"
+  DEAD_BUSH: "kuollut pensas"
+  DEAD_FIRE_CORAL: "kuollut tulikoralli"
+  DEAD_FIRE_CORAL_BLOCK: "kuollut tulikorallikuutio"
+  DEAD_FIRE_CORAL_FAN: "kuollut tulikoralliviuhka"
+  DEAD_FIRE_CORAL_WALL_FAN: "kuollut seinätulikoralliviuhka"
+  DEAD_HORN_CORAL: "kuollut torvikoralli"
+  DEAD_HORN_CORAL_BLOCK: "kuollut torvikorallikuutio"
+  DEAD_HORN_CORAL_FAN: "kuollut torvikoralliviuhka"
+  DEAD_HORN_CORAL_WALL_FAN: "kuollut seinätorvikoralliviuhka"
+  DEAD_TUBE_CORAL: "kuollut putkikoralli"
+  DEAD_TUBE_CORAL_BLOCK: "kuollut putkikorallikuutio"
+  DEAD_TUBE_CORAL_FAN: "kuollut putkikoralliviuhka"
+  DEAD_TUBE_CORAL_WALL_FAN: "kuollut seinäputkikoralliviuhka"
+  DECORATED_POT: "koristeltu ruukku"
+  DEEPSLATE: "pohjaliuskekivi"
+  DEEPSLATE_BRICK_SLAB: "pohjaliuskekivitiililaatta"
+  DEEPSLATE_BRICK_STAIRS: "pohjaliuskekivitiiliportaat"
+  DEEPSLATE_BRICK_WALL: "pohjaliuskekivitiilimuuri"
+  DEEPSLATE_BRICKS: "pohjaliuskekivitiili"
+  DEEPSLATE_COAL_ORE: "pohjaliuskehiilimalmi"
+  DEEPSLATE_COPPER_ORE: "pohjaliuskekuparimalmi"
+  DEEPSLATE_DIAMOND_ORE: "pohjaliusketimanttimalmi"
+  DEEPSLATE_EMERALD_ORE: "pohjaliuskesmaragdimalmi"
+  DEEPSLATE_GOLD_ORE: "pohjaliuskekultamalmi"
+  DEEPSLATE_IRON_ORE: "pohjaliuskerautamalmi"
+  DEEPSLATE_LAPIS_ORE: "pohjaliuskelasuriittimalmi"
+  DEEPSLATE_REDSTONE_ORE: "pohjaliuskeredstone-malmi"
+  DEEPSLATE_TILE_SLAB: "pohjaliuskekivikaakelilaatta"
+  DEEPSLATE_TILE_STAIRS: "pohjaliuskekivikaakeliportaat"
+  DEEPSLATE_TILE_WALL: "pohjaliuskivikekaakelimuuri"
+  DEEPSLATE_TILES: "pohjaliuskekivikaakelit"
+  DETECTOR_RAIL: "tunnistinraide"
+  DIAMOND_BLOCK: "timanttikuutio"
+  DIAMOND_ORE: "timanttimalmi"
+  DIORITE: "dioriitti"
+  DIORITE_SLAB: "dioriittilaatta"
+  DIORITE_STAIRS: "dioriittiportaat"
+  DIORITE_WALL: "dioriittimuuri"
+  DIRT: "multa"
+  DIRT_PATH: "multapolku"
+  DISPENSER: "jakelulaite"
+  DRAGON_EGG: "lohikäärmeen muna"
+  DRAGON_HEAD: "lohikäärmeen pää"
+  DRAGON_WALL_HEAD: "ripustettu lohikäärmeen pää"
+  DRIED_KELP_BLOCK: "kuivattu rakkoleväkuutio"
+  DRIPSTONE_BLOCK: "tippukivikuutio"
+  DROPPER: "pudottaja"
+  EMERALD_BLOCK: "smaragdikuutio"
+  EMERALD_ORE: "smaragdimalmi"
+  ENCHANTING_TABLE: "lumouspöytä"
+  END_GATEWAY: "end-portti"
+  END_PORTAL: "end-portaali"
+  END_PORTAL_FRAME: "end-portaalin kehys"
+  END_ROD: "end-sauva"
+  END_STONE: "end-kivi"
+  END_STONE_BRICK_SLAB: "end-kivitiililaatta"
+  END_STONE_BRICK_STAIRS: "end-kivitiiliportaat"
+  END_STONE_BRICK_WALL: "end-kivitiilimuuri"
+  END_STONE_BRICKS: "end-kivitiili"
+  ENDER_CHEST: "ender-arkku"
+  EXPOSED_CHISELED_COPPER: "altistunut kaiverrettu kupari"
+  EXPOSED_COPPER: "altistunut kupari"
+  EXPOSED_COPPER_BULB: "altistunut kuparilamppu"
+  EXPOSED_COPPER_DOOR: "altistunut kupariovi"
+  EXPOSED_COPPER_GRATE: "altistunut kupariritilä"
+  EXPOSED_COPPER_TRAPDOOR: "altistunut kupariluukku"
+  EXPOSED_CUT_COPPER: "altistunut leikattu kupari"
+  EXPOSED_CUT_COPPER_SLAB: "altistunut leikattu kuparilaatta"
+  EXPOSED_CUT_COPPER_STAIRS: "altistuneet leikatut kupariportaat"
+  FARMLAND: "viljelysmaa"
+  FERN: "saniainen"
+  FIRE: "tuli"
+  FIRE_CORAL: "tulikoralli"
+  FIRE_CORAL_BLOCK: "tulikorallikuutio"
+  FIRE_CORAL_FAN: "tulikoralliviuhka"
+  FIRE_CORAL_WALL_FAN: "seinätulikoralliviuhka"
+  FLETCHING_TABLE: "nuolipöytä"
+  FLOWER_POT: "kukkaruukku"
+  FLOWERING_AZALEA: "kukkiva atsalea"
+  FLOWERING_AZALEA_LEAVES: "kukkivan atsalean lehdet"
+  FROGSPAWN: "sammakonkutu"
+  FROSTED_ICE: "huurteinen jää"
+  FURNACE: "uuni"
+  GILDED_BLACKSTONE: "kullattu mustakivi"
+  GLASS: "lasi"
+  GLASS_PANE: "lasipaneeli"
+  GLOW_LICHEN: "hehkujäkälä"
+  GLOWSTONE: "hehkukivi"
+  GOLD_BLOCK: "kultakuutio"
+  GOLD_ORE: "kultamalmi"
+  GRANITE: "graniitti"
+  GRANITE_SLAB: "graniittilaatta"
+  GRANITE_STAIRS: "graniittiportaat"
+  GRANITE_WALL: "graniittimuuri"
+  GRASS: "ruoho"
+  GRASS_BLOCK: "ruohokuutio"
+  GRAVEL: "sora"
+  GRAY_BANNER: "harmaa viiri"
+  GRAY_BED: "harmaa sänky"
+  GRAY_CANDLE: "harmaa kynttilä"
+  GRAY_CANDLE_CAKE: "kakku harmaalla kynttilällä"
+  GRAY_CARPET: "harmaa matto"
+  GRAY_CONCRETE: "harmaa betoni"
+  GRAY_CONCRETE_POWDER: "harmaa betonijauhe"
+  GRAY_GLAZED_TERRACOTTA: "harmaa lasitettu terrakotta"
+  GRAY_SHULKER_BOX: "harmaa shulker-laatikko"
+  GRAY_STAINED_GLASS: "harmaa lasi"
+  GRAY_STAINED_GLASS_PANE: "harmaa lasipaneeli"
+  GRAY_TERRACOTTA: "harmaa terrakotta"
+  GRAY_WOOL: "harmaa villa"
+  GREEN_BANNER: "vihreä viiri"
+  GREEN_BED: "vihreä sänky"
+  GREEN_CANDLE: "vihreä kynttilä"
+  GREEN_CANDLE_CAKE: "kakku vihreällä kynttilällä"
+  GREEN_CARPET: "vihreä matto"
+  GREEN_CONCRETE: "vihreä betoni"
+  GREEN_CONCRETE_POWDER: "vihreä betonijauhe"
+  GREEN_GLAZED_TERRACOTTA: "vihreä lasitettu terrakotta"
+  GREEN_SHULKER_BOX: "vihreä shulker-laatikko"
+  GREEN_STAINED_GLASS: "vihreä lasi"
+  GREEN_STAINED_GLASS_PANE: "vihreä lasipaneeli"
+  GREEN_TERRACOTTA: "vihreä terrakotta"
+  GREEN_WOOL: "vihreä villa"
+  GRINDSTONE: "tahko"
+  HANGING_ROOTS: "roikkuvat juuret"
+  HAY_BLOCK: "heinäpaali"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "painava painelaatta"
+  HONEY_BLOCK: "hunajakuutio"
+  HONEYCOMB_BLOCK: "hunajakennokuutio"
+  HOPPER: "suppilo"
+  HORN_CORAL: "torvikoralli"
+  HORN_CORAL_BLOCK: "torvikorallikuutio"
+  HORN_CORAL_FAN: "torvikoralliviuhka"
+  HORN_CORAL_WALL_FAN: "seinätorvikoralliviuhka"
+  ICE: "jää"
+  INFESTED_CHISELED_STONE_BRICKS: "saastunut kaiverrettu kivitiili"
+  INFESTED_COBBLESTONE: "saastunut mukulakivi"
+  INFESTED_CRACKED_STONE_BRICKS: "saastunut murtunut kivitiili"
+  INFESTED_DEEPSLATE: "saastunut pohjaliuskekivi"
+  INFESTED_MOSSY_STONE_BRICKS: "saastunut sammalkivitiili"
+  INFESTED_STONE: "saastunut kivi"
+  INFESTED_STONE_BRICKS: "saastunut kivitiili"
+  IRON_BARS: "kalterit"
+  IRON_BLOCK: "rautakuutio"
+  IRON_DOOR: "rautaovi"
+  IRON_ORE: "rautamalmi"
+  IRON_TRAPDOOR: "rautaluukku"
+  JACK_O_LANTERN: "kurpitsalyhty"
+  JIGSAW: "palapelikuutio"
+  JUKEBOX: "levysoitin"
+  JUNGLE_BUTTON: "viidakkopuunappi"
+  JUNGLE_DOOR: "viidakkopuuovi"
+  JUNGLE_FENCE: "viidakkopuuaita"
+  JUNGLE_FENCE_GATE: "viidakkopuuportti"
+  JUNGLE_HANGING_SIGN: "roikkuva viidakkopuukyltti"
+  JUNGLE_LEAVES: "viidakkopuun lehdet"
+  JUNGLE_LOG: "viidakkopuuhalko"
+  JUNGLE_PLANKS: "viidakkopuulankut"
+  JUNGLE_PRESSURE_PLATE: "viidakkopuupainelaatta"
+  JUNGLE_SAPLING: "viidakkopuun taimi"
+  JUNGLE_SIGN: "viidakkopuukyltti"
+  JUNGLE_SLAB: "viidakkopuulaatta"
+  JUNGLE_STAIRS: "viidakkopuuportaat"
+  JUNGLE_TRAPDOOR: "viidakkopuuluukku"
+  JUNGLE_WALL_HANGING_SIGN: "ripustettu roikkuva viidakkopuukyltti"
+  JUNGLE_WALL_SIGN: "ripustettu viidakkopuukyltti"
+  JUNGLE_WOOD: "viidakkopuu"
+  KELP: "rakkolevä"
+  KELP_PLANT: "rakkoleväkasvi"
+  LADDER: "tikas"
+  LANTERN: "lyhty"
+  LAPIS_BLOCK: "lasuriittikuutio"
+  LAPIS_ORE: "lasuriittimalmi"
+  LARGE_AMETHYST_BUD: "suuri ametistinuppu"
+  LARGE_FERN: "suuri saniainen"
+  LAVA: "laava"
+  LAVA_CAULDRON: "laavapata"
+  LECTERN: "kateederi"
+  LEVER: "vipu"
+  LIGHT: "valo"
+  LIGHT_BLUE_BANNER: "vaaleansininen viiri"
+  LIGHT_BLUE_BED: "vaaleansininen sänky"
+  LIGHT_BLUE_CANDLE: "vaaleansininen kynttilä"
+  LIGHT_BLUE_CANDLE_CAKE: "kakku vaaleansinisellä kynttilällä"
+  LIGHT_BLUE_CARPET: "vaaleansininen matto"
+  LIGHT_BLUE_CONCRETE: "vaaleansininen betoni"
+  LIGHT_BLUE_CONCRETE_POWDER: "vaaleansininen betonijauhe"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "vaaleansininen lasitettu terrakotta"
+  LIGHT_BLUE_SHULKER_BOX: "vaaleansininen shulker-laatikko"
+  LIGHT_BLUE_STAINED_GLASS: "vaaleansininen lasi"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "vaaleansininen lasipaneeli"
+  LIGHT_BLUE_TERRACOTTA: "vaaleansininen terrakotta"
+  LIGHT_BLUE_WOOL: "vaaleansininen villa"
+  LIGHT_GRAY_BANNER: "vaaleanharmaa viiri"
+  LIGHT_GRAY_BED: "vaaleanharmaa sänky"
+  LIGHT_GRAY_CANDLE: "vaaleanharmaa kynttilä"
+  LIGHT_GRAY_CANDLE_CAKE: "kakku vaaleanharmaalla kynttilällä"
+  LIGHT_GRAY_CARPET: "vaaleanharmaa matto"
+  LIGHT_GRAY_CONCRETE: "vaaleanharmaa betoni"
+  LIGHT_GRAY_CONCRETE_POWDER: "vaaleanharmaa betonijauhe"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "vaaleanharmaa lasitettu terrakotta"
+  LIGHT_GRAY_SHULKER_BOX: "vaaleanharmaa shulker-laatikko"
+  LIGHT_GRAY_STAINED_GLASS: "vaaleanharmaa lasi"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "vaaleanharmaa lasipaneeli"
+  LIGHT_GRAY_TERRACOTTA: "vaaleanharmaa terrakotta"
+  LIGHT_GRAY_WOOL: "vaaleanharmaa villa"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "kevyt painelaatta"
+  LIGHTNING_ROD: "ukkosenjohdatin"
+  LILAC: "syreeni"
+  LILY_OF_THE_VALLEY: "kielo"
+  LILY_PAD: "lumpeenlehti"
+  LIME_BANNER: "limetinvihreä viiri"
+  LIME_BED: "limetinvihreä sänky"
+  LIME_CANDLE: "limetinvihreä kynttilä"
+  LIME_CANDLE_CAKE: "kakku limetinvihreällä kynttilällä"
+  LIME_CARPET: "limetinvihreä matto"
+  LIME_CONCRETE: "limetinvihreä betoni"
+  LIME_CONCRETE_POWDER: "limetinvihreä betonijauhe"
+  LIME_GLAZED_TERRACOTTA: "limetinvihreä lasitettu terrakotta"
+  LIME_SHULKER_BOX: "limetinvihreä shulker-laatikko"
+  LIME_STAINED_GLASS: "limetinvihreä lasi"
+  LIME_STAINED_GLASS_PANE: "limetinvihreä lasipaneeli"
+  LIME_TERRACOTTA: "limetinvihreä terrakotta"
+  LIME_WOOL: "limetinvihreä villa"
+  LODESTONE: "magneettikivi"
+  LOOM: "kangaspuut"
+  MAGENTA_BANNER: "purppura viiri"
+  MAGENTA_BED: "purppura sänky"
+  MAGENTA_CANDLE: "purppura kynttilä"
+  MAGENTA_CANDLE_CAKE: "kakku purppuralla kynttilällä"
+  MAGENTA_CARPET: "purppura matto"
+  MAGENTA_CONCRETE: "purppura betoni"
+  MAGENTA_CONCRETE_POWDER: "purppura betonijauhe"
+  MAGENTA_GLAZED_TERRACOTTA: "purppura lasitettu terrakotta"
+  MAGENTA_SHULKER_BOX: "purppura shulker-laatikko"
+  MAGENTA_STAINED_GLASS: "purppura lasi"
+  MAGENTA_STAINED_GLASS_PANE: "purppura lasipaneeli"
+  MAGENTA_TERRACOTTA: "purppura terrakotta"
+  MAGENTA_WOOL: "purppura villa"
+  MAGMA_BLOCK: "magmakuutio"
+  MANGROVE_BUTTON: "mangrovepuunappi"
+  MANGROVE_DOOR: "mangrovepuuovi"
+  MANGROVE_FENCE: "mangrovepuuaita"
+  MANGROVE_FENCE_GATE: "mangrovepuuportti"
+  MANGROVE_HANGING_SIGN: "roikkuva mangrovepuukyltti"
+  MANGROVE_LEAVES: "mangrovepuun lehdet"
+  MANGROVE_LOG: "mangrovepuuhalko"
+  MANGROVE_PLANKS: "mangrovepuulankut"
+  MANGROVE_PRESSURE_PLATE: "mangrovepuupainelaatta"
+  MANGROVE_PROPAGULE: "mangrovepuun leviäin"
+  MANGROVE_ROOTS: "mangrovepuun juurakko"
+  MANGROVE_SIGN: "mangrovepuukyltti"
+  MANGROVE_SLAB: "mangrovepuulaatta"
+  MANGROVE_STAIRS: "mangrovepuuportaat"
+  MANGROVE_TRAPDOOR: "mangrovepuuluukku"
+  MANGROVE_WALL_HANGING_SIGN: "ripustettu roikkuva mangrovepuukyltti"
+  MANGROVE_WALL_SIGN: "ripustettu mangrovepuukyltti"
+  MANGROVE_WOOD: "mangrovepuu"
+  MEDIUM_AMETHYST_BUD: "keskikokoinen ametistinuppu"
+  MELON: "meloni"
+  MELON_STEM: "melonin varsi"
+  MOSS_BLOCK: "sammalkuutio"
+  MOSS_CARPET: "sammalmatto"
+  MOSSY_COBBLESTONE: "sammaleinen mukulakivi"
+  MOSSY_COBBLESTONE_SLAB: "sammaleinen mukulakivilaatta"
+  MOSSY_COBBLESTONE_STAIRS: "sammaleiset mukulakiviportaat"
+  MOSSY_COBBLESTONE_WALL: "sammaleinen kivimuuri"
+  MOSSY_STONE_BRICK_SLAB: "sammaleinen kivitiililaatta"
+  MOSSY_STONE_BRICK_STAIRS: "sammaleiset kivitiiliportaat"
+  MOSSY_STONE_BRICK_WALL: "sammaleinen kivitiilimuuri"
+  MOSSY_STONE_BRICKS: "sammaleinen kivitiili"
+  MOVING_PISTON: "liikkuva mäntä"
+  MUD: "muta"
+  MUD_BRICK_SLAB: "mutatiililaatta"
+  MUD_BRICK_STAIRS: "mutatiiliportaat"
+  MUD_BRICK_WALL: "mutatiilimuuri"
+  MUD_BRICKS: "mutatiili"
+  MUDDY_MANGROVE_ROOTS: "mutainen mangrovepuun juurakko"
+  MUSHROOM_STEM: "sienen varsi"
+  MYCELIUM: "sienirihmasto"
+  NETHER_BRICK_FENCE: "nether-tiiliaita"
+  NETHER_BRICK_SLAB: "nether-tiililaatta"
+  NETHER_BRICK_STAIRS: "nether-tiiliportaat"
+  NETHER_BRICK_WALL: "nether-tiilimuuri"
+  NETHER_BRICKS: "nether-tiili"
+  NETHER_GOLD_ORE: "nether-kultamalmi"
+  NETHER_PORTAL: "nether-portaali"
+  NETHER_QUARTZ_ORE: "nether-kvartsimalmi"
+  NETHER_SPROUTS: "nether-verso"
+  NETHER_WART: "nether-pahka"
+  NETHER_WART_BLOCK: "nether-pahkakuutio"
+  NETHERITE_BLOCK: "netheriittikuutio"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "sointukuutio"
+  OAK_BUTTON: "tamminappi"
+  OAK_DOOR: "tammiovi"
+  OAK_FENCE: "tammiaita"
+  OAK_FENCE_GATE: "tammiportti"
+  OAK_HANGING_SIGN: "roikkuva tammikyltti"
+  OAK_LEAVES: "tammenlehdet"
+  OAK_LOG: "tammihalko"
+  OAK_PLANKS: "tammilankut"
+  OAK_PRESSURE_PLATE: "tammipainelaatta"
+  OAK_SAPLING: "tammen taimi"
+  OAK_SIGN: "tammikyltti"
+  OAK_SLAB: "tammilaatta"
+  OAK_STAIRS: "tammiportaat"
+  OAK_TRAPDOOR: "tammiluukku"
+  OAK_WALL_HANGING_SIGN: "ripustettu roikkuva tammikyltti"
+  OAK_WALL_SIGN: "ripustettu tammikyltti"
+  OAK_WOOD: "tammipuu"
+  OBSERVER: "tarkkailija"
+  OBSIDIAN: "obsidiaani"
+  OCHRE_FROGLIGHT: "okrankeltainen sammakkovalo"
+  OMINOUS_BANNER: "pahaenteinen viiri"
+  ORANGE_BANNER: "oranssi viiri"
+  ORANGE_BED: "oranssi sänky"
+  ORANGE_CANDLE: "oranssi kynttilä"
+  ORANGE_CANDLE_CAKE: "kakku oranssilla kynttilällä"
+  ORANGE_CARPET: "oranssi matto"
+  ORANGE_CONCRETE: "oranssi betoni"
+  ORANGE_CONCRETE_POWDER: "oranssi betonijauhe"
+  ORANGE_GLAZED_TERRACOTTA: "oranssi lasitettu terrakotta"
+  ORANGE_SHULKER_BOX: "oranssi shulker-laatikko"
+  ORANGE_STAINED_GLASS: "oranssi lasi"
+  ORANGE_STAINED_GLASS_PANE: "oranssi lasipaneeli"
+  ORANGE_TERRACOTTA: "oranssi terrakotta"
+  ORANGE_TULIP: "oranssi tulppaani"
+  ORANGE_WOOL: "oranssi villa"
+  OXEYE_DAISY: "päivänkakkara"
+  OXIDIZED_CHISELED_COPPER: "hapettunut kaiverrettu kupari"
+  OXIDIZED_COPPER: "hapettunut kupari"
+  OXIDIZED_COPPER_BULB: "hapettunut kuparilamppu"
+  OXIDIZED_COPPER_DOOR: "hapettunut kupariovi"
+  OXIDIZED_COPPER_GRATE: "hapettunut kupariritilä"
+  OXIDIZED_COPPER_TRAPDOOR: "hapettunut kupariluukku"
+  OXIDIZED_CUT_COPPER: "hapettunut leikattu kupari"
+  OXIDIZED_CUT_COPPER_SLAB: "hapettunut leikattu kuparilaatta"
+  OXIDIZED_CUT_COPPER_STAIRS: "hapettuneet leikatut kupariportaat"
+  PACKED_ICE: "pakkautunut jää"
+  PACKED_MUD: "pakkautunut muta"
+  PEARLESCENT_FROGLIGHT: "helmiäisenhohtoinen sammakkovalo"
+  PEONY: "pioni"
+  PETRIFIED_OAK_SLAB: "kivettynyt tammilaatta"
+  PIGLIN_HEAD: "piglinin pää"
+  PIGLIN_WALL_HEAD: "ripustettu piglinin pää"
+  PINK_BANNER: "vaaleanpunainen viiri"
+  PINK_BED: "vaaleanpunainen sänky"
+  PINK_CANDLE: "vaaleanpunainen kynttilä"
+  PINK_CANDLE_CAKE: "kakku vaaleanpunaisella kynttilällä"
+  PINK_CARPET: "vaaleanpunainen matto"
+  PINK_CONCRETE: "vaaleanpunainen betoni"
+  PINK_CONCRETE_POWDER: "vaaleanpunainen betonijauhe"
+  PINK_GLAZED_TERRACOTTA: "vaaleanpunainen lasitettu terrakotta"
+  PINK_PETALS: "vaaleanpunaiset terälehdet"
+  PINK_SHULKER_BOX: "vaaleanpunainen shulker-laatikko"
+  PINK_STAINED_GLASS: "vaaleanpunainen lasi"
+  PINK_STAINED_GLASS_PANE: "vaaleanpunainen lasipaneeli"
+  PINK_TERRACOTTA: "vaaleanpunainen terrakotta"
+  PINK_TULIP: "vaaleanpunainen tulppaani"
+  PINK_WOOL: "vaaleanpunainen villa"
+  PISTON: "mäntä"
+  PISTON_HEAD: "männän pää"
+  PITCHER_CROP: "sinikannu"
+  PITCHER_PLANT: "sinikannu"
+  PLAYER_HEAD: "pelaajan pää"
+  PLAYER_HEAD_NAMED: "pelaajan %s pää"
+  PLAYER_WALL_HEAD: "ripustettu pelaajan pää"
+  PODZOL: "podsoli"
+  POINTED_DRIPSTONE: "terävä tippukivi"
+  POLISHED_ANDESITE: "kiillotettu andesiitti"
+  POLISHED_ANDESITE_SLAB: "kiillotettu andesiittilaatta"
+  POLISHED_ANDESITE_STAIRS: "sileät andesiittiportaat"
+  POLISHED_BASALT: "kiillotettu basaltti"
+  POLISHED_BLACKSTONE: "kiillotettu mustakivi"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "kiillotettu mustakivitiililaatta"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "kiillotetut mustakivitiiliportaat"
+  POLISHED_BLACKSTONE_BRICK_WALL: "kiillotettu mustakivitiilimuuri"
+  POLISHED_BLACKSTONE_BRICKS: "kiillotettu mustakivitiili"
+  POLISHED_BLACKSTONE_BUTTON: "kiillotettu mustakivinappi"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "kiillotettu mustakivipainelaatta"
+  POLISHED_BLACKSTONE_SLAB: "kiillotettu mustakivilaatta"
+  POLISHED_BLACKSTONE_STAIRS: "kiillotetut mustakiviportaat"
+  POLISHED_BLACKSTONE_WALL: "kiillotettu mustakivimuuri"
+  POLISHED_DEEPSLATE: "kiillotettu pohjaliuskekivi"
+  POLISHED_DEEPSLATE_SLAB: "kiillotettu pohjaliuskekivilaatta"
+  POLISHED_DEEPSLATE_STAIRS: "kiillotetut pohjaliuskekiviportaat"
+  POLISHED_DEEPSLATE_WALL: "kiillotettu pohjaliuskekiviseinä"
+  POLISHED_DIORITE: "kiillotettu dioriitti"
+  POLISHED_DIORITE_SLAB: "kiillotettu dioriittilaatta"
+  POLISHED_DIORITE_STAIRS: "kiillotetut dioriittiportaat"
+  POLISHED_GRANITE: "kiillotettu graniitti"
+  POLISHED_GRANITE_SLAB: "kiillotettu graniittilaatta"
+  POLISHED_GRANITE_STAIRS: "kiillotetut graniittiportaat"
+  POLISHED_TUFF: "kiillotettu tuffi"
+  POLISHED_TUFF_SLAB: "kiillotettu tuffilaatta"
+  POLISHED_TUFF_STAIRS: "kiillotetut tuffiportaat"
+  POLISHED_TUFF_WALL: "kiillotettu tuffimuuri"
+  POPPY: "unikko"
+  POTATOES: "peruna"
+  POTTED_ACACIA_SAPLING: "istutettu akaasian taimi"
+  POTTED_ALLIUM: "istutettu laukka"
+  POTTED_AZALEA_BUSH: "istutettu atsalea"
+  POTTED_AZURE_BLUET: "istutettu sinivuokko"
+  POTTED_BAMBOO: "istutettu bambu"
+  POTTED_BIRCH_SAPLING: "istutettu koivun taimi"
+  POTTED_BLUE_ORCHID: "istutettu sininen orkidea"
+  POTTED_BROWN_MUSHROOM: "istutettu ruskea sieni"
+  POTTED_CACTUS: "istutettu kaktus"
+  POTTED_CHERRY_SAPLING: "istutettu kirsikkapuun taimi"
+  POTTED_CORNFLOWER: "istutettu ruiskaunokki"
+  POTTED_CRIMSON_FUNGUS: "istutettu karmiinisieni"
+  POTTED_CRIMSON_ROOTS: "istutetut karmiinijuuret"
+  POTTED_DANDELION: "istutettu voikukka"
+  POTTED_DARK_OAK_SAPLING: "istutettu tumman tammen taimi"
+  POTTED_DEAD_BUSH: "istutettu kuollut pensas"
+  POTTED_FERN: "istutettu saniainen"
+  POTTED_FLOWERING_AZALEA_BUSH: "istutettu kukkiva atsalea"
+  POTTED_JUNGLE_SAPLING: "istutettu viidakkopuun taimi"
+  POTTED_LILY_OF_THE_VALLEY: "istutettu kielo"
+  POTTED_MANGROVE_PROPAGULE: "istutettu mangrovepuun leviäin"
+  POTTED_OAK_SAPLING: "istutettu tammen taimi"
+  POTTED_ORANGE_TULIP: "istutettu oranssi tulppaani"
+  POTTED_OXEYE_DAISY: "istutettu päivänkakkara"
+  POTTED_PINK_TULIP: "istutettu vaaleanpunainen tulppaani"
+  POTTED_POPPY: "istutettu unikko"
+  POTTED_RED_MUSHROOM: "istutettu kärpässieni"
+  POTTED_RED_TULIP: "istutettu punainen tulppaani"
+  POTTED_SPRUCE_SAPLING: "istutettu kuusen taimi"
+  POTTED_TORCHFLOWER: "istutettu soihtulilja"
+  POTTED_WARPED_FUNGUS: "istutettu kummasieni"
+  POTTED_WARPED_ROOTS: "istutetut kummajuuret"
+  POTTED_WHITE_TULIP: "istutettu valkoinen tulppaani"
+  POTTED_WITHER_ROSE: "istutettu wither-ruusu"
+  POWDER_SNOW: "puuterilumi"
+  POWDER_SNOW_CAULDRON: "puuterilumipata"
+  POWERED_RAIL: "kiihdytinraide"
+  PRISMARINE: "prismariini"
+  PRISMARINE_BRICK_SLAB: "prismariinitiililaatta"
+  PRISMARINE_BRICK_STAIRS: "prismariinitiiliportaat"
+  PRISMARINE_BRICKS: "prismariinitiili"
+  PRISMARINE_SLAB: "prismariinilaatta"
+  PRISMARINE_STAIRS: "prismariiniportaat"
+  PRISMARINE_WALL: "prismariinimuuri"
+  PUMPKIN: "kurpitsa"
+  PUMPKIN_STEM: "kurpitsan varsi"
+  PURPLE_BANNER: "violetti viiri"
+  PURPLE_BED: "violetti sänky"
+  PURPLE_CANDLE: "violetti kynttilä"
+  PURPLE_CANDLE_CAKE: "kakku violetilla kynttilällä"
+  PURPLE_CARPET: "violetti matto"
+  PURPLE_CONCRETE: "violetti betoni"
+  PURPLE_CONCRETE_POWDER: "violetti betonijauhe"
+  PURPLE_GLAZED_TERRACOTTA: "violetti lasitettu terrakotta"
+  PURPLE_SHULKER_BOX: "violetti shulker-laatikko"
+  PURPLE_STAINED_GLASS: "violetti lasi"
+  PURPLE_STAINED_GLASS_PANE: "violetti lasipaneeli"
+  PURPLE_TERRACOTTA: "violetti terrakotta"
+  PURPLE_WOOL: "violetti villa"
+  PURPUR_BLOCK: "purpur-kuutio"
+  PURPUR_PILLAR: "purpur-pilari"
+  PURPUR_SLAB: "purpur-laatta"
+  PURPUR_STAIRS: "purpur-portaat"
+  QUARTZ_BLOCK: "kvartsikuutio"
+  QUARTZ_BRICKS: "kvartsitiili"
+  QUARTZ_PILLAR: "kvartsipilari"
+  QUARTZ_SLAB: "kvartsilaatta"
+  QUARTZ_STAIRS: "kvartsiportaat"
+  RAIL: "raide"
+  RAW_COPPER_BLOCK: "raaka kuparikuutio"
+  RAW_GOLD_BLOCK: "raaka kultakuutio"
+  RAW_IRON_BLOCK: "raaka rautakuutio"
+  RED_BANNER: "punainen viiri"
+  RED_BED: "punainen sänky"
+  RED_CANDLE: "punainen kynttilä"
+  RED_CANDLE_CAKE: "kakku punaisella kynttilällä"
+  RED_CARPET: "punainen matto"
+  RED_CONCRETE: "punainen betoni"
+  RED_CONCRETE_POWDER: "punainen betonijauhe"
+  RED_GLAZED_TERRACOTTA: "punainen lasitettu terrakotta"
+  RED_MUSHROOM: "kärpässieni"
+  RED_MUSHROOM_BLOCK: "kärpässienikuutio"
+  RED_NETHER_BRICK_SLAB: "punainen nether-tiililaatta"
+  RED_NETHER_BRICK_STAIRS: "punaiset nether-tiiliportaat"
+  RED_NETHER_BRICK_WALL: "punainen nether-tiilimuuri"
+  RED_NETHER_BRICKS: "punainen nether-tiili"
+  RED_SAND: "punahiekka"
+  RED_SANDSTONE: "punahiekkakivi"
+  RED_SANDSTONE_SLAB: "punahiekkakivilaatta"
+  RED_SANDSTONE_STAIRS: "punahiekkakiviportaat"
+  RED_SANDSTONE_WALL: "punahiekkakivimuuri"
+  RED_SHULKER_BOX: "punainen shulker-laatikko"
+  RED_STAINED_GLASS: "punainen lasi"
+  RED_STAINED_GLASS_PANE: "punainen lasipaneeli"
+  RED_TERRACOTTA: "punainen terrakotta"
+  RED_TULIP: "punainen tulppaani"
+  RED_WOOL: "punainen villa"
+  REDSTONE_BLOCK: "redstone-kuutio"
+  REDSTONE_LAMP: "redstone-lamppu"
+  REDSTONE_ORE: "redstone-malmi"
+  REDSTONE_TORCH: "redstone-soihtu"
+  REDSTONE_WALL_TORCH: "seinälle asetettu redstone-soihtu"
+  REDSTONE_WIRE: "redstone-johdin"
+  REINFORCED_DEEPSLATE: "vahvistettu pohjaliuskekivi"
+  REPEATER: "redstone-toistin"
+  REPEATING_COMMAND_BLOCK: "toistava komentokuutio"
+  RESPAWN_ANCHOR: "uudelleensyntymisankkuri"
+  ROOTED_DIRT: "juurtunut multa"
+  ROSE_BUSH: "ruusupensas"
+  SAND: "hiekka"
+  SANDSTONE: "hiekkakivi"
+  SANDSTONE_SLAB: "hiekkakivilaatta"
+  SANDSTONE_STAIRS: "hiekkakiviportaat"
+  SANDSTONE_WALL: "hiekkakivimuuri"
+  SCAFFOLDING: "rakennusteline"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk-herätin"
+  SCULK_SENSOR: "sculk-sensori"
+  SCULK_SHRIEKER: "sculk-kirkuja"
+  SCULK_VEIN: "sculk-suoni"
+  SEA_LANTERN: "merilyhty"
+  SEA_PICKLE: "tulitela"
+  SEAGRASS: "meriruoho"
+  SET_SPAWN: "uudelleensyntymispiste asetettu"
+  SHORT_GRASS: "lyhyt ruoho"
+  SHROOMLIGHT: "sienivalo"
+  SHULKER_BOX: "shulker-laatikko"
+  SKELETON_SKULL: "luurangon kallo"
+  SKELETON_WALL_SKULL: "ripustettu luurangon kallo"
+  SLIME_BLOCK: "limakuutio"
+  SMALL_AMETHYST_BUD: "pieni ametistinuppu"
+  SMALL_DRIPLEAF: "pieni tippulehti"
+  SMITHING_TABLE: "takomispöytä"
+  SMOKER: "savustin"
+  SMOOTH_BASALT: "sileä basaltti"
+  SMOOTH_QUARTZ: "sileä kvartsikuutio"
+  SMOOTH_QUARTZ_SLAB: "sileä kvartsilaatta"
+  SMOOTH_QUARTZ_STAIRS: "sileät kvartsiportaat"
+  SMOOTH_RED_SANDSTONE: "sileä punahiekkakivi"
+  SMOOTH_RED_SANDSTONE_SLAB: "sileä punahiekkakivilaatta"
+  SMOOTH_RED_SANDSTONE_STAIRS: "sileät punahiekkakiviportaat"
+  SMOOTH_SANDSTONE: "sileä hiekkakivi"
+  SMOOTH_SANDSTONE_SLAB: "sileä hiekkakivilaatta"
+  SMOOTH_SANDSTONE_STAIRS: "sileät hiekkakiviportaat"
+  SMOOTH_STONE: "sileä kivi"
+  SMOOTH_STONE_SLAB: "sileä kivilaatta"
+  SNIFFER_EGG: "nuuhkun muna"
+  SNOW: "lumi"
+  SNOW_BLOCK: "lumikuutio"
+  SOUL_CAMPFIRE: "sielunuotio"
+  SOUL_FIRE: "sielutuli"
+  SOUL_LANTERN: "sielulyhty"
+  SOUL_SAND: "sieluhiekka"
+  SOUL_SOIL: "sielumulta"
+  SOUL_TORCH: "sielusoihtu"
+  SOUL_WALL_TORCH: "seinälle asetettu sielusoihtu"
+  SPAWN_NOT_VALID: "sinulla ei ole kotisänkyä eikä ladattua uudelleensyntymisankkuria tai niiden edessä oli este"
+  SPAWNER: "luojakuutio"
+  SPAWNER_DESC1: "käytä luomismunaa:"
+  SPAWNER_DESC2: "asettaa olennon tyypin"
+  SPONGE: "pesusieni"
+  SPORE_BLOSSOM: "itiökukka"
+  SPRUCE_BUTTON: "kuusinappi"
+  SPRUCE_DOOR: "kuusiovi"
+  SPRUCE_FENCE: "kuusiaita"
+  SPRUCE_FENCE_GATE: "kuusiportti"
+  SPRUCE_HANGING_SIGN: "roikkuva kuusikyltti"
+  SPRUCE_LEAVES: "kuusenhavut"
+  SPRUCE_LOG: "kuusihalko"
+  SPRUCE_PLANKS: "kuusilankut"
+  SPRUCE_PRESSURE_PLATE: "kuusipainelaatta"
+  SPRUCE_SAPLING: "kuusen taimi"
+  SPRUCE_SIGN: "kuusikyltti"
+  SPRUCE_SLAB: "kuusilaatta"
+  SPRUCE_STAIRS: "kuusiportaat"
+  SPRUCE_TRAPDOOR: "kuusiluukku"
+  SPRUCE_WALL_HANGING_SIGN: "ripustettu roikkuva kuusikyltti"
+  SPRUCE_WALL_SIGN: "ripustettu kuusikyltti"
+  SPRUCE_WOOD: "kuusipuu"
+  STICKY_PISTON: "tarttumamäntä"
+  STONE: "kivi"
+  STONE_BRICK_SLAB: "kivitiililaatta"
+  STONE_BRICK_STAIRS: "kivitiiliportaat"
+  STONE_BRICK_WALL: "kivitiilimuuri"
+  STONE_BRICKS: "kivitiili"
+  STONE_BUTTON: "kivinappi"
+  STONE_PRESSURE_PLATE: "kivipainelaatta"
+  STONE_SLAB: "kivilaatta"
+  STONE_STAIRS: "kiviportaat"
+  STONECUTTER: "kivileikkuri"
+  STRIPPED_ACACIA_LOG: "kuorittu akaasiahalko"
+  STRIPPED_ACACIA_WOOD: "kuorittu akaasia"
+  STRIPPED_BAMBOO_BLOCK: "kuorittu bambukuutio"
+  STRIPPED_BIRCH_LOG: "kuorittu koivuhalko"
+  STRIPPED_BIRCH_WOOD: "kuorittu koivu"
+  STRIPPED_CHERRY_LOG: "kuorittu kirsikkapuuhalko"
+  STRIPPED_CHERRY_WOOD: "kuorittu kirsikkapuu"
+  STRIPPED_CRIMSON_HYPHAE: "kuorittu karmiinirihma"
+  STRIPPED_CRIMSON_STEM: "kuorittu karmiinivarsi"
+  STRIPPED_DARK_OAK_LOG: "kuorittu tumma tammihalko"
+  STRIPPED_DARK_OAK_WOOD: "kuorittu tumma tammi"
+  STRIPPED_JUNGLE_LOG: "kuorittu viidakkopuuhalko"
+  STRIPPED_JUNGLE_WOOD: "kuorittu viidakkopuu"
+  STRIPPED_MANGROVE_LOG: "kuorittu mangrovepuuhalko"
+  STRIPPED_MANGROVE_WOOD: "kuorittu mangrovepuu"
+  STRIPPED_OAK_LOG: "kuorittu tammihalko"
+  STRIPPED_OAK_WOOD: "kuorittu tammi"
+  STRIPPED_SPRUCE_LOG: "kuorittu kuusihalko"
+  STRIPPED_SPRUCE_WOOD: "kuorittu kuusi"
+  STRIPPED_WARPED_HYPHAE: "kuorittu kummarihma"
+  STRIPPED_WARPED_STEM: "kuorittu kummavarsi"
+  STRUCTURE_BLOCK: "rakennekuutio"
+  STRUCTURE_VOID: "rakennetyhjiö"
+  SUGAR_CANE: "sokeriruoko"
+  SUNFLOWER: "auringonkukka"
+  SUSPICIOUS_GRAVEL: "epäilyttävä sora"
+  SUSPICIOUS_SAND: "epäilyttävä hiekka"
+  SWEET_BERRY_BUSH: "makea marjapensas"
+  TALL_GRASS: "pitkä ruoho"
+  TALL_SEAGRASS: "pitkä meriruoho"
+  TARGET: "maalitaulu"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "tummennettu lasi"
+  TNT: "tnt"
+  TORCH: "soihtu"
+  TORCHFLOWER: "soihtulilja"
+  TORCHFLOWER_CROP: "soihtulilja"
+  TRAPPED_CHEST: "ansoitettu arkku"
+  TRIAL_SPAWNER: "koetuksen luojakuutio"
+  TRIPWIRE: "ansalanka"
+  TRIPWIRE_HOOK: "ansalankakoukku"
+  TUBE_CORAL: "putkikoralli"
+  TUBE_CORAL_BLOCK: "putkikorallikuutio"
+  TUBE_CORAL_FAN: "putkikoralliviuhka"
+  TUBE_CORAL_WALL_FAN: "seinäputkikoralliviuhka"
+  TUFF: "tuffi"
+  TUFF_BRICK_SLAB: "tuffitiililaatta"
+  TUFF_BRICK_STAIRS: "tuffitiiliportaat"
+  TUFF_BRICK_WALL: "tuffitiilimuuri"
+  TUFF_BRICKS: "tuffitiili"
+  TUFF_SLAB: "tuffilaatta"
+  TUFF_STAIRS: "tuffiportaat"
+  TUFF_WALL: "tuffimuuri"
+  TURTLE_EGG: "kilpikonnan muna"
+  TWISTING_VINES: "kieroköynnös"
+  TWISTING_VINES_PLANT: "kieroköynnöskasvi"
+  VERDANT_FROGLIGHT: "vihertävä sammakkovalo"
+  VINE: "köynnös"
+  VOID_AIR: "tyhjiöilma"
+  WALL_TORCH: "seinälle asetettu soihtu"
+  WARPED_BUTTON: "kummanappi"
+  WARPED_DOOR: "kummaovi"
+  WARPED_FENCE: "kumma-aita"
+  WARPED_FENCE_GATE: "kummaportti"
+  WARPED_FUNGUS: "kummasieni"
+  WARPED_HANGING_SIGN: "roikkuva kummakyltti"
+  WARPED_HYPHAE: "kummarihma"
+  WARPED_NYLIUM: "kummasienirihmasto"
+  WARPED_PLANKS: "kummalankut"
+  WARPED_PRESSURE_PLATE: "kummapainelaatta"
+  WARPED_ROOTS: "kummajuuret"
+  WARPED_SIGN: "kummakyltti"
+  WARPED_SLAB: "kummalaatta"
+  WARPED_STAIRS: "kummaportaat"
+  WARPED_STEM: "kummavarsi"
+  WARPED_TRAPDOOR: "kummaluukku"
+  WARPED_WALL_HANGING_SIGN: "ripustettu roikkuva kummakyltti"
+  WARPED_WALL_SIGN: "ripustettu kummakyltti"
+  WARPED_WART_BLOCK: "kummapahkakuutio"
+  WATER: "vesi"
+  WATER_CAULDRON: "vesipata"
+  WAXED_CHISELED_COPPER: "vahattu kaiverrettu kupari"
+  WAXED_COPPER_BLOCK: "vahattu kuparikuutio"
+  WAXED_COPPER_BULB: "vahattu kuparilamppu"
+  WAXED_COPPER_DOOR: "vahattu kupariovi"
+  WAXED_COPPER_GRATE: "vahattu kupariritilä"
+  WAXED_COPPER_TRAPDOOR: "vahattu kupariluukku"
+  WAXED_CUT_COPPER: "vahattu leikattu kupari"
+  WAXED_CUT_COPPER_SLAB: "vahattu leikattu kuparilaatta"
+  WAXED_CUT_COPPER_STAIRS: "vahatut leikatut kupariportaat"
+  WAXED_EXPOSED_CHISELED_COPPER: "vahattu altistunut kaiverrettu kupari"
+  WAXED_EXPOSED_COPPER: "vahattu altistunut kupari"
+  WAXED_EXPOSED_COPPER_BULB: "vahattu altistunut kuparilamppu"
+  WAXED_EXPOSED_COPPER_DOOR: "vahattu altistunut kupariovi"
+  WAXED_EXPOSED_COPPER_GRATE: "vahattu altistunut kupariritilä"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "vahattu altistunut kupariluukku"
+  WAXED_EXPOSED_CUT_COPPER: "vahattu altistunut leikattu kupari"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "vahattu altistunut leikattu kuparilaatta"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "vahatut altistuneet leikatut kupariportaat"
+  WAXED_OXIDIZED_CHISELED_COPPER: "vahattu hapettunut kaiverrettu kupari"
+  WAXED_OXIDIZED_COPPER: "vahattu hapettunut kupari"
+  WAXED_OXIDIZED_COPPER_BULB: "vahattu hapettunut kuparilamppu"
+  WAXED_OXIDIZED_COPPER_DOOR: "vahattu hapettunut kupariovi"
+  WAXED_OXIDIZED_COPPER_GRATE: "vahattu hapettunut kupariritilä"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "vahattu hapettunut kupariluukku"
+  WAXED_OXIDIZED_CUT_COPPER: "vahattu hapettunut leikattu kupari"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "vahattu hapettunut leikattu kuparilaatta"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "vahatut hapettuneet leikatut kupariportaat"
+  WAXED_WEATHERED_CHISELED_COPPER: "vahattu rapautunut kaiverrettu kupari"
+  WAXED_WEATHERED_COPPER: "vahattu rapautunut kupari"
+  WAXED_WEATHERED_COPPER_BULB: "vahattu rapautunut kuparilamppu"
+  WAXED_WEATHERED_COPPER_DOOR: "vahattu rapautunut kupariovi"
+  WAXED_WEATHERED_COPPER_GRATE: "vahattu rapautunut kupariritilä"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "vahattu rapautunut kupariluukku"
+  WAXED_WEATHERED_CUT_COPPER: "vahattu rapautunut leikattu kupari"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "vahattu rapautunut leikattu kuparilaatta"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "vahatut rapautuneet leikatut kupariportaat"
+  WEATHERED_CHISELED_COPPER: "rapautunut kaiverrettu kupari"
+  WEATHERED_COPPER: "rapautunut kupari"
+  WEATHERED_COPPER_BULB: "rapautunut kuparilamppu"
+  WEATHERED_COPPER_DOOR: "rapautunut kupariovi"
+  WEATHERED_COPPER_GRATE: "rapautunut kupariritilä"
+  WEATHERED_COPPER_TRAPDOOR: "rapautunut kupariluukku"
+  WEATHERED_CUT_COPPER: "rapautunut leikattu kupari"
+  WEATHERED_CUT_COPPER_SLAB: "rapautunut leikattu kuparilaatta"
+  WEATHERED_CUT_COPPER_STAIRS: "rapautuneet leikatut kupariportaat"
+  WEEPING_VINES: "itkuköynnös"
+  WEEPING_VINES_PLANT: "itkuköynnöskasvi"
+  WET_SPONGE: "märkä pesusieni"
+  WHEAT: "vehnä"
+  WHITE_BANNER: "valkoinen viiri"
+  WHITE_BED: "valkoinen sänky"
+  WHITE_CANDLE: "valkoinen kynttilä"
+  WHITE_CANDLE_CAKE: "kakku valkoisella kynttilällä"
+  WHITE_CARPET: "valkoinen matto"
+  WHITE_CONCRETE: "valkoinen betoni"
+  WHITE_CONCRETE_POWDER: "valkoinen betonijauhe"
+  WHITE_GLAZED_TERRACOTTA: "valkoinen lasitettu terrakotta"
+  WHITE_SHULKER_BOX: "valkoinen shulker-laatikko"
+  WHITE_STAINED_GLASS: "valkoinen lasi"
+  WHITE_STAINED_GLASS_PANE: "valkoinen lasipaneeli"
+  WHITE_TERRACOTTA: "valkoinen terrakotta"
+  WHITE_TULIP: "valkoinen tulppaani"
+  WHITE_WOOL: "valkoinen villa"
+  WITHER_ROSE: "wither-ruusu"
+  WITHER_SKELETON_SKULL: "wither-luurangon kallo"
+  WITHER_SKELETON_WALL_SKULL: "ripustettu wither-luurangon kallo"
+  YELLOW_BANNER: "keltainen viiri"
+  YELLOW_BED: "keltainen sänky"
+  YELLOW_CANDLE: "keltainen kynttilä"
+  YELLOW_CANDLE_CAKE: "kakku keltaisella kynttilällä"
+  YELLOW_CARPET: "keltainen matto"
+  YELLOW_CONCRETE: "keltainen betoni"
+  YELLOW_CONCRETE_POWDER: "keltainen betonijauhe"
+  YELLOW_GLAZED_TERRACOTTA: "keltainen lasitettu terrakotta"
+  YELLOW_SHULKER_BOX: "keltainen shulker-laatikko"
+  YELLOW_STAINED_GLASS: "keltainen lasi"
+  YELLOW_STAINED_GLASS_PANE: "keltainen lasipaneeli"
+  YELLOW_TERRACOTTA: "keltainen terrakotta"
+  YELLOW_WOOL: "keltainen villa"
+  ZOMBIE_HEAD: "zombin pää"
+  ZOMBIE_WALL_HEAD: "ripustettu zombin pää"
+  ACACIA_BOAT: "akaasiavene"
+  ACACIA_CHEST_BOAT: "akaasiavene arkulla"
+  ALLAY_SPAWN_EGG: "luo apuri"
+  AMETHYST_SHARD: "ametistisirpale"
+  ANGLER_POTTERY_SHARD: "kalastajan ruukunsirpale"
+  ANGLER_POTTERY_SHERD: "kalastajan ruukunsirpale"
+  APPLE: "omena"
+  ARCHER_POTTERY_SHARD: "jousiampujan ruukunsirpale"
+  ARCHER_POTTERY_SHERD: "jousiampujan ruukunsirpale"
+  ARMOR_STAND: "haarniskateline"
+  ARMS_UP_POTTERY_SHARD: "soturin ruukunsirpale"
+  ARMS_UP_POTTERY_SHERD: "soturin ruukunsirpale"
+  ARROW: "nuoli"
+  AXOLOTL_BUCKET: "aksolotli ämpärissä"
+  AXOLOTL_SPAWN_EGG: "luo aksolotli"
+  BAKED_POTATO: "paistettu peruna"
+  BAMBOO_CHEST_RAFT: "bambulautta arkulla"
+  BAMBOO_RAFT: "bambulautta"
+  BAT_SPAWN_EGG: "luo lepakko"
+  BEE_SPAWN_EGG: "luo mehiläinen"
+  BEEF: "raaka pihvi"
+  BEETROOT: "punajuuri"
+  BEETROOT_SEEDS: "punajuuren siemenet"
+  BEETROOT_SOUP: "punajuurikeitto"
+  BIRCH_BOAT: "koivuvene"
+  BIRCH_CHEST_BOAT: "koivuvene arkulla"
+  BLACK_DYE: "musta väriaine"
+  BLADE_POTTERY_SHARD: "miekan ruukunsirpale"
+  BLADE_POTTERY_SHERD: "miekan ruukunsirpale"
+  BLAZE_POWDER: "roihujauhe"
+  BLAZE_ROD: "roihusauva"
+  BLAZE_SPAWN_EGG: "luo roihu"
+  BLUE_DYE: "sininen väriaine"
+  BONE: "luu"
+  BONE_MEAL: "luujauho"
+  BOOK: "kirja"
+  BOW: "jousi"
+  BOWL: "kulho"
+  BREAD: "leipä"
+  BREEZE_SPAWN_EGG: "luo viima"
+  BREWER_POTTERY_SHARD: "juomanvalmistajan ruukunsirpale"
+  BREWER_POTTERY_SHERD: "juomanvalmistajan ruukunsirpale"
+  BRICK: "tiili"
+  BROWN_DYE: "ruskea väriaine"
+  BRUSH: "sivellin"
+  BUCKET: "ämpäri"
+  BUNDLE: "pussi"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "liekin ruukunsirpale"
+  BURN_POTTERY_SHERD: "liekin ruukunsirpale"
+  CAMEL_SPAWN_EGG: "luo kameli"
+  CARROT: "porkkana"
+  CARROT_ON_A_STICK: "porkkana kepin päässä"
+  CAT_SPAWN_EGG: "luo kissa"
+  CAVE_SPIDER_SPAWN_EGG: "luo luolahämähäkki"
+  CHAINMAIL_BOOTS: "rengashaarniskan kengät"
+  CHAINMAIL_CHESTPLATE: "rengashaarniskan rintapanssari"
+  CHAINMAIL_HELMET: "rengashaarniskan kypärä"
+  CHAINMAIL_LEGGINGS: "rengashaarniskan housut"
+  CHARCOAL: "puuhiili"
+  CHERRY_BOAT: "kirsikkapuuvene"
+  CHERRY_CHEST_BOAT: "kirsikkapuuvene arkulla"
+  CHEST_MINECART: "arkullinen kaivosvaunu"
+  CHICKEN: "raaka kana"
+  CHICKEN_SPAWN_EGG: "luo kana"
+  CHORUS_FRUIT: "chorus-hedelmä"
+  CLAY_BALL: "savipallo"
+  CLOCK: "kello"
+  COAL: "hiili"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  COCOA_BEANS: "kaakaopavut"
+  COD: "raaka turska"
+  COD_BUCKET: "turska ämpärissä"
+  COD_SPAWN_EGG: "luo turska"
+  COMMAND_BLOCK_MINECART: "komentokuutiokaivosvaunu"
+  COMPASS: "kompassi"
+  COOKED_BEEF: "paisti"
+  COOKED_CHICKEN: "paistettu kana"
+  COOKED_COD: "paistettu turska"
+  COOKED_MUTTON: "paistettu lampaanliha"
+  COOKED_PORKCHOP: "paistettu porsaankyljys"
+  COOKED_RABBIT: "paistettu jäniksenliha"
+  COOKED_SALMON: "paistettu lohi"
+  COOKIE: "keksi"
+  COPPER_INGOT: "kupariharkko"
+  COW_SPAWN_EGG: "luo lehmä"
+  CREEPER_BANNER_PATTERN: "viirikuvio"
+  CREEPER_BANNER_PATTERN_DESC: "creeper-räjähde"
+  CREEPER_SPAWN_EGG: "luo creeper"
+  CROSSBOW: "varsijousi"
+  CROSSBOW_PROJECTILE: "ammus:"
+  CYAN_DYE: "syaani väriaine"
+  DANGER_POTTERY_SHARD: "vaaran ruukunsirpale"
+  DANGER_POTTERY_SHERD: "vaaran ruukunsirpale"
+  DARK_OAK_BOAT: "tumma tammivene"
+  DARK_OAK_CHEST_BOAT: "tumma tammivene arkulla"
+  DEBUG_STICK: "virheenkorjaustikku"
+  DEBUG_STICK_EMPTY: "kohteella %s ei ole ominaisuuksia"
+  DEBUG_STICK_SELECT: "valittu \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" tilaan %s"
+  DIAMOND: "timantti"
+  DIAMOND_AXE: "timanttikirves"
+  DIAMOND_BOOTS: "timanttisaappaat"
+  DIAMOND_CHESTPLATE: "timanttirintapanssari"
+  DIAMOND_HELMET: "timanttikypärä"
+  DIAMOND_HOE: "timanttikuokka"
+  DIAMOND_HORSE_ARMOR: "timanttinen hevosen panssari"
+  DIAMOND_LEGGINGS: "timanttihousut"
+  DIAMOND_PICKAXE: "timanttihakku"
+  DIAMOND_SHOVEL: "timanttilapio"
+  DIAMOND_SWORD: "timanttimiekka"
+  DISC_FRAGMENT_5: "musiikkilevyn palanen"
+  DISC_FRAGMENT_5_DESC: "musiikkilevy – 5"
+  DOLPHIN_SPAWN_EGG: "luo delfiini"
+  DONKEY_SPAWN_EGG: "luo aasi"
+  DRAGON_BREATH: "lohikäärmeen henkäys"
+  DRIED_KELP: "kuivattu rakkolevä"
+  DROWNED_SPAWN_EGG: "luo hukkunut"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  ECHO_SHARD: "kaikusirpale"
+  EGG: "kananmuna"
+  ELDER_GUARDIAN_SPAWN_EGG: "luo vartijavanhin"
+  ELYTRA: "elytra"
+  EMERALD: "smaragdi"
+  ENCHANTED_BOOK: "lumottu kirja"
+  ENCHANTED_GOLDEN_APPLE: "lumottu kultaomena"
+  END_CRYSTAL: "end-kristalli"
+  ENDER_DRAGON_SPAWN_EGG: "luo ender-lohikäärme"
+  ENDER_EYE: "ender-silmä"
+  ENDER_PEARL: "ender-helmi"
+  ENDERMAN_SPAWN_EGG: "luo enderman"
+  ENDERMITE_SPAWN_EGG: "luo endermite"
+  EVOKER_SPAWN_EGG: "luo manaaja"
+  EXPERIENCE_BOTTLE: "lumottu pullo"
+  EXPLORER_POTTERY_SHARD: "seikkailijan ruukunsirpale"
+  EXPLORER_POTTERY_SHERD: "seikkailijan ruukunsirpale"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  FEATHER: "höyhen"
+  FERMENTED_SPIDER_EYE: "käynyt hämähäkinsilmä"
+  FILLED_MAP: "kartta"
+  FIRE_CHARGE: "tulipallo"
+  FIREWORK_ROCKET: "ilotulitusraketti"
+  FIREWORK_ROCKET_FLIGHT: "lentoaika:"
+  FIREWORK_STAR: "ilotulituspanos"
+  FIREWORK_STAR_BLACK: "musta"
+  FIREWORK_STAR_BLUE: "sininen"
+  FIREWORK_STAR_BROWN: "ruskea"
+  FIREWORK_STAR_CUSTOM_COLOR: "oma väri"
+  FIREWORK_STAR_CYAN: "syaani"
+  FIREWORK_STAR_FADE_TO: "häivytys"
+  FIREWORK_STAR_FLICKER: "tuike"
+  FIREWORK_STAR_GRAY: "harmaa"
+  FIREWORK_STAR_GREEN: "vihreä"
+  FIREWORK_STAR_LIGHT_BLUE: "vaaleansininen"
+  FIREWORK_STAR_LIGHT_GRAY: "vaaleanharmaa"
+  FIREWORK_STAR_LIME: "limetinvihreä"
+  FIREWORK_STAR_MAGENTA: "purppura"
+  FIREWORK_STAR_ORANGE: "oranssi"
+  FIREWORK_STAR_PINK: "vaaleanpunainen"
+  FIREWORK_STAR_PURPLE: "violetti"
+  FIREWORK_STAR_RED: "punainen"
+  FIREWORK_STAR_SHAPE: "tuntematon kuvio"
+  FIREWORK_STAR_SHAPE_BURST: "ryöppy"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper-kuvioitu"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "suuri räjähdys"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "pieni räjähdys"
+  FIREWORK_STAR_SHAPE_STAR: "tähtikuvio"
+  FIREWORK_STAR_TRAIL: "vana"
+  FIREWORK_STAR_WHITE: "valkoinen"
+  FIREWORK_STAR_YELLOW: "keltainen"
+  FISHING_ROD: "onkivapa"
+  FLINT: "piikivi"
+  FLINT_AND_STEEL: "tulukset"
+  FLOWER_BANNER_PATTERN: "viirikuvio"
+  FLOWER_BANNER_PATTERN_DESC: "kukkaräjähde"
+  FOX_SPAWN_EGG: "luo kettu"
+  FRIEND_POTTERY_SHARD: "ystävän ruukunsirpale"
+  FRIEND_POTTERY_SHERD: "ystävän ruukunsirpale"
+  FROG_SPAWN_EGG: "luo sammakko"
+  FURNACE_MINECART: "moottoroitu kaivosvaunu"
+  GHAST_SPAWN_EGG: "luo ghast"
+  GHAST_TEAR: "ghastin kyynel"
+  GLASS_BOTTLE: "lasipullo"
+  GLISTERING_MELON_SLICE: "kimalteleva melonin siivu"
+  GLOBE_BANNER_PATTERN: "viirikuvio"
+  GLOBE_BANNER_PATTERN_DESC: "karttakuutio"
+  GLOW_BERRIES: "hehkumarjat"
+  GLOW_INK_SAC: "hehkumustepussi"
+  GLOW_ITEM_FRAME: "hehkukehys"
+  GLOW_SQUID_SPAWN_EGG: "luo hehkukalmari"
+  GLOWSTONE_DUST: "hehkukivijauhe"
+  GOAT_HORN: "vuohen sarvi"
+  GOAT_SPAWN_EGG: "luo vuohi"
+  GOLD_INGOT: "kultaharkko"
+  GOLD_NUGGET: "kultahippu"
+  GOLDEN_APPLE: "kultaomena"
+  GOLDEN_AXE: "kultakirves"
+  GOLDEN_BOOTS: "kultasaappaat"
+  GOLDEN_CARROT: "kultaporkkana"
+  GOLDEN_CHESTPLATE: "kultarintapanssari"
+  GOLDEN_HELMET: "kultakypärä"
+  GOLDEN_HOE: "kultakuokka"
+  GOLDEN_HORSE_ARMOR: "kultainen hevosen panssari"
+  GOLDEN_LEGGINGS: "kultahousut"
+  GOLDEN_PICKAXE: "kultahakku"
+  GOLDEN_SHOVEL: "kultalapio"
+  GOLDEN_SWORD: "kultamiekka"
+  GRAY_DYE: "harmaa väriaine"
+  GREEN_DYE: "vihreä väriaine"
+  GUARDIAN_SPAWN_EGG: "luo vartija"
+  GUNPOWDER: "ruuti"
+  HEART_OF_THE_SEA: "meren sydän"
+  HEART_POTTERY_SHARD: "sydämen ruukunsirpale"
+  HEART_POTTERY_SHERD: "sydämen ruukunsirpale"
+  HEARTBREAK_POTTERY_SHARD: "särkyneen sydämen ruukunsirpale"
+  HEARTBREAK_POTTERY_SHERD: "särkyneen sydämen ruukunsirpale"
+  HOGLIN_SPAWN_EGG: "luo hoglin"
+  HONEY_BOTTLE: "hunajapullo"
+  HONEYCOMB: "hunajakenno"
+  HOPPER_MINECART: "suppilokaivosvaunu"
+  HORSE_SPAWN_EGG: "luo hevonen"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  HOWL_POTTERY_SHARD: "ulvojan ruukunsirpale"
+  HOWL_POTTERY_SHERD: "ulvojan ruukunsirpale"
+  HUSK_SPAWN_EGG: "luo holkki"
+  INK_SAC: "mustepussi"
+  IRON_AXE: "rautakirves"
+  IRON_BOOTS: "rautasaappaat"
+  IRON_CHESTPLATE: "rautarintapanssari"
+  IRON_GOLEM_SPAWN_EGG: "luo rautagolem"
+  IRON_HELMET: "rautakypärä"
+  IRON_HOE: "rautakuokka"
+  IRON_HORSE_ARMOR: "rautainen hevosen panssari"
+  IRON_INGOT: "rautaharkko"
+  IRON_LEGGINGS: "rautahousut"
+  IRON_NUGGET: "rautahippu"
+  IRON_PICKAXE: "rautahakku"
+  IRON_SHOVEL: "rautalapio"
+  IRON_SWORD: "rautamiekka"
+  ITEM_FRAME: "kehys"
+  JUNGLE_BOAT: "viidakkopuuvene"
+  JUNGLE_CHEST_BOAT: "viidakkopuuvene arkulla"
+  KNOWLEDGE_BOOK: "tietokirja"
+  LAPIS_LAZULI: "lasuriitti"
+  LAVA_BUCKET: "laavaämpäri"
+  LEAD: "talutushihna"
+  LEATHER: "nahka"
+  LEATHER_BOOTS: "nahkasaappaat"
+  LEATHER_CHESTPLATE: "nahkatakki"
+  LEATHER_HELMET: "nahkalakki"
+  LEATHER_HORSE_ARMOR: "nahkainen hevosen panssari"
+  LEATHER_LEGGINGS: "nahkahousut"
+  LIGHT_BLUE_DYE: "vaaleansininen väriaine"
+  LIGHT_GRAY_DYE: "vaaleanharmaa väriaine"
+  LIME_DYE: "limetinvihreä väriaine"
+  LINGERING_POTION: "viipyvä taikajuoma"
+  LINGERING_POTION_EFFECT_AWKWARD: "kiusallinen viipyvä taikajuoma"
+  LINGERING_POTION_EFFECT_EMPTY: "valmistuskelvoton viipyvä taikajuoma"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "viipyvä tulenkestävyyden taikajuoma"
+  LINGERING_POTION_EFFECT_HARMING: "viipyvä vahingoittava taikajuoma"
+  LINGERING_POTION_EFFECT_HEALING: "viipyvä parantava taikajuoma"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "viipyvä näkymättömyyden taikajuoma"
+  LINGERING_POTION_EFFECT_LEAPING: "viipyvä loikkaamisen taikajuoma"
+  LINGERING_POTION_EFFECT_LEVITATION: "viipyvä levitaation taikajuoma"
+  LINGERING_POTION_EFFECT_LUCK: "viipyvä onnen taikajuoma"
+  LINGERING_POTION_EFFECT_MUNDANE: "tavanomainen viipyvä taikajuoma"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "viipyvä hämäränäön taikajuoma"
+  LINGERING_POTION_EFFECT_POISON: "viipyvä myrkyllinen taikajuoma"
+  LINGERING_POTION_EFFECT_REGENERATION: "viipyvä elpymisen taikajuoma"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "viipyvä hitaan putoamisen taikajuoma"
+  LINGERING_POTION_EFFECT_SLOWNESS: "viipyvä hitauden taikajuoma"
+  LINGERING_POTION_EFFECT_STRENGTH: "viipyvä vahvuuden taikajuoma"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "viipyvä nopeuden taikajuoma"
+  LINGERING_POTION_EFFECT_THICK: "sakea viipyvä taikajuoma"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "viipyvä kilpikonnamestarin taikajuoma"
+  LINGERING_POTION_EFFECT_WATER: "viipyvä vesipullo"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "viipyvä vedenhengityksen taikajuoma"
+  LINGERING_POTION_EFFECT_WEAKNESS: "viipyvä heikkouden taikajuoma"
+  LLAMA_SPAWN_EGG: "luo laama"
+  LODESTONE_COMPASS: "magneettikivikompassi"
+  MAGENTA_DYE: "purppura väriaine"
+  MAGMA_CREAM: "magmavoide"
+  MAGMA_CUBE_SPAWN_EGG: "luo magmakuutio"
+  MANGROVE_BOAT: "mangrovepuuvene"
+  MANGROVE_CHEST_BOAT: "mangrovepuuvene arkulla"
+  MAP: "tyhjä kartta"
+  MELON_SEEDS: "melonin siemenet"
+  MELON_SLICE: "melonin siivu"
+  MILK_BUCKET: "maitoämpäri"
+  MINECART: "kaivosvaunu"
+  MINER_POTTERY_SHARD: "kaivoksen ruukunsirpale"
+  MINER_POTTERY_SHERD: "kaivoksen ruukunsirpale"
+  MOJANG_BANNER_PATTERN: "viirikuvio"
+  MOJANG_BANNER_PATTERN_DESC: "mojang-symboli"
+  MOOSHROOM_SPAWN_EGG: "luo mooshroom"
+  MOURNER_POTTERY_SHARD: "surevan ruukunsirpale"
+  MOURNER_POTTERY_SHERD: "surevan ruukunsirpale"
+  MULE_SPAWN_EGG: "luo muuli"
+  MUSHROOM_STEW: "sienimuhennos"
+  MUSIC_DISC_11: "musiikkilevy"
+  MUSIC_DISC_11_DESC: "c418 – 11"
+  MUSIC_DISC_13: "musiikkilevy"
+  MUSIC_DISC_13_DESC: "c418 – 13"
+  MUSIC_DISC_5: "musiikkilevy"
+  MUSIC_DISC_5_DESC: "samuel åberg – 5"
+  MUSIC_DISC_BLOCKS: "musiikkilevy"
+  MUSIC_DISC_BLOCKS_DESC: "c418 – blocks"
+  MUSIC_DISC_CAT: "musiikkilevy"
+  MUSIC_DISC_CAT_DESC: "c418 – cat"
+  MUSIC_DISC_CHIRP: "musiikkilevy"
+  MUSIC_DISC_CHIRP_DESC: "c418 – chirp"
+  MUSIC_DISC_FAR: "musiikkilevy"
+  MUSIC_DISC_FAR_DESC: "c418 – far"
+  MUSIC_DISC_MALL: "musiikkilevy"
+  MUSIC_DISC_MALL_DESC: "c418 – mall"
+  MUSIC_DISC_MELLOHI: "musiikkilevy"
+  MUSIC_DISC_MELLOHI_DESC: "c418 – mellohi"
+  MUSIC_DISC_OTHERSIDE: "musiikkilevy"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine – otherside"
+  MUSIC_DISC_PIGSTEP: "musiikkilevy"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine – pigstep"
+  MUSIC_DISC_RELIC: "musiikkilevy"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof – relic"
+  MUSIC_DISC_STAL: "musiikkilevy"
+  MUSIC_DISC_STAL_DESC: "c418 – stal"
+  MUSIC_DISC_STRAD: "musiikkilevy"
+  MUSIC_DISC_STRAD_DESC: "c418 – strad"
+  MUSIC_DISC_WAIT: "musiikkilevy"
+  MUSIC_DISC_WAIT_DESC: "c418 – wait"
+  MUSIC_DISC_WARD: "musiikkilevy"
+  MUSIC_DISC_WARD_DESC: "c418 – ward"
+  MUTTON: "raaka lampaanliha"
+  NAME_TAG: "nimilappu"
+  NAUTILUS_SHELL: "helmiveneen kuori"
+  NETHER_BRICK: "nether-tiili"
+  NETHER_STAR: "nether-tähti"
+  NETHERITE_AXE: "netheriittikirves"
+  NETHERITE_BOOTS: "netheriittisaappaat"
+  NETHERITE_CHESTPLATE: "netheriittirintapanssari"
+  NETHERITE_HELMET: "netheriittikypärä"
+  NETHERITE_HOE: "netheriittikuokka"
+  NETHERITE_INGOT: "netheriittiharkko"
+  NETHERITE_LEGGINGS: "netheriittihousut"
+  NETHERITE_PICKAXE: "netheriittihakku"
+  NETHERITE_SCRAP: "netheriittiromu"
+  NETHERITE_SHOVEL: "netheriittilapio"
+  NETHERITE_SWORD: "netheriittimiekka"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "taontamalli"
+  OAK_BOAT: "tammivene"
+  OAK_CHEST_BOAT: "tammivene arkulla"
+  OCELOT_SPAWN_EGG: "luo oselotti"
+  ORANGE_DYE: "oranssi väriaine"
+  PAINTING: "maalaus"
+  PANDA_SPAWN_EGG: "luo panda"
+  PAPER: "paperi"
+  PARROT_SPAWN_EGG: "luo papukaija"
+  PHANTOM_MEMBRANE: "aaveen kalvo"
+  PHANTOM_SPAWN_EGG: "luo aave"
+  PIG_SPAWN_EGG: "luo sika"
+  PIGLIN_BANNER_PATTERN: "viirikuvio"
+  PIGLIN_BANNER_PATTERN_DESC: "kärsä"
+  PIGLIN_BRUTE_SPAWN_EGG: "luo piglin-raakalainen"
+  PIGLIN_SPAWN_EGG: "luo piglin"
+  PILLAGER_SPAWN_EGG: "luo ryöstäjä"
+  PINK_DYE: "vaaleanpunainen väriaine"
+  PITCHER_POD: "sinikannun palko"
+  PLENTY_POTTERY_SHARD: "runsauden ruukunsirpale"
+  PLENTY_POTTERY_SHERD: "runsauden ruukunsirpale"
+  POISONOUS_POTATO: "myrkyllinen peruna"
+  POLAR_BEAR_SPAWN_EGG: "luo jääkarhu"
+  POPPED_CHORUS_FRUIT: "paistettu chorus-hedelmä"
+  PORKCHOP: "raaka porsaankyljys"
+  POTATO: "peruna"
+  POTION: "taikajuoma"
+  POTION_EFFECT_AWKWARD: "kiusallinen taikajuoma"
+  POTION_EFFECT_EMPTY: "valmistuskelvoton taikajuoma"
+  POTION_EFFECT_FIRE_RESISTANCE: "tulenkestävyyden taikajuoma"
+  POTION_EFFECT_HARMING: "vahingoittava taikajuoma"
+  POTION_EFFECT_HEALING: "parantava taikajuoma"
+  POTION_EFFECT_INVISIBILITY: "näkymättömyyden taikajuoma"
+  POTION_EFFECT_LEAPING: "loikkaamisen taikajuoma"
+  POTION_EFFECT_LEVITATION: "levitaation taikajuoma"
+  POTION_EFFECT_LUCK: "onnen taikajuoma"
+  POTION_EFFECT_MUNDANE: "tavanomainen taikajuoma"
+  POTION_EFFECT_NIGHT_VISION: "hämäränäön taikajuoma"
+  POTION_EFFECT_POISON: "myrkyllinen taikajuoma"
+  POTION_EFFECT_REGENERATION: "elpymisen taikajuoma"
+  POTION_EFFECT_SLOW_FALLING: "hitaan putoamisen taikajuoma"
+  POTION_EFFECT_SLOWNESS: "hitauden taikajuoma"
+  POTION_EFFECT_STRENGTH: "vahvuuden taikajuoma"
+  POTION_EFFECT_SWIFTNESS: "nopeuden taikajuoma"
+  POTION_EFFECT_THICK: "sakea taikajuoma"
+  POTION_EFFECT_TURTLE_MASTER: "kilpikonnamestarin taikajuoma"
+  POTION_EFFECT_WATER: "vesipullo"
+  POTION_EFFECT_WATER_BREATHING: "vedenhengityksen taikajuoma"
+  POTION_EFFECT_WEAKNESS: "heikkouden taikajuoma"
+  POTTERY_SHARD_ARCHER: "jousiampujan ruukunsirpale"
+  POTTERY_SHARD_ARMS_UP: "soturin ruukunsirpale"
+  POTTERY_SHARD_PRIZE: "aarteen ruukunsirpale"
+  POTTERY_SHARD_SKULL: "kallon ruukunsirpale"
+  POWDER_SNOW_BUCKET: "puuterilumiämpäri"
+  PRISMARINE_CRYSTALS: "prismariinikristallit"
+  PRISMARINE_SHARD: "prismariinisirpale"
+  PRIZE_POTTERY_SHARD: "aarteen ruukunsirpale"
+  PRIZE_POTTERY_SHERD: "aarteen ruukunsirpale"
+  PUFFERFISH: "pallokala"
+  PUFFERFISH_BUCKET: "pallokala ämpärissä"
+  PUFFERFISH_SPAWN_EGG: "luo pallokala"
+  PUMPKIN_PIE: "kurpitsapiirakka"
+  PUMPKIN_SEEDS: "kurpitsan siemenet"
+  PURPLE_DYE: "violetti väriaine"
+  QUARTZ: "nether-kvartsi"
+  RABBIT: "raaka jäniksenliha"
+  RABBIT_FOOT: "jäniksenkäpälä"
+  RABBIT_HIDE: "jäniksen nahka"
+  RABBIT_SPAWN_EGG: "luo jänis"
+  RABBIT_STEW: "jänismuhennos"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  RAVAGER_SPAWN_EGG: "luo raunioittaja"
+  RAW_COPPER: "raaka kupari"
+  RAW_GOLD: "raaka kulta"
+  RAW_IRON: "raaka rauta"
+  RECOVERY_COMPASS: "paluukompassi"
+  RED_DYE: "punainen väriaine"
+  REDSTONE: "redstone-jauhe"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  ROTTEN_FLESH: "mädäntynyt liha"
+  SADDLE: "satula"
+  SALMON: "raaka lohi"
+  SALMON_BUCKET: "lohi ämpärissä"
+  SALMON_SPAWN_EGG: "luo lohi"
+  SCUTE: "kilvenpalanen"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  SHEAF_POTTERY_SHARD: "lyhteen ruukunsirpale"
+  SHEAF_POTTERY_SHERD: "lyhteen ruukunsirpale"
+  SHEARS: "keritsimet"
+  SHEEP_SPAWN_EGG: "luo lammas"
+  SHELTER_POTTERY_SHARD: "suojan ruukunsirpale"
+  SHELTER_POTTERY_SHERD: "suojan ruukunsirpale"
+  SHIELD: "kilpi"
+  SHIELD_BLACK: "musta kilpi"
+  SHIELD_BLUE: "sininen kilpi"
+  SHIELD_BROWN: "ruskea kilpi"
+  SHIELD_CYAN: "syaani kilpi"
+  SHIELD_GRAY: "harmaa kilpi"
+  SHIELD_GREEN: "vihreä kilpi"
+  SHIELD_LIGHT_BLUE: "vaaleansininen kilpi"
+  SHIELD_LIGHT_GRAY: "vaaleanharmaa kilpi"
+  SHIELD_LIME: "limetinvihreä kilpi"
+  SHIELD_MAGENTA: "purppura kilpi"
+  SHIELD_ORANGE: "oranssi kilpi"
+  SHIELD_PINK: "vaaleanpunainen kilpi"
+  SHIELD_PURPLE: "violetti kilpi"
+  SHIELD_RED: "punainen kilpi"
+  SHIELD_WHITE: "valkoinen kilpi"
+  SHIELD_YELLOW: "keltainen kilpi"
+  SHULKER_SHELL: "shulkerin kuori"
+  SHULKER_SPAWN_EGG: "luo shulker"
+  SIGN: "kyltti"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  SILVERFISH_SPAWN_EGG: "luo sokeritoukka"
+  SKELETON_HORSE_SPAWN_EGG: "luo luurankohevonen"
+  SKELETON_SPAWN_EGG: "luo luuranko"
+  SKULL_BANNER_PATTERN: "viirikuvio"
+  SKULL_BANNER_PATTERN_DESC: "pääkalloräjähde"
+  SKULL_POTTERY_SHARD: "kallon ruukunsirpale"
+  SKULL_POTTERY_SHERD: "kallon ruukunsirpale"
+  SLIME_BALL: "limapallo"
+  SLIME_SPAWN_EGG: "luo lima"
+  SMITHING_TEMPLATE: "taontamalli"
+  SMITHING_TEMPLATE_APPLIES_TO: "kohde:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "lisää harkko tai kristalli"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "haarniska"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "lisää haarniskan osa"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "harkot ja kristallit"
+  SMITHING_TEMPLATE_INGREDIENTS: "ainesosat:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "lisää netheriittiharkko"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "timanttivaruste"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "lisää timanttihaarniskan osa ase tai työkalu"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheriittiharkko"
+  SMITHING_TEMPLATE_UPGRADE: "päivitys: "
+  SNIFFER_SPAWN_EGG: "luo nuuhku"
+  SNORT_POTTERY_SHARD: "nuuhkauksen ruukunsirpale"
+  SNORT_POTTERY_SHERD: "nuuhkauksen ruukunsirpale"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  SNOW_GOLEM_SPAWN_EGG: "luo lumigolem"
+  SNOWBALL: "lumipallo"
+  SPECTRAL_ARROW: "spektraalinuoli"
+  SPIDER_EYE: "hämähäkinsilmä"
+  SPIDER_SPAWN_EGG: "luo hämähäkki"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  SPLASH_POTION: "roiskahtava taikajuoma"
+  SPLASH_POTION_EFFECT_AWKWARD: "kiusallinen roiskahtava taikajuoma"
+  SPLASH_POTION_EFFECT_EMPTY: "valmistuskelvoton roiskahtava taikajuoma"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "roiskahtava tulenkestävyyden taikajuoma"
+  SPLASH_POTION_EFFECT_HARMING: "roiskahtava vahingoittava taikajuoma"
+  SPLASH_POTION_EFFECT_HEALING: "roiskahtava parantava taikajuoma"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "roiskahtava näkymättömyyden taikajuoma"
+  SPLASH_POTION_EFFECT_LEAPING: "roiskahtava loikkaamisen taikajuoma"
+  SPLASH_POTION_EFFECT_LEVITATION: "roiskahtava levitoinnin taikajuoma"
+  SPLASH_POTION_EFFECT_LUCK: "roiskahtava onnen taikajuoma"
+  SPLASH_POTION_EFFECT_MUNDANE: "tavanomainen roiskahtava taikajuoma"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "roiskahtava hämäränäön taikajuoma"
+  SPLASH_POTION_EFFECT_POISON: "roiskahtava myrkyllinen taikajuoma"
+  SPLASH_POTION_EFFECT_REGENERATION: "roiskahtava elpymisen taikajuoma"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "roiskahtava hitaan putoamisen taikajuoma"
+  SPLASH_POTION_EFFECT_SLOWNESS: "roiskahtava hitauden taikajuoma"
+  SPLASH_POTION_EFFECT_STRENGTH: "roiskahtava vahvuuden taikajuoma"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "roiskahtava nopeuden taikajuoma"
+  SPLASH_POTION_EFFECT_THICK: "sakea roiskahtava taikajuoma"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "roiskahtava kilpikonnamestarin taikajuoma"
+  SPLASH_POTION_EFFECT_WATER: "roiskahtava vesipullo"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "roiskahtava vedenhengityksen taikajuoma"
+  SPLASH_POTION_EFFECT_WEAKNESS: "roiskahtava heikkouden taikajuoma"
+  SPRUCE_BOAT: "kuusivene"
+  SPRUCE_CHEST_BOAT: "kuusivene arkulla"
+  SPYGLASS: "kaukoputki"
+  SQUID_SPAWN_EGG: "luo kalmari"
+  STICK: "keppi"
+  STONE_AXE: "kivikirves"
+  STONE_HOE: "kivikuokka"
+  STONE_PICKAXE: "kivihakku"
+  STONE_SHOVEL: "kivilapio"
+  STONE_SWORD: "kivimiekka"
+  STRAY_SPAWN_EGG: "luo vaeltaja"
+  STRIDER_SPAWN_EGG: "luo rämpijä"
+  STRING: "lanka"
+  SUGAR: "sokeri"
+  SUSPICIOUS_STEW: "epäilyttävä muhennos"
+  SWEET_BERRIES: "makeat marjat"
+  TADPOLE_BUCKET: "nuijapää ämpärissä"
+  TADPOLE_SPAWN_EGG: "luo nuijapää"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  TIPPED_ARROW: "kastettu nuoli"
+  TIPPED_ARROW_EFFECT_AWKWARD: "kastettu nuoli"
+  TIPPED_ARROW_EFFECT_EMPTY: "valmistuskelvoton kastettu nuoli"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "tulenkestävyyden nuoli"
+  TIPPED_ARROW_EFFECT_HARMING: "vahingoittava nuoli"
+  TIPPED_ARROW_EFFECT_HEALING: "parantava nuoli"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "näkymättömyyden nuoli"
+  TIPPED_ARROW_EFFECT_LEAPING: "loikkaamisen nuoli"
+  TIPPED_ARROW_EFFECT_LEVITATION: "levitaation nuoli"
+  TIPPED_ARROW_EFFECT_LUCK: "onnen nuoli"
+  TIPPED_ARROW_EFFECT_MUNDANE: "kastettu nuoli"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "hämäränäön nuoli"
+  TIPPED_ARROW_EFFECT_POISON: "myrkkynuoli"
+  TIPPED_ARROW_EFFECT_REGENERATION: "elpymisen nuoli"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "hitaan putoamisen nuoli"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "hitauden nuoli"
+  TIPPED_ARROW_EFFECT_STRENGTH: "vahvuuden nuoli"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "nopeuden nuoli"
+  TIPPED_ARROW_EFFECT_THICK: "kastettu nuoli"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "kilpikonnamestarin nuoli"
+  TIPPED_ARROW_EFFECT_WATER: "roiskenuoli"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "vedenhengityksen nuoli"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "heikkouden nuoli"
+  TNT_MINECART: "tnt-kaivosvaunu"
+  TORCHFLOWER_SEEDS: "soihtuliljan siemenet"
+  TOTEM_OF_UNDYING: "kuolemattomuuden toteemi"
+  TRADER_LLAMA_SPAWN_EGG: "luo kulkukauppiaan laama"
+  TRIAL_KEY: "koetuksen avain"
+  TRIDENT: "atrain"
+  TROPICAL_FISH: "trooppinen kala"
+  TROPICAL_FISH_BUCKET: "trooppinen kala ämpärissä"
+  TROPICAL_FISH_SPAWN_EGG: "luo trooppinen kala"
+  TURTLE_HELMET: "kilpikonnan kuori"
+  TURTLE_SPAWN_EGG: "luo kilpikonna"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  VEX_SPAWN_EGG: "luo piina"
+  VILLAGER_SPAWN_EGG: "luo kyläläinen"
+  VINDICATOR_SPAWN_EGG: "luo puhdistaja"
+  WANDERING_TRADER_SPAWN_EGG: "luo kulkukauppias"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  WARDEN_SPAWN_EGG: "luo warden"
+  WARPED_FUNGUS_ON_A_STICK: "kummasieni kepin päässä"
+  WATER_BUCKET: "vesiämpäri"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  WHEAT_SEEDS: "vehnän siemenet"
+  WHITE_DYE: "valkoinen väriaine"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "taontamalli"
+  WITCH_SPAWN_EGG: "luo noita"
+  WITHER_SKELETON_SPAWN_EGG: "luo wither-luuranko"
+  WITHER_SPAWN_EGG: "luo wither"
+  WOLF_SPAWN_EGG: "luo susi"
+  WOODEN_AXE: "puukirves"
+  WOODEN_HOE: "puukuokka"
+  WOODEN_PICKAXE: "puuhakku"
+  WOODEN_SHOVEL: "puulapio"
+  WOODEN_SWORD: "puumiekka"
+  WRITABLE_BOOK: "kirja ja sulkakynä"
+  WRITTEN_BOOK: "kirjoitettu kirja"
+  YELLOW_DYE: "keltainen väriaine"
+  ZOGLIN_SPAWN_EGG: "luo zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "luo zombihevonen"
+  ZOMBIE_SPAWN_EGG: "luo zombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "luo zombikyläläinen"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "luo zombipiglin"
+  CHEST: "kun kehossa:"
+  FEET: "kun jaloissa:"
+  HEAD: "kun päässä:"
+  LEGS: "kun jalkavarsissa:"
+  MAINHAND: "kun pääkädessä:"
+  OFFHAND: "kun toisessa kädessä:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

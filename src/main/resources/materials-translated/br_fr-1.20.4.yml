@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "bouton kasia"
+  ACACIA_DOOR: "dor gasia"
+  ACACIA_FENCE: "kloued kasia"
+  ACACIA_FENCE_GATE: "dorikell gwez kasia"
+  ACACIA_HANGING_SIGN: "panell gasia a-ispilh"
+  ACACIA_LEAVES: "delioù kasia"
+  ACACIA_LOG: "etev kasia"
+  ACACIA_PLANKS: "plankennoù kasia"
+  ACACIA_PRESSURE_PLATE: "plakenn wask kasia"
+  ACACIA_SAPLING: "strujenn gasia"
+  ACACIA_SIGN: "panell gasia"
+  ACACIA_SLAB: "dar kasia"
+  ACACIA_STAIRS: "diri kasia"
+  ACACIA_TRAPDOOR: "trap kasia"
+  ACACIA_WALL_HANGING_SIGN: "panell-voger kasia a-ispilh"
+  ACACIA_WALL_SIGN: "panell-voger kasia"
+  ACACIA_WOOD: "koad kasia"
+  ACTIVATOR_RAIL: "hent-houarn gweredekaer"
+  AIR: "aer"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "bloc'h ametist"
+  AMETHYST_CLUSTER: "bern ametist"
+  ANCIENT_DEBRIS: "dismantroù kozh"
+  ANDESITE: "andezit"
+  ANDESITE_SLAB: "dar andezit"
+  ANDESITE_STAIRS: "diri andezit"
+  ANDESITE_WALL: "moger andezit"
+  ANVIL: "annev"
+  ATTACHED_MELON_STEM: "garenn sukrinenn staget"
+  ATTACHED_PUMPKIN_STEM: "garenn sitrouilhezenn staget"
+  AZALEA: "brug-roz"
+  AZALEA_LEAVES: "delioù brug-roz"
+  AZURE_BLUET: "houstonia"
+  BAMBOO: "bambou"
+  BAMBOO_BLOCK: "bloc'h bambou"
+  BAMBOO_BUTTON: "bouton bambou"
+  BAMBOO_DOOR: "dor vambou"
+  BAMBOO_FENCE: "kloued bambou"
+  BAMBOO_FENCE_GATE: "dorikell vambou"
+  BAMBOO_HANGING_SIGN: "panell vambou a-ispilh"
+  BAMBOO_MOSAIC: "mosaik bambou"
+  BAMBOO_MOSAIC_SLAB: "dar marellig-bambou"
+  BAMBOO_MOSAIC_STAIRS: "diri marellig bambou"
+  BAMBOO_PLANKS: "plankennoù bambou"
+  BAMBOO_PRESSURE_PLATE: "plakenn wask bamboo"
+  BAMBOO_SAPLING: "strujenn vambou"
+  BAMBOO_SIGN: "panell vambou"
+  BAMBOO_SLAB: "dar vambou"
+  BAMBOO_STAIRS: "diri bambou"
+  BAMBOO_TRAPDOOR: "trap bambou"
+  BAMBOO_WALL_HANGING_SIGN: "panell-voger vambou a-ispilh"
+  BAMBOO_WALL_SIGN: "panell-voger vambou"
+  BANNER_BASE_BLACK: "plaen sabel"
+  BANNER_BASE_BLUE: "plaen glazur"
+  BANNER_BASE_BROWN: "plaen gell"
+  BANNER_BASE_CYAN: "plaen sian"
+  BANNER_BASE_GRAY: "plaen griz"
+  BANNER_BASE_GREEN: "plaen geoted"
+  BANNER_BASE_LIGHT_BLUE: "plaen glazur sklaer"
+  BANNER_BASE_LIGHT_GRAY: "plaen en arc'hant griz"
+  BANNER_BASE_LIME: "plaen geoted sklaer"
+  BANNER_BASE_MAGENTA: "plaen limestra"
+  BANNER_BASE_ORANGE: "plaen aouraval"
+  BANNER_BASE_PINK: "plaen en-gwirion"
+  BANNER_BASE_PURPLE: "plaen mouk"
+  BANNER_BASE_RED: "plaen en gul"
+  BANNER_BASE_WHITE: "plaen en arc'hant"
+  BANNER_BASE_YELLOW: "plaen aour"
+  BANNER_BORDER_BLACK: "bevenn sabel"
+  BANNER_BORDER_BLUE: "bevenn glazur"
+  BANNER_BORDER_BROWN: "bevenn gell"
+  BANNER_BORDER_CYAN: "bevenn sian"
+  BANNER_BORDER_GRAY: "bevenn griz"
+  BANNER_BORDER_GREEN: "bevenn geoted"
+  BANNER_BORDER_LIGHT_BLUE: "bevenn glazur sklaer"
+  BANNER_BORDER_LIGHT_GRAY: "bevenn arc'hant griz"
+  BANNER_BORDER_LIME: "bevenn geoted"
+  BANNER_BORDER_MAGENTA: "bevenn limestra"
+  BANNER_BORDER_ORANGE: "bevenn aouraval"
+  BANNER_BORDER_PINK: "bevenn en-gwirion"
+  BANNER_BORDER_PURPLE: "bevenn mouk"
+  BANNER_BORDER_RED: "bevenn en gul"
+  BANNER_BORDER_WHITE: "bevenn arc'hant"
+  BANNER_BORDER_YELLOW: "bevenn aour"
+  BANNER_BRICKS_BLACK: "maezioù mogeriet sabel"
+  BANNER_BRICKS_BLUE: "maezioù mogeriet glazur"
+  BANNER_BRICKS_BROWN: "maezioù mogeriet gell"
+  BANNER_BRICKS_CYAN: "maezioù mogeriet sian"
+  BANNER_BRICKS_GRAY: "maezioù mogeriet griz"
+  BANNER_BRICKS_GREEN: "maezioù mogeriet geoted"
+  BANNER_BRICKS_LIGHT_BLUE: "maezioù mogeriet glazur sklaer"
+  BANNER_BRICKS_LIGHT_GRAY: "maezioù mogeriet arc'hant griz"
+  BANNER_BRICKS_LIME: "maezioù mogeriet geoted sklaer"
+  BANNER_BRICKS_MAGENTA: "maezioù mogeriet limestra"
+  BANNER_BRICKS_ORANGE: "maezioù mogeriet aouraval"
+  BANNER_BRICKS_PINK: "maezioù mogeriet en-gwirion"
+  BANNER_BRICKS_PURPLE: "maezioù mogeriet mouk"
+  BANNER_BRICKS_RED: "maezioù mogeriet en gul"
+  BANNER_BRICKS_WHITE: "maezioù mogeriet arc'hant"
+  BANNER_BRICKS_YELLOW: "maezioù mogeriet aour"
+  BANNER_CIRCLE_BLACK: "torzhell sabel"
+  BANNER_CIRCLE_BLUE: "torzhell glazur"
+  BANNER_CIRCLE_BROWN: "torzhell gell"
+  BANNER_CIRCLE_CYAN: "torzhell sian"
+  BANNER_CIRCLE_GRAY: "torzhell griz"
+  BANNER_CIRCLE_GREEN: "torzhell geoted"
+  BANNER_CIRCLE_LIGHT_BLUE: "torzhell glazur sklaer"
+  BANNER_CIRCLE_LIGHT_GRAY: "torzhell arc'hant griz"
+  BANNER_CIRCLE_LIME: "torzhell geoted"
+  BANNER_CIRCLE_MAGENTA: "torzhell limestra"
+  BANNER_CIRCLE_ORANGE: "torzhell aouraval"
+  BANNER_CIRCLE_PINK: "torzhell en-gwirion"
+  BANNER_CIRCLE_PURPLE: "torzhell mouk"
+  BANNER_CIRCLE_RED: "torzhell en gul"
+  BANNER_CIRCLE_WHITE: "torzhell arc'hant"
+  BANNER_CIRCLE_YELLOW: "torzhell aour"
+  BANNER_CREEPER_BLACK: "penn creeper sabel"
+  BANNER_CREEPER_BLUE: "penn creeper glazur"
+  BANNER_CREEPER_BROWN: "penn creeper gell"
+  BANNER_CREEPER_CYAN: "penn creeper sian"
+  BANNER_CREEPER_GRAY: "penn creeper griz"
+  BANNER_CREEPER_GREEN: "penn creeper geoted"
+  BANNER_CREEPER_LIGHT_BLUE: "penn creeper glazur sklaer"
+  BANNER_CREEPER_LIGHT_GRAY: "penn creeper arc'hant griz"
+  BANNER_CREEPER_LIME: "penn creeper geoted sklaer"
+  BANNER_CREEPER_MAGENTA: "penn creeper limestra"
+  BANNER_CREEPER_ORANGE: "penn creeper aouraval"
+  BANNER_CREEPER_PINK: "penn creeper en-gwirion"
+  BANNER_CREEPER_PURPLE: "penn creeper mouk"
+  BANNER_CREEPER_RED: "penn creeper en gul"
+  BANNER_CREEPER_WHITE: "penn creeper arc'hant"
+  BANNER_CREEPER_YELLOW: "penn creeper aour"
+  BANNER_CROSS_BLACK: "lammell sabel"
+  BANNER_CROSS_BLUE: "lammell glazur"
+  BANNER_CROSS_BROWN: "lammell gell"
+  BANNER_CROSS_CYAN: "lammell sian"
+  BANNER_CROSS_GRAY: "lammell griz"
+  BANNER_CROSS_GREEN: "lammell geoted"
+  BANNER_CROSS_LIGHT_BLUE: "lammell glazur sklaer"
+  BANNER_CROSS_LIGHT_GRAY: "lammell arc'hant griz"
+  BANNER_CROSS_LIME: "lammell geoted sklaer"
+  BANNER_CROSS_MAGENTA: "lammell limestra"
+  BANNER_CROSS_ORANGE: "lammell aouraval"
+  BANNER_CROSS_PINK: "lammell en-gwirion"
+  BANNER_CROSS_PURPLE: "lammell mouk"
+  BANNER_CROSS_RED: "lammell en gul"
+  BANNER_CROSS_WHITE: "lammell arc'hant"
+  BANNER_CROSS_YELLOW: "lammell aour"
+  BANNER_CURLY_BORDER_BLACK: "bevenn korzennek sabel"
+  BANNER_CURLY_BORDER_BLUE: "bevenn korzennek glazur"
+  BANNER_CURLY_BORDER_BROWN: "bevenn korzennek gell"
+  BANNER_CURLY_BORDER_CYAN: "bevenn korzennek sian"
+  BANNER_CURLY_BORDER_GRAY: "bevenn korzennek griz"
+  BANNER_CURLY_BORDER_GREEN: "bevenn korzennek geoted"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bevenn korzennek glazur sklaer"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bevenn korzennek arc'hant griz"
+  BANNER_CURLY_BORDER_LIME: "bevenn korzennek geoted sklaer"
+  BANNER_CURLY_BORDER_MAGENTA: "bevenn korzennek limestra"
+  BANNER_CURLY_BORDER_ORANGE: "bevenn korzennek aouraval"
+  BANNER_CURLY_BORDER_PINK: "bevenn korzennek en-gwirion"
+  BANNER_CURLY_BORDER_PURPLE: "bevenn korzennek mouk"
+  BANNER_CURLY_BORDER_RED: "bevenn korzennek en gul"
+  BANNER_CURLY_BORDER_WHITE: "bevenn korzennek arc'hant"
+  BANNER_CURLY_BORDER_YELLOW: "bevenn korzennek aour"
+  BANNER_DIAGONAL_LEFT_BLACK: "skejet sabel e kentañ"
+  BANNER_DIAGONAL_LEFT_BLUE: "skejet glazur e kentañ"
+  BANNER_DIAGONAL_LEFT_BROWN: "skejet gell e kentañ"
+  BANNER_DIAGONAL_LEFT_CYAN: "skejet sian e kentañ"
+  BANNER_DIAGONAL_LEFT_GRAY: "skejet griz e kentañ"
+  BANNER_DIAGONAL_LEFT_GREEN: "skejet geoted e kentañ"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "skejet glazur sklaer e kentañ"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "skejet arc'hant griz e kentañ"
+  BANNER_DIAGONAL_LEFT_LIME: "skejet geoted sklaer e kentañ"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "skejet limestra e kentañ"
+  BANNER_DIAGONAL_LEFT_ORANGE: "skejet aouraval e kentañ"
+  BANNER_DIAGONAL_LEFT_PINK: "skejet en-gwirion e kentañ"
+  BANNER_DIAGONAL_LEFT_PURPLE: "skejet mouk e kentañ"
+  BANNER_DIAGONAL_LEFT_RED: "skejet en gul e kentañ"
+  BANNER_DIAGONAL_LEFT_WHITE: "skejet arc'hant e kentañ"
+  BANNER_DIAGONAL_LEFT_YELLOW: "skejet aour e kentañ"
+  BANNER_DIAGONAL_RIGHT_BLACK: "benet sabel e kentañ"
+  BANNER_DIAGONAL_RIGHT_BLUE: "benet glazur e kentañ"
+  BANNER_DIAGONAL_RIGHT_BROWN: "benet gell e kentañ"
+  BANNER_DIAGONAL_RIGHT_CYAN: "benet sian e kentañ"
+  BANNER_DIAGONAL_RIGHT_GRAY: "benet griz e kentañ"
+  BANNER_DIAGONAL_RIGHT_GREEN: "benet geoted e kentañ"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "benet glazur sklaer e kentañ"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "benet arc'hant griz e kentañ"
+  BANNER_DIAGONAL_RIGHT_LIME: "benet geoted sklaer e kentañ"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "benet limestra e kentañ"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "benet aouranval e kentañ"
+  BANNER_DIAGONAL_RIGHT_PINK: "benet en-gwirion e kentañ"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "benet mouk e kentañ"
+  BANNER_DIAGONAL_RIGHT_RED: "benet en gul e kentañ"
+  BANNER_DIAGONAL_RIGHT_WHITE: "benet arc'hant e kentañ"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "benet aour e kentañ"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "benet sabel da eil"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "benet glazur da eil"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "benet gell da eil"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "benet sian da eil"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "benet griz da eil"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "benet geoted da eil"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "benet glazur sklaer da eil"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "benet arc'hant griz da eil"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "benet geoted sklaer da eil"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "benet limestra da eil"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "benet aouraval da eil"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "benet en-gwirion da eil"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "benet mouk da eil"
+  BANNER_DIAGONAL_UP_LEFT_RED: "benet en gul da eil"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "benet arc'hant da eil"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "benet aour da eil"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "skejet sabel da eil"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "skejet glazur da eil"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "skejet gell da eil"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "skejet sian da eil"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "skejet griz da eil"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "skejet geoted da eil"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "skejet glazur sklaer da eil"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "skejet arc'hant griz da eil"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "skejet geoted da eil"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "skejet limestra da eil"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "skejet aouraval da eil"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "skejet en-gwirion da eil"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "skejet mouk da eil"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "skejet en gul da eil"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "skejet arc'hant da eil"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "skejet aour da eil"
+  BANNER_FLOWER_BLACK: "bleunienn sabel"
+  BANNER_FLOWER_BLUE: "bleunienn glazur"
+  BANNER_FLOWER_BROWN: "bleunienn gell"
+  BANNER_FLOWER_CYAN: "bleunienn sian"
+  BANNER_FLOWER_GRAY: "bleunienn griz"
+  BANNER_FLOWER_GREEN: "bleunienn geoted"
+  BANNER_FLOWER_LIGHT_BLUE: "bleunienn glazur sklaer"
+  BANNER_FLOWER_LIGHT_GRAY: "bleunienn arc'hant griz"
+  BANNER_FLOWER_LIME: "bleunienn geoted sklaer"
+  BANNER_FLOWER_MAGENTA: "bleunienn limestra"
+  BANNER_FLOWER_ORANGE: "bleunienn aouraval"
+  BANNER_FLOWER_PINK: "bleunienn en-gwirion"
+  BANNER_FLOWER_PURPLE: "bleunienn mouk"
+  BANNER_FLOWER_RED: "bleunienn en gul"
+  BANNER_FLOWER_WHITE: "bleunienn ac'hant"
+  BANNER_FLOWER_YELLOW: "bleunienn aour"
+  BANNER_GLOBE_BLACK: "boul du"
+  BANNER_GLOBE_BLUE: "boul c'hlas"
+  BANNER_GLOBE_BROWN: "boul gell"
+  BANNER_GLOBE_CYAN: "boul sian"
+  BANNER_GLOBE_GRAY: "boul griz"
+  BANNER_GLOBE_GREEN: "boul gwer"
+  BANNER_GLOBE_LIGHT_BLUE: "boul glas sklaer"
+  BANNER_GLOBE_LIGHT_GRAY: "boul griz sklaer"
+  BANNER_GLOBE_LIME: "boul gwer-melen"
+  BANNER_GLOBE_MAGENTA: "boul limestra"
+  BANNER_GLOBE_ORANGE: "boul orañjez"
+  BANNER_GLOBE_PINK: "boul roz"
+  BANNER_GLOBE_PURPLE: "boul mouk"
+  BANNER_GLOBE_RED: "boul ruz"
+  BANNER_GLOBE_WHITE: "boul gwenn"
+  BANNER_GLOBE_YELLOW: "boul melen"
+  BANNER_GRADIENT_BLACK: "ilrezenn sabel"
+  BANNER_GRADIENT_BLUE: "ilrezenn glazur"
+  BANNER_GRADIENT_BROWN: "ilrezenn gell"
+  BANNER_GRADIENT_CYAN: "ilrezenn sian"
+  BANNER_GRADIENT_GRAY: "ilrezenn griz"
+  BANNER_GRADIENT_GREEN: "ilrezenn geoted"
+  BANNER_GRADIENT_LIGHT_BLUE: "ilrezenn glazur sklaer"
+  BANNER_GRADIENT_LIGHT_GRAY: "ilrezenn arc'hant griz"
+  BANNER_GRADIENT_LIME: "ilrezenn geoted sklaer"
+  BANNER_GRADIENT_MAGENTA: "ilrezenn limestra"
+  BANNER_GRADIENT_ORANGE: "ilrezenn aouraval"
+  BANNER_GRADIENT_PINK: "ilrezenn en-gwirion"
+  BANNER_GRADIENT_PURPLE: "ilrezenn mouk"
+  BANNER_GRADIENT_RED: "ilrezenn en gul"
+  BANNER_GRADIENT_WHITE: "ilrezenn arc'hant"
+  BANNER_GRADIENT_YELLOW: "ilrezenn aour"
+  BANNER_GRADIENT_UP_BLACK: "ilrezenn sabel ouzh beg"
+  BANNER_GRADIENT_UP_BLUE: "ilrezenn glazur ouzh beg"
+  BANNER_GRADIENT_UP_BROWN: "ilrezenn gell ouzh beg"
+  BANNER_GRADIENT_UP_CYAN: "ilrezenn sian ouzh beg"
+  BANNER_GRADIENT_UP_GRAY: "ilrezenn griz ouzh beg"
+  BANNER_GRADIENT_UP_GREEN: "ilrezenn geoted ouzh beg"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "ilrezenn glazur sklaer ouzh beg"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "ilrezenn arc'hant griz ouzh beg"
+  BANNER_GRADIENT_UP_LIME: "ilrezenn geoted sklaer ouzh beg"
+  BANNER_GRADIENT_UP_MAGENTA: "ilrezenn limestra ouzh beg"
+  BANNER_GRADIENT_UP_ORANGE: "ilrezenn aouraval ouzh beg"
+  BANNER_GRADIENT_UP_PINK: "ilrezenn en-gwirion ouzh beg"
+  BANNER_GRADIENT_UP_PURPLE: "ilrezenn mouk ouzh beg"
+  BANNER_GRADIENT_UP_RED: "ilrezenn en gul ouzh beg"
+  BANNER_GRADIENT_UP_WHITE: "ilrezenn arc'hant ouzh beg"
+  BANNER_GRADIENT_UP_YELLOW: "ilrezenn aour ouzh beg"
+  BANNER_HALF_HORIZONTAL_BLACK: "troc'het sabel da gentañ"
+  BANNER_HALF_HORIZONTAL_BLUE: "troc'het glazur da gentañ"
+  BANNER_HALF_HORIZONTAL_BROWN: "troc'het gell da gentañ"
+  BANNER_HALF_HORIZONTAL_CYAN: "troc'het sian da gentañ"
+  BANNER_HALF_HORIZONTAL_GRAY: "troc'het griz da gentañ"
+  BANNER_HALF_HORIZONTAL_GREEN: "troc'het geoted da gentañ"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "troc'het glazur sklaer da gentañ"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "troc'het arc'hant griz da gentañ"
+  BANNER_HALF_HORIZONTAL_LIME: "troc'het geoted sklaer da gentañ"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "troc'het limestra da gentañ"
+  BANNER_HALF_HORIZONTAL_ORANGE: "troc'het aouraval da gentañ"
+  BANNER_HALF_HORIZONTAL_PINK: "troc'het en-gwirion da gentañ"
+  BANNER_HALF_HORIZONTAL_PURPLE: "troc'het mouk da gentañ"
+  BANNER_HALF_HORIZONTAL_RED: "troc'het en gul da gentañ"
+  BANNER_HALF_HORIZONTAL_WHITE: "troc'het arc'hant da gentañ"
+  BANNER_HALF_HORIZONTAL_YELLOW: "troc'het aour da gentañ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "troc'het sabel da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "troc'het glazur da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "troc'het gell da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "troc'het sian da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "troc'het griz da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "troc'het geoted da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "troc'het glazur sklaer da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "troc'het arc'hant griz da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "troc'het geoted sklaer da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "troc'het limestra da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "troc'het aouraval da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "troc'het en-gwirion da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "troc'het mouk da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "troc'het en gul da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "troc'het arc'hant da eil"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "troc'het aour da eil"
+  BANNER_HALF_VERTICAL_BLACK: "rannet sabel da gentañ"
+  BANNER_HALF_VERTICAL_BLUE: "rannet glazur da gentañ"
+  BANNER_HALF_VERTICAL_BROWN: "rannet gell da gentañ"
+  BANNER_HALF_VERTICAL_CYAN: "rannet sian da gentañ"
+  BANNER_HALF_VERTICAL_GRAY: "rannet griz da gentañ"
+  BANNER_HALF_VERTICAL_GREEN: "rannet geoted da gentañ"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "rannet glazur sklaer da gentañ"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "rannet arc'hant griz da gentañ"
+  BANNER_HALF_VERTICAL_LIME: "rannet geoted sklaer da gentañ"
+  BANNER_HALF_VERTICAL_MAGENTA: "rannet limestra da gentañ"
+  BANNER_HALF_VERTICAL_ORANGE: "rannet aouraval da gentañ"
+  BANNER_HALF_VERTICAL_PINK: "rannet en-gwirion da gentañ"
+  BANNER_HALF_VERTICAL_PURPLE: "rannet mouk da gentañ"
+  BANNER_HALF_VERTICAL_RED: "rannet en gul da gentañ"
+  BANNER_HALF_VERTICAL_WHITE: "rannet arc'hant da gentañ"
+  BANNER_HALF_VERTICAL_YELLOW: "rannet aour da gentañ"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "rannet sabel da eil"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "rannet glazur da eil"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "rannet gell da eil"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "rannet sian da eil"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "rannet griz da eil"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "rannet geoted da eil"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "rannet glazur sklaer da eil"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "rannet arc'hant griz da eil"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "rannet geoted sklaer da eil"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "rannet limestra da eil"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "rannet aouraval da eil"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "rannet en-gwirion da eil"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "rannet mouk da eil"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "rannet en gul da eil"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "rannet arc'hant da eil"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "rannet aour da eil"
+  BANNER_MOJANG_BLACK: "arouez sabel"
+  BANNER_MOJANG_BLUE: "arouez glazur"
+  BANNER_MOJANG_BROWN: "arouez gell"
+  BANNER_MOJANG_CYAN: "arouez sian"
+  BANNER_MOJANG_GRAY: "arouez griz"
+  BANNER_MOJANG_GREEN: "arouez geoted"
+  BANNER_MOJANG_LIGHT_BLUE: "arouez glazur sklaer"
+  BANNER_MOJANG_LIGHT_GRAY: "arouez arc'hant griz"
+  BANNER_MOJANG_LIME: "arouez geoted sklaer"
+  BANNER_MOJANG_MAGENTA: "arouez limestra"
+  BANNER_MOJANG_ORANGE: "arouez aouraval"
+  BANNER_MOJANG_PINK: "arouez en-gwirion"
+  BANNER_MOJANG_PURPLE: "arouez mouk"
+  BANNER_MOJANG_RED: "arouez en gul"
+  BANNER_MOJANG_WHITE: "arouez arc'hant"
+  BANNER_MOJANG_YELLOW: "arouez aour"
+  BANNER_PIGLIN_BLACK: "mojell du"
+  BANNER_PIGLIN_BLUE: "mojell c'hlas"
+  BANNER_PIGLIN_BROWN: "mojell c'hell"
+  BANNER_PIGLIN_CYAN: "mojell sian"
+  BANNER_PIGLIN_GRAY: "mojell c'hris"
+  BANNER_PIGLIN_GREEN: "mojell wer"
+  BANNER_PIGLIN_LIGHT_BLUE: "mojell c'hlas-sklaer"
+  BANNER_PIGLIN_LIGHT_GRAY: "mojell arc'hant griz"
+  BANNER_PIGLIN_LIME: "mojell wer-sklaer"
+  BANNER_PIGLIN_MAGENTA: "mojell vajenta"
+  BANNER_PIGLIN_ORANGE: "mojell orañjez"
+  BANNER_PIGLIN_PINK: "mojell roz"
+  BANNER_PIGLIN_PURPLE: "mojell mouk"
+  BANNER_PIGLIN_RED: "mojell ruz"
+  BANNER_PIGLIN_WHITE: "mojell wenn"
+  BANNER_PIGLIN_YELLOW: "mojell velen"
+  BANNER_RHOMBUS_BLACK: "talbennan sabel"
+  BANNER_RHOMBUS_BLUE: "talbennan glazur"
+  BANNER_RHOMBUS_BROWN: "talbennan gell"
+  BANNER_RHOMBUS_CYAN: "talbennan sian"
+  BANNER_RHOMBUS_GRAY: "talbennan griz"
+  BANNER_RHOMBUS_GREEN: "talbennan geoted"
+  BANNER_RHOMBUS_LIGHT_BLUE: "talbennan glazur sklaer"
+  BANNER_RHOMBUS_LIGHT_GRAY: "talbennan arc'hant griz"
+  BANNER_RHOMBUS_LIME: "talbennan geoted sklaer"
+  BANNER_RHOMBUS_MAGENTA: "talbennan limestra"
+  BANNER_RHOMBUS_ORANGE: "talbennan aouraval"
+  BANNER_RHOMBUS_PINK: "talbennan en-gwirion"
+  BANNER_RHOMBUS_PURPLE: "talbennan mouk"
+  BANNER_RHOMBUS_RED: "talbennan a gul"
+  BANNER_RHOMBUS_WHITE: "talbennan arc'hant"
+  BANNER_RHOMBUS_YELLOW: "talbennan aour"
+  BANNER_SKULL_BLACK: "klopenn sabel"
+  BANNER_SKULL_BLUE: "klopenn glazur"
+  BANNER_SKULL_BROWN: "klopenn gell"
+  BANNER_SKULL_CYAN: "klopenn sian"
+  BANNER_SKULL_GRAY: "klopenn griz"
+  BANNER_SKULL_GREEN: "klopenn geoted"
+  BANNER_SKULL_LIGHT_BLUE: "klopenn glazur sklaer"
+  BANNER_SKULL_LIGHT_GRAY: "klopenn arc'hant griz"
+  BANNER_SKULL_LIME: "klopenn geoted sklaer"
+  BANNER_SKULL_MAGENTA: "klopenn limestra"
+  BANNER_SKULL_ORANGE: "klopenn aouraval"
+  BANNER_SKULL_PINK: "klopenn en-gwirion"
+  BANNER_SKULL_PURPLE: "klopenn mouk"
+  BANNER_SKULL_RED: "klopenn en gul"
+  BANNER_SKULL_WHITE: "klopenn acr'hant"
+  BANNER_SKULL_YELLOW: "klopenn aour"
+  BANNER_SMALL_STRIPES_BLACK: "pevar peul sabel"
+  BANNER_SMALL_STRIPES_BLUE: "pevar peul glazur"
+  BANNER_SMALL_STRIPES_BROWN: "pevar peul gell"
+  BANNER_SMALL_STRIPES_CYAN: "pevar peul sian"
+  BANNER_SMALL_STRIPES_GRAY: "pevar peul griz"
+  BANNER_SMALL_STRIPES_GREEN: "pevar peul geoted"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "pevar peul glazur sklaer"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "pevar peul arc'hant griz"
+  BANNER_SMALL_STRIPES_LIME: "pevar peul geoted sklaer"
+  BANNER_SMALL_STRIPES_MAGENTA: "pevar peul limestra"
+  BANNER_SMALL_STRIPES_ORANGE: "pevar peul aouraval"
+  BANNER_SMALL_STRIPES_PINK: "pevar peul en-gwirion"
+  BANNER_SMALL_STRIPES_PURPLE: "pevar peul mouk"
+  BANNER_SMALL_STRIPES_RED: "pevar peul en gul"
+  BANNER_SMALL_STRIPES_WHITE: "pevar peul arc'hant"
+  BANNER_SMALL_STRIPES_YELLOW: "pevar peul aour"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "konk sabel ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "konk glazur ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "konk gell ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "konk sian ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "konk griz ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "konk geoted ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "konk glazur sklaer ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "konk en arc'hant griz ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "konk geoted sklaer ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "konk limestra ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "konk aouraval ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "konk en-gwirion ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "konk mouk ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "konk en gul ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "konk en arc'hant ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "konk aour ouzh beg dehoù"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "konk sabel ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "konk glazur ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "konk gell ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "konk sian ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "konk griz ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "konk geoted ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "konk glazur sklaer ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "konk en arc'hant sklaer ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "konk geoted sklaer ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "konk limestra ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "konk orañjez ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "konk en-gwirion ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "konk mouk ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "konk en gul ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "konk en arc'hant ouzh beg kleiz"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "konk aour ouzh beg kleiz"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "konk sabel ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "konk glazur ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "konk gell ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "konk sian ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "konk griz ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "konk geoted ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "konk glazur sklaer ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "konk arc'hant griz ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_LIME: "konk geoted sklaer ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "konk limestra ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "konk aouraval ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_PINK: "konk en-gwirion ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "konk mouk ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_RED: "konk en gul ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "konk arc'hant ouzh kab dehoù"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "konk aour ouzh kab dehoù"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "konk sabel ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "konk glazur ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "konk gell ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "konk sian ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "konk griz ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "konk geoted ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "konk glazur sklaer ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "konk arc'hant griz ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "konk geotred sklaer ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "konk limestra ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "konk aouraval ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "konk en-gwirion ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "konk mouk ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_RED: "konk en gul ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "konk arc'hant ouzh kab kleiz"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "konk aour ouzh kab kleiz"
+  BANNER_STRAIGHT_CROSS_BLACK: "kroaz sabel"
+  BANNER_STRAIGHT_CROSS_BLUE: "kroaz glazur"
+  BANNER_STRAIGHT_CROSS_BROWN: "kroaz gell"
+  BANNER_STRAIGHT_CROSS_CYAN: "kroaz sian"
+  BANNER_STRAIGHT_CROSS_GRAY: "kroaz griz"
+  BANNER_STRAIGHT_CROSS_GREEN: "kroaz geoted"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "kroaz glazur sklaer"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "kroaz arc'hant griz"
+  BANNER_STRAIGHT_CROSS_LIME: "kroaz geoted sklaer"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "kroaz limestra"
+  BANNER_STRAIGHT_CROSS_ORANGE: "kroaz aouraval"
+  BANNER_STRAIGHT_CROSS_PINK: "kroaz en-gwirion"
+  BANNER_STRAIGHT_CROSS_PURPLE: "kroaz mouk"
+  BANNER_STRAIGHT_CROSS_RED: "kroaz en gul"
+  BANNER_STRAIGHT_CROSS_WHITE: "kroaz arc'hant"
+  BANNER_STRAIGHT_CROSS_YELLOW: "kroaz aour"
+  BANNER_STRIPE_BOTTOM_BLACK: "tostal sabel"
+  BANNER_STRIPE_BOTTOM_BLUE: "tostal glazur"
+  BANNER_STRIPE_BOTTOM_BROWN: "tostal tanneg"
+  BANNER_STRIPE_BOTTOM_CYAN: "tostal sian"
+  BANNER_STRIPE_BOTTOM_GRAY: "tostal houarn"
+  BANNER_STRIPE_BOTTOM_GREEN: "tostal geotek"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "tostal glazur sklaer"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "tostal griz sklaer"
+  BANNER_STRIPE_BOTTOM_LIME: "tostal geoted-sklaer"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "tostal limestra"
+  BANNER_STRIPE_BOTTOM_ORANGE: "tostal aouraval"
+  BANNER_STRIPE_BOTTOM_PINK: "tostal en-gwirion"
+  BANNER_STRIPE_BOTTOM_PURPLE: "tostal mouk"
+  BANNER_STRIPE_BOTTOM_RED: "tostal en gul"
+  BANNER_STRIPE_BOTTOM_WHITE: "tostal arc'hant"
+  BANNER_STRIPE_BOTTOM_YELLOW: "tostal aour"
+  BANNER_STRIPE_CENTER_BLACK: "peul sabel"
+  BANNER_STRIPE_CENTER_BLUE: "peul glazur"
+  BANNER_STRIPE_CENTER_BROWN: "peul gell"
+  BANNER_STRIPE_CENTER_CYAN: "peul sian"
+  BANNER_STRIPE_CENTER_GRAY: "peul griz"
+  BANNER_STRIPE_CENTER_GREEN: "peul geoted"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "peul glazur sklaer"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "peul arc'hant griz"
+  BANNER_STRIPE_CENTER_LIME: "peul geoted sklaer"
+  BANNER_STRIPE_CENTER_MAGENTA: "peul limestra"
+  BANNER_STRIPE_CENTER_ORANGE: "peul aouraval"
+  BANNER_STRIPE_CENTER_PINK: "peul en-gwirion"
+  BANNER_STRIPE_CENTER_PURPLE: "peul mouk"
+  BANNER_STRIPE_CENTER_RED: "peul en gul"
+  BANNER_STRIPE_CENTER_WHITE: "peul arc'hant"
+  BANNER_STRIPE_CENTER_YELLOW: "peul aour"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "bandenn sabel kleiz"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "bandenn glazur kleiz"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "bandenn gell kleiz"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "bandenn sian kleiz"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "bandenn griz kleiz"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "bandenn geoted kleiz"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "bandenn glazur sklaer kleiz"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "bandenn arc'hant griz kleiz"
+  BANNER_STRIPE_DOWNLEFT_LIME: "bandenn geoted sklaer kleiz"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "bandenn limestra kleiz"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "bandenn aouraval kleiz"
+  BANNER_STRIPE_DOWNLEFT_PINK: "bandenn en-gwirion kleiz"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "bandenn mouk kleiz"
+  BANNER_STRIPE_DOWNLEFT_RED: "bandenn en gul kleiz"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "bandenn arc'hant kleiz"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "bandenn aour kleiz"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "bandenn sabel"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "bandenn glazur"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "bandenn gell"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "bandenn sian"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "bandenn griz"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "bandenn geoted"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "bandenn glazur sklaer"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "bandenn arc'hant griz"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "bandenn geoted sklaer"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "bandenn limestra"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "bandenn aouraval"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "bandenn en-gwirion"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "bandenn mouk"
+  BANNER_STRIPE_DOWNRIGHT_RED: "bandenn en gul"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "bandenn arc'hant"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "bandenn aour"
+  BANNER_STRIPE_LEFT_BLACK: "peul sabel dehoù"
+  BANNER_STRIPE_LEFT_BLUE: "peul glazur dehoù"
+  BANNER_STRIPE_LEFT_BROWN: "peul gell dehoù"
+  BANNER_STRIPE_LEFT_CYAN: "peul sian dehoù"
+  BANNER_STRIPE_LEFT_GRAY: "peul griz dehoù"
+  BANNER_STRIPE_LEFT_GREEN: "peul geoted dehoù"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "peul glazur sklaer dehoù"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "peul arc'hant griz dehoù"
+  BANNER_STRIPE_LEFT_LIME: "peul geoted sklaer dehoù"
+  BANNER_STRIPE_LEFT_MAGENTA: "peul limestra dehoù"
+  BANNER_STRIPE_LEFT_ORANGE: "peul orañjez dehoù"
+  BANNER_STRIPE_LEFT_PINK: "peul en-gwirion dehoù"
+  BANNER_STRIPE_LEFT_PURPLE: "peul mouk dehoù"
+  BANNER_STRIPE_LEFT_RED: "peul en gul dehoù"
+  BANNER_STRIPE_LEFT_WHITE: "peul arc'hant dehoù"
+  BANNER_STRIPE_LEFT_YELLOW: "peul aour dehoù"
+  BANNER_STRIPE_MIDDLE_BLACK: "treustell sabel"
+  BANNER_STRIPE_MIDDLE_BLUE: "treustell glazur"
+  BANNER_STRIPE_MIDDLE_BROWN: "treustell gell"
+  BANNER_STRIPE_MIDDLE_CYAN: "treustell sian"
+  BANNER_STRIPE_MIDDLE_GRAY: "treustell griz"
+  BANNER_STRIPE_MIDDLE_GREEN: "treustell geoted"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "treustell glazur sklaer"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "treustell arc'hant griz"
+  BANNER_STRIPE_MIDDLE_LIME: "treustell geoted sklaer"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "treustell limestra"
+  BANNER_STRIPE_MIDDLE_ORANGE: "treustell aouraval"
+  BANNER_STRIPE_MIDDLE_PINK: "treustell en-gwirion"
+  BANNER_STRIPE_MIDDLE_PURPLE: "treustell mouk"
+  BANNER_STRIPE_MIDDLE_RED: "treustell en gul"
+  BANNER_STRIPE_MIDDLE_WHITE: "treustell arc'hant"
+  BANNER_STRIPE_MIDDLE_YELLOW: "treustell aour"
+  BANNER_STRIPE_RIGHT_BLACK: "peul sabel kleiz"
+  BANNER_STRIPE_RIGHT_BLUE: "peul glazur kleiz"
+  BANNER_STRIPE_RIGHT_BROWN: "peul gell kleiz"
+  BANNER_STRIPE_RIGHT_CYAN: "peul sian kleiz"
+  BANNER_STRIPE_RIGHT_GRAY: "peul griz kleiz"
+  BANNER_STRIPE_RIGHT_GREEN: "peul geoted kleiz"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "peul glazur sklaer kleiz"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "peul arc'hant griz kleiz"
+  BANNER_STRIPE_RIGHT_LIME: "peul geoted sklaer kleiz"
+  BANNER_STRIPE_RIGHT_MAGENTA: "peul limestra kleiz"
+  BANNER_STRIPE_RIGHT_ORANGE: "peul aouraval kleiz"
+  BANNER_STRIPE_RIGHT_PINK: "peul en-gwirion kleiz"
+  BANNER_STRIPE_RIGHT_PURPLE: "peul mouk kleiz"
+  BANNER_STRIPE_RIGHT_RED: "peul en gul kleiz"
+  BANNER_STRIPE_RIGHT_WHITE: "peul arc'hant kleiz"
+  BANNER_STRIPE_RIGHT_YELLOW: "peul aour kleiz"
+  BANNER_STRIPE_TOP_BLACK: "chef du"
+  BANNER_STRIPE_TOP_BLUE: "kab glazur"
+  BANNER_STRIPE_TOP_BROWN: "kab tanneg"
+  BANNER_STRIPE_TOP_CYAN: "kab sian"
+  BANNER_STRIPE_TOP_GRAY: "kab houarn"
+  BANNER_STRIPE_TOP_GREEN: "kab geoted"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "chef glas sklaer"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "kab griz sklaer"
+  BANNER_STRIPE_TOP_LIME: "chef gwer-melen"
+  BANNER_STRIPE_TOP_MAGENTA: "chef majenta"
+  BANNER_STRIPE_TOP_ORANGE: "chef orañjez"
+  BANNER_STRIPE_TOP_PINK: "kab en-gwirion"
+  BANNER_STRIPE_TOP_PURPLE: "kab mouk"
+  BANNER_STRIPE_TOP_RED: "kab en gul"
+  BANNER_STRIPE_TOP_WHITE: "chef gwenn"
+  BANNER_STRIPE_TOP_YELLOW: "chef melen"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "mantellet sabel"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "mantellet glazur"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "mantellet gell"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "mantellet sian"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "mantellet griz"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "mantellet geoted"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "mantellet glazur sklaer"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "mantellet arc'hant griz"
+  BANNER_TRIANGLE_BOTTOM_LIME: "mantellet geoted sklaer"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "mantellet limestra"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "mantellet aouraval"
+  BANNER_TRIANGLE_BOTTOM_PINK: "mantellet en-gwirion"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "mantellet mouk"
+  BANNER_TRIANGLE_BOTTOM_RED: "mantellet en gul"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "mantellet arc'hant"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "mantellet aour"
+  BANNER_TRIANGLE_TOP_BLACK: "mantellet sabel c'hweniet"
+  BANNER_TRIANGLE_TOP_BLUE: "mantellet glazur c'hweniet"
+  BANNER_TRIANGLE_TOP_BROWN: "mantellet gell c'hweniet"
+  BANNER_TRIANGLE_TOP_CYAN: "mantellet sian c'hweniet"
+  BANNER_TRIANGLE_TOP_GRAY: "mantellet griz c'hweniet"
+  BANNER_TRIANGLE_TOP_GREEN: "mantellet geoted c'hweniet"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "mantellet glazur sklaer c'hweniet"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "mantellet arc'hant griz c'hweniet"
+  BANNER_TRIANGLE_TOP_LIME: "mantellet geoted sklaer c'hweniet"
+  BANNER_TRIANGLE_TOP_MAGENTA: "mantellet limestra c'hweniet"
+  BANNER_TRIANGLE_TOP_ORANGE: "mantellet aouraval c'hweniet"
+  BANNER_TRIANGLE_TOP_PINK: "mantellet en-gwirion c'hweniet"
+  BANNER_TRIANGLE_TOP_PURPLE: "mantellet mouk c'hweniet"
+  BANNER_TRIANGLE_TOP_RED: "mantellet en gul c'hweniet"
+  BANNER_TRIANGLE_TOP_WHITE: "mantellet arc'hant c'hweniet"
+  BANNER_TRIANGLE_TOP_YELLOW: "mantellet aour c'hweniet"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "milginoù sabel ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "milginoù glazur ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "milginoù gell ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "milginoù sian ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "milginoù griz ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "milginoù geoted ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "milginoù glazur sklaer ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "milginoù arc'hant griz ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_LIME: "milginoù geoted sklaer ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "milginoù limestra ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "milginoù aouraval ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_PINK: "milginoù en-gwirion ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "milginoù mouk ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_RED: "milginoù en gul ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "milginoù arc'hant ouzh beg"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "milginoù aour ouzh beg"
+  BANNER_TRIANGLES_TOP_BLACK: "milginoù sabel ouzh kab"
+  BANNER_TRIANGLES_TOP_BLUE: "milginoù glazur ouzh kab"
+  BANNER_TRIANGLES_TOP_BROWN: "milginoù gell ouzh kab"
+  BANNER_TRIANGLES_TOP_CYAN: "milginoù sian ouzh kab"
+  BANNER_TRIANGLES_TOP_GRAY: "milginoù griz ouzh kab"
+  BANNER_TRIANGLES_TOP_GREEN: "milginoù geoted ouzh kab"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "milginoù glazur sklaer ouzh kab"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "milginoù arc'hant griz ouzh kab"
+  BANNER_TRIANGLES_TOP_LIME: "milginoù geoted sklaer ouzh kab"
+  BANNER_TRIANGLES_TOP_MAGENTA: "milginoù limestra ouzh kab"
+  BANNER_TRIANGLES_TOP_ORANGE: "milginoù aouraval ouzh kab"
+  BANNER_TRIANGLES_TOP_PINK: "milginoù en-gwirion ouzh kab"
+  BANNER_TRIANGLES_TOP_PURPLE: "milginoù mouk ouzh kab"
+  BANNER_TRIANGLES_TOP_RED: "milginoù en gul ouzh kab"
+  BANNER_TRIANGLES_TOP_WHITE: "milginoù arc'hant ouzh kab"
+  BANNER_TRIANGLES_TOP_YELLOW: "milginoù aour ouzh kab"
+  BARREL: "tonell"
+  BARRIER: "harz"
+  BASALT: "bazalt"
+  BEACON: "balizenn"
+  BEACON_PRIMARY: "galloud pennañ"
+  BEACON_SECONDARY: "galloud a-eil"
+  BED_NO_SLEEP: "n'hallit kousket nemet diouzh an noz hag e-pad un arnev"
+  BED_NOT_SAFE: "n'hallit ket kousket bremañ euzhviled a zo nepell"
+  BED_OBSTRUCTED: "stanket eo ar gwele"
+  BED_OCCUPIED: "ac'hubet eo ar gwele"
+  BED_TOO_FAR_AWAY: "n'hallit ket kousket bremañ re bell emañ ar gwele"
+  BEDROCK: "roc'h-gwele"
+  BEE_NEST: "ruskenn"
+  BEEHIVE: "koloenn"
+  BEETROOTS: "beterabez"
+  BELL: "kloc'h"
+  BIG_DRIPLEAF: "dourzelienn vras"
+  BIG_DRIPLEAF_STEM: "korzenn dourzelienn vras"
+  BIRCH_BUTTON: "bouton vezv"
+  BIRCH_DOOR: "dor vezv"
+  BIRCH_FENCE: "kloued bezv"
+  BIRCH_FENCE_GATE: "dorikell bezv"
+  BIRCH_HANGING_SIGN: "panell vezv a-ispilh"
+  BIRCH_LEAVES: "delioù bezv"
+  BIRCH_LOG: "etev bezv"
+  BIRCH_PLANKS: "plankennoù bezv"
+  BIRCH_PRESSURE_PLATE: "plakenn wask bezv"
+  BIRCH_SAPLING: "strujenn vezv"
+  BIRCH_SIGN: "panell vezv"
+  BIRCH_SLAB: "dar bezv"
+  BIRCH_STAIRS: "diri bezv"
+  BIRCH_TRAPDOOR: "trap bezv"
+  BIRCH_WALL_HANGING_SIGN: "panell-voger vezv a-ispilh"
+  BIRCH_WALL_SIGN: "panell-voger bezv"
+  BIRCH_WOOD: "koad bezv"
+  BLACK_BANNER: "banniel du"
+  BLACK_BED: "gwele du"
+  BLACK_CANDLE: "boujienn zu"
+  BLACK_CANDLE_CAKE: "gwastell gant ur voujienn zu"
+  BLACK_CARPET: "pallenn du"
+  BLACK_CONCRETE: "beton du"
+  BLACK_CONCRETE_POWDER: "poultr breton du"
+  BLACK_GLAZED_TERRACOTTA: "pri poazh gwerek du"
+  BLACK_SHULKER_BOX: "boest shulker du"
+  BLACK_STAINED_GLASS: "gwer tarchet du"
+  BLACK_STAINED_GLASS_PANE: "gwerenn zu"
+  BLACK_TERRACOTTA: "pri poazh du"
+  BLACK_WOOL: "gloan du"
+  BLACKSTONE: "maen-du"
+  BLACKSTONE_SLAB: "dar vaen-du"
+  BLACKSTONE_STAIRS: "diri maen-du"
+  BLACKSTONE_WALL: "moger maen-du"
+  BLAST_FURNACE: "uhelforn"
+  BLUE_BANNER: "banniel glas"
+  BLUE_BED: "gwele glas"
+  BLUE_CANDLE: "boujienn c'hlas"
+  BLUE_CANDLE_CAKE: "gwastell gant ur voujienn c'hlas"
+  BLUE_CARPET: "pallenn c'hlas"
+  BLUE_CONCRETE: "beton glas"
+  BLUE_CONCRETE_POWDER: "poultr beton glas"
+  BLUE_GLAZED_TERRACOTTA: "pri poazh gwerek glas"
+  BLUE_ICE: "skorn glas"
+  BLUE_ORCHID: "orkideenn c'hlas"
+  BLUE_SHULKER_BOX: "boest shulker glas"
+  BLUE_STAINED_GLASS: "gwer tarchet glas"
+  BLUE_STAINED_GLASS_PANE: "gwerenn c'hlas"
+  BLUE_TERRACOTTA: "pri poazh glas"
+  BLUE_WOOL: "gloan glas"
+  BONE_BLOCK: "bloc'h eskern"
+  BOOKSHELF: "levraoueg"
+  BRAIN_CORAL: "koural empenn"
+  BRAIN_CORAL_BLOCK: "bloc'h koural empenn"
+  BRAIN_CORAL_FAN: "aveler koural empenn"
+  BRAIN_CORAL_WALL_FAN: "aveler moger koural empenn"
+  BREWING_STAND: "lambig"
+  BRICK_SLAB: "dar brikenn"
+  BRICK_STAIRS: "diri brikennoù"
+  BRICK_WALL: "moger brikennoù"
+  BRICKS: "brikennoù"
+  BROWN_BANNER: "banniel gell"
+  BROWN_BED: "gwele gell"
+  BROWN_CANDLE: "boujienn c'hell"
+  BROWN_CANDLE_CAKE: "kouign gant ur voujienn c'hell"
+  BROWN_CARPET: "pallenn c'hell"
+  BROWN_CONCRETE: "beton gell"
+  BROWN_CONCRETE_POWDER: "poultr beton gell"
+  BROWN_GLAZED_TERRACOTTA: "pri poazh gwerek gell"
+  BROWN_MUSHROOM: "kabell-touseg gell"
+  BROWN_MUSHROOM_BLOCK: "bloc'h kabell-touseg gell"
+  BROWN_SHULKER_BOX: "boest shulker gell"
+  BROWN_STAINED_GLASS: "gwer tarchet gell"
+  BROWN_STAINED_GLASS_PANE: "gwerenn gell"
+  BROWN_TERRACOTTA: "pri poazh gell"
+  BROWN_WOOL: "gloan gell"
+  BUBBLE_COLUMN: "kolonenn glogor"
+  BUBBLE_CORAL: "koural klogor"
+  BUBBLE_CORAL_BLOCK: "bloc'h koural klogor"
+  BUBBLE_CORAL_FAN: "aveler koural klogor"
+  BUBBLE_CORAL_WALL_FAN: "aveler moger koural klogor"
+  BUDDING_AMETHYST: "broñsenn ametist"
+  CACTUS: "kaktus"
+  CAKE: "gwastell"
+  CALCITE: "kalsit"
+  CALIBRATED_SCULK_SENSOR: "enanker sculk gobariet"
+  CAMPFIRE: "tan kamp"
+  CANDLE: "boujienn"
+  CANDLE_CAKE: "gwastell gant ur voujienn"
+  CARROTS: "karotez"
+  CARTOGRAPHY_TABLE: "taol gartennouriezh"
+  CARVED_PUMPKIN: "sitrouilhezenn kizellet"
+  CAULDRON: "kaoter"
+  CAVE_AIR: "aer ar mougev"
+  CAVE_VINES: "lianennoù ar mougevioù"
+  CAVE_VINES_PLANT: "plant lianennoù ar mougevioù"
+  CHAIN: "chadenn"
+  CHAIN_COMMAND_BLOCK: "boc'h chadenn urzhiañ"
+  CHERRY_BUTTON: "bouton koad-kerez"
+  CHERRY_DOOR: "dor koad-kerez"
+  CHERRY_FENCE: "kloued koad-kerez"
+  CHERRY_FENCE_GATE: "dorikell koad-kerez"
+  CHERRY_HANGING_SIGN: "panell koad-kerez a-ispilh"
+  CHERRY_LEAVES: "delioù gwez-kerez"
+  CHERRY_LOG: "kef gwez-kerez"
+  CHERRY_PLANKS: "plankennoù koad-kerez"
+  CHERRY_PRESSURE_PLATE: "plakenn wask koad-kerez"
+  CHERRY_SAPLING: "strujenn wez-kerez"
+  CHERRY_SIGN: "panell koad-kerez"
+  CHERRY_SLAB: "dar koad-kerez"
+  CHERRY_STAIRS: "diri koad-kerez"
+  CHERRY_TRAPDOOR: "trap koad-kerez"
+  CHERRY_WALL_HANGING_SIGN: "panell-voger koad-kerez a-ispilh"
+  CHERRY_WALL_SIGN: "panell-voger koad-kerez"
+  CHERRY_WOOD: "koad-kerez"
+  CHEST: "koufr"
+  CHIPPED_ANVIL: "annev boulc'het"
+  CHISELED_BOOKSHELF: "levraoueg kizellet"
+  CHISELED_COPPER: "kouevr kizellet"
+  CHISELED_DEEPSLATE: "maen-glas an isfont sizailhet"
+  CHISELED_NETHER_BRICKS: "brikennoù an nether sizailhet"
+  CHISELED_POLISHED_BLACKSTONE: "maen-du flour sizailhet"
+  CHISELED_QUARTZ_BLOCK: "bloc'h kouarz sizailhet"
+  CHISELED_RED_SANDSTONE: "maen-traezh ruz sizailhet"
+  CHISELED_SANDSTONE: "maen-traezh sizailhet"
+  CHISELED_STONE_BRICKS: "brikennoù roc'h bennet"
+  CHISELED_TUFF: "tuf kizellet"
+  CHISELED_TUFF_BRICKS: "brikennoù tuf bennet"
+  CHORUS_FLOWER: "bleunienn gorus"
+  CHORUS_PLANT: "plant korus"
+  CLAY: "pri"
+  COAL_BLOCK: "bloc'h glaou"
+  COAL_ORE: "kailh glaou"
+  COARSE_DIRT: "douar losket"
+  COBBLED_DEEPSLATE: "maen an isfont"
+  COBBLED_DEEPSLATE_SLAB: "dar maen an isfont"
+  COBBLED_DEEPSLATE_STAIRS: "diri maen an isfont"
+  COBBLED_DEEPSLATE_WALL: "moger maen an isfont"
+  COBBLESTONE: "maen"
+  COBBLESTONE_SLAB: "dar maen"
+  COBBLESTONE_STAIRS: "diri maen"
+  COBBLESTONE_WALL: "moger maen"
+  COBWEB: "gwiad kevnidenn"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "bloc'h urzh"
+  COMPARATOR: "keñverier redstone"
+  COMPOSTER: "rotel"
+  CONDUIT: "san"
+  COPPER_BLOCK: "bloc'h kouevr"
+  COPPER_BULB: "klogorenn gouevr"
+  COPPER_DOOR: "dor gouevr"
+  COPPER_GRATE: "kael gouevr"
+  COPPER_ORE: "kailh kouevr"
+  COPPER_TRAPDOOR: "trap kouevr"
+  CORNFLOWER: "glizinenn"
+  CRACKED_DEEPSLATE_BRICKS: "maen-glas an isfont benet faout"
+  CRACKED_DEEPSLATE_TILES: "maen-glas an isfont karrellet faoutet"
+  CRACKED_NETHER_BRICKS: "brikennoù an nether faout"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "maen-du benet lufret faout"
+  CRACKED_STONE_BRICKS: "brikennoù roc'h torret"
+  CRAFTER: "farder"
+  CRAFTING_TABLE: "taol aozañ"
+  CREEPER_HEAD: "penn creeper"
+  CREEPER_WALL_HEAD: "penn creeper moger"
+  CRIMSON_BUTTON: "bouton ruz-tane"
+  CRIMSON_DOOR: "dor ruz tane"
+  CRIMSON_FENCE: "kloued ruz-tane"
+  CRIMSON_FENCE_GATE: "dorikell ruz-tane"
+  CRIMSON_FUNGUS: "kabell-touseg ruz-tane"
+  CRIMSON_HANGING_SIGN: "panell ruz-tane a-ispilh"
+  CRIMSON_HYPHAE: "hifennoù ruz-tane"
+  CRIMSON_NYLIUM: "niliom ruz-tane"
+  CRIMSON_PLANKS: "plankennoù ruz-tane"
+  CRIMSON_PRESSURE_PLATE: "plakenn wask ruz-tane"
+  CRIMSON_ROOTS: "gwrizioù ruz-tane"
+  CRIMSON_SIGN: "panell ruz-tane"
+  CRIMSON_SLAB: "dar ruz-tane"
+  CRIMSON_STAIRS: "diri ruz-tane"
+  CRIMSON_STEM: "korzenn ruz-tane"
+  CRIMSON_TRAPDOOR: "trap ruz-tane"
+  CRIMSON_WALL_HANGING_SIGN: "panell-voger ruz-tane a-ispilh"
+  CRIMSON_WALL_SIGN: "panell-voger ruz-tane"
+  CRYING_OBSIDIAN: "obsidian goueler"
+  CUT_COPPER: "kouevr benet"
+  CUT_COPPER_SLAB: "dar gouevr benet"
+  CUT_COPPER_STAIRS: "diri kouevr benet"
+  CUT_RED_SANDSTONE: "maen-traezh ruz benet"
+  CUT_RED_SANDSTONE_SLAB: "dar vaen-traezh ruz benet"
+  CUT_SANDSTONE: "maen-traezh benet"
+  CUT_SANDSTONE_SLAB: "dar vaen-traezh benet"
+  CYAN_BANNER: "banniel sian"
+  CYAN_BED: "gwele sian"
+  CYAN_CANDLE: "boujienn sian"
+  CYAN_CANDLE_CAKE: "gwastell gant boujiennoù sian"
+  CYAN_CARPET: "pallenn sian"
+  CYAN_CONCRETE: "beton sian"
+  CYAN_CONCRETE_POWDER: "poultr beton sian"
+  CYAN_GLAZED_TERRACOTTA: "pri poazh gwerek sian"
+  CYAN_SHULKER_BOX: "boest shulker sian"
+  CYAN_STAINED_GLASS: "gwer tarchet sian"
+  CYAN_STAINED_GLASS_PANE: "gwerenn sian"
+  CYAN_TERRACOTTA: "pri poazh sian"
+  CYAN_WOOL: "gloan sian"
+  DAMAGED_ANVIL: "annev gwallaozet"
+  DANDELION: "c'hwervizon"
+  DARK_OAK_BUTTON: "bouton derv teñval"
+  DARK_OAK_DOOR: "dor zerv teñval"
+  DARK_OAK_FENCE: "kloued derv teñval"
+  DARK_OAK_FENCE_GATE: "dorikell derv teñval"
+  DARK_OAK_HANGING_SIGN: "panell derv-teñval a-ispilh"
+  DARK_OAK_LEAVES: "delioù derv teñval"
+  DARK_OAK_LOG: "etev derv teñval"
+  DARK_OAK_PLANKS: "plankennoù derv teñval"
+  DARK_OAK_PRESSURE_PLATE: "plakenn wask derv teñval"
+  DARK_OAK_SAPLING: "strujenn derv teñval"
+  DARK_OAK_SIGN: "panell derv teñval"
+  DARK_OAK_SLAB: "dar derv teñval"
+  DARK_OAK_STAIRS: "diri derv teñval"
+  DARK_OAK_TRAPDOOR: "trap derv teñval"
+  DARK_OAK_WALL_HANGING_SIGN: "panell derv-teñval a-ispilh"
+  DARK_OAK_WALL_SIGN: "panell-voger derv teñval"
+  DARK_OAK_WOOD: "koad derv teñval"
+  DARK_PRISMARINE: "prismarine teñval"
+  DARK_PRISMARINE_SLAB: "dar prismarine teñval"
+  DARK_PRISMARINE_STAIRS: "diri prismarine teñval"
+  DAYLIGHT_DETECTOR: "dinoer gouloù an deiz"
+  DEAD_BRAIN_CORAL: "koural empenn marv"
+  DEAD_BRAIN_CORAL_BLOCK: "bloc'h koural empenn marv"
+  DEAD_BRAIN_CORAL_FAN: "aveler koural empenn marv"
+  DEAD_BRAIN_CORAL_WALL_FAN: "aveler moger koural empenn marv"
+  DEAD_BUBBLE_CORAL: "koural klogor marv"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloc'h koural klogor marv"
+  DEAD_BUBBLE_CORAL_FAN: "aveler koural klogor marv"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "aveler moger koural klogor marv"
+  DEAD_BUSH: "bochad gwez marv"
+  DEAD_FIRE_CORAL: "koural tan marv"
+  DEAD_FIRE_CORAL_BLOCK: "bloc'h koural tan marv"
+  DEAD_FIRE_CORAL_FAN: "aveler koural tan marv"
+  DEAD_FIRE_CORAL_WALL_FAN: "aveler moger koural tan marv"
+  DEAD_HORN_CORAL: "koural kerniel marv"
+  DEAD_HORN_CORAL_BLOCK: "bloc'h koural kerniel marv"
+  DEAD_HORN_CORAL_FAN: "aveler koural kerniel marv"
+  DEAD_HORN_CORAL_WALL_FAN: "aveler moger koural kerniel marv"
+  DEAD_TUBE_CORAL: "koural korzennek marv"
+  DEAD_TUBE_CORAL_BLOCK: "bloc'h koural korzennek marv"
+  DEAD_TUBE_CORAL_FAN: "aveler koural korzennek marv"
+  DEAD_TUBE_CORAL_WALL_FAN: "aveler moger koural korzennek marv"
+  DECORATED_POT: "pod kinklet"
+  DEEPSLATE: "maen-glas an isfont"
+  DEEPSLATE_BRICK_SLAB: "dar maen-glas an isfont benet"
+  DEEPSLATE_BRICK_STAIRS: "diri maen-glas an isfont benet"
+  DEEPSLATE_BRICK_WALL: "moger maen-glas an isfont benet"
+  DEEPSLATE_BRICKS: "maen-glas an isfont benet"
+  DEEPSLATE_COAL_ORE: "kailh glaou an isfont"
+  DEEPSLATE_COPPER_ORE: "kailh kouevr an isfont"
+  DEEPSLATE_DIAMOND_ORE: "kailh diamant an isfont"
+  DEEPSLATE_EMERALD_ORE: "kailh emrodez an isfont"
+  DEEPSLATE_GOLD_ORE: "kailh aour an isfont"
+  DEEPSLATE_IRON_ORE: "kailh houarn an isfont"
+  DEEPSLATE_LAPIS_ORE: "kailh lapis lazuli an isfont"
+  DEEPSLATE_REDSTONE_ORE: "kailh redstone an isfont"
+  DEEPSLATE_TILE_SLAB: "dar maen-glas an isfont karrellet"
+  DEEPSLATE_TILE_STAIRS: "diri maen-glas an isfont karrellet"
+  DEEPSLATE_TILE_WALL: "moger maen-glas an isfont karrellet"
+  DEEPSLATE_TILES: "maen-glas an isfont karrellet"
+  DETECTOR_RAIL: "hent-houarn dinoer"
+  DIAMOND_BLOCK: "bloc'h diamant"
+  DIAMOND_ORE: "kailh diamant"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dar diorit"
+  DIORITE_STAIRS: "diri diorit"
+  DIORITE_WALL: "moger diorit"
+  DIRT: "douar"
+  DIRT_PATH: "hent douar"
+  DISPENSER: "tennerez"
+  DRAGON_EGG: "vi aerouant"
+  DRAGON_HEAD: "penn aerouant"
+  DRAGON_WALL_HEAD: "penn aerouant moger"
+  DRIED_KELP_BLOCK: "bloc'h bezhin sec'het"
+  DRIPSTONE_BLOCK: "bloc'h hinkin-maen"
+  DROPPER: "ingalerez"
+  EMERALD_BLOCK: "bloc'h emrodez"
+  EMERALD_ORE: "kailh emrodez"
+  ENCHANTING_TABLE: "taol strobinellerezh"
+  END_GATEWAY: "treuzell an end"
+  END_PORTAL: "dor-dal an end"
+  END_PORTAL_FRAME: "steuñv dor-dal an end"
+  END_ROD: "bazh an end"
+  END_STONE: "roc'h an end"
+  END_STONE_BRICK_SLAB: "dar brikennoù roc'h an end"
+  END_STONE_BRICK_STAIRS: "diri brikennoù roc'h an end"
+  END_STONE_BRICK_WALL: "moger brikennoù roc'h an end"
+  END_STONE_BRICKS: "brikennoù roc'h an end"
+  ENDER_CHEST: "koufr an end"
+  EXPOSED_CHISELED_COPPER: "kouevr kizellet abimet"
+  EXPOSED_COPPER: "kouevr abimet"
+  EXPOSED_COPPER_BULB: "klogorenn gouevr abimet"
+  EXPOSED_COPPER_DOOR: "dor gouevr abimet"
+  EXPOSED_COPPER_GRATE: "kael gouevr abimet"
+  EXPOSED_COPPER_TRAPDOOR: "trap kouevr abimet"
+  EXPOSED_CUT_COPPER: "kouevr benet abimet"
+  EXPOSED_CUT_COPPER_SLAB: "dar kouevr benet abimet"
+  EXPOSED_CUT_COPPER_STAIRS: "diri kouevr benet abimet"
+  FARMLAND: "douar troet"
+  FERN: "raden"
+  FIRE: "tan"
+  FIRE_CORAL: "koural tan"
+  FIRE_CORAL_BLOCK: "bloc'h koural tan"
+  FIRE_CORAL_FAN: "aveler koural tan"
+  FIRE_CORAL_WALL_FAN: "aveler moger koural tan"
+  FLETCHING_TABLE: "taol gwaregañ"
+  FLOWER_POT: "pod bleunioù"
+  FLOWERING_AZALEA: "brug-roz bleuniet"
+  FLOWERING_AZALEA_LEAVES: "delioù brug-roz bleuniet"
+  FROGSPAWN: "vioù glesker"
+  FROSTED_ICE: "skorn kleret"
+  FURNACE: "forn"
+  GILDED_BLACKSTONE: "maen-du alaouret"
+  GLASS: "gwerenn"
+  GLASS_PANE: "gwerenn"
+  GLOW_LICHEN: "liken lugernus"
+  GLOWSTONE: "maen lufrus"
+  GOLD_BLOCK: "bloc'h aour"
+  GOLD_ORE: "kailh aour"
+  GRANITE: "greunit"
+  GRANITE_SLAB: "dar greunit"
+  GRANITE_STAIRS: "diri greunit"
+  GRANITE_WALL: "moger greunit"
+  GRASS: "geot"
+  GRASS_BLOCK: "bloc'h geot"
+  GRAVEL: "grouan"
+  GRAY_BANNER: "banniel griz"
+  GRAY_BED: "gwele griz"
+  GRAY_CANDLE: "boujienn c'hriz"
+  GRAY_CANDLE_CAKE: "gwastell gant ur voujienn c'hriz"
+  GRAY_CARPET: "pallenn griz"
+  GRAY_CONCRETE: "beton griz"
+  GRAY_CONCRETE_POWDER: "poultr beton griz"
+  GRAY_GLAZED_TERRACOTTA: "pri poazh gwerek griz"
+  GRAY_SHULKER_BOX: "boest shulker gris"
+  GRAY_STAINED_GLASS: "gwer tarchet gris"
+  GRAY_STAINED_GLASS_PANE: "gwerenn griz"
+  GRAY_TERRACOTTA: "priz poazh griz"
+  GRAY_WOOL: "gloan griz"
+  GREEN_BANNER: "banniel gwer"
+  GREEN_BED: "gwele gwer"
+  GREEN_CANDLE: "boujienn wer"
+  GREEN_CANDLE_CAKE: "gwastell gant ur voujienn wer"
+  GREEN_CARPET: "pallenn wer"
+  GREEN_CONCRETE: "beton gwer"
+  GREEN_CONCRETE_POWDER: "poultr beton gwer"
+  GREEN_GLAZED_TERRACOTTA: "pri poazh gwerek gwer"
+  GREEN_SHULKER_BOX: "boest shulker gwer"
+  GREEN_STAINED_GLASS: "gwer tarchet gwer"
+  GREEN_STAINED_GLASS_PANE: "gwerenn wer"
+  GREEN_TERRACOTTA: "pri poazh gwer"
+  GREEN_WOOL: "gloan gwer"
+  GRINDSTONE: "breolim"
+  HANGING_ROOTS: "gwrizioù a-ispilh"
+  HAY_BLOCK: "boutelenn blouz"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "plakenn wask pounner pouezet"
+  HONEY_BLOCK: "blokad mell"
+  HONEYCOMB_BLOCK: "bloc'h follenn goar"
+  HOPPER: "founilh"
+  HORN_CORAL: "koural kerniel"
+  HORN_CORAL_BLOCK: "bloc'h koural kerniel"
+  HORN_CORAL_FAN: "aveler koural kerniel"
+  HORN_CORAL_WALL_FAN: "aveler moger koural kerniel"
+  ICE: "skorn"
+  INFESTED_CHISELED_STONE_BRICKS: "benerezh sizailhet gwastet"
+  INFESTED_COBBLESTONE: "maen gwastet"
+  INFESTED_CRACKED_STONE_BRICKS: "brikennoù roc'h faotet gwastet"
+  INFESTED_DEEPSLATE: "maen-glas an isfont gwastet"
+  INFESTED_MOSSY_STONE_BRICKS: "brikennoù roc'h man gwastet"
+  INFESTED_STONE: "roc'h gwastet"
+  INFESTED_STONE_BRICKS: "brikennoù roc'h gwastet"
+  IRON_BARS: "barrennoù houarn"
+  IRON_BLOCK: "bloc'h houarn"
+  IRON_DOOR: "dor houarn"
+  IRON_ORE: "kailh houarn"
+  IRON_TRAPDOOR: "trap houarn"
+  JACK_O_LANTERN: "sitrouilhezenn-letern"
+  JIGSAW: "bloc'h mil-tamm"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "bouton koad janglenn"
+  JUNGLE_DOOR: "dor koad janglenn"
+  JUNGLE_FENCE: "kloued koad janglenn"
+  JUNGLE_FENCE_GATE: "dorikell koad janglenn"
+  JUNGLE_HANGING_SIGN: "panell koad janglenn a-ispilh"
+  JUNGLE_LEAVES: "delioù janglenn"
+  JUNGLE_LOG: "etev koad janglenn"
+  JUNGLE_PLANKS: "plankennoù koad janglenn"
+  JUNGLE_PRESSURE_PLATE: "plakenn wask koad janglenn"
+  JUNGLE_SAPLING: "strujenn janglenn"
+  JUNGLE_SIGN: "panell koad janglenn"
+  JUNGLE_SLAB: "dar koad janglenn"
+  JUNGLE_STAIRS: "diri koad janglenn"
+  JUNGLE_TRAPDOOR: "trap koad janglenn"
+  JUNGLE_WALL_HANGING_SIGN: "panell-voger koad janglenn a-ispilh"
+  JUNGLE_WALL_SIGN: "panell-voger koad janglenn"
+  JUNGLE_WOOD: "koad janglenn"
+  KELP: "bezhin"
+  KELP_PLANT: "plantenn vezhin"
+  LADDER: "skeul"
+  LANTERN: "letern"
+  LAPIS_BLOCK: "bloc'h lapis lazuli"
+  LAPIS_ORE: "kailh lapis lazuli"
+  LARGE_AMETHYST_BUD: "broñsenn ametist vras"
+  LARGE_FERN: "radenenn vras"
+  LAVA: "lava"
+  LAVA_CAULDRON: "kaoter lava"
+  LECTERN: "letrin"
+  LEVER: "loc'henn"
+  LIGHT: "gouloù"
+  LIGHT_BLUE_BANNER: "banniel glas sklaer"
+  LIGHT_BLUE_BED: "gwele glas sklaer"
+  LIGHT_BLUE_CANDLE: "boujienn glas sklaer"
+  LIGHT_BLUE_CANDLE_CAKE: "gwastell gant ur voujienn glas sklaer"
+  LIGHT_BLUE_CARPET: "pallenn c'hlas sklaer"
+  LIGHT_BLUE_CONCRETE: "beton glas sklaer"
+  LIGHT_BLUE_CONCRETE_POWDER: "poultr beton sian"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "pri poazh gwerek glas sklaer"
+  LIGHT_BLUE_SHULKER_BOX: "boest shulker glas-sklaer"
+  LIGHT_BLUE_STAINED_GLASS: "gwer tarchet glas sklaer"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "gwerenn glas sklaer"
+  LIGHT_BLUE_TERRACOTTA: "pri poazh glas sklaer"
+  LIGHT_BLUE_WOOL: "gloan glas-sklaer"
+  LIGHT_GRAY_BANNER: "banniel griz sklaer"
+  LIGHT_GRAY_BED: "gwele griz sklaer"
+  LIGHT_GRAY_CANDLE: "boujienn arc'hant griz"
+  LIGHT_GRAY_CANDLE_CAKE: "kouign gant boujiennoù arc'hant griz"
+  LIGHT_GRAY_CARPET: "pallenn griz sklaer"
+  LIGHT_GRAY_CONCRETE: "beton griz sklaer"
+  LIGHT_GRAY_CONCRETE_POWDER: "poultr beton griz sklaer"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "pri poazh gwerek griz sklaer"
+  LIGHT_GRAY_SHULKER_BOX: "boest shulker gris-sklaer"
+  LIGHT_GRAY_STAINED_GLASS: "gwer tarchet gris sklaer"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "gwerenn griz sklaer"
+  LIGHT_GRAY_TERRACOTTA: "priz poazh griz sklaer"
+  LIGHT_GRAY_WOOL: "gloan griz sklaer"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "plakenn wask skañv pouezet"
+  LIGHTNING_ROD: "diskuruner"
+  LILAC: "lireu"
+  LILY_OF_THE_VALLEY: "louzaouenn-an-hañv"
+  LILY_PAD: "loa-zour"
+  LIME_BANNER: "banniel gwer-melen"
+  LIME_BED: "gwele gwer-melen"
+  LIME_CANDLE: "boujienn gwer sklaer"
+  LIME_CANDLE_CAKE: "gwastell gant ur voujienn gwer sklaer"
+  LIME_CARPET: "pallenn gwer-melen"
+  LIME_CONCRETE: "beton gwer-melen"
+  LIME_CONCRETE_POWDER: "poultr beton gwer-melen"
+  LIME_GLAZED_TERRACOTTA: "pri poazh gwerek gwer-melen"
+  LIME_SHULKER_BOX: "boest shulker gwer-sklaer"
+  LIME_STAINED_GLASS: "gwer tarchet gwer-melen"
+  LIME_STAINED_GLASS_PANE: "gwerenn gwer sklaer"
+  LIME_TERRACOTTA: "pri poazh gwer-melen"
+  LIME_WOOL: "gloan gwer-melen"
+  LODESTONE: "tennvaen"
+  LOOM: "stern-gwiader"
+  MAGENTA_BANNER: "banniel limestra"
+  MAGENTA_BED: "gwele limestra"
+  MAGENTA_CANDLE: "boujienn limestra"
+  MAGENTA_CANDLE_CAKE: "gwastell gant boujiennoù limestra"
+  MAGENTA_CARPET: "pallenn majenta"
+  MAGENTA_CONCRETE: "beton limestra"
+  MAGENTA_CONCRETE_POWDER: "poultr beton majenta"
+  MAGENTA_GLAZED_TERRACOTTA: "pri poazh gwerek limestra"
+  MAGENTA_SHULKER_BOX: "boest shulker majenta"
+  MAGENTA_STAINED_GLASS: "gwer tarchet majenta"
+  MAGENTA_STAINED_GLASS_PANE: "gwerenn vajenta"
+  MAGENTA_TERRACOTTA: "pri poazh limestra"
+  MAGENTA_WOOL: "gloan majenta"
+  MAGMA_BLOCK: "bloc'h magma"
+  MANGROVE_BUTTON: "bouton manglez"
+  MANGROVE_DOOR: "dor vanglez"
+  MANGROVE_FENCE: "kloued vanglez"
+  MANGROVE_FENCE_GATE: "dorikell vanglez"
+  MANGROVE_HANGING_SIGN: "panell vanglez a-ispilh"
+  MANGROVE_LEAVES: "delioù manglez"
+  MANGROVE_LOG: "kef manglez"
+  MANGROVE_PLANKS: "plankennoù manglez"
+  MANGROVE_PRESSURE_PLATE: "plakenn wask manglez"
+  MANGROVE_PROPAGULE: "propagul manglez"
+  MANGROVE_ROOTS: "gwrizioù manglez"
+  MANGROVE_SIGN: "panell vanglez"
+  MANGROVE_SLAB: "dar manglez"
+  MANGROVE_STAIRS: "diri manglez"
+  MANGROVE_TRAPDOOR: "trap manglez"
+  MANGROVE_WALL_HANGING_SIGN: "panell-voger vanglez a-ispilh"
+  MANGROVE_WALL_SIGN: "panell voger manglez"
+  MANGROVE_WOOD: "koad manglez"
+  MEDIUM_AMETHYST_BUD: "broñsenn ametist etre"
+  MELON: "sukrinenn"
+  MELON_STEM: "garenn sukrin"
+  MOSS_BLOCK: "bloc'h man"
+  MOSS_CARPET: "pallenn van"
+  MOSSY_COBBLESTONE: "roc'h man"
+  MOSSY_COBBLESTONE_SLAB: "dar maen manek"
+  MOSSY_COBBLESTONE_STAIRS: "diri maen manek"
+  MOSSY_COBBLESTONE_WALL: "moger maen man"
+  MOSSY_STONE_BRICK_SLAB: "dar brikennoù roc'h manek"
+  MOSSY_STONE_BRICK_STAIRS: "diri maen-traezh manek"
+  MOSSY_STONE_BRICK_WALL: "moger brikennoù roc'h manek"
+  MOSSY_STONE_BRICKS: "brikennoù roc'h man"
+  MOVING_PISTON: "bountell fiñv"
+  MUD: "pri"
+  MUD_BRICK_SLAB: "dar brikenn bri"
+  MUD_BRICK_STAIRS: "diri brikennoù pri"
+  MUD_BRICK_WALL: "moger brikennoù pri"
+  MUD_BRICKS: "brikennoù pri"
+  MUDDY_MANGROVE_ROOTS: "gwrizioù manglez priek"
+  MUSHROOM_STEM: "troad kabell-touseg"
+  MYCELIUM: "mikeliom"
+  NETHER_BRICK_FENCE: "kloued brikenn nether"
+  NETHER_BRICK_SLAB: "dar brikennoù nether"
+  NETHER_BRICK_STAIRS: "diri brikenn nether"
+  NETHER_BRICK_WALL: "moger brikennoù nether"
+  NETHER_BRICKS: "brikennoù nether"
+  NETHER_GOLD_ORE: "kailh aour an nether"
+  NETHER_PORTAL: "dor-dal an nether"
+  NETHER_QUARTZ_ORE: "kailh kouarz an nether"
+  NETHER_SPROUTS: "kellid an nether"
+  NETHER_WART: "gwenaenn nether"
+  NETHER_WART_BLOCK: "bloc'h gwenaenn an nether"
+  NETHERITE_BLOCK: "bloc'h netherite"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloc'h notenn"
+  OAK_BUTTON: "bouton derv"
+  OAK_DOOR: "dor zerv"
+  OAK_FENCE: "kloued derv"
+  OAK_FENCE_GATE: "dorikell derv"
+  OAK_HANGING_SIGN: "panell derv a-ispilh"
+  OAK_LEAVES: "delioù derv"
+  OAK_LOG: "etev derv"
+  OAK_PLANKS: "plankennoù derv"
+  OAK_PRESSURE_PLATE: "plakenn wask derv"
+  OAK_SAPLING: "strujenn zerv"
+  OAK_SIGN: "panell derv"
+  OAK_SLAB: "dar derv"
+  OAK_STAIRS: "diri derv"
+  OAK_TRAPDOOR: "dor trap derv"
+  OAK_WALL_HANGING_SIGN: "panell-voger derv a-ispilh"
+  OAK_WALL_SIGN: "panell-voger derv"
+  OAK_WOOD: "koad derv"
+  OBSERVER: "arvester"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "tousegouloù melendu"
+  OMINOUS_BANNER: "banniel gourdrouzus"
+  ORANGE_BANNER: "banniel orañjez"
+  ORANGE_BED: "gwele orañjez"
+  ORANGE_CANDLE: "boujienn orañjez"
+  ORANGE_CANDLE_CAKE: "gwastell gant ur voujienn orañjez"
+  ORANGE_CARPET: "pallenn orañjez"
+  ORANGE_CONCRETE: "beton orañjez"
+  ORANGE_CONCRETE_POWDER: "poultr beton orañjez"
+  ORANGE_GLAZED_TERRACOTTA: "pri poazh gwerek orañjez"
+  ORANGE_SHULKER_BOX: "boest shulker orañjez"
+  ORANGE_STAINED_GLASS: "gwer tarchet orañjez"
+  ORANGE_STAINED_GLASS_PANE: "gwerenn orañjez"
+  ORANGE_TERRACOTTA: "pri poazh orañjez"
+  ORANGE_TULIP: "tulipezenn orañjez"
+  ORANGE_WOOL: "gloan orañjez"
+  OXEYE_DAISY: "marc'harid"
+  OXIDIZED_CHISELED_COPPER: "kouevr kizellet merglet"
+  OXIDIZED_COPPER: "kouevr merglet"
+  OXIDIZED_COPPER_BULB: "klogorenn gouevr merglet"
+  OXIDIZED_COPPER_DOOR: "dor gouevr merglet"
+  OXIDIZED_COPPER_GRATE: "kael gouevr merglet"
+  OXIDIZED_COPPER_TRAPDOOR: "trap kouevr merglet"
+  OXIDIZED_CUT_COPPER: "kouevr benet merglet"
+  OXIDIZED_CUT_COPPER_SLAB: "dar kouevr benet merglet"
+  OXIDIZED_CUT_COPPER_STAIRS: "diri kouevr benet merglet"
+  PACKED_ICE: "pakad skorn"
+  PACKED_MUD: "pri-plouz"
+  PEARLESCENT_FROGLIGHT: "tousegouloù perlezet"
+  PEONY: "pivoena"
+  PETRIFIED_OAK_SLAB: "dar derv maenaet"
+  PIGLIN_HEAD: "penn piglin"
+  PIGLIN_WALL_HEAD: "penn piglin moger"
+  PINK_BANNER: "banniel roz"
+  PINK_BED: "gwele roz"
+  PINK_CANDLE: "boujienn roz"
+  PINK_CANDLE_CAKE: "kouign gant ur voujienn roz"
+  PINK_CARPET: "pallenn roz"
+  PINK_CONCRETE: "beton roz"
+  PINK_CONCRETE_POWDER: "poultr beton roz"
+  PINK_GLAZED_TERRACOTTA: "pri poazh gwerek roz"
+  PINK_PETALS: "petalennoù roz"
+  PINK_SHULKER_BOX: "boest shulker roz"
+  PINK_STAINED_GLASS: "gwer tarchet roz"
+  PINK_STAINED_GLASS_PANE: "gwerenn roz"
+  PINK_TERRACOTTA: "pri poazh roz"
+  PINK_TULIP: "tulipezenn roz"
+  PINK_WOOL: "gloan roz"
+  PISTON: "bountell"
+  PISTON_HEAD: "penn bountell"
+  PITCHER_CROP: "strujenn jarlili"
+  PITCHER_PLANT: "jarlili"
+  PLAYER_HEAD: "penn c'hoarier"
+  PLAYER_HEAD_NAMED: "penn %s"
+  PLAYER_WALL_HEAD: "penn c'hoarier moger"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "hinkin-maen begek"
+  POLISHED_ANDESITE: "andezit lufret"
+  POLISHED_ANDESITE_SLAB: "dar andezit flour"
+  POLISHED_ANDESITE_STAIRS: "diri andezit flour"
+  POLISHED_BASALT: "bazalt lufret"
+  POLISHED_BLACKSTONE: "maen-du lufret"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "dar maen-du lufret"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "diri maen-du lufret"
+  POLISHED_BLACKSTONE_BRICK_WALL: "moger maen-du lufret"
+  POLISHED_BLACKSTONE_BRICKS: "maen-du lufret"
+  POLISHED_BLACKSTONE_BUTTON: "bouton maen-du lufret"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "plakenn wask maen-du lufret"
+  POLISHED_BLACKSTONE_SLAB: "dar maen-du lufret"
+  POLISHED_BLACKSTONE_STAIRS: "diri maen-du lufret"
+  POLISHED_BLACKSTONE_WALL: "moger maen-du lufret"
+  POLISHED_DEEPSLATE: "maen-glas an isfont flour"
+  POLISHED_DEEPSLATE_SLAB: "dar maen-glas an isfont flour"
+  POLISHED_DEEPSLATE_STAIRS: "diri maen-glas an isfont flour"
+  POLISHED_DEEPSLATE_WALL: "moger maen-glas an isfont flour"
+  POLISHED_DIORITE: "diorit lufret"
+  POLISHED_DIORITE_SLAB: "dar diorit flour"
+  POLISHED_DIORITE_STAIRS: "diri diorit flour"
+  POLISHED_GRANITE: "greunit lufret"
+  POLISHED_GRANITE_SLAB: "dar greunit flour"
+  POLISHED_GRANITE_STAIRS: "diri greunit flour"
+  POLISHED_TUFF: "tuf lufret"
+  POLISHED_TUFF_SLAB: "dar tuf lufret"
+  POLISHED_TUFF_STAIRS: "diri tuf lufret"
+  POLISHED_TUFF_WALL: "moger tuf lufret"
+  POPPY: "rozenn-moc'h"
+  POTATOES: "avaloù-douar"
+  POTTED_ACACIA_SAPLING: "podad strujenn gasia"
+  POTTED_ALLIUM: "podad allium"
+  POTTED_AZALEA_BUSH: "podad brug-roz"
+  POTTED_AZURE_BLUET: "podad houstonia"
+  POTTED_BAMBOO: "podad bambouz"
+  POTTED_BIRCH_SAPLING: "podad strujenn vezv"
+  POTTED_BLUE_ORCHID: "podad orkideenn c'hlas"
+  POTTED_BROWN_MUSHROOM: "podad kabell-touseg gell"
+  POTTED_CACTUS: "podad kaktuz"
+  POTTED_CHERRY_SAPLING: "podad strujenn wez-kerez"
+  POTTED_CORNFLOWER: "podad glizin"
+  POTTED_CRIMSON_FUNGUS: "podad tog-touseg ruz-tane"
+  POTTED_CRIMSON_ROOTS: "podad gwrizioù ruz-tane"
+  POTTED_DANDELION: "podad c'hwervizon"
+  POTTED_DARK_OAK_SAPLING: "podad strujenn derv teñval"
+  POTTED_DEAD_BUSH: "podad bochad gwez marv"
+  POTTED_FERN: "podad raden"
+  POTTED_FLOWERING_AZALEA_BUSH: "podad brug-roz bleuniet"
+  POTTED_JUNGLE_SAPLING: "podad strujenn wez-janglenn"
+  POTTED_LILY_OF_THE_VALLEY: "podad louzaouenn-an-hañv"
+  POTTED_MANGROVE_PROPAGULE: "podad propagul manglez"
+  POTTED_OAK_SAPLING: "podad strujenn derv"
+  POTTED_ORANGE_TULIP: "podad tulipezenn orañjez"
+  POTTED_OXEYE_DAISY: "podad marc'harid"
+  POTTED_PINK_TULIP: "podad tulipezenn roz"
+  POTTED_POPPY: "podad rozenn-moc'h"
+  POTTED_RED_MUSHROOM: "podad kabell-touseg ruz"
+  POTTED_RED_TULIP: "podad tulipezenn ruz"
+  POTTED_SPRUCE_SAPLING: "podad strujenn bruñs"
+  POTTED_TORCHFLOWER: "podad bleunienn-flamm"
+  POTTED_WARPED_FUNGUS: "podad kabell-touseg kornek"
+  POTTED_WARPED_ROOTS: "podad gwrizioù kornek"
+  POTTED_WHITE_TULIP: "podad tulipezenn wenn"
+  POTTED_WITHER_ROSE: "podad rozenn wither"
+  POWDER_SNOW: "erc'h poultrek"
+  POWDER_SNOW_CAULDRON: "kaoter erc'h poultrek"
+  POWERED_RAIL: "hent-houarn galloudus"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "dar prismarine benet"
+  PRISMARINE_BRICK_STAIRS: "diri brikenn prismarine"
+  PRISMARINE_BRICKS: "brikennoù prismarine"
+  PRISMARINE_SLAB: "dar prismarine"
+  PRISMARINE_STAIRS: "diri prismarine"
+  PRISMARINE_WALL: "moger prismarine"
+  PUMPKIN: "sitrouilhezenn"
+  PUMPKIN_STEM: "garenn sitrouilhezenn"
+  PURPLE_BANNER: "banniel mouk"
+  PURPLE_BED: "gwele mouk"
+  PURPLE_CANDLE: "boujienn vouk"
+  PURPLE_CANDLE_CAKE: "kouign gant ur voujienn vouk"
+  PURPLE_CARPET: "pallenn mouk"
+  PURPLE_CONCRETE: "beton mouk"
+  PURPLE_CONCRETE_POWDER: "poultr beton mouk"
+  PURPLE_GLAZED_TERRACOTTA: "pri poazh gwerek mouk"
+  PURPLE_SHULKER_BOX: "boest shulker mouk"
+  PURPLE_STAINED_GLASS: "gwer tarchet mouk"
+  PURPLE_STAINED_GLASS_PANE: "gwerenn vouk"
+  PURPLE_TERRACOTTA: "pri poazh mouk"
+  PURPLE_WOOL: "gloan mouk"
+  PURPUR_BLOCK: "bloc'h purpur"
+  PURPUR_PILLAR: "peul purpur"
+  PURPUR_SLAB: "dar purpur"
+  PURPUR_STAIRS: "diri purpur"
+  QUARTZ_BLOCK: "bloc'h kouarz"
+  QUARTZ_BRICKS: "brikenn gouarz"
+  QUARTZ_PILLAR: "peul kouarz"
+  QUARTZ_SLAB: "dar kouarz"
+  QUARTZ_STAIRS: "diri kouarz"
+  RAIL: "hent-houarn"
+  RAW_COPPER_BLOCK: "bloc'h kouevr kriz"
+  RAW_GOLD_BLOCK: "bloc'h aour kriz"
+  RAW_IRON_BLOCK: "bloc'h houarn kriz"
+  RED_BANNER: "banniel ruz"
+  RED_BED: "gwele ruz"
+  RED_CANDLE: "boujienn ruz"
+  RED_CANDLE_CAKE: "gwastell gant ur voujienn ruz"
+  RED_CARPET: "pallenn ruz"
+  RED_CONCRETE: "beton ruz"
+  RED_CONCRETE_POWDER: "poultr beton ruz"
+  RED_GLAZED_TERRACOTTA: "pri poazh gwerek ruz"
+  RED_MUSHROOM: "kabell-touseg ruz"
+  RED_MUSHROOM_BLOCK: "bloc'h kabell-touseg du"
+  RED_NETHER_BRICK_SLAB: "dar brikenn ruz an nether"
+  RED_NETHER_BRICK_STAIRS: "diri brikenn ruz an nether"
+  RED_NETHER_BRICK_WALL: "moger brikennoù ruz an nether"
+  RED_NETHER_BRICKS: "brikennoù ruz an nether"
+  RED_SAND: "traezh ruz"
+  RED_SANDSTONE: "maen-traezh ruz"
+  RED_SANDSTONE_SLAB: "dar maen-traezh ruz"
+  RED_SANDSTONE_STAIRS: "diri maen-traezh ruz"
+  RED_SANDSTONE_WALL: "moger vaen-traezh ruz"
+  RED_SHULKER_BOX: "boest shulker ruz"
+  RED_STAINED_GLASS: "gwer tarchet ruz"
+  RED_STAINED_GLASS_PANE: "gwerenn ruz"
+  RED_TERRACOTTA: "pri poazh ruz"
+  RED_TULIP: "tulipezenn ruz"
+  RED_WOOL: "gloan ruz"
+  REDSTONE_BLOCK: "bloc'h redstone"
+  REDSTONE_LAMP: "gouloù redstone"
+  REDSTONE_ORE: "kailh redstone"
+  REDSTONE_TORCH: "etev-gouloù redstone"
+  REDSTONE_WALL_TORCH: "etev-gouloù moger redstone"
+  REDSTONE_WIRE: "orjalenn redstone"
+  REINFORCED_DEEPSLATE: "maen-glas an isfont kreñvaet"
+  REPEATER: "azganer redstone"
+  REPEATING_COMMAND_BLOCK: "bloc'h adurzhiañ"
+  RESPAWN_ANCHOR: "eor dasorc'hiñ"
+  ROOTED_DIRT: "douar gwriziennek"
+  ROSE_BUSH: "bod-roz"
+  SAND: "traezh"
+  SANDSTONE: "maen-traezh"
+  SANDSTONE_SLAB: "dar maen-traezh"
+  SANDSTONE_STAIRS: "diri maen-traezh"
+  SANDSTONE_WALL: "moger vaen-traezh"
+  SCAFFOLDING: "chafod"
+  SCULK: "sculk"
+  SCULK_CATALYST: "katalizer sculk"
+  SCULK_SENSOR: "enanker sculk"
+  SCULK_SHRIEKER: "skrijer sculk"
+  SCULK_VEIN: "gwazhienn sculk"
+  SEA_LANTERN: "letern mor"
+  SEA_PICKLE: "gwerc'heot"
+  SEAGRASS: "geot mor"
+  SET_SPAWN: "lec'h distro spisaet"
+  SHORT_GRASS: "geot bihan"
+  SHROOMLIGHT: "gouloù-foue"
+  SHULKER_BOX: "boest shulker"
+  SKELETON_SKULL: "klopenn skeledenn"
+  SKELETON_WALL_SKULL: "klopenn skeledenn moger"
+  SLIME_BLOCK: "bloc'h slime"
+  SMALL_AMETHYST_BUD: "broñsenn ametist vihan"
+  SMALL_DRIPLEAF: "dourzelienn vihan"
+  SMITHING_TABLE: "taol goveliañ"
+  SMOKER: "mogedlec'h"
+  SMOOTH_BASALT: "bazalt lintr"
+  SMOOTH_QUARTZ: "bloc'h kouarz plaen"
+  SMOOTH_QUARTZ_SLAB: "dar kouarz flour"
+  SMOOTH_QUARTZ_STAIRS: "diri kouarz plaen"
+  SMOOTH_RED_SANDSTONE: "maen-traezh ruz lintr"
+  SMOOTH_RED_SANDSTONE_SLAB: "dar vaen-traezh ruz flour"
+  SMOOTH_RED_SANDSTONE_STAIRS: "diri maen-traezh plaen"
+  SMOOTH_SANDSTONE: "maen-traezh lintr"
+  SMOOTH_SANDSTONE_SLAB: "dar vaen-traezh flour"
+  SMOOTH_SANDSTONE_STAIRS: "diri maen-traezh plaen"
+  SMOOTH_STONE: "roc'h plaen"
+  SMOOTH_STONE_SLAB: "dar roc'h plaen"
+  SNIFFER_EGG: "vi rufler"
+  SNOW: "erc'h"
+  SNOW_BLOCK: "bloc'h erc'h"
+  SOUL_CAMPFIRE: "kamp an ene"
+  SOUL_FIRE: "tan an ene"
+  SOUL_LANTERN: "letern an ene"
+  SOUL_SAND: "traezh an ene"
+  SOUL_SOIL: "douar an ene"
+  SOUL_TORCH: "etev-gouloù an ene"
+  SOUL_WALL_TORCH: "etev-gouloù moger an eneoù"
+  SPAWN_NOT_VALID: "n'ho peus gwele nag eor dasorc'hiñ karget pe strobet eo bet"
+  SPAWNER: "ganerez euzhviled"
+  SPAWNER_DESC1: "ober gant ur vi genel:"
+  SPAWNER_DESC2: "a dermen ar seurt krouadur"
+  SPONGE: "spoue"
+  SPORE_BLOSSOM: "bleunienn spor"
+  SPRUCE_BUTTON: "afell bruñs"
+  SPRUCE_DOOR: "dor bruñs"
+  SPRUCE_FENCE: "kloued pruñs"
+  SPRUCE_FENCE_GATE: "dorikell pruñs"
+  SPRUCE_HANGING_SIGN: "panell pruñs a-ispilh"
+  SPRUCE_LEAVES: "delioù pruñs"
+  SPRUCE_LOG: "etev pruñs"
+  SPRUCE_PLANKS: "plankennoù pruñs"
+  SPRUCE_PRESSURE_PLATE: "plakenn wask pruñs"
+  SPRUCE_SAPLING: "strujenn bruñs"
+  SPRUCE_SIGN: "panell bruñs"
+  SPRUCE_SLAB: "dar pruñs"
+  SPRUCE_STAIRS: "diri pruñs"
+  SPRUCE_TRAPDOOR: "trap bruñs"
+  SPRUCE_WALL_HANGING_SIGN: "panell-voger pruñs a-ispilh"
+  SPRUCE_WALL_SIGN: "panell voger pruñs"
+  SPRUCE_WOOD: "koad pruñs"
+  STICKY_PISTON: "bountell begus"
+  STONE: "roc'h"
+  STONE_BRICK_SLAB: "dar brikenn vaen"
+  STONE_BRICK_STAIRS: "diri brikennoù roc'h"
+  STONE_BRICK_WALL: "moger brikennoù roc'h"
+  STONE_BRICKS: "brikennoù roc'h"
+  STONE_BUTTON: "bouton maen"
+  STONE_PRESSURE_PLATE: "plakenn wask maen"
+  STONE_SLAB: "dar roc'h"
+  STONE_STAIRS: "diri roc'h"
+  STONECUTTER: "kizellerez"
+  STRIPPED_ACACIA_LOG: "etev kasia dirusket"
+  STRIPPED_ACACIA_WOOD: "koad kasia dirusket"
+  STRIPPED_BAMBOO_BLOCK: "bloc'h bambou dirsuket"
+  STRIPPED_BIRCH_LOG: "etev bezv dirusket"
+  STRIPPED_BIRCH_WOOD: "koad bezv dirusket"
+  STRIPPED_CHERRY_LOG: "kef koad-kerez dirusket"
+  STRIPPED_CHERRY_WOOD: "koad-kerez dirsuket"
+  STRIPPED_CRIMSON_HYPHAE: "hifennoù ruz-tane dirusket"
+  STRIPPED_CRIMSON_STEM: "korzenn ruz-tane dirusket"
+  STRIPPED_DARK_OAK_LOG: "etev derv teñval dirusket"
+  STRIPPED_DARK_OAK_WOOD: "koad derv teñval dirusket"
+  STRIPPED_JUNGLE_LOG: "etev koad janglenn dirusket"
+  STRIPPED_JUNGLE_WOOD: "koad janglenn dirusket"
+  STRIPPED_MANGROVE_LOG: "kef manglez dirusket"
+  STRIPPED_MANGROVE_WOOD: "koad manglez dirusket"
+  STRIPPED_OAK_LOG: "etev derv dirusket"
+  STRIPPED_OAK_WOOD: "koad derv dirusket"
+  STRIPPED_SPRUCE_LOG: "etev pruñs dirusket"
+  STRIPPED_SPRUCE_WOOD: "koad pruñs dirusket"
+  STRIPPED_WARPED_HYPHAE: "hifennoù disleber dirusket"
+  STRIPPED_WARPED_STEM: "korzenn disleber dirusket"
+  STRUCTURE_BLOCK: "bloc'h savadur"
+  STRUCTURE_VOID: "goullonder frammad"
+  SUGAR_CANE: "korzenn sukr"
+  SUNFLOWER: "tro-heol"
+  SUSPICIOUS_GRAVEL: "grouan touellus"
+  SUSPICIOUS_SAND: "traezh touellus"
+  SWEET_BERRY_BUSH: "bod skav sukret"
+  TALL_GRASS: "geot hir"
+  TALL_SEAGRASS: "geot mor uhel"
+  TARGET: "bukenn"
+  TERRACOTTA: "pri poazh"
+  TINTED_GLASS: "gwer livet"
+  TNT: "tnt"
+  TORCH: "etev-gouloù"
+  TORCHFLOWER: "bleunienn-flamm"
+  TORCHFLOWER_CROP: "strujenn vleunienn-flamm"
+  TRAPPED_CHEST: "koufr trapet"
+  TRIAL_SPAWNER: "ganerez an daeoù"
+  TRIPWIRE: "neudenn ziaskañ"
+  TRIPWIRE_HOOK: "krog neudenn ziaskañ"
+  TUBE_CORAL: "koural korzennek"
+  TUBE_CORAL_BLOCK: "bloc'h koural korzennek"
+  TUBE_CORAL_FAN: "aveler koural korzennek"
+  TUBE_CORAL_WALL_FAN: "aveler moger koural korzennek"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "dar brikennoù tuf"
+  TUFF_BRICK_STAIRS: "diri brikennoù tuf"
+  TUFF_BRICK_WALL: "moger brikennoù tuf"
+  TUFF_BRICKS: "brikennoù tuf"
+  TUFF_SLAB: "dar tuf"
+  TUFF_STAIRS: "diri tuf"
+  TUFF_WALL: "moger tuf"
+  TURTLE_EGG: "vi baot"
+  TWISTING_VINES: "lianennoù troidellek"
+  TWISTING_VINES_PLANT: "plant lianennoù troidellek"
+  VERDANT_FROGLIGHT: "tousegouloù glasvezus"
+  VINE: "lianennoù"
+  VOID_AIR: "aer ar goullonder"
+  WALL_TORCH: "etev-gouloù moger"
+  WARPED_BUTTON: "bouton kornek"
+  WARPED_DOOR: "dor kornek"
+  WARPED_FENCE: "kloued kornek"
+  WARPED_FENCE_GATE: "dorikell gornek"
+  WARPED_FUNGUS: "kabell-touseg kornek"
+  WARPED_HANGING_SIGN: "panell gornek a-ispilh"
+  WARPED_HYPHAE: "hifenn gornek"
+  WARPED_NYLIUM: "niliom kornek"
+  WARPED_PLANKS: "plankennoù kornek"
+  WARPED_PRESSURE_PLATE: "plakenn wask kornek"
+  WARPED_ROOTS: "gwrizioù kornek"
+  WARPED_SIGN: "panell kornek"
+  WARPED_SLAB: "dar kornek"
+  WARPED_STAIRS: "diri kornek"
+  WARPED_STEM: "korzenn gornek"
+  WARPED_TRAPDOOR: "trap kornek"
+  WARPED_WALL_HANGING_SIGN: "panell-voger kornek a-ispilh"
+  WARPED_WALL_SIGN: "panell voger kornek"
+  WARPED_WART_BLOCK: "bloc'h gwenaenn kornek"
+  WATER: "dour"
+  WATER_CAULDRON: "kaoter dour"
+  WAXED_CHISELED_COPPER: "kouevr kizellet koaret"
+  WAXED_COPPER_BLOCK: "bloc'h kouevr koaret"
+  WAXED_COPPER_BULB: "klogorenn gouevr koaret"
+  WAXED_COPPER_DOOR: "dor gouevr koaret"
+  WAXED_COPPER_GRATE: "kael gouevr koaret"
+  WAXED_COPPER_TRAPDOOR: "trap kouevr koaret"
+  WAXED_CUT_COPPER: "kouevr benet koaret"
+  WAXED_CUT_COPPER_SLAB: "dar kouevr benet koaret"
+  WAXED_CUT_COPPER_STAIRS: "diri kouevr benet koaret"
+  WAXED_EXPOSED_CHISELED_COPPER: "kouevr kizellet abimet koaret"
+  WAXED_EXPOSED_COPPER: "kouevr abimet koaret"
+  WAXED_EXPOSED_COPPER_BULB: "klogorenn gouevr abimet koaret"
+  WAXED_EXPOSED_COPPER_DOOR: "dor gouevr abimet koaret"
+  WAXED_EXPOSED_COPPER_GRATE: "kael gouevr abimet koaret"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "trap kouevr abimet koaret"
+  WAXED_EXPOSED_CUT_COPPER: "kouevr benet abimet koaret"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "dar kouevr benet abimet koaret"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "diri kouevr benet abimet koaret"
+  WAXED_OXIDIZED_CHISELED_COPPER: "kouevr kizellet merglet koaret"
+  WAXED_OXIDIZED_COPPER: "kouevr merglet koaret"
+  WAXED_OXIDIZED_COPPER_BULB: "klogorenn gouevr merglet koaret"
+  WAXED_OXIDIZED_COPPER_DOOR: "dor gouevr merglet koaret"
+  WAXED_OXIDIZED_COPPER_GRATE: "kael gouevr merglet koaret"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "trap kouevr merglet koaret"
+  WAXED_OXIDIZED_CUT_COPPER: "kouevr benet merglet koaret"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "dar kouevr benet merglet koaret"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "diri kouevr benet merglet koaret"
+  WAXED_WEATHERED_CHISELED_COPPER: "kouevr kizellet krignet koaret"
+  WAXED_WEATHERED_COPPER: "kouevr krignet koaret"
+  WAXED_WEATHERED_COPPER_BULB: "klogorenn gouevr krignet koaret"
+  WAXED_WEATHERED_COPPER_DOOR: "dor gouevr krignet koaret"
+  WAXED_WEATHERED_COPPER_GRATE: "kael gouevr krignet koaret"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "trap kouevr krignet koaret"
+  WAXED_WEATHERED_CUT_COPPER: "kouevr benet krignet koaret"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "dar kouevr benet krignet koaret"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "diri kouevr benet krignet koaret"
+  WEATHERED_CHISELED_COPPER: "kouevr kizellet krignet"
+  WEATHERED_COPPER: "kouevr krignet"
+  WEATHERED_COPPER_BULB: "klogorenn gouevr krignet"
+  WEATHERED_COPPER_DOOR: "dor gouevr krignet"
+  WEATHERED_COPPER_GRATE: "kael gouevr krignet"
+  WEATHERED_COPPER_TRAPDOOR: "trap kouevr krignet"
+  WEATHERED_CUT_COPPER: "kouevr benet krignet"
+  WEATHERED_CUT_COPPER_SLAB: "dar kouevr benet krignet"
+  WEATHERED_CUT_COPPER_STAIRS: "diri kouevr benet krignet"
+  WEEPING_VINES: "lianennoù goueler"
+  WEEPING_VINES_PLANT: "plant lianennoù goueler"
+  WET_SPONGE: "spoueenn c'hleb"
+  WHEAT: "plant ed"
+  WHITE_BANNER: "banniel gwenn"
+  WHITE_BED: "gwele gwenn"
+  WHITE_CANDLE: "boujienn wenn"
+  WHITE_CANDLE_CAKE: "gwastell gant ur voujienn wenn"
+  WHITE_CARPET: "tapis gwenn"
+  WHITE_CONCRETE: "beton gwenn"
+  WHITE_CONCRETE_POWDER: "poultr beton gwenn"
+  WHITE_GLAZED_TERRACOTTA: "pri poazh gwerek gwenn"
+  WHITE_SHULKER_BOX: "boest shulker gwenn"
+  WHITE_STAINED_GLASS: "gwer tarchet gwenn"
+  WHITE_STAINED_GLASS_PANE: "gwerenn wenn"
+  WHITE_TERRACOTTA: "pri poazh gwenn"
+  WHITE_TULIP: "tulipezenn wenn"
+  WHITE_WOOL: "gloan gwenn"
+  WITHER_ROSE: "rozenn wither"
+  WITHER_SKELETON_SKULL: "klopenn skeledenn wither"
+  WITHER_SKELETON_WALL_SKULL: "klopenn skeledenn wither moger"
+  YELLOW_BANNER: "banniel melen"
+  YELLOW_BED: "gwelen melen"
+  YELLOW_CANDLE: "boujienn velen"
+  YELLOW_CANDLE_CAKE: "gwastell gant ur voujienn velen"
+  YELLOW_CARPET: "pallenn melen"
+  YELLOW_CONCRETE: "beton melen"
+  YELLOW_CONCRETE_POWDER: "poultr beton melen"
+  YELLOW_GLAZED_TERRACOTTA: "pri poazh gwerek melen"
+  YELLOW_SHULKER_BOX: "boest shulker melen"
+  YELLOW_STAINED_GLASS: "gwer tarchet melen"
+  YELLOW_STAINED_GLASS_PANE: "gwerenn velen"
+  YELLOW_TERRACOTTA: "pri poazh melen"
+  YELLOW_WOOL: "glan melen"
+  ZOMBIE_HEAD: "penn zombi"
+  ZOMBIE_WALL_HEAD: "penn zombi moger"
+  ACACIA_BOAT: "bag kasia"
+  ACACIA_CHEST_BOAT: "bag kasia gant ur c'houfr"
+  ALLAY_SPAWN_EGG: "vi genel allay"
+  AMETHYST_SHARD: "strinkenn ametist"
+  ANGLER_POTTERY_SHARD: "darbod ar pesketaer"
+  ANGLER_POTTERY_SHERD: "darbod ar pesketaer"
+  APPLE: "aval"
+  ARCHER_POTTERY_SHARD: "darbod ar gwareger"
+  ARCHER_POTTERY_SHERD: "darbod ar gwareger"
+  ARMOR_STAND: "douger houarnwisk"
+  ARMS_UP_POTTERY_SHARD: "darbod an den"
+  ARMS_UP_POTTERY_SHERD: "darbod an den"
+  ARROW: "bir"
+  AXOLOTL_BUCKET: "sailhad axolotl"
+  AXOLOTL_SPAWN_EGG: "vi genel axolotl"
+  BAKED_POTATO: "aval-douar poazh"
+  BAMBOO_CHEST_RAFT: "radell vambou gant koufr"
+  BAMBOO_RAFT: "radell vambou"
+  BAT_SPAWN_EGG: "vi genel eskell-groc'hen"
+  BEE_SPAWN_EGG: "vi ganerez gwenan"
+  BEEF: "kig-bevin kriz"
+  BEETROOT: "beterabez"
+  BEETROOT_SEEDS: "greun beterabez"
+  BEETROOT_SOUP: "soubenn veterabez"
+  BIRCH_BOAT: "bag bezv"
+  BIRCH_CHEST_BOAT: "bag bezv gant ur c'houfr"
+  BLACK_DYE: "livadur du"
+  BLADE_POTTERY_SHARD: "darbod ar c'hleze"
+  BLADE_POTTERY_SHERD: "darbod ar c'hleze"
+  BLAZE_POWDER: "poultr blaze"
+  BLAZE_ROD: "bazh tan"
+  BLAZE_SPAWN_EGG: "vi genel blaze"
+  BLUE_DYE: "livadur glas"
+  BONE: "askorn"
+  BONE_MEAL: "poultr eskern"
+  BOOK: "levr"
+  BOW: "gwareg"
+  BOWL: "bolenn"
+  BREAD: "bara"
+  BREEZE_SPAWN_EGG: "vi genel gwent"
+  BREWER_POTTERY_SHARD: "darbod an alkimiezh"
+  BREWER_POTTERY_SHERD: "darbod an alkimiezh"
+  BRICK: "brikenn"
+  BROWN_DYE: "livadur gell"
+  BRUSH: "broust"
+  BUCKET: "sailh"
+  BUNDLE: "sac'h"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "darbod an tan"
+  BURN_POTTERY_SHERD: "darbod an tan"
+  CAMEL_SPAWN_EGG: "vi-genel dremedal"
+  CARROT: "karotezenn"
+  CARROT_ON_A_STICK: "karotezenn war ur vazh"
+  CAT_SPAWN_EGG: "vi genel kazh"
+  CAVE_SPIDER_SPAWN_EGG: "vi genel kevnidenn vougev"
+  CHAINMAIL_BOOTS: "botoù mailhek"
+  CHAINMAIL_CHESTPLATE: "sae-vailhek"
+  CHAINMAIL_HELMET: "tokarn mailhek"
+  CHAINMAIL_LEGGINGS: "bragoù mailhek"
+  CHARCOAL: "glaou koad"
+  CHERRY_BOAT: "bag koad-kerez"
+  CHERRY_CHEST_BOAT: "bag koad-kerez gant ur c'houfr"
+  CHEST_MINECART: "bagon vengleuz gant ur c'houfr"
+  CHICKEN: "kig-yar kriz"
+  CHICKEN_SPAWN_EGG: "vi genel yar"
+  CHORUS_FRUIT: "frouezhenn gorus"
+  CLAY_BALL: "boulenn pri"
+  CLOCK: "eurier"
+  COAL: "glaou"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  COCOA_BEANS: "fav kakao"
+  COD: "moru kriz"
+  COD_BUCKET: "sailhad moru"
+  COD_SPAWN_EGG: "vi genel moru"
+  COMMAND_BLOCK_MINECART: "bagon vengleuz gant ur bloc'h urzh"
+  COMPASS: "nadoz-vor"
+  COOKED_BEEF: "kig-bevin poazh"
+  COOKED_CHICKEN: "kig-yar poazh"
+  COOKED_COD: "moru poazh"
+  COOKED_MUTTON: "kig-dañvad poazh"
+  COOKED_PORKCHOP: "kig-moc'h poazh"
+  COOKED_RABBIT: "kig-konikl poazh"
+  COOKED_SALMON: "eog poazh"
+  COOKIE: "gwispidenn"
+  COPPER_INGOT: "tolzenn gouevr"
+  COW_SPAWN_EGG: "vi genel buoc'h"
+  CREEPER_BANNER_PATTERN: "patrom banniel"
+  CREEPER_BANNER_PATTERN_DESC: "penn creeper"
+  CREEPER_SPAWN_EGG: "vi genel creeper"
+  CROSSBOW: "kroazwareg"
+  CROSSBOW_PROJECTILE: "bannadell:"
+  CYAN_DYE: "livadenn sian"
+  DANGER_POTTERY_SHARD: "darbod an dañjer"
+  DANGER_POTTERY_SHERD: "darbod an dañjer"
+  DARK_OAK_BOAT: "bag derv teñval"
+  DARK_OAK_CHEST_BOAT: "bag derv teñval gant ur c'houfr"
+  DEBUG_STICK: "bazh diveugañ"
+  DEBUG_STICK_EMPTY: "n'eus perzh ebet gant %s"
+  DEBUG_STICK_SELECT: "diuzet \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" da %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "bouc'hal ziamant"
+  DIAMOND_BOOTS: "botoù diamant"
+  DIAMOND_CHESTPLATE: "brennid diamant"
+  DIAMOND_HELMET: "tokarn diamant"
+  DIAMOND_HOE: "marr ziamant"
+  DIAMOND_HORSE_ARMOR: "harnez diamant marc'h"
+  DIAMOND_LEGGINGS: "bragoù diamant"
+  DIAMOND_PICKAXE: "pigell ziamant"
+  DIAMOND_SHOVEL: "pal ziamant"
+  DIAMOND_SWORD: "kleze diamant"
+  DISC_FRAGMENT_5: "tamm pladenn"
+  DISC_FRAGMENT_5_DESC: "pladenn sonerezh - 5"
+  DOLPHIN_SPAWN_EGG: "vi genel beg-hir"
+  DONKEY_SPAWN_EGG: "vi genel azen"
+  DRAGON_BREATH: "c'hwezh an aerouant"
+  DRIED_KELP: "bezhin sec'het"
+  DROWNED_SPAWN_EGG: "vi genel beuzed"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  ECHO_SHARD: "tamm dasson"
+  EGG: "vi"
+  ELDER_GUARDIAN_SPAWN_EGG: "vi genel gward-meur"
+  ELYTRA: "adeskell"
+  EMERALD: "emrodez"
+  ENCHANTED_BOOK: "levr strobinellet"
+  ENCHANTED_GOLDEN_APPLE: "aval alaouret strobinellet"
+  END_CRYSTAL: "strink an end"
+  ENDER_DRAGON_SPAWN_EGG: "vi genel aerouant an end"
+  ENDER_EYE: "lagad an end"
+  ENDER_PEARL: "perlezenn an end"
+  ENDERMAN_SPAWN_EGG: "vi genel enderman"
+  ENDERMITE_SPAWN_EGG: "vi genel endermite"
+  EVOKER_SPAWN_EGG: "vi genel dec'halver"
+  EXPERIENCE_BOTTLE: "braoued strobinellerezh"
+  EXPLORER_POTTERY_SHARD: "darbod an ergerzher"
+  EXPLORER_POTTERY_SHERD: "darbod an ergerzher"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  FEATHER: "pluenn"
+  FERMENTED_SPIDER_EYE: "lagad kevnidenn c'hoellet"
+  FILLED_MAP: "kartenn"
+  FIRE_CHARGE: "karg tan"
+  FIREWORK_ROCKET: "fuc'hell tan-arvest"
+  FIREWORK_ROCKET_FLIGHT: "padelezh an nijadenn:"
+  FIREWORK_STAR: "steredenn tan-arvest"
+  FIREWORK_STAR_BLACK: "du"
+  FIREWORK_STAR_BLUE: "glas"
+  FIREWORK_STAR_BROWN: "gell"
+  FIREWORK_STAR_CUSTOM_COLOR: "personelaet"
+  FIREWORK_STAR_CYAN: "sian"
+  FIREWORK_STAR_FADE_TO: "arveuz da"
+  FIREWORK_STAR_FLICKER: "fulennoù"
+  FIREWORK_STAR_GRAY: "griz"
+  FIREWORK_STAR_GREEN: "gwer"
+  FIREWORK_STAR_LIGHT_BLUE: "glas sklaer"
+  FIREWORK_STAR_LIGHT_GRAY: "griz sklaer"
+  FIREWORK_STAR_LIME: "gwer-melen"
+  FIREWORK_STAR_MAGENTA: "majenta"
+  FIREWORK_STAR_ORANGE: "orañjez"
+  FIREWORK_STAR_PINK: "roz"
+  FIREWORK_STAR_PURPLE: "mouk"
+  FIREWORK_STAR_RED: "ruz"
+  FIREWORK_STAR_SHAPE: "stumm dianav"
+  FIREWORK_STAR_SHAPE_BURST: "tarzhadenn"
+  FIREWORK_STAR_SHAPE_CREEPER: "stumm ur c'hreeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "bolotenn vras"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "bolotenn vihan"
+  FIREWORK_STAR_SHAPE_STAR: "stumm ur steredenn"
+  FIREWORK_STAR_TRAIL: "roudoù"
+  FIREWORK_STAR_WHITE: "gwenn"
+  FIREWORK_STAR_YELLOW: "melen"
+  FISHING_ROD: "gwalenn-besketa"
+  FLINT: "kailhastr"
+  FLINT_AND_STEEL: "kailhastr ha dir"
+  FLOWER_BANNER_PATTERN: "patrom banniel"
+  FLOWER_BANNER_PATTERN_DESC: "penn bleunienn"
+  FOX_SPAWN_EGG: "vi genel louarn"
+  FRIEND_POTTERY_SHARD: "darbod ar mignon"
+  FRIEND_POTTERY_SHERD: "darbod ar mignon"
+  FROG_SPAWN_EGG: "vi genel glesker"
+  FURNACE_MINECART: "bagon vengleuz gant ur forn"
+  GHAST_SPAWN_EGG: "vi genel ghast"
+  GHAST_TEAR: "daerenn ghast"
+  GLASS_BOTTLE: "boutailh wer"
+  GLISTERING_MELON_SLICE: "lodenn sukrinenn lufrus"
+  GLOBE_BANNER_PATTERN: "patrom banniel"
+  GLOBE_BANNER_PATTERN_DESC: "boul"
+  GLOW_BERRIES: "skav lugernus"
+  GLOW_INK_SAC: "sac'h inkr lugernus"
+  GLOW_ITEM_FRAME: "framm lufrus"
+  GLOW_SQUID_SPAWN_EGG: "vi genel stiogan lugernus"
+  GLOWSTONE_DUST: "poultr lufrus"
+  GOAT_HORN: "korn gavr"
+  GOAT_SPAWN_EGG: "vi genel gavr"
+  GOLD_INGOT: "barrenn aour"
+  GOLD_NUGGET: "malzenn aour"
+  GOLDEN_APPLE: "aval alaouret"
+  GOLDEN_AXE: "bouc'hal aour"
+  GOLDEN_BOOTS: "botoù aour"
+  GOLDEN_CARROT: "karotezenn alaouret"
+  GOLDEN_CHESTPLATE: "brennid aour"
+  GOLDEN_HELMET: "tokarn aour"
+  GOLDEN_HOE: "marr aour"
+  GOLDEN_HORSE_ARMOR: "harnez marc'h alaouret"
+  GOLDEN_LEGGINGS: "bragoù aour"
+  GOLDEN_PICKAXE: "pigell aour"
+  GOLDEN_SHOVEL: "pal aour"
+  GOLDEN_SWORD: "kleze aour"
+  GRAY_DYE: "livadur griz"
+  GREEN_DYE: "livadenn wer"
+  GUARDIAN_SPAWN_EGG: "vi genel gward"
+  GUNPOWDER: "poultr kanol"
+  HEART_OF_THE_SEA: "kalon ar mor"
+  HEART_POTTERY_SHARD: "darbod ar galon"
+  HEART_POTTERY_SHERD: "darbod ar galon"
+  HEARTBREAK_POTTERY_SHARD: "darbod ar galon flastret"
+  HEARTBREAK_POTTERY_SHERD: "darbod ar galon flastret"
+  HOGLIN_SPAWN_EGG: "vi genel hoglin"
+  HONEY_BOTTLE: "boutailhad mel"
+  HONEYCOMB: "follenn goar"
+  HOPPER_MINECART: "bagon vengleuz gant ur founilh"
+  HORSE_SPAWN_EGG: "vi genel marc'h"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  HOWL_POTTERY_SHARD: "darbod ar bleiz"
+  HOWL_POTTERY_SHERD: "darbod ar bleiz"
+  HUSK_SPAWN_EGG: "vi genel disec'han"
+  INK_SAC: "sac'h inkr"
+  IRON_AXE: "bouc'hal houarn"
+  IRON_BOOTS: "botoù houarn"
+  IRON_CHESTPLATE: "brennid houarn"
+  IRON_GOLEM_SPAWN_EGG: "vi genel golem-houarn"
+  IRON_HELMET: "tokarn houarn"
+  IRON_HOE: "marr houarn"
+  IRON_HORSE_ARMOR: "houarnwisk marc'h"
+  IRON_INGOT: "barrenn houarn"
+  IRON_LEGGINGS: "bragoù houarn"
+  IRON_NUGGET: "malzenn houarn"
+  IRON_PICKAXE: "pigell houarn"
+  IRON_SHOVEL: "pal houarn"
+  IRON_SWORD: "kleze houarn"
+  ITEM_FRAME: "framm an objed"
+  JUNGLE_BOAT: "bag koad janglenn"
+  JUNGLE_CHEST_BOAT: "bag koad janglenn gant ur c'houfr"
+  KNOWLEDGE_BOOK: "levr ar ouiziegezh"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "sailh lava"
+  LEAD: "lêrenn"
+  LEATHER: "lêr"
+  LEATHER_BOOTS: "botoù lêr"
+  LEATHER_CHESTPLATE: "sae lêr"
+  LEATHER_HELMET: "tok lêr"
+  LEATHER_HORSE_ARMOR: "harnez lêr marc'h"
+  LEATHER_LEGGINGS: "bragoù lêr"
+  LIGHT_BLUE_DYE: "livadur glas sklaer"
+  LIGHT_GRAY_DYE: "livadur griz sklaer"
+  LIME_DYE: "livadur gwer-melen"
+  LINGERING_POTION: "died padus"
+  LINGERING_POTION_EFFECT_AWKWARD: "braou direnkus padus"
+  LINGERING_POTION_EFFECT_EMPTY: "braou padus n'haller ket aozañ"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "braou dalc'husted d'an tan padus"
+  LINGERING_POTION_EFFECT_HARMING: "braou freuz padus"
+  LINGERING_POTION_EFFECT_HEALING: "braou pareañ padus"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "braou diwelusted padus"
+  LINGERING_POTION_EFFECT_LEAPING: "braou lammat padus"
+  LINGERING_POTION_EFFECT_LEVITATION: "braou nijal padus"
+  LINGERING_POTION_EFFECT_LUCK: "braou chañs padus"
+  LINGERING_POTION_EFFECT_MUNDANE: "braou ordinal padus"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "braou gwelet en deñvalijenn padus"
+  LINGERING_POTION_EFFECT_POISON: "braou ampoezon padus"
+  LINGERING_POTION_EFFECT_REGENERATION: "braou empareañ padus"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "braou padus kouezhañ gorrek"
+  LINGERING_POTION_EFFECT_SLOWNESS: "braou gorrekadur padus"
+  LINGERING_POTION_EFFECT_STRENGTH: "braou kreñvder padus"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "braou primder padus"
+  LINGERING_POTION_EFFECT_THICK: "braou tev padus"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "braou padus mestr ar boated"
+  LINGERING_POTION_EFFECT_WATER: "braou dour padus"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "braou analañ en dour padus"
+  LINGERING_POTION_EFFECT_WEAKNESS: "braou gwander padus"
+  LLAMA_SPAWN_EGG: "vi genel lama"
+  LODESTONE_COMPASS: "nadoz-vor maentouchek"
+  MAGENTA_DYE: "livadur majenta"
+  MAGMA_CREAM: "dienn vagma"
+  MAGMA_CUBE_SPAWN_EGG: "vi genel kuboù magma"
+  MANGROVE_BOAT: "bag manglez"
+  MANGROVE_CHEST_BOAT: "bag manglez gant ur c'houfr"
+  MAP: "kartenn c'houllo"
+  MELON_SEEDS: "greun sukrin"
+  MELON_SLICE: "lodenn sukrinenn"
+  MILK_BUCKET: "sailhad laezh"
+  MINECART: "bagon vengleuz"
+  MINER_POTTERY_SHARD: "darbod ar mengleuzier"
+  MINER_POTTERY_SHERD: "darbod ar mengleuzier"
+  MOJANG_BANNER_PATTERN: "patrom banniel"
+  MOJANG_BANNER_PATTERN_DESC: "arouez"
+  MOOSHROOM_SPAWN_EGG: "vi genel mooshroom"
+  MOURNER_POTTERY_SHARD: "darbod al leñver"
+  MOURNER_POTTERY_SHERD: "darbod al leñver"
+  MULE_SPAWN_EGG: "vi genel mulez"
+  MUSHROOM_STEW: "soubenn tokoù-touseg"
+  MUSIC_DISC_11: "pladenn sonerezh"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "pladenn sonerezh"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "pladenn sonerezh"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "pladenn sonerezh"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "pladenn sonerezh"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "pladenn sonerezh"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "pladenn sonerezh"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "pladenn sonerezh"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "pladenn sonerezh"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "pladenn sonerezh"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "pladenn sonerezh"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "pladenn sonerezh"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "pladenn sonerezh"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "pladenn sonerezh"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "pladenn sonerezh"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "pladenn sonerezh"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "kig-dañvad kriz"
+  NAME_TAG: "tikedenn anv"
+  NAUTILUS_SHELL: "krogenn naotil"
+  NETHER_BRICK: "brikenn nether"
+  NETHER_STAR: "steredenn nether"
+  NETHER_WART: "gwenaenn an nether"
+  NETHERITE_AXE: "bouc'hal netherite"
+  NETHERITE_BOOTS: "botoù netherite"
+  NETHERITE_CHESTPLATE: "brennid netherite"
+  NETHERITE_HELMET: "kask netherite"
+  NETHERITE_HOE: "marr netherite"
+  NETHERITE_INGOT: "barrenn netherite"
+  NETHERITE_LEGGINGS: "bragoù netherite"
+  NETHERITE_PICKAXE: "pigell netherite"
+  NETHERITE_SCRAP: "darnoù netherite"
+  NETHERITE_SHOVEL: "pal netherite"
+  NETHERITE_SWORD: "kleze netherite"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "patrom goveliañ"
+  OAK_BOAT: "bag derv"
+  OAK_CHEST_BOAT: "bag derv gant ur c'houfr"
+  OCELOT_SPAWN_EGG: "vi genel oselo"
+  ORANGE_DYE: "livadur orañjez"
+  PAINTING: "livouriezh"
+  PANDA_SPAWN_EGG: "vi genel panda"
+  PAPER: "paper"
+  PARROT_SPAWN_EGG: "vi genel peroked"
+  PHANTOM_MEMBRANE: "kroc'henenn dasmant"
+  PHANTOM_SPAWN_EGG: "vi genel tasmant"
+  PIG_SPAWN_EGG: "vi genel pemoc'h"
+  PIGLIN_BANNER_PATTERN: "patrom banniel"
+  PIGLIN_BANNER_PATTERN_DESC: "mojell"
+  PIGLIN_BRUTE_SPAWN_EGG: "vi genel piglin gouez"
+  PIGLIN_SPAWN_EGG: "vi genel piglin"
+  PILLAGER_SPAWN_EGG: "vi genel preizher"
+  PINK_DYE: "livadur roz"
+  PITCHER_POD: "klorenn jarlili"
+  PLENTY_POTTERY_SHARD: "darbod ar glad"
+  PLENTY_POTTERY_SHERD: "darbod ar glad"
+  POISONOUS_POTATO: "aval-douar ampoezonet"
+  POLAR_BEAR_SPAWN_EGG: "vi genel arzh gwenn"
+  POPPED_CHORUS_FRUIT: "frouezhenn gorus straket"
+  PORKCHOP: "kig-moc'h kriz"
+  POTATO: "aval-douar"
+  POTION: "braou"
+  POTION_EFFECT_AWKWARD: "braou direnkus"
+  POTION_EFFECT_EMPTY: "braou n'haller ket aozañ"
+  POTION_EFFECT_FIRE_RESISTANCE: "braou dalc'husted evit an tan"
+  POTION_EFFECT_HARMING: "braou freuz"
+  POTION_EFFECT_HEALING: "braou pareañ"
+  POTION_EFFECT_INVISIBILITY: "braou diweladusted"
+  POTION_EFFECT_LEAPING: "braou lammat"
+  POTION_EFFECT_LEVITATION: "braou nijal"
+  POTION_EFFECT_LUCK: "braou chañs"
+  POTION_EFFECT_MUNDANE: "braou ordinal"
+  POTION_EFFECT_NIGHT_VISION: "braou gweled en deñvalijenn"
+  POTION_EFFECT_POISON: "braou poeson"
+  POTION_EFFECT_REGENERATION: "braou empareañ"
+  POTION_EFFECT_SLOW_FALLING: "braou kouezhañ gorrek"
+  POTION_EFFECT_SLOWNESS: "braou gorregezh"
+  POTION_EFFECT_STRENGTH: "braou kreñvder"
+  POTION_EFFECT_SWIFTNESS: "braou primder"
+  POTION_EFFECT_THICK: "braou tev"
+  POTION_EFFECT_TURTLE_MASTER: "braou mestr ar boated"
+  POTION_EFFECT_WATER: "boutailhad dour"
+  POTION_EFFECT_WATER_BREATHING: "braou analañ dindan an dour"
+  POTION_EFFECT_WEAKNESS: "braou gwander"
+  POTTERY_SHARD_ARCHER: "darbod ar gwareger"
+  POTTERY_SHARD_ARMS_UP: "darbod an den"
+  POTTERY_SHARD_PRIZE: "darbod ar brageriz"
+  POTTERY_SHARD_SKULL: "darbod ar c'hlopenn"
+  POWDER_SNOW_BUCKET: "sailhad erc'h poultrek"
+  PRISMARINE_CRYSTALS: "strink prismarine"
+  PRISMARINE_SHARD: "lufr prismarine"
+  PRIZE_POTTERY_SHARD: "darbod ar brageriz"
+  PRIZE_POTTERY_SHERD: "darbod ar brageriz"
+  PUFFERFISH: "pesk-boul"
+  PUFFERFISH_BUCKET: "sailhad fugu"
+  PUFFERFISH_SPAWN_EGG: "vi genel pesk-boul"
+  PUMPKIN_PIE: "tartezenn sitrouilhez"
+  PUMPKIN_SEEDS: "greun sitrouilhez"
+  PURPLE_DYE: "livadur mouk"
+  QUARTZ: "kouarz an nether"
+  RABBIT: "kig-lapin kriz"
+  RABBIT_FOOT: "pav konikl"
+  RABBIT_HIDE: "kroc'hen konikl"
+  RABBIT_SPAWN_EGG: "vi genel konikl"
+  RABBIT_STEW: "ragoud konikl"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  RAVAGER_SPAWN_EGG: "vi genel draster"
+  RAW_COPPER: "kouevr kriz"
+  RAW_GOLD: "aour kriz"
+  RAW_IRON: "houarn kriz"
+  RECOVERY_COMPASS: "nadoz-vor adc'hounit"
+  RED_DYE: "livadenn ruz"
+  REDSTONE: "poultr redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  ROTTEN_FLESH: "kig brein"
+  SADDLE: "dibr"
+  SALMON: "eog kriz"
+  SALMON_BUCKET: "sailhad eog"
+  SALMON_SPAWN_EGG: "vi genel eoged"
+  SCUTE: "skant baot"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  SHEAF_POTTERY_SHARD: "darbod an ed"
+  SHEAF_POTTERY_SHERD: "darbod an ed"
+  SHEARS: "gweltre"
+  SHEEP_SPAWN_EGG: "vi genel dañvad"
+  SHELTER_POTTERY_SHARD: "darbod ar gwasked"
+  SHELTER_POTTERY_SHERD: "darbod ar gwasked"
+  SHIELD: "skoed"
+  SHIELD_BLACK: "skoed du"
+  SHIELD_BLUE: "skoed glas"
+  SHIELD_BROWN: "skoed gell"
+  SHIELD_CYAN: "skod sian"
+  SHIELD_GRAY: "skoed griz"
+  SHIELD_GREEN: "skoed gwer"
+  SHIELD_LIGHT_BLUE: "skoed glas sklaer"
+  SHIELD_LIGHT_GRAY: "skoed griz sklaer"
+  SHIELD_LIME: "skoed gwer-melen"
+  SHIELD_MAGENTA: "skoed limestra"
+  SHIELD_ORANGE: "skoed orañjez"
+  SHIELD_PINK: "skoed roz"
+  SHIELD_PURPLE: "skoed mouk"
+  SHIELD_RED: "skoed ruz"
+  SHIELD_WHITE: "skoed gwenn"
+  SHIELD_YELLOW: "skoed melen"
+  SHULKER_SHELL: "krogen shulker"
+  SHULKER_SPAWN_EGG: "vi genel shulker"
+  SIGN: "panell"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  SILVERFISH_SPAWN_EGG: "vi genel pesk-arc'hant"
+  SKELETON_HORSE_SPAWN_EGG: "vi genel marc'h skeledenn"
+  SKELETON_SPAWN_EGG: "vi genel skeledenn"
+  SKULL_BANNER_PATTERN: "patrom banniel"
+  SKULL_BANNER_PATTERN_DESC: "penn klopenn"
+  SKULL_POTTERY_SHARD: "darbod ar c'hlopenn"
+  SKULL_POTTERY_SHERD: "darbod ar c'hlopenn"
+  SLIME_BALL: "bolotenn slime"
+  SLIME_SPAWN_EGG: "vi genel slime"
+  SMITHING_TEMPLATE: "patrom goveliañ"
+  SMITHING_TEMPLATE_APPLIES_TO: "a vez lakaet war:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "ouzhpennit barenn pe kristal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "houarnwisk"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "ouzhpennañ ur pezh harnez"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "tolzennoù ha strink"
+  SMITHING_TEMPLATE_INGREDIENTS: "danvezioù:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "ouzhpennit barenn netherite"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "dafar diamantek"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "lakait un arm un ostilh pe harnez diamant"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "tolzenn netherite"
+  SMITHING_TEMPLATE_UPGRADE: "hizivaat: "
+  SNIFFER_SPAWN_EGG: "vi genel rufler"
+  SNORT_POTTERY_SHARD: "darbod ar rufler"
+  SNORT_POTTERY_SHERD: "darbod ar rufler"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  SNOW_GOLEM_SPAWN_EGG: "vi genel golem-erc'h"
+  SNOWBALL: "boulenn erc'h"
+  SPECTRAL_ARROW: "bir tasmantek"
+  SPIDER_EYE: "lagad kevnidenn"
+  SPIDER_SPAWN_EGG: "vi genel kevnidenn"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  SPLASH_POTION: "died taolus"
+  SPLASH_POTION_EFFECT_AWKWARD: "braou direnkus taoladus"
+  SPLASH_POTION_EFFECT_EMPTY: "braou taoladus n'haller ket aozañ"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "braou dalc'husted d'an tan taoladus"
+  SPLASH_POTION_EFFECT_HARMING: "braou freuz taoladus"
+  SPLASH_POTION_EFFECT_HEALING: "braou pareañ taoladus"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "braou diwelusted taoladus"
+  SPLASH_POTION_EFFECT_LEAPING: "braou lammat taoladus"
+  SPLASH_POTION_EFFECT_LEVITATION: "braou nijal taoladus"
+  SPLASH_POTION_EFFECT_LUCK: "braou chañs taoladus"
+  SPLASH_POTION_EFFECT_MUNDANE: "braou ordinal taoladus"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "braou gwelet en deñvalijenn taoladus"
+  SPLASH_POTION_EFFECT_POISON: "braou ampoezon taoladus"
+  SPLASH_POTION_EFFECT_REGENERATION: "braou empraeañ taoladus"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "braou strink kouezhañ gorrek"
+  SPLASH_POTION_EFFECT_SLOWNESS: "braou gorrekadur taoladus"
+  SPLASH_POTION_EFFECT_STRENGTH: "braou kreñvder taoladus"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "braou primder taoladus"
+  SPLASH_POTION_EFFECT_THICK: "braou tev taoladus"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "braou strink mestr ar boated"
+  SPLASH_POTION_EFFECT_WATER: "boutailhad dour taoladus"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "braou analañ en dour taoladus"
+  SPLASH_POTION_EFFECT_WEAKNESS: "braou gwander taoladus"
+  SPRUCE_BOAT: "bag pruñs"
+  SPRUCE_CHEST_BOAT: "bag sapr gant ur c'houfr"
+  SPYGLASS: "lunedenn hirwel"
+  SQUID_SPAWN_EGG: "vi genel stiogan"
+  STICK: "bazh"
+  STONE_AXE: "bouc'hal vaen"
+  STONE_HOE: "marr vaen"
+  STONE_PICKAXE: "pigell vaen"
+  STONE_SHOVEL: "pal vaen"
+  STONE_SWORD: "kleze maen"
+  STRAY_SPAWN_EGG: "vi genel kantreer"
+  STRIDER_SPAWN_EGG: "vi genel gaoliataer"
+  STRING: "neudenn"
+  SUGAR: "sukr"
+  SUSPICIOUS_STEW: "ragoud touellus"
+  SWEET_BERRIES: "skav sukret"
+  TADPOLE_BUCKET: "sailhad penndolog"
+  TADPOLE_SPAWN_EGG: "vi genel penndolog"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  TIPPED_ARROW: "bir gant efedoù"
+  TIPPED_ARROW_EFFECT_AWKWARD: "bir direnkus"
+  TIPPED_ARROW_EFFECT_EMPTY: "dibosupl d'ober ar bir gant efedoù"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "bir dalc'husted d'an tan"
+  TIPPED_ARROW_EFFECT_HARMING: "bir freuz"
+  TIPPED_ARROW_EFFECT_HEALING: "bir pareañ"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "bir diweladusted"
+  TIPPED_ARROW_EFFECT_LEAPING: "bir lammat"
+  TIPPED_ARROW_EFFECT_LEVITATION: "bir nijal"
+  TIPPED_ARROW_EFFECT_LUCK: "bir chañs"
+  TIPPED_ARROW_EFFECT_MUNDANE: "bir ordinal"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "bir gwelet en noz"
+  TIPPED_ARROW_EFFECT_POISON: "bir ampoezonet"
+  TIPPED_ARROW_EFFECT_REGENERATION: "bir empareañ"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "bir kouezhañ gorrek"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "bir gorrekadur"
+  TIPPED_ARROW_EFFECT_STRENGTH: "bir kreñvder"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "bir primder"
+  TIPPED_ARROW_EFFECT_THICK: "bir tev"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "bir mestr ar baoted"
+  TIPPED_ARROW_EFFECT_WATER: "bir strinkañ"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "bir analañ dindan an dour"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "bir gwander"
+  TNT_MINECART: "bagon vengleuz gant tnt"
+  TORCHFLOWER_SEEDS: "greun bleuñv-flamm"
+  TOTEM_OF_UNDYING: "totem an divarvelezh"
+  TRADER_LLAMA_SPAWN_EGG: "vi genel lama marc'hadour"
+  TRIAL_KEY: "alc'hwez an daeoù"
+  TRIDENT: "tridant"
+  TROPICAL_FISH: "pesk trovanel"
+  TROPICAL_FISH_BUCKET: "sailhad pesk trovanel"
+  TROPICAL_FISH_SPAWN_EGG: "vi genel pesk trovanel"
+  TURTLE_HELMET: "krogenn vaot"
+  TURTLE_SPAWN_EGG: "vi genel baot"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  VEX_SPAWN_EGG: "vi genel vex"
+  VILLAGER_SPAWN_EGG: "vi genel kêriadenner"
+  VINDICATOR_SPAWN_EGG: "vi ganerez gourvenner"
+  WANDERING_TRADER_SPAWN_EGG: "vi genel marc'hadour kantreer"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  WARDEN_SPAWN_EGG: "vi genel warden"
+  WARPED_FUNGUS_ON_A_STICK: "kabell-touseg disleber war ur vazh"
+  WATER_BUCKET: "sailh dour"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  WHEAT: "ed"
+  WHEAT_SEEDS: "greun ed"
+  WHITE_DYE: "livadur gwenn"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "patrom goveliañ"
+  WITCH_SPAWN_EGG: "vi genel sorserez"
+  WITHER_SKELETON_SPAWN_EGG: "vi genel skeledenn wither"
+  WITHER_SPAWN_EGG: "vi genel wither"
+  WOLF_SPAWN_EGG: "vi genel bleiz"
+  WOODEN_AXE: "bouc'hal goad"
+  WOODEN_HOE: "marr goad"
+  WOODEN_PICKAXE: "pigell goad"
+  WOODEN_SHOVEL: "pal goad"
+  WOODEN_SWORD: "kleze koad"
+  WRITABLE_BOOK: "levr ha pluenn"
+  WRITTEN_BOOK: "levr skrivet"
+  YELLOW_DYE: "livadur melen"
+  ZOGLIN_SPAWN_EGG: "vi genel zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "vi ganerez kezeg zombi"
+  ZOMBIE_SPAWN_EGG: "vi ganerez zombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "vi genel kêriadennad zombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "vi genel piglin zombifiet"
+  CHEST: "war ar c'horf:"
+  FEET: "war an treid:"
+  HEAD: "war ar penn:"
+  LEGS: "war an divc'har:"
+  MAINHAND: "en dorn pennañ:"
+  OFFHAND: "en eil dorn:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akasiuknøttur"
+  ACACIA_DOOR: "akasiuhurð"
+  ACACIA_FENCE: "akasiugirðing"
+  ACACIA_FENCE_GATE: "akasiugrind"
+  ACACIA_HANGING_SIGN: "acacia hanging sign"
+  ACACIA_LEAVES: "akasiubløð"
+  ACACIA_LOG: "akasiustokkur"
+  ACACIA_PLANKS: "akasiuplankar"
+  ACACIA_PRESSURE_PLATE: "akasiutrýstpláta"
+  ACACIA_SAPLING: "ungt akasiutræ"
+  ACACIA_SIGN: "akasiuskelti"
+  ACACIA_SLAB: "akasiupláta"
+  ACACIA_STAIRS: "akasiutrappa"
+  ACACIA_TRAPDOOR: "akasiulemmur"
+  ACACIA_WALL_HANGING_SIGN: "acacia wall hanging sign"
+  ACACIA_WALL_SIGN: "akasiuveggskelti"
+  ACACIA_WOOD: "akasiuviður"
+  ACTIVATOR_RAIL: "virkingarskinnari"
+  AIR: "luft"
+  ALLIUM: "leykur"
+  AMETHYST_BLOCK: "ametystkubbi"
+  AMETHYST_CLUSTER: "hópur av ametyst"
+  ANCIENT_DEBRIS: "fornar leivdir"
+  ANDESITE: "andesitt"
+  ANDESITE_SLAB: "andesittpláta"
+  ANDESITE_STAIRS: "andesitttrappa"
+  ANDESITE_WALL: "andesittveggur"
+  ANVIL: "amboltur"
+  ATTACHED_MELON_STEM: "festur vatnmelónstelkur"
+  ATTACHED_PUMPKIN_STEM: "festur graskerjastelkur"
+  AZALEA: "asalea"
+  AZALEA_LEAVES: "asaleubløð"
+  AZURE_BLUET: "blá postalínsblóma"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "block of bamboo"
+  BAMBOO_BUTTON: "bamboo button"
+  BAMBOO_DOOR: "bamboo door"
+  BAMBOO_FENCE: "bamboo fence"
+  BAMBOO_FENCE_GATE: "bamboo fence gate"
+  BAMBOO_HANGING_SIGN: "bamboo hanging sign"
+  BAMBOO_MOSAIC: "bamboo mosaic"
+  BAMBOO_MOSAIC_SLAB: "bamboo mosaic slab"
+  BAMBOO_MOSAIC_STAIRS: "bamboo mosaic stairs"
+  BAMBOO_PLANKS: "bamboo planks"
+  BAMBOO_PRESSURE_PLATE: "bamboo pressure plate"
+  BAMBOO_SAPLING: "bambussproti"
+  BAMBOO_SIGN: "bamboo sign"
+  BAMBOO_SLAB: "bamboo slab"
+  BAMBOO_STAIRS: "bamboo stairs"
+  BAMBOO_TRAPDOOR: "bamboo trapdoor"
+  BAMBOO_WALL_HANGING_SIGN: "bamboo wall hanging sign"
+  BAMBOO_WALL_SIGN: "bamboo wall sign"
+  BANNER_BASE_BLACK: "fully black field"
+  BANNER_BASE_BLUE: "fully blue field"
+  BANNER_BASE_BROWN: "fully brown field"
+  BANNER_BASE_CYAN: "fully cyan field"
+  BANNER_BASE_GRAY: "fully gray field"
+  BANNER_BASE_GREEN: "fully green field"
+  BANNER_BASE_LIGHT_BLUE: "fully light blue field"
+  BANNER_BASE_LIGHT_GRAY: "fully light gray field"
+  BANNER_BASE_LIME: "fully lime field"
+  BANNER_BASE_MAGENTA: "fully magenta field"
+  BANNER_BASE_ORANGE: "fully orange field"
+  BANNER_BASE_PINK: "fully pink field"
+  BANNER_BASE_PURPLE: "fully purple field"
+  BANNER_BASE_RED: "fully red field"
+  BANNER_BASE_WHITE: "fully white field"
+  BANNER_BASE_YELLOW: "fully yellow field"
+  BANNER_BORDER_BLACK: "svartur bordi"
+  BANNER_BORDER_BLUE: "bláur bordi"
+  BANNER_BORDER_BROWN: "brúnur bordi"
+  BANNER_BORDER_CYAN: "blágrønur bordi"
+  BANNER_BORDER_GRAY: "gráur bordi"
+  BANNER_BORDER_GREEN: "grønur bordi"
+  BANNER_BORDER_LIGHT_BLUE: "ljósabláur bordi"
+  BANNER_BORDER_LIGHT_GRAY: "ljósagráur bordi"
+  BANNER_BORDER_LIME: "leimgrønur bordi"
+  BANNER_BORDER_MAGENTA: "viólreyður bordi"
+  BANNER_BORDER_ORANGE: "appilsingulur bordi"
+  BANNER_BORDER_PINK: "ljósareyður bordi"
+  BANNER_BORDER_PURPLE: "lilla bordi"
+  BANNER_BORDER_RED: "reyður bordi"
+  BANNER_BORDER_WHITE: "hvítur bordi"
+  BANNER_BORDER_YELLOW: "gulur bordi"
+  BANNER_BRICKS_BLACK: "svart múrsteinsmynstur"
+  BANNER_BRICKS_BLUE: "blátt múrsteinsmynstur"
+  BANNER_BRICKS_BROWN: "brúnt múrsteinsmynstur"
+  BANNER_BRICKS_CYAN: "blágrønt múrsteinsmynstur"
+  BANNER_BRICKS_GRAY: "grátt múrsteinsmynstur"
+  BANNER_BRICKS_GREEN: "grønt múrsteinsmynstur"
+  BANNER_BRICKS_LIGHT_BLUE: "ljósablátt múrsteinsmynstur"
+  BANNER_BRICKS_LIGHT_GRAY: "ljósagrátt múrsteinsmynstur"
+  BANNER_BRICKS_LIME: "leimgrønt múrsteinsmynstur"
+  BANNER_BRICKS_MAGENTA: "viólreytt múrsteinsmynstur"
+  BANNER_BRICKS_ORANGE: "appilsingult múrsteinsmynstur"
+  BANNER_BRICKS_PINK: "ljósareytt múrsteinsmynstur"
+  BANNER_BRICKS_PURPLE: "lilla múrsteinsmynstur"
+  BANNER_BRICKS_RED: "reytt múrsteinsmynstur"
+  BANNER_BRICKS_WHITE: "hvítt múrsteinsmynstur"
+  BANNER_BRICKS_YELLOW: "gult múrsteinsmynstur"
+  BANNER_CIRCLE_BLACK: "svartur rundingur"
+  BANNER_CIRCLE_BLUE: "bláur rundingur"
+  BANNER_CIRCLE_BROWN: "brúnur rundingur"
+  BANNER_CIRCLE_CYAN: "blágrønur rundingur"
+  BANNER_CIRCLE_GRAY: "gráur rundingur"
+  BANNER_CIRCLE_GREEN: "grønur rundingur"
+  BANNER_CIRCLE_LIGHT_BLUE: "ljósabláur rundingur"
+  BANNER_CIRCLE_LIGHT_GRAY: "ljósagráur rundingur"
+  BANNER_CIRCLE_LIME: "leimgrønur rundingur"
+  BANNER_CIRCLE_MAGENTA: "viólreyður rundingur"
+  BANNER_CIRCLE_ORANGE: "appilsingulur rundingur"
+  BANNER_CIRCLE_PINK: "ljósareyður rundingur"
+  BANNER_CIRCLE_PURPLE: "lilla rundingur"
+  BANNER_CIRCLE_RED: "reyður rundingur"
+  BANNER_CIRCLE_WHITE: "hvítur rundingur"
+  BANNER_CIRCLE_YELLOW: "gulur rundingur"
+  BANNER_CREEPER_BLACK: "svartur creeper"
+  BANNER_CREEPER_BLUE: "bláur creeper"
+  BANNER_CREEPER_BROWN: "brúnur creeper"
+  BANNER_CREEPER_CYAN: "blágrønur creeper"
+  BANNER_CREEPER_GRAY: "gráur creeper"
+  BANNER_CREEPER_GREEN: "grønur krúpari"
+  BANNER_CREEPER_LIGHT_BLUE: "ljósabláur creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "ljósagráur creeper"
+  BANNER_CREEPER_LIME: "leimgrønur creeper"
+  BANNER_CREEPER_MAGENTA: "viólreyður creeper"
+  BANNER_CREEPER_ORANGE: "appilsingulur creeper"
+  BANNER_CREEPER_PINK: "ljósareyður creeper"
+  BANNER_CREEPER_PURPLE: "lilla creeper"
+  BANNER_CREEPER_RED: "reyður krúpari"
+  BANNER_CREEPER_WHITE: "hvítur creeper"
+  BANNER_CREEPER_YELLOW: "gulur creeper"
+  BANNER_CROSS_BLACK: "svartur krossur"
+  BANNER_CROSS_BLUE: "bláur krossur"
+  BANNER_CROSS_BROWN: "brúnur krossur"
+  BANNER_CROSS_CYAN: "blágrønur krossur"
+  BANNER_CROSS_GRAY: "gráur krossur"
+  BANNER_CROSS_GREEN: "grønur krossur"
+  BANNER_CROSS_LIGHT_BLUE: "ljósabláur krossur"
+  BANNER_CROSS_LIGHT_GRAY: "ljósagráur krossur"
+  BANNER_CROSS_LIME: "leimgrønur krossur"
+  BANNER_CROSS_MAGENTA: "viólreyður krossur"
+  BANNER_CROSS_ORANGE: "appilsingulur krossur"
+  BANNER_CROSS_PINK: "ljósareyður krossur"
+  BANNER_CROSS_PURPLE: "lilla krossur"
+  BANNER_CROSS_RED: "reyður krossur"
+  BANNER_CROSS_WHITE: "hvítur krossur"
+  BANNER_CROSS_YELLOW: "gulur krossur"
+  BANNER_CURLY_BORDER_BLACK: "svartur bordi við kantum"
+  BANNER_CURLY_BORDER_BLUE: "bláur bordi við kantum"
+  BANNER_CURLY_BORDER_BROWN: "brúnur bordi við kantum"
+  BANNER_CURLY_BORDER_CYAN: "blágrønur bordi við kantum"
+  BANNER_CURLY_BORDER_GRAY: "gráur bordi við kantum"
+  BANNER_CURLY_BORDER_GREEN: "grønur bordi við kantum"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "ljósabláur bordi við kantum"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "ljósagráur bordi við kantum"
+  BANNER_CURLY_BORDER_LIME: "leimgrønur bordi við kantum"
+  BANNER_CURLY_BORDER_MAGENTA: "viólreyður bordi við kantum"
+  BANNER_CURLY_BORDER_ORANGE: "appilsingulur bordi við kantum"
+  BANNER_CURLY_BORDER_PINK: "ljósareyður bordi við kantum"
+  BANNER_CURLY_BORDER_PURPLE: "lilla bordi við kantum"
+  BANNER_CURLY_BORDER_RED: "reyður bordi við kantum"
+  BANNER_CURLY_BORDER_WHITE: "hvítur bordi við kantum"
+  BANNER_CURLY_BORDER_YELLOW: "gulur bordi við kantum"
+  BANNER_DIAGONAL_LEFT_BLACK: "svartur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_BLUE: "bláur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_BROWN: "brúnur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_CYAN: "blágrønur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_GRAY: "gráur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_GREEN: "grønur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "ljósabláur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "ljósagráur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_LIME: "leimgrønur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "viólreyður tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_ORANGE: "appilsingulur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_PINK: "ljósareyður tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lilla tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_RED: "reyður tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_WHITE: "hvítur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gulur tríkantur uppi til vinstur"
+  BANNER_DIAGONAL_RIGHT_BLACK: "svartur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_BLUE: "bláur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brúnur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_CYAN: "blágrønur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_GRAY: "gráur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_GREEN: "grønur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "ljósabláur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "ljósagráur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_LIME: "leimgrønur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "viólreyður tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "appilsingulur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_PINK: "ljósareyður tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lilla tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_RED: "reyður tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_WHITE: "hvítur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gulur tríkantur uppi til høgru"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "svartur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "bláur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brúnur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "blágrønur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "gráur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "grønur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "ljósabláur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "ljósagráur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "leimgrønur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "viólreyður tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "appilsingulur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "ljósareyður tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lilla tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_RED: "reyður tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "hvítur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gulur tríkantur niðri til vinstru"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "svartur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "bláur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brúnur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "blágrønur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "gráur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "grønur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "ljósabláur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "ljósagráur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "leimgrønur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "viólreyður tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "appilsingulur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "ljósareyður tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lilla tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "reyður tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "hvítur tríkantur niðri til høgru"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gulur tríkantur niðri til høgru"
+  BANNER_FLOWER_BLACK: "svørt blóma"
+  BANNER_FLOWER_BLUE: "blá blóma"
+  BANNER_FLOWER_BROWN: "brún blóma"
+  BANNER_FLOWER_CYAN: "blágrøn blóma"
+  BANNER_FLOWER_GRAY: "grá blóma"
+  BANNER_FLOWER_GREEN: "grøn blóma"
+  BANNER_FLOWER_LIGHT_BLUE: "ljósablá blóma"
+  BANNER_FLOWER_LIGHT_GRAY: "ljósagrá blóma"
+  BANNER_FLOWER_LIME: "leimgrøn blóma"
+  BANNER_FLOWER_MAGENTA: "viólreyð blóma"
+  BANNER_FLOWER_ORANGE: "appilsingul blóma"
+  BANNER_FLOWER_PINK: "ljósareyð blóma"
+  BANNER_FLOWER_PURPLE: "lilla blóma"
+  BANNER_FLOWER_RED: "reyð blóma"
+  BANNER_FLOWER_WHITE: "hvít blóma"
+  BANNER_FLOWER_YELLOW: "gul blóma"
+  BANNER_GLOBE_BLACK: "svørt globus"
+  BANNER_GLOBE_BLUE: "blá globus"
+  BANNER_GLOBE_BROWN: "brún globus"
+  BANNER_GLOBE_CYAN: "blágrøn globus"
+  BANNER_GLOBE_GRAY: "grá globus"
+  BANNER_GLOBE_GREEN: "grøn globus"
+  BANNER_GLOBE_LIGHT_BLUE: "ljósablá globus"
+  BANNER_GLOBE_LIGHT_GRAY: "ljósagrá globus"
+  BANNER_GLOBE_LIME: "ljósagrøn globus"
+  BANNER_GLOBE_MAGENTA: "viólreyð globus"
+  BANNER_GLOBE_ORANGE: "appilsingul globus"
+  BANNER_GLOBE_PINK: "ljósareyð globus"
+  BANNER_GLOBE_PURPLE: "lillað globus"
+  BANNER_GLOBE_RED: "reyð globus"
+  BANNER_GLOBE_WHITE: "hvít globus"
+  BANNER_GLOBE_YELLOW: "gul globus"
+  BANNER_GRADIENT_BLACK: "svatur hallvinkul"
+  BANNER_GRADIENT_BLUE: "bláur hallvinkul"
+  BANNER_GRADIENT_BROWN: "brúnur hallvinkul"
+  BANNER_GRADIENT_CYAN: "blágrønur hallvinkul"
+  BANNER_GRADIENT_GRAY: "gráur hallvinkul"
+  BANNER_GRADIENT_GREEN: "grønur hallvinkul"
+  BANNER_GRADIENT_LIGHT_BLUE: "ljósabláur hallvinkul"
+  BANNER_GRADIENT_LIGHT_GRAY: "ljósagráur hallvinkul"
+  BANNER_GRADIENT_LIME: "leimgrønur hallvinkul"
+  BANNER_GRADIENT_MAGENTA: "viólreyður hallvinkul"
+  BANNER_GRADIENT_ORANGE: "appilsingulur hallvinkul"
+  BANNER_GRADIENT_PINK: "ljósareyður hallvinkul"
+  BANNER_GRADIENT_PURPLE: "lilla hallvinkul"
+  BANNER_GRADIENT_RED: "reyður hallvinkul"
+  BANNER_GRADIENT_WHITE: "hvítur hallvinkul"
+  BANNER_GRADIENT_YELLOW: "gulur hallvinkul"
+  BANNER_GRADIENT_UP_BLACK: "svartur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_BLUE: "bláur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_BROWN: "brúnur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_CYAN: "blágrønur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_GRAY: "gráur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_GREEN: "grønur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "ljósabláur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "ljósagráur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_LIME: "leimgrønur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_MAGENTA: "viólreyður hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_ORANGE: "appilsingulur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_PINK: "ljósareyður hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_PURPLE: "lilla hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_RED: "reyður hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_WHITE: "hvítur hallvinkul niðanífrá"
+  BANNER_GRADIENT_UP_YELLOW: "gulur hallvinkul niðanífrá"
+  BANNER_HALF_HORIZONTAL_BLACK: "svartur ovaripartur"
+  BANNER_HALF_HORIZONTAL_BLUE: "bláur ovaripartur"
+  BANNER_HALF_HORIZONTAL_BROWN: "brúnur ovaripartur"
+  BANNER_HALF_HORIZONTAL_CYAN: "blágrønur ovaripartur"
+  BANNER_HALF_HORIZONTAL_GRAY: "gráur ovaripartur"
+  BANNER_HALF_HORIZONTAL_GREEN: "grønur ovaripartur"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "ljósabláur ovaripartur"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "ljósagráur ovaripartur"
+  BANNER_HALF_HORIZONTAL_LIME: "leimgrønur ovaripartur"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "viólreyður ovaripartur"
+  BANNER_HALF_HORIZONTAL_ORANGE: "appilsingulur ovaripartur"
+  BANNER_HALF_HORIZONTAL_PINK: "ljósareyður ovaripartur"
+  BANNER_HALF_HORIZONTAL_PURPLE: "lilla ovaripartur"
+  BANNER_HALF_HORIZONTAL_RED: "reyður ovaripartur"
+  BANNER_HALF_HORIZONTAL_WHITE: "hvítur ovaripartur"
+  BANNER_HALF_HORIZONTAL_YELLOW: "gulur ovaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "svartur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "bláur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brúnur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "blágrønur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "gráur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "grønur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "ljósabláur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "ljósagráur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "leimgrønur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "viólreyður niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "appilsingulur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "ljósareyður niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "lilla niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "reyður niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "hvítur niðaripartur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "gulur niðaripartur"
+  BANNER_HALF_VERTICAL_BLACK: "svørt vinstrisíða"
+  BANNER_HALF_VERTICAL_BLUE: "blá vinstrisíða"
+  BANNER_HALF_VERTICAL_BROWN: "brún vinstrisíða"
+  BANNER_HALF_VERTICAL_CYAN: "blágrøn vinstrisíða"
+  BANNER_HALF_VERTICAL_GRAY: "grá vinstrisíða"
+  BANNER_HALF_VERTICAL_GREEN: "grøn vinstrisíða"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "ljósablá vinstrisíða"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "ljósagrá vinstrisíða"
+  BANNER_HALF_VERTICAL_LIME: "leimgrøn vinstrisíða"
+  BANNER_HALF_VERTICAL_MAGENTA: "viólreyð vinstrisíða"
+  BANNER_HALF_VERTICAL_ORANGE: "appilsingul vinstrisíða"
+  BANNER_HALF_VERTICAL_PINK: "ljósareyð vinstrisíða"
+  BANNER_HALF_VERTICAL_PURPLE: "lilla vinstrisíða"
+  BANNER_HALF_VERTICAL_RED: "reyð vinstrisíða"
+  BANNER_HALF_VERTICAL_WHITE: "hvít vinstrisíða"
+  BANNER_HALF_VERTICAL_YELLOW: "gul vinstrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "svørt høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blá høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brún høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "blágrøn høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grá høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "grøn høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "ljósablá høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "ljósagrá høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "leimgrøn høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "viólreyð høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "appilsingul høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "ljósareyð høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "lilla høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "reyð høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "hvít høgrisíða"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "gul høgrisíða"
+  BANNER_MOJANG_BLACK: "svartur lutur"
+  BANNER_MOJANG_BLUE: "bláur lutur"
+  BANNER_MOJANG_BROWN: "brúnur lutur"
+  BANNER_MOJANG_CYAN: "blágrønur lutur"
+  BANNER_MOJANG_GRAY: "gráur lutur"
+  BANNER_MOJANG_GREEN: "grønur lutur"
+  BANNER_MOJANG_LIGHT_BLUE: "ljósabláur lutur"
+  BANNER_MOJANG_LIGHT_GRAY: "ljósagráur lutur"
+  BANNER_MOJANG_LIME: "leimgrønur lutur"
+  BANNER_MOJANG_MAGENTA: "viólreyður lutur"
+  BANNER_MOJANG_ORANGE: "appilsingulur lutur"
+  BANNER_MOJANG_PINK: "ljósareyður lutur"
+  BANNER_MOJANG_PURPLE: "lilla lutur"
+  BANNER_MOJANG_RED: "reyður lutur"
+  BANNER_MOJANG_WHITE: "hvítur lutur"
+  BANNER_MOJANG_YELLOW: "gulur lutur"
+  BANNER_PIGLIN_BLACK: "svartur snúti"
+  BANNER_PIGLIN_BLUE: "bláur snúti"
+  BANNER_PIGLIN_BROWN: "brúnur snúti"
+  BANNER_PIGLIN_CYAN: "blágrønur snúti"
+  BANNER_PIGLIN_GRAY: "gráur snúti"
+  BANNER_PIGLIN_GREEN: "grønur snúti"
+  BANNER_PIGLIN_LIGHT_BLUE: "ljósablaúr snúti"
+  BANNER_PIGLIN_LIGHT_GRAY: "ljósagráur snúti"
+  BANNER_PIGLIN_LIME: "leimgrønur snúti"
+  BANNER_PIGLIN_MAGENTA: "violreyður snúti"
+  BANNER_PIGLIN_ORANGE: "reyðgulur snúti"
+  BANNER_PIGLIN_PINK: "ljósareyður snúti"
+  BANNER_PIGLIN_PURPLE: "lilla snúti"
+  BANNER_PIGLIN_RED: "reyður snúti"
+  BANNER_PIGLIN_WHITE: "hvítur snúti"
+  BANNER_PIGLIN_YELLOW: "gulur snúti"
+  BANNER_RHOMBUS_BLACK: "svørt romba"
+  BANNER_RHOMBUS_BLUE: "blá romba"
+  BANNER_RHOMBUS_BROWN: "brún romba"
+  BANNER_RHOMBUS_CYAN: "blágrøn romba"
+  BANNER_RHOMBUS_GRAY: "grá romba"
+  BANNER_RHOMBUS_GREEN: "grøn romba"
+  BANNER_RHOMBUS_LIGHT_BLUE: "ljósablá romba"
+  BANNER_RHOMBUS_LIGHT_GRAY: "ljósagrá romba"
+  BANNER_RHOMBUS_LIME: "leimgrøn romba"
+  BANNER_RHOMBUS_MAGENTA: "viólreyð romba"
+  BANNER_RHOMBUS_ORANGE: "appilsingul romba"
+  BANNER_RHOMBUS_PINK: "ljósareyð romba"
+  BANNER_RHOMBUS_PURPLE: "lilla romba"
+  BANNER_RHOMBUS_RED: "reyð romba"
+  BANNER_RHOMBUS_WHITE: "hvít romba"
+  BANNER_RHOMBUS_YELLOW: "gul romba"
+  BANNER_SKULL_BLACK: "svørt beinagrind"
+  BANNER_SKULL_BLUE: "blá beinagrind"
+  BANNER_SKULL_BROWN: "brún beinagrind"
+  BANNER_SKULL_CYAN: "blágrøn beinagrind"
+  BANNER_SKULL_GRAY: "grá beinagrind"
+  BANNER_SKULL_GREEN: "grøn beinagrind"
+  BANNER_SKULL_LIGHT_BLUE: "ljósablá beinagrind"
+  BANNER_SKULL_LIGHT_GRAY: "ljósagrá beinagrind"
+  BANNER_SKULL_LIME: "leimgrøn beinagrind"
+  BANNER_SKULL_MAGENTA: "viólreyð beinagrind"
+  BANNER_SKULL_ORANGE: "appilsingul beinagrind"
+  BANNER_SKULL_PINK: "ljósareyð beinagrind"
+  BANNER_SKULL_PURPLE: "lilla beinagrind"
+  BANNER_SKULL_RED: "reyð beinagrind"
+  BANNER_SKULL_WHITE: "hvít beinagrind"
+  BANNER_SKULL_YELLOW: "gul beinagrind"
+  BANNER_SMALL_STRIPES_BLACK: "svartar grindir"
+  BANNER_SMALL_STRIPES_BLUE: "bláar grindir"
+  BANNER_SMALL_STRIPES_BROWN: "brúnar grindir"
+  BANNER_SMALL_STRIPES_CYAN: "blágrønar grindir"
+  BANNER_SMALL_STRIPES_GRAY: "gráar grindir"
+  BANNER_SMALL_STRIPES_GREEN: "grønar grindir"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "ljósabláar grindir"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "ljósagráar grindir"
+  BANNER_SMALL_STRIPES_LIME: "leimgrønar grindir"
+  BANNER_SMALL_STRIPES_MAGENTA: "viólreyðar grindir"
+  BANNER_SMALL_STRIPES_ORANGE: "appilsingular grindir"
+  BANNER_SMALL_STRIPES_PINK: "ljósareyðar grindir"
+  BANNER_SMALL_STRIPES_PURPLE: "lilla grindir"
+  BANNER_SMALL_STRIPES_RED: "reyðar grindir"
+  BANNER_SMALL_STRIPES_WHITE: "hvítar grindir"
+  BANNER_SMALL_STRIPES_YELLOW: "gular grindir"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "svartur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "bláur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "brúnur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "blágrønur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "gráur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "grønur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "ljósagráur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "ljósagráur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "leimgrønur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "viólreyður fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "appilsingulur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "ljósareyður fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lilla fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "reyður fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "hvítur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gulur fýrakantur niðast til vinstru"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "svartur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "bláur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brúnur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "blágrønur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "gráur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "grønur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "ljósabláur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "ljósagráur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "leimgrønur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "viólreyður fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "appilsingulur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "ljósareyður fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lilla fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "reyður fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "hvítur fýrakantur niðast til høgru"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gulur fýrakantur niðast til høgru"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "svartur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "bláur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "brúnur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "blágrønu fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "gráur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "grønur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "ljósabláur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "ljósagráur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_LIME: "leimgrønur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "viólreyður fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "appilsingulur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_PINK: "ljósareyður fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lilla fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_RED: "reyður fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "hvítur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gulur fýrakantur uppi til vinstru"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "svartur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "bláur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brúnur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "blágrønur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "gráur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "grønur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "ljósabláur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "ljósagráur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "leimgrønur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "viólreyður fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "appilsingulur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "ljósareyður fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lilla fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_RED: "reyður fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "hvítur fýrakantur uppi til høgru"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gulur fýrakantur uppi til høgru"
+  BANNER_STRAIGHT_CROSS_BLACK: "svartur krossur"
+  BANNER_STRAIGHT_CROSS_BLUE: "bláur krossur"
+  BANNER_STRAIGHT_CROSS_BROWN: "brúnur krossur"
+  BANNER_STRAIGHT_CROSS_CYAN: "blágrønur krossur"
+  BANNER_STRAIGHT_CROSS_GRAY: "gráur krossur"
+  BANNER_STRAIGHT_CROSS_GREEN: "grønur krossur"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "ljósabláur krossur"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "ljósagráur krossur"
+  BANNER_STRAIGHT_CROSS_LIME: "leimgrønur krossur"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "viólreyður krossur"
+  BANNER_STRAIGHT_CROSS_ORANGE: "appilsingulur krossur"
+  BANNER_STRAIGHT_CROSS_PINK: "ljósareyður krossur"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lilla krossur"
+  BANNER_STRAIGHT_CROSS_RED: "reyður krossur"
+  BANNER_STRAIGHT_CROSS_WHITE: "hvítur krossur"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gulur krossur"
+  BANNER_STRIPE_BOTTOM_BLACK: "svørt grund"
+  BANNER_STRIPE_BOTTOM_BLUE: "blá grund"
+  BANNER_STRIPE_BOTTOM_BROWN: "brún grund"
+  BANNER_STRIPE_BOTTOM_CYAN: "blágrøn grund"
+  BANNER_STRIPE_BOTTOM_GRAY: "grá grund"
+  BANNER_STRIPE_BOTTOM_GREEN: "grøn grund"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "ljósablá grund"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "ljósagrá grund"
+  BANNER_STRIPE_BOTTOM_LIME: "ljósagrøn grund"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "viólreyð grund"
+  BANNER_STRIPE_BOTTOM_ORANGE: "appilsingul grund"
+  BANNER_STRIPE_BOTTOM_PINK: "ljósareyð grund"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lilla grund"
+  BANNER_STRIPE_BOTTOM_RED: "reyð grund"
+  BANNER_STRIPE_BOTTOM_WHITE: "hvít grund"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gul grund"
+  BANNER_STRIPE_CENTER_BLACK: "svart loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_BLUE: "blátt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_BROWN: "brúnt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_CYAN: "blágrønt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_GRAY: "grátt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_GREEN: "grønt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "ljósablátt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "ljósagrátt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_LIME: "leimgrønt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_MAGENTA: "viólreytt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_ORANGE: "appilsingult loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_PINK: "ljósareytt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_PURPLE: "lilla loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_RED: "reytt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_WHITE: "hvítt loddrætt í miðjuni"
+  BANNER_STRIPE_CENTER_YELLOW: "gult loddrætt í miðjuni"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "svart øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blátt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brúnt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "blágrønt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "grátt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "grønt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "ljósablátt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "ljósagrátt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_LIME: "leimgrønt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "viólreytt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "appilsingult øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_PINK: "ljósareytt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lilla øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_RED: "reytt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "hvítt øvut diagonalt"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gult øvut diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "svart diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blátt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brúnt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "blágrønt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "grátt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "grønt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "ljósablátt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "ljósagrátt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "leimgrønt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "viólreytt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "appilsingult diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "ljósareytt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lilla diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_RED: "reytt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "hvítt diagonalt"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gult diagonalt"
+  BANNER_STRIPE_LEFT_BLACK: "svart vinstru megin"
+  BANNER_STRIPE_LEFT_BLUE: "blátt vinstru megin"
+  BANNER_STRIPE_LEFT_BROWN: "brúnt vinstru megin"
+  BANNER_STRIPE_LEFT_CYAN: "blágrønt vinstru megin"
+  BANNER_STRIPE_LEFT_GRAY: "grátt vinstru megin"
+  BANNER_STRIPE_LEFT_GREEN: "grønt vinstru megin"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "ljósablátt vinstru megin"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "ljósagrátt vinstru megin"
+  BANNER_STRIPE_LEFT_LIME: "leimgrønt vinstru megin"
+  BANNER_STRIPE_LEFT_MAGENTA: "viólreytt vinstru megin"
+  BANNER_STRIPE_LEFT_ORANGE: "appilsingult vinstru megin"
+  BANNER_STRIPE_LEFT_PINK: "ljósareytt vinstru megin"
+  BANNER_STRIPE_LEFT_PURPLE: "lilla vinstru megin"
+  BANNER_STRIPE_LEFT_RED: "reytt vinstru megin"
+  BANNER_STRIPE_LEFT_WHITE: "hvítt vinstru megin"
+  BANNER_STRIPE_LEFT_YELLOW: "gult vinstru megin"
+  BANNER_STRIPE_MIDDLE_BLACK: "svart vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_BLUE: "blátt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_BROWN: "brúnt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_CYAN: "blágrønt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_GRAY: "grátt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_GREEN: "grønt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "ljósablátt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "ljósagrátt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_LIME: "leimgrønt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "viólreytt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_ORANGE: "appilsingult vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_PINK: "ljósareytt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lilla vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_RED: "reytt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_WHITE: "hvítt vatnrætt í miðjuni"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gult vatnrætt í miðjuni"
+  BANNER_STRIPE_RIGHT_BLACK: "svart til høgru"
+  BANNER_STRIPE_RIGHT_BLUE: "blátt til høgru"
+  BANNER_STRIPE_RIGHT_BROWN: "brúnt til høgru"
+  BANNER_STRIPE_RIGHT_CYAN: "blágrønt til høgru"
+  BANNER_STRIPE_RIGHT_GRAY: "grátt til høgru"
+  BANNER_STRIPE_RIGHT_GREEN: "grønt til høgru"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "ljósablátt til høgru"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "ljósagrátt til høgru"
+  BANNER_STRIPE_RIGHT_LIME: "leimgrønt til høgru"
+  BANNER_STRIPE_RIGHT_MAGENTA: "viólreytt til høgru"
+  BANNER_STRIPE_RIGHT_ORANGE: "appilsingult til høgru"
+  BANNER_STRIPE_RIGHT_PINK: "ljósareytt til høgru"
+  BANNER_STRIPE_RIGHT_PURPLE: "lilla til høgru"
+  BANNER_STRIPE_RIGHT_RED: "reytt til høgru"
+  BANNER_STRIPE_RIGHT_WHITE: "hvítt til høgru"
+  BANNER_STRIPE_RIGHT_YELLOW: "gult til høgru"
+  BANNER_STRIPE_TOP_BLACK: "svartur toppur"
+  BANNER_STRIPE_TOP_BLUE: "bláur toppur"
+  BANNER_STRIPE_TOP_BROWN: "brúnur toppur"
+  BANNER_STRIPE_TOP_CYAN: "blágrønur toppur"
+  BANNER_STRIPE_TOP_GRAY: "gráur toppur"
+  BANNER_STRIPE_TOP_GREEN: "grønur toppur"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "ljósabláur toppur"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "ljósagráur toppur"
+  BANNER_STRIPE_TOP_LIME: "ljósagrønur toppur"
+  BANNER_STRIPE_TOP_MAGENTA: "viólreyður toppur"
+  BANNER_STRIPE_TOP_ORANGE: "appilsingulur toppur"
+  BANNER_STRIPE_TOP_PINK: "ljósareyður toppur"
+  BANNER_STRIPE_TOP_PURPLE: "lilla toppur"
+  BANNER_STRIPE_TOP_RED: "reyður toppur"
+  BANNER_STRIPE_TOP_WHITE: "hvítur toppur"
+  BANNER_STRIPE_TOP_YELLOW: "gulur toppur"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "svartur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "bláur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "brúnur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "blágrønur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "gráur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "grønur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "ljósabláur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "ljósagráur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_LIME: "leimgrønur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "viólreyður tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "appilsingulur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_PINK: "ljósareyður tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lilla tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_RED: "reyður tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "hvítur tríkantur niðast"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gulur tríkantur niðast"
+  BANNER_TRIANGLE_TOP_BLACK: "svartur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_BLUE: "bláur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_BROWN: "brúnur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_CYAN: "blágrønur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_GRAY: "gráur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_GREEN: "grønur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "ljósabláur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "ljósagráur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_LIME: "leimgrønur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_MAGENTA: "viólreyður tríkantur ovast"
+  BANNER_TRIANGLE_TOP_ORANGE: "appilsingulur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_PINK: "ljósareyður tríkantur ovast"
+  BANNER_TRIANGLE_TOP_PURPLE: "lilla tríkantur ovast"
+  BANNER_TRIANGLE_TOP_RED: "reyður tríkantur ovast"
+  BANNER_TRIANGLE_TOP_WHITE: "hvítur tríkantur ovast"
+  BANNER_TRIANGLE_TOP_YELLOW: "gulur tríkantur ovast"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "svartir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "bláir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brúnir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "blágrønir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "gráir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "grønir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "ljósabláir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "ljósagráir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_LIME: "leimgrønir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "viólreyðir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "appilsingulir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_PINK: "ljósareyðir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lilla tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_RED: "reyðir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "hvítir tindar niðast"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gulir tindar niðast"
+  BANNER_TRIANGLES_TOP_BLACK: "svartir tindar ovast"
+  BANNER_TRIANGLES_TOP_BLUE: "bláir tindar ovast"
+  BANNER_TRIANGLES_TOP_BROWN: "brúnir tindar ovast"
+  BANNER_TRIANGLES_TOP_CYAN: "blágrønir tindar ovast"
+  BANNER_TRIANGLES_TOP_GRAY: "gráir tindar ovast"
+  BANNER_TRIANGLES_TOP_GREEN: "grønir tindar ovast"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "ljósabláir tindar ovast"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "ljósagráir tindar ovast"
+  BANNER_TRIANGLES_TOP_LIME: "leimgrønir tindar ovast"
+  BANNER_TRIANGLES_TOP_MAGENTA: "viólreyðir tindar ovast"
+  BANNER_TRIANGLES_TOP_ORANGE: "appilsingulir tindar ovast"
+  BANNER_TRIANGLES_TOP_PINK: "ljósareyðir tindar ovast"
+  BANNER_TRIANGLES_TOP_PURPLE: "lilla tindar ovast"
+  BANNER_TRIANGLES_TOP_RED: "reyðir tindar ovast"
+  BANNER_TRIANGLES_TOP_WHITE: "hvítir tindar ovast"
+  BANNER_TRIANGLES_TOP_YELLOW: "gulir tindar ovast"
+  BARREL: "tunna"
+  BARRIER: "forðing"
+  BASALT: "basalt"
+  BEACON: "viti"
+  BEACON_PRIMARY: "høvuðsorka"
+  BEACON_SECONDARY: "hjáorka"
+  BED_NO_SLEEP: "tú kanst bert sova um náttina ella í toruveðri"
+  BED_NOT_SAFE: "tú kanst ikki hvíla nú; skrímsl eru í nánd"
+  BED_OBSTRUCTED: "songin er upptikin"
+  BED_OCCUPIED: "songin er upptikin"
+  BED_TOO_FAR_AWAY: "tú kanst ikki hvíla nú; songin er ov langt burturi"
+  BEDROCK: "hella"
+  BEE_NEST: "býflugubøli"
+  BEEHIVE: "býflugubøli"
+  BEETROOTS: "reyðrøtur"
+  BELL: "klokka"
+  BIG_DRIPLEAF: "stórt dropablað"
+  BIG_DRIPLEAF_STEM: "stórur dropablaðsstelkur"
+  BIRCH_BUTTON: "bjarkarknøttur"
+  BIRCH_DOOR: "bjarkarhurð"
+  BIRCH_FENCE: "bjarkargirðing"
+  BIRCH_FENCE_GATE: "bjarkargrind"
+  BIRCH_HANGING_SIGN: "birch hanging sign"
+  BIRCH_LEAVES: "bjarkarbløð"
+  BIRCH_LOG: "bjarkarstokkur"
+  BIRCH_PLANKS: "bjarkarplankar"
+  BIRCH_PRESSURE_PLATE: "bjarkartrýstpláta"
+  BIRCH_SAPLING: "bjarkarspíri"
+  BIRCH_SIGN: "bjarkarskelti"
+  BIRCH_SLAB: "bjarkarpláta"
+  BIRCH_STAIRS: "bjarkartrappa"
+  BIRCH_TRAPDOOR: "bjarkarlemmur"
+  BIRCH_WALL_HANGING_SIGN: "birch wall hanging sign"
+  BIRCH_WALL_SIGN: "bjarkarveggskelti"
+  BIRCH_WOOD: "bjarkarviður"
+  BLACK_BANNER: "svart flagg"
+  BLACK_BED: "svørt song"
+  BLACK_CANDLE: "svart kertiljós"
+  BLACK_CANDLE_CAKE: "kaka við svørtum kertiljósi"
+  BLACK_CARPET: "svart teppi"
+  BLACK_CONCRETE: "svart betong"
+  BLACK_CONCRETE_POWDER: "svart betongpulvur"
+  BLACK_GLAZED_TERRACOTTA: "svart glaserað terrakotta"
+  BLACK_SHULKER_BOX: "svartur shulkerkassi"
+  BLACK_STAINED_GLASS: "svart litað glas"
+  BLACK_STAINED_GLASS_PANE: "svart litað glaspanel"
+  BLACK_TERRACOTTA: "svart terrakotta"
+  BLACK_WOOL: "svørt ull"
+  BLACKSTONE: "svartsteinur"
+  BLACKSTONE_SLAB: "svartsteinspláta"
+  BLACKSTONE_STAIRS: "svartsteinstrappur"
+  BLACKSTONE_WALL: "svartsteinsveggur"
+  BLAST_FURNACE: "háovnur"
+  BLUE_BANNER: "blátt flagg"
+  BLUE_BED: "blá song"
+  BLUE_CANDLE: "blátt kertiljós"
+  BLUE_CANDLE_CAKE: "kaka við bláum kertiljósi"
+  BLUE_CARPET: "blátt teppi"
+  BLUE_CONCRETE: "blátt betong"
+  BLUE_CONCRETE_POWDER: "blátt betongpulvur"
+  BLUE_GLAZED_TERRACOTTA: "blátt glaserað terrakotta"
+  BLUE_ICE: "bláur ísur"
+  BLUE_ORCHID: "blá orkide"
+  BLUE_SHULKER_BOX: "bláur shulkerkassi"
+  BLUE_STAINED_GLASS: "blátt litað glas"
+  BLUE_STAINED_GLASS_PANE: "blátt litað glaspanel"
+  BLUE_TERRACOTTA: "blátt terrakotta"
+  BLUE_WOOL: "blá ull"
+  BONE_BLOCK: "beinkubbi"
+  BOOKSHELF: "bókahill"
+  BRAIN_CORAL: "heilakorall"
+  BRAIN_CORAL_BLOCK: "heilakorallkubbi"
+  BRAIN_CORAL_FAN: "heilakorallveiftra"
+  BRAIN_CORAL_WALL_FAN: "heilakorallveggjaveiftra"
+  BREWING_STAND: "bryggistøð"
+  BRICK_SLAB: "múrsteinspláta"
+  BRICK_STAIRS: "múrsteinstrappa"
+  BRICK_WALL: "múrsteinsveggur"
+  BRICKS: "múrsteinar"
+  BROWN_BANNER: "brúnt flagg"
+  BROWN_BED: "brún song"
+  BROWN_CANDLE: "brúnt kertiljós"
+  BROWN_CANDLE_CAKE: "kaka við brúnum kertiljósi"
+  BROWN_CARPET: "brúnt teppi"
+  BROWN_CONCRETE: "brúnt betong"
+  BROWN_CONCRETE_POWDER: "brúnt betongpulvur"
+  BROWN_GLAZED_TERRACOTTA: "brúnt glaserað terrakotta"
+  BROWN_MUSHROOM: "brúnur soppur"
+  BROWN_MUSHROOM_BLOCK: "brúnur soppakubbi"
+  BROWN_SHULKER_BOX: "brúnur shulkerkassi"
+  BROWN_STAINED_GLASS: "brúnlitt litað glas"
+  BROWN_STAINED_GLASS_PANE: "brúnt litað glaspanel"
+  BROWN_TERRACOTTA: "brúnt terrakotta"
+  BROWN_WOOL: "brún ull"
+  BUBBLE_COLUMN: "bløðrusúla"
+  BUBBLE_CORAL: "bløðrukorall"
+  BUBBLE_CORAL_BLOCK: "bløðrukorallkubbi"
+  BUBBLE_CORAL_FAN: "bløðrukorallveiftra"
+  BUBBLE_CORAL_WALL_FAN: "bløðrukorallveggjaveiftra"
+  BUDDING_AMETHYST: "budding amethyst"
+  CACTUS: "kaktus"
+  CAKE: "køka"
+  CALCITE: "kálkspatt"
+  CALIBRATED_SCULK_SENSOR: "calibrated sculk sensor"
+  CAMPFIRE: "legubál"
+  CANDLE: "kertiljós"
+  CANDLE_CAKE: "kaka við kertiljósi"
+  CARROTS: "gularøtur"
+  CARTOGRAPHY_TABLE: "kortteknaraborð"
+  CARVED_PUMPKIN: "skorið grasker"
+  CAULDRON: "grýta"
+  CAVE_AIR: "hellisluft"
+  CAVE_VINES: "helluvínviður"
+  CAVE_VINES_PLANT: "helluvínviðarplanta"
+  CHAIN: "keta"
+  CHAIN_COMMAND_BLOCK: "ketustýriboðskubbi"
+  CHERRY_BUTTON: "cherry button"
+  CHERRY_DOOR: "cherry door"
+  CHERRY_FENCE: "cherry fence"
+  CHERRY_FENCE_GATE: "cherry fence gate"
+  CHERRY_HANGING_SIGN: "cherry hanging sign"
+  CHERRY_LEAVES: "cherry leaves"
+  CHERRY_LOG: "cherry log"
+  CHERRY_PLANKS: "cherry planks"
+  CHERRY_PRESSURE_PLATE: "cherry pressure plate"
+  CHERRY_SAPLING: "cherry sapling"
+  CHERRY_SIGN: "cherry sign"
+  CHERRY_SLAB: "cherry slab"
+  CHERRY_STAIRS: "cherry stairs"
+  CHERRY_TRAPDOOR: "cherry trapdoor"
+  CHERRY_WALL_HANGING_SIGN: "cherry wall hanging sign"
+  CHERRY_WALL_SIGN: "cherry wall sign"
+  CHERRY_WOOD: "cherry wood"
+  CHEST: "kista"
+  CHIPPED_ANVIL: "skaraður amboltur"
+  CHISELED_BOOKSHELF: "chiseled bookshelf"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "chiseled deepslate"
+  CHISELED_NETHER_BRICKS: "meitlaður niðurmúrsteinar"
+  CHISELED_POLISHED_BLACKSTONE: "chiseled polished blackstone"
+  CHISELED_QUARTZ_BLOCK: "meitlaður kvartskubbi"
+  CHISELED_RED_SANDSTONE: "meitlaður reyður sandsteinur"
+  CHISELED_SANDSTONE: "meitlaður sandsteinur"
+  CHISELED_STONE_BRICKS: "meitlaður steinmúrsteinur"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "niðurlagsblóma"
+  CHORUS_PLANT: "niðurlagsplanta"
+  CLAY: "leir"
+  COAL_BLOCK: "kolakubbi"
+  COAL_ORE: "kolamálmur"
+  COARSE_DIRT: "grov mold"
+  COBBLED_DEEPSLATE: "cobbled deepslate"
+  COBBLED_DEEPSLATE_SLAB: "cobbled deepslate slab"
+  COBBLED_DEEPSLATE_STAIRS: "cobbled deepslate stairs"
+  COBBLED_DEEPSLATE_WALL: "cobbled deepslate wall"
+  COBBLESTONE: "brúgvarsteinur"
+  COBBLESTONE_SLAB: "brúgvarsteinspláta"
+  COBBLESTONE_STAIRS: "brúgvarsteinstrappa"
+  COBBLESTONE_WALL: "brúgvarsteinsveggur"
+  COBWEB: "lokkanet"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "stýriboðskubbi"
+  COMPARATOR: "reyðsteinssamanberi"
+  COMPOSTER: "kompost"
+  CONDUIT: "fløðari"
+  COPPER_BLOCK: "koparkubbi"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "koparmálmur"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "kornblóma"
+  CRACKED_DEEPSLATE_BRICKS: "cracked deepslate bricks"
+  CRACKED_DEEPSLATE_TILES: "cracked deepslate tiles"
+  CRACKED_NETHER_BRICKS: "brotnit nethermúrsteinar"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "cracked polished blackstone bricks"
+  CRACKED_STONE_BRICKS: "rivutur steinmúrsteinur"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "arbeiðsborð"
+  CREEPER_HEAD: "creeperhøvd"
+  CREEPER_WALL_HEAD: "creeperveggjahøvd"
+  CRIMSON_BUTTON: "skarlaksknappur"
+  CRIMSON_DOOR: "skarlakshurð"
+  CRIMSON_FENCE: "skarlakshegn"
+  CRIMSON_FENCE_GATE: "roðagrind"
+  CRIMSON_FUNGUS: "skarlakssoppur"
+  CRIMSON_HANGING_SIGN: "crimson hanging sign"
+  CRIMSON_HYPHAE: "skarlakshyfur"
+  CRIMSON_NYLIUM: "skarlaksnylium"
+  CRIMSON_PLANKS: "skarlaksplankar"
+  CRIMSON_PRESSURE_PLATE: "skarlakstrýstpláta"
+  CRIMSON_ROOTS: "skarlaksrøtur"
+  CRIMSON_SIGN: "skarlaksskelti"
+  CRIMSON_SLAB: "skarlakspláta"
+  CRIMSON_STAIRS: "skarlakstrappa"
+  CRIMSON_STEM: "skarlaksstelkur"
+  CRIMSON_TRAPDOOR: "skarlakslemmur"
+  CRIMSON_WALL_HANGING_SIGN: "crimson wall hanging sign"
+  CRIMSON_WALL_SIGN: "skarlaksveggjarskelti"
+  CRYING_OBSIDIAN: "grátandi ravntinna"
+  CUT_COPPER: "skorið kopar"
+  CUT_COPPER_SLAB: "skornin koparpláta"
+  CUT_COPPER_STAIRS: "skornar kopartrappur"
+  CUT_RED_SANDSTONE: "skorin reyður sandsteinur"
+  CUT_RED_SANDSTONE_SLAB: "skorin reyð sandsteinspláta"
+  CUT_SANDSTONE: "skorin sandsteinur"
+  CUT_SANDSTONE_SLAB: "skorin sandsteinspláta"
+  CYAN_BANNER: "blágrønt flagg"
+  CYAN_BED: "blágrøn song"
+  CYAN_CANDLE: "blágrønt kertiljós"
+  CYAN_CANDLE_CAKE: "kaka við blágrønum kertiljósi"
+  CYAN_CARPET: "blágrønt teppi"
+  CYAN_CONCRETE: "blágrønt betong"
+  CYAN_CONCRETE_POWDER: "blágrønt betongpulvur"
+  CYAN_GLAZED_TERRACOTTA: "blágrønt glaserað terrakotta"
+  CYAN_SHULKER_BOX: "blágrønur shulkerkassi"
+  CYAN_STAINED_GLASS: "blágrønt litað glas"
+  CYAN_STAINED_GLASS_PANE: "blágrønt litað glaspanel"
+  CYAN_TERRACOTTA: "blágrønt terrakotta"
+  CYAN_WOOL: "blágrøn ull"
+  DAMAGED_ANVIL: "illa farin amboltur"
+  DANDELION: "hagasólja"
+  DARK_OAK_BUTTON: "myrkur eikiknøttur"
+  DARK_OAK_DOOR: "myrk eikihurð"
+  DARK_OAK_FENCE: "myrk eikigirðing"
+  DARK_OAK_FENCE_GATE: "myrk eikigrind"
+  DARK_OAK_HANGING_SIGN: "dark oak hanging sign"
+  DARK_OAK_LEAVES: "myrk eikibløð"
+  DARK_OAK_LOG: "myrkur eikistokkur"
+  DARK_OAK_PLANKS: "myrkir eikiplankar"
+  DARK_OAK_PRESSURE_PLATE: "myrk eikitrýstpláta"
+  DARK_OAK_SAPLING: "ungt myrkt eikitræ"
+  DARK_OAK_SIGN: "myrkt eikiskelti"
+  DARK_OAK_SLAB: "myrk eikipláta"
+  DARK_OAK_STAIRS: "myrk eikitrappa"
+  DARK_OAK_TRAPDOOR: "myrkur eikilemmur"
+  DARK_OAK_WALL_HANGING_SIGN: "dark oak wall hanging sign"
+  DARK_OAK_WALL_SIGN: "myrkt eikiveggskelti"
+  DARK_OAK_WOOD: "myrkur eikiviður"
+  DARK_PRISMARINE: "myrk prismarin"
+  DARK_PRISMARINE_SLAB: "myrk prismarinpláta"
+  DARK_PRISMARINE_STAIRS: "myrk prismarintrappa"
+  DAYLIGHT_DETECTOR: "dagsljóssensorur"
+  DEAD_BRAIN_CORAL: "deyð heilakorall"
+  DEAD_BRAIN_CORAL_BLOCK: "deyður heilakorallkubbi"
+  DEAD_BRAIN_CORAL_FAN: "deyð heilakorallveiftra"
+  DEAD_BRAIN_CORAL_WALL_FAN: "deyð heilakorallveggjaveiftra"
+  DEAD_BUBBLE_CORAL: "deyð bløðrukorall"
+  DEAD_BUBBLE_CORAL_BLOCK: "deyður bløðrukorallkubbi"
+  DEAD_BUBBLE_CORAL_FAN: "deyð bløðrukorallveiftra"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "deyð bløðrukorallveggjaveiftra"
+  DEAD_BUSH: "deyður runnur"
+  DEAD_FIRE_CORAL: "deyð eldkorall"
+  DEAD_FIRE_CORAL_BLOCK: "deyður eldkorallkubbi"
+  DEAD_FIRE_CORAL_FAN: "deyð eldkorallveiftra"
+  DEAD_FIRE_CORAL_WALL_FAN: "deyð eldkorallveggjaveiftra"
+  DEAD_HORN_CORAL: "deyð hornkorall"
+  DEAD_HORN_CORAL_BLOCK: "deyður hornkorallkubbi"
+  DEAD_HORN_CORAL_FAN: "deyð hornkorallveiftra"
+  DEAD_HORN_CORAL_WALL_FAN: "deyð hornkorallveggjaveiftra"
+  DEAD_TUBE_CORAL: "deyð pípukorall"
+  DEAD_TUBE_CORAL_BLOCK: "deyður pípukorallkubbi"
+  DEAD_TUBE_CORAL_FAN: "deyð pípukorallveiftra"
+  DEAD_TUBE_CORAL_WALL_FAN: "deyð pípukorallveggjaveiftra"
+  DECORATED_POT: "decorated pot"
+  DEEPSLATE: "djúpgrýti"
+  DEEPSLATE_BRICK_SLAB: "deepslate brick slab"
+  DEEPSLATE_BRICK_STAIRS: "deepslate brick stairs"
+  DEEPSLATE_BRICK_WALL: "deepslate brick wall"
+  DEEPSLATE_BRICKS: "deepslate bricks"
+  DEEPSLATE_COAL_ORE: "djúpskifrakolagrýti"
+  DEEPSLATE_COPPER_ORE: "deepslate copper ore"
+  DEEPSLATE_DIAMOND_ORE: "djúpskifradiamantmálmur"
+  DEEPSLATE_EMERALD_ORE: "djúpskifrasmaragdgrýti"
+  DEEPSLATE_GOLD_ORE: "djúpskifragullmálmur"
+  DEEPSLATE_IRON_ORE: "djúpskifrajarnmálmur"
+  DEEPSLATE_LAPIS_ORE: "djúpskifraasurgrýti"
+  DEEPSLATE_REDSTONE_ORE: "djúpskifrareyðsteinsmálmur"
+  DEEPSLATE_TILE_SLAB: "deepslate tile slab"
+  DEEPSLATE_TILE_STAIRS: "deepslate tile stairs"
+  DEEPSLATE_TILE_WALL: "deepslate tile wall"
+  DEEPSLATE_TILES: "deepslate tiles"
+  DETECTOR_RAIL: "sensorskinnari"
+  DIAMOND_BLOCK: "diamantkubbi"
+  DIAMOND_ORE: "diamantmálmur"
+  DIORITE: "dioritt"
+  DIORITE_SLAB: "diorittpláta"
+  DIORITE_STAIRS: "dioritttrappa"
+  DIORITE_WALL: "diorittveggur"
+  DIRT: "mold"
+  DIRT_PATH: "moldgøta"
+  DISPENSER: "automat"
+  DRAGON_EGG: "drekaegg"
+  DRAGON_HEAD: "drekahøvd"
+  DRAGON_WALL_HEAD: "drekaveggjahøvd"
+  DRIED_KELP_BLOCK: "turkaður tarakubbi"
+  DRIPSTONE_BLOCK: "dropasteinskubbi"
+  DROPPER: "skamtari"
+  EMERALD_BLOCK: "smaragdkubbi"
+  EMERALD_ORE: "smaragdmálmur"
+  ENCHANTING_TABLE: "gandaborð"
+  END_GATEWAY: "endportur"
+  END_PORTAL: "end-portalur"
+  END_PORTAL_FRAME: "endportalarramma"
+  END_ROD: "end-stong"
+  END_STONE: "endsteinur"
+  END_STONE_BRICK_SLAB: "endamúrsteinspláta"
+  END_STONE_BRICK_STAIRS: "endamúrsteinstrappa"
+  END_STONE_BRICK_WALL: "endasteinmúrsteinsveggur"
+  END_STONE_BRICKS: "endasteinmúrsteinur"
+  ENDER_CHEST: "enderkista"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "sjónligt kopar"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "sjónligt skorið kopar"
+  EXPOSED_CUT_COPPER_SLAB: "sjónlig skorin koparpláta"
+  EXPOSED_CUT_COPPER_STAIRS: "sjónligar skornar kopartrappur"
+  FARMLAND: "landbúnaðarjørð"
+  FERN: "trøllakampur"
+  FIRE: "eldur"
+  FIRE_CORAL: "eldkorall"
+  FIRE_CORAL_BLOCK: "eldkorallkubbi"
+  FIRE_CORAL_FAN: "eldkorallveiftra"
+  FIRE_CORAL_WALL_FAN: "eldkorallveggjaveiftra"
+  FLETCHING_TABLE: "pílamakaraborð"
+  FLOWER_POT: "urtapottur"
+  FLOWERING_AZALEA: "blomstrandi asalea"
+  FLOWERING_AZALEA_LEAVES: "blómstrandi asaleubløð"
+  FROGSPAWN: "froskaframkallari"
+  FROSTED_ICE: "rímfallin ísur"
+  FURNACE: "ovnur"
+  GILDED_BLACKSTONE: "gyltur svartsteinur"
+  GLASS: "glas"
+  GLASS_PANE: "glaspanel"
+  GLOW_LICHEN: "gløðiskón"
+  GLOWSTONE: "glóðsteinur"
+  GOLD_BLOCK: "gullkubbi"
+  GOLD_ORE: "gullmálmur"
+  GRANITE: "granitt"
+  GRANITE_SLAB: "granittpláta"
+  GRANITE_STAIRS: "granitttrappa"
+  GRANITE_WALL: "granittveggur"
+  GRASS: "gras"
+  GRASS_BLOCK: "graskubbi"
+  GRAVEL: "eyrur"
+  GRAY_BANNER: "grátt flagg"
+  GRAY_BED: "grá song"
+  GRAY_CANDLE: "grátt kertiljós"
+  GRAY_CANDLE_CAKE: "kaka við gráum kertiljósi"
+  GRAY_CARPET: "grátt teppi"
+  GRAY_CONCRETE: "grátt betong"
+  GRAY_CONCRETE_POWDER: "grátt betongpulvur"
+  GRAY_GLAZED_TERRACOTTA: "grátt glaserað terrakotta"
+  GRAY_SHULKER_BOX: "gráur shulkerkassi"
+  GRAY_STAINED_GLASS: "grátt litað glas"
+  GRAY_STAINED_GLASS_PANE: "grátt litað glaspanel"
+  GRAY_TERRACOTTA: "grátt terrakotta"
+  GRAY_WOOL: "grá ull"
+  GREEN_BANNER: "grønt flagg"
+  GREEN_BED: "grøn song"
+  GREEN_CANDLE: "grønt kertiljós"
+  GREEN_CANDLE_CAKE: "kaka við grønum kertiljósi"
+  GREEN_CARPET: "grønt teppi"
+  GREEN_CONCRETE: "grønt betong"
+  GREEN_CONCRETE_POWDER: "grønt betongpulvur"
+  GREEN_GLAZED_TERRACOTTA: "grønt glaserað terrakotta"
+  GREEN_SHULKER_BOX: "grønur shulkerkassi"
+  GREEN_STAINED_GLASS: "grønt litað gras"
+  GREEN_STAINED_GLASS_PANE: "grønt litað glaspanel"
+  GREEN_TERRACOTTA: "grønt terrakotta"
+  GREEN_WOOL: "grøn ull"
+  GRINDSTONE: "hvørvisteinur"
+  HANGING_ROOTS: "hangandi røtur"
+  HAY_BLOCK: "hoyballa"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "tungvigað trýstpláta"
+  HONEY_BLOCK: "hunangskubbi"
+  HONEYCOMB_BLOCK: "býflugukøkukubbi"
+  HOPPER: "trakt"
+  HORN_CORAL: "hornkorall"
+  HORN_CORAL_BLOCK: "hornkorallkubbi"
+  HORN_CORAL_FAN: "hornkorallveiftra"
+  HORN_CORAL_WALL_FAN: "hornkorallveggjaveiftra"
+  ICE: "ísur"
+  INFESTED_CHISELED_STONE_BRICKS: "smittufongdur meitlaður steinmúrsteinur"
+  INFESTED_COBBLESTONE: "smittaður brúgvarsteinur"
+  INFESTED_CRACKED_STONE_BRICKS: "smittufongdur rivutur steinmúrsteinur"
+  INFESTED_DEEPSLATE: "infested deepslate"
+  INFESTED_MOSSY_STONE_BRICKS: "smittufongdur mosagrógvin steinmúrsteinur"
+  INFESTED_STONE: "smittaður steinur"
+  INFESTED_STONE_BRICKS: "smittufongdur steinmúrsteinur"
+  IRON_BARS: "jarngrindir"
+  IRON_BLOCK: "jarnkubbi"
+  IRON_DOOR: "jarnhurð"
+  IRON_ORE: "jarnmálmur"
+  IRON_TRAPDOOR: "jarnlemmur"
+  JACK_O_LANTERN: "graskerslanterna"
+  JIGSAW: "putlispælskubbi"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "frumskóðarknøttur"
+  JUNGLE_DOOR: "frumskógarhurð"
+  JUNGLE_FENCE: "frumskógargirðing"
+  JUNGLE_FENCE_GATE: "frumskógargrind"
+  JUNGLE_HANGING_SIGN: "jungle hanging sign"
+  JUNGLE_LEAVES: "frumskógarbløð"
+  JUNGLE_LOG: "frumskógarstokkur"
+  JUNGLE_PLANKS: "frumskógarplankar"
+  JUNGLE_PRESSURE_PLATE: "frumskógartrýstpláta"
+  JUNGLE_SAPLING: "frúmskógarspíri"
+  JUNGLE_SIGN: "frumskógarskelti"
+  JUNGLE_SLAB: "frumskógarpláta"
+  JUNGLE_STAIRS: "frumskógartrappa"
+  JUNGLE_TRAPDOOR: "frumskógarlemmur"
+  JUNGLE_WALL_HANGING_SIGN: "jungle wall hanging sign"
+  JUNGLE_WALL_SIGN: "frumskógarveggskelti"
+  JUNGLE_WOOD: "frumskógarviður"
+  KELP: "tari"
+  KELP_PLANT: "taraplanta"
+  LADDER: "stigi"
+  LANTERN: "lykt"
+  LAPIS_BLOCK: "asursteinskubbi"
+  LAPIS_ORE: "asurmálmur"
+  LARGE_AMETHYST_BUD: "stórur ametystknubbi"
+  LARGE_FERN: "stórur trøllakampur"
+  LAVA: "lava"
+  LAVA_CAULDRON: "grýta við lava"
+  LECTERN: "lesipultur"
+  LEVER: "handtak"
+  LIGHT: "ljós"
+  LIGHT_BLUE_BANNER: "ljósablátt flagg"
+  LIGHT_BLUE_BED: "ljósablá song"
+  LIGHT_BLUE_CANDLE: "ljósablátt kertiljós"
+  LIGHT_BLUE_CANDLE_CAKE: "kaka við ljósabláum kertiljósi"
+  LIGHT_BLUE_CARPET: "ljósablátt teppi"
+  LIGHT_BLUE_CONCRETE: "ljósablátt betong"
+  LIGHT_BLUE_CONCRETE_POWDER: "ljósablátt betongpulvur"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "ljósablátt glaserað terrakotta"
+  LIGHT_BLUE_SHULKER_BOX: "ljósabláur shulkerkassi"
+  LIGHT_BLUE_STAINED_GLASS: "ljósablátt litað glas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "ljósablátt litað glaspanel"
+  LIGHT_BLUE_TERRACOTTA: "ljósablátt terrakotta"
+  LIGHT_BLUE_WOOL: "ljósablá ull"
+  LIGHT_GRAY_BANNER: "ljósagrátt flagg"
+  LIGHT_GRAY_BED: "ljósagrá song"
+  LIGHT_GRAY_CANDLE: "ljósagrátt kertiljós"
+  LIGHT_GRAY_CANDLE_CAKE: "kaka við ljósagráum kertiljósi"
+  LIGHT_GRAY_CARPET: "ljósagrátt teppi"
+  LIGHT_GRAY_CONCRETE: "ljósagrátt betong"
+  LIGHT_GRAY_CONCRETE_POWDER: "ljósagrátt betongpulvur"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "ljósagrátt glaserað terrakotta"
+  LIGHT_GRAY_SHULKER_BOX: "ljósagráur shulkerkassi"
+  LIGHT_GRAY_STAINED_GLASS: "ljósagrátt litað glas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "ljósagrátt litað glaspanel"
+  LIGHT_GRAY_TERRACOTTA: "ljósagrátt terrakotta"
+  LIGHT_GRAY_WOOL: "ljósagrá ull"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "lættvigað trýstpláta"
+  LIGHTNING_ROD: "toruverja"
+  LILAC: "sírena"
+  LILY_OF_THE_VALLEY: "dalalilja"
+  LILY_PAD: "nyksblóma"
+  LIME_BANNER: "ljósagrønt flagg"
+  LIME_BED: "ljósagrøn song"
+  LIME_CANDLE: "ljósagrønt kertiljós"
+  LIME_CANDLE_CAKE: "kaka við ljósagrønum kertiljósi"
+  LIME_CARPET: "ljósagrønt teppi"
+  LIME_CONCRETE: "ljósagrønt betong"
+  LIME_CONCRETE_POWDER: "ljósagrønt betongpulvur"
+  LIME_GLAZED_TERRACOTTA: "ljósagrønt glaserað terrakotta"
+  LIME_SHULKER_BOX: "ljósagrønur shulkerkassi"
+  LIME_STAINED_GLASS: "ljósagrønt litað glas"
+  LIME_STAINED_GLASS_PANE: "ljósagrønt litað glaspanel"
+  LIME_TERRACOTTA: "ljósagrønt terrakotta"
+  LIME_WOOL: "ljósagrøn ull"
+  LODESTONE: "leiðarsteinur"
+  LOOM: "vevur"
+  MAGENTA_BANNER: "viólreytt flagg"
+  MAGENTA_BED: "viólreyð song"
+  MAGENTA_CANDLE: "viólreytt kertiljós"
+  MAGENTA_CANDLE_CAKE: "kaka við viólreyðum kertiljósi"
+  MAGENTA_CARPET: "viólreytt teppi"
+  MAGENTA_CONCRETE: "viólreytt betong"
+  MAGENTA_CONCRETE_POWDER: "viólreytt betongpulvur"
+  MAGENTA_GLAZED_TERRACOTTA: "viólreytt glaserað terrakotta"
+  MAGENTA_SHULKER_BOX: "viólreyður shulkerkassi"
+  MAGENTA_STAINED_GLASS: "viólreytt litað glas"
+  MAGENTA_STAINED_GLASS_PANE: "viólreytt litað glaspanel"
+  MAGENTA_TERRACOTTA: "viólreytt terrakotta"
+  MAGENTA_WOOL: "viólreyð ull"
+  MAGMA_BLOCK: "magmakubbi"
+  MANGROVE_BUTTON: "mangrovuknappur"
+  MANGROVE_DOOR: "mangrovuhurð"
+  MANGROVE_FENCE: "mangrovuhegn"
+  MANGROVE_FENCE_GATE: "mangrovuportur"
+  MANGROVE_HANGING_SIGN: "mangrove hanging sign"
+  MANGROVE_LEAVES: "mangrovubløð"
+  MANGROVE_LOG: "mangrovubulur"
+  MANGROVE_PLANKS: "mangrovuplankar"
+  MANGROVE_PRESSURE_PLATE: "mangrovutrýstpláta"
+  MANGROVE_PROPAGULE: "mangrovunøringarkorn"
+  MANGROVE_ROOTS: "mangrovurøtur"
+  MANGROVE_SIGN: "mangrovuskelti"
+  MANGROVE_SLAB: "mangrovupláta"
+  MANGROVE_STAIRS: "mangrovutrappa"
+  MANGROVE_TRAPDOOR: "mangrovufalllemmur"
+  MANGROVE_WALL_HANGING_SIGN: "mangrove wall hanging sign"
+  MANGROVE_WALL_SIGN: "mangrovuveggjarskelti"
+  MANGROVE_WOOD: "mangrovuviður"
+  MEDIUM_AMETHYST_BUD: "miðalstórur ametystknubbi"
+  MELON: "vatnmelón"
+  MELON_STEM: "vatnmelónsstelkur"
+  MOSS_BLOCK: "mosakubbi"
+  MOSS_CARPET: "mosateppi"
+  MOSSY_COBBLESTONE: "mosagrógvin brúgvarsteinur"
+  MOSSY_COBBLESTONE_SLAB: "mosagrógvin brúgvarsteinspláta"
+  MOSSY_COBBLESTONE_STAIRS: "mosagrógvin brúgvarsteinstrappa"
+  MOSSY_COBBLESTONE_WALL: "mosagrógvin brúgvarsteinsveggur"
+  MOSSY_STONE_BRICK_SLAB: "mosagrógvin múrsteinspláta"
+  MOSSY_STONE_BRICK_STAIRS: "mosagrógvin steinmúrsteinstrappa"
+  MOSSY_STONE_BRICK_WALL: "mosagrógvin steinmúrsteinsveggur"
+  MOSSY_STONE_BRICKS: "mosagrógvin steinmúrsteinur"
+  MOVING_PISTON: "stempul í rørslu"
+  MUD: "móra"
+  MUD_BRICK_SLAB: "runumúrsteinspláta"
+  MUD_BRICK_STAIRS: "runumúrsteinstrappa"
+  MUD_BRICK_WALL: "runumúrsteinsveggur"
+  MUD_BRICKS: "móru múrsteinar"
+  MUDDY_MANGROVE_ROOTS: "runutar mangrovurøtur"
+  MUSHROOM_STEM: "soppastelkur"
+  MYCELIUM: "soppavevnaður"
+  NETHER_BRICK_FENCE: "nethermúrsteinsgrind"
+  NETHER_BRICK_SLAB: "nether múrsteinspláta"
+  NETHER_BRICK_STAIRS: "nethermúrsteinstrappa"
+  NETHER_BRICK_WALL: "nethermúrsteinsveggur"
+  NETHER_BRICKS: "nethermúrsteinar"
+  NETHER_GOLD_ORE: "nethergullmálmur"
+  NETHER_PORTAL: "netherportalur"
+  NETHER_QUARTZ_ORE: "netherkvartsgrýti"
+  NETHER_SPROUTS: "netherspírur"
+  NETHER_WART: "nether-finnur"
+  NETHER_WART_BLOCK: "netherkubbi"
+  NETHERITE_BLOCK: "netherittkubbi"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "nótakubbi"
+  OAK_BUTTON: "eikiknøttur"
+  OAK_DOOR: "eikihurð"
+  OAK_FENCE: "eikigirðing"
+  OAK_FENCE_GATE: "eikigrind"
+  OAK_HANGING_SIGN: "oak hanging sign"
+  OAK_LEAVES: "eikibløð"
+  OAK_LOG: "eikistokkur"
+  OAK_PLANKS: "eikiplankar"
+  OAK_PRESSURE_PLATE: "eikitrýstpláta"
+  OAK_SAPLING: "ungt eikitræ"
+  OAK_SIGN: "eikiskelti"
+  OAK_SLAB: "eikipláta"
+  OAK_STAIRS: "eikitrappa"
+  OAK_TRAPDOOR: "eikilemmur"
+  OAK_WALL_HANGING_SIGN: "oak wall hanging sign"
+  OAK_WALL_SIGN: "eikiveggskelti"
+  OAK_WOOD: "eikiviður"
+  OBSERVER: "eygleiðari"
+  OBSIDIAN: "obsidianur"
+  OCHRE_FROGLIGHT: "okkurgult froskljós"
+  OMINOUS_BANNER: "ávaringarflagg"
+  ORANGE_BANNER: "appilsingult flagg"
+  ORANGE_BED: "appilsingul song"
+  ORANGE_CANDLE: "appilsingult kertiljós"
+  ORANGE_CANDLE_CAKE: "kaka við appilsingulum kertiljósi"
+  ORANGE_CARPET: "appilsingult teppi"
+  ORANGE_CONCRETE: "appilsingult betong"
+  ORANGE_CONCRETE_POWDER: "appilsingult betongpulvur"
+  ORANGE_GLAZED_TERRACOTTA: "appilsingult glaserað terrakotta"
+  ORANGE_SHULKER_BOX: "appilsingulur shulkerkassi"
+  ORANGE_STAINED_GLASS: "appilsingult litað glas"
+  ORANGE_STAINED_GLASS_PANE: "appilsingult litað glaspanel"
+  ORANGE_TERRACOTTA: "appilsingult terrakotta"
+  ORANGE_TULIP: "appilsingul tulipan"
+  ORANGE_WOOL: "appilsingul ull"
+  OXEYE_DAISY: "hvítt oksaeyga"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "oksidera kopar"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "oksiderað skorið kopar"
+  OXIDIZED_CUT_COPPER_SLAB: "oksiderað skorin koparpláta"
+  OXIDIZED_CUT_COPPER_STAIRS: "oksideraðar skornar kopartrappur"
+  PACKED_ICE: "pakkaður ísur"
+  PACKED_MUD: "stappað runa"
+  PEARLESCENT_FROGLIGHT: "perlublátt froskljós"
+  PEONY: "bóndarósa"
+  PETRIFIED_OAK_SLAB: "steinrunnin eikipláta"
+  PIGLIN_HEAD: "piglin head"
+  PIGLIN_WALL_HEAD: "piglin wall head"
+  PINK_BANNER: "ljósareytt flagg"
+  PINK_BED: "ljósareyð song"
+  PINK_CANDLE: "ljósareytt kertiljós"
+  PINK_CANDLE_CAKE: "kaka við ljósareyðum kertiljósi"
+  PINK_CARPET: "ljósareytt teppi"
+  PINK_CONCRETE: "ljósareytt betong"
+  PINK_CONCRETE_POWDER: "ljósareytt betongpulvur"
+  PINK_GLAZED_TERRACOTTA: "ljósareytt glaserað terrakotta"
+  PINK_PETALS: "pink petals"
+  PINK_SHULKER_BOX: "ljósareyður shulkerkassi"
+  PINK_STAINED_GLASS: "ljósareytt litað glas"
+  PINK_STAINED_GLASS_PANE: "ljósareytt litað glaspanel"
+  PINK_TERRACOTTA: "ljósareytt terrakotta"
+  PINK_TULIP: "ljósareyð tulipan"
+  PINK_WOOL: "ljósareyð ull"
+  PISTON: "stempul"
+  PISTON_HEAD: "stempulhøvd"
+  PITCHER_CROP: "pitcher crop"
+  PITCHER_PLANT: "pitcher plant"
+  PLAYER_HEAD: "leikarahøvd"
+  PLAYER_HEAD_NAMED: "høvd á %s"
+  PLAYER_WALL_HEAD: "leikaravegghøvd"
+  PODZOL: "rakjørð"
+  POINTED_DRIPSTONE: "spískur dropasteinur"
+  POLISHED_ANDESITE: "pussað andesitt"
+  POLISHED_ANDESITE_SLAB: "pussað andesittpláta"
+  POLISHED_ANDESITE_STAIRS: "pussað andesitttrappa"
+  POLISHED_BASALT: "polerað basalt"
+  POLISHED_BLACKSTONE: "pussaður svartsteinur"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "pussað svartsteinmúrsteinspláta"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "pussaðar svartsteinmúrsteinstrappur"
+  POLISHED_BLACKSTONE_BRICK_WALL: "pussaður svartsteinmúrsteinsveggur"
+  POLISHED_BLACKSTONE_BRICKS: "pussaðir svartsteinsmúrsteinar"
+  POLISHED_BLACKSTONE_BUTTON: "pussaður svartsteinsknøttur"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "pussað svartsteinstrýstpláta"
+  POLISHED_BLACKSTONE_SLAB: "pussað svartsteinspláta"
+  POLISHED_BLACKSTONE_STAIRS: "pussaðar svartsteinstrappur"
+  POLISHED_BLACKSTONE_WALL: "pussaður svartsteinsveggur"
+  POLISHED_DEEPSLATE: "polished deepslate"
+  POLISHED_DEEPSLATE_SLAB: "polished deepslate slab"
+  POLISHED_DEEPSLATE_STAIRS: "polished deepslate stairs"
+  POLISHED_DEEPSLATE_WALL: "polished deepslate wall"
+  POLISHED_DIORITE: "pussað dioritt"
+  POLISHED_DIORITE_SLAB: "pussað diorittpláta"
+  POLISHED_DIORITE_STAIRS: "pussað dioritttrappa"
+  POLISHED_GRANITE: "pussað granitt"
+  POLISHED_GRANITE_SLAB: "pussað granittpláta"
+  POLISHED_GRANITE_STAIRS: "pussað granitttrappa"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "valmua"
+  POTATOES: "epli"
+  POTTED_ACACIA_SAPLING: "ungt akasiutræ í potti"
+  POTTED_ALLIUM: "leykur í potti"
+  POTTED_AZALEA_BUSH: "asalea í potti"
+  POTTED_AZURE_BLUET: "eingjarkarsi í potti"
+  POTTED_BAMBOO: "bambus í potti"
+  POTTED_BIRCH_SAPLING: "bjarkarspíri í potti"
+  POTTED_BLUE_ORCHID: "blá orkide í potti"
+  POTTED_BROWN_MUSHROOM: "brúnur soppur í potti"
+  POTTED_CACTUS: "kaktus í potti"
+  POTTED_CHERRY_SAPLING: "potted cherry sapling"
+  POTTED_CORNFLOWER: "kornblóma í potti"
+  POTTED_CRIMSON_FUNGUS: "skarlakssoppur í potti"
+  POTTED_CRIMSON_ROOTS: "skarlaksrøtur í potti"
+  POTTED_DANDELION: "hagasólja í potti"
+  POTTED_DARK_OAK_SAPLING: "myrkur eikispíri í potti"
+  POTTED_DEAD_BUSH: "deytt kjarr í potti"
+  POTTED_FERN: "trøllakampur í potti"
+  POTTED_FLOWERING_AZALEA_BUSH: "blomstrandi asalea í potti"
+  POTTED_JUNGLE_SAPLING: "frúmskógarspíri í potti"
+  POTTED_LILY_OF_THE_VALLEY: "dalalilja í potti"
+  POTTED_MANGROVE_PROPAGULE: "mangrovunøringarkorn í potti"
+  POTTED_OAK_SAPLING: "eikispíri í potti"
+  POTTED_ORANGE_TULIP: "appilsingul tulipan í potti"
+  POTTED_OXEYE_DAISY: "margaritt í potti"
+  POTTED_PINK_TULIP: "ljósareyð tulipan í potti"
+  POTTED_POPPY: "dreymsólja í potti"
+  POTTED_RED_MUSHROOM: "reyður soppur í potti"
+  POTTED_RED_TULIP: "reyð tulipan í potti"
+  POTTED_SPRUCE_SAPLING: "grannspíri í potti"
+  POTTED_TORCHFLOWER: "potted torchflower"
+  POTTED_WARPED_FUNGUS: "tryglusoppur í potti"
+  POTTED_WARPED_ROOTS: "tryglurøtur í potti"
+  POTTED_WHITE_TULIP: "hvít tulipan í potti"
+  POTTED_WITHER_ROSE: "witherrósa í potti"
+  POWDER_SNOW: "flykrukavi"
+  POWDER_SNOW_CAULDRON: "flykrukavagrýta"
+  POWERED_RAIL: "elskinnari"
+  PRISMARINE: "prismarin"
+  PRISMARINE_BRICK_SLAB: "prismarinmúrsteinspláta"
+  PRISMARINE_BRICK_STAIRS: "prismarinmúrsteinstrappa"
+  PRISMARINE_BRICKS: "prismarinmúrsteinar"
+  PRISMARINE_SLAB: "prismarinpláta"
+  PRISMARINE_STAIRS: "prismarintrappa"
+  PRISMARINE_WALL: "prismarinveggur"
+  PUMPKIN: "grasker"
+  PUMPKIN_STEM: "graskerjastelkur"
+  PURPLE_BANNER: "lilla flagg"
+  PURPLE_BED: "lilla song"
+  PURPLE_CANDLE: "lilla kertiljós"
+  PURPLE_CANDLE_CAKE: "cake with purple candle"
+  PURPLE_CARPET: "lilla teppi"
+  PURPLE_CONCRETE: "lilla betong"
+  PURPLE_CONCRETE_POWDER: "lilla betongpulvur"
+  PURPLE_GLAZED_TERRACOTTA: "lilla glaserað terrakotta"
+  PURPLE_SHULKER_BOX: "lillaður shulkerkassi"
+  PURPLE_STAINED_GLASS: "lilla litað glas"
+  PURPLE_STAINED_GLASS_PANE: "lilla litað glaspanel"
+  PURPLE_TERRACOTTA: "lilla terrakotta"
+  PURPLE_WOOL: "lilla ull"
+  PURPUR_BLOCK: "purpurkubbi"
+  PURPUR_PILLAR: "purpursúla"
+  PURPUR_SLAB: "purpurpláta"
+  PURPUR_STAIRS: "purpurtrappa"
+  QUARTZ_BLOCK: "kvartskubbi"
+  QUARTZ_BRICKS: "kvartsmúrsteinar"
+  QUARTZ_PILLAR: "kvartssúla"
+  QUARTZ_SLAB: "kvartspláta"
+  QUARTZ_STAIRS: "kvartstrappa"
+  RAIL: "skinnari"
+  RAW_COPPER_BLOCK: "block of raw copper"
+  RAW_GOLD_BLOCK: "block of raw gold"
+  RAW_IRON_BLOCK: "block of raw iron"
+  RED_BANNER: "reytt flagg"
+  RED_BED: "reyð song"
+  RED_CANDLE: "reytt kertiljós"
+  RED_CANDLE_CAKE: "kaka við reyðum kertiljósi"
+  RED_CARPET: "reytt teppi"
+  RED_CONCRETE: "reytt betong"
+  RED_CONCRETE_POWDER: "reytt betongpulvur"
+  RED_GLAZED_TERRACOTTA: "reytt glaserað terrakotta"
+  RED_MUSHROOM: "reyður soppur"
+  RED_MUSHROOM_BLOCK: "reyður soppakubbi"
+  RED_NETHER_BRICK_SLAB: "reyð nethermúrsteinspláta"
+  RED_NETHER_BRICK_STAIRS: "reyð nethermúrsteinstrappa"
+  RED_NETHER_BRICK_WALL: "reyð nethermúrsteinsveggur"
+  RED_NETHER_BRICKS: "reyðir nethermúrsteinar"
+  RED_SAND: "reyðsendi"
+  RED_SANDSTONE: "reyður sandsteinur"
+  RED_SANDSTONE_SLAB: "reyð sandsteinspláta"
+  RED_SANDSTONE_STAIRS: "reyð sandsteinstrappa"
+  RED_SANDSTONE_WALL: "reyður sandsteinsveggur"
+  RED_SHULKER_BOX: "reyður shulkerkassi"
+  RED_STAINED_GLASS: "reytt litað glas"
+  RED_STAINED_GLASS_PANE: "reytt litað glaspanel"
+  RED_TERRACOTTA: "reytt terrakotta"
+  RED_TULIP: "reyð tulipan"
+  RED_WOOL: "reyð ull"
+  REDSTONE_BLOCK: "reyðsteinskubbi"
+  REDSTONE_LAMP: "reyðsteinslampa"
+  REDSTONE_ORE: "reyðsteinsmálmur"
+  REDSTONE_TORCH: "reyðsteinskyndil"
+  REDSTONE_WALL_TORCH: "reyðsteinsveggkyndil"
+  REDSTONE_WIRE: "reyðsteinsleidningur"
+  REINFORCED_DEEPSLATE: "styrkt djúpgrýti"
+  REPEATER: "reyðsteinsendurtakari"
+  REPEATING_COMMAND_BLOCK: "endurtakandi stýriboðskubbi"
+  RESPAWN_ANCHOR: "upprísingarakker"
+  ROOTED_DIRT: "rótgrógvin mold"
+  ROSE_BUSH: "rósurunnur"
+  SAND: "sandur"
+  SANDSTONE: "sandsteinur"
+  SANDSTONE_SLAB: "sandsteinsflís"
+  SANDSTONE_STAIRS: "sandsteinstrappa"
+  SANDSTONE_WALL: "sandsteinsveggur"
+  SCAFFOLDING: "arbeiðspallur"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculkkatalysator"
+  SCULK_SENSOR: "sculksensorur"
+  SCULK_SHRIEKER: "sculkskríggjari"
+  SCULK_VEIN: "sculkæðr"
+  SEA_LANTERN: "sjólanterna"
+  SEA_PICKLE: "sjóagurka"
+  SEAGRASS: "sjógras"
+  SET_SPAWN: "byrjanarstað sett"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "soppaljós"
+  SHULKER_BOX: "shulkerkassi"
+  SKELETON_SKULL: "skøltur"
+  SKELETON_WALL_SKULL: "veggjaskøltur"
+  SLIME_BLOCK: "slímkubbi"
+  SMALL_AMETHYST_BUD: "lítil ametystknubbi"
+  SMALL_DRIPLEAF: "lítið dropablað"
+  SMITHING_TABLE: "smiðjuborð"
+  SMOKER: "roykjari"
+  SMOOTH_BASALT: "smooth basalt"
+  SMOOTH_QUARTZ: "sløtt kvartspláta"
+  SMOOTH_QUARTZ_SLAB: "sløtt kvartspláta"
+  SMOOTH_QUARTZ_STAIRS: "sløtt kvartstrappa"
+  SMOOTH_RED_SANDSTONE: "slættur reyður sandsteinur"
+  SMOOTH_RED_SANDSTONE_SLAB: "reyð sløtt sandsteinspláta"
+  SMOOTH_RED_SANDSTONE_STAIRS: "sløtt reyð sandsteinstrappa"
+  SMOOTH_SANDSTONE: "slættur sandsteinur"
+  SMOOTH_SANDSTONE_SLAB: "sløtt sandsteinspláta"
+  SMOOTH_SANDSTONE_STAIRS: "sløtt sandsteinstrappa"
+  SMOOTH_STONE: "slættur steinur"
+  SMOOTH_STONE_SLAB: "sløtt steinpláta"
+  SNIFFER_EGG: "sniffer egg"
+  SNOW: "kavi"
+  SNOW_BLOCK: "kavakubbi"
+  SOUL_CAMPFIRE: "sálarlegubál"
+  SOUL_FIRE: "sálareldur"
+  SOUL_LANTERN: "sálarlanterna"
+  SOUL_SAND: "sálarsandur"
+  SOUL_SOIL: "sálarmold"
+  SOUL_TORCH: "sálarkyndil"
+  SOUL_WALL_TORCH: "veggjasálarkyndil"
+  SPAWN_NOT_VALID: "tú hevur onga heimasong ella viðrakningarakker ella var tað forðað"
+  SPAWNER: "monster spawner"
+  SPAWNER_DESC1: "interact with spawn egg:"
+  SPAWNER_DESC2: "sets mob type"
+  SPONGE: "svampur"
+  SPORE_BLOSSOM: "gróblóma"
+  SPRUCE_BUTTON: "grannknøttur"
+  SPRUCE_DOOR: "grannhurð"
+  SPRUCE_FENCE: "granngirðing"
+  SPRUCE_FENCE_GATE: "granngrind"
+  SPRUCE_HANGING_SIGN: "spruce hanging sign"
+  SPRUCE_LEAVES: "grannnálir"
+  SPRUCE_LOG: "grannstokkur"
+  SPRUCE_PLANKS: "grannplankar"
+  SPRUCE_PRESSURE_PLATE: "granntrýstpláta"
+  SPRUCE_SAPLING: "grannspíri"
+  SPRUCE_SIGN: "grannskelti"
+  SPRUCE_SLAB: "grannpláta"
+  SPRUCE_STAIRS: "granntrappa"
+  SPRUCE_TRAPDOOR: "grannlemmur"
+  SPRUCE_WALL_HANGING_SIGN: "spruce wall hanging sign"
+  SPRUCE_WALL_SIGN: "grannveggskelti"
+  SPRUCE_WOOD: "grannviður"
+  STICKY_PISTON: "kleptrut stempul"
+  STONE: "steinur"
+  STONE_BRICK_SLAB: "steinmúrsteinspláta"
+  STONE_BRICK_STAIRS: "steinmúrsteinstrappa"
+  STONE_BRICK_WALL: "steinmúrsteinsveggur"
+  STONE_BRICKS: "steinmúrsteinur"
+  STONE_BUTTON: "steinknøttur"
+  STONE_PRESSURE_PLATE: "steintrýstpláta"
+  STONE_SLAB: "steinpláta"
+  STONE_STAIRS: "steintrappa"
+  STONECUTTER: "steinskeri"
+  STRIPPED_ACACIA_LOG: "avbarkaður akasiubulur"
+  STRIPPED_ACACIA_WOOD: "avbarkað akasiutræ"
+  STRIPPED_BAMBOO_BLOCK: "block of stripped bamboo"
+  STRIPPED_BIRCH_LOG: "avbarkaður bjarkarstokkur"
+  STRIPPED_BIRCH_WOOD: "avbarkaður bjarkarviður"
+  STRIPPED_CHERRY_LOG: "stripped cherry log"
+  STRIPPED_CHERRY_WOOD: "stripped cherry wood"
+  STRIPPED_CRIMSON_HYPHAE: "avbarkaðar skarlakshyfur"
+  STRIPPED_CRIMSON_STEM: "skavaður skarlaksstelkur"
+  STRIPPED_DARK_OAK_LOG: "avbarkaður myrkur eikistokkur"
+  STRIPPED_DARK_OAK_WOOD: "avbarkaður myrkur eikiviður"
+  STRIPPED_JUNGLE_LOG: "avbarkaður frumskógarstokkur"
+  STRIPPED_JUNGLE_WOOD: "avbarkaður frumskógarviður"
+  STRIPPED_MANGROVE_LOG: "avbarkaður mangrovubulur"
+  STRIPPED_MANGROVE_WOOD: "avbarkaður mangrovuviður"
+  STRIPPED_OAK_LOG: "avbarkaður eikistokkur"
+  STRIPPED_OAK_WOOD: "avbarkaður eikiviður"
+  STRIPPED_SPRUCE_LOG: "avbarkaður grannstokkur"
+  STRIPPED_SPRUCE_WOOD: "avbarkað granntræ"
+  STRIPPED_WARPED_HYPHAE: "avbarkaðar vindskar hyfur"
+  STRIPPED_WARPED_STEM: "avbarkaður vindskur stelkur"
+  STRUCTURE_BLOCK: "byggingarkubbi"
+  STRUCTURE_VOID: "tómrúmsstrukturur"
+  SUGAR_CANE: "sukurrør"
+  SUNFLOWER: "sólblóma"
+  SUSPICIOUS_GRAVEL: "suspicious gravel"
+  SUSPICIOUS_SAND: "suspicious sand"
+  SWEET_BERRY_BUSH: "søtberjarunnur"
+  TALL_GRASS: "høgt gras"
+  TALL_SEAGRASS: "høgt sjógras"
+  TARGET: "skotskiva"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "tónað glas"
+  TNT: "tnt"
+  TORCH: "kyndil"
+  TORCHFLOWER: "torchflower"
+  TORCHFLOWER_CROP: "torchflower crop"
+  TRAPPED_CHEST: "fellukista"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "snávingartráður"
+  TRIPWIRE_HOOK: "snávingartráðskrókur"
+  TUBE_CORAL: "pípukorall"
+  TUBE_CORAL_BLOCK: "pípukorallkubbi"
+  TUBE_CORAL_FAN: "pípukorallveiftra"
+  TUBE_CORAL_WALL_FAN: "pípukorallveggjaveiftra"
+  TUFF: "royðugrót"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "skjaldbøkuegg"
+  TWISTING_VINES: "snúðrandi klivurt"
+  TWISTING_VINES_PLANT: "snúðrandi klivurt"
+  VERDANT_FROGLIGHT: "grønt froskljós"
+  VINE: "klivurt"
+  VOID_AIR: "tómrúmsluft"
+  WALL_TORCH: "veggkyndil"
+  WARPED_BUTTON: "trygluknappur"
+  WARPED_DOOR: "trygluhurð"
+  WARPED_FENCE: "tryglugirðing"
+  WARPED_FENCE_GATE: "tryglugrind"
+  WARPED_FUNGUS: "tryglusoppur"
+  WARPED_HANGING_SIGN: "warped hanging sign"
+  WARPED_HYPHAE: "vindskar hyfur"
+  WARPED_NYLIUM: "tryglunoppavevnaður"
+  WARPED_PLANKS: "vindskir plankar"
+  WARPED_PRESSURE_PLATE: "tryglutrýstpláta"
+  WARPED_ROOTS: "tryglurøtur"
+  WARPED_SIGN: "trygluskelti"
+  WARPED_SLAB: "tryglupláta"
+  WARPED_STAIRS: "tryglutrappur"
+  WARPED_STEM: "tryglustelkur"
+  WARPED_TRAPDOOR: "tryglulemmur"
+  WARPED_WALL_HANGING_SIGN: "warped wall hanging sign"
+  WARPED_WALL_SIGN: "bronglað veggjarskelti"
+  WARPED_WART_BLOCK: "tryglunetherfinnarkubbi"
+  WATER: "vatn"
+  WATER_CAULDRON: "grýta við vatnið"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "voksaður koparkubbi"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "voksað skorið kopar"
+  WAXED_CUT_COPPER_SLAB: "voksað skorin koparpláta"
+  WAXED_CUT_COPPER_STAIRS: "voksaðar skornar kopartrappur"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "voksað sjónligt kopar"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "voksað sjónligt kopar"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "voksað sjónlig koparpláta"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "voksaðar sjónlig skornar kopartrappur"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "voksað oksiderað kopar"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "voksað oksiderað skorið kopar"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "voksað oksiderað skorin koparpláta"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "voksaðar oksideraðar skornar kopartrappur"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "voksað veðurbart kopar"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "voksa veðurbart skorið kopar"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "voksað veðurbard skorin koparpláta"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "voksaðar veðurbardar skornar kopar trappur"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "veðurbart kopar"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "veðurbart skorið kopar"
+  WEATHERED_CUT_COPPER_SLAB: "veðurbard skorin koparpláta"
+  WEATHERED_CUT_COPPER_STAIRS: "veðurbardar skornar kopar trappur"
+  WEEPING_VINES: "grátandi klivurt"
+  WEEPING_VINES_PLANT: "grátandi klivurt"
+  WET_SPONGE: "vátur svampur"
+  WHEAT: "hveitiskurður"
+  WHITE_BANNER: "hvítt merki"
+  WHITE_BED: "hvít song"
+  WHITE_CANDLE: "hvítt kertiljós"
+  WHITE_CANDLE_CAKE: "kaka við hvítum kertiljósi"
+  WHITE_CARPET: "hvítt teppi"
+  WHITE_CONCRETE: "hvítt betong"
+  WHITE_CONCRETE_POWDER: "hvítt betongpulvur"
+  WHITE_GLAZED_TERRACOTTA: "hvítt glaserað terrakotta"
+  WHITE_SHULKER_BOX: "hvítur shulkerkassi"
+  WHITE_STAINED_GLASS: "hvítt litað glas"
+  WHITE_STAINED_GLASS_PANE: "hvítt litað glaspanel"
+  WHITE_TERRACOTTA: "hvítt terrakotta"
+  WHITE_TULIP: "hvít tulipan"
+  WHITE_WOOL: "hvít ull"
+  WITHER_ROSE: "witherrósa"
+  WITHER_SKELETON_SKULL: "witherbeinagrindarskøltur"
+  WITHER_SKELETON_WALL_SKULL: "witherbeinagrindarveggskøltur"
+  YELLOW_BANNER: "gult flagg"
+  YELLOW_BED: "gul song"
+  YELLOW_CANDLE: "gult kertiljós"
+  YELLOW_CANDLE_CAKE: "kaka við gugum kertiljósi"
+  YELLOW_CARPET: "gult teppi"
+  YELLOW_CONCRETE: "gult betong"
+  YELLOW_CONCRETE_POWDER: "gult betongpulvur"
+  YELLOW_GLAZED_TERRACOTTA: "gult glaserað terrakotta"
+  YELLOW_SHULKER_BOX: "gulur shulkerkassi"
+  YELLOW_STAINED_GLASS: "gult litað glas"
+  YELLOW_STAINED_GLASS_PANE: "gult litað glaspanel"
+  YELLOW_TERRACOTTA: "gult terrakotta"
+  YELLOW_WOOL: "gul ull"
+  ZOMBIE_HEAD: "zombiehøvd"
+  ZOMBIE_WALL_HEAD: "zombieveggjahøvd"
+  ACACIA_BOAT: "akasiubátur"
+  ACACIA_CHEST_BOAT: "akasiubátur við kistu"
+  ALLAY_SPAWN_EGG: "hjálparandar framkallingaregg"
+  AMETHYST_SHARD: "ametyst flís"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "súrepli"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "brynjuhaldari"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "ørvur"
+  AXOLOTL_BUCKET: "spann við axolotl"
+  AXOLOTL_SPAWN_EGG: "framkallingaregg fyri axolotl"
+  BAKED_POTATO: "bakað epli"
+  BAMBOO_CHEST_RAFT: "bamboo raft with chest"
+  BAMBOO_RAFT: "bamboo raft"
+  BAT_SPAWN_EGG: "framkallingaregg fyri flogmús"
+  BEE_SPAWN_EGG: "framkallingaregg fyri býflugu"
+  BEEF: "rátt oksakjøt"
+  BEETROOT: "reyðrót"
+  BEETROOT_SEEDS: "reyðrótarfræ"
+  BEETROOT_SOUP: "reyðrótarsúpan"
+  BIRCH_BOAT: "bjarkarbátur"
+  BIRCH_CHEST_BOAT: "bjarkarbátur við kistu"
+  BLACK_DYE: "svart litevni"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "logapulvur"
+  BLAZE_ROD: "logastavur"
+  BLAZE_SPAWN_EGG: "framkallingaregg fyri loga"
+  BLUE_DYE: "blátt litevni"
+  BONE: "bein"
+  BONE_MEAL: "beinmjøl"
+  BOOK: "bók"
+  BOW: "bogi"
+  BOWL: "bolli"
+  BREAD: "breyð"
+  BREEZE_SPAWN_EGG: "framkallingaregg fyri flagu"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BREWING_STAND: "brewing stand"
+  BRICK: "múrsteinur"
+  BROWN_DYE: "brúnt litevni"
+  BRUSH: "bust"
+  BUCKET: "spann"
+  BUNDLE: "pjøki"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "camel spawn egg"
+  CARROT: "gularót"
+  CARROT_ON_A_STICK: "gularót á pinni"
+  CAT_SPAWN_EGG: "framkallingaregg fyri kettu"
+  CAULDRON: "cauldron"
+  CAVE_SPIDER_SPAWN_EGG: "framkallingaregg fyri helliseiturkopp"
+  CHAINMAIL_BOOTS: "ringbrynjustivlar"
+  CHAINMAIL_CHESTPLATE: "ringbrynja"
+  CHAINMAIL_HELMET: "ringbrynjuhjálmur"
+  CHAINMAIL_LEGGINGS: "ringbrynjubuksur"
+  CHARCOAL: "trækol"
+  CHERRY_BOAT: "cherry boat"
+  CHERRY_CHEST_BOAT: "cherry boat with chest"
+  CHEST_MINECART: "námsvognur við kistu"
+  CHICKEN: "ráur høsnarungi"
+  CHICKEN_SPAWN_EGG: "framkallingaregg fyri hønu"
+  CHORUS_FRUIT: "chorus-frukt"
+  CLAY_BALL: "leirbóltur"
+  CLOCK: "klokka"
+  COAL: "kol"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  COCOA_BEANS: "kakaobønir"
+  COD: "ráur toskur"
+  COD_BUCKET: "spann við toski"
+  COD_SPAWN_EGG: "framkallingaregg fyri tosk"
+  COMMAND_BLOCK_MINECART: "námsvognur við stýriboðskubba"
+  COMPASS: "kumpass"
+  COOKED_BEEF: "búffur"
+  COOKED_CHICKEN: "kókaður høsnarungi"
+  COOKED_COD: "kókaður toskur"
+  COOKED_MUTTON: "kókað lambskjøt"
+  COOKED_PORKCHOP: "kókað svínakotelett"
+  COOKED_RABBIT: "kókað kaninkjøt"
+  COOKED_SALMON: "kókaður laksur"
+  COOKIE: "smákøka"
+  COPPER_INGOT: "koparstong"
+  COW_SPAWN_EGG: "framkallingaregg fyri kúgv"
+  CREEPER_BANNER_PATTERN: "flaggmynstur"
+  CREEPER_BANNER_PATTERN_DESC: "creepermynstur"
+  CREEPER_SPAWN_EGG: "framkallingaregg fyri creeper"
+  CROSSBOW: "lásbogi"
+  CROSSBOW_PROJECTILE: "skot:"
+  CYAN_DYE: "blágrønt litevni"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "myrkur eikibátur"
+  DARK_OAK_CHEST_BOAT: "myrkur eikibátur við kistu"
+  DEBUG_STICK: "villurfinningarpinnur"
+  DEBUG_STICK_EMPTY: "%s hevur ongar eginleikar"
+  DEBUG_STICK_SELECT: "valdi \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" til %s"
+  DIAMOND: "diamantur"
+  DIAMOND_AXE: "diamantøks"
+  DIAMOND_BOOTS: "diamantstivlar"
+  DIAMOND_CHESTPLATE: "diamantbrynja"
+  DIAMOND_HELMET: "diamanthjálmur"
+  DIAMOND_HOE: "diamant-lúkijarn"
+  DIAMOND_HORSE_ARMOR: "diamantbrynjan til ross"
+  DIAMOND_LEGGINGS: "diamantbuksur"
+  DIAMOND_PICKAXE: "diamanthakkari"
+  DIAMOND_SHOVEL: "diamantspaki"
+  DIAMOND_SWORD: "diamantsvørð"
+  DISC_FRAGMENT_5: "fløgupetti"
+  DISC_FRAGMENT_5_DESC: "tónleikafløga - 5"
+  DOLPHIN_SPAWN_EGG: "framkallingaregg fyri delfin"
+  DONKEY_SPAWN_EGG: "framkallingaregg fyri asna"
+  DRAGON_BREATH: "drekaandi"
+  DRIED_KELP: "turkaður tari"
+  DROWNED_SPAWN_EGG: "druknað framkallingaregg"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  ECHO_SHARD: "ekkóskarð"
+  EGG: "egg"
+  ELDER_GUARDIAN_SPAWN_EGG: "framkallingaregg fyri gamlan verndara"
+  ELYTRA: "elytra"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "rúnabók"
+  ENCHANTED_GOLDEN_APPLE: "gandað gylt súrepli"
+  END_CRYSTAL: "endkrystall"
+  ENDER_DRAGON_SPAWN_EGG: "ender dragon spawn egg"
+  ENDER_EYE: "endereyga"
+  ENDER_PEARL: "ender-perla"
+  ENDERMAN_SPAWN_EGG: "framkallingaregg fyri endermann"
+  ENDERMITE_SPAWN_EGG: "framkallingaregg fyri endermite"
+  EVOKER_SPAWN_EGG: "framkallingaregg fyri vekjara"
+  EXPERIENCE_BOTTLE: "gandafløska"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  FEATHER: "fjøður"
+  FERMENTED_SPIDER_EYE: "ræst eiturkoppaeyga"
+  FILLED_MAP: "kort"
+  FIRE_CHARGE: "eldløðing"
+  FIREWORK_ROCKET: "fýrverksrakett"
+  FIREWORK_ROCKET_FLIGHT: "flogtíð:"
+  FIREWORK_STAR: "fýrverksstjørna"
+  FIREWORK_STAR_BLACK: "svørt"
+  FIREWORK_STAR_BLUE: "blá"
+  FIREWORK_STAR_BROWN: "brún"
+  FIREWORK_STAR_CUSTOM_COLOR: "custom"
+  FIREWORK_STAR_CYAN: "blágrøn"
+  FIREWORK_STAR_FADE_TO: "fána til"
+  FIREWORK_STAR_FLICKER: "glógvan"
+  FIREWORK_STAR_GRAY: "grá"
+  FIREWORK_STAR_GREEN: "grøn"
+  FIREWORK_STAR_LIGHT_BLUE: "ljósablá"
+  FIREWORK_STAR_LIGHT_GRAY: "ljósagrá"
+  FIREWORK_STAR_LIME: "ljósagrøn"
+  FIREWORK_STAR_MAGENTA: "viólreyð"
+  FIREWORK_STAR_ORANGE: "appilsingul"
+  FIREWORK_STAR_PINK: "ljósareyð"
+  FIREWORK_STAR_PURPLE: "lilla"
+  FIREWORK_STAR_RED: "reyð"
+  FIREWORK_STAR_SHAPE: "ókendur formur"
+  FIREWORK_STAR_SHAPE_BURST: "spreinging"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper-formað"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "stórur bóltur"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "lítil bóltur"
+  FIREWORK_STAR_SHAPE_STAR: "stjørnuformað"
+  FIREWORK_STAR_TRAIL: "slóð"
+  FIREWORK_STAR_WHITE: "hvít"
+  FIREWORK_STAR_YELLOW: "gul"
+  FISHING_ROD: "tráða"
+  FLINT: "tinna"
+  FLINT_AND_STEEL: "tinna og stál"
+  FLOWER_BANNER_PATTERN: "banner pattern"
+  FLOWER_BANNER_PATTERN_DESC: "blómumynstur"
+  FLOWER_POT: "flower pot"
+  FOX_SPAWN_EGG: "framkallingaregg fyri rev"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "froskaframkallingaregg"
+  FURNACE_MINECART: "námsvognur við ovni"
+  GHAST_SPAWN_EGG: "framkallingaregg fyri ghast"
+  GHAST_TEAR: "dreygatár"
+  GLASS_BOTTLE: "glasfløska"
+  GLISTERING_MELON_SLICE: "glitrandi vatnmelónsflís"
+  GLOBE_BANNER_PATTERN: "banner pattern"
+  GLOBE_BANNER_PATTERN_DESC: "globus"
+  GLOW_BERRIES: "glow berries"
+  GLOW_INK_SAC: "glow ink sac"
+  GLOW_ITEM_FRAME: "glow item frame"
+  GLOW_SQUID_SPAWN_EGG: "glow squid spawn egg"
+  GLOWSTONE_DUST: "gløðisteinspulvur"
+  GOAT_HORN: "geitahorn"
+  GOAT_SPAWN_EGG: "goat spawn egg"
+  GOLD_INGOT: "gullstong"
+  GOLD_NUGGET: "gullklumpur"
+  GOLDEN_APPLE: "gylt súrepli"
+  GOLDEN_AXE: "gulløks"
+  GOLDEN_BOOTS: "gullstivlar"
+  GOLDEN_CARROT: "gylt gularót"
+  GOLDEN_CHESTPLATE: "gullbrynja"
+  GOLDEN_HELMET: "gullhjálmur"
+  GOLDEN_HOE: "gull-lúkijarn"
+  GOLDEN_HORSE_ARMOR: "gullbrynja til ross"
+  GOLDEN_LEGGINGS: "gullbuksur"
+  GOLDEN_PICKAXE: "gullhakkari"
+  GOLDEN_SHOVEL: "gullspaki"
+  GOLDEN_SWORD: "gullsvørð"
+  GRAY_DYE: "grátt litevni"
+  GREEN_DYE: "grønt litevni"
+  GUARDIAN_SPAWN_EGG: "framkallingaregg fyri verndara"
+  GUNPOWDER: "krút"
+  HEART_OF_THE_SEA: "havsins hjarta"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "framkallingaregg fyri hoglin"
+  HONEY_BOTTLE: "hunangsfløska"
+  HONEYCOMB: "býflugukøka"
+  HOPPER_MINECART: "námsvognur við trakt"
+  HORSE_SPAWN_EGG: "framkallingaregg fyri ross"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "framkallingaregg fyri hylki"
+  INK_SAC: "blekkposi"
+  IRON_AXE: "jarnøks"
+  IRON_BOOTS: "jarnstivlar"
+  IRON_CHESTPLATE: "jarnbrynja"
+  IRON_GOLEM_SPAWN_EGG: "iron golem spawn egg"
+  IRON_HELMET: "jarnhjálmur"
+  IRON_HOE: "jarn-lúkijarn"
+  IRON_HORSE_ARMOR: "jarnbrynjan til ross"
+  IRON_INGOT: "jarnstong"
+  IRON_LEGGINGS: "jarnbuksur"
+  IRON_NUGGET: "jarnklumpur"
+  IRON_PICKAXE: "jarnhakkari"
+  IRON_SHOVEL: "jarnspaki"
+  IRON_SWORD: "jarnsvørð"
+  ITEM_FRAME: "lutaramma"
+  JUNGLE_BOAT: "frumskógarbátur"
+  JUNGLE_CHEST_BOAT: "frumskógarbátur við kistu"
+  KNOWLEDGE_BOOK: "kunnleikabók"
+  LAPIS_LAZULI: "asursteinur"
+  LAVA_BUCKET: "lavaspann"
+  LEAD: "snórur"
+  LEATHER: "leður"
+  LEATHER_BOOTS: "leðurstivlar"
+  LEATHER_CHESTPLATE: "leðurjakki"
+  LEATHER_HELMET: "leðurhattur"
+  LEATHER_HORSE_ARMOR: "leðurrossabrynja"
+  LEATHER_LEGGINGS: "leðurbuksur"
+  LIGHT_BLUE_DYE: "ljósablátt litevni"
+  LIGHT_GRAY_DYE: "ljósagrátt litevni"
+  LIME_DYE: "ljósagrønt litevni"
+  LINGERING_POTION: "viðvarandi drykkur"
+  LINGERING_POTION_EFFECT_AWKWARD: "klombrutur dvøljandi drykkur"
+  LINGERING_POTION_EFFECT_EMPTY: "ikki-evnandi varandi drykkur"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "varandi eldmótstøðudrykkur"
+  LINGERING_POTION_EFFECT_HARMING: "drálur drykkur við skaða"
+  LINGERING_POTION_EFFECT_HEALING: "drálur drykkur við grøðing"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "varandi ósjónleikadrykkur"
+  LINGERING_POTION_EFFECT_LEAPING: "varandi lopdrykkur"
+  LINGERING_POTION_EFFECT_LEVITATION: "drálur drykkur við flóting"
+  LINGERING_POTION_EFFECT_LUCK: "drálur drykkur við lukku"
+  LINGERING_POTION_EFFECT_MUNDANE: "vanligur dvøljandi drykkur"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "dvøljandi náttarsjónardrykkur"
+  LINGERING_POTION_EFFECT_POISON: "drálur drykkur við eituri"
+  LINGERING_POTION_EFFECT_REGENERATION: "drálur drykkur við afturskapan"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "varandi seinfalsdrykkur"
+  LINGERING_POTION_EFFECT_SLOWNESS: "drálur drykkur við seinheit"
+  LINGERING_POTION_EFFECT_STRENGTH: "drálur drykkur við styrki"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "varandi skjótleikadrykkur"
+  LINGERING_POTION_EFFECT_THICK: "tjúkkur dvøljandi drykkur"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "varandi skjaldbøkumeistaradrykkur"
+  LINGERING_POTION_EFFECT_WATER: "dvøljandi vatnfløska"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "drálur drykkur við vatn anding"
+  LINGERING_POTION_EFFECT_WEAKNESS: "drálur drykkur við veikheit"
+  LLAMA_SPAWN_EGG: "framkallingaregg fyri lama"
+  LODESTONE_COMPASS: "leiðarsteinskumpass"
+  MAGENTA_DYE: "viólreytt litevni"
+  MAGMA_CREAM: "magmakrem"
+  MAGMA_CUBE_SPAWN_EGG: "framkallingaregg fyri magmakubba"
+  MANGROVE_BOAT: "mangrovubátur"
+  MANGROVE_CHEST_BOAT: "mangrovubátur við kistu"
+  MAP: "tómt kort"
+  MELON_SEEDS: "vatnmelónsfræ"
+  MELON_SLICE: "vatnmelónsflís"
+  MILK_BUCKET: "dylla"
+  MINECART: "námsvognur"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "banner pattern"
+  MOJANG_BANNER_PATTERN_DESC: "lutmynstur"
+  MOOSHROOM_SPAWN_EGG: "framkallingaregg fyri mooshroom"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "framkallingaregg fyri múldýr"
+  MUSHROOM_STEW: "soppastúvningur"
+  MUSIC_DISC_11: "music disc"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "fløga"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "music disc"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "music disc"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "music disc"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "music disc"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "music disc"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "music disc"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "music disc"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "music disc"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "music disc"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "tónleikafløga"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "music disc"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "music disc"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "music disc"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "music disc"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "rátt lambskjøt"
+  NAME_TAG: "navnaskelti"
+  NAUTILUS_SHELL: "skiparaskeljaskel"
+  NETHER_BRICK: "nethermúrsteinur"
+  NETHER_STAR: "netherstjørna"
+  NETHER_WART: "nether wart"
+  NETHERITE_AXE: "netherittøks"
+  NETHERITE_BOOTS: "netherittstivlar"
+  NETHERITE_CHESTPLATE: "netherittbrynja"
+  NETHERITE_HELMET: "netheritthjálmur"
+  NETHERITE_HOE: "netherittlúkijarn"
+  NETHERITE_INGOT: "netherittstong"
+  NETHERITE_LEGGINGS: "netherittbuksur"
+  NETHERITE_PICKAXE: "netheritthakkari"
+  NETHERITE_SCRAP: "netherittfras"
+  NETHERITE_SHOVEL: "netherittspaki"
+  NETHERITE_SWORD: "netherittsvørð"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smiðjuformur"
+  OAK_BOAT: "eikibátur"
+  OAK_CHEST_BOAT: "eikibátur við kistu"
+  OCELOT_SPAWN_EGG: "framkallingaregg fyri villkatt"
+  ORANGE_DYE: "appilsingult litevni"
+  PAINTING: "málarí"
+  PANDA_SPAWN_EGG: "framkallingaregg fyri pandu"
+  PAPER: "pappír"
+  PARROT_SPAWN_EGG: "framkallingaregg fyri pappageyk"
+  PHANTOM_MEMBRANE: "dreygahinna"
+  PHANTOM_SPAWN_EGG: "framkallingaregg fyri dreyg"
+  PIG_SPAWN_EGG: "framkallingaregg fyri grís"
+  PIGLIN_BANNER_PATTERN: "banner pattern"
+  PIGLIN_BANNER_PATTERN_DESC: "snúti"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin brute spawn egg"
+  PIGLIN_SPAWN_EGG: "framkallingaregg fyri piglin"
+  PILLAGER_SPAWN_EGG: "framkallingaregg fyri ránsfólk"
+  PINK_DYE: "ljósareytt litevni"
+  PITCHER_POD: "pitcher pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "eitrað epli"
+  POLAR_BEAR_SPAWN_EGG: "framkallingaregg fyri ísbjørn"
+  POPPED_CHORUS_FRUIT: "opin chorus-frukt"
+  PORKCHOP: "rá svínakotelett"
+  POTATO: "epli"
+  POTION: "drykkur"
+  POTION_EFFECT_AWKWARD: "klombrutur drykkur"
+  POTION_EFFECT_EMPTY: "ikki-evnaligur drykkur"
+  POTION_EFFECT_FIRE_RESISTANCE: "eldmótstøðudrykkur"
+  POTION_EFFECT_HARMING: "skaðadrykkur"
+  POTION_EFFECT_HEALING: "heilsudrykkur"
+  POTION_EFFECT_INVISIBILITY: "ósjónleikadrykkur"
+  POTION_EFFECT_LEAPING: "lopdrykkur"
+  POTION_EFFECT_LEVITATION: "sveimidrykkur"
+  POTION_EFFECT_LUCK: "eydnudrykkur"
+  POTION_EFFECT_MUNDANE: "gerandisligur drykkur"
+  POTION_EFFECT_NIGHT_VISION: "náttarsjónsdrykkur"
+  POTION_EFFECT_POISON: "eiturdrykkur"
+  POTION_EFFECT_REGENERATION: "afturskapanardrykkur"
+  POTION_EFFECT_SLOW_FALLING: "fjøðurfalls drykkur"
+  POTION_EFFECT_SLOWNESS: "seinleikadrykkur"
+  POTION_EFFECT_STRENGTH: "styrkidrykkur"
+  POTION_EFFECT_SWIFTNESS: "fimisdrykkur"
+  POTION_EFFECT_THICK: "tjúkkur drykkur"
+  POTION_EFFECT_TURTLE_MASTER: "skjaldbøkumeistaradrykkur"
+  POTION_EFFECT_WATER: "vatnfløska"
+  POTION_EFFECT_WATER_BREATHING: "táknardrykkur"
+  POTION_EFFECT_WEAKNESS: "veikleikadrykkur"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "powder snow bucket"
+  PRISMARINE_CRYSTALS: "prismarinkrystallir"
+  PRISMARINE_SHARD: "prismarinbrot"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "ígulfiskur"
+  PUFFERFISH_BUCKET: "spann við ígulfiski"
+  PUFFERFISH_SPAWN_EGG: "framkallingaregg fyri kúlufisk"
+  PUMPKIN_PIE: "graskerjaterta"
+  PUMPKIN_SEEDS: "graskerjafræ"
+  PURPLE_DYE: "lilla litevni"
+  QUARTZ: "netherkvarts"
+  RABBIT: "rá kanin"
+  RABBIT_FOOT: "kaninfótur"
+  RABBIT_HIDE: "kaninskinn"
+  RABBIT_SPAWN_EGG: "framkallingaregg fyri kanin"
+  RABBIT_STEW: "kaninstúvningur"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  RAVAGER_SPAWN_EGG: "framkallingaregg fyri herjara"
+  RAW_COPPER: "rátt koppar"
+  RAW_GOLD: "rátt gull"
+  RAW_IRON: "rátt jarn"
+  RECOVERY_COMPASS: "afturfinningarkumpass"
+  RED_DYE: "reytt litevni"
+  REDSTONE: "reyðsteinsdust"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  ROTTEN_FLESH: "rotið kjøt"
+  SADDLE: "saðil"
+  SALMON: "ráur laksur"
+  SALMON_BUCKET: "spann við laksi"
+  SALMON_SPAWN_EGG: "framkallingaregg fyri laks"
+  SCUTE: "skel"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "saksur"
+  SHEEP_SPAWN_EGG: "framkallingaregg fyri seyð"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "skjøldur"
+  SHIELD_BLACK: "svart skjøldur"
+  SHIELD_BLUE: "blátt skjøldur"
+  SHIELD_BROWN: "brúnt skjøldur"
+  SHIELD_CYAN: "turkis skjøldur"
+  SHIELD_GRAY: "grátt skjøldur"
+  SHIELD_GREEN: "grønt skjøldur"
+  SHIELD_LIGHT_BLUE: "ljósa blátt skjøldur"
+  SHIELD_LIGHT_GRAY: "ljósa grátt skjøldur"
+  SHIELD_LIME: "ljósagrønt skjøldur"
+  SHIELD_MAGENTA: "viólreytt skjøldur"
+  SHIELD_ORANGE: "appelsingult skjøldur"
+  SHIELD_PINK: "ljósa reytt skjøldur"
+  SHIELD_PURPLE: "lilla skjøldur"
+  SHIELD_RED: "reytt skjøldur"
+  SHIELD_WHITE: "hvítt skjøldur"
+  SHIELD_YELLOW: "gult skjøldur"
+  SHULKER_SHELL: "shulkerskel"
+  SHULKER_SPAWN_EGG: "framkallingaregg fyri shulker"
+  SIGN: "sign"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  SILVERFISH_SPAWN_EGG: "framkallingaregg fyri silvurfisk"
+  SKELETON_HORSE_SPAWN_EGG: "framkallingaregg fyri beinross"
+  SKELETON_SPAWN_EGG: "framkallingaregg fyri beinagrind"
+  SKULL_BANNER_PATTERN: "banner pattern"
+  SKULL_BANNER_PATTERN_DESC: "skøltursmynstur"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "skull pottery sherd"
+  SLIME_BALL: "slímbóltur"
+  SLIME_SPAWN_EGG: "framkallingaregg fyri slím"
+  SMITHING_TEMPLATE: "smithing template"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "add ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "add a piece of armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ingots & crystals"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredients:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "add netherite ingot"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamond equipment"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "add diamond armor weapon or tool"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ingot"
+  SMITHING_TEMPLATE_UPGRADE: "upgrade: "
+  SNIFFER_SPAWN_EGG: "sniffer spawn egg"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  SNOW_GOLEM_SPAWN_EGG: "snow golem spawn egg"
+  SNOWBALL: "kavablak"
+  SPECTRAL_ARROW: "spektralørvur"
+  SPIDER_EYE: "eiturkoppaeyga"
+  SPIDER_SPAWN_EGG: "framkallingaregg fyri eiturkopp"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  SPLASH_POTION: "sproytandi drykkur"
+  SPLASH_POTION_EFFECT_AWKWARD: "klombrutur sproytandi drykkur"
+  SPLASH_POTION_EFFECT_EMPTY: "ikki-bryggjandi sproytandi drykkur"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "sproytandi eldmóstøðudrykkur"
+  SPLASH_POTION_EFFECT_HARMING: "sproytandi skaðadrykkur"
+  SPLASH_POTION_EFFECT_HEALING: "sproytandi heilsudrykkur"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "sproytandi ósjónligheitsdrykkur"
+  SPLASH_POTION_EFFECT_LEAPING: "sproytandi lopdrykkur"
+  SPLASH_POTION_EFFECT_LEVITATION: "sproytandi sveimidrykkur"
+  SPLASH_POTION_EFFECT_LUCK: "sproytandi eydnudrykkur"
+  SPLASH_POTION_EFFECT_MUNDANE: "vanligur sproytandi drykkur"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "sproytandi náttarsjónsdrykkur"
+  SPLASH_POTION_EFFECT_POISON: "sproytandi eiturdrykkur"
+  SPLASH_POTION_EFFECT_REGENERATION: "sproytandi endurskapanardrykkur"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "sproytandi drykkur fyri at falla seint"
+  SPLASH_POTION_EFFECT_SLOWNESS: "sproytandi seinleikadrykkur"
+  SPLASH_POTION_EFFECT_STRENGTH: "sproytandi styrkidrykkur"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "sproytandi fimisdrykkur"
+  SPLASH_POTION_EFFECT_THICK: "tjúkkur sproytandi drykkur"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "sproytandi skjaldbøkumeistaradrykkur"
+  SPLASH_POTION_EFFECT_WATER: "sproytandi vatnfløska"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "sproytandi vatnandingardrykkur"
+  SPLASH_POTION_EFFECT_WEAKNESS: "sproytandi veikleikadrykkur"
+  SPRUCE_BOAT: "grannbátur"
+  SPRUCE_CHEST_BOAT: "grannbátur við kistu"
+  SPYGLASS: "lítil kikari"
+  SQUID_SPAWN_EGG: "framkallingaregg fyri høgguslokk"
+  STICK: "pinnur"
+  STONE_AXE: "steinøks"
+  STONE_HOE: "stein-lúkijarn"
+  STONE_PICKAXE: "steinhakkari"
+  STONE_SHOVEL: "steinspaki"
+  STONE_SWORD: "steinsvørð"
+  STRAY_SPAWN_EGG: "framkallingaregg fyri reikara"
+  STRIDER_SPAWN_EGG: "framkallingaregg fyri gleivara"
+  STRING: "tráður"
+  SUGAR: "sukur"
+  SUSPICIOUS_STEW: "ilgrunasamur grýturættur"
+  SWEET_BERRIES: "søt ber"
+  TADPOLE_BUCKET: "spann við sporlapaddum"
+  TADPOLE_SPAWN_EGG: "sporlapadduframkallingaregg"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  TIPPED_ARROW: "dyppaður ørvur"
+  TIPPED_ARROW_EFFECT_AWKWARD: "tipped arrow"
+  TIPPED_ARROW_EFFECT_EMPTY: "ikki-evnaligur dyppaður ørvur"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "ørvur fyri eldmótstøðu"
+  TIPPED_ARROW_EFFECT_HARMING: "ørvur at skaða"
+  TIPPED_ARROW_EFFECT_HEALING: "ørvur at lekja"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "ósjónleikaørvur"
+  TIPPED_ARROW_EFFECT_LEAPING: "ørvur fyri risalop"
+  TIPPED_ARROW_EFFECT_LEVITATION: "sveimiørvur"
+  TIPPED_ARROW_EFFECT_LUCK: "eydnuørvur"
+  TIPPED_ARROW_EFFECT_MUNDANE: "tipped arrow"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "ørvur fyri náttarsjón"
+  TIPPED_ARROW_EFFECT_POISON: "eiturørvur"
+  TIPPED_ARROW_EFFECT_REGENERATION: "endurskapanarørvur"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "ørvur at falla seint"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "ørvur fyri seinføri"
+  TIPPED_ARROW_EFFECT_STRENGTH: "styrkisørvur"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "ørvur fyri kvikleika"
+  TIPPED_ARROW_EFFECT_THICK: "tipped arrow"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "ørvur skjaldbøkumeistarans"
+  TIPPED_ARROW_EFFECT_WATER: "sproytandi ørvur"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "ørvur at anda undir vatni"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "veikleikaørvur"
+  TNT_MINECART: "námsvognur við tnt"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "ódeyðleikans totem"
+  TRADER_LLAMA_SPAWN_EGG: "framkallingaregg fyri handilsmannalama"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "trítindur"
+  TROPICAL_FISH: "tropiskur fiskur"
+  TROPICAL_FISH_BUCKET: "spann við tropiskum fiski"
+  TROPICAL_FISH_SPAWN_EGG: "framkallingaregg fyri tropiskan fisk"
+  TURTLE_HELMET: "skjaldbøkuskel"
+  TURTLE_SPAWN_EGG: "framkallingaregg fyri skjaldbøku"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  VEX_SPAWN_EGG: "framkallingaregg fyri plágara"
+  VILLAGER_SPAWN_EGG: "framkallingaregg fyri bygdarfólk"
+  VINDICATOR_SPAWN_EGG: "framkallingaregg fyri rættvísisfólk"
+  WANDERING_TRADER_SPAWN_EGG: "framkallingaregg fyri reikandi handilsmann"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  WARDEN_SPAWN_EGG: "vaktaraframkallingaregg"
+  WARPED_FUNGUS_ON_A_STICK: "tryglusoppur á einum pinni"
+  WATER_BUCKET: "vatnspann"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  WHEAT: "hveiti"
+  WHEAT_SEEDS: "hveitifræ"
+  WHITE_DYE: "hvítt litevni"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smiðjuformur"
+  WITCH_SPAWN_EGG: "framkallingaregg fyri gívur"
+  WITHER_SKELETON_SPAWN_EGG: "framkallingaregg fyri witherbeinagrind"
+  WITHER_SPAWN_EGG: "wither spawn egg"
+  WOLF_SPAWN_EGG: "kveikjuegg fyri úlv"
+  WOODEN_AXE: "træøks"
+  WOODEN_HOE: "træ-lúkijarn"
+  WOODEN_PICKAXE: "træhakkari"
+  WOODEN_SHOVEL: "træspaki"
+  WOODEN_SWORD: "træsvørð"
+  WRITABLE_BOOK: "bók og fjaðurpennur"
+  WRITTEN_BOOK: "skrivað bók"
+  YELLOW_DYE: "gult litevni"
+  ZOGLIN_SPAWN_EGG: "framkallingaregg fyri zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "framkallingaregg fyri zombieross"
+  ZOMBIE_SPAWN_EGG: "framkallingaregg fyri zombie"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "framkallingaregg fyri zombiebygdarfólk"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "framkallingaregg fyri deydningarpiglin"
+  CHEST: "when on body:"
+  FEET: "when on feet:"
+  HEAD: "when on head:"
+  LEGS: "when on legs:"
+  MAINHAND: "when in main hand:"
+  OFFHAND: "when in off hand:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

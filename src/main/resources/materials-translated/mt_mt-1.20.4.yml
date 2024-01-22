@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "buttuna tal-aka ċja"
+  ACACIA_DOOR: "bieb tal-akaċja"
+  ACACIA_FENCE: "ċint tal-akaċja"
+  ACACIA_FENCE_GATE: "grada tal-akaċja"
+  ACACIA_HANGING_SIGN: "tabella tiddendel tal-akaċja"
+  ACACIA_LEAVES: "weraq tal-akaċja"
+  ACACIA_LOG: "ġurnal ta ' l-aka ċja"
+  ACACIA_PLANKS: "planks tal-aka ċja"
+  ACACIA_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-aka ċja"
+  ACACIA_SAPLING: "żgħar tal-akaċja"
+  ACACIA_SIGN: "sinjal tal-aka ċja"
+  ACACIA_SLAB: "ċangun tal-akaċja"
+  ACACIA_STAIRS: "taraġ tal-akaċja"
+  ACACIA_TRAPDOOR: "bokkaport tal-akaċja"
+  ACACIA_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-akaċja"
+  ACACIA_WALL_SIGN: "sinjal tal-ħajt tal-aka ċja"
+  ACACIA_WOOD: "injam tal-akaċja"
+  ACTIVATOR_RAIL: "linji jattivaw"
+  AIR: "arja"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "blokk ta ' amethyst"
+  AMETHYST_CLUSTER: "amethyst raggruppament"
+  ANCIENT_DEBRIS: "tifrik antik"
+  ANDESITE: "andesite"
+  ANDESITE_SLAB: "ċangun tal-andesit"
+  ANDESITE_STAIRS: "taraġ tal-andesit"
+  ANDESITE_WALL: "ħajt tal-andesit"
+  ANVIL: "inkwina"
+  ATTACHED_MELON_STEM: "zokk assoċjat tal-bettieħa"
+  ATTACHED_PUMPKIN_STEM: "zokk imqabbad ma ' qara '"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "weraq tal-azalea"
+  AZURE_BLUET: "azure bluet"
+  BAMBOO: "bambu'"
+  BAMBOO_BLOCK: "blokk tal-bambu"
+  BAMBOO_BUTTON: "buttuna tal-bambu'"
+  BAMBOO_DOOR: "bieb tal-bambu'"
+  BAMBOO_FENCE: "ċint tal-bambu'"
+  BAMBOO_FENCE_GATE: "grada tal-bambu'"
+  BAMBOO_HANGING_SIGN: "tabella tiddendel tal-bambu'"
+  BAMBOO_MOSAIC: "mużajk tal-bambu'"
+  BAMBOO_MOSAIC_SLAB: "ċangun tal-mużajk tal-bambu'"
+  BAMBOO_MOSAIC_STAIRS: "taraġ tal-mużajk tal-bambu'"
+  BAMBOO_PLANKS: "planki tal-bambu'"
+  BAMBOO_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-bambu'"
+  BAMBOO_SAPLING: "rimja tal-bambu"
+  BAMBOO_SIGN: "tabella tal-bambu'"
+  BAMBOO_SLAB: "ċangun tal-bambu'"
+  BAMBOO_STAIRS: "taraġ tal-bambu'"
+  BAMBOO_TRAPDOOR: "bokkaport tal-bambu'"
+  BAMBOO_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-bambu'"
+  BAMBOO_WALL_SIGN: "tabella tal-ħajt tal-bambu'"
+  BANNER_BASE_BLACK: "qasam kompletament iswed"
+  BANNER_BASE_BLUE: "qasam blu kompletament"
+  BANNER_BASE_BROWN: "qasam kannella kompletament"
+  BANNER_BASE_CYAN: "qasam ċjan għal kollox"
+  BANNER_BASE_GRAY: "qasam kompletament griż"
+  BANNER_BASE_GREEN: "qasam kompletament aħdar"
+  BANNER_BASE_LIGHT_BLUE: "kamp blu ċar kompletament"
+  BANNER_BASE_LIGHT_GRAY: "qasam griż ħafif kompletament"
+  BANNER_BASE_LIME: "qasam tal-ġir kompletament"
+  BANNER_BASE_MAGENTA: "qasam maġenta għal kollox"
+  BANNER_BASE_ORANGE: "qasam kompletament oranġjo"
+  BANNER_BASE_PINK: "qasam roża kompletament"
+  BANNER_BASE_PURPLE: "qasam vjola kompletament"
+  BANNER_BASE_RED: "qasam aħmar kompletament"
+  BANNER_BASE_WHITE: "qasam kompletament abjad"
+  BANNER_BASE_YELLOW: "qasam isfar għal kollox"
+  BANNER_BORDER_BLACK: "black bordure"
+  BANNER_BORDER_BLUE: "blue bordure"
+  BANNER_BORDER_BROWN: "brown bordure"
+  BANNER_BORDER_CYAN: "cyan bordure"
+  BANNER_BORDER_GRAY: "gray bordure"
+  BANNER_BORDER_GREEN: "green bordure"
+  BANNER_BORDER_LIGHT_BLUE: "light blue bordure"
+  BANNER_BORDER_LIGHT_GRAY: "light gray bordure"
+  BANNER_BORDER_LIME: "lime bordure"
+  BANNER_BORDER_MAGENTA: "magenta bordure"
+  BANNER_BORDER_ORANGE: "orange bordure"
+  BANNER_BORDER_PINK: "pink bordure"
+  BANNER_BORDER_PURPLE: "purple bordure"
+  BANNER_BORDER_RED: "red bordure"
+  BANNER_BORDER_WHITE: "white bordure"
+  BANNER_BORDER_YELLOW: "yellow bordure"
+  BANNER_BRICKS_BLACK: "black field masoned"
+  BANNER_BRICKS_BLUE: "blue field masoned"
+  BANNER_BRICKS_BROWN: "brown field masoned"
+  BANNER_BRICKS_CYAN: "cyan field masoned"
+  BANNER_BRICKS_GRAY: "gray field masoned"
+  BANNER_BRICKS_GREEN: "green field masoned"
+  BANNER_BRICKS_LIGHT_BLUE: "light blue field masoned"
+  BANNER_BRICKS_LIGHT_GRAY: "light gray field masoned"
+  BANNER_BRICKS_LIME: "lime field masoned"
+  BANNER_BRICKS_MAGENTA: "magenta field masoned"
+  BANNER_BRICKS_ORANGE: "orange field masoned"
+  BANNER_BRICKS_PINK: "pink field masoned"
+  BANNER_BRICKS_PURPLE: "purple field masoned"
+  BANNER_BRICKS_RED: "red field masoned"
+  BANNER_BRICKS_WHITE: "white field masoned"
+  BANNER_BRICKS_YELLOW: "yellow field masoned"
+  BANNER_CIRCLE_BLACK: "black roundel"
+  BANNER_CIRCLE_BLUE: "blue roundel"
+  BANNER_CIRCLE_BROWN: "brown roundel"
+  BANNER_CIRCLE_CYAN: "cyan roundel"
+  BANNER_CIRCLE_GRAY: "gray roundel"
+  BANNER_CIRCLE_GREEN: "green roundel"
+  BANNER_CIRCLE_LIGHT_BLUE: "light blue roundel"
+  BANNER_CIRCLE_LIGHT_GRAY: "light gray roundel"
+  BANNER_CIRCLE_LIME: "lime roundel"
+  BANNER_CIRCLE_MAGENTA: "magenta roundel"
+  BANNER_CIRCLE_ORANGE: "orange roundel"
+  BANNER_CIRCLE_PINK: "pink roundel"
+  BANNER_CIRCLE_PURPLE: "purple roundel"
+  BANNER_CIRCLE_RED: "red roundel"
+  BANNER_CIRCLE_WHITE: "white roundel"
+  BANNER_CIRCLE_YELLOW: "yellow roundel"
+  BANNER_CREEPER_BLACK: "black creeper charge"
+  BANNER_CREEPER_BLUE: "ċarġ ta creeper blu"
+  BANNER_CREEPER_BROWN: "ċarġ ta creeper kannella"
+  BANNER_CREEPER_CYAN: "cyan creeper charge"
+  BANNER_CREEPER_GRAY: "ċarġ ta creeper griz"
+  BANNER_CREEPER_GREEN: "ċarġ ta creeper aħdar"
+  BANNER_CREEPER_LIGHT_BLUE: "ċarġ ta creeper blue car"
+  BANNER_CREEPER_LIGHT_GRAY: "ċarġ ta creeper griz car"
+  BANNER_CREEPER_LIME: "ċarġ ta creeper lumicella"
+  BANNER_CREEPER_MAGENTA: "ċarġ ta creeper magenta"
+  BANNER_CREEPER_ORANGE: "ċarġ ta creeper orangjo"
+  BANNER_CREEPER_PINK: "ċarġ ta creeper roza"
+  BANNER_CREEPER_PURPLE: "ċarġ ta creeper viola"
+  BANNER_CREEPER_RED: "red creeper charge"
+  BANNER_CREEPER_WHITE: "ċarġ ta creeper abjad"
+  BANNER_CREEPER_YELLOW: "ċarġ ta creeper isfar"
+  BANNER_CROSS_BLACK: "salib ta' sant' andrija iswed"
+  BANNER_CROSS_BLUE: "salib ta' sant' andrija ikħal"
+  BANNER_CROSS_BROWN: "salib ta' sant' andrija kannella"
+  BANNER_CROSS_CYAN: "salib ta' sant' andrija ċilesti"
+  BANNER_CROSS_GRAY: "salib ta' sant' andrija griż"
+  BANNER_CROSS_GREEN: "salib ta' sant' andrija aħdar"
+  BANNER_CROSS_LIGHT_BLUE: "salib ta' sant' andrija ikħal ċar"
+  BANNER_CROSS_LIGHT_GRAY: "salib ta' sant' andrija griż ċar"
+  BANNER_CROSS_LIME: "salib ta' sant' andrija aħdar ċar"
+  BANNER_CROSS_MAGENTA: "salib ta' sant' andrija vjola ċar"
+  BANNER_CROSS_ORANGE: "salib ta' sant' andrija orangjo"
+  BANNER_CROSS_PINK: "salib ta' sant' andrija roża"
+  BANNER_CROSS_PURPLE: "salib ta' sant' andrija vjola"
+  BANNER_CROSS_RED: "salib ta' sant' andrija aħmar"
+  BANNER_CROSS_WHITE: "salib ta' sant' andrija abjad"
+  BANNER_CROSS_YELLOW: "salib ta' sant' andrija isfar"
+  BANNER_CURLY_BORDER_BLACK: "black bordure indented"
+  BANNER_CURLY_BORDER_BLUE: "blue bordure indented"
+  BANNER_CURLY_BORDER_BROWN: "brown bordure indented"
+  BANNER_CURLY_BORDER_CYAN: "cyan bordure indented"
+  BANNER_CURLY_BORDER_GRAY: "gray bordure indented"
+  BANNER_CURLY_BORDER_GREEN: "green bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "light blue bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "light gray bordure indented"
+  BANNER_CURLY_BORDER_LIME: "lime bordure indented"
+  BANNER_CURLY_BORDER_MAGENTA: "magenta bordure indented"
+  BANNER_CURLY_BORDER_ORANGE: "orange bordure indented"
+  BANNER_CURLY_BORDER_PINK: "pink bordure indented"
+  BANNER_CURLY_BORDER_PURPLE: "purple bordure indented"
+  BANNER_CURLY_BORDER_RED: "red bordure indented"
+  BANNER_CURLY_BORDER_WHITE: "white bordure indented"
+  BANNER_CURLY_BORDER_YELLOW: "yellow bordure indented"
+  BANNER_DIAGONAL_LEFT_BLACK: "black per bend sinister"
+  BANNER_DIAGONAL_LEFT_BLUE: "blue per bend sinister"
+  BANNER_DIAGONAL_LEFT_BROWN: "brown per bend sinister"
+  BANNER_DIAGONAL_LEFT_CYAN: "cyan per bend sinister"
+  BANNER_DIAGONAL_LEFT_GRAY: "gray per bend sinister"
+  BANNER_DIAGONAL_LEFT_GREEN: "green per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "light blue per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "light gray per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIME: "lime per bend sinister"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta per bend sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange per bend sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "pink per bend sinister"
+  BANNER_DIAGONAL_LEFT_PURPLE: "purple per bend sinister"
+  BANNER_DIAGONAL_LEFT_RED: "red per bend sinister"
+  BANNER_DIAGONAL_LEFT_WHITE: "white per bend sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "yellow per bend sinister"
+  BANNER_DIAGONAL_RIGHT_BLACK: "black per bend"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blue per bend"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brown per bend"
+  BANNER_DIAGONAL_RIGHT_CYAN: "cyan per bend"
+  BANNER_DIAGONAL_RIGHT_GRAY: "gray per bend"
+  BANNER_DIAGONAL_RIGHT_GREEN: "green per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "light blue per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "light gray per bend"
+  BANNER_DIAGONAL_RIGHT_LIME: "lime per bend"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta per bend"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "orange per bend"
+  BANNER_DIAGONAL_RIGHT_PINK: "pink per bend"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "purple per bend"
+  BANNER_DIAGONAL_RIGHT_RED: "red per bend"
+  BANNER_DIAGONAL_RIGHT_WHITE: "white per bend"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "yellow per bend"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "black per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blue per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brown per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "cyan per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "gray per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "green per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "light blue per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "light gray per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "lime per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "orange per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "pink per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "purple per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_RED: "red per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "white per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "yellow per bend inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "black per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blue per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brown per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "cyan per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "gray per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "green per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "pink per bend sinister"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "light gray per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "lime per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "orange per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "pink per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "purple per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "red per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "white per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "yellow per bend sinister inverted"
+  BANNER_FLOWER_BLACK: "black flower charge"
+  BANNER_FLOWER_BLUE: "blue flower charge"
+  BANNER_FLOWER_BROWN: "brown flower charge"
+  BANNER_FLOWER_CYAN: "cyan flower charge"
+  BANNER_FLOWER_GRAY: "gray flower charge"
+  BANNER_FLOWER_GREEN: "green flower charge"
+  BANNER_FLOWER_LIGHT_BLUE: "light blue flower charge"
+  BANNER_FLOWER_LIGHT_GRAY: "light gray flower charge"
+  BANNER_FLOWER_LIME: "lime flower charge"
+  BANNER_FLOWER_MAGENTA: "magenta flower charge"
+  BANNER_FLOWER_ORANGE: "orange flower charge"
+  BANNER_FLOWER_PINK: "pink flower charge"
+  BANNER_FLOWER_PURPLE: "purple flower charge"
+  BANNER_FLOWER_RED: "red flower charge"
+  BANNER_FLOWER_WHITE: "white flower charge"
+  BANNER_FLOWER_YELLOW: "yellow flower charge"
+  BANNER_GLOBE_BLACK: "globu iswed"
+  BANNER_GLOBE_BLUE: "globu blu"
+  BANNER_GLOBE_BROWN: "globu kannella"
+  BANNER_GLOBE_CYAN: "dinja ta ' cyan"
+  BANNER_GLOBE_GRAY: "dinja griża"
+  BANNER_GLOBE_GREEN: "globu aħdar"
+  BANNER_GLOBE_LIGHT_BLUE: "globu blu ċar"
+  BANNER_GLOBE_LIGHT_GRAY: "gloy dinja"
+  BANNER_GLOBE_LIME: "globu tal-lajm"
+  BANNER_GLOBE_MAGENTA: "dinja ta ' magenta"
+  BANNER_GLOBE_ORANGE: "globu oranġjo"
+  BANNER_GLOBE_PINK: "globu roża"
+  BANNER_GLOBE_PURPLE: "globu vjola"
+  BANNER_GLOBE_RED: "globu aħmar"
+  BANNER_GLOBE_WHITE: "globu abjad"
+  BANNER_GLOBE_YELLOW: "globu isfar"
+  BANNER_GRADIENT_BLACK: "black gradient"
+  BANNER_GRADIENT_BLUE: "blue gradient"
+  BANNER_GRADIENT_BROWN: "brown gradient"
+  BANNER_GRADIENT_CYAN: "cyan gradient"
+  BANNER_GRADIENT_GRAY: "gray gradient"
+  BANNER_GRADIENT_GREEN: "green gradient"
+  BANNER_GRADIENT_LIGHT_BLUE: "light blue gradient"
+  BANNER_GRADIENT_LIGHT_GRAY: "light gray gradient"
+  BANNER_GRADIENT_LIME: "lime gradient"
+  BANNER_GRADIENT_MAGENTA: "magenta gradient"
+  BANNER_GRADIENT_ORANGE: "orange gradient"
+  BANNER_GRADIENT_PINK: "pink gradient"
+  BANNER_GRADIENT_PURPLE: "purple gradient"
+  BANNER_GRADIENT_RED: "red gradient"
+  BANNER_GRADIENT_WHITE: "white gradient"
+  BANNER_GRADIENT_YELLOW: "yellow gradient"
+  BANNER_GRADIENT_UP_BLACK: "black base gradient"
+  BANNER_GRADIENT_UP_BLUE: "blue base gradient"
+  BANNER_GRADIENT_UP_BROWN: "brown base gradient"
+  BANNER_GRADIENT_UP_CYAN: "cyan base gradient"
+  BANNER_GRADIENT_UP_GRAY: "gray base gradient"
+  BANNER_GRADIENT_UP_GREEN: "green base gradient"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "light blue base gradient"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "light gray base gradient"
+  BANNER_GRADIENT_UP_LIME: "lime base gradient"
+  BANNER_GRADIENT_UP_MAGENTA: "magenta base gradient"
+  BANNER_GRADIENT_UP_ORANGE: "orange base gradient"
+  BANNER_GRADIENT_UP_PINK: "pink base gradient"
+  BANNER_GRADIENT_UP_PURPLE: "purple base gradient"
+  BANNER_GRADIENT_UP_RED: "red base gradient"
+  BANNER_GRADIENT_UP_WHITE: "white base gradient"
+  BANNER_GRADIENT_UP_YELLOW: "yellow base gradient"
+  BANNER_HALF_HORIZONTAL_BLACK: "black per fess"
+  BANNER_HALF_HORIZONTAL_BLUE: "blue per fess"
+  BANNER_HALF_HORIZONTAL_BROWN: "brown per fess"
+  BANNER_HALF_HORIZONTAL_CYAN: "cyan per fess"
+  BANNER_HALF_HORIZONTAL_GRAY: "gray per fess"
+  BANNER_HALF_HORIZONTAL_GREEN: "green per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "light blue per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "light gray per fess"
+  BANNER_HALF_HORIZONTAL_LIME: "lime per fess"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "magenta per fess"
+  BANNER_HALF_HORIZONTAL_ORANGE: "orange per fess"
+  BANNER_HALF_HORIZONTAL_PINK: "pink per fess"
+  BANNER_HALF_HORIZONTAL_PURPLE: "purple per fess"
+  BANNER_HALF_HORIZONTAL_RED: "red per fess"
+  BANNER_HALF_HORIZONTAL_WHITE: "white per fess"
+  BANNER_HALF_HORIZONTAL_YELLOW: "yellow per fess"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "black per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blue per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brown per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cyan per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "gray per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "green per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "light blue per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "light gray per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "lime per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "magenta per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "orange per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "pink per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "purple per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "red per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "white per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "yellow per fess inverted"
+  BANNER_HALF_VERTICAL_BLACK: "black per pale"
+  BANNER_HALF_VERTICAL_BLUE: "blue per pale"
+  BANNER_HALF_VERTICAL_BROWN: "brown per pale"
+  BANNER_HALF_VERTICAL_CYAN: "cyan per pale"
+  BANNER_HALF_VERTICAL_GRAY: "gray per pale"
+  BANNER_HALF_VERTICAL_GREEN: "green per pale"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "light blue per pale"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "light gray per pale"
+  BANNER_HALF_VERTICAL_LIME: "lime per pale"
+  BANNER_HALF_VERTICAL_MAGENTA: "magenta per pale"
+  BANNER_HALF_VERTICAL_ORANGE: "orange per pale"
+  BANNER_HALF_VERTICAL_PINK: "pink per pale"
+  BANNER_HALF_VERTICAL_PURPLE: "purple per pale"
+  BANNER_HALF_VERTICAL_RED: "red per pale"
+  BANNER_HALF_VERTICAL_WHITE: "white per pale"
+  BANNER_HALF_VERTICAL_YELLOW: "yellow per pale"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "black per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blue per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brown per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "cyan per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "gray per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "green per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "light blue per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "light gray per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "lime per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "magenta per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "orange per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "pink per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "purple per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "red per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "white per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "yellow per pale inverted"
+  BANNER_MOJANG_BLACK: "ħaġa sewda"
+  BANNER_MOJANG_BLUE: "ħaġa blu"
+  BANNER_MOJANG_BROWN: "ħaġa kannella"
+  BANNER_MOJANG_CYAN: "ħaġa cyan"
+  BANNER_MOJANG_GRAY: "ħaġa griża"
+  BANNER_MOJANG_GREEN: "ħaġa ħadra"
+  BANNER_MOJANG_LIGHT_BLUE: "ħaġa blue car"
+  BANNER_MOJANG_LIGHT_GRAY: "ħaġa griż car"
+  BANNER_MOJANG_LIME: "ħaġa lumicella"
+  BANNER_MOJANG_MAGENTA: "magenta thing"
+  BANNER_MOJANG_ORANGE: "orange thing"
+  BANNER_MOJANG_PINK: "ħaġa roża"
+  BANNER_MOJANG_PURPLE: "ħaġa vjola"
+  BANNER_MOJANG_RED: "ħaġa ħamra"
+  BANNER_MOJANG_WHITE: "white thing"
+  BANNER_MOJANG_YELLOW: "ħaġa safra"
+  BANNER_PIGLIN_BLACK: "geddum iswed"
+  BANNER_PIGLIN_BLUE: "geddum blu"
+  BANNER_PIGLIN_BROWN: "geddum kannella"
+  BANNER_PIGLIN_CYAN: "geddum cyan"
+  BANNER_PIGLIN_GRAY: "geddum griż"
+  BANNER_PIGLIN_GREEN: "geddum gdid"
+  BANNER_PIGLIN_LIGHT_BLUE: "geddum blu ċar"
+  BANNER_PIGLIN_LIGHT_GRAY: "geddum griż ċar"
+  BANNER_PIGLIN_LIME: "geddum ġir"
+  BANNER_PIGLIN_MAGENTA: "geddum maġenta"
+  BANNER_PIGLIN_ORANGE: "geddum oranġjo"
+  BANNER_PIGLIN_PINK: "geddum roża"
+  BANNER_PIGLIN_PURPLE: "geddum vjola"
+  BANNER_PIGLIN_RED: "geddum aħmar"
+  BANNER_PIGLIN_WHITE: "geddum abjad"
+  BANNER_PIGLIN_YELLOW: "geddum isfar"
+  BANNER_RHOMBUS_BLACK: "black lozenge"
+  BANNER_RHOMBUS_BLUE: "blue lozenge"
+  BANNER_RHOMBUS_BROWN: "brown lozenge"
+  BANNER_RHOMBUS_CYAN: "cyan lozenge"
+  BANNER_RHOMBUS_GRAY: "gray lozenge"
+  BANNER_RHOMBUS_GREEN: "green lozenge"
+  BANNER_RHOMBUS_LIGHT_BLUE: "light blue lozenge"
+  BANNER_RHOMBUS_LIGHT_GRAY: "light gray lozenge"
+  BANNER_RHOMBUS_LIME: "lime lozenge"
+  BANNER_RHOMBUS_MAGENTA: "magenta lozenge"
+  BANNER_RHOMBUS_ORANGE: "orange lozenge"
+  BANNER_RHOMBUS_PINK: "pink lozenge"
+  BANNER_RHOMBUS_PURPLE: "purple lozenge"
+  BANNER_RHOMBUS_RED: "red lozenge"
+  BANNER_RHOMBUS_WHITE: "white lozenge"
+  BANNER_RHOMBUS_YELLOW: "yellow lozenge"
+  BANNER_SKULL_BLACK: "black skull charge"
+  BANNER_SKULL_BLUE: "blue skull charge"
+  BANNER_SKULL_BROWN: "brown skull charge"
+  BANNER_SKULL_CYAN: "cyan skull charge"
+  BANNER_SKULL_GRAY: "gray skull charge"
+  BANNER_SKULL_GREEN: "green skull charge"
+  BANNER_SKULL_LIGHT_BLUE: "light blue skull charge"
+  BANNER_SKULL_LIGHT_GRAY: "light gray skull charge"
+  BANNER_SKULL_LIME: "lime skull charge"
+  BANNER_SKULL_MAGENTA: "magenta skull charge"
+  BANNER_SKULL_ORANGE: "orange skull charge"
+  BANNER_SKULL_PINK: "pink skull charge"
+  BANNER_SKULL_PURPLE: "purple skull charge"
+  BANNER_SKULL_RED: "red skull charge"
+  BANNER_SKULL_WHITE: "white skull charge"
+  BANNER_SKULL_YELLOW: "yellow skull charge"
+  BANNER_SMALL_STRIPES_BLACK: "black paly"
+  BANNER_SMALL_STRIPES_BLUE: "blue paly"
+  BANNER_SMALL_STRIPES_BROWN: "brown paly"
+  BANNER_SMALL_STRIPES_CYAN: "cyan paly"
+  BANNER_SMALL_STRIPES_GRAY: "strixxa griża vertikali"
+  BANNER_SMALL_STRIPES_GREEN: "green paly"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "strixxa ikħal ċar vertikali"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "light gray paly"
+  BANNER_SMALL_STRIPES_LIME: "strixxa aħdar ċar vertikali"
+  BANNER_SMALL_STRIPES_MAGENTA: "strixxa vjola ċar vertikali"
+  BANNER_SMALL_STRIPES_ORANGE: "strixxa orangjo vertikali"
+  BANNER_SMALL_STRIPES_PINK: "strixxa roża vertikali"
+  BANNER_SMALL_STRIPES_PURPLE: "purple paly"
+  BANNER_SMALL_STRIPES_RED: "red paly"
+  BANNER_SMALL_STRIPES_WHITE: "strixxa bajda vertikali"
+  BANNER_SMALL_STRIPES_YELLOW: "strixxa safra vertikali"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "kantuniera fuq ix-xellug b'bażi sewda"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "kantuniera fuq ix-xellug b'bażi kaħlija"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "kantuniera fuq ix-xellug b'bażi kannella"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "kantuniera fuq ix-xellug b'bażi ċilesti"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "kantuniera fuq ix-xellug b'bażi griż"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "kantuniera fuq ix-xellug b'bażi ħadra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "kantuniera fuq ix-xellug b'bażi ikħal ċar"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "kantuniera fuq ix-xellug b'bażi griż ċar"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "kantuniera fuq ix-xellug b'bażi aħdar ċar"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "kantuniera fuq ix-xellug b'bażi vjola ċar"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "kantuniera fuq ix-xellug b'bażi oranġjo"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "kantuniera fuq ix-xellug b'bażi roza"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "kantuniera fuq ix-xellug b'bażi vjola"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "kantuniera fuq ix-xellug b'bażi ħamra"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "kantuniera fuq ix-xellug b'bażi bajda"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "kantuniera fuq ix-xellug b'bażi isfar"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "kantuniera fuq il-lemien b'bażi sewda"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "kantuniera fuq ix xellug b'bażi ikħal"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "kantuniera fuq il-lemin b'bażi kannella"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "kantuniera fuq il-lemin b'bażi ċilesti"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "kantuniera fuq il-lemin b'bażi griż"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "kantuniera fuq il-lemin b'bażi aħdar"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "kantuniera fuq il-lemin b'bażi ikħar ċar"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "kantuniera fuq ix xellug b'bażi griż ċar"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "kantuniera fuq il-lemin b'bażi aħdar ċar"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "kantuniera fuq il-lemin b'bażi vjola ċar"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "kantuniera fuq il-lemin b'bażi oranġjo"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "kantuniera fuq ix xellug b'bażi roża"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "kantuniera fuq il-lemin b'bażi vjola"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "kantuniera fuq il-lemien b'bażi ħamra"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "kantuniera fuq il-lemin b'bażi abjad"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "kantuniera fuq il-lemin b'bażi isfar"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "kantuniera ta' fuq ix-xellug sewda"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "kantuniera ta' fuq ix-xellug ikħal"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "kantuniera ta' fuq ix-xellug kannella"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "kantuniera ta' fuq ix-xellug ċilesti"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "kantuniera ta' fuq ix-xellug griż"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "kantuniera ta' fuq ix-xellug ħadra"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "kantuniera ta' fuq ix-xellug ikħal ċar"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "kantuniera ta' fuq ix-xellug griż ċar"
+  BANNER_SQUARE_TOP_LEFT_LIME: "kantuniera ta' fuq ix-xellug aħdar ċar"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "kantuniera ta' fuq ix-xellug vjola ċar"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "kantuniera ta' fuq ix-xellug orangjo"
+  BANNER_SQUARE_TOP_LEFT_PINK: "kantuniera ta' fuq ix-xellug roża"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "kantuniera ta' fuq ix-xellug vjola"
+  BANNER_SQUARE_TOP_LEFT_RED: "kantuniera ta' fuq ix-xellug ħamra"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "kantuniera ta' fuq ix-xellug bajda"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "kantuniera ta' fuq ix-xellug isfar"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "kantuniera ta' fuq il-lemin sewda"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blue chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brown chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "cyan chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "gray chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "green chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "light blue chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "light gray chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "lime chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "magenta chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "orange chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "pink chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "purple chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_RED: "kantuniera ta' fuq ix-xellug ħamra"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "white chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "yellow chief sinister canton"
+  BANNER_STRAIGHT_CROSS_BLACK: "black cross"
+  BANNER_STRAIGHT_CROSS_BLUE: "blue cross"
+  BANNER_STRAIGHT_CROSS_BROWN: "brown cross"
+  BANNER_STRAIGHT_CROSS_CYAN: "cyan cross"
+  BANNER_STRAIGHT_CROSS_GRAY: "gray cross"
+  BANNER_STRAIGHT_CROSS_GREEN: "green cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "light blue cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "light gray cross"
+  BANNER_STRAIGHT_CROSS_LIME: "lime cross"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magenta cross"
+  BANNER_STRAIGHT_CROSS_ORANGE: "orange cross"
+  BANNER_STRAIGHT_CROSS_PINK: "pink cross"
+  BANNER_STRAIGHT_CROSS_PURPLE: "purple cross"
+  BANNER_STRAIGHT_CROSS_RED: "red cross"
+  BANNER_STRAIGHT_CROSS_WHITE: "white cross"
+  BANNER_STRAIGHT_CROSS_YELLOW: "yellow cross"
+  BANNER_STRIPE_BOTTOM_BLACK: "bażi sewda"
+  BANNER_STRIPE_BOTTOM_BLUE: "bażi blu"
+  BANNER_STRIPE_BOTTOM_BROWN: "bażi kannella"
+  BANNER_STRIPE_BOTTOM_CYAN: "bażi cyan"
+  BANNER_STRIPE_BOTTOM_GRAY: "bażi ta ' gray"
+  BANNER_STRIPE_BOTTOM_GREEN: "bażi ħadra"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "bażi blu ċar"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "bażi gray ħafifa"
+  BANNER_STRIPE_BOTTOM_LIME: "bażi tal-ġir"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "bażi ta ' magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "bażi oranġjo"
+  BANNER_STRIPE_BOTTOM_PINK: "bażi roża"
+  BANNER_STRIPE_BOTTOM_PURPLE: "bażi vjola"
+  BANNER_STRIPE_BOTTOM_RED: "bażi ħamra"
+  BANNER_STRIPE_BOTTOM_WHITE: "bażi bajda"
+  BANNER_STRIPE_BOTTOM_YELLOW: "bażi safra"
+  BANNER_STRIPE_CENTER_BLACK: "strixxa sewda"
+  BANNER_STRIPE_CENTER_BLUE: "strixxa kaħlija"
+  BANNER_STRIPE_CENTER_BROWN: "strixxa kannella"
+  BANNER_STRIPE_CENTER_CYAN: "strixxa ċilesti"
+  BANNER_STRIPE_CENTER_GRAY: "strixxa griża"
+  BANNER_STRIPE_CENTER_GREEN: "strixxa ħadra"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "strixxa ikħal ċar"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "strixxa griż ċar"
+  BANNER_STRIPE_CENTER_LIME: "strixxa aħdar ċar"
+  BANNER_STRIPE_CENTER_MAGENTA: "strixxa vjola ċar"
+  BANNER_STRIPE_CENTER_ORANGE: "strixxa orangjo"
+  BANNER_STRIPE_CENTER_PINK: "strixxa roża"
+  BANNER_STRIPE_CENTER_PURPLE: "strixxa vjola"
+  BANNER_STRIPE_CENTER_RED: "strixxa ħamra"
+  BANNER_STRIPE_CENTER_WHITE: "strixxa bajda"
+  BANNER_STRIPE_CENTER_YELLOW: "strixxa safra"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "black bend sinister"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blue bend sinister"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brown bend sinister"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "cyan bend sinister"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "gray bend sinister"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "green bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "light blue bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "light gray bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIME: "lime bend sinister"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta bend sinister"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "orange bend sinister"
+  BANNER_STRIPE_DOWNLEFT_PINK: "pink bend sinister"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "purple bend sinister"
+  BANNER_STRIPE_DOWNLEFT_RED: "red bend sinister"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "white bend sinister"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "yellow bend sinister"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "black bend"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blue bend"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brown bend"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "cyan bend"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "gray bend"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "green bend"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "light blue bend"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "light gray bend"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "lime bend"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "magenta bend"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "orange bend"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "pink bend"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "purple bend"
+  BANNER_STRIPE_DOWNRIGHT_RED: "red bend"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "white bend"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "yellow bend"
+  BANNER_STRIPE_LEFT_BLACK: "black pale dexter"
+  BANNER_STRIPE_LEFT_BLUE: "strixxa kaħlija fuq ix-xellug"
+  BANNER_STRIPE_LEFT_BROWN: "brown pale dexter"
+  BANNER_STRIPE_LEFT_CYAN: "strixxa cilesti fuq ix-xellug"
+  BANNER_STRIPE_LEFT_GRAY: "strixxa griż fuq ix-xellug"
+  BANNER_STRIPE_LEFT_GREEN: "green pale dexter"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "strixxa ikħal ċar fuq ix-xellug"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "strixxa griż ċar fuq ix-xellug"
+  BANNER_STRIPE_LEFT_LIME: "strixxa aħdar ċar fuq ix-xellug"
+  BANNER_STRIPE_LEFT_MAGENTA: "strixxa vjola ċar fuq ix-xellug"
+  BANNER_STRIPE_LEFT_ORANGE: "strixxa orangjo fuq ix-xellug"
+  BANNER_STRIPE_LEFT_PINK: "strixxa roża fuq ix-xellug"
+  BANNER_STRIPE_LEFT_PURPLE: "strixxa vjola fuq ix-xellug"
+  BANNER_STRIPE_LEFT_RED: "red pale dexter"
+  BANNER_STRIPE_LEFT_WHITE: "strixxa bajda fuq ix-xellug"
+  BANNER_STRIPE_LEFT_YELLOW: "strixxa safra fuq ix-xellug"
+  BANNER_STRIPE_MIDDLE_BLACK: "strixxa sewda fin-nofs"
+  BANNER_STRIPE_MIDDLE_BLUE: "strixxa kaħlija fin-nofs"
+  BANNER_STRIPE_MIDDLE_BROWN: "strixxa kannella fin-nofs"
+  BANNER_STRIPE_MIDDLE_CYAN: "cyan fess"
+  BANNER_STRIPE_MIDDLE_GRAY: "gray fess"
+  BANNER_STRIPE_MIDDLE_GREEN: "strixxa ħadra fin-nofs"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "light blue fess"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "light gray fess"
+  BANNER_STRIPE_MIDDLE_LIME: "lime fess"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "magenta fess"
+  BANNER_STRIPE_MIDDLE_ORANGE: "orange fess"
+  BANNER_STRIPE_MIDDLE_PINK: "pink fess"
+  BANNER_STRIPE_MIDDLE_PURPLE: "strixxa vjola fin-nofs"
+  BANNER_STRIPE_MIDDLE_RED: "strixxa ħamra fin-nofs"
+  BANNER_STRIPE_MIDDLE_WHITE: "white fess"
+  BANNER_STRIPE_MIDDLE_YELLOW: "yellow fess"
+  BANNER_STRIPE_RIGHT_BLACK: "strixxa sewda fuq il-lemin"
+  BANNER_STRIPE_RIGHT_BLUE: "strixxa kaħlija fuq il-lemin"
+  BANNER_STRIPE_RIGHT_BROWN: "strixxa kannella fuq il-lemin"
+  BANNER_STRIPE_RIGHT_CYAN: "strixxa ċilesti fuq il-lemin"
+  BANNER_STRIPE_RIGHT_GRAY: "strixxa griża fuq il-lemin"
+  BANNER_STRIPE_RIGHT_GREEN: "strixxa ħadra fuq il-lemin"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "strixxa ikħal ċar fuq il-lemin"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "strixxa griż ċar fuq il-lemin"
+  BANNER_STRIPE_RIGHT_LIME: "strixxa aħdar ċar fuq il-lemin"
+  BANNER_STRIPE_RIGHT_MAGENTA: "strixxa vjola ċar fuq il-lemin"
+  BANNER_STRIPE_RIGHT_ORANGE: "strixxa orangjo fuq il-lemin"
+  BANNER_STRIPE_RIGHT_PINK: "strixxa roża fuq il-lemin"
+  BANNER_STRIPE_RIGHT_PURPLE: "strixxa vjola fuq il-lemin"
+  BANNER_STRIPE_RIGHT_RED: "strixxa ħamra fuq il-lemin"
+  BANNER_STRIPE_RIGHT_WHITE: "strixxa cajda fuq il-lemin"
+  BANNER_STRIPE_RIGHT_YELLOW: "strixxa safra fuq il-lemin"
+  BANNER_STRIPE_TOP_BLACK: "kap tal-iswed"
+  BANNER_STRIPE_TOP_BLUE: "kap blu"
+  BANNER_STRIPE_TOP_BROWN: "kap kannella"
+  BANNER_STRIPE_TOP_CYAN: "kap ta ' cyan"
+  BANNER_STRIPE_TOP_GRAY: "kap tal-gray"
+  BANNER_STRIPE_TOP_GREEN: "kap aħdar"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "kap blu ċar"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "kap tal-gray ħafif"
+  BANNER_STRIPE_TOP_LIME: "kap tal-ġir"
+  BANNER_STRIPE_TOP_MAGENTA: "kap ta ' magenta"
+  BANNER_STRIPE_TOP_ORANGE: "kap tal-larin ġ"
+  BANNER_STRIPE_TOP_PINK: "kap roża"
+  BANNER_STRIPE_TOP_PURPLE: "kap vjola"
+  BANNER_STRIPE_TOP_RED: "kap aħmar"
+  BANNER_STRIPE_TOP_WHITE: "kap abjad"
+  BANNER_STRIPE_TOP_YELLOW: "kap isfar"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "chevron iswed"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "chevron ikħal"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "chevron kannella"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "chevron ċilesti"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "chevron griż"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "chevron aħdar"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "chevron ikħal ċar"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "chevron griż ċar"
+  BANNER_TRIANGLE_BOTTOM_LIME: "chevron aħdar ċar"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "chevron vjola ċar"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "chevron orangjo"
+  BANNER_TRIANGLE_BOTTOM_PINK: "chevron roża"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "chevron vjola"
+  BANNER_TRIANGLE_BOTTOM_RED: "chevron aħmar"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "chevron abjad"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "chevron isfar"
+  BANNER_TRIANGLE_TOP_BLACK: "chevron meqlub iswed"
+  BANNER_TRIANGLE_TOP_BLUE: "chevron meqlub ikħal"
+  BANNER_TRIANGLE_TOP_BROWN: "chevron meqlub kannella"
+  BANNER_TRIANGLE_TOP_CYAN: "chevron meqlub ċilesti"
+  BANNER_TRIANGLE_TOP_GRAY: "chevron meqlub griż"
+  BANNER_TRIANGLE_TOP_GREEN: "chevron meqlub aħdar"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "light blue inverted chevron"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "chevron meqlub griż ċar"
+  BANNER_TRIANGLE_TOP_LIME: "lime inverted chevron"
+  BANNER_TRIANGLE_TOP_MAGENTA: "magenta inverted chevron"
+  BANNER_TRIANGLE_TOP_ORANGE: "orange inverted chevron"
+  BANNER_TRIANGLE_TOP_PINK: "chevron meqlub roża"
+  BANNER_TRIANGLE_TOP_PURPLE: "chevron meqlub vjola"
+  BANNER_TRIANGLE_TOP_RED: "chevron meqlub aħmar"
+  BANNER_TRIANGLE_TOP_WHITE: "white inverted chevron"
+  BANNER_TRIANGLE_TOP_YELLOW: "yellow inverted chevron"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "black base indented"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blue base indented"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brown base indented"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "cyan base indented"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "gray base indented"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "green base indented"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "light blue base indented"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "light gray base indented"
+  BANNER_TRIANGLES_BOTTOM_LIME: "lime base indented"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "magenta base indented"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "orange base indented"
+  BANNER_TRIANGLES_BOTTOM_PINK: "pink base indented"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "purple base indented"
+  BANNER_TRIANGLES_BOTTOM_RED: "red base indented"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "white base indented"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "yellow base indented"
+  BANNER_TRIANGLES_TOP_BLACK: "black chief indented"
+  BANNER_TRIANGLES_TOP_BLUE: "blue chief indented"
+  BANNER_TRIANGLES_TOP_BROWN: "brown chief indented"
+  BANNER_TRIANGLES_TOP_CYAN: "cyan chief indented"
+  BANNER_TRIANGLES_TOP_GRAY: "gray chief indented"
+  BANNER_TRIANGLES_TOP_GREEN: "green chief indented"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "light blue chief indented"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "light gray chief indented"
+  BANNER_TRIANGLES_TOP_LIME: "lime chief indented"
+  BANNER_TRIANGLES_TOP_MAGENTA: "magenta chief indented"
+  BANNER_TRIANGLES_TOP_ORANGE: "orange chief indented"
+  BANNER_TRIANGLES_TOP_PINK: "pink chief indented"
+  BANNER_TRIANGLES_TOP_PURPLE: "purple chief indented"
+  BANNER_TRIANGLES_TOP_RED: "red chief indented"
+  BANNER_TRIANGLES_TOP_WHITE: "white chief indented"
+  BANNER_TRIANGLES_TOP_YELLOW: "yellow chief indented"
+  BARREL: "kanna"
+  BARRIER: "blokka inviżibli"
+  BASALT: "bażalt"
+  BEACON: "lanterna"
+  BEACON_PRIMARY: "poter prinċipali"
+  BEACON_SECONDARY: "poter sekondarju"
+  BED_NO_SLEEP: "inti tista' torqod billejl jew waqt maltempati biss"
+  BED_NOT_SAFE: "tista ' ma tkunx qed tistrieħ issa; hemm monsters li jinsabu fil-qrib"
+  BED_OBSTRUCTED: "dan is-sodda huwa ostakolat"
+  BED_OCCUPIED: "din is-sodda hija okkupata"
+  BED_TOO_FAR_AWAY: "tista ' ma tkunx qed tistrieħ issa; is-sodda hija ' l bogħod wisq"
+  BEDROCK: "blat"
+  BEE_NEST: "bejta tan-na ħal"
+  BEEHIVE: "tad doqqajs"
+  BEETROOTS: "pitravi"
+  BELL: "bell"
+  BIG_DRIPLEAF: "dripleaf kbir"
+  BIG_DRIPLEAF_STEM: "zokk dripleaf kbir"
+  BIRCH_BUTTON: "buttuna tal-betula"
+  BIRCH_DOOR: "bieb tal-betula"
+  BIRCH_FENCE: "ċint tal-betula"
+  BIRCH_FENCE_GATE: "grada tal-betula"
+  BIRCH_HANGING_SIGN: "tabella tiddendel tal-betula"
+  BIRCH_LEAVES: "weraq tal-betula"
+  BIRCH_LOG: "zokk tal-betbiena"
+  BIRCH_PLANKS: "planks tal-betbiena"
+  BIRCH_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-birch"
+  BIRCH_SAPLING: "żgħar tal-betula"
+  BIRCH_SIGN: "sinjal tal-betula"
+  BIRCH_SLAB: "ċangun tal-betula"
+  BIRCH_STAIRS: "taraġ tal-betula"
+  BIRCH_TRAPDOOR: "bokkaport tal-betula"
+  BIRCH_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-betula"
+  BIRCH_WALL_SIGN: "sinjal tal-ħajt tal-betbiena"
+  BIRCH_WOOD: "injam tal-betula"
+  BLACK_BANNER: "bandiera sewda"
+  BLACK_BED: "sodda sewda"
+  BLACK_CANDLE: "xemgħa sewda"
+  BLACK_CANDLE_CAKE: "kejk b'xemgħa sewda"
+  BLACK_CARPET: "tapit iswed"
+  BLACK_CONCRETE: "konkrit iswed"
+  BLACK_CONCRETE_POWDER: "trab iswed tal-konkrit"
+  BLACK_GLAZED_TERRACOTTA: "terrakotta bi tleqqija sewda"
+  BLACK_SHULKER_BOX: "kaxxa ta ' shulker iswed"
+  BLACK_STAINED_GLASS: "ħġieġ miżbugħ iswed"
+  BLACK_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha sewda"
+  BLACK_TERRACOTTA: "terrakotta sewda"
+  BLACK_WOOL: "suf iswed"
+  BLACKSTONE: "ġebla sewda"
+  BLACKSTONE_SLAB: "ċangatura tal-ġebla sewda"
+  BLACKSTONE_STAIRS: "taraġ tal-ġebla sewda"
+  BLACKSTONE_WALL: "ħajt tal-ġebla sewda"
+  BLAST_FURNACE: "forn tal-funderija"
+  BLUE_BANNER: "bandiera blu"
+  BLUE_BED: "sodda ikħal"
+  BLUE_CANDLE: "xemgħa blu"
+  BLUE_CANDLE_CAKE: "kejk b'xemgħa blu"
+  BLUE_CARPET: "tapit blu"
+  BLUE_CONCRETE: "konkrit ikħal"
+  BLUE_CONCRETE_POWDER: "trab ikħal tal-konkrit"
+  BLUE_GLAZED_TERRACOTTA: "terrakotta bi tleqqija ikħal"
+  BLUE_ICE: "silġ blu"
+  BLUE_ORCHID: "orkidea blu"
+  BLUE_SHULKER_BOX: "kaxxa tal-shulker blu"
+  BLUE_STAINED_GLASS: "ħġieġ miżbugħ blu"
+  BLUE_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha blu"
+  BLUE_TERRACOTTA: "terrakotta ikħal"
+  BLUE_WOOL: "suf blu"
+  BONE_BLOCK: "blokka tal-għadam"
+  BOOKSHELF: "xkafef"
+  BRAIN_CORAL: "qroll tal-mo ħħ"
+  BRAIN_CORAL_BLOCK: "blokk tal-qroll tal-moħħ"
+  BRAIN_CORAL_FAN: "fann tal-qroll tal-mo ħħ"
+  BRAIN_CORAL_WALL_FAN: "fan tal-ħajt tal-korall tal-mo ħħ"
+  BREWING_STAND: "birrerija"
+  BRICK_SLAB: "ċangun tal-briks"
+  BRICK_STAIRS: "taraġ tal-briks"
+  BRICK_WALL: "ħajt tal-briks"
+  BRICKS: "briks"
+  BROWN_BANNER: "bandiera kannella"
+  BROWN_BED: "sodda kannella"
+  BROWN_CANDLE: "xemgħa kannella"
+  BROWN_CANDLE_CAKE: "kejk b'xemgħa kannella"
+  BROWN_CARPET: "tapit kannella"
+  BROWN_CONCRETE: "konkrit kannella"
+  BROWN_CONCRETE_POWDER: "trab kannella tal-konkrit"
+  BROWN_GLAZED_TERRACOTTA: "terrakotta bi tleqqija kannella"
+  BROWN_MUSHROOM: "faqqiegħ kannella"
+  BROWN_MUSHROOM_BLOCK: "blokka tal-faqqieg ħ kannella"
+  BROWN_SHULKER_BOX: "kaxxa tal-shulker kannella"
+  BROWN_STAINED_GLASS: "ħġieġ miżbugħ kannella"
+  BROWN_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha kannella"
+  BROWN_TERRACOTTA: "terrakotta kannella"
+  BROWN_WOOL: "suf kannella"
+  BUBBLE_COLUMN: "kolonna tal-bu żżieqa"
+  BUBBLE_CORAL: "korall tal-bu żżieqa"
+  BUBBLE_CORAL_BLOCK: "bubble coral block"
+  BUBBLE_CORAL_FAN: "mrewħa tal-bu żżieqa"
+  BUBBLE_CORAL_WALL_FAN: "bubble tal-ħajt tal-korall"
+  BUDDING_AMETHYST: "amethyst li tibża '"
+  CACTUS: "kaktus"
+  CAKE: "kejk"
+  CALCITE: "kalċit"
+  CALIBRATED_SCULK_SENSOR: "sensor sculk ikkalibrat"
+  CAMPFIRE: "ħuġġieġa"
+  CANDLE: "xemg ħa"
+  CANDLE_CAKE: "kejk xemgħa"
+  CARROTS: "karrotti"
+  CARTOGRAPHY_TABLE: "tabella tal-kartografija"
+  CARVED_PUMPKIN: "qara ' ħamra"
+  CAULDRON: "kaldarun"
+  CAVE_AIR: "arja ta ' grotta"
+  CAVE_VINES: "dwieli tal-għerien"
+  CAVE_VINES_PLANT: "pjanta tad-dwieli tal-għerien"
+  CHAIN: "katina"
+  CHAIN_COMMAND_BLOCK: "blokka tal-kodiċi katina"
+  CHERRY_BUTTON: "buttuna ċirasa"
+  CHERRY_DOOR: "bieb taċ-ċirasa"
+  CHERRY_FENCE: "ċint taċ-ċirasa"
+  CHERRY_FENCE_GATE: "bieb ċint taċ-ċirasa"
+  CHERRY_HANGING_SIGN: "ċirasa mdendlin sinjal"
+  CHERRY_LEAVES: "weraq taċ-ċirasa"
+  CHERRY_LOG: "log taċ-ċirasa"
+  CHERRY_PLANKS: "planki taċ-ċirasa"
+  CHERRY_PRESSURE_PLATE: "pjanċa tal-pressjoni taċ-ċirasa"
+  CHERRY_SAPLING: "saff taċ-ċirasa"
+  CHERRY_SIGN: "sinjal ċirasa"
+  CHERRY_SLAB: "ċangatura taċ-ċirasa"
+  CHERRY_STAIRS: "taraġ taċ-ċirasa"
+  CHERRY_TRAPDOOR: "nassa taċ-ċirasa"
+  CHERRY_WALL_HANGING_SIGN: "sinjal li jiddendlu mal-ħajt taċ-ċirasa"
+  CHERRY_WALL_SIGN: "sinjal tal-ħajt taċ-ċirasa"
+  CHERRY_WOOD: "injam taċ-ċirasa"
+  CHEST: "senduq"
+  CHIPPED_ANVIL: "imqatta ' bċejjeċ tal-art"
+  CHISELED_BOOKSHELF: "xkafef imnaqqxin"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "deepslate imnaqqax"
+  CHISELED_NETHER_BRICKS: "briks tan-nether imnaqqax"
+  CHISELED_POLISHED_BLACKSTONE: "ġebla sewda illostrata bid-disinn"
+  CHISELED_QUARTZ_BLOCK: "blokka tal-kwarz imnaqqxa"
+  CHISELED_RED_SANDSTONE: "ġebel aħmar tal-franka mnaqqax"
+  CHISELED_SANDSTONE: "ġebel tal-franka mnaqqax"
+  CHISELED_STONE_BRICKS: "briks tal-ġebel imnaqqax"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "fjura tal-chorus"
+  CHORUS_PLANT: "xitla tal-chorus"
+  CLAY: "tafal"
+  COAL_BLOCK: "blokka tal-faħam"
+  COAL_ORE: "sigħat tal-faħam"
+  COARSE_DIRT: "ħamrija ħoxna"
+  COBBLED_DEEPSLATE: "cobbled deepslate"
+  COBBLED_DEEPSLATE_SLAB: "ċangun tad-deepslate imfarrak"
+  COBBLED_DEEPSLATE_STAIRS: "taraġ tad-deepslate imfarrak"
+  COBBLED_DEEPSLATE_WALL: "ħajt cobbled deepslate"
+  COBBLESTONE: "ġebel imfarrak"
+  COBBLESTONE_SLAB: "ċangun tal-ġebel imfarrak"
+  COBBLESTONE_STAIRS: "taraġ tal-ġebel"
+  COBBLESTONE_WALL: "ħajt tas-sejjieħ"
+  COBWEB: "għanqbuta"
+  COCOA: "kakaw"
+  COMMAND_BLOCK: "blokka tal-kodiċi"
+  COMPARATOR: "komparatur tar-redstone"
+  COMPOSTER: "kompożitur"
+  CONDUIT: "kondu ċent"
+  COPPER_BLOCK: "blokka ram"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "minerali tar-ram"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "fjura tal-qam ħirrun"
+  CRACKED_DEEPSLATE_BRICKS: "cracked deepslate bricks"
+  CRACKED_DEEPSLATE_TILES: "madum deepslate maqsum"
+  CRACKED_NETHER_BRICKS: "briks tan-nether bil-konsenturi"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "briksiet tal-ġebla sewda illostrati bil-konsenturi"
+  CRACKED_STONE_BRICKS: "briks tal-ġebel imxaqqaq"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "mejda tas-snajja"
+  CREEPER_HEAD: "ras ta' creeper"
+  CREEPER_WALL_HEAD: "ras tal-ħajt creeper"
+  CRIMSON_BUTTON: "buttuna krimżi"
+  CRIMSON_DOOR: "bieb krimżi"
+  CRIMSON_FENCE: "ċint krimżi"
+  CRIMSON_FENCE_GATE: "grada krimżi"
+  CRIMSON_FUNGUS: "fungi krimżi"
+  CRIMSON_HANGING_SIGN: "tabella tiddendel krimżi"
+  CRIMSON_HYPHAE: "ħajfi krimżi"
+  CRIMSON_NYLIUM: "njlium krimżi"
+  CRIMSON_PLANKS: "planki krimżi"
+  CRIMSON_PRESSURE_PLATE: "pjanċa tal-pressjoni krimżi"
+  CRIMSON_ROOTS: "għeruq krimżi"
+  CRIMSON_SIGN: "tabella krimżi"
+  CRIMSON_SLAB: "krimżi blata"
+  CRIMSON_STAIRS: "taraġ krimżi"
+  CRIMSON_STEM: "zokk krimżi"
+  CRIMSON_TRAPDOOR: "bieba krimżi"
+  CRIMSON_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel krimżi"
+  CRIMSON_WALL_SIGN: "tabella krimżi mal-ħajt"
+  CRYING_OBSIDIAN: "obsidjana tal-biki"
+  CUT_COPPER: "ram maqtugħ"
+  CUT_COPPER_SLAB: "slab tar-ram maqtugħ"
+  CUT_COPPER_STAIRS: "taraġ tar-ram maqtugħ"
+  CUT_RED_SANDSTONE: "ġebel aħmar tal-franka maqtugħ"
+  CUT_RED_SANDSTONE_SLAB: "ċangun tal-ġebel aħmar tal-franka maqtugħ"
+  CUT_SANDSTONE: "ġebel tal-franka maqtugħ"
+  CUT_SANDSTONE_SLAB: "ċangun tal-ġebel tal-franka maqtugħ"
+  CYAN_BANNER: "bandiera blu fl-aħdar"
+  CYAN_BED: "sodda tal-qieg ħ"
+  CYAN_CANDLE: "xemgħa taċ-ċjani"
+  CYAN_CANDLE_CAKE: "kejk b'xemgħa ċilesti"
+  CYAN_CARPET: "tapit blu fl-aħdar"
+  CYAN_CONCRETE: "konkrit cyan"
+  CYAN_CONCRETE_POWDER: "trab cyan tal-konkrit"
+  CYAN_GLAZED_TERRACOTTA: "terrakotta bi tleqqija cyan"
+  CYAN_SHULKER_BOX: "kaxxa taċ-ċinan shulker"
+  CYAN_STAINED_GLASS: "ħġieġ miżbugħ blu fl-aħdar"
+  CYAN_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha blu fl-aħdar"
+  CYAN_TERRACOTTA: "terrakotta cyan"
+  CYAN_WOOL: "suf blu fl-aħdar"
+  DAMAGED_ANVIL: "anvil bil-ħsara"
+  DANDELION: "lelluxa"
+  DARK_OAK_BUTTON: "buttuna tal-ballut skura"
+  DARK_OAK_DOOR: "bieb tal-ballut skur"
+  DARK_OAK_FENCE: "ċint tal-ballut skur"
+  DARK_OAK_FENCE_GATE: "grada tal-ballut skur"
+  DARK_OAK_HANGING_SIGN: "tabella tiddendel tal-ballut skur"
+  DARK_OAK_LEAVES: "wearaq tal-ballut skur"
+  DARK_OAK_LOG: "zokk skur tal-ballut"
+  DARK_OAK_PLANKS: "planelli tal-ballut skuri"
+  DARK_OAK_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-ballut skura"
+  DARK_OAK_SAPLING: "żġħar tal-ballut skur"
+  DARK_OAK_SIGN: "sinjal skur tal-ballut"
+  DARK_OAK_SLAB: "ċangun tal-ballut skur"
+  DARK_OAK_STAIRS: "taraġ tal-ballut skur"
+  DARK_OAK_TRAPDOOR: "bokkaport tal-ballut skur"
+  DARK_OAK_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-ballut skur"
+  DARK_OAK_WALL_SIGN: "ħajt skur tal-ballut"
+  DARK_OAK_WOOD: "injam tal-ballut skur"
+  DARK_PRISMARINE: "prismarine skur"
+  DARK_PRISMARINE_SLAB: "ċangun tal-priżmarin skur"
+  DARK_PRISMARINE_STAIRS: "taraġ tal-priżmarin skur"
+  DAYLIGHT_DETECTOR: "ditekter tad-dawl tax-xemx"
+  DEAD_BRAIN_CORAL: "qroll tal-mo ħħ mejjet"
+  DEAD_BRAIN_CORAL_BLOCK: "blokk tal-qroll tal-mo ħħ mejjet"
+  DEAD_BRAIN_CORAL_FAN: "fann tal-korall tal-mo ħħ mejjet"
+  DEAD_BRAIN_CORAL_WALL_FAN: "fann tal-ħajt tal-korall tal-mo ħħ mejjet"
+  DEAD_BUBBLE_CORAL: "qroll tal-bu żżieqa mejta"
+  DEAD_BUBBLE_CORAL_BLOCK: "blokka tal-korall tal-bu żżieqa mejta"
+  DEAD_BUBBLE_CORAL_FAN: "fann tal-korall tal-bu żżieqa mejta"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "fann tal-ħajt tal-korall tal-bu żżieqa mejta"
+  DEAD_BUSH: "xitla niexfa"
+  DEAD_FIRE_CORAL: "qroll tan-nar mejjet"
+  DEAD_FIRE_CORAL_BLOCK: "blokka tal-korall tan-nar mejta"
+  DEAD_FIRE_CORAL_FAN: "fann tal-korall tan-nar mejjet"
+  DEAD_FIRE_CORAL_WALL_FAN: "fann tal-ħajt tal-korall tan-nar mejjet"
+  DEAD_HORN_CORAL: "qroll tal-qrun mejjet"
+  DEAD_HORN_CORAL_BLOCK: "blokk tal-korall tal-qrun mejjet"
+  DEAD_HORN_CORAL_FAN: "fann tal-korall tal-qrun mejjet"
+  DEAD_HORN_CORAL_WALL_FAN: "fann tal-ħajt tal-korall tal-qrun mejjet"
+  DEAD_TUBE_CORAL: "qroll ta ' tubu mejjet"
+  DEAD_TUBE_CORAL_BLOCK: "blokk tal-korall b ' tubu mejjet"
+  DEAD_TUBE_CORAL_FAN: "fan tal-korall b ' tubu mejjet"
+  DEAD_TUBE_CORAL_WALL_FAN: "fann tal-ħajt tal-korall b ' tubu mejjet"
+  DECORATED_POT: "borma imżejna"
+  DEEPSLATE: "deepslate"
+  DEEPSLATE_BRICK_SLAB: "ċangun tal-briks tad-deepslate"
+  DEEPSLATE_BRICK_STAIRS: "taraġ tal-briks tad-deepslate"
+  DEEPSLATE_BRICK_WALL: "ħajt tal-briks deepslate"
+  DEEPSLATE_BRICKS: "briks deepslate"
+  DEEPSLATE_COAL_ORE: "deepslate \nfaħam minerali"
+  DEEPSLATE_COPPER_ORE: "ore tar-ram deepslate"
+  DEEPSLATE_DIAMOND_ORE: "deepslate djamant minerali"
+  DEEPSLATE_EMERALD_ORE: "deepslate emerald minerali"
+  DEEPSLATE_GOLD_ORE: "bijih emas deepslate"
+  DEEPSLATE_IRON_ORE: "deepslate ħadid minerali"
+  DEEPSLATE_LAPIS_ORE: "deepslate lapis lazuli minerali"
+  DEEPSLATE_REDSTONE_ORE: "mineral tal-laħam tal-ġebel aħmar"
+  DEEPSLATE_TILE_SLAB: "ċangun tal-madum tad-deepslate"
+  DEEPSLATE_TILE_STAIRS: "taraġ tal-madum tad-deepslate"
+  DEEPSLATE_TILE_WALL: "ħajt tal-madum deepslate"
+  DEEPSLATE_TILES: "madum deepslate"
+  DETECTOR_RAIL: "linji didekters"
+  DIAMOND_BLOCK: "blokka tad-djamant"
+  DIAMOND_ORE: "sigħat tad-djamant"
+  DIORITE: "diorite"
+  DIORITE_SLAB: "ċangun tad-dajorit"
+  DIORITE_STAIRS: "taraġ tad-dajorit"
+  DIORITE_WALL: "ħajt tad-dajorit"
+  DIRT: "ħamrija"
+  DIRT_PATH: "mogħdija tal-ħmieġ"
+  DISPENSER: "dispensur"
+  DRAGON_EGG: "bajda ta' dragun"
+  DRAGON_HEAD: "ras ta' dragun"
+  DRAGON_WALL_HEAD: "head tal-ħajt dragun"
+  DRIED_KELP_BLOCK: "blokk kelp imnixxef"
+  DRIPSTONE_BLOCK: "blokka tal-ġebel tad-dripp"
+  DROPPER: "qattara"
+  EMERALD_BLOCK: "blokka tal-iżmerald"
+  EMERALD_ORE: "sigħat tal-iżmerald"
+  ENCHANTING_TABLE: "tabella ta ' l-enchanting"
+  END_GATEWAY: "temm il-gateway"
+  END_PORTAL: "portal tal-ender"
+  END_PORTAL_FRAME: "temm il-frejm tal-portal"
+  END_ROD: "virga tal-ender"
+  END_STONE: "ġebel tal-ender"
+  END_STONE_BRICK_SLAB: "ċangun tal-briks tal-ġebel tal-end"
+  END_STONE_BRICK_STAIRS: "taraġ tal-briks tal-ġebel tal-end"
+  END_STONE_BRICK_WALL: "tarf tal-ħajt tal-briks tal-ġebel"
+  END_STONE_BRICKS: "briks tal-ġebel tal-ender"
+  ENDER_CHEST: "senduq tal-ender"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "ram espost"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "ram maqtugħ espost"
+  EXPOSED_CUT_COPPER_SLAB: "ċangun tar-ramm maqtugħ espost"
+  EXPOSED_CUT_COPPER_STAIRS: "taraġ tar-ramm maqtugħ espost"
+  FARMLAND: "art tar-raba"
+  FERN: "xitla"
+  FIRE: "nar"
+  FIRE_CORAL: "qroll tan-nar"
+  FIRE_CORAL_BLOCK: "blokk tal-qroll tan-nar"
+  FIRE_CORAL_FAN: "fann għall-qroll tan-nar"
+  FIRE_CORAL_WALL_FAN: "fann tal-ħajt tal-korall tan-nar"
+  FLETCHING_TABLE: "fletching table"
+  FLOWER_POT: "qasrija"
+  FLOWERING_AZALEA: "azalea tal-fjuri"
+  FLOWERING_AZALEA_LEAVES: "weraq tal-azalea tal-fjuri"
+  FROGSPAWN: "bajt tal-marżepp"
+  FROSTED_ICE: "silġ iffriżat"
+  FURNACE: "forn"
+  GILDED_BLACKSTONE: "ġebla sewda indurata"
+  GLASS: "ħġieġ"
+  GLASS_PANE: "ħġieġa ċatta"
+  GLOW_LICHEN: "tiddix liken"
+  GLOWSTONE: "ġebel jixgħel"
+  GOLD_BLOCK: "blokka tad-deheb"
+  GOLD_ORE: "sigħat tad-deheb"
+  GRANITE: "granit"
+  GRANITE_SLAB: "ċangun tal-granit"
+  GRANITE_STAIRS: "taraġ tal-granit"
+  GRANITE_WALL: "ħajt tal-granit"
+  GRASS: "ħaxix"
+  GRASS_BLOCK: "blokka tal-ħaxix"
+  GRAVEL: "żrar"
+  GRAY_BANNER: "bandiera griża"
+  GRAY_BED: "sodda griża"
+  GRAY_CANDLE: "xemgħa griża"
+  GRAY_CANDLE_CAKE: "kejk b'xemgħa griża"
+  GRAY_CARPET: "tapit griż"
+  GRAY_CONCRETE: "konkrit griż"
+  GRAY_CONCRETE_POWDER: "trab griż tal-konkrit"
+  GRAY_GLAZED_TERRACOTTA: "terrakotta bi tleqqija griża"
+  GRAY_SHULKER_BOX: "kaxxa ta ' l-shulker gray"
+  GRAY_STAINED_GLASS: "ħġieġ miżbugħ griż"
+  GRAY_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha griża"
+  GRAY_TERRACOTTA: "terrakotta griż"
+  GRAY_WOOL: "suf griż"
+  GREEN_BANNER: "bandiera ħadra"
+  GREEN_BED: "sodda ħadra"
+  GREEN_CANDLE: "xemgħa ħadra"
+  GREEN_CANDLE_CAKE: "kejk b'xemgħa ħadra"
+  GREEN_CARPET: "tapit aħdar"
+  GREEN_CONCRETE: "konkrit aħdar"
+  GREEN_CONCRETE_POWDER: "trab aħdar tal-konkrit"
+  GREEN_GLAZED_TERRACOTTA: "terrakotta bi tleqqija ħadra"
+  GREEN_SHULKER_BOX: "kaxxa tal-shulker kannella"
+  GREEN_STAINED_GLASS: "ħġieġ miżbugħ aħdar"
+  GREEN_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha ħadra"
+  GREEN_TERRACOTTA: "terrakotta aħdar"
+  GREEN_WOOL: "suf aħdar"
+  GRINDSTONE: "ġebla tal-g ħadma"
+  HANGING_ROOTS: "għeruq mdendlin"
+  HAY_BLOCK: "tiben"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "pjanċa tal-pressjoni ppeżata ħafna"
+  HONEY_BLOCK: "blokka tal-g ħasel"
+  HONEYCOMB_BLOCK: "xehda blokk"
+  HOPPER: "lembut"
+  HORN_CORAL: "qroll tal-qrun"
+  HORN_CORAL_BLOCK: "blokka korall tal-qrun"
+  HORN_CORAL_FAN: "fann għall-qroll tal-qrun"
+  HORN_CORAL_WALL_FAN: "il-fann tal-ħajt tal-qrun korall"
+  ICE: "silġ"
+  INFESTED_CHISELED_STONE_BRICKS: "briks tal-ġebel imnaqqax infestat"
+  INFESTED_COBBLESTONE: "il-cobblestone infestati"
+  INFESTED_CRACKED_STONE_BRICKS: "briks tal-ġebel ikkrekkjati bis-s ħana"
+  INFESTED_DEEPSLATE: "deepslate infestat"
+  INFESTED_MOSSY_STONE_BRICKS: "briks tal-ġebel bil-moffa infestati"
+  INFESTED_STONE: "ġebel infestat"
+  INFESTED_STONE_BRICKS: "briks tal-ġebel infestati"
+  IRON_BARS: "vireg tal-ħadid"
+  IRON_BLOCK: "blokka tal-ħadid"
+  IRON_DOOR: "bieb tal-ħadid"
+  IRON_ORE: "sigħat tal-ħadid"
+  IRON_TRAPDOOR: "bokkaport tal-ħadid"
+  JACK_O_LANTERN: "qargħa ħamra tixgħel"
+  JIGSAW: "blokk ta ' jigsaw"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "buttuna tal-ġungla"
+  JUNGLE_DOOR: "bieb tal-injam tal-ġungla"
+  JUNGLE_FENCE: "ċint tal-injam tal-ġungla"
+  JUNGLE_FENCE_GATE: "grada tal-injam tal-ġungla"
+  JUNGLE_HANGING_SIGN: "tabella tiddendel tal-injam tal-ġungla"
+  JUNGLE_LEAVES: "weraq tal-ġungla"
+  JUNGLE_LOG: "ġurnal tal-ġungla"
+  JUNGLE_PLANKS: "planks tal-ġungla"
+  JUNGLE_PRESSURE_PLATE: "pjanċa tal-pressjoni ġungla"
+  JUNGLE_SAPLING: "żgħar tal-ġungla"
+  JUNGLE_SIGN: "sinjal tal-ġungla"
+  JUNGLE_SLAB: "ċangun tal-injam tal-ġungla"
+  JUNGLE_STAIRS: "taraġ tal-injam tal-ġungla"
+  JUNGLE_TRAPDOOR: "bokkaport tal-injam tal-ġungla"
+  JUNGLE_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-injam tal-ġungla"
+  JUNGLE_WALL_SIGN: "sinjal tal-ħajt tal-ġungla"
+  JUNGLE_WOOD: "injam tal-ġungla"
+  KELP: "kelp"
+  KELP_PLANT: "pjanta kelp"
+  LADDER: "sellum"
+  LANTERN: "fanal"
+  LAPIS_BLOCK: "blokk ta' lapis lazuli"
+  LAPIS_ORE: "sigħat tal-lapis lazuli"
+  LARGE_AMETHYST_BUD: "bud amethyst kbira"
+  LARGE_FERN: "xitla kbira"
+  LAVA: "lava"
+  LAVA_CAULDRON: "kaldarun tal-lava"
+  LECTERN: "lectern"
+  LEVER: "swiċċ"
+  LIGHT: "dawl"
+  LIGHT_BLUE_BANNER: "bandiera blu ċar"
+  LIGHT_BLUE_BED: "sodda blu ħafifa"
+  LIGHT_BLUE_CANDLE: "xemgħa blu ċara"
+  LIGHT_BLUE_CANDLE_CAKE: "kejk b'xemgħa blu ċar"
+  LIGHT_BLUE_CARPET: "tapit blu ċar"
+  LIGHT_BLUE_CONCRETE: "konkrit ikħal ċar"
+  LIGHT_BLUE_CONCRETE_POWDER: "trab ikħal ċar tal-konkrit"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "terrakotta bit-tleqqija ikħal ċar"
+  LIGHT_BLUE_SHULKER_BOX: "kaxxa ta ' l-imulker blu ċar"
+  LIGHT_BLUE_STAINED_GLASS: "ħġieġ miżbugħ blu ċar"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha blu ċar"
+  LIGHT_BLUE_TERRACOTTA: "light blue terracotta"
+  LIGHT_BLUE_WOOL: "suf blu ċar"
+  LIGHT_GRAY_BANNER: "bandiera griża ċara"
+  LIGHT_GRAY_BED: "sodda griża ċara"
+  LIGHT_GRAY_CANDLE: "xemgħa griża ċara"
+  LIGHT_GRAY_CANDLE_CAKE: "kejk b'xemgħa griża ċara"
+  LIGHT_GRAY_CARPET: "tapit griż ċar"
+  LIGHT_GRAY_CONCRETE: "konkrit griż ċar"
+  LIGHT_GRAY_CONCRETE_POWDER: "trab griż ċar tal-konkrit"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "terrakotta bi tleqqija griż ċar"
+  LIGHT_GRAY_SHULKER_BOX: "kaxxa ta ' l-shulker ħafif tal-gray"
+  LIGHT_GRAY_STAINED_GLASS: "ħġieġ miżbugħ griż ċar"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha griża ċara"
+  LIGHT_GRAY_TERRACOTTA: "terrakotta griża ċara"
+  LIGHT_GRAY_WOOL: "suf griż ċar"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "pjanċa tal-pressjoni peżata ħafifa"
+  LIGHTNING_ROD: "virga tas-sajjetti"
+  LILAC: "lela'"
+  LILY_OF_THE_VALLEY: "lily tal-wied"
+  LILY_PAD: "pjanta tal-ilma"
+  LIME_BANNER: "bandiera ħadra ċara"
+  LIME_BED: "sodda tal-lajm"
+  LIME_CANDLE: "xemgħa tal-ġir"
+  LIME_CANDLE_CAKE: "kejk b'xemgħa ħadra ċara"
+  LIME_CARPET: "tapit aħdar ċar"
+  LIME_CONCRETE: "konkrit aħdar ċar"
+  LIME_CONCRETE_POWDER: "trab aħdar ċar tal-konkrit"
+  LIME_GLAZED_TERRACOTTA: "terrakotta bit-tleqqija aħdar ċar"
+  LIME_SHULKER_BOX: "kaxxa tal-ġir shulker"
+  LIME_STAINED_GLASS: "ħġieġ miżbugħ aħdar ċar"
+  LIME_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha ħadra ċara"
+  LIME_TERRACOTTA: "terracotta tal-ġir"
+  LIME_WOOL: "suf aħdar ċar"
+  LODESTONE: "ġebla tad-direzzjoni"
+  LOOM: "newl tal"
+  MAGENTA_BANNER: "bandira roża skur"
+  MAGENTA_BED: "sodda ta ' maġenta"
+  MAGENTA_CANDLE: "xemgħa tal-magenta"
+  MAGENTA_CANDLE_CAKE: "kejk max-xemgħa maġenta"
+  MAGENTA_CARPET: "tapit roża skur"
+  MAGENTA_CONCRETE: "konkrit maġenta"
+  MAGENTA_CONCRETE_POWDER: "trab maġenta tal-konkrit"
+  MAGENTA_GLAZED_TERRACOTTA: "ħġieġ magenta terracotta"
+  MAGENTA_SHULKER_BOX: "kaxxa magenta shulker"
+  MAGENTA_STAINED_GLASS: "ħġieġ miżbugħ vjola ċar"
+  MAGENTA_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha vjola ċar"
+  MAGENTA_TERRACOTTA: "magenta terracotta"
+  MAGENTA_WOOL: "suf vjola ċar"
+  MAGMA_BLOCK: "blokka tal-magma"
+  MANGROVE_BUTTON: "buttuna tal-mangrovja"
+  MANGROVE_DOOR: "bieb tal-mangrovja"
+  MANGROVE_FENCE: "ċint tal-mangrovja"
+  MANGROVE_FENCE_GATE: "bieb taċ-ċint tal-mangrovja"
+  MANGROVE_HANGING_SIGN: "tabella tiddendel tal-mangrovja"
+  MANGROVE_LEAVES: "weraq tal-mangrovja"
+  MANGROVE_LOG: "zokk tal-mangrovja"
+  MANGROVE_PLANKS: "planks tal-mangrovja"
+  MANGROVE_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-mangrovja"
+  MANGROVE_PROPAGULE: "mangrovja propagulu"
+  MANGROVE_ROOTS: "għeruq tal-mangrovja"
+  MANGROVE_SIGN: "sinjal tal-mangrovja"
+  MANGROVE_SLAB: "ċangun tal-mangrovja"
+  MANGROVE_STAIRS: "taraġ tal-mangrovja"
+  MANGROVE_TRAPDOOR: "bokkaport tal-mangrovja"
+  MANGROVE_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-mangrovja"
+  MANGROVE_WALL_SIGN: "sinjal tal-ħajt tal-mangrovja"
+  MANGROVE_WOOD: "injam tal-mangrovja"
+  MEDIUM_AMETHYST_BUD: "bud amethyst medju"
+  MELON: "dulliegħa"
+  MELON_STEM: "zokk tal-bettieħ"
+  MOSS_BLOCK: "blokk ħażiż"
+  MOSS_CARPET: "tapit ħażiż"
+  MOSSY_COBBLESTONE: "ġebel imfarrak bil-moffa"
+  MOSSY_COBBLESTONE_SLAB: "ċangun tal-ġebel imfarrak bil-moffa"
+  MOSSY_COBBLESTONE_STAIRS: "taraġ tal-ġebel imfarrak bil-moffa"
+  MOSSY_COBBLESTONE_WALL: "ħajt tas-sejjieħ bil-moffa"
+  MOSSY_STONE_BRICK_SLAB: "ċangun tal-briks tal-ġebel bil-moffa"
+  MOSSY_STONE_BRICK_STAIRS: "taraġ tal-briks tal-ġebel bil-moffa"
+  MOSSY_STONE_BRICK_WALL: "ħajt tal-briks tal-ġebel bil-moffa"
+  MOSSY_STONE_BRICKS: "briks tal-ġebel bil-moffa"
+  MOVING_PISTON: "qed jimxi l-pistun"
+  MUD: "tajn"
+  MUD_BRICK_SLAB: "ċangun tal-briks tat-tajn"
+  MUD_BRICK_STAIRS: "taraġ tal-briks tat-tajn"
+  MUD_BRICK_WALL: "ħajt tal-briks tat-tajn"
+  MUD_BRICKS: "briks tat-tajn"
+  MUDDY_MANGROVE_ROOTS: "għeruq tal-mangrovja bit-tajn"
+  MUSHROOM_STEM: "zokk tal-faqqieg ħ"
+  MYCELIUM: "moffa"
+  NETHER_BRICK_FENCE: "ċint tan-nether"
+  NETHER_BRICK_SLAB: "ċangun tal-briks tan-nether"
+  NETHER_BRICK_STAIRS: "taraġ tan-nether"
+  NETHER_BRICK_WALL: "ħajt tal-briks nether"
+  NETHER_BRICKS: "briks nether"
+  NETHER_GOLD_ORE: "ore tad-deheb nether"
+  NETHER_PORTAL: "portal nether"
+  NETHER_QUARTZ_ORE: "sigħat tal-kwartz tan-nether"
+  NETHER_SPROUTS: "nebbieta tan-nether"
+  NETHER_WART: "faqqiegħ tan-nether"
+  NETHER_WART_BLOCK: "blokka tal-faqqiegħ tan-nether"
+  NETHERITE_BLOCK: "blokk ta 'netherajt"
+  NETHERRACK: "ġebel tan-nether"
+  NOTE_BLOCK: "blokka tal-mużika"
+  OAK_BUTTON: "buttuna tal-ballut"
+  OAK_DOOR: "bieb tal-ballut"
+  OAK_FENCE: "ċint tal-ballut"
+  OAK_FENCE_GATE: "grada tal-ballut"
+  OAK_HANGING_SIGN: "tabella tiddendel tal-ballut"
+  OAK_LEAVES: "weraq tal-ballut"
+  OAK_LOG: "ġurnal tal-ballut"
+  OAK_PLANKS: "planks tal-ballut"
+  OAK_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-ballut"
+  OAK_SAPLING: "żgħar tal-ballut"
+  OAK_SIGN: "sinjal tal-ballut"
+  OAK_SLAB: "ċangun tal-ballut"
+  OAK_STAIRS: "taraġ tal-ballut"
+  OAK_TRAPDOOR: "bokkaport tal-ballut"
+  OAK_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-ballut"
+  OAK_WALL_SIGN: "sinjal tal-ħajt tal-ballut"
+  OAK_WOOD: "injam tal-ballut"
+  OBSERVER: "osservatur"
+  OBSIDIAN: "ossidnu"
+  OCHRE_FROGLIGHT: "żriddix okra"
+  OMINOUS_BANNER: "bandiera ominuża"
+  ORANGE_BANNER: "bandiera oranġjo"
+  ORANGE_BED: "sodda orangjo"
+  ORANGE_CANDLE: "xemgħa oranġjo"
+  ORANGE_CANDLE_CAKE: "kejk b'xemgħa oranġjo"
+  ORANGE_CARPET: "tapit oranġjo"
+  ORANGE_CONCRETE: "konkrit oranġjo"
+  ORANGE_CONCRETE_POWDER: "trab oranġjo tal-konkrit"
+  ORANGE_GLAZED_TERRACOTTA: "terracotta ta ' ħġieġ oranġjo"
+  ORANGE_SHULKER_BOX: "kaxxa ta ' shulker oranġjo"
+  ORANGE_STAINED_GLASS: "ħġieġ miżbugħ oranġjo"
+  ORANGE_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha oranġjo ċar"
+  ORANGE_TERRACOTTA: "oranġjo terracotta"
+  ORANGE_TULIP: "tulip oranġjo"
+  ORANGE_WOOL: "suf oranġjo"
+  OXEYE_DAISY: "narċisa"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "ram ossidat"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "ram maqtugħ ossidat"
+  OXIDIZED_CUT_COPPER_SLAB: "ċangun tar-ramm maqtugħ ossidat"
+  OXIDIZED_CUT_COPPER_STAIRS: "taraġ tar-ramm maqtugħ ossidat"
+  PACKED_ICE: "silġ solidu"
+  PACKED_MUD: "tajn ippakkjat"
+  PEARLESCENT_FROGLIGHT: "żriddix pearlescent"
+  PEONY: "peony"
+  PETRIFIED_OAK_SLAB: "ċangun tal-bullut petrifikat"
+  PIGLIN_HEAD: "piglin ras"
+  PIGLIN_WALL_HEAD: "piglin ħajt ras"
+  PINK_BANNER: "bandiera roża"
+  PINK_BED: "sodda roża"
+  PINK_CANDLE: "xemgħa roża"
+  PINK_CANDLE_CAKE: "kejk b'xemgħa roża"
+  PINK_CARPET: "tapit roża"
+  PINK_CONCRETE: "konkrit roża"
+  PINK_CONCRETE_POWDER: "trab roża tal-konkrit"
+  PINK_GLAZED_TERRACOTTA: "terrakotta bi tleqqija roża"
+  PINK_PETALS: "petali roża"
+  PINK_SHULKER_BOX: "kaxxa tal-shulker roża"
+  PINK_STAINED_GLASS: "ħġieġ miżbugħ roża"
+  PINK_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha roża"
+  PINK_TERRACOTTA: "terracotta roża"
+  PINK_TULIP: "tulip roża"
+  PINK_WOOL: "suf roża"
+  PISTON: "pistun"
+  PISTON_HEAD: "kap tal-pistun"
+  PITCHER_CROP: "pitcher uċuħ tar-raba’"
+  PITCHER_PLANT: "pitcher pjanta"
+  PLAYER_HEAD: "kap tal-plejer"
+  PLAYER_HEAD_NAMED: "ras ta' %s"
+  PLAYER_WALL_HEAD: "kap tal-ħajt tal-plejer"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "dripstone bil-ponta"
+  POLISHED_ANDESITE: "andesite illustrat"
+  POLISHED_ANDESITE_SLAB: "ċangun tal-andesit illustrat"
+  POLISHED_ANDESITE_STAIRS: "taraġ tal-andesit illustrat"
+  POLISHED_BASALT: "bażalt illostrat"
+  POLISHED_BLACKSTONE: "ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "ċangatura tal-ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "taraġ tal-briks tal-ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_BRICK_WALL: "ħajt tal-briks tal-ġebel sewda illostrata"
+  POLISHED_BLACKSTONE_BRICKS: "briksiet tal-ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_BUTTON: "buttuna tal-ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "pjanċa tal-pressjoni tal-ġebla sewda illostrata"
+  POLISHED_BLACKSTONE_SLAB: "ċangun tal-ġebla sewda illustrata"
+  POLISHED_BLACKSTONE_STAIRS: "taraġ tal-ġebel iswed illustrat"
+  POLISHED_BLACKSTONE_WALL: "ħajt tal-ġebla sewda illostrata"
+  POLISHED_DEEPSLATE: "deepslate illustrat"
+  POLISHED_DEEPSLATE_SLAB: "ċangun tad-deepslate illustrat"
+  POLISHED_DEEPSLATE_STAIRS: "taraġ tad-deesplate illustrat"
+  POLISHED_DEEPSLATE_WALL: "ħajt deepslate illustrat"
+  POLISHED_DIORITE: "diorite illustrat"
+  POLISHED_DIORITE_SLAB: "ċangun tad-dajorit illustrat"
+  POLISHED_DIORITE_STAIRS: "taraġ tad-dajorit illustrat"
+  POLISHED_GRANITE: "granit illustrat"
+  POLISHED_GRANITE_SLAB: "ċangun tal-granit illustrat"
+  POLISHED_GRANITE_STAIRS: "taraġ tal-granit illustrat"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "peprina"
+  POTATOES: "patata"
+  POTTED_ACACIA_SAPLING: "żling tal-g ħadma tal-fu ħħar"
+  POTTED_ALLIUM: "allium ted tal-fu ħħar"
+  POTTED_AZALEA_BUSH: "azalea bil-qsari"
+  POTTED_AZURE_BLUET: "potted azure bluet"
+  POTTED_BAMBOO: "bambu' ġo qasrija"
+  POTTED_BIRCH_SAPLING: "bettat tal-g ħadma tal-fu ħħar"
+  POTTED_BLUE_ORCHID: "orkidej blu tal-fu ħħar"
+  POTTED_BROWN_MUSHROOM: "faqqiegħ kannella imħawwel ġo qasrija"
+  POTTED_CACTUS: "kaktus tal-fu ħħar"
+  POTTED_CHERRY_SAPLING: "sapling taċ-ċirasa mħawla"
+  POTTED_CORNFLOWER: "il-fjura tal-qam ħirrun potted"
+  POTTED_CRIMSON_FUNGUS: "qasrija tal-fungi krimżi"
+  POTTED_CRIMSON_ROOTS: "qasrija tal-għeruq krimżi"
+  POTTED_DANDELION: "id-dandelion tal-fu ħħar"
+  POTTED_DARK_OAK_SAPLING: "sapling tal-ballut mudlama"
+  POTTED_DEAD_BUSH: "potted mejjet bush"
+  POTTED_FERN: "felċi tal-fu ħħar"
+  POTTED_FLOWERING_AZALEA_BUSH: "azalea tal-fjuri bil-qsari"
+  POTTED_JUNGLE_SAPLING: "titi tal-fu ħħar"
+  POTTED_LILY_OF_THE_VALLEY: "futed lily mill-wied"
+  POTTED_MANGROVE_PROPAGULE: "propagulu tal-mangrovja mħawla"
+  POTTED_OAK_SAPLING: "sapling tal-ballut potted"
+  POTTED_ORANGE_TULIP: "it-tulil tal-larin ġ tal-g ħadma tal-fu ħħar"
+  POTTED_OXEYE_DAISY: "damargerita tal-fu ħħar"
+  POTTED_PINK_TULIP: "ropi roża fl-g ħadma tal-fu ħħar"
+  POTTED_POPPY: "peprin tal-fu ħħar"
+  POTTED_RED_MUSHROOM: "faqqiegħ aħmar futed"
+  POTTED_RED_TULIP: "tulip aħmar tal-fu ħħar"
+  POTTED_SPRUCE_SAPLING: "spruce sidru"
+  POTTED_TORCHFLOWER: "torchflower mħawla"
+  POTTED_WARPED_FUNGUS: "qasrija tal-fungi stramb"
+  POTTED_WARPED_ROOTS: "qasrija tal-għeruq stramb"
+  POTTED_WHITE_TULIP: "tulil abjad tal-fu ħħar"
+  POTTED_WITHER_ROSE: "potted wither rose"
+  POWDER_SNOW: "borra trab"
+  POWDER_SNOW_CAULDRON: "trab borra kaldarun"
+  POWERED_RAIL: "linji mixgħulin"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "ċangun tal-briks tal-priżmarin"
+  PRISMARINE_BRICK_STAIRS: "taraġ tal-briks tal-priżmarin"
+  PRISMARINE_BRICKS: "briks tal-prismarine"
+  PRISMARINE_SLAB: "ċangun tal-priżmarin"
+  PRISMARINE_STAIRS: "taraġ tal-priżmarin"
+  PRISMARINE_WALL: "ħajt tal-priżmarin"
+  PUMPKIN: "qargħa ħamra"
+  PUMPKIN_STEM: "zokk tal-qargħa ħamra"
+  PURPLE_BANNER: "bandiera vjola"
+  PURPLE_BED: "sodda vjola"
+  PURPLE_CANDLE: "xemgħa vjola"
+  PURPLE_CANDLE_CAKE: "kejk b'xemgħa vjola"
+  PURPLE_CARPET: "tapit vjola"
+  PURPLE_CONCRETE: "konkrit vjola"
+  PURPLE_CONCRETE_POWDER: "trab vjola tal-konkrit"
+  PURPLE_GLAZED_TERRACOTTA: "terrakotta bi tleqqija vjola"
+  PURPLE_SHULKER_BOX: "kaxxa ta ' shulker vjola"
+  PURPLE_STAINED_GLASS: "ħġieġ miżbugħ vjola"
+  PURPLE_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha vjola"
+  PURPLE_TERRACOTTA: "terrakotta vjola"
+  PURPLE_WOOL: "suf vjola"
+  PURPUR_BLOCK: "blokka tal-purpur"
+  PURPUR_PILLAR: "pilastru tal-purpur"
+  PURPUR_SLAB: "ċangun tal-purpur"
+  PURPUR_STAIRS: "taraġ tal-purpur"
+  QUARTZ_BLOCK: "blokka tal-kwarz"
+  QUARTZ_BRICKS: "briks tal-kwarz"
+  QUARTZ_PILLAR: "pilastru tal-kwarz"
+  QUARTZ_SLAB: "ċangun tal-kwarz"
+  QUARTZ_STAIRS: "taraġ tal-kwarz"
+  RAIL: "linji tat-trakk"
+  RAW_COPPER_BLOCK: "blokk ta 'ram mhux maħdum"
+  RAW_GOLD_BLOCK: "blokk ta 'deheb mhux maħdum"
+  RAW_IRON_BLOCK: "blokk ta 'ħadid mhux maħdum"
+  RED_BANNER: "bandiera ħamra"
+  RED_BED: "sodda ħamra"
+  RED_CANDLE: "xemgħa ħamra"
+  RED_CANDLE_CAKE: "kejk b'xemgħa ħamra"
+  RED_CARPET: "tapit aħmar"
+  RED_CONCRETE: "konkrit aħmar"
+  RED_CONCRETE_POWDER: "trab aħmar tal-konkrit"
+  RED_GLAZED_TERRACOTTA: "terrakotta bi tleqqija ħamra"
+  RED_MUSHROOM: "faqqiegħ aħmar"
+  RED_MUSHROOM_BLOCK: "blokk tal-faqqieg ħ aħmar"
+  RED_NETHER_BRICK_SLAB: "ċangun tal-briks tan-nether aħmar"
+  RED_NETHER_BRICK_STAIRS: "taraġ tal-briks tan-nether aħmar"
+  RED_NETHER_BRICK_WALL: "ħajt tal-briks tan-neputi aħmar"
+  RED_NETHER_BRICKS: "brikks tan-neputi ħomor"
+  RED_SAND: "ramel aħmar"
+  RED_SANDSTONE: "ġebel aħmar tal-franka"
+  RED_SANDSTONE_SLAB: "ċangun tal-ġebel aħmar tal-franka"
+  RED_SANDSTONE_STAIRS: "taraġ tal-ġebel aħmar tal-franka"
+  RED_SANDSTONE_WALL: "ħajt tal-ġebel aħmar tal-franka"
+  RED_SHULKER_BOX: "kaxxa ta ' shulker aħmar"
+  RED_STAINED_GLASS: "ħġieġ miżbugħ aħmar"
+  RED_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha ħamra"
+  RED_TERRACOTTA: "terrakotta aħmar"
+  RED_TULIP: "tulip ħamra"
+  RED_WOOL: "suf aħmar"
+  REDSTONE_BLOCK: "blokka tar-redstone"
+  REDSTONE_LAMP: "lampa tar-redstone"
+  REDSTONE_ORE: "sigħat tar-redstone"
+  REDSTONE_TORCH: "torċa tar-redstone"
+  REDSTONE_WALL_TORCH: "fekruna tal-ħajt ta ' l-g ħadma"
+  REDSTONE_WIRE: "wajer tar-redstone"
+  REINFORCED_DEEPSLATE: "deepslate rinfurzat"
+  REPEATER: "dajowd tar-redstone"
+  REPEATING_COMMAND_BLOCK: "blokka tal-kodiċi tirrepeti"
+  RESPAWN_ANCHOR: "ankra mġarrba"
+  ROOTED_DIRT: "ħmieġ bl-għeruq"
+  ROSE_BUSH: "xitla tal-ward"
+  SAND: "ramel"
+  SANDSTONE: "ġebel tal-franka"
+  SANDSTONE_SLAB: "ċangun tal-franka"
+  SANDSTONE_STAIRS: "taraġ tal-franka"
+  SANDSTONE_WALL: "ħajt tal-ġebel tal-franka"
+  SCAFFOLDING: "armar"
+  SCULK: "skulk"
+  SCULK_CATALYST: "katalizzatur tas-skulk"
+  SCULK_SENSOR: "sculk ditekter"
+  SCULK_SHRIEKER: "sculk għajjatur"
+  SCULK_VEIN: "vina tas-sculk"
+  SEA_LANTERN: "mixegħela tal-baħar"
+  SEA_PICKLE: "pickle tal-ba ħar"
+  SEAGRASS: "ħaxix tal-ba ħar"
+  SET_SPAWN: "ibdila mill-gdid"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "faqqiegħ li jixgħel"
+  SHULKER_BOX: "kaxxa ta ' shulker"
+  SKELETON_SKULL: "ras ta' skeletru"
+  SKELETON_WALL_SKULL: "ras tal-ħajt tal-iskeletru"
+  SLIME_BLOCK: "blokka tal-ħama"
+  SMALL_AMETHYST_BUD: "bud amethyst żgħir"
+  SMALL_DRIPLEAF: "dripleaf żgħir"
+  SMITHING_TABLE: "smithing table"
+  SMOKER: "tpejjep ħafna"
+  SMOOTH_BASALT: "basalt lixx"
+  SMOOTH_QUARTZ: "blokka tal-kwarz lixxa"
+  SMOOTH_QUARTZ_SLAB: "ċangun tal-kwarz lixx"
+  SMOOTH_QUARTZ_STAIRS: "taraġ tal-kwarz lixx"
+  SMOOTH_RED_SANDSTONE: "ġebel aħmar tal-franka lixx"
+  SMOOTH_RED_SANDSTONE_SLAB: "ċangun tal-ġebel aħmar tal-franka lixx"
+  SMOOTH_RED_SANDSTONE_STAIRS: "taraġ tal-ġebel aħmar tal-franka lixx"
+  SMOOTH_SANDSTONE: "ġebel tal-franka lixx"
+  SMOOTH_SANDSTONE_SLAB: "ċangun tal-franka lixxa"
+  SMOOTH_SANDSTONE_STAIRS: "taraġ tal-franka lixxa"
+  SMOOTH_STONE: "ġebla lixxa"
+  SMOOTH_STONE_SLAB: "ċangun tal-ġebel lixx"
+  SNIFFER_EGG: "sniffer egg"
+  SNOW: "borra"
+  SNOW_BLOCK: "blokka tas-sil ġ"
+  SOUL_CAMPFIRE: "nar tal-kamp tar-ruħ"
+  SOUL_FIRE: "nar tar-ruħ"
+  SOUL_LANTERN: "fanal tar-ruħ"
+  SOUL_SAND: "trab tal-erwieħ"
+  SOUL_SOIL: "ħamrija tar-ruħ"
+  SOUL_TORCH: "ruħ torċa"
+  SOUL_WALL_TORCH: "qafla tal-ħajt tar-ruħ"
+  SPAWN_NOT_VALID: "m'għandek l-ebda sodda jew ankra rikarikata li ġiet rikarigata jew ġiet imxekkla"
+  SPAWNER: "mafqas tal-mostri"
+  SPAWNER_DESC1: "interazzjoni ma spawn egg:"
+  SPAWNER_DESC2: "settijiet mob tip"
+  SPONGE: "sponża"
+  SPORE_BLOSSOM: "fjur tal-ispora"
+  SPRUCE_BUTTON: "buttuna ta ' spruce"
+  SPRUCE_DOOR: "bieb tal-arżnu"
+  SPRUCE_FENCE: "ċint tal-arżnu"
+  SPRUCE_FENCE_GATE: "grada tal-arżnu"
+  SPRUCE_HANGING_SIGN: "tabella tiddendel tal-arżnu"
+  SPRUCE_LEAVES: "weraq tal-arżnu"
+  SPRUCE_LOG: "reġistru tal-ispruce"
+  SPRUCE_PLANKS: "planks ta ' l-g ħażil"
+  SPRUCE_PRESSURE_PLATE: "pjanċa tal-pressjoni spruce"
+  SPRUCE_SAPLING: "żgħar tal-arżnu"
+  SPRUCE_SIGN: "sinjal ta ' spruce"
+  SPRUCE_SLAB: "ċangun tal-arżnu"
+  SPRUCE_STAIRS: "taraġ tal-arżnu"
+  SPRUCE_TRAPDOOR: "bokkaport tal-arżnu"
+  SPRUCE_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel tal-arżnu"
+  SPRUCE_WALL_SIGN: "sinjal tal-ħajt ta ' l-ispruce"
+  SPRUCE_WOOD: "injam tal-arżnu"
+  STICKY_PISTON: "pistun iweħħel"
+  STONE: "ġebel"
+  STONE_BRICK_SLAB: "ċangun tal-briks tal-ġebel"
+  STONE_BRICK_STAIRS: "taraġ tal-briks tal-ġebel"
+  STONE_BRICK_WALL: "ħajt tal-briks tal-ġebel"
+  STONE_BRICKS: "briks tal-ġebel"
+  STONE_BUTTON: "buttuna tal-ġebel"
+  STONE_PRESSURE_PLATE: "pjanċa tal-ġebel"
+  STONE_SLAB: "ċangun tal-ġebel"
+  STONE_STAIRS: "taraġ tal-ġebel"
+  STONECUTTER: "stonecutter"
+  STRIPPED_ACACIA_LOG: "ir-re ġistru tal-aka ċja mqaxxar"
+  STRIPPED_ACACIA_WOOD: "injam imqaxxar tal-aka ċja"
+  STRIPPED_BAMBOO_BLOCK: "blokk tal-bambu mqaxxarp"
+  STRIPPED_BIRCH_LOG: "reġistru tal-betbiena mneżża"
+  STRIPPED_BIRCH_WOOD: "injam tal-betula imqaxxar"
+  STRIPPED_CHERRY_LOG: "zokk taċ-ċirasa mqaxxar"
+  STRIPPED_CHERRY_WOOD: "injam taċ-ċirasa mqaxxar"
+  STRIPPED_CRIMSON_HYPHAE: "ħajfi krimżi imqaxxar"
+  STRIPPED_CRIMSON_STEM: "zokk krimżi imqaxxar"
+  STRIPPED_DARK_OAK_LOG: "zokk tal-ballut skur imqaxxar"
+  STRIPPED_DARK_OAK_WOOD: "injam tal-ballut skur imqaxxar"
+  STRIPPED_JUNGLE_LOG: "ġurnal tal-ġungla imqaxxar"
+  STRIPPED_JUNGLE_WOOD: "injam imqaxxar jungla"
+  STRIPPED_MANGROVE_LOG: "zokk tal-mangrovja mqaxxar"
+  STRIPPED_MANGROVE_WOOD: "injam tal-mangrovja mqaxxar"
+  STRIPPED_OAK_LOG: "zokk imqaxxar tal-ballut"
+  STRIPPED_OAK_WOOD: "injam tal-ballut imqaxxar"
+  STRIPPED_SPRUCE_LOG: "zokk imqaxxar"
+  STRIPPED_SPRUCE_WOOD: "injam imqaxxar (spruce)"
+  STRIPPED_WARPED_HYPHAE: "ħajfi stramb imqaxxar"
+  STRIPPED_WARPED_STEM: "zokk stramb imqaxxar"
+  STRUCTURE_BLOCK: "blokka tal-istruttura"
+  STRUCTURE_VOID: "struttura vojta"
+  SUGAR_CANE: "kannamieli zokkor"
+  SUNFLOWER: "ġirasol"
+  SUSPICIOUS_GRAVEL: "żrar suspettuż"
+  SUSPICIOUS_SAND: "ramel suspettuż"
+  SWEET_BERRY_BUSH: "il-sweet berry bush"
+  TALL_GRASS: "ħaxix twil"
+  TALL_SEAGRASS: "seagrass twil"
+  TARGET: "mira"
+  TERRACOTTA: "terracotta"
+  TINTED_GLASS: "ħġieġ ikkulurit"
+  TNT: "splussivi"
+  TORCH: "torċa"
+  TORCHFLOWER: "torchflower"
+  TORCHFLOWER_CROP: "torchflower uċuħ tar-raba’"
+  TRAPPED_CHEST: "senduq trappola"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "trappola"
+  TRIPWIRE_HOOK: "ganċ tat-trappola"
+  TUBE_CORAL: "qroll tat-tubu"
+  TUBE_CORAL_BLOCK: "blokka tal-korall tat-tubu"
+  TUBE_CORAL_FAN: "fan tal-korall tat-tubu"
+  TUBE_CORAL_WALL_FAN: "fan tal-ħajt tal-korall tat-tubu"
+  TUFF: "tuff"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "bajda tal-fekruna"
+  TWISTING_VINES: "dwieli li jduru"
+  TWISTING_VINES_PLANT: "pjanta tad-dwieli li jduru"
+  VERDANT_FROGLIGHT: "żriddix verdant"
+  VINE: "dwieli"
+  VOID_AIR: "arja nulla"
+  WALL_TORCH: "fekruna tal-ħajt"
+  WARPED_BUTTON: "buttuna stramba"
+  WARPED_DOOR: "bieb stramb"
+  WARPED_FENCE: "ċint stramb"
+  WARPED_FENCE_GATE: "grada stramba"
+  WARPED_FUNGUS: "fungi stramb"
+  WARPED_HANGING_SIGN: "tabella tiddendel stamba"
+  WARPED_HYPHAE: "ħajfi stramb"
+  WARPED_NYLIUM: "njlium stramb"
+  WARPED_PLANKS: "planki strambi"
+  WARPED_PRESSURE_PLATE: "pjanċa tal-pressjoni stramb"
+  WARPED_ROOTS: "għeruq stramb"
+  WARPED_SIGN: "tabella stramba"
+  WARPED_SLAB: "nofs planki strambi"
+  WARPED_STAIRS: "taraġ stramb"
+  WARPED_STEM: "zokk stramb"
+  WARPED_TRAPDOOR: "bieba stramba"
+  WARPED_WALL_HANGING_SIGN: "tabella tal-ħajt tiddendel stramba"
+  WARPED_WALL_SIGN: "tabella stramba mal-ħajt"
+  WARPED_WART_BLOCK: "blokka tal-felula stramb"
+  WATER: "ilma"
+  WATER_CAULDRON: "kaldarun tal-ilma"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "blokk tax-xama 'tar-ram"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "ram maqtugħ xema'"
+  WAXED_CUT_COPPER_SLAB: "slab tar-ram maqtugħ mix-xama'"
+  WAXED_CUT_COPPER_STAIRS: "taraġ maqtugħ tar-ram tax-xama'"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "ram espost ix-xama '"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "ram maqtugħ espost ix-xama '"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "ċangun tar-ramm maqtugħ espost bix-xama'"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "taraġ tar-ramm maqtugħ espost bix-xama'"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "ram ossidat ix-xama '"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "ram maqtugħ ossidat ix-xama '"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "ċangun tar-ramm maqtugħ ossidat bix-xama'"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "taraġ tar-ramm maqtugħ ossidat bix-xama'"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "ram imlaħħam bix-xama '"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "ram maqtugħ bit-tneħħija tax-xama '"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "ċangun tar-ramm maqtugħ f'temp bix-xama'"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "taraġ tar-ramm maqtugħ f'temp"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "ram ittrattat"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "ram maqtugħ imfewwek"
+  WEATHERED_CUT_COPPER_SLAB: "slab tar-ram maqtugħ imteeħed"
+  WEATHERED_CUT_COPPER_STAIRS: "taraġ tar-ram maqtugħ imteffi"
+  WEEPING_VINES: "dwieli tal-biki"
+  WEEPING_VINES_PLANT: "pjanti tad-dielja biki"
+  WET_SPONGE: "sponża mxarba"
+  WHEAT: "uċuħ tar-raba ' tal-qam ħ"
+  WHITE_BANNER: "bandiera bajda"
+  WHITE_BED: "sodda bajda"
+  WHITE_CANDLE: "xemgħa bajda"
+  WHITE_CANDLE_CAKE: "kejk b'xemgħa bajda"
+  WHITE_CARPET: "tapit abjad"
+  WHITE_CONCRETE: "konkrit abjad"
+  WHITE_CONCRETE_POWDER: "trab abjad tal-konkrit"
+  WHITE_GLAZED_TERRACOTTA: "terracotta tal-ħġieġ abjad"
+  WHITE_SHULKER_BOX: "kaxxa ta ' shulker bajda"
+  WHITE_STAINED_GLASS: "ħġieġ miżbugħ abjad"
+  WHITE_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha bajda ċara"
+  WHITE_TERRACOTTA: "abjad terracotta"
+  WHITE_TULIP: "tulip bajda"
+  WHITE_WOOL: "suf abjad"
+  WITHER_ROSE: "wither rose"
+  WITHER_SKELETON_SKULL: "ras ta' skeletru tal-wither"
+  WITHER_SKELETON_WALL_SKULL: "ras tal-ħajt tal-iskeletru wither"
+  YELLOW_BANNER: "bandiera safra"
+  YELLOW_BED: "sodda safra"
+  YELLOW_CANDLE: "xemgħa safra"
+  YELLOW_CANDLE_CAKE: "kejk b'xemgħa isfar"
+  YELLOW_CARPET: "tapit isfar"
+  YELLOW_CONCRETE: "konkrit isfar"
+  YELLOW_CONCRETE_POWDER: "trab isfar tal-konkrit"
+  YELLOW_GLAZED_TERRACOTTA: "terrakotta bit-tleqqija safrani"
+  YELLOW_SHULKER_BOX: "kaxxa safra tal-shulker"
+  YELLOW_STAINED_GLASS: "ħġieġ miżbugħ isfar"
+  YELLOW_STAINED_GLASS_PANE: "ħġieġa ċatta miżbugħha safra"
+  YELLOW_TERRACOTTA: "isfar terracotta"
+  YELLOW_WOOL: "suf isfar"
+  ZOMBIE_HEAD: "ras ta' mostru"
+  ZOMBIE_WALL_HEAD: "ras tal-ħajt zapping"
+  ACACIA_BOAT: "dgħajsa tal-akaċja"
+  ACACIA_CHEST_BOAT: "dgħajsa tal-akaċja bis-senduq"
+  ALLAY_SPAWN_EGG: "bajda tal-allay"
+  AMETHYST_SHARD: "amethyst frak"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "tuffieħa"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "stand tal-armar"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "vleġġa"
+  AXOLOTL_BUCKET: "barmil ta 'axolotl"
+  AXOLOTL_SPAWN_EGG: "bajd ta 'axolotl"
+  BAKED_POTATO: "patata msajra"
+  BAMBOO_CHEST_RAFT: "ċattra tal-bambu' b'senduq"
+  BAMBOO_RAFT: "ċattra tal-bambu'"
+  BAT_SPAWN_EGG: "bajda tal-bajd"
+  BEE_SPAWN_EGG: "bajd tan-na ħal"
+  BEEF: "ċanga nejja"
+  BEETROOT: "pitrava"
+  BEETROOT_SEEDS: "żerriegħa tal-pitravi"
+  BEETROOT_SOUP: "soppa tal-pitravi"
+  BIRCH_BOAT: "dgħajsa tal-betula"
+  BIRCH_CHEST_BOAT: "dgħajsa tal-betula bis-senduq"
+  BLACK_DYE: "kulur iswed"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "trab tan-nar"
+  BLAZE_ROD: "virga tan-nar"
+  BLAZE_SPAWN_EGG: "il-bajda"
+  BLUE_DYE: "żebgħa kaħla"
+  BONE: "għadma"
+  BONE_MEAL: "fertilizzant"
+  BOOK: "ktieb"
+  BOW: "qaws"
+  BOWL: "skutella"
+  BREAD: "ħobż"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BREWING_STAND: "brewing stand"
+  BRICK: "briksa"
+  BROWN_DYE: "żebgħa kannella"
+  BRUSH: "brush"
+  BUCKET: "barmil"
+  BUNDLE: "gozz"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "bajda ta' ġemel"
+  CARROT: "karrotta"
+  CARROT_ON_A_STICK: "karrotta fuq stikka"
+  CAT_SPAWN_EGG: "qattus tal-bajd tal-qtates"
+  CAULDRON: "cauldron"
+  CAVE_SPIDER_SPAWN_EGG: "grotta tal-bajd"
+  CHAINMAIL_BOOTS: "żraben tal-chainmail"
+  CHAINMAIL_CHESTPLATE: "pjanċa tal-qastan"
+  CHAINMAIL_HELMET: "chainmail helmet"
+  CHAINMAIL_LEGGINGS: "leggings tal-chainmail"
+  CHARCOAL: "faħam tal-injam"
+  CHERRY_BOAT: "cherry boat"
+  CHERRY_CHEST_BOAT: "cherry boat with chest"
+  CHEST_MINECART: "karretta b'senduq"
+  CHICKEN: "tiġieġa nejja"
+  CHICKEN_SPAWN_EGG: "bajda tal-bajd tat-ti ġieġ"
+  CHORUS_FRUIT: "frotta tal-chorus"
+  CLAY_BALL: "ballun tat-tafal"
+  CLOCK: "arloġġ"
+  COAL: "faħam"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "fażola tal-kawkaw"
+  COD: "bakkaljaw mhux maħdum"
+  COD_BUCKET: "barmil tal-bakkaljaw"
+  COD_SPAWN_EGG: "merluzz tal-bajd"
+  COMMAND_BLOCK_MINECART: "karretta bi blokka tal-kodiċi"
+  COMPASS: "boxla"
+  COOKED_BEEF: "ċanga msajra"
+  COOKED_CHICKEN: "tiġieġa msajra"
+  COOKED_COD: "merluzz imsajjar"
+  COOKED_MUTTON: "laħam tan-nagħġa msajjar"
+  COOKED_PORKCHOP: "majjal imsajjar"
+  COOKED_RABBIT: "fenek imsajjar"
+  COOKED_SALMON: "salamun imsajjar"
+  COOKIE: "gallettina"
+  COPPER_INGOT: "ingotta tar-ram"
+  COW_SPAWN_EGG: "bajda tal-bajd tal-baqra"
+  CREEPER_BANNER_PATTERN: "banner pattern"
+  CREEPER_BANNER_PATTERN_DESC: "ċarġ creeper"
+  CREEPER_SPAWN_EGG: "bajda"
+  CROSSBOW: "crossbow"
+  CROSSBOW_PROJECTILE: "projettili:"
+  CYAN_DYE: "żebgħa blu fl-aħdar"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "dgħajsa tal-ballut skur"
+  DARK_OAK_CHEST_BOAT: "dgħajsa tal-ballut skur bis-senduq"
+  DEBUG_STICK: "stikka tal-iddibaggjar"
+  DEBUG_STICK_EMPTY: "%s m ' għandu l-ebda propjetajiet"
+  DEBUG_STICK_SELECT: "magħżula \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" għal%s"
+  DIAMOND: "djamant"
+  DIAMOND_AXE: "mannara tad-djamant"
+  DIAMOND_BOOTS: "żraben tad-djamant"
+  DIAMOND_CHESTPLATE: "armar tad-djamant"
+  DIAMOND_HELMET: "elum tad-djamant"
+  DIAMOND_HOE: "mgħażqa tad-djamant"
+  DIAMOND_HORSE_ARMOR: "armar taż-żwiemel tad-djamant"
+  DIAMOND_LEGGINGS: "saqajn tad-djamant"
+  DIAMOND_PICKAXE: "baqqun tad-djamant"
+  DIAMOND_SHOVEL: "pala tad-djamant"
+  DIAMOND_SWORD: "xabla tad-djamant"
+  DISC_FRAGMENT_5: "framment tad-diska"
+  DISC_FRAGMENT_5_DESC: "diska tal-mużika - 5"
+  DOLPHIN_SPAWN_EGG: "bajd tad-dniefel"
+  DONKEY_SPAWN_EGG: "donnu l-bajda tal-bajd"
+  DRAGON_BREATH: "nifs ta' dragun"
+  DRIED_KELP: "kelp imnixxfa"
+  DROWNED_SPAWN_EGG: "bajd mill-ħmieġ tal-ħaxix"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "biċċa tal-eku"
+  EGG: "bajda"
+  ELDER_GUARDIAN_SPAWN_EGG: "il-bajda"
+  ELYTRA: "elytra"
+  EMERALD: "żmerald"
+  ENCHANTED_BOOK: "ktieb maġiku"
+  ENCHANTED_GOLDEN_APPLE: "enchanted golden apple"
+  END_CRYSTAL: "kristall tal-ender"
+  ENDER_DRAGON_SPAWN_EGG: "ender dragon spawn egg"
+  ENDER_EYE: "għajn tal-ender"
+  ENDER_PEARL: "perla tal-ender"
+  ENDERMAN_SPAWN_EGG: "il-bajd ta ' l-enderman"
+  ENDERMITE_SPAWN_EGG: "bajd ta ' l-endermite"
+  EVOKER_SPAWN_EGG: "bajda tal-bajd (evoker)"
+  EXPERIENCE_BOTTLE: "flixkun tal-maġija"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  FEATHER: "rixa"
+  FERMENTED_SPIDER_EYE: "għajn ta' brimba ffermentata"
+  FILLED_MAP: "mappa"
+  FIRE_CHARGE: "balma tan-nar"
+  FIREWORK_ROCKET: "murtal"
+  FIREWORK_ROCKET_FLIGHT: "dewm fl-arja:"
+  FIREWORK_STAR: "balma tal-murtali"
+  FIREWORK_STAR_BLACK: "iswed"
+  FIREWORK_STAR_BLUE: "blu"
+  FIREWORK_STAR_BROWN: "kannella"
+  FIREWORK_STAR_CUSTOM_COLOR: "custom"
+  FIREWORK_STAR_CYAN: "blu fl-aħdar"
+  FIREWORK_STAR_FADE_TO: "jinbidel għal"
+  FIREWORK_STAR_FLICKER: "ileqq"
+  FIREWORK_STAR_GRAY: "griż"
+  FIREWORK_STAR_GREEN: "aħdar"
+  FIREWORK_STAR_LIGHT_BLUE: "blu ċar"
+  FIREWORK_STAR_LIGHT_GRAY: "griż ċar"
+  FIREWORK_STAR_LIME: "aħdar ċar"
+  FIREWORK_STAR_MAGENTA: "vjola ċar"
+  FIREWORK_STAR_ORANGE: "oranġjo"
+  FIREWORK_STAR_PINK: "roża"
+  FIREWORK_STAR_PURPLE: "vjola"
+  FIREWORK_STAR_RED: "aħmar"
+  FIREWORK_STAR_SHAPE: "forma oħra"
+  FIREWORK_STAR_SHAPE_BURST: "tifqigħ"
+  FIREWORK_STAR_SHAPE_CREEPER: "forma ta' creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "balma kbira"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "balma żgħira"
+  FIREWORK_STAR_SHAPE_STAR: "forma ta' stilla"
+  FIREWORK_STAR_TRAIL: "traċċa"
+  FIREWORK_STAR_WHITE: "abjad"
+  FIREWORK_STAR_YELLOW: "isfar"
+  FISHING_ROD: "qasba tas-sajd"
+  FLINT: "żnied"
+  FLINT_AND_STEEL: "żnied u ħadida"
+  FLOWER_BANNER_PATTERN: "banner pattern"
+  FLOWER_BANNER_PATTERN_DESC: "ċarġ tal-fjura"
+  FLOWER_POT: "flower pot"
+  FOX_SPAWN_EGG: "bajda tal-volpi"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "bajda taż-żrinġ"
+  FURNACE_MINECART: "karretta b'forn"
+  GHAST_SPAWN_EGG: "bajda tal-bajd ghast"
+  GHAST_TEAR: "demgħa ta' ghast"
+  GLASS_BOTTLE: "flixkun tal-ħġieġ"
+  GLISTERING_MELON_SLICE: "glistering melon porzjon"
+  GLOBE_BANNER_PATTERN: "banner pattern"
+  GLOBE_BANNER_PATTERN_DESC: "dinja"
+  GLOW_BERRIES: "berries tiddix"
+  GLOW_INK_SAC: "glow ink sac"
+  GLOW_ITEM_FRAME: "qawwa tal-oġġett tiddix"
+  GLOW_SQUID_SPAWN_EGG: "klamar brillanti bajd li jbid"
+  GLOWSTONE_DUST: "trab tal-ġebel jixgħel"
+  GOAT_HORN: "qarn tal-mogħoż"
+  GOAT_SPAWN_EGG: "bajd ta 'mogħoż"
+  GOLD_INGOT: "ingott tad-deheb"
+  GOLD_NUGGET: "farka tad-deheb"
+  GOLDEN_APPLE: "tuffieħa tad-deheb"
+  GOLDEN_AXE: "mannara tad-deheb"
+  GOLDEN_BOOTS: "żraben tad-deheb"
+  GOLDEN_CARROT: "karrotta tad-deheb"
+  GOLDEN_CHESTPLATE: "armar tad-deheb"
+  GOLDEN_HELMET: "elum tad-deheb"
+  GOLDEN_HOE: "mgħażqa tad-deheb"
+  GOLDEN_HORSE_ARMOR: "il-armati taż-żiemel"
+  GOLDEN_LEGGINGS: "saqajn tad-deheb"
+  GOLDEN_PICKAXE: "baqqun tad-deheb"
+  GOLDEN_SHOVEL: "pala tad-deheb"
+  GOLDEN_SWORD: "xabla tad-deheb"
+  GRAY_DYE: "żebgħa griża"
+  GREEN_DYE: "żebgħa ħadra"
+  GUARDIAN_SPAWN_EGG: "guardian spawn egg"
+  GUNPOWDER: "porvli"
+  HEART_OF_THE_SEA: "il-qalba tal-ba ħar"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "bajda tal-hoglin"
+  HONEY_BOTTLE: "flixkun tal-g ħasel"
+  HONEYCOMB: "xehda"
+  HOPPER_MINECART: "karretta b'lembut"
+  HORSE_SPAWN_EGG: "bajd taż-żiemel"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "qoxra tal-ħliefa tal-bajd"
+  INK_SAC: "inka"
+  IRON_AXE: "mannara tal-ħadid"
+  IRON_BOOTS: "żraben tal-ħadid"
+  IRON_CHESTPLATE: "armar tal-ħadid"
+  IRON_GOLEM_SPAWN_EGG: "iron golem spawn egg"
+  IRON_HELMET: "elmu tal-ħadid"
+  IRON_HOE: "mgħażqa tal-ħadid"
+  IRON_HORSE_ARMOR: "armar taż-żwiemel tal-ħadid"
+  IRON_INGOT: "ingott tal-ħadid"
+  IRON_LEGGINGS: "saqajn tal-ħadid"
+  IRON_NUGGET: "nugget tal-ħadid"
+  IRON_PICKAXE: "baqqun tal-ħadid"
+  IRON_SHOVEL: "pala tal-ħadid"
+  IRON_SWORD: "xabla tal-ħadid"
+  ITEM_FRAME: "inkwatru"
+  JUNGLE_BOAT: "dgħajsa tal-injam tal-ġungla"
+  JUNGLE_CHEST_BOAT: "dgħajsa tal-ġungla bis-senduq"
+  KNOWLEDGE_BOOK: "ktieb tal-g ħarfien"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "barmil lava"
+  LEAD: "ċinga"
+  LEATHER: "ġilda"
+  LEATHER_BOOTS: "żraben tal-ġilda"
+  LEATHER_CHESTPLATE: "flokk tal-ġilda"
+  LEATHER_HELMET: "kappa tal-ġilda"
+  LEATHER_HORSE_ARMOR: "armor tal-ġilda"
+  LEATHER_LEGGINGS: "qalziet tal-ġilda"
+  LIGHT_BLUE_DYE: "żebgħa blu ċara"
+  LIGHT_GRAY_DYE: "żebgħa griża ċara"
+  LIME_DYE: "żebgħa ħadra ċara"
+  LINGERING_POTION: "il-pozzjoni tal-lingering"
+  LINGERING_POTION_EFFECT_AWKWARD: "xarba skomda fumanti"
+  LINGERING_POTION_EFFECT_EMPTY: "xarba impossibbli fumanti"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "xarba tar-resistenza għan-nar fumanti"
+  LINGERING_POTION_EFFECT_HARMING: "xarba tal-ħsara fumanti"
+  LINGERING_POTION_EFFECT_HEALING: "xarba tal-fejqan fumanti"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "xarba tal-inviżibbiltaż fumanti"
+  LINGERING_POTION_EFFECT_LEAPING: "xarba tal-qbiż fumanti"
+  LINGERING_POTION_EFFECT_LEVITATION: "xarba tal-levitazzjoni fumanti"
+  LINGERING_POTION_EFFECT_LUCK: "xarba tal-fortuna fumanti"
+  LINGERING_POTION_EFFECT_MUNDANE: "xarba ordinarja fumanti"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "xarba tal-viżjoni bil-lejl fumanti"
+  LINGERING_POTION_EFFECT_POISON: "xarba tal-velenu fumanti"
+  LINGERING_POTION_EFFECT_REGENERATION: "xarba tar-riġenerazzjoni fumanti"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "interruzzjoni ta ' waqgħa bil-mod"
+  LINGERING_POTION_EFFECT_SLOWNESS: "xarba tad-dewmien fumanti"
+  LINGERING_POTION_EFFECT_STRENGTH: "xarba tal-qawwa fumanti"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "xarba tal-ħeffa fumanti"
+  LINGERING_POTION_EFFECT_THICK: "xarba tqila fumanti"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "potazzjoni tal-master tal-fekruna"
+  LINGERING_POTION_EFFECT_WATER: "flixkun ilma fumanti"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "xarba tan-nifs taħt l-ilma fumanti"
+  LINGERING_POTION_EFFECT_WEAKNESS: "xarba tad-dgħjufija fumanti"
+  LLAMA_SPAWN_EGG: "il-bajd llama"
+  LODESTONE_COMPASS: "kumpass tal-ġebla tad-direzzjonijiet"
+  MAGENTA_DYE: "żebgħa vjola ċara"
+  MAGMA_CREAM: "krema tal-magma"
+  MAGMA_CUBE_SPAWN_EGG: "il-bajd b ' kubu ta ' magma"
+  MANGROVE_BOAT: "dgħajsa tal-mangrovja"
+  MANGROVE_CHEST_BOAT: "dgħajsa tal-mangrovja bis-senduq"
+  MAP: "mappa vojta"
+  MELON_SEEDS: "żerriegħa tad-dulliegħ"
+  MELON_SLICE: "melon porzjon"
+  MILK_BUCKET: "barmil tal-ħalib"
+  MINECART: "karretta"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "banner pattern"
+  MOJANG_BANNER_PATTERN_DESC: "ħaġa"
+  MOOSHROOM_SPAWN_EGG: "mooshroom tal-bajd"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "bajda tal-bajd"
+  MUSHROOM_STEW: "stuffat tal-faqqiegħ"
+  MUSIC_DISC_11: "music disc"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "diska tal-mużika"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "music disc"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "music disc"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "music disc"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "music disc"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "music disc"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "music disc"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "music disc"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "music disc"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "music disc"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "music disc"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "music disc"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "music disc"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "music disc"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "music disc"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "laħam tan-nagħġa nej"
+  NAME_TAG: "tikketta"
+  NAUTILUS_SHELL: "nautilus shell"
+  NETHER_BRICK: "briks tan-nether"
+  NETHER_STAR: "stilla tan-nether"
+  NETHER_WART: "nether wart"
+  NETHERITE_AXE: "mannara tan-netherajt"
+  NETHERITE_BOOTS: "bwiez tan-netherajt"
+  NETHERITE_CHESTPLATE: "biċċa tas-sider tan-netherajt"
+  NETHERITE_HELMET: "elmu tan-netherajt"
+  NETHERITE_HOE: "mgħażqa tan-netherajt"
+  NETHERITE_INGOT: "ingott tan-netherajt"
+  NETHERITE_LEGGINGS: "qalziet tan-netherajt"
+  NETHERITE_PICKAXE: "baqqun tan-netherajt"
+  NETHERITE_SCRAP: "ferralja tan-netherajt"
+  NETHERITE_SHOVEL: "pala tan-netherajt"
+  NETHERITE_SWORD: "xabla tan-netherajt"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "dgħajsa tal-ballut"
+  OAK_CHEST_BOAT: "dgħajsa tal-ballut bis-senduq"
+  OCELOT_SPAWN_EGG: "bajd ta ' l-ocelot"
+  ORANGE_DYE: "żebgħa oranġjo"
+  PAINTING: "pittura"
+  PANDA_SPAWN_EGG: "bajda tal-bajd tas-saln"
+  PAPER: "karta"
+  PARROT_SPAWN_EGG: "bajda tal-bajd tal-pappagall"
+  PHANTOM_MEMBRANE: "membrana tal-phantom"
+  PHANTOM_SPAWN_EGG: "bajd phantom"
+  PIG_SPAWN_EGG: "bajda tal-bajd tal-majjal"
+  PIGLIN_BANNER_PATTERN: "banner pattern"
+  PIGLIN_BANNER_PATTERN_DESC: "geddum"
+  PIGLIN_BRUTE_SPAWN_EGG: "bajda tal-piglin bhima"
+  PIGLIN_SPAWN_EGG: "bajda tal-piglin"
+  PILLAGER_SPAWN_EGG: "pillager tal-bajd"
+  PINK_DYE: "żebgħa roża"
+  PITCHER_PLANT: "pitcher plant"
+  PITCHER_POD: "pitcher pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "patata velenuża"
+  POLAR_BEAR_SPAWN_EGG: "bajd polari"
+  POPPED_CHORUS_FRUIT: "frotta tal-chorus mifqugħha"
+  PORKCHOP: "majjal nej"
+  POTATO: "patata"
+  POTION: "xarba"
+  POTION_EFFECT_AWKWARD: "xarba skomda"
+  POTION_EFFECT_EMPTY: "xarba impossibbli"
+  POTION_EFFECT_FIRE_RESISTANCE: "xarba tar-reżistenza għan-nar"
+  POTION_EFFECT_HARMING: "xarba tal-ħsara"
+  POTION_EFFECT_HEALING: "xarba tal-fejqan"
+  POTION_EFFECT_INVISIBILITY: "xarba tal-inviżibbilta'"
+  POTION_EFFECT_LEAPING: "xarba tal-qbiż"
+  POTION_EFFECT_LEVITATION: "potion ta ' levitazzjoni"
+  POTION_EFFECT_LUCK: "xarba tal-fortuna"
+  POTION_EFFECT_MUNDANE: "xarba ordinarja"
+  POTION_EFFECT_NIGHT_VISION: "xarba tal-viżjoni fid-dlam"
+  POTION_EFFECT_POISON: "xarba tal-velenu"
+  POTION_EFFECT_REGENERATION: "xarba tar-riġenerazzjoni"
+  POTION_EFFECT_SLOW_FALLING: "it-t ħaffir ta ' waqgħa bil-mod"
+  POTION_EFFECT_SLOWNESS: "xarba tad-dewmien"
+  POTION_EFFECT_STRENGTH: "xarba tal-qawwa"
+  POTION_EFFECT_SWIFTNESS: "xarba tal-ħeffa"
+  POTION_EFFECT_THICK: "xarba tqila"
+  POTION_EFFECT_TURTLE_MASTER: "il-pozzjoni tal-master tal-fekruna"
+  POTION_EFFECT_WATER: "flixkun tal-ilma"
+  POTION_EFFECT_WATER_BREATHING: "xarba tan-nifs taħt l-ilma"
+  POTION_EFFECT_WEAKNESS: "xarba tad-dgħjufija"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "trab barmil borra"
+  PRISMARINE_CRYSTALS: "kristalli tal-prismarine"
+  PRISMARINE_SHARD: "farka tal-prismarine"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "ħuta velenuża"
+  PUFFERFISH_BUCKET: "barmil ta ' pufferfish"
+  PUFFERFISH_SPAWN_EGG: "pufferfish tal-bajd"
+  PUMPKIN_PIE: "torta tal-qargħa ħamra"
+  PUMPKIN_SEEDS: "żerriegħa tal-qargħa ħamra"
+  PURPLE_DYE: "żebgħa vjola"
+  QUARTZ: "kwarz tan-nether"
+  RABBIT: "fenek nej"
+  RABBIT_FOOT: "sieq il-fenek"
+  RABBIT_HIDE: "ġilda tal-fenek"
+  RABBIT_SPAWN_EGG: "bajda tal-bajd tal-fenek"
+  RABBIT_STEW: "stuffat tal-fenek"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "il-bajd tar-ravager"
+  RAW_COPPER: "ram mhux maħdum"
+  RAW_GOLD: "deheb mhux maħdum"
+  RAW_IRON: "ħadid mhux maħdum"
+  RECOVERY_COMPASS: "boxxla tal-irkupru"
+  RED_DYE: "żebgħa ħamra"
+  REDSTONE: "trab tar-redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "laħam maqtugħ"
+  SADDLE: "sarġ"
+  SALMON: "salamun nej"
+  SALMON_BUCKET: "barmil tas-salamun"
+  SALMON_SPAWN_EGG: "bajd tas-salamun"
+  SCUTE: "skute"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "ġliem"
+  SHEEP_SPAWN_EGG: "bajd tan-nag ħaġ"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "tarka"
+  SHIELD_BLACK: "tarka sewda"
+  SHIELD_BLUE: "tarka blu"
+  SHIELD_BROWN: "tarka kannella"
+  SHIELD_CYAN: "tarka blu fl-aħdar"
+  SHIELD_GRAY: "tarka griża"
+  SHIELD_GREEN: "tarka ħadra"
+  SHIELD_LIGHT_BLUE: "tarka ċelesti"
+  SHIELD_LIGHT_GRAY: "tarka griża ċara"
+  SHIELD_LIME: "tarka ħadra ċara"
+  SHIELD_MAGENTA: "tarka vjola ċara"
+  SHIELD_ORANGE: "tarka oranġjo"
+  SHIELD_PINK: "tarka roża"
+  SHIELD_PURPLE: "tarka vjola"
+  SHIELD_RED: "tarka ħamra"
+  SHIELD_WHITE: "tarka bajda"
+  SHIELD_YELLOW: "tarka safra"
+  SHULKER_SHELL: "qoxra tas-shulker"
+  SHULKER_SPAWN_EGG: "bajda tal-bajd tas-shulker"
+  SIGN: "sign"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SILVERFISH_SPAWN_EGG: "bajd tal-fidda"
+  SKELETON_HORSE_SPAWN_EGG: "żiemel tal-bajd tal-iskeletru"
+  SKELETON_SPAWN_EGG: "bajda tal-bajd"
+  SKULL_BANNER_PATTERN: "banner pattern"
+  SKULL_BANNER_PATTERN_DESC: "ċarġ tal-kranju"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "skull pottery sherd"
+  SLIME_BALL: "ballun tal-ħama"
+  SLIME_SPAWN_EGG: "bajda tal-bajd tas-sġir"
+  SMITHING_TEMPLATE: "smithing template"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "add ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "add a piece of armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ingots & crystals"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredients:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "add netherite ingot"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamond equipment"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "add diamond armor weapon or tool"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ingot"
+  SMITHING_TEMPLATE_UPGRADE: "upgrade: "
+  SNIFFER_SPAWN_EGG: "sniffer spawn egg"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "snow golem spawn egg"
+  SNOWBALL: "ballun tas-silġ"
+  SPECTRAL_ARROW: "vleġġa spettrali"
+  SPIDER_EYE: "għajn ta' brimba"
+  SPIDER_SPAWN_EGG: "bajda tal-bajd tas-spider"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "splash pozzjoni"
+  SPLASH_POTION_EFFECT_AWKWARD: "xarba skomda tinxtered"
+  SPLASH_POTION_EFFECT_EMPTY: "xarba tinxtered impossibbli"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "xarba tar-resistenza għan-nar tinxtered"
+  SPLASH_POTION_EFFECT_HARMING: "xarba tal-ħsara tinxtered"
+  SPLASH_POTION_EFFECT_HEALING: "xarba tal-fejqan tinxtered"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "xarba tal-inviżibbilta' tinxtered"
+  SPLASH_POTION_EFFECT_LEAPING: "xarba tal-qbiż tinxtered"
+  SPLASH_POTION_EFFECT_LEVITATION: "xarba tal-levitazzjoni tinxtered"
+  SPLASH_POTION_EFFECT_LUCK: "xarba tal-fortuna tinxtered"
+  SPLASH_POTION_EFFECT_MUNDANE: "xarba ordinarja tinxtered"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "xarba tal-viżjoni fid-dlam tinxtered"
+  SPLASH_POTION_EFFECT_POISON: "xarba tal-velenu tinxtered"
+  SPLASH_POTION_EFFECT_REGENERATION: "xarba tar-riġenerazzjoni tinxtered"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "splash uzzjoni ta ' waqgħa bil-mod"
+  SPLASH_POTION_EFFECT_SLOWNESS: "xarba tad-dewmien tinxtered"
+  SPLASH_POTION_EFFECT_STRENGTH: "xarba tal-qawwa tinxtered"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "xarba tal-ħeffa tinxtered"
+  SPLASH_POTION_EFFECT_THICK: "xarba tqila tinxtered"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "splash potazzjoni tal-master tal-fekruna"
+  SPLASH_POTION_EFFECT_WATER: "flixkun tal-ilma jinxtered"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "xarba tan-nifs taħt l-ilma tinxtered"
+  SPLASH_POTION_EFFECT_WEAKNESS: "xarba tad-dgħjufija tinxtered"
+  SPRUCE_BOAT: "dgħajsa tal-arżnu"
+  SPRUCE_CHEST_BOAT: "dgħajsa tal-prinjoli bis-senduq"
+  SPYGLASS: "tazza tal-ispija"
+  SQUID_SPAWN_EGG: "il-bajd tal-klamari"
+  STICK: "stikka"
+  STONE_AXE: "mannara tal-ġebel"
+  STONE_HOE: "mgħażqa tal-ġebel"
+  STONE_PICKAXE: "baqqun tal-ġebel"
+  STONE_SHOVEL: "pala tal-ġebel"
+  STONE_SWORD: "xabla tal-ġebel"
+  STRAY_SPAWN_EGG: "bajda"
+  STRIDER_SPAWN_EGG: "bajda ta' l-istrajder"
+  STRING: "spaga"
+  SUGAR: "zokkor"
+  SUSPICIOUS_STEW: "stew suspettuż"
+  SWEET_BERRIES: "berries ħelu"
+  TADPOLE_BUCKET: "barmil tal-marżepp"
+  TADPOLE_SPAWN_EGG: "bajda tal-marżepp"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "vleġġa miksija"
+  TIPPED_ARROW_EFFECT_AWKWARD: "tipped arrow"
+  TIPPED_ARROW_EFFECT_EMPTY: "vleġġa bil-ponta"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "vleġġa tar-reżistenza għan-nar"
+  TIPPED_ARROW_EFFECT_HARMING: "vleġġa tal-ħsara"
+  TIPPED_ARROW_EFFECT_HEALING: "vleġġa tal-fejqan"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "vleġġa tal-inviżibbiltà"
+  TIPPED_ARROW_EFFECT_LEAPING: "vleġġa tal-qbiż"
+  TIPPED_ARROW_EFFECT_LEVITATION: "vleġġa tal-levitazzjoni"
+  TIPPED_ARROW_EFFECT_LUCK: "vleġġa tal-fortuna"
+  TIPPED_ARROW_EFFECT_MUNDANE: "tipped arrow"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "vleġġa tal-viżjoni bil-lejl"
+  TIPPED_ARROW_EFFECT_POISON: "vleġġa tal-velenu"
+  TIPPED_ARROW_EFFECT_REGENERATION: "vleġġa tar-riġenerazzjoni"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "vleġġa ta ' waqgħa bil-mod"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "vleġġa tad-dewmien"
+  TIPPED_ARROW_EFFECT_STRENGTH: "vleġġa tal-qawwa"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "vleġġa tal-ħeffa"
+  TIPPED_ARROW_EFFECT_THICK: "tipped arrow"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "vleġġa tal-kaptan tal-fekruna"
+  TIPPED_ARROW_EFFECT_WATER: "vleġġa tat-tixrid"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "vleġġa tan-nifs taħt l-ilma"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "vleġġa tad-dgħjufija"
+  TNT_MINECART: "karretta bl-isplussivi"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "totem tal-undikazzjoni"
+  TRADER_LLAMA_SPAWN_EGG: "il-bajd fil-kummer ċjant llama"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "trident"
+  TROPICAL_FISH: "ħut tropikali"
+  TROPICAL_FISH_BUCKET: "barmil tal-ħut tropikali"
+  TROPICAL_FISH_SPAWN_EGG: "tropical fish spawn egg"
+  TURTLE_HELMET: "qoxra tal-fekruna"
+  TURTLE_SPAWN_EGG: "bajda bajd tal-fekruna"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "vex tal-bajd"
+  VILLAGER_SPAWN_EGG: "il-bajd ta ' villager"
+  VINDICATOR_SPAWN_EGG: "bajd li jbid vindikatur"
+  WANDERING_TRADER_SPAWN_EGG: "il-bajd ta ' l-i wandering kummerċjant"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "bajda tal-warden"
+  WARPED_FUNGUS_ON_A_STICK: "fungu stramb fuq stikka"
+  WATER_BUCKET: "barmil ilma"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "qamħ"
+  WHEAT_SEEDS: "żerriegħa tal-qam ħ"
+  WHITE_DYE: "kulur abjad"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "dawwar il-bajda tal-bajd"
+  WITHER_SKELETON_SPAWN_EGG: "il-bajda tal-bajd wither"
+  WITHER_SPAWN_EGG: "wither spawn egg"
+  WOLF_SPAWN_EGG: "bajd tal-lupu li minnu"
+  WOODEN_AXE: "mannara tal-injam"
+  WOODEN_HOE: "mgħażqa tal-injam"
+  WOODEN_PICKAXE: "baqqun tal-injam"
+  WOODEN_SHOVEL: "pala tal-injam"
+  WOODEN_SWORD: "xabla tal-injam"
+  WRITABLE_BOOK: "ktieb bir-rixa"
+  WRITTEN_BOOK: "ktieb miktub"
+  YELLOW_DYE: "kulur isfar"
+  ZOGLIN_SPAWN_EGG: "bajda taż-zogin"
+  ZOMBIE_HORSE_SPAWN_EGG: "bajd taż-żiemel zapping"
+  ZOMBIE_SPAWN_EGG: "zapping tal-bajd"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "zapping villager tal-bajd"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "bajda tal-piglin żombifikat"
+  CHEST: "meta tkun fuq il-ġisem:"
+  FEET: "meta tkun fuq saqajn:"
+  HEAD: "meta tkun fuq ir-ras:"
+  LEGS: "meta tkun fir-riġlejn:"
+  MAINHAND: "meta tkun fl-id prinċipali:"
+  OFFHAND: "meta tkun fl-id sekondarja:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "acacia buton"
+  ACACIA_DOOR: "derë akacie"
+  ACACIA_FENCE: "gardh akacie"
+  ACACIA_FENCE_GATE: "portë akacie"
+  ACACIA_HANGING_SIGN: "shenjë e varur akacie"
+  ACACIA_LEAVES: "gjethe akacie"
+  ACACIA_LOG: "trung acacie"
+  ACACIA_PLANKS: "dërrasa akacie"
+  ACACIA_PRESSURE_PLATE: "acacia pllakë presioni"
+  ACACIA_SAPLING: "fidan akacie"
+  ACACIA_SIGN: "shenjë lajmërimi prej drurit të akacies"
+  ACACIA_SLAB: "gjysëm lisi"
+  ACACIA_STAIRS: "shkallë druri"
+  ACACIA_TRAPDOOR: "trapdoor për akaci"
+  ACACIA_WALL_HANGING_SIGN: "shenja të varura në mur akacies"
+  ACACIA_WALL_SIGN: "shenjë lajmërimi prej drurit të akacies"
+  ACACIA_WOOD: "dru akacie"
+  ACTIVATOR_RAIL: "aktivizues hekurudhor"
+  AIR: "ajër"
+  ALLIUM: "alium"
+  AMETHYST_BLOCK: "bllok ametisti"
+  AMETHYST_CLUSTER: "grumbulli ametist"
+  ANCIENT_DEBRIS: "mbetje antike"
+  ANDESITE: "andezit"
+  ANDESITE_SLAB: "pllakë andesite"
+  ANDESITE_STAIRS: "shkallët andesiti"
+  ANDESITE_WALL: "mur andeziti"
+  ANVIL: "kudhër"
+  ATTACHED_MELON_STEM: "rrjedhi pjepri e lidhur"
+  ATTACHED_PUMPKIN_STEM: "bashkangjitur kungull kungull"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "gjethe azale"
+  AZURE_BLUET: "kokoçel i kaltërt"
+  BAMBOO: "bambu"
+  BAMBOO_BLOCK: "bllok bambuje"
+  BAMBOO_BUTTON: "buton bambuje"
+  BAMBOO_DOOR: "derë bambuje"
+  BAMBOO_FENCE: "gardh bambuje"
+  BAMBOO_FENCE_GATE: "derë gardhi bambuje"
+  BAMBOO_HANGING_SIGN: "shenjë e varur bambuje"
+  BAMBOO_MOSAIC: "mozaik bambuje"
+  BAMBOO_MOSAIC_SLAB: "pllakë mozaiku bambuje"
+  BAMBOO_MOSAIC_STAIRS: "shkallë mozaik bamboo-je"
+  BAMBOO_PLANKS: "dërrasa bambuje"
+  BAMBOO_PRESSURE_PLATE: "pllakëz shtypëse bambuje"
+  BAMBOO_SAPLING: "fidan bambuje"
+  BAMBOO_SIGN: "shenjë bambuje"
+  BAMBOO_SLAB: "pllakë bambuje"
+  BAMBOO_STAIRS: "shkallë bambuje"
+  BAMBOO_TRAPDOOR: "derë e vogël bambuje"
+  BAMBOO_WALL_HANGING_SIGN: "shenja të varura në mur bambuje"
+  BAMBOO_WALL_SIGN: "shenjë muri bamboo-je"
+  BANNER_BASE_BLACK: "fushë plotësisht e zezë"
+  BANNER_BASE_BLUE: "plotësisht fusha blu"
+  BANNER_BASE_BROWN: "plotësisht fusha kafe"
+  BANNER_BASE_CYAN: "plotësisht fusha blu e qartë"
+  BANNER_BASE_GRAY: "plotësisht fusha gri"
+  BANNER_BASE_GREEN: "fushe plotësisht jeshile"
+  BANNER_BASE_LIGHT_BLUE: "plotësisht fusha blu e qartë"
+  BANNER_BASE_LIGHT_GRAY: "plotësisht fusha jeshile e qartë"
+  BANNER_BASE_LIME: "plotësisht fusha gëlqere"
+  BANNER_BASE_MAGENTA: "plotësisht fusha purpur"
+  BANNER_BASE_ORANGE: "plotësisht fusha portokalli"
+  BANNER_BASE_PINK: "plotësisht fusha rozë"
+  BANNER_BASE_PURPLE: "plotësisht fusha violë"
+  BANNER_BASE_RED: "fushë plotësisht e kuqe"
+  BANNER_BASE_WHITE: "fushe plotësisht e bardhe"
+  BANNER_BASE_YELLOW: "plotësisht fusha jeshile"
+  BANNER_BORDER_BLACK: "zi bordure"
+  BANNER_BORDER_BLUE: "kaltert bordure"
+  BANNER_BORDER_BROWN: "kafte bordure"
+  BANNER_BORDER_CYAN: "cyan bordure"
+  BANNER_BORDER_GRAY: "hiret bordure"
+  BANNER_BORDER_GREEN: "gjelbert bordure"
+  BANNER_BORDER_LIGHT_BLUE: "kaltert e hapur bordure"
+  BANNER_BORDER_LIGHT_GRAY: "hiret e hapur bordure"
+  BANNER_BORDER_LIME: "gjelbert bordure"
+  BANNER_BORDER_MAGENTA: "magenta bordure"
+  BANNER_BORDER_ORANGE: "portokallet bordure"
+  BANNER_BORDER_PINK: "pembet bordure"
+  BANNER_BORDER_PURPLE: "jargovant bordure"
+  BANNER_BORDER_RED: "kuq bordure"
+  BANNER_BORDER_WHITE: "bardh bordure"
+  BANNER_BORDER_YELLOW: "verdh bordure"
+  BANNER_BRICKS_BLACK: "fusha e masonizuar e zez"
+  BANNER_BRICKS_BLUE: "fusha e masonizuar e kaltert"
+  BANNER_BRICKS_BROWN: "fusha e masonizuar e kafet"
+  BANNER_BRICKS_CYAN: "fusha e masonizuar e cyan"
+  BANNER_BRICKS_GRAY: "fusha e masonizuar e hiret"
+  BANNER_BRICKS_GREEN: "fusha e masonizuar e gjelbert"
+  BANNER_BRICKS_LIGHT_BLUE: "fusha e masonizuar e kaltert e hapur"
+  BANNER_BRICKS_LIGHT_GRAY: "fusha e masonizuar e hiret e hapur"
+  BANNER_BRICKS_LIME: "fusha e masonizuar e gjelbert e hapur"
+  BANNER_BRICKS_MAGENTA: "fusha e masonizuar e magenta"
+  BANNER_BRICKS_ORANGE: "fusha e masonizuar e portokallet"
+  BANNER_BRICKS_PINK: "fusha e masonizuar e pembet"
+  BANNER_BRICKS_PURPLE: "fusha e masonizuar e jargovanet"
+  BANNER_BRICKS_RED: "fusha e masonizuar e kuqe"
+  BANNER_BRICKS_WHITE: "fusha e masonizuar e bardhe"
+  BANNER_BRICKS_YELLOW: "fusha e masonizuar e verdh"
+  BANNER_CIRCLE_BLACK: "zi roundel"
+  BANNER_CIRCLE_BLUE: "kaltert roundel"
+  BANNER_CIRCLE_BROWN: "kafte roundel"
+  BANNER_CIRCLE_CYAN: "cyan roundel"
+  BANNER_CIRCLE_GRAY: "hiret roundel"
+  BANNER_CIRCLE_GREEN: "gjelbert roundel"
+  BANNER_CIRCLE_LIGHT_BLUE: "kaltert e hapur roundel"
+  BANNER_CIRCLE_LIGHT_GRAY: "hiret e hapur roundel"
+  BANNER_CIRCLE_LIME: "gjelbert e hapur roundel"
+  BANNER_CIRCLE_MAGENTA: "magenta roundel"
+  BANNER_CIRCLE_ORANGE: "portokallet roundel"
+  BANNER_CIRCLE_PINK: "pembe roundel"
+  BANNER_CIRCLE_PURPLE: "jargovanet roundel"
+  BANNER_CIRCLE_RED: "kuq roundel"
+  BANNER_CIRCLE_WHITE: "bardh roundel"
+  BANNER_CIRCLE_YELLOW: "verdh roundel"
+  BANNER_CREEPER_BLACK: "zi creeper charge"
+  BANNER_CREEPER_BLUE: "kaltert creeper charge"
+  BANNER_CREEPER_BROWN: "kafte creeper charge"
+  BANNER_CREEPER_CYAN: "cyan creeper charge"
+  BANNER_CREEPER_GRAY: "hiret creeper charge"
+  BANNER_CREEPER_GREEN: "gjelbert creeper charge"
+  BANNER_CREEPER_LIGHT_BLUE: "kaltert e hapur creeper charge"
+  BANNER_CREEPER_LIGHT_GRAY: "hiret e hapur creeper charge"
+  BANNER_CREEPER_LIME: "gjelbert e hapur creeper charge"
+  BANNER_CREEPER_MAGENTA: "magenta creeper charge"
+  BANNER_CREEPER_ORANGE: "portokallet creeper charge"
+  BANNER_CREEPER_PINK: "pembe creeper charge"
+  BANNER_CREEPER_PURPLE: "jargovanet creeper charge"
+  BANNER_CREEPER_RED: "kuq creeper charge"
+  BANNER_CREEPER_WHITE: "bardh creeper charge"
+  BANNER_CREEPER_YELLOW: "verdh creeper charge"
+  BANNER_CROSS_BLACK: "saltire e zez"
+  BANNER_CROSS_BLUE: "saltire e kaltert"
+  BANNER_CROSS_BROWN: "saltire e kafte"
+  BANNER_CROSS_CYAN: "saltire e cyan"
+  BANNER_CROSS_GRAY: "saltire e hiret"
+  BANNER_CROSS_GREEN: "saltire e gjelbert"
+  BANNER_CROSS_LIGHT_BLUE: "saltire e kaltert e hapur"
+  BANNER_CROSS_LIGHT_GRAY: "saltire e hiret e hapur"
+  BANNER_CROSS_LIME: "saltire e gjelbert e hapur"
+  BANNER_CROSS_MAGENTA: "saltire e magenta"
+  BANNER_CROSS_ORANGE: "saltire e portokallet"
+  BANNER_CROSS_PINK: "saltire e pembet"
+  BANNER_CROSS_PURPLE: "saltire e jargovanet"
+  BANNER_CROSS_RED: "saltire e kuqe"
+  BANNER_CROSS_WHITE: "saltire e bardhe"
+  BANNER_CROSS_YELLOW: "saltire e verdhe"
+  BANNER_CURLY_BORDER_BLACK: "zi bordure indented"
+  BANNER_CURLY_BORDER_BLUE: "kaltert bordure indented"
+  BANNER_CURLY_BORDER_BROWN: "kafte bordure indented"
+  BANNER_CURLY_BORDER_CYAN: "cyan bordure indented"
+  BANNER_CURLY_BORDER_GRAY: "hiret bordure indented"
+  BANNER_CURLY_BORDER_GREEN: "gjelbert bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "kaltert e hapur bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "hiret e hapur bordure indented"
+  BANNER_CURLY_BORDER_LIME: "gjelbert e hapur bordure indented"
+  BANNER_CURLY_BORDER_MAGENTA: "magenta bordure indented"
+  BANNER_CURLY_BORDER_ORANGE: "portokallet bordure indented"
+  BANNER_CURLY_BORDER_PINK: "pembet bordure indented"
+  BANNER_CURLY_BORDER_PURPLE: "jargovant bordure indented"
+  BANNER_CURLY_BORDER_RED: "kuq bordure indented"
+  BANNER_CURLY_BORDER_WHITE: "bardh bordure indented"
+  BANNER_CURLY_BORDER_YELLOW: "verdh bordure indented"
+  BANNER_DIAGONAL_LEFT_BLACK: "zi per bend sinister"
+  BANNER_DIAGONAL_LEFT_BLUE: "kaltert per bend sinister"
+  BANNER_DIAGONAL_LEFT_BROWN: "kafte per bend sinister"
+  BANNER_DIAGONAL_LEFT_CYAN: "cyan per bend sinister"
+  BANNER_DIAGONAL_LEFT_GRAY: "hiret per bend sinister"
+  BANNER_DIAGONAL_LEFT_GREEN: "gjelbert per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "kaltert e hapur per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "hiret e hapur per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIME: "gjelbert e hapur per bend sinister"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta per bend sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "portokallet per bend sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "pembet per bend sinister"
+  BANNER_DIAGONAL_LEFT_PURPLE: "jargovanet per bend sinister"
+  BANNER_DIAGONAL_LEFT_RED: "kuq per bend sinister"
+  BANNER_DIAGONAL_LEFT_WHITE: "bardhe per bend sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "verdhe per bend sinister"
+  BANNER_DIAGONAL_RIGHT_BLACK: "zi per bend"
+  BANNER_DIAGONAL_RIGHT_BLUE: "kaltert"
+  BANNER_DIAGONAL_RIGHT_BROWN: "kafte per bend"
+  BANNER_DIAGONAL_RIGHT_CYAN: "cyan per bend"
+  BANNER_DIAGONAL_RIGHT_GRAY: "hiret per bend"
+  BANNER_DIAGONAL_RIGHT_GREEN: "gjelbert per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "kaltert e hapur per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "hiret e hapur per bend"
+  BANNER_DIAGONAL_RIGHT_LIME: "gjelbert e hapur per bend"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta per bend"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "portokallet per bend"
+  BANNER_DIAGONAL_RIGHT_PINK: "pembet per bend"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "jargovanet per bend"
+  BANNER_DIAGONAL_RIGHT_RED: "kuq per bend"
+  BANNER_DIAGONAL_RIGHT_WHITE: "bardh per bend"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "verdhe per bend"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "zi per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "kaltert per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "kafte per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "cyan per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "hiret per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "gjelbert per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "kaltert e hapur per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "hiret e hapur per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "gjelbert e hapur per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "portokallet per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "pembe per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "jargovant per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_RED: "kuq per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "bardh per bend inverted"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "verdh per bend inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "zi per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "kaltert per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "kafte per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "cyan per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "hiret per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "gjelbert per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "kaltert e hapur per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "hiret e hapur per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "gjelbert e hapur per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "portokallet per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "pembe per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "jargovanet per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "kuq per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "bardh per bend sinister inverted"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "verdh per bend sinister inverted"
+  BANNER_FLOWER_BLACK: "zi flower charge"
+  BANNER_FLOWER_BLUE: "kaltert flower charge"
+  BANNER_FLOWER_BROWN: "kafte flower charge"
+  BANNER_FLOWER_CYAN: "cyan flower charge"
+  BANNER_FLOWER_GRAY: "hiret flower charge"
+  BANNER_FLOWER_GREEN: "gjelbert flower charge"
+  BANNER_FLOWER_LIGHT_BLUE: "kaltert e hapur flower charge"
+  BANNER_FLOWER_LIGHT_GRAY: "hiret e hapur flower charge"
+  BANNER_FLOWER_LIME: "gjelbert e hapur flower charge"
+  BANNER_FLOWER_MAGENTA: "magenta flower charge"
+  BANNER_FLOWER_ORANGE: "portokallet flower charge"
+  BANNER_FLOWER_PINK: "pembet flower charge"
+  BANNER_FLOWER_PURPLE: "jargovant flower charge"
+  BANNER_FLOWER_RED: "kuq flower charge"
+  BANNER_FLOWER_WHITE: "bardh flower charge"
+  BANNER_FLOWER_YELLOW: "verdh flower charge"
+  BANNER_GLOBE_BLACK: "grobe e zezë"
+  BANNER_GLOBE_BLUE: "grobe e zezë"
+  BANNER_GLOBE_BROWN: "globe e gjelbër"
+  BANNER_GLOBE_CYAN: "globe e gjelbër"
+  BANNER_GLOBE_GRAY: "globe e gjelbër"
+  BANNER_GLOBE_GREEN: "globe e gjelbër"
+  BANNER_GLOBE_LIGHT_BLUE: "globe blu e lehte"
+  BANNER_GLOBE_LIGHT_GRAY: "bojë hiri e qeltë"
+  BANNER_GLOBE_LIME: "gëlqere globe"
+  BANNER_GLOBE_MAGENTA: "glob i purpurt"
+  BANNER_GLOBE_ORANGE: "glob portokalli"
+  BANNER_GLOBE_PINK: "globe pink"
+  BANNER_GLOBE_PURPLE: "globe e purpurt"
+  BANNER_GLOBE_RED: "globe e kuqe"
+  BANNER_GLOBE_WHITE: "glob i bardhë"
+  BANNER_GLOBE_YELLOW: "globe e verdhë"
+  BANNER_GRADIENT_BLACK: "zi gradient"
+  BANNER_GRADIENT_BLUE: "ngjyra blu"
+  BANNER_GRADIENT_BROWN: "kafte gradient"
+  BANNER_GRADIENT_CYAN: "ngjyra cyan"
+  BANNER_GRADIENT_GRAY: "ngjyra e hiret"
+  BANNER_GRADIENT_GREEN: "gjelbert gradient"
+  BANNER_GRADIENT_LIGHT_BLUE: "ngjyra blu e hapur"
+  BANNER_GRADIENT_LIGHT_GRAY: "ngjyra e hiret e hapur"
+  BANNER_GRADIENT_LIME: "ngjyra gjelbert e hapur"
+  BANNER_GRADIENT_MAGENTA: "ngjyra e purpurt"
+  BANNER_GRADIENT_ORANGE: "ngjyra portokalle"
+  BANNER_GRADIENT_PINK: "ngjyra pembe"
+  BANNER_GRADIENT_PURPLE: "ngjyra purple"
+  BANNER_GRADIENT_RED: "kuq gradient"
+  BANNER_GRADIENT_WHITE: "ngjyra e bardh"
+  BANNER_GRADIENT_YELLOW: "ngjyra verdh"
+  BANNER_GRADIENT_UP_BLACK: "zi base gradient"
+  BANNER_GRADIENT_UP_BLUE: "kaltert base gradient"
+  BANNER_GRADIENT_UP_BROWN: "kafte base gradient"
+  BANNER_GRADIENT_UP_CYAN: "cyan base gradient"
+  BANNER_GRADIENT_UP_GRAY: "hiret base gradient"
+  BANNER_GRADIENT_UP_GREEN: "gjelbert base gradient"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "kaltert e hapur base gradient"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "hiret e hapur base gradient"
+  BANNER_GRADIENT_UP_LIME: "gjelbert e hapur base gradient"
+  BANNER_GRADIENT_UP_MAGENTA: "purpurt base gradient"
+  BANNER_GRADIENT_UP_ORANGE: "portokalle base gradient"
+  BANNER_GRADIENT_UP_PINK: "pembe base gradient"
+  BANNER_GRADIENT_UP_PURPLE: "jargovane base gradient"
+  BANNER_GRADIENT_UP_RED: "kuq base gradient"
+  BANNER_GRADIENT_UP_WHITE: "bardh baze gradient"
+  BANNER_GRADIENT_UP_YELLOW: "verdhë base gradient"
+  BANNER_HALF_HORIZONTAL_BLACK: "per fess e zez"
+  BANNER_HALF_HORIZONTAL_BLUE: "per fess e kaltert"
+  BANNER_HALF_HORIZONTAL_BROWN: "per fess e kafte"
+  BANNER_HALF_HORIZONTAL_CYAN: "per fess e cyan"
+  BANNER_HALF_HORIZONTAL_GRAY: "per fess e hiret"
+  BANNER_HALF_HORIZONTAL_GREEN: "per fess e gjelbert"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "per fess e kaltert e hapur"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "per fess e hiret e hapur"
+  BANNER_HALF_HORIZONTAL_LIME: "per fess e gjelbert e hapur"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "per fess e magenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "per fess e portokallet"
+  BANNER_HALF_HORIZONTAL_PINK: "per fess e pembet"
+  BANNER_HALF_HORIZONTAL_PURPLE: "per fess e jargovanet"
+  BANNER_HALF_HORIZONTAL_RED: "per fess e kuqe"
+  BANNER_HALF_HORIZONTAL_WHITE: "per fess e bardhe"
+  BANNER_HALF_HORIZONTAL_YELLOW: "per fess e verdh"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "zi per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "kaltert per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "kafte per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cyan per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "hiret per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "gjelbert per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "kaltert e hapur per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "hiret e hapur per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "gjelbert e hapur per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "magenta per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "portokallet per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "pembe per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "jargovanet per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "kuq per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "bardh per fess inverted"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "verdh per fess inverted"
+  BANNER_HALF_VERTICAL_BLACK: "per pale e zez"
+  BANNER_HALF_VERTICAL_BLUE: "per pale e kaltert"
+  BANNER_HALF_VERTICAL_BROWN: "per pale e kafte"
+  BANNER_HALF_VERTICAL_CYAN: "per pale e cyan"
+  BANNER_HALF_VERTICAL_GRAY: "per pale e hiret"
+  BANNER_HALF_VERTICAL_GREEN: "per pale e gjelbert"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "per pale e kaltert e hapur"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "per pale e hiret e hapur"
+  BANNER_HALF_VERTICAL_LIME: "per pale e gjelbert e hapur"
+  BANNER_HALF_VERTICAL_MAGENTA: "per pale e megenta"
+  BANNER_HALF_VERTICAL_ORANGE: "per pale e portokallet"
+  BANNER_HALF_VERTICAL_PINK: "per pale e pembet"
+  BANNER_HALF_VERTICAL_PURPLE: "per pale e jargovant"
+  BANNER_HALF_VERTICAL_RED: "per pale e kuqe"
+  BANNER_HALF_VERTICAL_WHITE: "per pale e bardh"
+  BANNER_HALF_VERTICAL_YELLOW: "per pale e verdh"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "zi per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "kaltert per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "kafte per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "cyan per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "hiret per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "gjelbert per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "kaltert e hapur per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "hiret e hapur per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "gjelbert e hapur per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "magenta per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "portokallet per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "pembe per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "jargovanet per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "kuq per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "bardh per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "verdh per pale inverted"
+  BANNER_MOJANG_BLACK: "zi thing"
+  BANNER_MOJANG_BLUE: "kaltert thing"
+  BANNER_MOJANG_BROWN: "kafte thing"
+  BANNER_MOJANG_CYAN: "cyan thing"
+  BANNER_MOJANG_GRAY: "hiret thing"
+  BANNER_MOJANG_GREEN: "gjelbert thing"
+  BANNER_MOJANG_LIGHT_BLUE: "kaltert e hapur thing"
+  BANNER_MOJANG_LIGHT_GRAY: "hiret e hapur thing"
+  BANNER_MOJANG_LIME: "gjelbert e hapur thing"
+  BANNER_MOJANG_MAGENTA: "magenta thing"
+  BANNER_MOJANG_ORANGE: "portokallet thing"
+  BANNER_MOJANG_PINK: "pembet thing"
+  BANNER_MOJANG_PURPLE: "jargovant thing"
+  BANNER_MOJANG_RED: "kuq thing"
+  BANNER_MOJANG_WHITE: "bardh thing"
+  BANNER_MOJANG_YELLOW: "verdh thing"
+  BANNER_PIGLIN_BLACK: "feçkë e zezë"
+  BANNER_PIGLIN_BLUE: "feçkë e kaltër"
+  BANNER_PIGLIN_BROWN: "feçkë e kafte"
+  BANNER_PIGLIN_CYAN: "feçkë cijan"
+  BANNER_PIGLIN_GRAY: "feçkë gri"
+  BANNER_PIGLIN_GREEN: "feçkë e gjelbërt"
+  BANNER_PIGLIN_LIGHT_BLUE: "feçkë kaltër e qelt"
+  BANNER_PIGLIN_LIGHT_GRAY: "feçkë gri e qelt"
+  BANNER_PIGLIN_LIME: "feçkë gjelbër e qelt"
+  BANNER_PIGLIN_MAGENTA: "feçkë purpurtë"
+  BANNER_PIGLIN_ORANGE: "feçkë portokalli"
+  BANNER_PIGLIN_PINK: "feçkë rozë"
+  BANNER_PIGLIN_PURPLE: "feçkë vjollcë"
+  BANNER_PIGLIN_RED: "feçkë e kuqe"
+  BANNER_PIGLIN_WHITE: "feçkë e bardhë"
+  BANNER_PIGLIN_YELLOW: "feçkë e verdhë"
+  BANNER_RHOMBUS_BLACK: "romb i zi"
+  BANNER_RHOMBUS_BLUE: "romb i kaltert"
+  BANNER_RHOMBUS_BROWN: "romb i kafte"
+  BANNER_RHOMBUS_CYAN: "romb i cyan"
+  BANNER_RHOMBUS_GRAY: "romb i hiret"
+  BANNER_RHOMBUS_GREEN: "romb i gjelbert"
+  BANNER_RHOMBUS_LIGHT_BLUE: "romb i kaltert i hapur"
+  BANNER_RHOMBUS_LIGHT_GRAY: "romb i hiret e hapur"
+  BANNER_RHOMBUS_LIME: "romb i gjelbert e hapur"
+  BANNER_RHOMBUS_MAGENTA: "romb i magenta"
+  BANNER_RHOMBUS_ORANGE: "romb i portokallet"
+  BANNER_RHOMBUS_PINK: "romb i pembet"
+  BANNER_RHOMBUS_PURPLE: "romb i jargovant"
+  BANNER_RHOMBUS_RED: "romb i kuq"
+  BANNER_RHOMBUS_WHITE: "romb i bardhe"
+  BANNER_RHOMBUS_YELLOW: "romb i verdh"
+  BANNER_SKULL_BLACK: "zi skull charge"
+  BANNER_SKULL_BLUE: "kaltert skull charge"
+  BANNER_SKULL_BROWN: "kafte skull charge"
+  BANNER_SKULL_CYAN: "cyan skull charge"
+  BANNER_SKULL_GRAY: "hiret skull charge"
+  BANNER_SKULL_GREEN: "gjelbert skull charge"
+  BANNER_SKULL_LIGHT_BLUE: "kaltert e hapur skull charge"
+  BANNER_SKULL_LIGHT_GRAY: "hiret e hapur skull charge"
+  BANNER_SKULL_LIME: "gjelbert e hapur skull charge"
+  BANNER_SKULL_MAGENTA: "magenta skull charge"
+  BANNER_SKULL_ORANGE: "portokallet skull charge"
+  BANNER_SKULL_PINK: "pembe skull charge"
+  BANNER_SKULL_PURPLE: "jargovanet skull charge"
+  BANNER_SKULL_RED: "kuq skull charge"
+  BANNER_SKULL_WHITE: "bardh skull charge"
+  BANNER_SKULL_YELLOW: "verdh skull charge"
+  BANNER_SMALL_STRIPES_BLACK: "zez e zbehtë"
+  BANNER_SMALL_STRIPES_BLUE: "kaltert e zbehtë"
+  BANNER_SMALL_STRIPES_BROWN: "kafte e zbehtë"
+  BANNER_SMALL_STRIPES_CYAN: "cyan e zbehtë"
+  BANNER_SMALL_STRIPES_GRAY: "kthesë e hiret"
+  BANNER_SMALL_STRIPES_GREEN: "gjelbert e zbehtë"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "kthesë e kaltert e hapur"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "hiret e hapur e zbehtë"
+  BANNER_SMALL_STRIPES_LIME: "kthesë e gjelbert e hapur"
+  BANNER_SMALL_STRIPES_MAGENTA: "kthesë e magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "kthesë e portokallet"
+  BANNER_SMALL_STRIPES_PINK: "kthesë e pembet"
+  BANNER_SMALL_STRIPES_PURPLE: "pembet e zbehtë"
+  BANNER_SMALL_STRIPES_RED: "kuqe e zbehtë"
+  BANNER_SMALL_STRIPES_WHITE: "kthesë e bardhe"
+  BANNER_SMALL_STRIPES_YELLOW: "kthesë e verdhe"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "zi base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "kaltert base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "kafte base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "cyan base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "hiret base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "jeshil base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "kaltert e hapur base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "hiret e hapur base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "gjelbert e hapur base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "magenta base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "portokalle base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "pembe base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "jargovane base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "kuq base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "bardhe base dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "verdhe base dexter canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "zez base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "kaltert base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "kafte base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "cyan base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "hiret base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "jeshil base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "kaltert e hapur base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "hiret e hapur base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "gjelbert e hapur base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "magenta base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "portokalle base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "pembe base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "jargovane base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "kuq base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "bardhe base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "verdhe base sinister canton"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "zi chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "kaltert chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "kafte chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "cyan chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "hiret chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "gjelbert chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "kaltert e hapur chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "hiret e hapur chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIME: "gjelbert e hapur chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "magenta chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "portokalle chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PINK: "pembe chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "jargovane chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_RED: "kuq chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "bardhe chief dexter canton"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "verdhe chief dexter canton"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "zi chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "kaltert chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "kafte chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "cyan chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "hiret chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "gjelbert chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "kaltert e hapur chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "hiret e hapur chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "gjelbert e hapur chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "magenta chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "portokalle chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "pembe chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "jargovane chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_RED: "kuq chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "bardh chief sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "verdh chief sinister canton"
+  BANNER_STRAIGHT_CROSS_BLACK: "zi cross"
+  BANNER_STRAIGHT_CROSS_BLUE: "kaltert cross"
+  BANNER_STRAIGHT_CROSS_BROWN: "kafte cross"
+  BANNER_STRAIGHT_CROSS_CYAN: "cyan cross"
+  BANNER_STRAIGHT_CROSS_GRAY: "hiret cross"
+  BANNER_STRAIGHT_CROSS_GREEN: "gjelbert cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "kaltert e hapur cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "hiret e hapur cross"
+  BANNER_STRAIGHT_CROSS_LIME: "gjelbert e hapur cross"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magenta cross"
+  BANNER_STRAIGHT_CROSS_ORANGE: "portokallet cross"
+  BANNER_STRAIGHT_CROSS_PINK: "pemebet cross"
+  BANNER_STRAIGHT_CROSS_PURPLE: "jargovant cross"
+  BANNER_STRAIGHT_CROSS_RED: "kuq cross"
+  BANNER_STRAIGHT_CROSS_WHITE: "bardh cross"
+  BANNER_STRAIGHT_CROSS_YELLOW: "verdh cross"
+  BANNER_STRIPE_BOTTOM_BLACK: "themel i zi"
+  BANNER_STRIPE_BOTTOM_BLUE: "themel i kaltert"
+  BANNER_STRIPE_BOTTOM_BROWN: "themel i kafte"
+  BANNER_STRIPE_BOTTOM_CYAN: "themel i cyan"
+  BANNER_STRIPE_BOTTOM_GRAY: "themel i hiret"
+  BANNER_STRIPE_BOTTOM_GREEN: "themel i gjelbert"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "bazë e kaltert e hapur"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "themel i hiret i hapur"
+  BANNER_STRIPE_BOTTOM_LIME: "bazë e gjelbert e hapur"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "bazë e magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "bazë e portokallet"
+  BANNER_STRIPE_BOTTOM_PINK: "themel pembe"
+  BANNER_STRIPE_BOTTOM_PURPLE: "themel i jargovant"
+  BANNER_STRIPE_BOTTOM_RED: "themel i kuq"
+  BANNER_STRIPE_BOTTOM_WHITE: "bazë e bardh"
+  BANNER_STRIPE_BOTTOM_YELLOW: "bazë e verdh"
+  BANNER_STRIPE_CENTER_BLACK: "zi i zbehtë"
+  BANNER_STRIPE_CENTER_BLUE: "kaltert i zbehtë"
+  BANNER_STRIPE_CENTER_BROWN: "kafte i zbehtë"
+  BANNER_STRIPE_CENTER_CYAN: "cyan i zbehtë"
+  BANNER_STRIPE_CENTER_GRAY: "hiret i zbehtë"
+  BANNER_STRIPE_CENTER_GREEN: "gjelbert i zbehtë"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "shef i kaltert e hapur"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "hiret e hapur i zbehtë"
+  BANNER_STRIPE_CENTER_LIME: "shef i gjelbert e hapur"
+  BANNER_STRIPE_CENTER_MAGENTA: "shef i magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "shef i portokallet"
+  BANNER_STRIPE_CENTER_PINK: "pembe i zbehtë"
+  BANNER_STRIPE_CENTER_PURPLE: "jargovane i zbehtë"
+  BANNER_STRIPE_CENTER_RED: "kuq i zbehtë"
+  BANNER_STRIPE_CENTER_WHITE: "shef i bardh"
+  BANNER_STRIPE_CENTER_YELLOW: "shef i verdh"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "kthesë e keqe e zez"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "kthesë e keqe e kaltert"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "kthesë e keqe e kafte"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "kthesë e keqe e cyan"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "kthesë e keqe e hiret"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "kthesë e keqe e gjelbert"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "kaltert e hapur bend sinister"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "kthesë e keqe e hiret e hapur"
+  BANNER_STRIPE_DOWNLEFT_LIME: "kthesë e keqe e gjelbert e hapur"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta bend sinister"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "portokalle i zbehtë"
+  BANNER_STRIPE_DOWNLEFT_PINK: "kthesë e keqe e pembet"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "kthesë e keqe e jargovanet"
+  BANNER_STRIPE_DOWNLEFT_RED: "kthesë e keqe e kuqe"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "bardh bend sinister"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "kthesë e keqe e verdh"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "kthesë e zez"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "kthesë e kaltert"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "kthesë e kafte"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "kthesë e cyan"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "kthesë e hiret"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "kthesë e gjelbert"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "kthesë e kaltert e hapur"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "kthesë e hiret e hapur"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "kthesë e gjelbert e hapur"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "kthesë e magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "kthesë e portokallet"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "kthesë e pembet"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "kthesë e pembet"
+  BANNER_STRIPE_DOWNRIGHT_RED: "kthesë e kuqe"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "kthesë e bardh"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "kthesë e verdh"
+  BANNER_STRIPE_LEFT_BLACK: "zi pale dexter"
+  BANNER_STRIPE_LEFT_BLUE: "kaltert pale dexter"
+  BANNER_STRIPE_LEFT_BROWN: "kafte pale dexter"
+  BANNER_STRIPE_LEFT_CYAN: "cyan pale dexter"
+  BANNER_STRIPE_LEFT_GRAY: "hiret pale dexter"
+  BANNER_STRIPE_LEFT_GREEN: "gjelbert pale dexter"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "kaltert e hapur pale dexter"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "hiret e hapur pale dexter"
+  BANNER_STRIPE_LEFT_LIME: "gjelbert e hapur pale dexter"
+  BANNER_STRIPE_LEFT_MAGENTA: "magenta pale dexter"
+  BANNER_STRIPE_LEFT_ORANGE: "portokallet pale dexter"
+  BANNER_STRIPE_LEFT_PINK: "pembet pale dexter"
+  BANNER_STRIPE_LEFT_PURPLE: "jargovan pale dexter"
+  BANNER_STRIPE_LEFT_RED: "kuq pale dexter"
+  BANNER_STRIPE_LEFT_WHITE: "bardhe pale dexter"
+  BANNER_STRIPE_LEFT_YELLOW: "verdh pale dexter"
+  BANNER_STRIPE_MIDDLE_BLACK: "fess i zi"
+  BANNER_STRIPE_MIDDLE_BLUE: "fess i kaltert"
+  BANNER_STRIPE_MIDDLE_BROWN: "fess i kafte"
+  BANNER_STRIPE_MIDDLE_CYAN: "fess i cyan"
+  BANNER_STRIPE_MIDDLE_GRAY: "fess i hiret"
+  BANNER_STRIPE_MIDDLE_GREEN: "fess i gjelbert"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "fess i kaltert e hapur"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "fess i hiret e hapur"
+  BANNER_STRIPE_MIDDLE_LIME: "fess i gjelbert e hapur"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "fess i magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "fess i portokallet"
+  BANNER_STRIPE_MIDDLE_PINK: "fess i pembet"
+  BANNER_STRIPE_MIDDLE_PURPLE: "fess i pembet"
+  BANNER_STRIPE_MIDDLE_RED: "fess i kuq"
+  BANNER_STRIPE_MIDDLE_WHITE: "fess i bardh"
+  BANNER_STRIPE_MIDDLE_YELLOW: "fess i verdh"
+  BANNER_STRIPE_RIGHT_BLACK: "zi pale sinister"
+  BANNER_STRIPE_RIGHT_BLUE: "kaltert pale sinister"
+  BANNER_STRIPE_RIGHT_BROWN: "kafte pale sinister"
+  BANNER_STRIPE_RIGHT_CYAN: "cyan pale sinister"
+  BANNER_STRIPE_RIGHT_GRAY: "hiret pale sinister"
+  BANNER_STRIPE_RIGHT_GREEN: "gjelbert pale sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "kaltert e hapur pale sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "hiret e hapur pale sinister"
+  BANNER_STRIPE_RIGHT_LIME: "gjelbert e hapur pale sinister"
+  BANNER_STRIPE_RIGHT_MAGENTA: "magenta pale sinister"
+  BANNER_STRIPE_RIGHT_ORANGE: "portokalle pale sinister"
+  BANNER_STRIPE_RIGHT_PINK: "pembe pale sinister"
+  BANNER_STRIPE_RIGHT_PURPLE: "jargovanet pale sinister"
+  BANNER_STRIPE_RIGHT_RED: "kuq pale sinister"
+  BANNER_STRIPE_RIGHT_WHITE: "bardh pale sinister"
+  BANNER_STRIPE_RIGHT_YELLOW: "verdh pale sinister"
+  BANNER_STRIPE_TOP_BLACK: "shef i zi"
+  BANNER_STRIPE_TOP_BLUE: "shef i kaltert"
+  BANNER_STRIPE_TOP_BROWN: "shef i kaft"
+  BANNER_STRIPE_TOP_CYAN: "shef i cyan"
+  BANNER_STRIPE_TOP_GRAY: "shef i hiret"
+  BANNER_STRIPE_TOP_GREEN: "shef i gjelbert"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "shef i kaltert i hapur"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "shef i hiret i hapur"
+  BANNER_STRIPE_TOP_LIME: "shef i gjelbert i hapur"
+  BANNER_STRIPE_TOP_MAGENTA: "shef i magenta"
+  BANNER_STRIPE_TOP_ORANGE: "shef i portokallet"
+  BANNER_STRIPE_TOP_PINK: "shef i pembet"
+  BANNER_STRIPE_TOP_PURPLE: "shef i jargovant"
+  BANNER_STRIPE_TOP_RED: "shef i kuqe"
+  BANNER_STRIPE_TOP_WHITE: "shef i bardh"
+  BANNER_STRIPE_TOP_YELLOW: "shef i verdhe"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "shirit grade e zez"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "shirit grade e kaltert"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "shirit grade e kafte"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "shirit grade e cyan"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "shirit grade e hiret"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "shirit grade e gjelbert"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "shirit grade e kaltert e hapur"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "shirit grade e hiret e hapur"
+  BANNER_TRIANGLE_BOTTOM_LIME: "shirit grade e gjelbert e hapur"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "shirit grade e magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "shirit grade e portokallet"
+  BANNER_TRIANGLE_BOTTOM_PINK: "shirit grade e pembet"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "shirit grade e jargovanet"
+  BANNER_TRIANGLE_BOTTOM_RED: "shirit grade e kuqe"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "shirit grade e bardhe"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "shirit grade e verdhe"
+  BANNER_TRIANGLE_TOP_BLACK: "shirit grade inverted e zez"
+  BANNER_TRIANGLE_TOP_BLUE: "shirit grade inverted e kaltert"
+  BANNER_TRIANGLE_TOP_BROWN: "shirit grade inverted e kafte"
+  BANNER_TRIANGLE_TOP_CYAN: "shirit grade inverted e cyan"
+  BANNER_TRIANGLE_TOP_GRAY: "shirit grade inverted e hiret"
+  BANNER_TRIANGLE_TOP_GREEN: "shirit grade inverted e gjelbert"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "shirit grade inverted e kaltert e hapur"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "shirit grade inverted e hiret e hapur"
+  BANNER_TRIANGLE_TOP_LIME: "shirit grade inverted e gjelbert e hapur"
+  BANNER_TRIANGLE_TOP_MAGENTA: "shirit grade inverted e magenta"
+  BANNER_TRIANGLE_TOP_ORANGE: "shirit grade inverted e portokallet"
+  BANNER_TRIANGLE_TOP_PINK: "shirit grade inverted e pembet"
+  BANNER_TRIANGLE_TOP_PURPLE: "shirit grade inverted e jargovanet"
+  BANNER_TRIANGLE_TOP_RED: "shirit grade inverted e kuqe"
+  BANNER_TRIANGLE_TOP_WHITE: "shirit grade inverted e bardhe"
+  BANNER_TRIANGLE_TOP_YELLOW: "shirit grade inverted e verdhe"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "bazë e prerë e zez"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "bazë e prerë e kaltert"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "bazë e prerë e kafte"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "bazë e prerë e cyan"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "bazë e prerë e hiret"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "bazë e prerë e gjelbert"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "bazë e prerë e kaltert e hapur"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "bazë e prerë e hiret e hapur"
+  BANNER_TRIANGLES_BOTTOM_LIME: "bazë e prerë e gjelbert e hapur"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "bazë e prerë e magenta"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "bazë e prerë e portokallet"
+  BANNER_TRIANGLES_BOTTOM_PINK: "bazë e prerë e pembet"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "bazë e prerë e jargovanet"
+  BANNER_TRIANGLES_BOTTOM_RED: "bazë e prerë e kuqe"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "bazë e prerë e bardhe"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "bazë e prerë e verdhe"
+  BANNER_TRIANGLES_TOP_BLACK: "shefi i prerë i zi"
+  BANNER_TRIANGLES_TOP_BLUE: "shefi i prerë i kaltert"
+  BANNER_TRIANGLES_TOP_BROWN: "shefi i prerë i kafte"
+  BANNER_TRIANGLES_TOP_CYAN: "shefi i prerë i cyan"
+  BANNER_TRIANGLES_TOP_GRAY: "shefi i prerë i hiret"
+  BANNER_TRIANGLES_TOP_GREEN: "shefi i prerë i gjelbert"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "shefi i prerë i kaltert e hapur"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "shefi i prerë i hiret e hapur"
+  BANNER_TRIANGLES_TOP_LIME: "shefi i prerë i gjelbert e hapur"
+  BANNER_TRIANGLES_TOP_MAGENTA: "shefi i prerë i magenta"
+  BANNER_TRIANGLES_TOP_ORANGE: "shefi i prerë i portokallet"
+  BANNER_TRIANGLES_TOP_PINK: "shefi i prerë i pembet"
+  BANNER_TRIANGLES_TOP_PURPLE: "shefi i prerë i jargovanet"
+  BANNER_TRIANGLES_TOP_RED: "shefi i prerë i kuq"
+  BANNER_TRIANGLES_TOP_WHITE: "shefi i prerë i bardhe"
+  BANNER_TRIANGLES_TOP_YELLOW: "shefi i prerë i verdhe"
+  BARREL: "fuçi"
+  BARRIER: "barjerë"
+  BASALT: "bazalti"
+  BEACON: "fener"
+  BEACON_PRIMARY: "fuqia parësore"
+  BEACON_SECONDARY: "fuqia dytësore"
+  BED_NO_SLEEP: "mund të flesh vetëm gjatë natës ose gjatë një stuhie"
+  BED_NOT_SAFE: "ti nuk mundë të pushosh; ketu ka monstra për rreth"
+  BED_OBSTRUCTED: "ky krevat pengohet"
+  BED_OCCUPIED: "ky krevat është i zënë"
+  BED_TOO_FAR_AWAY: "ti nuk mund te pushosh tani; shtrati është shum larg"
+  BEDROCK: "bazë-gur"
+  BEE_NEST: "fole bletësh"
+  BEEHIVE: "koshere"
+  BEETROOTS: "panxhar"
+  BELL: "zile"
+  BIG_DRIPLEAF: "big dripleaf"
+  BIG_DRIPLEAF_STEM: "rrjedha e madhe e pikave"
+  BIRCH_BUTTON: "brich buton"
+  BIRCH_DOOR: "derë mështekëne"
+  BIRCH_FENCE: "gardh me dru të bardhë"
+  BIRCH_FENCE_GATE: "portë me dru të bardhë"
+  BIRCH_HANGING_SIGN: "shenjë e varur thupre"
+  BIRCH_LEAVES: "gjethe mështekre"
+  BIRCH_LOG: "trung mështekre"
+  BIRCH_PLANKS: "dërrasa mështekëne"
+  BIRCH_PRESSURE_PLATE: "brich pllakë presioni"
+  BIRCH_SAPLING: "fidan mështekëne"
+  BIRCH_SIGN: "shenjë lajmërimi prej drurit të thupëres"
+  BIRCH_SLAB: "gjysëm lisi"
+  BIRCH_STAIRS: "shkallë druri"
+  BIRCH_TRAPDOOR: "betoni i thupërve"
+  BIRCH_WALL_HANGING_SIGN: "shenja të varura në mur thupre"
+  BIRCH_WALL_SIGN: "shenjë lajmërimi prej drurit të thupëres"
+  BIRCH_WOOD: "dru mështekre"
+  BLACK_BANNER: "flamur i zi"
+  BLACK_BED: "shtrat i zi"
+  BLACK_CANDLE: "qiri i zi"
+  BLACK_CANDLE_CAKE: "torte me qiri te zi"
+  BLACK_CARPET: "qilim i zi"
+  BLACK_CONCRETE: "beton i zi"
+  BLACK_CONCRETE_POWDER: "pluhur konkreti i zi"
+  BLACK_GLAZED_TERRACOTTA: "xham terrakote e zezë"
+  BLACK_SHULKER_BOX: "kutia  kudhër e zeze"
+  BLACK_STAINED_GLASS: "qelq i zi"
+  BLACK_STAINED_GLASS_PANE: "xham i zi"
+  BLACK_TERRACOTTA: "terrakotë e zezë"
+  BLACK_WOOL: "lesh i zi"
+  BLACKSTONE: "shkëmb i zi"
+  BLACKSTONE_SLAB: "pllakë shkëmbi e zezë"
+  BLACKSTONE_STAIRS: "shkallët e shkëmbit të zi"
+  BLACKSTONE_WALL: "gurizi mur"
+  BLAST_FURNACE: "furrë shpërthimi"
+  BLUE_BANNER: "flamur i kaltert"
+  BLUE_BED: "shtrat i kaltër"
+  BLUE_CANDLE: "qiri blu"
+  BLUE_CANDLE_CAKE: "tortë me qiri blu"
+  BLUE_CARPET: "qilim blu"
+  BLUE_CONCRETE: "beton i blu"
+  BLUE_CONCRETE_POWDER: "pluhur konkreti i kaltër"
+  BLUE_GLAZED_TERRACOTTA: "xham terrakote e kaltër"
+  BLUE_ICE: "akull i kaltërt"
+  BLUE_ORCHID: "orkide e kaltërt"
+  BLUE_SHULKER_BOX: "kutia  kudhër blu"
+  BLUE_STAINED_GLASS: "qelq i kaltërt"
+  BLUE_STAINED_GLASS_PANE: "xham i kaltërt"
+  BLUE_TERRACOTTA: "terrakotë e kaltërt"
+  BLUE_WOOL: "leshi kalter"
+  BONE_BLOCK: "bllok kocke"
+  BOOKSHELF: "raft librash"
+  BRAIN_CORAL: "brain coral"
+  BRAIN_CORAL_BLOCK: "blloku i brain coral"
+  BRAIN_CORAL_FAN: "fan brain coral"
+  BRAIN_CORAL_WALL_FAN: "fan brain coral wall"
+  BREWING_STAND: "banak ilaçesh"
+  BRICK_SLAB: "gjysëm tullë"
+  BRICK_STAIRS: "shkallë tulle"
+  BRICK_WALL: "mur tulle"
+  BRICKS: "tulla"
+  BROWN_BANNER: "flamur i kafte"
+  BROWN_BED: "shtrat kafe"
+  BROWN_CANDLE: "qiri kafe"
+  BROWN_CANDLE_CAKE: "tortë me qiri kafe"
+  BROWN_CARPET: "qilim ngjyrë kafe"
+  BROWN_CONCRETE: "beton kafe"
+  BROWN_CONCRETE_POWDER: "pluhur konkreti kafe"
+  BROWN_GLAZED_TERRACOTTA: "xham terrakote kafe"
+  BROWN_MUSHROOM: "kerpurdhë bojëkafe"
+  BROWN_MUSHROOM_BLOCK: "bllok i kerpurdhës bojëkafe"
+  BROWN_SHULKER_BOX: "kutia  kudhër kafe"
+  BROWN_STAINED_GLASS: "qelq bojëkafe"
+  BROWN_STAINED_GLASS_PANE: "xham bojëkafe"
+  BROWN_TERRACOTTA: "terrakotë bojëkafe"
+  BROWN_WOOL: "leshi kaft"
+  BUBBLE_COLUMN: "kolona flluskë"
+  BUBBLE_CORAL: "bubble coral"
+  BUBBLE_CORAL_BLOCK: "blloku i bubble coral"
+  BUBBLE_CORAL_FAN: "fan bubble coral"
+  BUBBLE_CORAL_WALL_FAN: "fan bubble coral wall"
+  BUDDING_AMETHYST: "ametist që lulëzon"
+  CACTUS: "kaktus"
+  CAKE: "tortë"
+  CALCITE: "kalcit"
+  CALIBRATED_SCULK_SENSOR: "sensori sculk i kalibruar"
+  CAMPFIRE: "zjarr kampi"
+  CANDLE: "qiri"
+  CANDLE_CAKE: "tortë me qirinjë"
+  CARROTS: "karota"
+  CARTOGRAPHY_TABLE: "tavolinë hartografije"
+  CARVED_PUMPKIN: "kungull i gdhendur"
+  CAULDRON: "kazan"
+  CAVE_AIR: "ajër shpelle"
+  CAVE_VINES: "vreshtat e shpellave"
+  CAVE_VINES_PLANT: "bima e rrushit të shpellës"
+  CHAIN: "zinxhir"
+  CHAIN_COMMAND_BLOCK: "blloku i komandave që vazhdohen"
+  CHERRY_BUTTON: "butoni i qershisë"
+  CHERRY_DOOR: "dera e qershisë"
+  CHERRY_FENCE: "kopshti i qershisë"
+  CHERRY_FENCE_GATE: "kapi me kopshtin e qershisë"
+  CHERRY_HANGING_SIGN: "shenjë e varur e qershisë"
+  CHERRY_LEAVES: "gjethe qershie"
+  CHERRY_LOG: "trung qershie"
+  CHERRY_PLANKS: "dërrasa qershie"
+  CHERRY_PRESSURE_PLATE: "pllakë shtypëse e drurit të qershisë"
+  CHERRY_SAPLING: "fidan qershie"
+  CHERRY_SIGN: "shenjë e drurit të qershisë"
+  CHERRY_SLAB: "pllakë qershie"
+  CHERRY_STAIRS: "shkallë qershie"
+  CHERRY_TRAPDOOR: "derë qershie e përgjysmuar"
+  CHERRY_WALL_HANGING_SIGN: "shenjë qershie e varur në mur"
+  CHERRY_WALL_SIGN: "shenjë e murit të qershisë"
+  CHERRY_WOOD: "peme qershie"
+  CHEST: "sënduk"
+  CHIPPED_ANVIL: "çeliku i shkrirë"
+  CHISELED_BOOKSHELF: "rafte libri të gdhendura"
+  CHISELED_COPPER: "bllok. minecraft. eçartur_bakër"
+  CHISELED_DEEPSLATE: "thellë e thellë e gdhendur"
+  CHISELED_NETHER_BRICKS: "tulla nether-it të gdhendura"
+  CHISELED_POLISHED_BLACKSTONE: "rrip i shtypur i gurizi"
+  CHISELED_QUARTZ_BLOCK: "gdhend kuarcit blloku"
+  CHISELED_RED_SANDSTONE: "gur rëre e kuqe e gdhendur"
+  CHISELED_SANDSTONE: "gur rëre i gdhendur"
+  CHISELED_STONE_BRICKS: "tulla guri të gdhendura"
+  CHISELED_TUFF: "tuf i skalitur"
+  CHISELED_TUFF_BRICKS: "tulla guri të gdhendura"
+  CHORUS_FLOWER: "lule korus"
+  CHORUS_PLANT: "bimë korus"
+  CLAY: "argjilë"
+  COAL_BLOCK: "bllok i qymyrit"
+  COAL_ORE: "xehe qymyri"
+  COARSE_DIRT: "të trashë pluhuri"
+  COBBLED_DEEPSLATE: "kalldrëm i thellë"
+  COBBLED_DEEPSLATE_SLAB: "pllakë me thellësi me kalldrëm"
+  COBBLED_DEEPSLATE_STAIRS: "shkallët me gurë të thellë"
+  COBBLED_DEEPSLATE_WALL: "muri i thellë me kalldrëm"
+  COBBLESTONE: "kalldrëm"
+  COBBLESTONE_SLAB: "pllakë kalldrumi"
+  COBBLESTONE_STAIRS: "shkallë me kalldrëm"
+  COBBLESTONE_WALL: "me kalldrëm mur"
+  COBWEB: "grackë"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "blloku i komandave"
+  COMPARATOR: "krahasues gurëkuqi"
+  COMPOSTER: "kazan për komposto"
+  CONDUIT: "përçues"
+  COPPER_BLOCK: "blloku i bakrit"
+  COPPER_BULB: "wenn im englischen schon „bulb“ statt „lamp“ genutzt wird sollten wir schauen ob wir ebenfalls etwas anderes als „lampe“ finden da es ja auch anders funktioniert als eine herkömmliche redstone-lampe"
+  COPPER_DOOR: "dera prej bakri"
+  COPPER_GRATE: "hekura e bakrit"
+  COPPER_ORE: "xehe bakri"
+  COPPER_TRAPDOOR: "porta e bakrit"
+  CORNFLOWER: "kokoçeli ngjyrë qielli"
+  CRACKED_DEEPSLATE_BRICKS: "tulla të thekura të thella"
+  CRACKED_DEEPSLATE_TILES: "pllaka të çara të thella"
+  CRACKED_NETHER_BRICKS: "tulla nether-it të thyera"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "shkëmb i lemuar i plasaritur i zi"
+  CRACKED_STONE_BRICKS: "i plasaritur tulla të gurit"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "tabela e artizanatit"
+  CREEPER_HEAD: "kokë creeperi"
+  CREEPER_WALL_HEAD: "kokë muri kreshtar"
+  CRIMSON_BUTTON: "buton i kuqërremtë"
+  CRIMSON_DOOR: "derë e kuqërremtë"
+  CRIMSON_FENCE: "gardh i kuqërremtë"
+  CRIMSON_FENCE_GATE: "derë gardhi e kuqërremtë"
+  CRIMSON_FUNGUS: "kërpurdhë e kuqërremtë"
+  CRIMSON_HANGING_SIGN: "shenjë e varur purpur"
+  CRIMSON_HYPHAE: "hife të kuqërremta"
+  CRIMSON_NYLIUM: "nilium i kuqërremtë"
+  CRIMSON_PLANKS: "dërrasë të kuqërremta"
+  CRIMSON_PRESSURE_PLATE: "pllakë presioni e kuqërremtë"
+  CRIMSON_ROOTS: "rrënjë të kuqërremta"
+  CRIMSON_SIGN: "tabelë e kuqërremtë"
+  CRIMSON_SLAB: "pllakë të kuqërremtë"
+  CRIMSON_STAIRS: "shkallët të kuqërremta"
+  CRIMSON_STEM: "kërcell i kuqërremtë"
+  CRIMSON_TRAPDOOR: "derë kurthi e kuqërremtë"
+  CRIMSON_WALL_HANGING_SIGN: "shenja të varura në mur purpur"
+  CRIMSON_WALL_SIGN: "tabelë muri e kuqërremtë"
+  CRYING_OBSIDIAN: "xham vullkanik që qanë"
+  CUT_COPPER: "bakër i gdhendur"
+  CUT_COPPER_SLAB: "pllakë bakri e prerë"
+  CUT_COPPER_STAIRS: "shkallë të gdhendura bakri"
+  CUT_RED_SANDSTONE: "pritini gur ranor të kuq"
+  CUT_RED_SANDSTONE_SLAB: "pritini gur ranor të kuq"
+  CUT_SANDSTONE: "prej gur ranor"
+  CUT_SANDSTONE_SLAB: "pritini gur ranor"
+  CYAN_BANNER: "flamur i cyan"
+  CYAN_BED: "shtrat qielli"
+  CYAN_CANDLE: "qiri cian"
+  CYAN_CANDLE_CAKE: "tortë me qiri cyan"
+  CYAN_CARPET: "qilim cian"
+  CYAN_CONCRETE: "beton gurkali"
+  CYAN_CONCRETE_POWDER: "pluhur konkreti qielli"
+  CYAN_GLAZED_TERRACOTTA: "blanc glaze ttc"
+  CYAN_SHULKER_BOX: "kutia cyan skuller"
+  CYAN_STAINED_GLASS: "xham me ngjyr bojqelli"
+  CYAN_STAINED_GLASS_PANE: "xham cijani"
+  CYAN_TERRACOTTA: "terrakotë cijan"
+  CYAN_WOOL: "leshi cian"
+  DAMAGED_ANVIL: "anvil i dëmtuar"
+  DANDELION: "luleradhiqe"
+  DARK_OAK_BUTTON: "buton i lisit te errët"
+  DARK_OAK_DOOR: "derë ahu të zi"
+  DARK_OAK_FENCE: "gardh me dru të errët"
+  DARK_OAK_FENCE_GATE: "portë me dru të errët"
+  DARK_OAK_HANGING_SIGN: "shenjë e varur lisi të zi"
+  DARK_OAK_LEAVES: "gjethe të dushkut të errët"
+  DARK_OAK_LOG: "trung i dushkut të errët"
+  DARK_OAK_PLANKS: "dërrasa ahu te zi"
+  DARK_OAK_PRESSURE_PLATE: "dark oak pllakë presioni"
+  DARK_OAK_SAPLING: "fidan ahu të zi"
+  DARK_OAK_SIGN: "shenjë lajmërimi prej drurit të zi"
+  DARK_OAK_SLAB: "gjysëm lisi"
+  DARK_OAK_STAIRS: "shkallë druri"
+  DARK_OAK_TRAPDOOR: "errësirë të errët të lisi"
+  DARK_OAK_WALL_HANGING_SIGN: "shenja të varura në mur lisi të zi"
+  DARK_OAK_WALL_SIGN: "shenjë lajmërimi prej drurit të zi"
+  DARK_OAK_WOOD: "dru i dushkut të ërret"
+  DARK_PRISMARINE: "prismarine errët"
+  DARK_PRISMARINE_SLAB: "gjysëm lisi"
+  DARK_PRISMARINE_STAIRS: "prismarine te erret shkallë"
+  DAYLIGHT_DETECTOR: "detektor i ditës"
+  DEAD_BRAIN_CORAL: "dead brain coral"
+  DEAD_BRAIN_CORAL_BLOCK: "blloku i vdekur brain coral"
+  DEAD_BRAIN_CORAL_FAN: "fan dead brain coral"
+  DEAD_BRAIN_CORAL_WALL_FAN: "fan dead brain coral wall"
+  DEAD_BUBBLE_CORAL: "dead bubble coral"
+  DEAD_BUBBLE_CORAL_BLOCK: "blloku i dead bubble coral"
+  DEAD_BUBBLE_CORAL_FAN: "fan dead bubble coral"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "fan dead bubble coral wall"
+  DEAD_BUSH: "shkurrë e vdekur"
+  DEAD_FIRE_CORAL: "dead fire coral"
+  DEAD_FIRE_CORAL_BLOCK: "blloku i dead fire coral"
+  DEAD_FIRE_CORAL_FAN: "fan dead fire coral"
+  DEAD_FIRE_CORAL_WALL_FAN: "fan dead fire coral wall"
+  DEAD_HORN_CORAL: "dead horn coral"
+  DEAD_HORN_CORAL_BLOCK: "blloku i dead horn coral"
+  DEAD_HORN_CORAL_FAN: "fan dead horn coral"
+  DEAD_HORN_CORAL_WALL_FAN: "fan dead horn coral wall"
+  DEAD_TUBE_CORAL: "dead tube coral"
+  DEAD_TUBE_CORAL_BLOCK: "blloku i koraleve të dead tube"
+  DEAD_TUBE_CORAL_FAN: "fan dead tube coral"
+  DEAD_TUBE_CORAL_WALL_FAN: "fan dead tube coral wall"
+  DECORATED_POT: "tenxhere e zbukuruar"
+  DEEPSLATE: "thellësi"
+  DEEPSLATE_BRICK_SLAB: "pllakë me tulla të thella"
+  DEEPSLATE_BRICK_STAIRS: "shkallët me tulla të thella"
+  DEEPSLATE_BRICK_WALL: "muri me tulla të thella"
+  DEEPSLATE_BRICKS: "tulla të thella"
+  DEEPSLATE_COAL_ORE: "ore xeherore e qymyrit"
+  DEEPSLATE_COPPER_ORE: "ore e bakrit me thellësi"
+  DEEPSLATE_DIAMOND_ORE: "deepslate diamond ore"
+  DEEPSLATE_EMERALD_ORE: "\ndeepslate emerald ore"
+  DEEPSLATE_GOLD_ORE: "xeheror ari i thellë"
+  DEEPSLATE_IRON_ORE: "ore e hekurit e thellë"
+  DEEPSLATE_LAPIS_ORE: "deepslate lapis lazuli ore"
+  DEEPSLATE_REDSTONE_ORE: "deepslate redstone ore"
+  DEEPSLATE_TILE_SLAB: "pllakë pllake të thellë"
+  DEEPSLATE_TILE_STAIRS: "shkallët e pllakave të thella"
+  DEEPSLATE_TILE_WALL: "muri i pllakave të thella"
+  DEEPSLATE_TILES: "pllaka të thella"
+  DETECTOR_RAIL: "detektor hekurudhor"
+  DIAMOND_BLOCK: "bllok djamanti"
+  DIAMOND_ORE: "diamant"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "pjatë dioriti"
+  DIORITE_STAIRS: "shkallët dioriti"
+  DIORITE_WALL: "mur dioriti"
+  DIRT: "dhe"
+  DIRT_PATH: "shteg me dhe"
+  DISPENSER: "gjuajtës"
+  DRAGON_EGG: "vezë dragoi"
+  DRAGON_HEAD: "kokë dragoi"
+  DRAGON_WALL_HEAD: "kokë mur dragon"
+  DRIED_KELP_BLOCK: "bllok leshteriku i tharë"
+  DRIPSTONE_BLOCK: "blloku i pikave"
+  DROPPER: "hedhës"
+  EMERALD_BLOCK: "bllok smeraldi"
+  EMERALD_ORE: "mineral smeraldi"
+  ENCHANTING_TABLE: "tavolinë magjie"
+  END_GATEWAY: "fund porta"
+  END_PORTAL: "portal endi"
+  END_PORTAL_FRAME: "kornizë portali endit"
+  END_ROD: "shkop endi"
+  END_STONE: "gur endi"
+  END_STONE_BRICK_SLAB: "pllaka e tullave fundore"
+  END_STONE_BRICK_STAIRS: "shkallët me tulla guri prej endit"
+  END_STONE_BRICK_WALL: "mur guri i tullës së endit"
+  END_STONE_BRICKS: "mbaroni tulla prej guri"
+  ENDER_CHEST: "arkë enderi"
+  EXPOSED_CHISELED_COPPER: "bakri i ekspozuar i gdhendur"
+  EXPOSED_COPPER: "bakri i ekspozuar"
+  EXPOSED_COPPER_BULB: "llambë bakri e ekspozuar"
+  EXPOSED_COPPER_DOOR: "dera prej bakri"
+  EXPOSED_COPPER_GRATE: "hekura e ekspozuar e bakrit"
+  EXPOSED_COPPER_TRAPDOOR: "dera e ekspozuar e bakrit"
+  EXPOSED_CUT_COPPER: "bakri i prerë i ekspozuar"
+  EXPOSED_CUT_COPPER_SLAB: "pllakë bakri e prerë e ekspozuar"
+  EXPOSED_CUT_COPPER_STAIRS: "shkallët e ekspozuara të bakrit"
+  FARMLAND: "toka bujqësore"
+  FERN: "fier"
+  FIRE: "zjarr"
+  FIRE_CORAL: "fire coral"
+  FIRE_CORAL_BLOCK: "blloku i fire coral"
+  FIRE_CORAL_FAN: "fan fire coral"
+  FIRE_CORAL_WALL_FAN: "fan fire coral wall"
+  FLETCHING_TABLE: "tabela e fletëve"
+  FLOWER_POT: "vazo lulesh"
+  FLOWERING_AZALEA: "lulëzuar azalea"
+  FLOWERING_AZALEA_LEAVES: "lule lulëzojnë azalea"
+  FROGSPAWN: "pjellë bretkocë"
+  FROSTED_ICE: "akull i mbuluar me brymë"
+  FURNACE: "stofë"
+  GILDED_BLACKSTONE: "shkëmb i zi i artë"
+  GLASS: "xham"
+  GLASS_PANE: "xham"
+  GLOW_LICHEN: "\"lichen\" të ndritshëm"
+  GLOWSTONE: "gur ndriçues"
+  GOLD_BLOCK: "bllok i arit"
+  GOLD_ORE: "xehe ari"
+  GRANITE: "granit"
+  GRANITE_SLAB: "pllakë graniti"
+  GRANITE_STAIRS: "shkallët graniti"
+  GRANITE_WALL: "mur graniti"
+  GRASS: "bar"
+  GRASS_BLOCK: "bllok bari"
+  GRAVEL: "zall"
+  GRAY_BANNER: "flamur i hiret"
+  GRAY_BED: "shtrat i hirtë"
+  GRAY_CANDLE: "qiri gri"
+  GRAY_CANDLE_CAKE: "tortë me qiri gri"
+  GRAY_CARPET: "qilim gri"
+  GRAY_CONCRETE: "beton gri"
+  GRAY_CONCRETE_POWDER: "pluhur konkreti e hirtë"
+  GRAY_GLAZED_TERRACOTTA: "blanc glaze ttc"
+  GRAY_SHULKER_BOX: "kutia gri skuller"
+  GRAY_STAINED_GLASS: "qelq i hirtë"
+  GRAY_STAINED_GLASS_PANE: "xham i hirtë"
+  GRAY_TERRACOTTA: "terrakotë e hirtë"
+  GRAY_WOOL: "leshi gri"
+  GREEN_BANNER: "flamur i gjelbert"
+  GREEN_BED: "shtrat i gjelbër"
+  GREEN_CANDLE: "qiri i blertë"
+  GREEN_CANDLE_CAKE: "tortë me qiri jeshil"
+  GREEN_CARPET: "qilim jeshil"
+  GREEN_CONCRETE: "beton jeshil"
+  GREEN_CONCRETE_POWDER: "pluhur konkreti i gjelbër"
+  GREEN_GLAZED_TERRACOTTA: "xham terrakotee gjelbër"
+  GREEN_SHULKER_BOX: "kutia gri kudhër"
+  GREEN_STAINED_GLASS: "qelq jeshil"
+  GREEN_STAINED_GLASS_PANE: "xham jeshil"
+  GREEN_TERRACOTTA: "terrakotë jeshile"
+  GREEN_WOOL: "lesh i gjelbër"
+  GRINDSTONE: "grihë"
+  HANGING_ROOTS: "rrënjët e varura"
+  HAY_BLOCK: "tufë gruri"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "pesh e rende pllakë presioni"
+  HONEY_BLOCK: "bllok mjalti"
+  HONEYCOMB_BLOCK: "bllok hualli"
+  HOPPER: "hoper"
+  HORN_CORAL: "horn coral"
+  HORN_CORAL_BLOCK: "blloku i horn coral"
+  HORN_CORAL_FAN: "fan horn coral"
+  HORN_CORAL_WALL_FAN: "fan horn coral wall"
+  ICE: "akull"
+  INFESTED_CHISELED_STONE_BRICKS: "tulla të gërmuara të këputura"
+  INFESTED_COBBLESTONE: "kalldrëm i infektuar"
+  INFESTED_CRACKED_STONE_BRICKS: "tulla të gërmuara të infektuara"
+  INFESTED_DEEPSLATE: "i thellë i infektuar"
+  INFESTED_MOSSY_STONE_BRICKS: "tulla të mbushura me myk"
+  INFESTED_STONE: "gur i infektuar"
+  INFESTED_STONE_BRICKS: "tulla të infektuara me gurë"
+  IRON_BARS: "bar hekuri"
+  IRON_BLOCK: "bllok hekuri"
+  IRON_DOOR: "derë hekuri"
+  IRON_ORE: "xehe hekuri"
+  IRON_TRAPDOOR: "dera e kurthit të hekurit"
+  JACK_O_LANTERN: "kungull i ndriçuar"
+  JIGSAW: "puzzle-bllok"
+  JUKEBOX: "gramafon"
+  JUNGLE_BUTTON: "jungle buton"
+  JUNGLE_DOOR: "derë xhungle"
+  JUNGLE_FENCE: "gardh me dru xhungle"
+  JUNGLE_FENCE_GATE: "portë me dru xhungle"
+  JUNGLE_HANGING_SIGN: "shenjë e varur xhungle"
+  JUNGLE_LEAVES: "gjethe xhungle"
+  JUNGLE_LOG: "trung xhungle"
+  JUNGLE_PLANKS: "dërrasa xhungle"
+  JUNGLE_PRESSURE_PLATE: "jungle pllakë presioni"
+  JUNGLE_SAPLING: "fidan xhungle"
+  JUNGLE_SIGN: "shenjë lajmërimi prej drurit të xhungles"
+  JUNGLE_SLAB: "gjysëm lisi"
+  JUNGLE_STAIRS: "shkallë druri"
+  JUNGLE_TRAPDOOR: "trapdoor që jeton në xhungël"
+  JUNGLE_WALL_HANGING_SIGN: "shenja të varura në mur xhungle"
+  JUNGLE_WALL_SIGN: "shenjë lajmërimi prej drurit të xhugles"
+  JUNGLE_WOOD: "dru xhungle"
+  KELP: "leshterik"
+  KELP_PLANT: "bimë leshteriku"
+  LADDER: "shkallë"
+  LANTERN: "fanar"
+  LAPIS_BLOCK: "blloku i lapis lazuli"
+  LAPIS_ORE: "lapis lazuli xeheror"
+  LARGE_AMETHYST_BUD: "bud i madh ametist"
+  LARGE_FERN: "fier i gjerë"
+  LAVA: "llavë"
+  LAVA_CAULDRON: "kazan me llavë"
+  LECTERN: "pupitër"
+  LEVER: "levë"
+  LIGHT: "drita"
+  LIGHT_BLUE_BANNER: "flamur i kaltert i hapur"
+  LIGHT_BLUE_BED: "shtrat i kaltër i qeltë"
+  LIGHT_BLUE_CANDLE: "qiri bojëqielli"
+  LIGHT_BLUE_CANDLE_CAKE: "tortë me qiri blu të lehta"
+  LIGHT_BLUE_CARPET: "qilim të lehta blu"
+  LIGHT_BLUE_CONCRETE: "beton blu i celur"
+  LIGHT_BLUE_CONCRETE_POWDER: "pluhur konkreti i kaltër i qeltë"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "xham terrakote i kaltër e qeltë"
+  LIGHT_BLUE_SHULKER_BOX: "kutia blu të lehta skuller"
+  LIGHT_BLUE_STAINED_GLASS: "qelq bojëqielli"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "xham bojëqielli"
+  LIGHT_BLUE_TERRACOTTA: "terrakotë bojëqielli"
+  LIGHT_BLUE_WOOL: "i çelët leshi blu"
+  LIGHT_GRAY_BANNER: "flamur i hiret i hapur"
+  LIGHT_GRAY_BED: "shtrat i hirtë i qeltë"
+  LIGHT_GRAY_CANDLE: "qiri gri i lehtë"
+  LIGHT_GRAY_CANDLE_CAKE: "tortë me qiri gri të lehta"
+  LIGHT_GRAY_CARPET: "qilim gri të lehta"
+  LIGHT_GRAY_CONCRETE: "beton i gri e çelur"
+  LIGHT_GRAY_CONCRETE_POWDER: "pluhur konkreti e hirtë e qeltë"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "blanc me xham ttc"
+  LIGHT_GRAY_SHULKER_BOX: "kutia gri të lehta skuller"
+  LIGHT_GRAY_STAINED_GLASS: "qelq i hirtë e lehtë"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "xham i hirtë i lehtë"
+  LIGHT_GRAY_TERRACOTTA: "terrakotë e hirtë e lehtë"
+  LIGHT_GRAY_WOOL: "leshi gri e lehte"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "pesh e lhetë pllakë presioni"
+  LIGHTNING_ROD: "rrufepritës"
+  LILAC: "jargavan"
+  LILY_OF_THE_VALLEY: "zambakut të luginës"
+  LILY_PAD: "zambak uji"
+  LIME_BANNER: "flamur i gjelbert i hapur"
+  LIME_BED: "shtrat bliri"
+  LIME_CANDLE: "qiri jeshil"
+  LIME_CANDLE_CAKE: "tortë me qiri gëlqere"
+  LIME_CARPET: "qilim të gëlqeres"
+  LIME_CONCRETE: "beton jeshile e celur"
+  LIME_CONCRETE_POWDER: "pluhur konkreti i blirit"
+  LIME_GLAZED_TERRACOTTA: "xham terrakote bliri"
+  LIME_SHULKER_BOX: "kutia bli skuller"
+  LIME_STAINED_GLASS: "qelq jeshil i lehtë"
+  LIME_STAINED_GLASS_PANE: "xham jeshil i lehtë"
+  LIME_TERRACOTTA: "terrakotë jeshile e lehtë"
+  LIME_WOOL: "leshi i gëlqeres"
+  LODESTONE: "magnetit"
+  LOOM: "tezgjah"
+  MAGENTA_BANNER: "flamur magenta"
+  MAGENTA_BED: "shtrat magjente"
+  MAGENTA_CANDLE: "qiri i kuqe-purpur"
+  MAGENTA_CANDLE_CAKE: "tortë me qiri magenta"
+  MAGENTA_CARPET: "qilim magenta"
+  MAGENTA_CONCRETE: "konkret magjente"
+  MAGENTA_CONCRETE_POWDER: "pluhur konkreti magjente"
+  MAGENTA_GLAZED_TERRACOTTA: "xham terrakote magjenta"
+  MAGENTA_SHULKER_BOX: "kutia purpurtë skuller"
+  MAGENTA_STAINED_GLASS: "xham i purpurtë"
+  MAGENTA_STAINED_GLASS_PANE: "xham i purpurtë"
+  MAGENTA_TERRACOTTA: "terrakotë e purpurtë"
+  MAGENTA_WOOL: "lesh magenta"
+  MAGMA_BLOCK: "bllok magme"
+  MANGROVE_BUTTON: "butoni i mangrove"
+  MANGROVE_DOOR: "una puerta"
+  MANGROVE_FENCE: "gardh mangrove"
+  MANGROVE_FENCE_GATE: "porta e gardhit të mangrove"
+  MANGROVE_HANGING_SIGN: "shenjë e varur mangrove"
+  MANGROVE_LEAVES: "hola jugador"
+  MANGROVE_LOG: "mangrove log"
+  MANGROVE_PLANKS: "dërrasat e mangrove"
+  MANGROVE_PRESSURE_PLATE: "pllakë presioni mangrove"
+  MANGROVE_PROPAGULE: "mangrove propagule"
+  MANGROVE_ROOTS: "rrënjët e mangrove"
+  MANGROVE_SIGN: "shenja e mangrove"
+  MANGROVE_SLAB: "pllakë mangrove"
+  MANGROVE_STAIRS: "shkallët mangrove"
+  MANGROVE_TRAPDOOR: "mangrove trapdoor"
+  MANGROVE_WALL_HANGING_SIGN: "shenja të varura në mur mangrove"
+  MANGROVE_WALL_SIGN: "shenja e murit të mangrove"
+  MANGROVE_WOOD: "druri i mangrove"
+  MEDIUM_AMETHYST_BUD: "bud i mesëm ametist"
+  MELON: "pjepër"
+  MELON_STEM: "rrjedhi pjepri"
+  MOSS_BLOCK: "blloku i myshkut"
+  MOSS_CARPET: "qilim myshk"
+  MOSSY_COBBLESTONE: "gurë i myshkur"
+  MOSSY_COBBLESTONE_SLAB: "pllakë kalldrëmi mossy"
+  MOSSY_COBBLESTONE_STAIRS: "shkallët e kalldrëmit me myshqe"
+  MOSSY_COBBLESTONE_WALL: "mur kalldrëmi me myshk"
+  MOSSY_STONE_BRICK_SLAB: "pllaka e tullave mossy stone"
+  MOSSY_STONE_BRICK_STAIRS: "shkallët me tulla guri me myshqe"
+  MOSSY_STONE_BRICK_WALL: "mur guri myshkur"
+  MOSSY_STONE_BRICKS: "me myshk tulla të gurit"
+  MOVING_PISTON: "pistoni lëvizshëm"
+  MUD: "baltë"
+  MUD_BRICK_SLAB: "pllakë me tulla balte"
+  MUD_BRICK_STAIRS: "shkallët me tulla mangrove"
+  MUD_BRICK_WALL: "mur me tulla balte"
+  MUD_BRICKS: "tulla balte"
+  MUDDY_MANGROVE_ROOTS: "rrënjët me baltë të mangrove"
+  MUSHROOM_STEM: "rrënjë kerpurdhash"
+  MYCELIUM: "miceli"
+  NETHER_BRICK_FENCE: "gardh tullash e nether-it"
+  NETHER_BRICK_SLAB: "pllakë tullash e nether-it"
+  NETHER_BRICK_STAIRS: "shkallë tullash e nether-it"
+  NETHER_BRICK_WALL: "muri me tulla e nether-it"
+  NETHER_BRICKS: "tulla e nether-it"
+  NETHER_GOLD_ORE: "mineral ari i nether-it"
+  NETHER_PORTAL: "portal i nether-it"
+  NETHER_QUARTZ_ORE: "mineral kuarci i nether-it"
+  NETHER_SPROUTS: "bari nether-it"
+  NETHER_WART: "lythat e nether-it"
+  NETHER_WART_BLOCK: "blloku i lythave e nether-it"
+  NETHERITE_BLOCK: "bllok netheritit"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "shënim blloku"
+  OAK_BUTTON: "buton druri"
+  OAK_DOOR: "derë ahu"
+  OAK_FENCE: "gardh me dru lisi"
+  OAK_FENCE_GATE: "portë me dru lisi"
+  OAK_HANGING_SIGN: "shenjë e varur lisi"
+  OAK_LEAVES: "gjethe dushku"
+  OAK_LOG: "trung dushku"
+  OAK_PLANKS: "pllaka lisi"
+  OAK_PRESSURE_PLATE: "oak pllakë presioni"
+  OAK_SAPLING: "fidan ahu"
+  OAK_SIGN: "shenjë lajmërimi prej drurit"
+  OAK_SLAB: "gjysëm lisi"
+  OAK_STAIRS: "shkallë druri"
+  OAK_TRAPDOOR: "trungu i lisi"
+  OAK_WALL_HANGING_SIGN: "shenja të varura në mur lisi"
+  OAK_WALL_SIGN: "shenjë lajmërimi prej drurit"
+  OAK_WOOD: "dru dushku"
+  OBSERVER: "obzervues"
+  OBSIDIAN: "xham vullkanik"
+  OCHRE_FROGLIGHT: "drita e mjegullës okër"
+  OMINOUS_BANNER: "flamur ominus"
+  ORANGE_BANNER: "flamur i portokallet"
+  ORANGE_BED: "shtrat portokalli"
+  ORANGE_CANDLE: "qiri portokalli"
+  ORANGE_CANDLE_CAKE: "tortë me qirinj portokalli"
+  ORANGE_CARPET: "qilim portokalli"
+  ORANGE_CONCRETE: "beton portokall"
+  ORANGE_CONCRETE_POWDER: "pluhur konkreti portokalli"
+  ORANGE_GLAZED_TERRACOTTA: "portokalli terrakote"
+  ORANGE_SHULKER_BOX: "kutia portokall skuller"
+  ORANGE_STAINED_GLASS: "xham portokalli"
+  ORANGE_STAINED_GLASS_PANE: "xham portokalli"
+  ORANGE_TERRACOTTA: "terrakotë portokalli"
+  ORANGE_TULIP: "tulipan portokalli"
+  ORANGE_WOOL: "lesh portokalli"
+  OXEYE_DAISY: "luleshqerrë"
+  OXIDIZED_CHISELED_COPPER: "bakër i oksiduar i gdhendur"
+  OXIDIZED_COPPER: "bakri i oksiduar"
+  OXIDIZED_COPPER_BULB: "llambë bakri të oksiduar"
+  OXIDIZED_COPPER_DOOR: "derë prej bakri të oksiduar"
+  OXIDIZED_COPPER_GRATE: "hekura e bakrit të oksiduar"
+  OXIDIZED_COPPER_TRAPDOOR: "porta e bakrit të oksiduar"
+  OXIDIZED_CUT_COPPER: "bakri i prerë i oksiduar"
+  OXIDIZED_CUT_COPPER_SLAB: "pllakë bakri e oksiduar"
+  OXIDIZED_CUT_COPPER_STAIRS: "shkallët e bakrit të oksiduara"
+  PACKED_ICE: "akull i mbushur"
+  PACKED_MUD: "baltë e mbushur"
+  PEARLESCENT_FROGLIGHT: "foglight pearlescent"
+  PEONY: "bozhure"
+  PETRIFIED_OAK_SLAB: "petrified lisi pllakë"
+  PIGLIN_HEAD: "koka piglin\n"
+  PIGLIN_WALL_HEAD: "koka e murit piglin\n"
+  PINK_BANNER: "flamur i pembet"
+  PINK_BED: "shtrat rozë"
+  PINK_CANDLE: "qiri rozë"
+  PINK_CANDLE_CAKE: "tortë me qiri rozë"
+  PINK_CARPET: "qilim rozë"
+  PINK_CONCRETE: "beton rozë"
+  PINK_CONCRETE_POWDER: "pluhur konkreti rozë"
+  PINK_GLAZED_TERRACOTTA: "xham terrakote rozë"
+  PINK_PETALS: "petale të rozëta"
+  PINK_SHULKER_BOX: "kutia lule skuller"
+  PINK_STAINED_GLASS: "qelq rozë"
+  PINK_STAINED_GLASS_PANE: "xham rozë"
+  PINK_TERRACOTTA: "terrakotë rozë"
+  PINK_TULIP: "tulipan rozë"
+  PINK_WOOL: "leshi trëndafili"
+  PISTON: "piston"
+  PISTON_HEAD: "kokë pistoni"
+  PITCHER_CROP: "pitcher crop"
+  PITCHER_PLANT: "uzina e shtambës"
+  PLAYER_HEAD: "kreu i lojtarit"
+  PLAYER_HEAD_NAMED: "koka e %s"
+  PLAYER_WALL_HEAD: "lojtar muri i kokës"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "blloku i pikave me majë"
+  POLISHED_ANDESITE: "lëmuar andesite"
+  POLISHED_ANDESITE_SLAB: "pllakë andesite e lëmuar"
+  POLISHED_ANDESITE_STAIRS: "shkallët e lëmuar prej andesitit"
+  POLISHED_BASALT: "bazalti i lëmuar"
+  POLISHED_BLACKSTONE: "gur i zi"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "pllakë e lemuar të shkëmbit të zi"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "shkallët e lemuara të shkëmbit të zi"
+  POLISHED_BLACKSTONE_BRICK_WALL: "muri i lemuar të shkëmbit të zi"
+  POLISHED_BLACKSTONE_BRICKS: "shkëmb i lemuar"
+  POLISHED_BLACKSTONE_BUTTON: "buton i gurit të zi"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "pllakë presionit të gurit të zi"
+  POLISHED_BLACKSTONE_SLAB: "pllakë guri e zezë"
+  POLISHED_BLACKSTONE_STAIRS: "shkallët e gurit të zi"
+  POLISHED_BLACKSTONE_WALL: "muri i gurit të zi"
+  POLISHED_DEEPSLATE: "deepslate e lëmuar"
+  POLISHED_DEEPSLATE_SLAB: "pllakë e thellë e lëmuar"
+  POLISHED_DEEPSLATE_STAIRS: "shkallët e thella të lëmuara"
+  POLISHED_DEEPSLATE_WALL: "muri i thellë i lëmuar"
+  POLISHED_DIORITE: "lëmuar diorite"
+  POLISHED_DIORITE_SLAB: "pllakë diorite e lëmuar"
+  POLISHED_DIORITE_STAIRS: "shkallët e lëmuar prej dioritit"
+  POLISHED_GRANITE: "granit i lëmuar"
+  POLISHED_GRANITE_SLAB: "pllak e granitit të shtypur"
+  POLISHED_GRANITE_STAIRS: "shkallët e lëmuar prej granitit"
+  POLISHED_TUFF: "shtuf i lëmuar"
+  POLISHED_TUFF_SLAB: "pllakë shtufi e lëmuar"
+  POLISHED_TUFF_STAIRS: "shkallët shtufi të lëmuara"
+  POLISHED_TUFF_WALL: "mur shtufi i lëmuar"
+  POPPY: "lulekuqe"
+  POTATOES: "patate"
+  POTTED_ACACIA_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_ALLIUM: "allium në vazo"
+  POTTED_AZALEA_BUSH: "azalea në vazo"
+  POTTED_AZURE_BLUET: "potted azure bluet"
+  POTTED_BAMBOO: "bambuja në vazo"
+  POTTED_BIRCH_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_BLUE_ORCHID: "orkide me vazo të kaltër"
+  POTTED_BROWN_MUSHROOM: "kërpudha me vazo të zezë"
+  POTTED_CACTUS: "kaktus në vazo"
+  POTTED_CHERRY_SAPLING: "fidan vishnje në vazo"
+  POTTED_CORNFLOWER: "kokoçeli ngjyrë qielli në vazo"
+  POTTED_CRIMSON_FUNGUS: "kërpurdhë e kuqërremtë në vazo"
+  POTTED_CRIMSON_ROOTS: "rrënjë të kuqërremta në vazo"
+  POTTED_DANDELION: "luleradhi në vazo"
+  POTTED_DARK_OAK_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_DEAD_BUSH: "bush i vdekur në vazo"
+  POTTED_FERN: "fern në vazo"
+  POTTED_FLOWERING_AZALEA_BUSH: "azalea e lulëzuar në vazo"
+  POTTED_JUNGLE_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_LILY_OF_THE_VALLEY: "zambakut të luginës në vazo"
+  POTTED_MANGROVE_PROPAGULE: "propagule mangrove në vazo"
+  POTTED_OAK_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_ORANGE_TULIP: "tulipani me vazo të zezë"
+  POTTED_OXEYE_DAISY: "pjekur oxeye daisy"
+  POTTED_PINK_TULIP: "tulipani me vazo në vazo"
+  POTTED_POPPY: "poppy në vazo"
+  POTTED_RED_MUSHROOM: "mushroom kuqe në vazo"
+  POTTED_RED_TULIP: "tulipani i kuq në vazo"
+  POTTED_SPRUCE_SAPLING: "pemë e lyer me liri në vazo"
+  POTTED_TORCHFLOWER: "lulepishtari në vegsh"
+  POTTED_WARPED_FUNGUS: "kërpudhë e deformuar në vazo"
+  POTTED_WARPED_ROOTS: "rrënjë të deformuara në vazo"
+  POTTED_WHITE_TULIP: "tulipani i bardhë në vazo"
+  POTTED_WITHER_ROSE: "trëndafil i wither-it në vazo"
+  POWDER_SNOW: "borë pluhur"
+  POWDER_SNOW_CAULDRON: "kazan me dëborë pluhur"
+  POWERED_RAIL: "shina elektrike"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "gjysëm prismarine guri"
+  PRISMARINE_BRICK_STAIRS: "prismarine tullë shkallë"
+  PRISMARINE_BRICKS: "tulla prismarine"
+  PRISMARINE_SLAB: "gjysëm prismarine"
+  PRISMARINE_STAIRS: "prismarine shkallë"
+  PRISMARINE_WALL: "mur prizmarine"
+  PUMPKIN: "kungull"
+  PUMPKIN_STEM: "bisht kungulli"
+  PURPLE_BANNER: "flamur i jargovant"
+  PURPLE_BED: "shtrat vjollcë"
+  PURPLE_CANDLE: "qiri i purpurt"
+  PURPLE_CANDLE_CAKE: "torte me qiri vjollce"
+  PURPLE_CARPET: "qilim purpur"
+  PURPLE_CONCRETE: "beton lejla"
+  PURPLE_CONCRETE_POWDER: "pluhur konkreti vjollcë"
+  PURPLE_GLAZED_TERRACOTTA: "portokalli me xham terrakote"
+  PURPLE_SHULKER_BOX: "kutia vjollcë skuller"
+  PURPLE_STAINED_GLASS: "qelq vjollcë"
+  PURPLE_STAINED_GLASS_PANE: "xham vjollcë"
+  PURPLE_TERRACOTTA: "terracottë vjollcë"
+  PURPLE_WOOL: "leshi purpur"
+  PURPUR_BLOCK: "bllok vjollcë"
+  PURPUR_PILLAR: "shtyllë vjollcë"
+  PURPUR_SLAB: "vjollcë pllakë"
+  PURPUR_STAIRS: "shkallët vjollcës"
+  QUARTZ_BLOCK: "kuarcit blloku"
+  QUARTZ_BRICKS: "tulla kuarcit"
+  QUARTZ_PILLAR: "shtylla kuarc"
+  QUARTZ_SLAB: "pllakë kuarci"
+  QUARTZ_STAIRS: "kuarcit shkallë"
+  RAIL: "shina"
+  RAW_COPPER_BLOCK: "blloku i bakrit të papërpunuar"
+  RAW_GOLD_BLOCK: "blloku i arit të papërpunuar"
+  RAW_IRON_BLOCK: "bllok hekuri të papërpunuar"
+  RED_BANNER: "flamur i kuq"
+  RED_BED: "shtrat i kuq"
+  RED_CANDLE: "qiri i kuq"
+  RED_CANDLE_CAKE: "tortë me qiri të kuq"
+  RED_CARPET: "qilim i kuq"
+  RED_CONCRETE: "beton i kuq"
+  RED_CONCRETE_POWDER: "pluhur konkreti i kuq"
+  RED_GLAZED_TERRACOTTA: "xham terrakote e kuqe"
+  RED_MUSHROOM: "kërpudhë e kuqe"
+  RED_MUSHROOM_BLOCK: "bllok i kerpurdhës kuqe"
+  RED_NETHER_BRICK_SLAB: "pllakë tullash të kuqe e nether-it"
+  RED_NETHER_BRICK_STAIRS: "shkallët me tulla të kuqe prej nether-it"
+  RED_NETHER_BRICK_WALL: "muri me tulla të kuqe e nether-it"
+  RED_NETHER_BRICKS: "tulla të kuqe e nether-it"
+  RED_SAND: "rërë e kuqe"
+  RED_SANDSTONE: "gur rëre e kuqe"
+  RED_SANDSTONE_SLAB: "pllakë e gurit të rërës së kuqe"
+  RED_SANDSTONE_STAIRS: "shkallët e rrëkimit të kuq"
+  RED_SANDSTONE_WALL: "mur guri të rërës së kuqe"
+  RED_SHULKER_BOX: "kutia cyan kudhër"
+  RED_STAINED_GLASS: "qelq i kuq"
+  RED_STAINED_GLASS_PANE: "xham i kuq"
+  RED_TERRACOTTA: "kuqe terrakote"
+  RED_TULIP: "tulipan i kuq"
+  RED_WOOL: "lesh i kuqë"
+  REDSTONE_BLOCK: "bllok gurkuqi"
+  REDSTONE_LAMP: "llambë gurkuqi"
+  REDSTONE_ORE: "xeheror gurkuqi"
+  REDSTONE_TORCH: "pishtar gurkuqi"
+  REDSTONE_WALL_TORCH: "pishtar gurëkuqi muri"
+  REDSTONE_WIRE: "tel prej redstone"
+  REINFORCED_DEEPSLATE: "pllakë e thellë e përforcuar"
+  REPEATER: "përsëritës gurëkuqi"
+  REPEATING_COMMAND_BLOCK: "blloku i komadave qe përsëritet"
+  RESPAWN_ANCHOR: "spiranca e ringjalljes"
+  ROOTED_DIRT: "pista e rrënjosur"
+  ROSE_BUSH: "shkurre trëndafili"
+  SAND: "rërë"
+  SANDSTONE: "gur rëre"
+  SANDSTONE_SLAB: "pllakë e gurit të rërës"
+  SANDSTONE_STAIRS: "shkallët ranore"
+  SANDSTONE_WALL: "murr guri rëre"
+  SCAFFOLDING: "skeleri"
+  SCULK: "skalk"
+  SCULK_CATALYST: "katalizator skalk"
+  SCULK_SENSOR: "sensor skulku"
+  SCULK_SHRIEKER: "skulk screamer"
+  SCULK_VEIN: "sculk veshje"
+  SEA_LANTERN: "det fanar"
+  SEA_PICKLE: "turshi deti"
+  SEAGRASS: "bar deti"
+  SET_SPAWN: "pika e ringjalljes u vendos"
+  SHORT_GRASS: "bari i shkurtër"
+  SHROOMLIGHT: "kerpudhë e shndritshme"
+  SHULKER_BOX: "kutia kudhër"
+  SKELETON_SKULL: "kafkë skeleti"
+  SKELETON_WALL_SKULL: "kafkë muri skelet"
+  SLIME_BLOCK: "llucë blloku"
+  SMALL_AMETHYST_BUD: "bud i vogël ametisti"
+  SMALL_DRIPLEAF: "pikëz i vogël"
+  SMITHING_TABLE: "tabela e fletëve"
+  SMOKER: "bllok tymosje"
+  SMOOTH_BASALT: "bazalt i butë"
+  SMOOTH_QUARTZ: "bllok kuarci të lëmuar"
+  SMOOTH_QUARTZ_SLAB: "pllakë e butë kuarci"
+  SMOOTH_QUARTZ_STAIRS: "shkallët e lëmuara prej kuarcit"
+  SMOOTH_RED_SANDSTONE: "gur rëre e kuqe e lëmuar"
+  SMOOTH_RED_SANDSTONE_SLAB: "pllak e lëmuar e gurit rënor të kuq"
+  SMOOTH_RED_SANDSTONE_STAIRS: "shkallët e lëmuara prej rërës së kuqe"
+  SMOOTH_SANDSTONE: "gur rëre e lëmuar"
+  SMOOTH_SANDSTONE_SLAB: "pllakë e butë ranor"
+  SMOOTH_SANDSTONE_STAIRS: "shkallët e lëmuara prej rërës"
+  SMOOTH_STONE: "gurë i lëmuar"
+  SMOOTH_STONE_SLAB: "pllakë guri e lëmuar"
+  SNIFFER_EGG: "vezë nuhatëse"
+  SNOW: "borë"
+  SNOW_BLOCK: "bllok dëbore"
+  SOUL_CAMPFIRE: "zjarr kampi i shpirtrave"
+  SOUL_FIRE: "zjarri i shpirtit"
+  SOUL_LANTERN: "fanar i shpirtrave"
+  SOUL_SAND: "rërë shpirti"
+  SOUL_SOIL: "tokë e shpirtrave"
+  SOUL_TORCH: "pishtar i shpirtrave"
+  SOUL_WALL_TORCH: "pishtari i shpirtrave murale"
+  SPAWN_NOT_VALID: "ju nuk keni shtrat ose spirancë të mbushur ose ato janë të penguara"
+  SPAWNER: "shfaqës i monstrës"
+  SPAWNER_DESC1: "ndërvepro me vezën e shfaqur:"
+  SPAWNER_DESC2: "vendos tipin e mob-it"
+  SPONGE: "sfungjer"
+  SPORE_BLOSSOM: "lule spore"
+  SPRUCE_BUTTON: "spurce buton\n"
+  SPRUCE_DOOR: "derë bredhi"
+  SPRUCE_FENCE: "gardh me dru bredhi"
+  SPRUCE_FENCE_GATE: "portë me dru bredhi"
+  SPRUCE_HANGING_SIGN: "shenjë e varur bredhi"
+  SPRUCE_LEAVES: "gjethe bredhi"
+  SPRUCE_LOG: "trung bredhi"
+  SPRUCE_PLANKS: "dërrasa bredhi"
+  SPRUCE_PRESSURE_PLATE: "spruce pllakë presioni"
+  SPRUCE_SAPLING: "fidan bredhi"
+  SPRUCE_SIGN: "shenjë lajmërimi prej drurit të bredhit"
+  SPRUCE_SLAB: "gjysëm lisi"
+  SPRUCE_STAIRS: "shkallë druri"
+  SPRUCE_TRAPDOOR: "barku i bredhit"
+  SPRUCE_WALL_HANGING_SIGN: "shenjat e varura në mur thupëri"
+  SPRUCE_WALL_SIGN: "shenjë lajmërimi prej drurit të bredhit"
+  SPRUCE_WOOD: "dru bredhi"
+  STICKY_PISTON: "ngjitës piston"
+  STONE: "gur"
+  STONE_BRICK_SLAB: "gjysëm tullë guri"
+  STONE_BRICK_STAIRS: "shkallët me tulla guri"
+  STONE_BRICK_WALL: "mur guri tullë"
+  STONE_BRICKS: "tulla të gurit"
+  STONE_BUTTON: "buton guri"
+  STONE_PRESSURE_PLATE: "pllakë e presionit të gurit"
+  STONE_SLAB: "pllakë e gurit"
+  STONE_STAIRS: "shkallët guri"
+  STONECUTTER: "gurgdhendës"
+  STRIPPED_ACACIA_LOG: "trung akacie i zhveshur"
+  STRIPPED_ACACIA_WOOD: "dru i zhveshur i akacies"
+  STRIPPED_BAMBOO_BLOCK: "blloku i bambusë së zhveshur\n"
+  STRIPPED_BIRCH_LOG: "trung mështekre i zhveshur"
+  STRIPPED_BIRCH_WOOD: "dru mështekre i zhveshur"
+  STRIPPED_CHERRY_LOG: "regjistri i zhveshur i qershisë"
+  STRIPPED_CHERRY_WOOD: "druri i qershisë i zhveshur"
+  STRIPPED_CRIMSON_HYPHAE: "hife të kuqërremta pa lëvore"
+  STRIPPED_CRIMSON_STEM: "kërcell i kuqërremtë pa lëvore"
+  STRIPPED_DARK_OAK_LOG: "trung i dushkut të errët i zhveshur"
+  STRIPPED_DARK_OAK_WOOD: "dru i dushkut të errët i zhveshur"
+  STRIPPED_JUNGLE_LOG: "trung xhungle i zhveshur"
+  STRIPPED_JUNGLE_WOOD: "dru xhungle i zhveshur"
+  STRIPPED_MANGROVE_LOG: "regjistri i zhveshur i mangrove"
+  STRIPPED_MANGROVE_WOOD: "druri i zhveshur i mangrove"
+  STRIPPED_OAK_LOG: "trung dushku i zhveshur"
+  STRIPPED_OAK_WOOD: "dru dushku i zhveshur"
+  STRIPPED_SPRUCE_LOG: "trung bredhi i zhveshur"
+  STRIPPED_SPRUCE_WOOD: "dru bredhi i zhveshur"
+  STRIPPED_WARPED_HYPHAE: "hife të deformuara pa lëvore"
+  STRIPPED_WARPED_STEM: "kërcell i deformuar pa lëvore"
+  STRUCTURE_BLOCK: "bllok strukture"
+  STRUCTURE_VOID: "strukturë boshe"
+  SUGAR_CANE: "kallam sheqeri"
+  SUNFLOWER: "luledielli"
+  SUSPICIOUS_GRAVEL: "zhavorr i dyshimtë"
+  SUSPICIOUS_SAND: "rërë e dyshimtë"
+  SWEET_BERRY_BUSH: "sweet berry bush"
+  TALL_GRASS: "bar i gjatë"
+  TALL_SEAGRASS: "bar deti i gjatë"
+  TARGET: "shënjestër"
+  TERRACOTTA: "terrakotë"
+  TINTED_GLASS: "xhami i lyer"
+  TNT: "dinamit"
+  TORCH: "pishtar"
+  TORCHFLOWER: "lulepishtar"
+  TORCHFLOWER_CROP: "bimë lulepishtari"
+  TRAPPED_CHEST: "bllokuar sënduk"
+  TRIAL_SPAWNER: "prodhuesi i vezëve"
+  TRIPWIRE: "penjë"
+  TRIPWIRE_HOOK: "mbajtëse penje"
+  TUBE_CORAL: "tube coral"
+  TUBE_CORAL_BLOCK: "blloku i dead tube coral"
+  TUBE_CORAL_FAN: "fan tube coral"
+  TUBE_CORAL_WALL_FAN: "fan tube coral wall"
+  TUFF: "shtuf"
+  TUFF_BRICK_SLAB: "trial spawner"
+  TUFF_BRICK_STAIRS: "shkallët e tullave shtufi"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "vezë breshkë"
+  TWISTING_VINES: "hardhi të përdredhura"
+  TWISTING_VINES_PLANT: "bima e hardhive të përdredhura"
+  VERDANT_FROGLIGHT: "dritë e gjelbëruar froglight"
+  VINE: "hardhi"
+  VOID_AIR: "ajër voidi"
+  WALL_TORCH: "pishtar muri"
+  WARPED_BUTTON: "buton i deformuar"
+  WARPED_DOOR: "derë e deformuar"
+  WARPED_FENCE: "gardh i deformuar"
+  WARPED_FENCE_GATE: "derë gardhi e deformuar"
+  WARPED_FUNGUS: "kërpudh e deformuar"
+  WARPED_HANGING_SIGN: "shenjë e varur e deformuar"
+  WARPED_HYPHAE: "hife të deformuara"
+  WARPED_NYLIUM: "nilium i deformuar"
+  WARPED_PLANKS: "dërrasë të deformuara"
+  WARPED_PRESSURE_PLATE: "pllakë presionit e deformuar"
+  WARPED_ROOTS: "rrënjë të deformuara"
+  WARPED_SIGN: "tabelë e deformuar"
+  WARPED_SLAB: "pllakë e deformuar"
+  WARPED_STAIRS: "shkallët e deformuara"
+  WARPED_STEM: "kërcell i deformuar"
+  WARPED_TRAPDOOR: "derë kurthi e deformuar"
+  WARPED_WALL_HANGING_SIGN: "shenja të varura në mur i deformuar"
+  WARPED_WALL_SIGN: "tabelë muri e deformuar"
+  WARPED_WART_BLOCK: "bllok i lythave të deformuara"
+  WATER: "ujë"
+  WATER_CAULDRON: "kazan me ujë"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "bllokuar me dylli të bakrit"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "bakri i prerë me dylli"
+  WAXED_CUT_COPPER_SLAB: "waxed cut copper slab"
+  WAXED_CUT_COPPER_STAIRS: "shkallët e bakrit të prera me dylli"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "bakri i ekspozuar me dylli"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "bakri i prerë i ekspozuar me dylli"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "pllakë bakri e ekspozuar"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "shkallët e bakrit të ekspozuara të depiluara"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "bakri i oksiduar me dylli"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "bakër i oksiduar me dylli"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "pllakë bakri e oksiduar e depiluar"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "shkallët e bakrit të oksiduara të depiluara"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "bakër i depiluar me mot"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "bakri i prerë me mot të depiluar"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "pllakë bakri e prerë me dylli"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "shkallët e bakrit të prera të depiluara"
+  WEATHERED_CHISELED_COPPER: "bakër i gërmuar i gërryer"
+  WEATHERED_COPPER: "bakër i tejkaluar"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "gdhenjde bakri e ndryshkur"
+  WEATHERED_CUT_COPPER_SLAB: "pllakë bakri e prerë me mot"
+  WEATHERED_CUT_COPPER_STAIRS: "shkallët e prera të bakrit të motit"
+  WEEPING_VINES: "hardhi qarëse"
+  WEEPING_VINES_PLANT: "bima e hardhive qarëse"
+  WET_SPONGE: "sfungjer i lagur"
+  WHEAT: "korrje gruri"
+  WHITE_BANNER: "flamur i bardhë"
+  WHITE_BED: "shtrat i bardhë"
+  WHITE_CANDLE: "qiri i bardhë"
+  WHITE_CANDLE_CAKE: "tortë me qiri të bardhë"
+  WHITE_CARPET: "qilim të bardhë"
+  WHITE_CONCRETE: "beton i bardhë"
+  WHITE_CONCRETE_POWDER: "pluhur konkreti i bardhë"
+  WHITE_GLAZED_TERRACOTTA: "blanc glaze ttc"
+  WHITE_SHULKER_BOX: "kutia bardhë skuller"
+  WHITE_STAINED_GLASS: "xham i bardhë"
+  WHITE_STAINED_GLASS_PANE: "xham i bardhë"
+  WHITE_TERRACOTTA: "terrakota të bardhë"
+  WHITE_TULIP: "tulipan i bardhë"
+  WHITE_WOOL: "lesh i bardhe"
+  WITHER_ROSE: "trëndafil i wither-it"
+  WITHER_SKELETON_SKULL: "kafkë skeleti wither"
+  WITHER_SKELETON_WALL_SKULL: "thahen kafkën e murit të skeletit"
+  YELLOW_BANNER: "flamur i verdhe"
+  YELLOW_BED: "shtrat i verdhë"
+  YELLOW_CANDLE: "qiri i verdhë"
+  YELLOW_CANDLE_CAKE: "tortë me qiri të verdhë"
+  YELLOW_CARPET: "qilim të verdhë"
+  YELLOW_CONCRETE: "beton i verdhë"
+  YELLOW_CONCRETE_POWDER: "pluhur konkreti e verdhë"
+  YELLOW_GLAZED_TERRACOTTA: "xham terrakote e verdhë"
+  YELLOW_SHULKER_BOX: "kutia verdhe skuller"
+  YELLOW_STAINED_GLASS: "qelq i verdhë"
+  YELLOW_STAINED_GLASS_PANE: "xham i verdhë"
+  YELLOW_TERRACOTTA: "terrakotë e verdhë"
+  YELLOW_WOOL: "leshi i verdhë"
+  ZOMBIE_HEAD: "kokë zombie"
+  ZOMBIE_WALL_HEAD: "kokë mur zombie"
+  ACACIA_BOAT: "anije akacie"
+  ACACIA_CHEST_BOAT: "varkë akacie me gjoks"
+  ALLAY_SPAWN_EGG: "veza leshimi allay"
+  AMETHYST_SHARD: "copëz ametisti"
+  ANGLER_POTTERY_SHARD: "tharje qeramike e peshkatarit"
+  ANGLER_POTTERY_SHERD: "angler qeramikë copë"
+  APPLE: "mollë"
+  ARCHER_POTTERY_SHARD: "archer qeramika"
+  ARCHER_POTTERY_SHERD: "archer pottery copë"
+  ARMOR_STAND: "mbajtëse armature"
+  ARMS_UP_POTTERY_SHARD: "armët up copë poçeri"
+  ARMS_UP_POTTERY_SHERD: "armët up pottery copë"
+  ARROW: "shigjetë"
+  AXOLOTL_BUCKET: "kove"
+  AXOLOTL_SPAWN_EGG: "veza lëshimi axolotl-i"
+  BAKED_POTATO: "patate e pjekur"
+  BAMBOO_CHEST_RAFT: "vark bambuje me thesar"
+  BAMBOO_RAFT: "vark bambuje"
+  BAT_SPAWN_EGG: "vezë lëshimi të lakuriq nate"
+  BEE_SPAWN_EGG: "vezë thirrëse bletësh"
+  BEEF: "mish lope i pazier"
+  BEETROOT: "panxhar"
+  BEETROOT_SEEDS: "fara panxhari"
+  BEETROOT_SOUP: "supë panxhari"
+  BIRCH_BOAT: "anije e bardhë"
+  BIRCH_CHEST_BOAT: "varkë thupër me gjoks"
+  BLACK_DYE: "ngjyra e zezë"
+  BLADE_POTTERY_SHARD: "copë qeramike me shpatë"
+  BLADE_POTTERY_SHERD: "teh qeramike copë"
+  BLAZE_POWDER: "pluhur blaze-i"
+  BLAZE_ROD: "shkop i blaze-it"
+  BLAZE_SPAWN_EGG: "vezë lëshimi të blaze-it"
+  BLUE_DYE: "ngjyra e kaltër"
+  BONE: "kockë"
+  BONE_MEAL: "kocka të shtypura"
+  BOOK: "libër"
+  BOW: "hark"
+  BOWL: "tas"
+  BREAD: "bukë"
+  BREEZE_SPAWN_EGG: "veza e pjelljes së flladit"
+  BREWER_POTTERY_SHARD: "fragmenti i qeramikës së birrës"
+  BREWER_POTTERY_SHERD: "pjesë qeramike e birrës"
+  BRICK: "tullë"
+  BROWN_DYE: "ngjyra e kaftë"
+  BRUSH: "furçë"
+  BUCKET: "kovë"
+  BUNDLE: "paketë"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "djegia e copëzave të qeramikës"
+  BURN_POTTERY_SHERD: "djeg copë qeramike"
+  CAMEL_SPAWN_EGG: "veza lëshimi së devesë"
+  CARROT: "karrotë"
+  CARROT_ON_A_STICK: "karrot në shkop"
+  CAT_SPAWN_EGG: "vezë lëshimi macesh"
+  CAVE_SPIDER_SPAWN_EGG: "vezë lëshimi merimange"
+  CHAINMAIL_BOOTS: "çizme zinxhiri"
+  CHAINMAIL_CHESTPLATE: "parzmore zinxhiri"
+  CHAINMAIL_HELMET: "helmetë zinxhiri"
+  CHAINMAIL_LEGGINGS: "dollakë zinxhiri"
+  CHARCOAL: "qymyr"
+  CHERRY_BOAT: "varkë qershie"
+  CHERRY_CHEST_BOAT: "varkë qeshie me arkë"
+  CHEST_MINECART: "karrocë me arkë"
+  CHICKEN: "pulë e pazier"
+  CHICKEN_SPAWN_EGG: "vezë lëshimi pule"
+  CHORUS_FRUIT: "frut i mallkuar"
+  CLAY_BALL: "copë argjile"
+  CLOCK: "orë"
+  COAL: "qymyrgur"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  COCOA_BEANS: "fasule kakao"
+  COD: "peshk i papërpunuar"
+  COD_BUCKET: "kovë me merluc"
+  COD_SPAWN_EGG: "vezë lëshimi së merlucit"
+  COMMAND_BLOCK_MINECART: "karrocë me bllok komandave"
+  COMPASS: "busull"
+  COOKED_BEEF: "biftek"
+  COOKED_CHICKEN: "pulë e zierrë"
+  COOKED_COD: "peshk i gatuar"
+  COOKED_MUTTON: "mish dele i zier"
+  COOKED_PORKCHOP: "mish derri i zierrë"
+  COOKED_RABBIT: "mish lepuri i zier"
+  COOKED_SALMON: "salmon i gatuar"
+  COOKIE: "biskotë"
+  COPPER_INGOT: "shufër bakri"
+  COW_SPAWN_EGG: "vezë lëshimi lope"
+  CREEPER_BANNER_PATTERN: "model flamuri"
+  CREEPER_BANNER_PATTERN_DESC: "creeper-i karikuar"
+  CREEPER_SPAWN_EGG: "vezë lëshimi së creeper-it"
+  CROSSBOW: "hark"
+  CROSSBOW_PROJECTILE: "projektues:"
+  CYAN_DYE: "bojë qielli"
+  DANGER_POTTERY_SHARD: "tharje qeramike e rrezikut"
+  DANGER_POTTERY_SHERD: "rreziku i qeramikës"
+  DARK_OAK_BOAT: "anije me dru të zi"
+  DARK_OAK_CHEST_BOAT: "varkë lisi e errët me gjoks"
+  DEBUG_STICK: "shkop debug-ut"
+  DEBUG_STICK_EMPTY: "%s nuk ka prona"
+  DEBUG_STICK_SELECT: "i zgjedhur \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" në %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "sëpatë diamanti"
+  DIAMOND_BOOTS: "çizme diamanti"
+  DIAMOND_CHESTPLATE: "parzmore diamanti"
+  DIAMOND_HELMET: "helmetë diamanti"
+  DIAMOND_HOE: "shat diamanti"
+  DIAMOND_HORSE_ARMOR: "armaturë diamanti për kuajt"
+  DIAMOND_LEGGINGS: "dollakë diamanti"
+  DIAMOND_PICKAXE: "kazmë diamanti"
+  DIAMOND_SHOVEL: "lopatë diamanti"
+  DIAMOND_SWORD: "shpatë diamanti"
+  DISC_FRAGMENT_5: "fragment disku"
+  DISC_FRAGMENT_5_DESC: "disku muzikor-5"
+  DOLPHIN_SPAWN_EGG: "vezë lëshimi delfini"
+  DONKEY_SPAWN_EGG: "vezë lëshimi gomari"
+  DRAGON_BREATH: "frymë dragoi"
+  DRIED_KELP: "leshterik i thatë"
+  DROWNED_SPAWN_EGG: "vezë lëshimi së drowned-it"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  ECHO_SHARD: "fragment jehone"
+  EGG: "vezë"
+  ELDER_GUARDIAN_SPAWN_EGG: "vezë lëshimi së rojes elder-i"
+  ELYTRA: "krah fluturimi"
+  EMERALD: "smerald"
+  ENCHANTED_BOOK: "libër i magjepsur"
+  ENCHANTED_GOLDEN_APPLE: "mollë e artë e magjepsur"
+  END_CRYSTAL: "kristal end-i"
+  ENDER_DRAGON_SPAWN_EGG: "veza e lënjes së dragoi i end-it"
+  ENDER_EYE: "sy ender-i"
+  ENDER_PEARL: "perlë ender-i"
+  ENDERMAN_SPAWN_EGG: "vezë lëshimi së enderman-it"
+  ENDERMITE_SPAWN_EGG: "vezë lëshimi së miut të end-it"
+  EVOKER_SPAWN_EGG: "vezë lëshimi së evoker-it"
+  EXPERIENCE_BOTTLE: "shishe e magjepsur"
+  EXPLORER_POTTERY_SHARD: "eksploruesi i qeramikës copë"
+  EXPLORER_POTTERY_SHERD: "eksploruesi i qeramikës copë"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  FEATHER: "pendë"
+  FERMENTED_SPIDER_EYE: "sy merimange i thartuar"
+  FILLED_MAP: "hartë"
+  FIRE_CHARGE: "karikim zjarri"
+  FIREWORK_ROCKET: "fikshezjarre"
+  FIREWORK_ROCKET_FLIGHT: "koha e fluturimit:"
+  FIREWORK_STAR: "yll fishekzjarresh"
+  FIREWORK_STAR_BLACK: "e zezë"
+  FIREWORK_STAR_BLUE: "blu"
+  FIREWORK_STAR_BROWN: "kafe"
+  FIREWORK_STAR_CUSTOM_COLOR: "e rregulluar"
+  FIREWORK_STAR_CYAN: "bojqelli"
+  FIREWORK_STAR_FADE_TO: "zhduket në"
+  FIREWORK_STAR_FLICKER: "xixëllon"
+  FIREWORK_STAR_GRAY: "hiri"
+  FIREWORK_STAR_GREEN: "jeshile"
+  FIREWORK_STAR_LIGHT_BLUE: "kaltër e qelt"
+  FIREWORK_STAR_LIGHT_GRAY: "gri e hapur"
+  FIREWORK_STAR_LIME: "e gjelbërt e qelët"
+  FIREWORK_STAR_MAGENTA: "violetë"
+  FIREWORK_STAR_ORANGE: "portokalli"
+  FIREWORK_STAR_PINK: "pembe"
+  FIREWORK_STAR_PURPLE: "lejla"
+  FIREWORK_STAR_RED: "e kuqë"
+  FIREWORK_STAR_SHAPE: "formë e panjohur"
+  FIREWORK_STAR_SHAPE_BURST: "shpërthen"
+  FIREWORK_STAR_SHAPE_CREEPER: "formë creeper-i"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "top i madh"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "top i vogël"
+  FIREWORK_STAR_SHAPE_STAR: "në formë ylli"
+  FIREWORK_STAR_TRAIL: "shteg"
+  FIREWORK_STAR_WHITE: "bardhë"
+  FIREWORK_STAR_YELLOW: "verdhë"
+  FISHING_ROD: "grep peshkimi"
+  FLINT: "strall"
+  FLINT_AND_STEEL: "strall dhe hekur"
+  FLOWER_BANNER_PATTERN: "flamur i modeluar"
+  FLOWER_BANNER_PATTERN_DESC: "lule e karikuar"
+  FOX_SPAWN_EGG: "vezë pjellore e dhelprave"
+  FRIEND_POTTERY_SHARD: "shoku i qeramikës"
+  FRIEND_POTTERY_SHERD: "shoku i qeramikës"
+  FROG_SPAWN_EGG: "veza e leshimit te bretkoses"
+  FURNACE_MINECART: "karrocë me stofë"
+  GHAST_SPAWN_EGG: "vezë lëshimi së ghast-it"
+  GHAST_TEAR: "lot ghast-i"
+  GLASS_BOTTLE: "shishe xhami"
+  GLISTERING_MELON_SLICE: "fetë shalqiri i ndryshëm"
+  GLOBE_BANNER_PATTERN: "flamur i modeluar"
+  GLOBE_BANNER_PATTERN_DESC: "glob"
+  GLOW_BERRIES: "manaferrat me shkëlqim"
+  GLOW_INK_SAC: "thes me bojë të ndritshëm"
+  GLOW_ITEM_FRAME: "korniza e sendit të ndritshëm"
+  GLOW_SQUID_SPAWN_EGG: "vezë lëshimi së kallamarit shkëlqyes"
+  GLOWSTONE_DUST: "pluhur guri të ndritshëm"
+  GOAT_HORN: "briri i dhisë"
+  GOAT_SPAWN_EGG: "vezë lëshimi të dhisë"
+  GOLD_INGOT: "shufër ari"
+  GOLD_NUGGET: "grimcë ari"
+  GOLDEN_APPLE: "mollë e artë"
+  GOLDEN_AXE: "sëpatë e artë"
+  GOLDEN_BOOTS: "çizme të arta"
+  GOLDEN_CARROT: "karrotë e artë"
+  GOLDEN_CHESTPLATE: "parzmore e artë"
+  GOLDEN_HELMET: "helmetë e artë"
+  GOLDEN_HOE: "shat e artë"
+  GOLDEN_HORSE_ARMOR: "armaturë e artë për kuaj"
+  GOLDEN_LEGGINGS: "dollakë të artë"
+  GOLDEN_PICKAXE: "kazmë ari"
+  GOLDEN_SHOVEL: "lopatë ari"
+  GOLDEN_SWORD: "shpatë e artë"
+  GRAY_DYE: "bojë hiri"
+  GREEN_DYE: "ngjyra e gjelbër"
+  GUARDIAN_SPAWN_EGG: "vezë lëshimi e rojes"
+  GUNPOWDER: "barut"
+  HEART_OF_THE_SEA: "zemër detit"
+  HEART_POTTERY_SHARD: "copë e qeramikës së zemrës"
+  HEART_POTTERY_SHERD: "copë e qeramikës së zemrës"
+  HEARTBREAK_POTTERY_SHARD: "tharje qeramike zemerthyerje"
+  HEARTBREAK_POTTERY_SHERD: "copë qeramike zemërthyer"
+  HOGLIN_SPAWN_EGG: "vezë thirrëse hoglin-it"
+  HONEY_BOTTLE: "shishe mjalti"
+  HONEYCOMB: "huall mjalti"
+  HOPPER_MINECART: "karrocë me mbledhës"
+  HORSE_SPAWN_EGG: "vezë lëshimi të kalit"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  HOWL_POTTERY_SHARD: "ulërim copë qeramike"
+  HOWL_POTTERY_SHERD: "ulërim copë qeramike"
+  HUSK_SPAWN_EGG: "vezë lëshimi të husk-ut"
+  INK_SAC: "thes boje"
+  IRON_AXE: "sëpatë hekuri"
+  IRON_BOOTS: "çizme hekuri"
+  IRON_CHESTPLATE: "parzmore hekuri"
+  IRON_GOLEM_SPAWN_EGG: "vezë thirrëse të mbrojtësit të hekurt"
+  IRON_HELMET: "helmetë hekuri"
+  IRON_HOE: "shat hekuri"
+  IRON_HORSE_ARMOR: "armaturë hekuri për kuajt"
+  IRON_INGOT: "shufër hekuri"
+  IRON_LEGGINGS: "dollakë hekuri"
+  IRON_NUGGET: "grimcë hekuri"
+  IRON_PICKAXE: "kazmë hekuri"
+  IRON_SHOVEL: "lopatë hekuri"
+  IRON_SWORD: "shpatë hekuri"
+  ITEM_FRAME: "kornizë sendi"
+  JUNGLE_BOAT: "anije e xhunglës"
+  JUNGLE_CHEST_BOAT: "varkë xhungle me gjoks"
+  KNOWLEDGE_BOOK: "libri i dijes"
+  LAPIS_LAZULI: "gur i kaltër"
+  LAVA_BUCKET: "kovë me llavë"
+  LEAD: "litar"
+  LEATHER: "lëkurë"
+  LEATHER_BOOTS: "këpucë lëkure"
+  LEATHER_CHESTPLATE: "tunikë lëkure"
+  LEATHER_HELMET: "kapele lëkure"
+  LEATHER_HORSE_ARMOR: "armaturë lëkure për kuajt"
+  LEATHER_LEGGINGS: "pantallona lëkure"
+  LIGHT_BLUE_DYE: "bojë e kaltër e qeltë"
+  LIGHT_GRAY_DYE: "bojë hiri e qeltë"
+  LIME_DYE: "bojë bliri"
+  LINGERING_POTION: "ilaç i zgjatur"
+  LINGERING_POTION_EFFECT_AWKWARD: "potion i bezdisshëm"
+  LINGERING_POTION_EFFECT_EMPTY: "pazhvilluara të potion"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "qëndrimi i rezistencës në zjarr"
+  LINGERING_POTION_EFFECT_HARMING: "potion ngadaltë e dëmtimit"
+  LINGERING_POTION_EFFECT_HEALING: "potion i shërimit"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "pozicioni i invisibilitetit"
+  LINGERING_POTION_EFFECT_LEAPING: "potion ngadaltë e kërcimit"
+  LINGERING_POTION_EFFECT_LEVITATION: "potion ngadaltë e levitimit"
+  LINGERING_POTION_EFFECT_LUCK: "potion i luck i ngadalshëm"
+  LINGERING_POTION_EFFECT_MUNDANE: "potion i mundshëm"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "potion i vegëzës së natë"
+  LINGERING_POTION_EFFECT_POISON: "potion i helmuar i ngadalshëm"
+  LINGERING_POTION_EFFECT_REGENERATION: "potion i rigjenerimit"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "ilaç e vazhdueshme e rënies së ngadaltë"
+  LINGERING_POTION_EFFECT_SLOWNESS: "potion ngadalësues i ngadalshëm"
+  LINGERING_POTION_EFFECT_STRENGTH: "potion i fortë i fuqisë"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "potion ngadaltë e shpejtësisë"
+  LINGERING_POTION_EFFECT_THICK: "potion i hollë i hollë"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "ilaç e mungueshme e mjeshtrit të breshkave"
+  LINGERING_POTION_EFFECT_WATER: "një shishe të ujit të pezullimit"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "ilaç i vazhdueshëm e frymëmarrjes së ujit"
+  LINGERING_POTION_EFFECT_WEAKNESS: "potion i dobët i dobësimit"
+  LLAMA_SPAWN_EGG: "vezë lëshimi të lamës"
+  LODESTONE_COMPASS: "busull magnetizuar"
+  MAGENTA_DYE: "bojë magjente"
+  MAGMA_CREAM: "krem magma-e"
+  MAGMA_CUBE_SPAWN_EGG: "vezë lëshimi të kubit magma"
+  MANGROVE_BOAT: "varkë mangrove"
+  MANGROVE_CHEST_BOAT: "varkë mangrove me komodine"
+  MAP: "hartë boshe"
+  MELON_SEEDS: "fara pjepri"
+  MELON_SLICE: "copë pjepri"
+  MILK_BUCKET: "kovë me qumësht"
+  MINECART: "karrocë"
+  MINER_POTTERY_SHARD: "fragmenti i qeramikës së minatorit"
+  MINER_POTTERY_SHERD: "fragmenti i qeramikës së minatorit"
+  MOJANG_BANNER_PATTERN: "flamur i modeluar"
+  MOJANG_BANNER_PATTERN_DESC: "diçka"
+  MOOSHROOM_SPAWN_EGG: "vezë lëshimi të mooshroom-it"
+  MOURNER_POTTERY_SHARD: "copë e qeramikës vajtuese"
+  MOURNER_POTTERY_SHERD: "copë e qeramikës vajtuese"
+  MULE_SPAWN_EGG: "mule spawn veza"
+  MUSHROOM_STEW: "supë kerpudhe"
+  MUSIC_DISC_11: "disk muzike"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "disk muzike"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "disk muzike"
+  MUSIC_DISC_5_DESC: "samuel åberg-5"
+  MUSIC_DISC_BLOCKS: "disk muzike"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blloqe"
+  MUSIC_DISC_CAT: "disk muzike"
+  MUSIC_DISC_CAT_DESC: "c418 - mace"
+  MUSIC_DISC_CHIRP: "disk muzike"
+  MUSIC_DISC_CHIRP_DESC: "c418 - cicërimë"
+  MUSIC_DISC_FAR: "disk muzike"
+  MUSIC_DISC_FAR_DESC: "c418 - larg"
+  MUSIC_DISC_MALL: "disk muzike"
+  MUSIC_DISC_MALL_DESC: "c418 - dyqan"
+  MUSIC_DISC_MELLOHI: "disk muzike"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "disk muzike"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - tjetër"
+  MUSIC_DISC_PIGSTEP: "disk muzike"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "disk muzike"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relike"
+  MUSIC_DISC_STAL: "disk muzike"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "disk muzike"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "disk muzike"
+  MUSIC_DISC_WAIT_DESC: "c418 - prit"
+  MUSIC_DISC_WARD: "disk muzike"
+  MUSIC_DISC_WARD_DESC: "c418 - rojë"
+  MUTTON: "mish dele i pazierrë"
+  NAME_TAG: "etiketë"
+  NAUTILUS_SHELL: "guaskë kërmilli"
+  NETHER_BRICK: "tullë e nether-it"
+  NETHER_STAR: "yll i nether-it"
+  NETHER_WART: "lytha e nether-it"
+  NETHERITE_AXE: "sëpatë netheriti"
+  NETHERITE_BOOTS: "çizme netheriti"
+  NETHERITE_CHESTPLATE: "parzmore netheriti"
+  NETHERITE_HELMET: "përkrenare netheriti"
+  NETHERITE_HOE: "kosë netheriti"
+  NETHERITE_INGOT: "shufër netheriti"
+  NETHERITE_LEGGINGS: "dollakë netheriti"
+  NETHERITE_PICKAXE: "kazmë netheriti"
+  NETHERITE_SCRAP: "fragment netheriti"
+  NETHERITE_SHOVEL: "lopatë netheriti"
+  NETHERITE_SWORD: "shpatë netheriti"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "shabllon smithing"
+  OAK_BOAT: "anije lisi"
+  OAK_CHEST_BOAT: "varkë lisi me gjoks"
+  OCELOT_SPAWN_EGG: "ocelot spawn veza"
+  ORANGE_DYE: "bojë portokalli"
+  PAINTING: "pikturë"
+  PANDA_SPAWN_EGG: "panda spawn vezë"
+  PAPER: "letër"
+  PARROT_SPAWN_EGG: "parrot spawn veza"
+  PHANTOM_MEMBRANE: "membranë i phantom-it"
+  PHANTOM_SPAWN_EGG: "phantom spawn veza"
+  PIG_SPAWN_EGG: "pig spawn veza"
+  PIGLIN_BANNER_PATTERN: "flamur i modeluar"
+  PIGLIN_BANNER_PATTERN_DESC: "feçkë"
+  PIGLIN_BRUTE_SPAWN_EGG: "vezë thirrëse piglin-it i egër"
+  PIGLIN_SPAWN_EGG: "vezë thirrëse piglin-it"
+  PILLAGER_SPAWN_EGG: "vezë pjellore e shtizës"
+  PINK_DYE: "bojë rozë"
+  PITCHER_POD: "shtambë pod"
+  PLENTY_POTTERY_SHARD: "shumë copë qeramike"
+  PLENTY_POTTERY_SHERD: "shumë copë qeramike"
+  POISONOUS_POTATO: "patate helmuese"
+  POLAR_BEAR_SPAWN_EGG: "polar bear spawn veza"
+  POPPED_CHORUS_FRUIT: "frut korusi i pëlcitur"
+  PORKCHOP: "mish derri i pazierë"
+  POTATO: "patate"
+  POTION: "medikamente"
+  POTION_EFFECT_AWKWARD: "ilaç pa efekt"
+  POTION_EFFECT_EMPTY: "ilaç i pamundshëm"
+  POTION_EFFECT_FIRE_RESISTANCE: "ndaj zjarrit potion"
+  POTION_EFFECT_HARMING: "ilaç i dëmtimit"
+  POTION_EFFECT_HEALING: "ilaç i shërimit"
+  POTION_EFFECT_INVISIBILITY: "ilaç i padukshmërisë"
+  POTION_EFFECT_LEAPING: "potion të hedhur"
+  POTION_EFFECT_LEVITATION: "ilaç i fluturimit"
+  POTION_EFFECT_LUCK: "ilaç i fatit"
+  POTION_EFFECT_MUNDANE: "ilaç pa efekt"
+  POTION_EFFECT_NIGHT_VISION: "ilaç i vizionit të natës"
+  POTION_EFFECT_POISON: "ilaç i helmimit"
+  POTION_EFFECT_REGENERATION: "ilaç i rigjenerimit"
+  POTION_EFFECT_SLOW_FALLING: "ilaç e rënies së ngadaltë"
+  POTION_EFFECT_SLOWNESS: "ilaç i ngadalësisë"
+  POTION_EFFECT_STRENGTH: "ilaç i forcës"
+  POTION_EFFECT_SWIFTNESS: "potion e swiftness"
+  POTION_EFFECT_THICK: "ilaç i trashë"
+  POTION_EFFECT_TURTLE_MASTER: "ilaç e mjeshtrit të breshkave"
+  POTION_EFFECT_WATER: "shishe uji"
+  POTION_EFFECT_WATER_BREATHING: "ilaç i frymës ujore"
+  POTION_EFFECT_WEAKNESS: "ilaç i dobësisë"
+  POTTERY_SHARD_ARCHER: "archer qeramika"
+  POTTERY_SHARD_ARMS_UP: "armët up copë poçeri"
+  POTTERY_SHARD_PRIZE: "shpërblimi i qeramikës"
+  POTTERY_SHARD_SKULL: "fragmenti i qeramikës së kafkës"
+  POWDER_SNOW_BUCKET: "kovë me borë pluhuri"
+  PRISMARINE_CRYSTALS: "kristale prizmarine-e"
+  PRISMARINE_SHARD: "copë prizmarine-e"
+  PRIZE_POTTERY_SHARD: "shpërblimi i qeramikës"
+  PRIZE_POTTERY_SHERD: "shpërblimi i qeramikës"
+  PUFFERFISH: "peshk top"
+  PUFFERFISH_BUCKET: "kovë e pufferfish"
+  PUFFERFISH_SPAWN_EGG: "vezë pufferfish vezë"
+  PUMPKIN_PIE: "pite kungulli"
+  PUMPKIN_SEEDS: "fara kungulli"
+  PURPLE_DYE: "bojë vjollcë"
+  QUARTZ: "kuarc i nether-it"
+  RABBIT: "mish lepuri i pazier"
+  RABBIT_FOOT: "këmbë lepuri"
+  RABBIT_HIDE: "lëkurë lepuri"
+  RABBIT_SPAWN_EGG: "lepuri derdh vezë"
+  RABBIT_STEW: "çomlek lepuri"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  RAVAGER_SPAWN_EGG: "vezë lëshimi të ravinger-it"
+  RAW_COPPER: "bakër i papërpunuar"
+  RAW_GOLD: "ari i papërpunuar"
+  RAW_IRON: "hekuri i papërpunuar"
+  RECOVERY_COMPASS: "busull rimarrje"
+  RED_DYE: "ngjyra e kuqe"
+  REDSTONE: "pluhur gurkuqi"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  ROTTEN_FLESH: "mish i keq"
+  SADDLE: "shalë"
+  SALMON: "salmon i pazier"
+  SALMON_BUCKET: "kovë me salmon"
+  SALMON_SPAWN_EGG: "salmon spawn veza"
+  SCUTE: "stendë"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  SHEAF_POTTERY_SHARD: "fragment i qeramikës së detit"
+  SHEAF_POTTERY_SHERD: "fragment i qeramikës së detit"
+  SHEARS: "gërshërë"
+  SHEEP_SPAWN_EGG: "dele uji vezë"
+  SHELTER_POTTERY_SHARD: "copë qeramike e strehës"
+  SHELTER_POTTERY_SHERD: "copë qeramike e strehës"
+  SHIELD: "mburojë"
+  SHIELD_BLACK: "mburojë e zezë"
+  SHIELD_BLUE: "mburojë e bruztë"
+  SHIELD_BROWN: "mburojë e remtë"
+  SHIELD_CYAN: "mburojë e gurkaltërt"
+  SHIELD_GRAY: "mburojë e hirtë e errët"
+  SHIELD_GREEN: "mburojë e blertë"
+  SHIELD_LIGHT_BLUE: "mburojë e kaltërt"
+  SHIELD_LIGHT_GRAY: "mburojë e hirtë"
+  SHIELD_LIME: "mburojë e blertë e çelët"
+  SHIELD_MAGENTA: "mburojë e maxhentë"
+  SHIELD_ORANGE: "mburojë e portokalltë"
+  SHIELD_PINK: "mburojë e roztë"
+  SHIELD_PURPLE: "mburojë e purpurtë"
+  SHIELD_RED: "mburojë e kuqe"
+  SHIELD_WHITE: "mburojë e bardhë"
+  SHIELD_YELLOW: "mburojë e verdhë"
+  SHULKER_SHELL: "guaskë shulker"
+  SHULKER_SPAWN_EGG: "shulker spawn veza"
+  SIGN: "shenj"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  SILVERFISH_SPAWN_EGG: "vezë lëshimi të mi gurit"
+  SKELETON_HORSE_SPAWN_EGG: "vezë lëshimi të kalit skeleton"
+  SKELETON_SPAWN_EGG: "vezë lëshimi të skeletonit"
+  SKULL_BANNER_PATTERN: "flamur i modeluar"
+  SKULL_BANNER_PATTERN_DESC: "kafkë e karikuar"
+  SKULL_POTTERY_SHARD: "fragmenti i qeramikës së kafkës"
+  SKULL_POTTERY_SHERD: "fragmenti i qeramikës së kafkës"
+  SLIME_BALL: "top zhuli"
+  SLIME_SPAWN_EGG: "vezë lëshimi të slime-it"
+  SMITHING_TEMPLATE: "tabela e fletëve"
+  SMITHING_TEMPLATE_APPLIES_TO: "vendoset ne:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "shtoni shufër ose kristal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "mbrojtje"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "shtoni një pjesë të armaturës"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "shufrat & kristalet"
+  SMITHING_TEMPLATE_INGREDIENTS: "përbërësit:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "shto shufër netherite"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "pajisjet e diamantit"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "shto forca të blinduara diamanti armë ose mjet"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "shufër netheriti"
+  SMITHING_TEMPLATE_UPGRADE: "përditëso: "
+  SNIFFER_SPAWN_EGG: "veza e pjelljes së dinosaurëve"
+  SNORT_POTTERY_SHARD: "gërhitës copë qeramike"
+  SNORT_POTTERY_SHERD: "gërhitës copë qeramike"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  SNOW_GOLEM_SPAWN_EGG: "vezë lëshimi mbrojtësi prej bore"
+  SNOWBALL: "top bore"
+  SPECTRAL_ARROW: "shigjetë spektrale"
+  SPIDER_EYE: "sy merimange"
+  SPIDER_SPAWN_EGG: "vezë lëshimi të merimangës"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  SPLASH_POTION: "ilaç spërkatës"
+  SPLASH_POTION_EFFECT_AWKWARD: "ilaç pa efekt hedhës"
+  SPLASH_POTION_EFFECT_EMPTY: "ilaç i pamundshëm hedhëse"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "ilaç hedhës i rezistencës ndaj zjarrit"
+  SPLASH_POTION_EFFECT_HARMING: "ilaç hedhës i dëmtimit"
+  SPLASH_POTION_EFFECT_HEALING: "ilaç hedhës i shërimit"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "ilaç hedhës i padukshmërisë"
+  SPLASH_POTION_EFFECT_LEAPING: "ilaç hedhës i kërcimit"
+  SPLASH_POTION_EFFECT_LEVITATION: "ilaç hedhës i fluturimit"
+  SPLASH_POTION_EFFECT_LUCK: "ilaç hedhës i fatit"
+  SPLASH_POTION_EFFECT_MUNDANE: "ilaç pa efekt hedhës"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "ilaç hedhës i vizionit të natës"
+  SPLASH_POTION_EFFECT_POISON: "ilaç hedhës i helmimit"
+  SPLASH_POTION_EFFECT_REGENERATION: "ilaç hedhës i rigjenerimit"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "ilaç e ngadaltë në rënie"
+  SPLASH_POTION_EFFECT_SLOWNESS: "ilaç hedhës i ngadalësisë"
+  SPLASH_POTION_EFFECT_STRENGTH: "ilaç hedhës i forcës"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "ilaç hedhës i shpejtësisë"
+  SPLASH_POTION_EFFECT_THICK: "ilaç i trashë hedhës"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "ilaç për fillimin e breshkave master"
+  SPLASH_POTION_EFFECT_WATER: "shishe uji hedhëse"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "ilaç hedhës i frymës ujore"
+  SPLASH_POTION_EFFECT_WEAKNESS: "ilaç hedhës i dobësisë"
+  SPRUCE_BOAT: "anije bredhi"
+  SPRUCE_CHEST_BOAT: "varkë bredh me gjoks"
+  SPYGLASS: "spiun xhami"
+  SQUID_SPAWN_EGG: "vezë lëshimi të kallamarit"
+  STICK: "shkop"
+  STONE_AXE: "sëpatë guri"
+  STONE_HOE: "shat guri"
+  STONE_PICKAXE: "kazmë druri"
+  STONE_SHOVEL: "lopatë guri"
+  STONE_SWORD: "shpatë guri"
+  STRAY_SPAWN_EGG: "vezë lëshimi të stray-it"
+  STRIDER_SPAWN_EGG: "vezë thirrëse këmbësorit"
+  STRING: "penjë"
+  SUGAR: "sheqer"
+  SUSPICIOUS_STEW: "supë e mistershme"
+  SWEET_BERRIES: "manaferra të ëmbla"
+  TADPOLE_BUCKET: "kovë me shufër"
+  TADPOLE_SPAWN_EGG: "vezë leshimi të bebe bretkose"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  TIPPED_ARROW: "shigjetë me efekt"
+  TIPPED_ARROW_EFFECT_AWKWARD: "shigjeta me majë\n"
+  TIPPED_ARROW_EFFECT_EMPTY: "shigjetë me efekt i pamundshëm"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "shigjetë e rezistencës ndaj zjarrit"
+  TIPPED_ARROW_EFFECT_HARMING: "shigjetë e dëmtimit"
+  TIPPED_ARROW_EFFECT_HEALING: "shigjetë e shërimit"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "shigjetë e padukshmërisë"
+  TIPPED_ARROW_EFFECT_LEAPING: "shigjetë e kërcimit"
+  TIPPED_ARROW_EFFECT_LEVITATION: "shigjetë e fluturimit"
+  TIPPED_ARROW_EFFECT_LUCK: "shigjetë e fatit"
+  TIPPED_ARROW_EFFECT_MUNDANE: "shigjeta me majë\n"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "shigjetë e vizionit të natës"
+  TIPPED_ARROW_EFFECT_POISON: "shigjetë e helmit"
+  TIPPED_ARROW_EFFECT_REGENERATION: "shigjetë e rigjenerimit"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "shigjeta e rënies së ngadaltë"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "shigjetë e ngadalshmërisë"
+  TIPPED_ARROW_EFFECT_STRENGTH: "shigjetë e forcës"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "shigjetë e shpejtësisë"
+  TIPPED_ARROW_EFFECT_THICK: "shigjeta me majë\n"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "shigjeta e mjeshtrit të breshkës"
+  TIPPED_ARROW_EFFECT_WATER: "shigjetë spërkatëse"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "shigjetë e frymës ujore"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "shigjetë e dobësisë"
+  TNT_MINECART: "karrocë me tnt"
+  TORCHFLOWER_SEEDS: "fara lulepishtari"
+  TOTEM_OF_UNDYING: "totem-i i pavdekshmërisë"
+  TRADER_LLAMA_SPAWN_EGG: "vezë lëshimi të lamës së tregtar"
+  TRIAL_KEY: "çelësi i provës"
+  TRIDENT: "sfurk"
+  TROPICAL_FISH: "peshk tropikal"
+  TROPICAL_FISH_BUCKET: "kovë me peshk tropikal"
+  TROPICAL_FISH_SPAWN_EGG: "vezë lëshimi të peshkut tropikal"
+  TURTLE_HELMET: "guaskë breshke"
+  TURTLE_SPAWN_EGG: "vezë lëshimi të breshkës të detit"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  VEX_SPAWN_EGG: "vezë lëshimi të vex-it"
+  VILLAGER_SPAWN_EGG: "vezë lëshimi të fshatarit"
+  VINDICATOR_SPAWN_EGG: "vezë lëshimi të vindicator-it"
+  WANDERING_TRADER_SPAWN_EGG: "vezë lëshimi të tregtarit"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  WARDEN_SPAWN_EGG: "vezë lëshimi të warden-it"
+  WARPED_FUNGUS_ON_A_STICK: "kërpudhe e deformuar në një shkop"
+  WATER_BUCKET: "kovë me ujë"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  WHEAT: "grurë"
+  WHEAT_SEEDS: "fara gruri"
+  WHITE_DYE: "ngjyra e bardhë"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "shabllon smithing"
+  WITCH_SPAWN_EGG: "vezë lëshimi të shtrigës"
+  WITHER_SKELETON_SPAWN_EGG: "vezë lëshimi të skeletonit wither"
+  WITHER_SPAWN_EGG: "vezë lëshimi të wither-it"
+  WOLF_SPAWN_EGG: "vezë lëshimi të ujkut"
+  WOODEN_AXE: "sëpatë druri"
+  WOODEN_HOE: "kallam druri"
+  WOODEN_PICKAXE: "kazmë druri"
+  WOODEN_SHOVEL: "lopatë druri"
+  WOODEN_SWORD: "shpatë druri"
+  WRITABLE_BOOK: "libër dhe penë"
+  WRITTEN_BOOK: "libër shkrimi"
+  YELLOW_DYE: "ngjyra e verdhë"
+  ZOGLIN_SPAWN_EGG: "vezë thirrëse zoglin-it"
+  ZOMBIE_HORSE_SPAWN_EGG: "vezë lëshimi të kalit zombi"
+  ZOMBIE_SPAWN_EGG: "vezë lëshimi të zombit"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "vezë lëshimi të fshatarit zombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "vezë thirrëse piglin-it te zombifikuar"
+  CHEST: "kur në trup:"
+  FEET: "kur në këmbë:"
+  HEAD: "kur në kokë:"
+  LEGS: "kur tek kofshet:"
+  MAINHAND: "kur në dorën kryesore:"
+  OFFHAND: "kur në dorën dytësore:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

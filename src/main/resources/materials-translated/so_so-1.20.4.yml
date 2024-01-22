@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "badhanka acacia"
+  ACACIA_DOOR: "acacia albaabka"
+  ACACIA_FENCE: "xayndaabka acacia"
+  ACACIA_FENCE_GATE: "albaabka acacia fence"
+  ACACIA_HANGING_SIGN: "acacia hanging sign"
+  ACACIA_LEAVES: "caleenta acacia"
+  ACACIA_LOG: "diiwaanka acacia"
+  ACACIA_PLANKS: "qorshaha acacia"
+  ACACIA_PRESSURE_PLATE: "cadaadiska cadaadiska acacia"
+  ACACIA_SAPLING: "acacia sapling"
+  ACACIA_SIGN: "acacia saxiix"
+  ACACIA_SLAB: "qudhac ah xargaha"
+  ACACIA_STAIRS: "qudhac ah jaranjaro"
+  ACACIA_TRAPDOOR: "acacia hatch"
+  ACACIA_WALL_HANGING_SIGN: "acacia wall hanging sign"
+  ACACIA_WALL_SIGN: "calaamadda derbiga acacia"
+  ACACIA_WOOD: "acacia alwaax"
+  ACTIVATOR_RAIL: "firfircoonaan biraha"
+  AIR: "hawo"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "baloogga ametusti"
+  AMETHYST_CLUSTER: "kooxda amethyst"
+  ANCIENT_DEBRIS: "burburkii qadiimiga ahaa\n"
+  ANDESITE: "andesite"
+  ANDESITE_SLAB: "weelka iyo weelka"
+  ANDESITE_STAIRS: "jaranjaro iyo jaranjaro"
+  ANDESITE_WALL: "derbiga iyo weelka"
+  ANVIL: "anvil"
+  ATTACHED_MELON_STEM: "qaraha qaraha ee ku lifaaqan"
+  ATTACHED_PUMPKIN_STEM: "stem pumpkin stem"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "azalea caleemaha"
+  AZURE_BLUET: "haustonia cawlan"
+  BAMBOO: "dhir dheer"
+  BAMBOO_BLOCK: "block of bamboo"
+  BAMBOO_BUTTON: "bamboo button"
+  BAMBOO_DOOR: "bamboo door"
+  BAMBOO_FENCE: "bamboo fence"
+  BAMBOO_FENCE_GATE: "bamboo fence gate"
+  BAMBOO_HANGING_SIGN: "bamboo hanging sign"
+  BAMBOO_MOSAIC: "bamboo mosaic"
+  BAMBOO_MOSAIC_SLAB: "bamboo mosaic slab"
+  BAMBOO_MOSAIC_STAIRS: "bamboo mosaic stairs"
+  BAMBOO_PLANKS: "bamboo planks"
+  BAMBOO_PRESSURE_PLATE: "bamboo pressure plate"
+  BAMBOO_SAPLING: "bamboo shoot\n"
+  BAMBOO_SIGN: "bamboo sign"
+  BAMBOO_SLAB: "bamboo slab"
+  BAMBOO_STAIRS: "bamboo stairs"
+  BAMBOO_TRAPDOOR: "bamboo trapdoor"
+  BAMBOO_WALL_HANGING_SIGN: "bamboo wall hanging sign"
+  BAMBOO_WALL_SIGN: "bamboo wall sign"
+  BANNER_BASE_BLACK: "field madaw"
+  BANNER_BASE_BLUE: "goob buuxda oo buluug ah"
+  BANNER_BASE_BROWN: "goob buuxi buuran"
+  BANNER_BASE_CYAN: "fiidiyow cyan"
+  BANNER_BASE_GRAY: "goob buuxda oo cawl ah"
+  BANNER_BASE_GREEN: "goob cagaaran oo buuxda"
+  BANNER_BASE_LIGHT_BLUE: "goob buluug buuxda leh"
+  BANNER_BASE_LIGHT_GRAY: "fiidiyow cawl fiican"
+  BANNER_BASE_LIME: "dhulka lime buuxda"
+  BANNER_BASE_MAGENTA: "field magenta field"
+  BANNER_BASE_ORANGE: "goobta liinta oo dhamaystiran"
+  BANNER_BASE_PINK: "goob fulin casaan leh"
+  BANNER_BASE_PURPLE: "goob buuxa oo buuxda"
+  BANNER_BASE_RED: "field gaduudan"
+  BANNER_BASE_WHITE: "goob cadaan ah oo buuxda"
+  BANNER_BASE_YELLOW: "goob jaale buuxda"
+  BANNER_BORDER_BLACK: "black bordure"
+  BANNER_BORDER_BLUE: "blue bordure"
+  BANNER_BORDER_BROWN: "brown bordure"
+  BANNER_BORDER_CYAN: "cyan bordure"
+  BANNER_BORDER_GRAY: "gray bordure"
+  BANNER_BORDER_GREEN: "green bordure"
+  BANNER_BORDER_LIGHT_BLUE: "light blue bordure"
+  BANNER_BORDER_LIGHT_GRAY: "light gray bordure"
+  BANNER_BORDER_LIME: "lime bordure"
+  BANNER_BORDER_MAGENTA: "magenta bordure"
+  BANNER_BORDER_ORANGE: "orange bordure"
+  BANNER_BORDER_PINK: "pink bordure"
+  BANNER_BORDER_PURPLE: "purple bordure"
+  BANNER_BORDER_RED: "red bordure"
+  BANNER_BORDER_WHITE: "white bordure"
+  BANNER_BORDER_YELLOW: "jaalle bordure"
+  BANNER_BRICKS_BLACK: "black field masoned"
+  BANNER_BRICKS_BLUE: "blue field masoned"
+  BANNER_BRICKS_BROWN: "brown field masoned"
+  BANNER_BRICKS_CYAN: "cyan field masoned"
+  BANNER_BRICKS_GRAY: "gray field masoned"
+  BANNER_BRICKS_GREEN: "green field masoned"
+  BANNER_BRICKS_LIGHT_BLUE: "light blue field masoned"
+  BANNER_BRICKS_LIGHT_GRAY: "light gray field masoned"
+  BANNER_BRICKS_LIME: "lime field masoned"
+  BANNER_BRICKS_MAGENTA: "magenta field masoned"
+  BANNER_BRICKS_ORANGE: "orange field masoned"
+  BANNER_BRICKS_PINK: "pink field masoned"
+  BANNER_BRICKS_PURPLE: "purple field masoned"
+  BANNER_BRICKS_RED: "red field masoned"
+  BANNER_BRICKS_WHITE: "white field masoned"
+  BANNER_BRICKS_YELLOW: "yellow field masoned"
+  BANNER_CIRCLE_BLACK: "madow roundel"
+  BANNER_CIRCLE_BLUE: "buluug roundel"
+  BANNER_CIRCLE_BROWN: "bunni roundel"
+  BANNER_CIRCLE_CYAN: "cawlan roundel"
+  BANNER_CIRCLE_GRAY: "cawlan roundel"
+  BANNER_CIRCLE_GREEN: "cagaaran roundel"
+  BANNER_CIRCLE_LIGHT_BLUE: "buluug khafiif ah roundel"
+  BANNER_CIRCLE_LIGHT_GRAY: "cawl khafiif ah roundel"
+  BANNER_CIRCLE_LIME: "cagaar jaale ah roundel"
+  BANNER_CIRCLE_MAGENTA: "magenta wareega"
+  BANNER_CIRCLE_ORANGE: "cawlan roundel"
+  BANNER_CIRCLE_PINK: "casaan roundel"
+  BANNER_CIRCLE_PURPLE: "guduudan roundel"
+  BANNER_CIRCLE_RED: "casaan roundel"
+  BANNER_CIRCLE_WHITE: "roundel cad"
+  BANNER_CIRCLE_YELLOW: "jaale roundel"
+  BANNER_CREEPER_BLACK: "black creeper charge"
+  BANNER_CREEPER_BLUE: "lacagta creeper blue"
+  BANNER_CREEPER_BROWN: "lacagta creeper brown"
+  BANNER_CREEPER_CYAN: "cyan creeper charge"
+  BANNER_CREEPER_GRAY: "lacag creeper cawlan"
+  BANNER_CREEPER_GREEN: "red creeper charge"
+  BANNER_CREEPER_LIGHT_BLUE: "light blue creeper charge"
+  BANNER_CREEPER_LIGHT_GRAY: "light gray creeper charge"
+  BANNER_CREEPER_LIME: "lime creeper charge"
+  BANNER_CREEPER_MAGENTA: "magenta creeper charge"
+  BANNER_CREEPER_ORANGE: "orange creeper charge"
+  BANNER_CREEPER_PINK: "pink creeper charge"
+  BANNER_CREEPER_PURPLE: "purple creeper charge"
+  BANNER_CREEPER_RED: "black creeper charge"
+  BANNER_CREEPER_WHITE: "white creeper charge"
+  BANNER_CREEPER_YELLOW: "yellow creeper charge"
+  BANNER_CROSS_BLACK: "madow iskutallaab"
+  BANNER_CROSS_BLUE: "buluug iskutallaab"
+  BANNER_CROSS_BROWN: "bunni iskutallaab"
+  BANNER_CROSS_CYAN: "cyan iskutallaab"
+  BANNER_CROSS_GRAY: "dameeri iskutallaab"
+  BANNER_CROSS_GREEN: "akhtar iskutallaab"
+  BANNER_CROSS_LIGHT_BLUE: "iftiin buluug iskutallaab"
+  BANNER_CROSS_LIGHT_GRAY: "iftiin dameeri iskutallaab"
+  BANNER_CROSS_LIME: "lime iskutallaab"
+  BANNER_CROSS_MAGENTA: "magenta iskutallaab"
+  BANNER_CROSS_ORANGE: "liimi iskutallaab"
+  BANNER_CROSS_PINK: "basali iskutallaab"
+  BANNER_CROSS_PURPLE: "carwaajis iskutallaab"
+  BANNER_CROSS_RED: "casaan iskutallaab"
+  BANNER_CROSS_WHITE: "caddaan iskutallaab"
+  BANNER_CROSS_YELLOW: "jaalle iskutallaab"
+  BANNER_CURLY_BORDER_BLACK: "black bordure indented"
+  BANNER_CURLY_BORDER_BLUE: "blue bordure indented"
+  BANNER_CURLY_BORDER_BROWN: "brown bordure indented"
+  BANNER_CURLY_BORDER_CYAN: "cyan bordure indented"
+  BANNER_CURLY_BORDER_GRAY: "gray bordure indented"
+  BANNER_CURLY_BORDER_GREEN: "green bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "light blue bordure indented"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "light gray bordure indented"
+  BANNER_CURLY_BORDER_LIME: "lime bordure indented"
+  BANNER_CURLY_BORDER_MAGENTA: "magenta bordure indented"
+  BANNER_CURLY_BORDER_ORANGE: "orange bordure indented"
+  BANNER_CURLY_BORDER_PINK: "pink bordure indented"
+  BANNER_CURLY_BORDER_PURPLE: "purple bordure indented"
+  BANNER_CURLY_BORDER_RED: "red bordure indented"
+  BANNER_CURLY_BORDER_WHITE: "white bordure indented"
+  BANNER_CURLY_BORDER_YELLOW: "yellow bordure indented"
+  BANNER_DIAGONAL_LEFT_BLACK: "madow per bend sinister"
+  BANNER_DIAGONAL_LEFT_BLUE: "buluug per bend sinister"
+  BANNER_DIAGONAL_LEFT_BROWN: "bunni per bend sinister"
+  BANNER_DIAGONAL_LEFT_CYAN: "cyan per bend sinister"
+  BANNER_DIAGONAL_LEFT_GRAY: "dameeri per bend sinister"
+  BANNER_DIAGONAL_LEFT_GREEN: "akhtar per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "iftiin buluug per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "iftiin dameeri per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIME: "lime per bend sinister"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta per bend sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "liimi per bend sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "basali per bend sinister"
+  BANNER_DIAGONAL_LEFT_PURPLE: "carwaajis per bend sinister"
+  BANNER_DIAGONAL_LEFT_RED: "casaan per bend sinister"
+  BANNER_DIAGONAL_LEFT_WHITE: "caddaan per bend sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "jaalle per bend sinister"
+  BANNER_DIAGONAL_RIGHT_BLACK: "madow per bend"
+  BANNER_DIAGONAL_RIGHT_BLUE: "buluug per bend"
+  BANNER_DIAGONAL_RIGHT_BROWN: "bunni per bend"
+  BANNER_DIAGONAL_RIGHT_CYAN: "cyan per bend"
+  BANNER_DIAGONAL_RIGHT_GRAY: "dameeri per bend"
+  BANNER_DIAGONAL_RIGHT_GREEN: "akhtar per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "iftiin buluug per bend"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "iftiin dameeri per bend"
+  BANNER_DIAGONAL_RIGHT_LIME: "lime per bend"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta per bend"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "liimi per bend"
+  BANNER_DIAGONAL_RIGHT_PINK: "basali per bend"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "carwaajis per bend"
+  BANNER_DIAGONAL_RIGHT_RED: "casaan per bend"
+  BANNER_DIAGONAL_RIGHT_WHITE: "caddaan per bend"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "jaalle per bend"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "madow per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "buluug per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "bunni per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "cyan per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "dameeri per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "akhtar per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "iftiin buluug per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "iftiin dameeri per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "lime per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "magenta per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "liimi per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "basali per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "carwaajis per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_RED: "casaan per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "caddaan per bend soo jeestay"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "jaalle per bend soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "madow per bend soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "buluug per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "bunni"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "cyan per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "dameeri per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "akhtar per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "iftiin buluug per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "iftiin dameeri per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "lime per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "magenta per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "liimi per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "basali per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "carwaajis per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "casaan per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "caddaan per bend sinister soo jeestay"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "jaalle per bend sinister soo jeestay"
+  BANNER_FLOWER_BLACK: "black flower charge"
+  BANNER_FLOWER_BLUE: "blue flower charge"
+  BANNER_FLOWER_BROWN: "brown flower charge"
+  BANNER_FLOWER_CYAN: "cyan flower charge"
+  BANNER_FLOWER_GRAY: "gray flower charge"
+  BANNER_FLOWER_GREEN: "green flower charge"
+  BANNER_FLOWER_LIGHT_BLUE: "light blue flower charge"
+  BANNER_FLOWER_LIGHT_GRAY: "light gray flower charge"
+  BANNER_FLOWER_LIME: "lime flower charge"
+  BANNER_FLOWER_MAGENTA: "magenta flower charge"
+  BANNER_FLOWER_ORANGE: "orange flower charge"
+  BANNER_FLOWER_PINK: "pink flower charge"
+  BANNER_FLOWER_PURPLE: "purple flower charge"
+  BANNER_FLOWER_RED: "red flower charge"
+  BANNER_FLOWER_WHITE: "white flower charge"
+  BANNER_FLOWER_YELLOW: "yellow flower charge"
+  BANNER_GLOBE_BLACK: "black globe"
+  BANNER_GLOBE_BLUE: "blue globe"
+  BANNER_GLOBE_BROWN: "brown globe"
+  BANNER_GLOBE_CYAN: "cyan globe"
+  BANNER_GLOBE_GRAY: "gray globe"
+  BANNER_GLOBE_GREEN: "green globe"
+  BANNER_GLOBE_LIGHT_BLUE: "light blue globe"
+  BANNER_GLOBE_LIGHT_GRAY: "light gray globe"
+  BANNER_GLOBE_LIME: "lime globe"
+  BANNER_GLOBE_MAGENTA: "magenta globe"
+  BANNER_GLOBE_ORANGE: "orange globe"
+  BANNER_GLOBE_PINK: "pink globe"
+  BANNER_GLOBE_PURPLE: "purple globe"
+  BANNER_GLOBE_RED: "red globe"
+  BANNER_GLOBE_WHITE: "white globe"
+  BANNER_GLOBE_YELLOW: "yellow globe"
+  BANNER_GRADIENT_BLACK: "madow gradient"
+  BANNER_GRADIENT_BLUE: "blue gradient"
+  BANNER_GRADIENT_BROWN: "brown gradient"
+  BANNER_GRADIENT_CYAN: "cyan gradient"
+  BANNER_GRADIENT_GRAY: "gray gradient"
+  BANNER_GRADIENT_GREEN: "gradient cagaaran"
+  BANNER_GRADIENT_LIGHT_BLUE: "light blue gradient"
+  BANNER_GRADIENT_LIGHT_GRAY: "light gray gradient"
+  BANNER_GRADIENT_LIME: "lime gradient"
+  BANNER_GRADIENT_MAGENTA: "magenta gradient"
+  BANNER_GRADIENT_ORANGE: "orange gradient"
+  BANNER_GRADIENT_PINK: "pink gradient"
+  BANNER_GRADIENT_PURPLE: "purple gradient"
+  BANNER_GRADIENT_RED: "gradient cas"
+  BANNER_GRADIENT_WHITE: "white gradient"
+  BANNER_GRADIENT_YELLOW: "yellow gradient"
+  BANNER_GRADIENT_UP_BLACK: "black base gradient"
+  BANNER_GRADIENT_UP_BLUE: "blue base gradient"
+  BANNER_GRADIENT_UP_BROWN: "brown base gradient"
+  BANNER_GRADIENT_UP_CYAN: "cyan base gradient"
+  BANNER_GRADIENT_UP_GRAY: "gray base gradient"
+  BANNER_GRADIENT_UP_GREEN: "green base gradient"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "light blue base gradient"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "light gray base gradient"
+  BANNER_GRADIENT_UP_LIME: "lime base gradient"
+  BANNER_GRADIENT_UP_MAGENTA: "magenta dabaqa hoose"
+  BANNER_GRADIENT_UP_ORANGE: "orange base gradient"
+  BANNER_GRADIENT_UP_PINK: "pink base gradient"
+  BANNER_GRADIENT_UP_PURPLE: "purple base gradient"
+  BANNER_GRADIENT_UP_RED: "red base gradient"
+  BANNER_GRADIENT_UP_WHITE: "white base gradient"
+  BANNER_GRADIENT_UP_YELLOW: "yellow base gradient"
+  BANNER_HALF_HORIZONTAL_BLACK: "madow halkii fess"
+  BANNER_HALF_HORIZONTAL_BLUE: "buluugga per fess"
+  BANNER_HALF_HORIZONTAL_BROWN: "brown halkii fess or  brown per fess"
+  BANNER_HALF_HORIZONTAL_CYAN: "cyan per fess"
+  BANNER_HALF_HORIZONTAL_GRAY: "gray per fess"
+  BANNER_HALF_HORIZONTAL_GREEN: "or cagaar per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "buluug khafiif ah halkii fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "cawlan fudud per fess"
+  BANNER_HALF_HORIZONTAL_LIME: "lime per fess\n"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "magenta per fess"
+  BANNER_HALF_HORIZONTAL_ORANGE: "orange per fess"
+  BANNER_HALF_HORIZONTAL_PINK: "pink per fess"
+  BANNER_HALF_HORIZONTAL_PURPLE: "purple per fess"
+  BANNER_HALF_HORIZONTAL_RED: "or casaan per fess"
+  BANNER_HALF_HORIZONTAL_WHITE: "white per fess"
+  BANNER_HALF_HORIZONTAL_YELLOW: "jaalle per fess"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "madow per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "madow per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "akhtar per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cyan per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "akhtar per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "akhtar per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "iftiin buluug per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "iftiin dameeri per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "madow per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "magenta per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "liimi per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "basali per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "carwaajis per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "casaan per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "madow per bend soo jeestay"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "jaalle per bend soo jeestay"
+  BANNER_HALF_VERTICAL_BLACK: "madaw halkii cirro"
+  BANNER_HALF_VERTICAL_BLUE: "buluug per cirro"
+  BANNER_HALF_VERTICAL_BROWN: "bunni per cirro"
+  BANNER_HALF_VERTICAL_CYAN: "cyan per pale"
+  BANNER_HALF_VERTICAL_GRAY: "gray per cirro"
+  BANNER_HALF_VERTICAL_GREEN: "cagaar halkii cirro"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "buluug khafiif ah halkii cirro"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "cawlan khafiif ah per pale"
+  BANNER_HALF_VERTICAL_LIME: "lime per cirro"
+  BANNER_HALF_VERTICAL_MAGENTA: "magenta per cirro"
+  BANNER_HALF_VERTICAL_ORANGE: "orange halkii cirro"
+  BANNER_HALF_VERTICAL_PINK: "pink perle"
+  BANNER_HALF_VERTICAL_PURPLE: "guduudan per cirro"
+  BANNER_HALF_VERTICAL_RED: "casaan halkii cirro"
+  BANNER_HALF_VERTICAL_WHITE: "cadaan halkii cirro"
+  BANNER_HALF_VERTICAL_YELLOW: "jaalle halkii cirro"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "black per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blue per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brown per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "cyan per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "gray per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "green per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "light blue per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "light gray per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "lime per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "magenta per bend soo jeestay"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "orange per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "pink per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "purple per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "red per pale inverted"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "caddaan per bend soo jeestay"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "yellow per pale inverted"
+  BANNER_MOJANG_BLACK: "black thing"
+  BANNER_MOJANG_BLUE: "blue thing"
+  BANNER_MOJANG_BROWN: "brown thing"
+  BANNER_MOJANG_CYAN: "cyan thing"
+  BANNER_MOJANG_GRAY: "gray thing"
+  BANNER_MOJANG_GREEN: "green thing"
+  BANNER_MOJANG_LIGHT_BLUE: "light blue thing"
+  BANNER_MOJANG_LIGHT_GRAY: "light gray thing"
+  BANNER_MOJANG_LIME: "lime thing"
+  BANNER_MOJANG_MAGENTA: "magenta thing"
+  BANNER_MOJANG_ORANGE: "orange thing"
+  BANNER_MOJANG_PINK: "pink thing"
+  BANNER_MOJANG_PURPLE: "purple thing"
+  BANNER_MOJANG_RED: "red thing"
+  BANNER_MOJANG_WHITE: "white thing"
+  BANNER_MOJANG_YELLOW: "yellow thing"
+  BANNER_PIGLIN_BLACK: "cunto madow"
+  BANNER_PIGLIN_BLUE: "cunto buluug"
+  BANNER_PIGLIN_BROWN: "cunto bunni"
+  BANNER_PIGLIN_CYAN: "cunto baxri"
+  BANNER_PIGLIN_GRAY: "cunto cowl"
+  BANNER_PIGLIN_GREEN: "cunto cagaaran"
+  BANNER_PIGLIN_LIGHT_BLUE: "cunto buluug iftiin"
+  BANNER_PIGLIN_LIGHT_GRAY: "cunto cowl iftiin"
+  BANNER_PIGLIN_LIME: "cunto liin"
+  BANNER_PIGLIN_MAGENTA: "cunto basli"
+  BANNER_PIGLIN_ORANGE: "cunto oranji"
+  BANNER_PIGLIN_PINK: "cunto casaan"
+  BANNER_PIGLIN_PURPLE: "cunto guduud"
+  BANNER_PIGLIN_RED: "cunto casaan"
+  BANNER_PIGLIN_WHITE: "cunto cad"
+  BANNER_PIGLIN_YELLOW: "cunto jaale"
+  BANNER_RHOMBUS_BLACK: "lozenge madoow"
+  BANNER_RHOMBUS_BLUE: "buluug lozenge"
+  BANNER_RHOMBUS_BROWN: "bunni lozenge"
+  BANNER_RHOMBUS_CYAN: "cyan lozenge"
+  BANNER_RHOMBUS_GRAY: "cawlan lozenge"
+  BANNER_RHOMBUS_GREEN: "cagaaran lozenge"
+  BANNER_RHOMBUS_LIGHT_BLUE: "buluug khafiif ah lozenge"
+  BANNER_RHOMBUS_LIGHT_GRAY: "cawlan khafiif ah lozenge"
+  BANNER_RHOMBUS_LIME: "lime lozenge"
+  BANNER_RHOMBUS_MAGENTA: "magenta lozenge"
+  BANNER_RHOMBUS_ORANGE: "oranji lozenge"
+  BANNER_RHOMBUS_PINK: "casaan lozenge"
+  BANNER_RHOMBUS_PURPLE: "guduudan lozenge"
+  BANNER_RHOMBUS_RED: "lozenge cas"
+  BANNER_RHOMBUS_WHITE: "caddaan lozenge"
+  BANNER_RHOMBUS_YELLOW: "jaalle lozenge"
+  BANNER_SKULL_BLACK: "black skull charge"
+  BANNER_SKULL_BLUE: "kharashka qalfoofka buluugga ah"
+  BANNER_SKULL_BROWN: "brown skull charge"
+  BANNER_SKULL_CYAN: "cyan skull charge"
+  BANNER_SKULL_GRAY: "gray skull charge"
+  BANNER_SKULL_GREEN: "kharashka dhafoofka cagaaran"
+  BANNER_SKULL_LIGHT_BLUE: "light blue skull charge"
+  BANNER_SKULL_LIGHT_GRAY: "light gray skull charge"
+  BANNER_SKULL_LIME: "lime skull charge"
+  BANNER_SKULL_MAGENTA: "magenta skull charge"
+  BANNER_SKULL_ORANGE: "orange skull charge"
+  BANNER_SKULL_PINK: "pink skull charge"
+  BANNER_SKULL_PURPLE: "purple skull charge"
+  BANNER_SKULL_RED: "kharashka dhafoorka cas"
+  BANNER_SKULL_WHITE: "white skull charge"
+  BANNER_SKULL_YELLOW: "yellow skull charge"
+  BANNER_SMALL_STRIPES_BLACK: "madow khadadka yar"
+  BANNER_SMALL_STRIPES_BLUE: "buluug khadadka yar"
+  BANNER_SMALL_STRIPES_BROWN: "bunni khadadka yar"
+  BANNER_SMALL_STRIPES_CYAN: "cyan khadadka yar"
+  BANNER_SMALL_STRIPES_GRAY: "dameeri khadadka yar"
+  BANNER_SMALL_STRIPES_GREEN: "akhtar khadadka yar"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "iftiin buluug khadadka yar"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "iftiin dameeri khadadka yar"
+  BANNER_SMALL_STRIPES_LIME: "lime khadadka yar"
+  BANNER_SMALL_STRIPES_MAGENTA: "magenta khadadka yar"
+  BANNER_SMALL_STRIPES_ORANGE: "liimi khadadka yar"
+  BANNER_SMALL_STRIPES_PINK: "basali khadadka yar"
+  BANNER_SMALL_STRIPES_PURPLE: "carwaajis khadadka yar"
+  BANNER_SMALL_STRIPES_RED: "casaan khadadka yar"
+  BANNER_SMALL_STRIPES_WHITE: "caddaan khadadka yar"
+  BANNER_SMALL_STRIPES_YELLOW: "jaalle khadadka yar"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "kanton saldhiga madow ee dexter"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "saldhig buluugga dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "saldhig brown dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "saldhig cyan dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "saldhigga gray dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "saldhigga cagaaran dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "saldhig buluug khafiif ah dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "saldhigga cawlan fudud ee dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "saldhig lime dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "saldhig magenta dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "orange saldhigga dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "pink saldhigga dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "saldhigga guduudan ee dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "saldhigga cas ee dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "saldhigga cad ee dexter canton"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "saldhig jaalle dexter canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "saldhig madow sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "saldhigga buluuga ah ee sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brown base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "cyan base sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "saldhiga cawl sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "saldhigga cagaaran sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "saldhig buluug khafiif ah sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "saldhigga cawlan ee fudud ee sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "saldhig lime sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "saldhig magenta sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "saldhig orange sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "saldhig pink sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "base guduudka ah sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "saldhigga cas sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "saldhiga cad ee sinister canton"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "saldhig jaalle sinister canton"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "madaxa madow dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "hogaamiyaha buluuga ah dexter canton"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "hogaamiyaha bunni ah dexter canton"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "hogaamiyaha cyan dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "hogaamiyaha cawlan dexter canton"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "hogaamiyaha cagaaran dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "hogaamiye buluug khafiif ah dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "hogaamiye cawl khafiif ah dexter canton"
+  BANNER_SQUARE_TOP_LEFT_LIME: "hogaamiyaha lime dexter canton"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "hogaamiyaha magenta dexter canton"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "hogaamiyaha oranji dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PINK: "hogaamiyaha basali dexter canton"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lila hogaamiyaha dexter canton"
+  BANNER_SQUARE_TOP_LEFT_RED: "hogaamiyaha cas dexter canton"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "hogaamiyaha cadaanka dexter canton"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "hogaamiyaha jaallaha dexter canton"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "hogaamiyaha madow sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "hogaamiyaha buluuga sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "hogaamiyaha bunni sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "hogaamiyaha cyan sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "hogaamiyaha dameeri sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "hogaamiyaha cagaaran sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "hogaamiyaha buluug khafiif sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "hogaamiyaha cawl khafiif dexter canton"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "hogaamiyaha lime sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "hogaamiyaha magenta sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "hogaamiyaha liimi ah sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "hogaamiyaha basali sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "hogaamiyaha carwaajis sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_RED: "hogaamiyaha cas sinister canton"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "caddaan caaqil xumaan kanton"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "hogaamiyaha jaale sinister canton"
+  BANNER_STRAIGHT_CROSS_BLACK: "black cross"
+  BANNER_STRAIGHT_CROSS_BLUE: "blue cross"
+  BANNER_STRAIGHT_CROSS_BROWN: "brown cross"
+  BANNER_STRAIGHT_CROSS_CYAN: "cyan cross"
+  BANNER_STRAIGHT_CROSS_GRAY: "gray cross"
+  BANNER_STRAIGHT_CROSS_GREEN: "green cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "light blue cross"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "light gray cross"
+  BANNER_STRAIGHT_CROSS_LIME: "lime cross"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "magenta cross"
+  BANNER_STRAIGHT_CROSS_ORANGE: "orange cross"
+  BANNER_STRAIGHT_CROSS_PINK: "pink cross"
+  BANNER_STRAIGHT_CROSS_PURPLE: "purple cross"
+  BANNER_STRAIGHT_CROSS_RED: "red cross"
+  BANNER_STRAIGHT_CROSS_WHITE: "white cross"
+  BANNER_STRAIGHT_CROSS_YELLOW: "yellow cross"
+  BANNER_STRIPE_BOTTOM_BLACK: "saldhig madow"
+  BANNER_STRIPE_BOTTOM_BLUE: "buluug saldhig"
+  BANNER_STRIPE_BOTTOM_BROWN: "saldhig bunni"
+  BANNER_STRIPE_BOTTOM_CYAN: "saldhig cyan"
+  BANNER_STRIPE_BOTTOM_GRAY: "saldhig cawlan"
+  BANNER_STRIPE_BOTTOM_GREEN: "cagaar saldhig"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "saldhig buluug khafiif ah"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "saldhig cawl khafiif ah"
+  BANNER_STRIPE_BOTTOM_LIME: "saldhig lime"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "saldhig fuchsia"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranji saldhig"
+  BANNER_STRIPE_BOTTOM_PINK: "saldhig pink"
+  BANNER_STRIPE_BOTTOM_PURPLE: "saldhig guduudan"
+  BANNER_STRIPE_BOTTOM_RED: "saldhig casaan"
+  BANNER_STRIPE_BOTTOM_WHITE: "caddaan saldhig"
+  BANNER_STRIPE_BOTTOM_YELLOW: "saldhig jaale"
+  BANNER_STRIPE_CENTER_BLACK: "cirro madow"
+  BANNER_STRIPE_CENTER_BLUE: "cirro buluug"
+  BANNER_STRIPE_CENTER_BROWN: "cirro bunni"
+  BANNER_STRIPE_CENTER_CYAN: "cirro cyan"
+  BANNER_STRIPE_CENTER_GRAY: "cirro dameeri"
+  BANNER_STRIPE_CENTER_GREEN: "cirro akhtar"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "cirro iftiin buluug"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "cirro iftiin dameeri"
+  BANNER_STRIPE_CENTER_LIME: "cirro lime"
+  BANNER_STRIPE_CENTER_MAGENTA: "cirro magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "cirro limii"
+  BANNER_STRIPE_CENTER_PINK: "cirro basali"
+  BANNER_STRIPE_CENTER_PURPLE: "cirro carwaajis"
+  BANNER_STRIPE_CENTER_RED: "cirro casaan"
+  BANNER_STRIPE_CENTER_WHITE: "cirro casaan"
+  BANNER_STRIPE_CENTER_YELLOW: "cirro jaalle"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "madow geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "buluug geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "bunni geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "cyan geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "dameeri geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "cagaar geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "iftiin buluug geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "iftiin dameeri geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_LIME: "lime geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "liimi geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_PINK: "basali geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "carwaajis geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_RED: "casaan geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "caddaan geesal-bidix"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "jaalle geesal-bidix"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "madow geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "leexsan buluug"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "leexsan bunni"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "qaloocin cyan"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "qalooci cawl"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "cagaar geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "leexsan buluug khafiif ah"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "qalooci cawl khafiif ah"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "lime laablaabid"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "magenta geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "liimi geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "qalooci casaan"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "laalaab guduudan"
+  BANNER_STRIPE_DOWNRIGHT_RED: "casaan geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "caddaan geesal-xaq"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "jaalle leexsan"
+  BANNER_STRIPE_LEFT_BLACK: "cirro madow"
+  BANNER_STRIPE_LEFT_BLUE: "midab buluug ah oo buluug ah"
+  BANNER_STRIPE_LEFT_BROWN: "cirro bunni dexter"
+  BANNER_STRIPE_LEFT_CYAN: "cyan cirro dexter"
+  BANNER_STRIPE_LEFT_GRAY: "dexter cirro cawl"
+  BANNER_STRIPE_LEFT_GREEN: "cirro cagaar ah"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "qalab buluug khafiif ah oo cirro leh"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "dexter cirro cawl khafiif ah"
+  BANNER_STRIPE_LEFT_LIME: "lime cirro leh"
+  BANNER_STRIPE_LEFT_MAGENTA: "magenta cirro leh"
+  BANNER_STRIPE_LEFT_ORANGE: "midab liimi ah"
+  BANNER_STRIPE_LEFT_PINK: "midab casaan ah oo cirro leh"
+  BANNER_STRIPE_LEFT_PURPLE: "cawl cirro leh"
+  BANNER_STRIPE_LEFT_RED: "cirro guduudan"
+  BANNER_STRIPE_LEFT_WHITE: "dhaqaale cirro cad"
+  BANNER_STRIPE_LEFT_YELLOW: "midab huruud ah"
+  BANNER_STRIPE_MIDDLE_BLACK: "madow khadka dhexe"
+  BANNER_STRIPE_MIDDLE_BLUE: "buluug khadka dhexe"
+  BANNER_STRIPE_MIDDLE_BROWN: "bunni khadka dhexe"
+  BANNER_STRIPE_MIDDLE_CYAN: "cyan khadka dhexe"
+  BANNER_STRIPE_MIDDLE_GRAY: "dameeri khadka dhexe"
+  BANNER_STRIPE_MIDDLE_GREEN: "cagaar khadka dhexe"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "iftiin buluug khadka dhexe"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "iftiin dameeri khadka dhexe"
+  BANNER_STRIPE_MIDDLE_LIME: "lime khadka dhexe"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "magenta khadka dhexe"
+  BANNER_STRIPE_MIDDLE_ORANGE: "liimi khadka dhexe"
+  BANNER_STRIPE_MIDDLE_PINK: "basali khadka dhexe"
+  BANNER_STRIPE_MIDDLE_PURPLE: "carwaajis khadka dhexe"
+  BANNER_STRIPE_MIDDLE_RED: "casaan khadka dhexe"
+  BANNER_STRIPE_MIDDLE_WHITE: "caddaan khadka dhexe"
+  BANNER_STRIPE_MIDDLE_YELLOW: "jaalle khadka dhexe"
+  BANNER_STRIPE_RIGHT_BLACK: "xumaan madow cirro"
+  BANNER_STRIPE_RIGHT_BLUE: "xumaanta cirro buluuga ah"
+  BANNER_STRIPE_RIGHT_BROWN: "bunni cirro dembiilayaal"
+  BANNER_STRIPE_RIGHT_CYAN: "cirro cyan sinister"
+  BANNER_STRIPE_RIGHT_GRAY: "cirro dameeri sinister"
+  BANNER_STRIPE_RIGHT_GREEN: "cagaar ciro xun"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "cirro buluug khafiif ah sinister"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "cirro cawlan khafiif ah sinister"
+  BANNER_STRIPE_RIGHT_LIME: "cirro lime sinister"
+  BANNER_STRIPE_RIGHT_MAGENTA: "cirro magenta sinister"
+  BANNER_STRIPE_RIGHT_ORANGE: "cirro liimi sinister"
+  BANNER_STRIPE_RIGHT_PINK: "cirro basali sinister"
+  BANNER_STRIPE_RIGHT_PURPLE: "cirro carwaajis sinister"
+  BANNER_STRIPE_RIGHT_RED: "xumaanta cirro cas"
+  BANNER_STRIPE_RIGHT_WHITE: "cirro caddaan sinister"
+  BANNER_STRIPE_RIGHT_YELLOW: "jaalle cirro sinister"
+  BANNER_STRIPE_TOP_BLACK: "madax madow"
+  BANNER_STRIPE_TOP_BLUE: "madax buluug"
+  BANNER_STRIPE_TOP_BROWN: "madax bunni"
+  BANNER_STRIPE_TOP_CYAN: "madax cyan"
+  BANNER_STRIPE_TOP_GRAY: "madmax cawlan"
+  BANNER_STRIPE_TOP_GREEN: "madax cagaar"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "madax buluug khafiif ah"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "madax cawlan khafiif ah"
+  BANNER_STRIPE_TOP_LIME: "madmax lime"
+  BANNER_STRIPE_TOP_MAGENTA: "madmax magenta"
+  BANNER_STRIPE_TOP_ORANGE: "madmax oranji"
+  BANNER_STRIPE_TOP_PINK: "madmax casaan"
+  BANNER_STRIPE_TOP_PURPLE: "madax guduudan"
+  BANNER_STRIPE_TOP_RED: "madax cas"
+  BANNER_STRIPE_TOP_WHITE: "madmax caddaan"
+  BANNER_STRIPE_TOP_YELLOW: "madmax jaale"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "madow saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "buluug saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "bunni saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "cyan saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "dameeri saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "akhtar saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "iftiin buluug saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "iftiin dameeri saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_LIME: "lime saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "magenta saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "liimi saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_PINK: "basali"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "carwaajis saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_RED: "casaan saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "caddaan saddex xagal"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "jaalle saddex xagal"
+  BANNER_TRIANGLE_TOP_BLACK: "madow saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_BLUE: "buluug saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_BROWN: "bunni saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_CYAN: "cyan saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_GRAY: "dameeri saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_GREEN: "akhtar saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "iftiin buluug saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "iftiin dameeri saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_LIME: "lime saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_MAGENTA: "magenta saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_ORANGE: "liimi saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_PINK: "basali saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_PURPLE: "carwaajis saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_RED: "casaan saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_WHITE: "caddaan saddex xagal foorari"
+  BANNER_TRIANGLE_TOP_YELLOW: "jaalle saddex xagal foorari"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "madow hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "buluug hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "bunni hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "cyan hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "dameeri hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "akhtar hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "iftiin buluug hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "iftiin dameeri hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_LIME: "lime hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "magenta hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "liimi hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_PINK: "basali hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "carwaajis hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_RED: "casaan hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "caddaan hirarka aasaasiga"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "jaalle hirarka aasaasiga"
+  BANNER_TRIANGLES_TOP_BLACK: "madow foorari mawjad"
+  BANNER_TRIANGLES_TOP_BLUE: "buluug foorari mawjad"
+  BANNER_TRIANGLES_TOP_BROWN: "bunni foorari mawjad"
+  BANNER_TRIANGLES_TOP_CYAN: "cyan foorari mawjad"
+  BANNER_TRIANGLES_TOP_GRAY: "dameeri foorari mawjad"
+  BANNER_TRIANGLES_TOP_GREEN: "akhtar foorari mawjad"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "iftiin buluug foorari mawjad"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "iftiin dameeri foorari mawjad"
+  BANNER_TRIANGLES_TOP_LIME: "lime foorari mawjad"
+  BANNER_TRIANGLES_TOP_MAGENTA: "magenta foorari mawjad"
+  BANNER_TRIANGLES_TOP_ORANGE: "liimi foorari mawjad"
+  BANNER_TRIANGLES_TOP_PINK: "basali foorari mawjad"
+  BANNER_TRIANGLES_TOP_PURPLE: "carwaajis foorari mawjad"
+  BANNER_TRIANGLES_TOP_RED: "casaan foorari mawjad"
+  BANNER_TRIANGLES_TOP_WHITE: "caddaan foorari mawjad"
+  BANNER_TRIANGLES_TOP_YELLOW: "jaalle foorari mawjad"
+  BARREL: "foosto"
+  BARRIER: "ooday"
+  BASALT: "basalt\n"
+  BEACON: "iftiinka"
+  BEACON_PRIMARY: "awood kowaad"
+  BEACON_SECONDARY: "awood lawaad"
+  BED_NO_SLEEP: "waxaad seexan kartaa habeenka oo keliya ama xilliga duufaantu dhacdo\n"
+  BED_NOT_SAFE: "waxa laga yaabaa inaadan nasan hadda; waxaa jira daanyeero u dhow"
+  BED_OBSTRUCTED: "sariirtani waa mid xanniban"
+  BED_OCCUPIED: "sariirtan ayaa lagu dhexjiray"
+  BED_TOO_FAR_AWAY: "waxa laga yaabaa inaadan nasan hadda; sariirtu aad ayey uga fog tahay"
+  BEDROCK: "bedrock"
+  BEE_NEST: "shinni buul"
+  BEEHIVE: "guri shinni"
+  BEETROOTS: "bahalto"
+  BELL: "jal"
+  BIG_DRIPLEAF: "saxarka weyn"
+  BIG_DRIPLEAF_STEM: "shoppros weyn oo stem"
+  BIRCH_BUTTON: "geedka birch badhanka"
+  BIRCH_DOOR: "albaabka boodhka"
+  BIRCH_FENCE: "deedka birch"
+  BIRCH_FENCE_GATE: "albaabka birch fence"
+  BIRCH_HANGING_SIGN: "birch hanging sign"
+  BIRCH_LEAVES: "caleemaha birch"
+  BIRCH_LOG: "diiwaangelinta birch"
+  BIRCH_PLANKS: "qorshaha birch"
+  BIRCH_PRESSURE_PLATE: "cadaadiska birch cadaadiska"
+  BIRCH_SAPLING: "birch sapling"
+  BIRCH_SIGN: "saxiix bjørk"
+  BIRCH_SLAB: "bjørk xargaha"
+  BIRCH_STAIRS: "bjørk jaranjaro"
+  BIRCH_TRAPDOOR: "birch hatch"
+  BIRCH_WALL_HANGING_SIGN: "birch wall hanging sign"
+  BIRCH_WALL_SIGN: "bjørk derbiga saxiix"
+  BIRCH_WOOD: "geedka birch"
+  BLACK_BANNER: "calan madow"
+  BLACK_BED: "sariirta madow"
+  BLACK_CANDLE: "shumaca madoow"
+  BLACK_CANDLE_CAKE: "keeg leh shumaca madoow"
+  BLACK_CARPET: "black kaarbadka"
+  BLACK_CONCRETE: "madow la taaban karo"
+  BLACK_CONCRETE_POWDER: "madow budada la taaban karo"
+  BLACK_GLAZED_TERRACOTTA: "madow madxafka terracotta"
+  BLACK_SHULKER_BOX: "sanduuqa madow ee madow"
+  BLACK_STAINED_GLASS: "black wasakheeyey glass"
+  BLACK_STAINED_GLASS_PANE: "black wasakheeyey murayaad"
+  BLACK_TERRACOTTA: "ceramics madow"
+  BLACK_WOOL: "wool madow"
+  BLACKSTONE: "madoow\n"
+  BLACKSTONE_SLAB: "blackstone slab\n"
+  BLACKSTONE_STAIRS: "jaranjarada madoow\n"
+  BLACKSTONE_WALL: "darbiga madoow\n"
+  BLAST_FURNACE: "foornada qarxa"
+  BLUE_BANNER: "calan buluug ah"
+  BLUE_BED: "sariirta buluugga ah"
+  BLUE_CANDLE: "shumaca buluuga ah"
+  BLUE_CANDLE_CAKE: "keeg buluug buluug ah"
+  BLUE_CARPET: "blue kaarbadka"
+  BLUE_CONCRETE: "buluug la taaban karo"
+  BLUE_CONCRETE_POWDER: "buulug la taaban karo budada"
+  BLUE_GLAZED_TERRACOTTA: "buluug glazed terracotta"
+  BLUE_ICE: "baraf buluug ah"
+  BLUE_ORCHID: "buluug ubax"
+  BLUE_SHULKER_BOX: "sanduuqa shalker buluug"
+  BLUE_STAINED_GLASS: "blue wasakheeyey glass"
+  BLUE_STAINED_GLASS_PANE: "blue wasakheeyey murayaad"
+  BLUE_TERRACOTTA: "ceramics buluug"
+  BLUE_WOOL: "wool buluug ah"
+  BONE_BLOCK: "laf block"
+  BOOKSHELF: "shelf buugga"
+  BRAIN_CORAL: "maskaxda corta"
+  BRAIN_CORAL_BLOCK: "block coral block"
+  BRAIN_CORAL_FAN: "fanaanka coral maskaxda"
+  BRAIN_CORAL_WALL_FAN: "taageeraha darbiga darbiga maskaxda"
+  BREWING_STAND: "istaag taagan"
+  BRICK_SLAB: "lebbiska xargaha"
+  BRICK_STAIRS: "tallaabooyinka lebenka"
+  BRICK_WALL: "derbiga lebbiska"
+  BRICKS: "lebenkii"
+  BROWN_BANNER: "calan bunni ah"
+  BROWN_BED: "sariirta brown"
+  BROWN_CANDLE: "shumaca buniga ah"
+  BROWN_CANDLE_CAKE: "keeg leh shumaca buniga ah"
+  BROWN_CARPET: "brown kaarbadka"
+  BROWN_CONCRETE: "bunni la taaban karo"
+  BROWN_CONCRETE_POWDER: "bunni budada la taaban karo"
+  BROWN_GLAZED_TERRACOTTA: "bunni madxafka terracotta"
+  BROWN_MUSHROOM: "likaha bunn"
+  BROWN_MUSHROOM_BLOCK: "cube likaha kafee"
+  BROWN_SHULKER_BOX: "sanduuqa shaleefka bunni"
+  BROWN_STAINED_GLASS: "brown wasakheeyey glass"
+  BROWN_STAINED_GLASS_PANE: "brown wasakheeyey murayaad"
+  BROWN_TERRACOTTA: "ceramics bunni"
+  BROWN_WOOL: "wool brown"
+  BUBBLE_COLUMN: "tiirka xumbo"
+  BUBBLE_CORAL: "coral xumbo"
+  BUBBLE_CORAL_BLOCK: "xumbo coral block"
+  BUBBLE_CORAL_FAN: "8 fan xumbo coral"
+  BUBBLE_CORAL_WALL_FAN: "xumbo taageeraha darbiga coral"
+  BUDDING_AMETHYST: "ametida budding"
+  CACTUS: "tiin"
+  CAKE: "cake"
+  CALCITE: "calcite\n"
+  CALIBRATED_SCULK_SENSOR: "calibrated sculk sensor"
+  CAMPFIRE: "xarada dabkah"
+  CANDLE: "shumac"
+  CANDLE_CAKE: "cake shumaca"
+  CARROTS: "karooto"
+  CARTOGRAPHY_TABLE: "miiska sawirka"
+  CARVED_PUMPKIN: "xaraash"
+  CAULDRON: "kuleylka"
+  CAVE_AIR: "hawada qaboojinta"
+  CAVE_VINES: "cawska godka"
+  CAVE_VINES_PLANT: "goynta geedaha geedaha"
+  CHAIN: "silsilad"
+  CHAIN_COMMAND_BLOCK: "ku celcelinta leben amarka"
+  CHERRY_BUTTON: "cherry button"
+  CHERRY_DOOR: "cherry door"
+  CHERRY_FENCE: "cherry fence"
+  CHERRY_FENCE_GATE: "cherry fence gate"
+  CHERRY_HANGING_SIGN: "cherry hanging sign"
+  CHERRY_LEAVES: "cherry leaves"
+  CHERRY_LOG: "cherry log"
+  CHERRY_PLANKS: "cherry planks"
+  CHERRY_PRESSURE_PLATE: "cherry pressure plate"
+  CHERRY_SAPLING: "cherry sapling"
+  CHERRY_SIGN: "cherry sign"
+  CHERRY_SLAB: "cherry slab"
+  CHERRY_STAIRS: "cherry stairs"
+  CHERRY_TRAPDOOR: "cherry trapdoor"
+  CHERRY_WALL_HANGING_SIGN: "cherry wall hanging sign"
+  CHERRY_WALL_SIGN: "cherry wall sign"
+  CHERRY_WOOD: "cherry wood"
+  CHEST: "sanduuq"
+  CHIPPED_ANVIL: "xanrunta jaban"
+  CHISELED_BOOKSHELF: "chiseled bookshelf"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "qoto dheer dhagax jeexan"
+  CHISELED_NETHER_BRICKS: "jidadka loo yaqaan 'chiseled nether brick'\n"
+  CHISELED_POLISHED_BLACKSTONE: "dhagax dallaaley ah\n"
+  CHISELED_QUARTZ_BLOCK: "chiseled xannibaadda quarterz"
+  CHISELED_RED_SANDSTONE: "qoray red sandstone"
+  CHISELED_SANDSTONE: "qoray sandstone"
+  CHISELED_STONE_BRICKS: "lebenkii qoray stone"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "ubax chorus"
+  CHORUS_PLANT: "warshad chorus"
+  CLAY: "clay"
+  COAL_BLOCK: "dhuxusha dhuxusha"
+  COAL_ORE: "dhuxul ore"
+  COARSE_DIRT: "stony ground"
+  COBBLED_DEEPSLATE: "dhagaxyo qoto dheer"
+  COBBLED_DEEPSLATE_SLAB: "qoto dheer dhagax saxan"
+  COBBLED_DEEPSLATE_STAIRS: "qoto dheer dhagax jaranjaro"
+  COBBLED_DEEPSLATE_WALL: "qoto dheer dhagax derbi"
+  COBBLESTONE: "cobblestone"
+  COBBLESTONE_SLAB: "samysan bulukeeti"
+  COBBLESTONE_STAIRS: "jaranjarooyinka cobblestone"
+  COBBLESTONE_WALL: "gidaarka dhagaxa ah"
+  COBWEB: "webka"
+  COCOA: "kookaha"
+  COMMAND_BLOCK: "lebenkii amarka"
+  COMPARATOR: "is barbar dhig dhagax cas"
+  COMPOSTER: "dib u warshadaynta"
+  CONDUIT: "biyomareenka"
+  COPPER_BLOCK: "block of copper"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "macdanta naxaasta ah"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "miisaanka qulqulka"
+  CRACKED_DEEPSLATE_BRICKS: "lebenkii deepslate ee dillaacay"
+  CRACKED_DEEPSLATE_TILES: "lebenkii deepslate ee dillaacay"
+  CRACKED_NETHER_BRICKS: "burburkii nether brick\n"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "dhagax madoow oo la jeexjeexay\n"
+  CRACKED_STONE_BRICKS: "lebenkii qoray stone"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "workbench"
+  CREEPER_HEAD: "madaxa creeper"
+  CREEPER_WALL_HEAD: "madaxa derbiga derbiga"
+  CRIMSON_BUTTON: "jaranjarooyinka dulmiga ah\n"
+  CRIMSON_DOOR: "albaabka dambiilaha\n"
+  CRIMSON_FENCE: "garyaqaan fardowso\n"
+  CRIMSON_FENCE_GATE: "albaabada fudud"
+  CRIMSON_FUNGUS: "crimson fungus"
+  CRIMSON_HANGING_SIGN: "crimson hanging sign"
+  CRIMSON_HYPHAE: "dambiilaha caanka ah\n"
+  CRIMSON_NYLIUM: "crimson nylium\n"
+  CRIMSON_PLANKS: "planson planson\n"
+  CRIMSON_PRESSURE_PLATE: "cadaadiska cadaadiska\n"
+  CRIMSON_ROOTS: "xididdada gaduudka"
+  CRIMSON_SIGN: "calaamadda cas"
+  CRIMSON_SLAB: "crimson slab\n"
+  CRIMSON_STAIRS: "jaranjarooyinka dulmiga ah\n"
+  CRIMSON_STEM: "dembiilaha dambiilaha\n"
+  CRIMSON_TRAPDOOR: "crimson trapdoor\n"
+  CRIMSON_WALL_HANGING_SIGN: "crimson wall hanging sign"
+  CRIMSON_WALL_SIGN: "crimson calaamadda darbiga"
+  CRYING_OBSIDIAN: "oohinta obsidian\n"
+  CUT_COPPER: "jaro maarta"
+  CUT_COPPER_SLAB: "iska jar naxaasta"
+  CUT_COPPER_STAIRS: "\niska yaree jaranjarada maarta"
+  CUT_RED_SANDSTONE: "iska yaree sanduuqa casaanka ah"
+  CUT_RED_SANDSTONE_SLAB: "cut red sandstone slab"
+  CUT_SANDSTONE: "iska yaree sanduuqa"
+  CUT_SANDSTONE_SLAB: "iska yaree sandstone slab"
+  CYAN_BANNER: "calan buluug khafiif ah"
+  CYAN_BED: "sariirta cran"
+  CYAN_CANDLE: "shumaca cyan"
+  CYAN_CANDLE_CAKE: "keeg leh shumaca cyan"
+  CYAN_CARPET: "cyan kaarbadka"
+  CYAN_CONCRETE: "cury la taaban karo"
+  CYAN_CONCRETE_POWDER: "cyan budada la taaban karo"
+  CYAN_GLAZED_TERRACOTTA: "cran glazed terracotta"
+  CYAN_SHULKER_BOX: "sanduuqa crancan shulker"
+  CYAN_STAINED_GLASS: "cyan wasakheeyey glass"
+  CYAN_STAINED_GLASS_PANE: "cyan wasakheeyey murayaad"
+  CYAN_TERRACOTTA: "cyan terracotta"
+  CYAN_WOOL: "cyan wool"
+  DAMAGED_ANVIL: "xudun yar oo jabtay"
+  DANDELION: "løvetann"
+  DARK_OAK_BUTTON: "badhanka oak madow"
+  DARK_OAK_DOOR: "madow oak albaabka"
+  DARK_OAK_FENCE: "xayndaabka oak madoow"
+  DARK_OAK_FENCE_GATE: "albaabka madow ee oak fence"
+  DARK_OAK_HANGING_SIGN: "dark oak hanging sign"
+  DARK_OAK_LEAVES: "caleemaha geedkii mugdiga"
+  DARK_OAK_LOG: "mishiinka madow"
+  DARK_OAK_PLANKS: "qorshooyin mugdi ah miro"
+  DARK_OAK_PRESSURE_PLATE: "cadaadiska cadaadiska acacia"
+  DARK_OAK_SAPLING: "madow oak sapling"
+  DARK_OAK_SIGN: "dhirta madow saxiix"
+  DARK_OAK_SLAB: "madow dhuxusha xargaha"
+  DARK_OAK_STAIRS: "madow dhuxusha jaranjaro"
+  DARK_OAK_TRAPDOOR: "madow oak albaabka"
+  DARK_OAK_WALL_HANGING_SIGN: "dark oak wall hanging sign"
+  DARK_OAK_WALL_SIGN: "saxiixa mugta dhuxusha"
+  DARK_OAK_WOOD: "dhirta madow geedka"
+  DARK_PRISMARINE: "maskax madoobaadka"
+  DARK_PRISMARINE_SLAB: "madow prismarine xargaha"
+  DARK_PRISMARINE_STAIRS: "jaranjarada prismarine jaranjarada"
+  DAYLIGHT_DETECTOR: "qalabka maalinlaha"
+  DEAD_BRAIN_CORAL: "coral maskaxda dhintay"
+  DEAD_BRAIN_CORAL_BLOCK: "dhimashada maskaxda maskaxda maskaxda"
+  DEAD_BRAIN_CORAL_FAN: "fankii coral maskaxda dhintay"
+  DEAD_BRAIN_CORAL_WALL_FAN: "maskaxda dhintay taageeraha darbiga coral"
+  DEAD_BUBBLE_CORAL: "coral xumbo dhintay"
+  DEAD_BUBBLE_CORAL_BLOCK: "coral xumbo dhintay xannibaad"
+  DEAD_BUBBLE_CORAL_FAN: "fan xumbo coral fan"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "xumbo dhintay coral wall fan"
+  DEAD_BUSH: "baadiyaha dhintay"
+  DEAD_FIRE_CORAL: "dhuxul dabka dhimatay"
+  DEAD_FIRE_CORAL_BLOCK: "dhuxul dabka dhimatay xannibaad"
+  DEAD_FIRE_CORAL_FAN: "fanaanka dabka dhimatay"
+  DEAD_FIRE_CORAL_WALL_FAN: "dabka dhintay taageeraha darbiga coral"
+  DEAD_HORN_CORAL: "coralhorn dhintay"
+  DEAD_HORN_CORAL_BLOCK: "dhimashada coral hom xannibaad"
+  DEAD_HORN_CORAL_FAN: "fanaanka geeska geeska dhintay"
+  DEAD_HORN_CORAL_WALL_FAN: "dabka dhintay taageeraha darbiga coral"
+  DEAD_TUBE_CORAL: "coral tube dhintay"
+  DEAD_TUBE_CORAL_BLOCK: "tube dhintay coral block\n"
+  DEAD_TUBE_CORAL_FAN: "tube dhintay coral fan"
+  DEAD_TUBE_CORAL_WALL_FAN: "tube dhintay coral wall coral"
+  DECORATED_POT: "decorated pot"
+  DEEPSLATE: "qeexid"
+  DEEPSLATE_BRICK_SLAB: "leben dhagaxa qoto dheer jaranjaro"
+  DEEPSLATE_BRICK_STAIRS: "leben dhagaxa qoto dheer jaranjaro"
+  DEEPSLATE_BRICK_WALL: "leben dhagaxa qoto dheer derbi"
+  DEEPSLATE_BRICKS: "leben dhagaxa qoto dheer"
+  DEEPSLATE_COAL_ORE: "dhuxusha qotada dheereysa"
+  DEEPSLATE_COPPER_ORE: "deepslate naxaaska copper"
+  DEEPSLATE_DIAMOND_ORE: "qoto dheer dheeman dheeman"
+  DEEPSLATE_EMERALD_ORE: "qoto-dheer oo qoto dheer"
+  DEEPSLATE_GOLD_ORE: "qoto dheer oo dahab ah"
+  DEEPSLATE_IRON_ORE: "qoto dheer ee birta"
+  DEEPSLATE_LAPIS_ORE: "qoto dheer oo jilicsan lapis lazuli ore"
+  DEEPSLATE_REDSTONE_ORE: "qoto-dheer oo guduudan oo guduudan"
+  DEEPSLATE_TILE_SLAB: "leben dhagaxa qoto dheer jaranjaro"
+  DEEPSLATE_TILE_STAIRS: "leben dhagaxa qoto dheer jaranjaro"
+  DEEPSLATE_TILE_WALL: "leben dhagaxa qoto dheer derbi"
+  DEEPSLATE_TILES: "leben dhagaxa qoto dheer saxan"
+  DETECTOR_RAIL: "dareemayaal biraha"
+  DIAMOND_BLOCK: "joojinta ee dheeman"
+  DIAMOND_ORE: "dheeman dheeman"
+  DIORITE: "diorite"
+  DIORITE_SLAB: "qolka diorite"
+  DIORITE_STAIRS: "jaranjarada diorite"
+  DIORITE_WALL: "derbiga diorite"
+  DIRT: "wasakh"
+  DIRT_PATH: "wadada wasakhda ah"
+  DISPENSER: "fasax"
+  DRAGON_EGG: "ukunta masduulaagii"
+  DRAGON_HEAD: "masduulaagii maxada"
+  DRAGON_WALL_HEAD: "madaxa derbiga ee maskaxda"
+  DRIED_KELP_BLOCK: "kelp qalalan"
+  DRIPSTONE_BLOCK: "dhibic dhagax xannibaadda"
+  DROPPER: "cajiin"
+  EMERALD_BLOCK: "block of emerald"
+  EMERALD_ORE: "emerald ore"
+  ENCHANTING_TABLE: "miiska sixirka"
+  END_GATEWAY: "dhamee albaabka"
+  END_PORTAL: "xariirka dhamaadka"
+  END_PORTAL_FRAME: "qaabka end portal"
+  END_ROD: "dhamaadka usha"
+  END_STONE: "dhagax dhamaadka"
+  END_STONE_BRICK_SLAB: "soo afjaro lebbiska dhagxaanta"
+  END_STONE_BRICK_STAIRS: "joojiya jaranjarada lebenka dhagaxa"
+  END_STONE_BRICK_WALL: "dheji derbiga lebbiska dhagaxa"
+  END_STONE_BRICKS: "dhamaadka dhagaxa dhagaxa"
+  ENDER_CHEST: "weelka ender"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "naxaas la kashifay"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "naxaas goos goos ah"
+  EXPOSED_CUT_COPPER_SLAB: "basaasid goobo nabar"
+  EXPOSED_CUT_COPPER_STAIRS: "jaranjarooyinka copper cut"
+  FARMLAND: "beeraley"
+  FERN: "fern"
+  FIRE: "dabka"
+  FIRE_CORAL: "dhuxul dabka"
+  FIRE_CORAL_BLOCK: "dab-damiska dab_damiska"
+  FIRE_CORAL_FAN: "fanaanka xidigaha geeska"
+  FIRE_CORAL_WALL_FAN: "dabka taageeraha darbiga coral"
+  FLETCHING_TABLE: "miis jeexan"
+  FLOWER_POT: "dheriga ubaxa"
+  FLOWERING_AZALEA: "azalea"
+  FLOWERING_AZALEA_LEAVES: "caleemaha azalea"
+  FROGSPAWN: "frogspawn"
+  FROSTED_ICE: "baraf barafoobay"
+  FURNACE: "foornada"
+  GILDED_BLACKSTONE: "gelded blackstone\n"
+  GLASS: "galaas"
+  GLASS_PANE: "murayaad"
+  GLOW_LICHEN: "glow lichen"
+  GLOWSTONE: "glowstone"
+  GOLD_BLOCK: "block oo dahab"
+  GOLD_ORE: "hadal dahab ah"
+  GRANITE: "granit"
+  GRANITE_SLAB: "boorashka granite"
+  GRANITE_STAIRS: "jaranjarada granite"
+  GRANITE_WALL: "derbiga granite"
+  GRASS: "cows"
+  GRASS_BLOCK: "block grass"
+  GRAVEL: "isbahaysiga"
+  GRAY_BANNER: "calan cawlan"
+  GRAY_BED: "sariir rasaasi"
+  GRAY_CANDLE: "shumaca gray"
+  GRAY_CANDLE_CAKE: "keeg leh shumaca gray"
+  GRAY_CARPET: "gray kaarbadka"
+  GRAY_CONCRETE: "la taaban karo"
+  GRAY_CONCRETE_POWDER: "dameeri budada la taaban karo"
+  GRAY_GLAZED_TERRACOTTA: "oranji glazed terracotta"
+  GRAY_SHULKER_BOX: "sanduuqa cawlan"
+  GRAY_STAINED_GLASS: "gray wasakheeyey glass"
+  GRAY_STAINED_GLASS_PANE: "gray wasakheeyey murayaad"
+  GRAY_TERRACOTTA: "grey terracotta"
+  GRAY_WOOL: "wool cirro"
+  GREEN_BANNER: "calan cagaaran"
+  GREEN_BED: "sariir cagaaran"
+  GREEN_CANDLE: "shumaca cagaaran"
+  GREEN_CANDLE_CAKE: "keeg leh shumaca cagaaran"
+  GREEN_CARPET: "green kaarbadka"
+  GREEN_CONCRETE: "cagaaran la taaban karo"
+  GREEN_CONCRETE_POWDER: "cagaar budada la taaban karo"
+  GREEN_GLAZED_TERRACOTTA: "grown glazed terracotta"
+  GREEN_SHULKER_BOX: "sanduuqa cagaaran"
+  GREEN_STAINED_GLASS: "green wasakheeyey glass"
+  GREEN_STAINED_GLASS_PANE: "green wasakheeyey murayaad"
+  GREEN_TERRACOTTA: "ceramics cagaaran"
+  GREEN_WOOL: "wool cagaaran"
+  GRINDSTONE: "garaacid"
+  HANGING_ROOTS: "xididdada sudhan"
+  HAY_BLOCK: "sheaf ee hay"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "culayska cadaadiska culus"
+  HONEY_BLOCK: "malab block"
+  HONEYCOMB_BLOCK: "xanibida malab"
+  HOPPER: "miro hod lagu dhisan"
+  HORN_CORAL: "horn coral"
+  HORN_CORAL_BLOCK: "xayndaabka geeska"
+  HORN_CORAL_FAN: "fanaanka xidigaha geeska"
+  HORN_CORAL_WALL_FAN: "dabka taageeraha darbiga coral"
+  ICE: "baraf"
+  INFESTED_CHISELED_STONE_BRICKS: "bulukeeti xardho"
+  INFESTED_COBBLESTONE: "cudurka loo yaqaan "
+  INFESTED_CRACKED_STONE_BRICKS: "lebenkii qoray stone"
+  INFESTED_DEEPSLATE: "siman qoto dheer dhagax"
+  INFESTED_MOSSY_STONE_BRICKS: "lebenkii qoray stone"
+  INFESTED_STONE: "dhagax la jeexay"
+  INFESTED_STONE_BRICKS: "lebenkii qoray stone"
+  IRON_BARS: "baararka iron"
+  IRON_BLOCK: "block ee iron"
+  IRON_DOOR: "albaab bir ah"
+  IRON_ORE: "iron mare"
+  IRON_TRAPDOOR: "birch hatch"
+  JACK_O_LANTERN: "jack olantern"
+  JIGSAW: "xujo jigsaw"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "geedaha kuleylaha badhanka"
+  JUNGLE_DOOR: "jungle albaabka"
+  JUNGLE_FENCE: "xayndaabka geedka tropical"
+  JUNGLE_FENCE_GATE: "albaabka kaymaha jungle"
+  JUNGLE_HANGING_SIGN: "jungle hanging sign"
+  JUNGLE_LEAVES: "hawdka caleen"
+  JUNGLE_LOG: "diiwaangelinta jungle"
+  JUNGLE_PLANKS: "qorshaha jungle"
+  JUNGLE_PRESSURE_PLATE: "cadaadiska cadaadiska jungle"
+  JUNGLE_SAPLING: "jungle sapling"
+  JUNGLE_SIGN: "duurjoogta saxiix"
+  JUNGLE_SLAB: "duurjoogta xargaha"
+  JUNGLE_STAIRS: "duurjoogta jaranjaro"
+  JUNGLE_TRAPDOOR: "hatch geedka tropical"
+  JUNGLE_WALL_HANGING_SIGN: "jungle wall hanging sign"
+  JUNGLE_WALL_SIGN: "duurjoogta derbiga saxiix"
+  JUNGLE_WOOD: "hawdka alwaax"
+  KELP: "kelp"
+  KELP_PLANT: "caleemaha kelp"
+  LADDER: "jaranjarada"
+  LANTERN: "cirifka"
+  LAPIS_BLOCK: "block lapis lazuli"
+  LAPIS_ORE: "lapis lazuli ore"
+  LARGE_AMETHYST_BUD: "bud weyn oo ametusti ah"
+  LARGE_FERN: "ferning fern"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lava cauldron"
+  LECTERN: "lectern"
+  LEVER: "kabaal"
+  LIGHT: "iftiin"
+  LIGHT_BLUE_BANNER: "calan buluug khafiif ah"
+  LIGHT_BLUE_BED: "sariir qafiif buluug"
+  LIGHT_BLUE_CANDLE: "shumac buluug iftiin ah"
+  LIGHT_BLUE_CANDLE_CAKE: "keeg leh shumac fudud oo buluug ah"
+  LIGHT_BLUE_CARPET: "light blue kaarbadka"
+  LIGHT_BLUE_CONCRETE: "buluug buluug ah oo fudud"
+  LIGHT_BLUE_CONCRETE_POWDER: "iftiin buluug budada la taaban karo"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "blass buluug iftiin leh oo buluug ah"
+  LIGHT_BLUE_SHULKER_BOX: "sanduuqa shalker buluug ah oo fudud"
+  LIGHT_BLUE_STAINED_GLASS: "light blue wasakheeyey glass"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "light blue wasakheeyey murayaad"
+  LIGHT_BLUE_TERRACOTTA: "ceramics dhalaalaya buluug"
+  LIGHT_BLUE_WOOL: "dhogorta dhalaalaya buluug"
+  LIGHT_GRAY_BANNER: "calan cawlan fudud"
+  LIGHT_GRAY_BED: "sariir cawlan oo fudud"
+  LIGHT_GRAY_CANDLE: "shumac fudud"
+  LIGHT_GRAY_CANDLE_CAKE: "keeg leh shumac fudud"
+  LIGHT_GRAY_CARPET: "light gray kaarbadka"
+  LIGHT_GRAY_CONCRETE: "iftiiminta cawlan"
+  LIGHT_GRAY_CONCRETE_POWDER: "iftiin dameeri budada la taaban karo"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "grod fer tracotta"
+  LIGHT_GRAY_SHULKER_BOX: "sanduuqa shuck schker fudud"
+  LIGHT_GRAY_STAINED_GLASS: "light gray wasakheeyey glass"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "light gray wasakheeyey murayaad"
+  LIGHT_GRAY_TERRACOTTA: "iftiimin gray terracotta"
+  LIGHT_GRAY_WOOL: "wool light grey light"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "cadaadiska cadaadiska iftiiminta khafiifka ah"
+  LIGHTNING_ROD: "usha hillaaca"
+  LILAC: "lilac"
+  LILY_OF_THE_VALLEY: "tufaaxa dooxada"
+  LILY_PAD: "lily pad"
+  LIME_BANNER: "calan cagaaran oo khafiif ah"
+  LIME_BED: "sariir lime"
+  LIME_CANDLE: "shumaca liinta"
+  LIME_CANDLE_CAKE: "keeg leh shumaca lime"
+  LIME_CARPET: "lime kaarbadka"
+  LIME_CONCRETE: "akhtar cagaaran la taaban karo too"
+  LIME_CONCRETE_POWDER: "akhtar budada la taaban karo"
+  LIME_GLAZED_TERRACOTTA: "cadcad cad oo loo yaqaan terracotta"
+  LIME_SHULKER_BOX: "sanduuqa lime sholker"
+  LIME_STAINED_GLASS: "lime wasakheeyey glass"
+  LIME_STAINED_GLASS_PANE: "lime wasakheeyey murayaad"
+  LIME_TERRACOTTA: "ceramics lime"
+  LIME_WOOL: "dhogor lime"
+  LODESTONE: "lodestone"
+  LOOM: "dhar"
+  MAGENTA_BANNER: "calan magenta"
+  MAGENTA_BED: "sariir magenta"
+  MAGENTA_CANDLE: "magenta shumaca"
+  MAGENTA_CANDLE_CAKE: "keeg leh magenta shumaca"
+  MAGENTA_CARPET: "magenta kaarbadka"
+  MAGENTA_CONCRETE: "basalicarwaajis la taaban karo"
+  MAGENTA_CONCRETE_POWDER: "basalicarwaajis budada la taaban karo"
+  MAGENTA_GLAZED_TERRACOTTA: "cadcad cad oo loo yaqaan terracotta"
+  MAGENTA_SHULKER_BOX: "magenta shuller sanduuqa"
+  MAGENTA_STAINED_GLASS: "magenta wasakheeyey glass"
+  MAGENTA_STAINED_GLASS_PANE: "magenta wasakheeyey murayaad"
+  MAGENTA_TERRACOTTA: "ceramics magenta"
+  MAGENTA_WOOL: "dhogorta magneta"
+  MAGMA_BLOCK: "dhagaxa block"
+  MANGROVE_BUTTON: "badhanka mangrove"
+  MANGROVE_DOOR: "albaabka mangrove"
+  MANGROVE_FENCE: "dayrka mangrove"
+  MANGROVE_FENCE_GATE: "albaabka deedka mangrove"
+  MANGROVE_HANGING_SIGN: "mangrove hanging sign"
+  MANGROVE_LEAVES: "caleenta mangrove"
+  MANGROVE_LOG: "diiwaan gelinta mangrove"
+  MANGROVE_PLANKS: "looxaan mangrove"
+  MANGROVE_PRESSURE_PLATE: "saxanka cadaadiska mangrove"
+  MANGROVE_PROPAGULE: "faafin mangrove"
+  MANGROVE_ROOTS: "xididda mangrove"
+  MANGROVE_SIGN: "calaamadda mangrove"
+  MANGROVE_SLAB: "slab mangrove"
+  MANGROVE_STAIRS: "jaranjarada mangrove"
+  MANGROVE_TRAPDOOR: "mangrove logmangrove trapdoor"
+  MANGROVE_WALL_HANGING_SIGN: "mangrove wall hanging sign"
+  MANGROVE_WALL_SIGN: "calaamadda gidaarka mangrove"
+  MANGROVE_WOOD: "qoryaha mangrove"
+  MEDIUM_AMETHYST_BUD: "dhexdhexaad amethyst bud"
+  MELON: "qaraha"
+  MELON_STEM: "qaraha qaraha"
+  MOSS_BLOCK: "moss xannibaadda"
+  MOSS_CARPET: "rooga moss"
+  MOSSY_COBBLESTONE: "ajaa cawska"
+  MOSSY_COBBLESTONE_SLAB: "mossy cottonblestone slab"
+  MOSSY_COBBLESTONE_STAIRS: "jaranjarooyinka mossy"
+  MOSSY_COBBLESTONE_WALL: "darbiga dhagxaanta mossy"
+  MOSSY_STONE_BRICK_SLAB: "lebbiska dhagxaanta dhagaxa ah"
+  MOSSY_STONE_BRICK_STAIRS: "jaranjarooyinka lebiska dhagaxa ah"
+  MOSSY_STONE_BRICK_WALL: "derbiga lebiska dhagaxa ah"
+  MOSSY_STONE_BRICKS: "jaranjarooyinka lebiska dhagaxa ah"
+  MOVING_PISTON: "dhaqaaqin galab"
+  MUD: "dhoobo"
+  MUD_BRICK_SLAB: "duubka dhoobada"
+  MUD_BRICK_STAIRS: "jaranjaro dhoobo ah"
+  MUD_BRICK_WALL: "derbiga dhoobada ah"
+  MUD_BRICKS: "leben dhoobo ah"
+  MUDDY_MANGROVE_ROOTS: "xididdada mangrove muddy"
+  MUSHROOM_STEM: "lugta likaha"
+  MYCELIUM: "mycelium"
+  NETHER_BRICK_FENCE: "xayndaabka nezer"
+  NETHER_BRICK_SLAB: "nether brick slab"
+  NETHER_BRICK_STAIRS: "jaranjarada nether brick"
+  NETHER_BRICK_WALL: "derbiga lebiska"
+  NETHER_BRICKS: "lebenkii jahannamada"
+  NETHER_GOLD_ORE: "nether gold ore\n"
+  NETHER_PORTAL: "xulka nether portal"
+  NETHER_QUARTZ_ORE: "jutchz"
+  NETHER_SPROUTS: "noocyada ee loo yaqaan 'nether sprouts'"
+  NETHER_WART: "nether wart"
+  NETHER_WART_BLOCK: "kala soco wart block"
+  NETHERITE_BLOCK: "xirmooyinka netherite\n"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "xusuus qor"
+  OAK_BUTTON: "badhanka oak"
+  OAK_DOOR: "oak albaabka"
+  OAK_FENCE: "bowd oak"
+  OAK_FENCE_GATE: "albaabka oak fence"
+  OAK_HANGING_SIGN: "oak hanging sign"
+  OAK_LEAVES: "caleemaha oak"
+  OAK_LOG: "qoraallo kulul"
+  OAK_PLANKS: "qorshooyin mugdi"
+  OAK_PRESSURE_PLATE: "mashiinka cadaadiska"
+  OAK_SAPLING: "oak sapling"
+  OAK_SIGN: "calaamadda maqalka"
+  OAK_SLAB: "dhuxusha xargaha"
+  OAK_STAIRS: "talaabooyinka oak"
+  OAK_TRAPDOOR: "oak hatch"
+  OAK_WALL_HANGING_SIGN: "oak wall hanging sign"
+  OAK_WALL_SIGN: "derbiga weyn saxiix"
+  OAK_WOOD: "oak"
+  OBSERVER: "fiirso"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "ochre froglight"
+  OMINOUS_BANNER: "calanka xun"
+  ORANGE_BANNER: "calan oranji"
+  ORANGE_BED: "sariir burtiqaal"
+  ORANGE_CANDLE: "shumaca liinta"
+  ORANGE_CANDLE_CAKE: "ku kariso shumaca liinta"
+  ORANGE_CARPET: "orange kaarbadka"
+  ORANGE_CONCRETE: "la taaban karo oranji"
+  ORANGE_CONCRETE_POWDER: "liimi budada la taaban karo"
+  ORANGE_GLAZED_TERRACOTTA: "oranji glazed terracotta"
+  ORANGE_SHULKER_BOX: "sanduuqa shalker oranji"
+  ORANGE_STAINED_GLASS: "orange wasakheeyey glass"
+  ORANGE_STAINED_GLASS_PANE: "orange wasakheeyey murayaad"
+  ORANGE_TERRACOTTA: "ceramics oranji"
+  ORANGE_TULIP: "tulip oranji"
+  ORANGE_WOOL: "dhogorta oranji"
+  OXEYE_DAISY: "chamomile"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "copper oxidized"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "copper oxidized"
+  OXIDIZED_CUT_COPPER_SLAB: "dharka nadiifinta nadiifinta"
+  OXIDIZED_CUT_COPPER_STAIRS: "jaranjarooyinka naxaasta la jarjaray"
+  PACKED_ICE: "ice buuxiyey"
+  PACKED_MUD: "mud la soo buuxiyay"
+  PEARLESCENT_FROGLIGHT: "iftiinka ubaxa"
+  PEONY: "peony"
+  PETRIFIED_OAK_SLAB: "petvidence oak slab"
+  PIGLIN_HEAD: "piglin head"
+  PIGLIN_WALL_HEAD: "piglin wall head"
+  PINK_BANNER: "calan casaan ah"
+  PINK_BED: "sariir basaly"
+  PINK_CANDLE: "shumac casaan"
+  PINK_CANDLE_CAKE: "keeg leh shumaca casaanka ah"
+  PINK_CARPET: "pink kaarbadka"
+  PINK_CONCRETE: "basali la taaban karo"
+  PINK_CONCRETE_POWDER: "basali budada la taaban karo"
+  PINK_GLAZED_TERRACOTTA: "casaan dhalaalaya terracotta"
+  PINK_PETALS: "pink petals"
+  PINK_SHULKER_BOX: "sanduuqa shalker pink"
+  PINK_STAINED_GLASS: "pink wasakheeyey glass"
+  PINK_STAINED_GLASS_PANE: "pink wasakheeyey murayaad"
+  PINK_TERRACOTTA: "ceramics casaan"
+  PINK_TULIP: "ubax guduudan khafiif"
+  PINK_WOOL: "dhogor casaan"
+  PISTON: "qalab"
+  PISTON_HEAD: "galab madaxa"
+  PITCHER_CROP: "pitcher crop"
+  PITCHER_PLANT: "pitcher plant"
+  PLAYER_HEAD: "madaxa cayaaraha"
+  PLAYER_HEAD_NAMED: "%s's madaxa"
+  PLAYER_WALL_HEAD: "madaxa gidaarka ciyaaryahanka"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "dhibic dhagax tilmaamaya"
+  POLISHED_ANDESITE: "smooth andesite"
+  POLISHED_ANDESITE_SLAB: "daboolan oo laysku qurxiyo"
+  POLISHED_ANDESITE_STAIRS: "jaranjarooyinka laysku qurxiyo"
+  POLISHED_BASALT: "basalt polured\n"
+  POLISHED_BLACKSTONE: "madoowga madoow\n"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "dhagaxa madow ee loo yaqaan 'blackstone brick slab'\n"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "jaranjarada dhagaxa ah ee loo yaqaan 'blackstone briit'\n"
+  POLISHED_BLACKSTONE_BRICK_WALL: "darbiga madoow ee dhagaxa ah\n"
+  POLISHED_BLACKSTONE_BRICKS: "laydhka madoow ee la dhajiyay\n"
+  POLISHED_BLACKSTONE_BUTTON: "bambada madow ee la nuujiyey\n"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "cadaadiska cadaanka madoow ee cadaanka ah\n"
+  POLISHED_BLACKSTONE_SLAB: "madoowga madoow\n"
+  POLISHED_BLACKSTONE_STAIRS: "jaranjarada madoow\n"
+  POLISHED_BLACKSTONE_WALL: "darbiga dhagaxa ah ee madoow"
+  POLISHED_DEEPSLATE: "siman qoto dheer dhagax"
+  POLISHED_DEEPSLATE_SLAB: "siman qoto dheer dhagax saxan"
+  POLISHED_DEEPSLATE_STAIRS: "siman qoto dheer dhagax jaranjaro"
+  POLISHED_DEEPSLATE_WALL: "siman qoto dheer dhagax derbi"
+  POLISHED_DIORITE: "granite polished"
+  POLISHED_DIORITE_SLAB: "daboolka diorite ee dhalaalaya"
+  POLISHED_DIORITE_STAIRS: "daboolka diorite ee dhalaalaya"
+  POLISHED_GRANITE: "granite polished"
+  POLISHED_GRANITE_SLAB: "daboolan cajalad leh"
+  POLISHED_GRANITE_STAIRS: "jaranjaro granite leh"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "casaan ubax"
+  POTATOES: "baradha"
+  POTTED_ACACIA_SAPLING: "dhirta acacia ee dheriga ubaxa"
+  POTTED_ALLIUM: "allium ee dheriga ubaxa"
+  POTTED_AZALEA_BUSH: "dhoobada azalea"
+  POTTED_AZURE_BLUET: "dheriga azure bluet"
+  POTTED_BAMBOO: "bambo qadhaadh ah"
+  POTTED_BIRCH_SAPLING: "dhirta birch ee dheriga ubaxa"
+  POTTED_BLUE_ORCHID: "buluug orchid ee dheriga ubaxa"
+  POTTED_BROWN_MUSHROOM: "\nmushroom brown ah oo la kariyey"
+  POTTED_CACTUS: "castrated tictus"
+  POTTED_CHERRY_SAPLING: "potted cherry sapling"
+  POTTED_CORNFLOWER: "dhirta la kariyey"
+  POTTED_CRIMSON_FUNGUS: "dheecaan dheecaan dheecaan\n"
+  POTTED_CRIMSON_ROOTS: "xididdada dambiilaha dheriga\n"
+  POTTED_DANDELION: "dandelion ee dheriga ubaxa"
+  POTTED_DARK_OAK_SAPLING: "dhirta mugdi ah oak ee dheriga ubaxa"
+  POTTED_DEAD_BUSH: "duurka loo yaqaan pott"
+  POTTED_FERN: "fern dheri"
+  POTTED_FLOWERING_AZALEA_BUSH: "caleemaha ubax azalea"
+  POTTED_JUNGLE_SAPLING: "dhirta jungle ee dheriga ubaxa"
+  POTTED_LILY_OF_THE_VALLEY: "laydi dhoobo ah ee dooxada"
+  POTTED_MANGROVE_PROPAGULE: "dacaayadda mangrove ee dheriga ah"
+  POTTED_OAK_SAPLING: "dhirta oak ee dheriga ubaxa"
+  POTTED_ORANGE_TULIP: "dheriga orange tulip"
+  POTTED_OXEYE_DAISY: "\npotted oxeye daisy"
+  POTTED_PINK_TULIP: "potted pink tulip"
+  POTTED_POPPY: "poppy ee dheriga ubaxa"
+  POTTED_RED_MUSHROOM: "boqoshaada cas"
+  POTTED_RED_TULIP: "dheriga cas tulip"
+  POTTED_SPRUCE_SAPLING: "dhirta spruce ee dheriga ubaxa"
+  POTTED_TORCHFLOWER: "potted torchflower"
+  POTTED_WARPED_FUNGUS: "dheecaan dheecaan karsan\n"
+  POTTED_WARPED_ROOTS: "xididdada xididaysan\n"
+  POTTED_WHITE_TULIP: "dheriga caddaan tulip"
+  POTTED_WITHER_ROSE: "qallajiyey qadhaadh"
+  POWDER_SNOW: "barafka budada ah"
+  POWDER_SNOW_CAULDRON: "budada barafka cauldron"
+  POWERED_RAIL: "korantada biraha"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "prismarine lebbiska xargaha"
+  PRISMARINE_BRICK_STAIRS: "prismarine lebbiska jaranjaro"
+  PRISMARINE_BRICKS: "prismarine lebbiska xargaha"
+  PRISMARINE_SLAB: "prismarine xargaha"
+  PRISMARINE_STAIRS: "jaranjarada prismarine"
+  PRISMARINE_WALL: "derbiga prismarine"
+  PUMPKIN: "bocor"
+  PUMPKIN_STEM: "stem steam"
+  PURPLE_BANNER: "calan guduudan"
+  PURPLE_BED: "sariir guduudan"
+  PURPLE_CANDLE: "shumaca purple"
+  PURPLE_CANDLE_CAKE: "cake la shumaca purple"
+  PURPLE_CARPET: "purple kaarbadka"
+  PURPLE_CONCRETE: "si la taaban karo oo la taaban karo"
+  PURPLE_CONCRETE_POWDER: "carwaajis budada la taaban karo"
+  PURPLE_GLAZED_TERRACOTTA: "buluug gropled terracotta"
+  PURPLE_SHULKER_BOX: "sanduuqa shuckper"
+  PURPLE_STAINED_GLASS: "purple wasakheeyey glass"
+  PURPLE_STAINED_GLASS_PANE: "purple wasakheeyey murayaad"
+  PURPLE_TERRACOTTA: "purple terracotta"
+  PURPLE_WOOL: "wple wool"
+  PURPUR_BLOCK: "ujeeddada foosha"
+  PURPUR_PILLAR: "tiirarka ujacaa"
+  PURPUR_SLAB: "ujeeddooyin slab"
+  PURPUR_STAIRS: "jaranjarooyinka ujeeddada"
+  QUARTZ_BLOCK: "xannibaadda quarterz"
+  QUARTZ_BRICKS: "nalalka quartz\n"
+  QUARTZ_PILLAR: "tilmaamaha rubuc"
+  QUARTZ_SLAB: "quartz slab"
+  QUARTZ_STAIRS: "jaranjarooyinka rubuc"
+  RAIL: "biraha"
+  RAW_COPPER_BLOCK: "block of copper"
+  RAW_GOLD_BLOCK: "block ee iron"
+  RAW_IRON_BLOCK: "block ee iron"
+  RED_BANNER: "calan cas"
+  RED_BED: "sariirta gaduudan"
+  RED_CANDLE: "shumaca casaanka ah"
+  RED_CANDLE_CAKE: "keeg leh shumaca casaanka ah"
+  RED_CARPET: "red kaarbadka"
+  RED_CONCRETE: "la taaban karo"
+  RED_CONCRETE_POWDER: "casaan budada la taaban karo"
+  RED_GLAZED_TERRACOTTA: "casaan madxafka terracotta"
+  RED_MUSHROOM: "likaha guduudan"
+  RED_MUSHROOM_BLOCK: "cube likaha casaan"
+  RED_NETHER_BRICK_SLAB: "lebbiska casaanka cas"
+  RED_NETHER_BRICK_STAIRS: "jaranjarooyinka lebiska cas"
+  RED_NETHER_BRICK_WALL: "derbiga lebiska cas"
+  RED_NETHER_BRICKS: "casaan dhalaalaysa"
+  RED_SAND: "red sand"
+  RED_SANDSTONE: "casaan sandstone"
+  RED_SANDSTONE_SLAB: "red sandstone slab"
+  RED_SANDSTONE_STAIRS: "jaranjarooyinka cas ee dhagaxa ah"
+  RED_SANDSTONE_WALL: "derbiga sandstone sanduuqa"
+  RED_SHULKER_BOX: "sanduuqa red sholker"
+  RED_STAINED_GLASS: "red wasakheeyey glass"
+  RED_STAINED_GLASS_PANE: "red wasakheeyey murayaad"
+  RED_TERRACOTTA: "ceramics casaan"
+  RED_TULIP: "ubax guduudan"
+  RED_WOOL: "wool cas"
+  REDSTONE_BLOCK: "block of redstone"
+  REDSTONE_LAMP: "laydhka redstone"
+  REDSTONE_ORE: "redstone macdanta"
+  REDSTONE_TORCH: "redstone shuclada"
+  REDSTONE_WALL_TORCH: "redstone nalka darbiga"
+  REDSTONE_WIRE: "redstone xadhig"
+  REINFORCED_DEEPSLATE: "dib-u-xoojinta deepslate"
+  REPEATER: "dhagaxa cas ee soo noqnoqda"
+  REPEATING_COMMAND_BLOCK: "ku celcelinta leben amarka"
+  RESPAWN_ANCHOR: "dib-u-hagaajinta xarigga\n"
+  ROOTED_DIRT: "wasakh xididdada"
+  ROSE_BUSH: "cawska casaan"
+  SAND: "sand"
+  SANDSTONE: "sandstone"
+  SANDSTONE_SLAB: "sandstone bulukeeti"
+  SANDSTONE_STAIRS: "jaranjarooyinka sandstone"
+  SANDSTONE_WALL: "derbiga dhagax ciid"
+  SCAFFOLDING: "xayiraad"
+  SCULK: "sculk"
+  SCULK_CATALYST: "caloosha caloosha"
+  SCULK_SENSOR: "sensor sculk"
+  SCULK_SHRIEKER: "sculk shrieker"
+  SCULK_VEIN: "sculk vein"
+  SEA_LANTERN: "badda faynuus"
+  SEA_PICKLE: "qajaar badda"
+  SEAGRASS: "cawska badda"
+  SET_SPAWN: "barta dhalashada rakibay"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "nalka shubka\n"
+  SHULKER_BOX: "sanduuqa sholle"
+  SKELETON_SKULL: "qalfoofka skeleton"
+  SKELETON_WALL_SKULL: "qalfoofka darbiga"
+  SLIME_BLOCK: "xannibaadda slime"
+  SMALL_AMETHYST_BUD: "bud yar oo amethyst ah"
+  SMALL_DRIPLEAF: "ifplat yar"
+  SMITHING_TABLE: "miiska jumlada"
+  SMOKER: "sigaarka"
+  SMOOTH_BASALT: "basalt siman"
+  SMOOTH_QUARTZ: "xannibaadda quartz"
+  SMOOTH_QUARTZ_SLAB: "gogol xajin ah"
+  SMOOTH_QUARTZ_STAIRS: "jaranjarada quartz oo siman"
+  SMOOTH_RED_SANDSTONE: "siman red sandstone"
+  SMOOTH_RED_SANDSTONE_SLAB: "daboolka sanduuqa cas ee casaanka ah"
+  SMOOTH_RED_SANDSTONE_STAIRS: "jaranjarada sandstone dhagax casaan leh"
+  SMOOTH_SANDSTONE: "sandstone siman"
+  SMOOTH_SANDSTONE_SLAB: "sanduuqa dhagaxa sanduuqa ah"
+  SMOOTH_SANDSTONE_STAIRS: "jaranjarada sandstone siman"
+  SMOOTH_STONE: "dhagax jilicsan"
+  SMOOTH_STONE_SLAB: "santuuq dhagax siman"
+  SNIFFER_EGG: "sniffer egg"
+  SNOW: "baraf"
+  SNOW_BLOCK: "barafka barafka"
+  SOUL_CAMPFIRE: "nafta xerada dabka\n"
+  SOUL_FIRE: "nafta dabka\n"
+  SOUL_LANTERN: "nalalka"
+  SOUL_SAND: "soul ciid"
+  SOUL_SOIL: "nafta"
+  SOUL_TORCH: "soul torch"
+  SOUL_WALL_TORCH: "soul wall torch\n"
+  SPAWN_NOT_VALID: "ma haysatid guriga sariirta ama eedeeyay barroosinka reappearance ama waxaa la bixi waaya"
+  SPAWNER: "monster spawner"
+  SPAWNER_DESC1: "interact with spawn egg:"
+  SPAWNER_DESC2: "sets mob type"
+  SPONGE: "isbonji"
+  SPORE_BLOSSOM: "spore blossom"
+  SPRUCE_BUTTON: "spruce badhanka"
+  SPRUCE_DOOR: "dhir albaabka"
+  SPRUCE_FENCE: "bowd gran"
+  SPRUCE_FENCE_GATE: "albaabada spruce fence"
+  SPRUCE_HANGING_SIGN: "spruce hanging sign"
+  SPRUCE_LEAVES: "gran leaves"
+  SPRUCE_LOG: "daadi taariikhda"
+  SPRUCE_PLANKS: "qorshaha deedka"
+  SPRUCE_PRESSURE_PLATE: "daadi saxanka cadaadiska"
+  SPRUCE_SAPLING: "daadi sapling"
+  SPRUCE_SIGN: "dhir saxiix"
+  SPRUCE_SLAB: "dhir xargaha"
+  SPRUCE_STAIRS: "dhir jaranjaro"
+  SPRUCE_TRAPDOOR: "koofiyadaha loo yaqaan 'spruce hatch'"
+  SPRUCE_WALL_HANGING_SIGN: "spruce wall hanging sign"
+  SPRUCE_WALL_SIGN: "daaqada derbiga saxiix"
+  SPRUCE_WOOD: "gran wood"
+  STICKY_PISTON: "dhegdheg qalab"
+  STONE: "dhagax"
+  STONE_BRICK_SLAB: "dhagax dhagax"
+  STONE_BRICK_STAIRS: "jaranjarada dhagaxa dhagaxa"
+  STONE_BRICK_WALL: "derbiga lebbiska"
+  STONE_BRICKS: "lebenkii dhagaxyada"
+  STONE_BUTTON: "badhanka dhagaxa"
+  STONE_PRESSURE_PLATE: "cadaadiska cadaadiska dhagaxa"
+  STONE_SLAB: "stone bulukeeti"
+  STONE_STAIRS: "jaranjarada dhagaxa"
+  STONECUTTER: "dhagxaan"
+  STRIPPED_ACACIA_LOG: "diiwaan gelinta acacia"
+  STRIPPED_ACACIA_WOOD: "stacpped acacia wood"
+  STRIPPED_BAMBOO_BLOCK: "block of stripped bamboo"
+  STRIPPED_BIRCH_LOG: "xarig bir ah"
+  STRIPPED_BIRCH_WOOD: "alwaax gubatay"
+  STRIPPED_CHERRY_LOG: "stripped cherry log"
+  STRIPPED_CHERRY_WOOD: "stripped cherry wood"
+  STRIPPED_CRIMSON_HYPHAE: "dambiistaha loo yaqaan 'crimson hyphae'\n"
+  STRIPPED_CRIMSON_STEM: "dambiistaha loo yaqaan 'crimson stem'\n"
+  STRIPPED_DARK_OAK_LOG: "qufulkii loo yaqaan"
+  STRIPPED_DARK_OAK_WOOD: "dhuftay madow oak wood"
+  STRIPPED_JUNGLE_LOG: "diiwaanka jungle"
+  STRIPPED_JUNGLE_WOOD: "dhuftay jungle"
+  STRIPPED_MANGROVE_LOG: "log mangrove oo la jeexay"
+  STRIPPED_MANGROVE_WOOD: "qoryaha mangrove ee la furay"
+  STRIPPED_OAK_LOG: "xirmay oak log"
+  STRIPPED_OAK_WOOD: "dhuftay oak"
+  STRIPPED_SPRUCE_LOG: "lasoco xariga loo yaqaan 'spruce log'"
+  STRIPPED_SPRUCE_WOOD: "alwaax la gooyay"
+  STRIPPED_WARPED_HYPHAE: "hyphae dagaal difaacay\n"
+  STRIPPED_WARPED_STEM: "stem stpedpped war stem\n"
+  STRUCTURE_BLOCK: "block block"
+  STRUCTURE_VOID: "qaab dhismeed madhan"
+  SUGAR_CANE: "sonkorta cawsduur"
+  SUNFLOWER: "gabbaldayaha"
+  SUSPICIOUS_GRAVEL: "suspicious gravel"
+  SUSPICIOUS_SAND: "suspicious sand"
+  SWEET_BERRY_BUSH: "baadiyaha berry macaan"
+  TALL_GRASS: "cows dheer"
+  TALL_SEAGRASS: "sare cawska badda"
+  TARGET: "bartilmaameed"
+  TERRACOTTA: "ceramics"
+  TINTED_GLASS: "muraayadaha madoow"
+  TNT: "dynamite"
+  TORCH: "toosh"
+  TORCHFLOWER: "torchflower"
+  TORCHFLOWER_CROP: "torchflower crop"
+  TRAPPED_CHEST: "dabin sanduuq"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "tripwire"
+  TRIPWIRE_HOOK: "hook tripwireka"
+  TUBE_CORAL: "tube coral"
+  TUBE_CORAL_BLOCK: "tube coral block"
+  TUBE_CORAL_FAN: "tube coral fan"
+  TUBE_CORAL_WALL_FAN: "tube coral wall fan"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "ukunta dixirka"
+  TWISTING_VINES: "wareejinta vine\n"
+  TWISTING_VINES_PLANT: "wareejinta wareegtada geedaha\n"
+  VERDANT_FROGLIGHT: "iftiimin verdant"
+  VINE: "liana"
+  VOID_AIR: "hawo ka bax"
+  WALL_TORCH: "nalka darbiga"
+  WARPED_BUTTON: "badhanka dagaalka\n"
+  WARPED_DOOR: "warped door\n"
+  WARPED_FENCE: "dayrka dagaalka\n"
+  WARPED_FENCE_GATE: "albaabka fure albaabka\n"
+  WARPED_FUNGUS: "fangaska fangas"
+  WARPED_HANGING_SIGN: "warped hanging sign"
+  WARPED_HYPHAE: "hyphae dagaal"
+  WARPED_NYLIUM: "dagaalkii nylium"
+  WARPED_PLANKS: "diyaaradaha dagaalka\n"
+  WARPED_PRESSURE_PLATE: "cadaadiska cadaadiska dagaal\n"
+  WARPED_ROOTS: "xididdada dagaallada\n"
+  WARPED_SIGN: "saxeex dagaal\n"
+  WARPED_SLAB: "dagaalkii slab"
+  WARPED_STAIRS: "jaranjarooyinka fudud\n"
+  WARPED_STEM: "stem steped"
+  WARPED_TRAPDOOR: "trapdoor dagaal\n"
+  WARPED_WALL_HANGING_SIGN: "warped wall hanging sign"
+  WARPED_WALL_SIGN: "dagaallamay calaamadda darbiga"
+  WARPED_WART_BLOCK: "kala soco wart block\n"
+  WATER: "biyaha"
+  WATER_CAULDRON: "cauldron biyo"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "block wax copper ah"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "waxed cut coppe"
+  WAXED_CUT_COPPER_SLAB: "waxed cut copper slab"
+  WAXED_CUT_COPPER_STAIRS: "jaranjarooyinka copper waxed cut"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "naxaas la soo bandhigay"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "naxaas goos goos ah oo soo baxay"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "waxed soo bandhigay nabad naxaas"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "jaranjarooyinka copper-ga ah ee waxed qaawan"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "naxaas lagu dareemay waxsoosaar"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "naxaaska la qaxay ee lagu darey"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "waxsoosaar cajiin ah oo nadiif ah"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "jaranjarooyinka copper-ga ah ee waxsoosaaray"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "naxa weathered copper"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "naxa weathered jar copper"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "waxed weathered jar copper slab"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "jaranjarooyinka copper-ka ee waxed weedhered gooyay"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "copper weathered"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "\ncopper weathered jar"
+  WEATHERED_CUT_COPPER_SLAB: "jaranjarooyinka copper jarista weathered"
+  WEATHERED_CUT_COPPER_STAIRS: "jaranjarooyinka copper jarista weathered"
+  WEEPING_VINES: "uruurinta geedaha\n"
+  WEEPING_VINES_PLANT: "dhirta vinging\n"
+  WET_SPONGE: "isbonji qoyan"
+  WHEAT: "dalagyada qamadida"
+  WHITE_BANNER: "calan cad"
+  WHITE_BED: "sariir cad"
+  WHITE_CANDLE: "shumaca cad"
+  WHITE_CANDLE_CAKE: "cake leh shumaca cad"
+  WHITE_CARPET: "caddaan kaarbadka"
+  WHITE_CONCRETE: "caddaan la taaban karo"
+  WHITE_CONCRETE_POWDER: "caddaan budada la taaban karo"
+  WHITE_GLAZED_TERRACOTTA: "cadcad cad oo loo yaqaan terracotta"
+  WHITE_SHULKER_BOX: "sanduuqa white shulle"
+  WHITE_STAINED_GLASS: "white wasakheeyey glass"
+  WHITE_STAINED_GLASS_PANE: "white wasakheeyey murayaad"
+  WHITE_TERRACOTTA: "ceramics cad"
+  WHITE_TULIP: "ubax cad"
+  WHITE_WOOL: "dhogor cad"
+  WITHER_ROSE: "waaba kor u kacay"
+  WITHER_SKELETON_SKULL: "qalfoofka qalfoofka"
+  WITHER_SKELETON_WALL_SKULL: "\nwither skeleton wall skull"
+  YELLOW_BANNER: "calan jaalle"
+  YELLOW_BED: "sariir jaalo"
+  YELLOW_CANDLE: "shumac jaalo"
+  YELLOW_CANDLE_CAKE: "kee la shumaca jaalaha ah"
+  YELLOW_CARPET: "yellow kaarbadka"
+  YELLOW_CONCRETE: "jaalle la taaban karo"
+  YELLOW_CONCRETE_POWDER: "jaalle budada la taaban karo"
+  YELLOW_GLAZED_TERRACOTTA: "huruud huruud ah oo huruud ah"
+  YELLOW_SHULKER_BOX: "sanduuqa shalker jaalaha ah"
+  YELLOW_STAINED_GLASS: "yellow wasakheeyey glass"
+  YELLOW_STAINED_GLASS_PANE: "yellow wasakheeyey murayaad"
+  YELLOW_TERRACOTTA: "ceramics jaalle ah"
+  YELLOW_WOOL: "dhogor huruud ah"
+  ZOMBIE_HEAD: "madaxa zombie"
+  ZOMBIE_WALL_HEAD: "madaxa darbiga zombie"
+  ACACIA_BOAT: "qudhac doon"
+  ACACIA_CHEST_BOAT: "doomaha acacia oo leh chest"
+  ALLAY_SPAWN_EGG: "allay ukun dhaafe"
+  AMETHYST_SHARD: "amethyst shard"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "tufaax"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "istaaga hubka"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "filaar"
+  AXOLOTL_BUCKET: "baaldi ee axolotl"
+  AXOLOTL_SPAWN_EGG: "ukunta axolotl"
+  BAKED_POTATO: "baradho la dubay"
+  BAMBOO_CHEST_RAFT: "bamboo raft with chest"
+  BAMBOO_RAFT: "bamboo raft"
+  BAT_SPAWN_EGG: "bisad ku dhalatay ukunta"
+  BEE_SPAWN_EGG: "shinni spawn ukunta"
+  BEEF: "hiib lo cayriin"
+  BEETROOT: "sharbeed"
+  BEETROOT_SEEDS: "abuurka beetroot"
+  BEETROOT_SOUP: "maraqa beetroot"
+  BIRCH_BOAT: "bjørk doon"
+  BIRCH_CHEST_BOAT: "doomaha birch leh chest"
+  BLACK_DYE: "dheeha madow"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "budada ololaysa"
+  BLAZE_ROD: "oul oloeyes"
+  BLAZE_SPAWN_EGG: "shinni spawn ukunta"
+  BLUE_DYE: "dheeh buluug ah"
+  BONE: "lafaha"
+  BONE_MEAL: "cuntada lafaha"
+  BOOK: "buug"
+  BOW: "qaansada"
+  BOWL: "baqulo"
+  BREAD: "kibistii"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BREWING_STAND: "brewing stand"
+  BRICK: "leben"
+  BROWN_DYE: "dheeha madow"
+  BRUSH: "brush"
+  BUCKET: "baaldi"
+  BUNDLE: "xidhmo"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "camel spawn egg"
+  CARROT: "karoto"
+  CARROT_ON_A_STICK: "karootada usha"
+  CAT_SPAWN_EGG: "bisad ku dhalatay ukunta"
+  CAULDRON: "cauldron"
+  CAVE_SPIDER_SPAWN_EGG: "cadaadiska cagaaran ukunta spawn"
+  CHAINMAIL_BOOTS: "kabaha chainmail"
+  CHAINMAIL_CHESTPLATE: "shaxda cheinmail"
+  CHAINMAIL_HELMET: "koofiyadda chainmail"
+  CHAINMAIL_LEGGINGS: "silsilad lugaha"
+  CHARCOAL: "dhuxul dhagax"
+  CHERRY_BOAT: "cherry boat"
+  CHERRY_CHEST_BOAT: "cherry boat with chest"
+  CHEST_MINECART: "minecart oo leh laab"
+  CHICKEN: "digaag cayriin"
+  CHICKEN_SPAWN_EGG: "ukunta digaagga"
+  CHORUS_FRUIT: "miraha chorus"
+  CLAY_BALL: "dhoobo kubadda"
+  CLOCK: "saacad"
+  COAL: "dhuxul"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "bun"
+  COD: "codka cagaaran"
+  COD_BUCKET: "baaldi cod"
+  COD_SPAWN_EGG: "bisad ku dhalatay ukunta"
+  COMMAND_BLOCK_MINECART: "gaari miinada oo leh taliska joojinta"
+  COMPASS: "diirad"
+  COOKED_BEEF: "isteek"
+  COOKED_CHICKEN: "digaag lakariyey"
+  COOKED_COD: "codka la kariyey"
+  COOKED_MUTTON: "hilib ido lakariyey"
+  COOKED_PORKCHOP: "porkchop la kariyey"
+  COOKED_RABBIT: "bakeylhe lkarey"
+  COOKED_SALMON: "salmon la kariyey"
+  COOKIE: "buskut"
+  COPPER_INGOT: "copper ingot"
+  COW_SPAWN_EGG: "bisad ku dhalatay ukunta"
+  CREEPER_BANNER_PATTERN: "qaabka xayeysiiska"
+  CREEPER_BANNER_PATTERN_DESC: "qiimo badan"
+  CREEPER_SPAWN_EGG: "cadaadiska cagaaran ukunta spawn"
+  CROSSBOW: "isbaaro"
+  CROSSBOW_PROJECTILE: "mashruuc"
+  CYAN_DYE: "cyran dheeh dheeh"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "doomaha madow ee geedka"
+  DARK_OAK_CHEST_BOAT: "doomaha oak madow oo leh chest"
+  DEBUG_STICK: "usha ka saar"
+  DEBUG_STICK_EMPTY: "%s hanti ma laha"
+  DEBUG_STICK_SELECT: "la xushay \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\": %s"
+  DIAMOND: "dheeman"
+  DIAMOND_AXE: "misarta damaymakah"
+  DIAMOND_BOOTS: "kabaha dheeman"
+  DIAMOND_CHESTPLATE: "dheemanka dheeman"
+  DIAMOND_HELMET: "koofiyadda dheemanka"
+  DIAMOND_HOE: "dheeman hoe"
+  DIAMOND_HORSE_ARMOR: "hubka horse dheeman"
+  DIAMOND_LEGGINGS: "lugeynta dheemanka"
+  DIAMOND_PICKAXE: "burska damaymakah"
+  DIAMOND_SHOVEL: "badiilka damaymakah"
+  DIAMOND_SWORD: "seefta damaymakah"
+  DISC_FRAGMENT_5: "jajabka saxanka"
+  DISC_FRAGMENT_5_DESC: "qalabka muusiga - 5"
+  DOLPHIN_SPAWN_EGG: "zoglin spawn egg"
+  DONKEY_SPAWN_EGG: "dameer ukunta"
+  DRAGON_BREATH: "neefta dragon"
+  DRIED_KELP: "balsi qalalan"
+  DROWNED_SPAWN_EGG: "ukun u dhinta ukunta"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "echo shard"
+  EGG: "ukun"
+  ELDER_GUARDIAN_SPAWN_EGG: "magangelyo oday ah ukunta"
+  ELYTRA: "elytra"
+  EMERALD: "samurud"
+  ENCHANTED_BOOK: "buug la sixray"
+  ENCHANTED_GOLDEN_APPLE: "tufaax dahab ah oo la sixray"
+  END_CRYSTAL: "dhamaad crystal"
+  ENDER_DRAGON_SPAWN_EGG: "ender dragon spawn egg"
+  ENDER_EYE: "indhaha dhamaadka"
+  ENDER_PEARL: "ender luul"
+  ENDERMAN_SPAWN_EGG: "ukunta enderman"
+  ENDERMITE_SPAWN_EGG: "ukunta u dhinta ukunta"
+  EVOKER_SPAWN_EGG: "evoker dhalin ukun"
+  EXPERIENCE_BOTTLE: "dhalo lagu sixro"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  FEATHER: "baal"
+  FERMENTED_SPIDER_EYE: "isha caaro khamiirsan"
+  FILLED_MAP: "khariidad"
+  FIRE_CHARGE: "kharashka dabka"
+  FIREWORK_ROCKET: "gantaalka rashka"
+  FIREWORK_ROCKET_FLIGHT: "muddada duulimaadka:"
+  FIREWORK_STAR: "xiddigta dab-damiska"
+  FIREWORK_STAR_BLACK: "madow"
+  FIREWORK_STAR_BLUE: "buluug"
+  FIREWORK_STAR_BROWN: "bunni"
+  FIREWORK_STAR_CUSTOM_COLOR: "custom"
+  FIREWORK_STAR_CYAN: "cyan"
+  FIREWORK_STAR_FADE_TO: "ku libdhi"
+  FIREWORK_STAR_FLICKER: "maroojin"
+  FIREWORK_STAR_GRAY: "ciro"
+  FIREWORK_STAR_GREEN: "cagaaran"
+  FIREWORK_STAR_LIGHT_BLUE: "dhalaalaya buluug"
+  FIREWORK_STAR_LIGHT_GRAY: "cirro khafiif ah"
+  FIREWORK_STAR_LIME: "lime"
+  FIREWORK_STAR_MAGENTA: "magneta"
+  FIREWORK_STAR_ORANGE: "oranji"
+  FIREWORK_STAR_PINK: "basali"
+  FIREWORK_STAR_PURPLE: "guduud"
+  FIREWORK_STAR_RED: "casaan"
+  FIREWORK_STAR_SHAPE: "qaab aan la aqoon"
+  FIREWORK_STAR_SHAPE_BURST: "dilaaca"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper-qaabeeya"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "kubad weyn"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "kubad yar"
+  FIREWORK_STAR_SHAPE_STAR: "xidig-qaabeeya"
+  FIREWORK_STAR_TRAIL: "raad raac"
+  FIREWORK_STAR_WHITE: "cad"
+  FIREWORK_STAR_YELLOW: "jaalaha ah"
+  FISHING_ROD: "usha kalluumeysiga"
+  FLINT: "dhagaxaan"
+  FLINT_AND_STEEL: "flint iyo biraha"
+  FLOWER_BANNER_PATTERN: "banner pattern"
+  FLOWER_BANNER_PATTERN_DESC: "kharashka ubaxa"
+  FLOWER_POT: "flower pot"
+  FOX_SPAWN_EGG: "dawaco wuxuu dhaley ukun"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "ukun dhalo rah"
+  FURNACE_MINECART: "minecart oo leh foorno"
+  GHAST_SPAWN_EGG: "ukunta xamaasada leh"
+  GHAST_TEAR: "ilmo qosol"
+  GLASS_BOTTLE: "dhalada ugadamabeysa"
+  GLISTERING_MELON_SLICE: "qaraha xarkaha qaraha"
+  GLOBE_BANNER_PATTERN: "banner pattern"
+  GLOBE_BANNER_PATTERN_DESC: "caalamka"
+  GLOW_BERRIES: "glow berry"
+  GLOW_INK_SAC: "glow ink sac"
+  GLOW_ITEM_FRAME: "qaabka shayga glow"
+  GLOW_SQUID_SPAWN_EGG: "glow squid spawn egg"
+  GLOWSTONE_DUST: "boodhka dhalaalaya"
+  GOAT_HORN: "horn ari"
+  GOAT_SPAWN_EGG: "bisad ku dhalatay ukunta"
+  GOLD_INGOT: "bar dahab ah"
+  GOLD_NUGGET: "xabbad dahab"
+  GOLDEN_APPLE: "tufaax dahab ah"
+  GOLDEN_AXE: "farta dahabka"
+  GOLDEN_BOOTS: "kabaha dahabka ah"
+  GOLDEN_CARROT: "karoto o dahabah"
+  GOLDEN_CHESTPLATE: "chebtplate dahab ah"
+  GOLDEN_HELMET: "koofiyad dahab ah"
+  GOLDEN_HOE: "farta dahabka"
+  GOLDEN_HORSE_ARMOR: "hubka fardaha dahabiga ah"
+  GOLDEN_LEGGINGS: "gogol dahab ah"
+  GOLDEN_PICKAXE: "dahab dahab ah"
+  GOLDEN_SHOVEL: "badiilka dahbakah"
+  GOLDEN_SWORD: "seefta dahbakah"
+  GRAY_DYE: "midabada cawlan"
+  GREEN_DYE: "dheeh cagaaran"
+  GUARDIAN_SPAWN_EGG: "ilaaliyaha ukunta dhalin"
+  GUNPOWDER: "gunpowyder"
+  HEART_OF_THE_SEA: "wadnaha badda"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "hoglin spawn egg\n"
+  HONEY_BOTTLE: "dhalada malabka"
+  HONEYCOMB: "malab"
+  HOPPER_MINECART: "minecart oo leh hopper"
+  HORSE_SPAWN_EGG: "faras wuxuu dhaley ukun"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "xusuusnow ukun dhalin"
+  INK_SAC: "kiishad qad ah"
+  IRON_AXE: "misarta birtah"
+  IRON_BOOTS: "kabaha birta"
+  IRON_CHESTPLATE: "xabadka birta"
+  IRON_GOLEM_SPAWN_EGG: "iron golem spawn egg"
+  IRON_HELMET: "koofiyadda birta"
+  IRON_HOE: "bir hoe"
+  IRON_HORSE_ARMOR: "hubka faraska birta"
+  IRON_INGOT: "bir -gelinta"
+  IRON_LEGGINGS: "lugaha birta"
+  IRON_NUGGET: "xabbad bir"
+  IRON_PICKAXE: "burska birtah"
+  IRON_SHOVEL: "majarafad dhagax ah"
+  IRON_SWORD: "seefto birta"
+  ITEM_FRAME: "qaabka shayga"
+  JUNGLE_BOAT: "kaynta doon"
+  JUNGLE_CHEST_BOAT: "doomaha jungle oo leh chest"
+  KNOWLEDGE_BOOK: "buugga aqoonta"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "baldi dabha"
+  LEAD: "xadhig"
+  LEATHER: "maqaar"
+  LEATHER_BOOTS: "kabaha hargaha"
+  LEATHER_CHESTPLATE: "dharka maqaarka"
+  LEATHER_HELMET: "daboolka maqaarka"
+  LEATHER_HORSE_ARMOR: "hubka horse leather"
+  LEATHER_LEGGINGS: "surwaalka hargaha"
+  LIGHT_BLUE_DYE: "dhogorta dhalaalaya buluug"
+  LIGHT_GRAY_DYE: "dheeh casaan ah"
+  LIME_DYE: "dheeh dheeh"
+  LINGERING_POTION: "daawada raagay"
+  LINGERING_POTION_EFFECT_AWKWARD: "dawaynta daahsoon"
+  LINGERING_POTION_EFFECT_EMPTY: "daawada aan la farsamayn karin"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "qalab joogta ah ee iska-caabbinta dabka"
+  LINGERING_POTION_EFFECT_HARMING: "daawada daahinta"
+  LINGERING_POTION_EFFECT_HEALING: "daawada daahinta"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "dheefta aan la arki karin ee raagay"
+  LINGERING_POTION_EFFECT_LEAPING: "dheefta raagay ee boodboodka"
+  LINGERING_POTION_EFFECT_LEVITATION: "daawada dib-u-noolaynta"
+  LINGERING_POTION_EFFECT_LUCK: "daawada nasiibka"
+  LINGERING_POTION_EFFECT_MUNDANE: "daawada lingering ee mundane"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "daawada raagay ee aragga habeenka"
+  LINGERING_POTION_EFFECT_POISON: "daawada sunta oo raagta"
+  LINGERING_POTION_EFFECT_REGENERATION: "daawada dib-u-noolaynta"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "daawada joogtada ah ee qunyar dhacda"
+  LINGERING_POTION_EFFECT_SLOWNESS: "daawada raagay ee gaabis ah"
+  LINGERING_POTION_EFFECT_STRENGTH: "madada xoogga"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "daawada daahsoon ee degdegta"
+  LINGERING_POTION_EFFECT_THICK: "maandooriyaha dhuumasho adag"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "daawada raagay ee sayidkii qoolleyda"
+  LINGERING_POTION_EFFECT_WATER: "dhalada biyaha raagay"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "biyaha neefsashada ee raagay"
+  LINGERING_POTION_EFFECT_WEAKNESS: "daawada daciifnimada"
+  LLAMA_SPAWN_EGG: "ari wuxuu dhaley ukun"
+  LODESTONE_COMPASS: "lodestone compass\n"
+  MAGENTA_DYE: "magenta dheef"
+  MAGMA_CREAM: "magma creme"
+  MAGMA_CUBE_SPAWN_EGG: "magma cube ukun dhaley"
+  MANGROVE_BOAT: "doomaha mangrove"
+  MANGROVE_CHEST_BOAT: "doomaha mangrove oo leh chest"
+  MAP: "khariidad madhan"
+  MELON_SEEDS: "abuurka qaraha"
+  MELON_SLICE: "qalab dhoobo"
+  MILK_BUCKET: "baaldi caano ah"
+  MINECART: "rimor"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "banner pattern"
+  MOJANG_BANNER_PATTERN_DESC: "shay"
+  MOOSHROOM_SPAWN_EGG: "ukun dhalo mooshroom"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "baqal wuxuu dhaley ukun"
+  MUSHROOM_STEW: "lugta likaha"
+  MUSIC_DISC_11: "music disc"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "cajalka musgah"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "music disc"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "music disc"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - xannibids"
+  MUSIC_DISC_CAT: "music disc"
+  MUSIC_DISC_CAT_DESC: "c418 - bisad"
+  MUSIC_DISC_CHIRP: "music disc"
+  MUSIC_DISC_CHIRP_DESC: "c418 - qaylo"
+  MUSIC_DISC_FAR: "music disc"
+  MUSIC_DISC_FAR_DESC: "c418 - fog"
+  MUSIC_DISC_MALL: "music disc"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "music disc"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "music disc"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - dhinac kale"
+  MUSIC_DISC_PIGSTEP: "music disc"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep\n"
+  MUSIC_DISC_RELIC: "music disc"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "music disc"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "music disc"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "music disc"
+  MUSIC_DISC_WAIT_DESC: "c418 - sug"
+  MUSIC_DISC_WARD: "music disc"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "hilib ido cayriin"
+  NAME_TAG: "magaca"
+  NAUTILUS_SHELL: "qolof nautilus"
+  NETHER_BRICK: "birka nether"
+  NETHER_STAR: "xidig nether"
+  NETHERITE_AXE: "axmaarada ax\n"
+  NETHERITE_BOOTS: "boorsooyinka netherite\n"
+  NETHERITE_CHESTPLATE: "chestplate loo yaqaan 'netherite chestplate'\n"
+  NETHERITE_HELMET: "netherite ingot\n"
+  NETHERITE_HOE: "netherite hoe\n"
+  NETHERITE_INGOT: "netherite ingot\n"
+  NETHERITE_LEGGINGS: "legitings netherite\n"
+  NETHERITE_PICKAXE: "netherite pickaxe\n"
+  NETHERITE_SCRAP: "xadhiga netherite\n"
+  NETHERITE_SHOVEL: "shoobaalka netherite\n"
+  NETHERITE_SWORD: "seefta netherite\n"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "geed doon"
+  OAK_CHEST_BOAT: "oak boat oo leh chest"
+  OCELOT_SPAWN_EGG: "ocelot wuxuu dhaley ukun"
+  ORANGE_DYE: "dheeh oranji"
+  PAINTING: "rinjiyeyn"
+  PANDA_SPAWN_EGG: "panda spawn ukunta"
+  PAPER: "waraaq"
+  PARROT_SPAWN_EGG: "baqbaqaaq wuxuu dhaley ukun"
+  PHANTOM_MEMBRANE: "dahaarka phantom"
+  PHANTOM_SPAWN_EGG: "phantom wuxuu dhaley ukun"
+  PIG_SPAWN_EGG: "dofaarka wuxuu dhaley ukun"
+  PIGLIN_BANNER_PATTERN: "banner pattern"
+  PIGLIN_BANNER_PATTERN_DESC: "cunto"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin brute spawn egg\n"
+  PIGLIN_SPAWN_EGG: "piglin spawn egg\n"
+  PILLAGER_SPAWN_EGG: "pillager kalluunka ukun"
+  PINK_DYE: "dheeh casaan"
+  PITCHER_POD: "pitcher pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "baradho sunta leh"
+  POLAR_BEAR_SPAWN_EGG: "ukunta taranka ee orso"
+  POPPED_CHORUS_FRUIT: "miraha chorus ee soo booday"
+  PORKCHOP: "porkchop ceeriin ah"
+  POTATO: "baradho"
+  POTION: "daawada"
+  POTION_EFFECT_AWKWARD: "daawada caqliga leh"
+  POTION_EFFECT_EMPTY: "qalab aan la farsamayn karin"
+  POTION_EFFECT_FIRE_RESISTANCE: "qalabka iska-caabbinta dabka"
+  POTION_EFFECT_HARMING: "oohinta waxyeelaynta"
+  POTION_EFFECT_HEALING: "daawada bogsashada"
+  POTION_EFFECT_INVISIBILITY: "daroogada la arki karin"
+  POTION_EFFECT_LEAPING: "maqaarka boodada"
+  POTION_EFFECT_LEVITATION: "daroogada dib-u-nooleynta"
+  POTION_EFFECT_LUCK: "daroogada nasiib"
+  POTION_EFFECT_MUNDANE: "mundane potion"
+  POTION_EFFECT_NIGHT_VISION: "daawada aragga habeenka"
+  POTION_EFFECT_POISON: "dawaynta sunta"
+  POTION_EFFECT_REGENERATION: "daroogada dib-u-nooleynta"
+  POTION_EFFECT_SLOW_FALLING: "daroogada qunyar dhacda"
+  POTION_EFFECT_SLOWNESS: "daawada gaabis ah"
+  POTION_EFFECT_STRENGTH: "awoodda daawada"
+  POTION_EFFECT_SWIFTNESS: "daawada degdega ah"
+  POTION_EFFECT_THICK: "dheriga qaro weyn"
+  POTION_EFFECT_TURTLE_MASTER: "daroogada sayidkii qoolleyda"
+  POTION_EFFECT_WATER: "dhalada biyaha"
+  POTION_EFFECT_WATER_BREATHING: "daawada neefsashada biyaha"
+  POTION_EFFECT_WEAKNESS: "daawada gaabis ah"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "barafka budada ah"
+  PRISMARINE_CRYSTALS: "kiristaalo prismarine ah"
+  PRISMARINE_SHARD: "prismarine shard"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "burfunshish"
+  PUFFERFISH_BUCKET: "baaldiga pufferfish"
+  PUFFERFISH_SPAWN_EGG: "kalluunka dufan ee ukunta taranka"
+  PUMPKIN_PIE: "shaambadaha"
+  PUMPKIN_SEEDS: "abuurka bocorka"
+  PURPLE_DYE: "dheedka buluuga ah"
+  QUARTZ: "nether quartz"
+  RABBIT: "bakeylhe cayriin"
+  RABBIT_FOOT: "bakeyle lugtiis"
+  RABBIT_HIDE: "maraq bakayle"
+  RABBIT_SPAWN_EGG: "bakeyle wuhuu dhaley ukun"
+  RABBIT_STEW: "maraq bakayle"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "ravager ukun dhalo"
+  RAW_COPPER: "maarta ceeriin"
+  RAW_GOLD: "codka cagaaran"
+  RAW_IRON: "bir ceyriin"
+  RECOVERY_COMPASS: "isku-darka soo-kabashada"
+  RED_DYE: "dheeha cas"
+  REDSTONE: "boorka redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "hilib qurmay"
+  SADDLE: "kursi"
+  SALMON: "clonn clon"
+  SALMON_BUCKET: "baaldi salmon ah"
+  SALMON_SPAWN_EGG: "jader wuxuu dhaley ukun"
+  SCUTE: "gaashaan"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "maqas"
+  SHEEP_SPAWN_EGG: "ido wuxuu dhaley ukun"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "gaashaanka"
+  SHIELD_BLACK: "gaashaanka madow"
+  SHIELD_BLUE: "gaashaan buluug"
+  SHIELD_BROWN: "gaashaan bunni ah"
+  SHIELD_CYAN: "gaashaanka cyan"
+  SHIELD_GRAY: "gaashaanka cawlan"
+  SHIELD_GREEN: "gaashaanka cagaaran"
+  SHIELD_LIGHT_BLUE: "gaashaanka buluugga ah ee fudud"
+  SHIELD_LIGHT_GRAY: "gaashaanka cawlan fudud"
+  SHIELD_LIME: "gaashaanka lime"
+  SHIELD_MAGENTA: "gaashaanka magenta"
+  SHIELD_ORANGE: "gaashaanka liimi ah"
+  SHIELD_PINK: "gaashaanka casaanka ah"
+  SHIELD_PURPLE: "gaashaanka guduudan"
+  SHIELD_RED: "gaashaanka cas"
+  SHIELD_WHITE: "gaashaanka cad"
+  SHIELD_YELLOW: "gaashaan jaalle"
+  SHULKER_SHELL: "shulker qolof"
+  SHULKER_SPAWN_EGG: "shulker wuxuu dhaley ukun"
+  SIGN: "sign"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SILVERFISH_SPAWN_EGG: "ukunta taranka ee kalluunka"
+  SKELETON_HORSE_SPAWN_EGG: "faraska qolfafkah wuxuu dhaley ukun"
+  SKELETON_SPAWN_EGG: "qolfaf wuxuu dhaley ukun"
+  SKULL_BANNER_PATTERN: "banner pattern"
+  SKULL_BANNER_PATTERN_DESC: "kharashka kafeega"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "skull pottery sherd"
+  SLIME_BALL: "kubad kubbad"
+  SLIME_SPAWN_EGG: "slime wuxuu dhaley ukun"
+  SMITHING_TEMPLATE: "smithing template"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "add ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "add a piece of armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ingots & crystals"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredients:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "add netherite ingot"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamond equipment"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "add diamond armor weapon or tool"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ingot"
+  SMITHING_TEMPLATE_UPGRADE: "upgrade: "
+  SNIFFER_SPAWN_EGG: "sniffer spawn egg"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "snow golem spawn egg"
+  SNOWBALL: "kubada barafk"
+  SPECTRAL_ARROW: "falaadha rooxaanta"
+  SPIDER_EYE: "isha carada"
+  SPIDER_SPAWN_EGG: "aro wuxuu dhaley ukun"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "daawada dabaysha"
+  SPLASH_POTION_EFFECT_AWKWARD: "daawada dabiiciga ah"
+  SPLASH_POTION_EFFECT_EMPTY: "daawada aan la farsamayn karin"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "daawada iska-caabbinta dabka"
+  SPLASH_POTION_EFFECT_HARMING: "daawada waxyeelaynta"
+  SPLASH_POTION_EFFECT_HEALING: "daawada daadinta"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "faafidda maqnaanshaha"
+  SPLASH_POTION_EFFECT_LEAPING: "biyo faafinta ee boodashada"
+  SPLASH_POTION_EFFECT_LEVITATION: "daawada faafinta ee levitation"
+  SPLASH_POTION_EFFECT_LUCK: "daawada nasiibka"
+  SPLASH_POTION_EFFECT_MUNDANE: "daawada faafinta maandooriyaha"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "faafidda aragga habeenka"
+  SPLASH_POTION_EFFECT_POISON: "biyo faafinta ee boodashada"
+  SPLASH_POTION_EFFECT_REGENERATION: "daroogada dib-u-nooleynta"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "biyo-soo-baxa qunyar-dhaca"
+  SPLASH_POTION_EFFECT_SLOWNESS: "daawada dareemka degdegga ah"
+  SPLASH_POTION_EFFECT_STRENGTH: "daawada waxyeelaynta"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "daawada dareemka degdegga ah"
+  SPLASH_POTION_EFFECT_THICK: "dheef-shiid kiimikaad"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "dareere sayidkii qoolleyda"
+  SPLASH_POTION_EFFECT_WATER: "dhalada biyaha dabaysha"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "biyaha neefsashada ee biyaha"
+  SPLASH_POTION_EFFECT_WEAKNESS: "daawada daciifnimada"
+  SPRUCE_BOAT: "gran doon"
+  SPRUCE_CHEST_BOAT: "doomaha spruce leh chest"
+  SPYGLASS: "spyglass"
+  SQUID_SPAWN_EGG: "ukunta taranka dabacasaha"
+  STICK: "oul"
+  STONE_AXE: "fan dhagxan"
+  STONE_HOE: "dhagax adag"
+  STONE_PICKAXE: "dhagax ka qaatay"
+  STONE_SHOVEL: "majarafad dhagax ah"
+  STONE_SWORD: "seefta dhagax"
+  STRAY_SPAWN_EGG: "ukun dhalay oo dhumay"
+  STRIDER_SPAWN_EGG: "strider spawn egg\n"
+  STRING: "xadhig"
+  SUGAR: "sonkorta"
+  SUSPICIOUS_STEW: "feejignaan shaki"
+  SWEET_BERRIES: "berry macaan"
+  TADPOLE_BUCKET: "baaldiyo tadpole"
+  TADPOLE_SPAWN_EGG: "tadpole spawn ukun"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "fallaadhka tilmaansan"
+  TIPPED_ARROW_EFFECT_AWKWARD: "tipped arrow"
+  TIPPED_ARROW_EFFECT_EMPTY: "falaadhi tibaaxeed oo aan la farsamayn karin"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "falaadhida iska caabinta dabka"
+  TIPPED_ARROW_EFFECT_HARMING: "fallaadha waxyeelaynta"
+  TIPPED_ARROW_EFFECT_HEALING: "fallaadha bogsiinta"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "falaadh la'aanta"
+  TIPPED_ARROW_EFFECT_LEAPING: "falaadhida boodboodka"
+  TIPPED_ARROW_EFFECT_LEVITATION: "falaadhidii laawiyiintii"
+  TIPPED_ARROW_EFFECT_LUCK: "falaadh nasiib"
+  TIPPED_ARROW_EFFECT_MUNDANE: "tipped arrow"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "falaadhida aragga habeenka"
+  TIPPED_ARROW_EFFECT_POISON: "fallaadha sunta"
+  TIPPED_ARROW_EFFECT_REGENERATION: "falaadhida dib-u-noolaynta"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "falaadh qunyar dhaceysa"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "falaadh gaabis ah"
+  TIPPED_ARROW_EFFECT_STRENGTH: "falaadhida xoogga"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "falaadhida degdega"
+  TIPPED_ARROW_EFFECT_THICK: "tipped arrow"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "falaadhkii sayidkii qoolleyda"
+  TIPPED_ARROW_EFFECT_WATER: "falaadh firidhsan"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "fallaadha neefsashada biyaha"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "falaadh daciifnimo"
+  TNT_MINECART: "minecart oo leh tnt"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "totem ee dhimashada"
+  TRADER_LLAMA_SPAWN_EGG: "baayacmushtarka llama ukunta dhaley"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "trident"
+  TROPICAL_FISH: "kalluunka kuleylka ah"
+  TROPICAL_FISH_BUCKET: "baaldiga kalluunka kulaylaha"
+  TROPICAL_FISH_SPAWN_EGG: "kallunnka kulaylaha ah ayaa dhasha ukun"
+  TURTLE_HELMET: "qolof didiin"
+  TURTLE_SPAWN_EGG: "diniin wuxuu dhaley ukun"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "vex wuxuu dhaley ukun"
+  VILLAGER_SPAWN_EGG: "pillager kalluunka ukun"
+  VINDICATOR_SPAWN_EGG: "tuugta ukunta taranka"
+  WANDERING_TRADER_SPAWN_EGG: "ganacsadaha warwareega ayaa ukun dhalay"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "ukunta u yeerista ee ilaaliyaha"
+  WARPED_FUNGUS_ON_A_STICK: "furuut dillaacay on stick ah\n"
+  WATER_BUCKET: "baaldi biyo ah"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "qamadi"
+  WHEAT_SEEDS: "badbaadiyaha"
+  WHITE_DYE: "dheeha cad"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "saxirad wuxuu dhaley ukun"
+  WITHER_SKELETON_SPAWN_EGG: "ukun taranka qallafsan"
+  WITHER_SPAWN_EGG: "wither spawn egg"
+  WOLF_SPAWN_EGG: "yeey wuxuu dhaley ukun"
+  WOODEN_AXE: "alwaax alwaax ah"
+  WOODEN_HOE: "alwaax hoe"
+  WOODEN_PICKAXE: "alwaax alwaax ah"
+  WOODEN_SHOVEL: "majarafad alwaax ah"
+  WOODEN_SWORD: "seef alwaax ah"
+  WRITABLE_BOOK: "buug iyo quill"
+  WRITTEN_BOOK: "buug qorid"
+  YELLOW_DYE: "dheeha jaalaha ah"
+  ZOGLIN_SPAWN_EGG: "zoglin spawn egg\n"
+  ZOMBIE_HORSE_SPAWN_EGG: "faraska zombie wuxuu dhaley ukun"
+  ZOMBIE_SPAWN_EGG: "zombie wuxuu dhaley ukun"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "tuulada zombie ayaa dhalay ukun"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombified piglin spawn egg\n"
+  CHEST: "markaad joogto:\n"
+  FEET: "markaad caga dhiganeyso:\n"
+  HEAD: "markaad madaxa tahay:\n"
+  LEGS: "markay lugaha tahay:"
+  MAINHAND: "markaad ku jirto gacanta ugu muhiimsan:\n"
+  OFFHAND: "markaad gacanta hayso:\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

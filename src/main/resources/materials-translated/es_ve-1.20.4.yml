@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "botón de acacia"
+  ACACIA_DOOR: "puerta de acacia"
+  ACACIA_FENCE: "cerca de acacia"
+  ACACIA_FENCE_GATE: "puerta de cerca de acacia"
+  ACACIA_HANGING_SIGN: "cartel colgante de acacia"
+  ACACIA_LEAVES: "hojas de acacia"
+  ACACIA_LOG: "tronco de acacia"
+  ACACIA_PLANKS: "madera de acacia"
+  ACACIA_PRESSURE_PLATE: "placa de presión de acacia"
+  ACACIA_SAPLING: "arbolito de acacia"
+  ACACIA_SIGN: "cartel de acacia"
+  ACACIA_SLAB: "losa de acacia"
+  ACACIA_STAIRS: "escaleras de acacia"
+  ACACIA_TRAPDOOR: "escotilla de acacia"
+  ACACIA_WALL_HANGING_SIGN: "cartel colgante de acacia en pared"
+  ACACIA_WALL_SIGN: "cartel de acacia en pared"
+  ACACIA_WOOD: "leño de acacia"
+  ACTIVATOR_RAIL: "carril activador"
+  AIR: "aire"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "bloque de amatista"
+  AMETHYST_CLUSTER: "cúmulo de amatista"
+  ANCIENT_DEBRIS: "escombros ancestrales"
+  ANDESITE: "andesita"
+  ANDESITE_SLAB: "losa de andesita"
+  ANDESITE_STAIRS: "escaleras de andesita"
+  ANDESITE_WALL: "muro de andesita"
+  ANVIL: "yunque"
+  ATTACHED_MELON_STEM: "tallo de patilla unido"
+  ATTACHED_PUMPKIN_STEM: "tallo de auyama unido"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "hojas de azalea"
+  AZURE_BLUET: "rubiácea"
+  BAMBOO: "bambú"
+  BAMBOO_BLOCK: "bloque de bambú"
+  BAMBOO_BUTTON: "botón de bambú"
+  BAMBOO_DOOR: "puerta de bambú"
+  BAMBOO_FENCE: "cerca de bambú"
+  BAMBOO_FENCE_GATE: "puerta de cerca de bambú"
+  BAMBOO_HANGING_SIGN: "cartel colgante de bambú"
+  BAMBOO_MOSAIC: "mosaico de bambú"
+  BAMBOO_MOSAIC_SLAB: "losa de mosaico de bambú"
+  BAMBOO_MOSAIC_STAIRS: "escaleras de mosaico de bambú"
+  BAMBOO_PLANKS: "madera de bambú"
+  BAMBOO_PRESSURE_PLATE: "placa de presión de bambú"
+  BAMBOO_SAPLING: "brote de bambú"
+  BAMBOO_SIGN: "cartel de bambú"
+  BAMBOO_SLAB: "losa de bambú"
+  BAMBOO_STAIRS: "escaleras de bambú"
+  BAMBOO_TRAPDOOR: "escotilla de bambú"
+  BAMBOO_WALL_HANGING_SIGN: "cartel colgante de bambú en pared"
+  BAMBOO_WALL_SIGN: "cartel de bambú en pared"
+  BANNER_BASE_BLACK: "paño completamente negro"
+  BANNER_BASE_BLUE: "paño completamente azul"
+  BANNER_BASE_BROWN: "paño completamente marrón"
+  BANNER_BASE_CYAN: "paño completamente turquesa"
+  BANNER_BASE_GRAY: "paño completamente gris"
+  BANNER_BASE_GREEN: "paño completamente verde"
+  BANNER_BASE_LIGHT_BLUE: "paño completamente azul cielo"
+  BANNER_BASE_LIGHT_GRAY: "paño completamente gris claro"
+  BANNER_BASE_LIME: "paño completamente verde lima"
+  BANNER_BASE_MAGENTA: "paño completamente magenta"
+  BANNER_BASE_ORANGE: "paño completamente naranja"
+  BANNER_BASE_PINK: "paño completamente rosa"
+  BANNER_BASE_PURPLE: "paño completamente morado"
+  BANNER_BASE_RED: "paño completamente rojo"
+  BANNER_BASE_WHITE: "paño completamente blanco"
+  BANNER_BASE_YELLOW: "paño completamente amarillo"
+  BANNER_BORDER_BLACK: "bordura negra"
+  BANNER_BORDER_BLUE: "bordura azul"
+  BANNER_BORDER_BROWN: "bordura marrón"
+  BANNER_BORDER_CYAN: "bordura turquesa"
+  BANNER_BORDER_GRAY: "bordura gris"
+  BANNER_BORDER_GREEN: "bordura verde"
+  BANNER_BORDER_LIGHT_BLUE: "bordura azul cielo"
+  BANNER_BORDER_LIGHT_GRAY: "bordura gris claro"
+  BANNER_BORDER_LIME: "bordura verde limón"
+  BANNER_BORDER_MAGENTA: "bordura magenta"
+  BANNER_BORDER_ORANGE: "bordura naranja"
+  BANNER_BORDER_PINK: "bordura rosa"
+  BANNER_BORDER_PURPLE: "bordura morada"
+  BANNER_BORDER_RED: "bordura roja"
+  BANNER_BORDER_WHITE: "bordura blanca"
+  BANNER_BORDER_YELLOW: "bordura amarilla"
+  BANNER_BRICKS_BLACK: "mazonado negro"
+  BANNER_BRICKS_BLUE: "mazonado azul"
+  BANNER_BRICKS_BROWN: "mazonado marrón"
+  BANNER_BRICKS_CYAN: "mazonado turquesa"
+  BANNER_BRICKS_GRAY: "mazonado gris"
+  BANNER_BRICKS_GREEN: "mazonado verde"
+  BANNER_BRICKS_LIGHT_BLUE: "mazonado azul cielo"
+  BANNER_BRICKS_LIGHT_GRAY: "mazonado gris claro"
+  BANNER_BRICKS_LIME: "mazonado verde limón"
+  BANNER_BRICKS_MAGENTA: "mazonado magenta"
+  BANNER_BRICKS_ORANGE: "mazonado naranja"
+  BANNER_BRICKS_PINK: "mazonado rosa"
+  BANNER_BRICKS_PURPLE: "mazonado morado"
+  BANNER_BRICKS_RED: "mazonado rojo"
+  BANNER_BRICKS_WHITE: "mazonado blanco"
+  BANNER_BRICKS_YELLOW: "mazonado amarillo"
+  BANNER_CIRCLE_BLACK: "roel negro"
+  BANNER_CIRCLE_BLUE: "roel azul"
+  BANNER_CIRCLE_BROWN: "roel marrón"
+  BANNER_CIRCLE_CYAN: "roel turquesa"
+  BANNER_CIRCLE_GRAY: "roel gris"
+  BANNER_CIRCLE_GREEN: "roel verde"
+  BANNER_CIRCLE_LIGHT_BLUE: "roel azul cielo"
+  BANNER_CIRCLE_LIGHT_GRAY: "roel gris claro"
+  BANNER_CIRCLE_LIME: "roel verde limón"
+  BANNER_CIRCLE_MAGENTA: "roel magenta"
+  BANNER_CIRCLE_ORANGE: "roel naranja"
+  BANNER_CIRCLE_PINK: "roel rosa"
+  BANNER_CIRCLE_PURPLE: "roel morado"
+  BANNER_CIRCLE_RED: "roel rojo"
+  BANNER_CIRCLE_WHITE: "roel blanco"
+  BANNER_CIRCLE_YELLOW: "roel amarillo"
+  BANNER_CREEPER_BLACK: "estampado negro de creeper"
+  BANNER_CREEPER_BLUE: "estampado azul de creeper"
+  BANNER_CREEPER_BROWN: "estampado marrón de creeper"
+  BANNER_CREEPER_CYAN: "estampado turquesa de creeper"
+  BANNER_CREEPER_GRAY: "estampado gris de creeper"
+  BANNER_CREEPER_GREEN: "estampado verde de creeper"
+  BANNER_CREEPER_LIGHT_BLUE: "estampado azul cielo de creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "estampado gris claro de creeper"
+  BANNER_CREEPER_LIME: "estampado verde limón de creeper"
+  BANNER_CREEPER_MAGENTA: "estampado magenta de creeper"
+  BANNER_CREEPER_ORANGE: "estampado naranja de creeper"
+  BANNER_CREEPER_PINK: "estampado rosa de creeper"
+  BANNER_CREEPER_PURPLE: "estampado morado de creeper"
+  BANNER_CREEPER_RED: "estampado rojo de creeper"
+  BANNER_CREEPER_WHITE: "estampado blanco de creeper"
+  BANNER_CREEPER_YELLOW: "estampado amariillo de creeper"
+  BANNER_CROSS_BLACK: "aspa negra"
+  BANNER_CROSS_BLUE: "aspa azul"
+  BANNER_CROSS_BROWN: "aspa marrón"
+  BANNER_CROSS_CYAN: "aspa turquesa"
+  BANNER_CROSS_GRAY: "aspa gris"
+  BANNER_CROSS_GREEN: "aspa verde"
+  BANNER_CROSS_LIGHT_BLUE: "aspa azul cielo"
+  BANNER_CROSS_LIGHT_GRAY: "aspa gris claro"
+  BANNER_CROSS_LIME: "aspa verde limón"
+  BANNER_CROSS_MAGENTA: "aspa magenta"
+  BANNER_CROSS_ORANGE: "aspa naranja"
+  BANNER_CROSS_PINK: "aspa rosa"
+  BANNER_CROSS_PURPLE: "aspa morada"
+  BANNER_CROSS_RED: "aspa roja"
+  BANNER_CROSS_WHITE: "aspa blanca"
+  BANNER_CROSS_YELLOW: "aspa amarilla"
+  BANNER_CURLY_BORDER_BLACK: "bordura negra dentada"
+  BANNER_CURLY_BORDER_BLUE: "bordura azul dentada"
+  BANNER_CURLY_BORDER_BROWN: "bordura marrón dentada"
+  BANNER_CURLY_BORDER_CYAN: "bordura turquesa dentada"
+  BANNER_CURLY_BORDER_GRAY: "bordura gris dentada"
+  BANNER_CURLY_BORDER_GREEN: "bordura verde dentada"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bordura azul cielo dentada"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bordura gris claro dentada"
+  BANNER_CURLY_BORDER_LIME: "bordura verde limón dentada"
+  BANNER_CURLY_BORDER_MAGENTA: "bordura magenta dentada"
+  BANNER_CURLY_BORDER_ORANGE: "bordura naranja dentada"
+  BANNER_CURLY_BORDER_PINK: "bordura rosa dentada"
+  BANNER_CURLY_BORDER_PURPLE: "bordura morada dentada"
+  BANNER_CURLY_BORDER_RED: "bordura roja dentada"
+  BANNER_CURLY_BORDER_WHITE: "bordura blanca dentada"
+  BANNER_CURLY_BORDER_YELLOW: "bordura amarilla dentada"
+  BANNER_DIAGONAL_LEFT_BLACK: "tajado negro"
+  BANNER_DIAGONAL_LEFT_BLUE: "tajado azul"
+  BANNER_DIAGONAL_LEFT_BROWN: "tajado marrón"
+  BANNER_DIAGONAL_LEFT_CYAN: "tajado turquesa"
+  BANNER_DIAGONAL_LEFT_GRAY: "tajado gris"
+  BANNER_DIAGONAL_LEFT_GREEN: "tajado verde"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "tajado azul cielo"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "tajado gris claro"
+  BANNER_DIAGONAL_LEFT_LIME: "tajado verde limón"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "tajado magenta"
+  BANNER_DIAGONAL_LEFT_ORANGE: "tajado naranja"
+  BANNER_DIAGONAL_LEFT_PINK: "tajado rosa"
+  BANNER_DIAGONAL_LEFT_PURPLE: "tajado morado"
+  BANNER_DIAGONAL_LEFT_RED: "tajado rojo"
+  BANNER_DIAGONAL_LEFT_WHITE: "tajado blanco"
+  BANNER_DIAGONAL_LEFT_YELLOW: "tajado amarillo"
+  BANNER_DIAGONAL_RIGHT_BLACK: "tronchado negro"
+  BANNER_DIAGONAL_RIGHT_BLUE: "tronchado azul"
+  BANNER_DIAGONAL_RIGHT_BROWN: "tronchado marrón"
+  BANNER_DIAGONAL_RIGHT_CYAN: "tronchado turquesa"
+  BANNER_DIAGONAL_RIGHT_GRAY: "tronchado gris"
+  BANNER_DIAGONAL_RIGHT_GREEN: "tronchado verde"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "tronchado azul cielo"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "tronchado gris claro"
+  BANNER_DIAGONAL_RIGHT_LIME: "tronchado verde limón"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "tronchado magenta"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "tronchado naranja"
+  BANNER_DIAGONAL_RIGHT_PINK: "tronchado rosa"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "tronchado morado"
+  BANNER_DIAGONAL_RIGHT_RED: "tronchado rojo"
+  BANNER_DIAGONAL_RIGHT_WHITE: "tronchado blanco"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "tronchado amarillo"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "tronchado negro invertido"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "tronchado azul invertido"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "tronchado marrón invertido"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "tronchado turquesa invertido"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "tronchado gris invertido"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "tronchado verde invertido"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "tronchado azul cielo invertido"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "tronchado gris claro invertido"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "tronchado verde limón invertido"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "tronchado magenta invertido"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "tronchado naranja invertido"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "tronchado rosa invertido"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "tronchado morado invertido"
+  BANNER_DIAGONAL_UP_LEFT_RED: "tronchado rojo invertido"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "tronchado blanco invertido"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "tronchado amarillo invertido"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "tajado negro invertido"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "tajado azul invertido"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "tajado marrón invertido"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tajado turquesa invertido"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "tajado gris invertido"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "tajado verde invertido"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "tajado azul cielo invertido"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "tajado gris claro invertido"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "tajado verde limón invertido"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "tajado magenta invertido"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "tajado naranja invertido"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "tajado rosa invertido"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "tajado morado invertido"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "tajado rojo invertido"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "tajado blanco invertido"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "tajado amarillo invertido"
+  BANNER_FLOWER_BLACK: "estampado negro de flor"
+  BANNER_FLOWER_BLUE: "estampado azul de flor"
+  BANNER_FLOWER_BROWN: "estampado marrón de flor"
+  BANNER_FLOWER_CYAN: "estampado turquesa de flor"
+  BANNER_FLOWER_GRAY: "estampado gris de flor"
+  BANNER_FLOWER_GREEN: "estampado verde de flor"
+  BANNER_FLOWER_LIGHT_BLUE: "estampado azul cielo de flor"
+  BANNER_FLOWER_LIGHT_GRAY: "estampado gris claro de flor"
+  BANNER_FLOWER_LIME: "estampado verde limón de flor"
+  BANNER_FLOWER_MAGENTA: "estampado magenta de flor"
+  BANNER_FLOWER_ORANGE: "estampado naranja de flor"
+  BANNER_FLOWER_PINK: "estampado rosa de flor"
+  BANNER_FLOWER_PURPLE: "estampado morado de flor"
+  BANNER_FLOWER_RED: "estampado rojo de flor"
+  BANNER_FLOWER_WHITE: "estampado blanco de flor"
+  BANNER_FLOWER_YELLOW: "estampado amarillo de flor"
+  BANNER_GLOBE_BLACK: "planeta negro"
+  BANNER_GLOBE_BLUE: "planeta azul"
+  BANNER_GLOBE_BROWN: "planeta marrón"
+  BANNER_GLOBE_CYAN: "planeta turquesa"
+  BANNER_GLOBE_GRAY: "planeta gris"
+  BANNER_GLOBE_GREEN: "planeta verde"
+  BANNER_GLOBE_LIGHT_BLUE: "planeta azul cielo"
+  BANNER_GLOBE_LIGHT_GRAY: "planeta gris claro"
+  BANNER_GLOBE_LIME: "planeta verde limón"
+  BANNER_GLOBE_MAGENTA: "planeta magenta"
+  BANNER_GLOBE_ORANGE: "planeta naranja"
+  BANNER_GLOBE_PINK: "planeta rosa"
+  BANNER_GLOBE_PURPLE: "planeta morado"
+  BANNER_GLOBE_RED: "planeta rojo"
+  BANNER_GLOBE_WHITE: "planeta blanco"
+  BANNER_GLOBE_YELLOW: "planeta amarillo"
+  BANNER_GRADIENT_BLACK: "gradiente negro"
+  BANNER_GRADIENT_BLUE: "gradiente azul"
+  BANNER_GRADIENT_BROWN: "gradiente marrón"
+  BANNER_GRADIENT_CYAN: "gradiente turquesa"
+  BANNER_GRADIENT_GRAY: "gradiente gris"
+  BANNER_GRADIENT_GREEN: "gradiente verde"
+  BANNER_GRADIENT_LIGHT_BLUE: "gradiente azul cielo"
+  BANNER_GRADIENT_LIGHT_GRAY: "gradiente gris claro"
+  BANNER_GRADIENT_LIME: "gradiente verde limón"
+  BANNER_GRADIENT_MAGENTA: "gradiente magenta"
+  BANNER_GRADIENT_ORANGE: "gradiente naranja"
+  BANNER_GRADIENT_PINK: "gradiente rosa"
+  BANNER_GRADIENT_PURPLE: "gradiente morado"
+  BANNER_GRADIENT_RED: "gradiente rojo"
+  BANNER_GRADIENT_WHITE: "gradiente blanco"
+  BANNER_GRADIENT_YELLOW: "gradiente amarillo"
+  BANNER_GRADIENT_UP_BLACK: "gradiente negro en base"
+  BANNER_GRADIENT_UP_BLUE: "gradiente azul en base"
+  BANNER_GRADIENT_UP_BROWN: "gradiente marrón en base"
+  BANNER_GRADIENT_UP_CYAN: "gradiente turquesa en campaña"
+  BANNER_GRADIENT_UP_GRAY: "gradiente gris en base"
+  BANNER_GRADIENT_UP_GREEN: "gradiente verde en base"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "gradiente azul cielo en base"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "gradiente gris claro en base"
+  BANNER_GRADIENT_UP_LIME: "gradiente verde limón en base"
+  BANNER_GRADIENT_UP_MAGENTA: "gradiente magenta en base"
+  BANNER_GRADIENT_UP_ORANGE: "gradiente naranja en base"
+  BANNER_GRADIENT_UP_PINK: "gradiente rosa en base"
+  BANNER_GRADIENT_UP_PURPLE: "gradiente morado en base"
+  BANNER_GRADIENT_UP_RED: "gradiente rojo en base"
+  BANNER_GRADIENT_UP_WHITE: "gradiente blanco en base"
+  BANNER_GRADIENT_UP_YELLOW: "gradiente amarillo en base"
+  BANNER_HALF_HORIZONTAL_BLACK: "cortado negro"
+  BANNER_HALF_HORIZONTAL_BLUE: "cortado azul"
+  BANNER_HALF_HORIZONTAL_BROWN: "cortado marrón"
+  BANNER_HALF_HORIZONTAL_CYAN: "cortado turquesa"
+  BANNER_HALF_HORIZONTAL_GRAY: "cortado gris"
+  BANNER_HALF_HORIZONTAL_GREEN: "cortado verde"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "cortado azul cielo"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "cortado gris claro"
+  BANNER_HALF_HORIZONTAL_LIME: "cortado verde limón"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "cortado magenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "cortado naranja"
+  BANNER_HALF_HORIZONTAL_PINK: "cortado rosa"
+  BANNER_HALF_HORIZONTAL_PURPLE: "cortado morado"
+  BANNER_HALF_HORIZONTAL_RED: "cortado rojo"
+  BANNER_HALF_HORIZONTAL_WHITE: "cortado blanco"
+  BANNER_HALF_HORIZONTAL_YELLOW: "cortado amarillo"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "cortado negro invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "cortado azul invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "cortado marrón invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cortado turquesa invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "cortado gris invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "cortado verde invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "cortado azul cielo invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "cortado gris claro invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "cortado verde limón invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "cortado magenta invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "cortado naranja invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "cortado rosa invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "cortado morado invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "cortado rojo invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "cortado blanco invertido"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "cortado amarillo invertido"
+  BANNER_HALF_VERTICAL_BLACK: "flanco negro"
+  BANNER_HALF_VERTICAL_BLUE: "flanco azul"
+  BANNER_HALF_VERTICAL_BROWN: "flanco marrón"
+  BANNER_HALF_VERTICAL_CYAN: "partido turquesa"
+  BANNER_HALF_VERTICAL_GRAY: "flanco gris"
+  BANNER_HALF_VERTICAL_GREEN: "flanco verde"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "flanco azul cielo"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "flanco gris claro a diestra"
+  BANNER_HALF_VERTICAL_LIME: "flanco verde limón"
+  BANNER_HALF_VERTICAL_MAGENTA: "flanco magenta"
+  BANNER_HALF_VERTICAL_ORANGE: "flanco naranja"
+  BANNER_HALF_VERTICAL_PINK: "flanco rosa"
+  BANNER_HALF_VERTICAL_PURPLE: "flanco morado"
+  BANNER_HALF_VERTICAL_RED: "flanco rojo"
+  BANNER_HALF_VERTICAL_WHITE: "flanco blanco"
+  BANNER_HALF_VERTICAL_YELLOW: "flanco amarillo"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "flanco negro invertido"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "flanco azul invertido"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "flanco marrón invertido"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "partido turquesa invertido"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "flanco gris invertido"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "flanco verde invertido"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "flanco azul cielo invertido"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "flanco gris claro invertido"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "flanco verde limón invertido"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "flanco magenta invertido"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "flanco naranja invertido"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "flanco rosa invertido"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "flanco morado invertido"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "flanco rojo invertido"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "flanco blanco invertido"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "flanco amarillo invertido"
+  BANNER_MOJANG_BLACK: "cosa negra"
+  BANNER_MOJANG_BLUE: "cosa azul"
+  BANNER_MOJANG_BROWN: "cosa marrón"
+  BANNER_MOJANG_CYAN: "cosa turquesa"
+  BANNER_MOJANG_GRAY: "cosa gris"
+  BANNER_MOJANG_GREEN: "cosa verde"
+  BANNER_MOJANG_LIGHT_BLUE: "cosa azul cielo"
+  BANNER_MOJANG_LIGHT_GRAY: "cosa gris claro"
+  BANNER_MOJANG_LIME: "cosa verde limón"
+  BANNER_MOJANG_MAGENTA: "cosa magenta"
+  BANNER_MOJANG_ORANGE: "cosa naranja"
+  BANNER_MOJANG_PINK: "cosa rosa"
+  BANNER_MOJANG_PURPLE: "cosa morada"
+  BANNER_MOJANG_RED: "cosa roja"
+  BANNER_MOJANG_WHITE: "cosa blanca"
+  BANNER_MOJANG_YELLOW: "cosa amarilla"
+  BANNER_PIGLIN_BLACK: "hocico negro"
+  BANNER_PIGLIN_BLUE: "hocico azul"
+  BANNER_PIGLIN_BROWN: "hocico marrón"
+  BANNER_PIGLIN_CYAN: "hocico turquesa"
+  BANNER_PIGLIN_GRAY: "hocico gris"
+  BANNER_PIGLIN_GREEN: "hocico verde"
+  BANNER_PIGLIN_LIGHT_BLUE: "hocico azul cielo"
+  BANNER_PIGLIN_LIGHT_GRAY: "hocico gris claro"
+  BANNER_PIGLIN_LIME: "hocico verde limón"
+  BANNER_PIGLIN_MAGENTA: "hocico magenta"
+  BANNER_PIGLIN_ORANGE: "hocico naranja"
+  BANNER_PIGLIN_PINK: "hocico rosa"
+  BANNER_PIGLIN_PURPLE: "hocico morado"
+  BANNER_PIGLIN_RED: "hocico rojo"
+  BANNER_PIGLIN_WHITE: "hocico blanco"
+  BANNER_PIGLIN_YELLOW: "hocico amarillo"
+  BANNER_RHOMBUS_BLACK: "rombo negro"
+  BANNER_RHOMBUS_BLUE: "rombo azul"
+  BANNER_RHOMBUS_BROWN: "rombo marrón"
+  BANNER_RHOMBUS_CYAN: "rombo turquesa"
+  BANNER_RHOMBUS_GRAY: "rombo gris"
+  BANNER_RHOMBUS_GREEN: "rombo verde"
+  BANNER_RHOMBUS_LIGHT_BLUE: "rombo azul cielo"
+  BANNER_RHOMBUS_LIGHT_GRAY: "rombo gris claro"
+  BANNER_RHOMBUS_LIME: "rombo verde limón"
+  BANNER_RHOMBUS_MAGENTA: "rombo magenta"
+  BANNER_RHOMBUS_ORANGE: "rombo naranja"
+  BANNER_RHOMBUS_PINK: "rombo rosa"
+  BANNER_RHOMBUS_PURPLE: "rombo morado"
+  BANNER_RHOMBUS_RED: "rombo rojo"
+  BANNER_RHOMBUS_WHITE: "rombo blanco"
+  BANNER_RHOMBUS_YELLOW: "rombo amarillo"
+  BANNER_SKULL_BLACK: "estampado negro de cráneo"
+  BANNER_SKULL_BLUE: "estampado azul de cráneo"
+  BANNER_SKULL_BROWN: "estampado marrón de cráneo"
+  BANNER_SKULL_CYAN: "estampado turquesa de cráneo"
+  BANNER_SKULL_GRAY: "estampado gris de cráneo"
+  BANNER_SKULL_GREEN: "estampado verde de cráneo"
+  BANNER_SKULL_LIGHT_BLUE: "estampado azul cielo de cráneo"
+  BANNER_SKULL_LIGHT_GRAY: "estampado gris claro de cráneo"
+  BANNER_SKULL_LIME: "estampado verde limón de cráneo"
+  BANNER_SKULL_MAGENTA: "estampado magenta de cráneo"
+  BANNER_SKULL_ORANGE: "estampado naranja de cráneo"
+  BANNER_SKULL_PINK: "estampado rosa de cráneo"
+  BANNER_SKULL_PURPLE: "estampado morado de cráneo"
+  BANNER_SKULL_RED: "estampado rojo de cráneo"
+  BANNER_SKULL_WHITE: "estampado blanco de cráneo"
+  BANNER_SKULL_YELLOW: "estampado amarillo de cráneo"
+  BANNER_SMALL_STRIPES_BLACK: "bastonado negro"
+  BANNER_SMALL_STRIPES_BLUE: "bastonado azul"
+  BANNER_SMALL_STRIPES_BROWN: "bastonado marrón"
+  BANNER_SMALL_STRIPES_CYAN: "palado turquesa"
+  BANNER_SMALL_STRIPES_GRAY: "bastonado gris"
+  BANNER_SMALL_STRIPES_GREEN: "bastonado verde"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "bastonado azul cielo"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "bastonado gris claro"
+  BANNER_SMALL_STRIPES_LIME: "bastonado verde limón"
+  BANNER_SMALL_STRIPES_MAGENTA: "bastonado magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "bastonado naranja"
+  BANNER_SMALL_STRIPES_PINK: "bastonado rosa"
+  BANNER_SMALL_STRIPES_PURPLE: "bastonado morado"
+  BANNER_SMALL_STRIPES_RED: "bastonado rojo"
+  BANNER_SMALL_STRIPES_WHITE: "bastonado blanco"
+  BANNER_SMALL_STRIPES_YELLOW: "bastonado amarillo"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "cantón negro en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "cantón azul en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "cantón marrón en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "cantón turquesa en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "cantón gris en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "cantón verde en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "cantón azul cielo en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "cantón gris claro en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "cantón verde limón en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "cantón magenta en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "cantón naranja en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "cantón rosa en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "cantón morado en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "cantón rojo en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "cantón blanco en base a diestra"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "cantón amarillo en base a diestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "cantón negro en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "cantón azul en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "cantón marrón en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "cantón turquesa en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "cantón gris en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "cantón verde en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "cantón azul cielo en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "cantón gris claro en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "cantón verde limón en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "cantón magenta en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "cantón naranja en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "cantón rosa en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "cantón morado en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "cantón rojo en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "cantón blanco en base a siniestra"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "cantón amarillo en base a siniestra"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "cantón negro en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "cantón azul en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "cantón marrón en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "cantón diestro turquesa en jefe"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "cantón gris en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "cantón verde en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "cantón azul cielo en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "cantón gris claro en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_LIME: "cantón verde limón en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "cantón magenta en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "cantón naranja en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_PINK: "cantón rosa en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "cantón morado en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_RED: "cantón rojo en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "cantón blanco en jefe a diestra"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "cantón amarillo en jefe a diestra"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "cantón negro en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "cantón azul en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "cantón marrón en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "cantón siniestro turquesa en jefe"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "cantón gris en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "cantón verde en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "cantón azul cielo en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "cantón gris claro en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "cantón verde limón en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "cantón magenta en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "cantón naranja en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "cantón rosa en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "cantón morado en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_RED: "cantón rojo en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "cantón blanco en jefe a siniestra"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "cantón amarillo en jefe a siniestra"
+  BANNER_STRAIGHT_CROSS_BLACK: "cruz negra"
+  BANNER_STRAIGHT_CROSS_BLUE: "cruz azul"
+  BANNER_STRAIGHT_CROSS_BROWN: "cruz marrón"
+  BANNER_STRAIGHT_CROSS_CYAN: "cruz turquesa"
+  BANNER_STRAIGHT_CROSS_GRAY: "cruz gris"
+  BANNER_STRAIGHT_CROSS_GREEN: "cruz verde"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "cruz azul cielo"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "cruz gris claro"
+  BANNER_STRAIGHT_CROSS_LIME: "cruz verde limón"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "cruz magenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "cruz naranja"
+  BANNER_STRAIGHT_CROSS_PINK: "cruz rosa"
+  BANNER_STRAIGHT_CROSS_PURPLE: "cruz morada"
+  BANNER_STRAIGHT_CROSS_RED: "cruz roja"
+  BANNER_STRAIGHT_CROSS_WHITE: "cruz blanca"
+  BANNER_STRAIGHT_CROSS_YELLOW: "cruz amarilla"
+  BANNER_STRIPE_BOTTOM_BLACK: "campaña negra"
+  BANNER_STRIPE_BOTTOM_BLUE: "campaña azul"
+  BANNER_STRIPE_BOTTOM_BROWN: "campaña marrón"
+  BANNER_STRIPE_BOTTOM_CYAN: "campaña turquesa"
+  BANNER_STRIPE_BOTTOM_GRAY: "campaña gris"
+  BANNER_STRIPE_BOTTOM_GREEN: "campaña verde"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "campaña azul cielo"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "campaña gris claro"
+  BANNER_STRIPE_BOTTOM_LIME: "campaña verde limón"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "campaña magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "campaña naranja"
+  BANNER_STRIPE_BOTTOM_PINK: "campaña rosa"
+  BANNER_STRIPE_BOTTOM_PURPLE: "campaña morada"
+  BANNER_STRIPE_BOTTOM_RED: "campaña roja"
+  BANNER_STRIPE_BOTTOM_WHITE: "campaña blanca"
+  BANNER_STRIPE_BOTTOM_YELLOW: "campaña amarilla"
+  BANNER_STRIPE_CENTER_BLACK: "palo negro"
+  BANNER_STRIPE_CENTER_BLUE: "palo azul"
+  BANNER_STRIPE_CENTER_BROWN: "palo marrón"
+  BANNER_STRIPE_CENTER_CYAN: "palo turquesa"
+  BANNER_STRIPE_CENTER_GRAY: "palo gris"
+  BANNER_STRIPE_CENTER_GREEN: "palo verde"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "palo azul cielo"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "palo gris claro"
+  BANNER_STRIPE_CENTER_LIME: "palo verde limón"
+  BANNER_STRIPE_CENTER_MAGENTA: "palo magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "palo naranja"
+  BANNER_STRIPE_CENTER_PINK: "palo rosa"
+  BANNER_STRIPE_CENTER_PURPLE: "palo morado"
+  BANNER_STRIPE_CENTER_RED: "palo rojo"
+  BANNER_STRIPE_CENTER_WHITE: "palo blanco"
+  BANNER_STRIPE_CENTER_YELLOW: "palo amarillo"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "banda negra a siniestra"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "banda azul a siniestra"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "banda marrón a siniestra"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "barra turquesa"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "banda gris a siniestra"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "banda verde a siniestra"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "banda azul cielo a siniestra"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "banda gris claro a siniestra"
+  BANNER_STRIPE_DOWNLEFT_LIME: "banda verde limón a siniestra"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "banda magenta a siniestra"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "banda naranja a siniestra"
+  BANNER_STRIPE_DOWNLEFT_PINK: "banda rosa a siniestra"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "banda morada a siniestra"
+  BANNER_STRIPE_DOWNLEFT_RED: "banda roja a siniestra"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "banda blanca a siniestra"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "banda amarilla a siniestra"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "banda negra"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "banda azul"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "banda marrón"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "banda turquesa"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "banda gris"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "banda verde"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "banda azul cielo"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "banda gris claro"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "banda verde limón"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "banda magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "banda naranja"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "banda rosa"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "banda morada"
+  BANNER_STRIPE_DOWNRIGHT_RED: "banda roja"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "banda blanca"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "banda amarilla"
+  BANNER_STRIPE_LEFT_BLACK: "palo negro a diestra"
+  BANNER_STRIPE_LEFT_BLUE: "palo azul a diestra"
+  BANNER_STRIPE_LEFT_BROWN: "palo marrón a diestra"
+  BANNER_STRIPE_LEFT_CYAN: "palo turquesa a diestra"
+  BANNER_STRIPE_LEFT_GRAY: "palo gris a diestra"
+  BANNER_STRIPE_LEFT_GREEN: "palo verde a diestra"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "palo azul cielo a diestra"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "palo gris claro a diestra"
+  BANNER_STRIPE_LEFT_LIME: "palo verde limón a diestra"
+  BANNER_STRIPE_LEFT_MAGENTA: "palo magenta a diestra"
+  BANNER_STRIPE_LEFT_ORANGE: "palo naranja a diestra"
+  BANNER_STRIPE_LEFT_PINK: "palo rosa a diestra"
+  BANNER_STRIPE_LEFT_PURPLE: "palo morado a diestra"
+  BANNER_STRIPE_LEFT_RED: "palo rojo a diestra"
+  BANNER_STRIPE_LEFT_WHITE: "palo blanco a diestra"
+  BANNER_STRIPE_LEFT_YELLOW: "palo amarillo a diestra"
+  BANNER_STRIPE_MIDDLE_BLACK: "franja negra"
+  BANNER_STRIPE_MIDDLE_BLUE: "franja azul"
+  BANNER_STRIPE_MIDDLE_BROWN: "franja marrón"
+  BANNER_STRIPE_MIDDLE_CYAN: "franja turquesa"
+  BANNER_STRIPE_MIDDLE_GRAY: "franja gris"
+  BANNER_STRIPE_MIDDLE_GREEN: "franja verde"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "franja azul cielo"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "franja gris claro"
+  BANNER_STRIPE_MIDDLE_LIME: "franja verde limón"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "franja magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "franja naranja"
+  BANNER_STRIPE_MIDDLE_PINK: "franja rosa"
+  BANNER_STRIPE_MIDDLE_PURPLE: "franja morada"
+  BANNER_STRIPE_MIDDLE_RED: "franja roja"
+  BANNER_STRIPE_MIDDLE_WHITE: "franja blanca"
+  BANNER_STRIPE_MIDDLE_YELLOW: "franja amarilla"
+  BANNER_STRIPE_RIGHT_BLACK: "palo negro a siniestra"
+  BANNER_STRIPE_RIGHT_BLUE: "palo azul a siniestra"
+  BANNER_STRIPE_RIGHT_BROWN: "palo marrón a siniestra"
+  BANNER_STRIPE_RIGHT_CYAN: "palo turquesa a siniestra"
+  BANNER_STRIPE_RIGHT_GRAY: "palo gris a siniestra"
+  BANNER_STRIPE_RIGHT_GREEN: "palo verde a siniestra"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "palo azul cielo a siniestra"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "palo gris claro a siniestra"
+  BANNER_STRIPE_RIGHT_LIME: "palo verde limón a siniestra"
+  BANNER_STRIPE_RIGHT_MAGENTA: "palo magenta a siniestra"
+  BANNER_STRIPE_RIGHT_ORANGE: "palo naranja a siniestra"
+  BANNER_STRIPE_RIGHT_PINK: "palo rosa a siniestra"
+  BANNER_STRIPE_RIGHT_PURPLE: "palo morado a siniestra"
+  BANNER_STRIPE_RIGHT_RED: "palo rojo a siniestra"
+  BANNER_STRIPE_RIGHT_WHITE: "palo blanco a siniestra"
+  BANNER_STRIPE_RIGHT_YELLOW: "palo amarillo a siniestra"
+  BANNER_STRIPE_TOP_BLACK: "jefe negro"
+  BANNER_STRIPE_TOP_BLUE: "jefe azul"
+  BANNER_STRIPE_TOP_BROWN: "jefe marrón"
+  BANNER_STRIPE_TOP_CYAN: "jefe turquesa"
+  BANNER_STRIPE_TOP_GRAY: "jefe gris"
+  BANNER_STRIPE_TOP_GREEN: "jefe verde"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "jefe azul cielo"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "jefe gris claro"
+  BANNER_STRIPE_TOP_LIME: "jefe verde limón"
+  BANNER_STRIPE_TOP_MAGENTA: "jefe magenta"
+  BANNER_STRIPE_TOP_ORANGE: "jefe naranja"
+  BANNER_STRIPE_TOP_PINK: "jefe rosa"
+  BANNER_STRIPE_TOP_PURPLE: "jefe morado"
+  BANNER_STRIPE_TOP_RED: "jefe rojo"
+  BANNER_STRIPE_TOP_WHITE: "jefe blanco"
+  BANNER_STRIPE_TOP_YELLOW: "jefe amarillo"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "chevrón negro"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "chevrón azul"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "chevrón marrón"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "chevrón turquesa"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "chevrón gris"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "chevrón verde"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "chevrón azul cielo"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "chevrón gris claro"
+  BANNER_TRIANGLE_BOTTOM_LIME: "chevrón verde limón"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "chevrón magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "chevrón naranja"
+  BANNER_TRIANGLE_BOTTOM_PINK: "chevrón rosa"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "chevrón morado"
+  BANNER_TRIANGLE_BOTTOM_RED: "chevrón rojo"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "chevrón blanco"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "chevrón amarillo"
+  BANNER_TRIANGLE_TOP_BLACK: "chevrón negro invertido"
+  BANNER_TRIANGLE_TOP_BLUE: "chevrón azul invertido"
+  BANNER_TRIANGLE_TOP_BROWN: "chevrón marrón invertido"
+  BANNER_TRIANGLE_TOP_CYAN: "chevrón turquesa invertido"
+  BANNER_TRIANGLE_TOP_GRAY: "chevrón gris invertido"
+  BANNER_TRIANGLE_TOP_GREEN: "chevrón verde invertido"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "chevrón azul cielo invertido"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "chevrón gris claro invertido"
+  BANNER_TRIANGLE_TOP_LIME: "chevrón verde limón invertido"
+  BANNER_TRIANGLE_TOP_MAGENTA: "chevrón magenta invertido"
+  BANNER_TRIANGLE_TOP_ORANGE: "chevrón naranja invertido"
+  BANNER_TRIANGLE_TOP_PINK: "chevrón rosa invertido"
+  BANNER_TRIANGLE_TOP_PURPLE: "chevrón morado invertido"
+  BANNER_TRIANGLE_TOP_RED: "chevrón rojo invertido"
+  BANNER_TRIANGLE_TOP_WHITE: "chevrón blanco invertido"
+  BANNER_TRIANGLE_TOP_YELLOW: "chevrón amarillo invertido"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "base negra dentada"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "base azul dentada"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "base marrón dentada"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "campaña turquesa dentada"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "base gris dentada"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "base verde dentada"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "base azul cielo dentada"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "base gris claro dentada"
+  BANNER_TRIANGLES_BOTTOM_LIME: "base verde limón dentada"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "base morada dentada"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "base naranja dentada"
+  BANNER_TRIANGLES_BOTTOM_PINK: "base rosa dentada"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "base morada dentada"
+  BANNER_TRIANGLES_BOTTOM_RED: "base roja dentada"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "base blanca dentada"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "base amarilla dentada"
+  BANNER_TRIANGLES_TOP_BLACK: "jefe negro dentado"
+  BANNER_TRIANGLES_TOP_BLUE: "jefe azul dentado"
+  BANNER_TRIANGLES_TOP_BROWN: "jefe marrón dentado"
+  BANNER_TRIANGLES_TOP_CYAN: "jefe turquesa dentado"
+  BANNER_TRIANGLES_TOP_GRAY: "jefe gris dentado"
+  BANNER_TRIANGLES_TOP_GREEN: "jefe verde dentado"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "jefe azul cielo dentado"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "jefe gris claro dentado"
+  BANNER_TRIANGLES_TOP_LIME: "jefe verde lima dentado"
+  BANNER_TRIANGLES_TOP_MAGENTA: "jefe magenta dentado"
+  BANNER_TRIANGLES_TOP_ORANGE: "jefe naranja dentado"
+  BANNER_TRIANGLES_TOP_PINK: "jefe rosa dentado"
+  BANNER_TRIANGLES_TOP_PURPLE: "jefe morado dentado"
+  BANNER_TRIANGLES_TOP_RED: "jefe rojo dentado"
+  BANNER_TRIANGLES_TOP_WHITE: "jefe blanco dentado"
+  BANNER_TRIANGLES_TOP_YELLOW: "jefe amarillo dentado"
+  BARREL: "barril"
+  BARRIER: "barrera"
+  BASALT: "basalto"
+  BEACON: "faro"
+  BEACON_PRIMARY: "poder primario"
+  BEACON_SECONDARY: "poder secundario"
+  BED_NO_SLEEP: "solo puedes dormir por la noche o durante tormentas eléctricas"
+  BED_NOT_SAFE: "no puedes dormir ahora: hay monstruos cerca"
+  BED_OBSTRUCTED: "esta cama está obstruida"
+  BED_OCCUPIED: "esta cama está ocupada"
+  BED_TOO_FAR_AWAY: "no puedes dormir ahora: la cama está muy lejos"
+  BEDROCK: "piedra base"
+  BEE_NEST: "colmena de abejas"
+  BEEHIVE: "apiario de abejas"
+  BEETROOTS: "remolachas"
+  BELL: "campana"
+  BIG_DRIPLEAF: "plantaforma grande"
+  BIG_DRIPLEAF_STEM: "tallo de plantaforma grande"
+  BIRCH_BUTTON: "botón de abedul"
+  BIRCH_DOOR: "puerta de abedul"
+  BIRCH_FENCE: "cerca de abedul"
+  BIRCH_FENCE_GATE: "puerta de cerca de abedul"
+  BIRCH_HANGING_SIGN: "cartel colgante de abedul"
+  BIRCH_LEAVES: "hojas de abedul"
+  BIRCH_LOG: "tronco de abedul"
+  BIRCH_PLANKS: "madera de abedul"
+  BIRCH_PRESSURE_PLATE: "placa de presión de abedul"
+  BIRCH_SAPLING: "arbolito de abedul"
+  BIRCH_SIGN: "cartel de abedul"
+  BIRCH_SLAB: "losa de abedul"
+  BIRCH_STAIRS: "escaleras de abedul"
+  BIRCH_TRAPDOOR: "escotilla de abedul"
+  BIRCH_WALL_HANGING_SIGN: "cartel colgante de abedul en pared"
+  BIRCH_WALL_SIGN: "cartel de abedul en pared"
+  BIRCH_WOOD: "leño de abedul"
+  BLACK_BANNER: "estandarte negro"
+  BLACK_BED: "cama negra"
+  BLACK_CANDLE: "vela negra"
+  BLACK_CANDLE_CAKE: "torta con vela negra"
+  BLACK_CARPET: "alfombra negra"
+  BLACK_CONCRETE: "concreto negro"
+  BLACK_CONCRETE_POWDER: "cemento negro"
+  BLACK_GLAZED_TERRACOTTA: "azulejo negro"
+  BLACK_SHULKER_BOX: "caja de shulker negra"
+  BLACK_STAINED_GLASS: "cristal negro"
+  BLACK_STAINED_GLASS_PANE: "panel de cristal negro"
+  BLACK_TERRACOTTA: "terracota negra"
+  BLACK_WOOL: "lana negra"
+  BLACKSTONE: "piedra negra"
+  BLACKSTONE_SLAB: "losa de piedra negra"
+  BLACKSTONE_STAIRS: "escaleras de piedra negra"
+  BLACKSTONE_WALL: "muro de piedra negra"
+  BLAST_FURNACE: "alto horno"
+  BLUE_BANNER: "estandarte azul"
+  BLUE_BED: "cama azul"
+  BLUE_CANDLE: "vela azul"
+  BLUE_CANDLE_CAKE: "torta con vela azul"
+  BLUE_CARPET: "alfombra azul"
+  BLUE_CONCRETE: "concreto azul"
+  BLUE_CONCRETE_POWDER: "cemento azul"
+  BLUE_GLAZED_TERRACOTTA: "azulejo azul"
+  BLUE_ICE: "hielo azul"
+  BLUE_ORCHID: "orquídea azul"
+  BLUE_SHULKER_BOX: "caja de shulker azul"
+  BLUE_STAINED_GLASS: "cristal azul"
+  BLUE_STAINED_GLASS_PANE: "panel de cristal azul"
+  BLUE_TERRACOTTA: "terracota azul"
+  BLUE_WOOL: "lana azul"
+  BONE_BLOCK: "bloque de huesos"
+  BOOKSHELF: "estante"
+  BRAIN_CORAL: "coral de cerebro"
+  BRAIN_CORAL_BLOCK: "bloque de coral de cerebro"
+  BRAIN_CORAL_FAN: "gorgonia de cerebro"
+  BRAIN_CORAL_WALL_FAN: "gorgonia de cerebro en pared"
+  BREWING_STAND: "soporte para pociones"
+  BRICK_SLAB: "losa de ladrillos"
+  BRICK_STAIRS: "escaleras de ladrillos"
+  BRICK_WALL: "muro de ladrillos"
+  BRICKS: "ladrillos"
+  BROWN_BANNER: "estandarte marrón"
+  BROWN_BED: "cama marrón"
+  BROWN_CANDLE: "vela marrón"
+  BROWN_CANDLE_CAKE: "torta con vela marrón"
+  BROWN_CARPET: "alfombra marrón"
+  BROWN_CONCRETE: "concreto marrón"
+  BROWN_CONCRETE_POWDER: "cemento marrón"
+  BROWN_GLAZED_TERRACOTTA: "azulejo marrón"
+  BROWN_MUSHROOM: "hongo marrón"
+  BROWN_MUSHROOM_BLOCK: "bloque de hongo marrón"
+  BROWN_SHULKER_BOX: "caja de shulker marrón"
+  BROWN_STAINED_GLASS: "cristal marrón"
+  BROWN_STAINED_GLASS_PANE: "panel de cristal marrón"
+  BROWN_TERRACOTTA: "terracota marrón"
+  BROWN_WOOL: "lana marrón"
+  BUBBLE_COLUMN: "columna de burbujas"
+  BUBBLE_CORAL: "coral de burbuja"
+  BUBBLE_CORAL_BLOCK: "bloque de coral de burbuja"
+  BUBBLE_CORAL_FAN: "gorgonia de burbuja"
+  BUBBLE_CORAL_WALL_FAN: "gorgonia de burbuja en pared"
+  BUDDING_AMETHYST: "brotador de amatista"
+  CACTUS: "cactus"
+  CAKE: "torta"
+  CALCITE: "calcita"
+  CALIBRATED_SCULK_SENSOR: "sensor de sculk calibrado"
+  CAMPFIRE: "fogata"
+  CANDLE: "vela"
+  CANDLE_CAKE: "torta con vela"
+  CARROTS: "zanahorias"
+  CARTOGRAPHY_TABLE: "mesa de cartografía"
+  CARVED_PUMPKIN: "auyama tallada"
+  CAULDRON: "caldero"
+  CAVE_AIR: "aire de cueva"
+  CAVE_VINES: "enredaderas de cueva"
+  CAVE_VINES_PLANT: "planta de enredaderas de cueva"
+  CHAIN: "cadena"
+  CHAIN_COMMAND_BLOCK: "bloque de comandos de cadena"
+  CHERRY_BUTTON: "botón de cerezo"
+  CHERRY_DOOR: "puerta de cerezo"
+  CHERRY_FENCE: "cerca de cerezo"
+  CHERRY_FENCE_GATE: "puerta de cerca de cerezo"
+  CHERRY_HANGING_SIGN: "cartel colgante de cerezo"
+  CHERRY_LEAVES: "hojas de cerezo"
+  CHERRY_LOG: "tronco de cerezo"
+  CHERRY_PLANKS: "madera de cerezo"
+  CHERRY_PRESSURE_PLATE: "placa de presión de cerezo"
+  CHERRY_SAPLING: "arbolito de cerezo"
+  CHERRY_SIGN: "cartel de cerezo"
+  CHERRY_SLAB: "losa de cerezo"
+  CHERRY_STAIRS: "escaleras de cerezo"
+  CHERRY_TRAPDOOR: "escotilla de cerezo"
+  CHERRY_WALL_HANGING_SIGN: "cartel colgante de cerezo en pared"
+  CHERRY_WALL_SIGN: "cartel de cerezo en pared"
+  CHERRY_WOOD: "leño de cerezo"
+  CHEST: "baúl"
+  CHIPPED_ANVIL: "yunque dañado"
+  CHISELED_BOOKSHELF: "estantería cincelada"
+  CHISELED_COPPER: "cobre cincelado"
+  CHISELED_DEEPSLATE: "pizarra abismal cincelada"
+  CHISELED_NETHER_BRICKS: "ladrillos del nether cincelados"
+  CHISELED_POLISHED_BLACKSTONE: "piedra negra pulida cincelada"
+  CHISELED_QUARTZ_BLOCK: "bloque de cuarzo cincelado"
+  CHISELED_RED_SANDSTONE: "arenisca roja cincelada"
+  CHISELED_SANDSTONE: "arenisca cincelada"
+  CHISELED_STONE_BRICKS: "ladrillos de piedra cincelados"
+  CHISELED_TUFF: "toba cincelada"
+  CHISELED_TUFF_BRICKS: "ladrillos de toba cincelados"
+  CHORUS_FLOWER: "flor de chorus"
+  CHORUS_PLANT: "chorus"
+  CLAY: "arcilla"
+  COAL_BLOCK: "bloque de carbón"
+  COAL_ORE: "mena de carbón"
+  COARSE_DIRT: "tierra infértil"
+  COBBLED_DEEPSLATE: "pizarra abismal rocosa"
+  COBBLED_DEEPSLATE_SLAB: "losa de pizarra abismal rocosa"
+  COBBLED_DEEPSLATE_STAIRS: "escaleras de pizarra abismal rocosa"
+  COBBLED_DEEPSLATE_WALL: "muro de pizarra abismal rocosa"
+  COBBLESTONE: "adoquín"
+  COBBLESTONE_SLAB: "losa de adoquín"
+  COBBLESTONE_STAIRS: "escaleras de adoquín"
+  COBBLESTONE_WALL: "muro de adoquín"
+  COBWEB: "telaraña"
+  COCOA: "cacao"
+  COMMAND_BLOCK: "bloque de comandos"
+  COMPARATOR: "comparador de redstone"
+  COMPOSTER: "compostador"
+  CONDUIT: "canalizador"
+  COPPER_BLOCK: "bloque de cobre"
+  COPPER_BULB: "lámpara de cobre"
+  COPPER_DOOR: "puerta de cobre"
+  COPPER_GRATE: "rejilla de cobre"
+  COPPER_ORE: "mena de cobre"
+  COPPER_TRAPDOOR: "escotilla de cobre"
+  CORNFLOWER: "aciano"
+  CRACKED_DEEPSLATE_BRICKS: "ladrillos de pizarra abismal agrietados"
+  CRACKED_DEEPSLATE_TILES: "baldosas de pizarra abismal agrietadas"
+  CRACKED_NETHER_BRICKS: "ladrillos del nether agrietados"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "ladrillos de piedra negra pulida agrietados"
+  CRACKED_STONE_BRICKS: "ladrillos de piedra agrietados"
+  CRAFTER: "estufa"
+  CRAFTING_TABLE: "mesa de crafteo"
+  CREEPER_HEAD: "cabeza de creeper"
+  CREEPER_WALL_HEAD: "cabeza de creeper en pared"
+  CRIMSON_BUTTON: "botón carmesí"
+  CRIMSON_DOOR: "puerta carmesí"
+  CRIMSON_FENCE: "cerca carmesí"
+  CRIMSON_FENCE_GATE: "puerta de cerca carmesí"
+  CRIMSON_FUNGUS: "hongo carmesí"
+  CRIMSON_HANGING_SIGN: "cartel colgante carmesí"
+  CRIMSON_HYPHAE: "hifas carmesí"
+  CRIMSON_NYLIUM: "necelio carmesí"
+  CRIMSON_PLANKS: "madera carmesí"
+  CRIMSON_PRESSURE_PLATE: "placa de presión carmesí"
+  CRIMSON_ROOTS: "raíces carmesí"
+  CRIMSON_SIGN: "cartel carmesí"
+  CRIMSON_SLAB: "losa carmesí"
+  CRIMSON_STAIRS: "escaleras carmesí"
+  CRIMSON_STEM: "tallo carmesí"
+  CRIMSON_TRAPDOOR: "escotilla carmesí"
+  CRIMSON_WALL_HANGING_SIGN: "cartel colgante carmesí en pared"
+  CRIMSON_WALL_SIGN: "cartel carmesí en pared"
+  CRYING_OBSIDIAN: "obsidiana llorosa"
+  CUT_COPPER: "cobre cortado"
+  CUT_COPPER_SLAB: "losa de cobre cortado"
+  CUT_COPPER_STAIRS: "escaleras de cobre cortado"
+  CUT_RED_SANDSTONE: "arenisca roja cortada"
+  CUT_RED_SANDSTONE_SLAB: "losa de arenisca roja cortada"
+  CUT_SANDSTONE: "arenisca cortada"
+  CUT_SANDSTONE_SLAB: "losa de arenisca cortada"
+  CYAN_BANNER: "estandarte turquesa"
+  CYAN_BED: "cama turquesa"
+  CYAN_CANDLE: "vela turquesa"
+  CYAN_CANDLE_CAKE: "torta con vela turquesa"
+  CYAN_CARPET: "alfombra turquesa"
+  CYAN_CONCRETE: "concreto turquesa"
+  CYAN_CONCRETE_POWDER: "cemento turquesa"
+  CYAN_GLAZED_TERRACOTTA: "azulejo turquesa"
+  CYAN_SHULKER_BOX: "caja de shulker turquesa"
+  CYAN_STAINED_GLASS: "cristal turquesa"
+  CYAN_STAINED_GLASS_PANE: "panel de cristal turquesa"
+  CYAN_TERRACOTTA: "terracota turquesa"
+  CYAN_WOOL: "lana turquesa"
+  DAMAGED_ANVIL: "yunque muy dañado"
+  DANDELION: "diente de león"
+  DARK_OAK_BUTTON: "botón de roble oscuro"
+  DARK_OAK_DOOR: "puerta de roble oscuro"
+  DARK_OAK_FENCE: "cerca de roble oscuro"
+  DARK_OAK_FENCE_GATE: "puerta de cerca de roble oscuro"
+  DARK_OAK_HANGING_SIGN: "cartel colgante de roble oscuro"
+  DARK_OAK_LEAVES: "hojas de roble oscuro"
+  DARK_OAK_LOG: "tronco de roble oscuro"
+  DARK_OAK_PLANKS: "madera de roble oscuro"
+  DARK_OAK_PRESSURE_PLATE: "placa de presión de roble oscuro"
+  DARK_OAK_SAPLING: "arbolito de roble oscuro"
+  DARK_OAK_SIGN: "cartel de roble oscuro"
+  DARK_OAK_SLAB: "losa de roble oscuro"
+  DARK_OAK_STAIRS: "escaleras de roble oscuro"
+  DARK_OAK_TRAPDOOR: "escotilla de roble oscuro"
+  DARK_OAK_WALL_HANGING_SIGN: "cartel colgante de roble oscuro en pared"
+  DARK_OAK_WALL_SIGN: "cartel de roble oscuro en pared"
+  DARK_OAK_WOOD: "leño de roble oscuro"
+  DARK_PRISMARINE: "prismarina oscura"
+  DARK_PRISMARINE_SLAB: "losa de prismarina oscura"
+  DARK_PRISMARINE_STAIRS: "escaleras de prismarina oscura"
+  DAYLIGHT_DETECTOR: "sensor de luz solar"
+  DEAD_BRAIN_CORAL: "coral de cerebro muerto"
+  DEAD_BRAIN_CORAL_BLOCK: "bloque de coral de cerebro muerto"
+  DEAD_BRAIN_CORAL_FAN: "gorgonia de cerebro muerta"
+  DEAD_BRAIN_CORAL_WALL_FAN: "gorgonia de cerebro muerta en pared"
+  DEAD_BUBBLE_CORAL: "coral de burbuja muerto"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloque de coral de burbuja muerto"
+  DEAD_BUBBLE_CORAL_FAN: "gorgonia de burbuja muerta"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "gorgonia de burbuja muerta en pared"
+  DEAD_BUSH: "arbusto muerto"
+  DEAD_FIRE_CORAL: "coral de fuego muerto"
+  DEAD_FIRE_CORAL_BLOCK: "bloque de coral de fuego muerto"
+  DEAD_FIRE_CORAL_FAN: "gorgonia de fuego muerta"
+  DEAD_FIRE_CORAL_WALL_FAN: "gorgonia de fuego muerta en pared"
+  DEAD_HORN_CORAL: "coral de cuerno muerto"
+  DEAD_HORN_CORAL_BLOCK: "bloque de coral de cuerno muerto"
+  DEAD_HORN_CORAL_FAN: "gorgonia de cuerno muerta"
+  DEAD_HORN_CORAL_WALL_FAN: "gorgonia de cuerno muerta en pared"
+  DEAD_TUBE_CORAL: "coral de tubo muerto"
+  DEAD_TUBE_CORAL_BLOCK: "bloque de coral de tubo muerto"
+  DEAD_TUBE_CORAL_FAN: "gorgonia de tubo muerta"
+  DEAD_TUBE_CORAL_WALL_FAN: "gorgonia de tubo muerta en pared"
+  DECORATED_POT: "vasija decorada"
+  DEEPSLATE: "pizarra abismal"
+  DEEPSLATE_BRICK_SLAB: "losa de ladrillos de pizarra abismal"
+  DEEPSLATE_BRICK_STAIRS: "escaleras de ladrillos de pizarra abismal"
+  DEEPSLATE_BRICK_WALL: "muro de ladrillos de pizarra abismal"
+  DEEPSLATE_BRICKS: "ladrillos de pizarra profunda"
+  DEEPSLATE_COAL_ORE: "mena de carbón de pizarra abismal"
+  DEEPSLATE_COPPER_ORE: "mena de cobre de pizarra abismal"
+  DEEPSLATE_DIAMOND_ORE: "mena de diamante de pizarra abismal"
+  DEEPSLATE_EMERALD_ORE: "mena de esmeralda de pizarra abismal"
+  DEEPSLATE_GOLD_ORE: "mena de oro de pizarra abismal"
+  DEEPSLATE_IRON_ORE: "mena de hierro de pizarra abismal"
+  DEEPSLATE_LAPIS_ORE: "mena de lapislázuli de pizarra abismal"
+  DEEPSLATE_REDSTONE_ORE: "mena de redstone de pizarra abismal"
+  DEEPSLATE_TILE_SLAB: "losa de baldosas de pizarra abismal"
+  DEEPSLATE_TILE_STAIRS: "escaleras de baldosas de pizarra abismal"
+  DEEPSLATE_TILE_WALL: "muro de baldosas de pizarra abismal"
+  DEEPSLATE_TILES: "baldosas de pizarra abismal"
+  DETECTOR_RAIL: "carril detector"
+  DIAMOND_BLOCK: "bloque de diamante"
+  DIAMOND_ORE: "mena de diamante"
+  DIORITE: "diorita"
+  DIORITE_SLAB: "losa de diorita"
+  DIORITE_STAIRS: "escaleras de diorita"
+  DIORITE_WALL: "muro de diorita"
+  DIRT: "tierra"
+  DIRT_PATH: "camino de tierra"
+  DISPENSER: "dispensador"
+  DRAGON_EGG: "huevo de dragón"
+  DRAGON_HEAD: "cabeza de dragón"
+  DRAGON_WALL_HEAD: "cabeza de dragón en pared"
+  DRIED_KELP_BLOCK: "bloque de algas secas"
+  DRIPSTONE_BLOCK: "bloque de espeleotema"
+  DROPPER: "soltador"
+  EMERALD_BLOCK: "bloque de esmeralda"
+  EMERALD_ORE: "mena de esmeralda"
+  ENCHANTING_TABLE: "mesa de encantamientos"
+  END_GATEWAY: "acceso al end"
+  END_PORTAL: "marco del portal al end"
+  END_PORTAL_FRAME: "marco del portal del end"
+  END_ROD: "vara del end"
+  END_STONE: "piedra del end"
+  END_STONE_BRICK_SLAB: "losa de ladrillos de piedra del end"
+  END_STONE_BRICK_STAIRS: "escaleras de ladrillos de piedra del end"
+  END_STONE_BRICK_WALL: "muro de ladrillos de piedra del end"
+  END_STONE_BRICKS: "ladrillos de piedra del end"
+  ENDER_CHEST: "baúl de ender"
+  EXPOSED_CHISELED_COPPER: "cobre cincelado expuesto"
+  EXPOSED_COPPER: "cobre expuesto"
+  EXPOSED_COPPER_BULB: "lámpara de cobre expuesta"
+  EXPOSED_COPPER_DOOR: "puerta de cobre expuesta"
+  EXPOSED_COPPER_GRATE: "rejilla de cobre expuesta"
+  EXPOSED_COPPER_TRAPDOOR: "escotilla de cobre expuesta"
+  EXPOSED_CUT_COPPER: "cobre cortado expuesto"
+  EXPOSED_CUT_COPPER_SLAB: "losa de cobre cortado expuesto"
+  EXPOSED_CUT_COPPER_STAIRS: "escaleras de cobre cortado"
+  FARMLAND: "tierra de cultivos"
+  FERN: "helecho"
+  FIRE: "fuego"
+  FIRE_CORAL: "coral de fuego"
+  FIRE_CORAL_BLOCK: "bloque de coral de fuego"
+  FIRE_CORAL_FAN: "gorgonia de fuego"
+  FIRE_CORAL_WALL_FAN: "gorgonia de fuego en pared"
+  FLETCHING_TABLE: "mesa de flechas"
+  FLOWER_POT: "maceta"
+  FLOWERING_AZALEA: "azalea floreciente"
+  FLOWERING_AZALEA_LEAVES: "hojas de azalea florecida"
+  FROGSPAWN: "huevas de rana"
+  FROSTED_ICE: "escarcha"
+  FURNACE: "horno"
+  GILDED_BLACKSTONE: "piedra negra áurea"
+  GLASS: "cristal"
+  GLASS_PANE: "panel de cristal"
+  GLOW_LICHEN: "liquen luminoso"
+  GLOWSTONE: "piedra luminosa"
+  GOLD_BLOCK: "bloque de oro"
+  GOLD_ORE: "mena de oro"
+  GRANITE: "granito"
+  GRANITE_SLAB: "losa de granito"
+  GRANITE_STAIRS: "escaleras de granito"
+  GRANITE_WALL: "muro de granito"
+  GRASS: "hierba"
+  GRASS_BLOCK: "bloque de hierba"
+  GRAVEL: "gravilla"
+  GRAY_BANNER: "estandarte gris"
+  GRAY_BED: "cama gris"
+  GRAY_CANDLE: "vela gris"
+  GRAY_CANDLE_CAKE: "torta con vela gris"
+  GRAY_CARPET: "alfombra gris"
+  GRAY_CONCRETE: "concreto gris"
+  GRAY_CONCRETE_POWDER: "cemento gris"
+  GRAY_GLAZED_TERRACOTTA: "azulejo gris"
+  GRAY_SHULKER_BOX: "caja de shulker gris"
+  GRAY_STAINED_GLASS: "cristal gris"
+  GRAY_STAINED_GLASS_PANE: "panel de cristal gris"
+  GRAY_TERRACOTTA: "terracota gris"
+  GRAY_WOOL: "lana gris"
+  GREEN_BANNER: "estandarte verde"
+  GREEN_BED: "cama verde"
+  GREEN_CANDLE: "vela verde"
+  GREEN_CANDLE_CAKE: "torta con vela verde"
+  GREEN_CARPET: "alfombra verde"
+  GREEN_CONCRETE: "concreto verde"
+  GREEN_CONCRETE_POWDER: "cemento verde"
+  GREEN_GLAZED_TERRACOTTA: "azulejo verde"
+  GREEN_SHULKER_BOX: "caja de shulker verde"
+  GREEN_STAINED_GLASS: "cristal verde"
+  GREEN_STAINED_GLASS_PANE: "panel de cristal verde"
+  GREEN_TERRACOTTA: "terracota verde"
+  GREEN_WOOL: "lana verde"
+  GRINDSTONE: "afiladora"
+  HANGING_ROOTS: "raíces colgantes"
+  HAY_BLOCK: "paca de heno"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "placa de presión para peso elevado"
+  HONEY_BLOCK: "bloque de miel"
+  HONEYCOMB_BLOCK: "bloque de panal"
+  HOPPER: "tolva"
+  HORN_CORAL: "coral de cuerno"
+  HORN_CORAL_BLOCK: "bloque de coral de cuerno"
+  HORN_CORAL_FAN: "gorgonia de cuerno"
+  HORN_CORAL_WALL_FAN: "gorgonia de cuerno en pared"
+  ICE: "hielo"
+  INFESTED_CHISELED_STONE_BRICKS: "ladrillos de piedra cincelados infestados"
+  INFESTED_COBBLESTONE: "adoquín infestado"
+  INFESTED_CRACKED_STONE_BRICKS: "ladrillos de piedra agrietados infestados"
+  INFESTED_DEEPSLATE: "pizarra abismal infestada"
+  INFESTED_MOSSY_STONE_BRICKS: "ladrillos de piedra musgosa infestados"
+  INFESTED_STONE: "piedra infestada"
+  INFESTED_STONE_BRICKS: "ladrillos de piedra infestados"
+  IRON_BARS: "barrotes de hierro"
+  IRON_BLOCK: "bloque de hierro"
+  IRON_DOOR: "puerta de hierro"
+  IRON_ORE: "mena de hierro"
+  IRON_TRAPDOOR: "escotilla de hierro"
+  JACK_O_LANTERN: "auyama de halloween"
+  JIGSAW: "bloque rompecabezas"
+  JUKEBOX: "tocadiscos"
+  JUNGLE_BUTTON: "botón de jungla"
+  JUNGLE_DOOR: "puerta de jungla"
+  JUNGLE_FENCE: "cerca de jungla"
+  JUNGLE_FENCE_GATE: "puerta de cerca de jungla"
+  JUNGLE_HANGING_SIGN: "cartel colgante de jungla"
+  JUNGLE_LEAVES: "hojas de jungla"
+  JUNGLE_LOG: "tronco de jungla"
+  JUNGLE_PLANKS: "madera de jungla"
+  JUNGLE_PRESSURE_PLATE: "placa de presión de jungla"
+  JUNGLE_SAPLING: "arbolito de jungla"
+  JUNGLE_SIGN: "cartel de jungla"
+  JUNGLE_SLAB: "losa de jungla"
+  JUNGLE_STAIRS: "escaleras de jungla"
+  JUNGLE_TRAPDOOR: "escotilla de jungla"
+  JUNGLE_WALL_HANGING_SIGN: "cartel colgante de jungla en pared"
+  JUNGLE_WALL_SIGN: "cartel de jungla en pared"
+  JUNGLE_WOOD: "leño de jungla"
+  KELP: "alga"
+  KELP_PLANT: "tallo de alga"
+  LADDER: "escalera de mano"
+  LANTERN: "farol"
+  LAPIS_BLOCK: "bloque de lapislázuli"
+  LAPIS_ORE: "mena de lapislázuli"
+  LARGE_AMETHYST_BUD: "brote de amatista grande"
+  LARGE_FERN: "helecho grande"
+  LAVA: "lava"
+  LAVA_CAULDRON: "caldero con lava"
+  LECTERN: "atril"
+  LEVER: "palanca"
+  LIGHT: "luz"
+  LIGHT_BLUE_BANNER: "estandarte azul cielo"
+  LIGHT_BLUE_BED: "cama azul cielo"
+  LIGHT_BLUE_CANDLE: "vela azul cielo"
+  LIGHT_BLUE_CANDLE_CAKE: "torta con vela azul cielo"
+  LIGHT_BLUE_CARPET: "alfombra azul cielo"
+  LIGHT_BLUE_CONCRETE: "concreto azul cielo"
+  LIGHT_BLUE_CONCRETE_POWDER: "cemento azul cielo"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "azulejo azul cielo"
+  LIGHT_BLUE_SHULKER_BOX: "caja de shulker azul cielo"
+  LIGHT_BLUE_STAINED_GLASS: "cristal azul cielo"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "panel de cristal azul cielo"
+  LIGHT_BLUE_TERRACOTTA: "terracota azul cielo"
+  LIGHT_BLUE_WOOL: "lana azul cielo"
+  LIGHT_GRAY_BANNER: "estandarte gris claro"
+  LIGHT_GRAY_BED: "cama gris claro"
+  LIGHT_GRAY_CANDLE: "vela gris claro"
+  LIGHT_GRAY_CANDLE_CAKE: "torta con vela gris claro"
+  LIGHT_GRAY_CARPET: "alfombra gris claro"
+  LIGHT_GRAY_CONCRETE: "concreto gris claro"
+  LIGHT_GRAY_CONCRETE_POWDER: "cemento gris claro"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "azulejo gris claro"
+  LIGHT_GRAY_SHULKER_BOX: "caja de shulker gris claro"
+  LIGHT_GRAY_STAINED_GLASS: "cristal gris claro"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "panel de cristal gris claro"
+  LIGHT_GRAY_TERRACOTTA: "terracota gris claro"
+  LIGHT_GRAY_WOOL: "lana gris claro"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "placa de presión para peso liviano"
+  LIGHTNING_ROD: "pararrayos"
+  LILAC: "lila"
+  LILY_OF_THE_VALLEY: "lirio del valle"
+  LILY_PAD: "nenúfar"
+  LIME_BANNER: "estandarte verde limón"
+  LIME_BED: "cama verde limón"
+  LIME_CANDLE: "vela verde limón"
+  LIME_CANDLE_CAKE: "torta con vela verde limón"
+  LIME_CARPET: "alfombra verde limón"
+  LIME_CONCRETE: "concreto verde limón"
+  LIME_CONCRETE_POWDER: "cemento verde limón"
+  LIME_GLAZED_TERRACOTTA: "azulejo verde limón"
+  LIME_SHULKER_BOX: "caja de shulker verde limón"
+  LIME_STAINED_GLASS: "cristal verde limón"
+  LIME_STAINED_GLASS_PANE: "panel de cristal verde limón"
+  LIME_TERRACOTTA: "terracota verde limón"
+  LIME_WOOL: "lana verde limón"
+  LODESTONE: "magnetita"
+  LOOM: "telar"
+  MAGENTA_BANNER: "estandarte magenta"
+  MAGENTA_BED: "cama magenta"
+  MAGENTA_CANDLE: "vela magenta"
+  MAGENTA_CANDLE_CAKE: "torta con vela magenta"
+  MAGENTA_CARPET: "alfombra magenta"
+  MAGENTA_CONCRETE: "concreto magenta"
+  MAGENTA_CONCRETE_POWDER: "cemento magenta"
+  MAGENTA_GLAZED_TERRACOTTA: "azulejo magenta"
+  MAGENTA_SHULKER_BOX: "caja de shulker magenta"
+  MAGENTA_STAINED_GLASS: "cristal magenta"
+  MAGENTA_STAINED_GLASS_PANE: "panel de cristal magenta"
+  MAGENTA_TERRACOTTA: "terracota magenta"
+  MAGENTA_WOOL: "lana magenta"
+  MAGMA_BLOCK: "bloque de magma"
+  MANGROVE_BUTTON: "botón de mangle"
+  MANGROVE_DOOR: "puerta de mangle"
+  MANGROVE_FENCE: "cerca de mangle"
+  MANGROVE_FENCE_GATE: "puerta de cerca de mangle"
+  MANGROVE_HANGING_SIGN: "cartel colgante de mangle"
+  MANGROVE_LEAVES: "hojas de mangle"
+  MANGROVE_LOG: "tronco de mangle"
+  MANGROVE_PLANKS: "madera de mangle"
+  MANGROVE_PRESSURE_PLATE: "placa de presión de mangle"
+  MANGROVE_PROPAGULE: "propágulo de mangle"
+  MANGROVE_ROOTS: "raíces de mangle"
+  MANGROVE_SIGN: "cartel de mangle"
+  MANGROVE_SLAB: "losa de mangle"
+  MANGROVE_STAIRS: "escaleras de mangle"
+  MANGROVE_TRAPDOOR: "escotilla de mangle"
+  MANGROVE_WALL_HANGING_SIGN: "cartel de mangle colgante en pared"
+  MANGROVE_WALL_SIGN: "cartel de mangle en pared"
+  MANGROVE_WOOD: "leño de mangle"
+  MEDIUM_AMETHYST_BUD: "brote de amatista mediano"
+  MELON: "patilla"
+  MELON_STEM: "tallo de patilla"
+  MOSS_BLOCK: "bloque de musgo"
+  MOSS_CARPET: "alfombra de musgo"
+  MOSSY_COBBLESTONE: "adoquín musgoso"
+  MOSSY_COBBLESTONE_SLAB: "losa de adoquín musgoso"
+  MOSSY_COBBLESTONE_STAIRS: "escaleras de adoquín musgoso"
+  MOSSY_COBBLESTONE_WALL: "muro de adoquín musgoso"
+  MOSSY_STONE_BRICK_SLAB: "losa de ladrillos de piedra musgosa"
+  MOSSY_STONE_BRICK_STAIRS: "escaleras de ladrillos de piedra musgosa"
+  MOSSY_STONE_BRICK_WALL: "muro de ladrillos de piedra musgosa"
+  MOSSY_STONE_BRICKS: "ladrillos de piedra musgosa"
+  MOVING_PISTON: "pistón en movimiento"
+  MUD: "barro"
+  MUD_BRICK_SLAB: "losa de ladrillos de adobe"
+  MUD_BRICK_STAIRS: "escaleras de ladrillos de adobe"
+  MUD_BRICK_WALL: "muro de ladrillos de adobe"
+  MUD_BRICKS: "ladrillos de adobe"
+  MUDDY_MANGROVE_ROOTS: "raíces de mangle embarradas"
+  MUSHROOM_STEM: "tallo de hongo"
+  MYCELIUM: "micelio"
+  NETHER_BRICK_FENCE: "cerca de ladrillos del nether"
+  NETHER_BRICK_SLAB: "losa de ladrillos del nether"
+  NETHER_BRICK_STAIRS: "escaleras de ladrillos del nether"
+  NETHER_BRICK_WALL: "muro de ladrillos del nether"
+  NETHER_BRICKS: "ladrillos del nether"
+  NETHER_GOLD_ORE: "mena de oro del nether"
+  NETHER_PORTAL: "portal al nether"
+  NETHER_QUARTZ_ORE: "mena de cuarzo del nether"
+  NETHER_SPROUTS: "brotes del nether"
+  NETHER_WART: "verruga del nether"
+  NETHER_WART_BLOCK: "bloque de verrugas del nether"
+  NETHERITE_BLOCK: "bloque de netherita"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloque musical"
+  OAK_BUTTON: "botón de roble"
+  OAK_DOOR: "puerta de roble"
+  OAK_FENCE: "cerca de roble"
+  OAK_FENCE_GATE: "puerta de cerca de roble"
+  OAK_HANGING_SIGN: "cartel de roble colgante"
+  OAK_LEAVES: "hojas de roble"
+  OAK_LOG: "tronco de roble"
+  OAK_PLANKS: "madera de roble"
+  OAK_PRESSURE_PLATE: "placa de presión de roble"
+  OAK_SAPLING: "arbolito de roble"
+  OAK_SIGN: "cartel de roble"
+  OAK_SLAB: "losa de roble"
+  OAK_STAIRS: "escaleras de roble"
+  OAK_TRAPDOOR: "escotilla de roble"
+  OAK_WALL_HANGING_SIGN: "cartel de roble colgante en pared"
+  OAK_WALL_SIGN: "cartel de roble en pared"
+  OAK_WOOD: "leño de roble"
+  OBSERVER: "observador"
+  OBSIDIAN: "obsidiana"
+  OCHRE_FROGLIGHT: "ranaluz ocre"
+  OMINOUS_BANNER: "estandarte de mal presagio"
+  ORANGE_BANNER: "estandarte naranja"
+  ORANGE_BED: "cama naranja"
+  ORANGE_CANDLE: "vela naranja"
+  ORANGE_CANDLE_CAKE: "torta con vela naranja"
+  ORANGE_CARPET: "alfombra naranja"
+  ORANGE_CONCRETE: "concreto naranja"
+  ORANGE_CONCRETE_POWDER: "cemento naranja"
+  ORANGE_GLAZED_TERRACOTTA: "azulejo naranja"
+  ORANGE_SHULKER_BOX: "caja de shulker naranja"
+  ORANGE_STAINED_GLASS: "cristal naranja"
+  ORANGE_STAINED_GLASS_PANE: "panel de cristal naranja"
+  ORANGE_TERRACOTTA: "terracota naranja"
+  ORANGE_TULIP: "tulipán naranja"
+  ORANGE_WOOL: "lana naranja"
+  OXEYE_DAISY: "margarita"
+  OXIDIZED_CHISELED_COPPER: "cobre cincelado oxidado"
+  OXIDIZED_COPPER: "cobre oxidado"
+  OXIDIZED_COPPER_BULB: "lámpara de cobre oxidada"
+  OXIDIZED_COPPER_DOOR: "puerta de cobre oxidada"
+  OXIDIZED_COPPER_GRATE: "rejilla de cobre oxidada"
+  OXIDIZED_COPPER_TRAPDOOR: "escotilla de cobre oxidada"
+  OXIDIZED_CUT_COPPER: "cobre cortado oxidado"
+  OXIDIZED_CUT_COPPER_SLAB: "losa de cobre cortado oxidado"
+  OXIDIZED_CUT_COPPER_STAIRS: "escaleras de cobre cortado oxidado"
+  PACKED_ICE: "hielo comprimido"
+  PACKED_MUD: "adobe"
+  PEARLESCENT_FROGLIGHT: "ranaluz nacarada"
+  PEONY: "peonía"
+  PETRIFIED_OAK_SLAB: "losa de roble petrificada"
+  PIGLIN_HEAD: "cabeza de piglin"
+  PIGLIN_WALL_HEAD: "cabeza de piglin en pared"
+  PINK_BANNER: "estandarte rosa"
+  PINK_BED: "cama rosa"
+  PINK_CANDLE: "vela rosa"
+  PINK_CANDLE_CAKE: "torta con vela rosa"
+  PINK_CARPET: "alfombra rosa"
+  PINK_CONCRETE: "concreto rosa"
+  PINK_CONCRETE_POWDER: "cemento rosa"
+  PINK_GLAZED_TERRACOTTA: "azulejo rosa"
+  PINK_PETALS: "pétalos rosas"
+  PINK_SHULKER_BOX: "caja de shulker rosa"
+  PINK_STAINED_GLASS: "cristal rosa"
+  PINK_STAINED_GLASS_PANE: "panel de cristal rosa"
+  PINK_TERRACOTTA: "terracota rosa"
+  PINK_TULIP: "tulipán rosa"
+  PINK_WOOL: "lana rosa"
+  PISTON: "pistón"
+  PISTON_HEAD: "cabeza de pistón"
+  PITCHER_CROP: "cultivo de planta odre"
+  PITCHER_PLANT: "planta odre"
+  PLAYER_HEAD: "cabeza de jugador"
+  PLAYER_HEAD_NAMED: "cabeza de %s"
+  PLAYER_WALL_HEAD: "cabeza de jugador en pared"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "espeleotema puntiaguda"
+  POLISHED_ANDESITE: "andesita pulida"
+  POLISHED_ANDESITE_SLAB: "losa de andesita pulida"
+  POLISHED_ANDESITE_STAIRS: "escaleras de andesita pulida"
+  POLISHED_BASALT: "basalto pulido"
+  POLISHED_BLACKSTONE: "piedra negra pulida"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "losa de ladrillos de piedra negra pulida"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "escaleras de ladrillos de piedra negra pulida"
+  POLISHED_BLACKSTONE_BRICK_WALL: "muro de ladrillos de piedra negra pulida"
+  POLISHED_BLACKSTONE_BRICKS: "ladrillos de piedra negra pulida"
+  POLISHED_BLACKSTONE_BUTTON: "botón de piedra negra pulida"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "placa de presión de piedra negra pulida"
+  POLISHED_BLACKSTONE_SLAB: "losa de piedra negra pulida"
+  POLISHED_BLACKSTONE_STAIRS: "escaleras de piedra negra pulida"
+  POLISHED_BLACKSTONE_WALL: "muro de piedra negra pulida"
+  POLISHED_DEEPSLATE: "pizarra abismal pulida"
+  POLISHED_DEEPSLATE_SLAB: "losa de pizarra abismal pulida"
+  POLISHED_DEEPSLATE_STAIRS: "escaleras de pizarra abismal pulida"
+  POLISHED_DEEPSLATE_WALL: "muro de pizarra abismal pulida"
+  POLISHED_DIORITE: "diorita pulida"
+  POLISHED_DIORITE_SLAB: "losa de diorita pulida"
+  POLISHED_DIORITE_STAIRS: "escaleras de diorita pulida"
+  POLISHED_GRANITE: "granito pulido"
+  POLISHED_GRANITE_SLAB: "losa de granito pulido"
+  POLISHED_GRANITE_STAIRS: "escaleras de granito pulido"
+  POLISHED_TUFF: "toba pulida"
+  POLISHED_TUFF_SLAB: "losa de toba pulida"
+  POLISHED_TUFF_STAIRS: "escaleras de toba pulida"
+  POLISHED_TUFF_WALL: "muro de toba pulida"
+  POPPY: "amapola"
+  POTATOES: "papas"
+  POTTED_ACACIA_SAPLING: "maceta con arbolito de acacia"
+  POTTED_ALLIUM: "maceta con allium"
+  POTTED_AZALEA_BUSH: "maceta con azalea"
+  POTTED_AZURE_BLUET: "maceta con rubiácea"
+  POTTED_BAMBOO: "maceta con bambú"
+  POTTED_BIRCH_SAPLING: "maceta con arbolito de abedul"
+  POTTED_BLUE_ORCHID: "maceta con orquídea azul"
+  POTTED_BROWN_MUSHROOM: "maceta con hongo marrón"
+  POTTED_CACTUS: "maceta con cactus"
+  POTTED_CHERRY_SAPLING: "maceta con arbolito de cerezo"
+  POTTED_CORNFLOWER: "maceta con aciano"
+  POTTED_CRIMSON_FUNGUS: "maceta con hongo carmesí"
+  POTTED_CRIMSON_ROOTS: "maceta con raíces carmesí"
+  POTTED_DANDELION: "maceta con diente de león"
+  POTTED_DARK_OAK_SAPLING: "maceta con arbolito de roble oscuro"
+  POTTED_DEAD_BUSH: "maceta con arbusto muerto"
+  POTTED_FERN: "maceta con helecho"
+  POTTED_FLOWERING_AZALEA_BUSH: "maceta con azalea florecida"
+  POTTED_JUNGLE_SAPLING: "maceta con arbolito de jungla"
+  POTTED_LILY_OF_THE_VALLEY: "maceta con lirio del valle"
+  POTTED_MANGROVE_PROPAGULE: "maceta con propágulo de mangle"
+  POTTED_OAK_SAPLING: "maceta con arbolito de roble"
+  POTTED_ORANGE_TULIP: "maceta con tulipán naranja"
+  POTTED_OXEYE_DAISY: "maceta con margarita"
+  POTTED_PINK_TULIP: "maceta con tulipán rosa"
+  POTTED_POPPY: "maceta con amapola"
+  POTTED_RED_MUSHROOM: "maceta con hongo rojo"
+  POTTED_RED_TULIP: "maceta con tulipán rojo"
+  POTTED_SPRUCE_SAPLING: "maceta con arbolito de pino"
+  POTTED_TORCHFLOWER: "maceta con florantorcha"
+  POTTED_WARPED_FUNGUS: "maceta con hongo distorsionado"
+  POTTED_WARPED_ROOTS: "maceta con raíces distorsionadas"
+  POTTED_WHITE_TULIP: "maceta con tulipán blanco"
+  POTTED_WITHER_ROSE: "maceta con rosa del wither"
+  POWDER_SNOW: "nieve polvo"
+  POWDER_SNOW_CAULDRON: "caldero de nieve polvo"
+  POWERED_RAIL: "carril propulsor"
+  PRISMARINE: "prismarina"
+  PRISMARINE_BRICK_SLAB: "losa de ladrillos de prismarina"
+  PRISMARINE_BRICK_STAIRS: "escaleras de ladrillos de prismarina"
+  PRISMARINE_BRICKS: "ladrillos de prismarina"
+  PRISMARINE_SLAB: "losa de prismarina"
+  PRISMARINE_STAIRS: "escaleras de prismarina"
+  PRISMARINE_WALL: "muro de prismarina"
+  PUMPKIN: "auyama"
+  PUMPKIN_STEM: "tallo de auyama"
+  PURPLE_BANNER: "estandarte morado"
+  PURPLE_BED: "cama morada"
+  PURPLE_CANDLE: "vela morada"
+  PURPLE_CANDLE_CAKE: "torta con vela morada"
+  PURPLE_CARPET: "alfombra morada"
+  PURPLE_CONCRETE: "concreto morado"
+  PURPLE_CONCRETE_POWDER: "cemento morado"
+  PURPLE_GLAZED_TERRACOTTA: "azulejo morado"
+  PURPLE_SHULKER_BOX: "caja de shulker morada"
+  PURPLE_STAINED_GLASS: "cristal morado"
+  PURPLE_STAINED_GLASS_PANE: "panel de cristal morado"
+  PURPLE_TERRACOTTA: "terracota morada"
+  PURPLE_WOOL: "lana morada"
+  PURPUR_BLOCK: "purpur"
+  PURPUR_PILLAR: "pilar de purpur"
+  PURPUR_SLAB: "losa de purpur"
+  PURPUR_STAIRS: "escaleras de purpur"
+  QUARTZ_BLOCK: "bloque de cuarzo"
+  QUARTZ_BRICKS: "ladrillos de cuarzo"
+  QUARTZ_PILLAR: "pilar de cuarzo"
+  QUARTZ_SLAB: "losa de cuarzo"
+  QUARTZ_STAIRS: "escaleras de cuarzo"
+  RAIL: "carril"
+  RAW_COPPER_BLOCK: "bloque de cobre en bruto"
+  RAW_GOLD_BLOCK: "bloque de oro en bruto"
+  RAW_IRON_BLOCK: "bloque de hierro en bruto"
+  RED_BANNER: "estandarte rojo"
+  RED_BED: "cama roja"
+  RED_CANDLE: "vela roja"
+  RED_CANDLE_CAKE: "torta con vela roja"
+  RED_CARPET: "alfombra roja"
+  RED_CONCRETE: "concreto rojo"
+  RED_CONCRETE_POWDER: "cemento rojo"
+  RED_GLAZED_TERRACOTTA: "azulejo rojo"
+  RED_MUSHROOM: "hongo rojo"
+  RED_MUSHROOM_BLOCK: "bloque de hongo rojo"
+  RED_NETHER_BRICK_SLAB: "losa de ladrillos del nether rojos"
+  RED_NETHER_BRICK_STAIRS: "escaleras de ladrillos del nether rojos"
+  RED_NETHER_BRICK_WALL: "muro de ladrillos del nether rojos"
+  RED_NETHER_BRICKS: "ladrillos del nether rojos"
+  RED_SAND: "arena roja"
+  RED_SANDSTONE: "arenisca roja"
+  RED_SANDSTONE_SLAB: "losa de arenisca roja"
+  RED_SANDSTONE_STAIRS: "escaleras de arenisca roja"
+  RED_SANDSTONE_WALL: "muro de arenisca roja"
+  RED_SHULKER_BOX: "caja de shulker roja"
+  RED_STAINED_GLASS: "cristal rojo"
+  RED_STAINED_GLASS_PANE: "panel de cristal rojo"
+  RED_TERRACOTTA: "terracota roja"
+  RED_TULIP: "tulipán rojo"
+  RED_WOOL: "lana roja"
+  REDSTONE_BLOCK: "bloque de redstone"
+  REDSTONE_LAMP: "lámpara de redstone"
+  REDSTONE_ORE: "mena de redstone"
+  REDSTONE_TORCH: "antorcha de redstone"
+  REDSTONE_WALL_TORCH: "antorcha de redstone en pared"
+  REDSTONE_WIRE: "cable de redstone"
+  REINFORCED_DEEPSLATE: "pizarra abismal reforzada"
+  REPEATER: "repetidor de redstone"
+  REPEATING_COMMAND_BLOCK: "bloque de comandos de repetición"
+  RESPAWN_ANCHOR: "nexo de reaparición"
+  ROOTED_DIRT: "tierra enraizada"
+  ROSE_BUSH: "rosal"
+  SAND: "arena"
+  SANDSTONE: "arenisca"
+  SANDSTONE_SLAB: "losa de arenisca"
+  SANDSTONE_STAIRS: "escaleras de arenisca"
+  SANDSTONE_WALL: "muro de arenisca"
+  SCAFFOLDING: "andamio"
+  SCULK: "sculk"
+  SCULK_CATALYST: "catalizador de sculk"
+  SCULK_SENSOR: "sensor de sculk"
+  SCULK_SHRIEKER: "chillador de sculk"
+  SCULK_VEIN: "vena de sculk"
+  SEA_LANTERN: "linterna del mar"
+  SEA_PICKLE: "pepino de mar"
+  SEAGRASS: "hierba marina"
+  SET_SPAWN: "punto de reaparición establecido"
+  SHORT_GRASS: "césped corto"
+  SHROOMLIGHT: "brillongo"
+  SHULKER_BOX: "caja de shulker"
+  SKELETON_SKULL: "cráneo de esqueleto"
+  SKELETON_WALL_SKULL: "cráneo de esqueleto en pared"
+  SLIME_BLOCK: "bloque de slime"
+  SMALL_AMETHYST_BUD: "brote de amatista pequeño"
+  SMALL_DRIPLEAF: "plantaforma pequeña"
+  SMITHING_TABLE: "mesa de herrería"
+  SMOKER: "ahumador"
+  SMOOTH_BASALT: "basalto liso"
+  SMOOTH_QUARTZ: "bloque de cuarzo liso"
+  SMOOTH_QUARTZ_SLAB: "losa de cuarzo liso"
+  SMOOTH_QUARTZ_STAIRS: "escaleras de cuarzo liso"
+  SMOOTH_RED_SANDSTONE: "arenisca roja lisa"
+  SMOOTH_RED_SANDSTONE_SLAB: "losa de arenisca roja lisa"
+  SMOOTH_RED_SANDSTONE_STAIRS: "escaleras de arenisca roja lisa"
+  SMOOTH_SANDSTONE: "arenisca lisa"
+  SMOOTH_SANDSTONE_SLAB: "losa de arenisca lisa"
+  SMOOTH_SANDSTONE_STAIRS: "escaleras de arenisca lisa"
+  SMOOTH_STONE: "piedra lisa"
+  SMOOTH_STONE_SLAB: "losa de piedra lisa"
+  SNIFFER_EGG: "huevo de sniffer"
+  SNOW: "nieve"
+  SNOW_BLOCK: "bloque de nieve"
+  SOUL_CAMPFIRE: "fogata de almas"
+  SOUL_FIRE: "fuego de almas"
+  SOUL_LANTERN: "farol de almas"
+  SOUL_SAND: "arena de almas"
+  SOUL_SOIL: "tierra de almas"
+  SOUL_TORCH: "antorcha de almas"
+  SOUL_WALL_TORCH: "antorcha de almas en pared"
+  SPAWN_NOT_VALID: "no tienes cama ni nexo de reaparición cargado o están obstruidos"
+  SPAWNER: "generador de criaturas"
+  SPAWNER_DESC1: "interactúa con un huevo generador:"
+  SPAWNER_DESC2: "fija el tipo de criatura"
+  SPONGE: "esponja"
+  SPORE_BLOSSOM: "flor de esporas"
+  SPRUCE_BUTTON: "botón de pino"
+  SPRUCE_DOOR: "puerta de pino"
+  SPRUCE_FENCE: "cerca de pino"
+  SPRUCE_FENCE_GATE: "puerta de cerca de pino"
+  SPRUCE_HANGING_SIGN: "cartel de pino colgante"
+  SPRUCE_LEAVES: "hojas de pino"
+  SPRUCE_LOG: "tronco de pino"
+  SPRUCE_PLANKS: "madera de pino"
+  SPRUCE_PRESSURE_PLATE: "placa de presión de pino"
+  SPRUCE_SAPLING: "arbolito de pino"
+  SPRUCE_SIGN: "cartel de pino"
+  SPRUCE_SLAB: "losa de pino"
+  SPRUCE_STAIRS: "escaleras de pino"
+  SPRUCE_TRAPDOOR: "escotilla de pino"
+  SPRUCE_WALL_HANGING_SIGN: "cartel colgante de pino en pared"
+  SPRUCE_WALL_SIGN: "cartel de pino en pared"
+  SPRUCE_WOOD: "leño de pino"
+  STICKY_PISTON: "pistón pegajoso"
+  STONE: "piedra"
+  STONE_BRICK_SLAB: "losa de ladrillos de piedra"
+  STONE_BRICK_STAIRS: "escaleras de ladrillos de piedra"
+  STONE_BRICK_WALL: "muro de ladrillos de piedra"
+  STONE_BRICKS: "ladrillos de piedra"
+  STONE_BUTTON: "botón de piedra"
+  STONE_PRESSURE_PLATE: "placa de presión de piedra"
+  STONE_SLAB: "losa de piedra"
+  STONE_STAIRS: "escaleras de piedra"
+  STONECUTTER: "cortapiedras"
+  STRIPPED_ACACIA_LOG: "tronco de acacia sin corteza"
+  STRIPPED_ACACIA_WOOD: "leño de acacia sin corteza"
+  STRIPPED_BAMBOO_BLOCK: "bloque de bambú sin corteza"
+  STRIPPED_BIRCH_LOG: "tronco de abedul sin corteza"
+  STRIPPED_BIRCH_WOOD: "leño de abedul sin corteza"
+  STRIPPED_CHERRY_LOG: "tronco de cerezo sin corteza"
+  STRIPPED_CHERRY_WOOD: "leño de cerezo sin corteza"
+  STRIPPED_CRIMSON_HYPHAE: "hifas carmesí sin corteza"
+  STRIPPED_CRIMSON_STEM: "tallo carmesí sin corteza"
+  STRIPPED_DARK_OAK_LOG: "tronco de roble oscuro sin corteza"
+  STRIPPED_DARK_OAK_WOOD: "leño de roble oscuro sin corteza"
+  STRIPPED_JUNGLE_LOG: "tronco de jungla sin corteza"
+  STRIPPED_JUNGLE_WOOD: "leño de jungla sin corteza"
+  STRIPPED_MANGROVE_LOG: "tronco de mangle sin corteza"
+  STRIPPED_MANGROVE_WOOD: "leño de mangle sin corteza"
+  STRIPPED_OAK_LOG: "tronco de roble sin corteza"
+  STRIPPED_OAK_WOOD: "leño de roble sin corteza"
+  STRIPPED_SPRUCE_LOG: "tronco de pino sin corteza"
+  STRIPPED_SPRUCE_WOOD: "leño de pino sin corteza"
+  STRIPPED_WARPED_HYPHAE: "hifas distorsionadas sin corteza"
+  STRIPPED_WARPED_STEM: "tallo distorsionado sin corteza"
+  STRUCTURE_BLOCK: "bloque estructural"
+  STRUCTURE_VOID: "vacío estructural"
+  SUGAR_CANE: "caña de azúcar"
+  SUNFLOWER: "girasol"
+  SUSPICIOUS_GRAVEL: "gravilla sospechosa"
+  SUSPICIOUS_SAND: "arena sospechosa"
+  SWEET_BERRY_BUSH: "arbusto de bayas dulces"
+  TALL_GRASS: "hierba alta"
+  TALL_SEAGRASS: "hierba marina alta"
+  TARGET: "diana"
+  TERRACOTTA: "terracota"
+  TINTED_GLASS: "cristal opaco"
+  TNT: "dinamita"
+  TORCH: "antorcha"
+  TORCHFLOWER: "florantorcha"
+  TORCHFLOWER_CROP: "cultivo de florantorcha"
+  TRAPPED_CHEST: "baúl trampa"
+  TRIAL_SPAWNER: "generador de criaturas de desafío"
+  TRIPWIRE: "hilo trampa"
+  TRIPWIRE_HOOK: "gancho de hilo"
+  TUBE_CORAL: "coral de tubo"
+  TUBE_CORAL_BLOCK: "bloque de coral de tubo"
+  TUBE_CORAL_FAN: "gorgonia de tubo"
+  TUBE_CORAL_WALL_FAN: "gorgonia de tubo en pared"
+  TUFF: "toba"
+  TUFF_BRICK_SLAB: "losa de ladrillos de toba"
+  TUFF_BRICK_STAIRS: "escaleras de ladrillos de toba"
+  TUFF_BRICK_WALL: "muro de ladrillos de toba"
+  TUFF_BRICKS: "ladrillos de toba"
+  TUFF_SLAB: "losa de toba"
+  TUFF_STAIRS: "escaleras de toba"
+  TUFF_WALL: "muro de toba"
+  TURTLE_EGG: "huevo de tortuga"
+  TWISTING_VINES: "enredaderas retorcidas"
+  TWISTING_VINES_PLANT: "enredaderas retorcidas"
+  VERDANT_FROGLIGHT: "ranaluz verde"
+  VINE: "enredaderas"
+  VOID_AIR: "aire del vacío"
+  WALL_TORCH: "antorcha en pared"
+  WARPED_BUTTON: "botón distorsionado"
+  WARPED_DOOR: "puerta distorsionada"
+  WARPED_FENCE: "cerca distorsionada"
+  WARPED_FENCE_GATE: "puerta de cerca distorsionada"
+  WARPED_FUNGUS: "hongo distorsionado"
+  WARPED_HANGING_SIGN: "cartel colgante distorsionado"
+  WARPED_HYPHAE: "hifas distorsionadas"
+  WARPED_NYLIUM: "necelio distorsionado"
+  WARPED_PLANKS: "madera distorsionada"
+  WARPED_PRESSURE_PLATE: "placa de presión distorsionada"
+  WARPED_ROOTS: "raíces distorsionadas"
+  WARPED_SIGN: "cartel distorsionado"
+  WARPED_SLAB: "losa distorsionada"
+  WARPED_STAIRS: "escaleras distorsionadas"
+  WARPED_STEM: "tallo distorsionado"
+  WARPED_TRAPDOOR: "escotilla distorsionada"
+  WARPED_WALL_HANGING_SIGN: "cartel colgante distorsionado en pared"
+  WARPED_WALL_SIGN: "cartel distorsionado en pared"
+  WARPED_WART_BLOCK: "bloque de verrugas distorsionadas"
+  WATER: "agua"
+  WATER_CAULDRON: "caldero con agua"
+  WAXED_CHISELED_COPPER: "cobre cincelado encerado"
+  WAXED_COPPER_BLOCK: "bloque de cobre encerado"
+  WAXED_COPPER_BULB: "lámpara de cobre encerada"
+  WAXED_COPPER_DOOR: "puerta de cobre encerado"
+  WAXED_COPPER_GRATE: "rejilla de cobre encerado"
+  WAXED_COPPER_TRAPDOOR: "trampilla de cobre encerado"
+  WAXED_CUT_COPPER: "cobre cortado encerado"
+  WAXED_CUT_COPPER_SLAB: "losa de cobre cortado encerado"
+  WAXED_CUT_COPPER_STAIRS: "escaleras de cobre cortado encerado"
+  WAXED_EXPOSED_CHISELED_COPPER: "cobre cincelado expuesto encerado"
+  WAXED_EXPOSED_COPPER: "cobre expuesto encerado"
+  WAXED_EXPOSED_COPPER_BULB: "lámpara de cobre expuesto encerado"
+  WAXED_EXPOSED_COPPER_DOOR: "puerta de cobre expuesto encerado"
+  WAXED_EXPOSED_COPPER_GRATE: "rejilla de cobre expuesto encerado"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "trampilla de cobre expuesto encerado"
+  WAXED_EXPOSED_CUT_COPPER: "cobre cortado expuesto encerado"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "losa de cobre cortado expuesto encerado"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "escaleras de cobre cortado expuesto encerado"
+  WAXED_OXIDIZED_CHISELED_COPPER: "cobre cincelado oxidado encerado"
+  WAXED_OXIDIZED_COPPER: "cobre oxidado encerado"
+  WAXED_OXIDIZED_COPPER_BULB: "lámpara de cobre oxidado encerado"
+  WAXED_OXIDIZED_COPPER_DOOR: "puerta de cobre oxidado encerado"
+  WAXED_OXIDIZED_COPPER_GRATE: "rejilla de cobre oxidado encerado"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "trampilla de cobre oxidado encerado"
+  WAXED_OXIDIZED_CUT_COPPER: "cobre cortado oxidado encerado"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "losa de cobre cortado oxidado encerado"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "escaleras de cobre cortado oxidado encerado"
+  WAXED_WEATHERED_CHISELED_COPPER: "cobre cincelado degradado encerado"
+  WAXED_WEATHERED_COPPER: "cobre degradado encerado"
+  WAXED_WEATHERED_COPPER_BULB: "lámpara de cobre degradado encerado"
+  WAXED_WEATHERED_COPPER_DOOR: "puerta de cobre degradado encerado"
+  WAXED_WEATHERED_COPPER_GRATE: "rejilla de cobre degradado encerado"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "trampilla de cobre degradado encerado"
+  WAXED_WEATHERED_CUT_COPPER: "cobre cortado degradado encerado"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "losa de cobre cortado degradado encerado"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "escaleras de cobre cortado degradado encerado"
+  WEATHERED_CHISELED_COPPER: "cobre cincelado degradado"
+  WEATHERED_COPPER: "cobre degradado"
+  WEATHERED_COPPER_BULB: "lámpara de cobre degradado"
+  WEATHERED_COPPER_DOOR: "puerta de cobre degradado"
+  WEATHERED_COPPER_GRATE: "rejilla de cobre degradado"
+  WEATHERED_COPPER_TRAPDOOR: "trampilla de cobre degradado"
+  WEATHERED_CUT_COPPER: "cobre cortado degradado"
+  WEATHERED_CUT_COPPER_SLAB: "losa de cobre cortado degradado"
+  WEATHERED_CUT_COPPER_STAIRS: "escaleras de cobre cortado degradado"
+  WEEPING_VINES: "enredaderas lloronas"
+  WEEPING_VINES_PLANT: "planta de enredaderas lloronas"
+  WET_SPONGE: "esponja húmeda"
+  WHEAT: "cultivo de trigo"
+  WHITE_BANNER: "estandarte blanco"
+  WHITE_BED: "cama blanca"
+  WHITE_CANDLE: "vela blanca"
+  WHITE_CANDLE_CAKE: "torta con vela blanca"
+  WHITE_CARPET: "alfombra blanca"
+  WHITE_CONCRETE: "concreto blanco"
+  WHITE_CONCRETE_POWDER: "cemento blanco"
+  WHITE_GLAZED_TERRACOTTA: "azulejo blanco"
+  WHITE_SHULKER_BOX: "caja de shulker blanca"
+  WHITE_STAINED_GLASS: "cristal blanco"
+  WHITE_STAINED_GLASS_PANE: "panel de cristal blanco"
+  WHITE_TERRACOTTA: "terracota blanca"
+  WHITE_TULIP: "tulipán blanco"
+  WHITE_WOOL: "lana blanca"
+  WITHER_ROSE: "rosa del wither"
+  WITHER_SKELETON_SKULL: "cráneo de esqueleto del wither"
+  WITHER_SKELETON_WALL_SKULL: "cráneo de esqueleto del wither en pared"
+  YELLOW_BANNER: "estandarte amarillo"
+  YELLOW_BED: "cama amarilla"
+  YELLOW_CANDLE: "vela amarilla"
+  YELLOW_CANDLE_CAKE: "torta con vela amarilla"
+  YELLOW_CARPET: "alfombra amarilla"
+  YELLOW_CONCRETE: "concreto amarillo"
+  YELLOW_CONCRETE_POWDER: "cemento amarillo"
+  YELLOW_GLAZED_TERRACOTTA: "azulejo amarillo"
+  YELLOW_SHULKER_BOX: "caja de shulker amarilla"
+  YELLOW_STAINED_GLASS: "cristal amarillo"
+  YELLOW_STAINED_GLASS_PANE: "panel de cristal amarillo"
+  YELLOW_TERRACOTTA: "terracota amarilla"
+  YELLOW_WOOL: "lana amarilla"
+  ZOMBIE_HEAD: "cabeza de zombi"
+  ZOMBIE_WALL_HEAD: "cabeza de zombi en pared"
+  ACACIA_BOAT: "bote de acacia"
+  ACACIA_CHEST_BOAT: "bote de acacia con baúl"
+  ALLAY_SPAWN_EGG: "generar allay"
+  AMETHYST_SHARD: "fragmento de amatista"
+  ANGLER_POTTERY_SHARD: "fragmento de caña de pescar"
+  ANGLER_POTTERY_SHERD: "fragmento de cerámica de caña de pescar"
+  APPLE: "manzana"
+  ARCHER_POTTERY_SHARD: "fragmento de arco"
+  ARCHER_POTTERY_SHERD: "fragmento de cerámica de arco"
+  ARMOR_STAND: "soporte para armadura"
+  ARMS_UP_POTTERY_SHARD: "fragmento de manos arriba"
+  ARMS_UP_POTTERY_SHERD: "fragmento de cerámica de manos arriba"
+  ARROW: "flecha"
+  AXOLOTL_BUCKET: "balde con ajolote"
+  AXOLOTL_SPAWN_EGG: "generar ajolote"
+  BAKED_POTATO: "papa cocida"
+  BAMBOO_CHEST_RAFT: "balsa de bambú con baúl"
+  BAMBOO_RAFT: "balsa de bambú"
+  BAT_SPAWN_EGG: "generar murciélago"
+  BEE_SPAWN_EGG: "generar abeja"
+  BEEF: "bistec crudo"
+  BEETROOT: "remolacha"
+  BEETROOT_SEEDS: "semillas de remolacha"
+  BEETROOT_SOUP: "guiso de remolacha"
+  BIRCH_BOAT: "bote de abedul"
+  BIRCH_CHEST_BOAT: "bote de abedul con baúl"
+  BLACK_DYE: "tinte negro"
+  BLADE_POTTERY_SHARD: "fragmento de espada"
+  BLADE_POTTERY_SHERD: "fragmento de cerámica de espada"
+  BLAZE_POWDER: "polvo de blaze"
+  BLAZE_ROD: "vara de blaze"
+  BLAZE_SPAWN_EGG: "generar blaze"
+  BLUE_DYE: "tinte azul"
+  BONE: "hueso"
+  BONE_MEAL: "polvo de hueso"
+  BOOK: "libro"
+  BOW: "arco"
+  BOWL: "tazón"
+  BREAD: "pan"
+  BREEZE_SPAWN_EGG: "generar breeze"
+  BREWER_POTTERY_SHARD: "fragmento de poción"
+  BREWER_POTTERY_SHERD: "fragmento de cerámica de poción"
+  BRICK: "ladrillo"
+  BROWN_DYE: "tinte marrón"
+  BRUSH: "pincel"
+  BUCKET: "balde"
+  BUNDLE: "bolsa"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "fragmento de fuego"
+  BURN_POTTERY_SHERD: "fragmento de cerámica de fuego"
+  CAMEL_SPAWN_EGG: "generar camello"
+  CARROT: "zanahoria"
+  CARROT_ON_A_STICK: "caña con zanahoria"
+  CAT_SPAWN_EGG: "generar gato"
+  CAVE_SPIDER_SPAWN_EGG: "generar araña de cueva"
+  CHAINMAIL_BOOTS: "botas de cota de malla"
+  CHAINMAIL_CHESTPLATE: "pechera de cota de malla"
+  CHAINMAIL_HELMET: "casco de cota de malla"
+  CHAINMAIL_LEGGINGS: "grebas de cota de malla"
+  CHARCOAL: "carbón vegetal"
+  CHERRY_BOAT: "bote de cerezo"
+  CHERRY_CHEST_BOAT: "bote de cerezo con baúl"
+  CHEST_MINECART: "vagón con baúl"
+  CHICKEN: "pollo crudo"
+  CHICKEN_SPAWN_EGG: "generar gallina"
+  CHORUS_FRUIT: "fruta de chorus"
+  CLAY_BALL: "bola de arcilla"
+  CLOCK: "reloj"
+  COAL: "carbón"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  COCOA_BEANS: "semillas de cacao"
+  COD: "bacalao crudo"
+  COD_BUCKET: "balde con bacalao"
+  COD_SPAWN_EGG: "generar bacalao"
+  COMMAND_BLOCK_MINECART: "vagón con bloque de comandos"
+  COMPASS: "brújula"
+  COOKED_BEEF: "bistec"
+  COOKED_CHICKEN: "pollo cocido"
+  COOKED_COD: "bacalao cocinado"
+  COOKED_MUTTON: "cordero cocido"
+  COOKED_PORKCHOP: "chuleta cocida"
+  COOKED_RABBIT: "conejo cocido"
+  COOKED_SALMON: "salmón cocido"
+  COOKIE: "galleta"
+  COPPER_INGOT: "lingote de cobre"
+  COW_SPAWN_EGG: "generar vaca"
+  CREEPER_BANNER_PATTERN: "diseño de estandarte"
+  CREEPER_BANNER_PATTERN_DESC: "estampado de creeper"
+  CREEPER_SPAWN_EGG: "generar creeper"
+  CROSSBOW: "ballesta"
+  CROSSBOW_PROJECTILE: "proyectil:"
+  CYAN_DYE: "tinte turquesa"
+  DANGER_POTTERY_SHARD: "fragmento de peligro"
+  DANGER_POTTERY_SHERD: "fragmento de cerámica de peligro"
+  DARK_OAK_BOAT: "bote de roble oscuro"
+  DARK_OAK_CHEST_BOAT: "bote de roble oscuro con baúl"
+  DEBUG_STICK: "bastón de desarrollo"
+  DEBUG_STICK_EMPTY: "%s no tiene propiedades"
+  DEBUG_STICK_SELECT: "seleccionado \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" cambió a %s"
+  DIAMOND: "diamante"
+  DIAMOND_AXE: "hacha de diamante"
+  DIAMOND_BOOTS: "botas de diamante"
+  DIAMOND_CHESTPLATE: "pechera de diamante"
+  DIAMOND_HELMET: "casco de diamante"
+  DIAMOND_HOE: "azadón de diamante"
+  DIAMOND_HORSE_ARMOR: "armadura de diamante para caballo"
+  DIAMOND_LEGGINGS: "grebas de diamante"
+  DIAMOND_PICKAXE: "pico de diamante"
+  DIAMOND_SHOVEL: "pala de diamante"
+  DIAMOND_SWORD: "espada de diamante"
+  DISC_FRAGMENT_5: "fragmento de disco"
+  DISC_FRAGMENT_5_DESC: "disco - 5"
+  DOLPHIN_SPAWN_EGG: "generar delfín"
+  DONKEY_SPAWN_EGG: "generar burro"
+  DRAGON_BREATH: "aliento de dragón"
+  DRIED_KELP: "algas secas"
+  DROWNED_SPAWN_EGG: "generar ahogado"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  ECHO_SHARD: "fragmento de eco"
+  EGG: "huevo"
+  ELDER_GUARDIAN_SPAWN_EGG: "generar guardián anciano"
+  ELYTRA: "élitros"
+  EMERALD: "esmeralda"
+  ENCHANTED_BOOK: "libro encantado"
+  ENCHANTED_GOLDEN_APPLE: "manzana de oro encantada"
+  END_CRYSTAL: "cristal del end"
+  ENDER_DRAGON_SPAWN_EGG: "generar ender dragon"
+  ENDER_EYE: "ojo de ender"
+  ENDER_PEARL: "perla de ender"
+  ENDERMAN_SPAWN_EGG: "generar enderman"
+  ENDERMITE_SPAWN_EGG: "generar endermite"
+  EVOKER_SPAWN_EGG: "generar invocador"
+  EXPERIENCE_BOTTLE: "frasco de experiencia"
+  EXPLORER_POTTERY_SHARD: "fragmento de explorador"
+  EXPLORER_POTTERY_SHERD: "fragmento de cerámica de explorador"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  FEATHER: "pluma"
+  FERMENTED_SPIDER_EYE: "ojo de araña fermentado"
+  FILLED_MAP: "mapa"
+  FIRE_CHARGE: "carga de fuego"
+  FIREWORK_ROCKET: "cohete de fuegos artificiales"
+  FIREWORK_ROCKET_FLIGHT: "duración del vuelo:"
+  FIREWORK_STAR: "pólvora de fuegos artificiales"
+  FIREWORK_STAR_BLACK: "negra"
+  FIREWORK_STAR_BLUE: "azul"
+  FIREWORK_STAR_BROWN: "marrón"
+  FIREWORK_STAR_CUSTOM_COLOR: "personalizado"
+  FIREWORK_STAR_CYAN: "turquesa"
+  FIREWORK_STAR_FADE_TO: "pasa a"
+  FIREWORK_STAR_FLICKER: " con titileo."
+  FIREWORK_STAR_GRAY: "gris"
+  FIREWORK_STAR_GREEN: "verde"
+  FIREWORK_STAR_LIGHT_BLUE: "azul cielo"
+  FIREWORK_STAR_LIGHT_GRAY: "gris claro"
+  FIREWORK_STAR_LIME: "verde limón"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "naranja"
+  FIREWORK_STAR_PINK: "rosa"
+  FIREWORK_STAR_PURPLE: "morada"
+  FIREWORK_STAR_RED: "roja"
+  FIREWORK_STAR_SHAPE: "forma desconocida"
+  FIREWORK_STAR_SHAPE_BURST: "estallido"
+  FIREWORK_STAR_SHAPE_CREEPER: "con forma de creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "esfera grande"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "esfera pequeña"
+  FIREWORK_STAR_SHAPE_STAR: "con forma de estrella"
+  FIREWORK_STAR_TRAIL: " con rastro."
+  FIREWORK_STAR_WHITE: "blanca"
+  FIREWORK_STAR_YELLOW: "amarilla"
+  FISHING_ROD: "caña de pescar"
+  FLINT: "pedernal"
+  FLINT_AND_STEEL: "yesquero"
+  FLOWER_BANNER_PATTERN: "diseño de estandarte"
+  FLOWER_BANNER_PATTERN_DESC: "estampado de flor"
+  FOX_SPAWN_EGG: "generar zorro"
+  FRIEND_POTTERY_SHARD: "fragmento de amistad"
+  FRIEND_POTTERY_SHERD: "fragmento de cerámica de amistad"
+  FROG_SPAWN_EGG: "generar rana"
+  FURNACE_MINECART: "vagón con horno"
+  GHAST_SPAWN_EGG: "generar ghast"
+  GHAST_TEAR: "lágrima de ghast"
+  GLASS_BOTTLE: "frasco"
+  GLISTERING_MELON_SLICE: "rebanada de patilla brillante"
+  GLOBE_BANNER_PATTERN: "diseño de estandarte"
+  GLOBE_BANNER_PATTERN_DESC: "estampado de planeta"
+  GLOW_BERRIES: "bayas luminosas"
+  GLOW_INK_SAC: "saco de tinta luminosa"
+  GLOW_ITEM_FRAME: "marco luminoso"
+  GLOW_SQUID_SPAWN_EGG: "generar calamar luminoso"
+  GLOWSTONE_DUST: "polvo de piedra luminosa"
+  GOAT_HORN: "cuerno de cabra"
+  GOAT_SPAWN_EGG: "generar cabra"
+  GOLD_INGOT: "lingote de oro"
+  GOLD_NUGGET: "pepita de oro"
+  GOLDEN_APPLE: "manzana de oro"
+  GOLDEN_AXE: "hacha de oro"
+  GOLDEN_BOOTS: "botas de oro"
+  GOLDEN_CARROT: "zanahoria de oro"
+  GOLDEN_CHESTPLATE: "pechera de oro"
+  GOLDEN_HELMET: "casco de oro"
+  GOLDEN_HOE: "azadón de oro"
+  GOLDEN_HORSE_ARMOR: "armadura de oro para caballo"
+  GOLDEN_LEGGINGS: "grebas de oro"
+  GOLDEN_PICKAXE: "pico de oro"
+  GOLDEN_SHOVEL: "pala de oro"
+  GOLDEN_SWORD: "espada de oro"
+  GRAY_DYE: "tinte gris"
+  GREEN_DYE: "tinte verde"
+  GUARDIAN_SPAWN_EGG: "generar guardián"
+  GUNPOWDER: "pólvora"
+  HEART_OF_THE_SEA: "corazón del mar"
+  HEART_POTTERY_SHARD: "fragmento de corazón"
+  HEART_POTTERY_SHERD: "fragmento de cerámica de corazón"
+  HEARTBREAK_POTTERY_SHARD: "fragmento de corazón roto"
+  HEARTBREAK_POTTERY_SHERD: "fragmento de cerámica de corazón roto"
+  HOGLIN_SPAWN_EGG: "generar hoglin"
+  HONEY_BOTTLE: "frasco de miel"
+  HONEYCOMB: "panal de abejas"
+  HOPPER_MINECART: "vagón con tolva"
+  HORSE_SPAWN_EGG: "generar caballo"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  HOWL_POTTERY_SHARD: "fragmento de canino"
+  HOWL_POTTERY_SHERD: "fragmento de cerámica de canino"
+  HUSK_SPAWN_EGG: "generar zombi momificado (husk)"
+  INK_SAC: "saco de tinta"
+  IRON_AXE: "hacha de hierro"
+  IRON_BOOTS: "botas de hierro"
+  IRON_CHESTPLATE: "pechera de hierro"
+  IRON_GOLEM_SPAWN_EGG: "generar gólem de hierro"
+  IRON_HELMET: "casco de hierro"
+  IRON_HOE: "azadón de hierro"
+  IRON_HORSE_ARMOR: "armadura de hierro para caballo"
+  IRON_INGOT: "lingote de hierro"
+  IRON_LEGGINGS: "grebas de hierro"
+  IRON_NUGGET: "pepita de hierro"
+  IRON_PICKAXE: "pico de hierro"
+  IRON_SHOVEL: "pala de hierro"
+  IRON_SWORD: "espada de hierro"
+  ITEM_FRAME: "marco"
+  JUNGLE_BOAT: "bote de jungla"
+  JUNGLE_CHEST_BOAT: "bote de jungla con baúl"
+  KNOWLEDGE_BOOK: "enciclopedia"
+  LAPIS_LAZULI: "lapislázuli"
+  LAVA_BUCKET: "balde con lava"
+  LEAD: "rienda"
+  LEATHER: "cuero"
+  LEATHER_BOOTS: "botas de cuero"
+  LEATHER_CHESTPLATE: "túnica de cuero"
+  LEATHER_HELMET: "sombrero de cuero"
+  LEATHER_HORSE_ARMOR: "armadura de cuero para caballo"
+  LEATHER_LEGGINGS: "pantalones de cuero"
+  LIGHT_BLUE_DYE: "tinte azul cielo"
+  LIGHT_GRAY_DYE: "tinte gris claro"
+  LIME_DYE: "tinte verde limón"
+  LINGERING_POTION: "poción persistente"
+  LINGERING_POTION_EFFECT_AWKWARD: "poción rara persistente"
+  LINGERING_POTION_EFFECT_EMPTY: "poción persistente no fabricable"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "poción de resistencia al fuego persistente"
+  LINGERING_POTION_EFFECT_HARMING: "poción de daño persistente"
+  LINGERING_POTION_EFFECT_HEALING: "poción de curación persistente"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "poción de invisibilidad persistente"
+  LINGERING_POTION_EFFECT_LEAPING: "poción de salto persistente"
+  LINGERING_POTION_EFFECT_LEVITATION: "poción de levitación persistente"
+  LINGERING_POTION_EFFECT_LUCK: "poción de suerte persistente"
+  LINGERING_POTION_EFFECT_MUNDANE: "poción mundana persistente"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "poción de visión nocturna persistente"
+  LINGERING_POTION_EFFECT_POISON: "poción de veneno persistente"
+  LINGERING_POTION_EFFECT_REGENERATION: "poción de regeneración persistente"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "poción de caída lenta persistente"
+  LINGERING_POTION_EFFECT_SLOWNESS: "poción de lentitud persistente"
+  LINGERING_POTION_EFFECT_STRENGTH: "poción de fuerza persistente"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "poción de velocidad persistente"
+  LINGERING_POTION_EFFECT_THICK: "poción densa persistente"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "poción del maestro tortuga persistente"
+  LINGERING_POTION_EFFECT_WATER: "frasco de agua persistente"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "poción de respiración persistente"
+  LINGERING_POTION_EFFECT_WEAKNESS: "poción de debilidad persistente"
+  LLAMA_SPAWN_EGG: "generar llama"
+  LODESTONE_COMPASS: "brújula magnetizada"
+  MAGENTA_DYE: "tinte magenta"
+  MAGMA_CREAM: "crema de magma"
+  MAGMA_CUBE_SPAWN_EGG: "generar cubo de magma"
+  MANGROVE_BOAT: "bote de mangle"
+  MANGROVE_CHEST_BOAT: "bote de mangle con baúl"
+  MAP: "mapa en blanco"
+  MELON_SEEDS: "semillas de patilla"
+  MELON_SLICE: "rebanada de patilla"
+  MILK_BUCKET: "balde con leche"
+  MINECART: "vagón"
+  MINER_POTTERY_SHARD: "fragmento de minero"
+  MINER_POTTERY_SHERD: "fragmento de cerámica de minero"
+  MOJANG_BANNER_PATTERN: "diseño de estandarte"
+  MOJANG_BANNER_PATTERN_DESC: "estampado de mojang"
+  MOOSHROOM_SPAWN_EGG: "generar mooshroom"
+  MOURNER_POTTERY_SHARD: "fragmento de doliente"
+  MOURNER_POTTERY_SHERD: "fragmento de cerámica de doliente"
+  MULE_SPAWN_EGG: "generar mula"
+  MUSHROOM_STEW: "guiso de hongos"
+  MUSIC_DISC_11: "disco"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "disco"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "disco"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "disco"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "disco"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "disco"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "disco"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "disco"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "disco"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "disco"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "disco"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "disco"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "disco"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "disco"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "disco"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "disco"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "cordero crudo"
+  NAME_TAG: "etiqueta"
+  NAUTILUS_SHELL: "caparazón de nautilo"
+  NETHER_BRICK: "ladrillo del nether"
+  NETHER_STAR: "estrella del nether"
+  NETHERITE_AXE: "hacha de netherita"
+  NETHERITE_BOOTS: "botas de netherita"
+  NETHERITE_CHESTPLATE: "pechera de netherita"
+  NETHERITE_HELMET: "casco de netherita"
+  NETHERITE_HOE: "azadón de netherita"
+  NETHERITE_INGOT: "lingote de netherita"
+  NETHERITE_LEGGINGS: "grebas de netherita"
+  NETHERITE_PICKAXE: "pico de netherita"
+  NETHERITE_SCRAP: "fragmento de netherita"
+  NETHERITE_SHOVEL: "pala de netherita"
+  NETHERITE_SWORD: "espada de netherita"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "molde de herrería"
+  OAK_BOAT: "bote de roble"
+  OAK_CHEST_BOAT: "bote de roble con baúl"
+  OCELOT_SPAWN_EGG: "generar cunaguaro"
+  ORANGE_DYE: "tinte naranja"
+  PAINTING: "cuadro"
+  PANDA_SPAWN_EGG: "generar panda"
+  PAPER: "papel"
+  PARROT_SPAWN_EGG: "generar loro"
+  PHANTOM_MEMBRANE: "membrana de phantom"
+  PHANTOM_SPAWN_EGG: "generar phantom"
+  PIG_SPAWN_EGG: "generar cochino"
+  PIGLIN_BANNER_PATTERN: "diseño de estandarte"
+  PIGLIN_BANNER_PATTERN_DESC: "hocico"
+  PIGLIN_BRUTE_SPAWN_EGG: "generar piglin bruto"
+  PIGLIN_SPAWN_EGG: "generar piglin"
+  PILLAGER_SPAWN_EGG: "generar saqueador"
+  PINK_DYE: "tinte rosa"
+  PITCHER_PLANT: "nepenthes"
+  PITCHER_POD: "semilla de nepenthes"
+  PLENTY_POTTERY_SHARD: "fragmento de abundancia"
+  PLENTY_POTTERY_SHERD: "fragmento de cerámica de abundancia"
+  POISONOUS_POTATO: "papa venenosa"
+  POLAR_BEAR_SPAWN_EGG: "generar oso polar"
+  POPPED_CHORUS_FRUIT: "fruta de chorus horneada"
+  PORKCHOP: "chuleta cruda"
+  POTATO: "papa"
+  POTION: "poción"
+  POTION_EFFECT_AWKWARD: "poción rara"
+  POTION_EFFECT_EMPTY: "poción no fabricable"
+  POTION_EFFECT_FIRE_RESISTANCE: "poción de resistencia al fuego"
+  POTION_EFFECT_HARMING: "poción de daño"
+  POTION_EFFECT_HEALING: "poción de curación"
+  POTION_EFFECT_INVISIBILITY: "poción de invisibilidad"
+  POTION_EFFECT_LEAPING: "poción de salto"
+  POTION_EFFECT_LEVITATION: "poción de levitación"
+  POTION_EFFECT_LUCK: "poción de suerte"
+  POTION_EFFECT_MUNDANE: "poción mundana"
+  POTION_EFFECT_NIGHT_VISION: "poción de visión nocturna"
+  POTION_EFFECT_POISON: "poción de veneno"
+  POTION_EFFECT_REGENERATION: "poción de regeneración"
+  POTION_EFFECT_SLOW_FALLING: "poción de caída lenta"
+  POTION_EFFECT_SLOWNESS: "poción de lentitud"
+  POTION_EFFECT_STRENGTH: "poción de fuerza"
+  POTION_EFFECT_SWIFTNESS: "poción de velocidad"
+  POTION_EFFECT_THICK: "poción densa"
+  POTION_EFFECT_TURTLE_MASTER: "poción del maestro tortuga"
+  POTION_EFFECT_WATER: "frasco de agua"
+  POTION_EFFECT_WATER_BREATHING: "poción de respiración"
+  POTION_EFFECT_WEAKNESS: "poción de debilidad"
+  POTTERY_SHARD_ARCHER: "fragmento de arco"
+  POTTERY_SHARD_ARMS_UP: "fragmento de manos arriba"
+  POTTERY_SHARD_PRIZE: "fragmento de tesoro"
+  POTTERY_SHARD_SKULL: "fragmento de calavera"
+  POWDER_SNOW_BUCKET: "balde con nieve en polvo"
+  PRISMARINE_CRYSTALS: "cristales de prismarina"
+  PRISMARINE_SHARD: "fragmento de prismarina"
+  PRIZE_POTTERY_SHARD: "fragmento de tesoro"
+  PRIZE_POTTERY_SHERD: "fragmento de cerámica de tesoro"
+  PUFFERFISH: "pez globo"
+  PUFFERFISH_BUCKET: "balde con pez globo"
+  PUFFERFISH_SPAWN_EGG: "generar pez globo"
+  PUMPKIN_PIE: "torta de auyama"
+  PUMPKIN_SEEDS: "semillas de auyama"
+  PURPLE_DYE: "tinte morado"
+  QUARTZ: "cuarzo del nether"
+  RABBIT: "conejo crudo"
+  RABBIT_FOOT: "pata de conejo"
+  RABBIT_HIDE: "piel de conejo"
+  RABBIT_SPAWN_EGG: "generar conejo"
+  RABBIT_STEW: "guiso de conejo"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  RAVAGER_SPAWN_EGG: "generar devastador"
+  RAW_COPPER: "cobre en bruto"
+  RAW_GOLD: "oro en bruto"
+  RAW_IRON: "hierro en bruto"
+  RECOVERY_COMPASS: "brújula de recuperación"
+  RED_DYE: "tinte rojo"
+  REDSTONE: "polvo de redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  ROTTEN_FLESH: "carne podrida"
+  SADDLE: "silla"
+  SALMON: "salmón crudo"
+  SALMON_BUCKET: "balde con salmón"
+  SALMON_SPAWN_EGG: "generar salmón"
+  SCUTE: "escama de tortuga"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  SHEAF_POTTERY_SHARD: "fragmento de trigo"
+  SHEAF_POTTERY_SHERD: "fragmento de cerámica de trigo"
+  SHEARS: "tijeras"
+  SHEEP_SPAWN_EGG: "generar oveja"
+  SHELTER_POTTERY_SHARD: "fragmento de refugio"
+  SHELTER_POTTERY_SHERD: "fragmento de cerámica de refugio"
+  SHIELD: "escudo"
+  SHIELD_BLACK: "escudo negro"
+  SHIELD_BLUE: "escudo azul"
+  SHIELD_BROWN: "escudo marrón"
+  SHIELD_CYAN: "escudo turquesa"
+  SHIELD_GRAY: "escudo gris"
+  SHIELD_GREEN: "escudo verde"
+  SHIELD_LIGHT_BLUE: "escudo azul cielo"
+  SHIELD_LIGHT_GRAY: "escudo gris claro"
+  SHIELD_LIME: "escudo verde limón"
+  SHIELD_MAGENTA: "escudo magenta"
+  SHIELD_ORANGE: "escudo naranja"
+  SHIELD_PINK: "escudo rosa"
+  SHIELD_PURPLE: "escudo morado"
+  SHIELD_RED: "escudo rojo"
+  SHIELD_WHITE: "escudo blanco"
+  SHIELD_YELLOW: "escudo amarillo"
+  SHULKER_SHELL: "caparazón de shulker"
+  SHULKER_SPAWN_EGG: "generar shulker"
+  SIGN: "cartel"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  SILVERFISH_SPAWN_EGG: "generar pez de plata"
+  SKELETON_HORSE_SPAWN_EGG: "generar caballo esquelético"
+  SKELETON_SPAWN_EGG: "generar esqueleto"
+  SKULL_BANNER_PATTERN: "diseño de estandarte"
+  SKULL_BANNER_PATTERN_DESC: "estampado de cráneo"
+  SKULL_POTTERY_SHARD: "fragmento de calavera"
+  SKULL_POTTERY_SHERD: "fragmento de cerámica de calavera"
+  SLIME_BALL: "bola de slime"
+  SLIME_SPAWN_EGG: "generar slime"
+  SMITHING_TEMPLATE: "molde de herrería"
+  SMITHING_TEMPLATE_APPLIES_TO: "se aplica a:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "añade un lingote o cristal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "añade una pieza de armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "lingotes y cristales"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredientes:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "añade un lingote de netherita"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "equipamiento de diamante"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "añade una armadura arma o herramienta de diamante"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "lingote de netherita"
+  SMITHING_TEMPLATE_UPGRADE: "mejora: "
+  SNIFFER_SPAWN_EGG: "generar sniffer"
+  SNORT_POTTERY_SHARD: "fragmento de sniffer"
+  SNORT_POTTERY_SHERD: "fragmento de cerámica de sniffer"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  SNOW_GOLEM_SPAWN_EGG: "generar gólem de nieve"
+  SNOWBALL: "bola de nieve"
+  SPECTRAL_ARROW: "flecha espectral"
+  SPIDER_EYE: "ojo de araña"
+  SPIDER_SPAWN_EGG: "generar araña"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  SPLASH_POTION: "poción arrojadiza"
+  SPLASH_POTION_EFFECT_AWKWARD: "poción rara arrojadiza"
+  SPLASH_POTION_EFFECT_EMPTY: "poción arrojadiza no fabricable"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "poción de resistencia al fuego arrojadiza"
+  SPLASH_POTION_EFFECT_HARMING: "poción de daño arrojadiza"
+  SPLASH_POTION_EFFECT_HEALING: "poción de curación arrojadiza"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "poción de invisibilidad arrojadiza"
+  SPLASH_POTION_EFFECT_LEAPING: "poción de salto arrojadiza"
+  SPLASH_POTION_EFFECT_LEVITATION: "poción de levitación arrojadiza"
+  SPLASH_POTION_EFFECT_LUCK: "poción de suerte arrojadiza"
+  SPLASH_POTION_EFFECT_MUNDANE: "poción mundana arrojadiza"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "poción de visión nocturna arrojadiza"
+  SPLASH_POTION_EFFECT_POISON: "poción de veneno arrojadiza"
+  SPLASH_POTION_EFFECT_REGENERATION: "poción de regeneración arrojadiza"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "poción de caída lenta arrojadiza"
+  SPLASH_POTION_EFFECT_SLOWNESS: "poción de lentitud arrojadiza"
+  SPLASH_POTION_EFFECT_STRENGTH: "poción de fuerza arrojadiza"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "poción de velocidad arrojadiza"
+  SPLASH_POTION_EFFECT_THICK: "poción densa arrojadiza"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "poción del maestro tortuga arrojadiza"
+  SPLASH_POTION_EFFECT_WATER: "frasco de agua arrojadizo"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "poción de respiración arrojadiza"
+  SPLASH_POTION_EFFECT_WEAKNESS: "poción de debilidad arrojadiza"
+  SPRUCE_BOAT: "bote de pino"
+  SPRUCE_CHEST_BOAT: "bote de pino con baúl"
+  SPYGLASS: "catalejo"
+  SQUID_SPAWN_EGG: "generar calamar"
+  STICK: "palo"
+  STONE_AXE: "hacha de piedra"
+  STONE_HOE: "azadón de piedra"
+  STONE_PICKAXE: "pico de piedra"
+  STONE_SHOVEL: "pala de piedra"
+  STONE_SWORD: "espada de piedra"
+  STRAY_SPAWN_EGG: "generar esqueleto glacial (stray)"
+  STRIDER_SPAWN_EGG: "generar lavagante"
+  STRING: "hilo"
+  SUGAR: "azúcar"
+  SUSPICIOUS_STEW: "guiso sospechoso"
+  SWEET_BERRIES: "bayas dulces"
+  TADPOLE_BUCKET: "balde con renacuajo"
+  TADPOLE_SPAWN_EGG: "generar renacuajo"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  TIPPED_ARROW: "flecha con efecto"
+  TIPPED_ARROW_EFFECT_AWKWARD: "flecha con efecto"
+  TIPPED_ARROW_EFFECT_EMPTY: "flecha con efecto no fabricable"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "flecha de resistencia al fuego"
+  TIPPED_ARROW_EFFECT_HARMING: "flecha de daño"
+  TIPPED_ARROW_EFFECT_HEALING: "flecha de curación"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "flecha de invisibilidad"
+  TIPPED_ARROW_EFFECT_LEAPING: "flecha de salto"
+  TIPPED_ARROW_EFFECT_LEVITATION: "flecha de levitación"
+  TIPPED_ARROW_EFFECT_LUCK: "flecha de suerte"
+  TIPPED_ARROW_EFFECT_MUNDANE: "flecha con efecto"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "flecha de visión nocturna"
+  TIPPED_ARROW_EFFECT_POISON: "flecha de veneno"
+  TIPPED_ARROW_EFFECT_REGENERATION: "flecha de regeneración"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "flecha de caída lenta"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "flecha de lentitud"
+  TIPPED_ARROW_EFFECT_STRENGTH: "flecha de fuerza"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "flecha de velocidad"
+  TIPPED_ARROW_EFFECT_THICK: "flecha con efecto"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "flecha del maestro tortuga"
+  TIPPED_ARROW_EFFECT_WATER: "flecha salpicante"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "flecha de respiración"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "flecha de debilidad"
+  TNT_MINECART: "vagón con dinamita"
+  TORCHFLOWER_SEEDS: "semillas de florantorcha"
+  TOTEM_OF_UNDYING: "tótem de la inmortalidad"
+  TRADER_LLAMA_SPAWN_EGG: "generar llama de comerciante"
+  TRIAL_KEY: "llave de desafío"
+  TRIDENT: "tridente"
+  TROPICAL_FISH: "pez tropical"
+  TROPICAL_FISH_BUCKET: "balde con pez tropical"
+  TROPICAL_FISH_SPAWN_EGG: "generar pez tropical"
+  TURTLE_HELMET: "caparazón de tortuga"
+  TURTLE_SPAWN_EGG: "generar tortuga"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  VEX_SPAWN_EGG: "generar vex"
+  VILLAGER_SPAWN_EGG: "generar aldeano"
+  VINDICATOR_SPAWN_EGG: "generar vindicador"
+  WANDERING_TRADER_SPAWN_EGG: "generar comerciante nómada"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  WARDEN_SPAWN_EGG: "generar warden"
+  WARPED_FUNGUS_ON_A_STICK: "caña con hongo distorsionado"
+  WATER_BUCKET: "balde con agua"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  WHEAT: "trigo"
+  WHEAT_SEEDS: "semillas de trigo"
+  WHITE_DYE: "tinte blanco"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "molde de herrería"
+  WITCH_SPAWN_EGG: "generar bruja"
+  WITHER_SKELETON_SPAWN_EGG: "generar esqueleto del wither"
+  WITHER_SPAWN_EGG: "generar wither"
+  WOLF_SPAWN_EGG: "generar lobo"
+  WOODEN_AXE: "hacha de madera"
+  WOODEN_HOE: "azadón de madera"
+  WOODEN_PICKAXE: "pico de madera"
+  WOODEN_SHOVEL: "pala de madera"
+  WOODEN_SWORD: "espada de madera"
+  WRITABLE_BOOK: "libro y pluma"
+  WRITTEN_BOOK: "libro escrito"
+  YELLOW_DYE: "tinte amarillo"
+  ZOGLIN_SPAWN_EGG: "generar zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "generar caballo zombi"
+  ZOMBIE_SPAWN_EGG: "generar zombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "generar aldeano zombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "generar piglin zombificado"
+  CHEST: "en el cuerpo:"
+  FEET: "en los pies:"
+  HEAD: "en la cabeza:"
+  LEGS: "en las piernas:"
+  MAINHAND: "en la mano principal:"
+  OFFHAND: "en la mano secundaria:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
