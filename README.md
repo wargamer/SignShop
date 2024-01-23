@@ -1,3 +1,4 @@
+![image](https://github.com/chelminski/SignShop/assets/62246121/dfcf99e1-91c5-4f93-9901-48da763181ab)
 
 # SignShop
 
