@@ -3,6 +3,12 @@
 
 SignShop allows you to set up physical shops by punching a chest with your items you want to sell, then punching a sign (while holding redstone dust). It's easy to set up, and even easier to customize!
 
+## Project Links
+
+ - [Discord - Community server](https://discord.gg/4wnyysf)
+ - [Plugin Page - Bukkit Dev](https://dev.bukkit.org/projects/signshop)
+ - [Config file - Configuration manual](https://github.com/wargamer/SignShop/blob/master/src/main/resources/config.yml)
+
 
 ## Basic Features
 
@@ -33,13 +39,6 @@ SignShop allows you to set up physical shops by punching a chest with your items
 - Customizable messages
 - Customizable signs
 - Can define multipliers for groups to allow certain groups to get discounts or make more money for selling items
-
-
-## Project Links
-
- - [Discord - Community server](https://discord.gg/4wnyysf)
- - [Plugin Page - Bukkit Dev](https://dev.bukkit.org/projects/signshop)
- - [Config file - Configuration manual](https://github.com/wargamer/SignShop/blob/master/src/main/resources/config.yml)
 
 
 ## List of signs 
@@ -101,9 +100,9 @@ Important: "Admin" signs require OP or SignShop.Admin.* to create
 | [Promote]     | Promotes players to the permission group listed on the 2nd line of the sign |
 
 
-```http
-If the sign you are looking for isn't here, you can create custom signs in the config. Just add it to the signs: section and give it the appropriate blocks. If you need help, make sure to check out the SignShop Quick Reference found in your plugins/SignShop folder.
-```
+
+Info: If the sign you are looking for isn't here, you can create custom signs in the config. Just add it to the signs: section and give it the appropriate blocks. If you need help, make sure to check out the SignShop Quick Reference found in your plugins/SignShop folder.
+
 
 
 ## Permissions
