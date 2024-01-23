@@ -44,58 +44,62 @@ SignShop allows you to set up physical shops by punching a chest with your items
 
 ## List of signs 
 
+### Player signs
 
 
-| Sign      | Admin | Description |
-| ------------- | ----- | ----------- |
-| [Buy]         | No    | Buy an item from the shop chest for the price specified on the 4th line |
-| [Sell]        | No    | Sell an item to the shop chest for the price specified on the 4th line |
-| [Trade]       | No    | Trades one set of items for another, 2 chests required |
-| [Share]       | No    | Link to another SignShop to split profits, lines 2 and 3 are for the other players, line 4 is for % amounts (e.g. "25/50" for 75% to others) |
-| [Bank]        | No    | Link to another SignShop to make the shop take/give money to a bank account, The bank account is specified on line 2 of the sign (Note: you must own the bank account for this to work) |
-| [Donate]      | No    | Gives an item to the shop chest |
-| [DonateHand]  | No    | Donates the item in your hand to the shop chest |
-| [Dispose]     | No    | Takes the item in your hand and safely decomposes the material |
-| [Slot]        | No    | Gives a random item from the selected chest items (not the entire inventory) to the player |
-| [DeviceOn]    | No    | Turns a lever on |
-| [DeviceOff]   | No    | Turns a lever off |
-| [Toggle]      | No    | Toggles a lever |
-| [Device]      | No    | Temporarily turns on a lever |
-| [DeviceItem]  | No    | Temporarily turns on a lever using items as payment |
-| [Jukebox]     | No    | Allows players to create jukeboxes by placing music discs in a chest |
-| [Restricted]  | No    | Makes it so only certain permission groups can use the linked SignShop (listed on lines 2, 3, and 4) |
+| Sign          | Description |
+| ------------- | ----------- |
+| [Buy]         | Buy an item from the shop chest for the price specified on the 4th line |
+| [Sell]        | Sell an item to the shop chest for the price specified on the 4th line |
+| [Trade]       | Trades one set of items for another, 2 chests required |
+| [Share]       | Link to another SignShop to split profits, lines 2 and 3 are for the other players, line 4 is for % amounts (e.g. "25/50" for 75% to others) |
+| [Bank]        | Link to another SignShop to make the shop take/give money to a bank account, The bank account is specified on line 2 of the sign (Note: you must own the bank account for this to work) |
+| [Donate]      | Gives an item to the shop chest |
+| [DonateHand]  | Donates the item in your hand to the shop chest |
+| [Dispose]     | Takes the item in your hand and safely decomposes the material |
+| [Slot]        | Gives a random item from the selected chest items (not the entire inventory) to the player |
+| [DeviceOn]    | Turns a lever on |
+| [DeviceOff]   | Turns a lever off |
+| [Toggle]      | Toggles a lever |
+| [Device]      | Temporarily turns on a lever |
+| [DeviceItem]  | Temporarily turns on a lever using items as payment |
+| [Jukebox]     | Allows players to create jukeboxes by placing music discs in a chest |
+| [Restricted]  | Makes it so only certain permission groups can use the linked SignShop (listed on lines 2, 3, and 4) |
 
-```http
+
+
+### Admin signs
+
 Important: "Admin" signs require OP or SignShop.Admin.* to create
-```
 
-| Sign      | Admin | Description |
-| ------------- | ----- | ----------- |
-| [gBuy]        | Yes   | Buy an item from the shop chest, but the owner receives no money |
-| [gSell]       | Yes   | Sell an item to the shop chest, and the player receives money, but not from the owner |
-| [iBuy]        | Yes   | Buy an item from the "shop", money goes to no one, infinite items |
-| [iSell]       | Yes   | Sell an item to the "shop", infinite money, item disappears |
-| [iTrade]      | Yes   | Trades one set of items for another, infinite stock |
-| [Class]       | Yes   | Takes the user's inventory and replaces it with items from a chest, infinite stock |
-| [Kit]         | Yes   | Gives the buyer a set of items once (infinite stock), must be reset using ResetKit sign before they can use it again |
-| [ResetKit]    | Yes   | Allows a player to use a Kit sign again |
-| [iBuyXP]      | Yes   | Buy the number of XP levels on the third line of the sign |
-| [iSellXP]     | Yes   | Sell the number of XP levels on the third line of the sign |
-| [iXPBuy]      | Yes   | Buy an item using raw XP points on the third line of the sign |
-| [iXPSell]     | Yes   | Sell an item using raw XP points on the third line of the sign |
-| [iSlot]       | Yes   | Gives a random item from the selected chest items with infinite stock |
-| [Day]         | Yes   | Turns the time to day |
-| [Night]       | Yes   | Turns the time to night |
-| [Rain]        | Yes   | Turns on rain + thunder |
-| [ClearSkies]  | Yes   | Turns off rain + thunder |
-| [Repair]      | Yes   | Repairs the current item |
-| [Heal]        | Yes   | Fully heals the player |
-| [Enchant]     | Yes   | Sells the enchantments from the item in the chest |
-| [Disenchant]  | Yes   | Removes enchantments from an item |
-| [TpToOwner]   | Yes   | An example of a custom sign for running commands |
-| [Command]     | Yes   | Allows players to run commands on the 2nd and 3rd lines of the sign |
-| [UserCommand] | Yes   | Allows players to run commands on the 2nd and 3rd lines of the sign as if they typed it themselves |
-| [Promote]     | Yes   | Promotes players to the permission group listed on the 2nd line of the sign |
+| Sign          | Description |
+| ------------- | ----------- |
+| [gBuy]        | Buy an item from the shop chest, but the owner receives no money |
+| [gSell]       | Sell an item to the shop chest, and the player receives money, but not from the owner |
+| [iBuy]        | Buy an item from the "shop", money goes to no one, infinite items |
+| [iSell]       | Sell an item to the "shop", infinite money, item disappears |
+| [iTrade]      | Trades one set of items for another, infinite stock |
+| [Class]       | Takes the user's inventory and replaces it with items from a chest, infinite stock |
+| [Kit]         | Gives the buyer a set of items once (infinite stock), must be reset using ResetKit sign before they can use it again |
+| [ResetKit]    | Allows a player to use a Kit sign again |
+| [iBuyXP]      | Buy the number of XP levels on the third line of the sign |
+| [iSellXP]     | Sell the number of XP levels on the third line of the sign |
+| [iXPBuy]      | Buy an item using raw XP points on the third line of the sign |
+| [iXPSell]     | Sell an item using raw XP points on the third line of the sign |
+| [iSlot]       | Gives a random item from the selected chest items with infinite stock |
+| [Day]         | Turns the time to day |
+| [Night]       | Turns the time to night |
+| [Rain]        | Turns on rain + thunder |
+| [ClearSkies]  | Turns off rain + thunder |
+| [Repair]      | Repairs the current item |
+| [Heal]        | Fully heals the player |
+| [Enchant]     | Sells the enchantments from the item in the chest |
+| [Disenchant]  | Removes enchantments from an item |
+| [TpToOwner]   | An example of a custom sign for running commands |
+| [Command]     | Allows players to run commands on the 2nd and 3rd lines of the sign |
+| [UserCommand] | Allows players to run commands on the 2nd and 3rd lines of the sign as if they typed it themselves |
+| [Promote]     | Promotes players to the permission group listed on the 2nd line of the sign |
+
 
 ```http
 If the sign you are looking for isn't here, you can create custom signs in the config. Just add it to the signs: section and give it the appropriate blocks. If you need help, make sure to check out the SignShop Quick Reference found in your plugins/SignShop folder.
@@ -104,85 +108,24 @@ If the sign you are looking for isn't here, you can create custom signs in the c
 
 ## Permissions
 
-| Permission Node        | Description                                        |
-| ----------------------  | -------------------------------------------------- |
-| Signshop.DenyUse.*      | Denies usage of signs.                             |
-
-**Example:**
-- You may wish to deny a group's ability to sell to an infinite shop (i.e. an [iSell] sign), in which case you would give them: `Signshop.DenyUse.iSell`
-
-| Permission Node         | Description                                                     |
-| -----------------------  | --------------------------------------------------------------- |
-| Signshop.DenyLink.*      | Denies the linking of shops to certain in-game blocks (Chest, Sign, Lever, Dispenser, Furnace, Brewingstand, Enchantmenttable, Slab). |
-
-**Example:**
-- You may wish to deny a group's ability to link their shops to a furnace to prevent automatic smelting, in which case you would give them: `Signshop.DenyLink.Furnace`
-
-| Permission Node        | Description                                                          |
-| ----------------------  | -------------------------------------------------------------------- |
-| Signshop.Signs.*        | Allows players to create signs. Example: Use negated nodes to disallow specific sign types. |
-
-**Example:**
-- You might want to disallow a group from creating signs to modify redstone levers, you can remove that ability by negating them with the following permission nodes (assuming your permission plugin allows negating permissions):
-  - `-Signshop.Signs.Device`
-  - `-Signshop.Signs.DeviceOn`
-  - `-Signshop.Signs.DeviceOff`
-  - `-Signshop.Signs.Toggle`
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.CopyPaste        | Allows players to click on signs with black dye to copy information onto an already active SignShop. |
-
-**Example:**
-- If you want to update the price of an item, create a new sign and put the new price on the bottom line, leave the other 3 lines blank, and click with black dye. You can modify the description, the price, and the type of sign this way. Blank lines are ignored. You cannot, however, change a Device sign to a Buy sign, as the operations are incompatible with one another. You can also allow moderators and admins to edit other player's signs with `Signshop.CopyPaste.Others`
-
-| Permission Node        | Description                                                        |
-| ----------------------  | ------------------------------------------------------------------ |
-| Signshop.Permit        | If the "AllowPermits" setting in the global options is set to true, players must have this node in order for their shops to work. Example: You can use SignShop and a permission plugin to sell permits allowing users to be merchants. Without a permit, the shop will be disabled and they will need to buy another in order for their shops to continue functioning. You can also do Signshop.Permit.Stone to only allow shops containing the material “Stone”. Material names can be found at http:jd.bukkit.org/rb/apidocs/org/bukkit/Material.html (Make sure to replace any spaces with an underscore, i.e. “BAKED POTATO” becomes “BAKED_POTATO”) |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.ChangeOwner     | This permission allows a player to click on another player with redstone to change the owner of a SignShop. Example: If you would like to set up a player account as a bank, or transfer a store to another player, you would punch them with redstone, then punch the sign you would like to modify. If you do not own the sign that is being modified, you will also need the permission Signshop.ChangeOwner.Others to do so. |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.Destroy.Others  | This permission allows a player to destroy shops that they do not own. Example: Give this permission to moderators or helpers that you want to be able to clean up abandoned shops but you don't want them to be able to do other SignShop admin duties. |
-
-| Permission Node        | Description                                                        |
-| ----------------------  | ------------------------------------------------------------------ |
-| Signshop.IgnoreMax     | This permission bypasses any defined maximum shop settings in the config. Example: You can make it so normal players can only create something like 10 signs, while donators can create infinite, by giving them Signshop.IgnoreMax |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.IgnoreRepair   | This permission bypasses AllowEnchantedRepair setting in the config. Example: You can make it so "Blacksmiths" can repair enchanted items with Signshop.IgnoreRepair |
-
-| Permission Node        | Description                                                        |
-| ----------------------  | ------------------------------------------------------------------ |
-| Signshop.Inspect.Own   | Allows you to inspect your own shops by hitting the sign with the inspection material. (Book and Quill by default) |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.Inspect.Others | Allows you to inspect other player's shops by hitting the sign with the inspection material. (Book and Quill by default) |
-
-| Permission Node        | Description                                                        |
-| ----------------------  | ------------------------------------------------------------------ |
-| Signshop.Dye.Own       | Allows you to use dyes and glow on your shop signs. |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.Dye.Others     | Allows you to use dyes and glow on shops that you do not own. |
-
-| Permission Node        | Description                                                        |
-| ----------------------  | ------------------------------------------------------------------ |
-| Signshop.BypassShopPlots.* | This permission bypasses EnableShopPlotSupport setting in the config. Example: You can make it so VIPs are allowed to create shops in regions with the “allow-shop” flag set to “deny” in Worldguard using Signshop.BypassShopPlots.Worldguard. Supported plugins: Worldguard's “allow-shop” flag, Towny's shop plots |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.Admin.*         | This permission allows players to create administrative signs (such as shops with infinite items for global shops). Example: You can use this permission to grant the ability to make signs with the playerIsOp tag (defined in the config). Signshop.Admin.Heal allows a player to create a healing station. |
-
-| Permission Node          | Description                                                        |
-| ------------------------  | ------------------------------------------------------------------ |
-| Signshop.SuperAdmin      | This permission makes it so players are seen by SignShop as OPs. Example: You can use this permission to grant the ability to bypass the blacklist, break other users' shops, use /signshop reload, etc. |
+| Permission                    | Description                                                                                                                            |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Signshop.DenyUse.*             | Denies usage of signs. Example: You may wish to deny a group's ability to sell to an infinite shop (i.e., an [iSell] sign), in which case you would give them: Signshop.DenyUse.iSell                |
+| Signshop.DenyLink.*            | Denies the linking of shops to certain in-game blocks (Chest, Sign, Lever, Dispenser, Furnace, Brewingstand, Enchantmenttable, Slab). Example: You may wish to deny a group's ability to link their shops to a furnace to prevent automatic smelting, in which case you would give them: Signshop.DenyLink.Furnace          |
+| Signshop.Signs.*               | Allows players to create signs. Example: You might want to disallow a group from creating signs to modify redstone levers, you can remove that ability by negating them with the following permission nodes (assuming your permission plugin allows negating permissions): -Signshop.Signs.Device -Signshop.Signs.DeviceOn -Signshop.Signs.DeviceOff -Signshop.Signs.Toggle        |
+| Signshop.CopyPaste             | Allows players to click on signs with black dye to copy information onto an already active SignShop. Example: If you want to update the price of an item, create a new sign and put the new price on the bottom line, leave the other 3 lines blank, and click with black dye. You can modify the description, the price, and the type of sign this way. Blank lines are ignored. You cannot, however, change a Device sign to a Buy sign, as the operations are incompatible with one another. You can also allow moderators and admins to edit other player's signs with Signshop.CopyPaste.Others  |
+| Signshop.Permit                | If the "AllowPermits" setting in the global options is set to true, players must have this node in order for their shops to work. Example: You can use SignShop and a permission plugin to sell permits allowing users to be merchants. Without a permit, the shop will be disabled and they will need to buy another in order for their shops to continue functioning. You can also do Signshop.Permit.Stone to only allow shops containing the material “Stone”. Material names can be found at http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html (Make sure to replace any spaces with an underscore, i.e. “BAKED POTATO” becomes “BAKED_POTATO”)               |
+| Signshop.ChangeOwner           | Allows a player to click on another player with redstone to change the owner of a SignShop. Example: If you would like to set up a player account as a bank, or transfer a store to another player, you would punch them with redstone, then punch the sign you would like to modify. If you do not own the sign that is being modified, you will also need the permission Signshop.ChangeOwner.Others to do so.    |
+| Signshop.Destroy.Others        | Allows a player to destroy shops that they do not own. Example: Give this permission to moderators or helpers that you want to be able to clean up abandoned shops but you don't want them to be able to do other SignShop admin duties.     |
+| Signshop.IgnoreMax             | Bypasses any defined maximum shop settings in the config. Example: You can make it so normal players can only create something like 10 signs, while donators can create infinite, by giving them Signshop.IgnoreMax           |
+| Signshop.IgnoreRepair          | Bypasses AllowEnchantedRepair setting in the config. Example: You can make it so "Blacksmiths" can repair enchanted items with Signshop.IgnoreRepair          |
+| Signshop.Inspect.Own           | Allows you to inspect your own shops by hitting the sign with the inspection material. (Book and Quill by default)                           |
+| Signshop.Inspect.Others        | Allows you to inspect other player's shops by hitting the sign with the inspection material. (Book and Quill by default)                     |
+| Signshop.Dye.Own               | Allows you to use dyes and glow on your shop signs.                                                                                        |
+| Signshop.Dye.Others            | Allows you to use dyes and glow on shops that you do not own.                                                                            |
+| Signshop.BypassShopPlots.*     | Bypasses EnableShopPlotSupport setting in the config. Example: You can make it so VIPs are allowed to create shops in regions with the “allow-shop” flag set to “deny” in Worldguard using Signshop.BypassShopPlots.Worldguard          |
+| Signshop.Admin.*               | Allows players to create administrative signs (such as shops with infinite items for global shops). Example: You can use this permission to grant the ability to make signs with the playerIsOp tag (defined in the config). Signshop.Admin.Heal allows a player to create a healing station.        |
+| Signshop.SuperAdmin            | Makes players seen by SignShop as OPs. Example: You can use this permission to grant the ability to bypass the blacklist, break other users' shops, use /signshop reload, etc.       |
 
 
 ## FAQ
