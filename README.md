@@ -10,6 +10,7 @@ SignShop allows you to set up physical shops by punching a chest with your items
 
  - [Discord - Community server](https://discord.gg/4wnyysf)
  - [Plugin Page - Bukkit Dev](https://dev.bukkit.org/projects/signshop)
+ - [Spigot Page](https://www.spigotmc.org/resources/signshop.10997/)
  - [Config file - Configuration manual](https://github.com/wargamer/SignShop/blob/master/src/main/resources/config.yml)
 
 
