@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "сәрүәр төймәһе"
+  ACACIA_DOOR: "сәрүәр ишеге"
+  ACACIA_FENCE: "сәрүәр ҡоймаһы"
+  ACACIA_FENCE_GATE: "сәрүәр ҡапҡаһы"
+  ACACIA_HANGING_SIGN: "сәрүәр алтаҡта"
+  ACACIA_LEAVES: "сәрүәр япраҡтары"
+  ACACIA_LOG: "сәрүәр бүрәнәһе"
+  ACACIA_PLANKS: "сәрүәр таҡталары"
+  ACACIA_PRESSURE_PLATE: "сәрүәр ҡыҫым плитаһы"
+  ACACIA_SAPLING: "сәрүәр үҫентеһе"
+  ACACIA_SIGN: "сәрүәр яҙмаҡсалығы"
+  ACACIA_SLAB: "сәрүәр плитаһы"
+  ACACIA_STAIRS: "сәрүәр баҫҡыстары"
+  ACACIA_TRAPDOOR: "сәрүәр люгы"
+  ACACIA_WALL_HANGING_SIGN: "сәрүәр диуар алтаҡтаһы"
+  ACACIA_WALL_SIGN: "сәрүәр диуар билдәһе"
+  ACACIA_WOOD: "сәрүәр"
+  ACTIVATOR_RAIL: "әүҙемләткес тимер юл"
+  AIR: "һауа"
+  ALLIUM: "йыллау һуған"
+  AMETHYST_BLOCK: "аметист блогы"
+  AMETHYST_CLUSTER: "аметист бәйләме"
+  ANCIENT_DEBRIS: "боронғо вайранлыҡтар"
+  ANDESITE: "андезит"
+  ANDESITE_SLAB: "андезит плитаһы"
+  ANDESITE_STAIRS: "андезит баҫҡыстары"
+  ANDESITE_WALL: "андезит ҡоймаһы"
+  ANVIL: "һандал"
+  ATTACHED_MELON_STEM: "беркетелгән ҡарбуз һабағы"
+  ATTACHED_PUMPKIN_STEM: "беркетелгән ҡабаҡ һабағы"
+  AZALEA: "азалия"
+  AZALEA_LEAVES: "азалия япраҡтары"
+  AZURE_BLUET: "зәңгәр күк сәскә"
+  BAMBOO: "бамбук"
+  BAMBOO_BLOCK: "бамбук блоғы"
+  BAMBOO_BUTTON: "бамбук төймәһе"
+  BAMBOO_DOOR: "бамбук ишеге"
+  BAMBOO_FENCE: "бамбук ҡоймаһы"
+  BAMBOO_FENCE_GATE: "бамбук ҡапҡаһы"
+  BAMBOO_HANGING_SIGN: "бамбук алтаҡта"
+  BAMBOO_MOSAIC: "бамбук мозаика"
+  BAMBOO_MOSAIC_SLAB: "бамбук мозаика плитаһы"
+  BAMBOO_MOSAIC_STAIRS: "бамбук мозаика баҫҡыстары"
+  BAMBOO_PLANKS: "бамбук таҡталары"
+  BAMBOO_PRESSURE_PLATE: "бамбук ҡыҫым плитаһы"
+  BAMBOO_SAPLING: "бамбук үҫентеһе"
+  BAMBOO_SIGN: "бамбук яҙмаҡсалығы"
+  BAMBOO_SLAB: "бамбук плитаһы"
+  BAMBOO_STAIRS: "бамбук баҫҡыстары"
+  BAMBOO_TRAPDOOR: "бамбук люк"
+  BAMBOO_WALL_HANGING_SIGN: "бамбук диуар алтаҡтаһы"
+  BAMBOO_WALL_SIGN: "бамбук диуар билдәһе"
+  BANNER_BASE_BLACK: "тулыһынса ҡара"
+  BANNER_BASE_BLUE: "тулыһынса күк"
+  BANNER_BASE_BROWN: "тулыһынса көрән"
+  BANNER_BASE_CYAN: "тулыһынса фирүзә"
+  BANNER_BASE_GRAY: "тулыһынса һоро"
+  BANNER_BASE_GREEN: "тулыһынса йәшел"
+  BANNER_BASE_LIGHT_BLUE: "тулыһынса зәңгәр"
+  BANNER_BASE_LIGHT_GRAY: "тулыһынса аҡһыл һоро"
+  BANNER_BASE_LIME: "тулыһынса йәшкелт"
+  BANNER_BASE_MAGENTA: "тулыһынса ҡуйы ҡыҙыл"
+  BANNER_BASE_ORANGE: "тулыһынса ҡыҙғылт һары"
+  BANNER_BASE_PINK: "тулыһынса алһыу"
+  BANNER_BASE_PURPLE: "тулыһынса шәмәхә"
+  BANNER_BASE_RED: "тулыһынса ҡыҙыл"
+  BANNER_BASE_WHITE: "тулыһынса аҡ"
+  BANNER_BASE_YELLOW: "тулыһынса һары"
+  BANNER_BORDER_BLACK: "ҡара ҡайма"
+  BANNER_BORDER_BLUE: "күк ҡайма"
+  BANNER_BORDER_BROWN: "кәрән ҡайма"
+  BANNER_BORDER_CYAN: "фирүзә ҡайма"
+  BANNER_BORDER_GRAY: "һоро ҡайма"
+  BANNER_BORDER_GREEN: "йәшел ҡайма"
+  BANNER_BORDER_LIGHT_BLUE: "зәңгәр ҡайма"
+  BANNER_BORDER_LIGHT_GRAY: "аҡһыл һоро ҡайма"
+  BANNER_BORDER_LIME: "йәшкелт ҡайма"
+  BANNER_BORDER_MAGENTA: "ҡуйы ҡыҙыл ҡайма"
+  BANNER_BORDER_ORANGE: "хәнәүәт ҡайма"
+  BANNER_BORDER_PINK: "алһыу ҡайма"
+  BANNER_BORDER_PURPLE: "шәмәхә ҡайма"
+  BANNER_BORDER_RED: "ҡыҙыл ҡайма"
+  BANNER_BORDER_WHITE: "аҡ ҡайма"
+  BANNER_BORDER_YELLOW: "һары ҡайма"
+  BANNER_BRICKS_BLACK: "ҡара кирбес"
+  BANNER_BRICKS_BLUE: "күк кирбес"
+  BANNER_BRICKS_BROWN: "көрән кирбес"
+  BANNER_BRICKS_CYAN: "фирүзә кирбес"
+  BANNER_BRICKS_GRAY: "һоро кирбес"
+  BANNER_BRICKS_GREEN: "йәшел кирбес"
+  BANNER_BRICKS_LIGHT_BLUE: "зәңгәр кирбес"
+  BANNER_BRICKS_LIGHT_GRAY: "аҡһыл һоро кирбес"
+  BANNER_BRICKS_LIME: "йәшкелт кирбес"
+  BANNER_BRICKS_MAGENTA: "ҡуйы ҡыҙыл кирбес"
+  BANNER_BRICKS_ORANGE: "хәнәүәт кирбес"
+  BANNER_BRICKS_PINK: "алһыу кирбес"
+  BANNER_BRICKS_PURPLE: "шәмәхә кирбес"
+  BANNER_BRICKS_RED: "ҡыҙыл кирбес"
+  BANNER_BRICKS_WHITE: "аҡ кирбес"
+  BANNER_BRICKS_YELLOW: "һары кирбес"
+  BANNER_CIRCLE_BLACK: "ҡара даирә"
+  BANNER_CIRCLE_BLUE: "күк даирә"
+  BANNER_CIRCLE_BROWN: "көрән даирә"
+  BANNER_CIRCLE_CYAN: "фирүзә даирә"
+  BANNER_CIRCLE_GRAY: "һоро даирә"
+  BANNER_CIRCLE_GREEN: "йәшел даирә"
+  BANNER_CIRCLE_LIGHT_BLUE: "зәңгәр даирә"
+  BANNER_CIRCLE_LIGHT_GRAY: "аҡһыл һоро даирә"
+  BANNER_CIRCLE_LIME: "йәшкелт даирә"
+  BANNER_CIRCLE_MAGENTA: "ҡуйы ҡыҙыл даирә"
+  BANNER_CIRCLE_ORANGE: "хәнәүәт даирә"
+  BANNER_CIRCLE_PINK: "алһыу даирә"
+  BANNER_CIRCLE_PURPLE: "шәмәхә даирә"
+  BANNER_CIRCLE_RED: "ҡыҙыл даирә"
+  BANNER_CIRCLE_WHITE: "аҡ даирә"
+  BANNER_CIRCLE_YELLOW: "һары даирә"
+  BANNER_CREEPER_BLACK: "ҡара крипер"
+  BANNER_CREEPER_BLUE: "күк крипер"
+  BANNER_CREEPER_BROWN: "көрән крипер"
+  BANNER_CREEPER_CYAN: "фирүзә крипер"
+  BANNER_CREEPER_GRAY: "һоро крипер"
+  BANNER_CREEPER_GREEN: "йәшел крипер"
+  BANNER_CREEPER_LIGHT_BLUE: "зәңгәр крипер"
+  BANNER_CREEPER_LIGHT_GRAY: "аҡһыл һоро крипер"
+  BANNER_CREEPER_LIME: "йәшкелт крипер"
+  BANNER_CREEPER_MAGENTA: "ҡуйы ҡыҙыл крипер"
+  BANNER_CREEPER_ORANGE: "хәнәүәт крипер"
+  BANNER_CREEPER_PINK: "алһыу крипер"
+  BANNER_CREEPER_PURPLE: "шәмәхә крипер"
+  BANNER_CREEPER_RED: "ҡыҙыл крипер"
+  BANNER_CREEPER_WHITE: "аҡ крипер"
+  BANNER_CREEPER_YELLOW: "һары крипер"
+  BANNER_CROSS_BLACK: "ҡара ҡыйыш тәре"
+  BANNER_CROSS_BLUE: "күк ҡыйыш тәре"
+  BANNER_CROSS_BROWN: "көрән ҡыйыш тәре"
+  BANNER_CROSS_CYAN: "фирүзә ҡыйыш тәре"
+  BANNER_CROSS_GRAY: "һоро ҡыйыш тәре"
+  BANNER_CROSS_GREEN: "йәшел ҡыйыш тәре"
+  BANNER_CROSS_LIGHT_BLUE: "зәңгәр ҡыйыш тәре"
+  BANNER_CROSS_LIGHT_GRAY: "аҡһыл һоро ҡыйыш тәре"
+  BANNER_CROSS_LIME: "йәшкелт ҡыйыш тәре"
+  BANNER_CROSS_MAGENTA: "ҡуйы ҡыҙыл ҡыйыш тәре"
+  BANNER_CROSS_ORANGE: "хәнәүәт ҡыйыш тәре"
+  BANNER_CROSS_PINK: "алһыу ҡыйыш тәре"
+  BANNER_CROSS_PURPLE: "шәмәхә ҡыйыш тәре"
+  BANNER_CROSS_RED: "ҡыҙыл ҡыйыш тәре"
+  BANNER_CROSS_WHITE: "аҡ ҡыйыш тәре"
+  BANNER_CROSS_YELLOW: "һары ҡыйыш тәре"
+  BANNER_CURLY_BORDER_BLACK: "ҡара тешле ҡайма"
+  BANNER_CURLY_BORDER_BLUE: "күк тешле ҡайма"
+  BANNER_CURLY_BORDER_BROWN: "көрән тешле ҡайма"
+  BANNER_CURLY_BORDER_CYAN: "фирүзә тешле ҡайма"
+  BANNER_CURLY_BORDER_GRAY: "һоро тешле ҡайма"
+  BANNER_CURLY_BORDER_GREEN: "йәшел тешле ҡайма"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "зәңгәр тешле ҡайма"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "аҡһыл һоро тешле ҡайма"
+  BANNER_CURLY_BORDER_LIME: "йәшкелт тешле ҡайма"
+  BANNER_CURLY_BORDER_MAGENTA: "ҡуйы ҡыҙыл тешле ҡайма"
+  BANNER_CURLY_BORDER_ORANGE: "хәнәүәт тешле ҡайма"
+  BANNER_CURLY_BORDER_PINK: "алһыу тешле ҡайма"
+  BANNER_CURLY_BORDER_PURPLE: "шәмәхә тешле ҡайма"
+  BANNER_CURLY_BORDER_RED: "ҡыҙыл тешле ҡайма"
+  BANNER_CURLY_BORDER_WHITE: "аҡ тешле ҡайма"
+  BANNER_CURLY_BORDER_YELLOW: "һары тешле ҡайма"
+  BANNER_DIAGONAL_LEFT_BLACK: "ҡара өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_BLUE: "күк өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_BROWN: "көрән өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_CYAN: "фирүзә өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_GRAY: "һоро өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_GREEN: "йәшел өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "зәңгәр өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "аҡһыл һоро өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_LIME: "йәшкелт өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "ҡуйы ҡыҙыл өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_ORANGE: "хәнәүәт өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_PINK: "алһыу өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_PURPLE: "шәмәхә өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_RED: "ҡыҙыл өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_WHITE: "аҡ өҫкө һул бөгөл"
+  BANNER_DIAGONAL_LEFT_YELLOW: "һары өҫкө һул бөгөл"
+  BANNER_DIAGONAL_RIGHT_BLACK: "ҡара ҡайыш"
+  BANNER_DIAGONAL_RIGHT_BLUE: "күк ҡайыш"
+  BANNER_DIAGONAL_RIGHT_BROWN: "көрән ҡайыш"
+  BANNER_DIAGONAL_RIGHT_CYAN: "фирүзә ҡайыш"
+  BANNER_DIAGONAL_RIGHT_GRAY: "һоро ҡайыш"
+  BANNER_DIAGONAL_RIGHT_GREEN: "йәшел ҡайыш"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "зәңгәр ҡайыш"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "аҡһыл һоро ҡайыш"
+  BANNER_DIAGONAL_RIGHT_LIME: "йәшкелт ҡайыш"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "ҡуйы ҡыҙыл ҡайыш"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "хәнәүәт ҡайыш"
+  BANNER_DIAGONAL_RIGHT_PINK: "алһыу ҡайыш"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "шәмәхә ҡайыш"
+  BANNER_DIAGONAL_RIGHT_RED: "ҡыҙыл ҡайыш"
+  BANNER_DIAGONAL_RIGHT_WHITE: "аҡ ҡайыш"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "һары ҡайыш"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "ҡара аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "күк аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "көрән аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "фирүзә аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "һоро аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "йәшел аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "зәңгәр аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "аҡһыл һоро аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "йәшкелт аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "ҡуйы ҡыҙыл аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "хәнәүәт аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "алһыу аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "шәмәхә аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_RED: "ҡыҙыл аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "аҡ аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "һары аҫҡы һул бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "ҡара аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "күк аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "көрән аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "фирүзә аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "һоро аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "йәшел аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "зәңгәр аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "аҡһыл һоро аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "йәшкелт аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "ҡуйы ҡыҙыл аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "хәнәүәт аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "алһыу аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "шәмәхә аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "ҡыҙыл аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "аҡ аҫҡы уң бөгөл"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "һары аҫҡы уң бөгөл"
+  BANNER_FLOWER_BLACK: "ҡара сәскә"
+  BANNER_FLOWER_BLUE: "күк сәскә"
+  BANNER_FLOWER_BROWN: "көрән сәскә"
+  BANNER_FLOWER_CYAN: "фирүзә сәскә"
+  BANNER_FLOWER_GRAY: "һоро сәскә"
+  BANNER_FLOWER_GREEN: "йәшел сәскә"
+  BANNER_FLOWER_LIGHT_BLUE: "зәңгәр сәскә"
+  BANNER_FLOWER_LIGHT_GRAY: "аҡ һоро сәскә"
+  BANNER_FLOWER_LIME: "йәшкелт сәскә"
+  BANNER_FLOWER_MAGENTA: "ҡуйы ҡыҙыл сәскә"
+  BANNER_FLOWER_ORANGE: "хәнәүәт сәскә"
+  BANNER_FLOWER_PINK: "алһыу сәскә"
+  BANNER_FLOWER_PURPLE: "шәмәхә сәскә"
+  BANNER_FLOWER_RED: "ҡыҙыл сәскә"
+  BANNER_FLOWER_WHITE: "аҡ сәскә"
+  BANNER_FLOWER_YELLOW: "һары сәскә"
+  BANNER_GLOBE_BLACK: "ҡара глобус"
+  BANNER_GLOBE_BLUE: "күк глобус"
+  BANNER_GLOBE_BROWN: "көрән глобус"
+  BANNER_GLOBE_CYAN: "фирүзә глобус"
+  BANNER_GLOBE_GRAY: "һоро глобус"
+  BANNER_GLOBE_GREEN: "йәшел глобус"
+  BANNER_GLOBE_LIGHT_BLUE: "зәңгәр глобус"
+  BANNER_GLOBE_LIGHT_GRAY: "аҡһыл һоро глобус"
+  BANNER_GLOBE_LIME: "йәшкелт глобус"
+  BANNER_GLOBE_MAGENTA: "ҡуйы ҡыҙыл глобус"
+  BANNER_GLOBE_ORANGE: "хәнәүәт глобус"
+  BANNER_GLOBE_PINK: "алһыу глобус"
+  BANNER_GLOBE_PURPLE: "шәмәхә глобус"
+  BANNER_GLOBE_RED: "ҡыҙыл глобус"
+  BANNER_GLOBE_WHITE: "аҡ глобус"
+  BANNER_GLOBE_YELLOW: "һары глобус"
+  BANNER_GRADIENT_BLACK: "ҡара градиент"
+  BANNER_GRADIENT_BLUE: "күк градиент"
+  BANNER_GRADIENT_BROWN: "көрән градиент"
+  BANNER_GRADIENT_CYAN: "фирүзә градиент"
+  BANNER_GRADIENT_GRAY: "һоро градиент"
+  BANNER_GRADIENT_GREEN: "йәшел градиент"
+  BANNER_GRADIENT_LIGHT_BLUE: "зәңгәр градиент"
+  BANNER_GRADIENT_LIGHT_GRAY: "аҡһыл һоро градиент"
+  BANNER_GRADIENT_LIME: "йәшкелт градиент"
+  BANNER_GRADIENT_MAGENTA: "ҡуйы ҡыҙыл градиент"
+  BANNER_GRADIENT_ORANGE: "хәнәүәт градиент"
+  BANNER_GRADIENT_PINK: "алһыу градиент"
+  BANNER_GRADIENT_PURPLE: "шәмәхә градиент"
+  BANNER_GRADIENT_RED: "ҡыҙыл градиент"
+  BANNER_GRADIENT_WHITE: "аҡ градиент"
+  BANNER_GRADIENT_YELLOW: "һары градиент"
+  BANNER_GRADIENT_UP_BLACK: "ҡара аҫҡы градиент"
+  BANNER_GRADIENT_UP_BLUE: "күк аҫҡы градиент"
+  BANNER_GRADIENT_UP_BROWN: "көрән аҫҡы градиент"
+  BANNER_GRADIENT_UP_CYAN: "фирүзә аҫҡы градиент"
+  BANNER_GRADIENT_UP_GRAY: "һоро аҫҡы градиент"
+  BANNER_GRADIENT_UP_GREEN: "йәшел аҫҡы градиент"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "зәңгәр аҫҡы градиент"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "аҡһыл һоро аҫҡы градиент"
+  BANNER_GRADIENT_UP_LIME: "йәшкелт аҫҡы градиент"
+  BANNER_GRADIENT_UP_MAGENTA: "ҡуйы ҡыҙыл аҫҡы градиент"
+  BANNER_GRADIENT_UP_ORANGE: "хәнәүәт аҫҡы градиент"
+  BANNER_GRADIENT_UP_PINK: "алһыу аҫҡы градиент"
+  BANNER_GRADIENT_UP_PURPLE: "шәмәхә аҫҡы градиент"
+  BANNER_GRADIENT_UP_RED: "ҡыҙыл аҫҡы градиент"
+  BANNER_GRADIENT_UP_WHITE: "аҡ аҫҡы градиент"
+  BANNER_GRADIENT_UP_YELLOW: "һары аҫҡы градиент"
+  BANNER_HALF_HORIZONTAL_BLACK: "ҡара өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_BLUE: "күк өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_BROWN: "көрән өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_CYAN: "фирүзә өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_GRAY: "һоро өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_GREEN: "йәшел өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "зәңгәр өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "аҡһыл һоро өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_LIME: "йәшкелт өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "ҡуйы ҡыҙыл өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_ORANGE: "хәнәүәт өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_PINK: "алһыу өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_PURPLE: "шәмәхә өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_RED: "ҡыҙыл өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_WHITE: "аҡ өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_YELLOW: "һары өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "ҡара аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "күк аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "көрән аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "фирүзә аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "һоро аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "йәшел аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "зәңгәр аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "аҡһыл һоро аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "йәшкелт аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "ҡуйы ҡыҙыл аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "хәнәүәт аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "алһыу аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "шәмәхә өҫкө яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "ҡыҙыл аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "аҡ аҫҡы яҡ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "һары аҫҡы яҡ"
+  BANNER_HALF_VERTICAL_BLACK: "ҡара һул яҡ"
+  BANNER_HALF_VERTICAL_BLUE: "күк һул яҡ"
+  BANNER_HALF_VERTICAL_BROWN: "көрән һул яҡ"
+  BANNER_HALF_VERTICAL_CYAN: "фирүзә һул яҡ"
+  BANNER_HALF_VERTICAL_GRAY: "һоро һул яҡ"
+  BANNER_HALF_VERTICAL_GREEN: "йәшел һул яҡ"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "зәңгәр һул яҡ"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "аҡ һоро һул яҡ"
+  BANNER_HALF_VERTICAL_LIME: "йәшкелт һул яҡ"
+  BANNER_HALF_VERTICAL_MAGENTA: "ҡуйы ҡыҙыл һул яҡ"
+  BANNER_HALF_VERTICAL_ORANGE: "хәнәүәт һул яҡ"
+  BANNER_HALF_VERTICAL_PINK: "алһыу һул яҡ"
+  BANNER_HALF_VERTICAL_PURPLE: "шәмәхә һул яҡ"
+  BANNER_HALF_VERTICAL_RED: "ҡыҙыл һул яҡ"
+  BANNER_HALF_VERTICAL_WHITE: "аҡ һул яҡ"
+  BANNER_HALF_VERTICAL_YELLOW: "һары һул яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "ҡара уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "күк уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "көрән уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "фирүзә уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "һоро уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "йәшел уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "зәңгәр уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "аҡһыл һоро уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "йәшкелт уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "ҡуйы ҡыҙыл уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "хәнәүәт уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "алһыу уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "шәмәхә уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "ҡыҙыл уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "аҡ уң яҡ"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "һары уң яҡ"
+  BANNER_MOJANG_BLACK: "ҡара бер нәмә"
+  BANNER_MOJANG_BLUE: "күк бер нәмә"
+  BANNER_MOJANG_BROWN: "көрән бер нәмә"
+  BANNER_MOJANG_CYAN: "фирүзә бер нәмә"
+  BANNER_MOJANG_GRAY: "һоро бер нәмә"
+  BANNER_MOJANG_GREEN: "йәшел бер нәмә"
+  BANNER_MOJANG_LIGHT_BLUE: "зәңгәр бер нәмә"
+  BANNER_MOJANG_LIGHT_GRAY: "аҡһыл һоро бер нәмә"
+  BANNER_MOJANG_LIME: "йәшкелт бер нәмә"
+  BANNER_MOJANG_MAGENTA: "ҡуйы ҡыҙыл бер нәмә"
+  BANNER_MOJANG_ORANGE: "хәнәүәт бер нәмә"
+  BANNER_MOJANG_PINK: "алһыу бер нәмә"
+  BANNER_MOJANG_PURPLE: "шәмәхә бер нәмә"
+  BANNER_MOJANG_RED: "ҡыҙыл бер нәмә"
+  BANNER_MOJANG_WHITE: "аҡ бер нәмә"
+  BANNER_MOJANG_YELLOW: "һары бер нәмә"
+  BANNER_PIGLIN_BLACK: "ҡара томшоҡ"
+  BANNER_PIGLIN_BLUE: "күк томшоҡ"
+  BANNER_PIGLIN_BROWN: "көрән томшоҡ"
+  BANNER_PIGLIN_CYAN: "фирүзә томшоҡ"
+  BANNER_PIGLIN_GRAY: "һоро томшоҡ"
+  BANNER_PIGLIN_GREEN: "йәшел томшоҡ"
+  BANNER_PIGLIN_LIGHT_BLUE: "зәңгәр томшоҡ"
+  BANNER_PIGLIN_LIGHT_GRAY: "аҡһыл һоро томшоҡ"
+  BANNER_PIGLIN_LIME: "лайм төҫлө томшоҡ"
+  BANNER_PIGLIN_MAGENTA: "ҡуйы ҡыҙыл томшоҡ"
+  BANNER_PIGLIN_ORANGE: "хәнәүәт томшоҡ"
+  BANNER_PIGLIN_PINK: "ал томшоҡ"
+  BANNER_PIGLIN_PURPLE: "шәмәхә томшоҡ"
+  BANNER_PIGLIN_RED: "ҡыҙыл томшоҡ"
+  BANNER_PIGLIN_WHITE: "аҡ томшоҡ"
+  BANNER_PIGLIN_YELLOW: "һары томшоҡ"
+  BANNER_RHOMBUS_BLACK: "ҡара ромб"
+  BANNER_RHOMBUS_BLUE: "күк ромб"
+  BANNER_RHOMBUS_BROWN: "көрән ромб"
+  BANNER_RHOMBUS_CYAN: "фирүзә ромб"
+  BANNER_RHOMBUS_GRAY: "һоро ромб"
+  BANNER_RHOMBUS_GREEN: "йәшел ромб"
+  BANNER_RHOMBUS_LIGHT_BLUE: "зәңгәр ромб"
+  BANNER_RHOMBUS_LIGHT_GRAY: "аҡһыл һоро ромб"
+  BANNER_RHOMBUS_LIME: "йәшкелт ромб"
+  BANNER_RHOMBUS_MAGENTA: "ҡуйы ҡыҙыл ромб"
+  BANNER_RHOMBUS_ORANGE: "хәнәүәт ромб"
+  BANNER_RHOMBUS_PINK: "алһыу ромб"
+  BANNER_RHOMBUS_PURPLE: "шәмәхә ромб"
+  BANNER_RHOMBUS_RED: "ҡыҙыл ромб"
+  BANNER_RHOMBUS_WHITE: "аҡ ромб"
+  BANNER_RHOMBUS_YELLOW: "һары ромб"
+  BANNER_SKULL_BLACK: "ҡара баш һөйәге"
+  BANNER_SKULL_BLUE: "күк баш һөйәге"
+  BANNER_SKULL_BROWN: "көрән баш һөйәге"
+  BANNER_SKULL_CYAN: "фирүзә баш һөйәге"
+  BANNER_SKULL_GRAY: "һоро баш һөйәге"
+  BANNER_SKULL_GREEN: "йәшел баш һөйәге"
+  BANNER_SKULL_LIGHT_BLUE: "зәңгәр баш һөйәге"
+  BANNER_SKULL_LIGHT_GRAY: "аҡһыл һоро баш һөйәге"
+  BANNER_SKULL_LIME: "йәшкелт баш һөйәге"
+  BANNER_SKULL_MAGENTA: "ҡуйы ҡыҙыл баш һөйәге"
+  BANNER_SKULL_ORANGE: "хәнәүәт баш һөйәге"
+  BANNER_SKULL_PINK: "алһыу баш һөйәге"
+  BANNER_SKULL_PURPLE: "шәмәхә баш һөйәге"
+  BANNER_SKULL_RED: "ҡыҙыл баш һөйәге"
+  BANNER_SKULL_WHITE: "аҡ баш һөйәге"
+  BANNER_SKULL_YELLOW: "һары баш һөйәге"
+  BANNER_SMALL_STRIPES_BLACK: "ҡара бағаналар"
+  BANNER_SMALL_STRIPES_BLUE: "күк бағаналар"
+  BANNER_SMALL_STRIPES_BROWN: "көрән бағаналар"
+  BANNER_SMALL_STRIPES_CYAN: "фирүзә бағаналар"
+  BANNER_SMALL_STRIPES_GRAY: "һоро бағаналар"
+  BANNER_SMALL_STRIPES_GREEN: "йәшел бағаналар"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "зәңгәр бағаналар"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "аҡһыл һоро бағаналар"
+  BANNER_SMALL_STRIPES_LIME: "йәшкелт бағаналар"
+  BANNER_SMALL_STRIPES_MAGENTA: "ҡуйы ҡыҙыл бағаналар"
+  BANNER_SMALL_STRIPES_ORANGE: "хәнәүәт бағаналар"
+  BANNER_SMALL_STRIPES_PINK: "алһыу бағаналар"
+  BANNER_SMALL_STRIPES_PURPLE: "шәмәхә бағаналар"
+  BANNER_SMALL_STRIPES_RED: "ҡыҙыл бағаналар"
+  BANNER_SMALL_STRIPES_WHITE: "аҡ бағаналар"
+  BANNER_SMALL_STRIPES_YELLOW: "һары бағаналар"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "ҡара аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "күк аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "көрән аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "фирүзә аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "һоро аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "йәшел аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "зәңгәр аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "аҡһыл һоро аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "йәшкелт аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "ҡуйы ҡыҙыл аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "хәнәүәт аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "алһыу аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "шәмәхә аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "ҡыҙыл аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "аҡ аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "һары аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "ҡара аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "күк аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "көрән аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "фирүзә аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "һоро аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "йәшел аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "зәңгәр аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "аҡһыл һоро аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "йәшкелт аҫҡы уң майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "ҡуйы ҡыҙыл аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "хәнәүәт аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "алһыу аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "шәмәхә аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "ҡыҙыл аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "аҡ аҫҡы һул майҙан"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "һары аҫҡы һул майҙан"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "ҡара өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "күк өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "көрән өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "фирүзә өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "һоро өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "йәшел өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "зәңгәр өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "аҡһыл һоро өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_LIME: "йәшкелт өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "ҡуйы ҡыҙыл өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "хәнәүәт өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_PINK: "алһыу өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "шәмәхә өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_RED: "ҡыҙыл өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "аҡ өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "һары өҫкө уң майҙан"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "ҡара өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "күк өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "көрән өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "фирүзә өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "һоро өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "йәшел өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "зәңгәр өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "аҡһыл һоро өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "йәшкелт өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "ҡуйы ҡыҙыл өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "хәнәүәт өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "алһыу өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "шәмәхә өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_RED: "ҡыҙыл өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "аҡ өҫкө һул майҙан"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "һары өҫкө һул майҙан"
+  BANNER_STRAIGHT_CROSS_BLACK: "ҡара тәре"
+  BANNER_STRAIGHT_CROSS_BLUE: "күк тәре"
+  BANNER_STRAIGHT_CROSS_BROWN: "көрән тәре"
+  BANNER_STRAIGHT_CROSS_CYAN: "фирүзә тәре"
+  BANNER_STRAIGHT_CROSS_GRAY: "һоро тәре"
+  BANNER_STRAIGHT_CROSS_GREEN: "йәшел тәре"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "зәңгәр тәре"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "аҡһыл һоро тәре"
+  BANNER_STRAIGHT_CROSS_LIME: "йәшкелт тәре"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "ҡуйы ҡыҙыл тәре"
+  BANNER_STRAIGHT_CROSS_ORANGE: "хәнәүәт тәре"
+  BANNER_STRAIGHT_CROSS_PINK: "алһыу тәре"
+  BANNER_STRAIGHT_CROSS_PURPLE: "шәмәхә тәре"
+  BANNER_STRAIGHT_CROSS_RED: "ҡыҙыл тәре"
+  BANNER_STRAIGHT_CROSS_WHITE: "аҡ тәре"
+  BANNER_STRAIGHT_CROSS_YELLOW: "һары тәре"
+  BANNER_STRIPE_BOTTOM_BLACK: "ҡара нигеҙ"
+  BANNER_STRIPE_BOTTOM_BLUE: "күк нигеҙ"
+  BANNER_STRIPE_BOTTOM_BROWN: "көрән нигеҙ"
+  BANNER_STRIPE_BOTTOM_CYAN: "фирүзә нигеҙ"
+  BANNER_STRIPE_BOTTOM_GRAY: "һоро нигеҙ"
+  BANNER_STRIPE_BOTTOM_GREEN: "йәшел нигеҙ"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "зәңгәр нигеҙ"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "аҡһыл һоро нигеҙ"
+  BANNER_STRIPE_BOTTOM_LIME: "йәшкелт нигеҙ"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "ҡуйы ҡыҙыл нигеҙ"
+  BANNER_STRIPE_BOTTOM_ORANGE: "хәнәүәт нигеҙ"
+  BANNER_STRIPE_BOTTOM_PINK: "алһыу нигеҙ"
+  BANNER_STRIPE_BOTTOM_PURPLE: "шәмәхә нигеҙ"
+  BANNER_STRIPE_BOTTOM_RED: "ҡыҙыл нигеҙ"
+  BANNER_STRIPE_BOTTOM_WHITE: "аҡ нигеҙ"
+  BANNER_STRIPE_BOTTOM_YELLOW: "һары нигеҙ"
+  BANNER_STRIPE_CENTER_BLACK: "ҡара бағана"
+  BANNER_STRIPE_CENTER_BLUE: "күк бағана"
+  BANNER_STRIPE_CENTER_BROWN: "көрән бағана"
+  BANNER_STRIPE_CENTER_CYAN: "фирүзә бағана"
+  BANNER_STRIPE_CENTER_GRAY: "һоро бағана"
+  BANNER_STRIPE_CENTER_GREEN: "йәшел бағана"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "зәңгәр бағана"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "аҡһыл һоро бағана"
+  BANNER_STRIPE_CENTER_LIME: "йәшкелт бағана"
+  BANNER_STRIPE_CENTER_MAGENTA: "ҡуйы ҡыҙыл бағана"
+  BANNER_STRIPE_CENTER_ORANGE: "хәнәүәт бағана"
+  BANNER_STRIPE_CENTER_PINK: "алһыу бағана"
+  BANNER_STRIPE_CENTER_PURPLE: "шәмәхә бағана"
+  BANNER_STRIPE_CENTER_RED: "ҡыҙыл бағана"
+  BANNER_STRIPE_CENTER_WHITE: "аҡ бағана"
+  BANNER_STRIPE_CENTER_YELLOW: "һары бағана"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "ҡара һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "күк һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "көрән һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "фирүзә һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "һоро һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "йәшел һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "зәңгәр һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "аҡһыл һоро һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_LIME: "йәшкелт һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "ҡуйы ҡыҙыл һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "хәнәүәт һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_PINK: "алһыу һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "шәмәхә һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_RED: "ҡыҙыл һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "аҡ һул ҡайыш"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "һары һул ҡайыш"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "ҡара бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "күк бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "көрән бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "фирүзә бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "һоро бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "йәшел бөгөл"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "зәңгәр бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "аҡһыл һоро бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "йәшкелт ҡайыш"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "ҡуйы ҡыҙыл бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "хәнәүәт бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "алһыу бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "шәмәхә бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_RED: "ҡыҙыл бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "аҡ бөгөлөш"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "һары бөгөлөш"
+  BANNER_STRIPE_LEFT_BLACK: "ҡара уң яҡ бағана"
+  BANNER_STRIPE_LEFT_BLUE: "күк уң яҡ бағана"
+  BANNER_STRIPE_LEFT_BROWN: "көрән уң яҡ бағана"
+  BANNER_STRIPE_LEFT_CYAN: "фирүзә уң яҡ бағана"
+  BANNER_STRIPE_LEFT_GRAY: "һоро уң яҡ бағана"
+  BANNER_STRIPE_LEFT_GREEN: "йәшел уң яҡ бағана"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "зәңгәр уң яҡ бағана"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "аҡһыл һоро уң яҡ бағана"
+  BANNER_STRIPE_LEFT_LIME: "йәшкелт уң яҡ бағана"
+  BANNER_STRIPE_LEFT_MAGENTA: "ҡуйы ҡыҙыл уң яҡ бағана"
+  BANNER_STRIPE_LEFT_ORANGE: "хәнәүәт уң яҡ бағана"
+  BANNER_STRIPE_LEFT_PINK: "алһыу уң яҡ бағана"
+  BANNER_STRIPE_LEFT_PURPLE: "шәмәхә уң яҡ бағана"
+  BANNER_STRIPE_LEFT_RED: "ҡыҙыл уң яҡ бағана"
+  BANNER_STRIPE_LEFT_WHITE: "аҡ уң яҡ бағана"
+  BANNER_STRIPE_LEFT_YELLOW: "һары уң яҡ бағана"
+  BANNER_STRIPE_MIDDLE_BLACK: "ҡара биллек"
+  BANNER_STRIPE_MIDDLE_BLUE: "күк биллек"
+  BANNER_STRIPE_MIDDLE_BROWN: "кәрән биллек"
+  BANNER_STRIPE_MIDDLE_CYAN: "фирүзә биллек"
+  BANNER_STRIPE_MIDDLE_GRAY: "һоро биллек"
+  BANNER_STRIPE_MIDDLE_GREEN: "йәшел биллек"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "зәңгәр биллек"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "аҡһыл һоро биллек"
+  BANNER_STRIPE_MIDDLE_LIME: "йәшкелт биллек"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "ҡуйы ҡыҙыл биллек"
+  BANNER_STRIPE_MIDDLE_ORANGE: "хәнәүәт биллек"
+  BANNER_STRIPE_MIDDLE_PINK: "алһыу биллек"
+  BANNER_STRIPE_MIDDLE_PURPLE: "шәмәхә биллек"
+  BANNER_STRIPE_MIDDLE_RED: "ҡыҙыл биллек"
+  BANNER_STRIPE_MIDDLE_WHITE: "аҡ биллек"
+  BANNER_STRIPE_MIDDLE_YELLOW: "һары биллек"
+  BANNER_STRIPE_RIGHT_BLACK: "ҡара һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_BLUE: "күк һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_BROWN: "көрән һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_CYAN: "фирүзә һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_GRAY: "һоро һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_GREEN: "йәшел һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "зәңгәр һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "аҡһыл һоро һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_LIME: "йәшкелт һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_MAGENTA: "ҡуйы ҡыҙыл һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_ORANGE: "хәнәүәт һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_PINK: "алһыу һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_PURPLE: "шәмәхә һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_RED: "ҡыҙыл һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_WHITE: "аҡ һул яҡ бағана"
+  BANNER_STRIPE_RIGHT_YELLOW: "һары һул яҡ бағана"
+  BANNER_STRIPE_TOP_BLACK: "ҡара өҫ"
+  BANNER_STRIPE_TOP_BLUE: "күк өҫ"
+  BANNER_STRIPE_TOP_BROWN: "көрән өҫ"
+  BANNER_STRIPE_TOP_CYAN: "фирүзә өҫ"
+  BANNER_STRIPE_TOP_GRAY: "һоро өҫ"
+  BANNER_STRIPE_TOP_GREEN: "йәшел өҫ"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "зәңгәр өҫ"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "аҡһыл һоро өҫ"
+  BANNER_STRIPE_TOP_LIME: "йәшкелт өҫ"
+  BANNER_STRIPE_TOP_MAGENTA: "ҡуйы ҡыҙыл өҫ"
+  BANNER_STRIPE_TOP_ORANGE: "хәнәүәт өҫ"
+  BANNER_STRIPE_TOP_PINK: "алһыу өҫ"
+  BANNER_STRIPE_TOP_PURPLE: "шәмәхә өҫ"
+  BANNER_STRIPE_TOP_RED: "ҡыҙыл өҫ"
+  BANNER_STRIPE_TOP_WHITE: "аҡ өҫ"
+  BANNER_STRIPE_TOP_YELLOW: "һары өҫ"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "ҡара шеврон"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "күк шеврон"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "көрән шеврон"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "фирүзә шеврон"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "һоро шеврон"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "йәшел шеврон"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "зәңгәр шеврон"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "аҡһыл һоро шеврон"
+  BANNER_TRIANGLE_BOTTOM_LIME: "йәшкелт шеврон"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "ҡуйы ҡыҙыл шеврон"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "хәнәүәт шеврон"
+  BANNER_TRIANGLE_BOTTOM_PINK: "алһыу шеврон"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "шәмәхә шеврон"
+  BANNER_TRIANGLE_BOTTOM_RED: "ҡыҙыл шеврон"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "аҡ шеврон"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "һары шеврон"
+  BANNER_TRIANGLE_TOP_BLACK: "ҡара кире шеврон"
+  BANNER_TRIANGLE_TOP_BLUE: "күк кире шеврон"
+  BANNER_TRIANGLE_TOP_BROWN: "көрән кире шеврон"
+  BANNER_TRIANGLE_TOP_CYAN: "фирүзә кире шеврон"
+  BANNER_TRIANGLE_TOP_GRAY: "һоро кире шеврон"
+  BANNER_TRIANGLE_TOP_GREEN: "йәшел кире шеврон"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "зәңгәр кире шеврон"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "аҡһыл һоро кире шеврон"
+  BANNER_TRIANGLE_TOP_LIME: "йәшкелт кире шеврон"
+  BANNER_TRIANGLE_TOP_MAGENTA: "ҡуйы ҡыҙыл кире шеврон"
+  BANNER_TRIANGLE_TOP_ORANGE: "хәнәүәт кире шеврон"
+  BANNER_TRIANGLE_TOP_PINK: "алһыу кире шеврон"
+  BANNER_TRIANGLE_TOP_PURPLE: "шәмәхә кире шеврон"
+  BANNER_TRIANGLE_TOP_RED: "ҡыҙыл кире шеврон"
+  BANNER_TRIANGLE_TOP_WHITE: "аҡ кире шеврон"
+  BANNER_TRIANGLE_TOP_YELLOW: "һары кире шеврон"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "ҡара тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "күк тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "көрән тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "фирүзә тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "һоро тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "йәшел тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "зәңгәр тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "аҡһыл һоро тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_LIME: "йәшкелт тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "ҡуйы ҡыҙыл тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "хәнәүәт тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_PINK: "алһыу тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "шәмәхә тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_RED: "ҡыҙыл тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "аҡ тешле нигеҙ"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "һары тешле нигеҙ"
+  BANNER_TRIANGLES_TOP_BLACK: "ҡара тешле өҫ"
+  BANNER_TRIANGLES_TOP_BLUE: "күк тешле өҫ"
+  BANNER_TRIANGLES_TOP_BROWN: "көрән тешле өҫ"
+  BANNER_TRIANGLES_TOP_CYAN: "фирүзә тешле өҫ"
+  BANNER_TRIANGLES_TOP_GRAY: "һоро тешле өҫ"
+  BANNER_TRIANGLES_TOP_GREEN: "йәшел тешле өҫ"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "зәңгәр тешле өҫ"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "аҡһыл һоро тешле өҫ"
+  BANNER_TRIANGLES_TOP_LIME: "йәшкелт тешле өҫ"
+  BANNER_TRIANGLES_TOP_MAGENTA: "ҡуйы ҡыҙыл тешле өҫ"
+  BANNER_TRIANGLES_TOP_ORANGE: "хәнәүәт тешле өҫ"
+  BANNER_TRIANGLES_TOP_PINK: "алһыу тешле өҫ"
+  BANNER_TRIANGLES_TOP_PURPLE: "шәмәхә тешле өҫ"
+  BANNER_TRIANGLES_TOP_RED: "ҡыҙыл тешле өҫ"
+  BANNER_TRIANGLES_TOP_WHITE: "аҡ тешле өҫ"
+  BANNER_TRIANGLES_TOP_YELLOW: "һары тешле өҫ"
+  BARREL: "мискә"
+  BARRIER: "тотҡарлыҡ"
+  BASALT: "базальт"
+  BEACON: "маяҡ"
+  BEACON_PRIMARY: "төп йоғонто"
+  BEACON_SECONDARY: "икенсе йоғонто"
+  BED_NO_SLEEP: "һеҙ төндә лә йәшен ваҡытында ғына йоҡлай алаһығыҙ"
+  BED_NOT_SAFE: "ҡурҡыныслыҡтар яндарығыҙҙа йөрөгәнсе һеҙ йөҡлай алмайһығыҙ"
+  BED_OBSTRUCTED: "был карауат төҙөлгән"
+  BED_OCCUPIED: "был карауат буш түгел"
+  BED_TOO_FAR_AWAY: "карауат бик алыҫ тора һеҙ йоҡлай алмайһығыҙ"
+  BEDROCK: "бедрок"
+  BEE_NEST: "бал ҡорто ояһы"
+  BEEHIVE: "умарта"
+  BEETROOTS: "сөгөлдөр"
+  BELL: "ҡаңғырау"
+  BIG_DRIPLEAF: "ҙур тамсыяпраҡ"
+  BIG_DRIPLEAF_STEM: "ҙур тамсыяпраҡ һабағы"
+  BIRCH_BUTTON: "ҡайын төймәһе"
+  BIRCH_DOOR: "ҡайын ишеге"
+  BIRCH_FENCE: "ҡайын ҡоймаһы"
+  BIRCH_FENCE_GATE: "ҡайын ҡапҡаһы"
+  BIRCH_HANGING_SIGN: "ҡайын алтаҡта"
+  BIRCH_LEAVES: "ҡайын япраҡтары"
+  BIRCH_LOG: "ҡайын бүрәнәһе"
+  BIRCH_PLANKS: "ҡайын таҡталары"
+  BIRCH_PRESSURE_PLATE: "ҡайын ҡыҫым плитаһы"
+  BIRCH_SAPLING: "ҡайын үҫентеһе"
+  BIRCH_SIGN: "ҡайын яҙмаҡсалығы"
+  BIRCH_SLAB: "ҡайын плитаһы"
+  BIRCH_STAIRS: "ҡайын баҫҡыстары"
+  BIRCH_TRAPDOOR: "ҡайын люгы"
+  BIRCH_WALL_HANGING_SIGN: "ҡайын диуар алтаҡтаһы"
+  BIRCH_WALL_SIGN: "ҡайын диуар билдәһе"
+  BIRCH_WOOD: "ҡайын"
+  BLACK_BANNER: "ҡара байраҡ"
+  BLACK_BED: "ҡара карауат"
+  BLACK_CANDLE: "ҡара шәм"
+  BLACK_CANDLE_CAKE: "ҡара шәм менән торт"
+  BLACK_CARPET: "ҡара келәм"
+  BLACK_CONCRETE: "ҡара бетон"
+  BLACK_CONCRETE_POWDER: "ҡара ҡоро бетон"
+  BLACK_GLAZED_TERRACOTTA: "ҡара ялтырауыҡлы яндырығашы"
+  BLACK_SHULKER_BOX: "ҡара шалкер ҡумтаһы"
+  BLACK_STAINED_GLASS: "ҡара быяла"
+  BLACK_STAINED_GLASS_PANE: "ҡара биҙәкле быяла"
+  BLACK_TERRACOTTA: "ҡара яндырығашы"
+  BLACK_WOOL: "ҡара йөн"
+  BLACKSTONE: "ҡараташ"
+  BLACKSTONE_SLAB: "ҡараташ плитаһы"
+  BLACKSTONE_STAIRS: "ҡараташ баҫҡыстары"
+  BLACKSTONE_WALL: "ҡараташ ҡоймаһы"
+  BLAST_FURNACE: "иреткес мейес"
+  BLUE_BANNER: "күк байраҡ"
+  BLUE_BED: "күк карауат"
+  BLUE_CANDLE: "күк шәм"
+  BLUE_CANDLE_CAKE: "күк шәм менән торт"
+  BLUE_CARPET: "күк келәм"
+  BLUE_CONCRETE: "күк бетон"
+  BLUE_CONCRETE_POWDER: "күк ҡоро бетон"
+  BLUE_GLAZED_TERRACOTTA: "күк ялтырауыҡлы яндырығашы"
+  BLUE_ICE: "күк боҙ"
+  BLUE_ORCHID: "күк орхидея"
+  BLUE_SHULKER_BOX: "күк шалкер ҡумтаһы"
+  BLUE_STAINED_GLASS: "күк быяла"
+  BLUE_STAINED_GLASS_PANE: "күк биҙәкле быяла"
+  BLUE_TERRACOTTA: "күк яндырығашы"
+  BLUE_WOOL: "күк йөн"
+  BONE_BLOCK: "һөйәк блогы"
+  BOOKSHELF: "китап шүрлеге"
+  BRAIN_CORAL: "мейе мәрйен"
+  BRAIN_CORAL_BLOCK: "мейе мәрйен блогы"
+  BRAIN_CORAL_FAN: "елпеүесле мейе мәрйен"
+  BRAIN_CORAL_WALL_FAN: "ятма елпеүесле мейе мәрйен"
+  BREWING_STAND: "төнәтмә ҡайнатыу терәге"
+  BRICK_SLAB: "кирбес плитаһы"
+  BRICK_STAIRS: "кирбес баҫҡыстары"
+  BRICK_WALL: "кирбес ҡоймаһы"
+  BRICKS: "кирбестәр"
+  BROWN_BANNER: "көрән байраҡ"
+  BROWN_BED: "көрән карауат"
+  BROWN_CANDLE: "көрән шәм"
+  BROWN_CANDLE_CAKE: "көрән шәм менән торт"
+  BROWN_CARPET: "көрән келәм"
+  BROWN_CONCRETE: "көрән бетон"
+  BROWN_CONCRETE_POWDER: "көрән ҡоро бетон"
+  BROWN_GLAZED_TERRACOTTA: "көрән ялтырауыҡлы яндырығашы"
+  BROWN_MUSHROOM: "көрән бәшмәк"
+  BROWN_MUSHROOM_BLOCK: "көрән бәшмәк блогы"
+  BROWN_SHULKER_BOX: "көрән шалкер ҡумтаһы"
+  BROWN_STAINED_GLASS: "көрән быяла"
+  BROWN_STAINED_GLASS_PANE: "көрән биҙәкле быяла"
+  BROWN_TERRACOTTA: "көрән яндырығашы"
+  BROWN_WOOL: "көрән йөн"
+  BUBBLE_COLUMN: "күперткеләрҙең терәге"
+  BUBBLE_CORAL: "ҡыуыҡлы мәрйен"
+  BUBBLE_CORAL_BLOCK: "күбек мәрйен блогы"
+  BUBBLE_CORAL_FAN: "елпеүесле ҡыуыҡлы мәрйен"
+  BUBBLE_CORAL_WALL_FAN: "ятма елпеүесле ҡыуыҡлыҡ мәрйен"
+  BUDDING_AMETHYST: "бөрө ебәреүсе аметист"
+  CACTUS: "кактус"
+  CAKE: "торт"
+  CALCITE: "кальцит"
+  CALIBRATED_SCULK_SENSOR: "калибрланған скалк сенсор"
+  CAMPFIRE: "усаҡ"
+  CANDLE: "шәм"
+  CANDLE_CAKE: "шәм менән торт"
+  CARROTS: "кишер"
+  CARTOGRAPHY_TABLE: "картограф өҫтәле"
+  CARVED_PUMPKIN: "киҫелгән ҡабаҡ"
+  CAULDRON: "ҡаҙан"
+  CAVE_AIR: "мәмерйә һауаһы"
+  CAVE_VINES: "мәмерйә талдары"
+  CAVE_VINES_PLANT: "мәмерйә талы һабағы"
+  CHAIN: "сынйыр"
+  CHAIN_COMMAND_BLOCK: "эҙмә-эҙлекле бойороҡ блогы"
+  CHERRY_BUTTON: "сейә ағас төймәһе"
+  CHERRY_DOOR: "сейә ағас ишеге"
+  CHERRY_FENCE: "сейә ағас ҡоймаһы"
+  CHERRY_FENCE_GATE: "сейә ағас ҡапҡаһы"
+  CHERRY_HANGING_SIGN: "сейә ағас алтаҡтаһы"
+  CHERRY_LEAVES: "сейә ағас япраҡтары"
+  CHERRY_LOG: "сейә ағас бүрәнәһе"
+  CHERRY_PLANKS: "сейә ағас таҡталары"
+  CHERRY_PRESSURE_PLATE: "сейә ағас ҡыҫым плитаһы"
+  CHERRY_SAPLING: "сейә ағас үҫентеһе"
+  CHERRY_SIGN: "сейә ағас яҙмаҡсалығы"
+  CHERRY_SLAB: "сейә ағас плитаһы"
+  CHERRY_STAIRS: "сейә ағас баҫҡыстары"
+  CHERRY_TRAPDOOR: "сейә ағас люгы"
+  CHERRY_WALL_HANGING_SIGN: "сейә ағас диуар алтаҡтаһы"
+  CHERRY_WALL_SIGN: "сейә ағас диуар билдәһе"
+  CHERRY_WOOD: "сейә ағас"
+  CHEST: "һандыҡ"
+  CHIPPED_ANVIL: "боҙылған һандал"
+  CHISELED_BOOKSHELF: "һырланған китап шүрлеге"
+  CHISELED_COPPER: "семәрле баҡыр"
+  CHISELED_DEEPSLATE: "һырланған һәүерташ"
+  CHISELED_NETHER_BRICKS: "һырланған неҙер кирбестәре"
+  CHISELED_POLISHED_BLACKSTONE: "һырланған шымартылған ҡараташ"
+  CHISELED_QUARTZ_BLOCK: "һырланған кварц блогы"
+  CHISELED_RED_SANDSTONE: "һырланған ҡыҙыл ҡомташ"
+  CHISELED_SANDSTONE: "һырланған ҡомташ"
+  CHISELED_STONE_BRICKS: "һырланған таш кирбестәре"
+  CHISELED_TUFF: "семәрле туф"
+  CHISELED_TUFF_BRICKS: "һырланған туф кирбестәре"
+  CHORUS_FLOWER: "хорус сәскәһе"
+  CHORUS_PLANT: "хорус"
+  CLAY: "балсыҡ"
+  COAL_BLOCK: "күмер ҡорама"
+  COAL_ORE: "ташкүмер"
+  COARSE_DIRT: "ташлы тупраҡ"
+  COBBLED_DEEPSLATE: "йоморолған һәүерташ"
+  COBBLED_DEEPSLATE_SLAB: "йоморолған һәүерташ плитаһы"
+  COBBLED_DEEPSLATE_STAIRS: "йоморолған һәүерташ баҫҡыстары"
+  COBBLED_DEEPSLATE_WALL: "йоморолған һәүерташ ҡоймаһы"
+  COBBLESTONE: "һуйырташ"
+  COBBLESTONE_SLAB: "һуйырташ плитаһы"
+  COBBLESTONE_STAIRS: "һуйырташ баҫҡыстары"
+  COBBLESTONE_WALL: "һуйырташ ҡоймаһы"
+  COBWEB: "үрмәксе ауы"
+  COCOA: "какао"
+  COMMAND_BLOCK: "бойороҡ блогы"
+  COMPARATOR: "редстоун сағыштырғысы"
+  COMPOSTER: "серемдек"
+  CONDUIT: "диңгеҙ сығанағы"
+  COPPER_BLOCK: "баҡыр блогы"
+  COPPER_BULB: "баҡыр лампаһы"
+  COPPER_DOOR: "баҡыр ишек"
+  COPPER_GRATE: "баҡыр рәшәткә"
+  COPPER_ORE: "баҡыр мәғдәне"
+  COPPER_TRAPDOOR: "баҡыр люк"
+  CORNFLOWER: "зәңгәр сәскә"
+  CRACKED_DEEPSLATE_BRICKS: "ярылған һәүерташ кирбестәре"
+  CRACKED_DEEPSLATE_TILES: "ярылған һәүерташ шаҡмағы"
+  CRACKED_NETHER_BRICKS: "ярылған неҙер кирбестәре"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "ярылған шымартылған ҡараташ кирбестәре"
+  CRACKED_STONE_BRICKS: "ярылған таш кирбестәре"
+  CRAFTER: "яһаусы"
+  CRAFTING_TABLE: "эшкәртеү өҫтәле"
+  CREEPER_HEAD: "крипер башы"
+  CREEPER_WALL_HEAD: "диуарҙағы крипер башы"
+  CRIMSON_BUTTON: "бурлат төймә"
+  CRIMSON_DOOR: "бурлат ишек"
+  CRIMSON_FENCE: "бурлат ҡойма"
+  CRIMSON_FENCE_GATE: "бурлат ҡапҡа"
+  CRIMSON_FUNGUS: "булат бәшмәк"
+  CRIMSON_HANGING_SIGN: "бурлат алтаҡта"
+  CRIMSON_HYPHAE: "бурлат һифалары"
+  CRIMSON_NYLIUM: "бурлат нилий"
+  CRIMSON_PLANKS: "бурлат таҡталары"
+  CRIMSON_PRESSURE_PLATE: "бурлат ҡыҫым плитаһы"
+  CRIMSON_ROOTS: "бурлат тамырҙар"
+  CRIMSON_SIGN: "бурлат яҙмаҡсалығы"
+  CRIMSON_SLAB: "бурлат плитаһы"
+  CRIMSON_STAIRS: "бурлат баҫҡыстар"
+  CRIMSON_STEM: "бурлат һабағы"
+  CRIMSON_TRAPDOOR: "бурлат люгы"
+  CRIMSON_WALL_HANGING_SIGN: "бурлат диуар алтаҡтаһы"
+  CRIMSON_WALL_SIGN: "бурлат диуар алтаҡтаһы"
+  CRYING_OBSIDIAN: "илау обсидианы"
+  CUT_COPPER: "һырлы баҡыр"
+  CUT_COPPER_SLAB: "һырлы баҡыр плитаһы"
+  CUT_COPPER_STAIRS: "һырлы баҡыр баҫҡыстары"
+  CUT_RED_SANDSTONE: "шыма ҡыҙыл ҡомташ"
+  CUT_RED_SANDSTONE_SLAB: "шыма ҡыҙыл ҡомташ плитаһы"
+  CUT_SANDSTONE: "шыма ҡомташ"
+  CUT_SANDSTONE_SLAB: "шыма ҡомташ плитаһы"
+  CYAN_BANNER: "фирүзә байраҡ"
+  CYAN_BED: "фирүзә карауат"
+  CYAN_CANDLE: "фирүзә шәм"
+  CYAN_CANDLE_CAKE: "фирүзә шәм менән торт"
+  CYAN_CARPET: "фирүзә келәм"
+  CYAN_CONCRETE: "фирүзә бетон"
+  CYAN_CONCRETE_POWDER: "фирүзә ҡоро бетон"
+  CYAN_GLAZED_TERRACOTTA: "фирүзә ялтырауыҡлы яндырығашы"
+  CYAN_SHULKER_BOX: "фирүзә шалкер ҡумтаһы"
+  CYAN_STAINED_GLASS: "фирүзә быяла"
+  CYAN_STAINED_GLASS_PANE: "фирүзә биҙәкле быяла"
+  CYAN_TERRACOTTA: "фирүзә яндырығашы"
+  CYAN_WOOL: "фирүзә йөн"
+  DAMAGED_ANVIL: "ватылған һандал"
+  DANDELION: "бәпембә"
+  DARK_OAK_BUTTON: "ҡара имән төймә"
+  DARK_OAK_DOOR: "ҡара имән ишеге"
+  DARK_OAK_FENCE: "ҡара имән ҡоймаһы"
+  DARK_OAK_FENCE_GATE: "ҡара имән ҡапҡаһы"
+  DARK_OAK_HANGING_SIGN: "ҡара имән алтаҡта"
+  DARK_OAK_LEAVES: "ҡара имән япраҡтары"
+  DARK_OAK_LOG: "ҡара имән бүрәнәһе"
+  DARK_OAK_PLANKS: "ҡара имән таҡталары"
+  DARK_OAK_PRESSURE_PLATE: "ҡара имән ҡыҫым плитаһы"
+  DARK_OAK_SAPLING: "ҡара имән үҫентеһе"
+  DARK_OAK_SIGN: "ҡара имән яҙмаҡсалығы"
+  DARK_OAK_SLAB: "ҡара имән плитаһы"
+  DARK_OAK_STAIRS: "ҡара имән баҫҡыстары"
+  DARK_OAK_TRAPDOOR: "ҡара имән люгы"
+  DARK_OAK_WALL_HANGING_SIGN: "ҡара имән диуар алтаҡтаһы"
+  DARK_OAK_WALL_SIGN: "ҡара имән диуар билдәһе"
+  DARK_OAK_WOOD: "ҡара имән"
+  DARK_PRISMARINE: "ҡара призмарин"
+  DARK_PRISMARINE_SLAB: "ҡара призмарин плитаһы"
+  DARK_PRISMARINE_STAIRS: "ҡара призмарин баҫҡыстары"
+  DAYLIGHT_DETECTOR: "көндөҙгө яҡтылыҡ датчигы"
+  DEAD_BRAIN_CORAL: "үле мейе мәрйен"
+  DEAD_BRAIN_CORAL_BLOCK: "үле мейе мәрйен блогы"
+  DEAD_BRAIN_CORAL_FAN: "үле елпеүесле мейе мәрйен"
+  DEAD_BRAIN_CORAL_WALL_FAN: "ятма үле елпеүесле мейе мәрйен"
+  DEAD_BUBBLE_CORAL: "үле ҡыуыҡлы мәрйен"
+  DEAD_BUBBLE_CORAL_BLOCK: "үле күбек мәрйен блогы"
+  DEAD_BUBBLE_CORAL_FAN: "үле елпеүесле ҡыуыҡлы мәрйен"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "ятма үле елпеүесле ҡыуыҡлы мәрйен"
+  DEAD_BUSH: "үле ҡыуаҡ"
+  DEAD_FIRE_CORAL: "үле утлы мәрйен"
+  DEAD_FIRE_CORAL_BLOCK: "үле утлы мәрйен блогы"
+  DEAD_FIRE_CORAL_FAN: "үле елпеүесле утлыҡ мәрйен"
+  DEAD_FIRE_CORAL_WALL_FAN: "ятма үле елпеүесле утлы мәрйен"
+  DEAD_HORN_CORAL: "үле мөгөҙлө мәрйен"
+  DEAD_HORN_CORAL_BLOCK: "үле мөгөҙлө мәрйен блогы"
+  DEAD_HORN_CORAL_FAN: "үле елпеүесле мөгөҙлө мәрйен"
+  DEAD_HORN_CORAL_WALL_FAN: "ятма үле елпеүесле мөгөҙлө мәрйен"
+  DEAD_TUBE_CORAL: "үле көпшәк мәрйен"
+  DEAD_TUBE_CORAL_BLOCK: "үле көпшәк мәрйен блогы"
+  DEAD_TUBE_CORAL_FAN: "үле елпеүесле көпшәле мәрйен"
+  DEAD_TUBE_CORAL_WALL_FAN: "ятма үле елпеүесле көпшәле мәрйен"
+  DECORATED_POT: "декоратив сүлмәге"
+  DEEPSLATE: "һәүерташ"
+  DEEPSLATE_BRICK_SLAB: "һәүерташ кирбес плитаһы"
+  DEEPSLATE_BRICK_STAIRS: "һәүерташ кирбес баҫҡыстары"
+  DEEPSLATE_BRICK_WALL: "һәүерташ кирбес ҡоймаһы"
+  DEEPSLATE_BRICKS: "һәүерташ кирбестәре"
+  DEEPSLATE_COAL_ORE: "һәүерташ күмере мәғдәне"
+  DEEPSLATE_COPPER_ORE: "һәүерташ баҡыры мәғдәне"
+  DEEPSLATE_DIAMOND_ORE: "һәүерташ алмасы мәғдәне"
+  DEEPSLATE_EMERALD_ORE: "һәүерташ зөбәржәте мәғдәне"
+  DEEPSLATE_GOLD_ORE: "тәрәндәге һәүерташ алтын мәғдәне"
+  DEEPSLATE_IRON_ORE: "тәрәндәге һәүерташ тимер мәғдәне"
+  DEEPSLATE_LAPIS_ORE: "һәүерташ лазуриты мәғдәне"
+  DEEPSLATE_REDSTONE_ORE: "һәүерташ редстоуны мәғдәне"
+  DEEPSLATE_TILE_SLAB: "һәүерташ шаҡмағы плитаһы"
+  DEEPSLATE_TILE_STAIRS: "һәүерташ шаҡмағы баҫҡыстары"
+  DEEPSLATE_TILE_WALL: "һәүерташ шаҡмағы ҡоймаһы"
+  DEEPSLATE_TILES: "һәүерташ шаҡмағы"
+  DETECTOR_RAIL: "детекторлы тимер юл"
+  DIAMOND_BLOCK: "алмас ҡорама"
+  DIAMOND_ORE: "алмас мәғдәне"
+  DIORITE: "диорит"
+  DIORITE_SLAB: "диорит плитаһы"
+  DIORITE_STAIRS: "диорит баҫҡыстары"
+  DIORITE_WALL: "диорит ҡоймаһы"
+  DIRT: "тупраҡ"
+  DIRT_PATH: "һуҡмаҡ"
+  DISPENSER: "таратыусы"
+  DRAGON_EGG: "аждаһа йомортҡаһы"
+  DRAGON_HEAD: "аждаһа башы"
+  DRAGON_WALL_HEAD: "диуарҙағы аждаһа башы"
+  DRIED_KELP_BLOCK: "кипкән диңгеҙ кәбеҫтәнең өйөмө"
+  DRIPSTONE_BLOCK: "тамсылыҡ блогы"
+  DROPPER: "ташлатҡыс"
+  EMERALD_BLOCK: "зөбәржәт блогы"
+  EMERALD_ORE: "зөбәржәт мәғдәне"
+  ENCHANTING_TABLE: "сихырлау өҫтәле"
+  END_GATEWAY: "энд ҡапҡаһы"
+  END_PORTAL: "энд порталы"
+  END_PORTAL_FRAME: "энд порталы ҡыҫанғы"
+  END_ROD: "энд үҙәге"
+  END_STONE: "эндерташ"
+  END_STONE_BRICK_SLAB: "эндерташ кирбес плитаһы"
+  END_STONE_BRICK_STAIRS: "эндерташ кирбестәр баҫҡыстары"
+  END_STONE_BRICK_WALL: "эндерташ кирбес ҡоймаһы"
+  END_STONE_BRICKS: "эндерташ кирбестәре"
+  ENDER_CHEST: "эндер-һандыҡ"
+  EXPOSED_CHISELED_COPPER: "ҡарайған семәрле баҡыр"
+  EXPOSED_COPPER: "ҡарайған баҡыр"
+  EXPOSED_COPPER_BULB: "ҡарайған баҡыр лампаһы"
+  EXPOSED_COPPER_DOOR: "ҡарайған баҡыр ишек"
+  EXPOSED_COPPER_GRATE: "ҡарайған баҡыр рәшәткә"
+  EXPOSED_COPPER_TRAPDOOR: "ҡарайған баҡыр люк"
+  EXPOSED_CUT_COPPER: "ҡарайған һырлы баҡыр"
+  EXPOSED_CUT_COPPER_SLAB: "ҡарайған һырлы баҡыр плитаһы"
+  EXPOSED_CUT_COPPER_STAIRS: "ҡарайған һырлы баҡыр баҫҡыстары"
+  FARMLAND: "һөрөлгән ер"
+  FERN: "ҡаҙаяҡ"
+  FIRE: "ут"
+  FIRE_CORAL: "утлы мәрйен"
+  FIRE_CORAL_BLOCK: "ут мәрйен блогы"
+  FIRE_CORAL_FAN: "елпеүесле утлы мәрйен"
+  FIRE_CORAL_WALL_FAN: "ятма елпеүесле утлыҡ мәрйен"
+  FLETCHING_TABLE: "йәйәүсенең өҫтәле"
+  FLOWER_POT: "сәскә сүлмәге"
+  FLOWERING_AZALEA: "гөлләгән азалия"
+  FLOWERING_AZALEA_LEAVES: "гөлләгән азалия япраҡтары"
+  FROGSPAWN: "телмәрйен ыуылдырығы"
+  FROSTED_ICE: "ирегән боҙ"
+  FURNACE: "мейес"
+  GILDED_BLACKSTONE: "алтынланған ҡараташ"
+  GLASS: "быяла"
+  GLASS_PANE: "биҙәкле быяла"
+  GLOW_LICHEN: "яҡты мүк"
+  GLOWSTONE: "яҡтыташ"
+  GOLD_BLOCK: "алтын блогы"
+  GOLD_ORE: "алтын мәғдәне"
+  GRANITE: "гранит"
+  GRANITE_SLAB: "гранит плитаһы"
+  GRANITE_STAIRS: "гранит баҫҡыстары"
+  GRANITE_WALL: "гранит ҡоймаһы"
+  GRASS: "үлән"
+  GRASS_BLOCK: "кәҫ"
+  GRAVEL: "ҡырсынташ"
+  GRAY_BANNER: "һоро байраҡ"
+  GRAY_BED: "һоро карауат"
+  GRAY_CANDLE: "һоро шәм"
+  GRAY_CANDLE_CAKE: "һоро шәм менән торт"
+  GRAY_CARPET: "һоро келәм"
+  GRAY_CONCRETE: "һоро бетон"
+  GRAY_CONCRETE_POWDER: "һоро ҡоро бетон"
+  GRAY_GLAZED_TERRACOTTA: "һоро ялтырауыҡлы яндырығашы"
+  GRAY_SHULKER_BOX: "һоро шалкер ҡумтаһы"
+  GRAY_STAINED_GLASS: "һоро быяла"
+  GRAY_STAINED_GLASS_PANE: "һоро биҙәкле быяла"
+  GRAY_TERRACOTTA: "һоро яндырығашы"
+  GRAY_WOOL: "һоро йөн"
+  GREEN_BANNER: "йәшел байраҡ"
+  GREEN_BED: "йәшел карауат"
+  GREEN_CANDLE: "йәшел шәм"
+  GREEN_CANDLE_CAKE: "йәшел шәм менән торт"
+  GREEN_CARPET: "йәшел келәм"
+  GREEN_CONCRETE: "йәшел бетон"
+  GREEN_CONCRETE_POWDER: "йәшел ҡоро бетон"
+  GREEN_GLAZED_TERRACOTTA: "йәшел ялтырауыҡлы яндырығашы"
+  GREEN_SHULKER_BOX: "йәшел шалкер ҡумтаһы"
+  GREEN_STAINED_GLASS: "йәшел быяла"
+  GREEN_STAINED_GLASS_PANE: "йәшел биҙәкле быяла"
+  GREEN_TERRACOTTA: "йәшел яндырығашы"
+  GREEN_WOOL: "йәшел йөн"
+  GRINDSTONE: "сар"
+  HANGING_ROOTS: "һалбыр тамырҙар"
+  HAY_BLOCK: "бесән көлтәһе"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "ауыр йөклө ауырлыҡ плитаһы"
+  HONEY_BLOCK: "бал блогы"
+  HONEYCOMB_BLOCK: "бал ҡортоларҙың кәрәҙ блогы"
+  HOPPER: "буранка"
+  HORN_CORAL: "мөгөҙлө мәрйен"
+  HORN_CORAL_BLOCK: "мөгөҙлө мәрйен блогы"
+  HORN_CORAL_FAN: "елпеүесле мөгөҙлө мәрйен"
+  HORN_CORAL_WALL_FAN: "ятма елпеүесле мөгөҙлө мәрйен"
+  ICE: "боҙ"
+  INFESTED_CHISELED_STONE_BRICKS: "ағыулы һырланған таш кирбестәре"
+  INFESTED_COBBLESTONE: "ағыулы һуйырташ"
+  INFESTED_CRACKED_STONE_BRICKS: "ағыулы ярылған таш кирбестәре"
+  INFESTED_DEEPSLATE: "ағыулы һәүерташ"
+  INFESTED_MOSSY_STONE_BRICKS: "ағыулы мүкләнгән таш кирбестәре"
+  INFESTED_STONE: "ағыулы таш"
+  INFESTED_STONE_BRICKS: "ағыулы таш кирбестәре"
+  IRON_BARS: "тимер талдар"
+  IRON_BLOCK: "тимер блогы"
+  IRON_DOOR: "тимер ишек"
+  IRON_ORE: "тимер мәғдәне"
+  IRON_TRAPDOOR: "тимер люгы"
+  JACK_O_LANTERN: "джек күге"
+  JIGSAW: "пазл"
+  JUKEBOX: "уйнатҡыс"
+  JUNGLE_BUTTON: "тропик ағас төймәһе"
+  JUNGLE_DOOR: "тропик ағас ишеге"
+  JUNGLE_FENCE: "тропик ағас ҡоймаһы"
+  JUNGLE_FENCE_GATE: "тропик ағас ҡапҡаһы"
+  JUNGLE_HANGING_SIGN: "тропик ағас алтаҡта"
+  JUNGLE_LEAVES: "тропик ағас япраҡтары"
+  JUNGLE_LOG: "тропик ағас бүрәнәһе"
+  JUNGLE_PLANKS: "тропик ағас таҡталары"
+  JUNGLE_PRESSURE_PLATE: "тропик ағас ҡыҫым плитаһы"
+  JUNGLE_SAPLING: "тропик ағас үҫентеһе"
+  JUNGLE_SIGN: "тропик ағас яҙмаҡсалығы"
+  JUNGLE_SLAB: "тропик ағас плитаһы"
+  JUNGLE_STAIRS: "тропик ағас баҫҡыстары"
+  JUNGLE_TRAPDOOR: "тропик ағас люгы"
+  JUNGLE_WALL_HANGING_SIGN: "тропик ағас диуар алтаҡтаһы"
+  JUNGLE_WALL_SIGN: "тропик ағас диуар билдәһе"
+  JUNGLE_WOOD: "тропик ағасы"
+  KELP: "диңгеҙ кәбеҫтәһе"
+  KELP_PLANT: "диңгеҙ кәбеҫтәнең һабағы"
+  LADDER: "баҫҡыс"
+  LANTERN: "күк"
+  LAPIS_BLOCK: "лазурит блогы"
+  LAPIS_ORE: "лазурит мәғдәне"
+  LARGE_AMETHYST_BUD: "эре аметист бөрөһө"
+  LARGE_FERN: "эре ҡаҙаяҡ"
+  LAVA: "лава"
+  LAVA_CAULDRON: "лава менән ҡаҙан"
+  LECTERN: "кафедра"
+  LEVER: "һалмауыр"
+  LIGHT: "яҡтылыҡ"
+  LIGHT_BLUE_BANNER: "зәңгәр байраҡ"
+  LIGHT_BLUE_BED: "зәңгәр карауат"
+  LIGHT_BLUE_CANDLE: "зәңгәр шәм"
+  LIGHT_BLUE_CANDLE_CAKE: "зәңгәр шәм менән торт"
+  LIGHT_BLUE_CARPET: "зәңгәр келәм"
+  LIGHT_BLUE_CONCRETE: "зәңгәр бетон"
+  LIGHT_BLUE_CONCRETE_POWDER: "зәңгәр ҡоро бетон"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "зәңгәр ялтырауыҡлы яндырығашы"
+  LIGHT_BLUE_SHULKER_BOX: "зәңгәр шалкер ҡумтаһы"
+  LIGHT_BLUE_STAINED_GLASS: "зәңгәр быяла"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "зәңгәр биҙәкле быяла"
+  LIGHT_BLUE_TERRACOTTA: "зәңгәр яндырығашы"
+  LIGHT_BLUE_WOOL: "зәңгәр йөн"
+  LIGHT_GRAY_BANNER: "аҡһыл һоро байраҡ"
+  LIGHT_GRAY_BED: "аҡһыл һоро карауат"
+  LIGHT_GRAY_CANDLE: "аҡһыл һоро шәм"
+  LIGHT_GRAY_CANDLE_CAKE: "аҡһыл һоро шәм менән торт"
+  LIGHT_GRAY_CARPET: "аҡһыл һоро келәм"
+  LIGHT_GRAY_CONCRETE: "аҡһыл һоро бетон"
+  LIGHT_GRAY_CONCRETE_POWDER: "аҡһыл һоро ҡоро бетон"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "аҡһыл һоро ялтырауыҡлы яндырығашы"
+  LIGHT_GRAY_SHULKER_BOX: "аҡһыл һоро шалкер ҡумтаһы"
+  LIGHT_GRAY_STAINED_GLASS: "аҡһыл һоро быяла"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "аҡһыл һоро биҙәкле быяла"
+  LIGHT_GRAY_TERRACOTTA: "аҡһыл һоро яндырығашы"
+  LIGHT_GRAY_WOOL: "аҡһыл һоро йөн"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "ауырлыҡ плитаһы"
+  LIGHTNING_ROD: "йәшен ҡайтарғыс"
+  LILAC: "күксин"
+  LILY_OF_THE_VALLEY: "ынйы сәскә"
+  LILY_PAD: "томбойоҡ"
+  LIME_BANNER: "йәшкелт байраҡ"
+  LIME_BED: "йәшкелт карауат"
+  LIME_CANDLE: "йәшкелт шәм"
+  LIME_CANDLE_CAKE: "йәшкелт шәм менән торт"
+  LIME_CARPET: "йәшкелт келәм"
+  LIME_CONCRETE: "йәшкелт бетон"
+  LIME_CONCRETE_POWDER: "йәшкелт ҡоро бетон"
+  LIME_GLAZED_TERRACOTTA: "йәшкелт ялтырауыҡлы яндырығашы"
+  LIME_SHULKER_BOX: "йәшкелт шалкер ҡумтаһы"
+  LIME_STAINED_GLASS: "йәшкелт быяла"
+  LIME_STAINED_GLASS_PANE: "йәшкелт биҙәкле быяла"
+  LIME_TERRACOTTA: "йәшкелт яндырығашы"
+  LIME_WOOL: "йәшкелт йөн"
+  LODESTONE: "магнетит"
+  LOOM: "туҡыу эшкәрлеге"
+  MAGENTA_BANNER: "ҡуйы ҡыҙыл байраҡ"
+  MAGENTA_BED: "ҡуйы ҡыҙыл карауат"
+  MAGENTA_CANDLE: "ҡуйы ҡыҙыл шәм"
+  MAGENTA_CANDLE_CAKE: "ҡуйы ҡыҙыл шәм менән торт"
+  MAGENTA_CARPET: "ҡуйы ҡыҙыл келәм"
+  MAGENTA_CONCRETE: "ҡуйы ҡыҙыл бетон"
+  MAGENTA_CONCRETE_POWDER: "ҡуйы ҡыҙыл ҡоро бетон"
+  MAGENTA_GLAZED_TERRACOTTA: "ҡуйы ҡыҙыл шалкер ҡумтаһы"
+  MAGENTA_SHULKER_BOX: "ҡуйы ҡыҙыл шалкер ҡумтаһы"
+  MAGENTA_STAINED_GLASS: "ҡуйы ҡыҙыл быяла"
+  MAGENTA_STAINED_GLASS_PANE: "ҡуйы ҡыҙыл биҙәкле быяла"
+  MAGENTA_TERRACOTTA: "ҡуйы ҡыҙыл яндырығашы"
+  MAGENTA_WOOL: "ҡуйы ҡыҙыл йөн"
+  MAGMA_BLOCK: "магма"
+  MANGROVE_BUTTON: "мангр төймәһе"
+  MANGROVE_DOOR: "мангр ишеге"
+  MANGROVE_FENCE: "мангр ҡоймаһы"
+  MANGROVE_FENCE_GATE: "мангр ҡапҡаһы"
+  MANGROVE_HANGING_SIGN: "мангр алтаҡта"
+  MANGROVE_LEAVES: "мангр япраҡтары"
+  MANGROVE_LOG: "мангр бүрәнәһе"
+  MANGROVE_PLANKS: "мангр таҡталары"
+  MANGROVE_PRESSURE_PLATE: "мангр ҡыҫым плитаһы"
+  MANGROVE_PROPAGULE: "мангр ботағы"
+  MANGROVE_ROOTS: "мангр тамырҙары"
+  MANGROVE_SIGN: "мангр яҙмаҡсалығы"
+  MANGROVE_SLAB: "мангр плитаһы"
+  MANGROVE_STAIRS: "мангр баҫҡыстары"
+  MANGROVE_TRAPDOOR: "мангр люгы"
+  MANGROVE_WALL_HANGING_SIGN: "мангр диуар алтаҡтаһы"
+  MANGROVE_WALL_SIGN: "мангр диуар билдәһе"
+  MANGROVE_WOOD: "мангр ағасы"
+  MEDIUM_AMETHYST_BUD: "уртасы аметист бөрөһө"
+  MELON: "ҡарбуз"
+  MELON_STEM: "ҡарбуз һабағы"
+  MOSS_BLOCK: "мүк блогы"
+  MOSS_CARPET: "мүк келәме"
+  MOSSY_COBBLESTONE: "мүкләнгән һуйырташ"
+  MOSSY_COBBLESTONE_SLAB: "мүкләнгән һуйырташ плитаһы"
+  MOSSY_COBBLESTONE_STAIRS: "мүкләнгән һуйырташ баҫҡыстары"
+  MOSSY_COBBLESTONE_WALL: "мүкләнгән һуйырташ ҡоймаһы"
+  MOSSY_STONE_BRICK_SLAB: "мүкләнгән таш кирбес плитаһы"
+  MOSSY_STONE_BRICK_STAIRS: "мүкләнгән таш кирбестәр баҫҡыстары"
+  MOSSY_STONE_BRICK_WALL: "мүкләнгән таш кирбес ҡоймаһы"
+  MOSSY_STONE_BRICKS: "мүкләнгән таш кирбестәре"
+  MOVING_PISTON: "бара торҡан бешкәк"
+  MUD: "бысраҡ"
+  MUD_BRICK_SLAB: "саман кирбес плитаһы"
+  MUD_BRICK_STAIRS: "саман кирбес баҫҡыстары"
+  MUD_BRICK_WALL: "саман кирбес ҡоймаһы"
+  MUD_BRICKS: "саман кирбестәре"
+  MUDDY_MANGROVE_ROOTS: "бысраҡ мангр тамырҙары"
+  MUSHROOM_STEM: "бәшмәк һабағы"
+  MYCELIUM: "бәшмәклек"
+  NETHER_BRICK_FENCE: "неҙер кирбес ҡоймаһы"
+  NETHER_BRICK_SLAB: "неҙер кирбес плитаһы"
+  NETHER_BRICK_STAIRS: "неҙер кирбес баҫҡыстары"
+  NETHER_BRICK_WALL: "неҙер кирбес ҡоймаһы"
+  NETHER_BRICKS: "неҙер кирбестәре"
+  NETHER_GOLD_ORE: "неҙер-алтын мәғдәне"
+  NETHER_PORTAL: "неҙер порталы"
+  NETHER_QUARTZ_ORE: "неҙер-кварц мәғдәне"
+  NETHER_SPROUTS: "неҙер шытымы"
+  NETHER_WART: "неҙер ҡатламы"
+  NETHER_WART_BLOCK: "неҙер ҡатламының блогы"
+  NETHERITE_BLOCK: "неҙерит блогы"
+  NETHERRACK: "неҙерташ"
+  NOTE_BLOCK: "ноталар блогы"
+  OAK_BUTTON: "имән төймәһе"
+  OAK_DOOR: "имән ишеге"
+  OAK_FENCE: "имән ҡоймаһы"
+  OAK_FENCE_GATE: "имән ҡапҡаһы"
+  OAK_HANGING_SIGN: "имән алтаҡта"
+  OAK_LEAVES: "имән япраҡтары"
+  OAK_LOG: "имән бүрәнәһе"
+  OAK_PLANKS: "имән таҡталары"
+  OAK_PRESSURE_PLATE: "имән ҡыҫым плитаһы"
+  OAK_SAPLING: "имән үҫентеһе"
+  OAK_SIGN: "имән яҙмаҡсалығы"
+  OAK_SLAB: "имән плитаһы"
+  OAK_STAIRS: "имән баҫҡыстары"
+  OAK_TRAPDOOR: "имән люге"
+  OAK_WALL_HANGING_SIGN: "диуар имән алтаҡтаһы"
+  OAK_WALL_SIGN: "имән диуар билдәһе"
+  OAK_WOOD: "имән"
+  OBSERVER: "күҙәтеүсе"
+  OBSIDIAN: "обсидиан"
+  OCHRE_FROGLIGHT: "охра төҫлө яҡтыбаҡа"
+  OMINOUS_BANNER: "дәһшәтле байраҡ"
+  ORANGE_BANNER: "хәнәүәт байраҡ"
+  ORANGE_BED: "хәнәүәт карауат"
+  ORANGE_CANDLE: "хәнәүәт шәм"
+  ORANGE_CANDLE_CAKE: "хәнәүәт шәм менән торт"
+  ORANGE_CARPET: "хәнәүәт келәм"
+  ORANGE_CONCRETE: "хәнәүәт бетон"
+  ORANGE_CONCRETE_POWDER: "хәнәүәт ҡоро бетон"
+  ORANGE_GLAZED_TERRACOTTA: "ҡыҙғылт шалкер ҡумтаһы"
+  ORANGE_SHULKER_BOX: "ҡыҙғылт һары шалкер ҡумтаһы"
+  ORANGE_STAINED_GLASS: "хәнәүәт быяла"
+  ORANGE_STAINED_GLASS_PANE: "хәнәүәт биҙәкле быяла"
+  ORANGE_TERRACOTTA: "ҡыҙғылт һары яндырығашы"
+  ORANGE_TULIP: "хәнәүәт ләлә"
+  ORANGE_WOOL: "хәнәүәт йөн"
+  OXEYE_DAISY: "аҡ сәскә"
+  OXIDIZED_CHISELED_COPPER: "окисланған семәрле баҡыр"
+  OXIDIZED_COPPER: "окисланған баҡыр"
+  OXIDIZED_COPPER_BULB: "окисланған баҡыр лампаһы"
+  OXIDIZED_COPPER_DOOR: "окисланған баҡыр ишек"
+  OXIDIZED_COPPER_GRATE: "окисланған баҡыр рәшәткә"
+  OXIDIZED_COPPER_TRAPDOOR: "окисланған баҡыр люк"
+  OXIDIZED_CUT_COPPER: "окисланған һырлы баҡыр"
+  OXIDIZED_CUT_COPPER_SLAB: "окисланған һырлы баҡыр плитаһы"
+  OXIDIZED_CUT_COPPER_STAIRS: "окисланған һырлы баҡыр баҫҡыстары"
+  PACKED_ICE: "ҡалын боҙ"
+  PACKED_MUD: "саман"
+  PEARLESCENT_FROGLIGHT: "мәрүәт төҫлө яҡтыбаҡа"
+  PEONY: "дөр-дөр"
+  PETRIFIED_OAK_SLAB: "ташҡа әйләнгән имән плита"
+  PIGLIN_HEAD: "пиглин башы"
+  PIGLIN_WALL_HEAD: "пиглин диуар башы"
+  PINK_BANNER: "алһыу байраҡ"
+  PINK_BED: "алһыу карауат"
+  PINK_CANDLE: "алһыу шәм"
+  PINK_CANDLE_CAKE: "алһыу шәм менән торт"
+  PINK_CARPET: "алһыу келәм"
+  PINK_CONCRETE: "алһыу бетон"
+  PINK_CONCRETE_POWDER: "алһыу ҡоро бетон"
+  PINK_GLAZED_TERRACOTTA: "алһыу ялтырауыҡлы яндырығашы"
+  PINK_PETALS: "алһыу таждар"
+  PINK_SHULKER_BOX: "алһыу шалкер ҡумтаһы"
+  PINK_STAINED_GLASS: "алһыу быяла"
+  PINK_STAINED_GLASS_PANE: "алһыу биҙәкле быяла"
+  PINK_TERRACOTTA: "алһыу яндырығашы"
+  PINK_TULIP: "алһыу ләлә"
+  PINK_WOOL: "алһыу йөн"
+  PISTON: "бешкәк"
+  PISTON_HEAD: "бешкәк башы"
+  PITCHER_CROP: "ҡомғансы үҫентеһе"
+  PITCHER_PLANT: "ҡомғансы"
+  PLAYER_HEAD: "уйнаусының бышы"
+  PLAYER_HEAD_NAMED: "%s башы"
+  PLAYER_WALL_HEAD: "диуарҙағы уйнаусының башы"
+  PODZOL: "көлһыу тупраҡ"
+  POINTED_DRIPSTONE: "тамсылыҡ"
+  POLISHED_ANDESITE: "шымартылған андезит"
+  POLISHED_ANDESITE_SLAB: "шымартылған андезит плитаһы"
+  POLISHED_ANDESITE_STAIRS: "шымартылған андезит баҫҡыстары"
+  POLISHED_BASALT: "шымартылған базальт"
+  POLISHED_BLACKSTONE: "шымартылған ҡараташ"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "шымартылған ҡараташ кирбес плитаһы"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "шымартылған ҡараташ кирбес баҫҡыстары"
+  POLISHED_BLACKSTONE_BRICK_WALL: "шымартылған ҡараташ кирбес ҡоймаһы"
+  POLISHED_BLACKSTONE_BRICKS: "шымартылған ҡараташ кирбестәре"
+  POLISHED_BLACKSTONE_BUTTON: "шымартылған ҡараташ төймәһе"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "шымартылған ҡараташ ҡыҫым плитаһы"
+  POLISHED_BLACKSTONE_SLAB: "шымартылған ҡараташ плитаһы"
+  POLISHED_BLACKSTONE_STAIRS: "шымартылған ҡараташ баҫҡыстары"
+  POLISHED_BLACKSTONE_WALL: "шымартылған ҡараташ ҡоймаһы"
+  POLISHED_DEEPSLATE: "шымартылған һәүерташ"
+  POLISHED_DEEPSLATE_SLAB: "шымартылған һәүерташ плитаһы"
+  POLISHED_DEEPSLATE_STAIRS: "шымартылған һәүерташ баҫҡыстары"
+  POLISHED_DEEPSLATE_WALL: "шымартылған һәүерташ ҡоймаһы"
+  POLISHED_DIORITE: "шымартылған диорит"
+  POLISHED_DIORITE_SLAB: "шымартылған диорит плитаһы"
+  POLISHED_DIORITE_STAIRS: "шымартылған диорит баҫҡыстары"
+  POLISHED_GRANITE: "шымартылған гранит"
+  POLISHED_GRANITE_SLAB: "шымартылған гранит баҫҡыстары"
+  POLISHED_GRANITE_STAIRS: "шымартылған гранит баҫҡыстары"
+  POLISHED_TUFF: "шымартылған туф"
+  POLISHED_TUFF_SLAB: "шымартылған туф плитаһы"
+  POLISHED_TUFF_STAIRS: "шымартылған туф баҫҡыстары"
+  POLISHED_TUFF_WALL: "шымартылған туф ҡоймаһы"
+  POPPY: "мәк"
+  POTATOES: "бәрәңге"
+  POTTED_ACACIA_SAPLING: "ултыртылған сәрүәр үҫентеһе"
+  POTTED_ALLIUM: "ултыртылған йыллау һуған"
+  POTTED_AZALEA_BUSH: "игелгән азалия"
+  POTTED_AZURE_BLUET: "ултыртылған зәңгәр күк сәскә"
+  POTTED_BAMBOO: "ултыртылған бамбук"
+  POTTED_BIRCH_SAPLING: "ултыртылған ҡайын үҫентеһе"
+  POTTED_BLUE_ORCHID: "ултыртылған күк орхидея"
+  POTTED_BROWN_MUSHROOM: "ултыртылған көрән бәшмәк"
+  POTTED_CACTUS: "ултыртылған кактус"
+  POTTED_CHERRY_SAPLING: "ултыртылған сейә ағас үҫентеһе"
+  POTTED_CORNFLOWER: "ултыртылған зәңгәр сәскә"
+  POTTED_CRIMSON_FUNGUS: "ултыртырған бурлат бәшмәге"
+  POTTED_CRIMSON_ROOTS: "ултыртылған бурлат тамырҙары"
+  POTTED_DANDELION: "ултыртылған бәпембә"
+  POTTED_DARK_OAK_SAPLING: "ултыртылған ҡара имән үҫентеһе"
+  POTTED_DEAD_BUSH: "ултыртылған үле ҡыуаҡ"
+  POTTED_FERN: "ултыртылған ҡаҙаяҡ"
+  POTTED_FLOWERING_AZALEA_BUSH: "игелгән гөлләгән азалия"
+  POTTED_JUNGLE_SAPLING: "ултыртылған тропик ағас үҫентеһе"
+  POTTED_LILY_OF_THE_VALLEY: "ултыртылған ынйы сәскә"
+  POTTED_MANGROVE_PROPAGULE: "игелгән мангр ботағы"
+  POTTED_OAK_SAPLING: "ултыртылған имән үҫентеһе"
+  POTTED_ORANGE_TULIP: "ултыртылған ҡыҙғылт һары ләлә"
+  POTTED_OXEYE_DAISY: "ултыртылған бабунәж"
+  POTTED_PINK_TULIP: "ултыртылған алһыу ләлә"
+  POTTED_POPPY: "ултыртылған мәк"
+  POTTED_RED_MUSHROOM: "ултыртылған ҡыҙыл бәшмәк"
+  POTTED_RED_TULIP: "ултыртылған ҡыҙыл ләлә"
+  POTTED_SPRUCE_SAPLING: "ултыртылған шыршы үҫентеһе"
+  POTTED_TORCHFLOWER: "ултыртылған сыраҡгөл"
+  POTTED_WARPED_FUNGUS: "ултыртылған боҙолған бәшмәге"
+  POTTED_WARPED_ROOTS: "ултыртырған боҙолған тамырҙары"
+  POTTED_WHITE_TULIP: "ултыртылған аҡ ләлә"
+  POTTED_WITHER_ROSE: "ултыртылған визер сәскә"
+  POWDER_SNOW: "көпшәк ҡар"
+  POWDER_SNOW_CAULDRON: "көпшәк ҡар менән ҡаҙан"
+  POWERED_RAIL: "ҡеүәтле тимер юл"
+  PRISMARINE: "призмарин"
+  PRISMARINE_BRICK_SLAB: "призмарин кирбес плитаһы"
+  PRISMARINE_BRICK_STAIRS: "призмарин кирбес баҫҡыстары"
+  PRISMARINE_BRICKS: "призмарин кирбестәре"
+  PRISMARINE_SLAB: "призмарин плитаһы"
+  PRISMARINE_STAIRS: "призмарин баҫҡыстары"
+  PRISMARINE_WALL: "призмарин ҡоймаһы"
+  PUMPKIN: "ҡабаҡ"
+  PUMPKIN_STEM: "ҡабаҡ һабағы"
+  PURPLE_BANNER: "шәмәхә байраҡ"
+  PURPLE_BED: "шәмәхә карауат"
+  PURPLE_CANDLE: "шәмәхә шәм"
+  PURPLE_CANDLE_CAKE: "шәмәхә шәм менән торт"
+  PURPLE_CARPET: "шәмәхә келәм"
+  PURPLE_CONCRETE: "шәмәхә бетон"
+  PURPLE_CONCRETE_POWDER: "шәмәхә ҡоро бетон"
+  PURPLE_GLAZED_TERRACOTTA: "шәмәхә ялтырауыҡлы яндырығашы"
+  PURPLE_SHULKER_BOX: "шәмәхә шалкер ҡумтаһы"
+  PURPLE_STAINED_GLASS: "шәмәхә быяла"
+  PURPLE_STAINED_GLASS_PANE: "шәмәхә биҙәкле быяла"
+  PURPLE_TERRACOTTA: "шәмәхә яндырығашы"
+  PURPLE_WOOL: "шәмәхә йөн"
+  PURPUR_BLOCK: "пурпур"
+  PURPUR_PILLAR: "пурпур бағана"
+  PURPUR_SLAB: "пурпур плитаһы"
+  PURPUR_STAIRS: "пурпур баҫҡыстары"
+  QUARTZ_BLOCK: "кварц блогы"
+  QUARTZ_BRICKS: "кварц кирбестәре"
+  QUARTZ_PILLAR: "кварц бағанаһы"
+  QUARTZ_SLAB: "кварц плитаһы"
+  QUARTZ_STAIRS: "кварц баҫҡыстары"
+  RAIL: "тимер юл"
+  RAW_COPPER_BLOCK: "эшкәртелмәгән баҡыр блогы"
+  RAW_GOLD_BLOCK: "эшкәртелмәгән алтын блогы"
+  RAW_IRON_BLOCK: "эшкәртелмәгән тимер блогы"
+  RED_BANNER: "ҡыҙыл байраҡ"
+  RED_BED: "ҡыҙыл карауат"
+  RED_CANDLE: "ҡыҙыл шәм"
+  RED_CANDLE_CAKE: "ҡыҙыл шәм менән торт"
+  RED_CARPET: "ҡыҙыл келәм"
+  RED_CONCRETE: "ҡыҙыл бетон"
+  RED_CONCRETE_POWDER: "ҡыҙыл ҡоро бетон"
+  RED_GLAZED_TERRACOTTA: "ҡыҙыл ялтырауыҡлы яндырығашы"
+  RED_MUSHROOM: "ҡыҙыл бәшмәк"
+  RED_MUSHROOM_BLOCK: "ҡыҙыл бәшмәк блогы"
+  RED_NETHER_BRICK_SLAB: "ҡыҙыл неҙер кирбес плитаһы"
+  RED_NETHER_BRICK_STAIRS: "ҡыҙыл неҙер кирбес баҫҡыстары"
+  RED_NETHER_BRICK_WALL: "ҡыҙыл неҙер кирбес ҡоймаһы"
+  RED_NETHER_BRICKS: "ҡыҙыл неҙер кирбесе"
+  RED_SAND: "ҡыҙыл ҡом"
+  RED_SANDSTONE: "ҡыҙыл ҡомташ"
+  RED_SANDSTONE_SLAB: "ҡыҙыл ҡомташ плитаһы"
+  RED_SANDSTONE_STAIRS: "ҡыҙыл ҡомташ баҫҡыстары"
+  RED_SANDSTONE_WALL: "ҡыҙыл ҡомташ ҡоймаһы"
+  RED_SHULKER_BOX: "ҡыҙыл шалкер ҡумтаһы"
+  RED_STAINED_GLASS: "ҡыҙыл быяла"
+  RED_STAINED_GLASS_PANE: "ҡыҙыл биҙәкле быяла"
+  RED_TERRACOTTA: "ҡыҙыл яндырығашы"
+  RED_TULIP: "ҡыҙыл ләлә"
+  RED_WOOL: "ҡыҙыл йөн"
+  REDSTONE_BLOCK: "редстоун блогы"
+  REDSTONE_LAMP: "редстоун шәме"
+  REDSTONE_ORE: "редстоун мәғдәне"
+  REDSTONE_TORCH: "редстоун сырағы"
+  REDSTONE_WALL_TORCH: "редстоун диуар сырағы"
+  REDSTONE_WIRE: "редстоун үткәргесе"
+  REINFORCED_DEEPSLATE: "нығыртылған һәүерташ"
+  REPEATER: "редстоун ҡабатлаусы"
+  REPEATING_COMMAND_BLOCK: "ҡабатланған бойороҡ блогы"
+  RESPAWN_ANCHOR: "терелтеү якоры"
+  ROOTED_DIRT: "тамырланған тупраҡ"
+  ROSE_BUSH: "роза ҡыуағы"
+  SAND: "ҡом"
+  SANDSTONE: "ҡомташ"
+  SANDSTONE_SLAB: "ҡомташ плитаһы"
+  SANDSTONE_STAIRS: "ҡомташ баҫҡыстары"
+  SANDSTONE_WALL: "ҡомташ ҡоймаһы"
+  SCAFFOLDING: "баҫма"
+  SCULK: "скалк"
+  SCULK_CATALYST: "скалк катализаторы"
+  SCULK_SENSOR: "скалк сенсор"
+  SCULK_SHRIEKER: "скалк сәрелдәге"
+  SCULK_VEIN: "скалк тамыры"
+  SEA_LANTERN: "диңгеҙ күге"
+  SEA_PICKLE: "диңгеҙ ҡыяры"
+  SEAGRASS: "диңгеҙ уләне"
+  SET_SPAWN: "терелтеү нөктәһе урынлаштырылды"
+  SHORT_GRASS: "бәләкәй үлән"
+  SHROOMLIGHT: "нурбәшмәк"
+  SHULKER_BOX: "шалкер ҡумтаһы"
+  SKELETON_SKULL: "һөлдә башы"
+  SKELETON_WALL_SKULL: "диуарҙағы һөлдә башы"
+  SLIME_BLOCK: "лайлас блогы"
+  SMALL_AMETHYST_BUD: "бәләкәс аметист бөрөһө"
+  SMALL_DRIPLEAF: "кесе тамсыяпраҡ"
+  SMITHING_TABLE: "тимерсенең өҫтәле"
+  SMOKER: "ыҫҡарғы"
+  SMOOTH_BASALT: "шыма базальт"
+  SMOOTH_QUARTZ: "шыма кварц блогы"
+  SMOOTH_QUARTZ_SLAB: "шыма кварц плитаһы"
+  SMOOTH_QUARTZ_STAIRS: "шыма кварц баҫҡыстары"
+  SMOOTH_RED_SANDSTONE: "шыма ҡыҙыл ҡомташ"
+  SMOOTH_RED_SANDSTONE_SLAB: "шыма ҡыҙыл ҡомташ баҫҡыстары"
+  SMOOTH_RED_SANDSTONE_STAIRS: "шыма ҡыҙыл ҡомташ баҫҡыстары"
+  SMOOTH_SANDSTONE: "шыма ҡомташ"
+  SMOOTH_SANDSTONE_SLAB: "шыма ҡомташ плитаһы"
+  SMOOTH_SANDSTONE_STAIRS: "шыма ҡомташ баҫҡыстары"
+  SMOOTH_STONE: "шыма таш"
+  SMOOTH_STONE_SLAB: "шыма таш плитаһы"
+  SNIFFER_EGG: "еҫкәүсе йомортҡаһы"
+  SNOW: "ҡар"
+  SNOW_BLOCK: "ҡар блогы"
+  SOUL_CAMPFIRE: "йән усағы"
+  SOUL_FIRE: "йәнле ут"
+  SOUL_LANTERN: "йән күге"
+  SOUL_SAND: "йәнле ҡом"
+  SOUL_SOIL: "йәнле тупраҡ"
+  SOUL_TORCH: "йәнле сырағы"
+  SOUL_WALL_TORCH: "йәнле диуар сырағы"
+  SPAWN_NOT_VALID: "һеҙҙә кырауат әммә ҡоролған тергеҙеү якоры юҡ йәки улар тыйылған урында"
+  SPAWNER: "ҡурҡыныслыҡ яралтыҡысы"
+  SPAWNER_DESC1: "сыҡарыу йомортҡаһы менән йоҡташыу:"
+  SPAWNER_DESC2: "моб төрөн билдәләй"
+  SPONGE: "болот"
+  SPORE_BLOSSOM: "спора сәскәлеге"
+  SPRUCE_BUTTON: "шыршы төймәһе"
+  SPRUCE_DOOR: "шыршы ишеге"
+  SPRUCE_FENCE: "шыршы ҡоймаһы"
+  SPRUCE_FENCE_GATE: "шыршы ҡапҡаһы"
+  SPRUCE_HANGING_SIGN: "шыршы алтаҡта"
+  SPRUCE_LEAVES: "шыршы япраҡтары"
+  SPRUCE_LOG: "шыршы бүрәнәһе"
+  SPRUCE_PLANKS: "шыршы таҡталары"
+  SPRUCE_PRESSURE_PLATE: "шыршы ҡыҫым плитаһы"
+  SPRUCE_SAPLING: "шыршы үҫентеһе"
+  SPRUCE_SIGN: "шыршы яҙмаҡсалығы"
+  SPRUCE_SLAB: "шыршы плитаһы"
+  SPRUCE_STAIRS: "шыршы баҫҡыстары"
+  SPRUCE_TRAPDOOR: "шыршы люгы"
+  SPRUCE_WALL_HANGING_SIGN: "шыршы диуар алтаҡтаһы"
+  SPRUCE_WALL_SIGN: "шыршы диуар билдәһе"
+  SPRUCE_WOOD: "шыршы"
+  STICKY_PISTON: "йәбешкәк бешкәк"
+  STONE: "таш"
+  STONE_BRICK_SLAB: "таш кирбес плитаһы"
+  STONE_BRICK_STAIRS: "таш кирбес баҫҡыстары"
+  STONE_BRICK_WALL: "таш кирбес ҡоймаһы"
+  STONE_BRICKS: "таш кирбестәре"
+  STONE_BUTTON: "таш төймә"
+  STONE_PRESSURE_PLATE: "таш ҡыҫым плитаһы"
+  STONE_SLAB: "таш плитаһы"
+  STONE_STAIRS: "таш баҫҡыстары"
+  STONECUTTER: "ташкиҫкес"
+  STRIPPED_ACACIA_LOG: "юнылған сәрүәр бүрәнәһе"
+  STRIPPED_ACACIA_WOOD: "юнылған сәрүәр"
+  STRIPPED_BAMBOO_BLOCK: "юнылған бамбук блогы"
+  STRIPPED_BIRCH_LOG: "юнылған ҡайын бүрәнәһе"
+  STRIPPED_BIRCH_WOOD: "юнылған ҡайын"
+  STRIPPED_CHERRY_LOG: "юнылған сейә ағас бүрәнәһе"
+  STRIPPED_CHERRY_WOOD: "юнылған сейә ағас"
+  STRIPPED_CRIMSON_HYPHAE: "юнылған бурлат һифалары"
+  STRIPPED_CRIMSON_STEM: "юнылған бурлат һабағы"
+  STRIPPED_DARK_OAK_LOG: "юнылған ҡара имән бүрәнәһе"
+  STRIPPED_DARK_OAK_WOOD: "юнылған ҡара имән"
+  STRIPPED_JUNGLE_LOG: "юнылған тропик ағас бүрәнәһе"
+  STRIPPED_JUNGLE_WOOD: "юнылған тропик ағасы"
+  STRIPPED_MANGROVE_LOG: "юнылған мангр бүрәнәһе"
+  STRIPPED_MANGROVE_WOOD: "юнылған мангр ағасы"
+  STRIPPED_OAK_LOG: "юнылған имән бүрәнәһе"
+  STRIPPED_OAK_WOOD: "юнылған имән"
+  STRIPPED_SPRUCE_LOG: "юнылған шыршы бүрәнәһе"
+  STRIPPED_SPRUCE_WOOD: "юнылған шыршы"
+  STRIPPED_WARPED_HYPHAE: "юнылған боҙолған һифалары"
+  STRIPPED_WARPED_STEM: "юнылған боҙолған һабағы"
+  STRUCTURE_BLOCK: "структуралыҡ блогы"
+  STRUCTURE_VOID: "буш блогы"
+  SUGAR_CANE: "ҡәнд ҡамышы"
+  SUNFLOWER: "көнбағыш"
+  SUSPICIOUS_GRAVEL: "серле ҡырсынташ"
+  SUSPICIOUS_SAND: "серле ҡом"
+  SWEET_BERRY_BUSH: "тәмле-татлы емеш ҡыуағы"
+  TALL_GRASS: "бейек үлән"
+  TALL_SEAGRASS: "бейек диңгез үләне"
+  TARGET: "сәп"
+  TERRACOTTA: "терракота"
+  TINTED_GLASS: "ҡараңғыланған быяла"
+  TNT: "динамит"
+  TORCH: "сыраҡ"
+  TORCHFLOWER: "сыраҡгөл"
+  TORCHFLOWER_CROP: "сыраҡгөл шытымы"
+  TRAPPED_CHEST: "ҡапҡан-һандыҡ"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "киремтә"
+  TRIPWIRE_HOOK: "ырғаҡ"
+  TUBE_CORAL: "көпшәле мәрйен"
+  TUBE_CORAL_BLOCK: "көпшәле мәрйен блогы"
+  TUBE_CORAL_FAN: "елпеүесле көпшәлек мәрйен"
+  TUBE_CORAL_WALL_FAN: "ятма елпеүесле көпшәлек мәрйен"
+  TUFF: "туф"
+  TUFF_BRICK_SLAB: "туф кирбес плитаһы"
+  TUFF_BRICK_STAIRS: "туф кирбес баҫҡыстары"
+  TUFF_BRICK_WALL: "туф кирбес ҡоймаһы"
+  TUFF_BRICKS: "туф кирбестәре"
+  TUFF_SLAB: "туф плитаһы"
+  TUFF_STAIRS: "туф баҫҡыстары"
+  TUFF_WALL: "туф ҡоймаһы"
+  TURTLE_EGG: "гөбөргәйел йомортҡаһы"
+  TWISTING_VINES: "сырмалыусан тал"
+  TWISTING_VINES_PLANT: "сырмалыусан тал һабағы"
+  VERDANT_FROGLIGHT: "үлән төҫлө яҡтыбаҡа"
+  VINE: "лианалар"
+  VOID_AIR: "вакуум"
+  WALL_TORCH: "диуар сырағы"
+  WARPED_BUTTON: "боҙолған төймә"
+  WARPED_DOOR: "боҙолған ишек"
+  WARPED_FENCE: "боҙолған ҡоймалар"
+  WARPED_FENCE_GATE: "боҙолған ҡапҡаһы"
+  WARPED_FUNGUS: "боҙолған бәшмәк"
+  WARPED_HANGING_SIGN: "боҙолған алтаҡта"
+  WARPED_HYPHAE: "боҙолған һифалары"
+  WARPED_NYLIUM: "боҙолған нәҙмәклек"
+  WARPED_PLANKS: "боҙолған таҡталары"
+  WARPED_PRESSURE_PLATE: "боҙолған ҡыҫым плитаһы"
+  WARPED_ROOTS: "боҙолған тамырҙар"
+  WARPED_SIGN: "боҙолған яҙмаҡсалығы"
+  WARPED_SLAB: "боҙолған плитаһы"
+  WARPED_STAIRS: "боҙолған баҫҡыстар"
+  WARPED_STEM: "боҙолған һабаҡ"
+  WARPED_TRAPDOOR: "боҙолған люгы"
+  WARPED_WALL_HANGING_SIGN: "боҙолған диуар алтаҡтаһы"
+  WARPED_WALL_SIGN: "боҙолған диуар алтаҡтаһы"
+  WARPED_WART_BLOCK: "боҙолған ҡатлам блогы"
+  WATER: "һыу"
+  WATER_CAULDRON: "һыу менән ҡаҙан"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "балауыҙланған баҡыр блогы"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "балауыҙланған һырлы баҡыр"
+  WAXED_CUT_COPPER_SLAB: "балауыҙланған һырлы баҡыр плитаһы"
+  WAXED_CUT_COPPER_STAIRS: "балауыҙланған һырлы баҡыр баҫҡыстары"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "ҡарайған балауыҙланған баҡыр"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "ҡарайған балауыҙланған һырлы баҡыр"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "ҡарайған балауыҙланған һырлы баҡыр плитаһы"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "ҡарайған балауыҙланған һырлы баҡыр баҫҡыстары"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "окисланған балауыҙланған баҡыр"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "окисланған балауыҙланған һырлы баҡыр"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "окисланған балауыҙланған һырлы баҡыр плитаһы"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "окисланған балауыҙланған һырлы баҡыр баҫҡыстары"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "балауыҙлы күгәргән баҡыр"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "окисланып бөтмәгән балауыҙланған һырлы баҡыр"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "окисланып бөтмәгән балауыҙланған һырлы баҡыр плитаһы"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "окисланып бөтмәгән балауыҙланған һырлы баҡыр баҫҡыстары"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "күгәргән баҡыр"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "күгәргән һырлы баҡыр"
+  WEATHERED_CUT_COPPER_SLAB: "күгәргән һырлы баҡыр плитаһы"
+  WEATHERED_CUT_COPPER_STAIRS: "күгәргән һырлы баҡыр баҫҡыстары"
+  WEEPING_VINES: "илаҡсы тал"
+  WEEPING_VINES_PLANT: "илаҡсының тал һабағы"
+  WET_SPONGE: "еүеш болот"
+  WHEAT: "бойҙай шытымҙары"
+  WHITE_BANNER: "аҡ байраҡ"
+  WHITE_BED: "аҡ карауат"
+  WHITE_CANDLE: "аҡ шәм"
+  WHITE_CANDLE_CAKE: "аҡ шәм менән торт"
+  WHITE_CARPET: "аҡ келәм"
+  WHITE_CONCRETE: "аҡ бетон"
+  WHITE_CONCRETE_POWDER: "аҡ ҡоро бетон"
+  WHITE_GLAZED_TERRACOTTA: "аҡ шалкер ҡумтаһы"
+  WHITE_SHULKER_BOX: "аҡ шалкер ҡумтаһы"
+  WHITE_STAINED_GLASS: "аҡ быяла"
+  WHITE_STAINED_GLASS_PANE: "аҡ биҙәкле быяла"
+  WHITE_TERRACOTTA: "аҡ яндырығашы"
+  WHITE_TULIP: "аҡ ләлә"
+  WHITE_WOOL: "аҡ йөн"
+  WITHER_ROSE: "виҙер сәскә"
+  WITHER_SKELETON_SKULL: "виҙер-һөлдә башы"
+  WITHER_SKELETON_WALL_SKULL: "диуарҙағы визер-һөлдә башы"
+  YELLOW_BANNER: "һары байраҡ"
+  YELLOW_BED: "һары карауат"
+  YELLOW_CANDLE: "һары шәм"
+  YELLOW_CANDLE_CAKE: "һары шәм менән торт"
+  YELLOW_CARPET: "һары келәм"
+  YELLOW_CONCRETE: "һары бетон"
+  YELLOW_CONCRETE_POWDER: "һары ҡоро бетон"
+  YELLOW_GLAZED_TERRACOTTA: "һары ялтырауыҡлы яндырығашы"
+  YELLOW_SHULKER_BOX: "һары шалкер ҡумтаһы"
+  YELLOW_STAINED_GLASS: "һары быяла"
+  YELLOW_STAINED_GLASS_PANE: "һары биҙәкле быяла"
+  YELLOW_TERRACOTTA: "һары яндырығашы"
+  YELLOW_WOOL: "һары йөн"
+  ZOMBIE_HEAD: "зомби башы"
+  ZOMBIE_WALL_HEAD: "диуарҙағы зомби башы"
+  ACACIA_BOAT: "сәрүәр кәмәһе"
+  ACACIA_CHEST_BOAT: "һандыҡлы сәрүәр кәмәһе"
+  ALLAY_SPAWN_EGG: "йыуатар саҡырыу йомортҡаһы"
+  AMETHYST_SHARD: "аметист ярсығы"
+  ANGLER_POTTERY_SHARD: "«балыҡсы» сүлмәк ватығы"
+  ANGLER_POTTERY_SHERD: "«балыҡсы» сүлмәк ватығы"
+  APPLE: "алма"
+  ARCHER_POTTERY_SHARD: "«уҡсы» сүлмәк ватығы"
+  ARCHER_POTTERY_SHERD: "«уҡсы» сүлмәк ватығы"
+  ARMOR_STAND: "ҡояҡ терәге"
+  ARMS_UP_POTTERY_SHARD: "«ҡулдарҙы өҫкә» сүлмәк ватығы"
+  ARMS_UP_POTTERY_SHERD: "«ҡулдарҙы өҫкә» сүлмәк ватығы"
+  ARROW: "уҡ"
+  AXOLOTL_BUCKET: "силәктәге аксолотль"
+  AXOLOTL_SPAWN_EGG: "аксолотль саҡырыу йомортҡаһы"
+  BAKED_POTATO: "бешерелгән бәрәңге"
+  BAMBOO_CHEST_RAFT: "һандыҡлы бамбук һал"
+  BAMBOO_RAFT: "бамбук һал"
+  BAT_SPAWN_EGG: "ярғанат саҡырыу йомортҡаһы"
+  BEE_SPAWN_EGG: "бал ҡорто саҡырыу йомортҡаһы"
+  BEEF: "сей һыйыр ите"
+  BEETROOT: "сөгөлдөр"
+  BEETROOT_SEEDS: "сөгөлдөр орлоҡтары"
+  BEETROOT_SOUP: "сөгөлдөр һурпаһы"
+  BIRCH_BOAT: "ҡайын кәмәһе"
+  BIRCH_CHEST_BOAT: "һандыҡлы ҡайын кәмәһе"
+  BLACK_DYE: "ҡара буяу"
+  BLADE_POTTERY_SHARD: "«ҡылыс» сүлмәк ватығы"
+  BLADE_POTTERY_SHERD: "«ҡылыс» сүлмәк ватығы"
+  BLAZE_POWDER: "ғифриттың онтағы"
+  BLAZE_ROD: "ғифрит үҙәге"
+  BLAZE_SPAWN_EGG: "ғифрит саҡырыу йомортҡаһы"
+  BLUE_DYE: "күк буяу"
+  BONE: "һөйәк"
+  BONE_MEAL: "һөйәк оно"
+  BOOK: "китап"
+  BOW: "йәйә"
+  BOWL: "сеүәтә"
+  BREAD: "икмәк"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "«ҡайнатыусы» сүлмәк ватығы"
+  BREWER_POTTERY_SHERD: "«ҡайнатыусы» сүлмәк ватығы"
+  BRICK: "кирбес"
+  BROWN_DYE: "көрән буяу"
+  BRUSH: "бумала"
+  BUCKET: "силәк"
+  BUNDLE: "тоҡ"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "«ут» сүлмәк ватығы"
+  BURN_POTTERY_SHERD: "«ут» сүлмәк ватығы"
+  CAMEL_SPAWN_EGG: "дөйә саҡырыу йомортҡаһы"
+  CARROT: "кишер"
+  CARROT_ON_A_STICK: "кишерле ҡармаҡ"
+  CAT_SPAWN_EGG: "бесәйе саҡырыу йомортҡаһы"
+  CAVE_SPIDER_SPAWN_EGG: "мәмерйә үрмәксе саҡырыу йомортҡаһы"
+  CHAINMAIL_BOOTS: "һайман итек"
+  CHAINMAIL_CHESTPLATE: "һайман"
+  CHAINMAIL_HELMET: "койф"
+  CHAINMAIL_LEGGINGS: "һайман салбар"
+  CHARCOAL: "ағас күмере"
+  CHERRY_BOAT: "сейә ағас кәмәһе"
+  CHERRY_CHEST_BOAT: "һандыҡлы сейә ағас кәмәһе"
+  CHEST_MINECART: "һандыҡ менән вагонетка"
+  CHICKEN: "сей тауыҡ ите"
+  CHICKEN_SPAWN_EGG: "тауыҡ саҡырыу йомортҡаһы"
+  CHORUS_FRUIT: "хорус емеше"
+  CLAY_BALL: "балсыҡ төйөрө"
+  CLOCK: "сәғәт"
+  COAL: "күмер"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  COCOA_BEANS: "какао-борсаҡтары"
+  COD: "сей тәрәс"
+  COD_BUCKET: "силәктәге тәрәс"
+  COD_SPAWN_EGG: "тәрәс саҡырыу йомортҡаһы"
+  COMMAND_BLOCK_MINECART: "бойороҡ блоклы вагонетка"
+  COMPASS: "компас"
+  COOKED_BEEF: "стейк"
+  COOKED_CHICKEN: "ҡурылған тауыҡ ите"
+  COOKED_COD: "ҡурылған тәрәс"
+  COOKED_MUTTON: "ҡурылған һарыҡ ите"
+  COOKED_PORKCHOP: "ҡурылған сусҡа ите"
+  COOKED_RABBIT: "ҡурылған ҡуян ите"
+  COOKED_SALMON: "ҡурылған һөмбаш"
+  COOKIE: "печенье"
+  COPPER_INGOT: "баҡыр ҡойолмаһы"
+  COW_SPAWN_EGG: "һыйыр саҡырыу йомортҡаһы"
+  CREEPER_BANNER_PATTERN: "байраҡ биҙәге"
+  CREEPER_BANNER_PATTERN_DESC: "крипер"
+  CREEPER_SPAWN_EGG: "крипер саҡырыу йомортҡаһы"
+  CROSSBOW: "арбалет"
+  CROSSBOW_PROJECTILE: "тулым:"
+  CYAN_DYE: "фирүзә буяу"
+  DANGER_POTTERY_SHARD: "«хәүефлелек» сүлмәк ватығы"
+  DANGER_POTTERY_SHERD: "«хәүефлелек» сүлмәк ватығы"
+  DARK_OAK_BOAT: "ҡара имән кәмәһе"
+  DARK_OAK_CHEST_BOAT: "һандыҡлы имән ағасынан кәмә"
+  DEBUG_STICK: "төҙәтеү таяҡсаһы"
+  DEBUG_STICK_EMPTY: "%s үҙенсәлектәре юҡ"
+  DEBUG_STICK_SELECT: "«%s» (%s) һайланған"
+  DEBUG_STICK_UPDATE: "«%s»: %s"
+  DIAMOND: "алмас"
+  DIAMOND_AXE: "алмас балта"
+  DIAMOND_BOOTS: "алмаслы итек"
+  DIAMOND_CHESTPLATE: "алмас күкрәксә"
+  DIAMOND_HELMET: "алмас торҡа"
+  DIAMOND_HOE: "алмас кетмән"
+  DIAMOND_HORSE_ARMOR: "ат алмас ҡояғы"
+  DIAMOND_LEGGINGS: "алмаслы салбар"
+  DIAMOND_PICKAXE: "алмас кәйлә"
+  DIAMOND_SHOVEL: "алмас көрәк"
+  DIAMOND_SWORD: "алмас ҡылыс"
+  DISC_FRAGMENT_5: "пластинка фрагменты"
+  DISC_FRAGMENT_5_DESC: "пластинка — 5"
+  DOLPHIN_SPAWN_EGG: "дельфин саҡырыу йомортҡаһы"
+  DONKEY_SPAWN_EGG: "ишәк саҡырыу йомортҡаһы"
+  DRAGON_BREATH: "аждаһа тыны"
+  DRIED_KELP: "киптерелгән диңгеҙ кәбеҫтәһе"
+  DROWNED_SPAWN_EGG: "батҡын саҡырыу йомортҡаһы"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  ECHO_SHARD: "шаңдау ярсығы"
+  EGG: "йомортҡа"
+  ELDER_GUARDIAN_SPAWN_EGG: "боронғо һаҡлаусы саҡырыу йомортҡаһы"
+  ELYTRA: "элитралар"
+  EMERALD: "зөбәржәт"
+  ENCHANTED_BOOK: "сихырлы китап"
+  ENCHANTED_GOLDEN_APPLE: "сихырлы алтын алма"
+  END_CRYSTAL: "энд кристаллы"
+  ENDER_DRAGON_SPAWN_EGG: "эндер аждаһа саҡырыу йомортҡаһы"
+  ENDER_EYE: "эндер күҙе"
+  ENDER_PEARL: "эндер-ынйы"
+  ENDERMAN_SPAWN_EGG: "эндермен саҡырыу йомортҡаһы"
+  ENDERMITE_SPAWN_EGG: "эндермит саҡырыу йомортҡаһы"
+  EVOKER_SPAWN_EGG: "арбаусы саҡырыу йомортҡаһы"
+  EXPERIENCE_BOTTLE: "сихырлы шешә"
+  EXPLORER_POTTERY_SHARD: "«тикшеренеүсе» сүлмәк ватығы"
+  EXPLORER_POTTERY_SHERD: "«тикшеренеүсе» сүлмәк ватығы"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  FEATHER: "ҡауырһын"
+  FERMENTED_SPIDER_EYE: "маринадланған үрмәксенең күҙе"
+  FILLED_MAP: "ерһүрәт"
+  FIRE_CHARGE: "ут заряды"
+  FIREWORK_ROCKET: "фейерверк"
+  FIREWORK_ROCKET_FLIGHT: "осоу дауамлығы:"
+  FIREWORK_STAR: "фейерверк йондоҙо"
+  FIREWORK_STAR_BLACK: "ҡара"
+  FIREWORK_STAR_BLUE: "күк"
+  FIREWORK_STAR_BROWN: "кәрән"
+  FIREWORK_STAR_CUSTOM_COLOR: "ҡулланыусылы"
+  FIREWORK_STAR_CYAN: "фирүзә"
+  FIREWORK_STAR_FADE_TO: "даими һүнеүе"
+  FIREWORK_STAR_FLICKER: "йымылдау"
+  FIREWORK_STAR_GRAY: "һоро"
+  FIREWORK_STAR_GREEN: "йәшел"
+  FIREWORK_STAR_LIGHT_BLUE: "зәңгәр"
+  FIREWORK_STAR_LIGHT_GRAY: "аҡһыл һоро"
+  FIREWORK_STAR_LIME: "йәшкелт"
+  FIREWORK_STAR_MAGENTA: "ҡуйы ҡыҙыл"
+  FIREWORK_STAR_ORANGE: "хәнәүәт"
+  FIREWORK_STAR_PINK: "алһыу"
+  FIREWORK_STAR_PURPLE: "шәмәхә"
+  FIREWORK_STAR_RED: "ҡыҙыл"
+  FIREWORK_STAR_SHAPE: "билдәһеҙ форма"
+  FIREWORK_STAR_SHAPE_BURST: "супылдатыу"
+  FIREWORK_STAR_SHAPE_CREEPER: "крипер һымаҡ"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "оло йомғаҡ"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "кесе шар"
+  FIREWORK_STAR_SHAPE_STAR: "йондоҙ һымаҡ"
+  FIREWORK_STAR_TRAIL: "эҙ"
+  FIREWORK_STAR_WHITE: "аҡ"
+  FIREWORK_STAR_YELLOW: "һары"
+  FISHING_ROD: "ҡармаҡ"
+  FLINT: "саҡматаш"
+  FLINT_AND_STEEL: "саҡма"
+  FLOWER_BANNER_PATTERN: "байраҡ биҙәге"
+  FLOWER_BANNER_PATTERN_DESC: "сәскә"
+  FOX_SPAWN_EGG: "төлкө саҡырыу йомортҡаһы"
+  FRIEND_POTTERY_SHARD: "«дуҫ» сүлмәк ватығы"
+  FRIEND_POTTERY_SHERD: "«дуҫ» сүлмәк ватығы"
+  FROG_SPAWN_EGG: "телмәрйен саҡырыу йомортҡаһы"
+  FURNACE_MINECART: "вагонетка мейес менән"
+  GHAST_SPAWN_EGG: "гаст саҡырыу йомортҡаһы"
+  GHAST_TEAR: "гаст йәше"
+  GLASS_BOTTLE: "кесе шешә"
+  GLISTERING_MELON_SLICE: "ялтырап торған ҡарбуз телеме"
+  GLOBE_BANNER_PATTERN: "байраҡ биҙәге"
+  GLOBE_BANNER_PATTERN_DESC: "глобус"
+  GLOW_BERRIES: "яҡты емештәр"
+  GLOW_INK_SAC: "яҡты ҡара тоғо"
+  GLOW_ITEM_FRAME: "яҡты ҡыҫан"
+  GLOW_SQUID_SPAWN_EGG: "яҡты һигеҙаяҡ саҡырыу йомортҡаһы"
+  GLOWSTONE_DUST: "яҡтыташ туҙаны"
+  GOAT_HORN: "кәзә мөгөҙө"
+  GOAT_SPAWN_EGG: "кәзә саҡырыу йомортҡаһы"
+  GOLD_INGOT: "алтын ҡойолма"
+  GOLD_NUGGET: "алтын киҫәге"
+  GOLDEN_APPLE: "алтын алма"
+  GOLDEN_AXE: "алтын балта"
+  GOLDEN_BOOTS: "алтын итек"
+  GOLDEN_CARROT: "алтын кишер"
+  GOLDEN_CHESTPLATE: "алтын күкрәксә"
+  GOLDEN_HELMET: "алтын торҡа"
+  GOLDEN_HOE: "алтын кетмән"
+  GOLDEN_HORSE_ARMOR: "аттың алтын ҡояғы"
+  GOLDEN_LEGGINGS: "алтын салбар"
+  GOLDEN_PICKAXE: "алтын кәйлә"
+  GOLDEN_SHOVEL: "алтын көрәк"
+  GOLDEN_SWORD: "алтын ҡылыс"
+  GRAY_DYE: "һоро буяу"
+  GREEN_DYE: "йәшел буяу"
+  GUARDIAN_SPAWN_EGG: "һаҡлаусы саҡырыу йомортҡаһы"
+  GUNPOWDER: "дары"
+  HEART_OF_THE_SEA: "диңгеҙ йөрәге"
+  HEART_POTTERY_SHARD: "«йөрәк» сүлмәк ватығы"
+  HEART_POTTERY_SHERD: "«йөрәк» сүлмәк ватығы"
+  HEARTBREAK_POTTERY_SHARD: "«яраланған йөрәк» сүлмәк ватығы"
+  HEARTBREAK_POTTERY_SHERD: "«яраланған йөрәк» сүлмәк ватығы"
+  HOGLIN_SPAWN_EGG: "һоглин саҡырыу йомортҡаһы"
+  HONEY_BOTTLE: "бал шешәһе"
+  HONEYCOMB: "ҡорт кәрәҙҙәре"
+  HOPPER_MINECART: "вагонетка буранка менән"
+  HORSE_SPAWN_EGG: "ат саҡырыу йомортҡаһы"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  HOWL_POTTERY_SHARD: "«олоу» сүлмәк ватығы"
+  HOWL_POTTERY_SHERD: "«олоу» сүлмәк ватығы"
+  HUSK_SPAWN_EGG: "үлек саҡырыу йомортҡаһы"
+  INK_SAC: "ҡара тоғо"
+  IRON_AXE: "тимер балта"
+  IRON_BOOTS: "тимер итек"
+  IRON_CHESTPLATE: "тимер күкрәксә"
+  IRON_GOLEM_SPAWN_EGG: "тимер голем саҡырыу йомортҡаһы"
+  IRON_HELMET: "тимер торҡа"
+  IRON_HOE: "тимер кетмән"
+  IRON_HORSE_ARMOR: "аттың тимер ҡояғы"
+  IRON_INGOT: "тимер ҡойолма"
+  IRON_LEGGINGS: "тимер салбар"
+  IRON_NUGGET: "тимерҙең киҫәге"
+  IRON_PICKAXE: "тимер кәйлә"
+  IRON_SHOVEL: "тимер көрәк"
+  IRON_SWORD: "тимер ҡылыс"
+  ITEM_FRAME: "ҡыҫан"
+  JUNGLE_BOAT: "тропик ағас кәмәһе"
+  JUNGLE_CHEST_BOAT: "һандыҡлы тропик ағас кәмәһе"
+  KNOWLEDGE_BOOK: "белем китабы"
+  LAPIS_LAZULI: "лазурит"
+  LAVA_BUCKET: "лава силәге"
+  LEAD: "сылбыр"
+  LEATHER: "тире"
+  LEATHER_BOOTS: "күн итек"
+  LEATHER_CHESTPLATE: "күн бәрте"
+  LEATHER_HELMET: "күн торҡа"
+  LEATHER_HORSE_ARMOR: "ат күн ҡалҡаны"
+  LEATHER_LEGGINGS: "күн салбар"
+  LIGHT_BLUE_DYE: "зәңгәр буяу"
+  LIGHT_GRAY_DYE: "аҡһыл һоро буяу"
+  LIME_DYE: "йәшкелт буяуыс"
+  LINGERING_POTION: "томанлы төнәтмә"
+  LINGERING_POTION_EFFECT_AWKWARD: "тоноҡ томанлы төнәтмә"
+  LINGERING_POTION_EFFECT_EMPTY: "томанлы булдырмай торған эсемелге"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "томанлы утҡа сыҙамлылыҡ төнәтмә"
+  LINGERING_POTION_EFFECT_HARMING: "томанлы зыян төнәтмәһе"
+  LINGERING_POTION_EFFECT_HEALING: "томанлы шифа төнәтмәһе"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "томанлы күренмәйһеҙлек биреү төнәтмә"
+  LINGERING_POTION_EFFECT_LEAPING: "томанлы һикереү төнәтмәһе"
+  LINGERING_POTION_EFFECT_LEVITATION: "томанлы левитация төнәтмәһе"
+  LINGERING_POTION_EFFECT_LUCK: "томанлы уңыш төнәтмәһе"
+  LINGERING_POTION_EFFECT_MUNDANE: "ябай томанлы төнәтмә"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "томанлы төн күреү төнәтмәһе"
+  LINGERING_POTION_EFFECT_POISON: "томанлы ағыуланыу төнәтмәһе"
+  LINGERING_POTION_EFFECT_REGENERATION: "томанлы регенерация төнәтмәһе"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "томанлы талғын йығылыу төнәтмәһе"
+  LINGERING_POTION_EFFECT_SLOWNESS: "томанлы аҡрынайыу төнәтмәһе"
+  LINGERING_POTION_EFFECT_STRENGTH: "томанлы көс төнәтмәһе"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "томанлы тиҙлек төнәтмә"
+  LINGERING_POTION_EFFECT_THICK: "ҡуйы томанлы төнәтмә"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "томанлы гөбөргәйелдең көс төнәтмәһе"
+  LINGERING_POTION_EFFECT_WATER: "томанлы һыу төнәтмә"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "томанлы һыу тын төнәтмәһе"
+  LINGERING_POTION_EFFECT_WEAKNESS: "томанлы көсһеҙлек төнәтмәһе"
+  LLAMA_SPAWN_EGG: "лама саҡырыу йомортҡаһы"
+  LODESTONE_COMPASS: "магнитланған компас"
+  MAGENTA_DYE: "ҡуйы ҡыҙыл буяу"
+  MAGMA_CREAM: "магма ҡуйырығы"
+  MAGMA_CUBE_SPAWN_EGG: "магма кубы саҡырыу йомортҡаһы"
+  MANGROVE_BOAT: "мангр кәмәһе"
+  MANGROVE_CHEST_BOAT: "һандыҡлы мангр ағасынан кәмә"
+  MAP: "буш ерһүрәт"
+  MELON_SEEDS: "ҡарбуз орлоҡтары"
+  MELON_SLICE: "ҡарбуз телеме"
+  MILK_BUCKET: "һөт силәге"
+  MINECART: "вагонетка"
+  MINER_POTTERY_SHARD: "«шахтасы» сүлмәк ватығы"
+  MINER_POTTERY_SHERD: "«шахтасы» сүлмәк ватығы"
+  MOJANG_BANNER_PATTERN: "байраҡ биҙәге"
+  MOJANG_BANNER_PATTERN_DESC: "бер нәмә"
+  MOOSHROOM_SPAWN_EGG: "муурҡышы саҡырыу йомортҡаһы"
+  MOURNER_POTTERY_SHARD: "«ҡайғы» сүлмәк ватығы"
+  MOURNER_POTTERY_SHERD: "«ҡайғы» сүлмәк ватығы"
+  MULE_SPAWN_EGG: "ҡасыр саҡырыу йомортҡаһы"
+  MUSHROOM_STEW: "быҡтырылған бәшмәк"
+  MUSIC_DISC_11: "пластинка"
+  MUSIC_DISC_11_DESC: "c418 — 11"
+  MUSIC_DISC_13: "пластинка"
+  MUSIC_DISC_13_DESC: "c418 — 13"
+  MUSIC_DISC_5: "пластинка"
+  MUSIC_DISC_5_DESC: "самуэль оберг — 5"
+  MUSIC_DISC_BLOCKS: "пластинка"
+  MUSIC_DISC_BLOCKS_DESC: "c418 — blocks"
+  MUSIC_DISC_CAT: "пластинка"
+  MUSIC_DISC_CAT_DESC: "c418 — cat"
+  MUSIC_DISC_CHIRP: "пластинка"
+  MUSIC_DISC_CHIRP_DESC: "c418 — chirp"
+  MUSIC_DISC_FAR: "пластинка"
+  MUSIC_DISC_FAR_DESC: "c418 — far"
+  MUSIC_DISC_MALL: "пластинка"
+  MUSIC_DISC_MALL_DESC: "c418 — mall"
+  MUSIC_DISC_MELLOHI: "пластинка"
+  MUSIC_DISC_MELLOHI_DESC: "c418 — mellohi"
+  MUSIC_DISC_OTHERSIDE: "пластинка"
+  MUSIC_DISC_OTHERSIDE_DESC: "лина рейн — otherside"
+  MUSIC_DISC_PIGSTEP: "пластинка"
+  MUSIC_DISC_PIGSTEP_DESC: "лина рейн — pigstep"
+  MUSIC_DISC_RELIC: "пластинка"
+  MUSIC_DISC_RELIC_DESC: "аарон шероф — relic"
+  MUSIC_DISC_STAL: "пластинка"
+  MUSIC_DISC_STAL_DESC: "c418 — stal"
+  MUSIC_DISC_STRAD: "пластинка"
+  MUSIC_DISC_STRAD_DESC: "c418 — strad"
+  MUSIC_DISC_WAIT: "пластинка"
+  MUSIC_DISC_WAIT_DESC: "c418 — wait"
+  MUSIC_DISC_WARD: "пластинка"
+  MUSIC_DISC_WARD_DESC: "c418 — ward"
+  MUTTON: "сей һарыҡ ите"
+  NAME_TAG: "ярлыҡ"
+  NAUTILUS_SHELL: "наутилус ҡабырсағы"
+  NETHER_BRICK: "неҙер кирбесе"
+  NETHER_STAR: "неҙер йондоҙо"
+  NETHERITE_AXE: "неҙерит балтаһы"
+  NETHERITE_BOOTS: "неҙерит итеге"
+  NETHERITE_CHESTPLATE: "неҙеритлы күкрәксә"
+  NETHERITE_HELMET: "неҙеритлы торҡа"
+  NETHERITE_HOE: "неҙерит кетмән"
+  NETHERITE_INGOT: "неҙерит ҡойолмаһы"
+  NETHERITE_LEGGINGS: "неҙерит салбары"
+  NETHERITE_PICKAXE: "неҙерит кәйләһе"
+  NETHERITE_SCRAP: "неҙерит вайранлығы"
+  NETHERITE_SHOVEL: "неҙерит көрәге"
+  NETHERITE_SWORD: "неҙерит ҡылысы"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  OAK_BOAT: "имән кәмәһе"
+  OAK_CHEST_BOAT: "һандыҡлы имән кәмәһе"
+  OCELOT_SPAWN_EGG: "оцелот саҡырыу йомортҡаһы"
+  ORANGE_DYE: "хәнәүәт буяу"
+  PAINTING: "рәсем"
+  PANDA_SPAWN_EGG: "панда саҡырыу йомортҡаһы"
+  PAPER: "ҡағыҙ"
+  PARROT_SPAWN_EGG: "тутыйғош саҡырыу йомортҡаһы"
+  PHANTOM_MEMBRANE: "өрәк мембранаһы"
+  PHANTOM_SPAWN_EGG: "өйрәк саҡырыу йомортҡаһы"
+  PIG_SPAWN_EGG: "сусҡа саҡырыу йомортҡаһы"
+  PIGLIN_BANNER_PATTERN: "байраҡ биҙәге"
+  PIGLIN_BANNER_PATTERN_DESC: "томшоҡ"
+  PIGLIN_BRUTE_SPAWN_EGG: "тупаҫ пиглин саҡырыу йомортҡаһы"
+  PIGLIN_SPAWN_EGG: "пиглин саҡырыу йомортҡаһы"
+  PILLAGER_SPAWN_EGG: "юлбаҫар саҡырыу йомортҡаһы"
+  PINK_DYE: "алһыу буяу"
+  PITCHER_POD: "ҡомғансы ҡуҙағы"
+  PLENTY_POTTERY_SHARD: "«муллыҡ» сүлмәк ватығы"
+  PLENTY_POTTERY_SHERD: "«муллыҡ» сүлмәк ватығы"
+  POISONOUS_POTATO: "ағыулы бәрәңге"
+  POLAR_BEAR_SPAWN_EGG: "аҡ айыу саҡырыу йомортҡаһы"
+  POPPED_CHORUS_FRUIT: "ҡурылған хорус емеше"
+  PORKCHOP: "сей сусҡа ите"
+  POTATO: "бәрәңге"
+  POTION: "төнәтмә"
+  POTION_EFFECT_AWKWARD: "тоноҡ төнәтмә"
+  POTION_EFFECT_EMPTY: "булдырмай торған төнәтмә"
+  POTION_EFFECT_FIRE_RESISTANCE: "утҡа сыҙамлы төнәтмә"
+  POTION_EFFECT_HARMING: "зыян төнәтмәһе"
+  POTION_EFFECT_HEALING: "шифалы төнәтмә"
+  POTION_EFFECT_INVISIBILITY: "күренмәҫлек төнәтмәһе"
+  POTION_EFFECT_LEAPING: "һикертеү төнәтмәһе"
+  POTION_EFFECT_LEVITATION: "левитация төнәтмәһе"
+  POTION_EFFECT_LUCK: "уңыш төнәтмәһе"
+  POTION_EFFECT_MUNDANE: "ябай төнәтмә"
+  POTION_EFFECT_NIGHT_VISION: "төн күреү төнәтмәһе"
+  POTION_EFFECT_POISON: "ағыуланыу төнәтмәһе"
+  POTION_EFFECT_REGENERATION: "регенерация төнәтмәһе"
+  POTION_EFFECT_SLOW_FALLING: "талғын йығылыу төнәтмәһе"
+  POTION_EFFECT_SLOWNESS: "аҡрынайыу төнәтмәһе"
+  POTION_EFFECT_STRENGTH: "көс төнәтмәһе"
+  POTION_EFFECT_SWIFTNESS: "тиҙлек төнәтмәһе"
+  POTION_EFFECT_THICK: "ҡуйы төнәтмә"
+  POTION_EFFECT_TURTLE_MASTER: "гөбөргәйелдең көс төнәтмәһе"
+  POTION_EFFECT_WATER: "кесе шешә һыу менән"
+  POTION_EFFECT_WATER_BREATHING: "һыуҙың тын төнәтмәһе"
+  POTION_EFFECT_WEAKNESS: "көсһеҙлек төнәтмәһе"
+  POTTERY_SHARD_ARCHER: "«уҡсы» сүлмәк ватығы"
+  POTTERY_SHARD_ARMS_UP: "«ҡулдарҙы өҫкә» сүлмәк ватығы"
+  POTTERY_SHARD_PRIZE: "«бүләк» сүлмәк ватығы"
+  POTTERY_SHARD_SKULL: "«баш һөйәге» сүлмәк ватығы"
+  POWDER_SNOW_BUCKET: "көпшәк ҡар силәге"
+  PRISMARINE_CRYSTALS: "призмарин кристалы"
+  PRISMARINE_SHARD: "призмарин ярсығы"
+  PRIZE_POTTERY_SHARD: "«бүләк» сүлмәк ватығы"
+  PRIZE_POTTERY_SHERD: "«бүләк» сүлмәк ватығы"
+  PUFFERFISH: "энәбалыҡ"
+  PUFFERFISH_BUCKET: "силәктәге энәбалыҡ"
+  PUFFERFISH_SPAWN_EGG: "энәбалыҡ саҡырыу йомортҡаһы"
+  PUMPKIN_PIE: "ҡабаҡ бәлеше"
+  PUMPKIN_SEEDS: "ҡабаҡ орлоҡтары"
+  PURPLE_DYE: "шәмәхә буяу"
+  QUARTZ: "неҙер-кварц"
+  RABBIT: "сей ҡуян ите"
+  RABBIT_FOOT: "ҡуян тәпәйе"
+  RABBIT_HIDE: "ҡуян тире"
+  RABBIT_SPAWN_EGG: "ҡуян саҡырыу йомортҡаһы"
+  RABBIT_STEW: "быҡтырылған ҡуян"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  RAVAGER_SPAWN_EGG: "бөлдөрөүсе саҡырыу йомортҡаһы"
+  RAW_COPPER: "эшкәртелмәгән баҡыр"
+  RAW_GOLD: "эшкәртелмәгән алтын"
+  RAW_IRON: "эшкәртелмәгән тимер"
+  RECOVERY_COMPASS: "ҡайтарыу компасы"
+  RED_DYE: "ҡыҙыл буяу"
+  REDSTONE: "редстоун"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  ROTTEN_FLESH: "серек ит"
+  SADDLE: "эйәр"
+  SALMON: "бешмәгән һөмбаш"
+  SALMON_BUCKET: "силәктәге һөмбаш"
+  SALMON_SPAWN_EGG: "һөмбаш саҡырыу йомортҡаһы"
+  SCUTE: "ҡалҡанса"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SHEAF_POTTERY_SHARD: "«көлтә» сүлмәк ватығы"
+  SHEAF_POTTERY_SHERD: "«көлтә» сүлмәк ватығы"
+  SHEARS: "ҡайсы"
+  SHEEP_SPAWN_EGG: "һарыҡ саҡырыу йомортҡаһы"
+  SHELTER_POTTERY_SHARD: "«ышыҡ ер» сүлмәк ватығы"
+  SHELTER_POTTERY_SHERD: "«һыйыныу урыны» сүлмәк ватығы"
+  SHIELD: "ҡалҡан"
+  SHIELD_BLACK: "ҡара ҡалҡан"
+  SHIELD_BLUE: "күк ҡалҡан"
+  SHIELD_BROWN: "көрән ҡалҡан"
+  SHIELD_CYAN: "фирүзә ҡалҡан"
+  SHIELD_GRAY: "һоро ҡалҡан"
+  SHIELD_GREEN: "йәшел ҡалҡан"
+  SHIELD_LIGHT_BLUE: "зәңгәр ҡалҡан"
+  SHIELD_LIGHT_GRAY: "аҡһыл һоро ҡалҡан"
+  SHIELD_LIME: "йәшкелт ҡалҡан"
+  SHIELD_MAGENTA: "ҡуйы ҡыҙыл ҡалҡан"
+  SHIELD_ORANGE: "хәнәүәт ҡалҡан"
+  SHIELD_PINK: "алһыу ҡалҡан"
+  SHIELD_PURPLE: "шәмәхә ҡалҡан"
+  SHIELD_RED: "ҡыҙыл ҡалҡан"
+  SHIELD_WHITE: "аҡ ҡалҡан"
+  SHIELD_YELLOW: "һары ҡалҡан"
+  SHULKER_SHELL: "шалкер ҡабығы"
+  SHULKER_SPAWN_EGG: "шалкер саҡырыу йомортҡаһы"
+  SIGN: "билдә"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SILVERFISH_SPAWN_EGG: "ҡуңыҙҡорт саҡырыу йомортҡаһы"
+  SKELETON_HORSE_SPAWN_EGG: "һөлдә ат саҡырыу йомортҡаһы"
+  SKELETON_SPAWN_EGG: "һөлдә саҡырыу йомортҡаһы"
+  SKULL_BANNER_PATTERN: "байраҡ биҙәге"
+  SKULL_BANNER_PATTERN_DESC: "баш һөйәге"
+  SKULL_POTTERY_SHARD: "«баш һөйәге» сүлмәк ватығы"
+  SKULL_POTTERY_SHERD: "«баш һөйәге» сүлмәк ватығы"
+  SLIME_BALL: "лайлас ҡуйырығы"
+  SLIME_SPAWN_EGG: "лайлас саҡырыу йомортҡаһы"
+  SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SMITHING_TEMPLATE_APPLIES_TO: "ҡулланыш таба:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "ҡойолма йәки кристалл ҡуйығыҙ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "ҡояҡ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "ҡояҡ өлөшөн бында ҡуйығыҙ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ҡойолмалар һәм кристалдар"
+  SMITHING_TEMPLATE_INGREDIENTS: "матдәләр:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "неҙерит ҡойолмаһын ҡуйығыҙ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "алмас ҡорал-ҡорамалы"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "алмас ҡояҡты һуғыш йәки эш ҡоралын өҫтәгеҙ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "неҙерит ҡойолмаһы"
+  SMITHING_TEMPLATE_UPGRADE: "яңыртыу: "
+  SNIFFER_SPAWN_EGG: "еҫкәүсе саҡырыу йомортҡаһы"
+  SNORT_POTTERY_SHARD: "«бышҡырыу» сүлмәк ватығы"
+  SNORT_POTTERY_SHERD: "«бышҡырыу» сүлмәк ватығы"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SNOW_GOLEM_SPAWN_EGG: "ҡар бабай саҡырыу йомортҡаһы"
+  SNOWBALL: "ҡар киҫәге"
+  SPECTRAL_ARROW: "спектраль уғы"
+  SPIDER_EYE: "үрмәксенең күҙе"
+  SPIDER_SPAWN_EGG: "үрмәксе саҡырыу йомортҡаһы"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  SPLASH_POTION: "шартлаулы төнәтмә"
+  SPLASH_POTION_EFFECT_AWKWARD: "шарлай торған тоноҡ төнәтмә"
+  SPLASH_POTION_EFFECT_EMPTY: "шарлай торған булдырмаған төнәтмә"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "шарлай торған утҡа сыҙамлылыҡ төнәтмәһе"
+  SPLASH_POTION_EFFECT_HARMING: "шартлай торған зыян төнәтмәһе"
+  SPLASH_POTION_EFFECT_HEALING: "шартлай торған шифа төнәтмәһе"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "шарлай торған күренмәйһеҙлек төнәтмәһе"
+  SPLASH_POTION_EFFECT_LEAPING: "шарлай торған һикереү төнәтмәһе"
+  SPLASH_POTION_EFFECT_LEVITATION: "шарлай торған левитация төнәтмәһе"
+  SPLASH_POTION_EFFECT_LUCK: "шарлай торған уңыш төнәтмәһе"
+  SPLASH_POTION_EFFECT_MUNDANE: "шарлай торған ябай төнәтмә"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "шарлай торған төн күреү төнәтмәһе"
+  SPLASH_POTION_EFFECT_POISON: "шарлай торған ағыуланыу төнәтмәһе"
+  SPLASH_POTION_EFFECT_REGENERATION: "шарлай торған регенерация төнәтмәһе"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "шарлай торған талғын йығылыу төнәтмәһе"
+  SPLASH_POTION_EFFECT_SLOWNESS: "шарлай торған аҡрынайыу төнәтмәһе"
+  SPLASH_POTION_EFFECT_STRENGTH: "шарлай торған көс төнәтмәһе"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "шарлай торған тиҙлек төнәтмәһе"
+  SPLASH_POTION_EFFECT_THICK: "шарлай торған ҡуйы төнәтмә"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "шартлай торған гөбөргәйелдең көс төнәтмәһе"
+  SPLASH_POTION_EFFECT_WATER: "шарлай торған һыу төнәтмәһе"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "шартлаулы һыу тын төнәтмәһе"
+  SPLASH_POTION_EFFECT_WEAKNESS: "шарлай торған көсһеҙлек төнәтмәһе"
+  SPRUCE_BOAT: "шыршы кәмәһе"
+  SPRUCE_CHEST_BOAT: "һандыҡлы шыршы кәмәһе"
+  SPYGLASS: "күҙәтеү торбаһы"
+  SQUID_SPAWN_EGG: "һигеҙаяҡ саҡырыу йомортҡаһы"
+  STICK: "таяҡ"
+  STONE_AXE: "таш балта"
+  STONE_HOE: "таш кетмән"
+  STONE_PICKAXE: "таш кәйлә"
+  STONE_SHOVEL: "таш көрәк"
+  STONE_SWORD: "таш ҡылыс"
+  STRAY_SPAWN_EGG: "сырғыя саҡырыу йомортҡаһы"
+  STRIDER_SPAWN_EGG: "бойоҡсо саҡырыу йомортҡаһы"
+  STRING: "еп"
+  SUGAR: "ҡәнд"
+  SUSPICIOUS_STEW: "серле рагу"
+  SWEET_BERRIES: "татлы емештәр"
+  TADPOLE_BUCKET: "сүмесбаш менән силәк"
+  TADPOLE_SPAWN_EGG: "сүмесбаш саҡырыу йомортҡаһы"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  TIPPED_ARROW: "эшкәртелгән уғы"
+  TIPPED_ARROW_EFFECT_AWKWARD: "эшкәртелгән уҡ"
+  TIPPED_ARROW_EFFECT_EMPTY: "булдырмай торған төнәтмә менән эшкәртергән уғы"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "утҡа сыҙамлы уғы"
+  TIPPED_ARROW_EFFECT_HARMING: "зыян уғы"
+  TIPPED_ARROW_EFFECT_HEALING: "шифалы уғы"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "күренмәҫлек уғы"
+  TIPPED_ARROW_EFFECT_LEAPING: "һикертеү уғы"
+  TIPPED_ARROW_EFFECT_LEVITATION: "левитация уғы"
+  TIPPED_ARROW_EFFECT_LUCK: "уңыш уғы"
+  TIPPED_ARROW_EFFECT_MUNDANE: "эшкәртелгән уҡ"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "төн күреү уғы"
+  TIPPED_ARROW_EFFECT_POISON: "ағыуланыу уғы"
+  TIPPED_ARROW_EFFECT_REGENERATION: "регенерациялау уғы"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "талғын йығылыу уғы"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "аҡрынайыу уғы"
+  TIPPED_ARROW_EFFECT_STRENGTH: "көс уғы"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "тиҙлек уғы"
+  TIPPED_ARROW_EFFECT_THICK: "эшкәртелгән уҡ"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "гөбөргәйелдең көс уғы"
+  TIPPED_ARROW_EFFECT_WATER: "шартлай торған уҡ"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "һыу тын уғы"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "көсһеҙлек уғы"
+  TNT_MINECART: "динамитлы вагонетка"
+  TORCHFLOWER_SEEDS: "сыраҡгөл орлоҡтары"
+  TOTEM_OF_UNDYING: "үлемһеҙлек тотемы"
+  TRADER_LLAMA_SPAWN_EGG: "һатыусының ламаһы саҡырыу йомортҡаһы"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "өс теш"
+  TROPICAL_FISH: "тропик балығы"
+  TROPICAL_FISH_BUCKET: "силәктәге тропик балығы"
+  TROPICAL_FISH_SPAWN_EGG: "тропик балыҡ саҡырыу йомортҡаһы"
+  TURTLE_HELMET: "гөбөргәйелдең ҡабығы"
+  TURTLE_SPAWN_EGG: "гөбөргәйел саҡырыу йоморотҡаһы"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  VEX_SPAWN_EGG: "ҡоротҡос саҡырыу йомортҡаһы"
+  VILLAGER_SPAWN_EGG: "тороусы саҡырыу йомортҡаһы"
+  VINDICATOR_SPAWN_EGG: "көрәшсе саҡырыу йомортҡаһы"
+  WANDERING_TRADER_SPAWN_EGG: "гиҙеүсе сәүдәгәр саҡырыу йомортҡаһы"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  WARDEN_SPAWN_EGG: "рәҡип саҡырыу йомортҡаһы"
+  WARPED_FUNGUS_ON_A_STICK: "боҙолған бәшмәк менән ҡармаҡ"
+  WATER_BUCKET: "һыу силәге"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  WHEAT: "бойҙай"
+  WHEAT_SEEDS: "бойҙай орлоҡтары"
+  WHITE_DYE: "аҡ буяу"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "тимерсе ҡалыбы"
+  WITCH_SPAWN_EGG: "мауыҙ саҡырыу йомортҡаһы"
+  WITHER_SKELETON_SPAWN_EGG: "виҙер-һөлдә саҡырыу йомортҡаһы"
+  WITHER_SPAWN_EGG: "виҙер саҡырыу йомортҡаһы"
+  WOLF_SPAWN_EGG: "бүре саҡырыу йомортҡаһы"
+  WOODEN_AXE: "ағас балта"
+  WOODEN_HOE: "ағас кетмән"
+  WOODEN_PICKAXE: "ағас кәйлә"
+  WOODEN_SHOVEL: "ағас көрәк"
+  WOODEN_SWORD: "ағас ҡылыс"
+  WRITABLE_BOOK: "китап һәм ҡәләм"
+  WRITTEN_BOOK: "яҙылған китап"
+  YELLOW_DYE: "һары буяу"
+  ZOGLIN_SPAWN_EGG: "зоглин саҡырыу йомортҡаһы"
+  ZOMBIE_HORSE_SPAWN_EGG: "зомби ат саҡырыу йомортҡаһы"
+  ZOMBIE_SPAWN_EGG: "зомби саҡырыу йомортҡаһы"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "зомби-тороусы саҡырыу йомортҡаһы"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "зомбиланған пиглин саҡырыу йомортҡаһы"
+  CHEST: "тәндә:"
+  FEET: "үксәлә:"
+  HEAD: "башта:"
+  LEGS: "аяҡта:"
+  MAINHAND: "төп ҡулда:"
+  OFFHAND: "икенсе ҡулда:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

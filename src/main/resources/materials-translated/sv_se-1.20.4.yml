@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akaciaknapp"
+  ACACIA_DOOR: "akaciadörr"
+  ACACIA_FENCE: "akaciastaket"
+  ACACIA_FENCE_GATE: "akaciagrind"
+  ACACIA_HANGING_SIGN: "hängande akaciaskylt"
+  ACACIA_LEAVES: "akacialöv"
+  ACACIA_LOG: "akaciastam"
+  ACACIA_PLANKS: "akaciaplankor"
+  ACACIA_PRESSURE_PLATE: "akaciatryckplatta"
+  ACACIA_SAPLING: "akaciaplanta"
+  ACACIA_SIGN: "akaciaskylt"
+  ACACIA_SLAB: "akaciaplatta"
+  ACACIA_STAIRS: "akaciatrappa"
+  ACACIA_TRAPDOOR: "akaciafallucka"
+  ACACIA_WALL_HANGING_SIGN: "hängande akaciaskylt på vägg"
+  ACACIA_WALL_SIGN: "akaciaskylt på vägg"
+  ACACIA_WOOD: "akaciaträ"
+  ACTIVATOR_RAIL: "aktiveringsräls"
+  AIR: "luft"
+  ALLIUM: "gräslök"
+  AMETHYST_BLOCK: "ametistblock"
+  AMETHYST_CLUSTER: "ametistkluster"
+  ANCIENT_DEBRIS: "forntida spillror"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "andesitplatta"
+  ANDESITE_STAIRS: "andesittrappa"
+  ANDESITE_WALL: "andesitmur"
+  ANVIL: "städ"
+  ATTACHED_MELON_STEM: "ansluten melonstjälk"
+  ATTACHED_PUMPKIN_STEM: "ansluten pumpastjälk"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "azalealöv"
+  AZURE_BLUET: "porslinsstjärna"
+  BAMBOO: "bambu"
+  BAMBOO_BLOCK: "bambublock"
+  BAMBOO_BUTTON: "bambuknapp"
+  BAMBOO_DOOR: "bambudörr"
+  BAMBOO_FENCE: "bambustaket"
+  BAMBOO_FENCE_GATE: "bambugrind"
+  BAMBOO_HANGING_SIGN: "hängande bambuskylt"
+  BAMBOO_MOSAIC: "bambumosaik"
+  BAMBOO_MOSAIC_SLAB: "bambumosaikplatta"
+  BAMBOO_MOSAIC_STAIRS: "bambumosaiktrappa"
+  BAMBOO_PLANKS: "bambuplankor"
+  BAMBOO_PRESSURE_PLATE: "bambutryckplatta"
+  BAMBOO_SAPLING: "bambuskott"
+  BAMBOO_SIGN: "bambuskylt"
+  BAMBOO_SLAB: "bambuplatta"
+  BAMBOO_STAIRS: "bambutrappa"
+  BAMBOO_TRAPDOOR: "bambufallucka"
+  BAMBOO_WALL_HANGING_SIGN: "hängande bambuskylt på vägg"
+  BAMBOO_WALL_SIGN: "bambuskylt på vägg"
+  BANNER_BASE_BLACK: "svart bakgrund"
+  BANNER_BASE_BLUE: "blå bakgrund"
+  BANNER_BASE_BROWN: "brun bakgrund"
+  BANNER_BASE_CYAN: "turkos bakgrund"
+  BANNER_BASE_GRAY: "grå bakgrund"
+  BANNER_BASE_GREEN: "grön bakgrund"
+  BANNER_BASE_LIGHT_BLUE: "ljusblå bakgrund"
+  BANNER_BASE_LIGHT_GRAY: "ljusgrå bakgrund"
+  BANNER_BASE_LIME: "limegrön bakgrund"
+  BANNER_BASE_MAGENTA: "ljuslila bakgrund"
+  BANNER_BASE_ORANGE: "orange bakgrund"
+  BANNER_BASE_PINK: "rosa bakgrund"
+  BANNER_BASE_PURPLE: "lila bakgrund"
+  BANNER_BASE_RED: "röd bakgrund"
+  BANNER_BASE_WHITE: "vit bakgrund"
+  BANNER_BASE_YELLOW: "gul bakgrund"
+  BANNER_BORDER_BLACK: "svart ram"
+  BANNER_BORDER_BLUE: "blå ram"
+  BANNER_BORDER_BROWN: "brun ram"
+  BANNER_BORDER_CYAN: "turkos ram"
+  BANNER_BORDER_GRAY: "grå ram"
+  BANNER_BORDER_GREEN: "grön ram"
+  BANNER_BORDER_LIGHT_BLUE: "ljusblå ram"
+  BANNER_BORDER_LIGHT_GRAY: "ljusgrå ram"
+  BANNER_BORDER_LIME: "limegrön ram"
+  BANNER_BORDER_MAGENTA: "ljuslila ram"
+  BANNER_BORDER_ORANGE: "orange ram"
+  BANNER_BORDER_PINK: "rosa ram"
+  BANNER_BORDER_PURPLE: "lila ram"
+  BANNER_BORDER_RED: "röd ram"
+  BANNER_BORDER_WHITE: "vit ram"
+  BANNER_BORDER_YELLOW: "gul ram"
+  BANNER_BRICKS_BLACK: "svart tegelmönster"
+  BANNER_BRICKS_BLUE: "blått tegelmönster"
+  BANNER_BRICKS_BROWN: "brunt tegelmönster"
+  BANNER_BRICKS_CYAN: "turkost tegelmönster"
+  BANNER_BRICKS_GRAY: "grått tegelmönster"
+  BANNER_BRICKS_GREEN: "grönt tegelmönster"
+  BANNER_BRICKS_LIGHT_BLUE: "ljusblått tegelmönster"
+  BANNER_BRICKS_LIGHT_GRAY: "ljusgrått tegelmönster"
+  BANNER_BRICKS_LIME: "limegrönt tegelmönster"
+  BANNER_BRICKS_MAGENTA: "ljuslila tegelmönster"
+  BANNER_BRICKS_ORANGE: "orange tegelmönster"
+  BANNER_BRICKS_PINK: "rosa tegelmönster"
+  BANNER_BRICKS_PURPLE: "lila tegelmönster"
+  BANNER_BRICKS_RED: "rött tegelmönster"
+  BANNER_BRICKS_WHITE: "vitt tegelmönster"
+  BANNER_BRICKS_YELLOW: "gult tegelmönster"
+  BANNER_CIRCLE_BLACK: "svart cirkel"
+  BANNER_CIRCLE_BLUE: "blå cirkel"
+  BANNER_CIRCLE_BROWN: "brun cirkel"
+  BANNER_CIRCLE_CYAN: "turkos cirkel"
+  BANNER_CIRCLE_GRAY: "grå cirkel"
+  BANNER_CIRCLE_GREEN: "grön cirkel"
+  BANNER_CIRCLE_LIGHT_BLUE: "ljusblå cirkel"
+  BANNER_CIRCLE_LIGHT_GRAY: "ljusgrå cirkel"
+  BANNER_CIRCLE_LIME: "limegrön cirkel"
+  BANNER_CIRCLE_MAGENTA: "ljuslila cirkel"
+  BANNER_CIRCLE_ORANGE: "orange cirkel"
+  BANNER_CIRCLE_PINK: "rosa cirkel"
+  BANNER_CIRCLE_PURPLE: "lila cirkel"
+  BANNER_CIRCLE_RED: "röd cirkel"
+  BANNER_CIRCLE_WHITE: "vit cirkel"
+  BANNER_CIRCLE_YELLOW: "gul cirkel"
+  BANNER_CREEPER_BLACK: "svart creeper"
+  BANNER_CREEPER_BLUE: "blå creeper"
+  BANNER_CREEPER_BROWN: "brun creeper"
+  BANNER_CREEPER_CYAN: "turkos creeper"
+  BANNER_CREEPER_GRAY: "grå creeper"
+  BANNER_CREEPER_GREEN: "grön creeper"
+  BANNER_CREEPER_LIGHT_BLUE: "ljusblå creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "ljusgrå creeper"
+  BANNER_CREEPER_LIME: "limegrön creeper"
+  BANNER_CREEPER_MAGENTA: "ljuslila creeper"
+  BANNER_CREEPER_ORANGE: "orange creeper"
+  BANNER_CREEPER_PINK: "rosa creeper"
+  BANNER_CREEPER_PURPLE: "lila creeper"
+  BANNER_CREEPER_RED: "röd creeper"
+  BANNER_CREEPER_WHITE: "vit creeper"
+  BANNER_CREEPER_YELLOW: "gul creeper"
+  BANNER_CROSS_BLACK: "svart kryss"
+  BANNER_CROSS_BLUE: "blått kryss"
+  BANNER_CROSS_BROWN: "brunt kryss"
+  BANNER_CROSS_CYAN: "turkost kryss"
+  BANNER_CROSS_GRAY: "grått kryss"
+  BANNER_CROSS_GREEN: "grönt kryss"
+  BANNER_CROSS_LIGHT_BLUE: "ljusblått kryss"
+  BANNER_CROSS_LIGHT_GRAY: "ljusgrått kryss"
+  BANNER_CROSS_LIME: "limegrönt kryss"
+  BANNER_CROSS_MAGENTA: "ljuslila kryss"
+  BANNER_CROSS_ORANGE: "orange kryss"
+  BANNER_CROSS_PINK: "lila kryss"
+  BANNER_CROSS_PURPLE: "lila kryss"
+  BANNER_CROSS_RED: "rött kryss"
+  BANNER_CROSS_WHITE: "vitt kryss"
+  BANNER_CROSS_YELLOW: "gult kryss"
+  BANNER_CURLY_BORDER_BLACK: "svart taggig ram"
+  BANNER_CURLY_BORDER_BLUE: "blå taggig ram"
+  BANNER_CURLY_BORDER_BROWN: "brun taggig ram"
+  BANNER_CURLY_BORDER_CYAN: "turkos taggig ram"
+  BANNER_CURLY_BORDER_GRAY: "grå taggig ram"
+  BANNER_CURLY_BORDER_GREEN: "grön taggig ram"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "ljusblå taggig ram"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "ljusgrå taggig ram"
+  BANNER_CURLY_BORDER_LIME: "limegrön taggig ram"
+  BANNER_CURLY_BORDER_MAGENTA: "ljuslila taggig ram"
+  BANNER_CURLY_BORDER_ORANGE: "orange taggig ram"
+  BANNER_CURLY_BORDER_PINK: "rosa taggig ram"
+  BANNER_CURLY_BORDER_PURPLE: "lila taggig ram"
+  BANNER_CURLY_BORDER_RED: "röd taggig ram"
+  BANNER_CURLY_BORDER_WHITE: "vit taggig ram"
+  BANNER_CURLY_BORDER_YELLOW: "gul taggig ram"
+  BANNER_DIAGONAL_LEFT_BLACK: "svart triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_BLUE: "blå triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_BROWN: "brun triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_CYAN: "turkos triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_GRAY: "grå triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_GREEN: "grön triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "ljusblå triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "ljusgrå triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_LIME: "limegrön triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "ljuslila triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_PINK: "rosa triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lila triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_RED: "röd triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_WHITE: "vit triangel uppe till vänster"
+  BANNER_DIAGONAL_LEFT_YELLOW: "gul triangel uppe till vänster"
+  BANNER_DIAGONAL_RIGHT_BLACK: "svart triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blå triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brun triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turkos triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grå triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_GREEN: "grön triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "ljusblå triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "ljusgrå triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_LIME: "limegrön triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "ljuslila triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "orange triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_PINK: "rosa triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lila triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_RED: "röd triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_WHITE: "vit triangel uppe till höger"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "gul triangel uppe till höger"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "svart triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blå triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brun triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turkos triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grå triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "grön triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "ljusblå triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "ljusgrå triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "limegrön triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "ljuslila triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "orange triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "rosa triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lila triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_RED: "röd triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "vit triangel nere till vänster"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "gul triangel nere till vänster"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "svart triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blå triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brun triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turkos triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grå triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "grön triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "ljusblå triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "ljusgrå triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "limegrön triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "ljuslila triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "orange triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "rosa triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lila triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "röd triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "vit triangel nere till höger"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "gul triangel nere till höger"
+  BANNER_FLOWER_BLACK: "svart blomma"
+  BANNER_FLOWER_BLUE: "blå blomma"
+  BANNER_FLOWER_BROWN: "brun blomma"
+  BANNER_FLOWER_CYAN: "turkos blomma"
+  BANNER_FLOWER_GRAY: "grå blomma"
+  BANNER_FLOWER_GREEN: "grön blomma"
+  BANNER_FLOWER_LIGHT_BLUE: "ljusblå blomma"
+  BANNER_FLOWER_LIGHT_GRAY: "ljusgrå blomma"
+  BANNER_FLOWER_LIME: "limegrön blomma"
+  BANNER_FLOWER_MAGENTA: "ljuslila blomma"
+  BANNER_FLOWER_ORANGE: "orange blomma"
+  BANNER_FLOWER_PINK: "rosa blomma"
+  BANNER_FLOWER_PURPLE: "lila blomma"
+  BANNER_FLOWER_RED: "röd blomma"
+  BANNER_FLOWER_WHITE: "vit blomma"
+  BANNER_FLOWER_YELLOW: "gul blomma"
+  BANNER_GLOBE_BLACK: "svart glob"
+  BANNER_GLOBE_BLUE: "blå glob"
+  BANNER_GLOBE_BROWN: "brun glob"
+  BANNER_GLOBE_CYAN: "turkos glob"
+  BANNER_GLOBE_GRAY: "grå glob"
+  BANNER_GLOBE_GREEN: "grön glob"
+  BANNER_GLOBE_LIGHT_BLUE: "ljusblå glob"
+  BANNER_GLOBE_LIGHT_GRAY: "ljusgrå glob"
+  BANNER_GLOBE_LIME: "limegrön glob"
+  BANNER_GLOBE_MAGENTA: "ljuslila glob"
+  BANNER_GLOBE_ORANGE: "orange glob"
+  BANNER_GLOBE_PINK: "rosa glob"
+  BANNER_GLOBE_PURPLE: "lila glob"
+  BANNER_GLOBE_RED: "röd glob"
+  BANNER_GLOBE_WHITE: "vit glob"
+  BANNER_GLOBE_YELLOW: "gul glob"
+  BANNER_GRADIENT_BLACK: "svart övergång ovanifrån"
+  BANNER_GRADIENT_BLUE: "blå övergång ovanifrån"
+  BANNER_GRADIENT_BROWN: "brun övergång ovanifrån"
+  BANNER_GRADIENT_CYAN: "turkos övergång ovanifrån"
+  BANNER_GRADIENT_GRAY: "grå övergång ovanifrån"
+  BANNER_GRADIENT_GREEN: "grön övergång ovanifrån"
+  BANNER_GRADIENT_LIGHT_BLUE: "ljusblå övergång ovanifrån"
+  BANNER_GRADIENT_LIGHT_GRAY: "ljusgrå övergång ovanifrån"
+  BANNER_GRADIENT_LIME: "limegrön övergång ovanifrån"
+  BANNER_GRADIENT_MAGENTA: "ljuslila övergång ovanifrån"
+  BANNER_GRADIENT_ORANGE: "orange övergång ovanifrån"
+  BANNER_GRADIENT_PINK: "rosa övergång ovanifrån"
+  BANNER_GRADIENT_PURPLE: "lila övergång ovanifrån"
+  BANNER_GRADIENT_RED: "röd övergång ovanifrån"
+  BANNER_GRADIENT_WHITE: "vit övergång ovanifrån"
+  BANNER_GRADIENT_YELLOW: "gul övergång ovanifrån"
+  BANNER_GRADIENT_UP_BLACK: "svart övergång nedanifrån"
+  BANNER_GRADIENT_UP_BLUE: "blå övergång nedanifrån"
+  BANNER_GRADIENT_UP_BROWN: "brun övergång nedanifrån"
+  BANNER_GRADIENT_UP_CYAN: "turkos övergång nedanifrån"
+  BANNER_GRADIENT_UP_GRAY: "grå övergång nedanifrån"
+  BANNER_GRADIENT_UP_GREEN: "grön övergång nedanifrån"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "ljusblå övergång nedanifrån"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "ljusgrå övergång nedanifrån"
+  BANNER_GRADIENT_UP_LIME: "limegrön övergång nedanifrån"
+  BANNER_GRADIENT_UP_MAGENTA: "ljuslila övergång nedanifrån"
+  BANNER_GRADIENT_UP_ORANGE: "orange övergång nedanifrån"
+  BANNER_GRADIENT_UP_PINK: "rosa övergång nedanifrån"
+  BANNER_GRADIENT_UP_PURPLE: "lila övergång nedanifrån"
+  BANNER_GRADIENT_UP_RED: "röd övergång nedanifrån"
+  BANNER_GRADIENT_UP_WHITE: "vit övergång nedanifrån"
+  BANNER_GRADIENT_UP_YELLOW: "gul övergång nedanifrån"
+  BANNER_HALF_HORIZONTAL_BLACK: "svart överhalva"
+  BANNER_HALF_HORIZONTAL_BLUE: "blå överhalva"
+  BANNER_HALF_HORIZONTAL_BROWN: "brun överhalva"
+  BANNER_HALF_HORIZONTAL_CYAN: "turkos överhalva"
+  BANNER_HALF_HORIZONTAL_GRAY: "grå överhalva"
+  BANNER_HALF_HORIZONTAL_GREEN: "grön överhalva"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "ljusblå överhalva"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "ljusgrå överhalva"
+  BANNER_HALF_HORIZONTAL_LIME: "limegrön överhalva"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "ljuslila överhalva"
+  BANNER_HALF_HORIZONTAL_ORANGE: "orange överhalva"
+  BANNER_HALF_HORIZONTAL_PINK: "rosa överhalva"
+  BANNER_HALF_HORIZONTAL_PURPLE: "lila överhalva"
+  BANNER_HALF_HORIZONTAL_RED: "röd överhalva"
+  BANNER_HALF_HORIZONTAL_WHITE: "vit överhalva"
+  BANNER_HALF_HORIZONTAL_YELLOW: "gul överhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "svart underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blå underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brun underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turkos underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grå underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "grön underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "ljusblå underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "ljusgrå underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "limegrön underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "ljuslila underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "orange underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "rosa underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "lila underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "röd underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "vit underhalva"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "gul underhalva"
+  BANNER_HALF_VERTICAL_BLACK: "svart vänsterhalva"
+  BANNER_HALF_VERTICAL_BLUE: "blå vänsterhalva"
+  BANNER_HALF_VERTICAL_BROWN: "brun vänsterhalva"
+  BANNER_HALF_VERTICAL_CYAN: "turkos vänsterhalva"
+  BANNER_HALF_VERTICAL_GRAY: "grå vänsterhalva"
+  BANNER_HALF_VERTICAL_GREEN: "grön vänsterhalva"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "ljusblå vänsterhalva"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "ljusgrå vänsterhalva"
+  BANNER_HALF_VERTICAL_LIME: "limegrön vänsterhalva"
+  BANNER_HALF_VERTICAL_MAGENTA: "ljuslila vänsterhalva"
+  BANNER_HALF_VERTICAL_ORANGE: "orange vänsterhalva"
+  BANNER_HALF_VERTICAL_PINK: "rosa vänsterhalva"
+  BANNER_HALF_VERTICAL_PURPLE: "lila vänsterhalva"
+  BANNER_HALF_VERTICAL_RED: "röd vänsterhalva"
+  BANNER_HALF_VERTICAL_WHITE: "vit vänsterhalva"
+  BANNER_HALF_VERTICAL_YELLOW: "gul vänsterhalva"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "svart högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blå högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brun högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turkos högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grå högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "grön högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "ljusblå högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "ljusgrå högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "limegrön högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "ljuslila högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "orange högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "rosa högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "lila högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "röd högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "vit högerhalva"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "gul högerhalva"
+  BANNER_MOJANG_BLACK: "svart mojäng"
+  BANNER_MOJANG_BLUE: "blå mojäng"
+  BANNER_MOJANG_BROWN: "brun mojäng"
+  BANNER_MOJANG_CYAN: "turkos mojäng"
+  BANNER_MOJANG_GRAY: "grå mojäng"
+  BANNER_MOJANG_GREEN: "grön mojäng"
+  BANNER_MOJANG_LIGHT_BLUE: "ljusblå mojäng"
+  BANNER_MOJANG_LIGHT_GRAY: "ljusgrå mojäng"
+  BANNER_MOJANG_LIME: "limegrön mojäng"
+  BANNER_MOJANG_MAGENTA: "ljuslila mojäng"
+  BANNER_MOJANG_ORANGE: "orange mojäng"
+  BANNER_MOJANG_PINK: "rosa mojäng"
+  BANNER_MOJANG_PURPLE: "lila mojäng"
+  BANNER_MOJANG_RED: "röd mojäng"
+  BANNER_MOJANG_WHITE: "vit mojäng"
+  BANNER_MOJANG_YELLOW: "gul mojäng"
+  BANNER_PIGLIN_BLACK: "svart tryne"
+  BANNER_PIGLIN_BLUE: "blått tryne"
+  BANNER_PIGLIN_BROWN: "brunt tryne"
+  BANNER_PIGLIN_CYAN: "turkost tryne"
+  BANNER_PIGLIN_GRAY: "grått tryne"
+  BANNER_PIGLIN_GREEN: "grönt tryne"
+  BANNER_PIGLIN_LIGHT_BLUE: "ljusblått tryne"
+  BANNER_PIGLIN_LIGHT_GRAY: "ljusgrått tryne"
+  BANNER_PIGLIN_LIME: "limegrönt tryne"
+  BANNER_PIGLIN_MAGENTA: "ljuslila tryne"
+  BANNER_PIGLIN_ORANGE: "orange tryne"
+  BANNER_PIGLIN_PINK: "rosa tryne"
+  BANNER_PIGLIN_PURPLE: "lila tryne"
+  BANNER_PIGLIN_RED: "rött tryne"
+  BANNER_PIGLIN_WHITE: "vitt tryne"
+  BANNER_PIGLIN_YELLOW: "gult tryne"
+  BANNER_RHOMBUS_BLACK: "svart romb"
+  BANNER_RHOMBUS_BLUE: "blå romb"
+  BANNER_RHOMBUS_BROWN: "brun romb"
+  BANNER_RHOMBUS_CYAN: "turkos romb"
+  BANNER_RHOMBUS_GRAY: "grå romb"
+  BANNER_RHOMBUS_GREEN: "grön romb"
+  BANNER_RHOMBUS_LIGHT_BLUE: "ljusblå romb"
+  BANNER_RHOMBUS_LIGHT_GRAY: "ljusgrå romb"
+  BANNER_RHOMBUS_LIME: "limegrön romb"
+  BANNER_RHOMBUS_MAGENTA: "ljuslila romb"
+  BANNER_RHOMBUS_ORANGE: "orange romb"
+  BANNER_RHOMBUS_PINK: "rosa romb"
+  BANNER_RHOMBUS_PURPLE: "lila romb"
+  BANNER_RHOMBUS_RED: "röd romb"
+  BANNER_RHOMBUS_WHITE: "vit romb"
+  BANNER_RHOMBUS_YELLOW: "gul romb"
+  BANNER_SKULL_BLACK: "svart dödskalle"
+  BANNER_SKULL_BLUE: "blå dödskalle"
+  BANNER_SKULL_BROWN: "brun dödskalle"
+  BANNER_SKULL_CYAN: "turkos dödskalle"
+  BANNER_SKULL_GRAY: "grå dödskalle"
+  BANNER_SKULL_GREEN: "grön dödskalle"
+  BANNER_SKULL_LIGHT_BLUE: "ljusblå dödskalle"
+  BANNER_SKULL_LIGHT_GRAY: "ljusgrå dödskalle"
+  BANNER_SKULL_LIME: "limegrön dödskalle"
+  BANNER_SKULL_MAGENTA: "ljuslila dödskalle"
+  BANNER_SKULL_ORANGE: "orange dödskalle"
+  BANNER_SKULL_PINK: "rosa dödskalle"
+  BANNER_SKULL_PURPLE: "lila dödskalle"
+  BANNER_SKULL_RED: "röd dödskalle"
+  BANNER_SKULL_WHITE: "vit dödskalle"
+  BANNER_SKULL_YELLOW: "gul dödskalle"
+  BANNER_SMALL_STRIPES_BLACK: "svartrandig"
+  BANNER_SMALL_STRIPES_BLUE: "blårandig"
+  BANNER_SMALL_STRIPES_BROWN: "brunrandig"
+  BANNER_SMALL_STRIPES_CYAN: "turkosrandig"
+  BANNER_SMALL_STRIPES_GRAY: "grårandig"
+  BANNER_SMALL_STRIPES_GREEN: "grönrandig"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "ljusblårandig"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "ljusgrårandig"
+  BANNER_SMALL_STRIPES_LIME: "limegrönrandig"
+  BANNER_SMALL_STRIPES_MAGENTA: "ljuslilarandig"
+  BANNER_SMALL_STRIPES_ORANGE: "orangerandig"
+  BANNER_SMALL_STRIPES_PINK: "rosarandig"
+  BANNER_SMALL_STRIPES_PURPLE: "lilarandig"
+  BANNER_SMALL_STRIPES_RED: "rödrandig"
+  BANNER_SMALL_STRIPES_WHITE: "vitrandig"
+  BANNER_SMALL_STRIPES_YELLOW: "gulrandig"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "svart nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blå nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "brun nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turkos nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "grå nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "grön nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "ljusblå nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "ljusgrå nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "limegrön nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "ljuslila nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "orange nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "rosa nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lila nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "röd nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "vit nere till vänster"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "gul nere till vänster"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "svart nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blå nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "brun nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turkos nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "grå nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "grön nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "ljusblå nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "ljusgrå nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "limegrön nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "ljuslila nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "orange nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "rosa nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lila nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "röd nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "vit nere till höger"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "gul nere till höger"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "svart uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blå uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "brun uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turkos uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "grå uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "grön uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "ljusblå uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "ljusgrå uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_LIME: "limegrön uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "ljuslila uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "orange uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_PINK: "rosa uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lila uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_RED: "röd uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "vit uppe till vänster"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "gul uppe till vänster"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "svart uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blå uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "brun uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turkos uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "grå uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "grön uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "ljusblå uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "ljusgrå uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "limegrön uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "ljuslila uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "orange uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "rosa uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lila uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_RED: "röd uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "vit uppe till höger"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "gul uppe till höger"
+  BANNER_STRAIGHT_CROSS_BLACK: "svart kors"
+  BANNER_STRAIGHT_CROSS_BLUE: "blått kors"
+  BANNER_STRAIGHT_CROSS_BROWN: "brunt kors"
+  BANNER_STRAIGHT_CROSS_CYAN: "turkost kors"
+  BANNER_STRAIGHT_CROSS_GRAY: "grått kors"
+  BANNER_STRAIGHT_CROSS_GREEN: "grönt kors"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "ljusblått kors"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "ljusgrått kors"
+  BANNER_STRAIGHT_CROSS_LIME: "limegrönt kors"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "ljuslila kors"
+  BANNER_STRAIGHT_CROSS_ORANGE: "orange kors"
+  BANNER_STRAIGHT_CROSS_PINK: "rosa kors"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lila kors"
+  BANNER_STRAIGHT_CROSS_RED: "rött kors"
+  BANNER_STRAIGHT_CROSS_WHITE: "vitt kors"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gult kors"
+  BANNER_STRIPE_BOTTOM_BLACK: "svart nederkant"
+  BANNER_STRIPE_BOTTOM_BLUE: "blå nederkant"
+  BANNER_STRIPE_BOTTOM_BROWN: "brun nederkant"
+  BANNER_STRIPE_BOTTOM_CYAN: "turkos nederkant"
+  BANNER_STRIPE_BOTTOM_GRAY: "grå nederkant"
+  BANNER_STRIPE_BOTTOM_GREEN: "grön nederkant"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "ljusblå nederkant"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "ljusgrå nederkant"
+  BANNER_STRIPE_BOTTOM_LIME: "limegrön nederkant"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "ljuslila nederkant"
+  BANNER_STRIPE_BOTTOM_ORANGE: "orange nederkant"
+  BANNER_STRIPE_BOTTOM_PINK: "rosa nederkant"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lila nederkant"
+  BANNER_STRIPE_BOTTOM_RED: "röd nederkant"
+  BANNER_STRIPE_BOTTOM_WHITE: "vit nederkant"
+  BANNER_STRIPE_BOTTOM_YELLOW: "gul nederkant"
+  BANNER_STRIPE_CENTER_BLACK: "svart vertikalt streck"
+  BANNER_STRIPE_CENTER_BLUE: "blått vertikalt streck"
+  BANNER_STRIPE_CENTER_BROWN: "brunt vertikalt streck"
+  BANNER_STRIPE_CENTER_CYAN: "turkost vertikalt streck"
+  BANNER_STRIPE_CENTER_GRAY: "grått vertikalt streck"
+  BANNER_STRIPE_CENTER_GREEN: "grönt vertikalt streck"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "ljusblått vertikalt streck"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "ljusgrått vertikalt streck"
+  BANNER_STRIPE_CENTER_LIME: "limegrönt vertikalt streck"
+  BANNER_STRIPE_CENTER_MAGENTA: "ljuslila vertikalt streck"
+  BANNER_STRIPE_CENTER_ORANGE: "orange vertikalt streck"
+  BANNER_STRIPE_CENTER_PINK: "rosa vertikalt streck"
+  BANNER_STRIPE_CENTER_PURPLE: "lila vertikalt streck"
+  BANNER_STRIPE_CENTER_RED: "rött vertikalt streck"
+  BANNER_STRIPE_CENTER_WHITE: "vitt vertikalt streck"
+  BANNER_STRIPE_CENTER_YELLOW: "gult vertikalt streck"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "svart omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blått omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "brunt omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turkost omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "grått omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "grönt omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "ljusblått omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "ljusgrått omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_LIME: "limegrönt omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "ljuslila omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "orange omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rosa omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lila omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_RED: "rött omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "vitt omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "gult omvänt diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "svart diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blått diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "brunt diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turkost diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "grått diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "grönt diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "ljusblått diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "ljusgrått diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "limegrönt diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "ljuslila diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "orange diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rosa diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lila diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rött diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "vitt diagonalt streck"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "gult diagonalt streck"
+  BANNER_STRIPE_LEFT_BLACK: "svart till vänster"
+  BANNER_STRIPE_LEFT_BLUE: "blå till vänster"
+  BANNER_STRIPE_LEFT_BROWN: "brun till vänster"
+  BANNER_STRIPE_LEFT_CYAN: "turkos till vänster"
+  BANNER_STRIPE_LEFT_GRAY: "grå till vänster"
+  BANNER_STRIPE_LEFT_GREEN: "grön till vänster"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "ljusblå till vänster"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "ljusgrå till vänster"
+  BANNER_STRIPE_LEFT_LIME: "limegrön till vänster"
+  BANNER_STRIPE_LEFT_MAGENTA: "ljuslila till vänster"
+  BANNER_STRIPE_LEFT_ORANGE: "orange till vänster"
+  BANNER_STRIPE_LEFT_PINK: "rosa till vänster"
+  BANNER_STRIPE_LEFT_PURPLE: "lila till vänster"
+  BANNER_STRIPE_LEFT_RED: "röd till vänster"
+  BANNER_STRIPE_LEFT_WHITE: "vit till vänster"
+  BANNER_STRIPE_LEFT_YELLOW: "gul till vänster"
+  BANNER_STRIPE_MIDDLE_BLACK: "svart horisontellt streck"
+  BANNER_STRIPE_MIDDLE_BLUE: "blått horisontellt streck"
+  BANNER_STRIPE_MIDDLE_BROWN: "brunt horisontellt streck"
+  BANNER_STRIPE_MIDDLE_CYAN: "turkost horisontellt streck"
+  BANNER_STRIPE_MIDDLE_GRAY: "grått horisontellt streck"
+  BANNER_STRIPE_MIDDLE_GREEN: "grönt horisontellt streck"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "ljusblått horisontellt streck"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "ljusgrått horisontellt streck"
+  BANNER_STRIPE_MIDDLE_LIME: "limegrönt horisontellt streck"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "ljuslila horisontellt streck"
+  BANNER_STRIPE_MIDDLE_ORANGE: "orange horisontellt streck"
+  BANNER_STRIPE_MIDDLE_PINK: "rosa horisontellt streck"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lila horisontellt streck"
+  BANNER_STRIPE_MIDDLE_RED: "rött horisontellt streck"
+  BANNER_STRIPE_MIDDLE_WHITE: "vitt horisontellt streck"
+  BANNER_STRIPE_MIDDLE_YELLOW: "gult horisontellt streck"
+  BANNER_STRIPE_RIGHT_BLACK: "svart till höger"
+  BANNER_STRIPE_RIGHT_BLUE: "blå till höger"
+  BANNER_STRIPE_RIGHT_BROWN: "brun till höger"
+  BANNER_STRIPE_RIGHT_CYAN: "turkos till höger"
+  BANNER_STRIPE_RIGHT_GRAY: "grå till höger"
+  BANNER_STRIPE_RIGHT_GREEN: "grön till höger"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "ljusblå till höger"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "ljusgrå till höger"
+  BANNER_STRIPE_RIGHT_LIME: "limegrön till höger"
+  BANNER_STRIPE_RIGHT_MAGENTA: "ljuslila till höger"
+  BANNER_STRIPE_RIGHT_ORANGE: "orange till höger"
+  BANNER_STRIPE_RIGHT_PINK: "rosa till höger"
+  BANNER_STRIPE_RIGHT_PURPLE: "lila till höger"
+  BANNER_STRIPE_RIGHT_RED: "röd till höger"
+  BANNER_STRIPE_RIGHT_WHITE: "vit till höger"
+  BANNER_STRIPE_RIGHT_YELLOW: "gul till höger"
+  BANNER_STRIPE_TOP_BLACK: "svart överkant"
+  BANNER_STRIPE_TOP_BLUE: "blå överkant"
+  BANNER_STRIPE_TOP_BROWN: "brun överkant"
+  BANNER_STRIPE_TOP_CYAN: "turkos överkant"
+  BANNER_STRIPE_TOP_GRAY: "grå överkant"
+  BANNER_STRIPE_TOP_GREEN: "grön överkant"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "ljusblå överkant"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "ljusgrå överkant"
+  BANNER_STRIPE_TOP_LIME: "limegrön överkant"
+  BANNER_STRIPE_TOP_MAGENTA: "ljuslila överkant"
+  BANNER_STRIPE_TOP_ORANGE: "orange överkant"
+  BANNER_STRIPE_TOP_PINK: "rosa överkant"
+  BANNER_STRIPE_TOP_PURPLE: "lila överkant"
+  BANNER_STRIPE_TOP_RED: "röd överkant"
+  BANNER_STRIPE_TOP_WHITE: "vit överkant"
+  BANNER_STRIPE_TOP_YELLOW: "gul överkant"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "svart triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blå triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "brun triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turkos triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "grå triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "grön triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "ljusblå triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "ljusgrå triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_LIME: "limegrön triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "ljuslila triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "orange triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_PINK: "rosa triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lila triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_RED: "röd triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "vit triangel nedtill"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gul triangel nedtill"
+  BANNER_TRIANGLE_TOP_BLACK: "svart triangel upptill"
+  BANNER_TRIANGLE_TOP_BLUE: "blå triangel upptill"
+  BANNER_TRIANGLE_TOP_BROWN: "brun triangel upptill"
+  BANNER_TRIANGLE_TOP_CYAN: "turkos triangel upptill"
+  BANNER_TRIANGLE_TOP_GRAY: "grå triangel upptill"
+  BANNER_TRIANGLE_TOP_GREEN: "grön triangel upptill"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "ljusblå triangel upptill"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "ljusgrå triangel upptill"
+  BANNER_TRIANGLE_TOP_LIME: "limegrön triangel upptill"
+  BANNER_TRIANGLE_TOP_MAGENTA: "ljuslila triangel upptill"
+  BANNER_TRIANGLE_TOP_ORANGE: "orange triangel upptill"
+  BANNER_TRIANGLE_TOP_PINK: "rosa triangel upptill"
+  BANNER_TRIANGLE_TOP_PURPLE: "lila triangel upptill"
+  BANNER_TRIANGLE_TOP_RED: "röd triangel upptill"
+  BANNER_TRIANGLE_TOP_WHITE: "vit triangel upptill"
+  BANNER_TRIANGLE_TOP_YELLOW: "gul triangel upptill"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "svarta taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blåa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "bruna taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turkosa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "gråa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "gröna taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "ljusblåa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "ljusgråa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_LIME: "limegröna taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "ljuslila taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "orangea taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_PINK: "rosa taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lila taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_RED: "röda taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "vita taggar nedtill"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "gula taggar nedtill"
+  BANNER_TRIANGLES_TOP_BLACK: "svarta taggar upptill"
+  BANNER_TRIANGLES_TOP_BLUE: "blåa taggar upptill"
+  BANNER_TRIANGLES_TOP_BROWN: "bruna taggar upptill"
+  BANNER_TRIANGLES_TOP_CYAN: "turkosa taggar upptill"
+  BANNER_TRIANGLES_TOP_GRAY: "gråa taggar upptill"
+  BANNER_TRIANGLES_TOP_GREEN: "gröna taggar upptill"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "ljusblåa taggar upptill"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "ljusgråa taggar upptill"
+  BANNER_TRIANGLES_TOP_LIME: "limegröna taggar upptill"
+  BANNER_TRIANGLES_TOP_MAGENTA: "ljuslila taggar upptill"
+  BANNER_TRIANGLES_TOP_ORANGE: "orangea taggar upptill"
+  BANNER_TRIANGLES_TOP_PINK: "rosa taggar upptill"
+  BANNER_TRIANGLES_TOP_PURPLE: "lila taggar upptill"
+  BANNER_TRIANGLES_TOP_RED: "röda taggar upptill"
+  BANNER_TRIANGLES_TOP_WHITE: "vita taggar upptill"
+  BANNER_TRIANGLES_TOP_YELLOW: "gula taggar upptill"
+  BARREL: "tunna"
+  BARRIER: "barriär"
+  BASALT: "basalt"
+  BEACON: "fyr"
+  BEACON_PRIMARY: "primär kraft"
+  BEACON_SECONDARY: "sekundär kraft"
+  BED_NO_SLEEP: "du kan bara sova på natten och i åskväder"
+  BED_NOT_SAFE: "du kan inte sova nu det finns monster i närheten"
+  BED_OBSTRUCTED: "den här sängen är blockerad"
+  BED_OCCUPIED: "den här sängen är upptagen"
+  BED_TOO_FAR_AWAY: "du kan inte sova nu sängen är för långt bort"
+  BEDROCK: "berggrund"
+  BEE_NEST: "bisamhälle"
+  BEEHIVE: "bikupa"
+  BEETROOTS: "rödbetor"
+  BELL: "ringklocka"
+  BIG_DRIPLEAF: "stort dropplöv"
+  BIG_DRIPLEAF_STEM: "stor dropplövsstjälk"
+  BIRCH_BUTTON: "björkknapp"
+  BIRCH_DOOR: "björkdörr"
+  BIRCH_FENCE: "björkstaket"
+  BIRCH_FENCE_GATE: "björkgrind"
+  BIRCH_HANGING_SIGN: "hängande björkskylt"
+  BIRCH_LEAVES: "björklöv"
+  BIRCH_LOG: "björkstam"
+  BIRCH_PLANKS: "björkplankor"
+  BIRCH_PRESSURE_PLATE: "björktryckplatta"
+  BIRCH_SAPLING: "björkplanta"
+  BIRCH_SIGN: "björkskylt"
+  BIRCH_SLAB: "björkplatta"
+  BIRCH_STAIRS: "björktrappa"
+  BIRCH_TRAPDOOR: "björkfallucka"
+  BIRCH_WALL_HANGING_SIGN: "hängande björkskylt på vägg"
+  BIRCH_WALL_SIGN: "björkskylt på vägg"
+  BIRCH_WOOD: "björkträ"
+  BLACK_BANNER: "svart fana"
+  BLACK_BED: "svart säng"
+  BLACK_CANDLE: "svart stearinljus"
+  BLACK_CANDLE_CAKE: "tårta med svart stearinljus"
+  BLACK_CARPET: "svart matta"
+  BLACK_CONCRETE: "svart betong"
+  BLACK_CONCRETE_POWDER: "svart betongpulver"
+  BLACK_GLAZED_TERRACOTTA: "svartglaserad terrakotta"
+  BLACK_SHULKER_BOX: "svart shulkerlåda"
+  BLACK_STAINED_GLASS: "svartfärgat glas"
+  BLACK_STAINED_GLASS_PANE: "svartfärgad glasruta"
+  BLACK_TERRACOTTA: "svart terrakotta"
+  BLACK_WOOL: "svart ull"
+  BLACKSTONE: "svartsten"
+  BLACKSTONE_SLAB: "svartstensplatta"
+  BLACKSTONE_STAIRS: "svartstenstrappa"
+  BLACKSTONE_WALL: "svartstensmur"
+  BLAST_FURNACE: "masugn"
+  BLUE_BANNER: "blå fana"
+  BLUE_BED: "blå säng"
+  BLUE_CANDLE: "blått stearinljus"
+  BLUE_CANDLE_CAKE: "tårta med blått stearinljus"
+  BLUE_CARPET: "blå matta"
+  BLUE_CONCRETE: "blå betong"
+  BLUE_CONCRETE_POWDER: "blått betongpulver"
+  BLUE_GLAZED_TERRACOTTA: "blåglaserad terrakotta"
+  BLUE_ICE: "blå is"
+  BLUE_ORCHID: "blå orkidé"
+  BLUE_SHULKER_BOX: "blå shulkerlåda"
+  BLUE_STAINED_GLASS: "blåfärgat glas"
+  BLUE_STAINED_GLASS_PANE: "blåfärgad glasruta"
+  BLUE_TERRACOTTA: "blå terrakotta"
+  BLUE_WOOL: "blå ull"
+  BONE_BLOCK: "benblock"
+  BOOKSHELF: "bokhylla"
+  BRAIN_CORAL: "hjärnkorall"
+  BRAIN_CORAL_BLOCK: "hjärnkorallblock"
+  BRAIN_CORAL_FAN: "hjärnkorallfläkt"
+  BRAIN_CORAL_WALL_FAN: "hjärnkorallfläkt på vägg"
+  BREWING_STAND: "brygdställ"
+  BRICK_SLAB: "tegelplatta"
+  BRICK_STAIRS: "tegeltrappa"
+  BRICK_WALL: "tegelmur"
+  BRICKS: "tegel"
+  BROWN_BANNER: "brun fana"
+  BROWN_BED: "brun säng"
+  BROWN_CANDLE: "brunt stearinljus"
+  BROWN_CANDLE_CAKE: "tårta med brunt stearinljus"
+  BROWN_CARPET: "brun matta"
+  BROWN_CONCRETE: "brun betong"
+  BROWN_CONCRETE_POWDER: "brunt betongpulver"
+  BROWN_GLAZED_TERRACOTTA: "brunglaserad terrakotta"
+  BROWN_MUSHROOM: "brun svamp"
+  BROWN_MUSHROOM_BLOCK: "brunt svampblock"
+  BROWN_SHULKER_BOX: "brun shulkerlåda"
+  BROWN_STAINED_GLASS: "brunfärgat glas"
+  BROWN_STAINED_GLASS_PANE: "brunfärgad glasruta"
+  BROWN_TERRACOTTA: "brun terrakotta"
+  BROWN_WOOL: "brun ull"
+  BUBBLE_COLUMN: "bubbelkolumn"
+  BUBBLE_CORAL: "bubbelkorall"
+  BUBBLE_CORAL_BLOCK: "bubbelkorallblock"
+  BUBBLE_CORAL_FAN: "bubbelkorallfläkt"
+  BUBBLE_CORAL_WALL_FAN: "bubbelkorallfläkt på vägg"
+  BUDDING_AMETHYST: "knoppande ametist"
+  CACTUS: "kaktus"
+  CAKE: "tårta"
+  CALCITE: "kalcit"
+  CALIBRATED_SCULK_SENSOR: "kalibrerad sculksensor"
+  CAMPFIRE: "lägereld"
+  CANDLE: "stearinljus"
+  CANDLE_CAKE: "tårta med stearinljus"
+  CARROTS: "morötter"
+  CARTOGRAPHY_TABLE: "kartografbord"
+  CARVED_PUMPKIN: "skuren pumpa"
+  CAULDRON: "kittel"
+  CAVE_AIR: "grottluft"
+  CAVE_VINES: "grottklätterväxt"
+  CAVE_VINES_PLANT: "grottklätterväxtsplanta"
+  CHAIN: "kedja"
+  CHAIN_COMMAND_BLOCK: "kedjat kommandoblock"
+  CHERRY_BUTTON: "körsbärsknapp"
+  CHERRY_DOOR: "körsbärsdörr"
+  CHERRY_FENCE: "körsbärsstaket"
+  CHERRY_FENCE_GATE: "körsbärsgrind"
+  CHERRY_HANGING_SIGN: "hängande körsbärsskylt"
+  CHERRY_LEAVES: "körsbärslöv"
+  CHERRY_LOG: "körsbärsstam"
+  CHERRY_PLANKS: "körsbärsplankor"
+  CHERRY_PRESSURE_PLATE: "körsbärstryckplatta"
+  CHERRY_SAPLING: "körsbärsplanta"
+  CHERRY_SIGN: "körsbärsskylt"
+  CHERRY_SLAB: "körsbärsplatta"
+  CHERRY_STAIRS: "körsbärstrappa"
+  CHERRY_TRAPDOOR: "körsbärsfallucka"
+  CHERRY_WALL_HANGING_SIGN: "hängande körsbärsskylt på vägg"
+  CHERRY_WALL_SIGN: "körsbärsskylt på vägg"
+  CHERRY_WOOD: "körsbärsträ"
+  CHEST: "kista"
+  CHIPPED_ANVIL: "sprucket städ"
+  CHISELED_BOOKSHELF: "mejslad bokhylla"
+  CHISELED_COPPER: "mejslad koppar"
+  CHISELED_DEEPSLATE: "mejslad djupskiffer"
+  CHISELED_NETHER_BRICKS: "mejslat nethertegel"
+  CHISELED_POLISHED_BLACKSTONE: "mejslad polerad svartsten"
+  CHISELED_QUARTZ_BLOCK: "mejslat kvartsblock"
+  CHISELED_RED_SANDSTONE: "mejslad röd sandsten"
+  CHISELED_SANDSTONE: "mejslad sandsten"
+  CHISELED_STONE_BRICKS: "mejslad mursten"
+  CHISELED_TUFF: "mejslad tuff"
+  CHISELED_TUFF_BRICKS: "mejslad tuffmursten"
+  CHORUS_FLOWER: "körblomma"
+  CHORUS_PLANT: "körplanta"
+  CLAY: "lera"
+  COAL_BLOCK: "kolblock"
+  COAL_ORE: "kolmalm"
+  COARSE_DIRT: "grusig jord"
+  COBBLED_DEEPSLATE: "kullerstensformad djupskiffer"
+  COBBLED_DEEPSLATE_SLAB: "kullerstensformad djupskifferplatta"
+  COBBLED_DEEPSLATE_STAIRS: "kullerstensformad djupskiffertrappa"
+  COBBLED_DEEPSLATE_WALL: "kullerstensformad djupskiffermur"
+  COBBLESTONE: "kullersten"
+  COBBLESTONE_SLAB: "kullerstensplatta"
+  COBBLESTONE_STAIRS: "kullerstenstrappa"
+  COBBLESTONE_WALL: "kullerstensmur"
+  COBWEB: "spindelnät"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "kommandoblock"
+  COMPARATOR: "redstonejämförare"
+  COMPOSTER: "kompost"
+  CONDUIT: "flödare"
+  COPPER_BLOCK: "kopparblock"
+  COPPER_BULB: "kopparlampa"
+  COPPER_DOOR: "koppardörr"
+  COPPER_GRATE: "koppargaller"
+  COPPER_ORE: "kopparmalm"
+  COPPER_TRAPDOOR: "kopparfallucka"
+  CORNFLOWER: "blåklint"
+  CRACKED_DEEPSLATE_BRICKS: "sprucken djupskiffermursten"
+  CRACKED_DEEPSLATE_TILES: "sprucket djupskiffertegel"
+  CRACKED_NETHER_BRICKS: "sprucket nethertegel"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "sprucken polerad svartmursten"
+  CRACKED_STONE_BRICKS: "sprucken mursten"
+  CRAFTER: "tillverkare"
+  CRAFTING_TABLE: "arbetsbänk"
+  CREEPER_HEAD: "creeperhuvud"
+  CREEPER_WALL_HEAD: "creeperhuvud på vägg"
+  CRIMSON_BUTTON: "karmosinknapp"
+  CRIMSON_DOOR: "karmosindörr"
+  CRIMSON_FENCE: "karmosinstaket"
+  CRIMSON_FENCE_GATE: "karmosingrind"
+  CRIMSON_FUNGUS: "karmosinsvamp"
+  CRIMSON_HANGING_SIGN: "hängande karmosinskylt"
+  CRIMSON_HYPHAE: "karmosinhyfer"
+  CRIMSON_NYLIUM: "karmosinnycel"
+  CRIMSON_PLANKS: "karmosinplankor"
+  CRIMSON_PRESSURE_PLATE: "karmosintryckplatta"
+  CRIMSON_ROOTS: "karmosinrötter"
+  CRIMSON_SIGN: "karmosinskylt"
+  CRIMSON_SLAB: "karmosinplatta"
+  CRIMSON_STAIRS: "karmosintrappa"
+  CRIMSON_STEM: "karmosinstam"
+  CRIMSON_TRAPDOOR: "karmosinfallucka"
+  CRIMSON_WALL_HANGING_SIGN: "hängande karmosinskylt på vägg"
+  CRIMSON_WALL_SIGN: "karmosinskylt på vägg"
+  CRYING_OBSIDIAN: "gråtande obsidian"
+  CUT_COPPER: "skuren koppar"
+  CUT_COPPER_SLAB: "skuren kopparplatta"
+  CUT_COPPER_STAIRS: "skuren koppartrappa"
+  CUT_RED_SANDSTONE: "skuren röd sandsten"
+  CUT_RED_SANDSTONE_SLAB: "skuren röd sandstensplatta"
+  CUT_SANDSTONE: "skuren sandsten"
+  CUT_SANDSTONE_SLAB: "skuren sandstensplatta"
+  CYAN_BANNER: "turkos fana"
+  CYAN_BED: "turkos säng"
+  CYAN_CANDLE: "turkost stearinljus"
+  CYAN_CANDLE_CAKE: "tårta med turkost stearinljus"
+  CYAN_CARPET: "turkos matta"
+  CYAN_CONCRETE: "turkos betong"
+  CYAN_CONCRETE_POWDER: "turkost betongpulver"
+  CYAN_GLAZED_TERRACOTTA: "turkosglaserad terrakotta"
+  CYAN_SHULKER_BOX: "turkos shulkerlåda"
+  CYAN_STAINED_GLASS: "turkosfärgat glas"
+  CYAN_STAINED_GLASS_PANE: "turkosfärgad glasruta"
+  CYAN_TERRACOTTA: "turkos terrakotta"
+  CYAN_WOOL: "turkos ull"
+  DAMAGED_ANVIL: "skadat städ"
+  DANDELION: "maskros"
+  DARK_OAK_BUTTON: "mörk ekknapp"
+  DARK_OAK_DOOR: "mörk ekdörr"
+  DARK_OAK_FENCE: "mörkt ekstaket"
+  DARK_OAK_FENCE_GATE: "mörk ekgrind"
+  DARK_OAK_HANGING_SIGN: "hängande mörk ekskylt"
+  DARK_OAK_LEAVES: "mörka eklöv"
+  DARK_OAK_LOG: "mörk ekstam"
+  DARK_OAK_PLANKS: "mörka ekplankor"
+  DARK_OAK_PRESSURE_PLATE: "mörk ektryckplatta"
+  DARK_OAK_SAPLING: "mörk ekplanta"
+  DARK_OAK_SIGN: "mörk ekskylt"
+  DARK_OAK_SLAB: "mörk ekplatta"
+  DARK_OAK_STAIRS: "mörk ektrappa"
+  DARK_OAK_TRAPDOOR: "mörk ekfallucka"
+  DARK_OAK_WALL_HANGING_SIGN: "hängande mörk ekskylt på vägg"
+  DARK_OAK_WALL_SIGN: "mörk ekskylt på vägg"
+  DARK_OAK_WOOD: "mörkt ekträ"
+  DARK_PRISMARINE: "mörk prismarin"
+  DARK_PRISMARINE_SLAB: "mörk prismarinplatta"
+  DARK_PRISMARINE_STAIRS: "mörk prismarintrappa"
+  DAYLIGHT_DETECTOR: "dagsljusdetektor"
+  DEAD_BRAIN_CORAL: "död hjärnkorall"
+  DEAD_BRAIN_CORAL_BLOCK: "dött hjärnkorallblock"
+  DEAD_BRAIN_CORAL_FAN: "död hjärnkorallfläkt"
+  DEAD_BRAIN_CORAL_WALL_FAN: "död hjärnkorallfläkt på vägg"
+  DEAD_BUBBLE_CORAL: "död bubbelkorall"
+  DEAD_BUBBLE_CORAL_BLOCK: "dött bubbelkorallblock"
+  DEAD_BUBBLE_CORAL_FAN: "död bubbelkorallfläkt"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "död bubbelkorallfläkt på vägg"
+  DEAD_BUSH: "död buske"
+  DEAD_FIRE_CORAL: "död eldkorall"
+  DEAD_FIRE_CORAL_BLOCK: "dött eldkorallblock"
+  DEAD_FIRE_CORAL_FAN: "död eldkorallfläkt"
+  DEAD_FIRE_CORAL_WALL_FAN: "död eldkorallfläkt på vägg"
+  DEAD_HORN_CORAL: "död hornkorall"
+  DEAD_HORN_CORAL_BLOCK: "dött hornkorallblock"
+  DEAD_HORN_CORAL_FAN: "död hornkorallfläkt"
+  DEAD_HORN_CORAL_WALL_FAN: "död hornkorallfläkt på vägg"
+  DEAD_TUBE_CORAL: "död orgelkorall"
+  DEAD_TUBE_CORAL_BLOCK: "dött orgelkorallblock"
+  DEAD_TUBE_CORAL_FAN: "död orgelkorallfläkt"
+  DEAD_TUBE_CORAL_WALL_FAN: "död orgelkorallfläkt på vägg"
+  DECORATED_POT: "dekorerad keramikkruka"
+  DEEPSLATE: "djupskiffer"
+  DEEPSLATE_BRICK_SLAB: "djupskiffermurstensplatta"
+  DEEPSLATE_BRICK_STAIRS: "djupskiffermurstenstrappa"
+  DEEPSLATE_BRICK_WALL: "djupskiffermurstensmur"
+  DEEPSLATE_BRICKS: "djupskiffermursten"
+  DEEPSLATE_COAL_ORE: "djupskifferinbäddad kolmalm"
+  DEEPSLATE_COPPER_ORE: "djupskifferinbäddad kopparmalm"
+  DEEPSLATE_DIAMOND_ORE: "djupskifferinbäddad diamantmalm"
+  DEEPSLATE_EMERALD_ORE: "djupskifferinbäddad smaragdmalm"
+  DEEPSLATE_GOLD_ORE: "djupskifferinbäddad guldmalm"
+  DEEPSLATE_IRON_ORE: "djupskifferinbäddad järnmalm"
+  DEEPSLATE_LAPIS_ORE: "djupskifferinbäddad lapis lazulimalm"
+  DEEPSLATE_REDSTONE_ORE: "djupskifferinbäddad redstonemalm"
+  DEEPSLATE_TILE_SLAB: "djupskiffertegelplatta"
+  DEEPSLATE_TILE_STAIRS: "djupskiffertegeltrappa"
+  DEEPSLATE_TILE_WALL: "djupskiffertegelmur"
+  DEEPSLATE_TILES: "djupskiffertegel"
+  DETECTOR_RAIL: "sensorräls"
+  DIAMOND_BLOCK: "diamantblock"
+  DIAMOND_ORE: "diamantmalm"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dioritplatta"
+  DIORITE_STAIRS: "diorittrappa"
+  DIORITE_WALL: "dioritmur"
+  DIRT: "jord"
+  DIRT_PATH: "jordstig"
+  DISPENSER: "automat"
+  DRAGON_EGG: "drakägg"
+  DRAGON_HEAD: "drakhuvud"
+  DRAGON_WALL_HEAD: "drakhuvud på vägg"
+  DRIED_KELP_BLOCK: "torkat kelpblock"
+  DRIPSTONE_BLOCK: "droppstensblock"
+  DROPPER: "utmatare"
+  EMERALD_BLOCK: "smaragdblock"
+  EMERALD_ORE: "smaragdmalm"
+  ENCHANTING_TABLE: "förtrollningsbord"
+  END_GATEWAY: "endpassage"
+  END_PORTAL: "endportal"
+  END_PORTAL_FRAME: "endportalsram"
+  END_ROD: "endstav"
+  END_STONE: "endsten"
+  END_STONE_BRICK_SLAB: "endmurstensplatta"
+  END_STONE_BRICK_STAIRS: "endmurstenstrappa"
+  END_STONE_BRICK_WALL: "endmurstensmur"
+  END_STONE_BRICKS: "endmursten"
+  ENDER_CHEST: "enderkista"
+  EXPOSED_CHISELED_COPPER: "exponerad mejslad koppar"
+  EXPOSED_COPPER: "exponerad koppar"
+  EXPOSED_COPPER_BULB: "exponerad kopparlampa"
+  EXPOSED_COPPER_DOOR: "exponerad koppardörr"
+  EXPOSED_COPPER_GRATE: "exponerat koppargaller"
+  EXPOSED_COPPER_TRAPDOOR: "exponerad kopparfallucka"
+  EXPOSED_CUT_COPPER: "exponerad skuren koppar"
+  EXPOSED_CUT_COPPER_SLAB: "exponerad skuren kopparplatta"
+  EXPOSED_CUT_COPPER_STAIRS: "exponerad skuren koppartrappa"
+  FARMLAND: "åkerjord"
+  FERN: "ormbunke"
+  FIRE: "eld"
+  FIRE_CORAL: "eldkorall"
+  FIRE_CORAL_BLOCK: "eldkorallblock"
+  FIRE_CORAL_FAN: "eldkorallfläkt"
+  FIRE_CORAL_WALL_FAN: "eldkorallfläkt på vägg"
+  FLETCHING_TABLE: "pilmakarbänk"
+  FLOWER_POT: "blomkruka"
+  FLOWERING_AZALEA: "blommande azalea"
+  FLOWERING_AZALEA_LEAVES: "blommande azalealöv"
+  FROGSPAWN: "grodrom"
+  FROSTED_ICE: "frostad is"
+  FURNACE: "ugn"
+  GILDED_BLACKSTONE: "förgylld svartsten"
+  GLASS: "glas"
+  GLASS_PANE: "glasruta"
+  GLOW_LICHEN: "självlysande lav"
+  GLOWSTONE: "glödsten"
+  GOLD_BLOCK: "guldblock"
+  GOLD_ORE: "guldmalm"
+  GRANITE: "granit"
+  GRANITE_SLAB: "granitplatta"
+  GRANITE_STAIRS: "granittrappa"
+  GRANITE_WALL: "granitmur"
+  GRASS: "gräs"
+  GRASS_BLOCK: "gräsblock"
+  GRAVEL: "grus"
+  GRAY_BANNER: "grå fana"
+  GRAY_BED: "grå säng"
+  GRAY_CANDLE: "grått stearinljus"
+  GRAY_CANDLE_CAKE: "tårta med grått stearinljus"
+  GRAY_CARPET: "grå matta"
+  GRAY_CONCRETE: "grå betong"
+  GRAY_CONCRETE_POWDER: "grått betongpulver"
+  GRAY_GLAZED_TERRACOTTA: "gråglaserad terrakotta"
+  GRAY_SHULKER_BOX: "grå shulkerlåda"
+  GRAY_STAINED_GLASS: "gråfärgat glas"
+  GRAY_STAINED_GLASS_PANE: "gråfärgad glasruta"
+  GRAY_TERRACOTTA: "grå terrakotta"
+  GRAY_WOOL: "grå ull"
+  GREEN_BANNER: "grön fana"
+  GREEN_BED: "grön säng"
+  GREEN_CANDLE: "grönt stearinljus"
+  GREEN_CANDLE_CAKE: "tårta med grönt stearinljus"
+  GREEN_CARPET: "grön matta"
+  GREEN_CONCRETE: "grön betong"
+  GREEN_CONCRETE_POWDER: "grönt betongpulver"
+  GREEN_GLAZED_TERRACOTTA: "grönglaserad terrakotta"
+  GREEN_SHULKER_BOX: "grön shulkerlåda"
+  GREEN_STAINED_GLASS: "grönfärgat glas"
+  GREEN_STAINED_GLASS_PANE: "grönfärgad glasruta"
+  GREEN_TERRACOTTA: "grön terrakotta"
+  GREEN_WOOL: "grön ull"
+  GRINDSTONE: "slipsten"
+  HANGING_ROOTS: "hängande rötter"
+  HAY_BLOCK: "höbal"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "tung tyngdtryckplatta"
+  HONEY_BLOCK: "honungsblock"
+  HONEYCOMB_BLOCK: "vaxkaksblock"
+  HOPPER: "tratt"
+  HORN_CORAL: "hornkorall"
+  HORN_CORAL_BLOCK: "hornkorallblock"
+  HORN_CORAL_FAN: "hornkorallfläkt"
+  HORN_CORAL_WALL_FAN: "hornkorallfläkt på vägg"
+  ICE: "is"
+  INFESTED_CHISELED_STONE_BRICKS: "angripen mejslad mursten"
+  INFESTED_COBBLESTONE: "angripen kullersten"
+  INFESTED_CRACKED_STONE_BRICKS: "angripen sprucken mursten"
+  INFESTED_DEEPSLATE: "angripen djupskiffer"
+  INFESTED_MOSSY_STONE_BRICKS: "angripen mossig mursten"
+  INFESTED_STONE: "angripen sten"
+  INFESTED_STONE_BRICKS: "angripen mursten"
+  IRON_BARS: "järngaller"
+  IRON_BLOCK: "järnblock"
+  IRON_DOOR: "järndörr"
+  IRON_ORE: "järnmalm"
+  IRON_TRAPDOOR: "järnfallucka"
+  JACK_O_LANTERN: "pumpalykta"
+  JIGSAW: "pusselbitsblock"
+  JUKEBOX: "jukebox"
+  JUNGLE_BUTTON: "djungelknapp"
+  JUNGLE_DOOR: "djungeldörr"
+  JUNGLE_FENCE: "djungelstaket"
+  JUNGLE_FENCE_GATE: "djungelgrind"
+  JUNGLE_HANGING_SIGN: "hängande djungelskylt"
+  JUNGLE_LEAVES: "djungellöv"
+  JUNGLE_LOG: "djungelträdstam"
+  JUNGLE_PLANKS: "djungelplankor"
+  JUNGLE_PRESSURE_PLATE: "djungeltryckplatta"
+  JUNGLE_SAPLING: "djungelplanta"
+  JUNGLE_SIGN: "djungelskylt"
+  JUNGLE_SLAB: "djungelplatta"
+  JUNGLE_STAIRS: "djungeltrappa"
+  JUNGLE_TRAPDOOR: "djungelfallucka"
+  JUNGLE_WALL_HANGING_SIGN: "hängande djungelskylt på vägg"
+  JUNGLE_WALL_SIGN: "djungelskylt på vägg"
+  JUNGLE_WOOD: "djungelträ"
+  KELP: "kelp"
+  KELP_PLANT: "kelpplanta"
+  LADDER: "stege"
+  LANTERN: "lykta"
+  LAPIS_BLOCK: "lapis lazuliblock"
+  LAPIS_ORE: "lapis lazulimalm"
+  LARGE_AMETHYST_BUD: "stor ametistknopp"
+  LARGE_FERN: "stor ormbunke"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lavakittel"
+  LECTERN: "läspulpet"
+  LEVER: "spak"
+  LIGHT: "ljus"
+  LIGHT_BLUE_BANNER: "ljusblå fana"
+  LIGHT_BLUE_BED: "ljusblå säng"
+  LIGHT_BLUE_CANDLE: "ljusblått stearinljus"
+  LIGHT_BLUE_CANDLE_CAKE: "tårta med ljusblått stearinljus"
+  LIGHT_BLUE_CARPET: "ljusblå matta"
+  LIGHT_BLUE_CONCRETE: "ljusblå betong"
+  LIGHT_BLUE_CONCRETE_POWDER: "ljusblått betongpulver"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "ljusblåglaserad terrakotta"
+  LIGHT_BLUE_SHULKER_BOX: "ljusblå shulkerlåda"
+  LIGHT_BLUE_STAINED_GLASS: "ljusblåfärgat glas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "ljusblåfärgad glasruta"
+  LIGHT_BLUE_TERRACOTTA: "ljusblå terrakotta"
+  LIGHT_BLUE_WOOL: "ljusblå ull"
+  LIGHT_GRAY_BANNER: "ljusgrå fana"
+  LIGHT_GRAY_BED: "ljusgrå säng"
+  LIGHT_GRAY_CANDLE: "ljusgrått stearinljus"
+  LIGHT_GRAY_CANDLE_CAKE: "tårta med ljusgrått stearinljus"
+  LIGHT_GRAY_CARPET: "ljusgrå matta"
+  LIGHT_GRAY_CONCRETE: "ljusgrå betong"
+  LIGHT_GRAY_CONCRETE_POWDER: "ljusgrått betongpulver"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "ljusgråglaserad terrakotta"
+  LIGHT_GRAY_SHULKER_BOX: "ljusgrå shulkerlåda"
+  LIGHT_GRAY_STAINED_GLASS: "ljusgråfärgat glas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "ljusgråfärgad glasruta"
+  LIGHT_GRAY_TERRACOTTA: "ljusgrå terrakotta"
+  LIGHT_GRAY_WOOL: "ljusgrå ull"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "lätt tyngdtryckplatta"
+  LIGHTNING_ROD: "åskledare"
+  LILAC: "syren"
+  LILY_OF_THE_VALLEY: "liljekonvalj"
+  LILY_PAD: "näckrosblad"
+  LIME_BANNER: "limegrön fana"
+  LIME_BED: "limegrön säng"
+  LIME_CANDLE: "limegrönt stearinljus"
+  LIME_CANDLE_CAKE: "tårta med limegrönt stearinljus"
+  LIME_CARPET: "limegrön matta"
+  LIME_CONCRETE: "limegrön betong"
+  LIME_CONCRETE_POWDER: "limegrönt betongpulver"
+  LIME_GLAZED_TERRACOTTA: "limegrönglaserad terrakotta"
+  LIME_SHULKER_BOX: "limegrön shulkerlåda"
+  LIME_STAINED_GLASS: "limegrönfärgat glas"
+  LIME_STAINED_GLASS_PANE: "limegrönfärgad glasruta"
+  LIME_TERRACOTTA: "limegrön terrakotta"
+  LIME_WOOL: "limegrön ull"
+  LODESTONE: "magnetit"
+  LOOM: "vävstol"
+  MAGENTA_BANNER: "ljuslila fana"
+  MAGENTA_BED: "ljuslila säng"
+  MAGENTA_CANDLE: "ljuslila stearinljus"
+  MAGENTA_CANDLE_CAKE: "tårta med ljuslila stearinljus"
+  MAGENTA_CARPET: "ljuslila matta"
+  MAGENTA_CONCRETE: "ljuslila betong"
+  MAGENTA_CONCRETE_POWDER: "ljuslila betongpulver"
+  MAGENTA_GLAZED_TERRACOTTA: "ljuslilaglaserad terrakotta"
+  MAGENTA_SHULKER_BOX: "ljuslila shulkerlåda"
+  MAGENTA_STAINED_GLASS: "ljuslilafärgat glas"
+  MAGENTA_STAINED_GLASS_PANE: "ljuslilafärgad glasruta"
+  MAGENTA_TERRACOTTA: "ljuslila terrakotta"
+  MAGENTA_WOOL: "ljuslila ull"
+  MAGMA_BLOCK: "magmablock"
+  MANGROVE_BUTTON: "mangroveknapp"
+  MANGROVE_DOOR: "mangrovedörr"
+  MANGROVE_FENCE: "mangrovestaket"
+  MANGROVE_FENCE_GATE: "mangrovegrind"
+  MANGROVE_HANGING_SIGN: "hängande mangroveskylt"
+  MANGROVE_LEAVES: "mangrovelöv"
+  MANGROVE_LOG: "mangrovestam"
+  MANGROVE_PLANKS: "mangroveplankor"
+  MANGROVE_PRESSURE_PLATE: "mangrovetryckplatta"
+  MANGROVE_PROPAGULE: "mangroveskott"
+  MANGROVE_ROOTS: "mangroverötter"
+  MANGROVE_SIGN: "mangroveskylt"
+  MANGROVE_SLAB: "mangroveplatta"
+  MANGROVE_STAIRS: "mangrovetrappa"
+  MANGROVE_TRAPDOOR: "mangrovefallucka"
+  MANGROVE_WALL_HANGING_SIGN: "hängande mangroveskylt på vägg"
+  MANGROVE_WALL_SIGN: "mangroveskylt på vägg"
+  MANGROVE_WOOD: "mangroveträ"
+  MEDIUM_AMETHYST_BUD: "medelstor ametistknopp"
+  MELON: "melon"
+  MELON_STEM: "melonstjälk"
+  MOSS_BLOCK: "mossblock"
+  MOSS_CARPET: "mossmatta"
+  MOSSY_COBBLESTONE: "mossig kullersten"
+  MOSSY_COBBLESTONE_SLAB: "mossig kullerstensplatta"
+  MOSSY_COBBLESTONE_STAIRS: "mossig kullerstenstrappa"
+  MOSSY_COBBLESTONE_WALL: "mossig kullerstensmur"
+  MOSSY_STONE_BRICK_SLAB: "mossig murstensplatta"
+  MOSSY_STONE_BRICK_STAIRS: "mossig murstenstrappa"
+  MOSSY_STONE_BRICK_WALL: "mossig murstensmur"
+  MOSSY_STONE_BRICKS: "mossig mursten"
+  MOVING_PISTON: "kolv i rörelse"
+  MUD: "gyttja"
+  MUD_BRICK_SLAB: "gyttjemurstensplatta"
+  MUD_BRICK_STAIRS: "gyttjemurstenstrappa"
+  MUD_BRICK_WALL: "gyttjemurstensmur"
+  MUD_BRICKS: "gyttjemursten"
+  MUDDY_MANGROVE_ROOTS: "gyttjiga mangroverötter"
+  MUSHROOM_STEM: "svampfot"
+  MYCELIUM: "mycel"
+  NETHER_BRICK_FENCE: "nethertegelstaket"
+  NETHER_BRICK_SLAB: "nethertegelplatta"
+  NETHER_BRICK_STAIRS: "nethertegeltrappa"
+  NETHER_BRICK_WALL: "nethertegelmur"
+  NETHER_BRICKS: "nethertegel"
+  NETHER_GOLD_ORE: "netherguldmalm"
+  NETHER_PORTAL: "netherportal"
+  NETHER_QUARTZ_ORE: "netherkvartsmalm"
+  NETHER_SPROUTS: "netherskott"
+  NETHER_WART: "nethervårta"
+  NETHER_WART_BLOCK: "nethervårtsblock"
+  NETHERITE_BLOCK: "netheritblock"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "notblock"
+  OAK_BUTTON: "ekknapp"
+  OAK_DOOR: "ekdörr"
+  OAK_FENCE: "ekstaket"
+  OAK_FENCE_GATE: "ekgrind"
+  OAK_HANGING_SIGN: "hängande ekskylt"
+  OAK_LEAVES: "eklöv"
+  OAK_LOG: "ekstam"
+  OAK_PLANKS: "ekplankor"
+  OAK_PRESSURE_PLATE: "ektryckplatta"
+  OAK_SAPLING: "ekplanta"
+  OAK_SIGN: "ekskylt"
+  OAK_SLAB: "ekplatta"
+  OAK_STAIRS: "ektrappa"
+  OAK_TRAPDOOR: "ekfallucka"
+  OAK_WALL_HANGING_SIGN: "hängande ekskylt på vägg"
+  OAK_WALL_SIGN: "ekskylt på vägg"
+  OAK_WOOD: "ekträ"
+  OBSERVER: "observatör"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "ockraskinande grodljus"
+  OMINOUS_BANNER: "oroväckande fana"
+  ORANGE_BANNER: "orange fana"
+  ORANGE_BED: "orange säng"
+  ORANGE_CANDLE: "orange stearinljus"
+  ORANGE_CANDLE_CAKE: "tårta med orange stearinljus"
+  ORANGE_CARPET: "orange matta"
+  ORANGE_CONCRETE: "orange betong"
+  ORANGE_CONCRETE_POWDER: "orange betongpulver"
+  ORANGE_GLAZED_TERRACOTTA: "orangeglaserad terrakotta"
+  ORANGE_SHULKER_BOX: "orange shulkerlåda"
+  ORANGE_STAINED_GLASS: "orangefärgat glas"
+  ORANGE_STAINED_GLASS_PANE: "orangefärgad glasruta"
+  ORANGE_TERRACOTTA: "orange terrakotta"
+  ORANGE_TULIP: "orange tulpan"
+  ORANGE_WOOL: "orange ull"
+  OXEYE_DAISY: "prästkrage"
+  OXIDIZED_CHISELED_COPPER: "ärgad mejslad koppar"
+  OXIDIZED_COPPER: "ärgad koppar"
+  OXIDIZED_COPPER_BULB: "ärgad kopparlampa"
+  OXIDIZED_COPPER_DOOR: "ärgad koppardörr"
+  OXIDIZED_COPPER_GRATE: "ärgat koppargaller"
+  OXIDIZED_COPPER_TRAPDOOR: "ärgad kopparfallucka"
+  OXIDIZED_CUT_COPPER: "ärgad skuren koppar"
+  OXIDIZED_CUT_COPPER_SLAB: "ärgad skuren kopparplatta"
+  OXIDIZED_CUT_COPPER_STAIRS: "ärgad skuren koppartrappa"
+  PACKED_ICE: "packad is"
+  PACKED_MUD: "packad gyttja"
+  PEARLESCENT_FROGLIGHT: "pärlemorskimrande grodljus"
+  PEONY: "pion"
+  PETRIFIED_OAK_SLAB: "förstenad ekplatta"
+  PIGLIN_HEAD: "piglinhuvud"
+  PIGLIN_WALL_HEAD: "piglinhuvud på vägg"
+  PINK_BANNER: "rosa fana"
+  PINK_BED: "rosa säng"
+  PINK_CANDLE: "rosa stearinljus"
+  PINK_CANDLE_CAKE: "tårta med rosa stearinljus"
+  PINK_CARPET: "rosa matta"
+  PINK_CONCRETE: "rosa betong"
+  PINK_CONCRETE_POWDER: "rosa betongpulver"
+  PINK_GLAZED_TERRACOTTA: "rosaglaserad terrakotta"
+  PINK_PETALS: "rosa kronblad"
+  PINK_SHULKER_BOX: "rosa shulkerlåda"
+  PINK_STAINED_GLASS: "rosafärgat glas"
+  PINK_STAINED_GLASS_PANE: "rosafärgad glasruta"
+  PINK_TERRACOTTA: "rosa terrakotta"
+  PINK_TULIP: "rosa tulpan"
+  PINK_WOOL: "rosa ull"
+  PISTON: "kolv"
+  PISTON_HEAD: "kolvhuvud"
+  PITCHER_CROP: "kannrankeplanta"
+  PITCHER_PLANT: "kannranka"
+  PLAYER_HEAD: "spelarhuvud"
+  PLAYER_HEAD_NAMED: "%ss huvud"
+  PLAYER_WALL_HEAD: "spelarhuvud på vägg"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "spetsig droppsten"
+  POLISHED_ANDESITE: "polerad andesit"
+  POLISHED_ANDESITE_SLAB: "polerad andesitplatta"
+  POLISHED_ANDESITE_STAIRS: "polerad andesittrappa"
+  POLISHED_BASALT: "polerad basalt"
+  POLISHED_BLACKSTONE: "polerad svartsten"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "polerad svartmurstensplatta"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "polerad svartmurstenstrappa"
+  POLISHED_BLACKSTONE_BRICK_WALL: "polerad svartmurstensmur"
+  POLISHED_BLACKSTONE_BRICKS: "polerad svartmursten"
+  POLISHED_BLACKSTONE_BUTTON: "polerad svartstensknapp"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "polerad svartstenstryckplatta"
+  POLISHED_BLACKSTONE_SLAB: "polerad svartstensplatta"
+  POLISHED_BLACKSTONE_STAIRS: "polerad svartstenstrappa"
+  POLISHED_BLACKSTONE_WALL: "polerad svartstensmur"
+  POLISHED_DEEPSLATE: "polerad djupskiffer"
+  POLISHED_DEEPSLATE_SLAB: "polerad djupskifferplatta"
+  POLISHED_DEEPSLATE_STAIRS: "polerad djupskiffertrappa"
+  POLISHED_DEEPSLATE_WALL: "polerad djupskiffermur"
+  POLISHED_DIORITE: "polerad diorit"
+  POLISHED_DIORITE_SLAB: "polerad dioritplatta"
+  POLISHED_DIORITE_STAIRS: "polerad diorittrappa"
+  POLISHED_GRANITE: "polerad granit"
+  POLISHED_GRANITE_SLAB: "polerad granitplatta"
+  POLISHED_GRANITE_STAIRS: "polerad granittrappa"
+  POLISHED_TUFF: "polerad tuff"
+  POLISHED_TUFF_SLAB: "polerad tuffplatta"
+  POLISHED_TUFF_STAIRS: "polerad tufftrappa"
+  POLISHED_TUFF_WALL: "polerad tuffmur"
+  POPPY: "vallmo"
+  POTATOES: "potatisar"
+  POTTED_ACACIA_SAPLING: "akaciaplanta i kruka"
+  POTTED_ALLIUM: "gräslök i kruka"
+  POTTED_AZALEA_BUSH: "azalea i kruka"
+  POTTED_AZURE_BLUET: "porslinsstjärna i kruka"
+  POTTED_BAMBOO: "bambu i kruka"
+  POTTED_BIRCH_SAPLING: "björkplanta i kruka"
+  POTTED_BLUE_ORCHID: "blå orkidé i kruka"
+  POTTED_BROWN_MUSHROOM: "brun svamp i kruka"
+  POTTED_CACTUS: "kaktus i kruka"
+  POTTED_CHERRY_SAPLING: "körsbärsplanta i kruka"
+  POTTED_CORNFLOWER: "blåklint i kruka"
+  POTTED_CRIMSON_FUNGUS: "karmosinsvamp i kruka"
+  POTTED_CRIMSON_ROOTS: "karmosinrötter i kruka"
+  POTTED_DANDELION: "maskros i kruka"
+  POTTED_DARK_OAK_SAPLING: "mörk ekplanta i kruka"
+  POTTED_DEAD_BUSH: "död buske i kruka"
+  POTTED_FERN: "ormbunke i kruka"
+  POTTED_FLOWERING_AZALEA_BUSH: "blommande azalea i kruka"
+  POTTED_JUNGLE_SAPLING: "djungelplanta i kruka"
+  POTTED_LILY_OF_THE_VALLEY: "liljekonvalj i kruka"
+  POTTED_MANGROVE_PROPAGULE: "mangroveskott i kruka"
+  POTTED_OAK_SAPLING: "ekplanta i kruka"
+  POTTED_ORANGE_TULIP: "orange tulpan i kruka"
+  POTTED_OXEYE_DAISY: "prästkrage i kruka"
+  POTTED_PINK_TULIP: "rosa tulpan i kruka"
+  POTTED_POPPY: "vallmo i kruka"
+  POTTED_RED_MUSHROOM: "röd svamp i kruka"
+  POTTED_RED_TULIP: "röd tulpan i kruka"
+  POTTED_SPRUCE_SAPLING: "granplanta i kruka"
+  POTTED_TORCHFLOWER: "fackellilja i kruka"
+  POTTED_WARPED_FUNGUS: "förvrängd svamp i kruka"
+  POTTED_WARPED_ROOTS: "förvrängda rötter i kruka"
+  POTTED_WHITE_TULIP: "vit tulpan i kruka"
+  POTTED_WITHER_ROSE: "witherros i kruka"
+  POWDER_SNOW: "pudersnö"
+  POWDER_SNOW_CAULDRON: "pudersnökittel"
+  POWERED_RAIL: "krafträls"
+  PRISMARINE: "prismarin"
+  PRISMARINE_BRICK_SLAB: "prismarinmurstensplatta"
+  PRISMARINE_BRICK_STAIRS: "prismarinmurstenstrappa"
+  PRISMARINE_BRICKS: "prismarinmursten"
+  PRISMARINE_SLAB: "prismarinplatta"
+  PRISMARINE_STAIRS: "prismarintrappa"
+  PRISMARINE_WALL: "prismarinmur"
+  PUMPKIN: "pumpa"
+  PUMPKIN_STEM: "pumpastjälk"
+  PURPLE_BANNER: "lila fana"
+  PURPLE_BED: "lila säng"
+  PURPLE_CANDLE: "lila stearinljus"
+  PURPLE_CANDLE_CAKE: "tårta med lila stearinljus"
+  PURPLE_CARPET: "lila matta"
+  PURPLE_CONCRETE: "lila betong"
+  PURPLE_CONCRETE_POWDER: "lila betongpulver"
+  PURPLE_GLAZED_TERRACOTTA: "lilaglaserad terrakotta"
+  PURPLE_SHULKER_BOX: "lila shulkerlåda"
+  PURPLE_STAINED_GLASS: "lilafärgat glas"
+  PURPLE_STAINED_GLASS_PANE: "lilafärgad glasruta"
+  PURPLE_TERRACOTTA: "lila terrakotta"
+  PURPLE_WOOL: "lila ull"
+  PURPUR_BLOCK: "purpurblock"
+  PURPUR_PILLAR: "purpurpelare"
+  PURPUR_SLAB: "purpurplatta"
+  PURPUR_STAIRS: "purpurtrappa"
+  QUARTZ_BLOCK: "kvartsblock"
+  QUARTZ_BRICKS: "kvartsmursten"
+  QUARTZ_PILLAR: "kvartspelare"
+  QUARTZ_SLAB: "kvartsplatta"
+  QUARTZ_STAIRS: "kvartstrappa"
+  RAIL: "räls"
+  RAW_COPPER_BLOCK: "råkopparblock"
+  RAW_GOLD_BLOCK: "råguldsblock"
+  RAW_IRON_BLOCK: "råjärnsblock"
+  RED_BANNER: "röd fana"
+  RED_BED: "röd säng"
+  RED_CANDLE: "rött stearinljus"
+  RED_CANDLE_CAKE: "tårta med rött stearinljus"
+  RED_CARPET: "röd matta"
+  RED_CONCRETE: "röd betong"
+  RED_CONCRETE_POWDER: "rött betongpulver"
+  RED_GLAZED_TERRACOTTA: "rödglaserad terrakotta"
+  RED_MUSHROOM: "röd svamp"
+  RED_MUSHROOM_BLOCK: "rött svampblock"
+  RED_NETHER_BRICK_SLAB: "röd nethertegelplatta"
+  RED_NETHER_BRICK_STAIRS: "röd nethertegeltrappa"
+  RED_NETHER_BRICK_WALL: "röd nethertegelmur"
+  RED_NETHER_BRICKS: "rött nethertegel"
+  RED_SAND: "röd sand"
+  RED_SANDSTONE: "röd sandsten"
+  RED_SANDSTONE_SLAB: "röd sandstensplatta"
+  RED_SANDSTONE_STAIRS: "röd sandstenstrappa"
+  RED_SANDSTONE_WALL: "röd sandstensmur"
+  RED_SHULKER_BOX: "röd shulkerlåda"
+  RED_STAINED_GLASS: "rödfärgat glas"
+  RED_STAINED_GLASS_PANE: "rödfärgad glasruta"
+  RED_TERRACOTTA: "röd terrakotta"
+  RED_TULIP: "röd tulpan"
+  RED_WOOL: "röd ull"
+  REDSTONE_BLOCK: "redstoneblock"
+  REDSTONE_LAMP: "redstonelampa"
+  REDSTONE_ORE: "redstonemalm"
+  REDSTONE_TORCH: "redstonefackla"
+  REDSTONE_WALL_TORCH: "redstonefackla på vägg"
+  REDSTONE_WIRE: "redstonetråd"
+  REINFORCED_DEEPSLATE: "förstärkt djupskiffer"
+  REPEATER: "redstonerepeterare"
+  REPEATING_COMMAND_BLOCK: "upprepande kommandoblock"
+  RESPAWN_ANCHOR: "återuppståndelseankare"
+  ROOTED_DIRT: "rotad jord"
+  ROSE_BUSH: "rosbuske"
+  SAND: "sand"
+  SANDSTONE: "sandsten"
+  SANDSTONE_SLAB: "sandstensplatta"
+  SANDSTONE_STAIRS: "sandstenstrappa"
+  SANDSTONE_WALL: "sandstensmur"
+  SCAFFOLDING: "byggnadsställning"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculkkatalysator"
+  SCULK_SENSOR: "sculksensor"
+  SCULK_SHRIEKER: "sculkskrikare"
+  SCULK_VEIN: "sculkven"
+  SEA_LANTERN: "havslykta"
+  SEA_PICKLE: "havsgurka"
+  SEAGRASS: "sjögräs"
+  SET_SPAWN: "ändrade återuppståndelsepunkten"
+  SHORT_GRASS: "kort gräs"
+  SHROOMLIGHT: "svampljus"
+  SHULKER_BOX: "shulkerlåda"
+  SKELETON_SKULL: "skelettskalle"
+  SKELETON_WALL_SKULL: "skelettskalle på vägg"
+  SLIME_BLOCK: "slemblock"
+  SMALL_AMETHYST_BUD: "liten ametistknopp"
+  SMALL_DRIPLEAF: "litet dropplöv"
+  SMITHING_TABLE: "smedsbänk"
+  SMOKER: "rökugn"
+  SMOOTH_BASALT: "len basalt"
+  SMOOTH_QUARTZ: "lent kvartsblock"
+  SMOOTH_QUARTZ_SLAB: "len kvartsplatta"
+  SMOOTH_QUARTZ_STAIRS: "len kvartstrappa"
+  SMOOTH_RED_SANDSTONE: "len röd sandsten"
+  SMOOTH_RED_SANDSTONE_SLAB: "len röd sandstensplatta"
+  SMOOTH_RED_SANDSTONE_STAIRS: "len röd sandstenstrappa"
+  SMOOTH_SANDSTONE: "len sandsten"
+  SMOOTH_SANDSTONE_SLAB: "len sandstensplatta"
+  SMOOTH_SANDSTONE_STAIRS: "len sandstenstrappa"
+  SMOOTH_STONE: "len sten"
+  SMOOTH_STONE_SLAB: "len stenplatta"
+  SNIFFER_EGG: "sniffarägg"
+  SNOW: "snö"
+  SNOW_BLOCK: "snöblock"
+  SOUL_CAMPFIRE: "själlägereld"
+  SOUL_FIRE: "själeld"
+  SOUL_LANTERN: "själlykta"
+  SOUL_SAND: "själsand"
+  SOUL_SOIL: "själjord"
+  SOUL_TORCH: "själfackla"
+  SOUL_WALL_TORCH: "själfackla på vägg"
+  SPAWN_NOT_VALID: "din säng eller ditt laddade återuppståndelseankare saknas eller har blockerats"
+  SPAWNER: "monsterskapare"
+  SPAWNER_DESC1: "interaktion med skapelseägg:"
+  SPAWNER_DESC2: "ändrar varelsetypen"
+  SPONGE: "svamp"
+  SPORE_BLOSSOM: "sporblomma"
+  SPRUCE_BUTTON: "granknapp"
+  SPRUCE_DOOR: "grandörr"
+  SPRUCE_FENCE: "granstaket"
+  SPRUCE_FENCE_GATE: "grangrind"
+  SPRUCE_HANGING_SIGN: "hängande granskylt"
+  SPRUCE_LEAVES: "granbarr"
+  SPRUCE_LOG: "granstam"
+  SPRUCE_PLANKS: "granplankor"
+  SPRUCE_PRESSURE_PLATE: "grantryckplatta"
+  SPRUCE_SAPLING: "granplanta"
+  SPRUCE_SIGN: "granskylt"
+  SPRUCE_SLAB: "granplatta"
+  SPRUCE_STAIRS: "grantrappa"
+  SPRUCE_TRAPDOOR: "granfallucka"
+  SPRUCE_WALL_HANGING_SIGN: "hängande granskylt på vägg"
+  SPRUCE_WALL_SIGN: "granskylt på vägg"
+  SPRUCE_WOOD: "granträ"
+  STICKY_PISTON: "klibbig kolv"
+  STONE: "sten"
+  STONE_BRICK_SLAB: "murstensplatta"
+  STONE_BRICK_STAIRS: "murstenstrappa"
+  STONE_BRICK_WALL: "murstensmur"
+  STONE_BRICKS: "mursten"
+  STONE_BUTTON: "stenknapp"
+  STONE_PRESSURE_PLATE: "stentryckplatta"
+  STONE_SLAB: "stenplatta"
+  STONE_STAIRS: "stentrappa"
+  STONECUTTER: "stenskärare"
+  STRIPPED_ACACIA_LOG: "avbarkad akaciastam"
+  STRIPPED_ACACIA_WOOD: "avbarkat akaciaträ"
+  STRIPPED_BAMBOO_BLOCK: "avskalat bambublock"
+  STRIPPED_BIRCH_LOG: "avbarkad björkstam"
+  STRIPPED_BIRCH_WOOD: "avbarkat björkträ"
+  STRIPPED_CHERRY_LOG: "avbarkad körsbärsstam"
+  STRIPPED_CHERRY_WOOD: "avbarkat körsbärsträ"
+  STRIPPED_CRIMSON_HYPHAE: "avskalade karmosinhyfer"
+  STRIPPED_CRIMSON_STEM: "avskalad karmosinstam"
+  STRIPPED_DARK_OAK_LOG: "avbarkad mörk ekstam"
+  STRIPPED_DARK_OAK_WOOD: "avbarkat mörkt ekträ"
+  STRIPPED_JUNGLE_LOG: "avbarkad djungelträdstam"
+  STRIPPED_JUNGLE_WOOD: "avbarkat djungelträ"
+  STRIPPED_MANGROVE_LOG: "avbarkad mangrovestam"
+  STRIPPED_MANGROVE_WOOD: "avbarkat mangroveträ"
+  STRIPPED_OAK_LOG: "avbarkad ekstam"
+  STRIPPED_OAK_WOOD: "avbarkat ekträ"
+  STRIPPED_SPRUCE_LOG: "avbarkad granstam"
+  STRIPPED_SPRUCE_WOOD: "avbarkat granträ"
+  STRIPPED_WARPED_HYPHAE: "avskalade förvrängda hyfer"
+  STRIPPED_WARPED_STEM: "avskalad förvrängd stam"
+  STRUCTURE_BLOCK: "strukturblock"
+  STRUCTURE_VOID: "strukturtomrum"
+  SUGAR_CANE: "sockerrör"
+  SUNFLOWER: "solros"
+  SUSPICIOUS_GRAVEL: "misstänksamt grus"
+  SUSPICIOUS_SAND: "misstänksam sand"
+  SWEET_BERRY_BUSH: "sötbärsbuske"
+  TALL_GRASS: "högt gräs"
+  TALL_SEAGRASS: "högt sjögräs"
+  TARGET: "måltavla"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "tonat glas"
+  TNT: "dynamit"
+  TORCH: "fackla"
+  TORCHFLOWER: "fackellilja"
+  TORCHFLOWER_CROP: "fackelliljeplanta"
+  TRAPPED_CHEST: "kistfälla"
+  TRIAL_SPAWNER: "utmaningsskapare"
+  TRIPWIRE: "snubbeltråd"
+  TRIPWIRE_HOOK: "snubbeltrådskrok"
+  TUBE_CORAL: "orgelkorall"
+  TUBE_CORAL_BLOCK: "orgelkorallblock"
+  TUBE_CORAL_FAN: "orgelkorallfläkt"
+  TUBE_CORAL_WALL_FAN: "orgelkorallfläkt på vägg"
+  TUFF: "tuff"
+  TUFF_BRICK_SLAB: "tuffmurstensplatta"
+  TUFF_BRICK_STAIRS: "tuffmurstenstrappa"
+  TUFF_BRICK_WALL: "tuffmurstensmur"
+  TUFF_BRICKS: "tuffmursten"
+  TUFF_SLAB: "tuffplatta"
+  TUFF_STAIRS: "tufftrappa"
+  TUFF_WALL: "tuffmur"
+  TURTLE_EGG: "sköldpaddsägg"
+  TWISTING_VINES: "vridande klätterväxt"
+  TWISTING_VINES_PLANT: "vridande klätterväxtsplanta"
+  VERDANT_FROGLIGHT: "grönskande grodljus"
+  VINE: "klätterväxt"
+  VOID_AIR: "tomhetsluft"
+  WALL_TORCH: "fackla på vägg"
+  WARPED_BUTTON: "förvrängd knapp"
+  WARPED_DOOR: "förvrängd dörr"
+  WARPED_FENCE: "förvrängt staket"
+  WARPED_FENCE_GATE: "förvrängd grind"
+  WARPED_FUNGUS: "förvrängd svamp"
+  WARPED_HANGING_SIGN: "hängande förvrängd skylt"
+  WARPED_HYPHAE: "förvrängda hyfer"
+  WARPED_NYLIUM: "förvrängd nycel"
+  WARPED_PLANKS: "förvrängda plankor"
+  WARPED_PRESSURE_PLATE: "förvrängd tryckplatta"
+  WARPED_ROOTS: "förvrängda rötter"
+  WARPED_SIGN: "förvrängd skylt"
+  WARPED_SLAB: "förvrängd platta"
+  WARPED_STAIRS: "förvrängd trappa"
+  WARPED_STEM: "förvrängd stam"
+  WARPED_TRAPDOOR: "förvrängd fallucka"
+  WARPED_WALL_HANGING_SIGN: "hängande förvrängd skylt på vägg"
+  WARPED_WALL_SIGN: "förvrängd skylt på vägg"
+  WARPED_WART_BLOCK: "förvrängt vårtblock"
+  WATER: "vatten"
+  WATER_CAULDRON: "vattenkittel"
+  WAXED_CHISELED_COPPER: "vaxad mejslad koppar"
+  WAXED_COPPER_BLOCK: "vaxat kopparblock"
+  WAXED_COPPER_BULB: "vaxad kopparlampa"
+  WAXED_COPPER_DOOR: "vaxad koppardörr"
+  WAXED_COPPER_GRATE: "vaxat koppargaller"
+  WAXED_COPPER_TRAPDOOR: "vaxad kopparfallucka"
+  WAXED_CUT_COPPER: "vaxad skuren koppar"
+  WAXED_CUT_COPPER_SLAB: "vaxad skuren kopparplatta"
+  WAXED_CUT_COPPER_STAIRS: "vaxad skuren koppartrappa"
+  WAXED_EXPOSED_CHISELED_COPPER: "vaxad exponerad mejslad koppar"
+  WAXED_EXPOSED_COPPER: "vaxad exponerad koppar"
+  WAXED_EXPOSED_COPPER_BULB: "vaxad exponerad kopparlampa"
+  WAXED_EXPOSED_COPPER_DOOR: "vaxad exponerad koppardörr"
+  WAXED_EXPOSED_COPPER_GRATE: "vaxat exponerat koppargaller"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "vaxad exponerad kopparfallucka"
+  WAXED_EXPOSED_CUT_COPPER: "vaxad exponerad skuren koppar"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "vaxad exponerad skuren kopparplatta"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "vaxad exponerad skuren koppartrappa"
+  WAXED_OXIDIZED_CHISELED_COPPER: "vaxad ärgad mejslad koppar"
+  WAXED_OXIDIZED_COPPER: "vaxad ärgad koppar"
+  WAXED_OXIDIZED_COPPER_BULB: "vaxad ärgad kopparlampa"
+  WAXED_OXIDIZED_COPPER_DOOR: "vaxad ärgad koppardörr"
+  WAXED_OXIDIZED_COPPER_GRATE: "vaxat ärgat koppargaller"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "vaxad ärgad kopparfallucka"
+  WAXED_OXIDIZED_CUT_COPPER: "vaxad ärgad skuren koppar"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "vaxad ärgad skuren kopparplatta"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "vaxad ärgad skuren koppartrappa"
+  WAXED_WEATHERED_CHISELED_COPPER: "vaxad väderbiten mejslad koppar"
+  WAXED_WEATHERED_COPPER: "vaxad väderbiten koppar"
+  WAXED_WEATHERED_COPPER_BULB: "vaxad väderbiten kopparlampa"
+  WAXED_WEATHERED_COPPER_DOOR: "vaxad väderbiten koppardörr"
+  WAXED_WEATHERED_COPPER_GRATE: "vaxat väderbitet koppargaller"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "vaxad väderbiten kopparfallucka"
+  WAXED_WEATHERED_CUT_COPPER: "vaxad väderbiten skuren koppar"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "vaxad väderbiten skuren kopparplatta"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "vaxad väderbiten skuren koppartrappa"
+  WEATHERED_CHISELED_COPPER: "väderbiten mejslad koppar"
+  WEATHERED_COPPER: "väderbiten koppar"
+  WEATHERED_COPPER_BULB: "väderbiten kopparlampa"
+  WEATHERED_COPPER_DOOR: "väderbiten koppardörr"
+  WEATHERED_COPPER_GRATE: "väderbitet koppargaller"
+  WEATHERED_COPPER_TRAPDOOR: "väderbiten kopparfallucka"
+  WEATHERED_CUT_COPPER: "väderbiten skuren koppar"
+  WEATHERED_CUT_COPPER_SLAB: "väderbiten skuren kopparplatta"
+  WEATHERED_CUT_COPPER_STAIRS: "väderbiten skuren koppartrappa"
+  WEEPING_VINES: "tårklätterväxt"
+  WEEPING_VINES_PLANT: "tårklätterväxtsplanta"
+  WET_SPONGE: "våt svamp"
+  WHEAT: "vetegrödor"
+  WHITE_BANNER: "vit fana"
+  WHITE_BED: "vit säng"
+  WHITE_CANDLE: "vitt stearinljus"
+  WHITE_CANDLE_CAKE: "tårta med vitt stearinljus"
+  WHITE_CARPET: "vit matta"
+  WHITE_CONCRETE: "vit betong"
+  WHITE_CONCRETE_POWDER: "vitt betongpulver"
+  WHITE_GLAZED_TERRACOTTA: "vitglaserad terrakotta"
+  WHITE_SHULKER_BOX: "vit shulkerlåda"
+  WHITE_STAINED_GLASS: "vitfärgat glas"
+  WHITE_STAINED_GLASS_PANE: "vitfärgad glasruta"
+  WHITE_TERRACOTTA: "vit terrakotta"
+  WHITE_TULIP: "vit tulpan"
+  WHITE_WOOL: "vit ull"
+  WITHER_ROSE: "witherros"
+  WITHER_SKELETON_SKULL: "witherskelettskalle"
+  WITHER_SKELETON_WALL_SKULL: "witherskelettskalle på vägg"
+  YELLOW_BANNER: "gul fana"
+  YELLOW_BED: "gul säng"
+  YELLOW_CANDLE: "gult stearinljus"
+  YELLOW_CANDLE_CAKE: "tårta med gult stearinljus"
+  YELLOW_CARPET: "gul matta"
+  YELLOW_CONCRETE: "gul betong"
+  YELLOW_CONCRETE_POWDER: "gult betongpulver"
+  YELLOW_GLAZED_TERRACOTTA: "gulglaserad terrakotta"
+  YELLOW_SHULKER_BOX: "gul shulkerlåda"
+  YELLOW_STAINED_GLASS: "gulfärgat glas"
+  YELLOW_STAINED_GLASS_PANE: "gulfärgad glasruta"
+  YELLOW_TERRACOTTA: "gul terrakotta"
+  YELLOW_WOOL: "gul ull"
+  ZOMBIE_HEAD: "zombiehuvud"
+  ZOMBIE_WALL_HEAD: "zombiehuvud på vägg"
+  ACACIA_BOAT: "akaciabåt"
+  ACACIA_CHEST_BOAT: "akaciabåt med kista"
+  ALLAY_SPAWN_EGG: "skapelseägg för hjälpande ande"
+  AMETHYST_SHARD: "ametistskärva"
+  ANGLER_POTTERY_SHARD: "keramikskärva med fiskespö"
+  ANGLER_POTTERY_SHERD: "keramikskärva med fiskespö"
+  APPLE: "äpple"
+  ARCHER_POTTERY_SHARD: "keramikskärva med pilbåge"
+  ARCHER_POTTERY_SHERD: "keramikskärva med pilbåge"
+  ARMOR_STAND: "rustningsställ"
+  ARMS_UP_POTTERY_SHARD: "keramikskärva med uppsträckta armar"
+  ARMS_UP_POTTERY_SHERD: "keramikskärva med uppsträckta armar"
+  ARROW: "pil"
+  AXOLOTL_BUCKET: "hink med axolotl"
+  AXOLOTL_SPAWN_EGG: "skapelseägg för axolotl"
+  BAKED_POTATO: "bakad potatis"
+  BAMBOO_CHEST_RAFT: "bambuflotte med kista"
+  BAMBOO_RAFT: "bambuflotte"
+  BAT_SPAWN_EGG: "skapelseägg för fladdermus"
+  BEE_SPAWN_EGG: "skapelseägg för bi"
+  BEEF: "rå biff"
+  BEETROOT: "rödbeta"
+  BEETROOT_SEEDS: "rödbetsfrön"
+  BEETROOT_SOUP: "rödbetssoppa"
+  BIRCH_BOAT: "björkbåt"
+  BIRCH_CHEST_BOAT: "björkbåt med kista"
+  BLACK_DYE: "svart färg"
+  BLADE_POTTERY_SHARD: "keramikskärva med svärd"
+  BLADE_POTTERY_SHERD: "keramikskärva med svärd"
+  BLAZE_POWDER: "brännpulver"
+  BLAZE_ROD: "brännstav"
+  BLAZE_SPAWN_EGG: "skapelseägg för brännare"
+  BLUE_DYE: "blå färg"
+  BONE: "ben"
+  BONE_MEAL: "benmjöl"
+  BOOK: "bok"
+  BOW: "pilbåge"
+  BOWL: "skål"
+  BREAD: "bröd"
+  BREEZE_SPAWN_EGG: "skapelseägg för vindväsen"
+  BREWER_POTTERY_SHARD: "keramikskärva med brygd"
+  BREWER_POTTERY_SHERD: "keramikskärva med brygd"
+  BRICK: "tegelsten"
+  BROWN_DYE: "brun färg"
+  BRUSH: "borste"
+  BUCKET: "hink"
+  BUNDLE: "påse"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "keramikskärva med eldslåga"
+  BURN_POTTERY_SHERD: "keramikskärva med eldslåga"
+  CAMEL_SPAWN_EGG: "skapelseägg för kamel"
+  CARROT: "morot"
+  CARROT_ON_A_STICK: "morot på pinne"
+  CAT_SPAWN_EGG: "skapelseägg för katt"
+  CAVE_SPIDER_SPAWN_EGG: "skapelseägg för grottspindel"
+  CHAINMAIL_BOOTS: "ringbrynjestövlar"
+  CHAINMAIL_CHESTPLATE: "ringbrynjeskjorta"
+  CHAINMAIL_HELMET: "ringbrynjehuva"
+  CHAINMAIL_LEGGINGS: "ringbrynjebyxor"
+  CHARCOAL: "träkol"
+  CHERRY_BOAT: "körsbärsbåt"
+  CHERRY_CHEST_BOAT: "körsbärsbåt med kista"
+  CHEST_MINECART: "gruvvagn med kista"
+  CHICKEN: "rå kyckling"
+  CHICKEN_SPAWN_EGG: "skapelseägg för höna"
+  CHORUS_FRUIT: "körfrukt"
+  CLAY_BALL: "lerboll"
+  CLOCK: "klocka"
+  COAL: "kol"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  COCOA_BEANS: "kakaobönor"
+  COD: "rå torsk"
+  COD_BUCKET: "hink med torsk"
+  COD_SPAWN_EGG: "skapelseägg för torsk"
+  COMMAND_BLOCK_MINECART: "gruvvagn med kommandoblock"
+  COMPASS: "kompass"
+  COOKED_BEEF: "tillagad biff"
+  COOKED_CHICKEN: "tillagad kyckling"
+  COOKED_COD: "tillagad torsk"
+  COOKED_MUTTON: "tillagat fårkött"
+  COOKED_PORKCHOP: "tillagad fläskkotlett"
+  COOKED_RABBIT: "tillagad kanin"
+  COOKED_SALMON: "tillagad lax"
+  COOKIE: "kaka"
+  COPPER_INGOT: "koppartacka"
+  COW_SPAWN_EGG: "skapelseägg för ko"
+  CREEPER_BANNER_PATTERN: "fanemönster"
+  CREEPER_BANNER_PATTERN_DESC: "creeper"
+  CREEPER_SPAWN_EGG: "skapelseägg för creeper"
+  CROSSBOW: "armborst"
+  CROSSBOW_PROJECTILE: "projektil:"
+  CYAN_DYE: "turkos färg"
+  DANGER_POTTERY_SHARD: "keramikskärva med creeper"
+  DANGER_POTTERY_SHERD: "keramikskärva med creeper"
+  DARK_OAK_BOAT: "mörk ekbåt"
+  DARK_OAK_CHEST_BOAT: "mörk ekbåt med kista"
+  DEBUG_STICK: "felsökningspinne"
+  DEBUG_STICK_EMPTY: "%s har inga egenskaper"
+  DEBUG_STICK_SELECT: "valde \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "ändrade \"%s\" till %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "diamantyxa"
+  DIAMOND_BOOTS: "diamantstövlar"
+  DIAMOND_CHESTPLATE: "diamantharnesk"
+  DIAMOND_HELMET: "diamanthjälm"
+  DIAMOND_HOE: "diamantflåhacka"
+  DIAMOND_HORSE_ARMOR: "diamanthästrustning"
+  DIAMOND_LEGGINGS: "diamantbyxor"
+  DIAMOND_PICKAXE: "diamanthacka"
+  DIAMOND_SHOVEL: "diamantspade"
+  DIAMOND_SWORD: "diamantsvärd"
+  DISC_FRAGMENT_5: "skivfragment"
+  DISC_FRAGMENT_5_DESC: "musikskiva – 5"
+  DOLPHIN_SPAWN_EGG: "skapelseägg för delfin"
+  DONKEY_SPAWN_EGG: "skapelseägg för åsna"
+  DRAGON_BREATH: "drakeld"
+  DRIED_KELP: "torkad kelp"
+  DROWNED_SPAWN_EGG: "skapelseägg för drunknad zombie"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  ECHO_SHARD: "ekoskärva"
+  EGG: "ägg"
+  ELDER_GUARDIAN_SPAWN_EGG: "skapelseägg för urväktare"
+  ELYTRA: "elytra"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "förtrollad bok"
+  ENCHANTED_GOLDEN_APPLE: "förtrollat guldäpple"
+  END_CRYSTAL: "endkristall"
+  ENDER_DRAGON_SPAWN_EGG: "skapelseägg för enderdrake"
+  ENDER_EYE: "enderöga"
+  ENDER_PEARL: "enderpärla"
+  ENDERMAN_SPAWN_EGG: "skapelseägg för enderman"
+  ENDERMITE_SPAWN_EGG: "skapelseägg för endermite"
+  EVOKER_SPAWN_EGG: "skapelseägg för frammanare"
+  EXPERIENCE_BOTTLE: "förtrollningsflaska"
+  EXPLORER_POTTERY_SHARD: "keramikskärva med karta"
+  EXPLORER_POTTERY_SHERD: "keramikskärva med karta"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  FEATHER: "fjäder"
+  FERMENTED_SPIDER_EYE: "jäst spindelöga"
+  FILLED_MAP: "karta"
+  FIRE_CHARGE: "eldladdning"
+  FIREWORK_ROCKET: "fyrverkeriraket"
+  FIREWORK_ROCKET_FLIGHT: "flygtid:"
+  FIREWORK_STAR: "fyrverkeristjärna"
+  FIREWORK_STAR_BLACK: "svart"
+  FIREWORK_STAR_BLUE: "blå"
+  FIREWORK_STAR_BROWN: "brun"
+  FIREWORK_STAR_CUSTOM_COLOR: "anpassad"
+  FIREWORK_STAR_CYAN: "turkos"
+  FIREWORK_STAR_FADE_TO: "tona till"
+  FIREWORK_STAR_FLICKER: "glimmande"
+  FIREWORK_STAR_GRAY: "grå"
+  FIREWORK_STAR_GREEN: "grön"
+  FIREWORK_STAR_LIGHT_BLUE: "ljusblå"
+  FIREWORK_STAR_LIGHT_GRAY: "ljusgrå"
+  FIREWORK_STAR_LIME: "limegrön"
+  FIREWORK_STAR_MAGENTA: "ljuslila"
+  FIREWORK_STAR_ORANGE: "orange"
+  FIREWORK_STAR_PINK: "rosa"
+  FIREWORK_STAR_PURPLE: "lila"
+  FIREWORK_STAR_RED: "röd"
+  FIREWORK_STAR_SHAPE: "okänd form"
+  FIREWORK_STAR_SHAPE_BURST: "explosion"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperformad"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "stort klot"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "litet klot"
+  FIREWORK_STAR_SHAPE_STAR: "stjärnformad"
+  FIREWORK_STAR_TRAIL: "spår"
+  FIREWORK_STAR_WHITE: "vit"
+  FIREWORK_STAR_YELLOW: "gul"
+  FISHING_ROD: "fiskespö"
+  FLINT: "flinta"
+  FLINT_AND_STEEL: "tändstål"
+  FLOWER_BANNER_PATTERN: "fanemönster"
+  FLOWER_BANNER_PATTERN_DESC: "blomma"
+  FOX_SPAWN_EGG: "skapelseägg för räv"
+  FRIEND_POTTERY_SHARD: "keramikskärva med vänligt ansikte"
+  FRIEND_POTTERY_SHERD: "keramikskärva med vänligt ansikte"
+  FROG_SPAWN_EGG: "skapelseägg för groda"
+  FURNACE_MINECART: "gruvvagn med ugn"
+  GHAST_SPAWN_EGG: "skapelseägg för ghast"
+  GHAST_TEAR: "ghasttår"
+  GLASS_BOTTLE: "glasflaska"
+  GLISTERING_MELON_SLICE: "gnistrande melonskiva"
+  GLOBE_BANNER_PATTERN: "fanemönster"
+  GLOBE_BANNER_PATTERN_DESC: "glob"
+  GLOW_BERRIES: "självlysande bär"
+  GLOW_INK_SAC: "självlysande bläcksäck"
+  GLOW_ITEM_FRAME: "självlysande föremålsram"
+  GLOW_SQUID_SPAWN_EGG: "skapelseägg för självlysande bläckfisk"
+  GLOWSTONE_DUST: "glödstensdamm"
+  GOAT_HORN: "gethorn"
+  GOAT_SPAWN_EGG: "skapelseägg för get"
+  GOLD_INGOT: "guldtacka"
+  GOLD_NUGGET: "guldklimp"
+  GOLDEN_APPLE: "guldäpple"
+  GOLDEN_AXE: "guldyxa"
+  GOLDEN_BOOTS: "guldstövlar"
+  GOLDEN_CARROT: "gyllene morot"
+  GOLDEN_CHESTPLATE: "guldharnesk"
+  GOLDEN_HELMET: "guldhjälm"
+  GOLDEN_HOE: "guldflåhacka"
+  GOLDEN_HORSE_ARMOR: "guldhästrustning"
+  GOLDEN_LEGGINGS: "guldbyxor"
+  GOLDEN_PICKAXE: "guldhacka"
+  GOLDEN_SHOVEL: "guldspade"
+  GOLDEN_SWORD: "guldsvärd"
+  GRAY_DYE: "grå färg"
+  GREEN_DYE: "grön färg"
+  GUARDIAN_SPAWN_EGG: "skapelseägg för väktare"
+  GUNPOWDER: "krut"
+  HEART_OF_THE_SEA: "havets hjärta"
+  HEART_POTTERY_SHARD: "keramikskärva med hjärta"
+  HEART_POTTERY_SHERD: "keramikskärva med hjärta"
+  HEARTBREAK_POTTERY_SHARD: "keramikskärva med krossat hjärta"
+  HEARTBREAK_POTTERY_SHERD: "keramikskärva med krossat hjärta"
+  HOGLIN_SPAWN_EGG: "skapelseägg för hoglin"
+  HONEY_BOTTLE: "honungsflaska"
+  HONEYCOMB: "vaxkaka"
+  HOPPER_MINECART: "gruvvagn med tratt"
+  HORSE_SPAWN_EGG: "skapelseägg för häst"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  HOWL_POTTERY_SHARD: "keramikskärva med varg"
+  HOWL_POTTERY_SHERD: "keramikskärva med varg"
+  HUSK_SPAWN_EGG: "skapelseägg för uttorkad zombie"
+  INK_SAC: "bläcksäck"
+  IRON_AXE: "järnyxa"
+  IRON_BOOTS: "järnstövlar"
+  IRON_CHESTPLATE: "järnharnesk"
+  IRON_GOLEM_SPAWN_EGG: "skapelseägg för järngolem"
+  IRON_HELMET: "järnhjälm"
+  IRON_HOE: "järnflåhacka"
+  IRON_HORSE_ARMOR: "järnhästrustning"
+  IRON_INGOT: "järntacka"
+  IRON_LEGGINGS: "järnbyxor"
+  IRON_NUGGET: "järnklimp"
+  IRON_PICKAXE: "järnhacka"
+  IRON_SHOVEL: "järnspade"
+  IRON_SWORD: "järnsvärd"
+  ITEM_FRAME: "föremålsram"
+  JUNGLE_BOAT: "djungelbåt"
+  JUNGLE_CHEST_BOAT: "djungelbåt med kista"
+  KNOWLEDGE_BOOK: "kunskapsbok"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "lavahink"
+  LEAD: "koppel"
+  LEATHER: "läder"
+  LEATHER_BOOTS: "läderstövlar"
+  LEATHER_CHESTPLATE: "lädertunika"
+  LEATHER_HELMET: "lädermössa"
+  LEATHER_HORSE_ARMOR: "läderhästrustning"
+  LEATHER_LEGGINGS: "läderbyxor"
+  LIGHT_BLUE_DYE: "ljusblå färg"
+  LIGHT_GRAY_DYE: "ljusgrå färg"
+  LIME_DYE: "limegrön färg"
+  LINGERING_POTION: "kvardröjande brygd"
+  LINGERING_POTION_EFFECT_AWKWARD: "kvardröjande tafflig brygd"
+  LINGERING_POTION_EFFECT_EMPTY: "kvardröjande icke-tillverkningsbar brygd"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "kvardröjande eldresistensbrygd"
+  LINGERING_POTION_EFFECT_HARMING: "kvardröjande skadebrygd"
+  LINGERING_POTION_EFFECT_HEALING: "kvardröjande läkningsbrygd"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "kvardröjande osynlighetsbrygd"
+  LINGERING_POTION_EFFECT_LEAPING: "kvardröjande hoppstrykebrygd"
+  LINGERING_POTION_EFFECT_LEVITATION: "kvardröjande levitationsbrygd"
+  LINGERING_POTION_EFFECT_LUCK: "kvardröjande turbrygd"
+  LINGERING_POTION_EFFECT_MUNDANE: "banal kvardröjande brygd"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "kvardröjande mörkerseendebrygd"
+  LINGERING_POTION_EFFECT_POISON: "kvardröjande giftbrygd"
+  LINGERING_POTION_EFFECT_REGENERATION: "kvardröjande återhämtningsbrygd"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "kvardröjande antigravitationsbrygd"
+  LINGERING_POTION_EFFECT_SLOWNESS: "kvardröjande långsamhetsbrygd"
+  LINGERING_POTION_EFFECT_STRENGTH: "kvardröjande styrkebrygd"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "kvardröjande snabbhetsbrygd"
+  LINGERING_POTION_EFFECT_THICK: "tjock kvardröjande brygd"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "sköldpaddsmästarens kvardröjande brygd"
+  LINGERING_POTION_EFFECT_WATER: "kvardröjande vattenflaska"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "kvardröjande vattenandningsbrygd"
+  LINGERING_POTION_EFFECT_WEAKNESS: "kvardröjande svaghetsbrygd"
+  LLAMA_SPAWN_EGG: "skapelseägg för lama"
+  LODESTONE_COMPASS: "magnetitkompass"
+  MAGENTA_DYE: "ljuslila färg"
+  MAGMA_CREAM: "magmakräm"
+  MAGMA_CUBE_SPAWN_EGG: "skapelseägg för magmakub"
+  MANGROVE_BOAT: "mangrovebåt"
+  MANGROVE_CHEST_BOAT: "mangrovebåt med kista"
+  MAP: "tom karta"
+  MELON_SEEDS: "melonfrön"
+  MELON_SLICE: "melonskiva"
+  MILK_BUCKET: "mjölkhink"
+  MINECART: "gruvvagn"
+  MINER_POTTERY_SHARD: "keramikskärva med hacka"
+  MINER_POTTERY_SHERD: "keramikskärva med hacka"
+  MOJANG_BANNER_PATTERN: "fanemönster"
+  MOJANG_BANNER_PATTERN_DESC: "mojäng"
+  MOOSHROOM_SPAWN_EGG: "skapelseägg för mooshroom"
+  MOURNER_POTTERY_SHARD: "keramikskärva med vakt"
+  MOURNER_POTTERY_SHERD: "keramikskärva med vakt"
+  MULE_SPAWN_EGG: "skapelseägg för mula"
+  MUSHROOM_STEW: "svampstuvning"
+  MUSIC_DISC_11: "musikskiva"
+  MUSIC_DISC_11_DESC: "c418 – 11"
+  MUSIC_DISC_13: "musikskiva"
+  MUSIC_DISC_13_DESC: "c418 – 13"
+  MUSIC_DISC_5: "musikskiva"
+  MUSIC_DISC_5_DESC: "samuel åberg – 5"
+  MUSIC_DISC_BLOCKS: "musikskiva"
+  MUSIC_DISC_BLOCKS_DESC: "c418 – blocks"
+  MUSIC_DISC_CAT: "musikskiva"
+  MUSIC_DISC_CAT_DESC: "c418 – cat"
+  MUSIC_DISC_CHIRP: "musikskiva"
+  MUSIC_DISC_CHIRP_DESC: "c418 – chirp"
+  MUSIC_DISC_FAR: "musikskiva"
+  MUSIC_DISC_FAR_DESC: "c418 – far"
+  MUSIC_DISC_MALL: "musikskiva"
+  MUSIC_DISC_MALL_DESC: "c418 – mall"
+  MUSIC_DISC_MELLOHI: "musikskiva"
+  MUSIC_DISC_MELLOHI_DESC: "c418 – mellohi"
+  MUSIC_DISC_OTHERSIDE: "musikskiva"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine – otherside"
+  MUSIC_DISC_PIGSTEP: "musikskiva"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine – pigstep"
+  MUSIC_DISC_RELIC: "musikskiva"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof – relic"
+  MUSIC_DISC_STAL: "musikskiva"
+  MUSIC_DISC_STAL_DESC: "c418 – stal"
+  MUSIC_DISC_STRAD: "musikskiva"
+  MUSIC_DISC_STRAD_DESC: "c418 – strad"
+  MUSIC_DISC_WAIT: "musikskiva"
+  MUSIC_DISC_WAIT_DESC: "c418 – wait"
+  MUSIC_DISC_WARD: "musikskiva"
+  MUSIC_DISC_WARD_DESC: "c418 – ward"
+  MUTTON: "rått fårkött"
+  NAME_TAG: "namnskylt"
+  NAUTILUS_SHELL: "pärlbåtsskal"
+  NETHER_BRICK: "nethertegelsten"
+  NETHER_STAR: "netherstjärna"
+  NETHERITE_AXE: "netherityxa"
+  NETHERITE_BOOTS: "netheritstövlar"
+  NETHERITE_CHESTPLATE: "netheritharnesk"
+  NETHERITE_HELMET: "netherithjälm"
+  NETHERITE_HOE: "netheritflåhacka"
+  NETHERITE_INGOT: "netherittacka"
+  NETHERITE_LEGGINGS: "netheritbyxor"
+  NETHERITE_PICKAXE: "netherithacka"
+  NETHERITE_SCRAP: "netheritstycke"
+  NETHERITE_SHOVEL: "netheritspade"
+  NETHERITE_SWORD: "netheritsvärd"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smidesmall"
+  OAK_BOAT: "ekbåt"
+  OAK_CHEST_BOAT: "ekbåt med kista"
+  OCELOT_SPAWN_EGG: "skapelseägg för ozelot"
+  ORANGE_DYE: "orange färg"
+  PAINTING: "tavla"
+  PANDA_SPAWN_EGG: "skapelseägg för panda"
+  PAPER: "papper"
+  PARROT_SPAWN_EGG: "skapelseägg för papegoja"
+  PHANTOM_MEMBRANE: "fantommembran"
+  PHANTOM_SPAWN_EGG: "skapelseägg för fantom"
+  PIG_SPAWN_EGG: "skapelseägg för gris"
+  PIGLIN_BANNER_PATTERN: "fanemönster"
+  PIGLIN_BANNER_PATTERN_DESC: "tryne"
+  PIGLIN_BRUTE_SPAWN_EGG: "skapelseägg för piglinbarbar"
+  PIGLIN_SPAWN_EGG: "skapelseägg för piglin"
+  PILLAGER_SPAWN_EGG: "skapelseägg för plundrare"
+  PINK_DYE: "rosa färg"
+  PITCHER_POD: "kannrankeskida"
+  PLENTY_POTTERY_SHARD: "keramikskärva med kista"
+  PLENTY_POTTERY_SHERD: "keramikskärva med kista"
+  POISONOUS_POTATO: "giftig potatis"
+  POLAR_BEAR_SPAWN_EGG: "skapelseägg för isbjörn"
+  POPPED_CHORUS_FRUIT: "utslagen körfrukt"
+  PORKCHOP: "rå fläskkotlett"
+  POTATO: "potatis"
+  POTION: "brygd"
+  POTION_EFFECT_AWKWARD: "tafflig brygd"
+  POTION_EFFECT_EMPTY: "icke-tillverkningsbar brygd"
+  POTION_EFFECT_FIRE_RESISTANCE: "eldresistensbrygd"
+  POTION_EFFECT_HARMING: "skadebrygd"
+  POTION_EFFECT_HEALING: "läkningsbrygd"
+  POTION_EFFECT_INVISIBILITY: "osynlighetsbrygd"
+  POTION_EFFECT_LEAPING: "hoppstyrkebrygd"
+  POTION_EFFECT_LEVITATION: "levitationsbrygd"
+  POTION_EFFECT_LUCK: "turbrygd"
+  POTION_EFFECT_MUNDANE: "banal brygd"
+  POTION_EFFECT_NIGHT_VISION: "mörkerseendebrygd"
+  POTION_EFFECT_POISON: "giftbrygd"
+  POTION_EFFECT_REGENERATION: "återhämtningsbrygd"
+  POTION_EFFECT_SLOW_FALLING: "antigravitationsbrygd"
+  POTION_EFFECT_SLOWNESS: "långsamhetsbrygd"
+  POTION_EFFECT_STRENGTH: "styrkebrygd"
+  POTION_EFFECT_SWIFTNESS: "snabbhetsbrygd"
+  POTION_EFFECT_THICK: "tjock brygd"
+  POTION_EFFECT_TURTLE_MASTER: "sköldpaddsmästarens brygd"
+  POTION_EFFECT_WATER: "vattenflaska"
+  POTION_EFFECT_WATER_BREATHING: "vattenandningsbrygd"
+  POTION_EFFECT_WEAKNESS: "svaghetsbrygd"
+  POTTERY_SHARD_ARCHER: "keramikskärva med pilbåge"
+  POTTERY_SHARD_ARMS_UP: "keramikskärva med uppsträckta armar"
+  POTTERY_SHARD_PRIZE: "keramikskärva med ädelsten"
+  POTTERY_SHARD_SKULL: "keramikskärva med dödskalle"
+  POWDER_SNOW_BUCKET: "pudersnöhink"
+  PRISMARINE_CRYSTALS: "prismarinkristaller"
+  PRISMARINE_SHARD: "prismarinskärva"
+  PRIZE_POTTERY_SHARD: "keramikskärva med ädelsten"
+  PRIZE_POTTERY_SHERD: "keramikskärva med ädelsten"
+  PUFFERFISH: "blåsfisk"
+  PUFFERFISH_BUCKET: "hink med blåsfisk"
+  PUFFERFISH_SPAWN_EGG: "skapelseägg för blåsfisk"
+  PUMPKIN_PIE: "pumpapaj"
+  PUMPKIN_SEEDS: "pumpafrön"
+  PURPLE_DYE: "lila färg"
+  QUARTZ: "netherkvarts"
+  RABBIT: "rå kanin"
+  RABBIT_FOOT: "hartass"
+  RABBIT_HIDE: "kaninskinn"
+  RABBIT_SPAWN_EGG: "skapelseägg för kanin"
+  RABBIT_STEW: "kaninstuvning"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  RAVAGER_SPAWN_EGG: "skapelseägg för ödeläggare"
+  RAW_COPPER: "råkoppar"
+  RAW_GOLD: "råguld"
+  RAW_IRON: "råjärn"
+  RECOVERY_COMPASS: "tillbakahittande kompass"
+  RED_DYE: "röd färg"
+  REDSTONE: "redstonedamm"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  ROTTEN_FLESH: "ruttet kött"
+  SADDLE: "sadel"
+  SALMON: "rå lax"
+  SALMON_BUCKET: "hink med lax"
+  SALMON_SPAWN_EGG: "skapelseägg för lax"
+  SCUTE: "skal"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  SHEAF_POTTERY_SHARD: "keramikskärva med vetekärve"
+  SHEAF_POTTERY_SHERD: "keramikskärva med vetekärve"
+  SHEARS: "sax"
+  SHEEP_SPAWN_EGG: "skapelseägg för får"
+  SHELTER_POTTERY_SHARD: "keramikskärva med träd"
+  SHELTER_POTTERY_SHERD: "keramikskärva med träd"
+  SHIELD: "sköld"
+  SHIELD_BLACK: "svart sköld"
+  SHIELD_BLUE: "blå sköld"
+  SHIELD_BROWN: "brun sköld"
+  SHIELD_CYAN: "turkos sköld"
+  SHIELD_GRAY: "grå sköld"
+  SHIELD_GREEN: "grön sköld"
+  SHIELD_LIGHT_BLUE: "ljusblå sköld"
+  SHIELD_LIGHT_GRAY: "ljusgrå sköld"
+  SHIELD_LIME: "limegrön sköld"
+  SHIELD_MAGENTA: "ljuslila sköld"
+  SHIELD_ORANGE: "orange sköld"
+  SHIELD_PINK: "rosa sköld"
+  SHIELD_PURPLE: "lila sköld"
+  SHIELD_RED: "röd sköld"
+  SHIELD_WHITE: "vit sköld"
+  SHIELD_YELLOW: "gul sköld"
+  SHULKER_SHELL: "shulkerskal"
+  SHULKER_SPAWN_EGG: "skapelseägg för shulker"
+  SIGN: "skylt"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  SILVERFISH_SPAWN_EGG: "skapelseägg för silverfisk"
+  SKELETON_HORSE_SPAWN_EGG: "skapelseägg för skeletthäst"
+  SKELETON_SPAWN_EGG: "skapelseägg för skelett"
+  SKULL_BANNER_PATTERN: "fanemönster"
+  SKULL_BANNER_PATTERN_DESC: "dödskalle"
+  SKULL_POTTERY_SHARD: "keramikskärva med dödskalle"
+  SKULL_POTTERY_SHERD: "keramikskärva med dödskalle"
+  SLIME_BALL: "slemboll"
+  SLIME_SPAWN_EGG: "skapelseägg för slemkub"
+  SMITHING_TEMPLATE: "smidesmall"
+  SMITHING_TEMPLATE_APPLIES_TO: "kan tillämpas på:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "lägg till tacka eller ädelsten"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "rustningsdelar"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "lägg till rustningsdel"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "tackor och ädelstenar"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingrediens(er):"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "lägg till netherittacka"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamantutrustning"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "lägg till valfri typ av diamantutrustning"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherittacka"
+  SMITHING_TEMPLATE_UPGRADE: "uppgradering: "
+  SNIFFER_SPAWN_EGG: "skapelseägg för sniffare"
+  SNORT_POTTERY_SHARD: "keramikskärva med sniffare"
+  SNORT_POTTERY_SHERD: "keramikskärva med sniffare"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  SNOW_GOLEM_SPAWN_EGG: "skapelseägg för snögolem"
+  SNOWBALL: "snöboll"
+  SPECTRAL_ARROW: "spektralpil"
+  SPIDER_EYE: "spindelöga"
+  SPIDER_SPAWN_EGG: "skapelseägg för spindel"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  SPLASH_POTION: "kastbar brygd"
+  SPLASH_POTION_EFFECT_AWKWARD: "kastbar tafflig brygd"
+  SPLASH_POTION_EFFECT_EMPTY: "kastbar icke-tillverkningsbar brygd"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "kastbar eldresistensbrygd"
+  SPLASH_POTION_EFFECT_HARMING: "kastbar skadebrygd"
+  SPLASH_POTION_EFFECT_HEALING: "kastbar läkningsbrygd"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "kastbar osynlighetsbrygd"
+  SPLASH_POTION_EFFECT_LEAPING: "kastbar hoppstrykebrygd"
+  SPLASH_POTION_EFFECT_LEVITATION: "kastbar levitationsbrygd"
+  SPLASH_POTION_EFFECT_LUCK: "kastbar turbrygd"
+  SPLASH_POTION_EFFECT_MUNDANE: "kastbar banal brygd"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "kastbar mörkerseendebrygd"
+  SPLASH_POTION_EFFECT_POISON: "kastbar giftbrygd"
+  SPLASH_POTION_EFFECT_REGENERATION: "kastbar återhämtningsbrygd"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "kastbar antigravitationsbrygd"
+  SPLASH_POTION_EFFECT_SLOWNESS: "kastbar långsamhetsbrygd"
+  SPLASH_POTION_EFFECT_STRENGTH: "kastbar styrkebrygd"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "kastbar snabbhetsbrygd"
+  SPLASH_POTION_EFFECT_THICK: "kastbar tjock brygd"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "sköldpaddsmästarens kastbara brygd"
+  SPLASH_POTION_EFFECT_WATER: "kastbar vattenflaska"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "kastbar vattenandningsbrygd"
+  SPLASH_POTION_EFFECT_WEAKNESS: "kastbar svaghetsbrygd"
+  SPRUCE_BOAT: "granbåt"
+  SPRUCE_CHEST_BOAT: "granbåt med kista"
+  SPYGLASS: "kikare"
+  SQUID_SPAWN_EGG: "skapelseägg för bläckfisk"
+  STICK: "pinne"
+  STONE_AXE: "stenyxa"
+  STONE_HOE: "stenflåhacka"
+  STONE_PICKAXE: "stenhacka"
+  STONE_SHOVEL: "stenspade"
+  STONE_SWORD: "stensvärd"
+  STRAY_SPAWN_EGG: "skapelseägg för strövare"
+  STRIDER_SPAWN_EGG: "skapelseägg för vandrare"
+  STRING: "tråd"
+  SUGAR: "socker"
+  SUSPICIOUS_STEW: "misstänksam stuvning"
+  SWEET_BERRIES: "söta bär"
+  TADPOLE_BUCKET: "hink med grodyngel"
+  TADPOLE_SPAWN_EGG: "skapelseägg för grodyngel"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  TIPPED_ARROW: "förtrollad pil"
+  TIPPED_ARROW_EFFECT_AWKWARD: "förtrollad pil"
+  TIPPED_ARROW_EFFECT_EMPTY: "icke-tillverkningsbar förtrollad pil"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "eldresistenspil"
+  TIPPED_ARROW_EFFECT_HARMING: "skadepil"
+  TIPPED_ARROW_EFFECT_HEALING: "läkningspil"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "osynlighetspil"
+  TIPPED_ARROW_EFFECT_LEAPING: "hoppstyrkepil"
+  TIPPED_ARROW_EFFECT_LEVITATION: "levitationspil"
+  TIPPED_ARROW_EFFECT_LUCK: "turpil"
+  TIPPED_ARROW_EFFECT_MUNDANE: "förtrollad pil"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "mörkerseendepil"
+  TIPPED_ARROW_EFFECT_POISON: "giftpil"
+  TIPPED_ARROW_EFFECT_REGENERATION: "återhämtningspil"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "antigravitationspil"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "långsamhetspil"
+  TIPPED_ARROW_EFFECT_STRENGTH: "styrkepil"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "snabbhetspil"
+  TIPPED_ARROW_EFFECT_THICK: "förtrollad pil"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "sköldpaddsmästarens pil"
+  TIPPED_ARROW_EFFECT_WATER: "stänkande pil"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "vattenandningspil"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "svaghetspil"
+  TNT_MINECART: "gruvvagn med dynamit"
+  TORCHFLOWER_SEEDS: "fackelliljefrön"
+  TOTEM_OF_UNDYING: "odödlighetstotem"
+  TRADER_LLAMA_SPAWN_EGG: "skapelseägg för byteshandlarlama"
+  TRIAL_KEY: "utmaningsnyckel"
+  TRIDENT: "treudd"
+  TROPICAL_FISH: "tropisk fisk"
+  TROPICAL_FISH_BUCKET: "hink med tropisk fisk"
+  TROPICAL_FISH_SPAWN_EGG: "skapelseägg för tropisk fisk"
+  TURTLE_HELMET: "sköldpaddsskal"
+  TURTLE_SPAWN_EGG: "skapelseägg för sköldpadda"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  VEX_SPAWN_EGG: "skapelseägg för osalig ande"
+  VILLAGER_SPAWN_EGG: "skapelseägg för bybo"
+  VINDICATOR_SPAWN_EGG: "skapelseägg för försvarare"
+  WANDERING_TRADER_SPAWN_EGG: "skapelseägg för vandrande byteshandlare"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  WARDEN_SPAWN_EGG: "skapelseägg för vakt"
+  WARPED_FUNGUS_ON_A_STICK: "förvrängd svamp på pinne"
+  WATER_BUCKET: "vattenhink"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  WHEAT: "vete"
+  WHEAT_SEEDS: "vetefrön"
+  WHITE_DYE: "vit färg"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smidesmall"
+  WITCH_SPAWN_EGG: "skapelseägg för häxa"
+  WITHER_SKELETON_SPAWN_EGG: "skapelseägg för witherskelett"
+  WITHER_SPAWN_EGG: "skapelseägg för wither"
+  WOLF_SPAWN_EGG: "skapelseägg för varg"
+  WOODEN_AXE: "träyxa"
+  WOODEN_HOE: "träflåhacka"
+  WOODEN_PICKAXE: "trähacka"
+  WOODEN_SHOVEL: "träspade"
+  WOODEN_SWORD: "träsvärd"
+  WRITABLE_BOOK: "bok och fjäderpenna"
+  WRITTEN_BOOK: "skriven bok"
+  YELLOW_DYE: "gul färg"
+  ZOGLIN_SPAWN_EGG: "skapelseägg för zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "skapelseägg för zombiehäst"
+  ZOMBIE_SPAWN_EGG: "skapelseägg för zombie"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "skapelseägg för zombiebybo"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "skapelseägg för zombifierad piglin"
+  CHEST: "på kroppen:"
+  FEET: "på fötterna:"
+  HEAD: "på huvudet:"
+  LEGS: "på benen:"
+  MAINHAND: "i primära handen:"
+  OFFHAND: "i sekundära handen:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

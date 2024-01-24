@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "gumb od akacije"
+  ACACIA_DOOR: "vrata od akacije"
+  ACACIA_FENCE: "ograda od akacije"
+  ACACIA_FENCE_GATE: "vrata za ogradu od akacije"
+  ACACIA_HANGING_SIGN: "viseći znak od akacije"
+  ACACIA_LEAVES: "lišće akacije"
+  ACACIA_LOG: "trupac akacije"
+  ACACIA_PLANKS: "daske od akacije"
+  ACACIA_PRESSURE_PLATE: "nagazna ploča od akacije"
+  ACACIA_SAPLING: "mlado drvo akacije"
+  ACACIA_SIGN: "znak od akacije"
+  ACACIA_SLAB: "ploča od akacije"
+  ACACIA_STAIRS: "stube od akacije"
+  ACACIA_TRAPDOOR: "podna vrata od akacije"
+  ACACIA_WALL_HANGING_SIGN: "viseći zidni znak od akacije"
+  ACACIA_WALL_SIGN: "zidni znak od akacije"
+  ACACIA_WOOD: "drvo akacije"
+  ACTIVATOR_RAIL: "tračnice s aktivatorom"
+  AIR: "zrak"
+  ALLIUM: "ukrasni luk"
+  AMETHYST_BLOCK: "blok ametista"
+  AMETHYST_CLUSTER: "nakupina ametista"
+  ANCIENT_DEBRIS: "drevni ostaci"
+  ANDESITE: "andezit"
+  ANDESITE_SLAB: "ploča od andezita"
+  ANDESITE_STAIRS: "stube od andezita"
+  ANDESITE_WALL: "zid od andezita"
+  ANVIL: "nakovanj"
+  ATTACHED_MELON_STEM: "spojena stabljika lubenice"
+  ATTACHED_PUMPKIN_STEM: "spojena stabljika bundeve"
+  AZALEA: "azaleja"
+  AZALEA_LEAVES: "lišće azaleje"
+  AZURE_BLUET: "plava maćuhica"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "blok bambusa"
+  BAMBOO_BUTTON: "gumb od bambusa"
+  BAMBOO_DOOR: "vrata od bambusa"
+  BAMBOO_FENCE: "ograda od bambusa"
+  BAMBOO_FENCE_GATE: "vrata za ogradu od bambusa"
+  BAMBOO_HANGING_SIGN: "viseći znak od bambusa"
+  BAMBOO_MOSAIC: "mozaik bambusa"
+  BAMBOO_MOSAIC_SLAB: "ploča od mozaika bambusa"
+  BAMBOO_MOSAIC_STAIRS: "stube od mozaika bambusa"
+  BAMBOO_PLANKS: "daske od bambusa"
+  BAMBOO_PRESSURE_PLATE: "nagazna ploča od bambusa"
+  BAMBOO_SAPLING: "mlado bambusa"
+  BAMBOO_SIGN: "znak od bambusa"
+  BAMBOO_SLAB: "ploča od bambusa"
+  BAMBOO_STAIRS: "stube od bambusa"
+  BAMBOO_TRAPDOOR: "podna vrata od bambusa"
+  BAMBOO_WALL_HANGING_SIGN: "viseći zidni znak od bambusa"
+  BAMBOO_WALL_SIGN: "zidni znak od bambusa"
+  BANNER_BASE_BLACK: "potpuno crno polje"
+  BANNER_BASE_BLUE: "potpuno plavo polje"
+  BANNER_BASE_BROWN: "potpuno smeđe polje"
+  BANNER_BASE_CYAN: "potpuno tirkizno polje"
+  BANNER_BASE_GRAY: "potpuno sivo polje"
+  BANNER_BASE_GREEN: "potpuno zeleno polje"
+  BANNER_BASE_LIGHT_BLUE: "potpuno svjetloplavo polje"
+  BANNER_BASE_LIGHT_GRAY: "potpuno svjetlosivo polje"
+  BANNER_BASE_LIME: "potpuno svjetlozeleno polje"
+  BANNER_BASE_MAGENTA: "potpuno roza polje"
+  BANNER_BASE_ORANGE: "potpuno narančasto polje"
+  BANNER_BASE_PINK: "potpuno ružičasto polje"
+  BANNER_BASE_PURPLE: "potpuno ljubičasto polje"
+  BANNER_BASE_RED: "potpuno crveno polje"
+  BANNER_BASE_WHITE: "potpuno bijelo polje"
+  BANNER_BASE_YELLOW: "potpuno žuto polje"
+  BANNER_BORDER_BLACK: "crni okvir"
+  BANNER_BORDER_BLUE: "plavi okvir"
+  BANNER_BORDER_BROWN: "smeđi okvir"
+  BANNER_BORDER_CYAN: "tirkizni okvir"
+  BANNER_BORDER_GRAY: "sivi okvir"
+  BANNER_BORDER_GREEN: "zeleni okvir"
+  BANNER_BORDER_LIGHT_BLUE: "svjetloplavi okvir"
+  BANNER_BORDER_LIGHT_GRAY: "svjetlosivi okvir"
+  BANNER_BORDER_LIME: "svjetlozeleni okvir"
+  BANNER_BORDER_MAGENTA: "roza okvir"
+  BANNER_BORDER_ORANGE: "narančasti okvir"
+  BANNER_BORDER_PINK: "ružičasti okvir"
+  BANNER_BORDER_PURPLE: "ljubičasti okvir"
+  BANNER_BORDER_RED: "crveni okvir"
+  BANNER_BORDER_WHITE: "bijeli okvir"
+  BANNER_BORDER_YELLOW: "žuti okvir"
+  BANNER_BRICKS_BLACK: "crno zidano polje"
+  BANNER_BRICKS_BLUE: "plavo zidano polje"
+  BANNER_BRICKS_BROWN: "smeđe zidano polje"
+  BANNER_BRICKS_CYAN: "tirkizno zidano polje"
+  BANNER_BRICKS_GRAY: "sivo zidano polje"
+  BANNER_BRICKS_GREEN: "zeleno zidano polje"
+  BANNER_BRICKS_LIGHT_BLUE: "svjetloplavo zidano polje"
+  BANNER_BRICKS_LIGHT_GRAY: "svjetlosivo zidano polje"
+  BANNER_BRICKS_LIME: "svjetlozeleno zidano polje"
+  BANNER_BRICKS_MAGENTA: "roza zidano polje"
+  BANNER_BRICKS_ORANGE: "narančasto zidano polje"
+  BANNER_BRICKS_PINK: "ružičasto zidano polje"
+  BANNER_BRICKS_PURPLE: "ljubičasto zidano polje"
+  BANNER_BRICKS_RED: "crveno zidano polje"
+  BANNER_BRICKS_WHITE: "bijelo zidano polje"
+  BANNER_BRICKS_YELLOW: "žuto zidano polje"
+  BANNER_CIRCLE_BLACK: "crna rondela"
+  BANNER_CIRCLE_BLUE: "plava rondela"
+  BANNER_CIRCLE_BROWN: "smeđa rondela"
+  BANNER_CIRCLE_CYAN: "tirkizna rondela"
+  BANNER_CIRCLE_GRAY: "siva rondela"
+  BANNER_CIRCLE_GREEN: "zelena rondela"
+  BANNER_CIRCLE_LIGHT_BLUE: "svjetloplava rondela"
+  BANNER_CIRCLE_LIGHT_GRAY: "svjetlosiva rondela"
+  BANNER_CIRCLE_LIME: "svjetlozelena rondela"
+  BANNER_CIRCLE_MAGENTA: "roza rondela"
+  BANNER_CIRCLE_ORANGE: "narančasta rondela"
+  BANNER_CIRCLE_PINK: "ružičasta rondela"
+  BANNER_CIRCLE_PURPLE: "ljubičasta rondela"
+  BANNER_CIRCLE_RED: "crvena rondela"
+  BANNER_CIRCLE_WHITE: "bijela rondela"
+  BANNER_CIRCLE_YELLOW: "žuta rondela"
+  BANNER_CREEPER_BLACK: "crni lik creepera"
+  BANNER_CREEPER_BLUE: "plavi lik creepera"
+  BANNER_CREEPER_BROWN: "smeđi lik creepera"
+  BANNER_CREEPER_CYAN: "tirkizni lik creepera"
+  BANNER_CREEPER_GRAY: "sivi lik creepera"
+  BANNER_CREEPER_GREEN: "zeleni lik creepera"
+  BANNER_CREEPER_LIGHT_BLUE: "svjetloplavi lik creepera"
+  BANNER_CREEPER_LIGHT_GRAY: "svjetlosivi lik creepera"
+  BANNER_CREEPER_LIME: "svjetlozeleni lik creepera"
+  BANNER_CREEPER_MAGENTA: "roza lik creepera"
+  BANNER_CREEPER_ORANGE: "narančasti lik creepera"
+  BANNER_CREEPER_PINK: "ružičasti lik creepera"
+  BANNER_CREEPER_PURPLE: "ljubičasti lik creepera"
+  BANNER_CREEPER_RED: "crveni lik creepera"
+  BANNER_CREEPER_WHITE: "bijeli lik creepera"
+  BANNER_CREEPER_YELLOW: "žuti lik creepera"
+  BANNER_CROSS_BLACK: "crni andrijin križ"
+  BANNER_CROSS_BLUE: "plavi andrijin križ"
+  BANNER_CROSS_BROWN: "smeđi andrijin križ"
+  BANNER_CROSS_CYAN: "tirkizni andrijin križ"
+  BANNER_CROSS_GRAY: "sivi andrijin križ"
+  BANNER_CROSS_GREEN: "zeleni andrijin križ"
+  BANNER_CROSS_LIGHT_BLUE: "svjetloplavi andrijin križ"
+  BANNER_CROSS_LIGHT_GRAY: "svjetlosivi andrijin križ"
+  BANNER_CROSS_LIME: "svjetlozeleni andrijin križ"
+  BANNER_CROSS_MAGENTA: "roza andrijin križ"
+  BANNER_CROSS_ORANGE: "narančasti andrijin križ"
+  BANNER_CROSS_PINK: "ružičasti andrijin križ"
+  BANNER_CROSS_PURPLE: "ljubičasti andrijin križ"
+  BANNER_CROSS_RED: "crveni andrijin križ"
+  BANNER_CROSS_WHITE: "bijeli andrijin križ"
+  BANNER_CROSS_YELLOW: "žuti andrijin križ"
+  BANNER_CURLY_BORDER_BLACK: "crni zupčasti okvir"
+  BANNER_CURLY_BORDER_BLUE: "plavi zupčasti okvir"
+  BANNER_CURLY_BORDER_BROWN: "smeđi zupčasti okvir"
+  BANNER_CURLY_BORDER_CYAN: "tirkizni zupčasti okvir"
+  BANNER_CURLY_BORDER_GRAY: "sivi zupčasti okvir"
+  BANNER_CURLY_BORDER_GREEN: "zeleni zupčasti okvir"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "svjetloplavi zupčasti okvir"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "svjetlosivi zupčasti okvir"
+  BANNER_CURLY_BORDER_LIME: "svjetlozeleni zupčasti okvir"
+  BANNER_CURLY_BORDER_MAGENTA: "roza zupčasti okvir"
+  BANNER_CURLY_BORDER_ORANGE: "narančasti zupčasti okvir"
+  BANNER_CURLY_BORDER_PINK: "ružičasti zupčasti okvir"
+  BANNER_CURLY_BORDER_PURPLE: "ljubičasti zupčasti okvir"
+  BANNER_CURLY_BORDER_RED: "crveni zupčasti okvir"
+  BANNER_CURLY_BORDER_WHITE: "bijeli zupčasti okvir"
+  BANNER_CURLY_BORDER_YELLOW: "žuti zupčasti okvir"
+  BANNER_DIAGONAL_LEFT_BLACK: "crna lijevo presječena"
+  BANNER_DIAGONAL_LEFT_BLUE: "plava lijevo presječena"
+  BANNER_DIAGONAL_LEFT_BROWN: "smeđa lijevo presječena"
+  BANNER_DIAGONAL_LEFT_CYAN: "tirkizna lijevo presječena"
+  BANNER_DIAGONAL_LEFT_GRAY: "siva lijevo presječena"
+  BANNER_DIAGONAL_LEFT_GREEN: "zelena lijevo presječena"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "svjetloplava lijevo presječena"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "svjetlosiva lijevo presječena"
+  BANNER_DIAGONAL_LEFT_LIME: "svjetlozelena lijevo presječena"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "roza lijevo presječena"
+  BANNER_DIAGONAL_LEFT_ORANGE: "narančasta lijevo presječena"
+  BANNER_DIAGONAL_LEFT_PINK: "ružičasta lijevo presječena"
+  BANNER_DIAGONAL_LEFT_PURPLE: "ljubičasta lijevo presječena"
+  BANNER_DIAGONAL_LEFT_RED: "crvena lijevo presječena"
+  BANNER_DIAGONAL_LEFT_WHITE: "bijela lijevo presječena"
+  BANNER_DIAGONAL_LEFT_YELLOW: "žuta lijevo presječena"
+  BANNER_DIAGONAL_RIGHT_BLACK: "crna presječena"
+  BANNER_DIAGONAL_RIGHT_BLUE: "plava presječena"
+  BANNER_DIAGONAL_RIGHT_BROWN: "smeđa presječena"
+  BANNER_DIAGONAL_RIGHT_CYAN: "tirkizna presječena"
+  BANNER_DIAGONAL_RIGHT_GRAY: "siva presječena"
+  BANNER_DIAGONAL_RIGHT_GREEN: "zelena presječena"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "svjetloplava presječena"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "svjetlosiva presječena"
+  BANNER_DIAGONAL_RIGHT_LIME: "svjetlozelena presječena"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "roza presječena"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "narančasta presječena"
+  BANNER_DIAGONAL_RIGHT_PINK: "ružičasta presječena"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "ljubičasta presječena"
+  BANNER_DIAGONAL_RIGHT_RED: "crvena presječena"
+  BANNER_DIAGONAL_RIGHT_WHITE: "bijela presječena"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "žuta presječena"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "crna obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "plava obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "smeđa obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "tirkizna obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "siva obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "zelena obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "svjetloplava obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "svjetlosiva obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "svjetlozelena obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "roza obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "narančasta obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "ružičasta obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "ljubičasta obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_RED: "crvena obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "bijela obrnuto presječena"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "žuta obrnuto presječena"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "crna obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "plava obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "smeđa obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tirkizna obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "siva obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "zelena obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "svjetloplava obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "svjetlosiva obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "svjetlozelena obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "roza obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "narančasta obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "ružičasta obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "ljubičasta obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "crvena obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "bijela obrnuto lijevo presječena"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "žuta obrnuto lijevo presječena"
+  BANNER_FLOWER_BLACK: "crni lik cvijeta"
+  BANNER_FLOWER_BLUE: "plavi lik cvijeta"
+  BANNER_FLOWER_BROWN: "smeđi lik cvijeta"
+  BANNER_FLOWER_CYAN: "tirkizni lik cvijeta"
+  BANNER_FLOWER_GRAY: "sivi lik cvijeta"
+  BANNER_FLOWER_GREEN: "zeleni lik cvijeta"
+  BANNER_FLOWER_LIGHT_BLUE: "svjetloplavi lik cvijeta"
+  BANNER_FLOWER_LIGHT_GRAY: "svjetlosivi lik cvijeta"
+  BANNER_FLOWER_LIME: "svjetlozeleni lik cvijeta"
+  BANNER_FLOWER_MAGENTA: "roza lik cvijeta"
+  BANNER_FLOWER_ORANGE: "narančasti lik cvijeta"
+  BANNER_FLOWER_PINK: "ružičasti lik cvijeta"
+  BANNER_FLOWER_PURPLE: "ljubičasti lik cvijeta"
+  BANNER_FLOWER_RED: "crveni lik cvijeta"
+  BANNER_FLOWER_WHITE: "bijeli lik cvijeta"
+  BANNER_FLOWER_YELLOW: "žuti lik cvijeta"
+  BANNER_GLOBE_BLACK: "crni globus"
+  BANNER_GLOBE_BLUE: "plavi globus"
+  BANNER_GLOBE_BROWN: "smeđi globus"
+  BANNER_GLOBE_CYAN: "tirkizni globus"
+  BANNER_GLOBE_GRAY: "sivi globus"
+  BANNER_GLOBE_GREEN: "zeleni globus"
+  BANNER_GLOBE_LIGHT_BLUE: "svjetloplavi globus"
+  BANNER_GLOBE_LIGHT_GRAY: "svjetlosivi globus"
+  BANNER_GLOBE_LIME: "svjetlozeleni globus"
+  BANNER_GLOBE_MAGENTA: "roza globus"
+  BANNER_GLOBE_ORANGE: "narančasti globus"
+  BANNER_GLOBE_PINK: "ružičasti globus"
+  BANNER_GLOBE_PURPLE: "ljubičasti globus"
+  BANNER_GLOBE_RED: "crveni globus"
+  BANNER_GLOBE_WHITE: "bijeli globus"
+  BANNER_GLOBE_YELLOW: "žuti globus"
+  BANNER_GRADIENT_BLACK: "crni gradijent"
+  BANNER_GRADIENT_BLUE: "plavi gradijent"
+  BANNER_GRADIENT_BROWN: "smeđi gradijent"
+  BANNER_GRADIENT_CYAN: "tirkizni gradijent"
+  BANNER_GRADIENT_GRAY: "sivi gradijent"
+  BANNER_GRADIENT_GREEN: "zeleni gradijent"
+  BANNER_GRADIENT_LIGHT_BLUE: "svjetloplavi gradijent"
+  BANNER_GRADIENT_LIGHT_GRAY: "svjetlosivi gradijent"
+  BANNER_GRADIENT_LIME: "svjetlozeleni gradijent"
+  BANNER_GRADIENT_MAGENTA: "roza gradijent"
+  BANNER_GRADIENT_ORANGE: "narančasti gradijent"
+  BANNER_GRADIENT_PINK: "ružičasti gradijent"
+  BANNER_GRADIENT_PURPLE: "ljubičasti gradijent"
+  BANNER_GRADIENT_RED: "crveni gradijent"
+  BANNER_GRADIENT_WHITE: "bijeli gradijent"
+  BANNER_GRADIENT_YELLOW: "žuti gradijent"
+  BANNER_GRADIENT_UP_BLACK: "crni donji gradijent"
+  BANNER_GRADIENT_UP_BLUE: "plavi donji gradijent"
+  BANNER_GRADIENT_UP_BROWN: "smeđi donji gradijent"
+  BANNER_GRADIENT_UP_CYAN: "tirkizni donji gradijent"
+  BANNER_GRADIENT_UP_GRAY: "sivi donji gradijent"
+  BANNER_GRADIENT_UP_GREEN: "zeleni donji gradijent"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "svjetloplavi donji gradijent"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "svjetlosivi donji gradijent"
+  BANNER_GRADIENT_UP_LIME: "svjetlozeleni donji gradijent"
+  BANNER_GRADIENT_UP_MAGENTA: "roza donji gradijent"
+  BANNER_GRADIENT_UP_ORANGE: "narančasti donji gradijent"
+  BANNER_GRADIENT_UP_PINK: "ružičasti donji gradijent"
+  BANNER_GRADIENT_UP_PURPLE: "ljubičasti donji gradijent"
+  BANNER_GRADIENT_UP_RED: "crveni donji gradijent"
+  BANNER_GRADIENT_UP_WHITE: "bijeli donji gradijent"
+  BANNER_GRADIENT_UP_YELLOW: "žuti donji gradijent"
+  BANNER_HALF_HORIZONTAL_BLACK: "crna razdijeljena"
+  BANNER_HALF_HORIZONTAL_BLUE: "plava razdijeljena"
+  BANNER_HALF_HORIZONTAL_BROWN: "smeđa razdijeljena"
+  BANNER_HALF_HORIZONTAL_CYAN: "tirkizna razdijeljena"
+  BANNER_HALF_HORIZONTAL_GRAY: "siva razdijeljena"
+  BANNER_HALF_HORIZONTAL_GREEN: "zelena razdijeljena"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "svjetloplava razdijeljena"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "svjetlosiva razdijeljena"
+  BANNER_HALF_HORIZONTAL_LIME: "svjetlozelena razdijeljena"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "roza razdijeljena"
+  BANNER_HALF_HORIZONTAL_ORANGE: "narančasta razdijeljena"
+  BANNER_HALF_HORIZONTAL_PINK: "ružičasta razdijeljena"
+  BANNER_HALF_HORIZONTAL_PURPLE: "ljubičasta razdijeljena"
+  BANNER_HALF_HORIZONTAL_RED: "crvena razdijeljena"
+  BANNER_HALF_HORIZONTAL_WHITE: "bijela razdijeljena"
+  BANNER_HALF_HORIZONTAL_YELLOW: "žuta razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "crna obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "plava obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "smeđa obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "tirkizna obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "siva obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "zelena obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "svjetloplava obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "svjetlosiva obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "svjetlozelena obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "roza obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "narančasta obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "ružičasta obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "ljubičasta obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "crvena obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "bijela obrnuto razdijeljena"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "žuta obrnuto razdijeljena"
+  BANNER_HALF_VERTICAL_BLACK: "crna raskoljena"
+  BANNER_HALF_VERTICAL_BLUE: "plava raskoljena"
+  BANNER_HALF_VERTICAL_BROWN: "smeđa raskoljena"
+  BANNER_HALF_VERTICAL_CYAN: "tirkizna raskoljena"
+  BANNER_HALF_VERTICAL_GRAY: "siva raskoljena"
+  BANNER_HALF_VERTICAL_GREEN: "zelena raskoljena"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "svjetloplava raskoljena"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "svjetlosiva raskoljena"
+  BANNER_HALF_VERTICAL_LIME: "svjetlozelena raskoljena"
+  BANNER_HALF_VERTICAL_MAGENTA: "roza raskoljena"
+  BANNER_HALF_VERTICAL_ORANGE: "narančasta raskoljena"
+  BANNER_HALF_VERTICAL_PINK: "ružičasta raskoljena"
+  BANNER_HALF_VERTICAL_PURPLE: "ljubičasta raskoljena"
+  BANNER_HALF_VERTICAL_RED: "crvena raskoljena"
+  BANNER_HALF_VERTICAL_WHITE: "bijela raskoljena"
+  BANNER_HALF_VERTICAL_YELLOW: "žuta raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "crna obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "plava obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "smeđa obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "tirkizna obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "siva obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "zelena obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "svjetloplava obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "svjetlosiva obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "svjetlozelena obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "roza obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "narančasta obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "ružičasta obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "ljubičasta obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "crvena obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "bijela obrnuto raskoljena"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "žuta obrnuto raskoljena"
+  BANNER_MOJANG_BLACK: "crna stvar"
+  BANNER_MOJANG_BLUE: "plava stvar"
+  BANNER_MOJANG_BROWN: "smeđa stvar"
+  BANNER_MOJANG_CYAN: "tirkizna stvar"
+  BANNER_MOJANG_GRAY: "siva stvar"
+  BANNER_MOJANG_GREEN: "zelena stvar"
+  BANNER_MOJANG_LIGHT_BLUE: "svjetloplava stvar"
+  BANNER_MOJANG_LIGHT_GRAY: "svjetlosiva stvar"
+  BANNER_MOJANG_LIME: "svjetlozelena stvar"
+  BANNER_MOJANG_MAGENTA: "roza stvar"
+  BANNER_MOJANG_ORANGE: "narančasta stvar"
+  BANNER_MOJANG_PINK: "ružičasta stvar"
+  BANNER_MOJANG_PURPLE: "ljubičasta stvar"
+  BANNER_MOJANG_RED: "crvena stvar"
+  BANNER_MOJANG_WHITE: "bijela stvar"
+  BANNER_MOJANG_YELLOW: "žuta stvar"
+  BANNER_PIGLIN_BLACK: "crni lik njuške"
+  BANNER_PIGLIN_BLUE: "plavi lik njuške"
+  BANNER_PIGLIN_BROWN: "smeđi lik njuške"
+  BANNER_PIGLIN_CYAN: "tirkizni lik njuške"
+  BANNER_PIGLIN_GRAY: "sivi lik njuške"
+  BANNER_PIGLIN_GREEN: "zeleni lik njuške"
+  BANNER_PIGLIN_LIGHT_BLUE: "svjetloplavi lik njuške"
+  BANNER_PIGLIN_LIGHT_GRAY: "svjetlosivi lik njuške"
+  BANNER_PIGLIN_LIME: "svjetlozeleni lik njuške"
+  BANNER_PIGLIN_MAGENTA: "roza lik njuške"
+  BANNER_PIGLIN_ORANGE: "narančasti lik njuške"
+  BANNER_PIGLIN_PINK: "ružičasti lik njuške"
+  BANNER_PIGLIN_PURPLE: "ljubičasti lik njuške"
+  BANNER_PIGLIN_RED: "crveni lik njuške"
+  BANNER_PIGLIN_WHITE: "bijeli lik njuške"
+  BANNER_PIGLIN_YELLOW: "žuti lik njuške"
+  BANNER_RHOMBUS_BLACK: "crni romb"
+  BANNER_RHOMBUS_BLUE: "plavi romb"
+  BANNER_RHOMBUS_BROWN: "smeđi romb"
+  BANNER_RHOMBUS_CYAN: "tirkizni romb"
+  BANNER_RHOMBUS_GRAY: "sivi romb"
+  BANNER_RHOMBUS_GREEN: "zeleni romb"
+  BANNER_RHOMBUS_LIGHT_BLUE: "svjetloplavi romb"
+  BANNER_RHOMBUS_LIGHT_GRAY: "svjetlosivi romb"
+  BANNER_RHOMBUS_LIME: "svjetlozeleni romb"
+  BANNER_RHOMBUS_MAGENTA: "roza romb"
+  BANNER_RHOMBUS_ORANGE: "narančasti romb"
+  BANNER_RHOMBUS_PINK: "ružičasti romb"
+  BANNER_RHOMBUS_PURPLE: "ljubičasti romb"
+  BANNER_RHOMBUS_RED: "crveni romb"
+  BANNER_RHOMBUS_WHITE: "bijeli romb"
+  BANNER_RHOMBUS_YELLOW: "žuti romb"
+  BANNER_SKULL_BLACK: "crni lik lubanje"
+  BANNER_SKULL_BLUE: "plavi lik lubanje"
+  BANNER_SKULL_BROWN: "smeđi lik lubanje"
+  BANNER_SKULL_CYAN: "tirkizni lik lubanje"
+  BANNER_SKULL_GRAY: "sivi lik lubanje"
+  BANNER_SKULL_GREEN: "zeleni lik lubanje"
+  BANNER_SKULL_LIGHT_BLUE: "svjetloplavi lik lubanje"
+  BANNER_SKULL_LIGHT_GRAY: "svjetlosivi lik lubanje"
+  BANNER_SKULL_LIME: "svjetlozeleni lik lubanje"
+  BANNER_SKULL_MAGENTA: "roza lik lubanje"
+  BANNER_SKULL_ORANGE: "narančasti lik lubanje"
+  BANNER_SKULL_PINK: "ružičasti lik lubanje"
+  BANNER_SKULL_PURPLE: "ljubičasti lik lubanje"
+  BANNER_SKULL_RED: "crveni lik lubanje"
+  BANNER_SKULL_WHITE: "bijeli lik lubanje"
+  BANNER_SKULL_YELLOW: "žuti lik lubanje"
+  BANNER_SMALL_STRIPES_BLACK: "crna stupčasta"
+  BANNER_SMALL_STRIPES_BLUE: "plava stupčasta"
+  BANNER_SMALL_STRIPES_BROWN: "smeđa stupčasta"
+  BANNER_SMALL_STRIPES_CYAN: "tirkizna stupčasta"
+  BANNER_SMALL_STRIPES_GRAY: "siva stupčasta"
+  BANNER_SMALL_STRIPES_GREEN: "zelena stupčasta"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "svjetloplava stupčasta"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "svjetlosiva stupčasta"
+  BANNER_SMALL_STRIPES_LIME: "svjetlozelena stupčasta"
+  BANNER_SMALL_STRIPES_MAGENTA: "roza stupčasta"
+  BANNER_SMALL_STRIPES_ORANGE: "narančasta stupčasta"
+  BANNER_SMALL_STRIPES_PINK: "ružičasta stupčasta"
+  BANNER_SMALL_STRIPES_PURPLE: "ljubičasta stupčasta"
+  BANNER_SMALL_STRIPES_RED: "crvena stupčasta"
+  BANNER_SMALL_STRIPES_WHITE: "bijela stupčasta"
+  BANNER_SMALL_STRIPES_YELLOW: "žuta stupčasta"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "crni donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "plavi donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "smeđi donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "tirkizni donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "sivi donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "zeleni donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "svjetloplavi donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "svjetlosivi donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "svjetlozeleni donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "roza donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "narančasti donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "ružičasti donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "ljubičasti donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "crveni donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "bijeli donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "žuti donji desni kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "crni donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "plavi donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "smeđi donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "tirkizni donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "sivi donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "zeleni donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "svjetloplavi donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "svjetlosivi donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "svjetlozeleni donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "roza donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "narančasti donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "ružičasti donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "ljubičasti donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "crveni donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "bijeli donji lijevi kvadrant"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "žuti donji lijevi kvadrant"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "crni gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "plavi gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "smeđi gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "tirkizni gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "sivi gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "zeleni gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "svjetloplavi gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "svjetlosivi gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_LIME: "svjetlozeleni gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "roza gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "narančasti gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_PINK: "ružičasti gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "ljubičasti gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_RED: "crveni gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "bijeli gornji desni kvadrant"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "žuti gornji desni kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "crni gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "plavi gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "smeđi gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "trikizni gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "sivi gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "zeleni gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "svjetloplavi gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "svjetlosivi gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "svjetlozeleni gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "roza gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "narančasti gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "ružičasti gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "ljubičasti gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_RED: "crveni gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "bijeli gornji lijevi kvadrant"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "žuti gornji lijevi kvadrant"
+  BANNER_STRAIGHT_CROSS_BLACK: "crni križ"
+  BANNER_STRAIGHT_CROSS_BLUE: "plavi križ"
+  BANNER_STRAIGHT_CROSS_BROWN: "smeđi križ"
+  BANNER_STRAIGHT_CROSS_CYAN: "tirkizni križ"
+  BANNER_STRAIGHT_CROSS_GRAY: "sivi križ"
+  BANNER_STRAIGHT_CROSS_GREEN: "zeleni križ"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "svjetloplavi križ"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "svjetlosivi križ"
+  BANNER_STRAIGHT_CROSS_LIME: "svjetlozeleni križ"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "roza križ"
+  BANNER_STRAIGHT_CROSS_ORANGE: "narančasti križ"
+  BANNER_STRAIGHT_CROSS_PINK: "ružičasti križ"
+  BANNER_STRAIGHT_CROSS_PURPLE: "ljubičasti križ"
+  BANNER_STRAIGHT_CROSS_RED: "crveni križ"
+  BANNER_STRAIGHT_CROSS_WHITE: "bijeli križ"
+  BANNER_STRAIGHT_CROSS_YELLOW: "žuti križ"
+  BANNER_STRIPE_BOTTOM_BLACK: "crna donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_BLUE: "plava donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_BROWN: "smeđa donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_CYAN: "tirkizna donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_GRAY: "siva donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_GREEN: "zelena donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "svjetloplava donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "svjetlosiva donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_LIME: "svjetlozelena donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "roza donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_ORANGE: "narančasta donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_PINK: "ružičasta donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_PURPLE: "ljubičasta donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_RED: "crvena donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_WHITE: "bijela donja poprečna greda"
+  BANNER_STRIPE_BOTTOM_YELLOW: "žuta donja poprečna greda"
+  BANNER_STRIPE_CENTER_BLACK: "crni stupac"
+  BANNER_STRIPE_CENTER_BLUE: "plavi stupac"
+  BANNER_STRIPE_CENTER_BROWN: "smeđi stupac"
+  BANNER_STRIPE_CENTER_CYAN: "tirkizni stupac"
+  BANNER_STRIPE_CENTER_GRAY: "sivi stupac"
+  BANNER_STRIPE_CENTER_GREEN: "zeleni stupac"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "svjetloplavi stupac"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "svjetlosivi stupac"
+  BANNER_STRIPE_CENTER_LIME: "svjetlozeleni stupac"
+  BANNER_STRIPE_CENTER_MAGENTA: "roza stupac"
+  BANNER_STRIPE_CENTER_ORANGE: "narančasti stupac"
+  BANNER_STRIPE_CENTER_PINK: "ružičasti stupac"
+  BANNER_STRIPE_CENTER_PURPLE: "ljubičasti stupac"
+  BANNER_STRIPE_CENTER_RED: "crveni stupac"
+  BANNER_STRIPE_CENTER_WHITE: "bijeli stupac"
+  BANNER_STRIPE_CENTER_YELLOW: "žuti stupac"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "crna kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "plava kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "smeđa kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "tirkizna kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "siva kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "zelena kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "svjetloplava kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "svjetlosiva kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_LIME: "svjetlozelena kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "roza kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "narančasta kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_PINK: "ružičasta kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "ljubičasta kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_RED: "crvena kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "bijela kosa lijeva greda"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "žuta kosa lijeva greda"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "crna kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "plava kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "smeđa kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "tirkizna kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "siva kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "zelena kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "svjetloplava kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "svjetlosiva kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "svjetlozelena kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "roza kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "narančasta kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "ružičasta kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "ljubičasta kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_RED: "crvena kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "bijela kosa greda"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "žuta kosa greda"
+  BANNER_STRIPE_LEFT_BLACK: "crni desni stupac"
+  BANNER_STRIPE_LEFT_BLUE: "plavi desni stupac"
+  BANNER_STRIPE_LEFT_BROWN: "smeđi desni stupac"
+  BANNER_STRIPE_LEFT_CYAN: "tirkizni desni stupac"
+  BANNER_STRIPE_LEFT_GRAY: "sivi desni stupac"
+  BANNER_STRIPE_LEFT_GREEN: "zeleni desni stupac"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "svjetloplavi desni stupac"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "svjetlosivi desni stupac"
+  BANNER_STRIPE_LEFT_LIME: "svjetlozeleni desni stupac"
+  BANNER_STRIPE_LEFT_MAGENTA: "roza desni stupac"
+  BANNER_STRIPE_LEFT_ORANGE: "narančasti desni stupac"
+  BANNER_STRIPE_LEFT_PINK: "ružičasti desni stupac"
+  BANNER_STRIPE_LEFT_PURPLE: "ljubičasti desni stupac"
+  BANNER_STRIPE_LEFT_RED: "crveni desni stupac"
+  BANNER_STRIPE_LEFT_WHITE: "bijeli desni stupac"
+  BANNER_STRIPE_LEFT_YELLOW: "žuti desni stupac"
+  BANNER_STRIPE_MIDDLE_BLACK: "crna poprečna greda"
+  BANNER_STRIPE_MIDDLE_BLUE: "plava poprečna greda"
+  BANNER_STRIPE_MIDDLE_BROWN: "smeđa poprečna greda"
+  BANNER_STRIPE_MIDDLE_CYAN: "tirkizna poprečna greda"
+  BANNER_STRIPE_MIDDLE_GRAY: "siva poprečna greda"
+  BANNER_STRIPE_MIDDLE_GREEN: "zelena poprečna greda"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "svjetloplava poprečna greda"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "svjetlosiva poprečna greda"
+  BANNER_STRIPE_MIDDLE_LIME: "svjetlozelena poprečna greda"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "roza poprečna greda"
+  BANNER_STRIPE_MIDDLE_ORANGE: "narančasta poprečna greda"
+  BANNER_STRIPE_MIDDLE_PINK: "ružičasta poprečna greda"
+  BANNER_STRIPE_MIDDLE_PURPLE: "ljubičasta poprečna greda"
+  BANNER_STRIPE_MIDDLE_RED: "crvena poprečna greda"
+  BANNER_STRIPE_MIDDLE_WHITE: "bijela poprečna greda"
+  BANNER_STRIPE_MIDDLE_YELLOW: "žuta poprečna greda"
+  BANNER_STRIPE_RIGHT_BLACK: "crni lijevi stupac"
+  BANNER_STRIPE_RIGHT_BLUE: "plavi lijevi stupac"
+  BANNER_STRIPE_RIGHT_BROWN: "smeđi lijevi stupac"
+  BANNER_STRIPE_RIGHT_CYAN: "trikizni lijevi stupac"
+  BANNER_STRIPE_RIGHT_GRAY: "sivi lijevi stupac"
+  BANNER_STRIPE_RIGHT_GREEN: "zeleni lijevi stupac"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "svjetloplavi lijevi stupac"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "svjetlosivi lijevi stupac"
+  BANNER_STRIPE_RIGHT_LIME: "svjetlozeleni lijevi stupac"
+  BANNER_STRIPE_RIGHT_MAGENTA: "roza lijevi stupac"
+  BANNER_STRIPE_RIGHT_ORANGE: "narančasti lijevi stupac"
+  BANNER_STRIPE_RIGHT_PINK: "ružičasti lijevi stupac"
+  BANNER_STRIPE_RIGHT_PURPLE: "ljubičasti lijevi stupac"
+  BANNER_STRIPE_RIGHT_RED: "crveni lijevi stupac"
+  BANNER_STRIPE_RIGHT_WHITE: "bijeli lijevi stupac"
+  BANNER_STRIPE_RIGHT_YELLOW: "žuti lijevi stupac"
+  BANNER_STRIPE_TOP_BLACK: "crna gornja poprečna greda"
+  BANNER_STRIPE_TOP_BLUE: "plava gornja poprečna greda"
+  BANNER_STRIPE_TOP_BROWN: "smeđa gornja poprečna greda"
+  BANNER_STRIPE_TOP_CYAN: "tirkizna gornja poprečna greda"
+  BANNER_STRIPE_TOP_GRAY: "siva gornja poprečna greda"
+  BANNER_STRIPE_TOP_GREEN: "zelena gornja poprečna greda"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "svjetloplava gornja poprečna greda"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "svjetlosiva gornja poprečna greda"
+  BANNER_STRIPE_TOP_LIME: "svjetlozelena gornja poprečna greda"
+  BANNER_STRIPE_TOP_MAGENTA: "roza gornja poprečna greda"
+  BANNER_STRIPE_TOP_ORANGE: "narančasta gornja poprečna greda"
+  BANNER_STRIPE_TOP_PINK: "roza gornja poprečna greda"
+  BANNER_STRIPE_TOP_PURPLE: "ljubičasta gornja poprečna greda"
+  BANNER_STRIPE_TOP_RED: "crvena gornja poprečna greda"
+  BANNER_STRIPE_TOP_WHITE: "bijela gornja poprečna greda"
+  BANNER_STRIPE_TOP_YELLOW: "žuta gornja poprečna greda"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "crni šiljak"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "plavi šiljak"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "smeđi šiljak"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "tirkizni šiljak"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "sivi šiljak"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "zeleni šiljak"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "svjetloplavi šiljak"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "svjetlosivi šiljak"
+  BANNER_TRIANGLE_BOTTOM_LIME: "svjetlozeleni šiljak"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "roza šiljak"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "narančasti šiljak"
+  BANNER_TRIANGLE_BOTTOM_PINK: "ružičasti šiljak"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "ljubičasti šiljak"
+  BANNER_TRIANGLE_BOTTOM_RED: "crveni šiljak"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "bijeli šiljak"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "žuti šiljak"
+  BANNER_TRIANGLE_TOP_BLACK: "crni obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_BLUE: "plavi obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_BROWN: "smeđi obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_CYAN: "tirkizni obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_GRAY: "sivi obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_GREEN: "zeleni obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "svjetloplavi obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "svjetlosivi obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_LIME: "svjetlozeleni obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_MAGENTA: "roza obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_ORANGE: "narančasti obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_PINK: "ružičasti obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_PURPLE: "ljubičasti obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_RED: "crveni obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_WHITE: "bijeli obrnuti šiljak"
+  BANNER_TRIANGLE_TOP_YELLOW: "žuti obrnuti šiljak"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "crna donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "plava donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "smeđa donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "tirkizna donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "siva donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "zelena donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "svjetloplava donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "svjetlosiva donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_LIME: "svjetlozelena donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "roza donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "narančasta donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_PINK: "ružičasta donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "ljubičasta donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_RED: "crvena donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "bijela donja zupčasta greda"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "žuta donja zupčasta greda"
+  BANNER_TRIANGLES_TOP_BLACK: "crna gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_BLUE: "plava gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_BROWN: "smeđa gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_CYAN: "tirkizna gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_GRAY: "siva gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_GREEN: "zelena gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "svjetloplava gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "svjetlosiva gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_LIME: "svjetlozelena gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_MAGENTA: "roza gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_ORANGE: "narančasta gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_PINK: "ružičasta gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_PURPLE: "ljubičasta gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_RED: "crvena gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_WHITE: "bijela gornja zupčasta greda"
+  BANNER_TRIANGLES_TOP_YELLOW: "žuta gornja zupčasta greda"
+  BARREL: "bačva"
+  BARRIER: "barijera"
+  BASALT: "bazalt"
+  BEACON: "svjetionik"
+  BEACON_PRIMARY: "glavna moć"
+  BEACON_SECONDARY: "sekundarna moć"
+  BED_NO_SLEEP: "možeš spavati jedino noću ili tijekom oluje"
+  BED_NOT_SAFE: "sada se ne možeš odmarati; čudovišta su u blizini"
+  BED_OBSTRUCTED: "ovaj krevet je zapriječen"
+  BED_OCCUPIED: "krevet je zauzet"
+  BED_TOO_FAR_AWAY: "sada se ne možeš odmarati; krevet je predaleko"
+  BEDROCK: "temelj"
+  BEE_NEST: "pčelinje gnijezdo"
+  BEEHIVE: "košnica"
+  BEETROOTS: "cikle"
+  BELL: "zvono"
+  BIG_DRIPLEAF: "veliki kaplist"
+  BIG_DRIPLEAF_STEM: "stabljika velikog kaplista"
+  BIRCH_BUTTON: "gumb od breze"
+  BIRCH_DOOR: "vrata od breze"
+  BIRCH_FENCE: "ograda od breze"
+  BIRCH_FENCE_GATE: "vrata za ogradu od breze"
+  BIRCH_HANGING_SIGN: "viseći znak od breze"
+  BIRCH_LEAVES: "lišće breze"
+  BIRCH_LOG: "trupac breze"
+  BIRCH_PLANKS: "daske od breze"
+  BIRCH_PRESSURE_PLATE: "nagazna ploča od breze"
+  BIRCH_SAPLING: "mlado drvo breze"
+  BIRCH_SIGN: "znak od breze"
+  BIRCH_SLAB: "ploča od breze"
+  BIRCH_STAIRS: "stube od breze"
+  BIRCH_TRAPDOOR: "podna vrata od breze"
+  BIRCH_WALL_HANGING_SIGN: "viseći zidni znak od breze"
+  BIRCH_WALL_SIGN: "zidni znak od breze"
+  BIRCH_WOOD: "brezovina"
+  BLACK_BANNER: "crna zastava"
+  BLACK_BED: "crni krevet"
+  BLACK_CANDLE: "crna svijeća"
+  BLACK_CANDLE_CAKE: "torta s crnom svijećom"
+  BLACK_CARPET: "crni tepih"
+  BLACK_CONCRETE: "crni beton"
+  BLACK_CONCRETE_POWDER: "crni prah betona"
+  BLACK_GLAZED_TERRACOTTA: "crna glazirana terakota"
+  BLACK_SHULKER_BOX: "crna shulker kutija"
+  BLACK_STAINED_GLASS: "crno staklo"
+  BLACK_STAINED_GLASS_PANE: "crna staklena ploča"
+  BLACK_TERRACOTTA: "crna terakota"
+  BLACK_WOOL: "crna vuna"
+  BLACKSTONE: "crni kamen"
+  BLACKSTONE_SLAB: "ploča od crnog kamena"
+  BLACKSTONE_STAIRS: "stube od crnog kamena"
+  BLACKSTONE_WALL: "zid od crnog kamena"
+  BLAST_FURNACE: "visoka peć"
+  BLUE_BANNER: "plava zastava"
+  BLUE_BED: "plavi krevet"
+  BLUE_CANDLE: "plava svijeća"
+  BLUE_CANDLE_CAKE: "torta s plavom svijećom"
+  BLUE_CARPET: "plavi tepih"
+  BLUE_CONCRETE: "plavi beton"
+  BLUE_CONCRETE_POWDER: "plavi prah betona"
+  BLUE_GLAZED_TERRACOTTA: "plava glazirana terakota"
+  BLUE_ICE: "plavi led"
+  BLUE_ORCHID: "plava orhideja"
+  BLUE_SHULKER_BOX: "plava shulker kutija"
+  BLUE_STAINED_GLASS: "plavo staklo"
+  BLUE_STAINED_GLASS_PANE: "plava staklena ploča"
+  BLUE_TERRACOTTA: "plava terakota"
+  BLUE_WOOL: "plava vuna"
+  BONE_BLOCK: "koštani blok"
+  BOOKSHELF: "polica s knjigama"
+  BRAIN_CORAL: "mozgov koralj"
+  BRAIN_CORAL_BLOCK: "blok mozgovog koralja"
+  BRAIN_CORAL_FAN: "mozgov kožasti koralj"
+  BRAIN_CORAL_WALL_FAN: "bočni mozgov kožasti koralj"
+  BREWING_STAND: "postolje za napitke"
+  BRICK_SLAB: "ploča od cigala"
+  BRICK_STAIRS: "stube od cigala"
+  BRICK_WALL: "zid od cigala"
+  BRICKS: "cigle"
+  BROWN_BANNER: "smeđa zastava"
+  BROWN_BED: "smeđi krevet"
+  BROWN_CANDLE: "smeđa svijeća"
+  BROWN_CANDLE_CAKE: "torta sa smeđom svijećom"
+  BROWN_CARPET: "smeđi tepih"
+  BROWN_CONCRETE: "smeđi beton"
+  BROWN_CONCRETE_POWDER: "smeđi prah betona"
+  BROWN_GLAZED_TERRACOTTA: "smeđa glazirana terakota"
+  BROWN_MUSHROOM: "smeđa gljiva"
+  BROWN_MUSHROOM_BLOCK: "blok smeđe gljive"
+  BROWN_SHULKER_BOX: "smeđa shulker kutija"
+  BROWN_STAINED_GLASS: "smeđe staklo"
+  BROWN_STAINED_GLASS_PANE: "smeđa staklena ploča"
+  BROWN_TERRACOTTA: "smeđa terakota"
+  BROWN_WOOL: "smeđa vuna"
+  BUBBLE_COLUMN: "stupac mjehurića"
+  BUBBLE_CORAL: "mjehuričasti koralj"
+  BUBBLE_CORAL_BLOCK: "blok mjehuričastog koralja"
+  BUBBLE_CORAL_FAN: "mjehuričasti kožasti koralj"
+  BUBBLE_CORAL_WALL_FAN: "bočni mjehuričasti kožasti koralj"
+  BUDDING_AMETHYST: "stvarač ametista"
+  CACTUS: "kaktus"
+  CAKE: "torta"
+  CALCITE: "kalcit"
+  CALIBRATED_SCULK_SENSOR: "kalibrirani sculk senzor"
+  CAMPFIRE: "logorska vatra"
+  CANDLE: "svijeća"
+  CANDLE_CAKE: "torta sa svijećom"
+  CARROTS: "mrkve"
+  CARTOGRAPHY_TABLE: "stol za kartografiju"
+  CARVED_PUMPKIN: "urezana bundeva"
+  CAULDRON: "kotao"
+  CAVE_AIR: "zrak špilje"
+  CAVE_VINES: "špiljska loza"
+  CAVE_VINES_PLANT: "biljka špiljske loze"
+  CHAIN: "lanac"
+  CHAIN_COMMAND_BLOCK: "lančani naredbeni blok"
+  CHERRY_BUTTON: "gumb od trešnje"
+  CHERRY_DOOR: "vrata od trešnje"
+  CHERRY_FENCE: "ograda od trešnje"
+  CHERRY_FENCE_GATE: "vrata za ogradu od trešnje"
+  CHERRY_HANGING_SIGN: "viseći znak od trešnje"
+  CHERRY_LEAVES: "lišće trešnje"
+  CHERRY_LOG: "trupac trešnje"
+  CHERRY_PLANKS: "daske od trešnje"
+  CHERRY_PRESSURE_PLATE: "nagazna ploča od trešnje"
+  CHERRY_SAPLING: "mlado drvo trešnje"
+  CHERRY_SIGN: "znak od trešnje"
+  CHERRY_SLAB: "ploča od trešnje"
+  CHERRY_STAIRS: "stube od trešnje"
+  CHERRY_TRAPDOOR: "podna vrata od trešnje"
+  CHERRY_WALL_HANGING_SIGN: "viseći zidni znak od trešnje"
+  CHERRY_WALL_SIGN: "zidni znak od trešnje"
+  CHERRY_WOOD: "trešnjevina"
+  CHEST: "škrinja"
+  CHIPPED_ANVIL: "okrnjen nakovanj"
+  CHISELED_BOOKSHELF: "isklesana polica s knjigama"
+  CHISELED_COPPER: "isklesani bakar"
+  CHISELED_DEEPSLATE: "isklesani škriljevac"
+  CHISELED_NETHER_BRICKS: "isklesane nether cigle"
+  CHISELED_POLISHED_BLACKSTONE: "isklesani polirani crni kamen"
+  CHISELED_QUARTZ_BLOCK: "isklesani blok kvarca"
+  CHISELED_RED_SANDSTONE: "isklesani crveni pješčenjak"
+  CHISELED_SANDSTONE: "isklesani pješčenjak"
+  CHISELED_STONE_BRICKS: "isklesane kamene cigle"
+  CHISELED_TUFF: "isklesani tuf"
+  CHISELED_TUFF_BRICKS: "isklesane cigle od tufa"
+  CHORUS_FLOWER: "chorusov cvijet"
+  CHORUS_PLANT: "chorus biljka"
+  CLAY: "glina"
+  COAL_BLOCK: "blok ugljena"
+  COAL_ORE: "ugljena ruda"
+  COARSE_DIRT: "gruba zemlja"
+  COBBLED_DEEPSLATE: "kameni škriljevac"
+  COBBLED_DEEPSLATE_SLAB: "ploča od kamenog škriljevca"
+  COBBLED_DEEPSLATE_STAIRS: "stube od kamenog škriljevca"
+  COBBLED_DEEPSLATE_WALL: "zid od kamenog škriljevca"
+  COBBLESTONE: "kaldrma"
+  COBBLESTONE_SLAB: "ploča od kaldrme"
+  COBBLESTONE_STAIRS: "stube od kaldrme"
+  COBBLESTONE_WALL: "zid od kaldrme"
+  COBWEB: "paučina"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "naredbeni blok"
+  COMPARATOR: "redstone komparator"
+  COMPOSTER: "komposter"
+  CONDUIT: "konduktor"
+  COPPER_BLOCK: "blok bakra"
+  COPPER_BULB: "ej"
+  COPPER_DOOR: "bakrena vrata"
+  COPPER_GRATE: "bakrena rešetka"
+  COPPER_ORE: "bakrena ruda"
+  COPPER_TRAPDOOR: "bakrena podna vrata"
+  CORNFLOWER: "različak"
+  CRACKED_DEEPSLATE_BRICKS: "oštećene škriljave cigle"
+  CRACKED_DEEPSLATE_TILES: "oštećene škriljave pločice"
+  CRACKED_NETHER_BRICKS: "oštećene nether cigle"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "oštećene polirane cigle crnog kamena"
+  CRACKED_STONE_BRICKS: "oštećene kamene cigle"
+  CRAFTER: "radni blok"
+  CRAFTING_TABLE: "radni stol"
+  CREEPER_HEAD: "glava creepera"
+  CREEPER_WALL_HEAD: "zidna glava creepera"
+  CRIMSON_BUTTON: "grimizni gumb"
+  CRIMSON_DOOR: "grimizna vrata"
+  CRIMSON_FENCE: "grimizna ograda"
+  CRIMSON_FENCE_GATE: "vrata za grimiznu ogradu"
+  CRIMSON_FUNGUS: "grimizna gljiva"
+  CRIMSON_HANGING_SIGN: "grimizni viseći znak"
+  CRIMSON_HYPHAE: "grimizne hife"
+  CRIMSON_NYLIUM: "grimizni necelij"
+  CRIMSON_PLANKS: "grimizne daske"
+  CRIMSON_PRESSURE_PLATE: "grimizna nagazna ploča"
+  CRIMSON_ROOTS: "grimizno korijenje"
+  CRIMSON_SIGN: "grimizni znak"
+  CRIMSON_SLAB: "grimizna ploča"
+  CRIMSON_STAIRS: "grimizne stube"
+  CRIMSON_STEM: "grimizni stručak"
+  CRIMSON_TRAPDOOR: "grimizna podna vrata"
+  CRIMSON_WALL_HANGING_SIGN: "grimizni viseći zidni znak"
+  CRIMSON_WALL_SIGN: "zidni grimizni znak"
+  CRYING_OBSIDIAN: "plačući opsidijan"
+  CUT_COPPER: "rezani bakar"
+  CUT_COPPER_SLAB: "ploča od rezanog bakra"
+  CUT_COPPER_STAIRS: "stepenice od rezanog bakra"
+  CUT_RED_SANDSTONE: "rezani crveni pješčenjak"
+  CUT_RED_SANDSTONE_SLAB: "ploča od rezanog crvenog pješčenjaka"
+  CUT_SANDSTONE: "rezani pješčenjak"
+  CUT_SANDSTONE_SLAB: "ploča od rezanog pješčenjaka"
+  CYAN_BANNER: "tirkizna zastava"
+  CYAN_BED: "tirkizni krevet"
+  CYAN_CANDLE: "tirkizna svijeća"
+  CYAN_CANDLE_CAKE: "torta s tirkiznom svijećom"
+  CYAN_CARPET: "tirkizni tepih"
+  CYAN_CONCRETE: "tirkizni beton"
+  CYAN_CONCRETE_POWDER: "tirkizni prah betona"
+  CYAN_GLAZED_TERRACOTTA: "tirkizna glazirana terakota"
+  CYAN_SHULKER_BOX: "tirkizna shulker kutija"
+  CYAN_STAINED_GLASS: "tirkizno staklo"
+  CYAN_STAINED_GLASS_PANE: "tirkizna staklena ploča"
+  CYAN_TERRACOTTA: "tirkizna terakota"
+  CYAN_WOOL: "tirkizna vuna"
+  DAMAGED_ANVIL: "oštećen nakovanj"
+  DANDELION: "maslačak"
+  DARK_OAK_BUTTON: "gumb od tamnog hrasta"
+  DARK_OAK_DOOR: "vrata od tamnog hrasta"
+  DARK_OAK_FENCE: "ograda od tamnog hrasta"
+  DARK_OAK_FENCE_GATE: "vrata za ogradu od tamnog hrasta"
+  DARK_OAK_HANGING_SIGN: "viseći znak od tamnog hrasta"
+  DARK_OAK_LEAVES: "lišće tamnog hrasta"
+  DARK_OAK_LOG: "trupac tamnog hrasta"
+  DARK_OAK_PLANKS: "daske od tamnog hrasta"
+  DARK_OAK_PRESSURE_PLATE: "nagazna ploča od tamnog hrasta"
+  DARK_OAK_SAPLING: "mlado drvo tamnog hrasta"
+  DARK_OAK_SIGN: "znak od tamnog hrasta"
+  DARK_OAK_SLAB: "ploča od tamnog hrasta"
+  DARK_OAK_STAIRS: "stube od tamnog hrasta"
+  DARK_OAK_TRAPDOOR: "podna vrata od tamnog hrasta"
+  DARK_OAK_WALL_HANGING_SIGN: "viseći zidni znak od tamnog hrasta"
+  DARK_OAK_WALL_SIGN: "zidni znak od tamnog hrasta"
+  DARK_OAK_WOOD: "tamna hrastovina"
+  DARK_PRISMARINE: "tamni prizmarin"
+  DARK_PRISMARINE_SLAB: "ploča od tamnog prizmarina"
+  DARK_PRISMARINE_STAIRS: "stube od tamnog prizmarina"
+  DAYLIGHT_DETECTOR: "detektor dnevnog svijetla"
+  DEAD_BRAIN_CORAL: "mrtvi mozgov koralj"
+  DEAD_BRAIN_CORAL_BLOCK: "blok mrtvog mozgovog koralja"
+  DEAD_BRAIN_CORAL_FAN: "mrtvi mozgov kožasti koralj"
+  DEAD_BRAIN_CORAL_WALL_FAN: "mrtvi bočni mozgov kožasti koralj"
+  DEAD_BUBBLE_CORAL: "mrtvi mjehuričasti koralj"
+  DEAD_BUBBLE_CORAL_BLOCK: "blok mrtvog mjehuričastog koralja"
+  DEAD_BUBBLE_CORAL_FAN: "mrtvi mjehuričasti kožasti koralj"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "mrtvi bočni mjehuričasti kožasti koralj"
+  DEAD_BUSH: "suhi grm"
+  DEAD_FIRE_CORAL: "mrtvi vatreni koralj"
+  DEAD_FIRE_CORAL_BLOCK: "blok mrtvog vatrenog koralja"
+  DEAD_FIRE_CORAL_FAN: "mrtvi vatreni kožasti koralj"
+  DEAD_FIRE_CORAL_WALL_FAN: "mrtvi bočni vatreni kožasti koralj"
+  DEAD_HORN_CORAL: "mrtvi rogasti koralj"
+  DEAD_HORN_CORAL_BLOCK: "blok mrtvog rogastog koralja"
+  DEAD_HORN_CORAL_FAN: "mrtvi rogasti kožasti koralj"
+  DEAD_HORN_CORAL_WALL_FAN: "mrtvi bočni rogasti kožasti koralj"
+  DEAD_TUBE_CORAL: "mrtvi cjevasti koralj"
+  DEAD_TUBE_CORAL_BLOCK: "blok mrtvog cjevastog koralja"
+  DEAD_TUBE_CORAL_FAN: "mrtvi cjevasti kožasti koralj"
+  DEAD_TUBE_CORAL_WALL_FAN: "mrtvi bočni cjevasti kožasti koralj"
+  DECORATED_POT: "ukrašena lončanica"
+  DEEPSLATE: "škriljevac"
+  DEEPSLATE_BRICK_SLAB: "ploča od škriljavih cigala"
+  DEEPSLATE_BRICK_STAIRS: "stube od škriljavih cigala"
+  DEEPSLATE_BRICK_WALL: "zid od škriljavih cigala"
+  DEEPSLATE_BRICKS: "škriljave cigle"
+  DEEPSLATE_COAL_ORE: "škriljava ugljena ruda"
+  DEEPSLATE_COPPER_ORE: "škriljava bakrena ruda"
+  DEEPSLATE_DIAMOND_ORE: "škriljava dijamantna ruda"
+  DEEPSLATE_EMERALD_ORE: "škriljava smaragdna ruda"
+  DEEPSLATE_GOLD_ORE: "škriljava zlatna ruda"
+  DEEPSLATE_IRON_ORE: "škriljava željezna ruda"
+  DEEPSLATE_LAPIS_ORE: "škriljava lazulitna ruda"
+  DEEPSLATE_REDSTONE_ORE: "škriljava redstone ruda"
+  DEEPSLATE_TILE_SLAB: "ploča od škriljavih pločica"
+  DEEPSLATE_TILE_STAIRS: "stube od škriljavih pločica"
+  DEEPSLATE_TILE_WALL: "zid od škriljavih pločica"
+  DEEPSLATE_TILES: "škriljave pločice"
+  DETECTOR_RAIL: "tračnice s detektorom"
+  DIAMOND_BLOCK: "blok dijamanta"
+  DIAMOND_ORE: "dijamantna ruda"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "ploča od diorita"
+  DIORITE_STAIRS: "stube od diorita"
+  DIORITE_WALL: "zid od diorita"
+  DIRT: "zemlja"
+  DIRT_PATH: "zemljani put"
+  DISPENSER: "streljač"
+  DRAGON_EGG: "zmajevo jaje"
+  DRAGON_HEAD: "glava zmaja"
+  DRAGON_WALL_HEAD: "zidna glava zmaja"
+  DRIED_KELP_BLOCK: "blok osušenog kelpa"
+  DRIPSTONE_BLOCK: "blok speleotema"
+  DROPPER: "izbacivač"
+  EMERALD_BLOCK: "blok smaragda"
+  EMERALD_ORE: "smaragdna ruda"
+  ENCHANTING_TABLE: "stol za čaranje"
+  END_GATEWAY: "end prolaz"
+  END_PORTAL: "end portal"
+  END_PORTAL_FRAME: "okvir end portala"
+  END_ROD: "end štap"
+  END_STONE: "end kamen"
+  END_STONE_BRICK_SLAB: "ploča od kamenih end cigala"
+  END_STONE_BRICK_STAIRS: "stube od kamenih end cigala"
+  END_STONE_BRICK_WALL: "zid od kamenih end cigala"
+  END_STONE_BRICKS: "end kamene cigle"
+  ENDER_CHEST: "ender škrinja"
+  EXPOSED_CHISELED_COPPER: "izloženi isklesani bakar"
+  EXPOSED_COPPER: "izloženi bakar"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "izložena bakrena vrata"
+  EXPOSED_COPPER_GRATE: "izložena bakrena rešetka"
+  EXPOSED_COPPER_TRAPDOOR: "izložena bakrena podna vrata"
+  EXPOSED_CUT_COPPER: "izloženi rezani bakar"
+  EXPOSED_CUT_COPPER_SLAB: "ploča od izloženog rezanog bakra"
+  EXPOSED_CUT_COPPER_STAIRS: "stube od izloženog rezanog bakra"
+  FARMLAND: "obrađena zemlja"
+  FERN: "paprat"
+  FIRE: "vatra"
+  FIRE_CORAL: "vatreni koralj"
+  FIRE_CORAL_BLOCK: "blok vatrenog koralja"
+  FIRE_CORAL_FAN: "vatreni kožasti koralj"
+  FIRE_CORAL_WALL_FAN: "bočni vatreni kožasti koralj"
+  FLETCHING_TABLE: "stol za streljaštvo"
+  FLOWER_POT: "lončanica"
+  FLOWERING_AZALEA: "cvatuća azaleja"
+  FLOWERING_AZALEA_LEAVES: "cvatući azalejini listovi"
+  FROGSPAWN: "žablja jaja"
+  FROSTED_ICE: "krhki led"
+  FURNACE: "peć"
+  GILDED_BLACKSTONE: "pozlaćeni crni kamen"
+  GLASS: "staklo"
+  GLASS_PANE: "staklena ploča"
+  GLOW_LICHEN: "svjetleći lišaj"
+  GLOWSTONE: "svjetlucavi kamen"
+  GOLD_BLOCK: "blok zlata"
+  GOLD_ORE: "zlatna ruda"
+  GRANITE: "granit"
+  GRANITE_SLAB: "ploča od granita"
+  GRANITE_STAIRS: "stube od granita"
+  GRANITE_WALL: "zid od granita"
+  GRASS: "trava"
+  GRASS_BLOCK: "blok trave"
+  GRAVEL: "šljunak"
+  GRAY_BANNER: "siva zastava"
+  GRAY_BED: "sivi krevet"
+  GRAY_CANDLE: "siva svijeća"
+  GRAY_CANDLE_CAKE: "torta sa sivom svijećom"
+  GRAY_CARPET: "sivi tepih"
+  GRAY_CONCRETE: "sivi beton"
+  GRAY_CONCRETE_POWDER: "sivi prah betona"
+  GRAY_GLAZED_TERRACOTTA: "siva glazirana terakota"
+  GRAY_SHULKER_BOX: "siva shulker kutija"
+  GRAY_STAINED_GLASS: "sivo staklo"
+  GRAY_STAINED_GLASS_PANE: "siva staklena ploča"
+  GRAY_TERRACOTTA: "siva terakota"
+  GRAY_WOOL: "siva vuna"
+  GREEN_BANNER: "zelena zastava"
+  GREEN_BED: "zeleni krevet"
+  GREEN_CANDLE: "zelena svijeća"
+  GREEN_CANDLE_CAKE: "torta sa zelenom svijećom"
+  GREEN_CARPET: "zeleni tepih"
+  GREEN_CONCRETE: "zeleni beton"
+  GREEN_CONCRETE_POWDER: "zeleni prah betona"
+  GREEN_GLAZED_TERRACOTTA: "zelena glazirana terakota"
+  GREEN_SHULKER_BOX: "zelena shulker kutija"
+  GREEN_STAINED_GLASS: "zeleno staklo"
+  GREEN_STAINED_GLASS_PANE: "zelena staklena ploča"
+  GREEN_TERRACOTTA: "zelena terakota"
+  GREEN_WOOL: "zelena vuna"
+  GRINDSTONE: "brus"
+  HANGING_ROOTS: "viseće korijenje"
+  HAY_BLOCK: "bala sijena"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "nagazna ploča teške osjetljivosti"
+  HONEY_BLOCK: "blok meda"
+  HONEYCOMB_BLOCK: "blok saća"
+  HOPPER: "lijevak"
+  HORN_CORAL: "rogasti koralj"
+  HORN_CORAL_BLOCK: "blok rogastog koralja"
+  HORN_CORAL_FAN: "rogasti kožasti koralj"
+  HORN_CORAL_WALL_FAN: "bočni rogasti kožasti koralj"
+  ICE: "led"
+  INFESTED_CHISELED_STONE_BRICKS: "zaražene isklesane kamene cigle"
+  INFESTED_COBBLESTONE: "zaraženi blok kaldrme"
+  INFESTED_CRACKED_STONE_BRICKS: "zaražene oštećene kamene cigle"
+  INFESTED_DEEPSLATE: "zaraženi škriljevac"
+  INFESTED_MOSSY_STONE_BRICKS: "zaražene obrasle kamene cigle"
+  INFESTED_STONE: "zaraženi kamen"
+  INFESTED_STONE_BRICKS: "zaražene kamene cigle"
+  IRON_BARS: "željezne šipke"
+  IRON_BLOCK: "blok željeza"
+  IRON_DOOR: "željezna vrata"
+  IRON_ORE: "željezna ruda"
+  IRON_TRAPDOOR: "željezna podna vrata"
+  JACK_O_LANTERN: "svijetleća bundeva"
+  JIGSAW: "blok slagalice"
+  JUKEBOX: "glazbena kutija"
+  JUNGLE_BUTTON: "gumb od prašumskog drva"
+  JUNGLE_DOOR: "vrata od prašumskog drva"
+  JUNGLE_FENCE: "ograda od prašumskog drva"
+  JUNGLE_FENCE_GATE: "vrata za ogradu od prašumskog drva"
+  JUNGLE_HANGING_SIGN: "viseći znak od prašumskog drva"
+  JUNGLE_LEAVES: "lišće prašumskog drveta"
+  JUNGLE_LOG: "trupac prašumskog drveta"
+  JUNGLE_PLANKS: "daske od prašumskog drva"
+  JUNGLE_PRESSURE_PLATE: "nagazna ploča od prašumskog drva"
+  JUNGLE_SAPLING: "mlado prašumsko drvo"
+  JUNGLE_SIGN: "znak od prašumskog drva"
+  JUNGLE_SLAB: "ploča od prašumskog drva"
+  JUNGLE_STAIRS: "stube od prašumskog drva"
+  JUNGLE_TRAPDOOR: "podna vrata od prašumskog drva"
+  JUNGLE_WALL_HANGING_SIGN: "viseći zidni znak od prašumskog drva"
+  JUNGLE_WALL_SIGN: "zidni znak od prašumskog drva"
+  JUNGLE_WOOD: "prašumsko drvo"
+  KELP: "kelp"
+  KELP_PLANT: "biljka kelpa"
+  LADDER: "ljestve"
+  LANTERN: "svjetiljka"
+  LAPIS_BLOCK: "blok lazulita"
+  LAPIS_ORE: "lazulitna ruda"
+  LARGE_AMETHYST_BUD: "velika druza ametista"
+  LARGE_FERN: "velika paprat"
+  LAVA: "lava"
+  LAVA_CAULDRON: "kotao s lavom"
+  LECTERN: "pult"
+  LEVER: "poluga"
+  LIGHT: "svjetlo"
+  LIGHT_BLUE_BANNER: "svjetloplava zastava"
+  LIGHT_BLUE_BED: "svjetloplavi krevet"
+  LIGHT_BLUE_CANDLE: "svjetloplava svijeća"
+  LIGHT_BLUE_CANDLE_CAKE: "torta sa svjetloplavom svijećom"
+  LIGHT_BLUE_CARPET: "svjetloplavi tepih"
+  LIGHT_BLUE_CONCRETE: "svjetloplavi beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "svjetloplavi prah betona"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "svjetloplava glazirana terakota"
+  LIGHT_BLUE_SHULKER_BOX: "svjetloplava shulker kutija"
+  LIGHT_BLUE_STAINED_GLASS: "svjetloplavo staklo"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "svjetloplava staklena ploča"
+  LIGHT_BLUE_TERRACOTTA: "svjetloplava terakota"
+  LIGHT_BLUE_WOOL: "svjetloplava vuna"
+  LIGHT_GRAY_BANNER: "svjetlosiva zastava"
+  LIGHT_GRAY_BED: "svjetlosivi krevet"
+  LIGHT_GRAY_CANDLE: "svjetlosiva svijeća"
+  LIGHT_GRAY_CANDLE_CAKE: "torta sa svjetlosivom svijećom"
+  LIGHT_GRAY_CARPET: "svjetlosivi tepih"
+  LIGHT_GRAY_CONCRETE: "svjetlosivi beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "svjetlosivi prah betona"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "svjetlosiva glazirana terakota"
+  LIGHT_GRAY_SHULKER_BOX: "svjetlosiva shulker kutija"
+  LIGHT_GRAY_STAINED_GLASS: "svjetlosivo staklo"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "svjetlosiva staklena ploča"
+  LIGHT_GRAY_TERRACOTTA: "svjetlosiva terakota"
+  LIGHT_GRAY_WOOL: "svjetlosiva vuna"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "nagazna ploča lakše osjetljivosti"
+  LIGHTNING_ROD: "gromobran"
+  LILAC: "jorgovan"
+  LILY_OF_THE_VALLEY: "đurđica"
+  LILY_PAD: "lopoč"
+  LIME_BANNER: "svjetlozelena zastava"
+  LIME_BED: "svjetlozeleni krevet"
+  LIME_CANDLE: "svjetlozelena svijeća"
+  LIME_CANDLE_CAKE: "torta sa svjetlozelenom svijećom"
+  LIME_CARPET: "svjetlozeleni tepih"
+  LIME_CONCRETE: "svjetlozeleni beton"
+  LIME_CONCRETE_POWDER: "svjetlozeleni prah betona"
+  LIME_GLAZED_TERRACOTTA: "svjetlozelena glazirana terakota"
+  LIME_SHULKER_BOX: "svjetlozelena shulker kutija"
+  LIME_STAINED_GLASS: "svjetlozeleno staklo"
+  LIME_STAINED_GLASS_PANE: "svjetlozelena staklena ploča"
+  LIME_TERRACOTTA: "svjetlozelena terakota"
+  LIME_WOOL: "svjetlozelena vuna"
+  LODESTONE: "magnetit"
+  LOOM: "tkalački stan"
+  MAGENTA_BANNER: "roza zastava"
+  MAGENTA_BED: "roza krevet"
+  MAGENTA_CANDLE: "roza svijeća"
+  MAGENTA_CANDLE_CAKE: "torta s roza svijećom"
+  MAGENTA_CARPET: "roza tepih"
+  MAGENTA_CONCRETE: "roza beton"
+  MAGENTA_CONCRETE_POWDER: "roza prah betona"
+  MAGENTA_GLAZED_TERRACOTTA: "roza glazirana terakota"
+  MAGENTA_SHULKER_BOX: "roza shulker kutija"
+  MAGENTA_STAINED_GLASS: "roza staklo"
+  MAGENTA_STAINED_GLASS_PANE: "roza staklena ploča"
+  MAGENTA_TERRACOTTA: "roza terakota"
+  MAGENTA_WOOL: "roza vuna"
+  MAGMA_BLOCK: "blok magme"
+  MANGROVE_BUTTON: "gumb od mangrova"
+  MANGROVE_DOOR: "vrata od mangrova"
+  MANGROVE_FENCE: "ograda od mangrova"
+  MANGROVE_FENCE_GATE: "vrata za ogradu od mangrova"
+  MANGROVE_HANGING_SIGN: "viseći znak od mangrova"
+  MANGROVE_LEAVES: "lišće mangrova"
+  MANGROVE_LOG: "trupac mangrova"
+  MANGROVE_PLANKS: "daske od mangrova"
+  MANGROVE_PRESSURE_PLATE: "nagazna ploča od mangrova"
+  MANGROVE_PROPAGULE: "propagula mangrova"
+  MANGROVE_ROOTS: "korijenje mangrova"
+  MANGROVE_SIGN: "znak od mangrova"
+  MANGROVE_SLAB: "ploča od mangrova"
+  MANGROVE_STAIRS: "stube od mangrova"
+  MANGROVE_TRAPDOOR: "podna vrata od mangrova"
+  MANGROVE_WALL_HANGING_SIGN: "viseći zidni znak od mangrova"
+  MANGROVE_WALL_SIGN: "zidni znak od mangrova"
+  MANGROVE_WOOD: "drvo mangrova"
+  MEDIUM_AMETHYST_BUD: "srednja druza ametista"
+  MELON: "lubenica"
+  MELON_STEM: "stabljika lubenice"
+  MOSS_BLOCK: "blok mahovine"
+  MOSS_CARPET: "tepih od mahovine"
+  MOSSY_COBBLESTONE: "obrasli blok kaldrme"
+  MOSSY_COBBLESTONE_SLAB: "ploča od obrasle kaldrme"
+  MOSSY_COBBLESTONE_STAIRS: "stube od obrasle kaldrme"
+  MOSSY_COBBLESTONE_WALL: "zid od obrasle kaldrme"
+  MOSSY_STONE_BRICK_SLAB: "ploča od obraslih kamenih cigala"
+  MOSSY_STONE_BRICK_STAIRS: "stube od obraslih kamenih cigala"
+  MOSSY_STONE_BRICK_WALL: "zid od obraslih kamenih cigala"
+  MOSSY_STONE_BRICKS: "obrasle kamene cigle"
+  MOVING_PISTON: "klip u kretanju"
+  MUD: "blato"
+  MUD_BRICK_SLAB: "ploča od ćerpiča"
+  MUD_BRICK_STAIRS: "stube od ćerpiča"
+  MUD_BRICK_WALL: "zid od ćerpiča"
+  MUD_BRICKS: "ćerpič"
+  MUDDY_MANGROVE_ROOTS: "blatno korijenje mangrova"
+  MUSHROOM_STEM: "stručak gljive"
+  MYCELIUM: "micelij"
+  NETHER_BRICK_FENCE: "ograda od nether cigala"
+  NETHER_BRICK_SLAB: "ploča od nether cigala"
+  NETHER_BRICK_STAIRS: "stube od nether cigala"
+  NETHER_BRICK_WALL: "zid od kamenih nether cigala"
+  NETHER_BRICKS: "nether cigle"
+  NETHER_GOLD_ORE: "ruda nether zlata"
+  NETHER_PORTAL: "nether portal"
+  NETHER_QUARTZ_ORE: "nether kvarcna ruda"
+  NETHER_SPROUTS: "nether klice"
+  NETHER_WART: "nether lišaj"
+  NETHER_WART_BLOCK: "blok nether lišaja"
+  NETHERITE_BLOCK: "blok netherita"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "glazbeni blok"
+  OAK_BUTTON: "gumb od hrasta"
+  OAK_DOOR: "vrata od hrasta"
+  OAK_FENCE: "ograda od hrasta"
+  OAK_FENCE_GATE: "vrata za ogradu od hrasta"
+  OAK_HANGING_SIGN: "viseći znak od hrasta"
+  OAK_LEAVES: "lišće hrasta"
+  OAK_LOG: "trupac hrasta"
+  OAK_PLANKS: "daske od hrasta"
+  OAK_PRESSURE_PLATE: "nagazna ploča od hrasta"
+  OAK_SAPLING: "mlado drvo hrasta"
+  OAK_SIGN: "znak od hrasta"
+  OAK_SLAB: "ploča od hrasta"
+  OAK_STAIRS: "stube od hrasta"
+  OAK_TRAPDOOR: "podna vrata od hrasta"
+  OAK_WALL_HANGING_SIGN: "viseći zidni znak od hrasta"
+  OAK_WALL_SIGN: "zidni znak od hrasta"
+  OAK_WOOD: "hrastovina"
+  OBSERVER: "promatrač"
+  OBSIDIAN: "opsidijan"
+  OCHRE_FROGLIGHT: "oker žabokrijes"
+  OMINOUS_BANNER: "zlosutna zastava"
+  ORANGE_BANNER: "narančasta zastava"
+  ORANGE_BED: "narančasti krevet"
+  ORANGE_CANDLE: "narančasta svijeća"
+  ORANGE_CANDLE_CAKE: "torta s narančastom svijećom"
+  ORANGE_CARPET: "narančasti tepih"
+  ORANGE_CONCRETE: "narančasti beton"
+  ORANGE_CONCRETE_POWDER: "narančasti prah betona"
+  ORANGE_GLAZED_TERRACOTTA: "narančasta glazirana terakota"
+  ORANGE_SHULKER_BOX: "narančasta shulker kutija"
+  ORANGE_STAINED_GLASS: "narančasto staklo"
+  ORANGE_STAINED_GLASS_PANE: "narančasta staklena ploča"
+  ORANGE_TERRACOTTA: "narančasta terakota"
+  ORANGE_TULIP: "narančasti tulipan"
+  ORANGE_WOOL: "narančasta vuna"
+  OXEYE_DAISY: "tratinčica"
+  OXIDIZED_CHISELED_COPPER: "oksidirani isklesani bakar"
+  OXIDIZED_COPPER: "oksidirani bakar"
+  OXIDIZED_COPPER_BULB: "oksidirana bakrena lampa"
+  OXIDIZED_COPPER_DOOR: "oksidirana bakrena vrata"
+  OXIDIZED_COPPER_GRATE: "oksidirana bakrena rešetka"
+  OXIDIZED_COPPER_TRAPDOOR: "oksidirana bakrena podna vrata"
+  OXIDIZED_CUT_COPPER: "rezani oksidirani bakar"
+  OXIDIZED_CUT_COPPER_SLAB: "polublok od rezanog oksidiranog bakra"
+  OXIDIZED_CUT_COPPER_STAIRS: "stube od rezanog oksidiranog bakra"
+  PACKED_ICE: "tvrdi led"
+  PACKED_MUD: "črvsto blato"
+  PEARLESCENT_FROGLIGHT: "biserni žabokrijes"
+  PEONY: "božur"
+  PETRIFIED_OAK_SLAB: "ploča od okamenjenog hrasta"
+  PIGLIN_HEAD: "glava piglina"
+  PIGLIN_WALL_HEAD: "zidna glava piglina"
+  PINK_BANNER: "ružičasta zastava"
+  PINK_BED: "ružičasti krevet"
+  PINK_CANDLE: "ružičasta svijeća"
+  PINK_CANDLE_CAKE: "torta s ružičastom svijećom"
+  PINK_CARPET: "ružičasti tepih"
+  PINK_CONCRETE: "ružičasti beton"
+  PINK_CONCRETE_POWDER: "ružičasti prah betona"
+  PINK_GLAZED_TERRACOTTA: "ružičasta glazirana terakota"
+  PINK_PETALS: "ružičaste latice"
+  PINK_SHULKER_BOX: "ružičasta shulker kutija"
+  PINK_STAINED_GLASS: "ružičasto staklo"
+  PINK_STAINED_GLASS_PANE: "ružičasta staklena ploča"
+  PINK_TERRACOTTA: "ružičasta terakota"
+  PINK_TULIP: "ružičasti tulipan"
+  PINK_WOOL: "ružičasta vuna"
+  PISTON: "pokretni klip"
+  PISTON_HEAD: "glava pokretnog klipa"
+  PITCHER_CROP: "usjev vrčonoše"
+  PITCHER_PLANT: "vrčonoša"
+  PLAYER_HEAD: "glava igrača"
+  PLAYER_HEAD_NAMED: "glava igrača „%s“"
+  PLAYER_WALL_HEAD: "zidna glava igrača"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "špiljska siga"
+  POLISHED_ANDESITE: "polirani andezit"
+  POLISHED_ANDESITE_SLAB: "ploča od poliranog andezita"
+  POLISHED_ANDESITE_STAIRS: "stube od poliranog andezita"
+  POLISHED_BASALT: "polirani bazalt"
+  POLISHED_BLACKSTONE: "polirani crni kamen"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "polirana ploča od cigala crnog kamena"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "polirane stube od cigala crnog kamena"
+  POLISHED_BLACKSTONE_BRICK_WALL: "zid od poliranih cigala crnog kamena"
+  POLISHED_BLACKSTONE_BRICKS: "polirane cigle crnog kamena"
+  POLISHED_BLACKSTONE_BUTTON: "polirani gumb od crnog kamena"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "polirana nagazna ploča od crnog kamena"
+  POLISHED_BLACKSTONE_SLAB: "polirana ploča od crnog kamena"
+  POLISHED_BLACKSTONE_STAIRS: "polirane stube od crnog kamena"
+  POLISHED_BLACKSTONE_WALL: "zid od poliranog crnog kamena"
+  POLISHED_DEEPSLATE: "polirani škriljevac"
+  POLISHED_DEEPSLATE_SLAB: "ploča od poliranog škriljevca"
+  POLISHED_DEEPSLATE_STAIRS: "stube od poliranog škriljevca"
+  POLISHED_DEEPSLATE_WALL: "zid od poliranog škriljevca"
+  POLISHED_DIORITE: "polirani diorit"
+  POLISHED_DIORITE_SLAB: "ploča od poliranog diorita"
+  POLISHED_DIORITE_STAIRS: "stube od poliranog diorita"
+  POLISHED_GRANITE: "polirani granit"
+  POLISHED_GRANITE_SLAB: "ploča od poliranog granita"
+  POLISHED_GRANITE_STAIRS: "stube od poliranog granita"
+  POLISHED_TUFF: "polirani tuf"
+  POLISHED_TUFF_SLAB: "polirana ploča od tufa"
+  POLISHED_TUFF_STAIRS: "polirane stube od tufa"
+  POLISHED_TUFF_WALL: "polirani zid of tufa"
+  POPPY: "mak"
+  POTATOES: "krumpiri"
+  POTTED_ACACIA_SAPLING: "mlado akacije u lončanici"
+  POTTED_ALLIUM: "ukrasni luk u lončanici"
+  POTTED_AZALEA_BUSH: "azaleja u lončanici"
+  POTTED_AZURE_BLUET: "plava maćuhica u lončanici"
+  POTTED_BAMBOO: "bambus u lončanici"
+  POTTED_BIRCH_SAPLING: "mlado breze u lončanici"
+  POTTED_BLUE_ORCHID: "plava orhideja u lončanici"
+  POTTED_BROWN_MUSHROOM: "smeđa glijva u lončanici"
+  POTTED_CACTUS: "kaktus u lončanici"
+  POTTED_CHERRY_SAPLING: "mlado trešnje u lončanici"
+  POTTED_CORNFLOWER: "različak u lončanici"
+  POTTED_CRIMSON_FUNGUS: "grimizna gljiva u lončanici"
+  POTTED_CRIMSON_ROOTS: "grimizno korijenje u lončanici"
+  POTTED_DANDELION: "maslačak u lončanici"
+  POTTED_DARK_OAK_SAPLING: "mlado tamnog hrasta u lončanici"
+  POTTED_DEAD_BUSH: "suhi grm u lončanici"
+  POTTED_FERN: "paprat u lončanici"
+  POTTED_FLOWERING_AZALEA_BUSH: "cvatuća azaleja u lončanici"
+  POTTED_JUNGLE_SAPLING: "mlado prašumskog drveta u lončanici"
+  POTTED_LILY_OF_THE_VALLEY: "đurđica u lončanici"
+  POTTED_MANGROVE_PROPAGULE: "propagula mangrova u lončanici"
+  POTTED_OAK_SAPLING: "mlado hrasta u lončanici"
+  POTTED_ORANGE_TULIP: "narančasti tulipan u lončanici"
+  POTTED_OXEYE_DAISY: "tratinčica u lončanici"
+  POTTED_PINK_TULIP: "ružičasti tulipan u lončanici"
+  POTTED_POPPY: "mak u lončanici"
+  POTTED_RED_MUSHROOM: "crvena gljiva u lončanici"
+  POTTED_RED_TULIP: "crveni tulipan u lončanici"
+  POTTED_SPRUCE_SAPLING: "mlado smreke u lončanici"
+  POTTED_TORCHFLOWER: "bakljocvijet u lončanici"
+  POTTED_WARPED_FUNGUS: "luda gljiva u lončanici"
+  POTTED_WARPED_ROOTS: "ludo korijenje u lončanici"
+  POTTED_WHITE_TULIP: "bijeli tulipan u lončanici"
+  POTTED_WITHER_ROSE: "wither ruža u lončanici"
+  POWDER_SNOW: "snježni prah"
+  POWDER_SNOW_CAULDRON: "kotao sa snježnim prahom"
+  POWERED_RAIL: "tračnice s pogonom"
+  PRISMARINE: "prizmarin"
+  PRISMARINE_BRICK_SLAB: "ploča od prizmarinskih cigala"
+  PRISMARINE_BRICK_STAIRS: "stube od prizmarinskih cigala"
+  PRISMARINE_BRICKS: "cigle prizmarina"
+  PRISMARINE_SLAB: "ploča od prizmarina"
+  PRISMARINE_STAIRS: "stube od prizmarina"
+  PRISMARINE_WALL: "zid od prizmarina"
+  PUMPKIN: "bundeva"
+  PUMPKIN_STEM: "stabljika bundeve"
+  PURPLE_BANNER: "ljubičasta zastava"
+  PURPLE_BED: "ljubičasti krevet"
+  PURPLE_CANDLE: "ljubičasta svijeća"
+  PURPLE_CANDLE_CAKE: "torta s ljubičastom svijećom"
+  PURPLE_CARPET: "ljubičasti tepih"
+  PURPLE_CONCRETE: "ljubičasti beton"
+  PURPLE_CONCRETE_POWDER: "ljubičasti prah betona"
+  PURPLE_GLAZED_TERRACOTTA: "ljubičasta glazirana terakota"
+  PURPLE_SHULKER_BOX: "ljubičasta shulker kutija"
+  PURPLE_STAINED_GLASS: "ljubičasto staklo"
+  PURPLE_STAINED_GLASS_PANE: "ljubičasta staklena ploča"
+  PURPLE_TERRACOTTA: "ljubičasta terakota"
+  PURPLE_WOOL: "ljubičasta vuna"
+  PURPUR_BLOCK: "blok purpura"
+  PURPUR_PILLAR: "stup purpura"
+  PURPUR_SLAB: "ploča od purpura"
+  PURPUR_STAIRS: "stube od purpura"
+  QUARTZ_BLOCK: "blok kvarca"
+  QUARTZ_BRICKS: "kvarcne cigle"
+  QUARTZ_PILLAR: "stup od kvarca"
+  QUARTZ_SLAB: "ploča od kvarca"
+  QUARTZ_STAIRS: "stube od kvarca"
+  RAIL: "tračnice"
+  RAW_COPPER_BLOCK: "blok sirovog bakra"
+  RAW_GOLD_BLOCK: "blok sirovog zlata"
+  RAW_IRON_BLOCK: "blok sirovog željeza"
+  RED_BANNER: "crvena zastava"
+  RED_BED: "crveni krevet"
+  RED_CANDLE: "crvena svijeća"
+  RED_CANDLE_CAKE: "torta s crvenom svijećom"
+  RED_CARPET: "crveni tepih"
+  RED_CONCRETE: "crveni beton"
+  RED_CONCRETE_POWDER: "crveni prah betona"
+  RED_GLAZED_TERRACOTTA: "crvena glazirana terakota"
+  RED_MUSHROOM: "crvena gljiva"
+  RED_MUSHROOM_BLOCK: "blok crvene gljive"
+  RED_NETHER_BRICK_SLAB: "ploča od crvenih nether cigala"
+  RED_NETHER_BRICK_STAIRS: "stube od crvenih nether cigala"
+  RED_NETHER_BRICK_WALL: "zid od crvenih nether cigala"
+  RED_NETHER_BRICKS: "crvene nether cigle"
+  RED_SAND: "crveni pijesak"
+  RED_SANDSTONE: "crveni pješčenjak"
+  RED_SANDSTONE_SLAB: "ploča od crvenog pješčenjaka"
+  RED_SANDSTONE_STAIRS: "stube od crvenog pješčenjaka"
+  RED_SANDSTONE_WALL: "zid od crvenog pješčenjaka"
+  RED_SHULKER_BOX: "crvena shulker kutija"
+  RED_STAINED_GLASS: "crveno staklo"
+  RED_STAINED_GLASS_PANE: "crvena staklena ploča"
+  RED_TERRACOTTA: "crvena terakota"
+  RED_TULIP: "crveni tulipan"
+  RED_WOOL: "crvena vuna"
+  REDSTONE_BLOCK: "blok redstona"
+  REDSTONE_LAMP: "redstone lampa"
+  REDSTONE_ORE: "redstone ruda"
+  REDSTONE_TORCH: "redstone baklja"
+  REDSTONE_WALL_TORCH: "zidna redstone baklja"
+  REDSTONE_WIRE: "redstone žica"
+  REINFORCED_DEEPSLATE: "armirani škriljevac"
+  REPEATER: "redstone repetitor"
+  REPEATING_COMMAND_BLOCK: "ponavljajući naredbeni blok"
+  RESPAWN_ANCHOR: "oltar preporođenja"
+  ROOTED_DIRT: "ukorijenjena zemlja"
+  ROSE_BUSH: "grm ruža"
+  SAND: "pijesak"
+  SANDSTONE: "pješčenjak"
+  SANDSTONE_SLAB: "ploča od pješčenjaka"
+  SANDSTONE_STAIRS: "pješčane stube"
+  SANDSTONE_WALL: "zid od pješčenjaka"
+  SCAFFOLDING: "skela"
+  SCULK: "sculk"
+  SCULK_CATALYST: "katalizator sculka"
+  SCULK_SENSOR: "sculk senzor"
+  SCULK_SHRIEKER: "sculkov vrištač"
+  SCULK_VEIN: "vene sculka"
+  SEA_LANTERN: "podvodna svjetiljka"
+  SEA_PICKLE: "morski krastavac"
+  SEAGRASS: "morske cvjetnice"
+  SET_SPAWN: "točka ponovnog stvaranja je postavljena"
+  SHORT_GRASS: "niska trava"
+  SHROOMLIGHT: "svjetlogljiva"
+  SHULKER_BOX: "shulker kutija"
+  SKELETON_SKULL: "lubanja"
+  SKELETON_WALL_SKULL: "zidna lubanja kostura"
+  SLIME_BLOCK: "ljigavi blok"
+  SMALL_AMETHYST_BUD: "mala druza ametista"
+  SMALL_DRIPLEAF: "mali kaplist"
+  SMITHING_TABLE: "stol za kovanje"
+  SMOKER: "pušnica"
+  SMOOTH_BASALT: "glatki bazalt"
+  SMOOTH_QUARTZ: "blok od glatkog kvarca"
+  SMOOTH_QUARTZ_SLAB: "ploča od glatkog kvarca"
+  SMOOTH_QUARTZ_STAIRS: "stube od glatkog kvarca"
+  SMOOTH_RED_SANDSTONE: "obrađeni crveni pješčenjak"
+  SMOOTH_RED_SANDSTONE_SLAB: "ploča od glatkog crvenog pješčenjaka"
+  SMOOTH_RED_SANDSTONE_STAIRS: "stube od glatkog crvenog pješčenjaka"
+  SMOOTH_SANDSTONE: "obrađeni pješčenjak"
+  SMOOTH_SANDSTONE_SLAB: "ploča od glatkog pješčenjaka"
+  SMOOTH_SANDSTONE_STAIRS: "stube od glatkog pješčenjaka"
+  SMOOTH_STONE: "glatki kamen"
+  SMOOTH_STONE_SLAB: "ploča od glatkog kamena"
+  SNIFFER_EGG: "njuškovo jaje"
+  SNOW: "snijeg"
+  SNOW_BLOCK: "blok snijega"
+  SOUL_CAMPFIRE: "logorska vatra živog plamena"
+  SOUL_FIRE: "živi plamen"
+  SOUL_LANTERN: "živa svjetiljka"
+  SOUL_SAND: "živi pijesak"
+  SOUL_SOIL: "živa zemlja"
+  SOUL_TORCH: "živa baklja"
+  SOUL_WALL_TORCH: "zidna živa baklja"
+  SPAWN_NOT_VALID: "tvoj krevet ili napunjeni oltar preporođenja je uništen ili ga nemaš"
+  SPAWNER: "stvarač čudovišta"
+  SPAWNER_DESC1: "interakcija s jajetom za stvaranje:"
+  SPAWNER_DESC2: "postavlja vrstu stvorenja"
+  SPONGE: "spužva"
+  SPORE_BLOSSOM: "cvat spore"
+  SPRUCE_BUTTON: "gumb od smreke"
+  SPRUCE_DOOR: "vrata od smreke"
+  SPRUCE_FENCE: "ograda od smreke"
+  SPRUCE_FENCE_GATE: "vrata za ogradu od smreke"
+  SPRUCE_HANGING_SIGN: "viseći znak od smreke"
+  SPRUCE_LEAVES: "lišće smreke"
+  SPRUCE_LOG: "trupac smreke"
+  SPRUCE_PLANKS: "daske od smreke"
+  SPRUCE_PRESSURE_PLATE: "nagazna ploča od smreke"
+  SPRUCE_SAPLING: "mlado drve smreke"
+  SPRUCE_SIGN: "znak od smreke"
+  SPRUCE_SLAB: "ploča od smreke"
+  SPRUCE_STAIRS: "stube od smreke"
+  SPRUCE_TRAPDOOR: "podna vrata od smreke"
+  SPRUCE_WALL_HANGING_SIGN: "viseći zidni znak od smreke"
+  SPRUCE_WALL_SIGN: "zidni znak od smreke"
+  SPRUCE_WOOD: "smrekovina"
+  STICKY_PISTON: "ljepljivi pokretni klip"
+  STONE: "kamen"
+  STONE_BRICK_SLAB: "ploča od kamenih cigala"
+  STONE_BRICK_STAIRS: "stube od kamenih cigala"
+  STONE_BRICK_WALL: "zid od kamenih cigala"
+  STONE_BRICKS: "kamene cigle"
+  STONE_BUTTON: "kameni gumb"
+  STONE_PRESSURE_PLATE: "kamena nagazna ploča"
+  STONE_SLAB: "ploča od kamena"
+  STONE_STAIRS: "stube od kamena"
+  STONECUTTER: "pila za rezanje kamena"
+  STRIPPED_ACACIA_LOG: "oguljeni trupac akacije"
+  STRIPPED_ACACIA_WOOD: "oguljeno drvo akacije"
+  STRIPPED_BAMBOO_BLOCK: "blok oguljenog bambusa"
+  STRIPPED_BIRCH_LOG: "oguljeni trupac breze"
+  STRIPPED_BIRCH_WOOD: "oguljena brezovina"
+  STRIPPED_CHERRY_LOG: "oguljeni trupac trešnje"
+  STRIPPED_CHERRY_WOOD: "oguljena trešnjevina"
+  STRIPPED_CRIMSON_HYPHAE: "oguljene grimizne hife"
+  STRIPPED_CRIMSON_STEM: "oguljeni grimizni stručak"
+  STRIPPED_DARK_OAK_LOG: "oguljeni trupac tamnog hrasta"
+  STRIPPED_DARK_OAK_WOOD: "oguljena tamna hrastovina"
+  STRIPPED_JUNGLE_LOG: "oguljeni trupac prašumskog drveta"
+  STRIPPED_JUNGLE_WOOD: "oguljeno drvo prašumskog drva"
+  STRIPPED_MANGROVE_LOG: "ogoljeni trupac mangrova"
+  STRIPPED_MANGROVE_WOOD: "ogoljeno drvo mangrova"
+  STRIPPED_OAK_LOG: "oguljeni trupac hrasta"
+  STRIPPED_OAK_WOOD: "oguljena hrastovina"
+  STRIPPED_SPRUCE_LOG: "oguljeni trupac smreke"
+  STRIPPED_SPRUCE_WOOD: "oguljeno drvo smreke"
+  STRIPPED_WARPED_HYPHAE: "oguljene lude hife"
+  STRIPPED_WARPED_STEM: "oguljeni ludi stručak"
+  STRUCTURE_BLOCK: "strukturni blok"
+  STRUCTURE_VOID: "strukturna praznina"
+  SUGAR_CANE: "šećerna trska"
+  SUNFLOWER: "suncokret"
+  SUSPICIOUS_GRAVEL: "sumnjivi šljunak"
+  SUSPICIOUS_SAND: "sumnjivi pijesak"
+  SWEET_BERRY_BUSH: "grm slatkih bobica"
+  TALL_GRASS: "visoka trava"
+  TALL_SEAGRASS: "visoka morska trava"
+  TARGET: "meta"
+  TERRACOTTA: "terakota"
+  TINTED_GLASS: "obojeno staklo"
+  TNT: "tnt"
+  TORCH: "baklja"
+  TORCHFLOWER: "bakljocvijet"
+  TORCHFLOWER_CROP: "usjev bakljocvijeta"
+  TRAPPED_CHEST: "škrinja sa zamkom"
+  TRIAL_SPAWNER: "izazovni stvarač"
+  TRIPWIRE: "nagazna žica"
+  TRIPWIRE_HOOK: "kuka za nagaznu žicu"
+  TUBE_CORAL: "cjevasti koralj"
+  TUBE_CORAL_BLOCK: "blok cjevastog koralja"
+  TUBE_CORAL_FAN: "cjevasti kožasti koralj"
+  TUBE_CORAL_WALL_FAN: "bočni cjevasti kožasti koralj"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "ploča od cigala od tufa"
+  TUFF_BRICK_STAIRS: "stube od cigala od tufa"
+  TUFF_BRICK_WALL: "zid od cigala od tufa"
+  TUFF_BRICKS: "cigle od tufa"
+  TUFF_SLAB: "ploča od tufa"
+  TUFF_STAIRS: "stube od tufa"
+  TUFF_WALL: "zid od tufa"
+  TURTLE_EGG: "kornjačino jaje"
+  TWISTING_VINES: "uvrnute lijane"
+  TWISTING_VINES_PLANT: "biljka uvrnutih lijana"
+  VERDANT_FROGLIGHT: "zeleni žabokrijes"
+  VINE: "lijane"
+  VOID_AIR: "zrak praznine"
+  WALL_TORCH: "zidna baklja"
+  WARPED_BUTTON: "ludi gumb"
+  WARPED_DOOR: "luda vrata"
+  WARPED_FENCE: "luda ograda"
+  WARPED_FENCE_GATE: "vrata za ludu ogradu"
+  WARPED_FUNGUS: "luda gljiva"
+  WARPED_HANGING_SIGN: "ludi viseći znak"
+  WARPED_HYPHAE: "lude hife"
+  WARPED_NYLIUM: "ludi necelij"
+  WARPED_PLANKS: "lude daske"
+  WARPED_PRESSURE_PLATE: "luda nagazna ploča"
+  WARPED_ROOTS: "ludo korijenje"
+  WARPED_SIGN: "ludi znak"
+  WARPED_SLAB: "luda ploča"
+  WARPED_STAIRS: "lude stube"
+  WARPED_STEM: "ludi stručak"
+  WARPED_TRAPDOOR: "luda podna vrata"
+  WARPED_WALL_HANGING_SIGN: "ludi viseći zidni znak"
+  WARPED_WALL_SIGN: "ludi zidni znak"
+  WARPED_WART_BLOCK: "blok ludog lišaja"
+  WATER: "voda"
+  WATER_CAULDRON: "kotao s vodom"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "voštani bakreni blok"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "voštani rezani bakar"
+  WAXED_CUT_COPPER_SLAB: "voštana ploča od rezanog bakra"
+  WAXED_CUT_COPPER_STAIRS: "voštane stepenice od rezanog bakra"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "voštani izloženi bakar"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "voštani izloženi rezani bakar"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "ploča od voštanog izloženog rezanog bakra"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "stube od voštanog izloženog rezanog bakra"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "voštani oksidirani bakar"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "voštani oksidirani rezani bakar"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "ploča od voštanog oksidiranog rezanog bakra"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "stube od voštanog oksidiranog rezanog bakra"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "voštani korodirani bakar"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "rezani voštani korodirani bakar"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "polublok od rezanog voštanog korodiranog bakra"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "stube od rezanog voštanog korodiranog bakra"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "korodirani bakar"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "rezani korodirani bakar"
+  WEATHERED_CUT_COPPER_SLAB: "polublok od rezanog korodiranog bakra"
+  WEATHERED_CUT_COPPER_STAIRS: "stepenice od rezanog korodiranog bakra"
+  WEEPING_VINES: "tužne lijane"
+  WEEPING_VINES_PLANT: "biljka tužnih lijana"
+  WET_SPONGE: "mokra spužva"
+  WHEAT: "usjevi pšenice"
+  WHITE_BANNER: "bijela zastava"
+  WHITE_BED: "bijeli krevet"
+  WHITE_CANDLE: "bijela svijeća"
+  WHITE_CANDLE_CAKE: "torta s bijelom svijećom"
+  WHITE_CARPET: "bijeli tepih"
+  WHITE_CONCRETE: "bijeli beton"
+  WHITE_CONCRETE_POWDER: "bijeli prah betona"
+  WHITE_GLAZED_TERRACOTTA: "bijela glazirana terakota"
+  WHITE_SHULKER_BOX: "bijela shulker kutija"
+  WHITE_STAINED_GLASS: "bijelo staklo"
+  WHITE_STAINED_GLASS_PANE: "bijela staklena ploča"
+  WHITE_TERRACOTTA: "bijela terakota"
+  WHITE_TULIP: "bijeli tulipan"
+  WHITE_WOOL: "bijela vuna"
+  WITHER_ROSE: "wither ruža"
+  WITHER_SKELETON_SKULL: "lubanja wither kostura"
+  WITHER_SKELETON_WALL_SKULL: "zidna lubanja wither kostura"
+  YELLOW_BANNER: "žuta zastava"
+  YELLOW_BED: "žuti krevet"
+  YELLOW_CANDLE: "žuta svijeća"
+  YELLOW_CANDLE_CAKE: "torta sa žutom svijećom"
+  YELLOW_CARPET: "žuti tepih"
+  YELLOW_CONCRETE: "žuti beton"
+  YELLOW_CONCRETE_POWDER: "žuti prah betona"
+  YELLOW_GLAZED_TERRACOTTA: "žuta glazirana terakota"
+  YELLOW_SHULKER_BOX: "žuta shulker kutija"
+  YELLOW_STAINED_GLASS: "žuto staklo"
+  YELLOW_STAINED_GLASS_PANE: "žuta staklena ploča"
+  YELLOW_TERRACOTTA: "žuta terakota"
+  YELLOW_WOOL: "žuta vuna"
+  ZOMBIE_HEAD: "glava zombija"
+  ZOMBIE_WALL_HEAD: "zidna glava zombija"
+  ACACIA_BOAT: "čamac od akacije"
+  ACACIA_CHEST_BOAT: "čamac od akacije sa škrinjom"
+  ALLAY_SPAWN_EGG: "jaje za stvaranje plavka"
+  AMETHYST_SHARD: "krhotina ametista"
+  ANGLER_POTTERY_SHARD: "krhotina lončanice ribič"
+  ANGLER_POTTERY_SHERD: "krhotina lončanice ribič"
+  APPLE: "jabuka"
+  ARCHER_POTTERY_SHARD: "krhotina lončanice strijelac"
+  ARCHER_POTTERY_SHERD: "krhotina lončanice strijelac"
+  ARMOR_STAND: "postolje za oklop"
+  ARMS_UP_POTTERY_SHARD: "krhotina lončanice zabava"
+  ARMS_UP_POTTERY_SHERD: "krhotina lončanice zabava"
+  ARROW: "strijela"
+  AXOLOTL_BUCKET: "kanta s aksolotlom"
+  AXOLOTL_SPAWN_EGG: "jaje za stvaranje aksolotla"
+  BAKED_POTATO: "pečeni krumpir"
+  BAMBOO_CHEST_RAFT: "splav od bambusa sa škrinjom"
+  BAMBOO_RAFT: "splav od bambusa"
+  BAT_SPAWN_EGG: "jaje za stvaranje šišmiša"
+  BEE_SPAWN_EGG: "jaje za stvaranje pčele"
+  BEEF: "sirova govedina"
+  BEETROOT: "cikla"
+  BEETROOT_SEEDS: "sjemenke cikle"
+  BEETROOT_SOUP: "juha od cikle"
+  BIRCH_BOAT: "čamac od breze"
+  BIRCH_CHEST_BOAT: "čamac od breze sa škrinjom"
+  BLACK_DYE: "crna boja"
+  BLADE_POTTERY_SHARD: "krhotina lončanice oštrica"
+  BLADE_POTTERY_SHERD: "krhotina lončanice oštrica"
+  BLAZE_POWDER: "bljeskov prah"
+  BLAZE_ROD: "bljeskov štap"
+  BLAZE_SPAWN_EGG: "jaje za stvaranje bljeska"
+  BLUE_DYE: "plava boja"
+  BONE: "kost"
+  BONE_MEAL: "koštano brašno"
+  BOOK: "knjiga"
+  BOW: "luk"
+  BOWL: "zdjela"
+  BREAD: "kruh"
+  BREEZE_SPAWN_EGG: "jaje za stvaranje lahora"
+  BREWER_POTTERY_SHARD: "krhotina lončanice napitak"
+  BREWER_POTTERY_SHERD: "krhotina lončanice napitak"
+  BRICK: "cigla"
+  BROWN_DYE: "smeđa boja"
+  BRUSH: "kist"
+  BUCKET: "kanta"
+  BUNDLE: "svežanj"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "krhotina lončanice požar"
+  BURN_POTTERY_SHERD: "krhotina lončanice požar"
+  CAMEL_SPAWN_EGG: "jaje za stvaranje deve"
+  CARROT: "mrkva"
+  CARROT_ON_A_STICK: "mrkva na štapu"
+  CAT_SPAWN_EGG: "jaje za stvaranje mačke"
+  CAVE_SPIDER_SPAWN_EGG: "jaje za stvaranje špiljskog pauka"
+  CHAINMAIL_BOOTS: "lančane čizme"
+  CHAINMAIL_CHESTPLATE: "lančani prsni oklop"
+  CHAINMAIL_HELMET: "lančani šljem"
+  CHAINMAIL_LEGGINGS: "lančane gamaše"
+  CHARCOAL: "drveni ugljen"
+  CHERRY_BOAT: "čamac od trešnje"
+  CHERRY_CHEST_BOAT: "čamac od trešnje sa škrinjom"
+  CHEST_MINECART: "vagon sa škrinjom"
+  CHICKEN: "sirova piletina"
+  CHICKEN_SPAWN_EGG: "jaje za stvaranje kokoši"
+  CHORUS_FRUIT: "voće chorusa"
+  CLAY_BALL: "glinena kuglica"
+  CLOCK: "sat"
+  COAL: "ugljen"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  COCOA_BEANS: "sjemenke kakaa"
+  COD: "sirovi bakalar"
+  COD_BUCKET: "kanta s bakalarom"
+  COD_SPAWN_EGG: "jaje za stvaranje bakalara"
+  COMMAND_BLOCK_MINECART: "vagon s naredbenim blokom"
+  COMPASS: "kompas"
+  COOKED_BEEF: "odrezak"
+  COOKED_CHICKEN: "pečena piletina"
+  COOKED_COD: "kuhani bakalar"
+  COOKED_MUTTON: "pečena janjetina"
+  COOKED_PORKCHOP: "pečena svinjetina"
+  COOKED_RABBIT: "pečena zečetina"
+  COOKED_SALMON: "kuhani losos"
+  COOKIE: "kolačić"
+  COPPER_INGOT: "bakrena poluga"
+  COW_SPAWN_EGG: "jaje za stvaranje krave"
+  CREEPER_BANNER_PATTERN: "uzorak zastave"
+  CREEPER_BANNER_PATTERN_DESC: "lik creepera"
+  CREEPER_SPAWN_EGG: "jaje za stvaranje creepera"
+  CROSSBOW: "samostrijel"
+  CROSSBOW_PROJECTILE: "projektil:"
+  CYAN_DYE: "tirkizna boja"
+  DANGER_POTTERY_SHARD: "krhotina lončanice opasnost"
+  DANGER_POTTERY_SHERD: "krhotina lončanice opasnost"
+  DARK_OAK_BOAT: "čamac od tamnog hrasta"
+  DARK_OAK_CHEST_BOAT: "čamac od tamnog hrasta sa škrinjom"
+  DEBUG_STICK: "štap otklanjanja grešaka"
+  DEBUG_STICK_EMPTY: "%s nema postavki"
+  DEBUG_STICK_SELECT: "odabrano „%s“ (%s)"
+  DEBUG_STICK_UPDATE: "„%s“ na %s"
+  DIAMOND: "dijamant"
+  DIAMOND_AXE: "dijamantna sjekira"
+  DIAMOND_BOOTS: "dijamantne čizme"
+  DIAMOND_CHESTPLATE: "dijamantni prsni oklop"
+  DIAMOND_HELMET: "dijamantni šljem"
+  DIAMOND_HOE: "dijamantna motika"
+  DIAMOND_HORSE_ARMOR: "dijamantni konjski oklop"
+  DIAMOND_LEGGINGS: "dijamantne gamaše"
+  DIAMOND_PICKAXE: "dijamantni kramp"
+  DIAMOND_SHOVEL: "dijamantna lopata"
+  DIAMOND_SWORD: "dijamantni mač"
+  DISC_FRAGMENT_5: "komad diska"
+  DISC_FRAGMENT_5_DESC: "glazbeni disk – 5"
+  DOLPHIN_SPAWN_EGG: "jaje za stvaranje dupina"
+  DONKEY_SPAWN_EGG: "jaje za stvaranje magarca"
+  DRAGON_BREATH: "zmajev dah"
+  DRIED_KELP: "osušeni kelp"
+  DROWNED_SPAWN_EGG: "jaje za stvaranje utopljenika"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  ECHO_SHARD: "krhotina jeke"
+  EGG: "jaje"
+  ELDER_GUARDIAN_SPAWN_EGG: "jaje za stvaranje drevnog čuvara"
+  ELYTRA: "elitre"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "začarana knjiga"
+  ENCHANTED_GOLDEN_APPLE: "začarana zlatna jabuka"
+  END_CRYSTAL: "end kristal"
+  ENDER_DRAGON_SPAWN_EGG: "jaje za stvaranje ender zmaja"
+  ENDER_EYE: "oko endera"
+  ENDER_PEARL: "ender biser"
+  ENDERMAN_SPAWN_EGG: "jaje za stvaranje endermana"
+  ENDERMITE_SPAWN_EGG: "jaje za stvaranje endermita"
+  EVOKER_SPAWN_EGG: "jaje za stvaranje prizivatelja"
+  EXPERIENCE_BOTTLE: "bočica čarolije"
+  EXPLORER_POTTERY_SHARD: "krhotina lončanice istraživač"
+  EXPLORER_POTTERY_SHERD: "krhotina lončanice istraživač"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  FEATHER: "pero"
+  FERMENTED_SPIDER_EYE: "fermentirano paukovo oko"
+  FILLED_MAP: "karta"
+  FIRE_CHARGE: "vatrena kugla"
+  FIREWORK_ROCKET: "vatrometna raketa"
+  FIREWORK_ROCKET_FLIGHT: "duljina leta:"
+  FIREWORK_STAR: "vatrometna zvijezda"
+  FIREWORK_STAR_BLACK: "crna"
+  FIREWORK_STAR_BLUE: "plava"
+  FIREWORK_STAR_BROWN: "smeđa"
+  FIREWORK_STAR_CUSTOM_COLOR: "prilagođena"
+  FIREWORK_STAR_CYAN: "tirkizna"
+  FIREWORK_STAR_FADE_TO: "nestati do"
+  FIREWORK_STAR_FLICKER: "svjetlucanje"
+  FIREWORK_STAR_GRAY: "siva"
+  FIREWORK_STAR_GREEN: "zelena"
+  FIREWORK_STAR_LIGHT_BLUE: "svjetloplava"
+  FIREWORK_STAR_LIGHT_GRAY: "svjetlosiva"
+  FIREWORK_STAR_LIME: "svjetlozelena"
+  FIREWORK_STAR_MAGENTA: "roza"
+  FIREWORK_STAR_ORANGE: "narančasta"
+  FIREWORK_STAR_PINK: "ružičasta"
+  FIREWORK_STAR_PURPLE: "ljubičasta"
+  FIREWORK_STAR_RED: "crvena"
+  FIREWORK_STAR_SHAPE: "nepoznat oblik"
+  FIREWORK_STAR_SHAPE_BURST: "prasak"
+  FIREWORK_STAR_SHAPE_CREEPER: "oblik creepera"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "velika kugla"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "mala kugla"
+  FIREWORK_STAR_SHAPE_STAR: "zvjezdani oblik"
+  FIREWORK_STAR_TRAIL: "trag"
+  FIREWORK_STAR_WHITE: "bijela"
+  FIREWORK_STAR_YELLOW: "žuta"
+  FISHING_ROD: "štap za pecanje"
+  FLINT: "kremen"
+  FLINT_AND_STEEL: "kremen i čelik"
+  FLOWER_BANNER_PATTERN: "uzorak zastave"
+  FLOWER_BANNER_PATTERN_DESC: "lik cvijeta"
+  FOX_SPAWN_EGG: "jaje za stvaranje lisice"
+  FRIEND_POTTERY_SHARD: "krhotina lončanice prijatelj"
+  FRIEND_POTTERY_SHERD: "krhotina lončanice prijatelj"
+  FROG_SPAWN_EGG: "jaje za stvaranje žabe"
+  FURNACE_MINECART: "vagon s peći"
+  GHAST_SPAWN_EGG: "jaje za stvaranje ghasta"
+  GHAST_TEAR: "suza ghasta"
+  GLASS_BOTTLE: "staklena bočica"
+  GLISTERING_MELON_SLICE: "sjajna kriška lubenice"
+  GLOBE_BANNER_PATTERN: "uzorak zastave"
+  GLOBE_BANNER_PATTERN_DESC: "globus"
+  GLOW_BERRIES: "svjetleće bobice"
+  GLOW_INK_SAC: "svjetleća tinta"
+  GLOW_ITEM_FRAME: "svjetleći okvir"
+  GLOW_SQUID_SPAWN_EGG: "jaje za stvaranje svjetleće lignje"
+  GLOWSTONE_DUST: "svjetlucava prašina"
+  GOAT_HORN: "kozji rog"
+  GOAT_SPAWN_EGG: "jaje za stvaranje koze"
+  GOLD_INGOT: "zlatna poluga"
+  GOLD_NUGGET: "grumen zlata"
+  GOLDEN_APPLE: "zlatna jabuka"
+  GOLDEN_AXE: "zlatna sjekira"
+  GOLDEN_BOOTS: "zlatne čizme"
+  GOLDEN_CARROT: "zlatna mrkva"
+  GOLDEN_CHESTPLATE: "zlatni prsni oklop"
+  GOLDEN_HELMET: "zlatni šljem"
+  GOLDEN_HOE: "zlatna motika"
+  GOLDEN_HORSE_ARMOR: "zlatni konjski oklop"
+  GOLDEN_LEGGINGS: "zlatne gamaše"
+  GOLDEN_PICKAXE: "zlatni kramp"
+  GOLDEN_SHOVEL: "zlatna lopata"
+  GOLDEN_SWORD: "zlatni mač"
+  GRAY_DYE: "siva boja"
+  GREEN_DYE: "zelena boja"
+  GUARDIAN_SPAWN_EGG: "jaje za stvaranje čuvara"
+  GUNPOWDER: "barut"
+  HEART_OF_THE_SEA: "srce mora"
+  HEART_POTTERY_SHARD: "krhotina lončanice srce"
+  HEART_POTTERY_SHERD: "krhotina lončanice srce"
+  HEARTBREAK_POTTERY_SHARD: "krhotina lončanice srcolom"
+  HEARTBREAK_POTTERY_SHERD: "krhotina lončanice srcolom"
+  HOGLIN_SPAWN_EGG: "jaje za stvaranje hoglina"
+  HONEY_BOTTLE: "bočica meda"
+  HONEYCOMB: "saće"
+  HOPPER_MINECART: "vagon s lijevkom"
+  HORSE_SPAWN_EGG: "jaje za stvaranje konja"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  HOWL_POTTERY_SHARD: "krhotina lončanice zavijanje"
+  HOWL_POTTERY_SHERD: "krhotina lončanice zavijanje"
+  HUSK_SPAWN_EGG: "jaje za stvaranje pustinjskog zombija"
+  INK_SAC: "crna tinta"
+  IRON_AXE: "željezna sjekira"
+  IRON_BOOTS: "željezne čizme"
+  IRON_CHESTPLATE: "željezni prsni oklop"
+  IRON_GOLEM_SPAWN_EGG: "jaje za stvaranje željeznog čuvara"
+  IRON_HELMET: "željezni šljem"
+  IRON_HOE: "željezna motika"
+  IRON_HORSE_ARMOR: "željezni konjski oklop"
+  IRON_INGOT: "željezna poluga"
+  IRON_LEGGINGS: "željezne gamaše"
+  IRON_NUGGET: "grumen željeza"
+  IRON_PICKAXE: "željezni kramp"
+  IRON_SHOVEL: "željezna lopata"
+  IRON_SWORD: "željezni mač"
+  ITEM_FRAME: "okvir"
+  JUNGLE_BOAT: "čamac od prašumskog drva"
+  JUNGLE_CHEST_BOAT: "čamac od prašumskog drva sa škrinjom"
+  KNOWLEDGE_BOOK: "knjiga znanja"
+  LAPIS_LAZULI: "lazulit"
+  LAVA_BUCKET: "kanta s lavom"
+  LEAD: "povodac"
+  LEATHER: "koža"
+  LEATHER_BOOTS: "kožne čizme"
+  LEATHER_CHESTPLATE: "kožna tunika"
+  LEATHER_HELMET: "kožna kapa"
+  LEATHER_HORSE_ARMOR: "kožni konjski oklop"
+  LEATHER_LEGGINGS: "kožne hlače"
+  LIGHT_BLUE_DYE: "svjetloplava boja"
+  LIGHT_GRAY_DYE: "svjetlosiva boja"
+  LIME_DYE: "svjetlozelena boja"
+  LINGERING_POTION: "dugotrajni napitak"
+  LINGERING_POTION_EFFECT_AWKWARD: "čudan dugotrajni napitak"
+  LINGERING_POTION_EFFECT_EMPTY: "dugotrajni neizradiv napitak"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "dugotrajni napitak otpornosti na vatru"
+  LINGERING_POTION_EFFECT_HARMING: "dugotrajni napitak štete"
+  LINGERING_POTION_EFFECT_HEALING: "dugotrajni napitak liječenja"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "dugotrajni napitak nevidljivosti"
+  LINGERING_POTION_EFFECT_LEAPING: "dugotrajni napitak skakanja"
+  LINGERING_POTION_EFFECT_LEVITATION: "dugotrajni napitak lebdenja"
+  LINGERING_POTION_EFFECT_LUCK: "dugotrajni napitak sreće"
+  LINGERING_POTION_EFFECT_MUNDANE: "jednostavni dugotrajni napitak"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "dugotrajni napitak noćnog vida"
+  LINGERING_POTION_EFFECT_POISON: "dugotrajni otrovni napitak"
+  LINGERING_POTION_EFFECT_REGENERATION: "dugotrajni napitak regeneracije"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "dugotrajni napitak sporog padanja"
+  LINGERING_POTION_EFFECT_SLOWNESS: "dugotrajni napitak sporosti"
+  LINGERING_POTION_EFFECT_STRENGTH: "dugotrajni napitak snage"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "dugotrajni napitak brzine"
+  LINGERING_POTION_EFFECT_THICK: "gusti dugotrajni napitak"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "dugotrajni napitak gospodara kornjača"
+  LINGERING_POTION_EFFECT_WATER: "dugotrajna boca vode"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "dugotrajni napitak podvodnog disanja"
+  LINGERING_POTION_EFFECT_WEAKNESS: "dugotrajni napitak slabosti"
+  LLAMA_SPAWN_EGG: "jaje za stvaranje ljame"
+  LODESTONE_COMPASS: "kompas za magnetit"
+  MAGENTA_DYE: "roza boja"
+  MAGMA_CREAM: "magmasta kuglica"
+  MAGMA_CUBE_SPAWN_EGG: "jaje za stvaranje magma kocke"
+  MANGROVE_BOAT: "čamac od mangrova"
+  MANGROVE_CHEST_BOAT: "čamac od mangrova sa škrinjom"
+  MAP: "prazna karta"
+  MELON_SEEDS: "sjemenke lubenice"
+  MELON_SLICE: "kriška lubenice"
+  MILK_BUCKET: "kanta s mlijekom"
+  MINECART: "vagon"
+  MINER_POTTERY_SHARD: "krhotina lončanice rudar"
+  MINER_POTTERY_SHERD: "krhotina lončanice rudar"
+  MOJANG_BANNER_PATTERN: "uzorak zastave"
+  MOJANG_BANNER_PATTERN_DESC: "stvar"
+  MOOSHROOM_SPAWN_EGG: "jaje za stvaranje mooshrooma"
+  MOURNER_POTTERY_SHARD: "krhotina lončanice žal"
+  MOURNER_POTTERY_SHERD: "krhotina lončanice žal"
+  MULE_SPAWN_EGG: "jaje za stvaranje mazge"
+  MUSHROOM_STEW: "gulaš od gljiva"
+  MUSIC_DISC_11: "glazbeni disk"
+  MUSIC_DISC_11_DESC: "c418 – 11"
+  MUSIC_DISC_13: "glazbeni disk"
+  MUSIC_DISC_13_DESC: "c418 – 13"
+  MUSIC_DISC_5: "glazbeni disk"
+  MUSIC_DISC_5_DESC: "samuel åberg – 5"
+  MUSIC_DISC_BLOCKS: "glazbeni disk"
+  MUSIC_DISC_BLOCKS_DESC: "c418 – blocks"
+  MUSIC_DISC_CAT: "glazbeni disk"
+  MUSIC_DISC_CAT_DESC: "c418 – cat"
+  MUSIC_DISC_CHIRP: "glazbeni disk"
+  MUSIC_DISC_CHIRP_DESC: "c418 – chirp"
+  MUSIC_DISC_FAR: "glazbeni disk"
+  MUSIC_DISC_FAR_DESC: "c418 – far"
+  MUSIC_DISC_MALL: "glazbeni disk"
+  MUSIC_DISC_MALL_DESC: "c418 – mall"
+  MUSIC_DISC_MELLOHI: "glazbeni disk"
+  MUSIC_DISC_MELLOHI_DESC: "c418 – mellohi"
+  MUSIC_DISC_OTHERSIDE: "glazbeni disk"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine – otherside"
+  MUSIC_DISC_PIGSTEP: "glazbeni disk"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine – pigstep"
+  MUSIC_DISC_RELIC: "glazbeni disk"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "glazbeni disk"
+  MUSIC_DISC_STAL_DESC: "c418 – stal"
+  MUSIC_DISC_STRAD: "glazbeni disk"
+  MUSIC_DISC_STRAD_DESC: "c418 – strad"
+  MUSIC_DISC_WAIT: "glazbeni disk"
+  MUSIC_DISC_WAIT_DESC: "c418 – wait"
+  MUSIC_DISC_WARD: "glazbeni disk"
+  MUSIC_DISC_WARD_DESC: "c418 – ward"
+  MUTTON: "sirova janjetina"
+  NAME_TAG: "oznaka s imenom"
+  NAUTILUS_SHELL: "ljuska nautilusa"
+  NETHER_BRICK: "nether cigla"
+  NETHER_STAR: "nether zvijezda"
+  NETHERITE_AXE: "netheritna sjekira"
+  NETHERITE_BOOTS: "netheritne čizme"
+  NETHERITE_CHESTPLATE: "netheritni prsni oklop"
+  NETHERITE_HELMET: "netheritni šljem"
+  NETHERITE_HOE: "netheritna motika"
+  NETHERITE_INGOT: "netheritna poluga"
+  NETHERITE_LEGGINGS: "netheritne gamaše"
+  NETHERITE_PICKAXE: "netheritni kramp"
+  NETHERITE_SCRAP: "komadić netherita"
+  NETHERITE_SHOVEL: "netheritna lopata"
+  NETHERITE_SWORD: "netheritni mač"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "predložak za kovanje"
+  OAK_BOAT: "čamac od hrasta"
+  OAK_CHEST_BOAT: "čamac od hrasta sa škrinjom"
+  OCELOT_SPAWN_EGG: "jaje za stvaranje ocelota"
+  ORANGE_DYE: "narančasta boja"
+  PAINTING: "slika"
+  PANDA_SPAWN_EGG: "jaje za stvaranje pande"
+  PAPER: "papir"
+  PARROT_SPAWN_EGG: "jaje za stvaranje papige"
+  PHANTOM_MEMBRANE: "fantomska membrana"
+  PHANTOM_SPAWN_EGG: "jaje za stvaranje fantoma"
+  PIG_SPAWN_EGG: "jaje za stvaranje svinje"
+  PIGLIN_BANNER_PATTERN: "uzorak zastave"
+  PIGLIN_BANNER_PATTERN_DESC: "lik njuške"
+  PIGLIN_BRUTE_SPAWN_EGG: "jaje za stvaranje surovog piglina"
+  PIGLIN_SPAWN_EGG: "jaje za stvaranje piglina"
+  PILLAGER_SPAWN_EGG: "jaje za stvaranje razbojnika"
+  PINK_DYE: "ružičasta boja"
+  PITCHER_POD: "čahura vrčonoše"
+  PLENTY_POTTERY_SHARD: "krhotina lončanice obilje"
+  PLENTY_POTTERY_SHERD: "krhotina lončanice obilje"
+  POISONOUS_POTATO: "otrovni krumpir"
+  POLAR_BEAR_SPAWN_EGG: "jaje za stvaranje polarnog medvjeda"
+  POPPED_CHORUS_FRUIT: "ispucano voće chorusa"
+  PORKCHOP: "sirova svinjetina"
+  POTATO: "krumpir"
+  POTION: "napitak"
+  POTION_EFFECT_AWKWARD: "čudni napitak"
+  POTION_EFFECT_EMPTY: "neizradiv napitak"
+  POTION_EFFECT_FIRE_RESISTANCE: "napitak zaštite od vatre"
+  POTION_EFFECT_HARMING: "napitak štete"
+  POTION_EFFECT_HEALING: "napitak liječenja"
+  POTION_EFFECT_INVISIBILITY: "napitak nevidljivosti"
+  POTION_EFFECT_LEAPING: "napitak skakanja"
+  POTION_EFFECT_LEVITATION: "napitak lebdenja"
+  POTION_EFFECT_LUCK: "napitak sreće"
+  POTION_EFFECT_MUNDANE: "jednostavni napitak"
+  POTION_EFFECT_NIGHT_VISION: "napitak noćnog vida"
+  POTION_EFFECT_POISON: "otrovni napitak"
+  POTION_EFFECT_REGENERATION: "napitak regeneracije"
+  POTION_EFFECT_SLOW_FALLING: "napitak polaganog padanja"
+  POTION_EFFECT_SLOWNESS: "napitak sporosti"
+  POTION_EFFECT_STRENGTH: "napitak snage"
+  POTION_EFFECT_SWIFTNESS: "napitak brzine"
+  POTION_EFFECT_THICK: "gusti napitak"
+  POTION_EFFECT_TURTLE_MASTER: "napitak gospodara kornjača"
+  POTION_EFFECT_WATER: "bočica vode"
+  POTION_EFFECT_WATER_BREATHING: "napitak podvodnog disanja"
+  POTION_EFFECT_WEAKNESS: "napitak slabosti"
+  POTTERY_SHARD_ARCHER: "krhotina lončanice strijelac"
+  POTTERY_SHARD_ARMS_UP: "krhotina lončanice zabava"
+  POTTERY_SHARD_PRIZE: "krhotina lončanice nagrada"
+  POTTERY_SHARD_SKULL: "krhotina lončanice lubanja"
+  POWDER_SNOW_BUCKET: "kanta sa snježnim prahom"
+  PRISMARINE_CRYSTALS: "kristali prizmarina"
+  PRISMARINE_SHARD: "krhotina prizmarina"
+  PRIZE_POTTERY_SHARD: "krhotina lončanice nagrada"
+  PRIZE_POTTERY_SHERD: "krhotina lončanice nagrada"
+  PUFFERFISH: "napuhača"
+  PUFFERFISH_BUCKET: "kanta s napuhačom"
+  PUFFERFISH_SPAWN_EGG: "jaje za stvaranje napuhače"
+  PUMPKIN_PIE: "pita od bundeve"
+  PUMPKIN_SEEDS: "sjemenke bundeve"
+  PURPLE_DYE: "ljubičasta boja"
+  QUARTZ: "nether kvarc"
+  RABBIT: "sirova zečetina"
+  RABBIT_FOOT: "zečja šapa"
+  RABBIT_HIDE: "zečja koža"
+  RABBIT_SPAWN_EGG: "jaje za stvaranje zeca"
+  RABBIT_STEW: "gulaš od zeca"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  RAVAGER_SPAWN_EGG: "jaje za stvaranje razarača"
+  RAW_COPPER: "sirovi bakar"
+  RAW_GOLD: "sirovo zlato"
+  RAW_IRON: "sirovo željezo"
+  RECOVERY_COMPASS: "povratni kompas"
+  RED_DYE: "crvena boja"
+  REDSTONE: "redstone prašina"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  ROTTEN_FLESH: "trulo meso"
+  SADDLE: "sedlo"
+  SALMON: "sirovi losos"
+  SALMON_BUCKET: "kanta s lososom"
+  SALMON_SPAWN_EGG: "jaje za stvaranje lososa"
+  SCUTE: "ljuska"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  SHEAF_POTTERY_SHARD: "krhotina lončanice snop"
+  SHEAF_POTTERY_SHERD: "krhotina lončanice snop"
+  SHEARS: "škare"
+  SHEEP_SPAWN_EGG: "jaje za stvaranje ovce"
+  SHELTER_POTTERY_SHARD: "krhotina lončanice zaklon"
+  SHELTER_POTTERY_SHERD: "krhotina lončanice zaklon"
+  SHIELD: "štit"
+  SHIELD_BLACK: "crni štit"
+  SHIELD_BLUE: "plavi štit"
+  SHIELD_BROWN: "smeđi štit"
+  SHIELD_CYAN: "tirkizni štit"
+  SHIELD_GRAY: "sivi štit"
+  SHIELD_GREEN: "zeleni štit"
+  SHIELD_LIGHT_BLUE: "svjetloplavi štit"
+  SHIELD_LIGHT_GRAY: "svjetlosivi štit"
+  SHIELD_LIME: "svjetlozeleni štit"
+  SHIELD_MAGENTA: "roza štit"
+  SHIELD_ORANGE: "narančasti štit"
+  SHIELD_PINK: "ružičasti štit"
+  SHIELD_PURPLE: "ljubičasti štit"
+  SHIELD_RED: "crveni štit"
+  SHIELD_WHITE: "bijeli štit"
+  SHIELD_YELLOW: "žuti štit"
+  SHULKER_SHELL: "shulkerova ljuska"
+  SHULKER_SPAWN_EGG: "jaje za stvaranje shulkera"
+  SIGN: "znak"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  SILVERFISH_SPAWN_EGG: "jaje za stvaranje srebrne ribice"
+  SKELETON_HORSE_SPAWN_EGG: "jaje za stvaranje kosturskog konja"
+  SKELETON_SPAWN_EGG: "jaje za stvaranje kostura"
+  SKULL_BANNER_PATTERN: "uzorak zastave"
+  SKULL_BANNER_PATTERN_DESC: "lik lubanje"
+  SKULL_POTTERY_SHARD: "krhotina lončanice lubanja"
+  SKULL_POTTERY_SHERD: "krhotina lončanice lubanja"
+  SLIME_BALL: "ljigava kuglica"
+  SLIME_SPAWN_EGG: "jaje za stvaranje ljigavca"
+  SMITHING_TEMPLATE: "predložak za kovanje"
+  SMITHING_TEMPLATE_APPLIES_TO: "odnosi se na:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "dodaj polugu ili kristal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "oklop"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "dodaj dio oklopa"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "poluge i kristali"
+  SMITHING_TEMPLATE_INGREDIENTS: "sastojci:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "dodaj netheritnu polugu"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "dijamantna oprema"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "dodaj dijamantni oklop oružje ili alat"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheritna poluga"
+  SMITHING_TEMPLATE_UPGRADE: "nadogradnje: "
+  SNIFFER_SPAWN_EGG: "jaje za stvaranje njuška"
+  SNORT_POTTERY_SHARD: "krhotina lončanice miris"
+  SNORT_POTTERY_SHERD: "krhotina lončanice miris"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  SNOW_GOLEM_SPAWN_EGG: "jaje za stvaranje snježnog čuvara"
+  SNOWBALL: "snježna gruda"
+  SPECTRAL_ARROW: "spektralna strijela"
+  SPIDER_EYE: "paukovo oko"
+  SPIDER_SPAWN_EGG: "jaje za stvaranje pauka"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  SPLASH_POTION: "prskajući napitak"
+  SPLASH_POTION_EFFECT_AWKWARD: "čudni prskajući napitak"
+  SPLASH_POTION_EFFECT_EMPTY: "neizradiv prskajući napitak"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "prskajući napitak zaštite od vatre"
+  SPLASH_POTION_EFFECT_HARMING: "prskajući napitak štete"
+  SPLASH_POTION_EFFECT_HEALING: "prskajući napitak liječenja"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "prskajući napitak nevidljivosti"
+  SPLASH_POTION_EFFECT_LEAPING: "prskajući napitak skakanja"
+  SPLASH_POTION_EFFECT_LEVITATION: "prskajući napitak lebdenja"
+  SPLASH_POTION_EFFECT_LUCK: "prskajući napitak sreće"
+  SPLASH_POTION_EFFECT_MUNDANE: "jednostavni prskajući napitak"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "prskajući napitak noćnog vida"
+  SPLASH_POTION_EFFECT_POISON: "prskajući otrovni napitak"
+  SPLASH_POTION_EFFECT_REGENERATION: "prskajući napitak regeneracije"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "prskajući napitak polaganog padanja"
+  SPLASH_POTION_EFFECT_SLOWNESS: "prskajući napitak sporosti"
+  SPLASH_POTION_EFFECT_STRENGTH: "prskajući napitak snage"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "prskajući napitak brzine"
+  SPLASH_POTION_EFFECT_THICK: "gusti prskajući napitak"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "prskajući napitak gospodara kornjača"
+  SPLASH_POTION_EFFECT_WATER: "prskajuća boca vode"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "prskajući napitak podvodnog disanja"
+  SPLASH_POTION_EFFECT_WEAKNESS: "prskajući napitak slabosti"
+  SPRUCE_BOAT: "čamac od smreke"
+  SPRUCE_CHEST_BOAT: "čamac od smreke sa škrinjom"
+  SPYGLASS: "dalekozor"
+  SQUID_SPAWN_EGG: "jaje za stvaranje lignje"
+  STICK: "štap"
+  STONE_AXE: "kamena sjekira"
+  STONE_HOE: "kamena motika"
+  STONE_PICKAXE: "kameni kramp"
+  STONE_SHOVEL: "kamena lopata"
+  STONE_SWORD: "kameni mač"
+  STRAY_SPAWN_EGG: "jaje za stvaranje lutalice"
+  STRIDER_SPAWN_EGG: "jaje za stvaranje paklenog šetača"
+  STRING: "nit"
+  SUGAR: "šećer"
+  SUSPICIOUS_STEW: "sumnjivi gulaš"
+  SWEET_BERRIES: "slatke bobice"
+  TADPOLE_BUCKET: "kanta s punoglavcem"
+  TADPOLE_SPAWN_EGG: "jaje za stvaranje punoglavca"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  TIPPED_ARROW: "umočena strijela"
+  TIPPED_ARROW_EFFECT_AWKWARD: "umočena strijela"
+  TIPPED_ARROW_EFFECT_EMPTY: "neizradiva umočena strijela"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "strijela zaštite od vatre"
+  TIPPED_ARROW_EFFECT_HARMING: "strijela štete"
+  TIPPED_ARROW_EFFECT_HEALING: "strijela liječenja"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "strijela nevidljivosti"
+  TIPPED_ARROW_EFFECT_LEAPING: "strijela skakanja"
+  TIPPED_ARROW_EFFECT_LEVITATION: "strijela lebdenja"
+  TIPPED_ARROW_EFFECT_LUCK: "strijela sreće"
+  TIPPED_ARROW_EFFECT_MUNDANE: "umočena strijela"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "strijela noćnog vida"
+  TIPPED_ARROW_EFFECT_POISON: "otrovna strijela"
+  TIPPED_ARROW_EFFECT_REGENERATION: "strijela regeneracije"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "strijela polaganog padanja"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "strijela usporavanja"
+  TIPPED_ARROW_EFFECT_STRENGTH: "strijela snage"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "strijela brzine"
+  TIPPED_ARROW_EFFECT_THICK: "umočena strijela"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "strijela gospodara kornjača"
+  TIPPED_ARROW_EFFECT_WATER: "strijela prskanja"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "strijela podvodnog disanja"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "strijela slabosti"
+  TNT_MINECART: "vagon s tnt-om"
+  TORCHFLOWER_SEEDS: "sjemenke bakljocvijeta"
+  TOTEM_OF_UNDYING: "totem besmrtnosti"
+  TRADER_LLAMA_SPAWN_EGG: "jaje za stvaranje trgovčeve ljame"
+  TRIAL_KEY: "izazovni ključ"
+  TRIDENT: "trozubac"
+  TROPICAL_FISH: "tropska riba"
+  TROPICAL_FISH_BUCKET: "kanta s tropskom ribom"
+  TROPICAL_FISH_SPAWN_EGG: "jaje za stvaranje tropske ribe"
+  TURTLE_HELMET: "kornjačin oklop"
+  TURTLE_SPAWN_EGG: "jaje za stvaranje kornjače"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  VEX_SPAWN_EGG: "jaje za stvaranje dosađivača"
+  VILLAGER_SPAWN_EGG: "jaje za stvaranje seljanina"
+  VINDICATOR_SPAWN_EGG: "jaje za stvaranje osvetnika"
+  WANDERING_TRADER_SPAWN_EGG: "jaje za stvaranje lutajućeg trgovca"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  WARDEN_SPAWN_EGG: "jaje za stvaranje stražara"
+  WARPED_FUNGUS_ON_A_STICK: "luda gljiva na štapu"
+  WATER_BUCKET: "kanta s vodom"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  WHEAT: "pšenica"
+  WHEAT_SEEDS: "sjemenke pšenice"
+  WHITE_DYE: "bijela boja"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "predložak za kovanje"
+  WITCH_SPAWN_EGG: "jaje za stvaranje vještice"
+  WITHER_SKELETON_SPAWN_EGG: "jaje za stvaranje wither kostura"
+  WITHER_SPAWN_EGG: "jaje za stvaranje withera"
+  WOLF_SPAWN_EGG: "jaje za stvaranje vuka"
+  WOODEN_AXE: "drvena sjekira"
+  WOODEN_HOE: "drvena motika"
+  WOODEN_PICKAXE: "drveni kramp"
+  WOODEN_SHOVEL: "drvena lopata"
+  WOODEN_SWORD: "drveni mač"
+  WRITABLE_BOOK: "knjiga i pero"
+  WRITTEN_BOOK: "napisana knjiga"
+  YELLOW_DYE: "žuta boja"
+  ZOGLIN_SPAWN_EGG: "jaje za stvaranje zoglina"
+  ZOMBIE_HORSE_SPAWN_EGG: "jaje za stvaranje zombi konja"
+  ZOMBIE_SPAWN_EGG: "jaje za stvaranje zombija"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "jaje za stvaranje zombi seljanina"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "jaje za stvaranje zombificiranog piglina"
+  CHEST: "kada je na tijelu:"
+  FEET: "kada je na stopalima:"
+  HEAD: "kada je na glavi:"
+  LEGS: "kada je na nogama:"
+  MAINHAND: "kada je u glavnoj ruci:"
+  OFFHAND: "kada je u sporednoj ruci:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

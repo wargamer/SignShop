@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akaziazko botoia"
+  ACACIA_DOOR: "akaziazko atea"
+  ACACIA_FENCE: "akaziazko hesia"
+  ACACIA_FENCE_GATE: "akaziazko hesi atea"
+  ACACIA_HANGING_SIGN: "akaziaren zurezko kartel esekia"
+  ACACIA_LEAVES: "akazia hostoak"
+  ACACIA_LOG: "akazia enborra"
+  ACACIA_PLANKS: "akazia oholak"
+  ACACIA_PRESSURE_PLATE: "akaziazko presio plaka"
+  ACACIA_SAPLING: "akazia kimetza"
+  ACACIA_SIGN: "akaziazko kartela"
+  ACACIA_SLAB: "akaziazko lauza"
+  ACACIA_STAIRS: "akaziazko eskailerak"
+  ACACIA_TRAPDOOR: "akaziazko tranpola"
+  ACACIA_WALL_HANGING_SIGN: "kartel esekia akaziaren zurezko horman"
+  ACACIA_WALL_SIGN: "akaziazko kartela horman"
+  ACACIA_WOOD: "akazia egurra"
+  ACTIVATOR_RAIL: "aktibatzailedun erraila"
+  AIR: "airea"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "ametista blokea"
+  AMETHYST_CLUSTER: "ametista-mordoa"
+  ANCIENT_DEBRIS: "antzinako hondakinak"
+  ANDESITE: "andesita"
+  ANDESITE_SLAB: "andesitazko lauza"
+  ANDESITE_STAIRS: "andesita eskailerak"
+  ANDESITE_WALL: "andesitazko pareta"
+  ANVIL: "ingude"
+  ATTACHED_MELON_STEM: "angurri zurtoin lotuta"
+  ATTACHED_PUMPKIN_STEM: "erantsitako kalabaza zurtoina"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "azalearen hostoak"
+  AZURE_BLUET: "bluet urdin argia"
+  BAMBOO: "banbua"
+  BAMBOO_BLOCK: "banbu blokea"
+  BAMBOO_BUTTON: "banbuzko zurezko botoia"
+  BAMBOO_DOOR: "bambuko atea"
+  BAMBOO_FENCE: "banbuzko egurrezko hesia"
+  BAMBOO_FENCE_GATE: "banbuzko egurrezko hesi-atea"
+  BAMBOO_HANGING_SIGN: "banbuzko kartel esekia"
+  BAMBOO_MOSAIC: "bambuko mosaikoa"
+  BAMBOO_MOSAIC_SLAB: "bambuko taulako mosaikoa"
+  BAMBOO_MOSAIC_STAIRS: "bambuko taulako mosaikoaren eskailerak"
+  BAMBOO_PLANKS: "bambuko oholak"
+  BAMBOO_PRESSURE_PLATE: "banbuzko zurezko presio-plaka"
+  BAMBOO_SAPLING: "banbu aldaxka"
+  BAMBOO_SIGN: "bambuko kartela"
+  BAMBOO_SLAB: "bambuko taula"
+  BAMBOO_STAIRS: "bambuko eskailerak"
+  BAMBOO_TRAPDOOR: "banbuzko zurezko eskotila"
+  BAMBOO_WALL_HANGING_SIGN: "banbuzko hormako kartel esekia"
+  BAMBOO_WALL_SIGN: "bambuko horma-zeinua"
+  BANNER_BASE_BLACK: "eremu guztiz beltza"
+  BANNER_BASE_BLUE: "eremu guztiz urdina"
+  BANNER_BASE_BROWN: "eremu guztiz marroia"
+  BANNER_BASE_CYAN: "eremu guztiz ziana"
+  BANNER_BASE_GRAY: "eremu guztiz grisa"
+  BANNER_BASE_GREEN: "eremu guztiz berdea"
+  BANNER_BASE_LIGHT_BLUE: "eremu guztiz urdin argia"
+  BANNER_BASE_LIGHT_GRAY: "eremu guztiz gris argia"
+  BANNER_BASE_LIME: "eremu guztiz lima"
+  BANNER_BASE_MAGENTA: "eremu guztiz magenta"
+  BANNER_BASE_ORANGE: "eremu guztiz laranja"
+  BANNER_BASE_PINK: "eremu guztiz arrosa"
+  BANNER_BASE_PURPLE: "eremu guztiz morea"
+  BANNER_BASE_RED: "eremu guztiz gorria"
+  BANNER_BASE_WHITE: "eremu guztiz zuria"
+  BANNER_BASE_YELLOW: "eremu guztiz horia"
+  BANNER_BORDER_BLACK: "ertz beltza"
+  BANNER_BORDER_BLUE: "ertz urdina"
+  BANNER_BORDER_BROWN: "ertz marroia"
+  BANNER_BORDER_CYAN: "zian koloreko ertza"
+  BANNER_BORDER_GRAY: "ertz grisa"
+  BANNER_BORDER_GREEN: "ertz berdea"
+  BANNER_BORDER_LIGHT_BLUE: "ertz urdin argia"
+  BANNER_BORDER_LIGHT_GRAY: "ertz gris argia"
+  BANNER_BORDER_LIME: "lima koloreko ertza"
+  BANNER_BORDER_MAGENTA: "ertz magenta"
+  BANNER_BORDER_ORANGE: "ertz laranja"
+  BANNER_BORDER_PINK: "ertz arrosa"
+  BANNER_BORDER_PURPLE: "ertz morea"
+  BANNER_BORDER_RED: "ertz gorria"
+  BANNER_BORDER_WHITE: "ertz zuria"
+  BANNER_BORDER_YELLOW: "ertz horia"
+  BANNER_BRICKS_BLACK: "igeltzari ohial beltza"
+  BANNER_BRICKS_BLUE: "igeltzari ohial urdina"
+  BANNER_BRICKS_BROWN: "igeltzari ohial marroia"
+  BANNER_BRICKS_CYAN: "igeltzari ohial ziana"
+  BANNER_BRICKS_GRAY: "igeltzari ohial grisa"
+  BANNER_BRICKS_GREEN: "igeltzari ohial berdea"
+  BANNER_BRICKS_LIGHT_BLUE: "igeltzari ohial urdin argia"
+  BANNER_BRICKS_LIGHT_GRAY: "igeltzari ohial gris argia"
+  BANNER_BRICKS_LIME: "igeltzari ohial lima"
+  BANNER_BRICKS_MAGENTA: "igeltzari ohial magenta"
+  BANNER_BRICKS_ORANGE: "igeltzari ohial naranja"
+  BANNER_BRICKS_PINK: "igeltzari ohial arrosa"
+  BANNER_BRICKS_PURPLE: "igeltzari ohial morea"
+  BANNER_BRICKS_RED: "igeltzari ohial gorria"
+  BANNER_BRICKS_WHITE: "igeltzari ohial zuria"
+  BANNER_BRICKS_YELLOW: "igeltzari ohial horia"
+  BANNER_CIRCLE_BLACK: "errondel beltza"
+  BANNER_CIRCLE_BLUE: "errondel urdina"
+  BANNER_CIRCLE_BROWN: "errondel marroia"
+  BANNER_CIRCLE_CYAN: "errondel ziana"
+  BANNER_CIRCLE_GRAY: "errondel grisa"
+  BANNER_CIRCLE_GREEN: "errondel berdea"
+  BANNER_CIRCLE_LIGHT_BLUE: "errondel urdin argia"
+  BANNER_CIRCLE_LIGHT_GRAY: "errondel gris argia"
+  BANNER_CIRCLE_LIME: "errondel lima"
+  BANNER_CIRCLE_MAGENTA: "errondel magenta"
+  BANNER_CIRCLE_ORANGE: "errondel laranja"
+  BANNER_CIRCLE_PINK: "errondel larrosa"
+  BANNER_CIRCLE_PURPLE: "errondel morea"
+  BANNER_CIRCLE_RED: "errondel gorria"
+  BANNER_CIRCLE_WHITE: "errondel zuria"
+  BANNER_CIRCLE_YELLOW: "errondel horia"
+  BANNER_CREEPER_BLACK: "creeper estanpatu beltza"
+  BANNER_CREEPER_BLUE: "creeper estanpatu urdina"
+  BANNER_CREEPER_BROWN: "creeper estanpatu marroia"
+  BANNER_CREEPER_CYAN: "creeper estanpatu ziana"
+  BANNER_CREEPER_GRAY: "creeper estanpatu grisa"
+  BANNER_CREEPER_GREEN: "creeper estanpatu berdea"
+  BANNER_CREEPER_LIGHT_BLUE: "creeper estanpatu urdin argia"
+  BANNER_CREEPER_LIGHT_GRAY: "creeper estanpatu gris argia"
+  BANNER_CREEPER_LIME: "creeper estanpatu lima"
+  BANNER_CREEPER_MAGENTA: "creeper estanpatu magenta"
+  BANNER_CREEPER_ORANGE: "creeper estanpatu naranja"
+  BANNER_CREEPER_PINK: "creeper estanpatu arrosa"
+  BANNER_CREEPER_PURPLE: "creeper estanpatu morea"
+  BANNER_CREEPER_RED: "creeper estanpatu gorria"
+  BANNER_CREEPER_WHITE: "creeper estanpatu zuria"
+  BANNER_CREEPER_YELLOW: "creeper estanpatu horia"
+  BANNER_CROSS_BLACK: "gurutze beltza"
+  BANNER_CROSS_BLUE: "gurutze urdina"
+  BANNER_CROSS_BROWN: "gurutze marroia"
+  BANNER_CROSS_CYAN: "gurutze ziana"
+  BANNER_CROSS_GRAY: "gurutze grisa"
+  BANNER_CROSS_GREEN: "gurutze berdea"
+  BANNER_CROSS_LIGHT_BLUE: "gurutze urdin argia"
+  BANNER_CROSS_LIGHT_GRAY: "gurutze gris argia"
+  BANNER_CROSS_LIME: "gurutze lima"
+  BANNER_CROSS_MAGENTA: "gurutze magenta"
+  BANNER_CROSS_ORANGE: "gurutze laranja"
+  BANNER_CROSS_PINK: "gurutze arrosa"
+  BANNER_CROSS_PURPLE: "gurutze morea"
+  BANNER_CROSS_RED: "gurutze gorria"
+  BANNER_CROSS_WHITE: "gurutze zuria"
+  BANNER_CROSS_YELLOW: "gurutze horia"
+  BANNER_CURLY_BORDER_BLACK: "hortzdun ertz beltza"
+  BANNER_CURLY_BORDER_BLUE: "hortzdun ertz urdina"
+  BANNER_CURLY_BORDER_BROWN: "hortzdun ertz marroia"
+  BANNER_CURLY_BORDER_CYAN: "hortzdun ertz ziana"
+  BANNER_CURLY_BORDER_GRAY: "hortzdun bordura grisa"
+  BANNER_CURLY_BORDER_GREEN: "hortzdun ertz berdea"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "hortzdun bordura urdin argia"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "hortzdun bordura gris argia"
+  BANNER_CURLY_BORDER_LIME: "hortzdun bordura lima"
+  BANNER_CURLY_BORDER_MAGENTA: "hortzdun bordura magenta"
+  BANNER_CURLY_BORDER_ORANGE: "hortzdun bordura laranja"
+  BANNER_CURLY_BORDER_PINK: "hortzdun bordura arrosa"
+  BANNER_CURLY_BORDER_PURPLE: "hortzdun ertz morea"
+  BANNER_CURLY_BORDER_RED: "hortzdun ertz gorria"
+  BANNER_CURLY_BORDER_WHITE: "hortzdun bordura zuria"
+  BANNER_CURLY_BORDER_YELLOW: "hortzdun bordura horia"
+  BANNER_DIAGONAL_LEFT_BLACK: "ezker diagonal beltza"
+  BANNER_DIAGONAL_LEFT_BLUE: "ezker diagonal urdina"
+  BANNER_DIAGONAL_LEFT_BROWN: "ezker diagonal marroia"
+  BANNER_DIAGONAL_LEFT_CYAN: "ezker diagonal ziana"
+  BANNER_DIAGONAL_LEFT_GRAY: "ezker diagonal grisa"
+  BANNER_DIAGONAL_LEFT_GREEN: "ezker diagonal berdea"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "blue light per bend sinister"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "ezker diagonal gris argia"
+  BANNER_DIAGONAL_LEFT_LIME: "ezker diagonal lima"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "magenta per bend sinister"
+  BANNER_DIAGONAL_LEFT_ORANGE: "orange per bend sinister"
+  BANNER_DIAGONAL_LEFT_PINK: "ezker diagonal arrosa"
+  BANNER_DIAGONAL_LEFT_PURPLE: "ezker diagonal morea"
+  BANNER_DIAGONAL_LEFT_RED: "ezker diagonal gorria"
+  BANNER_DIAGONAL_LEFT_WHITE: "white per bend sinister"
+  BANNER_DIAGONAL_LEFT_YELLOW: "ezker diagonal horia"
+  BANNER_DIAGONAL_RIGHT_BLACK: "beltza bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_BLUE: "urdina bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_BROWN: "marroia bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_CYAN: "zian bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grisa bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_GREEN: "berdea bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "urdin argia bihurgunean"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "gris argia bihurguneko"
+  BANNER_DIAGONAL_RIGHT_LIME: "karea bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "magenta per bend"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oranje bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_PINK: "arrosa bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "morea bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_RED: "gorria bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_WHITE: "zuria bihurgune bakoitzeko"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "horia bihurgune bakoitzeko"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "black per bend alderantzikatua"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "urdina bihurguneko alderantzikatua"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brown per bend alderantzikatua"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "cyan per bend alderantzikatua"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "goi-ezker diagonal grisa"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "berdea bihurgune bakoitzeko alderantzikatuta"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "goi-ezker diagonal urdin argia"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "goi-ezker diagonal gris argia"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "goi-ezker diagonal lima"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "goi-ezker diagonal magenta"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "goi-ezker diagonal laranja"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "goi-ezker diagonal arrosa"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "morea bihurguneko alderantzikatua"
+  BANNER_DIAGONAL_UP_LEFT_RED: "gorabehera bakoitzeko gorria alderantzikatuta"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "goi-ezker diagonal zuria"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "goi-ezker diagonal horia"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "goi-eskuin diagonal beltza"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "goi-eskuin diagonal urdina"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "goi-eskuin diagonal marroia"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "goi-eskuin diagonal ziana"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "goi-eskuin diagonal grisa"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "goi-eskuin diagonal berdea"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "goi-eskuin diagnal urdin argia"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "goi-eskuin diagonal gris argia"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "goi-eskuin diagonal lima"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "goi-eskuin diagonal magenta"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "goi-eskuin diagonal arrosa"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "goi-eskuin diagonal arrosa"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "goi-eskuin diagonal morea"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "goi-eskuin diagonal gorria"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "goi-eskuin diagonal zuria"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "goi-eskuin diagonal horia"
+  BANNER_FLOWER_BLACK: "lore karga beltza"
+  BANNER_FLOWER_BLUE: "lore karga urdina"
+  BANNER_FLOWER_BROWN: "lore karga marroia"
+  BANNER_FLOWER_CYAN: "lore karga ziana"
+  BANNER_FLOWER_GRAY: "lore karga grisa"
+  BANNER_FLOWER_GREEN: "lore karga berdea"
+  BANNER_FLOWER_LIGHT_BLUE: "lore karga urdin argia"
+  BANNER_FLOWER_LIGHT_GRAY: "lore karga gris argia"
+  BANNER_FLOWER_LIME: "lore karga lima"
+  BANNER_FLOWER_MAGENTA: "lore karga magenta"
+  BANNER_FLOWER_ORANGE: "lore karga laranja"
+  BANNER_FLOWER_PINK: "lore karga arrosa"
+  BANNER_FLOWER_PURPLE: "lore karga morea"
+  BANNER_FLOWER_RED: "lore karga gorria"
+  BANNER_FLOWER_WHITE: "lore karga zuria"
+  BANNER_FLOWER_YELLOW: "lore karga horia"
+  BANNER_GLOBE_BLACK: "planeta beltza"
+  BANNER_GLOBE_BLUE: "planeta urdina"
+  BANNER_GLOBE_BROWN: "planeta marroia"
+  BANNER_GLOBE_CYAN: "planeta ziana"
+  BANNER_GLOBE_GRAY: "planeta grisa"
+  BANNER_GLOBE_GREEN: "planeta berdea"
+  BANNER_GLOBE_LIGHT_BLUE: "planeta urdin argia"
+  BANNER_GLOBE_LIGHT_GRAY: "planeta-estanpatu gris argia"
+  BANNER_GLOBE_LIME: "planeta lima"
+  BANNER_GLOBE_MAGENTA: "planeta magenta"
+  BANNER_GLOBE_ORANGE: "planeta naranja"
+  BANNER_GLOBE_PINK: "planeta arrosa"
+  BANNER_GLOBE_PURPLE: "planeta morea"
+  BANNER_GLOBE_RED: "planeta gorria"
+  BANNER_GLOBE_WHITE: "planeta zuria"
+  BANNER_GLOBE_YELLOW: "planeta horia"
+  BANNER_GRADIENT_BLACK: "gradiente beltza"
+  BANNER_GRADIENT_BLUE: "gradiente urdina"
+  BANNER_GRADIENT_BROWN: "gradiente marroi"
+  BANNER_GRADIENT_CYAN: "gradiente zian"
+  BANNER_GRADIENT_GRAY: "gradiente grisa"
+  BANNER_GRADIENT_GREEN: "gradiente berde"
+  BANNER_GRADIENT_LIGHT_BLUE: "gradiente urdin argia"
+  BANNER_GRADIENT_LIGHT_GRAY: "gradiente gris argia"
+  BANNER_GRADIENT_LIME: "gradiente lima"
+  BANNER_GRADIENT_MAGENTA: "gradiente magenta"
+  BANNER_GRADIENT_ORANGE: "gradiente laranja"
+  BANNER_GRADIENT_PINK: "gradiente arrosa"
+  BANNER_GRADIENT_PURPLE: "gradiente purpura"
+  BANNER_GRADIENT_RED: "gradiente gorria"
+  BANNER_GRADIENT_WHITE: "gradiente zuria"
+  BANNER_GRADIENT_YELLOW: "gradiente horia"
+  BANNER_GRADIENT_UP_BLACK: "gradiente beltz basean"
+  BANNER_GRADIENT_UP_BLUE: "gradiente urdin basean"
+  BANNER_GRADIENT_UP_BROWN: "gradiente marroi basean"
+  BANNER_GRADIENT_UP_CYAN: "gradiente zian basean"
+  BANNER_GRADIENT_UP_GRAY: "gradiente gris basean"
+  BANNER_GRADIENT_UP_GREEN: "gradiente berde basean"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "gradiente urdin argia basean"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "gradiente gris argia basean"
+  BANNER_GRADIENT_UP_LIME: "gradiente lima basean"
+  BANNER_GRADIENT_UP_MAGENTA: "gradiente magenta basean"
+  BANNER_GRADIENT_UP_ORANGE: "gradiente laranja basean"
+  BANNER_GRADIENT_UP_PINK: "gradiente arrosa basean"
+  BANNER_GRADIENT_UP_PURPLE: "gradiente purpura basean"
+  BANNER_GRADIENT_UP_RED: "gradiente gorri basean"
+  BANNER_GRADIENT_UP_WHITE: "gradiente zuria basean"
+  BANNER_GRADIENT_UP_YELLOW: "gradiente horia basean"
+  BANNER_HALF_HORIZONTAL_BLACK: "black per fess"
+  BANNER_HALF_HORIZONTAL_BLUE: "urdina gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_BROWN: "marroi bakoitzeko fess"
+  BANNER_HALF_HORIZONTAL_CYAN: "zian gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_GRAY: "grisa gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_GREEN: "green per fess"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "urdin argia gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "gris argia gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_LIME: "lima gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "magenta gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_ORANGE: "naranja gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_PINK: "arrosa gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_PURPLE: "morea gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_RED: "red per fess"
+  BANNER_HALF_HORIZONTAL_WHITE: "zuria gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_YELLOW: "horia gerriko bakoitzeko"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "black fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blue fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brown fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cyan per fess alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grey fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "berdea alderantzikatuta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "alde urdin argia alderantzikatuta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "grey argia alderantzikatutako fessako bakoitzeko"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "fessea bakoitzeko karea alderantzikatuta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "aldaera bakoitzeko magenta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "laranja fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "arrosa fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "morea fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "red fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "zuria fess per alderantzikatua"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "horia alderantzikatuta"
+  BANNER_HALF_VERTICAL_BLACK: "goiko erdi beltza"
+  BANNER_HALF_VERTICAL_BLUE: "urdina pale-rentzat"
+  BANNER_HALF_VERTICAL_BROWN: "goiko erdi marroia"
+  BANNER_HALF_VERTICAL_CYAN: "zian zurbil"
+  BANNER_HALF_VERTICAL_GRAY: "grisa zurbil"
+  BANNER_HALF_VERTICAL_GREEN: "goiko erdi berdea"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "urdin argia zurbil"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "gris argia zurbil"
+  BANNER_HALF_VERTICAL_LIME: "karea paletarako"
+  BANNER_HALF_VERTICAL_MAGENTA: "magenta pale-rentzat"
+  BANNER_HALF_VERTICAL_ORANGE: "laranja zurbil"
+  BANNER_HALF_VERTICAL_PINK: "pink per pale"
+  BANNER_HALF_VERTICAL_PURPLE: "morea zurbil"
+  BANNER_HALF_VERTICAL_RED: "goiko erdi gorria"
+  BANNER_HALF_VERTICAL_WHITE: "zuriak zurbil"
+  BANNER_HALF_VERTICAL_YELLOW: "horia zurbil"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "beltza zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "urdina alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "alderantzizko zurbil bakoitzeko marroia"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "zian zuriak alderantzikatuta"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grisa zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "berdea zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "urdina argia alderantzizko bakoitzeko"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "gris argia alderantzizko zurbil bakoitzeko"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "karea pale alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "alderantzizko magenta bakoitzeko"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "laranja zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "arrosa zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "morea zurbil alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "gorria alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "zuria pale alderantzikatua"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "horia zurbil alderantzikatua"
+  BANNER_MOJANG_BLACK: "gauza beltza"
+  BANNER_MOJANG_BLUE: "gauza urdina"
+  BANNER_MOJANG_BROWN: "gauza marroia"
+  BANNER_MOJANG_CYAN: "zian koloreko gauza"
+  BANNER_MOJANG_GRAY: "gauza grisa"
+  BANNER_MOJANG_GREEN: "gauza berdea"
+  BANNER_MOJANG_LIGHT_BLUE: "gauza urdin argia"
+  BANNER_MOJANG_LIGHT_GRAY: "gauza gris argia"
+  BANNER_MOJANG_LIME: "lima koloreko gauza"
+  BANNER_MOJANG_MAGENTA: "gauza magenta"
+  BANNER_MOJANG_ORANGE: "gauza laranja"
+  BANNER_MOJANG_PINK: "gauza arrosa"
+  BANNER_MOJANG_PURPLE: "gauza morea"
+  BANNER_MOJANG_RED: "gauza gorria"
+  BANNER_MOJANG_WHITE: "gauza zuria"
+  BANNER_MOJANG_YELLOW: "gauza horia"
+  BANNER_PIGLIN_BLACK: "mutur beltza"
+  BANNER_PIGLIN_BLUE: "mutur urdina"
+  BANNER_PIGLIN_BROWN: "mutur marroia"
+  BANNER_PIGLIN_CYAN: "mutur ziana"
+  BANNER_PIGLIN_GRAY: "mutur grisa"
+  BANNER_PIGLIN_GREEN: "mutur berdea"
+  BANNER_PIGLIN_LIGHT_BLUE: "mutur urdin argia"
+  BANNER_PIGLIN_LIGHT_GRAY: "mutur gris argia"
+  BANNER_PIGLIN_LIME: "mutur lima"
+  BANNER_PIGLIN_MAGENTA: "mutur magenta"
+  BANNER_PIGLIN_ORANGE: "mutur laranja"
+  BANNER_PIGLIN_PINK: "mutur arrosa"
+  BANNER_PIGLIN_PURPLE: "mutur morea"
+  BANNER_PIGLIN_RED: "mutur gorria"
+  BANNER_PIGLIN_WHITE: "mutur zuria"
+  BANNER_PIGLIN_YELLOW: "mutur horia"
+  BANNER_RHOMBUS_BLACK: "errombo beltza"
+  BANNER_RHOMBUS_BLUE: "errombo urdina"
+  BANNER_RHOMBUS_BROWN: "errombo marroia"
+  BANNER_RHOMBUS_CYAN: "errombo ziana"
+  BANNER_RHOMBUS_GRAY: "errombo grisa"
+  BANNER_RHOMBUS_GREEN: "errombo berdea"
+  BANNER_RHOMBUS_LIGHT_BLUE: "errombo urdin argia"
+  BANNER_RHOMBUS_LIGHT_GRAY: "errombo gris argia"
+  BANNER_RHOMBUS_LIME: "errombo lima"
+  BANNER_RHOMBUS_MAGENTA: "errombo magenta"
+  BANNER_RHOMBUS_ORANGE: "errombo laranja"
+  BANNER_RHOMBUS_PINK: "errombo arrosa"
+  BANNER_RHOMBUS_PURPLE: "errombo morea"
+  BANNER_RHOMBUS_RED: "errombo gorria"
+  BANNER_RHOMBUS_WHITE: "errombo zuria"
+  BANNER_RHOMBUS_YELLOW: "errombo horia"
+  BANNER_SKULL_BLACK: "garezur karga beltza"
+  BANNER_SKULL_BLUE: "garezur karga urdina"
+  BANNER_SKULL_BROWN: "garezur karga marroia"
+  BANNER_SKULL_CYAN: "garezur karga ziana"
+  BANNER_SKULL_GRAY: "garezur karga grisa"
+  BANNER_SKULL_GREEN: "garezur karga berdea"
+  BANNER_SKULL_LIGHT_BLUE: "garezur karga urdin argia"
+  BANNER_SKULL_LIGHT_GRAY: "garezur karga gris argia"
+  BANNER_SKULL_LIME: "garezur karga lima"
+  BANNER_SKULL_MAGENTA: "garezur karga magenta"
+  BANNER_SKULL_ORANGE: "garezur karga naranja"
+  BANNER_SKULL_PINK: "garezur karga arrosa"
+  BANNER_SKULL_PURPLE: "garezur karga morea"
+  BANNER_SKULL_RED: "garezur karga gorria"
+  BANNER_SKULL_WHITE: "garezur karga zuria"
+  BANNER_SKULL_YELLOW: "garezur karga horia"
+  BANNER_SMALL_STRIPES_BLACK: "marradun beltza"
+  BANNER_SMALL_STRIPES_BLUE: "marradun urdina"
+  BANNER_SMALL_STRIPES_BROWN: "marradun marroia"
+  BANNER_SMALL_STRIPES_CYAN: "marradun ziana"
+  BANNER_SMALL_STRIPES_GRAY: "marradun grisa"
+  BANNER_SMALL_STRIPES_GREEN: "marradun berdea"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "marradun urdin argia"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "marradun gris argia"
+  BANNER_SMALL_STRIPES_LIME: "marradun lima"
+  BANNER_SMALL_STRIPES_MAGENTA: "marradun magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "marradun laranja"
+  BANNER_SMALL_STRIPES_PINK: "marradun arrosa"
+  BANNER_SMALL_STRIPES_PURPLE: "marradun morea"
+  BANNER_SMALL_STRIPES_RED: "marradun gorria"
+  BANNER_SMALL_STRIPES_WHITE: "marradun zuria"
+  BANNER_SMALL_STRIPES_YELLOW: "marradun horia"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "behe ezker kantoi beltza"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "behe ezker kantoi urdina"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "behe ezker kantoi marroia"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "behe ezker kantoi ziana"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "behe ezker kantoi grisa"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "behe ezker kantoi berdea"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "behe ezker kantoi urdin argia"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "behe ezker kantoi gris argia"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "behe ezker kantoi lima"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "behe ezker kantoi magenta"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "behe ezker kantoi laranja"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "behe ezker kantoi arrosa"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "behe ezker kantoi morea"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "behe ezker kantoi gorria"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "behe ezker kantoi zuria"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "behe ezker kantoi horia"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "behe eskuin kantoi beltza"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "behe eskuin kantoi urdina"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "behe eskuin kantoi marroia"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "behe eskuin kantoi ziana"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "behe eskuin kantoi grisa"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "behe eskuin kantoi berdea"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "behe eskuin kantoi urdin argia"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "behe eskuin kantoi berde argia"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "behe eskuin kantoi lima"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "behe eskuin kantoi magenta"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "behe eskuin kantoi laranja"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "behe eskuin kantoi arrosa"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "behe eskuin kantoi morea"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "behe eskuin kantoi gorria"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "behe eskuin kantoi zuria"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "behe eskuin kantoi horia"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "goi ezker kantoi beltza"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "goi ezker kantoi urdina"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "goi ezker kantoi marroia"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "goi ezker kantoi ziana"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "goi ezker kantoi grisa"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "goi ezker kantoi berdea"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "goi ezker kantoi urdin argia"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "goi ezker kantoi gris argia"
+  BANNER_SQUARE_TOP_LEFT_LIME: "goi ezker kantoi lima"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "goi ezker kantoi magenta"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "goi ezker kantoi laranja"
+  BANNER_SQUARE_TOP_LEFT_PINK: "goi ezker kantoi arrosa"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "goi ezker kantoi morea"
+  BANNER_SQUARE_TOP_LEFT_RED: "goi ezker kantoi gorria"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "goi ezker kantoi zuria"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "goi ezker kantoi horia"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "goi eskuin kantoi beltza"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "goi eskuin kantoi urdina"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "goi eskuin kantoi marroia"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "goi eskuin kantoi ziana"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "goi eskuin kantoi grisa"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "goi eskuin kantoi berdea"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "goi eskuin kantoi urdin argia"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "goi eskuin kantoi gris argia"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "goi eskuin kantoi lima"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "goi eskuin kantoi magenta"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "goi eskuin kantoi laranja"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "goi eskuin kantoi arrosa"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "goi eskuin kantoi morea"
+  BANNER_SQUARE_TOP_RIGHT_RED: "goi eskuin kantoi gorria"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "goi eskuin kantoi zuria"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "goi eskuin kantoi horia"
+  BANNER_STRAIGHT_CROSS_BLACK: "gurutz beltza"
+  BANNER_STRAIGHT_CROSS_BLUE: "gurutz urdina"
+  BANNER_STRAIGHT_CROSS_BROWN: "gurutz marroia"
+  BANNER_STRAIGHT_CROSS_CYAN: "gurutz ziana"
+  BANNER_STRAIGHT_CROSS_GRAY: "gurutz grisa"
+  BANNER_STRAIGHT_CROSS_GREEN: "gurutz berdea"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "gurutz urdin argia"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "gurutz gris argia"
+  BANNER_STRAIGHT_CROSS_LIME: "gurutz berde lima"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "gurutz magenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "gurutz laranja"
+  BANNER_STRAIGHT_CROSS_PINK: "gurutz arroza"
+  BANNER_STRAIGHT_CROSS_PURPLE: "gurutz morea"
+  BANNER_STRAIGHT_CROSS_RED: "gurutz gorria"
+  BANNER_STRAIGHT_CROSS_WHITE: "gurutz zuria"
+  BANNER_STRAIGHT_CROSS_YELLOW: "gurutz horia"
+  BANNER_STRIPE_BOTTOM_BLACK: "oinarri beltza"
+  BANNER_STRIPE_BOTTOM_BLUE: "oinarri urdina"
+  BANNER_STRIPE_BOTTOM_BROWN: "oinarri marroia"
+  BANNER_STRIPE_BOTTOM_CYAN: "oinarri ziana"
+  BANNER_STRIPE_BOTTOM_GRAY: "oinarri grisa"
+  BANNER_STRIPE_BOTTOM_GREEN: "oinarri berdea"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "oinarri urdin argia"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "oinarri gris argia"
+  BANNER_STRIPE_BOTTOM_LIME: "oinarri lima"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "oinarri magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oinarri laranja"
+  BANNER_STRIPE_BOTTOM_PINK: "oinarri arrosa"
+  BANNER_STRIPE_BOTTOM_PURPLE: "oinarri morea"
+  BANNER_STRIPE_BOTTOM_RED: "oinarri gorria"
+  BANNER_STRIPE_BOTTOM_WHITE: "oinarri zuria"
+  BANNER_STRIPE_BOTTOM_YELLOW: "oinarri horia"
+  BANNER_STRIPE_CENTER_BLACK: "erdiko marra beltza"
+  BANNER_STRIPE_CENTER_BLUE: "erdiko marra urdina"
+  BANNER_STRIPE_CENTER_BROWN: "erdiko marra marroia"
+  BANNER_STRIPE_CENTER_CYAN: "erdiko marra ziana"
+  BANNER_STRIPE_CENTER_GRAY: "erdiko marra grisa"
+  BANNER_STRIPE_CENTER_GREEN: "erdiko marra berdea"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "erdiko marra urdin argia"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "erdiko marra gris argia"
+  BANNER_STRIPE_CENTER_LIME: "erdiko marra lima"
+  BANNER_STRIPE_CENTER_MAGENTA: "erdiko marra magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "erdiko marra laranja"
+  BANNER_STRIPE_CENTER_PINK: "erdiko marra arrosa"
+  BANNER_STRIPE_CENTER_PURPLE: "erdiko marra morea"
+  BANNER_STRIPE_CENTER_RED: "erdiko marra gorria"
+  BANNER_STRIPE_CENTER_WHITE: "erdiko marra zuria"
+  BANNER_STRIPE_CENTER_YELLOW: "erdiko marra horia"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "eskuin diagonal beltza"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "eskuin diagonal urdina"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "eskuin diagonal marroia"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "eskuin diagonal ziana"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "eskuin diagonal grisa"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "eskuin diagonal berdea"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "eskuin diagonal urdin argia"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "eskuin diagonal gris argia"
+  BANNER_STRIPE_DOWNLEFT_LIME: "eskuin diagonal lima"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "eskuin diagonal magenta"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "eskuin diagonal laranja"
+  BANNER_STRIPE_DOWNLEFT_PINK: "eskuin diagonal arrosa"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "eskuin diagonal morea"
+  BANNER_STRIPE_DOWNLEFT_RED: "eskuin diagonal gorria"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "eskuin diagonal zuria"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "eskuin diagonal horia"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "ezker diagonal beltza"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "ezker diagonal urdina"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "ezker diagonal marroia"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "ezker diagonal ziana"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "ezker diagonal grisa"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "ezker diagonal berdea"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "ezker diagonal urdin argia"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "ezker diagonal gris argia"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "ezker diagonal lima"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "ezker diagonal magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "ezker diagonal laranja"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "ezker diagonal arrosa"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "ezker diagonal morea"
+  BANNER_STRIPE_DOWNRIGHT_RED: "ezker diagonal gorria"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "ezker diagonal zuria"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "ezker diagonal horia"
+  BANNER_STRIPE_LEFT_BLACK: "ezker marra beltza"
+  BANNER_STRIPE_LEFT_BLUE: "ezker marra urdina"
+  BANNER_STRIPE_LEFT_BROWN: "ezker marra marroia"
+  BANNER_STRIPE_LEFT_CYAN: "ezker marra ziana"
+  BANNER_STRIPE_LEFT_GRAY: "ezker marra grisa"
+  BANNER_STRIPE_LEFT_GREEN: "ezker marra berdea"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "ezker marra urdin argia"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "ezker marra gris argia"
+  BANNER_STRIPE_LEFT_LIME: "ezker marra lima"
+  BANNER_STRIPE_LEFT_MAGENTA: "ezker marra magetan"
+  BANNER_STRIPE_LEFT_ORANGE: "ezker marra laranja"
+  BANNER_STRIPE_LEFT_PINK: "ezker marra arrosa"
+  BANNER_STRIPE_LEFT_PURPLE: "ezker marra morea"
+  BANNER_STRIPE_LEFT_RED: "ezker marra gorria"
+  BANNER_STRIPE_LEFT_WHITE: "ezker marra zuria"
+  BANNER_STRIPE_LEFT_YELLOW: "ezker marra horia"
+  BANNER_STRIPE_MIDDLE_BLACK: "erdiko marra horizontal beltza"
+  BANNER_STRIPE_MIDDLE_BLUE: "erdiko marra horizontal urdina"
+  BANNER_STRIPE_MIDDLE_BROWN: "erdiko marra horizontal marroia"
+  BANNER_STRIPE_MIDDLE_CYAN: "erdiko marra horizontal ziana"
+  BANNER_STRIPE_MIDDLE_GRAY: "erdiko marra horizontal grisa"
+  BANNER_STRIPE_MIDDLE_GREEN: "erdiko marra horizontal berdea"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "erdiko marra horizontal urdin argia"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "erdiko marra horizontal gris argia"
+  BANNER_STRIPE_MIDDLE_LIME: "erdiko marra horizontal lima"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "erdiko marra horizontal magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "erdiko marra horizontal laranja"
+  BANNER_STRIPE_MIDDLE_PINK: "erdiko marra horizontal arrosa"
+  BANNER_STRIPE_MIDDLE_PURPLE: "erdiko marra horizontal morea"
+  BANNER_STRIPE_MIDDLE_RED: "erdiko marra horizontal gorria"
+  BANNER_STRIPE_MIDDLE_WHITE: "erdiko marra horizontal zuria"
+  BANNER_STRIPE_MIDDLE_YELLOW: "erdiko marra horizontal horia"
+  BANNER_STRIPE_RIGHT_BLACK: "eskuin marra beltza"
+  BANNER_STRIPE_RIGHT_BLUE: "eskuin marra urdina"
+  BANNER_STRIPE_RIGHT_BROWN: "eskuin marra marroia"
+  BANNER_STRIPE_RIGHT_CYAN: "eskuin marra ziana"
+  BANNER_STRIPE_RIGHT_GRAY: "eskuin marra grisa"
+  BANNER_STRIPE_RIGHT_GREEN: "eskuin marra berdea"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "eskuin marra urdin argia"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "eskuin marra gris argia"
+  BANNER_STRIPE_RIGHT_LIME: "eskuin marra lima"
+  BANNER_STRIPE_RIGHT_MAGENTA: "eskuin marra magenta"
+  BANNER_STRIPE_RIGHT_ORANGE: "eskuin marra laranja"
+  BANNER_STRIPE_RIGHT_PINK: "eskuin marra arrosa"
+  BANNER_STRIPE_RIGHT_PURPLE: "eskuin marra morea"
+  BANNER_STRIPE_RIGHT_RED: "eskuin marra gorria"
+  BANNER_STRIPE_RIGHT_WHITE: "eskuin marra zuria"
+  BANNER_STRIPE_RIGHT_YELLOW: "eskuin marra horia"
+  BANNER_STRIPE_TOP_BLACK: "goiko alde beltza"
+  BANNER_STRIPE_TOP_BLUE: "goiko alde urdina"
+  BANNER_STRIPE_TOP_BROWN: "goiko alde marroia"
+  BANNER_STRIPE_TOP_CYAN: "goiko alde ziana"
+  BANNER_STRIPE_TOP_GRAY: "goiko alde grisa"
+  BANNER_STRIPE_TOP_GREEN: "goiko alde berdea"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "goiko alde urdin argia"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "goiko alde gris argia"
+  BANNER_STRIPE_TOP_LIME: "goiko alde lima"
+  BANNER_STRIPE_TOP_MAGENTA: "goiko alde magenta"
+  BANNER_STRIPE_TOP_ORANGE: "goiko alde laranja"
+  BANNER_STRIPE_TOP_PINK: "goiko alde arrosa"
+  BANNER_STRIPE_TOP_PURPLE: "goiko alde morea"
+  BANNER_STRIPE_TOP_RED: "goiko alde gorria"
+  BANNER_STRIPE_TOP_WHITE: "goiko alde zuria"
+  BANNER_STRIPE_TOP_YELLOW: "goiko alde horia"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "triangelu beltza"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "triangelu urdina"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "triangelu marroia"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "triangelu ziana"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "triangelu grisa"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "triangelu berdea"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "triangelu urdin argia"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "triangelu berde argia"
+  BANNER_TRIANGLE_BOTTOM_LIME: "triangelu lima"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "triangelu magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "triangelu laranja"
+  BANNER_TRIANGLE_BOTTOM_PINK: "triangelu arrosa"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "triangelu morea"
+  BANNER_TRIANGLE_BOTTOM_RED: "triangelu gorria"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "triangelu zuria"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "triangelu horia"
+  BANNER_TRIANGLE_TOP_BLACK: "triangelu alderantzikatu beltza"
+  BANNER_TRIANGLE_TOP_BLUE: "triangelu alderantzikatu urdina"
+  BANNER_TRIANGLE_TOP_BROWN: "triangelu alderantzikatu marroia"
+  BANNER_TRIANGLE_TOP_CYAN: "triangelu alderantzikatu ziana"
+  BANNER_TRIANGLE_TOP_GRAY: "triangelu alderantzikatu grisa"
+  BANNER_TRIANGLE_TOP_GREEN: "triangelu alderantzikatu berdea"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "triangelu alderantzikatu urdin argia"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "triangelu alderantzikatu gris argia"
+  BANNER_TRIANGLE_TOP_LIME: "triangelu alderantzikatu lima"
+  BANNER_TRIANGLE_TOP_MAGENTA: "triangelu alderantzikatu magenta"
+  BANNER_TRIANGLE_TOP_ORANGE: "triangelu alderantzikatu laranja"
+  BANNER_TRIANGLE_TOP_PINK: "triangelu alderantzikatu arrosa"
+  BANNER_TRIANGLE_TOP_PURPLE: "triangelu alderantzikatu morea"
+  BANNER_TRIANGLE_TOP_RED: "triangelu alderantzikatu gorria"
+  BANNER_TRIANGLE_TOP_WHITE: "triangelu alderantzikatu zuria"
+  BANNER_TRIANGLE_TOP_YELLOW: "triangelu alderantzikatu horia"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "oinarri beltzeko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "oinarri urdineko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "behe-hortz marroiak"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "oinarri zianezko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "oinarri griseko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "behe-hortz berdeak"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "oinarri urdin argiko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "oinarri gris argiko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_LIME: "oinarri limazko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "oinarri magentazko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oinarri laranjazko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_PINK: "oinarri arrosako indentazioa"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "oinarri moreko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_RED: "oinarri gorriko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "oinarri zurizko indentazioa"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "oinarri horizko indentazioa"
+  BANNER_TRIANGLES_TOP_BLACK: "goi-hortz beltzak"
+  BANNER_TRIANGLES_TOP_BLUE: "goi-hortz urdinak"
+  BANNER_TRIANGLES_TOP_BROWN: "goi-hortz marroiak"
+  BANNER_TRIANGLES_TOP_CYAN: "goi-hortz zianak"
+  BANNER_TRIANGLES_TOP_GRAY: "goi-hortz grisak"
+  BANNER_TRIANGLES_TOP_GREEN: "goi-hortz berdeak"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "goi-hortz urdin argiak"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "goi-hortz berde argiak"
+  BANNER_TRIANGLES_TOP_LIME: "goi-hortz limak"
+  BANNER_TRIANGLES_TOP_MAGENTA: "goi-hortz magentak"
+  BANNER_TRIANGLES_TOP_ORANGE: "goi-hortz laranjak"
+  BANNER_TRIANGLES_TOP_PINK: "goi-hortz arrosak"
+  BANNER_TRIANGLES_TOP_PURPLE: "goi-hortz moreak"
+  BANNER_TRIANGLES_TOP_RED: "goi-hortz gorriak"
+  BANNER_TRIANGLES_TOP_WHITE: "goi-hortz zuriak"
+  BANNER_TRIANGLES_TOP_YELLOW: "goi-hortz horiak"
+  BARREL: "barrika"
+  BARRIER: "barrera"
+  BASALT: "basaltoa"
+  BEACON: "faro"
+  BEACON_PRIMARY: "botere nagusia"
+  BEACON_SECONDARY: "botere sekundarioa"
+  BED_NO_SLEEP: "gauez edo ekaitz elektrikoetan bakarrik egin dezakezu lo"
+  BED_NOT_SAFE: "ezin duzu orain atseden hartu munstroak hurbil dabiltza"
+  BED_OBSTRUCTED: "ohe hau oztopatuta dago"
+  BED_OCCUPIED: "ohe hau okupaturik dago"
+  BED_TOO_FAR_AWAY: "agian ez duzu atseden hartuko; ohea urrunegi dago"
+  BEDROCK: "arroka-mantua"
+  BEE_NEST: "erle habia"
+  BEEHIVE: "erlauntza"
+  BEETROOTS: "erremolatxak"
+  BELL: "kanpaia"
+  BIG_DRIPLEAF: "tanta-hosto handia"
+  BIG_DRIPLEAF_STEM: "tanta-hosto zurtoin handia"
+  BIRCH_BUTTON: "urkizko botoia"
+  BIRCH_DOOR: "urkizko atea"
+  BIRCH_FENCE: "urkizko hesia"
+  BIRCH_FENCE_GATE: "urkizko hesi atea"
+  BIRCH_HANGING_SIGN: "urki-zurezko kartel esekia"
+  BIRCH_LEAVES: "urki hostoak"
+  BIRCH_LOG: "urki enborra"
+  BIRCH_PLANKS: "urki oholak"
+  BIRCH_PRESSURE_PLATE: "urkizko presio plaka"
+  BIRCH_SAPLING: "urki kimetza"
+  BIRCH_SIGN: "urkizko kartela"
+  BIRCH_SLAB: "urkizko lauza"
+  BIRCH_STAIRS: "urkizko eskailerak"
+  BIRCH_TRAPDOOR: "urkizko tranpola"
+  BIRCH_WALL_HANGING_SIGN: "urki-zurezko hormako kartel esekia"
+  BIRCH_WALL_SIGN: "urki kartela horman"
+  BIRCH_WOOD: "urki egurra"
+  BLACK_BANNER: "zutoihal beltza"
+  BLACK_BED: "ohe beltza"
+  BLACK_CANDLE: "kandela beltza"
+  BLACK_CANDLE_CAKE: "tarta kandela beltzarekin"
+  BLACK_CARPET: "beltz koloreko alfonbra"
+  BLACK_CONCRETE: "hormigoi beltza"
+  BLACK_CONCRETE_POWDER: "zementu beltza"
+  BLACK_GLAZED_TERRACOTTA: "terrakota beiraztatu beltza"
+  BLACK_SHULKER_BOX: "shulker kutxa beltza"
+  BLACK_STAINED_GLASS: "kristal beltza"
+  BLACK_STAINED_GLASS_PANE: "kristalezko panel beltza"
+  BLACK_TERRACOTTA: "terrakota beltza"
+  BLACK_WOOL: "artile beltza"
+  BLACKSTONE: "harribeltza"
+  BLACKSTONE_SLAB: "harribeltzezko lauza"
+  BLACKSTONE_STAIRS: "harribeltzezko eskailerak"
+  BLACKSTONE_WALL: "harribeltzezko horma"
+  BLAST_FURNACE: "labe garaia"
+  BLUE_BANNER: "zutoihal urdina"
+  BLUE_BED: "ohe urdina"
+  BLUE_CANDLE: "kandela urdina"
+  BLUE_CANDLE_CAKE: "tarta kandela urdinarekin"
+  BLUE_CARPET: "urdin koloreko alfonbra"
+  BLUE_CONCRETE: "hormigoi urdina"
+  BLUE_CONCRETE_POWDER: "zementu urdina"
+  BLUE_GLAZED_TERRACOTTA: "terrakota beiraztatu urdina"
+  BLUE_ICE: "izotz urdina"
+  BLUE_ORCHID: "orkide urdina"
+  BLUE_SHULKER_BOX: "shulker kutxa urdina"
+  BLUE_STAINED_GLASS: "kristal urdina"
+  BLUE_STAINED_GLASS_PANE: "kristalezko panel urdina"
+  BLUE_TERRACOTTA: "terrakota urdina"
+  BLUE_WOOL: "artile urdina"
+  BONE_BLOCK: "hezur blokea"
+  BOOKSHELF: "liburu-apalategia"
+  BRAIN_CORAL: "burmuin korala"
+  BRAIN_CORAL_BLOCK: "bizigabeko burmuin koral blokea"
+  BRAIN_CORAL_FAN: "burmuin korala"
+  BRAIN_CORAL_WALL_FAN: "brain coral hormako fan"
+  BREWING_STAND: "edabegintzarako euskarria"
+  BRICK_SLAB: "adreiluzko lauza"
+  BRICK_STAIRS: "adreiluzko eskailerak"
+  BRICK_WALL: "adreiluzko pareta"
+  BRICKS: "adreiluak"
+  BROWN_BANNER: "zutoihal marroia"
+  BROWN_BED: "ohe marroia"
+  BROWN_CANDLE: "kandela marroia"
+  BROWN_CANDLE_CAKE: "tarta kandela marroiarekin"
+  BROWN_CARPET: "marroi koloreko alfonbra"
+  BROWN_CONCRETE: "hormigoi marroia"
+  BROWN_CONCRETE_POWDER: "zementu marroia"
+  BROWN_GLAZED_TERRACOTTA: "terrakota beiraztatu marroia"
+  BROWN_MUSHROOM: "perretxiko marroia"
+  BROWN_MUSHROOM_BLOCK: "perretxiko marroizko blokea"
+  BROWN_SHULKER_BOX: "shulker kutxa marroia"
+  BROWN_STAINED_GLASS: "kristal marroia"
+  BROWN_STAINED_GLASS_PANE: "kristalezko panel marroia"
+  BROWN_TERRACOTTA: "terrakota marroia"
+  BROWN_WOOL: "artile marroia"
+  BUBBLE_COLUMN: "burbuila zutabea"
+  BUBBLE_CORAL: "hodizko korala"
+  BUBBLE_CORAL_BLOCK: "bizigabeko burbuila koral blokea"
+  BUBBLE_CORAL_FAN: "hodizko korala"
+  BUBBLE_CORAL_WALL_FAN: "bubble coral wall fan"
+  BUDDING_AMETHYST: "ametista ernamuinltzailea"
+  CACTUS: "kaktus"
+  CAKE: "tarta"
+  CALCITE: "kaltzita"
+  CALIBRATED_SCULK_SENSOR: "skulk sentsorea kalibratuta"
+  CAMPFIRE: "sutegia"
+  CANDLE: "kandela"
+  CANDLE_CAKE: "tarta kandelarekin"
+  CARROTS: "azenarioak"
+  CARTOGRAPHY_TABLE: "kartografia taula"
+  CARVED_PUMPKIN: "kalabaza tailatua"
+  CAULDRON: "lapikoa"
+  CAVE_AIR: "leize airea"
+  CAVE_VINES: "leizeko igokariak"
+  CAVE_VINES_PLANT: "leizeko mahastien landarea"
+  CHAIN: "katea"
+  CHAIN_COMMAND_BLOCK: "kate-agindu blokea"
+  CHERRY_BUTTON: "gereziondozko botoia"
+  CHERRY_DOOR: "gereziondozko atea"
+  CHERRY_FENCE: "gereziondozko hesia"
+  CHERRY_FENCE_GATE: "gereziondozko hesiaren atea"
+  CHERRY_HANGING_SIGN: "gereziondozko kartel esekia"
+  CHERRY_LEAVES: "gereziondo hostoak"
+  CHERRY_LOG: "gereziondo enborra"
+  CHERRY_PLANKS: "gereziondozko ohola"
+  CHERRY_PRESSURE_PLATE: "gereziondozko presiozko plaka"
+  CHERRY_SAPLING: "gerezizko aldaxka"
+  CHERRY_SIGN: "gerezizko seinua"
+  CHERRY_SLAB: "gerezizko lauza"
+  CHERRY_STAIRS: "gerezizko eskailereak"
+  CHERRY_TRAPDOOR: "gerezizko tranpola"
+  CHERRY_WALL_HANGING_SIGN: "gereziondozko horma zintzilikatzeko kartela"
+  CHERRY_WALL_SIGN: "gereziondozko hormako kartela"
+  CHERRY_WOOD: "gereziondozko egurra"
+  CHEST: "kutxa"
+  CHIPPED_ANVIL: "kaltetutako ingudea"
+  CHISELED_BOOKSHELF: "apalategi zizelatuta"
+  CHISELED_COPPER: "kobre zizelatuta"
+  CHISELED_DEEPSLATE: "sakonetako arbel zizelkatua"
+  CHISELED_NETHER_BRICKS: "netherreko adreilu zizelkatuak"
+  CHISELED_POLISHED_BLACKSTONE: "txartatutako harribeltz zizelkatua"
+  CHISELED_QUARTZ_BLOCK: "kuartzo zizelkatua"
+  CHISELED_RED_SANDSTONE: "hareharri gorri zizelkatua"
+  CHISELED_SANDSTONE: "hareharri zizelkatua"
+  CHISELED_STONE_BRICKS: "harrizko adreilu zizelkatuak"
+  CHISELED_TUFF: "toba zizelatuta"
+  CHISELED_TUFF_BRICKS: "zizelatutako toba adreiluak"
+  CHORUS_FLOWER: "koral lorea"
+  CHORUS_PLANT: "koral landarea"
+  CLAY: "buztina"
+  COAL_BLOCK: "ikatz blokea"
+  COAL_ORE: "ikatzezko mea"
+  COARSE_DIRT: "lur trokatsua"
+  COBBLED_DEEPSLATE: "sakonetako arbel harritsua"
+  COBBLED_DEEPSLATE_SLAB: "sakonetako arbel harritsuzko lauza"
+  COBBLED_DEEPSLATE_STAIRS: "sakonetako arbel harritsuzko eskailerak"
+  COBBLED_DEEPSLATE_WALL: "sakonetako arbel harritsuzko horma"
+  COBBLESTONE: "arroka"
+  COBBLESTONE_SLAB: "arrokazko lauza"
+  COBBLESTONE_STAIRS: "arrokazko eskailerak"
+  COBBLESTONE_WALL: "arrokazko horma"
+  COBWEB: "armiarma-sarea"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "agindu blokea"
+  COMPARATOR: "redstone-konparadorea"
+  COMPOSTER: "conpost-ontzia"
+  CONDUIT: "kanalizatzailea"
+  COPPER_BLOCK: "kobrezko blokea"
+  COPPER_BULB: "kobrezko bonbila"
+  COPPER_DOOR: "korbezko atea"
+  COPPER_GRATE: "kobrezko parrilla"
+  COPPER_ORE: "kobrezko mea"
+  COPPER_TRAPDOOR: "kobrezko atetxoa"
+  CORNFLOWER: "nabar-lorea"
+  CRACKED_DEEPSLATE_BRICKS: "sakonetako arbelezko adreilu pitzatuak"
+  CRACKED_DEEPSLATE_TILES: "sakonetako arbelezko teila pitzatuak"
+  CRACKED_NETHER_BRICKS: "netherreko adreilu pitzatuak"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "txartatutako harribeltzezko adreilu pitzatuak"
+  CRACKED_STONE_BRICKS: "harrizko adreilu pitzatuak"
+  CRAFTER: "artisaua"
+  CRAFTING_TABLE: "lan-mahaia"
+  CREEPER_HEAD: "creeper burua"
+  CREEPER_WALL_HEAD: "creeper burua paretan"
+  CRIMSON_BUTTON: "botoi gorrimina"
+  CRIMSON_DOOR: "ate gorrimina"
+  CRIMSON_FENCE: "hesi gorrimina"
+  CRIMSON_FENCE_GATE: "hesi ate gorrimina"
+  CRIMSON_FUNGUS: "onddo gorrimina"
+  CRIMSON_HANGING_SIGN: "zur gorriztaz egindako kartel esekia"
+  CRIMSON_HYPHAE: "hifa gorrimina"
+  CRIMSON_NYLIUM: "nezelio gorrimina"
+  CRIMSON_PLANKS: "ohol gorriminak"
+  CRIMSON_PRESSURE_PLATE: "presio plaka gorrimina"
+  CRIMSON_ROOTS: "sustrai gorriminak"
+  CRIMSON_SIGN: "kartel gorrimina"
+  CRIMSON_SLAB: "lauza gorrimina"
+  CRIMSON_STAIRS: "eskailera gorriminak"
+  CRIMSON_STEM: "zurtoin gorrimina"
+  CRIMSON_TRAPDOOR: "tranpola gorrimina"
+  CRIMSON_WALL_HANGING_SIGN: "kartel esekia zur gorriminezko horman"
+  CRIMSON_WALL_SIGN: "kartel gorrimina horman"
+  CRYING_OBSIDIAN: "obsidiana negarrez"
+  CUT_COPPER: "moztutako kobrea"
+  CUT_COPPER_SLAB: "moztutako kobrezko lauza"
+  CUT_COPPER_STAIRS: "moztutako kobrezko eskailerak"
+  CUT_RED_SANDSTONE: "moztutako harearri gorria"
+  CUT_RED_SANDSTONE_SLAB: "moztutako hareharri gorrizko lauza"
+  CUT_SANDSTONE: "hareharri moztua"
+  CUT_SANDSTONE_SLAB: "moztutako hareharrizko lauza"
+  CYAN_BANNER: "zutoihal ziana"
+  CYAN_BED: "ohe ziana"
+  CYAN_CANDLE: "kandela ziana"
+  CYAN_CANDLE_CAKE: "tarta kandela zianarekin"
+  CYAN_CARPET: "zian koloreko alfonbra"
+  CYAN_CONCRETE: "hormigoi ziana"
+  CYAN_CONCRETE_POWDER: "zementu ziana"
+  CYAN_GLAZED_TERRACOTTA: "terrakota beiraztatu ziana"
+  CYAN_SHULKER_BOX: "shulker kutxa ziana"
+  CYAN_STAINED_GLASS: "zian koloreko kristala"
+  CYAN_STAINED_GLASS_PANE: "zian koloreko kristalezko panela"
+  CYAN_TERRACOTTA: "terrakota ziana"
+  CYAN_WOOL: "artile ziana"
+  DAMAGED_ANVIL: "ondatutako ingudea"
+  DANDELION: "txikoria-belar"
+  DARK_OAK_BUTTON: "haritz ilunezko botoia"
+  DARK_OAK_DOOR: "haritz ilunezko atea"
+  DARK_OAK_FENCE: "haritz ilunezko hesia"
+  DARK_OAK_FENCE_GATE: "haritz ilunezko hesi atea"
+  DARK_OAK_HANGING_SIGN: "haritz ilunaren egurrezko kartel esekia"
+  DARK_OAK_LEAVES: "haritz ilun hostoak"
+  DARK_OAK_LOG: "haritz ilun enborra"
+  DARK_OAK_PLANKS: "haritz ilun oholak"
+  DARK_OAK_PRESSURE_PLATE: "haritz ilunezko presio plaka"
+  DARK_OAK_SAPLING: "haritz ilun kimetza"
+  DARK_OAK_SIGN: "haritz ilunezko kartela"
+  DARK_OAK_SLAB: "haritz ilunezko lauza"
+  DARK_OAK_STAIRS: "haritz ilunezko eskailerak"
+  DARK_OAK_TRAPDOOR: "haritz ilunezko tranpola"
+  DARK_OAK_WALL_HANGING_SIGN: "haritz iluneko hormako kartel esekia"
+  DARK_OAK_WALL_SIGN: "haritz ilunezko kartela horman"
+  DARK_OAK_WOOD: "haritz ilun egurra"
+  DARK_PRISMARINE: "prismarina iluna"
+  DARK_PRISMARINE_SLAB: "prismarina ilunezko lauza"
+  DARK_PRISMARINE_STAIRS: "prismarine eskailera ilunak"
+  DAYLIGHT_DETECTOR: "eguzki argi sentsorea"
+  DEAD_BRAIN_CORAL: "bizigabeko burmuinezko koral blokea"
+  DEAD_BRAIN_CORAL_BLOCK: "bizigabeko burmuinezko koral blokea"
+  DEAD_BRAIN_CORAL_FAN: "hildako garuneko coral fan"
+  DEAD_BRAIN_CORAL_WALL_FAN: "dead brain coral wall fan"
+  DEAD_BUBBLE_CORAL: "hodizko korala"
+  DEAD_BUBBLE_CORAL_BLOCK: "hildako burbuila coral blokea"
+  DEAD_BUBBLE_CORAL_FAN: "hildako burbuila coral fan"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "hildako burbuila koralaren horma-fan"
+  DEAD_BUSH: "zuhaixka lehorra"
+  DEAD_FIRE_CORAL: "bizigabeko hodizko koral blokea"
+  DEAD_FIRE_CORAL_BLOCK: "hildako su koral blokea"
+  DEAD_FIRE_CORAL_FAN: "hildako sute coral fan"
+  DEAD_FIRE_CORAL_WALL_FAN: "hildako sute koralaren horma-fan"
+  DEAD_HORN_CORAL: "bizigabeko hodizko koral blokea"
+  DEAD_HORN_CORAL_BLOCK: "hildako egurra coral blokea"
+  DEAD_HORN_CORAL_FAN: "hildako hodizko koral fan"
+  DEAD_HORN_CORAL_WALL_FAN: "hildako adar koralaren horma-fan"
+  DEAD_TUBE_CORAL: "bizigabeko hodizko koral blokea"
+  DEAD_TUBE_CORAL_BLOCK: "bizigabeko hodizko koral blokea"
+  DEAD_TUBE_CORAL_FAN: "hildako hodi coral fan"
+  DEAD_TUBE_CORAL_WALL_FAN: "dead tube koralaren horma-fan"
+  DECORATED_POT: "loreontzi apainduta"
+  DEEPSLATE: "sakonetako arbela"
+  DEEPSLATE_BRICK_SLAB: "sakonetako arbelezko adreiluzko lauza"
+  DEEPSLATE_BRICK_STAIRS: "sakonetako arbelezko adreiluzko eskailerak"
+  DEEPSLATE_BRICK_WALL: "sakonetako arbelezko adreiluzko horma"
+  DEEPSLATE_BRICKS: "sakonetako arbelezko adreiluak"
+  DEEPSLATE_COAL_ORE: "ikatzezko sakonetako arbelezko mea"
+  DEEPSLATE_COPPER_ORE: "kobrezko sakonetako arbelezko mea"
+  DEEPSLATE_DIAMOND_ORE: "diamantezko sakonetako arbelezko mea"
+  DEEPSLATE_EMERALD_ORE: "esmeraldazko sakonetako arbelezko mea"
+  DEEPSLATE_GOLD_ORE: "urrezko sakonetako arbelezko mea"
+  DEEPSLATE_IRON_ORE: "burdinazko sakonetako arbelezko mea"
+  DEEPSLATE_LAPIS_ORE: "lapis lazulizko sakonetako arbelezko mea"
+  DEEPSLATE_REDSTONE_ORE: "redstonezko sakonetako arbelezko mea"
+  DEEPSLATE_TILE_SLAB: "sakonetako arbelezko teilazko lauza"
+  DEEPSLATE_TILE_STAIRS: "sakonetako arbelezko teilazko eskailerak"
+  DEEPSLATE_TILE_WALL: "sakonetako arbelezko teilazko horma"
+  DEEPSLATE_TILES: "sakonetako arbelezko teilak"
+  DETECTOR_RAIL: "detektagailudun erraila"
+  DIAMOND_BLOCK: "diamantezko blokea"
+  DIAMOND_ORE: "diamantezko mea"
+  DIORITE: "diorita"
+  DIORITE_SLAB: "dioritazko lauza"
+  DIORITE_STAIRS: "dioritazko eskailerak"
+  DIORITE_WALL: "dioritazko horma"
+  DIRT: "lurra"
+  DIRT_PATH: "lur bidea"
+  DISPENSER: "dispentsagailua"
+  DRAGON_EGG: "dragoiaren arrautza"
+  DRAGON_HEAD: "dragoi burua"
+  DRAGON_WALL_HEAD: "dragoi burua paretan"
+  DRIED_KELP_BLOCK: "lehortutako alga blokea"
+  DRIPSTONE_BLOCK: "espeleotema blokea"
+  DROPPER: "jaurtigailua"
+  EMERALD_BLOCK: "esmeralda blokea"
+  EMERALD_ORE: "esmeraldazko mea"
+  ENCHANTING_TABLE: "sorginkeria mahaia"
+  END_GATEWAY: "enderanzko atea"
+  END_PORTAL: "amaierako portala"
+  END_PORTAL_FRAME: "amaierako munduko markoa"
+  END_ROD: "end barra"
+  END_STONE: "amaierako harria"
+  END_STONE_BRICK_SLAB: "endeko harrizko adreiluzko lauza"
+  END_STONE_BRICK_STAIRS: "amaierako arroka adreiluzko eskailerak"
+  END_STONE_BRICK_WALL: "amaierako harri adreiluzko horma"
+  END_STONE_BRICKS: "amaierako harrizko adreilua"
+  ENDER_CHEST: "enderkutxa"
+  EXPOSED_CHISELED_COPPER: "kobre ageri eta zinzelatuta"
+  EXPOSED_COPPER: "kobre estalgabetua"
+  EXPOSED_COPPER_BULB: "ageriko kobre bonbila"
+  EXPOSED_COPPER_DOOR: "ageriko kobre atea"
+  EXPOSED_COPPER_GRATE: "ageriko kobre parrilla"
+  EXPOSED_COPPER_TRAPDOOR: "ageriko kobre tranpa"
+  EXPOSED_CUT_COPPER: "moztutako kobre estalgabetua"
+  EXPOSED_CUT_COPPER_SLAB: "moztutako kobrezko lauza estalgabetua"
+  EXPOSED_CUT_COPPER_STAIRS: "moztutako kobrezko eskailera estalgabetuak"
+  FARMLAND: "saila"
+  FERN: "iratzea"
+  FIRE: "sua"
+  FIRE_CORAL: "hodizko korala"
+  FIRE_CORAL_BLOCK: "bizigabeko su koral blokea"
+  FIRE_CORAL_FAN: "hodizko korala"
+  FIRE_CORAL_WALL_FAN: "fire coral wall fan"
+  FLETCHING_TABLE: "geziak egiteko taula"
+  FLOWER_POT: "loreontzi"
+  FLOWERING_AZALEA: "azalea loretan"
+  FLOWERING_AZALEA_LEAVES: "loretutako azalearen hostoak"
+  FROGSPAWN: "igel arrabak"
+  FROSTED_ICE: "izotz zuri"
+  FURNACE: "labea"
+  GILDED_BLACKSTONE: "urreztatutako harribeltza"
+  GLASS: "kristala"
+  GLASS_PANE: "kristalezko panela"
+  GLOW_LICHEN: "liken distiratsua"
+  GLOWSTONE: "argi-harria"
+  GOLD_BLOCK: "urrezko blokea"
+  GOLD_ORE: "urrezko mea"
+  GRANITE: "granitoa"
+  GRANITE_SLAB: "ganito lauza"
+  GRANITE_STAIRS: "ganito eskailerak"
+  GRANITE_WALL: "granito horma"
+  GRASS: "belarra"
+  GRASS_BLOCK: "belar blokea"
+  GRAVEL: "legarra"
+  GRAY_BANNER: "zutoihal grisa"
+  GRAY_BED: "ohe grisa"
+  GRAY_CANDLE: "kandela grisa"
+  GRAY_CANDLE_CAKE: "tarta kandela grisarekin"
+  GRAY_CARPET: "gris koloreko alfonbra"
+  GRAY_CONCRETE: "hormigoi grisa"
+  GRAY_CONCRETE_POWDER: "zementu grisa"
+  GRAY_GLAZED_TERRACOTTA: "terrakota beiraztatu grisa"
+  GRAY_SHULKER_BOX: "shulker kutxa grisa"
+  GRAY_STAINED_GLASS: "kristal grisa"
+  GRAY_STAINED_GLASS_PANE: "kristalezko panel grisa"
+  GRAY_TERRACOTTA: "terrakota grisa"
+  GRAY_WOOL: "artile grisa"
+  GREEN_BANNER: "zutoihal berdea"
+  GREEN_BED: "ohe berdea"
+  GREEN_CANDLE: "kandela berdea"
+  GREEN_CANDLE_CAKE: "tarta kandela berdearekin"
+  GREEN_CARPET: "berde koloreko alfonbra"
+  GREEN_CONCRETE: "hormigoi berdea"
+  GREEN_CONCRETE_POWDER: "zementu berdea"
+  GREEN_GLAZED_TERRACOTTA: "terrakota beiraztatu berdea"
+  GREEN_SHULKER_BOX: "shulker kutxa berdea"
+  GREEN_STAINED_GLASS: "kristal berdea"
+  GREEN_STAINED_GLASS_PANE: "kristalezko panel berdea"
+  GREEN_TERRACOTTA: "terrakota berdea"
+  GREEN_WOOL: "artile berdea"
+  GRINDSTONE: "zorrotzailea"
+  HANGING_ROOTS: "sustrai zintzilikariak"
+  HAY_BLOCK: "lasto fardoa"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "presio plaka astuna"
+  HONEY_BLOCK: "ezti blokea"
+  HONEYCOMB_BLOCK: "abaraska"
+  HOPPER: "kalapatxa"
+  HORN_CORAL: "hodizko korala"
+  HORN_CORAL_BLOCK: "bizigabeko adar koral blokea"
+  HORN_CORAL_FAN: "hodizko korala"
+  HORN_CORAL_WALL_FAN: "adar koralaren horma-fan"
+  ICE: "izotza"
+  INFESTED_CHISELED_STONE_BRICKS: "izurritutako harrizko adreilu zizelkatuak"
+  INFESTED_COBBLESTONE: "izurritutako arroka"
+  INFESTED_CRACKED_STONE_BRICKS: "izurritutako harrizko adreilu pitzatuak"
+  INFESTED_DEEPSLATE: "izurritutako sakonetako arbela"
+  INFESTED_MOSSY_STONE_BRICKS: "izurritutako harri goroldiotsuzko adreiluak"
+  INFESTED_STONE: "izurritutako harria"
+  INFESTED_STONE_BRICKS: "izurritutako harrizko adreiluak"
+  IRON_BARS: "burdinazko barrak"
+  IRON_BLOCK: "burdinazko blokea"
+  IRON_DOOR: "burdinazko atea"
+  IRON_ORE: "burdinazko mea"
+  IRON_TRAPDOOR: "burdinazko tranpola"
+  JACK_O_LANTERN: "kalabaza linterna"
+  JIGSAW: "buruhausgarri blokea"
+  JUKEBOX: "musika kaxa"
+  JUNGLE_BUTTON: "oihanezko botoia"
+  JUNGLE_DOOR: "oihanezko atea"
+  JUNGLE_FENCE: "ohianezko hesia"
+  JUNGLE_FENCE_GATE: "ohianezko hesi atea"
+  JUNGLE_HANGING_SIGN: "oihan-zurezko kartel esekia"
+  JUNGLE_LEAVES: "oihan hostoak"
+  JUNGLE_LOG: "oihan enborra"
+  JUNGLE_PLANKS: "oihan oholak"
+  JUNGLE_PRESSURE_PLATE: "oihanezko presio plaka"
+  JUNGLE_SAPLING: "oihan kimetza"
+  JUNGLE_SIGN: "oihanezko kartela"
+  JUNGLE_SLAB: "oihanezko lauza"
+  JUNGLE_STAIRS: "oihanezko eskailerak"
+  JUNGLE_TRAPDOOR: "oihanezko tranpola"
+  JUNGLE_WALL_HANGING_SIGN: "kartel esekia oihan-zurezko horman"
+  JUNGLE_WALL_SIGN: "oihanezko kartela horman"
+  JUNGLE_WOOD: "oihan egurra"
+  KELP: "alga"
+  KELP_PLANT: "alga landarea"
+  LADDER: "zurubia"
+  LANTERN: "faroltxoa"
+  LAPIS_BLOCK: "lapis lazuli blokea"
+  LAPIS_ORE: "lapis lazulizko mea"
+  LARGE_AMETHYST_BUD: "ametista ernamuin handia"
+  LARGE_FERN: "iratze handia"
+  LAVA: "laba"
+  LAVA_CAULDRON: "laba pertza"
+  LECTERN: "argiontzia"
+  LEVER: "palanka"
+  LIGHT: "argia"
+  LIGHT_BLUE_BANNER: "zutoihal urdin argia"
+  LIGHT_BLUE_BED: "ohe urdin argia"
+  LIGHT_BLUE_CANDLE: "kandela urdin argia"
+  LIGHT_BLUE_CANDLE_CAKE: "tarta kandela urdin argiarekin"
+  LIGHT_BLUE_CARPET: "urdin argi koloreko alfonbra"
+  LIGHT_BLUE_CONCRETE: "hormigoi urdin argia"
+  LIGHT_BLUE_CONCRETE_POWDER: "zementu urdin argia"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "terrakota beiraztatu urdin argia"
+  LIGHT_BLUE_SHULKER_BOX: "shulker kutxa urdin argia"
+  LIGHT_BLUE_STAINED_GLASS: "kristal urdin argia"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "kristalezko panel urdin argia"
+  LIGHT_BLUE_TERRACOTTA: "terrakota urdin argia"
+  LIGHT_BLUE_WOOL: "artile urdin argia"
+  LIGHT_GRAY_BANNER: "zutoihal gris argia"
+  LIGHT_GRAY_BED: "ohe gris argia"
+  LIGHT_GRAY_CANDLE: "kandela gris argia"
+  LIGHT_GRAY_CANDLE_CAKE: "tarta kandela gris argiarekin"
+  LIGHT_GRAY_CARPET: "alfonbra gris argia"
+  LIGHT_GRAY_CONCRETE: "hormigoi gris argia"
+  LIGHT_GRAY_CONCRETE_POWDER: "zementu gris argia"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "terrakota beiraztatu gris argia"
+  LIGHT_GRAY_SHULKER_BOX: "shulker kutxa gris argia"
+  LIGHT_GRAY_STAINED_GLASS: "kristal gris argia"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "kristalezko panel gris argia"
+  LIGHT_GRAY_TERRACOTTA: "terrakota gris argia"
+  LIGHT_GRAY_WOOL: "artile gris argia"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "presio plaka arina"
+  LIGHTNING_ROD: "tximistorratza"
+  LILAC: "lila"
+  LILY_OF_THE_VALLEY: "mugeta"
+  LILY_PAD: "igebelarra"
+  LIME_BANNER: "zutohial lima"
+  LIME_BED: "ohe lima"
+  LIME_CANDLE: "kandela lima"
+  LIME_CANDLE_CAKE: "tarta kandela limarekin"
+  LIME_CARPET: "lima koloreko alfonbra"
+  LIME_CONCRETE: "hormigoi lima"
+  LIME_CONCRETE_POWDER: "zementu lima"
+  LIME_GLAZED_TERRACOTTA: "terrakota beiraztatu lima"
+  LIME_SHULKER_BOX: "shulker kutxa berde lima"
+  LIME_STAINED_GLASS: "kristal lima"
+  LIME_STAINED_GLASS_PANE: "lima koloreko kristalezko panela"
+  LIME_TERRACOTTA: "terrakota lima"
+  LIME_WOOL: "artile lima"
+  LODESTONE: "magnetita"
+  LOOM: "ehungailua"
+  MAGENTA_BANNER: "zutoihal magenta"
+  MAGENTA_BED: "ohe magenta"
+  MAGENTA_CANDLE: "kandela magenta"
+  MAGENTA_CANDLE_CAKE: "tarta kandela magentarekin"
+  MAGENTA_CARPET: "magenta koloreko alfonbra"
+  MAGENTA_CONCRETE: "hormigoi magenta"
+  MAGENTA_CONCRETE_POWDER: "zementu magenta"
+  MAGENTA_GLAZED_TERRACOTTA: "terrakota beiraztatu magenta"
+  MAGENTA_SHULKER_BOX: "shulker kutxa magenta"
+  MAGENTA_STAINED_GLASS: "kristal magenta"
+  MAGENTA_STAINED_GLASS_PANE: "kristalezko panel magenta"
+  MAGENTA_TERRACOTTA: "terrakota magenta"
+  MAGENTA_WOOL: "artile magenta"
+  MAGMA_BLOCK: "magma blokea"
+  MANGROVE_BUTTON: "manglezko botoia"
+  MANGROVE_DOOR: "manglezko atea"
+  MANGROVE_FENCE: "manglezko hesia"
+  MANGROVE_FENCE_GATE: "manglezko hesi atea"
+  MANGROVE_HANGING_SIGN: "eskulekuko egurrezko kartel esekia"
+  MANGROVE_LEAVES: "mangle hostoak"
+  MANGROVE_LOG: "mangle enborra"
+  MANGROVE_PLANKS: "mangle oholak"
+  MANGROVE_PRESSURE_PLATE: "manglezko presio plaka"
+  MANGROVE_PROPAGULE: "mangle propagulua"
+  MANGROVE_ROOTS: "mangle sustraiak"
+  MANGROVE_SIGN: "manglezko kartela"
+  MANGROVE_SLAB: "manglezko lauza"
+  MANGROVE_STAIRS: "manglezko eskailerak"
+  MANGROVE_TRAPDOOR: "manglezko tranpola"
+  MANGROVE_WALL_HANGING_SIGN: "kartel esekia manglatzeko egurrezko horman"
+  MANGROVE_WALL_SIGN: "manglezko kartela horman"
+  MANGROVE_WOOD: "mangle egurra"
+  MEDIUM_AMETHYST_BUD: "ametista ernamuin ertaina"
+  MELON: "meloia"
+  MELON_STEM: "meloi zurtoina"
+  MOSS_BLOCK: "goroldiozko blokea"
+  MOSS_CARPET: "goroldiozko alfonbra"
+  MOSSY_COBBLESTONE: "arroka goroldiotsua"
+  MOSSY_COBBLESTONE_SLAB: "arroka goroldiotsuzko lauza"
+  MOSSY_COBBLESTONE_STAIRS: "arroka goroldiotsuzko eskailerak"
+  MOSSY_COBBLESTONE_WALL: "arroka goroldiotsuzko horma"
+  MOSSY_STONE_BRICK_SLAB: "harri goroldiotsuzko adreiluzko lauza"
+  MOSSY_STONE_BRICK_STAIRS: "harri goroldiotsu adreiluzko eskailerak"
+  MOSSY_STONE_BRICK_WALL: "harri goroldiotsu adreiluzko pareta"
+  MOSSY_STONE_BRICKS: "harri goroldiotsuzko adreiluak"
+  MOVING_PISTON: "pistoia mugimenduan"
+  MUD: "lokatza"
+  MUD_BRICK_SLAB: "lokatzezko adreiluzko lauza"
+  MUD_BRICK_STAIRS: "lokatzezko adreiluzko eskailerak"
+  MUD_BRICK_WALL: "lokatzazko adreiluzko horma"
+  MUD_BRICKS: "lokatzezko adreiluak"
+  MUDDY_MANGROVE_ROOTS: "mangle sustrai lokaztuak"
+  MUSHROOM_STEM: "perretxiko zurtoina"
+  MYCELIUM: "mizelioa"
+  NETHER_BRICK_FENCE: "netherreko adreiluzko hesia"
+  NETHER_BRICK_SLAB: "netherreko adreiluzko lauza"
+  NETHER_BRICK_STAIRS: "netherreko adreiluzko eskailerak"
+  NETHER_BRICK_WALL: "netherreko adreiluzko horma"
+  NETHER_BRICKS: "netherreko adreiluak"
+  NETHER_GOLD_ORE: "netherreko urrezko mea"
+  NETHER_PORTAL: "netherreko ataria"
+  NETHER_QUARTZ_ORE: "netherreko kuartzozko mea"
+  NETHER_SPROUTS: "netherreko ernamuinak"
+  NETHER_WART: "netherreko garatxoa"
+  NETHER_WART_BLOCK: "netherreko garatxozko blokea"
+  NETHERITE_BLOCK: "netheritazko blokea"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "nota blokea"
+  OAK_BUTTON: "haritzezko botoia"
+  OAK_DOOR: "haritzezko atea"
+  OAK_FENCE: "haritzezko hesia"
+  OAK_FENCE_GATE: "haritzezko hesi atea"
+  OAK_HANGING_SIGN: "haritz-zurezko kartel esekia"
+  OAK_LEAVES: "haritz hostoak"
+  OAK_LOG: "haritz enborra"
+  OAK_PLANKS: "haritz oholak"
+  OAK_PRESSURE_PLATE: "haritzezko presio plaka"
+  OAK_SAPLING: "haritz kimetza"
+  OAK_SIGN: "haritzezko kartela"
+  OAK_SLAB: "haritzezko lauza"
+  OAK_STAIRS: "haritzezko eskailerak"
+  OAK_TRAPDOOR: "haritzezko tranpola"
+  OAK_WALL_HANGING_SIGN: "haritzezko hormako kartel esekia"
+  OAK_WALL_SIGN: "haritzezko kartela horman"
+  OAK_WOOD: "haritz egurra"
+  OBSERVER: "behatzailea"
+  OBSIDIAN: "obsidiana"
+  OCHRE_FROGLIGHT: "igelargi okrea"
+  OMINOUS_BANNER: "zutoihal nazkagarria"
+  ORANGE_BANNER: "zutoihal laranja"
+  ORANGE_BED: "ohe laranja"
+  ORANGE_CANDLE: "kandela laranja"
+  ORANGE_CANDLE_CAKE: "tarta kandela naranjarekin"
+  ORANGE_CARPET: "laranja koloreko alfonbra"
+  ORANGE_CONCRETE: "hormigoi laranja"
+  ORANGE_CONCRETE_POWDER: "zementu laranja"
+  ORANGE_GLAZED_TERRACOTTA: "terrakota beiraztatu laranja"
+  ORANGE_SHULKER_BOX: "shulker kutxa laranja"
+  ORANGE_STAINED_GLASS: "kristal laranja"
+  ORANGE_STAINED_GLASS_PANE: "kristalezko panel laranja"
+  ORANGE_TERRACOTTA: "terrakota laranja"
+  ORANGE_TULIP: "tulipa laranja"
+  ORANGE_WOOL: "artile laranja"
+  OXEYE_DAISY: "sanjoan-lorea"
+  OXIDIZED_CHISELED_COPPER: "kobre oxidatua eta zinzelatua"
+  OXIDIZED_COPPER: "kobre oxidatua"
+  OXIDIZED_COPPER_BULB: "oxidatutako kobre bonbila"
+  OXIDIZED_COPPER_DOOR: "oxidadutako kobre atea"
+  OXIDIZED_COPPER_GRATE: "herdoildutako kobre parrilla"
+  OXIDIZED_COPPER_TRAPDOOR: "herdoildutako kobre eskotila"
+  OXIDIZED_CUT_COPPER: "moztutako kobre oxidatua"
+  OXIDIZED_CUT_COPPER_SLAB: "moztutako kobrezko lauza oxidatua"
+  OXIDIZED_CUT_COPPER_STAIRS: "moztutako kobrezko eskailera oxidatuak"
+  PACKED_ICE: "izotz konprimitua"
+  PACKED_MUD: "lokatz trinkoa"
+  PEARLESCENT_FROGLIGHT: "igelargi nakar-kolorekoa"
+  PEONY: "oinlodia"
+  PETRIFIED_OAK_SLAB: "harritutako haritzezko lauza"
+  PIGLIN_HEAD: "piglin burua"
+  PIGLIN_WALL_HEAD: "piglin paretako burkoa"
+  PINK_BANNER: "zutoihal arrosa"
+  PINK_BED: "ohe arrosa"
+  PINK_CANDLE: "kandela arrosa"
+  PINK_CANDLE_CAKE: "tarta kandela arrosarekin"
+  PINK_CARPET: "arrosa koloreko alfonbra"
+  PINK_CONCRETE: "hormigoi arrosa"
+  PINK_CONCRETE_POWDER: "zementu arrosa"
+  PINK_GLAZED_TERRACOTTA: "terrakota beiraztatu arrosa"
+  PINK_PETALS: "lore-hosto arrosak"
+  PINK_SHULKER_BOX: "shulker kutxa arrosa"
+  PINK_STAINED_GLASS: "kristal arrosa"
+  PINK_STAINED_GLASS_PANE: "kristalezko panel arrosa"
+  PINK_TERRACOTTA: "terrakota arrosa"
+  PINK_TULIP: "idi-bihotz arrosa"
+  PINK_WOOL: "artile arrosa"
+  PISTON: "pistoia"
+  PISTON_HEAD: "pistoi burua"
+  PITCHER_CROP: "landareak pitxerrean"
+  PITCHER_PLANT: "pitxer landarea"
+  PLAYER_HEAD: "jokalari burua"
+  PLAYER_HEAD_NAMED: "%s-(r)en burua"
+  PLAYER_WALL_HEAD: "jokalariaren burua paretan"
+  PODZOL: "podsola"
+  POINTED_DRIPSTONE: "espeleotema puntazorrotza"
+  POLISHED_ANDESITE: "txartatutako andesita"
+  POLISHED_ANDESITE_SLAB: "txartatutako andesitazko lauza"
+  POLISHED_ANDESITE_STAIRS: "txartatutako andesitazko eskailerak"
+  POLISHED_BASALT: "txartatutako basaltoa"
+  POLISHED_BLACKSTONE: "txartatutako harribeltza"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "txartatutako harribeltzezko adreiluzko lauza"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "txartatutako harribeltzezko adreiluzko eskailerak"
+  POLISHED_BLACKSTONE_BRICK_WALL: "txartatutako harribeltzezko adreiluzko horma"
+  POLISHED_BLACKSTONE_BRICKS: "txartatutako harribeltzezko adreiluak"
+  POLISHED_BLACKSTONE_BUTTON: "txartatutako harribeltzezko botoia"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "txartatutako harribeltzezko presio plaka"
+  POLISHED_BLACKSTONE_SLAB: "txartatutako harribeltzezko lauza"
+  POLISHED_BLACKSTONE_STAIRS: "txartatutako harribeltzezko eskailerak"
+  POLISHED_BLACKSTONE_WALL: "txartatutako harribeltzezko horma"
+  POLISHED_DEEPSLATE: "txartatutako sakonetako arbela"
+  POLISHED_DEEPSLATE_SLAB: "txartatutako sakonetako arbelezko lauza"
+  POLISHED_DEEPSLATE_STAIRS: "txartatutako sakonetako arbelezko eskailerak"
+  POLISHED_DEEPSLATE_WALL: "txartatutako sakonetako arbelezko horma"
+  POLISHED_DIORITE: "txartatutako diorita"
+  POLISHED_DIORITE_SLAB: "txartatutako dioritazko lauza"
+  POLISHED_DIORITE_STAIRS: "txartatutako dioritazko eskailerak"
+  POLISHED_GRANITE: "txartatutako granitoa"
+  POLISHED_GRANITE_SLAB: "txartatutako granitozko lauza"
+  POLISHED_GRANITE_STAIRS: "txartatutako granitozko eskailerak"
+  POLISHED_TUFF: "toba leuna"
+  POLISHED_TUFF_SLAB: "leundutako toba lauza"
+  POLISHED_TUFF_STAIRS: "leundutako toba eskailerak"
+  POLISHED_TUFF_WALL: "leundutako toba horma"
+  POPPY: "mitxoleta"
+  POTATOES: "patatak"
+  POTTED_ACACIA_SAPLING: "akazia kimetz landatua"
+  POTTED_ALLIUM: "allium landatua"
+  POTTED_AZALEA_BUSH: "azalea landatua"
+  POTTED_AZURE_BLUET: "bluet urdin argi landatua"
+  POTTED_BAMBOO: "banbu landatua"
+  POTTED_BIRCH_SAPLING: "urki kimetz landatua"
+  POTTED_BLUE_ORCHID: "orkide urdin landatua"
+  POTTED_BROWN_MUSHROOM: "perretxiko marroi landatua"
+  POTTED_CACTUS: "kaktus landatua"
+  POTTED_CHERRY_SAPLING: "gereziondozko urtadarra loreontzian"
+  POTTED_CORNFLOWER: "nabar-lore landatua"
+  POTTED_CRIMSON_FUNGUS: "onddo gorrimin landatua"
+  POTTED_CRIMSON_ROOTS: "sustrai gorrimin landatuak"
+  POTTED_DANDELION: "txikoria-belar landatua"
+  POTTED_DARK_OAK_SAPLING: "haritz ilun kimetz landatua"
+  POTTED_DEAD_BUSH: "zuhaixka lehor landatua"
+  POTTED_FERN: "iratze landatua"
+  POTTED_FLOWERING_AZALEA_BUSH: "loratutako azalea landatua"
+  POTTED_JUNGLE_SAPLING: "oihan kimetz landatua"
+  POTTED_LILY_OF_THE_VALLEY: "mugeta landatua"
+  POTTED_MANGROVE_PROPAGULE: "mangle propagulu landatua"
+  POTTED_OAK_SAPLING: "haritz kimetz landatua"
+  POTTED_ORANGE_TULIP: "tulipa laranja landatua"
+  POTTED_OXEYE_DAISY: "sanjoan-lore landatua"
+  POTTED_PINK_TULIP: "tulipa arrosa landatua"
+  POTTED_POPPY: "mitxoleta landatua"
+  POTTED_RED_MUSHROOM: "perretxiko gorri landatua"
+  POTTED_RED_TULIP: "tulipa gorri landatua"
+  POTTED_SPRUCE_SAPLING: "izei kimetz landatua"
+  POTTED_TORCHFLOWER: "lastargi-lorea loreontzian"
+  POTTED_WARPED_FUNGUS: "onddo okertu landatua"
+  POTTED_WARPED_ROOTS: "sustrai okertu landatuak"
+  POTTED_WHITE_TULIP: "tulipa zuri landatua"
+  POTTED_WITHER_ROSE: "wither arrosa landatua"
+  POWDER_SNOW: "elur-hautsa"
+  POWDER_SNOW_CAULDRON: "elur-hauts pertza"
+  POWERED_RAIL: "propultsagailudun erraila"
+  PRISMARINE: "prismarina"
+  PRISMARINE_BRICK_SLAB: "prismarinazko adreiluzko lauza"
+  PRISMARINE_BRICK_STAIRS: "prismarina adreiluzko eskailerak"
+  PRISMARINE_BRICKS: "prismarina adreiluak"
+  PRISMARINE_SLAB: "prismarinazko lauza"
+  PRISMARINE_STAIRS: "prismarina eskailerak"
+  PRISMARINE_WALL: "prismarinazko pareta"
+  PUMPKIN: "kalabaza"
+  PUMPKIN_STEM: "kalabaza zurtoina"
+  PURPLE_BANNER: "zutoihal morea"
+  PURPLE_BED: "ohe morea"
+  PURPLE_CANDLE: "kandela morea"
+  PURPLE_CANDLE_CAKE: "tarta kandela morearekin"
+  PURPLE_CARPET: "more koloreko alfonbra"
+  PURPLE_CONCRETE: "hormigoi morea"
+  PURPLE_CONCRETE_POWDER: "zementu morea"
+  PURPLE_GLAZED_TERRACOTTA: "terrakota beiraztatu morea"
+  PURPLE_SHULKER_BOX: "shulker kutxa morea"
+  PURPLE_STAINED_GLASS: "kristal morea"
+  PURPLE_STAINED_GLASS_PANE: "kristalezko panel morea"
+  PURPLE_TERRACOTTA: "terrakota morea"
+  PURPLE_WOOL: "artile morea"
+  PURPUR_BLOCK: "purpura blokea"
+  PURPUR_PILLAR: "purpur pilarea"
+  PURPUR_SLAB: "purpur lauza"
+  PURPUR_STAIRS: "purpurezko eskailerak"
+  QUARTZ_BLOCK: "kuartzo blokea"
+  QUARTZ_BRICKS: "kuartzozko adreiluak"
+  QUARTZ_PILLAR: "kuartzozko zutabea"
+  QUARTZ_SLAB: "kuartzozko lauza"
+  QUARTZ_STAIRS: "kuartzozko eskailerak"
+  RAIL: "erraila"
+  RAW_COPPER_BLOCK: "kobre gordinezko blokea"
+  RAW_GOLD_BLOCK: "landugabeko urrezko blokea"
+  RAW_IRON_BLOCK: "landugabeko burdin blokea"
+  RED_BANNER: "zutoihal gorria"
+  RED_BED: "ohe gorria"
+  RED_CANDLE: "kandela gorria"
+  RED_CANDLE_CAKE: "tarta kandela gorriarekin"
+  RED_CARPET: "gorri koloreko alfonbra"
+  RED_CONCRETE: "hormigoi gorria"
+  RED_CONCRETE_POWDER: "zementu gorria"
+  RED_GLAZED_TERRACOTTA: "terrakota beiraztatu gorria"
+  RED_MUSHROOM: "onddo gorria"
+  RED_MUSHROOM_BLOCK: "perretxiko gorrizko blokea"
+  RED_NETHER_BRICK_SLAB: "netherreko adreilu gorrizko lauza"
+  RED_NETHER_BRICK_STAIRS: "netherreko adreilu gorrizko eskailerak"
+  RED_NETHER_BRICK_WALL: "netherreko adreilu gorrizko horma"
+  RED_NETHER_BRICKS: "netherreko adreilu gorriak"
+  RED_SAND: "hare-gorria"
+  RED_SANDSTONE: "hareharri gorria"
+  RED_SANDSTONE_SLAB: "hareharri gorrizko lauza"
+  RED_SANDSTONE_STAIRS: "hareharri gorrizko eskailerak"
+  RED_SANDSTONE_WALL: "hareharri gorrizko pareta"
+  RED_SHULKER_BOX: "shulker kutxa gorria"
+  RED_STAINED_GLASS: "kristal gorria"
+  RED_STAINED_GLASS_PANE: "kristalezko panel gorria"
+  RED_TERRACOTTA: "terrakota gorria"
+  RED_TULIP: "tulipa gorria"
+  RED_WOOL: "artile gorria"
+  REDSTONE_BLOCK: "redstonezko blokea"
+  REDSTONE_LAMP: "redstone-lanpara"
+  REDSTONE_ORE: "redstonezko mea"
+  REDSTONE_TORCH: "redstone-zuzia"
+  REDSTONE_WALL_TORCH: "redstone-zuzia horman"
+  REDSTONE_WIRE: "redstone-kablea"
+  REINFORCED_DEEPSLATE: "sakonetako arbel indartua"
+  REPEATER: "redstone-errepikagailua"
+  REPEATING_COMMAND_BLOCK: "iterazio-agindu blokea"
+  RESPAWN_ANCHOR: "berragertze-lotura"
+  ROOTED_DIRT: "lur sustraitsua"
+  ROSE_BUSH: "arrosondoa"
+  SAND: "harea"
+  SANDSTONE: "hareharri"
+  SANDSTONE_SLAB: "hareharrizko lauza"
+  SANDSTONE_STAIRS: "hareharrizko eskailerak"
+  SANDSTONE_WALL: "hareharri pareta"
+  SCAFFOLDING: "aldamioa"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk katalizatzailea"
+  SCULK_SENSOR: "sculk sentsorea"
+  SCULK_SHRIEKER: "sculk oihukatzailea"
+  SCULK_VEIN: "sculk zaina"
+  SEA_LANTERN: "itsas linterna"
+  SEA_PICKLE: "itsasoko eskabetxea"
+  SEAGRASS: "itsas belarra"
+  SET_SPAWN: "berragertze-puntua ezarri da"
+  SHORT_GRASS: "belar motza"
+  SHROOMLIGHT: "argionddoa"
+  SHULKER_BOX: "shulker kutxa"
+  SKELETON_SKULL: "eskeleto-garezurra"
+  SKELETON_WALL_SKULL: "eskeleto-garezurra horman"
+  SLIME_BLOCK: "likati blokea"
+  SMALL_AMETHYST_BUD: "ametista ernamuin txikia"
+  SMALL_DRIPLEAF: "tanta-hosto txikia"
+  SMITHING_TABLE: "aroztegi taula"
+  SMOKER: "keetzailea"
+  SMOOTH_BASALT: "basalto leuna"
+  SMOOTH_QUARTZ: "kuartzo leunezko blokea"
+  SMOOTH_QUARTZ_SLAB: "kuartzo leunezko lauza"
+  SMOOTH_QUARTZ_STAIRS: "kuartzo leunezko eskailerak"
+  SMOOTH_RED_SANDSTONE: "hareharri gorri leuna"
+  SMOOTH_RED_SANDSTONE_SLAB: "hareharri gorri leunezko lauza"
+  SMOOTH_RED_SANDSTONE_STAIRS: "hareharri gorri leunezko eskailerak"
+  SMOOTH_SANDSTONE: "hareharri leuna"
+  SMOOTH_SANDSTONE_SLAB: "hareharri leunezko lauza"
+  SMOOTH_SANDSTONE_STAIRS: "hareharri leunezko eskailerak"
+  SMOOTH_STONE: "harri leuna"
+  SMOOTH_STONE_SLAB: "harri leunezko lauza"
+  SNIFFER_EGG: "sniffer sorgailua"
+  SNOW: "elurra"
+  SNOW_BLOCK: "elur blokea"
+  SOUL_CAMPFIRE: "arima kanpamentua"
+  SOUL_FIRE: "arimetako sua"
+  SOUL_LANTERN: "arima linterna"
+  SOUL_SAND: "arima harea"
+  SOUL_SOIL: "arima-lurra"
+  SOUL_TORCH: "arima-zuzia"
+  SOUL_WALL_TORCH: "arima-zuzia horman"
+  SPAWN_NOT_VALID: "ez duzu oherik edo berragertzeko loturarik ezarrita edo buxatuta egon daitezke"
+  SPAWNER: "mounstro sortzailea"
+  SPAWNER_DESC1: "generazio arrautzarekin elkarreragitea:"
+  SPAWNER_DESC2: "mob mota ipini"
+  SPONGE: "belakia"
+  SPORE_BLOSSOM: "espora-lorea"
+  SPRUCE_BUTTON: "izeizko botoia"
+  SPRUCE_DOOR: "izeizko atea"
+  SPRUCE_FENCE: "izeizko hesia"
+  SPRUCE_FENCE_GATE: "izeizko hesi atea"
+  SPRUCE_HANGING_SIGN: "izei-zurezko kartel esekia"
+  SPRUCE_LEAVES: "izei hostoak"
+  SPRUCE_LOG: "izei enborra"
+  SPRUCE_PLANKS: "izei oholak"
+  SPRUCE_PRESSURE_PLATE: "izeizko presio plaka"
+  SPRUCE_SAPLING: "izei kimetza"
+  SPRUCE_SIGN: "izeizko kartela"
+  SPRUCE_SLAB: "izeizko lauza"
+  SPRUCE_STAIRS: "izeizko eskailerak"
+  SPRUCE_TRAPDOOR: "izeizko tranpola"
+  SPRUCE_WALL_HANGING_SIGN: "izei-zurezko hormako kartel esekia"
+  SPRUCE_WALL_SIGN: "izeizko kartela horman"
+  SPRUCE_WOOD: "izei egurra"
+  STICKY_PISTON: "pistoi itsaskorra"
+  STONE: "harria"
+  STONE_BRICK_SLAB: "harrizko adreiluzko lauza"
+  STONE_BRICK_STAIRS: "harri adreiluzko eskailerak"
+  STONE_BRICK_WALL: "harri adreiluzko pareta"
+  STONE_BRICKS: "harrizko adreiluak"
+  STONE_BUTTON: "harrizko botoia"
+  STONE_PRESSURE_PLATE: "harrizko presio plaka"
+  STONE_SLAB: "harrizko lauza"
+  STONE_STAIRS: "harrizko eskailerak"
+  STONECUTTER: "harriamozgailua"
+  STRIPPED_ACACIA_LOG: "azalik gabeko akazia enborra"
+  STRIPPED_ACACIA_WOOD: "azalik gabeko akazia egurra"
+  STRIPPED_BAMBOO_BLOCK: "azalik gabeko banbuzko blokea"
+  STRIPPED_BIRCH_LOG: "azalik gabeko urki enborra"
+  STRIPPED_BIRCH_WOOD: "azalik gabeko urki egurra"
+  STRIPPED_CHERRY_LOG: "azalik gabeko gereziondozko ohola"
+  STRIPPED_CHERRY_WOOD: "azalik gabeko gereziondozko egurra"
+  STRIPPED_CRIMSON_HYPHAE: "azalik gabeko hifa gorrimina"
+  STRIPPED_CRIMSON_STEM: "azalik gabeko zurtoin gorrimina"
+  STRIPPED_DARK_OAK_LOG: "azalik gabeko haritz ilun enborra"
+  STRIPPED_DARK_OAK_WOOD: "azalik gabeko haritz ilun egurra"
+  STRIPPED_JUNGLE_LOG: "azalik gabeko oihan enborra"
+  STRIPPED_JUNGLE_WOOD: "azalik gabeko oihan egurra"
+  STRIPPED_MANGROVE_LOG: "azalik gabeko mangle emborra"
+  STRIPPED_MANGROVE_WOOD: "azalik gabeko mangle egurra"
+  STRIPPED_OAK_LOG: "azalik gabeko haritz enborra"
+  STRIPPED_OAK_WOOD: "azalik gabeko haritz egurra"
+  STRIPPED_SPRUCE_LOG: "azalik gabeko izei enborra"
+  STRIPPED_SPRUCE_WOOD: "azalik gabeko izei egurra"
+  STRIPPED_WARPED_HYPHAE: "azalik gabeko hifa okertua"
+  STRIPPED_WARPED_STEM: "azalik gabeko zurtoin okertua"
+  STRUCTURE_BLOCK: "egitura blokea"
+  STRUCTURE_VOID: "egitura hutsunea"
+  SUGAR_CANE: "azukre kanabera"
+  SUNFLOWER: "eguzki-lorea"
+  SUSPICIOUS_GRAVEL: "hondar susmagarria"
+  SUSPICIOUS_SAND: "hondar susmagarria"
+  SWEET_BERRY_BUSH: "fruitu gozosko zuhaixka"
+  TALL_GRASS: "belar luzea"
+  TALL_SEAGRASS: "itsas-belar luzea"
+  TARGET: "helburua"
+  TERRACOTTA: "terrakota"
+  TINTED_GLASS: "kristal tindatua"
+  TNT: "dinamita"
+  TORCH: "argi-zuzia"
+  TORCHFLOWER: "lastargi-lorea"
+  TORCHFLOWER_CROP: "lastargi-lorezko uzta"
+  TRAPPED_CHEST: "tranpadun kutxa"
+  TRIAL_SPAWNER: "proba-sorgailua"
+  TRIPWIRE: "segada"
+  TRIPWIRE_HOOK: "segadaren lotura"
+  TUBE_CORAL: "hodizko korala"
+  TUBE_CORAL_BLOCK: "bizigabeko hodi koral blokea"
+  TUBE_CORAL_FAN: "hodizko korala"
+  TUBE_CORAL_WALL_FAN: "hodi koralaren horma-fan"
+  TUFF: "toba"
+  TUFF_BRICK_SLAB: "toba adreilu lauza"
+  TUFF_BRICK_STAIRS: "toba adreiluzko eskailerak"
+  TUFF_BRICK_WALL: "toba adreiluzko horma"
+  TUFF_BRICKS: "tobeko adreiluak"
+  TUFF_SLAB: "tobeko lauza"
+  TUFF_STAIRS: "tobeko eskailerak"
+  TUFF_WALL: "tobako horma"
+  TURTLE_EGG: "dortoka-arrautza"
+  TWISTING_VINES: "igokari okerra"
+  TWISTING_VINES_PLANT: "mahastien landarea bihurrituz"
+  VERDANT_FROGLIGHT: "igelargi berdea"
+  VINE: "igokaria"
+  VOID_AIR: "hutseko airea"
+  WALL_TORCH: "argi-zuzia horman"
+  WARPED_BUTTON: "botoi okertua"
+  WARPED_DOOR: "ate okertua"
+  WARPED_FENCE: "hesi okertua"
+  WARPED_FENCE_GATE: "hesi ate okertua"
+  WARPED_FUNGUS: "onddo okertua"
+  WARPED_HANGING_SIGN: "egur distortsionatuzko kartel esekia"
+  WARPED_HYPHAE: "hifa okertua"
+  WARPED_NYLIUM: "nezelio okertua"
+  WARPED_PLANKS: "ohol okertuak"
+  WARPED_PRESSURE_PLATE: "presio plaka okertua"
+  WARPED_ROOTS: "sustrai okertuak"
+  WARPED_SIGN: "kartel okertua"
+  WARPED_SLAB: "lauza okertua"
+  WARPED_STAIRS: "eskailera okertuak"
+  WARPED_STEM: "zurtoin okertua"
+  WARPED_TRAPDOOR: "tranpola okertua"
+  WARPED_WALL_HANGING_SIGN: "kartel esekia egurrezko horma deformatuan"
+  WARPED_WALL_SIGN: "kartel okertua horman"
+  WARPED_WART_BLOCK: "garatxo-bloke gaiztoa"
+  WATER: "ura"
+  WATER_CAULDRON: "ur pertza"
+  WAXED_CHISELED_COPPER: "kobre zizelatu argizaritua"
+  WAXED_COPPER_BLOCK: "ezkoztatutako kobrezko blokea"
+  WAXED_COPPER_BULB: "kobrezko bombilla argizaritua"
+  WAXED_COPPER_DOOR: "kobrezko ate argizaritua"
+  WAXED_COPPER_GRATE: "kobrezko parrilla argizaritua"
+  WAXED_COPPER_TRAPDOOR: "kobrezko eskotila argizaritua"
+  WAXED_CUT_COPPER: "ezkoztatutako moztutako kobrea"
+  WAXED_CUT_COPPER_SLAB: "ezkoztatutako moztutako kobrezko lauza"
+  WAXED_CUT_COPPER_STAIRS: "ezkoztatutako moztutako kobrezko eskailerak"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "ezkoztatutako kobre estalgabetua"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "ezkoztatutako moztutako kobre estalgabetua"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "ezkoztatutako moztutako kobrezko lauza estalgabetua"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "ezkoztatutako moztutako kobrezko eskailera estalgabetuak"
+  WAXED_OXIDIZED_CHISELED_COPPER: "kobre herdoildu zizelkatua eta argizaritua"
+  WAXED_OXIDIZED_COPPER: "ezkoztatutako kobre oxidatua"
+  WAXED_OXIDIZED_COPPER_BULB: "kobrezko bombilla herdoildu argizaritua"
+  WAXED_OXIDIZED_COPPER_DOOR: "kobrezko ate herdoildu argizaritua"
+  WAXED_OXIDIZED_COPPER_GRATE: "kobrezko parrilla herdoildu argizaritua"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "kobrezko eskotila herdoildu argizaritua"
+  WAXED_OXIDIZED_CUT_COPPER: "ezkoztatutako moztutako kobre oxidatua"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "ezkoztatutako moztutako kobrezko lauza oxidatua"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "ezkoztatutako moztutako kobrezko eskailera oxidatuak"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "ezkoztatutako kobre degradatua"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "ezkoztatutako moztutako kobre degradatua"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "ezkoztatutako moztutako kobrezko lauza degradatua"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "ezkoztatutako moztutako kobrezko eskailera degradatuak"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "kobre degradatua"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "moztutako kobre degradatua"
+  WEATHERED_CUT_COPPER_SLAB: "moztutako kobrezko lauza degradatua"
+  WEATHERED_CUT_COPPER_STAIRS: "moztutako kobrezko eskailera degradatuak"
+  WEEPING_VINES: "igokari negartiak"
+  WEEPING_VINES_PLANT: "mahatsondo negar landarea"
+  WET_SPONGE: "belaki bustia"
+  WHEAT: "gari uzta"
+  WHITE_BANNER: "zutoihal zuria"
+  WHITE_BED: "ohe zuria"
+  WHITE_CANDLE: "kandela zuria"
+  WHITE_CANDLE_CAKE: "tarta kandela zuriarekin"
+  WHITE_CARPET: "alfonbra zuria"
+  WHITE_CONCRETE: "hormigoi zuria"
+  WHITE_CONCRETE_POWDER: "zementu zuria"
+  WHITE_GLAZED_TERRACOTTA: "terrakota beiraztatu zuria"
+  WHITE_SHULKER_BOX: "shulker kutxa zuria"
+  WHITE_STAINED_GLASS: "kristal zuria"
+  WHITE_STAINED_GLASS_PANE: "kristalezko panel zuria"
+  WHITE_TERRACOTTA: "terrakota zuria"
+  WHITE_TULIP: "tulipa zuria"
+  WHITE_WOOL: "artile zuria"
+  WITHER_ROSE: "wither arrosa"
+  WITHER_SKELETON_SKULL: "wither eskeleto-garezurra"
+  WITHER_SKELETON_WALL_SKULL: "wither eskeleto-garezurra horman"
+  YELLOW_BANNER: "zutoihal horia"
+  YELLOW_BED: "ohe horia"
+  YELLOW_CANDLE: "kandela horia"
+  YELLOW_CANDLE_CAKE: "tarta kandela horiarekin"
+  YELLOW_CARPET: "hori koloreko alfonbra"
+  YELLOW_CONCRETE: "hormigoi horia"
+  YELLOW_CONCRETE_POWDER: "zementu horia"
+  YELLOW_GLAZED_TERRACOTTA: "terrakota beiraztatu horia"
+  YELLOW_SHULKER_BOX: "shulker kutxa horia"
+  YELLOW_STAINED_GLASS: "kristal horia"
+  YELLOW_STAINED_GLASS_PANE: "kristalezko panel horia"
+  YELLOW_TERRACOTTA: "terrakota horia"
+  YELLOW_WOOL: "artile horia"
+  ZOMBIE_HEAD: "zonbi-burua"
+  ZOMBIE_WALL_HEAD: "zonbi-burua paretan"
+  ACACIA_BOAT: "akaziazko txalupa"
+  ACACIA_CHEST_BOAT: "akaziazko txalupa kutxarekin"
+  ALLAY_SPAWN_EGG: "allay sortzaile arrautza"
+  AMETHYST_SHARD: "amatista puska"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "sagarra"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "armadurarentzako euskarria"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "gezia"
+  AXOLOTL_BUCKET: "axolote ontziratua"
+  AXOLOTL_SPAWN_EGG: "axolote sortzaile arrautza"
+  BAKED_POTATO: "patata errea"
+  BAMBOO_CHEST_RAFT: "bambuko batsa kofrerekin"
+  BAMBOO_RAFT: "bambuko baltsa"
+  BAT_SPAWN_EGG: "saguzar sortzaile arrautza"
+  BEE_SPAWN_EGG: "erle sortzaile arrautza"
+  BEEF: "txekor gordina"
+  BEETROOT: "erremolatxa"
+  BEETROOT_SEEDS: "erremolatxa-hazia"
+  BEETROOT_SOUP: "erremolatxa zopa"
+  BIRCH_BOAT: "urkizko txalupa"
+  BIRCH_CHEST_BOAT: "urkizko txalupa kutxarekin"
+  BLACK_DYE: "tindagai beltza"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "sutzarraren hautsa"
+  BLAZE_ROD: "sutzarraren hagaxka"
+  BLAZE_SPAWN_EGG: "sutzar sortzaile arrautza"
+  BLUE_DYE: "tindagai urdina"
+  BONE: "hezurra"
+  BONE_MEAL: "hezur hautsa"
+  BOOK: "liburua"
+  BOW: "arkua"
+  BOWL: "katilua"
+  BREAD: "ogia"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BREWING_STAND: "edabeetarako euskarria"
+  BRICK: "adreilua"
+  BROWN_DYE: "tindagai marroia"
+  BRUSH: "brotxa"
+  BUCKET: "ontzia"
+  BUNDLE: "poltsa"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "gamelu-sorgailua"
+  CARROT: "azenarioa"
+  CARROT_ON_A_STICK: "azenarioa makila batekin"
+  CAT_SPAWN_EGG: "katu sortzaile arrautza"
+  CAVE_SPIDER_SPAWN_EGG: "kobazuloetako armiarma sortzaile arrautza"
+  CHAINMAIL_BOOTS: "kotazko botak"
+  CHAINMAIL_CHESTPLATE: "kotazko bular-oskola"
+  CHAINMAIL_HELMET: "kotazko kaskoa"
+  CHAINMAIL_LEGGINGS: "kotazko zangoak"
+  CHARCOAL: "egur-ikatza"
+  CHERRY_BOAT: "gereziondozko botea"
+  CHERRY_CHEST_BOAT: "gereziondozko botea kutxarekin"
+  CHEST_MINECART: "bagoneta kutxarekin"
+  CHICKEN: "oilasko gordina"
+  CHICKEN_SPAWN_EGG: "oilo sortzaile arrautza"
+  CHORUS_FRUIT: "koral fruta"
+  CLAY_BALL: "buztinezko bola"
+  CLOCK: "erlojua"
+  COAL: "ikatza"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "kakao aleak"
+  COD: "bakailao gordina"
+  COD_BUCKET: "bakailao ontziratua"
+  COD_SPAWN_EGG: "bakailao sortzaile arrautza"
+  COMMAND_BLOCK_MINECART: "bagoneta agindu blokearekin"
+  COMPASS: "iparrorratza"
+  COOKED_BEEF: "xerra"
+  COOKED_CHICKEN: "oilasko errea"
+  COOKED_COD: "bakailao errea"
+  COOKED_MUTTON: "bildots errea"
+  COOKED_PORKCHOP: "txerri txuleta errea"
+  COOKED_RABBIT: "untxi errea"
+  COOKED_SALMON: "izokin errea"
+  COOKIE: "galleta"
+  COPPER_INGOT: "kobrezko lingotea"
+  COW_SPAWN_EGG: "behi sortzaile arrautza"
+  CREEPER_BANNER_PATTERN: "zutoihal-diseinua"
+  CREEPER_BANNER_PATTERN_DESC: "creeper-estanpatua"
+  CREEPER_SPAWN_EGG: "creeper sortzaile arrautza"
+  CROSSBOW: "balezta"
+  CROSSBOW_PROJECTILE: "jaurtigaia:"
+  CYAN_DYE: "zian koloreko tindagaia"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "haritz ilunezko txalupa"
+  DARK_OAK_CHEST_BOAT: "haritz ilunezko txalupa kutxarekin"
+  DEBUG_STICK: "garatzaile makila"
+  DEBUG_STICK_EMPTY: "%s-ek ez dauka propietaterik"
+  DEBUG_STICK_SELECT: "hautatutako \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" %s(e)ra"
+  DIAMOND: "diamantea"
+  DIAMOND_AXE: "diamantezko aizkora"
+  DIAMOND_BOOTS: "diamantezko botak"
+  DIAMOND_CHESTPLATE: "diamantezko bular-oskola"
+  DIAMOND_HELMET: "diamantezko kaskoa"
+  DIAMOND_HOE: "diamantezko aitzurra"
+  DIAMOND_HORSE_ARMOR: "diamantezko zaldi-armadura"
+  DIAMOND_LEGGINGS: "diamantezko zangoak"
+  DIAMOND_PICKAXE: "diamantezko pikotxa"
+  DIAMOND_SHOVEL: "diamantezko pala"
+  DIAMOND_SWORD: "diamantezko ezpata"
+  DISC_FRAGMENT_5: "disko puska"
+  DISC_FRAGMENT_5_DESC: "musika diskoa - 5"
+  DOLPHIN_SPAWN_EGG: "izurde sortzaile arrautza"
+  DONKEY_SPAWN_EGG: "asto sortzaile arrautza"
+  DRAGON_BREATH: "dragoiaren hatsa"
+  DRIED_KELP: "lehortutako algak"
+  DROWNED_SPAWN_EGG: "ito sortzaile arrautza"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "oihartzun puska"
+  EGG: "arrautza"
+  ELDER_GUARDIAN_SPAWN_EGG: "zaindari nagusi sortzaile arrautza"
+  ELYTRA: "elitroak"
+  EMERALD: "esmeralda"
+  ENCHANTED_BOOK: "sorgindutako liburua"
+  ENCHANTED_GOLDEN_APPLE: "sorgindutako urrezko sagarra"
+  END_CRYSTAL: "amaierako kristala"
+  ENDER_DRAGON_SPAWN_EGG: "ender dragoi sortzaile arrautza"
+  ENDER_EYE: "ender begia"
+  ENDER_PEARL: "ender perla"
+  ENDERMAN_SPAWN_EGG: "enderman sortzaile arrautza"
+  ENDERMITE_SPAWN_EGG: "endermite sortzaile arrautza"
+  EVOKER_SPAWN_EGG: "inbokatzaile sortzaile arrautza"
+  EXPERIENCE_BOTTLE: "sorginkeri botila"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  FEATHER: "luma"
+  FERMENTED_SPIDER_EYE: "legamiatutako armiarma begiak"
+  FILLED_MAP: "mapa"
+  FIRE_CHARGE: "su-bola"
+  FIREWORK_ROCKET: "suziria"
+  FIREWORK_ROCKET_FLIGHT: "hegaldi iraupena:"
+  FIREWORK_STAR: "suziri izarra"
+  FIREWORK_STAR_BLACK: "beltza"
+  FIREWORK_STAR_BLUE: "urdina"
+  FIREWORK_STAR_BROWN: "marroia"
+  FIREWORK_STAR_CUSTOM_COLOR: "pertsonalizatua"
+  FIREWORK_STAR_CYAN: "zian"
+  FIREWORK_STAR_FADE_TO: "aldatu"
+  FIREWORK_STAR_FLICKER: "dirdira"
+  FIREWORK_STAR_GRAY: "grisa"
+  FIREWORK_STAR_GREEN: "berdea"
+  FIREWORK_STAR_LIGHT_BLUE: "urdin argia"
+  FIREWORK_STAR_LIGHT_GRAY: "gris argia"
+  FIREWORK_STAR_LIME: "lima"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "laranja"
+  FIREWORK_STAR_PINK: "arrosa"
+  FIREWORK_STAR_PURPLE: "morea"
+  FIREWORK_STAR_RED: "gorria"
+  FIREWORK_STAR_SHAPE: "forma ezezaguna"
+  FIREWORK_STAR_SHAPE_BURST: "eztanda"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeper formarekin"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "bola handia"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "bola txikia"
+  FIREWORK_STAR_SHAPE_STAR: "izar-formarekin"
+  FIREWORK_STAR_TRAIL: "arrasto"
+  FIREWORK_STAR_WHITE: "zuria"
+  FIREWORK_STAR_YELLOW: "horia"
+  FISHING_ROD: "arrantzarako kanabera"
+  FLINT: "suharria"
+  FLINT_AND_STEEL: "suharria eta burdina"
+  FLOWER_BANNER_PATTERN: "zutoihal-diseinua"
+  FLOWER_BANNER_PATTERN_DESC: "lore-estanpatua"
+  FLOWER_POT: "loreontzia"
+  FOX_SPAWN_EGG: "azeri sortzaile arrautza"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "igel sortzaile arrautza"
+  FURNACE_MINECART: "bagoneta labearekin"
+  GHAST_SPAWN_EGG: "ghast sortzaile arrautza"
+  GHAST_TEAR: "ghast malkoa"
+  GLASS_BOTTLE: "kristalezko botila"
+  GLISTERING_MELON_SLICE: "meloi distiratsu zatia"
+  GLOBE_BANNER_PATTERN: "zutoihal-diseinua"
+  GLOBE_BANNER_PATTERN_DESC: "planeta-estanpatua"
+  GLOW_BERRIES: "fruitu distiratsuak"
+  GLOW_INK_SAC: "tinta distiratsu zakua"
+  GLOW_ITEM_FRAME: "markodun elementu distiratsua"
+  GLOW_SQUID_SPAWN_EGG: "txibia disdiratsu sortzaile arrautza"
+  GLOWSTONE_DUST: "argi-harriaren hautsa"
+  GOAT_HORN: "ahuntz adarra"
+  GOAT_SPAWN_EGG: "ahuntz sortzaile arrautza"
+  GOLD_INGOT: "urrezko lingotea"
+  GOLD_NUGGET: "urrezko pipitak"
+  GOLDEN_APPLE: "urrezko sagarra"
+  GOLDEN_AXE: "urrezko aizkora"
+  GOLDEN_BOOTS: "urrezko botak"
+  GOLDEN_CARROT: "urrezko azenarioa"
+  GOLDEN_CHESTPLATE: "urrezko bular-oskola"
+  GOLDEN_HELMET: "urrezko kaskoa"
+  GOLDEN_HOE: "urrezko aitzurra"
+  GOLDEN_HORSE_ARMOR: "urrezko zaldi-armadura"
+  GOLDEN_LEGGINGS: "urrezko zangoak"
+  GOLDEN_PICKAXE: "urrezko pikotxa"
+  GOLDEN_SHOVEL: "urrezko pala"
+  GOLDEN_SWORD: "urrezko ezpata"
+  GRAY_DYE: "tindagai grisa"
+  GREEN_DYE: "tindagai berdea"
+  GUARDIAN_SPAWN_EGG: "zaindari sortzaile arrautza"
+  GUNPOWDER: "bolbora"
+  HEART_OF_THE_SEA: "itsasoaren bihotza"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "hoglin sortzaile arrautza"
+  HONEY_BOTTLE: "botila bat ezti"
+  HONEYCOMB: "eztiorrazi"
+  HOPPER_MINECART: "bagoneta kalapatxarekin"
+  HORSE_SPAWN_EGG: "zaldi sortzaile arrautza"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "zonbie momifikatu sortzaile arrautza"
+  INK_SAC: "tinta zakua"
+  IRON_AXE: "burdinazko aizkora"
+  IRON_BOOTS: "burdinazko botak"
+  IRON_CHESTPLATE: "burdinazko bular-oskola"
+  IRON_GOLEM_SPAWN_EGG: "burdinezko golem sortzaile arrautza"
+  IRON_HELMET: "burdinazko kaskoa"
+  IRON_HOE: "burdinazko aitzurra"
+  IRON_HORSE_ARMOR: "burdinazko zaldi-armadura"
+  IRON_INGOT: "burdinazko lingotea"
+  IRON_LEGGINGS: "burdinazko zangoak"
+  IRON_NUGGET: "burdinezko pipitak"
+  IRON_PICKAXE: "burdinazko pikotxa"
+  IRON_SHOVEL: "burdinazko pala"
+  IRON_SWORD: "burdinazko ezpata"
+  ITEM_FRAME: "markodun elementua"
+  JUNGLE_BOAT: "oihan zurezko txalupa"
+  JUNGLE_CHEST_BOAT: "oihanezko txalupa kutxarekin"
+  KNOWLEDGE_BOOK: "entziklopedia"
+  LAPIS_LAZULI: "lapis lazulia"
+  LAVA_BUCKET: "laba ontzia"
+  LEAD: "soka"
+  LEATHER: "larrua"
+  LEATHER_BOOTS: "larruzko botak"
+  LEATHER_CHESTPLATE: "larruzko tunika"
+  LEATHER_HELMET: "larruzko txapela"
+  LEATHER_HORSE_ARMOR: "larruzko zaldi-armadura"
+  LEATHER_LEGGINGS: "larruzko galtzak"
+  LIGHT_BLUE_DYE: "tindagai urdin argia"
+  LIGHT_GRAY_DYE: "tindagai gris argia"
+  LIME_DYE: "lima koloreko tindagaia"
+  LINGERING_POTION: "edabe iraunkorra"
+  LINGERING_POTION_EFFECT_AWKWARD: "edabe misteriotsu iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_EMPTY: "edabe ezezagun iraunkorra"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "suaren aurkako edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_HARMING: "min egiteko edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_HEALING: "sendatzeko edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "ikusezintasunaren edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_LEAPING: "jauzi egiteko edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_LEVITATION: "lebitazio edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_LUCK: "zorte edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_MUNDANE: "edabe arrunt iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "gaueko ikusmenaren edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_POISON: "pozoidun edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_REGENERATION: "birsorkuntza edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "erorketa geldoaren edabe luzea"
+  LINGERING_POTION_EFFECT_SLOWNESS: "geldotasun edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_STRENGTH: "indar edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "azkartasun edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_THICK: "edabe lodi iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "dortoka maisuaren edabe iraunkorra"
+  LINGERING_POTION_EFFECT_WATER: "ur botila iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "urpean arnasteko edabe iraunkor jaurtigarria"
+  LINGERING_POTION_EFFECT_WEAKNESS: "ahultasun edabe iraunkor jaurtigarria"
+  LLAMA_SPAWN_EGG: "llama sortzaile arrautza"
+  LODESTONE_COMPASS: "harrizko iparrorratza"
+  MAGENTA_DYE: "tindagai magenta"
+  MAGMA_CREAM: "magma krema"
+  MAGMA_CUBE_SPAWN_EGG: "magma kubo sortzaile arrautza"
+  MANGROVE_BOAT: "manglezko txalupa"
+  MANGROVE_CHEST_BOAT: "manglezko txalupa kutxarekin"
+  MAP: "mapa hutsa"
+  MELON_SEEDS: "meloiaren haziak"
+  MELON_SLICE: "meloi zatia"
+  MILK_BUCKET: "esnea ontzia"
+  MINECART: "bagoneta"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "zutoihal-diseinua"
+  MOJANG_BANNER_PATTERN_DESC: "mojang-estanpatua"
+  MOOSHROOM_SPAWN_EGG: "perretxiko-behi sortzaile arrautza"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "mando sortzaile arrautza"
+  MUSHROOM_STEW: "perretxiko erregosia"
+  MUSIC_DISC_11: "musika diskoa"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "musika diskoa"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "musika diskoa"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "musika diskoa"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "musika diskoa"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "musika diskoa"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "musika diskoa"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "musika diskoa"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "musika diskoa"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "musika diskoa"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "musika diskoa"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "musika diskoa"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relikia"
+  MUSIC_DISC_STAL: "musika diskoa"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "musika diskoa"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "musika diskoa"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "musika diskoa"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "bildots gordina"
+  NAME_TAG: "izen etiketa"
+  NAUTILUS_SHELL: "barraskilo oskola"
+  NETHER_BRICK: "netherreko adreilua"
+  NETHER_STAR: "netherreko izarra"
+  NETHER_WART: "azpimunduko garatxoa"
+  NETHERITE_AXE: "netheritazko aizkora"
+  NETHERITE_BOOTS: "netheritazko botak"
+  NETHERITE_CHESTPLATE: "netheritazko bular-oskola"
+  NETHERITE_HELMET: "netheritazko kaskoa"
+  NETHERITE_HOE: "netheritazko aitzurra"
+  NETHERITE_INGOT: "netheritazko lingotea"
+  NETHERITE_LEGGINGS: "netheritazko zangoak"
+  NETHERITE_PICKAXE: "netheritazko pikotxa"
+  NETHERITE_SCRAP: "netheritazko puskak"
+  NETHERITE_SHOVEL: "netheritazko pala"
+  NETHERITE_SWORD: "netheritazko ezpata"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "haritzezko txalupa"
+  OAK_CHEST_BOAT: "haritzezko txalupa kutxarekin"
+  OCELOT_SPAWN_EGG: "ozelote sortzaile arrautza"
+  ORANGE_DYE: "tindagai laranja"
+  PAINTING: "margolana"
+  PANDA_SPAWN_EGG: "panda sortzaile arrautza"
+  PAPER: "papera"
+  PARROT_SPAWN_EGG: "loro sortzaile arrautza"
+  PHANTOM_MEMBRANE: "mamu-mintza"
+  PHANTOM_SPAWN_EGG: "mamu sortzaile arrautza"
+  PIG_SPAWN_EGG: "txerri sortzaile arrautza"
+  PIGLIN_BANNER_PATTERN: "zutoihal-diseinua"
+  PIGLIN_BANNER_PATTERN_DESC: "mutur-estanpatua"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin bortitz sortzaile arrautza"
+  PIGLIN_SPAWN_EGG: "piglin sortzaile arrautza"
+  PILLAGER_SPAWN_EGG: "arpilatzaile sortzaile arrautza"
+  PINK_DYE: "tindagai arrosa"
+  PITCHER_PLANT: "pitcher plant"
+  PITCHER_POD: "pitcher pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "patata pozoitsua"
+  POLAR_BEAR_SPAWN_EGG: "hartz polar sortzaile arrautza"
+  POPPED_CHORUS_FRUIT: "koral fruta errea"
+  PORKCHOP: "txerri txuleta gordina"
+  POTATO: "patata"
+  POTION: "edabea"
+  POTION_EFFECT_AWKWARD: "edabe misteriotsua"
+  POTION_EFFECT_EMPTY: "edabea egin ezina"
+  POTION_EFFECT_FIRE_RESISTANCE: "suaren aurkako edabea"
+  POTION_EFFECT_HARMING: "min edabea"
+  POTION_EFFECT_HEALING: "sendatzeko edabea"
+  POTION_EFFECT_INVISIBILITY: "ikusezintasunezko edabea"
+  POTION_EFFECT_LEAPING: "jauzi egiteko edabea"
+  POTION_EFFECT_LEVITATION: "lebitazio edabea"
+  POTION_EFFECT_LUCK: "zorte edabea"
+  POTION_EFFECT_MUNDANE: "efekturik gabeko edabea"
+  POTION_EFFECT_NIGHT_VISION: "gauean ikusteko edabea"
+  POTION_EFFECT_POISON: "pozoi edabea"
+  POTION_EFFECT_REGENERATION: "birsorkuntza edabea"
+  POTION_EFFECT_SLOW_FALLING: "erorketa moteleko edabea"
+  POTION_EFFECT_SLOWNESS: "geldotasun edabea"
+  POTION_EFFECT_STRENGTH: "indar edabea"
+  POTION_EFFECT_SWIFTNESS: "azkartasun edabea"
+  POTION_EFFECT_THICK: "edabe lodia"
+  POTION_EFFECT_TURTLE_MASTER: "dortoka maisuaren edabea"
+  POTION_EFFECT_WATER: "botila bat ur"
+  POTION_EFFECT_WATER_BREATHING: "urpean arnasteko edabea"
+  POTION_EFFECT_WEAKNESS: "ahultasun edabea"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "elur-hauts ontzia"
+  PRISMARINE_CRYSTALS: "prismarina kristalak"
+  PRISMARINE_SHARD: "prismarina puska"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "globo-arraina"
+  PUFFERFISH_BUCKET: "globo-arrain ontziratua"
+  PUFFERFISH_SPAWN_EGG: "globo-arrain sortzaile arrautza"
+  PUMPKIN_PIE: "kalabaza pastela"
+  PUMPKIN_SEEDS: "kalabaza-haziak"
+  PURPLE_DYE: "tindagai morea"
+  QUARTZ: "netherreko kuartzoa"
+  RABBIT: "untxi gordina"
+  RABBIT_FOOT: "untxi hanka"
+  RABBIT_HIDE: "untxi-larrua"
+  RABBIT_SPAWN_EGG: "untxi sortzaile arrautza"
+  RABBIT_STEW: "untxi erregosia"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "suntsitzaile sortzaile arrautza"
+  RAW_COPPER: "kobre gordina"
+  RAW_GOLD: "urre gordina"
+  RAW_IRON: "burdin gordina"
+  RECOVERY_COMPASS: "berreskuratze-iparrorratza"
+  RED_DYE: "tindagai gorria"
+  REDSTONE: "redstone-hautsa"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "haragi usteldua"
+  SADDLE: "zaltokia"
+  SALMON: "izokin gordina"
+  SALMON_BUCKET: "izokin ontziratua"
+  SALMON_SPAWN_EGG: "izokin sortzaile arrautza"
+  SCUTE: "dortoka ezkata"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "guraizeak"
+  SHEEP_SPAWN_EGG: "ardi sortzaile arrautza"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "ezkutua"
+  SHIELD_BLACK: "ezkutu beltza"
+  SHIELD_BLUE: "ezkutu urdina"
+  SHIELD_BROWN: "ezkutu marroia"
+  SHIELD_CYAN: "zian koloreko ezkutua"
+  SHIELD_GRAY: "ezkutu grisa"
+  SHIELD_GREEN: "ezkutu berdea"
+  SHIELD_LIGHT_BLUE: "ezkutu urdin argia"
+  SHIELD_LIGHT_GRAY: "ezkutu gris argia"
+  SHIELD_LIME: "lima koloreko ezkutua"
+  SHIELD_MAGENTA: "ezkutu magenta"
+  SHIELD_ORANGE: "ezkutu laranja"
+  SHIELD_PINK: "ezkutu arroxa"
+  SHIELD_PURPLE: "ezkutu morea"
+  SHIELD_RED: "ezkutu gorria"
+  SHIELD_WHITE: "ezkutu zuria"
+  SHIELD_YELLOW: "ezkutu horia"
+  SHULKER_SHELL: "shulker oskola"
+  SHULKER_SPAWN_EGG: "shulker sortzaile arrautza"
+  SIGN: "kartela"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SILVERFISH_SPAWN_EGG: "zilar-arrain sortzaile arrautza"
+  SKELETON_HORSE_SPAWN_EGG: "eskeleto-zaldi sortzaile arrautza"
+  SKELETON_SPAWN_EGG: "eskeleto sortzaile arrautza"
+  SKULL_BANNER_PATTERN: "zutoihal-diseinua"
+  SKULL_BANNER_PATTERN_DESC: "garezur-estanpatua"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "skull pottery sherd"
+  SLIME_BALL: "likati-bola"
+  SLIME_SPAWN_EGG: "slime sortzaile arrautza"
+  SMITHING_TEMPLATE: "smithing template"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "add ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "add a piece of armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "lingoteak & kristalak"
+  SMITHING_TEMPLATE_INGREDIENTS: "osagaiak:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "netheritazko lingotea ipini"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamantezko ekipamendua"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "add diamond armor weapon or tool"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheritazko lingotea"
+  SMITHING_TEMPLATE_UPGRADE: "eguneratu: "
+  SNIFFER_SPAWN_EGG: "sniffer arrautz sortzaile"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "elurrezko golem sortzaile arrautza"
+  SNOWBALL: "elur bola"
+  SPECTRAL_ARROW: "gezi espektrala"
+  SPIDER_EYE: "armiarmaren begia"
+  SPIDER_SPAWN_EGG: "armiarma sortzaile arrautza"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "jaurtitzeko edabea"
+  SPLASH_POTION_EFFECT_AWKWARD: "edabe misteriotsu jaurtigarria"
+  SPLASH_POTION_EFFECT_EMPTY: "landu ezin daitekeen edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "suaren aurkako edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_HARMING: "min egiteko edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_HEALING: "sendatzeko edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "ikusezintasunaren edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_LEAPING: "jauzi egiteko edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_LEVITATION: "lebitazio edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_LUCK: "zortearen edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_MUNDANE: "edabe arrunt jaurtigarria"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "gaueko ikusmenaren edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_POISON: "pozoidun edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_REGENERATION: "birsorkuntza edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "erorketa moteleko edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_SLOWNESS: "geldotasun edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_STRENGTH: "indar edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "azkartasun edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_THICK: "edabe lodi jaurtigarria"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "dortoka maisuaren edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_WATER: "ur botila jaurtigarria"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "urpean arnasteko edabe jaurtigarria"
+  SPLASH_POTION_EFFECT_WEAKNESS: "ahultasun edabe jaurtigarria"
+  SPRUCE_BOAT: "izeizko txalupa"
+  SPRUCE_CHEST_BOAT: "izeizko txalupa kutxarekin"
+  SPYGLASS: "kataloxa"
+  SQUID_SPAWN_EGG: "txibia sortzaile arrautza"
+  STICK: "makila"
+  STONE_AXE: "harrizko aizkora"
+  STONE_HOE: "harrizko aitzurra"
+  STONE_PICKAXE: "harrizko pikotxa"
+  STONE_SHOVEL: "harrizko pala"
+  STONE_SWORD: "harrizko ezpata"
+  STRAY_SPAWN_EGG: "eskeleto glazial sortzaile arrautza"
+  STRIDER_SPAWN_EGG: "zangokari sortzaile arrautza"
+  STRING: "haria"
+  SUGAR: "azukrea"
+  SUSPICIOUS_STEW: "erregosi susmagarria"
+  SWEET_BERRIES: "fruitu gozoak"
+  TADPOLE_BUCKET: "zapaburu ontziratua"
+  TADPOLE_SPAWN_EGG: "zapaburu sortzaile arrautza"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "gezi inpregnatua"
+  TIPPED_ARROW_EFFECT_AWKWARD: "gezi inpregnatua"
+  TIPPED_ARROW_EFFECT_EMPTY: "efektudun gezi eraikiezina"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "suaren aurkako erresistentzia gezia"
+  TIPPED_ARROW_EFFECT_HARMING: "min gezia"
+  TIPPED_ARROW_EFFECT_HEALING: "sendatze gezia"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "ikusezintasun gezia"
+  TIPPED_ARROW_EFFECT_LEAPING: "jauzi bultzada gezia"
+  TIPPED_ARROW_EFFECT_LEVITATION: "lebitazio gezia"
+  TIPPED_ARROW_EFFECT_LUCK: "zorte gezia"
+  TIPPED_ARROW_EFFECT_MUNDANE: "gezi inpregnatua"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "gauen ikusteko gezia"
+  TIPPED_ARROW_EFFECT_POISON: "pozoi gezia"
+  TIPPED_ARROW_EFFECT_REGENERATION: "birsorkuntza gezia"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "erorketa moteleko gezia"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "geldotasun gezia"
+  TIPPED_ARROW_EFFECT_STRENGTH: "indar gezia"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "azkartasun gezia"
+  TIPPED_ARROW_EFFECT_THICK: "gezi inpregnatua"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "dortoka maisuaren gezia"
+  TIPPED_ARROW_EFFECT_WATER: "gezi zipliztintzailea"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "urpean arnasteko gezia"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "ahultasun gezia"
+  TNT_MINECART: "bagoneta dinamitarekin"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "hilezkortasun totema"
+  TRADER_LLAMA_SPAWN_EGG: "llama ibiltari agerpen arrautza"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "hiruhortza"
+  TROPICAL_FISH: "arrain tropikala"
+  TROPICAL_FISH_BUCKET: "arrain tropikal ontziratua"
+  TROPICAL_FISH_SPAWN_EGG: "arrain tropikal sortzaile arrautza"
+  TURTLE_HELMET: "dortoka-oskola"
+  TURTLE_SPAWN_EGG: "dortoka sortzaile arrautza"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "arima sortzaile arrautza"
+  VILLAGER_SPAWN_EGG: "herritar sortzaile arrautza"
+  VINDICATOR_SPAWN_EGG: "erasotzaile sortzaile arrautza"
+  WANDERING_TRADER_SPAWN_EGG: "saltzaile ibiltari agerpen arrautza"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "jagole itsu sortzaile arrautza"
+  WARPED_FUNGUS_ON_A_STICK: "onddo okertua makila batean"
+  WATER_BUCKET: "ur ontzia"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "garia"
+  WHEAT_SEEDS: "gari haziak"
+  WHITE_DYE: "tindagai zuria"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "sorgin sortzaile arrautza"
+  WITHER_SKELETON_SPAWN_EGG: "wither eskeleto sortzaile arrautza"
+  WITHER_SPAWN_EGG: "wither sortzaile arrautza"
+  WOLF_SPAWN_EGG: "otso sortzaile arrautza"
+  WOODEN_AXE: "zurezko aizkora"
+  WOODEN_HOE: "zurezko aitzurra"
+  WOODEN_PICKAXE: "zurezko pikotxa"
+  WOODEN_SHOVEL: "zurezko pala"
+  WOODEN_SWORD: "zurezko ezpata"
+  WRITABLE_BOOK: "liburua eta idazluma"
+  WRITTEN_BOOK: "idatzitako liburua"
+  YELLOW_DYE: "tindagai horia"
+  ZOGLIN_SPAWN_EGG: "zoglin sortzaile arrautza"
+  ZOMBIE_HORSE_SPAWN_EGG: "zonbi-zaldi sortzaile arrautza"
+  ZOMBIE_SPAWN_EGG: "zonbi sortzaile arrautza"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "herritar zonbifikatu sortzaile arrautza"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "piglin zonbifikatu sortzaile arrautza"
+  CHEST: "gorputzean:"
+  FEET: "oinetan:"
+  HEAD: "buruan:"
+  LEGS: "hanketan:"
+  MAINHAND: "esku nagusian:"
+  OFFHAND: "bigarren eskuan:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

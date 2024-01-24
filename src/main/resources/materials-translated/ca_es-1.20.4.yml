@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "botó d'acàcia"
+  ACACIA_DOOR: "porta d'acàcia"
+  ACACIA_FENCE: "tanca d'acàcia"
+  ACACIA_FENCE_GATE: "porta de tanca d'acàcia"
+  ACACIA_HANGING_SIGN: "cartell penjant d'acàcia"
+  ACACIA_LEAVES: "fulles d'acàcia"
+  ACACIA_LOG: "tronc d'acàcia"
+  ACACIA_PLANKS: "fusta d'acàcia"
+  ACACIA_PRESSURE_PLATE: "placa de pressió d'acàcia"
+  ACACIA_SAPLING: "esqueix d'acàcia"
+  ACACIA_SIGN: "cartell d'acàcia"
+  ACACIA_SLAB: "llosa d'acàcia"
+  ACACIA_STAIRS: "escales d'acàcia"
+  ACACIA_TRAPDOOR: "trapa d'acàcia"
+  ACACIA_WALL_HANGING_SIGN: "cartell penjant d'acàcia amb suport"
+  ACACIA_WALL_SIGN: "cartell d'acàcia a la paret"
+  ACACIA_WOOD: "fusta d'acàcia"
+  ACTIVATOR_RAIL: "rail activador"
+  AIR: "aire"
+  ALLIUM: "all bord"
+  AMETHYST_BLOCK: "bloc d'ametista"
+  AMETHYST_CLUSTER: "cúmul d'ametista"
+  ANCIENT_DEBRIS: "restes ancestrals"
+  ANDESITE: "andesita"
+  ANDESITE_SLAB: "llosa d'andesita"
+  ANDESITE_STAIRS: "escales d'andesita"
+  ANDESITE_WALL: "mur d'andesita"
+  ANVIL: "enclusa"
+  ATTACHED_MELON_STEM: "tija de síndria connectada"
+  ATTACHED_PUMPKIN_STEM: "tija de carbassa connectada"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "fulles d'azalea"
+  AZURE_BLUET: "houstonia caerulea"
+  BAMBOO: "bambú"
+  BAMBOO_BLOCK: "bloc de bambú"
+  BAMBOO_BUTTON: "botó de bambú"
+  BAMBOO_DOOR: "porta de bambú"
+  BAMBOO_FENCE: "tanca de bambú"
+  BAMBOO_FENCE_GATE: "porta de tanca de bambú"
+  BAMBOO_HANGING_SIGN: "cartell penjant de bambú"
+  BAMBOO_MOSAIC: "bambú entrellaçat"
+  BAMBOO_MOSAIC_SLAB: "llosa de bambú entrellaçat"
+  BAMBOO_MOSAIC_STAIRS: "escales de bambú entrellaçat"
+  BAMBOO_PLANKS: "fusta de bambú"
+  BAMBOO_PRESSURE_PLATE: "placa de pressió de bambú"
+  BAMBOO_SAPLING: "brot de bambú"
+  BAMBOO_SIGN: "cartell de bambú"
+  BAMBOO_SLAB: "llosa de bambú"
+  BAMBOO_STAIRS: "escales de bambú"
+  BAMBOO_TRAPDOOR: "trapa de bambú"
+  BAMBOO_WALL_HANGING_SIGN: "cartell penjant de bambú amb suport"
+  BAMBOO_WALL_SIGN: "cartell de bambú a la paret"
+  BANNER_BASE_BLACK: "camp de sable"
+  BANNER_BASE_BLUE: "camp d'atzur"
+  BANNER_BASE_BROWN: "camp marró"
+  BANNER_BASE_CYAN: "camp cian"
+  BANNER_BASE_GRAY: "camp gris"
+  BANNER_BASE_GREEN: "camp de sinople"
+  BANNER_BASE_LIGHT_BLUE: "camp blau cel"
+  BANNER_BASE_LIGHT_GRAY: "camp d'argent"
+  BANNER_BASE_LIME: "camp llima"
+  BANNER_BASE_MAGENTA: "camp magenta"
+  BANNER_BASE_ORANGE: "camp ataronjat"
+  BANNER_BASE_PINK: "camp rosa"
+  BANNER_BASE_PURPLE: "camp de porpra"
+  BANNER_BASE_RED: "camp de gules"
+  BANNER_BASE_WHITE: "camp blanc"
+  BANNER_BASE_YELLOW: "camp d'or"
+  BANNER_BORDER_BLACK: "bordura de sable"
+  BANNER_BORDER_BLUE: "bordura d'atzur"
+  BANNER_BORDER_BROWN: "bordura marró"
+  BANNER_BORDER_CYAN: "bordura cian"
+  BANNER_BORDER_GRAY: "bordura grisa"
+  BANNER_BORDER_GREEN: "bordura de sinople"
+  BANNER_BORDER_LIGHT_BLUE: "bordura blau cel"
+  BANNER_BORDER_LIGHT_GRAY: "bordura d'argent"
+  BANNER_BORDER_LIME: "bordura llima"
+  BANNER_BORDER_MAGENTA: "bordura magenta"
+  BANNER_BORDER_ORANGE: "bordura ataronjada"
+  BANNER_BORDER_PINK: "bordura rosa"
+  BANNER_BORDER_PURPLE: "bordura de porpra"
+  BANNER_BORDER_RED: "bordura de gules"
+  BANNER_BORDER_WHITE: "bordura blanca"
+  BANNER_BORDER_YELLOW: "bordura d'or"
+  BANNER_BRICKS_BLACK: "maçonat de sable"
+  BANNER_BRICKS_BLUE: "maçonat d'atzur"
+  BANNER_BRICKS_BROWN: "maçonat marró"
+  BANNER_BRICKS_CYAN: "maçonat cian"
+  BANNER_BRICKS_GRAY: "maçonat gris"
+  BANNER_BRICKS_GREEN: "maçonat de sinople"
+  BANNER_BRICKS_LIGHT_BLUE: "maçonat blau cel"
+  BANNER_BRICKS_LIGHT_GRAY: "maçonat d'argent"
+  BANNER_BRICKS_LIME: "maçonat llima"
+  BANNER_BRICKS_MAGENTA: "maçonat magenta"
+  BANNER_BRICKS_ORANGE: "maçonat ataronjat"
+  BANNER_BRICKS_PINK: "maçonat rosa"
+  BANNER_BRICKS_PURPLE: "maçonat de porpra"
+  BANNER_BRICKS_RED: "maçonat de gules"
+  BANNER_BRICKS_WHITE: "maçonat blanc"
+  BANNER_BRICKS_YELLOW: "maçonat d'or"
+  BANNER_CIRCLE_BLACK: "rodella de sable"
+  BANNER_CIRCLE_BLUE: "rodella d'atzur"
+  BANNER_CIRCLE_BROWN: "rodella marró"
+  BANNER_CIRCLE_CYAN: "rodella cian"
+  BANNER_CIRCLE_GRAY: "rodella grisa"
+  BANNER_CIRCLE_GREEN: "rodella de sinople"
+  BANNER_CIRCLE_LIGHT_BLUE: "rodella blau cel"
+  BANNER_CIRCLE_LIGHT_GRAY: "besant d'argent"
+  BANNER_CIRCLE_LIME: "rodella llima"
+  BANNER_CIRCLE_MAGENTA: "rodella magenta"
+  BANNER_CIRCLE_ORANGE: "rodella ataronjada"
+  BANNER_CIRCLE_PINK: "rodella rosa"
+  BANNER_CIRCLE_PURPLE: "rodella de porpra"
+  BANNER_CIRCLE_RED: "rodella de gules"
+  BANNER_CIRCLE_WHITE: "rodella blanca"
+  BANNER_CIRCLE_YELLOW: "besant d'or"
+  BANNER_CREEPER_BLACK: "cara de creeper de sable"
+  BANNER_CREEPER_BLUE: "cara de creeper d'atzur"
+  BANNER_CREEPER_BROWN: "cara de creeper marró"
+  BANNER_CREEPER_CYAN: "cara de creeper cian"
+  BANNER_CREEPER_GRAY: "cara de creeper gris"
+  BANNER_CREEPER_GREEN: "cara de creeper de sinople"
+  BANNER_CREEPER_LIGHT_BLUE: "cara de creeper blau cel"
+  BANNER_CREEPER_LIGHT_GRAY: "cara de creeper d'argent"
+  BANNER_CREEPER_LIME: "cara de creeper llima"
+  BANNER_CREEPER_MAGENTA: "cara de creeper magenta"
+  BANNER_CREEPER_ORANGE: "cara de creeper ataronjada"
+  BANNER_CREEPER_PINK: "cara de creeper rosa"
+  BANNER_CREEPER_PURPLE: "cara de creeper porpra"
+  BANNER_CREEPER_RED: "cara de creeper de gules"
+  BANNER_CREEPER_WHITE: "cara de creeper blanca"
+  BANNER_CREEPER_YELLOW: "cara de creeper d'or"
+  BANNER_CROSS_BLACK: "sautor de sable"
+  BANNER_CROSS_BLUE: "sautor d'atzur"
+  BANNER_CROSS_BROWN: "sautor marró"
+  BANNER_CROSS_CYAN: "sautor cian"
+  BANNER_CROSS_GRAY: "sautor gris"
+  BANNER_CROSS_GREEN: "sautor de sinople"
+  BANNER_CROSS_LIGHT_BLUE: "sautor blau cel"
+  BANNER_CROSS_LIGHT_GRAY: "sautor d'argent"
+  BANNER_CROSS_LIME: "sautor llima"
+  BANNER_CROSS_MAGENTA: "sautor magenta"
+  BANNER_CROSS_ORANGE: "sautor ataronjat"
+  BANNER_CROSS_PINK: "sautor rosa"
+  BANNER_CROSS_PURPLE: "sautor de porpra"
+  BANNER_CROSS_RED: "sautor de gules"
+  BANNER_CROSS_WHITE: "sautor blanc"
+  BANNER_CROSS_YELLOW: "sautor d'or"
+  BANNER_CURLY_BORDER_BLACK: "bordura dentada de sable"
+  BANNER_CURLY_BORDER_BLUE: "bordura dentada d'atzur"
+  BANNER_CURLY_BORDER_BROWN: "bordura dentada marró"
+  BANNER_CURLY_BORDER_CYAN: "bordura dentada cian"
+  BANNER_CURLY_BORDER_GRAY: "bordura dentada grisa"
+  BANNER_CURLY_BORDER_GREEN: "bordura dentada de sinople"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bordura dentada blau cel"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bordura dentada d'argent"
+  BANNER_CURLY_BORDER_LIME: "bordura dentada llima"
+  BANNER_CURLY_BORDER_MAGENTA: "bordura dentada magenta"
+  BANNER_CURLY_BORDER_ORANGE: "bordura dentada ataronjada"
+  BANNER_CURLY_BORDER_PINK: "bordura dentada rosa"
+  BANNER_CURLY_BORDER_PURPLE: "bordura dentada de porpra"
+  BANNER_CURLY_BORDER_RED: "bordura dentada de gules"
+  BANNER_CURLY_BORDER_WHITE: "bordura dentada blanca"
+  BANNER_CURLY_BORDER_YELLOW: "bordura dentada d'or"
+  BANNER_DIAGONAL_LEFT_BLACK: "tallat 1r de sable"
+  BANNER_DIAGONAL_LEFT_BLUE: "tallat 1r d'atzur"
+  BANNER_DIAGONAL_LEFT_BROWN: "tallat 1r marró"
+  BANNER_DIAGONAL_LEFT_CYAN: "tallat 1r cian"
+  BANNER_DIAGONAL_LEFT_GRAY: "tallat 1r gris"
+  BANNER_DIAGONAL_LEFT_GREEN: "tallat 1r de sinople"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "tallat 1r blau cel"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "tallat 1r d'argent"
+  BANNER_DIAGONAL_LEFT_LIME: "tallat 1r llima"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "tallat 1r magenta"
+  BANNER_DIAGONAL_LEFT_ORANGE: "tallat 1r ataronjat"
+  BANNER_DIAGONAL_LEFT_PINK: "tallat 1r rosa"
+  BANNER_DIAGONAL_LEFT_PURPLE: "tallat 1r de porpra"
+  BANNER_DIAGONAL_LEFT_RED: "tallat 1r de gules"
+  BANNER_DIAGONAL_LEFT_WHITE: "tallat 1r blanc"
+  BANNER_DIAGONAL_LEFT_YELLOW: "tallat 1r d'or"
+  BANNER_DIAGONAL_RIGHT_BLACK: "trinxat 1r de sable"
+  BANNER_DIAGONAL_RIGHT_BLUE: "trinxat 1r d'atzur"
+  BANNER_DIAGONAL_RIGHT_BROWN: "trinxat 1r marró"
+  BANNER_DIAGONAL_RIGHT_CYAN: "trinxat 1r cian"
+  BANNER_DIAGONAL_RIGHT_GRAY: "trinxat 1r gris"
+  BANNER_DIAGONAL_RIGHT_GREEN: "trinxat 1r de sinople"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "trinxat 1r blau cel"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "trinxat 1r d'argent"
+  BANNER_DIAGONAL_RIGHT_LIME: "trinxat 1r llima"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "trinxat 1r magenta"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "trinxat 1r ataronjat"
+  BANNER_DIAGONAL_RIGHT_PINK: "trinxat 1r rosa"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "trinxat 1r de porpra"
+  BANNER_DIAGONAL_RIGHT_RED: "trinxat 1r de gules"
+  BANNER_DIAGONAL_RIGHT_WHITE: "trinxat 1r blanc"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "trinxat 1r d'or"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "trinxat 2n de sable"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "trinxat 2n d'atzur"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "trinxat 2n marró"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "trinxat 2n cian"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "trinxat 2n gris"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "trinxat 2n de sinople"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "trinxat 2n blau cel"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "trinxat 2n d'argent"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "trinxat 2n llima"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "trinxat 2n magenta"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "trinxat 2n ataronjat"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "trinxat 2n rosa"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "trinxat 2n de porpra"
+  BANNER_DIAGONAL_UP_LEFT_RED: "trinxat 2n de gules"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "trinxat 2n blanc"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "trinxat 2n d'or"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "tallat 2n de sable"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "tallat 2n d'atzur"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "tallat 2n marró"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tallat 2n cian"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "tallat 2n gris"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "tallat 2n de sinople"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "tallat 2n blau cel"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "tallat 2n d'argent"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "tallat 2n llima"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "tallat 2n magenta"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "tallat 2n ataronjat"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "tallat 2n rosa"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "tallat 2n de porpra"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "tallat 2n de gules"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "tallat 2n blanc"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "tallat 2n d'or"
+  BANNER_FLOWER_BLACK: "flor de sable"
+  BANNER_FLOWER_BLUE: "flor d'atzur"
+  BANNER_FLOWER_BROWN: "flor marró"
+  BANNER_FLOWER_CYAN: "flor cian"
+  BANNER_FLOWER_GRAY: "flor gris"
+  BANNER_FLOWER_GREEN: "flor de sinople"
+  BANNER_FLOWER_LIGHT_BLUE: "flor blau cel"
+  BANNER_FLOWER_LIGHT_GRAY: "flor d'argent"
+  BANNER_FLOWER_LIME: "flor llima"
+  BANNER_FLOWER_MAGENTA: "flor magenta"
+  BANNER_FLOWER_ORANGE: "flor ataronjada"
+  BANNER_FLOWER_PINK: "flor rosa"
+  BANNER_FLOWER_PURPLE: "flor de porpra"
+  BANNER_FLOWER_RED: "flor de gules"
+  BANNER_FLOWER_WHITE: "flor blanca"
+  BANNER_FLOWER_YELLOW: "flor d'or"
+  BANNER_GLOBE_BLACK: "planeta de sable"
+  BANNER_GLOBE_BLUE: "planeta blau"
+  BANNER_GLOBE_BROWN: "planeta marró"
+  BANNER_GLOBE_CYAN: "planeta cian"
+  BANNER_GLOBE_GRAY: "planeta gris"
+  BANNER_GLOBE_GREEN: "planeta verd"
+  BANNER_GLOBE_LIGHT_BLUE: "planeta blau cel"
+  BANNER_GLOBE_LIGHT_GRAY: "planeta gris clar"
+  BANNER_GLOBE_LIME: "planeta llima"
+  BANNER_GLOBE_MAGENTA: "planeta magenta"
+  BANNER_GLOBE_ORANGE: "planeta taronja"
+  BANNER_GLOBE_PINK: "planeta rosa"
+  BANNER_GLOBE_PURPLE: "planeta morat"
+  BANNER_GLOBE_RED: "planeta roig"
+  BANNER_GLOBE_WHITE: "planeta blanc"
+  BANNER_GLOBE_YELLOW: "planeta groc"
+  BANNER_GRADIENT_BLACK: "degradat de sable"
+  BANNER_GRADIENT_BLUE: "degradat d'atzur"
+  BANNER_GRADIENT_BROWN: "degradat marró"
+  BANNER_GRADIENT_CYAN: "degradat cian"
+  BANNER_GRADIENT_GRAY: "degradat gris"
+  BANNER_GRADIENT_GREEN: "degradat de sinople"
+  BANNER_GRADIENT_LIGHT_BLUE: "degradat blau cel"
+  BANNER_GRADIENT_LIGHT_GRAY: "degradat d'argent"
+  BANNER_GRADIENT_LIME: "degradat lima"
+  BANNER_GRADIENT_MAGENTA: "degradat magenta"
+  BANNER_GRADIENT_ORANGE: "degradat ataronjat"
+  BANNER_GRADIENT_PINK: "degradat rosa"
+  BANNER_GRADIENT_PURPLE: "degradat de porpra"
+  BANNER_GRADIENT_RED: "degradat de gules"
+  BANNER_GRADIENT_WHITE: "degradat blanc"
+  BANNER_GRADIENT_YELLOW: "degradat d'or"
+  BANNER_GRADIENT_UP_BLACK: "peu degradat de sable"
+  BANNER_GRADIENT_UP_BLUE: "peu degradat d'atzur"
+  BANNER_GRADIENT_UP_BROWN: "peu degradat marró"
+  BANNER_GRADIENT_UP_CYAN: "peu degradat cian"
+  BANNER_GRADIENT_UP_GRAY: "peu degradat gris"
+  BANNER_GRADIENT_UP_GREEN: "peu degradat de sinople"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "peu degradat blau cel"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "peu degradat d'argent"
+  BANNER_GRADIENT_UP_LIME: "peu degradat lima"
+  BANNER_GRADIENT_UP_MAGENTA: "peu degradat magenta"
+  BANNER_GRADIENT_UP_ORANGE: "peu degradat ataronjat"
+  BANNER_GRADIENT_UP_PINK: "peu degradat rosa"
+  BANNER_GRADIENT_UP_PURPLE: "peu degradat de porpra"
+  BANNER_GRADIENT_UP_RED: "peu degradat de gules"
+  BANNER_GRADIENT_UP_WHITE: "peu degradat blanc"
+  BANNER_GRADIENT_UP_YELLOW: "peu degradat d'or"
+  BANNER_HALF_HORIZONTAL_BLACK: "truncat 1r de sable"
+  BANNER_HALF_HORIZONTAL_BLUE: "truncat 1r d'atzur"
+  BANNER_HALF_HORIZONTAL_BROWN: "truncat 1r marró"
+  BANNER_HALF_HORIZONTAL_CYAN: "truncat 1r cian"
+  BANNER_HALF_HORIZONTAL_GRAY: "truncat 1r gris"
+  BANNER_HALF_HORIZONTAL_GREEN: "truncat 1r de sinople"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "truncat 1r blau cel"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "truncat 1r d'argent"
+  BANNER_HALF_HORIZONTAL_LIME: "truncat 1r llima"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "truncat 1r magenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "truncat 1r ataronjat"
+  BANNER_HALF_HORIZONTAL_PINK: "truncat 1r rosa"
+  BANNER_HALF_HORIZONTAL_PURPLE: "truncat 1r de porpra"
+  BANNER_HALF_HORIZONTAL_RED: "truncat 1r de gules"
+  BANNER_HALF_HORIZONTAL_WHITE: "truncat 1r blanc"
+  BANNER_HALF_HORIZONTAL_YELLOW: "truncat 1r d'or"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "truncat 2n de sable"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "truncat 2n d'atzur"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "truncat 2n marró"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "truncat 2n cian"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "truncat 2n gris"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "truncat 2n de sinople"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "truncat 2n blau cel"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "truncat 2n d'argent"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "truncat 2n llima"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "truncat 2n magenta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "truncat 2n ataronjat"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "truncat 2n rosa"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "truncat 2n de porpra"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "truncat 2n de gules"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "truncat 2n blanc"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "truncat 2n d'or"
+  BANNER_HALF_VERTICAL_BLACK: "partit 1r de sable"
+  BANNER_HALF_VERTICAL_BLUE: "partit 1r d'atzur"
+  BANNER_HALF_VERTICAL_BROWN: "partit 1r marró"
+  BANNER_HALF_VERTICAL_CYAN: "partit 1r cian"
+  BANNER_HALF_VERTICAL_GRAY: "partit 1r gris"
+  BANNER_HALF_VERTICAL_GREEN: "partit 1r de sinople"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "partit 1r blau cel"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "partit 1r d'argent"
+  BANNER_HALF_VERTICAL_LIME: "partit 1r llima"
+  BANNER_HALF_VERTICAL_MAGENTA: "partit 1r magenta"
+  BANNER_HALF_VERTICAL_ORANGE: "partit 1r ataronjat"
+  BANNER_HALF_VERTICAL_PINK: "partit 1r rosa"
+  BANNER_HALF_VERTICAL_PURPLE: "partit 1r de porpra"
+  BANNER_HALF_VERTICAL_RED: "partit 1r de gules"
+  BANNER_HALF_VERTICAL_WHITE: "partit 1r blanc"
+  BANNER_HALF_VERTICAL_YELLOW: "partit 1r d'or"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "partit 2n de sable"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "partit 2n d'atzur"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "partit 2n marró"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "partit 2n cian"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "partit 2n gris"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "partit 2n de sinople"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "partit 2n blau cel"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "partit 2n d'argent"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "partit 2n llima"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "partit 2n magenta"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "partit 2n ataronjat"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "partit 2n rosa"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "partit 2n de porpra"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "partit 2n de gules"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "partit 2n blanc"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "partit 2n d'or"
+  BANNER_MOJANG_BLACK: "emblema de sable"
+  BANNER_MOJANG_BLUE: "emblema d'atzur"
+  BANNER_MOJANG_BROWN: "emblema marró"
+  BANNER_MOJANG_CYAN: "emblema cian"
+  BANNER_MOJANG_GRAY: "emblema gris"
+  BANNER_MOJANG_GREEN: "emblema de sinople"
+  BANNER_MOJANG_LIGHT_BLUE: "emblema blau cel"
+  BANNER_MOJANG_LIGHT_GRAY: "emblema d'argent"
+  BANNER_MOJANG_LIME: "emblema llima"
+  BANNER_MOJANG_MAGENTA: "emblema magenta"
+  BANNER_MOJANG_ORANGE: "emblema ataronjat"
+  BANNER_MOJANG_PINK: "emblema rosa"
+  BANNER_MOJANG_PURPLE: "emblema de porpra"
+  BANNER_MOJANG_RED: "emblema de gules"
+  BANNER_MOJANG_WHITE: "emblema blanc"
+  BANNER_MOJANG_YELLOW: "emblema d'or"
+  BANNER_PIGLIN_BLACK: "morro de sable"
+  BANNER_PIGLIN_BLUE: "morro d'atzur"
+  BANNER_PIGLIN_BROWN: "morro marró"
+  BANNER_PIGLIN_CYAN: "morro cian"
+  BANNER_PIGLIN_GRAY: "morro gris"
+  BANNER_PIGLIN_GREEN: "morro de sinople"
+  BANNER_PIGLIN_LIGHT_BLUE: "morro blau cel"
+  BANNER_PIGLIN_LIGHT_GRAY: "morro d'argent"
+  BANNER_PIGLIN_LIME: "morro llima"
+  BANNER_PIGLIN_MAGENTA: "morro magenta"
+  BANNER_PIGLIN_ORANGE: "morro ataronjat"
+  BANNER_PIGLIN_PINK: "morro rosa"
+  BANNER_PIGLIN_PURPLE: "morro porpra"
+  BANNER_PIGLIN_RED: "morro de gules"
+  BANNER_PIGLIN_WHITE: "morro blanc"
+  BANNER_PIGLIN_YELLOW: "morro d'or"
+  BANNER_RHOMBUS_BLACK: "losange de sable"
+  BANNER_RHOMBUS_BLUE: "losange d'atzur"
+  BANNER_RHOMBUS_BROWN: "losange marró"
+  BANNER_RHOMBUS_CYAN: "losange cian"
+  BANNER_RHOMBUS_GRAY: "losange gris"
+  BANNER_RHOMBUS_GREEN: "losange de sinople"
+  BANNER_RHOMBUS_LIGHT_BLUE: "losange blau cel"
+  BANNER_RHOMBUS_LIGHT_GRAY: "losange d'argent"
+  BANNER_RHOMBUS_LIME: "losange llima"
+  BANNER_RHOMBUS_MAGENTA: "losange magenta"
+  BANNER_RHOMBUS_ORANGE: "losange ataronjada"
+  BANNER_RHOMBUS_PINK: "losange rosa"
+  BANNER_RHOMBUS_PURPLE: "losange de porpra"
+  BANNER_RHOMBUS_RED: "losange de gules"
+  BANNER_RHOMBUS_WHITE: "losange blanca"
+  BANNER_RHOMBUS_YELLOW: "losange d'or"
+  BANNER_SKULL_BLACK: "calavera de sable"
+  BANNER_SKULL_BLUE: "calavera d'atzur"
+  BANNER_SKULL_BROWN: "calavera marró"
+  BANNER_SKULL_CYAN: "calavera cian"
+  BANNER_SKULL_GRAY: "calavera grisa"
+  BANNER_SKULL_GREEN: "calavera de sinople"
+  BANNER_SKULL_LIGHT_BLUE: "calavera blau cel"
+  BANNER_SKULL_LIGHT_GRAY: "calavera d'argent"
+  BANNER_SKULL_LIME: "calavera llima"
+  BANNER_SKULL_MAGENTA: "calavera magenta"
+  BANNER_SKULL_ORANGE: "calavera ataronjada"
+  BANNER_SKULL_PINK: "calavera rosa"
+  BANNER_SKULL_PURPLE: "calavera de porpra"
+  BANNER_SKULL_RED: "calavera de gules"
+  BANNER_SKULL_WHITE: "calavera blanca"
+  BANNER_SKULL_YELLOW: "calavera d'or"
+  BANNER_SMALL_STRIPES_BLACK: "quatre pals de sable"
+  BANNER_SMALL_STRIPES_BLUE: "quatre pals d'atzur"
+  BANNER_SMALL_STRIPES_BROWN: "quatre pals marrons"
+  BANNER_SMALL_STRIPES_CYAN: "quatre pals cian"
+  BANNER_SMALL_STRIPES_GRAY: "quatre pals grisos"
+  BANNER_SMALL_STRIPES_GREEN: "quatre pals de sinople"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "quatre pals blau cel"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "quatre pals d'argent"
+  BANNER_SMALL_STRIPES_LIME: "quatre pals llima"
+  BANNER_SMALL_STRIPES_MAGENTA: "quatre pals magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "quatre pals ataronjats"
+  BANNER_SMALL_STRIPES_PINK: "quatre pals rosa"
+  BANNER_SMALL_STRIPES_PURPLE: "quatre pals de porpra"
+  BANNER_SMALL_STRIPES_RED: "quatre pals de gules"
+  BANNER_SMALL_STRIPES_WHITE: "quatre pals blancs"
+  BANNER_SMALL_STRIPES_YELLOW: "quatre pals d'or"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "cantó destre de la punta de sable"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "cantó destre de la punta d'atzur"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "cantó destre de la punta marró"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "cantó destre de la punta cian"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "cantó destre de la punta gris"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "cantó destre de la punta de sinople"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "cantó destre de la punta blau cel"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "cantó destre de la punta d'argent"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "cantó destre de la punta llima"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "cantó destre de la punta magenta"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "cantó destre de la punta ataronjat"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "cantó destre de la punta rosa"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "cantó destre de la punta de porpra"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "cantó destre de la punta de gules"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "cantó destre de la punta blanc"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "cantó destre de la punta d'or"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "cantó sinistre de la punta de sable"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "cantó sinistre de la punta d'atzur"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "cantó sinistre de la punta marró"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "cantó sinistre de la punta cian"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "cantó sinistre de la punta gris"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "cantó sinistre de la punta de sinople"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "cantó sinistre de la punta blau cel"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "cantó sinistre de la punta d'argent"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "cantó sinistre de la punta llima"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "cantó sinistre de la punta magenta"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "cantó sinistre de la punta ataronjat"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "cantó sinistre de la punta rosa"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "cantó sinistre de la punta de porpra"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "cantó sinistre de la punta de gules"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "cantó sinistre de la punta blanc"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "cantó sinistre de la punta d'or"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "cantó destre del cap de sable"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "cantó destre del cap d'atzur"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "cantó destre del cap marró"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "cantó destre del cap cian"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "cantó destre del cap gris"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "cantó destre del cap de sinople"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "cantó destre del cap blau cel"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "cantó destre del cap d'argent"
+  BANNER_SQUARE_TOP_LEFT_LIME: "cantó destre del cap llima"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "cantó destre del cap magenta"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "cantó destre del cap ataronjat"
+  BANNER_SQUARE_TOP_LEFT_PINK: "cantó destre del cap rosa"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "cantó destre del cap de porpra"
+  BANNER_SQUARE_TOP_LEFT_RED: "cantó destre del cap de gules"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "cantó destre del cap blanc"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "cantó destre del cap d'or"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "cantó sinistre del cap de sable"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "cantó sinistre del cap d'atzur"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "cantó sinistre del cap marró"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "cantó sinistre del cap cian"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "cantó sinistre del cap gris"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "cantó sinistre del cap de sinople"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "cantó sinistre del cap blau cel"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "cantó sinistre del cap d'argent"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "cantó sinistre del cap llima"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "cantó sinistre del cap magenta"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "cantó sinistre del cap ataronjat"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "cantó sinistre del cap rosa"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "cantó sinistre del cap de porpra"
+  BANNER_SQUARE_TOP_RIGHT_RED: "cantó sinistre del cap de gules"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "cantó sinistre del cap blanc"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "cantó sinistre del cap d'or"
+  BANNER_STRAIGHT_CROSS_BLACK: "creu de sable"
+  BANNER_STRAIGHT_CROSS_BLUE: "creu d'atzur"
+  BANNER_STRAIGHT_CROSS_BROWN: "creu marró"
+  BANNER_STRAIGHT_CROSS_CYAN: "creu cian"
+  BANNER_STRAIGHT_CROSS_GRAY: "creu grisa"
+  BANNER_STRAIGHT_CROSS_GREEN: "creu de sinople"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "creu blau cel"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "creu d'argent"
+  BANNER_STRAIGHT_CROSS_LIME: "creu llima"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "creu magenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "creu ataronjada"
+  BANNER_STRAIGHT_CROSS_PINK: "creu rosa"
+  BANNER_STRAIGHT_CROSS_PURPLE: "creu de porpra"
+  BANNER_STRAIGHT_CROSS_RED: "creu de gules"
+  BANNER_STRAIGHT_CROSS_WHITE: "creu blanca"
+  BANNER_STRAIGHT_CROSS_YELLOW: "creu d'or"
+  BANNER_STRIPE_BOTTOM_BLACK: "peu de sable"
+  BANNER_STRIPE_BOTTOM_BLUE: "peu d'atzur"
+  BANNER_STRIPE_BOTTOM_BROWN: "peu marró"
+  BANNER_STRIPE_BOTTOM_CYAN: "peu cian"
+  BANNER_STRIPE_BOTTOM_GRAY: "peu gris"
+  BANNER_STRIPE_BOTTOM_GREEN: "peu de sinople"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "peu blau cel"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "peu d'argent"
+  BANNER_STRIPE_BOTTOM_LIME: "peu llima"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "peu magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "peu ataronjat"
+  BANNER_STRIPE_BOTTOM_PINK: "peu rosa"
+  BANNER_STRIPE_BOTTOM_PURPLE: "peu de porpra"
+  BANNER_STRIPE_BOTTOM_RED: "peu de gules"
+  BANNER_STRIPE_BOTTOM_WHITE: "peu blanc"
+  BANNER_STRIPE_BOTTOM_YELLOW: "peu d'or"
+  BANNER_STRIPE_CENTER_BLACK: "pal de sable"
+  BANNER_STRIPE_CENTER_BLUE: "pal d'atzur"
+  BANNER_STRIPE_CENTER_BROWN: "pal marró"
+  BANNER_STRIPE_CENTER_CYAN: "pal cian"
+  BANNER_STRIPE_CENTER_GRAY: "pal gris"
+  BANNER_STRIPE_CENTER_GREEN: "pal de sinople"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "pal blau cel"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "pal d'argent"
+  BANNER_STRIPE_CENTER_LIME: "pal llima"
+  BANNER_STRIPE_CENTER_MAGENTA: "pal magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "pal ataronjat"
+  BANNER_STRIPE_CENTER_PINK: "pal rosa"
+  BANNER_STRIPE_CENTER_PURPLE: "pal de porpra"
+  BANNER_STRIPE_CENTER_RED: "pal de gules"
+  BANNER_STRIPE_CENTER_WHITE: "pal blanc"
+  BANNER_STRIPE_CENTER_YELLOW: "pal d'or"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "barra de sable"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "barra d'atzur"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "barra marró"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "barra cian"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "barra grisa"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "barra de sinople"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "barra blau cel"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "barra d'argent"
+  BANNER_STRIPE_DOWNLEFT_LIME: "barra llima"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "barra magenta"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "barra ataronjada"
+  BANNER_STRIPE_DOWNLEFT_PINK: "barra rosa"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "barra de porpra"
+  BANNER_STRIPE_DOWNLEFT_RED: "barra de gules"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "barra blanca"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "barra d'or"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "banda de sable"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "banda d'atzur"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "banda marró"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "banda cian"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "banda grisa"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "banda de sinople"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "banda blau cel"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "banda d'argent"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "banda llima"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "banda magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "banda ataronjada"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "banda rosa"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "banda de porpra"
+  BANNER_STRIPE_DOWNRIGHT_RED: "banda de gules"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "banda blanca"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "banda d'or"
+  BANNER_STRIPE_LEFT_BLACK: "dextrat de sable"
+  BANNER_STRIPE_LEFT_BLUE: "dextrat d'atzur"
+  BANNER_STRIPE_LEFT_BROWN: "dextrat marró"
+  BANNER_STRIPE_LEFT_CYAN: "dextrat cian"
+  BANNER_STRIPE_LEFT_GRAY: "dextrat gris"
+  BANNER_STRIPE_LEFT_GREEN: "dextrat de sinople"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "dextrat blau cel"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "dextrat d'argent"
+  BANNER_STRIPE_LEFT_LIME: "dextrat llima"
+  BANNER_STRIPE_LEFT_MAGENTA: "dextrat magenta"
+  BANNER_STRIPE_LEFT_ORANGE: "dextrat ataronjat"
+  BANNER_STRIPE_LEFT_PINK: "dextrat rosa"
+  BANNER_STRIPE_LEFT_PURPLE: "dextrat de porpra"
+  BANNER_STRIPE_LEFT_RED: "dextrat de gules"
+  BANNER_STRIPE_LEFT_WHITE: "dextrat blanc"
+  BANNER_STRIPE_LEFT_YELLOW: "dextrat d'or"
+  BANNER_STRIPE_MIDDLE_BLACK: "faixa de sable"
+  BANNER_STRIPE_MIDDLE_BLUE: "faixa d'atzur"
+  BANNER_STRIPE_MIDDLE_BROWN: "faixa marró"
+  BANNER_STRIPE_MIDDLE_CYAN: "faixa cian"
+  BANNER_STRIPE_MIDDLE_GRAY: "faixa grisa"
+  BANNER_STRIPE_MIDDLE_GREEN: "faixa de sinople"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "faixa blau cel"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "faixa d'argent"
+  BANNER_STRIPE_MIDDLE_LIME: "faixa llima"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "faixa magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "faixa ataronjada"
+  BANNER_STRIPE_MIDDLE_PINK: "faixa rosa"
+  BANNER_STRIPE_MIDDLE_PURPLE: "faixa de porpra"
+  BANNER_STRIPE_MIDDLE_RED: "faixa de gules"
+  BANNER_STRIPE_MIDDLE_WHITE: "faixa blanca"
+  BANNER_STRIPE_MIDDLE_YELLOW: "faixa d'or"
+  BANNER_STRIPE_RIGHT_BLACK: "sinistrat de sable"
+  BANNER_STRIPE_RIGHT_BLUE: "sinistrat d'atzur"
+  BANNER_STRIPE_RIGHT_BROWN: "sinistrat marró"
+  BANNER_STRIPE_RIGHT_CYAN: "sinistrat cian"
+  BANNER_STRIPE_RIGHT_GRAY: "sinistrat gris"
+  BANNER_STRIPE_RIGHT_GREEN: "sinistrat de sinople"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "sinistrat blau cel"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "sinistrat d'argent"
+  BANNER_STRIPE_RIGHT_LIME: "sinistrat llima"
+  BANNER_STRIPE_RIGHT_MAGENTA: "sinistrat magenta"
+  BANNER_STRIPE_RIGHT_ORANGE: "sinistrat ataronjat"
+  BANNER_STRIPE_RIGHT_PINK: "sinistrat rosa"
+  BANNER_STRIPE_RIGHT_PURPLE: "sinistrat de porpra"
+  BANNER_STRIPE_RIGHT_RED: "sinistrat de gules"
+  BANNER_STRIPE_RIGHT_WHITE: "sinistrat blanc"
+  BANNER_STRIPE_RIGHT_YELLOW: "sinistrat d'or"
+  BANNER_STRIPE_TOP_BLACK: "cap de sable"
+  BANNER_STRIPE_TOP_BLUE: "cap d'atzur"
+  BANNER_STRIPE_TOP_BROWN: "cap marró"
+  BANNER_STRIPE_TOP_CYAN: "cap cian"
+  BANNER_STRIPE_TOP_GRAY: "cap gris"
+  BANNER_STRIPE_TOP_GREEN: "cap de sinople"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "cap blau cel"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "cap d'argent"
+  BANNER_STRIPE_TOP_LIME: "cap llima"
+  BANNER_STRIPE_TOP_MAGENTA: "cap magenta"
+  BANNER_STRIPE_TOP_ORANGE: "cap ataronjat"
+  BANNER_STRIPE_TOP_PINK: "cap rosa"
+  BANNER_STRIPE_TOP_PURPLE: "cap de porpra"
+  BANNER_STRIPE_TOP_RED: "cap de gules"
+  BANNER_STRIPE_TOP_WHITE: "cap blanc"
+  BANNER_STRIPE_TOP_YELLOW: "cap d'or"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "gaiat a la punta de sable"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "gaiat a la punta d'atzur"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "gaiat a la punta marró"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "gaiat a la punta cian"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "gaiat a la punta gris"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "gaiat a la punta de sinople"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "gaiat a la punta blau cel"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "gaiat a la punta d'argent"
+  BANNER_TRIANGLE_BOTTOM_LIME: "gaiat a la punta llima"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "gaiat a la punta magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "gaiat a la punta ataronjat"
+  BANNER_TRIANGLE_BOTTOM_PINK: "gaiat a la punta rosa"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "gaiat a la punta de porpra"
+  BANNER_TRIANGLE_BOTTOM_RED: "gaiat a la punta de gules"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "gaiat a la punta blanc"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "gaiat a la punta d'or"
+  BANNER_TRIANGLE_TOP_BLACK: "gaiat al cap de sable"
+  BANNER_TRIANGLE_TOP_BLUE: "gaiat al cap d'atzur"
+  BANNER_TRIANGLE_TOP_BROWN: "gaiat al cap marró"
+  BANNER_TRIANGLE_TOP_CYAN: "gaiat al cap cian"
+  BANNER_TRIANGLE_TOP_GRAY: "gaiat al cap gris"
+  BANNER_TRIANGLE_TOP_GREEN: "gaiat al cap de sinople"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "gaiat al cap blau cel"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "gaiat al cap d'argent"
+  BANNER_TRIANGLE_TOP_LIME: "gaiat al cap llima"
+  BANNER_TRIANGLE_TOP_MAGENTA: "gaiat al cap magenta"
+  BANNER_TRIANGLE_TOP_ORANGE: "gaiat al cap ataronjat"
+  BANNER_TRIANGLE_TOP_PINK: "gaiat al cap rosa"
+  BANNER_TRIANGLE_TOP_PURPLE: "gaiat al cap de porpra"
+  BANNER_TRIANGLE_TOP_RED: "gaiat al cap de gules"
+  BANNER_TRIANGLE_TOP_WHITE: "gaiat al cap blanc"
+  BANNER_TRIANGLE_TOP_YELLOW: "gaiat al cap d'or"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "peu dentat de sable"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "peu dentat d'atzur"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "peu dentat marró"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "peu dentat cian"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "peu dentat gris"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "peu dentat de sinople"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "peu dentat blau cel"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "peu dentat d'argent"
+  BANNER_TRIANGLES_BOTTOM_LIME: "peu dentat llima"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "peu dentat magenta"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "peu dentat ataronjat"
+  BANNER_TRIANGLES_BOTTOM_PINK: "peu dentat rosa"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "peu dentat de porpra"
+  BANNER_TRIANGLES_BOTTOM_RED: "peu dentat de gules"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "peu dentat blanc"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "peu dentat d'or"
+  BANNER_TRIANGLES_TOP_BLACK: "cap dentat de sable"
+  BANNER_TRIANGLES_TOP_BLUE: "cap dentat d'atzur"
+  BANNER_TRIANGLES_TOP_BROWN: "cap dentat marró"
+  BANNER_TRIANGLES_TOP_CYAN: "cap dentat cian"
+  BANNER_TRIANGLES_TOP_GRAY: "cap dentat gris"
+  BANNER_TRIANGLES_TOP_GREEN: "cap dentat de sinople"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "cap dentat blau cel"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "cap dentat d'argent"
+  BANNER_TRIANGLES_TOP_LIME: "cap dentat llima"
+  BANNER_TRIANGLES_TOP_MAGENTA: "cap dentat magenta"
+  BANNER_TRIANGLES_TOP_ORANGE: "cap dentat ataronjat"
+  BANNER_TRIANGLES_TOP_PINK: "cap dentat rosa"
+  BANNER_TRIANGLES_TOP_PURPLE: "cap dentat de porpra"
+  BANNER_TRIANGLES_TOP_RED: "cap dentat de gules"
+  BANNER_TRIANGLES_TOP_WHITE: "cap dentat blanc"
+  BANNER_TRIANGLES_TOP_YELLOW: "cap dentat d'or"
+  BARREL: "barril"
+  BARRIER: "barrera"
+  BASALT: "basalt"
+  BEACON: "far"
+  BEACON_PRIMARY: "poder primari"
+  BEACON_SECONDARY: "poder secundari"
+  BED_NO_SLEEP: "només pots dormir durant la nit o tempestes"
+  BED_NOT_SAFE: "no hauries de dormir ara hi ha monstres a prop teu"
+  BED_OBSTRUCTED: "el llit està obstruït"
+  BED_OCCUPIED: "aquest llit està ocupat"
+  BED_TOO_FAR_AWAY: "no hauries de dormir ara el llit està massa lluny"
+  BEDROCK: "roca base"
+  BEE_NEST: "rusc"
+  BEEHIVE: "rusc fix"
+  BEETROOTS: "remolatxes"
+  BELL: "campana"
+  BIG_DRIPLEAF: "degotadora gran"
+  BIG_DRIPLEAF_STEM: "tija de degotadora gran"
+  BIRCH_BUTTON: "botó de bedoll"
+  BIRCH_DOOR: "porta de fusta de bedoll"
+  BIRCH_FENCE: "tanca de bedoll"
+  BIRCH_FENCE_GATE: "porta de tanca de bedoll"
+  BIRCH_HANGING_SIGN: "cartell penjant de bedoll"
+  BIRCH_LEAVES: "fulles de bedoll"
+  BIRCH_LOG: "tronc de bedoll"
+  BIRCH_PLANKS: "fusta de bedoll"
+  BIRCH_PRESSURE_PLATE: "placa de pressió de bedoll"
+  BIRCH_SAPLING: "esqueix de bedoll"
+  BIRCH_SIGN: "cartell de bedoll"
+  BIRCH_SLAB: "llosa de bedoll"
+  BIRCH_STAIRS: "escales de bedoll"
+  BIRCH_TRAPDOOR: "trapa de bedoll"
+  BIRCH_WALL_HANGING_SIGN: "cartell penjant de bedoll amb suport"
+  BIRCH_WALL_SIGN: "cartell de bedoll a la paret"
+  BIRCH_WOOD: "fusta de bedoll"
+  BLACK_BANNER: "estendard de sable"
+  BLACK_BED: "llit negre"
+  BLACK_CANDLE: "espelma negra"
+  BLACK_CANDLE_CAKE: "pastís amb espelma negra"
+  BLACK_CARPET: "catifa negra"
+  BLACK_CONCRETE: "formigó negre"
+  BLACK_CONCRETE_POWDER: "pols de formigó negre"
+  BLACK_GLAZED_TERRACOTTA: "rajola negra"
+  BLACK_SHULKER_BOX: "caixa de shulker negra"
+  BLACK_STAINED_GLASS: "vidre tenyit de negre"
+  BLACK_STAINED_GLASS_PANE: "panell de vidre tenyit de negre"
+  BLACK_TERRACOTTA: "terracota negra"
+  BLACK_WOOL: "llana negra"
+  BLACKSTONE: "roca negra"
+  BLACKSTONE_SLAB: "llosa de roca negra"
+  BLACKSTONE_STAIRS: "escales de roca negra"
+  BLACKSTONE_WALL: "mur de roca negra"
+  BLAST_FURNACE: "alt forn"
+  BLUE_BANNER: "estendard d'atzur"
+  BLUE_BED: "llit blau"
+  BLUE_CANDLE: "espelma blava"
+  BLUE_CANDLE_CAKE: "pastís amb espelma blava"
+  BLUE_CARPET: "catifa blava"
+  BLUE_CONCRETE: "formigó blau"
+  BLUE_CONCRETE_POWDER: "pols de formigó blau"
+  BLUE_GLAZED_TERRACOTTA: "rajola blava"
+  BLUE_ICE: "gel blau"
+  BLUE_ORCHID: "orquídia blava"
+  BLUE_SHULKER_BOX: "caixa de shulker blava"
+  BLUE_STAINED_GLASS: "vidre tenyit de blau"
+  BLUE_STAINED_GLASS_PANE: "panell de vidre tenyit de blau"
+  BLUE_TERRACOTTA: "terracota blava"
+  BLUE_WOOL: "llana blava"
+  BONE_BLOCK: "bloc d'os"
+  BOOKSHELF: "llibreria"
+  BRAIN_CORAL: "corall de cervell"
+  BRAIN_CORAL_BLOCK: "bloc de corall de cervell"
+  BRAIN_CORAL_FAN: "gorgònia de cervell"
+  BRAIN_CORAL_WALL_FAN: "gorgònia de cervell a la paret"
+  BREWING_STAND: "altar de pocions"
+  BRICK_SLAB: "llosa de maó"
+  BRICK_STAIRS: "escales de maó"
+  BRICK_WALL: "mur de maó"
+  BRICKS: "maons"
+  BROWN_BANNER: "estendard marró"
+  BROWN_BED: "llit marró"
+  BROWN_CANDLE: "espelma marró"
+  BROWN_CANDLE_CAKE: "pastís amb espelma marró"
+  BROWN_CARPET: "catifa marró"
+  BROWN_CONCRETE: "formigó marró"
+  BROWN_CONCRETE_POWDER: "pols de formigó marró"
+  BROWN_GLAZED_TERRACOTTA: "rajola marró"
+  BROWN_MUSHROOM: "bolet marró"
+  BROWN_MUSHROOM_BLOCK: "bloc de bolet marró"
+  BROWN_SHULKER_BOX: "caixa de shulker marró"
+  BROWN_STAINED_GLASS: "vidre tenyit de marró"
+  BROWN_STAINED_GLASS_PANE: "panell de vidre tenyit de marró"
+  BROWN_TERRACOTTA: "terracota marró"
+  BROWN_WOOL: "llana marró"
+  BUBBLE_COLUMN: "columna de bombolles"
+  BUBBLE_CORAL: "corall de bombolla"
+  BUBBLE_CORAL_BLOCK: "bloc de corall de bombolla"
+  BUBBLE_CORAL_FAN: "gorgònia de bombolla"
+  BUBBLE_CORAL_WALL_FAN: "gorgònia de bombolla a la paret"
+  BUDDING_AMETHYST: "ametista cristal·litzable"
+  CACTUS: "cactus"
+  CAKE: "pastís"
+  CALCITE: "calcita"
+  CALIBRATED_SCULK_SENSOR: "sensor sculk calibrat"
+  CAMPFIRE: "foguera"
+  CANDLE: "espelma"
+  CANDLE_CAKE: "pastís amb espelma"
+  CARROTS: "pastanagues"
+  CARTOGRAPHY_TABLE: "taula de cartografia"
+  CARVED_PUMPKIN: "carbassa tallada"
+  CAULDRON: "calderó"
+  CAVE_AIR: "aire de cova"
+  CAVE_VINES: "lianes de cova"
+  CAVE_VINES_PLANT: "planta de lianes de cova"
+  CHAIN: "cadena"
+  CHAIN_COMMAND_BLOCK: "bloc de comandaments en cadena"
+  CHERRY_BUTTON: "botó de cirerer"
+  CHERRY_DOOR: "porta de cirerer"
+  CHERRY_FENCE: "tanca de cirerer"
+  CHERRY_FENCE_GATE: "porta de tanca de cirerer"
+  CHERRY_HANGING_SIGN: "cartell penjant de cirerer"
+  CHERRY_LEAVES: "fulles de cirerer"
+  CHERRY_LOG: "tronc de cirerer"
+  CHERRY_PLANKS: "fusta de cirerer"
+  CHERRY_PRESSURE_PLATE: "placa de pressió de cirerer"
+  CHERRY_SAPLING: "esqueix de cirerer"
+  CHERRY_SIGN: "cartell de cirerer"
+  CHERRY_SLAB: "llosa de cirerer"
+  CHERRY_STAIRS: "escales de cirerer"
+  CHERRY_TRAPDOOR: "trapa de cirerer"
+  CHERRY_WALL_HANGING_SIGN: "cartell penjant de cirerer amb suport"
+  CHERRY_WALL_SIGN: "cartell de cirerer a la paret"
+  CHERRY_WOOD: "fusta de cirerer"
+  CHEST: "cofre"
+  CHIPPED_ANVIL: "enclusa danyada"
+  CHISELED_BOOKSHELF: "prestatgeria"
+  CHISELED_COPPER: "coure cisellat"
+  CHISELED_DEEPSLATE: "pissarra cisellada"
+  CHISELED_NETHER_BRICKS: "maons del nether cisellats"
+  CHISELED_POLISHED_BLACKSTONE: "roca negra polida cisellada"
+  CHISELED_QUARTZ_BLOCK: "bloc de quars cisellat"
+  CHISELED_RED_SANDSTONE: "roca sorrenca cisellada"
+  CHISELED_SANDSTONE: "roca sorrenca cisellada"
+  CHISELED_STONE_BRICKS: "maons de roca cisellats"
+  CHISELED_TUFF: "tuf cisellat"
+  CHISELED_TUFF_BRICKS: "maons de tuf cisellats"
+  CHORUS_FLOWER: "flor de tornada"
+  CHORUS_PLANT: "planta de tornada"
+  CLAY: "argila"
+  COAL_BLOCK: "bloc de carbó"
+  COAL_ORE: "mena de carbó"
+  COARSE_DIRT: "terra seca"
+  COBBLED_DEEPSLATE: "empedrat de pissarra"
+  COBBLED_DEEPSLATE_SLAB: "llosa d'empedrat de pissarra"
+  COBBLED_DEEPSLATE_STAIRS: "escales d'empedrat de pissarra"
+  COBBLED_DEEPSLATE_WALL: "mur d'empedrat de pissarra"
+  COBBLESTONE: "pedra"
+  COBBLESTONE_SLAB: "llosa de pedra"
+  COBBLESTONE_STAIRS: "escales de pedra"
+  COBBLESTONE_WALL: "mur de pedra"
+  COBWEB: "teranyina"
+  COCOA: "cacau"
+  COMMAND_BLOCK: "bloc de comandaments"
+  COMPARATOR: "comparador"
+  COMPOSTER: "compostador"
+  CONDUIT: "canalitzador"
+  COPPER_BLOCK: "bloc de coure"
+  COPPER_BULB: "bombeta de coure"
+  COPPER_DOOR: "porta de coure"
+  COPPER_GRATE: "reixa de coure"
+  COPPER_ORE: "mena de coure"
+  COPPER_TRAPDOOR: "trapa de coure"
+  CORNFLOWER: "blavet"
+  CRACKED_DEEPSLATE_BRICKS: "maons de pissarra esquerdats"
+  CRACKED_DEEPSLATE_TILES: "rajoles de pissarra esquerdades"
+  CRACKED_NETHER_BRICKS: "maons del nether esquerdats"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "maons de roca negra polida esquerdats"
+  CRACKED_STONE_BRICKS: "maons de roca esquerdats"
+  CRAFTER: "elaborador"
+  CRAFTING_TABLE: "taula d'elaboració"
+  CREEPER_HEAD: "cap de creeper"
+  CREEPER_WALL_HEAD: "cap de creeper a la paret"
+  CRIMSON_BUTTON: "botó carmesí"
+  CRIMSON_DOOR: "porta carmesina"
+  CRIMSON_FENCE: "tanca carmesina"
+  CRIMSON_FENCE_GATE: "porta de tanca carmesina"
+  CRIMSON_FUNGUS: "fong carmesí"
+  CRIMSON_HANGING_SIGN: "cartell penjant carmesí"
+  CRIMSON_HYPHAE: "hifes carmesines"
+  CRIMSON_NYLIUM: "netheli carmesí"
+  CRIMSON_PLANKS: "fusta carmesina"
+  CRIMSON_PRESSURE_PLATE: "placa de pressió carmesina"
+  CRIMSON_ROOTS: "arrels carmesines"
+  CRIMSON_SIGN: "cartell carmesí"
+  CRIMSON_SLAB: "llosa carmesina"
+  CRIMSON_STAIRS: "escales carmesines"
+  CRIMSON_STEM: "peu carmesí"
+  CRIMSON_TRAPDOOR: "trapa carmesina"
+  CRIMSON_WALL_HANGING_SIGN: "cartell penjant carmesí amb suport"
+  CRIMSON_WALL_SIGN: "cartell carmesí a la paret"
+  CRYING_OBSIDIAN: "obsidiana plorosa"
+  CUT_COPPER: "coure tallat"
+  CUT_COPPER_SLAB: "llosa de coure tallat"
+  CUT_COPPER_STAIRS: "escales de coure tallat"
+  CUT_RED_SANDSTONE: "roca sorrenca vermella tallada"
+  CUT_RED_SANDSTONE_SLAB: "llosa de roca sorrenca vermella tallada"
+  CUT_SANDSTONE: "roca sorrenca tallada"
+  CUT_SANDSTONE_SLAB: "llosa de roca sorrenca tallada"
+  CYAN_BANNER: "estendard cian"
+  CYAN_BED: "llit cian"
+  CYAN_CANDLE: "espelma cian"
+  CYAN_CANDLE_CAKE: "pastís amb espelma cian"
+  CYAN_CARPET: "catifa cian"
+  CYAN_CONCRETE: "formigó cian"
+  CYAN_CONCRETE_POWDER: "pols de formigó cian"
+  CYAN_GLAZED_TERRACOTTA: "rajola cian"
+  CYAN_SHULKER_BOX: "caixa de shulker cian"
+  CYAN_STAINED_GLASS: "vidre tenyit de cian"
+  CYAN_STAINED_GLASS_PANE: "panell de vidre tenyit de cian"
+  CYAN_TERRACOTTA: "terracota cian"
+  CYAN_WOOL: "llana cian"
+  DAMAGED_ANVIL: "enclusa molt danyada"
+  DANDELION: "dent de lleó"
+  DARK_OAK_BUTTON: "botó de pomer fosc"
+  DARK_OAK_DOOR: "porta de pomer fosc"
+  DARK_OAK_FENCE: "tanca de pomer fosc"
+  DARK_OAK_FENCE_GATE: "porta de tanca de pomer fosc"
+  DARK_OAK_HANGING_SIGN: "cartell penjant de pomer fosc"
+  DARK_OAK_LEAVES: "fulles de pomer fosc"
+  DARK_OAK_LOG: "tronc de pomer fosc"
+  DARK_OAK_PLANKS: "fusta de pomer fosc"
+  DARK_OAK_PRESSURE_PLATE: "placa de pressió de pomer fosc"
+  DARK_OAK_SAPLING: "esqueix de pomer fosc"
+  DARK_OAK_SIGN: "cartell de pomer fosc"
+  DARK_OAK_SLAB: "llosa de pomer fosc"
+  DARK_OAK_STAIRS: "escales de pomer fosc"
+  DARK_OAK_TRAPDOOR: "trapa de pomer fosc"
+  DARK_OAK_WALL_HANGING_SIGN: "cartell penjant de pomer fosc amb suport"
+  DARK_OAK_WALL_SIGN: "cartell de pomer fosc a la paret"
+  DARK_OAK_WOOD: "fusta de pomer fosc"
+  DARK_PRISMARINE: "prismarina fosca"
+  DARK_PRISMARINE_SLAB: "llosa de prismarina fosca"
+  DARK_PRISMARINE_STAIRS: "escales de prismarina fosca"
+  DAYLIGHT_DETECTOR: "sensor de llum solar"
+  DEAD_BRAIN_CORAL: "corall de cervell mort"
+  DEAD_BRAIN_CORAL_BLOCK: "bloc de corall de cervell mort"
+  DEAD_BRAIN_CORAL_FAN: "gorgònia de cervell morta"
+  DEAD_BRAIN_CORAL_WALL_FAN: "gorgònia de cervell morta a la paret"
+  DEAD_BUBBLE_CORAL: "corall de bombolla mort"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloc de corall de bombolla mort"
+  DEAD_BUBBLE_CORAL_FAN: "gorgònia de bombolla morta"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "gorgònia de bombolla morta a la paret"
+  DEAD_BUSH: "arbust mort"
+  DEAD_FIRE_CORAL: "corall de foc mort"
+  DEAD_FIRE_CORAL_BLOCK: "bloc de corall de foc mort"
+  DEAD_FIRE_CORAL_FAN: "gorgònia de foc morta"
+  DEAD_FIRE_CORAL_WALL_FAN: "gorgònia de foc morta a la paret"
+  DEAD_HORN_CORAL: "corall de banya mort"
+  DEAD_HORN_CORAL_BLOCK: "bloc de corall de banya mort"
+  DEAD_HORN_CORAL_FAN: "gorgònia de banya morta"
+  DEAD_HORN_CORAL_WALL_FAN: "gorgònia de banya morta a la paret"
+  DEAD_TUBE_CORAL: "corall de tub mort"
+  DEAD_TUBE_CORAL_BLOCK: "bloc de corall de tub mort"
+  DEAD_TUBE_CORAL_FAN: "gorgònia de tub morta"
+  DEAD_TUBE_CORAL_WALL_FAN: "gorgònia de tub morta a la paret"
+  DECORATED_POT: "gerro decorat"
+  DEEPSLATE: "pissarra"
+  DEEPSLATE_BRICK_SLAB: "llosa de maons de pissarra"
+  DEEPSLATE_BRICK_STAIRS: "escales de maons de pissarra"
+  DEEPSLATE_BRICK_WALL: "mur de maons de pissarra"
+  DEEPSLATE_BRICKS: "maons de pissarra"
+  DEEPSLATE_COAL_ORE: "mena de carbó en pissarra"
+  DEEPSLATE_COPPER_ORE: "mena de coure en pissarra"
+  DEEPSLATE_DIAMOND_ORE: "mena de diamant en pissarra"
+  DEEPSLATE_EMERALD_ORE: "mena de maragda en pissarra"
+  DEEPSLATE_GOLD_ORE: "mena d'or en pissarra"
+  DEEPSLATE_IRON_ORE: "mena de ferro en pissarra"
+  DEEPSLATE_LAPIS_ORE: "mena de lapislàtzuli en pissarra"
+  DEEPSLATE_REDSTONE_ORE: "mena de redstone en pissarra"
+  DEEPSLATE_TILE_SLAB: "llosa de rajoles de pissarra"
+  DEEPSLATE_TILE_STAIRS: "escales de rajoles de pissarra"
+  DEEPSLATE_TILE_WALL: "mur d'enrajolat de pissarra"
+  DEEPSLATE_TILES: "rajoles de pissarra"
+  DETECTOR_RAIL: "rail detector"
+  DIAMOND_BLOCK: "bloc de diamant"
+  DIAMOND_ORE: "mena de diamant"
+  DIORITE: "diorita"
+  DIORITE_SLAB: "llosa de diorita"
+  DIORITE_STAIRS: "escales de diorita"
+  DIORITE_WALL: "mur de diorita"
+  DIRT: "terra"
+  DIRT_PATH: "camí de terra"
+  DISPENSER: "dispensador"
+  DRAGON_EGG: "ou de drac"
+  DRAGON_HEAD: "cap de drac"
+  DRAGON_WALL_HEAD: "cap de drac a la paret"
+  DRIED_KELP_BLOCK: "bloc d'algues seques"
+  DRIPSTONE_BLOCK: "bloc d'espeleotema"
+  DROPPER: "subministrador"
+  EMERALD_BLOCK: "bloc de maragda"
+  EMERALD_ORE: "mena de maragda"
+  ENCHANTING_TABLE: "taula d'encanteris"
+  END_GATEWAY: "entrada de l'end"
+  END_PORTAL: "portal de l'end"
+  END_PORTAL_FRAME: "marc del portal de l'end"
+  END_ROD: "vara de l'end"
+  END_STONE: "roca de l'end"
+  END_STONE_BRICK_SLAB: "llosa de maons de roca de l'end"
+  END_STONE_BRICK_STAIRS: "escales de maons de roca de l'end"
+  END_STONE_BRICK_WALL: "mur de maons de roca de l'end"
+  END_STONE_BRICKS: "maons de roca de l'end"
+  ENDER_CHEST: "cofre d'ender"
+  EXPOSED_CHISELED_COPPER: "coure exposat cisellat"
+  EXPOSED_COPPER: "coure exposat"
+  EXPOSED_COPPER_BULB: "bombeta de coure exposat"
+  EXPOSED_COPPER_DOOR: "porta de coure exposat"
+  EXPOSED_COPPER_GRATE: "reixa de coure exposat"
+  EXPOSED_COPPER_TRAPDOOR: "trapa de coure exposat"
+  EXPOSED_CUT_COPPER: "coure tallat exposat"
+  EXPOSED_CUT_COPPER_SLAB: "llosa de coure tallat exposada"
+  EXPOSED_CUT_COPPER_STAIRS: "escales de coure tallat exposades"
+  FARMLAND: "terra de cultiu"
+  FERN: "falguera"
+  FIRE: "foc"
+  FIRE_CORAL: "corall de foc"
+  FIRE_CORAL_BLOCK: "bloc de corall de foc"
+  FIRE_CORAL_FAN: "gorgònia de foc"
+  FIRE_CORAL_WALL_FAN: "gorgònia de foc a la paret"
+  FLETCHING_TABLE: "taula de fletxes"
+  FLOWER_POT: "test"
+  FLOWERING_AZALEA: "azalea florida"
+  FLOWERING_AZALEA_LEAVES: "fulles d'azalea florida"
+  FROGSPAWN: "ous de granota"
+  FROSTED_ICE: "gel glaçat"
+  FURNACE: "forn"
+  GILDED_BLACKSTONE: "roca negra lluent"
+  GLASS: "vidre"
+  GLASS_PANE: "panell de vidre"
+  GLOW_LICHEN: "liquen lluent"
+  GLOWSTONE: "roca brillant"
+  GOLD_BLOCK: "bloc d'or"
+  GOLD_ORE: "mena d'or"
+  GRANITE: "granit"
+  GRANITE_SLAB: "llosa de granit"
+  GRANITE_STAIRS: "escales de granit"
+  GRANITE_WALL: "mur de granit"
+  GRASS: "herba"
+  GRASS_BLOCK: "bloc d'herba"
+  GRAVEL: "grava"
+  GRAY_BANNER: "estendard gris"
+  GRAY_BED: "llit gris"
+  GRAY_CANDLE: "espelma grisa"
+  GRAY_CANDLE_CAKE: "pastís amb espelma grisa"
+  GRAY_CARPET: "catifa grisa"
+  GRAY_CONCRETE: "formigó gris"
+  GRAY_CONCRETE_POWDER: "pols de formigó gris"
+  GRAY_GLAZED_TERRACOTTA: "rajola gris"
+  GRAY_SHULKER_BOX: "caixa de shulker grisa"
+  GRAY_STAINED_GLASS: "vidre tenyit de gris"
+  GRAY_STAINED_GLASS_PANE: "panell de vidre tenyit de gris"
+  GRAY_TERRACOTTA: "terracota grisa"
+  GRAY_WOOL: "llana grisa"
+  GREEN_BANNER: "estendard de sinople"
+  GREEN_BED: "llit verd"
+  GREEN_CANDLE: "espelma verda"
+  GREEN_CANDLE_CAKE: "pastís amb espelma verda"
+  GREEN_CARPET: "catifa verda"
+  GREEN_CONCRETE: "formigó verd"
+  GREEN_CONCRETE_POWDER: "pols de formigó verd"
+  GREEN_GLAZED_TERRACOTTA: "rajola verda"
+  GREEN_SHULKER_BOX: "caixa de shulker verda"
+  GREEN_STAINED_GLASS: "vidre tenyit de verd"
+  GREEN_STAINED_GLASS_PANE: "panell de vidre tenyit de verd"
+  GREEN_TERRACOTTA: "terracota verda"
+  GREEN_WOOL: "llana verda"
+  GRINDSTONE: "afiladora"
+  HANGING_ROOTS: "arrels penjants"
+  HAY_BLOCK: "bala de fenc"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "placa de pressió per a pes elevat"
+  HONEY_BLOCK: "bloc de mel"
+  HONEYCOMB_BLOCK: "bloc de bresca"
+  HOPPER: "tremuja"
+  HORN_CORAL: "corall de banya"
+  HORN_CORAL_BLOCK: "bloc de corall de banya"
+  HORN_CORAL_FAN: "gorgònia de banya"
+  HORN_CORAL_WALL_FAN: "gorgònia de banya a la paret"
+  ICE: "gel"
+  INFESTED_CHISELED_STONE_BRICKS: "maons de roca cisellats infestats"
+  INFESTED_COBBLESTONE: "pedra infestada"
+  INFESTED_CRACKED_STONE_BRICKS: "maons de roca esquerdats infestats"
+  INFESTED_DEEPSLATE: "pissarra infestada"
+  INFESTED_MOSSY_STONE_BRICKS: "maons de roca amb molsa infestats"
+  INFESTED_STONE: "roca infestada"
+  INFESTED_STONE_BRICKS: "maons de roca infestats"
+  IRON_BARS: "barrots de ferro"
+  IRON_BLOCK: "bloc de ferro"
+  IRON_DOOR: "porta de ferro"
+  IRON_ORE: "mena de ferro"
+  IRON_TRAPDOOR: "trapa de ferro"
+  JACK_O_LANTERN: "carbassa de halloween"
+  JIGSAW: "bloc trencaclosques"
+  JUKEBOX: "tocadiscs"
+  JUNGLE_BUTTON: "botó de jungla"
+  JUNGLE_DOOR: "porta de jungla"
+  JUNGLE_FENCE: "tanca de jungla"
+  JUNGLE_FENCE_GATE: "porta de tanca de jungla"
+  JUNGLE_HANGING_SIGN: "cartell penjant de jungla"
+  JUNGLE_LEAVES: "fulles de jungla"
+  JUNGLE_LOG: "tronc de jungla"
+  JUNGLE_PLANKS: "fusta de jungla"
+  JUNGLE_PRESSURE_PLATE: "placa de pressió de jungla"
+  JUNGLE_SAPLING: "esqueix de jungla"
+  JUNGLE_SIGN: "cartell de jungla"
+  JUNGLE_SLAB: "llosa de jungla"
+  JUNGLE_STAIRS: "escales de jungla"
+  JUNGLE_TRAPDOOR: "trapa de jungla"
+  JUNGLE_WALL_HANGING_SIGN: "cartell penjant de jungla amb suport"
+  JUNGLE_WALL_SIGN: "cartell de jungla a la paret"
+  JUNGLE_WOOD: "fusta de jungla"
+  KELP: "alga"
+  KELP_PLANT: "tija d'alga"
+  LADDER: "escala"
+  LANTERN: "fanal"
+  LAPIS_BLOCK: "bloc de lapislàtzuli"
+  LAPIS_ORE: "mena de lapislàtzuli"
+  LARGE_AMETHYST_BUD: "cristall d'ametista gran"
+  LARGE_FERN: "falguera gran"
+  LAVA: "lava"
+  LAVA_CAULDRON: "calderó amb lava"
+  LECTERN: "faristol"
+  LEVER: "palanca"
+  LIGHT: "llum"
+  LIGHT_BLUE_BANNER: "estendard blau cel"
+  LIGHT_BLUE_BED: "llit blau cel"
+  LIGHT_BLUE_CANDLE: "espelma blau cel"
+  LIGHT_BLUE_CANDLE_CAKE: "pastís amb espelma blau cel"
+  LIGHT_BLUE_CARPET: "catifa blau cel"
+  LIGHT_BLUE_CONCRETE: "formigó blau cel"
+  LIGHT_BLUE_CONCRETE_POWDER: "pols de formigó blau cel"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "rajola blau cel"
+  LIGHT_BLUE_SHULKER_BOX: "caixa de shulker blau cel"
+  LIGHT_BLUE_STAINED_GLASS: "vidre tenyit de blau cel"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "panell de vidre tenyit de blau cel"
+  LIGHT_BLUE_TERRACOTTA: "terracota blau cel"
+  LIGHT_BLUE_WOOL: "llana blau cel"
+  LIGHT_GRAY_BANNER: "estendard d'argent"
+  LIGHT_GRAY_BED: "llit gris clar"
+  LIGHT_GRAY_CANDLE: "espelma gris clar"
+  LIGHT_GRAY_CANDLE_CAKE: "pastís amb espelma gris clar"
+  LIGHT_GRAY_CARPET: "catifa gris clar"
+  LIGHT_GRAY_CONCRETE: "formigó gris clar"
+  LIGHT_GRAY_CONCRETE_POWDER: "pols de formigó gris clar"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "rajola gris clar"
+  LIGHT_GRAY_SHULKER_BOX: "caixa de shulker gris clar"
+  LIGHT_GRAY_STAINED_GLASS: "vidre tenyit de gris clar"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "panell de vidre tenyit de gris clar"
+  LIGHT_GRAY_TERRACOTTA: "terracota gris clar"
+  LIGHT_GRAY_WOOL: "llana gris clar"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "placa de pressió per a pes lleuger"
+  LIGHTNING_ROD: "parallamps"
+  LILAC: "lilà"
+  LILY_OF_THE_VALLEY: "lliri de maig"
+  LILY_PAD: "nenúfar"
+  LIME_BANNER: "estendard llima"
+  LIME_BED: "llit llima"
+  LIME_CANDLE: "espelma llima"
+  LIME_CANDLE_CAKE: "pastís amb espelma llima"
+  LIME_CARPET: "catifa llima"
+  LIME_CONCRETE: "formigó llima"
+  LIME_CONCRETE_POWDER: "pols de formigó llima"
+  LIME_GLAZED_TERRACOTTA: "rajola llima"
+  LIME_SHULKER_BOX: "caixa de shulker llima"
+  LIME_STAINED_GLASS: "vidre tenyit de llima"
+  LIME_STAINED_GLASS_PANE: "panell de vidre tenyit de llima"
+  LIME_TERRACOTTA: "terracota verd llima"
+  LIME_WOOL: "llana llima"
+  LODESTONE: "fita"
+  LOOM: "teler"
+  MAGENTA_BANNER: "estendard magenta"
+  MAGENTA_BED: "llit magenta"
+  MAGENTA_CANDLE: "espelma magenta"
+  MAGENTA_CANDLE_CAKE: "pastís amb espelma magenta"
+  MAGENTA_CARPET: "catifa magenta"
+  MAGENTA_CONCRETE: "formigó magenta"
+  MAGENTA_CONCRETE_POWDER: "pols de formigó magenta"
+  MAGENTA_GLAZED_TERRACOTTA: "rajola magenta"
+  MAGENTA_SHULKER_BOX: "caixa de shulker magenta"
+  MAGENTA_STAINED_GLASS: "vidre tenyit de magenta"
+  MAGENTA_STAINED_GLASS_PANE: "panell de vidre tenyit de magenta"
+  MAGENTA_TERRACOTTA: "terracota magenta"
+  MAGENTA_WOOL: "llana magenta"
+  MAGMA_BLOCK: "bloc de magma"
+  MANGROVE_BUTTON: "botó de mangle"
+  MANGROVE_DOOR: "porta de mangle"
+  MANGROVE_FENCE: "tanca de mangle"
+  MANGROVE_FENCE_GATE: "porta de tanca de mangle"
+  MANGROVE_HANGING_SIGN: "cartell penjant de mangle"
+  MANGROVE_LEAVES: "fulles de mangle"
+  MANGROVE_LOG: "tronc de mangle"
+  MANGROVE_PLANKS: "fusta de mangle"
+  MANGROVE_PRESSURE_PLATE: "placa de pressió de mangle"
+  MANGROVE_PROPAGULE: "propàgul de mangle"
+  MANGROVE_ROOTS: "arrels de mangle"
+  MANGROVE_SIGN: "cartell de mangle"
+  MANGROVE_SLAB: "llosa de mangle"
+  MANGROVE_STAIRS: "escales de mangle"
+  MANGROVE_TRAPDOOR: "trapa de mangle"
+  MANGROVE_WALL_HANGING_SIGN: "cartell penjant de mangle amb suport"
+  MANGROVE_WALL_SIGN: "cartell de mangle a la paret"
+  MANGROVE_WOOD: "fusta de mangle"
+  MEDIUM_AMETHYST_BUD: "cristall d'ametista mitjà"
+  MELON: "síndria"
+  MELON_STEM: "tija de síndria"
+  MOSS_BLOCK: "bloc de molsa"
+  MOSS_CARPET: "catifa de molsa"
+  MOSSY_COBBLESTONE: "pedra amb molsa"
+  MOSSY_COBBLESTONE_SLAB: "llosa de pedra amb molsa"
+  MOSSY_COBBLESTONE_STAIRS: "escales de pedra amb molsa"
+  MOSSY_COBBLESTONE_WALL: "mur de pedra amb molsa"
+  MOSSY_STONE_BRICK_SLAB: "llosa de maons de roca amb molsa"
+  MOSSY_STONE_BRICK_STAIRS: "escales de maons de roca amb molsa"
+  MOSSY_STONE_BRICK_WALL: "mur de maons de roca amb molsa"
+  MOSSY_STONE_BRICKS: "maons de roca amb molsa"
+  MOVING_PISTON: "pistó en moviment"
+  MUD: "fang"
+  MUD_BRICK_SLAB: "llosa de tova"
+  MUD_BRICK_STAIRS: "escales de tova"
+  MUD_BRICK_WALL: "mur de tova"
+  MUD_BRICKS: "tova"
+  MUDDY_MANGROVE_ROOTS: "arrels de mangle enfangades"
+  MUSHROOM_STEM: "peu de bolet"
+  MYCELIUM: "miceli"
+  NETHER_BRICK_FENCE: "tanca de maó del nether"
+  NETHER_BRICK_SLAB: "llosa de maons del nether"
+  NETHER_BRICK_STAIRS: "escales de maons del nether"
+  NETHER_BRICK_WALL: "mur de maons del nether"
+  NETHER_BRICKS: "maons del nether"
+  NETHER_GOLD_ORE: "mena d'or del nether"
+  NETHER_PORTAL: "portal del nether"
+  NETHER_QUARTZ_ORE: "mena de quars del nether"
+  NETHER_SPROUTS: "brots del nether"
+  NETHER_WART: "berruga del nether"
+  NETHER_WART_BLOCK: "bloc de berrugues del nether"
+  NETHERITE_BLOCK: "bloc de netherita"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloc musical"
+  OAK_BUTTON: "botó de pomer"
+  OAK_DOOR: "porta de pomer"
+  OAK_FENCE: "tanca de pomer"
+  OAK_FENCE_GATE: "porta de tanca de pomer"
+  OAK_HANGING_SIGN: "cartell penjant de pomer"
+  OAK_LEAVES: "fulles de pomer"
+  OAK_LOG: "tronc de pomer"
+  OAK_PLANKS: "fusta de pomer"
+  OAK_PRESSURE_PLATE: "placa de pressió de pomer"
+  OAK_SAPLING: "esqueix de pomer"
+  OAK_SIGN: "cartell de pomer"
+  OAK_SLAB: "llosa de pomer"
+  OAK_STAIRS: "escales de pomer"
+  OAK_TRAPDOOR: "trapa de pomer"
+  OAK_WALL_HANGING_SIGN: "cartell penjant de pomer amb suport"
+  OAK_WALL_SIGN: "cartell de pomer a la paret"
+  OAK_WOOD: "fusta de pomer"
+  OBSERVER: "observador"
+  OBSIDIAN: "obsidiana"
+  OCHRE_FROGLIGHT: "granollum ocre"
+  OMINOUS_BANNER: "estendard ominós"
+  ORANGE_BANNER: "estendard ataronjat"
+  ORANGE_BED: "llit taronja"
+  ORANGE_CANDLE: "espelma taronja"
+  ORANGE_CANDLE_CAKE: "pastís amb espelma taronja"
+  ORANGE_CARPET: "catifa taronja"
+  ORANGE_CONCRETE: "formigó taronja"
+  ORANGE_CONCRETE_POWDER: "pols de formigó taronja"
+  ORANGE_GLAZED_TERRACOTTA: "rajola taronja"
+  ORANGE_SHULKER_BOX: "caixa de shulker taronja"
+  ORANGE_STAINED_GLASS: "vidre tenyit de taronja"
+  ORANGE_STAINED_GLASS_PANE: "panell de vidre tenyit de taronja"
+  ORANGE_TERRACOTTA: "terracota taronja"
+  ORANGE_TULIP: "tulipa taronja"
+  ORANGE_WOOL: "llana taronja"
+  OXEYE_DAISY: "margarida"
+  OXIDIZED_CHISELED_COPPER: "coure oxidat cisellat"
+  OXIDIZED_COPPER: "coure oxidat"
+  OXIDIZED_COPPER_BULB: "bombeta de coure oxidat"
+  OXIDIZED_COPPER_DOOR: "porta de coure oxidat"
+  OXIDIZED_COPPER_GRATE: "reixa de coure oxidat"
+  OXIDIZED_COPPER_TRAPDOOR: "trapa de coure oxidat"
+  OXIDIZED_CUT_COPPER: "coure tallat oxidat"
+  OXIDIZED_CUT_COPPER_SLAB: "llosa de coure tallat oxidada"
+  OXIDIZED_CUT_COPPER_STAIRS: "escales de coure tallat oxidades"
+  PACKED_ICE: "gel compactat"
+  PACKED_MUD: "fang compactat"
+  PEARLESCENT_FROGLIGHT: "granollum nacrada"
+  PEONY: "peònia"
+  PETRIFIED_OAK_SLAB: "llosa de pomer petrificada"
+  PIGLIN_HEAD: "cap de piglin"
+  PIGLIN_WALL_HEAD: "cap de piglin a la paret"
+  PINK_BANNER: "estendard rosa"
+  PINK_BED: "llit rosa"
+  PINK_CANDLE: "espelma rosa"
+  PINK_CANDLE_CAKE: "pastís amb espelma rosa"
+  PINK_CARPET: "catifa rosa"
+  PINK_CONCRETE: "formigó rosa"
+  PINK_CONCRETE_POWDER: "pols de formigó rosa"
+  PINK_GLAZED_TERRACOTTA: "rajola rosa"
+  PINK_PETALS: "pètals rosa"
+  PINK_SHULKER_BOX: "caixa de shulker rosa"
+  PINK_STAINED_GLASS: "vidre tenyit de rosa"
+  PINK_STAINED_GLASS_PANE: "panell de vidre tenyit de rosa"
+  PINK_TERRACOTTA: "terracota rosa"
+  PINK_TULIP: "tulipa rosa"
+  PINK_WOOL: "llana rosa"
+  PISTON: "pistó"
+  PISTON_HEAD: "cap de pistó"
+  PITCHER_CROP: "cultiu de planta gerro"
+  PITCHER_PLANT: "planta gerro"
+  PLAYER_HEAD: "cap de jugador"
+  PLAYER_HEAD_NAMED: "cap de %s"
+  PLAYER_WALL_HEAD: "cap de jugador a la paret"
+  PODZOL: "pinassa"
+  POINTED_DRIPSTONE: "espeleotema punxegut"
+  POLISHED_ANDESITE: "andesita polida"
+  POLISHED_ANDESITE_SLAB: "llosa d'andesita polida"
+  POLISHED_ANDESITE_STAIRS: "escales d'andesita polida"
+  POLISHED_BASALT: "basalt polit"
+  POLISHED_BLACKSTONE: "roca negra polida"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "llosa de maons de roca negra polida"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "escales de maons de roca negra polida"
+  POLISHED_BLACKSTONE_BRICK_WALL: "mur de maons de roca negra polida"
+  POLISHED_BLACKSTONE_BRICKS: "maons de roca negra polida"
+  POLISHED_BLACKSTONE_BUTTON: "botó de roca negra polida"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "placa de pressió de roca negra polida"
+  POLISHED_BLACKSTONE_SLAB: "llosa de roca negra polida"
+  POLISHED_BLACKSTONE_STAIRS: "escales de roca negra polida"
+  POLISHED_BLACKSTONE_WALL: "mur de roca negra polida"
+  POLISHED_DEEPSLATE: "pissarra polida"
+  POLISHED_DEEPSLATE_SLAB: "llosa de pissarra polida"
+  POLISHED_DEEPSLATE_STAIRS: "escales de pissarra polida"
+  POLISHED_DEEPSLATE_WALL: "mur de pissarra polida"
+  POLISHED_DIORITE: "diorita polida"
+  POLISHED_DIORITE_SLAB: "llosa de diorita polida"
+  POLISHED_DIORITE_STAIRS: "escales de diorita polida"
+  POLISHED_GRANITE: "granit polit"
+  POLISHED_GRANITE_SLAB: "llosa de granit polit"
+  POLISHED_GRANITE_STAIRS: "escales de granit polit"
+  POLISHED_TUFF: "tuf polit"
+  POLISHED_TUFF_SLAB: "llosa de tuf polit"
+  POLISHED_TUFF_STAIRS: "escales de tuf polit"
+  POLISHED_TUFF_WALL: "mur de tuf polit"
+  POPPY: "rosella"
+  POTATOES: "patates"
+  POTTED_ACACIA_SAPLING: "test amb esqueix d'acàcia"
+  POTTED_ALLIUM: "test amb allium"
+  POTTED_AZALEA_BUSH: "test amb azalea"
+  POTTED_AZURE_BLUET: "test amb azure bluet"
+  POTTED_BAMBOO: "test amb bambú"
+  POTTED_BIRCH_SAPLING: "test amb esqueix de bedoll"
+  POTTED_BLUE_ORCHID: "test amb orquídia blava"
+  POTTED_BROWN_MUSHROOM: "test amb bolet marró"
+  POTTED_CACTUS: "test amb cactus"
+  POTTED_CHERRY_SAPLING: "test amb esqueix de cirerer"
+  POTTED_CORNFLOWER: "test amb blavet"
+  POTTED_CRIMSON_FUNGUS: "test amb fong carmesí"
+  POTTED_CRIMSON_ROOTS: "test amb arrels carmesines"
+  POTTED_DANDELION: "test amb dent de lleó"
+  POTTED_DARK_OAK_SAPLING: "test amb esqueix de pomer fosc"
+  POTTED_DEAD_BUSH: "test amb arbust sec"
+  POTTED_FERN: "test amb falguera"
+  POTTED_FLOWERING_AZALEA_BUSH: "test amb azalea florida"
+  POTTED_JUNGLE_SAPLING: "test amb esqueix de jungla"
+  POTTED_LILY_OF_THE_VALLEY: "test amb lliri de maig"
+  POTTED_MANGROVE_PROPAGULE: "test amb propàgul de mangle"
+  POTTED_OAK_SAPLING: "test amb esqueix de pomer"
+  POTTED_ORANGE_TULIP: "test amb tulipà taronja"
+  POTTED_OXEYE_DAISY: "test amb margarida"
+  POTTED_PINK_TULIP: "test amb tulipà rosa"
+  POTTED_POPPY: "test amb rosella"
+  POTTED_RED_MUSHROOM: "test amb bolet vermell"
+  POTTED_RED_TULIP: "test amb tulipà vermell"
+  POTTED_SPRUCE_SAPLING: "test amb esqueix de pi"
+  POTTED_TORCHFLOWER: "test amb florxa"
+  POTTED_WARPED_FUNGUS: "test amb fong guerxo"
+  POTTED_WARPED_ROOTS: "test amb arrels guerxes"
+  POTTED_WHITE_TULIP: "test amb tulipà blanc"
+  POTTED_WITHER_ROSE: "test amb rosa de wither"
+  POWDER_SNOW: "neu pols"
+  POWDER_SNOW_CAULDRON: "calderó amb neu pols"
+  POWERED_RAIL: "rail propulsor"
+  PRISMARINE: "prismarina"
+  PRISMARINE_BRICK_SLAB: "llosa de maons de prismarina"
+  PRISMARINE_BRICK_STAIRS: "escales de maons de prismarina"
+  PRISMARINE_BRICKS: "maons de prismarina"
+  PRISMARINE_SLAB: "llosa de prismarina"
+  PRISMARINE_STAIRS: "escales de prismarina"
+  PRISMARINE_WALL: "mur de prismarina"
+  PUMPKIN: "carbassa"
+  PUMPKIN_STEM: "tija de carabassa"
+  PURPLE_BANNER: "estendard de porpra"
+  PURPLE_BED: "llit lila"
+  PURPLE_CANDLE: "espelma lila"
+  PURPLE_CANDLE_CAKE: "pastís amb espelma lila"
+  PURPLE_CARPET: "catifa lila"
+  PURPLE_CONCRETE: "formigó morat"
+  PURPLE_CONCRETE_POWDER: "pols de formigó morat"
+  PURPLE_GLAZED_TERRACOTTA: "rajola morada"
+  PURPLE_SHULKER_BOX: "caixa de shulker lila"
+  PURPLE_STAINED_GLASS: "vidre tenyit de lila"
+  PURPLE_STAINED_GLASS_PANE: "panell de vidre tenyit de lila"
+  PURPLE_TERRACOTTA: "terracota morada"
+  PURPLE_WOOL: "llana lila"
+  PURPUR_BLOCK: "bloc de purpur"
+  PURPUR_PILLAR: "pilar de purpur"
+  PURPUR_SLAB: "llosa de purpur"
+  PURPUR_STAIRS: "escales de purpur"
+  QUARTZ_BLOCK: "bloc de quars"
+  QUARTZ_BRICKS: "maons de quars"
+  QUARTZ_PILLAR: "pilar de quars"
+  QUARTZ_SLAB: "llosa de quars"
+  QUARTZ_STAIRS: "escales de quars"
+  RAIL: "rail"
+  RAW_COPPER_BLOCK: "bloc de coure en brut"
+  RAW_GOLD_BLOCK: "bloc d'or en brut"
+  RAW_IRON_BLOCK: "bloc de ferro en brut"
+  RED_BANNER: "estendard de gules"
+  RED_BED: "llit vermell"
+  RED_CANDLE: "espelma vermella"
+  RED_CANDLE_CAKE: "pastís amb espelma vermella"
+  RED_CARPET: "catifa vermella"
+  RED_CONCRETE: "formigó vermell"
+  RED_CONCRETE_POWDER: "pols de formigó vermell"
+  RED_GLAZED_TERRACOTTA: "rajola vermella"
+  RED_MUSHROOM: "bolet vermell"
+  RED_MUSHROOM_BLOCK: "bloc de bolet vermell"
+  RED_NETHER_BRICK_SLAB: "llosa de maons del nether vermells"
+  RED_NETHER_BRICK_STAIRS: "escales de maons del nether vermells"
+  RED_NETHER_BRICK_WALL: "mur de maons del nether vermells"
+  RED_NETHER_BRICKS: "maons del nether vermells"
+  RED_SAND: "sorra vermella"
+  RED_SANDSTONE: "roca sorrenca vermella"
+  RED_SANDSTONE_SLAB: "llosa de roca sorrenca vermella"
+  RED_SANDSTONE_STAIRS: "escales de roca sorrenca vermella"
+  RED_SANDSTONE_WALL: "mur de roca sorrenca vermella"
+  RED_SHULKER_BOX: "caixa de shulker vermella"
+  RED_STAINED_GLASS: "vidre tenyit de vermell"
+  RED_STAINED_GLASS_PANE: "panell de vidre tenyit de vermell"
+  RED_TERRACOTTA: "terracota vermella"
+  RED_TULIP: "tulipa vermella"
+  RED_WOOL: "llana vermella"
+  REDSTONE_BLOCK: "bloc de redstone"
+  REDSTONE_LAMP: "làmpada de redstone"
+  REDSTONE_ORE: "mena de redstone"
+  REDSTONE_TORCH: "torxa de redstone"
+  REDSTONE_WALL_TORCH: "torxa de redstone a la paret"
+  REDSTONE_WIRE: "cable de redstone"
+  REINFORCED_DEEPSLATE: "pissarra reforçada"
+  REPEATER: "repetidor"
+  REPEATING_COMMAND_BLOCK: "bloc de comandaments repetitiu"
+  RESPAWN_ANCHOR: "àncora de reaparició"
+  ROOTED_DIRT: "terra amb arrels"
+  ROSE_BUSH: "roser"
+  SAND: "sorra"
+  SANDSTONE: "roca sorrenca"
+  SANDSTONE_SLAB: "llosa de roca sorrenca"
+  SANDSTONE_STAIRS: "escales de roca sorrenca"
+  SANDSTONE_WALL: "mur de roca sorrenca"
+  SCAFFOLDING: "bastida"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk catalitzador"
+  SCULK_SENSOR: "sensor sculk"
+  SCULK_SHRIEKER: "sculk xisclador"
+  SCULK_VEIN: "nervis d'sculk"
+  SEA_LANTERN: "llanterna marina"
+  SEA_PICKLE: "cogombre de mar"
+  SEAGRASS: "herba marina"
+  SET_SPAWN: "punt de reaparició establert"
+  SHORT_GRASS: "herba curta"
+  SHROOMLIGHT: "girgolàmpada"
+  SHULKER_BOX: "caixa de shulker"
+  SKELETON_SKULL: "calavera d'esquelet"
+  SKELETON_WALL_SKULL: "calavera d'esquelet a la paret"
+  SLIME_BLOCK: "bloc de llim"
+  SMALL_AMETHYST_BUD: "cristall d'ametista petit"
+  SMALL_DRIPLEAF: "degotadora petita"
+  SMITHING_TABLE: "taula de ferreria"
+  SMOKER: "fumador"
+  SMOOTH_BASALT: "basalt llis"
+  SMOOTH_QUARTZ: "bloc de quars llis"
+  SMOOTH_QUARTZ_SLAB: "llosa de quars llis"
+  SMOOTH_QUARTZ_STAIRS: "escales de quars llis"
+  SMOOTH_RED_SANDSTONE: "roca sorrenca llisa"
+  SMOOTH_RED_SANDSTONE_SLAB: "llosa de roca sorrenca vermella llisa"
+  SMOOTH_RED_SANDSTONE_STAIRS: "escales de roca sorrenca vermella llisa"
+  SMOOTH_SANDSTONE: "roca sorrenca llisa"
+  SMOOTH_SANDSTONE_SLAB: "llosa de roca sorrenca llisa"
+  SMOOTH_SANDSTONE_STAIRS: "escales de roca sorrenca llisa"
+  SMOOTH_STONE: "roca llisa"
+  SMOOTH_STONE_SLAB: "llosa de roca llisa"
+  SNIFFER_EGG: "ou d'ensumador"
+  SNOW: "neu"
+  SNOW_BLOCK: "bloc de neu"
+  SOUL_CAMPFIRE: "foguera d'ànimes"
+  SOUL_FIRE: "foc d'ànimes"
+  SOUL_LANTERN: "llanterna d'ànimes"
+  SOUL_SAND: "sorra d'ànimes"
+  SOUL_SOIL: "sòl d'ànimes"
+  SOUL_TORCH: "torxa d'ànimes"
+  SOUL_WALL_TORCH: "torxa d'ànimes a la paret"
+  SPAWN_NOT_VALID: "no tens llit o una àncora de reaparició carregada o ha estat obstruït/da"
+  SPAWNER: "generador de monstres"
+  SPAWNER_DESC1: "al fer-hi clic amb un ou generador:"
+  SPAWNER_DESC2: "estableix el tipus d'entitat"
+  SPONGE: "esponja"
+  SPORE_BLOSSOM: "flor d'espores"
+  SPRUCE_BUTTON: "botó de pi"
+  SPRUCE_DOOR: "porta de pi"
+  SPRUCE_FENCE: "tanca de pi"
+  SPRUCE_FENCE_GATE: "porta de tanca de pi"
+  SPRUCE_HANGING_SIGN: "cartell penjant de pi"
+  SPRUCE_LEAVES: "fulles de pi"
+  SPRUCE_LOG: "tronc de pi"
+  SPRUCE_PLANKS: "fusta de pi"
+  SPRUCE_PRESSURE_PLATE: "placa de pressió de pi"
+  SPRUCE_SAPLING: "esqueix de pi"
+  SPRUCE_SIGN: "cartell de pi"
+  SPRUCE_SLAB: "llosa de pi"
+  SPRUCE_STAIRS: "escales de pi"
+  SPRUCE_TRAPDOOR: "trapa de pi"
+  SPRUCE_WALL_HANGING_SIGN: "cartell penjant de pi amb suport"
+  SPRUCE_WALL_SIGN: "cartell de pi a la paret"
+  SPRUCE_WOOD: "fusta de pi"
+  STICKY_PISTON: "pistó enganxós"
+  STONE: "roca"
+  STONE_BRICK_SLAB: "llosa de maons de roca"
+  STONE_BRICK_STAIRS: "escales de maons de roca"
+  STONE_BRICK_WALL: "mur de maons de roca"
+  STONE_BRICKS: "maons de roca"
+  STONE_BUTTON: "botó de roca"
+  STONE_PRESSURE_PLATE: "placa de pressió de roca"
+  STONE_SLAB: "llosa de roca"
+  STONE_STAIRS: "escales de roca"
+  STONECUTTER: "talla-roques"
+  STRIPPED_ACACIA_LOG: "tronc d'acàcia escorçat"
+  STRIPPED_ACACIA_WOOD: "fusta d'acàcia escorçada"
+  STRIPPED_BAMBOO_BLOCK: "bloc de bambú escorçat"
+  STRIPPED_BIRCH_LOG: "tronc de bedoll escorçat"
+  STRIPPED_BIRCH_WOOD: "fusta de bedoll escorçada"
+  STRIPPED_CHERRY_LOG: "tronc de cirerer escorçat"
+  STRIPPED_CHERRY_WOOD: "fusta de cirerer escorçada"
+  STRIPPED_CRIMSON_HYPHAE: "hifes carmesines escorçades"
+  STRIPPED_CRIMSON_STEM: "peu carmesí escorçat"
+  STRIPPED_DARK_OAK_LOG: "tronc de pomer fosc escorçat"
+  STRIPPED_DARK_OAK_WOOD: "fusta de pomer fosc escorçada"
+  STRIPPED_JUNGLE_LOG: "tronc de jungla escorçat"
+  STRIPPED_JUNGLE_WOOD: "fusta de jungla escorçada"
+  STRIPPED_MANGROVE_LOG: "tronc de mangle escorçat"
+  STRIPPED_MANGROVE_WOOD: "fusta de mangle escorçada"
+  STRIPPED_OAK_LOG: "tronc de pomer escorçat"
+  STRIPPED_OAK_WOOD: "fusta de pomer escorçada"
+  STRIPPED_SPRUCE_LOG: "tronc de pi escorçat"
+  STRIPPED_SPRUCE_WOOD: "fusta de pi escorçada"
+  STRIPPED_WARPED_HYPHAE: "hifes guerxes escorçades"
+  STRIPPED_WARPED_STEM: "peu guerxo escorçat"
+  STRUCTURE_BLOCK: "bloc estructural"
+  STRUCTURE_VOID: "buit estructural"
+  SUGAR_CANE: "canya de sucre"
+  SUNFLOWER: "gira-sol"
+  SUSPICIOUS_GRAVEL: "grava sospitosa"
+  SUSPICIOUS_SAND: "sorra sospitosa"
+  SWEET_BERRY_BUSH: "arbust de baies dolces"
+  TALL_GRASS: "herba alta"
+  TALL_SEAGRASS: "herba marina alta"
+  TARGET: "blanc"
+  TERRACOTTA: "terracota"
+  TINTED_GLASS: "vidre opac"
+  TNT: "dinamita"
+  TORCH: "torxa"
+  TORCHFLOWER: "florxa"
+  TORCHFLOWER_CROP: "cultiu de florxa"
+  TRAPPED_CHEST: "cofre trampa"
+  TRIAL_SPAWNER: "generador de reptes"
+  TRIPWIRE: "corda"
+  TRIPWIRE_HOOK: "ganxo"
+  TUBE_CORAL: "corall de tub"
+  TUBE_CORAL_BLOCK: "bloc de corall de tub"
+  TUBE_CORAL_FAN: "gorgònia de tub"
+  TUBE_CORAL_WALL_FAN: "gorgònia de tub a la paret"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "llosa de maons de tuf "
+  TUFF_BRICK_STAIRS: "escales de maons de tuf"
+  TUFF_BRICK_WALL: "mur de maons de tuf"
+  TUFF_BRICKS: "maons de tuf"
+  TUFF_SLAB: "llosa de tuf"
+  TUFF_STAIRS: "escales de tuf"
+  TUFF_WALL: "mur de tuf"
+  TURTLE_EGG: "ou de tortuga"
+  TWISTING_VINES: "lianes retorçades"
+  TWISTING_VINES_PLANT: "lianes retorçades"
+  VERDANT_FROGLIGHT: "granollum verdosa"
+  VINE: "lianes"
+  VOID_AIR: "aire del buit"
+  WALL_TORCH: "torxa a la paret"
+  WARPED_BUTTON: "botó guerxo"
+  WARPED_DOOR: "porta guerxa"
+  WARPED_FENCE: "tanca guerxa"
+  WARPED_FENCE_GATE: "porta de tanca guerxa"
+  WARPED_FUNGUS: "fong guerxo"
+  WARPED_HANGING_SIGN: "cartell penjant guerxo"
+  WARPED_HYPHAE: "hifes guerxes"
+  WARPED_NYLIUM: "netheli guerxo"
+  WARPED_PLANKS: "fusta guerxa"
+  WARPED_PRESSURE_PLATE: "placa de pressió guerxa"
+  WARPED_ROOTS: "arrels guerxes"
+  WARPED_SIGN: "cartell guerxo"
+  WARPED_SLAB: "llosa guerxa"
+  WARPED_STAIRS: "escales guerxes"
+  WARPED_STEM: "peu guerxo"
+  WARPED_TRAPDOOR: "trapa guerxa"
+  WARPED_WALL_HANGING_SIGN: "cartell penjant guerxo amb suport"
+  WARPED_WALL_SIGN: "cartell guerxo a la paret"
+  WARPED_WART_BLOCK: "bloc de berrugues guerxes"
+  WATER: "aigua"
+  WATER_CAULDRON: "calderó amb aigua"
+  WAXED_CHISELED_COPPER: "coure encerat cisellat"
+  WAXED_COPPER_BLOCK: "bloc de coure encerat"
+  WAXED_COPPER_BULB: "bombeta de coure encerat"
+  WAXED_COPPER_DOOR: "porta de coure encerat"
+  WAXED_COPPER_GRATE: "reixa de coure encerat"
+  WAXED_COPPER_TRAPDOOR: "trapa de coure encerat"
+  WAXED_CUT_COPPER: "coure tallat encerat"
+  WAXED_CUT_COPPER_SLAB: "llosa de coure tallat encerada"
+  WAXED_CUT_COPPER_STAIRS: "escales de coure tallat encerades"
+  WAXED_EXPOSED_CHISELED_COPPER: "coure exposat encerat cisellat"
+  WAXED_EXPOSED_COPPER: "coure exposat encerat"
+  WAXED_EXPOSED_COPPER_BULB: "bombeta de coure exposat encerat"
+  WAXED_EXPOSED_COPPER_DOOR: "porta de coure exposat encerat"
+  WAXED_EXPOSED_COPPER_GRATE: "reixa de coure exposat encerat"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "trapa de coure exposat encerat"
+  WAXED_EXPOSED_CUT_COPPER: "coure tallat exposat encerat"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "llosa de coure tallat exposada encerada"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "escales de coure tallat exposades encerades"
+  WAXED_OXIDIZED_CHISELED_COPPER: "coure oxidat encerat cisellat"
+  WAXED_OXIDIZED_COPPER: "coure oxidat encerat"
+  WAXED_OXIDIZED_COPPER_BULB: "bombeta de coure oxidat encerat"
+  WAXED_OXIDIZED_COPPER_DOOR: "porta de coure oxidat encerat"
+  WAXED_OXIDIZED_COPPER_GRATE: "reixa de coure oxidat encerat"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "trapa de coure oxidat encerat"
+  WAXED_OXIDIZED_CUT_COPPER: "coure tallat oxidat encerat"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "llosa de coure tallat oxidat encerada"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "escales de coure tallat oxidat encerades"
+  WAXED_WEATHERED_CHISELED_COPPER: "coure corroït encerat cisellat"
+  WAXED_WEATHERED_COPPER: "coure corroït encerat"
+  WAXED_WEATHERED_COPPER_BULB: "bombeta de coure corroït encerat"
+  WAXED_WEATHERED_COPPER_DOOR: "porta de coure corroït encerat"
+  WAXED_WEATHERED_COPPER_GRATE: "reixa de coure corroït encerat"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "trapa de coure corroït encerat"
+  WAXED_WEATHERED_CUT_COPPER: "coure tallat corroït encerat"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "llosa de coure tallat corroïda encerada"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "escales de coure tallat corroïdes encerades"
+  WEATHERED_CHISELED_COPPER: "coure corroït cisellat"
+  WEATHERED_COPPER: "coure corroït"
+  WEATHERED_COPPER_BULB: "bombeta de coure corroït"
+  WEATHERED_COPPER_DOOR: "porta de coure corroït"
+  WEATHERED_COPPER_GRATE: "reixa de coure corroït"
+  WEATHERED_COPPER_TRAPDOOR: "trapa de coure corroït"
+  WEATHERED_CUT_COPPER: "coure tallat corroït"
+  WEATHERED_CUT_COPPER_SLAB: "llosa de coure tallat corroïda"
+  WEATHERED_CUT_COPPER_STAIRS: "escales de coure tallat corroïdes"
+  WEEPING_VINES: "lianes ploroses"
+  WEEPING_VINES_PLANT: "lianes ploroses"
+  WET_SPONGE: "esponja humida"
+  WHEAT: "cultiu de blat"
+  WHITE_BANNER: "estendard blanc"
+  WHITE_BED: "llit blanc"
+  WHITE_CANDLE: "espelma blanca"
+  WHITE_CANDLE_CAKE: "pastís amb espelma blanca"
+  WHITE_CARPET: "catifa blanca"
+  WHITE_CONCRETE: "formigó blanc"
+  WHITE_CONCRETE_POWDER: "pols de formigó blanc"
+  WHITE_GLAZED_TERRACOTTA: "rajola blanca"
+  WHITE_SHULKER_BOX: "caixa de shulker blanca"
+  WHITE_STAINED_GLASS: "vidre tenyit de blanc"
+  WHITE_STAINED_GLASS_PANE: "panell de vidre tenyit de blanc"
+  WHITE_TERRACOTTA: "terracota blanca"
+  WHITE_TULIP: "tulipa blanca"
+  WHITE_WOOL: "llana blanca"
+  WITHER_ROSE: "rosa de wither"
+  WITHER_SKELETON_SKULL: "calavera d'esquelet wither"
+  WITHER_SKELETON_WALL_SKULL: "calavera d'esquelet wither a la paret"
+  YELLOW_BANNER: "estendard d'or"
+  YELLOW_BED: "llit groc"
+  YELLOW_CANDLE: "espelma groga"
+  YELLOW_CANDLE_CAKE: "pastís amb espelma groga"
+  YELLOW_CARPET: "catifa groga"
+  YELLOW_CONCRETE: "formigó groc"
+  YELLOW_CONCRETE_POWDER: "pols de formigó groc"
+  YELLOW_GLAZED_TERRACOTTA: "rajola groga"
+  YELLOW_SHULKER_BOX: "caixa de shulker groga"
+  YELLOW_STAINED_GLASS: "vidre tenyit de groc"
+  YELLOW_STAINED_GLASS_PANE: "panell de vidre tenyit de groc"
+  YELLOW_TERRACOTTA: "terracota groga"
+  YELLOW_WOOL: "llana groga"
+  ZOMBIE_HEAD: "cap de zombi"
+  ZOMBIE_WALL_HEAD: "cap de zombi a la paret"
+  ACACIA_BOAT: "barca d'acàcia"
+  ACACIA_CHEST_BOAT: "barca d'acàcia amb cofre"
+  ALLAY_SPAWN_EGG: "generar allay"
+  AMETHYST_SHARD: "fragment d’ametista"
+  ANGLER_POTTERY_SHARD: "fragment de ceràmica de canya de pescar"
+  ANGLER_POTTERY_SHERD: "fragment de ceràmica de canya de pescar"
+  APPLE: "poma"
+  ARCHER_POTTERY_SHARD: "fragment de ceràmica d'arquer"
+  ARCHER_POTTERY_SHERD: "fragment de ceràmica d'arquer"
+  ARMOR_STAND: "maniquí"
+  ARMS_UP_POTTERY_SHARD: "fragment de ceràmica de ninot"
+  ARMS_UP_POTTERY_SHERD: "fragment de ceràmica de ninot"
+  ARROW: "fletxa"
+  AXOLOTL_BUCKET: "galleda amb axolot"
+  AXOLOTL_SPAWN_EGG: "generar axolot"
+  BAKED_POTATO: "patata cuita"
+  BAMBOO_CHEST_RAFT: "rai de bambú amb cofre"
+  BAMBOO_RAFT: "rai de bambú"
+  BAT_SPAWN_EGG: "generar ratpenat"
+  BEE_SPAWN_EGG: "generar abella"
+  BEEF: "bistec cru"
+  BEETROOT: "remolatxa"
+  BEETROOT_SEEDS: "llavors de remolatxa"
+  BEETROOT_SOUP: "sopa de remolatxa"
+  BIRCH_BOAT: "barca de bedoll"
+  BIRCH_CHEST_BOAT: "barca de bedoll amb cofre"
+  BLACK_DYE: "tint negre"
+  BLADE_POTTERY_SHARD: "fragment de ceràmica d'espasa"
+  BLADE_POTTERY_SHERD: "fragment de ceràmica d'espasa"
+  BLAZE_POWDER: "pols de foc"
+  BLAZE_ROD: "vara flamejant"
+  BLAZE_SPAWN_EGG: "generar esperit del foc"
+  BLUE_DYE: "tint blau"
+  BONE: "os"
+  BONE_MEAL: "farina d'ossos"
+  BOOK: "llibre"
+  BOW: "arc"
+  BOWL: "bol"
+  BREAD: "pa"
+  BREEZE_SPAWN_EGG: "generar breeze"
+  BREWER_POTTERY_SHARD: "fragment de ceràmica de poció"
+  BREWER_POTTERY_SHERD: "fragment de ceràmica de poció"
+  BRICK: "maó"
+  BROWN_DYE: "tint marró"
+  BRUSH: "pinzell"
+  BUCKET: "galleda"
+  BUNDLE: "sarró"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "fragment de ceràmica de foc"
+  BURN_POTTERY_SHERD: "fragment de ceràmica de foc"
+  CAMEL_SPAWN_EGG: "generar dromedari"
+  CARROT: "pastanaga"
+  CARROT_ON_A_STICK: "canya amb pastanaga"
+  CAT_SPAWN_EGG: "generar gat"
+  CAVE_SPIDER_SPAWN_EGG: "generar aranya de cova"
+  CHAINMAIL_BOOTS: "botes de cota de malla"
+  CHAINMAIL_CHESTPLATE: "cuirassa de cota de malla"
+  CHAINMAIL_HELMET: "casc de cota de malla"
+  CHAINMAIL_LEGGINGS: "pantalons de cota de malla"
+  CHARCOAL: "carbó vegetal"
+  CHERRY_BOAT: "barca de cirerer"
+  CHERRY_CHEST_BOAT: "barca de cirerer amb cofre"
+  CHEST_MINECART: "vagoneta amb cofre"
+  CHICKEN: "carn de pollastre"
+  CHICKEN_SPAWN_EGG: "generar pollastre"
+  CHORUS_FRUIT: "fruita de tornada"
+  CLAY_BALL: "bola d'argila"
+  CLOCK: "rellotge"
+  COAL: "carbó"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  COCOA_BEANS: "grans de cacau"
+  COD: "bacallà cru"
+  COD_BUCKET: "galleda amb bacallà"
+  COD_SPAWN_EGG: "generar bacallà"
+  COMMAND_BLOCK_MINECART: "vagoneta amb bloc de comandaments"
+  COMPASS: "brúixola"
+  COOKED_BEEF: "bistec"
+  COOKED_CHICKEN: "pollastre rostit"
+  COOKED_COD: "bacallà cuit"
+  COOKED_MUTTON: "carn d'ovella cuita"
+  COOKED_PORKCHOP: "carn de porc cuita"
+  COOKED_RABBIT: "conill rostit"
+  COOKED_SALMON: "salmó cuit"
+  COOKIE: "galeta"
+  COPPER_INGOT: "lingot de coure"
+  COW_SPAWN_EGG: "generar vaca"
+  CREEPER_BANNER_PATTERN: "patró de creeper"
+  CREEPER_BANNER_PATTERN_DESC: "estampat de creeper"
+  CREEPER_SPAWN_EGG: "generar creeper"
+  CROSSBOW: "ballesta"
+  CROSSBOW_PROJECTILE: "projectil:"
+  CYAN_DYE: "tint cian"
+  DANGER_POTTERY_SHARD: "fragment de ceràmica de creeper"
+  DANGER_POTTERY_SHERD: "fragment de ceràmica de creeper"
+  DARK_OAK_BOAT: "barca de pomer fosc"
+  DARK_OAK_CHEST_BOAT: "barca de pomer fosc amb cofre"
+  DEBUG_STICK: "pal de proves"
+  DEBUG_STICK_EMPTY: "%s no té propietats"
+  DEBUG_STICK_SELECT: "has seleccionat \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" ha canviat a %s"
+  DIAMOND: "diamant"
+  DIAMOND_AXE: "destral de diamant"
+  DIAMOND_BOOTS: "botes de diamant"
+  DIAMOND_CHESTPLATE: "cuirassa de diamant"
+  DIAMOND_HELMET: "casc de diamant"
+  DIAMOND_HOE: "aixada de diamant"
+  DIAMOND_HORSE_ARMOR: "armadura de diamant per a cavalls"
+  DIAMOND_LEGGINGS: "malles de diamant"
+  DIAMOND_PICKAXE: "pic de diamant"
+  DIAMOND_SHOVEL: "pala de diamant"
+  DIAMOND_SWORD: "espasa de diamant"
+  DISC_FRAGMENT_5: "fragment de disc"
+  DISC_FRAGMENT_5_DESC: "disc de música - 5"
+  DOLPHIN_SPAWN_EGG: "generar dofí"
+  DONKEY_SPAWN_EGG: "generar ruc"
+  DRAGON_BREATH: "alè de drac"
+  DRIED_KELP: "algues seques"
+  DROWNED_SPAWN_EGG: "generar ofegat"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  ECHO_SHARD: "fragment d'eco"
+  EGG: "ou"
+  ELDER_GUARDIAN_SPAWN_EGG: "generar guardià ancià"
+  ELYTRA: "èlitres"
+  EMERALD: "maragda"
+  ENCHANTED_BOOK: "llibre encantat"
+  ENCHANTED_GOLDEN_APPLE: "poma daurada encantada"
+  END_CRYSTAL: "cristall de l'end"
+  ENDER_DRAGON_SPAWN_EGG: "generar drac d'ender"
+  ENDER_EYE: "ull d'ender"
+  ENDER_PEARL: "perla d'ender"
+  ENDERMAN_SPAWN_EGG: "generar enderman"
+  ENDERMITE_SPAWN_EGG: "generar endermite"
+  EVOKER_SPAWN_EGG: "generar invocador"
+  EXPERIENCE_BOTTLE: "ampolla màgica"
+  EXPLORER_POTTERY_SHARD: "fragment de ceràmica de mapa"
+  EXPLORER_POTTERY_SHERD: "fragment de ceràmica de mapa"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  FEATHER: "ploma"
+  FERMENTED_SPIDER_EYE: "ull d'aranya fermentat"
+  FILLED_MAP: "mapa"
+  FIRE_CHARGE: "càrrega de foc"
+  FIREWORK_ROCKET: "focs artificials"
+  FIREWORK_ROCKET_FLIGHT: "duració del vol:"
+  FIREWORK_STAR: "estrella de focs artificials"
+  FIREWORK_STAR_BLACK: "negre"
+  FIREWORK_STAR_BLUE: "blau"
+  FIREWORK_STAR_BROWN: "marró"
+  FIREWORK_STAR_CUSTOM_COLOR: "personalitzat"
+  FIREWORK_STAR_CYAN: "cian"
+  FIREWORK_STAR_FADE_TO: "canviar a"
+  FIREWORK_STAR_FLICKER: "espurnejar"
+  FIREWORK_STAR_GRAY: "gris"
+  FIREWORK_STAR_GREEN: "verd"
+  FIREWORK_STAR_LIGHT_BLUE: "blau cel"
+  FIREWORK_STAR_LIGHT_GRAY: "gris clar"
+  FIREWORK_STAR_LIME: "llima"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "taronja"
+  FIREWORK_STAR_PINK: "rosa"
+  FIREWORK_STAR_PURPLE: "lila"
+  FIREWORK_STAR_RED: "vermell"
+  FIREWORK_STAR_SHAPE: "forma desconeguda"
+  FIREWORK_STAR_SHAPE_BURST: "esclatar"
+  FIREWORK_STAR_SHAPE_CREEPER: "en forma de creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "esfera gran"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "esfera petita"
+  FIREWORK_STAR_SHAPE_STAR: "en forma d'estrella"
+  FIREWORK_STAR_TRAIL: "rastre"
+  FIREWORK_STAR_WHITE: "blanc"
+  FIREWORK_STAR_YELLOW: "groc"
+  FISHING_ROD: "canya de pescar"
+  FLINT: "sílex"
+  FLINT_AND_STEEL: "sílex i acer"
+  FLOWER_BANNER_PATTERN: "patró de flor"
+  FLOWER_BANNER_PATTERN_DESC: "estampat de flor"
+  FOX_SPAWN_EGG: "generar guineu"
+  FRIEND_POTTERY_SHARD: "fragment de ceràmica d'amistat"
+  FRIEND_POTTERY_SHERD: "fragment de ceràmica d'amistat"
+  FROG_SPAWN_EGG: "generar granota"
+  FURNACE_MINECART: "vagoneta amb forn"
+  GHAST_SPAWN_EGG: "generar ghast"
+  GHAST_TEAR: "llàgrima de ghast"
+  GLASS_BOTTLE: "ampolla de vidre"
+  GLISTERING_MELON_SLICE: "tallada de síndria daurada"
+  GLOBE_BANNER_PATTERN: "patró de planeta"
+  GLOBE_BANNER_PATTERN_DESC: "estampat de planeta"
+  GLOW_BERRIES: "baies brillants"
+  GLOW_INK_SAC: "sac de tinta lluent"
+  GLOW_ITEM_FRAME: "marc lluent"
+  GLOW_SQUID_SPAWN_EGG: "generar calamar lluent"
+  GLOWSTONE_DUST: "pols de roca brillant"
+  GOAT_HORN: "banya de cabra"
+  GOAT_SPAWN_EGG: "generar cabra"
+  GOLD_INGOT: "lingot d'or"
+  GOLD_NUGGET: "grànul d'or"
+  GOLDEN_APPLE: "poma d'or"
+  GOLDEN_AXE: "destral d'or"
+  GOLDEN_BOOTS: "botes d'or"
+  GOLDEN_CARROT: "pastanaga daurada"
+  GOLDEN_CHESTPLATE: "cuirassa d'or"
+  GOLDEN_HELMET: "casc d'or"
+  GOLDEN_HOE: "aixada d'or"
+  GOLDEN_HORSE_ARMOR: "armadura d'or per a cavalls"
+  GOLDEN_LEGGINGS: "malles d'or"
+  GOLDEN_PICKAXE: "pic d'or"
+  GOLDEN_SHOVEL: "pala d'or"
+  GOLDEN_SWORD: "espasa d'or"
+  GRAY_DYE: "tint gris"
+  GREEN_DYE: "tint verd"
+  GUARDIAN_SPAWN_EGG: "generar guardià"
+  GUNPOWDER: "pólvora"
+  HEART_OF_THE_SEA: "cor del mar"
+  HEART_POTTERY_SHARD: "fragment de ceràmica d'amor"
+  HEART_POTTERY_SHERD: "fragment de ceràmica d'amor"
+  HEARTBREAK_POTTERY_SHARD: "fragment de ceràmica de desamor"
+  HEARTBREAK_POTTERY_SHERD: "fragment de ceràmica de desamor"
+  HOGLIN_SPAWN_EGG: "generar hoglin"
+  HONEY_BOTTLE: "pot de mel"
+  HONEYCOMB: "bresca"
+  HOPPER_MINECART: "vagoneta amb tremuja"
+  HORSE_SPAWN_EGG: "generar cavall"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  HOWL_POTTERY_SHARD: "fragment de ceràmica de llop"
+  HOWL_POTTERY_SHERD: "fragment de ceràmica de llop"
+  HUSK_SPAWN_EGG: "generar zombi ressec"
+  INK_SAC: "sac de tinta"
+  IRON_AXE: "destral de ferro"
+  IRON_BOOTS: "botes de ferro"
+  IRON_CHESTPLATE: "cuirassa de ferro"
+  IRON_GOLEM_SPAWN_EGG: "generar gòlem de ferro"
+  IRON_HELMET: "casc de ferro"
+  IRON_HOE: "aixada de ferro"
+  IRON_HORSE_ARMOR: "armadura de ferro per a cavalls"
+  IRON_INGOT: "lingot de ferro"
+  IRON_LEGGINGS: "malles de ferro"
+  IRON_NUGGET: "grànul de ferro"
+  IRON_PICKAXE: "pic de ferro"
+  IRON_SHOVEL: "pala de ferro"
+  IRON_SWORD: "espasa de ferro"
+  ITEM_FRAME: "marc"
+  JUNGLE_BOAT: "barca de jungla"
+  JUNGLE_CHEST_BOAT: "barca de jungla amb cofre"
+  KNOWLEDGE_BOOK: "llibre del coneixement"
+  LAPIS_LAZULI: "lapislàtzuli"
+  LAVA_BUCKET: "galleda de lava"
+  LEAD: "llaç"
+  LEATHER: "cuir"
+  LEATHER_BOOTS: "botes de cuir"
+  LEATHER_CHESTPLATE: "túnica de cuir"
+  LEATHER_HELMET: "casc de cuir"
+  LEATHER_HORSE_ARMOR: "armadura de cuir per a cavalls"
+  LEATHER_LEGGINGS: "pantalons de cuir"
+  LIGHT_BLUE_DYE: "tint blau clar"
+  LIGHT_GRAY_DYE: "tint gris clar"
+  LIME_DYE: "tint llima"
+  LINGERING_POTION: "poció persistent"
+  LINGERING_POTION_EFFECT_AWKWARD: "poció estranya persistent"
+  LINGERING_POTION_EFFECT_EMPTY: "poció persistent impossible d'elaborar"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "poció de resistència ígnia persistent"
+  LINGERING_POTION_EFFECT_HARMING: "poció danyosa persistent"
+  LINGERING_POTION_EFFECT_HEALING: "poció de curació persistent"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "poció d'invisibilitat persistent"
+  LINGERING_POTION_EFFECT_LEAPING: "poció de salt persistent"
+  LINGERING_POTION_EFFECT_LEVITATION: "poció de levitació persistent"
+  LINGERING_POTION_EFFECT_LUCK: "poció sortosa persistent"
+  LINGERING_POTION_EFFECT_MUNDANE: "poció mundana persistent"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "poció de visió nocturna persistent"
+  LINGERING_POTION_EFFECT_POISON: "poció verinosa persistent"
+  LINGERING_POTION_EFFECT_REGENERATION: "poció de regeneració persistent"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "poció persistent de caiguda lenta"
+  LINGERING_POTION_EFFECT_SLOWNESS: "poció alentidora persistent"
+  LINGERING_POTION_EFFECT_STRENGTH: "poció de força persistent"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "poció de velocitat persistent"
+  LINGERING_POTION_EFFECT_THICK: "poció densa persistent"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "poció persistent del mestre tortuga"
+  LINGERING_POTION_EFFECT_WATER: "ampolla d'aigua persistent"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "poció de respiració aquàtica persistent"
+  LINGERING_POTION_EFFECT_WEAKNESS: "poció debilitant persistent"
+  LLAMA_SPAWN_EGG: "generar llama"
+  LODESTONE_COMPASS: "brúixola guia"
+  MAGENTA_DYE: "tint magenta"
+  MAGMA_CREAM: "crema de magma"
+  MAGMA_CUBE_SPAWN_EGG: "generar cub de magma"
+  MANGROVE_BOAT: "barca de mangle"
+  MANGROVE_CHEST_BOAT: "barca de mangle amb cofre"
+  MAP: "mapa en blanc"
+  MELON_SEEDS: "llavors de síndria"
+  MELON_SLICE: "tallada de síndria"
+  MILK_BUCKET: "galleda amb llet"
+  MINECART: "vagoneta"
+  MINER_POTTERY_SHARD: "fragment de ceràmica de miner"
+  MINER_POTTERY_SHERD: "fragment de ceràmica de miner"
+  MOJANG_BANNER_PATTERN: "patró de mojang"
+  MOJANG_BANNER_PATTERN_DESC: "estampat de mojang"
+  MOOSHROOM_SPAWN_EGG: "generar mooshroom"
+  MOURNER_POTTERY_SHARD: "fragment de ceràmica de vigilant"
+  MOURNER_POTTERY_SHERD: "fragment de ceràmica de vigilant"
+  MULE_SPAWN_EGG: "generar mula"
+  MUSHROOM_STEW: "estofat de bolets"
+  MUSIC_DISC_11: "disc de música"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "disc de música"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "disc de música"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "disc de música"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "disc de música"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "disc de música"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "disc de música"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "disc de música"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "disc de música"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "disc de música"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "disc de música"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "disc de música"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "disc de música"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "disc de música"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "disc de música"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "disc de música"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "carn d'ovella crua"
+  NAME_TAG: "etiqueta de nom"
+  NAUTILUS_SHELL: "closca de nàutil"
+  NETHER_BRICK: "maó del nether"
+  NETHER_STAR: "estrella del nether"
+  NETHERITE_AXE: "destral de netherita"
+  NETHERITE_BOOTS: "botes de netherita"
+  NETHERITE_CHESTPLATE: "cuirassa de netherita"
+  NETHERITE_HELMET: "casc de netherita"
+  NETHERITE_HOE: "aixada de netherita"
+  NETHERITE_INGOT: "lingot de netherita"
+  NETHERITE_LEGGINGS: "malles de netherita"
+  NETHERITE_PICKAXE: "pic de netherita"
+  NETHERITE_SCRAP: "ferralla de netherita"
+  NETHERITE_SHOVEL: "pala de netherita"
+  NETHERITE_SWORD: "espasa de netherita"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "patró de ferreria"
+  OAK_BOAT: "barca de pomer"
+  OAK_CHEST_BOAT: "barca de pomer amb cofre"
+  OCELOT_SPAWN_EGG: "generar ocelot"
+  ORANGE_DYE: "tint taronja"
+  PAINTING: "quadre"
+  PANDA_SPAWN_EGG: "generar panda"
+  PAPER: "paper"
+  PARROT_SPAWN_EGG: "generar lloro"
+  PHANTOM_MEMBRANE: "membrana fantasmal"
+  PHANTOM_SPAWN_EGG: "generar fantasma"
+  PIG_SPAWN_EGG: "generar porc"
+  PIGLIN_BANNER_PATTERN: "patró de piglin"
+  PIGLIN_BANNER_PATTERN_DESC: "morro"
+  PIGLIN_BRUTE_SPAWN_EGG: "generar piglin ferotge"
+  PIGLIN_SPAWN_EGG: "generar piglin"
+  PILLAGER_SPAWN_EGG: "generar saquejador"
+  PINK_DYE: "tint rosa"
+  PITCHER_POD: "beina de planta gerro"
+  PLENTY_POTTERY_SHARD: "fragment de ceràmica de cofre"
+  PLENTY_POTTERY_SHERD: "fragment de ceràmica de cofre"
+  POISONOUS_POTATO: "patata verinosa"
+  POLAR_BEAR_SPAWN_EGG: "generar ós polar"
+  POPPED_CHORUS_FRUIT: "fruita de tornada cuita"
+  PORKCHOP: "carn de porc crua"
+  POTATO: "patata"
+  POTION: "poció"
+  POTION_EFFECT_AWKWARD: "poció estranya"
+  POTION_EFFECT_EMPTY: "poció impossible d'elaborar"
+  POTION_EFFECT_FIRE_RESISTANCE: "poció de resistència ígnia"
+  POTION_EFFECT_HARMING: "poció danyosa"
+  POTION_EFFECT_HEALING: "poció de curació"
+  POTION_EFFECT_INVISIBILITY: "poció d'invisibilitat"
+  POTION_EFFECT_LEAPING: "poció de salt"
+  POTION_EFFECT_LEVITATION: "poció de levitació"
+  POTION_EFFECT_LUCK: "poció sortosa"
+  POTION_EFFECT_MUNDANE: "poció mundana"
+  POTION_EFFECT_NIGHT_VISION: "poció de visió nocturna"
+  POTION_EFFECT_POISON: "poció verinosa"
+  POTION_EFFECT_REGENERATION: "poció de regeneració"
+  POTION_EFFECT_SLOW_FALLING: "poció de caiguda lenta"
+  POTION_EFFECT_SLOWNESS: "poció alentidora"
+  POTION_EFFECT_STRENGTH: "poció de força"
+  POTION_EFFECT_SWIFTNESS: "poció de velocitat"
+  POTION_EFFECT_THICK: "poció densa"
+  POTION_EFFECT_TURTLE_MASTER: "poció del mestre tortuga"
+  POTION_EFFECT_WATER: "ampolla d'aigua"
+  POTION_EFFECT_WATER_BREATHING: "poció de respiració aquàtica"
+  POTION_EFFECT_WEAKNESS: "poció debilitant"
+  POTTERY_SHARD_ARCHER: "fragment de ceràmica d'arquer"
+  POTTERY_SHARD_ARMS_UP: "fragment de ceràmica de ninot"
+  POTTERY_SHARD_PRIZE: "fragment de ceràmica de joia"
+  POTTERY_SHARD_SKULL: "fragment de ceràmica de calavera"
+  POWDER_SNOW_BUCKET: "galleda de neu pols"
+  PRISMARINE_CRYSTALS: "cristalls de prismarina"
+  PRISMARINE_SHARD: "fragment de prismarina"
+  PRIZE_POTTERY_SHARD: "fragment de ceràmica de joia"
+  PRIZE_POTTERY_SHERD: "fragment de ceràmica de joia"
+  PUFFERFISH: "peix globus"
+  PUFFERFISH_BUCKET: "galleda amb peix globus"
+  PUFFERFISH_SPAWN_EGG: "generar peix globus"
+  PUMPKIN_PIE: "pastís de carbassa"
+  PUMPKIN_SEEDS: "llavors de carbassa"
+  PURPLE_DYE: "tint lila"
+  QUARTZ: "quars del nether"
+  RABBIT: "carn de conill crua"
+  RABBIT_FOOT: "pota de conill"
+  RABBIT_HIDE: "pell de conill"
+  RABBIT_SPAWN_EGG: "generar conill"
+  RABBIT_STEW: "estofat de conill"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  RAVAGER_SPAWN_EGG: "generar devastador"
+  RAW_COPPER: "coure en brut"
+  RAW_GOLD: "or en brut"
+  RAW_IRON: "ferro en brut"
+  RECOVERY_COMPASS: "brúixola de retorn"
+  RED_DYE: "tint vermell"
+  REDSTONE: "pols de redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  ROTTEN_FLESH: "carn podrida"
+  SADDLE: "sella de muntar"
+  SALMON: "salmó cru"
+  SALMON_BUCKET: "galleda amb salmó"
+  SALMON_SPAWN_EGG: "generar salmó"
+  SCUTE: "escata de tortuga"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  SHEAF_POTTERY_SHARD: "fragment de ceràmica de palla"
+  SHEAF_POTTERY_SHERD: "fragment de ceràmica de blat"
+  SHEARS: "tisores d'esquilar"
+  SHEEP_SPAWN_EGG: "generar ovella"
+  SHELTER_POTTERY_SHARD: "fragment de ceràmica de refugi"
+  SHELTER_POTTERY_SHERD: "fragment de ceràmica de refugi"
+  SHIELD: "escut"
+  SHIELD_BLACK: "escut negre"
+  SHIELD_BLUE: "escut blau"
+  SHIELD_BROWN: "escut marró"
+  SHIELD_CYAN: "escut cian"
+  SHIELD_GRAY: "escut gris"
+  SHIELD_GREEN: "escut verd"
+  SHIELD_LIGHT_BLUE: "escut blau cel"
+  SHIELD_LIGHT_GRAY: "escut gris clar"
+  SHIELD_LIME: "escut llima"
+  SHIELD_MAGENTA: "escut magenta"
+  SHIELD_ORANGE: "escut taronja"
+  SHIELD_PINK: "escut rosa"
+  SHIELD_PURPLE: "escut lila"
+  SHIELD_RED: "escut vermell"
+  SHIELD_WHITE: "escut blanc"
+  SHIELD_YELLOW: "escut groc"
+  SHULKER_SHELL: "closca de shulker"
+  SHULKER_SPAWN_EGG: "generar shulker"
+  SIGN: "cartell"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  SILVERFISH_SPAWN_EGG: "generar peixet de plata"
+  SKELETON_HORSE_SPAWN_EGG: "generar cavall esquelètic"
+  SKELETON_SPAWN_EGG: "generar esquelet"
+  SKULL_BANNER_PATTERN: "patró de calavera"
+  SKULL_BANNER_PATTERN_DESC: "estampat de calavera"
+  SKULL_POTTERY_SHARD: "fragment de ceràmica de calavera"
+  SKULL_POTTERY_SHERD: "fragment de ceràmica de calavera"
+  SLIME_BALL: "bola de llim"
+  SLIME_SPAWN_EGG: "generar llim"
+  SMITHING_TEMPLATE: "patró de ferreria"
+  SMITHING_TEMPLATE_APPLIES_TO: "s'aplica a:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "afegeix un lingot o un cristall"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "afegeix una peça d'armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "lingots i cristalls"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredients:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "afegeix un lingot de netherita"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "armament de diamant"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "afegeix una armadura arma o eina de diamant"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "lingot de netherita"
+  SMITHING_TEMPLATE_UPGRADE: "millorar: "
+  SNIFFER_SPAWN_EGG: "generar ensumador"
+  SNORT_POTTERY_SHARD: "fragment de ceràmica d'ensumador"
+  SNORT_POTTERY_SHERD: "fragment de ceràmica d'ensumador"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  SNOW_GOLEM_SPAWN_EGG: "generar gòlem de neu"
+  SNOWBALL: "bola de neu"
+  SPECTRAL_ARROW: "fletxa fantasmal"
+  SPIDER_EYE: "ull d'aranya"
+  SPIDER_SPAWN_EGG: "generar aranya"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  SPLASH_POTION: "poció llancívola"
+  SPLASH_POTION_EFFECT_AWKWARD: "poció estranya llancívola"
+  SPLASH_POTION_EFFECT_EMPTY: "poció llancívola impossible d'elaborar"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "poció de resistència ígnia llancívola"
+  SPLASH_POTION_EFFECT_HARMING: "poció danyosa llancívola"
+  SPLASH_POTION_EFFECT_HEALING: "poció de curació llancívola"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "poció d'invisibilitat llancívola"
+  SPLASH_POTION_EFFECT_LEAPING: "poció de salt llancívola"
+  SPLASH_POTION_EFFECT_LEVITATION: "poció de levitació llancívola"
+  SPLASH_POTION_EFFECT_LUCK: "poció sortosa llancívola"
+  SPLASH_POTION_EFFECT_MUNDANE: "poció mundana llancívola"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "poció de visió nocturna llancívola"
+  SPLASH_POTION_EFFECT_POISON: "poció verinosa llancívola"
+  SPLASH_POTION_EFFECT_REGENERATION: "poció de regeneració llancívola"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "poció llancívola de caiguda lenta"
+  SPLASH_POTION_EFFECT_SLOWNESS: "poció alentidora llancívola"
+  SPLASH_POTION_EFFECT_STRENGTH: "poció de força llancívola"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "poció de velocitat llancívola"
+  SPLASH_POTION_EFFECT_THICK: "poció densa llancívola"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "poció llancívola del mestre tortuga"
+  SPLASH_POTION_EFFECT_WATER: "ampolla d'aigua llancívola"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "poció de respiració aquàtica llancívola"
+  SPLASH_POTION_EFFECT_WEAKNESS: "poció debilitant llancívola"
+  SPRUCE_BOAT: "barca de pi"
+  SPRUCE_CHEST_BOAT: "barca de pi amb cofre"
+  SPYGLASS: "ullera de llarga vista"
+  SQUID_SPAWN_EGG: "generar calamar"
+  STICK: "pal"
+  STONE_AXE: "destral de pedra"
+  STONE_HOE: "aixada de pedra"
+  STONE_PICKAXE: "pic de pedra"
+  STONE_SHOVEL: "pala de pedra"
+  STONE_SWORD: "espasa de pedra"
+  STRAY_SPAWN_EGG: "generar esquelet extraviat"
+  STRIDER_SPAWN_EGG: "generar caminant"
+  STRING: "fil"
+  SUGAR: "sucre"
+  SUSPICIOUS_STEW: "estofat sospitós"
+  SWEET_BERRIES: "baies dolces"
+  TADPOLE_BUCKET: "galleda amb capgròs"
+  TADPOLE_SPAWN_EGG: "generar capgròs"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  TIPPED_ARROW: "fletxa amb efecte"
+  TIPPED_ARROW_EFFECT_AWKWARD: "fletxa amb efecte"
+  TIPPED_ARROW_EFFECT_EMPTY: "fletxa amb efecte impossible d'elaborar"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "fletxa de resistència ígnia"
+  TIPPED_ARROW_EFFECT_HARMING: "fletxa de dany augmentat"
+  TIPPED_ARROW_EFFECT_HEALING: "fletxa curativa"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "fletxa d'invisibilitat"
+  TIPPED_ARROW_EFFECT_LEAPING: "fletxa de salt"
+  TIPPED_ARROW_EFFECT_LEVITATION: "fletxa de levitació"
+  TIPPED_ARROW_EFFECT_LUCK: "fletxa sortosa"
+  TIPPED_ARROW_EFFECT_MUNDANE: "fletxa amb efecte"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "fletxa de visió nocturna"
+  TIPPED_ARROW_EFFECT_POISON: "fletxa de verí"
+  TIPPED_ARROW_EFFECT_REGENERATION: "fletxa de regeneració"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "fletxa de caiguda lenta"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "fletxa alentidora"
+  TIPPED_ARROW_EFFECT_STRENGTH: "fletxa de força"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "fletxa de velocitat"
+  TIPPED_ARROW_EFFECT_THICK: "fletxa amb efecte"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "fletxa del mestre tortuga"
+  TIPPED_ARROW_EFFECT_WATER: "fletxa esquitxadora"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "fletxa de respiració aquàtica"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "fletxa debilitant"
+  TNT_MINECART: "vagoneta amb dinamita"
+  TORCHFLOWER_SEEDS: "llavors de florxa"
+  TOTEM_OF_UNDYING: "tòtem de l'immortalitat"
+  TRADER_LLAMA_SPAWN_EGG: "generar llama ambulant"
+  TRIAL_KEY: "clau de reptes"
+  TRIDENT: "trident"
+  TROPICAL_FISH: "peix tropical"
+  TROPICAL_FISH_BUCKET: "galleda amb peix tropical"
+  TROPICAL_FISH_SPAWN_EGG: "generar peix tropical"
+  TURTLE_HELMET: "closca de tortuga"
+  TURTLE_SPAWN_EGG: "generar tortuga"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  VEX_SPAWN_EGG: "generar esperit"
+  VILLAGER_SPAWN_EGG: "generar vilatà"
+  VINDICATOR_SPAWN_EGG: "generar vindicador"
+  WANDERING_TRADER_SPAWN_EGG: "generar comerciant"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  WARDEN_SPAWN_EGG: "generar vigilant"
+  WARPED_FUNGUS_ON_A_STICK: "canya amb fong guerxo"
+  WATER_BUCKET: "galleda d'aigua"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  WHEAT: "blat"
+  WHEAT_SEEDS: "llavors de blat"
+  WHITE_DYE: "tint blanc"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "patró de ferreria"
+  WITCH_SPAWN_EGG: "generar bruixa"
+  WITHER_SKELETON_SPAWN_EGG: "generar esquelet wither"
+  WITHER_SPAWN_EGG: "generar wither"
+  WOLF_SPAWN_EGG: "generar llop"
+  WOODEN_AXE: "destral de fusta"
+  WOODEN_HOE: "aixada de fusta"
+  WOODEN_PICKAXE: "pic de fusta"
+  WOODEN_SHOVEL: "pala de fusta"
+  WOODEN_SWORD: "espasa de fusta"
+  WRITABLE_BOOK: "llibre i tinter"
+  WRITTEN_BOOK: "llibre escrit"
+  YELLOW_DYE: "tint groc"
+  ZOGLIN_SPAWN_EGG: "generar zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "generar cavall zombi"
+  ZOMBIE_SPAWN_EGG: "generar zombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "generar vilatà zombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "generar piglin zombificat"
+  CHEST: "al cos:"
+  FEET: "als peus:"
+  HEAD: "al cap:"
+  LEGS: "a les cames:"
+  MAINHAND: "a la mà principal:"
+  OFFHAND: "a la mà secundària:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

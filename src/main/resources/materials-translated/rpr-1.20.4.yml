@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "акаціевая кнопка"
+  ACACIA_DOOR: "акаціевая дверь"
+  ACACIA_FENCE: "акаціевый заборъ"
+  ACACIA_FENCE_GATE: "акаціевая калитка"
+  ACACIA_HANGING_SIGN: "акаціевая подвѣсная табличка"
+  ACACIA_LEAVES: "листья акаціи"
+  ACACIA_LOG: "акаціевое бревно"
+  ACACIA_PLANKS: "акаціевыя доски"
+  ACACIA_PRESSURE_PLATE: "акаціевая нажимная плита"
+  ACACIA_SAPLING: "саженецъ акаціи"
+  ACACIA_SIGN: "акаціевая табличка"
+  ACACIA_SLAB: "акаціевая плита"
+  ACACIA_STAIRS: "акаціевыя ступеньки"
+  ACACIA_TRAPDOOR: "акаціевый люкъ"
+  ACACIA_WALL_HANGING_SIGN: "акаціевая настѣнная подвѣсная табличка"
+  ACACIA_WALL_SIGN: "акаціевая настѣнная табличка"
+  ACACIA_WOOD: "акація"
+  ACTIVATOR_RAIL: "подающіе рельсы"
+  AIR: "воздухъ"
+  ALLIUM: "лукъ-батунъ"
+  AMETHYST_BLOCK: "аметистовый блокъ"
+  AMETHYST_CLUSTER: "аметистовая друза"
+  ANCIENT_DEBRIS: "древніе обломки"
+  ANDESITE: "андезитъ"
+  ANDESITE_SLAB: "андезитовая плита"
+  ANDESITE_STAIRS: "андезитовыя ступеньки"
+  ANDESITE_WALL: "андезитовая ограда"
+  ANVIL: "наковальня"
+  ATTACHED_MELON_STEM: "прикрѣплённый стебель арбуза"
+  ATTACHED_PUMPKIN_STEM: "прикрѣплённый стебель тыквы"
+  AZALEA: "азалія"
+  AZALEA_LEAVES: "листья азаліи"
+  AZURE_BLUET: "хаустонія сѣрая"
+  BAMBOO: "бамбукъ"
+  BAMBOO_BLOCK: "блокъ бамбука"
+  BAMBOO_BUTTON: "бамбуковая кнопка"
+  BAMBOO_DOOR: "бамбуковая дверь"
+  BAMBOO_FENCE: "бамбуковый заборъ"
+  BAMBOO_FENCE_GATE: "бамбуковая калитка"
+  BAMBOO_HANGING_SIGN: "бамбуковая подвѣсная табличка"
+  BAMBOO_MOSAIC: "бамбуковая мозаика"
+  BAMBOO_MOSAIC_SLAB: "плита изъ бамбуковой мозаики"
+  BAMBOO_MOSAIC_STAIRS: "ступеньки изъ бамбуковой мозаики"
+  BAMBOO_PLANKS: "бамбуковыя доски"
+  BAMBOO_PRESSURE_PLATE: "бамбуковая нажимная плита"
+  BAMBOO_SAPLING: "побѣгъ бамбука"
+  BAMBOO_SIGN: "бамбуковая табличка"
+  BAMBOO_SLAB: "бамбуковая плита"
+  BAMBOO_STAIRS: "бамбуковыя ступеньки"
+  BAMBOO_TRAPDOOR: "бамбуковый люкъ"
+  BAMBOO_WALL_HANGING_SIGN: "бамбуковая настѣнная подвѣсная табличка"
+  BAMBOO_WALL_SIGN: "бамбуковая настѣнная табличка"
+  BANNER_BASE_BLACK: "чёрное поле"
+  BANNER_BASE_BLUE: "лазурное поле"
+  BANNER_BASE_BROWN: "коричневое поле"
+  BANNER_BASE_CYAN: "бирюзовое поле"
+  BANNER_BASE_GRAY: "сѣрое поле"
+  BANNER_BASE_GREEN: "зелёное поле"
+  BANNER_BASE_LIGHT_BLUE: "голубое поле"
+  BANNER_BASE_LIGHT_GRAY: "свѣтлосѣрое поле"
+  BANNER_BASE_LIME: "яркозелёное поле"
+  BANNER_BASE_MAGENTA: "пурпурное поле"
+  BANNER_BASE_ORANGE: "оранжевое поле"
+  BANNER_BASE_PINK: "розовое поле"
+  BANNER_BASE_PURPLE: "фіолетовое поле"
+  BANNER_BASE_RED: "червонное поле"
+  BANNER_BASE_WHITE: "бѣлое поле"
+  BANNER_BASE_YELLOW: "жёлтое поле"
+  BANNER_BORDER_BLACK: "чёрная кайма"
+  BANNER_BORDER_BLUE: "лазурная кайма"
+  BANNER_BORDER_BROWN: "коричневая кайма"
+  BANNER_BORDER_CYAN: "бирюзовая кайма"
+  BANNER_BORDER_GRAY: "сѣрая кайма"
+  BANNER_BORDER_GREEN: "зелёная кайма"
+  BANNER_BORDER_LIGHT_BLUE: "голубая кайма"
+  BANNER_BORDER_LIGHT_GRAY: "свѣтлосѣрая кайма"
+  BANNER_BORDER_LIME: "яркозелёная кайма"
+  BANNER_BORDER_MAGENTA: "пурпурная кайма"
+  BANNER_BORDER_ORANGE: "оранжевая кайма"
+  BANNER_BORDER_PINK: "розовая кайма"
+  BANNER_BORDER_PURPLE: "фіолетовая кайма"
+  BANNER_BORDER_RED: "червонная кайма"
+  BANNER_BORDER_WHITE: "бѣлая кайма"
+  BANNER_BORDER_YELLOW: "жёлтая кайма"
+  BANNER_BRICKS_BLACK: "чёрная муровка"
+  BANNER_BRICKS_BLUE: "лазурная муровка"
+  BANNER_BRICKS_BROWN: "коричневая муровка"
+  BANNER_BRICKS_CYAN: "бирюзовая муровка"
+  BANNER_BRICKS_GRAY: "сѣрая муровка"
+  BANNER_BRICKS_GREEN: "зелёная муровка"
+  BANNER_BRICKS_LIGHT_BLUE: "голубая муровка"
+  BANNER_BRICKS_LIGHT_GRAY: "свѣтлосѣрая муровка"
+  BANNER_BRICKS_LIME: "яркозелёная муровка"
+  BANNER_BRICKS_MAGENTA: "пурпурная муровка"
+  BANNER_BRICKS_ORANGE: "оранжевая муровка"
+  BANNER_BRICKS_PINK: "розовая муровка"
+  BANNER_BRICKS_PURPLE: "фіолетовая муровка"
+  BANNER_BRICKS_RED: "червонная муровка"
+  BANNER_BRICKS_WHITE: "бѣлая муровка"
+  BANNER_BRICKS_YELLOW: "жёлтая муровка"
+  BANNER_CIRCLE_BLACK: "чёрный кругъ"
+  BANNER_CIRCLE_BLUE: "лазурный кругъ"
+  BANNER_CIRCLE_BROWN: "коричневый кругъ"
+  BANNER_CIRCLE_CYAN: "бирюзовый кругъ"
+  BANNER_CIRCLE_GRAY: "сѣрый кругъ"
+  BANNER_CIRCLE_GREEN: "зелёный кругъ"
+  BANNER_CIRCLE_LIGHT_BLUE: "голубой кругъ"
+  BANNER_CIRCLE_LIGHT_GRAY: "свѣтлосѣрый кругъ"
+  BANNER_CIRCLE_LIME: "яркозелёный кругъ"
+  BANNER_CIRCLE_MAGENTA: "пурпурный кругъ"
+  BANNER_CIRCLE_ORANGE: "оранжевый кругъ"
+  BANNER_CIRCLE_PINK: "розовый кругъ"
+  BANNER_CIRCLE_PURPLE: "фіолетовый кругъ"
+  BANNER_CIRCLE_RED: "червонный кругъ"
+  BANNER_CIRCLE_WHITE: "бѣлый кругъ"
+  BANNER_CIRCLE_YELLOW: "жёлтый кругъ"
+  BANNER_CREEPER_BLACK: "чёрный криперъ"
+  BANNER_CREEPER_BLUE: "лазурный криперъ"
+  BANNER_CREEPER_BROWN: "коричневый криперъ"
+  BANNER_CREEPER_CYAN: "бирюзовый криперъ"
+  BANNER_CREEPER_GRAY: "сѣрый криперъ"
+  BANNER_CREEPER_GREEN: "зелёный криперъ"
+  BANNER_CREEPER_LIGHT_BLUE: "голубой криперъ"
+  BANNER_CREEPER_LIGHT_GRAY: "свѣтлосѣрый криперъ"
+  BANNER_CREEPER_LIME: "яркозелёный криперъ"
+  BANNER_CREEPER_MAGENTA: "пурпурный криперъ"
+  BANNER_CREEPER_ORANGE: "оранжевый криперъ"
+  BANNER_CREEPER_PINK: "розовый криперъ"
+  BANNER_CREEPER_PURPLE: "фіолетовый криперъ"
+  BANNER_CREEPER_RED: "червонный криперъ"
+  BANNER_CREEPER_WHITE: "бѣлый криперъ"
+  BANNER_CREEPER_YELLOW: "жёлтый криперъ"
+  BANNER_CROSS_BLACK: "чёрный андреевскій крестъ"
+  BANNER_CROSS_BLUE: "лазурный андреевскій крестъ"
+  BANNER_CROSS_BROWN: "коричневый андреевскій крестъ"
+  BANNER_CROSS_CYAN: "бирюзовый андреевскій крестъ"
+  BANNER_CROSS_GRAY: "сѣрый андреевскій крестъ"
+  BANNER_CROSS_GREEN: "зелёный андреевскій крестъ"
+  BANNER_CROSS_LIGHT_BLUE: "голубой андреевскій крестъ"
+  BANNER_CROSS_LIGHT_GRAY: "свѣтлосѣрый андреевскій крестъ"
+  BANNER_CROSS_LIME: "яркозелёный андреевскій крестъ"
+  BANNER_CROSS_MAGENTA: "пурпурный андреевскій крестъ"
+  BANNER_CROSS_ORANGE: "оранжевый андреевскій крестъ"
+  BANNER_CROSS_PINK: "розовый андреевскій крестъ"
+  BANNER_CROSS_PURPLE: "фіолетовый андреевскій крестъ"
+  BANNER_CROSS_RED: "червонный андреевскій крестъ"
+  BANNER_CROSS_WHITE: "бѣлый андреевскій крестъ"
+  BANNER_CROSS_YELLOW: "жёлтый андреевскій крестъ"
+  BANNER_CURLY_BORDER_BLACK: "чёрная зубчатая кайма"
+  BANNER_CURLY_BORDER_BLUE: "лазурная зубчатая кайма"
+  BANNER_CURLY_BORDER_BROWN: "коричневая зубчатая кайма"
+  BANNER_CURLY_BORDER_CYAN: "бирюзовая зубчатая кайма"
+  BANNER_CURLY_BORDER_GRAY: "сѣрая зубчатая кайма"
+  BANNER_CURLY_BORDER_GREEN: "зелёная зубчатая кайма"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "голубая зубчатая кайма"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "свѣтлосѣрая зубчатая кайма"
+  BANNER_CURLY_BORDER_LIME: "яркозелёная зубчатая кайма"
+  BANNER_CURLY_BORDER_MAGENTA: "пурпурная зубчатая кайма"
+  BANNER_CURLY_BORDER_ORANGE: "оранжевая зубчатая кайма"
+  BANNER_CURLY_BORDER_PINK: "розовая зубчатая кайма"
+  BANNER_CURLY_BORDER_PURPLE: "фіолетовая зубчатая кайма"
+  BANNER_CURLY_BORDER_RED: "червонная зубчатая кайма"
+  BANNER_CURLY_BORDER_WHITE: "бѣлая зубчатая кайма"
+  BANNER_CURLY_BORDER_YELLOW: "жёлтая зубчатая кайма"
+  BANNER_DIAGONAL_LEFT_BLACK: "чёрное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_BLUE: "лазурное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_BROWN: "коричневое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_CYAN: "бирюзовое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_GRAY: "сѣрое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_GREEN: "зелёное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "голубое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "свѣтлосѣрое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_LIME: "яркозелёное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "пурпурное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_ORANGE: "оранжевое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_PINK: "розовое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_PURPLE: "фіолетовое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_RED: "червонное скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_WHITE: "бѣлое скошеніе слѣва"
+  BANNER_DIAGONAL_LEFT_YELLOW: "жёлтое скошеніе слѣва"
+  BANNER_DIAGONAL_RIGHT_BLACK: "чёрное скошеніе"
+  BANNER_DIAGONAL_RIGHT_BLUE: "лазурное скошеніе"
+  BANNER_DIAGONAL_RIGHT_BROWN: "коричневое скошеніе"
+  BANNER_DIAGONAL_RIGHT_CYAN: "бирюзовое скошеніе"
+  BANNER_DIAGONAL_RIGHT_GRAY: "сѣрое скошеніе"
+  BANNER_DIAGONAL_RIGHT_GREEN: "зелёное скошеніе"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "голубое скошеніе"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "свѣтлосѣрое скошеніе"
+  BANNER_DIAGONAL_RIGHT_LIME: "яркозелёное скошеніе"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "пурпурное скошеніе"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "оранжевое скошеніе"
+  BANNER_DIAGONAL_RIGHT_PINK: "розовое скошеніе"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "фіолетовое скошеніе"
+  BANNER_DIAGONAL_RIGHT_RED: "червонное скошеніе"
+  BANNER_DIAGONAL_RIGHT_WHITE: "бѣлое скошеніе"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "жёлтое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "чёрное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "лазурное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "коричневое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "бирюзовое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "сѣрое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "зелёное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "голубое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "свѣтлосѣрое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "яркозелёное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "пурпурное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "оранжевое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "розовое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "фіолетовое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_RED: "червонное опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "бѣлое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "жёлтое опрокинутое скошеніе"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "чёрное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "лазурное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "коричневое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "бирюзовое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "сѣрое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "зелёное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "голубое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "свѣтлосѣрое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "яркозелёное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "пурпурное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "оранжевое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "розовое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "фіолетовое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "червонное опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "бѣлое опрокинутое скошеніе слѣва"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "жёлтое опрокинутое скошеніе слѣва"
+  BANNER_FLOWER_BLACK: "чёрный цвѣтокъ"
+  BANNER_FLOWER_BLUE: "лазурный цвѣтокъ"
+  BANNER_FLOWER_BROWN: "коричневый цвѣтокъ"
+  BANNER_FLOWER_CYAN: "бирюзовый цвѣтокъ"
+  BANNER_FLOWER_GRAY: "сѣрый цвѣтокъ"
+  BANNER_FLOWER_GREEN: "зелёный цвѣтокъ"
+  BANNER_FLOWER_LIGHT_BLUE: "голубой цвѣтокъ"
+  BANNER_FLOWER_LIGHT_GRAY: "свѣтлосѣрый цвѣтокъ"
+  BANNER_FLOWER_LIME: "яркозелёный цвѣтокъ"
+  BANNER_FLOWER_MAGENTA: "пурпурный цвѣтокъ"
+  BANNER_FLOWER_ORANGE: "оранжевый цвѣтокъ"
+  BANNER_FLOWER_PINK: "розовый цвѣтокъ"
+  BANNER_FLOWER_PURPLE: "фіолетовый цвѣтокъ"
+  BANNER_FLOWER_RED: "червонный цвѣтокъ"
+  BANNER_FLOWER_WHITE: "бѣлый цвѣтокъ"
+  BANNER_FLOWER_YELLOW: "жёлтый цвѣтокъ"
+  BANNER_GLOBE_BLACK: "чёрный глобусъ"
+  BANNER_GLOBE_BLUE: "лазурный глобусъ"
+  BANNER_GLOBE_BROWN: "коричневый глобусъ"
+  BANNER_GLOBE_CYAN: "бирюзовый глобусъ"
+  BANNER_GLOBE_GRAY: "сѣрый глобусъ"
+  BANNER_GLOBE_GREEN: "зелёный глобусъ"
+  BANNER_GLOBE_LIGHT_BLUE: "голубой глобусъ"
+  BANNER_GLOBE_LIGHT_GRAY: "свѣтлосѣрый глобусъ"
+  BANNER_GLOBE_LIME: "яркозелёный глобусъ"
+  BANNER_GLOBE_MAGENTA: "пурпурный глобусъ"
+  BANNER_GLOBE_ORANGE: "оранжевый глобусъ"
+  BANNER_GLOBE_PINK: "розовый глобусъ"
+  BANNER_GLOBE_PURPLE: "фіолетовый глобусъ"
+  BANNER_GLOBE_RED: "червонный глобусъ"
+  BANNER_GLOBE_WHITE: "бѣлый глобусъ"
+  BANNER_GLOBE_YELLOW: "жёлтый глобусъ"
+  BANNER_GRADIENT_BLACK: "чёрный градіентъ"
+  BANNER_GRADIENT_BLUE: "лазурный градіентъ"
+  BANNER_GRADIENT_BROWN: "коричневый градіентъ"
+  BANNER_GRADIENT_CYAN: "бирюзовый градіентъ"
+  BANNER_GRADIENT_GRAY: "сѣрый градіентъ"
+  BANNER_GRADIENT_GREEN: "зелёный градіентъ"
+  BANNER_GRADIENT_LIGHT_BLUE: "голубой градіентъ"
+  BANNER_GRADIENT_LIGHT_GRAY: "свѣтлосѣрый градіентъ"
+  BANNER_GRADIENT_LIME: "яркозелёный градіентъ"
+  BANNER_GRADIENT_MAGENTA: "пурпурный градіентъ"
+  BANNER_GRADIENT_ORANGE: "оранжевый градіентъ"
+  BANNER_GRADIENT_PINK: "розовый градіентъ"
+  BANNER_GRADIENT_PURPLE: "фіолетовый градіентъ"
+  BANNER_GRADIENT_RED: "червонный градіентъ"
+  BANNER_GRADIENT_WHITE: "бѣлый градіентъ"
+  BANNER_GRADIENT_YELLOW: "жёлтый градіентъ"
+  BANNER_GRADIENT_UP_BLACK: "чёрный обратный градіентъ"
+  BANNER_GRADIENT_UP_BLUE: "лазурный обратный градіентъ"
+  BANNER_GRADIENT_UP_BROWN: "коричневый обратный градіентъ"
+  BANNER_GRADIENT_UP_CYAN: "бирюзовый обратный градіентъ"
+  BANNER_GRADIENT_UP_GRAY: "сѣрый обратный градіентъ"
+  BANNER_GRADIENT_UP_GREEN: "зелёный обратный градіентъ"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "голубой обратный градіентъ"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "свѣтлосѣрый обратный градіентъ"
+  BANNER_GRADIENT_UP_LIME: "яркозелёный обратный градіентъ"
+  BANNER_GRADIENT_UP_MAGENTA: "пурпурный обратный градіентъ"
+  BANNER_GRADIENT_UP_ORANGE: "оранжевый обратный градіентъ"
+  BANNER_GRADIENT_UP_PINK: "розовый обратный градіентъ"
+  BANNER_GRADIENT_UP_PURPLE: "фіолетовый обратный градіентъ"
+  BANNER_GRADIENT_UP_RED: "червонный обратный градіентъ"
+  BANNER_GRADIENT_UP_WHITE: "бѣлый обратный градіентъ"
+  BANNER_GRADIENT_UP_YELLOW: "жёлтый обратный градіентъ"
+  BANNER_HALF_HORIZONTAL_BLACK: "чёрная верхняя половина"
+  BANNER_HALF_HORIZONTAL_BLUE: "лазурная верхняя половина"
+  BANNER_HALF_HORIZONTAL_BROWN: "коричневая верхняя половина"
+  BANNER_HALF_HORIZONTAL_CYAN: "бирюзовая верхняя половина"
+  BANNER_HALF_HORIZONTAL_GRAY: "сѣрая верхняя половина"
+  BANNER_HALF_HORIZONTAL_GREEN: "зелёная верхняя половина"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "голубая верхняя половина"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "свѣтлосѣрая верхняя половина"
+  BANNER_HALF_HORIZONTAL_LIME: "яркозелёная верхняя половина"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "пурпурная верхняя половина"
+  BANNER_HALF_HORIZONTAL_ORANGE: "оранжевая верхняя половина"
+  BANNER_HALF_HORIZONTAL_PINK: "розовая верхняя половина"
+  BANNER_HALF_HORIZONTAL_PURPLE: "фіолетовая верхняя половина"
+  BANNER_HALF_HORIZONTAL_RED: "червонная верхняя половина"
+  BANNER_HALF_HORIZONTAL_WHITE: "бѣлая верхняя половина"
+  BANNER_HALF_HORIZONTAL_YELLOW: "жёлтая верхняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "чёрная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "лазурная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "коричневая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "бирюзовая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "сѣрая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "зелёная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "голубая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "свѣтлосѣрая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "яркозелёная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "пурпурная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "оранжевая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "розовая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "фіолетовая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "червонная нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "бѣлая нижняя половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "жёлтая нижняя половина"
+  BANNER_HALF_VERTICAL_BLACK: "чёрная правая половина"
+  BANNER_HALF_VERTICAL_BLUE: "лазурная правая половина"
+  BANNER_HALF_VERTICAL_BROWN: "коричневая правая половина"
+  BANNER_HALF_VERTICAL_CYAN: "бирюзовая правая половина"
+  BANNER_HALF_VERTICAL_GRAY: "сѣрая правая половина"
+  BANNER_HALF_VERTICAL_GREEN: "зелёная правая половина"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "голубая правая половина"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "свѣтлосѣрая правая половина"
+  BANNER_HALF_VERTICAL_LIME: "яркозелёная правая половина"
+  BANNER_HALF_VERTICAL_MAGENTA: "пурпурная правая половина"
+  BANNER_HALF_VERTICAL_ORANGE: "оранжевая правая половина"
+  BANNER_HALF_VERTICAL_PINK: "розовая правая половина"
+  BANNER_HALF_VERTICAL_PURPLE: "фіолетовая правая половина"
+  BANNER_HALF_VERTICAL_RED: "червонная правая половина"
+  BANNER_HALF_VERTICAL_WHITE: "бѣлая правая половина"
+  BANNER_HALF_VERTICAL_YELLOW: "жёлтая правая половина"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "чёрная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "лазурная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "коричневая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "бирюзовая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "сѣрая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "зелёная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "голубая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "свѣтлосѣрая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "яркозелёная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "пурпурная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "оранжевая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "розовая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "фіолетовая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "червонная лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "бѣлая лѣвая половина"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "жёлтая лѣвая половина"
+  BANNER_MOJANG_BLACK: "чёрное нѣчто"
+  BANNER_MOJANG_BLUE: "лазурное нѣчто"
+  BANNER_MOJANG_BROWN: "коричневое нѣчто"
+  BANNER_MOJANG_CYAN: "бирюзовое нѣчто"
+  BANNER_MOJANG_GRAY: "сѣрое нѣчто"
+  BANNER_MOJANG_GREEN: "зелёное нѣчто"
+  BANNER_MOJANG_LIGHT_BLUE: "голубое нѣчто"
+  BANNER_MOJANG_LIGHT_GRAY: "свѣтлосѣрое нѣчто"
+  BANNER_MOJANG_LIME: "яркозелёное нѣчто"
+  BANNER_MOJANG_MAGENTA: "пурпурное нѣчто"
+  BANNER_MOJANG_ORANGE: "оранжевое нѣчто"
+  BANNER_MOJANG_PINK: "розовое нѣчто"
+  BANNER_MOJANG_PURPLE: "фіолетовое нѣчто"
+  BANNER_MOJANG_RED: "червонное нѣчто"
+  BANNER_MOJANG_WHITE: "бѣлое нѣчто"
+  BANNER_MOJANG_YELLOW: "жёлтое нѣчто"
+  BANNER_PIGLIN_BLACK: "чёрное рыло"
+  BANNER_PIGLIN_BLUE: "лазурное рыло"
+  BANNER_PIGLIN_BROWN: "коричневое рыло"
+  BANNER_PIGLIN_CYAN: "бирюзовое рыло"
+  BANNER_PIGLIN_GRAY: "сѣрое рыло"
+  BANNER_PIGLIN_GREEN: "зелёное рыло"
+  BANNER_PIGLIN_LIGHT_BLUE: "голубое рыло"
+  BANNER_PIGLIN_LIGHT_GRAY: "свѣтлосѣрое рыло"
+  BANNER_PIGLIN_LIME: "яркозелёное рыло"
+  BANNER_PIGLIN_MAGENTA: "пурпурное рыло"
+  BANNER_PIGLIN_ORANGE: "оранжевое рыло"
+  BANNER_PIGLIN_PINK: "розовое рыло"
+  BANNER_PIGLIN_PURPLE: "фіолетовое рыло"
+  BANNER_PIGLIN_RED: "червонное рыло"
+  BANNER_PIGLIN_WHITE: "бѣлое рыло"
+  BANNER_PIGLIN_YELLOW: "жёлтое рыло"
+  BANNER_RHOMBUS_BLACK: "чёрный ромбъ"
+  BANNER_RHOMBUS_BLUE: "лазурный ромбъ"
+  BANNER_RHOMBUS_BROWN: "коричневый ромбъ"
+  BANNER_RHOMBUS_CYAN: "бирюзовый ромбъ"
+  BANNER_RHOMBUS_GRAY: "cѣрый ромбъ"
+  BANNER_RHOMBUS_GREEN: "зелёный ромбъ"
+  BANNER_RHOMBUS_LIGHT_BLUE: "голубой ромбъ"
+  BANNER_RHOMBUS_LIGHT_GRAY: "свѣтлосѣрый ромбъ"
+  BANNER_RHOMBUS_LIME: "яркозелёный ромбъ"
+  BANNER_RHOMBUS_MAGENTA: "пурпурный ромбъ"
+  BANNER_RHOMBUS_ORANGE: "оранжевый ромбъ"
+  BANNER_RHOMBUS_PINK: "розовый ромбъ"
+  BANNER_RHOMBUS_PURPLE: "фіолетовый ромбъ"
+  BANNER_RHOMBUS_RED: "червонный ромбъ"
+  BANNER_RHOMBUS_WHITE: "бѣлый ромбъ"
+  BANNER_RHOMBUS_YELLOW: "жёлтый ромбъ"
+  BANNER_SKULL_BLACK: "чёрный черепъ"
+  BANNER_SKULL_BLUE: "лазурный черепъ"
+  BANNER_SKULL_BROWN: "коричневый черепъ"
+  BANNER_SKULL_CYAN: "бирюзовый черепъ"
+  BANNER_SKULL_GRAY: "сѣрый черепъ"
+  BANNER_SKULL_GREEN: "зелёный черепъ"
+  BANNER_SKULL_LIGHT_BLUE: "голубой черепъ"
+  BANNER_SKULL_LIGHT_GRAY: "свѣтлосѣрый черепъ"
+  BANNER_SKULL_LIME: "яркозелёный черепъ"
+  BANNER_SKULL_MAGENTA: "пурпурный черепъ"
+  BANNER_SKULL_ORANGE: "оранжевый черепъ"
+  BANNER_SKULL_PINK: "розовый черепъ"
+  BANNER_SKULL_PURPLE: "фіолетовый черепъ"
+  BANNER_SKULL_RED: "червонный черепъ"
+  BANNER_SKULL_WHITE: "бѣлый черепъ"
+  BANNER_SKULL_YELLOW: "жёлтый черепъ"
+  BANNER_SMALL_STRIPES_BLACK: "чёрные столбы"
+  BANNER_SMALL_STRIPES_BLUE: "лазурные столбы"
+  BANNER_SMALL_STRIPES_BROWN: "коричневые столбы"
+  BANNER_SMALL_STRIPES_CYAN: "бирюзовые столбы"
+  BANNER_SMALL_STRIPES_GRAY: "сѣрые столбы"
+  BANNER_SMALL_STRIPES_GREEN: "зелёные столбы"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "голубые столбы"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "свѣтлосѣрые столбы"
+  BANNER_SMALL_STRIPES_LIME: "яркозелёные столбы"
+  BANNER_SMALL_STRIPES_MAGENTA: "пурпурные столбы"
+  BANNER_SMALL_STRIPES_ORANGE: "оранжевые столбы"
+  BANNER_SMALL_STRIPES_PINK: "розовые столбы"
+  BANNER_SMALL_STRIPES_PURPLE: "фіолетовые столбы"
+  BANNER_SMALL_STRIPES_RED: "червонные столбы"
+  BANNER_SMALL_STRIPES_WHITE: "бѣлые столбы"
+  BANNER_SMALL_STRIPES_YELLOW: "жёлтые столбы"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "чёрный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "лазурный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "коричневый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "бирюзовый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "сѣрый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "зелёный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "голубой нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "свѣтлосѣрый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "яркозелёный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "пурпурный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "оранжевый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "розовый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "фіолетовый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "червонный нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "бѣлый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "жёлтый нижній правый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "чёрный нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "лазурный нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "коричневый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "бирюзовый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "сѣрый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "зелёный нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "голубой нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "свѣтлосѣрый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "яркозёленый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "пурпурный нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "оранжевый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "розовый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "фіолетовый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "червонный нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "бѣлый нижній лѣвый крыжъ"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "жёлтый нижній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "чёрный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "лазурный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "коричневый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "бирюзовый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "cѣрый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "зелёный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "голубой верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "свѣтлосѣрый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_LIME: "яркозелёный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "пурпурный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "оранжевый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_PINK: "розовый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "фіолетовый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_RED: "червонный верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "бѣлый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "жёлтый верхній правый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "чёрный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "лазурный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "коричневый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "бирюзовый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "cѣрый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "зелёный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "голубой верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "свѣтлосѣрый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "яркозелёный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "пурпурный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "оранжевый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "розовый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "фіолетовый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_RED: "червонный верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "бѣлый верхній лѣвый крыжъ"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "жёлтый верхній лѣвый крыжъ"
+  BANNER_STRAIGHT_CROSS_BLACK: "чёрный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_BLUE: "лазурный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_BROWN: "коричневый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_CYAN: "бирюзовый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_GRAY: "сѣрый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_GREEN: "зелёный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "голубой греческій крестъ"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "свѣтлосѣрый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_LIME: "яркозелёный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "пурпурный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_ORANGE: "оранжевый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_PINK: "розовый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_PURPLE: "фіолетовый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_RED: "червонный греческій крестъ"
+  BANNER_STRAIGHT_CROSS_WHITE: "бѣлый греческій крестъ"
+  BANNER_STRAIGHT_CROSS_YELLOW: "жёлтый греческій крестъ"
+  BANNER_STRIPE_BOTTOM_BLACK: "чёрное основаніе"
+  BANNER_STRIPE_BOTTOM_BLUE: "лазурное основаніе"
+  BANNER_STRIPE_BOTTOM_BROWN: "коричневое основаніе"
+  BANNER_STRIPE_BOTTOM_CYAN: "бирюзовое основаніе"
+  BANNER_STRIPE_BOTTOM_GRAY: "cѣрое основаніe"
+  BANNER_STRIPE_BOTTOM_GREEN: "зелёное основаніе"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "голубое основаніе"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "свѣтлосѣрое основаніе"
+  BANNER_STRIPE_BOTTOM_LIME: "яркозелёное основаніе"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "пурпурное основаніе"
+  BANNER_STRIPE_BOTTOM_ORANGE: "оранжевое основаніе"
+  BANNER_STRIPE_BOTTOM_PINK: "розовое основаніe"
+  BANNER_STRIPE_BOTTOM_PURPLE: "фіолетовое основаніе"
+  BANNER_STRIPE_BOTTOM_RED: "червонное основаніе"
+  BANNER_STRIPE_BOTTOM_WHITE: "бѣлое основаніе"
+  BANNER_STRIPE_BOTTOM_YELLOW: "жёлтое основаніе"
+  BANNER_STRIPE_CENTER_BLACK: "чёрный столбъ"
+  BANNER_STRIPE_CENTER_BLUE: "лазурный столбъ"
+  BANNER_STRIPE_CENTER_BROWN: "коричневый столбъ"
+  BANNER_STRIPE_CENTER_CYAN: "бирюзовый столбъ"
+  BANNER_STRIPE_CENTER_GRAY: "сѣрый столбъ"
+  BANNER_STRIPE_CENTER_GREEN: "зелёный столбъ"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "голубой столбъ"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "свѣтлосѣрый столбъ"
+  BANNER_STRIPE_CENTER_LIME: "яркозелёный столбъ"
+  BANNER_STRIPE_CENTER_MAGENTA: "пурпурный столбъ"
+  BANNER_STRIPE_CENTER_ORANGE: "оранжевый столбъ"
+  BANNER_STRIPE_CENTER_PINK: "розовый столбъ"
+  BANNER_STRIPE_CENTER_PURPLE: "фіолетовый столбъ"
+  BANNER_STRIPE_CENTER_RED: "червонный столбъ"
+  BANNER_STRIPE_CENTER_WHITE: "бѣлый столбъ"
+  BANNER_STRIPE_CENTER_YELLOW: "жёлтый столбъ"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "чёрная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "лазурная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "коричневая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "бирюзовая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "сѣрая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "зелёная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "голубая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "свѣтлосѣрая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_LIME: "яркозелёная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "пурпурная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "оранжевая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_PINK: "розовая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "фіолетовая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_RED: "червонная лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "бѣлая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "жёлтая лѣвосторонняя перевязь"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "чёрная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "лазурная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "коричневая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "бирюзовая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "cѣрая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "зелёная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "голубая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "свѣтлосѣрая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "яркозелёная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "пурпурная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "оранжевая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "розовая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "фіолетовая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_RED: "червонная перевязь"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "бѣлая перевязь"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "жёлтая перевязь"
+  BANNER_STRIPE_LEFT_BLACK: "чёрный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_BLUE: "лазурный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_BROWN: "коричневый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_CYAN: "бирюзовый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_GRAY: "сѣрый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_GREEN: "зелёный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "голубой правосторонній столбъ"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "свѣтлосѣрый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_LIME: "яркозелёный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_MAGENTA: "пурпурный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_ORANGE: "оранжевый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_PINK: "розовый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_PURPLE: "фіолетовый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_RED: "червонный правосторонній столбъ"
+  BANNER_STRIPE_LEFT_WHITE: "бѣлый правосторонній столбъ"
+  BANNER_STRIPE_LEFT_YELLOW: "жёлтый правосторонній столбъ"
+  BANNER_STRIPE_MIDDLE_BLACK: "чёрный поясъ"
+  BANNER_STRIPE_MIDDLE_BLUE: "лазурный поясъ"
+  BANNER_STRIPE_MIDDLE_BROWN: "коричневый поясъ"
+  BANNER_STRIPE_MIDDLE_CYAN: "бирюзовый поясъ"
+  BANNER_STRIPE_MIDDLE_GRAY: "cѣрый поясъ"
+  BANNER_STRIPE_MIDDLE_GREEN: "зелёный поясъ"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "голубой поясъ"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "свѣтлосѣрый поясъ"
+  BANNER_STRIPE_MIDDLE_LIME: "яркозелёный поясъ"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "пурпурный поясъ"
+  BANNER_STRIPE_MIDDLE_ORANGE: "оранжевый поясъ"
+  BANNER_STRIPE_MIDDLE_PINK: "розовый поясъ"
+  BANNER_STRIPE_MIDDLE_PURPLE: "фіолетовый поясъ"
+  BANNER_STRIPE_MIDDLE_RED: "червонный поясъ"
+  BANNER_STRIPE_MIDDLE_WHITE: "бѣлый поясъ"
+  BANNER_STRIPE_MIDDLE_YELLOW: "жёлтый поясъ"
+  BANNER_STRIPE_RIGHT_BLACK: "чёрный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_BLUE: "лазурный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_BROWN: "коричневый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_CYAN: "бирюзовый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_GRAY: "сѣрый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_GREEN: "зелёный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "голубой лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "свѣтлосѣрый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_LIME: "яркозелёный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_MAGENTA: "пурпурный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_ORANGE: "оранжевый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_PINK: "розовый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_PURPLE: "фіолетовый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_RED: "червонный лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_WHITE: "бѣлый лѣвосторонній столбъ"
+  BANNER_STRIPE_RIGHT_YELLOW: "жёлтый лѣвосторонній столбъ"
+  BANNER_STRIPE_TOP_BLACK: "чёрная глава"
+  BANNER_STRIPE_TOP_BLUE: "лазурная глава"
+  BANNER_STRIPE_TOP_BROWN: "коричневая глава"
+  BANNER_STRIPE_TOP_CYAN: "бирюзовая глава"
+  BANNER_STRIPE_TOP_GRAY: "сѣрая глава"
+  BANNER_STRIPE_TOP_GREEN: "зелёная глава"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "голубая глава"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "свѣтлосѣрая глава"
+  BANNER_STRIPE_TOP_LIME: "яркозелёная глава"
+  BANNER_STRIPE_TOP_MAGENTA: "пурпурная глава"
+  BANNER_STRIPE_TOP_ORANGE: "оранжевая глава"
+  BANNER_STRIPE_TOP_PINK: "розовая глава"
+  BANNER_STRIPE_TOP_PURPLE: "фіолетовая глава"
+  BANNER_STRIPE_TOP_RED: "червонная глава"
+  BANNER_STRIPE_TOP_WHITE: "бѣлая глава"
+  BANNER_STRIPE_TOP_YELLOW: "жёлтая глава"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "чёрное остріё"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "лазурное остріё"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "коричневое остріё"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "бирюзовое остріё"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "сѣрое остріё"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "зелёное остріё"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "голубое остріё"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "свѣтлосѣрое остріё"
+  BANNER_TRIANGLE_BOTTOM_LIME: "яркозелёное остріё"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "пурпурное остріё"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "оранжевое остріё"
+  BANNER_TRIANGLE_BOTTOM_PINK: "розовое остріё"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "фіолетовое остріё"
+  BANNER_TRIANGLE_BOTTOM_RED: "червонное остріё"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "бѣлое остріё"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "жёлтое остріё"
+  BANNER_TRIANGLE_TOP_BLACK: "чёрное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_BLUE: "лазурное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_BROWN: "коричневое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_CYAN: "бирюзовое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_GRAY: "сѣрое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_GREEN: "зелёное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "голубое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "свѣтлосѣрое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_LIME: "яркозелёное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_MAGENTA: "пурпурное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_ORANGE: "оранжевое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_PINK: "розовое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_PURPLE: "фіолетовое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_RED: "червонное опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_WHITE: "бѣлое опрокинутое остріё"
+  BANNER_TRIANGLE_TOP_YELLOW: "жёлтое опрокинутое остріё"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "чёрное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "лазурное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "коричневое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "бирюзовое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "сѣрое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "зелёное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "голубое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "свѣтлосѣрое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_LIME: "яркозелёное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "пурпурное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "оранжевое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_PINK: "розовое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "фіолетовое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_RED: "червонное зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "бѣлое зубчатое основаніе"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "жёлтое зубчатое основаніе"
+  BANNER_TRIANGLES_TOP_BLACK: "чёрная зубчатая глава"
+  BANNER_TRIANGLES_TOP_BLUE: "лазурная зубчатая глава"
+  BANNER_TRIANGLES_TOP_BROWN: "коричневая зубчатая глава"
+  BANNER_TRIANGLES_TOP_CYAN: "бирюзовая зубчатая глава"
+  BANNER_TRIANGLES_TOP_GRAY: "сѣрая зубчатая глава"
+  BANNER_TRIANGLES_TOP_GREEN: "зелёная зубчатая глава"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "голубая зубчатая глава"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "свѣтлосѣрая зубчатая глава"
+  BANNER_TRIANGLES_TOP_LIME: "яркозелёная зубчатая глава"
+  BANNER_TRIANGLES_TOP_MAGENTA: "пурпурная зубчатая глава"
+  BANNER_TRIANGLES_TOP_ORANGE: "оранжевая зубчатая глава"
+  BANNER_TRIANGLES_TOP_PINK: "розовая зубчатая глава"
+  BANNER_TRIANGLES_TOP_PURPLE: "фіолетовая зубчатая глава"
+  BANNER_TRIANGLES_TOP_RED: "червонная зубчатая глава"
+  BANNER_TRIANGLES_TOP_WHITE: "бѣлая зубчатая глава"
+  BANNER_TRIANGLES_TOP_YELLOW: "жёлтая зубчатая глава"
+  BARREL: "бочка"
+  BARRIER: "барьеръ"
+  BASALT: "базальтъ"
+  BEACON: "маякъ"
+  BEACON_PRIMARY: "основной эффектъ"
+  BEACON_SECONDARY: "вторичный эффектъ"
+  BED_NO_SLEEP: "вы можете почивать только ночью или въ грозу"
+  BED_NOT_SAFE: "вы не можете уснуть покуда рядомъ бродятъ твари"
+  BED_OBSTRUCTED: "сія постель загромождена"
+  BED_OCCUPIED: "сія постель оккупирована"
+  BED_TOO_FAR_AWAY: "что-съ и до постели не дойдёте?"
+  BEDROCK: "коренная порода"
+  BEE_NEST: "пчелиное гнѣздо"
+  BEEHIVE: "пасѣка"
+  BEETROOTS: "свёкла"
+  BELL: "колоколъ"
+  BIG_DRIPLEAF: "большая бросянка"
+  BIG_DRIPLEAF_STEM: "стебель большой бросянки"
+  BIRCH_BUTTON: "берёзовая кнопка"
+  BIRCH_DOOR: "берёзовая дверь"
+  BIRCH_FENCE: "берёзовый заборъ"
+  BIRCH_FENCE_GATE: "берёзовая калитка"
+  BIRCH_HANGING_SIGN: "берёзовая подвѣсная табличка"
+  BIRCH_LEAVES: "берёзовые листья"
+  BIRCH_LOG: "берёзовое бревно"
+  BIRCH_PLANKS: "берёзовыя доски"
+  BIRCH_PRESSURE_PLATE: "берёзовая нажимная плита"
+  BIRCH_SAPLING: "саженецъ берёзы"
+  BIRCH_SIGN: "берёзовая табличка"
+  BIRCH_SLAB: "берёзовая плита"
+  BIRCH_STAIRS: "берёзовыя ступеньки"
+  BIRCH_TRAPDOOR: "берёзовый люкъ"
+  BIRCH_WALL_HANGING_SIGN: "берёзовая настѣнная подвѣсная табличка"
+  BIRCH_WALL_SIGN: "берёзовая настѣнная табличка"
+  BIRCH_WOOD: "берёза"
+  BLACK_BANNER: "чёрный флагъ"
+  BLACK_BED: "чёрная постель"
+  BLACK_CANDLE: "чёрная свѣча"
+  BLACK_CANDLE_CAKE: "тортъ съ чёрной свѣчой"
+  BLACK_CARPET: "чёрный ковёръ"
+  BLACK_CONCRETE: "чёрный бетонъ"
+  BLACK_CONCRETE_POWDER: "чёрный сухой бетонъ"
+  BLACK_GLAZED_TERRACOTTA: "чёрная глазурованная керамика"
+  BLACK_SHULKER_BOX: "чёрный шалкеровый ящикъ"
+  BLACK_STAINED_GLASS: "чёрное стекло"
+  BLACK_STAINED_GLASS_PANE: "чёрная стеклянная панель"
+  BLACK_TERRACOTTA: "чёрная керамика"
+  BLACK_WOOL: "чёрная шерсть"
+  BLACKSTONE: "чернокамень"
+  BLACKSTONE_SLAB: "чернокаменная плита"
+  BLACKSTONE_STAIRS: "чернокаменныя ступеньки"
+  BLACKSTONE_WALL: "чернокаменная ограда"
+  BLAST_FURNACE: "сыродутный горнъ"
+  BLUE_BANNER: "лазурный флагъ"
+  BLUE_BED: "лазурная постель"
+  BLUE_CANDLE: "лазурная свѣча"
+  BLUE_CANDLE_CAKE: "тортъ съ лазурной свѣчой"
+  BLUE_CARPET: "лазурный ковёръ"
+  BLUE_CONCRETE: "лазурный бетонъ"
+  BLUE_CONCRETE_POWDER: "лазурный сухой бетонъ"
+  BLUE_GLAZED_TERRACOTTA: "лазурная глазурованная керамика"
+  BLUE_ICE: "синій лёдъ"
+  BLUE_ORCHID: "лазурная орхидея"
+  BLUE_SHULKER_BOX: "лазурный шалкеровый ящикъ"
+  BLUE_STAINED_GLASS: "лазурное стекло"
+  BLUE_STAINED_GLASS_PANE: "лазурная стеклянная панель"
+  BLUE_TERRACOTTA: "лазурная керамика"
+  BLUE_WOOL: "лазурная шерсть"
+  BONE_BLOCK: "костный блокъ"
+  BOOKSHELF: "книжная полка"
+  BRAIN_CORAL: "кораллъ-мозговикъ"
+  BRAIN_CORAL_BLOCK: "блокъ коралла-мозговика"
+  BRAIN_CORAL_FAN: "вѣерный кораллъ-мозговикъ"
+  BRAIN_CORAL_WALL_FAN: "горизонтальный вѣерный кораллъ-мозговикъ"
+  BREWING_STAND: "зельеварка"
+  BRICK_SLAB: "кирпичная плита"
+  BRICK_STAIRS: "кирпичныя ступеньки"
+  BRICK_WALL: "кирпичная ограда"
+  BRICKS: "кирпичи"
+  BROWN_BANNER: "коричневый флагъ"
+  BROWN_BED: "коричневая постель"
+  BROWN_CANDLE: "коричневая свѣча"
+  BROWN_CANDLE_CAKE: "тортъ съ коричневой свѣчой"
+  BROWN_CARPET: "коричневый ковёръ"
+  BROWN_CONCRETE: "коричневый бетонъ"
+  BROWN_CONCRETE_POWDER: "коричневый сухой бетонъ"
+  BROWN_GLAZED_TERRACOTTA: "коричневая глазурованная керамика"
+  BROWN_MUSHROOM: "моховикъ"
+  BROWN_MUSHROOM_BLOCK: "блокъ моховика"
+  BROWN_SHULKER_BOX: "коричневый шалкеровый ящикъ"
+  BROWN_STAINED_GLASS: "коричневое стекло"
+  BROWN_STAINED_GLASS_PANE: "коричневая стеклянная панель"
+  BROWN_TERRACOTTA: "коричневая керамика"
+  BROWN_WOOL: "коричневая шерсть"
+  BUBBLE_COLUMN: "колонна пузырей"
+  BUBBLE_CORAL: "пузырчатый кораллъ"
+  BUBBLE_CORAL_BLOCK: "блокъ пузырчатаго коралла"
+  BUBBLE_CORAL_FAN: "вѣерный пузырчатый кораллъ"
+  BUBBLE_CORAL_WALL_FAN: "горизонтальный вѣерный пузырчатый кораллъ"
+  BUDDING_AMETHYST: "цвѣтущій аметистъ"
+  CACTUS: "кактусъ"
+  CAKE: "тортъ"
+  CALCITE: "кальцитъ"
+  CALIBRATED_SCULK_SENSOR: "откалиброванный скалкъ-датчикъ"
+  CAMPFIRE: "костёръ"
+  CANDLE: "свѣча"
+  CANDLE_CAKE: "тортъ со свѣчой"
+  CARROTS: "морковь"
+  CARTOGRAPHY_TABLE: "столъ картографа"
+  CARVED_PUMPKIN: "вырѣзанная тыква"
+  CAULDRON: "котёлъ"
+  CAVE_AIR: "пещерный воздухъ"
+  CAVE_VINES: "пещерная лоза"
+  CAVE_VINES_PLANT: "стебель пещерной лозы"
+  CHAIN: "цѣпь"
+  CHAIN_COMMAND_BLOCK: "послѣдовательный ариѳмометръ"
+  CHERRY_BUTTON: "вишнёвая кнопка"
+  CHERRY_DOOR: "вишнёвая дверь"
+  CHERRY_FENCE: "вишнёвый заборъ"
+  CHERRY_FENCE_GATE: "вишнёвая калитка"
+  CHERRY_HANGING_SIGN: "вишнёвая подвѣсная табличка"
+  CHERRY_LEAVES: "вишнёвые листья"
+  CHERRY_LOG: "вишнёвое бревно"
+  CHERRY_PLANKS: "вишнёвыя доски"
+  CHERRY_PRESSURE_PLATE: "вишнёвая нажимная плита"
+  CHERRY_SAPLING: "саженецъ вишни"
+  CHERRY_SIGN: "вишнёвая табличка"
+  CHERRY_SLAB: "вишнёвая плита"
+  CHERRY_STAIRS: "вишнёвыя ступеньки"
+  CHERRY_TRAPDOOR: "вишнёвый люкъ"
+  CHERRY_WALL_HANGING_SIGN: "вишнёвая настѣнная подвѣсная табличка"
+  CHERRY_WALL_SIGN: "вишнёвая настѣнная табличка"
+  CHERRY_WOOD: "вишня"
+  CHEST: "сундукъ"
+  CHIPPED_ANVIL: "повреждённая наковальня"
+  CHISELED_BOOKSHELF: "рѣзная книжная полка"
+  CHISELED_COPPER: "рѣзной мѣдный блок"
+  CHISELED_DEEPSLATE: "рѣзной глубинный сланецъ"
+  CHISELED_NETHER_BRICKS: "рѣзные нѣдрскіе кирпичи"
+  CHISELED_POLISHED_BLACKSTONE: "рѣзной полированный чернокамень"
+  CHISELED_QUARTZ_BLOCK: "рѣзной кварцевый блокъ"
+  CHISELED_RED_SANDSTONE: "рѣзной червонный песчаникъ"
+  CHISELED_SANDSTONE: "рѣзной песчаникъ"
+  CHISELED_STONE_BRICKS: "рѣзные каменные кирпичи"
+  CHISELED_TUFF: "рѣзной туфъ"
+  CHISELED_TUFF_BRICKS: "рѣзные туфовые кирпичи"
+  CHORUS_FLOWER: "цвѣтокъ хоруса"
+  CHORUS_PLANT: "хорусъ"
+  CLAY: "глина"
+  COAL_BLOCK: "угольный блокъ"
+  COAL_ORE: "угольная руда"
+  COARSE_DIRT: "каменистая земля"
+  COBBLED_DEEPSLATE: "дроблёный глубинный сланецъ"
+  COBBLED_DEEPSLATE_SLAB: "плита изъ дроблёнаго глубиннаго сланца"
+  COBBLED_DEEPSLATE_STAIRS: "ступеньки изъ дроблёнаго глубиннаго сланца"
+  COBBLED_DEEPSLATE_WALL: "ограда изъ дроблёнаго глубиннаго сланца"
+  COBBLESTONE: "булыжникъ"
+  COBBLESTONE_SLAB: "булыжная плита"
+  COBBLESTONE_STAIRS: "булыжныя ступеньки"
+  COBBLESTONE_WALL: "булыжная ограда"
+  COBWEB: "паутина"
+  COCOA: "какао"
+  COMMAND_BLOCK: "ариѳмометръ"
+  COMPARATOR: "редстоуновый сравниватель"
+  COMPOSTER: "компостница"
+  CONDUIT: "морской источникъ"
+  COPPER_BLOCK: "мѣдный блокъ"
+  COPPER_BULB: "лампа из мѣди"
+  COPPER_DOOR: "дверь из мѣди"
+  COPPER_GRATE: "рѣшётка из мѣди"
+  COPPER_ORE: "мѣдная руда"
+  COPPER_TRAPDOOR: "люкъ из мѣди"
+  CORNFLOWER: "синій василёкъ"
+  CRACKED_DEEPSLATE_BRICKS: "потрескавшіеся глубинносланцевые кирпичи"
+  CRACKED_DEEPSLATE_TILES: "потрескавшійся глубинносланцевый плитнякъ"
+  CRACKED_NETHER_BRICKS: "потрескавшіеся нѣдрскіе кирпичи"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "потрескавшіеся полированно-чернокаменные кирпичи"
+  CRACKED_STONE_BRICKS: "потрескавшіеся каменные кирпичи"
+  CRAFTER: "сборщикъ"
+  CRAFTING_TABLE: "верстакъ"
+  CREEPER_HEAD: "голова крипера"
+  CREEPER_WALL_HEAD: "настѣнная голова крипера"
+  CRIMSON_BUTTON: "багровая кнопка"
+  CRIMSON_DOOR: "багровая дверь"
+  CRIMSON_FENCE: "багровый заборъ"
+  CRIMSON_FENCE_GATE: "багровая калитка"
+  CRIMSON_FUNGUS: "багровый грибъ"
+  CRIMSON_HANGING_SIGN: "багровая подвѣсная табличка"
+  CRIMSON_HYPHAE: "багровые гифы"
+  CRIMSON_NYLIUM: "багровый нилій"
+  CRIMSON_PLANKS: "багровыя доски"
+  CRIMSON_PRESSURE_PLATE: "багровая нажимная плита"
+  CRIMSON_ROOTS: "багровые корни"
+  CRIMSON_SIGN: "багровая табличка"
+  CRIMSON_SLAB: "багровая плита"
+  CRIMSON_STAIRS: "багровыя ступеньки"
+  CRIMSON_STEM: "багровый стебель"
+  CRIMSON_TRAPDOOR: "багровый люкъ"
+  CRIMSON_WALL_HANGING_SIGN: "багровая настѣнная подвѣсная табличка"
+  CRIMSON_WALL_SIGN: "багровая настѣнная табличка"
+  CRYING_OBSIDIAN: "плачущій обсидіанъ"
+  CUT_COPPER: "рѣзной мѣдный блокъ"
+  CUT_COPPER_SLAB: "рѣзная мѣдная плита"
+  CUT_COPPER_STAIRS: "рѣзныя мѣдныя ступеньки"
+  CUT_RED_SANDSTONE: "пиленый червонный песчаникъ"
+  CUT_RED_SANDSTONE_SLAB: "плита изъ пиленаго червоннаго песчаника"
+  CUT_SANDSTONE: "пиленый песчаникъ"
+  CUT_SANDSTONE_SLAB: "плита изъ пиленаго песчаника"
+  CYAN_BANNER: "бирюзовый флагъ"
+  CYAN_BED: "бирюзовая постель"
+  CYAN_CANDLE: "бирюзовая свѣча"
+  CYAN_CANDLE_CAKE: "тортъ съ бирюзовой свѣчой"
+  CYAN_CARPET: "бирюзовый ковёръ"
+  CYAN_CONCRETE: "бирюзовый бетонъ"
+  CYAN_CONCRETE_POWDER: "бирюзовый сухой бетонъ"
+  CYAN_GLAZED_TERRACOTTA: "бирюзовая глазурованная керамика"
+  CYAN_SHULKER_BOX: "бирюзовый шалкеровый ящикъ"
+  CYAN_STAINED_GLASS: "бирюзовое стекло"
+  CYAN_STAINED_GLASS_PANE: "бирюзовая стеклянная панель"
+  CYAN_TERRACOTTA: "бирюзовая керамика"
+  CYAN_WOOL: "бирюзовая шерсть"
+  DAMAGED_ANVIL: "разбитая наковальня"
+  DANDELION: "одуванчикъ"
+  DARK_OAK_BUTTON: "кнопка изъ тёмнаго дуба"
+  DARK_OAK_DOOR: "дверь изъ тёмнаго дуба"
+  DARK_OAK_FENCE: "заборъ изъ тёмнаго дуба"
+  DARK_OAK_FENCE_GATE: "калитка изъ тёмнаго дуба"
+  DARK_OAK_HANGING_SIGN: "подвѣсная табличка изъ тёмнаго дуба"
+  DARK_OAK_LEAVES: "листья тёмнаго дуба"
+  DARK_OAK_LOG: "бревно тёмнаго дуба"
+  DARK_OAK_PLANKS: "доски изъ тёмнаго дуба"
+  DARK_OAK_PRESSURE_PLATE: "нажимная плита изъ тёмнаго дуба"
+  DARK_OAK_SAPLING: "саженецъ тёмнаго дуба"
+  DARK_OAK_SIGN: "табличка изъ тёмнаго дуба"
+  DARK_OAK_SLAB: "плита изъ тёмнаго дуба"
+  DARK_OAK_STAIRS: "ступеньки изъ тёмнаго дуба"
+  DARK_OAK_TRAPDOOR: "люкъ изъ тёмнаго дуба"
+  DARK_OAK_WALL_HANGING_SIGN: "настѣнная подвѣсная табличка изъ тёмнаго дуба"
+  DARK_OAK_WALL_SIGN: "настѣнная табличка изъ тёмнаго дуба"
+  DARK_OAK_WOOD: "тёмный дубъ"
+  DARK_PRISMARINE: "тёмный призмаринъ"
+  DARK_PRISMARINE_SLAB: "плита изъ тёмнаго призмарина"
+  DARK_PRISMARINE_STAIRS: "ступеньки изъ тёмнаго призмарина"
+  DAYLIGHT_DETECTOR: "датчикъ дневного свѣта"
+  DEAD_BRAIN_CORAL: "мёртвый кораллъ-мозговикъ"
+  DEAD_BRAIN_CORAL_BLOCK: "блокъ мёртваго коралла-мозговика"
+  DEAD_BRAIN_CORAL_FAN: "мёртвый вѣерный кораллъ-мозговикъ"
+  DEAD_BRAIN_CORAL_WALL_FAN: "мёртвый горизонтальный вѣерный кораллъ-мозговикъ"
+  DEAD_BUBBLE_CORAL: "мёртвый пузырчатый кораллъ"
+  DEAD_BUBBLE_CORAL_BLOCK: "блокъ мёртваго пузырчатаго коралла"
+  DEAD_BUBBLE_CORAL_FAN: "мёртвый вѣерный пузырчатый кораллъ"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "мёртвый горизонтальный вѣерный пузырчатый кораллъ"
+  DEAD_BUSH: "мёртвый кустъ"
+  DEAD_FIRE_CORAL: "мёртвый огненный кораллъ"
+  DEAD_FIRE_CORAL_BLOCK: "блокъ мёртваго огненнаго коралла"
+  DEAD_FIRE_CORAL_FAN: "мёртвый вѣерный огненный кораллъ"
+  DEAD_FIRE_CORAL_WALL_FAN: "мёртвый горизонтальный вѣерный огненный кораллъ"
+  DEAD_HORN_CORAL: "мёртвый роговый кораллъ"
+  DEAD_HORN_CORAL_BLOCK: "блокъ мёртваго рогового коралла"
+  DEAD_HORN_CORAL_FAN: "мёртвый вѣерный роговый кораллъ"
+  DEAD_HORN_CORAL_WALL_FAN: "мёртвый горизонтальный вѣерный роговый кораллъ"
+  DEAD_TUBE_CORAL: "мёртвый трубчатый кораллъ"
+  DEAD_TUBE_CORAL_BLOCK: "блокъ мёртваго трубчатаго коралла"
+  DEAD_TUBE_CORAL_FAN: "мёртвый вѣерный трубчатый кораллъ"
+  DEAD_TUBE_CORAL_WALL_FAN: "мёртвый горизонтальный вѣерный трубчатый кораллъ"
+  DECORATED_POT: "узорчатая ваза"
+  DEEPSLATE: "глубинный сланецъ"
+  DEEPSLATE_BRICK_SLAB: "плита изъ глубинносланцеваго кирпича"
+  DEEPSLATE_BRICK_STAIRS: "ступеньки изъ глубинносланцеваго кирпича"
+  DEEPSLATE_BRICK_WALL: "ограда изъ глубинносланцеваго кирпича"
+  DEEPSLATE_BRICKS: "глубинносланцевые кирпичи"
+  DEEPSLATE_COAL_ORE: "угленосный глубинный сланецъ"
+  DEEPSLATE_COPPER_ORE: "мѣденосный глубинный сланецъ"
+  DEEPSLATE_DIAMOND_ORE: "діамантоносный глубинный сланецъ"
+  DEEPSLATE_EMERALD_ORE: "смарагдоносный глубинный сланецъ"
+  DEEPSLATE_GOLD_ORE: "золотоносный глубинный сланецъ"
+  DEEPSLATE_IRON_ORE: "желѣзоносный глубинный сланецъ"
+  DEEPSLATE_LAPIS_ORE: "лазуриконосный глубинный сланецъ"
+  DEEPSLATE_REDSTONE_ORE: "редстоуноносный глубинный сланецъ"
+  DEEPSLATE_TILE_SLAB: "плита изъ глубинносланцеваго плитняка"
+  DEEPSLATE_TILE_STAIRS: "ступеньки изъ глубинносланцеваго плитняка"
+  DEEPSLATE_TILE_WALL: "ограда изъ глубинносланцеваго плитняка"
+  DEEPSLATE_TILES: "глубинносланцевый плитнякъ"
+  DETECTOR_RAIL: "сигнальные рельсы"
+  DIAMOND_BLOCK: "діамантовый блокъ"
+  DIAMOND_ORE: "діамантовая руда"
+  DIORITE: "діоритъ"
+  DIORITE_SLAB: "діоритовая плита"
+  DIORITE_STAIRS: "діоритовыя ступеньки"
+  DIORITE_WALL: "діоритовая ограда"
+  DIRT: "земля"
+  DIRT_PATH: "тропинка"
+  DISPENSER: "раздатчикъ"
+  DRAGON_EGG: "яйцо змѣя"
+  DRAGON_HEAD: "голова змѣя"
+  DRAGON_WALL_HEAD: "настѣнная голова змѣя"
+  DRIED_KELP_BLOCK: "блокъ сушёной ламинаріи"
+  DRIPSTONE_BLOCK: "натёчный камень"
+  DROPPER: "выбрасыватель"
+  EMERALD_BLOCK: "смарагдовый блокъ"
+  EMERALD_ORE: "смарагдовая руда"
+  ENCHANTING_TABLE: "чародѣйскій алтарь"
+  END_GATEWAY: "врата энда"
+  END_PORTAL: "порталъ въ эндъ"
+  END_PORTAL_FRAME: "рамка портала въ эндъ"
+  END_ROD: "стержень энда"
+  END_STONE: "эндернякъ"
+  END_STONE_BRICK_SLAB: "плита изъ эндерняковаго кирпича"
+  END_STONE_BRICK_STAIRS: "ступеньки изъ эндерняковаго кирпича"
+  END_STONE_BRICK_WALL: "ограда изъ эндерняковаго кирпича"
+  END_STONE_BRICKS: "эндерняковые кирпичи"
+  ENDER_CHEST: "эндеръ-ларецъ"
+  EXPOSED_CHISELED_COPPER: "потѣмнѣвшiй рѣзной мѣдный блокъ"
+  EXPOSED_COPPER: "патиновый мѣдный блокъ"
+  EXPOSED_COPPER_BULB: "лампа из потѣмнѣвшей мѣди"
+  EXPOSED_COPPER_DOOR: "дверь из потѣмнѣвшей мѣди"
+  EXPOSED_COPPER_GRATE: "рѣшётка из потѣмнѣвшей мѣди"
+  EXPOSED_COPPER_TRAPDOOR: "люкъ из потѣмнѣвшей мѣди"
+  EXPOSED_CUT_COPPER: "патиновый рѣзной мѣдный блокъ"
+  EXPOSED_CUT_COPPER_SLAB: "патиновая рѣзная мѣдная плита"
+  EXPOSED_CUT_COPPER_STAIRS: "патиновыя рѣзныя мѣдныя ступеньки"
+  FARMLAND: "пашня"
+  FERN: "папоротникъ"
+  FIRE: "огонь"
+  FIRE_CORAL: "огненный кораллъ"
+  FIRE_CORAL_BLOCK: "блокъ огненнаго коралла"
+  FIRE_CORAL_FAN: "вѣерный огненный кораллъ"
+  FIRE_CORAL_WALL_FAN: "горизонтальный вѣерный огненный кораллъ"
+  FLETCHING_TABLE: "столъ лучника"
+  FLOWER_POT: "цвѣточный горшокъ"
+  FLOWERING_AZALEA: "цвѣтущая азалія"
+  FLOWERING_AZALEA_LEAVES: "листья цвѣтущей азаліи"
+  FROGSPAWN: "лягушачья икра"
+  FROSTED_ICE: "талый лёдъ"
+  FURNACE: "печь"
+  GILDED_BLACKSTONE: "золочёный чернокамень"
+  GLASS: "стекло"
+  GLASS_PANE: "стеклянная панель"
+  GLOW_LICHEN: "свѣтящійся лишайникъ"
+  GLOWSTONE: "свѣтокамень"
+  GOLD_BLOCK: "золотой блокъ"
+  GOLD_ORE: "золотая руда"
+  GRANITE: "гранитъ"
+  GRANITE_SLAB: "гранитная плита"
+  GRANITE_STAIRS: "гранитныя ступеньки"
+  GRANITE_WALL: "гранитная ограда"
+  GRASS: "трава"
+  GRASS_BLOCK: "дернина"
+  GRAVEL: "гравій"
+  GRAY_BANNER: "сѣрый флагъ"
+  GRAY_BED: "сѣрая постель"
+  GRAY_CANDLE: "сѣрая свѣча"
+  GRAY_CANDLE_CAKE: "тортъ съ сѣрой свѣчой"
+  GRAY_CARPET: "сѣрый ковёръ"
+  GRAY_CONCRETE: "сѣрый бетонъ"
+  GRAY_CONCRETE_POWDER: "сѣрый сухой бетонъ"
+  GRAY_GLAZED_TERRACOTTA: "сѣрая глазурованная керамика"
+  GRAY_SHULKER_BOX: "сѣрый шалкеровый ящикъ"
+  GRAY_STAINED_GLASS: "сѣрое стекло"
+  GRAY_STAINED_GLASS_PANE: "сѣрая стеклянная панель"
+  GRAY_TERRACOTTA: "сѣрая керамика"
+  GRAY_WOOL: "сѣрая шерсть"
+  GREEN_BANNER: "зелёный флагъ"
+  GREEN_BED: "зелёная постель"
+  GREEN_CANDLE: "зелёная свѣча"
+  GREEN_CANDLE_CAKE: "тортъ съ зелёной свѣчой"
+  GREEN_CARPET: "зелёный ковёръ"
+  GREEN_CONCRETE: "зелёный бетонъ"
+  GREEN_CONCRETE_POWDER: "зелёный сухой бетонъ"
+  GREEN_GLAZED_TERRACOTTA: "зелёная глазурованная керамика"
+  GREEN_SHULKER_BOX: "зелёный шалкеровый ящикъ"
+  GREEN_STAINED_GLASS: "зелёное стекло"
+  GREEN_STAINED_GLASS_PANE: "зелёная стеклянная панель"
+  GREEN_TERRACOTTA: "зелёная керамика"
+  GREEN_WOOL: "зелёная шерсть"
+  GRINDSTONE: "точило"
+  HANGING_ROOTS: "свисающіе корни"
+  HAY_BLOCK: "снопъ сѣна"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "тяжеловѣсная нажимная плита"
+  HONEY_BLOCK: "блокъ мёда"
+  HONEYCOMB_BLOCK: "блокъ пчелиныхъ сотъ"
+  HOPPER: "пріёмная воронка"
+  HORN_CORAL: "роговой кораллъ"
+  HORN_CORAL_BLOCK: "блокъ рогового коралла"
+  HORN_CORAL_FAN: "вѣерный роговый кораллъ"
+  HORN_CORAL_WALL_FAN: "горизонтальный вѣерный роговый кораллъ"
+  ICE: "лёдъ"
+  INFESTED_CHISELED_STONE_BRICKS: "заражённые рѣзные каменные кирпичи"
+  INFESTED_COBBLESTONE: "заражённый булыжникъ"
+  INFESTED_CRACKED_STONE_BRICKS: "заражённые потрескавшіеся каменные кирпичи"
+  INFESTED_DEEPSLATE: "заражённый глубинный сланецъ"
+  INFESTED_MOSSY_STONE_BRICKS: "заражённые мшистые каменные кирпичи"
+  INFESTED_STONE: "заражённый камень"
+  INFESTED_STONE_BRICKS: "заражённые каменные кирпичи"
+  IRON_BARS: "желѣзные прутья"
+  IRON_BLOCK: "желѣзный блокъ"
+  IRON_DOOR: "желѣзная дверь"
+  IRON_ORE: "желѣзная руда"
+  IRON_TRAPDOOR: "желѣзный люкъ"
+  JACK_O_LANTERN: "свѣтильникъ джека"
+  JIGSAW: "пазлъ"
+  JUKEBOX: "патефонъ"
+  JUNGLE_BUTTON: "кнопка изъ тропическаго дерева"
+  JUNGLE_DOOR: "дверь изъ тропическаго дерева"
+  JUNGLE_FENCE: "заборъ изъ тропическаго дерева"
+  JUNGLE_FENCE_GATE: "калитка изъ тропическаго дерева"
+  JUNGLE_HANGING_SIGN: "подвѣсная табличка изъ тропическаго дерева"
+  JUNGLE_LEAVES: "листья тропическаго дерева"
+  JUNGLE_LOG: "бревно тропическаго дерева"
+  JUNGLE_PLANKS: "доски изъ тропическаго дерева"
+  JUNGLE_PRESSURE_PLATE: "нажимная плита изъ тропическаго дерева"
+  JUNGLE_SAPLING: "саженецъ тропическаго дерева"
+  JUNGLE_SIGN: "табличка изъ тропическаго дерева"
+  JUNGLE_SLAB: "плита изъ тропическаго дерева"
+  JUNGLE_STAIRS: "ступеньки изъ тропическаго дерева"
+  JUNGLE_TRAPDOOR: "люкъ изъ тропическаго дерева"
+  JUNGLE_WALL_HANGING_SIGN: "настѣнная подвѣсная табличка изъ тропическаго дерева"
+  JUNGLE_WALL_SIGN: "настѣнная табличка изъ тропическаго дерева"
+  JUNGLE_WOOD: "тропическое дерево"
+  KELP: "ламинарія"
+  KELP_PLANT: "стебель ламинаріи"
+  LADDER: "лѣстница"
+  LANTERN: "фонарь"
+  LAPIS_BLOCK: "лазуриковый блокъ"
+  LAPIS_ORE: "лазуриковая руда"
+  LARGE_AMETHYST_BUD: "большой аметистовый бутонъ"
+  LARGE_FERN: "раскидистый папоротникъ"
+  LAVA: "лава"
+  LAVA_CAULDRON: "котёлъ съ лавой"
+  LECTERN: "каѳедра"
+  LEVER: "рычагъ"
+  LIGHT: "свѣтъ"
+  LIGHT_BLUE_BANNER: "голубой флагъ"
+  LIGHT_BLUE_BED: "голубая постель"
+  LIGHT_BLUE_CANDLE: "голубая свѣча"
+  LIGHT_BLUE_CANDLE_CAKE: "тортъ съ голубой свѣчой"
+  LIGHT_BLUE_CARPET: "голубой ковёръ"
+  LIGHT_BLUE_CONCRETE: "голубой бетонъ"
+  LIGHT_BLUE_CONCRETE_POWDER: "голубой сухой бетонъ"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "голубая глазурованная керамика"
+  LIGHT_BLUE_SHULKER_BOX: "голубой шалкеровый ящикъ"
+  LIGHT_BLUE_STAINED_GLASS: "голубое стекло"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "голубая стеклянная панель"
+  LIGHT_BLUE_TERRACOTTA: "голубая керамика"
+  LIGHT_BLUE_WOOL: "голубая шерсть"
+  LIGHT_GRAY_BANNER: "свѣтлосѣрый флагъ"
+  LIGHT_GRAY_BED: "свѣтлосѣрая постель"
+  LIGHT_GRAY_CANDLE: "свѣтлосѣрая свѣча"
+  LIGHT_GRAY_CANDLE_CAKE: "тортъ со свѣтлосѣрой свѣчой"
+  LIGHT_GRAY_CARPET: "свѣтлосѣрый ковёръ"
+  LIGHT_GRAY_CONCRETE: "свѣтлосѣрый бетонъ"
+  LIGHT_GRAY_CONCRETE_POWDER: "свѣтлосѣрый сухой бетонъ"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "свѣтлосѣрая глазурованная керамика"
+  LIGHT_GRAY_SHULKER_BOX: "свѣтлосѣрый шалкеровый ящикъ"
+  LIGHT_GRAY_STAINED_GLASS: "свѣтлосѣрое стекло"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "свѣтлосѣрая стеклянная панель"
+  LIGHT_GRAY_TERRACOTTA: "свѣтлосѣрая керамика"
+  LIGHT_GRAY_WOOL: "свѣтлосѣрая шерсть"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "легковѣсная нажимная плита"
+  LIGHTNING_ROD: "громоотводъ"
+  LILAC: "сирень"
+  LILY_OF_THE_VALLEY: "ландышъ"
+  LILY_PAD: "кувшинка"
+  LIME_BANNER: "яркозелёный флагъ"
+  LIME_BED: "яркозелёная постель"
+  LIME_CANDLE: "яркозелёная свѣча"
+  LIME_CANDLE_CAKE: "тортъ съ яркозелёной свѣчой"
+  LIME_CARPET: "яркозелёный ковёръ"
+  LIME_CONCRETE: "яркозелёный бетонъ"
+  LIME_CONCRETE_POWDER: "яркозелёный сухой бетонъ"
+  LIME_GLAZED_TERRACOTTA: "яркозелёная глазурованная керамика"
+  LIME_SHULKER_BOX: "яркозелёный шалкеровый ящикъ"
+  LIME_STAINED_GLASS: "яркозелёное стекло"
+  LIME_STAINED_GLASS_PANE: "яркозелёная стеклянная панель"
+  LIME_TERRACOTTA: "яркозелёная керамика"
+  LIME_WOOL: "яркозелёная шерсть"
+  LODESTONE: "магнетитъ"
+  LOOM: "ткацкій станокъ"
+  MAGENTA_BANNER: "пурпурный флагъ"
+  MAGENTA_BED: "пурпурная постель"
+  MAGENTA_CANDLE: "пурпурная свѣча"
+  MAGENTA_CANDLE_CAKE: "тортъ съ пурпурной свѣчой"
+  MAGENTA_CARPET: "пурпурный ковёръ"
+  MAGENTA_CONCRETE: "пурпурный бетонъ"
+  MAGENTA_CONCRETE_POWDER: "пурпурный сухой бетонъ"
+  MAGENTA_GLAZED_TERRACOTTA: "пурпурная глазурованная керамика"
+  MAGENTA_SHULKER_BOX: "пурпурный шалкеровый ящикъ"
+  MAGENTA_STAINED_GLASS: "пурпурное стекло"
+  MAGENTA_STAINED_GLASS_PANE: "пурпурная стеклянная панель"
+  MAGENTA_TERRACOTTA: "пурпурная керамика"
+  MAGENTA_WOOL: "пурпурная шерсть"
+  MAGMA_BLOCK: "магма"
+  MANGROVE_BUTTON: "мангровая кнопка"
+  MANGROVE_DOOR: "мангровая дверь"
+  MANGROVE_FENCE: "мангровый заборъ"
+  MANGROVE_FENCE_GATE: "мангровая калитка"
+  MANGROVE_HANGING_SIGN: "мангровая подвѣсная табличка"
+  MANGROVE_LEAVES: "мангровые листья"
+  MANGROVE_LOG: "мангровое бревно"
+  MANGROVE_PLANKS: "мангровыя доски"
+  MANGROVE_PRESSURE_PLATE: "мангровая нажимная плита"
+  MANGROVE_PROPAGULE: "мангровый отростокъ"
+  MANGROVE_ROOTS: "мангровые корни"
+  MANGROVE_SIGN: "мангровая табличка"
+  MANGROVE_SLAB: "мангровая плита"
+  MANGROVE_STAIRS: "мангровыя ступеньки"
+  MANGROVE_TRAPDOOR: "мангровый люкъ"
+  MANGROVE_WALL_HANGING_SIGN: "мангровая настѣнная подвѣсная табличка"
+  MANGROVE_WALL_SIGN: "мангровая настѣнная табличка"
+  MANGROVE_WOOD: "мангровое дерево"
+  MEDIUM_AMETHYST_BUD: "средній аметистовый бутонъ"
+  MELON: "арбузъ"
+  MELON_STEM: "стебель арбуза"
+  MOSS_BLOCK: "блокъ мха"
+  MOSS_CARPET: "моховой ковёръ"
+  MOSSY_COBBLESTONE: "мшистый булыжникъ"
+  MOSSY_COBBLESTONE_SLAB: "мшистая булыжная плита"
+  MOSSY_COBBLESTONE_STAIRS: "мшистыя булыжныя ступеньки"
+  MOSSY_COBBLESTONE_WALL: "мшистая булыжная ограда"
+  MOSSY_STONE_BRICK_SLAB: "плита изъ мшистаго каменнаго кирпича"
+  MOSSY_STONE_BRICK_STAIRS: "ступеньки изъ мшистаго каменнаго кирпича"
+  MOSSY_STONE_BRICK_WALL: "ограда изъ мшистаго каменнаго кирпича"
+  MOSSY_STONE_BRICKS: "мшистые каменные кирпичи"
+  MOVING_PISTON: "движущійся поршень"
+  MUD: "грязь"
+  MUD_BRICK_SLAB: "саманная плита"
+  MUD_BRICK_STAIRS: "саманныя ступеньки"
+  MUD_BRICK_WALL: "саманная ограда"
+  MUD_BRICKS: "саманные кирпичи"
+  MUDDY_MANGROVE_ROOTS: "грязные мангровые корни"
+  MUSHROOM_STEM: "ножка гриба"
+  MYCELIUM: "мицелій"
+  NETHER_BRICK_FENCE: "заборъ изъ нѣдрскаго кирпича"
+  NETHER_BRICK_SLAB: "плита изъ нѣдрскаго кирпича"
+  NETHER_BRICK_STAIRS: "ступеньки изъ нѣдрскаго кирпича"
+  NETHER_BRICK_WALL: "ограда изъ нѣдрскаго кирпича"
+  NETHER_BRICKS: "нѣдрскіе кирпичи"
+  NETHER_GOLD_ORE: "нѣдрская золотая руда"
+  NETHER_PORTAL: "порталъ въ нѣдръ"
+  NETHER_QUARTZ_ORE: "нѣдръ-кварцевая руда"
+  NETHER_SPROUTS: "нѣдрскіе ростки"
+  NETHER_WART: "нѣдрскій наростъ"
+  NETHER_WART_BLOCK: "блокъ нѣдрскаго нароста"
+  NETHERITE_BLOCK: "нѣдритовый блокъ"
+  NETHERRACK: "нѣдракъ"
+  NOTE_BLOCK: "музыкальный блокъ"
+  OAK_BUTTON: "дубовая кнопка"
+  OAK_DOOR: "дубовая дверь"
+  OAK_FENCE: "дубовый заборъ"
+  OAK_FENCE_GATE: "дубовая калитка"
+  OAK_HANGING_SIGN: "дубовая подвѣсная табличка"
+  OAK_LEAVES: "дубовые листья"
+  OAK_LOG: "дубовое бревно"
+  OAK_PLANKS: "дубовыя доски"
+  OAK_PRESSURE_PLATE: "дубовая нажимная плита"
+  OAK_SAPLING: "саженецъ дуба"
+  OAK_SIGN: "дубовая табличка"
+  OAK_SLAB: "дубовая плита"
+  OAK_STAIRS: "дубовыя ступеньки"
+  OAK_TRAPDOOR: "дубовый люкъ"
+  OAK_WALL_HANGING_SIGN: "дубовая настѣнная подвѣсная табличка"
+  OAK_WALL_SIGN: "дубовая настѣнная табличка"
+  OAK_WOOD: "дубъ"
+  OBSERVER: "смотритель"
+  OBSIDIAN: "обсидіанъ"
+  OCHRE_FROGLIGHT: "охристая квампа"
+  OMINOUS_BANNER: "зловѣщій флагъ"
+  ORANGE_BANNER: "оранжевый флагъ"
+  ORANGE_BED: "оранжевая постель"
+  ORANGE_CANDLE: "оранжевая свѣча"
+  ORANGE_CANDLE_CAKE: "тортъ съ оранжевой свѣчой"
+  ORANGE_CARPET: "оранжевый ковёръ"
+  ORANGE_CONCRETE: "оранжевый бетонъ"
+  ORANGE_CONCRETE_POWDER: "оранжевый сухой бетонъ"
+  ORANGE_GLAZED_TERRACOTTA: "оранжевая глазурованная керамика"
+  ORANGE_SHULKER_BOX: "оранжевый шалкеровый ящикъ"
+  ORANGE_STAINED_GLASS: "оранжевое стекло"
+  ORANGE_STAINED_GLASS_PANE: "оранжевая стеклянная панель"
+  ORANGE_TERRACOTTA: "оранжевая керамика"
+  ORANGE_TULIP: "оранжевый тюльпанъ"
+  ORANGE_WOOL: "оранжевая шерсть"
+  OXEYE_DAISY: "ромашка"
+  OXIDIZED_CHISELED_COPPER: "окисленный рѣзной мѣдный блокъ"
+  OXIDIZED_COPPER: "окисленный мѣдный блокъ"
+  OXIDIZED_COPPER_BULB: "окислѣнныя мѣдная лампа"
+  OXIDIZED_COPPER_DOOR: "окислѣнныя мѣдная дверь"
+  OXIDIZED_COPPER_GRATE: "окислѣнныя мѣдная рѣшётка"
+  OXIDIZED_COPPER_TRAPDOOR: "окислѣнныя мѣдная люкъ"
+  OXIDIZED_CUT_COPPER: "окисленный рѣзной мѣдный блокъ"
+  OXIDIZED_CUT_COPPER_SLAB: "окисленная рѣзная мѣдная плита"
+  OXIDIZED_CUT_COPPER_STAIRS: "окисленныя рѣзныя мѣдныя ступеньки"
+  PACKED_ICE: "плотный лёдъ"
+  PACKED_MUD: "плотная грязь"
+  PEARLESCENT_FROGLIGHT: "перламутровая квампа"
+  PEONY: "піонъ"
+  PETRIFIED_OAK_SLAB: "окаменѣвшая дубовая плита"
+  PIGLIN_HEAD: "голова пиглина"
+  PIGLIN_WALL_HEAD: "настѣнная голова пиглина"
+  PINK_BANNER: "розовый флагъ"
+  PINK_BED: "розовая постель"
+  PINK_CANDLE: "розовая свѣча"
+  PINK_CANDLE_CAKE: "тортъ съ розовой свѣчой"
+  PINK_CARPET: "розовый ковёръ"
+  PINK_CONCRETE: "розовый бетонъ"
+  PINK_CONCRETE_POWDER: "розовый сухой бетонъ"
+  PINK_GLAZED_TERRACOTTA: "розовая глазурованная керамика"
+  PINK_PETALS: "розовые лепестки"
+  PINK_SHULKER_BOX: "розовый шалкеровый ящикъ"
+  PINK_STAINED_GLASS: "розовое стекло"
+  PINK_STAINED_GLASS_PANE: "розовая стеклянная панель"
+  PINK_TERRACOTTA: "розовая керамика"
+  PINK_TULIP: "розовый тюльпанъ"
+  PINK_WOOL: "розовая шерсть"
+  PISTON: "поршень"
+  PISTON_HEAD: "головка поршня"
+  PITCHER_CROP: "ростокъ кувшинницы"
+  PITCHER_PLANT: "кувшинница"
+  PLAYER_HEAD: "голова игрока"
+  PLAYER_HEAD_NAMED: "голова %s"
+  PLAYER_WALL_HEAD: "настѣнная голова игрока"
+  PODZOL: "подзолъ"
+  POINTED_DRIPSTONE: "капельникъ"
+  POLISHED_ANDESITE: "полированный андезитъ"
+  POLISHED_ANDESITE_SLAB: "плита изъ полированнаго андезита"
+  POLISHED_ANDESITE_STAIRS: "ступеньки изъ полированнаго андезита"
+  POLISHED_BASALT: "полированный базальтъ"
+  POLISHED_BLACKSTONE: "полированный чернокамень"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "плита изъ полированно-чернокаменнаго кирпича"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "ступеньки изъ полированно-чернокаменнаго кирпича"
+  POLISHED_BLACKSTONE_BRICK_WALL: "ограда изъ полированно-чернокаменнаго кирпича"
+  POLISHED_BLACKSTONE_BRICKS: "полированно-чернокаменные кирпичи"
+  POLISHED_BLACKSTONE_BUTTON: "кнопка изъ полированнаго чернокамня"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "нажимная плита изъ полированнаго чернокамня"
+  POLISHED_BLACKSTONE_SLAB: "плита изъ полированнаго чернокамня"
+  POLISHED_BLACKSTONE_STAIRS: "ступеньки изъ полированнаго чернокамня"
+  POLISHED_BLACKSTONE_WALL: "ограда изъ полированнаго чернокамня"
+  POLISHED_DEEPSLATE: "полированный глубинный сланецъ"
+  POLISHED_DEEPSLATE_SLAB: "плита изъ полированнаго глубиннаго сланца"
+  POLISHED_DEEPSLATE_STAIRS: "ступеньки изъ полированнаго глубиннаго сланца"
+  POLISHED_DEEPSLATE_WALL: "ограда изъ полированнаго глубиннаго сланца"
+  POLISHED_DIORITE: "полированный діоритъ"
+  POLISHED_DIORITE_SLAB: "плита изъ полированнаго діорита"
+  POLISHED_DIORITE_STAIRS: "ступеньки изъ полированнаго діорита"
+  POLISHED_GRANITE: "полированный гранитъ"
+  POLISHED_GRANITE_SLAB: "плита изъ полированнаго гранита"
+  POLISHED_GRANITE_STAIRS: "ступеньки изъ полированнаго гранита"
+  POLISHED_TUFF: "полированный туфъ"
+  POLISHED_TUFF_SLAB: "плита изъ полированнаго туфа"
+  POLISHED_TUFF_STAIRS: "ступеньки изъ полированнаго туфа"
+  POLISHED_TUFF_WALL: "ограда изъ полированнаго туфа"
+  POPPY: "макъ"
+  POTATOES: "картофель"
+  POTTED_ACACIA_SAPLING: "саженецъ акаціи въ горшкѣ"
+  POTTED_ALLIUM: "лукъ-батунъ въ горшкѣ"
+  POTTED_AZALEA_BUSH: "азалія въ горшкѣ"
+  POTTED_AZURE_BLUET: "хаустонія сѣрая въ горшкѣ"
+  POTTED_BAMBOO: "бамбукъ въ горшкѣ"
+  POTTED_BIRCH_SAPLING: "саженецъ берёзы въ горшкѣ"
+  POTTED_BLUE_ORCHID: "лазурная орхидея въ горшкѣ"
+  POTTED_BROWN_MUSHROOM: "моховикъ въ горшкѣ"
+  POTTED_CACTUS: "кактусъ въ горшкѣ"
+  POTTED_CHERRY_SAPLING: "саженецъ вишни въ горшкѣ"
+  POTTED_CORNFLOWER: "синій василёкъ въ горшкѣ"
+  POTTED_CRIMSON_FUNGUS: "багровый грибъ въ горшкѣ"
+  POTTED_CRIMSON_ROOTS: "багровые корни въ горшкѣ"
+  POTTED_DANDELION: "одуванчикъ въ горшкѣ"
+  POTTED_DARK_OAK_SAPLING: "саженецъ тёмнаго дуба въ горшкѣ"
+  POTTED_DEAD_BUSH: "мёртвый кустъ въ горшкѣ"
+  POTTED_FERN: "папоротникъ въ горшкѣ"
+  POTTED_FLOWERING_AZALEA_BUSH: "цвѣтущая азалія въ горшкѣ"
+  POTTED_JUNGLE_SAPLING: "саженецъ тропическаго дерева въ горшкѣ"
+  POTTED_LILY_OF_THE_VALLEY: "ландышъ въ горшкѣ"
+  POTTED_MANGROVE_PROPAGULE: "мангровый отростокъ въ горшкѣ"
+  POTTED_OAK_SAPLING: "саженецъ дуба въ горшкѣ"
+  POTTED_ORANGE_TULIP: "оранжевый тюльпанъ въ горшкѣ"
+  POTTED_OXEYE_DAISY: "ромашка въ горшкѣ"
+  POTTED_PINK_TULIP: "розовый тюльпанъ въ горшкѣ"
+  POTTED_POPPY: "макъ въ горшкѣ"
+  POTTED_RED_MUSHROOM: "мухоморъ въ горшкѣ"
+  POTTED_RED_TULIP: "червонный тюльпанъ въ горшкѣ"
+  POTTED_SPRUCE_SAPLING: "саженецъ ели въ горшкѣ"
+  POTTED_TORCHFLOWER: "факелоцвѣтъ въ горшкѣ"
+  POTTED_WARPED_FUNGUS: "искажённый грибъ въ горшкѣ"
+  POTTED_WARPED_ROOTS: "искажённые корни въ горшкѣ"
+  POTTED_WHITE_TULIP: "бѣлый тюльпанъ въ горшкѣ"
+  POTTED_WITHER_ROSE: "роза визера въ горшкѣ"
+  POWDER_SNOW: "рыхлый снѣгъ"
+  POWDER_SNOW_CAULDRON: "котёлъ съ рыхлымъ снѣгомъ"
+  POWERED_RAIL: "запитанные рельсы"
+  PRISMARINE: "призмаринъ"
+  PRISMARINE_BRICK_SLAB: "плита изъ призмариноваго кирпича"
+  PRISMARINE_BRICK_STAIRS: "ступеньки изъ призмариноваго кирпича"
+  PRISMARINE_BRICKS: "призмариновые кирпичи"
+  PRISMARINE_SLAB: "призмариновая плита"
+  PRISMARINE_STAIRS: "призмариновыя ступеньки"
+  PRISMARINE_WALL: "призмариновая ограда"
+  PUMPKIN: "тыква"
+  PUMPKIN_STEM: "стебель тыквы"
+  PURPLE_BANNER: "фіолетовый флагъ"
+  PURPLE_BED: "фіолетовая постель"
+  PURPLE_CANDLE: "фіолетовая свѣча"
+  PURPLE_CANDLE_CAKE: "тортъ съ фіолетовой свѣчой"
+  PURPLE_CARPET: "фіолетовый ковёръ"
+  PURPLE_CONCRETE: "фіолетовый бетонъ"
+  PURPLE_CONCRETE_POWDER: "фіолетовый сухой бетонъ"
+  PURPLE_GLAZED_TERRACOTTA: "фіолетовая глазурованная керамика"
+  PURPLE_SHULKER_BOX: "фіолетовый шалкеровый ящикъ"
+  PURPLE_STAINED_GLASS: "фіолетовое стекло"
+  PURPLE_STAINED_GLASS_PANE: "фіолетовая стеклянная панель"
+  PURPLE_TERRACOTTA: "фіолетовая керамика"
+  PURPLE_WOOL: "фіолетовая шерсть"
+  PURPUR_BLOCK: "пурпуръ"
+  PURPUR_PILLAR: "пурпуровый пилонъ"
+  PURPUR_SLAB: "пурпуровая плита"
+  PURPUR_STAIRS: "пурпуровыя ступеньки"
+  QUARTZ_BLOCK: "кварцевый блокъ"
+  QUARTZ_BRICKS: "кварцевые кирпичи"
+  QUARTZ_PILLAR: "кварцевая колонна"
+  QUARTZ_SLAB: "кварцевая плита"
+  QUARTZ_STAIRS: "кварцевыя ступеньки"
+  RAIL: "рельсы"
+  RAW_COPPER_BLOCK: "блокъ рудной мѣди"
+  RAW_GOLD_BLOCK: "блокъ руднаго золота"
+  RAW_IRON_BLOCK: "блокъ руднаго желѣза"
+  RED_BANNER: "червонный флагъ"
+  RED_BED: "червонная постель"
+  RED_CANDLE: "червонная свѣча"
+  RED_CANDLE_CAKE: "тортъ съ червонной свѣчой"
+  RED_CARPET: "червонный ковёръ"
+  RED_CONCRETE: "червонный бетонъ"
+  RED_CONCRETE_POWDER: "червонный сухой бетонъ"
+  RED_GLAZED_TERRACOTTA: "червонная глазурованная керамика"
+  RED_MUSHROOM: "мухоморъ"
+  RED_MUSHROOM_BLOCK: "блокъ мухомора"
+  RED_NETHER_BRICK_SLAB: "плита изъ червоннаго нѣдрскаго кирпича"
+  RED_NETHER_BRICK_STAIRS: "ступеньки изъ червоннаго нѣдрскаго кирпича"
+  RED_NETHER_BRICK_WALL: "ограда изъ червоннаго нѣдрскаго кирпича"
+  RED_NETHER_BRICKS: "червонные нѣдрскіе кирпичи"
+  RED_SAND: "червонный песокъ"
+  RED_SANDSTONE: "червонный песчаникъ"
+  RED_SANDSTONE_SLAB: "плита изъ червоннаго песчаника"
+  RED_SANDSTONE_STAIRS: "ступеньки изъ червоннаго песчаника"
+  RED_SANDSTONE_WALL: "ограда изъ червоннаго песчаника"
+  RED_SHULKER_BOX: "червонный шалкеровый ящикъ"
+  RED_STAINED_GLASS: "червонное стекло"
+  RED_STAINED_GLASS_PANE: "червонная стеклянная панель"
+  RED_TERRACOTTA: "червонная керамика"
+  RED_TULIP: "червонный тюльпанъ"
+  RED_WOOL: "червонная шерсть"
+  REDSTONE_BLOCK: "редстоуновый блокъ"
+  REDSTONE_LAMP: "редстоуновый фонарь"
+  REDSTONE_ORE: "редстоуновая руда"
+  REDSTONE_TORCH: "редстоуновый факелъ"
+  REDSTONE_WALL_TORCH: "настѣнный редстоуновый факелъ"
+  REDSTONE_WIRE: "редстоуновый проводъ"
+  REINFORCED_DEEPSLATE: "укрѣплённый глубинный сланецъ"
+  REPEATER: "редстоуновый повторитель"
+  REPEATING_COMMAND_BLOCK: "повторяющій ариѳмометръ"
+  RESPAWN_ANCHOR: "якорь возрожденія"
+  ROOTED_DIRT: "корнистая земля"
+  ROSE_BUSH: "розовый кустъ"
+  SAND: "песокъ"
+  SANDSTONE: "песчаникъ"
+  SANDSTONE_SLAB: "песчаниковая плита"
+  SANDSTONE_STAIRS: "песчаниковыя ступеньки"
+  SANDSTONE_WALL: "песчаниковая ограда"
+  SCAFFOLDING: "подмостки"
+  SCULK: "скалкъ"
+  SCULK_CATALYST: "скалковый катализаторъ"
+  SCULK_SENSOR: "скалкъ-датчикъ"
+  SCULK_SHRIEKER: "скалковый крикунъ"
+  SCULK_VEIN: "скалковая жила"
+  SEA_LANTERN: "морской фонарь"
+  SEA_PICKLE: "морской огурецъ"
+  SEAGRASS: "морская трава"
+  SET_SPAWN: "поставлена точка воскрешенія"
+  SHORT_GRASS: "невысокая трава"
+  SHROOMLIGHT: "грибосвѣтъ"
+  SHULKER_BOX: "шалкеровый ящикъ"
+  SKELETON_SKULL: "черепъ"
+  SKELETON_WALL_SKULL: "настѣнный черепъ"
+  SLIME_BLOCK: "блокъ слизи"
+  SMALL_AMETHYST_BUD: "малый аметистовый бутонъ"
+  SMALL_DRIPLEAF: "маленькая бросянка"
+  SMITHING_TABLE: "столъ кузнеца"
+  SMOKER: "коптильня"
+  SMOOTH_BASALT: "гладкій базальтъ"
+  SMOOTH_QUARTZ: "гладкій кварцъ"
+  SMOOTH_QUARTZ_SLAB: "плита изъ гладкаго кварца"
+  SMOOTH_QUARTZ_STAIRS: "ступеньки изъ гладкаго кварца"
+  SMOOTH_RED_SANDSTONE: "гладкій червонный песчаникъ"
+  SMOOTH_RED_SANDSTONE_SLAB: "плита изъ гладкаго червоннаго песчаника"
+  SMOOTH_RED_SANDSTONE_STAIRS: "ступеньки изъ гладкаго червоннаго песчаника"
+  SMOOTH_SANDSTONE: "гладкій песчаникъ"
+  SMOOTH_SANDSTONE_SLAB: "плита изъ гладкаго песчаника"
+  SMOOTH_SANDSTONE_STAIRS: "ступеньки изъ гладкаго песчаника"
+  SMOOTH_STONE: "гладкій камень"
+  SMOOTH_STONE_SLAB: "плита изъ гладкаго камня"
+  SNIFFER_EGG: "яйцо нюхача"
+  SNOW: "снѣгъ"
+  SNOW_BLOCK: "блокъ снѣга"
+  SOUL_CAMPFIRE: "костёръ душъ"
+  SOUL_FIRE: "огонь душъ"
+  SOUL_LANTERN: "фонарь душъ"
+  SOUL_SAND: "песокъ душъ"
+  SOUL_SOIL: "почва душъ"
+  SOUL_TORCH: "факелъ душъ"
+  SOUL_WALL_TORCH: "настѣнный факелъ душъ"
+  SPAWN_NOT_VALID: "у васъ нѣтъ постели или заряженнаго якоря возрожденія либо доступъ къ нимъ затруднёнъ"
+  SPAWNER: "разсадникъ тварей"
+  SPAWNER_DESC1: "взаимодѣйствіе съ яйцомъ призыва:"
+  SPAWNER_DESC2: "опредѣляетъ видъ твари"
+  SPONGE: "губка"
+  SPORE_BLOSSOM: "спороцвѣтъ"
+  SPRUCE_BUTTON: "еловая кнопка"
+  SPRUCE_DOOR: "еловая дверь"
+  SPRUCE_FENCE: "еловый заборъ"
+  SPRUCE_FENCE_GATE: "еловая калитка"
+  SPRUCE_HANGING_SIGN: "еловая подвѣсная табличка"
+  SPRUCE_LEAVES: "хвоя"
+  SPRUCE_LOG: "еловое бревно"
+  SPRUCE_PLANKS: "еловыя доски"
+  SPRUCE_PRESSURE_PLATE: "еловая нажимная плита"
+  SPRUCE_SAPLING: "саженецъ ели"
+  SPRUCE_SIGN: "еловая табличка"
+  SPRUCE_SLAB: "еловая плита"
+  SPRUCE_STAIRS: "еловыя ступеньки"
+  SPRUCE_TRAPDOOR: "еловый люкъ"
+  SPRUCE_WALL_HANGING_SIGN: "еловая настѣнная подвѣсная табличка"
+  SPRUCE_WALL_SIGN: "еловая настѣнная табличка"
+  SPRUCE_WOOD: "ель"
+  STICKY_PISTON: "липкій поршень"
+  STONE: "камень"
+  STONE_BRICK_SLAB: "плита изъ каменнаго кирпича"
+  STONE_BRICK_STAIRS: "ступеньки изъ каменнаго кирпича"
+  STONE_BRICK_WALL: "ограда изъ каменнаго кирпича"
+  STONE_BRICKS: "каменные кирпичи"
+  STONE_BUTTON: "каменная кнопка"
+  STONE_PRESSURE_PLATE: "каменная нажимная плита"
+  STONE_SLAB: "каменная плита"
+  STONE_STAIRS: "каменныя ступеньки"
+  STONECUTTER: "камнерѣзъ"
+  STRIPPED_ACACIA_LOG: "обтёсанное акаціевое бревно"
+  STRIPPED_ACACIA_WOOD: "обтёсанная акаціевая древесина"
+  STRIPPED_BAMBOO_BLOCK: "блокъ обтёсаннаго бамбука"
+  STRIPPED_BIRCH_LOG: "обтёсанное берёзовое бревно"
+  STRIPPED_BIRCH_WOOD: "обтёсанная берёзовая древесина"
+  STRIPPED_CHERRY_LOG: "обтёсанное вишнёвое бревно"
+  STRIPPED_CHERRY_WOOD: "обтёсанная вишнёвая древесина"
+  STRIPPED_CRIMSON_HYPHAE: "очищенные багровые гифы"
+  STRIPPED_CRIMSON_STEM: "очищенный багровый стебель"
+  STRIPPED_DARK_OAK_LOG: "обтёсанное бревно тёмнаго дуба"
+  STRIPPED_DARK_OAK_WOOD: "обтёсанная древесина тёмнаго дуба"
+  STRIPPED_JUNGLE_LOG: "обтёсанное бревно тропическаго дерева"
+  STRIPPED_JUNGLE_WOOD: "обтёсанная тропическая древесина"
+  STRIPPED_MANGROVE_LOG: "обтёсанное мангровое бревно"
+  STRIPPED_MANGROVE_WOOD: "обтёсанная мангровая древесина"
+  STRIPPED_OAK_LOG: "обтёсанное дубовое бревно"
+  STRIPPED_OAK_WOOD: "обтёсанная дубовая древесина"
+  STRIPPED_SPRUCE_LOG: "обтёсанное еловое бревно"
+  STRIPPED_SPRUCE_WOOD: "обтёсанная еловая древесина"
+  STRIPPED_WARPED_HYPHAE: "очищенные искажённые гифы"
+  STRIPPED_WARPED_STEM: "очищенный искажённый стебель"
+  STRUCTURE_BLOCK: "блокъ-конструкторъ"
+  STRUCTURE_VOID: "пустой блокъ"
+  SUGAR_CANE: "сахарный тростникъ"
+  SUNFLOWER: "подсолнухъ"
+  SUSPICIOUS_GRAVEL: "подозрительный гравій"
+  SUSPICIOUS_SAND: "подозрительный песокъ"
+  SWEET_BERRY_BUSH: "кустъ сладкихъ ягодъ"
+  TALL_GRASS: "высокая трава"
+  TALL_SEAGRASS: "высокая морская трава"
+  TARGET: "мишень"
+  TERRACOTTA: "терракота"
+  TINTED_GLASS: "затемнённое стекло"
+  TNT: "динамитъ"
+  TORCH: "факелъ"
+  TORCHFLOWER: "факелоцвѣтъ"
+  TORCHFLOWER_CROP: "ростокъ факелоцвѣта"
+  TRAPPED_CHEST: "сундукъ-ловушка"
+  TRIAL_SPAWNER: "рассаднiкъ испытанiй"
+  TRIPWIRE: "растяжка"
+  TRIPWIRE_HOOK: "крюкъ"
+  TUBE_CORAL: "трубчатый кораллъ"
+  TUBE_CORAL_BLOCK: "блокъ трубчатаго коралла"
+  TUBE_CORAL_FAN: "вѣерный трубчатый кораллъ"
+  TUBE_CORAL_WALL_FAN: "горизонтальный вѣерный трубчатый кораллъ"
+  TUFF: "туфъ"
+  TUFF_BRICK_SLAB: "плита изъ туфоваго кирпича"
+  TUFF_BRICK_STAIRS: "ступеньки изъ туфоваго кирпича"
+  TUFF_BRICK_WALL: "ограда изъ туфоваго кирпича"
+  TUFF_BRICKS: "туфовые кирпичи"
+  TUFF_SLAB: "туфовая плита"
+  TUFF_STAIRS: "туфовыя ступеньки"
+  TUFF_WALL: "туфовая ограда"
+  TURTLE_EGG: "черепашье яйцо"
+  TWISTING_VINES: "вьющаяся лоза"
+  TWISTING_VINES_PLANT: "стебель вьющейся лозы"
+  VERDANT_FROGLIGHT: "малахитовая квампа"
+  VINE: "ліаны"
+  VOID_AIR: "вакуумъ"
+  WALL_TORCH: "настѣнный факелъ"
+  WARPED_BUTTON: "искажённая кнопка"
+  WARPED_DOOR: "искажённая дверь"
+  WARPED_FENCE: "искажённый заборъ"
+  WARPED_FENCE_GATE: "искажённая калитка"
+  WARPED_FUNGUS: "искажённый грибъ"
+  WARPED_HANGING_SIGN: "искажённая подвѣсная табличка"
+  WARPED_HYPHAE: "искажённые гифы"
+  WARPED_NYLIUM: "искажённый нилій"
+  WARPED_PLANKS: "искажённыя доски"
+  WARPED_PRESSURE_PLATE: "искажённая нажимная плита"
+  WARPED_ROOTS: "искажённые корни"
+  WARPED_SIGN: "искажённая табличка"
+  WARPED_SLAB: "искажённая плита"
+  WARPED_STAIRS: "искажённыя ступеньки"
+  WARPED_STEM: "искажённый стебель"
+  WARPED_TRAPDOOR: "искажённый люкъ"
+  WARPED_WALL_HANGING_SIGN: "искажённая настѣнная подвѣсная табличка"
+  WARPED_WALL_SIGN: "искажённая настѣнная табличка"
+  WARPED_WART_BLOCK: "блокъ искажённаго нароста"
+  WATER: "вода"
+  WATER_CAULDRON: "котёлъ съ водой"
+  WAXED_CHISELED_COPPER: "блокъ из вощённой рѣзной мѣди"
+  WAXED_COPPER_BLOCK: "вощёный мѣдный блокъ"
+  WAXED_COPPER_BULB: "лампа из вощённой мѣди"
+  WAXED_COPPER_DOOR: "дверь из вощённой мѣди"
+  WAXED_COPPER_GRATE: "вощёныя мѣдная рѣшётка"
+  WAXED_COPPER_TRAPDOOR: "люкъ из вощённой мѣди"
+  WAXED_CUT_COPPER: "вощёный рѣзной мѣдный блокъ"
+  WAXED_CUT_COPPER_SLAB: "вощёная рѣзная мѣдная плита"
+  WAXED_CUT_COPPER_STAIRS: "вощёныя рѣзныя мѣдныя ступеньки"
+  WAXED_EXPOSED_CHISELED_COPPER: "вощёный потѣмнѣвшiй рѣзной мѣдный блокъ"
+  WAXED_EXPOSED_COPPER: "вощёный патиновый мѣдный блокъ"
+  WAXED_EXPOSED_COPPER_BULB: "вощёная потѣмнѣвшыя мѣдная лампа"
+  WAXED_EXPOSED_COPPER_DOOR: "вощёная потѣмнѣвшыя мѣдная дверь"
+  WAXED_EXPOSED_COPPER_GRATE: "вощёная потѣмнѣвшiй мѣдная рѣшётка"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "вощёный потѣмнѣвшiй мѣдный люкъ"
+  WAXED_EXPOSED_CUT_COPPER: "вощёный патиновый рѣзной мѣдный блокъ"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "вощёная патиновая рѣзная мѣдная плита"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "вощёныя патиновыя рѣзныя мѣдныя ступеньки"
+  WAXED_OXIDIZED_CHISELED_COPPER: "вощёный окислѣнный рѣзной мѣдный блокъ"
+  WAXED_OXIDIZED_COPPER: "вощёный окисленный мѣдный блокъ"
+  WAXED_OXIDIZED_COPPER_BULB: "вощёная окисленная мѣдная лампа"
+  WAXED_OXIDIZED_COPPER_DOOR: "вощёная окисленная мѣдная дверь"
+  WAXED_OXIDIZED_COPPER_GRATE: "вощёная окисленная мѣдная рѣшётка"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "вощёный окисленный мѣдный люкъ"
+  WAXED_OXIDIZED_CUT_COPPER: "вощёный окисленный рѣзной мѣдный блокъ"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "вощёная окисленная рѣзная мѣдная плита"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "вощёныя окисленныя рѣзныя мѣдныя ступеньки"
+  WAXED_WEATHERED_CHISELED_COPPER: "вощёный состарѣнный рѣзной мѣдный блокъ"
+  WAXED_WEATHERED_COPPER: "вощёный состаренный мѣдный блокъ"
+  WAXED_WEATHERED_COPPER_BULB: "вощёная состарѣнная мѣдная лампа"
+  WAXED_WEATHERED_COPPER_DOOR: "вощёная состарѣнная мѣдная дверь"
+  WAXED_WEATHERED_COPPER_GRATE: "вощёная состарѣнная мѣдная рѣшётка"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "вощёный состарѣнный мѣдный люкъ"
+  WAXED_WEATHERED_CUT_COPPER: "вощёный состаренный рѣзной мѣдный блокъ"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "вощёная состаренная рѣзная мѣдная плита"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "вощёныя состаренныя рѣзныя мѣдныя ступеньки"
+  WEATHERED_CHISELED_COPPER: "состарѣнный рѣзной мѣдный блокъ"
+  WEATHERED_COPPER: "состаренный мѣдный блокъ"
+  WEATHERED_COPPER_BULB: "состарѣнная мѣдная лампа"
+  WEATHERED_COPPER_DOOR: "состарѣнная мѣдная дверь"
+  WEATHERED_COPPER_GRATE: "состарѣнная мѣдная рѣшётка"
+  WEATHERED_COPPER_TRAPDOOR: "состарѣнный мѣдный люкъ"
+  WEATHERED_CUT_COPPER: "состаренный рѣзной мѣдный блокъ"
+  WEATHERED_CUT_COPPER_SLAB: "состаренная рѣзная мѣдная плита"
+  WEATHERED_CUT_COPPER_STAIRS: "состаренныя рѣзныя мѣдныя ступеньки"
+  WEEPING_VINES: "плакучая лоза"
+  WEEPING_VINES_PLANT: "стебель плакучей лозы"
+  WET_SPONGE: "мокрая губка"
+  WHEAT: "ростки пшеницы"
+  WHITE_BANNER: "бѣлый флагъ"
+  WHITE_BED: "бѣлая постель"
+  WHITE_CANDLE: "бѣлая свѣча"
+  WHITE_CANDLE_CAKE: "тортъ съ бѣлой свѣчой"
+  WHITE_CARPET: "бѣлый ковёръ"
+  WHITE_CONCRETE: "бѣлый бетонъ"
+  WHITE_CONCRETE_POWDER: "бѣлый сухой бетонъ"
+  WHITE_GLAZED_TERRACOTTA: "бѣлая глазированная керамика"
+  WHITE_SHULKER_BOX: "бѣлый шалкеровый ящикъ"
+  WHITE_STAINED_GLASS: "бѣлое стекло"
+  WHITE_STAINED_GLASS_PANE: "бѣлая стеклянная панель"
+  WHITE_TERRACOTTA: "бѣлая керамика"
+  WHITE_TULIP: "бѣлый тюльпанъ"
+  WHITE_WOOL: "бѣлая шерсть"
+  WITHER_ROSE: "роза визера"
+  WITHER_SKELETON_SKULL: "черепъ визеръ-скелета"
+  WITHER_SKELETON_WALL_SKULL: "настѣнный черепъ визеръ-скелета"
+  YELLOW_BANNER: "жёлтый флагъ"
+  YELLOW_BED: "жёлтая постель"
+  YELLOW_CANDLE: "жёлтая свѣча"
+  YELLOW_CANDLE_CAKE: "тортъ съ жёлтой свѣчой"
+  YELLOW_CARPET: "жёлтый ковёръ"
+  YELLOW_CONCRETE: "жёлтый бетонъ"
+  YELLOW_CONCRETE_POWDER: "жёлтый сухой бетонъ"
+  YELLOW_GLAZED_TERRACOTTA: "жёлтая глазурованная керамика"
+  YELLOW_SHULKER_BOX: "жёлтый шалкеровый ящикъ"
+  YELLOW_STAINED_GLASS: "жёлтое стекло"
+  YELLOW_STAINED_GLASS_PANE: "жёлтая стеклянная панель"
+  YELLOW_TERRACOTTA: "жёлтая керамика"
+  YELLOW_WOOL: "жёлтая шерсть"
+  ZOMBIE_HEAD: "голова мертвеца"
+  ZOMBIE_WALL_HEAD: "настѣнная голова мертвеца"
+  ACACIA_BOAT: "акаціевая лодка"
+  ACACIA_CHEST_BOAT: "акаціевая грузовая лодка"
+  ALLAY_SPAWN_EGG: "яйцо призыва угодника"
+  AMETHYST_SHARD: "осколокъ аметиста"
+  ANGLER_POTTERY_SHARD: "глиняный черепокъ «рыбакъ»"
+  ANGLER_POTTERY_SHERD: "глиняный черепокъ «рыбарь»"
+  APPLE: "яблоко"
+  ARCHER_POTTERY_SHARD: "глиняный черепокъ «лучникъ»"
+  ARCHER_POTTERY_SHERD: "глиняный черепокъ «стрѣлецъ»"
+  ARMOR_STAND: "стойка для брони"
+  ARMS_UP_POTTERY_SHARD: "глиняный черепокъ «руки вверхъ»"
+  ARMS_UP_POTTERY_SHERD: "глиняный черепокъ «руки вверхъ»"
+  ARROW: "стрѣла"
+  AXOLOTL_BUCKET: "аксолотль въ ведрѣ"
+  AXOLOTL_SPAWN_EGG: "яйцо призыва аксолотля"
+  BAKED_POTATO: "печёный картофель"
+  BAMBOO_CHEST_RAFT: "грузовой бамбуковый плотъ"
+  BAMBOO_RAFT: "бамбуковый плотъ"
+  BAT_SPAWN_EGG: "яйцо призыва летучей мыши"
+  BEE_SPAWN_EGG: "яйцо призыва пчелы"
+  BEEF: "сырая говядина"
+  BEETROOT: "свёкла"
+  BEETROOT_SEEDS: "сѣмена свёклы"
+  BEETROOT_SOUP: "свекольный супъ"
+  BIRCH_BOAT: "берёзовая лодка"
+  BIRCH_CHEST_BOAT: "берёзовая грузовая лодка"
+  BLACK_DYE: "чёрный краситель"
+  BLADE_POTTERY_SHARD: "глиняный черепокъ «лезвіе»"
+  BLADE_POTTERY_SHERD: "глиняный черепокъ «лезвіе»"
+  BLAZE_POWDER: "огненный порошокъ"
+  BLAZE_ROD: "огненный жезлъ"
+  BLAZE_SPAWN_EGG: "яйцо призыва пламеня"
+  BLUE_DYE: "лазурный краситель"
+  BONE: "кость"
+  BONE_MEAL: "костная мука"
+  BOOK: "книга"
+  BOW: "лукъ"
+  BOWL: "миска"
+  BREAD: "хлѣбъ"
+  BREEZE_SPAWN_EGG: "яйцо прiзыва брiза"
+  BREWER_POTTERY_SHARD: "глиняный черепокъ «зельеваръ»"
+  BREWER_POTTERY_SHERD: "глиняный черепокъ «зельеваръ»"
+  BRICK: "кирпичъ"
+  BROWN_DYE: "коричневый краситель"
+  BRUSH: "кисть"
+  BUCKET: "ведро"
+  BUNDLE: "мѣшокъ"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "глиняный черепокъ «пламя»"
+  BURN_POTTERY_SHERD: "глиняный черепокъ «пламя»"
+  CAMEL_SPAWN_EGG: "яйцо призыва верблюда"
+  CARROT: "морковь"
+  CARROT_ON_A_STICK: "удочка съ морковкой"
+  CAT_SPAWN_EGG: "яйцо призыва кошки"
+  CAVE_SPIDER_SPAWN_EGG: "яйцо призыва мизгиря"
+  CHAINMAIL_BOOTS: "кольчужные ботинки"
+  CHAINMAIL_CHESTPLATE: "кольчуга"
+  CHAINMAIL_HELMET: "койфъ"
+  CHAINMAIL_LEGGINGS: "кольчужные поножи"
+  CHARCOAL: "древесный уголь"
+  CHERRY_BOAT: "вишнёвая лодка"
+  CHERRY_CHEST_BOAT: "вишнёвая грузовая лодка"
+  CHEST_MINECART: "грузовая вагонетка"
+  CHICKEN: "курятина"
+  CHICKEN_SPAWN_EGG: "яйцо призыва курицы"
+  CHORUS_FRUIT: "плодъ хоруса"
+  CLAY_BALL: "комокъ глины"
+  CLOCK: "часы"
+  COAL: "уголь"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  COCOA_BEANS: "какао-бобы"
+  COD: "сырая треска"
+  COD_BUCKET: "треска въ ведрѣ"
+  COD_SPAWN_EGG: "яйцо призыва трески"
+  COMMAND_BLOCK_MINECART: "вагонетка съ ариѳмометромъ"
+  COMPASS: "компасъ"
+  COOKED_BEEF: "бифстексъ"
+  COOKED_CHICKEN: "жареная курица"
+  COOKED_COD: "жареная треска"
+  COOKED_MUTTON: "жареная баранина"
+  COOKED_PORKCHOP: "жареная свинина"
+  COOKED_RABBIT: "жареная крольчатина"
+  COOKED_SALMON: "жареный лосось"
+  COOKIE: "печенье"
+  COPPER_INGOT: "мѣдный слитокъ"
+  COW_SPAWN_EGG: "яйцо призыва коровы"
+  CREEPER_BANNER_PATTERN: "узоръ флага"
+  CREEPER_BANNER_PATTERN_DESC: "криперъ"
+  CREEPER_SPAWN_EGG: "яйцо призыва крипера"
+  CROSSBOW: "самострѣлъ"
+  CROSSBOW_PROJECTILE: "снарядъ:"
+  CYAN_DYE: "бирюзовый краситель"
+  DANGER_POTTERY_SHARD: "глиняный черепокъ «угроза»"
+  DANGER_POTTERY_SHERD: "глиняный черепокъ «угроза»"
+  DARK_OAK_BOAT: "лодка изъ тёмнаго дуба"
+  DARK_OAK_CHEST_BOAT: "грузовая лодка изъ тёмнаго дуба"
+  DEBUG_STICK: "палочка отладки"
+  DEBUG_STICK_EMPTY: "свойства объекта %s не заданы"
+  DEBUG_STICK_SELECT: "выбрано «%s» (%s)"
+  DEBUG_STICK_UPDATE: "«%s»: %s"
+  DIAMOND: "діамантъ"
+  DIAMOND_AXE: "діамантовый топоръ"
+  DIAMOND_BOOTS: "діамантовые ботинки"
+  DIAMOND_CHESTPLATE: "діамантовый нагрудникъ"
+  DIAMOND_HELMET: "діамантовый шлемъ"
+  DIAMOND_HOE: "діамантовая мотыга"
+  DIAMOND_HORSE_ARMOR: "діамантовая конская броня"
+  DIAMOND_LEGGINGS: "діамантовые поножи"
+  DIAMOND_PICKAXE: "діамантовая кирка"
+  DIAMOND_SHOVEL: "діамантовая лопата"
+  DIAMOND_SWORD: "діамантовый мечъ"
+  DISC_FRAGMENT_5: "осколокъ пластинки"
+  DISC_FRAGMENT_5_DESC: "пластинка — 5"
+  DOLPHIN_SPAWN_EGG: "яйцо призыва дельфина"
+  DONKEY_SPAWN_EGG: "яйцо призыва осла"
+  DRAGON_BREATH: "дыханіе змѣя"
+  DRIED_KELP: "сушёная ламинарія"
+  DROWNED_SPAWN_EGG: "яйцо призыва утопленника"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  ECHO_SHARD: "осколокъ эха"
+  EGG: "яйцо"
+  ELDER_GUARDIAN_SPAWN_EGG: "яйцо призыва старѣйшаго сторожа"
+  ELYTRA: "надкрылья"
+  EMERALD: "смарагдъ"
+  ENCHANTED_BOOK: "чародѣйская книга"
+  ENCHANTED_GOLDEN_APPLE: "молодильное яблоко"
+  END_CRYSTAL: "кристаллъ энда"
+  ENDER_DRAGON_SPAWN_EGG: "яйцо призыва эндеръ-змѣя"
+  ENDER_EYE: "око эндера"
+  ENDER_PEARL: "эндеръ-жемчугъ"
+  ENDERMAN_SPAWN_EGG: "яйцо призыва эндермана"
+  ENDERMITE_SPAWN_EGG: "яйцо призыва эндермита"
+  EVOKER_SPAWN_EGG: "яйцо призыва чародѣя"
+  EXPERIENCE_BOTTLE: "бутылочка мудрости"
+  EXPLORER_POTTERY_SHARD: "глиняный черепокъ «изслѣдователь»"
+  EXPLORER_POTTERY_SHERD: "глиняный черепокъ «изслѣдователь»"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  FEATHER: "перо"
+  FERMENTED_SPIDER_EYE: "засоленное паучье око"
+  FILLED_MAP: "карта"
+  FIRE_CHARGE: "огненный зарядъ"
+  FIREWORK_ROCKET: "фейерверкъ"
+  FIREWORK_ROCKET_FLIGHT: "длительность полёта:"
+  FIREWORK_STAR: "пиротехническая звѣзда"
+  FIREWORK_STAR_BLACK: "чёрный"
+  FIREWORK_STAR_BLUE: "лазурный"
+  FIREWORK_STAR_BROWN: "коричневый"
+  FIREWORK_STAR_CUSTOM_COLOR: "пользовательскій"
+  FIREWORK_STAR_CYAN: "бирюзовый"
+  FIREWORK_STAR_FADE_TO: "затуханіе въ"
+  FIREWORK_STAR_FLICKER: "мерцаніе"
+  FIREWORK_STAR_GRAY: "сѣрый"
+  FIREWORK_STAR_GREEN: "зелёный"
+  FIREWORK_STAR_LIGHT_BLUE: "голубой"
+  FIREWORK_STAR_LIGHT_GRAY: "свѣтлосѣрый"
+  FIREWORK_STAR_LIME: "яркозелёный"
+  FIREWORK_STAR_MAGENTA: "пурпурный"
+  FIREWORK_STAR_ORANGE: "оранжевый"
+  FIREWORK_STAR_PINK: "розовый"
+  FIREWORK_STAR_PURPLE: "фіолетовый"
+  FIREWORK_STAR_RED: "червонный"
+  FIREWORK_STAR_SHAPE: "неизвѣстная форма"
+  FIREWORK_STAR_SHAPE_BURST: "всплескъ"
+  FIREWORK_STAR_SHAPE_CREEPER: "криперообразный"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "большой шаръ"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "малый шаръ"
+  FIREWORK_STAR_SHAPE_STAR: "звѣздообразный"
+  FIREWORK_STAR_TRAIL: "слѣдъ"
+  FIREWORK_STAR_WHITE: "бѣлый"
+  FIREWORK_STAR_YELLOW: "жёлтый"
+  FISHING_ROD: "удочка"
+  FLINT: "кремень"
+  FLINT_AND_STEEL: "огниво"
+  FLOWER_BANNER_PATTERN: "узоръ флага"
+  FLOWER_BANNER_PATTERN_DESC: "цвѣтокъ"
+  FOX_SPAWN_EGG: "яйцо призыва лисицы"
+  FRIEND_POTTERY_SHARD: "глиняный черепокъ «другъ»"
+  FRIEND_POTTERY_SHERD: "глиняный черепокъ «другъ»"
+  FROG_SPAWN_EGG: "яйцо призыва лягушки"
+  FURNACE_MINECART: "самоходная вагонетка"
+  GHAST_SPAWN_EGG: "яйцо призыва гаста"
+  GHAST_TEAR: "слеза гаста"
+  GLASS_BOTTLE: "бутылочка"
+  GLISTERING_MELON_SLICE: "сверкающій ломтикъ арбуза"
+  GLOBE_BANNER_PATTERN: "узоръ флага"
+  GLOBE_BANNER_PATTERN_DESC: "глобусъ"
+  GLOW_BERRIES: "свѣтящіяся ягоды"
+  GLOW_INK_SAC: "сіяющій чернильный мѣшокъ"
+  GLOW_ITEM_FRAME: "сіяющая рамка"
+  GLOW_SQUID_SPAWN_EGG: "яйцо призыва сіяющаго осьминога"
+  GLOWSTONE_DUST: "свѣтокаменная пыль"
+  GOAT_HORN: "козій рогъ"
+  GOAT_SPAWN_EGG: "яйцо призыва козы"
+  GOLD_INGOT: "золотой слитокъ"
+  GOLD_NUGGET: "кусочекъ золота"
+  GOLDEN_APPLE: "золотое яблоко"
+  GOLDEN_AXE: "золотой топоръ"
+  GOLDEN_BOOTS: "золотые ботинки"
+  GOLDEN_CARROT: "золотая морковь"
+  GOLDEN_CHESTPLATE: "золотой нагрудникъ"
+  GOLDEN_HELMET: "золотой шлемъ"
+  GOLDEN_HOE: "золотая мотыга"
+  GOLDEN_HORSE_ARMOR: "золотая конская броня"
+  GOLDEN_LEGGINGS: "золотые поножи"
+  GOLDEN_PICKAXE: "золотая кирка"
+  GOLDEN_SHOVEL: "золотая лопата"
+  GOLDEN_SWORD: "золотой мечъ"
+  GRAY_DYE: "сѣрый краситель"
+  GREEN_DYE: "зелёный краситель"
+  GUARDIAN_SPAWN_EGG: "яйцо призыва сторожа"
+  GUNPOWDER: "порохъ"
+  HEART_OF_THE_SEA: "сердце моря"
+  HEART_POTTERY_SHARD: "глиняный черепокъ «сьрдьце»"
+  HEART_POTTERY_SHERD: "глиняный черепокъ «сьрдьце»"
+  HEARTBREAK_POTTERY_SHARD: "глиняный черепокъ «разбитое сердце»"
+  HEARTBREAK_POTTERY_SHERD: "глиняный черепокъ «разбитое сьрдьце»"
+  HOGLIN_SPAWN_EGG: "яйцо призыва хоглина"
+  HONEY_BOTTLE: "бутылочка мёда"
+  HONEYCOMB: "пчелиныя соты"
+  HOPPER_MINECART: "загрузочная вагонетка"
+  HORSE_SPAWN_EGG: "яйцо призыва лошади"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  HOWL_POTTERY_SHARD: "глиняный черепокъ «вой»"
+  HOWL_POTTERY_SHERD: "глиняный черепокъ «вой»"
+  HUSK_SPAWN_EGG: "яйцо призыва кадавра"
+  INK_SAC: "чернильный мѣшокъ"
+  IRON_AXE: "желѣзный топоръ"
+  IRON_BOOTS: "желѣзные ботинки"
+  IRON_CHESTPLATE: "желѣзный нагрудникъ"
+  IRON_GOLEM_SPAWN_EGG: "яйцо призыва желѣзнаго витязя"
+  IRON_HELMET: "желѣзный шлемъ"
+  IRON_HOE: "желѣзная мотыга"
+  IRON_HORSE_ARMOR: "желѣзная конская броня"
+  IRON_INGOT: "желѣзный слитокъ"
+  IRON_LEGGINGS: "желѣзные поножи"
+  IRON_NUGGET: "кусочекъ желѣза"
+  IRON_PICKAXE: "желѣзная кирка"
+  IRON_SHOVEL: "желѣзная лопата"
+  IRON_SWORD: "желѣзный мечъ"
+  ITEM_FRAME: "рамка"
+  JUNGLE_BOAT: "лодка изъ тропическаго дерева"
+  JUNGLE_CHEST_BOAT: "грузовая лодка изъ тропическаго дерева"
+  KNOWLEDGE_BOOK: "книга знаній"
+  LAPIS_LAZULI: "лазурикъ"
+  LAVA_BUCKET: "ведро лавы"
+  LEAD: "поводокъ"
+  LEATHER: "кожа"
+  LEATHER_BOOTS: "кожаные ботинки"
+  LEATHER_CHESTPLATE: "кожаная куртка"
+  LEATHER_HELMET: "кожаный шлемъ"
+  LEATHER_HORSE_ARMOR: "кожаная конская броня"
+  LEATHER_LEGGINGS: "кожаные штаны"
+  LIGHT_BLUE_DYE: "голубой краситель"
+  LIGHT_GRAY_DYE: "свѣтлосѣрый краситель"
+  LIME_DYE: "яркозелёный краситель"
+  LINGERING_POTION: "туманное снадобье"
+  LINGERING_POTION_EFFECT_AWKWARD: "мутное туманное снадобье"
+  LINGERING_POTION_EFFECT_EMPTY: "несоздаваемое туманное снадобье"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "туманное снадобье огнестойкости"
+  LINGERING_POTION_EFFECT_HARMING: "туманное снадобье вреда"
+  LINGERING_POTION_EFFECT_HEALING: "туманное снадобье исцѣленія"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "туманное снадобье незримости"
+  LINGERING_POTION_EFFECT_LEAPING: "туманное снадобье прыгучести"
+  LINGERING_POTION_EFFECT_LEVITATION: "туманное снадобье легковѣсности"
+  LINGERING_POTION_EFFECT_LUCK: "туманное снадобье везенія"
+  LINGERING_POTION_EFFECT_MUNDANE: "заурядное туманное снадобье"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "туманное снадобье ночного зрѣнія"
+  LINGERING_POTION_EFFECT_POISON: "туманное снадобье отравленія"
+  LINGERING_POTION_EFFECT_REGENERATION: "туманное снадобье возстановленія"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "туманное снадобье плавнаго паденія"
+  LINGERING_POTION_EFFECT_SLOWNESS: "туманное снадобье замедленія"
+  LINGERING_POTION_EFFECT_STRENGTH: "туманное снадобье силы"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "туманное снадобье рѣзвости"
+  LINGERING_POTION_EFFECT_THICK: "густое туманное снадобье"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "туманное снадобье черепашьей мощи"
+  LINGERING_POTION_EFFECT_WATER: "бутылочка съ водяной взвѣсью"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "туманное снадобье воднаго дыханія"
+  LINGERING_POTION_EFFECT_WEAKNESS: "туманное снадобье слабости"
+  LLAMA_SPAWN_EGG: "яйцо призыва ламы"
+  LODESTONE_COMPASS: "намагниченный компасъ"
+  MAGENTA_DYE: "пурпурный краситель"
+  MAGMA_CREAM: "сгустокъ магмы"
+  MAGMA_CUBE_SPAWN_EGG: "яйцо призыва магмоваго куба"
+  MANGROVE_BOAT: "мангровая лодка"
+  MANGROVE_CHEST_BOAT: "мангровая грузовая лодка"
+  MAP: "чистая карта"
+  MELON_SEEDS: "сѣмена арбуза"
+  MELON_SLICE: "ломтикъ арбуза"
+  MILK_BUCKET: "ведро молока"
+  MINECART: "вагонетка"
+  MINER_POTTERY_SHARD: "глиняный черепокъ «шахтёръ»"
+  MINER_POTTERY_SHERD: "глиняный черепокъ «шахтёръ»"
+  MOJANG_BANNER_PATTERN: "узоръ флага"
+  MOJANG_BANNER_PATTERN_DESC: "нѣчто"
+  MOOSHROOM_SPAWN_EGG: "яйцо призыва муухомора"
+  MOURNER_POTTERY_SHARD: "глиняный черепокъ «скорбь»"
+  MOURNER_POTTERY_SHERD: "глиняный черепокъ «скорбь»"
+  MULE_SPAWN_EGG: "яйцо призыва мула"
+  MUSHROOM_STEW: "тушёные грибы"
+  MUSIC_DISC_11: "пластинка"
+  MUSIC_DISC_11_DESC: "c418 — 11"
+  MUSIC_DISC_13: "пластинка"
+  MUSIC_DISC_13_DESC: "c418 — 13"
+  MUSIC_DISC_5: "пластинка"
+  MUSIC_DISC_5_DESC: "самуель обергъ — 5"
+  MUSIC_DISC_BLOCKS: "пластинка"
+  MUSIC_DISC_BLOCKS_DESC: "c418 — blocks"
+  MUSIC_DISC_CAT: "пластинка"
+  MUSIC_DISC_CAT_DESC: "c418 — cat"
+  MUSIC_DISC_CHIRP: "пластинка"
+  MUSIC_DISC_CHIRP_DESC: "c418 — chirp"
+  MUSIC_DISC_FAR: "пластинка"
+  MUSIC_DISC_FAR_DESC: "c418 — far"
+  MUSIC_DISC_MALL: "пластинка"
+  MUSIC_DISC_MALL_DESC: "c418 — mall"
+  MUSIC_DISC_MELLOHI: "пластинка"
+  MUSIC_DISC_MELLOHI_DESC: "c418 — mellohi"
+  MUSIC_DISC_OTHERSIDE: "пластинка"
+  MUSIC_DISC_OTHERSIDE_DESC: "лена рейнъ — otherside"
+  MUSIC_DISC_PIGSTEP: "пластинка"
+  MUSIC_DISC_PIGSTEP_DESC: "лена рейнъ — pіgstep"
+  MUSIC_DISC_RELIC: "пластинка"
+  MUSIC_DISC_RELIC_DESC: "ааронъ шерофъ — relic"
+  MUSIC_DISC_STAL: "пластинка"
+  MUSIC_DISC_STAL_DESC: "c418 — stal"
+  MUSIC_DISC_STRAD: "пластинка"
+  MUSIC_DISC_STRAD_DESC: "c418 — strad"
+  MUSIC_DISC_WAIT: "пластинка"
+  MUSIC_DISC_WAIT_DESC: "c418 — wait"
+  MUSIC_DISC_WARD: "пластинка"
+  MUSIC_DISC_WARD_DESC: "c418 — ward"
+  MUTTON: "сырая баранина"
+  NAME_TAG: "ярлыкъ"
+  NAUTILUS_SHELL: "раковина наутилуса"
+  NETHER_BRICK: "нѣдрскій кирпичъ"
+  NETHER_STAR: "звѣзда нѣдра"
+  NETHERITE_AXE: "нѣдритовый топоръ"
+  NETHERITE_BOOTS: "нѣдритовые ботинки"
+  NETHERITE_CHESTPLATE: "нѣдритовый нагрудникъ"
+  NETHERITE_HELMET: "нѣдритовый шлемъ"
+  NETHERITE_HOE: "нѣдритовая мотыга"
+  NETHERITE_INGOT: "нѣдритовый слитокъ"
+  NETHERITE_LEGGINGS: "нѣдритовые поножи"
+  NETHERITE_PICKAXE: "нѣдритовая кирка"
+  NETHERITE_SCRAP: "нѣдритовый ломъ"
+  NETHERITE_SHOVEL: "нѣдритовая лопата"
+  NETHERITE_SWORD: "нѣдритовый мечъ"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "кузнечный образецъ"
+  OAK_BOAT: "дубовая лодка"
+  OAK_CHEST_BOAT: "дубовая грузовая лодка"
+  OCELOT_SPAWN_EGG: "яйцо призыва оцелота"
+  ORANGE_DYE: "оранжевый краситель"
+  PAINTING: "картина"
+  PANDA_SPAWN_EGG: "яйцо призыва панды"
+  PAPER: "бумага"
+  PARROT_SPAWN_EGG: "яйцо призыва попугая"
+  PHANTOM_MEMBRANE: "мембрана фантома"
+  PHANTOM_SPAWN_EGG: "яйцо призыва фантома"
+  PIG_SPAWN_EGG: "яйцо призыва свиньи"
+  PIGLIN_BANNER_PATTERN: "узоръ флага"
+  PIGLIN_BANNER_PATTERN_DESC: "рыло"
+  PIGLIN_BRUTE_SPAWN_EGG: "яйцо призыва брутальнаго пиглина"
+  PIGLIN_SPAWN_EGG: "яйцо призыва пиглина"
+  PILLAGER_SPAWN_EGG: "яйцо призыва разбойника"
+  PINK_DYE: "розовый краситель"
+  PITCHER_POD: "стручокъ кувшинницы"
+  PLENTY_POTTERY_SHARD: "глиняный черепокъ «изобиліе»"
+  PLENTY_POTTERY_SHERD: "глиняный черепокъ «изобиліе»"
+  POISONOUS_POTATO: "ядовитый картофель"
+  POLAR_BEAR_SPAWN_EGG: "яйцо призыва бѣлаго медвѣдя"
+  POPPED_CHORUS_FRUIT: "прожаренный плодъ хоруса"
+  PORKCHOP: "сырая свинина"
+  POTATO: "картофель"
+  POTION: "снадобье"
+  POTION_EFFECT_AWKWARD: "мутное снадобье"
+  POTION_EFFECT_EMPTY: "несоздаваемое снадобье"
+  POTION_EFFECT_FIRE_RESISTANCE: "снадобье огнестойкости"
+  POTION_EFFECT_HARMING: "снадобье вреда"
+  POTION_EFFECT_HEALING: "снадобье исцѣленія"
+  POTION_EFFECT_INVISIBILITY: "снадобье незримости"
+  POTION_EFFECT_LEAPING: "снадобье прыгучести"
+  POTION_EFFECT_LEVITATION: "снадобье легковѣсности"
+  POTION_EFFECT_LUCK: "снадобье везенія"
+  POTION_EFFECT_MUNDANE: "заурядное снадобье"
+  POTION_EFFECT_NIGHT_VISION: "снадобье ночного зрѣнія"
+  POTION_EFFECT_POISON: "снадобье отравленія"
+  POTION_EFFECT_REGENERATION: "снадобье возстановленія"
+  POTION_EFFECT_SLOW_FALLING: "снадобье плавнаго паденія"
+  POTION_EFFECT_SLOWNESS: "снадобье замедленія"
+  POTION_EFFECT_STRENGTH: "снадобье силы"
+  POTION_EFFECT_SWIFTNESS: "снадобье рѣзвости"
+  POTION_EFFECT_THICK: "густое снадобье"
+  POTION_EFFECT_TURTLE_MASTER: "снадобье черепашьей мощи"
+  POTION_EFFECT_WATER: "бутылочка воды"
+  POTION_EFFECT_WATER_BREATHING: "снадобье воднаго дыханія"
+  POTION_EFFECT_WEAKNESS: "снадобье слабости"
+  POTTERY_SHARD_ARCHER: "глиняный черепокъ «стрѣлецъ»"
+  POTTERY_SHARD_ARMS_UP: "глиняный черепокъ «руки вверхъ»"
+  POTTERY_SHARD_PRIZE: "глиняный черепокъ «награда»"
+  POTTERY_SHARD_SKULL: "глиняный черепокъ «черепъ»"
+  POWDER_SNOW_BUCKET: "ведро съ рыхлымъ снѣгомъ"
+  PRISMARINE_CRYSTALS: "кристаллъ призмарина"
+  PRISMARINE_SHARD: "осколокъ призмарина"
+  PRIZE_POTTERY_SHARD: "глиняный черепокъ «награда»"
+  PRIZE_POTTERY_SHERD: "глиняный черепокъ «награда»"
+  PUFFERFISH: "иглобрюхъ"
+  PUFFERFISH_BUCKET: "иглобрюхъ въ ведрѣ"
+  PUFFERFISH_SPAWN_EGG: "яйцо призыва иглобрюха"
+  PUMPKIN_PIE: "тыквенный пирогъ"
+  PUMPKIN_SEEDS: "сѣмена тыквы"
+  PURPLE_DYE: "фіолетовый краситель"
+  QUARTZ: "нѣдръ-кварцъ"
+  RABBIT: "сырая крольчатина"
+  RABBIT_FOOT: "кроличья лапка"
+  RABBIT_HIDE: "кроличья шкурка"
+  RABBIT_SPAWN_EGG: "яйцо призыва кролика"
+  RABBIT_STEW: "тушёный кроликъ"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  RAVAGER_SPAWN_EGG: "яйцо призыва разорителя"
+  RAW_COPPER: "рудная мѣдь"
+  RAW_GOLD: "рудное золото"
+  RAW_IRON: "рудное желѣзо"
+  RECOVERY_COMPASS: "возвратный компасъ"
+  RED_DYE: "червонный краситель"
+  REDSTONE: "редстоуновая пыль"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  ROTTEN_FLESH: "прѣлая плоть"
+  SADDLE: "сѣдло"
+  SALMON: "сырой лосось"
+  SALMON_BUCKET: "лосось въ ведрѣ"
+  SALMON_SPAWN_EGG: "яйцо призыва лосося"
+  SCUTE: "щитокъ"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  SHEAF_POTTERY_SHARD: "глиняный черепокъ «пучокъ»"
+  SHEAF_POTTERY_SHERD: "глиняный черепокъ «пучокъ»"
+  SHEARS: "ножницы"
+  SHEEP_SPAWN_EGG: "яйцо призыва овцы"
+  SHELTER_POTTERY_SHARD: "глиняный черепокъ «убѣжище»"
+  SHELTER_POTTERY_SHERD: "глиняный черепокъ «убѣжище»"
+  SHIELD: "щитъ"
+  SHIELD_BLACK: "чёрный щитъ"
+  SHIELD_BLUE: "лазурный щитъ"
+  SHIELD_BROWN: "коричневый щитъ"
+  SHIELD_CYAN: "бирюзовый щитъ"
+  SHIELD_GRAY: "сѣрый щитъ"
+  SHIELD_GREEN: "зелёный щитъ"
+  SHIELD_LIGHT_BLUE: "голубой щитъ"
+  SHIELD_LIGHT_GRAY: "свѣтлосѣрый щитъ"
+  SHIELD_LIME: "яркозелёный щитъ"
+  SHIELD_MAGENTA: "пурпурный щитъ"
+  SHIELD_ORANGE: "оранжевый щитъ"
+  SHIELD_PINK: "розовый щитъ"
+  SHIELD_PURPLE: "фіолетовый щитъ"
+  SHIELD_RED: "червонный щитъ"
+  SHIELD_WHITE: "бѣлый щитъ"
+  SHIELD_YELLOW: "жёлтый щитъ"
+  SHULKER_SHELL: "панцырь шалкера"
+  SHULKER_SPAWN_EGG: "яйцо призыва шалкера"
+  SIGN: "табличка"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  SILVERFISH_SPAWN_EGG: "яйцо призыва чешуйницы"
+  SKELETON_HORSE_SPAWN_EGG: "яйцо призыва лошади-скелета"
+  SKELETON_SPAWN_EGG: "яйцо призыва скелета"
+  SKULL_BANNER_PATTERN: "узоръ флага"
+  SKULL_BANNER_PATTERN_DESC: "черепъ"
+  SKULL_POTTERY_SHARD: "глиняный черепокъ «черепъ»"
+  SKULL_POTTERY_SHERD: "глиняный черепокъ «черепъ»"
+  SLIME_BALL: "сгустокъ слизи"
+  SLIME_SPAWN_EGG: "яйцо призыва слизня"
+  SMITHING_TEMPLATE: "кузнечный образецъ"
+  SMITHING_TEMPLATE_APPLIES_TO: "примѣняется къ:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "помѣстите слитокъ или кристаллъ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "доспѣхамъ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "помѣстите элементъ брони"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "слитки и кристаллы"
+  SMITHING_TEMPLATE_INGREDIENTS: "матеріалы:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "помѣстите нѣдритовый слитокъ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "діамантовому снаряженію"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "помѣстите діамантовый доспѣхъ инструментъ или оружіе"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "нѣдритовый слитокъ"
+  SMITHING_TEMPLATE_UPGRADE: "улучшеніе: "
+  SNIFFER_SPAWN_EGG: "яйцо призыва нюхача"
+  SNORT_POTTERY_SHARD: "глиняный черепокъ «нюхачъ»"
+  SNORT_POTTERY_SHERD: "глиняный черепокъ «шмыгъ»"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  SNOW_GOLEM_SPAWN_EGG: "яйцо призыва снѣжной бабы"
+  SNOWBALL: "снѣжокъ"
+  SPECTRAL_ARROW: "стрѣла наблюденія"
+  SPIDER_EYE: "паучье око"
+  SPIDER_SPAWN_EGG: "яйцо призыва паука"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  SPLASH_POTION: "взрывное снадобье"
+  SPLASH_POTION_EFFECT_AWKWARD: "мутное взрывное снадобье"
+  SPLASH_POTION_EFFECT_EMPTY: "несоздаваемое взрывное снадобье"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "взрывное снадобье огнестойкости"
+  SPLASH_POTION_EFFECT_HARMING: "взрывное снадобье вреда"
+  SPLASH_POTION_EFFECT_HEALING: "взрывное снадобье исцѣленія"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "взрывное снадобье незримости"
+  SPLASH_POTION_EFFECT_LEAPING: "взрывное снадобье прыгучести"
+  SPLASH_POTION_EFFECT_LEVITATION: "взрывное снадобье легковѣсности"
+  SPLASH_POTION_EFFECT_LUCK: "взрывное снадобье везенія"
+  SPLASH_POTION_EFFECT_MUNDANE: "заурядное взрывное снадобье"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "взрывное снадобье ночного зрѣнія"
+  SPLASH_POTION_EFFECT_POISON: "взрывное снадобье отравленія"
+  SPLASH_POTION_EFFECT_REGENERATION: "взрывное снадобье возстановленія"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "взрывное снадобье плавнаго паденія"
+  SPLASH_POTION_EFFECT_SLOWNESS: "взрывное снадобье замедленія"
+  SPLASH_POTION_EFFECT_STRENGTH: "взрывное снадобье силы"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "взрывное снадобье рѣзвости"
+  SPLASH_POTION_EFFECT_THICK: "густое взрывное снадобье"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "взрывное снадобье черепашьей мощи"
+  SPLASH_POTION_EFFECT_WATER: "взрывная бутылочка воды"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "взрывное снадобье воднаго дыханія"
+  SPLASH_POTION_EFFECT_WEAKNESS: "взрывное снадобье слабости"
+  SPRUCE_BOAT: "еловая лодка"
+  SPRUCE_CHEST_BOAT: "еловая грузовая лодка"
+  SPYGLASS: "подзорная труба"
+  SQUID_SPAWN_EGG: "яйцо призыва осьминога"
+  STICK: "палка"
+  STONE_AXE: "каменный топоръ"
+  STONE_HOE: "каменная мотыга"
+  STONE_PICKAXE: "каменная кирка"
+  STONE_SHOVEL: "каменная лопата"
+  STONE_SWORD: "каменный мечъ"
+  STRAY_SPAWN_EGG: "яйцо призыва зимогора"
+  STRIDER_SPAWN_EGG: "яйцо призыва лавомѣрки"
+  STRING: "нить"
+  SUGAR: "сахаръ"
+  SUSPICIOUS_STEW: "загадочное рагу"
+  SWEET_BERRIES: "сладкія ягоды"
+  TADPOLE_BUCKET: "головастикъ въ ведрѣ"
+  TADPOLE_SPAWN_EGG: "яйцо призыва головастика"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  TIPPED_ARROW: "обработанная стрѣла"
+  TIPPED_ARROW_EFFECT_AWKWARD: "обработанная стрѣла"
+  TIPPED_ARROW_EFFECT_EMPTY: "обработанная несоздаваемымъ снадобьемъ стрѣла"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "стрѣла огнестойкости"
+  TIPPED_ARROW_EFFECT_HARMING: "стрѣла вреда"
+  TIPPED_ARROW_EFFECT_HEALING: "стрѣла исцѣленія"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "стрѣла незримости"
+  TIPPED_ARROW_EFFECT_LEAPING: "стрѣла прыгучести"
+  TIPPED_ARROW_EFFECT_LEVITATION: "стрѣла легковѣсности"
+  TIPPED_ARROW_EFFECT_LUCK: "стрѣла везенія"
+  TIPPED_ARROW_EFFECT_MUNDANE: "обработанная стрѣла"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "стрѣла ночного зрѣнія"
+  TIPPED_ARROW_EFFECT_POISON: "стрѣла отравленія"
+  TIPPED_ARROW_EFFECT_REGENERATION: "стрѣла возстановленія"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "стрѣла плавнаго паденія"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "стрѣла замедленія"
+  TIPPED_ARROW_EFFECT_STRENGTH: "стрѣла силы"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "стрѣла рѣзвости"
+  TIPPED_ARROW_EFFECT_THICK: "обработанная стрѣла"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "стрѣла черепашьей мощи"
+  TIPPED_ARROW_EFFECT_WATER: "взрывная стрѣла"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "стрѣла воднаго дыханія"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "стрѣла слабости"
+  TNT_MINECART: "вагонетка съ динамитомъ"
+  TORCHFLOWER_SEEDS: "сѣмена факелоцвѣта"
+  TOTEM_OF_UNDYING: "тотемъ безсмертія"
+  TRADER_LLAMA_SPAWN_EGG: "яйцо призыва ламы коробейника"
+  TRIAL_KEY: "ключъ испытанiй"
+  TRIDENT: "трезубецъ"
+  TROPICAL_FISH: "тропическая рыба"
+  TROPICAL_FISH_BUCKET: "тропическая рыба въ ведрѣ"
+  TROPICAL_FISH_SPAWN_EGG: "яйцо призыва тропической рыбы"
+  TURTLE_HELMET: "черепашій панцырь"
+  TURTLE_SPAWN_EGG: "яйцо призыва черепахи"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  VEX_SPAWN_EGG: "яйцо призыва вредины"
+  VILLAGER_SPAWN_EGG: "яйцо призыва крестьянина"
+  VINDICATOR_SPAWN_EGG: "яйцо призыва воздаятеля"
+  WANDERING_TRADER_SPAWN_EGG: "яйцо призыва коробейника"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  WARDEN_SPAWN_EGG: "яйцо призыва хранителя"
+  WARPED_FUNGUS_ON_A_STICK: "удочка съ искажённымъ грибомъ"
+  WATER_BUCKET: "ведро воды"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  WHEAT: "пшеница"
+  WHEAT_SEEDS: "сѣмена пшеницы"
+  WHITE_DYE: "бѣлый краситель"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "кузнечный образецъ"
+  WITCH_SPAWN_EGG: "яйцо призыва вѣдьмы"
+  WITHER_SKELETON_SPAWN_EGG: "яйцо призыва визеръ-скелета"
+  WITHER_SPAWN_EGG: "яйцо призыва визера"
+  WOLF_SPAWN_EGG: "яйцо призыва волка"
+  WOODEN_AXE: "деревянный топоръ"
+  WOODEN_HOE: "деревянная мотыга"
+  WOODEN_PICKAXE: "деревянная кирка"
+  WOODEN_SHOVEL: "деревянная лопата"
+  WOODEN_SWORD: "деревянный мечъ"
+  WRITABLE_BOOK: "книга и перо"
+  WRITTEN_BOOK: "завершённая книга"
+  YELLOW_DYE: "жёлтый краситель"
+  ZOGLIN_SPAWN_EGG: "яйцо призыва зоглина"
+  ZOMBIE_HORSE_SPAWN_EGG: "яйцо призыва лошади-мертвеца"
+  ZOMBIE_SPAWN_EGG: "яйцо призыва мертвеца"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "яйцо призыва крестьянина-мертвеца"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "яйцо призыва пиглина-мертвеца"
+  CHEST: "когда надѣто:"
+  FEET: "когда обуто:"
+  HEAD: "когда надѣто на голову:"
+  LEGS: "когда надѣто на ноги:"
+  MAINHAND: "когда въ ведущей рукѣ:"
+  OFFHAND: "когда во второстепенной рукѣ:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

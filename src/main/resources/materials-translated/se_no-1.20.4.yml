@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "acaciaboallu"
+  ACACIA_DOOR: "acaciauksa"
+  ACACIA_FENCE: "acaciaáidi"
+  ACACIA_FENCE_GATE: "acaciaverrát"
+  ACACIA_HANGING_SIGN: "heŋgejuvvon acaciagalba"
+  ACACIA_LEAVES: "acacialasttat"
+  ACACIA_LOG: "acaciabelko"
+  ACACIA_PLANKS: "acaciafiellut"
+  ACACIA_PRESSURE_PLATE: "acaciadeattopláhtta"
+  ACACIA_SAPLING: "acaciamuoraš"
+  ACACIA_SIGN: "acaciagalba"
+  ACACIA_SLAB: "acaciapláhtta"
+  ACACIA_STAIRS: "acaciatráhppá"
+  ACACIA_TRAPDOOR: "acacialuŋká"
+  ACACIA_WALL_HANGING_SIGN: "heŋgejuvvon acaciagalba seainnis"
+  ACACIA_WALL_SIGN: "heŋgojuvvon acaciagalba"
+  ACACIA_WOOD: "acaciamuorra"
+  ACTIVATOR_RAIL: "álggahahttin ruovdemáđđi"
+  AIR: "áibmu"
+  ALLIUM: "ruksesluovvar"
+  AMETHYST_BLOCK: "ametistablohkka"
+  AMETHYST_CLUSTER: "ametistačoaltu"
+  ANCIENT_DEBRIS: "dološ bázahusat"
+  ANDESITE: "ándasihtta"
+  ANDESITE_SLAB: "ándasihttapláhtta"
+  ANDESITE_STAIRS: "ándasihttatráhppá"
+  ANDESITE_WALL: "ándasihtta seaidni"
+  ANVIL: "stáđđi"
+  ATTACHED_MELON_STEM: "čatnasan meluvdna máddu"
+  ATTACHED_PUMPKIN_STEM: "čatnasan gurbbet máddu"
+  AZALEA: "asalea"
+  AZALEA_LEAVES: "asalealasttat"
+  AZURE_BLUET: "nuorsá"
+  BAMBOO: "bamboa"
+  BAMBOO_BLOCK: "bábmublohkka"
+  BAMBOO_BUTTON: "bámbuboallu"
+  BAMBOO_DOOR: "bámbuuksa"
+  BAMBOO_FENCE: "bámbuáidi"
+  BAMBOO_FENCE_GATE: "bámbuverrát"
+  BAMBOO_HANGING_SIGN: "heŋgejuvvon bámbugalba"
+  BAMBOO_MOSAIC: "bámbumosaihkka"
+  BAMBOO_MOSAIC_SLAB: "bámbumosaihkkabealli"
+  BAMBOO_MOSAIC_STAIRS: "bámbumosaihkkatráhppát"
+  BAMBOO_PLANKS: "bámbufiellut"
+  BAMBOO_PRESSURE_PLATE: "bámbudeaddopláhtta"
+  BAMBOO_SAPLING: "bambusšaddu"
+  BAMBOO_SIGN: "bámbugalba"
+  BAMBOO_SLAB: "bámbubealli"
+  BAMBOO_STAIRS: "bámbutráhppát"
+  BAMBOO_TRAPDOOR: "bámbuluŋká"
+  BAMBOO_WALL_HANGING_SIGN: "heŋgejuvvon bámbugalba seainnis"
+  BAMBOO_WALL_SIGN: "heŋgojuvvon bámbugalba"
+  BANNER_BASE_BLACK: "áibbas čáhppes vuolimus oassi"
+  BANNER_BASE_BLUE: "áibbas alit vuolimus oassi"
+  BANNER_BASE_BROWN: "áibbas ruškes vuolimus oassi"
+  BANNER_BASE_CYAN: "áibbas čuvgesalit vuolimus oassi"
+  BANNER_BASE_GRAY: "áibbas ránes vuolimus oassi"
+  BANNER_BASE_GREEN: "áibbas ruoná vuolimus oassi"
+  BANNER_BASE_LIGHT_BLUE: "áibbas čuvgesalit vuolimus oassi"
+  BANNER_BASE_LIGHT_GRAY: "áibbas čuvgesránes vuolimus oassi"
+  BANNER_BASE_LIME: "áibbas čugesruoná vuolimus oassi"
+  BANNER_BASE_MAGENTA: "áibbas čuvgessáhppes vuolimus oassi"
+  BANNER_BASE_ORANGE: "áibbas runta vuolimus oassi"
+  BANNER_BASE_PINK: "áibbas čuvgesrukses vuolimus oassi"
+  BANNER_BASE_PURPLE: "áibbas sáhppes vuolimus oassi"
+  BANNER_BASE_RED: "áibbas rukses vuolimus oassi"
+  BANNER_BASE_WHITE: "áibbas vilges vuolimus oassi"
+  BANNER_BASE_YELLOW: "áibbas fiskes vuolimus oassi"
+  BANNER_BORDER_BLACK: "čáhppes ravdasáhcu"
+  BANNER_BORDER_BLUE: "alit ravdasáhcu"
+  BANNER_BORDER_BROWN: "ruškes ravdasáhcu"
+  BANNER_BORDER_CYAN: "turkiisa ravdasáhcu"
+  BANNER_BORDER_GRAY: "ránes ravdasáhcu"
+  BANNER_BORDER_GREEN: "ruoná ravdasáhcu"
+  BANNER_BORDER_LIGHT_BLUE: "čuvgesalit ravdasáhcu"
+  BANNER_BORDER_LIGHT_GRAY: "čuvgesránes ravdasáhcu"
+  BANNER_BORDER_LIME: "čuvgesruoná ravdasáhcu"
+  BANNER_BORDER_MAGENTA: "čuvgessáhppes ravdasáhcu"
+  BANNER_BORDER_ORANGE: "runta ravdasáhcu"
+  BANNER_BORDER_PINK: "čuvgesrukses ravdasáhcu"
+  BANNER_BORDER_PURPLE: "sáhppes ravdasáhcu"
+  BANNER_BORDER_RED: "rukses ravdasáhcu"
+  BANNER_BORDER_WHITE: "vilges ravdasáhcu"
+  BANNER_BORDER_YELLOW: "fiskes ravdasáhcu"
+  BANNER_BRICKS_BLACK: "čáhppes muvraminsttar"
+  BANNER_BRICKS_BLUE: "alit muvraminsttar"
+  BANNER_BRICKS_BROWN: "ruškes muvraminsttar"
+  BANNER_BRICKS_CYAN: "turkiisa muvraminsttar"
+  BANNER_BRICKS_GRAY: "ránes muvraminsttar"
+  BANNER_BRICKS_GREEN: "ruoná muvraminsttar"
+  BANNER_BRICKS_LIGHT_BLUE: "čuvgesalit muvraminsttar"
+  BANNER_BRICKS_LIGHT_GRAY: "čuvgesránes muvraminsttar"
+  BANNER_BRICKS_LIME: "čuvgesruoná muvraminsttar"
+  BANNER_BRICKS_MAGENTA: "čuvgessáhppes muvraminsttar"
+  BANNER_BRICKS_ORANGE: "runta muvraminsttar"
+  BANNER_BRICKS_PINK: "čuvgesrukses muvraminsttar"
+  BANNER_BRICKS_PURPLE: "sáhppes muvraminsttar"
+  BANNER_BRICKS_RED: "rukses muvraminsttar"
+  BANNER_BRICKS_WHITE: "vilges muvraminsttar"
+  BANNER_BRICKS_YELLOW: "fiskes muvraminsttar"
+  BANNER_CIRCLE_BLACK: "čáhppes guovdogierdu"
+  BANNER_CIRCLE_BLUE: "alit guovdogierdu"
+  BANNER_CIRCLE_BROWN: "ruškes guovdogierdu"
+  BANNER_CIRCLE_CYAN: "turkiisa guovdogierdu"
+  BANNER_CIRCLE_GRAY: "ránes guovdogierdu"
+  BANNER_CIRCLE_GREEN: "ruoná guovdogierdu"
+  BANNER_CIRCLE_LIGHT_BLUE: "čuvgesalit guovdogierdu"
+  BANNER_CIRCLE_LIGHT_GRAY: "čuvgesránes guovdogierdu"
+  BANNER_CIRCLE_LIME: "čuvgesruoná guovdogierdu"
+  BANNER_CIRCLE_MAGENTA: "čuvgessáhppes guovdogierdu"
+  BANNER_CIRCLE_ORANGE: "runta guovdogierdu"
+  BANNER_CIRCLE_PINK: "čuvgesrukses guovdogierdu"
+  BANNER_CIRCLE_PURPLE: "sáhppes guovdogierdu"
+  BANNER_CIRCLE_RED: "rukses guovdogierdu"
+  BANNER_CIRCLE_WHITE: "vilges guovdogierdu"
+  BANNER_CIRCLE_YELLOW: "fiskes guovdogierdu"
+  BANNER_CREEPER_BLACK: "čáhppes creeperminsttar"
+  BANNER_CREEPER_BLUE: "alit creeperminsttar"
+  BANNER_CREEPER_BROWN: "ruškes creeperminsttar"
+  BANNER_CREEPER_CYAN: "turkiisa creeperminsttar"
+  BANNER_CREEPER_GRAY: "ránes creeperminsttar"
+  BANNER_CREEPER_GREEN: "ruoná creeperminsttar"
+  BANNER_CREEPER_LIGHT_BLUE: "čuvgesalit creeperminsttar"
+  BANNER_CREEPER_LIGHT_GRAY: "čuvgesránes creeperminsttar"
+  BANNER_CREEPER_LIME: "čuvgesruoná creeperminsttar"
+  BANNER_CREEPER_MAGENTA: "čuvgessáhppes creeperminsttar"
+  BANNER_CREEPER_ORANGE: "runta creeperminsttar"
+  BANNER_CREEPER_PINK: "čuvgesrukses creeperminsttar"
+  BANNER_CREEPER_PURPLE: "sáhppes creeperminsttar"
+  BANNER_CREEPER_RED: "rukses creeperminsttar"
+  BANNER_CREEPER_WHITE: "vilges creeperminsttar"
+  BANNER_CREEPER_YELLOW: "fiskes creeperminsttar"
+  BANNER_CROSS_BLACK: "čáhppes ruossa"
+  BANNER_CROSS_BLUE: "alit ruossa"
+  BANNER_CROSS_BROWN: "ruškes ruossa"
+  BANNER_CROSS_CYAN: "turkiisa rista"
+  BANNER_CROSS_GRAY: "ránes ruossa"
+  BANNER_CROSS_GREEN: "ruoná ruossa"
+  BANNER_CROSS_LIGHT_BLUE: "čuvgesalit ruossa"
+  BANNER_CROSS_LIGHT_GRAY: "čuovgesránes ruossa"
+  BANNER_CROSS_LIME: "čuvgesruoná ruossa"
+  BANNER_CROSS_MAGENTA: "čuvgessáhppes ruossa"
+  BANNER_CROSS_ORANGE: "runta ruossa"
+  BANNER_CROSS_PINK: "čuvgesrukses ruossa"
+  BANNER_CROSS_PURPLE: "sáhppes ruossa"
+  BANNER_CROSS_RED: "ruskes ruossa"
+  BANNER_CROSS_WHITE: "vilges ruossa"
+  BANNER_CROSS_YELLOW: "fiskes ruossa"
+  BANNER_CURLY_BORDER_BLACK: "čáhppes barvvasravda"
+  BANNER_CURLY_BORDER_BLUE: "alit barvvasravda"
+  BANNER_CURLY_BORDER_BROWN: "ruškes barvvasravda"
+  BANNER_CURLY_BORDER_CYAN: "turkiisa barvvasravda"
+  BANNER_CURLY_BORDER_GRAY: "ránes barvvasravda"
+  BANNER_CURLY_BORDER_GREEN: "ruoná barvvasravda"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "čuvgesalit barvvasravda"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "čuvgesránes barvvasravda"
+  BANNER_CURLY_BORDER_LIME: "čuvgesruoná barvvasravda"
+  BANNER_CURLY_BORDER_MAGENTA: "čuvgessáhppes barvvasravda"
+  BANNER_CURLY_BORDER_ORANGE: "runta barvvasravda"
+  BANNER_CURLY_BORDER_PINK: "čuvgesrukses barvvasravda"
+  BANNER_CURLY_BORDER_PURPLE: "sáhppes barvvasravda"
+  BANNER_CURLY_BORDER_RED: "rukses barvvasravda"
+  BANNER_CURLY_BORDER_WHITE: "vilges barvvasravda"
+  BANNER_CURLY_BORDER_YELLOW: "fiskes barvvasravda"
+  BANNER_DIAGONAL_LEFT_BLACK: "čáhppes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_BLUE: "alit bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_BROWN: "ruškes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_CYAN: "turkiisa bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_GRAY: "ránes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_GREEN: "ruoná bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "čuvgesalit bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "čuvgesránes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_LIME: "čuvgesruoná bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "čuvgessáhppes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_ORANGE: "runta bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_PINK: "čuvgesrukses bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_PURPLE: "sáhppes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_RED: "rukses bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_WHITE: "vilges bajit gurutbealečiehka"
+  BANNER_DIAGONAL_LEFT_YELLOW: "fiskes bajit gurutbealečiehka"
+  BANNER_DIAGONAL_RIGHT_BLACK: "čáhppes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_BLUE: "alit bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_BROWN: "ruškes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turkiisa bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_GRAY: "ránes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_GREEN: "ruoná bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "čuvgesalit bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "čuvgesránes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_LIME: "čuvgesruoná bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "čuvgessáhppes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "runta bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_PINK: "čuvgesrukses bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "sáhppes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_RED: "rukses bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_WHITE: "vilges bajit olgešbealečiehka"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "fiskes bajit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "čáhppes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "alit vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "ruškes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turkiisa vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "ránes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "ruoná vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "čuvgesalit vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "čuvgesránes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "čuvgesruoná vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "čuvgessáhppes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "runta vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "čuvgesrukses vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "sáhppes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_RED: "rukses vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "vilges vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "fiskes vuolit gurutbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "čáhppes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "alit vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "ruškes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turkiisa vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "ránes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "ruoná vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "čuvgesalit vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "čuvgesránes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "čuvgesruoná vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "čuvgessáhppes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "runta vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "čuvgesrukses vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "sáhppes vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "rukses vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "runta vuolit olgešbealečiehka"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "fiskes vuolit olgešbealečiehka"
+  BANNER_FLOWER_BLACK: "čáhppes lieđđeminsttar"
+  BANNER_FLOWER_BLUE: "alit lieđđeminsttar"
+  BANNER_FLOWER_BROWN: "ruškes lieđđeminsttar"
+  BANNER_FLOWER_CYAN: "turkiisa lieđđeminsttar"
+  BANNER_FLOWER_GRAY: "ránes lieđđeminsttar"
+  BANNER_FLOWER_GREEN: "ruoná lieđđeminsttar"
+  BANNER_FLOWER_LIGHT_BLUE: "čuvgesalit lieđđeminsttar"
+  BANNER_FLOWER_LIGHT_GRAY: "čuvgesránes lieđđeminsttar"
+  BANNER_FLOWER_LIME: "čuvgesruoná lieđđeminsttar"
+  BANNER_FLOWER_MAGENTA: "čuvgessáhppes lieđđeminsttar"
+  BANNER_FLOWER_ORANGE: "runta lieđđeminsttar"
+  BANNER_FLOWER_PINK: "čuvgesrukses lieđđeminsttar"
+  BANNER_FLOWER_PURPLE: "sáhppes lieđđeminsttar"
+  BANNER_FLOWER_RED: "rukses lieđđeminsttar"
+  BANNER_FLOWER_WHITE: "vilges lieđđeminsttar"
+  BANNER_FLOWER_YELLOW: "fiskes lieđđeminsttar"
+  BANNER_GLOBE_BLACK: "čáhppes máilmmespábba"
+  BANNER_GLOBE_BLUE: "alit máilmmespábba"
+  BANNER_GLOBE_BROWN: "ruškes máilmmespábba"
+  BANNER_GLOBE_CYAN: "turkiisa máilmmespábba"
+  BANNER_GLOBE_GRAY: "ránes máilmmespábba"
+  BANNER_GLOBE_GREEN: "ruoná máilmmespábba"
+  BANNER_GLOBE_LIGHT_BLUE: "čuvgesalit máilmmespábba"
+  BANNER_GLOBE_LIGHT_GRAY: "čuvgesránes máilmmespábba"
+  BANNER_GLOBE_LIME: "čuvgesruoná máilmmespábba"
+  BANNER_GLOBE_MAGENTA: "čuvgessáhppes máilmmespábba"
+  BANNER_GLOBE_ORANGE: "runta máilmmespábba"
+  BANNER_GLOBE_PINK: "čuvgesrukses máilmmespábba"
+  BANNER_GLOBE_PURPLE: "sáhppes máilmmespábba"
+  BANNER_GLOBE_RED: "rukses máilmmespábba"
+  BANNER_GLOBE_WHITE: "vilges máilmmespábba"
+  BANNER_GLOBE_YELLOW: "fiskes máilmmespábba"
+  BANNER_GRADIENT_BLACK: "čáhppes bajitguovsomolsun"
+  BANNER_GRADIENT_BLUE: "alit bajitguovsomolsun"
+  BANNER_GRADIENT_BROWN: "ruškes bajitguovsomolsun"
+  BANNER_GRADIENT_CYAN: "turkiisa bajitguovsomolsun"
+  BANNER_GRADIENT_GRAY: "ránes bajitguovsomolsun"
+  BANNER_GRADIENT_GREEN: "ruoná bajitguovsomolsun"
+  BANNER_GRADIENT_LIGHT_BLUE: "čuvgesalit bajitguovsomolsun"
+  BANNER_GRADIENT_LIGHT_GRAY: "čuvgesránes bajitguovsomolsun"
+  BANNER_GRADIENT_LIME: "čuvgesruoná bajitguovsomolsun"
+  BANNER_GRADIENT_MAGENTA: "čuvgessáhppes bajitguovsomolsun"
+  BANNER_GRADIENT_ORANGE: "runta bajitguovsomolsun"
+  BANNER_GRADIENT_PINK: "čuvgesrukses bajitguovsomolsun"
+  BANNER_GRADIENT_PURPLE: "sáhppes bajitguovsomolsun"
+  BANNER_GRADIENT_RED: "rukses bajitguovsomolsun"
+  BANNER_GRADIENT_WHITE: "runta bajitguovsomolsun"
+  BANNER_GRADIENT_YELLOW: "fiskes bajitguovsomolsun"
+  BANNER_GRADIENT_UP_BLACK: "čáhppes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_BLUE: "alit vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_BROWN: "ruškes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_CYAN: "turkiisa vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_GRAY: "ránes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_GREEN: "ruoná vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "čuvgesalit vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "čuvgesránes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_LIME: "čuvgesruoná vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_MAGENTA: "čuvgessáhppes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_ORANGE: "runta vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_PINK: "čuvgesrukses vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_PURPLE: "sáhppes vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_RED: "rukses vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_WHITE: "vilges vuođđoguovsomolsun"
+  BANNER_GRADIENT_UP_YELLOW: "fiskes vuođđoguovsomolsun"
+  BANNER_HALF_HORIZONTAL_BLACK: "čáhppes badjebealli"
+  BANNER_HALF_HORIZONTAL_BLUE: "alit badjebealli"
+  BANNER_HALF_HORIZONTAL_BROWN: "ruškes badjebealli"
+  BANNER_HALF_HORIZONTAL_CYAN: "turkiisa badjebealli"
+  BANNER_HALF_HORIZONTAL_GRAY: "ránes badjebealli"
+  BANNER_HALF_HORIZONTAL_GREEN: "ruoná badjebealli"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "čuvgesalit badjebealli"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "čuvgesránes badjebealli"
+  BANNER_HALF_HORIZONTAL_LIME: "čuvgesruoná badjebealli"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "čuvgessáhppes badjebealli"
+  BANNER_HALF_HORIZONTAL_ORANGE: "runta badjebealli"
+  BANNER_HALF_HORIZONTAL_PINK: "čuvgesrukses badjebealli"
+  BANNER_HALF_HORIZONTAL_PURPLE: "sáhppes badjebealli"
+  BANNER_HALF_HORIZONTAL_RED: "rukses badjebealli"
+  BANNER_HALF_HORIZONTAL_WHITE: "vilges badjebealli"
+  BANNER_HALF_HORIZONTAL_YELLOW: "fiskes badjebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "čáhppes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "alit vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "ruškes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turkiisa vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "ránes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "ruoná vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "čuvgesalit vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "čuvgesránes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "čuvgesruoná vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "čuvgessáhppes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "runta vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "čuvgesrukses vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "sáhppes vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "rukses vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "vilges vuollebealli"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "fiskes vuollebealli"
+  BANNER_HALF_VERTICAL_BLACK: "čáhppes gurutbealli"
+  BANNER_HALF_VERTICAL_BLUE: "alit gurutbealli"
+  BANNER_HALF_VERTICAL_BROWN: "ruškes gurutbealli"
+  BANNER_HALF_VERTICAL_CYAN: "turkiisa gurutbealli"
+  BANNER_HALF_VERTICAL_GRAY: "ránes gurutbealli"
+  BANNER_HALF_VERTICAL_GREEN: "ruoná gurutbealli"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "čuvgesalit gurutbealli"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "čuvgesránes gurutbealli"
+  BANNER_HALF_VERTICAL_LIME: "čuvgesruoná gurutbealli"
+  BANNER_HALF_VERTICAL_MAGENTA: "čuvgessáhppes gurutbealli"
+  BANNER_HALF_VERTICAL_ORANGE: "runta gurutbealli"
+  BANNER_HALF_VERTICAL_PINK: "čuvgesrukses gurutbealli"
+  BANNER_HALF_VERTICAL_PURPLE: "sáhppes gurutbealli"
+  BANNER_HALF_VERTICAL_RED: "rukses gurutbealli"
+  BANNER_HALF_VERTICAL_WHITE: "vilges gurutbealli"
+  BANNER_HALF_VERTICAL_YELLOW: "fiskes gurutbealli"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "čáhppes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "alit olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "ruškes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turkiisa olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "ránes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "ruoná olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "čuvgesalit olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "čuvgesránes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "čuvgesruoná olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "čuvgessáhppes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "runta olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "čuvgesrukses olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "sáhppes olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "rukses olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "vilges olgešbealli"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "fiskes olgešbealli"
+  BANNER_MOJANG_BLACK: "čáhppes mojangminsttar"
+  BANNER_MOJANG_BLUE: "alit mojangminsttar"
+  BANNER_MOJANG_BROWN: "ruškes mojangminsttar"
+  BANNER_MOJANG_CYAN: "turkiisa mojangminsttar"
+  BANNER_MOJANG_GRAY: "ránes mojangminsttar"
+  BANNER_MOJANG_GREEN: "ruoná mojangminsttar"
+  BANNER_MOJANG_LIGHT_BLUE: "čuvgesalit mojangminsttar"
+  BANNER_MOJANG_LIGHT_GRAY: "čuvgesránes mojangminsttar"
+  BANNER_MOJANG_LIME: "čuvgesruoná mojangminsttar"
+  BANNER_MOJANG_MAGENTA: "čuvgessáhppes mojangminsttar"
+  BANNER_MOJANG_ORANGE: "runta mojangminsttar"
+  BANNER_MOJANG_PINK: "čuvgesrukses mojangminsttar"
+  BANNER_MOJANG_PURPLE: "sáhppes mojangminsttar"
+  BANNER_MOJANG_RED: "rukses mojangminsttar"
+  BANNER_MOJANG_WHITE: "vilges mojangminsttar"
+  BANNER_MOJANG_YELLOW: "fiskes mojangminsttar"
+  BANNER_PIGLIN_BLACK: "čáhppes njunni"
+  BANNER_PIGLIN_BLUE: "alit njunni"
+  BANNER_PIGLIN_BROWN: "ruškes njunni"
+  BANNER_PIGLIN_CYAN: "čuvgesalit njunni"
+  BANNER_PIGLIN_GRAY: "ránes njunni"
+  BANNER_PIGLIN_GREEN: "ruoná njunni"
+  BANNER_PIGLIN_LIGHT_BLUE: "čuvgesalit njunni"
+  BANNER_PIGLIN_LIGHT_GRAY: "čuvgesránes njunni"
+  BANNER_PIGLIN_LIME: "čuvgesruoná njunni"
+  BANNER_PIGLIN_MAGENTA: "čuvgessáhppes njunni"
+  BANNER_PIGLIN_ORANGE: "runta njunni"
+  BANNER_PIGLIN_PINK: "čuvgesrukses njunni"
+  BANNER_PIGLIN_PURPLE: "sáhppes njunni"
+  BANNER_PIGLIN_RED: "rukses njunni"
+  BANNER_PIGLIN_WHITE: "vilges njunni"
+  BANNER_PIGLIN_YELLOW: "fiskes njunni"
+  BANNER_RHOMBUS_BLACK: "čáhppes dikkel"
+  BANNER_RHOMBUS_BLUE: "alit dikkel"
+  BANNER_RHOMBUS_BROWN: "ruškes dikkel"
+  BANNER_RHOMBUS_CYAN: "turkiisa dikkel"
+  BANNER_RHOMBUS_GRAY: "ránes dikkel"
+  BANNER_RHOMBUS_GREEN: "ruoná dikkel"
+  BANNER_RHOMBUS_LIGHT_BLUE: "čuvgesalit dikkel"
+  BANNER_RHOMBUS_LIGHT_GRAY: "čuvgesránes dikkel"
+  BANNER_RHOMBUS_LIME: "čuvgesruoná dikkel"
+  BANNER_RHOMBUS_MAGENTA: "čuvgessáhppes dikkel"
+  BANNER_RHOMBUS_ORANGE: "runta dikkel"
+  BANNER_RHOMBUS_PINK: "čuvgesrukses dikkel"
+  BANNER_RHOMBUS_PURPLE: "sáhppes dikkel"
+  BANNER_RHOMBUS_RED: "rukses dikkel"
+  BANNER_RHOMBUS_WHITE: "vilges dikkel"
+  BANNER_RHOMBUS_YELLOW: "fiskes dikkel"
+  BANNER_SKULL_BLACK: "čáhppes oaiveskálžominsttar"
+  BANNER_SKULL_BLUE: "alit oaiveskálžominsttar"
+  BANNER_SKULL_BROWN: "ruškes oaiveskálžominsttar"
+  BANNER_SKULL_CYAN: "turkiisa oaiveskálžominsttar"
+  BANNER_SKULL_GRAY: "ránes oaiveskálžominsttar"
+  BANNER_SKULL_GREEN: "ruoná oaiveskálžominsttar"
+  BANNER_SKULL_LIGHT_BLUE: "čuvgesalit oaiveskálžominsttar"
+  BANNER_SKULL_LIGHT_GRAY: "čuvgesránes oaiveskálžominsttar"
+  BANNER_SKULL_LIME: "čuvgesruoná oaiveskálžominsttar"
+  BANNER_SKULL_MAGENTA: "čuvgessáhppes oaiveskálžominsttar"
+  BANNER_SKULL_ORANGE: "runta oaiveskálžominsttar"
+  BANNER_SKULL_PINK: "čuvgesrukses oaiveskálžominsttar"
+  BANNER_SKULL_PURPLE: "sáhppes oaiveskálžominsttar"
+  BANNER_SKULL_RED: "rukses oaiveskálžominsttar"
+  BANNER_SKULL_WHITE: "vilges oaiveskálžominsttar"
+  BANNER_SKULL_YELLOW: "fiskes oaiveskálžominsttar"
+  BANNER_SMALL_STRIPES_BLACK: "čáhppes ráidá"
+  BANNER_SMALL_STRIPES_BLUE: "alit ráidá"
+  BANNER_SMALL_STRIPES_BROWN: "ruškat \nráidá"
+  BANNER_SMALL_STRIPES_CYAN: "turkiisa ráida"
+  BANNER_SMALL_STRIPES_GRAY: "ránis ráidá"
+  BANNER_SMALL_STRIPES_GREEN: "ruoná ráidá"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "čuvgesalit ráida"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "čuovgesránes ráida"
+  BANNER_SMALL_STRIPES_LIME: "čuvgesruoná ráida"
+  BANNER_SMALL_STRIPES_MAGENTA: "čuvgessáhppes ráida"
+  BANNER_SMALL_STRIPES_ORANGE: "oránša ráidá"
+  BANNER_SMALL_STRIPES_PINK: "guvgeruoksat ráidá"
+  BANNER_SMALL_STRIPES_PURPLE: "sáhppat ráidá"
+  BANNER_SMALL_STRIPES_RED: "ruoksat ráidá"
+  BANNER_SMALL_STRIPES_WHITE: "vielgat ráidá"
+  BANNER_SMALL_STRIPES_YELLOW: "fiskat ráidá"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "čáhppes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "alit gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "ruškes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turkiisa gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "ránes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "ruoná gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "čuvgesalit gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "čuvgesránes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "čuvgesruoná gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "čuvgessáhppes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "runta gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "čuvgesrukses gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "sáhppes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "rukses gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "vilges gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "fiskes gurutbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "čáhppes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "alit olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "ruškes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turkiisa olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "ránes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "ruoná olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "čuvgesalit olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "čuvgesránes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "čuvgesruoná olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "čuvgessáhppes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "runta olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "čuvgesrukses olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "sáhppes olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "rukses olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "vilges olgešbeale vuollegeahči"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "fiskes olgešbeale vuollegeahči"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "čáhppes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "alit gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "ruškes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turkiisa gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "ránes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "ruoná gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "čuvgesalit gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "čuvgesránes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_LIME: "čuvgesruoná gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "čuvgessáhppes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "runta gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_PINK: "čuvgesrukses gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "sáhppes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_RED: "rukses gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "vilges gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "fiskes gurutbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "čáhppes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "alit olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "ruškes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turkiisa olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "ránes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "ruoná olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "čuvgesalit olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "čuvgesránes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "čuvgesruoná olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "čuvgessáhppes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "runta olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "čuvgesrukses olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "sáhppes olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_RED: "rukses olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "vilges olgešbeale badjegeahči"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "fiskes olgešbeale badjegeahči"
+  BANNER_STRAIGHT_CROSS_BLACK: "čáhppes ruossa"
+  BANNER_STRAIGHT_CROSS_BLUE: "alit ruossa"
+  BANNER_STRAIGHT_CROSS_BROWN: "ruškes ruossa"
+  BANNER_STRAIGHT_CROSS_CYAN: "turkiisa ruossa"
+  BANNER_STRAIGHT_CROSS_GRAY: "ránes ruossa"
+  BANNER_STRAIGHT_CROSS_GREEN: "ruoná ruossa"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "čuvgesalit ruossa"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "čuvgesránes ruossa"
+  BANNER_STRAIGHT_CROSS_LIME: "čuvgesruoná ruossa"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "čuvgessáhppes ruossa"
+  BANNER_STRAIGHT_CROSS_ORANGE: "runta ruossa"
+  BANNER_STRAIGHT_CROSS_PINK: "čuvgesrukses ruossa"
+  BANNER_STRAIGHT_CROSS_PURPLE: "sáhppes ruossa"
+  BANNER_STRAIGHT_CROSS_RED: "rukses ruossa"
+  BANNER_STRAIGHT_CROSS_WHITE: "vilges ruossa"
+  BANNER_STRAIGHT_CROSS_YELLOW: "fiskes ruossa"
+  BANNER_STRIPE_BOTTOM_BLACK: "čáhppes vuođđu"
+  BANNER_STRIPE_BOTTOM_BLUE: "alit vuođđu"
+  BANNER_STRIPE_BOTTOM_BROWN: "ruškes vuođđu"
+  BANNER_STRIPE_BOTTOM_CYAN: "turkiisa vuođđu"
+  BANNER_STRIPE_BOTTOM_GRAY: "ránes vuođđu"
+  BANNER_STRIPE_BOTTOM_GREEN: "ruoná vuođđu"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "čuvgesalit vuođđu"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "čuovgesránes vuođđu"
+  BANNER_STRIPE_BOTTOM_LIME: "čuvgesruoná vuođđu"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "čuvgessáhppes vuođđu"
+  BANNER_STRIPE_BOTTOM_ORANGE: "runta vuođđu"
+  BANNER_STRIPE_BOTTOM_PINK: "guvgesruokses vuođđu"
+  BANNER_STRIPE_BOTTOM_PURPLE: "sáhppes vuođđu"
+  BANNER_STRIPE_BOTTOM_RED: "rukses vuođđu"
+  BANNER_STRIPE_BOTTOM_WHITE: "vilges vuođđu"
+  BANNER_STRIPE_BOTTOM_YELLOW: "fiskes vuođđu"
+  BANNER_STRIPE_CENTER_BLACK: "čáhppes guovdosárggis"
+  BANNER_STRIPE_CENTER_BLUE: "alit guovdosárggis"
+  BANNER_STRIPE_CENTER_BROWN: "ruškes guovdosárggis"
+  BANNER_STRIPE_CENTER_CYAN: "turkiisa guovdosárggis"
+  BANNER_STRIPE_CENTER_GRAY: "ránes guovdosárggis"
+  BANNER_STRIPE_CENTER_GREEN: "ruoná guovdosárggis"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "čuvgesalit guovdosárggis"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "čuovgesránes guovdosárggis"
+  BANNER_STRIPE_CENTER_LIME: "čuvgesruoná guovdosárggis"
+  BANNER_STRIPE_CENTER_MAGENTA: "čuvgessáhppes guovdosárggis"
+  BANNER_STRIPE_CENTER_ORANGE: "runta guovdosárggis"
+  BANNER_STRIPE_CENTER_PINK: "guvgesruokses guovdosárggis"
+  BANNER_STRIPE_CENTER_PURPLE: "sáhppes guovdosárggis"
+  BANNER_STRIPE_CENTER_RED: "rukses guovdosárggis"
+  BANNER_STRIPE_CENTER_WHITE: "vilges guovdosárggis"
+  BANNER_STRIPE_CENTER_YELLOW: "fiskes guovdosárggis"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "čáhppes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "alit vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "ruškes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turkiisa vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "ránes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "ruoná vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "čuvgesalit vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "čuvgesránes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_LIME: "čuvgesruoná vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "čuvgessáhppes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "runta vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_PINK: "čuvgesrukses vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "sáhppes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_RED: "rukses vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "vilges vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "fiskes vinjusárggis gurutbeallai"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "čáhppes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "alit vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "ruškes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turkiisa vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "ránes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "ruoná vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "čuvgesalit vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "čuvgesránes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "čuvgesruoná vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "čuvgessáhppes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "runta vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "čuvgesrukses vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "sáhppes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rukses vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "vilges vinjusárggis olgešbeallai"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "fiskes vinjusárggis olgešbeallai"
+  BANNER_STRIPE_LEFT_BLACK: "čáhppes gurutsárggis"
+  BANNER_STRIPE_LEFT_BLUE: "alit gurutsárggis"
+  BANNER_STRIPE_LEFT_BROWN: "ruškes gurutsárggis"
+  BANNER_STRIPE_LEFT_CYAN: "turkiisa gurutsárggis"
+  BANNER_STRIPE_LEFT_GRAY: "ránes gurutsárggis"
+  BANNER_STRIPE_LEFT_GREEN: "ruoná gurutsárggis"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "čuvgesalit gurutsárggis"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "čuvgesránes gurutsárggis"
+  BANNER_STRIPE_LEFT_LIME: "čuvgesruoná gurutsárggis"
+  BANNER_STRIPE_LEFT_MAGENTA: "čuvgessáhppes gurutsárggis"
+  BANNER_STRIPE_LEFT_ORANGE: "runta gurutsárggis"
+  BANNER_STRIPE_LEFT_PINK: "čuvgesrukses gurutsárggis"
+  BANNER_STRIPE_LEFT_PURPLE: "sáhppes gurutsárggis"
+  BANNER_STRIPE_LEFT_RED: "rukses gurutsárggis"
+  BANNER_STRIPE_LEFT_WHITE: "vilges gurutsárggis"
+  BANNER_STRIPE_LEFT_YELLOW: "fiskes gurutsárggis"
+  BANNER_STRIPE_MIDDLE_BLACK: "čáhppes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_BLUE: "alit veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_BROWN: "ruškes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_CYAN: "turkiisa veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_GRAY: "ránes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_GREEN: "ruoná veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "čuvgesalit veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "čuovgesránes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_LIME: "čuvgesruoná veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "čuvgessáhppes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_ORANGE: "runta veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_PINK: "čuvgesrukses veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_PURPLE: "sáhppes veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_RED: "rukses veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_WHITE: "vilges veallut guovdosárggis"
+  BANNER_STRIPE_MIDDLE_YELLOW: "fiskes veallut guovdosárggis"
+  BANNER_STRIPE_RIGHT_BLACK: "čáhppes olgešsárggis"
+  BANNER_STRIPE_RIGHT_BLUE: "alit olgešsárggis"
+  BANNER_STRIPE_RIGHT_BROWN: "ruškes olgešsárggis"
+  BANNER_STRIPE_RIGHT_CYAN: "turkiisa olgešsárggis"
+  BANNER_STRIPE_RIGHT_GRAY: "ránes olgešsárggis"
+  BANNER_STRIPE_RIGHT_GREEN: "ruoná olgešsárggis"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "čuvgesalit olgešsárggis"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "čuvgesránes olgešsárggis"
+  BANNER_STRIPE_RIGHT_LIME: "čuvgesruoná olgešsárggis"
+  BANNER_STRIPE_RIGHT_MAGENTA: "čuvgessáhppes olgešsárggis"
+  BANNER_STRIPE_RIGHT_ORANGE: "runta olgešsárggis"
+  BANNER_STRIPE_RIGHT_PINK: "čuvgesruskes olgešsárggis"
+  BANNER_STRIPE_RIGHT_PURPLE: "sáhppes olgešsárggis"
+  BANNER_STRIPE_RIGHT_RED: "rukses olgešsárggis"
+  BANNER_STRIPE_RIGHT_WHITE: "vilges olgešsárggis"
+  BANNER_STRIPE_RIGHT_YELLOW: "fiskes olgešsárggis"
+  BANNER_STRIPE_TOP_BLACK: "čáhppes giera"
+  BANNER_STRIPE_TOP_BLUE: "alit giera"
+  BANNER_STRIPE_TOP_BROWN: "ruškes giera"
+  BANNER_STRIPE_TOP_CYAN: "turkiisa giera"
+  BANNER_STRIPE_TOP_GRAY: "ránes giera"
+  BANNER_STRIPE_TOP_GREEN: "ruoná giera"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "čuvgesalit giera"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "čuvgesránes giera"
+  BANNER_STRIPE_TOP_LIME: "čuvgesruoná giera"
+  BANNER_STRIPE_TOP_MAGENTA: "čuvgessáhppes giera"
+  BANNER_STRIPE_TOP_ORANGE: "runta giera"
+  BANNER_STRIPE_TOP_PINK: "čuvgesrukses giera"
+  BANNER_STRIPE_TOP_PURPLE: "sáhppes giera"
+  BANNER_STRIPE_TOP_RED: "rukses giera"
+  BANNER_STRIPE_TOP_WHITE: "vilges giera"
+  BANNER_STRIPE_TOP_YELLOW: "fiskes giera"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "čáhppes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "alit vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "ruškes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turkiisa vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "ránes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "ruoná vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "čuvgesalit vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "čuvgesránes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_LIME: "čuvgesruoná vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "čuvgessáhppes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "runta vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_PINK: "fiskes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "sáhppes vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_RED: "rukses vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "vilges vuollegolmmačiegat"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "fiskes vuollegolmmačiegat"
+  BANNER_TRIANGLE_TOP_BLACK: "čáhppes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_BLUE: "alit badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_BROWN: "ruškes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_CYAN: "turkiisa badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_GRAY: "ránes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_GREEN: "ruoná badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "čuvgesalit badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "čuvgesránes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_LIME: "čuvgesruoná badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_MAGENTA: "čuvgessáhppes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_ORANGE: "runta badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_PINK: "čuvgesrukses badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_PURPLE: "sáhppes badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_RED: "rukses badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_WHITE: "vilges badjegolmmačiegat"
+  BANNER_TRIANGLE_TOP_YELLOW: "fiskes badjegolmmačiegat"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "čáhppes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "alit vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "ruškes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turkiisa vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "ránes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "ruoná vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "čuvgesalit vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "čuvgesránes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_LIME: "čuvgesruoná vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "čuvgessáhppes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "runta vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_PINK: "čuvgesrukses vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "sáhppes vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_RED: "rukses vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "vilges vuollegolmmabánát"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "fiskes vuollegolmmabánát"
+  BANNER_TRIANGLES_TOP_BLACK: "čáhppes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_BLUE: "alit badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_BROWN: "ruškes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_CYAN: "turkiisa badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_GRAY: "ránes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_GREEN: "ruoná badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "čuvgesalit badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "čuvgesránes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_LIME: "čuvgesruoná badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_MAGENTA: "čuvgessáhppes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_ORANGE: "runta badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_PINK: "čuvgesrukses badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_PURPLE: "sáhppes badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_RED: "rukses badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_WHITE: "vilges badjegolmmabánát"
+  BANNER_TRIANGLES_TOP_YELLOW: "fiskes badjegolmmabánát"
+  BARREL: "fárppal"
+  BARRIER: "caggi"
+  BASALT: "basaltta"
+  BEACON: "várdočuovga"
+  BEACON_PRIMARY: "primára fápmu"
+  BEACON_SECONDARY: "sekundára fápmu"
+  BED_NO_SLEEP: "sáhtát dušše oađđit ihkku dahje garra dálkkis"
+  BED_NOT_SAFE: "don it sahte nohkkat dál; leat návddit lahka"
+  BED_OBSTRUCTED: "dán seaŋgii ii sáhte velledit"
+  BED_OCCUPIED: "dát seanga lea váldon"
+  BED_TOO_FAR_AWAY: "don it sáhte nohkkat dál; seanga lea menddo guhkkin eret"
+  BEDROCK: "báktevuođđu"
+  BEE_NEST: "uvlubeassi"
+  BEEHIVE: "uvluviessu"
+  BEETROOTS: "ruksesruohttasat"
+  BELL: "biellu"
+  BIG_DRIPLEAF: "stuora goaikolasta"
+  BIG_DRIPLEAF_STEM: "stuora goaikolasta mátta"
+  BIRCH_BUTTON: "soahkeboallu"
+  BIRCH_DOOR: "soahkeuksa"
+  BIRCH_FENCE: "soahkeáidi"
+  BIRCH_FENCE_GATE: "soahkeverrát"
+  BIRCH_HANGING_SIGN: "heŋgejuvvon soahkegalba"
+  BIRCH_LEAVES: "soahkelasttat"
+  BIRCH_LOG: "soahkebelko"
+  BIRCH_PLANKS: "soahkefiellut"
+  BIRCH_PRESSURE_PLATE: "soahkedeattopláhtta"
+  BIRCH_SAPLING: "soahkemuoraš"
+  BIRCH_SIGN: "soahkegalba"
+  BIRCH_SLAB: "soahkepláhtta"
+  BIRCH_STAIRS: "soahketráhppá"
+  BIRCH_TRAPDOOR: "soahkeluŋká"
+  BIRCH_WALL_HANGING_SIGN: "heŋgejuvvon soahkegalba seainnis"
+  BIRCH_WALL_SIGN: "heŋgojuvvon soahkegalba"
+  BIRCH_WOOD: "soahkemuorra"
+  BLACK_BANNER: "čáhppes leavga"
+  BLACK_BED: "čáhppes seaŋga"
+  BLACK_CANDLE: "čáhppes ginttal"
+  BLACK_CANDLE_CAKE: "gáhkku čáhppes gintaliin"
+  BLACK_CARPET: "čáhppes láhtterátnu"
+  BLACK_CONCRETE: "čáhppes betoŋŋa"
+  BLACK_CONCRETE_POWDER: "čáhppes betoŋŋabulvvar"
+  BLACK_GLAZED_TERRACOTTA: "čáhppes šelges terrakotta"
+  BLACK_SHULKER_BOX: "čáhppes shulkerboksa"
+  BLACK_STAINED_GLASS: "čáhppes glássa"
+  BLACK_STAINED_GLASS_PANE: "čáhppes glássaruvtto"
+  BLACK_TERRACOTTA: "čáhppes terrakotta"
+  BLACK_WOOL: "čáhppes ullu"
+  BLACKSTONE: "čáhppesgeađgi"
+  BLACKSTONE_SLAB: "čáhppesgeađgepláhtta"
+  BLACKSTONE_STAIRS: "čáhppesgeađgetráhppá"
+  BLACKSTONE_WALL: "čáhppesgeađge seaidni"
+  BLAST_FURNACE: "suddadanuvdna"
+  BLUE_BANNER: "alit leavga"
+  BLUE_BED: "alit seaŋga"
+  BLUE_CANDLE: "alit ginttal"
+  BLUE_CANDLE_CAKE: "gáhkku alit gintaliin"
+  BLUE_CARPET: "alit láhtterátnu"
+  BLUE_CONCRETE: "alit betoŋŋa"
+  BLUE_CONCRETE_POWDER: "alit betoŋŋabulvvar"
+  BLUE_GLAZED_TERRACOTTA: "alit šelges terrakotta"
+  BLUE_ICE: "alitjiekŋa"
+  BLUE_ORCHID: "alit orkidéa"
+  BLUE_SHULKER_BOX: "alit shulkerboksa"
+  BLUE_STAINED_GLASS: "alit glássa"
+  BLUE_STAINED_GLASS_PANE: "alit glássaruvtto"
+  BLUE_TERRACOTTA: "alit terrakotta"
+  BLUE_WOOL: "alit ullu"
+  BONE_BLOCK: "dákteblohkka"
+  BOOKSHELF: "girjehildu"
+  BRAIN_CORAL: "vuiŋŋamuš korálla"
+  BRAIN_CORAL_BLOCK: "vuoŋŋamuš korallablohkka"
+  BRAIN_CORAL_FAN: "vuoŋŋamuš koralla fan"
+  BRAIN_CORAL_WALL_FAN: "vuoŋŋamuš koralla libardahtti"
+  BREWING_STAND: "vuoššahat"
+  BRICK_SLAB: "muvrapláhtta"
+  BRICK_STAIRS: "muvratráhppá"
+  BRICK_WALL: "muvraseaidni"
+  BRICKS: "muvra"
+  BROWN_BANNER: "ruškes leavga"
+  BROWN_BED: "ruškes seaŋga"
+  BROWN_CANDLE: "ruškes ginttal"
+  BROWN_CANDLE_CAKE: "gáhkku ruškes gintaliin"
+  BROWN_CARPET: "ruškes láhtterátnu"
+  BROWN_CONCRETE: "ruškes betoŋŋa"
+  BROWN_CONCRETE_POWDER: "ruškes betoŋŋabulvvar"
+  BROWN_GLAZED_TERRACOTTA: "ruškes šelges terrakotta"
+  BROWN_MUSHROOM: "ruškes guoppar"
+  BROWN_MUSHROOM_BLOCK: "ruškes guopparblohkka"
+  BROWN_SHULKER_BOX: "ruškes shulkerboksa"
+  BROWN_STAINED_GLASS: "ruškes glássa"
+  BROWN_STAINED_GLASS_PANE: "ruškes glássaruvtto"
+  BROWN_TERRACOTTA: "ruškes terrakotta"
+  BROWN_WOOL: "ruškes ullu"
+  BUBBLE_COLUMN: "bulljarasrevre"
+  BUBBLE_CORAL: "buillaras korálla"
+  BUBBLE_CORAL_BLOCK: "bulljaras korallablohkka"
+  BUBBLE_CORAL_FAN: "bulljaras koralla fan"
+  BUBBLE_CORAL_WALL_FAN: "bulljaras koralla libardahtti"
+  BUDDING_AMETHYST: "bohciidis ametista"
+  CACTUS: "káktus"
+  CAKE: "gáhkku"
+  CALCITE: "kalsihtta"
+  CALIBRATED_SCULK_SENSOR: "kalibrerejuvvon skulk-dovddan"
+  CAMPFIRE: "dollagáddi"
+  CANDLE: "ginttal"
+  CANDLE_CAKE: "ginttalgáhkku"
+  CARROTS: "rušppit"
+  CARTOGRAPHY_TABLE: "kártenbeavdi"
+  CARVED_PUMPKIN: "čuhppon gurbbet"
+  CAULDRON: "ruitu"
+  CAVE_AIR: "hoallu áibmu"
+  CAVE_VINES: "bákteráigegoargŋunsuoidni"
+  CAVE_VINES_PLANT: "bákteráigegoargŋunsuoidnerássi"
+  CHAIN: "viđji"
+  CHAIN_COMMAND_BLOCK: "ráidokommándoblohkka"
+  CHERRY_BUTTON: "kirsamuorjemuorraboallu"
+  CHERRY_DOOR: "kirsamuorjemuorrauksa"
+  CHERRY_FENCE: "kirsamuorjemuorraáidi"
+  CHERRY_FENCE_GATE: "kirsamuorjemuorraverrát"
+  CHERRY_HANGING_SIGN: "heŋgejuvvon kirsamuorjemuorragalba"
+  CHERRY_LEAVES: "kirsamuorjemuorralasttat"
+  CHERRY_LOG: "kirsamuorjemuorrabelko"
+  CHERRY_PLANKS: "kirsamuorjemuorrafiellut"
+  CHERRY_PRESSURE_PLATE: "kirsamuorjemuorradeattopláhtta"
+  CHERRY_SAPLING: "kirsamuorjemuoraš"
+  CHERRY_SIGN: "kirsamuorjemuorragalba"
+  CHERRY_SLAB: "kirsamuorjemuorrapláhtta"
+  CHERRY_STAIRS: "kirsamuorjemuorratráhppát"
+  CHERRY_TRAPDOOR: "kirsamuorjemuorraluŋká"
+  CHERRY_WALL_HANGING_SIGN: "kirsamuorjemuorraseaidnegalba"
+  CHERRY_WALL_SIGN: "kirsamuorjemuorraseaidnegalba"
+  CHERRY_WOOD: "kirsamuorjemuorra"
+  CHEST: "giisá"
+  CHIPPED_ANVIL: "reakčanan stáđđi"
+  CHISELED_BOOKSHELF: "luokčajuvvon girjehildu"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "luokčajuvvon bodneráktu"
+  CHISELED_NETHER_BRICKS: "luokčajuvvon nethergeađgemuvra"
+  CHISELED_POLISHED_BLACKSTONE: "luokčajuvvon bussejuvvon čáhppesgeađgi"
+  CHISELED_QUARTZ_BLOCK: "luokčajuvvon kvárcablohkka"
+  CHISELED_RED_SANDSTONE: "luokčajuvvon rukses sáttogeađgi"
+  CHISELED_SANDSTONE: "luokčajuvvon sáttogeađgi"
+  CHISELED_STONE_BRICKS: "luokčajuvvon geađgemuvra"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "choruslieđđi"
+  CHORUS_PLANT: "chorusšaddu"
+  CLAY: "láira"
+  COAL_BLOCK: "koallablohkka"
+  COAL_ORE: "koallamálbma"
+  COARSE_DIRT: "roattoseana"
+  COBBLED_DEEPSLATE: "mollejuvvon bodneráktu"
+  COBBLED_DEEPSLATE_SLAB: "mollejuvvon bodneráktopláhtta"
+  COBBLED_DEEPSLATE_STAIRS: "mollejuvvon bodneráktotráhppát"
+  COBBLED_DEEPSLATE_WALL: "mollejuvvon bodneráktoseaidni"
+  COBBLESTONE: "luoddageađgi"
+  COBBLESTONE_SLAB: "luoddageađgepláhtta"
+  COBBLESTONE_STAIRS: "luoddageađgetráhppá"
+  COBBLESTONE_WALL: "luoddageađgge seaidni"
+  COBWEB: "heavdnefierbmi"
+  COCOA: "kakáo"
+  COMMAND_BLOCK: "kommándoblohkka"
+  COMPARATOR: "redstone iskkadeaddji"
+  COMPOSTER: "kompostár"
+  CONDUIT: "mearrameannudeaddji"
+  COPPER_BLOCK: "veaikeblohkka"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "veaikemálbma"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "rohkarássi"
+  CRACKED_DEEPSLATE_BRICKS: "luoddanan bodneráktomuvra"
+  CRACKED_DEEPSLATE_TILES: "luoddanan bodneráktotiila"
+  CRACKED_NETHER_BRICKS: "luoddanan nethergeađgemuvra"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "luoddanan bussejuvvon čáhppesgeađgemuvra"
+  CRACKED_STONE_BRICKS: "luoddanan geađgemuvra"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "duodjebeavdi"
+  CREEPER_HEAD: "creeper oaivi"
+  CREEPER_WALL_HEAD: "gopmi seaidneoaivi"
+  CRIMSON_BUTTON: "skárllatboallu"
+  CRIMSON_DOOR: "skárllatuksa"
+  CRIMSON_FENCE: "skárllatáidi"
+  CRIMSON_FENCE_GATE: "skárllatverrát"
+  CRIMSON_FUNGUS: "skárllatguoppar"
+  CRIMSON_HANGING_SIGN: "heŋgejuvvon skárllatgalba"
+  CRIMSON_HYPHAE: "skárllatsuorus"
+  CRIMSON_NYLIUM: "skárllatmirkoeana"
+  CRIMSON_PLANKS: "skárllatfiellut"
+  CRIMSON_PRESSURE_PLATE: "skárllatdeattopláhtta"
+  CRIMSON_ROOTS: "skárllatruohttasat"
+  CRIMSON_SIGN: "skárllatgalba"
+  CRIMSON_SLAB: "skárllatbealli"
+  CRIMSON_STAIRS: "skárllattráhppát"
+  CRIMSON_STEM: "skárllatmátta"
+  CRIMSON_TRAPDOOR: "skárllatluŋká"
+  CRIMSON_WALL_HANGING_SIGN: "heŋgejuvvon skárllatgalba seainnis"
+  CRIMSON_WALL_SIGN: "heŋgojuvvon skárllatgalba"
+  CRYING_OBSIDIAN: "čierru obsidiána"
+  CUT_COPPER: "čuhppon veaiki"
+  CUT_COPPER_SLAB: "čuhppon veaikepláhtta"
+  CUT_COPPER_STAIRS: "čuhppon veaiketráhppá"
+  CUT_RED_SANDSTONE: "njuolgejuvvon rukses sáttogeađgi"
+  CUT_RED_SANDSTONE_SLAB: "čuhppon rukses sáttogeađgepláhtta"
+  CUT_SANDSTONE: "njulgejuvvon sáttogeađgi"
+  CUT_SANDSTONE_SLAB: "čuhppon sáttogeađgepláhtta"
+  CYAN_BANNER: "turkiisa leavga"
+  CYAN_BED: "turkiisa seaŋga"
+  CYAN_CANDLE: "turkiisa ginttal"
+  CYAN_CANDLE_CAKE: "gáhkku čuvgesalit gintaliin"
+  CYAN_CARPET: "turkiisa láhtterátnu"
+  CYAN_CONCRETE: "turkiisa betoŋŋa"
+  CYAN_CONCRETE_POWDER: "turkiisa betoŋŋabulvvar"
+  CYAN_GLAZED_TERRACOTTA: "turkiisa šelges terrakotta"
+  CYAN_SHULKER_BOX: "turkiisa shulkerboksa"
+  CYAN_STAINED_GLASS: "turkiisa glássa"
+  CYAN_STAINED_GLASS_PANE: "turkiisa glássaruvtto"
+  CYAN_TERRACOTTA: "turkiisa terrakotta"
+  CYAN_WOOL: "turkiisa ullu"
+  DAMAGED_ANVIL: "billašuvvan stáđđi"
+  DANDELION: "uvlorássi"
+  DARK_OAK_BUTTON: "sevdnjes eaikaboallu"
+  DARK_OAK_DOOR: "sevdnjes eaikauksa"
+  DARK_OAK_FENCE: "sevdnjes eaikaáidi"
+  DARK_OAK_FENCE_GATE: "sevdnjes eaikaverrát"
+  DARK_OAK_HANGING_SIGN: "heŋgejuvvon sevdnjeseaikagalba"
+  DARK_OAK_LEAVES: "sevdnjes eaikalasttat"
+  DARK_OAK_LOG: "sevdnjes eaikabelko"
+  DARK_OAK_PLANKS: "sevdnjes eaikafiellut"
+  DARK_OAK_PRESSURE_PLATE: "sevdnjes eaikadeattopláhtta"
+  DARK_OAK_SAPLING: "sevdnjes eaikamuoraš"
+  DARK_OAK_SIGN: "sevdnjes eaikagalba"
+  DARK_OAK_SLAB: "sevdnjes eaikapláhtta"
+  DARK_OAK_STAIRS: "sevdnjes eaikatráhppá"
+  DARK_OAK_TRAPDOOR: "sevdnjes eaikaluŋká"
+  DARK_OAK_WALL_HANGING_SIGN: "heŋgejuvvon sevdnjeseaikagalba seainnis"
+  DARK_OAK_WALL_SIGN: "heŋgojuvvon sevdnjes eaikagalba"
+  DARK_OAK_WOOD: "sevdnjes eaikamuorra"
+  DARK_PRISMARINE: "sevdnjes prismariidna"
+  DARK_PRISMARINE_SLAB: "sevdnjes prismariidnapláhtta"
+  DARK_PRISMARINE_STAIRS: "sevdnjes prismariidnatráhppá"
+  DAYLIGHT_DETECTOR: "beaivečuovgga iski"
+  DEAD_BRAIN_CORAL: "jápman vuoŋŋamuš koralla"
+  DEAD_BRAIN_CORAL_BLOCK: "jápman vuoŋŋamuš korallablohkka"
+  DEAD_BRAIN_CORAL_FAN: "jápman vuoŋŋamuš koralla libardahtti"
+  DEAD_BRAIN_CORAL_WALL_FAN: "jápman vuoŋŋamuškoralla seaidnelibardahtti"
+  DEAD_BUBBLE_CORAL: "jápman bulljaras koralla"
+  DEAD_BUBBLE_CORAL_BLOCK: "jápman bulljaras korallablohkka"
+  DEAD_BUBBLE_CORAL_FAN: "jápman bulljaras koralla libardahtti"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "jápman bulljaraskoralla seaidnelibardahtti"
+  DEAD_BUSH: "goikemiestta"
+  DEAD_FIRE_CORAL: "jápman dolla koralla"
+  DEAD_FIRE_CORAL_BLOCK: "jápman dolla korallablohkka"
+  DEAD_FIRE_CORAL_FAN: "jápman dolla koralla libardahtti"
+  DEAD_FIRE_CORAL_WALL_FAN: "jápman dollakoralla seaidnelibardahtti"
+  DEAD_HORN_CORAL: "jápman čoarvvás koralla"
+  DEAD_HORN_CORAL_BLOCK: "jápman čoarvvás korallablohkka"
+  DEAD_HORN_CORAL_FAN: "jápman čoarvvás koralla libardahtti"
+  DEAD_HORN_CORAL_WALL_FAN: "jápman čoarvváskoralla seaidnelibardahtti"
+  DEAD_TUBE_CORAL: "jápman bohcci koralla"
+  DEAD_TUBE_CORAL_BLOCK: "jápman bohcci korallablohkka"
+  DEAD_TUBE_CORAL_FAN: "jápman bohcci koralla libardahtti"
+  DEAD_TUBE_CORAL_WALL_FAN: "jápman bohccikoralla seaidnelibardahtti"
+  DECORATED_POT: "hervejuvvon kruhkka"
+  DEEPSLATE: "bodneráktu"
+  DEEPSLATE_BRICK_SLAB: "bodneráktomuvrapláhtta"
+  DEEPSLATE_BRICK_STAIRS: "bodneráktomuvratráhppá"
+  DEEPSLATE_BRICK_WALL: "bodneráktomuvraseaidni"
+  DEEPSLATE_BRICKS: "bodneráktomuvra"
+  DEEPSLATE_COAL_ORE: "bodneráktokoallamálbma"
+  DEEPSLATE_COPPER_ORE: "bodneráktoveaikemálbma"
+  DEEPSLATE_DIAMOND_ORE: "bodneráktodiamántamálbma"
+  DEEPSLATE_EMERALD_ORE: "bodneráktoemeraldamálbma"
+  DEEPSLATE_GOLD_ORE: "bodneráktogollemálbma"
+  DEEPSLATE_IRON_ORE: "bodneráktoruovdemálbma"
+  DEEPSLATE_LAPIS_ORE: "bodneráktolasuramálbma"
+  DEEPSLATE_REDSTONE_ORE: "bodneráktoredstonemálbma"
+  DEEPSLATE_TILE_SLAB: "bodneráktotiilapláhtta"
+  DEEPSLATE_TILE_STAIRS: "bodneráktotiilatráhppá"
+  DEEPSLATE_TILE_WALL: "bodneráktotiilaseaidni"
+  DEEPSLATE_TILES: "bodneráktotiila"
+  DETECTOR_RAIL: "iskkan ruovdemáđđi"
+  DIAMOND_BLOCK: "diamántablohkka"
+  DIAMOND_ORE: "diamántamálbma"
+  DIORITE: "diorihtta"
+  DIORITE_SLAB: "diorihttapláhtta"
+  DIORITE_STAIRS: "diorihttatráhppá"
+  DIORITE_WALL: "diorihtta seaidni"
+  DIRT: "eana"
+  DIRT_PATH: "bálggis"
+  DISPENSER: "bážán"
+  DRAGON_EGG: "drágemonni"
+  DRAGON_HEAD: "drága oaivi"
+  DRAGON_WALL_HEAD: "drága seaidneoaivi"
+  DRIED_KELP_BLOCK: "goikoduvvon stárrablohkka"
+  DRIPSTONE_BLOCK: "goaikogeađgeblohkka"
+  DROPPER: "luoiti"
+  EMERALD_BLOCK: "emeraldablohkka"
+  EMERALD_ORE: "emeraldamálbma"
+  ENCHANTING_TABLE: "noaidunbeavdi"
+  END_GATEWAY: "endorverrát"
+  END_PORTAL: "endorportála"
+  END_PORTAL_FRAME: "endorportálarámma"
+  END_ROD: "endorsággi"
+  END_STONE: "endorgeađgi"
+  END_STONE_BRICK_SLAB: "endorgeađgemuvrabealli"
+  END_STONE_BRICK_STAIRS: "endor geađgemuvratráhppá"
+  END_STONE_BRICK_WALL: "endor geađgemuvra seaidni"
+  END_STONE_BRICKS: "endorgeađgemuvra"
+  ENDER_CHEST: "endorgiisá"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "suojehis veaiki"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "suojehis čuhppon veaiki"
+  EXPOSED_CUT_COPPER_SLAB: "suojehis čuhppon veaikebealli"
+  EXPOSED_CUT_COPPER_STAIRS: "suojehis čuhppon veaiketráhppát"
+  FARMLAND: "gilvineana"
+  FERN: "gáiski"
+  FIRE: "dolla"
+  FIRE_CORAL: "dolla korálla"
+  FIRE_CORAL_BLOCK: "dolla korallablohkka"
+  FIRE_CORAL_FAN: "dolla koralla fan"
+  FIRE_CORAL_WALL_FAN: "dolla koralla libardahtti"
+  FLETCHING_TABLE: "njuollabeavdi"
+  FLOWER_POT: "lieđđekruhkku"
+  FLOWERING_AZALEA: "lieđđudeaddji asalea"
+  FLOWERING_AZALEA_LEAVES: "lieđđudeaddji asalealasttat"
+  FROGSPAWN: "šlubboaivemonit"
+  FROSTED_ICE: "ruosttajiekŋa"
+  FURNACE: "uvdna"
+  GILDED_BLACKSTONE: "gollás čáhppesgeađgi"
+  GLASS: "glássa"
+  GLASS_PANE: "glássaruvtto"
+  GLOW_LICHEN: "áhcagas jeagil"
+  GLOWSTONE: "čuovgageađgi"
+  GOLD_BLOCK: "golleblohkka"
+  GOLD_ORE: "gollemálbma"
+  GRANITE: "granihtta"
+  GRANITE_SLAB: "granihttapláhtta"
+  GRANITE_STAIRS: "granihttatráhppá"
+  GRANITE_WALL: "granihtta seaidni"
+  GRASS: "suoidni"
+  GRASS_BLOCK: "suoidneblohkka"
+  GRAVEL: "čievra"
+  GRAY_BANNER: "ránes leavga"
+  GRAY_BED: "ránes seaŋga"
+  GRAY_CANDLE: "ránes ginttal"
+  GRAY_CANDLE_CAKE: "gáhkku ránis gintaliin"
+  GRAY_CARPET: "ránes láhtterátnu"
+  GRAY_CONCRETE: "ránes betoŋŋa"
+  GRAY_CONCRETE_POWDER: "ránes betoŋŋabulvvar"
+  GRAY_GLAZED_TERRACOTTA: "ránes šelges terrakotta"
+  GRAY_SHULKER_BOX: "ránes shulkerboksa"
+  GRAY_STAINED_GLASS: "ránes glássa"
+  GRAY_STAINED_GLASS_PANE: "ránes glássaruvtto"
+  GRAY_TERRACOTTA: "ránes terrakotta"
+  GRAY_WOOL: "ránes ullu"
+  GREEN_BANNER: "ruoná leavga"
+  GREEN_BED: "ruoná seaŋga"
+  GREEN_CANDLE: "ruoná ginttal"
+  GREEN_CANDLE_CAKE: "gáhkku ruoná gintaliin"
+  GREEN_CARPET: "ruoná láhtterátnu"
+  GREEN_CONCRETE: "ruoná betoŋŋa"
+  GREEN_CONCRETE_POWDER: "ruoná betoŋŋabulvvar"
+  GREEN_GLAZED_TERRACOTTA: "ruoná šelges terrakotta"
+  GREEN_SHULKER_BOX: "ruoná shulkerboksa"
+  GREEN_STAINED_GLASS: "ruoná glássa"
+  GREEN_STAINED_GLASS_PANE: "ruoná glássaruvtto"
+  GREEN_TERRACOTTA: "ruoná terrakotta"
+  GREEN_WOOL: "ruoná ullu"
+  GRINDSTONE: "heidnengeađgi"
+  HANGING_ROOTS: "sluŋkeruohttasat"
+  HAY_BLOCK: "suoidnegubá"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "lossadeattupláhtta"
+  HONEY_BLOCK: "honnetblohkka"
+  HONEYCOMB_BLOCK: "honnetbihttáblohkka"
+  HOPPER: "njammi"
+  HORN_CORAL: "čoarve korálla"
+  HORN_CORAL_BLOCK: "čoarvvás korallablohkka"
+  HORN_CORAL_FAN: "čoarvvás koralla fan"
+  HORN_CORAL_WALL_FAN: "čoarvvás koralla libardahtti"
+  ICE: "jiekŋa"
+  INFESTED_CHISELED_STONE_BRICKS: "njommon luokčajuvvon geađgemuvra"
+  INFESTED_COBBLESTONE: "njommon luoddageađgi"
+  INFESTED_CRACKED_STONE_BRICKS: "njommon luoddanan geađgemuvra"
+  INFESTED_DEEPSLATE: "njommon bodneráktu"
+  INFESTED_MOSSY_STONE_BRICKS: "njommon jeagilduvvan geađgemuvra"
+  INFESTED_STONE: "njommongeađgi"
+  INFESTED_STONE_BRICKS: "njommon geađgemuvra"
+  IRON_BARS: "ruovdegiddagas"
+  IRON_BLOCK: "ruovdeblohkka"
+  IRON_DOOR: "ruovdeuksa"
+  IRON_ORE: "ruovdemálbma"
+  IRON_TRAPDOOR: "ruovdeluŋká"
+  JACK_O_LANTERN: "gurbbetčuovga"
+  JIGSAW: "ásahanblohkka"
+  JUKEBOX: "skearročuojanas"
+  JUNGLE_BUTTON: "suhkkesvuovdeboallu"
+  JUNGLE_DOOR: "suhkkesvuvdemuorrauksa"
+  JUNGLE_FENCE: "suhkkesvuovdeáidi"
+  JUNGLE_FENCE_GATE: "suhkkesvuovdeverrát"
+  JUNGLE_HANGING_SIGN: "heŋgejuvvon suhkkesvuovdegalba"
+  JUNGLE_LEAVES: "suhkkesvuovdelasttat"
+  JUNGLE_LOG: "suhkkesvuovdebelko"
+  JUNGLE_PLANKS: "suhkkesvuovdefiellut"
+  JUNGLE_PRESSURE_PLATE: "suhkkesvuovdedeattopláhtta"
+  JUNGLE_SAPLING: "suhkkesvuovdemuoraš"
+  JUNGLE_SIGN: "suhkkesvuovdegalba"
+  JUNGLE_SLAB: "suhkkesvuovdepláhtta"
+  JUNGLE_STAIRS: "suhkkesvuovdetráhppá"
+  JUNGLE_TRAPDOOR: "suhkkesvuovdeluŋká"
+  JUNGLE_WALL_HANGING_SIGN: "heŋgejuvvon suhkkesvuovdegalba seainnis"
+  JUNGLE_WALL_SIGN: "heŋgojuvvon suhkkesvuovdegalba"
+  JUNGLE_WOOD: "suhkkesvuovdemuorra"
+  KELP: "stárra"
+  KELP_PLANT: "stárra"
+  LADDER: "ráidalas"
+  LANTERN: "lámpá"
+  LAPIS_BLOCK: "lasurablohkka"
+  LAPIS_ORE: "lasuramálbma"
+  LARGE_AMETHYST_BUD: "stuora ametistaurbi"
+  LARGE_FERN: "stuora gáiski"
+  LAVA: "lava"
+  LAVA_CAULDRON: "lavaruitu"
+  LECTERN: "sárdnestuollu"
+  LEVER: "geavja"
+  LIGHT: "čuovga"
+  LIGHT_BLUE_BANNER: "čuvgesalit leavga"
+  LIGHT_BLUE_BED: "čuvgesalit seaŋga"
+  LIGHT_BLUE_CANDLE: "čuvgesalit ginttal"
+  LIGHT_BLUE_CANDLE_CAKE: "gáhkku čuvgesalit gintaliin"
+  LIGHT_BLUE_CARPET: "čuvgesalit láhtterátnu"
+  LIGHT_BLUE_CONCRETE: "čuvgesalit betoŋŋa"
+  LIGHT_BLUE_CONCRETE_POWDER: "čuvgesalit betoŋŋabulvvar"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "čuvgesalit šelges terrakotta"
+  LIGHT_BLUE_SHULKER_BOX: "čuvgesalit shulkerboksa"
+  LIGHT_BLUE_STAINED_GLASS: "čuvgesalit glássa"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "čuvgesalit glássaruvtto"
+  LIGHT_BLUE_TERRACOTTA: "čuvgesalit terrakotta"
+  LIGHT_BLUE_WOOL: "čuvgesalit ullu"
+  LIGHT_GRAY_BANNER: "čuovgesránes leavga"
+  LIGHT_GRAY_BED: "čuovgesránes seaŋga"
+  LIGHT_GRAY_CANDLE: "čuovgesránes ginttal"
+  LIGHT_GRAY_CANDLE_CAKE: "gáhkku čuvgesránis gintaliin"
+  LIGHT_GRAY_CARPET: "čuvgesránes láhtterátnu"
+  LIGHT_GRAY_CONCRETE: "čuvgesránes betoŋŋa"
+  LIGHT_GRAY_CONCRETE_POWDER: "čuvgesránes betoŋŋabulvvar"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "čuvgesránes šelges terrakotta"
+  LIGHT_GRAY_SHULKER_BOX: "čuvgesránes shulkerboksa"
+  LIGHT_GRAY_STAINED_GLASS: "čuvgesránes glássa"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "čuvgesránes glássaruvtto"
+  LIGHT_GRAY_TERRACOTTA: "čuvgesránes terrakotta"
+  LIGHT_GRAY_WOOL: "čuvgesránes ullu"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "geahpadeattupláhtta"
+  LIGHTNING_ROD: "álddagasa dustensoabbi"
+  LILAC: "siriidna"
+  LILY_OF_THE_VALLEY: "ávželieđđi"
+  LILY_PAD: "govdodanlieđđi"
+  LIME_BANNER: "čuvgesruoná leavga"
+  LIME_BED: "čuvgesruoná seaŋga"
+  LIME_CANDLE: "čuvgesruoná ginttal"
+  LIME_CANDLE_CAKE: "gáhkku čuvgesruoná gintaliin"
+  LIME_CARPET: "lime láhtterátnu"
+  LIME_CONCRETE: "čuvgesruoná betoŋŋa"
+  LIME_CONCRETE_POWDER: "čuvgesruonaá betoŋŋabulvvar"
+  LIME_GLAZED_TERRACOTTA: "čuvgesruoná šelges terrakotta"
+  LIME_SHULKER_BOX: "čuvgesruoná shulkerboksa"
+  LIME_STAINED_GLASS: "čuvgesruoná glássa"
+  LIME_STAINED_GLASS_PANE: "čuvgesruoná glássaruvtto"
+  LIME_TERRACOTTA: "čuvgesruoná terrakotta"
+  LIME_WOOL: "čuvgesruoná ullu"
+  LODESTONE: "láidengeađgi"
+  LOOM: "gákkesmuorat"
+  MAGENTA_BANNER: "čuvgessáhppes leavga"
+  MAGENTA_BED: "čuvgessáhppes seaŋga"
+  MAGENTA_CANDLE: "čuvgessáhppes ginttal"
+  MAGENTA_CANDLE_CAKE: "gáhkku čuvgessáhppes gintaliin"
+  MAGENTA_CARPET: "čuvgessáhppes láhtterátnu"
+  MAGENTA_CONCRETE: "čuvgessáhppes betoŋŋa"
+  MAGENTA_CONCRETE_POWDER: "čuvgessáhppes betoŋŋabulvvar"
+  MAGENTA_GLAZED_TERRACOTTA: "čuvgessáhppes šelges terrakotta"
+  MAGENTA_SHULKER_BOX: "čuvgessáhppes shulkerboksa"
+  MAGENTA_STAINED_GLASS: "magenta glássa"
+  MAGENTA_STAINED_GLASS_PANE: "magenta glássaruvtto"
+  MAGENTA_TERRACOTTA: "čuvgessáhppes terrakotta"
+  MAGENTA_WOOL: "čuvgessáhppes ullu"
+  MAGMA_BLOCK: "magmablohkka"
+  MANGROVE_BUTTON: "mangroveboallu"
+  MANGROVE_DOOR: "mangroveuksa"
+  MANGROVE_FENCE: "mangroveáidi"
+  MANGROVE_FENCE_GATE: "mangroveverrát"
+  MANGROVE_HANGING_SIGN: "heŋgejuvvon mangrovegalba"
+  MANGROVE_LEAVES: "mangrovelasttat"
+  MANGROVE_LOG: "mangrovebelko"
+  MANGROVE_PLANKS: "mangrovefiellut"
+  MANGROVE_PRESSURE_PLATE: "mangrovedeattopláhtta"
+  MANGROVE_PROPAGULE: "mangrovegilvva"
+  MANGROVE_ROOTS: "mangroveruohttasat"
+  MANGROVE_SIGN: "mangrovegalba"
+  MANGROVE_SLAB: "mangrovepláhtta"
+  MANGROVE_STAIRS: "mangrovetráhppát"
+  MANGROVE_TRAPDOOR: "mangroveluŋká"
+  MANGROVE_WALL_HANGING_SIGN: "heŋgejuvvon mangrovegalba seainnis"
+  MANGROVE_WALL_SIGN: "heŋgojuvvon mangrovegalba"
+  MANGROVE_WOOD: "mangrovemuorra"
+  MEDIUM_AMETHYST_BUD: "gaskasturrosaš ametistaurbi"
+  MELON: "melovdna"
+  MELON_STEM: "meluvdna máddu"
+  MOSS_BLOCK: "darfeblohkka"
+  MOSS_CARPET: "darfegovččas"
+  MOSSY_COBBLESTONE: "jeagilduvvan luoddageađgi"
+  MOSSY_COBBLESTONE_SLAB: "jeagilduvvan luoddageađgebealli"
+  MOSSY_COBBLESTONE_STAIRS: "jeagilduvvan luoddageađgetráhppá"
+  MOSSY_COBBLESTONE_WALL: "jeagilduvvan luoddageađgeseaidni"
+  MOSSY_STONE_BRICK_SLAB: "jeagilduvvan geađgemuvrabealli"
+  MOSSY_STONE_BRICK_STAIRS: "jeagilduvvan geađgemuvratráhppá"
+  MOSSY_STONE_BRICK_WALL: "jeagilduvvan geađgemuvraseaidni"
+  MOSSY_STONE_BRICKS: "jeagilduvvan geađgemuvra"
+  MOVING_PISTON: "sirddašeamin hoigadeaddji"
+  MUD: "stánželáira"
+  MUD_BRICK_SLAB: "garraláiramuvrapláhtta"
+  MUD_BRICK_STAIRS: "garraláiramuvratráhppá"
+  MUD_BRICK_WALL: "garraláiramuvraseaidni"
+  MUD_BRICKS: "garraláiramuvra"
+  MUDDY_MANGROVE_ROOTS: "mohttás mangroveruohttasat"
+  MUSHROOM_STEM: "guoppamáddu"
+  MYCELIUM: "mirkoeana"
+  NETHER_BRICK_FENCE: "nethermuvraáidi"
+  NETHER_BRICK_SLAB: "nethermuvrabealli"
+  NETHER_BRICK_STAIRS: "nethermuvratráhppá"
+  NETHER_BRICK_WALL: "nethermuvra seaidni"
+  NETHER_BRICKS: "nethermuvra"
+  NETHER_GOLD_ORE: "nether gollemálbma"
+  NETHER_PORTAL: "nether portála"
+  NETHER_QUARTZ_ORE: "netherkvárcamálbma"
+  NETHER_SPROUTS: "netherrahttá"
+  NETHER_WART: "nether spártu"
+  NETHER_WART_BLOCK: "nether spártoblohkka"
+  NETHERITE_BLOCK: "netheriitablohkka"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "nuohttablohkka"
+  OAK_BUTTON: "eaikaboallu"
+  OAK_DOOR: "eaikauksa"
+  OAK_FENCE: "eaikaáidi"
+  OAK_FENCE_GATE: "eaikaverrát"
+  OAK_HANGING_SIGN: "heŋgejuvvon eaikagalba"
+  OAK_LEAVES: "eaikalasttat"
+  OAK_LOG: "eaikabelko"
+  OAK_PLANKS: "eaikafiellut"
+  OAK_PRESSURE_PLATE: "eaikadeattopláhtta"
+  OAK_SAPLING: "eaikamuoraš"
+  OAK_SIGN: "eaikagalba"
+  OAK_SLAB: "eaikapláhtta"
+  OAK_STAIRS: "eaikatráhppá"
+  OAK_TRAPDOOR: "eaikaluŋká"
+  OAK_WALL_HANGING_SIGN: "heŋgejuvvon eaikagalba seainnis"
+  OAK_WALL_SIGN: "heŋgojuvvon eaikagalba"
+  OAK_WOOD: "eaikamuorra"
+  OBSERVER: "áici"
+  OBSIDIAN: "obsidiána"
+  OCHRE_FROGLIGHT: "okrasaš rihccecuoppočuovga"
+  OMINOUS_BANNER: "báhabukti leavga"
+  ORANGE_BANNER: "runta leavga"
+  ORANGE_BED: "runta seaŋga"
+  ORANGE_CANDLE: "runta ginttal"
+  ORANGE_CANDLE_CAKE: "gáhkku runta gintaliin"
+  ORANGE_CARPET: "runta láhtterátnu"
+  ORANGE_CONCRETE: "runta betoŋŋa"
+  ORANGE_CONCRETE_POWDER: "runta betoŋŋabulvvar"
+  ORANGE_GLAZED_TERRACOTTA: "runta šelges terrakotta"
+  ORANGE_SHULKER_BOX: "runta shulkerboksa"
+  ORANGE_STAINED_GLASS: "runta glássa"
+  ORANGE_STAINED_GLASS_PANE: "runta glássaruvtto"
+  ORANGE_TERRACOTTA: "runta terrakotta"
+  ORANGE_TULIP: "runta tulipána"
+  ORANGE_WOOL: "runta ullu"
+  OXEYE_DAISY: "báhpačehporas"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "giimman veaiki"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "giimman čuhppon veaiki"
+  OXIDIZED_CUT_COPPER_SLAB: "giimman čuhppon veaikebealli"
+  OXIDIZED_CUT_COPPER_STAIRS: "giimman čuhppon veaiketráhppát"
+  PACKED_ICE: "garrajiekŋa"
+  PACKED_MUD: "garraláira"
+  PEARLESCENT_FROGLIGHT: "helbmosaš rihccecuoppočuovga"
+  PEONY: "piovdna"
+  PETRIFIED_OAK_SLAB: "geađgás eaikapláhtta"
+  PIGLIN_HEAD: "piglinoaivi"
+  PIGLIN_WALL_HEAD: "piglin seaidneoaivi"
+  PINK_BANNER: "čuvgesrukses leavga"
+  PINK_BED: "čuvgesrukses seaŋga"
+  PINK_CANDLE: "guvgesruokses ginttal"
+  PINK_CANDLE_CAKE: "gáhkku čuvgesrukses gintaliin"
+  PINK_CARPET: "vilgesruokses láhtterátnu"
+  PINK_CONCRETE: "čuvgesrukses betoŋŋa"
+  PINK_CONCRETE_POWDER: "čuvgesrukses betoŋŋabulvvar"
+  PINK_GLAZED_TERRACOTTA: "vilgesrukses šelges terrakotta"
+  PINK_PETALS: "rosa lieđđelasta"
+  PINK_SHULKER_BOX: "čuvgesrukses shulkerboksa"
+  PINK_STAINED_GLASS: "čuvgesruoksat glássa"
+  PINK_STAINED_GLASS_PANE: "čuvgesrukses glássaruvtto"
+  PINK_TERRACOTTA: "rosa terrakotta"
+  PINK_TULIP: "čuvgesrukses tulipána"
+  PINK_WOOL: "čuvgesruokses ullu"
+  PISTON: "hoigi"
+  PISTON_HEAD: "hoigadeaddji oaivi"
+  PITCHER_CROP: "muggarássegilvva"
+  PITCHER_PLANT: "muggarássi"
+  PLAYER_HEAD: "spealleoaivi"
+  PLAYER_HEAD_NAMED: "%s oaivi"
+  PLAYER_WALL_HEAD: "heŋgojuvvon spealleoaivi"
+  PODZOL: "podsola"
+  POINTED_DRIPSTONE: "goaikogeađgecuipi"
+  POLISHED_ANDESITE: "bussejuvvon ándasihtta"
+  POLISHED_ANDESITE_SLAB: "bussejuvvon ándasihttapláhtta"
+  POLISHED_ANDESITE_STAIRS: "bussejuvvon ándasihttatráhppá"
+  POLISHED_BASALT: "bussejuvvon basaltta"
+  POLISHED_BLACKSTONE: "bussejuvvon čáhppesgeađgi"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "bussejuvvon čáhppesgeađgemuvrapláhtta"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "bussejuvvon čáhppesgeađgemuvratráhppá"
+  POLISHED_BLACKSTONE_BRICK_WALL: "bussejuvvon čáhppesgeađgemuvraseaidni"
+  POLISHED_BLACKSTONE_BRICKS: "bussejuvvon čáhppesgeađgemuvra"
+  POLISHED_BLACKSTONE_BUTTON: "bussejuvvon čáhppesgeađgeboallu"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "bussejuvvon čáhppesgeađgedeattopláhtta"
+  POLISHED_BLACKSTONE_SLAB: "bussejuvvon čáhppesgeađgepláhtta"
+  POLISHED_BLACKSTONE_STAIRS: "bussejuvvon čáhppesgeađgetráhppá"
+  POLISHED_BLACKSTONE_WALL: "bussejuvvon čáhppesgeađge seaidni"
+  POLISHED_DEEPSLATE: "bussejuvvon bodneráktu"
+  POLISHED_DEEPSLATE_SLAB: "bussejuvvon bodneráktopláhtta"
+  POLISHED_DEEPSLATE_STAIRS: "bussejuvvon bodneráktotráhppát"
+  POLISHED_DEEPSLATE_WALL: "bussejuvvon bodneráktoseaidni"
+  POLISHED_DIORITE: "bussejuvvon diorihtta"
+  POLISHED_DIORITE_SLAB: "bussejuvvon diorihttapláhtta"
+  POLISHED_DIORITE_STAIRS: "bussejuvvon diorihttatráhppá"
+  POLISHED_GRANITE: "bussejuvvon granihtta"
+  POLISHED_GRANITE_SLAB: "bussejuvvon granihttapláhtta"
+  POLISHED_GRANITE_STAIRS: "bussejuvvon granihttatráhppá"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "ajerássi"
+  POTATOES: "buđehat"
+  POTTED_ACACIA_SAPLING: "gilvojuvvon acaciamuoraš"
+  POTTED_ALLIUM: "gilvojuvvon ruksesluovvar"
+  POTTED_AZALEA_BUSH: "gilvojuvvon asalea"
+  POTTED_AZURE_BLUET: "gilvojuvvon nuorsá"
+  POTTED_BAMBOO: "gilvojuvvon bamboa"
+  POTTED_BIRCH_SAPLING: "gilvojuvvon soagáš"
+  POTTED_BLUE_ORCHID: "gilvojuvvon alit orkidéa"
+  POTTED_BROWN_MUSHROOM: "gilvojuvvon ruškesguoppar"
+  POTTED_CACTUS: "gilvojuvvon káktus"
+  POTTED_CHERRY_SAPLING: "gilvojuvvon kirsamuorjemuoraš"
+  POTTED_CORNFLOWER: "gilvojuvvon rohkarássi"
+  POTTED_CRIMSON_FUNGUS: "gilvojuvvon skárllatguoppar"
+  POTTED_CRIMSON_ROOTS: "gilvojuvvon skárllatruohttasat"
+  POTTED_DANDELION: "gilvojuvvon uvlorássi"
+  POTTED_DARK_OAK_SAPLING: "gilvojuvvon sevdnjes eaikamuoraš"
+  POTTED_DEAD_BUSH: "gilvojuvvon goikemiestta"
+  POTTED_FERN: "gilvojuvvon gáiska"
+  POTTED_FLOWERING_AZALEA_BUSH: "gilvojuvvon lieđđudeaddji asalea"
+  POTTED_JUNGLE_SAPLING: "gilvos suhkesvuovdemuoraš"
+  POTTED_LILY_OF_THE_VALLEY: "gilvojuvvon ávželieđđi"
+  POTTED_MANGROVE_PROPAGULE: "gilvojuvvon mangrovemuoraš"
+  POTTED_OAK_SAPLING: "gilvojuvvon eaikkaš"
+  POTTED_ORANGE_TULIP: "gilvojuvvon runta tulipána"
+  POTTED_OXEYE_DAISY: "gilvojuvvon báhpačehporas"
+  POTTED_PINK_TULIP: "gilvojuvvon čuvgesrukses tulipána"
+  POTTED_POPPY: "gilvojuvvon ajerássi"
+  POTTED_RED_MUSHROOM: "gilvojuvvon ruksesguoppar"
+  POTTED_RED_TULIP: "gilvojuvvon rukses tulipána"
+  POTTED_SPRUCE_SAPLING: "gilvojuvvon guosaš"
+  POTTED_TORCHFLOWER: "gilvojuvvon spáddárlieđđi"
+  POTTED_WARPED_FUNGUS: "gilvojuvvon bonjoguoppar"
+  POTTED_WARPED_ROOTS: "gilvojuvvon bonjoruohttasat"
+  POTTED_WHITE_TULIP: "gilvojuvvon vilges tulipána"
+  POTTED_WITHER_ROSE: "gilvojuvvon witherrosa"
+  POWDER_SNOW: "oppas"
+  POWDER_SNOW_CAULDRON: "oppasruitu"
+  POWERED_RAIL: "rávdnjás ruovdemáđđi"
+  PRISMARINE: "prismariidna"
+  PRISMARINE_BRICK_SLAB: "prismariidnamuvrapláhtta"
+  PRISMARINE_BRICK_STAIRS: "prismariidnamuvratráhppá"
+  PRISMARINE_BRICKS: "prismariidnamuvra"
+  PRISMARINE_SLAB: "prismariidnapláhtta"
+  PRISMARINE_STAIRS: "prismariidnatráhppá"
+  PRISMARINE_WALL: "prismariidnaseaidni"
+  PUMPKIN: "gurbbet"
+  PUMPKIN_STEM: "murbbet máddu"
+  PURPLE_BANNER: "sáhppes leavga"
+  PURPLE_BED: "sáhppes seaŋga"
+  PURPLE_CANDLE: "sáhppes ginttal"
+  PURPLE_CANDLE_CAKE: "gáhkku sáhppes gintaliin"
+  PURPLE_CARPET: "sáhppes láhtterátnu"
+  PURPLE_CONCRETE: "sáhppes betoŋŋa"
+  PURPLE_CONCRETE_POWDER: "sáhppes betoŋŋabulvvar"
+  PURPLE_GLAZED_TERRACOTTA: "sáhppes šelges terrakotta"
+  PURPLE_SHULKER_BOX: "sáhppes shulkerboksa"
+  PURPLE_STAINED_GLASS: "sáhppes glássa"
+  PURPLE_STAINED_GLASS_PANE: "sáhppes glássaruvtto"
+  PURPLE_TERRACOTTA: "sáhppes terrakotta"
+  PURPLE_WOOL: "sáhppes ullu"
+  PURPUR_BLOCK: "purpurblohkka"
+  PURPUR_PILLAR: "purpurstoalpu"
+  PURPUR_SLAB: "purpurpláhtta"
+  PURPUR_STAIRS: "purpurtráhppá"
+  QUARTZ_BLOCK: "kvárcablohkka"
+  QUARTZ_BRICKS: "kvarcamuvra"
+  QUARTZ_PILLAR: "kvárcastoalpu"
+  QUARTZ_SLAB: "kvárcapláhtta"
+  QUARTZ_STAIRS: "kvárcatráhppá"
+  RAIL: "ruovdemáđđi"
+  RAW_COPPER_BLOCK: "roavvaveaikeblohkka"
+  RAW_GOLD_BLOCK: "roavvagolleblohkka"
+  RAW_IRON_BLOCK: "roavvaruovdeblohkka"
+  RED_BANNER: "rukses leavga"
+  RED_BED: "rukses seaŋga"
+  RED_CANDLE: "rukses ginttal"
+  RED_CANDLE_CAKE: "gáhkku rukses gintaliin"
+  RED_CARPET: "rukses láhtterátnu"
+  RED_CONCRETE: "rukses betoŋŋa"
+  RED_CONCRETE_POWDER: "rukses betoŋŋabulvvar"
+  RED_GLAZED_TERRACOTTA: "rukses šelges terrakotta"
+  RED_MUSHROOM: "rukses guoppar"
+  RED_MUSHROOM_BLOCK: "rukses guopparblohkka"
+  RED_NETHER_BRICK_SLAB: "rukses nethermuvrabealli"
+  RED_NETHER_BRICK_STAIRS: "rukses nethermuvratráhppá"
+  RED_NETHER_BRICK_WALL: "rukses nethermuvra seaidni"
+  RED_NETHER_BRICKS: "rukses nethermuvra"
+  RED_SAND: "ruksessáttu"
+  RED_SANDSTONE: "﻿rukses sáttogeađgi"
+  RED_SANDSTONE_SLAB: "rukses sáttogeađgepláhtta"
+  RED_SANDSTONE_STAIRS: "rukses sáttogeađgetráhppá"
+  RED_SANDSTONE_WALL: "ruksessáttogeađge seaidni"
+  RED_SHULKER_BOX: "rukses shulkerboksa"
+  RED_STAINED_GLASS: "rukses glássa"
+  RED_STAINED_GLASS_PANE: "rukses glássaruvtto"
+  RED_TERRACOTTA: "rukses terrakotta"
+  RED_TULIP: "rukses tulipána"
+  RED_WOOL: "rukses ullu"
+  REDSTONE_BLOCK: "redstoneblohkka"
+  REDSTONE_LAMP: "redstonečuovga"
+  REDSTONE_ORE: "redstonemálbma"
+  REDSTONE_TORCH: "redstonespáiddar"
+  REDSTONE_WALL_TORCH: "redstone seaidnespáiddar"
+  REDSTONE_WIRE: "redstonebáddi"
+  REINFORCED_DEEPSLATE: "nanosmuvvan bodneráktu"
+  REPEATER: "redstone geardduheaddji"
+  REPEATING_COMMAND_BLOCK: "geardduheaddji kommándoblohkka"
+  RESPAWN_ANCHOR: "ealáskanáŋkor"
+  ROOTED_DIRT: "ruohtaseana"
+  ROSE_BUSH: "rosamiestta"
+  SAND: "sáttu"
+  SANDSTONE: "sáttogeađgi"
+  SANDSTONE_SLAB: "sáttogeađgepláhtta"
+  SANDSTONE_STAIRS: "sáttogeađgetráhppá"
+  SANDSTONE_WALL: "sáttogeađge seaidni"
+  SCAFFOLDING: "luovvi"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk-katalysáhtor"
+  SCULK_SENSOR: "sculk-dovddan"
+  SCULK_SHRIEKER: "sculk-riehči"
+  SCULK_VEIN: "sculk-suotna"
+  SEA_LANTERN: "mearračuovga"
+  SEA_PICKLE: "mearrašaddu"
+  SEAGRASS: "debbot"
+  SET_SPAWN: "ealáskanbáiki bidjon"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "guopparčuovga"
+  SHULKER_BOX: "shulkerboksa"
+  SKELETON_SKULL: "dákterikki oaiveskálžu"
+  SKELETON_WALL_SKULL: "dákterikki seaindeoaiveskálžu"
+  SLIME_BLOCK: "njivleblohkka"
+  SMALL_AMETHYST_BUD: "unna ametistaurbi"
+  SMALL_DRIPLEAF: "unna goaikolasta"
+  SMITHING_TABLE: "rávdebádjebeavdi"
+  SMOKER: "suovastanuvdna"
+  SMOOTH_BASALT: "fiinna basalta"
+  SMOOTH_QUARTZ: "livttis kvárcablohkka"
+  SMOOTH_QUARTZ_SLAB: "livttis kvárcapláhtta"
+  SMOOTH_QUARTZ_STAIRS: "livttis kvárcatráhppá"
+  SMOOTH_RED_SANDSTONE: "livttis rukses sáttogeađgi"
+  SMOOTH_RED_SANDSTONE_SLAB: "livttis rukses sáttogeađgepláhtta"
+  SMOOTH_RED_SANDSTONE_STAIRS: "livttis rukses sáttogeađgetráhppá"
+  SMOOTH_SANDSTONE: "livttis sáttogeađgi"
+  SMOOTH_SANDSTONE_SLAB: "livttis sáttogeađgepláhta"
+  SMOOTH_SANDSTONE_STAIRS: "livttis sáttogeađgetráhppá"
+  SMOOTH_STONE: "fiinna geađgi"
+  SMOOTH_STONE_SLAB: "livttis geađgepláhtta"
+  SNIFFER_EGG: "suosti monni"
+  SNOW: "muohta"
+  SNOW_BLOCK: "muohtablohkka"
+  SOUL_CAMPFIRE: "siellodollagáddi"
+  SOUL_FIRE: "siellodolla"
+  SOUL_LANTERN: "siellolámpá"
+  SOUL_SAND: "siellosáttu"
+  SOUL_SOIL: "sielloeana"
+  SOUL_TORCH: "siellospáiddar"
+  SOUL_WALL_TORCH: "siello seaidnespáiddár"
+  SPAWN_NOT_VALID: "dus ii leat ruovttuseaŋga dahje devdon ealáskanáŋkor dahje juobbá lei caggon"
+  SPAWNER: "stálloealáskahtti"
+  SPAWNER_DESC1: "geavat ealáskanmoni:"
+  SPAWNER_DESC2: "bidját guđe ealli ealáska"
+  SPONGE: "guopparas"
+  SPORE_BLOSSOM: "iđuslieđđi"
+  SPRUCE_BUTTON: "guossaboallu"
+  SPRUCE_DOOR: "guossauksa"
+  SPRUCE_FENCE: "guossaáidi"
+  SPRUCE_FENCE_GATE: "guossaverrát"
+  SPRUCE_HANGING_SIGN: "heŋgejuvvon guossagalba"
+  SPRUCE_LEAVES: "guossalasttat"
+  SPRUCE_LOG: "guossabelko"
+  SPRUCE_PLANKS: "guossafiellut"
+  SPRUCE_PRESSURE_PLATE: "guossadeattopláhtta"
+  SPRUCE_SAPLING: "guossamuoraš"
+  SPRUCE_SIGN: "guossagalba"
+  SPRUCE_SLAB: "guossapláhtta"
+  SPRUCE_STAIRS: "guossatráhppá"
+  SPRUCE_TRAPDOOR: "guossaluŋká"
+  SPRUCE_WALL_HANGING_SIGN: "heŋgejuvvon guossagalba seainnis"
+  SPRUCE_WALL_SIGN: "heŋgojuvvon guossagalba"
+  SPRUCE_WOOD: "guossamuorra"
+  STICKY_PISTON: "njivllas hoigi"
+  STONE: "geađgi"
+  STONE_BRICK_SLAB: "geađgemuvrapláhtta"
+  STONE_BRICK_STAIRS: "geađgemuvratráhppá"
+  STONE_BRICK_WALL: "geađgemuvra seaidni"
+  STONE_BRICKS: "geađgemuvra"
+  STONE_BUTTON: "geađgeboallu"
+  STONE_PRESSURE_PLATE: "geađgedeattopláhtta"
+  STONE_SLAB: "geađgepláhtta"
+  STONE_STAIRS: "geađgetráhppá"
+  STONECUTTER: "geađgečuohppi"
+  STRIPPED_ACACIA_LOG: "vullojuvvon acaciabelko"
+  STRIPPED_ACACIA_WOOD: "vullojuvvon acaciamuorra"
+  STRIPPED_BAMBOO_BLOCK: "ferkojuvvon bámbublohkka"
+  STRIPPED_BIRCH_LOG: "vullojuvvon soahkebelko"
+  STRIPPED_BIRCH_WOOD: "vullojuvvon soahkemuorra"
+  STRIPPED_CHERRY_LOG: "vullojuvvon kirsamuorjemuorrabelko"
+  STRIPPED_CHERRY_WOOD: "vullojuvvon kirsamuorjemuorra"
+  STRIPPED_CRIMSON_HYPHAE: "vullojuvvon skárllatsuorus"
+  STRIPPED_CRIMSON_STEM: "vullojuvvon skárllatađđa"
+  STRIPPED_DARK_OAK_LOG: "vullojuvvon sevdnjes eaikabelko"
+  STRIPPED_DARK_OAK_WOOD: "vullojuvvon sevdnjes eaikamuorra"
+  STRIPPED_JUNGLE_LOG: "vullojuvvon suhkkesvuovdebelko"
+  STRIPPED_JUNGLE_WOOD: "vullojuvvon suhkkesvuovdemuorra"
+  STRIPPED_MANGROVE_LOG: "vullojuvvon mangrovebelko"
+  STRIPPED_MANGROVE_WOOD: "vullojuvvon mangrovemuorra"
+  STRIPPED_OAK_LOG: "vullojuvvon eaikabelko"
+  STRIPPED_OAK_WOOD: "vullojuvvon eaikamuorra"
+  STRIPPED_SPRUCE_LOG: "vullojuvvon guossabelko"
+  STRIPPED_SPRUCE_WOOD: "vullojuvvon guossamuorra"
+  STRIPPED_WARPED_HYPHAE: "vullojuvvon bonjosuorus"
+  STRIPPED_WARPED_STEM: "vullojuvvon bonjonađđa"
+  STRUCTURE_BLOCK: "huskehusblohkka"
+  STRUCTURE_VOID: "guorossadji huksehusas"
+  SUGAR_CANE: "sohkargoalšu"
+  SUNFLOWER: "beaivvášlieđđi"
+  SUSPICIOUS_GRAVEL: "imašlaš čievra"
+  SUSPICIOUS_SAND: "imašlaš sáttu"
+  SWEET_BERRY_BUSH: "váranmiestta"
+  TALL_GRASS: "alla suoidni"
+  TALL_SEAGRASS: "allá debbot"
+  TARGET: "deaivvus"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "seđđes láse"
+  TNT: "tnt"
+  TORCH: "spáiddar"
+  TORCHFLOWER: "spáiddárlieđđi"
+  TORCHFLOWER_CROP: "spáiddárlieđđegilvva"
+  TRAPPED_CHEST: "darvvihahttingiisá"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "guossanbáddi"
+  TRIPWIRE_HOOK: "guossanbátti sággi"
+  TUBE_CORAL: "bohcci koralla"
+  TUBE_CORAL_BLOCK: "bohcci korallablohkka"
+  TUBE_CORAL_FAN: "bohcci koralla fan"
+  TUBE_CORAL_WALL_FAN: "bohcci koralla libardahtti"
+  TUFF: "tuffageađgi"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "galbarihccemonni"
+  TWISTING_VINES: "gierrinan goargŋunšaddu"
+  TWISTING_VINES_PLANT: "gierrinan goargŋunšattu rássi"
+  VERDANT_FROGLIGHT: "ruonásaš rihccecuoppočuovga"
+  VINE: "goargŋunsuoidni"
+  VOID_AIR: "gomuvuohta"
+  WALL_TORCH: "seaidne spáiddar"
+  WARPED_BUTTON: "bonjoboallu"
+  WARPED_DOOR: "bonjouksa"
+  WARPED_FENCE: "bonjoáidi"
+  WARPED_FENCE_GATE: "bonjoverrát"
+  WARPED_FUNGUS: "bonjoguoppar"
+  WARPED_HANGING_SIGN: "heŋgejuvvon bonjogalba"
+  WARPED_HYPHAE: "bonjosuorus"
+  WARPED_NYLIUM: "skuibesmirkoeana"
+  WARPED_PLANKS: "bonjofiellut"
+  WARPED_PRESSURE_PLATE: "bonjodeattopláhtta"
+  WARPED_ROOTS: "bonjoruohttasat"
+  WARPED_SIGN: "bonjogalba"
+  WARPED_SLAB: "bonjopláhtta"
+  WARPED_STAIRS: "bonjotráhppát"
+  WARPED_STEM: "bonjonađđa"
+  WARPED_TRAPDOOR: "bonjoluŋká"
+  WARPED_WALL_HANGING_SIGN: "heŋgejuvvon bonjogalba seainnis"
+  WARPED_WALL_SIGN: "heŋgojuvvon bonjogalba"
+  WARPED_WART_BLOCK: "bonjospártoblohkka"
+  WATER: "čáhci"
+  WATER_CAULDRON: "čáhceruitu"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "váksajuvvon veaikeblohkka"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "váksajuvvon čuhppon veaiki"
+  WAXED_CUT_COPPER_SLAB: "váksajuvvon čuhppon veaikebealli"
+  WAXED_CUT_COPPER_STAIRS: "váksajuvvon čuhppon veaiketráhppát"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "váksajuvvon suojehis veaiki"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "váksajuvvon suojehis čuhppon veaiki"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "váksajuvvon suojehis čuhppon veaikebealli"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "váksajuvvon suojehis čuhppon veaiketráhppát"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "váksajuvvon giimman veaiki"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "váksajuvvon giimman čuhppon veaiki"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "váksajuvvon giimman čuhppon veaikebealli"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "váksajuvvon giimman čuhppon veaiketráhppát"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "váksajuvvon giimmagoahtan veaiki"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "váksajuvvon giimmagoahtan čuhppon veaiki"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "váksajuvvon giimmagoahtan čuhppon veaikebealli"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "váksajuvvon giimmagoahtan čuhppon veaiketráhppát"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "giimmagoahtan veaiki"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "giimmagoahtan čuhppon veaiki"
+  WEATHERED_CUT_COPPER_SLAB: "giimmagoahtan čuhppon veaikebealli"
+  WEATHERED_CUT_COPPER_STAIRS: "giimmagoahtan čuhppon veaiketráhppát"
+  WEEPING_VINES: "ganjaldan goargŋunšaddu"
+  WEEPING_VINES_PLANT: "ganjaldan goargŋunšattu rássi"
+  WET_SPONGE: "njuoska guopparas"
+  WHEAT: "nisugordne siepma"
+  WHITE_BANNER: "vilges leavga"
+  WHITE_BED: "vilges seaŋga"
+  WHITE_CANDLE: "vilges ginttal"
+  WHITE_CANDLE_CAKE: "gáhkku vilges gintaliin"
+  WHITE_CARPET: "vilges láhtterátnu"
+  WHITE_CONCRETE: "vilges betoŋŋa"
+  WHITE_CONCRETE_POWDER: "vilges betoŋŋabulvvar"
+  WHITE_GLAZED_TERRACOTTA: "vilges šelges terrakotta"
+  WHITE_SHULKER_BOX: "vilges shulkerboksa"
+  WHITE_STAINED_GLASS: "vilges glássa"
+  WHITE_STAINED_GLASS_PANE: "vilges glássaruvtto"
+  WHITE_TERRACOTTA: "vilges terrakotta"
+  WHITE_TULIP: "vilges tulipána"
+  WHITE_WOOL: "vilges ullu"
+  WITHER_ROSE: "witherlieđđi"
+  WITHER_SKELETON_SKULL: "wither dákterikki oaiveskálžu"
+  WITHER_SKELETON_WALL_SKULL: "wither dákterikki seaidne oaiveskálžu"
+  YELLOW_BANNER: "fiskes leavga"
+  YELLOW_BED: "fiskes seaŋga"
+  YELLOW_CANDLE: "fiskes ginttal"
+  YELLOW_CANDLE_CAKE: "gáhkku fiskes gintaliin"
+  YELLOW_CARPET: "fiskes láhtterátnu"
+  YELLOW_CONCRETE: "fiskes betoŋŋa"
+  YELLOW_CONCRETE_POWDER: "fiskes betoŋŋabulvvar"
+  YELLOW_GLAZED_TERRACOTTA: "fiskes šelges terrakotta"
+  YELLOW_SHULKER_BOX: "fiskes shulkerboksa"
+  YELLOW_STAINED_GLASS: "fiskes glássa"
+  YELLOW_STAINED_GLASS_PANE: "fiskes glássaruvtto"
+  YELLOW_TERRACOTTA: "fiskes terrakotta"
+  YELLOW_WOOL: "fiskes ullu"
+  ZOMBIE_HEAD: "jámeža oaivi"
+  ZOMBIE_WALL_HEAD: "jámeža seaidneoaivi"
+  ACACIA_BOAT: "acaciafanas"
+  ACACIA_CHEST_BOAT: "acaciafanas mas giisá"
+  ALLAY_SPAWN_EGG: "hálddi ealáskanmonni"
+  AMETHYST_SHARD: "ametistamoallu"
+  ANGLER_POTTERY_SHARD: "vuokka kruhkkamoallu"
+  ANGLER_POTTERY_SHERD: "vuokka kruhkkamoallu"
+  APPLE: "ebel"
+  ARCHER_POTTERY_SHARD: "dávgebáhčči kruhkkamoallu"
+  ARCHER_POTTERY_SHERD: "dávgebáhčči kruhkkamoallu"
+  ARMOR_STAND: "suodjebiktasiid čajeheaddji"
+  ARMS_UP_POTTERY_SHARD: "geigejuvvon gieđaid ruhkkamoallu"
+  ARMS_UP_POTTERY_SHERD: "geigejuvvon gieđaid kruhkkamoallu"
+  ARROW: "njuolla"
+  AXOLOTL_BUCKET: "aksolohtalskállu"
+  AXOLOTL_SPAWN_EGG: "aksolohtala ealáskanmonni"
+  BAKED_POTATO: "liggejuvvon buđet"
+  BAMBOO_CHEST_RAFT: "bámbufanas mas giisá"
+  BAMBOO_RAFT: "bámbufanas"
+  BAT_SPAWN_EGG: "girdisáhpána ealáskanmonni"
+  BEE_SPAWN_EGG: "uvllu ealáskanmonni"
+  BEEF: "njuoska gusabiergu"
+  BEETROOT: "ruksesruohtas"
+  BEETROOT_SEEDS: "ruksesruohtasgilvagat"
+  BEETROOT_SOUP: "ruksesruohtasmálli"
+  BIRCH_BOAT: "soahkefanas"
+  BIRCH_CHEST_BOAT: "soahkefanas mas giisá"
+  BLACK_DYE: "čáhppes ivdni"
+  BLADE_POTTERY_SHARD: "ávjju kruhkkamoallu"
+  BLADE_POTTERY_SHERD: "ávjju kruhkkamoallu"
+  BLAZE_POWDER: "buollistálu bulvvar"
+  BLAZE_ROD: "buollistálu sággi"
+  BLAZE_SPAWN_EGG: "buollistálu ealáskanmonni"
+  BLUE_DYE: "alit ivdni"
+  BONE: "dákti"
+  BONE_MEAL: "dáktejáffu"
+  BOOK: "girji"
+  BOW: "dávgi"
+  BOWL: "bollu"
+  BREAD: "láibi"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "vuošši kruhkkamoallu"
+  BREWER_POTTERY_SHERD: "vuošši kruhkkamoallu"
+  BRICK: "muvrabihttá"
+  BROWN_DYE: "ruškes ivdni"
+  BRUSH: "kusta"
+  BUCKET: "gievdni"
+  BUNDLE: "dávvirbursa"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "buollán kruhkkamoallu"
+  BURN_POTTERY_SHERD: "buollán kruhkkamoallu"
+  CAMEL_SPAWN_EGG: "kamela ealáskanmonni"
+  CARROT: "rušpi"
+  CARROT_ON_A_STICK: "rušpi oaggunstávrras"
+  CAT_SPAWN_EGG: "bussá ealáskanmonni"
+  CAVE_SPIDER_SPAWN_EGG: "hoalluheavnni ealáskanmonni"
+  CHAINMAIL_BOOTS: "viđjegápmagat"
+  CHAINMAIL_CHESTPLATE: "viđjeraddepánsár"
+  CHAINMAIL_HELMET: "viđjejealbma"
+  CHAINMAIL_LEGGINGS: "viđjebuvssat"
+  CHARCOAL: "čađđa"
+  CHERRY_BOAT: "kirsamuorjemuorrafanas"
+  CHERRY_CHEST_BOAT: "kirsamuorjemuorrafanas mas giisá"
+  CHEST_MINECART: "roggangielká mas giisá"
+  CHICKEN: "njuoska vuoncábiergu"
+  CHICKEN_SPAWN_EGG: "vuoncá ealáskanmonni"
+  CHORUS_FRUIT: "chorusšattus"
+  CLAY_BALL: "láiraspábba"
+  CLOCK: "diibmu"
+  COAL: "koalla"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  COCOA_BEANS: "kakáošaddu"
+  COD: "njuoska dorski"
+  COD_BUCKET: "dorskeskállu"
+  COD_SPAWN_EGG: "dorski ealáskanmonni"
+  COMMAND_BLOCK_MINECART: "roggangielká mas kommándoblohkka"
+  COMPASS: "kompássa"
+  COOKED_BEEF: "steaika"
+  COOKED_CHICKEN: "basson vuoncábiergu"
+  COOKED_COD: "basson dorski"
+  COOKED_MUTTON: "basson lábbabiergu"
+  COOKED_PORKCHOP: "basson spiidnečoarbealli"
+  COOKED_RABBIT: "basson njoammelbiergu"
+  COOKED_SALMON: "basson luossa"
+  COOKIE: "keaksa"
+  COPPER_INGOT: "veaiki"
+  COW_SPAWN_EGG: "gusa ealáskanmonni"
+  CREEPER_BANNER_PATTERN: "leavga minsttár"
+  CREEPER_BANNER_PATTERN_DESC: "creeperminsttar"
+  CREEPER_SPAWN_EGG: "creepera ealáskanmonni"
+  CROSSBOW: "dávgebissu"
+  CROSSBOW_PROJECTILE: "luođđa:"
+  CYAN_DYE: "turkisa idvni"
+  DANGER_POTTERY_SHARD: "várálašvuođa kruhkkamoallu"
+  DANGER_POTTERY_SHERD: "várálašvuođa kruhkkamoallu"
+  DARK_OAK_BOAT: "sevdnjes eaikafanas"
+  DARK_OAK_CHEST_BOAT: "sevdnjeseaikafanas mas giisá"
+  DEBUG_STICK: "sivvaohcansoabbi"
+  DEBUG_STICK_EMPTY: "%s eai leat mearrádusat"
+  DEBUG_STICK_SELECT: "válljejuvvon \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" šadda %s"
+  DIAMOND: "diamánta"
+  DIAMOND_AXE: "diamántaákšu"
+  DIAMOND_BOOTS: "diamántagápmagat"
+  DIAMOND_CHESTPLATE: "diamántaraddepánsár"
+  DIAMOND_HELMET: "diamántajealbma"
+  DIAMOND_HOE: "diamántaguohkki"
+  DIAMOND_HORSE_ARMOR: "heastta diamántasuodjalus"
+  DIAMOND_LEGGINGS: "diamántabuvssat"
+  DIAMOND_PICKAXE: "diamántabiikaákšu"
+  DIAMOND_SHOVEL: "diamántagoaivu"
+  DIAMOND_SWORD: "diamántamiehkki"
+  DISC_FRAGMENT_5: "skearrobihttáš"
+  DISC_FRAGMENT_5_DESC: "musihkkaskearru - 5"
+  DOLPHIN_SPAWN_EGG: "delfiinna ealáskanmonni"
+  DONKEY_SPAWN_EGG: "ása ealáskanmonni"
+  DRAGON_BREATH: "drágavuoiŋŋastat"
+  DRIED_KELP: "goikaduvvon stárra"
+  DROWNED_SPAWN_EGG: "heavvanan ealáskanmonni"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  ECHO_SHARD: "skádjamoallu"
+  EGG: "monni"
+  ELDER_GUARDIAN_SPAWN_EGG: "dološ várjaleaddji ealáskanmonni"
+  ELYTRA: "soajit"
+  EMERALD: "emerálda"
+  ENCHANTED_BOOK: "noidojuvvon girji"
+  ENCHANTED_GOLDEN_APPLE: "noidojuvvon golleebel"
+  END_CRYSTAL: "endorkristálla"
+  ENDER_DRAGON_SPAWN_EGG: "endordrága ealáskanmonni"
+  ENDER_EYE: "endorčalbmi"
+  ENDER_PEARL: "endorhelbmo"
+  ENDERMAN_SPAWN_EGG: "endorolbmo ealáskanmonni"
+  ENDERMITE_SPAWN_EGG: "endermite ealáskanmonni"
+  EVOKER_SPAWN_EGG: "gonstošeaddji ealáskanmonni"
+  EXPERIENCE_BOTTLE: "noaidobohtal"
+  EXPLORER_POTTERY_SHARD: "suokkardeaddji kruhkkamoallu"
+  EXPLORER_POTTERY_SHERD: "suokkardeaddji kruhkkamoallu"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  FEATHER: "dolgi"
+  FERMENTED_SPIDER_EYE: "fermenterejuvvon heavdnečalbmi"
+  FILLED_MAP: "kárta"
+  FIRE_CHARGE: "buolligeađgi"
+  FIREWORK_ROCKET: "rakeahtta"
+  FIREWORK_ROCKET_FLIGHT: "girdináigi:"
+  FIREWORK_STAR: "rahkeahttanásti"
+  FIREWORK_STAR_BLACK: "čáhppat"
+  FIREWORK_STAR_BLUE: "alit"
+  FIREWORK_STAR_BROWN: "ruškat"
+  FIREWORK_STAR_CUSTOM_COLOR: "iešlágan"
+  FIREWORK_STAR_CYAN: "turkiisa"
+  FIREWORK_STAR_FADE_TO: "guovssut"
+  FIREWORK_STAR_FLICKER: "ravkkuhit"
+  FIREWORK_STAR_GRAY: "ránis"
+  FIREWORK_STAR_GREEN: "ruoná"
+  FIREWORK_STAR_LIGHT_BLUE: "čuvgesalit"
+  FIREWORK_STAR_LIGHT_GRAY: "čuovgesránes"
+  FIREWORK_STAR_LIME: "čuvesruoná"
+  FIREWORK_STAR_MAGENTA: "čuvgessáhppes"
+  FIREWORK_STAR_ORANGE: "runta"
+  FIREWORK_STAR_PINK: "čuvgesrukses"
+  FIREWORK_STAR_PURPLE: "sáhppat"
+  FIREWORK_STAR_RED: "ruoksat"
+  FIREWORK_STAR_SHAPE: "imašminsttar"
+  FIREWORK_STAR_SHAPE_BURST: "reatká miehtá"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperlagan"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "stuora luođđa"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "unna luođđa"
+  FIREWORK_STAR_SHAPE_STAR: "nástelagan"
+  FIREWORK_STAR_TRAIL: "bálggis"
+  FIREWORK_STAR_WHITE: "vielgat"
+  FIREWORK_STAR_YELLOW: "fiskat"
+  FISHING_ROD: "oaggunstávrá"
+  FLINT: "didnu"
+  FLINT_AND_STEEL: "cahkkehanruovdi"
+  FLOWER_BANNER_PATTERN: "leavgamálle"
+  FLOWER_BANNER_PATTERN_DESC: "lieđđeminsttar"
+  FOX_SPAWN_EGG: "riebana ealáskanmonni"
+  FRIEND_POTTERY_SHARD: "ustiba kruhkkamoallu"
+  FRIEND_POTTERY_SHERD: "ustiba kruhkkamoallu"
+  FROG_SPAWN_EGG: "rihccecubbo ealáskanmonni"
+  FURNACE_MINECART: "roggangielká mas uvdna"
+  GHAST_SPAWN_EGG: "ghast ealáskanmonni"
+  GHAST_TEAR: "ghast gaŋaldat"
+  GLASS_BOTTLE: "lásebohtal"
+  GLISTERING_MELON_SLICE: "šelges meluvdnabihttáš"
+  GLOBE_BANNER_PATTERN: "leavgamálle"
+  GLOBE_BANNER_PATTERN_DESC: "máilmmeminsttar"
+  GLOW_BERRIES: "čuovgi muorjjit"
+  GLOW_INK_SAC: "áhcagas ivdnečoalli"
+  GLOW_ITEM_FRAME: "áhcagas dávvirrámma"
+  GLOW_SQUID_SPAWN_EGG: "áhcagas áhkárguoli ealáskanmonni"
+  GLOWSTONE_DUST: "čuovgageađggedopmu"
+  GOAT_HORN: "gáicačoarvi"
+  GOAT_SPAWN_EGG: "gáicca ealáskanmonni"
+  GOLD_INGOT: "golli"
+  GOLD_NUGGET: "gollebihttáš"
+  GOLDEN_APPLE: "golleebel"
+  GOLDEN_AXE: "golleákšu"
+  GOLDEN_BOOTS: "gollegápmagat"
+  GOLDEN_CARROT: "gollerušpi"
+  GOLDEN_CHESTPLATE: "golleraddepánsár"
+  GOLDEN_HELMET: "gollejealbma"
+  GOLDEN_HOE: "golleguohkki"
+  GOLDEN_HORSE_ARMOR: "heastta gollesuodjalus"
+  GOLDEN_LEGGINGS: "gollebuvssat"
+  GOLDEN_PICKAXE: "gollebiikaákšu"
+  GOLDEN_SHOVEL: "gollegoaivu"
+  GOLDEN_SWORD: "gollemiehkki"
+  GRAY_DYE: "ránes ivdni"
+  GREEN_DYE: "ruoná ivdni"
+  GUARDIAN_SPAWN_EGG: "várjaleaddji ealáskanmonni"
+  GUNPOWDER: "rukta"
+  HEART_OF_THE_SEA: "mearaváibmu"
+  HEART_POTTERY_SHARD: "váimmu kruhkkamoallu"
+  HEART_POTTERY_SHERD: "váimmu kruhkkamoallu"
+  HEARTBREAK_POTTERY_SHARD: "váibmoduolbmi kruhkkamoallu"
+  HEARTBREAK_POTTERY_SHERD: "váibmoduolbmi kruhkkamoallu"
+  HOGLIN_SPAWN_EGG: "hoglina ealáskanmonni"
+  HONEY_BOTTLE: "honnetbohtal"
+  HONEYCOMB: "honnetbihttá"
+  HOPPER_MINECART: "roggangielká mas njammi"
+  HORSE_SPAWN_EGG: "heasta ealáskanmonni"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  HOWL_POTTERY_SHARD: "hovluma kruhkkamoallu"
+  HOWL_POTTERY_SHERD: "hovluma kruhkkamoallu"
+  HUSK_SPAWN_EGG: "goikejámeža ealáskanmonni"
+  INK_SAC: "čáhppesivdnečoalli"
+  IRON_AXE: "ruovdeákšu"
+  IRON_BOOTS: "ruovdegápmagat"
+  IRON_CHESTPLATE: "ruovderaddepánsár"
+  IRON_GOLEM_SPAWN_EGG: "ruovdejiehtanasa ealáskanmonni"
+  IRON_HELMET: "ruovdejealbma"
+  IRON_HOE: "ruovdeguohkki"
+  IRON_HORSE_ARMOR: "heastta ruovdesuodjalus"
+  IRON_INGOT: "ruovdi"
+  IRON_LEGGINGS: "ruovdebuvssat"
+  IRON_NUGGET: "ruovdebihttáš"
+  IRON_PICKAXE: "ruovdebiikaákšu"
+  IRON_SHOVEL: "ruovdegoaivu"
+  IRON_SWORD: "ruovdemiehkki"
+  ITEM_FRAME: "dávvirrámma"
+  JUNGLE_BOAT: "suhkesvuovdefanas"
+  JUNGLE_CHEST_BOAT: "suhkesvuovdefanas mas giisá"
+  KNOWLEDGE_BOOK: "máhttogirji"
+  LAPIS_LAZULI: "lasura"
+  LAVA_BUCKET: "lavagievdni"
+  LEAD: "lávži"
+  LEATHER: "sisti"
+  LEATHER_BOOTS: "sistegápmagat"
+  LEATHER_CHESTPLATE: "sistebáidi"
+  LEATHER_HELMET: "sistegahpir"
+  LEATHER_HORSE_ARMOR: "heastta náhkkesuodjalus"
+  LEATHER_LEGGINGS: "sistebuvssat"
+  LIGHT_BLUE_DYE: "čuvgesalit ivdni"
+  LIGHT_GRAY_DYE: "čuovgesránes ivdni"
+  LIME_DYE: "čuvgesruoná ivdni"
+  LINGERING_POTION: "bissovaš jugus"
+  LINGERING_POTION_EFFECT_AWKWARD: "bissovaš vuođđojugus"
+  LINGERING_POTION_EFFECT_EMPTY: "bissovaš duojatkas jugus"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "bissovaš dollagierdevašvuođa noaidejugus"
+  LINGERING_POTION_EFFECT_HARMING: "bissovaš sorbmema noaidejugus"
+  LINGERING_POTION_EFFECT_HEALING: "bissovaš fáhkkaheakka noaidejugus"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "bissovaš geaidagasvuođa noaidejugus"
+  LINGERING_POTION_EFFECT_LEAPING: "bissovaš liigenjuikema noaidejugus"
+  LINGERING_POTION_EFFECT_LEVITATION: "bissovaš girdima noaidejugus"
+  LINGERING_POTION_EFFECT_LUCK: "bissovaš lihku noaidejugus"
+  LINGERING_POTION_EFFECT_MUNDANE: "dábálaš bissovaš jugus"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "bissovaš idjaoainnu noaidejugus"
+  LINGERING_POTION_EFFECT_POISON: "bissovaš mirkkolaš noaidejugus"
+  LINGERING_POTION_EFFECT_REGENERATION: "bissovaš heaggaoažžuma noaidejugus"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "bissovaš njoazesgahčči noaidejugus"
+  LINGERING_POTION_EFFECT_SLOWNESS: "bissovaš hiđisvuođa noaidejugus"
+  LINGERING_POTION_EFFECT_STRENGTH: "bissovaš vuoimmi noaidejugus"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "bissovaš johtilvuođa noaidejugus"
+  LINGERING_POTION_EFFECT_THICK: "suhkkes bissovaš jugus"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "bissovaš galbarihcceipmila noaidejugus"
+  LINGERING_POTION_EFFECT_WATER: "bissovaš čáhcebohtal"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "bissovaš čáhcevuoiŋŋama noaidejugus"
+  LINGERING_POTION_EFFECT_WEAKNESS: "bissovaš geanohisvuođa noaidejugus"
+  LLAMA_SPAWN_EGG: "llama ealáskanmonni"
+  LODESTONE_COMPASS: "láidengeađgekompássa"
+  MAGENTA_DYE: "čuvgessáhppes ivdni"
+  MAGMA_CREAM: "magmakreamma"
+  MAGMA_CUBE_SPAWN_EGG: "magmaealli ealáskanmonni"
+  MANGROVE_BOAT: "mangrovefanas"
+  MANGROVE_CHEST_BOAT: "mangrovefanas mas giisá"
+  MAP: "guoros kárta"
+  MELON_SEEDS: "meluvdnagilvagat"
+  MELON_SLICE: "meluvdna bihttá"
+  MILK_BUCKET: "mielkegievdni"
+  MINECART: "roggangielká"
+  MINER_POTTERY_SHARD: "ruvkeroggi kruhkkamoallu"
+  MINER_POTTERY_SHERD: "ruvkeroggi kruhkkamoallu"
+  MOJANG_BANNER_PATTERN: "leavgamálle"
+  MOJANG_BANNER_PATTERN_DESC: "mojangminsttar"
+  MOOSHROOM_SPAWN_EGG: "mooshrooma ealáskanmonni"
+  MOURNER_POTTERY_SHARD: "morašeaddji kruhkkamoallu"
+  MOURNER_POTTERY_SHERD: "morašeaddji kruhkkamoallu"
+  MULE_SPAWN_EGG: "muvlla ealáskanmonni"
+  MUSHROOM_STEW: "guopparmálli"
+  MUSIC_DISC_11: "musihkkaskearru"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "musihkkaskearru"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "musihkkaskearru"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "musihkkaskearru"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "musihkkaskearru"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "musihkkaskearru"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "musihkkaskearru"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "musihkkaskearru"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "musihkkaskearru"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "musihkkaskearru"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "musihkkaskearru"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "musihkkaskearru"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "musihkkaskearru"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "musihkkaskearru"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "musihkkaskearru"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "musihkkaskearru"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "njuoska lábbabiergu"
+  NAME_TAG: "nammalihppu"
+  NAUTILUS_SHELL: "nautilus skálžu"
+  NETHER_BRICK: "nethermuvra"
+  NETHER_STAR: "nether násti"
+  NETHER_WART: "netherspártu"
+  NETHERITE_AXE: "netheriitaákšu"
+  NETHERITE_BOOTS: "netheriitagapmagat"
+  NETHERITE_CHESTPLATE: "netheriitaraddepánsár"
+  NETHERITE_HELMET: "netheriitajealbma"
+  NETHERITE_HOE: "netheriitaguohkki"
+  NETHERITE_INGOT: "netheriita"
+  NETHERITE_LEGGINGS: "netheriitabuvssat"
+  NETHERITE_PICKAXE: "netheriitabiikaákšu"
+  NETHERITE_SCRAP: "netheriitabihttážat"
+  NETHERITE_SHOVEL: "netheriitagoaivu"
+  NETHERITE_SWORD: "netheriitamiehkki"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "rávdebádjemálle"
+  OAK_BOAT: "eaikafanas"
+  OAK_CHEST_BOAT: "eaikafanas mas giisá"
+  OCELOT_SPAWN_EGG: "meahccebussá ealáskanmonni"
+  ORANGE_DYE: "runta ivdni"
+  PAINTING: "govva"
+  PANDA_SPAWN_EGG: "panda ealáskanmonni"
+  PAPER: "bábir"
+  PARROT_SPAWN_EGG: "papegoia ealáskanmonni"
+  PHANTOM_MEMBRANE: "idjagopmi cuozza"
+  PHANTOM_SPAWN_EGG: "idjagopmi ealáskanmonni"
+  PIG_SPAWN_EGG: "spiinni ealáskanmonni"
+  PIGLIN_BANNER_PATTERN: "leavgamálle"
+  PIGLIN_BANNER_PATTERN_DESC: "njunni"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin bahálačča ealáskanmonni"
+  PIGLIN_SPAWN_EGG: "piglina ealáskanmonni"
+  PILLAGER_SPAWN_EGG: "rievvára ealáskanmonni"
+  PINK_DYE: "čuvgesrukses ivdni"
+  PITCHER_POD: "muggarássekruhkka"
+  PLENTY_POTTERY_SHARD: "valjitvuođa kruhkkamoallu"
+  PLENTY_POTTERY_SHERD: "valjitvuođa kruhkkamoallu"
+  POISONOUS_POTATO: "mirkkolaš buđet"
+  POLAR_BEAR_SPAWN_EGG: "jiekŋaguovžža ealáskanmonni"
+  POPPED_CHORUS_FRUIT: "rahpasan chorusšattus"
+  PORKCHOP: "njuoska spiidnečoarbealli"
+  POTATO: "buđet"
+  POTION: "noaidejugus"
+  POTION_EFFECT_AWKWARD: "vuođđojugus"
+  POTION_EFFECT_EMPTY: "duojatkas jugus"
+  POTION_EFFECT_FIRE_RESISTANCE: "dollagierdevašvuođa noaidejugus"
+  POTION_EFFECT_HARMING: "sorbmema noaidejugus"
+  POTION_EFFECT_HEALING: "fáhkkaheakka noaidejugus"
+  POTION_EFFECT_INVISIBILITY: "geaidagasvuođa noaidejugus"
+  POTION_EFFECT_LEAPING: "liigenjuikema noaidejugus"
+  POTION_EFFECT_LEVITATION: "girdima noaidejugus"
+  POTION_EFFECT_LUCK: "lihku noaidejugus"
+  POTION_EFFECT_MUNDANE: "dábálaš jugus"
+  POTION_EFFECT_NIGHT_VISION: "idjaoainnu noaidejugus"
+  POTION_EFFECT_POISON: "mirkkolaš noaidejugus"
+  POTION_EFFECT_REGENERATION: "heaggaoažžuma noaidejugus"
+  POTION_EFFECT_SLOW_FALLING: "njoazesgahčči noaidejugus"
+  POTION_EFFECT_SLOWNESS: "hiđisvuođa noaidejugus"
+  POTION_EFFECT_STRENGTH: "vuoimmi noaidejugus"
+  POTION_EFFECT_SWIFTNESS: "johtilvuođa noaidejugus"
+  POTION_EFFECT_THICK: "suhkkes jugus"
+  POTION_EFFECT_TURTLE_MASTER: "galbarihcceipmila noaidejugus"
+  POTION_EFFECT_WATER: "čáhcebohtal"
+  POTION_EFFECT_WATER_BREATHING: "čáhcevuoiŋŋama noaidejugus"
+  POTION_EFFECT_WEAKNESS: "geanohisvuođa noaidejugus"
+  POTTERY_SHARD_ARCHER: "dávgebáhčči kruhkkamoallu"
+  POTTERY_SHARD_ARMS_UP: "geigejuvvon gieđaid kruhkkamoallu"
+  POTTERY_SHARD_PRIZE: "bálkkášumi ruhkkamoallu"
+  POTTERY_SHARD_SKULL: "oaiveskálžžu ruhkkamoallu"
+  POWDER_SNOW_BUCKET: "oppasgievdni"
+  PRISMARINE_CRYSTALS: "prismariidnakristálla"
+  PRISMARINE_SHARD: "prismariidnamoallu"
+  PRIZE_POTTERY_SHARD: "bálkkášumi ruhkkamoallu"
+  PRIZE_POTTERY_SHERD: "bálkkášumi kruhkkamoallu"
+  PUFFERFISH: "mirkoguolli"
+  PUFFERFISH_BUCKET: "mirkoguolleskállu"
+  PUFFERFISH_SPAWN_EGG: "mirkoguoli ealáskanmonni"
+  PUMPKIN_PIE: "gurbbet paia"
+  PUMPKIN_SEEDS: "murbbetgilvagat"
+  PURPLE_DYE: "sáhppes ivdni"
+  QUARTZ: "netherkvártsa"
+  RABBIT: "njuoska njoammelbiergu"
+  RABBIT_FOOT: "njoammeljuolgi"
+  RABBIT_HIDE: "njoammelduolji"
+  RABBIT_SPAWN_EGG: "njoammila ealáskanmonni"
+  RABBIT_STEW: "njoammelmálli"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  RAVAGER_SPAWN_EGG: "mollenstálu ealáskanmonni"
+  RAW_COPPER: "roavvaveaiki"
+  RAW_GOLD: "roavvagolli"
+  RAW_IRON: "roavvaruovdi"
+  RECOVERY_COMPASS: "máhcahankompássa"
+  RED_DYE: "rukses ivdni"
+  REDSTONE: "redstonedopmu"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  ROTTEN_FLESH: "guohcagan biergu"
+  SADDLE: "riidensálat"
+  SALMON: "njuoska luossa"
+  SALMON_BUCKET: "luossaskállu"
+  SALMON_SPAWN_EGG: "luosa ealáskanmonni"
+  SCUTE: "skálžu"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  SHEAF_POTTERY_SHARD: "bonjaldaga kruhkkamoallu"
+  SHEAF_POTTERY_SHERD: "bonjaldaga kruhkkamoallu"
+  SHEARS: "skárret"
+  SHEEP_SPAWN_EGG: "sávzza ealáskanmonni"
+  SHELTER_POTTERY_SHARD: "suoji kruhkkamoallu"
+  SHELTER_POTTERY_SHERD: "suoji kruhkkamoallu"
+  SHIELD: "galba"
+  SHIELD_BLACK: "čáhppes galba"
+  SHIELD_BLUE: "alit galba"
+  SHIELD_BROWN: "ruškes galba"
+  SHIELD_CYAN: "turkiisa galba"
+  SHIELD_GRAY: "ránes galba"
+  SHIELD_GREEN: "ruoná galba"
+  SHIELD_LIGHT_BLUE: "čuvgesalit galba"
+  SHIELD_LIGHT_GRAY: "čuvgesránes galba"
+  SHIELD_LIME: "čuvgesruoná galba"
+  SHIELD_MAGENTA: "čuvgessáhppes galba"
+  SHIELD_ORANGE: "runta galba"
+  SHIELD_PINK: "čuvgesrukses galba"
+  SHIELD_PURPLE: "sáhppes galba"
+  SHIELD_RED: "rukses galba"
+  SHIELD_WHITE: "vilges galba"
+  SHIELD_YELLOW: "fiskes galba"
+  SHULKER_SHELL: "shulker skálžu"
+  SHULKER_SPAWN_EGG: "shulkera ealáskanmonni"
+  SIGN: "galba"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  SILVERFISH_SPAWN_EGG: "silbasáhpána ealáskanmonni"
+  SKELETON_HORSE_SPAWN_EGG: "dákteriggeheasta ealáskanmonni"
+  SKELETON_SPAWN_EGG: "dákterikki ealáskanmonni"
+  SKULL_BANNER_PATTERN: "leavgamálle"
+  SKULL_BANNER_PATTERN_DESC: "oaiveskálžominsttar"
+  SKULL_POTTERY_SHARD: "oaiveskálžžu ruhkkamoallu"
+  SKULL_POTTERY_SHERD: "oaiveskálžžu kruhkkamoallu"
+  SLIME_BALL: "njivlespábba"
+  SLIME_SPAWN_EGG: "njivleealli ealáskanmonni"
+  SMITHING_TEMPLATE: "rávdebádjemálle"
+  SMITHING_TEMPLATE_APPLIES_TO: "gullá dása:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "lasit bárra dahje kristálla"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "suodjalusbivttas"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "lasit suodjebiktasa"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "materiálat & kristállat"
+  SMITHING_TEMPLATE_INGREDIENTS: "ávnnasoasit:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "lasit netheriita"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamántasuodjalus"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "lasit diamánta suodjebiktasa vearjju dahje reaiddu"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheriita"
+  SMITHING_TEMPLATE_UPGRADE: "ođasmahtte: "
+  SNIFFER_SPAWN_EGG: "sustti ealáskanmonni"
+  SNORT_POTTERY_SHARD: "sustašeami kruhkkamoallu"
+  SNORT_POTTERY_SHERD: "sustašeami kruhkkamoallu"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  SNOW_GOLEM_SPAWN_EGG: "muohtaáddjá ealáskanmonni"
+  SNOWBALL: "muohtačahkir"
+  SPECTRAL_ARROW: "suotnjar njuolla"
+  SPIDER_EYE: "heavdnečalbmi"
+  SPIDER_SPAWN_EGG: "heavnni ealáskanmonni"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  SPLASH_POTION: "diškalanjugus"
+  SPLASH_POTION_EFFECT_AWKWARD: "vuođđodiškalanjugus"
+  SPLASH_POTION_EFFECT_EMPTY: "duojakas diškalanjugus"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "diškalanjugus mas dolla gierdevašvuohta"
+  SPLASH_POTION_EFFECT_HARMING: "diškalanjugus mas sorbmen"
+  SPLASH_POTION_EFFECT_HEALING: "diškalanjugus mas fáhkkaheagga"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "diškalanjugus mas geaidagasvuohta"
+  SPLASH_POTION_EFFECT_LEAPING: "diškalanjugus mas njuiken"
+  SPLASH_POTION_EFFECT_LEVITATION: "diškalanjugus mas girdin"
+  SPLASH_POTION_EFFECT_LUCK: "diškalanjugus mas lihkku"
+  SPLASH_POTION_EFFECT_MUNDANE: "dábálaš diškalanjugus"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "diškalanjugus mas idjaoaidnu"
+  SPLASH_POTION_EFFECT_POISON: "diškalanjugus mas mirko"
+  SPLASH_POTION_EFFECT_REGENERATION: "diškalanjugus mas heaggaoažžun"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "diškalanjugus mas njoazesgahčči"
+  SPLASH_POTION_EFFECT_SLOWNESS: "diškalanjugus mas hiđisvuohta"
+  SPLASH_POTION_EFFECT_STRENGTH: "diškalanjugus mas vuoibmi"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "diškalanjugus mas leahttu"
+  SPLASH_POTION_EFFECT_THICK: "suhkkes diškalanjugus"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "galbarihcceipmila stunženjugus"
+  SPLASH_POTION_EFFECT_WATER: "diškalanjugus mas čáhci"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "diškalanjugus mas čáhce vuoiŋŋahat"
+  SPLASH_POTION_EFFECT_WEAKNESS: "diškalanjugus mas geanohisvuohta"
+  SPRUCE_BOAT: "guossafanas"
+  SPRUCE_CHEST_BOAT: "guossafanas mas giisá"
+  SPYGLASS: "giikan"
+  SQUID_SPAWN_EGG: "áhkárguoli ealáskanmonni"
+  STICK: "soabbi"
+  STONE_AXE: "geađgeákšu"
+  STONE_HOE: "geađgeguohkki"
+  STONE_PICKAXE: "geađgebiikaákšu"
+  STONE_SHOVEL: "geađgegoaivu"
+  STONE_SWORD: "geađgemiehkki"
+  STRAY_SPAWN_EGG: "vádjoleaddji ealáskanmonni"
+  STRIDER_SPAWN_EGG: "gálašeaddji ealáskanmonni"
+  STRING: "láigi"
+  SUGAR: "sohkar"
+  SUSPICIOUS_STEW: "imašlaš málli"
+  SWEET_BERRIES: "váramat"
+  TADPOLE_BUCKET: "šlubboaiveskállu"
+  TADPOLE_SPAWN_EGG: "šlubboaivvi ealáskanmonni"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  TIPPED_ARROW: "budnjon njuolla"
+  TIPPED_ARROW_EFFECT_AWKWARD: "budnjon njuolla"
+  TIPPED_ARROW_EFFECT_EMPTY: "duojatkas budnjonnjuolla"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "dolladierdevašvuođa njuolla"
+  TIPPED_ARROW_EFFECT_HARMING: "njuolla mas sorbmen"
+  TIPPED_ARROW_EFFECT_HEALING: "njuolla mas fáhkkaheagga"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "njuolla mas geaidagasvuohta"
+  TIPPED_ARROW_EFFECT_LEAPING: "njuolla mas njuiken"
+  TIPPED_ARROW_EFFECT_LEVITATION: "njuolla mas girdin"
+  TIPPED_ARROW_EFFECT_LUCK: "njuolla mas lihkku"
+  TIPPED_ARROW_EFFECT_MUNDANE: "budnjon njuolla"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "njuolla mas idjaoaidnu"
+  TIPPED_ARROW_EFFECT_POISON: "njuolla mas mirko"
+  TIPPED_ARROW_EFFECT_REGENERATION: "njuolla mas heaggaoažžun"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "njuolla mas njoazesgahččan"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "njuolla mas hiđisvuohta"
+  TIPPED_ARROW_EFFECT_STRENGTH: "njuolla mas vuoibmi"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "njuolla mas leahttu"
+  TIPPED_ARROW_EFFECT_THICK: "budnjon njuolla"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "galbarihcceipmil njuolla"
+  TIPPED_ARROW_EFFECT_WATER: "diškalannjuolla"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "njuolla mas čáhce vuoiŋŋahat"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "njuolla mas geanohisvuohta"
+  TNT_MINECART: "roggangielká mas tnt"
+  TORCHFLOWER_SEEDS: "spáiddárlieđđegilvagat"
+  TOTEM_OF_UNDYING: "jápmemeahttunvuođa árdna"
+  TRADER_LLAMA_SPAWN_EGG: "vuovdaleaddji llama ealáskanmonni"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "háŋgu"
+  TROPICAL_FISH: "trohpalaš guolli"
+  TROPICAL_FISH_BUCKET: "trohpalašguolleskállu"
+  TROPICAL_FISH_SPAWN_EGG: "trohpalaš guoli ealáskanmonni"
+  TURTLE_HELMET: "skálžogahpir"
+  TURTLE_SPAWN_EGG: "galbarihcci ealáskanmonni"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  VEX_SPAWN_EGG: "biidnogopmi ealáskanmonni"
+  VILLAGER_SPAWN_EGG: "gillilačča ealáskanmonni"
+  VINDICATOR_SPAWN_EGG: "vávtta ealáskanmonni"
+  WANDERING_TRADER_SPAWN_EGG: "johttigávppašeaddji ealáskanmonni"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  WARDEN_SPAWN_EGG: "gozi ealáskanmonni"
+  WARPED_FUNGUS_ON_A_STICK: "bonjoguoppar stággus"
+  WATER_BUCKET: "čáhcegievdni"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  WHEAT: "nisugordni"
+  WHEAT_SEEDS: "nisogilvagat"
+  WHITE_DYE: "vilges ivdni"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "rávdebádjemálle"
+  WITCH_SPAWN_EGG: "noaiddi ealáskanmonni"
+  WITHER_SKELETON_SPAWN_EGG: "witherdákterikki ealáskanmonni"
+  WITHER_SPAWN_EGG: "withera ealáskanmonni"
+  WOLF_SPAWN_EGG: "gumpe ealáskanmonni"
+  WOODEN_AXE: "muorraákšu"
+  WOODEN_HOE: "muorraguohkki"
+  WOODEN_PICKAXE: "muorrabiikaákšu"
+  WOODEN_SHOVEL: "muorragoaivu"
+  WOODEN_SWORD: "muorramiehkki"
+  WRITABLE_BOOK: "girji ja čállindolgi"
+  WRITTEN_BOOK: "čállon girji"
+  YELLOW_DYE: "fiskes ivdni"
+  ZOGLIN_SPAWN_EGG: "zoglina ealáskanmonni"
+  ZOMBIE_HORSE_SPAWN_EGG: "jámešheasta ealáskanmonni"
+  ZOMBIE_SPAWN_EGG: "jámeža ealáskanmonni"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "jámeš gillilačča ealáskanmonni"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "piglinjábmi ealáskanmonni"
+  CHEST: "go goruda alde:"
+  FEET: "go julgiin:"
+  HEAD: "go oaivvi alde:"
+  LEGS: "go julgiin:"
+  MAINHAND: "go váldogieđas:"
+  OFFHAND: "go nuppi gieđas:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

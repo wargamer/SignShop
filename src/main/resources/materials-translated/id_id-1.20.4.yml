@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "tombol akasia"
+  ACACIA_DOOR: "pintu kayu akasia"
+  ACACIA_FENCE: "pagar kayu akasia"
+  ACACIA_FENCE_GATE: "pintu pagar kayu akasia"
+  ACACIA_HANGING_SIGN: "tanda gantung akasia"
+  ACACIA_LEAVES: "dedaunan akasia"
+  ACACIA_LOG: "gelondong akasia"
+  ACACIA_PLANKS: "papan akasia"
+  ACACIA_PRESSURE_PLATE: "papan tekan akasia"
+  ACACIA_SAPLING: "bibit pohon akasia"
+  ACACIA_SIGN: "penanda akasia"
+  ACACIA_SLAB: "lempeng akasia"
+  ACACIA_STAIRS: "tangga akasia"
+  ACACIA_TRAPDOOR: "pintu jebakan akasia"
+  ACACIA_WALL_HANGING_SIGN: "tanda gantung dinding akasia"
+  ACACIA_WALL_SIGN: "penanda dinding akasia"
+  ACACIA_WOOD: "kayu akasia"
+  ACTIVATOR_RAIL: "rel penyala"
+  AIR: "udara"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "blok batu kecubung"
+  AMETHYST_CLUSTER: "gugus kecubung"
+  ANCIENT_DEBRIS: "puing purba"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "lempeng andesit"
+  ANDESITE_STAIRS: "tangga andesit"
+  ANDESITE_WALL: "dinding andesit"
+  ANVIL: "paron"
+  ATTACHED_MELON_STEM: "batang semangka tertempel"
+  ATTACHED_PUMPKIN_STEM: "batang labu tertempel"
+  AZALEA: "azalea"
+  AZALEA_LEAVES: "dedaunan azalea"
+  AZURE_BLUET: "bunga liar biru"
+  BAMBOO: "bambu"
+  BAMBOO_BLOCK: "blok bambu"
+  BAMBOO_BUTTON: "tombol bambu"
+  BAMBOO_DOOR: "pintu bambu"
+  BAMBOO_FENCE: "pagar bambu"
+  BAMBOO_FENCE_GATE: "gerbang bambu"
+  BAMBOO_HANGING_SIGN: "tanda gantung bambu"
+  BAMBOO_MOSAIC: "mosaik bambu"
+  BAMBOO_MOSAIC_SLAB: "lempeng mosaik bambu"
+  BAMBOO_MOSAIC_STAIRS: "tangga mosaik bambu"
+  BAMBOO_PLANKS: "papan bambu"
+  BAMBOO_PRESSURE_PLATE: "papan tekan bambu"
+  BAMBOO_SAPLING: "rebung"
+  BAMBOO_SIGN: "petanda bambu"
+  BAMBOO_SLAB: "lempengan bambu"
+  BAMBOO_STAIRS: "tangga bambu"
+  BAMBOO_TRAPDOOR: "pintu perangkap bambu"
+  BAMBOO_WALL_HANGING_SIGN: "tanda gantung dinding bambu"
+  BAMBOO_WALL_SIGN: "petanda gantung bambu"
+  BANNER_BASE_BLACK: "permukaan penuh hitam"
+  BANNER_BASE_BLUE: "permukaan penuh biru"
+  BANNER_BASE_BROWN: "permukaan penuh cokelat"
+  BANNER_BASE_CYAN: "permukaan cyan rata"
+  BANNER_BASE_GRAY: "warna penuh abu-abu"
+  BANNER_BASE_GREEN: "permukaan penuh hijau"
+  BANNER_BASE_LIGHT_BLUE: "permukaan penuh biru muda"
+  BANNER_BASE_LIGHT_GRAY: "permukaan penuh kelabu muda"
+  BANNER_BASE_LIME: "permukaan penuh limau"
+  BANNER_BASE_MAGENTA: "permukaan penuh magenta"
+  BANNER_BASE_ORANGE: "permukaan penuh jingga"
+  BANNER_BASE_PINK: "permukaan penuh merah muda"
+  BANNER_BASE_PURPLE: "permukaan penuh ungu"
+  BANNER_BASE_RED: "permukaan penuh merah"
+  BANNER_BASE_WHITE: "permukaan penuh putih"
+  BANNER_BASE_YELLOW: "permukaan penuh kuning"
+  BANNER_BORDER_BLACK: "tepi hitam"
+  BANNER_BORDER_BLUE: "tepi biru"
+  BANNER_BORDER_BROWN: "tepi cokelat"
+  BANNER_BORDER_CYAN: "tepi sian"
+  BANNER_BORDER_GRAY: "tepi kelabu"
+  BANNER_BORDER_GREEN: "tepi hijau"
+  BANNER_BORDER_LIGHT_BLUE: "tepi biru muda"
+  BANNER_BORDER_LIGHT_GRAY: "tepi kelabu muda"
+  BANNER_BORDER_LIME: "tepi limau"
+  BANNER_BORDER_MAGENTA: "tepi magenta"
+  BANNER_BORDER_ORANGE: "tepi jingga"
+  BANNER_BORDER_PINK: "tepi merah jambu"
+  BANNER_BORDER_PURPLE: "tepi ungu"
+  BANNER_BORDER_RED: "tepi merah"
+  BANNER_BORDER_WHITE: "tepi putih"
+  BANNER_BORDER_YELLOW: "tepi kuning"
+  BANNER_BRICKS_BLACK: "kotak-kotak hitam"
+  BANNER_BRICKS_BLUE: "kotak-kotak biru"
+  BANNER_BRICKS_BROWN: "kotak-kotak cokelat"
+  BANNER_BRICKS_CYAN: "kotak-kotak sian"
+  BANNER_BRICKS_GRAY: "kotak-kotak kelabu"
+  BANNER_BRICKS_GREEN: "kotak-kotak hijau"
+  BANNER_BRICKS_LIGHT_BLUE: "kotak-kotak biru muda"
+  BANNER_BRICKS_LIGHT_GRAY: "kotak-kotak kelabu muda"
+  BANNER_BRICKS_LIME: "kotak-kotak limau"
+  BANNER_BRICKS_MAGENTA: "kotak-kotak magenta"
+  BANNER_BRICKS_ORANGE: "kotak-kotak jingga"
+  BANNER_BRICKS_PINK: "kotak-kotak merah jambu"
+  BANNER_BRICKS_PURPLE: "kotak-kotak ungu"
+  BANNER_BRICKS_RED: "kotak-kotak merah"
+  BANNER_BRICKS_WHITE: "kotak-kotak putih"
+  BANNER_BRICKS_YELLOW: "kotak-kotak kuning"
+  BANNER_CIRCLE_BLACK: "bundar hitam"
+  BANNER_CIRCLE_BLUE: "bundar biru"
+  BANNER_CIRCLE_BROWN: "bundar cokelat"
+  BANNER_CIRCLE_CYAN: "bundar sian"
+  BANNER_CIRCLE_GRAY: "bundar kelabu"
+  BANNER_CIRCLE_GREEN: "bundar hijau"
+  BANNER_CIRCLE_LIGHT_BLUE: "bundar biru muda"
+  BANNER_CIRCLE_LIGHT_GRAY: "bundar kelabu muda"
+  BANNER_CIRCLE_LIME: "bundar limau"
+  BANNER_CIRCLE_MAGENTA: "bundar magenta"
+  BANNER_CIRCLE_ORANGE: "bundar jingga"
+  BANNER_CIRCLE_PINK: "bundar merah jambu"
+  BANNER_CIRCLE_PURPLE: "bundar ungu"
+  BANNER_CIRCLE_RED: "bundar merah"
+  BANNER_CIRCLE_WHITE: "bundar putih"
+  BANNER_CIRCLE_YELLOW: "bundar kuning"
+  BANNER_CREEPER_BLACK: "wajah creeper hitam"
+  BANNER_CREEPER_BLUE: "wajah creeper biru"
+  BANNER_CREEPER_BROWN: "wajah creeper coklat"
+  BANNER_CREEPER_CYAN: "wajah creeper sian"
+  BANNER_CREEPER_GRAY: "wajah creeper kelabu"
+  BANNER_CREEPER_GREEN: "wajah creeper hijau"
+  BANNER_CREEPER_LIGHT_BLUE: "wajah creeper biru muda"
+  BANNER_CREEPER_LIGHT_GRAY: "wajah creeper kelabu muda"
+  BANNER_CREEPER_LIME: "wajah creeper limau"
+  BANNER_CREEPER_MAGENTA: "wajah creeper magenta"
+  BANNER_CREEPER_ORANGE: "wajah creeper jingga"
+  BANNER_CREEPER_PINK: "wajah creeper merah jambu"
+  BANNER_CREEPER_PURPLE: "wajah creeper ungu"
+  BANNER_CREEPER_RED: "wajah creeper merah"
+  BANNER_CREEPER_WHITE: "wajah creeper putih"
+  BANNER_CREEPER_YELLOW: "wajah creeper kuning"
+  BANNER_CROSS_BLACK: "bersilang hitam"
+  BANNER_CROSS_BLUE: "bersilang biru"
+  BANNER_CROSS_BROWN: "bersilang cokelat"
+  BANNER_CROSS_CYAN: "bersilang sian"
+  BANNER_CROSS_GRAY: "bersilang kelabu"
+  BANNER_CROSS_GREEN: "bersilang hijau"
+  BANNER_CROSS_LIGHT_BLUE: "bersilang biru muda"
+  BANNER_CROSS_LIGHT_GRAY: "bersilang kelabu muda"
+  BANNER_CROSS_LIME: "bersilang limau"
+  BANNER_CROSS_MAGENTA: "bersilang magenta"
+  BANNER_CROSS_ORANGE: "bersilang jingga"
+  BANNER_CROSS_PINK: "bersilang merah jambu"
+  BANNER_CROSS_PURPLE: "bersilang ungu"
+  BANNER_CROSS_RED: "bersilang merah"
+  BANNER_CROSS_WHITE: "bersilang putih"
+  BANNER_CROSS_YELLOW: "bersilang kuning"
+  BANNER_CURLY_BORDER_BLACK: "tepi bertakuk hitam"
+  BANNER_CURLY_BORDER_BLUE: "tepi bertakuk biru"
+  BANNER_CURLY_BORDER_BROWN: "tepi bertakuk cokelat"
+  BANNER_CURLY_BORDER_CYAN: "tepi bertakuk sian"
+  BANNER_CURLY_BORDER_GRAY: "tepi bertakuk kelabu"
+  BANNER_CURLY_BORDER_GREEN: "tepi bertakuk hijau"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "tepi bertakuk biru muda"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "tepi bertakuk kelabu muda"
+  BANNER_CURLY_BORDER_LIME: "tepi bertakuk limau"
+  BANNER_CURLY_BORDER_MAGENTA: "tepi bertakuk magenta"
+  BANNER_CURLY_BORDER_ORANGE: "tepi bertakuk jingga"
+  BANNER_CURLY_BORDER_PINK: "tepi bertakuk merah jambu"
+  BANNER_CURLY_BORDER_PURPLE: "tepi bertakuk ungu"
+  BANNER_CURLY_BORDER_RED: "tepi bertakuk merah"
+  BANNER_CURLY_BORDER_WHITE: "tepi bertakuk putih"
+  BANNER_CURLY_BORDER_YELLOW: "tepi bertakuk kuning"
+  BANNER_DIAGONAL_LEFT_BLACK: "pojok kiri atas hitam"
+  BANNER_DIAGONAL_LEFT_BLUE: "pojok kiri atas biru"
+  BANNER_DIAGONAL_LEFT_BROWN: "pojok kiri atas cokelat"
+  BANNER_DIAGONAL_LEFT_CYAN: "sian terbagi melengkung kanan"
+  BANNER_DIAGONAL_LEFT_GRAY: "pojok kiri atas kelabu"
+  BANNER_DIAGONAL_LEFT_GREEN: "pojok kiri atas hijau"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "pojok kiri atas biru muda"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "kelabu muda terbagi melengkung kanan"
+  BANNER_DIAGONAL_LEFT_LIME: "pojok kiri atas limau"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "pojok kiri atas magenta"
+  BANNER_DIAGONAL_LEFT_ORANGE: "pojok kiri atas jingga"
+  BANNER_DIAGONAL_LEFT_PINK: "pojok kiri atas merah jambu"
+  BANNER_DIAGONAL_LEFT_PURPLE: "ungu terbagi melengkung kanan"
+  BANNER_DIAGONAL_LEFT_RED: "pojok kiri atas merah"
+  BANNER_DIAGONAL_LEFT_WHITE: "pojok kiri atas putih"
+  BANNER_DIAGONAL_LEFT_YELLOW: "pojok kiri atas kuning"
+  BANNER_DIAGONAL_RIGHT_BLACK: "pojok atas hitam"
+  BANNER_DIAGONAL_RIGHT_BLUE: "pojok atas biru"
+  BANNER_DIAGONAL_RIGHT_BROWN: "pojok atas cokelat"
+  BANNER_DIAGONAL_RIGHT_CYAN: "pojok atas sian"
+  BANNER_DIAGONAL_RIGHT_GRAY: "pojok atas kelabu"
+  BANNER_DIAGONAL_RIGHT_GREEN: "pojok atas hijau"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "pojok atas biru muda"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "pojok atas kelabu muda"
+  BANNER_DIAGONAL_RIGHT_LIME: "pojok atas limau"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "pojok atas magenta"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "pojok atas jingga"
+  BANNER_DIAGONAL_RIGHT_PINK: "pojok atas merah jambu"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "pojok atas ungu"
+  BANNER_DIAGONAL_RIGHT_RED: "pojok atas merah"
+  BANNER_DIAGONAL_RIGHT_WHITE: "pojok atas putih"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "pojok atas kuning"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "pojok bawah hitam"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "pojok bawah biru"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "pojok bawah cokelat"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "pojok bawah sian"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "pojok bawah kelabu"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "pojok bawah hijau"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "pojok bawah biru muda"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "pojok bawah kelabu muda"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "pojok bawah limau"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "pojok bawah magenta"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "pojok bawah jingga"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "pojok bawah merah jambu"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "pojok bawah ungu"
+  BANNER_DIAGONAL_UP_LEFT_RED: "pojok bawah merah"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "pojok bawah putih"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "pojok bawah kuning"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "pojok kiri bawah hitam"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "pojok kiri bawah biru"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "pojok kiri bawah cokelat"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "pojok kiri bawah sian"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "pojok kiri bawah kelabu"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "pojok kiri bawah hijau"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "pojok kiri bawah biru muda"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "pojok kiri bawahkelabu muda"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "pojok kiri bawah limau"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "pojok kiri bawah magenta"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "pojok kiri bawah jingga"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "pojok kiri bawah merah jambu"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "pojok kiri bawah ungu"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "pojok kiri bawah merah"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "pojok kiri bawah putih"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "pojok kiri bawah kuning"
+  BANNER_FLOWER_BLACK: "wajah bunga hitam"
+  BANNER_FLOWER_BLUE: "wajah bunga biru"
+  BANNER_FLOWER_BROWN: "wajah bunga coklat"
+  BANNER_FLOWER_CYAN: "wajah bunga sian"
+  BANNER_FLOWER_GRAY: "wajah bunga kelabu"
+  BANNER_FLOWER_GREEN: "wajah bunga hijau"
+  BANNER_FLOWER_LIGHT_BLUE: "wajah bunga biru muda"
+  BANNER_FLOWER_LIGHT_GRAY: "wajah bunga kelabu muda"
+  BANNER_FLOWER_LIME: "wajah bunga limau"
+  BANNER_FLOWER_MAGENTA: "wajah bunga magenta"
+  BANNER_FLOWER_ORANGE: "wajah bunga jingga"
+  BANNER_FLOWER_PINK: "wajah bunga merah jambu"
+  BANNER_FLOWER_PURPLE: "wajah bunga ungu"
+  BANNER_FLOWER_RED: "wajah bunga merah"
+  BANNER_FLOWER_WHITE: "wajah bunga putih"
+  BANNER_FLOWER_YELLOW: "wajah bunga kuning"
+  BANNER_GLOBE_BLACK: "globe hitam"
+  BANNER_GLOBE_BLUE: "globe biru"
+  BANNER_GLOBE_BROWN: "globe cokelat"
+  BANNER_GLOBE_CYAN: "globe sian"
+  BANNER_GLOBE_GRAY: "globe kelabu"
+  BANNER_GLOBE_GREEN: "globe hijau"
+  BANNER_GLOBE_LIGHT_BLUE: "globe biru muda"
+  BANNER_GLOBE_LIGHT_GRAY: "globe kelabu muda"
+  BANNER_GLOBE_LIME: "globe limau"
+  BANNER_GLOBE_MAGENTA: "globe magenta"
+  BANNER_GLOBE_ORANGE: "globe jingga"
+  BANNER_GLOBE_PINK: "globe merah jambu"
+  BANNER_GLOBE_PURPLE: "globe ungu"
+  BANNER_GLOBE_RED: "globe merah"
+  BANNER_GLOBE_WHITE: "globe putih"
+  BANNER_GLOBE_YELLOW: "globe kuning"
+  BANNER_GRADIENT_BLACK: "luruh hitam"
+  BANNER_GRADIENT_BLUE: "luruh biru"
+  BANNER_GRADIENT_BROWN: "luruh cokelat"
+  BANNER_GRADIENT_CYAN: "luruh sian"
+  BANNER_GRADIENT_GRAY: "luruh kelabu"
+  BANNER_GRADIENT_GREEN: "luruh hijau"
+  BANNER_GRADIENT_LIGHT_BLUE: "luruh biru muda"
+  BANNER_GRADIENT_LIGHT_GRAY: "luruh kelabu muda"
+  BANNER_GRADIENT_LIME: "luruh limau"
+  BANNER_GRADIENT_MAGENTA: "luruh magenta"
+  BANNER_GRADIENT_ORANGE: "luruh jingga"
+  BANNER_GRADIENT_PINK: "luruh merah jambu"
+  BANNER_GRADIENT_PURPLE: "luruh ungu"
+  BANNER_GRADIENT_RED: "luruh merah"
+  BANNER_GRADIENT_WHITE: "luruh putih"
+  BANNER_GRADIENT_YELLOW: "luruh kuning"
+  BANNER_GRADIENT_UP_BLACK: "luruh bawah/dasar"
+  BANNER_GRADIENT_UP_BLUE: "luruh bawah biru"
+  BANNER_GRADIENT_UP_BROWN: "luruh bawah cokelat"
+  BANNER_GRADIENT_UP_CYAN: "luruh bawah sian"
+  BANNER_GRADIENT_UP_GRAY: "luruh bawah kelabu"
+  BANNER_GRADIENT_UP_GREEN: "luruh bawah hijau"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "luruh bawah biru muda"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "luruh bawah kelabu muda"
+  BANNER_GRADIENT_UP_LIME: "luruh bawah limau"
+  BANNER_GRADIENT_UP_MAGENTA: "luruh bawah magenta"
+  BANNER_GRADIENT_UP_ORANGE: "luruh bawah jingga"
+  BANNER_GRADIENT_UP_PINK: "luruh bawah merah jambu"
+  BANNER_GRADIENT_UP_PURPLE: "luruh bawah ungu"
+  BANNER_GRADIENT_UP_RED: "luruh merah"
+  BANNER_GRADIENT_UP_WHITE: "luruh bawah putih"
+  BANNER_GRADIENT_UP_YELLOW: "luruh bawah kuning"
+  BANNER_HALF_HORIZONTAL_BLACK: "separuh mendatar hitam"
+  BANNER_HALF_HORIZONTAL_BLUE: "separuh mendatar biru"
+  BANNER_HALF_HORIZONTAL_BROWN: "separuh mendatar cokelat"
+  BANNER_HALF_HORIZONTAL_CYAN: "separuh mendatar sian"
+  BANNER_HALF_HORIZONTAL_GRAY: "separuh mendatar kelabu"
+  BANNER_HALF_HORIZONTAL_GREEN: "separuh mendatar hijau"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "separuh mendatar biru muda"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "separuh mendatar kelabu muda"
+  BANNER_HALF_HORIZONTAL_LIME: "separuh mendatar limau"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "separuh mendatar magenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "separuh mendatar jingga"
+  BANNER_HALF_HORIZONTAL_PINK: "separuh mendatar merah jambu"
+  BANNER_HALF_HORIZONTAL_PURPLE: "separuh mendatar ungu"
+  BANNER_HALF_HORIZONTAL_RED: "separuh mendatar merah"
+  BANNER_HALF_HORIZONTAL_WHITE: "separuh mendatar putih"
+  BANNER_HALF_HORIZONTAL_YELLOW: "separuh mendatar kuning"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "separuh mendatar terbalik hitam"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "separuh mendatar terbalik biru"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "separuh mendatar terbalik cokelat"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "separuh mendatar terbalik sian"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "separuh mendatar terbalik kelabu"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "separuh mendatar terbalik hijau"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "separuh mendatar terbalik biru muda"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "separuh mendatar terbalik kelabu muda"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "separuh mendatar terbalik limau"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "separuh mendatar terbalik magenta"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "separuh mendatar terbalik jingga"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "separuh mendatar terbalik merah jambu"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "separuh mendatar terbalik ungu"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "separuh mendatar terbalik merah"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "separuh mendatar terbalik putih"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "separuh mendatar terbalik kuning"
+  BANNER_HALF_VERTICAL_BLACK: "separuh tegak hitam"
+  BANNER_HALF_VERTICAL_BLUE: "separuh tegak biru"
+  BANNER_HALF_VERTICAL_BROWN: "separuh tegak cokelat"
+  BANNER_HALF_VERTICAL_CYAN: "separuh tegak sian"
+  BANNER_HALF_VERTICAL_GRAY: "separuh tegak kelabu"
+  BANNER_HALF_VERTICAL_GREEN: "separuh tegak hijau"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "separuh tegak biru muda"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "separuh tegak kelabu muda"
+  BANNER_HALF_VERTICAL_LIME: "separuh tegak limau"
+  BANNER_HALF_VERTICAL_MAGENTA: "separuh tegak magenta"
+  BANNER_HALF_VERTICAL_ORANGE: "separuh tegak jingga"
+  BANNER_HALF_VERTICAL_PINK: "separuh tegak merah jambu"
+  BANNER_HALF_VERTICAL_PURPLE: "separuh tegak ungu"
+  BANNER_HALF_VERTICAL_RED: "separuh tegak merah"
+  BANNER_HALF_VERTICAL_WHITE: "separuh tegak putih"
+  BANNER_HALF_VERTICAL_YELLOW: "separuh tegak kuning"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "separuh tegak terbalik hitam"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "separuh tegak terbalik biru"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "separuh tegak terbalik cokelat"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "separuh tegak terbalik sian"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "separuh tegak terbalik kelabu"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "separuh tegak terbalik hijau"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "separuh tegak terbalik biru muda"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "separuh tegak terbalik kelabu muda"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "separuh tegak terbalik limau"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "separuh tegak terbalik magenta"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "separuh tegak terbalik jingga"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "separuh tegak terbalik merah jambu"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "separuh tegak terbalik ungu"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "separuh tegak terbalik merah"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "separuh tegak terbalik putih"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "separuh tegak terbalik kuning"
+  BANNER_MOJANG_BLACK: "benda hitam"
+  BANNER_MOJANG_BLUE: "benda biru"
+  BANNER_MOJANG_BROWN: "benda cokelat"
+  BANNER_MOJANG_CYAN: "benda sian"
+  BANNER_MOJANG_GRAY: "benda kelabu"
+  BANNER_MOJANG_GREEN: "benda hijau"
+  BANNER_MOJANG_LIGHT_BLUE: "benda biru muda"
+  BANNER_MOJANG_LIGHT_GRAY: "benda kelabu muda"
+  BANNER_MOJANG_LIME: "benda limau"
+  BANNER_MOJANG_MAGENTA: "benda magenta"
+  BANNER_MOJANG_ORANGE: "benda jingga"
+  BANNER_MOJANG_PINK: "benda merah jambu"
+  BANNER_MOJANG_PURPLE: "benda ungu"
+  BANNER_MOJANG_RED: "benda merah"
+  BANNER_MOJANG_WHITE: "benda putih"
+  BANNER_MOJANG_YELLOW: "benda kuning"
+  BANNER_PIGLIN_BLACK: "moncong hitam"
+  BANNER_PIGLIN_BLUE: "moncong biru"
+  BANNER_PIGLIN_BROWN: "moncong cokelat"
+  BANNER_PIGLIN_CYAN: "moncong sian"
+  BANNER_PIGLIN_GRAY: "moncong kelabu"
+  BANNER_PIGLIN_GREEN: "moncong hijau"
+  BANNER_PIGLIN_LIGHT_BLUE: "moncong biru muda"
+  BANNER_PIGLIN_LIGHT_GRAY: "moncong kelabu muda"
+  BANNER_PIGLIN_LIME: "moncong hijau muda"
+  BANNER_PIGLIN_MAGENTA: "moncong magenta"
+  BANNER_PIGLIN_ORANGE: "moncong jingga"
+  BANNER_PIGLIN_PINK: "moncong merah jambu"
+  BANNER_PIGLIN_PURPLE: "moncong ungu"
+  BANNER_PIGLIN_RED: "moncong merah"
+  BANNER_PIGLIN_WHITE: "moncong putih"
+  BANNER_PIGLIN_YELLOW: "moncong kuning"
+  BANNER_RHOMBUS_BLACK: "belah ketupat hitam"
+  BANNER_RHOMBUS_BLUE: "belah ketupat biru"
+  BANNER_RHOMBUS_BROWN: "belah ketupat cokelat"
+  BANNER_RHOMBUS_CYAN: "belah ketupat sian"
+  BANNER_RHOMBUS_GRAY: "belah ketupat kelabu"
+  BANNER_RHOMBUS_GREEN: "belah ketupat hijau"
+  BANNER_RHOMBUS_LIGHT_BLUE: "belah ketupat biru muda"
+  BANNER_RHOMBUS_LIGHT_GRAY: "belah ketupat kelabu muda"
+  BANNER_RHOMBUS_LIME: "belah ketupat limau"
+  BANNER_RHOMBUS_MAGENTA: "belah ketupat magenta"
+  BANNER_RHOMBUS_ORANGE: "belah ketupat jingga"
+  BANNER_RHOMBUS_PINK: "belah ketupat merah jambu"
+  BANNER_RHOMBUS_PURPLE: "belah ketupat ungu"
+  BANNER_RHOMBUS_RED: "belah ketupat merah"
+  BANNER_RHOMBUS_WHITE: "belah ketupat putih"
+  BANNER_RHOMBUS_YELLOW: "belah ketupat kuning"
+  BANNER_SKULL_BLACK: "wajah tengkorak hitam"
+  BANNER_SKULL_BLUE: "wajah tengkorak biru"
+  BANNER_SKULL_BROWN: "wajah tengkorak coklat"
+  BANNER_SKULL_CYAN: "wajah tengkorak sian"
+  BANNER_SKULL_GRAY: "wajah tengkorak kelabu"
+  BANNER_SKULL_GREEN: "wajah tengkorak hijau"
+  BANNER_SKULL_LIGHT_BLUE: "wajah tengkorak biru muda"
+  BANNER_SKULL_LIGHT_GRAY: "wajah tengkorak kelabu muda"
+  BANNER_SKULL_LIME: "wajah tengkorak limau"
+  BANNER_SKULL_MAGENTA: "wajah tengkorak magenta"
+  BANNER_SKULL_ORANGE: "wajah tengkorak jingga"
+  BANNER_SKULL_PINK: "wajah tengkorak merah jambu"
+  BANNER_SKULL_PURPLE: "wajah tengkorak ungu"
+  BANNER_SKULL_RED: "wajah tengkorak merah"
+  BANNER_SKULL_WHITE: "wajah tengkorak putih"
+  BANNER_SKULL_YELLOW: "wajah tengkorak kuning"
+  BANNER_SMALL_STRIPES_BLACK: "garis tegak hitam"
+  BANNER_SMALL_STRIPES_BLUE: "garis tegak biru"
+  BANNER_SMALL_STRIPES_BROWN: "garis tegak cokelat"
+  BANNER_SMALL_STRIPES_CYAN: "garis tegak sian"
+  BANNER_SMALL_STRIPES_GRAY: "garis tegak kelabu"
+  BANNER_SMALL_STRIPES_GREEN: "garis tegak hijau"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "garis tegak biru muda"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "garis tegak kelabu muda"
+  BANNER_SMALL_STRIPES_LIME: "garis tegak limau"
+  BANNER_SMALL_STRIPES_MAGENTA: "garis tegak magenta"
+  BANNER_SMALL_STRIPES_ORANGE: "garis tegak jingga"
+  BANNER_SMALL_STRIPES_PINK: "garis tegak merah jambu"
+  BANNER_SMALL_STRIPES_PURPLE: "garis tegak ungu"
+  BANNER_SMALL_STRIPES_RED: "garis tegak merah"
+  BANNER_SMALL_STRIPES_WHITE: "garis tegak putih"
+  BANNER_SMALL_STRIPES_YELLOW: "garis tegak kuning"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "kotak pojok kiri bawah hitam"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "kotak pojok kiri bawah biru"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "kotak pojok kiri bawah cokelat"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "kotak pojok kiri bawah sian"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "kotak pojok kiri bawah kelabu"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "kotak pojok kiri bawah hijau"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "kotak pojok kiri bawah biru muda"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "kotak pojok kiri bawah kelabu muda"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "kotak pojok kiri bawah limau"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "kotak pojok kiri bawah magenta"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "kotak pojok kiri bawah jingga"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "kotak pojok kiri bawah merah jambu"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "kotak pojok kiri bawah ungu"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "kotak pojok kiri bawah merah"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "kotak pojok kiri bawah putih"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "kotak pojok kiri bawah kuning"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "kotak pojok kanan bawah hitam"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "kotak pojok kanan bawah biru"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "kotak pojok kanan bawah cokelat"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "kotak pojok kanan bawah sian"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "kotak pojok kanan bawah kelabu"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "kotak pojok kanan bawah hijau"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "kotak pojok kanan bawah biru muda"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "kotak pojok kanan bawah kelabu muda"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "kotak pojok kanan bawah limau"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "kotak pojok kanan bawah magenta"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "kotak pojok kanan bawah jingga"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "kotak pojok kanan bawah merah jambu"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "kotak pojok kanan bawah ungu"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "kotak pojok kanan bawah merah"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "kotak pojok kanan bawah putih"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "kotak pojok kanan bawah kuning"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "kotak pojok kiri atas hitam"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "kotak pojok kiri atas biru"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "kotak pojok kiri atas cokelat"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "kotak pojok kiri atas sian"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "kotak pojok kiri atas kelabu"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "kotak pojok kiri atas hijau"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "kotak pojok kiri atas biru muda"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "kotak pojok kiri atas kelabu muda"
+  BANNER_SQUARE_TOP_LEFT_LIME: "kotak pojok kiri atas limau"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "kotak pojok kiri atas magenta"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "kotak pojok kiri atas jingga"
+  BANNER_SQUARE_TOP_LEFT_PINK: "kotak pojok kiri atas merah jambu"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "kotak pojok kiri atas ungu"
+  BANNER_SQUARE_TOP_LEFT_RED: "kotak pojok kiri atas merah"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "kotak pojok kiri atas putih"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "kotak pojok kiri atas kuning"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "kotak pojok kanan atas hitam"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "kotak pojok kanan atas biru"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "kotak pojok kanan atas cokelat"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "kotak pojok kanan atas sian"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "kotak pojok kanan atas kelabu"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "kotak pojok kanan atas hijau"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "kotak pojok kanan atas biru muda"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "kotak pojok kanan atas kelabu muda"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "kotak pojok kanan atas limau"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "kotak pojok kanan atas magenta"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "kotak pojok kanan atas jingga"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "kotak pojok kanan atas merah jambu"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "kotak pojok kanan atas ungu"
+  BANNER_SQUARE_TOP_RIGHT_RED: "kotak pojok kanan atas merah"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "kotak pojok kanan atas putih"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "kotak pojok kanan atas kuning"
+  BANNER_STRAIGHT_CROSS_BLACK: "salib hitam"
+  BANNER_STRAIGHT_CROSS_BLUE: "salib biru"
+  BANNER_STRAIGHT_CROSS_BROWN: "salib cokelat"
+  BANNER_STRAIGHT_CROSS_CYAN: "salib sian"
+  BANNER_STRAIGHT_CROSS_GRAY: "salib kelabu"
+  BANNER_STRAIGHT_CROSS_GREEN: "salib hijau"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "salib biru muda"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "salib kelabu muda"
+  BANNER_STRAIGHT_CROSS_LIME: "salib limau"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "salib magenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "salib jingga"
+  BANNER_STRAIGHT_CROSS_PINK: "salib merah jambu"
+  BANNER_STRAIGHT_CROSS_PURPLE: "salib ungu"
+  BANNER_STRAIGHT_CROSS_RED: "salib merah"
+  BANNER_STRAIGHT_CROSS_WHITE: "salib putih"
+  BANNER_STRAIGHT_CROSS_YELLOW: "salib kuning"
+  BANNER_STRIPE_BOTTOM_BLACK: "bawah hitam"
+  BANNER_STRIPE_BOTTOM_BLUE: "bawah biru"
+  BANNER_STRIPE_BOTTOM_BROWN: "bawah cokelat"
+  BANNER_STRIPE_BOTTOM_CYAN: "bawah sian"
+  BANNER_STRIPE_BOTTOM_GRAY: "bawah kelabu"
+  BANNER_STRIPE_BOTTOM_GREEN: "bawah hijau"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "bawah biru muda"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "bawah kelabu muda"
+  BANNER_STRIPE_BOTTOM_LIME: "bawah limau"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "bawah magenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "bawah jingga"
+  BANNER_STRIPE_BOTTOM_PINK: "bawah merah jambu"
+  BANNER_STRIPE_BOTTOM_PURPLE: "bawah ungu"
+  BANNER_STRIPE_BOTTOM_RED: "bawah merah"
+  BANNER_STRIPE_BOTTOM_WHITE: "bawah putih"
+  BANNER_STRIPE_BOTTOM_YELLOW: "bawah kuning"
+  BANNER_STRIPE_CENTER_BLACK: "pita tegak hitam"
+  BANNER_STRIPE_CENTER_BLUE: "pita tegak biru"
+  BANNER_STRIPE_CENTER_BROWN: "pita tegak cokelat"
+  BANNER_STRIPE_CENTER_CYAN: "pita tegak sian"
+  BANNER_STRIPE_CENTER_GRAY: "pita tegak kelabu"
+  BANNER_STRIPE_CENTER_GREEN: "pita tegak hijau"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "pita tegak biru muda"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "pita tegak kelabu muda"
+  BANNER_STRIPE_CENTER_LIME: "pita tegak limau"
+  BANNER_STRIPE_CENTER_MAGENTA: "pita tegak magenta"
+  BANNER_STRIPE_CENTER_ORANGE: "pita tegak jingga"
+  BANNER_STRIPE_CENTER_PINK: "pita tegak merah jambu"
+  BANNER_STRIPE_CENTER_PURPLE: "pita tegak ungu"
+  BANNER_STRIPE_CENTER_RED: "pita tegak merah"
+  BANNER_STRIPE_CENTER_WHITE: "pita tegak putih"
+  BANNER_STRIPE_CENTER_YELLOW: "pita tegak kuning"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "menyilang kanan hitam"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "menyilang kanan biru"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "menyilang kanan cokelat"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "menyilang kanan sian"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "kelabu melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "menyilang kanan hijau"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "merah muda melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "menyilang kanan kelabu muda"
+  BANNER_STRIPE_DOWNLEFT_LIME: "limau melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "magenta melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "jingga melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_PINK: "merah jambu melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "menyilang kanan ungu"
+  BANNER_STRIPE_DOWNLEFT_RED: "menyilang kanan merah"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "putih melengkung kanan"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "kuning melengkung kanan"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "menyilang hitam"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "menyilang biru"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "menyilang cokelat"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "menyilang sian"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "menyilang kelabu"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "menyilang hijau"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "menyilang biru muda"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "menyilang kelabu muda"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "menyilang limau"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "menyilang magenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "menyilang jingga"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "menyilang merah jambu"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "menyilang ungu"
+  BANNER_STRIPE_DOWNRIGHT_RED: "menyilang merah"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "menyilang putih"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "menyilang kuning"
+  BANNER_STRIPE_LEFT_BLACK: "pita tegak kiri hitam"
+  BANNER_STRIPE_LEFT_BLUE: "pita tegak kiri biru"
+  BANNER_STRIPE_LEFT_BROWN: "pita tegak kiri cokelat"
+  BANNER_STRIPE_LEFT_CYAN: "pita tegak kiri sian"
+  BANNER_STRIPE_LEFT_GRAY: "pita tegak kiri kelabu"
+  BANNER_STRIPE_LEFT_GREEN: "pita tegak kiri hijau"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "pita tegak kiri biru muda"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "pita tegak kiri kelabu muda"
+  BANNER_STRIPE_LEFT_LIME: "pita tegak kiri limau"
+  BANNER_STRIPE_LEFT_MAGENTA: "pita tegak kiri magenta"
+  BANNER_STRIPE_LEFT_ORANGE: "pita tegak kiri jingga"
+  BANNER_STRIPE_LEFT_PINK: "pita tegak kiri merah jambu"
+  BANNER_STRIPE_LEFT_PURPLE: "pita tegak kiri ungu"
+  BANNER_STRIPE_LEFT_RED: "pita tegak kiri merah"
+  BANNER_STRIPE_LEFT_WHITE: "pita tegak kiri putih"
+  BANNER_STRIPE_LEFT_YELLOW: "pita tegak kiri kuning"
+  BANNER_STRIPE_MIDDLE_BLACK: "pita mendatar hitam"
+  BANNER_STRIPE_MIDDLE_BLUE: "pita mendatar biru"
+  BANNER_STRIPE_MIDDLE_BROWN: "pita mendatar cokelat"
+  BANNER_STRIPE_MIDDLE_CYAN: "pita mendatar sian"
+  BANNER_STRIPE_MIDDLE_GRAY: "pita mendatar kelabu"
+  BANNER_STRIPE_MIDDLE_GREEN: "pita mendatar hijau"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "pita mendatar biru muda"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "pita mendatar kelabu muda"
+  BANNER_STRIPE_MIDDLE_LIME: "pita mendatar limau"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "pita mendatar magenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "pita mendatar jingga"
+  BANNER_STRIPE_MIDDLE_PINK: "pita mendatar merah jambu"
+  BANNER_STRIPE_MIDDLE_PURPLE: "pita mendatar ungu"
+  BANNER_STRIPE_MIDDLE_RED: "pita mendatar merah"
+  BANNER_STRIPE_MIDDLE_WHITE: "pita mendatar putih"
+  BANNER_STRIPE_MIDDLE_YELLOW: "pita mendatar kuning"
+  BANNER_STRIPE_RIGHT_BLACK: "pita tegak kanan hitam"
+  BANNER_STRIPE_RIGHT_BLUE: "pita tegak kanan biru"
+  BANNER_STRIPE_RIGHT_BROWN: "pita tegak kanan cokelat"
+  BANNER_STRIPE_RIGHT_CYAN: "pita tegak kanan sian"
+  BANNER_STRIPE_RIGHT_GRAY: "pita tegak kanan kelabu"
+  BANNER_STRIPE_RIGHT_GREEN: "pita tegak kanan hijau"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "pita tegak kanan biru muda"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "pita tegak kanan kelabu muda"
+  BANNER_STRIPE_RIGHT_LIME: "pita tegak kanan limau"
+  BANNER_STRIPE_RIGHT_MAGENTA: "pita tegak kanan magenta"
+  BANNER_STRIPE_RIGHT_ORANGE: "pita tegak kanan jingga"
+  BANNER_STRIPE_RIGHT_PINK: "pita tegak kanan merah jambu"
+  BANNER_STRIPE_RIGHT_PURPLE: "sepertiga kanan ungu"
+  BANNER_STRIPE_RIGHT_RED: "pita tegak kanan merah"
+  BANNER_STRIPE_RIGHT_WHITE: "pita tegak kanan putih"
+  BANNER_STRIPE_RIGHT_YELLOW: "pita tegak kanan kuning"
+  BANNER_STRIPE_TOP_BLACK: "atas hitam"
+  BANNER_STRIPE_TOP_BLUE: "atas biru"
+  BANNER_STRIPE_TOP_BROWN: "atas cokelat"
+  BANNER_STRIPE_TOP_CYAN: "atas sian"
+  BANNER_STRIPE_TOP_GRAY: "atas kelabu"
+  BANNER_STRIPE_TOP_GREEN: "atas hijau"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "atas biru muda"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "atas kelabu muda"
+  BANNER_STRIPE_TOP_LIME: "atas limau"
+  BANNER_STRIPE_TOP_MAGENTA: "atas magenta"
+  BANNER_STRIPE_TOP_ORANGE: "atas jingga"
+  BANNER_STRIPE_TOP_PINK: "atas merah jambu"
+  BANNER_STRIPE_TOP_PURPLE: "atas ungu"
+  BANNER_STRIPE_TOP_RED: "atas merah"
+  BANNER_STRIPE_TOP_WHITE: "atas putih"
+  BANNER_STRIPE_TOP_YELLOW: "atas kuning"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "segitiga hitam"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "segitiga biru"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "segitiga cokelat"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "segitiga sian"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "segitiga kelabu"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "segitiga hijau"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "segitiga biru muda"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "segitiga kelabu muda"
+  BANNER_TRIANGLE_BOTTOM_LIME: "segitiga limau"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "segitiga magenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "segitiga jingga"
+  BANNER_TRIANGLE_BOTTOM_PINK: "segitiga merah jambu"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "segitiga ungu"
+  BANNER_TRIANGLE_BOTTOM_RED: "segitiga merah"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "segitiga putih"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "segitiga kuning"
+  BANNER_TRIANGLE_TOP_BLACK: "segitiga terbalik hitam"
+  BANNER_TRIANGLE_TOP_BLUE: "segitiga terbalik biru"
+  BANNER_TRIANGLE_TOP_BROWN: "segitiga terbalik cokelat"
+  BANNER_TRIANGLE_TOP_CYAN: "segitiga terbalik sian"
+  BANNER_TRIANGLE_TOP_GRAY: "segitiga terbalik kelabu"
+  BANNER_TRIANGLE_TOP_GREEN: "segitiga terbalik hijau"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "segitiga terbalik biru muda"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "segitiga terbalik kelabu muda"
+  BANNER_TRIANGLE_TOP_LIME: "segitiga terbalik limau"
+  BANNER_TRIANGLE_TOP_MAGENTA: "segitiga terbalik magenta"
+  BANNER_TRIANGLE_TOP_ORANGE: "segitiga terbalik jingga"
+  BANNER_TRIANGLE_TOP_PINK: "segitiga terbalik merah jambu"
+  BANNER_TRIANGLE_TOP_PURPLE: "segitiga terbalik ungu"
+  BANNER_TRIANGLE_TOP_RED: "segitiga terbalik merah"
+  BANNER_TRIANGLE_TOP_WHITE: "segitiga terbalik putih"
+  BANNER_TRIANGLE_TOP_YELLOW: "segitiga terbalik kuning"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "bertakuk bawah hitam"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "bertakuk bawah biru"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "bertakuk bawah cokelat"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "bertakuk bawah sian"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "bertakuk bawah kelabu"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "bertakuk bawah hijau"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "bertakuk bawah biru muda"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "bertakuk bawah kelabu muda"
+  BANNER_TRIANGLES_BOTTOM_LIME: "bertakuk bawah limau"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "bertakuk bawah magenta"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "bertakuk bawah jingga"
+  BANNER_TRIANGLES_BOTTOM_PINK: "bertakuk bawah merah jambu"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "bertakuk bawah ungu"
+  BANNER_TRIANGLES_BOTTOM_RED: "bertakuk bawah merah"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "bertakuk bawah putih"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "bertakuk bawah kuning"
+  BANNER_TRIANGLES_TOP_BLACK: "bertakuk atas hitam"
+  BANNER_TRIANGLES_TOP_BLUE: "bertakuk atas biru"
+  BANNER_TRIANGLES_TOP_BROWN: "bertakuk atas cokelat"
+  BANNER_TRIANGLES_TOP_CYAN: "bertakuk atas sian"
+  BANNER_TRIANGLES_TOP_GRAY: "bertakuk atas kelabu"
+  BANNER_TRIANGLES_TOP_GREEN: "bertakuk atas hijau"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "bertakuk atas biru muda"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "bertakuk atas kelabu muda"
+  BANNER_TRIANGLES_TOP_LIME: "bertakuk atas limau"
+  BANNER_TRIANGLES_TOP_MAGENTA: "bertakuk atas magenta"
+  BANNER_TRIANGLES_TOP_ORANGE: "bertakuk atas jingga"
+  BANNER_TRIANGLES_TOP_PINK: "bertakuk atas merah jambu"
+  BANNER_TRIANGLES_TOP_PURPLE: "bertakuk atas ungu"
+  BANNER_TRIANGLES_TOP_RED: "bertakuk atas merah"
+  BANNER_TRIANGLES_TOP_WHITE: "bertakuk atas putih"
+  BANNER_TRIANGLES_TOP_YELLOW: "bertakuk atas kuning"
+  BARREL: "tong"
+  BARRIER: "penghalang"
+  BASALT: "basal"
+  BEACON: "suar"
+  BEACON_PRIMARY: "kekuatan utama"
+  BEACON_SECONDARY: "kekuatan sekunder"
+  BED_NO_SLEEP: "anda hanya dapat tidur saat malam atau selama badai petir"
+  BED_NOT_SAFE: "anda tak dapat tidur sekarang banyak monster dekat sini"
+  BED_OBSTRUCTED: "tempat tidur ini terhalangi"
+  BED_OCCUPIED: "tempat tidur ini sudah ditempati"
+  BED_TOO_FAR_AWAY: "anda tidak dapat beristirahat sekarang tempat tidur terlalu jauh"
+  BEDROCK: "batu dasar"
+  BEE_NEST: "sarang lebah"
+  BEEHIVE: "sarang lebah"
+  BEETROOTS: "bit"
+  BELL: "lonceng"
+  BIG_DRIPLEAF: "daun tetes besar"
+  BIG_DRIPLEAF_STEM: "batang daun tetes besar"
+  BIRCH_BUTTON: "tombol pinus"
+  BIRCH_DOOR: "pintu kayu pinus"
+  BIRCH_FENCE: "pagar kayu pinus"
+  BIRCH_FENCE_GATE: "pintu pagar kayu pinus"
+  BIRCH_HANGING_SIGN: "tanda gantung pinus"
+  BIRCH_LEAVES: "dedaunan pinus"
+  BIRCH_LOG: "gelondong pinus"
+  BIRCH_PLANKS: "papan pinus"
+  BIRCH_PRESSURE_PLATE: "papan tekan pinus"
+  BIRCH_SAPLING: "bibit pohon pinus"
+  BIRCH_SIGN: "penanda pinus"
+  BIRCH_SLAB: "lempeng pinus"
+  BIRCH_STAIRS: "tangga pinus"
+  BIRCH_TRAPDOOR: "pintu jebakan pinus"
+  BIRCH_WALL_HANGING_SIGN: "tanda gantung dinding pinus"
+  BIRCH_WALL_SIGN: "penanda dinding pinus"
+  BIRCH_WOOD: "kayu pinus"
+  BLACK_BANNER: "spanduk hitam"
+  BLACK_BED: "tempat tidur hitam"
+  BLACK_CANDLE: "lilin hitam"
+  BLACK_CANDLE_CAKE: "kue dengan lilin hitam"
+  BLACK_CARPET: "karpet hitam"
+  BLACK_CONCRETE: "beton hitam"
+  BLACK_CONCRETE_POWDER: "semen hitam"
+  BLACK_GLAZED_TERRACOTTA: "terakota berglasir hitam"
+  BLACK_SHULKER_BOX: "kotak periuk pengintai hitam"
+  BLACK_STAINED_GLASS: "kaca patri hitam"
+  BLACK_STAINED_GLASS_PANE: "panel kaca patri hitam"
+  BLACK_TERRACOTTA: "terakota hitam"
+  BLACK_WOOL: "wol hitam"
+  BLACKSTONE: "batu hitam"
+  BLACKSTONE_SLAB: "lempeng batu hitam"
+  BLACKSTONE_STAIRS: "tangga batu hitam"
+  BLACKSTONE_WALL: "dinding batu hitam"
+  BLAST_FURNACE: "tungku ledak"
+  BLUE_BANNER: "spanduk biru"
+  BLUE_BED: "tempat tidur biru"
+  BLUE_CANDLE: "lilin biru"
+  BLUE_CANDLE_CAKE: "kue dengan lilin biru"
+  BLUE_CARPET: "karpet biru"
+  BLUE_CONCRETE: "beton biru"
+  BLUE_CONCRETE_POWDER: "semen biru"
+  BLUE_GLAZED_TERRACOTTA: "terakota berglasir biru"
+  BLUE_ICE: "es biru"
+  BLUE_ORCHID: "anggrek biru"
+  BLUE_SHULKER_BOX: "kotak periuk pengintai biru"
+  BLUE_STAINED_GLASS: "kaca patri biru"
+  BLUE_STAINED_GLASS_PANE: "panel kaca patri biru"
+  BLUE_TERRACOTTA: "terakota biru"
+  BLUE_WOOL: "wol biru"
+  BONE_BLOCK: "balok tulang"
+  BOOKSHELF: "rak buku"
+  BRAIN_CORAL: "karang otak"
+  BRAIN_CORAL_BLOCK: "blok karang otak"
+  BRAIN_CORAL_FAN: "kipas laut otak"
+  BRAIN_CORAL_WALL_FAN: "kipas laut otak dinding"
+  BREWING_STAND: "alat peramu"
+  BRICK_SLAB: "lempeng bata"
+  BRICK_STAIRS: "tangga bata"
+  BRICK_WALL: "dinding bata"
+  BRICKS: "bata"
+  BROWN_BANNER: "spanduk cokelat"
+  BROWN_BED: "tempat tidur cokelat"
+  BROWN_CANDLE: "lilin coklat"
+  BROWN_CANDLE_CAKE: "kue dengan lilin coklat"
+  BROWN_CARPET: "karpet coklat"
+  BROWN_CONCRETE: "beton cokelat"
+  BROWN_CONCRETE_POWDER: "semen cokelat"
+  BROWN_GLAZED_TERRACOTTA: "terakota berglasir cokelat"
+  BROWN_MUSHROOM: "jamur cokelat"
+  BROWN_MUSHROOM_BLOCK: "blok jamur cokelat"
+  BROWN_SHULKER_BOX: "kotak periuk pengintai coklat"
+  BROWN_STAINED_GLASS: "kaca patri cokelat"
+  BROWN_STAINED_GLASS_PANE: "panel kaca patri cokelat"
+  BROWN_TERRACOTTA: "terakota cokelat"
+  BROWN_WOOL: "wol cokelat"
+  BUBBLE_COLUMN: "kolom gelembung"
+  BUBBLE_CORAL: "karang gelembung"
+  BUBBLE_CORAL_BLOCK: "blok karang gelembung"
+  BUBBLE_CORAL_FAN: "kipas laut gelembung"
+  BUBBLE_CORAL_WALL_FAN: "kipas laut gelembung dinding"
+  BUDDING_AMETHYST: "kuncup batu kecubung"
+  CACTUS: "kaktus"
+  CAKE: "kue"
+  CALCITE: "kalsit"
+  CALIBRATED_SCULK_SENSOR: "sensor sculk dikalibrasi"
+  CAMPFIRE: "api unggun"
+  CANDLE: "lilin"
+  CANDLE_CAKE: "kue lilin"
+  CARROTS: "wortel"
+  CARTOGRAPHY_TABLE: "meja pemetaan"
+  CARVED_PUMPKIN: "labu terukir"
+  CAULDRON: "kuali"
+  CAVE_AIR: "udara gua"
+  CAVE_VINES: "daun rambat gua"
+  CAVE_VINES_PLANT: "tanaman daun rambat gua"
+  CHAIN: "berantai"
+  CHAIN_COMMAND_BLOCK: "blok perintah berantai"
+  CHERRY_BUTTON: "tombol sakura"
+  CHERRY_DOOR: "pintu sakura"
+  CHERRY_FENCE: "pagar kayu sakura"
+  CHERRY_FENCE_GATE: "pintu pagar kayu sakura"
+  CHERRY_HANGING_SIGN: "tanda gantung sakura"
+  CHERRY_LEAVES: "dedaunan sakura"
+  CHERRY_LOG: "gelondong sakura"
+  CHERRY_PLANKS: "papan sakura"
+  CHERRY_PRESSURE_PLATE: "papan tekan sakura"
+  CHERRY_SAPLING: "bibit pohon sakura"
+  CHERRY_SIGN: "penanda sakura"
+  CHERRY_SLAB: "lempeng sakura"
+  CHERRY_STAIRS: "tangga sakura"
+  CHERRY_TRAPDOOR: "pintu jebakan sakura"
+  CHERRY_WALL_HANGING_SIGN: "tanda gantung dinding sakura"
+  CHERRY_WALL_SIGN: "papan dinding sakura"
+  CHERRY_WOOD: "kayu sakura"
+  CHEST: "peti"
+  CHIPPED_ANVIL: "paron cuil"
+  CHISELED_BOOKSHELF: "rak buku pahat"
+  CHISELED_COPPER: "tembaga ukir"
+  CHISELED_DEEPSLATE: "batu tulis dalam pahatan"
+  CHISELED_NETHER_BRICKS: "bata nether pahatan"
+  CHISELED_POLISHED_BLACKSTONE: "batu hitam poles pahatan"
+  CHISELED_QUARTZ_BLOCK: "blok kuarsa pahat"
+  CHISELED_RED_SANDSTONE: "batu pasir merah pahatan"
+  CHISELED_SANDSTONE: "batu pasir pahatan"
+  CHISELED_STONE_BRICKS: "bata batu pahatan"
+  CHISELED_TUFF: "tuff kerikil"
+  CHISELED_TUFF_BRICKS: "bata tuff kerikil"
+  CHORUS_FLOWER: "bunga korus"
+  CHORUS_PLANT: "pohon korus"
+  CLAY: "tanah liat"
+  COAL_BLOCK: "blok batu bara"
+  COAL_ORE: "bijih batu bara"
+  COARSE_DIRT: "tanah kasar"
+  COBBLED_DEEPSLATE: "katup sabak pecah"
+  COBBLED_DEEPSLATE_SLAB: "bagian katup sabak pecah"
+  COBBLED_DEEPSLATE_STAIRS: "tangga batu dalam pecah"
+  COBBLED_DEEPSLATE_WALL: "dinding batu dalam pecah"
+  COBBLESTONE: "batu kasar"
+  COBBLESTONE_SLAB: "lempeng batu kasar"
+  COBBLESTONE_STAIRS: "tangga batu kasar"
+  COBBLESTONE_WALL: "dinding batu kasar"
+  COBWEB: "benang laba-laba"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "blok perintah"
+  COMPARATOR: "pembanding batu merah"
+  COMPOSTER: "komposter"
+  CONDUIT: "talang salur"
+  COPPER_BLOCK: "balok tembaga"
+  COPPER_BULB: "bohlam tembaga"
+  COPPER_DOOR: "pintu tembaga"
+  COPPER_GRATE: "saringan tembaga"
+  COPPER_ORE: "bijih tembaga"
+  COPPER_TRAPDOOR: "pintu jerat tembaga"
+  CORNFLOWER: "bunga jagung"
+  CRACKED_DEEPSLATE_BRICKS: "bata batu dalam retak"
+  CRACKED_DEEPSLATE_TILES: "ubin katup sabak retak"
+  CRACKED_NETHER_BRICKS: "bata nether retak"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "bata batu hitam poles retak"
+  CRACKED_STONE_BRICKS: "batu bata retak"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "meja kerajinan"
+  CREEPER_HEAD: "kepala creeper"
+  CREEPER_WALL_HEAD: "kepala dinding creeper"
+  CRIMSON_BUTTON: "tombol kirmizi"
+  CRIMSON_DOOR: "pintu kirmizi"
+  CRIMSON_FENCE: "pagar kirmizi"
+  CRIMSON_FENCE_GATE: "pintu pagar kirmizi"
+  CRIMSON_FUNGUS: "jamur kirmizi"
+  CRIMSON_HANGING_SIGN: "tanda gantung kirmizi"
+  CRIMSON_HYPHAE: "hifa kirmizi"
+  CRIMSON_NYLIUM: "nilium kirmizi"
+  CRIMSON_PLANKS: "papan kirmizi"
+  CRIMSON_PRESSURE_PLATE: "papan tekan kirmizi"
+  CRIMSON_ROOTS: "akar kirmizi"
+  CRIMSON_SIGN: "penanda kirmizi"
+  CRIMSON_SLAB: "lempeng kirmizi"
+  CRIMSON_STAIRS: "tangga kirmizi"
+  CRIMSON_STEM: "batang kirmizi"
+  CRIMSON_TRAPDOOR: "pintu jebakan kirmizi"
+  CRIMSON_WALL_HANGING_SIGN: "tanda gantung dinding kirmizi"
+  CRIMSON_WALL_SIGN: "penanda dinding kirmizi"
+  CRYING_OBSIDIAN: "obsidian menangis"
+  CUT_COPPER: "tembaga pahat"
+  CUT_COPPER_SLAB: "lempeng tembaga pahat"
+  CUT_COPPER_STAIRS: "tangga tembaga pahat"
+  CUT_RED_SANDSTONE: "potongan batu pasir merah"
+  CUT_RED_SANDSTONE_SLAB: "potongan lempeng batu pasir merah"
+  CUT_SANDSTONE: "potongan batu pasir"
+  CUT_SANDSTONE_SLAB: "potongan lempeng batu pasir"
+  CYAN_BANNER: "spanduk sian"
+  CYAN_BED: "tempat tidur sian"
+  CYAN_CANDLE: "lilin sian"
+  CYAN_CANDLE_CAKE: "kue dengan lilin cian"
+  CYAN_CARPET: "karpet sian"
+  CYAN_CONCRETE: "beton sian"
+  CYAN_CONCRETE_POWDER: "semen sian"
+  CYAN_GLAZED_TERRACOTTA: "terakota berglasir sian"
+  CYAN_SHULKER_BOX: "kotak periuk pengintai sian"
+  CYAN_STAINED_GLASS: "kaca patri sian"
+  CYAN_STAINED_GLASS_PANE: "panel kaca patri sian"
+  CYAN_TERRACOTTA: "terakota sian"
+  CYAN_WOOL: "wol sian"
+  DAMAGED_ANVIL: "paron rusak"
+  DANDELION: "randa tapak"
+  DARK_OAK_BUTTON: "tombol ek gelap"
+  DARK_OAK_DOOR: "pintu kayu ek gelap"
+  DARK_OAK_FENCE: "pagar kayu ek gelap"
+  DARK_OAK_FENCE_GATE: "pintu pagar kayu ek gelap"
+  DARK_OAK_HANGING_SIGN: "petanda gantung ek gelap"
+  DARK_OAK_LEAVES: "dedaunan ek gelap"
+  DARK_OAK_LOG: "gelondong ek gelap"
+  DARK_OAK_PLANKS: "papan ek gelap"
+  DARK_OAK_PRESSURE_PLATE: "papan tekan ek gelap"
+  DARK_OAK_SAPLING: "bibit pohon ek gelap"
+  DARK_OAK_SIGN: "penanda ek gelap"
+  DARK_OAK_SLAB: "lempeng ek gelap"
+  DARK_OAK_STAIRS: "tangga ek gelap"
+  DARK_OAK_TRAPDOOR: "pintu jebakan ek gelap"
+  DARK_OAK_WALL_HANGING_SIGN: "tanda gantung dinding ek gelap"
+  DARK_OAK_WALL_SIGN: "penanda dinding ek gelap"
+  DARK_OAK_WOOD: "kayu ek gelap"
+  DARK_PRISMARINE: "prismarine gelap"
+  DARK_PRISMARINE_SLAB: "lempeng prismarine gelap"
+  DARK_PRISMARINE_STAIRS: "tangga prismarine gelap"
+  DAYLIGHT_DETECTOR: "detektor cahaya"
+  DEAD_BRAIN_CORAL: "karang otak mati"
+  DEAD_BRAIN_CORAL_BLOCK: "blok karang otak mati"
+  DEAD_BRAIN_CORAL_FAN: "kipas laut otak mati"
+  DEAD_BRAIN_CORAL_WALL_FAN: "kipas laut otak mati dinding"
+  DEAD_BUBBLE_CORAL: "karang gelembung mati"
+  DEAD_BUBBLE_CORAL_BLOCK: "blok karang gelembung mati"
+  DEAD_BUBBLE_CORAL_FAN: "kipas laut gelembung mati"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "kipas laut gelembung mati dinding"
+  DEAD_BUSH: "semak mati"
+  DEAD_FIRE_CORAL: "karang api mati"
+  DEAD_FIRE_CORAL_BLOCK: "blok karang api mati"
+  DEAD_FIRE_CORAL_FAN: "kipas laut api mati"
+  DEAD_FIRE_CORAL_WALL_FAN: "kipas laut api mati dinding"
+  DEAD_HORN_CORAL: "karang tanduk mati"
+  DEAD_HORN_CORAL_BLOCK: "blok karang tanduk mati"
+  DEAD_HORN_CORAL_FAN: "kipas laut tanduk mati"
+  DEAD_HORN_CORAL_WALL_FAN: "kipas laut tanduk mati dinding"
+  DEAD_TUBE_CORAL: "karang pipa mati"
+  DEAD_TUBE_CORAL_BLOCK: "blok karang pipa mati"
+  DEAD_TUBE_CORAL_FAN: "kipas laut pipa mati"
+  DEAD_TUBE_CORAL_WALL_FAN: "kipas laut pipa mati dinding"
+  DECORATED_POT: "pot hias"
+  DEEPSLATE: "batu tulis dalam"
+  DEEPSLATE_BRICK_SLAB: "lempeng bata katup sabak"
+  DEEPSLATE_BRICK_STAIRS: "tangga bata katup sabak"
+  DEEPSLATE_BRICK_WALL: "dinding bata batu tulis dalam"
+  DEEPSLATE_BRICKS: "bata katup sabak"
+  DEEPSLATE_COAL_ORE: "bijih batu bara batu tulis dalam"
+  DEEPSLATE_COPPER_ORE: "katup sabak bijih tembaga"
+  DEEPSLATE_DIAMOND_ORE: "katup sabak bijih berlian"
+  DEEPSLATE_EMERALD_ORE: "katup sabak bijih zamrud"
+  DEEPSLATE_GOLD_ORE: "bijih emas batu tulis dalam"
+  DEEPSLATE_IRON_ORE: "katup sabak bijih besi"
+  DEEPSLATE_LAPIS_ORE: "katup sabak bijih lapis lazuli"
+  DEEPSLATE_REDSTONE_ORE: "sabak dalam bijih batu merah"
+  DEEPSLATE_TILE_SLAB: "lempeng ubin katup sabak"
+  DEEPSLATE_TILE_STAIRS: "tangga ubin katup sabak"
+  DEEPSLATE_TILE_WALL: "dinding ubin katup sabak"
+  DEEPSLATE_TILES: "ubin batu tulis dalam"
+  DETECTOR_RAIL: "rel detektor"
+  DIAMOND_BLOCK: "blok berlian"
+  DIAMOND_ORE: "bijih berlian"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "lempeng diorit"
+  DIORITE_STAIRS: "tangga diorit"
+  DIORITE_WALL: "dinding diorit"
+  DIRT: "tanah"
+  DIRT_PATH: "jalan setapak"
+  DISPENSER: "pelempar"
+  DRAGON_EGG: "telur naga"
+  DRAGON_HEAD: "kepala naga"
+  DRAGON_WALL_HEAD: "kepala tembok naga"
+  DRIED_KELP_BLOCK: "balok kelp kering"
+  DRIPSTONE_BLOCK: "blok batu tetes"
+  DROPPER: "penjatuh"
+  EMERALD_BLOCK: "blok zamrud"
+  EMERALD_ORE: "bijih zamrud"
+  ENCHANTING_TABLE: "meja pesona"
+  END_GATEWAY: "gerbang end"
+  END_PORTAL: "gerbang end"
+  END_PORTAL_FRAME: "bingkai gerbang akhir"
+  END_ROD: "tongkat end"
+  END_STONE: "batu end"
+  END_STONE_BRICK_SLAB: "lempeng batu bata akhir"
+  END_STONE_BRICK_STAIRS: "tangga batu bata akhir"
+  END_STONE_BRICK_WALL: "dinding batu bata akhir"
+  END_STONE_BRICKS: "batu bata end"
+  ENDER_CHEST: "peti ender"
+  EXPOSED_CHISELED_COPPER: "tembaga ukir terbuka"
+  EXPOSED_COPPER: "tembaga terekspos"
+  EXPOSED_COPPER_BULB: "bohlam tembaga terbuka"
+  EXPOSED_COPPER_DOOR: "pintu tembaga terbuka"
+  EXPOSED_COPPER_GRATE: "saringan tembaga terbuka"
+  EXPOSED_COPPER_TRAPDOOR: "pintu jerat tembaga terbuka"
+  EXPOSED_CUT_COPPER: "potongan tembaga terekspos"
+  EXPOSED_CUT_COPPER_SLAB: "potongan lempeng tembaga terekspos"
+  EXPOSED_CUT_COPPER_STAIRS: "potongan tangga tembaga terekspos"
+  FARMLAND: "tanah garapan"
+  FERN: "pakis"
+  FIRE: "api"
+  FIRE_CORAL: "karang api"
+  FIRE_CORAL_BLOCK: "blok karang api"
+  FIRE_CORAL_FAN: "kipas laut api"
+  FIRE_CORAL_WALL_FAN: "kipas laut api dinding"
+  FLETCHING_TABLE: "meja panahan"
+  FLOWER_POT: "pot bunga"
+  FLOWERING_AZALEA: "azalea berbunga"
+  FLOWERING_AZALEA_LEAVES: "dedaunan azalea berbunga"
+  FROGSPAWN: "telur katak"
+  FROSTED_ICE: "es buram"
+  FURNACE: "tungku"
+  GILDED_BLACKSTONE: "batu hitam sepuh"
+  GLASS: "kaca"
+  GLASS_PANE: "panel kaca"
+  GLOW_LICHEN: "lumut kerak bersinar"
+  GLOWSTONE: "batu bersinar"
+  GOLD_BLOCK: "balok emas"
+  GOLD_ORE: "bijih emas"
+  GRANITE: "granit"
+  GRANITE_SLAB: "lempeng granit"
+  GRANITE_STAIRS: "tangga granit"
+  GRANITE_WALL: "dinding granit"
+  GRASS: "rumput"
+  GRASS_BLOCK: "balok rumput"
+  GRAVEL: "kerikil"
+  GRAY_BANNER: "spanduk kelabu"
+  GRAY_BED: "tempat tidur kelabu"
+  GRAY_CANDLE: "lilin abu-abu"
+  GRAY_CANDLE_CAKE: "kue dengan lilin abu abu"
+  GRAY_CARPET: "karpet kelabu"
+  GRAY_CONCRETE: "beton kelabu"
+  GRAY_CONCRETE_POWDER: "semen kelabu"
+  GRAY_GLAZED_TERRACOTTA: "terakota berglasir kelabu"
+  GRAY_SHULKER_BOX: "kotak periuk pengintai kelabu"
+  GRAY_STAINED_GLASS: "kaca berwarna kelabu"
+  GRAY_STAINED_GLASS_PANE: "panel kaca patri kelabu"
+  GRAY_TERRACOTTA: "terakota kelabu"
+  GRAY_WOOL: "wol kelabu"
+  GREEN_BANNER: "spanduk hijau"
+  GREEN_BED: "tempat tidur hijau"
+  GREEN_CANDLE: "lilin hijau"
+  GREEN_CANDLE_CAKE: "kue dengan lilin hijau"
+  GREEN_CARPET: "karpet hijau"
+  GREEN_CONCRETE: "beton hijau"
+  GREEN_CONCRETE_POWDER: "semen hijau"
+  GREEN_GLAZED_TERRACOTTA: "terakota berglasir hijau"
+  GREEN_SHULKER_BOX: "kotak periuk pengintai hijau"
+  GREEN_STAINED_GLASS: "kaca patri hijau"
+  GREEN_STAINED_GLASS_PANE: "panel kaca patri hijau"
+  GREEN_TERRACOTTA: "terakota hijau"
+  GREEN_WOOL: "wol hijau"
+  GRINDSTONE: "gerinda"
+  HANGING_ROOTS: "akar gantung"
+  HAY_BLOCK: "jerami"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "papan tekan pemberat berat"
+  HONEY_BLOCK: "blok madu"
+  HONEYCOMB_BLOCK: "blok sarang madu"
+  HOPPER: "corong"
+  HORN_CORAL: "karang tanduk"
+  HORN_CORAL_BLOCK: "blok karang tanduk"
+  HORN_CORAL_FAN: "kipas laut tanduk"
+  HORN_CORAL_WALL_FAN: "kipas laut tanduk dinding"
+  ICE: "es"
+  INFESTED_CHISELED_STONE_BRICKS: "bata batu pahatan terinfeksi"
+  INFESTED_COBBLESTONE: "batu kasar terinfeksi"
+  INFESTED_CRACKED_STONE_BRICKS: "bata batu retak terinfeksi"
+  INFESTED_DEEPSLATE: "katup sabak terinfeksi"
+  INFESTED_MOSSY_STONE_BRICKS: "batu bata berlumut terinfeksi"
+  INFESTED_STONE: "batu terinfeksi"
+  INFESTED_STONE_BRICKS: "batu bata terinfeksi"
+  IRON_BARS: "jeruji besi"
+  IRON_BLOCK: "balok besi"
+  IRON_DOOR: "pintu besi"
+  IRON_ORE: "bijih besi"
+  IRON_TRAPDOOR: "pintu jebakan besi"
+  JACK_O_LANTERN: "lentera jack"
+  JIGSAW: "blok gergaji ukir"
+  JUKEBOX: "kotak lagu"
+  JUNGLE_BUTTON: "tombol rimba"
+  JUNGLE_DOOR: "pintu kayu rimba"
+  JUNGLE_FENCE: "pagar kayu rimba"
+  JUNGLE_FENCE_GATE: "pintu pagar kayu rimba"
+  JUNGLE_HANGING_SIGN: "tanda gantung hutan"
+  JUNGLE_LEAVES: "dedaunan pohon rimba"
+  JUNGLE_LOG: "gelondong rimba"
+  JUNGLE_PLANKS: "papan rimba"
+  JUNGLE_PRESSURE_PLATE: "papan tekan rimba"
+  JUNGLE_SAPLING: "bibit pohon rimba"
+  JUNGLE_SIGN: "penanda rimba"
+  JUNGLE_SLAB: "lempeng rimba"
+  JUNGLE_STAIRS: "tangga rimba"
+  JUNGLE_TRAPDOOR: "pintu jebakan rimba"
+  JUNGLE_WALL_HANGING_SIGN: "tanda gantung dinding hutan"
+  JUNGLE_WALL_SIGN: "penanda dinding rimba"
+  JUNGLE_WOOD: "kayu hutan"
+  KELP: "kelp"
+  KELP_PLANT: "tanaman kelp"
+  LADDER: "tangga"
+  LANTERN: "lentera"
+  LAPIS_BLOCK: "blok lapis lazuli"
+  LAPIS_ORE: "bijih lapis lazuli"
+  LARGE_AMETHYST_BUD: "kuncup besar batu kecubung"
+  LARGE_FERN: "pakis besar"
+  LAVA: "lava"
+  LAVA_CAULDRON: "kuali lahar"
+  LECTERN: "podium"
+  LEVER: "tuas"
+  LIGHT: "cahaya"
+  LIGHT_BLUE_BANNER: "spanduk biru muda"
+  LIGHT_BLUE_BED: "tempat tidur biru muda"
+  LIGHT_BLUE_CANDLE: "lilin biru muda"
+  LIGHT_BLUE_CANDLE_CAKE: "kue dengan lilin biru muda"
+  LIGHT_BLUE_CARPET: "karpet biru muda"
+  LIGHT_BLUE_CONCRETE: "beton biru muda"
+  LIGHT_BLUE_CONCRETE_POWDER: "semen biru muda"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "terakota berglasir biru muda"
+  LIGHT_BLUE_SHULKER_BOX: "kotak periuk pengintai biru muda"
+  LIGHT_BLUE_STAINED_GLASS: "kaca patri biru muda"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "panel kaca patri biru muda"
+  LIGHT_BLUE_TERRACOTTA: "terakota biru muda"
+  LIGHT_BLUE_WOOL: "wol biru muda"
+  LIGHT_GRAY_BANNER: "spanduk kelabu muda"
+  LIGHT_GRAY_BED: "tempat tidur kelabu muda"
+  LIGHT_GRAY_CANDLE: "lilin abu-abu muda"
+  LIGHT_GRAY_CANDLE_CAKE: "kue dengan lilin abu abu muda"
+  LIGHT_GRAY_CARPET: "karpet kelabu muda"
+  LIGHT_GRAY_CONCRETE: "beton kelabu muda"
+  LIGHT_GRAY_CONCRETE_POWDER: "semen kelabu muda"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "terakota berglasir kelabu muda"
+  LIGHT_GRAY_SHULKER_BOX: "kotak periuk pengintai kelabu muda"
+  LIGHT_GRAY_STAINED_GLASS: "kaca berwarna kelabu muda"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "panel kaca patri kelabu muda"
+  LIGHT_GRAY_TERRACOTTA: "terakota kelabu muda"
+  LIGHT_GRAY_WOOL: "wol kelabu muda"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "papan tekan pemberat ringan"
+  LIGHTNING_ROD: "penangkal petir"
+  LILAC: "lilac"
+  LILY_OF_THE_VALLEY: "lili lembah"
+  LILY_PAD: "daun teratai"
+  LIME_BANNER: "spanduk limau"
+  LIME_BED: "tempat tidur limau"
+  LIME_CANDLE: "lilin hijau muda"
+  LIME_CANDLE_CAKE: "kue dengan lilin limau"
+  LIME_CARPET: "karpet limau"
+  LIME_CONCRETE: "beton limau"
+  LIME_CONCRETE_POWDER: "semen limau"
+  LIME_GLAZED_TERRACOTTA: "terakota berglasir limau"
+  LIME_SHULKER_BOX: "kotak periuk pengintai limau"
+  LIME_STAINED_GLASS: "kaca patri limau"
+  LIME_STAINED_GLASS_PANE: "panel kaca patri limau"
+  LIME_TERRACOTTA: "terakota limau"
+  LIME_WOOL: "wol limau"
+  LODESTONE: "batu magnet"
+  LOOM: "alat tenun"
+  MAGENTA_BANNER: "spanduk magenta"
+  MAGENTA_BED: "tempat tidur magenta"
+  MAGENTA_CANDLE: "lilin magenta"
+  MAGENTA_CANDLE_CAKE: "kue dengan lilin magenta"
+  MAGENTA_CARPET: "karpet magenta"
+  MAGENTA_CONCRETE: "beton magenta"
+  MAGENTA_CONCRETE_POWDER: "semen magenta"
+  MAGENTA_GLAZED_TERRACOTTA: "terakota berglasir magenta"
+  MAGENTA_SHULKER_BOX: "kotak periuk pengintai magenta"
+  MAGENTA_STAINED_GLASS: "kaca patri magenta"
+  MAGENTA_STAINED_GLASS_PANE: "panel kaca patri magenta"
+  MAGENTA_TERRACOTTA: "terakota magenta"
+  MAGENTA_WOOL: "wol magenta"
+  MAGMA_BLOCK: "blok magma"
+  MANGROVE_BUTTON: "tombol bakau"
+  MANGROVE_DOOR: "pintu kayu bakau"
+  MANGROVE_FENCE: "pagar kayu bakau"
+  MANGROVE_FENCE_GATE: "pintu pagar kayu bakau"
+  MANGROVE_HANGING_SIGN: "tanda gantung bakau"
+  MANGROVE_LEAVES: "dedaunan bakau"
+  MANGROVE_LOG: "gelondong bakau"
+  MANGROVE_PLANKS: "papan bakau"
+  MANGROVE_PRESSURE_PLATE: "papan tekan bakau"
+  MANGROVE_PROPAGULE: "propagul bakau"
+  MANGROVE_ROOTS: "akar bakau"
+  MANGROVE_SIGN: "penanda bakau"
+  MANGROVE_SLAB: "lempeng bakau"
+  MANGROVE_STAIRS: "tangga bakau"
+  MANGROVE_TRAPDOOR: "pintu jebakan bakau"
+  MANGROVE_WALL_HANGING_SIGN: "tanda gantung dinding bakau"
+  MANGROVE_WALL_SIGN: "penanda dinding bakau"
+  MANGROVE_WOOD: "kayu bakau"
+  MEDIUM_AMETHYST_BUD: "kuncup kecubung sedang"
+  MELON: "semangka"
+  MELON_STEM: "batang semangka"
+  MOSS_BLOCK: "blok lumut"
+  MOSS_CARPET: "karpet lumut"
+  MOSSY_COBBLESTONE: "batu kasar berlumut"
+  MOSSY_COBBLESTONE_SLAB: "lempeng batu kasar berlumut"
+  MOSSY_COBBLESTONE_STAIRS: "tangga batu kasar berlumut"
+  MOSSY_COBBLESTONE_WALL: "dinding batu kasar berlumut"
+  MOSSY_STONE_BRICK_SLAB: "lempeng batu bata berlumut"
+  MOSSY_STONE_BRICK_STAIRS: "tangga batu bata berlumut"
+  MOSSY_STONE_BRICK_WALL: "dinding batu bata berlumut"
+  MOSSY_STONE_BRICKS: "bata batu berlumut"
+  MOVING_PISTON: "piston bergerak"
+  MUD: "lumpur"
+  MUD_BRICK_SLAB: "lempeng bata lumpur"
+  MUD_BRICK_STAIRS: "tangga bata lumpur"
+  MUD_BRICK_WALL: "dinding bata lumpur"
+  MUD_BRICKS: "bata lumpur"
+  MUDDY_MANGROVE_ROOTS: "akar bakau berlumpur"
+  MUSHROOM_STEM: "batang jamur"
+  MYCELIUM: "miselium"
+  NETHER_BRICK_FENCE: "pagar batu nether"
+  NETHER_BRICK_SLAB: "lempeng bata nether"
+  NETHER_BRICK_STAIRS: "tangga batu nether"
+  NETHER_BRICK_WALL: "dinding bata nether"
+  NETHER_BRICKS: "bata nether"
+  NETHER_GOLD_ORE: "bijih emas nether"
+  NETHER_PORTAL: "gerbang nether"
+  NETHER_QUARTZ_ORE: "bijih kuarsa nether"
+  NETHER_SPROUTS: "kecambah nether"
+  NETHER_WART: "ketuat nether"
+  NETHER_WART_BLOCK: "blok ketuat nether"
+  NETHERITE_BLOCK: "blok neterit"
+  NETHERRACK: "batu nether"
+  NOTE_BLOCK: "kotak nada"
+  OAK_BUTTON: "tombol ek"
+  OAK_DOOR: "pintu kayu ek"
+  OAK_FENCE: "pagar kayu ek"
+  OAK_FENCE_GATE: "pintu pagar kayu ek"
+  OAK_HANGING_SIGN: "petanda gantung ek"
+  OAK_LEAVES: "dedaunan ek"
+  OAK_LOG: "gelondong ek"
+  OAK_PLANKS: "papan ek"
+  OAK_PRESSURE_PLATE: "papan tekan ek"
+  OAK_SAPLING: "bibit pohon ek"
+  OAK_SIGN: "penanda ek"
+  OAK_SLAB: "lempeng ek"
+  OAK_STAIRS: "tangga ek"
+  OAK_TRAPDOOR: "pintu jebakan ek"
+  OAK_WALL_HANGING_SIGN: "tanda gantung dinding ek"
+  OAK_WALL_SIGN: "penanda dinding ek"
+  OAK_WOOD: "kayu ek"
+  OBSERVER: "pengamat"
+  OBSIDIAN: "obsidian"
+  OCHRE_FROGLIGHT: "lampu katak hartal"
+  OMINOUS_BANNER: "spanduk mengerikan"
+  ORANGE_BANNER: "spanduk jingga"
+  ORANGE_BED: "tempat tidur jingga"
+  ORANGE_CANDLE: "lilin jingga"
+  ORANGE_CANDLE_CAKE: "kue dengan lilin oranye"
+  ORANGE_CARPET: "karpet jinnga"
+  ORANGE_CONCRETE: "beton jingga"
+  ORANGE_CONCRETE_POWDER: "semen jingga"
+  ORANGE_GLAZED_TERRACOTTA: "terakota berglasir jingga"
+  ORANGE_SHULKER_BOX: "kotak periuk pengintai jingga"
+  ORANGE_STAINED_GLASS: "kaca patri jingga"
+  ORANGE_STAINED_GLASS_PANE: "panel kaca patri jingga"
+  ORANGE_TERRACOTTA: "terakota jingga"
+  ORANGE_TULIP: "tulip jingga"
+  ORANGE_WOOL: "wol jingga"
+  OXEYE_DAISY: "daisy"
+  OXIDIZED_CHISELED_COPPER: "tembaga ukir teroksidasi"
+  OXIDIZED_COPPER: "tembaga teroksidasi"
+  OXIDIZED_COPPER_BULB: "bohlam tembaga teroksidasi"
+  OXIDIZED_COPPER_DOOR: "pintu tembaga teroksidas"
+  OXIDIZED_COPPER_GRATE: "saringan tembaga teroksidasi"
+  OXIDIZED_COPPER_TRAPDOOR: "pintu jerat tembaga teroksidasi"
+  OXIDIZED_CUT_COPPER: "potongan tembaga teroksidasi"
+  OXIDIZED_CUT_COPPER_SLAB: "potongan lempeng tembaga teroksidasi"
+  OXIDIZED_CUT_COPPER_STAIRS: "potongan tangga tembaga teroksidasi"
+  PACKED_ICE: "es batu"
+  PACKED_MUD: "lumpur padat"
+  PEARLESCENT_FROGLIGHT: "lampu katak warna mutiara"
+  PEONY: "peony"
+  PETRIFIED_OAK_SLAB: "lempeng ek membatu"
+  PIGLIN_HEAD: "kepala piglin"
+  PIGLIN_WALL_HEAD: "kepala dinding piglin"
+  PINK_BANNER: "spanduk merah jambu"
+  PINK_BED: "tempat tidur merah jambu"
+  PINK_CANDLE: "lilin merah muda"
+  PINK_CANDLE_CAKE: "kue dengan lilin merah jambu"
+  PINK_CARPET: "karpet merah jambu"
+  PINK_CONCRETE: "beton merah jambu"
+  PINK_CONCRETE_POWDER: "semen merah jambu"
+  PINK_GLAZED_TERRACOTTA: "terakota berglasir merah jambu"
+  PINK_PETALS: "kelopak bunga pink"
+  PINK_SHULKER_BOX: "kotak periuk pengintai merah jambu"
+  PINK_STAINED_GLASS: "kaca patri merah jambu"
+  PINK_STAINED_GLASS_PANE: "panel kaca patri merah jambu"
+  PINK_TERRACOTTA: "terakota merah jambu"
+  PINK_TULIP: "tulip merah jambu"
+  PINK_WOOL: "wol merah jambu"
+  PISTON: "piston"
+  PISTON_HEAD: "kepala piston"
+  PITCHER_CROP: "tanaman pitcher"
+  PITCHER_PLANT: "tanaman pitcher"
+  PLAYER_HEAD: "kepala pemain"
+  PLAYER_HEAD_NAMED: "kepala %s"
+  PLAYER_WALL_HEAD: "kepala dinding pemain"
+  PODZOL: "tanah asam"
+  POINTED_DRIPSTONE: "batu tetes runcing"
+  POLISHED_ANDESITE: "andesit poles"
+  POLISHED_ANDESITE_SLAB: "lempeng andesit poles"
+  POLISHED_ANDESITE_STAIRS: "tangga andesit poles"
+  POLISHED_BASALT: "basal poles"
+  POLISHED_BLACKSTONE: "batu hitam poles"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "lempeng bata batu hitam poles"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "tangga bata batu hitam poles"
+  POLISHED_BLACKSTONE_BRICK_WALL: "dinding bata batu hitam poles"
+  POLISHED_BLACKSTONE_BRICKS: "bata batu hitam poles"
+  POLISHED_BLACKSTONE_BUTTON: "tombol batu hitam poles"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "papan tekan batu hitam poles"
+  POLISHED_BLACKSTONE_SLAB: "lempeng batu hitam poles"
+  POLISHED_BLACKSTONE_STAIRS: "tangga batu hitam poles"
+  POLISHED_BLACKSTONE_WALL: "dinding batu hitam poles"
+  POLISHED_DEEPSLATE: "batu tulis dalam poles"
+  POLISHED_DEEPSLATE_SLAB: "lempeng polesan katup sabak"
+  POLISHED_DEEPSLATE_STAIRS: "tangga polesan katup sabak"
+  POLISHED_DEEPSLATE_WALL: "dinding polesan katup sabak"
+  POLISHED_DIORITE: "diorit poles"
+  POLISHED_DIORITE_SLAB: "lempeng diorit poles"
+  POLISHED_DIORITE_STAIRS: "tangga diorit poles"
+  POLISHED_GRANITE: "granit poles"
+  POLISHED_GRANITE_SLAB: "lempeng granit poles"
+  POLISHED_GRANITE_STAIRS: "tangga granit poles"
+  POLISHED_TUFF: "tuff dipoles"
+  POLISHED_TUFF_SLAB: "pelat tuff yang dipoles"
+  POLISHED_TUFF_STAIRS: "tangga tuff yang dipoles"
+  POLISHED_TUFF_WALL: "dinding tuff dipoles"
+  POPPY: "poppy"
+  POTATOES: "kentang"
+  POTTED_ACACIA_SAPLING: "bibit pohon akasia pot"
+  POTTED_ALLIUM: "bawang pot"
+  POTTED_AZALEA_BUSH: "azalea pot"
+  POTTED_AZURE_BLUET: "azure bluet pot"
+  POTTED_BAMBOO: "bambu pot"
+  POTTED_BIRCH_SAPLING: "bibit pohon pinus pot"
+  POTTED_BLUE_ORCHID: "anggrek biru pot"
+  POTTED_BROWN_MUSHROOM: "jamur cokelat pot"
+  POTTED_CACTUS: "kaktus pot"
+  POTTED_CHERRY_SAPLING: "bibit pohon sakura dalam pot"
+  POTTED_CORNFLOWER: "bunga jagung pot"
+  POTTED_CRIMSON_FUNGUS: "jamur kirmizi pot"
+  POTTED_CRIMSON_ROOTS: "akar kirmizi pot"
+  POTTED_DANDELION: "randa tapak pot"
+  POTTED_DARK_OAK_SAPLING: "bibit pohon ek gelap pot"
+  POTTED_DEAD_BUSH: "semak mati pot"
+  POTTED_FERN: "pakis pot"
+  POTTED_FLOWERING_AZALEA_BUSH: "pot berbunga azalea"
+  POTTED_JUNGLE_SAPLING: "bibit pohon rimba pot"
+  POTTED_LILY_OF_THE_VALLEY: "lili lembah pot"
+  POTTED_MANGROVE_PROPAGULE: "propagul bakau pot"
+  POTTED_OAK_SAPLING: "bibit pohon ek pot"
+  POTTED_ORANGE_TULIP: "tulip jingga pot"
+  POTTED_OXEYE_DAISY: "daisy pot"
+  POTTED_PINK_TULIP: "tulip merah jambu pot"
+  POTTED_POPPY: "poppy pot"
+  POTTED_RED_MUSHROOM: "jamur merah pot"
+  POTTED_RED_TULIP: "tulip merah pot"
+  POTTED_SPRUCE_SAPLING: "bibit pohon cemara pot"
+  POTTED_TORCHFLOWER: "bunga obor dalam pot"
+  POTTED_WARPED_FUNGUS: "jamur kerukut pot"
+  POTTED_WARPED_ROOTS: "akar kerukut pot"
+  POTTED_WHITE_TULIP: "tulip putih pot"
+  POTTED_WITHER_ROSE: "mawar wither pot"
+  POWDER_SNOW: "bubuk salju"
+  POWDER_SNOW_CAULDRON: "kuali bubuk salju"
+  POWERED_RAIL: "rel listrik"
+  PRISMARINE: "prismarine"
+  PRISMARINE_BRICK_SLAB: "lempeng bata prismarine"
+  PRISMARINE_BRICK_STAIRS: "tangga bata prismarine"
+  PRISMARINE_BRICKS: "batu bata prismarine"
+  PRISMARINE_SLAB: "lempeng prismarine"
+  PRISMARINE_STAIRS: "tangga prismarine"
+  PRISMARINE_WALL: "dinding prismarine"
+  PUMPKIN: "labu"
+  PUMPKIN_STEM: "batang labu"
+  PURPLE_BANNER: "spanduk ungu"
+  PURPLE_BED: "tempat tidur ungu"
+  PURPLE_CANDLE: "lilin ungu"
+  PURPLE_CANDLE_CAKE: "kue dengan lilin ungu"
+  PURPLE_CARPET: "karpet ungu"
+  PURPLE_CONCRETE: "beton ungu"
+  PURPLE_CONCRETE_POWDER: "semen ungu"
+  PURPLE_GLAZED_TERRACOTTA: "terakota berglasir ungu"
+  PURPLE_SHULKER_BOX: "kotak periuk pengintai ungu"
+  PURPLE_STAINED_GLASS: "kaca patri ungu"
+  PURPLE_STAINED_GLASS_PANE: "panel kaca patri ungu"
+  PURPLE_TERRACOTTA: "terakota ungu"
+  PURPLE_WOOL: "wol ungu"
+  PURPUR_BLOCK: "balok purpur"
+  PURPUR_PILLAR: "pilar purpur"
+  PURPUR_SLAB: "lempeng purpur"
+  PURPUR_STAIRS: "tangga purpur"
+  QUARTZ_BLOCK: "balok kuarsa"
+  QUARTZ_BRICKS: "bata kuarsa"
+  QUARTZ_PILLAR: "pilar kuarsa"
+  QUARTZ_SLAB: "lempeng kuarsa"
+  QUARTZ_STAIRS: "tangga kuarsa"
+  RAIL: "rel"
+  RAW_COPPER_BLOCK: "blok tembaga mentah"
+  RAW_GOLD_BLOCK: "blok emas mentah"
+  RAW_IRON_BLOCK: "blok besi mentah"
+  RED_BANNER: "spanduk merah"
+  RED_BED: "tempat tidur merah"
+  RED_CANDLE: "lilin merah"
+  RED_CANDLE_CAKE: "kue dengan lilin merah"
+  RED_CARPET: "karpet merah"
+  RED_CONCRETE: "beton merah"
+  RED_CONCRETE_POWDER: "semen merah"
+  RED_GLAZED_TERRACOTTA: "terakota berglasir merah"
+  RED_MUSHROOM: "jamur merah"
+  RED_MUSHROOM_BLOCK: "blok jamur merah"
+  RED_NETHER_BRICK_SLAB: "lempeng bata nether merah"
+  RED_NETHER_BRICK_STAIRS: "tangga bata nether merah"
+  RED_NETHER_BRICK_WALL: "dinding bata nether merah"
+  RED_NETHER_BRICKS: "bata nether merah"
+  RED_SAND: "pasir merah"
+  RED_SANDSTONE: "batu pasir merah"
+  RED_SANDSTONE_SLAB: "lempeng batu pasir merah"
+  RED_SANDSTONE_STAIRS: "tangga batu pasir merah"
+  RED_SANDSTONE_WALL: "dinding batu pasir merah"
+  RED_SHULKER_BOX: "kotak periuk pengintai merah"
+  RED_STAINED_GLASS: "kaca patri merah"
+  RED_STAINED_GLASS_PANE: "panel kaca patri merah"
+  RED_TERRACOTTA: "terakota merah"
+  RED_TULIP: "tulip merah"
+  RED_WOOL: "wol merah"
+  REDSTONE_BLOCK: "balok batu merah"
+  REDSTONE_LAMP: "lampu batu merah"
+  REDSTONE_ORE: "bijih batu merah"
+  REDSTONE_TORCH: "obor batu merah"
+  REDSTONE_WALL_TORCH: "obor dinding batu merah"
+  REDSTONE_WIRE: "kabel batu merah"
+  REINFORCED_DEEPSLATE: "batu dalam yang diperkuat"
+  REPEATER: "pengulang batu merah"
+  REPEATING_COMMAND_BLOCK: "pengulang blok perintah"
+  RESPAWN_ANCHOR: "jangkar pembangkit"
+  ROOTED_DIRT: "tanah berakar"
+  ROSE_BUSH: "semak mawar"
+  SAND: "pasir"
+  SANDSTONE: "batu pasir"
+  SANDSTONE_SLAB: "lempeng batu pasir"
+  SANDSTONE_STAIRS: "tangga batu pasir"
+  SANDSTONE_WALL: "dinding batu pasir"
+  SCAFFOLDING: "perancah"
+  SCULK: "sculk"
+  SCULK_CATALYST: "katalis sculk"
+  SCULK_SENSOR: "sensor skulk"
+  SCULK_SHRIEKER: "sculk penjerit"
+  SCULK_VEIN: "urat sculk"
+  SEA_LANTERN: "lentera laut"
+  SEA_PICKLE: "acar laut"
+  SEAGRASS: "lamun"
+  SET_SPAWN: "titik bangkit ditetapkan"
+  SHORT_GRASS: "rumput pendek"
+  SHROOMLIGHT: "lampu jamur"
+  SHULKER_BOX: "kotak periuk pengintai"
+  SKELETON_SKULL: "tengkorak bengkarak"
+  SKELETON_WALL_SKULL: "tengkorak dinding bengkarak"
+  SLIME_BLOCK: "balok geladir"
+  SMALL_AMETHYST_BUD: "kuncup kecil batu kecubung"
+  SMALL_DRIPLEAF: "daun tetes kecil"
+  SMITHING_TABLE: "meja tempa"
+  SMOKER: "pengasap"
+  SMOOTH_BASALT: "basal halus"
+  SMOOTH_QUARTZ: "blok kuarsa halus"
+  SMOOTH_QUARTZ_SLAB: "lempeng kuarsa halus"
+  SMOOTH_QUARTZ_STAIRS: "tangga kuarsa halus"
+  SMOOTH_RED_SANDSTONE: "batu pasir merah halus"
+  SMOOTH_RED_SANDSTONE_SLAB: "lempeng batu pasir merah halus"
+  SMOOTH_RED_SANDSTONE_STAIRS: "tangga batu pasir merah halus"
+  SMOOTH_SANDSTONE: "batu pasir halus"
+  SMOOTH_SANDSTONE_SLAB: "lempeng batu pasir halus"
+  SMOOTH_SANDSTONE_STAIRS: "tangga batu pasir halus"
+  SMOOTH_STONE: "batu halus"
+  SMOOTH_STONE_SLAB: "lempeng batu halus"
+  SNIFFER_EGG: "telur pengendus"
+  SNOW: "salju"
+  SNOW_BLOCK: "balok salju"
+  SOUL_CAMPFIRE: "api unggun jiwa"
+  SOUL_FIRE: "api jiwa"
+  SOUL_LANTERN: "lentera api roh"
+  SOUL_SAND: "pasir jiwa"
+  SOUL_SOIL: "tanah jiwa"
+  SOUL_TORCH: "obor jiwa"
+  SOUL_WALL_TORCH: "obor dinding jiwa"
+  SPAWN_NOT_VALID: "tempat tidur atau jangkar pembangkit anda tidak ada atau terhalang"
+  SPAWNER: "pembangkit monster"
+  SPAWNER_DESC1: "berinteraksi dengan telur muncul:"
+  SPAWNER_DESC2: "atur tipe mob"
+  SPONGE: "spons"
+  SPORE_BLOSSOM: "spora mekar"
+  SPRUCE_BUTTON: "tombol cemara"
+  SPRUCE_DOOR: "pintu kayu cemara"
+  SPRUCE_FENCE: "pagar kayu cemara"
+  SPRUCE_FENCE_GATE: "pintu pagar kayu cemara"
+  SPRUCE_HANGING_SIGN: "tanda gantung spruce"
+  SPRUCE_LEAVES: "dedaunan cemara"
+  SPRUCE_LOG: "gelondong cemara"
+  SPRUCE_PLANKS: "papan cemara"
+  SPRUCE_PRESSURE_PLATE: "papan tekan cemara"
+  SPRUCE_SAPLING: "bibit pohon cemara"
+  SPRUCE_SIGN: "penanda cemara"
+  SPRUCE_SLAB: "lempeng cemara"
+  SPRUCE_STAIRS: "tangga cemara"
+  SPRUCE_TRAPDOOR: "pintu jebakan cemara"
+  SPRUCE_WALL_HANGING_SIGN: "tanda gantung dinding spruce"
+  SPRUCE_WALL_SIGN: "penanda dinding cemara"
+  SPRUCE_WOOD: "kayu cemara"
+  STICKY_PISTON: "piston lengket"
+  STONE: "batu"
+  STONE_BRICK_SLAB: "lempeng batu bata"
+  STONE_BRICK_STAIRS: "tangga batu bata"
+  STONE_BRICK_WALL: "dinding batu bata"
+  STONE_BRICKS: "batu bata"
+  STONE_BUTTON: "tombol batu"
+  STONE_PRESSURE_PLATE: "papan tekan batu"
+  STONE_SLAB: "lempeng batu"
+  STONE_STAIRS: "tangga batu"
+  STONECUTTER: "pemahat batu"
+  STRIPPED_ACACIA_LOG: "gelondong akasia kupas"
+  STRIPPED_ACACIA_WOOD: "kayu akasia kupas"
+  STRIPPED_BAMBOO_BLOCK: "blok bambu belang"
+  STRIPPED_BIRCH_LOG: "gelondong pinus kupas"
+  STRIPPED_BIRCH_WOOD: "kayu pinus kupas"
+  STRIPPED_CHERRY_LOG: "gelondong sakura kupas"
+  STRIPPED_CHERRY_WOOD: "kayu sakura kupas"
+  STRIPPED_CRIMSON_HYPHAE: "hifa kirmizi kupas"
+  STRIPPED_CRIMSON_STEM: "batang kirmizi kupas"
+  STRIPPED_DARK_OAK_LOG: "gelondong ek gelap kupas"
+  STRIPPED_DARK_OAK_WOOD: "kayu ek gelap kupas"
+  STRIPPED_JUNGLE_LOG: "gelondong rimba kupas"
+  STRIPPED_JUNGLE_WOOD: "kayu rimba kupas"
+  STRIPPED_MANGROVE_LOG: "gelondong bakau yang terkupas"
+  STRIPPED_MANGROVE_WOOD: "kayu bakau yang terkupas"
+  STRIPPED_OAK_LOG: "gelondong ek kupas"
+  STRIPPED_OAK_WOOD: "kayu ek kupas"
+  STRIPPED_SPRUCE_LOG: "gelondong cemara kupas"
+  STRIPPED_SPRUCE_WOOD: "kayu cemara kupas"
+  STRIPPED_WARPED_HYPHAE: "hifa kerukut kupas"
+  STRIPPED_WARPED_STEM: "batang kerukut kupas"
+  STRUCTURE_BLOCK: "blok struktur"
+  STRUCTURE_VOID: "struktur hampa"
+  SUGAR_CANE: "tebu"
+  SUNFLOWER: "bunga matahari"
+  SUSPICIOUS_GRAVEL: "kerikil mencurigakan"
+  SUSPICIOUS_SAND: "pasir mencurigakan"
+  SWEET_BERRY_BUSH: "semak buni manis"
+  TALL_GRASS: "rumput tinggi"
+  TALL_SEAGRASS: "lamun tinggi"
+  TARGET: "sasaran"
+  TERRACOTTA: "terakota"
+  TINTED_GLASS: "kaca film"
+  TNT: "tnt"
+  TORCH: "obor"
+  TORCHFLOWER: "bunga obor"
+  TORCHFLOWER_CROP: "tanaman bunga obor"
+  TRAPPED_CHEST: "peti jebakan"
+  TRIAL_SPAWNER: "pemancar percobaan"
+  TRIPWIRE: "kawat senggol"
+  TRIPWIRE_HOOK: "pengait kawat senggol"
+  TUBE_CORAL: "karang pipa"
+  TUBE_CORAL_BLOCK: "blok karang pipa"
+  TUBE_CORAL_FAN: "kipas laut pipa"
+  TUBE_CORAL_WALL_FAN: "kipas laut pipa dinding"
+  TUFF: "tuf"
+  TUFF_BRICK_SLAB: "pelat bata tuff"
+  TUFF_BRICK_STAIRS: "tangga bata tuff"
+  TUFF_BRICK_WALL: "dinding bata tuff"
+  TUFF_BRICKS: "bata tuff"
+  TUFF_SLAB: "pelat tuff"
+  TUFF_STAIRS: "tangga tuff"
+  TUFF_WALL: "dinding tuff"
+  TURTLE_EGG: "telur penyu"
+  TWISTING_VINES: "tanaman merambat lilit"
+  TWISTING_VINES_PLANT: "tanaman tumbuhan merambat lilit"
+  VERDANT_FROGLIGHT: "lampu katak hijau"
+  VINE: "tumbuhan merambat"
+  VOID_AIR: "udara hampa"
+  WALL_TORCH: "obor dinding"
+  WARPED_BUTTON: "tombol kerukut"
+  WARPED_DOOR: "pintu kerukut"
+  WARPED_FENCE: "pagar kerukut"
+  WARPED_FENCE_GATE: "pintu pagar kerukut"
+  WARPED_FUNGUS: "jamur kerukut"
+  WARPED_HANGING_SIGN: "tanda gantung kerukut"
+  WARPED_HYPHAE: "hifa kerukut"
+  WARPED_NYLIUM: "nilium kerukut"
+  WARPED_PLANKS: "papan kerukut"
+  WARPED_PRESSURE_PLATE: "papan tekan kerukut"
+  WARPED_ROOTS: "akar kerukut"
+  WARPED_SIGN: "penanda kerukut"
+  WARPED_SLAB: "lempeng kerukut"
+  WARPED_STAIRS: "tangga kerukut"
+  WARPED_STEM: "batang kerukut"
+  WARPED_TRAPDOOR: "pintu jebakan kerukut"
+  WARPED_WALL_HANGING_SIGN: "tanda gantung dinding kerukut"
+  WARPED_WALL_SIGN: "penanda dinding kerukut"
+  WARPED_WART_BLOCK: "blok ketuat kerukut"
+  WATER: "air"
+  WATER_CAULDRON: "kuali air"
+  WAXED_CHISELED_COPPER: "tembaga ukir dilapisi"
+  WAXED_COPPER_BLOCK: "balok tembaga berlilin"
+  WAXED_COPPER_BULB: "bohlam tembaga dilapisi"
+  WAXED_COPPER_DOOR: "pintu tembaga dilapisi"
+  WAXED_COPPER_GRATE: "saringan tembaga dilapisi"
+  WAXED_COPPER_TRAPDOOR: "pintu jerat tembaga dilapisi"
+  WAXED_CUT_COPPER: "tembaga pahat berlilin"
+  WAXED_CUT_COPPER_SLAB: "lempeng tembaga pahat berlilin"
+  WAXED_CUT_COPPER_STAIRS: "tangga tembaga pahat berlilin"
+  WAXED_EXPOSED_CHISELED_COPPER: "tembaga ukir terbuka dilapisi"
+  WAXED_EXPOSED_COPPER: "balok tembaga terekspos berlilin"
+  WAXED_EXPOSED_COPPER_BULB: "bohlam tembaga terbuka dilapisi"
+  WAXED_EXPOSED_COPPER_DOOR: "pintu tembaga terbuka dilapisi"
+  WAXED_EXPOSED_COPPER_GRATE: "saringan tembaga terbuka dilapisi"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "pintu jerat tembaga terbuka dilapisi"
+  WAXED_EXPOSED_CUT_COPPER: "potongan tembaga berlilin terekspos"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "lempengan tembaga potongan terekspos berlilin"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "tangga tembaga potongan terekspos berlilin"
+  WAXED_OXIDIZED_CHISELED_COPPER: "tembaga ukir teroksidasi dilapisi"
+  WAXED_OXIDIZED_COPPER: "balok tembaga teroksidasi berlilin"
+  WAXED_OXIDIZED_COPPER_BULB: "bohlam tembaga teroksidasi dilapisi"
+  WAXED_OXIDIZED_COPPER_DOOR: "pintu tembaga teroksidasi dilapisi"
+  WAXED_OXIDIZED_COPPER_GRATE: "saringan tembaga teroksidasi dilapisi"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "pintu jerat tembaga teroksidasi dilapisi"
+  WAXED_OXIDIZED_CUT_COPPER: "tembaga potongan teroksidasi berlilin"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "lempeng tembaga potongan teroksidasi berlilin"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "tangga potongan tembaga teroksidasi berlilin"
+  WAXED_WEATHERED_CHISELED_COPPER: "tembaga ukir diintai"
+  WAXED_WEATHERED_COPPER: "balok tembaga berkarat berlilin"
+  WAXED_WEATHERED_COPPER_BULB: "bohlam tembaga diintai"
+  WAXED_WEATHERED_COPPER_DOOR: "pintu tembaga diintai"
+  WAXED_WEATHERED_COPPER_GRATE: "saringan tembaga diintai"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "pintu jerat tembaga diintai"
+  WAXED_WEATHERED_CUT_COPPER: "potongan tembaga berlilin berkarat"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "lempengan tembaga potongan berkarat berlilin"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "tangga tembaga berkarat berlilin"
+  WEATHERED_CHISELED_COPPER: "tembaga ukir diintai"
+  WEATHERED_COPPER: "tembaga berkarat"
+  WEATHERED_COPPER_BULB: "bohlam tembaga diintai"
+  WEATHERED_COPPER_DOOR: "pintu tembaga diintai"
+  WEATHERED_COPPER_GRATE: "saringan tembaga diintai"
+  WEATHERED_COPPER_TRAPDOOR: "pintu jerat tembaga diintai"
+  WEATHERED_CUT_COPPER: "tembaga pahat berkarat"
+  WEATHERED_CUT_COPPER_SLAB: "lempeng tembaga pahat berkarat"
+  WEATHERED_CUT_COPPER_STAIRS: "tangga tembaga pahat berkarat"
+  WEEPING_VINES: "tanaman merambat kulai"
+  WEEPING_VINES_PLANT: "tanaman tumbuhan merambat kulai"
+  WET_SPONGE: "spons basah"
+  WHEAT: "gandum"
+  WHITE_BANNER: "spanduk putih"
+  WHITE_BED: "tempat tidur putih"
+  WHITE_CANDLE: "lilin putih"
+  WHITE_CANDLE_CAKE: "kue dengan lilin putih"
+  WHITE_CARPET: "karpet putih"
+  WHITE_CONCRETE: "beton putih"
+  WHITE_CONCRETE_POWDER: "semen putih"
+  WHITE_GLAZED_TERRACOTTA: "terakota berglasir putih"
+  WHITE_SHULKER_BOX: "kotak periuk pengintai putih"
+  WHITE_STAINED_GLASS: "kaca patri putih"
+  WHITE_STAINED_GLASS_PANE: "panel kaca patri putih"
+  WHITE_TERRACOTTA: "terakota putih"
+  WHITE_TULIP: "tulip putih"
+  WHITE_WOOL: "wol putih"
+  WITHER_ROSE: "mawar wither"
+  WITHER_SKELETON_SKULL: "tengkorak bengkarak alum"
+  WITHER_SKELETON_WALL_SKULL: "tengkorak dinding bengkarak alum"
+  YELLOW_BANNER: "spanduk kuning"
+  YELLOW_BED: "tempat tidur kuning"
+  YELLOW_CANDLE: "lilin kuning"
+  YELLOW_CANDLE_CAKE: "kue dengan lilin kuning"
+  YELLOW_CARPET: "karpet kuning"
+  YELLOW_CONCRETE: "beton kuning"
+  YELLOW_CONCRETE_POWDER: "semen kuning"
+  YELLOW_GLAZED_TERRACOTTA: "terakota berglasir kuning"
+  YELLOW_SHULKER_BOX: "periuk pengintai kuning"
+  YELLOW_STAINED_GLASS: "kaca patri kuning"
+  YELLOW_STAINED_GLASS_PANE: "panel kaca patri kuning"
+  YELLOW_TERRACOTTA: "terakota kuning"
+  YELLOW_WOOL: "wol kuning"
+  ZOMBIE_HEAD: "kepala zombi"
+  ZOMBIE_WALL_HEAD: "kepala dinding zombi"
+  ACACIA_BOAT: "perahu kayu akasia"
+  ACACIA_CHEST_BOAT: "perahu kayu akasia dengan peti"
+  ALLAY_SPAWN_EGG: "telur pemuncul pembantu"
+  AMETHYST_SHARD: "serpih kecubung"
+  ANGLER_POTTERY_SHARD: "serpihan pot pemancing"
+  ANGLER_POTTERY_SHERD: "serpihan pot pemancing"
+  APPLE: "apel"
+  ARCHER_POTTERY_SHARD: "serpihan pot pemanah"
+  ARCHER_POTTERY_SHERD: "serpihan pot pemanah"
+  ARMOR_STAND: "cagak zirah"
+  ARMS_UP_POTTERY_SHARD: "serpihan pot angkat tangan"
+  ARMS_UP_POTTERY_SHERD: "serpihan pot angkat tangan"
+  ARROW: "panah"
+  AXOLOTL_BUCKET: "ember axolotl"
+  AXOLOTL_SPAWN_EGG: "telur pijah axolotl"
+  BAKED_POTATO: "kentang panggang"
+  BAMBOO_CHEST_RAFT: "rakit bambu dengan peti"
+  BAMBOO_RAFT: "rakit bambu"
+  BAT_SPAWN_EGG: "telur pijah kelelawar"
+  BEE_SPAWN_EGG: "telur pijah lebah"
+  BEEF: "daging sapi mentah"
+  BEETROOT: "bit"
+  BEETROOT_SEEDS: "biji akar bit"
+  BEETROOT_SOUP: "sup akar bit"
+  BIRCH_BOAT: "perahu kayu pinus"
+  BIRCH_CHEST_BOAT: "perahu kayu betula dengan peti"
+  BLACK_DYE: "pewarna hitam"
+  BLADE_POTTERY_SHARD: "serpihan pot mata pisau"
+  BLADE_POTTERY_SHERD: "serpihan pot bilah"
+  BLAZE_POWDER: "bubuk kemamang"
+  BLAZE_ROD: "tongkat kemamang"
+  BLAZE_SPAWN_EGG: "telur pijah kemamang"
+  BLUE_DYE: "pewarna biru"
+  BONE: "tulang"
+  BONE_MEAL: "tepung tulang"
+  BOOK: "buku"
+  BOW: "busur"
+  BOWL: "mangkuk"
+  BREAD: "roti"
+  BREEZE_SPAWN_EGG: "telur pijah angin sejuk"
+  BREWER_POTTERY_SHARD: "serpihan pot peramu"
+  BREWER_POTTERY_SHERD: "serpihan pot peramu"
+  BRICK: "bata"
+  BROWN_DYE: "pewarna cokelat"
+  BRUSH: "sikat"
+  BUCKET: "ember"
+  BUNDLE: "kantong"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "serpihan pot membakar"
+  BURN_POTTERY_SHERD: "serpihan pot api"
+  CAMEL_SPAWN_EGG: "telur pijah unta"
+  CARROT: "wortel"
+  CARROT_ON_A_STICK: "wortel di tongkat"
+  CAT_SPAWN_EGG: "telur pijah kucing"
+  CAVE_SPIDER_SPAWN_EGG: "telur pijah laba-laba gua"
+  CHAINMAIL_BOOTS: "sepatu rantai"
+  CHAINMAIL_CHESTPLATE: "baju rantai"
+  CHAINMAIL_HELMET: "helm rantai"
+  CHAINMAIL_LEGGINGS: "celana rantai"
+  CHARCOAL: "arang"
+  CHERRY_BOAT: "perahu sakura"
+  CHERRY_CHEST_BOAT: "perahu sakura dengan peti"
+  CHEST_MINECART: "kereta tambang dengan peti"
+  CHICKEN: "daging ayam mentah"
+  CHICKEN_SPAWN_EGG: "telur pijah ayam"
+  CHORUS_FRUIT: "buah korus"
+  CLAY_BALL: "bola tanah liat"
+  CLOCK: "jam"
+  COAL: "batu bara"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  COCOA_BEANS: "biji kakao"
+  COD: "kod mentah"
+  COD_BUCKET: "ember kod"
+  COD_SPAWN_EGG: "telur pijah kod"
+  COMMAND_BLOCK_MINECART: "kereta tambang dengan blok perintah"
+  COMPASS: "kompas"
+  COOKED_BEEF: "daging panggang"
+  COOKED_CHICKEN: "daging ayam bakar"
+  COOKED_COD: "kod matang"
+  COOKED_MUTTON: "daging domba matang"
+  COOKED_PORKCHOP: "daging babi matang"
+  COOKED_RABBIT: "daging kelinci matang"
+  COOKED_SALMON: "salem matang"
+  COOKIE: "biskuit"
+  COPPER_INGOT: "batang tembaga"
+  COW_SPAWN_EGG: "telur pijah sapi"
+  CREEPER_BANNER_PATTERN: "pola spanduk"
+  CREEPER_BANNER_PATTERN_DESC: "wajah creeper"
+  CREEPER_SPAWN_EGG: "telur pijah creeper"
+  CROSSBOW: "busur silang"
+  CROSSBOW_PROJECTILE: "proyektil:"
+  CYAN_DYE: "pewarna sian"
+  DANGER_POTTERY_SHARD: "serpihan pot bahaya"
+  DANGER_POTTERY_SHERD: "serpihan pot pendesis"
+  DARK_OAK_BOAT: "perahu kayu ek gelap"
+  DARK_OAK_CHEST_BOAT: "perahu kayu ek gelap dengan peti"
+  DEBUG_STICK: "batang awakutu"
+  DEBUG_STICK_EMPTY: "%s tidak memiliki properti"
+  DEBUG_STICK_SELECT: "terpilih \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" ke %s"
+  DIAMOND: "berlian"
+  DIAMOND_AXE: "kapak berlian"
+  DIAMOND_BOOTS: "sepatu berlian"
+  DIAMOND_CHESTPLATE: "baju berlian"
+  DIAMOND_HELMET: "helm berlian"
+  DIAMOND_HOE: "cangkul berlian"
+  DIAMOND_HORSE_ARMOR: "zirah berlian kuda"
+  DIAMOND_LEGGINGS: "celana berlian"
+  DIAMOND_PICKAXE: "beliung berlian"
+  DIAMOND_SHOVEL: "sekop berlian"
+  DIAMOND_SWORD: "pedang berlian"
+  DISC_FRAGMENT_5: "potongan cakram"
+  DISC_FRAGMENT_5_DESC: "cakram musik - 5"
+  DOLPHIN_SPAWN_EGG: "telur pijah lumba-lumba"
+  DONKEY_SPAWN_EGG: "telur pijah keledai"
+  DRAGON_BREATH: "napas naga"
+  DRIED_KELP: "kelp kering"
+  DROWNED_SPAWN_EGG: "telur pijah zombi air"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  ECHO_SHARD: "serpihan gaung"
+  EGG: "telur"
+  ELDER_GUARDIAN_SPAWN_EGG: "telur pijah pamong tetua"
+  ELYTRA: "sayap kumbang"
+  EMERALD: "zamrud"
+  ENCHANTED_BOOK: "buku pesona"
+  ENCHANTED_GOLDEN_APPLE: "apel emas berpesona"
+  END_CRYSTAL: "kristal end"
+  ENDER_DRAGON_SPAWN_EGG: "telur pijah naga ender"
+  ENDER_EYE: "mata ender"
+  ENDER_PEARL: "permata ender"
+  ENDERMAN_SPAWN_EGG: "telur pijah enderman"
+  ENDERMITE_SPAWN_EGG: "telur pijah tungau ender"
+  EVOKER_SPAWN_EGG: "telur pijah dukun"
+  EXPERIENCE_BOTTLE: "botol pesona"
+  EXPLORER_POTTERY_SHARD: "serpihan pot penjelajah"
+  EXPLORER_POTTERY_SHERD: "serpihan pot penjelajah"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  FEATHER: "bulu"
+  FERMENTED_SPIDER_EYE: "mata laba-laba beragi"
+  FILLED_MAP: "peta"
+  FIRE_CHARGE: "bola api"
+  FIREWORK_ROCKET: "roket kembang api"
+  FIREWORK_ROCKET_FLIGHT: "durasi terbang:"
+  FIREWORK_STAR: "bintang kembang api"
+  FIREWORK_STAR_BLACK: "hitam"
+  FIREWORK_STAR_BLUE: "biru"
+  FIREWORK_STAR_BROWN: "cokelat"
+  FIREWORK_STAR_CUSTOM_COLOR: "kustom"
+  FIREWORK_STAR_CYAN: "sian"
+  FIREWORK_STAR_FADE_TO: "pudar ke"
+  FIREWORK_STAR_FLICKER: "kelip-kelip"
+  FIREWORK_STAR_GRAY: "kelabu"
+  FIREWORK_STAR_GREEN: "hijau"
+  FIREWORK_STAR_LIGHT_BLUE: "biru muda"
+  FIREWORK_STAR_LIGHT_GRAY: "kelabu muda"
+  FIREWORK_STAR_LIME: "limau"
+  FIREWORK_STAR_MAGENTA: "magenta"
+  FIREWORK_STAR_ORANGE: "jingga"
+  FIREWORK_STAR_PINK: "merah jambu"
+  FIREWORK_STAR_PURPLE: "ungu"
+  FIREWORK_STAR_RED: "merah"
+  FIREWORK_STAR_SHAPE: "bentuk 'tak dikenal"
+  FIREWORK_STAR_SHAPE_BURST: "meledak"
+  FIREWORK_STAR_SHAPE_CREEPER: "berbentuk creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "bola besar"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "bola kecil"
+  FIREWORK_STAR_SHAPE_STAR: "berbentuk bintang"
+  FIREWORK_STAR_TRAIL: "berjejak"
+  FIREWORK_STAR_WHITE: "putih"
+  FIREWORK_STAR_YELLOW: "kuning"
+  FISHING_ROD: "tongkat pancing"
+  FLINT: "batu api"
+  FLINT_AND_STEEL: "pemantik api"
+  FLOWER_BANNER_PATTERN: "pola spanduk"
+  FLOWER_BANNER_PATTERN_DESC: "wajah bunga"
+  FOX_SPAWN_EGG: "telur pijah rubah"
+  FRIEND_POTTERY_SHARD: "serpihan pot teman"
+  FRIEND_POTTERY_SHERD: "serpihan pot teman"
+  FROG_SPAWN_EGG: "telur pemuncul katak"
+  FURNACE_MINECART: "kereta tambang bertungku"
+  GHAST_SPAWN_EGG: "telur pijah ghast"
+  GHAST_TEAR: "air mata ghast"
+  GLASS_BOTTLE: "botol kaca"
+  GLISTERING_MELON_SLICE: "semangka emas"
+  GLOBE_BANNER_PATTERN: "banner pattern"
+  GLOBE_BANNER_PATTERN_DESC: "bola dunia"
+  GLOW_BERRIES: "beri berkilau"
+  GLOW_INK_SAC: "kantong tinta bersinar"
+  GLOW_ITEM_FRAME: "bingkai benda bersinar"
+  GLOW_SQUID_SPAWN_EGG: "telur pijah cumi-cumi bersinar"
+  GLOWSTONE_DUST: "debu batu bersinar"
+  GOAT_HORN: "tanduk kambing"
+  GOAT_SPAWN_EGG: "telur pijah kambing"
+  GOLD_INGOT: "batangan emas"
+  GOLD_NUGGET: "bongkahan emas"
+  GOLDEN_APPLE: "apel emas"
+  GOLDEN_AXE: "kapak emas"
+  GOLDEN_BOOTS: "sepatu emas"
+  GOLDEN_CARROT: "wortel emas"
+  GOLDEN_CHESTPLATE: "baju emas"
+  GOLDEN_HELMET: "helm emas"
+  GOLDEN_HOE: "cangkul emas"
+  GOLDEN_HORSE_ARMOR: "zirah kuda emas"
+  GOLDEN_LEGGINGS: "celana emas"
+  GOLDEN_PICKAXE: "beliung emas"
+  GOLDEN_SHOVEL: "sekop emas"
+  GOLDEN_SWORD: "pedang emas"
+  GRAY_DYE: "pewarna kelabu"
+  GREEN_DYE: "pewarna hijau"
+  GUARDIAN_SPAWN_EGG: "telur pijah pamong"
+  GUNPOWDER: "bubuk mesiu"
+  HEART_OF_THE_SEA: "jantung lautan"
+  HEART_POTTERY_SHARD: "serpihan pot hati"
+  HEART_POTTERY_SHERD: "serpihan pot hati"
+  HEARTBREAK_POTTERY_SHARD: "serpihan pot hati retak"
+  HEARTBREAK_POTTERY_SHERD: "serpihan pot patah hati"
+  HOGLIN_SPAWN_EGG: "telur pijah hoglin"
+  HONEY_BOTTLE: "botol madu"
+  HONEYCOMB: "sarang madu"
+  HOPPER_MINECART: "kereta tambang bercorong"
+  HORSE_SPAWN_EGG: "telur pijah kuda"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  HOWL_POTTERY_SHARD: "serpihan pot melolong"
+  HOWL_POTTERY_SHERD: "serpihan pot pelolong"
+  HUSK_SPAWN_EGG: "telur pijah zombi kering"
+  INK_SAC: "kantong tinta"
+  IRON_AXE: "kapak besi"
+  IRON_BOOTS: "sepatu besi"
+  IRON_CHESTPLATE: "baju besi"
+  IRON_GOLEM_SPAWN_EGG: "telur pijah golem besi"
+  IRON_HELMET: "helm besi"
+  IRON_HOE: "cangkul besi"
+  IRON_HORSE_ARMOR: "zirah besi kuda"
+  IRON_INGOT: "batangan besi"
+  IRON_LEGGINGS: "celana besi"
+  IRON_NUGGET: "bongkahan besi"
+  IRON_PICKAXE: "beliung besi"
+  IRON_SHOVEL: "sekop besi"
+  IRON_SWORD: "pedang besi"
+  ITEM_FRAME: "bingkai benda"
+  JUNGLE_BOAT: "perahu kayu rimba"
+  JUNGLE_CHEST_BOAT: "perahu kayu rimba dengan peti"
+  KNOWLEDGE_BOOK: "buku pengetahuan"
+  LAPIS_LAZULI: "lapis lazuli"
+  LAVA_BUCKET: "ember lava"
+  LEAD: "tali pengikat"
+  LEATHER: "kulit"
+  LEATHER_BOOTS: "sepatu kulit"
+  LEATHER_CHESTPLATE: "jubah kulit"
+  LEATHER_HELMET: "topi kulit"
+  LEATHER_HORSE_ARMOR: "zirah kuda kulit"
+  LEATHER_LEGGINGS: "celana kulit"
+  LIGHT_BLUE_DYE: "pewarna biru muda"
+  LIGHT_GRAY_DYE: "pewarna kelabu muda"
+  LIME_DYE: "pewarna limau"
+  LINGERING_POTION: "ramuan jangkar"
+  LINGERING_POTION_EFFECT_AWKWARD: "ramuan jangkar kikuk"
+  LINGERING_POTION_EFFECT_EMPTY: "ramuan jangkar tak bisa dibuat"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "ramuan jangkar tahan api"
+  LINGERING_POTION_EFFECT_HARMING: "ramuan jangkar kesakitan"
+  LINGERING_POTION_EFFECT_HEALING: "ramuan jangkar penyembuhan"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "ramuan jangkar limunan"
+  LINGERING_POTION_EFFECT_LEAPING: "ramuan jangkar lompatan"
+  LINGERING_POTION_EFFECT_LEVITATION: "ramuan jangkar melayang"
+  LINGERING_POTION_EFFECT_LUCK: "ramuan jangkar keberuntungan"
+  LINGERING_POTION_EFFECT_MUNDANE: "ramuan jangkar tumpul"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "ramuan jangkar penglihatan gelap"
+  LINGERING_POTION_EFFECT_POISON: "ramuan jangkar keracunan"
+  LINGERING_POTION_EFFECT_REGENERATION: "ramuan jangkar regenerasi"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "ramuan jangkar tumbang langsam"
+  LINGERING_POTION_EFFECT_SLOWNESS: "ramuan jangkar kelambatan"
+  LINGERING_POTION_EFFECT_STRENGTH: "ramuan jangkar kekuatan"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "ramuan jangkar kecepatan"
+  LINGERING_POTION_EFFECT_THICK: "ramuan jangkar kental"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "ramuan jangkar guru penyu"
+  LINGERING_POTION_EFFECT_WATER: "botol air jangkar"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "ramuan jangkar bernapas dalam air"
+  LINGERING_POTION_EFFECT_WEAKNESS: "ramuan jangkar kelemahan"
+  LLAMA_SPAWN_EGG: "telur pijah llama"
+  LODESTONE_COMPASS: "kompas batu magnet"
+  MAGENTA_DYE: "pewarna magenta"
+  MAGMA_CREAM: "krim magma"
+  MAGMA_CUBE_SPAWN_EGG: "telur pijah kubus magma"
+  MANGROVE_BOAT: "perahu kayu bakau"
+  MANGROVE_CHEST_BOAT: "perahu kayu bakau dengan peti"
+  MAP: "peta kosong"
+  MELON_SEEDS: "biji semangka"
+  MELON_SLICE: "irisan semangka"
+  MILK_BUCKET: "ember susu"
+  MINECART: "kereta tambang"
+  MINER_POTTERY_SHARD: "serpihan pot penambang"
+  MINER_POTTERY_SHERD: "serpihan pot penambang"
+  MOJANG_BANNER_PATTERN: "pola spanduk"
+  MOJANG_BANNER_PATTERN_DESC: "wajah logo"
+  MOOSHROOM_SPAWN_EGG: "telur pijah sapi jamur"
+  MOURNER_POTTERY_SHARD: "serpihan pot orang berkabung"
+  MOURNER_POTTERY_SHERD: "serpihan pot duka"
+  MULE_SPAWN_EGG: "telur pijah bagal"
+  MUSHROOM_STEW: "sup jamur"
+  MUSIC_DISC_11: "cakram musik"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "cakram musik"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "cakram musik"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "cakram musik"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "cakram musik"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "cakram musik"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "cakram musik"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "cakram musik"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "cakram musik"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "cakram musik"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "cakram musik"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "kaset musik"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "cakram musik"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "cakram musik"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "cakram musik"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "cakram musik"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "daging domba mentah"
+  NAME_TAG: "label nama"
+  NAUTILUS_SHELL: "cangkang nautilus"
+  NETHER_BRICK: "bata nether"
+  NETHER_STAR: "bintang nether\n"
+  NETHERITE_AXE: "kapak neterit"
+  NETHERITE_BOOTS: "sepatu neterit"
+  NETHERITE_CHESTPLATE: "baju neterit"
+  NETHERITE_HELMET: "helm neterit"
+  NETHERITE_HOE: "cangkul neterit"
+  NETHERITE_INGOT: "batangan neterit"
+  NETHERITE_LEGGINGS: "celana neterit"
+  NETHERITE_PICKAXE: "beliung neterit"
+  NETHERITE_SCRAP: "kepingan neterit"
+  NETHERITE_SHOVEL: "sekop neterit"
+  NETHERITE_SWORD: "pedang neterit"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "templat tempa"
+  OAK_BOAT: "perahu kayu ek"
+  OAK_CHEST_BOAT: "perahu kayu ek dengan peti"
+  OCELOT_SPAWN_EGG: "telur pijah kucing hutan"
+  ORANGE_DYE: "pewarna jingga"
+  PAINTING: "lukisan"
+  PANDA_SPAWN_EGG: "telur pijah panda"
+  PAPER: "kertas"
+  PARROT_SPAWN_EGG: "telur pijah beo"
+  PHANTOM_MEMBRANE: "selaput pari momok"
+  PHANTOM_SPAWN_EGG: "telur pijah pari momok"
+  PIG_SPAWN_EGG: "telur pijah babi"
+  PIGLIN_BANNER_PATTERN: "pola"
+  PIGLIN_BANNER_PATTERN_DESC: "moncong"
+  PIGLIN_BRUTE_SPAWN_EGG: "telur pijah piglin ganas"
+  PIGLIN_SPAWN_EGG: "telur pijah piglin"
+  PILLAGER_SPAWN_EGG: "telur pijah penjarah"
+  PINK_DYE: "pewarna merah jambu"
+  PITCHER_POD: "tanaman pitcher"
+  PLENTY_POTTERY_SHARD: "serpihan pot banyak"
+  PLENTY_POTTERY_SHERD: "serpihan pot limpah"
+  POISONOUS_POTATO: "kentang beracun"
+  POLAR_BEAR_SPAWN_EGG: "telur pijah beruang kutub"
+  POPPED_CHORUS_FRUIT: "buah korus bakar"
+  PORKCHOP: "daging babi mentah"
+  POTATO: "kentang"
+  POTION: "ramuan"
+  POTION_EFFECT_AWKWARD: "ramuan kikuk"
+  POTION_EFFECT_EMPTY: "ramuan tak bisa dibuat"
+  POTION_EFFECT_FIRE_RESISTANCE: "ramuan tahan api"
+  POTION_EFFECT_HARMING: "ramuan kesakitan"
+  POTION_EFFECT_HEALING: "ramuan penyembuhan"
+  POTION_EFFECT_INVISIBILITY: "ramuan limunan"
+  POTION_EFFECT_LEAPING: "ramuan lompatan"
+  POTION_EFFECT_LEVITATION: "ramuan melayang"
+  POTION_EFFECT_LUCK: "ramuan keberuntungan"
+  POTION_EFFECT_MUNDANE: "ramuan tumpul"
+  POTION_EFFECT_NIGHT_VISION: "ramuan penglihatan gelap"
+  POTION_EFFECT_POISON: "ramuan racun"
+  POTION_EFFECT_REGENERATION: "ramuan regenerasi"
+  POTION_EFFECT_SLOW_FALLING: "ramuan tumbang langsam"
+  POTION_EFFECT_SLOWNESS: "ramuan kelambatan"
+  POTION_EFFECT_STRENGTH: "ramuan kekuatan"
+  POTION_EFFECT_SWIFTNESS: "ramuan kecepatan"
+  POTION_EFFECT_THICK: "ramuan kental"
+  POTION_EFFECT_TURTLE_MASTER: "ramuan guru penyu"
+  POTION_EFFECT_WATER: "botol air"
+  POTION_EFFECT_WATER_BREATHING: "ramuan bernapas dalam air"
+  POTION_EFFECT_WEAKNESS: "ramuan kelemahan"
+  POTTERY_SHARD_ARCHER: "serpihan pot pemanah"
+  POTTERY_SHARD_ARMS_UP: "serpihan pot lambaian tangan"
+  POTTERY_SHARD_PRIZE: "serpihan pot hadiah"
+  POTTERY_SHARD_SKULL: "serpihan pot tengkorak"
+  POWDER_SNOW_BUCKET: "ember bubuk salju"
+  PRISMARINE_CRYSTALS: "kristal prismarine"
+  PRISMARINE_SHARD: "serpihan prismarine"
+  PRIZE_POTTERY_SHARD: "serpihan pot hadiah"
+  PRIZE_POTTERY_SHERD: "serpihan pot hadiah"
+  PUFFERFISH: "ikan buntal"
+  PUFFERFISH_BUCKET: "ember ikan buntal"
+  PUFFERFISH_SPAWN_EGG: "telur pijah ikan buntal"
+  PUMPKIN_PIE: "kue labu"
+  PUMPKIN_SEEDS: "biji labu"
+  PURPLE_DYE: "pewarna ungu"
+  QUARTZ: "kuarsa nether"
+  RABBIT: "daging kelinci mentah"
+  RABBIT_FOOT: "kaki kelinci"
+  RABBIT_HIDE: "kulit kelinci"
+  RABBIT_SPAWN_EGG: "telur pijah kelinci"
+  RABBIT_STEW: "sup kelinci"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  RAVAGER_SPAWN_EGG: "telur pijah setan penjarah"
+  RAW_COPPER: "tembaga mentah"
+  RAW_GOLD: "emas mentah"
+  RAW_IRON: "besi mentah"
+  RECOVERY_COMPASS: "kompas pemulihan"
+  RED_DYE: "pewarna merah"
+  REDSTONE: "serbuk batu merah"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  ROTTEN_FLESH: "daging busuk"
+  SADDLE: "pelana"
+  SALMON: "salem mentah"
+  SALMON_BUCKET: "ember salem"
+  SALMON_SPAWN_EGG: "telur pijah salem"
+  SCUTE: "skat"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  SHEAF_POTTERY_SHARD: "serpihan pot ikat"
+  SHEAF_POTTERY_SHERD: "serpihan pot berkas"
+  SHEARS: "gunting"
+  SHEEP_SPAWN_EGG: "telur pijah domba"
+  SHELTER_POTTERY_SHARD: "serpihan pot tempat berlindung"
+  SHELTER_POTTERY_SHERD: "serpihan pot lindung"
+  SHIELD: "perisai"
+  SHIELD_BLACK: "perisai hitam"
+  SHIELD_BLUE: "perisai biru"
+  SHIELD_BROWN: "perisai cokelat"
+  SHIELD_CYAN: "perisai sian"
+  SHIELD_GRAY: "perisai kelabu"
+  SHIELD_GREEN: "perisai hijau"
+  SHIELD_LIGHT_BLUE: "perisai biru muda"
+  SHIELD_LIGHT_GRAY: "perisai kelabu muda"
+  SHIELD_LIME: "perisai limau"
+  SHIELD_MAGENTA: "perisai magenta"
+  SHIELD_ORANGE: "perisai jingga"
+  SHIELD_PINK: "perisai merah jambu"
+  SHIELD_PURPLE: "perisai ungu"
+  SHIELD_RED: "perisai merah"
+  SHIELD_WHITE: "perisai putih"
+  SHIELD_YELLOW: "perisai kuning"
+  SHULKER_SHELL: "cangkang periuk pengintai"
+  SHULKER_SPAWN_EGG: "telur pijah periuk pengintai"
+  SIGN: "petanda"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  SILVERFISH_SPAWN_EGG: "telur pijah gegat"
+  SKELETON_HORSE_SPAWN_EGG: "telur pijah kuda bengkarak"
+  SKELETON_SPAWN_EGG: "telur pijah bengkarak"
+  SKULL_BANNER_PATTERN: "pola spanduk"
+  SKULL_BANNER_PATTERN_DESC: "wajah tengkorak"
+  SKULL_POTTERY_SHARD: "serpihan pot tengkorak"
+  SKULL_POTTERY_SHERD: "serpihan pot tengkorak"
+  SLIME_BALL: "bola geladir"
+  SLIME_SPAWN_EGG: "telur pijah geladir"
+  SMITHING_TEMPLATE: "templat tempa"
+  SMITHING_TEMPLATE_APPLIES_TO: "terapkan pada:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "tambah batangan atau kristal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "zirah"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "tambah sepotong zirah"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "batangan & kristal"
+  SMITHING_TEMPLATE_INGREDIENTS: "bahan:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "tambah batangan neterit"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "peralatan berlian"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "tambah zirah berlian senjata atau peralatan"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "batangan neterit"
+  SMITHING_TEMPLATE_UPGRADE: "tingkatkan: "
+  SNIFFER_SPAWN_EGG: "telur pijah pengendus"
+  SNORT_POTTERY_SHARD: "serpihan pot mendengus"
+  SNORT_POTTERY_SHERD: "serpihan pot dengus"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  SNOW_GOLEM_SPAWN_EGG: "telur pijah golem salju"
+  SNOWBALL: "bola salju"
+  SPECTRAL_ARROW: "panah bersinar"
+  SPIDER_EYE: "mata laba-laba"
+  SPIDER_SPAWN_EGG: "telur pijah laba-laba"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  SPLASH_POTION: "ramuan ciprat"
+  SPLASH_POTION_EFFECT_AWKWARD: "ramuan ciprat kikuk"
+  SPLASH_POTION_EFFECT_EMPTY: "ramuan ciprat tak bisa dibuat"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "ramuan ciprat tahan api"
+  SPLASH_POTION_EFFECT_HARMING: "ramuan ciprat kesakitan"
+  SPLASH_POTION_EFFECT_HEALING: "ramuan ciprat penyembuhan"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "ramuan ciprat limunan"
+  SPLASH_POTION_EFFECT_LEAPING: "ramuan ciprat lompatan"
+  SPLASH_POTION_EFFECT_LEVITATION: "ramuan ciprat melayang"
+  SPLASH_POTION_EFFECT_LUCK: "ramuan ciprat keberuntungan"
+  SPLASH_POTION_EFFECT_MUNDANE: "ramuan ciprat tumpul"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "ramuan ciprat penglihatan gelap"
+  SPLASH_POTION_EFFECT_POISON: "ramuan ciprat racun"
+  SPLASH_POTION_EFFECT_REGENERATION: "ramuan ciprat regenerasi"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "ramuan ciprat tumbang langsam"
+  SPLASH_POTION_EFFECT_SLOWNESS: "ramuan ciprat kelambatan"
+  SPLASH_POTION_EFFECT_STRENGTH: "ramuan ciprat kekuatan"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "ramuan ciprat kecepatan"
+  SPLASH_POTION_EFFECT_THICK: "ramuan ciprat kental"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "ramuan ciprat guru penyu"
+  SPLASH_POTION_EFFECT_WATER: "botol air ciprat"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "ramuan ciprat bernapas dalam air"
+  SPLASH_POTION_EFFECT_WEAKNESS: "ramuan ciprat kelemahan"
+  SPRUCE_BOAT: "perahu kayu cemara"
+  SPRUCE_CHEST_BOAT: "perahu kayu pinus dengan peti"
+  SPYGLASS: "teropong"
+  SQUID_SPAWN_EGG: "telur pijah cumi-cumi"
+  STICK: "batang kayu"
+  STONE_AXE: "kapak batu"
+  STONE_HOE: "cangkul batu"
+  STONE_PICKAXE: "beliung batu"
+  STONE_SHOVEL: "sekop batu"
+  STONE_SWORD: "pedang batu"
+  STRAY_SPAWN_EGG: "telur pijah bengkarak salju"
+  STRIDER_SPAWN_EGG: "telur pijah pejalan"
+  STRING: "benang"
+  SUGAR: "gula"
+  SUSPICIOUS_STEW: "sup sangsi"
+  SWEET_BERRIES: "buni manis"
+  TADPOLE_BUCKET: "ember dengan kecebong"
+  TADPOLE_SPAWN_EGG: "telur pijah kecebong"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  TIPPED_ARROW: "panah celup"
+  TIPPED_ARROW_EFFECT_AWKWARD: "panah beracun"
+  TIPPED_ARROW_EFFECT_EMPTY: "panah celup tak bisa dibuat"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "panah tahan api"
+  TIPPED_ARROW_EFFECT_HARMING: "panah kesakitan"
+  TIPPED_ARROW_EFFECT_HEALING: "panah penyembuhan"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "panah limunan"
+  TIPPED_ARROW_EFFECT_LEAPING: "panah lompatan"
+  TIPPED_ARROW_EFFECT_LEVITATION: "panah melayang"
+  TIPPED_ARROW_EFFECT_LUCK: "panah keberuntungan"
+  TIPPED_ARROW_EFFECT_MUNDANE: "panah beracun"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "panah penglihatan gelap"
+  TIPPED_ARROW_EFFECT_POISON: "panah racun"
+  TIPPED_ARROW_EFFECT_REGENERATION: "panah regenerasi"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "panah tumbang langsam"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "panah kelambatan"
+  TIPPED_ARROW_EFFECT_STRENGTH: "panah kekuatan"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "panah kecepatan"
+  TIPPED_ARROW_EFFECT_THICK: "panah beracun"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "panah guru penyu"
+  TIPPED_ARROW_EFFECT_WATER: "panah percikan"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "panah bernapas dalam air"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "panah kelemahan"
+  TNT_MINECART: "kereta tambang dengan tnt"
+  TORCHFLOWER_SEEDS: "biji bunga obor"
+  TOTEM_OF_UNDYING: "azimat keabadian"
+  TRADER_LLAMA_SPAWN_EGG: "telur pijah llama pedagang"
+  TRIAL_KEY: "kunci percobaan"
+  TRIDENT: "trisula"
+  TROPICAL_FISH: "ikan tropis"
+  TROPICAL_FISH_BUCKET: "ember ikan tropis"
+  TROPICAL_FISH_SPAWN_EGG: "telur pijah ikan tropis"
+  TURTLE_HELMET: "cangkang penyu"
+  TURTLE_SPAWN_EGG: "telur pijah penyu"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  VEX_SPAWN_EGG: "telur pijah arwah"
+  VILLAGER_SPAWN_EGG: "telur pijah penduduk"
+  VINDICATOR_SPAWN_EGG: "telur pijah penganut"
+  WANDERING_TRADER_SPAWN_EGG: "telur pijah pedagang keliling"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  WARDEN_SPAWN_EGG: "telur pijah pengawas"
+  WARPED_FUNGUS_ON_A_STICK: "jamur kerukut di tongkat"
+  WATER_BUCKET: "ember air"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  WHEAT_SEEDS: "benih gandum"
+  WHITE_DYE: "pewarna putih"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "templat tempa"
+  WITCH_SPAWN_EGG: "telur pijah penyihir"
+  WITHER_SKELETON_SPAWN_EGG: "telur pijah bengkarak alum"
+  WITHER_SPAWN_EGG: "telur pijah wither"
+  WOLF_SPAWN_EGG: "telur pijah serigala"
+  WOODEN_AXE: "kapak kayu"
+  WOODEN_HOE: "cangkul kayu"
+  WOODEN_PICKAXE: "beliung kayu"
+  WOODEN_SHOVEL: "sekop kayu"
+  WOODEN_SWORD: "pedang kayu"
+  WRITABLE_BOOK: "buku dan pena"
+  WRITTEN_BOOK: "buku dengan tulisan"
+  YELLOW_DYE: "pewarna kuning"
+  ZOGLIN_SPAWN_EGG: "telur pijah zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "telur pijah kuda zombi"
+  ZOMBIE_SPAWN_EGG: "telur pijah zombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "telur pijah zombi penduduk"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "telur pijah zombi piglin"
+  CHEST: "saat di badan:"
+  FEET: "saat di kaki:"
+  HEAD: "saat di kepala:"
+  LEGS: "saat digunakan di kaki:"
+  MAINHAND: "saat di tangan utama:"
+  OFFHAND: "saat di tangan kedua:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

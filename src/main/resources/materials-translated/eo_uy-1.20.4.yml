@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akacia butono"
+  ACACIA_DOOR: "akacia pordo"
+  ACACIA_FENCE: "akacia barilo"
+  ACACIA_FENCE_GATE: "akacia barilpordo"
+  ACACIA_HANGING_SIGN: "akacia elpendaĵo"
+  ACACIA_LEAVES: "akacia foliaro"
+  ACACIA_LOG: "akacia ŝtipo"
+  ACACIA_PLANKS: "akacia tabularo"
+  ACACIA_PRESSURE_PLATE: "akacia premplato"
+  ACACIA_SAPLING: "akaciido"
+  ACACIA_SIGN: "akacia ŝildeto"
+  ACACIA_SLAB: "akacia ŝtupo"
+  ACACIA_STAIRS: "akacia ŝtuparo"
+  ACACIA_TRAPDOOR: "akacia klappordo"
+  ACACIA_WALL_HANGING_SIGN: "akacia surmura elpendaĵo"
+  ACACIA_WALL_SIGN: "akacia surmura ŝildeto"
+  ACACIA_WOOD: "akacia ligno"
+  ACTIVATOR_RAIL: "aktivigila relo"
+  AIR: "aero"
+  ALLIUM: "aliumo"
+  AMETHYST_BLOCK: "ametista bloko"
+  AMETHYST_CLUSTER: "amasiĝo da ametisto"
+  ANCIENT_DEBRIS: "antikva rubo"
+  ANDESITE: "andezito"
+  ANDESITE_SLAB: "andezita ŝtupo"
+  ANDESITE_STAIRS: "andezita ŝtuparo"
+  ANDESITE_WALL: "andezita muro"
+  ANVIL: "amboso"
+  ATTACHED_MELON_STEM: "alligita akvomelona tigo"
+  ATTACHED_PUMPKIN_STEM: "alligita kukurba tigo"
+  AZALEA: "azaleo"
+  AZALEA_LEAVES: "azalea foliaro"
+  AZURE_BLUET: "blua houstonio"
+  BAMBOO: "bambuo"
+  BAMBOO_BLOCK: "bambua bloko"
+  BAMBOO_BUTTON: "bambua butono"
+  BAMBOO_DOOR: "bambua pordo"
+  BAMBOO_FENCE: "bambua barilo"
+  BAMBOO_FENCE_GATE: "bambua barilpordo"
+  BAMBOO_HANGING_SIGN: "bambua elpendaĵo"
+  BAMBOO_MOSAIC: "bambua mozaiko"
+  BAMBOO_MOSAIC_SLAB: "bambumozaika ŝtupo"
+  BAMBOO_MOSAIC_STAIRS: "bambumozaika ŝtuparo"
+  BAMBOO_PLANKS: "bambua tabularo"
+  BAMBOO_PRESSURE_PLATE: "bambua premplato"
+  BAMBOO_SAPLING: "bambua plantido"
+  BAMBOO_SIGN: "bambua ŝildeto"
+  BAMBOO_SLAB: "bambua ŝtupo"
+  BAMBOO_STAIRS: "bambua ŝtuparo"
+  BAMBOO_TRAPDOOR: "bambua klappordo"
+  BAMBOO_WALL_HANGING_SIGN: "bambua surmura elpendaĵo"
+  BAMBOO_WALL_SIGN: "bambua surmura ŝildeto"
+  BANNER_BASE_BLACK: "plene nigra surfaco"
+  BANNER_BASE_BLUE: "plene blua surfaco"
+  BANNER_BASE_BROWN: "plene bruna surfaco"
+  BANNER_BASE_CYAN: "plene turkisa surfaco"
+  BANNER_BASE_GRAY: "plene griza surfaco"
+  BANNER_BASE_GREEN: "plene verda surfaco"
+  BANNER_BASE_LIGHT_BLUE: "plene helblua surfaco"
+  BANNER_BASE_LIGHT_GRAY: "plene helgriza surfaco"
+  BANNER_BASE_LIME: "plene helverda surfaco"
+  BANNER_BASE_MAGENTA: "plene malva surfaco"
+  BANNER_BASE_ORANGE: "plene oranĝkolora surfaco"
+  BANNER_BASE_PINK: "plene rozkolora surfaco"
+  BANNER_BASE_PURPLE: "plene violkolora surfaco"
+  BANNER_BASE_RED: "plene ruĝa surfaco"
+  BANNER_BASE_WHITE: "plene blanka surfaco"
+  BANNER_BASE_YELLOW: "plene flava surfaco"
+  BANNER_BORDER_BLACK: "nigra bordero"
+  BANNER_BORDER_BLUE: "blua bordero"
+  BANNER_BORDER_BROWN: "bruna bordero"
+  BANNER_BORDER_CYAN: "turkisa bordero"
+  BANNER_BORDER_GRAY: "griza bordero"
+  BANNER_BORDER_GREEN: "verda bordero"
+  BANNER_BORDER_LIGHT_BLUE: "helblua bordero"
+  BANNER_BORDER_LIGHT_GRAY: "helgriza bordero"
+  BANNER_BORDER_LIME: "helverda bordero"
+  BANNER_BORDER_MAGENTA: "malva bordero"
+  BANNER_BORDER_ORANGE: "oranĝkolora bordero"
+  BANNER_BORDER_PINK: "rozkolora bordero"
+  BANNER_BORDER_PURPLE: "viola bordero"
+  BANNER_BORDER_RED: "ruĝa bordero"
+  BANNER_BORDER_WHITE: "blanka bordero"
+  BANNER_BORDER_YELLOW: "flava bordero"
+  BANNER_BRICKS_BLACK: "nigre brikumita"
+  BANNER_BRICKS_BLUE: "blue brikumita"
+  BANNER_BRICKS_BROWN: "brune brikumita"
+  BANNER_BRICKS_CYAN: "turkise brikumita"
+  BANNER_BRICKS_GRAY: "grize brikumita"
+  BANNER_BRICKS_GREEN: "verde brikumita"
+  BANNER_BRICKS_LIGHT_BLUE: "helblue brikumita"
+  BANNER_BRICKS_LIGHT_GRAY: "helgrize brikumita"
+  BANNER_BRICKS_LIME: "helverde brikumita"
+  BANNER_BRICKS_MAGENTA: "malve brikumita"
+  BANNER_BRICKS_ORANGE: "oranĝkolore brikumita"
+  BANNER_BRICKS_PINK: "rozkolore brikumita"
+  BANNER_BRICKS_PURPLE: "violkolore brikumita"
+  BANNER_BRICKS_RED: "ruĝe brikumita"
+  BANNER_BRICKS_WHITE: "blanke brikumita"
+  BANNER_BRICKS_YELLOW: "flave brikumita"
+  BANNER_CIRCLE_BLACK: "nigra cirklo"
+  BANNER_CIRCLE_BLUE: "blua cirklo"
+  BANNER_CIRCLE_BROWN: "bruna cirklo"
+  BANNER_CIRCLE_CYAN: "turkisa cirklo"
+  BANNER_CIRCLE_GRAY: "griza cirklo"
+  BANNER_CIRCLE_GREEN: "verda cirklo"
+  BANNER_CIRCLE_LIGHT_BLUE: "helblua cirklo"
+  BANNER_CIRCLE_LIGHT_GRAY: "helgriza cirklo"
+  BANNER_CIRCLE_LIME: "helverda cirklo"
+  BANNER_CIRCLE_MAGENTA: "malva cirklo"
+  BANNER_CIRCLE_ORANGE: "oranĝkolora cirklo"
+  BANNER_CIRCLE_PINK: "rozkolora cirklo"
+  BANNER_CIRCLE_PURPLE: "viola cirklo"
+  BANNER_CIRCLE_RED: "ruĝa cirklo"
+  BANNER_CIRCLE_WHITE: "blanka cirklo"
+  BANNER_CIRCLE_YELLOW: "flava cirklo"
+  BANNER_CREEPER_BLACK: "nigra danĝero"
+  BANNER_CREEPER_BLUE: "blua danĝero"
+  BANNER_CREEPER_BROWN: "bruna danĝero"
+  BANNER_CREEPER_CYAN: "turkisa danĝero"
+  BANNER_CREEPER_GRAY: "griza danĝero"
+  BANNER_CREEPER_GREEN: "verda danĝero"
+  BANNER_CREEPER_LIGHT_BLUE: "helblua danĝero"
+  BANNER_CREEPER_LIGHT_GRAY: "helgriza danĝero"
+  BANNER_CREEPER_LIME: "helverda danĝero"
+  BANNER_CREEPER_MAGENTA: "malva danĝero"
+  BANNER_CREEPER_ORANGE: "oranĝkolora danĝero"
+  BANNER_CREEPER_PINK: "rozkolora danĝero"
+  BANNER_CREEPER_PURPLE: "violkolora danĝero"
+  BANNER_CREEPER_RED: "ruĝa danĝero"
+  BANNER_CREEPER_WHITE: "blanka danĝero"
+  BANNER_CREEPER_YELLOW: "flava danĝero"
+  BANNER_CROSS_BLACK: "nigra diagonala kruco"
+  BANNER_CROSS_BLUE: "blua diagonala kruco"
+  BANNER_CROSS_BROWN: "bruna diagonala kruco"
+  BANNER_CROSS_CYAN: "turkisa diagonala kruco"
+  BANNER_CROSS_GRAY: "griza diagonala kruco"
+  BANNER_CROSS_GREEN: "verda diagonala kruco"
+  BANNER_CROSS_LIGHT_BLUE: "helblua diagonala kruco"
+  BANNER_CROSS_LIGHT_GRAY: "helblua diagonala kruco"
+  BANNER_CROSS_LIME: "helverda diagonala kruco"
+  BANNER_CROSS_MAGENTA: "malva diagonala kruco"
+  BANNER_CROSS_ORANGE: "oranĝkolora diagonala kruco"
+  BANNER_CROSS_PINK: "rozkolora diagonala kruco"
+  BANNER_CROSS_PURPLE: "violkolora diagonala kruco"
+  BANNER_CROSS_RED: "ruĝa diagonala kruco"
+  BANNER_CROSS_WHITE: "blanka diagonala kruco"
+  BANNER_CROSS_YELLOW: "flava diagonala kruco"
+  BANNER_CURLY_BORDER_BLACK: "nigre ondumita"
+  BANNER_CURLY_BORDER_BLUE: "blue ondumita"
+  BANNER_CURLY_BORDER_BROWN: "brune ondumita"
+  BANNER_CURLY_BORDER_CYAN: "turkise ondumita"
+  BANNER_CURLY_BORDER_GRAY: "grize ondumita"
+  BANNER_CURLY_BORDER_GREEN: "verde ondumita"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "helblue ondumita"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "helgrize ondumita"
+  BANNER_CURLY_BORDER_LIME: "helverde ondumita"
+  BANNER_CURLY_BORDER_MAGENTA: "malve ondumita"
+  BANNER_CURLY_BORDER_ORANGE: "oranĝkolore ondumita"
+  BANNER_CURLY_BORDER_PINK: "roze ondumita"
+  BANNER_CURLY_BORDER_PURPLE: "violkolore ondumita"
+  BANNER_CURLY_BORDER_RED: "ruĝe ondumita"
+  BANNER_CURLY_BORDER_WHITE: "blanke ondumita"
+  BANNER_CURLY_BORDER_YELLOW: "flave ondumita"
+  BANNER_DIAGONAL_LEFT_BLACK: "nigre hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_BLUE: "blue hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_BROWN: "brune hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_CYAN: "turkise hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_GRAY: "grize hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_GREEN: "verde hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "helblue hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "helgrize hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_LIME: "helverde hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "malve hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_ORANGE: "oranĝkolore hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_PINK: "rozkolore hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_PURPLE: "violkolore hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_RED: "ruĝe hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_WHITE: "blanke hakita supre-maldekstre"
+  BANNER_DIAGONAL_LEFT_YELLOW: "flave hakita supre-maldekstre"
+  BANNER_DIAGONAL_RIGHT_BLACK: "nigre hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_BLUE: "blue hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brune hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_CYAN: "turkise hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_GRAY: "grize hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_GREEN: "verde hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "helblue hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "helgrize hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_LIME: "helverde hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "malve hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oranĝkolore hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_PINK: "rozkolore hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "violkolore hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_RED: "ruĝe hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_WHITE: "blanke hakita supre-dekstre"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "flave hakita supre-dekstre"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "nigre hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "blue hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brune hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "turkise hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "grize hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "verde hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "helblue hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "helgrize hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "helverde hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "malve hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "oranĝkolore hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "rozkolore hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "violkolore hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_RED: "ruĝe hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "blanke hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "flave hakita malsupre-maldekstre"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "nigre hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "blue hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brune hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "turkise hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "grize hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "verde hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "helblue hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "helgrize hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "helverde hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "malve hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "oranĝkolore hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "rozkolore hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "violkolore hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "ruĝe hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "blanke hakita malsupre-dekstre"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "flave hakita malsupre-dekstre"
+  BANNER_FLOWER_BLACK: "nigra lilio"
+  BANNER_FLOWER_BLUE: "blua lilio"
+  BANNER_FLOWER_BROWN: "bruna lilio"
+  BANNER_FLOWER_CYAN: "turkisa lilio"
+  BANNER_FLOWER_GRAY: "griza lilio"
+  BANNER_FLOWER_GREEN: "verda lilio"
+  BANNER_FLOWER_LIGHT_BLUE: "helblua lilio"
+  BANNER_FLOWER_LIGHT_GRAY: "helgriza lilio"
+  BANNER_FLOWER_LIME: "helverda lilio"
+  BANNER_FLOWER_MAGENTA: "malva lilio"
+  BANNER_FLOWER_ORANGE: "oranĝkolora lilio"
+  BANNER_FLOWER_PINK: "rozkolora lilio"
+  BANNER_FLOWER_PURPLE: "violkolora lilio"
+  BANNER_FLOWER_RED: "ruĝa lilio"
+  BANNER_FLOWER_WHITE: "blanka lilio"
+  BANNER_FLOWER_YELLOW: "flava lilio"
+  BANNER_GLOBE_BLACK: "nigra terkubo"
+  BANNER_GLOBE_BLUE: "blua terkubo"
+  BANNER_GLOBE_BROWN: "bruna terkubo"
+  BANNER_GLOBE_CYAN: "turkisa terkubo"
+  BANNER_GLOBE_GRAY: "griza terkubo"
+  BANNER_GLOBE_GREEN: "verda terkubo"
+  BANNER_GLOBE_LIGHT_BLUE: "helblua terkubo"
+  BANNER_GLOBE_LIGHT_GRAY: "helgriza terkubo"
+  BANNER_GLOBE_LIME: "helverda terkubo"
+  BANNER_GLOBE_MAGENTA: "malva terkubo"
+  BANNER_GLOBE_ORANGE: "oranĝkolora terkubo"
+  BANNER_GLOBE_PINK: "rozkolora terkubo"
+  BANNER_GLOBE_PURPLE: "violkolora terkubo"
+  BANNER_GLOBE_RED: "ruĝa terkubo"
+  BANNER_GLOBE_WHITE: "blanka terkubo"
+  BANNER_GLOBE_YELLOW: "flava terkubo"
+  BANNER_GRADIENT_BLACK: "nigra supra gradiento"
+  BANNER_GRADIENT_BLUE: "blua supra gradiento"
+  BANNER_GRADIENT_BROWN: "bruna supra gradiento"
+  BANNER_GRADIENT_CYAN: "turkisa supra gradiento"
+  BANNER_GRADIENT_GRAY: "griza supra gradiento"
+  BANNER_GRADIENT_GREEN: "verda supra gradiento"
+  BANNER_GRADIENT_LIGHT_BLUE: "helblua supra gradiento"
+  BANNER_GRADIENT_LIGHT_GRAY: "helgriza supra gradiento"
+  BANNER_GRADIENT_LIME: "helverda supra gradiento"
+  BANNER_GRADIENT_MAGENTA: "malva supra gradiento"
+  BANNER_GRADIENT_ORANGE: "oranĝkolora supra gradiento"
+  BANNER_GRADIENT_PINK: "rozkolora supra gradiento"
+  BANNER_GRADIENT_PURPLE: "violkolora supra gradiento"
+  BANNER_GRADIENT_RED: "ruĝa supra gradiento"
+  BANNER_GRADIENT_WHITE: "blanka supra gradiento"
+  BANNER_GRADIENT_YELLOW: "flava supra gradiento"
+  BANNER_GRADIENT_UP_BLACK: "nigra malsupra gradiento"
+  BANNER_GRADIENT_UP_BLUE: "blua malsupra gradiento"
+  BANNER_GRADIENT_UP_BROWN: "bruna malsupra gradiento"
+  BANNER_GRADIENT_UP_CYAN: "turkisa malsupra gradiento"
+  BANNER_GRADIENT_UP_GRAY: "griza malsupra gradiento"
+  BANNER_GRADIENT_UP_GREEN: "verda malsupra gradiento"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "helblua malsupra gradiento"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "helgriza malsupra gradiento"
+  BANNER_GRADIENT_UP_LIME: "helverda malsupra gradiento"
+  BANNER_GRADIENT_UP_MAGENTA: "malva malsupra gradiento"
+  BANNER_GRADIENT_UP_ORANGE: "oranĝkolora malsupra gradiento"
+  BANNER_GRADIENT_UP_PINK: "rozkolora malsupra gradiento"
+  BANNER_GRADIENT_UP_PURPLE: "violkolora malsupra gradiento"
+  BANNER_GRADIENT_UP_RED: "ruĝa malsupra gradiento"
+  BANNER_GRADIENT_UP_WHITE: "blanka malsupra gradiento"
+  BANNER_GRADIENT_UP_YELLOW: "flava malsupra gradiento"
+  BANNER_HALF_HORIZONTAL_BLACK: "nigre tranĉita supre"
+  BANNER_HALF_HORIZONTAL_BLUE: "blue tranĉita supre"
+  BANNER_HALF_HORIZONTAL_BROWN: "brune tranĉita supre"
+  BANNER_HALF_HORIZONTAL_CYAN: "turkise tranĉita supre"
+  BANNER_HALF_HORIZONTAL_GRAY: "grize tranĉita supre"
+  BANNER_HALF_HORIZONTAL_GREEN: "verde tranĉita supre"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "helblue tranĉita supre"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "helgrize tranĉita supre"
+  BANNER_HALF_HORIZONTAL_LIME: "helverde tranĉita supre"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "malve tranĉita supre"
+  BANNER_HALF_HORIZONTAL_ORANGE: "oranĝkolore tranĉita supre"
+  BANNER_HALF_HORIZONTAL_PINK: "rozkolore tranĉita supre"
+  BANNER_HALF_HORIZONTAL_PURPLE: "violkolore tranĉita supre"
+  BANNER_HALF_HORIZONTAL_RED: "ruĝe tranĉita supre"
+  BANNER_HALF_HORIZONTAL_WHITE: "blanke tranĉita supre"
+  BANNER_HALF_HORIZONTAL_YELLOW: "flave tranĉita supre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "nigre tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "blue tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "brune tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "turkise tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "grize tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "verde tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "helblue tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "helgrize tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "helverde tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "malve tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "oranĝkolore tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "rozkolore tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "violkolore tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "ruĝe tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "blanke tranĉita malsupre"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "flave tranĉita malsupre"
+  BANNER_HALF_VERTICAL_BLACK: "nigre fendita maldekstre"
+  BANNER_HALF_VERTICAL_BLUE: "blue fendita maldekstre"
+  BANNER_HALF_VERTICAL_BROWN: "brune fendita maldekstre"
+  BANNER_HALF_VERTICAL_CYAN: "turkise fendita maldekstre"
+  BANNER_HALF_VERTICAL_GRAY: "grize fendita maldekstre"
+  BANNER_HALF_VERTICAL_GREEN: "verde fendita maldekstre"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "helblue fendita maldekstre"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "helgrize fendita maldekstre"
+  BANNER_HALF_VERTICAL_LIME: "helverde fendita maldekstre"
+  BANNER_HALF_VERTICAL_MAGENTA: "malve fendita maldekstre"
+  BANNER_HALF_VERTICAL_ORANGE: "oranĝkolore fendita maldekstre"
+  BANNER_HALF_VERTICAL_PINK: "rozkolore fendita maldekstre"
+  BANNER_HALF_VERTICAL_PURPLE: "violkolore fendita maldekstre"
+  BANNER_HALF_VERTICAL_RED: "ruĝe fendita maldekstre"
+  BANNER_HALF_VERTICAL_WHITE: "blanke fendita maldekstre"
+  BANNER_HALF_VERTICAL_YELLOW: "flave fendita maldekstre"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "nigre fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "blue fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "brune fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "turkise fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "grize fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "verde fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "helblue fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "helgrize fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "helverde fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "malve fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "oranĝkolore fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "rozkolore fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "violkolore fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "ruĝe fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "blanke fendita dekstre"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "flave fendita dekstre"
+  BANNER_MOJANG_BLACK: "nigra umo"
+  BANNER_MOJANG_BLUE: "blua umo"
+  BANNER_MOJANG_BROWN: "bruna umo"
+  BANNER_MOJANG_CYAN: "turkisa umo"
+  BANNER_MOJANG_GRAY: "griza umo"
+  BANNER_MOJANG_GREEN: "verda umo"
+  BANNER_MOJANG_LIGHT_BLUE: "helblua umo"
+  BANNER_MOJANG_LIGHT_GRAY: "helgriza umo"
+  BANNER_MOJANG_LIME: "limea umo"
+  BANNER_MOJANG_MAGENTA: "malva umo"
+  BANNER_MOJANG_ORANGE: "oranĝkolora umo"
+  BANNER_MOJANG_PINK: "roza umo"
+  BANNER_MOJANG_PURPLE: "viola umo"
+  BANNER_MOJANG_RED: "ruĝa umo"
+  BANNER_MOJANG_WHITE: "blanka umo"
+  BANNER_MOJANG_YELLOW: "flava umo"
+  BANNER_PIGLIN_BLACK: "nigra muzelo"
+  BANNER_PIGLIN_BLUE: "blua muzelo"
+  BANNER_PIGLIN_BROWN: "bruna muzelo"
+  BANNER_PIGLIN_CYAN: "turkisa muzelo"
+  BANNER_PIGLIN_GRAY: "griza muzelo"
+  BANNER_PIGLIN_GREEN: "verda muzelo"
+  BANNER_PIGLIN_LIGHT_BLUE: "helblua muzelo"
+  BANNER_PIGLIN_LIGHT_GRAY: "helgriza muzelo"
+  BANNER_PIGLIN_LIME: "helverda muzelo"
+  BANNER_PIGLIN_MAGENTA: "malva muzelo"
+  BANNER_PIGLIN_ORANGE: "oranĝkolora muzelo"
+  BANNER_PIGLIN_PINK: "rozkolora muzelo"
+  BANNER_PIGLIN_PURPLE: "violkolora muzelo"
+  BANNER_PIGLIN_RED: "ruĝa muzelo"
+  BANNER_PIGLIN_WHITE: "blanka muzelo"
+  BANNER_PIGLIN_YELLOW: "flava muzelo"
+  BANNER_RHOMBUS_BLACK: "nigra lozanĝo"
+  BANNER_RHOMBUS_BLUE: "blua lozanĝo"
+  BANNER_RHOMBUS_BROWN: "bruna lozanĝo"
+  BANNER_RHOMBUS_CYAN: "turkisa lozanĝo"
+  BANNER_RHOMBUS_GRAY: "griza lozanĝo"
+  BANNER_RHOMBUS_GREEN: "verda lozanĝo"
+  BANNER_RHOMBUS_LIGHT_BLUE: "helblua lozanĝo"
+  BANNER_RHOMBUS_LIGHT_GRAY: "helgriza lozanĝo"
+  BANNER_RHOMBUS_LIME: "helverda lozanĝo"
+  BANNER_RHOMBUS_MAGENTA: "malva lozanĝo"
+  BANNER_RHOMBUS_ORANGE: "oranĝkolora lozanĝo"
+  BANNER_RHOMBUS_PINK: "rozkolora lozanĝo"
+  BANNER_RHOMBUS_PURPLE: "violkolora lozanĝo"
+  BANNER_RHOMBUS_RED: "ruĝa lozanĝo"
+  BANNER_RHOMBUS_WHITE: "blanka lozanĝo"
+  BANNER_RHOMBUS_YELLOW: "flava lozanĝo"
+  BANNER_SKULL_BLACK: "nigra kranio"
+  BANNER_SKULL_BLUE: "blua kranio"
+  BANNER_SKULL_BROWN: "bruna kranio"
+  BANNER_SKULL_CYAN: "turkisa kranio"
+  BANNER_SKULL_GRAY: "griza kranio"
+  BANNER_SKULL_GREEN: "verda kranio"
+  BANNER_SKULL_LIGHT_BLUE: "helblua kranio"
+  BANNER_SKULL_LIGHT_GRAY: "helgriza kranio"
+  BANNER_SKULL_LIME: "helverda kranio"
+  BANNER_SKULL_MAGENTA: "malva kranio"
+  BANNER_SKULL_ORANGE: "oranĝkolora kranio"
+  BANNER_SKULL_PINK: "rozkolora kranio"
+  BANNER_SKULL_PURPLE: "violkolora kranio"
+  BANNER_SKULL_RED: "ruĝa kranio"
+  BANNER_SKULL_WHITE: "blanka kranio"
+  BANNER_SKULL_YELLOW: "flava kranio"
+  BANNER_SMALL_STRIPES_BLACK: "nigre palisumita"
+  BANNER_SMALL_STRIPES_BLUE: "blue palisumita"
+  BANNER_SMALL_STRIPES_BROWN: "brune palisumita"
+  BANNER_SMALL_STRIPES_CYAN: "turkise palisumita"
+  BANNER_SMALL_STRIPES_GRAY: "grize palisumita"
+  BANNER_SMALL_STRIPES_GREEN: "verde palisumita"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "helblue palisumita"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "helgrize palisumita"
+  BANNER_SMALL_STRIPES_LIME: "helverde palisumita"
+  BANNER_SMALL_STRIPES_MAGENTA: "malve palisumita"
+  BANNER_SMALL_STRIPES_ORANGE: "oranĝkolore palisumita"
+  BANNER_SMALL_STRIPES_PINK: "rozkolore palisumita"
+  BANNER_SMALL_STRIPES_PURPLE: "violkolore palisumita"
+  BANNER_SMALL_STRIPES_RED: "ruĝe palisumita"
+  BANNER_SMALL_STRIPES_WHITE: "blanke palisumita"
+  BANNER_SMALL_STRIPES_YELLOW: "flave palisumita"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "nigra malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "blua malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "bruna malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "turkisa malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "griza malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "verda malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "helblua malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "helgriza malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "helverda malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "malva malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "oranĝkolora malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "rozkolora malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "violkolora malsupra dekstra flagokvadrado"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "ruĝa malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "blanka malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "flava malsupra maldekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "nigra malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "blua malsupra maldekstra flagokvadrado"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "bruna malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "turkisa malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "griza malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "verda malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "helblua malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "helgriza malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "helverda malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "malva malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "oranĝkolora malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "rozkolora malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "violkolora malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "ruĝa malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "blanka malsupra dekstra kantono"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "flava malsupra dekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "nigra supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "blua supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "bruna supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "turkisa supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "griza supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "verda supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "helblua supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "helgriza supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_LIME: "helverda supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "malva supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "oranĝkolora supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_PINK: "rozkolora supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "violkolora supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_RED: "ruĝa supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "blanka supra maldekstra kantono"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "flava supra maldekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "nigra supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "blua supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "bruna supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "turkisa supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "griza supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "verda supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "helblua supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "helgriza supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "helverda supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "malva supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "oranĝkolora supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "rozkolora supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "violkolora supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_RED: "ruĝa supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "blanka supra dekstra kantono"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "flava supra dekstra kantono"
+  BANNER_STRAIGHT_CROSS_BLACK: "nigra rekta kruco"
+  BANNER_STRAIGHT_CROSS_BLUE: "blua rekta kruco"
+  BANNER_STRAIGHT_CROSS_BROWN: "bruna rekta kruco"
+  BANNER_STRAIGHT_CROSS_CYAN: "turkisa rekta kruco"
+  BANNER_STRAIGHT_CROSS_GRAY: "griza rekta kruco"
+  BANNER_STRAIGHT_CROSS_GREEN: "verda rekta kruco"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "helblua rekta kruco"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "helgriza rekta kruco"
+  BANNER_STRAIGHT_CROSS_LIME: "helverda rekta kruco"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "malva rekta kruco"
+  BANNER_STRAIGHT_CROSS_ORANGE: "oranĝkolora rekta kruco"
+  BANNER_STRAIGHT_CROSS_PINK: "rozkolora rekta kruco"
+  BANNER_STRAIGHT_CROSS_PURPLE: "violkolora rekta kruco"
+  BANNER_STRAIGHT_CROSS_RED: "ruĝa rekta kruco"
+  BANNER_STRAIGHT_CROSS_WHITE: "blanka rekta kruco"
+  BANNER_STRAIGHT_CROSS_YELLOW: "flava rekta kruco"
+  BANNER_STRIPE_BOTTOM_BLACK: "nigra ŝildobazo"
+  BANNER_STRIPE_BOTTOM_BLUE: "blua ŝildobazo"
+  BANNER_STRIPE_BOTTOM_BROWN: "bruna ŝildobazo"
+  BANNER_STRIPE_BOTTOM_CYAN: "turkisa ŝildobazo"
+  BANNER_STRIPE_BOTTOM_GRAY: "griza ŝildobazo"
+  BANNER_STRIPE_BOTTOM_GREEN: "verda ŝildobazo"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "helblua ŝildobazo"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "helgriza ŝildobazo"
+  BANNER_STRIPE_BOTTOM_LIME: "helverda ŝildobazo"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "malva ŝildobazo"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranĝkolora ŝildobazo"
+  BANNER_STRIPE_BOTTOM_PINK: "rozkolora ŝildobazo"
+  BANNER_STRIPE_BOTTOM_PURPLE: "violkolora ŝildobazo"
+  BANNER_STRIPE_BOTTOM_RED: "ruĝa ŝildobazo"
+  BANNER_STRIPE_BOTTOM_WHITE: "blanka ŝildobazo"
+  BANNER_STRIPE_BOTTOM_YELLOW: "flava ŝildobazo"
+  BANNER_STRIPE_CENTER_BLACK: "nigra paliso"
+  BANNER_STRIPE_CENTER_BLUE: "blua paliso"
+  BANNER_STRIPE_CENTER_BROWN: "bruna paliso"
+  BANNER_STRIPE_CENTER_CYAN: "turkisa paliso"
+  BANNER_STRIPE_CENTER_GRAY: "griza paliso"
+  BANNER_STRIPE_CENTER_GREEN: "verda paliso"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "helblua paliso"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "helgriza paliso"
+  BANNER_STRIPE_CENTER_LIME: "helverda paliso"
+  BANNER_STRIPE_CENTER_MAGENTA: "malva paliso"
+  BANNER_STRIPE_CENTER_ORANGE: "oranĝkolora paliso"
+  BANNER_STRIPE_CENTER_PINK: "rozkolora paliso"
+  BANNER_STRIPE_CENTER_PURPLE: "violkolora paliso"
+  BANNER_STRIPE_CENTER_RED: "ruĝa paliso"
+  BANNER_STRIPE_CENTER_WHITE: "blanka paliso"
+  BANNER_STRIPE_CENTER_YELLOW: "flava paliso"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "nigra maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "blua maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "bruna maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "turkisa maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "griza maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "verda maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "helblua maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "helgriza maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_LIME: "helverda maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "malva maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "oranĝkolora maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rozkolora maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "violkolora maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_RED: "ruĝa maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "blanka maldekstra bendo"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "flava maldekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "nigra dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "blua dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "bruna dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "turkisa dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "griza dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "verda dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "helblua dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "helgriza dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "helverda dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "malva dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "oranĝkolora dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rozkolora dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "violkolora dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_RED: "ruĝa dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "blanka dekstra bendo"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "flava dekstra bendo"
+  BANNER_STRIPE_LEFT_BLACK: "nigra maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_BLUE: "blua maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_BROWN: "bruna maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_CYAN: "turkisa maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_GRAY: "griza maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_GREEN: "verda maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "helblua maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "helgriza maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_LIME: "helverda maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_MAGENTA: "malva maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_ORANGE: "oranĝkolora maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_PINK: "rozkolora maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_PURPLE: "violkolora maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_RED: "ruĝa maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_WHITE: "blanka maldekstra flankaĵo"
+  BANNER_STRIPE_LEFT_YELLOW: "flava maldekstra flankaĵo"
+  BANNER_STRIPE_MIDDLE_BLACK: "nigra trabo"
+  BANNER_STRIPE_MIDDLE_BLUE: "blua trabo"
+  BANNER_STRIPE_MIDDLE_BROWN: "bruna trabo"
+  BANNER_STRIPE_MIDDLE_CYAN: "turkisa trabo"
+  BANNER_STRIPE_MIDDLE_GRAY: "griza trabo"
+  BANNER_STRIPE_MIDDLE_GREEN: "verda trabo"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "helblua trabo"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "helgriza trabo"
+  BANNER_STRIPE_MIDDLE_LIME: "helverda trabo"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "malva trabo"
+  BANNER_STRIPE_MIDDLE_ORANGE: "oranĝa trabo"
+  BANNER_STRIPE_MIDDLE_PINK: "rozkolora trabo"
+  BANNER_STRIPE_MIDDLE_PURPLE: "violkolora trabo"
+  BANNER_STRIPE_MIDDLE_RED: "ruĝa trabo"
+  BANNER_STRIPE_MIDDLE_WHITE: "blanka trabo"
+  BANNER_STRIPE_MIDDLE_YELLOW: "flava trabo"
+  BANNER_STRIPE_RIGHT_BLACK: "nigra dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_BLUE: "blua dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_BROWN: "bruna dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_CYAN: "turkisa dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_GRAY: "griza dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_GREEN: "verda dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "helblua dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "helgriza dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_LIME: "helverda dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_MAGENTA: "malva dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_ORANGE: "oranĝkolora dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_PINK: "rozkolora dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_PURPLE: "violkolora dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_RED: "ruĝa dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_WHITE: "blanka dekstra flankaĵo"
+  BANNER_STRIPE_RIGHT_YELLOW: "flava dekstra flankaĵo"
+  BANNER_STRIPE_TOP_BLACK: "nigra ŝildokapo"
+  BANNER_STRIPE_TOP_BLUE: "blua ŝildokapo"
+  BANNER_STRIPE_TOP_BROWN: "bruna ŝildokapo"
+  BANNER_STRIPE_TOP_CYAN: "turkisa ŝildokapo"
+  BANNER_STRIPE_TOP_GRAY: "griza ŝildokapo"
+  BANNER_STRIPE_TOP_GREEN: "verda ŝildokapo"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "helblua ŝildokapo"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "helgriza ŝildokapo"
+  BANNER_STRIPE_TOP_LIME: "helverda ŝildokapo"
+  BANNER_STRIPE_TOP_MAGENTA: "malva ŝildokapo"
+  BANNER_STRIPE_TOP_ORANGE: "oranĝkolora ŝildokapo"
+  BANNER_STRIPE_TOP_PINK: "rozkolora ŝildokapo"
+  BANNER_STRIPE_TOP_PURPLE: "violkolora ŝildokapo"
+  BANNER_STRIPE_TOP_RED: "ruĝa ŝildokapo"
+  BANNER_STRIPE_TOP_WHITE: "blanka ŝildokapo"
+  BANNER_STRIPE_TOP_YELLOW: "flava ŝildokapo"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "nigra supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "blua supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "bruna supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "turkisa supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "griza supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "verda supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "helblua supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "helgriza supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_LIME: "helverda supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "malva supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "oranĝkolora supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_PINK: "rozkolora supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "violkolora supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_RED: "ruĝa supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "blanka supra ĉevrono"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "flava supra ĉevrono"
+  BANNER_TRIANGLE_TOP_BLACK: "nigra malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_BLUE: "blua malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_BROWN: "bruna malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_CYAN: "turkisa malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_GRAY: "griza malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_GREEN: "verda malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "helblua malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "helgriza malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_LIME: "helverda malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_MAGENTA: "malva malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_ORANGE: "oranĝkolora malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_PINK: "rozkolora malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_PURPLE: "violkolora malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_RED: "ruĝa malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_WHITE: "blanka malsupra ĉevrono"
+  BANNER_TRIANGLE_TOP_YELLOW: "flava malsupra ĉevrono"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "nigre dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "blue dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "brune dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "turkise dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "grize dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "verde dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "helblue dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "helgrize dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_LIME: "helverde dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "malve dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oranĝkolore dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_PINK: "rozkolore dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "violkolore dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_RED: "ruĝe dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "blanke dentumita malsupre"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "flave dentumita malsupre"
+  BANNER_TRIANGLES_TOP_BLACK: "nigre dentumita supre"
+  BANNER_TRIANGLES_TOP_BLUE: "blue dentumita supre"
+  BANNER_TRIANGLES_TOP_BROWN: "brune dentumita supre"
+  BANNER_TRIANGLES_TOP_CYAN: "turkise dentumita supre"
+  BANNER_TRIANGLES_TOP_GRAY: "grize dentumita supre"
+  BANNER_TRIANGLES_TOP_GREEN: "verde dentumita supre"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "helblue dentumita supre"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "helgrize dentumita supre"
+  BANNER_TRIANGLES_TOP_LIME: "helverde dentumita supre"
+  BANNER_TRIANGLES_TOP_MAGENTA: "malve dentumita supre"
+  BANNER_TRIANGLES_TOP_ORANGE: "oranĝkolore dentumita supre"
+  BANNER_TRIANGLES_TOP_PINK: "rozkolore dentumita supre"
+  BANNER_TRIANGLES_TOP_PURPLE: "violkolore dentumita supre"
+  BANNER_TRIANGLES_TOP_RED: "ruĝe dentumita supre"
+  BANNER_TRIANGLES_TOP_WHITE: "blanke dentumita supre"
+  BANNER_TRIANGLES_TOP_YELLOW: "flave dentumita supre"
+  BARREL: "barelo"
+  BARRIER: "barilego"
+  BASALT: "bazalto"
+  BEACON: "lumstriilo"
+  BEACON_PRIMARY: "unua efiko"
+  BEACON_SECONDARY: "dua efiko"
+  BED_NO_SLEEP: "oni povas dormi nur nokte aŭ dum fulmotondro"
+  BED_NOT_SAFE: "oni ne povas ekdormi apud monstroj"
+  BED_OBSTRUCTED: "ĉi tiu lito estas obstrukcita"
+  BED_OCCUPIED: "ĉi tiu lito estas uzata"
+  BED_TOO_FAR_AWAY: "oni ne povas enlitiĝi de tiel malproksime"
+  BEDROCK: "bazroko"
+  BEE_NEST: "abelnesto"
+  BEEHIVE: "abelujo"
+  BEETROOTS: "ruĝbetoj"
+  BELL: "sonorilo"
+  BIG_DRIPLEAF: "gutfoliego"
+  BIG_DRIPLEAF_STEM: "gutfoliega tigo"
+  BIRCH_BUTTON: "betula butono"
+  BIRCH_DOOR: "betula pordo"
+  BIRCH_FENCE: "betula barilo"
+  BIRCH_FENCE_GATE: "betula barilpordo"
+  BIRCH_HANGING_SIGN: "betula elpendaĵo"
+  BIRCH_LEAVES: "betula foliaro"
+  BIRCH_LOG: "betula ŝtipo"
+  BIRCH_PLANKS: "betula tabularo"
+  BIRCH_PRESSURE_PLATE: "betula premplato"
+  BIRCH_SAPLING: "betulido"
+  BIRCH_SIGN: "betula ŝildeto"
+  BIRCH_SLAB: "betula ŝtupo"
+  BIRCH_STAIRS: "betula ŝtuparo"
+  BIRCH_TRAPDOOR: "betula klappordo"
+  BIRCH_WALL_HANGING_SIGN: "betula surmura elpendaĵo"
+  BIRCH_WALL_SIGN: "betula surmura ŝildeto"
+  BIRCH_WOOD: "betula ligno"
+  BLACK_BANNER: "nigra standardo"
+  BLACK_BED: "nigra lito"
+  BLACK_CANDLE: "nigra kandelo"
+  BLACK_CANDLE_CAKE: "torto kun nigra kandelo"
+  BLACK_CARPET: "nigra tapiŝo"
+  BLACK_CONCRETE: "nigra betono"
+  BLACK_CONCRETE_POWDER: "nigra cemento"
+  BLACK_GLAZED_TERRACOTTA: "nigra glazurita terakoto"
+  BLACK_SHULKER_BOX: "nigra shulkerskatolo"
+  BLACK_STAINED_GLASS: "nigrigita vitro"
+  BLACK_STAINED_GLASS_PANE: "nigrigita glaco"
+  BLACK_TERRACOTTA: "nigra terakoto"
+  BLACK_WOOL: "nigra lano"
+  BLACKSTONE: "nigroŝtono"
+  BLACKSTONE_SLAB: "nigroŝtona ŝtupo"
+  BLACKSTONE_STAIRS: "nigroŝtona ŝtuparo"
+  BLACKSTONE_WALL: "nigroŝtona muro"
+  BLAST_FURNACE: "altforno"
+  BLUE_BANNER: "blua standardo"
+  BLUE_BED: "blua lito"
+  BLUE_CANDLE: "blua kandelo"
+  BLUE_CANDLE_CAKE: "torto kun blua kandelo"
+  BLUE_CARPET: "blua tapiŝo"
+  BLUE_CONCRETE: "blua betono"
+  BLUE_CONCRETE_POWDER: "blua cemento"
+  BLUE_GLAZED_TERRACOTTA: "blua glazurita terakoto"
+  BLUE_ICE: "glacio blua"
+  BLUE_ORCHID: "blua orkido"
+  BLUE_SHULKER_BOX: "blua shulkerskatolo"
+  BLUE_STAINED_GLASS: "bluigita vitro"
+  BLUE_STAINED_GLASS_PANE: "bluigita glaco"
+  BLUE_TERRACOTTA: "blua terakoto"
+  BLUE_WOOL: "blua lano"
+  BONE_BLOCK: "osta bloko"
+  BOOKSHELF: "librobretaro"
+  BRAIN_CORAL: "cerbokoralo"
+  BRAIN_CORAL_BLOCK: "bloko cerbokorala"
+  BRAIN_CORAL_FAN: "ventumilo cerbokorala"
+  BRAIN_CORAL_WALL_FAN: "surmura ventumilo cerbokorala"
+  BREWING_STAND: "eliksirfarilo"
+  BRICK_SLAB: "brika ŝtupo"
+  BRICK_STAIRS: "brika ŝtuparo"
+  BRICK_WALL: "brika muro"
+  BRICKS: "brikaro"
+  BROWN_BANNER: "bruna standardo"
+  BROWN_BED: "bruna lito"
+  BROWN_CANDLE: "bruna kandelo"
+  BROWN_CANDLE_CAKE: "torto kun bruna kandelo"
+  BROWN_CARPET: "bruna tapiŝo"
+  BROWN_CONCRETE: "bruna betono"
+  BROWN_CONCRETE_POWDER: "bruna cemento"
+  BROWN_GLAZED_TERRACOTTA: "bruna glazurita terakoto"
+  BROWN_MUSHROOM: "boleto"
+  BROWN_MUSHROOM_BLOCK: "boleta bloko"
+  BROWN_SHULKER_BOX: "bruna shulkerskatolo"
+  BROWN_STAINED_GLASS: "brunigita vitro"
+  BROWN_STAINED_GLASS_PANE: "brunigita glaco"
+  BROWN_TERRACOTTA: "bruna terakoto"
+  BROWN_WOOL: "bruna lano"
+  BUBBLE_COLUMN: "bobela kolumno"
+  BUBBLE_CORAL: "bobelokoralo"
+  BUBBLE_CORAL_BLOCK: "bloko bobelokorala"
+  BUBBLE_CORAL_FAN: "ventumilo bobelokorala"
+  BUBBLE_CORAL_WALL_FAN: "surmura ventumilo bobelokorala"
+  BUDDING_AMETHYST: "burĝonanta ametisto"
+  CACTUS: "kakto"
+  CAKE: "torto"
+  CALCITE: "kalcito"
+  CALIBRATED_SCULK_SENSOR: "agordebla sculka sensoro"
+  CAMPFIRE: "tendarfajro"
+  CANDLE: "kandelo"
+  CANDLE_CAKE: "torto kun kandelo"
+  CARROTS: "karotoj"
+  CARTOGRAPHY_TABLE: "kartografitablo"
+  CARVED_PUMPKIN: "tajlita kukurbo"
+  CAULDRON: "kaldrono"
+  CAVE_AIR: "kaverna aero"
+  CAVE_VINES: "kaverna hedero"
+  CAVE_VINES_PLANT: "planto de kaverna hedero"
+  CHAIN: "ĉeno"
+  CHAIN_COMMAND_BLOCK: "ĉena komanda bloko"
+  CHERRY_BUTTON: "sakura butono"
+  CHERRY_DOOR: "sakura pordo"
+  CHERRY_FENCE: "sakura barilo"
+  CHERRY_FENCE_GATE: "sakura barilpordo"
+  CHERRY_HANGING_SIGN: "sakura elpendaĵo"
+  CHERRY_LEAVES: "sakura foliaro"
+  CHERRY_LOG: "sakura ŝtipo"
+  CHERRY_PLANKS: "sakura tabularo"
+  CHERRY_PRESSURE_PLATE: "sakura premplato"
+  CHERRY_SAPLING: "sakurido"
+  CHERRY_SIGN: "sakura ŝildeto"
+  CHERRY_SLAB: "sakura ŝtupo"
+  CHERRY_STAIRS: "sakura ŝtuparo"
+  CHERRY_TRAPDOOR: "sakura klappordo"
+  CHERRY_WALL_HANGING_SIGN: "sakura surmura elpendaĵo"
+  CHERRY_WALL_SIGN: "sakura surmura ŝildeto"
+  CHERRY_WOOD: "sakura ligno"
+  CHEST: "kofro"
+  CHIPPED_ANVIL: "fendiĝinta amboso"
+  CHISELED_BOOKSHELF: "ĉizita librobretaro"
+  CHISELED_COPPER: "ĉizita kupro"
+  CHISELED_DEEPSLATE: "ĉizita ardezo"
+  CHISELED_NETHER_BRICKS: "ĉizita nethera brikaro"
+  CHISELED_POLISHED_BLACKSTONE: "ĉizita polurita nigroŝtono"
+  CHISELED_QUARTZ_BLOCK: "ĉizita kvarca bloko"
+  CHISELED_RED_SANDSTONE: "ĉizita ruĝa sabloŝtono"
+  CHISELED_SANDSTONE: "ĉizita sabloŝtono"
+  CHISELED_STONE_BRICKS: "ĉizita ŝtona brikaro"
+  CHISELED_TUFF: "ĉizita tofo"
+  CHISELED_TUFF_BRICKS: "ĉizita tofa brikaro"
+  CHORUS_FLOWER: "refrena floro"
+  CHORUS_PLANT: "refrena planto"
+  CLAY: "argilbloko"
+  COAL_BLOCK: "karba bloko"
+  COAL_ORE: "karba erco"
+  COARSE_DIRT: "maldelikata tero"
+  COBBLED_DEEPSLATE: "pavimardezo"
+  COBBLED_DEEPSLATE_SLAB: "pavimardeza ŝtupo"
+  COBBLED_DEEPSLATE_STAIRS: "pavimardeza ŝtuparo"
+  COBBLED_DEEPSLATE_WALL: "pavimardeza muro"
+  COBBLESTONE: "pavimŝtono"
+  COBBLESTONE_SLAB: "pavimŝtona ŝtupo"
+  COBBLESTONE_STAIRS: "pavimŝtona ŝtuparo"
+  COBBLESTONE_WALL: "pavimŝtona muro"
+  COBWEB: "araneaĵo"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "komanda bloko"
+  COMPARATOR: "redstone’a komparilo"
+  COMPOSTER: "kompoŝtujo"
+  CONDUIT: "markondukto"
+  COPPER_BLOCK: "kupra bloko"
+  COPPER_BULB: "kupra ampolo"
+  COPPER_DOOR: "kupra pordo"
+  COPPER_GRATE: "kupra krado"
+  COPPER_ORE: "kupra erco"
+  COPPER_TRAPDOOR: "kupra klappordo"
+  CORNFLOWER: "cejano"
+  CRACKED_DEEPSLATE_BRICKS: "rompita ardeza brikaro"
+  CRACKED_DEEPSLATE_TILES: "rompita ardeza briketaro"
+  CRACKED_NETHER_BRICKS: "rompita nethera brikaro"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "rompita polurita nigroŝtona brikaro"
+  CRACKED_STONE_BRICKS: "rompita ŝtona brikaro"
+  CRAFTER: "tujkreilo"
+  CRAFTING_TABLE: "labortablo"
+  CREEPER_HEAD: "kapo de creeper"
+  CREEPER_WALL_HEAD: "surmura kapo de creeper"
+  CRIMSON_BUTTON: "skarlata butono"
+  CRIMSON_DOOR: "skarlata pordo"
+  CRIMSON_FENCE: "skarlata barilo"
+  CRIMSON_FENCE_GATE: "skarlata barilpordo"
+  CRIMSON_FUNGUS: "skarlata fungo"
+  CRIMSON_HANGING_SIGN: "skarlata elpendaĵo"
+  CRIMSON_HYPHAE: "skarlata hifaro"
+  CRIMSON_NYLIUM: "skarlata nilio"
+  CRIMSON_PLANKS: "skarlata tabularo"
+  CRIMSON_PRESSURE_PLATE: "skarlata premplato"
+  CRIMSON_ROOTS: "skarlata radikaro"
+  CRIMSON_SIGN: "skarlata ŝildeto"
+  CRIMSON_SLAB: "skarlata ŝtupo"
+  CRIMSON_STAIRS: "skarlata ŝtuparo"
+  CRIMSON_STEM: "skarlata stipo"
+  CRIMSON_TRAPDOOR: "skarlata klappordo"
+  CRIMSON_WALL_HANGING_SIGN: "skarlata surmura elpendaĵo"
+  CRIMSON_WALL_SIGN: "skarlata surmura ŝildeto"
+  CRYING_OBSIDIAN: "plorobsidiano"
+  CUT_COPPER: "tranĉita kupro"
+  CUT_COPPER_SLAB: "tranĉita kupra ŝtupo"
+  CUT_COPPER_STAIRS: "tranĉita kupra ŝtuparo"
+  CUT_RED_SANDSTONE: "tranĉita ruĝa sabloŝtono"
+  CUT_RED_SANDSTONE_SLAB: "tranĉita ruĝa sabloŝtona ŝtupo"
+  CUT_SANDSTONE: "tranĉita sabloŝtono"
+  CUT_SANDSTONE_SLAB: "tranĉita sabloŝtona ŝtupo"
+  CYAN_BANNER: "turkisa standardo"
+  CYAN_BED: "turkisa lito"
+  CYAN_CANDLE: "turkisa kandelo"
+  CYAN_CANDLE_CAKE: "torto kun turkisa kandelo"
+  CYAN_CARPET: "turkisa tapiŝo"
+  CYAN_CONCRETE: "turkisa betono"
+  CYAN_CONCRETE_POWDER: "turkisa cemento"
+  CYAN_GLAZED_TERRACOTTA: "turkisa glazurita terakoto"
+  CYAN_SHULKER_BOX: "turkisa shulkerskatolo"
+  CYAN_STAINED_GLASS: "turkisigita vitro"
+  CYAN_STAINED_GLASS_PANE: "turkisigita glaco"
+  CYAN_TERRACOTTA: "turkisa terakoto"
+  CYAN_WOOL: "turkisa lano"
+  DAMAGED_ANVIL: "damaĝita amboso"
+  DANDELION: "leontodo"
+  DARK_OAK_BUTTON: "malhelkverka butono"
+  DARK_OAK_DOOR: "malhelkverka pordo"
+  DARK_OAK_FENCE: "malhelkverka barilo"
+  DARK_OAK_FENCE_GATE: "malhelkverka barilpordo"
+  DARK_OAK_HANGING_SIGN: "malhelkverka elpendaĵo"
+  DARK_OAK_LEAVES: "malhelkverka foliaro"
+  DARK_OAK_LOG: "malhelkverka ŝtipo"
+  DARK_OAK_PLANKS: "malhelkverka tabularo"
+  DARK_OAK_PRESSURE_PLATE: "malhelkverka premplato"
+  DARK_OAK_SAPLING: "malhelkverkido"
+  DARK_OAK_SIGN: "malhelkverka ŝildeto"
+  DARK_OAK_SLAB: "malhelkverka ŝtupo"
+  DARK_OAK_STAIRS: "malhelkverka ŝtuparo"
+  DARK_OAK_TRAPDOOR: "malhelkverka klappordo"
+  DARK_OAK_WALL_HANGING_SIGN: "malhelkverka surmura elpendaĵo"
+  DARK_OAK_WALL_SIGN: "malhelkverka surmura ŝildeto"
+  DARK_OAK_WOOD: "malhelkverka ligno"
+  DARK_PRISMARINE: "malhelprismarino"
+  DARK_PRISMARINE_SLAB: "malhelprismarina ŝtupo"
+  DARK_PRISMARINE_STAIRS: "malhelprismarina ŝtuparo"
+  DAYLIGHT_DETECTOR: "taglumdetektilo"
+  DEAD_BRAIN_CORAL: "mortinta cerbokoralo"
+  DEAD_BRAIN_CORAL_BLOCK: "mortinta bloko cerbokorala"
+  DEAD_BRAIN_CORAL_FAN: "mortinta ventumilo cerbokorala"
+  DEAD_BRAIN_CORAL_WALL_FAN: "mortinta surmura ventumilo cerbokorala"
+  DEAD_BUBBLE_CORAL: "mortinta bobelokoralo"
+  DEAD_BUBBLE_CORAL_BLOCK: "mortinta bloko bobelokorala"
+  DEAD_BUBBLE_CORAL_FAN: "mortinta ventumilo bobelokorala"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "mortinta surmura ventumilo bobelokorala"
+  DEAD_BUSH: "mortinta arbusto"
+  DEAD_FIRE_CORAL: "mortinta fajrokoralo"
+  DEAD_FIRE_CORAL_BLOCK: "mortinta bloko fajrokorala"
+  DEAD_FIRE_CORAL_FAN: "mortinta ventumilo fajrokorala"
+  DEAD_FIRE_CORAL_WALL_FAN: "mortinta surmura ventumilo fajrokorala"
+  DEAD_HORN_CORAL: "mortinta kornokoralo"
+  DEAD_HORN_CORAL_BLOCK: "mortinta bloko kornokorala"
+  DEAD_HORN_CORAL_FAN: "mortinta ventumilo kornokorala"
+  DEAD_HORN_CORAL_WALL_FAN: "mortinta surmura ventumilo kornokorala"
+  DEAD_TUBE_CORAL: "mortinta tubokoralo"
+  DEAD_TUBE_CORAL_BLOCK: "mortinta bloko tubokorala"
+  DEAD_TUBE_CORAL_FAN: "mortinta ventumilo tubokorala"
+  DEAD_TUBE_CORAL_WALL_FAN: "mortinta surmura ventumilo tubokorala"
+  DECORATED_POT: "ornamita poto"
+  DEEPSLATE: "ardezo"
+  DEEPSLATE_BRICK_SLAB: "ardezbrika ŝtupo"
+  DEEPSLATE_BRICK_STAIRS: "ardezbrika ŝtuparo"
+  DEEPSLATE_BRICK_WALL: "ardezbrika muro"
+  DEEPSLATE_BRICKS: "ardeza brikaro"
+  DEEPSLATE_COAL_ORE: "ardeza karba erco"
+  DEEPSLATE_COPPER_ORE: "ardeza kupra erco"
+  DEEPSLATE_DIAMOND_ORE: "ardeza diamanta erco"
+  DEEPSLATE_EMERALD_ORE: "ardeza smeralda erco"
+  DEEPSLATE_GOLD_ORE: "ardeza ora erco"
+  DEEPSLATE_IRON_ORE: "ardeza fera erco"
+  DEEPSLATE_LAPIS_ORE: "ardeza lazurita erco"
+  DEEPSLATE_REDSTONE_ORE: "ardeza redstone’a erco"
+  DEEPSLATE_TILE_SLAB: "ardeza briketa ŝtupo"
+  DEEPSLATE_TILE_STAIRS: "ardeza briketa ŝtuparo"
+  DEEPSLATE_TILE_WALL: "ardeza briketa muro"
+  DEEPSLATE_TILES: "ardeza briketaro"
+  DETECTOR_RAIL: "detektila relo"
+  DIAMOND_BLOCK: "diamanta bloko"
+  DIAMOND_ORE: "diamanta erco"
+  DIORITE: "diorito"
+  DIORITE_SLAB: "diorita ŝtupo"
+  DIORITE_STAIRS: "diorita ŝtuparo"
+  DIORITE_WALL: "diorita muro"
+  DIRT: "tero"
+  DIRT_PATH: "tera pado"
+  DISPENSER: "ĵetilo"
+  DRAGON_EGG: "draka ovo"
+  DRAGON_HEAD: "kapo de drako"
+  DRAGON_WALL_HEAD: "surmura kapo de drako"
+  DRIED_KELP_BLOCK: "sekigita alga bloko"
+  DRIPSTONE_BLOCK: "gutŝtona bloko"
+  DROPPER: "donilo"
+  EMERALD_BLOCK: "smeralda bloko"
+  EMERALD_ORE: "smeralda erco"
+  ENCHANTING_TABLE: "sorĉtablo"
+  END_GATEWAY: "endportego"
+  END_PORTAL: "endportalo"
+  END_PORTAL_FRAME: "kadro de endportalo"
+  END_ROD: "endstango"
+  END_STONE: "endŝtono"
+  END_STONE_BRICK_SLAB: "endŝtonbrika ŝtupo"
+  END_STONE_BRICK_STAIRS: "endŝtonbrika ŝtuparo"
+  END_STONE_BRICK_WALL: "endŝtonbrika muro"
+  END_STONE_BRICKS: "endŝtona brikaro"
+  ENDER_CHEST: "enderkofro"
+  EXPOSED_CHISELED_COPPER: "verdigreta ĉizita kupro"
+  EXPOSED_COPPER: "verdigreta kupro"
+  EXPOSED_COPPER_BULB: "verdigreta kupra ampolo"
+  EXPOSED_COPPER_DOOR: "verdigreta kupra pordo"
+  EXPOSED_COPPER_GRATE: "verdigreta kupra krado"
+  EXPOSED_COPPER_TRAPDOOR: "verdigreta kupra klappordo"
+  EXPOSED_CUT_COPPER: "verdigreta tranĉita kupro"
+  EXPOSED_CUT_COPPER_SLAB: "verdigreta tranĉita kupra ŝtupo"
+  EXPOSED_CUT_COPPER_STAIRS: "verdigreta tranĉita kupra ŝtuparo"
+  FARMLAND: "kultivtero"
+  FERN: "filiko"
+  FIRE: "fajro"
+  FIRE_CORAL: "fajrokoralo"
+  FIRE_CORAL_BLOCK: "bloko fajrokorala"
+  FIRE_CORAL_FAN: "ventumilo fajrokorala"
+  FIRE_CORAL_WALL_FAN: "surmura ventumilo fajrokorala"
+  FLETCHING_TABLE: "pafarktablo"
+  FLOWER_POT: "florpoto"
+  FLOWERING_AZALEA: "floranta azaleo"
+  FLOWERING_AZALEA_LEAVES: "foliaro de floranta azaleo"
+  FROGSPAWN: "rana frajo"
+  FROSTED_ICE: "prujno"
+  FURNACE: "forno"
+  GILDED_BLACKSTONE: "orita nigroŝtono"
+  GLASS: "vitro"
+  GLASS_PANE: "glaco"
+  GLOW_LICHEN: "lumlikeno"
+  GLOWSTONE: "lumŝtono"
+  GOLD_BLOCK: "ora bloko"
+  GOLD_ORE: "ora erco"
+  GRANITE: "granito"
+  GRANITE_SLAB: "granita ŝtupo"
+  GRANITE_STAIRS: "granita ŝtuparo"
+  GRANITE_WALL: "granita muro"
+  GRASS: "herbo"
+  GRASS_BLOCK: "herba bloko"
+  GRAVEL: "gruzo"
+  GRAY_BANNER: "griza standardo"
+  GRAY_BED: "griza lito"
+  GRAY_CANDLE: "griza kandelo"
+  GRAY_CANDLE_CAKE: "torto kun griza kandelo"
+  GRAY_CARPET: "griza tapiŝo"
+  GRAY_CONCRETE: "griza betono"
+  GRAY_CONCRETE_POWDER: "griza cemento"
+  GRAY_GLAZED_TERRACOTTA: "griza glazurita terakoto"
+  GRAY_SHULKER_BOX: "griza shulkerskatolo"
+  GRAY_STAINED_GLASS: "grizigita vitro"
+  GRAY_STAINED_GLASS_PANE: "grizigita glaco"
+  GRAY_TERRACOTTA: "griza terakoto"
+  GRAY_WOOL: "griza lano"
+  GREEN_BANNER: "verda standardo"
+  GREEN_BED: "verda lito"
+  GREEN_CANDLE: "verda kandelo"
+  GREEN_CANDLE_CAKE: "torto kun verda kandelo"
+  GREEN_CARPET: "verda tapiŝo"
+  GREEN_CONCRETE: "verda betono"
+  GREEN_CONCRETE_POWDER: "verda cemento"
+  GREEN_GLAZED_TERRACOTTA: "verda glazurita terakoto"
+  GREEN_SHULKER_BOX: "verda shulkerskatolo"
+  GREEN_STAINED_GLASS: "verdigita vitro"
+  GREEN_STAINED_GLASS_PANE: "verdigita glaco"
+  GREEN_TERRACOTTA: "verda terakoto"
+  GREEN_WOOL: "verda lano"
+  GRINDSTONE: "akrigilo"
+  HANGING_ROOTS: "pendanta radikaro"
+  HAY_BLOCK: "pajla pako"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "peza premplato"
+  HONEY_BLOCK: "mielbloko"
+  HONEYCOMB_BLOCK: "mielĉelarbloko"
+  HOPPER: "funelo"
+  HORN_CORAL: "kornokoralo"
+  HORN_CORAL_BLOCK: "bloko kornokorala"
+  HORN_CORAL_FAN: "ventumilo kornokorala"
+  HORN_CORAL_WALL_FAN: "surmura ventumilo kornokorala"
+  ICE: "glacio"
+  INFESTED_CHISELED_STONE_BRICKS: "infestita ĉizita ŝtona brikaro"
+  INFESTED_COBBLESTONE: "infestita pavimŝtono"
+  INFESTED_CRACKED_STONE_BRICKS: "infestita rompita ŝtona brikaro"
+  INFESTED_DEEPSLATE: "infestita ardezo"
+  INFESTED_MOSSY_STONE_BRICKS: "infestita muska ŝtona brikaro"
+  INFESTED_STONE: "infestita ŝtono"
+  INFESTED_STONE_BRICKS: "infestita ŝtona brikaro"
+  IRON_BARS: "fera krado"
+  IRON_BLOCK: "fera bloko"
+  IRON_DOOR: "fera pordo"
+  IRON_ORE: "fera erco"
+  IRON_TRAPDOOR: "fera klappordo"
+  JACK_O_LANTERN: "kukurba lanterno"
+  JIGSAW: "konstruktbloko"
+  JUKEBOX: "muzikaŭtomato"
+  JUNGLE_BUTTON: "ĝangalarba butono"
+  JUNGLE_DOOR: "ĝangalarba pordo"
+  JUNGLE_FENCE: "ĝangalarba barilo"
+  JUNGLE_FENCE_GATE: "ĝangalarba barilpordo"
+  JUNGLE_HANGING_SIGN: "ĝangalarba elpendaĵo"
+  JUNGLE_LEAVES: "ĝangalarba foliaro"
+  JUNGLE_LOG: "ĝangalarba ŝtipo"
+  JUNGLE_PLANKS: "ĝangalarba tabularo"
+  JUNGLE_PRESSURE_PLATE: "ĝangalarba premplato"
+  JUNGLE_SAPLING: "ĝangalarbido"
+  JUNGLE_SIGN: "ĝangalarba ŝildeto"
+  JUNGLE_SLAB: "ĝangalarba ŝtupo"
+  JUNGLE_STAIRS: "ĝangalarba ŝtuparo"
+  JUNGLE_TRAPDOOR: "ĝangalarba klappordo"
+  JUNGLE_WALL_HANGING_SIGN: "ĝangalarba surmura elpendaĵo"
+  JUNGLE_WALL_SIGN: "ĝangalarba surmura ŝildeto"
+  JUNGLE_WOOD: "ĝangalarba ligno"
+  KELP: "algo"
+  KELP_PLANT: "planto de algo"
+  LADDER: "ŝtupetaro"
+  LANTERN: "lanterno"
+  LAPIS_BLOCK: "lazurita bloko"
+  LAPIS_ORE: "lazurita erco"
+  LARGE_AMETHYST_BUD: "granda ametista burĝono"
+  LARGE_FERN: "granda filiko"
+  LAVA: "lafo"
+  LAVA_CAULDRON: "kaldrono da lafo"
+  LECTERN: "libropupitro"
+  LEVER: "levilo"
+  LIGHT: "lumo"
+  LIGHT_BLUE_BANNER: "helblua standardo"
+  LIGHT_BLUE_BED: "helblua lito"
+  LIGHT_BLUE_CANDLE: "helblua kandelo"
+  LIGHT_BLUE_CANDLE_CAKE: "torto kun helblua kandelo"
+  LIGHT_BLUE_CARPET: "helblua tapiŝo"
+  LIGHT_BLUE_CONCRETE: "helblua betono"
+  LIGHT_BLUE_CONCRETE_POWDER: "helblua cemento"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "helblua glazurita terakoto"
+  LIGHT_BLUE_SHULKER_BOX: "helblua shulkerskatolo"
+  LIGHT_BLUE_STAINED_GLASS: "helbluigita vitro"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "helbluigita glaco"
+  LIGHT_BLUE_TERRACOTTA: "helblua terakoto"
+  LIGHT_BLUE_WOOL: "helblua lano"
+  LIGHT_GRAY_BANNER: "helgriza standardo"
+  LIGHT_GRAY_BED: "helgriza lito"
+  LIGHT_GRAY_CANDLE: "helgriza kandelo"
+  LIGHT_GRAY_CANDLE_CAKE: "torto kun helgriza kandelo"
+  LIGHT_GRAY_CARPET: "helgriza tapiŝo"
+  LIGHT_GRAY_CONCRETE: "helgriza betono"
+  LIGHT_GRAY_CONCRETE_POWDER: "helgriza cemento"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "helgriza glazurita terakoto"
+  LIGHT_GRAY_SHULKER_BOX: "helgriza shulkerskatolo"
+  LIGHT_GRAY_STAINED_GLASS: "helgrizigita vitro"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "helgrizigita glaco"
+  LIGHT_GRAY_TERRACOTTA: "helgriza terakoto"
+  LIGHT_GRAY_WOOL: "helgriza lano"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "malpeza premplato"
+  LIGHTNING_ROD: "fulmoŝirmilo"
+  LILAC: "siringo"
+  LILY_OF_THE_VALLEY: "konvalo"
+  LILY_PAD: "akvolilio"
+  LIME_BANNER: "helverda standardo"
+  LIME_BED: "helverda lito"
+  LIME_CANDLE: "helverda kandelo"
+  LIME_CANDLE_CAKE: "torto kun helverda kandelo"
+  LIME_CARPET: "helverda tapiŝo"
+  LIME_CONCRETE: "helverda betono"
+  LIME_CONCRETE_POWDER: "helverda cemento"
+  LIME_GLAZED_TERRACOTTA: "helverda glazurita terakoto"
+  LIME_SHULKER_BOX: "helverda shulkerskatolo"
+  LIME_STAINED_GLASS: "helverdigita vitro"
+  LIME_STAINED_GLASS_PANE: "helverdigita glaco"
+  LIME_TERRACOTTA: "helverda terakoto"
+  LIME_WOOL: "helverda lano"
+  LODESTONE: "magnetŝtono"
+  LOOM: "teksilo"
+  MAGENTA_BANNER: "malva standardo"
+  MAGENTA_BED: "malva lito"
+  MAGENTA_CANDLE: "malva kandelo"
+  MAGENTA_CANDLE_CAKE: "torto kun malva kandelo"
+  MAGENTA_CARPET: "malva tapiŝo"
+  MAGENTA_CONCRETE: "malva betono"
+  MAGENTA_CONCRETE_POWDER: "malva cemento"
+  MAGENTA_GLAZED_TERRACOTTA: "malva glazurita terakoto"
+  MAGENTA_SHULKER_BOX: "malva shulkerskatolo"
+  MAGENTA_STAINED_GLASS: "malvigita vitro"
+  MAGENTA_STAINED_GLASS_PANE: "malvigita glaco"
+  MAGENTA_TERRACOTTA: "malva terakoto"
+  MAGENTA_WOOL: "malva lano"
+  MAGMA_BLOCK: "magma bloko"
+  MANGROVE_BUTTON: "mangla butono"
+  MANGROVE_DOOR: "mangla pordo"
+  MANGROVE_FENCE: "mangla barilo"
+  MANGROVE_FENCE_GATE: "mangla barilpordo"
+  MANGROVE_HANGING_SIGN: "mangla elpendaĵo"
+  MANGROVE_LEAVES: "mangla foliaro"
+  MANGROVE_LOG: "mangla ŝtipo"
+  MANGROVE_PLANKS: "mangla tabularo"
+  MANGROVE_PRESSURE_PLATE: "mangla premplato"
+  MANGROVE_PROPAGULE: "mangla propagero"
+  MANGROVE_ROOTS: "mangla radikaro"
+  MANGROVE_SIGN: "mangla ŝildeto"
+  MANGROVE_SLAB: "mangla ŝtupo"
+  MANGROVE_STAIRS: "mangla ŝtuparo"
+  MANGROVE_TRAPDOOR: "mangla klappordo"
+  MANGROVE_WALL_HANGING_SIGN: "mangla surmura elpendaĵo"
+  MANGROVE_WALL_SIGN: "mangla surmura ŝildeto"
+  MANGROVE_WOOD: "mangla ligno"
+  MEDIUM_AMETHYST_BUD: "mezgranda ametista burĝono"
+  MELON: "akvomelono"
+  MELON_STEM: "akvomelona tigo"
+  MOSS_BLOCK: "muska bloko"
+  MOSS_CARPET: "muska tapiŝo"
+  MOSSY_COBBLESTONE: "muska pavimŝtono"
+  MOSSY_COBBLESTONE_SLAB: "muska pavimŝtona ŝtupo"
+  MOSSY_COBBLESTONE_STAIRS: "muska pavimŝtona ŝtuparo"
+  MOSSY_COBBLESTONE_WALL: "muska pavimŝtona muro"
+  MOSSY_STONE_BRICK_SLAB: "muska ŝtonbrika ŝtupo"
+  MOSSY_STONE_BRICK_STAIRS: "muska ŝtonbrika ŝtuparo"
+  MOSSY_STONE_BRICK_WALL: "muska ŝtonbrika muro"
+  MOSSY_STONE_BRICKS: "muska ŝtona brikaro"
+  MOVING_PISTON: "movita bloko"
+  MUD: "fango"
+  MUD_BRICK_SLAB: "fangobrika ŝtupo"
+  MUD_BRICK_STAIRS: "fangobrika ŝtuparo"
+  MUD_BRICK_WALL: "fangobrika muro"
+  MUD_BRICKS: "fanga brikaro"
+  MUDDY_MANGROVE_ROOTS: "fango kun manglaj radikoj"
+  MUSHROOM_STEM: "fungstipo"
+  MYCELIUM: "micelio"
+  NETHER_BRICK_FENCE: "netherbrika barilo"
+  NETHER_BRICK_SLAB: "netherbrika ŝtupo"
+  NETHER_BRICK_STAIRS: "netherbrika ŝtuparo"
+  NETHER_BRICK_WALL: "netherbrika muro"
+  NETHER_BRICKS: "nethera brikaro"
+  NETHER_GOLD_ORE: "nethera ora erco"
+  NETHER_PORTAL: "netherportalo"
+  NETHER_QUARTZ_ORE: "kvarca erco"
+  NETHER_SPROUTS: "nethera ŝoso"
+  NETHER_WART: "nethera veruko"
+  NETHER_WART_BLOCK: "netherveruka bloko"
+  NETHERITE_BLOCK: "netherite’a bloko"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "notbloko"
+  OAK_BUTTON: "kverka butono"
+  OAK_DOOR: "kverka pordo"
+  OAK_FENCE: "kverka barilo"
+  OAK_FENCE_GATE: "kverka barilpordo"
+  OAK_HANGING_SIGN: "kverka elpendaĵo"
+  OAK_LEAVES: "kverka foliaro"
+  OAK_LOG: "kverka ŝtipo"
+  OAK_PLANKS: "kverka tabularo"
+  OAK_PRESSURE_PLATE: "kverka premplato"
+  OAK_SAPLING: "kverkido"
+  OAK_SIGN: "kverka ŝildeto"
+  OAK_SLAB: "kverka ŝtupo"
+  OAK_STAIRS: "kverka ŝtuparo"
+  OAK_TRAPDOOR: "kverka klappordo"
+  OAK_WALL_HANGING_SIGN: "kverka surmura elpendaĵo"
+  OAK_WALL_SIGN: "kverka surmura ŝildeto"
+  OAK_WOOD: "kverka ligno"
+  OBSERVER: "observilo"
+  OBSIDIAN: "obsidiano"
+  OCHRE_FROGLIGHT: "okra ranterno"
+  OMINOUS_BANNER: "malbonaŭgura standardo"
+  ORANGE_BANNER: "oranĝkolora standardo"
+  ORANGE_BED: "oranĝkolora lito"
+  ORANGE_CANDLE: "oranĝkolora kandelo"
+  ORANGE_CANDLE_CAKE: "torto kun oranĝkolora kandelo"
+  ORANGE_CARPET: "oranĝkolora tapiŝo"
+  ORANGE_CONCRETE: "oranĝkolora betono"
+  ORANGE_CONCRETE_POWDER: "oranĝkolora cemento"
+  ORANGE_GLAZED_TERRACOTTA: "oranĝkolora glazurita terakoto"
+  ORANGE_SHULKER_BOX: "oranĝkolora shulkerskatolo"
+  ORANGE_STAINED_GLASS: "oranĝkolorigita vitro"
+  ORANGE_STAINED_GLASS_PANE: "oranĝkolorigita glaco"
+  ORANGE_TERRACOTTA: "oranĝkolora terakoto"
+  ORANGE_TULIP: "oranĝkolora tulipo"
+  ORANGE_WOOL: "oranĝkolora lano"
+  OXEYE_DAISY: "lekanto"
+  OXIDIZED_CHISELED_COPPER: "verdigrega ĉizita kupro"
+  OXIDIZED_COPPER: "verdigrega kupro"
+  OXIDIZED_COPPER_BULB: "verdigrega kupra ampolo"
+  OXIDIZED_COPPER_DOOR: "verdigrega kupra pordo"
+  OXIDIZED_COPPER_GRATE: "verdigrega kupra krado"
+  OXIDIZED_COPPER_TRAPDOOR: "verdigrega kupra klappordo"
+  OXIDIZED_CUT_COPPER: "verdigrega tranĉita kupro"
+  OXIDIZED_CUT_COPPER_SLAB: "verdigrega tranĉita kupra ŝtupo"
+  OXIDIZED_CUT_COPPER_STAIRS: "verdigrega tranĉita kupra ŝtuparo"
+  PACKED_ICE: "fortika glacio"
+  PACKED_MUD: "fortika fango"
+  PEARLESCENT_FROGLIGHT: "perlamota ranterno"
+  PEONY: "peonio"
+  PETRIFIED_OAK_SLAB: "ŝtoniĝinta kverka ŝtupo"
+  PIGLIN_HEAD: "kapo de piglin"
+  PIGLIN_WALL_HEAD: "surmura kapo de piglin"
+  PINK_BANNER: "rozkolora standardo"
+  PINK_BED: "roza lito"
+  PINK_CANDLE: "rozkolora kandelo"
+  PINK_CANDLE_CAKE: "torto kun rozkolora kandelo"
+  PINK_CARPET: "rozkolora tapiŝo"
+  PINK_CONCRETE: "rozkolora betono"
+  PINK_CONCRETE_POWDER: "rozkolora cemento"
+  PINK_GLAZED_TERRACOTTA: "rozkolora glazurita terakoto"
+  PINK_PETALS: "sakuraj floretoj"
+  PINK_SHULKER_BOX: "rozkolora shulkerskatolo"
+  PINK_STAINED_GLASS: "rozkolorigita vitro"
+  PINK_STAINED_GLASS_PANE: "rozkolorigita glaco"
+  PINK_TERRACOTTA: "rozkolora terakoto"
+  PINK_TULIP: "rozkolora tulipo"
+  PINK_WOOL: "rozkolora lano"
+  PISTON: "piŝto"
+  PISTON_HEAD: "piŝtokapo"
+  PITCHER_CROP: "kruĉenia ĝermo"
+  PITCHER_PLANT: "kruĉenia planto"
+  PLAYER_HEAD: "kapo de ludanto"
+  PLAYER_HEAD_NAMED: "kapo de %s"
+  PLAYER_WALL_HEAD: "surmura kapo de ludanto"
+  PODZOL: "podzolo"
+  POINTED_DRIPSTONE: "pinta gutŝtono"
+  POLISHED_ANDESITE: "polurita andezito"
+  POLISHED_ANDESITE_SLAB: "polurita andezita ŝtupo"
+  POLISHED_ANDESITE_STAIRS: "polurita andezita ŝtuparo"
+  POLISHED_BASALT: "polurita bazalto"
+  POLISHED_BLACKSTONE: "polurita nigroŝtono"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "polurita nigroŝtonbrika ŝtupo"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "polurita nigroŝtonbrika ŝtuparo"
+  POLISHED_BLACKSTONE_BRICK_WALL: "polurita nigroŝtonbrika muro"
+  POLISHED_BLACKSTONE_BRICKS: "polurita nigroŝtona brikaro"
+  POLISHED_BLACKSTONE_BUTTON: "polurita nigroŝtona butono"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "polurita nigroŝtona premplato"
+  POLISHED_BLACKSTONE_SLAB: "polurita nigroŝtona ŝtupo"
+  POLISHED_BLACKSTONE_STAIRS: "polurita nigroŝtona ŝtuparo"
+  POLISHED_BLACKSTONE_WALL: "polurita nigroŝtona muro"
+  POLISHED_DEEPSLATE: "polurita ardezo"
+  POLISHED_DEEPSLATE_SLAB: "polurita ardeza ŝtupo"
+  POLISHED_DEEPSLATE_STAIRS: "polurita ardeza ŝtuparo"
+  POLISHED_DEEPSLATE_WALL: "polurita ardeza muro"
+  POLISHED_DIORITE: "polurita diorito"
+  POLISHED_DIORITE_SLAB: "polurita diorita ŝtupo"
+  POLISHED_DIORITE_STAIRS: "polurita diorita ŝtuparo"
+  POLISHED_GRANITE: "polurita granito"
+  POLISHED_GRANITE_SLAB: "polurita granita ŝtupo"
+  POLISHED_GRANITE_STAIRS: "polurita granita ŝtuparo"
+  POLISHED_TUFF: "polurita tofo"
+  POLISHED_TUFF_SLAB: "polurita tofa ŝtupo"
+  POLISHED_TUFF_STAIRS: "polurita tofa ŝtuparo"
+  POLISHED_TUFF_WALL: "polurita tofa muro"
+  POPPY: "papaveto"
+  POTATOES: "terpomoj"
+  POTTED_ACACIA_SAPLING: "akaciido en florpoto"
+  POTTED_ALLIUM: "aliumo en florpoto"
+  POTTED_AZALEA_BUSH: "azaleo en florpoto"
+  POTTED_AZURE_BLUET: "blua houstonio en florpoto"
+  POTTED_BAMBOO: "bambuo en florpoto"
+  POTTED_BIRCH_SAPLING: "betulido en florpoto"
+  POTTED_BLUE_ORCHID: "blua orkido en florpoto"
+  POTTED_BROWN_MUSHROOM: "boleto en florpoto"
+  POTTED_CACTUS: "kakto en florpoto"
+  POTTED_CHERRY_SAPLING: "sakurido en florpoto"
+  POTTED_CORNFLOWER: "cejano en florpoto"
+  POTTED_CRIMSON_FUNGUS: "skarlata fungo en florpoto"
+  POTTED_CRIMSON_ROOTS: "skarlata radikaro en florpoto"
+  POTTED_DANDELION: "leontodo en florpoto"
+  POTTED_DARK_OAK_SAPLING: "malhelkverkido en florpoto"
+  POTTED_DEAD_BUSH: "mortinta arbusto en florpoto"
+  POTTED_FERN: "filiko en florpoto"
+  POTTED_FLOWERING_AZALEA_BUSH: "floranta azaleo en florpoto"
+  POTTED_JUNGLE_SAPLING: "ĝangalarbido en florpoto"
+  POTTED_LILY_OF_THE_VALLEY: "konvalo en florpoto"
+  POTTED_MANGROVE_PROPAGULE: "mangla propagero en florpoto"
+  POTTED_OAK_SAPLING: "kverkido en florpoto"
+  POTTED_ORANGE_TULIP: "oranĝkolora tulipo en florpoto"
+  POTTED_OXEYE_DAISY: "lekanto en florpoto"
+  POTTED_PINK_TULIP: "rozkolora tulipo en florpoto"
+  POTTED_POPPY: "papaveto en florpoto"
+  POTTED_RED_MUSHROOM: "muŝfungo en florpoto"
+  POTTED_RED_TULIP: "ruĝa tulipo en florpoto"
+  POTTED_SPRUCE_SAPLING: "piceido en florpoto"
+  POTTED_TORCHFLOWER: "torĉfloro en florpoto"
+  POTTED_WARPED_FUNGUS: "torda fungo en florpoto"
+  POTTED_WARPED_ROOTS: "torda radikaro en florpoto"
+  POTTED_WHITE_TULIP: "blanka tulipo en florpoto"
+  POTTED_WITHER_ROSE: "witherrozo en florpoto"
+  POWDER_SNOW: "pulvora neĝo"
+  POWDER_SNOW_CAULDRON: "kaldrono da pulvora neĝo"
+  POWERED_RAIL: "elektra relo"
+  PRISMARINE: "prismarino"
+  PRISMARINE_BRICK_SLAB: "prismarinbrika ŝtupo"
+  PRISMARINE_BRICK_STAIRS: "prismarinbrika ŝtuparo"
+  PRISMARINE_BRICKS: "prismarina brikaro"
+  PRISMARINE_SLAB: "prismarina ŝtupo"
+  PRISMARINE_STAIRS: "prismarina ŝtuparo"
+  PRISMARINE_WALL: "prismarina muro"
+  PUMPKIN: "kukurbo"
+  PUMPKIN_STEM: "kukurba tigo"
+  PURPLE_BANNER: "violkolora standardo"
+  PURPLE_BED: "viola lito"
+  PURPLE_CANDLE: "violkolora kandelo"
+  PURPLE_CANDLE_CAKE: "torto kun violkolora kandelo"
+  PURPLE_CARPET: "violkolora tapiŝo"
+  PURPLE_CONCRETE: "purpura betono"
+  PURPLE_CONCRETE_POWDER: "violkolora cemento"
+  PURPLE_GLAZED_TERRACOTTA: "violkolora glazurita terakoto"
+  PURPLE_SHULKER_BOX: "violkolora shulkerskatolo"
+  PURPLE_STAINED_GLASS: "violkolorigita vitro"
+  PURPLE_STAINED_GLASS_PANE: "violkolorigita glaco"
+  PURPLE_TERRACOTTA: "violkolora terakoto"
+  PURPLE_WOOL: "violkolora lano"
+  PURPUR_BLOCK: "purpura bloko"
+  PURPUR_PILLAR: "purpura paliso"
+  PURPUR_SLAB: "purpura ŝtupo"
+  PURPUR_STAIRS: "purpura ŝtuparo"
+  QUARTZ_BLOCK: "kvarca bloko"
+  QUARTZ_BRICKS: "kvarca brikaro"
+  QUARTZ_PILLAR: "kvarca paliso"
+  QUARTZ_SLAB: "kvarca ŝtupo"
+  QUARTZ_STAIRS: "kvarca ŝtuparo"
+  RAIL: "relo"
+  RAW_COPPER_BLOCK: "krudkupra bloko"
+  RAW_GOLD_BLOCK: "krudora bloko"
+  RAW_IRON_BLOCK: "krudfera bloko"
+  RED_BANNER: "ruĝa standardo"
+  RED_BED: "ruĝa lito"
+  RED_CANDLE: "ruĝa kandelo"
+  RED_CANDLE_CAKE: "torto kun ruĝa kandelo"
+  RED_CARPET: "ruĝa tapiŝo"
+  RED_CONCRETE: "ruĝa betono"
+  RED_CONCRETE_POWDER: "ruĝa cemento"
+  RED_GLAZED_TERRACOTTA: "ruĝa glazurita terakoto"
+  RED_MUSHROOM: "muŝfungo"
+  RED_MUSHROOM_BLOCK: "muŝfunga bloko"
+  RED_NETHER_BRICK_SLAB: "ruĝa netherbrika ŝtupo"
+  RED_NETHER_BRICK_STAIRS: "ruĝa netherbrika ŝtuparo"
+  RED_NETHER_BRICK_WALL: "ruĝa netherbrika muro"
+  RED_NETHER_BRICKS: "ruĝa nethera brikaro"
+  RED_SAND: "ruĝa sablo"
+  RED_SANDSTONE: "ruĝa sabloŝtono"
+  RED_SANDSTONE_SLAB: "ruĝa sabloŝtona ŝtupo"
+  RED_SANDSTONE_STAIRS: "ruĝa sabloŝtona ŝtuparo"
+  RED_SANDSTONE_WALL: "ruĝa sabloŝtona muro"
+  RED_SHULKER_BOX: "ruĝa shulkerskatolo"
+  RED_STAINED_GLASS: "ruĝigita vitro"
+  RED_STAINED_GLASS_PANE: "ruĝigita glaco"
+  RED_TERRACOTTA: "ruĝa terakoto"
+  RED_TULIP: "ruĝa tulipo"
+  RED_WOOL: "ruĝa lano"
+  REDSTONE_BLOCK: "redstone’a bloko"
+  REDSTONE_LAMP: "redstone’a lampo"
+  REDSTONE_ORE: "redstone’a erco"
+  REDSTONE_TORCH: "redstone’a torĉo"
+  REDSTONE_WALL_TORCH: "redstone’a surmura torĉo"
+  REDSTONE_WIRE: "redstone’a pado"
+  REINFORCED_DEEPSLATE: "armita ardezo"
+  REPEATER: "redstone’a ripetilo"
+  REPEATING_COMMAND_BLOCK: "ripeta komanda bloko"
+  RESPAWN_ANCHOR: "reaperankro"
+  ROOTED_DIRT: "radika tero"
+  ROSE_BUSH: "rozarbusto"
+  SAND: "sablo"
+  SANDSTONE: "sabloŝtono"
+  SANDSTONE_SLAB: "sabloŝtona ŝtupo"
+  SANDSTONE_STAIRS: "sabloŝtona ŝtuparo"
+  SANDSTONE_WALL: "sabloŝtona muro"
+  SCAFFOLDING: "skafaldo"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculka katalizilo"
+  SCULK_SENSOR: "sculka sensoro"
+  SCULK_SHRIEKER: "sculka kriilo"
+  SCULK_VEIN: "sculka vejnaro"
+  SEA_LANTERN: "marlanterno"
+  SEA_PICKLE: "holoturio"
+  SEAGRASS: "marherbo"
+  SET_SPAWN: "reaperejo ŝanĝiĝis"
+  SHORT_GRASS: "malalta herbo"
+  SHROOMLIGHT: "lumfungo"
+  SHULKER_BOX: "shulkerskatolo"
+  SKELETON_SKULL: "kranio de skeleto"
+  SKELETON_WALL_SKULL: "surmura kranio de skeleto"
+  SLIME_BLOCK: "mukbloko"
+  SMALL_AMETHYST_BUD: "malgranda ametista burĝono"
+  SMALL_DRIPLEAF: "gutfolieto"
+  SMITHING_TABLE: "fandtablo"
+  SMOKER: "fumilo"
+  SMOOTH_BASALT: "glata bazalto"
+  SMOOTH_QUARTZ: "glata kvarca bloko"
+  SMOOTH_QUARTZ_SLAB: "glata kvarca ŝtupo"
+  SMOOTH_QUARTZ_STAIRS: "glata kvarca ŝtuparo"
+  SMOOTH_RED_SANDSTONE: "glata ruĝa sabloŝtono"
+  SMOOTH_RED_SANDSTONE_SLAB: "glata ruĝa sabloŝtona ŝtupo"
+  SMOOTH_RED_SANDSTONE_STAIRS: "glata ruĝa sabloŝtona ŝtuparo"
+  SMOOTH_SANDSTONE: "glata sabloŝtono"
+  SMOOTH_SANDSTONE_SLAB: "glata sabloŝtona ŝtupo"
+  SMOOTH_SANDSTONE_STAIRS: "glata sabloŝtona ŝtuparo"
+  SMOOTH_STONE: "glata ŝtono"
+  SMOOTH_STONE_SLAB: "glata ŝtona ŝtupo"
+  SNIFFER_EGG: "snuflara ovo"
+  SNOW: "neĝo"
+  SNOW_BLOCK: "neĝa bloko"
+  SOUL_CAMPFIRE: "anima tendarfajro"
+  SOUL_FIRE: "anima fajro"
+  SOUL_LANTERN: "anima lanterno"
+  SOUL_SAND: "animsablo"
+  SOUL_SOIL: "animtero"
+  SOUL_TORCH: "anima torĉo"
+  SOUL_WALL_TORCH: "surmura anima torĉo"
+  SPAWN_NOT_VALID: "vi ne havas hejmliton nek ŝargitan reaperankron aŭ ĝi blokiĝis"
+  SPAWNER: "monstra generilo"
+  SPAWNER_DESC1: "alklakite per aperigovo"
+  SPAWNER_DESC2: "ĝi agordas mobtipon"
+  SPONGE: "spongo"
+  SPORE_BLOSSOM: "sporfloro"
+  SPRUCE_BUTTON: "picea butono"
+  SPRUCE_DOOR: "picea pordo"
+  SPRUCE_FENCE: "picea barilo"
+  SPRUCE_FENCE_GATE: "picea barilpordo"
+  SPRUCE_HANGING_SIGN: "picea elpendaĵo"
+  SPRUCE_LEAVES: "picea foliaro"
+  SPRUCE_LOG: "picea ŝtipo"
+  SPRUCE_PLANKS: "picea tabularo"
+  SPRUCE_PRESSURE_PLATE: "picea premplato"
+  SPRUCE_SAPLING: "piceido"
+  SPRUCE_SIGN: "picea ŝildeto"
+  SPRUCE_SLAB: "picea ŝtupo"
+  SPRUCE_STAIRS: "picea ŝtuparo"
+  SPRUCE_TRAPDOOR: "picea klappordo"
+  SPRUCE_WALL_HANGING_SIGN: "picea surmura elpendaĵo"
+  SPRUCE_WALL_SIGN: "picea surmura ŝildeto"
+  SPRUCE_WOOD: "picea ligno"
+  STICKY_PISTON: "adhera piŝto"
+  STONE: "ŝtono"
+  STONE_BRICK_SLAB: "ŝtonbrika ŝtupo"
+  STONE_BRICK_STAIRS: "ŝtonbrika ŝtuparo"
+  STONE_BRICK_WALL: "ŝtonbrika muro"
+  STONE_BRICKS: "ŝtona brikaro"
+  STONE_BUTTON: "ŝtona butono"
+  STONE_PRESSURE_PLATE: "ŝtona premplato"
+  STONE_SLAB: "ŝtona ŝtupo"
+  STONE_STAIRS: "ŝtona ŝtuparo"
+  STONECUTTER: "ŝtontranĉilo"
+  STRIPPED_ACACIA_LOG: "senŝela akacia ŝtipo"
+  STRIPPED_ACACIA_WOOD: "senŝela akacia ligno"
+  STRIPPED_BAMBOO_BLOCK: "senŝela bambua bloko"
+  STRIPPED_BIRCH_LOG: "senŝela betula ŝtipo"
+  STRIPPED_BIRCH_WOOD: "senŝela betula ligno"
+  STRIPPED_CHERRY_LOG: "senŝela sakura ŝtipo"
+  STRIPPED_CHERRY_WOOD: "senŝela sakura ligno"
+  STRIPPED_CRIMSON_HYPHAE: "senŝela skarlata hifaro"
+  STRIPPED_CRIMSON_STEM: "senŝela skarlata stipo"
+  STRIPPED_DARK_OAK_LOG: "senŝela malhelkverka ŝtipo"
+  STRIPPED_DARK_OAK_WOOD: "senŝela malhelkverka ligno"
+  STRIPPED_JUNGLE_LOG: "senŝela ĝangalarba ŝtipo"
+  STRIPPED_JUNGLE_WOOD: "senŝela ĝangalarba ligno"
+  STRIPPED_MANGROVE_LOG: "senŝela mangla ŝtipo"
+  STRIPPED_MANGROVE_WOOD: "senŝela mangla ligno"
+  STRIPPED_OAK_LOG: "senŝela kverka ŝtipo"
+  STRIPPED_OAK_WOOD: "senŝela kverka ligno"
+  STRIPPED_SPRUCE_LOG: "senŝela picea ŝtipo"
+  STRIPPED_SPRUCE_WOOD: "senŝela picea ligno"
+  STRIPPED_WARPED_HYPHAE: "senŝela torda hifaro"
+  STRIPPED_WARPED_STEM: "senŝela torda stipo"
+  STRUCTURE_BLOCK: "strukturbloko"
+  STRUCTURE_VOID: "strukturvakuo"
+  SUGAR_CANE: "sukerkano"
+  SUNFLOWER: "sunfloro"
+  SUSPICIOUS_GRAVEL: "suspektinda gruzo"
+  SUSPICIOUS_SAND: "suspektinda sablo"
+  SWEET_BERRY_BUSH: "dolĉbera arbusto"
+  TALL_GRASS: "alta herbo"
+  TALL_SEAGRASS: "alta marherbo"
+  TARGET: "pafcelo"
+  TERRACOTTA: "terakoto"
+  TINTED_GLASS: "malluma vitro"
+  TNT: "tnt"
+  TORCH: "torĉo"
+  TORCHFLOWER: "torĉfloro"
+  TORCHFLOWER_CROP: "torĉflora ĝermo"
+  TRAPPED_CHEST: "baskulkofro"
+  TRIAL_SPAWNER: "defia generilo"
+  TRIPWIRE: "insiddrato"
+  TRIPWIRE_HOOK: "hoko por insiddrato"
+  TUBE_CORAL: "tubokoralo"
+  TUBE_CORAL_BLOCK: "bloko tubokorala"
+  TUBE_CORAL_FAN: "ventumilo tubokorala"
+  TUBE_CORAL_WALL_FAN: "surmura ventumilo tubokorala"
+  TUFF: "tofo"
+  TUFF_BRICK_SLAB: "tofbrika ŝtupo"
+  TUFF_BRICK_STAIRS: "tofbrika ŝtuparo"
+  TUFF_BRICK_WALL: "tofbrika muro"
+  TUFF_BRICKS: "tofa brikaro"
+  TUFF_SLAB: "tofa ŝtupo"
+  TUFF_STAIRS: "tofa ŝtuparo"
+  TUFF_WALL: "tofa muro"
+  TURTLE_EGG: "testuda ovo"
+  TWISTING_VINES: "serpentanta hedero"
+  TWISTING_VINES_PLANT: "planto de serpentanta hedero"
+  VERDANT_FROGLIGHT: "malakita ranterno"
+  VINE: "liano"
+  VOID_AIR: "vakueja aero"
+  WALL_TORCH: "surmura torĉo"
+  WARPED_BUTTON: "torda butono"
+  WARPED_DOOR: "torda pordo"
+  WARPED_FENCE: "torda barilo"
+  WARPED_FENCE_GATE: "torda barilpordo"
+  WARPED_FUNGUS: "torda fungo"
+  WARPED_HANGING_SIGN: "torda elpendaĵo"
+  WARPED_HYPHAE: "torda hifaro"
+  WARPED_NYLIUM: "torda nilio"
+  WARPED_PLANKS: "torda tabularo"
+  WARPED_PRESSURE_PLATE: "torda premplato"
+  WARPED_ROOTS: "torda radikaro"
+  WARPED_SIGN: "torda ŝildeto"
+  WARPED_SLAB: "torda ŝtupo"
+  WARPED_STAIRS: "torda ŝtuparo"
+  WARPED_STEM: "torda stipo"
+  WARPED_TRAPDOOR: "torda klappordo"
+  WARPED_WALL_HANGING_SIGN: "torda surmura elpendaĵo"
+  WARPED_WALL_SIGN: "torda surmura ŝildeto"
+  WARPED_WART_BLOCK: "torda netherveruka bloko"
+  WATER: "akvo"
+  WATER_CAULDRON: "kaldrono da akvo"
+  WAXED_CHISELED_COPPER: "vaksita ĉizita kupro"
+  WAXED_COPPER_BLOCK: "vaksita kupra bloko"
+  WAXED_COPPER_BULB: "vaksita kupra ampolo"
+  WAXED_COPPER_DOOR: "vaksita kupra pordo"
+  WAXED_COPPER_GRATE: "vaksita kupra krado"
+  WAXED_COPPER_TRAPDOOR: "vaksita kupra klappordo"
+  WAXED_CUT_COPPER: "vaksita tranĉita kupro"
+  WAXED_CUT_COPPER_SLAB: "vaksita tranĉita kupra ŝtupo"
+  WAXED_CUT_COPPER_STAIRS: "vaksita tranĉita kupra ŝtuparo"
+  WAXED_EXPOSED_CHISELED_COPPER: "vaksita verdigreta ĉizita kupro"
+  WAXED_EXPOSED_COPPER: "vaksita verdigreta kupro"
+  WAXED_EXPOSED_COPPER_BULB: "vaksita verdigreta kupra ampolo"
+  WAXED_EXPOSED_COPPER_DOOR: "vaksita verdigreta kupra pordo"
+  WAXED_EXPOSED_COPPER_GRATE: "vaksita verdigreta kupra krado"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "vaksita verdigreta kupra klappordo"
+  WAXED_EXPOSED_CUT_COPPER: "vaksita verdigreta tranĉita kupro"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "vaksita verdigreta tranĉita kupra ŝtupo"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "vaksita verdigreta tranĉita kupra ŝtuparo"
+  WAXED_OXIDIZED_CHISELED_COPPER: "vaksita verdigrega ĉizita kupro"
+  WAXED_OXIDIZED_COPPER: "vaksita verdigrega kupro"
+  WAXED_OXIDIZED_COPPER_BULB: "vaksita verdigrega kupra ampolo"
+  WAXED_OXIDIZED_COPPER_DOOR: "vaksita verdigrega kupra pordo"
+  WAXED_OXIDIZED_COPPER_GRATE: "vaksita verdigrega kupra krado"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "vaksita verdigrega kupra klappordo"
+  WAXED_OXIDIZED_CUT_COPPER: "vaksita verdigrega tranĉita kupro"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "vaksita verdigrega tranĉita kupra ŝtupo"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "vaksita verdigrega tranĉita kupra ŝtuparo"
+  WAXED_WEATHERED_CHISELED_COPPER: "vaksita verdigra ĉizita kupro"
+  WAXED_WEATHERED_COPPER: "vaksita verdigra kupro"
+  WAXED_WEATHERED_COPPER_BULB: "vaksita verdigra kupra ampolo"
+  WAXED_WEATHERED_COPPER_DOOR: "vaksita verdigra kupra pordo"
+  WAXED_WEATHERED_COPPER_GRATE: "vaksita verdigra kupra krado"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "vaksita verdigra kupra klappordo"
+  WAXED_WEATHERED_CUT_COPPER: "vaksita verdigra tranĉita kupro"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "vaksita verdigra tranĉita kupra ŝtupo"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "vaksita verdigra tranĉita kupra ŝtuparo"
+  WEATHERED_CHISELED_COPPER: "verdigra ĉizita kupro"
+  WEATHERED_COPPER: "verdigra kupro"
+  WEATHERED_COPPER_BULB: "verdigra kupra ampolo"
+  WEATHERED_COPPER_DOOR: "verdigra kupra pordo"
+  WEATHERED_COPPER_GRATE: "verdigra kupra krado"
+  WEATHERED_COPPER_TRAPDOOR: "verdigra kupra klappordo"
+  WEATHERED_CUT_COPPER: "verdigra tranĉita kupro"
+  WEATHERED_CUT_COPPER_SLAB: "verdigra tranĉita kupra ŝtupo"
+  WEATHERED_CUT_COPPER_STAIRS: "verdigra tranĉita kupra ŝtuparo"
+  WEEPING_VINES: "larmanta hedero"
+  WEEPING_VINES_PLANT: "planto de larmanta hedero"
+  WET_SPONGE: "malseka spongo"
+  WHEAT: "tritika semitaĵo"
+  WHITE_BANNER: "blanka standardo"
+  WHITE_BED: "blanka lito"
+  WHITE_CANDLE: "blanka kandelo"
+  WHITE_CANDLE_CAKE: "torto kun blanka kandelo"
+  WHITE_CARPET: "blanka tapiŝo"
+  WHITE_CONCRETE: "blanka betono"
+  WHITE_CONCRETE_POWDER: "blanka cemento"
+  WHITE_GLAZED_TERRACOTTA: "blanka glazurita terakoto"
+  WHITE_SHULKER_BOX: "blanka shulkerskatolo"
+  WHITE_STAINED_GLASS: "blankigita vitro"
+  WHITE_STAINED_GLASS_PANE: "blankigita glaco"
+  WHITE_TERRACOTTA: "blanka terakoto"
+  WHITE_TULIP: "blanka tulipo"
+  WHITE_WOOL: "blanka lano"
+  WITHER_ROSE: "witherrozo"
+  WITHER_SKELETON_SKULL: "kranio de witherskeleto"
+  WITHER_SKELETON_WALL_SKULL: "surmura kranio de witherskeleto"
+  YELLOW_BANNER: "flava standardo"
+  YELLOW_BED: "flava lito"
+  YELLOW_CANDLE: "flava kandelo"
+  YELLOW_CANDLE_CAKE: "torto kun flava kandelo"
+  YELLOW_CARPET: "flava tapiŝo"
+  YELLOW_CONCRETE: "flava betono"
+  YELLOW_CONCRETE_POWDER: "flava cemento"
+  YELLOW_GLAZED_TERRACOTTA: "flava glazurita terakoto"
+  YELLOW_SHULKER_BOX: "flava shulkerskatolo"
+  YELLOW_STAINED_GLASS: "flavigita vitro"
+  YELLOW_STAINED_GLASS_PANE: "flavigita glaco"
+  YELLOW_TERRACOTTA: "flava terakoto"
+  YELLOW_WOOL: "flava lano"
+  ZOMBIE_HEAD: "kapo de zombio"
+  ZOMBIE_WALL_HEAD: "surmura kapo de zombio"
+  ACACIA_BOAT: "akacia boato"
+  ACACIA_CHEST_BOAT: "akacia boato kun kofro"
+  ALLAY_SPAWN_EGG: "aperigovo de mildulo"
+  AMETHYST_SHARD: "fragmento de ametisto"
+  ANGLER_POTTERY_SHARD: "potpeco «fiŝkaptilo»"
+  ANGLER_POTTERY_SHERD: "potpeco «fiŝkaptilo»"
+  APPLE: "pomo"
+  ARCHER_POTTERY_SHARD: "potpeco «pafarko»"
+  ARCHER_POTTERY_SHERD: "potpeco «pafarko»"
+  ARMOR_STAND: "armaĵa tenilo"
+  ARMS_UP_POTTERY_SHARD: "potpeco «manlevo»"
+  ARMS_UP_POTTERY_SHERD: "potpeco «manlevo»"
+  ARROW: "sago"
+  AXOLOTL_BUCKET: "sitelo kun aksolotlo"
+  AXOLOTL_SPAWN_EGG: "aperigovo de aksolotlo"
+  BAKED_POTATO: "bakita terpomo"
+  BAMBOO_CHEST_RAFT: "bambua floso kun kofro"
+  BAMBOO_RAFT: "bambua floso"
+  BAT_SPAWN_EGG: "aperigovo de vesperto"
+  BEE_SPAWN_EGG: "aperigovo de abelo"
+  BEEF: "kruda bovaĵo"
+  BEETROOT: "ruĝbeto"
+  BEETROOT_SEEDS: "ruĝbetaj semoj"
+  BEETROOT_SOUP: "barĉo"
+  BIRCH_BOAT: "betula boato"
+  BIRCH_CHEST_BOAT: "betula boato kun kofro"
+  BLACK_DYE: "nigra tinkturo"
+  BLADE_POTTERY_SHARD: "potpeco «klingo»"
+  BLADE_POTTERY_SHERD: "potpeco «klingo»"
+  BLAZE_POWDER: "incendia pulvoro"
+  BLAZE_ROD: "incendia vergo"
+  BLAZE_SPAWN_EGG: "aperigovo de incendio"
+  BLUE_DYE: "blua tinkturo"
+  BONE: "osto"
+  BONE_MEAL: "osta faruno"
+  BOOK: "libro"
+  BOW: "pafarko"
+  BOWL: "bovlo"
+  BREAD: "pano"
+  BREEZE_SPAWN_EGG: "aperigovo de uragano"
+  BREWER_POTTERY_SHARD: "potpeco «eliksiro»"
+  BREWER_POTTERY_SHERD: "potpeco «eliksiro»"
+  BRICK: "briko"
+  BROWN_DYE: "bruna tinkturo"
+  BRUSH: "broso"
+  BUCKET: "sitelo"
+  BUNDLE: "sako"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "potpeco «flamo»"
+  BURN_POTTERY_SHERD: "potpeco «flamo»"
+  CAMEL_SPAWN_EGG: "aperigovo de kamelo"
+  CARROT: "karoto"
+  CARROT_ON_A_STICK: "fiŝkaptilo kun karoto"
+  CAT_SPAWN_EGG: "aperigovo de kato"
+  CAVE_SPIDER_SPAWN_EGG: "aperigovo de kavernaraneo"
+  CHAINMAIL_BOOTS: "ĉenaj botoj"
+  CHAINMAIL_CHESTPLATE: "ĉena kiraso"
+  CHAINMAIL_HELMET: "ĉena kasko"
+  CHAINMAIL_LEGGINGS: "ĉenaj kruringoj"
+  CHARCOAL: "lignokarbo"
+  CHERRY_BOAT: "sakura boato"
+  CHERRY_CHEST_BOAT: "sakura boato kun kofro"
+  CHEST_MINECART: "vagoneto kun kofro"
+  CHICKEN: "kruda kokaĵo"
+  CHICKEN_SPAWN_EGG: "aperigovo de koko"
+  CHORUS_FRUIT: "refrena frukto"
+  CLAY_BALL: "argilbulo"
+  CLOCK: "horloĝo"
+  COAL: "karbo"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  COCOA_BEANS: "kakao"
+  COD: "kruda moruo"
+  COD_BUCKET: "sitelo kun moruo"
+  COD_SPAWN_EGG: "aperigovo de moruo"
+  COMMAND_BLOCK_MINECART: "vagoneto kun komanda bloko"
+  COMPASS: "kompaso"
+  COOKED_BEEF: "bifsteko"
+  COOKED_CHICKEN: "kuirita kokaĵo"
+  COOKED_COD: "kuirita moruo"
+  COOKED_MUTTON: "kuirita ŝafaĵo"
+  COOKED_PORKCHOP: "kuirita porkaĵo"
+  COOKED_RABBIT: "kuirita kuniklaĵo"
+  COOKED_SALMON: "kuirita salmo"
+  COOKIE: "kekso"
+  COPPER_INGOT: "kupra ingoto"
+  COW_SPAWN_EGG: "aperigovo de bovo"
+  CREEPER_BANNER_PATTERN: "standarda ŝablono"
+  CREEPER_BANNER_PATTERN_DESC: "danĝero"
+  CREEPER_SPAWN_EGG: "aperigovo de creeper"
+  CROSSBOW: "arbalesto"
+  CROSSBOW_PROJECTILE: "pafaĵo:"
+  CYAN_DYE: "turkisa tinkturo"
+  DANGER_POTTERY_SHARD: "potpeco «danĝero»"
+  DANGER_POTTERY_SHERD: "potpeco «danĝero»"
+  DARK_OAK_BOAT: "malhelkverka boato"
+  DARK_OAK_CHEST_BOAT: "malhelkverka boato kun kofro"
+  DEBUG_STICK: "sencimiga bastono"
+  DEBUG_STICK_EMPTY: "%s ne havas proprietojn"
+  DEBUG_STICK_SELECT: "vi elektis «%s» (%s)"
+  DEBUG_STICK_UPDATE: "«%s» al %s"
+  DIAMOND: "diamanto"
+  DIAMOND_AXE: "diamanta hakilo"
+  DIAMOND_BOOTS: "diamantaj botoj"
+  DIAMOND_CHESTPLATE: "diamanta kiraso"
+  DIAMOND_HELMET: "diamanta kasko"
+  DIAMOND_HOE: "diamanta sarkilo"
+  DIAMOND_HORSE_ARMOR: "diamanta ĉevala armaĵo"
+  DIAMOND_LEGGINGS: "diamantaj kruringoj"
+  DIAMOND_PICKAXE: "diamanta pioĉo"
+  DIAMOND_SHOVEL: "diamanta fosilo"
+  DIAMOND_SWORD: "diamanta glavo"
+  DISC_FRAGMENT_5: "diska peco"
+  DISC_FRAGMENT_5_DESC: "sondisko — 5"
+  DOLPHIN_SPAWN_EGG: "aperigovo de delfeno"
+  DONKEY_SPAWN_EGG: "aperigovo de azeno"
+  DRAGON_BREATH: "draka spiraĵo"
+  DRIED_KELP: "sekigita algo"
+  DROWNED_SPAWN_EGG: "aperigovo de droninto"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  ECHO_SHARD: "eĥosplito"
+  EGG: "ovo"
+  ELDER_GUARDIAN_SPAWN_EGG: "aperigovo de pragardisto"
+  ELYTRA: "elitroj"
+  EMERALD: "smeraldo"
+  ENCHANTED_BOOK: "sorĉita libro"
+  ENCHANTED_GOLDEN_APPLE: "sorĉita ora pomo"
+  END_CRYSTAL: "endkristalo"
+  ENDER_DRAGON_SPAWN_EGG: "aperigovo de enderdrako"
+  ENDER_EYE: "enderokulo"
+  ENDER_PEARL: "enderperlo"
+  ENDERMAN_SPAWN_EGG: "aperigovo de enderman"
+  ENDERMITE_SPAWN_EGG: "aperigovo de endermite"
+  EVOKER_SPAWN_EGG: "aperigovo de alvokisto"
+  EXPERIENCE_BOTTLE: "botelo de sorĉado"
+  EXPLORER_POTTERY_SHARD: "potpeco «aventuro»"
+  EXPLORER_POTTERY_SHERD: "potpeco «aventuro»"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  FEATHER: "plumo"
+  FERMENTED_SPIDER_EYE: "fermentita okulo de araneo"
+  FILLED_MAP: "mapo"
+  FIRE_CHARGE: "fajrobulo"
+  FIREWORK_ROCKET: "artfajraĵa raketo"
+  FIREWORK_ROCKET_FLIGHT: "flugdaŭro:"
+  FIREWORK_STAR: "artfajraĵa stelo"
+  FIREWORK_STAR_BLACK: "nigra"
+  FIREWORK_STAR_BLUE: "blua"
+  FIREWORK_STAR_BROWN: "bruna"
+  FIREWORK_STAR_CUSTOM_COLOR: "agordita"
+  FIREWORK_STAR_CYAN: "turkisa"
+  FIREWORK_STAR_FADE_TO: "foriĝas je"
+  FIREWORK_STAR_FLICKER: "sparko"
+  FIREWORK_STAR_GRAY: "griza"
+  FIREWORK_STAR_GREEN: "verda"
+  FIREWORK_STAR_LIGHT_BLUE: "helblua"
+  FIREWORK_STAR_LIGHT_GRAY: "helgriza"
+  FIREWORK_STAR_LIME: "helverda"
+  FIREWORK_STAR_MAGENTA: "malva"
+  FIREWORK_STAR_ORANGE: "oranĝkolora"
+  FIREWORK_STAR_PINK: "rozkolora"
+  FIREWORK_STAR_PURPLE: "violkolora"
+  FIREWORK_STAR_RED: "ruĝa"
+  FIREWORK_STAR_SHAPE: "nekonata formo"
+  FIREWORK_STAR_SHAPE_BURST: "splitiĝo"
+  FIREWORK_STAR_SHAPE_CREEPER: "creepera formo"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "granda bulo"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "malgranda bulo"
+  FIREWORK_STAR_SHAPE_STAR: "stela formo"
+  FIREWORK_STAR_TRAIL: "poststrio"
+  FIREWORK_STAR_WHITE: "blanka"
+  FIREWORK_STAR_YELLOW: "flava"
+  FISHING_ROD: "fiŝkaptilo"
+  FLINT: "siliko"
+  FLINT_AND_STEEL: "fajrilo"
+  FLOWER_BANNER_PATTERN: "standarda ŝablono"
+  FLOWER_BANNER_PATTERN_DESC: "lilio"
+  FOX_SPAWN_EGG: "aperigovo de vulpo"
+  FRIEND_POTTERY_SHARD: "potpeco «samideano»"
+  FRIEND_POTTERY_SHERD: "potpeco «samideano»"
+  FROG_SPAWN_EGG: "aperigovo de rano"
+  FURNACE_MINECART: "vagoneto kun forno"
+  GHAST_SPAWN_EGG: "aperigovo de ghast"
+  GHAST_TEAR: "ghasta larmo"
+  GLASS_BOTTLE: "vitra botelo"
+  GLISTERING_MELON_SLICE: "tranĉaĵo da brila akvomelono"
+  GLOBE_BANNER_PATTERN: "standarda ŝablono"
+  GLOBE_BANNER_PATTERN_DESC: "terkubo"
+  GLOW_BERRIES: "lumberoj"
+  GLOW_INK_SAC: "sako da luminko"
+  GLOW_ITEM_FRAME: "luma kadro"
+  GLOW_SQUID_SPAWN_EGG: "aperigovo de lumkalmaro"
+  GLOWSTONE_DUST: "lumpolvo"
+  GOAT_HORN: "kapra korno"
+  GOAT_SPAWN_EGG: "aperigovo de kapro"
+  GOLD_INGOT: "ora ingoto"
+  GOLD_NUGGET: "orobulo"
+  GOLDEN_APPLE: "ora pomo"
+  GOLDEN_AXE: "ora hakilo"
+  GOLDEN_BOOTS: "oraj botoj"
+  GOLDEN_CARROT: "ora karoto"
+  GOLDEN_CHESTPLATE: "ora kiraso"
+  GOLDEN_HELMET: "ora kasko"
+  GOLDEN_HOE: "ora sarkilo"
+  GOLDEN_HORSE_ARMOR: "ora ĉevala armaĵo"
+  GOLDEN_LEGGINGS: "oraj kruringoj"
+  GOLDEN_PICKAXE: "ora pioĉo"
+  GOLDEN_SHOVEL: "ora fosilo"
+  GOLDEN_SWORD: "ora glavo"
+  GRAY_DYE: "griza tinkturo"
+  GREEN_DYE: "verda tinkturo"
+  GUARDIAN_SPAWN_EGG: "aperigovo de gardisto"
+  GUNPOWDER: "pulvo"
+  HEART_OF_THE_SEA: "kerno de la maro"
+  HEART_POTTERY_SHARD: "potpeco «koro»"
+  HEART_POTTERY_SHERD: "potpeco «koro»"
+  HEARTBREAK_POTTERY_SHARD: "potpeco «korkrevo»"
+  HEARTBREAK_POTTERY_SHERD: "potpeco «korkrevo»"
+  HOGLIN_SPAWN_EGG: "aperigovo de hoglin"
+  HONEY_BOTTLE: "botelo da mielo"
+  HONEYCOMB: "miela ĉelaro"
+  HOPPER_MINECART: "vagoneto kun funelo"
+  HORSE_SPAWN_EGG: "aperigovo de ĉevalo"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  HOWL_POTTERY_SHARD: "potpeco «hurlo»"
+  HOWL_POTTERY_SHERD: "potpeco «hurlo»"
+  HUSK_SPAWN_EGG: "aperigovo de sekulo"
+  INK_SAC: "inksako"
+  IRON_AXE: "fera hakilo"
+  IRON_BOOTS: "feraj botoj"
+  IRON_CHESTPLATE: "fera kiraso"
+  IRON_GOLEM_SPAWN_EGG: "aperigovo de fergolemo"
+  IRON_HELMET: "fera kasko"
+  IRON_HOE: "fera sarkilo"
+  IRON_HORSE_ARMOR: "fera ĉevala armaĵo"
+  IRON_INGOT: "fera ingoto"
+  IRON_LEGGINGS: "feraj kruringoj"
+  IRON_NUGGET: "ferobulo"
+  IRON_PICKAXE: "fera pioĉo"
+  IRON_SHOVEL: "fera fosilo"
+  IRON_SWORD: "fera glavo"
+  ITEM_FRAME: "kadro"
+  JUNGLE_BOAT: "ĝangalarba boato"
+  JUNGLE_CHEST_BOAT: "ĝangalarba boato kun kofro"
+  KNOWLEDGE_BOOK: "libro de sciado"
+  LAPIS_LAZULI: "lazurito"
+  LAVA_BUCKET: "sitelo da lafo"
+  LEAD: "kondukilo"
+  LEATHER: "ledo"
+  LEATHER_BOOTS: "ledaj botoj"
+  LEATHER_CHESTPLATE: "leda tuniko"
+  LEATHER_HELMET: "leda ĉapo"
+  LEATHER_HORSE_ARMOR: "leda ĉevala armaĵo"
+  LEATHER_LEGGINGS: "leda pantalono"
+  LIGHT_BLUE_DYE: "helblua tinkturo"
+  LIGHT_GRAY_DYE: "helgriza tinkturo"
+  LIME_DYE: "helverda tinkturo"
+  LINGERING_POTION: "resta eliksiro"
+  LINGERING_POTION_EFFECT_AWKWARD: "stranga resta eliksiro"
+  LINGERING_POTION_EFFECT_EMPTY: "resta nefarebla eliksiro"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "resta eliksiro de fajrorezisto"
+  LINGERING_POTION_EFFECT_HARMING: "resta eliksiro de lezado"
+  LINGERING_POTION_EFFECT_HEALING: "resta eliksiro de sanigo"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "resta eliksiro de nevidebleco"
+  LINGERING_POTION_EFFECT_LEAPING: "resta eliksiro de saltado"
+  LINGERING_POTION_EFFECT_LEVITATION: "resta eliksiro de levitacio"
+  LINGERING_POTION_EFFECT_LUCK: "resta eliksiro de bonŝanco"
+  LINGERING_POTION_EFFECT_MUNDANE: "banala resta eliksiro"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "resta eliksiro de noktvido"
+  LINGERING_POTION_EFFECT_POISON: "resta eliksiro de veneno"
+  LINGERING_POTION_EFFECT_REGENERATION: "resta eliksiro de resanigado"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "resta eliksiro de malrapida falo"
+  LINGERING_POTION_EFFECT_SLOWNESS: "resta eliksiro de malrapideco"
+  LINGERING_POTION_EFFECT_STRENGTH: "resta eliksiro de forteco"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "resta eliksiro de rapideco"
+  LINGERING_POTION_EFFECT_THICK: "densa resta eliksiro"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "resta eliksiro de la testudmajstro"
+  LINGERING_POTION_EFFECT_WATER: "resta botelo da akvo"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "rest eliksiro de submarspirado"
+  LINGERING_POTION_EFFECT_WEAKNESS: "resta eliksiro de malforteco"
+  LLAMA_SPAWN_EGG: "aperigovo de lamo"
+  LODESTONE_COMPASS: "magnetigita kompaso"
+  MAGENTA_DYE: "malva tinkturo"
+  MAGMA_CREAM: "magmokremo"
+  MAGMA_CUBE_SPAWN_EGG: "aperigovo de magmokubo"
+  MANGROVE_BOAT: "mangla boato"
+  MANGROVE_CHEST_BOAT: "mangla boato kun kofro"
+  MAP: "blanka mapo"
+  MELON_SEEDS: "akvomelonaj semoj"
+  MELON_SLICE: "akvomelontranĉaĵo"
+  MILK_BUCKET: "sitelo da lakto"
+  MINECART: "vagoneto"
+  MINER_POTTERY_SHARD: "potpeco «pioĉo»"
+  MINER_POTTERY_SHERD: "potpeco «pioĉo»"
+  MOJANG_BANNER_PATTERN: "standarda ŝablono"
+  MOJANG_BANNER_PATTERN_DESC: "umo"
+  MOOSHROOM_SPAWN_EGG: "aperigovo de mooshroom"
+  MOURNER_POTTERY_SHARD: "potpeco «jelpo»"
+  MOURNER_POTTERY_SHERD: "potpeco «jelpo»"
+  MULE_SPAWN_EGG: "aperigovo de mulo"
+  MUSHROOM_STEW: "fungosupo"
+  MUSIC_DISC_11: "sondisko"
+  MUSIC_DISC_11_DESC: "c418 — 11"
+  MUSIC_DISC_13: "sondisko"
+  MUSIC_DISC_13_DESC: "c418 — 13"
+  MUSIC_DISC_5: "sondisko"
+  MUSIC_DISC_5_DESC: "samuel åberg — 5"
+  MUSIC_DISC_BLOCKS: "sondisko"
+  MUSIC_DISC_BLOCKS_DESC: "c418 — blocks"
+  MUSIC_DISC_CAT: "sondisko"
+  MUSIC_DISC_CAT_DESC: "c418 — cat"
+  MUSIC_DISC_CHIRP: "sondisko"
+  MUSIC_DISC_CHIRP_DESC: "c418 — chirp"
+  MUSIC_DISC_FAR: "sondisko"
+  MUSIC_DISC_FAR_DESC: "c418 — far"
+  MUSIC_DISC_MALL: "sondisko"
+  MUSIC_DISC_MALL_DESC: "c418 — mall"
+  MUSIC_DISC_MELLOHI: "sondisko"
+  MUSIC_DISC_MELLOHI_DESC: "c418 — mellohi"
+  MUSIC_DISC_OTHERSIDE: "sondisko"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine — otherside"
+  MUSIC_DISC_PIGSTEP: "sondisko"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine — pigstep"
+  MUSIC_DISC_RELIC: "sondisko"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof — relic"
+  MUSIC_DISC_STAL: "sondisko"
+  MUSIC_DISC_STAL_DESC: "c418 — stal"
+  MUSIC_DISC_STRAD: "sondisko"
+  MUSIC_DISC_STRAD_DESC: "c418 — strad"
+  MUSIC_DISC_WAIT: "sondisko"
+  MUSIC_DISC_WAIT_DESC: "c418 — wait"
+  MUSIC_DISC_WARD: "sondisko"
+  MUSIC_DISC_WARD_DESC: "c418 — ward"
+  MUTTON: "kruda ŝafaĵo"
+  NAME_TAG: "nomilo"
+  NAUTILUS_SHELL: "naŭtila konko"
+  NETHER_BRICK: "netherbriko"
+  NETHER_STAR: "nethera stelo"
+  NETHERITE_AXE: "netherite’a hakilo"
+  NETHERITE_BOOTS: "netherite’aj botoj"
+  NETHERITE_CHESTPLATE: "netherite’a kiraso"
+  NETHERITE_HELMET: "netherite’a kasko"
+  NETHERITE_HOE: "netherite’a sarkilo"
+  NETHERITE_INGOT: "netherite’a ingoto"
+  NETHERITE_LEGGINGS: "netherite’aj kruringoj"
+  NETHERITE_PICKAXE: "netherite’a pioĉo"
+  NETHERITE_SCRAP: "netherite’a fragmento"
+  NETHERITE_SHOVEL: "netherite’a fosilo"
+  NETHERITE_SWORD: "netherite’a glavo"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "forĝa ŝablono"
+  OAK_BOAT: "kverka boato"
+  OAK_CHEST_BOAT: "kverka boato kun kofro"
+  OCELOT_SPAWN_EGG: "aperigovo de oceloto"
+  ORANGE_DYE: "oranĝkolora tinkturo"
+  PAINTING: "pentraĵo"
+  PANDA_SPAWN_EGG: "aperigovo de pando"
+  PAPER: "papero"
+  PARROT_SPAWN_EGG: "aperigovo de papago"
+  PHANTOM_MEMBRANE: "fantoma membrano"
+  PHANTOM_SPAWN_EGG: "aperigovo de fantomo"
+  PIG_SPAWN_EGG: "aperigovo de porko"
+  PIGLIN_BANNER_PATTERN: "standarda ŝablono"
+  PIGLIN_BANNER_PATTERN_DESC: "muzelo"
+  PIGLIN_BRUTE_SPAWN_EGG: "aperigovo de brutala piglin"
+  PIGLIN_SPAWN_EGG: "aperigovo de piglin"
+  PILLAGER_SPAWN_EGG: "aperigovo de rabisto"
+  PINK_DYE: "rozkolora tinkturo"
+  PITCHER_PLANT: "kruĉenio"
+  PITCHER_POD: "kruĉenia guŝo"
+  PLENTY_POTTERY_SHARD: "potpeco «trezoro»"
+  PLENTY_POTTERY_SHERD: "potpeco «trezoro»"
+  POISONOUS_POTATO: "venena terpomo"
+  POLAR_BEAR_SPAWN_EGG: "aperigovo de blanka urso"
+  POPPED_CHORUS_FRUIT: "krevita refrena frukto"
+  PORKCHOP: "kruda porkaĵo"
+  POTATO: "terpomo"
+  POTION: "eliksiro"
+  POTION_EFFECT_AWKWARD: "stranga eliksiro"
+  POTION_EFFECT_EMPTY: "nefarebla eliksiro"
+  POTION_EFFECT_FIRE_RESISTANCE: "eliksiro de fajrorezisto"
+  POTION_EFFECT_HARMING: "eliksiro de lezado"
+  POTION_EFFECT_HEALING: "eliksiro de sanigo"
+  POTION_EFFECT_INVISIBILITY: "eliksiro de nevidebleco"
+  POTION_EFFECT_LEAPING: "eliksiro de saltado"
+  POTION_EFFECT_LEVITATION: "eliksiro de levitacio"
+  POTION_EFFECT_LUCK: "eliksiro de bonŝanco"
+  POTION_EFFECT_MUNDANE: "banala eliksiro"
+  POTION_EFFECT_NIGHT_VISION: "eliksiro de noktvido"
+  POTION_EFFECT_POISON: "eliksiro de veneno"
+  POTION_EFFECT_REGENERATION: "eliksiro de resanigado"
+  POTION_EFFECT_SLOW_FALLING: "eliksiro de malrapida falo"
+  POTION_EFFECT_SLOWNESS: "eliksiro de malrapideco"
+  POTION_EFFECT_STRENGTH: "eliksiro de forteco"
+  POTION_EFFECT_SWIFTNESS: "eliksiro de rapideco"
+  POTION_EFFECT_THICK: "densa eliksiro"
+  POTION_EFFECT_TURTLE_MASTER: "eliksiro de la testudmajstro"
+  POTION_EFFECT_WATER: "botelo da akvo"
+  POTION_EFFECT_WATER_BREATHING: "eliksiro de submarspirado"
+  POTION_EFFECT_WEAKNESS: "eliksiro de malforteco"
+  POTTERY_SHARD_ARCHER: "potpeco «pafarko»"
+  POTTERY_SHARD_ARMS_UP: "potpeco «manlevo»"
+  POTTERY_SHARD_PRIZE: "potpeco «brilianto»"
+  POTTERY_SHARD_SKULL: "potpeco «kranio»"
+  POWDER_SNOW_BUCKET: "sitelo da pulvora neĝo"
+  PRISMARINE_CRYSTALS: "prismarina kristalo"
+  PRISMARINE_SHARD: "prismarina splito"
+  PRIZE_POTTERY_SHARD: "potpeco «brilianto»"
+  PRIZE_POTTERY_SHERD: "potpeco «brilianto»"
+  PUFFERFISH: "pintfiŝo"
+  PUFFERFISH_BUCKET: "sitelo kun pintfiŝo"
+  PUFFERFISH_SPAWN_EGG: "aperigovo de pintfiŝo"
+  PUMPKIN_PIE: "kukurba pirogo"
+  PUMPKIN_SEEDS: "kukurbaj semoj"
+  PURPLE_DYE: "violkolora tinkturo"
+  QUARTZ: "kvarco"
+  RABBIT: "kruda kuniklaĵo"
+  RABBIT_FOOT: "kunikla piedo"
+  RABBIT_HIDE: "kunikla felo"
+  RABBIT_SPAWN_EGG: "aperigovo de kuniklo"
+  RABBIT_STEW: "kuniklaĵa raguo"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  RAVAGER_SPAWN_EGG: "aperigovo de ruiniganto"
+  RAW_COPPER: "kruda kupro"
+  RAW_GOLD: "kruda oro"
+  RAW_IRON: "kruda fero"
+  RECOVERY_COMPASS: "revenkompaso"
+  RED_DYE: "ruĝa tinkturo"
+  REDSTONE: "redstone’a polvo"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  ROTTEN_FLESH: "putra karno"
+  SADDLE: "selo"
+  SALMON: "kruda salmo"
+  SALMON_BUCKET: "sitelo kun salmo"
+  SALMON_SPAWN_EGG: "aperigovo de salmo"
+  SCUTE: "ŝelero"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  SHEAF_POTTERY_SHARD: "potpeco «garbo»"
+  SHEAF_POTTERY_SHERD: "potpeco «garbo»"
+  SHEARS: "tondilo"
+  SHEEP_SPAWN_EGG: "aperigovo de ŝafo"
+  SHELTER_POTTERY_SHARD: "potpeco «ombrejo»"
+  SHELTER_POTTERY_SHERD: "potpeco «ombrejo»"
+  SHIELD: "ŝildo"
+  SHIELD_BLACK: "nigra ŝildo"
+  SHIELD_BLUE: "blua ŝildo"
+  SHIELD_BROWN: "bruna ŝildo"
+  SHIELD_CYAN: "turkisa ŝildo"
+  SHIELD_GRAY: "griza ŝildo"
+  SHIELD_GREEN: "verda ŝildo"
+  SHIELD_LIGHT_BLUE: "helblua ŝildo"
+  SHIELD_LIGHT_GRAY: "helgriza ŝildo"
+  SHIELD_LIME: "helverda ŝildo"
+  SHIELD_MAGENTA: "malva ŝildo"
+  SHIELD_ORANGE: "oranĝkolora ŝildo"
+  SHIELD_PINK: "rozkolora ŝildo"
+  SHIELD_PURPLE: "violkolora ŝildo"
+  SHIELD_RED: "ruĝa ŝildo"
+  SHIELD_WHITE: "blanka ŝildo"
+  SHIELD_YELLOW: "flava ŝildo"
+  SHULKER_SHELL: "ŝelo de shulker"
+  SHULKER_SPAWN_EGG: "aperigovo de shulker"
+  SIGN: "ŝildeto"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  SILVERFISH_SPAWN_EGG: "aperigovo de lepismo"
+  SKELETON_HORSE_SPAWN_EGG: "aperigovo de skeleta ĉevalo"
+  SKELETON_SPAWN_EGG: "aperigovo de skeleto"
+  SKULL_BANNER_PATTERN: "standarda ŝablono"
+  SKULL_BANNER_PATTERN_DESC: "kranio"
+  SKULL_POTTERY_SHARD: "potpeco «kranio»"
+  SKULL_POTTERY_SHERD: "potpeco «kranio»"
+  SLIME_BALL: "mukbulo"
+  SLIME_SPAWN_EGG: "aperigovo de mukokubo"
+  SMITHING_TEMPLATE: "forĝa ŝablono"
+  SMITHING_TEMPLATE_APPLIES_TO: "aplikebla al"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "metu ĉi tien ingoton aŭ kristalon"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armaĵo"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "metu ĉi tien armaĵpecon"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ingotoj k kristaloj"
+  SMITHING_TEMPLATE_INGREDIENTS: "materialoj:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "metu ĉi tien netherite’an ingoton"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamantaĵoj"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "metu ĉi tien diamantan armaĵpecon aŭ ilon"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite’a ingoto"
+  SMITHING_TEMPLATE_UPGRADE: "plibonigo: "
+  SNIFFER_SPAWN_EGG: "aperigovo de snuflaro"
+  SNORT_POTTERY_SHARD: "potpeco «snufo»"
+  SNORT_POTTERY_SHERD: "potpeco «snufo»"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  SNOW_GOLEM_SPAWN_EGG: "aperigovo de neĝgolemo"
+  SNOWBALL: "neĝbulo"
+  SPECTRAL_ARROW: "spektra sago"
+  SPIDER_EYE: "okulo de araneo"
+  SPIDER_SPAWN_EGG: "aperigovo de araneo"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  SPLASH_POTION: "ŝpruca eliksiro"
+  SPLASH_POTION_EFFECT_AWKWARD: "stranga ŝpruca eliksiro"
+  SPLASH_POTION_EFFECT_EMPTY: "ŝpruca nefarebla eliksiro"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "ŝpruca eliksiro de fajrorezisto"
+  SPLASH_POTION_EFFECT_HARMING: "ŝpruca eliksiro de lezado"
+  SPLASH_POTION_EFFECT_HEALING: "ŝpruca eliksiro de sanigo"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "ŝpruca eliksiro de nevidebleco"
+  SPLASH_POTION_EFFECT_LEAPING: "ŝpruca eliksiro de saltado"
+  SPLASH_POTION_EFFECT_LEVITATION: "ŝpruca eliksiro de levitacio"
+  SPLASH_POTION_EFFECT_LUCK: "ŝpruca eliksiro de bonŝanco"
+  SPLASH_POTION_EFFECT_MUNDANE: "banala ŝpruca eliksiro"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "ŝpruca eliksiro de noktvido"
+  SPLASH_POTION_EFFECT_POISON: "ŝpruca eliksiro de veneno"
+  SPLASH_POTION_EFFECT_REGENERATION: "ŝpruca eliksiro de resanigado"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "ŝpruca eliksiro de malrapida falo"
+  SPLASH_POTION_EFFECT_SLOWNESS: "ŝpruca eliksiro de malrapideco"
+  SPLASH_POTION_EFFECT_STRENGTH: "ŝpruca eliksiro de forteco"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "ŝpruca eliksiro de rapideco"
+  SPLASH_POTION_EFFECT_THICK: "densa ŝpruca eliksiro"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "ŝpruca eliksiro de la testudmajstro"
+  SPLASH_POTION_EFFECT_WATER: "ŝpruca botelo da akvo"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "ŝpruca eliksiro de submarspirado"
+  SPLASH_POTION_EFFECT_WEAKNESS: "ŝpruca eliksiro de malforteco"
+  SPRUCE_BOAT: "picea boato"
+  SPRUCE_CHEST_BOAT: "picea boato kun kofro"
+  SPYGLASS: "lorno"
+  SQUID_SPAWN_EGG: "aperigovo de kalmaro"
+  STICK: "bastono"
+  STONE_AXE: "ŝtona hakilo"
+  STONE_HOE: "ŝtona sarkilo"
+  STONE_PICKAXE: "ŝtona pioĉo"
+  STONE_SHOVEL: "ŝtona fosilo"
+  STONE_SWORD: "ŝtona glavo"
+  STRAY_SPAWN_EGG: "aperigovo de devojiĝanto"
+  STRIDER_SPAWN_EGG: "aperigovo de lafpaŝanto"
+  STRING: "fadeno"
+  SUGAR: "sukero"
+  SUSPICIOUS_STEW: "suspektinda manĝaĵo"
+  SWEET_BERRIES: "dolĉberoj"
+  TADPOLE_BUCKET: "sitelo kun ranido"
+  TADPOLE_SPAWN_EGG: "aperigovo de ranido"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  TIPPED_ARROW: "eliksira sago"
+  TIPPED_ARROW_EFFECT_AWKWARD: "eliksira sago"
+  TIPPED_ARROW_EFFECT_EMPTY: "nefarebla eliksira sago"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "sago de fajrorezisto"
+  TIPPED_ARROW_EFFECT_HARMING: "sago de lezado"
+  TIPPED_ARROW_EFFECT_HEALING: "sago de sanigo"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "sago de nevidebleco"
+  TIPPED_ARROW_EFFECT_LEAPING: "sago de saltado"
+  TIPPED_ARROW_EFFECT_LEVITATION: "sago de ŝvebado"
+  TIPPED_ARROW_EFFECT_LUCK: "sago de bonŝanco"
+  TIPPED_ARROW_EFFECT_MUNDANE: "eliksira sago"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "sago de noktvido"
+  TIPPED_ARROW_EFFECT_POISON: "sago de veneno"
+  TIPPED_ARROW_EFFECT_REGENERATION: "sago de resanigado"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "sago de malrapida falo"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "sago de malrapideco"
+  TIPPED_ARROW_EFFECT_STRENGTH: "sago de forteco"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "sago de rapideco"
+  TIPPED_ARROW_EFFECT_THICK: "eliksira sago"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "sago de la testudmajstro"
+  TIPPED_ARROW_EFFECT_WATER: "sago de ŝprucado"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "sago de submarspirado"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "sago de malforteco"
+  TNT_MINECART: "vagoneto kun tnt"
+  TORCHFLOWER_SEEDS: "torĉfloraj semoj"
+  TOTEM_OF_UNDYING: "totemo de senmorteco"
+  TRADER_LLAMA_SPAWN_EGG: "aperigovo de vendista lamo"
+  TRIAL_KEY: "defia ŝlosilo"
+  TRIDENT: "tridento"
+  TROPICAL_FISH: "tropika fiŝo"
+  TROPICAL_FISH_BUCKET: "sitelo kun tropika fiŝo"
+  TROPICAL_FISH_SPAWN_EGG: "aperigovo de tropika fiŝo"
+  TURTLE_HELMET: "testuda ŝelo"
+  TURTLE_SPAWN_EGG: "aperigovo de testudo"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  VEX_SPAWN_EGG: "aperigovo de molestulo"
+  VILLAGER_SPAWN_EGG: "aperigovo de vilaĝano"
+  VINDICATOR_SPAWN_EGG: "aperigovo de praviganto"
+  WANDERING_TRADER_SPAWN_EGG: "aperigovo de vaganta vendisto"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  WARDEN_SPAWN_EGG: "aperigovo de provoso"
+  WARPED_FUNGUS_ON_A_STICK: "fiŝkaptilo kun torda fungo"
+  WATER_BUCKET: "sitelo da akvo"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  WHEAT: "tritiko"
+  WHEAT_SEEDS: "tritikaj semoj"
+  WHITE_DYE: "blanka tinkturo"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "forĝa ŝablono"
+  WITCH_SPAWN_EGG: "aperigovo de sorĉistino"
+  WITHER_SKELETON_SPAWN_EGG: "aperigovo de witherskeleto"
+  WITHER_SPAWN_EGG: "aperigovo de wither"
+  WOLF_SPAWN_EGG: "aperigovo de lupo"
+  WOODEN_AXE: "ligna hakilo"
+  WOODEN_HOE: "ligna sarkilo"
+  WOODEN_PICKAXE: "ligna pioĉo"
+  WOODEN_SHOVEL: "ligna fosilo"
+  WOODEN_SWORD: "ligna glavo"
+  WRITABLE_BOOK: "libro kaj plumo"
+  WRITTEN_BOOK: "skribita libro"
+  YELLOW_DYE: "flava tinkturo"
+  ZOGLIN_SPAWN_EGG: "aperigovo de zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "aperigovo de zombia ĉevalo"
+  ZOMBIE_SPAWN_EGG: "aperigovo de zombio"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "aperigovo de zombia vilaĝano"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "aperigovo de zombia piglin"
+  CHEST: "kiam sur torso:"
+  FEET: "kiam sur piedoj:"
+  HEAD: "kiam sur kapo:"
+  LEGS: "kiam sur kruroj:"
+  MAINHAND: "kiam en ĉefa mano:"
+  OFFHAND: "kiam en neĉefa mano:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

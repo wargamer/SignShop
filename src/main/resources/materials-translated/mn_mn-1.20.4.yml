@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "хуайс модон товч"
+  ACACIA_DOOR: "хуайс модон хаалга"
+  ACACIA_FENCE: "хуайс модон хашаа"
+  ACACIA_FENCE_GATE: "хуайс модон хашааны хаалга"
+  ACACIA_HANGING_SIGN: "хуайс модон дүүжилдэг самбар"
+  ACACIA_LEAVES: "хуайс модны навч"
+  ACACIA_LOG: "хуайс модон дүнз"
+  ACACIA_PLANKS: "хуайс модон банз"
+  ACACIA_PRESSURE_PLATE: "хуайс модон даралтын хавтан"
+  ACACIA_SAPLING: "зулзаган хуайс мод"
+  ACACIA_SIGN: "хуайс модон самбар"
+  ACACIA_SLAB: "хуайс модон хавтан"
+  ACACIA_STAIRS: "хуайс модон шат"
+  ACACIA_TRAPDOOR: "хуайс модон сөхдөг хаалга"
+  ACACIA_WALL_HANGING_SIGN: "хуайс модон хананаас дүүжилдэг самбар"
+  ACACIA_WALL_SIGN: "хуайс модон ханын самбар"
+  ACACIA_WOOD: "хуайс мод"
+  ACTIVATOR_RAIL: "идэвхжүүлэгч төмөр зам"
+  AIR: "агаар"
+  ALLIUM: "халиар"
+  AMETHYST_BLOCK: "ягаан болор блок"
+  AMETHYST_CLUSTER: "ягаан болрын хонгорцог"
+  ANCIENT_DEBRIS: "эртний металл"
+  ANDESITE: "андезит"
+  ANDESITE_SLAB: "андезит хавтан"
+  ANDESITE_STAIRS: "андезит шат"
+  ANDESITE_WALL: "андезит хана"
+  ANVIL: "дөш"
+  ATTACHED_MELON_STEM: "тарвастай иш"
+  ATTACHED_PUMPKIN_STEM: "хулуутай иш"
+  AZALEA: "азалиа"
+  AZALEA_LEAVES: "aзалиан навч"
+  AZURE_BLUET: "хонгорзул"
+  BAMBOO: "хулс"
+  BAMBOO_BLOCK: "хулсан блок"
+  BAMBOO_BUTTON: "хулсан товч"
+  BAMBOO_DOOR: "хулсан хаалга"
+  BAMBOO_FENCE: "хулсан хашаа"
+  BAMBOO_FENCE_GATE: "хулсан хашааны хаалга"
+  BAMBOO_HANGING_SIGN: "хулсан дүүжилдэг самбар"
+  BAMBOO_MOSAIC: "хулсан мозайк"
+  BAMBOO_MOSAIC_SLAB: "хулсан мозайк хавтан"
+  BAMBOO_MOSAIC_STAIRS: "хулсан мозайк шат"
+  BAMBOO_PLANKS: "хулсан банз"
+  BAMBOO_PRESSURE_PLATE: "хулсан даралтын хавтан"
+  BAMBOO_SAPLING: "хулсны нахиа"
+  BAMBOO_SIGN: "хулсан самбар"
+  BAMBOO_SLAB: "хулсан хавтан"
+  BAMBOO_STAIRS: "хулсан шат"
+  BAMBOO_TRAPDOOR: "хулсан сөхдөг хаалга"
+  BAMBOO_WALL_HANGING_SIGN: "хулсан хананаас дүүжилдэг самбар"
+  BAMBOO_WALL_SIGN: "хулсан хананы самбар"
+  BANNER_BASE_BLACK: "хар дэвсгэр"
+  BANNER_BASE_BLUE: "хөх дэвсгэр"
+  BANNER_BASE_BROWN: "бор дэвсгэр"
+  BANNER_BASE_CYAN: "номин цэнхэр дэвсгэр"
+  BANNER_BASE_GRAY: "саарал дэвсгэр"
+  BANNER_BASE_GREEN: "ногоон дэвсгэр"
+  BANNER_BASE_LIGHT_BLUE: "цэнхэр дэвсгэр"
+  BANNER_BASE_LIGHT_GRAY: "цайвар саарал дэвсгэр"
+  BANNER_BASE_LIME: "цайвар ногоон дэвсгэр"
+  BANNER_BASE_MAGENTA: "ягаан дэвсгэр"
+  BANNER_BASE_ORANGE: "улбар шар дэвсгэр"
+  BANNER_BASE_PINK: "цайвар ягаан дэвсгэр"
+  BANNER_BASE_PURPLE: "нил ягаан дэвсгэр"
+  BANNER_BASE_RED: "улаан дэвсгэр"
+  BANNER_BASE_WHITE: "цагаан дэвсгэр"
+  BANNER_BASE_YELLOW: "шар дэвсгэр"
+  BANNER_BORDER_BLACK: "хар хүрээ"
+  BANNER_BORDER_BLUE: "хөх хүрээ"
+  BANNER_BORDER_BROWN: "бор хүрээ"
+  BANNER_BORDER_CYAN: "номин цэнхэр хүрээ"
+  BANNER_BORDER_GRAY: "саарал хүрээ"
+  BANNER_BORDER_GREEN: "ногоон хүрээ"
+  BANNER_BORDER_LIGHT_BLUE: "цэнхэр хүрээ"
+  BANNER_BORDER_LIGHT_GRAY: "цайвар саарал хүрээ"
+  BANNER_BORDER_LIME: "цайвар ногоон хүрээ"
+  BANNER_BORDER_MAGENTA: "ягаан хүрээ"
+  BANNER_BORDER_ORANGE: "улбар шар хүрээ"
+  BANNER_BORDER_PINK: "цайвар ягаан хүрээ"
+  BANNER_BORDER_PURPLE: "нил ягаан хүрээ"
+  BANNER_BORDER_RED: "улаан хүрээ"
+  BANNER_BORDER_WHITE: "цагаан хүрээ"
+  BANNER_BORDER_YELLOW: "шар хүрээ"
+  BANNER_BRICKS_BLACK: "хар тоосгон хээ"
+  BANNER_BRICKS_BLUE: "хөх тоосгон хээ"
+  BANNER_BRICKS_BROWN: "бор тоосгон хээ"
+  BANNER_BRICKS_CYAN: "номин цэнхэр тоосгон хээ"
+  BANNER_BRICKS_GRAY: "саарал тоосгон хээ"
+  BANNER_BRICKS_GREEN: "ногоон тоосгон хээ"
+  BANNER_BRICKS_LIGHT_BLUE: "цэнхэр тоосгон хээ"
+  BANNER_BRICKS_LIGHT_GRAY: "цайвар саарал тоосгон хээ"
+  BANNER_BRICKS_LIME: "цайвар ногоон тоосгон хээ"
+  BANNER_BRICKS_MAGENTA: "ягаан тоосгон хээ"
+  BANNER_BRICKS_ORANGE: "улбар шар тоосгон хээ"
+  BANNER_BRICKS_PINK: "цайвар ягаан тоосгон хээ"
+  BANNER_BRICKS_PURPLE: "нил ягаан тоосгон хээ"
+  BANNER_BRICKS_RED: "улаан тоосгон хээ"
+  BANNER_BRICKS_WHITE: "цагаан тоосгон хээ"
+  BANNER_BRICKS_YELLOW: "шар тоосгон хээ"
+  BANNER_CIRCLE_BLACK: "хар дугуй"
+  BANNER_CIRCLE_BLUE: "хөх дугуй"
+  BANNER_CIRCLE_BROWN: "бор дугуй"
+  BANNER_CIRCLE_CYAN: "номин цэнхэр дугуй"
+  BANNER_CIRCLE_GRAY: "саарал дугуй"
+  BANNER_CIRCLE_GREEN: "ногоон дугуй"
+  BANNER_CIRCLE_LIGHT_BLUE: "цэнхэр дугуй"
+  BANNER_CIRCLE_LIGHT_GRAY: "цайвар саарал дугуй"
+  BANNER_CIRCLE_LIME: "цайвар ногоон дугуй"
+  BANNER_CIRCLE_MAGENTA: "ягаан дугуй"
+  BANNER_CIRCLE_ORANGE: "улбар шар дугуй"
+  BANNER_CIRCLE_PINK: "цайвар ягаан дугуй"
+  BANNER_CIRCLE_PURPLE: "нил ягаан дугуй"
+  BANNER_CIRCLE_RED: "улаан дугуй"
+  BANNER_CIRCLE_WHITE: "цагаан дугуй"
+  BANNER_CIRCLE_YELLOW: "шар дугуй"
+  BANNER_CREEPER_BLACK: "хар криперийн нүүр"
+  BANNER_CREEPER_BLUE: "хөх криперийн нүүр"
+  BANNER_CREEPER_BROWN: "бор криперийн нүүр"
+  BANNER_CREEPER_CYAN: "номин цэнхэр криперийн нүүр"
+  BANNER_CREEPER_GRAY: "саарал криперийн нүүр"
+  BANNER_CREEPER_GREEN: "ногоон криперийн нүүр"
+  BANNER_CREEPER_LIGHT_BLUE: "цэнхэр криперийн нүүр"
+  BANNER_CREEPER_LIGHT_GRAY: "цайвар саарал криперийн нүүр"
+  BANNER_CREEPER_LIME: "цайвар ногоон криперийн нүүр"
+  BANNER_CREEPER_MAGENTA: "ягаан криперийн нүүр"
+  BANNER_CREEPER_ORANGE: "улбар шар криперийн нүүр"
+  BANNER_CREEPER_PINK: "цайвар ягаан криперийн нүүр"
+  BANNER_CREEPER_PURPLE: "нил ягаан криперийн нүүр"
+  BANNER_CREEPER_RED: "улаан криперийн нүүр"
+  BANNER_CREEPER_WHITE: "цагаан криперийн нүүр"
+  BANNER_CREEPER_YELLOW: "шар криперийн нүүр"
+  BANNER_CROSS_BLACK: "хар солбисон шугам"
+  BANNER_CROSS_BLUE: "хөх солбисон шугам"
+  BANNER_CROSS_BROWN: "бор солбисон шугам"
+  BANNER_CROSS_CYAN: "номин цэнхэр солбисон шугам"
+  BANNER_CROSS_GRAY: "саарал солбисон шугам"
+  BANNER_CROSS_GREEN: "ногоон солбисон шугам"
+  BANNER_CROSS_LIGHT_BLUE: "цэнхэр солбисон шугам"
+  BANNER_CROSS_LIGHT_GRAY: "цайвар саарал солбисон шугам"
+  BANNER_CROSS_LIME: "цайвар ногоон солбисон шугам"
+  BANNER_CROSS_MAGENTA: "ягаан солбисон шугам"
+  BANNER_CROSS_ORANGE: "улбар шар солбисон шугам"
+  BANNER_CROSS_PINK: "цайвар ягаан солбисон шугам"
+  BANNER_CROSS_PURPLE: "нил ягаан солбисон шугам"
+  BANNER_CROSS_RED: "улаан солбисон шугам"
+  BANNER_CROSS_WHITE: "цагаан солбисон шугам"
+  BANNER_CROSS_YELLOW: "шар солбисон шугам"
+  BANNER_CURLY_BORDER_BLACK: "хар арзгар хүрээ"
+  BANNER_CURLY_BORDER_BLUE: "хөх арзгар хүрээ"
+  BANNER_CURLY_BORDER_BROWN: "бор арзгар хүрээ"
+  BANNER_CURLY_BORDER_CYAN: "номин цэнхэр арзгар хүрээ"
+  BANNER_CURLY_BORDER_GRAY: "саарал арзгар хүрээ"
+  BANNER_CURLY_BORDER_GREEN: "ногоон арзгар хүрээ"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "цэнхэр арзгар хүрээ"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "цайвар саарал арзгар хүрээ"
+  BANNER_CURLY_BORDER_LIME: "цайвар ногоон арзгар хүрээ"
+  BANNER_CURLY_BORDER_MAGENTA: "ягаан арзгар хүрээ"
+  BANNER_CURLY_BORDER_ORANGE: "улбар шар арзгар хүрээ"
+  BANNER_CURLY_BORDER_PINK: "цайвар ягаан арзгар хүрээ"
+  BANNER_CURLY_BORDER_PURPLE: "нил ягаан арзгар хүрээ"
+  BANNER_CURLY_BORDER_RED: "улаан арзгар хүрээ"
+  BANNER_CURLY_BORDER_WHITE: "цагаан арзгар хүрээ"
+  BANNER_CURLY_BORDER_YELLOW: "шар арзгар хүрээ"
+  BANNER_DIAGONAL_LEFT_BLACK: "хар зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_BLUE: "хөх зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_BROWN: "бор зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_CYAN: "номин цэнхэр зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_GRAY: "саарал зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_GREEN: "ногоон зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "цэнхэр зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "цайвар саарал зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_LIME: "цайвар ногоон зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "ягаан зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_ORANGE: "улбар шар зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_PINK: "цайвар ягаан зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_PURPLE: "нил ягаан зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_RED: "улаан зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_WHITE: "цагаан зүүн дээд хагас"
+  BANNER_DIAGONAL_LEFT_YELLOW: "шар зүүн дээд хагас"
+  BANNER_DIAGONAL_RIGHT_BLACK: "хар баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_BLUE: "хөх баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_BROWN: "бор баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_CYAN: "номин цэнхэр баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_GRAY: "саарал баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_GREEN: "ногоон баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "цэнхэр баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "цайвар саарал баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_LIME: "цайвар ногоон баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "ягаан баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "улбар шар баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_PINK: "цайвар ягаан баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "нил ягаан баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_RED: "улаан баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_WHITE: "цагаан баруун дээд хагас"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "шар баруун дээд хагас"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "хар зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "хөх зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "бор зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "номин цэнхэр зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "саарал зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "ногоон зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "цэнхэр зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "цайвар саарал зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "цайвар ногоон зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "ягаан зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "улбар шар зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "цайвар ягаан зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "нил ягаан зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_RED: "улаан зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "цагаан зүүн доод хагас"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "шар зүүн доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "хар баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "хөх баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "бор баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "номин цэнхэр баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "саарал баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "ногоон баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "цэнхэр баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "цайвар саарал баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "цайвар ногоон баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "ягаан баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "улбар шар баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "цайвар ягаан баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "нил ягаан баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "улаан баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "цагаан баруун доод хагас"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "шар баруун доод хагас"
+  BANNER_FLOWER_BLACK: "хар цэцэг"
+  BANNER_FLOWER_BLUE: "хөх цэцэг"
+  BANNER_FLOWER_BROWN: "бор цэцэг"
+  BANNER_FLOWER_CYAN: "номин цэнхэр цэцэг"
+  BANNER_FLOWER_GRAY: "саарал цэцэг"
+  BANNER_FLOWER_GREEN: "ногоон цэцэг"
+  BANNER_FLOWER_LIGHT_BLUE: "цэнхэр цэцэг"
+  BANNER_FLOWER_LIGHT_GRAY: "цайвар саарал цэцэг"
+  BANNER_FLOWER_LIME: "цайвар ногоон цэцэг"
+  BANNER_FLOWER_MAGENTA: "ягаан цэцэг"
+  BANNER_FLOWER_ORANGE: "улбар шар цэцэг"
+  BANNER_FLOWER_PINK: "цайвар ягаан цэцэг"
+  BANNER_FLOWER_PURPLE: "нил ягаан цэцэг"
+  BANNER_FLOWER_RED: "улаан цэцэг"
+  BANNER_FLOWER_WHITE: "цагаан цэцэг"
+  BANNER_FLOWER_YELLOW: "шар цэцэг"
+  BANNER_GLOBE_BLACK: "хар бөмбөрцөг"
+  BANNER_GLOBE_BLUE: "хөх бөмбөрцөг"
+  BANNER_GLOBE_BROWN: "бор бөмбөрцөг"
+  BANNER_GLOBE_CYAN: "номин цэнхэр бөмбөрцөг"
+  BANNER_GLOBE_GRAY: "саарал бөмбөрцөг"
+  BANNER_GLOBE_GREEN: "ногоон бөмбөрцөг"
+  BANNER_GLOBE_LIGHT_BLUE: "цэнхэр бөмбөрцөг"
+  BANNER_GLOBE_LIGHT_GRAY: "цайвар саарал бөмбөрцөг"
+  BANNER_GLOBE_LIME: "цайвар ногоон бөмбөрцөг"
+  BANNER_GLOBE_MAGENTA: "ягаан бөмбөрцөг"
+  BANNER_GLOBE_ORANGE: "улбар шар бөмбөрцөг"
+  BANNER_GLOBE_PINK: "цайвар ягаан бөмбөрцөг"
+  BANNER_GLOBE_PURPLE: "нил ягаан бөмбөрцөг"
+  BANNER_GLOBE_RED: "улаан бөмбөрцөг"
+  BANNER_GLOBE_WHITE: "цагаан бөмбөрцөг"
+  BANNER_GLOBE_YELLOW: "шар бөмбөрцөг"
+  BANNER_GRADIENT_BLACK: "хар дээрээс доош уусалт"
+  BANNER_GRADIENT_BLUE: "хөх дээрээс доош уусалт"
+  BANNER_GRADIENT_BROWN: "бор дээрээс доош уусалт"
+  BANNER_GRADIENT_CYAN: "номин цэнхэр дээрээс доош уусалт"
+  BANNER_GRADIENT_GRAY: "саарал дээрээс доош уусалт"
+  BANNER_GRADIENT_GREEN: "ногоон дээрээс доош уусалт"
+  BANNER_GRADIENT_LIGHT_BLUE: "цэнхэр дээрээс доош уусалт"
+  BANNER_GRADIENT_LIGHT_GRAY: "цайвар саарал дээрээс доош уусалт"
+  BANNER_GRADIENT_LIME: "цайвар ногоон дээрээс доош уусалт"
+  BANNER_GRADIENT_MAGENTA: "ягаан дээрээс доош уусалт"
+  BANNER_GRADIENT_ORANGE: "улбар шар дээрээс доош уусалт"
+  BANNER_GRADIENT_PINK: "цайвар ягаан дээрээс доош уусалт"
+  BANNER_GRADIENT_PURPLE: "нил ягаан дээрээс доош уусалт"
+  BANNER_GRADIENT_RED: "улаан дээрээс доош уусалт"
+  BANNER_GRADIENT_WHITE: "цагаан дээрээс доош уусалт"
+  BANNER_GRADIENT_YELLOW: "шар дээрээс доош уусалт"
+  BANNER_GRADIENT_UP_BLACK: "хар доороос дээш уусалт"
+  BANNER_GRADIENT_UP_BLUE: "хөх доороос дээш уусалт"
+  BANNER_GRADIENT_UP_BROWN: "бор доороос дээш уусалт"
+  BANNER_GRADIENT_UP_CYAN: "номин цэнхэр доороос дээш уусалт"
+  BANNER_GRADIENT_UP_GRAY: "саарал доороос дээш уусалт"
+  BANNER_GRADIENT_UP_GREEN: "ногоон доороос дээш уусалт"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "цэнхэр доороос дээш уусалт"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "цайвар саарал доороос дээш уусалт"
+  BANNER_GRADIENT_UP_LIME: "цайвар ногоон доороос дээш уусалт"
+  BANNER_GRADIENT_UP_MAGENTA: "ягаан доороос дээш уусалт"
+  BANNER_GRADIENT_UP_ORANGE: "улбар шар доороос дээш уусалт"
+  BANNER_GRADIENT_UP_PINK: "цайвар ягаан доороос дээш уусалт"
+  BANNER_GRADIENT_UP_PURPLE: "нил ягаан доороос дээш уусалт"
+  BANNER_GRADIENT_UP_RED: "улаан доороос дээш уусалт"
+  BANNER_GRADIENT_UP_WHITE: "цагаан доороос дээш уусалт"
+  BANNER_GRADIENT_UP_YELLOW: "шар доороос дээш уусалт"
+  BANNER_HALF_HORIZONTAL_BLACK: "хар дээд хагас"
+  BANNER_HALF_HORIZONTAL_BLUE: "хөх дээд хагас"
+  BANNER_HALF_HORIZONTAL_BROWN: "бор дээд хагас"
+  BANNER_HALF_HORIZONTAL_CYAN: "номин цэнхэр дээд хагас"
+  BANNER_HALF_HORIZONTAL_GRAY: "саарал дээд хагас"
+  BANNER_HALF_HORIZONTAL_GREEN: "ногоон дээд хагас"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "цэнхэр дээд хагас"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "цайвар саарал дээд хагас"
+  BANNER_HALF_HORIZONTAL_LIME: "цайвар ногоон дээд хагас"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "ягаан дээд хагас"
+  BANNER_HALF_HORIZONTAL_ORANGE: "улбар шар дээд хагас"
+  BANNER_HALF_HORIZONTAL_PINK: "цайвар ягаан дээд хагас"
+  BANNER_HALF_HORIZONTAL_PURPLE: "нил ягаан дээд хагас"
+  BANNER_HALF_HORIZONTAL_RED: "улаан дээд хагас"
+  BANNER_HALF_HORIZONTAL_WHITE: "цагаан дээд хагас"
+  BANNER_HALF_HORIZONTAL_YELLOW: "шар дээд хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "хар доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "хөх доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "бор доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "номин цэнхэр доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "саарал доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "ногоон доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "цэнхэр доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "цайвар саарал доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "цайвар ногоон доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "ягаан доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "улбар шар доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "цайвар ягаан доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "нил ягаан доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "улаан доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "цагаан доод хагас"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "шар доод хагас"
+  BANNER_HALF_VERTICAL_BLACK: "хар зүүн хагас"
+  BANNER_HALF_VERTICAL_BLUE: "хөх зүүн хагас"
+  BANNER_HALF_VERTICAL_BROWN: "бор зүүн хагас"
+  BANNER_HALF_VERTICAL_CYAN: "номин цэнхэр зүүн хагас"
+  BANNER_HALF_VERTICAL_GRAY: "саарал зүүн хагас"
+  BANNER_HALF_VERTICAL_GREEN: "ногоон зүүн хагас"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "цэнхэр зүүн хагас"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "цайвар саарал зүүн хагас"
+  BANNER_HALF_VERTICAL_LIME: "цайвар ногоон зүүн хагас"
+  BANNER_HALF_VERTICAL_MAGENTA: "ягаан зүүн хагас"
+  BANNER_HALF_VERTICAL_ORANGE: "улбар шар зүүн хагас"
+  BANNER_HALF_VERTICAL_PINK: "цайвар ягаан зүүн хагас"
+  BANNER_HALF_VERTICAL_PURPLE: "нил ягаан зүүн хагас"
+  BANNER_HALF_VERTICAL_RED: "улаан зүүн хагас"
+  BANNER_HALF_VERTICAL_WHITE: "цагаан зүүн хагас"
+  BANNER_HALF_VERTICAL_YELLOW: "шар зүүн хагас"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "хар баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "хөх баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "бор баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "номин цэнхэр баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "саарал баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "ногоон баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "цэнхэр баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "цайвар саарал баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "цайвар ногоон баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "ягаан баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "улбар шар баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "цайвар ягаан баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "нил ягаан баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "улаан баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "цагаан баруун хагас"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "шар баруун хагас"
+  BANNER_MOJANG_BLACK: "хар зүйл"
+  BANNER_MOJANG_BLUE: "хөх зүйл"
+  BANNER_MOJANG_BROWN: "бор зүйл"
+  BANNER_MOJANG_CYAN: "номин цэнхэр зүйл"
+  BANNER_MOJANG_GRAY: "саарал зүйл"
+  BANNER_MOJANG_GREEN: "ногоон зүйл"
+  BANNER_MOJANG_LIGHT_BLUE: "цэнхэр зүйл"
+  BANNER_MOJANG_LIGHT_GRAY: "цайвар зүйл"
+  BANNER_MOJANG_LIME: "цайвар ногоон зүйл"
+  BANNER_MOJANG_MAGENTA: "ягаан зүйл"
+  BANNER_MOJANG_ORANGE: "улбар шар зүйл"
+  BANNER_MOJANG_PINK: "цайвар ягаан зүйл"
+  BANNER_MOJANG_PURPLE: "нил ягаан зүйл"
+  BANNER_MOJANG_RED: "улаан зүйл"
+  BANNER_MOJANG_WHITE: "цагаан зүйл"
+  BANNER_MOJANG_YELLOW: "шар зүйл"
+  BANNER_PIGLIN_BLACK: "хар хоншоор"
+  BANNER_PIGLIN_BLUE: "хөх хоншоор"
+  BANNER_PIGLIN_BROWN: "бор хоншоор"
+  BANNER_PIGLIN_CYAN: "номин цэнхэр хоншоор"
+  BANNER_PIGLIN_GRAY: "саарал хоншоор"
+  BANNER_PIGLIN_GREEN: "ногоон хоншоор"
+  BANNER_PIGLIN_LIGHT_BLUE: "цэнхэр хоншоор"
+  BANNER_PIGLIN_LIGHT_GRAY: "цайвар саарал хоншоор"
+  BANNER_PIGLIN_LIME: "цайвар ногоон хоншоор"
+  BANNER_PIGLIN_MAGENTA: "ягаан хоншоор"
+  BANNER_PIGLIN_ORANGE: "улбар шар хоншоор"
+  BANNER_PIGLIN_PINK: "цайвар ягаан хоншоор"
+  BANNER_PIGLIN_PURPLE: "нил ягаан хоншоор"
+  BANNER_PIGLIN_RED: "улаан хоншоор"
+  BANNER_PIGLIN_WHITE: "цагаан хоншоор"
+  BANNER_PIGLIN_YELLOW: "шар хоншоор"
+  BANNER_RHOMBUS_BLACK: "хар ромбо"
+  BANNER_RHOMBUS_BLUE: "хөх ромбо"
+  BANNER_RHOMBUS_BROWN: "бор ромбо"
+  BANNER_RHOMBUS_CYAN: "номин цэнхэр ромбо"
+  BANNER_RHOMBUS_GRAY: "саарал ромбо"
+  BANNER_RHOMBUS_GREEN: "ногоон ромбо"
+  BANNER_RHOMBUS_LIGHT_BLUE: "цэнхэр ромбо"
+  BANNER_RHOMBUS_LIGHT_GRAY: "цайвар саарал ромбо"
+  BANNER_RHOMBUS_LIME: "цайвар ногоон ромбо"
+  BANNER_RHOMBUS_MAGENTA: "ягаан ромбо"
+  BANNER_RHOMBUS_ORANGE: "улбар шар ромбо"
+  BANNER_RHOMBUS_PINK: "цайвар ягаан ромбо"
+  BANNER_RHOMBUS_PURPLE: "нил ягаан ромбо"
+  BANNER_RHOMBUS_RED: "улаан ромбо"
+  BANNER_RHOMBUS_WHITE: "цагаан ромбо"
+  BANNER_RHOMBUS_YELLOW: "шар ромбо"
+  BANNER_SKULL_BLACK: "хар гавлын яс"
+  BANNER_SKULL_BLUE: "хөх гавлын яс"
+  BANNER_SKULL_BROWN: "бор гавлын яс"
+  BANNER_SKULL_CYAN: "номин цэнхэр гавлын яс"
+  BANNER_SKULL_GRAY: "саарал гавлын яс"
+  BANNER_SKULL_GREEN: "ногоон гавлын яс"
+  BANNER_SKULL_LIGHT_BLUE: "цэнхэр гавлын яс"
+  BANNER_SKULL_LIGHT_GRAY: "цайвар саарал гавлын яс"
+  BANNER_SKULL_LIME: "цайвар ногоон гавлын яс"
+  BANNER_SKULL_MAGENTA: "ягаан гавлын яс"
+  BANNER_SKULL_ORANGE: "улбар шар гавлын яс"
+  BANNER_SKULL_PINK: "цайвар ягаан гавлын яс"
+  BANNER_SKULL_PURPLE: "нил ягаан гавлын яс"
+  BANNER_SKULL_RED: "улаан гавлын яс"
+  BANNER_SKULL_WHITE: "цагаан гавлын яс"
+  BANNER_SKULL_YELLOW: "шар гавлын яс"
+  BANNER_SMALL_STRIPES_BLACK: "хар босоо судал"
+  BANNER_SMALL_STRIPES_BLUE: "хөх босоо судал"
+  BANNER_SMALL_STRIPES_BROWN: "бор босоо судал"
+  BANNER_SMALL_STRIPES_CYAN: "номин цэнхэр босоо судал"
+  BANNER_SMALL_STRIPES_GRAY: "саарал босоо судал"
+  BANNER_SMALL_STRIPES_GREEN: "ногоон босоо судал"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "цэнхэр босоо судал"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "цайвар саарал босоо судал"
+  BANNER_SMALL_STRIPES_LIME: "цайвар ногоон босоо судал"
+  BANNER_SMALL_STRIPES_MAGENTA: "ягаан босоо судал"
+  BANNER_SMALL_STRIPES_ORANGE: "улбар шар босоо судал"
+  BANNER_SMALL_STRIPES_PINK: "цайвар ягаан босоо судал"
+  BANNER_SMALL_STRIPES_PURPLE: "нил ягаан босоо судал"
+  BANNER_SMALL_STRIPES_RED: "улаан босоо судал"
+  BANNER_SMALL_STRIPES_WHITE: "цагаан босоо судал"
+  BANNER_SMALL_STRIPES_YELLOW: "шар босоо судал"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "хар зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "хөх зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "бор зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "номин цэнхэр зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "саарал зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "ногоон зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "цэнхэр зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "цайвар саарал зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "цайвар ногоон зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "ягаан зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "улбар шар зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "цайвар ягаан зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "нил ягаан зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "улаан зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "цагаан зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "шар зүүн доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "хар баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "хөх баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "бор баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "номин цэнхэр баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "саарал баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "ногоон баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "цэнхэр баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "цайвар саарал баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "цайвар ногоон баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "ягаан баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "улбар шар баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "цайвар ягаан баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "нил ягаан баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "улаан баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "цагаан баруун доод булан"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "шар баруун доод булан"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "хар зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "хөх зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "бор зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "номин цэнхэр зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "саарал зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "ногоон зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "цэнхэр зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "цайвар саарал зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_LIME: "цайвар ногоон зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "ягаан зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "улбар шар зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_PINK: "цайвар ягаан зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "нил ягаан зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_RED: "улаан зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "цагаан зүүн дээд булан"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "шар зүүн дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "хар баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "хөх баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "бор баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "номин цэнхэр баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "саарал баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "ногоон баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "цэнхэр баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "цайвар саарал баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "цайвар ногоон баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "ягаан баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "улбар шар баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "цайвар ягаан баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "нил ягаан баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_RED: "улаан баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "цагаан баруун дээд булан"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "шар баруун дээд булан"
+  BANNER_STRAIGHT_CROSS_BLACK: "хар загалмай"
+  BANNER_STRAIGHT_CROSS_BLUE: "хөх загалмай"
+  BANNER_STRAIGHT_CROSS_BROWN: "бор загалмай"
+  BANNER_STRAIGHT_CROSS_CYAN: "номин цэнхэр загалмай"
+  BANNER_STRAIGHT_CROSS_GRAY: "саарал загалмай"
+  BANNER_STRAIGHT_CROSS_GREEN: "ногоон загалмай"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "цэнхэр загалмай"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "цайвар саарал загалмай"
+  BANNER_STRAIGHT_CROSS_LIME: "цайвар ногоон загалмай"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "ягаан загалмай"
+  BANNER_STRAIGHT_CROSS_ORANGE: "улбар шар загалмай"
+  BANNER_STRAIGHT_CROSS_PINK: "цайвар ягаан загалмай"
+  BANNER_STRAIGHT_CROSS_PURPLE: "нил ягаан загалмай"
+  BANNER_STRAIGHT_CROSS_RED: "улаан загалмай"
+  BANNER_STRAIGHT_CROSS_WHITE: "цагаан загалмай"
+  BANNER_STRAIGHT_CROSS_YELLOW: "шар загалмай"
+  BANNER_STRIPE_BOTTOM_BLACK: "хар доод хэсэг"
+  BANNER_STRIPE_BOTTOM_BLUE: "хөх доод хэсэг"
+  BANNER_STRIPE_BOTTOM_BROWN: "бор доод хэсэг"
+  BANNER_STRIPE_BOTTOM_CYAN: "номин цэнхэр доод хэсэг"
+  BANNER_STRIPE_BOTTOM_GRAY: "саарал доод хэсэг"
+  BANNER_STRIPE_BOTTOM_GREEN: "ногоон доод хэсэг"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "цэнхэр доод хэсэг"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "цайвар саарал доод хэсэг"
+  BANNER_STRIPE_BOTTOM_LIME: "цайвар ногоон доод хэсэг"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "ягаан доод хэсэг"
+  BANNER_STRIPE_BOTTOM_ORANGE: "улбар шар доод хэсэг"
+  BANNER_STRIPE_BOTTOM_PINK: "цайвар ягаан доод хэсэг"
+  BANNER_STRIPE_BOTTOM_PURPLE: "нил ягаан доод хэсэг"
+  BANNER_STRIPE_BOTTOM_RED: "улаан доод хэсэг"
+  BANNER_STRIPE_BOTTOM_WHITE: "цагаан доод хэсэг"
+  BANNER_STRIPE_BOTTOM_YELLOW: "шар доод хэсэг"
+  BANNER_STRIPE_CENTER_BLACK: "хар босоо зураас"
+  BANNER_STRIPE_CENTER_BLUE: "хөх босоо зураас"
+  BANNER_STRIPE_CENTER_BROWN: "бор босоо зураас"
+  BANNER_STRIPE_CENTER_CYAN: "номин цэнхэр босоо зураас"
+  BANNER_STRIPE_CENTER_GRAY: "саарал босоо зураас"
+  BANNER_STRIPE_CENTER_GREEN: "ногоон босоо зураас"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "цэнхэр босоо зураас"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "цайвар саарал босоо зураас"
+  BANNER_STRIPE_CENTER_LIME: "цайвар ногоон босоо зураас"
+  BANNER_STRIPE_CENTER_MAGENTA: "ягаан босоо зураас"
+  BANNER_STRIPE_CENTER_ORANGE: "улбар шар босоо зураас"
+  BANNER_STRIPE_CENTER_PINK: "цайвар ягаан босоо зураас"
+  BANNER_STRIPE_CENTER_PURPLE: "нил ягаан босоо зураас"
+  BANNER_STRIPE_CENTER_RED: "улаан босоо зураас"
+  BANNER_STRIPE_CENTER_WHITE: "цагаан босоо зураас"
+  BANNER_STRIPE_CENTER_YELLOW: "шар босоо зураас"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "хар эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "хөх эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "бор эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "номин цэнхэр эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "саарал эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "ногоон эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "цэнхэр эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "цайвар саарал эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_LIME: "цайвар ногоон эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "ягаан эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "улбар шар эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_PINK: "цайвар ягаан эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "нил ягаан эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_RED: "улаан эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "цагаан эсрэг диагональ"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "шар эсрэг диагональ"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "хар диагональ"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "хөх диагональ"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "бор диагональ"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "номин цэнхэр диагональ"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "саарал диагональ"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "ногоон диагональ"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "цэнхэр диагональ"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "цайвар саарал диагональ"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "цайвар ногоон диагональ"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "ягаан ташуу зураас"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "улбар шар ташуу зураас"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "цайвар ягаан диагональ"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "нил ягаан диагональ"
+  BANNER_STRIPE_DOWNRIGHT_RED: "улаан диагональ"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "цагаан ташуу зураас"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "шар диагональ"
+  BANNER_STRIPE_LEFT_BLACK: "хар зүүн хэсэг"
+  BANNER_STRIPE_LEFT_BLUE: "хөх зүүн хэсэг"
+  BANNER_STRIPE_LEFT_BROWN: "бор зүүн хэсэг"
+  BANNER_STRIPE_LEFT_CYAN: "номин цэнхэр зүүн хэсэг"
+  BANNER_STRIPE_LEFT_GRAY: "саарал зүүн хэсэг"
+  BANNER_STRIPE_LEFT_GREEN: "ногоон зүүн хэсэг"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "цэнхэр зүүн хэсэг"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "цайвар саарал зүүн хэсэг"
+  BANNER_STRIPE_LEFT_LIME: "цайвар ногоон зүүн хэсэг"
+  BANNER_STRIPE_LEFT_MAGENTA: "ягаан зүүн хэсэг"
+  BANNER_STRIPE_LEFT_ORANGE: "улбар шар зүүн хэсэг"
+  BANNER_STRIPE_LEFT_PINK: "цайвар ягаан зүүн хэсэг"
+  BANNER_STRIPE_LEFT_PURPLE: "нил ягаан зүүн хэсэг"
+  BANNER_STRIPE_LEFT_RED: "улаан зүүн хэсэг"
+  BANNER_STRIPE_LEFT_WHITE: "цагаан зүүн хэсэг"
+  BANNER_STRIPE_LEFT_YELLOW: "шар зүүн хэсэг"
+  BANNER_STRIPE_MIDDLE_BLACK: "хар хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_BLUE: "хөх хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_BROWN: "бор хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_CYAN: "номин цэнхэр хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_GRAY: "саарал хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_GREEN: "ногоон хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "цэнхэр хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "цайвар саарал хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_LIME: "цайвар ногоон хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "ягаан хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_ORANGE: "улбар шар хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_PINK: "цайвар ягаан хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_PURPLE: "нил ягаан хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_RED: "улаан хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_WHITE: "цагаан хөндлөн шугам"
+  BANNER_STRIPE_MIDDLE_YELLOW: "шар хөндлөн шугам"
+  BANNER_STRIPE_RIGHT_BLACK: "хар баруун хэсэг"
+  BANNER_STRIPE_RIGHT_BLUE: "хөх баруун хэсэг"
+  BANNER_STRIPE_RIGHT_BROWN: "бор баруун хэсэг"
+  BANNER_STRIPE_RIGHT_CYAN: "номин цэнхэр баруун хэсэг"
+  BANNER_STRIPE_RIGHT_GRAY: "саарал баруун хэсэг"
+  BANNER_STRIPE_RIGHT_GREEN: "ногоон баруун хэсэг"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "цэнхэр баруун хэсэг"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "цайвар саарал баруун хэсэг"
+  BANNER_STRIPE_RIGHT_LIME: "цайвар ногоон баруун хэсэг"
+  BANNER_STRIPE_RIGHT_MAGENTA: "ягаан баруун хэсэг"
+  BANNER_STRIPE_RIGHT_ORANGE: "улбар шар баруун хэсэг"
+  BANNER_STRIPE_RIGHT_PINK: "цайвар ягаан баруун хэсэг"
+  BANNER_STRIPE_RIGHT_PURPLE: "нил ягаан баруун хэсэг"
+  BANNER_STRIPE_RIGHT_RED: "улаан баруун хэсэг"
+  BANNER_STRIPE_RIGHT_WHITE: "цагаан баруун хэсэг"
+  BANNER_STRIPE_RIGHT_YELLOW: "шар баруун хэсэг"
+  BANNER_STRIPE_TOP_BLACK: "хар дээд хэсэг"
+  BANNER_STRIPE_TOP_BLUE: "хөх дээд хэсэг"
+  BANNER_STRIPE_TOP_BROWN: "бор дээд хэсэг"
+  BANNER_STRIPE_TOP_CYAN: "номин цэнхэр дээд хэсэг"
+  BANNER_STRIPE_TOP_GRAY: "саарал дээд хэсэг"
+  BANNER_STRIPE_TOP_GREEN: "ногоон дээд хэсэг"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "цэнхэр дээд хэсэг"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "цайвар саарал дээд хэсэг"
+  BANNER_STRIPE_TOP_LIME: "цайвар ногоон дээд хэсэг"
+  BANNER_STRIPE_TOP_MAGENTA: "ягаан дээд хэсэг"
+  BANNER_STRIPE_TOP_ORANGE: "улбар шар дээд хэсэг"
+  BANNER_STRIPE_TOP_PINK: "цайвар ягаан дээд хэсэг"
+  BANNER_STRIPE_TOP_PURPLE: "нил ягаан дээд хэсэг"
+  BANNER_STRIPE_TOP_RED: "улаан дээд хэсэг"
+  BANNER_STRIPE_TOP_WHITE: "цагаан дээд хэсэг"
+  BANNER_STRIPE_TOP_YELLOW: "шар дээд хэсэг"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "хар дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "хөх дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "бор дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "номин цэнхэр дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "саарал дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "ногоон дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "цэнхэр дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "цайвар саарал дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_LIME: "цайвар ногоон дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "ягаан дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "улбар шар дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_PINK: "цайвар ягаан дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "нил ягаан дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_RED: "улаан дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "цагаан дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "шар дээшээ харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_BLACK: "хар доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_BLUE: "хөх доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_BROWN: "бор доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_CYAN: "номин цэнхэр доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_GRAY: "саарал доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_GREEN: "ногоон доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "цэнхэр доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "цайвар саарал доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_LIME: "цайвар ногоон доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_MAGENTA: "ягаан доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_ORANGE: "улбар шар доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_PINK: "цайвар ягаан доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_PURPLE: "нил ягаан доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_RED: "улаан доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_WHITE: "цагаан доошоо харсан гурвалжин"
+  BANNER_TRIANGLE_TOP_YELLOW: "шар доошоо харсан гурвалжин"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "хар дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "хөх дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "бор дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "номин цэнхэр дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "саарал дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "ногоон дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "цэнхэр дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "цайвар саарал дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_LIME: "цайвар ногоон дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "ягаан дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "улбар шар дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_PINK: "цайвар ягаан дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "нил ягаан дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_RED: "улаан дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "цагаан дээшээ харсан долгион"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "шар дээшээ харсан долгион"
+  BANNER_TRIANGLES_TOP_BLACK: "хар доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_BLUE: "хөх доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_BROWN: "бор доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_CYAN: "номин цэнхэр доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_GRAY: "саарал доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_GREEN: "ногоон доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "цэнхэр доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "цайвар саарал доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_LIME: "цайвар ногоон доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_MAGENTA: "ягаан доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_ORANGE: "улбар шар доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_PINK: "цайвар ягаан доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_PURPLE: "нил ягаан доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_RED: "улаан доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_WHITE: "цагаан доошоо харсан долгион"
+  BANNER_TRIANGLES_TOP_YELLOW: "шар доошоо харсан долгион"
+  BARREL: "торх"
+  BARRIER: "хаалт"
+  BASALT: "базальт"
+  BEACON: "гэрэл цацруулагч"
+  BEACON_PRIMARY: "үндсэн хүч"
+  BEACON_SECONDARY: "хоёрдогч хүч"
+  BED_NO_SLEEP: "шөнө эсвэл аянга цахилгаантай үед л унтаж болно"
+  BED_NOT_SAFE: "эргэн тойрон мангасууд байгаа учраас одоо амарч чадахгүй"
+  BED_OBSTRUCTED: "энэ ор саадтай"
+  BED_OCCUPIED: "энэ ор хүнтэй"
+  BED_TOO_FAR_AWAY: "таны ор хол байгаа учраас одоо амарч чадахгүй"
+  BEDROCK: "үндсэн чулуулаг"
+  BEE_NEST: "зөгийн үүр"
+  BEEHIVE: "зөгийн үүр"
+  BEETROOTS: "улаан манжин"
+  BELL: "хонх"
+  BIG_DRIPLEAF: "том гоожингор навч"
+  BIG_DRIPLEAF_STEM: "том гоожингор навчны иш"
+  BIRCH_BUTTON: "хус модон товч"
+  BIRCH_DOOR: "хус модон хаалга"
+  BIRCH_FENCE: "хус модон хашаа"
+  BIRCH_FENCE_GATE: "хус модон хашааны хаалга"
+  BIRCH_HANGING_SIGN: "хус модон дүүжилдэг самбар"
+  BIRCH_LEAVES: "хус модны навч"
+  BIRCH_LOG: "хус модон дүнз"
+  BIRCH_PLANKS: "хус модон банз"
+  BIRCH_PRESSURE_PLATE: "хус модон даралтын хавтан"
+  BIRCH_SAPLING: "зулзаган хус мод"
+  BIRCH_SIGN: "хус модон самбар"
+  BIRCH_SLAB: "хус модон хавтан"
+  BIRCH_STAIRS: "хус модон шат"
+  BIRCH_TRAPDOOR: "хус модон сөхдөг хаалга"
+  BIRCH_WALL_HANGING_SIGN: "хус модон хананаас дүүжилдэг самбар"
+  BIRCH_WALL_SIGN: "хус модон ханын самбар"
+  BIRCH_WOOD: "хус мод"
+  BLACK_BANNER: "хар туг"
+  BLACK_BED: "хар ор"
+  BLACK_CANDLE: "хар лаа"
+  BLACK_CANDLE_CAKE: "хар лаатай бялуу"
+  BLACK_CARPET: "хар хивс"
+  BLACK_CONCRETE: "хар бетон"
+  BLACK_CONCRETE_POWDER: "хар нунтаг бетон"
+  BLACK_GLAZED_TERRACOTTA: "хар хээтэй шавар"
+  BLACK_SHULKER_BOX: "хар шалкер хайрцаг"
+  BLACK_STAINED_GLASS: "хар будагтай шил"
+  BLACK_STAINED_GLASS_PANE: "хар будагтай шилэн хавтан"
+  BLACK_TERRACOTTA: "хар хатуу шавар"
+  BLACK_WOOL: "хар ноос"
+  BLACKSTONE: "хар чулуу"
+  BLACKSTONE_SLAB: "хар чулуун хавтан"
+  BLACKSTONE_STAIRS: "хар чулуун шат"
+  BLACKSTONE_WALL: "хар чулуун хана"
+  BLAST_FURNACE: "хайлуулах зуух"
+  BLUE_BANNER: "хөх туг"
+  BLUE_BED: "хөх ор"
+  BLUE_CANDLE: "хөх лаа"
+  BLUE_CANDLE_CAKE: "хөх лаатай бялуу"
+  BLUE_CARPET: "хөх хивс"
+  BLUE_CONCRETE: "хөх бетон"
+  BLUE_CONCRETE_POWDER: "хөх нунтаг бетон"
+  BLUE_GLAZED_TERRACOTTA: "хөх хээтэй шавар"
+  BLUE_ICE: "хөх мөс"
+  BLUE_ORCHID: "хөх цахирмаа"
+  BLUE_SHULKER_BOX: "хөх шалкер хайрцаг"
+  BLUE_STAINED_GLASS: "хөх будагтай шил"
+  BLUE_STAINED_GLASS_PANE: "хөх будагтай шилэн хавтан"
+  BLUE_TERRACOTTA: "хөх хатуу шавар"
+  BLUE_WOOL: "хөх ноос"
+  BONE_BLOCK: "ясан блок"
+  BOOKSHELF: "номын тавиур"
+  BRAIN_CORAL: "угалзарсан шүр"
+  BRAIN_CORAL_BLOCK: "угалзарсан шүрэн блок"
+  BRAIN_CORAL_FAN: "угалзарсан шүрэн дэвүүр"
+  BRAIN_CORAL_WALL_FAN: "угалзарсан шүрэн дэвүүр хананд"
+  BREWING_STAND: "ханд нэрэгч"
+  BRICK_SLAB: "тоосгон хавтан"
+  BRICK_STAIRS: "тоосгон шат"
+  BRICK_WALL: "тоосгон хана"
+  BRICKS: "тоосгон блок"
+  BROWN_BANNER: "бор туг"
+  BROWN_BED: "бор ор"
+  BROWN_CANDLE: "бор лаа"
+  BROWN_CANDLE_CAKE: "бор лаатай бялуу"
+  BROWN_CARPET: "бор хивс"
+  BROWN_CONCRETE: "бор бетон"
+  BROWN_CONCRETE_POWDER: "бор нунтаг бетон"
+  BROWN_GLAZED_TERRACOTTA: "бор хээтэй шавар"
+  BROWN_MUSHROOM: "бор мөөг"
+  BROWN_MUSHROOM_BLOCK: "бор мөөгөн блок"
+  BROWN_SHULKER_BOX: "бор шалкер хайрцаг"
+  BROWN_STAINED_GLASS: "бор будагтай шил"
+  BROWN_STAINED_GLASS_PANE: "бор будагтай шилэн хавтан"
+  BROWN_TERRACOTTA: "бор хатуу шавар"
+  BROWN_WOOL: "бор ноос"
+  BUBBLE_COLUMN: "хөөсөн багана"
+  BUBBLE_CORAL: "бөмбөлөг шүр"
+  BUBBLE_CORAL_BLOCK: "бөмбөлөг шүрэн блок"
+  BUBBLE_CORAL_FAN: "бөмбөлөг шүрэн дэвүүр"
+  BUBBLE_CORAL_WALL_FAN: "бөмбөлөг шүрэн дэвүүр хананд"
+  BUDDING_AMETHYST: "нахиалагч ягаан болор"
+  CACTUS: "кактус"
+  CAKE: "бялуу"
+  CALCITE: "кальцит"
+  CALIBRATED_SCULK_SENSOR: "тохируулсан мэдрэгч скалк"
+  CAMPFIRE: "түүдэг гал"
+  CANDLE: "лаа"
+  CANDLE_CAKE: "лаатай бялуу"
+  CARROTS: "лууван"
+  CARTOGRAPHY_TABLE: "зураг зүйн ширээ"
+  CARVED_PUMPKIN: "сийлсэн хулуу"
+  CAULDRON: "тогоо"
+  CAVE_AIR: "агуйн агаар"
+  CAVE_VINES: "агуйн ороонго"
+  CAVE_VINES_PLANT: "агуйн ороонгон ургамал"
+  CHAIN: "гинж"
+  CHAIN_COMMAND_BLOCK: "гинжин тушаалын блок"
+  CHERRY_BUTTON: "интоорын модон товч"
+  CHERRY_DOOR: "интоорын модон хаалга"
+  CHERRY_FENCE: "интоорын модон хашаа"
+  CHERRY_FENCE_GATE: "интоорын модон хашааны хаалга"
+  CHERRY_HANGING_SIGN: "интоорын модон дүүжилдэг самбар"
+  CHERRY_LEAVES: "интоорын модны навч"
+  CHERRY_LOG: "интоорын модон дүнз"
+  CHERRY_PLANKS: "интоорын модон банз"
+  CHERRY_PRESSURE_PLATE: "интоорын модон даралтын хавтан"
+  CHERRY_SAPLING: "зулзаган интоорын мод"
+  CHERRY_SIGN: "интоорын модон самбар"
+  CHERRY_SLAB: "интоорын модон хавтан"
+  CHERRY_STAIRS: "интоорын модон шат"
+  CHERRY_TRAPDOOR: "интоорын модон сөхдөг хаалга"
+  CHERRY_WALL_HANGING_SIGN: "интоорын модон хананаас дүүжилдэг самбар"
+  CHERRY_WALL_SIGN: "интоорын модон ханын самбар"
+  CHERRY_WOOD: "интоорын мод"
+  CHEST: "авдар"
+  CHIPPED_ANVIL: "эмтэрсэн дөш"
+  CHISELED_BOOKSHELF: "сийлбэртэй номын тавиур"
+  CHISELED_COPPER: "сийлсэн зэс"
+  CHISELED_DEEPSLATE: "сийлсэн гүний занар"
+  CHISELED_NETHER_BRICKS: "сийлбэртэй тамын тоосго"
+  CHISELED_POLISHED_BLACKSTONE: "сийлбэртэй өнгөлсөн хар чулуу"
+  CHISELED_QUARTZ_BLOCK: "сийлсэн кварц блок"
+  CHISELED_RED_SANDSTONE: "сийлсэн улаан элсэн чулуу"
+  CHISELED_SANDSTONE: "сийлсэн элсэн чулуу"
+  CHISELED_STONE_BRICKS: "сийлсэн чулуун тоосго"
+  CHISELED_TUFF: "сийлсэн туф"
+  CHISELED_TUFF_BRICKS: "сийлсэн туф тоосго"
+  CHORUS_FLOWER: "дахилтат цэцэг"
+  CHORUS_PLANT: "дахилтат ургамал"
+  CLAY: "шавар"
+  COAL_BLOCK: "нүүрсэн блок"
+  COAL_ORE: "нүүрсны хүдэр"
+  COARSE_DIRT: "чулуутай шороо"
+  COBBLED_DEEPSLATE: "хагархай гүний занар"
+  COBBLED_DEEPSLATE_SLAB: "хагархай гүний занар хавтан"
+  COBBLED_DEEPSLATE_STAIRS: "хагархай гүний занар шат"
+  COBBLED_DEEPSLATE_WALL: "хагархай гүний занар хана"
+  COBBLESTONE: "хагархай чулуу"
+  COBBLESTONE_SLAB: "хагархай чулуун хавтан"
+  COBBLESTONE_STAIRS: "хагархай чулуун шат"
+  COBBLESTONE_WALL: "хагархай чулуун хана"
+  COBWEB: "аалзны тор"
+  COCOA: "какао"
+  COMMAND_BLOCK: "тушаалын блок"
+  COMPARATOR: "редстоун харьцуулагч"
+  COMPOSTER: "бордооны торх"
+  CONDUIT: "далайн хүчний ундарга"
+  COPPER_BLOCK: "зэс блок"
+  COPPER_BULB: "зэс гэрэл"
+  COPPER_DOOR: "зэс хаалга"
+  COPPER_GRATE: "зэс сараалж"
+  COPPER_ORE: "зэсийн хүдэр"
+  COPPER_TRAPDOOR: "зэс сөхдөг хаалга"
+  CORNFLOWER: "хөх хонгорзул"
+  CRACKED_DEEPSLATE_BRICKS: "хагархай гүний занар тоосго"
+  CRACKED_DEEPSLATE_TILES: "дөрвөлжин хээтэй хагархай гүний занар"
+  CRACKED_NETHER_BRICKS: "хагархай тамын тоосго"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "хагархай өнгөлсөн хар чулуун тоосго"
+  CRACKED_STONE_BRICKS: "хагарсан чулуун тоосго"
+  CRAFTER: "урлагч"
+  CRAFTING_TABLE: "урлах ширээ"
+  CREEPER_HEAD: "криперийн толгой"
+  CREEPER_WALL_HEAD: "криперийн толгой хананд"
+  CRIMSON_BUTTON: "нөжит модон товч"
+  CRIMSON_DOOR: "нөжит модон хаалга"
+  CRIMSON_FENCE: "нөжит модон хашаа"
+  CRIMSON_FENCE_GATE: "нөжит модон хашааны хаалга"
+  CRIMSON_FUNGUS: "нөжит мөөг"
+  CRIMSON_HANGING_SIGN: "нөжит модон дүүжилдэг самбар"
+  CRIMSON_HYPHAE: "нөжит мод"
+  CRIMSON_NYLIUM: "нөжит хөрс"
+  CRIMSON_PLANKS: "нөжит модон банз"
+  CRIMSON_PRESSURE_PLATE: "нөжит модон даралтын хавтан"
+  CRIMSON_ROOTS: "нөжит ургамал"
+  CRIMSON_SIGN: "нөжит модон самбар"
+  CRIMSON_SLAB: "нөжит модон хавтан"
+  CRIMSON_STAIRS: "нөжит модон шат"
+  CRIMSON_STEM: "нөжит дүнз"
+  CRIMSON_TRAPDOOR: "нөжит модон сөхдөг хаалга"
+  CRIMSON_WALL_HANGING_SIGN: "нөжит модон хананаас дүүжилдэг самбар"
+  CRIMSON_WALL_SIGN: "нөжит модон хананы самбар"
+  CRYING_OBSIDIAN: "уйлж буй хар шил"
+  CUT_COPPER: "зүсмэл зэс"
+  CUT_COPPER_SLAB: "зүсмэл зэс хавтан"
+  CUT_COPPER_STAIRS: "зүсмэл зэс шат"
+  CUT_RED_SANDSTONE: "өөлсөн улаан элсэн чулуу"
+  CUT_RED_SANDSTONE_SLAB: "өөлсөн улаан элсэн чулуун хавтан"
+  CUT_SANDSTONE: "өөлсөн элсэн чулуу"
+  CUT_SANDSTONE_SLAB: "өөлсөн элсэн чулуун хавтан"
+  CYAN_BANNER: "номин цэнхэр туг"
+  CYAN_BED: "номин цэнхэр ор"
+  CYAN_CANDLE: "номин цэнхэр лаа"
+  CYAN_CANDLE_CAKE: "номин цэнхэр лаатай бялуу"
+  CYAN_CARPET: "номин цэнхэр хивс"
+  CYAN_CONCRETE: "номин цэнхэр бетон"
+  CYAN_CONCRETE_POWDER: "номин цэнхэр нунтаг бетон"
+  CYAN_GLAZED_TERRACOTTA: "номин цэнхэр хээтэй шавар"
+  CYAN_SHULKER_BOX: "цэнхэр шалкер хайрцаг"
+  CYAN_STAINED_GLASS: "номин цэнхэр будагтай шил"
+  CYAN_STAINED_GLASS_PANE: "номин цэнхэр будагтай шилэн хавтан"
+  CYAN_TERRACOTTA: "цэнхэр хатуу шавар"
+  CYAN_WOOL: "номин цэнхэр ноос"
+  DAMAGED_ANVIL: "эвдэрсэн дөш"
+  DANDELION: "багваахай"
+  DARK_OAK_BUTTON: "хар царс модон товч"
+  DARK_OAK_DOOR: "хар царс модон хаалга"
+  DARK_OAK_FENCE: "хар царс модон хашаа"
+  DARK_OAK_FENCE_GATE: "хар царс модон хашааны хаалга"
+  DARK_OAK_HANGING_SIGN: "хар царс модон дүүжилдэг самбар"
+  DARK_OAK_LEAVES: "хар царс модны навч"
+  DARK_OAK_LOG: "хар царс модон дүнз"
+  DARK_OAK_PLANKS: "хар царс модон банз"
+  DARK_OAK_PRESSURE_PLATE: "хар царс модон даралтын хавтан"
+  DARK_OAK_SAPLING: "зулзаган хар царс мод"
+  DARK_OAK_SIGN: "хар царс модон самбар"
+  DARK_OAK_SLAB: "хар царс модон хавтан"
+  DARK_OAK_STAIRS: "хар царс модон шат"
+  DARK_OAK_TRAPDOOR: "хар царс модон сөхдөг хаалга"
+  DARK_OAK_WALL_HANGING_SIGN: "хар царс модон хананаас дүүжилдэг самбар"
+  DARK_OAK_WALL_SIGN: "хар царс модон ханын самбар"
+  DARK_OAK_WOOD: "хар царс мод"
+  DARK_PRISMARINE: "хар присмарин"
+  DARK_PRISMARINE_SLAB: "хар присмарин хавтан"
+  DARK_PRISMARINE_STAIRS: "хар присмарин шат"
+  DAYLIGHT_DETECTOR: "нарны гэрэл мэдрэгч"
+  DEAD_BRAIN_CORAL: "үхсэн угалзарсан шүр"
+  DEAD_BRAIN_CORAL_BLOCK: "үхсэн угалзарсан шүрэн блок"
+  DEAD_BRAIN_CORAL_FAN: "үхсэн угалзарсан шүрэн дэвүүр"
+  DEAD_BRAIN_CORAL_WALL_FAN: "үхсэн угалзарсан шүрэн дэвүүр хананд"
+  DEAD_BUBBLE_CORAL: "үхсэн бөмбөлөг шүр"
+  DEAD_BUBBLE_CORAL_BLOCK: "үхсэн бөмбөлөг шүрэн блок"
+  DEAD_BUBBLE_CORAL_FAN: "үхсэн бөмбөлөг шүрэн дэвүүр"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "үхсэн бөмбөлөг шүрэн дэвүүр хананд"
+  DEAD_BUSH: "үхсэн бут"
+  DEAD_FIRE_CORAL: "үхсэн гал шүр"
+  DEAD_FIRE_CORAL_BLOCK: "үхсэн гал шүрэн блок"
+  DEAD_FIRE_CORAL_FAN: "үхсэн гал шүрэн дэвүүр"
+  DEAD_FIRE_CORAL_WALL_FAN: "үхсэн гал шүрэн дэвүүр хананд"
+  DEAD_HORN_CORAL: "үхсэн эвэр шүр"
+  DEAD_HORN_CORAL_BLOCK: "үхсэн эвэр шүрэн блок"
+  DEAD_HORN_CORAL_FAN: "үхсэн эвэр шүрэн дэвүүр"
+  DEAD_HORN_CORAL_WALL_FAN: "үхсэн эвэр шүрэн дэвүүр хананд"
+  DEAD_TUBE_CORAL: "үхсэн хоолой шүр"
+  DEAD_TUBE_CORAL_BLOCK: "үхсэн хоолой шүрэн блок"
+  DEAD_TUBE_CORAL_FAN: "үхсэн хоолой шүрэн дэвүүр"
+  DEAD_TUBE_CORAL_WALL_FAN: "үхсэн хоолой хананы шүр"
+  DECORATED_POT: "чимэглэсэн ваар"
+  DEEPSLATE: "гүний занар"
+  DEEPSLATE_BRICK_SLAB: "гүний занар тоосгон хавтан"
+  DEEPSLATE_BRICK_STAIRS: "гүний занар тоосгон шат"
+  DEEPSLATE_BRICK_WALL: "гүний занар тоосгон хана"
+  DEEPSLATE_BRICKS: "гүний занар тоосго"
+  DEEPSLATE_COAL_ORE: "гүний занар дахь нүүрсний хүдэр"
+  DEEPSLATE_COPPER_ORE: "гүний занар дахь зэсийн хүдэр"
+  DEEPSLATE_DIAMOND_ORE: "гүний занар дахь амлаасын хүдэр"
+  DEEPSLATE_EMERALD_ORE: "гүний занар дахь маргадын хүдэр"
+  DEEPSLATE_GOLD_ORE: "гүний занар дахь алтны хүдэр"
+  DEEPSLATE_IRON_ORE: "гүний занар дахь төмрийн хүдэр"
+  DEEPSLATE_LAPIS_ORE: "гүний занар дахь номин чулууны хүдэр"
+  DEEPSLATE_REDSTONE_ORE: "гүний занар дахь улаан чулууны хүдэр"
+  DEEPSLATE_TILE_SLAB: "дөрвөлжин хээтэй гүний занар хавтан"
+  DEEPSLATE_TILE_STAIRS: "дөрвөлжин хээтэй гүний занар шат"
+  DEEPSLATE_TILE_WALL: "дөрвөлжин хээтэй гүний занар хана"
+  DEEPSLATE_TILES: "дөрвөлжин хээтэй гүний занар"
+  DETECTOR_RAIL: "илрүүлэгч төмөр зам"
+  DIAMOND_BLOCK: "алмаас эрдэнэн блок"
+  DIAMOND_ORE: "алмаасын хүдэр"
+  DIORITE: "диорит"
+  DIORITE_SLAB: "диорит хавтан"
+  DIORITE_STAIRS: "диорит шат"
+  DIORITE_WALL: "диорит хана"
+  DIRT: "шороо"
+  DIRT_PATH: "шороон зам"
+  DISPENSER: "харвагч"
+  DRAGON_EGG: "луугийн өндөг"
+  DRAGON_HEAD: "лууны толгой"
+  DRAGON_WALL_HEAD: "лууны толгой хананд"
+  DRIED_KELP_BLOCK: "хатаасан замган блок"
+  DRIPSTONE_BLOCK: "бана блок"
+  DROPPER: "унагагч"
+  EMERALD_BLOCK: "маргад блок"
+  EMERALD_ORE: "маргадын хүдэр"
+  ENCHANTING_TABLE: "ид шидийн ширээ"
+  END_GATEWAY: "ээндийн гарц"
+  END_PORTAL: "ээндийн хаалга"
+  END_PORTAL_FRAME: "ээндийн хаалганы хүрээ"
+  END_ROD: "ээндийн савх"
+  END_STONE: "ээндийн чулуу"
+  END_STONE_BRICK_SLAB: "ээндийн чулуун тоосгон хавтан"
+  END_STONE_BRICK_STAIRS: "ээндийн чулуун тоосгон шат"
+  END_STONE_BRICK_WALL: "ээндийн чулуун тоосгон хана"
+  END_STONE_BRICKS: "ээндийн чулуун тоосго"
+  ENDER_CHEST: "ээндэрийн авдар"
+  EXPOSED_CHISELED_COPPER: "өгөршсөн сийлсэн зэс"
+  EXPOSED_COPPER: "өгөршсөн зэс"
+  EXPOSED_COPPER_BULB: "өгөршсөн зэс гэрэл"
+  EXPOSED_COPPER_DOOR: "өгөршсөн зэс хаалга"
+  EXPOSED_COPPER_GRATE: "өгөршсөн зэс сараалж"
+  EXPOSED_COPPER_TRAPDOOR: "өгөршсөн зэс сөхдөг хаалга"
+  EXPOSED_CUT_COPPER: "өгөршсөн зүсмэл зэс"
+  EXPOSED_CUT_COPPER_SLAB: "өгөршсөн зүсмэл зэс хавтан"
+  EXPOSED_CUT_COPPER_STAIRS: "өгөршсөн зүсмэл зэс шат"
+  FARMLAND: "хагалсан газар"
+  FERN: "ойм"
+  FIRE: "гал"
+  FIRE_CORAL: "гал шүр"
+  FIRE_CORAL_BLOCK: "гал шүрэн блок"
+  FIRE_CORAL_FAN: "гал шүрэн дэвүүр"
+  FIRE_CORAL_WALL_FAN: "гал шүрэн дэвүүр хананд"
+  FLETCHING_TABLE: "нум сум урлах ширээ"
+  FLOWER_POT: "цэцгийн сав"
+  FLOWERING_AZALEA: "цэцэглэсэн азалиа"
+  FLOWERING_AZALEA_LEAVES: "цэцэглэсэн азалиан навч"
+  FROGSPAWN: "мэлхийн түрс"
+  FROSTED_ICE: "царцсан мөс"
+  FURNACE: "зуух"
+  GILDED_BLACKSTONE: "алтадсан хар чулуу"
+  GLASS: "шил"
+  GLASS_PANE: "шилэн хавтан"
+  GLOW_LICHEN: "гэрэлт хаг"
+  GLOWSTONE: "гэрэлт чулуу"
+  GOLD_BLOCK: "алтан блок"
+  GOLD_ORE: "алтны хүдэр"
+  GRANITE: "боржин"
+  GRANITE_SLAB: "боржин хавтан"
+  GRANITE_STAIRS: "боржин шат"
+  GRANITE_WALL: "боржин хана"
+  GRASS: "өвс"
+  GRASS_BLOCK: "өвстэй хөрс"
+  GRAVEL: "хайрга"
+  GRAY_BANNER: "саарал туг"
+  GRAY_BED: "саарал ор"
+  GRAY_CANDLE: "саарал лаа"
+  GRAY_CANDLE_CAKE: "саарал лаатай бялуу"
+  GRAY_CARPET: "саарал хивс"
+  GRAY_CONCRETE: "саарал бетон"
+  GRAY_CONCRETE_POWDER: "саарал нунтаг бетон"
+  GRAY_GLAZED_TERRACOTTA: "саарал хээтэй шавар"
+  GRAY_SHULKER_BOX: "саарал шалкер хайрцаг"
+  GRAY_STAINED_GLASS: "саарал будагтай шил"
+  GRAY_STAINED_GLASS_PANE: "саарал будагтай шилэн хавтан"
+  GRAY_TERRACOTTA: "саарал хатуу шавар"
+  GRAY_WOOL: "саарал ноос"
+  GREEN_BANNER: "ногоон туг"
+  GREEN_BED: "ногоон ор"
+  GREEN_CANDLE: "ногоон лаа"
+  GREEN_CANDLE_CAKE: "ногоон лаатай бялуу"
+  GREEN_CARPET: "ногоон хивс"
+  GREEN_CONCRETE: "ногоон бетон"
+  GREEN_CONCRETE_POWDER: "ногоон нунтаг бетон"
+  GREEN_GLAZED_TERRACOTTA: "ногоон хээтэй шавар"
+  GREEN_SHULKER_BOX: "ногоон шалкер хайрцаг"
+  GREEN_STAINED_GLASS: "ногоон будагтай шил"
+  GREEN_STAINED_GLASS_PANE: "ногоон будагтай шилэн хавтан"
+  GREEN_TERRACOTTA: "ногоон хатуу шавар"
+  GREEN_WOOL: "ногоон ноос"
+  GRINDSTONE: "билүү"
+  HANGING_ROOTS: "унжиж буй үндэс"
+  HAY_BLOCK: "бухал өвс"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "хүнд жингийн даралтын хавтан"
+  HONEY_BLOCK: "зөгийн балан блок"
+  HONEYCOMB_BLOCK: "зөгийн сархинаган блок"
+  HOPPER: "гулгуулагч"
+  HORN_CORAL: "эвэр шүр"
+  HORN_CORAL_BLOCK: "эвэр шүрэн блок"
+  HORN_CORAL_FAN: "эвэр шүрэн дэвүүр"
+  HORN_CORAL_WALL_FAN: "эвэр шүрэн дэвүүр хананд"
+  ICE: "мөс"
+  INFESTED_CHISELED_STONE_BRICKS: "язганах сийлсэн чулуун тоосго"
+  INFESTED_COBBLESTONE: "язганах хагархай чулуу"
+  INFESTED_CRACKED_STONE_BRICKS: "язганах хөвдтэй чулуун тоосго"
+  INFESTED_DEEPSLATE: "өтсөн гүний занар"
+  INFESTED_MOSSY_STONE_BRICKS: "язганах хөвдтэй хагархай чулуу"
+  INFESTED_STONE: "өтсөн чулуу"
+  INFESTED_STONE_BRICKS: "язганах чулуун тоосго"
+  IRON_BARS: "төмөр тор"
+  IRON_BLOCK: "төмөр блок"
+  IRON_DOOR: "төмөр хаалга"
+  IRON_ORE: "төмрийн хүдэр"
+  IRON_TRAPDOOR: "төмөр сөхдөг хаалга"
+  JACK_O_LANTERN: "гэрэлт хулуу"
+  JIGSAW: "эвлүүлдэг блок"
+  JUKEBOX: "пянз тоглуулагч"
+  JUNGLE_BUTTON: "ширэнгэн ойн модон товч"
+  JUNGLE_DOOR: "ширэнгэн ойн модон хаалга"
+  JUNGLE_FENCE: "ширэнгэн ойн модон хашаа"
+  JUNGLE_FENCE_GATE: "ширэнгэн ойн модон хашааны хаалга"
+  JUNGLE_HANGING_SIGN: "ширэнгэн ойн модон дүүжилдэг самбар"
+  JUNGLE_LEAVES: "ширэнгэн ойн модны навч"
+  JUNGLE_LOG: "ширэнгэн ойн модон дүнз"
+  JUNGLE_PLANKS: "ширэнгэн ойн модон банз"
+  JUNGLE_PRESSURE_PLATE: "ширэнгэн ойн модон даралтын хавтан"
+  JUNGLE_SAPLING: "зулзаган ширэнгэн ойн мод"
+  JUNGLE_SIGN: "ширэнгэн ойн модон самбар"
+  JUNGLE_SLAB: "ширэнгэн ойн модон хавтан"
+  JUNGLE_STAIRS: "ширэнгэн ойн модон шат"
+  JUNGLE_TRAPDOOR: "ширэнгэн ойн модон сөхдөг хаалга"
+  JUNGLE_WALL_HANGING_SIGN: "ширэнгэн ойн модон хананаас дүүжилдэг самбар"
+  JUNGLE_WALL_SIGN: "ширэнгэн ойн модон ханын самбар"
+  JUNGLE_WOOD: "ширэнгэн ойн мод"
+  KELP: "замаг"
+  KELP_PLANT: "замагны иш"
+  LADDER: "босоо шат"
+  LANTERN: "дэнлүү"
+  LAPIS_BLOCK: "номин чулуун блок"
+  LAPIS_ORE: "номин чулууны хүдэр"
+  LARGE_AMETHYST_BUD: "ягаан болрын том нахиа"
+  LARGE_FERN: "том ойм"
+  LAVA: "хайлмаг"
+  LAVA_CAULDRON: "хайлмагтай тогоо"
+  LECTERN: "индэр"
+  LEVER: "хөшүүрэг"
+  LIGHT: "гэрэл"
+  LIGHT_BLUE_BANNER: "цэнхэр туг"
+  LIGHT_BLUE_BED: "цэнхэр ор"
+  LIGHT_BLUE_CANDLE: "цайвар цэнхэр лаа"
+  LIGHT_BLUE_CANDLE_CAKE: "цэнхэр лаатай бялуу"
+  LIGHT_BLUE_CARPET: "цэнхэр хивс"
+  LIGHT_BLUE_CONCRETE: "цэнхэр бетон"
+  LIGHT_BLUE_CONCRETE_POWDER: "цэнхэр нунтаг бетон"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "цэнхэр хээтэй шавар"
+  LIGHT_BLUE_SHULKER_BOX: "цэнхэр шалкер хайрцаг"
+  LIGHT_BLUE_STAINED_GLASS: "цэнхэр будагтай шил"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "цэнхэр будагтай шилэн хавтан"
+  LIGHT_BLUE_TERRACOTTA: "цэнхэр хатуу шавар"
+  LIGHT_BLUE_WOOL: "цэнхэр ноос"
+  LIGHT_GRAY_BANNER: "цайвар саарал туг"
+  LIGHT_GRAY_BED: "цайвар саарал ор"
+  LIGHT_GRAY_CANDLE: "цайвар саарал лаа"
+  LIGHT_GRAY_CANDLE_CAKE: "цайвар саарал лаатай бялуу"
+  LIGHT_GRAY_CARPET: "цайвар саарал хивс"
+  LIGHT_GRAY_CONCRETE: "цайвар саарал бетон"
+  LIGHT_GRAY_CONCRETE_POWDER: "цайвар саарал нунтаг бетон"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "цайвар саарал хээтэй шавар"
+  LIGHT_GRAY_SHULKER_BOX: "цайвар саарал шалкер хайрцаг"
+  LIGHT_GRAY_STAINED_GLASS: "цайвар саарал будагтай шил"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "цайвар саарал будагтай шилэн хавтан"
+  LIGHT_GRAY_TERRACOTTA: "цайвар саарал хатуу шавар"
+  LIGHT_GRAY_WOOL: "цайвар саарал ноос"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "хөнгөн жингийн даралтын хавтан"
+  LIGHTNING_ROD: "аянга газардуулагч"
+  LILAC: "голт бор"
+  LILY_OF_THE_VALLEY: "хөндийн сараана"
+  LILY_PAD: "сарааны дэлбээ"
+  LIME_BANNER: "цайвар ногоон туг"
+  LIME_BED: "цайвар ногоон ор"
+  LIME_CANDLE: "цайвар ногоон лаа"
+  LIME_CANDLE_CAKE: "цайвар ногоон лаатай бялуу"
+  LIME_CARPET: "цайвар ногоон хивс"
+  LIME_CONCRETE: "цайвар ногоон бетон"
+  LIME_CONCRETE_POWDER: "цайвар ногоон нунтаг бетон"
+  LIME_GLAZED_TERRACOTTA: "цайвар ногоон хээтэй шавар"
+  LIME_SHULKER_BOX: "цайвар ногоон шалкер хайрцаг"
+  LIME_STAINED_GLASS: "цайвар ногоон будагтай шил"
+  LIME_STAINED_GLASS_PANE: "цайвар ногоон будагтай шилэн хавтан"
+  LIME_TERRACOTTA: "цайвар ногоон хатуу шавар"
+  LIME_WOOL: "цайвар ногоон ноос"
+  LODESTONE: "чиглүүлэгч чулуу"
+  LOOM: "нэхмэлийн машин"
+  MAGENTA_BANNER: "ягаан туг"
+  MAGENTA_BED: "ягаан ор"
+  MAGENTA_CANDLE: "ягаан лаа"
+  MAGENTA_CANDLE_CAKE: "ягаан лаатай бялуу"
+  MAGENTA_CARPET: "ягаан хивс"
+  MAGENTA_CONCRETE: "ягаан бетон"
+  MAGENTA_CONCRETE_POWDER: "ягаан нунтаг бетон"
+  MAGENTA_GLAZED_TERRACOTTA: "ягаан хээтэй шавар"
+  MAGENTA_SHULKER_BOX: "ягаан шалкер хайрцаг"
+  MAGENTA_STAINED_GLASS: "ягаан будагтай шил"
+  MAGENTA_STAINED_GLASS_PANE: "ягаан будагтай шилэн хавтан"
+  MAGENTA_TERRACOTTA: "ягаан хатуу шавар"
+  MAGENTA_WOOL: "ягаан ноос"
+  MAGMA_BLOCK: "хайлмагтай чулуу"
+  MANGROVE_BUTTON: "мангро модон товч"
+  MANGROVE_DOOR: "мангро модон хаалга"
+  MANGROVE_FENCE: "мангро модон хашаа"
+  MANGROVE_FENCE_GATE: "мангро модон хашааны хаалга"
+  MANGROVE_HANGING_SIGN: "мангро модон дүүжилдэг самбар"
+  MANGROVE_LEAVES: "мангро модны навч"
+  MANGROVE_LOG: "мангро модон дүнз"
+  MANGROVE_PLANKS: "мангро модон банз"
+  MANGROVE_PRESSURE_PLATE: "мангро модон даралтын хавтан"
+  MANGROVE_PROPAGULE: "мангро нахиа"
+  MANGROVE_ROOTS: "мангро модны үндэс"
+  MANGROVE_SIGN: "мангро модон самбар"
+  MANGROVE_SLAB: "мангро модон хавтан"
+  MANGROVE_STAIRS: "мангро модон шат"
+  MANGROVE_TRAPDOOR: "мангро модон сөхдөг хаалга"
+  MANGROVE_WALL_HANGING_SIGN: "мангро модон хананаас дүүжилдэг самбар"
+  MANGROVE_WALL_SIGN: "мангро модон ханын самбар"
+  MANGROVE_WOOD: "мангро мод"
+  MEDIUM_AMETHYST_BUD: "ягаан болрын жижиг нахиа"
+  MELON: "тарвас"
+  MELON_STEM: "тарвасны иш"
+  MOSS_BLOCK: "хөвдөн блок"
+  MOSS_CARPET: "хөвдөн дэвсгэр"
+  MOSSY_COBBLESTONE: "хөвдтэй хагархай чулуу"
+  MOSSY_COBBLESTONE_SLAB: "хөвдтэй хагархай чулуун хавтан"
+  MOSSY_COBBLESTONE_STAIRS: "хөвдтэй хагархай чулуун шат"
+  MOSSY_COBBLESTONE_WALL: "хөвдтэй хагархай чулуун хана"
+  MOSSY_STONE_BRICK_SLAB: "хөвдтэй чулуун тоосгон хавтан"
+  MOSSY_STONE_BRICK_STAIRS: "хөвдтэй чулуун тоосгон шат"
+  MOSSY_STONE_BRICK_WALL: "хөвдтэй чулуун тоосгон хана"
+  MOSSY_STONE_BRICKS: "хөвдтэй чулуун тоосго"
+  MOVING_PISTON: "хөдөлж буй түлхэгч"
+  MUD: "шавх"
+  MUD_BRICK_SLAB: "шавх тоосгон хавтан"
+  MUD_BRICK_STAIRS: "шавх тоосгон шат"
+  MUD_BRICK_WALL: "шавх тоосгон хана"
+  MUD_BRICKS: "шавх тоосго"
+  MUDDY_MANGROVE_ROOTS: "шаварлаг мангро модны үндэс"
+  MUSHROOM_STEM: "мөөгний иш"
+  MYCELIUM: "мөөгний хөрс"
+  NETHER_BRICK_FENCE: "тамын тоосгон хашаа"
+  NETHER_BRICK_SLAB: "тамын тоосгон хавтан"
+  NETHER_BRICK_STAIRS: "тамын тоосгон шат"
+  NETHER_BRICK_WALL: "тамын тоосгон хана"
+  NETHER_BRICKS: "тамын тоосго"
+  NETHER_GOLD_ORE: "тамын алтны хүдэр"
+  NETHER_PORTAL: "тамын хаалга"
+  NETHER_QUARTZ_ORE: "кварцын хүдэр"
+  NETHER_SPROUTS: "тамын нахиа"
+  NETHER_WART: "тамын үү"
+  NETHER_WART_BLOCK: "тамын үүн блок"
+  NETHERITE_BLOCK: "недерит блок"
+  NETHERRACK: "тамын чулуу"
+  NOTE_BLOCK: "хөгжим"
+  OAK_BUTTON: "царс модон товч"
+  OAK_DOOR: "царс модон хаалга"
+  OAK_FENCE: "царс модон хашаа"
+  OAK_FENCE_GATE: "царс модон хашааны хаалга"
+  OAK_HANGING_SIGN: "царс модон дүүжилдэг самбар"
+  OAK_LEAVES: "царс модны навч"
+  OAK_LOG: "царс модон дүнз"
+  OAK_PLANKS: "царс модон банз"
+  OAK_PRESSURE_PLATE: "царс модон даралтын хавтан"
+  OAK_SAPLING: "зулзаган царс мод"
+  OAK_SIGN: "царс модон самбар"
+  OAK_SLAB: "царс модон хавтан"
+  OAK_STAIRS: "царс модон шат"
+  OAK_TRAPDOOR: "царс модон сөхдөг хаалга"
+  OAK_WALL_HANGING_SIGN: "царс модон хананаас дүүжилдэг самбар"
+  OAK_WALL_SIGN: "царс модон ханын самбар"
+  OAK_WOOD: "царс мод"
+  OBSERVER: "ажиглагч"
+  OBSIDIAN: "хар шил"
+  OCHRE_FROGLIGHT: "шаргал мэлхийн гэрэл"
+  OMINOUS_BANNER: "муу ёрын туг"
+  ORANGE_BANNER: "улбар шар туг"
+  ORANGE_BED: "улбар шар ор"
+  ORANGE_CANDLE: "улбар шар лаа"
+  ORANGE_CANDLE_CAKE: "улбар шар лаатай бялуу"
+  ORANGE_CARPET: "улбар шар хивс"
+  ORANGE_CONCRETE: "улбар шар бетон"
+  ORANGE_CONCRETE_POWDER: "улбар шар нунтаг бетон"
+  ORANGE_GLAZED_TERRACOTTA: "улбар шар хээтэй шавар"
+  ORANGE_SHULKER_BOX: "улбар шар шалкер хайрцаг"
+  ORANGE_STAINED_GLASS: "улбар шар будагтай шил"
+  ORANGE_STAINED_GLASS_PANE: "улбар шар будагтай шилэн хавтан"
+  ORANGE_TERRACOTTA: "улбар шар хатуу шавар"
+  ORANGE_TULIP: "улбар шар алтанзул"
+  ORANGE_WOOL: "улбар шар ноос"
+  OXEYE_DAISY: "хонин нүд"
+  OXIDIZED_CHISELED_COPPER: "бүрэн исэлдсэн сийлсэн зэс"
+  OXIDIZED_COPPER: "бүрэн исэлдсэн зэс"
+  OXIDIZED_COPPER_BULB: "бүрэн исэлдсэн зэс гэрэл"
+  OXIDIZED_COPPER_DOOR: "бүрэн исэлдсэн зэс хаалга"
+  OXIDIZED_COPPER_GRATE: "бүрэн исэлдсэн зэс сараалж"
+  OXIDIZED_COPPER_TRAPDOOR: "бүрэн исэлдсэн зэс сөхдөг хаалга"
+  OXIDIZED_CUT_COPPER: "бүрэн исэлдсэн зүсмэл зэс"
+  OXIDIZED_CUT_COPPER_SLAB: "бүрэн исэлдсэн зүсмэл зэс хавтан"
+  OXIDIZED_CUT_COPPER_STAIRS: "бүрэн исэлдсэн зүсмэл зэс шат"
+  PACKED_ICE: "нягт мөс"
+  PACKED_MUD: "багцалсан шавх"
+  PEARLESCENT_FROGLIGHT: "сувдан мэлхийн гэрэл"
+  PEONY: "цээнэ"
+  PETRIFIED_OAK_SLAB: "чулуужсан царс модон хавтан"
+  PIGLIN_HEAD: "пиглиний толгой"
+  PIGLIN_WALL_HEAD: "пиглиний толгой хананд"
+  PINK_BANNER: "цайвар ягаан туг"
+  PINK_BED: "ягаан ор"
+  PINK_CANDLE: "цайвар ягаан лаа"
+  PINK_CANDLE_CAKE: "цайвар ягаан лаатай бялуу"
+  PINK_CARPET: "цайвар ягаан хивс"
+  PINK_CONCRETE: "цайвар ягаан бетон"
+  PINK_CONCRETE_POWDER: "цайвар ягаан нунтаг бетон"
+  PINK_GLAZED_TERRACOTTA: "цайвар ягаан хээтэй шавар"
+  PINK_PETALS: "ягаан дэлбээ"
+  PINK_SHULKER_BOX: "цайвар ягаан шалкер хайрцаг"
+  PINK_STAINED_GLASS: "цайвар ягаан будагтай шил"
+  PINK_STAINED_GLASS_PANE: "цайвар ягаан будагтай шилэн хавтан"
+  PINK_TERRACOTTA: "цайвар ягаан хатуу шавар"
+  PINK_TULIP: "ягаан алтанзул"
+  PINK_WOOL: "цайвар ягаан ноос"
+  PISTON: "түлхэгч"
+  PISTON_HEAD: "түлхэгчийн толгой"
+  PITCHER_CROP: "саррацени ургац"
+  PITCHER_PLANT: "саррацени"
+  PLAYER_HEAD: "тоглогчийн толгой"
+  PLAYER_HEAD_NAMED: "%s-н толгой"
+  PLAYER_WALL_HEAD: "тоглогчийн толгой хананд"
+  PODZOL: "шилмүүст хөрс"
+  POINTED_DRIPSTONE: "бана"
+  POLISHED_ANDESITE: "өнгөлсөн андезит"
+  POLISHED_ANDESITE_SLAB: "өнгөлсөн андезит хавтан"
+  POLISHED_ANDESITE_STAIRS: "өнгөлсөн андезит шат"
+  POLISHED_BASALT: "өнгөлсөн базальт"
+  POLISHED_BLACKSTONE: "өнгөлсөн хар чулуу"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "өнгөлсөн хар чулуун тоосгон хавтан"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "өнгөлсөн хар чулуун тоосгон шат"
+  POLISHED_BLACKSTONE_BRICK_WALL: "өнгөлсөн хар чулуун тоосгон хана"
+  POLISHED_BLACKSTONE_BRICKS: "өнгөлсөн хар чулуун тоосго"
+  POLISHED_BLACKSTONE_BUTTON: "өнгөлсөн хар чулуун товч"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "өнгөлсөн хар чулуун даралтын хавтан"
+  POLISHED_BLACKSTONE_SLAB: "өнгөлсөн хар чулуун хавтан"
+  POLISHED_BLACKSTONE_STAIRS: "өнгөлсөн хар чулуун шат"
+  POLISHED_BLACKSTONE_WALL: "өнгөлсөн хар чулуун хана"
+  POLISHED_DEEPSLATE: "гөлгөр гүний занар"
+  POLISHED_DEEPSLATE_SLAB: "гөлгөр гүний занар хавтан"
+  POLISHED_DEEPSLATE_STAIRS: "гөлгөр гүний занар шат"
+  POLISHED_DEEPSLATE_WALL: "гөлгөр гүний занар хана"
+  POLISHED_DIORITE: "өнгөлсөн диорит"
+  POLISHED_DIORITE_SLAB: "өнгөлсөн диорит хавтан"
+  POLISHED_DIORITE_STAIRS: "өнгөлсөн диорит шат"
+  POLISHED_GRANITE: "өнгөлсөн боржин"
+  POLISHED_GRANITE_SLAB: "өнгөлсөн боржин хавтан"
+  POLISHED_GRANITE_STAIRS: "өнгөлсөн боржин шат"
+  POLISHED_TUFF: "өнгөлсөн туф"
+  POLISHED_TUFF_SLAB: "өнгөлсөн туф хавтан"
+  POLISHED_TUFF_STAIRS: "өнгөлсөн туф шат"
+  POLISHED_TUFF_WALL: "өнгөлсөн туф хана"
+  POPPY: "намуу"
+  POTATOES: "төмс"
+  POTTED_ACACIA_SAPLING: "ваартай зулзаган хуайс мод"
+  POTTED_ALLIUM: "ваартай халиар"
+  POTTED_AZALEA_BUSH: "ваартай азалиа"
+  POTTED_AZURE_BLUET: "ваартай хонгорзул"
+  POTTED_BAMBOO: "ваартай хулс"
+  POTTED_BIRCH_SAPLING: "ваартай зулзаган хус мод"
+  POTTED_BLUE_ORCHID: "ваартай хөх цахирмаа"
+  POTTED_BROWN_MUSHROOM: "ваартай бор мөөг"
+  POTTED_CACTUS: "ваартай кактус"
+  POTTED_CHERRY_SAPLING: "ваартай зулзаган интоорын мод"
+  POTTED_CORNFLOWER: "ваартай хөх хонгорзул"
+  POTTED_CRIMSON_FUNGUS: "ваартай нөжит мөөг"
+  POTTED_CRIMSON_ROOTS: "ваартай нөжит ургамал"
+  POTTED_DANDELION: "ваартай багваахай"
+  POTTED_DARK_OAK_SAPLING: "ваартай зулзаган хар царс мод"
+  POTTED_DEAD_BUSH: "ваартай үхсэн бут"
+  POTTED_FERN: "ваартай ойм"
+  POTTED_FLOWERING_AZALEA_BUSH: "ваартай цэцэглэсэн азалиа"
+  POTTED_JUNGLE_SAPLING: "ваартай зулзаган ширэнгэн ойн мод"
+  POTTED_LILY_OF_THE_VALLEY: "ваартай хөндийн сараана"
+  POTTED_MANGROVE_PROPAGULE: "ваартай мангро нахиа"
+  POTTED_OAK_SAPLING: "ваартай зулзаган царс мод"
+  POTTED_ORANGE_TULIP: "ваартай улбар шар алтанзул"
+  POTTED_OXEYE_DAISY: "ваартай хонин нүд"
+  POTTED_PINK_TULIP: "ваартай ягаан алтанзул"
+  POTTED_POPPY: "ваартай намуу"
+  POTTED_RED_MUSHROOM: "ваартай улаан мөөг"
+  POTTED_RED_TULIP: "ваартай улаан алтанзул"
+  POTTED_SPRUCE_SAPLING: "ваартай зулзаган гацуур мод"
+  POTTED_TORCHFLOWER: "ваартай бамбар цэцэг"
+  POTTED_WARPED_FUNGUS: "ваартай гажуудсан мөөг"
+  POTTED_WARPED_ROOTS: "ваартай гажуудсан ургамал"
+  POTTED_WHITE_TULIP: "ваартай цагаан алтанзул"
+  POTTED_WITHER_ROSE: "ваартай витерийн сарнай"
+  POWDER_SNOW: "сэвсгэр цас"
+  POWDER_SNOW_CAULDRON: "сэвсгэр цастай тогоо"
+  POWERED_RAIL: "хүчжүүлсэн төмөр зам"
+  PRISMARINE: "присмарин"
+  PRISMARINE_BRICK_SLAB: "присмарин тоосгон хавтан"
+  PRISMARINE_BRICK_STAIRS: "присмарин тоосгон шат"
+  PRISMARINE_BRICKS: "присмарин тоосго"
+  PRISMARINE_SLAB: "присмарин хавтан"
+  PRISMARINE_STAIRS: "присмарин шат"
+  PRISMARINE_WALL: "присмарин хана"
+  PUMPKIN: "хулуу"
+  PUMPKIN_STEM: "хулууны иш"
+  PURPLE_BANNER: "нил ягаан туг"
+  PURPLE_BED: "нил ягаан ор"
+  PURPLE_CANDLE: "нил ягаан лаа"
+  PURPLE_CANDLE_CAKE: "нил ягаан лаатай бялуу"
+  PURPLE_CARPET: "нил ягаан хивс"
+  PURPLE_CONCRETE: "нил ягаан бетон"
+  PURPLE_CONCRETE_POWDER: "нил ягаан нунтаг бетон"
+  PURPLE_GLAZED_TERRACOTTA: "нил ягаан хээтэй шавар"
+  PURPLE_SHULKER_BOX: "нил ягаан шалкер хайрцаг"
+  PURPLE_STAINED_GLASS: "нил ягаан будагтай шил"
+  PURPLE_STAINED_GLASS_PANE: "нил ягаан будагтай шилэн хавтан"
+  PURPLE_TERRACOTTA: "нил ягаан хатуу шавар"
+  PURPLE_WOOL: "нил ягаан ноос"
+  PURPUR_BLOCK: "пурпур блок"
+  PURPUR_PILLAR: "пурпур багана"
+  PURPUR_SLAB: "пурпур хавтан"
+  PURPUR_STAIRS: "пурпур шат"
+  QUARTZ_BLOCK: "кварц блок"
+  QUARTZ_BRICKS: "кварц тоосго"
+  QUARTZ_PILLAR: "кварц багана"
+  QUARTZ_SLAB: "кварц хавтан"
+  QUARTZ_STAIRS: "кварц шат"
+  RAIL: "төмөр зам"
+  RAW_COPPER_BLOCK: "боловсруулаагүй зэс блок"
+  RAW_GOLD_BLOCK: "боловсруулаагүй алтан блок"
+  RAW_IRON_BLOCK: "боловсруулаагүй төмөр блок"
+  RED_BANNER: "улаан туг"
+  RED_BED: "улаан ор"
+  RED_CANDLE: "улаан лаа"
+  RED_CANDLE_CAKE: "улаан лаатай бялуу"
+  RED_CARPET: "улаан хивс"
+  RED_CONCRETE: "улаан бетон"
+  RED_CONCRETE_POWDER: "улаан нунтаг бетон"
+  RED_GLAZED_TERRACOTTA: "улаан хээтэй шавар"
+  RED_MUSHROOM: "улаан мөөг"
+  RED_MUSHROOM_BLOCK: "улаан мөөгөн блок"
+  RED_NETHER_BRICK_SLAB: "улаан тамын тоосгон хавтан"
+  RED_NETHER_BRICK_STAIRS: "улаан тамын тоосгон шат"
+  RED_NETHER_BRICK_WALL: "улаан тамын тоосгон хана"
+  RED_NETHER_BRICKS: "улаан тамын тоосго"
+  RED_SAND: "улаан элс"
+  RED_SANDSTONE: "улаан элсэн чулуу"
+  RED_SANDSTONE_SLAB: "улаан элсэн чулуун хавтан"
+  RED_SANDSTONE_STAIRS: "улаан элсэн чулуун шат"
+  RED_SANDSTONE_WALL: "улаан элсэн чулуун хана"
+  RED_SHULKER_BOX: "улаан шалкер хайрцаг"
+  RED_STAINED_GLASS: "улаан будагтай шил"
+  RED_STAINED_GLASS_PANE: "улаан будагтай шилэн хавтан"
+  RED_TERRACOTTA: "улаан хатуу шавар"
+  RED_TULIP: "улаан алтанзул"
+  RED_WOOL: "улаан ноос"
+  REDSTONE_BLOCK: "редстоун блок"
+  REDSTONE_LAMP: "редстоун гэрэл"
+  REDSTONE_ORE: "редстоуны хүдэр"
+  REDSTONE_TORCH: "редстоун бамбар"
+  REDSTONE_WALL_TORCH: "редстоун ханын бамбар"
+  REDSTONE_WIRE: "редстоун утас"
+  REINFORCED_DEEPSLATE: "бэхжүүлсэн гүний занар"
+  REPEATER: "редстоун давтагч"
+  REPEATING_COMMAND_BLOCK: "давталттай тушаалын блок"
+  RESPAWN_ANCHOR: "дахин төрүүлэх зангуу"
+  ROOTED_DIRT: "үндэстэй шороо"
+  ROSE_BUSH: "сарнайн бут"
+  SAND: "элс"
+  SANDSTONE: "элсэн чулуу"
+  SANDSTONE_SLAB: "элсэн чулуун хавтан"
+  SANDSTONE_STAIRS: "элсэн чулуун шат"
+  SANDSTONE_WALL: "элсэн чулуун хана"
+  SCAFFOLDING: "барилгын шат"
+  SCULK: "скалк"
+  SCULK_CATALYST: "скалк катализатор"
+  SCULK_SENSOR: "мэдрэгч скалк"
+  SCULK_SHRIEKER: "хашхирагч скалк"
+  SCULK_VEIN: "скалк судал"
+  SEA_LANTERN: "тэнгисийн дэнлүү"
+  SEA_PICKLE: "тэнгисийн гэрлэн биет"
+  SEAGRASS: "тэнгисийн өвс"
+  SET_SPAWN: "дахин төрөх газрыг тохирууллаа"
+  SHORT_GRASS: "нам өвс"
+  SHROOMLIGHT: "мөөгний гэрэл"
+  SHULKER_BOX: "шалкер хайрцаг"
+  SKELETON_SKULL: "гавлын яс"
+  SKELETON_WALL_SKULL: "гавлын яс хананд"
+  SLIME_BLOCK: "салс блок"
+  SMALL_AMETHYST_BUD: "ягаан болрын бяцхан нахиа"
+  SMALL_DRIPLEAF: "жижиг гоожингор навч"
+  SMITHING_TABLE: "дархны ширээ"
+  SMOKER: "утагч"
+  SMOOTH_BASALT: "гөлгөр базальт"
+  SMOOTH_QUARTZ: "гөлгөр кварц блок"
+  SMOOTH_QUARTZ_SLAB: "гөлгөр кварц хавтан"
+  SMOOTH_QUARTZ_STAIRS: "гөлгөр кварц шат"
+  SMOOTH_RED_SANDSTONE: "гөлгөр улаан элсэн чулуу"
+  SMOOTH_RED_SANDSTONE_SLAB: "гөлгөр улаан элсэн чулуун хавтан"
+  SMOOTH_RED_SANDSTONE_STAIRS: "гөлгөр улаан элсэн чулуун шат"
+  SMOOTH_SANDSTONE: "гөлгөр элсэн чулуу"
+  SMOOTH_SANDSTONE_SLAB: "гөлгөр элсэн чулуун хавтан"
+  SMOOTH_SANDSTONE_STAIRS: "гөлгөр элсэн чулуун шат"
+  SMOOTH_STONE: "гөлгөр чулуу"
+  SMOOTH_STONE_SLAB: "гөлгөр чулуун хавтан"
+  SNIFFER_EGG: "шиншигчийн өндөг"
+  SNOW: "цас"
+  SNOW_BLOCK: "цасан блок"
+  SOUL_CAMPFIRE: "сүнслэг түүдэг гал"
+  SOUL_FIRE: "сүнслэг гал"
+  SOUL_LANTERN: "сүнслэг дэнлүү"
+  SOUL_SAND: "сүнслэг элс"
+  SOUL_SOIL: "сүнслэг хөрс"
+  SOUL_TORCH: "сүнслэг бамбар"
+  SOUL_WALL_TORCH: "сүнслэг хананы бамбар"
+  SPAWN_NOT_VALID: "танд ор эсвэл цэнэглэгдсэн дахин төрөх зангуу байхгүй эсвэл тэдгээр нь саадтай байна"
+  SPAWNER: "мангас төрүүлэгч"
+  SPAWNER_DESC1: "төрүүлэх өндөг ашиглаж:"
+  SPAWNER_DESC2: "төрүүлэх мобыг тохируулна"
+  SPONGE: "хөвөн"
+  SPORE_BLOSSOM: "тоост цэцэг"
+  SPRUCE_BUTTON: "гацуур модон товч"
+  SPRUCE_DOOR: "гацуур модон хаалга"
+  SPRUCE_FENCE: "гацуур модон хашаа"
+  SPRUCE_FENCE_GATE: "гацуур модон хашааны хаалга"
+  SPRUCE_HANGING_SIGN: "гацуур модон дүүжилдэг самбар"
+  SPRUCE_LEAVES: "гацуур модны шилмүүс"
+  SPRUCE_LOG: "гацуур модон дүнз"
+  SPRUCE_PLANKS: "гацуур модон банз"
+  SPRUCE_PRESSURE_PLATE: "гацуур модон даралтын хавтан"
+  SPRUCE_SAPLING: "зулзаган гацуур мод"
+  SPRUCE_SIGN: "гацуур модон самбар"
+  SPRUCE_SLAB: "гацуур модон хавтан"
+  SPRUCE_STAIRS: "гацуур модон шат"
+  SPRUCE_TRAPDOOR: "гацуур модон сөхдөг хаалга"
+  SPRUCE_WALL_HANGING_SIGN: "гацуур модон хананаас дүүжилдэг самбар"
+  SPRUCE_WALL_SIGN: "гацуур модон ханын самбар"
+  SPRUCE_WOOD: "гацуур мод"
+  STICKY_PISTON: "наалдамхай түлхэгч"
+  STONE: "чулуу"
+  STONE_BRICK_SLAB: "чулуун тоосгон хавтан"
+  STONE_BRICK_STAIRS: "чулуун тоосгон шат"
+  STONE_BRICK_WALL: "чулуун тоосгон хана"
+  STONE_BRICKS: "чулуун тоосго"
+  STONE_BUTTON: "чулуун товч"
+  STONE_PRESSURE_PLATE: "чулуун даралтын хавтан"
+  STONE_SLAB: "чулуун хавтан"
+  STONE_STAIRS: "чулуун шат"
+  STONECUTTER: "чулуу зүсэгч"
+  STRIPPED_ACACIA_LOG: "холтослосон хуайс модон дүнз"
+  STRIPPED_ACACIA_WOOD: "холтослосон хуайс мод"
+  STRIPPED_BAMBOO_BLOCK: "хуссан хулсан блок"
+  STRIPPED_BIRCH_LOG: "холтослосон хус модон дүнз"
+  STRIPPED_BIRCH_WOOD: "холтослосон хус мод"
+  STRIPPED_CHERRY_LOG: "холтослосон интоорын модон дүнз"
+  STRIPPED_CHERRY_WOOD: "холтослосон интоорын мод"
+  STRIPPED_CRIMSON_HYPHAE: "холтослосон нөжит мод"
+  STRIPPED_CRIMSON_STEM: "холтослосон нөжит дүнз"
+  STRIPPED_DARK_OAK_LOG: "холтослосон хар царс модон дүнз"
+  STRIPPED_DARK_OAK_WOOD: "холтослосон хар царс мод"
+  STRIPPED_JUNGLE_LOG: "холтослосон ширэнгэн ойн модон дүнз"
+  STRIPPED_JUNGLE_WOOD: "холтослосон ширэнгэн ойн мод"
+  STRIPPED_MANGROVE_LOG: "холтослосон мангро модон дүнз"
+  STRIPPED_MANGROVE_WOOD: "холтослосон мангро мод"
+  STRIPPED_OAK_LOG: "холтослосон царс модон дүнз"
+  STRIPPED_OAK_WOOD: "холтослосон царс мод"
+  STRIPPED_SPRUCE_LOG: "холтослосон гацуур модон дүнз"
+  STRIPPED_SPRUCE_WOOD: "холтослосон гацуур мод"
+  STRIPPED_WARPED_HYPHAE: "холтослосон гажуудсан мод"
+  STRIPPED_WARPED_STEM: "холтослосон гажуудсан дүнз"
+  STRUCTURE_BLOCK: "байгууламжийн блок"
+  STRUCTURE_VOID: "байгууламжийн хоосон"
+  SUGAR_CANE: "чихрийн нишингэ"
+  SUNFLOWER: "наранцэцэг"
+  SUSPICIOUS_GRAVEL: "сэжигтэй хайрга"
+  SUSPICIOUS_SAND: "сэжигтэй элс"
+  SWEET_BERRY_BUSH: "чихэрлэг жимсгэнийн бут"
+  TALL_GRASS: "өндөр өвс"
+  TALL_SEAGRASS: "тэнгисийн өндөр өвс"
+  TARGET: "бай"
+  TERRACOTTA: "хатуу шавар"
+  TINTED_GLASS: "харанхуй шил"
+  TNT: "tnt"
+  TORCH: "бамбар"
+  TORCHFLOWER: "бамбар цэцэг"
+  TORCHFLOWER_CROP: "бамбар цэцгийн суулгац"
+  TRAPPED_CHEST: "урхитай авдар"
+  TRIAL_SPAWNER: "сорилын төрүүлэгч"
+  TRIPWIRE: "тээглүүр утас"
+  TRIPWIRE_HOOK: "тээглүүр утасны дэгээ"
+  TUBE_CORAL: "хоолой шүр"
+  TUBE_CORAL_BLOCK: "хоолой шүрэн блок"
+  TUBE_CORAL_FAN: "хоолой шүрэн дэвүүр"
+  TUBE_CORAL_WALL_FAN: "хоолой шүрэн дэвүүр хананд"
+  TUFF: "туф"
+  TUFF_BRICK_SLAB: "туф тоосгон хавтан"
+  TUFF_BRICK_STAIRS: "туф тоосгон шат"
+  TUFF_BRICK_WALL: "туф тоосгон хана"
+  TUFF_BRICKS: "туф тоосго"
+  TUFF_SLAB: "туф хавтан"
+  TUFF_STAIRS: "туф шат"
+  TUFF_WALL: "туф хана"
+  TURTLE_EGG: "яст мэлхийн өндөг"
+  TWISTING_VINES: "мушгиа ургамал"
+  TWISTING_VINES_PLANT: "мушгиа ургамал тарих"
+  VERDANT_FROGLIGHT: "ногоон мэлхийн гэрэл"
+  VINE: "ороонго ургамал"
+  VOID_AIR: "хоосон агаар"
+  WALL_TORCH: "ханын бамбар"
+  WARPED_BUTTON: "гажуудсан модон товч"
+  WARPED_DOOR: "гажуудсан модон хаалга"
+  WARPED_FENCE: "гажуудсан модон хашаа"
+  WARPED_FENCE_GATE: "гажуудсан модон хашааны хаалга"
+  WARPED_FUNGUS: "гажуудсан мөөг"
+  WARPED_HANGING_SIGN: "гажуудсан модон дүүжилдэг самбар"
+  WARPED_HYPHAE: "гажуудсан мод"
+  WARPED_NYLIUM: "гажуудсан хөрс"
+  WARPED_PLANKS: "гажуудсан модон банз"
+  WARPED_PRESSURE_PLATE: "гажуудсан модон даралтын хавтан"
+  WARPED_ROOTS: "гажуудсан ургамал"
+  WARPED_SIGN: "гажуудсан модон самбар"
+  WARPED_SLAB: "гажуудсан модон хавтан"
+  WARPED_STAIRS: "гажуудсан модон шат"
+  WARPED_STEM: "гажуудсан дүнз"
+  WARPED_TRAPDOOR: "гажуудсан модон сөхдөг хаалга"
+  WARPED_WALL_HANGING_SIGN: "гажуудсан модон хананаас дүүжилдэг самбар"
+  WARPED_WALL_SIGN: "гажуудсан модон хананы самбар"
+  WARPED_WART_BLOCK: "гажуудсан үүн блок"
+  WATER: "ус"
+  WATER_CAULDRON: "устай тогоо"
+  WAXED_CHISELED_COPPER: "бүрэлттэй сийлсэн зэс"
+  WAXED_COPPER_BLOCK: "бүрэлттэй зэс блок"
+  WAXED_COPPER_BULB: "бүрэлттэй зэс гэрэл"
+  WAXED_COPPER_DOOR: "бүрэлттэй зэс хаалга"
+  WAXED_COPPER_GRATE: "бүрэлттэй зэс сараалж"
+  WAXED_COPPER_TRAPDOOR: "бүрэлттэй зэс сөхдөг хаалга"
+  WAXED_CUT_COPPER: "бүрэлттэй зүсмэл зэс"
+  WAXED_CUT_COPPER_SLAB: "бүрэлттэй зүсмэл зэс хавтан"
+  WAXED_CUT_COPPER_STAIRS: "бүрэлттэй зүсмэл зэс шат"
+  WAXED_EXPOSED_CHISELED_COPPER: "бүрэлттэй өгөршсөн сийлсэн зэс"
+  WAXED_EXPOSED_COPPER: "бүрэлттэй өгөршсөн зэс"
+  WAXED_EXPOSED_COPPER_BULB: "бүрэлттэй өгөршсөн зэс гэрэл"
+  WAXED_EXPOSED_COPPER_DOOR: "бүрэлттэй өгөршсөн зэс хаалга"
+  WAXED_EXPOSED_COPPER_GRATE: "бүрэлттэй өгөршсөн зэс сараалж"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "бүрэлттэй өгөршсөн зэс сөхдөг хаалга"
+  WAXED_EXPOSED_CUT_COPPER: "бүрэлттэй өгөршсөн зүсмэл зэс"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "бүрэлттэй өгөршсөн зүсмэл зэс хавтан"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "бүрэлттэй өгөршсөн зүсмэл зэс шат"
+  WAXED_OXIDIZED_CHISELED_COPPER: "бүрэлттэй бүрэн исэлдсэн сийлсэн зэс"
+  WAXED_OXIDIZED_COPPER: "бүрэлттэй бүрэн исэлдсэн зэс"
+  WAXED_OXIDIZED_COPPER_BULB: "бүрэлттэй бүрэн исэлдсэн зэс гэрэл"
+  WAXED_OXIDIZED_COPPER_DOOR: "бүрэлттэй бүрэн исэлдсэн зэс хаалга"
+  WAXED_OXIDIZED_COPPER_GRATE: "бүрэлттэй бүрэн исэлдсэн зэс сараалж"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "бүрэлттэй бүрэн исэлдсэн зэс сөхдөг хаалга"
+  WAXED_OXIDIZED_CUT_COPPER: "бүрэлттэй бүрэн исэлдсэн зүсмэл зэс"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "бүрэлттэй бүрэн исэлдсэн зүсмэл зэс хавтан"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "бүрэлттэй бүрэн исэлдсэн зүсмэл зэс шат"
+  WAXED_WEATHERED_CHISELED_COPPER: "бүрэлттэй исэлдсэн сийлсэн зэс"
+  WAXED_WEATHERED_COPPER: "бүрэлттэй исэлдсэн зэс"
+  WAXED_WEATHERED_COPPER_BULB: "бүрэлттэй исэлдсэн зэс гэрэл"
+  WAXED_WEATHERED_COPPER_DOOR: "бүрэлттэй исэлдсэн зэс хаалга"
+  WAXED_WEATHERED_COPPER_GRATE: "бүрэлттэй исэлдсэн зэс сараалж"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "бүрэлттэй исэлдсэн зэс сөхдөг хаалга"
+  WAXED_WEATHERED_CUT_COPPER: "бүрэлттэй исэлдсэн зүсмэл зэс"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "бүрэлттэй исэлдсэн зүсмэл зэс хавтан"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "бүрэлттэй исэлдсэн зүсмэл зэс шат"
+  WEATHERED_CHISELED_COPPER: "исэдлсэн сийлсэн зэс"
+  WEATHERED_COPPER: "исэлдсэн зэс"
+  WEATHERED_COPPER_BULB: "исэлдсэн зэс гэрэл"
+  WEATHERED_COPPER_DOOR: "исэлдсэн зэс хаалга"
+  WEATHERED_COPPER_GRATE: "исэлдсэн зэс сараалж"
+  WEATHERED_COPPER_TRAPDOOR: "исэлдсэн зэс сөхдөг хаалга"
+  WEATHERED_CUT_COPPER: "исэдлсэн зүсмэл зэс"
+  WEATHERED_CUT_COPPER_SLAB: "исэлдсэн зүсмэл зэс хавтан"
+  WEATHERED_CUT_COPPER_STAIRS: "исэлдсэн зүсмэл зэс шат"
+  WEEPING_VINES: "уй гашууны ургамал"
+  WEEPING_VINES_PLANT: "уй гашууны ургамал тарих"
+  WET_SPONGE: "нойтон хөвөн"
+  WHEAT: "улаан буудайн ургац"
+  WHITE_BANNER: "цагаан туг"
+  WHITE_BED: "цагаан ор"
+  WHITE_CANDLE: "цагаан лаа"
+  WHITE_CANDLE_CAKE: "цагаан лаатай бялуу"
+  WHITE_CARPET: "цагаан хивс"
+  WHITE_CONCRETE: "цагаан бетон"
+  WHITE_CONCRETE_POWDER: "цагаан нунтаг бетон"
+  WHITE_GLAZED_TERRACOTTA: "цагаан хээтэй шавар"
+  WHITE_SHULKER_BOX: "цагаан шалкер хайрцаг"
+  WHITE_STAINED_GLASS: "цагаан будагтай шил"
+  WHITE_STAINED_GLASS_PANE: "цагаан будагтай шилэн хавтан"
+  WHITE_TERRACOTTA: "цагаан хатуу шавар"
+  WHITE_TULIP: "цагаан алтанзул"
+  WHITE_WOOL: "цагаан ноос"
+  WITHER_ROSE: "витерийн сарнай"
+  WITHER_SKELETON_SKULL: "витерийн гавлын яс"
+  WITHER_SKELETON_WALL_SKULL: "витерийн гавлын яс хананд"
+  YELLOW_BANNER: "шар туг"
+  YELLOW_BED: "шар ор"
+  YELLOW_CANDLE: "шар лаа"
+  YELLOW_CANDLE_CAKE: "шар лаатай бялуу"
+  YELLOW_CARPET: "шар хивс"
+  YELLOW_CONCRETE: "шар бетон"
+  YELLOW_CONCRETE_POWDER: "шар нунтаг бетон"
+  YELLOW_GLAZED_TERRACOTTA: "шар хээтэй шавар"
+  YELLOW_SHULKER_BOX: "шар шалкер хайрцаг"
+  YELLOW_STAINED_GLASS: "шар будагтай шил"
+  YELLOW_STAINED_GLASS_PANE: "шар будагтай шилэн хавтан"
+  YELLOW_TERRACOTTA: "шар хатуу шавар"
+  YELLOW_WOOL: "шар ноос"
+  ZOMBIE_HEAD: "зомбины толгой"
+  ZOMBIE_WALL_HEAD: "зомбины толгой хананд"
+  ACACIA_BOAT: "хуайс модон завь"
+  ACACIA_CHEST_BOAT: "авдартай хуайс модон завь"
+  ALLAY_SPAWN_EGG: "дэмнэгч төрүүлэх өндөг"
+  AMETHYST_SHARD: "ягаан болор"
+  ANGLER_POTTERY_SHARD: "загасчин хээтэй ваарын хэлтэрхий"
+  ANGLER_POTTERY_SHERD: "загасчин хээтэй ваарын хэлтэрхий"
+  APPLE: "алим"
+  ARCHER_POTTERY_SHARD: "харваач хээтэй ваарын хэлтэрхий"
+  ARCHER_POTTERY_SHERD: "харваач хээтэй ваарын хэлтэрхий"
+  ARMOR_STAND: "хувцасны өлгүүр"
+  ARMS_UP_POTTERY_SHARD: "гараа өргөсөн хээтэй ваарын хэлтэрхий"
+  ARMS_UP_POTTERY_SHERD: "гараа өргөсөн хээтэй ваарын хэлтэрхий"
+  ARROW: "сум"
+  AXOLOTL_BUCKET: "аксолотльтой хувин"
+  AXOLOTL_SPAWN_EGG: "аксолотль төрүүлэх өндөг"
+  BAKED_POTATO: "шарсан төмс"
+  BAMBOO_CHEST_RAFT: "авдартай хулсан сал"
+  BAMBOO_RAFT: "хулсан сал"
+  BAT_SPAWN_EGG: "сарьсан багваахай төрүүлэх өндөг"
+  BEE_SPAWN_EGG: "зөгий төрүүлэх өндөг"
+  BEEF: "түүхий үхрийн мах"
+  BEETROOT: "улаан манжин"
+  BEETROOT_SEEDS: "улаан манжингийн үр"
+  BEETROOT_SOUP: "улаан манжингийн шөл"
+  BIRCH_BOAT: "хус модон завь"
+  BIRCH_CHEST_BOAT: "авдартай хус модон завь"
+  BLACK_DYE: "хар будаг"
+  BLADE_POTTERY_SHARD: "илд хээтэй ваарын хэлтэрхий"
+  BLADE_POTTERY_SHERD: "илд хээтэй ваарын хэлтэрхий"
+  BLAZE_POWDER: "түймэрдэгчийн нунтаг"
+  BLAZE_ROD: "түймэрдэгчийн саваа"
+  BLAZE_SPAWN_EGG: "түймэрдэгч төрүүлэх өндөг"
+  BLUE_DYE: "хөх будаг"
+  BONE: "яс"
+  BONE_MEAL: "нунтагласан яс"
+  BOOK: "ном"
+  BOW: "нум"
+  BOWL: "аяга"
+  BREAD: "талх"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "хандны хээтэй ваарын хэлтэрхий"
+  BREWER_POTTERY_SHERD: "хандны хээтэй ваарын хэлтэрхий"
+  BRICK: "тоосго"
+  BROWN_DYE: "бор будаг"
+  BRUSH: "багс"
+  BUCKET: "хувин"
+  BUNDLE: "богц"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "гал хээтэй ваарын хэлтэрхий"
+  BURN_POTTERY_SHERD: "гал хээтэй ваарын хэлтэрхий"
+  CAMEL_SPAWN_EGG: "тэмээ төрүүлэх өндөг"
+  CARROT: "лууван"
+  CARROT_ON_A_STICK: "лууван зүүсэн уурга"
+  CAT_SPAWN_EGG: "муур төрүүлэх өндөг"
+  CAVE_SPIDER_SPAWN_EGG: "агуйн аалз төрүүлэх өндөг"
+  CHAINMAIL_BOOTS: "гинжин гутал"
+  CHAINMAIL_CHESTPLATE: "гинжин цамц"
+  CHAINMAIL_HELMET: "гинжин малгай"
+  CHAINMAIL_LEGGINGS: "гинжин өмд"
+  CHARCOAL: "модны нүүрс"
+  CHERRY_BOAT: "интоорын модон завь"
+  CHERRY_CHEST_BOAT: "авдартай интоорын модон завь"
+  CHEST_MINECART: "авдартай тэрэг"
+  CHICKEN: "түүхий тахианы мах"
+  CHICKEN_SPAWN_EGG: "тахиа төрүүлэх өндөг"
+  CHORUS_FRUIT: "дахилтат жимс"
+  CLAY_BALL: "шавар бөмбөг"
+  CLOCK: "цаг"
+  COAL: "нүүрс"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  COCOA_BEANS: "какаоны шош"
+  COD: "түүхий сагамхай загас"
+  COD_BUCKET: "сагамхай загастай хувин"
+  COD_SPAWN_EGG: "сагамхай загас төрүүлэх өндөр"
+  COMMAND_BLOCK_MINECART: "тушаалын блоктой тэрэг"
+  COMPASS: "луужин"
+  COOKED_BEEF: "шарсан үхрийн мах"
+  COOKED_CHICKEN: "шарсан тахианы мах"
+  COOKED_COD: "шарсан сагамхай загас"
+  COOKED_MUTTON: "шарсан хонины мах"
+  COOKED_PORKCHOP: "шарсан гахайн мах"
+  COOKED_RABBIT: "шарсан туулайн мах"
+  COOKED_SALMON: "шарсан яргай загас"
+  COOKIE: "жигнэмэг"
+  COPPER_INGOT: "зэс"
+  COW_SPAWN_EGG: "үхэр төрүүлэх өндөг"
+  CREEPER_BANNER_PATTERN: "тугны хэв"
+  CREEPER_BANNER_PATTERN_DESC: "криперийн нүүр"
+  CREEPER_SPAWN_EGG: "крипер төрүүлэх өндөг"
+  CROSSBOW: "хулгавч нум"
+  CROSSBOW_PROJECTILE: "сум:"
+  CYAN_DYE: "номин цэнхэр будаг"
+  DANGER_POTTERY_SHARD: "аюул хээтэй ваарын хэлтэрхий"
+  DANGER_POTTERY_SHERD: "аюул хээтэй ваарын хэлтэрхий"
+  DARK_OAK_BOAT: "хар царс модон завь"
+  DARK_OAK_CHEST_BOAT: "авдартай хар царс модон завь"
+  DEBUG_STICK: "шалгах саваа"
+  DEBUG_STICK_EMPTY: "%s ямар ч шинж чанаргүй"
+  DEBUG_STICK_SELECT: "\"%s\" (%s)-г сонгосон"
+  DEBUG_STICK_UPDATE: "\"%s\"-г %s болгосон"
+  DIAMOND: "алмаас эрдэнэ"
+  DIAMOND_AXE: "алмаасан сүх"
+  DIAMOND_BOOTS: "алмаасан гутал"
+  DIAMOND_CHESTPLATE: "алмаасан цамц"
+  DIAMOND_HELMET: "алмаасан малгай"
+  DIAMOND_HOE: "алмаасан зээтүү"
+  DIAMOND_HORSE_ARMOR: "морины алмаасан хуяг"
+  DIAMOND_LEGGINGS: "алмаасан өмд"
+  DIAMOND_PICKAXE: "алмаасан ёотуу"
+  DIAMOND_SHOVEL: "алмаасан хүрз"
+  DIAMOND_SWORD: "алмаасан сэлэм"
+  DISC_FRAGMENT_5: "пянзны хэлтэрхий"
+  DISC_FRAGMENT_5_DESC: "пянз - 5"
+  DOLPHIN_SPAWN_EGG: "далайн гахай төрүүлэх өндөг"
+  DONKEY_SPAWN_EGG: "илжиг төрүүлэх өндөг"
+  DRAGON_BREATH: "лууны амьсгал"
+  DRIED_KELP: "хатаасан замаг"
+  DROWNED_SPAWN_EGG: "тэнгисийн зомби төрүүлэх өндөг"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  ECHO_SHARD: "цуурайн хэлтэрхий"
+  EGG: "өндөг"
+  ELDER_GUARDIAN_SPAWN_EGG: "ахмад хамгаалагч төрүүлэх өндөг"
+  ELYTRA: "далавч"
+  EMERALD: "маргад эрдэнэ"
+  ENCHANTED_BOOK: "шидэт ном"
+  ENCHANTED_GOLDEN_APPLE: "шидэт алтан алим"
+  END_CRYSTAL: "ээндийн талст"
+  ENDER_DRAGON_SPAWN_EGG: "ээндийн луу төрүүлэх өндөг"
+  ENDER_EYE: "ээндэрийн нүд"
+  ENDER_PEARL: "ээндэрийн сувд"
+  ENDERMAN_SPAWN_EGG: "ээндийн хүн төрүүлэх өндөг"
+  ENDERMITE_SPAWN_EGG: "ээндийн хачиг төрүүлэх"
+  EVOKER_SPAWN_EGG: "сүнс дуудагч төрүүлэх өндөг"
+  EXPERIENCE_BOTTLE: "ид шидтэй лонх"
+  EXPLORER_POTTERY_SHARD: "аялагч хээтэй ваарын хэлтэрхий"
+  EXPLORER_POTTERY_SHERD: "аялагч хээтэй ваарын хэлтэрхий"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  FEATHER: "өд"
+  FERMENTED_SPIDER_EYE: "исгэсэн аалзны нүд"
+  FILLED_MAP: "газрын зураг"
+  FIRE_CHARGE: "галт бөмбөг"
+  FIREWORK_ROCKET: "галт пуужин"
+  FIREWORK_ROCKET_FLIGHT: "нисэх хугацаа:"
+  FIREWORK_STAR: "галт од"
+  FIREWORK_STAR_BLACK: "хар"
+  FIREWORK_STAR_BLUE: "хөх"
+  FIREWORK_STAR_BROWN: "бор"
+  FIREWORK_STAR_CUSTOM_COLOR: "тусгай"
+  FIREWORK_STAR_CYAN: "номин цэнхэр"
+  FIREWORK_STAR_FADE_TO: "уусах"
+  FIREWORK_STAR_FLICKER: "одод"
+  FIREWORK_STAR_GRAY: "саарал"
+  FIREWORK_STAR_GREEN: "ногоон"
+  FIREWORK_STAR_LIGHT_BLUE: "цэнхэр"
+  FIREWORK_STAR_LIGHT_GRAY: "цайвар саарал"
+  FIREWORK_STAR_LIME: "цайвар ногоон"
+  FIREWORK_STAR_MAGENTA: "нил ягаан"
+  FIREWORK_STAR_ORANGE: "улбар шар"
+  FIREWORK_STAR_PINK: "цайвар ягаан"
+  FIREWORK_STAR_PURPLE: "нил ягаан"
+  FIREWORK_STAR_RED: "улаан"
+  FIREWORK_STAR_SHAPE: "тодорхойгүй дүрс"
+  FIREWORK_STAR_SHAPE_BURST: "тэсрэлт"
+  FIREWORK_STAR_SHAPE_CREEPER: "крипер хэлбэртэй"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "том бөмбөг"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "жижиг бөмбөг"
+  FIREWORK_STAR_SHAPE_STAR: "од хэлбэртэй"
+  FIREWORK_STAR_TRAIL: "цацраг"
+  FIREWORK_STAR_WHITE: "цагаан"
+  FIREWORK_STAR_YELLOW: "шар"
+  FISHING_ROD: "загасны уурга"
+  FLINT: "цахиур"
+  FLINT_AND_STEEL: "цахиур төмөр"
+  FLOWER_BANNER_PATTERN: "тугийн хэв"
+  FLOWER_BANNER_PATTERN_DESC: "цэцэг"
+  FOX_SPAWN_EGG: "үнэг төрүүлэх өндөг"
+  FRIEND_POTTERY_SHARD: "нөхөр хээтэй ваарын хэлтэрхий"
+  FRIEND_POTTERY_SHERD: "нөхөр хээтэй ваарын хэлтэрхий"
+  FROG_SPAWN_EGG: "мэлхий төрүүлэх өндөг"
+  FURNACE_MINECART: "зуухтай тэрэг"
+  GHAST_SPAWN_EGG: "гаст төрүүлэх өндөг"
+  GHAST_TEAR: "гастын нулимс"
+  GLASS_BOTTLE: "лонх"
+  GLISTERING_MELON_SLICE: "гялтагнадаг зүсэм тарвас"
+  GLOBE_BANNER_PATTERN: "тугийн хэв"
+  GLOBE_BANNER_PATTERN_DESC: "бөмбөрцөг"
+  GLOW_BERRIES: "гэрэлт жимсгэнэ"
+  GLOW_INK_SAC: "гэрэлт бэх"
+  GLOW_ITEM_FRAME: "гэрэлт эд зүйлийн хүрээ"
+  GLOW_SQUID_SPAWN_EGG: "гэрэлт наймалж төрүүлэх өндөг"
+  GLOWSTONE_DUST: "гэрэлт тоос"
+  GOAT_HORN: "ямааны эвэр"
+  GOAT_SPAWN_EGG: "ямаа төрүүлэх өндөг"
+  GOLD_INGOT: "алт"
+  GOLD_NUGGET: "шижир алт"
+  GOLDEN_APPLE: "алтан алим"
+  GOLDEN_AXE: "алтан сүх"
+  GOLDEN_BOOTS: "алтан гутал"
+  GOLDEN_CARROT: "алтан лууван"
+  GOLDEN_CHESTPLATE: "алтан цамц"
+  GOLDEN_HELMET: "алтан малгай"
+  GOLDEN_HOE: "алтан зээтүү"
+  GOLDEN_HORSE_ARMOR: "морины алтан хуяг"
+  GOLDEN_LEGGINGS: "алтан өмд"
+  GOLDEN_PICKAXE: "алтан ёотуу"
+  GOLDEN_SHOVEL: "алтан хүрз"
+  GOLDEN_SWORD: "алтан сэлэм"
+  GRAY_DYE: "саарал будаг"
+  GREEN_DYE: "ногоон будаг"
+  GUARDIAN_SPAWN_EGG: "хамгаалагч төрүүлэх өндөг"
+  GUNPOWDER: "дарь"
+  HEART_OF_THE_SEA: "тэнгисийн зүрх"
+  HEART_POTTERY_SHARD: "зүрхэн хээтэй ваарын хэлтэрхий"
+  HEART_POTTERY_SHERD: "зүрхэн хээтэй ваарын хэлтэрхий"
+  HEARTBREAK_POTTERY_SHARD: "хуваагдсан зүрхэн хээтэй ваарын хэлтэрхий"
+  HEARTBREAK_POTTERY_SHERD: "хуваагдсан зүрхэн хээтэй ваарын хэлтэрхий"
+  HOGLIN_SPAWN_EGG: "хоглин төрүүлэх өндөг"
+  HONEY_BOTTLE: "шилтэй зөгийн бал"
+  HONEYCOMB: "зөгийн сархинаг"
+  HOPPER_MINECART: "гулгуулагчтай тэрэг"
+  HORSE_SPAWN_EGG: "морь төрүүлэх өндөг"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  HOWL_POTTERY_SHARD: "чонын хээтэй ваарын хэлтэрхий"
+  HOWL_POTTERY_SHERD: "чонын хээтэй ваарын хэлтэрхий"
+  HUSK_SPAWN_EGG: "хатсан зомби төрүүлэх өндөг"
+  INK_SAC: "бэх"
+  IRON_AXE: "төмөр сүх"
+  IRON_BOOTS: "төмөр гутал"
+  IRON_CHESTPLATE: "төмөр цамц"
+  IRON_GOLEM_SPAWN_EGG: "төмөр хүн төрүүлэх өндөг"
+  IRON_HELMET: "төмөр малгай"
+  IRON_HOE: "төмөр зээтүү"
+  IRON_HORSE_ARMOR: "морины төмөр хуяг"
+  IRON_INGOT: "төмөр"
+  IRON_LEGGINGS: "төмөр өмд"
+  IRON_NUGGET: "төмрийн хэлтэрхий"
+  IRON_PICKAXE: "төмөр ёотуу"
+  IRON_SHOVEL: "төмөр хүрз"
+  IRON_SWORD: "төмөр сэлэм"
+  ITEM_FRAME: "эд зүйлийн хүрээ"
+  JUNGLE_BOAT: "ширэнгэн ойн модон завь"
+  JUNGLE_CHEST_BOAT: "авдартай ширэнгэн ойн модон завь"
+  KNOWLEDGE_BOOK: "мэдлэгийн ном"
+  LAPIS_LAZULI: "номин чулуу"
+  LAVA_BUCKET: "хайлмагтай хувин"
+  LEAD: "уяа"
+  LEATHER: "арьс"
+  LEATHER_BOOTS: "арьсан гутал"
+  LEATHER_CHESTPLATE: "арьсан цамц"
+  LEATHER_HELMET: "арьсан малгай"
+  LEATHER_HORSE_ARMOR: "морины арьсан хуяг"
+  LEATHER_LEGGINGS: "арьсан өмд"
+  LIGHT_BLUE_DYE: "цэнхэр будаг"
+  LIGHT_GRAY_DYE: "цайвар саарал будаг"
+  LIME_DYE: "цайвар ногоон будаг"
+  LINGERING_POTION: "ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_AWKWARD: "ууршимтгай эвгүй ханд"
+  LINGERING_POTION_EFFECT_EMPTY: "ууршимтгай гаргах боломжгүй ханд"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "галд тэсвэртэй болгох ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_HARMING: "хохирол учруулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_HEALING: "амь нэмэх ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "үл үзэгдүүлэх ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_LEAPING: "өндөр үсэргэх ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_LEVITATION: "хөөргөх ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_LUCK: "азын ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_MUNDANE: "ууршимтгай хар ханд"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "харанхуйд харуулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_POISON: "хортой ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_REGENERATION: "амь нөхөх ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "өд шиг хөнгөн болгох ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_SLOWNESS: "удаашруулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_STRENGTH: "хүч оруулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "хурдлуулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_THICK: "ууршимтгай өтгөн ханд"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "яст мэлхий мастерийн ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_WATER: "ууршимтгай устай лонх"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "усанд амьсгалуулах ууршимтгай ханд"
+  LINGERING_POTION_EFFECT_WEAKNESS: "хүчгүй болгох ууршимтгай ханд"
+  LLAMA_SPAWN_EGG: "тэмээн гөрөөс төрүүлэх өндөг"
+  LODESTONE_COMPASS: "чиглүүлсэн луужин"
+  MAGENTA_DYE: "ягаан будаг"
+  MAGMA_CREAM: "хайлмаган тос"
+  MAGMA_CUBE_SPAWN_EGG: "хайлмаган куб төрүүлэх өндөг"
+  MANGROVE_BOAT: "мангро модон завь"
+  MANGROVE_CHEST_BOAT: "авдартай мангро модон завь"
+  MAP: "хоосон газрын зураг"
+  MELON_SEEDS: "тарвасны үр"
+  MELON_SLICE: "зүсэм тарвас"
+  MILK_BUCKET: "сүүтэй хувин"
+  MINECART: "уурхайн тэрэг"
+  MINER_POTTERY_SHARD: "уурхайчин хээтэй ваарын хэлтэрхий"
+  MINER_POTTERY_SHERD: "уурхайчин хээтэй ваарын хэлтэрхий"
+  MOJANG_BANNER_PATTERN: "тугийн хэв"
+  MOJANG_BANNER_PATTERN_DESC: "зүйл"
+  MOOSHROOM_SPAWN_EGG: "мүүшрүүм төрүүлэх өндөг"
+  MOURNER_POTTERY_SHARD: "гаслагч хээтэй ваарын хэлтэрхий"
+  MOURNER_POTTERY_SHERD: "гаслагч хээтэй ваарын хэлтэрхий"
+  MULE_SPAWN_EGG: "луус төрүүлэх өндөг"
+  MUSHROOM_STEW: "мөөгтэй шөл"
+  MUSIC_DISC_11: "пянз"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "пянз"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "пянз"
+  MUSIC_DISC_5_DESC: "самуель оберг - 5"
+  MUSIC_DISC_BLOCKS: "пянз"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "пянз"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "пянз"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "пянз"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "пянз"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "пянз"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "пянз"
+  MUSIC_DISC_OTHERSIDE_DESC: "лена рэйн - otherside"
+  MUSIC_DISC_PIGSTEP: "пянз"
+  MUSIC_DISC_PIGSTEP_DESC: "лена рэйн - pigstep"
+  MUSIC_DISC_RELIC: "пянз"
+  MUSIC_DISC_RELIC_DESC: "аарон шероф - relic"
+  MUSIC_DISC_STAL: "пянз"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "пянз"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "пянз"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "пянз"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "түүхий хонины мах"
+  NAME_TAG: "нэрийн шошго"
+  NAUTILUS_SHELL: "дунгийн яс"
+  NETHER_BRICK: "тамын тоосго"
+  NETHER_STAR: "тамын од"
+  NETHERITE_AXE: "недерит сүх"
+  NETHERITE_BOOTS: "недерит гутал"
+  NETHERITE_CHESTPLATE: "недерит цамц"
+  NETHERITE_HELMET: "недерит малгай"
+  NETHERITE_HOE: "недерит зээтүү"
+  NETHERITE_INGOT: "недерит"
+  NETHERITE_LEGGINGS: "недерит өмд"
+  NETHERITE_PICKAXE: "недерит ёотуу"
+  NETHERITE_SCRAP: "недеритийн хэлтэрхий"
+  NETHERITE_SHOVEL: "недерит хүрз"
+  NETHERITE_SWORD: "недерит сэлэм"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "дархны хэв"
+  OAK_BOAT: "царс модон завь"
+  OAK_CHEST_BOAT: "авдартай царс модон завь"
+  OCELOT_SPAWN_EGG: "ирвэс төрүүлэх өндөг"
+  ORANGE_DYE: "улбар шар будаг"
+  PAINTING: "уран зураг"
+  PANDA_SPAWN_EGG: "хулсны баавгай төрүүлэх өндөг"
+  PAPER: "цаас"
+  PARROT_SPAWN_EGG: "тоть төрүүлэх өндөг"
+  PHANTOM_MEMBRANE: "фантомын хальс"
+  PHANTOM_SPAWN_EGG: "фантом төрүүлэх өндөг"
+  PIG_SPAWN_EGG: "гахай төрүүлэх өндөг"
+  PIGLIN_BANNER_PATTERN: "тугийн хэв"
+  PIGLIN_BANNER_PATTERN_DESC: "хоншоор"
+  PIGLIN_BRUTE_SPAWN_EGG: "харгис пиглин төрүүлэх өндөг"
+  PIGLIN_SPAWN_EGG: "пиглин төрүүлэх өндөг"
+  PILLAGER_SPAWN_EGG: "дээрэмчин төрүүлэх өндөг"
+  PINK_DYE: "цайвар ягаан будаг"
+  PITCHER_POD: "сарраценийн буурцаг"
+  PLENTY_POTTERY_SHARD: "элбэг дэлбэгийн хээтэй ваарын хэлтэрхий"
+  PLENTY_POTTERY_SHERD: "элбэг дэлбэгийн хээтэй ваарын хэлтэрхий"
+  POISONOUS_POTATO: "хортой төмс"
+  POLAR_BEAR_SPAWN_EGG: "цагаан баавгай төрүүлэх өндөг"
+  POPPED_CHORUS_FRUIT: "хөөсөн дахилтат жимс"
+  PORKCHOP: "түүхий гахайн мах"
+  POTATO: "төмс"
+  POTION: "ханд"
+  POTION_EFFECT_AWKWARD: "эвгүй ханд"
+  POTION_EFFECT_EMPTY: "гаргах боломжгүй ханд"
+  POTION_EFFECT_FIRE_RESISTANCE: "галд тэсвэртэй болгох ханд"
+  POTION_EFFECT_HARMING: "хохирол учруулах ханд"
+  POTION_EFFECT_HEALING: "амь нэмэх ханд"
+  POTION_EFFECT_INVISIBILITY: "үл үзэгдүүлэх ханд"
+  POTION_EFFECT_LEAPING: "өндөр үсэргэх ханд"
+  POTION_EFFECT_LEVITATION: "хөөргөх ханд"
+  POTION_EFFECT_LUCK: "азын ханд"
+  POTION_EFFECT_MUNDANE: "хар ханд"
+  POTION_EFFECT_NIGHT_VISION: "харанхуйд харуулах ханд"
+  POTION_EFFECT_POISON: "хор"
+  POTION_EFFECT_REGENERATION: "амь нөхөх ханд"
+  POTION_EFFECT_SLOW_FALLING: "өд шиг хөнгөн болгох ханд"
+  POTION_EFFECT_SLOWNESS: "удаашруулах ханд"
+  POTION_EFFECT_STRENGTH: "хүч оруулах ханд"
+  POTION_EFFECT_SWIFTNESS: "хурдлуулах ханд"
+  POTION_EFFECT_THICK: "өтгөн ханд"
+  POTION_EFFECT_TURTLE_MASTER: "яст мэлхий мастерийн ханд"
+  POTION_EFFECT_WATER: "устай лонх"
+  POTION_EFFECT_WATER_BREATHING: "усанд амьсгалуулах ханд"
+  POTION_EFFECT_WEAKNESS: "хүчгүй болгох ханд"
+  POTTERY_SHARD_ARCHER: "харваач хээтэй ваарын хэлтэрхий"
+  POTTERY_SHARD_ARMS_UP: "гараа өргөсөн хээтэй ваарын хэлтэрхий"
+  POTTERY_SHARD_PRIZE: "шагнал хээтэй ваарын хэлтэрхий"
+  POTTERY_SHARD_SKULL: "гавлын ясан хээтэй ваарын хэлтэрхий"
+  POWDER_SNOW_BUCKET: "сэвсгэр цастай хувин"
+  PRISMARINE_CRYSTALS: "присмарины талст"
+  PRISMARINE_SHARD: "присмарины хэлтэрхий"
+  PRIZE_POTTERY_SHARD: "алмаасан хээтэй ваарын хэлтэрхий"
+  PRIZE_POTTERY_SHERD: "алмаасан хээтэй ваарын хэлтэрхий"
+  PUFFERFISH: "үлээгч загас"
+  PUFFERFISH_BUCKET: "үлээгч загастай хувин"
+  PUFFERFISH_SPAWN_EGG: "үлээгч загас төрүүлэх"
+  PUMPKIN_PIE: "хулууны бялуу"
+  PUMPKIN_SEEDS: "хулууны үр"
+  PURPLE_DYE: "нил ягаан будаг"
+  QUARTZ: "кварц"
+  RABBIT: "түүхийн туулайн мах"
+  RABBIT_FOOT: "туулайн хөл"
+  RABBIT_HIDE: "туулайн арьс"
+  RABBIT_SPAWN_EGG: "туулай төрүүлэх өндөг"
+  RABBIT_STEW: "туулайн шөл"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  RAVAGER_SPAWN_EGG: "сүйтгэгч төрүүлэх өндөг"
+  RAW_COPPER: "боловсруулаагүй зэс"
+  RAW_GOLD: "боловсруулаагүй алт"
+  RAW_IRON: "боловсруулаагүй төмөр"
+  RECOVERY_COMPASS: "авралын луужин"
+  RED_DYE: "улаан будаг"
+  REDSTONE: "редстоуны тоос"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  ROTTEN_FLESH: "муудсан мах"
+  SADDLE: "эмээл"
+  SALMON: "түүхий яргай загас"
+  SALMON_BUCKET: "яргай загастай хувин"
+  SALMON_SPAWN_EGG: "яргай загас төрүүлэх өндөг"
+  SCUTE: "яст мэлхийн хуягны хэлтэрхий"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  SHEAF_POTTERY_SHARD: "боодол хээтэй ваарын хэлтэрхий"
+  SHEAF_POTTERY_SHERD: "боодол хээтэй ваарын хэлтэрхий"
+  SHEARS: "хайч"
+  SHEEP_SPAWN_EGG: "хонь төрүүлэх өндөг"
+  SHELTER_POTTERY_SHARD: "оромж хээтэй ваарын хэлтэрхий"
+  SHELTER_POTTERY_SHERD: "оромж хээтэй ваарын хэлтэрхий"
+  SHIELD: "бамбай"
+  SHIELD_BLACK: "хар бамбай"
+  SHIELD_BLUE: "хөх бамбай"
+  SHIELD_BROWN: "бор бамбай"
+  SHIELD_CYAN: "номин цэнхэр бамбай"
+  SHIELD_GRAY: "саарал бамбай"
+  SHIELD_GREEN: "ногоон бамбай"
+  SHIELD_LIGHT_BLUE: "цэнхэр бамбай"
+  SHIELD_LIGHT_GRAY: "цайвар саарал бамбай"
+  SHIELD_LIME: "цайвар ногоон бамбай"
+  SHIELD_MAGENTA: "ягаан бамбай"
+  SHIELD_ORANGE: "улбар шар бамбай"
+  SHIELD_PINK: "цайвар ягаан бамбай"
+  SHIELD_PURPLE: "нил ягаан бамбай"
+  SHIELD_RED: "улаан бамбай"
+  SHIELD_WHITE: "цагаан бамбай"
+  SHIELD_YELLOW: "шар бамбай"
+  SHULKER_SHELL: "шалкерийн хуяг"
+  SHULKER_SPAWN_EGG: "шалкер төрүүлэх өндөг"
+  SIGN: "самбар"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  SILVERFISH_SPAWN_EGG: "жоом төрүүлэх өндөг"
+  SKELETON_HORSE_SPAWN_EGG: "араг ясан морь төрүүлэх өндөг"
+  SKELETON_SPAWN_EGG: "араг яс төрүүлэх өндөг"
+  SKULL_BANNER_PATTERN: "тугийн хэв"
+  SKULL_BANNER_PATTERN_DESC: "гавлын яс"
+  SKULL_POTTERY_SHARD: "гавлын ясан хээтэй ваарын хэлтэрхий"
+  SKULL_POTTERY_SHERD: "гавлын ясан хээтэй ваарын хэлтэрхий"
+  SLIME_BALL: "салс бөмбөг"
+  SLIME_SPAWN_EGG: "салстан төрүүлэх өндөг"
+  SMITHING_TEMPLATE: "дархны хэв"
+  SMITHING_TEMPLATE_APPLIES_TO: "хэрэглэгдэх зүйл:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "гулдмай эсвэл болор нэмэх"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "хуяг дуулга"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "хуяг нэмэх"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "гулдмай болон болрууд"
+  SMITHING_TEMPLATE_INGREDIENTS: "найрлага:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "недерит нэмэх"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "алмаасан хэрэглэл"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "алмаасан хуяг зэвсэг эсвэл багажаа нэмэх"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "недерит"
+  SMITHING_TEMPLATE_UPGRADE: "сайжруулах: "
+  SNIFFER_SPAWN_EGG: "шиншигч төрүүлэх өндөг"
+  SNORT_POTTERY_SHARD: "тургих хээтэй ваарын хэлтэрхий"
+  SNORT_POTTERY_SHERD: "тургих хээтэй ваарын хэлтэрхий"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  SNOW_GOLEM_SPAWN_EGG: "цасан хүн төрүүлэх өндөг"
+  SNOWBALL: "цасан бөмбөг"
+  SPECTRAL_ARROW: "тодруулагч сум"
+  SPIDER_EYE: "аалзны нүд"
+  SPIDER_SPAWN_EGG: "аалз төрүүлэх өндөг"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  SPLASH_POTION: "шиддэг ханд"
+  SPLASH_POTION_EFFECT_AWKWARD: "шиддэг эвгүй ханд"
+  SPLASH_POTION_EFFECT_EMPTY: "шиддэг гаргах боломжгүй ханд"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "галд тэсвэртэй болгох шиддэг ханд"
+  SPLASH_POTION_EFFECT_HARMING: "хохирол учруулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_HEALING: "амь нэмэх шиддэг ханд"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "үл үзэгдүүлэх шиддэг ханд"
+  SPLASH_POTION_EFFECT_LEAPING: "өндөр үсэргэх шиддэг ханд"
+  SPLASH_POTION_EFFECT_LEVITATION: "хөөргөх шиддэг ханд"
+  SPLASH_POTION_EFFECT_LUCK: "азын шиддэг ханд"
+  SPLASH_POTION_EFFECT_MUNDANE: "шиддэг хар ханд"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "харанхуйд харуулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_POISON: "хортой шиддэг ханд"
+  SPLASH_POTION_EFFECT_REGENERATION: "амь нөхөх шиддэг ханд"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "өд шиг хөнгөн болгох шиддэг ханд"
+  SPLASH_POTION_EFFECT_SLOWNESS: "удаашруулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_STRENGTH: "хүч оруулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "хурдлуулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_THICK: "шиддэг өтгөн ханд"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "яст мэлхий мастерийн шиддэг ханд"
+  SPLASH_POTION_EFFECT_WATER: "шиддэг устай лонх"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "усанд амьсгалуулах шиддэг ханд"
+  SPLASH_POTION_EFFECT_WEAKNESS: "хүчгүй болгох шиддэг ханд"
+  SPRUCE_BOAT: "гацуур модон завь"
+  SPRUCE_CHEST_BOAT: "авдартай гацуур модон завь"
+  SPYGLASS: "дуран"
+  SQUID_SPAWN_EGG: "наймалж төрүүлэх өндөг"
+  STICK: "савх"
+  STONE_AXE: "чулуун сүх"
+  STONE_HOE: "чулуун зээтүү"
+  STONE_PICKAXE: "чулуун ёотуу"
+  STONE_SHOVEL: "чулуун хүрз"
+  STONE_SWORD: "чулуун сэлэм"
+  STRAY_SPAWN_EGG: "тэнүүчлэгч төрүүлэх өндөг"
+  STRIDER_SPAWN_EGG: "хайлмалхагч төрүүлэх өндөг"
+  STRING: "утас"
+  SUGAR: "элсэн чихэр"
+  SUSPICIOUS_STEW: "сэжигтэй шөл"
+  SWEET_BERRIES: "чихэрлэг жимсгэнэ"
+  TADPOLE_BUCKET: "шанаган хорхойтой хувин"
+  TADPOLE_SPAWN_EGG: "шанаган хорхой төрүүлэх өндөг"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  TIPPED_ARROW: "хандтай сум"
+  TIPPED_ARROW_EFFECT_AWKWARD: "хандтай сум"
+  TIPPED_ARROW_EFFECT_EMPTY: "урлах боломжгүй хандтай сум"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "галд тэсвэртэй болгох сум"
+  TIPPED_ARROW_EFFECT_HARMING: "хохирол учруулах сум"
+  TIPPED_ARROW_EFFECT_HEALING: "амь нэмэх сум"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "үл үзэгдүүлэх сум"
+  TIPPED_ARROW_EFFECT_LEAPING: "өндөр үсэргэх сум"
+  TIPPED_ARROW_EFFECT_LEVITATION: "хөөргөх сум"
+  TIPPED_ARROW_EFFECT_LUCK: "азын сум"
+  TIPPED_ARROW_EFFECT_MUNDANE: "хандтай сум"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "харанхуйд харуулах сум"
+  TIPPED_ARROW_EFFECT_POISON: "хортой сум"
+  TIPPED_ARROW_EFFECT_REGENERATION: "амь нөхөх сум"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "өд шиг хөнгөн болгох сум"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "удаашруулах сум"
+  TIPPED_ARROW_EFFECT_STRENGTH: "хүч оруулах сум"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "хурдлуулах сум"
+  TIPPED_ARROW_EFFECT_THICK: "хандтай сум"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "яст мэлхий мастерийн сум"
+  TIPPED_ARROW_EFFECT_WATER: "цалгих сум"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "усанд амьсгалуулах сум"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "хүчгүй болгох сум"
+  TNT_MINECART: "tnt-тэй тэрэг"
+  TORCHFLOWER_SEEDS: "бамбар цэцгийн үр"
+  TOTEM_OF_UNDYING: "үхэшгүй мөнхийн сахиус"
+  TRADER_LLAMA_SPAWN_EGG: "худалдаачны тэмээн гөрөөс төрүүлэх өндөн"
+  TRIAL_KEY: "сорилын түлхүүр"
+  TRIDENT: "сэрээ таяг"
+  TROPICAL_FISH: "халуун орны загас"
+  TROPICAL_FISH_BUCKET: "халуун орны загастай хувин"
+  TROPICAL_FISH_SPAWN_EGG: "халуун орны загас төрүүлэх"
+  TURTLE_HELMET: "яст мэлхийн хуяг"
+  TURTLE_SPAWN_EGG: "яст мэлхий төрүүлэх өндөг"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  VEX_SPAWN_EGG: "залхаагч төрүүлэх өндөг"
+  VILLAGER_SPAWN_EGG: "тосгоны иргэн төрүүлэх өндөг"
+  VINDICATOR_SPAWN_EGG: "дагалдагч төрүүлэх өндөг"
+  WANDERING_TRADER_SPAWN_EGG: "аялагч худалдаачин төрүүлэх өндөг"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  WARDEN_SPAWN_EGG: "сахиул төрүүлэх өндөг"
+  WARPED_FUNGUS_ON_A_STICK: "гажуудсан мөөгтэй уурга"
+  WATER_BUCKET: "устай хувин"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  WHEAT: "улаан буудай"
+  WHEAT_SEEDS: "улаан буудайн үр"
+  WHITE_DYE: "цагаан будаг"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "дархны хэв"
+  WITCH_SPAWN_EGG: "шулам төрүүлэх өндөг"
+  WITHER_SKELETON_SPAWN_EGG: "витер араг яс төрүүлэх өндөг"
+  WITHER_SPAWN_EGG: "витер төрүүлэх өндөг"
+  WOLF_SPAWN_EGG: "чоно төрүүлэх өндөг"
+  WOODEN_AXE: "модон сүх"
+  WOODEN_HOE: "модон зээтүү"
+  WOODEN_PICKAXE: "модон ёотуу"
+  WOODEN_SHOVEL: "модон хүрз"
+  WOODEN_SWORD: "модон сэлэм"
+  WRITABLE_BOOK: "ном болон үзэг"
+  WRITTEN_BOOK: "бичсэн ном"
+  YELLOW_DYE: "шар будаг"
+  ZOGLIN_SPAWN_EGG: "зоглин төрүүлэх өндөг"
+  ZOMBIE_HORSE_SPAWN_EGG: "зомби морь төрүүлэх өндөг"
+  ZOMBIE_SPAWN_EGG: "зомби төрүүлэх өндөг"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "зомби тосгоны иргэн төрүүлэх өндөг"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "зомбижсон пиглин төрүүлэх өндөг"
+  CHEST: "цээжинд байх үед:"
+  FEET: "уланд байх үед:"
+  HEAD: "толгойд байх үед:"
+  LEGS: "хөлөнд байх үед:"
+  MAINHAND: "үндсэн гарт байх үед:"
+  OFFHAND: "солгой гарт байх үед:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

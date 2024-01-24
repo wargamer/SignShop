@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akaatsianupp"
+  ACACIA_DOOR: "akaatsiast uks"
+  ACACIA_FENCE: "akaatsiast aed"
+  ACACIA_FENCE_GATE: "akaatsiast aiavärav"
+  ACACIA_HANGING_SIGN: "akaatsiast rippuv silt"
+  ACACIA_LEAVES: "akaatsialehed"
+  ACACIA_LOG: "akaatsiatüvi"
+  ACACIA_PLANKS: "akaatsialauad"
+  ACACIA_PRESSURE_PLATE: "akaatsiast surveplaat"
+  ACACIA_SAPLING: "akaatsiaistik"
+  ACACIA_SIGN: "akaatsiast silt"
+  ACACIA_SLAB: "akaatsiaplaat"
+  ACACIA_STAIRS: "akaatsiatrepp"
+  ACACIA_TRAPDOOR: "akaatsialuuk"
+  ACACIA_WALL_HANGING_SIGN: "akaatsiast seinal rippuv silt"
+  ACACIA_WALL_SIGN: "akaatsiast seinasilt"
+  ACACIA_WOOD: "akaatsiapuit"
+  ACTIVATOR_RAIL: "käivitusrööpad"
+  AIR: "õhk"
+  ALLIUM: "lauk"
+  AMETHYST_BLOCK: "ametüstiplokk"
+  AMETHYST_CLUSTER: "ametüstikobar"
+  ANCIENT_DEBRIS: "antiikrusud"
+  ANDESITE: "andesiit"
+  ANDESITE_SLAB: "andesiitplaat"
+  ANDESITE_STAIRS: "andesiit-trepp"
+  ANDESITE_WALL: "andesiitmüür"
+  ANVIL: "alasi"
+  ATTACHED_MELON_STEM: "kinnitunud melonivars"
+  ATTACHED_PUMPKIN_STEM: "kinnitunud kõrvitsavars"
+  AZALEA: "asalea"
+  AZALEA_LEAVES: "asalealehed"
+  AZURE_BLUET: "sinine inglisilm"
+  BAMBOO: "bambus"
+  BAMBOO_BLOCK: "bambuseplokk"
+  BAMBOO_BUTTON: "bambusnupp"
+  BAMBOO_DOOR: "bambusest uks"
+  BAMBOO_FENCE: "bambusest aed"
+  BAMBOO_FENCE_GATE: "bambusest aiavärav"
+  BAMBOO_HANGING_SIGN: "bambusest rippuv silt"
+  BAMBOO_MOSAIC: "bambusmosaiik"
+  BAMBOO_MOSAIC_SLAB: "bambusmosaiigi plaat"
+  BAMBOO_MOSAIC_STAIRS: "bambusmosaiigist trepp"
+  BAMBOO_PLANKS: "bambuslauad"
+  BAMBOO_PRESSURE_PLATE: "bambusest surveplaat"
+  BAMBOO_SAPLING: "bambusevõrse"
+  BAMBOO_SIGN: "bambusest silt"
+  BAMBOO_SLAB: "bambusplaat"
+  BAMBOO_STAIRS: "bambustrepp"
+  BAMBOO_TRAPDOOR: "bambusluuk"
+  BAMBOO_WALL_HANGING_SIGN: "bambusest seinal rippuv silt"
+  BAMBOO_WALL_SIGN: "bambusest seinasilt"
+  BANNER_BASE_BLACK: "täielikult musta täitega"
+  BANNER_BASE_BLUE: "täielikult sinise täitega"
+  BANNER_BASE_BROWN: "täielikult pruuni täitega"
+  BANNER_BASE_CYAN: "täielikult tsüaansinise täitega"
+  BANNER_BASE_GRAY: "täielikult halli täitega"
+  BANNER_BASE_GREEN: "täielikult rohelise täitega"
+  BANNER_BASE_LIGHT_BLUE: "täielikult helesinise täitega"
+  BANNER_BASE_LIGHT_GRAY: "täielikult helehalli täitega"
+  BANNER_BASE_LIME: "täielikult laimirohelise täitega"
+  BANNER_BASE_MAGENTA: "täielikult fuksiinpunase täitega"
+  BANNER_BASE_ORANGE: "täielikult oranži täitega"
+  BANNER_BASE_PINK: "täielikult roosa täitega"
+  BANNER_BASE_PURPLE: "täielikult lilla täitega"
+  BANNER_BASE_RED: "täielikult punase täitega"
+  BANNER_BASE_WHITE: "täielikult valge täitega"
+  BANNER_BASE_YELLOW: "täielikult kollase täitega"
+  BANNER_BORDER_BLACK: "musta poordiga"
+  BANNER_BORDER_BLUE: "sinise poordiga"
+  BANNER_BORDER_BROWN: "pruuni poordiga"
+  BANNER_BORDER_CYAN: "tsüaansinise poordiga"
+  BANNER_BORDER_GRAY: "halli poordiga"
+  BANNER_BORDER_GREEN: "rohelise poordiga"
+  BANNER_BORDER_LIGHT_BLUE: "helesinise poordiga"
+  BANNER_BORDER_LIGHT_GRAY: "helehalli poordiga"
+  BANNER_BORDER_LIME: "laimirohelise poordiga"
+  BANNER_BORDER_MAGENTA: "fuksiinpunase poordiga"
+  BANNER_BORDER_ORANGE: "oranži poordiga"
+  BANNER_BORDER_PINK: "roosa poordiga"
+  BANNER_BORDER_PURPLE: "lilla poordiga"
+  BANNER_BORDER_RED: "punase poordiga"
+  BANNER_BORDER_WHITE: "valge poordiga"
+  BANNER_BORDER_YELLOW: "kollase poordiga"
+  BANNER_BRICKS_BLACK: "mustade telliste täitega"
+  BANNER_BRICKS_BLUE: "siniste telliste täitega"
+  BANNER_BRICKS_BROWN: "pruunide telliste täitega"
+  BANNER_BRICKS_CYAN: "tsüaansiniste telliste täitega"
+  BANNER_BRICKS_GRAY: "hallide telliste täitega"
+  BANNER_BRICKS_GREEN: "roheliste telliste täitega"
+  BANNER_BRICKS_LIGHT_BLUE: "helesiniste telliste täitega"
+  BANNER_BRICKS_LIGHT_GRAY: "helehallide telliste täitega"
+  BANNER_BRICKS_LIME: "laimiroheliste telliste täitega"
+  BANNER_BRICKS_MAGENTA: "fuksiinpunaste telliste täitega"
+  BANNER_BRICKS_ORANGE: "oranžide telliste täitega"
+  BANNER_BRICKS_PINK: "roosade telliste täitega"
+  BANNER_BRICKS_PURPLE: "lillade telliste täitega"
+  BANNER_BRICKS_RED: "punaste telliste täitega"
+  BANNER_BRICKS_WHITE: "valgete telliste täitega"
+  BANNER_BRICKS_YELLOW: "kollaste telliste täitega"
+  BANNER_CIRCLE_BLACK: "musta sõõriga"
+  BANNER_CIRCLE_BLUE: "sinise sõõriga"
+  BANNER_CIRCLE_BROWN: "pruuni sõõriga"
+  BANNER_CIRCLE_CYAN: "tsüaansinise sõõriga"
+  BANNER_CIRCLE_GRAY: "halli sõõriga"
+  BANNER_CIRCLE_GREEN: "rohelise sõõriga"
+  BANNER_CIRCLE_LIGHT_BLUE: "helesinise sõõriga"
+  BANNER_CIRCLE_LIGHT_GRAY: "helehalli sõõriga"
+  BANNER_CIRCLE_LIME: "laimirohelise sõõriga"
+  BANNER_CIRCLE_MAGENTA: "fuksiinpunase sõõriga"
+  BANNER_CIRCLE_ORANGE: "oranži sõõriga"
+  BANNER_CIRCLE_PINK: "roosa sõõriga"
+  BANNER_CIRCLE_PURPLE: "lilla sõõriga"
+  BANNER_CIRCLE_RED: "punase sõõriga"
+  BANNER_CIRCLE_WHITE: "valge sõõriga"
+  BANNER_CIRCLE_YELLOW: "kollase sõõriga"
+  BANNER_CREEPER_BLACK: "musta creeperi embleemiga"
+  BANNER_CREEPER_BLUE: "sinise creeperi embleemiga"
+  BANNER_CREEPER_BROWN: "pruuni creeperi embleemiga"
+  BANNER_CREEPER_CYAN: "tsüaansinise creeperi embleemiga"
+  BANNER_CREEPER_GRAY: "halli creeperi embleemiga"
+  BANNER_CREEPER_GREEN: "rohelise creeperi embleemiga"
+  BANNER_CREEPER_LIGHT_BLUE: "helesinise creeperi embleemiga"
+  BANNER_CREEPER_LIGHT_GRAY: "helehalli creeperi embleemiga"
+  BANNER_CREEPER_LIME: "laimirohelise creeperi embleemiga"
+  BANNER_CREEPER_MAGENTA: "fuksiinpunase creeperi embleemiga"
+  BANNER_CREEPER_ORANGE: "oranži creeperi embleemiga"
+  BANNER_CREEPER_PINK: "roosa creeperi embleemiga"
+  BANNER_CREEPER_PURPLE: "lilla creeperi embleemiga"
+  BANNER_CREEPER_RED: "punase creeperi embleemiga"
+  BANNER_CREEPER_WHITE: "valge creeperi embleemiga"
+  BANNER_CREEPER_YELLOW: "kollase creeperi embleemiga"
+  BANNER_CROSS_BLACK: "musta andrease ristiga"
+  BANNER_CROSS_BLUE: "sinise andrease ristiga"
+  BANNER_CROSS_BROWN: "pruuni andrease ristiga"
+  BANNER_CROSS_CYAN: "tsüaansinise andrease ristiga"
+  BANNER_CROSS_GRAY: "halli andrease ristiga"
+  BANNER_CROSS_GREEN: "rohelise andrease ristiga"
+  BANNER_CROSS_LIGHT_BLUE: "helesinise andrease ristiga"
+  BANNER_CROSS_LIGHT_GRAY: "helehalli andrease ristiga"
+  BANNER_CROSS_LIME: "laimirohelise andrease ristiga"
+  BANNER_CROSS_MAGENTA: "fuksiinpunase andrease ristiga"
+  BANNER_CROSS_ORANGE: "oranži andrease ristiga"
+  BANNER_CROSS_PINK: "roosa andrease ristiga"
+  BANNER_CROSS_PURPLE: "lilla andrease ristiga"
+  BANNER_CROSS_RED: "punase andrease ristiga"
+  BANNER_CROSS_WHITE: "valge andrease ristiga"
+  BANNER_CROSS_YELLOW: "kollase andrease ristiga"
+  BANNER_CURLY_BORDER_BLACK: "musta sakkidega poordiga"
+  BANNER_CURLY_BORDER_BLUE: "sinise sakkidega poordiga"
+  BANNER_CURLY_BORDER_BROWN: "pruuni sakkidega poordiga"
+  BANNER_CURLY_BORDER_CYAN: "tsüaansinise sakkidega poordiga"
+  BANNER_CURLY_BORDER_GRAY: "halli sakkidega poordiga"
+  BANNER_CURLY_BORDER_GREEN: "rohelise sakkidega poordiga"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "helesinise sakkidega poordiga"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "helehalli sakkidega poordiga"
+  BANNER_CURLY_BORDER_LIME: "laimirohelise sakkidega poordiga"
+  BANNER_CURLY_BORDER_MAGENTA: "fuksiinpunase sakkidega poordiga"
+  BANNER_CURLY_BORDER_ORANGE: "oranži sakkidega poordiga"
+  BANNER_CURLY_BORDER_PINK: "roosa sakkidega poordiga"
+  BANNER_CURLY_BORDER_PURPLE: "lilla sakkidega poordiga"
+  BANNER_CURLY_BORDER_RED: "punase sakkidega poordiga"
+  BANNER_CURLY_BORDER_WHITE: "valge sakkidega poordiga"
+  BANNER_CURLY_BORDER_YELLOW: "kollase sakkidega poordiga"
+  BANNER_DIAGONAL_LEFT_BLACK: "musta täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_BLUE: "sinise täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_BROWN: "pruuni täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_CYAN: "tsüaansinise täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_GRAY: "halli täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_GREEN: "rohelise täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "helesinise täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "helehalli täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_LIME: "laimirohelise täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "fuksiinpunase täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_ORANGE: "oranži täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_PINK: "roosa täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lilla täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_RED: "punase täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_WHITE: "valge täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_LEFT_YELLOW: "kollase täidetud diagonaaliga üleval paremal"
+  BANNER_DIAGONAL_RIGHT_BLACK: "musta täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_BLUE: "sinise täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_BROWN: "pruuni täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_CYAN: "tsüaansinise täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_GRAY: "halli täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_GREEN: "rohelise täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "helesinise täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "helehalli täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_LIME: "laimirohelise täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "fuksiinpunase täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oranži täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_PINK: "roosa täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lilla täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_RED: "punase täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_WHITE: "valge täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "kollase täidetud diagonaaliga üleval vasakul"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "musta täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "sinise täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "pruuni täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "tsüaansinise täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "halli täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "rohelise täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "helesinise täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "helehalli täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "laimirohelise täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "fuksiinpunase täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "oranži täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "roosa täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lilla täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_RED: "punase täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "valge täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "kollase täidetud diagonaaliga all paremal"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "musta täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "sinise täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "pruuni täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tsüaansinise täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "halli täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "rohelise täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "helesinise täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "helehalli täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "laimirohelise täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "fuksiinpunase täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "oranži täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "roosa täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lilla täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "punase täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "valge täidetud diagonaaliga all vasakul"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "kollase täidetud diagonaaliga all vasakul"
+  BANNER_FLOWER_BLACK: "musta lille embleemiga"
+  BANNER_FLOWER_BLUE: "sinise lille embleemiga"
+  BANNER_FLOWER_BROWN: "pruuni lille embleemiga"
+  BANNER_FLOWER_CYAN: "tsüaansinise lille embleemiga"
+  BANNER_FLOWER_GRAY: "halli lille embleemiga"
+  BANNER_FLOWER_GREEN: "rohelise lille embleemiga"
+  BANNER_FLOWER_LIGHT_BLUE: "helesinise lille embleemiga"
+  BANNER_FLOWER_LIGHT_GRAY: "helehalli lille embleemiga"
+  BANNER_FLOWER_LIME: "laimirohelise lille embleemiga"
+  BANNER_FLOWER_MAGENTA: "fuksiinpunase lille embleemiga"
+  BANNER_FLOWER_ORANGE: "oranži lille embleemiga"
+  BANNER_FLOWER_PINK: "roosa lille embleemiga"
+  BANNER_FLOWER_PURPLE: "lilla lille embleemiga"
+  BANNER_FLOWER_RED: "punase lille embleemiga"
+  BANNER_FLOWER_WHITE: "valge lille embleemiga"
+  BANNER_FLOWER_YELLOW: "kollase lille embleemiga"
+  BANNER_GLOBE_BLACK: "musta gloobusega"
+  BANNER_GLOBE_BLUE: "sinise gloobusega"
+  BANNER_GLOBE_BROWN: "pruuni gloobusega"
+  BANNER_GLOBE_CYAN: "tsüaansinise gloobusega"
+  BANNER_GLOBE_GRAY: "halli gloobusega"
+  BANNER_GLOBE_GREEN: "rohelise gloobusega"
+  BANNER_GLOBE_LIGHT_BLUE: "helesinise gloobusega"
+  BANNER_GLOBE_LIGHT_GRAY: "helehalli gloobusega"
+  BANNER_GLOBE_LIME: "laimirohelise gloobusega"
+  BANNER_GLOBE_MAGENTA: "fuksiinpunase gloobusega"
+  BANNER_GLOBE_ORANGE: "oranži gloobusega"
+  BANNER_GLOBE_PINK: "roosa gloobusega"
+  BANNER_GLOBE_PURPLE: "lilla gloobusega"
+  BANNER_GLOBE_RED: "punase gloobusega"
+  BANNER_GLOBE_WHITE: "valge gloobusega"
+  BANNER_GLOBE_YELLOW: "kollase gloobusega"
+  BANNER_GRADIENT_BLACK: "musta üleminekuga"
+  BANNER_GRADIENT_BLUE: "sinise üleminekuga"
+  BANNER_GRADIENT_BROWN: "pruuni üleminekuga"
+  BANNER_GRADIENT_CYAN: "tsüaansinise üleminekuga"
+  BANNER_GRADIENT_GRAY: "halli üleminekuga"
+  BANNER_GRADIENT_GREEN: "rohelise üleminekuga"
+  BANNER_GRADIENT_LIGHT_BLUE: "helesinise üleminekuga"
+  BANNER_GRADIENT_LIGHT_GRAY: "helehalli üleminekuga"
+  BANNER_GRADIENT_LIME: "laimirohelise üleminekuga"
+  BANNER_GRADIENT_MAGENTA: "fuksiinpunase üleminekuga"
+  BANNER_GRADIENT_ORANGE: "oranži üleminekuga"
+  BANNER_GRADIENT_PINK: "roosa üleminekuga"
+  BANNER_GRADIENT_PURPLE: "lilla üleminekuga"
+  BANNER_GRADIENT_RED: "punase üleminekuga"
+  BANNER_GRADIENT_WHITE: "valge üleminekuga"
+  BANNER_GRADIENT_YELLOW: "kollase üleminekuga"
+  BANNER_GRADIENT_UP_BLACK: "musta pööratud üleminekuga"
+  BANNER_GRADIENT_UP_BLUE: "sinise pööratud üleminekuga"
+  BANNER_GRADIENT_UP_BROWN: "pruuni pööratud üleminekuga"
+  BANNER_GRADIENT_UP_CYAN: "tsüaansinise pööratud üleminekuga"
+  BANNER_GRADIENT_UP_GRAY: "halli pööratud üleminekuga"
+  BANNER_GRADIENT_UP_GREEN: "rohelise pööratud üleminekuga"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "helesinise pööratud üleminekuga"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "helehalli pööratud üleminekuga"
+  BANNER_GRADIENT_UP_LIME: "laimirohelise pööratud üleminekuga"
+  BANNER_GRADIENT_UP_MAGENTA: "fuksiinpunase pööratud üleminekuga"
+  BANNER_GRADIENT_UP_ORANGE: "oranži pööratud üleminekuga"
+  BANNER_GRADIENT_UP_PINK: "roosa pööratud üleminekuga"
+  BANNER_GRADIENT_UP_PURPLE: "lilla pööratud üleminekuga"
+  BANNER_GRADIENT_UP_RED: "punase pööratud üleminekuga"
+  BANNER_GRADIENT_UP_WHITE: "valge pööratud üleminekuga"
+  BANNER_GRADIENT_UP_YELLOW: "kollase pööratud üleminekuga"
+  BANNER_HALF_HORIZONTAL_BLACK: "musta ülemise poolega"
+  BANNER_HALF_HORIZONTAL_BLUE: "sinise ülemise poolega"
+  BANNER_HALF_HORIZONTAL_BROWN: "pruuni ülemise poolega"
+  BANNER_HALF_HORIZONTAL_CYAN: "tsüaansinise ülemise poolega"
+  BANNER_HALF_HORIZONTAL_GRAY: "halli ülemise poolega"
+  BANNER_HALF_HORIZONTAL_GREEN: "rohelise ülemise poolega"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "helesinise ülemise poolega"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "helehalli ülemise poolega"
+  BANNER_HALF_HORIZONTAL_LIME: "laimirohelise ülemise poolega"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "fuksiinpunase ülemise poolega"
+  BANNER_HALF_HORIZONTAL_ORANGE: "oranži ülemise poolega"
+  BANNER_HALF_HORIZONTAL_PINK: "roosa ülemise poolega"
+  BANNER_HALF_HORIZONTAL_PURPLE: "lilla ülemise poolega"
+  BANNER_HALF_HORIZONTAL_RED: "punase ülemise poolega"
+  BANNER_HALF_HORIZONTAL_WHITE: "valge ülemise poolega"
+  BANNER_HALF_HORIZONTAL_YELLOW: "kollase ülemise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "musta alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "sinise alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "pruuni alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "tsüaansinise alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "halli alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "rohelise alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "helesinise alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "helehalli alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "laimirohelise alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "fuksiinpunase alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "oranži alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "roosa alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "lilla alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "punase alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "valge alumise poolega"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "kollase alumise poolega"
+  BANNER_HALF_VERTICAL_BLACK: "musta parema poolega"
+  BANNER_HALF_VERTICAL_BLUE: "sinise parema poolega"
+  BANNER_HALF_VERTICAL_BROWN: "pruuni parema poolega"
+  BANNER_HALF_VERTICAL_CYAN: "tsüaansinise parema poolega"
+  BANNER_HALF_VERTICAL_GRAY: "halli parema poolega"
+  BANNER_HALF_VERTICAL_GREEN: "rohelise parema poolega"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "helesinise parema poolega"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "helehalli parema poolega"
+  BANNER_HALF_VERTICAL_LIME: "laimirohelise parema poolega"
+  BANNER_HALF_VERTICAL_MAGENTA: "fuksiinpunase parema poolega"
+  BANNER_HALF_VERTICAL_ORANGE: "oranži parema poolega"
+  BANNER_HALF_VERTICAL_PINK: "roosa parema poolega"
+  BANNER_HALF_VERTICAL_PURPLE: "lilla parema poolega"
+  BANNER_HALF_VERTICAL_RED: "punase parema poolega"
+  BANNER_HALF_VERTICAL_WHITE: "valge parema poolega"
+  BANNER_HALF_VERTICAL_YELLOW: "kollase parema poolega"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "musta vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "sinise vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "pruuni vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "tsüaansinise vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "halli vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "rohelise vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "helesinise vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "helehalli vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "laimirohelise vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "fuksiinpunase vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "oranži vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "roosa vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "lilla vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "punase vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "valge vasaku poolega"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "kollase vasaku poolega"
+  BANNER_MOJANG_BLACK: "musta asjaga"
+  BANNER_MOJANG_BLUE: "sinise asjaga"
+  BANNER_MOJANG_BROWN: "pruuni asjaga"
+  BANNER_MOJANG_CYAN: "tsüaansinise asjaga"
+  BANNER_MOJANG_GRAY: "halli asjaga"
+  BANNER_MOJANG_GREEN: "rohelise asjaga"
+  BANNER_MOJANG_LIGHT_BLUE: "helesinise asjaga"
+  BANNER_MOJANG_LIGHT_GRAY: "helehalli asjaga"
+  BANNER_MOJANG_LIME: "laimirohelise asjaga"
+  BANNER_MOJANG_MAGENTA: "fuksiinpunase asjaga"
+  BANNER_MOJANG_ORANGE: "oranži asjaga"
+  BANNER_MOJANG_PINK: "roosa asjaga"
+  BANNER_MOJANG_PURPLE: "lilla asjaga"
+  BANNER_MOJANG_RED: "punase asjaga"
+  BANNER_MOJANG_WHITE: "valge asjaga"
+  BANNER_MOJANG_YELLOW: "kollase asjaga"
+  BANNER_PIGLIN_BLACK: "musta kärsaga"
+  BANNER_PIGLIN_BLUE: "sinise kärsaga"
+  BANNER_PIGLIN_BROWN: "pruuni kärsaga"
+  BANNER_PIGLIN_CYAN: "tsüaansinise kärsaga"
+  BANNER_PIGLIN_GRAY: "halli kärsaga"
+  BANNER_PIGLIN_GREEN: "rohelise kärsaga"
+  BANNER_PIGLIN_LIGHT_BLUE: "helesinise kärsaga"
+  BANNER_PIGLIN_LIGHT_GRAY: "helehalli kärsaga"
+  BANNER_PIGLIN_LIME: "laimirohelise kärsaga"
+  BANNER_PIGLIN_MAGENTA: "fuksiinpunase kärsaga"
+  BANNER_PIGLIN_ORANGE: "oranži kärsaga"
+  BANNER_PIGLIN_PINK: "roosa kärsaga"
+  BANNER_PIGLIN_PURPLE: "lilla kärsaga"
+  BANNER_PIGLIN_RED: "punase kärsaga"
+  BANNER_PIGLIN_WHITE: "valge kärsaga"
+  BANNER_PIGLIN_YELLOW: "kollase kärsaga"
+  BANNER_RHOMBUS_BLACK: "musta rombiga"
+  BANNER_RHOMBUS_BLUE: "sinise rombiga"
+  BANNER_RHOMBUS_BROWN: "pruuni rombiga"
+  BANNER_RHOMBUS_CYAN: "tsüaansinise rombiga"
+  BANNER_RHOMBUS_GRAY: "halli rombiga"
+  BANNER_RHOMBUS_GREEN: "rohelise rombiga"
+  BANNER_RHOMBUS_LIGHT_BLUE: "helesinise rombiga"
+  BANNER_RHOMBUS_LIGHT_GRAY: "helehalli rombiga"
+  BANNER_RHOMBUS_LIME: "laimirohelise rombiga"
+  BANNER_RHOMBUS_MAGENTA: "fuksiinpunase rombiga"
+  BANNER_RHOMBUS_ORANGE: "oranži rombiga"
+  BANNER_RHOMBUS_PINK: "roosa rombiga"
+  BANNER_RHOMBUS_PURPLE: "lilla rombiga"
+  BANNER_RHOMBUS_RED: "punase rombiga"
+  BANNER_RHOMBUS_WHITE: "valge rombiga"
+  BANNER_RHOMBUS_YELLOW: "kollase rombiga"
+  BANNER_SKULL_BLACK: "musta pealuu embleemiga"
+  BANNER_SKULL_BLUE: "sinise pealuu embleemiga"
+  BANNER_SKULL_BROWN: "pruuni pealuu embleemiga"
+  BANNER_SKULL_CYAN: "tsüaansinise pealuu embleemiga"
+  BANNER_SKULL_GRAY: "halli pealuu embleemiga"
+  BANNER_SKULL_GREEN: "rohelise pealuu embleemiga"
+  BANNER_SKULL_LIGHT_BLUE: "helesinise pealuu embleemiga"
+  BANNER_SKULL_LIGHT_GRAY: "helehalli pealuu embleemiga"
+  BANNER_SKULL_LIME: "laimirohelise pealuu embleemiga"
+  BANNER_SKULL_MAGENTA: "fuksiinpunase pealuu embleemiga"
+  BANNER_SKULL_ORANGE: "oranži pealuu embleemiga"
+  BANNER_SKULL_PINK: "roosa pealuu embleemiga"
+  BANNER_SKULL_PURPLE: "lilla pealuu embleemiga"
+  BANNER_SKULL_RED: "punase pealuu embleemiga"
+  BANNER_SKULL_WHITE: "valge pealuu embleemiga"
+  BANNER_SKULL_YELLOW: "kollase pealuu embleemiga"
+  BANNER_SMALL_STRIPES_BLACK: "mustade vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_BLUE: "siniste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_BROWN: "pruunide vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_CYAN: "tsüaansiniste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_GRAY: "hallide vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_GREEN: "roheliste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "helesiniste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "helehallide vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_LIME: "laimiroheliste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_MAGENTA: "fuksiinpunaste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_ORANGE: "oranžide vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_PINK: "roosade vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_PURPLE: "lillade vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_RED: "punaste vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_WHITE: "valgete vertikaalsete viirgudega"
+  BANNER_SMALL_STRIPES_YELLOW: "kollaste vertikaalsete viirgudega"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "musta ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "sinise ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "pruuni ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "tsüaansinise ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "halli ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "rohelise ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "helesinise ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "helehalli ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "laimirohelise ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "fuksiinpunase ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "oranži ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "roosa ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lilla ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "punase ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "valge ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "kollase ruuduga all paremas nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "musta ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "sinise ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "pruuni ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "tsüaansinise ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "halli ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "rohelise ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "helesinise ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "helehalli ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "laimirohelise ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "fuksiinpunase ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "oranži ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "roosa ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lilla ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "punase ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "valge ruuduga all vasakus nurgas"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "kollase ruuduga all vasakus nurgas"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "musta ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "sinise ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "pruuni ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "tsüaansinise ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "halli ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "rohelise ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "helesinise ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "helehalli ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_LIME: "laimirohelise ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "fuksiinpunase ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "oranži ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_PINK: "roosa ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lilla ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_RED: "punase ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "valge ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "kollase ruuduga üleval paremas nurgas"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "musta ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "sinise ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "pruuni ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "tsüaansinise ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "halli ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "rohelise ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "helesinise ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "helehalli ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "laimirohelise ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "fuksiinpunase ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "oranži ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "roosa ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lilla ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_RED: "punase ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "valge ruuduga üleval vasakus nurgas"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "kollase ruuduga üleval vasakus nurgas"
+  BANNER_STRAIGHT_CROSS_BLACK: "musta ristiga"
+  BANNER_STRAIGHT_CROSS_BLUE: "sinise ristiga"
+  BANNER_STRAIGHT_CROSS_BROWN: "pruuni ristiga"
+  BANNER_STRAIGHT_CROSS_CYAN: "tsüaansinise ristiga"
+  BANNER_STRAIGHT_CROSS_GRAY: "halli ristiga"
+  BANNER_STRAIGHT_CROSS_GREEN: "rohelise ristiga"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "helesinise ristiga"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "helehalli ristiga"
+  BANNER_STRAIGHT_CROSS_LIME: "laimirohelise ristiga"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "fuksiinpunase ristiga"
+  BANNER_STRAIGHT_CROSS_ORANGE: "oranži ristiga"
+  BANNER_STRAIGHT_CROSS_PINK: "roosa ristiga"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lilla ristiga"
+  BANNER_STRAIGHT_CROSS_RED: "punase ristiga"
+  BANNER_STRAIGHT_CROSS_WHITE: "valge ristiga"
+  BANNER_STRAIGHT_CROSS_YELLOW: "kollase ristiga"
+  BANNER_STRIPE_BOTTOM_BLACK: "musta joonega all"
+  BANNER_STRIPE_BOTTOM_BLUE: "sinise joonega all"
+  BANNER_STRIPE_BOTTOM_BROWN: "pruuni joonega all"
+  BANNER_STRIPE_BOTTOM_CYAN: "tsüaansinise joonega all"
+  BANNER_STRIPE_BOTTOM_GRAY: "halli joonega all"
+  BANNER_STRIPE_BOTTOM_GREEN: "rohelise joonega all"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "helesinise joonega all"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "helehalli joonega all"
+  BANNER_STRIPE_BOTTOM_LIME: "laimirohelise joonega all"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "fuksiinpunase joonega all"
+  BANNER_STRIPE_BOTTOM_ORANGE: "oranži joonega all"
+  BANNER_STRIPE_BOTTOM_PINK: "roosa joonega all"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lilla joonega all"
+  BANNER_STRIPE_BOTTOM_RED: "punase joonega all"
+  BANNER_STRIPE_BOTTOM_WHITE: "valge joonega all"
+  BANNER_STRIPE_BOTTOM_YELLOW: "kollase joonega all"
+  BANNER_STRIPE_CENTER_BLACK: "musta vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_BLUE: "sinise vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_BROWN: "pruuni vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_CYAN: "tsüaansinise vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_GRAY: "halli vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_GREEN: "rohelise vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "helesinise vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "helehalli vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_LIME: "laimirohelise vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_MAGENTA: "fuksiinpunase vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_ORANGE: "oranži vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_PINK: "roosa vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_PURPLE: "lilla vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_RED: "punase vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_WHITE: "valge vertikaalse joonega keskel"
+  BANNER_STRIPE_CENTER_YELLOW: "kollase vertikaalse joonega keskel"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "musta pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "sinise pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "pruuni pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "tsüaansinise pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "halli pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "rohelise pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "helesinise pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "helehalli pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_LIME: "laimirohelise pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "fuksiinpunase pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "oranži pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_PINK: "roosa pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lilla pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_RED: "punase pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "valge pööratud loogega"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "kollase pööratud loogega"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "musta loogega"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "sinise loogega"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "pruuni loogega"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "tsüaansinise loogega"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "halli loogega"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "rohelise loogega"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "helesinise loogega"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "helehalli loogega"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "laimirohelise loogega"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "fuksiinpunase loogega"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "oranži loogega"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "roosa loogega"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lilla loogega"
+  BANNER_STRIPE_DOWNRIGHT_RED: "punase loogega"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "valge loogega"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "kollase loogega"
+  BANNER_STRIPE_LEFT_BLACK: "musta flangiga paremal"
+  BANNER_STRIPE_LEFT_BLUE: "sinise flangiga paremal"
+  BANNER_STRIPE_LEFT_BROWN: "pruuni flangiga paremal"
+  BANNER_STRIPE_LEFT_CYAN: "tsüaansinise flangiga paremal"
+  BANNER_STRIPE_LEFT_GRAY: "halli flangiga paremal"
+  BANNER_STRIPE_LEFT_GREEN: "rohelise flangiga paremal"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "helesinise flangiga paremal"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "helehalli flangiga paremal"
+  BANNER_STRIPE_LEFT_LIME: "laimirohelise flangiga paremal"
+  BANNER_STRIPE_LEFT_MAGENTA: "fuksiinpunase flangiga paremal"
+  BANNER_STRIPE_LEFT_ORANGE: "oranži flangiga paremal"
+  BANNER_STRIPE_LEFT_PINK: "roosa flangiga paremal"
+  BANNER_STRIPE_LEFT_PURPLE: "lilla flangiga paremal"
+  BANNER_STRIPE_LEFT_RED: "punase flangiga paremal"
+  BANNER_STRIPE_LEFT_WHITE: "valge flangiga paremal"
+  BANNER_STRIPE_LEFT_YELLOW: "kollase flangiga paremal"
+  BANNER_STRIPE_MIDDLE_BLACK: "musta horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_BLUE: "sinise horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_BROWN: "pruuni horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_CYAN: "tsüaansinise horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_GRAY: "halli horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_GREEN: "rohelise horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "helesinise horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "helehalli horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_LIME: "laimirohelise horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "fuksiinpunase horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_ORANGE: "oranži horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_PINK: "roosa horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lilla horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_RED: "punase horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_WHITE: "valge horisontaalse joonega keskel"
+  BANNER_STRIPE_MIDDLE_YELLOW: "kollase horisontaalse joonega keskel"
+  BANNER_STRIPE_RIGHT_BLACK: "musta flangiga vasakul"
+  BANNER_STRIPE_RIGHT_BLUE: "sinise flangiga vasakul"
+  BANNER_STRIPE_RIGHT_BROWN: "pruuni flangiga vasakul"
+  BANNER_STRIPE_RIGHT_CYAN: "tsüaansinise flangiga vasakul"
+  BANNER_STRIPE_RIGHT_GRAY: "halli flangiga vasakul"
+  BANNER_STRIPE_RIGHT_GREEN: "rohelise flangiga vasakul"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "helesinise flangiga vasakul"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "helehalli flangiga vasakul"
+  BANNER_STRIPE_RIGHT_LIME: "laimirohelise flangiga vasakul"
+  BANNER_STRIPE_RIGHT_MAGENTA: "fuksiinpunase flangiga vasakul"
+  BANNER_STRIPE_RIGHT_ORANGE: "oranži flangiga vasakul"
+  BANNER_STRIPE_RIGHT_PINK: "roosa flangiga vasakul"
+  BANNER_STRIPE_RIGHT_PURPLE: "lilla flangiga vasakul"
+  BANNER_STRIPE_RIGHT_RED: "punase flangiga vasakul"
+  BANNER_STRIPE_RIGHT_WHITE: "valge flangiga vasakul"
+  BANNER_STRIPE_RIGHT_YELLOW: "kollase flangiga vasakul"
+  BANNER_STRIPE_TOP_BLACK: "musta joonega üleval"
+  BANNER_STRIPE_TOP_BLUE: "sinise joonega üleval"
+  BANNER_STRIPE_TOP_BROWN: "pruuni joonega üleval"
+  BANNER_STRIPE_TOP_CYAN: "tsüaansinise joonega üleval"
+  BANNER_STRIPE_TOP_GRAY: "halli joonega üleval"
+  BANNER_STRIPE_TOP_GREEN: "rohelise joonega üleval"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "helesinise joonega üleval"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "helehalli joonega üleval"
+  BANNER_STRIPE_TOP_LIME: "laimirohelise joonega üleval"
+  BANNER_STRIPE_TOP_MAGENTA: "fuksiinpunase joonega üleval"
+  BANNER_STRIPE_TOP_ORANGE: "oranži joonega üleval"
+  BANNER_STRIPE_TOP_PINK: "roosa joonega üleval"
+  BANNER_STRIPE_TOP_PURPLE: "lilla joonega üleval"
+  BANNER_STRIPE_TOP_RED: "punase joonega üleval"
+  BANNER_STRIPE_TOP_WHITE: "valge joonega üleval"
+  BANNER_STRIPE_TOP_YELLOW: "kollase joonega üleval"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "musta kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "sinise kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "pruuni kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "tsüaansinise kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "halli kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "rohelise kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "helesinise kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "helehalli kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_LIME: "laimirohelise kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "fuksiinpunase kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "oranži kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_PINK: "roosa kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lilla kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_RED: "punase kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "valge kolmnurgaga"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "kollase kolmnurgaga"
+  BANNER_TRIANGLE_TOP_BLACK: "musta pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_BLUE: "sinise pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_BROWN: "pruuni pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_CYAN: "tsüaansinise pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_GRAY: "halli pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_GREEN: "rohelise pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "helesinise pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "helehalli pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_LIME: "laimirohelise pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_MAGENTA: "fuksiinpunase pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_ORANGE: "oranži pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_PINK: "roosa pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_PURPLE: "lilla pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_RED: "punase pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_WHITE: "valge pööratud kolmnurgaga"
+  BANNER_TRIANGLE_TOP_YELLOW: "kollase pööratud kolmnurgaga"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "mustade alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "siniste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "pruunide alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "tsüaansiniste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "hallide alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "roheliste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "helesiniste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "helehallide alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_LIME: "laimiroheliste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "fuksiinpunaste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "oranžide alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_PINK: "roosade alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lillade alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_RED: "punaste alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "valgete alumiste sakkidega"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "kollaste alumiste sakkidega"
+  BANNER_TRIANGLES_TOP_BLACK: "mustade ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_BLUE: "siniste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_BROWN: "pruunide ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_CYAN: "tsüaansiniste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_GRAY: "hallide ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_GREEN: "roheliste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "helesiniste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "helehallide ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_LIME: "laimiroheliste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_MAGENTA: "fuksiinpunaste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_ORANGE: "oranžide ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_PINK: "roosade ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_PURPLE: "lillade ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_RED: "punaste ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_WHITE: "valgete ülemiste sakkidega"
+  BANNER_TRIANGLES_TOP_YELLOW: "kollaste ülemiste sakkidega"
+  BARREL: "tünn"
+  BARRIER: "ääris"
+  BASALT: "basalt"
+  BEACON: "majakas"
+  BEACON_PRIMARY: "peamine mõju"
+  BEACON_SECONDARY: "teisane mõju"
+  BED_NO_SLEEP: "sa saad magada ainult öösiti või äikesetormide ajal"
+  BED_NOT_SAFE: "sa ei saa hetkel puhata läheduses on koletisi"
+  BED_OBSTRUCTED: "see voodi on tõkestatud"
+  BED_OCCUPIED: "see voodi on hõivatud"
+  BED_TOO_FAR_AWAY: "sa ei saa hetkel puhata voodi on liiga kaugel"
+  BEDROCK: "aluskivi"
+  BEE_NEST: "mesilaspesa"
+  BEEHIVE: "mesitaru"
+  BEETROOTS: "peedid"
+  BELL: "kelluke"
+  BIG_DRIPLEAF: "suur tilkeleht"
+  BIG_DRIPLEAF_STEM: "suure tilkelehe vars"
+  BIRCH_BUTTON: "kasenupp"
+  BIRCH_DOOR: "kasest uks"
+  BIRCH_FENCE: "kasest aed"
+  BIRCH_FENCE_GATE: "kasest aiavärav"
+  BIRCH_HANGING_SIGN: "kasest rippuv silt"
+  BIRCH_LEAVES: "kaselehed"
+  BIRCH_LOG: "kasetüvi"
+  BIRCH_PLANKS: "kaselauad"
+  BIRCH_PRESSURE_PLATE: "kasest surveplaat"
+  BIRCH_SAPLING: "kaseistik"
+  BIRCH_SIGN: "kasest silt"
+  BIRCH_SLAB: "kaseplaat"
+  BIRCH_STAIRS: "kasetrepp"
+  BIRCH_TRAPDOOR: "kaseluuk"
+  BIRCH_WALL_HANGING_SIGN: "kasest seinal rippuv silt"
+  BIRCH_WALL_SIGN: "kasest seinasilt"
+  BIRCH_WOOD: "kasepuit"
+  BLACK_BANNER: "must plakat"
+  BLACK_BED: "must voodi"
+  BLACK_CANDLE: "must küünal"
+  BLACK_CANDLE_CAKE: "musta küünlaga kook"
+  BLACK_CARPET: "must vaip"
+  BLACK_CONCRETE: "must betoon"
+  BLACK_CONCRETE_POWDER: "must betoonipulber"
+  BLACK_GLAZED_TERRACOTTA: "must glasuuritud terrakota"
+  BLACK_SHULKER_BOX: "must šulkerikast"
+  BLACK_STAINED_GLASS: "musta värviga klaas"
+  BLACK_STAINED_GLASS_PANE: "musta värviga klaaspaneel"
+  BLACK_TERRACOTTA: "must terrakota"
+  BLACK_WOOL: "must vill"
+  BLACKSTONE: "mustkivi"
+  BLACKSTONE_SLAB: "mustkiviplaat"
+  BLACKSTONE_STAIRS: "mustkivitrepp"
+  BLACKSTONE_WALL: "mustkivimüür"
+  BLAST_FURNACE: "kõrgahi"
+  BLUE_BANNER: "sinine plakat"
+  BLUE_BED: "sinine voodi"
+  BLUE_CANDLE: "sinine küünal"
+  BLUE_CANDLE_CAKE: "sinise küünlaga kook"
+  BLUE_CARPET: "sinine vaip"
+  BLUE_CONCRETE: "sinine betoon"
+  BLUE_CONCRETE_POWDER: "sinine betoonipulber"
+  BLUE_GLAZED_TERRACOTTA: "sinine glasuuritud terrakota"
+  BLUE_ICE: "sinine jää"
+  BLUE_ORCHID: "sinine orhidee"
+  BLUE_SHULKER_BOX: "sinine šulkerikast"
+  BLUE_STAINED_GLASS: "sinise värviga klaas"
+  BLUE_STAINED_GLASS_PANE: "sinise värviga klaaspaneel"
+  BLUE_TERRACOTTA: "sinine terrakota"
+  BLUE_WOOL: "sinine vill"
+  BONE_BLOCK: "kondiplokk"
+  BOOKSHELF: "raamaturiiul"
+  BRAIN_CORAL: "ajukorall"
+  BRAIN_CORAL_BLOCK: "ajukoralli plokk"
+  BRAIN_CORAL_FAN: "ajukoralli lehvik"
+  BRAIN_CORAL_WALL_FAN: "ajukoralli seinalehvik"
+  BREWING_STAND: "pruulimisalus"
+  BRICK_SLAB: "tellisplaat"
+  BRICK_STAIRS: "tellistrepp"
+  BRICK_WALL: "tellismüür"
+  BRICKS: "tellised"
+  BROWN_BANNER: "pruun plakat"
+  BROWN_BED: "pruun voodi"
+  BROWN_CANDLE: "pruun küünal"
+  BROWN_CANDLE_CAKE: "pruuni küünlaga kook"
+  BROWN_CARPET: "pruun vaip"
+  BROWN_CONCRETE: "pruun betoon"
+  BROWN_CONCRETE_POWDER: "pruun betoonipulber"
+  BROWN_GLAZED_TERRACOTTA: "pruun glasuuritud terrakota"
+  BROWN_MUSHROOM: "pruun seen"
+  BROWN_MUSHROOM_BLOCK: "pruun seeneplokk"
+  BROWN_SHULKER_BOX: "pruun šulkerikast"
+  BROWN_STAINED_GLASS: "pruuni värviga klaas"
+  BROWN_STAINED_GLASS_PANE: "pruuni värviga klaaspaneel"
+  BROWN_TERRACOTTA: "pruun terrakota"
+  BROWN_WOOL: "pruun vill"
+  BUBBLE_COLUMN: "mullijuga"
+  BUBBLE_CORAL: "mullkorall"
+  BUBBLE_CORAL_BLOCK: "mullkoralli plokk"
+  BUBBLE_CORAL_FAN: "mullkoralli lehvik"
+  BUBBLE_CORAL_WALL_FAN: "mullkoralli seinalehvik"
+  BUDDING_AMETHYST: "tärkav ametüst"
+  CACTUS: "kaktus"
+  CAKE: "kook"
+  CALCITE: "kaltsiit"
+  CALIBRATED_SCULK_SENSOR: "kalibreeritud sculk-sensor"
+  CAMPFIRE: "lõkketuli"
+  CANDLE: "küünal"
+  CANDLE_CAKE: "küünlaga kook"
+  CARROTS: "porgandid"
+  CARTOGRAPHY_TABLE: "kartograafialaud"
+  CARVED_PUMPKIN: "nikerdatud kõrvits"
+  CAULDRON: "pada"
+  CAVE_AIR: "koopaõhk"
+  CAVE_VINES: "koopaväädid"
+  CAVE_VINES_PLANT: "koopaväätide taim"
+  CHAIN: "kett"
+  CHAIN_COMMAND_BLOCK: "ketistatud käsuplokk"
+  CHERRY_BUTTON: "kirsipuidust nupp"
+  CHERRY_DOOR: "kirsipuidust uks"
+  CHERRY_FENCE: "kirsipuidust aed"
+  CHERRY_FENCE_GATE: "kirsipuidust aiavärav"
+  CHERRY_HANGING_SIGN: "kirsipuidust rippuv silt"
+  CHERRY_LEAVES: "kirsipuu lehed"
+  CHERRY_LOG: "kirsipuu tüvi"
+  CHERRY_PLANKS: "kirsipuidust lauad"
+  CHERRY_PRESSURE_PLATE: "kirsipuidust surveplaat"
+  CHERRY_SAPLING: "kirsipuu istik"
+  CHERRY_SIGN: "kirsipuidust silt"
+  CHERRY_SLAB: "kirsipuidust plaat"
+  CHERRY_STAIRS: "kirsipuidust trepp"
+  CHERRY_TRAPDOOR: "kirsipuidust luuk"
+  CHERRY_WALL_HANGING_SIGN: "kirsipuidust seinal rippuv silt"
+  CHERRY_WALL_SIGN: "kirsipuidust seinasilt"
+  CHERRY_WOOD: "kirsipuit"
+  CHEST: "kirst"
+  CHIPPED_ANVIL: "täkkega alasi"
+  CHISELED_BOOKSHELF: "tahutud raamaturiiul"
+  CHISELED_COPPER: "tahutud vask"
+  CHISELED_DEEPSLATE: "tahutud sügavkilt"
+  CHISELED_NETHER_BRICKS: "tahutud nether-tellised"
+  CHISELED_POLISHED_BLACKSTONE: "tahutud lihvitud mustkivi"
+  CHISELED_QUARTZ_BLOCK: "tahutud kvartsplokk"
+  CHISELED_RED_SANDSTONE: "tahutud punane liivakivi"
+  CHISELED_SANDSTONE: "tahutud liivakivi"
+  CHISELED_STONE_BRICKS: "tahutud kivitellised"
+  CHISELED_TUFF: "tahutud tuff"
+  CHISELED_TUFF_BRICKS: "tahutud tufitellised"
+  CHORUS_FLOWER: "koorilill"
+  CHORUS_PLANT: "kooritaim"
+  CLAY: "savi"
+  COAL_BLOCK: "söeplokk"
+  COAL_ORE: "söemaak"
+  COARSE_DIRT: "jäme muld"
+  COBBLED_DEEPSLATE: "sillutatud sügavkilt"
+  COBBLED_DEEPSLATE_SLAB: "sillutatud sügavkildast plaat"
+  COBBLED_DEEPSLATE_STAIRS: "sillutatud sügavkildast trepp"
+  COBBLED_DEEPSLATE_WALL: "sillutatud sügavkildast müür"
+  COBBLESTONE: "munakivi"
+  COBBLESTONE_SLAB: "munakiviplaat"
+  COBBLESTONE_STAIRS: "munakivitrepp"
+  COBBLESTONE_WALL: "munakivimüür"
+  COBWEB: "ämblikuvõrk"
+  COCOA: "kakao"
+  COMMAND_BLOCK: "käsuplokk"
+  COMPARATOR: "redstone'i komparaator"
+  COMPOSTER: "komposter"
+  CONDUIT: "siire"
+  COPPER_BLOCK: "vaseplokk"
+  COPPER_BULB: "vaskpirn"
+  COPPER_DOOR: "vaskuks"
+  COPPER_GRATE: "vaskvõre"
+  COPPER_ORE: "vasemaak"
+  COPPER_TRAPDOOR: "vaskluuk"
+  CORNFLOWER: "rukkilill"
+  CRACKED_DEEPSLATE_BRICKS: "pragunenud sügavkildatellised"
+  CRACKED_DEEPSLATE_TILES: "pragunenud sügavkildakahlid"
+  CRACKED_NETHER_BRICKS: "pragunenud nether-tellised"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "pragunenud lihvitud mustkivi tellised"
+  CRACKED_STONE_BRICKS: "pragunenud kivitellised"
+  CRAFTER: "meisterdaja"
+  CRAFTING_TABLE: "meisterduslaud"
+  CREEPER_HEAD: "creeperi pea"
+  CREEPER_WALL_HEAD: "creeperi seinapea"
+  CRIMSON_BUTTON: "karmiinpunane nupp"
+  CRIMSON_DOOR: "karmiinpunane uks"
+  CRIMSON_FENCE: "karmiinpunane aed"
+  CRIMSON_FENCE_GATE: "karmiinpunane aiavärav"
+  CRIMSON_FUNGUS: "karmiinpunane seen"
+  CRIMSON_HANGING_SIGN: "karmiinpunane rippuv silt"
+  CRIMSON_HYPHAE: "karmiinpunased hüüfid"
+  CRIMSON_NYLIUM: "karmiinpunane netseel"
+  CRIMSON_PLANKS: "karmiinpunased lauad"
+  CRIMSON_PRESSURE_PLATE: "karmiinpunane surveplaat"
+  CRIMSON_ROOTS: "karmiinpunased juured"
+  CRIMSON_SIGN: "karmiinpunane silt"
+  CRIMSON_SLAB: "karmiinpunane plaat"
+  CRIMSON_STAIRS: "karmiinpunane trepp"
+  CRIMSON_STEM: "karmiinpunane vars"
+  CRIMSON_TRAPDOOR: "karmiinpunane luuk"
+  CRIMSON_WALL_HANGING_SIGN: "karmiinpunane seinal rippuv silt"
+  CRIMSON_WALL_SIGN: "karmiinpunane seinasilt"
+  CRYING_OBSIDIAN: "nuttev obsidiaan"
+  CUT_COPPER: "lõigatud vask"
+  CUT_COPPER_SLAB: "lõigatud vasest plaat"
+  CUT_COPPER_STAIRS: "lõigatud vasest trepp"
+  CUT_RED_SANDSTONE: "lõigatud punane liivakivi"
+  CUT_RED_SANDSTONE_SLAB: "lõigatud punasest liivakivist plaat"
+  CUT_SANDSTONE: "lõigatud liivakivi"
+  CUT_SANDSTONE_SLAB: "lõigatud liivakivist plaat"
+  CYAN_BANNER: "tsüaansinine plakat"
+  CYAN_BED: "tsüaansinine voodi"
+  CYAN_CANDLE: "tsüaansinine küünal"
+  CYAN_CANDLE_CAKE: "tsüaansinise küünlaga kook"
+  CYAN_CARPET: "tsüaansinine vaip"
+  CYAN_CONCRETE: "tsüaansinine betoon"
+  CYAN_CONCRETE_POWDER: "tsüaansinine betoonipulber"
+  CYAN_GLAZED_TERRACOTTA: "tsüaansinine glasuuritud terrakota"
+  CYAN_SHULKER_BOX: "tsüaansinine šulkerikast"
+  CYAN_STAINED_GLASS: "tsüaansinise värviga klaas"
+  CYAN_STAINED_GLASS_PANE: "tsüaansinise värviga klaaspaneel"
+  CYAN_TERRACOTTA: "tsüaansinine terrakota"
+  CYAN_WOOL: "tsüaansinine vill"
+  DAMAGED_ANVIL: "kahjustunud alasi"
+  DANDELION: "võilill"
+  DARK_OAK_BUTTON: "tumedast tammest nupp"
+  DARK_OAK_DOOR: "tumedast tammest uks"
+  DARK_OAK_FENCE: "tumedast tammest aed"
+  DARK_OAK_FENCE_GATE: "tumedast tammest aiavärav"
+  DARK_OAK_HANGING_SIGN: "tumedast tammest rippuv silt"
+  DARK_OAK_LEAVES: "tumeda tamme lehed"
+  DARK_OAK_LOG: "tumeda tamme tüvi"
+  DARK_OAK_PLANKS: "tumeda tamme lauad"
+  DARK_OAK_PRESSURE_PLATE: "tumedast tammest surveplaat"
+  DARK_OAK_SAPLING: "tumeda tamme istik"
+  DARK_OAK_SIGN: "tumedast tammest silt"
+  DARK_OAK_SLAB: "tumeda tamme plaat"
+  DARK_OAK_STAIRS: "tumedast tammest trepp"
+  DARK_OAK_TRAPDOOR: "tumedast tammest luuk"
+  DARK_OAK_WALL_HANGING_SIGN: "tumedast tammest seinal rippuv silt"
+  DARK_OAK_WALL_SIGN: "tumedast tammest seinasilt"
+  DARK_OAK_WOOD: "tumeda tamme puit"
+  DARK_PRISMARINE: "tume prismariin"
+  DARK_PRISMARINE_SLAB: "tumedast prismariinist plaat"
+  DARK_PRISMARINE_STAIRS: "tumedast prismariinist trepp"
+  DAYLIGHT_DETECTOR: "päevavalguse andur"
+  DEAD_BRAIN_CORAL: "surnud ajukorall"
+  DEAD_BRAIN_CORAL_BLOCK: "surnud ajukoralli plokk"
+  DEAD_BRAIN_CORAL_FAN: "surnud ajukoralli lehvik"
+  DEAD_BRAIN_CORAL_WALL_FAN: "surnud ajukoralli seinalehvik"
+  DEAD_BUBBLE_CORAL: "surnud mullkorall"
+  DEAD_BUBBLE_CORAL_BLOCK: "surnud mullkoralli plokk"
+  DEAD_BUBBLE_CORAL_FAN: "surnud mullkoralli lehvik"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "surnud mullkoralli seinalehvik"
+  DEAD_BUSH: "surnud põõsas"
+  DEAD_FIRE_CORAL: "surnud tulikorall"
+  DEAD_FIRE_CORAL_BLOCK: "surnud tulikoralli plokk"
+  DEAD_FIRE_CORAL_FAN: "surnud tulikoralli lehvik"
+  DEAD_FIRE_CORAL_WALL_FAN: "surnud tulikoralli seinalehvik"
+  DEAD_HORN_CORAL: "surnud sarvkorall"
+  DEAD_HORN_CORAL_BLOCK: "surnud sarvkoralli plokk"
+  DEAD_HORN_CORAL_FAN: "surnud sarvkoralli lehvik"
+  DEAD_HORN_CORAL_WALL_FAN: "surnud sarvkoralli seinalehvik"
+  DEAD_TUBE_CORAL: "surnud torukorall"
+  DEAD_TUBE_CORAL_BLOCK: "surnud torukoralli plokk"
+  DEAD_TUBE_CORAL_FAN: "surnud torukoralli lehvik"
+  DEAD_TUBE_CORAL_WALL_FAN: "surnud torukoralli seinalehvik"
+  DECORATED_POT: "kaunistatud pott"
+  DEEPSLATE: "sügavkilt"
+  DEEPSLATE_BRICK_SLAB: "sügavkildatellistest plaat"
+  DEEPSLATE_BRICK_STAIRS: "sügavkildatellistest trepp"
+  DEEPSLATE_BRICK_WALL: "sügavkildatellistest müür"
+  DEEPSLATE_BRICKS: "sügavkildatellised"
+  DEEPSLATE_COAL_ORE: "sügavkilda söemaak"
+  DEEPSLATE_COPPER_ORE: "sügavkilda vasemaak"
+  DEEPSLATE_DIAMOND_ORE: "sügavkilda teemantmaak"
+  DEEPSLATE_EMERALD_ORE: "sügavkilda smaragdimaak"
+  DEEPSLATE_GOLD_ORE: "sügavkilda kullamaak"
+  DEEPSLATE_IRON_ORE: "sügavkilda rauamaak"
+  DEEPSLATE_LAPIS_ORE: "sügavkilda lasuriidimaak"
+  DEEPSLATE_REDSTONE_ORE: "sügavkilda redstone-maak"
+  DEEPSLATE_TILE_SLAB: "sügavkildakahlist plaat"
+  DEEPSLATE_TILE_STAIRS: "sügavkildakahlist trepp"
+  DEEPSLATE_TILE_WALL: "sügavkildakahlist müür"
+  DEEPSLATE_TILES: "sügavkildakahlid"
+  DETECTOR_RAIL: "andurrööpad"
+  DIAMOND_BLOCK: "teemantplokk"
+  DIAMOND_ORE: "teemantmaak"
+  DIORITE: "dioriit"
+  DIORITE_SLAB: "dioriitplaat"
+  DIORITE_STAIRS: "dioriit-trepp"
+  DIORITE_WALL: "dioriitmüür"
+  DIRT: "muld"
+  DIRT_PATH: "mullarada"
+  DISPENSER: "jaotur"
+  DRAGON_EGG: "draakonimuna"
+  DRAGON_HEAD: "draakoni pea"
+  DRAGON_WALL_HEAD: "draakoni seinapea"
+  DRIED_KELP_BLOCK: "kuivatatud vetikaplokk"
+  DRIPSTONE_BLOCK: "tilkekivi plokk"
+  DROPPER: "heitja"
+  EMERALD_BLOCK: "smaragdiplokk"
+  EMERALD_ORE: "smaragdimaak"
+  ENCHANTING_TABLE: "loitsimislaud"
+  END_GATEWAY: "endi läbipääs"
+  END_PORTAL: "endi portaal"
+  END_PORTAL_FRAME: "endi portaali raam"
+  END_ROD: "endivarras"
+  END_STONE: "endikivi"
+  END_STONE_BRICK_SLAB: "endikivi tellisplaat"
+  END_STONE_BRICK_STAIRS: "endikivi tellistrepp"
+  END_STONE_BRICK_WALL: "endikivi tellistest müür"
+  END_STONE_BRICKS: "endikivist tellised"
+  ENDER_CHEST: "enderikirst"
+  EXPOSED_CHISELED_COPPER: "pleekinud tahutud vask"
+  EXPOSED_COPPER: "pleekinud vask"
+  EXPOSED_COPPER_BULB: "pleekinud vaskpirn"
+  EXPOSED_COPPER_DOOR: "pleekinud vaskuks"
+  EXPOSED_COPPER_GRATE: "pleekinud vaskvõre"
+  EXPOSED_COPPER_TRAPDOOR: "pleekinud vaskluuk"
+  EXPOSED_CUT_COPPER: "pleekinud lõigatud vask"
+  EXPOSED_CUT_COPPER_SLAB: "pleekinud lõigatud vasest plaat"
+  EXPOSED_CUT_COPPER_STAIRS: "pleekinud lõigatud vasest trepp"
+  FARMLAND: "põllumaa"
+  FERN: "sõnajalg"
+  FIRE: "tuli"
+  FIRE_CORAL: "tulikorall"
+  FIRE_CORAL_BLOCK: "tulikoralli plokk"
+  FIRE_CORAL_FAN: "tulikoralli lehvik"
+  FIRE_CORAL_WALL_FAN: "tulikoralli seinalehvik"
+  FLETCHING_TABLE: "noolekinnituslaud"
+  FLOWER_POT: "lillepott"
+  FLOWERING_AZALEA: "õitsev asalea"
+  FLOWERING_AZALEA_LEAVES: "õitseva asalea lehed"
+  FROGSPAWN: "konnakudu"
+  FROSTED_ICE: "härmatunud jää"
+  FURNACE: "ahi"
+  GILDED_BLACKSTONE: "kullatud mustkivi"
+  GLASS: "klaas"
+  GLASS_PANE: "klaaspaneel"
+  GLOW_LICHEN: "hõõgsamblik"
+  GLOWSTONE: "hõõgkivi"
+  GOLD_BLOCK: "kullaplokk"
+  GOLD_ORE: "kullamaak"
+  GRANITE: "graniit"
+  GRANITE_SLAB: "graniitplaat"
+  GRANITE_STAIRS: "graniit-trepp"
+  GRANITE_WALL: "graniitmüür"
+  GRASS: "muru"
+  GRASS_BLOCK: "muruplokk"
+  GRAVEL: "kruus"
+  GRAY_BANNER: "hall plakat"
+  GRAY_BED: "hall voodi"
+  GRAY_CANDLE: "hall küünal"
+  GRAY_CANDLE_CAKE: "halli küünlaga kook"
+  GRAY_CARPET: "hall vaip"
+  GRAY_CONCRETE: "hall betoon"
+  GRAY_CONCRETE_POWDER: "hall betoonipulber"
+  GRAY_GLAZED_TERRACOTTA: "hall glasuuritud terrakota"
+  GRAY_SHULKER_BOX: "hall šulkerikast"
+  GRAY_STAINED_GLASS: "halli värviga klaas"
+  GRAY_STAINED_GLASS_PANE: "halli värviga klaaspaneel"
+  GRAY_TERRACOTTA: "hall terrakota"
+  GRAY_WOOL: "hall vill"
+  GREEN_BANNER: "roheline plakat"
+  GREEN_BED: "roheline voodi"
+  GREEN_CANDLE: "roheline küünal"
+  GREEN_CANDLE_CAKE: "rohelise küünlaga kook"
+  GREEN_CARPET: "roheline vaip"
+  GREEN_CONCRETE: "roheline betoon"
+  GREEN_CONCRETE_POWDER: "roheline betoonipulber"
+  GREEN_GLAZED_TERRACOTTA: "roheline glasuuritud terrakota"
+  GREEN_SHULKER_BOX: "roheline šulkerikast"
+  GREEN_STAINED_GLASS: "rohelise värviga klaas"
+  GREEN_STAINED_GLASS_PANE: "rohelise värviga klaaspaneel"
+  GREEN_TERRACOTTA: "roheline terrakota"
+  GREEN_WOOL: "roheline vill"
+  GRINDSTONE: "käiakivi"
+  HANGING_ROOTS: "rippuvad juured"
+  HAY_BLOCK: "heinapall"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "raskekaaluline surveplaat"
+  HONEY_BLOCK: "meeplokk"
+  HONEYCOMB_BLOCK: "meekärjeplokk"
+  HOPPER: "püüdja"
+  HORN_CORAL: "sarvkorall"
+  HORN_CORAL_BLOCK: "sarvkoralli plokk"
+  HORN_CORAL_FAN: "sarvkoralli lehvik"
+  HORN_CORAL_WALL_FAN: "sarvkoralli seinalehvik"
+  ICE: "jää"
+  INFESTED_CHISELED_STONE_BRICKS: "parasiitsed tahutud kivitellised"
+  INFESTED_COBBLESTONE: "parasiitne munakivi"
+  INFESTED_CRACKED_STONE_BRICKS: "parasiitsed pragunenud kivitellised"
+  INFESTED_DEEPSLATE: "parasiitne sügavkilt"
+  INFESTED_MOSSY_STONE_BRICKS: "parasiitsed sammaldunud kivitellised"
+  INFESTED_STONE: "parasiitne kivi"
+  INFESTED_STONE_BRICKS: "parasiitsed kivitellised"
+  IRON_BARS: "raudtrellid"
+  IRON_BLOCK: "rauaplokk"
+  IRON_DOOR: "rauduks"
+  IRON_ORE: "rauamaak"
+  IRON_TRAPDOOR: "raudluuk"
+  JACK_O_LANTERN: "kõrvitsalatern"
+  JIGSAW: "pusleplokk"
+  JUKEBOX: "plaadimängija"
+  JUNGLE_BUTTON: "džunglipuidust nupp"
+  JUNGLE_DOOR: "džunglipuidust uks"
+  JUNGLE_FENCE: "džunglipuidust aed"
+  JUNGLE_FENCE_GATE: "džunglipuidust aiavärav"
+  JUNGLE_HANGING_SIGN: "džunglipuidust rippuv silt"
+  JUNGLE_LEAVES: "džunglipuu lehed"
+  JUNGLE_LOG: "džunglipuu tüvi"
+  JUNGLE_PLANKS: "džunglipuidust lauad"
+  JUNGLE_PRESSURE_PLATE: "džunglipuidust surveplaat"
+  JUNGLE_SAPLING: "džunglipuu istik"
+  JUNGLE_SIGN: "džunglipuidust silt"
+  JUNGLE_SLAB: "džunglipuidust plaat"
+  JUNGLE_STAIRS: "džunglipuidust trepp"
+  JUNGLE_TRAPDOOR: "džunglipuidust luuk"
+  JUNGLE_WALL_HANGING_SIGN: "džunglipuidust seinal rippuv silt"
+  JUNGLE_WALL_SIGN: "džunglipuidust seinasilt"
+  JUNGLE_WOOD: "džunglipuit"
+  KELP: "vetikas"
+  KELP_PLANT: "vetikataim"
+  LADDER: "redel"
+  LANTERN: "latern"
+  LAPIS_BLOCK: "lasuriidiplokk"
+  LAPIS_ORE: "lasuriidimaak"
+  LARGE_AMETHYST_BUD: "suur ametüstipung"
+  LARGE_FERN: "kõrge sõnajalg"
+  LAVA: "laava"
+  LAVA_CAULDRON: "laavapada"
+  LECTERN: "kõnepult"
+  LEVER: "kang"
+  LIGHT: "valgus"
+  LIGHT_BLUE_BANNER: "helesinine plakat"
+  LIGHT_BLUE_BED: "helesinine voodi"
+  LIGHT_BLUE_CANDLE: "helesinine küünal"
+  LIGHT_BLUE_CANDLE_CAKE: "helesinise küünlaga kook"
+  LIGHT_BLUE_CARPET: "helesinine vaip"
+  LIGHT_BLUE_CONCRETE: "helesinine betoon"
+  LIGHT_BLUE_CONCRETE_POWDER: "helesinine betoonipulber"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "helesinine glasuuritud terrakota"
+  LIGHT_BLUE_SHULKER_BOX: "helesinine šulkerikast"
+  LIGHT_BLUE_STAINED_GLASS: "helesinise värviga klaas"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "helesinise värviga klaaspaneel"
+  LIGHT_BLUE_TERRACOTTA: "helesinine terrakota"
+  LIGHT_BLUE_WOOL: "helesinine vill"
+  LIGHT_GRAY_BANNER: "helehall plakat"
+  LIGHT_GRAY_BED: "helehall voodi"
+  LIGHT_GRAY_CANDLE: "helehall küünal"
+  LIGHT_GRAY_CANDLE_CAKE: "helehalli küünlaga kook"
+  LIGHT_GRAY_CARPET: "helehall vaip"
+  LIGHT_GRAY_CONCRETE: "helehall betoon"
+  LIGHT_GRAY_CONCRETE_POWDER: "helehall betoonipulber"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "helehall glasuuritud terrakota"
+  LIGHT_GRAY_SHULKER_BOX: "helehall šulkerikast"
+  LIGHT_GRAY_STAINED_GLASS: "helehalli värviga klaas"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "helehalli värviga klaaspaneel"
+  LIGHT_GRAY_TERRACOTTA: "helehall terrakota"
+  LIGHT_GRAY_WOOL: "helehall vill"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "kergekaaluline surveplaat"
+  LIGHTNING_ROD: "piksevarras"
+  LILAC: "sirel"
+  LILY_OF_THE_VALLEY: "maikelluke"
+  LILY_PAD: "vesiroosileht"
+  LIME_BANNER: "laimiroheline plakat"
+  LIME_BED: "laimiroheline voodi"
+  LIME_CANDLE: "laimiroheline küünal"
+  LIME_CANDLE_CAKE: "laimirohelise küünlaga kook"
+  LIME_CARPET: "laimiroheline vaip"
+  LIME_CONCRETE: "laimiroheline betoon"
+  LIME_CONCRETE_POWDER: "laimiroheline betoonipulber"
+  LIME_GLAZED_TERRACOTTA: "laimiroheline glasuuritud terrakota"
+  LIME_SHULKER_BOX: "laimiroheline šulkerikast"
+  LIME_STAINED_GLASS: "laimirohelise värviga klaas"
+  LIME_STAINED_GLASS_PANE: "laimirohelise värviga klaaspaneel"
+  LIME_TERRACOTTA: "laimiroheline terrakota"
+  LIME_WOOL: "laimiroheline vill"
+  LODESTONE: "teekivi"
+  LOOM: "kangasteljed"
+  MAGENTA_BANNER: "fuksiinpunane plakat"
+  MAGENTA_BED: "fuksiinpunane voodi"
+  MAGENTA_CANDLE: "fuksiinpunane küünal"
+  MAGENTA_CANDLE_CAKE: "fuksiinpunase küünlaga kook"
+  MAGENTA_CARPET: "fuksiinpunane vaip"
+  MAGENTA_CONCRETE: "fuksiinpunane betoon"
+  MAGENTA_CONCRETE_POWDER: "fuksiinpunane betoonipulber"
+  MAGENTA_GLAZED_TERRACOTTA: "fuksiinpunane glasuuritud terrakota"
+  MAGENTA_SHULKER_BOX: "fuksiinpunane šulkerikast"
+  MAGENTA_STAINED_GLASS: "fuksiinpunase värviga klaas"
+  MAGENTA_STAINED_GLASS_PANE: "fuksiinpunase värviga klaaspaneel"
+  MAGENTA_TERRACOTTA: "fuksiinpunane terrakota"
+  MAGENTA_WOOL: "fuksiinpunane vill"
+  MAGMA_BLOCK: "magmaplokk"
+  MANGROVE_BUTTON: "mangroovinupp"
+  MANGROVE_DOOR: "mangroovist uks"
+  MANGROVE_FENCE: "mangroovist aed"
+  MANGROVE_FENCE_GATE: "mangroovist aiavärav"
+  MANGROVE_HANGING_SIGN: "mangroovist rippuv silt"
+  MANGROVE_LEAVES: "mangroovilehed"
+  MANGROVE_LOG: "mangroovitüvi"
+  MANGROVE_PLANKS: "mangroovilauad"
+  MANGROVE_PRESSURE_PLATE: "mangroovist surveplaat"
+  MANGROVE_PROPAGULE: "mangroovi sigipung"
+  MANGROVE_ROOTS: "mangroovijuured"
+  MANGROVE_SIGN: "mangroovist silt"
+  MANGROVE_SLAB: "mangrooviplaat"
+  MANGROVE_STAIRS: "mangroovitrepp"
+  MANGROVE_TRAPDOOR: "mangrooviluuk"
+  MANGROVE_WALL_HANGING_SIGN: "mangroovist seinal rippuv silt"
+  MANGROVE_WALL_SIGN: "mangroovist seinasilt"
+  MANGROVE_WOOD: "mangroovipuit"
+  MEDIUM_AMETHYST_BUD: "keskmine ametüstipung"
+  MELON: "melon"
+  MELON_STEM: "melonivars"
+  MOSS_BLOCK: "samblaplokk"
+  MOSS_CARPET: "samblavaip"
+  MOSSY_COBBLESTONE: "sammaldunud munakivi"
+  MOSSY_COBBLESTONE_SLAB: "sammaldunud munakiviplaat"
+  MOSSY_COBBLESTONE_STAIRS: "sammaldunud munakivitrepp"
+  MOSSY_COBBLESTONE_WALL: "sammaldunud munakivimüür"
+  MOSSY_STONE_BRICK_SLAB: "sammaldunud kivitellisplaat"
+  MOSSY_STONE_BRICK_STAIRS: "sammaldunud kivitellistrepp"
+  MOSSY_STONE_BRICK_WALL: "sammaldunud kivitellistest müür"
+  MOSSY_STONE_BRICKS: "sammaldunud kivitellised"
+  MOVING_PISTON: "liikuv kolb"
+  MUD: "muda"
+  MUD_BRICK_SLAB: "mudatellistest plaat"
+  MUD_BRICK_STAIRS: "mudatellistest trepp"
+  MUD_BRICK_WALL: "mudatellistest müür"
+  MUD_BRICKS: "mudatellised"
+  MUDDY_MANGROVE_ROOTS: "mudased mangroovijuured"
+  MUSHROOM_STEM: "seenejalg"
+  MYCELIUM: "mütseel"
+  NETHER_BRICK_FENCE: "nether-tellistest aed"
+  NETHER_BRICK_SLAB: "nether-tellisplaat"
+  NETHER_BRICK_STAIRS: "nether-tellistrepp"
+  NETHER_BRICK_WALL: "nether-tellistest müür"
+  NETHER_BRICKS: "nether-tellised"
+  NETHER_GOLD_ORE: "netheri kullamaak"
+  NETHER_PORTAL: "netheri portaal"
+  NETHER_QUARTZ_ORE: "netheri kvartsmaak"
+  NETHER_SPROUTS: "nether-võrsed"
+  NETHER_WART: "nethertüügas"
+  NETHER_WART_BLOCK: "nethertüüka plokk"
+  NETHERITE_BLOCK: "netheriitplokk"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "noodiplokk"
+  OAK_BUTTON: "tammenupp"
+  OAK_DOOR: "tammest uks"
+  OAK_FENCE: "tammest aed"
+  OAK_FENCE_GATE: "tammest aiavärav"
+  OAK_HANGING_SIGN: "tammest rippuv silt"
+  OAK_LEAVES: "tammelehed"
+  OAK_LOG: "tammetüvi"
+  OAK_PLANKS: "tammelauad"
+  OAK_PRESSURE_PLATE: "tammest surveplaat"
+  OAK_SAPLING: "tammeistik"
+  OAK_SIGN: "tammest silt"
+  OAK_SLAB: "tammeplaat"
+  OAK_STAIRS: "tammetrepp"
+  OAK_TRAPDOOR: "tammeluuk"
+  OAK_WALL_HANGING_SIGN: "tammest seinal rippuv silt"
+  OAK_WALL_SIGN: "tammest seinasilt"
+  OAK_WOOD: "tammepuit"
+  OBSERVER: "vaatleja"
+  OBSIDIAN: "obsidiaan"
+  OCHRE_FROGLIGHT: "ooker konnavalgus"
+  OMINOUS_BANNER: "kurjakuulutav plakat"
+  ORANGE_BANNER: "oranž plakat"
+  ORANGE_BED: "oranž voodi"
+  ORANGE_CANDLE: "oranž küünal"
+  ORANGE_CANDLE_CAKE: "oranži küünlaga kook"
+  ORANGE_CARPET: "oranž vaip"
+  ORANGE_CONCRETE: "oranž betoon"
+  ORANGE_CONCRETE_POWDER: "oranž betoonipulber"
+  ORANGE_GLAZED_TERRACOTTA: "oranž glasuuritud terrakota"
+  ORANGE_SHULKER_BOX: "oranž šulkerikast"
+  ORANGE_STAINED_GLASS: "oranži värviga klaas"
+  ORANGE_STAINED_GLASS_PANE: "oranži värviga klaaspaneel"
+  ORANGE_TERRACOTTA: "oranž terrakota"
+  ORANGE_TULIP: "oranž tulp"
+  ORANGE_WOOL: "oranž vill"
+  OXEYE_DAISY: "harilik härjasilm"
+  OXIDIZED_CHISELED_COPPER: "oksüdeerunud tahutud vask"
+  OXIDIZED_COPPER: "oksüdeerunud vask"
+  OXIDIZED_COPPER_BULB: "oksüdeerunud vaskpirn"
+  OXIDIZED_COPPER_DOOR: "oksüdeerunud vaskuks"
+  OXIDIZED_COPPER_GRATE: "oksüdeerunud vaskvõre"
+  OXIDIZED_COPPER_TRAPDOOR: "oksüdeerunud vaskluuk"
+  OXIDIZED_CUT_COPPER: "oksüdeerunud lõigatud vask"
+  OXIDIZED_CUT_COPPER_SLAB: "oksüdeerunud lõigatud vasest plaat"
+  OXIDIZED_CUT_COPPER_STAIRS: "oksüdeerunud lõigatud vasest trepp"
+  PACKED_ICE: "pakitud jää"
+  PACKED_MUD: "pakitud muda"
+  PEARLESCENT_FROGLIGHT: "pärlmutriline konnavalgus"
+  PEONY: "pojeng"
+  PETRIFIED_OAK_SLAB: "kivistunud tammeplaat"
+  PIGLIN_HEAD: "piglini pea"
+  PIGLIN_WALL_HEAD: "piglini seinapea"
+  PINK_BANNER: "roosa plakat"
+  PINK_BED: "roosa voodi"
+  PINK_CANDLE: "roosa küünal"
+  PINK_CANDLE_CAKE: "roosa küünlaga kook"
+  PINK_CARPET: "roosa vaip"
+  PINK_CONCRETE: "roosa betoon"
+  PINK_CONCRETE_POWDER: "roosa betoonipulber"
+  PINK_GLAZED_TERRACOTTA: "roosa glasuuritud terrakota"
+  PINK_PETALS: "roosad kroonlehed"
+  PINK_SHULKER_BOX: "roosa šulkerikast"
+  PINK_STAINED_GLASS: "roosa värviga klaas"
+  PINK_STAINED_GLASS_PANE: "roosa värviga klaaspaneel"
+  PINK_TERRACOTTA: "roosa terrakota"
+  PINK_TULIP: "roosa tulp"
+  PINK_WOOL: "roosa vill"
+  PISTON: "kolb"
+  PISTON_HEAD: "kolvipea"
+  PITCHER_CROP: "kanntaime saak"
+  PITCHER_PLANT: "kanntaim"
+  PLAYER_HEAD: "mängija pea"
+  PLAYER_HEAD_NAMED: "mängija %s pea"
+  PLAYER_WALL_HEAD: "mängija seinapea"
+  PODZOL: "leedemuld"
+  POINTED_DRIPSTONE: "suunatud tilkekivi"
+  POLISHED_ANDESITE: "lihvitud andesiit"
+  POLISHED_ANDESITE_SLAB: "lihvitud andesiidist plaat"
+  POLISHED_ANDESITE_STAIRS: "lihvitud andesiidist trepp"
+  POLISHED_BASALT: "lihvitud basalt"
+  POLISHED_BLACKSTONE: "lihvitud mustkivi"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "lihvitud mustkivi tellistest plaat"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "lihvitud mustkivi tellistest trepp"
+  POLISHED_BLACKSTONE_BRICK_WALL: "lihvitud mustkivi tellistest müür"
+  POLISHED_BLACKSTONE_BRICKS: "lihvitud mustkivi tellised"
+  POLISHED_BLACKSTONE_BUTTON: "lihvitud mustkivist nupp"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "lihvitud mustkivist surveplaat"
+  POLISHED_BLACKSTONE_SLAB: "lihvitud mustkivist plaat"
+  POLISHED_BLACKSTONE_STAIRS: "lihvitud mustkivist trepp"
+  POLISHED_BLACKSTONE_WALL: "lihvitud mustkivist müür"
+  POLISHED_DEEPSLATE: "lihvitud sügavkilt"
+  POLISHED_DEEPSLATE_SLAB: "lihvitud sügavkildast plaat"
+  POLISHED_DEEPSLATE_STAIRS: "lihvitud sügavkildast trepp"
+  POLISHED_DEEPSLATE_WALL: "lihvitud sügavkildast müür"
+  POLISHED_DIORITE: "lihvitud dioriit"
+  POLISHED_DIORITE_SLAB: "lihvitud dioriidist plaat"
+  POLISHED_DIORITE_STAIRS: "lihvitud dioriidist trepp"
+  POLISHED_GRANITE: "lihvitud graniit"
+  POLISHED_GRANITE_SLAB: "lihvitud graniidist plaat"
+  POLISHED_GRANITE_STAIRS: "lihvitud graniidist trepp"
+  POLISHED_TUFF: "lihvitud tuff"
+  POLISHED_TUFF_SLAB: "lihvitud tufiplaat"
+  POLISHED_TUFF_STAIRS: "lihvitud tufitrepp"
+  POLISHED_TUFF_WALL: "lihvitud tufimüür"
+  POPPY: "magun"
+  POTATOES: "kartulid"
+  POTTED_ACACIA_SAPLING: "akaatsiaistik potis"
+  POTTED_ALLIUM: "lauk potis"
+  POTTED_AZALEA_BUSH: "asalea potis"
+  POTTED_AZURE_BLUET: "sinine inglisilm potis"
+  POTTED_BAMBOO: "bambus potis"
+  POTTED_BIRCH_SAPLING: "kaseistik potis"
+  POTTED_BLUE_ORCHID: "sinine orhidee potis"
+  POTTED_BROWN_MUSHROOM: "pruun seen potis"
+  POTTED_CACTUS: "kaktus potis"
+  POTTED_CHERRY_SAPLING: "kirsipuu istik potis"
+  POTTED_CORNFLOWER: "rukkilill potis"
+  POTTED_CRIMSON_FUNGUS: "karmiinpunane seen potis"
+  POTTED_CRIMSON_ROOTS: "karmiinpunased juured potis"
+  POTTED_DANDELION: "võilill potis"
+  POTTED_DARK_OAK_SAPLING: "tumeda tamme istik potis"
+  POTTED_DEAD_BUSH: "surnud põõsas potis"
+  POTTED_FERN: "sõnajalg potis"
+  POTTED_FLOWERING_AZALEA_BUSH: "õitsev asalea potis"
+  POTTED_JUNGLE_SAPLING: "džunglipuu istik potis"
+  POTTED_LILY_OF_THE_VALLEY: "maikelluke potis"
+  POTTED_MANGROVE_PROPAGULE: "mangroovi sigipung potis"
+  POTTED_OAK_SAPLING: "tammeistik potis"
+  POTTED_ORANGE_TULIP: "oranž tulp potis"
+  POTTED_OXEYE_DAISY: "harilik härjasilm potis"
+  POTTED_PINK_TULIP: "roosa tulp potis"
+  POTTED_POPPY: "magun potis"
+  POTTED_RED_MUSHROOM: "punane seen potis"
+  POTTED_RED_TULIP: "punane tulp potis"
+  POTTED_SPRUCE_SAPLING: "kuuseistik potis"
+  POTTED_TORCHFLOWER: "tõrvikulill potis"
+  POTTED_WARPED_FUNGUS: "kentsakas seen potis"
+  POTTED_WARPED_ROOTS: "kentsakad juured potis"
+  POTTED_WHITE_TULIP: "valge tulp potis"
+  POTTED_WITHER_ROSE: "witheriroos potis"
+  POWDER_SNOW: "puuderlumi"
+  POWDER_SNOW_CAULDRON: "puuderlume pada"
+  POWERED_RAIL: "jõurööpad"
+  PRISMARINE: "prismariin"
+  PRISMARINE_BRICK_SLAB: "prismariinitellistest plaat"
+  PRISMARINE_BRICK_STAIRS: "prismariinitellistest trepp"
+  PRISMARINE_BRICKS: "prismariinitellised"
+  PRISMARINE_SLAB: "prismariiniplaat"
+  PRISMARINE_STAIRS: "prismariinitrepp"
+  PRISMARINE_WALL: "prismariinimüür"
+  PUMPKIN: "kõrvits"
+  PUMPKIN_STEM: "kõrvitsavars"
+  PURPLE_BANNER: "lilla plakat"
+  PURPLE_BED: "lilla voodi"
+  PURPLE_CANDLE: "lilla küünal"
+  PURPLE_CANDLE_CAKE: "lilla küünlaga kook"
+  PURPLE_CARPET: "lilla vaip"
+  PURPLE_CONCRETE: "lilla betoon"
+  PURPLE_CONCRETE_POWDER: "lilla betoonipulber"
+  PURPLE_GLAZED_TERRACOTTA: "lilla glasuuritud terrakota"
+  PURPLE_SHULKER_BOX: "lilla šulkerikast"
+  PURPLE_STAINED_GLASS: "lilla värviga klaas"
+  PURPLE_STAINED_GLASS_PANE: "lilla värviga klaaspaneel"
+  PURPLE_TERRACOTTA: "lilla terrakota"
+  PURPLE_WOOL: "lilla vill"
+  PURPUR_BLOCK: "purpurplokk"
+  PURPUR_PILLAR: "purpursammas"
+  PURPUR_SLAB: "purpurplaat"
+  PURPUR_STAIRS: "purpurtrepp"
+  QUARTZ_BLOCK: "kvartsplokk"
+  QUARTZ_BRICKS: "kvartstellised"
+  QUARTZ_PILLAR: "kvartssammas"
+  QUARTZ_SLAB: "kvartsplaat"
+  QUARTZ_STAIRS: "kvartstrepp"
+  RAIL: "rööpad"
+  RAW_COPPER_BLOCK: "toorvase plokk"
+  RAW_GOLD_BLOCK: "toorkulla plokk"
+  RAW_IRON_BLOCK: "toorraua plokk"
+  RED_BANNER: "punane plakat"
+  RED_BED: "punane voodi"
+  RED_CANDLE: "punane küünal"
+  RED_CANDLE_CAKE: "punase küünlaga kook"
+  RED_CARPET: "punane vaip"
+  RED_CONCRETE: "punane betoon"
+  RED_CONCRETE_POWDER: "punane betoonipulber"
+  RED_GLAZED_TERRACOTTA: "punane glasuuritud terrakota"
+  RED_MUSHROOM: "punane seen"
+  RED_MUSHROOM_BLOCK: "punane seeneplokk"
+  RED_NETHER_BRICK_SLAB: "punane nether-tellisplaat"
+  RED_NETHER_BRICK_STAIRS: "punane nether-tellistrepp"
+  RED_NETHER_BRICK_WALL: "punastest nether-tellistest müür"
+  RED_NETHER_BRICKS: "punased nether-tellised"
+  RED_SAND: "punane liiv"
+  RED_SANDSTONE: "punane liivakivi"
+  RED_SANDSTONE_SLAB: "punane liivakiviplaat"
+  RED_SANDSTONE_STAIRS: "punane liivakivitrepp"
+  RED_SANDSTONE_WALL: "punasest liivakivist müür"
+  RED_SHULKER_BOX: "punane šulkerikast"
+  RED_STAINED_GLASS: "punase värviga klaas"
+  RED_STAINED_GLASS_PANE: "punase värviga klaaspaneel"
+  RED_TERRACOTTA: "punane terrakota"
+  RED_TULIP: "punane tulp"
+  RED_WOOL: "punane vill"
+  REDSTONE_BLOCK: "redstone-plokk"
+  REDSTONE_LAMP: "redstone-lamp"
+  REDSTONE_ORE: "redstone-maak"
+  REDSTONE_TORCH: "redstone-tõrvik"
+  REDSTONE_WALL_TORCH: "redstone-seinatõrvik"
+  REDSTONE_WIRE: "redstone-juhe"
+  REINFORCED_DEEPSLATE: "tugevdatud sügavkilt"
+  REPEATER: "redstone'i järgur"
+  REPEATING_COMMAND_BLOCK: "kordav käsuplokk"
+  RESPAWN_ANCHOR: "taastekkeankur"
+  ROOTED_DIRT: "juurtega muld"
+  ROSE_BUSH: "roosipõõsas"
+  SAND: "liiv"
+  SANDSTONE: "liivakivi"
+  SANDSTONE_SLAB: "liivakiviplaat"
+  SANDSTONE_STAIRS: "liivakivitrepp"
+  SANDSTONE_WALL: "liivakivimüür"
+  SCAFFOLDING: "telling"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculk-katalüsaator"
+  SCULK_SENSOR: "sculk-sensor"
+  SCULK_SHRIEKER: "sculk-kisendaja"
+  SCULK_VEIN: "sculk-veen"
+  SEA_LANTERN: "merelatern"
+  SEA_PICKLE: "merikurk"
+  SEAGRASS: "mererohi"
+  SET_SPAWN: "taastekkekoht määratud"
+  SHORT_GRASS: "madal muru"
+  SHROOMLIGHT: "seenevalgus"
+  SHULKER_BOX: "šulkerikast"
+  SKELETON_SKULL: "luukere pealuu"
+  SKELETON_WALL_SKULL: "luukere seinapealuu"
+  SLIME_BLOCK: "limaplokk"
+  SMALL_AMETHYST_BUD: "väike ametüstipung"
+  SMALL_DRIPLEAF: "väike tilkeleht"
+  SMITHING_TABLE: "sepistuslaud"
+  SMOKER: "suitsuahi"
+  SMOOTH_BASALT: "sile basalt"
+  SMOOTH_QUARTZ: "siledast kvartsist plokk"
+  SMOOTH_QUARTZ_SLAB: "siledast kvartsist plaat"
+  SMOOTH_QUARTZ_STAIRS: "siledast kvartsist trepp"
+  SMOOTH_RED_SANDSTONE: "sile punane liivakivi"
+  SMOOTH_RED_SANDSTONE_SLAB: "siledast punasest liivakivist plaat"
+  SMOOTH_RED_SANDSTONE_STAIRS: "siledast punasest liivakivist trepp"
+  SMOOTH_SANDSTONE: "sile liivakivi"
+  SMOOTH_SANDSTONE_SLAB: "siledast liivakivist plaat"
+  SMOOTH_SANDSTONE_STAIRS: "siledast liivakivist trepp"
+  SMOOTH_STONE: "sile kivi"
+  SMOOTH_STONE_SLAB: "siledast kivist plaat"
+  SNIFFER_EGG: "nuuskijamuna"
+  SNOW: "lumi"
+  SNOW_BLOCK: "lumeplokk"
+  SOUL_CAMPFIRE: "hinge lõkketuli"
+  SOUL_FIRE: "hingetuli"
+  SOUL_LANTERN: "hingelatern"
+  SOUL_SAND: "hingeliiv"
+  SOUL_SOIL: "hingepinnas"
+  SOUL_TORCH: "hingetõrvik"
+  SOUL_WALL_TORCH: "hinge seinatõrvik"
+  SPAWN_NOT_VALID: "sul pole kodust voodit ega laetud taastekkeankurit või see oli takistatud"
+  SPAWNER: "koletiste tekitaja"
+  SPAWNER_DESC1: "kasuta peal sünnimuna:"
+  SPAWNER_DESC2: "määrab elukatüübi"
+  SPONGE: "käsn"
+  SPORE_BLOSSOM: "eoseõis"
+  SPRUCE_BUTTON: "kuusenupp"
+  SPRUCE_DOOR: "kuusest uks"
+  SPRUCE_FENCE: "kuusest aed"
+  SPRUCE_FENCE_GATE: "kuusest aiavärav"
+  SPRUCE_HANGING_SIGN: "kuusest rippuv silt"
+  SPRUCE_LEAVES: "kuuselehed"
+  SPRUCE_LOG: "kuusetüvi"
+  SPRUCE_PLANKS: "kuuselauad"
+  SPRUCE_PRESSURE_PLATE: "kuusest surveplaat"
+  SPRUCE_SAPLING: "kuuseistik"
+  SPRUCE_SIGN: "kuusest silt"
+  SPRUCE_SLAB: "kuuseplaat"
+  SPRUCE_STAIRS: "kuusetrepp"
+  SPRUCE_TRAPDOOR: "kuuseluuk"
+  SPRUCE_WALL_HANGING_SIGN: "kuusest seinal rippuv silt"
+  SPRUCE_WALL_SIGN: "kuusest seinasilt"
+  SPRUCE_WOOD: "kuusepuit"
+  STICKY_PISTON: "kleepuv kolb"
+  STONE: "kivi"
+  STONE_BRICK_SLAB: "kivitellisplaat"
+  STONE_BRICK_STAIRS: "kivitellistrepp"
+  STONE_BRICK_WALL: "kivitellistest müür"
+  STONE_BRICKS: "kivitellised"
+  STONE_BUTTON: "kivinupp"
+  STONE_PRESSURE_PLATE: "kivist surveplaat"
+  STONE_SLAB: "kiviplaat"
+  STONE_STAIRS: "kivitrepp"
+  STONECUTTER: "kivilõikur"
+  STRIPPED_ACACIA_LOG: "kooritud akaatsiatüvi"
+  STRIPPED_ACACIA_WOOD: "kooritud akaatsiapuit"
+  STRIPPED_BAMBOO_BLOCK: "kooritud bambuse plokk"
+  STRIPPED_BIRCH_LOG: "kooritud kasetüvi"
+  STRIPPED_BIRCH_WOOD: "kooritud kasepuit"
+  STRIPPED_CHERRY_LOG: "kooritud kirsipuu tüvi"
+  STRIPPED_CHERRY_WOOD: "kooritud kirsipuit"
+  STRIPPED_CRIMSON_HYPHAE: "kooritud karmiinpunased hüüfid"
+  STRIPPED_CRIMSON_STEM: "kooritud karmiinpunane vars"
+  STRIPPED_DARK_OAK_LOG: "kooritud tumeda tamme tüvi"
+  STRIPPED_DARK_OAK_WOOD: "kooritud tumeda tamme puit"
+  STRIPPED_JUNGLE_LOG: "kooritud džunglipuu tüvi"
+  STRIPPED_JUNGLE_WOOD: "kooritud džunglipuit"
+  STRIPPED_MANGROVE_LOG: "kooritud mangroovitüvi"
+  STRIPPED_MANGROVE_WOOD: "kooritud mangroovipuit"
+  STRIPPED_OAK_LOG: "kooritud tammetüvi"
+  STRIPPED_OAK_WOOD: "kooritud tammepuit"
+  STRIPPED_SPRUCE_LOG: "kooritud kuusetüvi"
+  STRIPPED_SPRUCE_WOOD: "kooritud kuusepuit"
+  STRIPPED_WARPED_HYPHAE: "kooritud kentsakad hüüfid"
+  STRIPPED_WARPED_STEM: "kooritud kentsakas vars"
+  STRUCTURE_BLOCK: "struktuuriplokk"
+  STRUCTURE_VOID: "struktuuritühjus"
+  SUGAR_CANE: "suhkruroog"
+  SUNFLOWER: "päevalill"
+  SUSPICIOUS_GRAVEL: "kahtlane kruus"
+  SUSPICIOUS_SAND: "kahtlane liiv"
+  SWEET_BERRY_BUSH: "magusate marjade põõsas"
+  TALL_GRASS: "kõrge muru"
+  TALL_SEAGRASS: "kõrge mererohi"
+  TARGET: "märklaud"
+  TERRACOTTA: "terrakota"
+  TINTED_GLASS: "toonitud klaas"
+  TNT: "dünamiit"
+  TORCH: "tõrvik"
+  TORCHFLOWER: "tõrvikulill"
+  TORCHFLOWER_CROP: "tõrvikulille saak"
+  TRAPPED_CHEST: "püüniskirst"
+  TRIAL_SPAWNER: "katsumuse tekitaja"
+  TRIPWIRE: "traadilõks"
+  TRIPWIRE_HOOK: "traadilõksu konks"
+  TUBE_CORAL: "torukorall"
+  TUBE_CORAL_BLOCK: "torukoralli plokk"
+  TUBE_CORAL_FAN: "torukoralli lehvik"
+  TUBE_CORAL_WALL_FAN: "torukoralli seinalehvik"
+  TUFF: "tuff"
+  TUFF_BRICK_SLAB: "tufitellistest plaat"
+  TUFF_BRICK_STAIRS: "tufitellistest trepp"
+  TUFF_BRICK_WALL: "tufitellistest müür"
+  TUFF_BRICKS: "tufitellised"
+  TUFF_SLAB: "tufiplaat"
+  TUFF_STAIRS: "tufitrepp"
+  TUFF_WALL: "tufimüür"
+  TURTLE_EGG: "kilpkonnamuna"
+  TWISTING_VINES: "väänduvad väädid"
+  TWISTING_VINES_PLANT: "väänduvate väätide taim"
+  VERDANT_FROGLIGHT: "haljendav konnavalgus"
+  VINE: "väädid"
+  VOID_AIR: "tühjuseõhk"
+  WALL_TORCH: "seinatõrvik"
+  WARPED_BUTTON: "kentsakas nupp"
+  WARPED_DOOR: "kentsakas uks"
+  WARPED_FENCE: "kentsakas aed"
+  WARPED_FENCE_GATE: "kentsakas aiavärav"
+  WARPED_FUNGUS: "kentsakas seen"
+  WARPED_HANGING_SIGN: "kentsakas rippuv silt"
+  WARPED_HYPHAE: "kentsakad hüüfid"
+  WARPED_NYLIUM: "kentsakas netseel"
+  WARPED_PLANKS: "kentsakad lauad"
+  WARPED_PRESSURE_PLATE: "kentsakas surveplaat"
+  WARPED_ROOTS: "kentsakad juured"
+  WARPED_SIGN: "kentsakas silt"
+  WARPED_SLAB: "kentsakas plaat"
+  WARPED_STAIRS: "kentsakas trepp"
+  WARPED_STEM: "kentsakas vars"
+  WARPED_TRAPDOOR: "kentsakas luuk"
+  WARPED_WALL_HANGING_SIGN: "kentsakas seinal rippuv silt"
+  WARPED_WALL_SIGN: "kentsakas seinasilt"
+  WARPED_WART_BLOCK: "kentsaka tüüka plokk"
+  WATER: "vesi"
+  WATER_CAULDRON: "veepada"
+  WAXED_CHISELED_COPPER: "vahatatud tahutud vask"
+  WAXED_COPPER_BLOCK: "vahatatud vaseplokk"
+  WAXED_COPPER_BULB: "vahatatud vaskpirn"
+  WAXED_COPPER_DOOR: "vahatatud vaskuks"
+  WAXED_COPPER_GRATE: "vahatatud vaskvõre"
+  WAXED_COPPER_TRAPDOOR: "vahatatud vaskluuk"
+  WAXED_CUT_COPPER: "vahatatud lõigatud vask"
+  WAXED_CUT_COPPER_SLAB: "vahatatud lõigatud vasest plaat"
+  WAXED_CUT_COPPER_STAIRS: "vahatatud lõigatud vasest trepp"
+  WAXED_EXPOSED_CHISELED_COPPER: "vahatatud pleekinud tahutud vask"
+  WAXED_EXPOSED_COPPER: "vahatatud pleekinud vask"
+  WAXED_EXPOSED_COPPER_BULB: "vahatatud pleekinud vaskpirn"
+  WAXED_EXPOSED_COPPER_DOOR: "vahatatud pleekinud vaskuks"
+  WAXED_EXPOSED_COPPER_GRATE: "vahatatud pleekinud vaskvõre"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "vahatatud pleekinud vaskluuk"
+  WAXED_EXPOSED_CUT_COPPER: "vahatatud pleekinud lõigatud vask"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "vahatatud pleekinud lõigatud vasest plaat"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "vahatatud pleekinud lõigatud vasest trepp"
+  WAXED_OXIDIZED_CHISELED_COPPER: "vahatatud oksüdeerunud tahutud vask"
+  WAXED_OXIDIZED_COPPER: "vahatatud oksüdeerunud vask"
+  WAXED_OXIDIZED_COPPER_BULB: "vahatatud oksüdeerunud vaskpirn"
+  WAXED_OXIDIZED_COPPER_DOOR: "vahatatud oksüdeerunud vaskuks"
+  WAXED_OXIDIZED_COPPER_GRATE: "vahatatud oksüdeerunud vaskvõre"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "vahatatud oksüdeerunud vaskluuk"
+  WAXED_OXIDIZED_CUT_COPPER: "vahatatud oksüdeerunud lõigatud vask"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "vahatatud oksüdeerunud lõigatud vasest plaat"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "vahatatud oksüdeerunud lõigatud vasest trepp"
+  WAXED_WEATHERED_CHISELED_COPPER: "vahatatud kulunud tahutud vask"
+  WAXED_WEATHERED_COPPER: "vahatatud kulunud vask"
+  WAXED_WEATHERED_COPPER_BULB: "vahatatud kulunud vaskpirn"
+  WAXED_WEATHERED_COPPER_DOOR: "vahatatud kulunud vaskuks"
+  WAXED_WEATHERED_COPPER_GRATE: "vahatatud kulunud vaskvõre"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "vahatatud kulunud vaskluuk"
+  WAXED_WEATHERED_CUT_COPPER: "vahatatud kulunud lõigatud vask"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "vahatatud kulunud lõigatud vasest plaat"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "vahatatud kulunud lõigatud vasest trepp"
+  WEATHERED_CHISELED_COPPER: "kulunud tahutud vask"
+  WEATHERED_COPPER: "kulunud vask"
+  WEATHERED_COPPER_BULB: "kulunud vaskpirn"
+  WEATHERED_COPPER_DOOR: "kulunud vaskuks"
+  WEATHERED_COPPER_GRATE: "kulunud vaskvõre"
+  WEATHERED_COPPER_TRAPDOOR: "kulunud vaskluuk"
+  WEATHERED_CUT_COPPER: "kulunud lõigatud vask"
+  WEATHERED_CUT_COPPER_SLAB: "kulunud lõigatud vasest plaat"
+  WEATHERED_CUT_COPPER_STAIRS: "kulunud lõigatud vasest trepp"
+  WEEPING_VINES: "nutvad väädid"
+  WEEPING_VINES_PLANT: "nutvate väätide taim"
+  WET_SPONGE: "märg käsn"
+  WHEAT: "nisuvili"
+  WHITE_BANNER: "valge plakat"
+  WHITE_BED: "valge voodi"
+  WHITE_CANDLE: "valge küünal"
+  WHITE_CANDLE_CAKE: "valge küünlaga kook"
+  WHITE_CARPET: "valge vaip"
+  WHITE_CONCRETE: "valge betoon"
+  WHITE_CONCRETE_POWDER: "valge betoonipulber"
+  WHITE_GLAZED_TERRACOTTA: "valge glasuuritud terrakota"
+  WHITE_SHULKER_BOX: "valge šulkerikast"
+  WHITE_STAINED_GLASS: "valge värviga klaas"
+  WHITE_STAINED_GLASS_PANE: "valge värviga klaaspaneel"
+  WHITE_TERRACOTTA: "valge terrakota"
+  WHITE_TULIP: "valge tulp"
+  WHITE_WOOL: "valge vill"
+  WITHER_ROSE: "witheriroos"
+  WITHER_SKELETON_SKULL: "wither-luukere pealuu"
+  WITHER_SKELETON_WALL_SKULL: "wither-luukere seinapealuu"
+  YELLOW_BANNER: "kollane plakat"
+  YELLOW_BED: "kollane voodi"
+  YELLOW_CANDLE: "kollane küünal"
+  YELLOW_CANDLE_CAKE: "kollase küünlaga kook"
+  YELLOW_CARPET: "kollane vaip"
+  YELLOW_CONCRETE: "kollane betoon"
+  YELLOW_CONCRETE_POWDER: "kollane betoonipulber"
+  YELLOW_GLAZED_TERRACOTTA: "kollane glasuuritud terrakota"
+  YELLOW_SHULKER_BOX: "kollane šulkerikast"
+  YELLOW_STAINED_GLASS: "kollase värviga klaas"
+  YELLOW_STAINED_GLASS_PANE: "kollase värviga klaaspaneel"
+  YELLOW_TERRACOTTA: "kollane terrakota"
+  YELLOW_WOOL: "kollane vill"
+  ZOMBIE_HEAD: "zombi pea"
+  ZOMBIE_WALL_HEAD: "zombi seinapea"
+  ACACIA_BOAT: "akaatsiast paat"
+  ACACIA_CHEST_BOAT: "kirstuga akaatsiast paat"
+  ALLAY_SPAWN_EGG: "rahustaja sünnimuna"
+  AMETHYST_SHARD: "ametüstikild"
+  ANGLER_POTTERY_SHARD: "õngitseja potikild"
+  ANGLER_POTTERY_SHERD: "õngitseja potikild"
+  APPLE: "õun"
+  ARCHER_POTTERY_SHARD: "vibulaskja potikild"
+  ARCHER_POTTERY_SHERD: "vibulaskja potikild"
+  ARMOR_STAND: "rüüalus"
+  ARMS_UP_POTTERY_SHARD: "käed üleval potikild"
+  ARMS_UP_POTTERY_SHERD: "käed üleval potikild"
+  ARROW: "nool"
+  AXOLOTL_BUCKET: "aksolotli ämber"
+  AXOLOTL_SPAWN_EGG: "aksolotli sünnimuna"
+  BAKED_POTATO: "ahjukartul"
+  BAMBOO_CHEST_RAFT: "kirstuga bambusest parv"
+  BAMBOO_RAFT: "bambusest parv"
+  BAT_SPAWN_EGG: "nahkhiire sünnimuna"
+  BEE_SPAWN_EGG: "mesilase sünnimuna"
+  BEEF: "toores veiseliha"
+  BEETROOT: "peet"
+  BEETROOT_SEEDS: "peediseemned"
+  BEETROOT_SOUP: "peedisupp"
+  BIRCH_BOAT: "kasest paat"
+  BIRCH_CHEST_BOAT: "kirstuga kasest paat"
+  BLACK_DYE: "must värvaine"
+  BLADE_POTTERY_SHARD: "mõõgatera potikild"
+  BLADE_POTTERY_SHERD: "mõõgatera potikild"
+  BLAZE_POWDER: "lõõmapuuder"
+  BLAZE_ROD: "lõõmavarras"
+  BLAZE_SPAWN_EGG: "lõõma sünnimuna"
+  BLUE_DYE: "sinine värvaine"
+  BONE: "kont"
+  BONE_MEAL: "kondijahu"
+  BOOK: "raamat"
+  BOW: "vibu"
+  BOWL: "kauss"
+  BREAD: "leib"
+  BREEZE_SPAWN_EGG: "briisi sünnimuna"
+  BREWER_POTTERY_SHARD: "pruulija potikild"
+  BREWER_POTTERY_SHERD: "pruulija potikild"
+  BRICK: "tellis"
+  BROWN_DYE: "pruun värvaine"
+  BRUSH: "pintsel"
+  BUCKET: "ämber"
+  BUNDLE: "komps"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "põlemise potikild"
+  BURN_POTTERY_SHERD: "põlemise potikild"
+  CAMEL_SPAWN_EGG: "kaameli sünnimuna"
+  CARROT: "porgand"
+  CARROT_ON_A_STICK: "porgand pulga otsas"
+  CAT_SPAWN_EGG: "kassi sünnimuna"
+  CAVE_SPIDER_SPAWN_EGG: "koopaämbliku sünnimuna"
+  CHAINMAIL_BOOTS: "rõngassaapad"
+  CHAINMAIL_CHESTPLATE: "rõngasrinnaplaat"
+  CHAINMAIL_HELMET: "rõngaskiiver"
+  CHAINMAIL_LEGGINGS: "rõngassäärised"
+  CHARCOAL: "puusüsi"
+  CHERRY_BOAT: "kirsipuidust paat"
+  CHERRY_CHEST_BOAT: "kirstuga kirsipuidust paat"
+  CHEST_MINECART: "kirstuga kaevanduskäru"
+  CHICKEN: "toores kana"
+  CHICKEN_SPAWN_EGG: "kana sünnimuna"
+  CHORUS_FRUIT: "koorivili"
+  CLAY_BALL: "savipall"
+  CLOCK: "kell"
+  COAL: "süsi"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  COCOA_BEANS: "kakaooad"
+  COD: "toores tursk"
+  COD_BUCKET: "tursaämber"
+  COD_SPAWN_EGG: "tursa sünnimuna"
+  COMMAND_BLOCK_MINECART: "käsuplokiga kaevanduskäru"
+  COMPASS: "kompass"
+  COOKED_BEEF: "küpsetatud veiseliha"
+  COOKED_CHICKEN: "küpsetatud kana"
+  COOKED_COD: "küpsetatud tursk"
+  COOKED_MUTTON: "küpsetatud lambaliha"
+  COOKED_PORKCHOP: "küpsetatud sealiha"
+  COOKED_RABBIT: "küpsetatud küülik"
+  COOKED_SALMON: "küpsetatud lõhe"
+  COOKIE: "küpsis"
+  COPPER_INGOT: "vasekang"
+  COW_SPAWN_EGG: "lehma sünnimuna"
+  CREEPER_BANNER_PATTERN: "plakatimuster"
+  CREEPER_BANNER_PATTERN_DESC: "creeperi embleem"
+  CREEPER_SPAWN_EGG: "creeperi sünnimuna"
+  CROSSBOW: "amb"
+  CROSSBOW_PROJECTILE: "lendkeha:"
+  CYAN_DYE: "tsüaansinine värvaine"
+  DANGER_POTTERY_SHARD: "ohu potikild"
+  DANGER_POTTERY_SHERD: "ohu potikild"
+  DARK_OAK_BOAT: "tumedast tammest paat"
+  DARK_OAK_CHEST_BOAT: "kirstuga tumedast tammest paat"
+  DEBUG_STICK: "siluripulk"
+  DEBUG_STICK_EMPTY: "%s ei oma atribuute"
+  DEBUG_STICK_SELECT: "\"%s\" (%s) valitud"
+  DEBUG_STICK_UPDATE: "\"%s\" väärtus on nüüd %s"
+  DIAMOND: "teemant"
+  DIAMOND_AXE: "teemantkirves"
+  DIAMOND_BOOTS: "teemantsaapad"
+  DIAMOND_CHESTPLATE: "teemantrinnaplaat"
+  DIAMOND_HELMET: "teemantkiiver"
+  DIAMOND_HOE: "teemantkõblas"
+  DIAMOND_HORSE_ARMOR: "hobuse teemantrüü"
+  DIAMOND_LEGGINGS: "teemantsäärised"
+  DIAMOND_PICKAXE: "teemantkirka"
+  DIAMOND_SHOVEL: "teemantlabidas"
+  DIAMOND_SWORD: "teemantmõõk"
+  DISC_FRAGMENT_5: "plaadikilluke"
+  DISC_FRAGMENT_5_DESC: "muusikaplaat - 5"
+  DOLPHIN_SPAWN_EGG: "delfiini sünnimuna"
+  DONKEY_SPAWN_EGG: "eesli sünnimuna"
+  DRAGON_BREATH: "draakoni hingeõhk"
+  DRIED_KELP: "kuivatatud vetikas"
+  DROWNED_SPAWN_EGG: "uppunu sünnimuna"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  ECHO_SHARD: "kajakild"
+  EGG: "muna"
+  ELDER_GUARDIAN_SPAWN_EGG: "vanemkaitsja sünnimuna"
+  ELYTRA: "kattetiivad"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "loitsitud raamat"
+  ENCHANTED_GOLDEN_APPLE: "loitsitud kuldõun"
+  END_CRYSTAL: "endikristall"
+  ENDER_DRAGON_SPAWN_EGG: "enderdraakoni sünnimuna"
+  ENDER_EYE: "enderi silm"
+  ENDER_PEARL: "enderipärl"
+  ENDERMAN_SPAWN_EGG: "endermani sünnimuna"
+  ENDERMITE_SPAWN_EGG: "endermiidi sünnimuna"
+  EVOKER_SPAWN_EGG: "ilmutaja sünnimuna"
+  EXPERIENCE_BOTTLE: "loitsimispudel"
+  EXPLORER_POTTERY_SHARD: "avastaja potikild"
+  EXPLORER_POTTERY_SHERD: "avastaja potikild"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  FEATHER: "sulg"
+  FERMENTED_SPIDER_EYE: "käärinud ämblikusilm"
+  FILLED_MAP: "kaart"
+  FIRE_CHARGE: "tulelaeng"
+  FIREWORK_ROCKET: "ilutulestiku rakett"
+  FIREWORK_ROCKET_FLIGHT: "lennu kestus:"
+  FIREWORK_STAR: "ilutulestiku täht"
+  FIREWORK_STAR_BLACK: "must"
+  FIREWORK_STAR_BLUE: "sinine"
+  FIREWORK_STAR_BROWN: "pruun"
+  FIREWORK_STAR_CUSTOM_COLOR: "kohandatud"
+  FIREWORK_STAR_CYAN: "tsüaansinine"
+  FIREWORK_STAR_FADE_TO: "hajuv"
+  FIREWORK_STAR_FLICKER: "sädelev"
+  FIREWORK_STAR_GRAY: "hall"
+  FIREWORK_STAR_GREEN: "roheline"
+  FIREWORK_STAR_LIGHT_BLUE: "helesinine"
+  FIREWORK_STAR_LIGHT_GRAY: "helehall"
+  FIREWORK_STAR_LIME: "laimiroheline"
+  FIREWORK_STAR_MAGENTA: "fuksiinpunane"
+  FIREWORK_STAR_ORANGE: "oranž"
+  FIREWORK_STAR_PINK: "roosa"
+  FIREWORK_STAR_PURPLE: "lilla"
+  FIREWORK_STAR_RED: "punane"
+  FIREWORK_STAR_SHAPE: "tundmatu kuju"
+  FIREWORK_STAR_SHAPE_BURST: "lõhkev"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperi-kujuline"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "suur pall"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "väike pall"
+  FIREWORK_STAR_SHAPE_STAR: "tähekujuline"
+  FIREWORK_STAR_TRAIL: "rada"
+  FIREWORK_STAR_WHITE: "valge"
+  FIREWORK_STAR_YELLOW: "kollane"
+  FISHING_ROD: "õng"
+  FLINT: "tulekivi"
+  FLINT_AND_STEEL: "tuleraud"
+  FLOWER_BANNER_PATTERN: "plakatimuster"
+  FLOWER_BANNER_PATTERN_DESC: "lille embleem"
+  FOX_SPAWN_EGG: "rebase sünnimuna"
+  FRIEND_POTTERY_SHARD: "sõbra potikild"
+  FRIEND_POTTERY_SHERD: "sõbra potikild"
+  FROG_SPAWN_EGG: "konna sünnimuna"
+  FURNACE_MINECART: "ahjuga kaevanduskäru"
+  GHAST_SPAWN_EGG: "ghasti sünnimuna"
+  GHAST_TEAR: "ghasti pisar"
+  GLASS_BOTTLE: "klaaspudel"
+  GLISTERING_MELON_SLICE: "sätendav meloniviil"
+  GLOBE_BANNER_PATTERN: "plakatimuster"
+  GLOBE_BANNER_PATTERN_DESC: "gloobus"
+  GLOW_BERRIES: "hõõgmarjad"
+  GLOW_INK_SAC: "hõõg-tindikott"
+  GLOW_ITEM_FRAME: "hõõg-esemeraam"
+  GLOW_SQUID_SPAWN_EGG: "hõõgkalmaari sünnimuna"
+  GLOWSTONE_DUST: "hõõgkivi tolm"
+  GOAT_HORN: "kitsesarv"
+  GOAT_SPAWN_EGG: "kitse sünnimuna"
+  GOLD_INGOT: "kullakang"
+  GOLD_NUGGET: "kullavaland"
+  GOLDEN_APPLE: "kuldõun"
+  GOLDEN_AXE: "kuldkirves"
+  GOLDEN_BOOTS: "kuldsaapad"
+  GOLDEN_CARROT: "kuldne porgand"
+  GOLDEN_CHESTPLATE: "kuldrinnaplaat"
+  GOLDEN_HELMET: "kuldkiiver"
+  GOLDEN_HOE: "kuldkõblas"
+  GOLDEN_HORSE_ARMOR: "hobuse kuldrüü"
+  GOLDEN_LEGGINGS: "kuldsäärised"
+  GOLDEN_PICKAXE: "kuldkirka"
+  GOLDEN_SHOVEL: "kuldlabidas"
+  GOLDEN_SWORD: "kuldmõõk"
+  GRAY_DYE: "hall värvaine"
+  GREEN_DYE: "roheline värvaine"
+  GUARDIAN_SPAWN_EGG: "kaitsja sünnimuna"
+  GUNPOWDER: "püssirohi"
+  HEART_OF_THE_SEA: "mere süda"
+  HEART_POTTERY_SHARD: "südame potikild"
+  HEART_POTTERY_SHERD: "südame potikild"
+  HEARTBREAK_POTTERY_SHARD: "murtud südame potikild"
+  HEARTBREAK_POTTERY_SHERD: "murtud südame potikild"
+  HOGLIN_SPAWN_EGG: "hoglini sünnimuna"
+  HONEY_BOTTLE: "meepudel"
+  HONEYCOMB: "meekärg"
+  HOPPER_MINECART: "püüdjaga kaevanduskäru"
+  HORSE_SPAWN_EGG: "hobuse sünnimuna"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  HOWL_POTTERY_SHARD: "ulgumise potikild"
+  HOWL_POTTERY_SHERD: "ulgumise potikild"
+  HUSK_SPAWN_EGG: "kuiviku sünnimuna"
+  INK_SAC: "tindikott"
+  IRON_AXE: "raudkirves"
+  IRON_BOOTS: "raudsaapad"
+  IRON_CHESTPLATE: "raudrinnaplaat"
+  IRON_GOLEM_SPAWN_EGG: "raudgolemi sünnimuna"
+  IRON_HELMET: "raudkiiver"
+  IRON_HOE: "raudkõblas"
+  IRON_HORSE_ARMOR: "hobuse raudrüü"
+  IRON_INGOT: "rauakang"
+  IRON_LEGGINGS: "raudsäärised"
+  IRON_NUGGET: "rauavaland"
+  IRON_PICKAXE: "raudkirka"
+  IRON_SHOVEL: "raudlabidas"
+  IRON_SWORD: "raudmõõk"
+  ITEM_FRAME: "esemeraam"
+  JUNGLE_BOAT: "džunglipuidust paat"
+  JUNGLE_CHEST_BOAT: "kirstuga džunglipuidust paat"
+  KNOWLEDGE_BOOK: "teadmiste raamat"
+  LAPIS_LAZULI: "lasuriit"
+  LAVA_BUCKET: "laavaämber"
+  LEAD: "köis"
+  LEATHER: "nahk"
+  LEATHER_BOOTS: "nahksaapad"
+  LEATHER_CHESTPLATE: "nahktuunika"
+  LEATHER_HELMET: "nahkmüts"
+  LEATHER_HORSE_ARMOR: "hobuse nahkrüü"
+  LEATHER_LEGGINGS: "nahkpüksid"
+  LIGHT_BLUE_DYE: "helesinine värvaine"
+  LIGHT_GRAY_DYE: "helehall värvaine"
+  LIME_DYE: "laimiroheline värvaine"
+  LINGERING_POTION: "pikaldane võlujook"
+  LINGERING_POTION_EFFECT_AWKWARD: "pikaldane kohatu võlujook"
+  LINGERING_POTION_EFFECT_EMPTY: "pikaldane meisterdamatu võlujook"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "pikaldane tulekindluse võlujook"
+  LINGERING_POTION_EFFECT_HARMING: "pikaldane kahjustav võlujook"
+  LINGERING_POTION_EFFECT_HEALING: "pikaldane tervendav võlujook"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "pikaldane nähtamatuse võlujook"
+  LINGERING_POTION_EFFECT_LEAPING: "pikaldane kargamise võlujook"
+  LINGERING_POTION_EFFECT_LEVITATION: "pikaldane õhkukerkimise võlujook"
+  LINGERING_POTION_EFFECT_LUCK: "pikaldane õnne võlujook"
+  LINGERING_POTION_EFFECT_MUNDANE: "pikaldane ilmalik võlujook"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "pikaldane öös nägemise võlujook"
+  LINGERING_POTION_EFFECT_POISON: "pikaldane mürgitav võlujook"
+  LINGERING_POTION_EFFECT_REGENERATION: "pikaldane taastav võlujook"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "pikaldane aeglase langemise võlujook"
+  LINGERING_POTION_EFFECT_SLOWNESS: "pikaldane aeglustav võlujook"
+  LINGERING_POTION_EFFECT_STRENGTH: "pikaldane tugevdav võlujook"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "pikaldane ruttamise võlujook"
+  LINGERING_POTION_EFFECT_THICK: "pikaldane tihke võlujook"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "pikaldane kilpkonnameistri võlujook"
+  LINGERING_POTION_EFFECT_WATER: "pikaldane veepudel"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "pikaldane vees hingamise võlujook"
+  LINGERING_POTION_EFFECT_WEAKNESS: "pikaldane nõrgestav võlujook"
+  LLAMA_SPAWN_EGG: "laama sünnimuna"
+  LODESTONE_COMPASS: "teekivi kompass"
+  MAGENTA_DYE: "fuksiinpunane värvaine"
+  MAGMA_CREAM: "magmakreem"
+  MAGMA_CUBE_SPAWN_EGG: "magmakuubi sünnimuna"
+  MANGROVE_BOAT: "mangroovist paat"
+  MANGROVE_CHEST_BOAT: "kirstuga mangroovist paat"
+  MAP: "tühi kaart"
+  MELON_SEEDS: "meloniseemned"
+  MELON_SLICE: "meloniviil"
+  MILK_BUCKET: "piimaämber"
+  MINECART: "kaevanduskäru"
+  MINER_POTTERY_SHARD: "kaevuri potikild"
+  MINER_POTTERY_SHERD: "kaevandaja potikild"
+  MOJANG_BANNER_PATTERN: "plakatimuster"
+  MOJANG_BANNER_PATTERN_DESC: "asi"
+  MOOSHROOM_SPAWN_EGG: "mooshroomi sünnimuna"
+  MOURNER_POTTERY_SHARD: "leinaja potikild"
+  MOURNER_POTTERY_SHERD: "leinaja potikild"
+  MULE_SPAWN_EGG: "muula sünnimuna"
+  MUSHROOM_STEW: "seenehautis"
+  MUSIC_DISC_11: "muusikaplaat"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "muusikaplaat"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "muusikaplaat"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "muusikaplaat"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "muusikaplaat"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "muusikaplaat"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "muusikaplaat"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "muusikaplaat"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "muusikaplaat"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "muusikaplaat"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "muusikaplaat"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "muusikaplaat"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "muusikaplaat"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "muusikaplaat"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "muusikaplaat"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "muusikaplaat"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "toores lambaliha"
+  NAME_TAG: "nimesilt"
+  NAUTILUS_SHELL: "laevukese karp"
+  NETHER_BRICK: "nether-tellis"
+  NETHER_STAR: "netheritäht"
+  NETHERITE_AXE: "netheriitkirves"
+  NETHERITE_BOOTS: "netheriitsaapad"
+  NETHERITE_CHESTPLATE: "netheriitrinnaplaat"
+  NETHERITE_HELMET: "netheriitkiiver"
+  NETHERITE_HOE: "netheriitkõblas"
+  NETHERITE_INGOT: "netheriidikang"
+  NETHERITE_LEGGINGS: "netheriitsäärised"
+  NETHERITE_PICKAXE: "netheriitkirka"
+  NETHERITE_SCRAP: "netheriidijäägid"
+  NETHERITE_SHOVEL: "netheriitlabidas"
+  NETHERITE_SWORD: "netheriitmõõk"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "sepistusmall"
+  OAK_BOAT: "tammest paat"
+  OAK_CHEST_BOAT: "kirstuga tammest paat"
+  OCELOT_SPAWN_EGG: "otseloti sünnimuna"
+  ORANGE_DYE: "oranž värvaine"
+  PAINTING: "maal"
+  PANDA_SPAWN_EGG: "panda sünnimuna"
+  PAPER: "paber"
+  PARROT_SPAWN_EGG: "papagoi sünnimuna"
+  PHANTOM_MEMBRANE: "fantoomi membraan"
+  PHANTOM_SPAWN_EGG: "fantoomi sünnimuna"
+  PIG_SPAWN_EGG: "sea sünnimuna"
+  PIGLIN_BANNER_PATTERN: "plakatimuster"
+  PIGLIN_BANNER_PATTERN_DESC: "kärss"
+  PIGLIN_BRUTE_SPAWN_EGG: "jõhkra piglini sünnimuna"
+  PIGLIN_SPAWN_EGG: "piglini sünnimuna"
+  PILLAGER_SPAWN_EGG: "rüüstaja sünnimuna"
+  PINK_DYE: "roosa värvaine"
+  PITCHER_POD: "kanntaime kaun"
+  PLENTY_POTTERY_SHARD: "küllaldane potikild"
+  PLENTY_POTTERY_SHERD: "küllaldane potikild"
+  POISONOUS_POTATO: "mürgine kartul"
+  POLAR_BEAR_SPAWN_EGG: "jääkaru sünnimuna"
+  POPPED_CHORUS_FRUIT: "paisunud koorivili"
+  PORKCHOP: "toores sealiha"
+  POTATO: "kartul"
+  POTION: "võlujook"
+  POTION_EFFECT_AWKWARD: "kohatu võlujook"
+  POTION_EFFECT_EMPTY: "meisterdamatu võlujook"
+  POTION_EFFECT_FIRE_RESISTANCE: "tulekindluse võlujook"
+  POTION_EFFECT_HARMING: "kahjustav võlujook"
+  POTION_EFFECT_HEALING: "tervendav võlujook"
+  POTION_EFFECT_INVISIBILITY: "nähtamatuse võlujook"
+  POTION_EFFECT_LEAPING: "kargamise võlujook"
+  POTION_EFFECT_LEVITATION: "õhkukerkimise võlujook"
+  POTION_EFFECT_LUCK: "õnne võlujook"
+  POTION_EFFECT_MUNDANE: "ilmalik võlujook"
+  POTION_EFFECT_NIGHT_VISION: "öös nägemise võlujook"
+  POTION_EFFECT_POISON: "mürgitav võlujook"
+  POTION_EFFECT_REGENERATION: "taastav võlujook"
+  POTION_EFFECT_SLOW_FALLING: "aeglase langemise võlujook"
+  POTION_EFFECT_SLOWNESS: "aeglustav võlujook"
+  POTION_EFFECT_STRENGTH: "tugevdav võlujook"
+  POTION_EFFECT_SWIFTNESS: "ruttamise võlujook"
+  POTION_EFFECT_THICK: "tihke võlujook"
+  POTION_EFFECT_TURTLE_MASTER: "kilpkonnameistri võlujook"
+  POTION_EFFECT_WATER: "veepudel"
+  POTION_EFFECT_WATER_BREATHING: "vees hingamise võlujook"
+  POTION_EFFECT_WEAKNESS: "nõrgestav võlujook"
+  POTTERY_SHARD_ARCHER: "vibulaskja potikild"
+  POTTERY_SHARD_ARMS_UP: "käed üleval potikild"
+  POTTERY_SHARD_PRIZE: "auhinna potikild"
+  POTTERY_SHARD_SKULL: "pealuu potikild"
+  POWDER_SNOW_BUCKET: "puuderlume ämber"
+  PRISMARINE_CRYSTALS: "prismariinikristallid"
+  PRISMARINE_SHARD: "prismariinikild"
+  PRIZE_POTTERY_SHARD: "auhinna potikild"
+  PRIZE_POTTERY_SHERD: "auhinna potikild"
+  PUFFERFISH: "kerakala"
+  PUFFERFISH_BUCKET: "kerakalaämber"
+  PUFFERFISH_SPAWN_EGG: "kerakala sünnimuna"
+  PUMPKIN_PIE: "kõrvitsapirukas"
+  PUMPKIN_SEEDS: "kõrvitsaseemned"
+  PURPLE_DYE: "lilla värvaine"
+  QUARTZ: "netheri kvarts"
+  RABBIT: "toores küülik"
+  RABBIT_FOOT: "küüliku jalg"
+  RABBIT_HIDE: "küülikunahk"
+  RABBIT_SPAWN_EGG: "küüliku sünnimuna"
+  RABBIT_STEW: "küülikuhautis"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  RAVAGER_SPAWN_EGG: "laastaja sünnimuna"
+  RAW_COPPER: "toorvask"
+  RAW_GOLD: "toorkuld"
+  RAW_IRON: "toorraud"
+  RECOVERY_COMPASS: "taastuskompass"
+  RED_DYE: "punane värvaine"
+  REDSTONE: "redstone-tolm"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  ROTTEN_FLESH: "roiskunud liha"
+  SADDLE: "sadul"
+  SALMON: "toores lõhe"
+  SALMON_BUCKET: "lõheämber"
+  SALMON_SPAWN_EGG: "lõhe sünnimuna"
+  SCUTE: "soomus"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  SHEAF_POTTERY_SHARD: "vihu potikild"
+  SHEAF_POTTERY_SHERD: "vihu potikild"
+  SHEARS: "käärid"
+  SHEEP_SPAWN_EGG: "lamba sünnimuna"
+  SHELTER_POTTERY_SHARD: "varjupaiga potikild"
+  SHELTER_POTTERY_SHERD: "varjupaiga potikild"
+  SHIELD: "kilp"
+  SHIELD_BLACK: "must kilp"
+  SHIELD_BLUE: "sinine kilp"
+  SHIELD_BROWN: "pruun kilp"
+  SHIELD_CYAN: "tsüaansinine kilp"
+  SHIELD_GRAY: "hall kilp"
+  SHIELD_GREEN: "roheline kilp"
+  SHIELD_LIGHT_BLUE: "helesinine kilp"
+  SHIELD_LIGHT_GRAY: "helehall kilp"
+  SHIELD_LIME: "laimiroheline kilp"
+  SHIELD_MAGENTA: "fuksiinpunane kilp"
+  SHIELD_ORANGE: "oranž kilp"
+  SHIELD_PINK: "roosa kilp"
+  SHIELD_PURPLE: "lilla kilp"
+  SHIELD_RED: "punane kilp"
+  SHIELD_WHITE: "valge kilp"
+  SHIELD_YELLOW: "kollane kilp"
+  SHULKER_SHELL: "šulkeri kest"
+  SHULKER_SPAWN_EGG: "šulkeri sünnimuna"
+  SIGN: "silt"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  SILVERFISH_SPAWN_EGG: "majasoomuka sünnimuna"
+  SKELETON_HORSE_SPAWN_EGG: "luukerehobuse sünnimuna"
+  SKELETON_SPAWN_EGG: "luukere sünnimuna"
+  SKULL_BANNER_PATTERN: "plakatimuster"
+  SKULL_BANNER_PATTERN_DESC: "pealuu embleem"
+  SKULL_POTTERY_SHARD: "pealuu potikild"
+  SKULL_POTTERY_SHERD: "pealuu potikild"
+  SLIME_BALL: "limapall"
+  SLIME_SPAWN_EGG: "limuse sünnimuna"
+  SMITHING_TEMPLATE: "sepistusmall"
+  SMITHING_TEMPLATE_APPLIES_TO: "rakendub:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "lisa kang või kristall"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "rüüle"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "lisa rüü osa"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "kangid ja kristallid"
+  SMITHING_TEMPLATE_INGREDIENTS: "koostisosad:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "lisa netheriidikang"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "teemantvarustusele"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "lisa teemantrüü -mõõk või -tööriist"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheriidikang"
+  SMITHING_TEMPLATE_UPGRADE: "täiendus: "
+  SNIFFER_SPAWN_EGG: "nuuskija sünnimuna"
+  SNORT_POTTERY_SHARD: "nortsatuse potikild"
+  SNORT_POTTERY_SHERD: "nortsatuse potikild"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  SNOW_GOLEM_SPAWN_EGG: "lumegolemi sünnimuna"
+  SNOWBALL: "lumepall"
+  SPECTRAL_ARROW: "spektraalne nool"
+  SPIDER_EYE: "ämblikusilm"
+  SPIDER_SPAWN_EGG: "ämbliku sünnimuna"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  SPLASH_POTION: "pritsitav võlujook"
+  SPLASH_POTION_EFFECT_AWKWARD: "pritsitav kohatu võlujook"
+  SPLASH_POTION_EFFECT_EMPTY: "pritsitav meisterdamatu võlujook"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "pritsitav tulekindluse võlujook"
+  SPLASH_POTION_EFFECT_HARMING: "pritsitav kahjustav võlujook"
+  SPLASH_POTION_EFFECT_HEALING: "pritsitav tervendav võlujook"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "pritsitav nähtamatuse võlujook"
+  SPLASH_POTION_EFFECT_LEAPING: "pritsitav kargamise võlujook"
+  SPLASH_POTION_EFFECT_LEVITATION: "pritsitav õhkukerkimise võlujook"
+  SPLASH_POTION_EFFECT_LUCK: "pritsitav õnne võlujook"
+  SPLASH_POTION_EFFECT_MUNDANE: "pritsitav ilmalik võlujook"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "pritsitav öös nägemise võlujook"
+  SPLASH_POTION_EFFECT_POISON: "pritsitav mürgitav võlujook"
+  SPLASH_POTION_EFFECT_REGENERATION: "pritsitav taastav võlujook"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "pritsitav aeglase langemise võlujook"
+  SPLASH_POTION_EFFECT_SLOWNESS: "pritsitav aeglustav võlujook"
+  SPLASH_POTION_EFFECT_STRENGTH: "pritsitav tugevdav võlujook"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "pritsitav ruttamise võlujook"
+  SPLASH_POTION_EFFECT_THICK: "pritsitav tihke võlujook"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "pritsitav kilpkonnameistri võlujook"
+  SPLASH_POTION_EFFECT_WATER: "pritsitav veepudel"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "pritsitav vees hingamise võlujook"
+  SPLASH_POTION_EFFECT_WEAKNESS: "pritsitav nõrgestav võlujook"
+  SPRUCE_BOAT: "kuusest paat"
+  SPRUCE_CHEST_BOAT: "kirstuga kuusest paat"
+  SPYGLASS: "pikksilm"
+  SQUID_SPAWN_EGG: "kalmaari sünnimuna"
+  STICK: "pulk"
+  STONE_AXE: "kivikirves"
+  STONE_HOE: "kivikõblas"
+  STONE_PICKAXE: "kivikirka"
+  STONE_SHOVEL: "kivilabidas"
+  STONE_SWORD: "kivimõõk"
+  STRAY_SPAWN_EGG: "eksleja sünnimuna"
+  STRIDER_SPAWN_EGG: "tatsaja sünnimuna"
+  STRING: "nöör"
+  SUGAR: "suhkur"
+  SUSPICIOUS_STEW: "kahtlane hautis"
+  SWEET_BERRIES: "magusad marjad"
+  TADPOLE_BUCKET: "kulleseämber"
+  TADPOLE_SPAWN_EGG: "kullese sünnimuna"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  TIPPED_ARROW: "mõjuga nool"
+  TIPPED_ARROW_EFFECT_AWKWARD: "mõjuga nool"
+  TIPPED_ARROW_EFFECT_EMPTY: "meisterdamatu mõjuga nool"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "tulekindluse nool"
+  TIPPED_ARROW_EFFECT_HARMING: "kahjustav nool"
+  TIPPED_ARROW_EFFECT_HEALING: "tervendav nool"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "nähtamatuse nool"
+  TIPPED_ARROW_EFFECT_LEAPING: "kargamise nool"
+  TIPPED_ARROW_EFFECT_LEVITATION: "õhkukerkimise nool"
+  TIPPED_ARROW_EFFECT_LUCK: "õnne nool"
+  TIPPED_ARROW_EFFECT_MUNDANE: "mõjuga nool"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "öös nägemise nool"
+  TIPPED_ARROW_EFFECT_POISON: "mürgitav nool"
+  TIPPED_ARROW_EFFECT_REGENERATION: "taastav nool"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "aeglase langemise nool"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "aeglustav nool"
+  TIPPED_ARROW_EFFECT_STRENGTH: "tugevdav nool"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "ruttamise nool"
+  TIPPED_ARROW_EFFECT_THICK: "mõjuga nool"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "kilpkonnameistri nool"
+  TIPPED_ARROW_EFFECT_WATER: "plärtsatuse nool"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "vees hingamise nool"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "nõrgendav nool"
+  TNT_MINECART: "dünamiidiga kaevanduskäru"
+  TORCHFLOWER_SEEDS: "tõrvikulille seemned"
+  TOTEM_OF_UNDYING: "ebasurma tootem"
+  TRADER_LLAMA_SPAWN_EGG: "kaupleja laama sünnimuna"
+  TRIAL_KEY: "katsumuse võti"
+  TRIDENT: "kolmhark"
+  TROPICAL_FISH: "troopiline kala"
+  TROPICAL_FISH_BUCKET: "troopilise kala ämber"
+  TROPICAL_FISH_SPAWN_EGG: "troopilise kala sünnimuna"
+  TURTLE_HELMET: "kilpkonna kilp"
+  TURTLE_SPAWN_EGG: "kilpkonna sünnimuna"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  VEX_SPAWN_EGG: "pahandaja sünnimuna"
+  VILLAGER_SPAWN_EGG: "külaelaniku sünnimuna"
+  VINDICATOR_SPAWN_EGG: "õigustaja sünnimuna"
+  WANDERING_TRADER_SPAWN_EGG: "uitava kaupleja sünnimuna"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  WARDEN_SPAWN_EGG: "valvuri sünnimuna"
+  WARPED_FUNGUS_ON_A_STICK: "kentsakas seen pulga otsas"
+  WATER_BUCKET: "veeämber"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  WHEAT: "nisu"
+  WHEAT_SEEDS: "nisuseemned"
+  WHITE_DYE: "valge värvaine"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "sepistusmall"
+  WITCH_SPAWN_EGG: "nõia sünnimuna"
+  WITHER_SKELETON_SPAWN_EGG: "wither-luukere sünnimuna"
+  WITHER_SPAWN_EGG: "witheri sünnimuna"
+  WOLF_SPAWN_EGG: "hundi sünnimuna"
+  WOODEN_AXE: "puitkirves"
+  WOODEN_HOE: "puitkõblas"
+  WOODEN_PICKAXE: "puitkirka"
+  WOODEN_SHOVEL: "puitlabidas"
+  WOODEN_SWORD: "puitmõõk"
+  WRITABLE_BOOK: "raamat ja kirjasulg"
+  WRITTEN_BOOK: "kirjutatud raamat"
+  YELLOW_DYE: "kollane värvaine"
+  ZOGLIN_SPAWN_EGG: "zoglini sünnimuna"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombihobuse sünnimuna"
+  ZOMBIE_SPAWN_EGG: "zombi sünnimuna"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "zombi-külaelaniku sünnimuna"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "zombistunud piglini sünnimuna"
+  CHEST: "olles seljas:"
+  FEET: "olles jalas:"
+  HEAD: "olles peas:"
+  LEGS: "olles säärtel:"
+  MAINHAND: "olles peamises käes:"
+  OFFHAND: "olles teisases käes:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

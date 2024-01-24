@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "ປຸ່ມໄມ້ອາເຄເຊຍ"
+  ACACIA_DOOR: "ປະຕູໄມ້ອາເຄເຊຍ"
+  ACACIA_FENCE: "ຮົ້ວໄມ້ອາເຄເຊຍ"
+  ACACIA_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ອາເຄເຊຍ"
+  ACACIA_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ອາເຄເຊຍ"
+  ACACIA_LEAVES: "ໃບໄມ້ອາເຄເຊຍ"
+  ACACIA_LOG: "ຂອນໄມ້ອາເຄເຊຍ"
+  ACACIA_PLANKS: "ແປ້ນໄມ້ອາເຄເຊຍ"
+  ACACIA_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ອາເຄເຊຍ"
+  ACACIA_SAPLING: "ເບ້ຍອາເຄເຊຍ"
+  ACACIA_SIGN: "ປ້າຍໄມ້ອາເຄເຊຍ"
+  ACACIA_SLAB: "ແຜ່ນໄມ້ອາເຄເຊຍ"
+  ACACIA_STAIRS: "ຄັນໄດໄມ້ອາເຄເຊຍ"
+  ACACIA_TRAPDOOR: "ປະຕູກັບດັກໄມ້ອາເຄເຊຍ"
+  ACACIA_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ອາເຄເຊຍຕິດຝາ"
+  ACACIA_WALL_SIGN: "ປ້າຍໄມ້ອາເຄເຊຍຕິດຝາ"
+  ACACIA_WOOD: "ໄມ້ອາເຄເຊຍ"
+  ACTIVATOR_RAIL: "ລາງຈູດຊະນວນ"
+  AIR: "ອາກາດ"
+  ALLIUM: "ດອກອາວລຽມ"
+  AMETHYST_BLOCK: "ບລ໋ອກອາເມທິສ"
+  AMETHYST_CLUSTER: "ພວງອາເມທິສ"
+  ANCIENT_DEBRIS: "ເສດແຮ່ບູຮານ"
+  ANDESITE: "ຫີນແອນດີໄຊທ໌"
+  ANDESITE_SLAB: "ແຜ່ນຫີນແອນດີໄຊທ໌"
+  ANDESITE_STAIRS: "ຄັນໄດຫີນແອນດີໄຊທ໌"
+  ANDESITE_WALL: "ກຳແພງຫີນແອນດີໄຊທ໌"
+  ANVIL: "ທັ່ງ"
+  ATTACHED_MELON_STEM: "ລຳຕົ້ນໝາກໂມແນບຕິດ"
+  ATTACHED_PUMPKIN_STEM: "ລຳຕົ້ນໝາກອຶແນບຕິດ"
+  AZALEA: "ກຸຫຼາບພັນປີ"
+  AZALEA_LEAVES: "ໃບກຸຫຼາບພັນປີ"
+  AZURE_BLUET: "ດອກອາຊົວບລູເອັດ"
+  BAMBOO: "ໄມ້ໄຜ່"
+  BAMBOO_BLOCK: "ບລ໋ອກໄມ້ໄຜ່"
+  BAMBOO_BUTTON: "ປຸ່ມໄມ້ໄຜ່"
+  BAMBOO_DOOR: "ປະຕູໄມ້ໄຜ່"
+  BAMBOO_FENCE: "ຮົ້ວໄມ້ໄຜ່"
+  BAMBOO_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ໄຜ່"
+  BAMBOO_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໄຜ່"
+  BAMBOO_MOSAIC: "ໄມ້ໄຜ່ສານ"
+  BAMBOO_MOSAIC_SLAB: "ແຜ່ນໄມ້ໄຜ່ສານ"
+  BAMBOO_MOSAIC_STAIRS: "ຄັນໄດໄມ້ໄຜ່ສານ"
+  BAMBOO_PLANKS: "ແປ້ນໄມ້ໄຜ່"
+  BAMBOO_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ໄຜ່"
+  BAMBOO_SAPLING: "ໜໍ່ໄມ້"
+  BAMBOO_SIGN: "ປ້າຍໄມ້ໄຜ່"
+  BAMBOO_SLAB: "ແຜ່ນໄມ້ໄຜ່"
+  BAMBOO_STAIRS: "ຄັນໄດໄມ້ໄຜ່"
+  BAMBOO_TRAPDOOR: "ປະຕູກັບດັກໄມ້ໄຜ່"
+  BAMBOO_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໄຜ່ຕິດຝາ"
+  BAMBOO_WALL_SIGN: "ປ້າຍໄມ້ໄຜ່ຕິດຝາ"
+  BANNER_BASE_BLACK: "ສີດຳໝົດຜືນ"
+  BANNER_BASE_BLUE: "ສີຟ້າໝົດຜືນ"
+  BANNER_BASE_BROWN: "ສີນ້ຳຕານໝົດຜືນ"
+  BANNER_BASE_CYAN: "ສີຟ້າໃສໝົດຜືນ"
+  BANNER_BASE_GRAY: "ສີເທົາໝົດຜືນ"
+  BANNER_BASE_GREEN: "ສີຂຽວໝົດຜືນ"
+  BANNER_BASE_LIGHT_BLUE: "ສີຟ້າອ່ອນໝົດຜືນ"
+  BANNER_BASE_LIGHT_GRAY: "ສີເທົາອ່ອນໝົດຜືນ"
+  BANNER_BASE_LIME: "ສີຂຽວອ່ອນໝົດຜືນ"
+  BANNER_BASE_MAGENTA: "ສີມ້ວງແດງໝົດຜືນ"
+  BANNER_BASE_ORANGE: "ສີສົ້ມໝົດຜືນ"
+  BANNER_BASE_PINK: "ສີບົວໝົດຜືນ"
+  BANNER_BASE_PURPLE: "ສີມ້ວງໝົດຜືນ"
+  BANNER_BASE_RED: "ສີແດງໝົດຜືນ"
+  BANNER_BASE_WHITE: "ສີຂາວໝົດຜືນ"
+  BANNER_BASE_YELLOW: "ສີເຫຼືອງໝົດຜືນ"
+  BANNER_BORDER_BLACK: "ຂອບສີດຳ"
+  BANNER_BORDER_BLUE: "ຂອບສີຟ້າ"
+  BANNER_BORDER_BROWN: "ຂອບສີນ້ຳຕານ"
+  BANNER_BORDER_CYAN: "ຂອບສີຟ້າໃສ"
+  BANNER_BORDER_GRAY: "ຂອບສີເທົາ"
+  BANNER_BORDER_GREEN: "ຂອບສີຂຽວ"
+  BANNER_BORDER_LIGHT_BLUE: "ຂອບສີຟ້າອ່ອນ"
+  BANNER_BORDER_LIGHT_GRAY: "ຂອບສີເທົາອ່ອນ"
+  BANNER_BORDER_LIME: "ຂອບສີຂຽວອ່ອນ"
+  BANNER_BORDER_MAGENTA: "ຂອບສີມ້ວງແດງ"
+  BANNER_BORDER_ORANGE: "ຂອບສີສົ້ມ"
+  BANNER_BORDER_PINK: "ຂອບສີບົວ"
+  BANNER_BORDER_PURPLE: "ຂອບສີມ້ວງ"
+  BANNER_BORDER_RED: "ຂອບສີແດງ"
+  BANNER_BORDER_WHITE: "ຂອບສີຂາວ"
+  BANNER_BORDER_YELLOW: "ຂອບສີເຫຼືອງ"
+  BANNER_BRICKS_BLACK: "ລາຍດິນຈີ່ສີດຳ"
+  BANNER_BRICKS_BLUE: "ລາຍດິນຈີ່ສີຟ້າ"
+  BANNER_BRICKS_BROWN: "ລາຍດິນຈີ່ສີນ້ຳຕານ"
+  BANNER_BRICKS_CYAN: "ລາຍດິນຈີ່ສີຟ້າໃສ"
+  BANNER_BRICKS_GRAY: "ລາຍດິນຈີ່ສີເທົາ"
+  BANNER_BRICKS_GREEN: "ລາຍດິນຈີ່ສີຂຽວ"
+  BANNER_BRICKS_LIGHT_BLUE: "ລາຍດິນຈີ່ສີຟ້າອ່ອນ"
+  BANNER_BRICKS_LIGHT_GRAY: "ລາຍດິນຈີ່ສີເທົາອ່ອນ"
+  BANNER_BRICKS_LIME: "ລາຍດິນຈີ່ສີຂຽວອ່ອນ"
+  BANNER_BRICKS_MAGENTA: "ລາຍດິນຈີ່ສີມ້ວງແດງ"
+  BANNER_BRICKS_ORANGE: "ລາຍດິນຈີ່ສີສົ້ມ"
+  BANNER_BRICKS_PINK: "ລາຍດິນຈີ່ສີບົວ"
+  BANNER_BRICKS_PURPLE: "ລາຍດິນຈີ່ສີມ້ວງ"
+  BANNER_BRICKS_RED: "ລາຍດິນຈີ່ສີແດງ"
+  BANNER_BRICKS_WHITE: "ລາຍດິນຈີ່ສີຂາວ"
+  BANNER_BRICKS_YELLOW: "ລາຍດິນຈີ່ສີເຫຼືອງ"
+  BANNER_CIRCLE_BLACK: "ວົງມົນສີດຳ"
+  BANNER_CIRCLE_BLUE: "ວົງມົນສີຟ້າ"
+  BANNER_CIRCLE_BROWN: "ວົງມົນສີນ້ຳຕານ"
+  BANNER_CIRCLE_CYAN: "ວົງມົນສີຟ້າໃສ"
+  BANNER_CIRCLE_GRAY: "ວົງມົນສີເທົາ"
+  BANNER_CIRCLE_GREEN: "ວົງມົນສີຂຽວ"
+  BANNER_CIRCLE_LIGHT_BLUE: "ວົງມົນສີຟ້າອ່ອນ"
+  BANNER_CIRCLE_LIGHT_GRAY: "ວົງມົນສີເທົາອ່ອນ"
+  BANNER_CIRCLE_LIME: "ວົງມົນສີຂຽວອ່ອນ"
+  BANNER_CIRCLE_MAGENTA: "ວົງມົນສີມ້ວງແດງ"
+  BANNER_CIRCLE_ORANGE: "ວົງມົນສີສົ້ມ"
+  BANNER_CIRCLE_PINK: "ວົງມົນສີບົວ"
+  BANNER_CIRCLE_PURPLE: "ວົງມົນສີມ້ວງ"
+  BANNER_CIRCLE_RED: "ວົງມົນສີແດງ"
+  BANNER_CIRCLE_WHITE: "ວົງມົນສີຂາວ"
+  BANNER_CIRCLE_YELLOW: "ວົງມົນສີເຫຼືອງ"
+  BANNER_CREEPER_BLACK: "ກາສັນຍະລັກຄຣີບເປີສີດຳ"
+  BANNER_CREEPER_BLUE: "ກາສັນຍະລັກຄຣີບເປີສີຟ້າ"
+  BANNER_CREEPER_BROWN: "ກາສັນຍະລັກຄຣີບເປີສີນ້ຳຕານ"
+  BANNER_CREEPER_CYAN: "ກາສັນຍະລັກຄຣີບເປີສີຟ້າໃສ"
+  BANNER_CREEPER_GRAY: "ກາສັນຍະລັກຄຣີບເປີສີເທົາ"
+  BANNER_CREEPER_GREEN: "ກາສັນຍະລັກຄຣີບເປີສີຂຽວ"
+  BANNER_CREEPER_LIGHT_BLUE: "ກາສັນຍະລັກຄຣີບເປີສີຟ້າອ່ອນ"
+  BANNER_CREEPER_LIGHT_GRAY: "ກາສັນຍະລັກຄຣີບເປີສີເທົາອ່ອນ"
+  BANNER_CREEPER_LIME: "ກາສັນຍະລັກຄຣີບເປີສີຂຽວອ່ອນ"
+  BANNER_CREEPER_MAGENTA: "ກາສັນຍະລັກຄຣີບເປີສີມ້ວງແດງ"
+  BANNER_CREEPER_ORANGE: "ກາສັນຍະລັກຄຣີບເປີສີສົ້ມ"
+  BANNER_CREEPER_PINK: "ກາສັນຍະລັກຄຣີບເປີສີບົວ"
+  BANNER_CREEPER_PURPLE: "ກາສັນຍະລັກຄຣີບເປີສີມ້ວງ"
+  BANNER_CREEPER_RED: "ກາສັນຍະລັກຄຣີບເປີສີແດງ"
+  BANNER_CREEPER_WHITE: "ກາສັນຍະລັກຄຣີບເປີສີຂາວ"
+  BANNER_CREEPER_YELLOW: "ກາສັນຍະລັກຄຣີບເປີສີເຫຼືອງ"
+  BANNER_CROSS_BLACK: "ໂຕເອັກສີດຳ"
+  BANNER_CROSS_BLUE: "ໂຕເອັກສີຟ້າ"
+  BANNER_CROSS_BROWN: "ໂຕເອັກສີນ້ຳຕານ"
+  BANNER_CROSS_CYAN: "ໂຕເອັກສີຟ້າໃສ"
+  BANNER_CROSS_GRAY: "ໂຕເອັກສີເທົາ"
+  BANNER_CROSS_GREEN: "ໂຕເອັກສີຂຽວ"
+  BANNER_CROSS_LIGHT_BLUE: "ໂຕເອັກສີຟ້າອ່ອນ"
+  BANNER_CROSS_LIGHT_GRAY: "ໂຕເອັກສີເທົາອ່ອນ"
+  BANNER_CROSS_LIME: "ໂຕເອັກສີຂຽວອ່ອນ"
+  BANNER_CROSS_MAGENTA: "ໂຕເອັກສີມ້ວງແດງ"
+  BANNER_CROSS_ORANGE: "ໂຕເອັກສີສົ້ມ"
+  BANNER_CROSS_PINK: "ໂຕເອັກສີບົວ"
+  BANNER_CROSS_PURPLE: "ໂຕເອັກສີມ້ວງ"
+  BANNER_CROSS_RED: "ໂຕເອັກສີແດງ"
+  BANNER_CROSS_WHITE: "ໂຕເອັກສີຂາວ"
+  BANNER_CROSS_YELLOW: "ໂຕເອັກສີເຫຼືອງ"
+  BANNER_CURLY_BORDER_BLACK: "ຂອບຮອຍຫຍໍ່ສີດຳ"
+  BANNER_CURLY_BORDER_BLUE: "ຂອບຮອຍຫຍໍ່ສີຟ້າ"
+  BANNER_CURLY_BORDER_BROWN: "ຂອບຮອຍຫຍໍ່ສີນ້ຳຕານ"
+  BANNER_CURLY_BORDER_CYAN: "ຂອບຮອຍຫຍໍ່ສີຟ້າໃສ"
+  BANNER_CURLY_BORDER_GRAY: "ຂອບຮອຍຫຍໍ່ສີເທົາ"
+  BANNER_CURLY_BORDER_GREEN: "ຂອບຮອຍຫຍໍ່ສີຂຽວ"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "ຂອບຮອຍຫຍໍ່ສີຟ້າອ່ອນ"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "ຂອບຮອຍຫຍໍ່ສີເທົາອ່ອນ"
+  BANNER_CURLY_BORDER_LIME: "ຂອບຮອຍຫຍໍ່ສີຂຽວອ່ອນ"
+  BANNER_CURLY_BORDER_MAGENTA: "ຂອບຮອຍຫຍໍ່ສີມ້ວງແດງ"
+  BANNER_CURLY_BORDER_ORANGE: "ຂອບຮອຍຫຍໍ່ສີສົ້ມ"
+  BANNER_CURLY_BORDER_PINK: "ຂອບຮອຍຫຍໍ່ສີບົວ"
+  BANNER_CURLY_BORDER_PURPLE: "ຂອບຮອຍຫຍໍ່ສີມ້ວງ"
+  BANNER_CURLY_BORDER_RED: "ຂອບຮອຍຫຍໍ່ສີແດງ"
+  BANNER_CURLY_BORDER_WHITE: "ຂອບຮອຍຫຍໍ່ສີຂາວ"
+  BANNER_CURLY_BORDER_YELLOW: "ຂອບຮອຍຫຍໍ່ສີເຫຼືອງ"
+  BANNER_DIAGONAL_LEFT_BLACK: "ມຸມຂວາງຊ້າຍສີດຳ"
+  BANNER_DIAGONAL_LEFT_BLUE: "ມຸມຂວາງຊ້າຍສີຟ້າ"
+  BANNER_DIAGONAL_LEFT_BROWN: "ມຸມຂວາງຊ້າຍສີນ້ຳຕານ"
+  BANNER_DIAGONAL_LEFT_CYAN: "ມຸມຂວາງຊ້າຍສີຟ້າໃສ"
+  BANNER_DIAGONAL_LEFT_GRAY: "ມຸມຂວາງຊ້າຍສີເທົາ"
+  BANNER_DIAGONAL_LEFT_GREEN: "ມຸມຂວາງຊ້າຍສີຂຽວ"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "ມຸມຂວາງຊ້າຍສີຟ້າອ່ອນ"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "ມຸມຂວາງຊ້າຍສີເທົາອ່ອນ"
+  BANNER_DIAGONAL_LEFT_LIME: "ມຸມຂວາງຊ້າຍສີຂຽວອ່ອນ"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "ມຸມຂວາງຊ້າຍສີມ້ວງແດງ"
+  BANNER_DIAGONAL_LEFT_ORANGE: "ມຸມຂວາງຊ້າຍສີສົ້ມ"
+  BANNER_DIAGONAL_LEFT_PINK: "ມຸມຂວາງຊ້າຍສີບົວ"
+  BANNER_DIAGONAL_LEFT_PURPLE: "ມຸມຂວາງຊ້າຍສີມ້ວງ"
+  BANNER_DIAGONAL_LEFT_RED: "ມຸມຂວາງຊ້າຍສີແດງ"
+  BANNER_DIAGONAL_LEFT_WHITE: "ມຸມຂວາງຊ້າຍສີຂາວ"
+  BANNER_DIAGONAL_LEFT_YELLOW: "ມຸມຂວາງຊ້າຍສີເຫຼືອງ"
+  BANNER_DIAGONAL_RIGHT_BLACK: "ມຸມຂວາງຂວາສີດຳ"
+  BANNER_DIAGONAL_RIGHT_BLUE: "ມຸມຂວາງຂວາສີຟ້າ"
+  BANNER_DIAGONAL_RIGHT_BROWN: "ມຸມຂວາງຂວາສີນ້ຳຕານ"
+  BANNER_DIAGONAL_RIGHT_CYAN: "ມຸມຂວາງຂວາສີຟ້າໃສ"
+  BANNER_DIAGONAL_RIGHT_GRAY: "ມຸມຂວາງຂວາສີເທົາ"
+  BANNER_DIAGONAL_RIGHT_GREEN: "ມຸມຂວາງຂວາສີຂຽວ"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "ມຸມຂວາງຂວາສີຟ້າອ່ອນ"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "ມຸມຂວາງຂວາສີເທົາອ່ອນ"
+  BANNER_DIAGONAL_RIGHT_LIME: "ມຸມຂວາງຂວາສີຂຽວອ່ອນ"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "ມຸມຂວາງຂວາສີມ້ວງແດງ"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "ມຸມຂວາງຂວາສີສົ້ມ"
+  BANNER_DIAGONAL_RIGHT_PINK: "ມຸມຂວາງຂວາສີບົວ"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "ມຸມຂວາງຂວາສີມ້ວງ"
+  BANNER_DIAGONAL_RIGHT_RED: "ມຸມຂວາງຂວາສີແດງ"
+  BANNER_DIAGONAL_RIGHT_WHITE: "ມຸມຂວາງຂວາສີຂາວ"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "ມຸມຂວາງຂວາສີເຫຼືອງ"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "ມຸມຂວາງຊ້າຍລຸ່ມສີດຳ"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "ມຸມຂວາງຊ້າຍລຸ່ມສີຟ້າ"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "ມຸມຂວາງຊ້າຍລຸ່ມສີນ້ຳຕານ"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "ມຸມຂວາງຊ້າຍລຸ່ມສີຟ້າໃສ"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "ມຸມຂວາງຊ້າຍລຸ່ມສີເທົາ"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "ມຸມຂວາງຊ້າຍລຸ່ມສີຂຽວ"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "ມຸມຂວາງຊ້າຍລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "ມຸມຂວາງຊ້າຍລຸ່ມສີເທົາອ່ອນ"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "ມຸມຂວາງຊ້າຍລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "ມຸມຂວາງຊ້າຍລຸ່ມສີມ້ວງແດງ"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "ມຸມຂວາງຊ້າຍລຸ່ມສີສົ້ມ"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "ມຸມຂວາງຊ້າຍລຸ່ມສີບົວ"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "ມຸມຂວາງຊ້າຍລຸ່ມສີມ້ວງ"
+  BANNER_DIAGONAL_UP_LEFT_RED: "ມຸມຂວາງຊ້າຍລຸ່ມສີແດງ"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "ມຸມຂວາງຊ້າຍລຸ່ມສີຂາວ"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "ມຸມຂວາງຊ້າຍລຸ່ມສີເຫຼືອງ"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "ມຸມຂວາງຂວາລຸ່ມສີດຳ"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "ມຸມຂວາງຂວາລຸ່ມສີຟ້າ"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "ມຸມຂວາງຂວາລຸ່ມສີນ້ຳຕານ"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "ມຸມຂວາງຂວາລຸ່ມສີຟ້າໃສ"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "ມຸມຂວາງຂວາລຸ່ມສີເທົາ"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "ມຸມຂວາງຂວາລຸ່ມສີຂຽວ"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "ມຸມຂວາງຂວາລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "ມຸມຂວາງຂວາລຸ່ມສີເທົາອ່ອນ"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "ມຸມຂວາງຂວາລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "ມຸມຂວາງຂວາລຸ່ມສີມ້ວງແດງ"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "ມຸມຂວາງຂວາລຸ່ມສີສົ້ມ"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "ມຸມຂວາງຂວາລຸ່ມສີບົວ"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "ມຸມຂວາງຂວາລຸ່ມສີມ້ວງ"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "ມຸມຂວາງຂວາລຸ່ມສີແດງ"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "ມຸມຂວາງຂວາລຸ່ມສີຂາວ"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "ມຸມຂວາງຂວາລຸ່ມສີເຫຼືອງ"
+  BANNER_FLOWER_BLACK: "ກາສັນຍະລັກດອກໄມ້ສີດຳ"
+  BANNER_FLOWER_BLUE: "ກາສັນຍະລັກດອກໄມ້ສີຟ້າ"
+  BANNER_FLOWER_BROWN: "ກາສັນຍະລັກດອກໄມ້ສີນ້ຳຕານ"
+  BANNER_FLOWER_CYAN: "ກາສັນຍະລັກດອກໄມ້ສີຟ້າໃສ"
+  BANNER_FLOWER_GRAY: "ກາສັນຍະລັກດອກໄມ້ສີເທົາ"
+  BANNER_FLOWER_GREEN: "ກາສັນຍະລັກດອກໄມ້ສີຂຽວ"
+  BANNER_FLOWER_LIGHT_BLUE: "ກາສັນຍະລັກດອກໄມ້ສີຟ້າອ່ອນ"
+  BANNER_FLOWER_LIGHT_GRAY: "ກາສັນຍະລັກດອກໄມ້ສີເທົາອ່ອນ"
+  BANNER_FLOWER_LIME: "ກາສັນຍະລັກດອກໄມ້ສີຂຽວອ່ອນ"
+  BANNER_FLOWER_MAGENTA: "ກາສັນຍະລັກດອກໄມ້ສີມ້ວງແດງ"
+  BANNER_FLOWER_ORANGE: "ກາສັນຍະລັກດອກໄມ້ສີສົ້ມ"
+  BANNER_FLOWER_PINK: "ກາສັນຍະລັກດອກໄມ້ສີບົວ"
+  BANNER_FLOWER_PURPLE: "ກາສັນຍະລັກດອກໄມ້ສີມ້ວງ"
+  BANNER_FLOWER_RED: "ກາສັນຍະລັກດອກໄມ້ສີແດງ"
+  BANNER_FLOWER_WHITE: "ກາສັນຍະລັກດອກໄມ້ສີຂາວ"
+  BANNER_FLOWER_YELLOW: "ກາສັນຍະລັກດອກໄມ້ສີເຫຼືອງ"
+  BANNER_GLOBE_BLACK: "ໜ່ວຍໂລກສີດຳ"
+  BANNER_GLOBE_BLUE: "ໜ່ວຍໂລກສີຟ້າ"
+  BANNER_GLOBE_BROWN: "ໜ່ວຍໂລກສີນ້ຳຕານ"
+  BANNER_GLOBE_CYAN: "ໜ່ວຍໂລກສີຟ້າໃສ"
+  BANNER_GLOBE_GRAY: "ໜ່ວຍໂລກສີເທົາ"
+  BANNER_GLOBE_GREEN: "ໜ່ວຍໂລກສີຂຽວ"
+  BANNER_GLOBE_LIGHT_BLUE: "ໜ່ວຍໂລກສີຟ້າອ່ອນ"
+  BANNER_GLOBE_LIGHT_GRAY: "ໜ່ວຍໂລກສີເທົາອ່ອນ"
+  BANNER_GLOBE_LIME: "ໜ່ວຍໂລກສີຂຽວອ່ອນ"
+  BANNER_GLOBE_MAGENTA: "ໜ່ວຍໂລກສີມ້ວງແດງ"
+  BANNER_GLOBE_ORANGE: "ໜ່ວຍໂລກສີສົ້ມ"
+  BANNER_GLOBE_PINK: "ໜ່ວຍໂລກສີບົວ"
+  BANNER_GLOBE_PURPLE: "ໜ່ວຍໂລກສີມ້ວງ"
+  BANNER_GLOBE_RED: "ໜ່ວຍໂລກສີແດງ"
+  BANNER_GLOBE_WHITE: "ໜ່ວຍໂລກສີຂາວ"
+  BANNER_GLOBE_YELLOW: "ໜ່ວຍໂລກສີເຫຼືອງ"
+  BANNER_GRADIENT_BLACK: "ໄລ່ລຳດັບສີດຳ"
+  BANNER_GRADIENT_BLUE: "ໄລ່ລຳດັບສີຟ້າ"
+  BANNER_GRADIENT_BROWN: "ໄລ່ລຳດັບສີນ້ຳຕານ"
+  BANNER_GRADIENT_CYAN: "ໄລ່ລຳດັບສີຟ້າໃສ"
+  BANNER_GRADIENT_GRAY: "ໄລ່ລຳດັບສີເທົາ"
+  BANNER_GRADIENT_GREEN: "ໄລ່ລຳດັບສີຂຽວ"
+  BANNER_GRADIENT_LIGHT_BLUE: "ໄລ່ລຳດັບສີຟ້າອ່ອນ"
+  BANNER_GRADIENT_LIGHT_GRAY: "ໄລ່ລຳດັບສີເທົາອ່ອນ"
+  BANNER_GRADIENT_LIME: "ໄລ່ລຳດັບສີຂຽວອ່ອນ"
+  BANNER_GRADIENT_MAGENTA: "ໄລ່ລຳດັບສີມ້ວງແດງ"
+  BANNER_GRADIENT_ORANGE: "ໄລ່ລຳດັບສີສົ້ມ"
+  BANNER_GRADIENT_PINK: "ໄລ່ລຳດັບສີບົວ"
+  BANNER_GRADIENT_PURPLE: "ໄລ່ລຳດັບສີມ້ວງ"
+  BANNER_GRADIENT_RED: "ໄລ່ລຳດັບສີແດງ"
+  BANNER_GRADIENT_WHITE: "ໄລ່ລຳດັບສີຂາວ"
+  BANNER_GRADIENT_YELLOW: "ໄລ່ລຳດັບສີເຫຼືອງ"
+  BANNER_GRADIENT_UP_BLACK: "ໄລ່ລຳດັບຈາກພື້ນສີດຳ"
+  BANNER_GRADIENT_UP_BLUE: "ໄລ່ລຳດັບຈາກພື້ນສີຟ້າ"
+  BANNER_GRADIENT_UP_BROWN: "ໄລ່ລຳດັບຈາກພື້ນສີນ້ຳຕານ"
+  BANNER_GRADIENT_UP_CYAN: "ໄລ່ລຳດັບຈາກພື້ນສີຟ້າໃສ"
+  BANNER_GRADIENT_UP_GRAY: "ໄລ່ລຳດັບຈາກພື້ນສີເທົາ"
+  BANNER_GRADIENT_UP_GREEN: "ໄລ່ລຳດັບຈາກພື້ນສີຂຽວ"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "ໄລ່ລຳດັບຈາກພື້ນສີຟ້າອ່ອນ"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "ໄລ່ລຳດັບຈາກພື້ນສີເທົາອ່ອນ"
+  BANNER_GRADIENT_UP_LIME: "ໄລ່ລຳດັບຈາກພື້ນສີຂຽວອ່ອນ"
+  BANNER_GRADIENT_UP_MAGENTA: "ໄລ່ລຳດັບຈາກພື້ນສີມ້ວງແດງ"
+  BANNER_GRADIENT_UP_ORANGE: "ໄລ່ລຳດັບຈາກພື້ນສີສົ້ມ"
+  BANNER_GRADIENT_UP_PINK: "ໄລ່ລຳດັບຈາກພື້ນສີບົວ"
+  BANNER_GRADIENT_UP_PURPLE: "ໄລ່ລຳດັບຈາກພື້ນສີມ້ວງ"
+  BANNER_GRADIENT_UP_RED: "ໄລ່ລຳດັບຈາກພື້ນສີແດງ"
+  BANNER_GRADIENT_UP_WHITE: "ໄລ່ລຳດັບຈາກພື້ນສີຂາວ"
+  BANNER_GRADIENT_UP_YELLOW: "ໄລ່ລຳດັບຈາກພື້ນສີເຫຼືອງ"
+  BANNER_HALF_HORIZONTAL_BLACK: "ເຄິ່ງເທິງສີດຳ"
+  BANNER_HALF_HORIZONTAL_BLUE: "ເຄິ່ງເທິງສີຟ້າ"
+  BANNER_HALF_HORIZONTAL_BROWN: "ເຄິ່ງເທິງສີນ້ຳຕານ"
+  BANNER_HALF_HORIZONTAL_CYAN: "ເຄິ່ງເທິງສີຟ້າໃສ"
+  BANNER_HALF_HORIZONTAL_GRAY: "ເຄິ່ງເທິງສີເທົາ"
+  BANNER_HALF_HORIZONTAL_GREEN: "ເຄິ່ງເທິງສີຂຽວ"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "ເຄິ່ງເທິງສີຟ້າອ່ອນ"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "ເຄິ່ງເທິງສີເທົາອ່ອນ"
+  BANNER_HALF_HORIZONTAL_LIME: "ເຄິ່ງເທິງສີຂຽວອ່ອນ"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "ເຄິ່ງເທິງສີມ້ວງແດງ"
+  BANNER_HALF_HORIZONTAL_ORANGE: "ເຄິ່ງເທິງສີສົ້ມ"
+  BANNER_HALF_HORIZONTAL_PINK: "ເຄິ່ງເທິງສີບົວ"
+  BANNER_HALF_HORIZONTAL_PURPLE: "ເຄິ່ງເທິງສີມ້ວງ"
+  BANNER_HALF_HORIZONTAL_RED: "ເຄິ່ງເທິງສີແດງ"
+  BANNER_HALF_HORIZONTAL_WHITE: "ເຄິ່ງເທິງສີຂາວ"
+  BANNER_HALF_HORIZONTAL_YELLOW: "ເຄິ່ງເທິງສີເຫຼືອງ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "ເຄິ່ງລຸ່ມສີດຳ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "ເຄິ່ງລຸ່ມສີຟ້າ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "ເຄິ່ງລຸ່ມສີນ້ຳຕານ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "ເຄິ່ງລຸ່ມສີຟ້າໃສ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "ເຄິ່ງລຸ່ມສີເທົາ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "ເຄິ່ງລຸ່ມສີຂຽວ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "ເຄິ່ງລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "ເຄິ່ງລຸ່ມສີເທົາອ່ອນ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "ເຄິ່ງລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "ເຄິ່ງລຸ່ມສີມ້ວງແດງ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "ເຄິ່ງລຸ່ມສີສົ້ມ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "ເຄິ່ງລຸ່ມສີບົວ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "ເຄິ່ງລຸ່ມສີມ້ວງ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "ເຄິ່ງລຸ່ມສີແດງ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "ເຄິ່ງລຸ່ມສີຂາວ"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "ເຄິ່ງລຸ່ມສີເຫຼືອງ"
+  BANNER_HALF_VERTICAL_BLACK: "ເຄິ່ງຊ້າຍສີດຳ"
+  BANNER_HALF_VERTICAL_BLUE: "ເຄິ່ງຊ້າຍສີຟ້າ"
+  BANNER_HALF_VERTICAL_BROWN: "ເຄິ່ງຊ້າຍສີນ້ຳຕານ"
+  BANNER_HALF_VERTICAL_CYAN: "ເຄິ່ງຊ້າຍສີຟ້າໃສ"
+  BANNER_HALF_VERTICAL_GRAY: "ເຄິ່ງຊ້າຍສີເທົາ"
+  BANNER_HALF_VERTICAL_GREEN: "ເຄິ່ງຊ້າຍສີຂຽວ"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "ເຄິ່ງຊ້າຍສີຟ້າອ່ອນ"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "ເຄິ່ງຊ້າຍສີເທົາອ່ອນ"
+  BANNER_HALF_VERTICAL_LIME: "ເຄິ່ງຊ້າຍສີຂຽວອ່ອນ"
+  BANNER_HALF_VERTICAL_MAGENTA: "ເຄິ່ງຊ້າຍສີມ້ວງແດງ"
+  BANNER_HALF_VERTICAL_ORANGE: "ເຄິ່ງຊ້າຍສີສົ້ມ"
+  BANNER_HALF_VERTICAL_PINK: "ເຄິ່ງຊ້າຍສີບົວ"
+  BANNER_HALF_VERTICAL_PURPLE: "ເຄິ່ງຊ້າຍສີມ້ວງ"
+  BANNER_HALF_VERTICAL_RED: "ເຄິ່ງຊ້າຍສີແດງ"
+  BANNER_HALF_VERTICAL_WHITE: "ເຄິ່ງຊ້າຍສີຂາວ"
+  BANNER_HALF_VERTICAL_YELLOW: "ເຄິ່ງຊ້າຍສີເຫຼືອງ"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "ເຄິ່ງຂວາສີດຳ"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "ເຄິ່ງຂວາສີຟ້າ"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "ເຄິ່ງຂວາສີນ້ຳຕານ"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "ເຄິ່ງຂວາສີຟ້າໃສ"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "ເຄິ່ງຂວາສີເທົາ"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "ເຄິ່ງຂວາສີຂຽວ"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "ເຄິ່ງຂວາສີຟ້າອ່ອນ"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "ເຄິ່ງຂວາສີເທົາອ່ອນ"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "ເຄິ່ງຂວາສີຂຽວອ່ອນ"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "ເຄິ່ງຂວາສີມ້ວງແດງ"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "ເຄິ່ງຂວາສີສົ້ມ"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "ເຄິ່ງຂວາສີບົວ"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "ເຄິ່ງຂວາສີມ້ວງ"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "ເຄິ່ງຂວາສີແດງ"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "ເຄິ່ງຂວາສີຂາວ"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "ເຄິ່ງຂວາສີເຫຼືອງ"
+  BANNER_MOJANG_BLACK: "ໂມຈາງສີດຳ"
+  BANNER_MOJANG_BLUE: "ໂມຈາງສີຟ້າ"
+  BANNER_MOJANG_BROWN: "ໂມຈາງສີນ້ຳຕານ"
+  BANNER_MOJANG_CYAN: "ໂມຈາງສີຟ້າໃສ"
+  BANNER_MOJANG_GRAY: "ໂມຈາງສີເທົາ"
+  BANNER_MOJANG_GREEN: "ໂມຈາງສີຂຽວ"
+  BANNER_MOJANG_LIGHT_BLUE: "ໂມຈາງສີຟ້າອ່ອນ"
+  BANNER_MOJANG_LIGHT_GRAY: "ໂມຈາງສີເທົາອ່ອນ"
+  BANNER_MOJANG_LIME: "ໂມຈາງສີຂຽວອ່ອນ"
+  BANNER_MOJANG_MAGENTA: "ໂມຈາງສີມ້ວງແດງ"
+  BANNER_MOJANG_ORANGE: "ໂມຈາງສີສົ້ມ"
+  BANNER_MOJANG_PINK: "ໂມຈາງສີບົວ"
+  BANNER_MOJANG_PURPLE: "ໂມຈາງສີມ້ວງ"
+  BANNER_MOJANG_RED: "ໂມຈາງສີແດງ"
+  BANNER_MOJANG_WHITE: "ໂມຈາງສີຂາວ"
+  BANNER_MOJANG_YELLOW: "ໂມຈາງສີເຫຼືອງ"
+  BANNER_PIGLIN_BLACK: "ດັງໝູສີດຳ"
+  BANNER_PIGLIN_BLUE: "ດັງໝູສີຟ້າ"
+  BANNER_PIGLIN_BROWN: "ດັງໝູສີນ້ຳຕານ"
+  BANNER_PIGLIN_CYAN: "ດັງໝູສີຟ້າໃສ"
+  BANNER_PIGLIN_GRAY: "ດັງໝູສີເທົາ"
+  BANNER_PIGLIN_GREEN: "ດັງໝູສີຂຽວ"
+  BANNER_PIGLIN_LIGHT_BLUE: "ດັງໝູສີຟ້າອ່ອນ"
+  BANNER_PIGLIN_LIGHT_GRAY: "ດັງໝູສີເທົາອ່ອນ"
+  BANNER_PIGLIN_LIME: "ດັງໝູສີຂຽວອ່ອນ"
+  BANNER_PIGLIN_MAGENTA: "ດັງໝູສີມ້ວງແດງ"
+  BANNER_PIGLIN_ORANGE: "ດັງໝູສີສົ້ມ"
+  BANNER_PIGLIN_PINK: "ດັງໝູສີບົວ"
+  BANNER_PIGLIN_PURPLE: "ດັງໝູສີມ້ວງ"
+  BANNER_PIGLIN_RED: "ດັງໝູສີແດງ"
+  BANNER_PIGLIN_WHITE: "ດັງໝູສີຂາວ"
+  BANNER_PIGLIN_YELLOW: "ດັງໝູສີເຫຼືອງ"
+  BANNER_RHOMBUS_BLACK: "ດອກຈັນຕັດສີດຳ"
+  BANNER_RHOMBUS_BLUE: "ດອກຈັນຕັດສີຟ້າ"
+  BANNER_RHOMBUS_BROWN: "ດອກຈັນຕັດສີນ້ຳຕານ"
+  BANNER_RHOMBUS_CYAN: "ດອກຈັນຕັດສີຟ້າໃສ"
+  BANNER_RHOMBUS_GRAY: "ດອກຈັນຕັດສີເທົາ"
+  BANNER_RHOMBUS_GREEN: "ດອກຈັນຕັດສີຂຽວ"
+  BANNER_RHOMBUS_LIGHT_BLUE: "ດອກຈັນຕັດສີຟ້າອ່ອນ"
+  BANNER_RHOMBUS_LIGHT_GRAY: "ດອກຈັນຕັດສີເທົາອ່ອນ"
+  BANNER_RHOMBUS_LIME: "ດອກຈັນຕັດສີຂຽວອ່ອນ"
+  BANNER_RHOMBUS_MAGENTA: "ດອກຈັນຕັດສີມ້ວງແດງ"
+  BANNER_RHOMBUS_ORANGE: "ດອກຈັນຕັດສີສົ້ມ"
+  BANNER_RHOMBUS_PINK: "ດອກຈັນຕັດສີບົວ"
+  BANNER_RHOMBUS_PURPLE: "ດອກຈັນຕັດສີມ້ວງ"
+  BANNER_RHOMBUS_RED: "ດອກຈັນຕັດສີແດງ"
+  BANNER_RHOMBUS_WHITE: "ດອກຈັນຕັດສີຂາວ"
+  BANNER_RHOMBUS_YELLOW: "ດອກຈັນຕັດສີເຫຼືອງ"
+  BANNER_SKULL_BLACK: "ກາສັນຍະລັກຫົວກະໂຫຼກສີດຳ"
+  BANNER_SKULL_BLUE: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຟ້າ"
+  BANNER_SKULL_BROWN: "ກາສັນຍະລັກຫົວກະໂຫຼກສີນ້ຳຕານ"
+  BANNER_SKULL_CYAN: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຟ້າໃສ"
+  BANNER_SKULL_GRAY: "ກາສັນຍະລັກຫົວກະໂຫຼກສີເທົາ"
+  BANNER_SKULL_GREEN: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຂຽວ"
+  BANNER_SKULL_LIGHT_BLUE: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຟ້າອ່ອນ"
+  BANNER_SKULL_LIGHT_GRAY: "ກາສັນຍະລັກຫົວກະໂຫຼກສີເທົາອ່ອນ"
+  BANNER_SKULL_LIME: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຂຽວອ່ອນ"
+  BANNER_SKULL_MAGENTA: "ກາສັນຍະລັກຫົວກະໂຫຼກສີມ້ວງແດງ"
+  BANNER_SKULL_ORANGE: "ກາສັນຍະລັກຫົວກະໂຫຼກສີສົ້ມ"
+  BANNER_SKULL_PINK: "ກາສັນຍະລັກຫົວກະໂຫຼກສີບົວ"
+  BANNER_SKULL_PURPLE: "ກາສັນຍະລັກຫົວກະໂຫຼກສີມ້ວງ"
+  BANNER_SKULL_RED: "ກາສັນຍະລັກຫົວກະໂຫຼກສີແດງ"
+  BANNER_SKULL_WHITE: "ກາສັນຍະລັກຫົວກະໂຫຼກສີຂາວ"
+  BANNER_SKULL_YELLOW: "ກາສັນຍະລັກຫົວກະໂຫຼກສີເຫຼືອງ"
+  BANNER_SMALL_STRIPES_BLACK: "ຮອຍຕັ້ງສີດຳ"
+  BANNER_SMALL_STRIPES_BLUE: "ຮອຍຕັ້ງສີຟ້າ"
+  BANNER_SMALL_STRIPES_BROWN: "ຮອຍຕັ້ງສີນ້ຳຕານ"
+  BANNER_SMALL_STRIPES_CYAN: "ຮອຍຕັ້ງສີຟ້າໃສ"
+  BANNER_SMALL_STRIPES_GRAY: "ຮອຍຕັ້ງສີເທົາ"
+  BANNER_SMALL_STRIPES_GREEN: "ຮອຍຕັ້ງສີຂຽວ"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "ຮອຍຕັ້ງສີຟ້າອ່ອນ"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "ຮອຍຕັ້ງສີເທົາອ່ອນ"
+  BANNER_SMALL_STRIPES_LIME: "ຮອຍຕັ້ງສີຂຽວອ່ອນ"
+  BANNER_SMALL_STRIPES_MAGENTA: "ຮອຍຕັ້ງສີມ້ວງແດງ"
+  BANNER_SMALL_STRIPES_ORANGE: "ຮອຍຕັ້ງສີສົ້ມ"
+  BANNER_SMALL_STRIPES_PINK: "ຮອຍຕັ້ງສີບົວ"
+  BANNER_SMALL_STRIPES_PURPLE: "ຮອຍຕັ້ງສີມ້ວງ"
+  BANNER_SMALL_STRIPES_RED: "ຮອຍຕັ້ງສີແດງ"
+  BANNER_SMALL_STRIPES_WHITE: "ຮອຍຕັ້ງສີຂາວ"
+  BANNER_SMALL_STRIPES_YELLOW: "ຮອຍຕັ້ງສີເຫຼືອງ"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີດຳ"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຟ້າ"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີນ້ຳຕານ"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຟ້າໃສ"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີເທົາ"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຂຽວ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີເທົາອ່ອນ"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີມ້ວງແດງ"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີສົ້ມ"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີບົວ"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີມ້ວງ"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີແດງ"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີຂາວ"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "ສີ່ລ່ຽມຊ້າຍລຸ່ມສີເຫຼືອງ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "ສີ່ລ່ຽມຂວາລຸ່ມສີດຳ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "ສີ່ລ່ຽມຂວາລຸ່ມສີຟ້າ"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "ສີ່ລ່ຽມຂວາລຸ່ມສີນ້ຳຕານ"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "ສີ່ລ່ຽມຂວາລຸ່ມສີຟ້າໃສ"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "ສີ່ລ່ຽມຂວາລຸ່ມສີເທົາ"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "ສີ່ລ່ຽມຂວາລຸ່ມສີຂຽວ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "ສີ່ລ່ຽມຂວາລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "ສີ່ລ່ຽມຂວາລຸ່ມສີເທົາອ່ອນ"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "ສີ່ລ່ຽມຂວາລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "ສີ່ລ່ຽມຂວາລຸ່ມສີມ້ວງແດງ"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "ສີ່ລ່ຽມຂວາລຸ່ມສີສົ້ມ"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "ສີ່ລ່ຽມຂວາລຸ່ມສີບົວ"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "ສີ່ລ່ຽມຂວາລຸ່ມສີມ້ວງ"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "ສີ່ລ່ຽມຂວາລຸ່ມສີແດງ"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "ສີ່ລ່ຽມຂວາລຸ່ມສີຂາວ"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "ສີ່ລ່ຽມຂວາລຸ່ມສີເຫຼືອງ"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "ສີ່ລ່ຽມຊ້າຍເທິງສີດຳ"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "ສີ່ລ່ຽມຊ້າຍເທິງສີຟ້າ"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "ສີ່ລ່ຽມຊ້າຍເທິງສີນ້ຳຕານ"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "ສີ່ລ່ຽມຊ້າຍເທິງສີຟ້າໃສ"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "ສີ່ລ່ຽມຊ້າຍເທິງສີເທົາ"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "ສີ່ລ່ຽມຊ້າຍເທິງສີຂຽວ"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "ສີ່ລ່ຽມຊ້າຍເທິງສີຟ້າອ່ອນ"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "ສີ່ລ່ຽມຊ້າຍເທິງສີເທົາອ່ອນ"
+  BANNER_SQUARE_TOP_LEFT_LIME: "ສີ່ລ່ຽມຊ້າຍເທິງສີຂຽວອ່ອນ"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "ສີ່ລ່ຽມຊ້າຍເທິງສີມ້ວງແດງ"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "ສີ່ລ່ຽມຊ້າຍເທິງສີສົ້ມ"
+  BANNER_SQUARE_TOP_LEFT_PINK: "ສີ່ລ່ຽມຊ້າຍເທິງສີບົວ"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "ສີ່ລ່ຽມຊ້າຍເທິງສີມ້ວງ"
+  BANNER_SQUARE_TOP_LEFT_RED: "ສີ່ລ່ຽມຊ້າຍເທິງສີແດງ"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "ສີ່ລ່ຽມຊ້າຍເທິງສີຂາວ"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "ສີ່ລ່ຽມຊ້າຍເທິງສີເຫຼືອງ"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "ສີ່ລ່ຽມຂວາເທິງສີດຳ"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "ສີ່ລ່ຽມຂວາເທິງສີຟ້າ"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "ສີ່ລ່ຽມຂວາເທິງສີນ້ຳຕານ"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "ສີ່ລ່ຽມຂວາເທິງສີຟ້າໃສ"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "ສີ່ລ່ຽມຂວາເທິງສີເທົາ"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "ສີ່ລ່ຽມຂວາເທິງສີຂຽວ"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "ສີ່ລ່ຽມຂວາເທິງສີຟ້າອ່ອນ"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "ສີ່ລ່ຽມຂວາເທິງສີເທົາອ່ອນ"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "ສີ່ລ່ຽມຂວາເທິງສີຂຽວອ່ອນ"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "ສີ່ລ່ຽມຂວາເທິງສີມ້ວງແດງ"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "ສີ່ລ່ຽມຂວາເທິງສີສົ້ມ"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "ສີ່ລ່ຽມຂວາເທິງສີບົວ"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "ສີ່ລ່ຽມຂວາເທິງສີມ້ວງ"
+  BANNER_SQUARE_TOP_RIGHT_RED: "ສີ່ລ່ຽມຂວາເທິງສີແດງ"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "ສີ່ລ່ຽມຂວາເທິງສີຂາວ"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "ສີ່ລ່ຽມຂວາເທິງສີເຫຼືອງ"
+  BANNER_STRAIGHT_CROSS_BLACK: "ໝາຍບວກສີດຳ"
+  BANNER_STRAIGHT_CROSS_BLUE: "ໝາຍບວກສີຟ້າ"
+  BANNER_STRAIGHT_CROSS_BROWN: "ໝາຍບວກສີນ້ຳຕານ"
+  BANNER_STRAIGHT_CROSS_CYAN: "ໝາຍບວກສີຟ້າໃສ"
+  BANNER_STRAIGHT_CROSS_GRAY: "ໝາຍບວກສີເທົາ"
+  BANNER_STRAIGHT_CROSS_GREEN: "ໝາຍບວກສີຂຽວ"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "ໝາຍບວກສີຟ້າອ່ອນ"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "ໝາຍບວກສີເທົາອ່ອນ"
+  BANNER_STRAIGHT_CROSS_LIME: "ໝາຍບວກສີຂຽວອ່ອນ"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "ໝາຍບວກສີມ້ວງແດງ"
+  BANNER_STRAIGHT_CROSS_ORANGE: "ໝາຍບວກສີສົ້ມ"
+  BANNER_STRAIGHT_CROSS_PINK: "ໝາຍບວກສີບົວ"
+  BANNER_STRAIGHT_CROSS_PURPLE: "ໝາຍບວກສີມ້ວງ"
+  BANNER_STRAIGHT_CROSS_RED: "ໝາຍບວກສີແດງ"
+  BANNER_STRAIGHT_CROSS_WHITE: "ໝາຍບວກສີຂາວ"
+  BANNER_STRAIGHT_CROSS_YELLOW: "ໝາຍບວກສີເຫຼືອງ"
+  BANNER_STRIPE_BOTTOM_BLACK: "ພື້ນສີດຳ"
+  BANNER_STRIPE_BOTTOM_BLUE: "ພື້ນສີຟ້າ"
+  BANNER_STRIPE_BOTTOM_BROWN: "ພື້ນສີນ້ຳຕານ"
+  BANNER_STRIPE_BOTTOM_CYAN: "ພື້ນສີຟ້າໃສ"
+  BANNER_STRIPE_BOTTOM_GRAY: "ພື້ນສີເທົາ"
+  BANNER_STRIPE_BOTTOM_GREEN: "ພື້ນສີຂຽວ"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "ພື້ນສີຟ້າອ່ອນ"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "ພື້ນສີເທົາອ່ອນ"
+  BANNER_STRIPE_BOTTOM_LIME: "ພື້ນສີຂຽວອ່ອນ"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "ພື້ນສີມ້ວງແດງ"
+  BANNER_STRIPE_BOTTOM_ORANGE: "ພື້ນສີສົ້ມ"
+  BANNER_STRIPE_BOTTOM_PINK: "ພື້ນສີບົວ"
+  BANNER_STRIPE_BOTTOM_PURPLE: "ພື້ນສີມ້ວງ"
+  BANNER_STRIPE_BOTTOM_RED: "ພື້ນສີແດງ"
+  BANNER_STRIPE_BOTTOM_WHITE: "ພື້ນສີຂາວ"
+  BANNER_STRIPE_BOTTOM_YELLOW: "ພື້ນສີເຫຼືອງ"
+  BANNER_STRIPE_CENTER_BLACK: "ຂີດຊື່ກາງສີດຳ"
+  BANNER_STRIPE_CENTER_BLUE: "ຂີດຊື່ກາງສີຟ້າ"
+  BANNER_STRIPE_CENTER_BROWN: "ຂີດຊື່ກາງສີນ້ຳຕານ"
+  BANNER_STRIPE_CENTER_CYAN: "ຂີດຊື່ກາງສີຟ້າໃສ"
+  BANNER_STRIPE_CENTER_GRAY: "ຂີດຊື່ກາງສີເທົາ"
+  BANNER_STRIPE_CENTER_GREEN: "ຂີດຊື່ກາງສີຂຽວ"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "ຂີດຊື່ກາງສີຟ້າອ່ອນ"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "ຂີດຊື່ກາງສີເທົາອ່ອນ"
+  BANNER_STRIPE_CENTER_LIME: "ຂີດຊື່ກາງສີຂຽວອ່ອນ"
+  BANNER_STRIPE_CENTER_MAGENTA: "ຂີດຊື່ກາງສີມ້ວງແດງ"
+  BANNER_STRIPE_CENTER_ORANGE: "ຂີດຊື່ກາງສີສົ້ມ"
+  BANNER_STRIPE_CENTER_PINK: "ຂີດຊື່ກາງສີບົວ"
+  BANNER_STRIPE_CENTER_PURPLE: "ຂີດຊື່ກາງສີມ້ວງ"
+  BANNER_STRIPE_CENTER_RED: "ຂີດຊື່ກາງສີແດງ"
+  BANNER_STRIPE_CENTER_WHITE: "ຂີດຊື່ກາງສີຂາວ"
+  BANNER_STRIPE_CENTER_YELLOW: "ຂີດຊື່ກາງສີເຫຼືອງ"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "ຂີດຂວາງມຸມຊ້າຍສີດຳ"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "ຂີດຂວາງມຸມຊ້າຍສີຟ້າ"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "ຂີດຂວາງມຸມຊ້າຍສີນ້ຳຕານ"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "ຂີດຂວາງມຸມຊ້າຍສີຟ້າໃສ"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "ຂີດຂວາງມຸມຊ້າຍສີເທົາ"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "ຂີດຂວາງມຸມຊ້າຍສີຂຽວ"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "ຂີດຂວາງມຸມຊ້າຍສີຟ້າອ່ອນ"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "ຂີດຂວາງມຸມຊ້າຍສີເທົາອ່ອນ"
+  BANNER_STRIPE_DOWNLEFT_LIME: "ຂີດຂວາງມຸມຊ້າຍສີຂຽວອ່ອນ"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "ຂີດຂວາງມຸມຊ້າຍສີມ້ວງແດງ"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "ຂີດຂວາງມຸມຊ້າຍສີສົ້ມ"
+  BANNER_STRIPE_DOWNLEFT_PINK: "ຂີດຂວາງມຸມຊ້າຍສີບົວ"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "ຂີດຂວາງມຸມຊ້າຍສີມ້ວງ"
+  BANNER_STRIPE_DOWNLEFT_RED: "ຂີດຂວາງມຸມຊ້າຍສີແດງ"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "ຂີດຂວາງມຸມຊ້າຍສີຂາວ"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "ຂີດຂວາງມຸມຊ້າຍສີເຫຼືອງ"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "ຂີດຂວາງມຸມຂວາສີດຳ"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "ຂີດຂວາງມຸມຂວາສີຟ້າ"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "ຂີດຂວາງມຸມຂວາສີນ້ຳຕານ"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "ຂີດຂວາງມຸມຂວາສີຟ້າໃສ"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "ຂີດຂວາງມຸມຂວາສີເທົາ"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "ຂີດຂວາງມຸມຂວາສີຂຽວ"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "ຂີດຂວາງມຸມຂວາສີຟ້າອ່ອນ"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "ຂີດຂວາງມຸມຂວາສີເທົາອ່ອນ"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "ຂີດຂວາງມຸມຂວາສີຂຽວອ່ອນ"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "ຂີດຂວາງມຸມຂວາສີມ້ວງແດງ"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "ຂີດຂວາງມຸມຂວາສີສົ້ມ"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "ຂີດຂວາງມຸມຂວາສີບົວ"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "ຂີດຂວາງມຸມຂວາສີມ້ວງ"
+  BANNER_STRIPE_DOWNRIGHT_RED: "ຂີດຂວາງມຸມຂວາສີແດງ"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "ຂີດຂວາງມຸມຂວາສີຂາວ"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "ຂີດຂວາງມຸມຂວາສີເຫຼືອງ"
+  BANNER_STRIPE_LEFT_BLACK: "ຂີດຊື່ຊ້າຍສີດຳ"
+  BANNER_STRIPE_LEFT_BLUE: "ຂີດຊື່ຊ້າຍສີຟ້າ"
+  BANNER_STRIPE_LEFT_BROWN: "ຂີດຊື່ຊ້າຍສີນ້ຳຕານ"
+  BANNER_STRIPE_LEFT_CYAN: "ຂີດຊື່ຊ້າຍສີຟ້າໃສ"
+  BANNER_STRIPE_LEFT_GRAY: "ຂີດຊື່ຊ້າຍສີເທົາ"
+  BANNER_STRIPE_LEFT_GREEN: "ຂີດຊື່ຊ້າຍສີຂຽວ"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "ຂີດຊື່ຊ້າຍສີຟ້າອ່ອນ"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "ຂີດຊື່ຊ້າຍສີເທົາອ່ອນ"
+  BANNER_STRIPE_LEFT_LIME: "ຂີດຊື່ຊ້າຍສີຂຽວອ່ອນ"
+  BANNER_STRIPE_LEFT_MAGENTA: "ຂີດຊື່ຊ້າຍສີມ້ວງແດງ"
+  BANNER_STRIPE_LEFT_ORANGE: "ຂີດຊື່ຊ້າຍສີສົ້ມ"
+  BANNER_STRIPE_LEFT_PINK: "ຂີດຊື່ຊ້າຍສີບົວ"
+  BANNER_STRIPE_LEFT_PURPLE: "ຂີດຊື່ຊ້າຍສີມ້ວງ"
+  BANNER_STRIPE_LEFT_RED: "ຂີດຊື່ຊ້າຍສີແດງ"
+  BANNER_STRIPE_LEFT_WHITE: "ຂີດຊື່ຊ້າຍສີຂາວ"
+  BANNER_STRIPE_LEFT_YELLOW: "ຂີດຊື່ຊ້າຍສີເຫຼືອງ"
+  BANNER_STRIPE_MIDDLE_BLACK: "ຂີດຂວາງສີດຳ"
+  BANNER_STRIPE_MIDDLE_BLUE: "ຂີດຂວາງສີຟ້າ"
+  BANNER_STRIPE_MIDDLE_BROWN: "ຂີດຂວາງສີນ້ຳຕານ"
+  BANNER_STRIPE_MIDDLE_CYAN: "ຂີດຂວາງສີຟ້າໃສ"
+  BANNER_STRIPE_MIDDLE_GRAY: "ຂີດຂວາງສີເທົາ"
+  BANNER_STRIPE_MIDDLE_GREEN: "ຂີດຂວາງສີຂຽວ"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "ຂີດຂວາງສີຟ້າອ່ອນ"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "ຂີດຂວາງສີເທົາອ່ອນ"
+  BANNER_STRIPE_MIDDLE_LIME: "ຂີດຂວາງສີຂຽວອ່ອນ"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "ຂີດຂວາງສີມ້ວງແດງ"
+  BANNER_STRIPE_MIDDLE_ORANGE: "ຂີດຂວາງສີສົ້ມ"
+  BANNER_STRIPE_MIDDLE_PINK: "ຂີດຂວາງສີບົວ"
+  BANNER_STRIPE_MIDDLE_PURPLE: "ຂີດຂວາງສີມ້ວງ"
+  BANNER_STRIPE_MIDDLE_RED: "ຂີດຂວາງສີແດງ"
+  BANNER_STRIPE_MIDDLE_WHITE: "ຂີດຂວາງສີຂາວ"
+  BANNER_STRIPE_MIDDLE_YELLOW: "ຂີດຂວາງສີເຫຼືອງ"
+  BANNER_STRIPE_RIGHT_BLACK: "ຂີດຊື່ຂວາສີດຳ"
+  BANNER_STRIPE_RIGHT_BLUE: "ຂີດຊື່ຂວາສີຟ້າ"
+  BANNER_STRIPE_RIGHT_BROWN: "ຂີດຊື່ຂວາສີນ້ຳຕານ"
+  BANNER_STRIPE_RIGHT_CYAN: "ຂີດຊື່ຂວາສີຟ້າໃສ"
+  BANNER_STRIPE_RIGHT_GRAY: "ຂີດຊື່ຂວາສີເທົາ"
+  BANNER_STRIPE_RIGHT_GREEN: "ຂີດຊື່ຂວາສີຂຽວ"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "ຂີດຊື່ຂວາສີຟ້າອ່ອນ"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "ຂີດຊື່ຂວາສີເທົາອ່ອນ"
+  BANNER_STRIPE_RIGHT_LIME: "ຂີດຊື່ຂວາສີຂຽວອ່ອນ"
+  BANNER_STRIPE_RIGHT_MAGENTA: "ຂີດຊື່ຂວາສີມ້ວງແດງ"
+  BANNER_STRIPE_RIGHT_ORANGE: "ຂີດຊື່ຂວາສີສົ້ມ"
+  BANNER_STRIPE_RIGHT_PINK: "ຂີດຊື່ຂວາສີບົວ"
+  BANNER_STRIPE_RIGHT_PURPLE: "ຂີດຊື່ຂວາສີມ້ວງ"
+  BANNER_STRIPE_RIGHT_RED: "ຂີດຊື່ຂວາສີແດງ"
+  BANNER_STRIPE_RIGHT_WHITE: "ຂີດຊື່ຂວາສີຂາວ"
+  BANNER_STRIPE_RIGHT_YELLOW: "ຂີດຊື່ຂວາສີເຫຼືອງ"
+  BANNER_STRIPE_TOP_BLACK: "ຂີດຂວາງເທິງສີດຳ"
+  BANNER_STRIPE_TOP_BLUE: "ຂີດຂວາງເທິງສີຟ້າ"
+  BANNER_STRIPE_TOP_BROWN: "ຂີດຂວາງເທິງສີນ້ຳຕານ"
+  BANNER_STRIPE_TOP_CYAN: "ຂີດຂວາງເທິງສີຟ້າໃສ"
+  BANNER_STRIPE_TOP_GRAY: "ຂີດຂວາງເທິງສີເທົາ"
+  BANNER_STRIPE_TOP_GREEN: "ຂີດຂວາງເທິງສີຂຽວ"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "ຂີດຂວາງເທິງສີຟ້າອ່ອນ"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "ຂີດຂວາງເທິງສີເທົາອ່ອນ"
+  BANNER_STRIPE_TOP_LIME: "ຂີດຂວາງເທິງສີຂຽວອ່ອນ"
+  BANNER_STRIPE_TOP_MAGENTA: "ຂີດຂວາງເທິງສີມ້ວງແດງ"
+  BANNER_STRIPE_TOP_ORANGE: "ຂີດຂວາງເທິງສີສົ້ມ"
+  BANNER_STRIPE_TOP_PINK: "ຂີດຂວາງເທິງສີບົວ"
+  BANNER_STRIPE_TOP_PURPLE: "ຂີດຂວາງເທິງສີມ້ວງ"
+  BANNER_STRIPE_TOP_RED: "ຂີດຂວາງເທິງສີແດງ"
+  BANNER_STRIPE_TOP_WHITE: "ຂີດຂວາງເທິງສີຂາວ"
+  BANNER_STRIPE_TOP_YELLOW: "ຂີດຂວາງເທິງສີເຫຼືອງ"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "ສາມລ່ຽມລຸ່ມສີດຳ"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "ສາມລ່ຽມລຸ່ມສີຟ້າ"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "ສາມລ່ຽມລຸ່ມສີນ້ຳຕານ"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "ສາມລ່ຽມລຸ່ມສີຟ້າໃສ"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "ສາມລ່ຽມລຸ່ມສີເທົາ"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "ສາມລ່ຽມລຸ່ມສີຂຽວ"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "ສາມລ່ຽມລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "ສາມລ່ຽມລຸ່ມສີເທົາອ່ອນ"
+  BANNER_TRIANGLE_BOTTOM_LIME: "ສາມລ່ຽມລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "ສາມລ່ຽມລຸ່ມສີມ້ວງແດງ"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "ສາມລ່ຽມລຸ່ມສີສົ້ມ"
+  BANNER_TRIANGLE_BOTTOM_PINK: "ສາມລ່ຽມລຸ່ມສີບົວ"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "ສາມລ່ຽມລຸ່ມສີມ້ວງ"
+  BANNER_TRIANGLE_BOTTOM_RED: "ສາມລ່ຽມລຸ່ມສີແດງ"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "ສາມລ່ຽມລຸ່ມສີຂາວ"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "ສາມລ່ຽມລຸ່ມສີເຫຼືອງ"
+  BANNER_TRIANGLE_TOP_BLACK: "ສາມລ່ຽມເທິງສີດຳ"
+  BANNER_TRIANGLE_TOP_BLUE: "ສາມລ່ຽມເທິງສີຟ້າ"
+  BANNER_TRIANGLE_TOP_BROWN: "ສາມລ່ຽມເທິງສີນ້ຳຕານ"
+  BANNER_TRIANGLE_TOP_CYAN: "ສາມລ່ຽມເທິງສີຟ້າໃສ"
+  BANNER_TRIANGLE_TOP_GRAY: "ສາມລ່ຽມເທິງສີເທົາ"
+  BANNER_TRIANGLE_TOP_GREEN: "ສາມລ່ຽມເທິງສີຂຽວ"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "ສາມລ່ຽມເທິງສີຟ້າອ່ອນ"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "ສາມລ່ຽມເທິງສີເທົາອ່ອນ"
+  BANNER_TRIANGLE_TOP_LIME: "ສາມລ່ຽມເທິງສີຂຽວອ່ອນ"
+  BANNER_TRIANGLE_TOP_MAGENTA: "ສາມລ່ຽມເທິງສີມ້ວງແດງ"
+  BANNER_TRIANGLE_TOP_ORANGE: "ສາມລ່ຽມເທິງສີສົ້ມ"
+  BANNER_TRIANGLE_TOP_PINK: "ສາມລ່ຽມເທິງສີບົວ"
+  BANNER_TRIANGLE_TOP_PURPLE: "ສາມລ່ຽມເທິງສີມ້ວງ"
+  BANNER_TRIANGLE_TOP_RED: "ສາມລ່ຽມເທິງສີແດງ"
+  BANNER_TRIANGLE_TOP_WHITE: "ສາມລ່ຽມເທິງສີຂາວ"
+  BANNER_TRIANGLE_TOP_YELLOW: "ສາມລ່ຽມເທິງສີເຫຼືອງ"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "ແຂ້ວລຸ່ມສີດຳ"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "ແຂ້ວລຸ່ມສີຟ້າ"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "ແຂ້ວລຸ່ມສີນ້ຳຕານ"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "ແຂ້ວລຸ່ມສີຟ້າໃສ"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "ແຂ້ວລຸ່ມສີເທົາ"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "ແຂ້ວລຸ່ມສີຂຽວ"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "ແຂ້ວລຸ່ມສີຟ້າອ່ອນ"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "ແຂ້ວລຸ່ມສີເທົາອ່ອນ"
+  BANNER_TRIANGLES_BOTTOM_LIME: "ແຂ້ວລຸ່ມສີຂຽວອ່ອນ"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "ແຂ້ວລຸ່ມສີມ້ວງແດງ"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "ແຂ້ວລຸ່ມສີສົ້ມ"
+  BANNER_TRIANGLES_BOTTOM_PINK: "ແຂ້ວລຸ່ມສີບົວ"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "ແຂ້ວລຸ່ມສີມ້ວງ"
+  BANNER_TRIANGLES_BOTTOM_RED: "ແຂ້ວລຸ່ມສີແດງ"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "ແຂ້ວລຸ່ມສີຂາວ"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "ແຂ້ວລຸ່ມສີເຫຼືອງ"
+  BANNER_TRIANGLES_TOP_BLACK: "ແຂ້ວເທິງສີດຳ"
+  BANNER_TRIANGLES_TOP_BLUE: "ແຂ້ວເທິງສີຟ້າ"
+  BANNER_TRIANGLES_TOP_BROWN: "ແຂ້ວເທິງສີນ້ຳຕານ"
+  BANNER_TRIANGLES_TOP_CYAN: "ແຂ້ວເທິງສີຟ້າໃສ"
+  BANNER_TRIANGLES_TOP_GRAY: "ແຂ້ວເທິງສີເທົາ"
+  BANNER_TRIANGLES_TOP_GREEN: "ແຂ້ວເທິງສີຂຽວ"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "ແຂ້ວເທິງສີຟ້າອ່ອນ"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "ແຂ້ວເທິງສີເທົາອ່ອນ"
+  BANNER_TRIANGLES_TOP_LIME: "ແຂ້ວເທິງສີຂຽວອ່ອນ"
+  BANNER_TRIANGLES_TOP_MAGENTA: "ແຂ້ວເທິງສີມ້ວງແດງ"
+  BANNER_TRIANGLES_TOP_ORANGE: "ແຂ້ວເທິງສີສົ້ມ"
+  BANNER_TRIANGLES_TOP_PINK: "ແຂ້ວເທິງສີບົວ"
+  BANNER_TRIANGLES_TOP_PURPLE: "ແຂ້ວເທິງສີມ້ວງ"
+  BANNER_TRIANGLES_TOP_RED: "ແຂ້ວເທິງສີແດງ"
+  BANNER_TRIANGLES_TOP_WHITE: "ແຂ້ວເທິງສີຂາວ"
+  BANNER_TRIANGLES_TOP_YELLOW: "ແຂ້ວເທິງສີເຫຼືອງ"
+  BARREL: "ຖັງໄມ້"
+  BARRIER: "ບາຣ໌ເຣຍ"
+  BASALT: "ຫີນບະຊໍ"
+  BEACON: "ກະໂຈມໄຟ"
+  BEACON_PRIMARY: "ພະລັງງານຫຼັກ"
+  BEACON_SECONDARY: "ພະລັງງານຮອງ"
+  BED_NO_SLEEP: "ເຈົ້າສາມາດນອນໄດ້ສະເພາະເວລາກາງຄືນ ຫຼື ຊ່ວງພາຍຸຝົນຟ້າຄະນອງ"
+  BED_NOT_SAFE: "ເຈົ້າຍັງບໍ່ສາມາດນອນໄດ້; ເພາະມີສັດປະຫຼາດຢູ່ໃກ້ໆ"
+  BED_OBSTRUCTED: "ຕຽງຖືກນີ້ຖືກກີດຂວາງ"
+  BED_OCCUPIED: "ຕຽງນີ້ຖືກຍຶດຄອງຢູ່"
+  BED_TOO_FAR_AWAY: "ເຈົ້າຍັງບໍ່ສາມາດນອນໄດ້; ເພາະຕຽງຢູ່ຫ່າງເກີນໄປ"
+  BEDROCK: "ຫີນດານ"
+  BEE_NEST: "ຮັງເຜິ້ງ"
+  BEEHIVE: "ກ່ອງຮັງເຜິ້ງ"
+  BEETROOTS: "ບີດຣູດ"
+  BELL: "ລະຄັງ"
+  BIG_DRIPLEAF: "ໃບຍ້ອຍໃຫຍ່"
+  BIG_DRIPLEAF_STEM: "ລຳຕົ້ນໃບຍ້ອຍໃຫຍ່"
+  BIRCH_BUTTON: "ປຸ່ມໄມ້ຢືນຕົ້ນ"
+  BIRCH_DOOR: "ປະຕູໄມ້ຢືນຕົ້ນ"
+  BIRCH_FENCE: "ຮົ້ວໄມ້ຢືນຕົ້ນ"
+  BIRCH_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ຢືນຕົ້ນ"
+  BIRCH_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ຢືນຕົ້ນ"
+  BIRCH_LEAVES: "ໃບໄມ້ຢືນຕົ້ນ"
+  BIRCH_LOG: "ຂອນໄມ້ຢືນຕົ້ນ"
+  BIRCH_PLANKS: "ແປ້ນໄມ້ຢືນຕົ້ນ"
+  BIRCH_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ຢືນຕົ້ນ"
+  BIRCH_SAPLING: "ເບ້ຍໄມ້ຢືນຕົ້ນ"
+  BIRCH_SIGN: "ປ້າຍໄມ້ຢືນຕົ້ນ"
+  BIRCH_SLAB: "ແຜ່ນໄມ້ຢືນຕົ້ນ"
+  BIRCH_STAIRS: "ຄັນໄດໄມ້ຢືນຕົ້ນ"
+  BIRCH_TRAPDOOR: "ປະຕູກັບດັກໄມ້ຢືນຕົ້ນ"
+  BIRCH_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ຢືນຕົ້ນຕິດຝາ"
+  BIRCH_WALL_SIGN: "ປ້າຍໄມ້ຢືນຕົ້ນຕິດຝາ"
+  BIRCH_WOOD: "ໄມ້ຢືນຕົ້ນ"
+  BLACK_BANNER: "ທຸງສີດຳ"
+  BLACK_BED: "ຕຽງສີດຳ"
+  BLACK_CANDLE: "ທຽນສີດຳ"
+  BLACK_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີດຳ"
+  BLACK_CARPET: "ພົມສີດຳ"
+  BLACK_CONCRETE: "ຄອນກຣີດສີດຳ"
+  BLACK_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີດຳ"
+  BLACK_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີດຳ"
+  BLACK_SHULKER_BOX: "ກ່ອງເຊົາເກີສີດຳ"
+  BLACK_STAINED_GLASS: "ແວ່ນດ່າງສີດຳ"
+  BLACK_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີດຳ"
+  BLACK_TERRACOTTA: "ດິນເຜົາສີດຳ"
+  BLACK_WOOL: "ຂົນແກະສີດຳ"
+  BLACKSTONE: "ຫີນດຳ"
+  BLACKSTONE_SLAB: "ແຜ່ນຫີນດຳ"
+  BLACKSTONE_STAIRS: "ຄັນໄດຫີນດຳ"
+  BLACKSTONE_WALL: "ກຳແພງຫີນດຳ"
+  BLAST_FURNACE: "ເຕົາຫຼອມ"
+  BLUE_BANNER: "ທຸງສີຟ້າ"
+  BLUE_BED: "ຕຽງສີຟ້າ"
+  BLUE_CANDLE: "ທຽນສີຟ້າ"
+  BLUE_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຟ້າ"
+  BLUE_CARPET: "ພົມສີຟ້າ"
+  BLUE_CONCRETE: "ຄອນກຣີດສີຟ້າ"
+  BLUE_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຟ້າ"
+  BLUE_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຟ້າ"
+  BLUE_ICE: "ນ້ຳກ້ອນຟ້າ"
+  BLUE_ORCHID: "ດອກເອື້ອງຟ້າ"
+  BLUE_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຟ້າ"
+  BLUE_STAINED_GLASS: "ແວ່ນດ່າງສີຟ້າ"
+  BLUE_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຟ້າ"
+  BLUE_TERRACOTTA: "ດິນເຜົາສີຟ້າ"
+  BLUE_WOOL: "ຂົນແກະສີຟ້າ"
+  BONE_BLOCK: "ບລ໋ອກກະດູກ"
+  BOOKSHELF: "ຊັ້ນວາງປຶ້ມ"
+  BRAIN_CORAL: "ປະກາລັງສະໝອງ"
+  BRAIN_CORAL_BLOCK: "ບລ໋ອກປະກາລັງສະໝອງ"
+  BRAIN_CORAL_FAN: "ປະກາລັງສະໝອງຮູບວີ"
+  BRAIN_CORAL_WALL_FAN: "ປະກາລັງສະໝອງຮູບວີຕິດຝາ"
+  BREWING_STAND: "ແທ່ນປຸງຢາ"
+  BRICK_SLAB: "ແຜ່ນດິນຈີ່"
+  BRICK_STAIRS: "ຄັນໄດດິນຈີ່"
+  BRICK_WALL: "ກຳແພງດິນຈີ່"
+  BRICKS: "ດິນຈີ່"
+  BROWN_BANNER: "ທຸງສີນ້ຳຕານ"
+  BROWN_BED: "ຕຽງສີນ້ຳຕານ"
+  BROWN_CANDLE: "ທຽນສີນ້ຳຕານ"
+  BROWN_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີນ້ຳຕານ"
+  BROWN_CARPET: "ພົມສີນ້ຳຕານ"
+  BROWN_CONCRETE: "ຄອນກຣີດສີນ້ຳຕານ"
+  BROWN_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີນ້ຳຕານ"
+  BROWN_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີນ້ຳຕານ"
+  BROWN_MUSHROOM: "ເຫັດສີນ້ຳຕານ"
+  BROWN_MUSHROOM_BLOCK: "ບລ໋ອກເຫັດສີນ້ຳຕານ"
+  BROWN_SHULKER_BOX: "ກ່ອງເຊົາເກີສີນ້ຳຕານ"
+  BROWN_STAINED_GLASS: "ແວ່ນດ່າງສີນ້ຳຕານ"
+  BROWN_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີນ້ຳຕານ"
+  BROWN_TERRACOTTA: "ດິນເຜົາສີນ້ຳຕານ"
+  BROWN_WOOL: "ຂົນແກະສີນ້ຳຕານ"
+  BUBBLE_COLUMN: "ຟອງແນວຕັ້ງ"
+  BUBBLE_CORAL: "ປະກາລັງຟອງ"
+  BUBBLE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງຟອງ"
+  BUBBLE_CORAL_FAN: "ປະກາລັງຟອງຮູບວີ"
+  BUBBLE_CORAL_WALL_FAN: "ປະກາລັງຟອງຮູບວີຕິດຝາ"
+  BUDDING_AMETHYST: "ຕົ້ນໜໍ່ອາເມທິສ"
+  CACTUS: "ຕົ້ນກະບອງເພັດ"
+  CAKE: "ເຄັກ"
+  CALCITE: "ແຮ່ແຄວໄຊທ໌"
+  CALIBRATED_SCULK_SENSOR: "ສະເກົາກວດຈັບແຮງສັ່ນ"
+  CAMPFIRE: "ແຄັມໄຟ"
+  CANDLE: "ທຽນ"
+  CANDLE_CAKE: "ເຄັກພ້ອມທຽນ"
+  CARROTS: "ກະຫຼົດ"
+  CARTOGRAPHY_TABLE: "ໂຕະເຮັດແຜນທີ່"
+  CARVED_PUMPKIN: "ໝາກອຶແກະສະຫຼັກ"
+  CAULDRON: "ໝໍ້ປຸງຢາ"
+  CAVE_AIR: "ອາກາດຖ້ຳ"
+  CAVE_VINES: "ເຄືອຖ້ຳ"
+  CAVE_VINES_PLANT: "ຕົ້ນເຄືອຖ້ຳ"
+  CHAIN: "ໂສ້"
+  CHAIN_COMMAND_BLOCK: "ບລ໋ອກຄຳສັ່ງແບບໂສ້"
+  CHERRY_BUTTON: "ປຸ່ມໄມ້ຊາກຸຣະ"
+  CHERRY_DOOR: "ປະຕູໄມ້ຊາກຸຣະ"
+  CHERRY_FENCE: "ຮົ້ວໄມ້ຊາກຸຣະ"
+  CHERRY_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ຊາກຸຣະ"
+  CHERRY_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ຊາກຸຣະ"
+  CHERRY_LEAVES: "ໃບໄມ້ຊາກຸຣະ"
+  CHERRY_LOG: "ຂອນໄມ້ຊາກຸຣະ"
+  CHERRY_PLANKS: "ແປ້ນໄມ້ຊາກຸຣະ"
+  CHERRY_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ຊາກຸຣະ"
+  CHERRY_SAPLING: "ເບ້ຍຊາກຸຣະ"
+  CHERRY_SIGN: "ປ້າຍໄມ້ຊາກຸຣະ"
+  CHERRY_SLAB: "ແຜ່ນໄມ້ຊາກຸຣະ"
+  CHERRY_STAIRS: "ຄັນໄດໄມ້ຊາກຸຣະ"
+  CHERRY_TRAPDOOR: "ປະຕູກັບດັກໄມ້ຊາກຸຣະ"
+  CHERRY_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ຊາກຸຣະຕິດຝາ"
+  CHERRY_WALL_SIGN: "ປ້າຍໄມ້ຊາກຸຣະຕິດຝາ"
+  CHERRY_WOOD: "ໄມ້ຊາກຸຣະ"
+  CHEST: "ຫີບ"
+  CHIPPED_ANVIL: "ທັ່ງບິ່ນ"
+  CHISELED_BOOKSHELF: "ຊັ້ນວາງປຶ້ມແກະສະຫຼັກ"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "ຫີນຊະນວນເລິກສະຫຼັກ"
+  CHISELED_NETHER_BRICKS: "ດິນຈີ່ເນເທີສະຫຼັກ"
+  CHISELED_POLISHED_BLACKSTONE: "ຫີນດຳຂັດສະຫຼັກ"
+  CHISELED_QUARTZ_BLOCK: "ບລ໋ອກມະນີສິລາສະຫຼັກ"
+  CHISELED_RED_SANDSTONE: "ຫີນຊາຍແດງສະຫຼັກ"
+  CHISELED_SANDSTONE: "ຫີນຊາຍສະຫຼັກ"
+  CHISELED_STONE_BRICKS: "ດິນຈີ່ຫີນສະຫຼັກ"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "ດອກຄໍຣັສ"
+  CHORUS_PLANT: "ຕົ້ນຄໍຣັສ"
+  CLAY: "ດິນດາກ"
+  COAL_BLOCK: "ບລ໋ອກຖ່ານຫີນ"
+  COAL_ORE: "ແຮ່ຖ່ານຫີນ"
+  COARSE_DIRT: "ດິນຫຍາບ"
+  COBBLED_DEEPSLATE: "ຫີນຊະນວນເລິກຫຍາບ"
+  COBBLED_DEEPSLATE_SLAB: "ແຜ່ນຫີນຊະນວນເລິກຫຍາບ"
+  COBBLED_DEEPSLATE_STAIRS: "ຄັນໄດຫີນຊະນວນເລິກຫຍາບ"
+  COBBLED_DEEPSLATE_WALL: "ກຳແພງຫີນຊະນວນເລິກຫຍາບ"
+  COBBLESTONE: "ຫີນຫຍາບ"
+  COBBLESTONE_SLAB: "ແຜ່ນຫີນຫຍາບ"
+  COBBLESTONE_STAIRS: "ຄັນໄດຫີນຫຍາບ"
+  COBBLESTONE_WALL: "ກຳແພງຫີນຫຍາບ"
+  COBWEB: "ໃຍແມງມຸມ"
+  COCOA: "ໂກໂກ້"
+  COMMAND_BLOCK: "ບລ໋ອກຄຳສັ່ງ"
+  COMPARATOR: "ໂຕປຽບທຽບຫີນແດງ"
+  COMPOSTER: "ລັງໝັກປຸຍ"
+  CONDUIT: "ໄຟສິລາ"
+  COPPER_BLOCK: "ບລ໋ອກທອງແດງ"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "ແຮ່ທອງແດງ"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "ຄອຣ໌ນຟລາວເວີ"
+  CRACKED_DEEPSLATE_BRICKS: "ດິນຈີ່ຫີນຊະນວນເລິກແຕກ"
+  CRACKED_DEEPSLATE_TILES: "ກະໂລ້ຫີນຊະນວນເລິກແຕກ"
+  CRACKED_NETHER_BRICKS: "ດິນຈີ່ເນເທີແຕກ"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "ດິນຈີ່ຫີນດຳຂັດແຕກ"
+  CRACKED_STONE_BRICKS: "ດິນຈີ່ຫີນແຕກ"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "ໂຕະຄຣາບ"
+  CREEPER_HEAD: "ຫົວຄຣີບເປີ"
+  CREEPER_WALL_HEAD: "ຫົວຄຣີບເປີຕິດຝາ"
+  CRIMSON_BUTTON: "ປຸ່ມໄມ້ສີເລືອດ"
+  CRIMSON_DOOR: "ປະຕູໄມ້ສີເລືອດ"
+  CRIMSON_FENCE: "ຮົ້ວໄມ້ສີເລືອດ"
+  CRIMSON_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ສີເລືອດ"
+  CRIMSON_FUNGUS: "ເຫັດເຊື້ອລາສີເລືອດ"
+  CRIMSON_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ສີເລືອດ"
+  CRIMSON_HYPHAE: "ໄຮແພສີເລືອດ"
+  CRIMSON_NYLIUM: "ນີລ້ຽມສີເລືອດ"
+  CRIMSON_PLANKS: "ແປ້ນໄມ້ສີເລືອດ"
+  CRIMSON_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ສີເລືອດ"
+  CRIMSON_ROOTS: "ຮາກໄມ້ສີເລືອດ"
+  CRIMSON_SIGN: "ປ້າຍໄມ້ສີເລືອດ"
+  CRIMSON_SLAB: "ແຜ່ນໄມ້ສີເລືອດ"
+  CRIMSON_STAIRS: "ຄັນໄດໄມ້ສີເລືອດ"
+  CRIMSON_STEM: "ລຳຕົ້ນໄມ້ສີເລືອດ"
+  CRIMSON_TRAPDOOR: "ປະຕູກັບດັກໄມ້ສີເລືອດ"
+  CRIMSON_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ສີເລືອດຕິດຝາ"
+  CRIMSON_WALL_SIGN: "ປ້າຍໄມ້ສີເລືອດຕິດຝາ"
+  CRYING_OBSIDIAN: "ຫີນອ໋ອບຊິດ້ຽນຮ້ອງໄຫ້"
+  CUT_COPPER: "ທອງແດງຕັດ"
+  CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດ"
+  CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດ"
+  CUT_RED_SANDSTONE: "ຫີນຊາຍແດງຕັດ"
+  CUT_RED_SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍແດງຕັດ"
+  CUT_SANDSTONE: "ຫີນຊາຍຕັດ"
+  CUT_SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍຕັດ"
+  CYAN_BANNER: "ທຸງສີຟ້າໃສ"
+  CYAN_BED: "ຕຽງສີຟ້າໃສ"
+  CYAN_CANDLE: "ທຽນສີຟ້າໃສ"
+  CYAN_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຟ້າໃສ"
+  CYAN_CARPET: "ພົມສີຟ້າໃສ"
+  CYAN_CONCRETE: "ຄອນກຣີດສີຟ້າໃສ"
+  CYAN_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຟ້າໃສ"
+  CYAN_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຟ້າໃສ"
+  CYAN_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຟ້າໃສ"
+  CYAN_STAINED_GLASS: "ແວ່ນດ່າງສີຟ້າໃສ"
+  CYAN_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຟ້າໃສ"
+  CYAN_TERRACOTTA: "ດິນເຜົາສີຟ້າໃສ"
+  CYAN_WOOL: "ຂົນແກະສີຟ້າໃສ"
+  DAMAGED_ANVIL: "ທັ່ງເສຍຫາຍ"
+  DANDELION: "ດອກແດນດິໄລອອນ"
+  DARK_OAK_BUTTON: "ປຸ່ມໄມ້ໂອກດຳ"
+  DARK_OAK_DOOR: "ປະຕູໄມ້ໂອກດຳ"
+  DARK_OAK_FENCE: "ຮົ້ວໄມ້ໂອກດຳ"
+  DARK_OAK_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ໂອກດຳ"
+  DARK_OAK_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂອກດຳ"
+  DARK_OAK_LEAVES: "ໃບໄມ້ໂອກດຳ"
+  DARK_OAK_LOG: "ຂອນໄມ້ໂອກດຳ"
+  DARK_OAK_PLANKS: "ແປ້ນໄມ້ໂອກດຳ"
+  DARK_OAK_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ໂອກດຳ"
+  DARK_OAK_SAPLING: "ເບ້ຍໄມ້ໂອກດຳ"
+  DARK_OAK_SIGN: "ປ້າຍໄມ້ໂອກດຳ"
+  DARK_OAK_SLAB: "ແຜ່ນໄມ້ໂອກດຳ"
+  DARK_OAK_STAIRS: "ຄັນໄດໄມ້ໂອກດຳ"
+  DARK_OAK_TRAPDOOR: "ປະຕູກັບດັກໄມ້ໂອກດຳ"
+  DARK_OAK_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂອກດຳຕິດຝາ"
+  DARK_OAK_WALL_SIGN: "ປ້າຍໄມ້ໂອກດຳຕິດຝາ"
+  DARK_OAK_WOOD: "ໄມ້ໂອກດຳ"
+  DARK_PRISMARINE: "ພຣິສມາຣີນເຂັ້ມ"
+  DARK_PRISMARINE_SLAB: "ແຜ່ນພຣິສມາຣີນເຂັ້ມ"
+  DARK_PRISMARINE_STAIRS: "ຄັນໄດພຣິສມາຣີນເຂັ້ມ"
+  DAYLIGHT_DETECTOR: "ເຄື່ອງກວດຈັບແສງແດດ"
+  DEAD_BRAIN_CORAL: "ປະກາລັງສະໝອງຕາຍ"
+  DEAD_BRAIN_CORAL_BLOCK: "ບລ໋ອກປະກາລັງສະໝອງຕາຍ"
+  DEAD_BRAIN_CORAL_FAN: "ປະກາລັງສະໝອງຕາຍຮູບວີ"
+  DEAD_BRAIN_CORAL_WALL_FAN: "ປະກາລັງສະໝອງຕາຍຮູບວີຕິດຝາ"
+  DEAD_BUBBLE_CORAL: "ປະກາລັງຟອງຕາຍ"
+  DEAD_BUBBLE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງຟອງຕາຍ"
+  DEAD_BUBBLE_CORAL_FAN: "ປະກາລັງຟອງຕາຍຮູບວີ"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "ປະກາລັງຟອງຕາຍຮູບວີຕິດຝາ"
+  DEAD_BUSH: "ຟຸ່ມໄມ້ແຫ້ງ"
+  DEAD_FIRE_CORAL: "ປະກາລັງໄຟຕາຍ"
+  DEAD_FIRE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງໄຟຕາຍ"
+  DEAD_FIRE_CORAL_FAN: "ປະກາລັງໄຟຕາຍຮູບວີ"
+  DEAD_FIRE_CORAL_WALL_FAN: "ປະກາລັງໄຟຕາຍຮູບວີຕິດຝາ"
+  DEAD_HORN_CORAL: "ປະກາລັງເຂົາຕາຍ"
+  DEAD_HORN_CORAL_BLOCK: "ບລ໋ອກປະກາລັງເຂົາຕາຍ"
+  DEAD_HORN_CORAL_FAN: "ປະກາລັງເຂົາຕາຍຮູບວີ"
+  DEAD_HORN_CORAL_WALL_FAN: "ປະກາລັງເຂົາຕາຍຮູບວີຕິດຝາ"
+  DEAD_TUBE_CORAL: "ປະກາລັງຫຼອດຕາຍ"
+  DEAD_TUBE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງຫຼອດຕາຍ"
+  DEAD_TUBE_CORAL_FAN: "ປະກາລັງຫຼອດຕາຍຮູບວີ"
+  DEAD_TUBE_CORAL_WALL_FAN: "ປະກາລັງຫຼອດຕາຍຮູບວີຕິດຝາ"
+  DECORATED_POT: "ໂຖຕົບແຕ່ງ"
+  DEEPSLATE: "ຫີນຊະນວນເລິກ"
+  DEEPSLATE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ຫີນຊະນວນເລິກ"
+  DEEPSLATE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ຫີນຊະນວນເລິກ"
+  DEEPSLATE_BRICK_WALL: "ກຳແພງດິນຈີ່ຫີນຊະນວນເລິກ"
+  DEEPSLATE_BRICKS: "ດິນຈີ່ຫີນຊະນວນເລິກ"
+  DEEPSLATE_COAL_ORE: "ແຮ່ຖ່ານຫີນໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_COPPER_ORE: "ແຮ່ທອງແດງໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_DIAMOND_ORE: "ແຮ່ເພັດໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_EMERALD_ORE: "ແຮ່ມໍລະກົດໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_GOLD_ORE: "ແຮ່ຄຳໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_IRON_ORE: "ແຮ່ເຫຼັກໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_LAPIS_ORE: "ແຮ່ເພທູນໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_REDSTONE_ORE: "ແຮ່ຫີນແດງໃນຫີນຊະນວນເລິກ"
+  DEEPSLATE_TILE_SLAB: "ແຜ່ນກະໂລ້ຫີນຊະນວນເລິກ"
+  DEEPSLATE_TILE_STAIRS: "ຄັນໄດກະໂລ້ຫີນຊະນວນເລິກ"
+  DEEPSLATE_TILE_WALL: "ກຳແພງກະໂລ້ຫີນຊະນວນເລິກ"
+  DEEPSLATE_TILES: "ກະໂລ້ຫີນຊະນວນເລິກ"
+  DETECTOR_RAIL: "ລາງກວດຈັບ"
+  DIAMOND_BLOCK: "ບລ໋ອກເພັດ"
+  DIAMOND_ORE: "ແຮ່ເພັດ"
+  DIORITE: "ຫີນໄດອໍໄຣທ໌"
+  DIORITE_SLAB: "ແຜ່ນຫີນໄດອໍໄຣທ໌"
+  DIORITE_STAIRS: "ຄັນໄດຫີນໄດອໍໄຣທ໌"
+  DIORITE_WALL: "ກຳແພງຫີນໄດອໍໄຣທ໌"
+  DIRT: "ດິນ"
+  DIRT_PATH: "ທາງດິນ"
+  DISPENSER: "ເຄື່ອງຍິງ"
+  DRAGON_EGG: "ໄຂ່ມັງກອນ"
+  DRAGON_HEAD: "ຫົວມັງກອນ"
+  DRAGON_WALL_HEAD: "ຫົວມັງກອນຕິດຝາ"
+  DRIED_KELP_BLOCK: "ບລ໋ອກສາຫຼ່າຍທະເລແຫ້ງ"
+  DRIPSTONE_BLOCK: "ບລ໋ອກຫີນຍ້ອຍ"
+  DROPPER: "ເຄື່ອງດຣ໋ອບ"
+  EMERALD_BLOCK: "ບລ໋ອກມໍລະກົດ"
+  EMERALD_ORE: "ແຮ່ມໍລະກົດ"
+  ENCHANTING_TABLE: "ໂຕະຮວາຍມົນ"
+  END_GATEWAY: "ປະຕູທາງຜ່ານເອັນ"
+  END_PORTAL: "ປະຕູມິຕິເອັນ"
+  END_PORTAL_FRAME: "ຂອບປະຕູມິຕິເອັນ"
+  END_ROD: "ແທ່ງເອັນ"
+  END_STONE: "ຫີນເອັນ"
+  END_STONE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ຫີນເອັນ"
+  END_STONE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ຫີນເອັນ"
+  END_STONE_BRICK_WALL: "ກຳແພງດິນຈີ່ຫີນເອັນ"
+  END_STONE_BRICKS: "ດິນຈີ່ຫີນເອັນ"
+  ENDER_CHEST: "ຫີບເອັນເດີ"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "ທອງແດງລອກ"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "ທອງແດງຕັດລອກ"
+  EXPOSED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດລອກ"
+  EXPOSED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດລອກ"
+  FARMLAND: "ຂຸມເຮັດຟາຣ໌ມ"
+  FERN: "ຜັກກູດ"
+  FIRE: "ໄຟ"
+  FIRE_CORAL: "ປະກາລັງໄຟ"
+  FIRE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງໄຟ"
+  FIRE_CORAL_FAN: "ປະກາລັງໄຟຮູບວີ"
+  FIRE_CORAL_WALL_FAN: "ປະກາລັງໄຟຮູບວີຕິດຝາ"
+  FLETCHING_TABLE: "ໂຕະເຮັດທະນູ"
+  FLOWER_POT: "ໂຖດອກໄມ້"
+  FLOWERING_AZALEA: "ກຸຫຼາບພັນປີມີດອກ"
+  FLOWERING_AZALEA_LEAVES: "ໃບກຸຫຼາບພັນປີມີດອກ"
+  FROGSPAWN: "ໄຂ່ກົບ"
+  FROSTED_ICE: "ນ້ຳກ້ອນໂຄດເຢັນ"
+  FURNACE: "ເຕົາເຜົາ"
+  GILDED_BLACKSTONE: "ຫີນດຳຝັງຄຳ"
+  GLASS: "ແວ່ນ"
+  GLASS_PANE: "ແຜ່ນແວ່ນ"
+  GLOW_LICHEN: "ໄລເຄນເຮືອງແສງ"
+  GLOWSTONE: "ຫີນເຮືອງແສງ"
+  GOLD_BLOCK: "ບລ໋ອກຄຳ"
+  GOLD_ORE: "ແຮ່ຄຳ"
+  GRANITE: "ຫີນແກຣນິດ"
+  GRANITE_SLAB: "ແຜ່ນຫີນແກຣນິດ"
+  GRANITE_STAIRS: "ຄັນໄດຫີນແກຣນິດ"
+  GRANITE_WALL: "ກຳແພງຫີນແກຣນິດ"
+  GRASS: "ຫຍ້າ"
+  GRASS_BLOCK: "ບລ໋ອກຫຍ້າ"
+  GRAVEL: "ຫີນແຮ່"
+  GRAY_BANNER: "ທຸງສີເທົາ"
+  GRAY_BED: "ຕຽງສີເທົາ"
+  GRAY_CANDLE: "ທຽນສີເທົາ"
+  GRAY_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີເທົາ"
+  GRAY_CARPET: "ພົມສີເທົາ"
+  GRAY_CONCRETE: "ຄອນກຣີດສີເທົາ"
+  GRAY_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີເທົາ"
+  GRAY_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີເທົາ"
+  GRAY_SHULKER_BOX: "ກ່ອງເຊົາເກີສີເທົາ"
+  GRAY_STAINED_GLASS: "ແວ່ນດ່າງສີເທົາ"
+  GRAY_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີເທົາ"
+  GRAY_TERRACOTTA: "ດິນເຜົາສີເທົາ"
+  GRAY_WOOL: "ຂົນແກະສີເທົາ"
+  GREEN_BANNER: "ທຸງສີຂຽວ"
+  GREEN_BED: "ຕຽງສີຂຽວ"
+  GREEN_CANDLE: "ທຽນສີຂຽວ"
+  GREEN_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຂຽວ"
+  GREEN_CARPET: "ພົມສີຂຽວ"
+  GREEN_CONCRETE: "ຄອນກຣີດສີຂຽວ"
+  GREEN_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຂຽວ"
+  GREEN_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຂຽວ"
+  GREEN_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຂຽວ"
+  GREEN_STAINED_GLASS: "ແວ່ນດ່າງສີຂຽວ"
+  GREEN_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຂຽວ"
+  GREEN_TERRACOTTA: "ດິນເຜົາສີຂຽວ"
+  GREEN_WOOL: "ຂົນແກະສີຂຽວ"
+  GRINDSTONE: "ຫີນໂມ້"
+  HANGING_ROOTS: "ຮາກຫ້ອຍ"
+  HAY_BLOCK: "ກອງຟາງ"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "ແປ້ນຢຽບຖ່ວງນ້ຳໜັກໂຄດໜັກ"
+  HONEY_BLOCK: "ບລ໋ອກນ້ຳເຜິ້ງ"
+  HONEYCOMB_BLOCK: "ບລ໋ອກຮວງເຜິ້ງ"
+  HOPPER: "ທໍ່ສົ່ງ"
+  HORN_CORAL: "ປະກາລັງເຂົາ"
+  HORN_CORAL_BLOCK: "ບລ໋ອກປະກາລັງເຂົາ"
+  HORN_CORAL_FAN: "ປະກາລັງເຂົາຮູບວີ"
+  HORN_CORAL_WALL_FAN: "ປະກາລັງເຂົາຮູບວີຕິດຝາ"
+  ICE: "ນ້ຳກ້ອນ"
+  INFESTED_CHISELED_STONE_BRICKS: "ດິນຈີ່ຫີນສະຫຼັກຕິດເຊື້ອ"
+  INFESTED_COBBLESTONE: "ຫີນຫຍາບຕິດເຊື້ອ"
+  INFESTED_CRACKED_STONE_BRICKS: "ດິນຈີ່ຫີນແຕກຕິດເຊື້ອ"
+  INFESTED_DEEPSLATE: "ຫີນຊະນວນເລິກຕິດເຊື້ອ"
+  INFESTED_MOSSY_STONE_BRICKS: "ດິນຈີ່ຫີນຂີ້ໄຄຕິດເຊື້ອ"
+  INFESTED_STONE: "ຫີນຕິດເຊື້ອ"
+  INFESTED_STONE_BRICKS: "ດິນຈີ່ຫີນຕິດເຊື້ອ"
+  IRON_BARS: "ກົງເຫຼັກ"
+  IRON_BLOCK: "ບລ໋ອກເຫຼັກ"
+  IRON_DOOR: "ປະຕູເຫຼັກ"
+  IRON_ORE: "ແຮ່ເຫຼັກ"
+  IRON_TRAPDOOR: "ປະຕູກັບດັກເຫຼັກ"
+  JACK_O_LANTERN: "ໂຄມໄຟໝາກອຶ"
+  JIGSAW: "ບລ໋ອກຈິກຊໍ"
+  JUKEBOX: "ຕູ້ເພງ"
+  JUNGLE_BUTTON: "ປຸ່ມໄມ້ປ່າດົງດິບ"
+  JUNGLE_DOOR: "ປະຕູໄມ້ປ່າດົງດິບ"
+  JUNGLE_FENCE: "ຮົ້ວໄມ້ປ່າດົງດິບ"
+  JUNGLE_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ປ່າດົງດິບ"
+  JUNGLE_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ປ່າດົງດິບ"
+  JUNGLE_LEAVES: "ໃບໄມ້ປ່າດົງດິບ"
+  JUNGLE_LOG: "ຂອນໄມ້ປ່າດົງດິບ"
+  JUNGLE_PLANKS: "ແປ້ນໄມ້ປ່າດົງດິບ"
+  JUNGLE_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ປ່າດົງດິບ"
+  JUNGLE_SAPLING: "ເບ້ຍໄມ້ປ່າດົງດິບ"
+  JUNGLE_SIGN: "ປ້າຍໄມ້ປ່າດົງດິບ"
+  JUNGLE_SLAB: "ແຜ່ນໄມ້ປ່າດົງດິບ"
+  JUNGLE_STAIRS: "ຄັນໄດໄມ້ປ່າດົງດິບ"
+  JUNGLE_TRAPDOOR: "ປະຕູກັບດັກໄມ້ປ່າດົງດິບ"
+  JUNGLE_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ປ່າດົງດິບຕິດຝາ"
+  JUNGLE_WALL_SIGN: "ປ້າຍໄມ້ປ່າດົງດິບຕິດຝາ"
+  JUNGLE_WOOD: "ໄມ້ປ່າດົງດິບ"
+  KELP: "ສາຫຼ່າຍທະເລ"
+  KELP_PLANT: "ຕົ້ນສາຫຼ່າຍທະເລ"
+  LADDER: "ຄັນໄດລິງ"
+  LANTERN: "ໂຄມໄຟ"
+  LAPIS_BLOCK: "ບລ໋ອກເພທູນ"
+  LAPIS_ORE: "ແຮ່ເພທູນ"
+  LARGE_AMETHYST_BUD: "ໜໍ່ອາເມທິສຂະໜາດໃຫຍ່"
+  LARGE_FERN: "ຜັກກູດໃຫຍ່"
+  LAVA: "ລາວາ"
+  LAVA_CAULDRON: "ໝໍ້ປຸງຢາລາວາ"
+  LECTERN: "ແທ່ນອ່ານປຶ້ມ"
+  LEVER: "ຄັນໂຍກ"
+  LIGHT: "ບລ໋ອກແສງ"
+  LIGHT_BLUE_BANNER: "ທຸງສີຟ້າອ່ອນ"
+  LIGHT_BLUE_BED: "ຕຽງສີຟ້າອ່ອນ"
+  LIGHT_BLUE_CANDLE: "ທຽນສີຟ້າອ່ອນ"
+  LIGHT_BLUE_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຟ້າອ່ອນ"
+  LIGHT_BLUE_CARPET: "ພົມສີຟ້າອ່ອນ"
+  LIGHT_BLUE_CONCRETE: "ຄອນກຣີດສີຟ້າອ່ອນ"
+  LIGHT_BLUE_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຟ້າອ່ອນ"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຟ້າອ່ອນ"
+  LIGHT_BLUE_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຟ້າອ່ອນ"
+  LIGHT_BLUE_STAINED_GLASS: "ແວ່ນດ່າງສີຟ້າອ່ອນ"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຟ້າອ່ອນ"
+  LIGHT_BLUE_TERRACOTTA: "ດິນເຜົາສີຟ້າອ່ອນ"
+  LIGHT_BLUE_WOOL: "ຂົນແກະສີຟ້າອ່ອນ"
+  LIGHT_GRAY_BANNER: "ທຸງສີເທົາອ່ອນ"
+  LIGHT_GRAY_BED: "ຕຽງສີເທົາອ່ອນ"
+  LIGHT_GRAY_CANDLE: "ທຽນສີເທົາອ່ອນ"
+  LIGHT_GRAY_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີເທົາອ່ອນ"
+  LIGHT_GRAY_CARPET: "ພົມສີເທົາອ່ອນ"
+  LIGHT_GRAY_CONCRETE: "ຄອນກຣີດສີເທົາອ່ອນ"
+  LIGHT_GRAY_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີເທົາອ່ອນ"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີເທົາອ່ອນ"
+  LIGHT_GRAY_SHULKER_BOX: "ກ່ອງເຊົາເກີສີເທົາອ່ອນ"
+  LIGHT_GRAY_STAINED_GLASS: "ແວ່ນດ່າງສີເທົາອ່ອນ"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີເທົາອ່ອນ"
+  LIGHT_GRAY_TERRACOTTA: "ດິນເຜົາສີເທົາອ່ອນ"
+  LIGHT_GRAY_WOOL: "ຂົນແກະສີເທົາອ່ອນ"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "ແປ້ນຢຽບຖ່ວງນ້ຳໜັກໂຄດເບົາ"
+  LIGHTNING_ROD: "ສາຍລໍ້ຟ້າ"
+  LILAC: "ດອກໄລແລັກ"
+  LILY_OF_THE_VALLEY: "ລິນລີ່ແຫ່ງຮ່ອມພູ"
+  LILY_PAD: "ໃບບົວ"
+  LIME_BANNER: "ທຸງສີຂຽວອ່ອນ"
+  LIME_BED: "ຕຽງສີຂຽວອ່ອນ"
+  LIME_CANDLE: "ທຽນສີຂຽວອ່ອນ"
+  LIME_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຂຽວອ່ອນ"
+  LIME_CARPET: "ພົມສີຂຽວອ່ອນ"
+  LIME_CONCRETE: "ຄອນກຣີດສີຂຽວອ່ອນ"
+  LIME_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຂຽວອ່ອນ"
+  LIME_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຂຽວອ່ອນ"
+  LIME_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຂຽວອ່ອນ"
+  LIME_STAINED_GLASS: "ແວ່ນດ່າງສີຂຽວອ່ອນ"
+  LIME_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຂຽວອ່ອນ"
+  LIME_TERRACOTTA: "ດິນເຜົາສີຂຽວອ່ອນ"
+  LIME_WOOL: "ຂົນແກະສີຂຽວອ່ອນ"
+  LODESTONE: "ຫີນນຳທາງ"
+  LOOM: "ກີ່"
+  MAGENTA_BANNER: "ທຸງສີມ້ວງແດງ"
+  MAGENTA_BED: "ຕຽງສີມ້ວງແດງ"
+  MAGENTA_CANDLE: "ທຽນສີມ້ວງແດງ"
+  MAGENTA_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີມ້ວງແດງ"
+  MAGENTA_CARPET: "ພົມສີມ້ວງແດງ"
+  MAGENTA_CONCRETE: "ຄອນກຣີດສີມ້ວງແດງ"
+  MAGENTA_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີມ້ວງແດງ"
+  MAGENTA_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີມ້ວງແດງ"
+  MAGENTA_SHULKER_BOX: "ກ່ອງເຊົາເກີສີມ້ວງແດງ"
+  MAGENTA_STAINED_GLASS: "ແວ່ນດ່າງສີມ້ວງແດງ"
+  MAGENTA_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີມ້ວງແດງ"
+  MAGENTA_TERRACOTTA: "ດິນເຜົາສີມ້ວງແດງ"
+  MAGENTA_WOOL: "ຂົນແກະສີມ້ວງແດງ"
+  MAGMA_BLOCK: "ບລ໋ອກແມັກມ່າ"
+  MANGROVE_BUTTON: "ປຸ່ມໄມ້ໂກງກາງ"
+  MANGROVE_DOOR: "ປະຕູໄມ້ໂກງກາງ"
+  MANGROVE_FENCE: "ຮົ້ວໄມ້ໂກງກາງ"
+  MANGROVE_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ໂກງກາງ"
+  MANGROVE_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂກງກາງ"
+  MANGROVE_LEAVES: "ໃບໄມ້ໂກງກາງ"
+  MANGROVE_LOG: "ຂອນໄມ້ໂກງກາງ"
+  MANGROVE_PLANKS: "ແປ້ນໄມ້ໂກງກາງ"
+  MANGROVE_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ໂກງກາງ"
+  MANGROVE_PROPAGULE: "ໜໍ່ພັນໄມ້ໂກງກາງ"
+  MANGROVE_ROOTS: "ຮາກໄມ້ໂກງກາງ"
+  MANGROVE_SIGN: "ປ້າຍໄມ້ໂກງກາງ"
+  MANGROVE_SLAB: "ແຜ່ນໄມ້ໂກງກາງ"
+  MANGROVE_STAIRS: "ຄັນໄດໄມ້ໂກງກາງ"
+  MANGROVE_TRAPDOOR: "ປະຕູກັບດັກໄມ້ໂກງກາງ"
+  MANGROVE_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂກງກາງຕິດຝາ"
+  MANGROVE_WALL_SIGN: "ປ້າຍໄມ້ໂກງກາງຕິດຝາ"
+  MANGROVE_WOOD: "ໄມ້ໂກງກາງ"
+  MEDIUM_AMETHYST_BUD: "ໜໍ່ອາເມທິສຂະໜາດກາງ"
+  MELON: "ໝາກໂມ"
+  MELON_STEM: "ລຳຕົ້ນໝາກໂມ"
+  MOSS_BLOCK: "ບລ໋ອກຂີ້ໄຄ"
+  MOSS_CARPET: "ພົມຂີ້ໄຄ"
+  MOSSY_COBBLESTONE: "ຫີນຫຍາບຂີ້ໄຄ"
+  MOSSY_COBBLESTONE_SLAB: "ແຜ່ນຫີນຫຍາບຂີ້ໄຄ"
+  MOSSY_COBBLESTONE_STAIRS: "ຄັນໄດຫີນຫຍາບຂີ້ໄຄ"
+  MOSSY_COBBLESTONE_WALL: "ກຳແພງຫີນຫຍາບຂີ້ໄຄ"
+  MOSSY_STONE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ຫີນຂີ້ໄຄ"
+  MOSSY_STONE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ຫີນຂີ້ໄຄ"
+  MOSSY_STONE_BRICK_WALL: "ກຳແພງດິນຈີ່ຫີນຂີ້ໄຄ"
+  MOSSY_STONE_BRICKS: "ດິນຈີ່ຫີນຂີ້ໄຄ"
+  MOVING_PISTON: "ລູກສູບເຄື່ອນ"
+  MUD: "ຂີ້ຕົມ"
+  MUD_BRICK_SLAB: "ແຜ່ນຂີ້ຕົມ"
+  MUD_BRICK_STAIRS: "ຄັນໄດຂີ້ຕົມ"
+  MUD_BRICK_WALL: "ກຳແພງຂີ້ຕົມ"
+  MUD_BRICKS: "ດິນຈີ່ຂີ້ຕົມ"
+  MUDDY_MANGROVE_ROOTS: "ຮາກໄມ້ໂກງກາງຕິດຂີ້ຕົມ"
+  MUSHROOM_STEM: "ລຳຕົ້ນເຫັດ"
+  MYCELIUM: "ເສັ້ນໃຍລາ"
+  NETHER_BRICK_FENCE: "ຮົ້ວດິນຈີ່ເນເທີ"
+  NETHER_BRICK_SLAB: "ແຜ່ນດິນຈີ່ເນເທີ"
+  NETHER_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ເນເທີ"
+  NETHER_BRICK_WALL: "ກຳແພງດິນຈີ່ເນເທີ"
+  NETHER_BRICKS: "ດິນຈີ່ເນເທີ"
+  NETHER_GOLD_ORE: "ແຮ່ຄຳເນເທີ"
+  NETHER_PORTAL: "ປະຕູມິຕິເນເທີ"
+  NETHER_QUARTZ_ORE: "ແຮ່ມະນີສິລາເນເທີ"
+  NETHER_SPROUTS: "ຕົ້ນອ່ອນເນເທີ"
+  NETHER_WART: "ຂີ້ກະຕອດເນເທີ"
+  NETHER_WART_BLOCK: "ບລ໋ອກຂີ້ກະຕອດເນເທີ"
+  NETHERITE_BLOCK: "ບລ໋ອກເນເທີໄຣ"
+  NETHERRACK: "ຫີນເນເທີ"
+  NOTE_BLOCK: "ກ່ອງໂຕໂນ໊ດ"
+  OAK_BUTTON: "ປຸ່ມໄມ້ໂອກ"
+  OAK_DOOR: "ປະຕູໄມ້ໂອກ"
+  OAK_FENCE: "ຮົ້ວໄມ້ໂອກ"
+  OAK_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ໂອກ"
+  OAK_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂອກ"
+  OAK_LEAVES: "ໃບໄມ້ໂອກ"
+  OAK_LOG: "ຂອນໄມ້ໂອກ"
+  OAK_PLANKS: "ແປ້ນໄມ້ໂອກ"
+  OAK_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ໂອກ"
+  OAK_SAPLING: "ເບ້ຍໄມ້ໂອກ"
+  OAK_SIGN: "ປ້າຍໄມ້ໂອກ"
+  OAK_SLAB: "ແຜ່ນໄມ້ໂອກ"
+  OAK_STAIRS: "ຄັນໄດໄມ້ໂອກ"
+  OAK_TRAPDOOR: "ປະຕູກັບດັກໄມ້ໂອກ"
+  OAK_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ໂອກຕິດຝາ"
+  OAK_WALL_SIGN: "ປ້າຍໄມ້ໂອກຕິດຝາ"
+  OAK_WOOD: "ໄມ້ໂອກ"
+  OBSERVER: "ໂຕສັງເກດການ"
+  OBSIDIAN: "ຫີນອ໋ອບຊິດ້ຽນ"
+  OCHRE_FROGLIGHT: "ໄຟກົບສີດິນເຫຼືອງ"
+  OMINOUS_BANNER: "ທຸງແຫ່ງລາງຮ້າຍ"
+  ORANGE_BANNER: "ທຸງສີສົ້ມ"
+  ORANGE_BED: "ຕຽງສີສົ້ມ"
+  ORANGE_CANDLE: "ທຽນສີສົ້ມ"
+  ORANGE_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີສົ້ມ"
+  ORANGE_CARPET: "ພົມສີສົ້ມ"
+  ORANGE_CONCRETE: "ຄອນກຣີດສີສົ້ມ"
+  ORANGE_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີສົ້ມ"
+  ORANGE_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີສົ້ມ"
+  ORANGE_SHULKER_BOX: "ກ່ອງເຊົາເກີສີສົ້ມ"
+  ORANGE_STAINED_GLASS: "ແວ່ນດ່າງສີສົ້ມ"
+  ORANGE_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີສົ້ມ"
+  ORANGE_TERRACOTTA: "ດິນເຜົາສີສົ້ມ"
+  ORANGE_TULIP: "ດອກທິວລິບສົ້ມ"
+  ORANGE_WOOL: "ຂົນແກະສີສົ້ມ"
+  OXEYE_DAISY: "ດອກອ໋ອກອາຍເດຊີ່"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "ທອງແດງຂຶ້ນໝ້ຽງ"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "ທອງແດງຕັດຂຶ້ນໝ້ຽງ"
+  OXIDIZED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດຂຶ້ນໝ້ຽງ"
+  OXIDIZED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດຂຶ້ນໝ້ຽງ"
+  PACKED_ICE: "ນ້ຳກ້ອນອັດແໜ້ນ"
+  PACKED_MUD: "ຂີ້ຕົມອັດແໜ້ນ"
+  PEARLESCENT_FROGLIGHT: "ໄຟກົບສີປະກາຍໄຂ່ມຸກ"
+  PEONY: "ດອກໂບຕັນ"
+  PETRIFIED_OAK_SLAB: "ແຜ່ນໄມ້ໂອກກາຍເປັນຫີນ"
+  PIGLIN_HEAD: "ຫົວພິກລິນ"
+  PIGLIN_WALL_HEAD: "ຫົວພິກລິນຕິດຝາ"
+  PINK_BANNER: "ທຸງສີບົວ"
+  PINK_BED: "ຕຽງສີບົວ"
+  PINK_CANDLE: "ທຽນສີບົວ"
+  PINK_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີບົວ"
+  PINK_CARPET: "ພົມສີບົວ"
+  PINK_CONCRETE: "ຄອນກຣີດສີບົວ"
+  PINK_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີບົວ"
+  PINK_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີບົວ"
+  PINK_PETALS: "ກີບດອກສີບົວ"
+  PINK_SHULKER_BOX: "ກ່ອງເຊົາເກີສີບົວ"
+  PINK_STAINED_GLASS: "ແວ່ນດ່າງສີບົວ"
+  PINK_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີບົວ"
+  PINK_TERRACOTTA: "ດິນເຜົາສີບົວ"
+  PINK_TULIP: "ດອກທິວລິບບົວ"
+  PINK_WOOL: "ຂົນແກະສີບົວ"
+  PISTON: "ລູກສູບ"
+  PISTON_HEAD: "ຫົວລູກສູບ"
+  PITCHER_CROP: "ໝາກໝໍ້ເຂົ້າໝໍ້ແກງລິງ"
+  PITCHER_PLANT: "ຕົ້ນໝໍ້ເຂົ້າໝໍ້ແກງລິງ"
+  PLAYER_HEAD: "ຫົວຜູ້ຫຼິ້ນ"
+  PLAYER_HEAD_NAMED: "ຫົວຂອງ %s"
+  PLAYER_WALL_HEAD: "ຫົວຜູ້ຫຼິ້ນຕິດຝາ"
+  PODZOL: "ດິນພອດຊໍ"
+  POINTED_DRIPSTONE: "ຫີນຍ້ອຍແຫຼມ"
+  POLISHED_ANDESITE: "ຫີນແອນດີໄຊທ໌ຂັດ"
+  POLISHED_ANDESITE_SLAB: "ແຜ່ນຫີນແອນດີໄຊທ໌ຂັດ"
+  POLISHED_ANDESITE_STAIRS: "ຄັນໄດຫີນແອນດີໄຊທ໌ຂັດ"
+  POLISHED_BASALT: "ຫີນບະຊໍຂັດ"
+  POLISHED_BLACKSTONE: "ຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_BRICK_WALL: "ກຳແພງດິນຈີ່ຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_BRICKS: "ດິນຈີ່ຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_BUTTON: "ປຸ່ມຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "ແປ້ນຢຽບຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_SLAB: "ແຜ່ນຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_STAIRS: "ຄັນໄດຫີນດຳຂັດ"
+  POLISHED_BLACKSTONE_WALL: "ກຳແພງຫີນດຳຂັດ"
+  POLISHED_DEEPSLATE: "ຫີນຊະນວນເລິກຂັດ"
+  POLISHED_DEEPSLATE_SLAB: "ແຜ່ນຫີນຊະນວນເລິກຂັດ"
+  POLISHED_DEEPSLATE_STAIRS: "ຄັນໄດຫີນຊະນວນເລິກຂັດ"
+  POLISHED_DEEPSLATE_WALL: "ກຳແພງຫີນຊະນວນເລິກຂັດ"
+  POLISHED_DIORITE: "ຫີນໄດອໍໄຣທ໌ຂັດ"
+  POLISHED_DIORITE_SLAB: "ແຜ່ນຫີນໄດອໍໄຣທ໌ຂັດ"
+  POLISHED_DIORITE_STAIRS: "ຄັນໄດຫີນໄດອໍໄຣທ໌ຂັດ"
+  POLISHED_GRANITE: "ຫີນແກຣນິດຂັດ"
+  POLISHED_GRANITE_SLAB: "ແຜ່ນຫີນແກຣນິດຂັດ"
+  POLISHED_GRANITE_STAIRS: "ຄັນໄດຫີນແກຣນິດຂັດ"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "ດອກປ໋ອບປີ້"
+  POTATOES: "ມັນຝຣັ່ງ"
+  POTTED_ACACIA_SAPLING: "ໂຖເບ້ຍອາເຄເຊຍ"
+  POTTED_ALLIUM: "ໂຖດອກອາວລຽມ"
+  POTTED_AZALEA_BUSH: "ໂຖກຸຫຼາບພັນປີ"
+  POTTED_AZURE_BLUET: "ໂຖດອກອາຊົວບລູເອັດ"
+  POTTED_BAMBOO: "ໂຖໄມ້ໄຜ່"
+  POTTED_BIRCH_SAPLING: "ໂຖເບ້ຍໄມ້ຢືນຕົ້ນ"
+  POTTED_BLUE_ORCHID: "ໂຖດອກເອື້ອງຟ້າ"
+  POTTED_BROWN_MUSHROOM: "ໂຖເຫັດສີນ້ຳຕານ"
+  POTTED_CACTUS: "ໂຖຕົ້ນກະບອງເພັດ"
+  POTTED_CHERRY_SAPLING: "ໂຖເບ້ຍຊາກຸຣະ"
+  POTTED_CORNFLOWER: "ໂຖຄອຣ໌ນຟລາວເວີ"
+  POTTED_CRIMSON_FUNGUS: "ໂຖເຫັດເຊື້ອລາສີເລືອດ"
+  POTTED_CRIMSON_ROOTS: "ໂຖຮາກໄມ້ສີເລືອດ"
+  POTTED_DANDELION: "ໂຖດອກແດນດິໄລອອນ"
+  POTTED_DARK_OAK_SAPLING: "ໂຖເບ້ຍໄມ້ໂອກດຳ"
+  POTTED_DEAD_BUSH: "ໂຖຟຸ່ມໄມ້ແຫ້ງ"
+  POTTED_FERN: "ໂຖຜັກກູດ"
+  POTTED_FLOWERING_AZALEA_BUSH: "ໂຖກຸຫຼາບພັນປີມີດອກ"
+  POTTED_JUNGLE_SAPLING: "ໂຖເບ້ຍໄມ້ປ່າດົງດິບ"
+  POTTED_LILY_OF_THE_VALLEY: "ໂຖລິນລີ່ແຫ່ງຮ່ອມພູ"
+  POTTED_MANGROVE_PROPAGULE: "ໂຖໜໍ່ພັນໄມ້ໂກງກາງ"
+  POTTED_OAK_SAPLING: "ໂຖເບ້ຍໄມ້ໂອກ"
+  POTTED_ORANGE_TULIP: "ໂຖດອກທິວລິບສົ້ມ"
+  POTTED_OXEYE_DAISY: "ໂຖດອກອ໋ອກອາຍເດຊີ່"
+  POTTED_PINK_TULIP: "ໂຖດອກທິວລິບບົວ"
+  POTTED_POPPY: "ໂຖດອກປ໋ອບປີ້"
+  POTTED_RED_MUSHROOM: "ໂຖເຫັດສີແດງ"
+  POTTED_RED_TULIP: "ໂຖດອກທິວລິບແດງ"
+  POTTED_SPRUCE_SAPLING: "ໂຖເບ້ຍສະປຣູດ"
+  POTTED_TORCHFLOWER: "ໂຖດອກຄົບໄຟ"
+  POTTED_WARPED_FUNGUS: "ໂຖເຫັດເຊື້ອລາຜີບ້າ"
+  POTTED_WARPED_ROOTS: "ໂຖຮາກໄມ້ຜີບ້າ"
+  POTTED_WHITE_TULIP: "ໂຖດອກທິວລິບຂາວ"
+  POTTED_WITHER_ROSE: "ໂຖກຸຫຼາບວິດເທີ"
+  POWDER_SNOW: "ຫິມະຜົງ"
+  POWDER_SNOW_CAULDRON: "ໝໍ້ປຸງຢາຫິມະຜົງ"
+  POWERED_RAIL: "ລາງຂັບເຄື່ອນ"
+  PRISMARINE: "ພຣິສມາຣີນ"
+  PRISMARINE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ພຣິສມາຣີນ"
+  PRISMARINE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ພຣິສມາຣີນ"
+  PRISMARINE_BRICKS: "ດິນຈີ່ພຣິສມາຣີນ"
+  PRISMARINE_SLAB: "ແຜ່ນພຣິສມາຣີນ"
+  PRISMARINE_STAIRS: "ຄັນໄດພຣິສມາຣີນ"
+  PRISMARINE_WALL: "ກຳແພງພຣິສມາຣີນ"
+  PUMPKIN: "ໝາກອຶ"
+  PUMPKIN_STEM: "ລຳຕົ້ນໝາກອຶ"
+  PURPLE_BANNER: "ທຸງສີມ້ວງ"
+  PURPLE_BED: "ຕຽງສີມ້ວງ"
+  PURPLE_CANDLE: "ທຽນສີມ້ວງ"
+  PURPLE_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີມ້ວງ"
+  PURPLE_CARPET: "ພົມສີມ້ວງ"
+  PURPLE_CONCRETE: "ຄອນກຣີດສີມ້ວງ"
+  PURPLE_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີມ້ວງ"
+  PURPLE_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີມ້ວງ"
+  PURPLE_SHULKER_BOX: "ກ່ອງເຊົາເກີສີມ້ວງ"
+  PURPLE_STAINED_GLASS: "ແວ່ນດ່າງສີມ້ວງ"
+  PURPLE_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີມ້ວງ"
+  PURPLE_TERRACOTTA: "ດິນເຜົາສີມ້ວງ"
+  PURPLE_WOOL: "ຂົນແກະສີມ້ວງ"
+  PURPUR_BLOCK: "ບລ໋ອກເພີຣ໌ເພີຣ໌"
+  PURPUR_PILLAR: "ເສົາເພີຣ໌ເພີຣ໌"
+  PURPUR_SLAB: "ແຜ່ນເພີຣ໌ເພີຣ໌"
+  PURPUR_STAIRS: "ຄັນໄດເພີຣ໌ເພີຣ໌"
+  QUARTZ_BLOCK: "ບລ໋ອກມະນີສິລາ"
+  QUARTZ_BRICKS: "ດິນຈີ່ມະນີສິລາ"
+  QUARTZ_PILLAR: "ເສົາມະນີສິລາ"
+  QUARTZ_SLAB: "ແຜ່ນມະນີສິລາ"
+  QUARTZ_STAIRS: "ຄັນໄດມະນີສິລາ"
+  RAIL: "ລາງ"
+  RAW_COPPER_BLOCK: "ບລ໋ອກທອງແດງດິບ"
+  RAW_GOLD_BLOCK: "ບລ໋ອກຄຳດິບ"
+  RAW_IRON_BLOCK: "ບລ໋ອກເຫຼັກດິບ"
+  RED_BANNER: "ທຸງສີແດງ"
+  RED_BED: "ຕຽງສີແດງ"
+  RED_CANDLE: "ທຽນສີແດງ"
+  RED_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີແດງ"
+  RED_CARPET: "ພົມສີແດງ"
+  RED_CONCRETE: "ຄອນກຣີດສີແດງ"
+  RED_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີແດງ"
+  RED_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີແດງ"
+  RED_MUSHROOM: "ເຫັດສີແດງ"
+  RED_MUSHROOM_BLOCK: "ບລ໋ອກເຫັດສີແດງ"
+  RED_NETHER_BRICK_SLAB: "ແຜ່ນດິນຈີ່ເນເທີແດງ"
+  RED_NETHER_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ເນເທີແດງ"
+  RED_NETHER_BRICK_WALL: "ກຳແພງດິນຈີ່ເນເທີແດງ"
+  RED_NETHER_BRICKS: "ດິນຈີ່ເນເທີແດງ"
+  RED_SAND: "ຊາຍແດງ"
+  RED_SANDSTONE: "ຫີນຊາຍແດງ"
+  RED_SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍແດງ"
+  RED_SANDSTONE_STAIRS: "ຄັນໄດຫີນຊາຍແດງ"
+  RED_SANDSTONE_WALL: "ກຳແພງຫີນຊາຍແດງ"
+  RED_SHULKER_BOX: "ກ່ອງເຊົາເກີສີແດງ"
+  RED_STAINED_GLASS: "ແວ່ນດ່າງສີແດງ"
+  RED_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີແດງ"
+  RED_TERRACOTTA: "ດິນເຜົາສີແດງ"
+  RED_TULIP: "ດອກທິວລິບແດງ"
+  RED_WOOL: "ຂົນແກະສີແດງ"
+  REDSTONE_BLOCK: "ບລ໋ອກຫີນແດງ"
+  REDSTONE_LAMP: "ຫຼອດໄຟຫີນແດງ"
+  REDSTONE_ORE: "ແຮ່ຫີນແດງ"
+  REDSTONE_TORCH: "ຄົບໄຟຫີນແດງ"
+  REDSTONE_WALL_TORCH: "ຄົບໄຟຫີນແດງຕິດຝາ"
+  REDSTONE_WIRE: "ສາຍໄຟຫີນແດງ"
+  REINFORCED_DEEPSLATE: "ຫີນຊະນວນເລິກເສີມແຮງ"
+  REPEATER: "ໂຕທວນສັນຍານຫີນແດງ"
+  REPEATING_COMMAND_BLOCK: "ບລ໋ອກຄຳສັ່ງແບບເຮັດຊ້ຳ"
+  RESPAWN_ANCHOR: "ຫຼັກຈຸດເກີດ"
+  ROOTED_DIRT: "ດິນຝັງຮາກ"
+  ROSE_BUSH: "ຟຸ່ມດອກກຸຫຼາບ"
+  SAND: "ຊາຍ"
+  SANDSTONE: "ຫີນຊາຍ"
+  SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍ"
+  SANDSTONE_STAIRS: "ຄັນໄດຫີນຊາຍ"
+  SANDSTONE_WALL: "ກຳແພງຫີນຊາຍ"
+  SCAFFOLDING: "ນັ່ງຮ້ານ"
+  SCULK: "ສະເກົາ"
+  SCULK_CATALYST: "ສະເກົາໂຕເລັ່ງ"
+  SCULK_SENSOR: "ສະເກົາກວດຈັບ"
+  SCULK_SHRIEKER: "ສະເກົາຫວີດຮ້ອງ"
+  SCULK_VEIN: "ເສັ້ນໃຍສະເກົາ"
+  SEA_LANTERN: "ໂຄມໄຟທະເລ"
+  SEA_PICKLE: "ໝາກແຕງດອງທະເລ"
+  SEAGRASS: "ຫຍ້າທະເລ"
+  SET_SPAWN: "ຕັ້ງຈຸດເກີດໃໝ່ແລ້ວ"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "ບລ໋ອກເຮືອງແສງ"
+  SHULKER_BOX: "ກ່ອງເຊົາເກີ"
+  SKELETON_SKULL: "ຫົວກະໂຫຼກໂຄງກະດູກ"
+  SKELETON_WALL_SKULL: "ຫົວກະໂຫຼກໂຄງກະດູກຕິດຝາ"
+  SLIME_BLOCK: "ບລ໋ອກສະລາມ"
+  SMALL_AMETHYST_BUD: "ໜໍ່ອາເມທິສຂະໜາດນ້ອຍ"
+  SMALL_DRIPLEAF: "ໃບຍ້ອຍນ້ອຍ"
+  SMITHING_TABLE: "ໂຕະເຮັດອາວຸດ"
+  SMOKER: "ເຕົາຮົມຄວັນ"
+  SMOOTH_BASALT: "ຫີນບະຊໍກ້ຽງ"
+  SMOOTH_QUARTZ: "ບລ໋ອກມະນີສິລາກ້ຽງ"
+  SMOOTH_QUARTZ_SLAB: "ແຜ່ນມະນີສິລາກ້ຽງ"
+  SMOOTH_QUARTZ_STAIRS: "ຄັນໄດມະນີສິລາກ້ຽງ"
+  SMOOTH_RED_SANDSTONE: "ຫີນຊາຍແດງກ້ຽງ"
+  SMOOTH_RED_SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍແດງກ້ຽງ"
+  SMOOTH_RED_SANDSTONE_STAIRS: "ຄັນໄດຫີນຊາຍແດງກ້ຽງ"
+  SMOOTH_SANDSTONE: "ຫີນຊາຍກ້ຽງ"
+  SMOOTH_SANDSTONE_SLAB: "ແຜ່ນຫີນຊາຍກ້ຽງ"
+  SMOOTH_SANDSTONE_STAIRS: "ຄັນໄດຫີນຊາຍກ້ຽງ"
+  SMOOTH_STONE: "ຫີນກ້ຽງ"
+  SMOOTH_STONE_SLAB: "ແຜ່ນຫີນກ້ຽງ"
+  SNIFFER_EGG: "ໄຂ່ສະນິບເຟີ"
+  SNOW: "ຫິມະ"
+  SNOW_BLOCK: "ບລ໋ອກຫິມະ"
+  SOUL_CAMPFIRE: "ແຄັມໄຟວິນຍານ"
+  SOUL_FIRE: "ໄຟວິນຍານ"
+  SOUL_LANTERN: "ໂຄມໄຟວິນຍານ"
+  SOUL_SAND: "ຊາຍວິນຍານ"
+  SOUL_SOIL: "ດິນວິນຍານ"
+  SOUL_TORCH: "ຄົບໄຟວິນຍານ"
+  SOUL_WALL_TORCH: "ຄົບໄຟວິນຍານຕິດຝາ"
+  SPAWN_NOT_VALID: "ບໍ່ພົບຕຽງ ຫຼື ຫຼັກຈຸດເກີດຂອງເຈົ້າ ຫຼື ມີສິ່ງກີດຂວາງໄວ້"
+  SPAWNER: "ກົງກຳເນີດສັດປະຫຼາດ"
+  SPAWNER_DESC1: "ປະຕິສຳພັນກັບໄຂ່ເກີດ:"
+  SPAWNER_DESC2: "ເລືອກປະເພດມ໋ອບ"
+  SPONGE: "ຟອງນ້ຳ"
+  SPORE_BLOSSOM: "ດອກສະປໍ"
+  SPRUCE_BUTTON: "ປຸ່ມໄມ້ສະປຣູດ"
+  SPRUCE_DOOR: "ປະຕູໄມ້ສະປຣູດ"
+  SPRUCE_FENCE: "ຮົ້ວໄມ້ສະປຣູດ"
+  SPRUCE_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ສະປຣູດ"
+  SPRUCE_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ສະປຣູດ"
+  SPRUCE_LEAVES: "ໃບໄມ້ສະປຣູດ"
+  SPRUCE_LOG: "ຂອນໄມ້ສະປຣູດ"
+  SPRUCE_PLANKS: "ແປ້ນໄມ້ສະປຣູດ"
+  SPRUCE_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ສະປຣູດ"
+  SPRUCE_SAPLING: "ເບ້ຍສະປຣູດ"
+  SPRUCE_SIGN: "ປ້າຍໄມ້ສະປຣູດ"
+  SPRUCE_SLAB: "ແຜ່ນໄມ້ສະປຣູດ"
+  SPRUCE_STAIRS: "ຄັນໄດໄມ້ສະປຣູດ"
+  SPRUCE_TRAPDOOR: "ປະຕູກັບດັກໄມ້ສະປຣູດ"
+  SPRUCE_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ສະປຣູດຕິດຝາ"
+  SPRUCE_WALL_SIGN: "ປ້າຍໄມ້ສະປຣູດຕິດຝາ"
+  SPRUCE_WOOD: "ໄມ້ສະປຣູດ"
+  STICKY_PISTON: "ລູກສູບໜຽວ"
+  STONE: "ຫີນ"
+  STONE_BRICK_SLAB: "ແຜ່ນດິນຈີ່ຫີນ"
+  STONE_BRICK_STAIRS: "ຄັນໄດດິນຈີ່ຫີນ"
+  STONE_BRICK_WALL: "ກຳແພງດິນຈີ່ຫີນ"
+  STONE_BRICKS: "ດິນຈີ່ຫີນ"
+  STONE_BUTTON: "ປຸ່ມຫີນ"
+  STONE_PRESSURE_PLATE: "ແປ້ນຢຽບຫີນ"
+  STONE_SLAB: "ແຜ່ນຫີນ"
+  STONE_STAIRS: "ຄັນໄດຫີນ"
+  STONECUTTER: "ເຄື່ອງຕັດຫີນ"
+  STRIPPED_ACACIA_LOG: "ຂອນໄມ້ອາເຄເຊຍລອກເປືອກ"
+  STRIPPED_ACACIA_WOOD: "ໄມ້ອາເຄເຊຍລອກເປືອກ"
+  STRIPPED_BAMBOO_BLOCK: "ບລ໋ອກໄມ້ໄຜ່ລອກເປືອກ"
+  STRIPPED_BIRCH_LOG: "ຂອນໄມ້ຢືນຕົ້ນລອກເປືອກ"
+  STRIPPED_BIRCH_WOOD: "ໄມ້ຢືນຕົ້ນລອກເປືອກ"
+  STRIPPED_CHERRY_LOG: "ຂອນໄມ້ຊາກຸຣະລອກເປືອກ"
+  STRIPPED_CHERRY_WOOD: "ໄມ້ຊາກຸຣະລອກເປືອກ"
+  STRIPPED_CRIMSON_HYPHAE: "ໄຮແພສີເລືອດລອກເປືອກ"
+  STRIPPED_CRIMSON_STEM: "ລຳຕົ້ນສີເລືອດລອກເປືອກ"
+  STRIPPED_DARK_OAK_LOG: "ຂອນໄມ້ໂອກດຳລອກເປືອກ"
+  STRIPPED_DARK_OAK_WOOD: "ໄມ້ໂອກດຳລອກເປືອກ"
+  STRIPPED_JUNGLE_LOG: "ຂອນໄມ້ປ່າດົງດິບລອກເປືອກ"
+  STRIPPED_JUNGLE_WOOD: "ໄມ້ປ່າດົງດິບລອກເປືອກ"
+  STRIPPED_MANGROVE_LOG: "ຂອນໄມ້ໂກງກາງລອກເປືອກ"
+  STRIPPED_MANGROVE_WOOD: "ໄມ້ໂກງກາງລອກເປືອກ"
+  STRIPPED_OAK_LOG: "ຂອນໄມ້ໂອກລອກເປືອກ"
+  STRIPPED_OAK_WOOD: "ໄມ້ໂອກລອກເປືອກ"
+  STRIPPED_SPRUCE_LOG: "ຂອນໄມ້ສະປຣູດລອກເປືອກ"
+  STRIPPED_SPRUCE_WOOD: "ໄມ້ສະປຣູດລອກເປືອກ"
+  STRIPPED_WARPED_HYPHAE: "ໄຮແພຜີບ້າລອກເປືອກ"
+  STRIPPED_WARPED_STEM: "ລຳຕົ້ນປ່າຜີບ້າລອກເປືອກ"
+  STRUCTURE_BLOCK: "ບລ໋ອກໂຄງສ້າງ"
+  STRUCTURE_VOID: "ບລ໋ອກໂຄງເປົ່າ"
+  SUGAR_CANE: "ອ້ອຍ"
+  SUNFLOWER: "ດອກຕາເວັນ"
+  SUSPICIOUS_GRAVEL: "ຫີນແຮ່ໜ້າສົງໄສ"
+  SUSPICIOUS_SAND: "ຊາຍໜ້າສົງໄສ"
+  SWEET_BERRY_BUSH: "ຟຸ່ມເບີຣີ່ຫວານ"
+  TALL_GRASS: "ຫຍ້າສູງ"
+  TALL_SEAGRASS: "ຫຍ້າທະເລສູງ"
+  TARGET: "ເປົ້າຍິງ"
+  TERRACOTTA: "ດິນເຜົາ"
+  TINTED_GLASS: "ແວ່ນສີ"
+  TNT: "ລະເບີດທີເອັນທີ"
+  TORCH: "ຄົບໄຟ"
+  TORCHFLOWER: "ດອກຄົບໄຟ"
+  TORCHFLOWER_CROP: "ຕົ້ນດອກຄົບໄຟ"
+  TRAPPED_CHEST: "ຫີບກັບດັກ"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "ເຊືອກກັບດັກ"
+  TRIPWIRE_HOOK: "ຂໍກ່ຽວເຊືອກກັບດັກ"
+  TUBE_CORAL: "ປະກາລັງຫຼອດ"
+  TUBE_CORAL_BLOCK: "ບລ໋ອກປະກາລັງຫຼອດ"
+  TUBE_CORAL_FAN: "ປະກາລັງຫຼອດຮູບວີ"
+  TUBE_CORAL_WALL_FAN: "ປະກາລັງຫຼອດຮູບວີຕິດຝາ"
+  TUFF: "ຫີນພູເຂົາໄຟ"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "ໄຂ່ເຕົ່າ"
+  TWISTING_VINES: "ເຄືອບິດກຽວ"
+  TWISTING_VINES_PLANT: "ຕົ້ນເຄືອບິດກຽວ"
+  VERDANT_FROGLIGHT: "ໄຟກົບສີຂ້ຽວຂຽວ"
+  VINE: "ເຄືອ"
+  VOID_AIR: "ອາກາດເປົ່າ"
+  WALL_TORCH: "ຄົບໄຟຕິດຝາ"
+  WARPED_BUTTON: "ປຸ່ມໄມ້ປ່າຜີບ້າ"
+  WARPED_DOOR: "ປະຕູໄມ້ປ່າຜີບ້າ"
+  WARPED_FENCE: "ຮົ້ວໄມ້ປ່າຜີບ້າ"
+  WARPED_FENCE_GATE: "ປະຕູຮົ້ວໄມ້ປ່າຜີບ້າ"
+  WARPED_FUNGUS: "ເຫັດເຊື້ອລາຜີບ້າ"
+  WARPED_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ປ່າຜີບ້າ"
+  WARPED_HYPHAE: "ໄຮແພຜີບ້າ"
+  WARPED_NYLIUM: "ນີລ້ຽມຜີບ້າ"
+  WARPED_PLANKS: "ແປ້ນໄມ້ປ່າຜີບ້າ"
+  WARPED_PRESSURE_PLATE: "ແປ້ນຢຽບໄມ້ປ່າຜີບ້າ"
+  WARPED_ROOTS: "ຮາກໄມ້ຜີບ້າ"
+  WARPED_SIGN: "ປ້າຍໄມ້ປ່າຜີບ້າ"
+  WARPED_SLAB: "ແຜ່ນໄມ້ປ່າຜີບ້າ"
+  WARPED_STAIRS: "ຄັນໄດໄມ້ປ່າຜີບ້າ"
+  WARPED_STEM: "ລຳຕົ້ນປ່າຜີບ້າ"
+  WARPED_TRAPDOOR: "ປະຕູກັບດັກໄມ້ປ່າຜີບ້າ"
+  WARPED_WALL_HANGING_SIGN: "ປ້າຍຫ້ອຍໄມ້ປ່າຜີບ້າຕິດຝາ"
+  WARPED_WALL_SIGN: "ປ້າຍໄມ້ປ່າຜີບ້າຕິດຝາ"
+  WARPED_WART_BLOCK: "ບລ໋ອກຂີ້ກະຕອດຜີບ້າ"
+  WATER: "ນ້ຳ"
+  WATER_CAULDRON: "ໝໍ້ປຸງຢານ້ຳ"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "ບລ໋ອກທອງແດງເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "ທອງແດງຕັດເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "ທອງແດງລອກເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "ທອງແດງຕັດລອກເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດລອກເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດລອກເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "ທອງແດງຂຶ້ນໝ້ຽງເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "ທອງແດງຕັດຂຶ້ນໝ້ຽງເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດຂຶ້ນໝ້ຽງເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດຂຶ້ນໝ້ຽງເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "ທອງແດງຫ້ຽນເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "ທອງແດງຕັດຫ້ຽນເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດຫ້ຽນເຄືອບຂີ້ເຜິ້ງ"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດຫ້ຽນເຄືອບຂີ້ເຜິ້ງ"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "ທອງແດງຫ້ຽນ"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "ທອງແດງຕັດຫ້ຽນ"
+  WEATHERED_CUT_COPPER_SLAB: "ແຜ່ນທອງແດງຕັດຫ້ຽນ"
+  WEATHERED_CUT_COPPER_STAIRS: "ຄັນໄດທອງແດງຕັດຫ້ຽນ"
+  WEEPING_VINES: "ເຄືອຮ້ອງໄຫ້"
+  WEEPING_VINES_PLANT: "ຕົ້ນເຄືອຮ້ອງໄຫ້"
+  WET_SPONGE: "ຟອງນ້ຳປຽກ"
+  WHEAT: "ຕົ້ນເຂົ້າສາລີ"
+  WHITE_BANNER: "ທຸງສີຂາວ"
+  WHITE_BED: "ຕຽງສີຂາວ"
+  WHITE_CANDLE: "ທຽນສີຂາວ"
+  WHITE_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີຂາວ"
+  WHITE_CARPET: "ພົມສີຂາວ"
+  WHITE_CONCRETE: "ຄອນກຣີດສີຂາວ"
+  WHITE_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີຂາວ"
+  WHITE_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີຂາວ"
+  WHITE_SHULKER_BOX: "ກ່ອງເຊົາເກີສີຂາວ"
+  WHITE_STAINED_GLASS: "ແວ່ນດ່າງສີຂາວ"
+  WHITE_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີຂາວ"
+  WHITE_TERRACOTTA: "ດິນເຜົາສີຂາວ"
+  WHITE_TULIP: "ດອກທິວລິບຂາວ"
+  WHITE_WOOL: "ຂົນແກະສີຂາວ"
+  WITHER_ROSE: "ກຸຫຼາບວິດເທີ"
+  WITHER_SKELETON_SKULL: "ຫົວກະໂຫຼກໂຄງກະດູກວິດເທີ"
+  WITHER_SKELETON_WALL_SKULL: "ຫົວກະໂຫຼກໂຄງກະດູກວິດເທີຕິດຝາ"
+  YELLOW_BANNER: "ທຸງສີເຫຼືອງ"
+  YELLOW_BED: "ຕຽງສີເຫຼືອງ"
+  YELLOW_CANDLE: "ທຽນສີເຫຼືອງ"
+  YELLOW_CANDLE_CAKE: "ເຄັກພ້ອມທຽນສີເຫຼືອງ"
+  YELLOW_CARPET: "ພົມສີເຫຼືອງ"
+  YELLOW_CONCRETE: "ຄອນກຣີດສີເຫຼືອງ"
+  YELLOW_CONCRETE_POWDER: "ຜົງຄອນກຣີດສີເຫຼືອງ"
+  YELLOW_GLAZED_TERRACOTTA: "ດິນເຜົາເຄືອບສີເຫຼືອງ"
+  YELLOW_SHULKER_BOX: "ກ່ອງເຊົາເກີສີເຫຼືອງ"
+  YELLOW_STAINED_GLASS: "ແວ່ນດ່າງສີເຫຼືອງ"
+  YELLOW_STAINED_GLASS_PANE: "ແຜ່ນແວ່ນດ່າງສີເຫຼືອງ"
+  YELLOW_TERRACOTTA: "ດິນເຜົາສີເຫຼືອງ"
+  YELLOW_WOOL: "ຂົນແກະສີເຫຼືອງ"
+  ZOMBIE_HEAD: "ຫົວຊອມບີ້"
+  ZOMBIE_WALL_HEAD: "ຫົວຊອມບີ້ຕິດຝາ"
+  ACACIA_BOAT: "ເຮືອໄມ້ອາເຄເຊຍ"
+  ACACIA_CHEST_BOAT: "ເຮືອໄມ້ອາເຄເຊຍພ້ອມຫີບ"
+  ALLAY_SPAWN_EGG: "ໄຂ່ເກີດອັນເລ"
+  AMETHYST_SHARD: "ເສດອາເມທິສ"
+  ANGLER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍປາຕຶກເບັດ"
+  ANGLER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍປາຕຶກເບັດ"
+  APPLE: "ແອັບເປິ້ນ"
+  ARCHER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍທະນູ"
+  ARCHER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍທະນູ"
+  ARMOR_STAND: "ແທ່ນວາງຊຸດເກາະ"
+  ARMS_UP_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຄົນຍົກແຂນ"
+  ARMS_UP_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຄົນຍົກແຂນ"
+  ARROW: "ລູກທະນູ"
+  AXOLOTL_BUCKET: "ຄຸໃສ່ແອັກໂຊລໍໂຕ"
+  AXOLOTL_SPAWN_EGG: "ໄຂ່ເກີດແອັກໂຊລໍໂຕ"
+  BAKED_POTATO: "ມັນຝຣັ່ງອົບ"
+  BAMBOO_CHEST_RAFT: "ແພໄມ້ໄຜ່ພ້ອມຫີບ"
+  BAMBOO_RAFT: "ແພໄມ້ໄຜ່"
+  BAT_SPAWN_EGG: "ໄຂ່ເກີດເຈຍ"
+  BEE_SPAWN_EGG: "ໄຂ່ເກີດເຜິ້ງ"
+  BEEF: "ຊີ້ນງົວດິບ"
+  BEETROOT: "ບີດຣູດ"
+  BEETROOT_SEEDS: "ເມັດບີດຣູດ"
+  BEETROOT_SOUP: "ແກງບີດຣູດ"
+  BIRCH_BOAT: "ເຮືອໄມ້ຢືນຕົ້ນ"
+  BIRCH_CHEST_BOAT: "ເຮືອໄມ້ຢືນຕົ້ນພ້ອມຫີບ"
+  BLACK_DYE: "ສີຍ້ອມສີດຳ"
+  BLADE_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍດາບ"
+  BLADE_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍດາບ"
+  BLAZE_POWDER: "ຜົງເບລດ"
+  BLAZE_ROD: "ແທ່ງເບລດ"
+  BLAZE_SPAWN_EGG: "ໄຂ່ເກີດເບລດ"
+  BLUE_DYE: "ສີຍ້ອມສີຟ້າ"
+  BONE: "ກະດູກ"
+  BONE_MEAL: "ຜົງກະດູກ"
+  BOOK: "ປຶ້ມ"
+  BOW: "ທະນູ"
+  BOWL: "ຖ້ວຍ"
+  BREAD: "ເຂົ້າ​ຈີ່"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍນ້ຳຢາ"
+  BREWER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍນ້ຳຢາ"
+  BRICK: "ດິນຈີ່"
+  BROWN_DYE: "ສີຍ້ອມສີນ້ຳຕານ"
+  BRUSH: "ແປງ"
+  BUCKET: "ຄຸ"
+  BUNDLE: "ຖົງໜັງ"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໄຟ"
+  BURN_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໄຟ"
+  CAMEL_SPAWN_EGG: "ໄຂ່ເກີດອູດ"
+  CARROT: "ກະຫຼົດ"
+  CARROT_ON_A_STICK: "ກະຫຼົດຕິດເບັດ"
+  CAT_SPAWN_EGG: "ໄຂ່ເກີດແມວ"
+  CAVE_SPIDER_SPAWN_EGG: "ໄຂ່ເກີດແມງມຸມຖ້ຳ"
+  CHAINMAIL_BOOTS: "ເກີບໂສ້"
+  CHAINMAIL_CHESTPLATE: "ເສື້ອເກາະໂສ້"
+  CHAINMAIL_HELMET: "ໝວກໂສ້"
+  CHAINMAIL_LEGGINGS: "ໂສ້ງໂສ້"
+  CHARCOAL: "ຖ່ານໄມ້"
+  CHERRY_BOAT: "ເຮືອໄມ້ຊາກຸຣະ"
+  CHERRY_CHEST_BOAT: "ເຮືອໄມ້ຊາກຸຣະພ້ອມຫີບ"
+  CHEST_MINECART: "ລົດລາງພ້ອມຫີບ"
+  CHICKEN: "ຊີ້ນໄກ່ດິບ"
+  CHICKEN_SPAWN_EGG: "ໄຂ່ເກີດໄກ່"
+  CHORUS_FRUIT: "ໝາກຄໍຣັສ"
+  CLAY_BALL: "ກ້ອນດິນດາກ"
+  CLOCK: "ໂມງ"
+  COAL: "ຖ່ານຫີນ"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  COCOA_BEANS: "ເມັດໂກໂກ້"
+  COD: "ປາຄ໋ອດດິບ"
+  COD_BUCKET: "ຄຸປາຄ໋ອດ"
+  COD_SPAWN_EGG: "ໄຂ່ເກີດປາຄ໋ອດ"
+  COMMAND_BLOCK_MINECART: "ລົດລາງພ້ອມບລ໋ອກຄຳສັ່ງ"
+  COMPASS: "ເຂັມທິດ"
+  COOKED_BEEF: "ສະເຕັກ"
+  COOKED_CHICKEN: "ຊີ້ນໄກ່ປຸງສຸກ"
+  COOKED_COD: "ປາຄ໋ອດປຸງສຸກ"
+  COOKED_MUTTON: "ຊີ້ນແກະປຸງສຸກ"
+  COOKED_PORKCHOP: "ຊີ້ນໝູປຸງສຸກ"
+  COOKED_RABBIT: "ຊີ້ນກະຕ່າຍປຸງສຸກ"
+  COOKED_SALMON: "ປາແຊວມອນປຸງສຸກ"
+  COOKIE: "ຄຸກກີ້"
+  COPPER_INGOT: "ກ້ອນທອງແດງ"
+  COW_SPAWN_EGG: "ໄຂ່ເກີດງົວ"
+  CREEPER_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  CREEPER_BANNER_PATTERN_DESC: "ກາສັນຍະລັກຄຣີບເປີ"
+  CREEPER_SPAWN_EGG: "ໄຂ່ເກີດຄຣີບເປີ"
+  CROSSBOW: "ໜ້າໄມ້"
+  CROSSBOW_PROJECTILE: "ວັດຖຸພຸ່ງ:"
+  CYAN_DYE: "ສີຍ້ອມສີຟ້າໃສ"
+  DANGER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຄຣີບເປີ"
+  DANGER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຄຣີບເປີ"
+  DARK_OAK_BOAT: "ເຮືອໄມ້ໂອກດຳ"
+  DARK_OAK_CHEST_BOAT: "ເຮືອໄມ້ໂອກດຳພ້ອມຫີບ"
+  DEBUG_STICK: "ແທ່ງໄມ້ດີບັ໊ກ"
+  DEBUG_STICK_EMPTY: "%s ບໍ່ມີຄຸນສົມບັດ"
+  DEBUG_STICK_SELECT: "ເລືອກ \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" ໄປຫາ %s"
+  DIAMOND: "ເພັດ"
+  DIAMOND_AXE: "ຂວານເພັດ"
+  DIAMOND_BOOTS: "ເກີບເພັດ"
+  DIAMOND_CHESTPLATE: "ເສື້ອເກາະເພັດ"
+  DIAMOND_HELMET: "ໝວກເພັດ"
+  DIAMOND_HOE: "ຈົກເພັດ"
+  DIAMOND_HORSE_ARMOR: "ເກາະມ້າເພັດ"
+  DIAMOND_LEGGINGS: "ໂສ້ງເພັດ"
+  DIAMOND_PICKAXE: "ອິປິກເພັດ"
+  DIAMOND_SHOVEL: "ຊວ້ານເພັດ"
+  DIAMOND_SWORD: "ດາບເພັດ"
+  DISC_FRAGMENT_5: "ຊິ້ນສ່ວນແຜ່ນສຽງ"
+  DISC_FRAGMENT_5_DESC: "ແຜ່ນສຽງ - 5"
+  DOLPHIN_SPAWN_EGG: "ໄຂ່ເກີດປາໂລມາ"
+  DONKEY_SPAWN_EGG: "ໄຂ່ເກີດລໍ"
+  DRAGON_BREATH: "ລົມຫາຍໃຈມັງກອນ"
+  DRIED_KELP: "ສາຫຼ່າຍທະເລແຫ້ງ"
+  DROWNED_SPAWN_EGG: "ໄຂ່ເກີດຊອມບີ້ກ້ອງນ້ຳ"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  ECHO_SHARD: "ເສດເອັກໂຄ"
+  EGG: "ໄຂ່"
+  ELDER_GUARDIAN_SPAWN_EGG: "ໄຂ່ເກີດຜູ້ພິທັກອາວຸໂສ"
+  ELYTRA: "ປີກແມງໄມ້"
+  EMERALD: "ມໍລະກົດ"
+  ENCHANTED_BOOK: "ຕຳລາຮວາຍມົນ"
+  ENCHANTED_GOLDEN_APPLE: "ແອັບເປິ້ນຄຳຮວາຍມົນ"
+  END_CRYSTAL: "ຜະລຶກເອັນ"
+  ENDER_DRAGON_SPAWN_EGG: "ໄຂ່ເກີດມັງກອນເອັນເດີ"
+  ENDER_EYE: "ດວງຕາແຫ່ງເອັນເດີ"
+  ENDER_PEARL: "ໄຂ່ມຸກເອັນເດີ"
+  ENDERMAN_SPAWN_EGG: "ໄຂ່ເກີດເອັນເດີແມນ"
+  ENDERMITE_SPAWN_EGG: "ໄຂ່ເກີດເອັນເດີໄມ"
+  EVOKER_SPAWN_EGG: "ໄຂ່ເກີດອີໂວກເກີ"
+  EXPERIENCE_BOTTLE: "ແກ້ວນ້ຳແຫ່ງເວດມົນ"
+  EXPLORER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍນັກສຳຫຼວດ"
+  EXPLORER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍນັກສຳຫຼວດ"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  FEATHER: "ຂົນນົກ"
+  FERMENTED_SPIDER_EYE: "ຕາແມງມຸມດອງ"
+  FILLED_MAP: "ແຜນທີ່"
+  FIRE_CHARGE: "ລູກໄຟ"
+  FIREWORK_ROCKET: "ຈະຫຼວດພຸ"
+  FIREWORK_ROCKET_FLIGHT: "ໄລຍະເວລາບິນ:"
+  FIREWORK_STAR: "ດາວພຸ"
+  FIREWORK_STAR_BLACK: "ສີດຳ"
+  FIREWORK_STAR_BLUE: "ສີຟ້າ"
+  FIREWORK_STAR_BROWN: "ສີນ້ຳຕານ"
+  FIREWORK_STAR_CUSTOM_COLOR: "ກຳນົດເອງ"
+  FIREWORK_STAR_CYAN: "ສີຟ້າໃສ"
+  FIREWORK_STAR_FADE_TO: "ຈາງລົງເປັນ"
+  FIREWORK_STAR_FLICKER: "ຍິບຍັບ"
+  FIREWORK_STAR_GRAY: "ສີເທົາ"
+  FIREWORK_STAR_GREEN: "ສີຂຽວ"
+  FIREWORK_STAR_LIGHT_BLUE: "ສີຟ້າອ່ອນ"
+  FIREWORK_STAR_LIGHT_GRAY: "ສີເທົາອ່ອນ"
+  FIREWORK_STAR_LIME: "ສີຂຽວອ່ອນ"
+  FIREWORK_STAR_MAGENTA: "ສີມ້ວງແດງ"
+  FIREWORK_STAR_ORANGE: "ສີສົ້ມ"
+  FIREWORK_STAR_PINK: "ສີບົວ"
+  FIREWORK_STAR_PURPLE: "ສີມ້ວງ"
+  FIREWORK_STAR_RED: "ສີແດງ"
+  FIREWORK_STAR_SHAPE: "ບໍ່ຮູ້ຮູບຮ່າງ"
+  FIREWORK_STAR_SHAPE_BURST: "ລະເບີດ"
+  FIREWORK_STAR_SHAPE_CREEPER: "ຮູບຊົງຄຣີບເປີ"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "ກ້ອນໃຫຍ່"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "ກ້ອນນ້ອຍ"
+  FIREWORK_STAR_SHAPE_STAR: "ຮູບດາວ"
+  FIREWORK_STAR_TRAIL: "ເສັ້ນທາງ"
+  FIREWORK_STAR_WHITE: "ສີຂາວ"
+  FIREWORK_STAR_YELLOW: "ສີເຫຼືອງ"
+  FISHING_ROD: "ຄັນ​ເບັດຕຶກປາ"
+  FLINT: "ຫີນເຫຼັກໄຟ"
+  FLINT_AND_STEEL: "ຫີນເຫຼັກໄຟກັບເຫຼັກກ້າ"
+  FLOWER_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  FLOWER_BANNER_PATTERN_DESC: "ກາສັນຍະລັກດອກໄມ້"
+  FOX_SPAWN_EGG: "ໄຂ່ເກີດໝາຈອກ"
+  FRIEND_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໝູ່"
+  FRIEND_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໝູ່"
+  FROG_SPAWN_EGG: "ໄຂ່ເກີດກົບ"
+  FURNACE_MINECART: "ລົດລາງພ້ອມເຕົາເຜົາ"
+  GHAST_SPAWN_EGG: "ໄຂ່ເກີດແກ໊ສ"
+  GHAST_TEAR: "ນ້ຳຕາແກ໊ສ"
+  GLASS_BOTTLE: "ຕຸກແກ້ວ"
+  GLISTERING_MELON_SLICE: "ປ່ຽງໝາກໂມຄຳ"
+  GLOBE_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  GLOBE_BANNER_PATTERN_DESC: "ໜ່ວຍໂລກ"
+  GLOW_BERRIES: "ເບີຣີ່ເຮືອງແສງ"
+  GLOW_INK_SAC: "ຖົງໝຶກເຮືອງແສງ"
+  GLOW_ITEM_FRAME: "ຂອບໄອເທັມເຮືອງແສງ"
+  GLOW_SQUID_SPAWN_EGG: "ໄຂ່ເກີດປາໝຶກເຮືອງແສງ"
+  GLOWSTONE_DUST: "ຜົງຫີນເຮືອງແສງ"
+  GOAT_HORN: "ເຂົາແບ້"
+  GOAT_SPAWN_EGG: "ໄຂ່ເກີດແບ້"
+  GOLD_INGOT: "ກ້ອນຄຳ"
+  GOLD_NUGGET: "ເສດຄຳ"
+  GOLDEN_APPLE: "ແອັບເປິ້ນຄຳ"
+  GOLDEN_AXE: "ຂວານຄຳ"
+  GOLDEN_BOOTS: "ເກີບຄຳ"
+  GOLDEN_CARROT: "ກະຫຼົດຄຳ"
+  GOLDEN_CHESTPLATE: "ເສື້ອເກາະຄຳ"
+  GOLDEN_HELMET: "ໝວກຄຳ"
+  GOLDEN_HOE: "ຈົກຄຳ"
+  GOLDEN_HORSE_ARMOR: "ເກາະມ້າຄຳ"
+  GOLDEN_LEGGINGS: "ໂສ້ງຄຳ"
+  GOLDEN_PICKAXE: "ອິປິກຄຳ"
+  GOLDEN_SHOVEL: "ຊວ້ານຄຳ"
+  GOLDEN_SWORD: "ດາບຄຳ"
+  GRAY_DYE: "ສີຍ້ອມສີເທົາ"
+  GREEN_DYE: "ສີຍ້ອມສີຂຽວ"
+  GUARDIAN_SPAWN_EGG: "ໄຂ່ເກີດຜູ້ພິທັກ"
+  GUNPOWDER: "ດິນປືນ"
+  HEART_OF_THE_SEA: "ຫົວໃຈແຫ່ງທະເລ"
+  HEART_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຫົວໃຈ"
+  HEART_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຫົວໃຈ"
+  HEARTBREAK_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເອິກຫັກ"
+  HEARTBREAK_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເອິກຫັກ"
+  HOGLIN_SPAWN_EGG: "ໄຂ່ເກີດຮ໋ອກລິນ"
+  HONEY_BOTTLE: "ແກ້ວນ້ຳເຜິ້ງ"
+  HONEYCOMB: "ຮວງເຜິ້ງ"
+  HOPPER_MINECART: "ລົດລາງພ້ອມທໍ່ສົ່ງ"
+  HORSE_SPAWN_EGG: "ໄຂ່ເກີດມ້າ"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  HOWL_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໝາ"
+  HOWL_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍໝາ"
+  HUSK_SPAWN_EGG: "ໄຂ່ເກີດຊອມບີ້ທະເລຊາຍ"
+  INK_SAC: "ຖົງໝຶກ"
+  IRON_AXE: "ຂວານເຫຼັກ"
+  IRON_BOOTS: "ເກີບເຫຼັກ"
+  IRON_CHESTPLATE: "ເສື້ອເກາະເຫຼັກ"
+  IRON_GOLEM_SPAWN_EGG: "ໄຂ່ເກີດໂກເລັມເຫຼັກ"
+  IRON_HELMET: "ໝວກເຫຼັກ"
+  IRON_HOE: "ຈົກເຫຼັກ"
+  IRON_HORSE_ARMOR: "ເກາະມ້າເຫຼັກ"
+  IRON_INGOT: "ກ້ອນເຫຼັກ"
+  IRON_LEGGINGS: "ໂສ້ງເຫຼັກ"
+  IRON_NUGGET: "ເສດເຫຼັກ"
+  IRON_PICKAXE: "ອິປິກເຫຼັກ"
+  IRON_SHOVEL: "ຊວ້ານເຫຼັກ"
+  IRON_SWORD: "ດາບເຫຼັກ"
+  ITEM_FRAME: "ຂອບໄອເທັມ"
+  JUNGLE_BOAT: "ເຮືອໄມ້ປ່າດົງດິບ"
+  JUNGLE_CHEST_BOAT: "ເຮືອໄມ້ປ່າດົງດິບພ້ອມຫີບ"
+  KNOWLEDGE_BOOK: "ປຶ້ມຄວາມຮູ້"
+  LAPIS_LAZULI: "ເພທູນ"
+  LAVA_BUCKET: "ຄຸລາວາ"
+  LEAD: "ເຊືອກຈູງ"
+  LEATHER: "ໜັງ"
+  LEATHER_BOOTS: "ເກີບໜັງ"
+  LEATHER_CHESTPLATE: "ເສື້ອເກາະໜັງ"
+  LEATHER_HELMET: "ໝວກໜັງ"
+  LEATHER_HORSE_ARMOR: "ເກາະມ້າໜັງ"
+  LEATHER_LEGGINGS: "ໂສ້ງໜັງ"
+  LIGHT_BLUE_DYE: "ສີຍ້ອມສີຟ້າອ່ອນ"
+  LIGHT_GRAY_DYE: "ສີຍ້ອມສີເທົາອ່ອນ"
+  LIME_DYE: "ສີຍ້ອມສີຂຽວອ່ອນ"
+  LINGERING_POTION: "ນ້ຳຢາແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_AWKWARD: "ນ້ຳຢາເງິງະແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_EMPTY: "ນ້ຳຢາແບບລະເຫີຍທີ່ບໍ່ສາມາດປຸງໄດ້"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "ນ້ຳຢາທົນໄຟແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_HARMING: "ນ້ຳຢາເສຍເລືອດແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_HEALING: "ນ້ຳຢາຟື້ນຟູແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "ນ້ຳຢາລ່ອງຫົນແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_LEAPING: "ນ້ຳຢາໂດດສູງແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_LEVITATION: "ນ້ຳຢາລອຍໂຕແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_LUCK: "ນ້ຳຢາໂຊກດີແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_MUNDANE: "ນ້ຳຢາປົກກະຕິແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "ນ້ຳຢາແນມເຫັນກາງຄືນແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_POISON: "ນ້ຳຢາພິດແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_REGENERATION: "ນ້ຳຢາຟື້ນຟູຕໍ່ເນື່ອງແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "ນ້ຳຢາຕົກນຸ້ມນວນແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_SLOWNESS: "ນ້ຳຢາເຍີບຍາບແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_STRENGTH: "ນ້ຳຢາໂຈມຕີແຮງແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "ນ້ຳຢາຄ່ອງແຄ່ວແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_THICK: "ນ້ຳຢາເຂັ້ມຂຸ້ນແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "ນ້ຳຢາປະລາມະຈານເຕົ່າແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_WATER: "ແກ້ວນ້ຳແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "ນ້ຳຢາຫາຍໃຈກ້ອງນ້ຳແບບລະເຫີຍ"
+  LINGERING_POTION_EFFECT_WEAKNESS: "ນ້ຳຢາໂຈມຕີຄ່ອຍແບບລະເຫີຍ"
+  LLAMA_SPAWN_EGG: "ໄຂ່ເກີດລາມະ"
+  LODESTONE_COMPASS: "ເຂັມທິດຫີນນຳທາງ"
+  MAGENTA_DYE: "ສີຍ້ອມສີມ້ວງແດງ"
+  MAGMA_CREAM: "ຄຣີມແມັກມ່າ"
+  MAGMA_CUBE_SPAWN_EGG: "ໄຂ່ເກີດແມັກມ່າກະລ໋ອກ"
+  MANGROVE_BOAT: "ເຮືອໄມ້ໂກງກາງ"
+  MANGROVE_CHEST_BOAT: "ເຮືອໄມ້ໂກງກາງພ້ອມຫີບ"
+  MAP: "ແຜນທີ່ເປົ່າ"
+  MELON_SEEDS: "ເມັດໝາກໂມ"
+  MELON_SLICE: "ປ່ຽງໝາກໂມ"
+  MILK_BUCKET: "ຄຸນົມ"
+  MINECART: "ລົດລາງ"
+  MINER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍອິປິກ"
+  MINER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍອິປິກ"
+  MOJANG_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  MOJANG_BANNER_PATTERN_DESC: "ໂມຈາງ"
+  MOOSHROOM_SPAWN_EGG: "ໄຂ່ເກີດມູດຣູມ"
+  MOURNER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍວໍຣ໌ເດັນ"
+  MOURNER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍວໍຣ໌ເດັນ"
+  MULE_SPAWN_EGG: "ໄຂ່ເກີດລວາ"
+  MUSHROOM_STEW: "ສະຕູເຫັດ"
+  MUSIC_DISC_11: "ແຜ່ນສຽງ"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "ແຜ່ນສຽງ"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "ແຜ່ນສຽງ"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "ແຜ່ນສຽງ"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "ແຜ່ນສຽງ"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "ແຜ່ນສຽງ"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "ແຜ່ນສຽງ"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "ແຜ່ນສຽງ"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "ແຜ່ນສຽງ"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "ແຜ່ນສຽງ"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "ແຜ່ນສຽງ"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "ແຜ່ນສຽງ"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "ແຜ່ນສຽງ"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "ແຜ່ນສຽງ"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "ແຜ່ນສຽງ"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "ແຜ່ນສຽງ"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "ຊີ້ນແກະດິບ"
+  NAME_TAG: "ປ້າຍ​ຊື່"
+  NAUTILUS_SHELL: "ເປືອກຫອຍງວງຊ້າງ"
+  NETHER_BRICK: "ດິນຈີ່ເນເທີ"
+  NETHER_STAR: "ດາວເນເທີ"
+  NETHERITE_AXE: "ຂວານເນເທີໄຣ"
+  NETHERITE_BOOTS: "ເກີບເນເທີໄຣ"
+  NETHERITE_CHESTPLATE: "ເສື້ອເກາະເນເທີໄຣ"
+  NETHERITE_HELMET: "ໝວກເນເທີໄຣ"
+  NETHERITE_HOE: "ຈົກເນເທີໄຣ"
+  NETHERITE_INGOT: "ກ້ອນເນີເທີໄຣ"
+  NETHERITE_LEGGINGS: "ໂສ້ງເນເທີໄຣ"
+  NETHERITE_PICKAXE: "ອິປິກເນເທີໄຣ"
+  NETHERITE_SCRAP: "ເສດເນເທີໄຣ"
+  NETHERITE_SHOVEL: "ຊວ້ານເນເທີໄຣ"
+  NETHERITE_SWORD: "ດາບເນເທີໄຣ"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  OAK_BOAT: "ເຮືອໄມ້ໂອກ"
+  OAK_CHEST_BOAT: "ເຮືອໄມ້ໂອກພ້ອມຫີບ"
+  OCELOT_SPAWN_EGG: "ໄຂ່ເກີດແມວປ່າ"
+  ORANGE_DYE: "ສີຍ້ອມສີສົ້ມ"
+  PAINTING: "ຮູບແຕ້ມ"
+  PANDA_SPAWN_EGG: "ໄຂ່ເກີດໝີແພນດ້າ"
+  PAPER: "ເຈ້ຍ"
+  PARROT_SPAWN_EGG: "ໄຂ່ເກີດນົກແກ້ວ"
+  PHANTOM_MEMBRANE: "ເຍື່ອແຟນທ່ອມ"
+  PHANTOM_SPAWN_EGG: "ໄຂ່ເກີດແຟນທ່ອມ"
+  PIG_SPAWN_EGG: "ໄຂ່ເກີດໝູ"
+  PIGLIN_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  PIGLIN_BANNER_PATTERN_DESC: "ດັງໝູ"
+  PIGLIN_BRUTE_SPAWN_EGG: "ໄຂ່ເກີດພິກລິນຈອມໂຫດ"
+  PIGLIN_SPAWN_EGG: "ໄຂ່ເກີດພິກລິນ"
+  PILLAGER_SPAWN_EGG: "ໄຂ່ເກີດກອງໂຈນ"
+  PINK_DYE: "ສີຍ້ອມສີບົວ"
+  PITCHER_POD: "ເມັດໝໍ້ເຂົ້າໝໍ້ແກງລິງ"
+  PLENTY_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເສດຖີ"
+  PLENTY_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເສດຖີ"
+  POISONOUS_POTATO: "ມັນຝຣັ່ງພິດ"
+  POLAR_BEAR_SPAWN_EGG: "ໄຂ່ເກີດໝີຂົ້ວໂລກ"
+  POPPED_CHORUS_FRUIT: "ໝາກຄໍຣັສສຸກ"
+  PORKCHOP: "ຊີ້ນໝູດິບ"
+  POTATO: "ມັນຝຣັ່ງ"
+  POTION: "ນ້ຳຢາ"
+  POTION_EFFECT_AWKWARD: "ນ້ຳຢາເງິງະ"
+  POTION_EFFECT_EMPTY: "ນ້ຳຢາທີ່ບໍ່ສາມາດປຸງໄດ້"
+  POTION_EFFECT_FIRE_RESISTANCE: "ນ້ຳຢາທົນໄຟ"
+  POTION_EFFECT_HARMING: "ນ້ຳຢາເສຍເລືອດ"
+  POTION_EFFECT_HEALING: "ນ້ຳຢາຟື້ນຟູ"
+  POTION_EFFECT_INVISIBILITY: "ນ້ຳຢາລ່ອງຫົນ"
+  POTION_EFFECT_LEAPING: "ນ້ຳຢາໂດດສູງ"
+  POTION_EFFECT_LEVITATION: "ນ້ຳຢາລອຍໂຕ"
+  POTION_EFFECT_LUCK: "ນ້ຳຢາໂຊກດີ"
+  POTION_EFFECT_MUNDANE: "ນ້ຳຢາປົກກະຕິ"
+  POTION_EFFECT_NIGHT_VISION: "ນ້ຳຢາແນມເຫັນກາງຄືນ"
+  POTION_EFFECT_POISON: "ນ້ຳຢາພິດ"
+  POTION_EFFECT_REGENERATION: "ນ້ຳຢາຟື້ນຟູຕໍ່ເນື່ອງ"
+  POTION_EFFECT_SLOW_FALLING: "ນ້ຳຢາຕົກນຸ້ມນວນ"
+  POTION_EFFECT_SLOWNESS: "ນ້ຳຢາເຍີບຍາບ"
+  POTION_EFFECT_STRENGTH: "ນ້ຳຢາໂຈມຕີແຮງ"
+  POTION_EFFECT_SWIFTNESS: "ນ້ຳຢາຄ່ອງແຄ່ວ"
+  POTION_EFFECT_THICK: "ນ້ຳຢາເຂັ້ມຂຸ້ນ"
+  POTION_EFFECT_TURTLE_MASTER: "ນ້ຳຢາປະລາມະຈານເຕົ່າ"
+  POTION_EFFECT_WATER: "ແກ້ວນ້ຳ"
+  POTION_EFFECT_WATER_BREATHING: "ນ້ຳຢາຫາຍໃຈກ້ອງນ້ຳ"
+  POTION_EFFECT_WEAKNESS: "ນ້ຳຢາໂຈມຕີຄ່ອຍ"
+  POTTERY_SHARD_ARCHER: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍທະນູ"
+  POTTERY_SHARD_ARMS_UP: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຄົນຍົກແຂນ"
+  POTTERY_SHARD_PRIZE: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເພັດ"
+  POTTERY_SHARD_SKULL: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຫົວກະໂຫຼກ"
+  POWDER_SNOW_BUCKET: "ຄຸຫິມະຜົງ"
+  PRISMARINE_CRYSTALS: "ຜະລຶກພຣິສມາຣີນ"
+  PRISMARINE_SHARD: "ເສດພຣິສມາຣີນ"
+  PRIZE_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເພັດ"
+  PRIZE_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍເພັດ"
+  PUFFERFISH: "ປາປັກເປົ້າ"
+  PUFFERFISH_BUCKET: "ຄຸປາປັກເປົ້າ"
+  PUFFERFISH_SPAWN_EGG: "ໄຂ່ເກີດປາປັກເປົ້າ"
+  PUMPKIN_PIE: "ພາຍໝາກອຶ"
+  PUMPKIN_SEEDS: "ເມັດໝາກອຶ"
+  PURPLE_DYE: "ສີຍ້ອມສີມ້ວງ"
+  QUARTZ: "ມະນີສິລາເນເທີ"
+  RABBIT: "ຊີ້ນກະຕ່າຍດິບ"
+  RABBIT_FOOT: "ຕີນກະຕ່າຍ"
+  RABBIT_HIDE: "ໜັງກະຕ່າຍ"
+  RABBIT_SPAWN_EGG: "ໄຂ່ເກີດກະຕ່າຍ"
+  RABBIT_STEW: "ສະຕູກະຕ່າຍ"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  RAVAGER_SPAWN_EGG: "ໄຂ່ເກີດຜີສາດປຸ້ນສະດົມ"
+  RAW_COPPER: "ທອງແດງດິບ"
+  RAW_GOLD: "ຄຳດິບ"
+  RAW_IRON: "ເຫຼັກດິບ"
+  RECOVERY_COMPASS: "ເຂັມທິດຫວນຄືນ"
+  RED_DYE: "ສີຍ້ອມສີແດງ"
+  REDSTONE: "ຜົງຫີນແດງ"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  ROTTEN_FLESH: "ຊີ້ນເນົ່າ"
+  SADDLE: "ອານ"
+  SALMON: "ປາແຊວມອນດິບ"
+  SALMON_BUCKET: "ຄຸປາແຊວມອນ"
+  SALMON_SPAWN_EGG: "ໄຂ່ເກີດປາແຊວມອນ"
+  SCUTE: "ເກັດເຕົ່າ"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SHEAF_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍມັດເຂົ້າ"
+  SHEAF_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍມັດເຂົ້າ"
+  SHEARS: "ມີດຕັດ"
+  SHEEP_SPAWN_EGG: "ໄຂ່ເກີດແກະ"
+  SHELTER_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຮົ່ມໄມ້"
+  SHELTER_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຮົ່ມໄມ້"
+  SHIELD: "ໂລ້"
+  SHIELD_BLACK: "ໂລ້ສີດຳ"
+  SHIELD_BLUE: "ໂລ້ສີຟ້າ"
+  SHIELD_BROWN: "ໂລ້ສີນ້ຳຕານ"
+  SHIELD_CYAN: "ໂລ້ສີຟ້າໃສ"
+  SHIELD_GRAY: "ໂລ້ສີເທົາ"
+  SHIELD_GREEN: "ໂລ້ສີຂຽວ"
+  SHIELD_LIGHT_BLUE: "ໂລ້ສີຟ້າອ່ອນ"
+  SHIELD_LIGHT_GRAY: "ໂລ້ສີເທົາອ່ອນ"
+  SHIELD_LIME: "ໂລ້ສີຂຽວອ່ອນ"
+  SHIELD_MAGENTA: "ໂລ້ສີມ້ວງແດງ"
+  SHIELD_ORANGE: "ໂລ້ສີສົ້ມ"
+  SHIELD_PINK: "ໂລ້ສີບົວ"
+  SHIELD_PURPLE: "ໂລ້ສີມ້ວງ"
+  SHIELD_RED: "ໂລ້ສີແດງ"
+  SHIELD_WHITE: "ໂລ້ສີຂາວ"
+  SHIELD_YELLOW: "ໂລ້ສີເຫຼືອງ"
+  SHULKER_SHELL: "ເປືອກເຊົາເກີ"
+  SHULKER_SPAWN_EGG: "ໄຂ່ເກີດເຊົາເກີ"
+  SIGN: "ປ້າຍ"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SILVERFISH_SPAWN_EGG: "ໄຂ່ເກີດແມງສາມງ່າມ"
+  SKELETON_HORSE_SPAWN_EGG: "ໄຂ່ເກີດມ້າໂຄງກະດູກ"
+  SKELETON_SPAWN_EGG: "ໄຂ່ເກີດໂຄງກະດູກ"
+  SKULL_BANNER_PATTERN: "ແບບລາຍທຸງ"
+  SKULL_BANNER_PATTERN_DESC: "ກາສັນຍະລັກຫົວກະໂຫຼກ"
+  SKULL_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຫົວກະໂຫຼກ"
+  SKULL_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍຫົວກະໂຫຼກ"
+  SLIME_BALL: "ກ້ອນສະລາມ"
+  SLIME_SPAWN_EGG: "ໄຂ່ເກີດສະລາມ"
+  SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SMITHING_TEMPLATE_APPLIES_TO: "ໃຊ້ກັບ:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "ເພີ່ມກ້ອນແຮ່ ຫຼື ຜະລຶກ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "ເກາະ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "ເພີ່ມເສດເກາະ"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ກ້ອນແຮ່ ແລະ ຜະລຶກ"
+  SMITHING_TEMPLATE_INGREDIENTS: "ສ່ວນປະກອບ:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "ເພີ່ມກ້ອນເນີເທີໄຣ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "ອຸປະກອນເພັດ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "ເພີ່ມເກາະ ອາວຸດ ຫຼື ເຄື່ອງມືເພັດ"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "ກ້ອນເນີເທີໄຣ"
+  SMITHING_TEMPLATE_UPGRADE: "ອັບເກຣດ: "
+  SNIFFER_SPAWN_EGG: "ໄຂ່ເກີດສະນິບເຟີ"
+  SNORT_POTTERY_SHARD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍສະນິບເຟີ"
+  SNORT_POTTERY_SHERD: "ເສດເຄື່ອງປັ້ນດິນເຜົາລາຍສະນິບເຟີ"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SNOW_GOLEM_SPAWN_EGG: "ໄຂ່ເກີດໂກເລັມຫິມະ"
+  SNOWBALL: "ກ້ອນຫິມະ"
+  SPECTRAL_ARROW: "ລູກທະນູເຮືອງແສງ"
+  SPIDER_EYE: "ຕາແມງມຸມ"
+  SPIDER_SPAWN_EGG: "ໄຂ່ເກີດແມງມຸມ"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  SPLASH_POTION: "ນ້ຳຢາແບບດຶກ"
+  SPLASH_POTION_EFFECT_AWKWARD: "ນ້ຳຢາເງິງະແບບດຶກ"
+  SPLASH_POTION_EFFECT_EMPTY: "ນ້ຳຢາແບບດຶກທີ່ບໍ່ສາມາດປຸງໄດ້"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "ນ້ຳຢາທົນໄຟດຶກ"
+  SPLASH_POTION_EFFECT_HARMING: "ນ້ຳຢາເສຍເລືອດແບບດຶກ"
+  SPLASH_POTION_EFFECT_HEALING: "ນ້ຳຢາຟື້ນຟູແບບດຶກ"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "ນ້ຳຢາລ່ອງຫົນແບບດຶກ"
+  SPLASH_POTION_EFFECT_LEAPING: "ນ້ຳຢາໂດດສູງແບບດຶກ"
+  SPLASH_POTION_EFFECT_LEVITATION: "ນ້ຳຢາລອຍໂຕແບບດຶກ"
+  SPLASH_POTION_EFFECT_LUCK: "ນ້ຳຢາໂຊກດີແບບດຶກ"
+  SPLASH_POTION_EFFECT_MUNDANE: "ນ້ຳຢາປົກກະຕິແບບດຶກ"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "ນ້ຳຢາແນມເຫັນກາງຄືນແບບດຶກ"
+  SPLASH_POTION_EFFECT_POISON: "ນ້ຳຢາພິດແບບດຶກ"
+  SPLASH_POTION_EFFECT_REGENERATION: "ນ້ຳຢາຟື້ນຟູຕໍ່ເນື່ອງແບບດຶກ"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "ນ້ຳຢາຕົກນຸ້ມນວນແບບດຶກ"
+  SPLASH_POTION_EFFECT_SLOWNESS: "ນ້ຳຢາເຍີບຍາບແບບດຶກ"
+  SPLASH_POTION_EFFECT_STRENGTH: "ນ້ຳຢາໂຈມຕີແຮງແບບດຶກ"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "ນ້ຳຢາຄ່ອງແຄ່ວແບບດຶກ"
+  SPLASH_POTION_EFFECT_THICK: "ນ້ຳຢາເຂັ້ມຂຸ້ນແບບດຶກ"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "ນ້ຳຢາປະລາມະຈານເຕົ່າແບບດຶກ"
+  SPLASH_POTION_EFFECT_WATER: "ແກ້ວນ້ຳແບບດຶກ"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "ນ້ຳຢາຫາຍໃຈກ້ອງນ້ຳແບບດຶກ"
+  SPLASH_POTION_EFFECT_WEAKNESS: "ນ້ຳຢາໂຈມຕີຄ່ອຍແບບດຶກ"
+  SPRUCE_BOAT: "ເຮືອໄມ້ສະປຣູດ"
+  SPRUCE_CHEST_BOAT: "ເຮືອໄມ້ສະປຣູດພ້ອມຫີບ"
+  SPYGLASS: "ກ້ອງສອດແນມ"
+  SQUID_SPAWN_EGG: "ໄຂ່ເກີດປາໝຶກ"
+  STICK: "ແທ່ງໄມ້"
+  STONE_AXE: "ຂວານຫີນ"
+  STONE_HOE: "ຈົກຫີນ"
+  STONE_PICKAXE: "ອິປິກຫີນ"
+  STONE_SHOVEL: "ຊວ້ານຫີນ"
+  STONE_SWORD: "ດາບຫີນ"
+  STRAY_SPAWN_EGG: "ໄຂ່ເກີດໂຄງກະດູກນ້ຳກ້ອນ"
+  STRIDER_SPAWN_EGG: "ໄຂ່ເກີດສະໄຕຣເດີ"
+  STRING: "ເສັ້ນໃຍ"
+  SUGAR: "ນ້ຳຕານ"
+  SUSPICIOUS_STEW: "ສະຕູໜ້າສົງໄສ"
+  SWEET_BERRIES: "ເບີຣີ່ຫວານ"
+  TADPOLE_BUCKET: "ຄຸໂຕຮວກ"
+  TADPOLE_SPAWN_EGG: "ໄຂ່ເກີດຮວກ"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  TIPPED_ARROW: "ລູກທະນູອາບຢາ"
+  TIPPED_ARROW_EFFECT_AWKWARD: "ລູກທະນູອາບຢາ"
+  TIPPED_ARROW_EFFECT_EMPTY: "ລູກທະນູອາບຢາທີ່ບໍ່ສາມາດຄຣາບໄດ້"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "ລູກທະນູອາບຢາທົນໄຟ"
+  TIPPED_ARROW_EFFECT_HARMING: "ລູກທະນູອາບຢາເສຍເລືອດ"
+  TIPPED_ARROW_EFFECT_HEALING: "ລູກທະນູອາບຢາຟື້ນຟູ"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "ລູກທະນູອາບຢາລ່ອງຫົນ"
+  TIPPED_ARROW_EFFECT_LEAPING: "ລູກທະນູອາບຢາໂດດສູງ"
+  TIPPED_ARROW_EFFECT_LEVITATION: "ລູກທະນູອາບຢາລອຍໂຕ"
+  TIPPED_ARROW_EFFECT_LUCK: "ລູກທະນູອາບຢາໂຊກດີ"
+  TIPPED_ARROW_EFFECT_MUNDANE: "ລູກທະນູອາບຢາ"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "ລູກທະນູອາບຢາແນມເຫັນກາງຄືນ"
+  TIPPED_ARROW_EFFECT_POISON: "ລູກທະນູອາບຢາພິດ"
+  TIPPED_ARROW_EFFECT_REGENERATION: "ລູກທະນູອາບຢາຟື້ນຟູຕໍ່ເນື່ອງ"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "ລູກທະນູອາບຢາຕົກນຸ້ມນວນ"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "ລູກທະນູອາບຢາເຍີບຍາບ"
+  TIPPED_ARROW_EFFECT_STRENGTH: "ລູກທະນູອາບຢາໂຈມຕີແຮງ"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "ລູກທະນູອາບຢາຄ່ອງແຄ່ວ"
+  TIPPED_ARROW_EFFECT_THICK: "ລູກທະນູອາບຢາ"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "ລູກທະນູອາບຢາປະລາມະຈານເຕົ່າ"
+  TIPPED_ARROW_EFFECT_WATER: "ລູກທະນູອາບນ້ຳ"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "ລູກທະນູອາບຢາຫາຍໃຈກ້ອງນ້ຳ"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "ລູກທະນູອາບຢາໂຈມຕີຄ່ອຍ"
+  TNT_MINECART: "ລົດລາງພ້ອມລະເບີດທີເອັນທີ"
+  TORCHFLOWER_SEEDS: "ເມັດດອກຄົບໄຟ"
+  TOTEM_OF_UNDYING: "ເຄື່ອງລາງບໍ່ມີມື້ຕາຍ"
+  TRADER_LLAMA_SPAWN_EGG: "ໄຂ່ເກີດລາມະພໍ່ຄ້າ"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "ສາມງ່າມ"
+  TROPICAL_FISH: "ປາເຂດຮ້ອນ"
+  TROPICAL_FISH_BUCKET: "ຄຸປາເຂດຮ້ອນ"
+  TROPICAL_FISH_SPAWN_EGG: "ໄຂ່ເກີດປາເຂດຮ້ອນ"
+  TURTLE_HELMET: "ກະດອງເຕົ່າ"
+  TURTLE_SPAWN_EGG: "ໄຂ່ເກີດເຕົ່າ"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  VEX_SPAWN_EGG: "ໄຂ່ເກີດເວກ"
+  VILLAGER_SPAWN_EGG: "ໄຂ່ເກີດຊາວບ້ານ"
+  VINDICATOR_SPAWN_EGG: "ໄຂ່ເກີດວິນດິເຄເຕີ"
+  WANDERING_TRADER_SPAWN_EGG: "ໄຂ່ເກີດພໍ່ຄ້າຮ່ວນແຮ່"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  WARDEN_SPAWN_EGG: "ໄຂ່ເກີດວໍຣ໌ເດັນ"
+  WARPED_FUNGUS_ON_A_STICK: "ເຫັດເຊື້ອລາຜີບ້າຕິດເບັດ"
+  WATER_BUCKET: "ຄຸນ້ຳ"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  WHEAT: "ເຂົ້າສາລີ"
+  WHEAT_SEEDS: "ເມັດເຂົ້າສາລີ"
+  WHITE_DYE: "ສີຍ້ອມສີຂາວ"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "ແມ່ພິມຫຼອມ"
+  WITCH_SPAWN_EGG: "ໄຂ່ເກີດແມ່ມົດ"
+  WITHER_SKELETON_SPAWN_EGG: "ໄຂ່ເກີດໂຄງກະດູກວິດເທີ"
+  WITHER_SPAWN_EGG: "ໄຂ່ເກີດວິດເທີ"
+  WOLF_SPAWN_EGG: "ໄຂ່ເກີດໝາປ່າ"
+  WOODEN_AXE: "ຂວານໄມ້"
+  WOODEN_HOE: "ຈົກໄມ້"
+  WOODEN_PICKAXE: "ອິປິກໄມ້"
+  WOODEN_SHOVEL: "ຊວ້ານໄມ້"
+  WOODEN_SWORD: "ດາບໄມ້"
+  WRITABLE_BOOK: "ປຶ້ມກັບບິກຂົນນົກ"
+  WRITTEN_BOOK: "ປຶ້ມຂຽນແລ້ວ"
+  YELLOW_DYE: "ສີຍ້ອມສີເຫຼືອງ"
+  ZOGLIN_SPAWN_EGG: "ໄຂ່ເກີດຊ໋ອກລິນ"
+  ZOMBIE_HORSE_SPAWN_EGG: "ໄຂ່ເກີດມ້າຊອມບີ້"
+  ZOMBIE_SPAWN_EGG: "ໄຂ່ເກີດຊອມບີ້"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "ໄຂ່ເກີດຊາວບ້ານຊອມບີ້"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "ໄຂ່ເກີດພິກລິນຊອມບີ້"
+  CHEST: "ເມື່ອສວມໃສ່ໂຕ:"
+  FEET: "ເມື່ອຢູ່ທີ່ຕີນ:"
+  HEAD: "ເມື່ອຢູ່ເທິງຫົວ:"
+  LEGS: "ເມື່ອຢູ່ທີ່ຂາ:"
+  MAINHAND: "ເມື່ອຢູ່ໃນມືຫຼັກ:"
+  OFFHAND: "ເມື່ອຢູ່ໃນມືຮອງ:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "akáciafa gomb"
+  ACACIA_DOOR: "akáciafa ajtó"
+  ACACIA_FENCE: "akáciafa kerítés"
+  ACACIA_FENCE_GATE: "akáciafa kerítéskapu"
+  ACACIA_HANGING_SIGN: "akácia függőtábla"
+  ACACIA_LEAVES: "akácialevelek"
+  ACACIA_LOG: "akáciarönk"
+  ACACIA_PLANKS: "akáciadeszka"
+  ACACIA_PRESSURE_PLATE: "akáciafa nyomólap"
+  ACACIA_SAPLING: "akáciacsemete"
+  ACACIA_SIGN: "akáciafa tábla"
+  ACACIA_SLAB: "akáciafa lap"
+  ACACIA_STAIRS: "akáciafa lépcső"
+  ACACIA_TRAPDOOR: "akáciafa csapóajtó"
+  ACACIA_WALL_HANGING_SIGN: "akáciafa fali függőtábla"
+  ACACIA_WALL_SIGN: "akáciafa falitábla"
+  ACACIA_WOOD: "akáciablokk"
+  ACTIVATOR_RAIL: "aktiválósín"
+  AIR: "levegő"
+  ALLIUM: "hagymavirág"
+  AMETHYST_BLOCK: "ametisztblokk"
+  AMETHYST_CLUSTER: "ametiszt-kristálycsoport"
+  ANCIENT_DEBRIS: "ősi törmelék"
+  ANDESITE: "andezit"
+  ANDESITE_SLAB: "andezitlap"
+  ANDESITE_STAIRS: "andezitlépcső"
+  ANDESITE_WALL: "andezitfal"
+  ANVIL: "üllő"
+  ATTACHED_MELON_STEM: "csatlakozott dinnyeszár"
+  ATTACHED_PUMPKIN_STEM: "csatlakozott tökszár"
+  AZALEA: "azálea"
+  AZALEA_LEAVES: "azálealevelek"
+  AZURE_BLUET: "kékpárna"
+  BAMBOO: "bambusz"
+  BAMBOO_BLOCK: "bambuszblokk"
+  BAMBOO_BUTTON: "bambuszgomb"
+  BAMBOO_DOOR: "bambuszajtó"
+  BAMBOO_FENCE: "bambuszkerítés"
+  BAMBOO_FENCE_GATE: "bambusz kerítéskapu"
+  BAMBOO_HANGING_SIGN: "bambusz függőtábla"
+  BAMBOO_MOSAIC: "bambuszmozaik"
+  BAMBOO_MOSAIC_SLAB: "bambuszmozaik-lap"
+  BAMBOO_MOSAIC_STAIRS: "bambuszmozaik-lépcső"
+  BAMBOO_PLANKS: "bambuszdeszka"
+  BAMBOO_PRESSURE_PLATE: "bambusz nyomólap"
+  BAMBOO_SAPLING: "bambuszhajtás"
+  BAMBOO_SIGN: "bambusztábla"
+  BAMBOO_SLAB: "bambuszlap"
+  BAMBOO_STAIRS: "bambuszlépcső"
+  BAMBOO_TRAPDOOR: "bambusz csapóajtó"
+  BAMBOO_WALL_HANGING_SIGN: "bambusz fali függőtábla"
+  BAMBOO_WALL_SIGN: "bambusz falitábla"
+  BANNER_BASE_BLACK: "teljesen fekete mező"
+  BANNER_BASE_BLUE: "teljesen kék mező"
+  BANNER_BASE_BROWN: "teljesen barna mező"
+  BANNER_BASE_CYAN: "teljesen türkiz mező"
+  BANNER_BASE_GRAY: "teljesen szürke mező"
+  BANNER_BASE_GREEN: "teljesen zöld mező"
+  BANNER_BASE_LIGHT_BLUE: "teljesen világoskék mező"
+  BANNER_BASE_LIGHT_GRAY: "teljesen világosszürke mező"
+  BANNER_BASE_LIME: "teljesen világoszöld mező"
+  BANNER_BASE_MAGENTA: "teljesen bíbor mező"
+  BANNER_BASE_ORANGE: "teljesen narancssárga mező"
+  BANNER_BASE_PINK: "teljesen rózsaszín mező"
+  BANNER_BASE_PURPLE: "teljesen lila mező"
+  BANNER_BASE_RED: "teljesen vörös mező"
+  BANNER_BASE_WHITE: "teljesen fehér mező"
+  BANNER_BASE_YELLOW: "teljesen sárga mező"
+  BANNER_BORDER_BLACK: "fekete ráma"
+  BANNER_BORDER_BLUE: "kék ráma"
+  BANNER_BORDER_BROWN: "barna ráma"
+  BANNER_BORDER_CYAN: "türkizkék ráma"
+  BANNER_BORDER_GRAY: "szürke ráma"
+  BANNER_BORDER_GREEN: "zöld ráma"
+  BANNER_BORDER_LIGHT_BLUE: "világoskék ráma"
+  BANNER_BORDER_LIGHT_GRAY: "világosszürke ráma"
+  BANNER_BORDER_LIME: "világoszöld ráma"
+  BANNER_BORDER_MAGENTA: "bíbor ráma"
+  BANNER_BORDER_ORANGE: "narancssárga ráma"
+  BANNER_BORDER_PINK: "rózsaszín ráma"
+  BANNER_BORDER_PURPLE: "lila ráma"
+  BANNER_BORDER_RED: "vörös ráma"
+  BANNER_BORDER_WHITE: "fehér ráma"
+  BANNER_BORDER_YELLOW: "sárga ráma"
+  BANNER_BRICKS_BLACK: "fekete téglaminta"
+  BANNER_BRICKS_BLUE: "kék téglaminta"
+  BANNER_BRICKS_BROWN: "barna téglaminta"
+  BANNER_BRICKS_CYAN: "türkizkék téglaminta"
+  BANNER_BRICKS_GRAY: "szürke téglaminta"
+  BANNER_BRICKS_GREEN: "zöld téglaminta"
+  BANNER_BRICKS_LIGHT_BLUE: "világoskék téglaminta"
+  BANNER_BRICKS_LIGHT_GRAY: "világosszürke téglaminta"
+  BANNER_BRICKS_LIME: "világoszöld téglaminta"
+  BANNER_BRICKS_MAGENTA: "bíbor téglaminta"
+  BANNER_BRICKS_ORANGE: "narancssárga téglaminta"
+  BANNER_BRICKS_PINK: "rózsaszín téglaminta"
+  BANNER_BRICKS_PURPLE: "lila téglaminta"
+  BANNER_BRICKS_RED: "vörös téglaminta"
+  BANNER_BRICKS_WHITE: "fehér téglaminta"
+  BANNER_BRICKS_YELLOW: "sárga téglaminta"
+  BANNER_CIRCLE_BLACK: "fekete lepényes"
+  BANNER_CIRCLE_BLUE: "kék lepényes"
+  BANNER_CIRCLE_BROWN: "barna lepényes"
+  BANNER_CIRCLE_CYAN: "türkizkék lepényes"
+  BANNER_CIRCLE_GRAY: "szürke lepényes"
+  BANNER_CIRCLE_GREEN: "zöld lepényes"
+  BANNER_CIRCLE_LIGHT_BLUE: "világoskék lepényes"
+  BANNER_CIRCLE_LIGHT_GRAY: "világosszürke lepényes"
+  BANNER_CIRCLE_LIME: "világoszöld lepényes"
+  BANNER_CIRCLE_MAGENTA: "bíbor lepényes"
+  BANNER_CIRCLE_ORANGE: "narancssárga lepényes"
+  BANNER_CIRCLE_PINK: "rózsaszín lepényes"
+  BANNER_CIRCLE_PURPLE: "lila lepényes"
+  BANNER_CIRCLE_RED: "vörös lepényes"
+  BANNER_CIRCLE_WHITE: "fehér lepényes"
+  BANNER_CIRCLE_YELLOW: "sárga lepényes"
+  BANNER_CREEPER_BLACK: "fekete creeper címerkép"
+  BANNER_CREEPER_BLUE: "kék creeper címerkép"
+  BANNER_CREEPER_BROWN: "barna creeper címerkép"
+  BANNER_CREEPER_CYAN: "türkizkék creeper címerkép"
+  BANNER_CREEPER_GRAY: "szürke creeper címerkép"
+  BANNER_CREEPER_GREEN: "zöld creeper címerkép"
+  BANNER_CREEPER_LIGHT_BLUE: "világoskék creeper címerkép"
+  BANNER_CREEPER_LIGHT_GRAY: "világosszürke creeper címerkép"
+  BANNER_CREEPER_LIME: "világoszöld creeper címerkép"
+  BANNER_CREEPER_MAGENTA: "bíbor creeper címerkép"
+  BANNER_CREEPER_ORANGE: "narancssárga creeper címerkép"
+  BANNER_CREEPER_PINK: "rózsaszín creeper címerkép"
+  BANNER_CREEPER_PURPLE: "lila creeper címerkép"
+  BANNER_CREEPER_RED: "vörös creeper címerkép"
+  BANNER_CREEPER_WHITE: "fehér creeper címerkép"
+  BANNER_CREEPER_YELLOW: "sárga creeper címerkép"
+  BANNER_CROSS_BLACK: "fekete harántkereszt"
+  BANNER_CROSS_BLUE: "kék harántkereszt"
+  BANNER_CROSS_BROWN: "barna harántkereszt"
+  BANNER_CROSS_CYAN: "türkizkék harántkereszt"
+  BANNER_CROSS_GRAY: "szürke harántkereszt"
+  BANNER_CROSS_GREEN: "zöld harántkereszt"
+  BANNER_CROSS_LIGHT_BLUE: "világoskék harántkereszt"
+  BANNER_CROSS_LIGHT_GRAY: "világosszürke harántkereszt"
+  BANNER_CROSS_LIME: "világoszöld harántkereszt"
+  BANNER_CROSS_MAGENTA: "bíbor harántkereszt"
+  BANNER_CROSS_ORANGE: "narancssárga harántkereszt"
+  BANNER_CROSS_PINK: "rózsaszín harántkereszt"
+  BANNER_CROSS_PURPLE: "lila harántkereszt"
+  BANNER_CROSS_RED: "vörös harántkereszt"
+  BANNER_CROSS_WHITE: "fehér harántkereszt"
+  BANNER_CROSS_YELLOW: "sárga harántkereszt"
+  BANNER_CURLY_BORDER_BLACK: "fekete fogas ráma"
+  BANNER_CURLY_BORDER_BLUE: "kék fogas ráma"
+  BANNER_CURLY_BORDER_BROWN: "barna fogas ráma"
+  BANNER_CURLY_BORDER_CYAN: "türkizkék fogas ráma"
+  BANNER_CURLY_BORDER_GRAY: "szürke fogas ráma"
+  BANNER_CURLY_BORDER_GREEN: "zöld fogas ráma"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "világoskék fogas ráma"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "világosszürke fogas ráma"
+  BANNER_CURLY_BORDER_LIME: "világoszöld fogas ráma"
+  BANNER_CURLY_BORDER_MAGENTA: "bíbor fogas ráma"
+  BANNER_CURLY_BORDER_ORANGE: "narancssárga fogas ráma"
+  BANNER_CURLY_BORDER_PINK: "rózsaszín fogas ráma"
+  BANNER_CURLY_BORDER_PURPLE: "lila fogas ráma"
+  BANNER_CURLY_BORDER_RED: "vörös fogas ráma"
+  BANNER_CURLY_BORDER_WHITE: "fehér fogas ráma"
+  BANNER_CURLY_BORDER_YELLOW: "sárga fogas ráma"
+  BANNER_DIAGONAL_LEFT_BLACK: "feketével balharántolt"
+  BANNER_DIAGONAL_LEFT_BLUE: "kékkel balharántolt"
+  BANNER_DIAGONAL_LEFT_BROWN: "barnával balharántolt"
+  BANNER_DIAGONAL_LEFT_CYAN: "türkizkékkel balharántolt"
+  BANNER_DIAGONAL_LEFT_GRAY: "szürkével balharántolt"
+  BANNER_DIAGONAL_LEFT_GREEN: "zölddel balharántolt"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "világoskékkel balharántolt"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "világosszürkével balharántolt"
+  BANNER_DIAGONAL_LEFT_LIME: "világoszölddel balharántolt"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "bíborral balharántolt"
+  BANNER_DIAGONAL_LEFT_ORANGE: "narancssárgával balharántolt"
+  BANNER_DIAGONAL_LEFT_PINK: "rózsaszínnel balharántolt"
+  BANNER_DIAGONAL_LEFT_PURPLE: "lilával balharántolt"
+  BANNER_DIAGONAL_LEFT_RED: "vörössel balharántolt"
+  BANNER_DIAGONAL_LEFT_WHITE: "fehérrel balharántolt"
+  BANNER_DIAGONAL_LEFT_YELLOW: "sárgával balharántolt"
+  BANNER_DIAGONAL_RIGHT_BLACK: "feketével harántolt"
+  BANNER_DIAGONAL_RIGHT_BLUE: "kékkel harántolt"
+  BANNER_DIAGONAL_RIGHT_BROWN: "barnával harántolt"
+  BANNER_DIAGONAL_RIGHT_CYAN: "türkizkékkel harántolt"
+  BANNER_DIAGONAL_RIGHT_GRAY: "szürkével harántolt"
+  BANNER_DIAGONAL_RIGHT_GREEN: "zölddel harántolt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "világoskékkel harántolt"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "világosszürkével harántolt"
+  BANNER_DIAGONAL_RIGHT_LIME: "világoszölddel harántolt"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "bíborral harántolt"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "narancssárgával harántolt"
+  BANNER_DIAGONAL_RIGHT_PINK: "rózsaszínnel harántolt"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "lilával harántolt"
+  BANNER_DIAGONAL_RIGHT_RED: "vörössel harántolt"
+  BANNER_DIAGONAL_RIGHT_WHITE: "fehérrel harántolt"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "sárgával harántolt"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "feketével alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "kékkel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "barnával alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "türkizkékkel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "szürkével alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "zölddel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "világoskékkel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "világosszürkével alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "világoszölddel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "bíborral alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "narancssárgával alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "rózsaszínnel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "lilával alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_RED: "vörössel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "fehérrel alulról harántolt"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "sárgával alulról harántolt"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "feketével alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "kékkel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "barnával alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "türkizkékkel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "szürkével alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "zölddel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "világoskékkel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "világosszürkével alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "világoszölddel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "bíborral alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "narancssárgával alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "rózsaszínnel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "lilával alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "vörössel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "fehérrel alulról balharántolt"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "sárgával alulról balharántolt"
+  BANNER_FLOWER_BLACK: "fekete virág címerkép"
+  BANNER_FLOWER_BLUE: "kék virág címerkép"
+  BANNER_FLOWER_BROWN: "barna virág címerkép"
+  BANNER_FLOWER_CYAN: "türkizkék virág címerkép"
+  BANNER_FLOWER_GRAY: "szürke virág címerkép"
+  BANNER_FLOWER_GREEN: "zöld virág címerkép"
+  BANNER_FLOWER_LIGHT_BLUE: "világoskék virág címerkép"
+  BANNER_FLOWER_LIGHT_GRAY: "világosszürke virág címerkép"
+  BANNER_FLOWER_LIME: "világoszöld virág címerkép"
+  BANNER_FLOWER_MAGENTA: "bíbor virág címerkép"
+  BANNER_FLOWER_ORANGE: "narancssárga virág címerkép"
+  BANNER_FLOWER_PINK: "rózsaszín virág címerkép"
+  BANNER_FLOWER_PURPLE: "lila virág címerkép"
+  BANNER_FLOWER_RED: "vörös virág címerkép"
+  BANNER_FLOWER_WHITE: "fehér virág címerkép"
+  BANNER_FLOWER_YELLOW: "sárga virág címerkép"
+  BANNER_GLOBE_BLACK: "fekete földgömb"
+  BANNER_GLOBE_BLUE: "kék földgömb"
+  BANNER_GLOBE_BROWN: "barna földgömb"
+  BANNER_GLOBE_CYAN: "türkizkék földgömb"
+  BANNER_GLOBE_GRAY: "szürke földgömb"
+  BANNER_GLOBE_GREEN: "zöld földgömb"
+  BANNER_GLOBE_LIGHT_BLUE: "világoskék földgömb"
+  BANNER_GLOBE_LIGHT_GRAY: "világosszürke földgömb"
+  BANNER_GLOBE_LIME: "világoszöld földgömb"
+  BANNER_GLOBE_MAGENTA: "bíbor földgömb"
+  BANNER_GLOBE_ORANGE: "narancssárga földgömb"
+  BANNER_GLOBE_PINK: "rózsaszín földgömb"
+  BANNER_GLOBE_PURPLE: "lila földgömb"
+  BANNER_GLOBE_RED: "vörös földgömb"
+  BANNER_GLOBE_WHITE: "fehér földgömb"
+  BANNER_GLOBE_YELLOW: "sárga földgömb"
+  BANNER_GRADIENT_BLACK: "fekete színátmenet"
+  BANNER_GRADIENT_BLUE: "kék színátmenet"
+  BANNER_GRADIENT_BROWN: "barna színátmenet"
+  BANNER_GRADIENT_CYAN: "türkizkék színátmenet"
+  BANNER_GRADIENT_GRAY: "szürke színátmenet"
+  BANNER_GRADIENT_GREEN: "zöld színátmenet"
+  BANNER_GRADIENT_LIGHT_BLUE: "világoskék színátmenet"
+  BANNER_GRADIENT_LIGHT_GRAY: "világosszürke színátmenet"
+  BANNER_GRADIENT_LIME: "világoszöld színátmenet"
+  BANNER_GRADIENT_MAGENTA: "bíbor színátmenet"
+  BANNER_GRADIENT_ORANGE: "narancssárga színátmenet"
+  BANNER_GRADIENT_PINK: "rózsaszín színátmenet"
+  BANNER_GRADIENT_PURPLE: "lila színátmenet"
+  BANNER_GRADIENT_RED: "vörös színátmenet"
+  BANNER_GRADIENT_WHITE: "fehér színátmenet"
+  BANNER_GRADIENT_YELLOW: "sárga színátmenet"
+  BANNER_GRADIENT_UP_BLACK: "fekete színátmenet alulról"
+  BANNER_GRADIENT_UP_BLUE: "kék színátmenet alulról"
+  BANNER_GRADIENT_UP_BROWN: "barna színátmenet alulról"
+  BANNER_GRADIENT_UP_CYAN: "türkizkék színátmenet alulról"
+  BANNER_GRADIENT_UP_GRAY: "szürke színátmenet alulról"
+  BANNER_GRADIENT_UP_GREEN: "zöld színátmenet alulról"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "világoskék színátmenet alulról"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "világosszürke színátmenet alulról"
+  BANNER_GRADIENT_UP_LIME: "világoszöld színátmenet alulról"
+  BANNER_GRADIENT_UP_MAGENTA: "bíbor színátmenet alulról"
+  BANNER_GRADIENT_UP_ORANGE: "narancssárga színátmenet alulról"
+  BANNER_GRADIENT_UP_PINK: "rózsaszín színátmenet alulról"
+  BANNER_GRADIENT_UP_PURPLE: "lila színátmenet alulról"
+  BANNER_GRADIENT_UP_RED: "vörös színátmenet alulról"
+  BANNER_GRADIENT_UP_WHITE: "fehér színátmenet alulról"
+  BANNER_GRADIENT_UP_YELLOW: "sárga színátmenet alulról"
+  BANNER_HALF_HORIZONTAL_BLACK: "feketével vágott"
+  BANNER_HALF_HORIZONTAL_BLUE: "kékkel vágott"
+  BANNER_HALF_HORIZONTAL_BROWN: "barnával vágott"
+  BANNER_HALF_HORIZONTAL_CYAN: "türkizkékkel vágott"
+  BANNER_HALF_HORIZONTAL_GRAY: "szürkével vágott"
+  BANNER_HALF_HORIZONTAL_GREEN: "zölddel vágott"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "világoskékkel vágott"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "világosszürkével vágott"
+  BANNER_HALF_HORIZONTAL_LIME: "világoszölddel vágott"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "bíborral vágott"
+  BANNER_HALF_HORIZONTAL_ORANGE: "narancssárgával vágott"
+  BANNER_HALF_HORIZONTAL_PINK: "rózsaszínnel vágott"
+  BANNER_HALF_HORIZONTAL_PURPLE: "lilával vágott"
+  BANNER_HALF_HORIZONTAL_RED: "vörössel vágott"
+  BANNER_HALF_HORIZONTAL_WHITE: "fehérrel vágott"
+  BANNER_HALF_HORIZONTAL_YELLOW: "sárgával vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "feketével alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "kékkel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "barnával alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "türkizkékkel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "szürkével alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "zölddel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "világoskékkel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "világosszürkével alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "világoszölddel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "bíborral alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "narancssárgával alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "rózsaszínnel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "lilával alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "vörössel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "fehérrel alulról vágott"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "sárgával alulról vágott"
+  BANNER_HALF_VERTICAL_BLACK: "feketével hasított"
+  BANNER_HALF_VERTICAL_BLUE: "kékkel hasított"
+  BANNER_HALF_VERTICAL_BROWN: "barnával hasított"
+  BANNER_HALF_VERTICAL_CYAN: "türkizkékkel hasított"
+  BANNER_HALF_VERTICAL_GRAY: "szürkével hasított"
+  BANNER_HALF_VERTICAL_GREEN: "zölddel hasított"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "világoskékkel hasított"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "világosszürkével hasított"
+  BANNER_HALF_VERTICAL_LIME: "világoszölddel hasított"
+  BANNER_HALF_VERTICAL_MAGENTA: "bíborral hasított"
+  BANNER_HALF_VERTICAL_ORANGE: "narancssárgával hasított"
+  BANNER_HALF_VERTICAL_PINK: "rózsaszínnel hasított"
+  BANNER_HALF_VERTICAL_PURPLE: "lilával hasított"
+  BANNER_HALF_VERTICAL_RED: "vörössel hasított"
+  BANNER_HALF_VERTICAL_WHITE: "fehérrel hasított"
+  BANNER_HALF_VERTICAL_YELLOW: "sárgával hasított"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "feketével balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "kékkel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "barnával balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "türkizkékkel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "szürkével balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "zölddel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "világoskékkel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "világosszürkével balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "világoszölddel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "bíborral balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "narancssárgával balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "rózsaszínnel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "lilával balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "vörössel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "fehérrel balról hasított"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "sárgával balról hasított"
+  BANNER_MOJANG_BLACK: "fekete mojang címerkép"
+  BANNER_MOJANG_BLUE: "kék mojang címerkép"
+  BANNER_MOJANG_BROWN: "barna mojang címerkép"
+  BANNER_MOJANG_CYAN: "türkizkék mojang címerkép"
+  BANNER_MOJANG_GRAY: "szürke mojang címerkép"
+  BANNER_MOJANG_GREEN: "zöld mojang címerkép"
+  BANNER_MOJANG_LIGHT_BLUE: "világoskék mojang címerkép"
+  BANNER_MOJANG_LIGHT_GRAY: "világosszürke mojang címerkép"
+  BANNER_MOJANG_LIME: "világoszöld mojang címerkép"
+  BANNER_MOJANG_MAGENTA: "bíbor mojang címerkép"
+  BANNER_MOJANG_ORANGE: "narancssárga mojang címerkép"
+  BANNER_MOJANG_PINK: "rózsaszín mojang címerkép"
+  BANNER_MOJANG_PURPLE: "lila mojang címerkép"
+  BANNER_MOJANG_RED: "vörös mojang címerkép"
+  BANNER_MOJANG_WHITE: "fehér mojang címerkép"
+  BANNER_MOJANG_YELLOW: "sárga mojang címerkép"
+  BANNER_PIGLIN_BLACK: "fekete disznóorr"
+  BANNER_PIGLIN_BLUE: "kék disznóorr"
+  BANNER_PIGLIN_BROWN: "barna disznóorr"
+  BANNER_PIGLIN_CYAN: "cián disznóorr"
+  BANNER_PIGLIN_GRAY: "szürke disznóorr"
+  BANNER_PIGLIN_GREEN: "zöld disznóorr"
+  BANNER_PIGLIN_LIGHT_BLUE: "világoskék disznóorr"
+  BANNER_PIGLIN_LIGHT_GRAY: "világosszürke disznóorr"
+  BANNER_PIGLIN_LIME: "világoszöld disznóorr"
+  BANNER_PIGLIN_MAGENTA: "bíbor disznóorr"
+  BANNER_PIGLIN_ORANGE: "narancssárga disznóorr"
+  BANNER_PIGLIN_PINK: "rózsaszín disznóorr"
+  BANNER_PIGLIN_PURPLE: "lila disznóorr"
+  BANNER_PIGLIN_RED: "vörös disznóorr"
+  BANNER_PIGLIN_WHITE: "fehér disznóorr"
+  BANNER_PIGLIN_YELLOW: "sárga disznóorr"
+  BANNER_RHOMBUS_BLACK: "fekete nagyruta"
+  BANNER_RHOMBUS_BLUE: "kék nagyruta"
+  BANNER_RHOMBUS_BROWN: "barna nagyruta"
+  BANNER_RHOMBUS_CYAN: "türkizkék nagyruta"
+  BANNER_RHOMBUS_GRAY: "szürke nagyruta"
+  BANNER_RHOMBUS_GREEN: "zöld nagyruta"
+  BANNER_RHOMBUS_LIGHT_BLUE: "világoskék nagyruta"
+  BANNER_RHOMBUS_LIGHT_GRAY: "világosszürke nagyruta"
+  BANNER_RHOMBUS_LIME: "világoszöld nagyruta"
+  BANNER_RHOMBUS_MAGENTA: "bíbor nagyruta"
+  BANNER_RHOMBUS_ORANGE: "narancssárga nagyruta"
+  BANNER_RHOMBUS_PINK: "rózsaszín nagyruta"
+  BANNER_RHOMBUS_PURPLE: "lila nagyruta"
+  BANNER_RHOMBUS_RED: "vörös nagyruta"
+  BANNER_RHOMBUS_WHITE: "fehér nagyruta"
+  BANNER_RHOMBUS_YELLOW: "sárga nagyruta"
+  BANNER_SKULL_BLACK: "fekete koponya címerkép"
+  BANNER_SKULL_BLUE: "kék koponya címerkép"
+  BANNER_SKULL_BROWN: "barna koponya címerkép"
+  BANNER_SKULL_CYAN: "türkizkék koponya címerkép"
+  BANNER_SKULL_GRAY: "szürke koponya címerkép"
+  BANNER_SKULL_GREEN: "zöld koponya címerkép"
+  BANNER_SKULL_LIGHT_BLUE: "világoskék koponya címerkép"
+  BANNER_SKULL_LIGHT_GRAY: "világosszürke koponya címerkép"
+  BANNER_SKULL_LIME: "világoszöld koponya címerkép"
+  BANNER_SKULL_MAGENTA: "bíbor koponya címerkép"
+  BANNER_SKULL_ORANGE: "narancssárga koponya címerkép"
+  BANNER_SKULL_PINK: "rózsaszín koponya címerkép"
+  BANNER_SKULL_PURPLE: "lila koponya címerkép"
+  BANNER_SKULL_RED: "vörös koponya címerkép"
+  BANNER_SKULL_WHITE: "fehér koponya címerkép"
+  BANNER_SKULL_YELLOW: "sárga koponya címerkép"
+  BANNER_SMALL_STRIPES_BLACK: "feketével cölöpölt"
+  BANNER_SMALL_STRIPES_BLUE: "kékkel cölöpölt"
+  BANNER_SMALL_STRIPES_BROWN: "barnával cölöpölt"
+  BANNER_SMALL_STRIPES_CYAN: "türkizkékkel cölöpölt"
+  BANNER_SMALL_STRIPES_GRAY: "szürkével cölöpölt"
+  BANNER_SMALL_STRIPES_GREEN: "zölddel cölöpölt"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "világoskékkel cölöpölt"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "világosszürkével cölöpölt"
+  BANNER_SMALL_STRIPES_LIME: "világoszölddel cölöpölt"
+  BANNER_SMALL_STRIPES_MAGENTA: "bíborral cölöpölt"
+  BANNER_SMALL_STRIPES_ORANGE: "narancssárgával cölöpölt"
+  BANNER_SMALL_STRIPES_PINK: "rózsaszínnel cölöpölt"
+  BANNER_SMALL_STRIPES_PURPLE: "lilával cölöpölt"
+  BANNER_SMALL_STRIPES_RED: "vörössel cölöpölt"
+  BANNER_SMALL_STRIPES_WHITE: "fehérrel cölöpölt"
+  BANNER_SMALL_STRIPES_YELLOW: "sárgával cölöpölt"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "fekete alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "kék alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "barna alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "türkizkék alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "szürke alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "zöld alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "világoskék alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "világosszürke alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "világoszöld alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "bíbor alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "narancssárga alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "rózsaszín alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "lila alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "vörös alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "fehér alsótelek"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "sárga alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "fekete bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "kék bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "barna bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "türkizkék bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "szürke bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "zöld bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "világoskék bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "világosszürke bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "világoszöld bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "bíbor bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "narancssárga bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "rózsaszín bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "lila bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "vörös bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "fehér bal-alsótelek"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "sárga bal-alsótelek"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "fekete telek"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "kék telek"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "barna telek"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "türkizkék telek"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "szürke telek"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "zöld telek"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "világoskék telek"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "világosszürke telek"
+  BANNER_SQUARE_TOP_LEFT_LIME: "világoszöld telek"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "bíbor telek"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "narancssárga telek"
+  BANNER_SQUARE_TOP_LEFT_PINK: "rózsaszín telek"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "lila telek"
+  BANNER_SQUARE_TOP_LEFT_RED: "vörös telek"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "fehér telek"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "sárga telek"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "fekete baltelek"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "kék baltelek"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "barna baltelek"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "türkizkék baltelek"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "szürke baltelek"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "zöld baltelek"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "világoskék baltelek"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "világosszürke baltelek"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "világoszöld baltelek"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "bíbor baltelek"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "narancssárga baltelek"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "rózsaszín baltelek"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "lila baltelek"
+  BANNER_SQUARE_TOP_RIGHT_RED: "vörös baltelek"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "fehér baltelek"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "sárga baltelek"
+  BANNER_STRAIGHT_CROSS_BLACK: "fekete kereszt"
+  BANNER_STRAIGHT_CROSS_BLUE: "kék kereszt"
+  BANNER_STRAIGHT_CROSS_BROWN: "barna kereszt"
+  BANNER_STRAIGHT_CROSS_CYAN: "türkizkék kereszt"
+  BANNER_STRAIGHT_CROSS_GRAY: "szürke kereszt"
+  BANNER_STRAIGHT_CROSS_GREEN: "zöld kereszt"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "világoskék kereszt"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "világosszürke kereszt"
+  BANNER_STRAIGHT_CROSS_LIME: "világoszöld kereszt"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "bíbor kereszt"
+  BANNER_STRAIGHT_CROSS_ORANGE: "narancssárga kereszt"
+  BANNER_STRAIGHT_CROSS_PINK: "rózsaszín kereszt"
+  BANNER_STRAIGHT_CROSS_PURPLE: "lila kereszt"
+  BANNER_STRAIGHT_CROSS_RED: "vörös kereszt"
+  BANNER_STRAIGHT_CROSS_WHITE: "fehér kereszt"
+  BANNER_STRAIGHT_CROSS_YELLOW: "sárga kereszt"
+  BANNER_STRIPE_BOTTOM_BLACK: "fekete talp"
+  BANNER_STRIPE_BOTTOM_BLUE: "kék talp"
+  BANNER_STRIPE_BOTTOM_BROWN: "barna talp"
+  BANNER_STRIPE_BOTTOM_CYAN: "türkizkék talp"
+  BANNER_STRIPE_BOTTOM_GRAY: "szürke talp"
+  BANNER_STRIPE_BOTTOM_GREEN: "zöld talp"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "világoskék talp"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "világosszürke talp"
+  BANNER_STRIPE_BOTTOM_LIME: "világoszöld talp"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "bíbor talp"
+  BANNER_STRIPE_BOTTOM_ORANGE: "narancssárga talp"
+  BANNER_STRIPE_BOTTOM_PINK: "rózsaszín talp"
+  BANNER_STRIPE_BOTTOM_PURPLE: "lila talp"
+  BANNER_STRIPE_BOTTOM_RED: "vörös talp"
+  BANNER_STRIPE_BOTTOM_WHITE: "fehér talp"
+  BANNER_STRIPE_BOTTOM_YELLOW: "sárga talp"
+  BANNER_STRIPE_CENTER_BLACK: "fekete cölöp"
+  BANNER_STRIPE_CENTER_BLUE: "kék cölöp"
+  BANNER_STRIPE_CENTER_BROWN: "barna cölöp"
+  BANNER_STRIPE_CENTER_CYAN: "türkizkék cölöp"
+  BANNER_STRIPE_CENTER_GRAY: "szürke cölöp"
+  BANNER_STRIPE_CENTER_GREEN: "zöld cölöp"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "világoskék cölöp"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "világosszürke cölöp"
+  BANNER_STRIPE_CENTER_LIME: "világoszöld cölöp"
+  BANNER_STRIPE_CENTER_MAGENTA: "bíbor cölöp"
+  BANNER_STRIPE_CENTER_ORANGE: "narancssárga cölöp"
+  BANNER_STRIPE_CENTER_PINK: "rózsaszín cölöp"
+  BANNER_STRIPE_CENTER_PURPLE: "lila cölöp"
+  BANNER_STRIPE_CENTER_RED: "vörös cölöp"
+  BANNER_STRIPE_CENTER_WHITE: "fehér cölöp"
+  BANNER_STRIPE_CENTER_YELLOW: "sárga cölöp"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "fekete balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "kék balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "barna balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "türkizkék balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "szürke balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "zöld balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "világoskék balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "világosszürke balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_LIME: "világoszöld balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "bíbor balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "narancssárga balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rózsaszín balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "lila balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_RED: "vörös balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "fehér balharántpólya"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "sárga balharántpólya"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "fekete harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "kék harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "barna harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "türkizkék harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "szürke harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "zöld harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "világoskék harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "világosszürke harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "világoszöld harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "bíbor harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "narancssárga harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rózsaszín harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "lila harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_RED: "vörös harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "fehér harántpólya"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "sárga harántpólya"
+  BANNER_STRIPE_LEFT_BLACK: "fekete jobb cölöp"
+  BANNER_STRIPE_LEFT_BLUE: "kék jobb cölöp"
+  BANNER_STRIPE_LEFT_BROWN: "barna jobb cölöp"
+  BANNER_STRIPE_LEFT_CYAN: "türkizkék jobb cölöp"
+  BANNER_STRIPE_LEFT_GRAY: "szürke jobb cölöp"
+  BANNER_STRIPE_LEFT_GREEN: "zöld jobb cölöp"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "világoskék jobb cölöp"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "világosszürke jobb cölöp"
+  BANNER_STRIPE_LEFT_LIME: "világoszöld jobb cölöp"
+  BANNER_STRIPE_LEFT_MAGENTA: "bíbor jobb cölöp"
+  BANNER_STRIPE_LEFT_ORANGE: "narancssárga jobb cölöp"
+  BANNER_STRIPE_LEFT_PINK: "rózsaszín jobb cölöp"
+  BANNER_STRIPE_LEFT_PURPLE: "lila jobb cölöp"
+  BANNER_STRIPE_LEFT_RED: "vörös jobb cölöp"
+  BANNER_STRIPE_LEFT_WHITE: "fehér jobb cölöp"
+  BANNER_STRIPE_LEFT_YELLOW: "sárga jobb cölöp"
+  BANNER_STRIPE_MIDDLE_BLACK: "fekete csík"
+  BANNER_STRIPE_MIDDLE_BLUE: "kék csík"
+  BANNER_STRIPE_MIDDLE_BROWN: "barna csík"
+  BANNER_STRIPE_MIDDLE_CYAN: "türkizkék csík"
+  BANNER_STRIPE_MIDDLE_GRAY: "szürke csík"
+  BANNER_STRIPE_MIDDLE_GREEN: "zöld csík"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "világoskék csík"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "világosszürke csík"
+  BANNER_STRIPE_MIDDLE_LIME: "világoszöld csík"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "bíbor csík"
+  BANNER_STRIPE_MIDDLE_ORANGE: "narancssárga csík"
+  BANNER_STRIPE_MIDDLE_PINK: "rózsaszín csík"
+  BANNER_STRIPE_MIDDLE_PURPLE: "lila csík"
+  BANNER_STRIPE_MIDDLE_RED: "vörös csík"
+  BANNER_STRIPE_MIDDLE_WHITE: "fehér csík"
+  BANNER_STRIPE_MIDDLE_YELLOW: "sárga csík"
+  BANNER_STRIPE_RIGHT_BLACK: "fekete bal cölöp"
+  BANNER_STRIPE_RIGHT_BLUE: "kék bal cölöp"
+  BANNER_STRIPE_RIGHT_BROWN: "barna bal cölöp"
+  BANNER_STRIPE_RIGHT_CYAN: "türkizkék bal cölöp"
+  BANNER_STRIPE_RIGHT_GRAY: "szürke bal cölöp"
+  BANNER_STRIPE_RIGHT_GREEN: "zöld bal cölöp"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "világoskék bal cölöp"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "világosszürke bal cölöp"
+  BANNER_STRIPE_RIGHT_LIME: "világoszöld bal cölöp"
+  BANNER_STRIPE_RIGHT_MAGENTA: "bíbor bal cölöp"
+  BANNER_STRIPE_RIGHT_ORANGE: "narancssárga bal cölöp"
+  BANNER_STRIPE_RIGHT_PINK: "rózsaszín bal cölöp"
+  BANNER_STRIPE_RIGHT_PURPLE: "lila bal cölöp"
+  BANNER_STRIPE_RIGHT_RED: "vörös bal cölöp"
+  BANNER_STRIPE_RIGHT_WHITE: "fehér bal cölöp"
+  BANNER_STRIPE_RIGHT_YELLOW: "sárga bal cölöp"
+  BANNER_STRIPE_TOP_BLACK: "fekete fő"
+  BANNER_STRIPE_TOP_BLUE: "kék fő"
+  BANNER_STRIPE_TOP_BROWN: "barna fő"
+  BANNER_STRIPE_TOP_CYAN: "türkizkék fő"
+  BANNER_STRIPE_TOP_GRAY: "szürke fő"
+  BANNER_STRIPE_TOP_GREEN: "zöld fő"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "világoskék fő"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "világosszürke fő"
+  BANNER_STRIPE_TOP_LIME: "világoszöld fő"
+  BANNER_STRIPE_TOP_MAGENTA: "bíbor fő"
+  BANNER_STRIPE_TOP_ORANGE: "narancssárga fő"
+  BANNER_STRIPE_TOP_PINK: "rózsaszín fő"
+  BANNER_STRIPE_TOP_PURPLE: "lila fő"
+  BANNER_STRIPE_TOP_RED: "vörös fő"
+  BANNER_STRIPE_TOP_WHITE: "fehér fő"
+  BANNER_STRIPE_TOP_YELLOW: "sárga fő"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "fekete fordított ék"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "kék fordított ék"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "barna fordított ék"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "türkizkék fordított ék"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "szürke fordított ék"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "zöld fordított ék"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "világoskék fordított ék"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "világosszürke fordított ék"
+  BANNER_TRIANGLE_BOTTOM_LIME: "világoszöld fordított ék"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "bíbor fordított ék"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "narancssárga fordított ék"
+  BANNER_TRIANGLE_BOTTOM_PINK: "rózsaszín fordított ék"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "lila fordított ék"
+  BANNER_TRIANGLE_BOTTOM_RED: "vörös fordított ék"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "fehér fordított ék"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "sárga fordított ék"
+  BANNER_TRIANGLE_TOP_BLACK: "fekete ék"
+  BANNER_TRIANGLE_TOP_BLUE: "kék ék"
+  BANNER_TRIANGLE_TOP_BROWN: "barna ék"
+  BANNER_TRIANGLE_TOP_CYAN: "türkizkék ék"
+  BANNER_TRIANGLE_TOP_GRAY: "szürke ék"
+  BANNER_TRIANGLE_TOP_GREEN: "zöld ék"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "világoskék ék"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "világosszürke ék"
+  BANNER_TRIANGLE_TOP_LIME: "világoszöld ék"
+  BANNER_TRIANGLE_TOP_MAGENTA: "bíbor ék"
+  BANNER_TRIANGLE_TOP_ORANGE: "narancssárga ék"
+  BANNER_TRIANGLE_TOP_PINK: "rózsaszín ék"
+  BANNER_TRIANGLE_TOP_PURPLE: "lila ék"
+  BANNER_TRIANGLE_TOP_RED: "vörös ék"
+  BANNER_TRIANGLE_TOP_WHITE: "fehér ék"
+  BANNER_TRIANGLE_TOP_YELLOW: "sárgával saruzott"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "fekete fogas talp"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "kék fogas talp"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "barna fogas talp"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "türkizkék fogas talp"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "szürke fogas talp"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "zöld fogas talp"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "világoskék fogas talp"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "világosszürke fogas talp"
+  BANNER_TRIANGLES_BOTTOM_LIME: "világoszöld fogas talp"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "bíbor fogas talp"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "narancssárga fogas talp"
+  BANNER_TRIANGLES_BOTTOM_PINK: "rózsaszín fogas talp"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "lila fogas talp"
+  BANNER_TRIANGLES_BOTTOM_RED: "vörös fogas talp"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "fehér fogas talp"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "sárga fogas talp"
+  BANNER_TRIANGLES_TOP_BLACK: "fekete fogas fő"
+  BANNER_TRIANGLES_TOP_BLUE: "kék fogas fő"
+  BANNER_TRIANGLES_TOP_BROWN: "barna fogas fő"
+  BANNER_TRIANGLES_TOP_CYAN: "türkizkék fogas fő"
+  BANNER_TRIANGLES_TOP_GRAY: "szürke fogas fő"
+  BANNER_TRIANGLES_TOP_GREEN: "zöld fogas fő"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "világoskék fogas fő"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "világosszürke fogas fő"
+  BANNER_TRIANGLES_TOP_LIME: "világoszöld fogas fő"
+  BANNER_TRIANGLES_TOP_MAGENTA: "bíbor fogas fő"
+  BANNER_TRIANGLES_TOP_ORANGE: "narancssárga fogas fő"
+  BANNER_TRIANGLES_TOP_PINK: "rózsaszín fogas fő"
+  BANNER_TRIANGLES_TOP_PURPLE: "lila fogas fő"
+  BANNER_TRIANGLES_TOP_RED: "vörös fogas fő"
+  BANNER_TRIANGLES_TOP_WHITE: "fehér fogas fő"
+  BANNER_TRIANGLES_TOP_YELLOW: "sárga fogas fő"
+  BARREL: "hordó"
+  BARRIER: "akadály"
+  BASALT: "bazalt"
+  BEACON: "jelzőfény"
+  BEACON_PRIMARY: "elsődleges képesség"
+  BEACON_SECONDARY: "másodlagos képesség"
+  BED_NO_SLEEP: "csak éjjel vagy viharos időben aludhatsz"
+  BED_NOT_SAFE: "most nem pihenhetsz mert szörnyek vannak a közeledben"
+  BED_OBSTRUCTED: "ez az ágy nem hozzáférhető"
+  BED_OCCUPIED: "ez az ágy foglalt"
+  BED_TOO_FAR_AWAY: "most nem pihenhetsz túl messze van az ágyad"
+  BEDROCK: "alapkő"
+  BEE_NEST: "méhkas"
+  BEEHIVE: "méhkaptár"
+  BEETROOTS: "cékla"
+  BELL: "harang"
+  BIG_DRIPLEAF: "nagy csepplevél"
+  BIG_DRIPLEAF_STEM: "nagy csepplevél szára"
+  BIRCH_BUTTON: "nyírfa gomb"
+  BIRCH_DOOR: "nyírfa ajtó"
+  BIRCH_FENCE: "nyírfa kerítés"
+  BIRCH_FENCE_GATE: "nyírfa kerítéskapu"
+  BIRCH_HANGING_SIGN: "nyírfa függőtábla"
+  BIRCH_LEAVES: "nyírfalevelek"
+  BIRCH_LOG: "nyírfarönk"
+  BIRCH_PLANKS: "nyírfa deszka"
+  BIRCH_PRESSURE_PLATE: "nyírfa nyomólap"
+  BIRCH_SAPLING: "nyírfacsemete"
+  BIRCH_SIGN: "nyírfa tábla"
+  BIRCH_SLAB: "nyírfa lap"
+  BIRCH_STAIRS: "nyírfa lépcső"
+  BIRCH_TRAPDOOR: "nyírfa csapóajtó"
+  BIRCH_WALL_HANGING_SIGN: "nyírfa fali függőtábla"
+  BIRCH_WALL_SIGN: "nyírfa falitábla"
+  BIRCH_WOOD: "nyírfablokk"
+  BLACK_BANNER: "fekete zászló"
+  BLACK_BED: "fekete ágy"
+  BLACK_CANDLE: "fekete gyertya"
+  BLACK_CANDLE_CAKE: "torta fekete gyertyával"
+  BLACK_CARPET: "fekete szőnyeg"
+  BLACK_CONCRETE: "fekete beton"
+  BLACK_CONCRETE_POWDER: "fekete szárazbeton"
+  BLACK_GLAZED_TERRACOTTA: "fekete mázas kerámia"
+  BLACK_SHULKER_BOX: "fekete shulkerdoboz"
+  BLACK_STAINED_GLASS: "fekete festett üveg"
+  BLACK_STAINED_GLASS_PANE: "fekete festett üveglap"
+  BLACK_TERRACOTTA: "fekete terrakotta"
+  BLACK_WOOL: "fekete gyapjú"
+  BLACKSTONE: "feketekő"
+  BLACKSTONE_SLAB: "feketekő lap"
+  BLACKSTONE_STAIRS: "feketekő lépcső"
+  BLACKSTONE_WALL: "feketekő fal"
+  BLAST_FURNACE: "kohó"
+  BLUE_BANNER: "kék zászló"
+  BLUE_BED: "kék ágy"
+  BLUE_CANDLE: "kék gyertya"
+  BLUE_CANDLE_CAKE: "torta kék gyertyával"
+  BLUE_CARPET: "kék szőnyeg"
+  BLUE_CONCRETE: "kék beton"
+  BLUE_CONCRETE_POWDER: "kék szárazbeton"
+  BLUE_GLAZED_TERRACOTTA: "kék mázas kerámia"
+  BLUE_ICE: "kék jég"
+  BLUE_ORCHID: "kék orchidea"
+  BLUE_SHULKER_BOX: "kék shulkerdoboz"
+  BLUE_STAINED_GLASS: "kék festett üveg"
+  BLUE_STAINED_GLASS_PANE: "kék festett üveglap"
+  BLUE_TERRACOTTA: "kék terrakotta"
+  BLUE_WOOL: "kék gyapjú"
+  BONE_BLOCK: "csontblokk"
+  BOOKSHELF: "könyvespolc"
+  BRAIN_CORAL: "agykorall"
+  BRAIN_CORAL_BLOCK: "agykorall-blokk"
+  BRAIN_CORAL_FAN: "agykorall-legyező"
+  BRAIN_CORAL_WALL_FAN: "fali agykorall-legyező"
+  BREWING_STAND: "főzőállvány"
+  BRICK_SLAB: "tégla-lap"
+  BRICK_STAIRS: "téglalépcső"
+  BRICK_WALL: "téglafal"
+  BRICKS: "tégla"
+  BROWN_BANNER: "barna zászló"
+  BROWN_BED: "barna ágy"
+  BROWN_CANDLE: "barna gyertya"
+  BROWN_CANDLE_CAKE: "torta barna gyertyával"
+  BROWN_CARPET: "barna szőnyeg"
+  BROWN_CONCRETE: "barna beton"
+  BROWN_CONCRETE_POWDER: "barna szárazbeton"
+  BROWN_GLAZED_TERRACOTTA: "barna mázas kerámia"
+  BROWN_MUSHROOM: "barna gomba"
+  BROWN_MUSHROOM_BLOCK: "barna gombablokk"
+  BROWN_SHULKER_BOX: "barna shulkerdoboz"
+  BROWN_STAINED_GLASS: "barna festett üveg"
+  BROWN_STAINED_GLASS_PANE: "barna festett üveglap"
+  BROWN_TERRACOTTA: "barna terrakotta"
+  BROWN_WOOL: "barna gyapjú"
+  BUBBLE_COLUMN: "buborékoszlop"
+  BUBBLE_CORAL: "buborékkorall"
+  BUBBLE_CORAL_BLOCK: "buborékkorall-blokk"
+  BUBBLE_CORAL_FAN: "buborékkorall-legyező"
+  BUBBLE_CORAL_WALL_FAN: "fali buborékkorall-legyező"
+  BUDDING_AMETHYST: "kristályosodó ametiszt"
+  CACTUS: "kaktusz"
+  CAKE: "torta"
+  CALCITE: "kalcit"
+  CALIBRATED_SCULK_SENSOR: "behangolt sculkérzékelő"
+  CAMPFIRE: "tábortűz"
+  CANDLE: "gyertya"
+  CANDLE_CAKE: "torta gyertyával"
+  CARROTS: "sárgarépák"
+  CARTOGRAPHY_TABLE: "térképasztal"
+  CARVED_PUMPKIN: "faragott tök"
+  CAULDRON: "üst"
+  CAVE_AIR: "barlangi levegő"
+  CAVE_VINES: "barlangi indák"
+  CAVE_VINES_PLANT: "barlangi indaszár"
+  CHAIN: "lánc"
+  CHAIN_COMMAND_BLOCK: "láncolt parancsblokk"
+  CHERRY_BUTTON: "cseresznyefa gomb"
+  CHERRY_DOOR: "cseresznyefa ajtó"
+  CHERRY_FENCE: "cseresznyefa kerítés"
+  CHERRY_FENCE_GATE: "cseresznyefa kerítéskapu"
+  CHERRY_HANGING_SIGN: "cseresznyefa függőtábla"
+  CHERRY_LEAVES: "cseresznyefa-levelek"
+  CHERRY_LOG: "cseresznyefarönk"
+  CHERRY_PLANKS: "cseresznyefa deszka"
+  CHERRY_PRESSURE_PLATE: "cseresznyefa nyomólap"
+  CHERRY_SAPLING: "cseresznyefa-csemete"
+  CHERRY_SIGN: "cseresznyefa tábla"
+  CHERRY_SLAB: "cseresznyefa lap"
+  CHERRY_STAIRS: "cseresznyefa lépcső"
+  CHERRY_TRAPDOOR: "cseresznyefa csapóajtó"
+  CHERRY_WALL_HANGING_SIGN: "cseresznyefa fali függőtábla"
+  CHERRY_WALL_SIGN: "cseresznyefa falitábla"
+  CHERRY_WOOD: "cseresznyefablokk"
+  CHEST: "láda"
+  CHIPPED_ANVIL: "repedt üllő"
+  CHISELED_BOOKSHELF: "faragott könyvespolc"
+  CHISELED_COPPER: "vésett rézblokk"
+  CHISELED_DEEPSLATE: "vésett mélypala"
+  CHISELED_NETHER_BRICKS: "vésett nethertégla"
+  CHISELED_POLISHED_BLACKSTONE: "vésett csiszolt feketekő"
+  CHISELED_QUARTZ_BLOCK: "vésett kvarcblokk"
+  CHISELED_RED_SANDSTONE: "vésett vörös homokkő"
+  CHISELED_SANDSTONE: "vésett homokkő"
+  CHISELED_STONE_BRICKS: "vésett kőtégla"
+  CHISELED_TUFF: "vésett tufa"
+  CHISELED_TUFF_BRICKS: "vésett tufatégla"
+  CHORUS_FLOWER: "refrénvirág"
+  CHORUS_PLANT: "refrénnövény"
+  CLAY: "agyag"
+  COAL_BLOCK: "szénblokk"
+  COAL_ORE: "szénérc"
+  COARSE_DIRT: "terméketlen föld"
+  COBBLED_DEEPSLATE: "zúzott mélypala"
+  COBBLED_DEEPSLATE_SLAB: "zúzott-mélypala lap"
+  COBBLED_DEEPSLATE_STAIRS: "zúzott-mélypala lépcső"
+  COBBLED_DEEPSLATE_WALL: "zúzott-mélypala fal"
+  COBBLESTONE: "zúzottkő"
+  COBBLESTONE_SLAB: "zúzottkő lap"
+  COBBLESTONE_STAIRS: "zúzottkő lépcső"
+  COBBLESTONE_WALL: "zúzottkő-fal"
+  COBWEB: "pókháló"
+  COCOA: "kakaó"
+  COMMAND_BLOCK: "parancsblokk"
+  COMPARATOR: "redstone-komparátor"
+  COMPOSTER: "komposztáló"
+  CONDUIT: "csatorna"
+  COPPER_BLOCK: "rézblokk"
+  COPPER_BULB: "rézizzó"
+  COPPER_DOOR: "rézajtó"
+  COPPER_GRATE: "rézrostély"
+  COPPER_ORE: "rézérc"
+  COPPER_TRAPDOOR: "réz csapóajtó"
+  CORNFLOWER: "búzavirág"
+  CRACKED_DEEPSLATE_BRICKS: "repedt mélypalatégla"
+  CRACKED_DEEPSLATE_TILES: "repedt mélypalacsempe"
+  CRACKED_NETHER_BRICKS: "repedt nethertégla"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "repedt csiszolt feketekőtégla"
+  CRACKED_STONE_BRICKS: "repedezett kőtégla"
+  CRAFTER: "barkácsoló"
+  CRAFTING_TABLE: "barkácsasztal"
+  CREEPER_HEAD: "creeperfej"
+  CREEPER_WALL_HEAD: "fali creeperfej"
+  CRIMSON_BUTTON: "karmazsin gomb"
+  CRIMSON_DOOR: "karmazsin ajtó"
+  CRIMSON_FENCE: "karmazsin kerítés"
+  CRIMSON_FENCE_GATE: "karmazsin kerítéskapu"
+  CRIMSON_FUNGUS: "karmazsin gomba"
+  CRIMSON_HANGING_SIGN: "karmazsin függőtábla"
+  CRIMSON_HYPHAE: "karmazsin gombafonalak"
+  CRIMSON_NYLIUM: "karmazsin nílium"
+  CRIMSON_PLANKS: "karmazsin deszka"
+  CRIMSON_PRESSURE_PLATE: "karmazsin nyomólap"
+  CRIMSON_ROOTS: "karmazsin gyökerek"
+  CRIMSON_SIGN: "karmazsin tábla"
+  CRIMSON_SLAB: "karmazsin deszkalap"
+  CRIMSON_STAIRS: "karmazsin lépcső"
+  CRIMSON_STEM: "karmazsin tönk"
+  CRIMSON_TRAPDOOR: "karmazsin csapóajtó"
+  CRIMSON_WALL_HANGING_SIGN: "karmazsin fali függőtábla"
+  CRIMSON_WALL_SIGN: "karmazsin falitábla"
+  CRYING_OBSIDIAN: "könnyező obszidián"
+  CUT_COPPER: "vágott rézblokk"
+  CUT_COPPER_SLAB: "vágott rézlap"
+  CUT_COPPER_STAIRS: "vágott rézlépcső"
+  CUT_RED_SANDSTONE: "vágott vörös homokkő"
+  CUT_RED_SANDSTONE_SLAB: "vágott vörös homokkő lap"
+  CUT_SANDSTONE: "vágott homokkő"
+  CUT_SANDSTONE_SLAB: "vágott homokkő lap"
+  CYAN_BANNER: "türkizkék zászló"
+  CYAN_BED: "türkizkék ágy"
+  CYAN_CANDLE: "türkizkék gyertya"
+  CYAN_CANDLE_CAKE: "torta türkizkék gyertyával"
+  CYAN_CARPET: "türkizkék szőnyeg"
+  CYAN_CONCRETE: "türkizkék beton"
+  CYAN_CONCRETE_POWDER: "türkizkék szárazbeton"
+  CYAN_GLAZED_TERRACOTTA: "türkizkék mázas kerámia"
+  CYAN_SHULKER_BOX: "türkizkék shulkerdoboz"
+  CYAN_STAINED_GLASS: "türkizkék festett üveg"
+  CYAN_STAINED_GLASS_PANE: "türkizkék festett üveglap"
+  CYAN_TERRACOTTA: "türkizkék terrakotta"
+  CYAN_WOOL: "türkizkék gyapjú"
+  DAMAGED_ANVIL: "sérült üllő"
+  DANDELION: "pitypang"
+  DARK_OAK_BUTTON: "sötéttölgy gomb"
+  DARK_OAK_DOOR: "sötéttölgy ajtó"
+  DARK_OAK_FENCE: "sötéttölgy kerítés"
+  DARK_OAK_FENCE_GATE: "sötéttölgy kerítéskapu"
+  DARK_OAK_HANGING_SIGN: "sötéttölgy függőtábla"
+  DARK_OAK_LEAVES: "sötéttölgy-levelek"
+  DARK_OAK_LOG: "sötéttölgy-rönk"
+  DARK_OAK_PLANKS: "sötéttölgy deszka"
+  DARK_OAK_PRESSURE_PLATE: "sötéttölgy nyomólap"
+  DARK_OAK_SAPLING: "sötéttölgy-csemete"
+  DARK_OAK_SIGN: "sötéttölgy tábla"
+  DARK_OAK_SLAB: "sötéttölgy lap"
+  DARK_OAK_STAIRS: "sötéttölgy lépcső"
+  DARK_OAK_TRAPDOOR: "sötéttölgy csapóajtó"
+  DARK_OAK_WALL_HANGING_SIGN: "sötéttölgy fali függőtábla"
+  DARK_OAK_WALL_SIGN: "sötéttölgy falitábla"
+  DARK_OAK_WOOD: "sötéttölgyblokk"
+  DARK_PRISMARINE: "sötét prizmarin"
+  DARK_PRISMARINE_SLAB: "sötét prizmarinlap"
+  DARK_PRISMARINE_STAIRS: "sötét prizmarinlépcső"
+  DAYLIGHT_DETECTOR: "napfényérzékelő"
+  DEAD_BRAIN_CORAL: "elhalt agykorall"
+  DEAD_BRAIN_CORAL_BLOCK: "elhalt agykorall-blokk"
+  DEAD_BRAIN_CORAL_FAN: "elhalt agykorall-legyező"
+  DEAD_BRAIN_CORAL_WALL_FAN: "elhalt fali agykorall-legyező"
+  DEAD_BUBBLE_CORAL: "elhalt buborékkorall"
+  DEAD_BUBBLE_CORAL_BLOCK: "elhalt buborékkorall-blokk"
+  DEAD_BUBBLE_CORAL_FAN: "elhalt buborékkorall-legyező"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "elhalt fali buborékkorall-legyező"
+  DEAD_BUSH: "száraz kóró"
+  DEAD_FIRE_CORAL: "elhalt tűzkorall"
+  DEAD_FIRE_CORAL_BLOCK: "elhalt tűzkorall-blokk"
+  DEAD_FIRE_CORAL_FAN: "elhalt tűzkorall-legyező"
+  DEAD_FIRE_CORAL_WALL_FAN: "elhalt fali tűzkorall-legyező"
+  DEAD_HORN_CORAL: "elhalt agancskorall"
+  DEAD_HORN_CORAL_BLOCK: "elhalt agancskorall-blokk"
+  DEAD_HORN_CORAL_FAN: "elhalt agancskorall-legyező"
+  DEAD_HORN_CORAL_WALL_FAN: "elhalt fali agancskorall-legyező"
+  DEAD_TUBE_CORAL: "elhalt csőkorall"
+  DEAD_TUBE_CORAL_BLOCK: "elhalt csőkorall-blokk"
+  DEAD_TUBE_CORAL_FAN: "elhalt csőkorall-legyező"
+  DEAD_TUBE_CORAL_WALL_FAN: "elhalt fali csőkorall-legyező"
+  DECORATED_POT: "díszes cserépedény"
+  DEEPSLATE: "mélypala"
+  DEEPSLATE_BRICK_SLAB: "mélypalatégla lap"
+  DEEPSLATE_BRICK_STAIRS: "mélypalatégla-lépcső"
+  DEEPSLATE_BRICK_WALL: "mélypalatégla-fal"
+  DEEPSLATE_BRICKS: "mélypalatégla"
+  DEEPSLATE_COAL_ORE: "szénérc mélypalában"
+  DEEPSLATE_COPPER_ORE: "rézérc mélypalában"
+  DEEPSLATE_DIAMOND_ORE: "gyémántérc mélypalában"
+  DEEPSLATE_EMERALD_ORE: "smaragdérc mélypalában"
+  DEEPSLATE_GOLD_ORE: "aranyérc mélypalában"
+  DEEPSLATE_IRON_ORE: "vasérc mélypalában"
+  DEEPSLATE_LAPIS_ORE: "lazuritérc mélypalában"
+  DEEPSLATE_REDSTONE_ORE: "redstone-érc mélypalában"
+  DEEPSLATE_TILE_SLAB: "mélypalacsempe-lap"
+  DEEPSLATE_TILE_STAIRS: "mélypalacsempe-lépcső"
+  DEEPSLATE_TILE_WALL: "mélypalacsempe-fal"
+  DEEPSLATE_TILES: "mélypala csempe"
+  DETECTOR_RAIL: "érzékelősín"
+  DIAMOND_BLOCK: "gyémántblokk"
+  DIAMOND_ORE: "gyémántérc"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "dioritlap"
+  DIORITE_STAIRS: "dioritlépcső"
+  DIORITE_WALL: "dioritfal"
+  DIRT: "föld"
+  DIRT_PATH: "ösvény"
+  DISPENSER: "adagoló"
+  DRAGON_EGG: "sárkánytojás"
+  DRAGON_HEAD: "sárkányfej"
+  DRAGON_WALL_HEAD: "fali sárkányfej"
+  DRIED_KELP_BLOCK: "szárított hínárblokk"
+  DRIPSTONE_BLOCK: "cseppkőblokk"
+  DROPPER: "kidobó"
+  EMERALD_BLOCK: "smaragdblokk"
+  EMERALD_ORE: "smaragdérc"
+  ENCHANTING_TABLE: "varázslóasztal"
+  END_GATEWAY: "end-kapu"
+  END_PORTAL: "end-portál"
+  END_PORTAL_FRAME: "endportál-keret"
+  END_ROD: "end-rúd"
+  END_STONE: "endkő"
+  END_STONE_BRICK_SLAB: "endkőtégla lap"
+  END_STONE_BRICK_STAIRS: "endkőtégla-lépcső"
+  END_STONE_BRICK_WALL: "endkőtégla-fal"
+  END_STONE_BRICKS: "endkőtégla"
+  ENDER_CHEST: "enderláda"
+  EXPOSED_CHISELED_COPPER: "megviselt vésett rézblokk"
+  EXPOSED_COPPER: "megviselt rézblokk"
+  EXPOSED_COPPER_BULB: "megviselt rézizzó"
+  EXPOSED_COPPER_DOOR: "megviselt rézajtó"
+  EXPOSED_COPPER_GRATE: "megviselt rézrostély"
+  EXPOSED_COPPER_TRAPDOOR: "megviselt réz csapóajtó"
+  EXPOSED_CUT_COPPER: "megviselt vágott rézblokk"
+  EXPOSED_CUT_COPPER_SLAB: "megviselt vágott rézlap"
+  EXPOSED_CUT_COPPER_STAIRS: "megviselt vágott rézlépcső"
+  FARMLAND: "termőföld"
+  FERN: "páfrány"
+  FIRE: "tűz"
+  FIRE_CORAL: "tűzkorall"
+  FIRE_CORAL_BLOCK: "tűzkorall-blokk"
+  FIRE_CORAL_FAN: "tűzkorall-legyező"
+  FIRE_CORAL_WALL_FAN: "fali tűzkorall-legyező"
+  FLETCHING_TABLE: "íjászasztal"
+  FLOWER_POT: "virágcserép"
+  FLOWERING_AZALEA: "virágzó azálea"
+  FLOWERING_AZALEA_LEAVES: "virágzó azálealevelek"
+  FROGSPAWN: "békapeték"
+  FROSTED_ICE: "gyorsfagyasztott jég"
+  FURNACE: "kemence"
+  GILDED_BLACKSTONE: "aranyozott feketekő"
+  GLASS: "üveg"
+  GLASS_PANE: "üveglap"
+  GLOW_LICHEN: "fénylő zuzmó"
+  GLOWSTONE: "izzókő"
+  GOLD_BLOCK: "aranyblokk"
+  GOLD_ORE: "aranyérc"
+  GRANITE: "gránit"
+  GRANITE_SLAB: "gránitlap"
+  GRANITE_STAIRS: "gránitlépcső"
+  GRANITE_WALL: "gránitfal"
+  GRASS: "fű"
+  GRASS_BLOCK: "füves földblokk"
+  GRAVEL: "sóder"
+  GRAY_BANNER: "szürke zászló"
+  GRAY_BED: "szürke ágy"
+  GRAY_CANDLE: "szürke gyertya"
+  GRAY_CANDLE_CAKE: "torta szürke gyertyával"
+  GRAY_CARPET: "szürke szőnyeg"
+  GRAY_CONCRETE: "szürke beton"
+  GRAY_CONCRETE_POWDER: "szürke szárazbeton"
+  GRAY_GLAZED_TERRACOTTA: "szürke mázas kerámia"
+  GRAY_SHULKER_BOX: "szürke shulkerdoboz"
+  GRAY_STAINED_GLASS: "szürke festett üveg"
+  GRAY_STAINED_GLASS_PANE: "szürke festett üveglap"
+  GRAY_TERRACOTTA: "szürke terrakotta"
+  GRAY_WOOL: "szürke gyapjú"
+  GREEN_BANNER: "zöld zászló"
+  GREEN_BED: "zöld ágy"
+  GREEN_CANDLE: "zöld gyertya"
+  GREEN_CANDLE_CAKE: "torta zöld gyertyával"
+  GREEN_CARPET: "zöld szőnyeg"
+  GREEN_CONCRETE: "zöld beton"
+  GREEN_CONCRETE_POWDER: "zöld szárazbeton"
+  GREEN_GLAZED_TERRACOTTA: "zöld mázas kerámia"
+  GREEN_SHULKER_BOX: "zöld shulkerdoboz"
+  GREEN_STAINED_GLASS: "zöld festett üveg"
+  GREEN_STAINED_GLASS_PANE: "zöld festett üveglap"
+  GREEN_TERRACOTTA: "zöld terrakotta"
+  GREEN_WOOL: "zöld gyapjú"
+  GRINDSTONE: "köszörűkő"
+  HANGING_ROOTS: "lógó gyökerek"
+  HAY_BLOCK: "szalmabála"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "nehéz súlymérő nyomólap"
+  HONEY_BLOCK: "mézblokk"
+  HONEYCOMB_BLOCK: "méhsejtblokk"
+  HOPPER: "tölcsér"
+  HORN_CORAL: "agancskorall"
+  HORN_CORAL_BLOCK: "agancskorall-blokk"
+  HORN_CORAL_FAN: "agancskorall-legyező"
+  HORN_CORAL_WALL_FAN: "fali agancskorall-legyező"
+  ICE: "jég"
+  INFESTED_CHISELED_STONE_BRICKS: "vésett kőtégla ezüstmollyal"
+  INFESTED_COBBLESTONE: "zúzottkő ezüstmollyal"
+  INFESTED_CRACKED_STONE_BRICKS: "repedt kőtégla ezüstmollyal"
+  INFESTED_DEEPSLATE: "mélypala ezüstmollyal"
+  INFESTED_MOSSY_STONE_BRICKS: "mohás kőtégla ezüstmollyal"
+  INFESTED_STONE: "kő ezüstmollyal"
+  INFESTED_STONE_BRICKS: "kőtégla ezüstmollyal"
+  IRON_BARS: "vasrács"
+  IRON_BLOCK: "vasblokk"
+  IRON_DOOR: "vasajtó"
+  IRON_ORE: "vasérc"
+  IRON_TRAPDOOR: "vas csapóajtó"
+  JACK_O_LANTERN: "töklámpás"
+  JIGSAW: "kirakósblokk"
+  JUKEBOX: "zenegép"
+  JUNGLE_BUTTON: "dzsungelfa gomb"
+  JUNGLE_DOOR: "dzsungelfa ajtó"
+  JUNGLE_FENCE: "dzsungelfa kerítés"
+  JUNGLE_FENCE_GATE: "dzsungelfa kerítéskapu"
+  JUNGLE_HANGING_SIGN: "dzsungelfa függőtábla"
+  JUNGLE_LEAVES: "dzsungelfalevelek"
+  JUNGLE_LOG: "dzsungelfarönk"
+  JUNGLE_PLANKS: "dzsungelfa deszka"
+  JUNGLE_PRESSURE_PLATE: "dzsungelfa nyomólap"
+  JUNGLE_SAPLING: "dzsungelfacsemete"
+  JUNGLE_SIGN: "dzsungelfa tábla"
+  JUNGLE_SLAB: "dzsungelfa lap"
+  JUNGLE_STAIRS: "dzsungelfa lépcső"
+  JUNGLE_TRAPDOOR: "dzsungelfa csapóajtó"
+  JUNGLE_WALL_HANGING_SIGN: "dzsungelfa fali függőtábla"
+  JUNGLE_WALL_SIGN: "dzsungelfa falitábla"
+  JUNGLE_WOOD: "dzsungelfablokk"
+  KELP: "hínár"
+  KELP_PLANT: "hínárszár"
+  LADDER: "létra"
+  LANTERN: "lámpás"
+  LAPIS_BLOCK: "lazuritblokk"
+  LAPIS_ORE: "lazuritérc"
+  LARGE_AMETHYST_BUD: "nagy ametisztkristály"
+  LARGE_FERN: "nagy páfrány"
+  LAVA: "láva"
+  LAVA_CAULDRON: "lávával teli üst"
+  LECTERN: "olvasóállvány"
+  LEVER: "kar"
+  LIGHT: "fény"
+  LIGHT_BLUE_BANNER: "világoskék zászló"
+  LIGHT_BLUE_BED: "világoskék ágy"
+  LIGHT_BLUE_CANDLE: "világoskék gyertya"
+  LIGHT_BLUE_CANDLE_CAKE: "torta világoskék gyertyával"
+  LIGHT_BLUE_CARPET: "világoskék szőnyeg"
+  LIGHT_BLUE_CONCRETE: "világoskék beton"
+  LIGHT_BLUE_CONCRETE_POWDER: "világoskék szárazbeton"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "világoskék mázas kerámia"
+  LIGHT_BLUE_SHULKER_BOX: "világoskék shulkerdoboz"
+  LIGHT_BLUE_STAINED_GLASS: "világoskék festett üveg"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "világoskék festett üveglap"
+  LIGHT_BLUE_TERRACOTTA: "világoskék terrakotta"
+  LIGHT_BLUE_WOOL: "világoskék gyapjú"
+  LIGHT_GRAY_BANNER: "világosszürke zászló"
+  LIGHT_GRAY_BED: "világosszürke ágy"
+  LIGHT_GRAY_CANDLE: "világosszürke gyertya"
+  LIGHT_GRAY_CANDLE_CAKE: "torta világosszürke gyertyával"
+  LIGHT_GRAY_CARPET: "világosszürke szőnyeg"
+  LIGHT_GRAY_CONCRETE: "világosszürke beton"
+  LIGHT_GRAY_CONCRETE_POWDER: "világosszürke szárazbeton"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "világosszürke mázas kerámia"
+  LIGHT_GRAY_SHULKER_BOX: "világosszürke shulkerdoboz"
+  LIGHT_GRAY_STAINED_GLASS: "világosszürke festett üveg"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "világosszürke festett üveglap"
+  LIGHT_GRAY_TERRACOTTA: "világosszürke terrakotta"
+  LIGHT_GRAY_WOOL: "világosszürke gyapjú"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "könnyű súlymérő nyomólap"
+  LIGHTNING_ROD: "villámhárító"
+  LILAC: "orgona"
+  LILY_OF_THE_VALLEY: "gyöngyvirág"
+  LILY_PAD: "tavirózsa"
+  LIME_BANNER: "világoszöld zászló"
+  LIME_BED: "világoszöld ágy"
+  LIME_CANDLE: "világoszöld gyertya"
+  LIME_CANDLE_CAKE: "torta világoszöld gyertyával"
+  LIME_CARPET: "világoszöld szőnyeg"
+  LIME_CONCRETE: "világoszöld beton"
+  LIME_CONCRETE_POWDER: "világoszöld szárazbeton"
+  LIME_GLAZED_TERRACOTTA: "világoszöld mázas kerámia"
+  LIME_SHULKER_BOX: "világoszöld shulkerdoboz"
+  LIME_STAINED_GLASS: "világoszöld festett üveg"
+  LIME_STAINED_GLASS_PANE: "világoszöld festett üveglap"
+  LIME_TERRACOTTA: "világoszöld terrakotta"
+  LIME_WOOL: "világoszöld gyapjú"
+  LODESTONE: "iránykő"
+  LOOM: "szövőszék"
+  MAGENTA_BANNER: "bíbor zászló"
+  MAGENTA_BED: "bíbor ágy"
+  MAGENTA_CANDLE: "bíbor gyertya"
+  MAGENTA_CANDLE_CAKE: "torta bíbor gyertyával"
+  MAGENTA_CARPET: "bíbor szőnyeg"
+  MAGENTA_CONCRETE: "bíbor beton"
+  MAGENTA_CONCRETE_POWDER: "bíbor szárazbeton"
+  MAGENTA_GLAZED_TERRACOTTA: "bíbor mázas kerámia"
+  MAGENTA_SHULKER_BOX: "bíbor shulkerdoboz"
+  MAGENTA_STAINED_GLASS: "bíbor festett üveg"
+  MAGENTA_STAINED_GLASS_PANE: "bíbor festett üveglap"
+  MAGENTA_TERRACOTTA: "bíbor terrakotta"
+  MAGENTA_WOOL: "bíbor gyapjú"
+  MAGMA_BLOCK: "magmablokk"
+  MANGROVE_BUTTON: "mangrovefa gomb"
+  MANGROVE_DOOR: "mangrovefa ajtó"
+  MANGROVE_FENCE: "mangrovefa kerítés"
+  MANGROVE_FENCE_GATE: "mangrovefa kerítéskapu"
+  MANGROVE_HANGING_SIGN: "mangrovefa függőtábla"
+  MANGROVE_LEAVES: "mangrovelevelek"
+  MANGROVE_LOG: "mangroverönk"
+  MANGROVE_PLANKS: "mangrovedeszka"
+  MANGROVE_PRESSURE_PLATE: "mangrovefa nyomólap"
+  MANGROVE_PROPAGULE: "mangrovemagonc"
+  MANGROVE_ROOTS: "mangrovegyökerek"
+  MANGROVE_SIGN: "mangrovefa tábla"
+  MANGROVE_SLAB: "mangrovefa lap"
+  MANGROVE_STAIRS: "mangrovefa lépcső"
+  MANGROVE_TRAPDOOR: "mangrovefa csapóajtó"
+  MANGROVE_WALL_HANGING_SIGN: "mangrove fali függőtábla"
+  MANGROVE_WALL_SIGN: "mangrovefa falitábla"
+  MANGROVE_WOOD: "mangroveblokk"
+  MEDIUM_AMETHYST_BUD: "közepes ametisztkristály"
+  MELON: "dinnye"
+  MELON_STEM: "dinnyeszár"
+  MOSS_BLOCK: "mohablokk"
+  MOSS_CARPET: "mohaszőnyeg"
+  MOSSY_COBBLESTONE: "mohás zúzottkő"
+  MOSSY_COBBLESTONE_SLAB: "mohás zúzottkő lap"
+  MOSSY_COBBLESTONE_STAIRS: "mohás zúzottkőlépcső"
+  MOSSY_COBBLESTONE_WALL: "mohás zúzottkő-fal"
+  MOSSY_STONE_BRICK_SLAB: "mohás kőtégla lap"
+  MOSSY_STONE_BRICK_STAIRS: "mohás kőtégla-lépcső"
+  MOSSY_STONE_BRICK_WALL: "mohás kőtéglafal"
+  MOSSY_STONE_BRICKS: "mohás kőtégla"
+  MOVING_PISTON: "mozgó dugattyú"
+  MUD: "iszap"
+  MUD_BRICK_SLAB: "vályogtégla lap"
+  MUD_BRICK_STAIRS: "vályogtégla-lépcső"
+  MUD_BRICK_WALL: "vályogtégla-fal"
+  MUD_BRICKS: "vályogtégla"
+  MUDDY_MANGROVE_ROOTS: "iszapos mangrovegyökerek"
+  MUSHROOM_STEM: "gombatönk"
+  MYCELIUM: "micélium"
+  NETHER_BRICK_FENCE: "nethertégla-kerítés"
+  NETHER_BRICK_SLAB: "nethertégla lap"
+  NETHER_BRICK_STAIRS: "nethertégla-lépcső"
+  NETHER_BRICK_WALL: "nethertégla-fal"
+  NETHER_BRICKS: "nethertégla"
+  NETHER_GOLD_ORE: "netheraranyérc"
+  NETHER_PORTAL: "nether-portál"
+  NETHER_QUARTZ_ORE: "netherkvarcérc"
+  NETHER_SPROUTS: "nethercsírák"
+  NETHER_WART: "netherbibircsók"
+  NETHER_WART_BLOCK: "netherbibircsók-blokk"
+  NETHERITE_BLOCK: "netheritblokk"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "hangdoboz"
+  OAK_BUTTON: "tölgyfa gomb"
+  OAK_DOOR: "tölgyfa ajtó"
+  OAK_FENCE: "tölgyfa kerítés"
+  OAK_FENCE_GATE: "tölgyfa kerítéskapu"
+  OAK_HANGING_SIGN: "tölgyfa függőtábla"
+  OAK_LEAVES: "tölgylevelek"
+  OAK_LOG: "tölgyfarönk"
+  OAK_PLANKS: "tölgydeszka"
+  OAK_PRESSURE_PLATE: "tölgyfa nyomólap"
+  OAK_SAPLING: "tölgycsemete"
+  OAK_SIGN: "tölgyfa tábla"
+  OAK_SLAB: "tölgyfa lap"
+  OAK_STAIRS: "tölgyfa lépcső"
+  OAK_TRAPDOOR: "tölgyfa csapóajtó"
+  OAK_WALL_HANGING_SIGN: "tölgyfa fali függőtábla"
+  OAK_WALL_SIGN: "tölgyfa falitábla"
+  OAK_WOOD: "tölgyfablokk"
+  OBSERVER: "megfigyelő"
+  OBSIDIAN: "obszidián"
+  OCHRE_FROGLIGHT: "okker varangyfény"
+  OMINOUS_BANNER: "vészjósló zászló"
+  ORANGE_BANNER: "narancssárga zászló"
+  ORANGE_BED: "narancssárga ágy"
+  ORANGE_CANDLE: "narancssárga gyertya"
+  ORANGE_CANDLE_CAKE: "torta narancssárga gyertyával"
+  ORANGE_CARPET: "narancssárga szőnyeg"
+  ORANGE_CONCRETE: "narancssárga beton"
+  ORANGE_CONCRETE_POWDER: "narancssárga szárazbeton"
+  ORANGE_GLAZED_TERRACOTTA: "narancssárga mázas kerámia"
+  ORANGE_SHULKER_BOX: "narancssárga shulkerdoboz"
+  ORANGE_STAINED_GLASS: "narancssárga festett üveg"
+  ORANGE_STAINED_GLASS_PANE: "narancssárga festett üveglap"
+  ORANGE_TERRACOTTA: "narancssárga terrakotta"
+  ORANGE_TULIP: "narancssárga tulipán"
+  ORANGE_WOOL: "narancssárga gyapjú"
+  OXEYE_DAISY: "margaréta"
+  OXIDIZED_CHISELED_COPPER: "patinás vésett rézblokk"
+  OXIDIZED_COPPER: "patinás rézblokk"
+  OXIDIZED_COPPER_BULB: "patinás rézizzó"
+  OXIDIZED_COPPER_DOOR: "patinás rézajtó"
+  OXIDIZED_COPPER_GRATE: "patinás rézrostély"
+  OXIDIZED_COPPER_TRAPDOOR: "patinás réz csapóajtó"
+  OXIDIZED_CUT_COPPER: "patinás vágott rézblokk"
+  OXIDIZED_CUT_COPPER_SLAB: "patinás vágott rézlap"
+  OXIDIZED_CUT_COPPER_STAIRS: "patinás vágott rézlépcső"
+  PACKED_ICE: "tömör jég"
+  PACKED_MUD: "vályog"
+  PEARLESCENT_FROGLIGHT: "gyöngyházfényű varangyfény"
+  PEONY: "bazsarózsa"
+  PETRIFIED_OAK_SLAB: "megkövült tölgyfa lap"
+  PIGLIN_HEAD: "piglinfej"
+  PIGLIN_WALL_HEAD: "fali piglinfej"
+  PINK_BANNER: "rózsaszín zászló"
+  PINK_BED: "rózsaszín ágy"
+  PINK_CANDLE: "rózsaszín gyertya"
+  PINK_CANDLE_CAKE: "torta rózsaszín gyertyával"
+  PINK_CARPET: "rózsaszín szőnyeg"
+  PINK_CONCRETE: "rózsaszín beton"
+  PINK_CONCRETE_POWDER: "rózsaszín szárazbeton"
+  PINK_GLAZED_TERRACOTTA: "rózsaszín mázas kerámia"
+  PINK_PETALS: "rózsaszín szirmok"
+  PINK_SHULKER_BOX: "rózsaszín shulkerdoboz"
+  PINK_STAINED_GLASS: "rózsaszín festett üveg"
+  PINK_STAINED_GLASS_PANE: "rózsaszín festett üveglap"
+  PINK_TERRACOTTA: "rózsaszín terrakotta"
+  PINK_TULIP: "rózsaszín tulipán"
+  PINK_WOOL: "rózsaszín gyapjú"
+  PISTON: "dugattyú"
+  PISTON_HEAD: "dugattyúfej"
+  PITCHER_CROP: "kancsókaültetvény"
+  PITCHER_PLANT: "kancsókanövény"
+  PLAYER_HEAD: "játékosfej"
+  PLAYER_HEAD_NAMED: "%s feje"
+  PLAYER_WALL_HEAD: "fali játékosfej"
+  PODZOL: "podzol"
+  POINTED_DRIPSTONE: "hegyes cseppkő"
+  POLISHED_ANDESITE: "csiszolt andezit"
+  POLISHED_ANDESITE_SLAB: "csiszolt andezitlap"
+  POLISHED_ANDESITE_STAIRS: "csiszolt andezitlépcső"
+  POLISHED_BASALT: "csiszolt bazalt"
+  POLISHED_BLACKSTONE: "csiszolt feketekő"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "csiszolt feketekőtégla lap"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "csiszolt feketekőtégla-lépcső"
+  POLISHED_BLACKSTONE_BRICK_WALL: "csiszolt feketekőtégla-fal"
+  POLISHED_BLACKSTONE_BRICKS: "csiszolt feketekőtégla"
+  POLISHED_BLACKSTONE_BUTTON: "csiszolt feketekő gomb"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "csiszolt feketekő nyomólap"
+  POLISHED_BLACKSTONE_SLAB: "csiszolt feketekő lap"
+  POLISHED_BLACKSTONE_STAIRS: "csiszolt feketekő lépcső"
+  POLISHED_BLACKSTONE_WALL: "csiszolt feketekő fal"
+  POLISHED_DEEPSLATE: "csiszolt mélypala"
+  POLISHED_DEEPSLATE_SLAB: "csiszolt mélypala lap"
+  POLISHED_DEEPSLATE_STAIRS: "csiszolt mélypala lépcső"
+  POLISHED_DEEPSLATE_WALL: "csiszolt mélypala fal"
+  POLISHED_DIORITE: "csiszolt diorit"
+  POLISHED_DIORITE_SLAB: "csiszolt dioritlap"
+  POLISHED_DIORITE_STAIRS: "csiszolt dioritlépcső"
+  POLISHED_GRANITE: "csiszolt gránit"
+  POLISHED_GRANITE_SLAB: "csiszolt gránitlap"
+  POLISHED_GRANITE_STAIRS: "csiszolt gránitlépcső"
+  POLISHED_TUFF: "csiszolt tufa"
+  POLISHED_TUFF_SLAB: "csiszolt tufalap"
+  POLISHED_TUFF_STAIRS: "csiszolt tufalépcső"
+  POLISHED_TUFF_WALL: "csiszolt tufafal"
+  POPPY: "pipacs"
+  POTATOES: "burgonyák"
+  POTTED_ACACIA_SAPLING: "akáciacsemete cserépben"
+  POTTED_ALLIUM: "hagymavirág cserépben"
+  POTTED_AZALEA_BUSH: "azálea cserépben"
+  POTTED_AZURE_BLUET: "kékpárna cserépben"
+  POTTED_BAMBOO: "bambusz cserépben"
+  POTTED_BIRCH_SAPLING: "nyírfacsemete cserépben"
+  POTTED_BLUE_ORCHID: "kék orchidea cserépben"
+  POTTED_BROWN_MUSHROOM: "barna gomba cserépben"
+  POTTED_CACTUS: "kaktusz cserépben"
+  POTTED_CHERRY_SAPLING: "cseresznyefa-csemete cserépben"
+  POTTED_CORNFLOWER: "búzavirág cserépben"
+  POTTED_CRIMSON_FUNGUS: "karmazsin gomba cserépben"
+  POTTED_CRIMSON_ROOTS: "karmazsin gyökerek cserépben"
+  POTTED_DANDELION: "pitypang cserépben"
+  POTTED_DARK_OAK_SAPLING: "sötéttölgycsemete cserépben"
+  POTTED_DEAD_BUSH: "száraz kóró cserépben"
+  POTTED_FERN: "páfrány cserépben"
+  POTTED_FLOWERING_AZALEA_BUSH: "virágzó azálea cserépben"
+  POTTED_JUNGLE_SAPLING: "dzsungelfacsemete cserépben"
+  POTTED_LILY_OF_THE_VALLEY: "gyöngyvirág cserépben"
+  POTTED_MANGROVE_PROPAGULE: "mangrovemagonc cserépben"
+  POTTED_OAK_SAPLING: "tölgycsemete cserépben"
+  POTTED_ORANGE_TULIP: "narancssárga tulipán cserépben"
+  POTTED_OXEYE_DAISY: "margaréta cserépben"
+  POTTED_PINK_TULIP: "rózsaszín tulipán cserépben"
+  POTTED_POPPY: "pipacs cserépben"
+  POTTED_RED_MUSHROOM: "piros gomba cserépben"
+  POTTED_RED_TULIP: "piros tulipán cserépben"
+  POTTED_SPRUCE_SAPLING: "fenyőcsemete cserépben"
+  POTTED_TORCHFLOWER: "fáklyaliliom cserépben"
+  POTTED_WARPED_FUNGUS: "torz gomba cserépben"
+  POTTED_WARPED_ROOTS: "torz gyökerek cserépben"
+  POTTED_WHITE_TULIP: "fehér tulipán cserépben"
+  POTTED_WITHER_ROSE: "witherrózsa cserépben"
+  POWDER_SNOW: "porhó"
+  POWDER_SNOW_CAULDRON: "porhóval teli üst"
+  POWERED_RAIL: "gyorsítósín"
+  PRISMARINE: "prizmarin"
+  PRISMARINE_BRICK_SLAB: "prizmarintégla lap"
+  PRISMARINE_BRICK_STAIRS: "prizmarintégla lépcső"
+  PRISMARINE_BRICKS: "prizmarintégla"
+  PRISMARINE_SLAB: "prizmarinlap"
+  PRISMARINE_STAIRS: "prizmarinlépcső"
+  PRISMARINE_WALL: "prizmarinfal"
+  PUMPKIN: "tök"
+  PUMPKIN_STEM: "tökszár"
+  PURPLE_BANNER: "lila zászló"
+  PURPLE_BED: "lila ágy"
+  PURPLE_CANDLE: "lila gyertya"
+  PURPLE_CANDLE_CAKE: "torta lila gyertyával"
+  PURPLE_CARPET: "lila szőnyeg"
+  PURPLE_CONCRETE: "lila beton"
+  PURPLE_CONCRETE_POWDER: "lila szárazbeton"
+  PURPLE_GLAZED_TERRACOTTA: "lila mázas kerámia"
+  PURPLE_SHULKER_BOX: "lila shulkerdoboz"
+  PURPLE_STAINED_GLASS: "lila festett üveg"
+  PURPLE_STAINED_GLASS_PANE: "lila festett üveglap"
+  PURPLE_TERRACOTTA: "lila terrakotta"
+  PURPLE_WOOL: "lila gyapjú"
+  PURPUR_BLOCK: "purpurblokk"
+  PURPUR_PILLAR: "purpuroszlop"
+  PURPUR_SLAB: "purpurlap"
+  PURPUR_STAIRS: "purpurlépcső"
+  QUARTZ_BLOCK: "kvarcblokk"
+  QUARTZ_BRICKS: "kvarctégla"
+  QUARTZ_PILLAR: "kvarcoszlop"
+  QUARTZ_SLAB: "kvarclap"
+  QUARTZ_STAIRS: "kvarclépcső"
+  RAIL: "sín"
+  RAW_COPPER_BLOCK: "nyersrézblokk"
+  RAW_GOLD_BLOCK: "nyersaranyblokk"
+  RAW_IRON_BLOCK: "nyersvasblokk"
+  RED_BANNER: "vörös zászló"
+  RED_BED: "vörös ágy"
+  RED_CANDLE: "vörös gyertya"
+  RED_CANDLE_CAKE: "torta vörös gyertyával"
+  RED_CARPET: "vörös szőnyeg"
+  RED_CONCRETE: "vörös beton"
+  RED_CONCRETE_POWDER: "vörös szárazbeton"
+  RED_GLAZED_TERRACOTTA: "vörös mázas kerámia"
+  RED_MUSHROOM: "piros gomba"
+  RED_MUSHROOM_BLOCK: "piros gombablokk"
+  RED_NETHER_BRICK_SLAB: "vörös nethertégla lap"
+  RED_NETHER_BRICK_STAIRS: "vörös nethertégla-lépcső"
+  RED_NETHER_BRICK_WALL: "vörös nethertégla-fal"
+  RED_NETHER_BRICKS: "vörös nethertégla"
+  RED_SAND: "vörös homok"
+  RED_SANDSTONE: "vörös homokkő"
+  RED_SANDSTONE_SLAB: "vörös homokkő lap"
+  RED_SANDSTONE_STAIRS: "vörös homokkő lépcső"
+  RED_SANDSTONE_WALL: "vörös homokkő fal"
+  RED_SHULKER_BOX: "vörös shulkerdoboz"
+  RED_STAINED_GLASS: "vörös festett üveg"
+  RED_STAINED_GLASS_PANE: "vörös festett üveglap"
+  RED_TERRACOTTA: "vörös terrakotta"
+  RED_TULIP: "piros tulipán"
+  RED_WOOL: "vörös gyapjú"
+  REDSTONE_BLOCK: "redstone-blokk"
+  REDSTONE_LAMP: "redstone-lámpa"
+  REDSTONE_ORE: "redstone-érc"
+  REDSTONE_TORCH: "redstone-fáklya"
+  REDSTONE_WALL_TORCH: "fali redstone-fáklya"
+  REDSTONE_WIRE: "redstone-vezeték"
+  REINFORCED_DEEPSLATE: "megrősített mélypala"
+  REPEATER: "redstone-jelismétlő"
+  REPEATING_COMMAND_BLOCK: "ismétlő parancsblokk"
+  RESPAWN_ANCHOR: "újraéledés-kapocs"
+  ROOTED_DIRT: "gyökeres föld"
+  ROSE_BUSH: "rózsabokor"
+  SAND: "homok"
+  SANDSTONE: "homokkő"
+  SANDSTONE_SLAB: "homokkő lap"
+  SANDSTONE_STAIRS: "homokkő lépcső"
+  SANDSTONE_WALL: "homokkő fal"
+  SCAFFOLDING: "állványzat"
+  SCULK: "sculk"
+  SCULK_CATALYST: "sculkgerjesztő"
+  SCULK_SENSOR: "sculkérzékelő"
+  SCULK_SHRIEKER: "sculksikoltó"
+  SCULK_VEIN: "sculkvéna"
+  SEA_LANTERN: "tengeri lámpás"
+  SEA_PICKLE: "világító zsákállat"
+  SEAGRASS: "tengerifű"
+  SET_SPAWN: "újraéledési pont beállítva"
+  SHORT_GRASS: "rövid fű"
+  SHROOMLIGHT: "fényspóra"
+  SHULKER_BOX: "shulkerdoboz"
+  SKELETON_SKULL: "csontvázkoponya"
+  SKELETON_WALL_SKULL: "fali csontvázkoponya"
+  SLIME_BLOCK: "nyálkablokk"
+  SMALL_AMETHYST_BUD: "kis ametisztkristály"
+  SMALL_DRIPLEAF: "kis csepplevél"
+  SMITHING_TABLE: "kovácsasztal"
+  SMOKER: "füstölő"
+  SMOOTH_BASALT: "sima bazalt"
+  SMOOTH_QUARTZ: "csiszolt kvarcblokk"
+  SMOOTH_QUARTZ_SLAB: "csiszolt kvarclap"
+  SMOOTH_QUARTZ_STAIRS: "csiszolt kvarclépcső"
+  SMOOTH_RED_SANDSTONE: "csiszolt vörös homokkő"
+  SMOOTH_RED_SANDSTONE_SLAB: "csiszolt vörös homokkő lap"
+  SMOOTH_RED_SANDSTONE_STAIRS: "csiszolt vörös homokkő lépcső"
+  SMOOTH_SANDSTONE: "csiszolt homokkő"
+  SMOOTH_SANDSTONE_SLAB: "csiszolt homokkő lap"
+  SMOOTH_SANDSTONE_STAIRS: "csiszolt homokkő lépcső"
+  SMOOTH_STONE: "csiszolt kő"
+  SMOOTH_STONE_SLAB: "csiszolt kőlap"
+  SNIFFER_EGG: "orrontótojás"
+  SNOW: "hó"
+  SNOW_BLOCK: "hóblokk"
+  SOUL_CAMPFIRE: "lélektábortűz"
+  SOUL_FIRE: "lélektűz"
+  SOUL_LANTERN: "léleklámpás"
+  SOUL_SAND: "lélekhomok"
+  SOUL_SOIL: "lélektalaj"
+  SOUL_TORCH: "lélekfáklya"
+  SOUL_WALL_TORCH: "fali lélekfáklya"
+  SPAWN_NOT_VALID: "nincs ágyad vagy egy feltöltött újraéledés-kapcsod vagy nem használható"
+  SPAWNER: "idézőketrec"
+  SPAWNER_DESC1: "interakció idézőtojással:"
+  SPAWNER_DESC2: "mob típusának beállítása"
+  SPONGE: "szivacs"
+  SPORE_BLOSSOM: "spóravirág"
+  SPRUCE_BUTTON: "fenyőfa gomb"
+  SPRUCE_DOOR: "fenyőfa ajtó"
+  SPRUCE_FENCE: "fenyőfa kerítés"
+  SPRUCE_FENCE_GATE: "fenyőfa kerítéskapu"
+  SPRUCE_HANGING_SIGN: "fenyőfa függőtábla"
+  SPRUCE_LEAVES: "fenyőlevelek"
+  SPRUCE_LOG: "fenyőrönk"
+  SPRUCE_PLANKS: "fenyődeszka"
+  SPRUCE_PRESSURE_PLATE: "fenyőfa nyomólap"
+  SPRUCE_SAPLING: "fenyőcsemete"
+  SPRUCE_SIGN: "fenyőtábla"
+  SPRUCE_SLAB: "fenyőfa lap"
+  SPRUCE_STAIRS: "fenyőfa lépcső"
+  SPRUCE_TRAPDOOR: "fenyőfa csapóajtó"
+  SPRUCE_WALL_HANGING_SIGN: "fenyőfa fali függőtábla"
+  SPRUCE_WALL_SIGN: "fenyőfa falitábla"
+  SPRUCE_WOOD: "fenyőblokk"
+  STICKY_PISTON: "ragacsos dugattyú"
+  STONE: "kő"
+  STONE_BRICK_SLAB: "kőtégla lap"
+  STONE_BRICK_STAIRS: "kőtégla-lépcső"
+  STONE_BRICK_WALL: "kőtéglafal"
+  STONE_BRICKS: "kőtégla"
+  STONE_BUTTON: "kőgomb"
+  STONE_PRESSURE_PLATE: "kő nyomólap"
+  STONE_SLAB: "kőlap"
+  STONE_STAIRS: "kőlépcső"
+  STONECUTTER: "kővágó"
+  STRIPPED_ACACIA_LOG: "kérgezett akáciarönk"
+  STRIPPED_ACACIA_WOOD: "kérgezett akáciablokk"
+  STRIPPED_BAMBOO_BLOCK: "kérgezett bambuszblokk"
+  STRIPPED_BIRCH_LOG: "kérgezett nyírfarönk"
+  STRIPPED_BIRCH_WOOD: "kérgezett nyírfablokk"
+  STRIPPED_CHERRY_LOG: "kérgezett cseresznyefarönk"
+  STRIPPED_CHERRY_WOOD: "kérgezett cseresznyefablokk"
+  STRIPPED_CRIMSON_HYPHAE: "kérgezett karmazsin gombafonalak"
+  STRIPPED_CRIMSON_STEM: "kérgezett karmazsin tönk"
+  STRIPPED_DARK_OAK_LOG: "kérgezett sötéttölgy-rönk"
+  STRIPPED_DARK_OAK_WOOD: "kérgezett sötéttölgyblokk"
+  STRIPPED_JUNGLE_LOG: "kérgezett dzsungelfarönk"
+  STRIPPED_JUNGLE_WOOD: "kérgezett dzsungelfablokk"
+  STRIPPED_MANGROVE_LOG: "kérgezett mangroverönk"
+  STRIPPED_MANGROVE_WOOD: "kérgezett mangroveblokk"
+  STRIPPED_OAK_LOG: "kérgezett tölgyfarönk"
+  STRIPPED_OAK_WOOD: "kérgezett tölgyfablokk"
+  STRIPPED_SPRUCE_LOG: "kérgezett fenyőrönk"
+  STRIPPED_SPRUCE_WOOD: "kérgezett fenyőblokk"
+  STRIPPED_WARPED_HYPHAE: "kérgezett torz gombafonalak"
+  STRIPPED_WARPED_STEM: "kérgezett torz tönk"
+  STRUCTURE_BLOCK: "struktúrablokk"
+  STRUCTURE_VOID: "struktúraűr"
+  SUGAR_CANE: "cukornád"
+  SUNFLOWER: "napraforgó"
+  SUSPICIOUS_GRAVEL: "gyanús sóder"
+  SUSPICIOUS_SAND: "gyanús homok"
+  SWEET_BERRY_BUSH: "édesbogyóbokor"
+  TALL_GRASS: "magas fű"
+  TALL_SEAGRASS: "magas tengerifű"
+  TARGET: "céltábla"
+  TERRACOTTA: "terrakotta"
+  TINTED_GLASS: "sötétített üveg"
+  TNT: "tnt"
+  TORCH: "fáklya"
+  TORCHFLOWER: "fáklyaliliom"
+  TORCHFLOWER_CROP: "fáklyaliliom-ültetvény"
+  TRAPPED_CHEST: "csapdaláda"
+  TRIAL_SPAWNER: "küzdőtéri idézőketrec"
+  TRIPWIRE: "botlódrót"
+  TRIPWIRE_HOOK: "botlódrót-horog"
+  TUBE_CORAL: "csőkorall"
+  TUBE_CORAL_BLOCK: "csőkorall-blokk"
+  TUBE_CORAL_FAN: "csőkorall-legyező"
+  TUBE_CORAL_WALL_FAN: "fali csőkorall-legyező"
+  TUFF: "tufa"
+  TUFF_BRICK_SLAB: "tufatégla lap"
+  TUFF_BRICK_STAIRS: "tufatégla lépcső"
+  TUFF_BRICK_WALL: "tufatégla fal"
+  TUFF_BRICKS: "tufatégla"
+  TUFF_SLAB: "tufalap"
+  TUFF_STAIRS: "tufalépcső"
+  TUFF_WALL: "tufafal"
+  TURTLE_EGG: "teknőstojás"
+  TWISTING_VINES: "tekergő indák"
+  TWISTING_VINES_PLANT: "tekergő indaszár"
+  VERDANT_FROGLIGHT: "zöld varangyfény"
+  VINE: "inda"
+  VOID_AIR: "űrbéli levegő"
+  WALL_TORCH: "fali fáklya"
+  WARPED_BUTTON: "torz gomb"
+  WARPED_DOOR: "torz ajtó"
+  WARPED_FENCE: "torz kerítés"
+  WARPED_FENCE_GATE: "torz kerítéskapu"
+  WARPED_FUNGUS: "torz gomba"
+  WARPED_HANGING_SIGN: "torz függőtábla"
+  WARPED_HYPHAE: "torz gombafonalak"
+  WARPED_NYLIUM: "torz nílium"
+  WARPED_PLANKS: "torz deszka"
+  WARPED_PRESSURE_PLATE: "torz nyomólap"
+  WARPED_ROOTS: "torz gyökerek"
+  WARPED_SIGN: "torz tábla"
+  WARPED_SLAB: "torz deszkalap"
+  WARPED_STAIRS: "torz lépcső"
+  WARPED_STEM: "torz tönk"
+  WARPED_TRAPDOOR: "torz csapóajtó"
+  WARPED_WALL_HANGING_SIGN: "torz fali függőtábla"
+  WARPED_WALL_SIGN: "torz falitábla"
+  WARPED_WART_BLOCK: "torz bibircsókblokk"
+  WATER: "víz"
+  WATER_CAULDRON: "vízzel teli üst"
+  WAXED_CHISELED_COPPER: "viaszolt vésett rézblokk"
+  WAXED_COPPER_BLOCK: "viaszolt rézblokk"
+  WAXED_COPPER_BULB: "viaszolt rézizzó"
+  WAXED_COPPER_DOOR: "viaszolt rézajtó"
+  WAXED_COPPER_GRATE: "viaszolt rézrostély"
+  WAXED_COPPER_TRAPDOOR: "viaszolt réz csapóajtó"
+  WAXED_CUT_COPPER: "viaszolt vágott rézblokk"
+  WAXED_CUT_COPPER_SLAB: "viaszolt vágott rézlap"
+  WAXED_CUT_COPPER_STAIRS: "viaszolt vágott rézlépcső"
+  WAXED_EXPOSED_CHISELED_COPPER: "viaszolt megviselt vésett rézblokk"
+  WAXED_EXPOSED_COPPER: "viaszolt megviselt rézblokk"
+  WAXED_EXPOSED_COPPER_BULB: "viaszolt megviselt rézizzó"
+  WAXED_EXPOSED_COPPER_DOOR: "viaszolt megviselt rézajtó"
+  WAXED_EXPOSED_COPPER_GRATE: "viaszolt megviselt rézrostély"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "viaszolt megviselt réz csapóajtó"
+  WAXED_EXPOSED_CUT_COPPER: "viaszolt megviselt vágott rézblokk"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "viaszolt megviselt vágott rézlap"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "viaszolt megviselt vágott rézlépcső"
+  WAXED_OXIDIZED_CHISELED_COPPER: "viaszolt patinás vésett rézblokk"
+  WAXED_OXIDIZED_COPPER: "viaszolt patinás rézblokk"
+  WAXED_OXIDIZED_COPPER_BULB: "viaszolt patinás rézizzó"
+  WAXED_OXIDIZED_COPPER_DOOR: "viaszolt patinás rézajtó"
+  WAXED_OXIDIZED_COPPER_GRATE: "viaszolt patinás rézrostély"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "viaszolt patinás réz csapóajtó"
+  WAXED_OXIDIZED_CUT_COPPER: "viaszolt patinás vágott rézblokk"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "viaszolt patinás vágott rézlap"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "viaszolt patinás vágott rézlépcső"
+  WAXED_WEATHERED_CHISELED_COPPER: "viaszolt viharvert vésett rézblokk"
+  WAXED_WEATHERED_COPPER: "viaszolt viharvert rézblokk"
+  WAXED_WEATHERED_COPPER_BULB: "viaszolt viharvert rézizzó"
+  WAXED_WEATHERED_COPPER_DOOR: "viaszolt viharvert rézajtó"
+  WAXED_WEATHERED_COPPER_GRATE: "viaszolt viharvert rézrostély"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "viaszolt viharvert réz csapóajtó"
+  WAXED_WEATHERED_CUT_COPPER: "viaszolt viharvert vágott rézblokk"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "viaszolt viharvert vágott rézlap"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "viaszolt viharvert vágott rézlépcső"
+  WEATHERED_CHISELED_COPPER: "viharvert vésett rézblokk"
+  WEATHERED_COPPER: "viharvert rézblokk"
+  WEATHERED_COPPER_BULB: "viharvert rézizzó"
+  WEATHERED_COPPER_DOOR: "viharvert rézajtó"
+  WEATHERED_COPPER_GRATE: "viharvert rézrostély"
+  WEATHERED_COPPER_TRAPDOOR: "viharvert réz csapóajtó"
+  WEATHERED_CUT_COPPER: "viharvert vágott rézblokk"
+  WEATHERED_CUT_COPPER_SLAB: "viharvert vágott rézlap"
+  WEATHERED_CUT_COPPER_STAIRS: "viharvert vágott rézlépcső"
+  WEEPING_VINES: "keserves indák"
+  WEEPING_VINES_PLANT: "keserves indaszár"
+  WET_SPONGE: "nedves szivacs"
+  WHEAT: "búzatermés"
+  WHITE_BANNER: "fehér zászló"
+  WHITE_BED: "fehér ágy"
+  WHITE_CANDLE: "fehér gyertya"
+  WHITE_CANDLE_CAKE: "torta fehér gyertyával"
+  WHITE_CARPET: "fehér szőnyeg"
+  WHITE_CONCRETE: "fehér beton"
+  WHITE_CONCRETE_POWDER: "fehér szárazbeton"
+  WHITE_GLAZED_TERRACOTTA: "fehér mázas kerámia"
+  WHITE_SHULKER_BOX: "fehér shulkerdoboz"
+  WHITE_STAINED_GLASS: "fehér festett üveg"
+  WHITE_STAINED_GLASS_PANE: "fehér festett üveglap"
+  WHITE_TERRACOTTA: "fehér terrakotta"
+  WHITE_TULIP: "fehér tulipán"
+  WHITE_WOOL: "fehér gyapjú"
+  WITHER_ROSE: "witherrózsa"
+  WITHER_SKELETON_SKULL: "withercsontváz-koponya"
+  WITHER_SKELETON_WALL_SKULL: "fali withercsontváz-koponya"
+  YELLOW_BANNER: "sárga zászló"
+  YELLOW_BED: "sárga ágy"
+  YELLOW_CANDLE: "sárga gyertya"
+  YELLOW_CANDLE_CAKE: "torta sárga gyertyával"
+  YELLOW_CARPET: "sárga szőnyeg"
+  YELLOW_CONCRETE: "sárga beton"
+  YELLOW_CONCRETE_POWDER: "sárga szárazbeton"
+  YELLOW_GLAZED_TERRACOTTA: "sárga mázas kerámia"
+  YELLOW_SHULKER_BOX: "sárga shulkerdoboz"
+  YELLOW_STAINED_GLASS: "sárga festett üveg"
+  YELLOW_STAINED_GLASS_PANE: "sárga festett üveglap"
+  YELLOW_TERRACOTTA: "sárga terrakotta"
+  YELLOW_WOOL: "sárga gyapjú"
+  ZOMBIE_HEAD: "zombifej"
+  ZOMBIE_WALL_HEAD: "fali zombifej"
+  ACACIA_BOAT: "akáciafa csónak"
+  ACACIA_CHEST_BOAT: "akáciafa csónak ládával"
+  ALLAY_SPAWN_EGG: "nyugtancsidéző tojás"
+  AMETHYST_SHARD: "ametisztszilánk"
+  ANGLER_POTTERY_SHARD: "cserépszilánk horgászbottal"
+  ANGLER_POTTERY_SHERD: "horgász cseréptöredék"
+  APPLE: "alma"
+  ARCHER_POTTERY_SHARD: "cserépszilánk íjjal"
+  ARCHER_POTTERY_SHERD: "íjász cseréptöredék"
+  ARMOR_STAND: "páncélállvány"
+  ARMS_UP_POTTERY_SHARD: "cserépszilánk feltartott karokkal"
+  ARMS_UP_POTTERY_SHERD: "felemelt kezek cseréptöredék"
+  ARROW: "nyílvessző"
+  AXOLOTL_BUCKET: "axolotl vödörben"
+  AXOLOTL_SPAWN_EGG: "axolotlidéző tojás"
+  BAKED_POTATO: "sült burgonya"
+  BAMBOO_CHEST_RAFT: "bambusztutaj ládával"
+  BAMBOO_RAFT: "bambusztutaj"
+  BAT_SPAWN_EGG: "denevéridéző tojás"
+  BEE_SPAWN_EGG: "méhidéző tojás"
+  BEEF: "nyers marhahús"
+  BEETROOT: "cékla"
+  BEETROOT_SEEDS: "céklamag"
+  BEETROOT_SOUP: "céklaleves"
+  BIRCH_BOAT: "nyírfa csónak"
+  BIRCH_CHEST_BOAT: "nyírfa csónak ládával"
+  BLACK_DYE: "fekete festék"
+  BLADE_POTTERY_SHARD: "cserépszilánk pengével"
+  BLADE_POTTERY_SHERD: "penge cseréptöredék"
+  BLAZE_POWDER: "őrlángpor"
+  BLAZE_ROD: "lángrúd"
+  BLAZE_SPAWN_EGG: "őrlángidéző tojás"
+  BLUE_DYE: "kék festék"
+  BONE: "csont"
+  BONE_MEAL: "csontliszt"
+  BOOK: "könyv"
+  BOW: "íj"
+  BOWL: "tál"
+  BREAD: "kenyér"
+  BREEZE_SPAWN_EGG: "őrszélidéző tojás"
+  BREWER_POTTERY_SHARD: "cserépszilánk lombikkal"
+  BREWER_POTTERY_SHERD: "italfőző cseréptöredék"
+  BRICK: "tégla"
+  BROWN_DYE: "barna festék"
+  BRUSH: "ecset"
+  BUCKET: "vödör"
+  BUNDLE: "batyu"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "cserépszilánk lánggal"
+  BURN_POTTERY_SHERD: "láng cseréptöredék"
+  CAMEL_SPAWN_EGG: "teveidéző tojás"
+  CARROT: "sárgarépa"
+  CARROT_ON_A_STICK: "répa horgászboton"
+  CAT_SPAWN_EGG: "macskaidéző tojás"
+  CAVE_SPIDER_SPAWN_EGG: "barlangi pókot idéző tojás"
+  CHAINMAIL_BOOTS: "láncbakancs"
+  CHAINMAIL_CHESTPLATE: "láncmellvért"
+  CHAINMAIL_HELMET: "láncsisak"
+  CHAINMAIL_LEGGINGS: "lánc lábszárvédő"
+  CHARCOAL: "faszén"
+  CHERRY_BOAT: "cseresznyefa csónak"
+  CHERRY_CHEST_BOAT: "cseresznyefa csónak ládával"
+  CHEST_MINECART: "tárolócsille"
+  CHICKEN: "nyers csirkehús"
+  CHICKEN_SPAWN_EGG: "csirkeidéző tojás"
+  CHORUS_FRUIT: "refréngyümölcs"
+  CLAY_BALL: "agyaggolyó"
+  CLOCK: "óra"
+  COAL: "szén"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  COCOA_BEANS: "kakaóbab"
+  COD: "nyers tőkehal"
+  COD_BUCKET: "tőkehal vödörben"
+  COD_SPAWN_EGG: "tőkehalidéző tojás"
+  COMMAND_BLOCK_MINECART: "parancsblokk-csille"
+  COMPASS: "iránytű"
+  COOKED_BEEF: "sült marhahús"
+  COOKED_CHICKEN: "sült csirke"
+  COOKED_COD: "sült tőkehal"
+  COOKED_MUTTON: "sült birkahús"
+  COOKED_PORKCHOP: "sült sertésszelet"
+  COOKED_RABBIT: "sült nyúlhús"
+  COOKED_SALMON: "sült lazac"
+  COOKIE: "csokis süti"
+  COPPER_INGOT: "rézrúd"
+  COW_SPAWN_EGG: "tehénidéző tojás"
+  CREEPER_BANNER_PATTERN: "zászlóminta"
+  CREEPER_BANNER_PATTERN_DESC: "creeper címerkép"
+  CREEPER_SPAWN_EGG: "creeperidéző tojás"
+  CROSSBOW: "számszeríj"
+  CROSSBOW_PROJECTILE: "lövedék:"
+  CYAN_DYE: "türkizkék festék"
+  DANGER_POTTERY_SHARD: "cserépszilánk veszéllyel"
+  DANGER_POTTERY_SHERD: "veszély cseréptöredék"
+  DARK_OAK_BOAT: "sötéttölgy csónak"
+  DARK_OAK_CHEST_BOAT: "sötéttölgy csónak ládával"
+  DEBUG_STICK: "debugpálca"
+  DEBUG_STICK_EMPTY: "%s nem rendelkezik tulajdonságokkal"
+  DEBUG_STICK_SELECT: "\"%s\" kiválasztva (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" értéke %s"
+  DIAMOND: "gyémánt"
+  DIAMOND_AXE: "gyémántfejsze"
+  DIAMOND_BOOTS: "gyémántcsizma"
+  DIAMOND_CHESTPLATE: "gyémánt mellvért"
+  DIAMOND_HELMET: "gyémántsisak"
+  DIAMOND_HOE: "gyémántkapa"
+  DIAMOND_HORSE_ARMOR: "gyémánt lópáncél"
+  DIAMOND_LEGGINGS: "gyémánt lábszárvédő"
+  DIAMOND_PICKAXE: "gyémántcsákány"
+  DIAMOND_SHOVEL: "gyémántásó"
+  DIAMOND_SWORD: "gyémántkard"
+  DISC_FRAGMENT_5: "hanglemez-szilánk"
+  DISC_FRAGMENT_5_DESC: "hanglemez – 5"
+  DOLPHIN_SPAWN_EGG: "delfinidéző tojás"
+  DONKEY_SPAWN_EGG: "szamáridéző tojás"
+  DRAGON_BREATH: "sárkánylehelet"
+  DRIED_KELP: "szárított hínár"
+  DROWNED_SPAWN_EGG: "vízbefúltidéző tojás"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  ECHO_SHARD: "visszhangszilánk"
+  EGG: "tojás"
+  ELDER_GUARDIAN_SPAWN_EGG: "vén őrszemet idéző tojás"
+  ELYTRA: "kitinszárny"
+  EMERALD: "smaragd"
+  ENCHANTED_BOOK: "varázskönyv"
+  ENCHANTED_GOLDEN_APPLE: "bűvös aranyalma"
+  END_CRYSTAL: "endkristály"
+  ENDER_DRAGON_SPAWN_EGG: "endersárkány-idéző tojás"
+  ENDER_EYE: "ender szeme"
+  ENDER_PEARL: "endergyöngy"
+  ENDERMAN_SPAWN_EGG: "endermanidéző tojás"
+  ENDERMITE_SPAWN_EGG: "endermite-idéző tojás"
+  EVOKER_SPAWN_EGG: "idézőt idéző tojás"
+  EXPERIENCE_BOTTLE: "varázslat palackja"
+  EXPLORER_POTTERY_SHARD: "cserépszilánk térképpel"
+  EXPLORER_POTTERY_SHERD: "felfedező cseréptöredék"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  FEATHER: "toll"
+  FERMENTED_SPIDER_EYE: "erjesztett pókszem"
+  FILLED_MAP: "térkép"
+  FIRE_CHARGE: "tűzgolyó"
+  FIREWORK_ROCKET: "tűzijáték"
+  FIREWORK_ROCKET_FLIGHT: "repülés hossza:"
+  FIREWORK_STAR: "tűzijátékcsillag"
+  FIREWORK_STAR_BLACK: "fekete"
+  FIREWORK_STAR_BLUE: "kék"
+  FIREWORK_STAR_BROWN: "barna"
+  FIREWORK_STAR_CUSTOM_COLOR: "egyéni"
+  FIREWORK_STAR_CYAN: "türkizkék"
+  FIREWORK_STAR_FADE_TO: "színátmenet:"
+  FIREWORK_STAR_FLICKER: "villódzás"
+  FIREWORK_STAR_GRAY: "szürke"
+  FIREWORK_STAR_GREEN: "zöld"
+  FIREWORK_STAR_LIGHT_BLUE: "világoskék"
+  FIREWORK_STAR_LIGHT_GRAY: "világosszürke"
+  FIREWORK_STAR_LIME: "világoszöld"
+  FIREWORK_STAR_MAGENTA: "bíbor"
+  FIREWORK_STAR_ORANGE: "narancssárga"
+  FIREWORK_STAR_PINK: "rózsaszín"
+  FIREWORK_STAR_PURPLE: "lila"
+  FIREWORK_STAR_RED: "vörös"
+  FIREWORK_STAR_SHAPE: "ismeretlen forma"
+  FIREWORK_STAR_SHAPE_BURST: "szabálytalan alakú"
+  FIREWORK_STAR_SHAPE_CREEPER: "creeperfej alakú"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "nagy gömb"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "kis gömb"
+  FIREWORK_STAR_SHAPE_STAR: "csillag alakú"
+  FIREWORK_STAR_TRAIL: "csóva"
+  FIREWORK_STAR_WHITE: "fehér"
+  FIREWORK_STAR_YELLOW: "sárga"
+  FISHING_ROD: "horgászbot"
+  FLINT: "kovakő"
+  FLINT_AND_STEEL: "kovakő és acél"
+  FLOWER_BANNER_PATTERN: "zászlóminta"
+  FLOWER_BANNER_PATTERN_DESC: "virág címerkép"
+  FOX_SPAWN_EGG: "rókaidéző tojás"
+  FRIEND_POTTERY_SHARD: "cserépszilánk baráttal"
+  FRIEND_POTTERY_SHERD: "barát cseréptöredék"
+  FROG_SPAWN_EGG: "békaidéző tojás"
+  FURNACE_MINECART: "csille kemencével"
+  GHAST_SPAWN_EGG: "ghastidéző tojás"
+  GHAST_TEAR: "ghastkönny"
+  GLASS_BOTTLE: "üvegpalack"
+  GLISTERING_MELON_SLICE: "csillámló dinnyeszelet"
+  GLOBE_BANNER_PATTERN: "zászlóminta"
+  GLOBE_BANNER_PATTERN_DESC: "földgömb"
+  GLOW_BERRIES: "fényszeder"
+  GLOW_INK_SAC: "fénylő tintazsák"
+  GLOW_ITEM_FRAME: "fénylő eszközkeret"
+  GLOW_SQUID_SPAWN_EGG: "fénylő tintahalat idéző tojás"
+  GLOWSTONE_DUST: "izzókőpor"
+  GOAT_HORN: "kecsketülök"
+  GOAT_SPAWN_EGG: "kecskeidéző tojás"
+  GOLD_INGOT: "aranyrúd"
+  GOLD_NUGGET: "aranyrög"
+  GOLDEN_APPLE: "aranyalma"
+  GOLDEN_AXE: "aranyfejsze"
+  GOLDEN_BOOTS: "aranycsizma"
+  GOLDEN_CARROT: "aranyrépa"
+  GOLDEN_CHESTPLATE: "arany mellvért"
+  GOLDEN_HELMET: "aranysisak"
+  GOLDEN_HOE: "aranykapa"
+  GOLDEN_HORSE_ARMOR: "arany lópáncél"
+  GOLDEN_LEGGINGS: "arany lábszárvédő"
+  GOLDEN_PICKAXE: "aranycsákány"
+  GOLDEN_SHOVEL: "aranyásó"
+  GOLDEN_SWORD: "aranykard"
+  GRAY_DYE: "szürke festék"
+  GREEN_DYE: "zöld festék"
+  GUARDIAN_SPAWN_EGG: "őrszemidéző tojás"
+  GUNPOWDER: "puskapor"
+  HEART_OF_THE_SEA: "tenger szíve"
+  HEART_POTTERY_SHARD: "cserépszilánk szívvel"
+  HEART_POTTERY_SHERD: "szív cseréptöredék"
+  HEARTBREAK_POTTERY_SHARD: "cserépszilánk törött szívvel"
+  HEARTBREAK_POTTERY_SHERD: "összetört szív cseréptöredék"
+  HOGLIN_SPAWN_EGG: "hoglinidéző tojás"
+  HONEY_BOTTLE: "mézespalack"
+  HONEYCOMB: "méhsejt"
+  HOPPER_MINECART: "tölcséres csille"
+  HORSE_SPAWN_EGG: "lóidéző tojás"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  HOWL_POTTERY_SHARD: "cserépszilánk farkassal"
+  HOWL_POTTERY_SHERD: "üvöltés cseréptöredék"
+  HUSK_SPAWN_EGG: "kiszáradt zombit idéző tojás"
+  INK_SAC: "tintazsák"
+  IRON_AXE: "vasfejsze"
+  IRON_BOOTS: "vascsizma"
+  IRON_CHESTPLATE: "vas mellvért"
+  IRON_GOLEM_SPAWN_EGG: "vasgólemidéző tojás"
+  IRON_HELMET: "vassisak"
+  IRON_HOE: "vaskapa"
+  IRON_HORSE_ARMOR: "vas lópáncél"
+  IRON_INGOT: "vasrúd"
+  IRON_LEGGINGS: "vas lábszárvédő"
+  IRON_NUGGET: "vasrög"
+  IRON_PICKAXE: "vascsákány"
+  IRON_SHOVEL: "vasásó"
+  IRON_SWORD: "vaskard"
+  ITEM_FRAME: "eszközkeret"
+  JUNGLE_BOAT: "dzsungelfa csónak"
+  JUNGLE_CHEST_BOAT: "dzsungelfa csónak ládával"
+  KNOWLEDGE_BOOK: "tudás könyve"
+  LAPIS_LAZULI: "lazurit"
+  LAVA_BUCKET: "lávásvödör"
+  LEAD: "lasszó"
+  LEATHER: "bőr"
+  LEATHER_BOOTS: "bőrcsizma"
+  LEATHER_CHESTPLATE: "bőrzubbony"
+  LEATHER_HELMET: "bőrsisak"
+  LEATHER_HORSE_ARMOR: "bőr lópáncél"
+  LEATHER_LEGGINGS: "bőrnadrág"
+  LIGHT_BLUE_DYE: "világoskék festék"
+  LIGHT_GRAY_DYE: "világosszürke festék"
+  LIME_DYE: "világoszöld festék"
+  LINGERING_POTION: "időző bájital"
+  LINGERING_POTION_EFFECT_AWKWARD: "ügyetlen időző bájital"
+  LINGERING_POTION_EFFECT_EMPTY: "nem főzhető időző bájital"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "tűzállóság időző bájitala"
+  LINGERING_POTION_EFFECT_HARMING: "sebzés időző bájitala"
+  LINGERING_POTION_EFFECT_HEALING: "gyógyítás időző bájitala"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "láthatatlanság időző bájitala"
+  LINGERING_POTION_EFFECT_LEAPING: "szökkenés időző bájitala"
+  LINGERING_POTION_EFFECT_LEVITATION: "lebegés időző bájitala"
+  LINGERING_POTION_EFFECT_LUCK: "szerencse időző bájitala"
+  LINGERING_POTION_EFFECT_MUNDANE: "átlagos időző bájital"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "éjjellátás időző bájitala"
+  LINGERING_POTION_EFFECT_POISON: "mérgezés időző bájitala"
+  LINGERING_POTION_EFFECT_REGENERATION: "regeneráció időző bájitala"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "lassú zuhanás időző bájitala"
+  LINGERING_POTION_EFFECT_SLOWNESS: "lomhaság időző bájitala"
+  LINGERING_POTION_EFFECT_STRENGTH: "erő időző bájitala"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "fürgeség időző bájitala"
+  LINGERING_POTION_EFFECT_THICK: "sűrű időző bájital"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "teknősmester időző bájitala"
+  LINGERING_POTION_EFFECT_WATER: "időző vizespalack"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "víz alatti légzés időző bájitala"
+  LINGERING_POTION_EFFECT_WEAKNESS: "gyengeség időző bájitala"
+  LLAMA_SPAWN_EGG: "lámaidéző tojás"
+  LODESTONE_COMPASS: "mágnesezett iránytű"
+  MAGENTA_DYE: "bíbor festék"
+  MAGMA_CREAM: "magmakrém"
+  MAGMA_CUBE_SPAWN_EGG: "magmakocka-idéző tojás"
+  MANGROVE_BOAT: "mangrovefa csónak"
+  MANGROVE_CHEST_BOAT: "mangrovefa csónak ládával"
+  MAP: "üres térkép"
+  MELON_SEEDS: "dinnyemag"
+  MELON_SLICE: "dinnyeszelet"
+  MILK_BUCKET: "tejesvödör"
+  MINECART: "csille"
+  MINER_POTTERY_SHARD: "cserépszilánk csákánnyal"
+  MINER_POTTERY_SHERD: "bányász cseréptöredék"
+  MOJANG_BANNER_PATTERN: "zászlóminta"
+  MOJANG_BANNER_PATTERN_DESC: "mojang címerkép"
+  MOOSHROOM_SPAWN_EGG: "mooshroomidéző tojás"
+  MOURNER_POTTERY_SHARD: "cserépszilánk gyászolóval"
+  MOURNER_POTTERY_SHERD: "gyászoló cseréptöredék"
+  MULE_SPAWN_EGG: "öszvéridéző tojás"
+  MUSHROOM_STEW: "gombaragu"
+  MUSIC_DISC_11: "hanglemez"
+  MUSIC_DISC_11_DESC: "c418 – 11"
+  MUSIC_DISC_13: "hanglemez"
+  MUSIC_DISC_13_DESC: "c418 – 13"
+  MUSIC_DISC_5: "hanglemez"
+  MUSIC_DISC_5_DESC: "samuel åberg – 5"
+  MUSIC_DISC_BLOCKS: "hanglemez"
+  MUSIC_DISC_BLOCKS_DESC: "c418 – blocks"
+  MUSIC_DISC_CAT: "hanglemez"
+  MUSIC_DISC_CAT_DESC: "c418 – cat"
+  MUSIC_DISC_CHIRP: "hanglemez"
+  MUSIC_DISC_CHIRP_DESC: "c418 – chirp"
+  MUSIC_DISC_FAR: "hanglemez"
+  MUSIC_DISC_FAR_DESC: "c418 – far"
+  MUSIC_DISC_MALL: "hanglemez"
+  MUSIC_DISC_MALL_DESC: "c418 – mall"
+  MUSIC_DISC_MELLOHI: "hanglemez"
+  MUSIC_DISC_MELLOHI_DESC: "c418 – mellohi"
+  MUSIC_DISC_OTHERSIDE: "hanglemez"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine – otherside"
+  MUSIC_DISC_PIGSTEP: "hanglemez"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine – pigstep"
+  MUSIC_DISC_RELIC: "hanglemez"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof – relic"
+  MUSIC_DISC_STAL: "hanglemez"
+  MUSIC_DISC_STAL_DESC: "c418 – stal"
+  MUSIC_DISC_STRAD: "hanglemez"
+  MUSIC_DISC_STRAD_DESC: "c418 – strad"
+  MUSIC_DISC_WAIT: "hanglemez"
+  MUSIC_DISC_WAIT_DESC: "c418 – wait"
+  MUSIC_DISC_WARD: "hanglemez"
+  MUSIC_DISC_WARD_DESC: "c418 – ward"
+  MUTTON: "nyers birkahús"
+  NAME_TAG: "cédula"
+  NAUTILUS_SHELL: "nautiluszhéj"
+  NETHER_BRICK: "nethertégla"
+  NETHER_STAR: "nethercsillag"
+  NETHER_WART: "bibircsók"
+  NETHERITE_AXE: "netheritfejsze"
+  NETHERITE_BOOTS: "netheritcsizma"
+  NETHERITE_CHESTPLATE: "netherit mellvért"
+  NETHERITE_HELMET: "netheritsisak"
+  NETHERITE_HOE: "netheritkapa"
+  NETHERITE_INGOT: "netheritrúd"
+  NETHERITE_LEGGINGS: "netherit lábszárvédő"
+  NETHERITE_PICKAXE: "netheritcsákány"
+  NETHERITE_SCRAP: "netheritdarab"
+  NETHERITE_SHOVEL: "netheritásó"
+  NETHERITE_SWORD: "netheritkard"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "kovácssablon"
+  OAK_BOAT: "tölgyfa csónak"
+  OAK_CHEST_BOAT: "tölgyfa csónak ládával"
+  OCELOT_SPAWN_EGG: "ocelotidéző tojás"
+  ORANGE_DYE: "narancssárga festék"
+  PAINTING: "festmény"
+  PANDA_SPAWN_EGG: "pandaidéző tojás"
+  PAPER: "papír"
+  PARROT_SPAWN_EGG: "papagájidéző tojás"
+  PHANTOM_MEMBRANE: "fantommembrán"
+  PHANTOM_SPAWN_EGG: "fantomidéző tojás"
+  PIG_SPAWN_EGG: "malacidéző tojás"
+  PIGLIN_BANNER_PATTERN: "zászlóminta"
+  PIGLIN_BANNER_PATTERN_DESC: "disznóorr"
+  PIGLIN_BRUTE_SPAWN_EGG: "piglin verőlegényt idéző tojás"
+  PIGLIN_SPAWN_EGG: "piglinidéző tojás"
+  PILLAGER_SPAWN_EGG: "rablóidéző tojás"
+  PINK_DYE: "rózsaszín festék"
+  PITCHER_POD: "kancsókahüvely"
+  PLENTY_POTTERY_SHARD: "cserépszilánk ládával"
+  PLENTY_POTTERY_SHERD: "bőség cseréptöredék"
+  POISONOUS_POTATO: "mérgező burgonya"
+  POLAR_BEAR_SPAWN_EGG: "jegesmedve-idéző tojás"
+  POPPED_CHORUS_FRUIT: "pattogatott refréngyümölcs"
+  PORKCHOP: "nyers disznóhús"
+  POTATO: "burgonya"
+  POTION: "bájital"
+  POTION_EFFECT_AWKWARD: "ügyetlen bájital"
+  POTION_EFFECT_EMPTY: "nem főzhető bájital"
+  POTION_EFFECT_FIRE_RESISTANCE: "tűzállóság bájitala"
+  POTION_EFFECT_HARMING: "sebzés bájitala"
+  POTION_EFFECT_HEALING: "gyógyítás bájitala"
+  POTION_EFFECT_INVISIBILITY: "láthatatlanság bájitala"
+  POTION_EFFECT_LEAPING: "szökkenés bájitala"
+  POTION_EFFECT_LEVITATION: "lebegés bájitala"
+  POTION_EFFECT_LUCK: "szerencse bájitala"
+  POTION_EFFECT_MUNDANE: "átlagos bájital"
+  POTION_EFFECT_NIGHT_VISION: "éjjellátás bájitala"
+  POTION_EFFECT_POISON: "mérgező bájital"
+  POTION_EFFECT_REGENERATION: "regeneráció bájitala"
+  POTION_EFFECT_SLOW_FALLING: "lassú zuhanás bájitala"
+  POTION_EFFECT_SLOWNESS: "lomhaság bájitala"
+  POTION_EFFECT_STRENGTH: "erő bájitala"
+  POTION_EFFECT_SWIFTNESS: "fürgeség bájitala"
+  POTION_EFFECT_THICK: "sűrű bájital"
+  POTION_EFFECT_TURTLE_MASTER: "teknősmester bájitala"
+  POTION_EFFECT_WATER: "vizespalack"
+  POTION_EFFECT_WATER_BREATHING: "víz alatti légzés bájitala"
+  POTION_EFFECT_WEAKNESS: "gyengeség bájitala"
+  POTTERY_SHARD_ARCHER: "cserépszilánk íjjal"
+  POTTERY_SHARD_ARMS_UP: "cserépszilánk feltartott karokkal"
+  POTTERY_SHARD_PRIZE: "cserépszilánk kinccsel"
+  POTTERY_SHARD_SKULL: "cserépszilánk koponyával"
+  POWDER_SNOW_BUCKET: "porhavas vödör"
+  PRISMARINE_CRYSTALS: "prizmarinkristály"
+  PRISMARINE_SHARD: "prizmarinszilánk"
+  PRIZE_POTTERY_SHARD: "cserépszilánk kinccsel"
+  PRIZE_POTTERY_SHERD: "jutalom cseréptöredék"
+  PUFFERFISH: "gömbhal"
+  PUFFERFISH_BUCKET: "gömbhal vödörben"
+  PUFFERFISH_SPAWN_EGG: "gömbhalidéző tojás"
+  PUMPKIN_PIE: "tökpite"
+  PUMPKIN_SEEDS: "tökmag"
+  PURPLE_DYE: "lila festék"
+  QUARTZ: "netherkvarc"
+  RABBIT: "nyers nyúlhús"
+  RABBIT_FOOT: "nyúlláb"
+  RABBIT_HIDE: "nyúlbőr"
+  RABBIT_SPAWN_EGG: "nyúlidéző tojás"
+  RABBIT_STEW: "nyúlpörkölt"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  RAVAGER_SPAWN_EGG: "pusztítóidéző tojás"
+  RAW_COPPER: "nyersréz"
+  RAW_GOLD: "nyersarany"
+  RAW_IRON: "nyersvas"
+  RECOVERY_COMPASS: "visszatérés iránytűje"
+  RED_DYE: "vörös festék"
+  REDSTONE: "redstone-por"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  ROTTEN_FLESH: "rohadt hús"
+  SADDLE: "nyereg"
+  SALMON: "nyers lazac"
+  SALMON_BUCKET: "lazac vödörben"
+  SALMON_SPAWN_EGG: "lazacidéző tojás"
+  SCUTE: "pikkely"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  SHEAF_POTTERY_SHARD: "cserépszilánk köteggel"
+  SHEAF_POTTERY_SHERD: "kéve cseréptöredék"
+  SHEARS: "metszőolló"
+  SHEEP_SPAWN_EGG: "birkaidéző tojás"
+  SHELTER_POTTERY_SHARD: "cserépszilánk menedékkel"
+  SHELTER_POTTERY_SHERD: "menedék cseréptöredék"
+  SHIELD: "pajzs"
+  SHIELD_BLACK: "fekete pajzs"
+  SHIELD_BLUE: "kék pajzs"
+  SHIELD_BROWN: "barna pajzs"
+  SHIELD_CYAN: "türkizkék pajzs"
+  SHIELD_GRAY: "szürke pajzs"
+  SHIELD_GREEN: "zöld pajzs"
+  SHIELD_LIGHT_BLUE: "világoskék pajzs"
+  SHIELD_LIGHT_GRAY: "világosszürke pajzs"
+  SHIELD_LIME: "világoszöld pajzs"
+  SHIELD_MAGENTA: "bíbor pajzs"
+  SHIELD_ORANGE: "narancssárga pajzs"
+  SHIELD_PINK: "rózsaszín pajzs"
+  SHIELD_PURPLE: "lila pajzs"
+  SHIELD_RED: "vörös pajzs"
+  SHIELD_WHITE: "fehér pajzs"
+  SHIELD_YELLOW: "sárga pajzs"
+  SHULKER_SHELL: "shulkerhéj"
+  SHULKER_SPAWN_EGG: "shulkeridéző tojás"
+  SIGN: "tábla"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  SILVERFISH_SPAWN_EGG: "ezüstmolyidéző tojás"
+  SKELETON_HORSE_SPAWN_EGG: "csontvázlóidéző tojás"
+  SKELETON_SPAWN_EGG: "csontvázidéző tojás"
+  SKULL_BANNER_PATTERN: "zászlóminta"
+  SKULL_BANNER_PATTERN_DESC: "koponya címerkép"
+  SKULL_POTTERY_SHARD: "cserépszilánk koponyával"
+  SKULL_POTTERY_SHERD: "koponya cseréptöredék"
+  SLIME_BALL: "nyálkagolyó"
+  SLIME_SPAWN_EGG: "nyálkaidéző tojás"
+  SMITHING_TEMPLATE: "kovácssablon"
+  SMITHING_TEMPLATE_APPLIES_TO: "alkalmazható:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "helyezz ide fémrudat vagy kristályt"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "páncélzatra"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "helyezz ide páncélt"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "fémek és kristályok"
+  SMITHING_TEMPLATE_INGREDIENTS: "összetevők:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "helyezz ide netheritrudat"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "gyémántfelszerelésre"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "helyezz ide gyémántpáncélt -fegyvert vagy -eszközt"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netheritrúd"
+  SMITHING_TEMPLATE_UPGRADE: "fejlesztés: "
+  SNIFFER_SPAWN_EGG: "orrontóidéző tojás"
+  SNORT_POTTERY_SHARD: "cserépszilánk orrontóval"
+  SNORT_POTTERY_SHERD: "szimat cseréptöredék"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  SNOW_GOLEM_SPAWN_EGG: "hógólemidéző tojás"
+  SNOWBALL: "hógolyó"
+  SPECTRAL_ARROW: "spektrálnyíl"
+  SPIDER_EYE: "pókszem"
+  SPIDER_SPAWN_EGG: "pókidéző tojás"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  SPLASH_POTION: "robbanó bájital"
+  SPLASH_POTION_EFFECT_AWKWARD: "ügyetlen robbanó bájital"
+  SPLASH_POTION_EFFECT_EMPTY: "nem főzhető robbanó bájital"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "tűzállóság robbanó bájitala"
+  SPLASH_POTION_EFFECT_HARMING: "sebzés robbanó bájitala"
+  SPLASH_POTION_EFFECT_HEALING: "gyógyítás robbanó bájitala"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "láthatatlanság robbanó bájitala"
+  SPLASH_POTION_EFFECT_LEAPING: "szökkenés robbanó bájitala"
+  SPLASH_POTION_EFFECT_LEVITATION: "lebegés robbanó bájitala"
+  SPLASH_POTION_EFFECT_LUCK: "szerencse robbanó bájitala"
+  SPLASH_POTION_EFFECT_MUNDANE: "átlagos robbanó bájital"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "éjjellátás robbanó bájitala"
+  SPLASH_POTION_EFFECT_POISON: "mérgezés robbanó bájitala"
+  SPLASH_POTION_EFFECT_REGENERATION: "regeneráció robbanó bájitala"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "lassú zuhanás robbanó bájitala"
+  SPLASH_POTION_EFFECT_SLOWNESS: "lomhaság robbanó bájitala"
+  SPLASH_POTION_EFFECT_STRENGTH: "erő robbanó bájitala"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "fürgeség robbanó bájitala"
+  SPLASH_POTION_EFFECT_THICK: "sűrű robbanó bájital"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "teknősmester robbanó bájitala"
+  SPLASH_POTION_EFFECT_WATER: "robbanó vizespalack"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "víz alatti légzés robbanó bájitala"
+  SPLASH_POTION_EFFECT_WEAKNESS: "gyengeség robbanó bájitala"
+  SPRUCE_BOAT: "fenyőfa csónak"
+  SPRUCE_CHEST_BOAT: "fenyőfa csónak ládával"
+  SPYGLASS: "távcső"
+  SQUID_SPAWN_EGG: "tintahalidéző tojás"
+  STICK: "bot"
+  STONE_AXE: "kőfejsze"
+  STONE_HOE: "kőkapa"
+  STONE_PICKAXE: "kőcsákány"
+  STONE_SHOVEL: "kőásó"
+  STONE_SWORD: "kőkard"
+  STRAY_SPAWN_EGG: "kóborlóidéző tojás"
+  STRIDER_SPAWN_EGG: "álomfutóidéző tojás"
+  STRING: "fonál"
+  SUGAR: "cukor"
+  SUSPICIOUS_STEW: "gyanús pörkölt"
+  SWEET_BERRIES: "édes bogyók"
+  TADPOLE_BUCKET: "ebihal vödörben"
+  TADPOLE_SPAWN_EGG: "ebihalidéző tojás"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  TIPPED_ARROW: "varázsnyíl"
+  TIPPED_ARROW_EFFECT_AWKWARD: "varázsnyíl"
+  TIPPED_ARROW_EFFECT_EMPTY: "nem elkészíthető varázsnyíl"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "tűzállóság nyila"
+  TIPPED_ARROW_EFFECT_HARMING: "sebzés nyila"
+  TIPPED_ARROW_EFFECT_HEALING: "gyógyítás nyila"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "láthatatlanság nyila"
+  TIPPED_ARROW_EFFECT_LEAPING: "szökkenés nyila"
+  TIPPED_ARROW_EFFECT_LEVITATION: "lebegés nyila"
+  TIPPED_ARROW_EFFECT_LUCK: "szerencse nyila"
+  TIPPED_ARROW_EFFECT_MUNDANE: "varázsnyíl"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "éjjellátás nyila"
+  TIPPED_ARROW_EFFECT_POISON: "mérgezett nyíl"
+  TIPPED_ARROW_EFFECT_REGENERATION: "regeneráció nyila"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "lassú zuhanás nyila"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "lomhaság nyila"
+  TIPPED_ARROW_EFFECT_STRENGTH: "erő nyila"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "fürgeség nyila"
+  TIPPED_ARROW_EFFECT_THICK: "varázsnyíl"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "teknősmester nyila"
+  TIPPED_ARROW_EFFECT_WATER: "vizes nyíl"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "vízlégzés nyila"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "gyengeség nyila"
+  TNT_MINECART: "tnt-csille"
+  TORCHFLOWER_SEEDS: "fáklyaliliommagok"
+  TOTEM_OF_UNDYING: "életmentés toteme"
+  TRADER_LLAMA_SPAWN_EGG: "kereskedőláma-idéző tojás"
+  TRIAL_KEY: "küzdőtéri kulcs"
+  TRIDENT: "szigony"
+  TROPICAL_FISH: "trópusi hal"
+  TROPICAL_FISH_BUCKET: "trópusi hal vödörben"
+  TROPICAL_FISH_SPAWN_EGG: "trópusi halat idéző tojás"
+  TURTLE_HELMET: "teknőspáncél"
+  TURTLE_SPAWN_EGG: "teknősidéző tojás"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  VEX_SPAWN_EGG: "bosszancsidéző tojás"
+  VILLAGER_SPAWN_EGG: "falusiidéző tojás"
+  VINDICATOR_SPAWN_EGG: "bosszúálló-idéző tojás"
+  WANDERING_TRADER_SPAWN_EGG: "vándorkereskedő-idéző tojás"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  WARDEN_SPAWN_EGG: "strázsaidéző tojás"
+  WARPED_FUNGUS_ON_A_STICK: "torz gomba horgászboton"
+  WATER_BUCKET: "vizesvödör"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  WHEAT: "búza"
+  WHEAT_SEEDS: "búzamag"
+  WHITE_DYE: "fehér festék"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "kovácssablon"
+  WITCH_SPAWN_EGG: "boszorkányidéző tojás"
+  WITHER_SKELETON_SPAWN_EGG: "withercsontváz-idéző tojás"
+  WITHER_SPAWN_EGG: "witheridéző tojás"
+  WOLF_SPAWN_EGG: "farkasidéző tojás"
+  WOODEN_AXE: "fafejsze"
+  WOODEN_HOE: "fakapa"
+  WOODEN_PICKAXE: "facsákány"
+  WOODEN_SHOVEL: "faásó"
+  WOODEN_SWORD: "fakard"
+  WRITABLE_BOOK: "könyv és toll"
+  WRITTEN_BOOK: "befejezett könyv"
+  YELLOW_DYE: "sárga festék"
+  ZOGLIN_SPAWN_EGG: "zoglinidéző tojás"
+  ZOMBIE_HORSE_SPAWN_EGG: "zombilóidéző tojás"
+  ZOMBIE_SPAWN_EGG: "zombiidéző tojás"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "élőhalott falusit idéző tojás"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "élőhalott piglint idéző tojás"
+  CHEST: "testen hordva:"
+  FEET: "lábfejen hordva:"
+  HEAD: "fejen hordva:"
+  LEGS: "lábszáron hordva:"
+  MAINHAND: "domináns kézben tartva:"
+  OFFHAND: "másodlagos kézben tartva:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

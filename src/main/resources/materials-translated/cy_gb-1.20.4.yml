@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "botwm acesia"
+  ACACIA_DOOR: "drws acesia"
+  ACACIA_FENCE: "ffens acesia"
+  ACACIA_FENCE_GATE: "gât ffens acesia"
+  ACACIA_HANGING_SIGN: "arwydd crog acesia"
+  ACACIA_LEAVES: "dail acesia"
+  ACACIA_LOG: "boncyff acesia"
+  ACACIA_PLANKS: "planciau acesia"
+  ACACIA_PRESSURE_PLATE: "gwasglechen acesia"
+  ACACIA_SAPLING: "glasbren acesia"
+  ACACIA_SIGN: "arwydd acesia"
+  ACACIA_SLAB: "slab acesia"
+  ACACIA_STAIRS: "grisiau acesia"
+  ACACIA_TRAPDOOR: "drws cudd acesia"
+  ACACIA_WALL_HANGING_SIGN: "arwydd wal crog acesia"
+  ACACIA_WALL_SIGN: "arwydd wal acesia"
+  ACACIA_WOOD: "pren acesia"
+  ACTIVATOR_RAIL: "cledren actifadydd"
+  AIR: "aer"
+  ALLIUM: "garllegyn"
+  AMETHYST_BLOCK: "bloc amethyst"
+  AMETHYST_CLUSTER: "clwstwr amethyst"
+  ANCIENT_DEBRIS: "malurion hynafol"
+  ANDESITE: "andesit"
+  ANDESITE_SLAB: "slab andesit"
+  ANDESITE_STAIRS: "grisiau andesit"
+  ANDESITE_WALL: "wal andesit"
+  ANVIL: "einion"
+  ATTACHED_MELON_STEM: "coesyn melon ynghlwm"
+  ATTACHED_PUMPKIN_STEM: "coesyn pwmpen ynghlwm"
+  AZALEA: "asalea"
+  AZALEA_LEAVES: "dail asalea"
+  AZURE_BLUET: "gwreiddrudd las"
+  BAMBOO: "bambŵ"
+  BAMBOO_BLOCK: "bloc bambŵ"
+  BAMBOO_BUTTON: "botwm bambŵ"
+  BAMBOO_DOOR: "drws bambŵ"
+  BAMBOO_FENCE: "ffens fambŵ"
+  BAMBOO_FENCE_GATE: "gât ffens fambŵ"
+  BAMBOO_HANGING_SIGN: "arwydd crog bambŵ"
+  BAMBOO_MOSAIC: "mosäig bambŵ"
+  BAMBOO_MOSAIC_SLAB: "slab mosäig bambŵ"
+  BAMBOO_MOSAIC_STAIRS: "grisiau mosäig bambŵ"
+  BAMBOO_PLANKS: "planciau bambŵ"
+  BAMBOO_PRESSURE_PLATE: "gwasglechen bambŵ"
+  BAMBOO_SAPLING: "blaguryn bambŵ"
+  BAMBOO_SIGN: "arwydd bambŵ"
+  BAMBOO_SLAB: "slab bambŵ"
+  BAMBOO_STAIRS: "grisiau bambŵ"
+  BAMBOO_TRAPDOOR: "drws cudd bambŵ"
+  BAMBOO_WALL_HANGING_SIGN: "arwydd wal crog bambŵ"
+  BAMBOO_WALL_SIGN: "arwydd wal bambŵ"
+  BANNER_BASE_BLACK: "maes cwbwl ddu"
+  BANNER_BASE_BLUE: "maes cwbwl las"
+  BANNER_BASE_BROWN: "maes cwbwl frown"
+  BANNER_BASE_CYAN: "maes cwbwl wyrddlas"
+  BANNER_BASE_GRAY: "maes cwbwl lwyd"
+  BANNER_BASE_GREEN: "maes cwbwl wyrdd"
+  BANNER_BASE_LIGHT_BLUE: "maes cwbwl las golau"
+  BANNER_BASE_LIGHT_GRAY: "maes cwbwl lwyd golau"
+  BANNER_BASE_LIME: "maes cwbwl leim"
+  BANNER_BASE_MAGENTA: "maes cwbwl fajenta"
+  BANNER_BASE_ORANGE: "maes cwbwl oren"
+  BANNER_BASE_PINK: "maes cwbwl binc"
+  BANNER_BASE_PURPLE: "maes cwbwl borffor"
+  BANNER_BASE_RED: "maes cwbwl goch"
+  BANNER_BASE_WHITE: "maes cwbwl wyn"
+  BANNER_BASE_YELLOW: "maes cwbwl felyn"
+  BANNER_BORDER_BLACK: "bordor du"
+  BANNER_BORDER_BLUE: "bordor glas"
+  BANNER_BORDER_BROWN: "bordor brown"
+  BANNER_BORDER_CYAN: "bordor gwyrddlas"
+  BANNER_BORDER_GRAY: "bordor llwyd"
+  BANNER_BORDER_GREEN: "bordor gwyrdd"
+  BANNER_BORDER_LIGHT_BLUE: "bordor glas golau"
+  BANNER_BORDER_LIGHT_GRAY: "bordor llwyd golau"
+  BANNER_BORDER_LIME: "bordor leim"
+  BANNER_BORDER_MAGENTA: "bordor majenta"
+  BANNER_BORDER_ORANGE: "bordor oren"
+  BANNER_BORDER_PINK: "bordor pinc"
+  BANNER_BORDER_PURPLE: "bordor porffor"
+  BANNER_BORDER_RED: "bordor coch"
+  BANNER_BORDER_WHITE: "bordor gwyn"
+  BANNER_BORDER_YELLOW: "bordor melyn"
+  BANNER_BRICKS_BLACK: "maes saernïwyd du"
+  BANNER_BRICKS_BLUE: "maes saernïwyd glas"
+  BANNER_BRICKS_BROWN: "maes saernïwyd brown"
+  BANNER_BRICKS_CYAN: "maes saernïwyd gwyrddlas"
+  BANNER_BRICKS_GRAY: "maes saernïwyd llwyd"
+  BANNER_BRICKS_GREEN: "maes saernïwyd gwyrdd"
+  BANNER_BRICKS_LIGHT_BLUE: "maes saernïwyd glas golau"
+  BANNER_BRICKS_LIGHT_GRAY: "maes saernïwyd llwyd golau"
+  BANNER_BRICKS_LIME: "maes saernïwyd leim"
+  BANNER_BRICKS_MAGENTA: "maes saernïwyd majenta"
+  BANNER_BRICKS_ORANGE: "maes saernïwyd oren"
+  BANNER_BRICKS_PINK: "maes saernïwyd pinc"
+  BANNER_BRICKS_PURPLE: "maes saernïwyd porffor"
+  BANNER_BRICKS_RED: "maes saernïwyd coch"
+  BANNER_BRICKS_WHITE: "maes saernïwyd gwyn"
+  BANNER_BRICKS_YELLOW: "maes saernïwyd melyn"
+  BANNER_CIRCLE_BLACK: "cylchig ddu"
+  BANNER_CIRCLE_BLUE: "cylchig las"
+  BANNER_CIRCLE_BROWN: "cylchig frown"
+  BANNER_CIRCLE_CYAN: "cylchig wyrddlas"
+  BANNER_CIRCLE_GRAY: "cylchig llwyd"
+  BANNER_CIRCLE_GREEN: "cylchig werdd"
+  BANNER_CIRCLE_LIGHT_BLUE: "cylchig las golau"
+  BANNER_CIRCLE_LIGHT_GRAY: "cylchig llwyd golau"
+  BANNER_CIRCLE_LIME: "cylchig leim"
+  BANNER_CIRCLE_MAGENTA: "cylchig majenta"
+  BANNER_CIRCLE_ORANGE: "cylchig oren"
+  BANNER_CIRCLE_PINK: "cylchig binc"
+  BANNER_CIRCLE_PURPLE: "cylchig borffor"
+  BANNER_CIRCLE_RED: "cylchig goch"
+  BANNER_CIRCLE_WHITE: "cylchig wen"
+  BANNER_CIRCLE_YELLOW: "cylchig felen"
+  BANNER_CREEPER_BLACK: "luws creeper du"
+  BANNER_CREEPER_BLUE: "luws creeper glas"
+  BANNER_CREEPER_BROWN: "luws creeper brown"
+  BANNER_CREEPER_CYAN: "luws creeper gwyrddlas"
+  BANNER_CREEPER_GRAY: "luws creeper llwyd"
+  BANNER_CREEPER_GREEN: "luws creeper gwyrdd"
+  BANNER_CREEPER_LIGHT_BLUE: "luws creeper glas golau"
+  BANNER_CREEPER_LIGHT_GRAY: "luws creeper llwyd golau"
+  BANNER_CREEPER_LIME: "luws creeper leim"
+  BANNER_CREEPER_MAGENTA: "luws creeper majenta"
+  BANNER_CREEPER_ORANGE: "luws creeper oren"
+  BANNER_CREEPER_PINK: "luws creeper pinc"
+  BANNER_CREEPER_PURPLE: "luws creeper porffor"
+  BANNER_CREEPER_RED: "luws creeper coch"
+  BANNER_CREEPER_WHITE: "luws creeper gwyn"
+  BANNER_CREEPER_YELLOW: "luws creeper melyn"
+  BANNER_CROSS_BLACK: "sawtyr du"
+  BANNER_CROSS_BLUE: "sawtyr glas"
+  BANNER_CROSS_BROWN: "sawtyr brown"
+  BANNER_CROSS_CYAN: "sawtyr gwyrddlas"
+  BANNER_CROSS_GRAY: "sawtyr llwyd"
+  BANNER_CROSS_GREEN: "sawtyr gwyrdd"
+  BANNER_CROSS_LIGHT_BLUE: "sawtyr glas golau"
+  BANNER_CROSS_LIGHT_GRAY: "sawtyr llwyd golau"
+  BANNER_CROSS_LIME: "sawtyr leim"
+  BANNER_CROSS_MAGENTA: "sawtyr majenta"
+  BANNER_CROSS_ORANGE: "sawtyr oren"
+  BANNER_CROSS_PINK: "sawtyr pinc"
+  BANNER_CROSS_PURPLE: "sawtyr porffor"
+  BANNER_CROSS_RED: "sawtyr coch"
+  BANNER_CROSS_WHITE: "sawtyr gwyn"
+  BANNER_CROSS_YELLOW: "sawtyr melyn"
+  BANNER_CURLY_BORDER_BLACK: "bordor du bylchog"
+  BANNER_CURLY_BORDER_BLUE: "bordor glas bylchog"
+  BANNER_CURLY_BORDER_BROWN: "bordor brown bylchog"
+  BANNER_CURLY_BORDER_CYAN: "bordor gwyrddlas bylchog"
+  BANNER_CURLY_BORDER_GRAY: "bordor llwyd bylchog"
+  BANNER_CURLY_BORDER_GREEN: "bordor gwyrdd bylchog"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bordor glas golau bylchog"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bordor llwyd golau bylchog"
+  BANNER_CURLY_BORDER_LIME: "bordor leim bylchog"
+  BANNER_CURLY_BORDER_MAGENTA: "bordor majenta bylchog"
+  BANNER_CURLY_BORDER_ORANGE: "bordor oren bylchog"
+  BANNER_CURLY_BORDER_PINK: "bordor pinc bylchog"
+  BANNER_CURLY_BORDER_PURPLE: "bordor porffor bylchog"
+  BANNER_CURLY_BORDER_RED: "bordor coch bylchog"
+  BANNER_CURLY_BORDER_WHITE: "bordor gwyn bylchog"
+  BANNER_CURLY_BORDER_YELLOW: "bordor melyn bylchog"
+  BANNER_DIAGONAL_LEFT_BLACK: "du yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_BLUE: "glas yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_BROWN: "brown yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_CYAN: "gwyrddlas yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_GRAY: "llwyd yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_GREEN: "gwyrdd yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "glas golau'n groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "llwyd golau'n groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_LIME: "leim yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "majenta'n groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_ORANGE: "oren yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_PINK: "pinc yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_PURPLE: "porffor yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_RED: "coch yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_WHITE: "gwyn yn groeslinol wrthdro"
+  BANNER_DIAGONAL_LEFT_YELLOW: "melyn yn groeslinol wrthdro"
+  BANNER_DIAGONAL_RIGHT_BLACK: "du'n groeslinol"
+  BANNER_DIAGONAL_RIGHT_BLUE: "glas yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_BROWN: "brown yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_CYAN: "gwyrddlas yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_GRAY: "llwyd yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_GREEN: "gwyrdd yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "glas golau'n groeslinol"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "llwyd golau'n groeslinol"
+  BANNER_DIAGONAL_RIGHT_LIME: "leim yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "majenta'n groeslinol"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "oren yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_PINK: "pinc yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "porffor yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_RED: "coch yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_WHITE: "gwyn yn groeslinol"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "melyn yn groeslinol"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "du'n groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "glas yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "brown yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "gwyrddlas yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "llwyd yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "gwyrdd yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "glas golau'n groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "llwyd golau'n groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "leim yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "majenta'n groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "oren yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "pinc yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "porffor yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_RED: "coch yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "gwyn yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "melyn yn groeslinol traphen"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "du'n groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "glas yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "brown yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "gwyrddlas yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "llwyd yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "gwyrdd yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "glas golau'n groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "llwyd golau'n groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "leim yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "majenta'n groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "oren yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "pinc yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "porffor yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "coch yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "gwyn yn groeslinol wrthdro traphen"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "melyn yn groeslinol wrthdro traphen"
+  BANNER_FLOWER_BLACK: "luws blodyn du"
+  BANNER_FLOWER_BLUE: "luws blodyn glas"
+  BANNER_FLOWER_BROWN: "luws blodyn brown"
+  BANNER_FLOWER_CYAN: "luws blodyn gwyrddlas"
+  BANNER_FLOWER_GRAY: "luws blodyn llwyd"
+  BANNER_FLOWER_GREEN: "luws blodyn gwyrdd"
+  BANNER_FLOWER_LIGHT_BLUE: "luws blodyn glas golau"
+  BANNER_FLOWER_LIGHT_GRAY: "luws blodyn llwyd golau"
+  BANNER_FLOWER_LIME: "luws blodyn leim"
+  BANNER_FLOWER_MAGENTA: "luws blodyn majenta"
+  BANNER_FLOWER_ORANGE: "luws blodyn oren"
+  BANNER_FLOWER_PINK: "luws blodyn pinc"
+  BANNER_FLOWER_PURPLE: "luws blodyn porffor"
+  BANNER_FLOWER_RED: "luws blodyn coch"
+  BANNER_FLOWER_WHITE: "luws blodyn gwyn"
+  BANNER_FLOWER_YELLOW: "luws blodyn melyn"
+  BANNER_GLOBE_BLACK: "glôb ddu"
+  BANNER_GLOBE_BLUE: "glôb las"
+  BANNER_GLOBE_BROWN: "glôb frown"
+  BANNER_GLOBE_CYAN: "glôb werddlas"
+  BANNER_GLOBE_GRAY: "glôb lwyd"
+  BANNER_GLOBE_GREEN: "glôb werdd"
+  BANNER_GLOBE_LIGHT_BLUE: "glôb las golau"
+  BANNER_GLOBE_LIGHT_GRAY: "glôb lwyd golau"
+  BANNER_GLOBE_LIME: "glôb leim"
+  BANNER_GLOBE_MAGENTA: "glôb fajenta"
+  BANNER_GLOBE_ORANGE: "glôb oren"
+  BANNER_GLOBE_PINK: "glôb binc"
+  BANNER_GLOBE_PURPLE: "glôb borffor"
+  BANNER_GLOBE_RED: "glôb goch"
+  BANNER_GLOBE_WHITE: "glôb wen"
+  BANNER_GLOBE_YELLOW: "glôb felen"
+  BANNER_GRADIENT_BLACK: "graddiant du"
+  BANNER_GRADIENT_BLUE: "graddiant glas"
+  BANNER_GRADIENT_BROWN: "graddiant brown"
+  BANNER_GRADIENT_CYAN: "graddiant gwyrddlas"
+  BANNER_GRADIENT_GRAY: "graddiant llwyd"
+  BANNER_GRADIENT_GREEN: "graddiant gwyrdd"
+  BANNER_GRADIENT_LIGHT_BLUE: "graddiant glas golau"
+  BANNER_GRADIENT_LIGHT_GRAY: "graddiant llwyd golau"
+  BANNER_GRADIENT_LIME: "graddiant leim"
+  BANNER_GRADIENT_MAGENTA: "graddiant majenta"
+  BANNER_GRADIENT_ORANGE: "graddiant oren"
+  BANNER_GRADIENT_PINK: "graddiant pinc"
+  BANNER_GRADIENT_PURPLE: "graddiant porffor"
+  BANNER_GRADIENT_RED: "graddiant coch"
+  BANNER_GRADIENT_WHITE: "graddiant gwyn"
+  BANNER_GRADIENT_YELLOW: "graddiant melyn"
+  BANNER_GRADIENT_UP_BLACK: "graddiant sail du"
+  BANNER_GRADIENT_UP_BLUE: "graddiant sail glas"
+  BANNER_GRADIENT_UP_BROWN: "graddiant sail brown"
+  BANNER_GRADIENT_UP_CYAN: "graddiant sail gwyrddlas"
+  BANNER_GRADIENT_UP_GRAY: "graddiant sail llwyd"
+  BANNER_GRADIENT_UP_GREEN: "graddiant sail gwyrdd"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "graddiant sail glas golau"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "graddiant sail llwyd golau"
+  BANNER_GRADIENT_UP_LIME: "graddiant sail leim"
+  BANNER_GRADIENT_UP_MAGENTA: "graddiant sail majenta"
+  BANNER_GRADIENT_UP_ORANGE: "graddiant sail oren"
+  BANNER_GRADIENT_UP_PINK: "graddiant sail pinc"
+  BANNER_GRADIENT_UP_PURPLE: "graddiant sail porffor"
+  BANNER_GRADIENT_UP_RED: "graddiant sail coch"
+  BANNER_GRADIENT_UP_WHITE: "graddiant sail gwyn"
+  BANNER_GRADIENT_UP_YELLOW: "graddiant sail melyn"
+  BANNER_HALF_HORIZONTAL_BLACK: "bar per du"
+  BANNER_HALF_HORIZONTAL_BLUE: "bar per glas"
+  BANNER_HALF_HORIZONTAL_BROWN: "bar per brown"
+  BANNER_HALF_HORIZONTAL_CYAN: "bar per gwyrddlas"
+  BANNER_HALF_HORIZONTAL_GRAY: "bar per llwyd"
+  BANNER_HALF_HORIZONTAL_GREEN: "bar per gwyrdd"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "bar per glas golau"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "bar per llwyd golau"
+  BANNER_HALF_HORIZONTAL_LIME: "bar per leim"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "bar per majenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "bar per oren"
+  BANNER_HALF_HORIZONTAL_PINK: "bar per pinc"
+  BANNER_HALF_HORIZONTAL_PURPLE: "bar per porffor"
+  BANNER_HALF_HORIZONTAL_RED: "bar per coch"
+  BANNER_HALF_HORIZONTAL_WHITE: "bar per gwyn"
+  BANNER_HALF_HORIZONTAL_YELLOW: "bar per melyn"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "bar per du gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "bar per glas gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "bar per brown gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "bar per gwyrddlas gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "bar per llwyd gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "bar per gwyrdd gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "bar per glas golau gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "bar per llwyd golau gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "bar per leim gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "bar per majenta gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "bar per oren gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "bar per pinc gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "bar per porffor gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "bar per coch gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "bar per gwyn gwrthdroëdig"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "bar per melyn gwrthdroëdig"
+  BANNER_HALF_VERTICAL_BLACK: "pâl per du"
+  BANNER_HALF_VERTICAL_BLUE: "pâl per glas"
+  BANNER_HALF_VERTICAL_BROWN: "pâl per brown"
+  BANNER_HALF_VERTICAL_CYAN: "pâl per gwyrddlas"
+  BANNER_HALF_VERTICAL_GRAY: "pâl per llwyd"
+  BANNER_HALF_VERTICAL_GREEN: "pâl per gwyrdd"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "pâl per glas golau"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "pâl per llwyd golau"
+  BANNER_HALF_VERTICAL_LIME: "pâl per leim"
+  BANNER_HALF_VERTICAL_MAGENTA: "pâl per majenta"
+  BANNER_HALF_VERTICAL_ORANGE: "pâl per oren"
+  BANNER_HALF_VERTICAL_PINK: "pâl per pinc"
+  BANNER_HALF_VERTICAL_PURPLE: "pâl per porffor"
+  BANNER_HALF_VERTICAL_RED: "pâl per coch"
+  BANNER_HALF_VERTICAL_WHITE: "pâl per gwyn"
+  BANNER_HALF_VERTICAL_YELLOW: "pâl per melyn"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "pâl per du gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "pâl per glas gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "pâl per brown gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "pâl per gwyrddlas gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "pâl per llwyd gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "pâl per gwyrdd gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "pâl per glas golau gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "pâl per llwyd golau gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "pâl per leim gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "pâl per majenta gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "pâl per oren gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "pâl per pinc gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "pâl per porffor gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "pâl per coch gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "pâl per gwyn gwrthdroëdig"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "pâl per melyn gwrthdroëdig"
+  BANNER_MOJANG_BLACK: "peth du"
+  BANNER_MOJANG_BLUE: "peth glas"
+  BANNER_MOJANG_BROWN: "peth brown"
+  BANNER_MOJANG_CYAN: "peth gwyrddlas"
+  BANNER_MOJANG_GRAY: "peth llwyd"
+  BANNER_MOJANG_GREEN: "peth gwyrdd"
+  BANNER_MOJANG_LIGHT_BLUE: "peth glas golau"
+  BANNER_MOJANG_LIGHT_GRAY: "peth llwyd golau"
+  BANNER_MOJANG_LIME: "peth leim"
+  BANNER_MOJANG_MAGENTA: "peth majenta"
+  BANNER_MOJANG_ORANGE: "peth oren"
+  BANNER_MOJANG_PINK: "peth pinc"
+  BANNER_MOJANG_PURPLE: "peth porffor"
+  BANNER_MOJANG_RED: "peth coch"
+  BANNER_MOJANG_WHITE: "peth gwyn"
+  BANNER_MOJANG_YELLOW: "peth melyn"
+  BANNER_PIGLIN_BLACK: "trwyn du"
+  BANNER_PIGLIN_BLUE: "trwyn glas"
+  BANNER_PIGLIN_BROWN: "trwyn brown"
+  BANNER_PIGLIN_CYAN: "trwyn gwyrddlas"
+  BANNER_PIGLIN_GRAY: "trwyn llwyd"
+  BANNER_PIGLIN_GREEN: "trwyn gwyrdd"
+  BANNER_PIGLIN_LIGHT_BLUE: "trwyn glas golau"
+  BANNER_PIGLIN_LIGHT_GRAY: "trwyn llwyd golau"
+  BANNER_PIGLIN_LIME: "trwyn leim"
+  BANNER_PIGLIN_MAGENTA: "trwyn majenta"
+  BANNER_PIGLIN_ORANGE: "trwyn oren"
+  BANNER_PIGLIN_PINK: "trwyn pinc"
+  BANNER_PIGLIN_PURPLE: "trwyn porffor"
+  BANNER_PIGLIN_RED: "trwyn coch"
+  BANNER_PIGLIN_WHITE: "trwyn gwyn"
+  BANNER_PIGLIN_YELLOW: "trwyn melyn"
+  BANNER_RHOMBUS_BLACK: "sgwâr du"
+  BANNER_RHOMBUS_BLUE: "sgwâr glas"
+  BANNER_RHOMBUS_BROWN: "sgwâr brown"
+  BANNER_RHOMBUS_CYAN: "sgwâr gwyrddlas"
+  BANNER_RHOMBUS_GRAY: "sgwâr llwyd"
+  BANNER_RHOMBUS_GREEN: "sgwâr gwyrdd"
+  BANNER_RHOMBUS_LIGHT_BLUE: "sgwâr glas golau"
+  BANNER_RHOMBUS_LIGHT_GRAY: "sgwâr llwyd golau"
+  BANNER_RHOMBUS_LIME: "sgwâr leim"
+  BANNER_RHOMBUS_MAGENTA: "sgwâr majenta"
+  BANNER_RHOMBUS_ORANGE: "sgwâr oren"
+  BANNER_RHOMBUS_PINK: "sgwâr pinc"
+  BANNER_RHOMBUS_PURPLE: "sgwâr porffor"
+  BANNER_RHOMBUS_RED: "sgwâr coch"
+  BANNER_RHOMBUS_WHITE: "sgwâr gwyn"
+  BANNER_RHOMBUS_YELLOW: "sgwâr melyn"
+  BANNER_SKULL_BLACK: "luws penglog du"
+  BANNER_SKULL_BLUE: "luws penglog glas"
+  BANNER_SKULL_BROWN: "luws penglog brown"
+  BANNER_SKULL_CYAN: "luws penglog gwyrddlas"
+  BANNER_SKULL_GRAY: "luws penglog llwyd"
+  BANNER_SKULL_GREEN: "luws penglog gwyrdd"
+  BANNER_SKULL_LIGHT_BLUE: "luws penglog glas golau"
+  BANNER_SKULL_LIGHT_GRAY: "luws penglog llwyd golau"
+  BANNER_SKULL_LIME: "luws penglog leim"
+  BANNER_SKULL_MAGENTA: "luws penglog majenta"
+  BANNER_SKULL_ORANGE: "luws penglog oren"
+  BANNER_SKULL_PINK: "luws penglog pinc"
+  BANNER_SKULL_PURPLE: "luws penglog porffor"
+  BANNER_SKULL_RED: "luws penglog coch"
+  BANNER_SKULL_WHITE: "luws penglog gwyn"
+  BANNER_SKULL_YELLOW: "luws penglog melyn"
+  BANNER_SMALL_STRIPES_BLACK: "du palisiog"
+  BANNER_SMALL_STRIPES_BLUE: "glas palisiog"
+  BANNER_SMALL_STRIPES_BROWN: "brown palisiog"
+  BANNER_SMALL_STRIPES_CYAN: "gwyrddlas palisiog"
+  BANNER_SMALL_STRIPES_GRAY: "llwyd palisiog"
+  BANNER_SMALL_STRIPES_GREEN: "gwyrdd palisiog"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "glas golau palisiog"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "llwyd golau palisiog"
+  BANNER_SMALL_STRIPES_LIME: "leim palisiog"
+  BANNER_SMALL_STRIPES_MAGENTA: "majenta palisiog"
+  BANNER_SMALL_STRIPES_ORANGE: "oren palisiog"
+  BANNER_SMALL_STRIPES_PINK: "pinc palisiog"
+  BANNER_SMALL_STRIPES_PURPLE: "porffor palisiog"
+  BANNER_SMALL_STRIPES_RED: "coch palisiog"
+  BANNER_SMALL_STRIPES_WHITE: "gwyn palisiog"
+  BANNER_SMALL_STRIPES_YELLOW: "melyn palisiog"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "canton sail du dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "canton sail glas dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "canton sail brown dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "canton sail gwyrddlas dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "canton sail llwyd dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "canton sail gwyrdd dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "canton sail glas golau dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "canton sail llwyd golau dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "canton sail leim dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "canton sail majenta dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "canton sail oren dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "canton sail pinc dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "canton sail porffor dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "canton sail coch dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "canton sail gwyn dehau"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "canton sail melyn dehau"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "canton sail du o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "canton sail glas o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "canton sail brown o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "canton sail gwyrddlas o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "canton sail llwyd o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "canton sail gwyrdd o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "canton sail glas golau o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "canton sail llwyd golau o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "canton sail leim o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "canton sail majenta o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "canton sail oren o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "canton sail pinc o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "canton sail porffor o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "canton sail coch o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "canton sail gwyn o chwith"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "canton sail melyn o chwith"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "canton prif ddehau du"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "canton prif ddehau glas"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "canton prif ddehau brown"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "canton prif ddehau gwyrddlas"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "canton prif ddehau llwyd"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "canton prif ddehau gwyrdd"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "canton prif ddehau glas golau"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "canton prif ddehau llwyd golau"
+  BANNER_SQUARE_TOP_LEFT_LIME: "canton prif ddehau leim"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "canton prif ddehau majenta"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "canton prif ddehau oren"
+  BANNER_SQUARE_TOP_LEFT_PINK: "canton prif ddehau pinc"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "canton prif ddehau porffor"
+  BANNER_SQUARE_TOP_LEFT_RED: "canton prif ddehau coch"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "canton prif ddehau gwyn"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "canton prif ddehau melyn"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "canton siff du o chwith"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "canton siff glas o chwith"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "canton siff brown o chwith"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "canton siff gwyrddlas o chwith"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "canton siff llwyd o chwith"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "canton siff gwyrdd o chwith"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "canton siff glas golau o chwith"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "canton siff llwyd golau o chwith"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "canton siff leim o chwith"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "canton siff majenta o chwith"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "canton siff oren o chwith"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "canton siff pinc o chwith"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "canton siff porffor o chwith"
+  BANNER_SQUARE_TOP_RIGHT_RED: "canton siff coch o chwith"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "canton siff gwyn o chwith"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "canton siff melyn o chwith"
+  BANNER_STRAIGHT_CROSS_BLACK: "croes ddu"
+  BANNER_STRAIGHT_CROSS_BLUE: "croes las"
+  BANNER_STRAIGHT_CROSS_BROWN: "croes frown"
+  BANNER_STRAIGHT_CROSS_CYAN: "croes wyrddlas"
+  BANNER_STRAIGHT_CROSS_GRAY: "croes lwyd"
+  BANNER_STRAIGHT_CROSS_GREEN: "croes wyrdd"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "croes las golau"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "croes lwyd golau"
+  BANNER_STRAIGHT_CROSS_LIME: "croes leim"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "croes majenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "croes oren"
+  BANNER_STRAIGHT_CROSS_PINK: "croes binc"
+  BANNER_STRAIGHT_CROSS_PURPLE: "croes porffor"
+  BANNER_STRAIGHT_CROSS_RED: "croes goch"
+  BANNER_STRAIGHT_CROSS_WHITE: "croes wyn"
+  BANNER_STRAIGHT_CROSS_YELLOW: "croes felyn"
+  BANNER_STRIPE_BOTTOM_BLACK: "sylfaen du"
+  BANNER_STRIPE_BOTTOM_BLUE: "sylfaen glas"
+  BANNER_STRIPE_BOTTOM_BROWN: "sylfaen brown"
+  BANNER_STRIPE_BOTTOM_CYAN: "sylfaen gwyrddlas"
+  BANNER_STRIPE_BOTTOM_GRAY: "sylfaen llwyd"
+  BANNER_STRIPE_BOTTOM_GREEN: "sylfaen gwyrdd"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "sylfaen glas golau"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "sylfaen llwyd golau"
+  BANNER_STRIPE_BOTTOM_LIME: "sylfaen leim"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "sylfaen majenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "sylfaen oren"
+  BANNER_STRIPE_BOTTOM_PINK: "sylfaen pinc"
+  BANNER_STRIPE_BOTTOM_PURPLE: "sylfaen porffor"
+  BANNER_STRIPE_BOTTOM_RED: "sylfaen coch"
+  BANNER_STRIPE_BOTTOM_WHITE: "sylfaen gwyn"
+  BANNER_STRIPE_BOTTOM_YELLOW: "sylfaen felyn"
+  BANNER_STRIPE_CENTER_BLACK: "cledr ddu"
+  BANNER_STRIPE_CENTER_BLUE: "cledr las"
+  BANNER_STRIPE_CENTER_BROWN: "cledr frown"
+  BANNER_STRIPE_CENTER_CYAN: "cledr wyrddlas"
+  BANNER_STRIPE_CENTER_GRAY: "cledr lwyd"
+  BANNER_STRIPE_CENTER_GREEN: "cledr wyrdd"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "cledr las golau"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "cledr lwyd golau"
+  BANNER_STRIPE_CENTER_LIME: "cledr leim"
+  BANNER_STRIPE_CENTER_MAGENTA: "cledr majenta"
+  BANNER_STRIPE_CENTER_ORANGE: "cledr oren"
+  BANNER_STRIPE_CENTER_PINK: "cledr binc"
+  BANNER_STRIPE_CENTER_PURPLE: "cledr borffor"
+  BANNER_STRIPE_CENTER_RED: "cledr goch"
+  BANNER_STRIPE_CENTER_WHITE: "cledr wyn"
+  BANNER_STRIPE_CENTER_YELLOW: "cledr felyn"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "rhwymyn du wrthdro"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "rhwymyn glas wrthdro"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "rhwymyn brown wrthdro"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "rhwymyn gwyrddlas wrthdro"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "rhwymyn llwyd wrthdro"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "rhwymyn gwyrdd wrthdro"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "rhwymyn glas golau wrthdro"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "rhwymyn llwyd golau wrthdro"
+  BANNER_STRIPE_DOWNLEFT_LIME: "rhwymyn leim wrthdro"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "rhwymyn majenta wrthdro"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "rhwymyn oren wrthdro"
+  BANNER_STRIPE_DOWNLEFT_PINK: "rhwymyn pinc wrthdro"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "rhwymyn porffor wrthdro"
+  BANNER_STRIPE_DOWNLEFT_RED: "rhwymyn coch wrthdro"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "rhwymyn gwyn wrthdro"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "rhwymyn melyn wrthdro"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "rhwymyn du"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "rhwymyn glas"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "rhwymyn brown"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "rhwymyn gwyrddlas"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "rhwymyn llwyd"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "rhwymyn gwyrdd"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "rhwymyn glas golau"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "rhwymyn llwyd golau"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "rhwymyn leim"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "rhwymyn majenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "rhwymyn oren"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "rhwymyn pinc"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "rhwymyn porffor"
+  BANNER_STRIPE_DOWNRIGHT_RED: "rhwymyn coch"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "rhwymyn gwyn"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "rhwymyn melyn"
+  BANNER_STRIPE_LEFT_BLACK: "cledr ddu ddehau"
+  BANNER_STRIPE_LEFT_BLUE: "cledr las ddehau"
+  BANNER_STRIPE_LEFT_BROWN: "cledr frown ddehau"
+  BANNER_STRIPE_LEFT_CYAN: "cledr wyrddlas ddehau"
+  BANNER_STRIPE_LEFT_GRAY: "cledr lwyd ddehau"
+  BANNER_STRIPE_LEFT_GREEN: "cledr wyrdd ddehau"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "cledr las golau ddehau"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "cledr lwyd golau ddehau"
+  BANNER_STRIPE_LEFT_LIME: "cledr leim ddehau"
+  BANNER_STRIPE_LEFT_MAGENTA: "cledr majenta ddehau"
+  BANNER_STRIPE_LEFT_ORANGE: "cledr oren ddehau"
+  BANNER_STRIPE_LEFT_PINK: "cledr binc ddehau"
+  BANNER_STRIPE_LEFT_PURPLE: "cledr borffor ddehau"
+  BANNER_STRIPE_LEFT_RED: "cledr goch ddehau"
+  BANNER_STRIPE_LEFT_WHITE: "cledr wyn ddehau"
+  BANNER_STRIPE_LEFT_YELLOW: "cledr felyn ddehau"
+  BANNER_STRIPE_MIDDLE_BLACK: "bar du"
+  BANNER_STRIPE_MIDDLE_BLUE: "bar glas"
+  BANNER_STRIPE_MIDDLE_BROWN: "bar brown"
+  BANNER_STRIPE_MIDDLE_CYAN: "bar gwyrddlas"
+  BANNER_STRIPE_MIDDLE_GRAY: "bar llwyd"
+  BANNER_STRIPE_MIDDLE_GREEN: "bar gwyrdd"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "bar glas golau"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "bar llwyd golau"
+  BANNER_STRIPE_MIDDLE_LIME: "bar leim"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "bar majenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "bar oren"
+  BANNER_STRIPE_MIDDLE_PINK: "bar pinc"
+  BANNER_STRIPE_MIDDLE_PURPLE: "bar porffor"
+  BANNER_STRIPE_MIDDLE_RED: "bar coch"
+  BANNER_STRIPE_MIDDLE_WHITE: "bar gwyn"
+  BANNER_STRIPE_MIDDLE_YELLOW: "bar melyn"
+  BANNER_STRIPE_RIGHT_BLACK: "cledr ddu o chwith"
+  BANNER_STRIPE_RIGHT_BLUE: "cledr las o chwith"
+  BANNER_STRIPE_RIGHT_BROWN: "cledr frown o chwith"
+  BANNER_STRIPE_RIGHT_CYAN: "cledr wyrddlas o chwith"
+  BANNER_STRIPE_RIGHT_GRAY: "cledr lwyd o chwith"
+  BANNER_STRIPE_RIGHT_GREEN: "cledr wyrdd o chwith"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "cledr glas golau o chwith"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "cledr lwyd golau o chwith"
+  BANNER_STRIPE_RIGHT_LIME: "cledr leim o chwith"
+  BANNER_STRIPE_RIGHT_MAGENTA: "pâl majenta o chwith"
+  BANNER_STRIPE_RIGHT_ORANGE: "cledr oren o chwith"
+  BANNER_STRIPE_RIGHT_PINK: "cledr binc o chwith"
+  BANNER_STRIPE_RIGHT_PURPLE: "cledr borffor o chwith"
+  BANNER_STRIPE_RIGHT_RED: "cledr goch o chwith"
+  BANNER_STRIPE_RIGHT_WHITE: "cledr wyn o chwith"
+  BANNER_STRIPE_RIGHT_YELLOW: "cledr felyn o chwith"
+  BANNER_STRIPE_TOP_BLACK: "siff du"
+  BANNER_STRIPE_TOP_BLUE: "siff glas"
+  BANNER_STRIPE_TOP_BROWN: "siff brown"
+  BANNER_STRIPE_TOP_CYAN: "siff gwyrddlas"
+  BANNER_STRIPE_TOP_GRAY: "siff llwyd"
+  BANNER_STRIPE_TOP_GREEN: "siff gwyrdd"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "siff glas golau"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "siff llwyd golau"
+  BANNER_STRIPE_TOP_LIME: "siff leim"
+  BANNER_STRIPE_TOP_MAGENTA: "siff majenta"
+  BANNER_STRIPE_TOP_ORANGE: "siff oren"
+  BANNER_STRIPE_TOP_PINK: "siff pinc"
+  BANNER_STRIPE_TOP_PURPLE: "siff porffor"
+  BANNER_STRIPE_TOP_RED: "siff coch"
+  BANNER_STRIPE_TOP_WHITE: "siff gwyn"
+  BANNER_STRIPE_TOP_YELLOW: "siff melyn"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "sieffrwn du"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "sieffrwn glas"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "sieffrwn brown"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "sieffrwn gwyrddlas"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "sieffrwn llwyd"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "sieffrwn gwyrdd"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "sieffrwn glas golau"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "sieffrwn llwyd golau"
+  BANNER_TRIANGLE_BOTTOM_LIME: "sieffrwn leim"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "sieffrwn borfforaidd"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "sieffrwn oren"
+  BANNER_TRIANGLE_BOTTOM_PINK: "sieffrwn pinc"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "sieffrwn porffor"
+  BANNER_TRIANGLE_BOTTOM_RED: "sieffrwn coch"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "sieffrwn gwyn"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "sieffrwn melyn"
+  BANNER_TRIANGLE_TOP_BLACK: "sieffrwn du gwrthdroadol"
+  BANNER_TRIANGLE_TOP_BLUE: "sieffrwn glas gwrthdroadol"
+  BANNER_TRIANGLE_TOP_BROWN: "sieffrwn brown gwrthdroadol"
+  BANNER_TRIANGLE_TOP_CYAN: "sieffrwn gwyrddlas gwrthdroadol"
+  BANNER_TRIANGLE_TOP_GRAY: "sieffrwn llwyd gwrthdroadol"
+  BANNER_TRIANGLE_TOP_GREEN: "sieffrwn gwyrdd gwrthdroadol"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "sieffrwn glas golau gwrthdroadol"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "sieffrwn llwyd golau gwrthdroadol"
+  BANNER_TRIANGLE_TOP_LIME: "sieffrwn leim gwrthdroadol"
+  BANNER_TRIANGLE_TOP_MAGENTA: "sieffrwn majenta gwrthdroadol"
+  BANNER_TRIANGLE_TOP_ORANGE: "sieffrwn oren gwrthdroadol"
+  BANNER_TRIANGLE_TOP_PINK: "sieffrwn pinc gwrthdroadol"
+  BANNER_TRIANGLE_TOP_PURPLE: "sieffrwn porffor gwrthdroadol"
+  BANNER_TRIANGLE_TOP_RED: "sieffrwn coch gwrthdroadol"
+  BANNER_TRIANGLE_TOP_WHITE: "sieffrwn gwyn gwrthdroadol"
+  BANNER_TRIANGLE_TOP_YELLOW: "sieffrwn melyn gwrthdroadol"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "sail rasyd du"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "sail rasyd glas"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "sail rasyd brown"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "sail rasyd gwyrddlas"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "sail rasyd llwyd"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "sail rasyd gwyrdd"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "sail rasyd glas golau"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "sail rasyd llwyd golau"
+  BANNER_TRIANGLES_BOTTOM_LIME: "sail rasyd leim"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "sail rasyd majenta"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "sail rasyd oren"
+  BANNER_TRIANGLES_BOTTOM_PINK: "sail rasyd pinc"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "sail rasyd porffor"
+  BANNER_TRIANGLES_BOTTOM_RED: "sail rasyd coch"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "sail rasyd gwyn"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "sail rasyd melyn"
+  BANNER_TRIANGLES_TOP_BLACK: "siff rasyd du"
+  BANNER_TRIANGLES_TOP_BLUE: "siff rasyd glas"
+  BANNER_TRIANGLES_TOP_BROWN: "siff rasyd brown"
+  BANNER_TRIANGLES_TOP_CYAN: "siff rasyd gwyrddlas"
+  BANNER_TRIANGLES_TOP_GRAY: "siff rasyd llwyd"
+  BANNER_TRIANGLES_TOP_GREEN: "siff rasyd gwyrdd"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "siff rasyd glas golau"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "siff rasyd llwyd golau"
+  BANNER_TRIANGLES_TOP_LIME: "siff rasyd leim"
+  BANNER_TRIANGLES_TOP_MAGENTA: "siff rasyd majenta"
+  BANNER_TRIANGLES_TOP_ORANGE: "siff rasyd oren"
+  BANNER_TRIANGLES_TOP_PINK: "siff rasyd pinc"
+  BANNER_TRIANGLES_TOP_PURPLE: "siff rasyd porffor"
+  BANNER_TRIANGLES_TOP_RED: "siff rasyd coch"
+  BANNER_TRIANGLES_TOP_WHITE: "siff rasyd gwyn"
+  BANNER_TRIANGLES_TOP_YELLOW: "siff rasyd melyn"
+  BARREL: "casgen"
+  BARRIER: "rhwystr"
+  BASALT: "pilergraig"
+  BEACON: "goleufa"
+  BEACON_PRIMARY: "pŵer cynradd"
+  BEACON_SECONDARY: "pŵer eilradd"
+  BED_NO_SLEEP: "gallwch ond gysgu gyda'r nos neu yn ystod storm"
+  BED_NOT_SAFE: "ni allwch gysgu nawr mae bwystfilod sy'n agos"
+  BED_OBSTRUCTED: "mae'r gwely hwn wedi'i rhwystro"
+  BED_OCCUPIED: "mae'r gwely yma wedi meddiannu"
+  BED_TOO_FAR_AWAY: "ni allwch gysgu nawr mae'r gwely'n rhy bell"
+  BEDROCK: "creigwely"
+  BEE_NEST: "nyth gwenyn"
+  BEEHIVE: "cwch gwenyn"
+  BEETROOTS: "betys"
+  BELL: "cloch"
+  BIG_DRIPLEAF: "diferddeilen fawr"
+  BIG_DRIPLEAF_STEM: "coesyn diferddeilen fawr"
+  BIRCH_BUTTON: "botwm bedw"
+  BIRCH_DOOR: "drws bedw"
+  BIRCH_FENCE: "ffens fedw"
+  BIRCH_FENCE_GATE: "gât ffens fedw"
+  BIRCH_HANGING_SIGN: "arwydd crog bedw"
+  BIRCH_LEAVES: "dail bedw"
+  BIRCH_LOG: "boncyff bedw"
+  BIRCH_PLANKS: "planciau bedw"
+  BIRCH_PRESSURE_PLATE: "gwasglechen bedw"
+  BIRCH_SAPLING: "glasbren bedw"
+  BIRCH_SIGN: "arwydd bedw"
+  BIRCH_SLAB: "slab bedw"
+  BIRCH_STAIRS: "grisiau bedw"
+  BIRCH_TRAPDOOR: "drws cudd fedwen"
+  BIRCH_WALL_HANGING_SIGN: "arwydd wal crog bedw"
+  BIRCH_WALL_SIGN: "arwydd wal bedw"
+  BIRCH_WOOD: "pren bedw"
+  BLACK_BANNER: "baner ddu"
+  BLACK_BED: "gwely du"
+  BLACK_CANDLE: "canwyll ddu"
+  BLACK_CANDLE_CAKE: "teisen â channwyll du"
+  BLACK_CARPET: "carped du"
+  BLACK_CONCRETE: "concrit du"
+  BLACK_CONCRETE_POWDER: "powdr concrit du"
+  BLACK_GLAZED_TERRACOTTA: "terracotta du gwydrog"
+  BLACK_SHULKER_BOX: "blwch shulker du"
+  BLACK_STAINED_GLASS: "gwydr lliw du"
+  BLACK_STAINED_GLASS_PANE: "paen gwydr lliw du"
+  BLACK_TERRACOTTA: "terracotta du"
+  BLACK_WOOL: "gwlân du"
+  BLACKSTONE: "carregddu"
+  BLACKSTONE_SLAB: "slab carregddu"
+  BLACKSTONE_STAIRS: "grisiau carregddu"
+  BLACKSTONE_WALL: "wal garregddu"
+  BLAST_FURNACE: "ffwrnais chwyth"
+  BLUE_BANNER: "baner las"
+  BLUE_BED: "gwely glas"
+  BLUE_CANDLE: "canwyll las"
+  BLUE_CANDLE_CAKE: "teisen â channwyll glas"
+  BLUE_CARPET: "carped glas"
+  BLUE_CONCRETE: "concrit glas"
+  BLUE_CONCRETE_POWDER: "powdr concrit glas"
+  BLUE_GLAZED_TERRACOTTA: "terracotta glas gwydrog"
+  BLUE_ICE: "rhew glas"
+  BLUE_ORCHID: "tegeirian glas"
+  BLUE_SHULKER_BOX: "blwch shulker glas"
+  BLUE_STAINED_GLASS: "gwydr lliw glas"
+  BLUE_STAINED_GLASS_PANE: "paen gwydr lliw glas"
+  BLUE_TERRACOTTA: "terracotta glas"
+  BLUE_WOOL: "gwlân glas"
+  BONE_BLOCK: "bloc asgwrn"
+  BOOKSHELF: "silff lyfrau"
+  BRAIN_CORAL: "cwrel ymenydd"
+  BRAIN_CORAL_BLOCK: "bloc cwrel ymenydd"
+  BRAIN_CORAL_FAN: "ffan cwrel ymenydd"
+  BRAIN_CORAL_WALL_FAN: "ffan wal cwrel ymennydd"
+  BREWING_STAND: "safle bragu"
+  BRICK_SLAB: "slab bricsen"
+  BRICK_STAIRS: "grisiau bricsen"
+  BRICK_WALL: "wal friciau"
+  BRICKS: "briciau"
+  BROWN_BANNER: "baner frown"
+  BROWN_BED: "gwely brown"
+  BROWN_CANDLE: "canwyll frown"
+  BROWN_CANDLE_CAKE: "teisen â channwyll brown"
+  BROWN_CARPET: "carped brown"
+  BROWN_CONCRETE: "concrit brown"
+  BROWN_CONCRETE_POWDER: "powdr concrit brown"
+  BROWN_GLAZED_TERRACOTTA: "terracotta brown gwydrog"
+  BROWN_MUSHROOM: "madarchen frown"
+  BROWN_MUSHROOM_BLOCK: "bloc madarch brown"
+  BROWN_SHULKER_BOX: "blwch shulker brown"
+  BROWN_STAINED_GLASS: "gwydr lliw brown"
+  BROWN_STAINED_GLASS_PANE: "paen gwydr lliw brown"
+  BROWN_TERRACOTTA: "terracotta brown"
+  BROWN_WOOL: "gwlân brown"
+  BUBBLE_COLUMN: "colofn swigod"
+  BUBBLE_CORAL: "cwrel brith"
+  BUBBLE_CORAL_BLOCK: "bloc cwrel brith"
+  BUBBLE_CORAL_FAN: "ffan cwrel brith"
+  BUBBLE_CORAL_WALL_FAN: "ffan wal gwrel brith"
+  BUDDING_AMETHYST: "amethyst blagurol"
+  CACTUS: "cactws"
+  CAKE: "teisen"
+  CALCITE: "calsit"
+  CALIBRATED_SCULK_SENSOR: "synhwyrydd sculk wedi graddnodi"
+  CAMPFIRE: "tân gwersyll"
+  CANDLE: "canwyll"
+  CANDLE_CAKE: "teisien â channwyll"
+  CARROTS: "moron"
+  CARTOGRAPHY_TABLE: "bwrdd cartograffeg"
+  CARVED_PUMPKIN: "pwmpen gerfiedig"
+  CAULDRON: "crochan"
+  CAVE_AIR: "aer ogof"
+  CAVE_VINES: "gwinwydd ogof"
+  CAVE_VINES_PLANT: "planhigyn gwinwydd ogof"
+  CHAIN: "cadwyn"
+  CHAIN_COMMAND_BLOCK: "bloc gorchymyn cadwynol"
+  CHERRY_BUTTON: "botwm ceirios"
+  CHERRY_DOOR: "drws ceirios"
+  CHERRY_FENCE: "ffens geirios"
+  CHERRY_FENCE_GATE: "gât ffens geirios"
+  CHERRY_HANGING_SIGN: "arwydd crog ceirios"
+  CHERRY_LEAVES: "dail ceirios"
+  CHERRY_LOG: "boncyff ceirios"
+  CHERRY_PLANKS: "planciau ceirios"
+  CHERRY_PRESSURE_PLATE: "gwasglechen ceirios"
+  CHERRY_SAPLING: "glasbren ceirios"
+  CHERRY_SIGN: "arwydd ceirios"
+  CHERRY_SLAB: "slab ceirios"
+  CHERRY_STAIRS: "grisiau ceirios"
+  CHERRY_TRAPDOOR: "drws cudd ceirios"
+  CHERRY_WALL_HANGING_SIGN: "arwydd wal crog ceirios"
+  CHERRY_WALL_SIGN: "arwydd wal ceirios"
+  CHERRY_WOOD: "pren ceirios"
+  CHEST: "cist"
+  CHIPPED_ANVIL: "einion dolciog"
+  CHISELED_BOOKSHELF: "silff lyfrau nadd"
+  CHISELED_COPPER: "copr nadd"
+  CHISELED_DEEPSLATE: "dwfnlech nadd"
+  CHISELED_NETHER_BRICKS: "briciau nether nadd"
+  CHISELED_POLISHED_BLACKSTONE: "carregddu caboledig nadd"
+  CHISELED_QUARTZ_BLOCK: "bloc cwarts nadd"
+  CHISELED_RED_SANDSTONE: "tywodfaen nadd coch"
+  CHISELED_SANDSTONE: "tywodfaen nadd"
+  CHISELED_STONE_BRICKS: "briciau carreg nadd"
+  CHISELED_TUFF: "twff nadd"
+  CHISELED_TUFF_BRICKS: "briciau twff nadd"
+  CHORUS_FLOWER: "blodyn corws"
+  CHORUS_PLANT: "planhigyn corws"
+  CLAY: "clai"
+  COAL_BLOCK: "bloc glo"
+  COAL_ORE: "mwyn glo"
+  COARSE_DIRT: "pridd garw"
+  COBBLED_DEEPSLATE: "dwfnlech coblog"
+  COBBLED_DEEPSLATE_SLAB: "slab dwfnlech coblog"
+  COBBLED_DEEPSLATE_STAIRS: "grisiau dwfnlech coblog"
+  COBBLED_DEEPSLATE_WALL: "wal ddwfnlech coblog"
+  COBBLESTONE: "crynion"
+  COBBLESTONE_SLAB: "slab crynion"
+  COBBLESTONE_STAIRS: "grisiau carreg"
+  COBBLESTONE_WALL: "wal crynion"
+  COBWEB: "gwe pricopyn"
+  COCOA: "coco"
+  COMMAND_BLOCK: "bloc gorchymyn"
+  COMPARATOR: "cymharydd redstone"
+  COMPOSTER: "compostiwr"
+  CONDUIT: "cwndid"
+  COPPER_BLOCK: "bloc copr"
+  COPPER_BULB: "bwlb copr"
+  COPPER_DOOR: "drws copr"
+  COPPER_GRATE: "gratiau copr"
+  COPPER_ORE: "mwyn copr"
+  COPPER_TRAPDOOR: "drws cudd copr"
+  CORNFLOWER: "penlas wen"
+  CRACKED_DEEPSLATE_BRICKS: "briciau dwfnlech chwâl"
+  CRACKED_DEEPSLATE_TILES: "teils dwfnlech chwâl"
+  CRACKED_NETHER_BRICKS: "briciau nether chwâl"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "briciau carregddu caboledig chwâl"
+  CRACKED_STONE_BRICKS: "briciau carreg chwâl"
+  CRAFTER: "crefftiwr"
+  CRAFTING_TABLE: "bwrdd crefft"
+  CREEPER_HEAD: "pen creeper"
+  CREEPER_WALL_HEAD: "pen wal creeper"
+  CRIMSON_BUTTON: "botwm rhuddgoch"
+  CRIMSON_DOOR: "drws rhuddgoch"
+  CRIMSON_FENCE: "ffens ruddgoch"
+  CRIMSON_FENCE_GATE: "gât ffens ruddgoch"
+  CRIMSON_FUNGUS: "ffwng rhuddgoch"
+  CRIMSON_HANGING_SIGN: "arwydd crog rhuddgoch"
+  CRIMSON_HYPHAE: "hyffae rhuddgoch"
+  CRIMSON_NYLIUM: "neliwm rhuddgoch"
+  CRIMSON_PLANKS: "planciau rhuddgoch"
+  CRIMSON_PRESSURE_PLATE: "gwasglechen rhuddgoch"
+  CRIMSON_ROOTS: "gwreiddiau rhuddgoch"
+  CRIMSON_SIGN: "arwydd rhuddgoch"
+  CRIMSON_SLAB: "slab rhuddgoch"
+  CRIMSON_STAIRS: "grisiau rhuddgoch"
+  CRIMSON_STEM: "coesyn rhuddgoch"
+  CRIMSON_TRAPDOOR: "drws cudd rhuddgoch"
+  CRIMSON_WALL_HANGING_SIGN: "arwydd wal crog rhuddgoch"
+  CRIMSON_WALL_SIGN: "arwydd wal rhuddgoch"
+  CRYING_OBSIDIAN: "wylolosgraig"
+  CUT_COPPER: "copr toredig"
+  CUT_COPPER_SLAB: "slab copr toredig"
+  CUT_COPPER_STAIRS: "grisiau copr toredig"
+  CUT_RED_SANDSTONE: "tywodfaen coch toredig"
+  CUT_RED_SANDSTONE_SLAB: "slab tywodfaen coch toredig"
+  CUT_SANDSTONE: "tywodfaen toredig"
+  CUT_SANDSTONE_SLAB: "slab tywodfaen toredig"
+  CYAN_BANNER: "baner wyrddlas"
+  CYAN_BED: "gwely gwyrddlas"
+  CYAN_CANDLE: "canwyll wyrddlas"
+  CYAN_CANDLE_CAKE: "teisen â channwyll gwyrddlas"
+  CYAN_CARPET: "carped gwyrddlas"
+  CYAN_CONCRETE: "concrit gwyrddlas"
+  CYAN_CONCRETE_POWDER: "powdr concrit gwyrddlas"
+  CYAN_GLAZED_TERRACOTTA: "terracotta gwyrddlas gwydrog"
+  CYAN_SHULKER_BOX: "blwch shulker gwyrddlas"
+  CYAN_STAINED_GLASS: "gwydr lliw gwyrddlas"
+  CYAN_STAINED_GLASS_PANE: "paen gwydr lliw gwyrddlas"
+  CYAN_TERRACOTTA: "terracotta gwyrddlas"
+  CYAN_WOOL: "gwlân gwyrddlas"
+  DAMAGED_ANVIL: "einion wedi'i ddifrodi"
+  DANDELION: "dant y llew"
+  DARK_OAK_BUTTON: "botwm derw tywyll"
+  DARK_OAK_DOOR: "drws derw tywyll"
+  DARK_OAK_FENCE: "ffens dderw tywyll"
+  DARK_OAK_FENCE_GATE: "gât ffens dderw dwywll"
+  DARK_OAK_HANGING_SIGN: "arwydd crog derw tywyll"
+  DARK_OAK_LEAVES: "dail derw tywyll"
+  DARK_OAK_LOG: "boncyff derw tywyll"
+  DARK_OAK_PLANKS: "planciau derw tywyll"
+  DARK_OAK_PRESSURE_PLATE: "gwasglechen derw tywyll"
+  DARK_OAK_SAPLING: "glasbren derw tywyll"
+  DARK_OAK_SIGN: "arwydd derw tywyll"
+  DARK_OAK_SLAB: "slab derw tywyll"
+  DARK_OAK_STAIRS: "grisiau derw tywyll"
+  DARK_OAK_TRAPDOOR: "drws cudd derw tywyll"
+  DARK_OAK_WALL_HANGING_SIGN: "arwydd wal crog derw tywyll"
+  DARK_OAK_WALL_SIGN: "arwydd wal derw tywyll"
+  DARK_OAK_WOOD: "pren derw tywyll"
+  DARK_PRISMARINE: "prismarin tywyll"
+  DARK_PRISMARINE_SLAB: "slab prismarin tywyll"
+  DARK_PRISMARINE_STAIRS: "grisiau prismarin tywyll"
+  DAYLIGHT_DETECTOR: "synhwyrydd golau dydd"
+  DEAD_BRAIN_CORAL: "cwrel ymenydd wedi marw"
+  DEAD_BRAIN_CORAL_BLOCK: "bloc cwrel ymennydd wedi marw"
+  DEAD_BRAIN_CORAL_FAN: "ffan cwrel ymennydd wedi marw"
+  DEAD_BRAIN_CORAL_WALL_FAN: "ffan wal cwrel ymennydd wedi marw"
+  DEAD_BUBBLE_CORAL: "cwrel brith marw"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloc cwrel brith marw"
+  DEAD_BUBBLE_CORAL_FAN: "ffan gwrel brith marw"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "ffan wal gwrel brith marw"
+  DEAD_BUSH: "llwyn marw"
+  DEAD_FIRE_CORAL: "cwrel tân marw"
+  DEAD_FIRE_CORAL_BLOCK: "bloc cwrel tân marw"
+  DEAD_FIRE_CORAL_FAN: "ffan gwrel tân marw"
+  DEAD_FIRE_CORAL_WALL_FAN: "ffan wal gwrel tân marw"
+  DEAD_HORN_CORAL: "cwrel corn marw"
+  DEAD_HORN_CORAL_BLOCK: "bloc cwrel corn marw"
+  DEAD_HORN_CORAL_FAN: "ffan gwrel corn marw"
+  DEAD_HORN_CORAL_WALL_FAN: "ffan wal gwrel corn marw"
+  DEAD_TUBE_CORAL: "cwrel piben marw"
+  DEAD_TUBE_CORAL_BLOCK: "bloc cwrel piben marw"
+  DEAD_TUBE_CORAL_FAN: "ffan gwrel piben marw"
+  DEAD_TUBE_CORAL_WALL_FAN: "ffan wal gwrel piben marw"
+  DECORATED_POT: "pot addurnedig"
+  DEEPSLATE: "dwfnlech"
+  DEEPSLATE_BRICK_SLAB: "slab bricsen dwfnlech"
+  DEEPSLATE_BRICK_STAIRS: "grisiau bricsen dwfnlech"
+  DEEPSLATE_BRICK_WALL: "wal friciau dwfnlech"
+  DEEPSLATE_BRICKS: "briciau dwfnlech"
+  DEEPSLATE_COAL_ORE: "mwyn glo dwfnlech"
+  DEEPSLATE_COPPER_ORE: "mwyn copr dwfnlech"
+  DEEPSLATE_DIAMOND_ORE: "mwyn diemwnt dwfnlech"
+  DEEPSLATE_EMERALD_ORE: "mwyn emrallt dwfnlech"
+  DEEPSLATE_GOLD_ORE: "mwyn aur dwfnlech"
+  DEEPSLATE_IRON_ORE: "mwyn haearn dwfnlech"
+  DEEPSLATE_LAPIS_ORE: "mwyn lapis-laswli dwfnlech"
+  DEEPSLATE_REDSTONE_ORE: "mwyn redstone dwfnlech"
+  DEEPSLATE_TILE_SLAB: "slab teils dwfnlech"
+  DEEPSLATE_TILE_STAIRS: "grisiau teils dwfnlech"
+  DEEPSLATE_TILE_WALL: "wal teils dwfnlech"
+  DEEPSLATE_TILES: "teils dwfnlech"
+  DETECTOR_RAIL: "cledren synhwyrydd"
+  DIAMOND_BLOCK: "bloc diemwnt"
+  DIAMOND_ORE: "mwyn diemwnt"
+  DIORITE: "diorit"
+  DIORITE_SLAB: "slab diorit"
+  DIORITE_STAIRS: "grisiau diorit"
+  DIORITE_WALL: "wal diorit"
+  DIRT: "pridd"
+  DIRT_PATH: "llwybr lludw"
+  DISPENSER: "dosbarthwr"
+  DRAGON_EGG: "ŵy ddraig"
+  DRAGON_HEAD: "pen draig"
+  DRAGON_WALL_HEAD: "pen wal draig"
+  DRIED_KELP_BLOCK: "bloc gwymon sych"
+  DRIPSTONE_BLOCK: "bloc diferfaen"
+  DROPPER: "gollyngwr"
+  EMERALD_BLOCK: "bloc emrallt"
+  EMERALD_ORE: "mwyn emrallt"
+  ENCHANTING_TABLE: "bwrdd hudoliaethu"
+  END_GATEWAY: "porth end"
+  END_PORTAL: "porth end"
+  END_PORTAL_FRAME: "ffrâm borth end"
+  END_ROD: "gwialen end"
+  END_STONE: "carreg end"
+  END_STONE_BRICK_SLAB: "slab bricsen carreg end"
+  END_STONE_BRICK_STAIRS: "grisiau bricsen carreg end"
+  END_STONE_BRICK_WALL: "wal friciau carreg end"
+  END_STONE_BRICKS: "briciau carreg end"
+  ENDER_CHEST: "cist ender"
+  EXPOSED_CHISELED_COPPER: "copr nadd wedi pylu"
+  EXPOSED_COPPER: "copr wedi pylu"
+  EXPOSED_COPPER_BULB: "bwlb copr wedi pylu"
+  EXPOSED_COPPER_DOOR: "drws copr wedi pylu"
+  EXPOSED_COPPER_GRATE: "gratiau copr wedi pylu"
+  EXPOSED_COPPER_TRAPDOOR: "drws cudd copr wedi pylu"
+  EXPOSED_CUT_COPPER: "copr toredig wedi pylu"
+  EXPOSED_CUT_COPPER_SLAB: "slab copr toredig wedi pylu"
+  EXPOSED_CUT_COPPER_STAIRS: "grisiau copr toredig wedi pylu"
+  FARMLAND: "tir fferm"
+  FERN: "rhedyn"
+  FIRE: "tân"
+  FIRE_CORAL: "cwrel tân"
+  FIRE_CORAL_BLOCK: "bloc cwrel tân"
+  FIRE_CORAL_FAN: "ffan cwrel tân"
+  FIRE_CORAL_WALL_FAN: "ffan wal gwrel tân"
+  FLETCHING_TABLE: "bwrdd pluo"
+  FLOWER_POT: "pot blodau"
+  FLOWERING_AZALEA: "asalea blodeuog"
+  FLOWERING_AZALEA_LEAVES: "dail asalea blodeuog"
+  FROGSPAWN: "grifft llyffant"
+  FROSTED_ICE: "rhew barugog"
+  FURNACE: "ffwrnais"
+  GILDED_BLACKSTONE: "carregddu euraid"
+  GLASS: "gwydr"
+  GLASS_PANE: "paen gwydr"
+  GLOW_LICHEN: "cen gloyw"
+  GLOWSTONE: "gloywgarreg"
+  GOLD_BLOCK: "bloc aur"
+  GOLD_ORE: "mwyn aur"
+  GRANITE: "gwenithfaen"
+  GRANITE_SLAB: "slab gwenithfaen"
+  GRANITE_STAIRS: "grisiau gwenithfaen"
+  GRANITE_WALL: "wal gwenithfaen"
+  GRASS: "glaswellt"
+  GRASS_BLOCK: "bloc glaswellt"
+  GRAVEL: "graean"
+  GRAY_BANNER: "baner lwyd"
+  GRAY_BED: "gwely llwyd"
+  GRAY_CANDLE: "canwyll lwyd"
+  GRAY_CANDLE_CAKE: "teisen â channwyll llwyd"
+  GRAY_CARPET: "carped llwyd"
+  GRAY_CONCRETE: "concrit llwyd"
+  GRAY_CONCRETE_POWDER: "powdr concrit llwyd"
+  GRAY_GLAZED_TERRACOTTA: "terracotta llwyd gwydrog"
+  GRAY_SHULKER_BOX: "blwch shulker llwyd"
+  GRAY_STAINED_GLASS: "gwydr lliw llwyd"
+  GRAY_STAINED_GLASS_PANE: "paen gwydr lliw llwyd"
+  GRAY_TERRACOTTA: "terracotta llwyd"
+  GRAY_WOOL: "gwlân llwyd"
+  GREEN_BANNER: "baner werdd"
+  GREEN_BED: "gwely gwyrdd"
+  GREEN_CANDLE: "canwyll wyrdd"
+  GREEN_CANDLE_CAKE: "teisen â channwyll gwyrdd"
+  GREEN_CARPET: "carped gwyrdd"
+  GREEN_CONCRETE: "concrit gwyrdd"
+  GREEN_CONCRETE_POWDER: "powdr concrit gwyrdd"
+  GREEN_GLAZED_TERRACOTTA: "terracotta gwyrdd gwydrog"
+  GREEN_SHULKER_BOX: "blwch shulker gwyrdd"
+  GREEN_STAINED_GLASS: "gwydr lliw gwyrdd"
+  GREEN_STAINED_GLASS_PANE: "paen gwydr lliw gwyrdd"
+  GREEN_TERRACOTTA: "terracotta gwyrdd"
+  GREEN_WOOL: "gwlân gwyrdd"
+  GRINDSTONE: "hogfaen"
+  HANGING_ROOTS: "gwreiddiau crog"
+  HAY_BLOCK: "bwrn gwair"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "gwasglechen trwm"
+  HONEY_BLOCK: "bloc mêl"
+  HONEYCOMB_BLOCK: "bloc dil mêl"
+  HOPPER: "hopran"
+  HORN_CORAL: "cwrel corn"
+  HORN_CORAL_BLOCK: "bloc cwrel corn"
+  HORN_CORAL_FAN: "ffan gwrel corn"
+  HORN_CORAL_WALL_FAN: "ffan wal gwrel corn"
+  ICE: "rhew"
+  INFESTED_CHISELED_STONE_BRICKS: "briciau carreg nadd pla"
+  INFESTED_COBBLESTONE: "crynion pla"
+  INFESTED_CRACKED_STONE_BRICKS: "briciau carreg chwâl pla"
+  INFESTED_DEEPSLATE: "dwfnlech pla"
+  INFESTED_MOSSY_STONE_BRICKS: "briciau carreg mwsoglyd pla"
+  INFESTED_STONE: "carreg pla"
+  INFESTED_STONE_BRICKS: "briciau carreg pla"
+  IRON_BARS: "bariau haearn"
+  IRON_BLOCK: "bloc haearn"
+  IRON_DOOR: "drws haearn"
+  IRON_ORE: "mwyn haearn"
+  IRON_TRAPDOOR: "drws cudd haearn"
+  JACK_O_LANTERN: "jac y lantarn"
+  JIGSAW: "bloc jig-sô"
+  JUKEBOX: "jiwcbocs"
+  JUNGLE_BUTTON: "botwm jyngl"
+  JUNGLE_DOOR: "drws jyngl"
+  JUNGLE_FENCE: "ffens jyngl"
+  JUNGLE_FENCE_GATE: "gât ffens jyngl"
+  JUNGLE_HANGING_SIGN: "arwydd crog jyngl"
+  JUNGLE_LEAVES: "dail jyngl"
+  JUNGLE_LOG: "boncyff jyngl"
+  JUNGLE_PLANKS: "planciau jyngl"
+  JUNGLE_PRESSURE_PLATE: "gwasglechen jyngl"
+  JUNGLE_SAPLING: "glasbren jyngl"
+  JUNGLE_SIGN: "arwydd jyngl"
+  JUNGLE_SLAB: "slab jyngl"
+  JUNGLE_STAIRS: "grisiau jyngl"
+  JUNGLE_TRAPDOOR: "drws cudd jyngl"
+  JUNGLE_WALL_HANGING_SIGN: "arwydd wal crog jyngl"
+  JUNGLE_WALL_SIGN: "arwydd wal jyngl"
+  JUNGLE_WOOD: "pren jyngl"
+  KELP: "gwymon"
+  KELP_PLANT: "planhigyn gwymon"
+  LADDER: "ysgol"
+  LANTERN: "llusern"
+  LAPIS_BLOCK: "bloc lapis-laswli"
+  LAPIS_ORE: "mwyn lapis-laswli"
+  LARGE_AMETHYST_BUD: "blagur mawr amethyst"
+  LARGE_FERN: "rhedyn fawr"
+  LAVA: "lafa"
+  LAVA_CAULDRON: "crochen lava"
+  LECTERN: "darllenfa"
+  LEVER: "lifer"
+  LIGHT: "golau"
+  LIGHT_BLUE_BANNER: "baner las golau"
+  LIGHT_BLUE_BED: "gwely glas golau"
+  LIGHT_BLUE_CANDLE: "canwyll las golau"
+  LIGHT_BLUE_CANDLE_CAKE: "teisen â channwyll glas golau"
+  LIGHT_BLUE_CARPET: "carped glas golau"
+  LIGHT_BLUE_CONCRETE: "concrit glas golau"
+  LIGHT_BLUE_CONCRETE_POWDER: "powdr concrit glas golau"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "terracotta glas golau gwydrog"
+  LIGHT_BLUE_SHULKER_BOX: "blwch shulker glas golau"
+  LIGHT_BLUE_STAINED_GLASS: "gwydr lliw glas golau"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "paen gwydr lliw glas golau"
+  LIGHT_BLUE_TERRACOTTA: "terracotta glas golau"
+  LIGHT_BLUE_WOOL: "gwlân glas golau"
+  LIGHT_GRAY_BANNER: "baner lwyd golau"
+  LIGHT_GRAY_BED: "gwely llwyd golau"
+  LIGHT_GRAY_CANDLE: "canwyll lwyd golau"
+  LIGHT_GRAY_CANDLE_CAKE: "teisen â channwyll llwyd golau"
+  LIGHT_GRAY_CARPET: "carped llwyd golau"
+  LIGHT_GRAY_CONCRETE: "concrit llwyd golau"
+  LIGHT_GRAY_CONCRETE_POWDER: "powdr concrit llwyd golau"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "terracotta llwyd golau gwydrog"
+  LIGHT_GRAY_SHULKER_BOX: "blwch shulker llwyd golau"
+  LIGHT_GRAY_STAINED_GLASS: "gwydr lliw llwyd golau"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "paen gwydr lliw llwyd golau"
+  LIGHT_GRAY_TERRACOTTA: "terracotta llwydd golau"
+  LIGHT_GRAY_WOOL: "gwlân llwyd golau"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "gwasglechen ysgafn"
+  LIGHTNING_ROD: "rhoden fellt"
+  LILAC: "lelog"
+  LILY_OF_THE_VALLEY: "lili'r dyffrynnoedd"
+  LILY_PAD: "paden lili"
+  LIME_BANNER: "baner leim"
+  LIME_BED: "gwely leim"
+  LIME_CANDLE: "canwyll leim"
+  LIME_CANDLE_CAKE: "teisen â channwyll leim"
+  LIME_CARPET: "carped leim"
+  LIME_CONCRETE: "concrit leim"
+  LIME_CONCRETE_POWDER: "powdr concrit leim"
+  LIME_GLAZED_TERRACOTTA: "terracotta leim gwydrog"
+  LIME_SHULKER_BOX: "blwch shulker leim"
+  LIME_STAINED_GLASS: "gwydr lliw leim"
+  LIME_STAINED_GLASS_PANE: "paen gwydr lliw leim"
+  LIME_TERRACOTTA: "terracotta leim"
+  LIME_WOOL: "gwlân leim"
+  LODESTONE: "tynfaen"
+  LOOM: "gwŷdd"
+  MAGENTA_BANNER: "baner majenta"
+  MAGENTA_BED: "gwely majenta"
+  MAGENTA_CANDLE: "canwyll majenta"
+  MAGENTA_CANDLE_CAKE: "teisen â channwyll majenta"
+  MAGENTA_CARPET: "carped majenta"
+  MAGENTA_CONCRETE: "concrit majenta"
+  MAGENTA_CONCRETE_POWDER: "powdr concrit majenta"
+  MAGENTA_GLAZED_TERRACOTTA: "terracotta majenta gwydrog"
+  MAGENTA_SHULKER_BOX: "blwch shulker majenta"
+  MAGENTA_STAINED_GLASS: "gwydr lliw majenta"
+  MAGENTA_STAINED_GLASS_PANE: "paen gwydr lliw majenta"
+  MAGENTA_TERRACOTTA: "terracotta majenta"
+  MAGENTA_WOOL: "gwlân majenta"
+  MAGMA_BLOCK: "bloc magma"
+  MANGROVE_BUTTON: "botwm mangrof"
+  MANGROVE_DOOR: "drws mangrof"
+  MANGROVE_FENCE: "ffens mangrof"
+  MANGROVE_FENCE_GATE: "gât ffens mangrof"
+  MANGROVE_HANGING_SIGN: "arwydd crog mangrof"
+  MANGROVE_LEAVES: "dail mangrof"
+  MANGROVE_LOG: "boncyff mangrof"
+  MANGROVE_PLANKS: "planciau mangrof"
+  MANGROVE_PRESSURE_PLATE: "gwasglechen mangrof"
+  MANGROVE_PROPAGULE: "eginyn mangrof"
+  MANGROVE_ROOTS: "gwraidd mangrof"
+  MANGROVE_SIGN: "arwydd mangrof"
+  MANGROVE_SLAB: "slab mangrof"
+  MANGROVE_STAIRS: "grisiau mangrof"
+  MANGROVE_TRAPDOOR: "drws cudd mangrof"
+  MANGROVE_WALL_HANGING_SIGN: "arwydd wal crog mangrof"
+  MANGROVE_WALL_SIGN: "arwydd wal mangrof"
+  MANGROVE_WOOD: "pren mangrof"
+  MEDIUM_AMETHYST_BUD: "blagur canolog amethyst"
+  MELON: "melon"
+  MELON_STEM: "coesyn melon"
+  MOSS_BLOCK: "bloc mwsog"
+  MOSS_CARPET: "carped mwsog"
+  MOSSY_COBBLESTONE: "crynion mwsoglyd"
+  MOSSY_COBBLESTONE_SLAB: "slab crynion mwsoglyd"
+  MOSSY_COBBLESTONE_STAIRS: "grisiau crynion mwsoglyd"
+  MOSSY_COBBLESTONE_WALL: "wal crynion mwsoglyd"
+  MOSSY_STONE_BRICK_SLAB: "slab bricsen carreg mwsoglyd"
+  MOSSY_STONE_BRICK_STAIRS: "grisiau bricsen carreg mwsoglyd"
+  MOSSY_STONE_BRICK_WALL: "wal friciau carreg mwsoglyd"
+  MOSSY_STONE_BRICKS: "briciau carreg mwsoglyd"
+  MOVING_PISTON: "piston symudol"
+  MUD: "mwd"
+  MUD_BRICK_SLAB: "slab bricsen mwd"
+  MUD_BRICK_STAIRS: "grisiau bricsen mwd"
+  MUD_BRICK_WALL: "wal friciau mwd"
+  MUD_BRICKS: "briciau mwd"
+  MUDDY_MANGROVE_ROOTS: "gwraidd mangrof mwdlyd"
+  MUSHROOM_STEM: "coesyn madarch"
+  MYCELIUM: "myseliwm"
+  NETHER_BRICK_FENCE: "ffens fricsen nether"
+  NETHER_BRICK_SLAB: "slab bricsen nether"
+  NETHER_BRICK_STAIRS: "grisiau bricsen nether"
+  NETHER_BRICK_WALL: "wal friciau nether"
+  NETHER_BRICKS: "briciau nether"
+  NETHER_GOLD_ORE: "mwyn aur nether"
+  NETHER_PORTAL: "porth nether"
+  NETHER_QUARTZ_ORE: "mwyn cwarts nether"
+  NETHER_SPROUTS: "egin nether"
+  NETHER_WART: "chwyn nether"
+  NETHER_WART_BLOCK: "bloc chwyn nether"
+  NETHERITE_BLOCK: "bloc netherit"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloc nodyn"
+  OAK_BUTTON: "botwm derw"
+  OAK_DOOR: "drws derw"
+  OAK_FENCE: "ffens dderw"
+  OAK_FENCE_GATE: "gât ffens dderw"
+  OAK_HANGING_SIGN: "arwydd crog derw"
+  OAK_LEAVES: "dail derw"
+  OAK_LOG: "boncyff derw"
+  OAK_PLANKS: "planciau derw"
+  OAK_PRESSURE_PLATE: "gwasglechen derw"
+  OAK_SAPLING: "glasbren derw"
+  OAK_SIGN: "arwydd derw"
+  OAK_SLAB: "slab derw"
+  OAK_STAIRS: "grisiau derw"
+  OAK_TRAPDOOR: "drws cudd derw"
+  OAK_WALL_HANGING_SIGN: "arwydd wal crog derw"
+  OAK_WALL_SIGN: "arwydd wal derw"
+  OAK_WOOD: "pren derw"
+  OBSERVER: "gwyliwr"
+  OBSIDIAN: "llosgraig"
+  OCHRE_FROGLIGHT: "llyffantolau ocr"
+  OMINOUS_BANNER: "baner ddrwgargoelus"
+  ORANGE_BANNER: "baner oren"
+  ORANGE_BED: "gwely oren"
+  ORANGE_CANDLE: "canwyll oren"
+  ORANGE_CANDLE_CAKE: "teisen â channwyll oren"
+  ORANGE_CARPET: "carped oren"
+  ORANGE_CONCRETE: "concrit oren"
+  ORANGE_CONCRETE_POWDER: "powdr concrit oren"
+  ORANGE_GLAZED_TERRACOTTA: "terracotta oren gwydrog"
+  ORANGE_SHULKER_BOX: "blwch shulker oren"
+  ORANGE_STAINED_GLASS: "gwydr lliw oren"
+  ORANGE_STAINED_GLASS_PANE: "paen gwydr lliw oren"
+  ORANGE_TERRACOTTA: "terracotta oren"
+  ORANGE_TULIP: "tiwlip oren"
+  ORANGE_WOOL: "gwlân oren"
+  OXEYE_DAISY: "llygad llo"
+  OXIDIZED_CHISELED_COPPER: "copr nadd ocsidiedig"
+  OXIDIZED_COPPER: "copr ocsidiedig"
+  OXIDIZED_COPPER_BULB: "bwlb copr ocsidiedig"
+  OXIDIZED_COPPER_DOOR: "drws copr ocsidiedig"
+  OXIDIZED_COPPER_GRATE: "gratiau copr ocsidiedig"
+  OXIDIZED_COPPER_TRAPDOOR: "drws cudd copr ocsidiedig"
+  OXIDIZED_CUT_COPPER: "copr toredig ocsidiedig"
+  OXIDIZED_CUT_COPPER_SLAB: "slab copr toredig ocsidiedig"
+  OXIDIZED_CUT_COPPER_STAIRS: "grisiau copr toredig ocsidiedig"
+  PACKED_ICE: "rhew cywasgedig"
+  PACKED_MUD: "mwd cywasgedig"
+  PEARLESCENT_FROGLIGHT: "llyffantolau perlaidd"
+  PEONY: "rhosyn y mynydd"
+  PETRIFIED_OAK_SLAB: "slab derw petraidd"
+  PIGLIN_HEAD: "pen piglin"
+  PIGLIN_WALL_HEAD: "pen wal piglin"
+  PINK_BANNER: "baner binc"
+  PINK_BED: "gwely pinc"
+  PINK_CANDLE: "canwyll binc"
+  PINK_CANDLE_CAKE: "teisen â channwyll pinc"
+  PINK_CARPET: "carped pinc"
+  PINK_CONCRETE: "concrit pinc"
+  PINK_CONCRETE_POWDER: "powdr concrit pinc"
+  PINK_GLAZED_TERRACOTTA: "terracotta pinc gwydrog"
+  PINK_PETALS: "petalau pinc"
+  PINK_SHULKER_BOX: "blwch shulker pinc"
+  PINK_STAINED_GLASS: "gwydr lliw pinc"
+  PINK_STAINED_GLASS_PANE: "paen gwydr lliw pinc"
+  PINK_TERRACOTTA: "terracotta pinc"
+  PINK_TULIP: "tiwlip pinc"
+  PINK_WOOL: "gwlân pinc"
+  PISTON: "piston"
+  PISTON_HEAD: "pen piston"
+  PITCHER_CROP: "cnwd piserlys"
+  PITCHER_PLANT: "piserlys"
+  PLAYER_HEAD: "pen chwaraewr"
+  PLAYER_HEAD_NAMED: "pen %s"
+  PLAYER_WALL_HEAD: "pen wal chwaraewr"
+  PODZOL: "podsol"
+  POINTED_DRIPSTONE: "diferfaen pigfain"
+  POLISHED_ANDESITE: "andesit caboledig"
+  POLISHED_ANDESITE_SLAB: "slab andesit caboledig"
+  POLISHED_ANDESITE_STAIRS: "grisiau andesit caboledig"
+  POLISHED_BASALT: "pilergraig gloyw"
+  POLISHED_BLACKSTONE: "carregddu caboledig"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "slab briciau carregddu caboledig"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "grisiau briciau carregddu caboledig"
+  POLISHED_BLACKSTONE_BRICK_WALL: "wal friciau carregddu caboledig"
+  POLISHED_BLACKSTONE_BRICKS: "briciau carregddu caboledig"
+  POLISHED_BLACKSTONE_BUTTON: "botwm carregddu caboledig"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "gwasglechen carregddu caboledig"
+  POLISHED_BLACKSTONE_SLAB: "slab carregddu caboledig"
+  POLISHED_BLACKSTONE_STAIRS: "grisiau carregddu caboledig"
+  POLISHED_BLACKSTONE_WALL: "wal garregddu caboledig"
+  POLISHED_DEEPSLATE: "dwfnlech caboledig"
+  POLISHED_DEEPSLATE_SLAB: "slab dwfnlech caboledig"
+  POLISHED_DEEPSLATE_STAIRS: "grisiau dwfnlech caboledig"
+  POLISHED_DEEPSLATE_WALL: "wal ddwfnlech caboledig"
+  POLISHED_DIORITE: "diorit caboledig"
+  POLISHED_DIORITE_SLAB: "slab diorit caboledig"
+  POLISHED_DIORITE_STAIRS: "grisiau diorit caboledig"
+  POLISHED_GRANITE: "gwenithfaen caboledig"
+  POLISHED_GRANITE_SLAB: "slab gwenithfaen caboledig"
+  POLISHED_GRANITE_STAIRS: "grisiau gwenithfaen caboledig"
+  POLISHED_TUFF: "twff caboledig"
+  POLISHED_TUFF_SLAB: "slab twff caboledig"
+  POLISHED_TUFF_STAIRS: "grisiau twff caboledig"
+  POLISHED_TUFF_WALL: "wal twff caboledig"
+  POPPY: "pabi"
+  POTATOES: "tatws"
+  POTTED_ACACIA_SAPLING: "glasbren acesia mewn pot"
+  POTTED_ALLIUM: "garllegyn mewn pot"
+  POTTED_AZALEA_BUSH: "asalea mewn pot"
+  POTTED_AZURE_BLUET: "gwreiddrudd las mewn pot"
+  POTTED_BAMBOO: "bambŵ mewn pot"
+  POTTED_BIRCH_SAPLING: "glasbren bedw mewn pot"
+  POTTED_BLUE_ORCHID: "tegeirian glas mewn pot"
+  POTTED_BROWN_MUSHROOM: "madarch brown mewn pot"
+  POTTED_CACTUS: "cactws mewn pot"
+  POTTED_CHERRY_SAPLING: "glasbren ceirios mewn pot"
+  POTTED_CORNFLOWER: "penlas wen mewn pot"
+  POTTED_CRIMSON_FUNGUS: "ffwng rhuddgoch mewn pot"
+  POTTED_CRIMSON_ROOTS: "gwreiddiau rhuddgoch mewn pot"
+  POTTED_DANDELION: "dant y llew mewn pot"
+  POTTED_DARK_OAK_SAPLING: "glasbren derw tywyll mewn pot"
+  POTTED_DEAD_BUSH: "llwyn marw mewn pot"
+  POTTED_FERN: "rhedyn mewn pot"
+  POTTED_FLOWERING_AZALEA_BUSH: "asalea blodeuog mewn pot"
+  POTTED_JUNGLE_SAPLING: "glasbren jyngl mewn pot"
+  POTTED_LILY_OF_THE_VALLEY: "lili'r dyffrynnoedd mewn pot"
+  POTTED_MANGROVE_PROPAGULE: "eginyn mangrof mewn pot"
+  POTTED_OAK_SAPLING: "glasbren derw mewn pot"
+  POTTED_ORANGE_TULIP: "tiwlip oren mewn pot"
+  POTTED_OXEYE_DAISY: "llygad llo mewn pot"
+  POTTED_PINK_TULIP: "tiwlip pinc mewn pot"
+  POTTED_POPPY: "pabi mewn pot"
+  POTTED_RED_MUSHROOM: "madarch coch mewn pot"
+  POTTED_RED_TULIP: "tiwlip coch mewn pot"
+  POTTED_SPRUCE_SAPLING: "glasbren pyrwydd mewn pot"
+  POTTED_TORCHFLOWER: "torsflodyn mewn pot"
+  POTTED_WARPED_FUNGUS: "ffwng annaearol mewn pot"
+  POTTED_WARPED_ROOTS: "gwreiddiau annaearol mewn pot"
+  POTTED_WHITE_TULIP: "tiwlip gwyn mewn pot"
+  POTTED_WITHER_ROSE: "rhosyn wither mewn pot"
+  POWDER_SNOW: "eira powdr"
+  POWDER_SNOW_CAULDRON: "crochen eira powdr"
+  POWERED_RAIL: "cledren â phŵer"
+  PRISMARINE: "prismarin"
+  PRISMARINE_BRICK_SLAB: "slab bricsen prismarin"
+  PRISMARINE_BRICK_STAIRS: "grisiau bricsen prismarin"
+  PRISMARINE_BRICKS: "briciau prismarin"
+  PRISMARINE_SLAB: "slab prismarin"
+  PRISMARINE_STAIRS: "grisiau prismarin"
+  PRISMARINE_WALL: "wal brismarin"
+  PUMPKIN: "pwmpen"
+  PUMPKIN_STEM: "coesyn pwmpen"
+  PURPLE_BANNER: "baner borffor"
+  PURPLE_BED: "gwely porffor"
+  PURPLE_CANDLE: "canwyll borffor"
+  PURPLE_CANDLE_CAKE: "teisen â channwyll porffor"
+  PURPLE_CARPET: "carped porffor"
+  PURPLE_CONCRETE: "concrit porffor"
+  PURPLE_CONCRETE_POWDER: "powdr concrit porffor"
+  PURPLE_GLAZED_TERRACOTTA: "terracotta porffor gwydrog"
+  PURPLE_SHULKER_BOX: "blwch shulker porffor"
+  PURPLE_STAINED_GLASS: "gwydr lliw porffor"
+  PURPLE_STAINED_GLASS_PANE: "paen gwydr lliw porffor"
+  PURPLE_TERRACOTTA: "terracotta porffor"
+  PURPLE_WOOL: "gwlân porffor"
+  PURPUR_BLOCK: "bloc purpur"
+  PURPUR_PILLAR: "piler purpur"
+  PURPUR_SLAB: "slab purpur"
+  PURPUR_STAIRS: "grisiau purpur"
+  QUARTZ_BLOCK: "bloc cwarts"
+  QUARTZ_BRICKS: "briciau cwarts"
+  QUARTZ_PILLAR: "colofn cwarts"
+  QUARTZ_SLAB: "slab cwarts"
+  QUARTZ_STAIRS: "grisiau cwarts"
+  RAIL: "cledren"
+  RAW_COPPER_BLOCK: "bloc copr crai"
+  RAW_GOLD_BLOCK: "bloc aur crai"
+  RAW_IRON_BLOCK: "bloc haearn crai"
+  RED_BANNER: "baner goch"
+  RED_BED: "gwely coch"
+  RED_CANDLE: "canwyll goch"
+  RED_CANDLE_CAKE: "teisen â channwyll coch"
+  RED_CARPET: "carped coch"
+  RED_CONCRETE: "concrit coch"
+  RED_CONCRETE_POWDER: "powdr concrit coch"
+  RED_GLAZED_TERRACOTTA: "terracotta coch gwydrog"
+  RED_MUSHROOM: "madarchen goch"
+  RED_MUSHROOM_BLOCK: "bloc madarch coch"
+  RED_NETHER_BRICK_SLAB: "slab bricsen nether coch"
+  RED_NETHER_BRICK_STAIRS: "grisiau bricsen nether coch"
+  RED_NETHER_BRICK_WALL: "wal friciau nether coch"
+  RED_NETHER_BRICKS: "briciau nether coch"
+  RED_SAND: "tywod coch"
+  RED_SANDSTONE: "tywodfaen coch"
+  RED_SANDSTONE_SLAB: "slab tywodfaen coch"
+  RED_SANDSTONE_STAIRS: "grisiau tywodfaen coch"
+  RED_SANDSTONE_WALL: "wal dywodfaen coch"
+  RED_SHULKER_BOX: "blwch shulker coch"
+  RED_STAINED_GLASS: "gwydr lliw coch"
+  RED_STAINED_GLASS_PANE: "paen gwydr lliw coch"
+  RED_TERRACOTTA: "terracotta coch"
+  RED_TULIP: "tiwlip coch"
+  RED_WOOL: "gwlân coch"
+  REDSTONE_BLOCK: "bloc redstone"
+  REDSTONE_LAMP: "lamp redstone"
+  REDSTONE_ORE: "mwyn redstone"
+  REDSTONE_TORCH: "tors redstone"
+  REDSTONE_WALL_TORCH: "tors wal redstone"
+  REDSTONE_WIRE: "gwifren redstone"
+  REINFORCED_DEEPSLATE: "dwfnlech dur"
+  REPEATER: "ailadroddwr redstone"
+  REPEATING_COMMAND_BLOCK: "bloc gorchymyn ailadroddol"
+  RESPAWN_ANCHOR: "angor atgyfodi"
+  ROOTED_DIRT: "pridd gwreiddiog"
+  ROSE_BUSH: "llwyn rhosod"
+  SAND: "tywod"
+  SANDSTONE: "tywodfaen"
+  SANDSTONE_SLAB: "slab tywodfaen"
+  SANDSTONE_STAIRS: "grisiau tywodfaen"
+  SANDSTONE_WALL: "wal dywodfaen"
+  SCAFFOLDING: "sgaffaldiau"
+  SCULK: "sculk"
+  SCULK_CATALYST: "catalydd sculk"
+  SCULK_SENSOR: "synhwyrydd sculk"
+  SCULK_SHRIEKER: "sgrechiwr sculk"
+  SCULK_VEIN: "gwythien sculk"
+  SEA_LANTERN: "llusern fôr"
+  SEA_PICKLE: "picl môr"
+  SEAGRASS: "morwellt"
+  SET_SPAWN: "gosodwyd man atgyfodi"
+  SHORT_GRASS: "glaswellt byr"
+  SHROOMLIGHT: "goleuffwng"
+  SHULKER_BOX: "blwch shulker"
+  SKELETON_SKULL: "penglog sgerbwd"
+  SKELETON_WALL_SKULL: "penglog wal sgerbwd"
+  SLIME_BLOCK: "bloc sleim"
+  SMALL_AMETHYST_BUD: "blagur bychain amethyst"
+  SMALL_DRIPLEAF: "diferddeilen fach"
+  SMITHING_TABLE: "bwrdd gwaith gof"
+  SMOKER: "ffwrn fygu"
+  SMOOTH_BASALT: "pilergraig llyfn"
+  SMOOTH_QUARTZ: "bloc cwartz llyfn"
+  SMOOTH_QUARTZ_SLAB: "slab cwarts llyfn"
+  SMOOTH_QUARTZ_STAIRS: "grisiau cwarts llyfn"
+  SMOOTH_RED_SANDSTONE: "tywodfaen coch llyfn"
+  SMOOTH_RED_SANDSTONE_SLAB: "slab tywodfaen coch llyfn"
+  SMOOTH_RED_SANDSTONE_STAIRS: "grisiau tywodfaen coch llyfn"
+  SMOOTH_SANDSTONE: "tywodfaen llyfn"
+  SMOOTH_SANDSTONE_SLAB: "slab tywodfaen llyfn"
+  SMOOTH_SANDSTONE_STAIRS: "grisiau tywodfaen llyfn"
+  SMOOTH_STONE: "carreg llyfn"
+  SMOOTH_STONE_SLAB: "slab carreg llyfn"
+  SNIFFER_EGG: "ŵy ffroenwr"
+  SNOW: "eira"
+  SNOW_BLOCK: "bloc eira"
+  SOUL_CAMPFIRE: "tân gwersyll enaid"
+  SOUL_FIRE: "tân enaid"
+  SOUL_LANTERN: "llusern enaid"
+  SOUL_SAND: "tywod enaid"
+  SOUL_SOIL: "pridd enaid"
+  SOUL_TORCH: "tors enaid"
+  SOUL_WALL_TORCH: "tors wal enaid"
+  SPAWN_NOT_VALID: "nid oes gennych wely cartref neu angor atgyfodi wedi'i wefrio neu roedd wedi'i rwystro"
+  SPAWNER: "sil bwystfilod"
+  SPAWNER_DESC1: "rhyngweithio ag wy geni:"
+  SPAWNER_DESC2: "gosod math o greadur"
+  SPONGE: "sbwng"
+  SPORE_BLOSSOM: "blodeuyn sbor"
+  SPRUCE_BUTTON: "botwm pyrwydd"
+  SPRUCE_DOOR: "drws pyrwydd"
+  SPRUCE_FENCE: "ffens byrwydd"
+  SPRUCE_FENCE_GATE: "gât ffens byrwydd"
+  SPRUCE_HANGING_SIGN: "arwydd crog pyrwydd"
+  SPRUCE_LEAVES: "dail pyrwydd"
+  SPRUCE_LOG: "boncyff pyrwydd"
+  SPRUCE_PLANKS: "planciau pyrwydd"
+  SPRUCE_PRESSURE_PLATE: "gwasglechen pyrwydd"
+  SPRUCE_SAPLING: "glasbren pyrwydd"
+  SPRUCE_SIGN: "arwydd pyrwydd"
+  SPRUCE_SLAB: "slab pyrwydd"
+  SPRUCE_STAIRS: "grisiau pyrwydd"
+  SPRUCE_TRAPDOOR: "drws cudd pyrwydd"
+  SPRUCE_WALL_HANGING_SIGN: "arwydd wal crog pyrwydd"
+  SPRUCE_WALL_SIGN: "arwydd mur pyrwydd"
+  SPRUCE_WOOD: "pren pyrwydd"
+  STICKY_PISTON: "piston gludiog"
+  STONE: "carreg"
+  STONE_BRICK_SLAB: "slab bricsen carreg"
+  STONE_BRICK_STAIRS: "grisiau bricsen carreg"
+  STONE_BRICK_WALL: "wal friciau carreg"
+  STONE_BRICKS: "briciau carreg"
+  STONE_BUTTON: "botwm carreg"
+  STONE_PRESSURE_PLATE: "gwasglechen carreg"
+  STONE_SLAB: "slab carreg"
+  STONE_STAIRS: "grisiau carreg"
+  STONECUTTER: "naddwr cerrig"
+  STRIPPED_ACACIA_LOG: "boncyff acesia moel"
+  STRIPPED_ACACIA_WOOD: "pren acesia moel"
+  STRIPPED_BAMBOO_BLOCK: "bloc bambŵ moel"
+  STRIPPED_BIRCH_LOG: "boncyff bedw moel"
+  STRIPPED_BIRCH_WOOD: "pren bedw moel"
+  STRIPPED_CHERRY_LOG: "boncyff ceirios moel"
+  STRIPPED_CHERRY_WOOD: "pren ceirios moel"
+  STRIPPED_CRIMSON_HYPHAE: "hyffae rhuddgoch moel"
+  STRIPPED_CRIMSON_STEM: "coesyn rhuddgoch moel"
+  STRIPPED_DARK_OAK_LOG: "boncyff derw tywyll moel"
+  STRIPPED_DARK_OAK_WOOD: "pren derw tywyll moel"
+  STRIPPED_JUNGLE_LOG: "boncyff jyngl moel"
+  STRIPPED_JUNGLE_WOOD: "coed jyngl moel"
+  STRIPPED_MANGROVE_LOG: "boncyff mangrof moel"
+  STRIPPED_MANGROVE_WOOD: "pren mangrof moel"
+  STRIPPED_OAK_LOG: "boncyff derw moel"
+  STRIPPED_OAK_WOOD: "pren derw moel"
+  STRIPPED_SPRUCE_LOG: "boncyff pyrwydd moel"
+  STRIPPED_SPRUCE_WOOD: "pren pyrwydd moel"
+  STRIPPED_WARPED_HYPHAE: "hyffae annaearol moel"
+  STRIPPED_WARPED_STEM: "coesyn annaearol moel"
+  STRUCTURE_BLOCK: "bloc adeileddol"
+  STRUCTURE_VOID: "gwagle strwythur"
+  SUGAR_CANE: "cansen siwgr"
+  SUNFLOWER: "blodyn yr haul"
+  SUSPICIOUS_GRAVEL: "graean amheus"
+  SUSPICIOUS_SAND: "tywod amheus"
+  SWEET_BERRY_BUSH: "llwyn aeron melys"
+  TALL_GRASS: "glaswellt hir"
+  TALL_SEAGRASS: "morwellt tal"
+  TARGET: "targed"
+  TERRACOTTA: "terracotta"
+  TINTED_GLASS: "gwydr arlliw"
+  TNT: "tnt"
+  TORCH: "tors"
+  TORCHFLOWER: "torsflodyn"
+  TORCHFLOWER_CROP: "cnwd torsflodyn"
+  TRAPPED_CHEST: "magl-gist"
+  TRIAL_SPAWNER: "sil treial"
+  TRIPWIRE: "weiren faglu"
+  TRIPWIRE_HOOK: "bachyn weiren faglu"
+  TUBE_CORAL: "cwrel piben"
+  TUBE_CORAL_BLOCK: "bloc cwrel piben"
+  TUBE_CORAL_FAN: "ffan cwrel piben"
+  TUBE_CORAL_WALL_FAN: "ffan wal gwrel piben"
+  TUFF: "twff"
+  TUFF_BRICK_SLAB: "slab briciau twff"
+  TUFF_BRICK_STAIRS: "grisiau briciau twff"
+  TUFF_BRICK_WALL: "wal friciau twff"
+  TUFF_BRICKS: "briciau twff"
+  TUFF_SLAB: "slab twff"
+  TUFF_STAIRS: "grisiau twff"
+  TUFF_WALL: "wal twff"
+  TURTLE_EGG: "wy crwban"
+  TWISTING_VINES: "gwinwydd dirdro"
+  TWISTING_VINES_PLANT: "planhigyn gwinwydd dirdro"
+  VERDANT_FROGLIGHT: "llyffantolau irlas"
+  VINE: "gwinwydd"
+  VOID_AIR: "aer gwagle"
+  WALL_TORCH: "tors wal"
+  WARPED_BUTTON: "botwm annaearol"
+  WARPED_DOOR: "drws annaearol"
+  WARPED_FENCE: "ffens annaearol"
+  WARPED_FENCE_GATE: "gât ffens annaearol"
+  WARPED_FUNGUS: "ffwng annaearol"
+  WARPED_HANGING_SIGN: "arwydd crog annaearol"
+  WARPED_HYPHAE: "hyffae annaearol"
+  WARPED_NYLIUM: "neliwm annaearol"
+  WARPED_PLANKS: "planciau annaearol"
+  WARPED_PRESSURE_PLATE: "gwasglechen annaearol"
+  WARPED_ROOTS: "gwreiddiau annaearol"
+  WARPED_SIGN: "arwydd annaearol"
+  WARPED_SLAB: "slab annaearol"
+  WARPED_STAIRS: "grisiau annaearol"
+  WARPED_STEM: "coesyn annaearol"
+  WARPED_TRAPDOOR: "drws cudd annaearol"
+  WARPED_WALL_HANGING_SIGN: "arwydd wal crog annaearol"
+  WARPED_WALL_SIGN: "arwydd wal annaearol"
+  WARPED_WART_BLOCK: "bloc chwyn annaearol"
+  WATER: "dŵr"
+  WATER_CAULDRON: "crochen ddŵr"
+  WAXED_CHISELED_COPPER: "copr cwyrog nadd"
+  WAXED_COPPER_BLOCK: "bloc copr cwyrog"
+  WAXED_COPPER_BULB: "bwlb copr cwyrog"
+  WAXED_COPPER_DOOR: "drws copr cwyrog"
+  WAXED_COPPER_GRATE: "gratiau copr cwyrog"
+  WAXED_COPPER_TRAPDOOR: "drws cudd copr cwyrog"
+  WAXED_CUT_COPPER: "copr cwyrog toredig"
+  WAXED_CUT_COPPER_SLAB: "slab copr cwyrog toredig"
+  WAXED_CUT_COPPER_STAIRS: "grisiau copr cwyrog toredig"
+  WAXED_EXPOSED_CHISELED_COPPER: "copr cwyrog nadd wedi pylu"
+  WAXED_EXPOSED_COPPER: "copr cwyrog wedi pylu"
+  WAXED_EXPOSED_COPPER_BULB: "bwlb copr cwyrog wedi pylu"
+  WAXED_EXPOSED_COPPER_DOOR: "drws copr cwyrog wedi pylu"
+  WAXED_EXPOSED_COPPER_GRATE: "gratiau copr cwyrog wedi pylu"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "drws cudd copr cwyrog wedi pylu"
+  WAXED_EXPOSED_CUT_COPPER: "copr cwyrog toredig wedi pylu"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "slab copr cwyrog toredig wedi pylu"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "grisiau copr cwyrog toredig wedi pylu"
+  WAXED_OXIDIZED_CHISELED_COPPER: "copr nadd cwyrog ocsidiedig"
+  WAXED_OXIDIZED_COPPER: "copr cwyrog ocsidiedig"
+  WAXED_OXIDIZED_COPPER_BULB: "bwlb copr cwyrog ocsidiedig"
+  WAXED_OXIDIZED_COPPER_DOOR: "drws copr cwyrog ocsidiedig"
+  WAXED_OXIDIZED_COPPER_GRATE: "gratiau copr cwyrog ocsidiedig"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "drws cudd copr cwyrog ocsidiedig"
+  WAXED_OXIDIZED_CUT_COPPER: "copr cwyrog toredig ocsidiedig"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "slab copr cwyrog toredig ocsidiedig"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "grisiau copr cwyrog toredig ocsidiedig"
+  WAXED_WEATHERED_CHISELED_COPPER: "copr cwyrog nadd hindreuliedig"
+  WAXED_WEATHERED_COPPER: "copr cwyrog hindreuliedig"
+  WAXED_WEATHERED_COPPER_BULB: "bwlb copr cwyrog hindreuliedig"
+  WAXED_WEATHERED_COPPER_DOOR: "drws copr cwyrog hindreuliedig"
+  WAXED_WEATHERED_COPPER_GRATE: "gratiau copr cwyrog hindreuliedig"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "drws cudd copr cwyrog hindreuliedig"
+  WAXED_WEATHERED_CUT_COPPER: "copr cwyrog toredig hindreuliedig"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "slab copr cwyrog toredig hindreuliedig"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "grisiau copr cwyrog toredig hindreuliedig"
+  WEATHERED_CHISELED_COPPER: "copr nadd hindreuliedig"
+  WEATHERED_COPPER: "copr hindreuliedig"
+  WEATHERED_COPPER_BULB: "bwlb copr hindreuliedig"
+  WEATHERED_COPPER_DOOR: "drws copr hindreuliedig"
+  WEATHERED_COPPER_GRATE: "gratiau copr hindreuliedig"
+  WEATHERED_COPPER_TRAPDOOR: "drws cudd copr hindreuliedig"
+  WEATHERED_CUT_COPPER: "copr toredig hindreuliedig"
+  WEATHERED_CUT_COPPER_SLAB: "slab copr toredig hindreuliedig"
+  WEATHERED_CUT_COPPER_STAIRS: "grisiau copr toredig hindreuliedig"
+  WEEPING_VINES: "gwinwydd wylofus"
+  WEEPING_VINES_PLANT: "planhigyn gwinwydd wylofus"
+  WET_SPONGE: "spwng gwlyb"
+  WHEAT: "cnydau gwenith"
+  WHITE_BANNER: "baner wen"
+  WHITE_BED: "gwely gwyn"
+  WHITE_CANDLE: "canwyll wen"
+  WHITE_CANDLE_CAKE: "teisen â channwyll gwyn"
+  WHITE_CARPET: "carped gwyn"
+  WHITE_CONCRETE: "concrit gwyn"
+  WHITE_CONCRETE_POWDER: "powdr concrit gwyn"
+  WHITE_GLAZED_TERRACOTTA: "terracotta gwyn gwydrog"
+  WHITE_SHULKER_BOX: "blwch shulker gwyn"
+  WHITE_STAINED_GLASS: "gwydr lliw gwyn"
+  WHITE_STAINED_GLASS_PANE: "paen gwydr lliw gwyn"
+  WHITE_TERRACOTTA: "terracotta gwyn"
+  WHITE_TULIP: "tiwlip gwyn"
+  WHITE_WOOL: "gwlân gwyn"
+  WITHER_ROSE: "rhosyn wither"
+  WITHER_SKELETON_SKULL: "penglog sgerbwd wither"
+  WITHER_SKELETON_WALL_SKULL: "penglog wal sgerbwd wither"
+  YELLOW_BANNER: "baner felen"
+  YELLOW_BED: "gwely melyn"
+  YELLOW_CANDLE: "canwyll felyn"
+  YELLOW_CANDLE_CAKE: "teisen â channwyll melyn"
+  YELLOW_CARPET: "carped melyn"
+  YELLOW_CONCRETE: "concrit melyn"
+  YELLOW_CONCRETE_POWDER: "powdr concrit melyn"
+  YELLOW_GLAZED_TERRACOTTA: "terracotta melyn gwydrog"
+  YELLOW_SHULKER_BOX: "blwch shulker melyn"
+  YELLOW_STAINED_GLASS: "gwydr lliw melyn"
+  YELLOW_STAINED_GLASS_PANE: "paen gwydr lliw melyn"
+  YELLOW_TERRACOTTA: "terracotta melyn"
+  YELLOW_WOOL: "gwlân melyn"
+  ZOMBIE_HEAD: "pen sombi"
+  ZOMBIE_WALL_HEAD: "pen wal sombi"
+  ACACIA_BOAT: "cwch acesia"
+  ACACIA_CHEST_BOAT: "cwch acesia â chist"
+  ALLAY_SPAWN_EGG: "wy geni helpllaw"
+  AMETHYST_SHARD: "telchyn amethyst"
+  ANGLER_POTTERY_SHARD: "darn crochenwaith pysgotwr"
+  ANGLER_POTTERY_SHERD: "darn crochenwaith pysgotwr"
+  APPLE: "afal"
+  ARCHER_POTTERY_SHARD: "darn crochenwaith saethwr"
+  ARCHER_POTTERY_SHERD: "darn crochenwaith saethwr"
+  ARMOR_STAND: "daliadur arfwisg"
+  ARMS_UP_POTTERY_SHARD: "darn crochenwaith breichiau"
+  ARMS_UP_POTTERY_SHERD: "darn crochenwaith breichiau"
+  ARROW: "saeth"
+  AXOLOTL_BUCKET: "bwced o acsolotlod"
+  AXOLOTL_SPAWN_EGG: "wy geni acsolotl"
+  BAKED_POTATO: "taten pob"
+  BAMBOO_CHEST_RAFT: "rafft fambŵ â chist"
+  BAMBOO_RAFT: "rafft fambŵ"
+  BAT_SPAWN_EGG: "wy geni ystlum"
+  BEE_SPAWN_EGG: "ŵy geni gwenyn"
+  BEEF: "cig eidion amrwd"
+  BEETROOT: "betys"
+  BEETROOT_SEEDS: "hadau betys"
+  BEETROOT_SOUP: "cawl betys"
+  BIRCH_BOAT: "cwch bedw"
+  BIRCH_CHEST_BOAT: "cwch bedw â chist"
+  BLACK_DYE: "llifyn du"
+  BLADE_POTTERY_SHARD: "darn crochenwaith cleddyf"
+  BLADE_POTTERY_SHERD: "darn crochenwaith cleddyf"
+  BLAZE_POWDER: "llwch tânfwystfil"
+  BLAZE_ROD: "gwialen tânfwystfil"
+  BLAZE_SPAWN_EGG: "wy geni tanfwystfil"
+  BLUE_DYE: "llifyn glas"
+  BONE: "asgwrn"
+  BONE_MEAL: "blawd esgyrn"
+  BOOK: "llyfr"
+  BOW: "bwa"
+  BOWL: "powlen"
+  BREAD: "bara"
+  BREEZE_SPAWN_EGG: "wy geni awel"
+  BREWER_POTTERY_SHARD: "darn crochenwaith bragu"
+  BREWER_POTTERY_SHERD: "darn crochenwaith bragu"
+  BRICK: "bricsen"
+  BROWN_DYE: "llifyn brown"
+  BRUSH: "brwsh"
+  BUCKET: "bwced"
+  BUNDLE: "bwndel"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "darn crochenwaith llosgi"
+  BURN_POTTERY_SHERD: "darn crochenwaith llosgi"
+  CAMEL_SPAWN_EGG: "wy geni camel"
+  CARROT: "moronen"
+  CARROT_ON_A_STICK: "moronen ar ffon"
+  CAT_SPAWN_EGG: "wy geni cath"
+  CAVE_SPIDER_SPAWN_EGG: "wy geni pryf cop ogof"
+  CHAINMAIL_BOOTS: "esgidiau maelwisg"
+  CHAINMAIL_CHESTPLATE: "dwyfronneg maelwisg"
+  CHAINMAIL_HELMET: "helmed maelwisg"
+  CHAINMAIL_LEGGINGS: "legins maelwisg"
+  CHARCOAL: "golosg"
+  CHERRY_BOAT: "cwch ceirios"
+  CHERRY_CHEST_BOAT: "cwch ceirios â chist"
+  CHEST_MINECART: "cart pwll gyda chist"
+  CHICKEN: "cyw iar amrwd"
+  CHICKEN_SPAWN_EGG: "wy geni iar"
+  CHORUS_FRUIT: "ffrwyth corws"
+  CLAY_BALL: "pelen clai"
+  CLOCK: "cloc"
+  COAL: "glo"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  COCOA_BEANS: "ffa coco"
+  COD: "penfras amrwd"
+  COD_BUCKET: "bwced o benfrasiaid"
+  COD_SPAWN_EGG: "wy geni penfras"
+  COMMAND_BLOCK_MINECART: "cart pwll gyda bloc gorchymyn"
+  COMPASS: "cwmpawd"
+  COOKED_BEEF: "stecen"
+  COOKED_CHICKEN: "cyw iar rhost"
+  COOKED_COD: "penfras rhost"
+  COOKED_MUTTON: "cig dafad rhost"
+  COOKED_PORKCHOP: "porc rhost"
+  COOKED_RABBIT: "cwningen rhost"
+  COOKED_SALMON: "eog rhost"
+  COOKIE: "bisgeden"
+  COPPER_INGOT: "bar copr"
+  COW_SPAWN_EGG: "wy geni buwch"
+  CREEPER_BANNER_PATTERN: "patrwm baner"
+  CREEPER_BANNER_PATTERN_DESC: "luws creeper"
+  CREEPER_SPAWN_EGG: "wy geni creeper"
+  CROSSBOW: "bwa croes"
+  CROSSBOW_PROJECTILE: "taflegryn:"
+  CYAN_DYE: "llifyn gwyrddlas"
+  DANGER_POTTERY_SHARD: "darn crochenwaith peryg"
+  DANGER_POTTERY_SHERD: "darn crochenwaith peryg"
+  DARK_OAK_BOAT: "cwch derw tywyll"
+  DARK_OAK_CHEST_BOAT: "cwch derw tywyll â chist"
+  DEBUG_STICK: "ffon dadfygio"
+  DEBUG_STICK_EMPTY: "nid oes gan %s unrhyw nodweddion"
+  DEBUG_STICK_SELECT: "dewiswyd \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" i %s"
+  DIAMOND: "diemwnt"
+  DIAMOND_AXE: "bwyell diemwnt"
+  DIAMOND_BOOTS: "esgidiau diemwnt"
+  DIAMOND_CHESTPLATE: "dwyfronneg diemwnt"
+  DIAMOND_HELMET: "helmed diemwnt"
+  DIAMOND_HOE: "hof diemwnt"
+  DIAMOND_HORSE_ARMOR: "arfwisg ceffyl diemwnt"
+  DIAMOND_LEGGINGS: "legins diemwnt"
+  DIAMOND_PICKAXE: "caib diemwnt"
+  DIAMOND_SHOVEL: "rhaw diemwnt"
+  DIAMOND_SWORD: "cleddyf diemwnt"
+  DISC_FRAGMENT_5: "darn o ddisg"
+  DISC_FRAGMENT_5_DESC: "disg cerddoriaeth - 5"
+  DOLPHIN_SPAWN_EGG: "wy geni dolffin"
+  DONKEY_SPAWN_EGG: "wy geni asyn"
+  DRAGON_BREATH: "gwynt y ddraig"
+  DRIED_KELP: "gwymon sych"
+  DROWNED_SPAWN_EGG: "wy geni boddedig"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  ECHO_SHARD: "darn adlais"
+  EGG: "wy"
+  ELDER_GUARDIAN_SPAWN_EGG: "wy geni gwarchodwr hyn"
+  ELYTRA: "elytra"
+  EMERALD: "emrallt"
+  ENCHANTED_BOOK: "llyfr hudolus"
+  ENCHANTED_GOLDEN_APPLE: "afal euraid hudolus"
+  END_CRYSTAL: "crisial end"
+  ENDER_DRAGON_SPAWN_EGG: "wy geni draig ender"
+  ENDER_EYE: "llygad ender"
+  ENDER_PEARL: "perl ender"
+  ENDERMAN_SPAWN_EGG: "wy geni enderman"
+  ENDERMITE_SPAWN_EGG: "wy geni endermite"
+  EVOKER_SPAWN_EGG: "wy geni consuriwr"
+  EXPERIENCE_BOTTLE: "potel hudoliaeth"
+  EXPLORER_POTTERY_SHARD: "darn crochenwaith antur"
+  EXPLORER_POTTERY_SHERD: "darn crochenwaith antur"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  FEATHER: "pluen"
+  FERMENTED_SPIDER_EYE: "llygad pryf cop wedi eplesu"
+  FILLED_MAP: "map"
+  FIRE_CHARGE: "pelen dân"
+  FIREWORK_ROCKET: "roced tân gwyllt"
+  FIREWORK_ROCKET_FLIGHT: "hyd hedfan:"
+  FIREWORK_STAR: "seren tân gwyllt"
+  FIREWORK_STAR_BLACK: "du"
+  FIREWORK_STAR_BLUE: "glas"
+  FIREWORK_STAR_BROWN: "brown"
+  FIREWORK_STAR_CUSTOM_COLOR: "addasu"
+  FIREWORK_STAR_CYAN: "gwyrddlas"
+  FIREWORK_STAR_FADE_TO: "pylu i"
+  FIREWORK_STAR_FLICKER: "twincl"
+  FIREWORK_STAR_GRAY: "llwyd"
+  FIREWORK_STAR_GREEN: "gwyrdd"
+  FIREWORK_STAR_LIGHT_BLUE: "glas golau"
+  FIREWORK_STAR_LIGHT_GRAY: "llwyd golau"
+  FIREWORK_STAR_LIME: "leim"
+  FIREWORK_STAR_MAGENTA: "majenta"
+  FIREWORK_STAR_ORANGE: "oren"
+  FIREWORK_STAR_PINK: "pinc"
+  FIREWORK_STAR_PURPLE: "porffor"
+  FIREWORK_STAR_RED: "coch"
+  FIREWORK_STAR_SHAPE: "siâp anhysbys"
+  FIREWORK_STAR_SHAPE_BURST: "byrst"
+  FIREWORK_STAR_SHAPE_CREEPER: "siap creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "pelen fawr"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "pelen fach"
+  FIREWORK_STAR_SHAPE_STAR: "siâp seren"
+  FIREWORK_STAR_TRAIL: "llwybr"
+  FIREWORK_STAR_WHITE: "gwyn"
+  FIREWORK_STAR_YELLOW: "melyn"
+  FISHING_ROD: "gwialen pysgota"
+  FLINT: "fflint"
+  FLINT_AND_STEEL: "fflint a dur"
+  FLOWER_BANNER_PATTERN: "patrwm baner"
+  FLOWER_BANNER_PATTERN_DESC: "luws blodyn"
+  FOX_SPAWN_EGG: "wy geni llwynog"
+  FRIEND_POTTERY_SHARD: "darn crochenwaith ffrind"
+  FRIEND_POTTERY_SHERD: "darn crochenwaith ffrind"
+  FROG_SPAWN_EGG: "wy geni llyffant"
+  FURNACE_MINECART: "cart pwll gyda ffwrnais"
+  GHAST_SPAWN_EGG: "wy geni ghast"
+  GHAST_TEAR: "deigryn ghast"
+  GLASS_BOTTLE: "potel gwydr"
+  GLISTERING_MELON_SLICE: "tafell melon euraid"
+  GLOBE_BANNER_PATTERN: "patrwm baner"
+  GLOBE_BANNER_PATTERN_DESC: "glôb"
+  GLOW_BERRIES: "eirin gloyw"
+  GLOW_INK_SAC: "coden inc gloyw"
+  GLOW_ITEM_FRAME: "ffrâm eitem gloyw"
+  GLOW_SQUID_SPAWN_EGG: "wy geni ystifflog gloyw"
+  GLOWSTONE_DUST: "llwch gloywgarreg"
+  GOAT_HORN: "corn gafr"
+  GOAT_SPAWN_EGG: "wy geni gafr"
+  GOLD_INGOT: "bar aur"
+  GOLD_NUGGET: "clap aur"
+  GOLDEN_APPLE: "afal euraid"
+  GOLDEN_AXE: "bwyell aur"
+  GOLDEN_BOOTS: "esgidiau aur"
+  GOLDEN_CARROT: "moronen euraid"
+  GOLDEN_CHESTPLATE: "dwyfronneg aur"
+  GOLDEN_HELMET: "helmed aur"
+  GOLDEN_HOE: "hof aur"
+  GOLDEN_HORSE_ARMOR: "arfwisg ceffyl euraid"
+  GOLDEN_LEGGINGS: "legins aur"
+  GOLDEN_PICKAXE: "caib aur"
+  GOLDEN_SHOVEL: "rhaw aur"
+  GOLDEN_SWORD: "cleddyf aur"
+  GRAY_DYE: "llifyn llwyd"
+  GREEN_DYE: "llifyn gwyrdd"
+  GUARDIAN_SPAWN_EGG: "wy geni gwarchodwr"
+  GUNPOWDER: "powdr gwn"
+  HEART_OF_THE_SEA: "calon y môr"
+  HEART_POTTERY_SHARD: "darn crochenwaith calon"
+  HEART_POTTERY_SHERD: "darn crochenwaith calon"
+  HEARTBREAK_POTTERY_SHARD: "darn crochenwaith torcalon"
+  HEARTBREAK_POTTERY_SHERD: "darn crochenwaith torcalon"
+  HOGLIN_SPAWN_EGG: "ŵy geni hoglin"
+  HONEY_BOTTLE: "potel fêl"
+  HONEYCOMB: "dil mêl"
+  HOPPER_MINECART: "cart pwll gyda hopran"
+  HORSE_SPAWN_EGG: "wy geni ceffyl"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  HOWL_POTTERY_SHARD: "darn crochenwaith blaidd"
+  HOWL_POTTERY_SHERD: "darn crochenwaith blaidd"
+  HUSK_SPAWN_EGG: "wy geni cibyn"
+  INK_SAC: "coden inc"
+  IRON_AXE: "bwyell haearn"
+  IRON_BOOTS: "esgidiau haearn"
+  IRON_CHESTPLATE: "dwyfronneg haearn"
+  IRON_GOLEM_SPAWN_EGG: "wy geni golem haearn"
+  IRON_HELMET: "helmed haearn"
+  IRON_HOE: "hof haearn"
+  IRON_HORSE_ARMOR: "arfwisg ceffyl haearn"
+  IRON_INGOT: "bar haearn"
+  IRON_LEGGINGS: "legins haearn"
+  IRON_NUGGET: "clap haearn"
+  IRON_PICKAXE: "caib haearn"
+  IRON_SHOVEL: "rhaw haearn"
+  IRON_SWORD: "cleddyf haearn"
+  ITEM_FRAME: "ffrâm eitem"
+  JUNGLE_BOAT: "cwch jyngl"
+  JUNGLE_CHEST_BOAT: "cwch jyngl â chist"
+  KNOWLEDGE_BOOK: "llyfr gwybodaeth"
+  LAPIS_LAZULI: "lapis-laswli"
+  LAVA_BUCKET: "bwced lafa"
+  LEAD: "tennyn"
+  LEATHER: "lledr"
+  LEATHER_BOOTS: "esgidiau lledr"
+  LEATHER_CHESTPLATE: "tiwnig lledr"
+  LEATHER_HELMET: "het lledr"
+  LEATHER_HORSE_ARMOR: "arfwisg ceffyl lledr"
+  LEATHER_LEGGINGS: "trowser lledr"
+  LIGHT_BLUE_DYE: "llifyn glas golau"
+  LIGHT_GRAY_DYE: "llifyn llwyd golau"
+  LIME_DYE: "llifyn leim"
+  LINGERING_POTION: "diod parhaus"
+  LINGERING_POTION_EFFECT_AWKWARD: "diod parhaus lletchwith"
+  LINGERING_POTION_EFFECT_EMPTY: "diod parhaus anghrefftadwy"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "diod parhaus gwrthsefyll tân"
+  LINGERING_POTION_EFFECT_HARMING: "diod parhaus niweidio"
+  LINGERING_POTION_EFFECT_HEALING: "diod parhaus iachau"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "diod parhaus anweledigaeth"
+  LINGERING_POTION_EFFECT_LEAPING: "diod parhaus neidio"
+  LINGERING_POTION_EFFECT_LEVITATION: "diod parhaus o ymddyrchafael"
+  LINGERING_POTION_EFFECT_LUCK: "diod parhaus lwc"
+  LINGERING_POTION_EFFECT_MUNDANE: "diod parhaus cyffredin"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "diod parhaus golwg nos"
+  LINGERING_POTION_EFFECT_POISON: "diod parhaus gwenwyn"
+  LINGERING_POTION_EFFECT_REGENERATION: "diod parhaus adfywio"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "diod parhaus syrthio araf"
+  LINGERING_POTION_EFFECT_SLOWNESS: "diod parhaus arafiad"
+  LINGERING_POTION_EFFECT_STRENGTH: "diod parhaus cryfhau"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "diod parhaus o gyflymiad"
+  LINGERING_POTION_EFFECT_THICK: "diod parhaus trwchus"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "diod parhaus y meistr crwbanod"
+  LINGERING_POTION_EFFECT_WATER: "potel ddŵr parhaus"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "diod parhaus anadlu dŵr"
+  LINGERING_POTION_EFFECT_WEAKNESS: "diod parhaus o wendid"
+  LLAMA_SPAWN_EGG: "wy gemi lama"
+  LODESTONE_COMPASS: "cwmpawd tynfaen"
+  MAGENTA_DYE: "llifyn majenta"
+  MAGMA_CREAM: "hufen magma"
+  MAGMA_CUBE_SPAWN_EGG: "wy geni ciwb magma"
+  MANGROVE_BOAT: "cwch mangrof"
+  MANGROVE_CHEST_BOAT: "cwch mangrof â chist"
+  MAP: "map gwag"
+  MELON_SEEDS: "hadau melon"
+  MELON_SLICE: "tafell melon"
+  MILK_BUCKET: "bwced llaeth"
+  MINECART: "cart pwll"
+  MINER_POTTERY_SHARD: "darn crochenwaith cloddio"
+  MINER_POTTERY_SHERD: "darn crochenwaith cloddio"
+  MOJANG_BANNER_PATTERN: "patrwm baner"
+  MOJANG_BANNER_PATTERN_DESC: "peth"
+  MOOSHROOM_SPAWN_EGG: "wy geni mooshroom"
+  MOURNER_POTTERY_SHARD: "darn crochenwaith galaru"
+  MOURNER_POTTERY_SHERD: "darn crochenwaith galaru"
+  MULE_SPAWN_EGG: "wy geni mul"
+  MUSHROOM_STEW: "cawl madarch"
+  MUSIC_DISC_11: "disg cerddoriaeth"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "disg cerddoriaeth"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "disg cerddoriaeth"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "disg cerddoriaeth"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "disg cerddoriaeth"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "disg cerddoriaeth"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "disg cerddoriaeth"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "disg cerddoriaeth"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "disg cerddoriaeth"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "disg cerddoriaeth"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "disg cerddoriaeth"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "disg cerddoriaeth"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "disg cerddoriaeth"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "disg cerddoriaeth"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "disg cerddoriaeth"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "disg cerddoriaeth"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "cig dafad amrwd"
+  NAME_TAG: "tag enw"
+  NAUTILUS_SHELL: "cragen bedr"
+  NETHER_BRICK: "bricsen nether"
+  NETHER_STAR: "seren nether"
+  NETHERITE_AXE: "bwyell netherit"
+  NETHERITE_BOOTS: "esgidiau netherit"
+  NETHERITE_CHESTPLATE: "dwyfronneg netherit"
+  NETHERITE_HELMET: "helmed netherit"
+  NETHERITE_HOE: "hof netherit"
+  NETHERITE_INGOT: "bar netherit"
+  NETHERITE_LEGGINGS: "legins netherit"
+  NETHERITE_PICKAXE: "caib netherit"
+  NETHERITE_SCRAP: "sgrap netherit"
+  NETHERITE_SHOVEL: "rhaw netherit"
+  NETHERITE_SWORD: "cleddyf netherit"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "templed gof"
+  OAK_BOAT: "cwch derw"
+  OAK_CHEST_BOAT: "cwch derw â chist"
+  OCELOT_SPAWN_EGG: "wy geni oselot"
+  ORANGE_DYE: "llifyn oren"
+  PAINTING: "llun"
+  PANDA_SPAWN_EGG: "wy geni panda"
+  PAPER: "papur"
+  PARROT_SPAWN_EGG: "wy geni parot"
+  PHANTOM_MEMBRANE: "pilen ffantom"
+  PHANTOM_SPAWN_EGG: "wy geni ffantom"
+  PIG_SPAWN_EGG: "wy geni mochyn"
+  PIGLIN_BANNER_PATTERN: "patrwm baner"
+  PIGLIN_BANNER_PATTERN_DESC: "trwyn"
+  PIGLIN_BRUTE_SPAWN_EGG: "wy geni piglin brwnt"
+  PIGLIN_SPAWN_EGG: "wy geni piglin"
+  PILLAGER_SPAWN_EGG: "wy geni ysbeiliwr"
+  PINK_DYE: "llifyn pinc"
+  PITCHER_POD: "pod piserlys"
+  PLENTY_POTTERY_SHARD: "darn crochenwaith digonedd"
+  PLENTY_POTTERY_SHERD: "darn crochenwaith digonedd"
+  POISONOUS_POTATO: "taten gwenwynig"
+  POLAR_BEAR_SPAWN_EGG: "wy geni arth wen"
+  POPPED_CHORUS_FRUIT: "ffrwyth corws wedi phopio"
+  PORKCHOP: "porc amrwd"
+  POTATO: "taten"
+  POTION: "diod"
+  POTION_EFFECT_AWKWARD: "diod lletchwith"
+  POTION_EFFECT_EMPTY: "diod anghrefftadwy"
+  POTION_EFFECT_FIRE_RESISTANCE: "diod gwrthsefyll tân"
+  POTION_EFFECT_HARMING: "diod niweidio"
+  POTION_EFFECT_HEALING: "diod iachau"
+  POTION_EFFECT_INVISIBILITY: "diod anweledigaeth"
+  POTION_EFFECT_LEAPING: "diod neidio"
+  POTION_EFFECT_LEVITATION: "diod o ymddyrchafael"
+  POTION_EFFECT_LUCK: "diod lwc"
+  POTION_EFFECT_MUNDANE: "diod cyffredin"
+  POTION_EFFECT_NIGHT_VISION: "diod golwg nos"
+  POTION_EFFECT_POISON: "diod gwenwyn"
+  POTION_EFFECT_REGENERATION: "diod adfywio"
+  POTION_EFFECT_SLOW_FALLING: "diod syrthio araf"
+  POTION_EFFECT_SLOWNESS: "diod arafiad"
+  POTION_EFFECT_STRENGTH: "diod cryfhau"
+  POTION_EFFECT_SWIFTNESS: "diod o gyflymiad"
+  POTION_EFFECT_THICK: "diod trwchus"
+  POTION_EFFECT_TURTLE_MASTER: "diod y meistr crwbanod"
+  POTION_EFFECT_WATER: "potel ddŵr"
+  POTION_EFFECT_WATER_BREATHING: "diod anadlu dŵr"
+  POTION_EFFECT_WEAKNESS: "diod o wendid"
+  POTTERY_SHARD_ARCHER: "darn crochenwaith saethwr"
+  POTTERY_SHARD_ARMS_UP: "darn crochenwaith breichiau"
+  POTTERY_SHARD_PRIZE: "darn crochenwaith gwobr"
+  POTTERY_SHARD_SKULL: "darn crochenwaith penglog"
+  POWDER_SNOW_BUCKET: "bwced eira powdr"
+  PRISMARINE_CRYSTALS: "crisialau prismarin"
+  PRISMARINE_SHARD: "telchyn prismarin"
+  PRIZE_POTTERY_SHARD: "darn crochenwaith gwobr"
+  PRIZE_POTTERY_SHERD: "darn crochenwaith gwobr"
+  PUFFERFISH: "chwyddbysgodyn"
+  PUFFERFISH_BUCKET: "bwced o chwyddbysgod"
+  PUFFERFISH_SPAWN_EGG: "wy geni chwyddbysgodyn"
+  PUMPKIN_PIE: "pei pwmpen"
+  PUMPKIN_SEEDS: "hadau pwmpen"
+  PURPLE_DYE: "llifyn porffor"
+  QUARTZ: "cwarts nether"
+  RABBIT: "cwningen amrwd"
+  RABBIT_FOOT: "troed cwningen"
+  RABBIT_HIDE: "croen cwningen"
+  RABBIT_SPAWN_EGG: "wy geni cwningen"
+  RABBIT_STEW: "cawl cwningen"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  RAVAGER_SPAWN_EGG: "wy geni difrodwr"
+  RAW_COPPER: "copr crai"
+  RAW_GOLD: "aur crai"
+  RAW_IRON: "haearn crai"
+  RECOVERY_COMPASS: "cwmpawd adennill"
+  RED_DYE: "llifyn coch"
+  REDSTONE: "llwch redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  ROTTEN_FLESH: "cnawd pwdr"
+  SADDLE: "cyfrwy"
+  SALMON: "eog amrwd"
+  SALMON_BUCKET: "bwced o eog"
+  SALMON_SPAWN_EGG: "wy geni eog"
+  SCUTE: "sgwtela"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  SHEAF_POTTERY_SHARD: "darn crochenwaith ysgub"
+  SHEAF_POTTERY_SHERD: "darn crochenwaith ysgub"
+  SHEARS: "gwellau"
+  SHEEP_SPAWN_EGG: "wy geni dafad"
+  SHELTER_POTTERY_SHARD: "darn crochenwaith cysgod"
+  SHELTER_POTTERY_SHERD: "darn crochenwaith cysgod"
+  SHIELD: "tarian"
+  SHIELD_BLACK: "tarian ddu"
+  SHIELD_BLUE: "tarian las"
+  SHIELD_BROWN: "tarian frown"
+  SHIELD_CYAN: "tarian wyrddlas"
+  SHIELD_GRAY: "tarian lwyd"
+  SHIELD_GREEN: "tarian werdd"
+  SHIELD_LIGHT_BLUE: "tarian las golau"
+  SHIELD_LIGHT_GRAY: "tarian lwyd golau"
+  SHIELD_LIME: "tarian leim"
+  SHIELD_MAGENTA: "tarian majenta"
+  SHIELD_ORANGE: "tarian oren"
+  SHIELD_PINK: "tarian binc"
+  SHIELD_PURPLE: "tarian borffor"
+  SHIELD_RED: "tarian goch"
+  SHIELD_WHITE: "tarian wen"
+  SHIELD_YELLOW: "tarian felen"
+  SHULKER_SHELL: "cragen shulker"
+  SHULKER_SPAWN_EGG: "wy geni shulker"
+  SIGN: "arwydd"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  SILVERFISH_SPAWN_EGG: "wy geni pryf arian"
+  SKELETON_HORSE_SPAWN_EGG: "wy geni ceffyl sgerbwd"
+  SKELETON_SPAWN_EGG: "wy geni sgerbwd"
+  SKULL_BANNER_PATTERN: "patrwm baner"
+  SKULL_BANNER_PATTERN_DESC: "luws penglog"
+  SKULL_POTTERY_SHARD: "darn crochenwaith penglog"
+  SKULL_POTTERY_SHERD: "darn crochenwaith penglog"
+  SLIME_BALL: "pelen sleim"
+  SLIME_SPAWN_EGG: "wy geni sleim"
+  SMITHING_TEMPLATE: "templed gof"
+  SMITHING_TEMPLATE_APPLIES_TO: "ar gyfer:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "ychwanegwch bar neu grisial"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "arfwisg"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "ychwanegwch ddarn o arfwisg"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "bariau & crisialau"
+  SMITHING_TEMPLATE_INGREDIENTS: "cynhwysion:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "ychwanegu bar netherit"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "offer diemwnt"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "ychwanegu arfwisg arf neu offer diemwnt"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "bar netherit"
+  SMITHING_TEMPLATE_UPGRADE: "uwchraddio: "
+  SNIFFER_SPAWN_EGG: "wy geni ffroenwr"
+  SNORT_POTTERY_SHARD: "darn crochenwaith trwyn"
+  SNORT_POTTERY_SHERD: "darn crochenwaith trwyn"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  SNOW_GOLEM_SPAWN_EGG: "wy geni golem eira"
+  SNOWBALL: "pelen eira"
+  SPECTRAL_ARROW: "saeth sbectrol"
+  SPIDER_EYE: "llygad pryf cop"
+  SPIDER_SPAWN_EGG: "wy geni pryf cop"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  SPLASH_POTION: "diod tasgu"
+  SPLASH_POTION_EFFECT_AWKWARD: "diod tasgu lletchwith"
+  SPLASH_POTION_EFFECT_EMPTY: "diod tasgu anghrefftadwy"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "diod tasgu gwrthsefyll tân"
+  SPLASH_POTION_EFFECT_HARMING: "diod tasgu niweidio"
+  SPLASH_POTION_EFFECT_HEALING: "diod tasgu iachau"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "diod tasgu anweledigaeth"
+  SPLASH_POTION_EFFECT_LEAPING: "diod tasgu neidio"
+  SPLASH_POTION_EFFECT_LEVITATION: "diod tasgu o ymddyrchafael"
+  SPLASH_POTION_EFFECT_LUCK: "diod tasgu lwc"
+  SPLASH_POTION_EFFECT_MUNDANE: "diod tasgu cyffredin"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "diod tasgu golwg nos"
+  SPLASH_POTION_EFFECT_POISON: "diod tasgu gwenwyn"
+  SPLASH_POTION_EFFECT_REGENERATION: "diod tasgu adfywio"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "diod tasgu syrthio araf"
+  SPLASH_POTION_EFFECT_SLOWNESS: "diod tasgu arafiad"
+  SPLASH_POTION_EFFECT_STRENGTH: "diod tasgu cryfhau"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "diod tasgu o gyflymiad"
+  SPLASH_POTION_EFFECT_THICK: "diod tasgu trwchus"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "diod tasgu y meistr crwbanod"
+  SPLASH_POTION_EFFECT_WATER: "potel ddŵr tasgu"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "diod tasgu anadlu dŵr"
+  SPLASH_POTION_EFFECT_WEAKNESS: "diod tasgu o wendid"
+  SPRUCE_BOAT: "cwch pyrwydd"
+  SPRUCE_CHEST_BOAT: "cwch pyrwydd â chist"
+  SPYGLASS: "sbinglas"
+  SQUID_SPAWN_EGG: "wy geni ystifflog"
+  STICK: "ffon"
+  STONE_AXE: "bwyell carreg"
+  STONE_HOE: "hof carreg"
+  STONE_PICKAXE: "caib carreg"
+  STONE_SHOVEL: "rhaw carreg"
+  STONE_SWORD: "cleddyf carreg"
+  STRAY_SPAWN_EGG: "wy geni crwydryn"
+  STRIDER_SPAWN_EGG: "ŵy geni brasgamwr"
+  STRING: "llinyn"
+  SUGAR: "siwgr"
+  SUSPICIOUS_STEW: "cawl amheus"
+  SWEET_BERRIES: "aeron melys"
+  TADPOLE_BUCKET: "bwced o benbwl"
+  TADPOLE_SPAWN_EGG: "wy geni penbwl"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  TIPPED_ARROW: "saeth wedi'i drochi"
+  TIPPED_ARROW_EFFECT_AWKWARD: "saeth wedi'i drochi"
+  TIPPED_ARROW_EFFECT_EMPTY: "saeth wedi'i drochi anghrefftadwy"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "saeth gwrthsefyll tân"
+  TIPPED_ARROW_EFFECT_HARMING: "saeth niweidio"
+  TIPPED_ARROW_EFFECT_HEALING: "saeth iachau"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "saeth anweledigaeth"
+  TIPPED_ARROW_EFFECT_LEAPING: "saeth neidio"
+  TIPPED_ARROW_EFFECT_LEVITATION: "saeth o ymddyrchafael"
+  TIPPED_ARROW_EFFECT_LUCK: "saeth lwc"
+  TIPPED_ARROW_EFFECT_MUNDANE: "saeth wedi'i drochi"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "saeth golwg nos"
+  TIPPED_ARROW_EFFECT_POISON: "saeth gwenwyn"
+  TIPPED_ARROW_EFFECT_REGENERATION: "saeth adfywio"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "saeth syrthio araf"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "saeth arafiad"
+  TIPPED_ARROW_EFFECT_STRENGTH: "saeth cryfhau"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "saeth o gyflymiad"
+  TIPPED_ARROW_EFFECT_THICK: "saeth wedi'i drochi"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "saeth y meistr crwbanod"
+  TIPPED_ARROW_EFFECT_WATER: "saeth tasgu"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "saeth anadlu dŵr"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "saeth o wendid"
+  TNT_MINECART: "cart pwll gyda tnt"
+  TORCHFLOWER_SEEDS: "hadau torsflodyn"
+  TOTEM_OF_UNDYING: "totem anfarwol"
+  TRADER_LLAMA_SPAWN_EGG: "wy geni lama masnachwr"
+  TRIAL_KEY: "allwedd treial"
+  TRIDENT: "tryfer"
+  TROPICAL_FISH: "pysgodyn trofannol"
+  TROPICAL_FISH_BUCKET: "bwced o bysgod trofannol"
+  TROPICAL_FISH_SPAWN_EGG: "wy geni pysgodyn trofannol"
+  TURTLE_HELMET: "cragen crwban"
+  TURTLE_SPAWN_EGG: "wy geni crwban y môr"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  VEX_SPAWN_EGG: "wy geni cythral"
+  VILLAGER_SPAWN_EGG: "wy geni pentrefwr"
+  VINDICATOR_SPAWN_EGG: "wy geni gwas"
+  WANDERING_TRADER_SPAWN_EGG: "wy geni masnachwr crwydrol"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  WARDEN_SPAWN_EGG: "wy geni warden"
+  WARPED_FUNGUS_ON_A_STICK: "ffwng annaearol ar ffon"
+  WATER_BUCKET: "bwced dŵr"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  WHEAT: "gwenith"
+  WHEAT_SEEDS: "hadau gwenith"
+  WHITE_DYE: "llifyn gwyn"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "templed gof"
+  WITCH_SPAWN_EGG: "wy geni gwrach"
+  WITHER_SKELETON_SPAWN_EGG: "wy geni sgerbwd wither"
+  WITHER_SPAWN_EGG: "wy geni wither"
+  WOLF_SPAWN_EGG: "wy geni blaidd"
+  WOODEN_AXE: "bwyell pren"
+  WOODEN_HOE: "hof pren"
+  WOODEN_PICKAXE: "caib pren"
+  WOODEN_SHOVEL: "rhaw pren"
+  WOODEN_SWORD: "cleddyf pren"
+  WRITABLE_BOOK: "llyfr a chwilsen"
+  WRITTEN_BOOK: "llyfr a ysgrifennwyd"
+  YELLOW_DYE: "llifyn melyn"
+  ZOGLIN_SPAWN_EGG: "wy geni zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "wy geni ceffyl sombi"
+  ZOMBIE_SPAWN_EGG: "wy geni sombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "wy geni pentrefwr sombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "wy geni piglin sombi"
+  CHEST: "pan ar y corff:"
+  FEET: "pan ar y traed:"
+  HEAD: "pan ar y pen:"
+  LEGS: "pan ar y coesau:"
+  MAINHAND: "pan yn y prif law:"
+  OFFHAND: "pan yn yr ail law:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

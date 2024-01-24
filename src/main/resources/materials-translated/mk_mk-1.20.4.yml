@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "копче од акација"
+  ACACIA_DOOR: "врата од акација"
+  ACACIA_FENCE: "ограда од акација"
+  ACACIA_FENCE_GATE: "врата за ограда од акација"
+  ACACIA_HANGING_SIGN: "багремов висечки знак"
+  ACACIA_LEAVES: "лисја од акација"
+  ACACIA_LOG: "труп од акација"
+  ACACIA_PLANKS: "даски од акација"
+  ACACIA_PRESSURE_PLATE: "притисна плоча од акација"
+  ACACIA_SAPLING: "фиданка од акација"
+  ACACIA_SIGN: "знак од акација"
+  ACACIA_SLAB: "плоча од акација"
+  ACACIA_STAIRS: "скали од акација"
+  ACACIA_TRAPDOOR: "врата-стапица од акација"
+  ACACIA_WALL_HANGING_SIGN: "висечки знак од багрем"
+  ACACIA_WALL_SIGN: "ѕиден знак од акација"
+  ACACIA_WOOD: "акација"
+  ACTIVATOR_RAIL: "активаторска пруга"
+  AIR: "воздyx"
+  ALLIUM: "алиум"
+  AMETHYST_BLOCK: "блок на аметист"
+  AMETHYST_CLUSTER: "аметист кластер"
+  ANCIENT_DEBRIS: "древни остаци"
+  ANDESITE: "андезит"
+  ANDESITE_SLAB: "андезитна плоча"
+  ANDESITE_STAIRS: "андезитни скали"
+  ANDESITE_WALL: "андезитен ѕид"
+  ANVIL: "наковална"
+  ATTACHED_MELON_STEM: "поврзано стебло од лубеница"
+  ATTACHED_PUMPKIN_STEM: "поврзано стебло од тиква"
+  AZALEA: "азалеа"
+  AZALEA_LEAVES: "азалеа лисја"
+  AZURE_BLUET: "лазурен блует"
+  BAMBOO: "бамбус"
+  BAMBOO_BLOCK: "блок од бамбус"
+  BAMBOO_BUTTON: "бамбусово копче"
+  BAMBOO_DOOR: "бамбусова врата"
+  BAMBOO_FENCE: "бамбусова ограда"
+  BAMBOO_FENCE_GATE: "бамбусова порта"
+  BAMBOO_HANGING_SIGN: "бамбусов висечки знак"
+  BAMBOO_MOSAIC: "бамбусов мозаик"
+  BAMBOO_MOSAIC_SLAB: "плоча од бамбусов мозаик"
+  BAMBOO_MOSAIC_STAIRS: "бамбусови мозаик скали"
+  BAMBOO_PLANKS: "бамбусови штици"
+  BAMBOO_PRESSURE_PLATE: "бамбусова плочка за притисок"
+  BAMBOO_SAPLING: "млад бамбус"
+  BAMBOO_SIGN: "бамбусов знак"
+  BAMBOO_SLAB: "бамбусова плоча"
+  BAMBOO_STAIRS: "бамбусови скали"
+  BAMBOO_TRAPDOOR: "бамбусова стапица"
+  BAMBOO_WALL_HANGING_SIGN: "бамбусов висечки знак"
+  BAMBOO_WALL_SIGN: "бамбусов зиден знак"
+  BANNER_BASE_BLACK: "целосно црно поле"
+  BANNER_BASE_BLUE: "fully blue field"
+  BANNER_BASE_BROWN: "целосно кафеаво поле"
+  BANNER_BASE_CYAN: "целосно цијано поле"
+  BANNER_BASE_GRAY: "целосно сиво поле"
+  BANNER_BASE_GREEN: "целосно зелено поле"
+  BANNER_BASE_LIGHT_BLUE: "целосно светло сино поле"
+  BANNER_BASE_LIGHT_GRAY: "целосно светло сиво поле"
+  BANNER_BASE_LIME: "целосно варово поле"
+  BANNER_BASE_MAGENTA: "целосно поле со магента"
+  BANNER_BASE_ORANGE: "целосно портокалово поле"
+  BANNER_BASE_PINK: "целосно розово поле"
+  BANNER_BASE_PURPLE: "целосно пурпурно поле"
+  BANNER_BASE_RED: "целосно црвено поле"
+  BANNER_BASE_WHITE: "целосно бело поле"
+  BANNER_BASE_YELLOW: "целосно жолто поле"
+  BANNER_BORDER_BLACK: "црна рамка"
+  BANNER_BORDER_BLUE: "сина рамка"
+  BANNER_BORDER_BROWN: "кафеава рамка"
+  BANNER_BORDER_CYAN: "сино-зелена рамка"
+  BANNER_BORDER_GRAY: "сива рамка"
+  BANNER_BORDER_GREEN: "зелена рамка"
+  BANNER_BORDER_LIGHT_BLUE: "светлосина рамка"
+  BANNER_BORDER_LIGHT_GRAY: "светлосива рамка"
+  BANNER_BORDER_LIME: "жолто-зелена рамка"
+  BANNER_BORDER_MAGENTA: "магента рамка"
+  BANNER_BORDER_ORANGE: "портокалова рамка"
+  BANNER_BORDER_PINK: "розова рамка"
+  BANNER_BORDER_PURPLE: "виолетова рамка"
+  BANNER_BORDER_RED: "црвена рамка"
+  BANNER_BORDER_WHITE: "бела рамка"
+  BANNER_BORDER_YELLOW: "жолта рамка"
+  BANNER_BRICKS_BLACK: "црно ѕидано поле"
+  BANNER_BRICKS_BLUE: "сино ѕидано поле"
+  BANNER_BRICKS_BROWN: "кафеаво ѕидано поле"
+  BANNER_BRICKS_CYAN: "сино-зелено ѕидано поле"
+  BANNER_BRICKS_GRAY: "сиво ѕидано поле"
+  BANNER_BRICKS_GREEN: "зелено ѕидано поле"
+  BANNER_BRICKS_LIGHT_BLUE: "светлосино ѕидано поле"
+  BANNER_BRICKS_LIGHT_GRAY: "светлосиво ѕидано поле"
+  BANNER_BRICKS_LIME: "жолто-зелено ѕидано поле"
+  BANNER_BRICKS_MAGENTA: "магента ѕидано поле"
+  BANNER_BRICKS_ORANGE: "портокалово ѕидано поле"
+  BANNER_BRICKS_PINK: "розово ѕидано поле"
+  BANNER_BRICKS_PURPLE: "виолетово ѕидано поле"
+  BANNER_BRICKS_RED: "црвено ѕидано поле"
+  BANNER_BRICKS_WHITE: "бело ѕидано поле"
+  BANNER_BRICKS_YELLOW: "жолто ѕидано поле"
+  BANNER_CIRCLE_BLACK: "црн круг"
+  BANNER_CIRCLE_BLUE: "син круг"
+  BANNER_CIRCLE_BROWN: "кафеав круг"
+  BANNER_CIRCLE_CYAN: "сино-зелен круг"
+  BANNER_CIRCLE_GRAY: "сив круг"
+  BANNER_CIRCLE_GREEN: "зелен круг"
+  BANNER_CIRCLE_LIGHT_BLUE: "светлосин круг"
+  BANNER_CIRCLE_LIGHT_GRAY: "светлосив круг"
+  BANNER_CIRCLE_LIME: "жолто-зелен круг"
+  BANNER_CIRCLE_MAGENTA: "магента круг"
+  BANNER_CIRCLE_ORANGE: "портокалов круг"
+  BANNER_CIRCLE_PINK: "розов круг"
+  BANNER_CIRCLE_PURPLE: "виолетов круг"
+  BANNER_CIRCLE_RED: "црвен круг"
+  BANNER_CIRCLE_WHITE: "бел круг"
+  BANNER_CIRCLE_YELLOW: "жолт круг"
+  BANNER_CREEPER_BLACK: "црна фигура на крипер"
+  BANNER_CREEPER_BLUE: "сина фигура на крипер"
+  BANNER_CREEPER_BROWN: "кафеава фигура на крипер"
+  BANNER_CREEPER_CYAN: "сино-зелена фигура на крипер"
+  BANNER_CREEPER_GRAY: "сива фигура на крипер"
+  BANNER_CREEPER_GREEN: "зелена фигура на крипер"
+  BANNER_CREEPER_LIGHT_BLUE: "светлосина фигура на крипер"
+  BANNER_CREEPER_LIGHT_GRAY: "светлосива фигура на крипер"
+  BANNER_CREEPER_LIME: "жолто-зелена фигура на крипер"
+  BANNER_CREEPER_MAGENTA: "магента фигура на крипер"
+  BANNER_CREEPER_ORANGE: "портокалова фигура на крипер"
+  BANNER_CREEPER_PINK: "розова фигура на крипер"
+  BANNER_CREEPER_PURPLE: "виолетова фигура на крипер"
+  BANNER_CREEPER_RED: "црвена фигура на крипер"
+  BANNER_CREEPER_WHITE: "бела фигура на крипер"
+  BANNER_CREEPER_YELLOW: "жолта фигура на крипер"
+  BANNER_CROSS_BLACK: "црн андреев крст"
+  BANNER_CROSS_BLUE: "син андреев крст"
+  BANNER_CROSS_BROWN: "кафеав андреев крст"
+  BANNER_CROSS_CYAN: "сино-зелен андреев крст"
+  BANNER_CROSS_GRAY: "сив андреев крст"
+  BANNER_CROSS_GREEN: "зелен андреев крст"
+  BANNER_CROSS_LIGHT_BLUE: "светлосин андреев крст"
+  BANNER_CROSS_LIGHT_GRAY: "светлосив андреев крст"
+  BANNER_CROSS_LIME: "жолто-зелен андреев крст"
+  BANNER_CROSS_MAGENTA: "магента андреев крст"
+  BANNER_CROSS_ORANGE: "портокалов андреев крст"
+  BANNER_CROSS_PINK: "розов андреев крст"
+  BANNER_CROSS_PURPLE: "виолетов андреев крст"
+  BANNER_CROSS_RED: "црвен андреев крст"
+  BANNER_CROSS_WHITE: "бел андреев крст"
+  BANNER_CROSS_YELLOW: "жолт андреев крст"
+  BANNER_CURLY_BORDER_BLACK: "црна запчеста рамка"
+  BANNER_CURLY_BORDER_BLUE: "сина запчеста рамка"
+  BANNER_CURLY_BORDER_BROWN: "кафеава запчеста рамка"
+  BANNER_CURLY_BORDER_CYAN: "сино-зелена запчеста рамка"
+  BANNER_CURLY_BORDER_GRAY: "сива запчеста рамка"
+  BANNER_CURLY_BORDER_GREEN: "зелена запчеста рамка"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "светлосина запчеста рамка"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "светлосива запчеста рамка"
+  BANNER_CURLY_BORDER_LIME: "жолто-зелена запчеста рамка"
+  BANNER_CURLY_BORDER_MAGENTA: "магента запчеста рамка"
+  BANNER_CURLY_BORDER_ORANGE: "портокалова запчеста рамка"
+  BANNER_CURLY_BORDER_PINK: "розова запчеста рамка"
+  BANNER_CURLY_BORDER_PURPLE: "виолетова запчеста рамка"
+  BANNER_CURLY_BORDER_RED: "црвена запчеста рамка"
+  BANNER_CURLY_BORDER_WHITE: "бела запчеста рамка"
+  BANNER_CURLY_BORDER_YELLOW: "жолта запчеста рамка"
+  BANNER_DIAGONAL_LEFT_BLACK: "црна горна лева половина"
+  BANNER_DIAGONAL_LEFT_BLUE: "сина горна лева половина"
+  BANNER_DIAGONAL_LEFT_BROWN: "кафеава горна лева половина"
+  BANNER_DIAGONAL_LEFT_CYAN: "сино-зелена горна лева половина"
+  BANNER_DIAGONAL_LEFT_GRAY: "сива горна лева половина"
+  BANNER_DIAGONAL_LEFT_GREEN: "зелена горна лева половина"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "светлосина горна лева половина"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "светлосива горна лева половина"
+  BANNER_DIAGONAL_LEFT_LIME: "жолто-зелена горна лева половина"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "магента горна лева половина"
+  BANNER_DIAGONAL_LEFT_ORANGE: "портокалова горна лева половина"
+  BANNER_DIAGONAL_LEFT_PINK: "розова горна лева половина"
+  BANNER_DIAGONAL_LEFT_PURPLE: "виолетова горна лева половина"
+  BANNER_DIAGONAL_LEFT_RED: "црвена горна лева половина"
+  BANNER_DIAGONAL_LEFT_WHITE: "бела горна лева половина"
+  BANNER_DIAGONAL_LEFT_YELLOW: "жолта горна лева половина"
+  BANNER_DIAGONAL_RIGHT_BLACK: "црна горна десна половина"
+  BANNER_DIAGONAL_RIGHT_BLUE: "сина горна десна половина"
+  BANNER_DIAGONAL_RIGHT_BROWN: "кафеава горна десна половина"
+  BANNER_DIAGONAL_RIGHT_CYAN: "сино-зелена горна десна половина"
+  BANNER_DIAGONAL_RIGHT_GRAY: "сива горна десна половина"
+  BANNER_DIAGONAL_RIGHT_GREEN: "зелена горна десна половина"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "светлосина горна десна половина"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "светлосива горна десна половина"
+  BANNER_DIAGONAL_RIGHT_LIME: "жолто-зелена горна десна половина"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "магента горна десна половина"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "портокалова горна десна половина"
+  BANNER_DIAGONAL_RIGHT_PINK: "розова горна десна половина"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "виолетова горна десна половина"
+  BANNER_DIAGONAL_RIGHT_RED: "црвена горна десна половина"
+  BANNER_DIAGONAL_RIGHT_WHITE: "бела горна десна половина"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "жолта горна десна половина"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "црна долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "сина долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "кафеава долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "сино-зелена долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "сива долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "зелена долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "светлосина долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "светлосива долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "жолто-зелена долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "магента долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "портокалова долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "розова долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "виолетова долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_RED: "црвена долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "бела долна лева половина"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "жолта долна лева половина"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "црна долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "сина долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "кафеава долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "сино-зелена долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "сива долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "зелена долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "светлосина долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "светлосива долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "жолто-зелена долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "магента долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "портокалова долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "розова долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "виолетова долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "црвена долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "бела долна десна половина"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "жолта долна десна половина"
+  BANNER_FLOWER_BLACK: "црна фигура на цвет"
+  BANNER_FLOWER_BLUE: "сина фигура на цвет"
+  BANNER_FLOWER_BROWN: "кафеава фигура на цвет"
+  BANNER_FLOWER_CYAN: "сино-зелена фигура на цвет"
+  BANNER_FLOWER_GRAY: "сива фигура на цвет"
+  BANNER_FLOWER_GREEN: "зелена фигура на цвет"
+  BANNER_FLOWER_LIGHT_BLUE: "светлосина фигура на цвет"
+  BANNER_FLOWER_LIGHT_GRAY: "светлосива фигура на цвет"
+  BANNER_FLOWER_LIME: "жолто-зелена фигура на цвет"
+  BANNER_FLOWER_MAGENTA: "магента фигура на цвет"
+  BANNER_FLOWER_ORANGE: "портокалова фигура на цвет"
+  BANNER_FLOWER_PINK: "розова фигура на цвет"
+  BANNER_FLOWER_PURPLE: "виолетова фигура на цвет"
+  BANNER_FLOWER_RED: "црвена фигура на цвет"
+  BANNER_FLOWER_WHITE: "бела фигура на цвет"
+  BANNER_FLOWER_YELLOW: "жолта фигура на цвет"
+  BANNER_GLOBE_BLACK: "црн глобус"
+  BANNER_GLOBE_BLUE: "син глобус"
+  BANNER_GLOBE_BROWN: "кафеав глобус"
+  BANNER_GLOBE_CYAN: "сино-зелен глобус"
+  BANNER_GLOBE_GRAY: "сив глобус"
+  BANNER_GLOBE_GREEN: "зелен глобус"
+  BANNER_GLOBE_LIGHT_BLUE: "светлосин глобус"
+  BANNER_GLOBE_LIGHT_GRAY: "светлосив глобус"
+  BANNER_GLOBE_LIME: "жолто-зелен глобус"
+  BANNER_GLOBE_MAGENTA: "магента глобус"
+  BANNER_GLOBE_ORANGE: "портокалов глобус"
+  BANNER_GLOBE_PINK: "розов глобус"
+  BANNER_GLOBE_PURPLE: "виолетов глобус"
+  BANNER_GLOBE_RED: "црвен глобус"
+  BANNER_GLOBE_WHITE: "бел глобус"
+  BANNER_GLOBE_YELLOW: "жолт глобус"
+  BANNER_GRADIENT_BLACK: "црн горен градиент"
+  BANNER_GRADIENT_BLUE: "син горен градиент"
+  BANNER_GRADIENT_BROWN: "кафеав горен градиент"
+  BANNER_GRADIENT_CYAN: "сино-зелен горен градиент"
+  BANNER_GRADIENT_GRAY: "сив горен градиент"
+  BANNER_GRADIENT_GREEN: "зелен горен градиент"
+  BANNER_GRADIENT_LIGHT_BLUE: "светлосин горен градиент"
+  BANNER_GRADIENT_LIGHT_GRAY: "светлосив горен градиент"
+  BANNER_GRADIENT_LIME: "жолто-зелен горен градиент"
+  BANNER_GRADIENT_MAGENTA: "магента горен градиент"
+  BANNER_GRADIENT_ORANGE: "портокалов горен градиент"
+  BANNER_GRADIENT_PINK: "розов горен градиент"
+  BANNER_GRADIENT_PURPLE: "виолетов горен градиент"
+  BANNER_GRADIENT_RED: "црвен горен градиент"
+  BANNER_GRADIENT_WHITE: "бел горен градиент"
+  BANNER_GRADIENT_YELLOW: "жолт горен градиент"
+  BANNER_GRADIENT_UP_BLACK: "црн долен градиент"
+  BANNER_GRADIENT_UP_BLUE: "син долен градиент"
+  BANNER_GRADIENT_UP_BROWN: "кафеав долен градиент"
+  BANNER_GRADIENT_UP_CYAN: "сино-зелен долен градиент"
+  BANNER_GRADIENT_UP_GRAY: "сив долен градиент"
+  BANNER_GRADIENT_UP_GREEN: "зелен долен градиент"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "светлосин долен градиент"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "светлосив долен градиент"
+  BANNER_GRADIENT_UP_LIME: "жолто-зелен долен градиент"
+  BANNER_GRADIENT_UP_MAGENTA: "магента долен градиент"
+  BANNER_GRADIENT_UP_ORANGE: "портокалов долен градиент"
+  BANNER_GRADIENT_UP_PINK: "розов долен градиент"
+  BANNER_GRADIENT_UP_PURPLE: "виолетов долен градиент"
+  BANNER_GRADIENT_UP_RED: "црвен долен градиент"
+  BANNER_GRADIENT_UP_WHITE: "бел долен градиент"
+  BANNER_GRADIENT_UP_YELLOW: "жолт долен градиент"
+  BANNER_HALF_HORIZONTAL_BLACK: "црна горна половина"
+  BANNER_HALF_HORIZONTAL_BLUE: "сина горна половина"
+  BANNER_HALF_HORIZONTAL_BROWN: "кафеава горна половина"
+  BANNER_HALF_HORIZONTAL_CYAN: "сино-зелена горна половина"
+  BANNER_HALF_HORIZONTAL_GRAY: "сива горна половина"
+  BANNER_HALF_HORIZONTAL_GREEN: "зелена горна половина"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "светлосина горна половина"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "светлосива горна половина"
+  BANNER_HALF_HORIZONTAL_LIME: "жолто-зелена горна половина"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "магента горна половина"
+  BANNER_HALF_HORIZONTAL_ORANGE: "портокалова горна половина"
+  BANNER_HALF_HORIZONTAL_PINK: "розова горна половина"
+  BANNER_HALF_HORIZONTAL_PURPLE: "виолетова горна половина"
+  BANNER_HALF_HORIZONTAL_RED: "црвена горна половина"
+  BANNER_HALF_HORIZONTAL_WHITE: "бела горна половина"
+  BANNER_HALF_HORIZONTAL_YELLOW: "жолта горна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "црна долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "сина долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "кафеава долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "сино-зелена долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "сива долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "зелена долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "светлосина долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "светлосива долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "жолто-зелена долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "магента долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "портокалова долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "розова долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "виолетова долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "црвена долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "бела долна половина"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "жолта долна половина"
+  BANNER_HALF_VERTICAL_BLACK: "црна лева половина"
+  BANNER_HALF_VERTICAL_BLUE: "сина лева половина"
+  BANNER_HALF_VERTICAL_BROWN: "кафеава лева половина"
+  BANNER_HALF_VERTICAL_CYAN: "сино-зелена лева половина"
+  BANNER_HALF_VERTICAL_GRAY: "сива лева половина"
+  BANNER_HALF_VERTICAL_GREEN: "зелена лева половина"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "светлосина лева половина"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "светлосива лева половина"
+  BANNER_HALF_VERTICAL_LIME: "жолто-зелена лева половина"
+  BANNER_HALF_VERTICAL_MAGENTA: "магента лева половина"
+  BANNER_HALF_VERTICAL_ORANGE: "портокалова лева половина"
+  BANNER_HALF_VERTICAL_PINK: "розова лева половина"
+  BANNER_HALF_VERTICAL_PURPLE: "виолетова лева половина"
+  BANNER_HALF_VERTICAL_RED: "црвена лева половина"
+  BANNER_HALF_VERTICAL_WHITE: "бела лева половина"
+  BANNER_HALF_VERTICAL_YELLOW: "жолта лева половина"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "црна десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "сина десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "кафеава десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "сино-зелена десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "сива десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "зелена десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "светлосина десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "светлосива десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "жолто-зелена десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "магента десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "портокалова десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "розова десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "виолетова десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "црвена десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "бела десна половина"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "жолта десна половина"
+  BANNER_MOJANG_BLACK: "црно лого"
+  BANNER_MOJANG_BLUE: "сино лого"
+  BANNER_MOJANG_BROWN: "кафеаво лого"
+  BANNER_MOJANG_CYAN: "сино-зелено лого"
+  BANNER_MOJANG_GRAY: "сиво лого"
+  BANNER_MOJANG_GREEN: "зелено лого"
+  BANNER_MOJANG_LIGHT_BLUE: "светлосино лого"
+  BANNER_MOJANG_LIGHT_GRAY: "светлосиво лого"
+  BANNER_MOJANG_LIME: "жолто-зелено лого"
+  BANNER_MOJANG_MAGENTA: "магента лого"
+  BANNER_MOJANG_ORANGE: "портокалово лого"
+  BANNER_MOJANG_PINK: "розово лого"
+  BANNER_MOJANG_PURPLE: "виолетово лого"
+  BANNER_MOJANG_RED: "црвено лого"
+  BANNER_MOJANG_WHITE: "бело лого"
+  BANNER_MOJANG_YELLOW: "жолто лого"
+  BANNER_PIGLIN_BLACK: "црна муцка"
+  BANNER_PIGLIN_BLUE: "циња муцка"
+  BANNER_PIGLIN_BROWN: "кафјава муцка"
+  BANNER_PIGLIN_CYAN: "сињо-зелена муцка"
+  BANNER_PIGLIN_GRAY: "сива муцка"
+  BANNER_PIGLIN_GREEN: "зелена муцка"
+  BANNER_PIGLIN_LIGHT_BLUE: "светло сина муцка"
+  BANNER_PIGLIN_LIGHT_GRAY: "светло сива муцка"
+  BANNER_PIGLIN_LIME: "светло-зелена муцка"
+  BANNER_PIGLIN_MAGENTA: "магента муцка"
+  BANNER_PIGLIN_ORANGE: "портокалова муцка"
+  BANNER_PIGLIN_PINK: "розова муцка"
+  BANNER_PIGLIN_PURPLE: "лила муцка"
+  BANNER_PIGLIN_RED: "црвена муцка"
+  BANNER_PIGLIN_WHITE: "бела муцка"
+  BANNER_PIGLIN_YELLOW: "жлта муцка"
+  BANNER_RHOMBUS_BLACK: "црн ромб"
+  BANNER_RHOMBUS_BLUE: "син ромб"
+  BANNER_RHOMBUS_BROWN: "кафеав ромб"
+  BANNER_RHOMBUS_CYAN: "сино-зелен ромб"
+  BANNER_RHOMBUS_GRAY: "сив ромб"
+  BANNER_RHOMBUS_GREEN: "зелен ромб"
+  BANNER_RHOMBUS_LIGHT_BLUE: "светлосин ромб"
+  BANNER_RHOMBUS_LIGHT_GRAY: "светлосив ромб"
+  BANNER_RHOMBUS_LIME: "жолто-зелен ромб"
+  BANNER_RHOMBUS_MAGENTA: "магента ромб"
+  BANNER_RHOMBUS_ORANGE: "портокалов ромб"
+  BANNER_RHOMBUS_PINK: "розов ромб"
+  BANNER_RHOMBUS_PURPLE: "виолетов ромб"
+  BANNER_RHOMBUS_RED: "црвен ромб"
+  BANNER_RHOMBUS_WHITE: "бел ромб"
+  BANNER_RHOMBUS_YELLOW: "жолт ромб"
+  BANNER_SKULL_BLACK: "црна фигура на череп"
+  BANNER_SKULL_BLUE: "сина фигура на череп"
+  BANNER_SKULL_BROWN: "кафеава фигура на череп"
+  BANNER_SKULL_CYAN: "сино-зелена фигура на череп"
+  BANNER_SKULL_GRAY: "сива фигура на череп"
+  BANNER_SKULL_GREEN: "зелена фигура на череп"
+  BANNER_SKULL_LIGHT_BLUE: "светлосина фигура на череп"
+  BANNER_SKULL_LIGHT_GRAY: "светлосива фигура на череп"
+  BANNER_SKULL_LIME: "жолто-зелена фигура на череп"
+  BANNER_SKULL_MAGENTA: "магента фигура на череп"
+  BANNER_SKULL_ORANGE: "портокалова фигура на череп"
+  BANNER_SKULL_PINK: "розова фигура на череп"
+  BANNER_SKULL_PURPLE: "виолетова фигура на череп"
+  BANNER_SKULL_RED: "црвена фигура на череп"
+  BANNER_SKULL_WHITE: "бела фигура на череп"
+  BANNER_SKULL_YELLOW: "жолта фигура на череп"
+  BANNER_SMALL_STRIPES_BLACK: "црни вертикални ленти"
+  BANNER_SMALL_STRIPES_BLUE: "сини вертикални ленти"
+  BANNER_SMALL_STRIPES_BROWN: "кафеави вертикални ленти"
+  BANNER_SMALL_STRIPES_CYAN: "сино-зелени вертикални ленти"
+  BANNER_SMALL_STRIPES_GRAY: "сиви вертикални ленти"
+  BANNER_SMALL_STRIPES_GREEN: "зелени вертикални ленти"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "светлосини вертикални ленти"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "светлосиви вертикални ленти"
+  BANNER_SMALL_STRIPES_LIME: "жолто-зелени вертикални ленти"
+  BANNER_SMALL_STRIPES_MAGENTA: "магента вертикални ленти"
+  BANNER_SMALL_STRIPES_ORANGE: "портокалови вертикални ленти"
+  BANNER_SMALL_STRIPES_PINK: "розови вертикални ленти"
+  BANNER_SMALL_STRIPES_PURPLE: "виолетови вертикални ленти"
+  BANNER_SMALL_STRIPES_RED: "црвени вертикални ленти"
+  BANNER_SMALL_STRIPES_WHITE: "бели вертикални ленти"
+  BANNER_SMALL_STRIPES_YELLOW: "жолти вертикални ленти"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "црн долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "син долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "кафеав долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "сино-зелен долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "сив долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "зелен долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "светлосив долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "светлосив долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "лиметен долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "магента долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "портокалов долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "розов долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "виолетов долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "црвен долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "бел долен лев кантон"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "жолт долен лев кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "црн долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "син долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "кафеав долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "сино-зелен долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "сив долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "зелен долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "светлосив долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "светлосив долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "жолто-зелен долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "магента долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "портокалов долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "розов долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "виолетов долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "црвен долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "бел долен десен кантон"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "жолт долен десен кантон"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "црн горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "син горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "кафеав горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "сино-зелен горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "сив горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "зелен горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "светлосин горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "светлосив горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_LIME: "жолто-зелен горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "магента горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "портокалов горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_PINK: "розов горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "виолетов горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_RED: "црвен горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "бел горен лев кантон"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "жолт горен лев кантон"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "црн горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "син горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "кафеав горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "сино-зелен горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "сив горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "зелен горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "светлосин горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "светлосив горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "жолто-зелен горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "магента горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "портокалов горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "розов горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "виолетов горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_RED: "црвен горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "бел горен десен кантон"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "жолт горен десен кантон"
+  BANNER_STRAIGHT_CROSS_BLACK: "црн крст"
+  BANNER_STRAIGHT_CROSS_BLUE: "син крст"
+  BANNER_STRAIGHT_CROSS_BROWN: "кафеав крст"
+  BANNER_STRAIGHT_CROSS_CYAN: "сино-зелен крст"
+  BANNER_STRAIGHT_CROSS_GRAY: "сив крст"
+  BANNER_STRAIGHT_CROSS_GREEN: "зелен крст"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "светлосин крст"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "светлосив крст"
+  BANNER_STRAIGHT_CROSS_LIME: "жолто-зелен крст"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "магента крст"
+  BANNER_STRAIGHT_CROSS_ORANGE: "портокалов крст"
+  BANNER_STRAIGHT_CROSS_PINK: "розов крст"
+  BANNER_STRAIGHT_CROSS_PURPLE: "виолетов крст"
+  BANNER_STRAIGHT_CROSS_RED: "црвен крст"
+  BANNER_STRAIGHT_CROSS_WHITE: "бел крст"
+  BANNER_STRAIGHT_CROSS_YELLOW: "жолт крст"
+  BANNER_STRIPE_BOTTOM_BLACK: "црн долен дел"
+  BANNER_STRIPE_BOTTOM_BLUE: "син долен дел"
+  BANNER_STRIPE_BOTTOM_BROWN: "кафеав долен дел"
+  BANNER_STRIPE_BOTTOM_CYAN: "сино-зелен долен дел"
+  BANNER_STRIPE_BOTTOM_GRAY: "сив долен дел"
+  BANNER_STRIPE_BOTTOM_GREEN: "зелен долен дел"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "светлосин долен дел"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "светлосив долен дел"
+  BANNER_STRIPE_BOTTOM_LIME: "жолто-зелен долен дел"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "магента долен дел"
+  BANNER_STRIPE_BOTTOM_ORANGE: "портокалов долен дел"
+  BANNER_STRIPE_BOTTOM_PINK: "розов долен дел"
+  BANNER_STRIPE_BOTTOM_PURPLE: "виолетов долен дел"
+  BANNER_STRIPE_BOTTOM_RED: "црвен долен дел"
+  BANNER_STRIPE_BOTTOM_WHITE: "бел долен дел"
+  BANNER_STRIPE_BOTTOM_YELLOW: "жолт долен дел"
+  BANNER_STRIPE_CENTER_BLACK: "црна вертикална лента"
+  BANNER_STRIPE_CENTER_BLUE: "сина вертикална лента"
+  BANNER_STRIPE_CENTER_BROWN: "кафеава вертикална лента"
+  BANNER_STRIPE_CENTER_CYAN: "сино-зелена вертикална лента"
+  BANNER_STRIPE_CENTER_GRAY: "сива вертикална лента"
+  BANNER_STRIPE_CENTER_GREEN: "зелена вертикална лента"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "светлосина вертикална лента"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "светлосива вертикална лента"
+  BANNER_STRIPE_CENTER_LIME: "жолто-зелена вертикална лента"
+  BANNER_STRIPE_CENTER_MAGENTA: "магента вертикална лента"
+  BANNER_STRIPE_CENTER_ORANGE: "портокалова вертикална лента"
+  BANNER_STRIPE_CENTER_PINK: "розова вертикална лента"
+  BANNER_STRIPE_CENTER_PURPLE: "виолетова вертикална лента"
+  BANNER_STRIPE_CENTER_RED: "црвена вертикална лента"
+  BANNER_STRIPE_CENTER_WHITE: "бела вертикална лента"
+  BANNER_STRIPE_CENTER_YELLOW: "жолта вертикална лента"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "црна дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "сина дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "кафеава дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "сино-зелена дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "сива дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "зелена дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "светлосина дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "светлосива дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_LIME: "жолто-зелена дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "магента дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "портокалова дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_PINK: "розова дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "виолетова дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_RED: "црвена дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "бела дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "жолта дијагонала од десно кон лево"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "црна дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "сина дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "кафеава дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "сино-зелена дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "сива дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "зелена дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "светлосина дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "светлосива дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "жолто-зелена дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "магента дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "портокалова дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "розова дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "виолетова дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_RED: "црвена дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "бела дијагонала од лево кон десно"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "жолта дијагонала од лево кон десно"
+  BANNER_STRIPE_LEFT_BLACK: "црна лева лента"
+  BANNER_STRIPE_LEFT_BLUE: "сина лева лента"
+  BANNER_STRIPE_LEFT_BROWN: "кафеава лева лента"
+  BANNER_STRIPE_LEFT_CYAN: "сино-зелена лева лента"
+  BANNER_STRIPE_LEFT_GRAY: "сива лева лента"
+  BANNER_STRIPE_LEFT_GREEN: "зелена лева лента"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "светлосина лева лента"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "светлосива лева лента"
+  BANNER_STRIPE_LEFT_LIME: "жолто-зелена лева лента"
+  BANNER_STRIPE_LEFT_MAGENTA: "магента лева лента"
+  BANNER_STRIPE_LEFT_ORANGE: "портокалова лева лента"
+  BANNER_STRIPE_LEFT_PINK: "розова лева лента"
+  BANNER_STRIPE_LEFT_PURPLE: "виолетова лева лента"
+  BANNER_STRIPE_LEFT_RED: "црвена лева лента"
+  BANNER_STRIPE_LEFT_WHITE: "бела лева лента"
+  BANNER_STRIPE_LEFT_YELLOW: "жолта лева лента"
+  BANNER_STRIPE_MIDDLE_BLACK: "црна хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_BLUE: "сина хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_BROWN: "кафеава хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_CYAN: "сино-зелена хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_GRAY: "сива хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_GREEN: "зелена хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "светлосина хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "светлосива хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_LIME: "жолто-зелена хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "магента хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_ORANGE: "портокалова хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_PINK: "розова хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_PURPLE: "виолетова хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_RED: "црвена хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_WHITE: "бела хоризонтална лента"
+  BANNER_STRIPE_MIDDLE_YELLOW: "жолта хоризонтална лента"
+  BANNER_STRIPE_RIGHT_BLACK: "црна десна лента"
+  BANNER_STRIPE_RIGHT_BLUE: "сина десна лента"
+  BANNER_STRIPE_RIGHT_BROWN: "кафеава десна лента"
+  BANNER_STRIPE_RIGHT_CYAN: "сино-зелена десна лента"
+  BANNER_STRIPE_RIGHT_GRAY: "сива десна лента"
+  BANNER_STRIPE_RIGHT_GREEN: "зелена десна лента"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "светлосина десна лента"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "светлосива десна лента"
+  BANNER_STRIPE_RIGHT_LIME: "жолто-зелена десна лента"
+  BANNER_STRIPE_RIGHT_MAGENTA: "магента десна лента"
+  BANNER_STRIPE_RIGHT_ORANGE: "портокалова десна лента"
+  BANNER_STRIPE_RIGHT_PINK: "розова десна лента"
+  BANNER_STRIPE_RIGHT_PURPLE: "виолетова десна лента"
+  BANNER_STRIPE_RIGHT_RED: "црвена десна лента"
+  BANNER_STRIPE_RIGHT_WHITE: "бела десна лента"
+  BANNER_STRIPE_RIGHT_YELLOW: "жолта десна лента"
+  BANNER_STRIPE_TOP_BLACK: "црн горен дел"
+  BANNER_STRIPE_TOP_BLUE: "син горен дел"
+  BANNER_STRIPE_TOP_BROWN: "кафеав горен дел"
+  BANNER_STRIPE_TOP_CYAN: "сино-зелен горен дел"
+  BANNER_STRIPE_TOP_GRAY: "сив горен дел"
+  BANNER_STRIPE_TOP_GREEN: "зелен горен дел"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "светлосин горен дел"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "светлосив горен дел"
+  BANNER_STRIPE_TOP_LIME: "жолто-зелен горен дел"
+  BANNER_STRIPE_TOP_MAGENTA: "магента горен дел"
+  BANNER_STRIPE_TOP_ORANGE: "портокалов горен дел"
+  BANNER_STRIPE_TOP_PINK: "розов горен дел"
+  BANNER_STRIPE_TOP_PURPLE: "виолетов горен дел"
+  BANNER_STRIPE_TOP_RED: "црвен горен дел"
+  BANNER_STRIPE_TOP_WHITE: "бел горен дел"
+  BANNER_STRIPE_TOP_YELLOW: "жолт горен дел"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "црн долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "син долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "кафеав долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "сино-зелен долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "сив долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "зелен долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "светлосин долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "светлосив долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_LIME: "жолто-зелен долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "магента долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "портокалов долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_PINK: "розов долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "виолетов долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_RED: "црвен долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "бел долен триаголник"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "жолт долен триаголник"
+  BANNER_TRIANGLE_TOP_BLACK: "црн горен триаголник"
+  BANNER_TRIANGLE_TOP_BLUE: "син горен триаголник"
+  BANNER_TRIANGLE_TOP_BROWN: "кафеав горен триаголник"
+  BANNER_TRIANGLE_TOP_CYAN: "сино-зелен горен триаголник"
+  BANNER_TRIANGLE_TOP_GRAY: "сив горен триаголник"
+  BANNER_TRIANGLE_TOP_GREEN: "зелен горен триаголник"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "светлосин горен триаголник"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "светлосив горен триаголник"
+  BANNER_TRIANGLE_TOP_LIME: "жолто-зелен горен триаголник"
+  BANNER_TRIANGLE_TOP_MAGENTA: "магента горен триаголник"
+  BANNER_TRIANGLE_TOP_ORANGE: "портокалов горен триаголник"
+  BANNER_TRIANGLE_TOP_PINK: "розов горен триаголник"
+  BANNER_TRIANGLE_TOP_PURPLE: "виолетов горен триаголник"
+  BANNER_TRIANGLE_TOP_RED: "црвен горен триаголник"
+  BANNER_TRIANGLE_TOP_WHITE: "бел горен триаголник"
+  BANNER_TRIANGLE_TOP_YELLOW: "жолт горен триаголник"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "црни долни запци"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "сини долни запци"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "кафеави долни запци"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "сино-зелени долни запци"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "сиви долни запци"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "зелени долни запци"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "светлосини долни запци"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "светлосиви долни запци"
+  BANNER_TRIANGLES_BOTTOM_LIME: "жолто-зелени долни запци"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "магента долни запци"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "портокалови долни запци"
+  BANNER_TRIANGLES_BOTTOM_PINK: "розови долни запци"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "виолетови долни запци"
+  BANNER_TRIANGLES_BOTTOM_RED: "црвени долни запци"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "бели долни запци"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "жолти долни запци"
+  BANNER_TRIANGLES_TOP_BLACK: "црни горни запци"
+  BANNER_TRIANGLES_TOP_BLUE: "сини горни запци"
+  BANNER_TRIANGLES_TOP_BROWN: "кафеави горни запци"
+  BANNER_TRIANGLES_TOP_CYAN: "сино-зелени горни запци"
+  BANNER_TRIANGLES_TOP_GRAY: "сиви горни запци"
+  BANNER_TRIANGLES_TOP_GREEN: "зелени горни запци"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "светлосини горни запци"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "светлосиви горни запци"
+  BANNER_TRIANGLES_TOP_LIME: "жолто-зелени горни запци"
+  BANNER_TRIANGLES_TOP_MAGENTA: "магента горни запци"
+  BANNER_TRIANGLES_TOP_ORANGE: "портокалови горни запци"
+  BANNER_TRIANGLES_TOP_PINK: "розови горни запци"
+  BANNER_TRIANGLES_TOP_PURPLE: "виолетови горни запци"
+  BANNER_TRIANGLES_TOP_RED: "црвени горни запци"
+  BANNER_TRIANGLES_TOP_WHITE: "бели горни запци"
+  BANNER_TRIANGLES_TOP_YELLOW: "жолти горни запци"
+  BARREL: "буре"
+  BARRIER: "бариера"
+  BASALT: "базалт"
+  BEACON: "светилник"
+  BEACON_PRIMARY: "примарна моќ"
+  BEACON_SECONDARY: "секундарна моќ"
+  BED_NO_SLEEP: "можеш само да спиеш кога е вечер или додега грми"
+  BED_NOT_SAFE: "не можеш да одмараш сега; има чудовишта во близина"
+  BED_OBSTRUCTED: "достапот до креветот е попречен"
+  BED_OCCUPIED: "креветот е зафатен"
+  BED_TOO_FAR_AWAY: "не можеш да одмараш сега; креветот е предалеку"
+  BEDROCK: "темел"
+  BEE_NEST: "гнездо на пчели"
+  BEEHIVE: "пчеларник"
+  BEETROOTS: "цвекло"
+  BELL: "ѕвонче"
+  BIG_DRIPLEAF: "голем каплист"
+  BIG_DRIPLEAF_STEM: "голем матични каплист"
+  BIRCH_BUTTON: "копче од бреза"
+  BIRCH_DOOR: "врата од бреза"
+  BIRCH_FENCE: "ограда од бреза"
+  BIRCH_FENCE_GATE: "врата за ограда од бреза"
+  BIRCH_HANGING_SIGN: "брезен висечки знак"
+  BIRCH_LEAVES: "лисја од бреза"
+  BIRCH_LOG: "труп од бреза"
+  BIRCH_PLANKS: "даски од бреза"
+  BIRCH_PRESSURE_PLATE: "притисна плоча од бреза"
+  BIRCH_SAPLING: "фиданка од бреза"
+  BIRCH_SIGN: "знак од бреза"
+  BIRCH_SLAB: "плоча од бреза"
+  BIRCH_STAIRS: "скали од бреза"
+  BIRCH_TRAPDOOR: "врата-стапица од бреза"
+  BIRCH_WALL_HANGING_SIGN: "висечки знак од бреза"
+  BIRCH_WALL_SIGN: "ѕиден знак од бреза"
+  BIRCH_WOOD: "бреза"
+  BLACK_BANNER: "црн банер"
+  BLACK_BED: "црн кревет"
+  BLACK_CANDLE: "црна свеќа"
+  BLACK_CANDLE_CAKE: "торта со црна свеќа"
+  BLACK_CARPET: "црн тепих"
+  BLACK_CONCRETE: "црн бетон"
+  BLACK_CONCRETE_POWDER: "црн бетон во прав"
+  BLACK_GLAZED_TERRACOTTA: "црна глазирана теракота"
+  BLACK_SHULKER_BOX: "црна шулкер кутија"
+  BLACK_STAINED_GLASS: "црно стакло"
+  BLACK_STAINED_GLASS_PANE: "црна стаклена рамка"
+  BLACK_TERRACOTTA: "црна теракота"
+  BLACK_WOOL: "црна волна"
+  BLACKSTONE: "црн камен"
+  BLACKSTONE_SLAB: "плочка од црн камен"
+  BLACKSTONE_STAIRS: "скали од црн камен"
+  BLACKSTONE_WALL: "sид од црн камен"
+  BLAST_FURNACE: "висока печка"
+  BLUE_BANNER: "син банер"
+  BLUE_BED: "син кревет"
+  BLUE_CANDLE: "сина свеќа"
+  BLUE_CANDLE_CAKE: "торта со сина свеќа"
+  BLUE_CARPET: "син тепих"
+  BLUE_CONCRETE: "син бетон"
+  BLUE_CONCRETE_POWDER: "син бетон во прав"
+  BLUE_GLAZED_TERRACOTTA: "сина глазирана теракота"
+  BLUE_ICE: "син мраз"
+  BLUE_ORCHID: "сина орхидеја"
+  BLUE_SHULKER_BOX: "сина шулкер кутија"
+  BLUE_STAINED_GLASS: "сино стакло"
+  BLUE_STAINED_GLASS_PANE: "сина стаклена рамка"
+  BLUE_TERRACOTTA: "сина теракота"
+  BLUE_WOOL: "сина волна"
+  BONE_BLOCK: "блок од коска"
+  BOOKSHELF: "полица за книги"
+  BRAIN_CORAL: "мозочен корал"
+  BRAIN_CORAL_BLOCK: "мозочен корален блок"
+  BRAIN_CORAL_FAN: "мозочна корална лепеза"
+  BRAIN_CORAL_WALL_FAN: "ѕидна мозочна корална лепеза"
+  BREWING_STAND: "штанд за напивки"
+  BRICK_SLAB: "циглена плоча"
+  BRICK_STAIRS: "скали од цигли"
+  BRICK_WALL: "ѕид од цигли"
+  BRICKS: "цигли"
+  BROWN_BANNER: "кафеав банер"
+  BROWN_BED: "кафеав кревет"
+  BROWN_CANDLE: "кафеава свеќа"
+  BROWN_CANDLE_CAKE: "торта со кафена свеќа"
+  BROWN_CARPET: "кафеав тепих"
+  BROWN_CONCRETE: "кафеав бетон"
+  BROWN_CONCRETE_POWDER: "кафеав бетон во прав"
+  BROWN_GLAZED_TERRACOTTA: "кафеава глазирана теракота"
+  BROWN_MUSHROOM: "кафеава печурка"
+  BROWN_MUSHROOM_BLOCK: "блок од кафеава печурка"
+  BROWN_SHULKER_BOX: "кафеава шулкер кутија"
+  BROWN_STAINED_GLASS: "кафеаво стакло"
+  BROWN_STAINED_GLASS_PANE: "кафеава стаклена рамка"
+  BROWN_TERRACOTTA: "кафеава теракота"
+  BROWN_WOOL: "кафеава волна"
+  BUBBLE_COLUMN: "меурчест столб"
+  BUBBLE_CORAL: "меурчест корал"
+  BUBBLE_CORAL_BLOCK: "меурчест корален блок"
+  BUBBLE_CORAL_FAN: "меурчеста корална лепеза"
+  BUBBLE_CORAL_WALL_FAN: "ѕидна меурчеста корална лепеза"
+  BUDDING_AMETHYST: "младиот и надежен аметист"
+  CACTUS: "кактус"
+  CAKE: "торта"
+  CALCITE: "калцит"
+  CALIBRATED_SCULK_SENSOR: "calibrated sculk sensor"
+  CAMPFIRE: "логорски оган"
+  CANDLE: "свеќа"
+  CANDLE_CAKE: "торта со свеќа"
+  CARROTS: "моркови"
+  CARTOGRAPHY_TABLE: "картографска маса"
+  CARVED_PUMPKIN: "врежана тиква"
+  CAULDRON: "котел"
+  CAVE_AIR: "пештерски воздух"
+  CAVE_VINES: "пештерана лоза"
+  CAVE_VINES_PLANT: "пештерска билка"
+  CHAIN: "верижен"
+  CHAIN_COMMAND_BLOCK: "верижен команден блок"
+  CHERRY_BUTTON: "копче од цреша"
+  CHERRY_DOOR: "цреша врата"
+  CHERRY_FENCE: "ограда од цреша"
+  CHERRY_FENCE_GATE: "порта за ограда од цреша"
+  CHERRY_HANGING_SIGN: "знак за виси цреша"
+  CHERRY_LEAVES: "лисја од цреша"
+  CHERRY_LOG: "дневник на цреша"
+  CHERRY_PLANKS: "цреша штици"
+  CHERRY_PRESSURE_PLATE: "плоча под притисок на цреша"
+  CHERRY_SAPLING: "фиданка од цреша"
+  CHERRY_SIGN: "знак цреша"
+  CHERRY_SLAB: "цреша плоча"
+  CHERRY_STAIRS: "цреша скали"
+  CHERRY_TRAPDOOR: "cherry trapdoor"
+  CHERRY_WALL_HANGING_SIGN: "знак за виси ѕид од цреша"
+  CHERRY_WALL_SIGN: "знак за ѕид од цреша"
+  CHERRY_WOOD: "црешово дрво"
+  CHEST: "сандак"
+  CHIPPED_ANVIL: "поткршена наковална"
+  CHISELED_BOOKSHELF: "издлабена полица за книги"
+  CHISELED_COPPER: "chiseled copper"
+  CHISELED_DEEPSLATE: "исклесан шкрилец"
+  CHISELED_NETHER_BRICKS: "изработени пеколски цигли"
+  CHISELED_POLISHED_BLACKSTONE: "изработен размазен црн камен"
+  CHISELED_QUARTZ_BLOCK: "коцка од длетуван кварц"
+  CHISELED_RED_SANDSTONE: "длетуван црвен песочник"
+  CHISELED_SANDSTONE: "длетуван песочник"
+  CHISELED_STONE_BRICKS: "длетувани камени цигли"
+  CHISELED_TUFF: "chiseled tuff"
+  CHISELED_TUFF_BRICKS: "chiseled tuff bricks"
+  CHORUS_FLOWER: "хорус цвет"
+  CHORUS_PLANT: "хорус растение"
+  CLAY: "глина"
+  COAL_BLOCK: "блок од јаглен"
+  COAL_ORE: "јагленова руда"
+  COARSE_DIRT: "груба земја"
+  COBBLED_DEEPSLATE: "калдрмаст шкрилец"
+  COBBLED_DEEPSLATE_SLAB: "плоча од калдрмаст шкрилец"
+  COBBLED_DEEPSLATE_STAIRS: "сакли од калдрмаст шкрилец"
+  COBBLED_DEEPSLATE_WALL: "зид од калдрмаст шкрилец"
+  COBBLESTONE: "калдрма"
+  COBBLESTONE_SLAB: "плоча од калдрма"
+  COBBLESTONE_STAIRS: "скали од калдрма"
+  COBBLESTONE_WALL: "ѕид од калдрма"
+  COBWEB: "пајажина"
+  COCOA: "какао"
+  COMMAND_BLOCK: "команден блок"
+  COMPARATOR: "редстоун споредник"
+  COMPOSTER: "компостер"
+  CONDUIT: "подводна клетка"
+  COPPER_BLOCK: "блок од бакар"
+  COPPER_BULB: "copper bulb"
+  COPPER_DOOR: "copper door"
+  COPPER_GRATE: "copper grate"
+  COPPER_ORE: "бакарна руда"
+  COPPER_TRAPDOOR: "copper trapdoor"
+  CORNFLOWER: "модрика"
+  CRACKED_DEEPSLATE_BRICKS: "пукнати шкрилести цигли"
+  CRACKED_DEEPSLATE_TILES: "пукнати шкрилести плочки"
+  CRACKED_NETHER_BRICKS: "пукнати пеколски цигли"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "пукнати размазени цигли од црн камен"
+  CRACKED_STONE_BRICKS: "напукнати камени цигли"
+  CRAFTER: "crafter"
+  CRAFTING_TABLE: "работна маса"
+  CREEPER_HEAD: "глава од крипер"
+  CREEPER_WALL_HEAD: "ѕидна глава од крипер"
+  CRIMSON_BUTTON: "црвено копче"
+  CRIMSON_DOOR: "црвена врата"
+  CRIMSON_FENCE: "црвена ограда"
+  CRIMSON_FENCE_GATE: "црвена порта"
+  CRIMSON_FUNGUS: "црвен корен"
+  CRIMSON_HANGING_SIGN: "темноцрвен висечки знак"
+  CRIMSON_HYPHAE: "црвени хифи"
+  CRIMSON_NYLIUM: "црвен пеколцелиум"
+  CRIMSON_PLANKS: "црвени даски"
+  CRIMSON_PRESSURE_PLATE: "црвена притисочна плочка"
+  CRIMSON_ROOTS: "црвени корени"
+  CRIMSON_SIGN: "црвен знак"
+  CRIMSON_SLAB: "црвена плочка"
+  CRIMSON_STAIRS: "црвени скали"
+  CRIMSON_STEM: "црвено стебло"
+  CRIMSON_TRAPDOOR: "црвена подна врата"
+  CRIMSON_WALL_HANGING_SIGN: "темноцрвен висечки знак"
+  CRIMSON_WALL_SIGN: "црвен sиден знак"
+  CRYING_OBSIDIAN: "плачлив обцидиан"
+  CUT_COPPER: "сечен бакар"
+  CUT_COPPER_SLAB: "исечена бакарна плоча"
+  CUT_COPPER_STAIRS: "исечени скали од бакар"
+  CUT_RED_SANDSTONE: "сечен црвен песочник"
+  CUT_RED_SANDSTONE_SLAB: "плоча од сечен црвен песочник"
+  CUT_SANDSTONE: "сечен песочник"
+  CUT_SANDSTONE_SLAB: "плоча од сечен песочник"
+  CYAN_BANNER: "сино-зелен банер"
+  CYAN_BED: "сино-зелен кревет"
+  CYAN_CANDLE: "тиркизна свеќа"
+  CYAN_CANDLE_CAKE: "торта со трикизна свеќа"
+  CYAN_CARPET: "сино-зелен тепих"
+  CYAN_CONCRETE: "сино-зелен бетон"
+  CYAN_CONCRETE_POWDER: "сино-зелен бетон во прав"
+  CYAN_GLAZED_TERRACOTTA: "сино-зелена глазирана теракота"
+  CYAN_SHULKER_BOX: "сино-зелена шулкер кутија"
+  CYAN_STAINED_GLASS: "сино-зелено стакло"
+  CYAN_STAINED_GLASS_PANE: "сино-зелена стаклена рамка"
+  CYAN_TERRACOTTA: "сино-зелена теракота"
+  CYAN_WOOL: "сино-зелена волна"
+  DAMAGED_ANVIL: "оштетена наковална"
+  DANDELION: "глуварче"
+  DARK_OAK_BUTTON: "копче од темен даб"
+  DARK_OAK_DOOR: "врата од темен даб"
+  DARK_OAK_FENCE: "ограда од темен даб"
+  DARK_OAK_FENCE_GATE: "врата за ограда од темен даб"
+  DARK_OAK_HANGING_SIGN: "висечки знак од темен даб"
+  DARK_OAK_LEAVES: "лисја од темен даб"
+  DARK_OAK_LOG: "труп од темен даб"
+  DARK_OAK_PLANKS: "даски од темен даб"
+  DARK_OAK_PRESSURE_PLATE: "притисна плоча од темен даб"
+  DARK_OAK_SAPLING: "фиданка од темен даб"
+  DARK_OAK_SIGN: "знак од темен даб"
+  DARK_OAK_SLAB: "плоча од темен даб"
+  DARK_OAK_STAIRS: "скали од темен даб"
+  DARK_OAK_TRAPDOOR: "врата-стапица од темен даб"
+  DARK_OAK_WALL_HANGING_SIGN: "висечки знак од темен даб"
+  DARK_OAK_WALL_SIGN: "ѕиден знак од темен даб"
+  DARK_OAK_WOOD: "темен даб"
+  DARK_PRISMARINE: "темен призмарин"
+  DARK_PRISMARINE_SLAB: "плоча од темен призмарин"
+  DARK_PRISMARINE_STAIRS: "скали од темен призмарин"
+  DAYLIGHT_DETECTOR: "сензор за дневна светлина"
+  DEAD_BRAIN_CORAL: "мртов мозочен корал"
+  DEAD_BRAIN_CORAL_BLOCK: "мртов мозочен корален блок"
+  DEAD_BRAIN_CORAL_FAN: "мртва мозочна корална лепеза"
+  DEAD_BRAIN_CORAL_WALL_FAN: "мртва ѕидна мозочна корална лепеза"
+  DEAD_BUBBLE_CORAL: "мртов меурчест корал"
+  DEAD_BUBBLE_CORAL_BLOCK: "мртов меурчест корален блок"
+  DEAD_BUBBLE_CORAL_FAN: "мртва меурчеста корална лепеза"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "мртва ѕидна меурчеста корална лепеза"
+  DEAD_BUSH: "мртва грмушка"
+  DEAD_FIRE_CORAL: "мртов огнен корал"
+  DEAD_FIRE_CORAL_BLOCK: "мртов огнен корален блок"
+  DEAD_FIRE_CORAL_FAN: "мртва огнена корална лепеза"
+  DEAD_FIRE_CORAL_WALL_FAN: "мртва ѕидна огнена корална лепеза"
+  DEAD_HORN_CORAL: "мртов рожен корал"
+  DEAD_HORN_CORAL_BLOCK: "мртов рожен корален блок"
+  DEAD_HORN_CORAL_FAN: "мртва ѕидна рожна корална лепеза"
+  DEAD_HORN_CORAL_WALL_FAN: "мртва ѕидна рожна корална лепеза"
+  DEAD_TUBE_CORAL: "мртов цевчест корал"
+  DEAD_TUBE_CORAL_BLOCK: "мртов цевчест корален блок"
+  DEAD_TUBE_CORAL_FAN: "мртва цевчеста корална лепеза"
+  DEAD_TUBE_CORAL_WALL_FAN: "мртва ѕидна цевчеста корална лепеза"
+  DECORATED_POT: "украсено тенџере"
+  DEEPSLATE: "шкрилец"
+  DEEPSLATE_BRICK_SLAB: "плоча од шкрлести цигли"
+  DEEPSLATE_BRICK_STAIRS: "скали од шкрлести цигли"
+  DEEPSLATE_BRICK_WALL: "зид од шкрилести цигли"
+  DEEPSLATE_BRICKS: "шкрласти цигли"
+  DEEPSLATE_COAL_ORE: "руда од јаглен со длабоки плочи"
+  DEEPSLATE_COPPER_ORE: "шкрилеста руда бакар"
+  DEEPSLATE_DIAMOND_ORE: "шкрилеста дијамантска руда"
+  DEEPSLATE_EMERALD_ORE: "шкрилеста руда смарагд"
+  DEEPSLATE_GOLD_ORE: "шкрилеста златна руда"
+  DEEPSLATE_IRON_ORE: "шкрилеста железна руда"
+  DEEPSLATE_LAPIS_ORE: "шкрилеста руда од лапис лазули"
+  DEEPSLATE_REDSTONE_ORE: "шкрилеста редстоун руда"
+  DEEPSLATE_TILE_SLAB: "плоча од шкрилести плочки"
+  DEEPSLATE_TILE_STAIRS: "скали од шкрилести плочки"
+  DEEPSLATE_TILE_WALL: "зид од шкрилести плочки"
+  DEEPSLATE_TILES: "шкрлести плочки"
+  DETECTOR_RAIL: "детектирачка пруга"
+  DIAMOND_BLOCK: "блок од дијамант"
+  DIAMOND_ORE: "дијамантска руда"
+  DIORITE: "диорит"
+  DIORITE_SLAB: "диоритна плоча"
+  DIORITE_STAIRS: "диоритни скали"
+  DIORITE_WALL: "диоритен ѕид"
+  DIRT: "земја"
+  DIRT_PATH: "патека од земја"
+  DISPENSER: "раздавач"
+  DRAGON_EGG: "змејско јајце"
+  DRAGON_HEAD: "глава од змеј"
+  DRAGON_WALL_HEAD: "ѕидна глава од змеј"
+  DRIED_KELP_BLOCK: "блок од исушена алга"
+  DRIPSTONE_BLOCK: "дрипстоун блок"
+  DROPPER: "исфрлувач"
+  EMERALD_BLOCK: "блок од смарагд"
+  EMERALD_ORE: "смарагдна руда"
+  ENCHANTING_TABLE: "маса за маѓепсување"
+  END_GATEWAY: "енд портал"
+  END_PORTAL: "енд портал"
+  END_PORTAL_FRAME: "рамка за енд портал"
+  END_ROD: "енд прачка"
+  END_STONE: "енд камен"
+  END_STONE_BRICK_SLAB: "плоча од енд камени цигли"
+  END_STONE_BRICK_STAIRS: "скали од енд цигли"
+  END_STONE_BRICK_WALL: "ѕид од енд камени цигли"
+  END_STONE_BRICKS: "цигли од енд камен"
+  ENDER_CHEST: "ендер сандак"
+  EXPOSED_CHISELED_COPPER: "exposed chiseled copper"
+  EXPOSED_COPPER: "изложен бакар"
+  EXPOSED_COPPER_BULB: "exposed copper bulb"
+  EXPOSED_COPPER_DOOR: "exposed copper door"
+  EXPOSED_COPPER_GRATE: "exposed copper grate"
+  EXPOSED_COPPER_TRAPDOOR: "exposed copper trapdoor"
+  EXPOSED_CUT_COPPER: "изложен исечен бакар"
+  EXPOSED_CUT_COPPER_SLAB: "изложена исечена бакарна плоча"
+  EXPOSED_CUT_COPPER_STAIRS: "изложени исечени бакарни скали"
+  FARMLAND: "обработлива земја"
+  FERN: "папрат"
+  FIRE: "оган"
+  FIRE_CORAL: "огнен корал"
+  FIRE_CORAL_BLOCK: "огнен корален блок"
+  FIRE_CORAL_FAN: "огнена корална лепеза"
+  FIRE_CORAL_WALL_FAN: "ѕидна огнена корална лепеза"
+  FLETCHING_TABLE: "маса за изработка на стрели"
+  FLOWER_POT: "саксија"
+  FLOWERING_AZALEA: "цветни azalea"
+  FLOWERING_AZALEA_LEAVES: "цветни лисја од азалеа"
+  FROGSPAWN: "жаба мрест"
+  FROSTED_ICE: "замрзнат лед"
+  FURNACE: "печка"
+  GILDED_BLACKSTONE: "златен црн камен"
+  GLASS: "стакло"
+  GLASS_PANE: "стаклена рамка"
+  GLOW_LICHEN: "сјај лишаи"
+  GLOWSTONE: "светлосен камен"
+  GOLD_BLOCK: "блок од злато"
+  GOLD_ORE: "златна руда"
+  GRANITE: "гранит"
+  GRANITE_SLAB: "гранитна плоча"
+  GRANITE_STAIRS: "гранитни скали"
+  GRANITE_WALL: "гранитен ѕид"
+  GRASS: "трева"
+  GRASS_BLOCK: "блок од трева"
+  GRAVEL: "чакал"
+  GRAY_BANNER: "сив банер"
+  GRAY_BED: "сив кревет"
+  GRAY_CANDLE: "сива свеќа"
+  GRAY_CANDLE_CAKE: "торта со сива свеќа"
+  GRAY_CARPET: "сив тепих"
+  GRAY_CONCRETE: "сив бетон"
+  GRAY_CONCRETE_POWDER: "сив бетон во прав"
+  GRAY_GLAZED_TERRACOTTA: "сива глазирана теракота"
+  GRAY_SHULKER_BOX: "сива шулкер кутија"
+  GRAY_STAINED_GLASS: "сиво стакло"
+  GRAY_STAINED_GLASS_PANE: "сива стаклена рамка"
+  GRAY_TERRACOTTA: "сива теракота"
+  GRAY_WOOL: "сива волна"
+  GREEN_BANNER: "зелен банер"
+  GREEN_BED: "зелен кревет"
+  GREEN_CANDLE: "зелена свеќа"
+  GREEN_CANDLE_CAKE: "торта со зелена свеќа"
+  GREEN_CARPET: "зелен тепих"
+  GREEN_CONCRETE: "зелен бетон"
+  GREEN_CONCRETE_POWDER: "зелен бетон во прав"
+  GREEN_GLAZED_TERRACOTTA: "зелена глазирана теракота"
+  GREEN_SHULKER_BOX: "зелена шулкер кутија"
+  GREEN_STAINED_GLASS: "зелено стакло"
+  GREEN_STAINED_GLASS_PANE: "зелена стаклена рамка"
+  GREEN_TERRACOTTA: "зелена теракота"
+  GREEN_WOOL: "зелена волна"
+  GRINDSTONE: "камен за острење"
+  HANGING_ROOTS: "висни корени"
+  HAY_BLOCK: "бала сено"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "тешкотежинска притисна плоча"
+  HONEY_BLOCK: "меден блок"
+  HONEYCOMB_BLOCK: "саќена коцка"
+  HOPPER: "собирач"
+  HORN_CORAL: "рожен корал"
+  HORN_CORAL_BLOCK: "рожен корален блок"
+  HORN_CORAL_FAN: "рожна корална лепеза"
+  HORN_CORAL_WALL_FAN: "ѕидна рожна корална лепеза"
+  ICE: "мраз"
+  INFESTED_CHISELED_STONE_BRICKS: "заразени длетувани камени цигли"
+  INFESTED_COBBLESTONE: "заразена калдрма"
+  INFESTED_CRACKED_STONE_BRICKS: "заразени напукнати камени цигли"
+  INFESTED_DEEPSLATE: "заразен шкрилец"
+  INFESTED_MOSSY_STONE_BRICKS: "заразени мовливи камени цигли"
+  INFESTED_STONE: "заразен камен"
+  INFESTED_STONE_BRICKS: "заразени камени цигли"
+  IRON_BARS: "железни решетки"
+  IRON_BLOCK: "блок од железо"
+  IRON_DOOR: "железна врата"
+  IRON_ORE: "железна руда"
+  IRON_TRAPDOOR: "железна врата-стапица"
+  JACK_O_LANTERN: "тиквен фенер"
+  JIGSAW: "сложувалка"
+  JUKEBOX: "џубокс"
+  JUNGLE_BUTTON: "копче од џунглиско дрво"
+  JUNGLE_DOOR: "врата од џунглиско дрво"
+  JUNGLE_FENCE: "ограда од џунглиско дрво"
+  JUNGLE_FENCE_GATE: "врата за ограда од џунглиско дрво"
+  JUNGLE_HANGING_SIGN: "јунглев висечки знак"
+  JUNGLE_LEAVES: "лисја од џунглиско дрво"
+  JUNGLE_LOG: "труп од џунглиско дрво"
+  JUNGLE_PLANKS: "даски од џунглиско дрво"
+  JUNGLE_PRESSURE_PLATE: "притисна плоча од џунглиско дрво"
+  JUNGLE_SAPLING: "фиданка од џунглиско дрво"
+  JUNGLE_SIGN: "знак од џунглиско дрво"
+  JUNGLE_SLAB: "плоча од џунглиско дрво"
+  JUNGLE_STAIRS: "скали од џунглиско дрво"
+  JUNGLE_TRAPDOOR: "врата-стапица од џунглиско дрво"
+  JUNGLE_WALL_HANGING_SIGN: "јунглев визечки знак"
+  JUNGLE_WALL_SIGN: "ѕиден знак од џунглиско дрво"
+  JUNGLE_WOOD: "џунглиско дрво"
+  KELP: "алга"
+  KELP_PLANT: "алга растение"
+  LADDER: "скала"
+  LANTERN: "фенер"
+  LAPIS_BLOCK: "блок од лапис лазули"
+  LAPIS_ORE: "лазурна руда"
+  LARGE_AMETHYST_BUD: "големи пупки од аметист"
+  LARGE_FERN: "голем папрат"
+  LAVA: "лава"
+  LAVA_CAULDRON: "казан со лава"
+  LECTERN: "наслон за читање"
+  LEVER: "рачка"
+  LIGHT: "светлина"
+  LIGHT_BLUE_BANNER: "светлосин банер"
+  LIGHT_BLUE_BED: "светлосин кревет"
+  LIGHT_BLUE_CANDLE: "светло сина свеќа"
+  LIGHT_BLUE_CANDLE_CAKE: "торта со светло сина свеќа"
+  LIGHT_BLUE_CARPET: "светлосин тепих"
+  LIGHT_BLUE_CONCRETE: "светлосин бетон"
+  LIGHT_BLUE_CONCRETE_POWDER: "светлосин бетон во прав"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "светлосина глазирана теракота"
+  LIGHT_BLUE_SHULKER_BOX: "светлосина шулкер кутија"
+  LIGHT_BLUE_STAINED_GLASS: "светлосино стакло"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "светлосина стаклена рамка"
+  LIGHT_BLUE_TERRACOTTA: "светлосина теракота"
+  LIGHT_BLUE_WOOL: "светлосина волна"
+  LIGHT_GRAY_BANNER: "светлосив банер"
+  LIGHT_GRAY_BED: "светлосив кревет"
+  LIGHT_GRAY_CANDLE: "светло сива свеќа"
+  LIGHT_GRAY_CANDLE_CAKE: "торта со светло сива свеќа"
+  LIGHT_GRAY_CARPET: "светлосив тепих"
+  LIGHT_GRAY_CONCRETE: "светлосив бетон"
+  LIGHT_GRAY_CONCRETE_POWDER: "светлосив бетон во прав"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "светлосина глазирана теракота"
+  LIGHT_GRAY_SHULKER_BOX: "светлосива шулкер кутија"
+  LIGHT_GRAY_STAINED_GLASS: "светлосиво стакло"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "светлосива стаклена рамка"
+  LIGHT_GRAY_TERRACOTTA: "светлосива теракота"
+  LIGHT_GRAY_WOOL: "светлосива волна"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "леснотежинска притисна плоча"
+  LIGHTNING_ROD: "громобран"
+  LILAC: "јоргован"
+  LILY_OF_THE_VALLEY: "момина солза"
+  LILY_PAD: "воден лилјан"
+  LIME_BANNER: "жолто-зелен банер"
+  LIME_BED: "жолто-зелен кревет"
+  LIME_CANDLE: "светло зелена свеќа"
+  LIME_CANDLE_CAKE: "торта со светло зелена свеќа"
+  LIME_CARPET: "жолто-зелен тепих"
+  LIME_CONCRETE: "жолто-зелен бетон"
+  LIME_CONCRETE_POWDER: "жолто-зелен бетон во прав"
+  LIME_GLAZED_TERRACOTTA: "жолто-зелена глазирана теракота"
+  LIME_SHULKER_BOX: "жолто-зелена шулкер кутија"
+  LIME_STAINED_GLASS: "жолто-зелено стакло"
+  LIME_STAINED_GLASS_PANE: "жолто-зелена стаклена рамка"
+  LIME_TERRACOTTA: "жолто-зелена теракота"
+  LIME_WOOL: "жолто-зелена волна"
+  LODESTONE: "магнетен камен"
+  LOOM: "разбој"
+  MAGENTA_BANNER: "магента банер"
+  MAGENTA_BED: "магента кревет"
+  MAGENTA_CANDLE: "магента свеќа"
+  MAGENTA_CANDLE_CAKE: "торта со магента свеќа"
+  MAGENTA_CARPET: "магента тепих"
+  MAGENTA_CONCRETE: "магента бетон"
+  MAGENTA_CONCRETE_POWDER: "магента бетон во прав"
+  MAGENTA_GLAZED_TERRACOTTA: "магента глазирана теракота"
+  MAGENTA_SHULKER_BOX: "магента шулкер кутија"
+  MAGENTA_STAINED_GLASS: "магента стакло"
+  MAGENTA_STAINED_GLASS_PANE: "магента стаклена рамка"
+  MAGENTA_TERRACOTTA: "магента теракота"
+  MAGENTA_WOOL: "магента волна"
+  MAGMA_BLOCK: "блок од магма"
+  MANGROVE_BUTTON: "копче до мангрово дрво"
+  MANGROVE_DOOR: "врата од мангрова"
+  MANGROVE_FENCE: "мангрова ограда"
+  MANGROVE_FENCE_GATE: "мангрова порта"
+  MANGROVE_HANGING_SIGN: "мангров висечки знак"
+  MANGROVE_LEAVES: "лисја од мангрова"
+  MANGROVE_LOG: "труп од мангрова"
+  MANGROVE_PLANKS: "штици од мангрови"
+  MANGROVE_PRESSURE_PLATE: "плоча за притисок од мангрово дрво"
+  MANGROVE_PROPAGULE: "мангрова пропагул"
+  MANGROVE_ROOTS: "корени од мангрова"
+  MANGROVE_SIGN: "знак од мангрово дрво"
+  MANGROVE_SLAB: "плоча од мангрови штици"
+  MANGROVE_STAIRS: "скали од мангрова штица"
+  MANGROVE_TRAPDOOR: "мангрова trapdoor"
+  MANGROVE_WALL_HANGING_SIGN: "висечки знак на зид од мангров"
+  MANGROVE_WALL_SIGN: "ѕиден знак од мангрово дрво"
+  MANGROVE_WOOD: "мангрово дрво"
+  MEDIUM_AMETHYST_BUD: "средна пупка од аметист"
+  MELON: "лубеница"
+  MELON_STEM: "стебло од лубеница"
+  MOSS_BLOCK: "мов блок"
+  MOSS_CARPET: "мов тепих"
+  MOSSY_COBBLESTONE: "мовлива калдрма"
+  MOSSY_COBBLESTONE_SLAB: "плоча од мовлива калдрма"
+  MOSSY_COBBLESTONE_STAIRS: "скали од мовлива калдрма"
+  MOSSY_COBBLESTONE_WALL: "ѕид од мовлива калдрма"
+  MOSSY_STONE_BRICK_SLAB: "плоча од мовливи камени цигли"
+  MOSSY_STONE_BRICK_STAIRS: "скали од мовливи камени цигли"
+  MOSSY_STONE_BRICK_WALL: "ѕид од мовливи камени цигли"
+  MOSSY_STONE_BRICKS: "мовливи камени цигли"
+  MOVING_PISTON: "подвижен клип"
+  MUD: "кал"
+  MUD_BRICK_SLAB: "плоча од кал тули"
+  MUD_BRICK_STAIRS: "скали од кал од тули"
+  MUD_BRICK_WALL: "ѕид од кал од тули"
+  MUD_BRICKS: "цигли од кал"
+  MUDDY_MANGROVE_ROOTS: "калливи корени од мангрова"
+  MUSHROOM_STEM: "стебло од печурка"
+  MYCELIUM: "мицелиум"
+  NETHER_BRICK_FENCE: "ограда од недер цигли"
+  NETHER_BRICK_SLAB: "плоча од недер цигли"
+  NETHER_BRICK_STAIRS: "скали од недер цигли"
+  NETHER_BRICK_WALL: "ѕид од недер цигли"
+  NETHER_BRICKS: "недер цигли"
+  NETHER_GOLD_ORE: "пеколна златна руда"
+  NETHER_PORTAL: "недер портал"
+  NETHER_QUARTZ_ORE: "недер-кварцна руда"
+  NETHER_SPROUTS: "пеколски клици"
+  NETHER_WART: "недер лишај"
+  NETHER_WART_BLOCK: "блок од недер растение"
+  NETHERITE_BLOCK: "коцка од пеколит"
+  NETHERRACK: "недер камен"
+  NOTE_BLOCK: "музички блок"
+  OAK_BUTTON: "копче од даб"
+  OAK_DOOR: "врата од даб"
+  OAK_FENCE: "ограда од даб"
+  OAK_FENCE_GATE: "врата за ограда од даб"
+  OAK_HANGING_SIGN: "дабов бисечки знак"
+  OAK_LEAVES: "лисја од даб"
+  OAK_LOG: "труп од даб"
+  OAK_PLANKS: "даски од даб"
+  OAK_PRESSURE_PLATE: "притисна плоча од даб"
+  OAK_SAPLING: "фиданка од даб"
+  OAK_SIGN: "знак од даб"
+  OAK_SLAB: "плоча од даб"
+  OAK_STAIRS: "скали од даб"
+  OAK_TRAPDOOR: "врата-стапица од даб"
+  OAK_WALL_HANGING_SIGN: "дабов зид висечки знак"
+  OAK_WALL_SIGN: "ѕиден знак од даб"
+  OAK_WOOD: "даб"
+  OBSERVER: "опсерватор"
+  OBSIDIAN: "обсидијан"
+  OCHRE_FROGLIGHT: "окер жаби"
+  OMINOUS_BANNER: "застрашувачки банер"
+  ORANGE_BANNER: "портокалов банер"
+  ORANGE_BED: "портокалов кревет"
+  ORANGE_CANDLE: "портокалова свеќа"
+  ORANGE_CANDLE_CAKE: "торта со портокалова свеќа"
+  ORANGE_CARPET: "портокалов тепих"
+  ORANGE_CONCRETE: "портокалов бетон"
+  ORANGE_CONCRETE_POWDER: "портокалов бетон во прав"
+  ORANGE_GLAZED_TERRACOTTA: "портокалова глазирана теракота"
+  ORANGE_SHULKER_BOX: "портокалова шулкер кутија"
+  ORANGE_STAINED_GLASS: "портокалово стакло"
+  ORANGE_STAINED_GLASS_PANE: "портокалова стаклена рамка"
+  ORANGE_TERRACOTTA: "портокалова теракота"
+  ORANGE_TULIP: "портокалово лале"
+  ORANGE_WOOL: "портокалова волна"
+  OXEYE_DAISY: "маргаритка"
+  OXIDIZED_CHISELED_COPPER: "oxidized chiseled copper"
+  OXIDIZED_COPPER: "оксидиран бакар"
+  OXIDIZED_COPPER_BULB: "oxidized copper bulb"
+  OXIDIZED_COPPER_DOOR: "oxidized copper door"
+  OXIDIZED_COPPER_GRATE: "oxidized copper grate"
+  OXIDIZED_COPPER_TRAPDOOR: "oxidized copper trapdoor"
+  OXIDIZED_CUT_COPPER: "оксидиран бакар за сечење"
+  OXIDIZED_CUT_COPPER_SLAB: "оксидирана плоча од бакар"
+  OXIDIZED_CUT_COPPER_STAIRS: "оксидирани скали од бакар"
+  PACKED_ICE: "тврд лед"
+  PACKED_MUD: "набиена кал"
+  PEARLESCENT_FROGLIGHT: "бисерна жабичка"
+  PEONY: "божур"
+  PETRIFIED_OAK_SLAB: "скаменета плоча од даб"
+  PIGLIN_HEAD: "раководител на пиглин"
+  PIGLIN_WALL_HEAD: "глава на ѕидот на пиглин"
+  PINK_BANNER: "розов банер"
+  PINK_BED: "розов кревет"
+  PINK_CANDLE: "розева свеќа"
+  PINK_CANDLE_CAKE: "торта со розева свеќа"
+  PINK_CARPET: "розов тепих"
+  PINK_CONCRETE: "розов бетон"
+  PINK_CONCRETE_POWDER: "розов бетон во прав"
+  PINK_GLAZED_TERRACOTTA: "розова глазирана теракота"
+  PINK_PETALS: "розеви ливчиња"
+  PINK_SHULKER_BOX: "розова шулкер кутија"
+  PINK_STAINED_GLASS: "розово стакло"
+  PINK_STAINED_GLASS_PANE: "розова стаклена рамка"
+  PINK_TERRACOTTA: "розова теракота"
+  PINK_TULIP: "розово лале"
+  PINK_WOOL: "розова волна"
+  PISTON: "клип"
+  PISTON_HEAD: "клипна глава"
+  PITCHER_CROP: "стомна култура"
+  PITCHER_PLANT: "pitcher plant"
+  PLAYER_HEAD: "глава од играч"
+  PLAYER_HEAD_NAMED: "главата на %s"
+  PLAYER_WALL_HEAD: "ѕидна глава од играч"
+  PODZOL: "подзол"
+  POINTED_DRIPSTONE: "посочен дрипстоун"
+  POLISHED_ANDESITE: "полиран андезит"
+  POLISHED_ANDESITE_SLAB: "полирана андезитна плоча"
+  POLISHED_ANDESITE_STAIRS: "полирани андезитни скали"
+  POLISHED_BASALT: "измазен базалт"
+  POLISHED_BLACKSTONE: "размазен црн камен"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "плочка од размазени цигли од црн камен"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "скали од размазени цигли од црн камен"
+  POLISHED_BLACKSTONE_BRICK_WALL: "sид од размазен црн камен"
+  POLISHED_BLACKSTONE_BRICKS: "размазени цигли од црн камен"
+  POLISHED_BLACKSTONE_BUTTON: "размазено копче од црн камен"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "размазена притисочна плочка од црн камен"
+  POLISHED_BLACKSTONE_SLAB: "плочка од размазен црн камен"
+  POLISHED_BLACKSTONE_STAIRS: "скали од размазен црн камен"
+  POLISHED_BLACKSTONE_WALL: "sид од размазен црн камен"
+  POLISHED_DEEPSLATE: "полиран шкрилец"
+  POLISHED_DEEPSLATE_SLAB: "полиран калдрмаст шкрилец"
+  POLISHED_DEEPSLATE_STAIRS: "скали полирани со шкрилец"
+  POLISHED_DEEPSLATE_WALL: "зид полиран со шкрилец"
+  POLISHED_DIORITE: "полиран диорит"
+  POLISHED_DIORITE_SLAB: "полирана диоритна плоча"
+  POLISHED_DIORITE_STAIRS: "скали од полиран диорит"
+  POLISHED_GRANITE: "полиран гранит"
+  POLISHED_GRANITE_SLAB: "полирана гранитна плоча"
+  POLISHED_GRANITE_STAIRS: "полирани гранитни скали"
+  POLISHED_TUFF: "polished tuff"
+  POLISHED_TUFF_SLAB: "polished tuff slab"
+  POLISHED_TUFF_STAIRS: "polished tuff stairs"
+  POLISHED_TUFF_WALL: "polished tuff wall"
+  POPPY: "афион"
+  POTATOES: "компири"
+  POTTED_ACACIA_SAPLING: "саксија со фиданка од акација"
+  POTTED_ALLIUM: "саксија со алиум"
+  POTTED_AZALEA_BUSH: "кондензирана азалеа"
+  POTTED_AZURE_BLUET: "саксија со лазурен блует"
+  POTTED_BAMBOO: "саксија со бамбус"
+  POTTED_BIRCH_SAPLING: "саксија со фиданка од бреза"
+  POTTED_BLUE_ORCHID: "саксија со сина орхидеја"
+  POTTED_BROWN_MUSHROOM: "саксија со кафеава печурка"
+  POTTED_CACTUS: "саксија со кактус"
+  POTTED_CHERRY_SAPLING: "potted cherry sapling"
+  POTTED_CORNFLOWER: "саксија со модрика"
+  POTTED_CRIMSON_FUNGUS: "црвена печурка во саксија"
+  POTTED_CRIMSON_ROOTS: "црвени корени во саксија"
+  POTTED_DANDELION: "саксија со глуварче"
+  POTTED_DARK_OAK_SAPLING: "саксија со фиданка од темен даб"
+  POTTED_DEAD_BUSH: "саксија со мртва грмушка"
+  POTTED_FERN: "саксија со папрат"
+  POTTED_FLOWERING_AZALEA_BUSH: "кондензирана цветна азалеа"
+  POTTED_JUNGLE_SAPLING: "саксија со фиданка од џунглиско дрво"
+  POTTED_LILY_OF_THE_VALLEY: "саксија со момина солза"
+  POTTED_MANGROVE_PROPAGULE: "кондензиран мангрова пропагул"
+  POTTED_OAK_SAPLING: "саксија со фиданка од даб"
+  POTTED_ORANGE_TULIP: "саксија со портокалово лале"
+  POTTED_OXEYE_DAISY: "саксија со маргаритка"
+  POTTED_PINK_TULIP: "саксија со розово лале"
+  POTTED_POPPY: "саксија со афион"
+  POTTED_RED_MUSHROOM: "саксија со црвена печурка"
+  POTTED_RED_TULIP: "саксија со црвено лале"
+  POTTED_SPRUCE_SAPLING: "саксија со фиданка од смрека"
+  POTTED_TORCHFLOWER: "potted torchflower"
+  POTTED_WARPED_FUNGUS: "луда печурка во саксија"
+  POTTED_WARPED_ROOTS: "луди корени во саксија"
+  POTTED_WHITE_TULIP: "саксија со бело лале"
+  POTTED_WITHER_ROSE: "саксија со видер роза"
+  POWDER_SNOW: "снег во прав"
+  POWDER_SNOW_CAULDRON: "казан со снег"
+  POWERED_RAIL: "погонска пруга"
+  PRISMARINE: "призмарин"
+  PRISMARINE_BRICK_SLAB: "плоча од призмарински цигли"
+  PRISMARINE_BRICK_STAIRS: "скали од призмарински цигли"
+  PRISMARINE_BRICKS: "призмарински цигли"
+  PRISMARINE_SLAB: "плоча од призмарин"
+  PRISMARINE_STAIRS: "скали од призмарин"
+  PRISMARINE_WALL: "ѕид од призмарин"
+  PUMPKIN: "тиква"
+  PUMPKIN_STEM: "стебло од тиква"
+  PURPLE_BANNER: "виолетов банер"
+  PURPLE_BED: "виолетов кревет"
+  PURPLE_CANDLE: "виолетова свеќа"
+  PURPLE_CANDLE_CAKE: "торта со виолетова свеќа"
+  PURPLE_CARPET: "виолетов тепих"
+  PURPLE_CONCRETE: "виолетов бетон"
+  PURPLE_CONCRETE_POWDER: "виолетов бетон во прав"
+  PURPLE_GLAZED_TERRACOTTA: "виолетова глазирана теракота"
+  PURPLE_SHULKER_BOX: "виолетова шулкер кутија"
+  PURPLE_STAINED_GLASS: "виолетово стакло"
+  PURPLE_STAINED_GLASS_PANE: "виолетова стаклена рамка"
+  PURPLE_TERRACOTTA: "виолетова теракота"
+  PURPLE_WOOL: "виолетова волна"
+  PURPUR_BLOCK: "блок од пурпур"
+  PURPUR_PILLAR: "столб од пурпур"
+  PURPUR_SLAB: "плоча од пурпур"
+  PURPUR_STAIRS: "скали од пурпур"
+  QUARTZ_BLOCK: "коцка од кварц"
+  QUARTZ_BRICKS: "цигли од квартц"
+  QUARTZ_PILLAR: "кварцен столб"
+  QUARTZ_SLAB: "кварцна плоча"
+  QUARTZ_STAIRS: "скали од кварц"
+  RAIL: "пруга"
+  RAW_COPPER_BLOCK: "коцка од суров бакар"
+  RAW_GOLD_BLOCK: "блок на сурово злато"
+  RAW_IRON_BLOCK: "коцка од сурово железо"
+  RED_BANNER: "црвен банер"
+  RED_BED: "црвен кревет"
+  RED_CANDLE: "црвена свеќа"
+  RED_CANDLE_CAKE: "торта со црвена свеќа"
+  RED_CARPET: "црвен тепих"
+  RED_CONCRETE: "црвен бетон"
+  RED_CONCRETE_POWDER: "црвен бетон во прав"
+  RED_GLAZED_TERRACOTTA: "црвена глазирана теракота"
+  RED_MUSHROOM: "црвена печурка"
+  RED_MUSHROOM_BLOCK: "блок од црвена печурка"
+  RED_NETHER_BRICK_SLAB: "плоча од црвени недер цигли"
+  RED_NETHER_BRICK_STAIRS: "скали од црвени недер цигли"
+  RED_NETHER_BRICK_WALL: "ѕид од црвени недер цигли"
+  RED_NETHER_BRICKS: "црвени недер цигли"
+  RED_SAND: "црвен песок"
+  RED_SANDSTONE: "црвен песочник"
+  RED_SANDSTONE_SLAB: "плоча од црвен песочник"
+  RED_SANDSTONE_STAIRS: "скали од црвен песочник"
+  RED_SANDSTONE_WALL: "ѕид од црвен песочник"
+  RED_SHULKER_BOX: "црвена шулкер кутија"
+  RED_STAINED_GLASS: "црвено стакло"
+  RED_STAINED_GLASS_PANE: "црвена стаклена рамка"
+  RED_TERRACOTTA: "црвена теракота"
+  RED_TULIP: "црвено лале"
+  RED_WOOL: "црвена волна"
+  REDSTONE_BLOCK: "блок од редстоун"
+  REDSTONE_LAMP: "ламба"
+  REDSTONE_ORE: "редстоун руда"
+  REDSTONE_TORCH: "редстоун факел"
+  REDSTONE_WALL_TORCH: "ѕиден факел од редстоун"
+  REDSTONE_WIRE: "редстоун жица"
+  REINFORCED_DEEPSLATE: "засилен deepslate"
+  REPEATER: "редстоун повторувач"
+  REPEATING_COMMAND_BLOCK: "повторувачки команден блок"
+  RESPAWN_ANCHOR: "преродно сидро"
+  ROOTED_DIRT: "вкоренета кал"
+  ROSE_BUSH: "грмушка со рози"
+  SAND: "песок"
+  SANDSTONE: "песочник"
+  SANDSTONE_SLAB: "плоча од песочник"
+  SANDSTONE_STAIRS: "скали од песочник"
+  SANDSTONE_WALL: "ѕид од песочник"
+  SCAFFOLDING: "скеле"
+  SCULK: "скалк"
+  SCULK_CATALYST: "sculk катализатор"
+  SCULK_SENSOR: "сенкул сензор"
+  SCULK_SHRIEKER: "скулк шрикер"
+  SCULK_VEIN: "скулк вена"
+  SEA_LANTERN: "морски фенер"
+  SEA_PICKLE: "морска краставица"
+  SEAGRASS: "морска трева"
+  SET_SPAWN: "постави точка на оживување"
+  SHORT_GRASS: "short grass"
+  SHROOMLIGHT: "печурко светло"
+  SHULKER_BOX: "шулкер кутија"
+  SKELETON_SKULL: "череп од скелет"
+  SKELETON_WALL_SKULL: "ѕиден череп од скелет"
+  SLIME_BLOCK: "коцка од слуз"
+  SMALL_AMETHYST_BUD: "мали пупки од аметист"
+  SMALL_DRIPLEAF: "мал каплист"
+  SMITHING_TABLE: "маса за ковање"
+  SMOKER: "пушач"
+  SMOOTH_BASALT: "мазен базалт"
+  SMOOTH_QUARTZ: "мазна квартц коцка"
+  SMOOTH_QUARTZ_SLAB: "плоча од мазен кварц"
+  SMOOTH_QUARTZ_STAIRS: "скали од мазен кварц"
+  SMOOTH_RED_SANDSTONE: "мазен црвен песочник"
+  SMOOTH_RED_SANDSTONE_SLAB: "плоча од полиран црвен песочник"
+  SMOOTH_RED_SANDSTONE_STAIRS: "мазни скали од црвен песочник"
+  SMOOTH_SANDSTONE: "мазен песочник"
+  SMOOTH_SANDSTONE_SLAB: "плоча од мазен песочник"
+  SMOOTH_SANDSTONE_STAIRS: "скали од мазен песочник"
+  SMOOTH_STONE: "мазен камен"
+  SMOOTH_STONE_SLAB: "мазна камена плоча"
+  SNIFFER_EGG: "јајце на шмркач"
+  SNOW: "снег"
+  SNOW_BLOCK: "снежен блок"
+  SOUL_CAMPFIRE: "душни логорски огин"
+  SOUL_FIRE: "душни огин"
+  SOUL_LANTERN: "душни фенер"
+  SOUL_SAND: "духовен песок"
+  SOUL_SOIL: "душна земја"
+  SOUL_TORCH: "душен факел"
+  SOUL_WALL_TORCH: "душни sиден факел"
+  SPAWN_NOT_VALID: "немаш свој домашен кревет или наполнето преродно сидро или е уништено"
+  SPAWNER: "создавач на монструми"
+  SPAWNER_DESC1: "interact with spawn egg:"
+  SPAWNER_DESC2: "сетови тип на мобилна телефонија"
+  SPONGE: "сунѓер"
+  SPORE_BLOSSOM: "цвет на спори"
+  SPRUCE_BUTTON: "копче од смрека"
+  SPRUCE_DOOR: "врата од смрека"
+  SPRUCE_FENCE: "ограда од смрека"
+  SPRUCE_FENCE_GATE: "врата за ограда од смрека"
+  SPRUCE_HANGING_SIGN: "смрека висечки знак"
+  SPRUCE_LEAVES: "лисја од смрека"
+  SPRUCE_LOG: "труп од смрека"
+  SPRUCE_PLANKS: "даски од смрека"
+  SPRUCE_PRESSURE_PLATE: "притисна плоча од смрека"
+  SPRUCE_SAPLING: "фиданка од смрека"
+  SPRUCE_SIGN: "знак од смрека"
+  SPRUCE_SLAB: "плоча од смрека"
+  SPRUCE_STAIRS: "скали од смрека"
+  SPRUCE_TRAPDOOR: "врата-стапица од смрека"
+  SPRUCE_WALL_HANGING_SIGN: "висечки знак од смрека"
+  SPRUCE_WALL_SIGN: "ѕиден знак од смрека"
+  SPRUCE_WOOD: "смрека"
+  STICKY_PISTON: "леплив клип"
+  STONE: "камен"
+  STONE_BRICK_SLAB: "плоча од камени цигли"
+  STONE_BRICK_STAIRS: "скали од камени цигли"
+  STONE_BRICK_WALL: "ѕид од камени цигли"
+  STONE_BRICKS: "камени цигли"
+  STONE_BUTTON: "копче од камен"
+  STONE_PRESSURE_PLATE: "камена притисна плоча"
+  STONE_SLAB: "камена плоча"
+  STONE_STAIRS: "камени скали"
+  STONECUTTER: "каменорезец"
+  STRIPPED_ACACIA_LOG: "соголен труп од акација"
+  STRIPPED_ACACIA_WOOD: "соголена акација"
+  STRIPPED_BAMBOO_BLOCK: "block of stripped bamboo"
+  STRIPPED_BIRCH_LOG: "соголен труп од бреза"
+  STRIPPED_BIRCH_WOOD: "соголена бреза"
+  STRIPPED_CHERRY_LOG: "stripped cherry log"
+  STRIPPED_CHERRY_WOOD: "stripped cherry wood"
+  STRIPPED_CRIMSON_HYPHAE: "истрижани црвени хифи"
+  STRIPPED_CRIMSON_STEM: "истрижано црвено стебло"
+  STRIPPED_DARK_OAK_LOG: "соголен труп од темен даб"
+  STRIPPED_DARK_OAK_WOOD: "соголен темен даб"
+  STRIPPED_JUNGLE_LOG: "соголен труп од џунглиско дрво"
+  STRIPPED_JUNGLE_WOOD: "соголено џунглиско дрво"
+  STRIPPED_MANGROVE_LOG: "соголен труп од мангрово дрво"
+  STRIPPED_MANGROVE_WOOD: "соголено мангрово дрво"
+  STRIPPED_OAK_LOG: "соголен труп од даб"
+  STRIPPED_OAK_WOOD: "соголен даб"
+  STRIPPED_SPRUCE_LOG: "соголен труп од смрека"
+  STRIPPED_SPRUCE_WOOD: "соголена смрека"
+  STRIPPED_WARPED_HYPHAE: "истрижани луди хифи"
+  STRIPPED_WARPED_STEM: "истрижано лудо стебло"
+  STRUCTURE_BLOCK: "структурен блок"
+  STRUCTURE_VOID: "структурна празнина"
+  SUGAR_CANE: "шеќерна трска"
+  SUNFLOWER: "сончоглед"
+  SUSPICIOUS_GRAVEL: "сомнитен грагор"
+  SUSPICIOUS_SAND: "suspicious sand"
+  SWEET_BERRY_BUSH: "грмушка со слатки бобинки"
+  TALL_GRASS: "висока трева"
+  TALL_SEAGRASS: "висока морска трева"
+  TARGET: "мета"
+  TERRACOTTA: "теракота"
+  TINTED_GLASS: "затемнето стакло"
+  TNT: "тнт"
+  TORCH: "факел"
+  TORCHFLOWER: "факел цвет"
+  TORCHFLOWER_CROP: "torchflower crop"
+  TRAPPED_CHEST: "сандак-стапица"
+  TRIAL_SPAWNER: "trial spawner"
+  TRIPWIRE: "нагазна жица"
+  TRIPWIRE_HOOK: "кука за нагазна жица"
+  TUBE_CORAL: "цевчест корал"
+  TUBE_CORAL_BLOCK: "цевчест корален блок"
+  TUBE_CORAL_FAN: "цевчеста корална лепеза"
+  TUBE_CORAL_WALL_FAN: "ѕидна цевчеста корална лепеза"
+  TUFF: "туф"
+  TUFF_BRICK_SLAB: "tuff brick slab"
+  TUFF_BRICK_STAIRS: "tuff brick stairs"
+  TUFF_BRICK_WALL: "tuff brick wall"
+  TUFF_BRICKS: "tuff bricks"
+  TUFF_SLAB: "tuff slab"
+  TUFF_STAIRS: "tuff stairs"
+  TUFF_WALL: "tuff wall"
+  TURTLE_EGG: "јајце од желка"
+  TWISTING_VINES: "вртени гранки"
+  TWISTING_VINES_PLANT: "вртени гранки билка"
+  VERDANT_FROGLIGHT: "светло жаби"
+  VINE: "лози"
+  VOID_AIR: "празен воздух"
+  WALL_TORCH: "ѕиден факел"
+  WARPED_BUTTON: "лудо копче"
+  WARPED_DOOR: "луда врата"
+  WARPED_FENCE: "луда ограда"
+  WARPED_FENCE_GATE: "луда порта"
+  WARPED_FUNGUS: "луд корен"
+  WARPED_HANGING_SIGN: "сино-зелен висечки знак"
+  WARPED_HYPHAE: "луди хифи"
+  WARPED_NYLIUM: "луд пеколцелиум"
+  WARPED_PLANKS: "луди билки"
+  WARPED_PRESSURE_PLATE: "луда притисочна плочка"
+  WARPED_ROOTS: "луди корени"
+  WARPED_SIGN: "луд знак"
+  WARPED_SLAB: "луда плочка"
+  WARPED_STAIRS: "луди скали"
+  WARPED_STEM: "искривенo стебло"
+  WARPED_TRAPDOOR: "луда подна врата"
+  WARPED_WALL_HANGING_SIGN: "сино-зелен висечки знак"
+  WARPED_WALL_SIGN: "луди зидни знак"
+  WARPED_WART_BLOCK: "луда бубуљична коцка"
+  WATER: "вода"
+  WATER_CAULDRON: "казан со вода"
+  WAXED_CHISELED_COPPER: "waxed chiseled copper"
+  WAXED_COPPER_BLOCK: "блок бакар обложен со восок"
+  WAXED_COPPER_BULB: "waxed copper bulb"
+  WAXED_COPPER_DOOR: "waxed copper door"
+  WAXED_COPPER_GRATE: "waxed copper grate"
+  WAXED_COPPER_TRAPDOOR: "waxed copper trapdoor"
+  WAXED_CUT_COPPER: "сечен бакар обложен со восок"
+  WAXED_CUT_COPPER_SLAB: "плоча од сечен бакар обложена со восок"
+  WAXED_CUT_COPPER_STAIRS: "скали од сечен бакар обложени со восок"
+  WAXED_EXPOSED_CHISELED_COPPER: "waxed exposed chiseled copper"
+  WAXED_EXPOSED_COPPER: "изложен бакар обложен со восок"
+  WAXED_EXPOSED_COPPER_BULB: "waxed exposed copper bulb"
+  WAXED_EXPOSED_COPPER_DOOR: "waxed exposed copper door"
+  WAXED_EXPOSED_COPPER_GRATE: "waxed exposed copper grate"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "waxed exposed copper trapdoor"
+  WAXED_EXPOSED_CUT_COPPER: "изложен сечен бакар обложен со восок"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "изложена плоча од сечениот бакар обложена со восок"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "изложени скали од сечен бакар обложени со восок"
+  WAXED_OXIDIZED_CHISELED_COPPER: "waxed oxidized chiseled copper"
+  WAXED_OXIDIZED_COPPER: "оксидиран бакар обложен со восок"
+  WAXED_OXIDIZED_COPPER_BULB: "waxed oxidized copper bulb"
+  WAXED_OXIDIZED_COPPER_DOOR: "waxed oxidized copper door"
+  WAXED_OXIDIZED_COPPER_GRATE: "waxed oxidized copper grate"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "waxed oxidized copper trapdoor"
+  WAXED_OXIDIZED_CUT_COPPER: "оксидиран сечен бакар обложен со восок"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "оксидирана плоча од сечен бакар обложена со восок"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "скали од сечен бакар облежени со восок"
+  WAXED_WEATHERED_CHISELED_COPPER: "waxed weathered chiseled copper"
+  WAXED_WEATHERED_COPPER: "застарен бакар обложен со восок"
+  WAXED_WEATHERED_COPPER_BULB: "waxed weathered copper bulb"
+  WAXED_WEATHERED_COPPER_DOOR: "waxed weathered copper door"
+  WAXED_WEATHERED_COPPER_GRATE: "waxed weathered copper grate"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "waxed weathered copper trapdoor"
+  WAXED_WEATHERED_CUT_COPPER: "застарен сечен бакар обложен со восок"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "застарена плоча од сечен бакар обложена со восок"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "застарени скали од сечен бакар обложени со восок"
+  WEATHERED_CHISELED_COPPER: "weathered chiseled copper"
+  WEATHERED_COPPER: "оксидиран бакар"
+  WEATHERED_COPPER_BULB: "weathered copper bulb"
+  WEATHERED_COPPER_DOOR: "weathered copper door"
+  WEATHERED_COPPER_GRATE: "weathered copper grate"
+  WEATHERED_COPPER_TRAPDOOR: "weathered copper trapdoor"
+  WEATHERED_CUT_COPPER: "оксидиран сечен бакар"
+  WEATHERED_CUT_COPPER_SLAB: "оксидирана плоча од сечен бакар"
+  WEATHERED_CUT_COPPER_STAIRS: "оксидирани скали од сечен бакар"
+  WEEPING_VINES: "тажни гранки"
+  WEEPING_VINES_PLANT: "тажни гранки билка"
+  WET_SPONGE: "влажен сунѓер"
+  WHEAT: "пченична култура"
+  WHITE_BANNER: "бел банер"
+  WHITE_BED: "бел кревет"
+  WHITE_CANDLE: "бела свеќа"
+  WHITE_CANDLE_CAKE: "торта со бела свеќа"
+  WHITE_CARPET: "бел тепих"
+  WHITE_CONCRETE: "бел бетон"
+  WHITE_CONCRETE_POWDER: "бел бетон во прав"
+  WHITE_GLAZED_TERRACOTTA: "бела глазирана теракота"
+  WHITE_SHULKER_BOX: "бела шулкер кутија"
+  WHITE_STAINED_GLASS: "бело стакло"
+  WHITE_STAINED_GLASS_PANE: "бела стаклена рамка"
+  WHITE_TERRACOTTA: "бела теракота"
+  WHITE_TULIP: "бело лале"
+  WHITE_WOOL: "бела волна"
+  WITHER_ROSE: "видер роза"
+  WITHER_SKELETON_SKULL: "череп од видер скелет"
+  WITHER_SKELETON_WALL_SKULL: "ѕиден череп од видер скелет"
+  YELLOW_BANNER: "жолт банер"
+  YELLOW_BED: "жолт кревет"
+  YELLOW_CANDLE: "жолта свеќа"
+  YELLOW_CANDLE_CAKE: "торта со жолта свеќа"
+  YELLOW_CARPET: "жолт тепих"
+  YELLOW_CONCRETE: "жолт бетон"
+  YELLOW_CONCRETE_POWDER: "жолт бетон во прав"
+  YELLOW_GLAZED_TERRACOTTA: "жолта глазирана теракота"
+  YELLOW_SHULKER_BOX: "жолта шулкер кутија"
+  YELLOW_STAINED_GLASS: "жолто стакло"
+  YELLOW_STAINED_GLASS_PANE: "жолта стаклена рамка"
+  YELLOW_TERRACOTTA: "жолта теракота"
+  YELLOW_WOOL: "жолта волна"
+  ZOMBIE_HEAD: "глава од зомби"
+  ZOMBIE_WALL_HEAD: "ѕидна глава од зомби"
+  ACACIA_BOAT: "чамец од акација"
+  ACACIA_CHEST_BOAT: "чамец од багрем со ковчег"
+  ALLAY_SPAWN_EGG: "јајце за создавање алеј"
+  AMETHYST_SHARD: "аметист шард"
+  ANGLER_POTTERY_SHARD: "angler pottery shard"
+  ANGLER_POTTERY_SHERD: "angler pottery sherd"
+  APPLE: "јаболко"
+  ARCHER_POTTERY_SHARD: "archer pottery shard"
+  ARCHER_POTTERY_SHERD: "archer pottery sherd"
+  ARMOR_STAND: "држач за оклоп"
+  ARMS_UP_POTTERY_SHARD: "arms up pottery shard"
+  ARMS_UP_POTTERY_SHERD: "arms up pottery sherd"
+  ARROW: "стрела"
+  AXOLOTL_BUCKET: "кофа со аксолотл"
+  AXOLOTL_SPAWN_EGG: "створувач на аксолотл"
+  BAKED_POTATO: "печен компир"
+  BAMBOO_CHEST_RAFT: "бамбyсов сплоф со кофчег"
+  BAMBOO_RAFT: "бамбусов сплав"
+  BAT_SPAWN_EGG: "јајце за создавање лилјак"
+  BEE_SPAWN_EGG: "јајце за создавање пчела"
+  BEEF: "сурово говедско месо"
+  BEETROOT: "цвекло"
+  BEETROOT_SEEDS: "семе од цвекло"
+  BEETROOT_SOUP: "супа од цвекло"
+  BIRCH_BOAT: "чамец од бреза"
+  BIRCH_CHEST_BOAT: "чамец од бреза со ковчег"
+  BLACK_DYE: "црна фарба"
+  BLADE_POTTERY_SHARD: "blade pottery shard"
+  BLADE_POTTERY_SHERD: "blade pottery sherd"
+  BLAZE_POWDER: "пламен прав"
+  BLAZE_ROD: "пламена прачка"
+  BLAZE_SPAWN_EGG: "јајце за создавање пламен"
+  BLUE_DYE: "сина фарба"
+  BONE: "коска"
+  BONE_MEAL: "коскено брашно"
+  BOOK: "книга"
+  BOW: "лак"
+  BOWL: "чинија"
+  BREAD: "леб"
+  BREEZE_SPAWN_EGG: "breeze spawn egg"
+  BREWER_POTTERY_SHARD: "brewer pottery shard"
+  BREWER_POTTERY_SHERD: "brewer pottery sherd"
+  BREWING_STAND: "штанд за подготовка"
+  BRICK: "цигла"
+  BROWN_DYE: "кафеава фарба"
+  BRUSH: "четка"
+  BUCKET: "кофа"
+  BUNDLE: "пакет"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "burn pottery shard"
+  BURN_POTTERY_SHERD: "burn pottery sherd"
+  CAMEL_SPAWN_EGG: "јајце за создавање камили"
+  CARROT: "морков"
+  CARROT_ON_A_STICK: "морков на стап"
+  CAT_SPAWN_EGG: "јајце за создавање мачка"
+  CAVE_SPIDER_SPAWN_EGG: "јајце за создавање пештерски пајак"
+  CHAINMAIL_BOOTS: "верижни чизми"
+  CHAINMAIL_CHESTPLATE: "верижен оклоп"
+  CHAINMAIL_HELMET: "верижен шлем"
+  CHAINMAIL_LEGGINGS: "верижни панталони"
+  CHARCOAL: "ќумур"
+  CHERRY_BOAT: "црешово дрво"
+  CHERRY_CHEST_BOAT: "cherry boat with chest"
+  CHEST_MINECART: "рударска количка со сандак"
+  CHICKEN: "сурова кокошка"
+  CHICKEN_SPAWN_EGG: "јајце за создавање кокошка"
+  CHORUS_FRUIT: "хорус овошје"
+  CLAY_BALL: "глинена топка"
+  CLOCK: "часовник"
+  COAL: "јаглен"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  COCOA_BEANS: "какаови зрна"
+  COD: "суров бакалар"
+  COD_BUCKET: "кофа со бакалар"
+  COD_SPAWN_EGG: "јајце за создавање бакалар"
+  COMMAND_BLOCK_MINECART: "рударска количка со команден блок"
+  COMPASS: "компас"
+  COOKED_BEEF: "бифтек"
+  COOKED_CHICKEN: "печена кокошка"
+  COOKED_COD: "печен бакалар"
+  COOKED_MUTTON: "печено овчо месо"
+  COOKED_PORKCHOP: "печено свинско месо"
+  COOKED_RABBIT: "печен зајак"
+  COOKED_SALMON: "печен лосос"
+  COOKIE: "колаче"
+  COPPER_INGOT: "бакарен калап"
+  COW_SPAWN_EGG: "јајце за создавање крава"
+  CREEPER_BANNER_PATTERN: "шема за банер"
+  CREEPER_BANNER_PATTERN_DESC: "фигура на крипер"
+  CREEPER_SPAWN_EGG: "јајце за создавање крипер"
+  CROSSBOW: "самострел"
+  CROSSBOW_PROJECTILE: "проектил:"
+  CYAN_DYE: "сино-зелена фарба"
+  DANGER_POTTERY_SHARD: "danger pottery shard"
+  DANGER_POTTERY_SHERD: "danger pottery sherd"
+  DARK_OAK_BOAT: "чамец од темен даб"
+  DARK_OAK_CHEST_BOAT: "темен дабов чамец со ковчег"
+  DEBUG_STICK: "стап за откривање грешки"
+  DEBUG_STICK_EMPTY: "%s нема својства"
+  DEBUG_STICK_SELECT: "избрано \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" на %s"
+  DIAMOND: "дијамант"
+  DIAMOND_AXE: "дијамантска секира"
+  DIAMOND_BOOTS: "дијамантски чизми"
+  DIAMOND_CHESTPLATE: "дијамантски оклоп"
+  DIAMOND_HELMET: "дијамантски шлем"
+  DIAMOND_HOE: "дијамантска мотика"
+  DIAMOND_HORSE_ARMOR: "дијамантски коњски оклоп"
+  DIAMOND_LEGGINGS: "дијамантски панталони"
+  DIAMOND_PICKAXE: "дијамантски копач"
+  DIAMOND_SHOVEL: "дијамантска лопата"
+  DIAMOND_SWORD: "дијамантски меч"
+  DISC_FRAGMENT_5: "парче диск"
+  DISC_FRAGMENT_5_DESC: "музички диск - 5"
+  DOLPHIN_SPAWN_EGG: "јајце за создавање делфин"
+  DONKEY_SPAWN_EGG: "јајце за создавање магаре"
+  DRAGON_BREATH: "змејски здив"
+  DRIED_KELP: "исушена алга"
+  DROWNED_SPAWN_EGG: "јајце за создавање удавен"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ECHO_SHARD: "ехо шард"
+  EGG: "јајце"
+  ELDER_GUARDIAN_SPAWN_EGG: "јајце за создавање чувар старешина"
+  ELYTRA: "крила"
+  EMERALD: "смарагд"
+  ENCHANTED_BOOK: "волшебна книга"
+  ENCHANTED_GOLDEN_APPLE: "маѓепсано златно јаболко"
+  END_CRYSTAL: "енд кристал"
+  ENDER_DRAGON_SPAWN_EGG: "јајце за создавање на ендер змеј"
+  ENDER_EYE: "ендер око"
+  ENDER_PEARL: "ендер бисер"
+  ENDERMAN_SPAWN_EGG: "јајце за создавање ендермен"
+  ENDERMITE_SPAWN_EGG: "јајце за создавање ендермит"
+  EVOKER_SPAWN_EGG: "јајце за создавање повикувач"
+  EXPERIENCE_BOTTLE: "волшебно шише"
+  EXPLORER_POTTERY_SHARD: "explorer pottery shard"
+  EXPLORER_POTTERY_SHERD: "explorer pottery sherd"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "шаблон за ковање"
+  FEATHER: "пердув"
+  FERMENTED_SPIDER_EYE: "ферментирано око од пајак"
+  FILLED_MAP: "карта"
+  FIRE_CHARGE: "огнена топка"
+  FIREWORK_ROCKET: "огнометна ракета"
+  FIREWORK_ROCKET_FLIGHT: "траење на летот:"
+  FIREWORK_STAR: "огнометна ѕвезда"
+  FIREWORK_STAR_BLACK: "црна"
+  FIREWORK_STAR_BLUE: "сина"
+  FIREWORK_STAR_BROWN: "кафеава"
+  FIREWORK_STAR_CUSTOM_COLOR: "прилагодена"
+  FIREWORK_STAR_CYAN: "сино-зелена"
+  FIREWORK_STAR_FADE_TO: "бледнее во"
+  FIREWORK_STAR_FLICKER: "треперење"
+  FIREWORK_STAR_GRAY: "сива"
+  FIREWORK_STAR_GREEN: "зелена"
+  FIREWORK_STAR_LIGHT_BLUE: "светлосина"
+  FIREWORK_STAR_LIGHT_GRAY: "светлосива"
+  FIREWORK_STAR_LIME: "жолто-зелена"
+  FIREWORK_STAR_MAGENTA: "магента"
+  FIREWORK_STAR_ORANGE: "портокалова"
+  FIREWORK_STAR_PINK: "розова"
+  FIREWORK_STAR_PURPLE: "виолетова"
+  FIREWORK_STAR_RED: "црвена"
+  FIREWORK_STAR_SHAPE: "непозната форма"
+  FIREWORK_STAR_SHAPE_BURST: "распрснување"
+  FIREWORK_STAR_SHAPE_CREEPER: "облик на крипер"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "голема топка"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "мала топка"
+  FIREWORK_STAR_SHAPE_STAR: "облик на ѕвезда"
+  FIREWORK_STAR_TRAIL: "опашка"
+  FIREWORK_STAR_WHITE: "бела"
+  FIREWORK_STAR_YELLOW: "жолта"
+  FISHING_ROD: "трска за риболов"
+  FLINT: "кремен"
+  FLINT_AND_STEEL: "запалка"
+  FLOWER_BANNER_PATTERN: "шема за банер"
+  FLOWER_BANNER_PATTERN_DESC: "фигура на цвет"
+  FOX_SPAWN_EGG: "јајце за создавање лисица"
+  FRIEND_POTTERY_SHARD: "friend pottery shard"
+  FRIEND_POTTERY_SHERD: "friend pottery sherd"
+  FROG_SPAWN_EGG: "јајце за создавање на жаба"
+  FURNACE_MINECART: "рударска количка со печка"
+  GHAST_SPAWN_EGG: "јајце за создавање гаст"
+  GHAST_TEAR: "солза од гаст"
+  GLASS_BOTTLE: "стаклено шише"
+  GLISTERING_MELON_SLICE: "сјајно парче од лубеница"
+  GLOBE_BANNER_PATTERN: "шема за банер"
+  GLOBE_BANNER_PATTERN_DESC: "глобус"
+  GLOW_BERRIES: "сјајни бобинки"
+  GLOW_INK_SAC: "сјајно мастило сак"
+  GLOW_ITEM_FRAME: "сјајна рамка на предметот"
+  GLOW_SQUID_SPAWN_EGG: "створувач на светли лигњи"
+  GLOWSTONE_DUST: "прашина од светлосен камен"
+  GOAT_HORN: "јарец рог"
+  GOAT_SPAWN_EGG: "створувач на кози"
+  GOLD_INGOT: "златен калап"
+  GOLD_NUGGET: "златна грутка"
+  GOLDEN_APPLE: "златно јаболко"
+  GOLDEN_AXE: "златна секира"
+  GOLDEN_BOOTS: "златни чизми"
+  GOLDEN_CARROT: "златен морков"
+  GOLDEN_CHESTPLATE: "златен оклоп"
+  GOLDEN_HELMET: "златен шлем"
+  GOLDEN_HOE: "златна мотика"
+  GOLDEN_HORSE_ARMOR: "златен коњски оклоп"
+  GOLDEN_LEGGINGS: "златни панталони"
+  GOLDEN_PICKAXE: "златен копач"
+  GOLDEN_SHOVEL: "златна лопата"
+  GOLDEN_SWORD: "златен меч"
+  GRAY_DYE: "сива фарба"
+  GREEN_DYE: "зелена фарба"
+  GUARDIAN_SPAWN_EGG: "јајце за создавање чувар"
+  GUNPOWDER: "барут"
+  HEART_OF_THE_SEA: "срцето на морето"
+  HEART_POTTERY_SHARD: "heart pottery shard"
+  HEART_POTTERY_SHERD: "heart pottery sherd"
+  HEARTBREAK_POTTERY_SHARD: "heartbreak pottery shard"
+  HEARTBREAK_POTTERY_SHERD: "heartbreak pottery sherd"
+  HOGLIN_SPAWN_EGG: "јајце за создавање пеколска свиња"
+  HONEY_BOTTLE: "шише со мед"
+  HONEYCOMB: "саќе"
+  HOPPER_MINECART: "рударска количка со собирач"
+  HORSE_SPAWN_EGG: "јајце за создавање коњ"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "шаблон за ковање"
+  HOWL_POTTERY_SHARD: "howl pottery shard"
+  HOWL_POTTERY_SHERD: "howl pottery sherd"
+  HUSK_SPAWN_EGG: "јајце за создавање пустинско зомби"
+  INK_SAC: "вреќичка со мастило"
+  IRON_AXE: "железна секира"
+  IRON_BOOTS: "железни чизми"
+  IRON_CHESTPLATE: "железен оклоп"
+  IRON_GOLEM_SPAWN_EGG: "јајце за создавање на железен голем"
+  IRON_HELMET: "железен шлем"
+  IRON_HOE: "железна мотика"
+  IRON_HORSE_ARMOR: "железен коњски оклоп"
+  IRON_INGOT: "железен калап"
+  IRON_LEGGINGS: "железни панталони"
+  IRON_NUGGET: "железна грутка"
+  IRON_PICKAXE: "железен копач"
+  IRON_SHOVEL: "железна лопата"
+  IRON_SWORD: "железен меч"
+  ITEM_FRAME: "рамка"
+  JUNGLE_BOAT: "чамец од џунглиско дрво"
+  JUNGLE_CHEST_BOAT: "чамец со ковчег"
+  KNOWLEDGE_BOOK: "книга на знаење"
+  LAPIS_LAZULI: "лазура"
+  LAVA_BUCKET: "кофа со лава"
+  LEAD: "ортома"
+  LEATHER: "кожа"
+  LEATHER_BOOTS: "кожни чизми"
+  LEATHER_CHESTPLATE: "кожна туника"
+  LEATHER_HELMET: "кожна капа"
+  LEATHER_HORSE_ARMOR: "кожен коњски оклоп"
+  LEATHER_LEGGINGS: "кожни панталони"
+  LIGHT_BLUE_DYE: "светлосина фарба"
+  LIGHT_GRAY_DYE: "светлосива фарба"
+  LIME_DYE: "зелена фарба"
+  LINGERING_POTION: "лебдечка напивка"
+  LINGERING_POTION_EFFECT_AWKWARD: "непријатна лебдечка напивка"
+  LINGERING_POTION_EFFECT_EMPTY: "несоздавачка лебдечка напивка"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "лебдечка напивка за отпорност на оган"
+  LINGERING_POTION_EFFECT_HARMING: "лебдечка напивка за повредување"
+  LINGERING_POTION_EFFECT_HEALING: "лебдечка напивка за лекување"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "лебдечка напивка за невидливост"
+  LINGERING_POTION_EFFECT_LEAPING: "лебдечка напивка за скокање"
+  LINGERING_POTION_EFFECT_LEVITATION: "лебдечка напивка за левитација"
+  LINGERING_POTION_EFFECT_LUCK: "лебдечка напивка за среќа"
+  LINGERING_POTION_EFFECT_MUNDANE: "обична лебдечка напивка"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "лебдечка напивка за ноќно гледање"
+  LINGERING_POTION_EFFECT_POISON: "лебдечка напивка за труење"
+  LINGERING_POTION_EFFECT_REGENERATION: "лебдечка напивка за регенерација"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "лебдечка напивка за бавно паѓање"
+  LINGERING_POTION_EFFECT_SLOWNESS: "лебдечка напивка за бавност"
+  LINGERING_POTION_EFFECT_STRENGTH: "лебдечка напивка за сила"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "лебдечка напивка за брзина"
+  LINGERING_POTION_EFFECT_THICK: "густа лебдечка напивка"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "лебдечка напивка на господарот на желките"
+  LINGERING_POTION_EFFECT_WATER: "лебдечко шише со вода"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "лебдечка напивка за дишење под вода"
+  LINGERING_POTION_EFFECT_WEAKNESS: "лебдечка напивка за слабост"
+  LLAMA_SPAWN_EGG: "јајце за создавање лама"
+  LODESTONE_COMPASS: "компас за магнетен камен"
+  MAGENTA_DYE: "магента фарба"
+  MAGMA_CREAM: "магма крем"
+  MAGMA_CUBE_SPAWN_EGG: "јајце за создавање магма коцка"
+  MANGROVE_BOAT: "мангровен чамец"
+  MANGROVE_CHEST_BOAT: "мангров чамец со ковчег"
+  MAP: "празна карта"
+  MELON_SEEDS: "семки од лубеница"
+  MELON_SLICE: "парче лубеница"
+  MILK_BUCKET: "кофа со млеко"
+  MINECART: "рударска количка"
+  MINER_POTTERY_SHARD: "miner pottery shard"
+  MINER_POTTERY_SHERD: "miner pottery sherd"
+  MOJANG_BANNER_PATTERN: "шема за банер"
+  MOJANG_BANNER_PATTERN_DESC: "нешто"
+  MOOSHROOM_SPAWN_EGG: "јајце за создавање муушрум"
+  MOURNER_POTTERY_SHARD: "mourner pottery shard"
+  MOURNER_POTTERY_SHERD: "mourner pottery sherd"
+  MULE_SPAWN_EGG: "јајце за создавање муле"
+  MUSHROOM_STEW: "чорба од печурки"
+  MUSIC_DISC_11: "музички диск"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "музички диск"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "музички диск"
+  MUSIC_DISC_5_DESC: "самуел аберг - 5"
+  MUSIC_DISC_BLOCKS: "музички диск"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "музички диск"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "музички диск"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "музички диск"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "музички диск"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "музички диск"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "музички диск"
+  MUSIC_DISC_OTHERSIDE_DESC: "лена раине - другата страна"
+  MUSIC_DISC_PIGSTEP: "музички диск"
+  MUSIC_DISC_PIGSTEP_DESC: "лена раин - pigstep"
+  MUSIC_DISC_RELIC: "музика диск"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "музички диск"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "музички диск"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "музички диск"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "музички диск"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "сурово овчо месо"
+  NAME_TAG: "ознака за име"
+  NAUTILUS_SHELL: "наутилус школка"
+  NETHER_BRICK: "недер цигла"
+  NETHER_STAR: "недер ѕвезда"
+  NETHERITE_AXE: "пеколитски секира"
+  NETHERITE_BOOTS: "пеколитски чизми"
+  NETHERITE_CHESTPLATE: "пеколитска мајца"
+  NETHERITE_HELMET: "пеколитски шлем"
+  NETHERITE_HOE: "пеколитска мотика"
+  NETHERITE_INGOT: "пеколитски ингот"
+  NETHERITE_LEGGINGS: "пеколитски панталони"
+  NETHERITE_PICKAXE: "пеколитски копач"
+  NETHERITE_SCRAP: "парче пеколит"
+  NETHERITE_SHOVEL: "пеколитска лопатка"
+  NETHERITE_SWORD: "пеколитски меч"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "smithing template"
+  OAK_BOAT: "чамец од даб"
+  OAK_CHEST_BOAT: "дабов чамец со ковчег"
+  OCELOT_SPAWN_EGG: "јајце за создавање оцелот"
+  ORANGE_DYE: "портокалова фарба"
+  PAINTING: "слика"
+  PANDA_SPAWN_EGG: "јајце за создавање панда"
+  PAPER: "хартија"
+  PARROT_SPAWN_EGG: "јајце за создавање папагал"
+  PHANTOM_MEMBRANE: "фантомска мембрана"
+  PHANTOM_SPAWN_EGG: "јајце за создавање фантом"
+  PIG_SPAWN_EGG: "јајце за создавање прасе"
+  PIGLIN_BANNER_PATTERN: "шема за банер"
+  PIGLIN_BANNER_PATTERN_DESC: "муцка"
+  PIGLIN_BRUTE_SPAWN_EGG: "брутален пиглин jајце"
+  PIGLIN_SPAWN_EGG: "јајце за создавање свински човек"
+  PILLAGER_SPAWN_EGG: "јајце за создавање разбојник"
+  PINK_DYE: "розова фарба"
+  PITCHER_POD: "pitcher pod"
+  PLENTY_POTTERY_SHARD: "plenty pottery shard"
+  PLENTY_POTTERY_SHERD: "plenty pottery sherd"
+  POISONOUS_POTATO: "отворен компир"
+  POLAR_BEAR_SPAWN_EGG: "јајце за создавање поларна мечка"
+  POPPED_CHORUS_FRUIT: "пукнато хорус овошје"
+  PORKCHOP: "сурово свинско месо"
+  POTATO: "компир"
+  POTION: "напивка"
+  POTION_EFFECT_AWKWARD: "непријатна напивка"
+  POTION_EFFECT_EMPTY: "несоздавачка напивка"
+  POTION_EFFECT_FIRE_RESISTANCE: "напивка за отпорност на оган"
+  POTION_EFFECT_HARMING: "напивка за повредување"
+  POTION_EFFECT_HEALING: "напивка за лекување"
+  POTION_EFFECT_INVISIBILITY: "напивка за невидливост"
+  POTION_EFFECT_LEAPING: "напивка за скокање"
+  POTION_EFFECT_LEVITATION: "напивка за левитација"
+  POTION_EFFECT_LUCK: "напивка за среќа"
+  POTION_EFFECT_MUNDANE: "обична напивка"
+  POTION_EFFECT_NIGHT_VISION: "напивка за ноќно гледање"
+  POTION_EFFECT_POISON: "напивка за труење"
+  POTION_EFFECT_REGENERATION: "напивка за регенерација"
+  POTION_EFFECT_SLOW_FALLING: "напивка за бавно паѓање"
+  POTION_EFFECT_SLOWNESS: "напивка за бавност"
+  POTION_EFFECT_STRENGTH: "напивка за сила"
+  POTION_EFFECT_SWIFTNESS: "напивка за брзина"
+  POTION_EFFECT_THICK: "густа напивка"
+  POTION_EFFECT_TURTLE_MASTER: "напивка на господарот на желките"
+  POTION_EFFECT_WATER: "шише со вода"
+  POTION_EFFECT_WATER_BREATHING: "напивка за подводно дишење"
+  POTION_EFFECT_WEAKNESS: "напивка за слабост"
+  POTTERY_SHARD_ARCHER: "archer pottery shard"
+  POTTERY_SHARD_ARMS_UP: "arms up pottery shard"
+  POTTERY_SHARD_PRIZE: "prize pottery shard"
+  POTTERY_SHARD_SKULL: "skull pottery shard"
+  POWDER_SNOW_BUCKET: "кофа за снег во прав"
+  PRISMARINE_CRYSTALS: "призмарински кристал"
+  PRISMARINE_SHARD: "призмаринска острица"
+  PRIZE_POTTERY_SHARD: "prize pottery shard"
+  PRIZE_POTTERY_SHERD: "prize pottery sherd"
+  PUFFERFISH: "риба-балон"
+  PUFFERFISH_BUCKET: "кофа со риба-балон"
+  PUFFERFISH_SPAWN_EGG: "јајце за создавање риба-балон"
+  PUMPKIN_PIE: "пита од тиква"
+  PUMPKIN_SEEDS: "семки од тиква"
+  PURPLE_DYE: "виолетова фарба"
+  QUARTZ: "недер кварц"
+  RABBIT: "суров зајак"
+  RABBIT_FOOT: "зајачка нога"
+  RABBIT_HIDE: "зајачка кожа"
+  RABBIT_SPAWN_EGG: "јајце за создавање зајак"
+  RABBIT_STEW: "чорба од зајак"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  RAVAGER_SPAWN_EGG: "јајце за создавање опустошител"
+  RAW_COPPER: "суров бакар"
+  RAW_GOLD: "сурово злато"
+  RAW_IRON: "сурово железо"
+  RECOVERY_COMPASS: "компас за обновување"
+  RED_DYE: "црвена фарба"
+  REDSTONE: "редстоун прашина"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  ROTTEN_FLESH: "скапано месо"
+  SADDLE: "седло"
+  SALMON: "суров лосос"
+  SALMON_BUCKET: "кофа со лосос"
+  SALMON_SPAWN_EGG: "јајце за создавање лосос"
+  SCUTE: "рожен оклоп"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SHEAF_POTTERY_SHARD: "sheaf pottery shard"
+  SHEAF_POTTERY_SHERD: "sheaf pottery sherd"
+  SHEARS: "ножици"
+  SHEEP_SPAWN_EGG: "јајце за создавање овца"
+  SHELTER_POTTERY_SHARD: "shelter pottery shard"
+  SHELTER_POTTERY_SHERD: "shelter pottery sherd"
+  SHIELD: "штит"
+  SHIELD_BLACK: "црн штит"
+  SHIELD_BLUE: "син штит"
+  SHIELD_BROWN: "кафеав штит"
+  SHIELD_CYAN: "сино-зелен штит"
+  SHIELD_GRAY: "сив штит"
+  SHIELD_GREEN: "зелен штит"
+  SHIELD_LIGHT_BLUE: "светлосин штит"
+  SHIELD_LIGHT_GRAY: "светлосив штит"
+  SHIELD_LIME: "лиметен штит"
+  SHIELD_MAGENTA: "магента штит"
+  SHIELD_ORANGE: "портокалов штит"
+  SHIELD_PINK: "розов штит"
+  SHIELD_PURPLE: "виолетов штит"
+  SHIELD_RED: "црвен штит"
+  SHIELD_WHITE: "бел штит"
+  SHIELD_YELLOW: "жолт штит"
+  SHULKER_SHELL: "шулкер школка"
+  SHULKER_SPAWN_EGG: "јајце за создавање шулкер"
+  SIGN: "знак"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SILVERFISH_SPAWN_EGG: "јајце за создавање сребрена риба"
+  SKELETON_HORSE_SPAWN_EGG: "јајце за создавање скелетен коњ"
+  SKELETON_SPAWN_EGG: "јајце за создавање скелет"
+  SKULL_BANNER_PATTERN: "шема за банер"
+  SKULL_BANNER_PATTERN_DESC: "фигура на череп"
+  SKULL_POTTERY_SHARD: "skull pottery shard"
+  SKULL_POTTERY_SHERD: "skull pottery sherd"
+  SLIME_BALL: "слузна топка"
+  SLIME_SPAWN_EGG: "јајце за создавање слуз"
+  SMITHING_TEMPLATE: "smithing template"
+  SMITHING_TEMPLATE_APPLIES_TO: "applies to:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "add ingot or crystal"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "оклоп"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "add a piece of armor"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "ingots & crystals"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredients:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "add netherite ingot"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "diamond equipment"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "add diamond armor weapon or tool"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "netherite ingot"
+  SMITHING_TEMPLATE_UPGRADE: "надградба: "
+  SNIFFER_SPAWN_EGG: "sniffer spawn egg"
+  SNORT_POTTERY_SHARD: "snort pottery shard"
+  SNORT_POTTERY_SHERD: "snort pottery sherd"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SNOW_GOLEM_SPAWN_EGG: "snow golem spawn egg"
+  SNOWBALL: "снежна топка"
+  SPECTRAL_ARROW: "спектрална стрела"
+  SPIDER_EYE: "око од пајак"
+  SPIDER_SPAWN_EGG: "јајце за создавање пајак"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  SPLASH_POTION: "распрскувачки напиток"
+  SPLASH_POTION_EFFECT_AWKWARD: "непријатна распрскувачка напивка"
+  SPLASH_POTION_EFFECT_EMPTY: "несоздавачка распрскувачка напивка"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "распрскувачка напивка за отпорност на оган"
+  SPLASH_POTION_EFFECT_HARMING: "распрскувачка напивка за повредување"
+  SPLASH_POTION_EFFECT_HEALING: "распрскувачка напивка за лекување"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "распрскувачка напивка за невидливост"
+  SPLASH_POTION_EFFECT_LEAPING: "распрскувачка напивка за скокање"
+  SPLASH_POTION_EFFECT_LEVITATION: "распрскувачка напивка за левитација"
+  SPLASH_POTION_EFFECT_LUCK: "распрскувачка напивка за среќа"
+  SPLASH_POTION_EFFECT_MUNDANE: "обична распрскувачка напитва"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "распрскувачка напивка за ноќно гледање"
+  SPLASH_POTION_EFFECT_POISON: "распрскувачка напивка за труење"
+  SPLASH_POTION_EFFECT_REGENERATION: "распрскувачка напивка за регенерација"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "распрскувачка напивка за бавно паѓање"
+  SPLASH_POTION_EFFECT_SLOWNESS: "распрскувачка напивка за бавност"
+  SPLASH_POTION_EFFECT_STRENGTH: "распрскувачка напивка за сила"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "распрскувачка напивка за брзина"
+  SPLASH_POTION_EFFECT_THICK: "густа распрскувачка напивка"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "распрскувачка напивка на господарот на желките"
+  SPLASH_POTION_EFFECT_WATER: "распрскувачко шише со вода"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "распрскувачка напивка за подводно дишење"
+  SPLASH_POTION_EFFECT_WEAKNESS: "распрскувачка напивка за слабост"
+  SPRUCE_BOAT: "чамец од смрека"
+  SPRUCE_CHEST_BOAT: "чамец од смрека со ковчег"
+  SPYGLASS: "шпионско стакло"
+  SQUID_SPAWN_EGG: "јајце за создавање лигња"
+  STICK: "стап"
+  STONE_AXE: "камена секира"
+  STONE_HOE: "камена мотика"
+  STONE_PICKAXE: "камен копач"
+  STONE_SHOVEL: "камена лопата"
+  STONE_SWORD: "камен меч"
+  STRAY_SPAWN_EGG: "јајце за создавање скитник"
+  STRIDER_SPAWN_EGG: "јајце за создавање чекорец"
+  STRING: "конец"
+  SUGAR: "шеќер"
+  SUSPICIOUS_STEW: "сомнителна чорба"
+  SWEET_BERRIES: "слатки бобинки"
+  TADPOLE_BUCKET: "кофа со полноглавци"
+  TADPOLE_SPAWN_EGG: "јајце за создавање полноглавец"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  TIPPED_ARROW: "засилена стрела"
+  TIPPED_ARROW_EFFECT_AWKWARD: "засилена стрела"
+  TIPPED_ARROW_EFFECT_EMPTY: "несоздавачка засилена стрела"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "стрела на отпорноста на оган"
+  TIPPED_ARROW_EFFECT_HARMING: "стрела на повредувањето"
+  TIPPED_ARROW_EFFECT_HEALING: "стрела на лекувањето"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "стрела на невидливоста"
+  TIPPED_ARROW_EFFECT_LEAPING: "стрела на скокањето"
+  TIPPED_ARROW_EFFECT_LEVITATION: "стрела на левитацијата"
+  TIPPED_ARROW_EFFECT_LUCK: "стрела на среќата"
+  TIPPED_ARROW_EFFECT_MUNDANE: "засилена стрела"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "стрела на ноќното гледање"
+  TIPPED_ARROW_EFFECT_POISON: "стрела на отровот"
+  TIPPED_ARROW_EFFECT_REGENERATION: "стрела на регенерацијата"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "стрела на бавното паѓање"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "стрела на бавноста"
+  TIPPED_ARROW_EFFECT_STRENGTH: "стрела на силата"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "стрела на брзината"
+  TIPPED_ARROW_EFFECT_THICK: "засилена стрела"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "стрела на господарот на желките"
+  TIPPED_ARROW_EFFECT_WATER: "стрела на распрскувањето"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "стрела на подводното дишење"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "стрела на слабоста"
+  TNT_MINECART: "рударска количка со тнт"
+  TORCHFLOWER_SEEDS: "torchflower seeds"
+  TOTEM_OF_UNDYING: "тотем на бесмртноста"
+  TRADER_LLAMA_SPAWN_EGG: "јајце за создавање лама на трговец"
+  TRIAL_KEY: "trial key"
+  TRIDENT: "трозабец"
+  TROPICAL_FISH: "тропска риба"
+  TROPICAL_FISH_BUCKET: "кофа со тропска риба"
+  TROPICAL_FISH_SPAWN_EGG: "јајце за создавање тропска риба"
+  TURTLE_HELMET: "желкина школка"
+  TURTLE_SPAWN_EGG: "јајце за создавање желка"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  VEX_SPAWN_EGG: "јајце за создавање напаст"
+  VILLAGER_SPAWN_EGG: "јајце за создавање селанец"
+  VINDICATOR_SPAWN_EGG: "јајце за создавање бранител"
+  WANDERING_TRADER_SPAWN_EGG: "јајце за создавање трговец-скитник"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WARDEN_SPAWN_EGG: "водич за мрестење јајце"
+  WARPED_FUNGUS_ON_A_STICK: "луда печурка на стап"
+  WATER_BUCKET: "кофа со вода"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WHEAT: "пченица"
+  WHEAT_SEEDS: "семе од пченица"
+  WHITE_DYE: "бела фарба"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "smithing template"
+  WITCH_SPAWN_EGG: "јајце за создавање вештерка"
+  WITHER_SKELETON_SPAWN_EGG: "јајце за создавање видер скелет"
+  WITHER_SPAWN_EGG: "wither spawn egg"
+  WOLF_SPAWN_EGG: "јајце за создавање волк"
+  WOODEN_AXE: "дрвена секира"
+  WOODEN_HOE: "дрвена мотика"
+  WOODEN_PICKAXE: "дрвен копач"
+  WOODEN_SHOVEL: "дрвена лопата"
+  WOODEN_SWORD: "дрвен меч"
+  WRITABLE_BOOK: "книга и перо"
+  WRITTEN_BOOK: "напишана книга"
+  YELLOW_DYE: "жолта фарба"
+  ZOGLIN_SPAWN_EGG: "јајце за создавање зомби пеколска свиња"
+  ZOMBIE_HORSE_SPAWN_EGG: "јајце за создавање зомби коњ"
+  ZOMBIE_SPAWN_EGG: "јајце за создавање зомби"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "јајце за создавање на зомби-селанец"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "јајце за создавање зомбиран свински човек"
+  CHEST: "кога е на тело:"
+  FEET: "кога сте на стапалата:"
+  HEAD: "кога е на главата:"
+  LEGS: "кога сте на нозе:"
+  MAINHAND: "кога сте во главната рака:"
+  OFFHAND: "кога сте во споредната рака:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

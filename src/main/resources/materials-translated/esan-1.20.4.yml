@@ -1,0 +1,2999 @@
+# Copy the contents of this file to the materials.yml file
+
+materials:
+  ACACIA_BUTTON: "botón de mimoça"
+  ACACIA_DOOR: "puerta de mimoça"
+  ACACIA_FENCE: "berha de mimoça"
+  ACACIA_FENCE_GATE: "cançela de mimoça"
+  ACACIA_HANGING_SIGN: "letrero corgante de mimoça"
+  ACACIA_LEAVES: "ohâ de mimoça"
+  ACACIA_LOG: "tronco de mimoça"
+  ACACIA_PLANKS: "tablonê de mimoça"
+  ACACIA_PRESSURE_PLATE: "placa de preçión de mimoça"
+  ACACIA_SAPLING: "brote de mimoça"
+  ACACIA_SIGN: "letrero de mimoça"
+  ACACIA_SLAB: "bardoça de mimoça"
+  ACACIA_STAIRS: "êccalerâ de mimoça"
+  ACACIA_TRAPDOOR: "trampiya de mimoça"
+  ACACIA_WALL_HANGING_SIGN: "letrero corgante de mimoça en paré"
+  ACACIA_WALL_SIGN: "letrero de mimoça en paré"
+  ACACIA_WOOD: "leño de mimoça"
+  ACTIVATOR_RAIL: "raîh âttibadôh"
+  AIR: "aire"
+  ALLIUM: "allium"
+  AMETHYST_BLOCK: "bloque d'ametîtta"
+  AMETHYST_CLUSTER: "cúmulo d'ametîtta"
+  ANCIENT_DEBRIS: "detritô ançêttralê"
+  ANDESITE: "andeçita"
+  ANDESITE_SLAB: "bardoça d'andeçita"
+  ANDESITE_STAIRS: "êccalerâ d'andeçita"
+  ANDESITE_WALL: "muro d'andeçita"
+  ANVIL: "yunque"
+  ATTACHED_MELON_STEM: "tayo d'açendía unío"
+  ATTACHED_PUMPKIN_STEM: "tayo de calabaça unío"
+  AZALEA: "açalea"
+  AZALEA_LEAVES: "ohâ d'açalea"
+  AZURE_BLUET: "rubiáçea"
+  BAMBOO: "bambú"
+  BAMBOO_BLOCK: "bloque de bambú"
+  BAMBOO_BUTTON: "botón de bambú"
+  BAMBOO_DOOR: "puerta de bambú"
+  BAMBOO_FENCE: "berha de bambú"
+  BAMBOO_FENCE_GATE: "cançela de bambú"
+  BAMBOO_HANGING_SIGN: "letrero corgante de bambú"
+  BAMBOO_MOSAIC: "moçaico de bambú"
+  BAMBOO_MOSAIC_SLAB: "bardoça de moçaico de bambú"
+  BAMBOO_MOSAIC_STAIRS: "êccalerâ de moçaico de bambú"
+  BAMBOO_PLANKS: "tablonê de bambú"
+  BAMBOO_PRESSURE_PLATE: "placa de preçión de bambú"
+  BAMBOO_SAPLING: "brote de bambú"
+  BAMBOO_SIGN: "letrero de bambú"
+  BAMBOO_SLAB: "bardoça de bambú"
+  BAMBOO_STAIRS: "êccalerâ de bambú"
+  BAMBOO_TRAPDOOR: "trampiya de bambú"
+  BAMBOO_WALL_HANGING_SIGN: "letrero corgante de bambú en paré"
+  BAMBOO_WALL_SIGN: "letrero de bambú en paré"
+  BANNER_BASE_BLACK: "paño êccuro"
+  BANNER_BASE_BLUE: "paño açûh"
+  BANNER_BASE_BROWN: "paño marrón"
+  BANNER_BASE_CYAN: "paño çian"
+  BANNER_BASE_GRAY: "paño grîh"
+  BANNER_BASE_GREEN: "paño berde"
+  BANNER_BASE_LIGHT_BLUE: "paño açûh claro"
+  BANNER_BASE_LIGHT_GRAY: "paño grîh claro"
+  BANNER_BASE_LIME: "paño lima"
+  BANNER_BASE_MAGENTA: "paño mahenta"
+  BANNER_BASE_ORANGE: "paño naranha"
+  BANNER_BASE_PINK: "paño roça"
+  BANNER_BASE_PURPLE: "paño morao"
+  BANNER_BASE_RED: "paño colorao"
+  BANNER_BASE_WHITE: "paño blanco"
+  BANNER_BASE_YELLOW: "paño amariyo"
+  BANNER_BORDER_BLACK: "bordeao êccuro"
+  BANNER_BORDER_BLUE: "bordeao açûh"
+  BANNER_BORDER_BROWN: "bordeao marrón"
+  BANNER_BORDER_CYAN: "bordeao çian"
+  BANNER_BORDER_GRAY: "bordeao grîh"
+  BANNER_BORDER_GREEN: "bordeao berde"
+  BANNER_BORDER_LIGHT_BLUE: "bordeao açûh claro"
+  BANNER_BORDER_LIGHT_GRAY: "bordeao grîh claro"
+  BANNER_BORDER_LIME: "bordeao lima"
+  BANNER_BORDER_MAGENTA: "bordeao mahenta"
+  BANNER_BORDER_ORANGE: "bordeao naranha"
+  BANNER_BORDER_PINK: "bordeao roça"
+  BANNER_BORDER_PURPLE: "bordeao morao"
+  BANNER_BORDER_RED: "bordeao colorao"
+  BANNER_BORDER_WHITE: "bordeao blanco"
+  BANNER_BORDER_YELLOW: "bordeao amariyo"
+  BANNER_BRICKS_BLACK: "enladriyao êccuro"
+  BANNER_BRICKS_BLUE: "enladriyao açûh"
+  BANNER_BRICKS_BROWN: "enladriyao marrón"
+  BANNER_BRICKS_CYAN: "enladriyao çian"
+  BANNER_BRICKS_GRAY: "enladriyao grîh"
+  BANNER_BRICKS_GREEN: "enladriyao berde"
+  BANNER_BRICKS_LIGHT_BLUE: "enladriyao açûh claro"
+  BANNER_BRICKS_LIGHT_GRAY: "enladriyao grîh claro"
+  BANNER_BRICKS_LIME: "enladriyao lima"
+  BANNER_BRICKS_MAGENTA: "enladriyao mahenta"
+  BANNER_BRICKS_ORANGE: "enladriyao naranha"
+  BANNER_BRICKS_PINK: "enladriyao roça"
+  BANNER_BRICKS_PURPLE: "enladriyao morao"
+  BANNER_BRICKS_RED: "enladriyao colorao"
+  BANNER_BRICKS_WHITE: "enladriyao blanco"
+  BANNER_BRICKS_YELLOW: "enladriyao amariyo"
+  BANNER_CIRCLE_BLACK: "reondêh êccuro"
+  BANNER_CIRCLE_BLUE: "reondêh açûh"
+  BANNER_CIRCLE_BROWN: "reondêh marrón"
+  BANNER_CIRCLE_CYAN: "reondêh çian"
+  BANNER_CIRCLE_GRAY: "reondêh grîh"
+  BANNER_CIRCLE_GREEN: "reondêh berde"
+  BANNER_CIRCLE_LIGHT_BLUE: "reondêh açûh claro"
+  BANNER_CIRCLE_LIGHT_GRAY: "reondêh grîh claro"
+  BANNER_CIRCLE_LIME: "reondêh lima"
+  BANNER_CIRCLE_MAGENTA: "reondêh mahenta"
+  BANNER_CIRCLE_ORANGE: "reondêh naranha"
+  BANNER_CIRCLE_PINK: "reondêh roça"
+  BANNER_CIRCLE_PURPLE: "reondêh morao"
+  BANNER_CIRCLE_RED: "reondêh colorao"
+  BANNER_CIRCLE_WHITE: "reondêh blanco"
+  BANNER_CIRCLE_YELLOW: "reondêh amariyo"
+  BANNER_CREEPER_BLACK: "êttampao êccuro de creeper"
+  BANNER_CREEPER_BLUE: "êttampao açûh de creeper"
+  BANNER_CREEPER_BROWN: "êttampao marrón de creeper"
+  BANNER_CREEPER_CYAN: "êttampao çian de creeper"
+  BANNER_CREEPER_GRAY: "êttampao grîh de creeper"
+  BANNER_CREEPER_GREEN: "êttampao berde de creeper"
+  BANNER_CREEPER_LIGHT_BLUE: "êttampao açûh claro de creeper"
+  BANNER_CREEPER_LIGHT_GRAY: "êttampao grîh claro de creeper"
+  BANNER_CREEPER_LIME: "êttampao lima de creeper"
+  BANNER_CREEPER_MAGENTA: "êttampao mahenta de creeper"
+  BANNER_CREEPER_ORANGE: "êttampao naranha de creeper"
+  BANNER_CREEPER_PINK: "êttampao roça de creeper"
+  BANNER_CREEPER_PURPLE: "êttampao morao de creeper"
+  BANNER_CREEPER_RED: "êttampao colorao de creeper"
+  BANNER_CREEPER_WHITE: "êttampao blanco de creeper"
+  BANNER_CREEPER_YELLOW: "êttampao amariiyo de creeper"
+  BANNER_CROSS_BLACK: "âppa êccura"
+  BANNER_CROSS_BLUE: "âppa açûh"
+  BANNER_CROSS_BROWN: "âppa marrón"
+  BANNER_CROSS_CYAN: "âppa çian"
+  BANNER_CROSS_GRAY: "âppa grîh"
+  BANNER_CROSS_GREEN: "âppa colorá"
+  BANNER_CROSS_LIGHT_BLUE: "âppa açûh claro"
+  BANNER_CROSS_LIGHT_GRAY: "âppa grîh claro"
+  BANNER_CROSS_LIME: "âppa lima"
+  BANNER_CROSS_MAGENTA: "âppa mahenta"
+  BANNER_CROSS_ORANGE: "âppa naranha"
+  BANNER_CROSS_PINK: "âppa roça"
+  BANNER_CROSS_PURPLE: "âppa morá"
+  BANNER_CROSS_RED: "âppa colorá"
+  BANNER_CROSS_WHITE: "âppa blanca"
+  BANNER_CROSS_YELLOW: "âppa amariya"
+  BANNER_CURLY_BORDER_BLACK: "bordeao êccuro dentao"
+  BANNER_CURLY_BORDER_BLUE: "bordeao açûh dentao"
+  BANNER_CURLY_BORDER_BROWN: "bordeao marrón dentao"
+  BANNER_CURLY_BORDER_CYAN: "bordeao çian dentao"
+  BANNER_CURLY_BORDER_GRAY: "bordeao grîh dentao"
+  BANNER_CURLY_BORDER_GREEN: "bordeao berde dentao"
+  BANNER_CURLY_BORDER_LIGHT_BLUE: "bordeao açûh claro dentao"
+  BANNER_CURLY_BORDER_LIGHT_GRAY: "bordeao grîh claro dentao"
+  BANNER_CURLY_BORDER_LIME: "bordeao lima dentao"
+  BANNER_CURLY_BORDER_MAGENTA: "bordura mahenta dentá"
+  BANNER_CURLY_BORDER_ORANGE: "bordeao naranha dentao"
+  BANNER_CURLY_BORDER_PINK: "bordeao roça dentao"
+  BANNER_CURLY_BORDER_PURPLE: "bordeao morao dentao"
+  BANNER_CURLY_BORDER_RED: "bordeao colorao dentao"
+  BANNER_CURLY_BORDER_WHITE: "bordeao blanco dentao"
+  BANNER_CURLY_BORDER_YELLOW: "bordeao amariyo dentao"
+  BANNER_DIAGONAL_LEFT_BLACK: "tahao êccuro"
+  BANNER_DIAGONAL_LEFT_BLUE: "tahao açûh"
+  BANNER_DIAGONAL_LEFT_BROWN: "tahao marrón"
+  BANNER_DIAGONAL_LEFT_CYAN: "tahao çian"
+  BANNER_DIAGONAL_LEFT_GRAY: "tahao grîh"
+  BANNER_DIAGONAL_LEFT_GREEN: "tahao berde"
+  BANNER_DIAGONAL_LEFT_LIGHT_BLUE: "tahao açûh claro"
+  BANNER_DIAGONAL_LEFT_LIGHT_GRAY: "tahao grîh claro"
+  BANNER_DIAGONAL_LEFT_LIME: "tahao lima"
+  BANNER_DIAGONAL_LEFT_MAGENTA: "tahao mahenta"
+  BANNER_DIAGONAL_LEFT_ORANGE: "tahao naranha"
+  BANNER_DIAGONAL_LEFT_PINK: "tahao roça"
+  BANNER_DIAGONAL_LEFT_PURPLE: "tahao morao"
+  BANNER_DIAGONAL_LEFT_RED: "tahao colorao"
+  BANNER_DIAGONAL_LEFT_WHITE: "tahao blanco"
+  BANNER_DIAGONAL_LEFT_YELLOW: "tahao amariyo"
+  BANNER_DIAGONAL_RIGHT_BLACK: "tronxao êccuro"
+  BANNER_DIAGONAL_RIGHT_BLUE: "tronxao açûh"
+  BANNER_DIAGONAL_RIGHT_BROWN: "tronxao marrón"
+  BANNER_DIAGONAL_RIGHT_CYAN: "tronxao çian"
+  BANNER_DIAGONAL_RIGHT_GRAY: "tronxao grîh"
+  BANNER_DIAGONAL_RIGHT_GREEN: "tronxao berde"
+  BANNER_DIAGONAL_RIGHT_LIGHT_BLUE: "tronxao açûh claro"
+  BANNER_DIAGONAL_RIGHT_LIGHT_GRAY: "tronxao grîh claro"
+  BANNER_DIAGONAL_RIGHT_LIME: "tronxao lima"
+  BANNER_DIAGONAL_RIGHT_MAGENTA: "tronxao mahenta"
+  BANNER_DIAGONAL_RIGHT_ORANGE: "tronxao naranha"
+  BANNER_DIAGONAL_RIGHT_PINK: "tronxao roça"
+  BANNER_DIAGONAL_RIGHT_PURPLE: "tronxao morao"
+  BANNER_DIAGONAL_RIGHT_RED: "tronxao colorao"
+  BANNER_DIAGONAL_RIGHT_WHITE: "tronxao blanco"
+  BANNER_DIAGONAL_RIGHT_YELLOW: "tronxao amariyo"
+  BANNER_DIAGONAL_UP_LEFT_BLACK: "tronxao êccuro imbertío"
+  BANNER_DIAGONAL_UP_LEFT_BLUE: "tronxao açûh imbertío"
+  BANNER_DIAGONAL_UP_LEFT_BROWN: "tronxao marrón imbertío"
+  BANNER_DIAGONAL_UP_LEFT_CYAN: "tronxao çian imbertío"
+  BANNER_DIAGONAL_UP_LEFT_GRAY: "tronxao grîh imbertío"
+  BANNER_DIAGONAL_UP_LEFT_GREEN: "tronxao berde imbertío"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_BLUE: "tronxao açûh claro imbertío"
+  BANNER_DIAGONAL_UP_LEFT_LIGHT_GRAY: "tronxao grîh claro imbertío"
+  BANNER_DIAGONAL_UP_LEFT_LIME: "tronxao lima imbertío"
+  BANNER_DIAGONAL_UP_LEFT_MAGENTA: "tronxao mahenta imbertío"
+  BANNER_DIAGONAL_UP_LEFT_ORANGE: "tronxao naranha imbertío"
+  BANNER_DIAGONAL_UP_LEFT_PINK: "tronxao roça imbertío"
+  BANNER_DIAGONAL_UP_LEFT_PURPLE: "tronxao morao imbertío"
+  BANNER_DIAGONAL_UP_LEFT_RED: "tronxao colorao imbertío"
+  BANNER_DIAGONAL_UP_LEFT_WHITE: "tronxao blanco imbertío"
+  BANNER_DIAGONAL_UP_LEFT_YELLOW: "tronxao amariyo imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_BLACK: "tahao êccuro imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_BLUE: "tahao açûh imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_BROWN: "tahao marrón imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_CYAN: "tahao çian imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_GRAY: "tahao grîh imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_GREEN: "tahao berde imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_BLUE: "tahao açûh claro imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_LIGHT_GRAY: "tahao grîh claro imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_LIME: "tahao lima imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_MAGENTA: "tahao mahenta imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_ORANGE: "tahao naranha imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_PINK: "tahao roça imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_PURPLE: "tahao morao imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_RED: "tahao colorao imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_WHITE: "tahao blanco imbertío"
+  BANNER_DIAGONAL_UP_RIGHT_YELLOW: "tahao amariyo imbertío"
+  BANNER_FLOWER_BLACK: "êttampao êccuro de flôh"
+  BANNER_FLOWER_BLUE: "êttampao açûh de flôh"
+  BANNER_FLOWER_BROWN: "êttampao marrón de flôh"
+  BANNER_FLOWER_CYAN: "êttampao çian de flôh"
+  BANNER_FLOWER_GRAY: "êttampao grîh de flôh"
+  BANNER_FLOWER_GREEN: "êttampao berde de flôh"
+  BANNER_FLOWER_LIGHT_BLUE: "êttampao açûh claro de flôh"
+  BANNER_FLOWER_LIGHT_GRAY: "êttampao grîh claro de flôh"
+  BANNER_FLOWER_LIME: "êttampao lima de flôh"
+  BANNER_FLOWER_MAGENTA: "êttampao mahenta de flôh"
+  BANNER_FLOWER_ORANGE: "êttampao naranha de flôh"
+  BANNER_FLOWER_PINK: "êttampao roça de flôh"
+  BANNER_FLOWER_PURPLE: "êttampao morao de flôh"
+  BANNER_FLOWER_RED: "êttampao colorao de flôh"
+  BANNER_FLOWER_WHITE: "êttampao blanco de flôh"
+  BANNER_FLOWER_YELLOW: "êttampao amariyo de flôh"
+  BANNER_GLOBE_BLACK: "planeta êccuro"
+  BANNER_GLOBE_BLUE: "planeta açûh"
+  BANNER_GLOBE_BROWN: "planeta marrón"
+  BANNER_GLOBE_CYAN: "planeta çian"
+  BANNER_GLOBE_GRAY: "planeta grîh"
+  BANNER_GLOBE_GREEN: "planeta berde"
+  BANNER_GLOBE_LIGHT_BLUE: "planeta açûh claro"
+  BANNER_GLOBE_LIGHT_GRAY: "planeta grîh claro"
+  BANNER_GLOBE_LIME: "planeta lima"
+  BANNER_GLOBE_MAGENTA: "planeta mahenta"
+  BANNER_GLOBE_ORANGE: "planeta naranha"
+  BANNER_GLOBE_PINK: "planeta roça"
+  BANNER_GLOBE_PURPLE: "planeta morao"
+  BANNER_GLOBE_RED: "planeta colorao"
+  BANNER_GLOBE_WHITE: "planeta blanco"
+  BANNER_GLOBE_YELLOW: "planeta amariyo"
+  BANNER_GRADIENT_BLACK: "degradao êccuro"
+  BANNER_GRADIENT_BLUE: "degradao açûh"
+  BANNER_GRADIENT_BROWN: "degradao marrón"
+  BANNER_GRADIENT_CYAN: "degradao çian"
+  BANNER_GRADIENT_GRAY: "degradao grîh"
+  BANNER_GRADIENT_GREEN: "degradao berde"
+  BANNER_GRADIENT_LIGHT_BLUE: "degradao açûh claro"
+  BANNER_GRADIENT_LIGHT_GRAY: "degradao grîh claro"
+  BANNER_GRADIENT_LIME: "degradao lima"
+  BANNER_GRADIENT_MAGENTA: "degradao mahenta"
+  BANNER_GRADIENT_ORANGE: "degradao naranha"
+  BANNER_GRADIENT_PINK: "degradao roça"
+  BANNER_GRADIENT_PURPLE: "degradao morao"
+  BANNER_GRADIENT_RED: "degradao colorao"
+  BANNER_GRADIENT_WHITE: "degradao blanco"
+  BANNER_GRADIENT_YELLOW: "degradao amariyo"
+  BANNER_GRADIENT_UP_BLACK: "degradao êccuro en baçe"
+  BANNER_GRADIENT_UP_BLUE: "degradao açûh en baçe"
+  BANNER_GRADIENT_UP_BROWN: "degradao marrón en baçe"
+  BANNER_GRADIENT_UP_CYAN: "degradao çian en baçe"
+  BANNER_GRADIENT_UP_GRAY: "degradao grîh en baçe"
+  BANNER_GRADIENT_UP_GREEN: "degradao berde en baçe"
+  BANNER_GRADIENT_UP_LIGHT_BLUE: "degradao açûh claro en baçe"
+  BANNER_GRADIENT_UP_LIGHT_GRAY: "degradao grîh claro en baçe"
+  BANNER_GRADIENT_UP_LIME: "degradao lima en baçe"
+  BANNER_GRADIENT_UP_MAGENTA: "degradao mahenta en baçe"
+  BANNER_GRADIENT_UP_ORANGE: "degradao naranha en baçe"
+  BANNER_GRADIENT_UP_PINK: "degradao roça en baçe"
+  BANNER_GRADIENT_UP_PURPLE: "degradao morao en baçe"
+  BANNER_GRADIENT_UP_RED: "degradao colorao en baçe"
+  BANNER_GRADIENT_UP_WHITE: "degradao blanco en baçe"
+  BANNER_GRADIENT_UP_YELLOW: "degradao amariyo en baçe"
+  BANNER_HALF_HORIZONTAL_BLACK: "cortao êccuro"
+  BANNER_HALF_HORIZONTAL_BLUE: "cortao açûh"
+  BANNER_HALF_HORIZONTAL_BROWN: "cortao marrón"
+  BANNER_HALF_HORIZONTAL_CYAN: "cortao çian"
+  BANNER_HALF_HORIZONTAL_GRAY: "cortao grîh"
+  BANNER_HALF_HORIZONTAL_GREEN: "cortao berde"
+  BANNER_HALF_HORIZONTAL_LIGHT_BLUE: "cortao açûh claro"
+  BANNER_HALF_HORIZONTAL_LIGHT_GRAY: "cortao grîh claro"
+  BANNER_HALF_HORIZONTAL_LIME: "cortao lima"
+  BANNER_HALF_HORIZONTAL_MAGENTA: "cortao mahenta"
+  BANNER_HALF_HORIZONTAL_ORANGE: "cortao naranha"
+  BANNER_HALF_HORIZONTAL_PINK: "cortao roça"
+  BANNER_HALF_HORIZONTAL_PURPLE: "cortao morao"
+  BANNER_HALF_HORIZONTAL_RED: "cortao colorao"
+  BANNER_HALF_HORIZONTAL_WHITE: "cortao blanco"
+  BANNER_HALF_HORIZONTAL_YELLOW: "cortao amariyo"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLACK: "cortao êccuro imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BLUE: "cortao açûh imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_BROWN: "cortao marrón imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_CYAN: "cortao çian imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GRAY: "cortao grîh imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_GREEN: "cortao berde imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_BLUE: "cortao açûh claro imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIGHT_GRAY: "cortao grîh claro imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_LIME: "cortao lima imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_MAGENTA: "cortao mahenta imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_ORANGE: "cortao naranha imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PINK: "cortao roça imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_PURPLE: "cortao morao imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_RED: "cortao colorao imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_WHITE: "cortao blanco imbertío"
+  BANNER_HALF_HORIZONTAL_BOTTOM_YELLOW: "cortao amariyo imbertío"
+  BANNER_HALF_VERTICAL_BLACK: "flanco êccuro"
+  BANNER_HALF_VERTICAL_BLUE: "flanco açûh"
+  BANNER_HALF_VERTICAL_BROWN: "flanco marrón"
+  BANNER_HALF_VERTICAL_CYAN: "flanco çian"
+  BANNER_HALF_VERTICAL_GRAY: "flanco grîh"
+  BANNER_HALF_VERTICAL_GREEN: "flanco berde"
+  BANNER_HALF_VERTICAL_LIGHT_BLUE: "flanco açûh claro"
+  BANNER_HALF_VERTICAL_LIGHT_GRAY: "flanco grîh claro"
+  BANNER_HALF_VERTICAL_LIME: "flanco lima"
+  BANNER_HALF_VERTICAL_MAGENTA: "flanco mahenta"
+  BANNER_HALF_VERTICAL_ORANGE: "flanco naranha"
+  BANNER_HALF_VERTICAL_PINK: "flanco roça"
+  BANNER_HALF_VERTICAL_PURPLE: "flanco morao"
+  BANNER_HALF_VERTICAL_RED: "flanco colorao"
+  BANNER_HALF_VERTICAL_WHITE: "flanco blanco"
+  BANNER_HALF_VERTICAL_YELLOW: "flanco amariyo"
+  BANNER_HALF_VERTICAL_RIGHT_BLACK: "flanco êccuro imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_BLUE: "flanco açûh imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_BROWN: "flanco marrón imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_CYAN: "flanco çian imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_GRAY: "flanco grîh imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_GREEN: "flanco berde imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_BLUE: "flanco açûh claro imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_LIGHT_GRAY: "flanco grîh claro imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_LIME: "flanco lima imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_MAGENTA: "flanco mahenta imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_ORANGE: "flanco naranha imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_PINK: "flanco roça imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_PURPLE: "flanco morao imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_RED: "flanco colorao imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_WHITE: "flanco blanco imbertío"
+  BANNER_HALF_VERTICAL_RIGHT_YELLOW: "flanco amariyo imbertío"
+  BANNER_MOJANG_BLACK: "êttampao êccuro de mojang"
+  BANNER_MOJANG_BLUE: "êttampao açûh de mojang"
+  BANNER_MOJANG_BROWN: "êttampao marrón de mojang"
+  BANNER_MOJANG_CYAN: "êttampao çian de mojang"
+  BANNER_MOJANG_GRAY: "êttampao grîh de mojang"
+  BANNER_MOJANG_GREEN: "êttampao berde de mojang"
+  BANNER_MOJANG_LIGHT_BLUE: "êttampao açûh claro de mojang"
+  BANNER_MOJANG_LIGHT_GRAY: "êttampao grîh claro de mojang"
+  BANNER_MOJANG_LIME: "êttampao lima de mojang"
+  BANNER_MOJANG_MAGENTA: "êttampao mahenta de mojang"
+  BANNER_MOJANG_ORANGE: "êttampao naranha de mojang"
+  BANNER_MOJANG_PINK: "êttampao roça de mojang"
+  BANNER_MOJANG_PURPLE: "êttampao morao de mojang"
+  BANNER_MOJANG_RED: "êttampao colorao de mojang"
+  BANNER_MOJANG_WHITE: "êttampao blanco de mojang"
+  BANNER_MOJANG_YELLOW: "êttampao amariyo de mojang"
+  BANNER_PIGLIN_BLACK: "hoçico êccuro"
+  BANNER_PIGLIN_BLUE: "hoçico açûh"
+  BANNER_PIGLIN_BROWN: "hoçico marrón"
+  BANNER_PIGLIN_CYAN: "hoçico çian"
+  BANNER_PIGLIN_GRAY: "hoçico grîh"
+  BANNER_PIGLIN_GREEN: "hoçico berde"
+  BANNER_PIGLIN_LIGHT_BLUE: "hoçico açûh claro"
+  BANNER_PIGLIN_LIGHT_GRAY: "hoçico grîh claro"
+  BANNER_PIGLIN_LIME: "hoçico lima"
+  BANNER_PIGLIN_MAGENTA: "hoçico mahenta"
+  BANNER_PIGLIN_ORANGE: "hoçico naranha"
+  BANNER_PIGLIN_PINK: "hoçico roça"
+  BANNER_PIGLIN_PURPLE: "hoçico morao"
+  BANNER_PIGLIN_RED: "hoçico coloráo"
+  BANNER_PIGLIN_WHITE: "hoçico blanco"
+  BANNER_PIGLIN_YELLOW: "hoçico amariyo"
+  BANNER_RHOMBUS_BLACK: "rombo êccuro"
+  BANNER_RHOMBUS_BLUE: "rombo açûh"
+  BANNER_RHOMBUS_BROWN: "rombo marrón"
+  BANNER_RHOMBUS_CYAN: "rombo çian"
+  BANNER_RHOMBUS_GRAY: "rombo grîh"
+  BANNER_RHOMBUS_GREEN: "rombo berde"
+  BANNER_RHOMBUS_LIGHT_BLUE: "rombo açûh claro"
+  BANNER_RHOMBUS_LIGHT_GRAY: "rombo grîh claro"
+  BANNER_RHOMBUS_LIME: "rombo lima"
+  BANNER_RHOMBUS_MAGENTA: "rombo mahenta"
+  BANNER_RHOMBUS_ORANGE: "rombo naranha"
+  BANNER_RHOMBUS_PINK: "rombo roça"
+  BANNER_RHOMBUS_PURPLE: "rombo morao"
+  BANNER_RHOMBUS_RED: "rombo colorao"
+  BANNER_RHOMBUS_WHITE: "rombo blanco"
+  BANNER_RHOMBUS_YELLOW: "rombo amariyo"
+  BANNER_SKULL_BLACK: "êttampao êccuro de calabera"
+  BANNER_SKULL_BLUE: "êttampao açûh de calabera"
+  BANNER_SKULL_BROWN: "êttampao marrón de calabera"
+  BANNER_SKULL_CYAN: "êttampao çian de calabera"
+  BANNER_SKULL_GRAY: "êttampao grîh de calabera"
+  BANNER_SKULL_GREEN: "êttampao berde de calabera"
+  BANNER_SKULL_LIGHT_BLUE: "êttampao açûh claro de calabera"
+  BANNER_SKULL_LIGHT_GRAY: "êttampao grîh claro de calabera"
+  BANNER_SKULL_LIME: "êttampao lima de calabera"
+  BANNER_SKULL_MAGENTA: "êttampao mahenta de calabera"
+  BANNER_SKULL_ORANGE: "êttampao naranha de calabera"
+  BANNER_SKULL_PINK: "êttampao roça de calabera"
+  BANNER_SKULL_PURPLE: "êttampao morao de calabera"
+  BANNER_SKULL_RED: "êttampao colorao de calabera"
+  BANNER_SKULL_WHITE: "êttampao blanco de calabera"
+  BANNER_SKULL_YELLOW: "êttampao amariyo de calabera"
+  BANNER_SMALL_STRIPES_BLACK: "bâttonao êccuro"
+  BANNER_SMALL_STRIPES_BLUE: "bâttonao açûh"
+  BANNER_SMALL_STRIPES_BROWN: "bâttonao marrón"
+  BANNER_SMALL_STRIPES_CYAN: "bâttonao çian"
+  BANNER_SMALL_STRIPES_GRAY: "bâttonao grîh"
+  BANNER_SMALL_STRIPES_GREEN: "bâttonao berde"
+  BANNER_SMALL_STRIPES_LIGHT_BLUE: "bâttonao açûh claro"
+  BANNER_SMALL_STRIPES_LIGHT_GRAY: "bâttonao grîh claro"
+  BANNER_SMALL_STRIPES_LIME: "bâttonao lima"
+  BANNER_SMALL_STRIPES_MAGENTA: "bâttonao mahenta"
+  BANNER_SMALL_STRIPES_ORANGE: "bâttonao naranha"
+  BANNER_SMALL_STRIPES_PINK: "bâttonao roça"
+  BANNER_SMALL_STRIPES_PURPLE: "bâttonao morao"
+  BANNER_SMALL_STRIPES_RED: "bâttonao colorao"
+  BANNER_SMALL_STRIPES_WHITE: "bâttonao blanco"
+  BANNER_SMALL_STRIPES_YELLOW: "bâttonao amariyo"
+  BANNER_SQUARE_BOTTOM_LEFT_BLACK: "cantón êccuro en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_BLUE: "cantón açûh en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_BROWN: "cantón marrón en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_CYAN: "cantón çian en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_GRAY: "cantón grîh en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_GREEN: "cantón berde en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_BLUE: "cantón açûh claro en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIGHT_GRAY: "cantón grîh claro en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_LIME: "cantón lima en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_MAGENTA: "cantón açûh claro en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_ORANGE: "cantón naranha en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_PINK: "cantón roça en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_PURPLE: "cantón morao en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_RED: "cantón colorao en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_WHITE: "cantón blanco en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_LEFT_YELLOW: "cantón amariyo en campaña a diêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLACK: "cantón êccuro en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BLUE: "cantón açûh en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_BROWN: "cantón marrón en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_CYAN: "cantón çian en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_GRAY: "cantón grîh en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_GREEN: "cantón berde en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_BLUE: "cantón açûh claro en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIGHT_GRAY: "cantón grîh claro en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_LIME: "cantón lima en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_MAGENTA: "cantón mahenta en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_ORANGE: "cantón naranha en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_PINK: "cantón roça en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_PURPLE: "cantón morao en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_RED: "cantón colorao en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_WHITE: "cantón blanco en campaña a çiniêttra"
+  BANNER_SQUARE_BOTTOM_RIGHT_YELLOW: "cantón amariyo en campaña a çiniêttra"
+  BANNER_SQUARE_TOP_LEFT_BLACK: "cantón êccuro en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_BLUE: "cantón açûh en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_BROWN: "cantón marrón en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_CYAN: "cantón çian en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_GRAY: "cantón grîh en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_GREEN: "cantón berde en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_BLUE: "cantón açûh claro en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_LIGHT_GRAY: "cantón grîh claro en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_LIME: "cantón lima en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_MAGENTA: "cantón mahenta en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_ORANGE: "cantón naranha en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_PINK: "cantón roça en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_PURPLE: "cantón morao en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_RED: "cantón colorao en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_WHITE: "cantón blanco en hefe a diêttra"
+  BANNER_SQUARE_TOP_LEFT_YELLOW: "cantón amariyo en hefe a diêttra"
+  BANNER_SQUARE_TOP_RIGHT_BLACK: "cantón êccuro en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_BLUE: "cantón açûh en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_BROWN: "cantón marrón en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_CYAN: "cantón çian en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_GRAY: "cantón grîh en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_GREEN: "cantón berde en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_BLUE: "cantón açûh claro en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_LIGHT_GRAY: "cantón grîh claro en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_LIME: "cantón lima en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_MAGENTA: "cantón mahenta en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_ORANGE: "cantón naranha en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_PINK: "cantón roça en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_PURPLE: "cantón morao en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_RED: "cantón colorao en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_WHITE: "cantón blanco en hefe a çiniêttra"
+  BANNER_SQUARE_TOP_RIGHT_YELLOW: "cantón amariyo en hefe a çiniêttra"
+  BANNER_STRAIGHT_CROSS_BLACK: "crûh êccura"
+  BANNER_STRAIGHT_CROSS_BLUE: "crûh açûh"
+  BANNER_STRAIGHT_CROSS_BROWN: "crûh marrón"
+  BANNER_STRAIGHT_CROSS_CYAN: "crûh çian"
+  BANNER_STRAIGHT_CROSS_GRAY: "crûh grîh"
+  BANNER_STRAIGHT_CROSS_GREEN: "crûh berde"
+  BANNER_STRAIGHT_CROSS_LIGHT_BLUE: "crûh açûh claro"
+  BANNER_STRAIGHT_CROSS_LIGHT_GRAY: "crûh grîh claro"
+  BANNER_STRAIGHT_CROSS_LIME: "crûh lima"
+  BANNER_STRAIGHT_CROSS_MAGENTA: "crûh mahenta"
+  BANNER_STRAIGHT_CROSS_ORANGE: "crûh naranha"
+  BANNER_STRAIGHT_CROSS_PINK: "crûh roça"
+  BANNER_STRAIGHT_CROSS_PURPLE: "crûh morá"
+  BANNER_STRAIGHT_CROSS_RED: "crûh colorá"
+  BANNER_STRAIGHT_CROSS_WHITE: "crûh blanca"
+  BANNER_STRAIGHT_CROSS_YELLOW: "crûh amariya"
+  BANNER_STRIPE_BOTTOM_BLACK: "campaña êccura"
+  BANNER_STRIPE_BOTTOM_BLUE: "campaña açûh"
+  BANNER_STRIPE_BOTTOM_BROWN: "campaña marrón"
+  BANNER_STRIPE_BOTTOM_CYAN: "campaña çian"
+  BANNER_STRIPE_BOTTOM_GRAY: "campaña grîh"
+  BANNER_STRIPE_BOTTOM_GREEN: "campaña berde"
+  BANNER_STRIPE_BOTTOM_LIGHT_BLUE: "campaña açûh claro"
+  BANNER_STRIPE_BOTTOM_LIGHT_GRAY: "campaña grîh claro"
+  BANNER_STRIPE_BOTTOM_LIME: "campaña lima"
+  BANNER_STRIPE_BOTTOM_MAGENTA: "campaña mahenta"
+  BANNER_STRIPE_BOTTOM_ORANGE: "campaña naranha"
+  BANNER_STRIPE_BOTTOM_PINK: "campaña roça"
+  BANNER_STRIPE_BOTTOM_PURPLE: "campaña morá"
+  BANNER_STRIPE_BOTTOM_RED: "campaña colorá"
+  BANNER_STRIPE_BOTTOM_WHITE: "campaña blanca"
+  BANNER_STRIPE_BOTTOM_YELLOW: "campaña amariya"
+  BANNER_STRIPE_CENTER_BLACK: "palo êccuro"
+  BANNER_STRIPE_CENTER_BLUE: "palo açûh"
+  BANNER_STRIPE_CENTER_BROWN: "palo marrón"
+  BANNER_STRIPE_CENTER_CYAN: "palo çian"
+  BANNER_STRIPE_CENTER_GRAY: "palo grîh"
+  BANNER_STRIPE_CENTER_GREEN: "palo berde"
+  BANNER_STRIPE_CENTER_LIGHT_BLUE: "palo açûh claro"
+  BANNER_STRIPE_CENTER_LIGHT_GRAY: "palo grîh claro"
+  BANNER_STRIPE_CENTER_LIME: "palo lima"
+  BANNER_STRIPE_CENTER_MAGENTA: "palo mahenta"
+  BANNER_STRIPE_CENTER_ORANGE: "palo naranha"
+  BANNER_STRIPE_CENTER_PINK: "palo roça"
+  BANNER_STRIPE_CENTER_PURPLE: "palo morao"
+  BANNER_STRIPE_CENTER_RED: "palo colorao"
+  BANNER_STRIPE_CENTER_WHITE: "palo blanco"
+  BANNER_STRIPE_CENTER_YELLOW: "palo amariyo"
+  BANNER_STRIPE_DOWNLEFT_BLACK: "banda êccura a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_BLUE: "banda açûh a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_BROWN: "banda marrón a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_CYAN: "banda çian a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_GRAY: "banda grîh a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_GREEN: "banda berde a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_BLUE: "banda açûh claro a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_LIGHT_GRAY: "banda grîh claro a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_LIME: "banda lima a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_MAGENTA: "banda mahenta a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_ORANGE: "banda naranha a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_PINK: "banda roça a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_PURPLE: "banda morá a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_RED: "banda colorá a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_WHITE: "banda blanca a çiniêttra"
+  BANNER_STRIPE_DOWNLEFT_YELLOW: "banda amariya a çiniêttra"
+  BANNER_STRIPE_DOWNRIGHT_BLACK: "banda êccura"
+  BANNER_STRIPE_DOWNRIGHT_BLUE: "banda açûh"
+  BANNER_STRIPE_DOWNRIGHT_BROWN: "banda marrón"
+  BANNER_STRIPE_DOWNRIGHT_CYAN: "banda çian"
+  BANNER_STRIPE_DOWNRIGHT_GRAY: "banda grîh"
+  BANNER_STRIPE_DOWNRIGHT_GREEN: "banda berde"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_BLUE: "banda açûh claro"
+  BANNER_STRIPE_DOWNRIGHT_LIGHT_GRAY: "banda grîh claro"
+  BANNER_STRIPE_DOWNRIGHT_LIME: "banda lima"
+  BANNER_STRIPE_DOWNRIGHT_MAGENTA: "banda mahenta"
+  BANNER_STRIPE_DOWNRIGHT_ORANGE: "banda naranha"
+  BANNER_STRIPE_DOWNRIGHT_PINK: "banda roça"
+  BANNER_STRIPE_DOWNRIGHT_PURPLE: "banda morá"
+  BANNER_STRIPE_DOWNRIGHT_RED: "banda colorá"
+  BANNER_STRIPE_DOWNRIGHT_WHITE: "banda blanca"
+  BANNER_STRIPE_DOWNRIGHT_YELLOW: "banda amariya"
+  BANNER_STRIPE_LEFT_BLACK: "palo êccuro a diêttra"
+  BANNER_STRIPE_LEFT_BLUE: "palo açûh a diêttra"
+  BANNER_STRIPE_LEFT_BROWN: "palo marrón a diêttra"
+  BANNER_STRIPE_LEFT_CYAN: "palo çian a diêttra"
+  BANNER_STRIPE_LEFT_GRAY: "palo grîh a diêttra"
+  BANNER_STRIPE_LEFT_GREEN: "palo berde a diêttra"
+  BANNER_STRIPE_LEFT_LIGHT_BLUE: "palo açûh claro a diêttra"
+  BANNER_STRIPE_LEFT_LIGHT_GRAY: "palo grîh claro a diêttra"
+  BANNER_STRIPE_LEFT_LIME: "palo lima a diêttra"
+  BANNER_STRIPE_LEFT_MAGENTA: "palo mahenta a diêttra"
+  BANNER_STRIPE_LEFT_ORANGE: "palo naranha a diêttra"
+  BANNER_STRIPE_LEFT_PINK: "palo roça a diêttra"
+  BANNER_STRIPE_LEFT_PURPLE: "palo morao a diêttra"
+  BANNER_STRIPE_LEFT_RED: "palo colorao a diêttra"
+  BANNER_STRIPE_LEFT_WHITE: "palo blanco a diêttra"
+  BANNER_STRIPE_LEFT_YELLOW: "palo amariyo a diêttra"
+  BANNER_STRIPE_MIDDLE_BLACK: "franha êccura"
+  BANNER_STRIPE_MIDDLE_BLUE: "franha açûh"
+  BANNER_STRIPE_MIDDLE_BROWN: "franha marrón"
+  BANNER_STRIPE_MIDDLE_CYAN: "franha çian"
+  BANNER_STRIPE_MIDDLE_GRAY: "franha grîh"
+  BANNER_STRIPE_MIDDLE_GREEN: "franha berde"
+  BANNER_STRIPE_MIDDLE_LIGHT_BLUE: "franha açûh claro"
+  BANNER_STRIPE_MIDDLE_LIGHT_GRAY: "franha grîh claro"
+  BANNER_STRIPE_MIDDLE_LIME: "franha lima"
+  BANNER_STRIPE_MIDDLE_MAGENTA: "franha mahenta"
+  BANNER_STRIPE_MIDDLE_ORANGE: "franha naranha"
+  BANNER_STRIPE_MIDDLE_PINK: "franha roça"
+  BANNER_STRIPE_MIDDLE_PURPLE: "franha morá"
+  BANNER_STRIPE_MIDDLE_RED: "franha colorá"
+  BANNER_STRIPE_MIDDLE_WHITE: "franha blanca"
+  BANNER_STRIPE_MIDDLE_YELLOW: "franha amariya"
+  BANNER_STRIPE_RIGHT_BLACK: "palo êccuro a çiniêttra"
+  BANNER_STRIPE_RIGHT_BLUE: "palo açûh a çiniêttra"
+  BANNER_STRIPE_RIGHT_BROWN: "palo marrón a çiniêttra"
+  BANNER_STRIPE_RIGHT_CYAN: "palo çian a çiniêttra"
+  BANNER_STRIPE_RIGHT_GRAY: "palo grîh a çiniêttra"
+  BANNER_STRIPE_RIGHT_GREEN: "palo berde a çiniêttra"
+  BANNER_STRIPE_RIGHT_LIGHT_BLUE: "palo açûh claro a çiniêttra"
+  BANNER_STRIPE_RIGHT_LIGHT_GRAY: "palo grîh claro a çiniêttra"
+  BANNER_STRIPE_RIGHT_LIME: "palo lima a çiniêttra"
+  BANNER_STRIPE_RIGHT_MAGENTA: "palo mahenta a çiniêttra"
+  BANNER_STRIPE_RIGHT_ORANGE: "palo naranha a çiniêttra"
+  BANNER_STRIPE_RIGHT_PINK: "palo roça a çiniêttra"
+  BANNER_STRIPE_RIGHT_PURPLE: "palo morao a çiniêttra"
+  BANNER_STRIPE_RIGHT_RED: "palo colorao a çiniêttra"
+  BANNER_STRIPE_RIGHT_WHITE: "palo blanco a çiniêttra"
+  BANNER_STRIPE_RIGHT_YELLOW: "palo amariyo a çiniêttra"
+  BANNER_STRIPE_TOP_BLACK: "hefe êccuro"
+  BANNER_STRIPE_TOP_BLUE: "hefe açûh"
+  BANNER_STRIPE_TOP_BROWN: "hefe marrón"
+  BANNER_STRIPE_TOP_CYAN: "hefe çian"
+  BANNER_STRIPE_TOP_GRAY: "hefe grîh"
+  BANNER_STRIPE_TOP_GREEN: "hefe berde"
+  BANNER_STRIPE_TOP_LIGHT_BLUE: "hefe açûh claro"
+  BANNER_STRIPE_TOP_LIGHT_GRAY: "hefe grîh claro"
+  BANNER_STRIPE_TOP_LIME: "hefe lima"
+  BANNER_STRIPE_TOP_MAGENTA: "hefe mahenta"
+  BANNER_STRIPE_TOP_ORANGE: "hefe naranha"
+  BANNER_STRIPE_TOP_PINK: "hefe roça"
+  BANNER_STRIPE_TOP_PURPLE: "hefe morao"
+  BANNER_STRIPE_TOP_RED: "hefe colorao"
+  BANNER_STRIPE_TOP_WHITE: "hefe blanco"
+  BANNER_STRIPE_TOP_YELLOW: "hefe amariyo"
+  BANNER_TRIANGLE_BOTTOM_BLACK: "xebrón êccuro"
+  BANNER_TRIANGLE_BOTTOM_BLUE: "xebrón açûh"
+  BANNER_TRIANGLE_BOTTOM_BROWN: "xebrón marrón"
+  BANNER_TRIANGLE_BOTTOM_CYAN: "xebrón çian"
+  BANNER_TRIANGLE_BOTTOM_GRAY: "xebrón grîh"
+  BANNER_TRIANGLE_BOTTOM_GREEN: "xebrón berde"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_BLUE: "xebrón açûh claro"
+  BANNER_TRIANGLE_BOTTOM_LIGHT_GRAY: "xebrón grîh claro"
+  BANNER_TRIANGLE_BOTTOM_LIME: "xebrón lima"
+  BANNER_TRIANGLE_BOTTOM_MAGENTA: "xebrón mahenta"
+  BANNER_TRIANGLE_BOTTOM_ORANGE: "xebrón naranha"
+  BANNER_TRIANGLE_BOTTOM_PINK: "xebrón roça"
+  BANNER_TRIANGLE_BOTTOM_PURPLE: "xebrón morao"
+  BANNER_TRIANGLE_BOTTOM_RED: "xebrón colorao"
+  BANNER_TRIANGLE_BOTTOM_WHITE: "xebrón blanco"
+  BANNER_TRIANGLE_BOTTOM_YELLOW: "xebrón amariyo"
+  BANNER_TRIANGLE_TOP_BLACK: "xebrón êccuro imbertío"
+  BANNER_TRIANGLE_TOP_BLUE: "xebrón açûh imbertío"
+  BANNER_TRIANGLE_TOP_BROWN: "xebrón marrón imbertío"
+  BANNER_TRIANGLE_TOP_CYAN: "xebrón çian imbertío"
+  BANNER_TRIANGLE_TOP_GRAY: "xebrón grîh imbertío"
+  BANNER_TRIANGLE_TOP_GREEN: "xebrón berde imbertío"
+  BANNER_TRIANGLE_TOP_LIGHT_BLUE: "xebrón açûh claro imbertío"
+  BANNER_TRIANGLE_TOP_LIGHT_GRAY: "xebrón grîh claro imbertío"
+  BANNER_TRIANGLE_TOP_LIME: "xebrón lima imbertío"
+  BANNER_TRIANGLE_TOP_MAGENTA: "xebrón mahenta imbertío"
+  BANNER_TRIANGLE_TOP_ORANGE: "xebrón naranha imbertío"
+  BANNER_TRIANGLE_TOP_PINK: "xebrón roça imbertío"
+  BANNER_TRIANGLE_TOP_PURPLE: "xebrón morao imbertío"
+  BANNER_TRIANGLE_TOP_RED: "xebrón colorao imbertío"
+  BANNER_TRIANGLE_TOP_WHITE: "xebrón blanco imbertío"
+  BANNER_TRIANGLE_TOP_YELLOW: "xebrón amariyo imbertío"
+  BANNER_TRIANGLES_BOTTOM_BLACK: "baçe êccura dentá"
+  BANNER_TRIANGLES_BOTTOM_BLUE: "baçe açûh dentá"
+  BANNER_TRIANGLES_BOTTOM_BROWN: "baçe marrón dentá"
+  BANNER_TRIANGLES_BOTTOM_CYAN: "baçe çian dentá"
+  BANNER_TRIANGLES_BOTTOM_GRAY: "baçe grîh dentá"
+  BANNER_TRIANGLES_BOTTOM_GREEN: "baçe berde dentá"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_BLUE: "baçe açûh claro dentá"
+  BANNER_TRIANGLES_BOTTOM_LIGHT_GRAY: "baçe grîh claro dentá"
+  BANNER_TRIANGLES_BOTTOM_LIME: "baçe lima dentá"
+  BANNER_TRIANGLES_BOTTOM_MAGENTA: "baçe morá dentá"
+  BANNER_TRIANGLES_BOTTOM_ORANGE: "baçe naranha dentá"
+  BANNER_TRIANGLES_BOTTOM_PINK: "baçe roça dentá"
+  BANNER_TRIANGLES_BOTTOM_PURPLE: "baçe morá dentá"
+  BANNER_TRIANGLES_BOTTOM_RED: "baçe colorá dentá"
+  BANNER_TRIANGLES_BOTTOM_WHITE: "baçe blanca dentá"
+  BANNER_TRIANGLES_BOTTOM_YELLOW: "baçe amariya dentá"
+  BANNER_TRIANGLES_TOP_BLACK: "hefe êccuro dentao"
+  BANNER_TRIANGLES_TOP_BLUE: "hefe açûh dentao"
+  BANNER_TRIANGLES_TOP_BROWN: "hefe marrón dentao"
+  BANNER_TRIANGLES_TOP_CYAN: "hefe çian dentao"
+  BANNER_TRIANGLES_TOP_GRAY: "hefe grîh dentao"
+  BANNER_TRIANGLES_TOP_GREEN: "hefe berde dentao"
+  BANNER_TRIANGLES_TOP_LIGHT_BLUE: "hefe açûh claro dentao"
+  BANNER_TRIANGLES_TOP_LIGHT_GRAY: "hefe grîh claro dentao"
+  BANNER_TRIANGLES_TOP_LIME: "hefe lima dentao"
+  BANNER_TRIANGLES_TOP_MAGENTA: "hefe mahenta dentao"
+  BANNER_TRIANGLES_TOP_ORANGE: "hefe naranha dentao"
+  BANNER_TRIANGLES_TOP_PINK: "hefe roça dentao"
+  BANNER_TRIANGLES_TOP_PURPLE: "hefe morao dentao"
+  BANNER_TRIANGLES_TOP_RED: "hefe colorao dentao"
+  BANNER_TRIANGLES_TOP_WHITE: "hefe blanco dentao"
+  BANNER_TRIANGLES_TOP_YELLOW: "hefe amariyo dentao"
+  BARREL: "barrîh"
+  BARRIER: "barrera"
+  BASALT: "baçarto"
+  BEACON: "faro"
+  BEACON_PRIMARY: "podêh prinçipâh"
+  BEACON_SECONDARY: "podêh çecundario"
+  BED_NO_SLEEP: "na mâh que çe puêh dormîh po'l-la noxe o durante tormentâ elétricâ"
+  BED_NOT_SAFE: "ara no puêh dormîh; ay môttrô çerca"
+  BED_OBSTRUCTED: "la cama ettá ôttruía"
+  BED_OCCUPIED: "la cama êttá ocupá"
+  BED_TOO_FAR_AWAY: "ara no puêh dormîh; la cama êttá mu lehô"
+  BEDROCK: "roca baçe"
+  BEE_NEST: "cormena"
+  BEEHIVE: "apiario"
+  BEETROOTS: "remolaxâ"
+  BELL: "campana"
+  BIG_DRIPLEAF: "plantaforma grande"
+  BIG_DRIPLEAF_STEM: "tayo de plantaforma grande"
+  BIRCH_BUTTON: "botón de xopo"
+  BIRCH_DOOR: "puerta de xopo"
+  BIRCH_FENCE: "berha de xopo"
+  BIRCH_FENCE_GATE: "cançela de xopo"
+  BIRCH_HANGING_SIGN: "letrero corgante de xopo"
+  BIRCH_LEAVES: "ohâ de xopo"
+  BIRCH_LOG: "tronco de xopo"
+  BIRCH_PLANKS: "tablonê de xopo"
+  BIRCH_PRESSURE_PLATE: "placa de preçión de xopo"
+  BIRCH_SAPLING: "brote de xopo"
+  BIRCH_SIGN: "letrero de xopo"
+  BIRCH_SLAB: "bardoça de xopo"
+  BIRCH_STAIRS: "êccalerâ de xopo"
+  BIRCH_TRAPDOOR: "trampiya de xopo"
+  BIRCH_WALL_HANGING_SIGN: "letrero corgante de xopo en paré"
+  BIRCH_WALL_SIGN: "letrero de xopo en paré"
+  BIRCH_WOOD: "leño de xopo"
+  BLACK_BANNER: "êttandarte êccuro"
+  BLACK_BED: "cama êccura"
+  BLACK_CANDLE: "çirio êccuro"
+  BLACK_CANDLE_CAKE: "tarta con çirio êccuro"
+  BLACK_CARPET: "arfombra êccura"
+  BLACK_CONCRETE: "hormigón êccuro"
+  BLACK_CONCRETE_POWDER: "çemento êccuro"
+  BLACK_GLAZED_TERRACOTTA: "açuleho êccuro"
+  BLACK_SHULKER_BOX: "caha de shulker êccura"
+  BLACK_STAINED_GLASS: "crîttâh tintao d'êccuro"
+  BLACK_STAINED_GLASS_PANE: "panêh de crîttâh tintao d'êccuro"
+  BLACK_TERRACOTTA: "terracota êccura"
+  BLACK_WOOL: "lana êccura"
+  BLACKSTONE: "açabaxe"
+  BLACKSTONE_SLAB: "bardoça d'açabaxe"
+  BLACKSTONE_STAIRS: "êccalerâ d'açabaxe"
+  BLACKSTONE_WALL: "muro d'açabaxe"
+  BLAST_FURNACE: "forha"
+  BLUE_BANNER: "êttandarte açûh"
+  BLUE_BED: "cama açûh"
+  BLUE_CANDLE: "çirio açûh"
+  BLUE_CANDLE_CAKE: "tarta con çirio açûh"
+  BLUE_CARPET: "arfombra açûh"
+  BLUE_CONCRETE: "hormigón açûh"
+  BLUE_CONCRETE_POWDER: "çemento açûh"
+  BLUE_GLAZED_TERRACOTTA: "açuleho açûh"
+  BLUE_ICE: "yelo açûh"
+  BLUE_ORCHID: "orquídia açûh"
+  BLUE_SHULKER_BOX: "caha de shulker açûh"
+  BLUE_STAINED_GLASS: "crîttâh tintao d'açûh"
+  BLUE_STAINED_GLASS_PANE: "panêh de crîttâh tintao d'açûh"
+  BLUE_TERRACOTTA: "terracota açûh"
+  BLUE_WOOL: "lana açûh"
+  BONE_BLOCK: "bloque de gueço"
+  BOOKSHELF: "anaquêh de librô"
+  BRAIN_CORAL: "corâh de çerebro"
+  BRAIN_CORAL_BLOCK: "bloque de corâh de çerebro"
+  BRAIN_CORAL_FAN: "gorgonia de çerebro"
+  BRAIN_CORAL_WALL_FAN: "gorgonia de çerebro en paré"
+  BREWING_STAND: "alambique"
+  BRICK_SLAB: "bardoça de ladriyô"
+  BRICK_STAIRS: "êccalerâ de ladriyô"
+  BRICK_WALL: "muro de ladriyô"
+  BRICKS: "ladriyô"
+  BROWN_BANNER: "êttandarte marrón"
+  BROWN_BED: "cama marrón"
+  BROWN_CANDLE: "çirio marrón"
+  BROWN_CANDLE_CAKE: "tarta con çirio marrón"
+  BROWN_CARPET: "arfombra marrón"
+  BROWN_CONCRETE: "hormigón marrón"
+  BROWN_CONCRETE_POWDER: "çemento marrón"
+  BROWN_GLAZED_TERRACOTTA: "açuleho marrón"
+  BROWN_MUSHROOM: "gurumelo marrón"
+  BROWN_MUSHROOM_BLOCK: "bloque de gurumelo marrón"
+  BROWN_SHULKER_BOX: "caha de shulker marrón"
+  BROWN_STAINED_GLASS: "crîttâh tintao de marrón"
+  BROWN_STAINED_GLASS_PANE: "panêh de crîttâh tintao de marrón"
+  BROWN_TERRACOTTA: "terracota marrón"
+  BROWN_WOOL: "lana marrón"
+  BUBBLE_COLUMN: "colûnna de burbuhâ"
+  BUBBLE_CORAL: "corâh de burbuhâ"
+  BUBBLE_CORAL_BLOCK: "bloque de corâh de burbuha"
+  BUBBLE_CORAL_FAN: "gorgonia de burbuha"
+  BUBBLE_CORAL_WALL_FAN: "gorgonia de burbuha en paré"
+  BUDDING_AMETHYST: "druça d'ametîtta"
+  CACTUS: "câttû"
+  CAKE: "pâttêh"
+  CALCITE: "carçita"
+  CALIBRATED_SCULK_SENSOR: "çençôh de sculk calibrao"
+  CAMPFIRE: "candela"
+  CANDLE: "çirio"
+  CANDLE_CAKE: "pâttêh con çirio"
+  CARROTS: "çanaoriâ"
+  CARTOGRAPHY_TABLE: "meça de cartografía"
+  CARVED_PUMPKIN: "calabaça tayá"
+  CAULDRON: "cardero"
+  CAVE_AIR: "aire de cueba"
+  CAVE_VINES: "enreaera çûtterránea"
+  CAVE_VINES_PLANT: "planta d'enreaera çûtterránea"
+  CHAIN: "caena"
+  CHAIN_COMMAND_BLOCK: "bloque de comandô en cadena"
+  CHERRY_BUTTON: "botón de çereço"
+  CHERRY_DOOR: "puerta de çereço"
+  CHERRY_FENCE: "berha de çereço"
+  CHERRY_FENCE_GATE: "cançela de çereço"
+  CHERRY_HANGING_SIGN: "letrero corgante de çereço"
+  CHERRY_LEAVES: "ohâ de çereço"
+  CHERRY_LOG: "tronco de çereço"
+  CHERRY_PLANKS: "tablonê de çereço"
+  CHERRY_PRESSURE_PLATE: "placa de preçión de çereço"
+  CHERRY_SAPLING: "brote de çereço"
+  CHERRY_SIGN: "letrero de çereço"
+  CHERRY_SLAB: "bardoça de çereço"
+  CHERRY_STAIRS: "êccalerâ de çereço"
+  CHERRY_TRAPDOOR: "trampiya de çereço"
+  CHERRY_WALL_HANGING_SIGN: "letrero corgante de çereço en paré"
+  CHERRY_WALL_SIGN: "letrero de çereço en paré"
+  CHERRY_WOOD: "leño de çereço"
+  CHEST: "baûh"
+  CHIPPED_ANVIL: "yunque êcconxao"
+  CHISELED_BOOKSHELF: "anaquêh de librô êccurpío"
+  CHISELED_COPPER: "cobre çinçelao"
+  CHISELED_DEEPSLATE: "piçarra êccurpía"
+  CHISELED_NETHER_BRICKS: "ladriyô der nether êccurpíô"
+  CHISELED_POLISHED_BLACKSTONE: "açabaxe pulío êccurpío"
+  CHISELED_QUARTZ_BLOCK: "cuarço êccurpío"
+  CHISELED_RED_SANDSTONE: "arbero colorao êccurpío"
+  CHISELED_SANDSTONE: "arbero êccurpío"
+  CHISELED_STONE_BRICKS: "ladriyô de roca êccurpía"
+  CHISELED_TUFF: "toba çinçelá"
+  CHISELED_TUFF_BRICKS: "ladriyô de toba çinçeláô"
+  CHORUS_FLOWER: "flôh de chorus"
+  CHORUS_PLANT: "planta de chorus"
+  CLAY: "arçiya"
+  COAL_BLOCK: "bloque de carbón"
+  COAL_ORE: "beta de carbón"
+  COARSE_DIRT: "tierra êttérî"
+  COBBLED_DEEPSLATE: "adoquinao de piçarra"
+  COBBLED_DEEPSLATE_SLAB: "bardoça d'adoquinao de piçarra"
+  COBBLED_DEEPSLATE_STAIRS: "êccalerâ d'adoquinao de piçarra"
+  COBBLED_DEEPSLATE_WALL: "muro d'adoquinao de piçarra"
+  COBBLESTONE: "adoquín"
+  COBBLESTONE_SLAB: "bardoça d'adoquín"
+  COBBLESTONE_STAIRS: "êccalerâ d'adoquín"
+  COBBLESTONE_WALL: "muro d'adoquín"
+  COBWEB: "telaraña"
+  COCOA: "cacao"
+  COMMAND_BLOCK: "bloque de comandô"
+  COMPARATOR: "comparadôh de redstone"
+  COMPOSTER: "compôttadôh"
+  CONDUIT: "canaliçadôh"
+  COPPER_BLOCK: "bloque de cobre"
+  COPPER_BULB: "lámpa de cobre"
+  COPPER_DOOR: "puerta de cobrè"
+  COPPER_GRATE: "rejiya de cobre"
+  COPPER_ORE: "beta de cobre"
+  COPPER_TRAPDOOR: "trampiya de cobre"
+  CORNFLOWER: "açiano"
+  CRACKED_DEEPSLATE_BRICKS: "ladriyô de piçarra rêqquebrahá"
+  CRACKED_DEEPSLATE_TILES: "ladriyô de loçetâ de piçarra rêqquebrahá"
+  CRACKED_NETHER_BRICKS: "ladriyô der nether rêqquebrahaô"
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: "ladriyô d'açabaxe pulío rêqquebrahao"
+  CRACKED_STONE_BRICKS: "ladriyô de roca rêqquebrahá"
+  CRAFTER: "fabricadôh"
+  CRAFTING_TABLE: "meça de crâtteo"
+  CREEPER_HEAD: "cabeça de creeper"
+  CREEPER_WALL_HEAD: "cabeça de creeper en paré"
+  CRIMSON_BUTTON: "botón carmeçí"
+  CRIMSON_DOOR: "puerta carmeçí"
+  CRIMSON_FENCE: "berha carmeçí"
+  CRIMSON_FENCE_GATE: "cançela carmeçí"
+  CRIMSON_FUNGUS: "hongo carmeçí"
+  CRIMSON_HANGING_SIGN: "letrero corgante carmeçí"
+  CRIMSON_HYPHAE: "ifâ carmeçîh"
+  CRIMSON_NYLIUM: "nilio carmeçí"
+  CRIMSON_PLANKS: "tablonê carmeçíê"
+  CRIMSON_PRESSURE_PLATE: "placa de preçión carmeçí"
+  CRIMSON_ROOTS: "raíçê carmeçíê"
+  CRIMSON_SIGN: "letrero carmeçí"
+  CRIMSON_SLAB: "bardoça carmeçí"
+  CRIMSON_STAIRS: "êccalerâ carmeçíê"
+  CRIMSON_STEM: "tayo carmeçí"
+  CRIMSON_TRAPDOOR: "trampiya carmeçí"
+  CRIMSON_WALL_HANGING_SIGN: "letrero corgante carmeçí en paré"
+  CRIMSON_WALL_SIGN: "letrero carmeçí en paré"
+  CRYING_OBSIDIAN: "ôççidiana lacrimoça"
+  CUT_COPPER: "cobre cortao"
+  CUT_COPPER_SLAB: "bardoça de cobre cortao"
+  CUT_COPPER_STAIRS: "êccalerâ de cobre cortao"
+  CUT_RED_SANDSTONE: "arbero colorao cortao"
+  CUT_RED_SANDSTONE_SLAB: "bardoça d'arbero colorao cortao"
+  CUT_SANDSTONE: "arbero cortao"
+  CUT_SANDSTONE_SLAB: "bardoça d'arbero cortao"
+  CYAN_BANNER: "êttandarte çian"
+  CYAN_BED: "cama çian"
+  CYAN_CANDLE: "çirio çian"
+  CYAN_CANDLE_CAKE: "tarta con çirio çian"
+  CYAN_CARPET: "arfombra çian"
+  CYAN_CONCRETE: "hormigón çian"
+  CYAN_CONCRETE_POWDER: "çemento çian"
+  CYAN_GLAZED_TERRACOTTA: "açuleho çian"
+  CYAN_SHULKER_BOX: "caha de shulker çian"
+  CYAN_STAINED_GLASS: "crîttâh tintao de çian"
+  CYAN_STAINED_GLASS_PANE: "panêh de crîttâh tintao de çian"
+  CYAN_TERRACOTTA: "terracota çian"
+  CYAN_WOOL: "lana çian"
+  DAMAGED_ANVIL: "yunque mu dañao"
+  DANDELION: "diente de león"
+  DARK_OAK_BUTTON: "botón de xaparro"
+  DARK_OAK_DOOR: "puerta de xaparro"
+  DARK_OAK_FENCE: "berha de xaparro"
+  DARK_OAK_FENCE_GATE: "cançela de xaparro"
+  DARK_OAK_HANGING_SIGN: "letrero corgante de xaparro"
+  DARK_OAK_LEAVES: "ohâ de xaparro"
+  DARK_OAK_LOG: "tronco de xaparro"
+  DARK_OAK_PLANKS: "tablonê de xaparro"
+  DARK_OAK_PRESSURE_PLATE: "placa de preçión de xaparro"
+  DARK_OAK_SAPLING: "brote de xaparro"
+  DARK_OAK_SIGN: "letrero de xaparro"
+  DARK_OAK_SLAB: "bardoça de xaparro"
+  DARK_OAK_STAIRS: "êccalerâ de xaparro"
+  DARK_OAK_TRAPDOOR: "trampiya de xaparro"
+  DARK_OAK_WALL_HANGING_SIGN: "letrero corgante de xaparro en paré"
+  DARK_OAK_WALL_SIGN: "letrero de xaparro en paré"
+  DARK_OAK_WOOD: "leño de xaparro"
+  DARK_PRISMARINE: "prîmmarina êccura"
+  DARK_PRISMARINE_SLAB: "bardoça de prîmmarina êccura"
+  DARK_PRISMARINE_STAIRS: "êccalerâ de prîmmarina êccura"
+  DAYLIGHT_DETECTOR: "çençôh de lûh çolâh"
+  DEAD_BRAIN_CORAL: "corâh de çerebro muerto"
+  DEAD_BRAIN_CORAL_BLOCK: "bloque de corâh de çerebro muerto"
+  DEAD_BRAIN_CORAL_FAN: "gorgonia de çerebro muerta"
+  DEAD_BRAIN_CORAL_WALL_FAN: "gorgonia de çerebro muerta en paré"
+  DEAD_BUBBLE_CORAL: "corâh de burbuha muerto"
+  DEAD_BUBBLE_CORAL_BLOCK: "bloque de corâh de burbuha muerto"
+  DEAD_BUBBLE_CORAL_FAN: "gorgonia de burbuha muerta"
+  DEAD_BUBBLE_CORAL_WALL_FAN: "gorgonia de burbuha muerta en paré"
+  DEAD_BUSH: "arbûtto muerto"
+  DEAD_FIRE_CORAL: "corâh de fuego muerto"
+  DEAD_FIRE_CORAL_BLOCK: "bloque de corâh de fuego muerto"
+  DEAD_FIRE_CORAL_FAN: "gorgonia de fuego muerta"
+  DEAD_FIRE_CORAL_WALL_FAN: "gorgonia de fuego muerta en paré"
+  DEAD_HORN_CORAL: "corâh de cuênno muerto"
+  DEAD_HORN_CORAL_BLOCK: "bloque de corâh de cuênno muerto"
+  DEAD_HORN_CORAL_FAN: "gorgonia de cuênno muerta"
+  DEAD_HORN_CORAL_WALL_FAN: "gorgonia de cuênno muerta en paré"
+  DEAD_TUBE_CORAL: "corâh de tubo muerto"
+  DEAD_TUBE_CORAL_BLOCK: "bloque de corâh de tubo muerto"
+  DEAD_TUBE_CORAL_FAN: "gorgonia de tubo muerta"
+  DEAD_TUBE_CORAL_WALL_FAN: "gorgonia de tubo muerta en paré"
+  DECORATED_POT: "baçiha decorá"
+  DEEPSLATE: "piçarra"
+  DEEPSLATE_BRICK_SLAB: "bardoça de ladriyô de piçarra"
+  DEEPSLATE_BRICK_STAIRS: "êccalerâ de ladriyô de piçarra"
+  DEEPSLATE_BRICK_WALL: "muro de ladriyô de piçarra"
+  DEEPSLATE_BRICKS: "ladriyô de piçarra"
+  DEEPSLATE_COAL_ORE: "beta de carbón de piçarra"
+  DEEPSLATE_COPPER_ORE: "beta de cobre de piçarra"
+  DEEPSLATE_DIAMOND_ORE: "beta de diamante de piçarra"
+  DEEPSLATE_EMERALD_ORE: "beta d'êmmerarda de piçarra"
+  DEEPSLATE_GOLD_ORE: "beta d'oro de piçarra"
+  DEEPSLATE_IRON_ORE: "beta de yerro de piçarra"
+  DEEPSLATE_LAPIS_ORE: "beta de lapîl-láçuli de piçarra"
+  DEEPSLATE_REDSTONE_ORE: "beta de redstone de piçarra"
+  DEEPSLATE_TILE_SLAB: "bardoça de loçetâ de piçarra"
+  DEEPSLATE_TILE_STAIRS: "êccalerâ de loçetâ de piçarra"
+  DEEPSLATE_TILE_WALL: "muro de loçetâ de piçarra"
+  DEEPSLATE_TILES: "loçetâ de piçarra"
+  DETECTOR_RAIL: "raîh detêttôh"
+  DIAMOND_BLOCK: "bloque de diamante"
+  DIAMOND_ORE: "beta de diamante"
+  DIORITE: "diorita"
+  DIORITE_SLAB: "bardoça de diorita"
+  DIORITE_STAIRS: "êccalerâ de diorita"
+  DIORITE_WALL: "muro de diorita"
+  DIRT: "tierra"
+  DIRT_PATH: "beréa"
+  DISPENSER: "dîppençadôh"
+  DRAGON_EGG: "guebo de dragón"
+  DRAGON_HEAD: "cabeça de dragón"
+  DRAGON_WALL_HEAD: "cabeça de dragón en paré"
+  DRIED_KELP_BLOCK: "bloque d'argâ çecâ"
+  DRIPSTONE_BLOCK: "bloque d'êppeleotema"
+  DROPPER: "çortadôh"
+  EMERALD_BLOCK: "bloque d'êmmerarda"
+  EMERALD_ORE: "beta d'êmmerarda"
+  ENCHANTING_TABLE: "meça d'encantamientô"
+  END_GATEWAY: "âççeço al end"
+  END_PORTAL: "portâh del end"
+  END_PORTAL_FRAME: "marco der portâh del end"
+  END_ROD: "bara del end"
+  END_STONE: "roca del end"
+  END_STONE_BRICK_SLAB: "bardoça de ladriyô de roca del end"
+  END_STONE_BRICK_STAIRS: "êccalerâ de ladriyô de roca del end"
+  END_STONE_BRICK_WALL: "muro de ladriyô de roca del end"
+  END_STONE_BRICKS: "ladriyô de roca del end"
+  ENDER_CHEST: "baûh d'ender"
+  EXPOSED_CHISELED_COPPER: "cobre çinçelao êppuêtto"
+  EXPOSED_COPPER: "cobre êppuêtto"
+  EXPOSED_COPPER_BULB: "lámpa de cobre êppuêtto"
+  EXPOSED_COPPER_DOOR: "puerta de cobre êppuêtto"
+  EXPOSED_COPPER_GRATE: "rejiya de cobre êppuêtto"
+  EXPOSED_COPPER_TRAPDOOR: "trampiya de cobre êppuêtto"
+  EXPOSED_CUT_COPPER: "cobre cortao êppuêtto"
+  EXPOSED_CUT_COPPER_SLAB: "bardoça de cobre cortao êppuêtto"
+  EXPOSED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao êppuêtto"
+  FARMLAND: "tierra de curtibo"
+  FERN: "helexo"
+  FIRE: "fuego"
+  FIRE_CORAL: "corâh de fuego"
+  FIRE_CORAL_BLOCK: "bloque de corâh de fuego"
+  FIRE_CORAL_FAN: "gorgonia de fuego"
+  FIRE_CORAL_WALL_FAN: "gorgonia de fuego en paré"
+  FLETCHING_TABLE: "meça de flexâ"
+  FLOWER_POT: "tiêtto"
+  FLOWERING_AZALEA: "açalea en flôh"
+  FLOWERING_AZALEA_LEAVES: "ohâ d'açalea en flôh"
+  FROGSPAWN: "guebâ de rana"
+  FROSTED_ICE: "êccarxa"
+  FURNACE: "hônno"
+  GILDED_BLACKSTONE: "açabaxe áureo"
+  GLASS: "crîttâh"
+  GLASS_PANE: "panêh de crîttâh"
+  GLOW_LICHEN: "liquen briyante"
+  GLOWSTONE: "roca briyante"
+  GOLD_BLOCK: "bloque d'oro"
+  GOLD_ORE: "beta d'oro"
+  GRANITE: "granito"
+  GRANITE_SLAB: "bardoça de granito"
+  GRANITE_STAIRS: "êccalerâ de granito"
+  GRANITE_WALL: "muro de granito"
+  GRASS: "yerba"
+  GRASS_BLOCK: "bloque de yerba"
+  GRAVEL: "çaorra"
+  GRAY_BANNER: "êttandarte grîh"
+  GRAY_BED: "cama grîh"
+  GRAY_CANDLE: "çirio grîh"
+  GRAY_CANDLE_CAKE: "tarta con çirio grîh"
+  GRAY_CARPET: "arfombra grîh"
+  GRAY_CONCRETE: "hormigón grîh"
+  GRAY_CONCRETE_POWDER: "çemento grîh"
+  GRAY_GLAZED_TERRACOTTA: "açuleho grîh"
+  GRAY_SHULKER_BOX: "caha de shulker grîh"
+  GRAY_STAINED_GLASS: "crîttâh tintao de grîh"
+  GRAY_STAINED_GLASS_PANE: "panêh de crîttâh tintao de grîh"
+  GRAY_TERRACOTTA: "terracota grîh"
+  GRAY_WOOL: "lana grîh"
+  GREEN_BANNER: "êttandarte berde"
+  GREEN_BED: "cama berde"
+  GREEN_CANDLE: "çirio berde"
+  GREEN_CANDLE_CAKE: "tarta con çirio berde"
+  GREEN_CARPET: "arfombra berde"
+  GREEN_CONCRETE: "hormigón berde"
+  GREEN_CONCRETE_POWDER: "çemento berde"
+  GREEN_GLAZED_TERRACOTTA: "açuleho berde"
+  GREEN_SHULKER_BOX: "caha de shulker berde"
+  GREEN_STAINED_GLASS: "crîttâh tintao de berde"
+  GREEN_STAINED_GLASS_PANE: "panêh de crîttâh tintao de berde"
+  GREEN_TERRACOTTA: "terracota berde"
+  GREEN_WOOL: "lana berde"
+  GRINDSTONE: "muela d'afilâh"
+  HANGING_ROOTS: "raíçê corgantê"
+  HAY_BLOCK: "arpaca de paha"
+  HEAVY_WEIGHTED_PRESSURE_PLATE: "placa de preçión pa peço elebao"
+  HONEY_BLOCK: "bloque de miêh"
+  HONEYCOMB_BLOCK: "bloque de panâh"
+  HOPPER: "torba"
+  HORN_CORAL: "corâh de cuênno"
+  HORN_CORAL_BLOCK: "bloque de corâh de cuênno"
+  HORN_CORAL_FAN: "gorgonia de cuênno"
+  HORN_CORAL_WALL_FAN: "gorgonia de cuênno en paré"
+  ICE: "yelo"
+  INFESTED_CHISELED_STONE_BRICKS: "ladriyô de roca êccurpía infêttá"
+  INFESTED_COBBLESTONE: "adoquín infêttáo"
+  INFESTED_CRACKED_STONE_BRICKS: "ladriyô de roca rêqquebrahá infêttá"
+  INFESTED_DEEPSLATE: "piçarra infêttá"
+  INFESTED_MOSSY_STONE_BRICKS: "ladriyô de roca mûggoça infêttá"
+  INFESTED_STONE: "roca infêttá"
+  INFESTED_STONE_BRICKS: "ladriyô de roca infêttá"
+  IRON_BARS: "barrotê de yerro"
+  IRON_BLOCK: "bloque de yerro"
+  IRON_DOOR: "puerta de yerro"
+  IRON_ORE: "beta de yerro"
+  IRON_TRAPDOOR: "trampiya de yerro"
+  JACK_O_LANTERN: "calabaça de toçantô"
+  JIGSAW: "bloque rompecabeçâ"
+  JUKEBOX: "tocadîccô"
+  JUNGLE_BUTTON: "botón de hungla"
+  JUNGLE_DOOR: "puerta de hungla"
+  JUNGLE_FENCE: "berha de hungla"
+  JUNGLE_FENCE_GATE: "cançela de hungla"
+  JUNGLE_HANGING_SIGN: "letrero corgante de hungla"
+  JUNGLE_LEAVES: "ohâ de hungla"
+  JUNGLE_LOG: "tronco de hungla"
+  JUNGLE_PLANKS: "tablonê de hungla"
+  JUNGLE_PRESSURE_PLATE: "placa de preçión de hungla"
+  JUNGLE_SAPLING: "brote de hungla"
+  JUNGLE_SIGN: "letrero de hungla"
+  JUNGLE_SLAB: "bardoça de hungla"
+  JUNGLE_STAIRS: "êccalerâ de hungla"
+  JUNGLE_TRAPDOOR: "trampiya de hungla"
+  JUNGLE_WALL_HANGING_SIGN: "letrero corgante de hungla en paré"
+  JUNGLE_WALL_SIGN: "letrero de hungla en paré"
+  JUNGLE_WOOD: "leño de hungla"
+  KELP: "arga"
+  KELP_PLANT: "tayo d'arga"
+  LADDER: "êccalera de mano"
+  LANTERN: "faroliyo"
+  LAPIS_BLOCK: "bloque de lapîl-láçuli"
+  LAPIS_ORE: "beta de lapîl-láçuli"
+  LARGE_AMETHYST_BUD: "crîttâh d'ametîtta grande"
+  LARGE_FERN: "helexo grande"
+  LAVA: "laba"
+  LAVA_CAULDRON: "cardero de laba"
+  LECTERN: "atrîh"
+  LEVER: "palanca"
+  LIGHT: "lûh"
+  LIGHT_BLUE_BANNER: "êttandarte açûh claro"
+  LIGHT_BLUE_BED: "cama açûh claro"
+  LIGHT_BLUE_CANDLE: "çirio açûh claro"
+  LIGHT_BLUE_CANDLE_CAKE: "tarta con çirio açûh claro"
+  LIGHT_BLUE_CARPET: "arfombra açûh claro"
+  LIGHT_BLUE_CONCRETE: "hormigón açûh claro"
+  LIGHT_BLUE_CONCRETE_POWDER: "çemento açûh claro"
+  LIGHT_BLUE_GLAZED_TERRACOTTA: "açuleho açûh claro"
+  LIGHT_BLUE_SHULKER_BOX: "caha de shulker açûh claro"
+  LIGHT_BLUE_STAINED_GLASS: "crîttâh tintao d'açûh claro"
+  LIGHT_BLUE_STAINED_GLASS_PANE: "panêh de crîttâh tintao d'açûh claro"
+  LIGHT_BLUE_TERRACOTTA: "terracota açûh claro"
+  LIGHT_BLUE_WOOL: "lana açûh claro"
+  LIGHT_GRAY_BANNER: "êttandarte grîh claro"
+  LIGHT_GRAY_BED: "cama grîh claro"
+  LIGHT_GRAY_CANDLE: "çirio grîh claro"
+  LIGHT_GRAY_CANDLE_CAKE: "tarta con çirio grîh claro"
+  LIGHT_GRAY_CARPET: "arfombra grîh claro"
+  LIGHT_GRAY_CONCRETE: "hormigón grîh claro"
+  LIGHT_GRAY_CONCRETE_POWDER: "çemento grîh claro"
+  LIGHT_GRAY_GLAZED_TERRACOTTA: "açuleho grîh claro"
+  LIGHT_GRAY_SHULKER_BOX: "caha de shulker grîh claro"
+  LIGHT_GRAY_STAINED_GLASS: "crîttâh tintao de grîh claro"
+  LIGHT_GRAY_STAINED_GLASS_PANE: "panêh de crîttâh tintao de grîh claro"
+  LIGHT_GRAY_TERRACOTTA: "terracota grîh claro"
+  LIGHT_GRAY_WOOL: "lana grîh claro"
+  LIGHT_WEIGHTED_PRESSURE_PLATE: "placa de preçión pa peço lihero"
+  LIGHTNING_ROD: "pararrayô"
+  LILAC: "lila"
+  LILY_OF_THE_VALLEY: "lirio der baye"
+  LILY_PAD: "nenúfâ"
+  LIME_BANNER: "êttandarte lima"
+  LIME_BED: "cama lima"
+  LIME_CANDLE: "çirio lima"
+  LIME_CANDLE_CAKE: "tarta con çirio lima"
+  LIME_CARPET: "arfombra lima"
+  LIME_CONCRETE: "hormigón lima"
+  LIME_CONCRETE_POWDER: "çemento lima"
+  LIME_GLAZED_TERRACOTTA: "açuleho lima"
+  LIME_SHULKER_BOX: "caha de shulker lima"
+  LIME_STAINED_GLASS: "crîttâh tintao de lima"
+  LIME_STAINED_GLASS_PANE: "panêh de crîttâh tintao de lima"
+  LIME_TERRACOTTA: "terracota lima"
+  LIME_WOOL: "lana lima"
+  LODESTONE: "mânnetita"
+  LOOM: "telâh"
+  MAGENTA_BANNER: "êttandarte mahenta"
+  MAGENTA_BED: "cama mahenta"
+  MAGENTA_CANDLE: "çirio mahenta"
+  MAGENTA_CANDLE_CAKE: "tarta con çirio mahenta"
+  MAGENTA_CARPET: "arfombra mahenta"
+  MAGENTA_CONCRETE: "hormigón mahenta"
+  MAGENTA_CONCRETE_POWDER: "çemento mahenta"
+  MAGENTA_GLAZED_TERRACOTTA: "açuleho mahenta"
+  MAGENTA_SHULKER_BOX: "caha de shulker mahenta"
+  MAGENTA_STAINED_GLASS: "crîttâh tintao de mahenta"
+  MAGENTA_STAINED_GLASS_PANE: "panêh de crîttâh tintao de mahenta"
+  MAGENTA_TERRACOTTA: "terracota mahenta"
+  MAGENTA_WOOL: "lana mahenta"
+  MAGMA_BLOCK: "bloque de mâmma"
+  MANGROVE_BUTTON: "botón de mangle"
+  MANGROVE_DOOR: "puerta de mangle"
+  MANGROVE_FENCE: "berha de mangle"
+  MANGROVE_FENCE_GATE: "cançela de mangle"
+  MANGROVE_HANGING_SIGN: "letrero corgante de mangle"
+  MANGROVE_LEAVES: "ohâ de mangle"
+  MANGROVE_LOG: "tronco de mangle"
+  MANGROVE_PLANKS: "tablonê de mangle"
+  MANGROVE_PRESSURE_PLATE: "placa de preçión de mangle"
+  MANGROVE_PROPAGULE: "propágulo de mangle"
+  MANGROVE_ROOTS: "raíçê de mangle"
+  MANGROVE_SIGN: "letrero de mangle"
+  MANGROVE_SLAB: "bardoça de mangle"
+  MANGROVE_STAIRS: "êccalerâ de mangle"
+  MANGROVE_TRAPDOOR: "trampiya de mangle"
+  MANGROVE_WALL_HANGING_SIGN: "letrero corgante de mangle en paré"
+  MANGROVE_WALL_SIGN: "letrero de mangle en paré"
+  MANGROVE_WOOD: "leño de mangle"
+  MEDIUM_AMETHYST_BUD: "crîttâh d'ametîtta mediano"
+  MELON: "açendía"
+  MELON_STEM: "tayo d'açendía"
+  MOSS_BLOCK: "bloque de mûggo"
+  MOSS_CARPET: "arfombra de mûggo"
+  MOSSY_COBBLESTONE: "adoquín mûggoço"
+  MOSSY_COBBLESTONE_SLAB: "bardoça d'adoquín mûggoço"
+  MOSSY_COBBLESTONE_STAIRS: "êccalerâ d'adoquín mûggoço"
+  MOSSY_COBBLESTONE_WALL: "muro d'adoquín mûggoço"
+  MOSSY_STONE_BRICK_SLAB: "bardoça de ladriyô de roca mûggoça"
+  MOSSY_STONE_BRICK_STAIRS: "êccalerâ de ladriyô de roca mûggoça"
+  MOSSY_STONE_BRICK_WALL: "muro de ladriyô de roca mûggoça"
+  MOSSY_STONE_BRICKS: "ladriyô de roca mûggoça"
+  MOVING_PISTON: "pîttón en mobimiento"
+  MUD: "fango"
+  MUD_BRICK_SLAB: "bardoça de ladriyô d'adobe"
+  MUD_BRICK_STAIRS: "êccalerâ de ladriyô d'adobe"
+  MUD_BRICK_WALL: "muro de ladriyô d'adobe"
+  MUD_BRICKS: "ladriyô d'adobe"
+  MUDDY_MANGROVE_ROOTS: "raíçê de mangle enfangâh"
+  MUSHROOM_STEM: "tayo de gurumelo"
+  MYCELIUM: "miçelio"
+  NETHER_BRICK_FENCE: "berha de ladriyô der nether"
+  NETHER_BRICK_SLAB: "bardoça de ladriyô der nether"
+  NETHER_BRICK_STAIRS: "êccalerâ de ladriyô der nether"
+  NETHER_BRICK_WALL: "muro de ladriyô der nether"
+  NETHER_BRICKS: "ladriyô der nether"
+  NETHER_GOLD_ORE: "beta d'oro der nether"
+  NETHER_PORTAL: "portâh ar nether"
+  NETHER_QUARTZ_ORE: "beta de cuarço der nether"
+  NETHER_SPROUTS: "brotê der nether"
+  NETHER_WART: "berruga der nether"
+  NETHER_WART_BLOCK: "bloque de berrugâ der nether"
+  NETHERITE_BLOCK: "bloque de netherita"
+  NETHERRACK: "netherrack"
+  NOTE_BLOCK: "bloque muçicâh"
+  OAK_BUTTON: "botón de quehigo"
+  OAK_DOOR: "puerta de quehigo"
+  OAK_FENCE: "berha de quehigo"
+  OAK_FENCE_GATE: "cançela de quehigo"
+  OAK_HANGING_SIGN: "letrero corgante de quehigo"
+  OAK_LEAVES: "ohâ de quehigo"
+  OAK_LOG: "tronco de quehigo"
+  OAK_PLANKS: "tablonê de quehigo"
+  OAK_PRESSURE_PLATE: "placa de preçión de quehigo"
+  OAK_SAPLING: "brote de quehigo"
+  OAK_SIGN: "letrero de quehigo"
+  OAK_SLAB: "bardoça de quehigo"
+  OAK_STAIRS: "êccalerâ de quehigo"
+  OAK_TRAPDOOR: "trampiya de quehigo"
+  OAK_WALL_HANGING_SIGN: "letrero corgante de quehigo en paré"
+  OAK_WALL_SIGN: "letrero de quehigo en paré"
+  OAK_WOOD: "leño de quehigo"
+  OBSERVER: "ôççerbadôh"
+  OBSIDIAN: "ôççidiana"
+  OCHRE_FROGLIGHT: "linterana ocre"
+  OMINOUS_BANNER: "êttandarte nefâtto"
+  ORANGE_BANNER: "êttandarte naranha"
+  ORANGE_BED: "cama naranha"
+  ORANGE_CANDLE: "çirio naranha"
+  ORANGE_CANDLE_CAKE: "tarta con çirio naranha"
+  ORANGE_CARPET: "arfombra naranha"
+  ORANGE_CONCRETE: "hormigón naranha"
+  ORANGE_CONCRETE_POWDER: "çemento naranha"
+  ORANGE_GLAZED_TERRACOTTA: "açuleho naranha"
+  ORANGE_SHULKER_BOX: "caha de shulker naranha"
+  ORANGE_STAINED_GLASS: "crîttâh tintao de naranha"
+  ORANGE_STAINED_GLASS_PANE: "panêh de crîttâh tintao de naranha"
+  ORANGE_TERRACOTTA: "terracota naranha"
+  ORANGE_TULIP: "tulipán naranha"
+  ORANGE_WOOL: "lana naranha"
+  OXEYE_DAISY: "margarita"
+  OXIDIZED_CHISELED_COPPER: "cobre çinçelao ôççidao"
+  OXIDIZED_COPPER: "cobre ôççidao"
+  OXIDIZED_COPPER_BULB: "lámpa de cobre ôççidao"
+  OXIDIZED_COPPER_DOOR: "puerta de cobre ôççidao"
+  OXIDIZED_COPPER_GRATE: "rehiya de cobre ôççidao"
+  OXIDIZED_COPPER_TRAPDOOR: "trampiya de cobre ôççidao"
+  OXIDIZED_CUT_COPPER: "cobre cortao ôççidao"
+  OXIDIZED_CUT_COPPER_SLAB: "bardoça de cobre cortao ôççidao"
+  OXIDIZED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao ôççidao"
+  PACKED_ICE: "yelo compâttao"
+  PACKED_MUD: "adobe"
+  PEARLESCENT_FROGLIGHT: "linterana nacará"
+  PEONY: "peonía"
+  PETRIFIED_OAK_SLAB: "bardoça de quehigo petrificao"
+  PIGLIN_HEAD: "cabeça de piglin"
+  PIGLIN_WALL_HEAD: "cabeça de piglin en paré"
+  PINK_BANNER: "êttandarte roça"
+  PINK_BED: "cama roça"
+  PINK_CANDLE: "çirio roça"
+  PINK_CANDLE_CAKE: "tarta con çirio roça"
+  PINK_CARPET: "arfombra roça"
+  PINK_CONCRETE: "hormigón roça"
+  PINK_CONCRETE_POWDER: "çemento roça"
+  PINK_GLAZED_TERRACOTTA: "açuleho roça"
+  PINK_PETALS: "pétalô roçâ"
+  PINK_SHULKER_BOX: "caha de shulker roça"
+  PINK_STAINED_GLASS: "crîttâh tintao de roça"
+  PINK_STAINED_GLASS_PANE: "panêh de crîttâh tintao de roça"
+  PINK_TERRACOTTA: "terracota roça"
+  PINK_TULIP: "tulipán roça"
+  PINK_WOOL: "lana roça"
+  PISTON: "pîttón"
+  PISTON_HEAD: "cabeça de pîttón"
+  PITCHER_CROP: "curtibo de planta odre"
+  PITCHER_PLANT: "planta odre"
+  PLAYER_HEAD: "cabeça de hugadôh"
+  PLAYER_HEAD_NAMED: "cabeça de %s"
+  PLAYER_WALL_HEAD: "cabeça de hugadôh en paré"
+  PODZOL: "podçol"
+  POINTED_DRIPSTONE: "êppeleotema afilao"
+  POLISHED_ANDESITE: "andeçita pulía"
+  POLISHED_ANDESITE_SLAB: "bardoça d'andeçita pulía"
+  POLISHED_ANDESITE_STAIRS: "êccalerâ d'andeçita pulía"
+  POLISHED_BASALT: "baçarto pulío"
+  POLISHED_BLACKSTONE: "açabaxe pulío"
+  POLISHED_BLACKSTONE_BRICK_SLAB: "bardoça de ladriyô d'açabaxe pulío"
+  POLISHED_BLACKSTONE_BRICK_STAIRS: "êccalerâ de ladriyô d'açabaxe pulío"
+  POLISHED_BLACKSTONE_BRICK_WALL: "muro de ladriyô d'açabaxe pulío"
+  POLISHED_BLACKSTONE_BRICKS: "ladriyô d'açabaxe pulío"
+  POLISHED_BLACKSTONE_BUTTON: "botón d'açabaxe pulío"
+  POLISHED_BLACKSTONE_PRESSURE_PLATE: "placa de preçión d'açabaxe pulío"
+  POLISHED_BLACKSTONE_SLAB: "bardoça d'açabaxe pulío"
+  POLISHED_BLACKSTONE_STAIRS: "êccalerâ d'açabaxe pulío"
+  POLISHED_BLACKSTONE_WALL: "muro d'açabaxe pulío"
+  POLISHED_DEEPSLATE: "piçarra pulía"
+  POLISHED_DEEPSLATE_SLAB: "bardoça de piçarra pulía"
+  POLISHED_DEEPSLATE_STAIRS: "êccalerâ de piçarra pulía"
+  POLISHED_DEEPSLATE_WALL: "muro de piçarra pulía"
+  POLISHED_DIORITE: "diorita pulía"
+  POLISHED_DIORITE_SLAB: "bardoça de diorita pulía"
+  POLISHED_DIORITE_STAIRS: "êccalerâ de diorita pulía"
+  POLISHED_GRANITE: "granito pulío"
+  POLISHED_GRANITE_SLAB: "bardoça de granito pulío"
+  POLISHED_GRANITE_STAIRS: "êccalerâ de granito pulío"
+  POLISHED_TUFF: "toba pulida"
+  POLISHED_TUFF_SLAB: "loça de toba pulida"
+  POLISHED_TUFF_STAIRS: "êccalerâ de toba pulida"
+  POLISHED_TUFF_WALL: "muro de toba pulida"
+  POPPY: "amapola"
+  POTATOES: "papâ"
+  POTTED_ACACIA_SAPLING: "tiêtto con brote de mimoça"
+  POTTED_ALLIUM: "tiêtto con allium"
+  POTTED_AZALEA_BUSH: "tiêtto con açalea"
+  POTTED_AZURE_BLUET: "tiêtto con rubiáçea"
+  POTTED_BAMBOO: "tiêtto con bambú"
+  POTTED_BIRCH_SAPLING: "tiêtto con brote de xopo"
+  POTTED_BLUE_ORCHID: "tiêtto con orquídia açûh"
+  POTTED_BROWN_MUSHROOM: "tiêtto con gurumelo marrón"
+  POTTED_CACTUS: "tiêtto con câttû"
+  POTTED_CHERRY_SAPLING: "tiêtto con brote de çereço"
+  POTTED_CORNFLOWER: "tiêtto con açiano"
+  POTTED_CRIMSON_FUNGUS: "tiêtto con hongo carmeçí"
+  POTTED_CRIMSON_ROOTS: "tiêtto con raíçê carmeçíê"
+  POTTED_DANDELION: "tiêtto con diente de león"
+  POTTED_DARK_OAK_SAPLING: "tiêtto con brote de xaparro"
+  POTTED_DEAD_BUSH: "tiêtto con arbûtto çeco"
+  POTTED_FERN: "tiêtto con helexo"
+  POTTED_FLOWERING_AZALEA_BUSH: "tiêtto con açalea en flôh"
+  POTTED_JUNGLE_SAPLING: "tiêtto con brote de hungla"
+  POTTED_LILY_OF_THE_VALLEY: "tiêtto con lirio der baye"
+  POTTED_MANGROVE_PROPAGULE: "tiêtto con propágulo de mangle"
+  POTTED_OAK_SAPLING: "tiêtto con brote de quehigo"
+  POTTED_ORANGE_TULIP: "tiêtto con tulipán naranha"
+  POTTED_OXEYE_DAISY: "tiêtto con margarita"
+  POTTED_PINK_TULIP: "tiêtto con tulipán roça"
+  POTTED_POPPY: "tiêtto con amapola"
+  POTTED_RED_MUSHROOM: "tiêtto con gurumelo colorao"
+  POTTED_RED_TULIP: "tiêtto con tulipán colorao"
+  POTTED_SPRUCE_SAPLING: "tiêtto con brote de pinçapo"
+  POTTED_TORCHFLOWER: "tiêtto con plantorxa"
+  POTTED_WARPED_FUNGUS: "tiêtto con hongo êttrambótico"
+  POTTED_WARPED_ROOTS: "tiêtto con raíçê êttrambóticâ"
+  POTTED_WHITE_TULIP: "tiêtto con tulipán blanco"
+  POTTED_WITHER_ROSE: "tiêtto con roça de wither"
+  POWDER_SNOW: "niebe porbo"
+  POWDER_SNOW_CAULDRON: "cardero de niebe porbo"
+  POWERED_RAIL: "raîh propurçôh"
+  PRISMARINE: "prîmmarina"
+  PRISMARINE_BRICK_SLAB: "bardoça de ladriyô de prîmmarina"
+  PRISMARINE_BRICK_STAIRS: "êccalerâ de ladriyô de prîmmarina"
+  PRISMARINE_BRICKS: "ladriyô de prîmmarina"
+  PRISMARINE_SLAB: "bardoça de prîmmarina"
+  PRISMARINE_STAIRS: "êccalerâ de prîmmarina"
+  PRISMARINE_WALL: "muro de prîmmarina"
+  PUMPKIN: "calabaça"
+  PUMPKIN_STEM: "tayo de calabaça"
+  PURPLE_BANNER: "êttandarte morao"
+  PURPLE_BED: "cama morá"
+  PURPLE_CANDLE: "çirio morao"
+  PURPLE_CANDLE_CAKE: "tarta con çirio morao"
+  PURPLE_CARPET: "arfombra morá"
+  PURPLE_CONCRETE: "hormigón morao"
+  PURPLE_CONCRETE_POWDER: "çemento morao"
+  PURPLE_GLAZED_TERRACOTTA: "açuleho morao"
+  PURPLE_SHULKER_BOX: "caha de shulker morá"
+  PURPLE_STAINED_GLASS: "crîttâh tintao de morao"
+  PURPLE_STAINED_GLASS_PANE: "panêh de crîttâh tintao de morao"
+  PURPLE_TERRACOTTA: "terracota morá"
+  PURPLE_WOOL: "lana morá"
+  PURPUR_BLOCK: "bloque de púrpur"
+  PURPUR_PILLAR: "pilâh de púrpur"
+  PURPUR_SLAB: "bardoça de púrpur"
+  PURPUR_STAIRS: "êccalerâ de púrpur"
+  QUARTZ_BLOCK: "bloque de cuarço"
+  QUARTZ_BRICKS: "ladriyô de cuarço"
+  QUARTZ_PILLAR: "pilâh de cuarço"
+  QUARTZ_SLAB: "bardoça de cuarço"
+  QUARTZ_STAIRS: "êccalerâ de cuarço"
+  RAIL: "raîh"
+  RAW_COPPER_BLOCK: "bloque de minerâh de cobre"
+  RAW_GOLD_BLOCK: "bloque de minerâh d'oro"
+  RAW_IRON_BLOCK: "bloque de minerâh de yerro"
+  RED_BANNER: "êttandarte colorao"
+  RED_BED: "cama colorá"
+  RED_CANDLE: "çirio colorao"
+  RED_CANDLE_CAKE: "tarta con çirio colorao"
+  RED_CARPET: "arfombra colorá"
+  RED_CONCRETE: "hormigón colorao"
+  RED_CONCRETE_POWDER: "çemento colorao"
+  RED_GLAZED_TERRACOTTA: "açuleho colorao"
+  RED_MUSHROOM: "gurumelo colorao"
+  RED_MUSHROOM_BLOCK: "bloque de gurumelo colorao"
+  RED_NETHER_BRICK_SLAB: "bardoça de ladriyô der nether coloraô"
+  RED_NETHER_BRICK_STAIRS: "êccalerâ de ladriyô der nether coloraô"
+  RED_NETHER_BRICK_WALL: "muro de ladriyô der nether coloraô"
+  RED_NETHER_BRICKS: "ladriyô der nether coloraô"
+  RED_SAND: "arena colorá"
+  RED_SANDSTONE: "arbero colorao"
+  RED_SANDSTONE_SLAB: "bardoça d'arbero colorao"
+  RED_SANDSTONE_STAIRS: "êccalerâ d'arbero colorao"
+  RED_SANDSTONE_WALL: "muro d'arbero colorao"
+  RED_SHULKER_BOX: "caha de shulker colorá"
+  RED_STAINED_GLASS: "crîttâh tintao de colorao"
+  RED_STAINED_GLASS_PANE: "panêh de crîttâh tintao de colorao"
+  RED_TERRACOTTA: "terracota colorá"
+  RED_TULIP: "tulipán colorao"
+  RED_WOOL: "lana colorá"
+  REDSTONE_BLOCK: "bloque de redstone"
+  REDSTONE_LAMP: "lámpara de redstone"
+  REDSTONE_ORE: "beta de redstone"
+  REDSTONE_TORCH: "antorxa de redstone"
+  REDSTONE_WALL_TORCH: "antorxa de redstone en paré"
+  REDSTONE_WIRE: "cable de redstone"
+  REINFORCED_DEEPSLATE: "piçarra reforçá"
+  REPEATER: "repetidôh de redstone"
+  REPEATING_COMMAND_BLOCK: "bloque de comandô iteratibo"
+  RESPAWN_ANCHOR: "áncora de reapariçión"
+  ROOTED_DIRT: "tierra enraiçá"
+  ROSE_BUSH: "roçâh"
+  SAND: "arena"
+  SANDSTONE: "arbero"
+  SANDSTONE_SLAB: "bardoça d'arbero"
+  SANDSTONE_STAIRS: "êccalerâ d'arbero"
+  SANDSTONE_WALL: "muro d'arbero"
+  SCAFFOLDING: "andamio"
+  SCULK: "sculk"
+  SCULK_CATALYST: "cataliçadôh de sculk"
+  SCULK_SENSOR: "çençôh de sculk"
+  SCULK_SHRIEKER: "xiyadôh de sculk"
+  SCULK_VEIN: "bena de sculk"
+  SEA_LANTERN: "lintênna marina"
+  SEA_PICKLE: "çipote de mâh"
+  SEAGRASS: "yerba marina"
+  SET_SPAWN: "ça êttableçío er punto de reapariçión"
+  SHORT_GRASS: "hierba corta"
+  SHROOMLIGHT: "briyongo"
+  SHULKER_BOX: "caha de shulker"
+  SKELETON_SKULL: "calabera de canina"
+  SKELETON_WALL_SKULL: "calabera de canina en paré"
+  SLIME_BLOCK: "bloque de limo"
+  SMALL_AMETHYST_BUD: "crîttâh d'ametîtta xico"
+  SMALL_DRIPLEAF: "plantaforma xica"
+  SMITHING_TABLE: "meça de herrería"
+  SMOKER: "ahumadôh"
+  SMOOTH_BASALT: "baçarto pulío"
+  SMOOTH_QUARTZ: "bloque de cuarço pulío"
+  SMOOTH_QUARTZ_SLAB: "bardoça de cuarço pulío"
+  SMOOTH_QUARTZ_STAIRS: "êccalerâ de cuarço pulío"
+  SMOOTH_RED_SANDSTONE: "arbero colorao pulío"
+  SMOOTH_RED_SANDSTONE_SLAB: "bardoça d'arbero coloráo pulío"
+  SMOOTH_RED_SANDSTONE_STAIRS: "êccalerâ d'arbero colorao pulío"
+  SMOOTH_SANDSTONE: "arbero pulío"
+  SMOOTH_SANDSTONE_SLAB: "bardoça d'arbero pulío"
+  SMOOTH_SANDSTONE_STAIRS: "êccalerâ d'arbero pulío"
+  SMOOTH_STONE: "roca pulía"
+  SMOOTH_STONE_SLAB: "bardoça de roca pulía"
+  SNIFFER_EGG: "guebo d'olîqqueadôh"
+  SNOW: "niebe"
+  SNOW_BLOCK: "bloque de niebe"
+  SOUL_CAMPFIRE: "candela d'ánimâ"
+  SOUL_FIRE: "fuego d'ánimâ"
+  SOUL_LANTERN: "faroliyo d'ánimâ"
+  SOUL_SAND: "arena d'ánimâ"
+  SOUL_SOIL: "tierra d'ánimâ"
+  SOUL_TORCH: "antorxa d'ánimâ"
+  SOUL_WALL_TORCH: "antorxa d'ánimâ en paré"
+  SPAWN_NOT_VALID: "no tienê una cama o áncora de reapariçión cargá o ç'encuentran ôttruíô"
+  SPAWNER: "heneradôh de criaturâ"
+  SPAWNER_DESC1: "interâttúa con un guebo heneradôh:"
+  SPAWNER_DESC2: "êttableçe'r tipo de criatura"
+  SPONGE: "êpponha"
+  SPORE_BLOSSOM: "flôh d'êpporâ"
+  SPRUCE_BUTTON: "botón de pinçapo"
+  SPRUCE_DOOR: "puerta de pinçapo"
+  SPRUCE_FENCE: "berha de pinçapo"
+  SPRUCE_FENCE_GATE: "cançela de pinçapo"
+  SPRUCE_HANGING_SIGN: "letrero corgante de pinçapo"
+  SPRUCE_LEAVES: "ohâ de pinçapo"
+  SPRUCE_LOG: "tronco de pinçapo"
+  SPRUCE_PLANKS: "tablonê de pinçapo"
+  SPRUCE_PRESSURE_PLATE: "placa de preçión de pinçapo"
+  SPRUCE_SAPLING: "brote de pinçapo"
+  SPRUCE_SIGN: "letrero de pinçapo"
+  SPRUCE_SLAB: "bardoça de pinçapo"
+  SPRUCE_STAIRS: "êccalerâ de pinçapo"
+  SPRUCE_TRAPDOOR: "trampiya de pinçapo"
+  SPRUCE_WALL_HANGING_SIGN: "letrero corgante de pinçapo en paré"
+  SPRUCE_WALL_SIGN: "letrero de pinçapo en paré"
+  SPRUCE_WOOD: "leño de pinçapo"
+  STICKY_PISTON: "pîttón pegahoço"
+  STONE: "roca"
+  STONE_BRICK_SLAB: "bardoça de ladriyô de roca"
+  STONE_BRICK_STAIRS: "êccalerâ de ladriyô de roca"
+  STONE_BRICK_WALL: "muro de ladriyô de roca"
+  STONE_BRICKS: "ladriyô de roca"
+  STONE_BUTTON: "botón de roca"
+  STONE_PRESSURE_PLATE: "placa de preçión de roca"
+  STONE_SLAB: "bardoça de roca"
+  STONE_STAIRS: "êccalerâ de roca"
+  STONECUTTER: "cortapiedrâ"
+  STRIPPED_ACACIA_LOG: "tronco de mimoça çin corteça"
+  STRIPPED_ACACIA_WOOD: "leño de mimoça çin corteça"
+  STRIPPED_BAMBOO_BLOCK: "bloque de bambú çin corteça"
+  STRIPPED_BIRCH_LOG: "tronco de xopo çin corteça"
+  STRIPPED_BIRCH_WOOD: "leño de xopo çin corteça"
+  STRIPPED_CHERRY_LOG: "tronco de çereço çin corteça"
+  STRIPPED_CHERRY_WOOD: "leño de çereço çin corteça"
+  STRIPPED_CRIMSON_HYPHAE: "ifâ carmeçîh çin corteça"
+  STRIPPED_CRIMSON_STEM: "tayo carmeçí çin corteça"
+  STRIPPED_DARK_OAK_LOG: "tronco de xaparro çin corteça"
+  STRIPPED_DARK_OAK_WOOD: "leño de xaparro çin corteça"
+  STRIPPED_JUNGLE_LOG: "tronco de hungla çin corteça"
+  STRIPPED_JUNGLE_WOOD: "leño de hungla çin corteça"
+  STRIPPED_MANGROVE_LOG: "tronco de mangle çin corteça"
+  STRIPPED_MANGROVE_WOOD: "leño de mangle çin corteça"
+  STRIPPED_OAK_LOG: "tronco de quehigo çin corteça"
+  STRIPPED_OAK_WOOD: "leño de quehigo çin corteça"
+  STRIPPED_SPRUCE_LOG: "tronco de pinçapo çin corteça"
+  STRIPPED_SPRUCE_WOOD: "leño de pinçapo çin corteça"
+  STRIPPED_WARPED_HYPHAE: "ifâ êttrambóticâ çin corteça"
+  STRIPPED_WARPED_STEM: "tayo êttrambótico çin corteça"
+  STRUCTURE_BLOCK: "bloque êttrûtturâh"
+  STRUCTURE_VOID: "baçío êttrûtturâh"
+  SUGAR_CANE: "caña d'açúcâ"
+  SUNFLOWER: "hiraçôh"
+  SUSPICIOUS_GRAVEL: "çaorra çôppexoça"
+  SUSPICIOUS_SAND: "arena çôppexoça"
+  SWEET_BERRY_BUSH: "arbûtto de bayâ durçê"
+  TALL_GRASS: "yerba arta"
+  TALL_SEAGRASS: "yerba marina arta"
+  TARGET: "diana"
+  TERRACOTTA: "terracota"
+  TINTED_GLASS: "crîttâh êccureçío"
+  TNT: "tnt"
+  TORCH: "antorxa"
+  TORCHFLOWER: "plantorxa"
+  TORCHFLOWER_CROP: "curtibo de plantorxa"
+  TRAPPED_CHEST: "baûh trampa"
+  TRIAL_SPAWNER: "generador de criaturas de desafío"
+  TRIPWIRE: "cordêh trampa"
+  TRIPWIRE_HOOK: "ganxo de cordêh trampa"
+  TUBE_CORAL: "corâh de tubo"
+  TUBE_CORAL_BLOCK: "bloque de corâh de tubo"
+  TUBE_CORAL_FAN: "gorgonia de tubo"
+  TUBE_CORAL_WALL_FAN: "gorgonia de tubo en paré"
+  TUFF: "tôcca"
+  TUFF_BRICK_SLAB: "loça de ladriyô de toba"
+  TUFF_BRICK_STAIRS: "êccalerâ de ladriyô de toba"
+  TUFF_BRICK_WALL: "muro de ladriyô de toba"
+  TUFF_BRICKS: "ladriyô de toba"
+  TUFF_SLAB: "loça de toba"
+  TUFF_STAIRS: "êccalerâ de toba"
+  TUFF_WALL: "muro de toba"
+  TURTLE_EGG: "guebo de tortuga"
+  TWISTING_VINES: "enreaera retorçía"
+  TWISTING_VINES_PLANT: "planta d'enreaera retorçía"
+  VERDANT_FROGLIGHT: "linterana berdoça"
+  VINE: "enreaera"
+  VOID_AIR: "aire der baçío"
+  WALL_TORCH: "antorxa en paré"
+  WARPED_BUTTON: "botón êttrambótico"
+  WARPED_DOOR: "puerta êttrambótica"
+  WARPED_FENCE: "berha êttrambótica"
+  WARPED_FENCE_GATE: "cançela êttrambótica"
+  WARPED_FUNGUS: "hongo êttrambótico"
+  WARPED_HANGING_SIGN: "letrero corgante êttrambótico"
+  WARPED_HYPHAE: "ifâ êttrambóticâ"
+  WARPED_NYLIUM: "niçelio êttrambótico"
+  WARPED_PLANKS: "tablonê êttrambóticô"
+  WARPED_PRESSURE_PLATE: "placa de preçión êttrambótica"
+  WARPED_ROOTS: "raíçê êttrambóticâ"
+  WARPED_SIGN: "letrero êttrambótico"
+  WARPED_SLAB: "bardoça êttrambótica"
+  WARPED_STAIRS: "êccalerâ êttrambóticâ"
+  WARPED_STEM: "tayo êttrambótico"
+  WARPED_TRAPDOOR: "trampiya êttrambótica"
+  WARPED_WALL_HANGING_SIGN: "letrero corgante êttrambótico en paré"
+  WARPED_WALL_SIGN: "letrero êttrambótico en paré"
+  WARPED_WART_BLOCK: "bloque de berrugâ êttrambóticâ"
+  WATER: "agua"
+  WATER_CAULDRON: "cardero d'agua"
+  WAXED_CHISELED_COPPER: "cobre çinçelao ençerao"
+  WAXED_COPPER_BLOCK: "bloque de cobre ençerao"
+  WAXED_COPPER_BULB: "lámpa de cobre ençerao"
+  WAXED_COPPER_DOOR: "puerta de cobre ençerao"
+  WAXED_COPPER_GRATE: "rehiya de cobre ençerao"
+  WAXED_COPPER_TRAPDOOR: "trampiya de cobre ençerao"
+  WAXED_CUT_COPPER: "cobre cortao ençerao"
+  WAXED_CUT_COPPER_SLAB: "bardoça de cobre cortao ençerao"
+  WAXED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao ençerao"
+  WAXED_EXPOSED_CHISELED_COPPER: "cobre çinçelao êppuêtto ençerao"
+  WAXED_EXPOSED_COPPER: "cobre êppuêtto ençerao"
+  WAXED_EXPOSED_COPPER_BULB: "lámpa de cobre êppuêtto ençerao"
+  WAXED_EXPOSED_COPPER_DOOR: "puerta de cobre êppuêtto ençerao"
+  WAXED_EXPOSED_COPPER_GRATE: "rehiya de cobre êppuêtto ençerao"
+  WAXED_EXPOSED_COPPER_TRAPDOOR: "trampiya de cobre êppuêtto ençerao"
+  WAXED_EXPOSED_CUT_COPPER: "cobre cortao êppuêtto ençerao"
+  WAXED_EXPOSED_CUT_COPPER_SLAB: "bardoça de cobre cortao êppuêtto ençerao"
+  WAXED_EXPOSED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao êppuêtto ençerao"
+  WAXED_OXIDIZED_CHISELED_COPPER: "cobre çinçelao ôççidao ençerao"
+  WAXED_OXIDIZED_COPPER: "cobre ôççidao ençerao"
+  WAXED_OXIDIZED_COPPER_BULB: "lámpa de cobre ôççidao ençerao"
+  WAXED_OXIDIZED_COPPER_DOOR: "puerta de cobre ôççidao ençerao"
+  WAXED_OXIDIZED_COPPER_GRATE: "rehiya de cobre ôççidao ençerao"
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: "trampiya de cobre ôççidao ençerao"
+  WAXED_OXIDIZED_CUT_COPPER: "cobre cortao ôççidao ençerao"
+  WAXED_OXIDIZED_CUT_COPPER_SLAB: "bardoça de cobre cortao ôççidao ençerao"
+  WAXED_OXIDIZED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao ôççidao ençerao"
+  WAXED_WEATHERED_CHISELED_COPPER: "cobre çinçelao degradao ençerao"
+  WAXED_WEATHERED_COPPER: "cobre corroío ençerao"
+  WAXED_WEATHERED_COPPER_BULB: "lámpa de cobre degradao ençerao"
+  WAXED_WEATHERED_COPPER_DOOR: "puerta de cobre degradao ençerao"
+  WAXED_WEATHERED_COPPER_GRATE: "rehiya de cobre degradao ençerao"
+  WAXED_WEATHERED_COPPER_TRAPDOOR: "trampiya de cobre degradao ençerao"
+  WAXED_WEATHERED_CUT_COPPER: "cobre cortao corroío ençerao"
+  WAXED_WEATHERED_CUT_COPPER_SLAB: "bardoça de cobre cortao corroío ençerao"
+  WAXED_WEATHERED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao corroío ençerao"
+  WEATHERED_CHISELED_COPPER: "cobre çinçelao degradao"
+  WEATHERED_COPPER: "cobre corroío"
+  WEATHERED_COPPER_BULB: "lámpa de cobre degradao"
+  WEATHERED_COPPER_DOOR: "puerta de cobre degradao"
+  WEATHERED_COPPER_GRATE: "rehiya de cobre degradao"
+  WEATHERED_COPPER_TRAPDOOR: "trampiya de cobre degradao"
+  WEATHERED_CUT_COPPER: "cobre cortao ôççidao"
+  WEATHERED_CUT_COPPER_SLAB: "bardoça de cobre cortao ôççidao"
+  WEATHERED_CUT_COPPER_STAIRS: "êccalerâ de cobre cortao ôççidao"
+  WEEPING_VINES: "enreaera çoyoçante"
+  WEEPING_VINES_PLANT: "planta d'enreaera çoyoçante"
+  WET_SPONGE: "êpponha mohá"
+  WHEAT: "curtibo de trigo"
+  WHITE_BANNER: "êttandarte blanco"
+  WHITE_BED: "cama blanca"
+  WHITE_CANDLE: "çirio blanco"
+  WHITE_CANDLE_CAKE: "tarta con çirio blanco"
+  WHITE_CARPET: "arfombra blanca"
+  WHITE_CONCRETE: "hormigón blanco"
+  WHITE_CONCRETE_POWDER: "çemento blanco"
+  WHITE_GLAZED_TERRACOTTA: "açuleho blanco"
+  WHITE_SHULKER_BOX: "caha de shulker blanca"
+  WHITE_STAINED_GLASS: "crîttâh tintao de blanco"
+  WHITE_STAINED_GLASS_PANE: "panêh de crîttâh tintao de blanco"
+  WHITE_TERRACOTTA: "terracota blanca"
+  WHITE_TULIP: "tulipán blanco"
+  WHITE_WOOL: "lana blanca"
+  WITHER_ROSE: "roça de wither"
+  WITHER_SKELETON_SKULL: "calabera de canina der wither"
+  WITHER_SKELETON_WALL_SKULL: "calabera de canina der wither en paré"
+  YELLOW_BANNER: "êttandarte amariyo"
+  YELLOW_BED: "cama amariya"
+  YELLOW_CANDLE: "çirio amariyo"
+  YELLOW_CANDLE_CAKE: "tarta con çirio amariyo"
+  YELLOW_CARPET: "arfombra amariya"
+  YELLOW_CONCRETE: "hormigón amariyo"
+  YELLOW_CONCRETE_POWDER: "çemento amariyo"
+  YELLOW_GLAZED_TERRACOTTA: "açuleho amariyo"
+  YELLOW_SHULKER_BOX: "caha de shulker amariya"
+  YELLOW_STAINED_GLASS: "crîttâh tintao d'amariyo"
+  YELLOW_STAINED_GLASS_PANE: "panêh de crîttâh tintao d'amariyo"
+  YELLOW_TERRACOTTA: "terracota amariya"
+  YELLOW_WOOL: "lana amariya"
+  ZOMBIE_HEAD: "cabeça de çombi"
+  ZOMBIE_WALL_HEAD: "cabeça de çombi en paré"
+  ACACIA_BOAT: "barca de mimoça"
+  ACACIA_CHEST_BOAT: "barca de mimoça con baûh"
+  ALLAY_SPAWN_EGG: "guebo heneradôh d'allay"
+  AMETHYST_SHARD: "frâmmento d'ametîtta"
+  ANGLER_POTTERY_SHARD: "frâmmento de çerámica de pêccadôh"
+  ANGLER_POTTERY_SHERD: "frâmmento de çerámica de caña de pêccâh"
+  APPLE: "pero"
+  ARCHER_POTTERY_SHARD: "frâmmento de çerámica d'arquero"
+  ARCHER_POTTERY_SHERD: "frâmmento de çerámica de arco"
+  ARMOR_STAND: "maniquí"
+  ARMS_UP_POTTERY_SHARD: "frâmmento de çerámica de monigote"
+  ARMS_UP_POTTERY_SHERD: "frâmmento de çerámica dermonigote"
+  ARROW: "flexa"
+  AXOLOTL_BUCKET: "barde con aholote"
+  AXOLOTL_SPAWN_EGG: "guebo heneradôh d'aholote"
+  BAKED_POTATO: "papa açá"
+  BAMBOO_CHEST_RAFT: "armadía de bambú con baûh"
+  BAMBOO_RAFT: "armadía de bambú"
+  BAT_SPAWN_EGG: "guebo heneradôh de murçiégalo"
+  BEE_SPAWN_EGG: "guebo heneradôh d'abeha"
+  BEEF: "bîtté crúo"
+  BEETROOT: "remolaxa"
+  BEETROOT_SEEDS: "çemiyâ de remolaxa"
+  BEETROOT_SOUP: "çopa de remolaxa"
+  BIRCH_BOAT: "barca de xopo"
+  BIRCH_CHEST_BOAT: "barca de xopo con baûh"
+  BLACK_DYE: "tinte êccuro"
+  BLADE_POTTERY_SHARD: "frâmmento de çerámica de êppá"
+  BLADE_POTTERY_SHERD: "frâmmento de zerámica de êppá"
+  BLAZE_POWDER: "porbo de blaze"
+  BLAZE_ROD: "bara de blaze"
+  BLAZE_SPAWN_EGG: "guebo heneradôh de blaze"
+  BLUE_DYE: "tinte açûh"
+  BONE: "gueço"
+  BONE_MEAL: "harina de gueço"
+  BOOK: "libro"
+  BOW: "arco"
+  BOWL: "taçón"
+  BREAD: "pan"
+  BREEZE_SPAWN_EGG: "generar breeze"
+  BREWER_POTTERY_SHARD: "frâmmento de çerámica de poçión"
+  BREWER_POTTERY_SHERD: "frâmmento de çerámica de pozión"
+  BRICK: "ladriyo"
+  BROWN_DYE: "tinte marrón"
+  BRUSH: "broxa"
+  BUCKET: "barde"
+  BUNDLE: "talega"
+  BUNDLE_FULLNESS: "%s/%s"
+  BURN_POTTERY_SHARD: "frâmmento de çerámica de yamâ"
+  BURN_POTTERY_SHERD: "frâmmento de çerámica de fuego"
+  CAMEL_SPAWN_EGG: "guebo heneradôh de cameyo"
+  CARROT: "çanahoria"
+  CARROT_ON_A_STICK: "çanahoria n'una caña"
+  CAT_SPAWN_EGG: "guebo heneradôh de gato"
+  CAVE_SPIDER_SPAWN_EGG: "guebo heneradôh d'araña de cueba"
+  CHAINMAIL_BOOTS: "botâ de cota de maya"
+  CHAINMAIL_CHESTPLATE: "pexera de cota de maya"
+  CHAINMAIL_HELMET: "câcco de cota de maya"
+  CHAINMAIL_LEGGINGS: "grebâ de cota de maya"
+  CHARCOAL: "carbón behetâh"
+  CHERRY_BOAT: "barca de çereço"
+  CHERRY_CHEST_BOAT: "barca de çereço con baûh"
+  CHEST_MINECART: "bagoneta con baûh"
+  CHICKEN: "poyo crúo"
+  CHICKEN_SPAWN_EGG: "guebo heneradôh de gayina"
+  CHORUS_FRUIT: "fruta de chorus"
+  CLAY_BALL: "bola d'arçiya"
+  CLOCK: "relôh"
+  COAL: "carbón"
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  COCOA_BEANS: "çemiyâ de cacao"
+  COD: "abadeho crúo"
+  COD_BUCKET: "barde con abadeho"
+  COD_SPAWN_EGG: "guebo heneradôh d'abadeho"
+  COMMAND_BLOCK_MINECART: "bagoneta con bloque de comandô"
+  COMPASS: "brúhula"
+  COOKED_BEEF: "bîtté açao"
+  COOKED_CHICKEN: "poyo açao"
+  COOKED_COD: "abadeho açao"
+  COOKED_MUTTON: "cordero açao"
+  COOKED_PORKCHOP: "xuleta açá"
+  COOKED_RABBIT: "coneho açao"
+  COOKED_SALMON: "çarmón açao"
+  COOKIE: "gayeta"
+  COPPER_INGOT: "lingote de cobre"
+  COW_SPAWN_EGG: "guebo heneradôh de baca"
+  CREEPER_BANNER_PATTERN: "diçeño d'êttandarte"
+  CREEPER_BANNER_PATTERN_DESC: "êttampao de creeper"
+  CREEPER_SPAWN_EGG: "guebo heneradôh de creeper"
+  CROSSBOW: "bayêtta"
+  CROSSBOW_PROJECTILE: "proyêttîh:"
+  CYAN_DYE: "tinte çian"
+  DANGER_POTTERY_SHARD: "frâmmento de çerámica de peligro"
+  DANGER_POTTERY_SHERD: "frâmmento de çerámica de creeper"
+  DARK_OAK_BOAT: "barca de xaparro"
+  DARK_OAK_CHEST_BOAT: "barca de xaparro con baûh"
+  DEBUG_STICK: "tarama de depuraçión"
+  DEBUG_STICK_EMPTY: "%s no tié propiedadê"
+  DEBUG_STICK_SELECT: "çelêççionao \"%s\" (%s)"
+  DEBUG_STICK_UPDATE: "\"%s\" a cambiao a %s"
+  DIAMOND: "diamante"
+  DIAMOND_AXE: "haxa de diamante"
+  DIAMOND_BOOTS: "botâ de diamante"
+  DIAMOND_CHESTPLATE: "pexera de diamante"
+  DIAMOND_HELMET: "câcco de diamante"
+  DIAMOND_HOE: "çoleta de diamante"
+  DIAMOND_HORSE_ARMOR: "armaúra de diamante pa haca"
+  DIAMOND_LEGGINGS: "grebâ de diamante"
+  DIAMOND_PICKAXE: "êppioxa de diamante"
+  DIAMOND_SHOVEL: "pala de diamante"
+  DIAMOND_SWORD: "êppá de diamante"
+  DISC_FRAGMENT_5: "frâmmento de dîcco"
+  DISC_FRAGMENT_5_DESC: "dîcco de múçica - 5"
+  DOLPHIN_SPAWN_EGG: "guebo heneradôh de derfín"
+  DONKEY_SPAWN_EGG: "guebo heneradôh de burro"
+  DRAGON_BREATH: "aliento de dragón"
+  DRIED_KELP: "argâ çecâ"
+  DROWNED_SPAWN_EGG: "guebo heneradôh d'ahogao"
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  ECHO_SHARD: "frâmmento d'eco"
+  EGG: "guebo"
+  ELDER_GUARDIAN_SPAWN_EGG: "guebo heneradôh de guardián ançiano"
+  ELYTRA: "elytra"
+  EMERALD: "êmmerarda"
+  ENCHANTED_BOOK: "libro encantao"
+  ENCHANTED_GOLDEN_APPLE: "pero d'oro encantao"
+  END_CRYSTAL: "crîttâh del end"
+  ENDER_DRAGON_SPAWN_EGG: "guebo heneradôh de dragón d'ender"
+  ENDER_EYE: "oho d'ender"
+  ENDER_PEARL: "pêl-la d'ender"
+  ENDERMAN_SPAWN_EGG: "guebo heneradôh d'enderman"
+  ENDERMITE_SPAWN_EGG: "guebo heneradôh d'endermite"
+  EVOKER_SPAWN_EGG: "guebo heneradôh d'imbocadôh"
+  EXPERIENCE_BOTTLE: "frâcco con êpperiençia"
+  EXPLORER_POTTERY_SHARD: "frâmmento de çerámica de mapa"
+  EXPLORER_POTTERY_SHERD: "frâmmento de çerámica de mapa"
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  FEATHER: "pluma"
+  FERMENTED_SPIDER_EYE: "oho d'araña fermentao"
+  FILLED_MAP: "mapa"
+  FIRE_CHARGE: "carga ínnea"
+  FIREWORK_ROCKET: "fuegô artifiçialê"
+  FIREWORK_ROCKET_FLIGHT: "duraçión der buelo:"
+  FIREWORK_STAR: "êttreya de fuegô artifiçialê"
+  FIREWORK_STAR_BLACK: "êccura"
+  FIREWORK_STAR_BLUE: "açûh"
+  FIREWORK_STAR_BROWN: "marrón"
+  FIREWORK_STAR_CUSTOM_COLOR: "perçonaliçao"
+  FIREWORK_STAR_CYAN: "çian"
+  FIREWORK_STAR_FADE_TO: "çe buerbe"
+  FIREWORK_STAR_FLICKER: "çenteyeo"
+  FIREWORK_STAR_GRAY: "grîh"
+  FIREWORK_STAR_GREEN: "berde"
+  FIREWORK_STAR_LIGHT_BLUE: "açûh clara"
+  FIREWORK_STAR_LIGHT_GRAY: "grîh clara"
+  FIREWORK_STAR_LIME: "lima"
+  FIREWORK_STAR_MAGENTA: "mahenta"
+  FIREWORK_STAR_ORANGE: "naranha"
+  FIREWORK_STAR_PINK: "roça"
+  FIREWORK_STAR_PURPLE: "morá"
+  FIREWORK_STAR_RED: "colorá"
+  FIREWORK_STAR_SHAPE: "forma dêcconoçía"
+  FIREWORK_STAR_SHAPE_BURST: "êpplotío"
+  FIREWORK_STAR_SHAPE_CREEPER: "con forma de creeper"
+  FIREWORK_STAR_SHAPE_LARGE_BALL: "bola grande"
+  FIREWORK_STAR_SHAPE_SMALL_BALL: "bola xica"
+  FIREWORK_STAR_SHAPE_STAR: "con forma d'êttreya"
+  FIREWORK_STAR_TRAIL: "râttro"
+  FIREWORK_STAR_WHITE: "blanca"
+  FIREWORK_STAR_YELLOW: "amariya"
+  FISHING_ROD: "caña de pêccâh"
+  FLINT: "pedênnâh"
+  FLINT_AND_STEEL: "ençendedôh"
+  FLOWER_BANNER_PATTERN: "patrón d'êttandarte"
+  FLOWER_BANNER_PATTERN_DESC: "êttampao de flôh"
+  FOX_SPAWN_EGG: "guebo heneradôh de çorro"
+  FRIEND_POTTERY_SHARD: "frâmmento de çerámica de amîttá"
+  FRIEND_POTTERY_SHERD: "frâmmento de çerámica de amîttá"
+  FROG_SPAWN_EGG: "guebo heneradôh de rana"
+  FURNACE_MINECART: "bagoneta con hônno"
+  GHAST_SPAWN_EGG: "guebo heneradôh de ghast"
+  GHAST_TEAR: "lágrima de ghast"
+  GLASS_BOTTLE: "frâcco de crîttâh"
+  GLISTERING_MELON_SLICE: "tahá d'açendía briyante"
+  GLOBE_BANNER_PATTERN: "patrón d'êttandarte"
+  GLOBE_BANNER_PATTERN_DESC: "êttampao de planeta"
+  GLOW_BERRIES: "bayâ briyantê"
+  GLOW_INK_SAC: "çaco de tinta briyante"
+  GLOW_ITEM_FRAME: "marco briyante"
+  GLOW_SQUID_SPAWN_EGG: "guebo heneradôh de xoco briyante"
+  GLOWSTONE_DUST: "porbo de roca briyante"
+  GOAT_HORN: "cuênno cabra"
+  GOAT_SPAWN_EGG: "guebo heneradôh de cabra"
+  GOLD_INGOT: "lingote d'oro"
+  GOLD_NUGGET: "pepita d'oro"
+  GOLDEN_APPLE: "pero d'oro"
+  GOLDEN_AXE: "haxa d'oro"
+  GOLDEN_BOOTS: "botâ d'oro"
+  GOLDEN_CARROT: "çanahoria dorá"
+  GOLDEN_CHESTPLATE: "pexera d'oro"
+  GOLDEN_HELMET: "câcco d'oro"
+  GOLDEN_HOE: "çoleta d'oro"
+  GOLDEN_HORSE_ARMOR: "armaúra d'oro pa haca"
+  GOLDEN_LEGGINGS: "grebâ d'oro"
+  GOLDEN_PICKAXE: "êppioxa d'oro"
+  GOLDEN_SHOVEL: "pala d'oro"
+  GOLDEN_SWORD: "êppá d'oro"
+  GRAY_DYE: "tinte grîh"
+  GREEN_DYE: "tinte berde"
+  GUARDIAN_SPAWN_EGG: "guebo heneradôh de guardián"
+  GUNPOWDER: "pórbora"
+  HEART_OF_THE_SEA: "coraçón der mâh"
+  HEART_POTTERY_SHARD: "frâmmento de çerámica de coraçón"
+  HEART_POTTERY_SHERD: "frâmmento de çerámica de corazón"
+  HEARTBREAK_POTTERY_SHARD: "frâmmento de çerámica de coraçón roto"
+  HEARTBREAK_POTTERY_SHERD: "frâmmento de çerámica de corazón roto"
+  HOGLIN_SPAWN_EGG: "guebo heneradôh de hoglin"
+  HONEY_BOTTLE: "frâcco con miêh"
+  HONEYCOMB: "panâh"
+  HOPPER_MINECART: "bagoneta con torba"
+  HORSE_SPAWN_EGG: "guebo heneradôh de haca"
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  HOWL_POTTERY_SHARD: "frâmmento de çerámica de lobo"
+  HOWL_POTTERY_SHERD: "frâmmento de çerámica de lobo"
+  HUSK_SPAWN_EGG: "guebo heneradôh de momia"
+  INK_SAC: "çaco de tinta"
+  IRON_AXE: "haxa de yerro"
+  IRON_BOOTS: "botâ de yerro"
+  IRON_CHESTPLATE: "pexera de yerro"
+  IRON_GOLEM_SPAWN_EGG: "guebo heneradôh de gólem de yerro"
+  IRON_HELMET: "câcco de yerro"
+  IRON_HOE: "çoleta de yerro"
+  IRON_HORSE_ARMOR: "armaúra de yerro pa haca"
+  IRON_INGOT: "lingote de yerro"
+  IRON_LEGGINGS: "grebâ de yerro"
+  IRON_NUGGET: "pepita de yerro"
+  IRON_PICKAXE: "êppioxa de yerro"
+  IRON_SHOVEL: "pala de yerro"
+  IRON_SWORD: "êppá de yerro"
+  ITEM_FRAME: "marco"
+  JUNGLE_BOAT: "barca de hungla"
+  JUNGLE_CHEST_BOAT: "barca de hungla con baûh"
+  KNOWLEDGE_BOOK: "ençiclopedia"
+  LAPIS_LAZULI: "lapîl-láçuli"
+  LAVA_BUCKET: "barde de laba"
+  LEAD: "rienda"
+  LEATHER: "cuero"
+  LEATHER_BOOTS: "botâ de cuero"
+  LEATHER_CHESTPLATE: "túnica de cuero"
+  LEATHER_HELMET: "gorro de cuero"
+  LEATHER_HORSE_ARMOR: "armaúra de cuero pa haca"
+  LEATHER_LEGGINGS: "pênnerâ de cuero"
+  LIGHT_BLUE_DYE: "tinte açûh claro"
+  LIGHT_GRAY_DYE: "tinte grîh claro"
+  LIME_DYE: "tinte lima"
+  LINGERING_POTION: "brebahe perçîttente"
+  LINGERING_POTION_EFFECT_AWKWARD: "brebahe raro perçîttente"
+  LINGERING_POTION_EFFECT_EMPTY: "brebahe perçîttente no crâtteablê"
+  LINGERING_POTION_EFFECT_FIRE_RESISTANCE: "brebahe perçîttente de cuerpo înnífugo"
+  LINGERING_POTION_EFFECT_HARMING: "brebahe perçîttente de daño"
+  LINGERING_POTION_EFFECT_HEALING: "brebahe perçîttente de curaçión"
+  LINGERING_POTION_EFFECT_INVISIBILITY: "brebahe perçîttente de imbiçibilidá"
+  LINGERING_POTION_EFFECT_LEAPING: "brebahe perçîttente de çarto"
+  LINGERING_POTION_EFFECT_LEVITATION: "brebahe perçîttente de lebitaçión"
+  LINGERING_POTION_EFFECT_LUCK: "brebahe perçîttente de potra"
+  LINGERING_POTION_EFFECT_MUNDANE: "brebahe mundano perçîttente"
+  LINGERING_POTION_EFFECT_NIGHT_VISION: "brebahe perçîttente de biçión nôttûnna"
+  LINGERING_POTION_EFFECT_POISON: "brebahe perçîttente de beneno"
+  LINGERING_POTION_EFFECT_REGENERATION: "brebahe perçîttente de reheneraçión"
+  LINGERING_POTION_EFFECT_SLOW_FALLING: "brebahe perçîttente de caída lenta"
+  LINGERING_POTION_EFFECT_SLOWNESS: "brebahe perçîttente de lentitûh"
+  LINGERING_POTION_EFFECT_STRENGTH: "brebahe perçîttente de fuerça"
+  LINGERING_POTION_EFFECT_SWIFTNESS: "brebahe perçîttente de rapidêh"
+  LINGERING_POTION_EFFECT_THICK: "brebahe denço perçîttente"
+  LINGERING_POTION_EFFECT_TURTLE_MASTER: "brebahe perçîttente der maêttro tortuga"
+  LINGERING_POTION_EFFECT_WATER: "frâcco d'agua perçîttente"
+  LINGERING_POTION_EFFECT_WATER_BREATHING: "brebahe perçîttente d'ânnea"
+  LINGERING_POTION_EFFECT_WEAKNESS: "brebahe perçîttente de debilidá"
+  LLAMA_SPAWN_EGG: "guebo heneradôh de yama"
+  LODESTONE_COMPASS: "brúhula imantá"
+  MAGENTA_DYE: "tinte mahenta"
+  MAGMA_CREAM: "crema de mâmma"
+  MAGMA_CUBE_SPAWN_EGG: "guebo heneradôh de cubo de mâmma"
+  MANGROVE_BOAT: "barca de mangle"
+  MANGROVE_CHEST_BOAT: "barca de mangle con baûh"
+  MAP: "mapa en blanco"
+  MELON_SEEDS: "çemiyâ d'açendía"
+  MELON_SLICE: "tahá d'açendía"
+  MILK_BUCKET: "barde de lexe"
+  MINECART: "bagoneta"
+  MINER_POTTERY_SHARD: "frâmmento de çerámica de pico"
+  MINER_POTTERY_SHERD: "frâmmento de çerámica de pico"
+  MOJANG_BANNER_PATTERN: "patrón d'êttandarte"
+  MOJANG_BANNER_PATTERN_DESC: "êttampao de mojang"
+  MOOSHROOM_SPAWN_EGG: "guebo heneradôh de bacaçeta"
+  MOURNER_POTTERY_SHARD: "frâmmento de çerámica de warden"
+  MOURNER_POTTERY_SHERD: "frâmmento de çerámica de guarden"
+  MULE_SPAWN_EGG: "guebo heneradôh de mula"
+  MUSHROOM_STEW: "giço de gurumelô"
+  MUSIC_DISC_11: "dîcco de múçica"
+  MUSIC_DISC_11_DESC: "c418 - 11"
+  MUSIC_DISC_13: "dîcco de múçica"
+  MUSIC_DISC_13_DESC: "c418 - 13"
+  MUSIC_DISC_5: "dîcco de múçica"
+  MUSIC_DISC_5_DESC: "samuel åberg - 5"
+  MUSIC_DISC_BLOCKS: "dîcco de múçica"
+  MUSIC_DISC_BLOCKS_DESC: "c418 - blocks"
+  MUSIC_DISC_CAT: "dîcco de múçica"
+  MUSIC_DISC_CAT_DESC: "c418 - cat"
+  MUSIC_DISC_CHIRP: "dîcco de múçica"
+  MUSIC_DISC_CHIRP_DESC: "c418 - chirp"
+  MUSIC_DISC_FAR: "dîcco de múçica"
+  MUSIC_DISC_FAR_DESC: "c418 - far"
+  MUSIC_DISC_MALL: "dîcco de múçica"
+  MUSIC_DISC_MALL_DESC: "c418 - mall"
+  MUSIC_DISC_MELLOHI: "dîcco de múçica"
+  MUSIC_DISC_MELLOHI_DESC: "c418 - mellohi"
+  MUSIC_DISC_OTHERSIDE: "dîcco de múçica"
+  MUSIC_DISC_OTHERSIDE_DESC: "lena raine - otherside"
+  MUSIC_DISC_PIGSTEP: "dîcco de múçica"
+  MUSIC_DISC_PIGSTEP_DESC: "lena raine - pigstep"
+  MUSIC_DISC_RELIC: "dîcco de múçica"
+  MUSIC_DISC_RELIC_DESC: "aaron cherof - relic"
+  MUSIC_DISC_STAL: "dîcco de múçica"
+  MUSIC_DISC_STAL_DESC: "c418 - stal"
+  MUSIC_DISC_STRAD: "dîcco de múçica"
+  MUSIC_DISC_STRAD_DESC: "c418 - strad"
+  MUSIC_DISC_WAIT: "dîcco de múçica"
+  MUSIC_DISC_WAIT_DESC: "c418 - wait"
+  MUSIC_DISC_WARD: "dîcco de múçica"
+  MUSIC_DISC_WARD_DESC: "c418 - ward"
+  MUTTON: "cordero crúo"
+  NAME_TAG: "etiqueta"
+  NAUTILUS_SHELL: "caparaçón de nautilo"
+  NETHER_BRICK: "ladriyô der nether"
+  NETHER_STAR: "êttreya der nether"
+  NETHERITE_AXE: "haxa de netherita"
+  NETHERITE_BOOTS: "botâ de netherita"
+  NETHERITE_CHESTPLATE: "pexera de netherita"
+  NETHERITE_HELMET: "câcco de netherita"
+  NETHERITE_HOE: "çoleta de netherita"
+  NETHERITE_INGOT: "lingote de netherita"
+  NETHERITE_LEGGINGS: "grebâ de netherita"
+  NETHERITE_PICKAXE: "êppioxa de netherita"
+  NETHERITE_SCRAP: "êccoria de netherita"
+  NETHERITE_SHOVEL: "pala de netherita"
+  NETHERITE_SWORD: "êppá de netherita"
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: "morde de errería"
+  OAK_BOAT: "barca de quehigo"
+  OAK_CHEST_BOAT: "barca de quehigo con baûh"
+  OCELOT_SPAWN_EGG: "guebo heneradôh d'oçelote"
+  ORANGE_DYE: "tinte naranha"
+  PAINTING: "cuadro"
+  PANDA_SPAWN_EGG: "guebo heneradôh de panda"
+  PAPER: "papêh"
+  PARROT_SPAWN_EGG: "guebo heneradôh de loro"
+  PHANTOM_MEMBRANE: "membrana de fantâmma"
+  PHANTOM_SPAWN_EGG: "guebo heneradôh de fantâmma"
+  PIG_SPAWN_EGG: "guebo heneradôh de coxino"
+  PIGLIN_BANNER_PATTERN: "patrón d'êttandarte"
+  PIGLIN_BANNER_PATTERN_DESC: "êttampao de hoçico"
+  PIGLIN_BRUTE_SPAWN_EGG: "guebo heneradôh de piglin bruto"
+  PIGLIN_SPAWN_EGG: "guebo heneradôh de piglin"
+  PILLAGER_SPAWN_EGG: "guebo heneradôh de çaqueadôh"
+  PINK_DYE: "tinte roça"
+  PITCHER_POD: "baina de planta odre"
+  PLENTY_POTTERY_SHARD: "frâmmento de çerámica de cofre"
+  PLENTY_POTTERY_SHERD: "frâmmento de çerámica de cofre"
+  POISONOUS_POTATO: "papa benenoça"
+  POLAR_BEAR_SPAWN_EGG: "guebo heneradôh d'oço polâh"
+  POPPED_CHORUS_FRUIT: "fruta de corus açá"
+  PORKCHOP: "xuleta crúa"
+  POTATO: "papa"
+  POTION: "brebahe"
+  POTION_EFFECT_AWKWARD: "brebahe raro"
+  POTION_EFFECT_EMPTY: "brebahe no crâtteablê"
+  POTION_EFFECT_FIRE_RESISTANCE: "brebahe de cuerpo înnífugo"
+  POTION_EFFECT_HARMING: "brebahe de daño"
+  POTION_EFFECT_HEALING: "brebahe de curaçión"
+  POTION_EFFECT_INVISIBILITY: "brebahe de imbiçibilidá"
+  POTION_EFFECT_LEAPING: "brebahe de çarto"
+  POTION_EFFECT_LEVITATION: "brebahe de lebitaçión"
+  POTION_EFFECT_LUCK: "brebahe de potra"
+  POTION_EFFECT_MUNDANE: "brebahe mundano"
+  POTION_EFFECT_NIGHT_VISION: "brebahe de biçión nôttûnna"
+  POTION_EFFECT_POISON: "brebahe de beneno"
+  POTION_EFFECT_REGENERATION: "brebahe de reheneraçión"
+  POTION_EFFECT_SLOW_FALLING: "brebahe de caída lenta"
+  POTION_EFFECT_SLOWNESS: "brebahe de lentitûh"
+  POTION_EFFECT_STRENGTH: "brebahe de fuerça"
+  POTION_EFFECT_SWIFTNESS: "brebahe de rapidêh"
+  POTION_EFFECT_THICK: "brebahe denço"
+  POTION_EFFECT_TURTLE_MASTER: "brebahe der maêttro tortuga"
+  POTION_EFFECT_WATER: "frâcco d'agua"
+  POTION_EFFECT_WATER_BREATHING: "brebahe d'ânnea"
+  POTION_EFFECT_WEAKNESS: "brebahe de debilidá"
+  POTTERY_SHARD_ARCHER: "frâmmento de çerámica de arco"
+  POTTERY_SHARD_ARMS_UP: "frâmmento de çerámica de monigote"
+  POTTERY_SHARD_PRIZE: "frâmmento de çerámica de hema"
+  POTTERY_SHARD_SKULL: "frâmmento de çerámica de calabera"
+  POWDER_SNOW_BUCKET: "barde de niebe porbo"
+  PRISMARINE_CRYSTALS: "crîttalê de prîmmarina"
+  PRISMARINE_SHARD: "frâmmento de prîmmarina"
+  PRIZE_POTTERY_SHARD: "frâmmento de çerámica de hema"
+  PRIZE_POTTERY_SHERD: "frâmmento de çerámica de joya"
+  PUFFERFISH: "pêh globo"
+  PUFFERFISH_BUCKET: "barde con pêh globo"
+  PUFFERFISH_SPAWN_EGG: "guebo heneradôh de peh globo"
+  PUMPKIN_PIE: "tarta de calabaça"
+  PUMPKIN_SEEDS: "çemiyâ de calabaça"
+  PURPLE_DYE: "tinte morao"
+  QUARTZ: "cuarço der nether"
+  RABBIT: "coneho crúo"
+  RABBIT_FOOT: "pata de coneho"
+  RABBIT_HIDE: "peyeho de coneho"
+  RABBIT_SPAWN_EGG: "guebo heneradôh de coneho"
+  RABBIT_STEW: "puxero con coneho"
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  RAVAGER_SPAWN_EGG: "guebo heneradôh de debâttadôh"
+  RAW_COPPER: "minerâh de cobre"
+  RAW_GOLD: "minerâh d'oro"
+  RAW_IRON: "minerâh de yerro"
+  RECOVERY_COMPASS: "brúhula de recuperaçión"
+  RED_DYE: "tinte colorao"
+  REDSTONE: "porbo de redstone"
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  ROTTEN_FLESH: "cânne podría"
+  SADDLE: "siya de montâh"
+  SALMON: "çarmón crúo"
+  SALMON_BUCKET: "barde con çarmón"
+  SALMON_SPAWN_EGG: "guebo heneradôh de çarmón"
+  SCUTE: "êccama de tortuga"
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  SHEAF_POTTERY_SHARD: "frâmmento de çerámica de paha"
+  SHEAF_POTTERY_SHERD: "frâmmento de çerámica de tigo"
+  SHEARS: "êttiherâ"
+  SHEEP_SPAWN_EGG: "guebo heneradôh d'obeha"
+  SHELTER_POTTERY_SHARD: "frâmmento de çerámica de refuhio"
+  SHELTER_POTTERY_SHERD: "frâmmento de çerámica de refujio"
+  SHIELD: "êccúo"
+  SHIELD_BLACK: "êccúo êccuro"
+  SHIELD_BLUE: "êccúo açûh"
+  SHIELD_BROWN: "êccúo marrón"
+  SHIELD_CYAN: "êccúo çian"
+  SHIELD_GRAY: "êccúo grîh"
+  SHIELD_GREEN: "êccúo berde"
+  SHIELD_LIGHT_BLUE: "êccúo açûh claro"
+  SHIELD_LIGHT_GRAY: "êccúo grîh claro"
+  SHIELD_LIME: "êccúo lima"
+  SHIELD_MAGENTA: "êccúo mahenta"
+  SHIELD_ORANGE: "êccúo naranha"
+  SHIELD_PINK: "êccúo roça"
+  SHIELD_PURPLE: "êccúo morao"
+  SHIELD_RED: "êccúo colorao"
+  SHIELD_WHITE: "êccúo blanco"
+  SHIELD_YELLOW: "êccúo amariyo"
+  SHULKER_SHELL: "caparaçón de shulker"
+  SHULKER_SPAWN_EGG: "guebo heneradôh de shulker"
+  SIGN: "letrero"
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  SILVERFISH_SPAWN_EGG: "guebo heneradôh de lepîmma"
+  SKELETON_HORSE_SPAWN_EGG: "guebo heneradôh de haca canina"
+  SKELETON_SPAWN_EGG: "guebo heneradôh de canina"
+  SKULL_BANNER_PATTERN: "patrón d'êttandarte"
+  SKULL_BANNER_PATTERN_DESC: "êttampao de calabera"
+  SKULL_POTTERY_SHARD: "frâmmento de çerámica de calabera"
+  SKULL_POTTERY_SHERD: "frâmmento de çerámica de calabera"
+  SLIME_BALL: "bola de limo"
+  SLIME_SPAWN_EGG: "guebo heneradôh de limo"
+  SMITHING_TEMPLATE: "morde de errería"
+  SMITHING_TEMPLATE_APPLIES_TO: "ç'aplica a:"
+  SMITHING_TEMPLATE_ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION: "añade un lingote o crîttâh"
+  SMITHING_TEMPLATE_ARMOR_TRIM_APPLIES_TO: "armaúra"
+  SMITHING_TEMPLATE_ARMOR_TRIM_BASE_SLOT_DESCRIPTION: "añahe una pieça he armadura"
+  SMITHING_TEMPLATE_ARMOR_TRIM_INGREDIENTS: "lingotê y crîttalê"
+  SMITHING_TEMPLATE_INGREDIENTS: "ingredientêh:"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION: "añade un lingote de netherita"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_APPLIES_TO: "equipamiento de diamante"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION: "añade una armadura arma o erramienta de diamante"
+  SMITHING_TEMPLATE_NETHERITE_UPGRADE_INGREDIENTS: "lingote de netherita"
+  SMITHING_TEMPLATE_UPGRADE: "mehora: "
+  SNIFFER_SPAWN_EGG: "guebo heneradôh d'olîqqueadôh"
+  SNORT_POTTERY_SHARD: "frâmmento de çerámica de snîffêh"
+  SNORT_POTTERY_SHERD: "frâmmento de çerámica de snîffêh"
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  SNOW_GOLEM_SPAWN_EGG: "guebo heneradôh de gólem de niebe"
+  SNOWBALL: "bola de niebe"
+  SPECTRAL_ARROW: "flexa êppêttrâh"
+  SPIDER_EYE: "oho d'araña"
+  SPIDER_SPAWN_EGG: "guebo heneradôh d'araña"
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  SPLASH_POTION: "brebahe lançable"
+  SPLASH_POTION_EFFECT_AWKWARD: "brebahe raro lançable"
+  SPLASH_POTION_EFFECT_EMPTY: "brebahe lançable no crâtteablê"
+  SPLASH_POTION_EFFECT_FIRE_RESISTANCE: "brebahe lançable de cuerpo înnífugo"
+  SPLASH_POTION_EFFECT_HARMING: "brebahe lançable de daño"
+  SPLASH_POTION_EFFECT_HEALING: "brebahe lançable de curaçión"
+  SPLASH_POTION_EFFECT_INVISIBILITY: "brebahe lançable de imbiçibilidá"
+  SPLASH_POTION_EFFECT_LEAPING: "brebahe lançable de çarto"
+  SPLASH_POTION_EFFECT_LEVITATION: "brebahe lançable de lebitaçión"
+  SPLASH_POTION_EFFECT_LUCK: "brebahe lançable de potra"
+  SPLASH_POTION_EFFECT_MUNDANE: "brebahe mundano lançable"
+  SPLASH_POTION_EFFECT_NIGHT_VISION: "brebahe lançable de biçión nôttûnna"
+  SPLASH_POTION_EFFECT_POISON: "brebahe lançable de beneno"
+  SPLASH_POTION_EFFECT_REGENERATION: "brebahe lançable de reheneraçión"
+  SPLASH_POTION_EFFECT_SLOW_FALLING: "brebahe lançable de caída lenta"
+  SPLASH_POTION_EFFECT_SLOWNESS: "brebahe lançable de lentitûh"
+  SPLASH_POTION_EFFECT_STRENGTH: "brebahe lançable de fuerça"
+  SPLASH_POTION_EFFECT_SWIFTNESS: "brebahe lançable de rapidêh"
+  SPLASH_POTION_EFFECT_THICK: "brebahe denço lançable"
+  SPLASH_POTION_EFFECT_TURTLE_MASTER: "brebahe lançable der maêttro tortuga"
+  SPLASH_POTION_EFFECT_WATER: "frâcco d'agua lançable"
+  SPLASH_POTION_EFFECT_WATER_BREATHING: "brebahe lançable d'ânnea"
+  SPLASH_POTION_EFFECT_WEAKNESS: "brebahe lançable de debilidá"
+  SPRUCE_BOAT: "barca de pinçapo"
+  SPRUCE_CHEST_BOAT: "barca de pinçapo con baûh"
+  SPYGLASS: "cataleho"
+  SQUID_SPAWN_EGG: "guebo heneradôh de xoco"
+  STICK: "tarama"
+  STONE_AXE: "haxa de piedra"
+  STONE_HOE: "çoleta de piedra"
+  STONE_PICKAXE: "êppioxa de piedra"
+  STONE_SHOVEL: "pala de piedra"
+  STONE_SWORD: "êppá de piedra"
+  STRAY_SPAWN_EGG: "guebo heneradôh d'errante"
+  STRIDER_SPAWN_EGG: "guebo heneradôh de strider"
+  STRING: "cordêh"
+  SUGAR: "açúcâ"
+  SUSPICIOUS_STEW: "potahe çôppexoço"
+  SWEET_BERRIES: "bayâ durçê"
+  TADPOLE_BUCKET: "barde con guçarapo"
+  TADPOLE_SPAWN_EGG: "guebo heneradôh de guçarapo"
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  TIPPED_ARROW: "flexa con efêtto"
+  TIPPED_ARROW_EFFECT_AWKWARD: "flexa con efêtto"
+  TIPPED_ARROW_EFFECT_EMPTY: "flexa con efêtto no crâtteablê"
+  TIPPED_ARROW_EFFECT_FIRE_RESISTANCE: "flexa de reçîttençia ar fuego"
+  TIPPED_ARROW_EFFECT_HARMING: "flexa de daño"
+  TIPPED_ARROW_EFFECT_HEALING: "flexa de curaçión"
+  TIPPED_ARROW_EFFECT_INVISIBILITY: "flexa d'imbiçibiliá"
+  TIPPED_ARROW_EFFECT_LEAPING: "flexa de çarto"
+  TIPPED_ARROW_EFFECT_LEVITATION: "flexa de lebitaçión"
+  TIPPED_ARROW_EFFECT_LUCK: "flexa de potra"
+  TIPPED_ARROW_EFFECT_MUNDANE: "flexa con efêtto"
+  TIPPED_ARROW_EFFECT_NIGHT_VISION: "flexa de biçión nôttûnna"
+  TIPPED_ARROW_EFFECT_POISON: "flexa de beneno"
+  TIPPED_ARROW_EFFECT_REGENERATION: "flexa de reheneraçión"
+  TIPPED_ARROW_EFFECT_SLOW_FALLING: "flexa de caída lenta"
+  TIPPED_ARROW_EFFECT_SLOWNESS: "flexa de lentitûh"
+  TIPPED_ARROW_EFFECT_STRENGTH: "flexa de fuerça"
+  TIPPED_ARROW_EFFECT_SWIFTNESS: "flexa de rapidêh"
+  TIPPED_ARROW_EFFECT_THICK: "flexa con efêtto"
+  TIPPED_ARROW_EFFECT_TURTLE_MASTER: "flexa der maêttro tortuga"
+  TIPPED_ARROW_EFFECT_WATER: "flexa de çarpicaúra"
+  TIPPED_ARROW_EFFECT_WATER_BREATHING: "flexa d'ânnea"
+  TIPPED_ARROW_EFFECT_WEAKNESS: "flexa de debilidá"
+  TNT_MINECART: "bagoneta con tnt"
+  TORCHFLOWER_SEEDS: "çemiyâ de plantorxa"
+  TOTEM_OF_UNDYING: "tótem d'îmmortalidá"
+  TRADER_LLAMA_SPAWN_EGG: "guebo heneradôh de yama ambulante"
+  TRIAL_KEY: "llave de desafío"
+  TRIDENT: "tridente"
+  TROPICAL_FISH: "pêh tropicâh"
+  TROPICAL_FISH_BUCKET: "barde con pêh tropicâh"
+  TROPICAL_FISH_SPAWN_EGG: "guebo heneradôh de pêh tropicâh"
+  TURTLE_HELMET: "caparaçón de tortuga"
+  TURTLE_SPAWN_EGG: "guebo heneradôh de tortuga"
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  VEX_SPAWN_EGG: "guebo heneradôh d'êppíritu"
+  VILLAGER_SPAWN_EGG: "guebo heneradôh d'ardeano"
+  VINDICATOR_SPAWN_EGG: "guebo heneradôh de bindicadôh"
+  WANDERING_TRADER_SPAWN_EGG: "guebo heneradôh de bendedôh ambulante"
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  WARDEN_SPAWN_EGG: "guebo heneradôh de cûttodio"
+  WARPED_FUNGUS_ON_A_STICK: "hongo êttrambótico n'una caña"
+  WATER_BUCKET: "barde d'agua"
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  WHEAT: "trigo"
+  WHEAT_SEEDS: "çemiyâ de trigo"
+  WHITE_DYE: "tinte blanco"
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: "morde de errería"
+  WITCH_SPAWN_EGG: "guebo heneradôh de bruha"
+  WITHER_SKELETON_SPAWN_EGG: "guebo heneradôh de canina der wither"
+  WITHER_SPAWN_EGG: "guebo heneradôh de wither"
+  WOLF_SPAWN_EGG: "guebo heneradôh de lobo"
+  WOODEN_AXE: "haxa de maera"
+  WOODEN_HOE: "çoleta de maera"
+  WOODEN_PICKAXE: "êppioxa de maera"
+  WOODEN_SHOVEL: "pala de maera"
+  WOODEN_SWORD: "êppá de maera"
+  WRITABLE_BOOK: "libro y pluma"
+  WRITTEN_BOOK: "libro êccrito"
+  YELLOW_DYE: "tinte amariyo"
+  ZOGLIN_SPAWN_EGG: "guebo heneradôh de zoglin"
+  ZOMBIE_HORSE_SPAWN_EGG: "guebo heneradôh de haca çombi"
+  ZOMBIE_SPAWN_EGG: "guebo heneradôh de çombi"
+  ZOMBIE_VILLAGER_SPAWN_EGG: "guebo heneradôh d'ardeano çombi"
+  ZOMBIFIED_PIGLIN_SPAWN_EGG: "guebo heneradôh de piglin çombificao"
+  CHEST: "n'er cuerpo:"
+  FEET: "en lô pinrelê:"
+  HEAD: "en la cabeça:"
+  LEGS: "en lâ piênnâ:"
+  MAINHAND: "en la mano prinçipâh:"
+  OFFHAND: "en la mano çecundaria:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
