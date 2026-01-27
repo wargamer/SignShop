@@ -1,0 +1,13 @@
+name: "SignShop"
+main: org.wargamer2010.signshop.SignShop
+api-version: "1.21"
+version: "5.2.0"
+dev-url: http://dev.bukkit.org/projects/signshop
+authors: [Wargamer2010, Devinish, Weaves, IndexOutOfMJ, Mart]
+depend: [Vault]
+softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker, Ultimate_Economy, LuckPerms, PermissionsEx, Skript, CMIPaperLib, EasyConomy, Lands]
+folia-supported: true
+commands:
+  signshop:
+    description: Admin commands for SignShop
+    usage: /signshop [reload|stats|version|about|help|sign|tutorial|ignore]

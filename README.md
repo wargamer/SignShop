@@ -2,7 +2,13 @@
  <img src="signshopheader.png" alt="SignShop LOGO">
 </p>
 
+## ⚡ Folia Compatible
 
+This fork adds **full Folia support** for multi-threaded servers while maintaining complete backward compatibility with Bukkit/Spigot/Paper.
+
+See [FOLIA_COMPATIBILITY.md](FOLIA_COMPATIBILITY.md) for details.
+
+---
 
 SignShop allows you to set up physical shops by punching a chest with your items you want to sell, then punching a sign (while holding redstone dust). It's easy to set up, and even easier to customize!
 

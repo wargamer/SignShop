@@ -28,8 +28,9 @@ import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
-import org.wargamer2010.signshop.worth.CMIWorthHandler;
-import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
+// Optional plugin integrations - commented out for Folia build
+// import org.wargamer2010.signshop.worth.CMIWorthHandler;
+// import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
 import org.wargamer2010.signshop.worth.WorthHandler;
 
 import java.io.File;
@@ -273,6 +274,9 @@ public class SignShop extends JavaPlugin {
         }
         //Setup worth
         if (getSignShopConfig().getEnablePriceFromWorth()) {
+            // Optional plugin integrations - commented out for Folia build
+            // TODO: Re-enable CMI and Essentials worth handlers if needed
+            /*
             if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
                 worthHandler = new CMIWorthHandler();
                 log("Using worth information from CMI.", Level.INFO);
@@ -282,8 +286,9 @@ public class SignShop extends JavaPlugin {
                 log("Using worth information from Essentials.", Level.INFO);
             }
             else {
-                log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
-            }
+            */
+                log("No compatible worth plugin found, [Worth] disabled. (CMI/Essentials handlers not available in this build)", Level.WARNING);
+            // }
         }
         //Enable metrics
         if (getSignShopConfig().metricsEnabled()) {
