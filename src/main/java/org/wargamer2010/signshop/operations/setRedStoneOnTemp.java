@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.operations;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.type.Switch;
@@ -72,7 +71,7 @@ public class setRedStoneOnTemp implements SignShopOperation {
                     switchLever.setPowered(true);
                     bLever.setBlockData(switchLever);
                     signshopUtil.generateInteractEvent(bLever, ssArgs.getPlayer().get().getPlayer(), ssArgs.getBlockFace().get());
-                    Bukkit.getServer().getScheduler().runTaskLater(SignShop.getInstance(),new lagSetter(bLever), 10L *delay);
+                    SignShop.getScheduler().runAtBlockLater(bLever, new lagSetter(bLever), 10L * delay);
                 }
             }
         }

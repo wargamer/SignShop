@@ -1,9 +1,9 @@
 package org.wargamer2010.signshop.configuration;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.data.Storage;
+import org.wargamer2010.signshop.scheduling.SchedulerAdapter;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,15 +15,16 @@ import java.util.logging.Level;
  *
  * <p>Runs on a separate thread to avoid blocking the main server thread during
  * file I/O operations. Uses a queue to batch save requests and runs periodically
- * via Bukkit's scheduler.</p>
+ * via the scheduler abstraction.</p>
  *
  * @see Storage
  */
-public class FileSaveWorker extends BukkitRunnable {
+public class FileSaveWorker implements Runnable {
 
     File ymlfile;
     String fileName;
     private final LinkedBlockingQueue<FileConfiguration> saveQueue = new LinkedBlockingQueue<>();
+    private SchedulerAdapter.ScheduledTask task;
 
     public FileSaveWorker(File ymlfile) {
         this.ymlfile = ymlfile;
@@ -35,6 +36,11 @@ public class FileSaveWorker extends BukkitRunnable {
         if (!saveQueue.isEmpty()) {
             saveToFile(saveQueue.poll());
         }
+    }
+
+    public SchedulerAdapter.ScheduledTask start() {
+        task = SignShop.getScheduler().runAsyncTimer(this, 1, 1);
+        return task;
     }
 
     public void queueSave(FileConfiguration config) {
@@ -64,17 +70,19 @@ public class FileSaveWorker extends BukkitRunnable {
             if(!saveQueue.isEmpty()){
                 saveToFile(saveQueue.poll());
             }
-            this.cancel();
+            if (task != null) {
+                task.cancel();
 
-            int count = 0;
-            while (!this.isCancelled() && count < 1000) {
-                //noinspection BusyWait
-                Thread.sleep(1);
-                count++;
-            }
+                int count = 0;
+                while (!task.isCancelled() && count < 1000) {
+                    //noinspection BusyWait
+                    Thread.sleep(1);
+                    count++;
+                }
 
-            if (this.isCancelled()) {
-                SignShop.log("Successfully cancelled async " + fileName + " save task with ID: " + this.getTaskId(), Level.INFO);
+                if (task.isCancelled()) {
+                    SignShop.log("Successfully cancelled async " + fileName + " save task", Level.INFO);
+                }
             }
         } catch (Exception ex) {
             SignShop.log("Failed to cancel " + fileName + " save task because: " + ex.getMessage(), Level.WARNING);

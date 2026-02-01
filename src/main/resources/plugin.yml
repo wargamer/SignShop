@@ -6,6 +6,7 @@ dev-url: http://dev.bukkit.org/projects/signshop
 authors: [Wargamer2010, Devinish, Weaves, IndexOutOfMJ, Mart]
 depend: [Vault]
 softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker, Ultimate_Economy, LuckPerms, PermissionsEx, Skript, CMIPaperLib, EasyConomy, Lands]
+folia-supported: true
 commands:
   signshop:
     description: Admin commands for SignShop

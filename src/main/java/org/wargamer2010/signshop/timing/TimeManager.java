@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.timing;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -9,6 +8,7 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.FileSaveWorker;
 import org.wargamer2010.signshop.events.SSEventFactory;
 import org.wargamer2010.signshop.events.SSExpiredEvent;
+import org.wargamer2010.signshop.scheduling.SchedulerAdapter;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,12 +39,12 @@ public class TimeManager extends TimerTask {
     private final FileSaveWorker fileSaveWorker;
     private File storageFile;
     private YamlConfiguration storageConfiguration = null;
-    private int taskId = -1;
+    private SchedulerAdapter.ScheduledTask scheduledTask = null;
 
     public TimeManager(File storage) {
         storageFile = storage;
         fileSaveWorker = new FileSaveWorker(storageFile);
-        fileSaveWorker.runTaskTimerAsynchronously(SignShop.getInstance(), 1, 1);
+        fileSaveWorker.start();
 
         if (storage.exists()) {
             YamlConfiguration yml = new YamlConfiguration();
@@ -161,8 +161,8 @@ public class TimeManager extends TimerTask {
      * Stops the Async Task started by the TImeManager
      */
     public void stop() {
-        if (taskId >= 0) {
-            Bukkit.getScheduler().cancelTask(taskId);
+        if (scheduledTask != null) {
+            scheduledTask.cancel();
         }
         fileSaveWorker.stop();
     }
@@ -250,7 +250,7 @@ public class TimeManager extends TimerTask {
     }
 
     private void scheduleCheck() {
-        taskId = Bukkit.getScheduler().runTaskTimer(SignShop.getInstance(),this,0,getTicks()).getTaskId();
+        scheduledTask = SignShop.getScheduler().runTimer(this, 0, getTicks());
     }
 
     private int getTicks() {

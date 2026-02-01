@@ -24,6 +24,7 @@ import org.wargamer2010.signshop.listeners.*;
 import org.wargamer2010.signshop.listeners.sslisteners.*;
 import org.wargamer2010.signshop.money.MoneyModifierManager;
 import org.wargamer2010.signshop.player.PlayerMetadata;
+import org.wargamer2010.signshop.scheduling.SchedulerAdapter;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
@@ -89,6 +90,7 @@ public class SignShop extends JavaPlugin {
     //Statics
     private static Storage store;
     private static TimeManager manager = null;
+    private static SchedulerAdapter scheduler = null;
     //Permissions
     private static boolean USE_PERMISSIONS = false;
     // Commands
@@ -164,6 +166,10 @@ public class SignShop extends JavaPlugin {
         return manager;
     }
 
+    public static SchedulerAdapter getScheduler() {
+        return scheduler;
+    }
+
     public static CommandDispatcher getCommandDispatcher() {
         return commandDispatcher;
     }
@@ -193,6 +199,7 @@ public class SignShop extends JavaPlugin {
                 log("Could not create plugins/SignShop folder.", Level.SEVERE);
         }
         instance = this;
+        scheduler = new SchedulerAdapter(this);
 
         setupCommands();
 

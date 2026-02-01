@@ -89,7 +89,7 @@ public class Storage implements Listener {
 
     private Storage(File ymlFile) {
         fileSaveWorker = new FileSaveWorker(ymlFile);
-        taskId = fileSaveWorker.runTaskTimerAsynchronously(SignShop.getInstance(),1,1).getTaskId();
+        taskId = fileSaveWorker.start().getTaskId();
         if(!ymlFile.exists()) {
             try {
                 ymlFile.createNewFile();

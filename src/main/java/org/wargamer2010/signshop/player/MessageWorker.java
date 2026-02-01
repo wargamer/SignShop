@@ -1,7 +1,6 @@
 package org.wargamer2010.signshop.player;
 
 import net.md_5.bungee.api.chat.BaseComponent;
-import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.SignShop;
 
@@ -29,7 +28,7 @@ public class MessageWorker implements Runnable {
                 return;
             if (instance == null)
                 instance = new MessageWorker();
-            Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance);
+            SignShop.getScheduler().runAsync(instance);
             bWorking = true;
         }
     }
