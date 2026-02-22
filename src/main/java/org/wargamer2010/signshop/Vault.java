@@ -4,18 +4,28 @@ import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.util.UUID;
 import java.util.logging.Level;
 
 /**
- * Integration layer for Vault API providing economy and permissions.
+ * Integration layer for Vault and VaultUnlocked APIs providing economy and permissions.
  *
- * <p>SignShop requires Vault as a hard dependency for all money operations
- * and permission checks. This class initializes and provides access to
- * Vault's Economy, Permission, and Chat services.</p>
+ * <p>SignShop uses Vault as a soft dependency for money operations and permission checks.
+ * When VaultUnlocked is available, SignShop can use the Vault2 Economy API for optimized
+ * balance checking via the canAccept() method.</p>
+ *
+ * <p>Architecture:</p>
+ * <ul>
+ *   <li>Legacy Economy (net.milkbowl.vault.economy.Economy) - Used for deposit, withdraw, balance</li>
+ *   <li>Vault2 Economy (net.milkbowl.vault2.economy.Economy) - Used for canAccept() when available</li>
+ * </ul>
  *
  * @see net.milkbowl.vault.economy.Economy
  * @see net.milkbowl.vault.permission.Permission
@@ -28,11 +38,17 @@ public class Vault {
     private static final Server server = Bukkit.getServer();
     private static final String nullString = null;
 
+    // VaultUnlocked/Vault2 support
+    private static Object vault2Economy = null;
+    private static Method canAcceptMethod = null;
+    private static boolean vaultUnlockedDetected = false;
+
     public Vault() {
-        if(server.getPluginManager().isPluginEnabled("Vault"))
+        if (server.getPluginManager().isPluginEnabled("Vault")) {
             vaultFound = true;
-        else
-            SignShop.log("Vault plugin not enabled, SignShop can not run!", Level.SEVERE);
+        } else {
+            SignShop.log("Vault not found - economy and permission features will not work!", Level.WARNING);
+        }
     }
 
     /**
@@ -126,12 +142,103 @@ public class Vault {
     public Boolean setupEconomy() {
         if (!isVaultFound())
             return false;
+
+        // Get legacy Economy provider (for standard operations)
         RegisteredServiceProvider<Economy> economyProvider = server.getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
         if (economyProvider != null) {
             economy = economyProvider.getProvider();
         }
 
+        // Try to get Vault2 Economy provider (for canAccept)
+        detectVault2Economy();
+
         return (getEconomy() != null);
+    }
+
+    /**
+     * Detects VaultUnlocked's Vault2 Economy provider and canDeposit() method.
+     * This is called once at startup to avoid per-call reflection overhead.
+     */
+    private void detectVault2Economy() {
+        try {
+            // Try to find net.milkbowl.vault2.economy.Economy service
+            Class<?> vault2EconomyClass = Class.forName("net.milkbowl.vault2.economy.Economy");
+            RegisteredServiceProvider<?> vault2Provider =
+                server.getServicesManager().getRegistration(vault2EconomyClass);
+
+            if (vault2Provider == null) {
+                SignShop.log("Standard Vault economy detected (no Vault2 provider)", Level.INFO);
+                return;
+            }
+
+            vault2Economy = vault2Provider.getProvider();
+
+            // Check for canDeposit method on Vault2 provider
+            Method method = vault2Economy.getClass().getMethod(
+                "canDeposit", String.class, UUID.class, BigDecimal.class
+            );
+
+            // Test call to verify it's actually implemented (not just returning NOT_IMPLEMENTED)
+            // Use a small positive amount since some economies reject zero/negative
+            Object response = method.invoke(vault2Economy, "SignShop", UUID.randomUUID(), new BigDecimal("0.01"));
+
+            // Get the response type - EconomyResponse.type is a public field, not a method
+            java.lang.reflect.Field typeField = response.getClass().getField("type");
+            Object responseType = typeField.get(response);
+
+            if (responseType.toString().equals("NOT_IMPLEMENTED")) {
+                canAcceptMethod = null;
+                vaultUnlockedDetected = false;
+                SignShop.log("Vault2 economy found but canDeposit() returns NOT_IMPLEMENTED - using standard Vault", Level.INFO);
+            } else {
+                canAcceptMethod = method;
+                vaultUnlockedDetected = true;
+                SignShop.log("VaultUnlocked Vault2 economy detected - using optimized balance checks", Level.INFO);
+            }
+        } catch (ClassNotFoundException e) {
+            // Vault2 API not available - standard Vault only
+            SignShop.log("Standard Vault economy detected", Level.INFO);
+        } catch (NoSuchMethodException e) {
+            SignShop.log("Vault2 economy found but no canDeposit() method - using standard Vault", Level.INFO);
+        } catch (NoSuchFieldException e) {
+            SignShop.log("Vault2 economy canDeposit() response missing type field - using standard Vault", Level.INFO);
+        } catch (Exception e) {
+            SignShop.log("Error detecting Vault2 economy: " + e.getMessage() + " - using standard Vault", Level.WARNING);
+        }
+    }
+
+    /**
+     * Check if player can accept a deposit using VaultUnlocked's Vault2 API.
+     * This avoids the deposit/withdraw pattern that some economy plugins handle poorly.
+     *
+     * @param player The player to check
+     * @param amount The amount to check
+     * @return Boolean result (true = can accept deposit), or null if VaultUnlocked not available (use fallback)
+     */
+    public static Boolean canAcceptMoney(OfflinePlayer player, double amount) {
+        if (canAcceptMethod == null || vault2Economy == null) {
+            return null; // Signal to use fallback
+        }
+        try {
+            Object response = canAcceptMethod.invoke(
+                vault2Economy,
+                "SignShop",
+                player.getUniqueId(),
+                BigDecimal.valueOf(amount)
+            );
+            Method successMethod = response.getClass().getMethod("transactionSuccess");
+            return (Boolean) successMethod.invoke(response);
+        } catch (Exception e) {
+            SignShop.log("VaultUnlocked canDeposit() failed: " + e.getMessage(), Level.WARNING);
+            return null; // Fall back to deposit/withdraw pattern
+        }
+    }
+
+    /**
+     * @return true if VaultUnlocked's Vault2 economy with canAccept() was detected
+     */
+    public static boolean isVaultUnlockedDetected() {
+        return vaultUnlockedDetected;
     }
 
     /**

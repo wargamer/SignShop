@@ -297,6 +297,14 @@ public class SignShopPlayer {
             return true;
         if (playername.isEmpty())
             return false;
+
+        // Try VaultUnlocked canDeposit() first (no side effects, cleaner)
+        Boolean vaultUnlockedResult = Vault.canAcceptMoney(getOfflinePlayer(), actual);
+        if (vaultUnlockedResult != null) {
+            return !vaultUnlockedResult; // canDeposit=true means canNotHave=false
+        }
+
+        // Fallback: test deposit + withdraw pattern for standard Vault/legacy economies
         EconomyResponse response;
         double currentBalance = Vault.getEconomy().getBalance(getOfflinePlayer());
 
