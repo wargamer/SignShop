@@ -97,7 +97,8 @@ public class ColorUtil {
 
         for (String key : section.getKeys(false)) {
             try {
-                int rgb = Integer.parseInt(key);
+                // Keys longer than 6 chars are decimal (legacy format); 6 chars or fewer are hex
+                int rgb = (key.length() > 6) ? Integer.parseInt(key) : Integer.parseInt(key, 16);
                 String colorName = section.getString(key, "");
                 colorLookup.put(rgb, colorName);
             } catch (NumberFormatException ignored) {
@@ -236,8 +237,9 @@ public class ColorUtil {
     public static double getDifferenceBetweenColors(int colorone, int colortwo) {
         java.awt.Color a = new java.awt.Color(colorone);
         java.awt.Color b = new java.awt.Color(colortwo);
-        int comboa = (a.getRed() + a.getGreen() + a.getBlue());
-        int combob = (b.getRed() + b.getGreen() + b.getBlue());
-        return Math.abs(comboa - combob);
+        int dr = a.getRed() - b.getRed();
+        int dg = a.getGreen() - b.getGreen();
+        int db = a.getBlue() - b.getBlue();
+        return Math.sqrt(dr * dr + dg * dg + db * db);
     }
 }
