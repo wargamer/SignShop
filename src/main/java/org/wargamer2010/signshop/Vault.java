@@ -43,6 +43,17 @@ public class Vault {
     private static Method canAcceptMethod = null;
     private static boolean vaultUnlockedDetected = false;
 
+    // Vault2 multi-currency methods (cached at startup)
+    private static Method vault2HasWithCurrencyMethod = null;
+    private static Method vault2WithdrawWithCurrencyMethod = null;
+    private static Method vault2DepositWithCurrencyMethod = null;
+    private static Method vault2FormatWithCurrencyMethod = null;
+    private static Method vault2GetCurrenciesMethod = null;
+    private static Method vault2HasCurrencyMethod = null;
+    private static Method vault2HasMultiCurrencySupportMethod = null;
+    private static Method vault2GetDefaultCurrencyMethod = null;
+    private static boolean vault2MultiCurrencyAvailable = false;
+
     public Vault() {
         if (server.getPluginManager().isPluginEnabled("Vault")) {
             vaultFound = true;
@@ -205,6 +216,62 @@ public class Vault {
         } catch (Exception e) {
             SignShop.log("Error detecting Vault2 economy: " + e.getMessage() + " - using standard Vault", Level.WARNING);
         }
+
+        // Try to cache multi-currency methods even if canDeposit returned NOT_IMPLEMENTED
+        if (vault2Economy != null) {
+            detectVault2CurrencyMethods();
+        }
+    }
+
+    /**
+     * Attempts to cache Vault2 multi-currency method references for deposit, withdraw, has, format,
+     * currencies(), hasCurrency(), hasMultiCurrencySupport(), and getDefaultCurrency().
+     * Sets vault2MultiCurrencyAvailable to true only if all core transaction methods are found.
+     */
+    private void detectVault2CurrencyMethods() {
+        try {
+            Class<?> cls = vault2Economy.getClass();
+
+            // Core transaction methods with currency parameter:
+            // has(String, UUID, String, String, BigDecimal) - pluginName, accountID, world, currency, amount
+            vault2HasWithCurrencyMethod = cls.getMethod("has",
+                    String.class, UUID.class, String.class, String.class, BigDecimal.class);
+
+            // withdraw(String, UUID, String, String, BigDecimal)
+            vault2WithdrawWithCurrencyMethod = cls.getMethod("withdraw",
+                    String.class, UUID.class, String.class, String.class, BigDecimal.class);
+
+            // deposit(String, UUID, String, String, BigDecimal)
+            vault2DepositWithCurrencyMethod = cls.getMethod("deposit",
+                    String.class, UUID.class, String.class, String.class, BigDecimal.class);
+
+            // Utility methods:
+            // format(String, BigDecimal, String) - pluginName, amount, currency
+            vault2FormatWithCurrencyMethod = cls.getMethod("format",
+                    String.class, BigDecimal.class, String.class);
+
+            // currencies() - returns Collection<String>
+            vault2GetCurrenciesMethod = cls.getMethod("currencies");
+
+            // hasCurrency(String) - returns boolean
+            vault2HasCurrencyMethod = cls.getMethod("hasCurrency", String.class);
+
+            // hasMultiCurrencySupport() - returns boolean
+            vault2HasMultiCurrencySupportMethod = cls.getMethod("hasMultiCurrencySupport");
+
+            // getDefaultCurrency(String) - returns String
+            vault2GetDefaultCurrencyMethod = cls.getMethod("getDefaultCurrency", String.class);
+
+            vault2MultiCurrencyAvailable = true;
+            SignShop.log("VaultUnlocked Vault2 multi-currency methods detected - multi-currency support enabled", Level.INFO);
+
+        } catch (NoSuchMethodException e) {
+            vault2MultiCurrencyAvailable = false;
+            SignShop.log("Vault2 economy found but currency-aware methods unavailable - multi-currency disabled", Level.INFO);
+        } catch (Exception e) {
+            vault2MultiCurrencyAvailable = false;
+            SignShop.log("Error detecting Vault2 currency methods: " + e.getMessage(), Level.WARNING);
+        }
     }
 
     /**
@@ -239,6 +306,125 @@ public class Vault {
      */
     public static boolean isVaultUnlockedDetected() {
         return vaultUnlockedDetected;
+    }
+
+    /**
+     * @return true if Vault2 multi-currency methods are available (deposit/withdraw/has with currency param)
+     */
+    public static boolean isVault2MultiCurrencyAvailable() {
+        return vault2MultiCurrencyAvailable;
+    }
+
+    /**
+     * Checks if the player has at least {@code amount} of the given currency using Vault2.
+     *
+     * @param accountID UUID of the player
+     * @param currency  Vault2 currency name
+     * @param amount    Amount to check
+     * @return true if the player has enough, false if not, null if Vault2 is unavailable
+     */
+    public static Boolean vault2Has(UUID accountID, String currency, BigDecimal amount) {
+        if (!vault2MultiCurrencyAvailable || vault2HasWithCurrencyMethod == null || vault2Economy == null)
+            return null;
+        try {
+            return (Boolean) vault2HasWithCurrencyMethod.invoke(vault2Economy, "SignShop", accountID, null, currency, amount);
+        } catch (Exception e) {
+            SignShop.log("vault2Has() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
+    }
+
+    /**
+     * Withdraws {@code amount} of the given currency from the player's account using Vault2.
+     *
+     * @param accountID UUID of the player
+     * @param currency  Vault2 currency name
+     * @param amount    Amount to withdraw (positive)
+     * @return true on success, false on failure, null if Vault2 is unavailable
+     */
+    public static Boolean vault2Withdraw(UUID accountID, String currency, BigDecimal amount) {
+        if (!vault2MultiCurrencyAvailable || vault2WithdrawWithCurrencyMethod == null || vault2Economy == null)
+            return null;
+        try {
+            Object response = vault2WithdrawWithCurrencyMethod.invoke(vault2Economy, "SignShop", accountID, null, currency, amount);
+            Method successMethod = response.getClass().getMethod("transactionSuccess");
+            return (Boolean) successMethod.invoke(response);
+        } catch (Exception e) {
+            SignShop.log("vault2Withdraw() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
+    }
+
+    /**
+     * Deposits {@code amount} of the given currency into the player's account using Vault2.
+     *
+     * @param accountID UUID of the player
+     * @param currency  Vault2 currency name
+     * @param amount    Amount to deposit (positive)
+     * @return true on success, false on failure, null if Vault2 is unavailable
+     */
+    public static Boolean vault2Deposit(UUID accountID, String currency, BigDecimal amount) {
+        if (!vault2MultiCurrencyAvailable || vault2DepositWithCurrencyMethod == null || vault2Economy == null)
+            return null;
+        try {
+            Object response = vault2DepositWithCurrencyMethod.invoke(vault2Economy, "SignShop", accountID, null, currency, amount);
+            Method successMethod = response.getClass().getMethod("transactionSuccess");
+            return (Boolean) successMethod.invoke(response);
+        } catch (Exception e) {
+            SignShop.log("vault2Deposit() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
+    }
+
+    /**
+     * Formats an amount in the given currency using Vault2's formatter.
+     *
+     * @param amount   Amount to format
+     * @param currency Vault2 currency name
+     * @return Formatted string, or null if Vault2 is unavailable
+     */
+    public static String vault2Format(BigDecimal amount, String currency) {
+        if (!vault2MultiCurrencyAvailable || vault2FormatWithCurrencyMethod == null || vault2Economy == null)
+            return null;
+        try {
+            return (String) vault2FormatWithCurrencyMethod.invoke(vault2Economy, "SignShop", amount, currency);
+        } catch (Exception e) {
+            SignShop.log("vault2Format() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
+    }
+
+    /**
+     * Checks if the given currency exists in the Vault2 economy.
+     *
+     * @param currency Vault2 currency name to check
+     * @return true if the currency exists, false if not, null if Vault2 is unavailable
+     */
+    public static Boolean vault2HasCurrency(String currency) {
+        if (vault2Economy == null || vault2HasCurrencyMethod == null)
+            return null;
+        try {
+            return (Boolean) vault2HasCurrencyMethod.invoke(vault2Economy, currency);
+        } catch (Exception e) {
+            SignShop.log("vault2HasCurrency() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
+    }
+
+    /**
+     * Returns the default currency name from the Vault2 economy.
+     *
+     * @return The default currency name, or null if Vault2 is unavailable
+     */
+    public static String vault2GetDefaultCurrency() {
+        if (vault2Economy == null || vault2GetDefaultCurrencyMethod == null)
+            return null;
+        try {
+            return (String) vault2GetDefaultCurrencyMethod.invoke(vault2Economy, "SignShop");
+        } catch (Exception e) {
+            SignShop.log("vault2GetDefaultCurrency() failed: " + e.getMessage(), Level.WARNING);
+            return null;
+        }
     }
 
     /**

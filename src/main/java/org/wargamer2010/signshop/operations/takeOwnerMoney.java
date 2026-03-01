@@ -14,7 +14,7 @@ public class takeOwnerMoney implements SignShopOperation {
     @Override
     public Boolean setupOperation(SignShopArguments ssArgs) {
         ssArgs.setMoneyEventType(SSMoneyEventType.TakeFromOwner);
-        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get()));
+        ssArgs.setMessagePart("!price", economyUtil.formatMoney(ssArgs.getPrice().get(), ssArgs.getCurrency()));
         return true;
     }
 

@@ -4,7 +4,11 @@ import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
+import org.wargamer2010.signshop.money.CurrencyManager;
+import org.wargamer2010.signshop.money.PriceResult;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -46,6 +50,75 @@ public class economyUtil {
             return attachColor(Double.toString(money));
         else
             return attachColor(Vault.getEconomy().format(money));
+    }
+
+    /**
+     * Formats a money amount for the given currency.
+     * Uses Vault2's currency-aware formatter when available, otherwise falls back to legacy.
+     *
+     * @param money    The amount to format
+     * @param currency The currency to format for (null or default falls back to legacy)
+     * @return Colored, formatted money string
+     */
+    public static String formatMoney(double money, CurrencyDefinition currency) {
+        if (currency == null || !currency.requiresVault2()) {
+            return formatMoney(money);
+        }
+        String formatted = Vault.vault2Format(BigDecimal.valueOf(money), currency.getVault2Name());
+        if (formatted != null) {
+            return attachColor(formatted);
+        }
+        // Vault2 format failed or unavailable - fall back to legacy with currency name appended
+        if (Vault.getEconomy() != null) {
+            return attachColor(Vault.getEconomy().format(money) + " (" + currency.getName() + ")");
+        }
+        return attachColor(money + " " + currency.getName());
+    }
+
+    /**
+     * Parses a price and currency from a sign line.
+     * Extracts the numeric value and matches any non-numeric text against configured currency symbols.
+     * Results are cached for performance when CachePrices is enabled.
+     *
+     * @param line The sign line containing the price and optional currency symbol (e.g., "100G", "$50")
+     * @return A {@link PriceResult} containing the parsed price and matched currency
+     */
+    public static PriceResult parsePriceWithCurrency(String line) {
+        CurrencyManager currencyManager = signShopConfig != null ? signShopConfig.getCurrencyManager() : null;
+        CurrencyDefinition currency = currencyManager != null
+                ? currencyManager.getDefaultCurrency()
+                : CurrencyManager.IMPLICIT_DEFAULT;
+
+        if (line == null) return new PriceResult(0.0, currency);
+
+        String priceline = ChatColor.stripColor(line);
+
+        // Separate numeric and non-numeric portions
+        StringBuilder numericPart = new StringBuilder();
+        StringBuilder nonNumericPart = new StringBuilder();
+
+        for (int i = 0; i < priceline.length(); i++) {
+            char c = priceline.charAt(i);
+            if (Character.isDigit(c) || c == '.'
+                    || (signShopConfig != null && signShopConfig.allowCommaDecimalSeparator().isPermitted() && c == ',')) {
+                numericPart.append(c);
+            } else {
+                nonNumericPart.append(c);
+            }
+        }
+
+        // Match the non-numeric portion to a configured currency
+        if (currencyManager != null) {
+            String nonNumeric = nonNumericPart.toString().trim();
+            if (!nonNumeric.isEmpty()) {
+                currency = currencyManager.matchCurrency(nonNumeric);
+            }
+        }
+
+        // Parse the numeric portion using the existing logic (handles international formats)
+        double price = parsePrice(line);
+
+        return new PriceResult(price, currency);
     }
 
     /**

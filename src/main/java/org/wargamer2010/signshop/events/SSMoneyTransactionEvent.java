@@ -6,6 +6,8 @@ import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
+import org.wargamer2010.signshop.money.CurrencyManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
@@ -36,6 +38,7 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
     private final SSMoneyRequestType rtRequestType;
     private boolean bHandled = false;
     private SignShopArguments ssArgs = null;
+    private CurrencyDefinition currency = CurrencyManager.IMPLICIT_DEFAULT;
 
     public SSMoneyTransactionEvent(SignShopPlayer pPlayer, Seller pShop, double pAmount, Block pSign, String pOperation, ItemStack[] pItems,
             boolean leftClicking, SSMoneyEventType pType, Map<String, Object> pMessageParts, SSMoneyRequestType pRequestType) {
@@ -110,6 +113,15 @@ public class SSMoneyTransactionEvent extends SSEvent implements IOperationEvent 
 
     public void setArguments(SignShopArguments ssArgs) {
         this.ssArgs = ssArgs;
+    }
+
+    /** Returns the currency for this money transaction. Never null. */
+    public CurrencyDefinition getCurrency() {
+        return currency != null ? currency : CurrencyManager.IMPLICIT_DEFAULT;
+    }
+
+    public void setCurrency(CurrencyDefinition currency) {
+        this.currency = currency != null ? currency : CurrencyManager.IMPLICIT_DEFAULT;
     }
 
 

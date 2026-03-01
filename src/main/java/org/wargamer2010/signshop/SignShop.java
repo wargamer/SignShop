@@ -354,6 +354,8 @@ public class SignShop extends JavaPlugin {
             getServer().getPluginManager().registerEvents(new ServerLoadedListener(),this);
             log("Could not hook into Vault's Economy! Signshop will retry after server is loaded.", Level.WARNING);
         }
+        // Validate configured currencies against the economy once Vault2 detection is done
+        getSignShopConfig().getCurrencyManager().validateWithVault2();
     }
 
     private void setupCommands() {

@@ -12,6 +12,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.hooks.HookManager;
+import org.wargamer2010.signshop.money.CurrencyManager;
 import org.wargamer2010.signshop.operations.SignShopArguments;
 import org.wargamer2010.signshop.operations.SignShopOperation;
 import org.wargamer2010.signshop.operations.SignShopOperationListItem;
@@ -138,6 +139,7 @@ public class SignShopConfig {
     private Material destroyMaterial = Material.getMaterial("GOLDEN_AXE");
     private Material inspectMaterial = Material.getMaterial("WRITABLE_BOOK");
     private List<String> DebugClasses = new ArrayList<>();
+    private final CurrencyManager currencyManager = new CurrencyManager();
 
 
     public SignShopConfig() {
@@ -347,6 +349,14 @@ public class SignShopConfig {
             ChunkLoadRadius = 3;
 
         config = ymlThing;
+
+        // Load multi-currency definitions
+        currencyManager.load(ymlThing.getConfigurationSection("currencies"));
+    }
+
+    /** Returns the CurrencyManager for multi-currency support. */
+    public CurrencyManager getCurrencyManager() {
+        return currencyManager;
     }
 
     private Material getMaterial(String mat, Material defaultmat) {

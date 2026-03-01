@@ -10,8 +10,10 @@ import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.data.Storage;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
 import org.wargamer2010.signshop.util.itemUtil;
 
+import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -350,6 +352,77 @@ public class SignShopPlayer {
             }
         }
         return response.type == EconomyResponse.ResponseType.SUCCESS;
+    }
+
+    /**
+     * Checks if the player does NOT have sufficient balance in the given currency.
+     * Routes to Vault2 multi-currency API for non-default currencies when available.
+     *
+     * @param amount   Amount to check
+     * @param currency Currency to check balance in
+     * @return true if the player does NOT have enough
+     */
+    public boolean hasNoMoney(double amount, CurrencyDefinition currency) {
+        if (currency == null || !currency.requiresVault2()) {
+            return hasNoMoney(amount);
+        }
+        if (isNothing(amount)) return false;
+        if (!Vault.isVault2MultiCurrencyAvailable()) {
+            SignShop.getInstance().debugMessage("hasNoMoney: non-default currency requires VaultUnlocked - falling back to default");
+            return hasNoMoney(amount);
+        }
+        if (playername.isEmpty()) return false;
+        Boolean result = Vault.vault2Has(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(amount));
+        return result == null ? hasNoMoney(amount) : !result;
+    }
+
+    /**
+     * Checks if the player CANNOT receive a deposit of the given currency.
+     * Routes to Vault2 multi-currency API for non-default currencies when available.
+     *
+     * @param amount   Amount to check
+     * @param currency Currency to check
+     * @return true if the player cannot hold the additional amount
+     */
+    public boolean canNotHaveMoney(double amount, CurrencyDefinition currency) {
+        if (currency == null || !currency.requiresVault2()) {
+            return canNotHaveMoney(amount);
+        }
+        double actual = amount < 0 ? -amount : amount;
+        if (isNothing(actual)) return false;
+        if (!Vault.isVault2MultiCurrencyAvailable()) {
+            return canNotHaveMoney(actual);
+        }
+        if (playername.isEmpty()) return false;
+        // Most custom-currency economies don't cap balances; assume player can always receive
+        return false;
+    }
+
+    /**
+     * Deposits or withdraws the given amount in the specified currency.
+     * Routes to Vault2 multi-currency API for non-default currencies when available.
+     *
+     * @param amount   Positive = deposit, negative = withdraw
+     * @param currency Currency to operate on
+     * @return true on success
+     */
+    public boolean mutateMoney(double amount, CurrencyDefinition currency) {
+        if (currency == null || !currency.requiresVault2()) {
+            return mutateMoney(amount);
+        }
+        if (isNothing(amount)) return true;
+        if (!Vault.isVault2MultiCurrencyAvailable()) {
+            SignShop.getInstance().debugMessage("mutateMoney: non-default currency requires VaultUnlocked - falling back to default");
+            return mutateMoney(amount);
+        }
+        if (playername.isEmpty()) return true;
+        Boolean result;
+        if (amount > 0.0) {
+            result = Vault.vault2Deposit(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(amount));
+        } else {
+            result = Vault.vault2Withdraw(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(Math.abs(amount)));
+        }
+        return result != null ? result : false;
     }
 
     public Map<Integer, ItemStack> givePlayerItems(ItemStack[] isItemsToTake) {
