@@ -6,7 +6,7 @@
 
     <groupId>org.wargamer2010</groupId>
     <artifactId>SignShop</artifactId>
-    <version>5.3.0</version>
+    <version>5.2.2</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -49,6 +49,10 @@
         <repository>
             <id>MikeRepo</id>
             <url>https://repo.mikeprimm.com/</url>
+        </repository>
+        <repository>
+            <id>codemc-creatorfromhell</id>
+            <url>https://repo.codemc.io/repository/creatorfromhell/</url>
         </repository>
     </repositories>
     <dependencies>
