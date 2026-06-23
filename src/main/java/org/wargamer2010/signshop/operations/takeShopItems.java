@@ -52,7 +52,7 @@ public class takeShopItems implements SignShopOperation {
         InventoryHolder Holder = itemUtil.getFirstStockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), true);
         if(Holder == null)
             return false;
-        Holder.getInventory().removeItem(ssArgs.getItems().get());
+        Holder.getInventory().removeItem(itemUtil.getBackupItemStack(ssArgs.getItems().get()));
         if(!itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), true))
             itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShop.getInstance().getSignShopConfig().getOutOfStockColor());
         else

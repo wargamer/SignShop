@@ -59,7 +59,7 @@ public class giveShopItems implements SignShopOperation {
         InventoryHolder Holder = itemUtil.getFirstStockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false);
         if(Holder == null)
             return false;
-        HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(ssArgs.getItems().get());
+        HashMap<Integer, ItemStack> isLeftOver = Holder.getInventory().addItem(itemUtil.getBackupItemStack(ssArgs.getItems().get()));
         if(!itemUtil.stockOKForContainables(ssArgs.getContainables().get(), ssArgs.getItems().get(), false))
             itemUtil.updateStockStatus(ssArgs.getSign().get(), SignShop.getInstance().getSignShopConfig().getOutOfStockColor());
         else
