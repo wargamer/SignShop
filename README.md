@@ -6,7 +6,8 @@
 
 This fork adds **full Folia support** for multi-threaded servers while maintaining complete backward compatibility with Bukkit/Spigot/Paper.
 
-See [FOLIA_COMPATIBILITY.md](FOLIA_COMPATIBILITY.md) for details.
+Scheduling goes through `SchedulerAdapter`, which picks Folia's region schedulers when it detects Folia
+and the normal `BukkitScheduler` everywhere else.
 
 ---
 
