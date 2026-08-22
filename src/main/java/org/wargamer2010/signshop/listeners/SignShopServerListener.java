@@ -21,14 +21,14 @@ public class SignShopServerListener implements Listener {
     }
 
     public static boolean isEssentialsConflictFound() {
-        if(Bukkit.getServer().getPluginManager().getPlugin(pluginName) != null)
+        if (Bukkit.getServer().getPluginManager().getPlugin(pluginName) != null)
             return EssentialsHelper.isEssentialsConflictFound();
         return false;
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onPluginEnabled(PluginEnableEvent event) {
-        if(event.getPlugin().getName().equals(pluginName))
+        if (event.getPlugin().getName().equals(pluginName))
             setupPluginToHookInto();
     }
 

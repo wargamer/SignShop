@@ -31,8 +31,7 @@ import org.bukkit.inventory.ItemStack;
  *
  *     {@literal @}Override
  *     public boolean isRelevantForCurrentVersion() {
- *         String version = Bukkit.getVersion();
- *         return version.contains("1.21.10") || version.contains("1.21.1");
+ *         return versionUtil.isAtLeast("1.21.10");
  *     }
  *
  *     {@literal @}Override
@@ -70,12 +69,16 @@ public interface IncompatibilityDetector {
      * <p>This allows detectors to be automatically disabled if running on a Spigot
      * version where the incompatibility doesn't exist (e.g., if Spigot fixes the bug).</p>
      *
+     * <p>Compare with {@link org.wargamer2010.signshop.util.versionUtil#isAtLeast(String)} instead
+     * of matching on the version string. Minecraft switched from 1.x to a year based scheme
+     * (26.1, 26.1.1, 26.1.2, 26.2, ...), so a check like {@code version.contains("1.21")} quietly
+     * stops matching on newer servers.</p>
+     *
      * <p><b>Example:</b></p>
      * <pre>
      * public boolean isRelevantForCurrentVersion() {
-     *     String version = Bukkit.getVersion();
-     *     // Only relevant for Spigot 1.21.10 through 1.21.19
-     *     return version.contains("1.21.1") && !version.contains("1.21.2");
+     *     // 1.21.10 up to, but not including, 26.2
+     *     return versionUtil.isAtLeast("1.21.10") {@literal &&} !versionUtil.isAtLeast("26.2");
      * }
      * </pre>
      *

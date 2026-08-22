@@ -1,5 +1,6 @@
 package org.wargamer2010.signshop.timing;
 
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -164,7 +165,9 @@ public class TimeManager extends TimerTask {
         if (scheduledTask != null) {
             scheduledTask.cancel();
         }
-        fileSaveWorker.stop();
+        if (fileSaveWorker != null) {
+            fileSaveWorker.stop();
+        }
     }
 
     @Override

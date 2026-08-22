@@ -9,6 +9,7 @@ import org.bukkit.plugin.Plugin;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 
 /**
  * Scheduler abstraction supporting both standard Bukkit and Folia region-based scheduling.
@@ -39,23 +40,68 @@ public class SchedulerAdapter {
 
     private void initializeFoliaReflection() {
         try {
+            plugin.getLogger().info("[Folia] Initializing Folia scheduler reflection...");
+            
             Class<?> serverClass = Bukkit.getServer().getClass();
+            plugin.getLogger().info("[Folia] Server class: " + serverClass.getName());
+            
+            plugin.getLogger().info("[Folia] Getting scheduler methods from Server...");
             getRegionSchedulerMethod = serverClass.getMethod("getRegionScheduler");
+            plugin.getLogger().info("[Folia]   ✓ getRegionScheduler()");
+            
             getGlobalRegionSchedulerMethod = serverClass.getMethod("getGlobalRegionScheduler");
+            plugin.getLogger().info("[Folia]   ✓ getGlobalRegionScheduler()");
+            
             getAsyncSchedulerMethod = serverClass.getMethod("getAsyncScheduler");
+            plugin.getLogger().info("[Folia]   ✓ getAsyncScheduler()");
             
+            plugin.getLogger().info("[Folia] Loading RegionScheduler class...");
             Class<?> regionSchedulerClass = Class.forName("io.papermc.paper.threadedregions.scheduler.RegionScheduler");
-            runMethod = regionSchedulerClass.getMethod("run", Plugin.class, Location.class, Runnable.class);
-            runDelayedMethod = regionSchedulerClass.getMethod("runDelayed", Plugin.class, Location.class, Runnable.class, long.class);
+            plugin.getLogger().info("[Folia]   ✓ RegionScheduler loaded");
             
+            plugin.getLogger().info("[Folia] Getting RegionScheduler methods...");
+            // Folia uses Consumer<ScheduledTask> instead of Runnable
+            runMethod = regionSchedulerClass.getMethod("run", Plugin.class, Location.class, Consumer.class);
+            plugin.getLogger().info("[Folia]   ✓ run(Plugin, Location, Consumer)");
+            
+            runDelayedMethod = regionSchedulerClass.getMethod("runDelayed", Plugin.class, Location.class, Consumer.class, long.class);
+            plugin.getLogger().info("[Folia]   ✓ runDelayed(Plugin, Location, Consumer, long)");
+            
+            plugin.getLogger().info("[Folia] Loading GlobalRegionScheduler class...");
             Class<?> globalRegionSchedulerClass = Class.forName("io.papermc.paper.threadedregions.scheduler.GlobalRegionScheduler");
-            runAtFixedRateMethod = globalRegionSchedulerClass.getMethod("runAtFixedRate", Plugin.class, Runnable.class, long.class, long.class);
+            plugin.getLogger().info("[Folia]   ✓ GlobalRegionScheduler loaded");
             
+            plugin.getLogger().info("[Folia] Getting GlobalRegionScheduler methods...");
+            // Folia uses Consumer<ScheduledTask> instead of Runnable
+            runAtFixedRateMethod = globalRegionSchedulerClass.getMethod("runAtFixedRate", Plugin.class, Consumer.class, long.class, long.class);
+            plugin.getLogger().info("[Folia]   ✓ runAtFixedRate(Plugin, Consumer, long, long)");
+            
+            plugin.getLogger().info("[Folia] Loading AsyncScheduler class...");
             Class<?> asyncSchedulerClass = Class.forName("io.papermc.paper.threadedregions.scheduler.AsyncScheduler");
-            runDelayedAsyncMethod = asyncSchedulerClass.getMethod("runDelayed", Plugin.class, Runnable.class, long.class, TimeUnit.class);
+            plugin.getLogger().info("[Folia]   ✓ AsyncScheduler loaded");
             
-            cancelTasksMethod = serverClass.getMethod("cancelTasks", Plugin.class);
+            plugin.getLogger().info("[Folia] Getting AsyncScheduler methods...");
+            // Folia uses Consumer<ScheduledTask> instead of Runnable
+            runDelayedAsyncMethod = asyncSchedulerClass.getMethod("runDelayed", Plugin.class, Consumer.class, long.class, TimeUnit.class);
+            plugin.getLogger().info("[Folia]   ✓ runDelayed(Plugin, Consumer, long, TimeUnit)");
+            
+            plugin.getLogger().info("[Folia] Getting cancelTasks method...");
+            try {
+                cancelTasksMethod = serverClass.getMethod("cancelTasks", Plugin.class);
+                plugin.getLogger().info("[Folia]   ✓ cancelTasks(Plugin)");
+            } catch (NoSuchMethodException e) {
+                plugin.getLogger().warning("[Folia]   ⚠ cancelTasks(Plugin) not found - task cancellation will use alternative method");
+                cancelTasksMethod = null;
+            }
+            
+            plugin.getLogger().info("[Folia] ✓ Folia reflection initialized successfully!");
         } catch (Exception e) {
+            plugin.getLogger().severe("[Folia] ✗ Failed to initialize Folia reflection!");
+            plugin.getLogger().severe("[Folia] Error details: " + e.getClass().getName() + ": " + e.getMessage());
+            if (e.getCause() != null) {
+                plugin.getLogger().severe("[Folia] Caused by: " + e.getCause().getClass().getName() + ": " + e.getCause().getMessage());
+            }
+            e.printStackTrace();
             throw new RuntimeException("Failed to initialize Folia reflection", e);
         }
     }
@@ -68,7 +114,9 @@ public class SchedulerAdapter {
         if (isFolia) {
             try {
                 Object regionScheduler = getRegionSchedulerMethod.invoke(Bukkit.getServer());
-                runMethod.invoke(regionScheduler, plugin, location, task);
+                // Folia expects Consumer<ScheduledTask>, wrap our Runnable
+                Consumer<Object> consumer = (scheduledTask) -> task.run();
+                runMethod.invoke(regionScheduler, plugin, location, consumer);
             } catch (Exception e) {
                 throw new RuntimeException("Failed to schedule Folia region task", e);
             }
@@ -85,7 +133,9 @@ public class SchedulerAdapter {
         if (isFolia) {
             try {
                 Object regionScheduler = getRegionSchedulerMethod.invoke(Bukkit.getServer());
-                runDelayedMethod.invoke(regionScheduler, plugin, location, task, delayTicks);
+                // Folia expects Consumer<ScheduledTask>, wrap our Runnable
+                Consumer<Object> consumer = (scheduledTask) -> task.run();
+                runDelayedMethod.invoke(regionScheduler, plugin, location, consumer, delayTicks);
             } catch (Exception e) {
                 throw new RuntimeException("Failed to schedule delayed Folia region task", e);
             }
@@ -134,7 +184,11 @@ public class SchedulerAdapter {
         if (isFolia) {
             try {
                 Object globalRegionScheduler = getGlobalRegionSchedulerMethod.invoke(Bukkit.getServer());
-                Object foliaTask = runAtFixedRateMethod.invoke(globalRegionScheduler, plugin, task, delayTicks, periodTicks);
+                // Folia expects Consumer<ScheduledTask>, wrap our Runnable
+                Consumer<Object> consumer = (scheduledTask) -> task.run();
+                // Folia requires delay > 0, but Bukkit allows 0
+                long foliaDelay = Math.max(1, delayTicks);
+                Object foliaTask = runAtFixedRateMethod.invoke(globalRegionScheduler, plugin, consumer, foliaDelay, periodTicks);
                 return new FoliaScheduledTask(foliaTask);
             } catch (Exception e) {
                 throw new RuntimeException("Failed to schedule Folia repeating task", e);
@@ -153,7 +207,9 @@ public class SchedulerAdapter {
         if (isFolia) {
             try {
                 Object asyncScheduler = getAsyncSchedulerMethod.invoke(Bukkit.getServer());
-                runDelayedAsyncMethod.invoke(asyncScheduler, plugin, task, 0L, TimeUnit.MILLISECONDS);
+                // Folia expects Consumer<ScheduledTask>, wrap our Runnable
+                Consumer<Object> consumer = (scheduledTask) -> task.run();
+                runDelayedAsyncMethod.invoke(asyncScheduler, plugin, consumer, 0L, TimeUnit.MILLISECONDS);
             } catch (Exception e) {
                 throw new RuntimeException("Failed to schedule Folia async task", e);
             }
@@ -171,7 +227,9 @@ public class SchedulerAdapter {
             try {
                 Object asyncScheduler = getAsyncSchedulerMethod.invoke(Bukkit.getServer());
                 long delayMillis = delayTicks * 50; // Convert ticks to milliseconds
-                runDelayedAsyncMethod.invoke(asyncScheduler, plugin, task, delayMillis, TimeUnit.MILLISECONDS);
+                // Folia expects Consumer<ScheduledTask>, wrap our Runnable
+                Consumer<Object> consumer = (scheduledTask) -> task.run();
+                runDelayedAsyncMethod.invoke(asyncScheduler, plugin, consumer, delayMillis, TimeUnit.MILLISECONDS);
             } catch (Exception e) {
                 throw new RuntimeException("Failed to schedule delayed Folia async task", e);
             }
@@ -198,10 +256,16 @@ public class SchedulerAdapter {
      */
     public void cancelAllTasks() {
         if (isFolia) {
-            try {
-                cancelTasksMethod.invoke(Bukkit.getServer(), plugin);
-            } catch (Exception e) {
-                throw new RuntimeException("Failed to cancel Folia tasks", e);
+            if (cancelTasksMethod != null) {
+                try {
+                    cancelTasksMethod.invoke(Bukkit.getServer(), plugin);
+                } catch (Exception e) {
+                    throw new RuntimeException("Failed to cancel Folia tasks", e);
+                }
+            } else {
+                // Folia doesn't have cancelTasks method - tasks are managed by schedulers
+                // Individual tasks should be cancelled via their ScheduledTask handles
+                plugin.getLogger().info("[Folia] cancelAllTasks not available - tasks should be cancelled individually");
             }
         } else {
             Bukkit.getScheduler().cancelTasks(plugin);

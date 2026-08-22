@@ -1,6 +1,5 @@
 package org.wargamer2010.signshop.incompatibility.detectors;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -8,6 +7,7 @@ import org.bukkit.inventory.meta.SkullMeta;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.incompatibility.IncompatibilityDetector;
 import org.wargamer2010.signshop.incompatibility.IncompatibilityType;
+import org.wargamer2010.signshop.util.versionUtil;
 
 import java.util.NoSuchElementException;
 
@@ -31,6 +31,8 @@ import java.util.NoSuchElementException;
  *     .get()                     // NPE! Optional is now empty
  * </pre>
  *
+ * <p>Still present on the year based releases (26.1, 26.1.1, 26.1.2, 26.2).</p>
+ *
  * <p><b>Detection Method:</b></p>
  * <ol>
  *   <li>Check if item is a PLAYER_HEAD</li>
@@ -52,19 +54,11 @@ import java.util.NoSuchElementException;
  */
 public class PlayerHeadIncompatibilityDetector implements IncompatibilityDetector {
 
-    // ========================================
-    // Version Constants
-    // ========================================
-
     /** First Spigot version with stricter validation */
     private static final String FIRST_AFFECTED_VERSION = "1.21.10";
 
     /** Version where this was fixed (null = not fixed yet) */
     private static final String FIXED_IN_VERSION = null;
-
-    // ========================================
-    // Detection Logic
-    // ========================================
 
     /**
      * Detects if a player head has an empty name field.
@@ -130,37 +124,21 @@ public class PlayerHeadIncompatibilityDetector implements IncompatibilityDetecto
         return null;
     }
 
-    // ========================================
-    // Version Checking
-    // ========================================
-
     /**
      * Checks if this incompatibility affects the current Spigot version.
      *
-     * <p><b>Logic:</b></p>
-     * <ul>
-     *   <li>Check if version contains "1.21.1" (covers 1.21.10 through 1.21.19)</li>
-     *   <li>Or check if version contains "1.21.2" or higher</li>
-     *   <li>Returns false if fixed version is known and current version is >= fixed version</li>
-     * </ul>
+     * <p>Affects 1.21.10 and everything after it, which includes the year based
+     * releases (26.1 and up) since those sort above every 1.x version.</p>
      *
      * @return true if current Spigot version is affected by this incompatibility
      */
     @Override
     public boolean isRelevantForCurrentVersion() {
-        String version = Bukkit.getVersion();
-
-        // If there's a known fix version, check if we're past it
-        if (FIXED_IN_VERSION != null && isVersionGreaterOrEqual(version)) {
+        if (FIXED_IN_VERSION != null && versionUtil.isAtLeast(FIXED_IN_VERSION)) {
             return false; // Issue is fixed in this version
         }
 
-        // Check if we're on an affected version (1.21.10+)
-        // This is a simplified check - in production you'd want proper version parsing
-        return version.contains("1.21.1") ||  // 1.21.10-1.21.19
-                version.contains("1.21.2") ||  // 1.21.20+
-                version.contains("1.22") ||    // Future versions
-                version.contains("1.23");      // Future versions
+        return versionUtil.isAtLeast(FIRST_AFFECTED_VERSION);
     }
 
     /**
@@ -171,48 +149,6 @@ public class PlayerHeadIncompatibilityDetector implements IncompatibilityDetecto
     @Override
     public String getFixedInVersion() {
         return FIXED_IN_VERSION;
-    }
-
-    // ========================================
-    // Helper Methods
-    // ========================================
-
-    /**
-     * Simplified version comparison.
-     *
-     * <p>NOTE: This is a basic implementation. For production use, consider
-     * a more robust version comparison library.</p>
-     *
-     * @param current Current version string
-     * @return true if current >= target
-     */
-    private boolean isVersionGreaterOrEqual(String current) {
-        // Extract version numbers (simplified - doesn't handle all edge cases)
-        try {
-            String currentClean = current.replaceAll("[^0-9.]", "");
-            String targetClean = PlayerHeadIncompatibilityDetector.FIXED_IN_VERSION.replaceAll("[^0-9.]", "");
-
-            String[] currentParts = currentClean.split("\\.");
-            String[] targetParts = targetClean.split("\\.");
-
-            int maxLength = Math.max(currentParts.length, targetParts.length);
-
-            for (int i = 0; i < maxLength; i++) {
-                int currentPart = i < currentParts.length ?
-                        Integer.parseInt(currentParts[i]) : 0;
-                int targetPart = i < targetParts.length ?
-                        Integer.parseInt(targetParts[i]) : 0;
-
-                if (currentPart > targetPart) return true;
-                if (currentPart < targetPart) return false;
-            }
-
-            return true; // Equal
-
-        } catch (NumberFormatException e) {
-            // If parsing fails, assume version is relevant (safer)
-            return false;
-        }
     }
 
     /**

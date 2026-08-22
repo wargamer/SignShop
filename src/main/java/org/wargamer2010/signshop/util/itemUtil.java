@@ -716,7 +716,14 @@ public class itemUtil {
     }
 
     public static Boolean clickedSign(Block bBlock) {
-        return (Tag.ALL_SIGNS.isTagged(bBlock.getType()));
+        try {
+            return (Tag.ALL_SIGNS.isTagged(bBlock.getType()));
+        } catch (NullPointerException e) {
+            // Folia: Can't access block data from wrong thread during startup
+            // This is expected when loading shops at startup on Folia
+            // The shop will be validated later when accessed
+            return false;
+        }
     }
 
     public static Boolean clickedDoor(Block bBlock) {

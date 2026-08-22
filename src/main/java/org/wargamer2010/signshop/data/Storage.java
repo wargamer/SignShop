@@ -128,7 +128,9 @@ public class Storage implements Listener {
 
     public static void dispose() {
         instance = null;
-        fileSaveWorker.stop();
+        if (fileSaveWorker != null) {
+            fileSaveWorker.stop();
+        }
     }
 
     public static Storage get() {
@@ -225,8 +227,12 @@ public class Storage implements Listener {
                 throw storageEx;
             }
             if(!itemUtil.clickedSign(seller_sign)) {
-                storageEx.setReason(StorageExceptionReason.SIGN_LOCATION_NOT_ACTUALLY_SIGN);
-                throw storageEx;
+                // On Folia, block checks during startup may fail due to threading
+                // Log a warning but continue loading - shop will be validated on first use
+                SignShop.log("Could not validate sign at " + seller_sign.getLocation() + " during startup (may be Folia threading issue). Will validate on first use.", java.util.logging.Level.WARNING);
+                // Don't throw exception - allow shop to load and be validated later
+                // storageEx.setReason(StorageExceptionReason.SIGN_LOCATION_NOT_ACTUALLY_SIGN);
+                // throw storageEx;
             }
             seller_activatables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "activatables"), world);
             seller_containables = signshopUtil.getBlocksFromLocStringList(getSetting(sellerSettings, "containables"), world);

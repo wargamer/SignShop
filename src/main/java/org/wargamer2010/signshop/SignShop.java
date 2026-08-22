@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -273,11 +274,11 @@ public class SignShop extends JavaPlugin {
         }
         //Setup worth
         if (getSignShopConfig().getEnablePriceFromWorth()) {
-            if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
+            if (isPluginRunning("CMI")) {
                 worthHandler = new CMIWorthHandler();
                 log("Using worth information from CMI.", Level.INFO);
             }
-            else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+            else if (isPluginRunning("Essentials")) {
                 worthHandler = new EssentialsWorthHandler();
                 log("Using worth information from Essentials.", Level.INFO);
             }
@@ -307,6 +308,11 @@ public class SignShop extends JavaPlugin {
         }
 
         log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
+    }
+
+    private static boolean isPluginRunning(String name) {
+        Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin(name);
+        return plugin != null && plugin.isEnabled();
     }
 
     @Override
