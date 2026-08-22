@@ -132,5 +132,13 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/java,windows,intellij
 
+# Maven build output
+target/
+dependency-reduced-pom.xml
+
+# Machine-specific IDE settings
+.idea/encodings.xml
+.idea/jarRepositories.xml
+
 # Claude Code documentation (local development only)
 CLAUDE.md

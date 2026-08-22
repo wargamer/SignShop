@@ -16,6 +16,7 @@ import org.wargamer2010.signshop.data.SignShopBooks;
 import org.wargamer2010.signshop.data.SignShopItemMeta;
 import org.wargamer2010.signshop.commands.*;
 import org.wargamer2010.signshop.configuration.ColorUtil;
+import org.wargamer2010.signshop.configuration.MetaFormats;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
 import org.wargamer2010.signshop.data.Storage;
 import org.wargamer2010.signshop.configuration.configUtil;
@@ -27,6 +28,7 @@ import org.wargamer2010.signshop.scheduling.SchedulerAdapter;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -104,6 +106,10 @@ public class SignShop extends JavaPlugin {
 
     public void reload() {
         signShopConfig = new SignShopConfig();
+        economyUtil.priceCache.clear();
+        signShopConfig.getCurrencyManager().validateWithVault2();
+        ColorUtil.init();
+        MetaFormats.init();
     }
 
 
@@ -208,6 +214,7 @@ public class SignShop extends JavaPlugin {
         PlayerMetadata.init();
         SignShopItemMeta.init();
         ColorUtil.init();
+        MetaFormats.init();
         MoneyModifierManager.init();
 
         // Convert legacy player names to UUID
@@ -350,6 +357,8 @@ public class SignShop extends JavaPlugin {
             getServer().getPluginManager().registerEvents(new ServerLoadedListener(),this);
             log("Could not hook into Vault's Economy! Signshop will retry after server is loaded.", Level.WARNING);
         }
+        // Validate configured currencies against the economy once Vault2 detection is done
+        getSignShopConfig().getCurrencyManager().validateWithVault2();
     }
 
     private void setupCommands() {

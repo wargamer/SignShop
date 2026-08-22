@@ -5,6 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
+import org.bukkit.profile.PlayerProfile;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.incompatibility.IncompatibilityDetector;
 import org.wargamer2010.signshop.incompatibility.IncompatibilityType;
@@ -99,19 +100,25 @@ public class PlayerHeadIncompatibilityDetector implements IncompatibilityDetecto
 
         SkullMeta skullMeta = (SkullMeta) meta;
 
-        // Check if head has an owning player
-        if (skullMeta.getOwningPlayer() == null) {
+        // Use hasOwner() - doesn't trigger Mojang API lookups
+        if (!skullMeta.hasOwner()) {
             return null; // Vanilla player head without custom texture
         }
 
-        // Try to get the player name - this is where the NPE occurs in Spigot 1.21.10+
+        // Use getOwnerProfile() to get the profile directly without triggering Mojang API lookups
+        // (getOwningPlayer() calls Bukkit.getOfflinePlayer() which makes network requests - problematic
+        // for Bedrock players on Geyser/Floodgate servers whose ".username" won't exist in Mojang's DB)
         try {
-            String ownerName = skullMeta.getOwningPlayer().getName();
+            PlayerProfile profile = skullMeta.getOwnerProfile();
+            if (profile == null) {
+                return null; // No profile data
+            }
+
+            String ownerName = profile.getName();
 
             // Empty or null name = incompatible
             if (ownerName == null || ownerName.isEmpty()) {
-                debugLog("Detected empty name in player head (UUID: " +
-                        skullMeta.getOwningPlayer().getUniqueId() + ")");
+                debugLog("Detected empty name in player head (UUID: " + profile.getUniqueId() + ")");
                 return IncompatibilityType.PLAYER_HEAD_EMPTY_NAME;
             }
 

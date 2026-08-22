@@ -2,6 +2,7 @@
 package org.wargamer2010.signshop.data;
 
 import com.google.common.collect.ImmutableList;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
@@ -14,6 +15,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.configuration.ColorUtil;
+import org.wargamer2010.signshop.configuration.MetaFormats;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
@@ -74,6 +76,13 @@ public class SignShopItemMeta {
     }
 
     private static String convertFireworkTypeToDisplay(FireworkEffect.Type type) {
+        // Try to get translated firework type from MetaFormats
+        String translated = MetaFormats.get("firework-type-" + type.toString().toLowerCase());
+        if (translated != null && !translated.isEmpty()) {
+            return translated;
+        }
+
+        // Fallback to English formatting
         String temp = signshopUtil.capFirstLetter(type.toString().toLowerCase()).replace("_", " ");
         if(temp.contains(" ")) {
             String[] temparr = temp.split(" ");
@@ -82,6 +91,24 @@ public class SignShopItemMeta {
             temp = signshopUtil.implode(temparr, " ");
         }
         return signshopUtil.capFirstLetter(temp);
+    }
+
+    private static String getTranslatedPotionType(String type) {
+        String key = "potion-type-" + type.toLowerCase();
+        String translated = MetaFormats.get(key);
+        if (translated != null && !translated.isEmpty()) {
+            return translated;
+        }
+        return itemUtil.stripConstantCase(type);
+    }
+
+    private static String getTranslatedPotionEffect(String effect) {
+        String key = "potion-effect-" + effect.toLowerCase();
+        String translated = MetaFormats.get(key);
+        if (translated != null && !translated.isEmpty()) {
+            return translated;
+        }
+        return itemUtil.stripConstantCase(effect);
     }
 
     private static boolean hasNoMeta(ItemStack stack) {
@@ -123,7 +150,7 @@ public class SignShopItemMeta {
         if (stack.getItemMeta() instanceof Damageable) {
             Damageable damageable = (Damageable) stack.getItemMeta();
             if(stack.getType().getMaxDurability() >= 30 && damageable.hasDamage())
-                displayname = (" Damaged " + displayname);
+                displayname = (MetaFormats.get("damaged-prefix") + displayname);
         }
         if(includeEnchantments && !stack.getEnchantments().isEmpty())
             displayname += (txtcolor + " " + itemUtil.enchantmentsToMessageFormat(stack.getEnchantments()));
@@ -154,7 +181,12 @@ public class SignShopItemMeta {
                 }
             } else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
-                return (ColorUtil.getColorAsString(leathermeta.getColor()) + " Colored " + getDisplayName(stack, getTextColor(), includeEnchantments));
+                Color defaultColor = Bukkit.getItemFactory().getDefaultLeatherColor();
+                if (leathermeta.getColor().equals(defaultColor)) {
+                    // Plain leather - no color prefix
+                    return getDisplayName(stack, getTextColor(), includeEnchantments);
+                }
+                return (ColorUtil.getColorAsString(leathermeta.getColor()) + MetaFormats.get("colored-suffix") + getDisplayName(stack, getTextColor(), includeEnchantments));
             } else if(type == MetaType.Skull) {
                 SkullMeta skullmeta = (SkullMeta) meta;
 
@@ -168,7 +200,7 @@ public class SignShopItemMeta {
                     if (skullmeta.getOwningPlayer() != null) {
                         String playerName = skullmeta.getOwningPlayer().getName();
                         if (playerName != null && !playerName.isEmpty()) {
-                            return playerName + "'s Head";
+                            return playerName + MetaFormats.get("player-head-suffix");
                         }
                     }
                 } catch (NoSuchElementException e) {
@@ -187,7 +219,7 @@ public class SignShopItemMeta {
                 // Check if it's a custom texture head
                 try {
                     if (skullmeta.hasOwner() || skullmeta.getOwnerProfile() != null) {
-                        return "Custom Player Head";
+                        return MetaFormats.get("custom-head");
                     }
                 } catch (Exception ignored) {
                     // Continue to fallback
@@ -207,7 +239,7 @@ public class SignShopItemMeta {
                     nameBuilder.append(potionMeta.getDisplayName());
                 }
                 else if (potionMeta.hasBasePotionType()) {
-                    nameBuilder.append(itemUtil.stripConstantCase(potionMeta.getBasePotionType().toString()));
+                    nameBuilder.append(getTranslatedPotionType(potionMeta.getBasePotionType().toString()));
                 }
                 nameBuilder.append(getTextColor());
                 nameBuilder.append("\" ");
@@ -228,7 +260,7 @@ public class SignShopItemMeta {
                             if (first) first = false;
                             else nameBuilder.append(", ");
                             StringBuilder effectString = new StringBuilder();
-                            effectString.append(itemUtil.stripConstantCase(potionEffect.getType().getKey().getKey()));
+                            effectString.append(getTranslatedPotionEffect(potionEffect.getType().getKey().getKey()));
                             if (potionEffect.getAmplifier() > 0) {
                                 effectString.append("_");
                                 effectString.append(potionEffect.getAmplifier() + 1);
@@ -254,20 +286,20 @@ public class SignShopItemMeta {
 
                 if(fireworkmeta.hasEffects()) {
                     namebuilder.append(" (");
-                    namebuilder.append("Duration : ");
+                    namebuilder.append(MetaFormats.get("firework-duration"));
                     namebuilder.append(fireworkmeta.getPower());
                     for(FireworkEffect effect : fireworkmeta.getEffects()) {
                         namebuilder.append(", ");
 
                         namebuilder.append(convertFireworkTypeToDisplay(effect.getType()));
-                        namebuilder.append(" with");
-                        namebuilder.append((!effect.getColors().isEmpty() ? " colors: " : ""));
+                        namebuilder.append(MetaFormats.get("firework-with"));
+                        namebuilder.append((!effect.getColors().isEmpty() ? MetaFormats.get("firework-colors") : ""));
                         namebuilder.append(convertColorsToDisplay(effect.getColors()));
-                        namebuilder.append((!effect.getFadeColors().isEmpty() ? " and fadecolors: " : ""));
+                        namebuilder.append((!effect.getFadeColors().isEmpty() ? MetaFormats.get("firework-fadecolors") : ""));
                         namebuilder.append(convertColorsToDisplay(effect.getFadeColors()));
 
-                        namebuilder.append(effect.hasFlicker() ? " +twinkle" : "");
-                        namebuilder.append(effect.hasTrail()? " +trail" : "");
+                        namebuilder.append(effect.hasFlicker() ? MetaFormats.get("firework-twinkle") : "");
+                        namebuilder.append(effect.hasTrail()? MetaFormats.get("firework-trail") : "");
                     }
                     namebuilder.append(")");
                 }
@@ -286,7 +318,7 @@ public class SignShopItemMeta {
 
                     ItemStack[] itemStacks = shulker.getInventory().getContents();
                     if (shulker.getInventory().isEmpty()){
-                        nameBuilder.append("Empty");
+                        nameBuilder.append(MetaFormats.get("empty-container"));
                     } else {
 
                         boolean first = true;
@@ -482,7 +514,10 @@ public class SignShopItemMeta {
             }
             else if(type == MetaType.LeatherArmor) {
                 LeatherArmorMeta leathermeta = (LeatherArmorMeta) meta;
-                metamap.put("color", Integer.toString(leathermeta.getColor().asRGB()));
+                Color defaultColor = Bukkit.getItemFactory().getDefaultLeatherColor();
+                if (!leathermeta.getColor().equals(defaultColor)) {
+                    metamap.put("color", Integer.toString(leathermeta.getColor().asRGB()));
+                }
             }
             else if(type == MetaType.Map) {
                 MapMeta mapmeta = (MapMeta) meta;

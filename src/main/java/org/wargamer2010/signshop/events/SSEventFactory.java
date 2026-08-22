@@ -129,6 +129,7 @@ public class SSEventFactory {
                                             ssArgs.getRawMessageParts(),
                                             pRequestType);
         event.setArguments(ssArgs);
+        event.setCurrency(ssArgs.getCurrency());
         return event;
     }
 

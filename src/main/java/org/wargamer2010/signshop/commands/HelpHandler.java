@@ -4,6 +4,7 @@ package org.wargamer2010.signshop.commands;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.commandUtil;
+import org.wargamer2010.signshop.util.itemUtil;
 import org.wargamer2010.signshop.util.signshopUtil;
 
 import java.util.*;
@@ -72,7 +73,7 @@ public class HelpHandler implements ICommandHandler {
             messageBuilder.append(moreInfo);
         } else if(!command.isEmpty() && args.length > 0 && command.equals("sign")) {
             Map<String, Object> messageParts = new LinkedHashMap<>();
-            messageParts.put("!linkmaterial", signshopUtil.capFirstLetter(SignShop.getInstance().getSignShopConfig().getLinkMaterial().name().toLowerCase()));
+            messageParts.put("!linkmaterial", itemUtil.formatMaterialName(SignShop.getInstance().getSignShopConfig().getLinkMaterial()));
 
             String temp = SignShop.getInstance().getSignShopConfig().getMessage("help", args[0], messageParts).replace(". ", ".\n- ");
             if(temp.trim().isEmpty()) {

@@ -14,6 +14,9 @@ import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.events.IMessagePartContainer;
 import org.wargamer2010.signshop.events.SSMoneyEventType;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
+import org.wargamer2010.signshop.money.CurrencyManager;
+import org.wargamer2010.signshop.money.PriceResult;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.itemUtil;
@@ -81,6 +84,8 @@ public class SignShopArguments implements IMessagePartContainer {
     public boolean bRunCommandAsUser = false;
     // Reference to seller for accessing cached deserialized items
     private Seller seller = null;
+    /** The currency for this shop's price. Defaults to the implicit default (legacy Vault). */
+    private CurrencyDefinition currency = CurrencyManager.IMPLICIT_DEFAULT;
     private final SignShopArgument<Double> fPrice = new SignShopArgument<>(this);
     private final SignShopArgument<List<Block>> containables = new SignShopArgument<>(this);
     private final SignShopArgument<List<Block>> activatables = new SignShopArgument<>(this);
@@ -123,8 +128,12 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public SignShopArguments(Seller seller, SignShopPlayer player, SignShopArgumentsType type) {
         this.seller = seller;  // Store seller reference for cached item access
-        if (seller.getSign().getState() instanceof Sign)
-            fPrice.setRoot(economyUtil.parsePrice(((Sign) seller.getSign().getState()).getSide(Side.FRONT).getLine(3)));
+        if (seller.getSign().getState() instanceof Sign) {
+            PriceResult priceResult = economyUtil.parsePriceWithCurrency(
+                    ((Sign) seller.getSign().getState()).getSide(Side.FRONT).getLine(3));
+            fPrice.setRoot(priceResult.price());
+            this.currency = priceResult.currency();
+        }
 
         isItems.setRoot(seller.getItems());
         containables.setRoot(seller.getContainables());
@@ -159,7 +168,7 @@ public class SignShopArguments implements IMessagePartContainer {
         }
 
         if (fPrice.get() != null)
-            setMessagePart("!price", economyUtil.formatMoney(fPrice.get()));
+            setMessagePart("!price", economyUtil.formatMoney(fPrice.get(), currency));
 
         if (ssOwner.get() != null)
             setMessagePart("!owner", ssOwner.get().getName());
@@ -273,6 +282,17 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public void setSeller(Seller seller) {
         this.seller = seller;
+    }
+
+    /** Returns the currency for this shop's price. Never null. */
+    public CurrencyDefinition getCurrency() {
+        return currency != null ? currency : CurrencyManager.IMPLICIT_DEFAULT;
+    }
+
+    public void setCurrency(CurrencyDefinition currency) {
+        this.currency = currency != null ? currency : CurrencyManager.IMPLICIT_DEFAULT;
+        if (fPrice.get() != null)
+            setMessagePart("!price", economyUtil.formatMoney(fPrice.get(), this.currency));
     }
 
     public SSMoneyEventType getMoneyEventType() {

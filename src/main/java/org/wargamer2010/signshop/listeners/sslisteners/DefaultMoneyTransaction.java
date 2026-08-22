@@ -3,8 +3,10 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 
 /**
@@ -22,28 +24,30 @@ public class DefaultMoneyTransaction implements Listener {
         }
 
         SignShopPlayer ssOwner = event.getShop().getOwner();
+        CurrencyDefinition currency = event.getCurrency();
+        SignShop.getInstance().debugMessage("[currency] DefaultMoneyTransaction: currency=" + currency.getName() + " requiresVault2=" + currency.requiresVault2() + " requestType=" + event.getRequestType() + " txType=" + event.getTransactionType());
         if(event.getRequestType() == SSMoneyRequestType.CheckBalance) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:
-                    if (ssOwner.canNotHaveMoney(event.getPrice())) {
+                    if (ssOwner.canNotHaveMoney(event.getPrice(), currency)) {
                         event.sendFailedRequirementsMessage("shop_cannot_hold_more_money");
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromOwner:
-                    if (ssOwner.hasNoMoney(event.getPrice())) {
+                    if (ssOwner.hasNoMoney(event.getPrice(), currency)) {
                         event.sendFailedRequirementsMessage("no_shop_money");
                         event.setCancelled(true);
                     }
                 break;
                 case GiveToPlayer:
-                    if (event.getPlayer().canNotHaveMoney(event.getPrice())) {
+                    if (event.getPlayer().canNotHaveMoney(event.getPrice(), currency)) {
                         event.sendFailedRequirementsMessage("player_cannot_hold_more_money");
                         event.setCancelled(true);
                     }
                 break;
                 case TakeFromPlayer:
-                    if (event.getPlayer().hasNoMoney(event.getPrice())) {
+                    if (event.getPlayer().hasNoMoney(event.getPrice(), currency)) {
                         event.sendFailedRequirementsMessage("no_player_money");
                         event.setCancelled(true);
                     }
@@ -56,16 +60,16 @@ public class DefaultMoneyTransaction implements Listener {
 
             switch(event.getTransactionType()) {
                 case GiveToOwner:
-                    bTransaction = ssOwner.mutateMoney(event.getPrice());
+                    bTransaction = ssOwner.mutateMoney(event.getPrice(), currency);
                 break;
                 case TakeFromOwner:
-                    bTransaction = ssOwner.mutateMoney(-event.getPrice());
+                    bTransaction = ssOwner.mutateMoney(-event.getPrice(), currency);
                 break;
                 case GiveToPlayer:
-                    bTransaction = event.getPlayer().mutateMoney(event.getPrice());
+                    bTransaction = event.getPlayer().mutateMoney(event.getPrice(), currency);
                 break;
                 case TakeFromPlayer:
-                    bTransaction = event.getPlayer().mutateMoney(-event.getPrice());
+                    bTransaction = event.getPlayer().mutateMoney(-event.getPrice(), currency);
                 break;
                 case Unknown:
                     return;

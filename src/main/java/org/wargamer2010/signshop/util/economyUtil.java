@@ -4,7 +4,11 @@ import org.bukkit.ChatColor;
 import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.configuration.SignShopConfig;
+import org.wargamer2010.signshop.money.CurrencyDefinition;
+import org.wargamer2010.signshop.money.CurrencyManager;
+import org.wargamer2010.signshop.money.PriceResult;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -19,7 +23,7 @@ import java.util.regex.Pattern;
  * @see Vault
  */
 public class economyUtil {
-    public static final Map<String, Double> priceCache = new HashMap<>();
+    public static final Map<String, PriceResult> priceCache = new HashMap<>();
     private static SignShopConfig signShopConfig;
 
     private economyUtil() {
@@ -49,42 +53,103 @@ public class economyUtil {
     }
 
     /**
+     * Formats a money amount for the given currency.
+     * Uses Vault2's currency-aware formatter when available, otherwise falls back to legacy.
+     *
+     * @param money    The amount to format
+     * @param currency The currency to format for (null or default falls back to legacy)
+     * @return Colored, formatted money string
+     */
+    public static String formatMoney(double money, CurrencyDefinition currency) {
+        if (currency == null || !currency.requiresVault2()) {
+            return formatMoney(money);
+        }
+        String formatted = Vault.vault2Format(BigDecimal.valueOf(money), currency.getVault2Name());
+        SignShop.getInstance().debugMessage("[currency] formatMoney: currency=" + currency.getVault2Name() + " vault2Format returned='" + formatted + "'");
+        if (formatted != null) {
+            return attachColor(formatted);
+        }
+        // Vault2 format failed or unavailable - fall back to legacy with currency name appended
+        if (Vault.getEconomy() != null) {
+            return attachColor(Vault.getEconomy().format(money) + " (" + currency.getName() + ")");
+        }
+        return attachColor(money + " " + currency.getName());
+    }
+
+    /**
+     * Parses a price and currency from a sign line.
+     * Extracts the numeric value and matches any non-numeric text against configured currency symbols.
+     * Results are cached for performance when CachePrices is enabled.
+     *
+     * @param line The sign line containing the price and optional currency symbol (e.g., "100G", "$50")
+     * @return A {@link PriceResult} containing the parsed price and matched currency
+     */
+    public static PriceResult parsePriceWithCurrency(String line) {
+        CurrencyManager currencyManager = signShopConfig != null ? signShopConfig.getCurrencyManager() : null;
+        CurrencyDefinition currency = currencyManager != null
+                ? currencyManager.getDefaultCurrency()
+                : CurrencyManager.IMPLICIT_DEFAULT;
+
+        if (line == null) return new PriceResult(0.0, currency);
+
+        if (signShopConfig != null && signShopConfig.cachePrices() && priceCache.containsKey(line))
+            return priceCache.get(line);
+
+        String priceline = ChatColor.stripColor(line);
+
+        // Separate numeric and non-numeric portions
+        StringBuilder numericPart = new StringBuilder();
+        StringBuilder nonNumericPart = new StringBuilder();
+
+        for (int i = 0; i < priceline.length(); i++) {
+            char c = priceline.charAt(i);
+            if (Character.isDigit(c) || c == '.'
+                    || (signShopConfig != null && signShopConfig.allowCommaDecimalSeparator().isPermitted() && c == ',')) {
+                numericPart.append(c);
+            } else {
+                nonNumericPart.append(c);
+            }
+        }
+
+        // Match the non-numeric portion to a configured currency
+        if (currencyManager != null) {
+            String nonNumeric = nonNumericPart.toString().trim();
+            if (!nonNumeric.isEmpty()) {
+                currency = currencyManager.matchCurrency(nonNumeric);
+            }
+        }
+        SignShop.getInstance().debugMessage("[currency] parsePriceWithCurrency: line='" + line + "' nonNumeric='" + nonNumericPart.toString().trim() + "' -> currency=" + currency.getName() + " requiresVault2=" + currency.requiresVault2());
+
+        // Parse the numeric portion
+        double price;
+        if (signShopConfig != null && signShopConfig.allowCommaDecimalSeparator().isPermitted()) {
+            price = parsePriceInternational(numericPart.toString());
+        } else {
+            try {
+                price = Double.parseDouble(numericPart.toString());
+            } catch (NumberFormatException nFE) {
+                price = 0.0d;
+            }
+            if (price < 0.0 || Double.isNaN(price) || Double.isInfinite(price))
+                price = 0.0d;
+        }
+
+        PriceResult result = new PriceResult(price, currency);
+        if (signShopConfig != null && signShopConfig.cachePrices())
+            priceCache.put(line, result);
+        return result;
+    }
+
+    /**
      * Parses a price from a sign line, supporting both period and comma decimal separators.
-     * Extracts numeric characters and handles international number formats.
-     * Results are cached for performance when cachePrices is enabled.
+     * Delegates to {@link #parsePriceWithCurrency(String)} and returns the numeric value.
+     * Results are cached for performance when CachePrices is enabled.
      *
      * @param line The sign line containing the price (e.g., "$100" or "100,50")
      * @return Parsed price as double, or 0.0 if invalid
      */
     public static double parsePrice(String line) {
-        if (line == null)
-            return 0.0d;
-        if (signShopConfig.cachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
-        String priceline = ChatColor.stripColor(line);
-        StringBuilder sPrice = new StringBuilder();
-        Double fPrice;
-        for(int i = 0; i < priceline.length(); i++)
-            if (Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (signShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
-                sPrice.append(priceline.charAt(i));
-        if (signShopConfig.allowCommaDecimalSeparator().isPermitted()) {
-            double price = parsePriceInternational(sPrice.toString());
-            if (signShopConfig.cachePrices()) priceCache.put(line, price);
-            return price;
-        }
-        try {
-            fPrice = Double.parseDouble(sPrice.toString());
-        }
-        catch(NumberFormatException nFE) {
-            fPrice = 0.0d;
-        }
-        if(fPrice < 0.0f) {
-            fPrice = 0.0d;
-        }
-        if(Double.isNaN(fPrice) || fPrice.isInfinite())
-            fPrice = 0.0d;
-
-        if (signShopConfig.cachePrices()) priceCache.put(line, fPrice);
-        return fPrice;
+        return parsePriceWithCurrency(line).price();
     }
 
     private static double parsePriceInternational(String price) {

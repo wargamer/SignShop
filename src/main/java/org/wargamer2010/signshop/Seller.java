@@ -169,7 +169,10 @@ public class Seller {
     public ItemStack[] getCachedMiscItems(String key) {
         // Check cache first
         if (miscItemsCache.containsKey(key)) {
-            return miscItemsCache.get(key);
+            // Return a deep clone so callers (giveShopItems/takeShopItems) cannot
+            // poison the cache via Inventory#addItem / #removeItem, which mutate
+            // the passed array's element amounts in place to write back leftovers.
+            return itemUtil.getBackupItemStack(miscItemsCache.get(key));
         }
 
         // Not in cache - deserialize from miscProps
@@ -191,7 +194,7 @@ public class Seller {
         // Cache the result (even if null, to avoid repeated failed deserializations)
         miscItemsCache.put(key, items);
 
-        return items;
+        return itemUtil.getBackupItemStack(items);
     }
 
     public String getMisc(String key) {

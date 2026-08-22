@@ -24,6 +24,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.wargamer2010.signshop.Seller;
 import org.wargamer2010.signshop.SignShop;
+import org.wargamer2010.signshop.Vault;
 import org.wargamer2010.signshop.data.Storage;
 import org.wargamer2010.signshop.events.*;
 import org.wargamer2010.signshop.operations.SignShopArguments;
@@ -385,8 +386,23 @@ public class SignShopPlayerListener implements Listener {
                 if (!wentOK) {
                     return;
                 }
-                SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), null, containables, activatables,
+                org.wargamer2010.signshop.money.PriceResult priceResult = economyUtil.parsePriceWithCurrency(sLines[3]);
+                // Check currency permission before creating the shop
+                if (priceResult.currency().hasPermission()
+                        && !ssPlayer.hasPerm(priceResult.currency().getPermission(), player.getWorld(), false)) {
+                    Map<String, Object> currencyMsgParts = new java.util.HashMap<>();
+                    currencyMsgParts.put("!currency", priceResult.currency().getName());
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("no_currency_permission", currencyMsgParts));
+                    return;
+                }
+                // Check if non-default currency requires VaultUnlocked
+                if (priceResult.currency().requiresVault2() && !Vault.isVault2MultiCurrencyAvailable()) {
+                    ssPlayer.sendMessage(SignShop.getInstance().getSignShopConfig().getError("multicurrency_requires_vaultunlocked", null));
+                    return;
+                }
+                SignShopArguments ssArgs = new SignShopArguments(priceResult.price(), null, containables, activatables,
                         ssPlayer, ssPlayer, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Setup);
+                ssArgs.setCurrency(priceResult.currency());
                 Boolean bSetupOK = false;
 
                 for (SignShopOperationListItem ssOperation : SignShopOperations) {
@@ -528,8 +544,10 @@ public class SignShopPlayerListener implements Listener {
             if (event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null) {
                 event.setCancelled(true);
             }
-            SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
+            org.wargamer2010.signshop.money.PriceResult txPriceResult = economyUtil.parsePriceWithCurrency(sLines[3]);
+            SignShopArguments ssArgs = new SignShopArguments(txPriceResult.price(), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                     ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Check);
+            ssArgs.setCurrency(txPriceResult.currency());
 
             if (seller.getRawMisc() != null)
                 ssArgs.miscSettings = seller.getRawMisc();

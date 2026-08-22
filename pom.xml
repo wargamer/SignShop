@@ -6,7 +6,7 @@
 
     <groupId>org.wargamer2010</groupId>
     <artifactId>SignShop</artifactId>
-    <version>5.2.0</version>
+    <version>5.3.0</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -50,6 +50,10 @@
             <id>MikeRepo</id>
             <url>https://repo.mikeprimm.com/</url>
         </repository>
+        <repository>
+            <id>codemc-creatorfromhell</id>
+            <url>https://repo.codemc.io/repository/creatorfromhell/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -68,6 +72,12 @@
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.milkbowl.vault</groupId>
+            <artifactId>VaultUnlockedAPI</artifactId>
+            <version>2.19.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
