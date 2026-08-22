@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
  * @see Vault
  */
 public class economyUtil {
-    public static final Map<String, Double> priceCache = new HashMap<>();
+    public static final Map<String, PriceResult> priceCache = new HashMap<>();
     private static SignShopConfig signShopConfig;
 
     private economyUtil() {
@@ -65,6 +65,7 @@ public class economyUtil {
             return formatMoney(money);
         }
         String formatted = Vault.vault2Format(BigDecimal.valueOf(money), currency.getVault2Name());
+        SignShop.getInstance().debugMessage("[currency] formatMoney: currency=" + currency.getVault2Name() + " vault2Format returned='" + formatted + "'");
         if (formatted != null) {
             return attachColor(formatted);
         }
@@ -91,6 +92,9 @@ public class economyUtil {
 
         if (line == null) return new PriceResult(0.0, currency);
 
+        if (signShopConfig != null && signShopConfig.cachePrices() && priceCache.containsKey(line))
+            return priceCache.get(line);
+
         String priceline = ChatColor.stripColor(line);
 
         // Separate numeric and non-numeric portions
@@ -114,50 +118,38 @@ public class economyUtil {
                 currency = currencyManager.matchCurrency(nonNumeric);
             }
         }
+        SignShop.getInstance().debugMessage("[currency] parsePriceWithCurrency: line='" + line + "' nonNumeric='" + nonNumericPart.toString().trim() + "' -> currency=" + currency.getName() + " requiresVault2=" + currency.requiresVault2());
 
-        // Parse the numeric portion using the existing logic (handles international formats)
-        double price = parsePrice(line);
+        // Parse the numeric portion
+        double price;
+        if (signShopConfig != null && signShopConfig.allowCommaDecimalSeparator().isPermitted()) {
+            price = parsePriceInternational(numericPart.toString());
+        } else {
+            try {
+                price = Double.parseDouble(numericPart.toString());
+            } catch (NumberFormatException nFE) {
+                price = 0.0d;
+            }
+            if (price < 0.0 || Double.isNaN(price) || Double.isInfinite(price))
+                price = 0.0d;
+        }
 
-        return new PriceResult(price, currency);
+        PriceResult result = new PriceResult(price, currency);
+        if (signShopConfig != null && signShopConfig.cachePrices())
+            priceCache.put(line, result);
+        return result;
     }
 
     /**
      * Parses a price from a sign line, supporting both period and comma decimal separators.
-     * Extracts numeric characters and handles international number formats.
-     * Results are cached for performance when cachePrices is enabled.
+     * Delegates to {@link #parsePriceWithCurrency(String)} and returns the numeric value.
+     * Results are cached for performance when CachePrices is enabled.
      *
      * @param line The sign line containing the price (e.g., "$100" or "100,50")
      * @return Parsed price as double, or 0.0 if invalid
      */
     public static double parsePrice(String line) {
-        if (line == null)
-            return 0.0d;
-        if (signShopConfig.cachePrices() && priceCache.containsKey(line)) return priceCache.get(line);
-        String priceline = ChatColor.stripColor(line);
-        StringBuilder sPrice = new StringBuilder();
-        Double fPrice;
-        for(int i = 0; i < priceline.length(); i++)
-            if (Character.isDigit(priceline.charAt(i)) || priceline.charAt(i) == '.' || (signShopConfig.allowCommaDecimalSeparator().isPermitted() && priceline.charAt(i) == ','))
-                sPrice.append(priceline.charAt(i));
-        if (signShopConfig.allowCommaDecimalSeparator().isPermitted()) {
-            double price = parsePriceInternational(sPrice.toString());
-            if (signShopConfig.cachePrices()) priceCache.put(line, price);
-            return price;
-        }
-        try {
-            fPrice = Double.parseDouble(sPrice.toString());
-        }
-        catch(NumberFormatException nFE) {
-            fPrice = 0.0d;
-        }
-        if(fPrice < 0.0f) {
-            fPrice = 0.0d;
-        }
-        if(Double.isNaN(fPrice) || fPrice.isInfinite())
-            fPrice = 0.0d;
-
-        if (signShopConfig.cachePrices()) priceCache.put(line, fPrice);
-        return fPrice;
+        return parsePriceWithCurrency(line).price();
     }
 
     private static double parsePriceInternational(String price) {

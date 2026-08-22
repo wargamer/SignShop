@@ -3,6 +3,7 @@ package org.wargamer2010.signshop.listeners.sslisteners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.wargamer2010.signshop.SignShop;
 import org.wargamer2010.signshop.events.SSMoneyRequestType;
 import org.wargamer2010.signshop.events.SSMoneyTransactionEvent;
 import org.wargamer2010.signshop.money.CurrencyDefinition;
@@ -24,6 +25,7 @@ public class DefaultMoneyTransaction implements Listener {
 
         SignShopPlayer ssOwner = event.getShop().getOwner();
         CurrencyDefinition currency = event.getCurrency();
+        SignShop.getInstance().debugMessage("[currency] DefaultMoneyTransaction: currency=" + currency.getName() + " requiresVault2=" + currency.requiresVault2() + " requestType=" + event.getRequestType() + " txType=" + event.getTransactionType());
         if(event.getRequestType() == SSMoneyRequestType.CheckBalance) {
             switch(event.getTransactionType()) {
                 case GiveToOwner:

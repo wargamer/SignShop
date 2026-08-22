@@ -2,11 +2,581 @@ name: "SignShop"
 main: org.wargamer2010.signshop.SignShop
 api-version: "1.21"
 version: "${project.version}"
-dev-url: http://dev.bukkit.org/projects/signshop
+dev-url: https://dev.bukkit.org/projects/signshop
 authors: [Wargamer2010, Devinish, Weaves, IndexOutOfMJ, Mart]
 softdepend: [Vault, Towny, GriefPrevention, WorldGuard, Essentials, CMI, BentoBox, Residence, LWC, BlockLocker, Ultimate_Economy, LuckPerms, PermissionsEx, Skript, CMIPaperLib, EasyConomy, Lands]
 folia-supported: true
+
 commands:
   signshop:
-    description: Admin commands for SignShop
-    usage: /signshop [reload|stats|version|about|help|sign|tutorial|ignore]
+    description: Create and manage chest-based shops
+    aliases: [ss]
+    usage: /signshop [reload|stats|version|about|help|sign|tutorial|ignore|list|unlink]
+
+permissions:
+
+  # ── Universal override ──────────────────────────────────────────────────────
+  SignShop.SuperAdmin:
+    description: Grants all SignShop permissions, bypassing OPOverride checks
+    default: false
+
+  # ── Standard shop creation (SignShop.Signs.*) ───────────────────────────────
+  SignShop.Signs.*:
+    description: Allow creation of all non-admin (non-playerIsOp) shop types
+    default: true
+    children:
+      SignShop.Signs.Buy: true
+      SignShop.Signs.Sell: true
+      SignShop.Signs.Donate: true
+      SignShop.Signs.DonateHand: true
+      SignShop.Signs.Slot: true
+      SignShop.Signs.DeviceOn: true
+      SignShop.Signs.DeviceOff: true
+      SignShop.Signs.Toggle: true
+      SignShop.Signs.Device: true
+      SignShop.Signs.Dispose: true
+      SignShop.Signs.DeviceItem: true
+      SignShop.Signs.Trade: true
+      SignShop.Signs.Share: true
+      SignShop.Signs.Restricted: true
+      SignShop.Signs.Bank: true
+      SignShop.Signs.Jukebox: true
+
+  SignShop.Signs.Buy:
+    description: Allow creation of [Buy] shops
+    default: true
+  SignShop.Signs.Sell:
+    description: Allow creation of [Sell] shops
+    default: true
+  SignShop.Signs.Donate:
+    description: Allow creation of [Donate] shops
+    default: true
+  SignShop.Signs.DonateHand:
+    description: Allow creation of [DonateHand] shops
+    default: true
+  SignShop.Signs.Slot:
+    description: Allow creation of [Slot] shops
+    default: true
+  SignShop.Signs.DeviceOn:
+    description: Allow creation of [DeviceOn] shops
+    default: true
+  SignShop.Signs.DeviceOff:
+    description: Allow creation of [DeviceOff] shops
+    default: true
+  SignShop.Signs.Toggle:
+    description: Allow creation of [Toggle] shops
+    default: true
+  SignShop.Signs.Device:
+    description: Allow creation of [Device] shops
+    default: true
+  SignShop.Signs.Dispose:
+    description: Allow creation of [Dispose] shops
+    default: true
+  SignShop.Signs.DeviceItem:
+    description: Allow creation of [DeviceItem] shops
+    default: true
+  SignShop.Signs.Trade:
+    description: Allow creation of [Trade] shops
+    default: true
+  SignShop.Signs.Share:
+    description: Allow creation of [Share] shops
+    default: true
+  SignShop.Signs.Restricted:
+    description: Allow creation of [Restricted] shops
+    default: true
+  SignShop.Signs.Bank:
+    description: Allow creation of [Bank] shops
+    default: true
+  SignShop.Signs.Jukebox:
+    description: Allow creation of [Jukebox] shops
+    default: true
+
+  # ── Admin shop creation (SignShop.Admin.*) ──────────────────────────────────
+  SignShop.Admin.*:
+    description: Allow creation of all admin (playerIsOp) shop types
+    default: op
+    children:
+      SignShop.Admin.iSell: true
+      SignShop.Admin.iBuy: true
+      SignShop.Admin.gBuy: true
+      SignShop.Admin.gSell: true
+      SignShop.Admin.Day: true
+      SignShop.Admin.Night: true
+      SignShop.Admin.Rain: true
+      SignShop.Admin.ClearSkies: true
+      SignShop.Admin.Heal: true
+      SignShop.Admin.Repair: true
+      SignShop.Admin.iSlot: true
+      SignShop.Admin.Enchant: true
+      SignShop.Admin.iBuyXP: true
+      SignShop.Admin.iSellXP: true
+      SignShop.Admin.iTrade: true
+      SignShop.Admin.TpToOwner: true
+      SignShop.Admin.Class: true
+      SignShop.Admin.Disenchant: true
+      SignShop.Admin.Command: true
+      SignShop.Admin.UserCommand: true
+      SignShop.Admin.Kit: true
+      SignShop.Admin.ResetKit: true
+      SignShop.Admin.iXPBuy: true
+      SignShop.Admin.iXPSell: true
+      SignShop.Admin.Promote: true
+      SignShop.Admin.TCommand: true
+
+  SignShop.Admin.iSell:
+    description: Allow creation of [iSell] shops (infinite sell, no chest needed)
+    default: op
+  SignShop.Admin.iBuy:
+    description: Allow creation of [iBuy] shops (infinite buy, no chest needed)
+    default: op
+  SignShop.Admin.gBuy:
+    description: Allow creation of [gBuy] ghost buy shops (no money deposited to owner)
+    default: op
+  SignShop.Admin.gSell:
+    description: Allow creation of [gSell] ghost sell shops (no money withdrawn from owner)
+    default: op
+  SignShop.Admin.Day:
+    description: Allow creation of [Day] shops (set world time to day)
+    default: op
+  SignShop.Admin.Night:
+    description: Allow creation of [Night] shops (set world time to night)
+    default: op
+  SignShop.Admin.Rain:
+    description: Allow creation of [Rain] shops (set weather to rain)
+    default: op
+  SignShop.Admin.ClearSkies:
+    description: Allow creation of [ClearSkies] shops (set weather to clear)
+    default: op
+  SignShop.Admin.Heal:
+    description: Allow creation of [Heal] shops
+    default: op
+  SignShop.Admin.Repair:
+    description: Allow creation of [Repair] shops
+    default: op
+  SignShop.Admin.iSlot:
+    description: Allow creation of [iSlot] shops (infinite slot machine)
+    default: op
+  SignShop.Admin.Enchant:
+    description: Allow creation of [Enchant] shops
+    default: op
+  SignShop.Admin.iBuyXP:
+    description: Allow creation of [iBuyXP] shops (sell XP levels to players)
+    default: op
+  SignShop.Admin.iSellXP:
+    description: Allow creation of [iSellXP] shops (buy XP levels from players)
+    default: op
+  SignShop.Admin.iTrade:
+    description: Allow creation of [iTrade] shops (infinite item trade, no chest needed)
+    default: op
+  SignShop.Admin.TpToOwner:
+    description: Allow creation of [TpToOwner] shops (teleport customer to owner)
+    default: op
+  SignShop.Admin.Class:
+    description: Allow creation of [Class] shops (replace player inventory with chest contents)
+    default: op
+  SignShop.Admin.Disenchant:
+    description: Allow creation of [Disenchant] shops
+    default: op
+  SignShop.Admin.Command:
+    description: Allow creation of [Command] shops (run server command as console)
+    default: op
+  SignShop.Admin.UserCommand:
+    description: Allow creation of [UserCommand] shops (run command as the customer)
+    default: op
+  SignShop.Admin.Kit:
+    description: Allow creation of [Kit] shops (one-time item kit)
+    default: op
+  SignShop.Admin.ResetKit:
+    description: Allow creation of [ResetKit] shops (reset one-time shop usage)
+    default: op
+  SignShop.Admin.iXPBuy:
+    description: Allow creation of [iXPBuy] shops (trade XP for items)
+    default: op
+  SignShop.Admin.iXPSell:
+    description: Allow creation of [iXPSell] shops (trade items for XP)
+    default: op
+  SignShop.Admin.Promote:
+    description: Allow creation of [Promote] shops (promote player to a permission group)
+    default: op
+  SignShop.Admin.TCommand:
+    description: Allow creation of [TCommand] shops (run timed command)
+    default: op
+
+  # ── Deny shop use (SignShop.DenyUse.*) ─────────────────────────────────────
+  SignShop.DenyUse.*:
+    description: Deny use of all shop types (overridden by Signs.* or Admin.*)
+    default: false
+    children:
+      SignShop.DenyUse.Buy: true
+      SignShop.DenyUse.Sell: true
+      SignShop.DenyUse.Donate: true
+      SignShop.DenyUse.DonateHand: true
+      SignShop.DenyUse.Slot: true
+      SignShop.DenyUse.iSell: true
+      SignShop.DenyUse.iBuy: true
+      SignShop.DenyUse.gBuy: true
+      SignShop.DenyUse.gSell: true
+      SignShop.DenyUse.Day: true
+      SignShop.DenyUse.Night: true
+      SignShop.DenyUse.Rain: true
+      SignShop.DenyUse.ClearSkies: true
+      SignShop.DenyUse.DeviceOn: true
+      SignShop.DenyUse.DeviceOff: true
+      SignShop.DenyUse.Toggle: true
+      SignShop.DenyUse.Device: true
+      SignShop.DenyUse.Heal: true
+      SignShop.DenyUse.Repair: true
+      SignShop.DenyUse.Dispose: true
+      SignShop.DenyUse.DeviceItem: true
+      SignShop.DenyUse.iSlot: true
+      SignShop.DenyUse.Enchant: true
+      SignShop.DenyUse.iBuyXP: true
+      SignShop.DenyUse.iSellXP: true
+      SignShop.DenyUse.iTrade: true
+      SignShop.DenyUse.Trade: true
+      SignShop.DenyUse.TpToOwner: true
+      SignShop.DenyUse.Class: true
+      SignShop.DenyUse.Disenchant: true
+      SignShop.DenyUse.Command: true
+      SignShop.DenyUse.UserCommand: true
+      SignShop.DenyUse.Share: true
+      SignShop.DenyUse.Restricted: true
+      SignShop.DenyUse.Bank: true
+      SignShop.DenyUse.Jukebox: true
+      SignShop.DenyUse.Kit: true
+      SignShop.DenyUse.ResetKit: true
+      SignShop.DenyUse.iXPBuy: true
+      SignShop.DenyUse.iXPSell: true
+      SignShop.DenyUse.Promote: true
+      SignShop.DenyUse.TCommand: true
+
+  SignShop.DenyUse.Buy:
+    description: Deny use of [Buy] shops (overridden by Signs.Buy or Admin.Buy)
+    default: false
+  SignShop.DenyUse.Sell:
+    description: Deny use of [Sell] shops (overridden by Signs.Sell or Admin.Sell)
+    default: false
+  SignShop.DenyUse.Donate:
+    description: Deny use of [Donate] shops
+    default: false
+  SignShop.DenyUse.DonateHand:
+    description: Deny use of [DonateHand] shops
+    default: false
+  SignShop.DenyUse.Slot:
+    description: Deny use of [Slot] shops
+    default: false
+  SignShop.DenyUse.iSell:
+    description: Deny use of [iSell] shops
+    default: false
+  SignShop.DenyUse.iBuy:
+    description: Deny use of [iBuy] shops
+    default: false
+  SignShop.DenyUse.gBuy:
+    description: Deny use of [gBuy] shops
+    default: false
+  SignShop.DenyUse.gSell:
+    description: Deny use of [gSell] shops
+    default: false
+  SignShop.DenyUse.Day:
+    description: Deny use of [Day] shops
+    default: false
+  SignShop.DenyUse.Night:
+    description: Deny use of [Night] shops
+    default: false
+  SignShop.DenyUse.Rain:
+    description: Deny use of [Rain] shops
+    default: false
+  SignShop.DenyUse.ClearSkies:
+    description: Deny use of [ClearSkies] shops
+    default: false
+  SignShop.DenyUse.DeviceOn:
+    description: Deny use of [DeviceOn] shops
+    default: false
+  SignShop.DenyUse.DeviceOff:
+    description: Deny use of [DeviceOff] shops
+    default: false
+  SignShop.DenyUse.Toggle:
+    description: Deny use of [Toggle] shops
+    default: false
+  SignShop.DenyUse.Device:
+    description: Deny use of [Device] shops
+    default: false
+  SignShop.DenyUse.Heal:
+    description: Deny use of [Heal] shops
+    default: false
+  SignShop.DenyUse.Repair:
+    description: Deny use of [Repair] shops
+    default: false
+  SignShop.DenyUse.Dispose:
+    description: Deny use of [Dispose] shops
+    default: false
+  SignShop.DenyUse.DeviceItem:
+    description: Deny use of [DeviceItem] shops
+    default: false
+  SignShop.DenyUse.iSlot:
+    description: Deny use of [iSlot] shops
+    default: false
+  SignShop.DenyUse.Enchant:
+    description: Deny use of [Enchant] shops
+    default: false
+  SignShop.DenyUse.iBuyXP:
+    description: Deny use of [iBuyXP] shops
+    default: false
+  SignShop.DenyUse.iSellXP:
+    description: Deny use of [iSellXP] shops
+    default: false
+  SignShop.DenyUse.iTrade:
+    description: Deny use of [iTrade] shops
+    default: false
+  SignShop.DenyUse.Trade:
+    description: Deny use of [Trade] shops
+    default: false
+  SignShop.DenyUse.TpToOwner:
+    description: Deny use of [TpToOwner] shops
+    default: false
+  SignShop.DenyUse.Class:
+    description: Deny use of [Class] shops
+    default: false
+  SignShop.DenyUse.Disenchant:
+    description: Deny use of [Disenchant] shops
+    default: false
+  SignShop.DenyUse.Command:
+    description: Deny use of [Command] shops
+    default: false
+  SignShop.DenyUse.UserCommand:
+    description: Deny use of [UserCommand] shops
+    default: false
+  SignShop.DenyUse.Share:
+    description: Deny use of [Share] shops
+    default: false
+  SignShop.DenyUse.Restricted:
+    description: Deny use of [Restricted] shops
+    default: false
+  SignShop.DenyUse.Bank:
+    description: Deny use of [Bank] shops
+    default: false
+  SignShop.DenyUse.Jukebox:
+    description: Deny use of [Jukebox] shops
+    default: false
+  SignShop.DenyUse.Kit:
+    description: Deny use of [Kit] shops
+    default: false
+  SignShop.DenyUse.ResetKit:
+    description: Deny use of [ResetKit] shops
+    default: false
+  SignShop.DenyUse.iXPBuy:
+    description: Deny use of [iXPBuy] shops
+    default: false
+  SignShop.DenyUse.iXPSell:
+    description: Deny use of [iXPSell] shops
+    default: false
+  SignShop.DenyUse.Promote:
+    description: Deny use of [Promote] shops
+    default: false
+  SignShop.DenyUse.TCommand:
+    description: Deny use of [TCommand] shops
+    default: false
+
+  # ── Deny block linking (SignShop.DenyLink.*) ────────────────────────────────
+  SignShop.DenyLink.*:
+    description: Deny linking all block types to shops (alias-based, see linkableMaterials in config)
+    default: false
+    children:
+      SignShop.DenyLink.chest: true
+      SignShop.DenyLink.dropper: true
+      SignShop.DenyLink.hopper: true
+      SignShop.DenyLink.anvil: true
+      SignShop.DenyLink.dispenser: true
+      SignShop.DenyLink.furnace: true
+      SignShop.DenyLink.brewingstand: true
+      SignShop.DenyLink.enchantmenttable: true
+      SignShop.DenyLink.lever: true
+      SignShop.DenyLink.sign: true
+      SignShop.DenyLink.slab: true
+      SignShop.DenyLink.jukebox: true
+      SignShop.DenyLink.door: true
+      SignShop.DenyLink.button: true
+
+  SignShop.DenyLink.chest:
+    description: Deny linking chests, barrels, and trapped chests to shops
+    default: false
+  SignShop.DenyLink.dropper:
+    description: Deny linking droppers to shops
+    default: false
+  SignShop.DenyLink.hopper:
+    description: Deny linking hoppers and hopper minecarts to shops
+    default: false
+  SignShop.DenyLink.anvil:
+    description: Deny linking anvils to shops
+    default: false
+  SignShop.DenyLink.dispenser:
+    description: Deny linking dispensers to shops
+    default: false
+  SignShop.DenyLink.furnace:
+    description: Deny linking furnaces to shops
+    default: false
+  SignShop.DenyLink.brewingstand:
+    description: Deny linking brewing stands to shops
+    default: false
+  SignShop.DenyLink.enchantmenttable:
+    description: Deny linking enchantment tables to shops
+    default: false
+  SignShop.DenyLink.lever:
+    description: Deny linking levers to shops
+    default: false
+  SignShop.DenyLink.sign:
+    description: Deny linking signs (all wood types, hanging, wall) to shops
+    default: false
+  SignShop.DenyLink.slab:
+    description: Deny linking slabs to shops
+    default: false
+  SignShop.DenyLink.jukebox:
+    description: Deny linking jukeboxes to shops
+    default: false
+  SignShop.DenyLink.door:
+    description: Deny linking doors (all wood types, iron) to shops
+    default: false
+  SignShop.DenyLink.button:
+    description: Deny linking buttons (all wood types) to shops
+    default: false
+
+  # ── Allow block linking override (SignShop.AllowLink.*) ─────────────────────
+  SignShop.AllowLink.*:
+    description: Override DenyLink for all block types
+    default: false
+    children:
+      SignShop.AllowLink.chest: true
+      SignShop.AllowLink.dropper: true
+      SignShop.AllowLink.hopper: true
+      SignShop.AllowLink.anvil: true
+      SignShop.AllowLink.dispenser: true
+      SignShop.AllowLink.furnace: true
+      SignShop.AllowLink.brewingstand: true
+      SignShop.AllowLink.enchantmenttable: true
+      SignShop.AllowLink.lever: true
+      SignShop.AllowLink.sign: true
+      SignShop.AllowLink.slab: true
+      SignShop.AllowLink.jukebox: true
+      SignShop.AllowLink.door: true
+      SignShop.AllowLink.button: true
+
+  SignShop.AllowLink.chest:
+    description: Override DenyLink.chest — allow linking chests even when DenyLink.chest is set
+    default: false
+  SignShop.AllowLink.dropper:
+    description: Override DenyLink.dropper — allow linking droppers even when DenyLink.dropper is set
+    default: false
+  SignShop.AllowLink.hopper:
+    description: Override DenyLink.hopper — allow linking hoppers even when DenyLink.hopper is set
+    default: false
+  SignShop.AllowLink.anvil:
+    description: Override DenyLink.anvil — allow linking anvils even when DenyLink.anvil is set
+    default: false
+  SignShop.AllowLink.dispenser:
+    description: Override DenyLink.dispenser — allow linking dispensers even when DenyLink.dispenser is set
+    default: false
+  SignShop.AllowLink.furnace:
+    description: Override DenyLink.furnace — allow linking furnaces even when DenyLink.furnace is set
+    default: false
+  SignShop.AllowLink.brewingstand:
+    description: Override DenyLink.brewingstand — allow linking brewing stands even when DenyLink.brewingstand is set
+    default: false
+  SignShop.AllowLink.enchantmenttable:
+    description: Override DenyLink.enchantmenttable — allow linking enchantment tables even when DenyLink.enchantmenttable is set
+    default: false
+  SignShop.AllowLink.lever:
+    description: Override DenyLink.lever — allow linking levers even when DenyLink.lever is set
+    default: false
+  SignShop.AllowLink.sign:
+    description: Override DenyLink.sign — allow linking signs even when DenyLink.sign is set
+    default: false
+  SignShop.AllowLink.slab:
+    description: Override DenyLink.slab — allow linking slabs even when DenyLink.slab is set
+    default: false
+  SignShop.AllowLink.jukebox:
+    description: Override DenyLink.jukebox — allow linking jukeboxes even when DenyLink.jukebox is set
+    default: false
+  SignShop.AllowLink.door:
+    description: Override DenyLink.door — allow linking doors even when DenyLink.door is set
+    default: false
+  SignShop.AllowLink.button:
+    description: Override DenyLink.button — allow linking buttons even when DenyLink.button is set
+    default: false
+
+  # ── Bypass shop plot restrictions (SignShop.BypassShopPlots.*) ──────────────
+  SignShop.BypassShopPlots.*:
+    description: Bypass shop plot restrictions from all supported protection plugins
+    default: op
+    children:
+      SignShop.BypassShopPlots.Towny: true
+      SignShop.BypassShopPlots.WorldGuard: true
+
+  SignShop.BypassShopPlots.Towny:
+    description: Bypass Towny shop plot restrictions when EnableShopPlotSupport is true
+    default: op
+  SignShop.BypassShopPlots.WorldGuard:
+    description: Bypass WorldGuard allow-shop flag restrictions when EnableShopPlotSupport is true
+    default: op
+
+  # ── Shop management ──────────────────────────────────────────────────────────
+  SignShop.ChangeOwner:
+    description: Transfer ownership of your own shops to another player
+    default: op
+  SignShop.ChangeOwner.Others:
+    description: Transfer ownership of any shop (including those you do not own)
+    default: op
+  SignShop.CopyPaste:
+    description: Copy your own shop configuration to paste onto a new sign
+    default: op
+  SignShop.CopyPaste.Others:
+    description: Copy any shop's configuration regardless of ownership
+    default: op
+  SignShop.Destroy.Others:
+    description: Destroy shops owned by other players when EnableShopOwnerProtection is true
+    default: op
+
+  # ── Shop inspection and dyeing ───────────────────────────────────────────────
+  SignShop.Inspect.Own:
+    description: Inspect shops you own (right-click sign with InspectMaterial)
+    default: true
+  SignShop.Inspect.Others:
+    description: Inspect any shop regardless of ownership
+    default: op
+  SignShop.Dye.Own:
+    description: Change the color of signs on shops you own
+    default: true
+  SignShop.Dye.Others:
+    description: Change the color of any sign regardless of ownership
+    default: op
+
+  # ── Miscellaneous ────────────────────────────────────────────────────────────
+  SignShop.ignoremax:
+    description: Bypass the MaxShopsPerPerson and group shop limits
+    default: op
+  SignShop.ignorerepair:
+    description: Repair enchanted items at [Repair] shops even when AllowEnchantedRepair is false
+    default: false
+  SignShop.Permit:
+    description: Create shops with any item type when EnablePermits is true (bypasses per-material check)
+    default: false
+
+  # ── Multi-currency shop creation (SignShop.Currency.Create.*) ───────────────
+  # Children here match the non-default currencies in the default config.yml.
+  # If you add custom currencies, grant SignShop.Currency.Create.<name> directly.
+  SignShop.Currency.Create.*:
+    description: Create shops using any configured non-default currency (requires VaultUnlocked)
+    default: op
+    children:
+      SignShop.Currency.Create.gold: true
+      SignShop.Currency.Create.emeralds: true
+      SignShop.Currency.Create.tokens: true
+
+  SignShop.Currency.Create.gold:
+    description: Create shops priced in gold (requires VaultUnlocked)
+    default: op
+  SignShop.Currency.Create.emeralds:
+    description: Create shops priced in emeralds (requires VaultUnlocked)
+    default: op
+  SignShop.Currency.Create.tokens:
+    description: Create shops priced in tokens (requires VaultUnlocked)
+    default: op

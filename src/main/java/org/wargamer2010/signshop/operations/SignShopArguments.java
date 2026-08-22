@@ -168,7 +168,7 @@ public class SignShopArguments implements IMessagePartContainer {
         }
 
         if (fPrice.get() != null)
-            setMessagePart("!price", economyUtil.formatMoney(fPrice.get()));
+            setMessagePart("!price", economyUtil.formatMoney(fPrice.get(), currency));
 
         if (ssOwner.get() != null)
             setMessagePart("!owner", ssOwner.get().getName());
@@ -291,6 +291,8 @@ public class SignShopArguments implements IMessagePartContainer {
 
     public void setCurrency(CurrencyDefinition currency) {
         this.currency = currency != null ? currency : CurrencyManager.IMPLICIT_DEFAULT;
+        if (fPrice.get() != null)
+            setMessagePart("!price", economyUtil.formatMoney(fPrice.get(), this.currency));
     }
 
     public SSMoneyEventType getMoneyEventType() {

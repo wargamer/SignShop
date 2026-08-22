@@ -124,25 +124,27 @@ pricemultipliers:
 # - vault2-name: the currency identifier passed to VaultUnlocked's Vault2 API
 # - symbols: list of abbreviations or symbols recognized on sign line 4 (case-insensitive)
 # - default: true for the currency used when no symbol matches (only one allowed)
-# - permission: permission node required to CREATE a shop with this currency (empty = anyone)
+# Permissions are auto-generated: non-default currencies require SignShop.Currency.Create.<name>
+#   e.g., gold requires SignShop.Currency.Create.gold  (default currency requires no permission)
 # Example sign line 4 usage: "$100", "100 USD", "50G", "50 gems", "200T"
 #
-# currencies:
-#   dollars:
-#     vault2-name: "dollars"
-#     symbols: ["$", "USD"]
-#     default: true
-#     permission: ""
-#   gems:
-#     vault2-name: "gems"
-#     symbols: ["G", "gems"]
-#     default: false
-#     permission: "SignShop.Currency.gems"
-#   tokens:
-#     vault2-name: "tokens"
-#     symbols: ["T", "tokens", "tok"]
-#     default: false
-#     permission: "SignShop.Currency.tokens"
+#currencies:
+#  dollars:
+#    vault2-name: "dollars"
+#    symbols: ["$", "USD"]
+#    default: true
+#  gold:
+#    vault2-name: "gold"
+#    symbols: ["G", "gold"]
+#    default: false
+#  emeralds:
+#    vault2-name: "emeralds"
+#    symbols: ["E", "emeralds", "em"]
+#    default: false
+#  tokens:
+#    vault2-name: "tokens"
+#    symbols: ["T", "tokens", "tok"]
+#    default: false
 
 # Below is a list of all the materials that SignShop will allow to be linked to a shop.
 # The key (stuff before the colon) is the material name (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).

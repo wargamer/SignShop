@@ -372,7 +372,9 @@ public class SignShopPlayer {
             return hasNoMoney(amount);
         }
         if (playername.isEmpty()) return false;
+        SignShop.getInstance().debugMessage("[currency] vault2Has call: player=" + playername + " currency=" + currency.getVault2Name() + " amount=" + amount);
         Boolean result = Vault.vault2Has(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(amount));
+        SignShop.getInstance().debugMessage("[currency] vault2Has result=" + result + (result == null ? " (null -> legacy fallback)" : ""));
         return result == null ? hasNoMoney(amount) : !result;
     }
 
@@ -416,12 +418,15 @@ public class SignShopPlayer {
             return mutateMoney(amount);
         }
         if (playername.isEmpty()) return true;
+        String op = amount > 0.0 ? "deposit" : "withdraw";
+        SignShop.getInstance().debugMessage("[currency] vault2" + op + " call: player=" + playername + " currency=" + currency.getVault2Name() + " amount=" + Math.abs(amount));
         Boolean result;
         if (amount > 0.0) {
             result = Vault.vault2Deposit(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(amount));
         } else {
             result = Vault.vault2Withdraw(getOfflinePlayer().getUniqueId(), currency.getVault2Name(), BigDecimal.valueOf(Math.abs(amount)));
         }
+        SignShop.getInstance().debugMessage("[currency] vault2" + op + " result=" + result + (result == null ? " (null -> legacy fallback)" : ""));
         return result != null ? result : false;
     }
 

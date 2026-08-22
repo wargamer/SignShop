@@ -544,8 +544,10 @@ public class SignShopPlayerListener implements Listener {
             if (event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null) {
                 event.setCancelled(true);
             }
-            SignShopArguments ssArgs = new SignShopArguments(economyUtil.parsePrice(sLines[3]), seller.getItems(), seller.getContainables(), seller.getActivatables(),
+            org.wargamer2010.signshop.money.PriceResult txPriceResult = economyUtil.parsePriceWithCurrency(sLines[3]);
+            SignShopArguments ssArgs = new SignShopArguments(txPriceResult.price(), seller.getItems(), seller.getContainables(), seller.getActivatables(),
                     ssPlayer, ssOwner, bClicked, sOperation, event.getBlockFace(), event.getAction(), SignShopArgumentsType.Check);
+            ssArgs.setCurrency(txPriceResult.currency());
 
             if (seller.getRawMisc() != null)
                 ssArgs.miscSettings = seller.getRawMisc();

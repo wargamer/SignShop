@@ -26,6 +26,6 @@ public class MoneyModifierListener implements Listener {
         }
 
         event.setPrice(returnValue);
-        event.setMessagePart("!price", economyUtil.formatMoney(returnValue));
+        event.setMessagePart("!price", economyUtil.formatMoney(returnValue, event.getCurrency()));
     }
 }

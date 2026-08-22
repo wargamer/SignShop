@@ -28,6 +28,7 @@ import org.wargamer2010.signshop.scheduling.SchedulerAdapter;
 import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
+import org.wargamer2010.signshop.util.economyUtil;
 import org.wargamer2010.signshop.util.commandUtil;
 import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
@@ -105,6 +106,8 @@ public class SignShop extends JavaPlugin {
 
     public void reload() {
         signShopConfig = new SignShopConfig();
+        economyUtil.priceCache.clear();
+        signShopConfig.getCurrencyManager().validateWithVault2();
         ColorUtil.init();
         MetaFormats.init();
     }

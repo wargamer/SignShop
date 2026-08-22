@@ -10,6 +10,9 @@ import java.util.List;
  * <p>Each currency maps recognized symbols/abbreviations on sign line 4 to a
  * Vault2 currency name. When VaultUnlocked is not available, only the default
  * currency is functional.</p>
+ *
+ * <p>The permission to create shops with a non-default currency is automatically
+ * derived as {@code signshop.currency.create.<name>}. Default currency requires no permission.</p>
  */
 public class CurrencyDefinition {
 
@@ -28,16 +31,11 @@ public class CurrencyDefinition {
     /** If true, this is the default currency used when no symbol matches. */
     private final boolean isDefault;
 
-    /** Permission node required to create shops with this currency. Empty = no restriction. */
-    private final String permission;
-
-    public CurrencyDefinition(String name, String vault2Name, List<String> symbols,
-                               boolean isDefault, String permission) {
+    public CurrencyDefinition(String name, String vault2Name, List<String> symbols, boolean isDefault) {
         this.name = name;
         this.vault2Name = vault2Name;
         this.symbols = Collections.unmodifiableList(symbols);
         this.isDefault = isDefault;
-        this.permission = permission == null ? "" : permission;
     }
 
     public String getName() {
@@ -57,14 +55,14 @@ public class CurrencyDefinition {
         return isDefault;
     }
 
-    /** The permission node required to create shops with this currency. Empty string = no restriction. */
+    /** The permission node required to create shops with this currency: {@code SignShop.Currency.Create.<name>}. */
     public String getPermission() {
-        return permission;
+        return "SignShop.Currency.Create." + name;
     }
 
-    /** Returns true if a permission is required to create shops with this currency. */
+    /** Returns true if a permission is required to create shops with this currency. Default currency has no restriction. */
     public boolean hasPermission() {
-        return !permission.isEmpty();
+        return !isDefault;
     }
 
     /**
@@ -72,6 +70,6 @@ public class CurrencyDefinition {
      * False for the implicit default (legacy Vault).
      */
     public boolean requiresVault2() {
-        return vault2Name != null && !vault2Name.isEmpty();
+        return !isDefault && vault2Name != null && !vault2Name.isEmpty();
     }
 }

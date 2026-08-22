@@ -22,13 +22,12 @@ import java.util.logging.Level;
  *     vault2-name: "dollars"
  *     symbols: ["$", "USD"]
  *     default: true
- *     permission: ""
  *   gems:
  *     vault2-name: "gems"
  *     symbols: ["G", "gems"]
  *     default: false
- *     permission: "SignShop.Currency.gems"
  * </pre>
+ * <p>Permissions are auto-derived: non-default currencies require {@code SignShop.Currency.Create.<name>}.</p>
  */
 public class CurrencyManager {
 
@@ -37,7 +36,7 @@ public class CurrencyManager {
      * Has no vault2-name, so all operations use the legacy Vault economy.
      */
     public static final CurrencyDefinition IMPLICIT_DEFAULT =
-            new CurrencyDefinition("default", null, Collections.emptyList(), true, "");
+            new CurrencyDefinition("default", null, Collections.emptyList(), true);
 
     private final Map<String, CurrencyDefinition> currencies = new LinkedHashMap<>();
     private CurrencyDefinition defaultCurrency = IMPLICIT_DEFAULT;
@@ -52,6 +51,7 @@ public class CurrencyManager {
 
         if (section == null) {
             defaultCurrency = IMPLICIT_DEFAULT;
+            SignShop.log("CurrencyManager: no currencies: section found - single-currency mode (legacy Vault)", Level.INFO);
             return;
         }
 
@@ -62,9 +62,8 @@ public class CurrencyManager {
             String vault2Name = curr.getString("vault2-name", key);
             List<String> symbols = curr.getStringList("symbols");
             boolean isDefault = curr.getBoolean("default", false);
-            String permission = curr.getString("permission", "");
 
-            CurrencyDefinition def = new CurrencyDefinition(key, vault2Name, symbols, isDefault, permission);
+            CurrencyDefinition def = new CurrencyDefinition(key, vault2Name, symbols, isDefault);
             currencies.put(key.toLowerCase(), def);
 
             if (isDefault) {
@@ -85,6 +84,12 @@ public class CurrencyManager {
 
         if (defaultCurrency == null) {
             defaultCurrency = IMPLICIT_DEFAULT;
+        }
+
+        if (currencies.isEmpty()) {
+            SignShop.log("CurrencyManager: currencies: section present but no valid entries loaded - single-currency mode (legacy Vault)", Level.WARNING);
+        } else {
+            SignShop.log("CurrencyManager: loaded " + currencies.size() + " currencies (default: " + defaultCurrency.getName() + ")", Level.INFO);
         }
     }
 

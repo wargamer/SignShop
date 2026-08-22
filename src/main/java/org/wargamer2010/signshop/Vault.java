@@ -262,8 +262,17 @@ public class Vault {
             // getDefaultCurrency(String) - returns String
             vault2GetDefaultCurrencyMethod = cls.getMethod("getDefaultCurrency", String.class);
 
-            vault2MultiCurrencyAvailable = true;
-            SignShop.log("VaultUnlocked Vault2 multi-currency methods detected - multi-currency support enabled", Level.INFO);
+            // Ask the economy plugin itself whether it supports multiple currencies.
+            // VaultUnlocked always exposes this method, but the backing economy (e.g. EssentialsX)
+            // may return false if it only has a single currency.
+            Boolean supportsMulti = (Boolean) vault2HasMultiCurrencySupportMethod.invoke(vault2Economy);
+            vault2MultiCurrencyAvailable = Boolean.TRUE.equals(supportsMulti);
+
+            if (vault2MultiCurrencyAvailable) {
+                SignShop.log("VaultUnlocked Vault2 multi-currency methods detected - multi-currency support enabled", Level.INFO);
+            } else {
+                SignShop.log("VaultUnlocked detected but economy plugin does not support multiple currencies - multi-currency disabled", Level.INFO);
+            }
 
         } catch (NoSuchMethodException e) {
             vault2MultiCurrencyAvailable = false;
