@@ -21,23 +21,20 @@ public class SignShopServerListener implements Listener {
     }
 
     public static boolean isEssentialsConflictFound() {
-        // Optional plugin integration - commented out for Folia build
-        // if(Bukkit.getServer().getPluginManager().getPlugin(pluginName) != null)
-        //     return EssentialsHelper.isEssentialsConflictFound();
+        if (Bukkit.getServer().getPluginManager().getPlugin(pluginName) != null)
+            return EssentialsHelper.isEssentialsConflictFound();
         return false;
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onPluginEnabled(PluginEnableEvent event) {
-        // Optional plugin integration - commented out for Folia build
-        // if(event.getPlugin().getName().equals(pluginName))
-        //     setupPluginToHookInto();
+        if (event.getPlugin().getName().equals(pluginName))
+            setupPluginToHookInto();
     }
 
     final public void setupPluginToHookInto() {
-        // Optional plugin integration - commented out for Folia build
-        // Plugin plugin = this.server.getPluginManager().getPlugin(pluginName);
-        // if (plugin != null)
-        //     EssentialsHelper.essentialsCheck(plugin);
+        Plugin plugin = this.server.getPluginManager().getPlugin(pluginName);
+        if (plugin != null)
+            EssentialsHelper.essentialsCheck(plugin);
     }
 }

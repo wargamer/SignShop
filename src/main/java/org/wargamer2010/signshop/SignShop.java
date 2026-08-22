@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,9 +29,8 @@ import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
-// Optional plugin integrations - commented out for Folia build
-// import org.wargamer2010.signshop.worth.CMIWorthHandler;
-// import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
+import org.wargamer2010.signshop.worth.CMIWorthHandler;
+import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
 import org.wargamer2010.signshop.worth.WorthHandler;
 
 import java.io.File;
@@ -274,21 +274,17 @@ public class SignShop extends JavaPlugin {
         }
         //Setup worth
         if (getSignShopConfig().getEnablePriceFromWorth()) {
-            // Optional plugin integrations - commented out for Folia build
-            // TODO: Re-enable CMI and Essentials worth handlers if needed
-            /*
-            if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
+            if (isPluginRunning("CMI")) {
                 worthHandler = new CMIWorthHandler();
                 log("Using worth information from CMI.", Level.INFO);
             }
-            else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+            else if (isPluginRunning("Essentials")) {
                 worthHandler = new EssentialsWorthHandler();
                 log("Using worth information from Essentials.", Level.INFO);
             }
             else {
-            */
-                log("No compatible worth plugin found, [Worth] disabled. (CMI/Essentials handlers not available in this build)", Level.WARNING);
-            // }
+                log("No compatible worth plugin found, [Worth] disabled.", Level.WARNING);
+            }
         }
         //Enable metrics
         if (getSignShopConfig().metricsEnabled()) {
@@ -312,6 +308,11 @@ public class SignShop extends JavaPlugin {
         }
 
         log("v" + pdfFile.getVersion() + " Enabled", Level.INFO);
+    }
+
+    private static boolean isPluginRunning(String name) {
+        Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin(name);
+        return plugin != null && plugin.isEnabled();
     }
 
     @Override

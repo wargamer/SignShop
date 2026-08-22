@@ -26,10 +26,12 @@ org/wargamer2010/signshop/operations/OnExpiration.class
 org/wargamer2010/signshop/configuration/LinkableMaterial.class
 org/wargamer2010/signshop/operations/takePlayerItems.class
 org/wargamer2010/signshop/operations/setClearSkies.class
+org/wargamer2010/signshop/hooks/BlockLockerHook.class
 org/wargamer2010/signshop/money/IMoneyModifier.class
 org/wargamer2010/essentials/SetExpFix.class
 org/wargamer2010/signshop/operations/SignShopArgument.class
 org/wargamer2010/signshop/util/JarUtil.class
+org/wargamer2010/signshop/hooks/ResidenceHook.class
 org/wargamer2010/signshop/configuration/ColorUtil.class
 org/wargamer2010/signshop/operations/repairPlayerHeldItem.class
 org/wargamer2010/signshop/events/IMessagePartContainer.class
@@ -64,6 +66,7 @@ org/wargamer2010/signshop/money/MoneyModifierManager.class
 org/wargamer2010/signshop/scheduling/SchedulerAdapter.class
 org/wargamer2010/signshop/SignShop.class
 org/wargamer2010/signshop/timing/TimedCommand.class
+org/wargamer2010/signshop/worth/CMIWorthHandler.class
 org/wargamer2010/signshop/events/SSMoneyTransactionEvent.class
 org/wargamer2010/signshop/data/serialization/ItemSerializer.class
 org/wargamer2010/signshop/commands/ReloadHandler.class
@@ -73,6 +76,7 @@ org/wargamer2010/signshop/operations/giveTownMoney.class
 org/wargamer2010/signshop/timing/IExpirable.class
 org/wargamer2010/signshop/events/SSEventFactory.class
 org/wargamer2010/signshop/operations/SignShopOperationListItem.class
+org/wargamer2010/signshop/worth/EssentialsWorthHandler.class
 org/wargamer2010/signshop/money/PlayerPriceModifier.class
 org/wargamer2010/signshop/listeners/sslisteners/ShopUpdater.class
 org/wargamer2010/signshop/player/PlayerCache.class
@@ -183,6 +187,7 @@ org/wargamer2010/signshop/player/MessageWorker$Message.class
 org/wargamer2010/signshop/player/PlayerIdentifier.class
 org/wargamer2010/signshop/util/SSTimeUtil.class
 org/wargamer2010/signshop/listeners/ServerLoadedListener.class
+org/wargamer2010/signshop/listeners/EssentialsHelper.class
 org/wargamer2010/signshop/configuration/SignShopConfig$CommaDecimalSeparatorState.class
 org/wargamer2010/signshop/specialops/CopySign.class
 org/wargamer2010/signshop/operations/takeItemInHand.class

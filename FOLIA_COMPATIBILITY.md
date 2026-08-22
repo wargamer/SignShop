@@ -39,7 +39,7 @@ Successfully tested on:
 
 - **Folia:** Full support
 - **Paper/Spigot/Bukkit:** Full backward compatibility
-- **Minecraft:** 1.13.2 - 1.21+
+- **Minecraft:** 1.13.2 - 1.21.11 and the year based drops 26.1, 26.1.1, 26.1.2, 26.2
 
 ## Known Issues
 

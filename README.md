@@ -10,6 +10,20 @@ See [FOLIA_COMPATIBILITY.md](FOLIA_COMPATIBILITY.md) for details.
 
 ---
 
+## Supported Versions
+
+Runs on Bukkit/Spigot/Paper/Folia from 1.13.2 through the year based drops: **26.1, 26.1.1, 26.1.2 and 26.2**.
+Minecraft dropped the leading `1.` in 2026, so the drop after 1.21.11 is 26.1, not 1.26.1.
+
+Builds against `spigot-api 26.2` and Java 21. `plugin.yml` keeps `api-version: 1.21` on purpose: it is a
+minimum, not a target, so the same jar still loads on 1.21 servers. To build against an older drop:
+
+```
+mvn -Dspigot.version=26.1-R0.1-SNAPSHOT clean package
+```
+
+---
+
 SignShop allows you to set up physical shops by punching a chest with your items you want to sell, then punching a sign (while holding redstone dust). It's easy to set up, and even easier to customize!
 
 ## Project Links

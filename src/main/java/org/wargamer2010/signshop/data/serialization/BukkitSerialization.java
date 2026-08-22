@@ -6,11 +6,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
-import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Base64;
 
 /**
  * Legacy Java object serialization for ItemStacks.
@@ -23,8 +23,27 @@ import java.io.IOException;
  * @see ItemSerializer
  */
 public class BukkitSerialization {
+    /**
+     * SnakeYAML 2.6 (shipped with Minecraft 26.1 and up) dropped its bundled Base64Coder,
+     * so we encode ourselves. Same layout as before: 76 character lines separated by the
+     * platform line ending, and a lenient decoder so shops written by older builds
+     * (or on Windows, with CRLF) still load.
+     */
+    private static final Base64.Encoder ENCODER =
+            Base64.getMimeEncoder(76, System.lineSeparator().getBytes());
+    private static final Base64.Decoder DECODER = Base64.getMimeDecoder();
+
     private BukkitSerialization() {
 
+    }
+
+    /**
+     * Base64 encodes the given bytes the way snakeyaml used to: 76 character lines, and a line
+     * break after the last one as well, so re-saving a shop leaves the file byte for byte the same.
+     */
+    private static String encodeBase64(byte[] data) {
+        String encoded = ENCODER.encodeToString(data);
+        return encoded.isEmpty() ? encoded : encoded + System.lineSeparator();
     }
 
     /**
@@ -68,7 +87,7 @@ public class BukkitSerialization {
 
             // Serialize that array
             dataOutput.close();
-            return Base64Coder.encodeLines(outputStream.toByteArray());
+            return encodeBase64(outputStream.toByteArray());
         } catch (Exception e) {
             throw new IllegalStateException("Unable to save item stacks.", e);
         }
@@ -99,7 +118,7 @@ public class BukkitSerialization {
 
             // Serialize that array
             dataOutput.close();
-            return Base64Coder.encodeLines(outputStream.toByteArray());
+            return encodeBase64(outputStream.toByteArray());
         } catch (Exception e) {
             throw new IllegalStateException("Unable to save item stacks.", e);
         }
@@ -117,7 +136,7 @@ public class BukkitSerialization {
      */
     public static Inventory fromBase64(String data) throws IOException {
         try {
-            ByteArrayInputStream inputStream = new ByteArrayInputStream(Base64Coder.decodeLines(data));
+            ByteArrayInputStream inputStream = new ByteArrayInputStream(DECODER.decode(data));
             BukkitObjectInputStream dataInput = new BukkitObjectInputStream(inputStream);
             Inventory inventory = Bukkit.getServer().createInventory(null, dataInput.readInt());
 
@@ -142,7 +161,7 @@ public class BukkitSerialization {
      */
     public static ItemStack[] itemStackArrayFromBase64(String data) throws IOException {
     	try {
-            ByteArrayInputStream inputStream = new ByteArrayInputStream(Base64Coder.decodeLines(data));
+            ByteArrayInputStream inputStream = new ByteArrayInputStream(DECODER.decode(data));
             BukkitObjectInputStream dataInput = new BukkitObjectInputStream(inputStream);
             ItemStack[] items = new ItemStack[dataInput.readInt()];
 

@@ -19,6 +19,7 @@
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/takePlayerMoney.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/listeners/sslisteners/PermitChecker.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/hooks/BentoBoxHook.java
+/home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/worth/EssentialsWorthHandler.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/takePlayerXP.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/listeners/sslisteners/WorldGuardChecker.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/playerIsOp.java
@@ -26,6 +27,7 @@
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/data/SSDatabase.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/util/clicks.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/commands/TutorialHandler.java
+/home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/listeners/EssentialsHelper.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/util/DataConverter.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/data/serialization/ItemSerializer.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/util/SSBukkitVersion.java
@@ -57,6 +59,7 @@
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/Seller.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/listeners/sslisteners/TimedCommandListener.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/timing/IExpirable.java
+/home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/hooks/BlockLockerHook.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/player/PlayerCache.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/player/PlayerMetadata.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/BankSign.java
@@ -93,8 +96,10 @@
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/data/LegacyBookItem.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/util/SSTimeUtil.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/events/SSCreatedEvent.java
+/home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/worth/CMIWorthHandler.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/takeItemInHand.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/SignShopOperation.java
+/home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/hooks/ResidenceHook.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/listeners/sslisteners/SharedMoneyTransaction.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/givePlayerXP.java
 /home/ubuntu/Auth/SignShop/src/main/java/org/wargamer2010/signshop/operations/takeTownMoney.java
